@@ -1,39 +1,58 @@
-## Welcome to GitHub Pages
+# Welcome to SBN Analysis Infrastructure Group Wiki Page
 
-You can use the [editor on GitHub](https://github.com/SBNSoftware/SBNSoftware.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Coordinators: [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This group is intended to help enable the SBN Program physics goals by provide robust software and resource support. 
 
-### Markdown
+We'll use this wiki page for tracking group goals, progress, and release information. If you have any questions please reachout to the coordinators [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov). 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**If you are looking to get started quickly check out our [Getting Started Page](gettingstarted.md)!**
 
-```markdown
-Syntax highlighted code block
+## Sub-topic Groups
 
-# Header 1
-## Header 2
-### Header 3
+Each of these sub-groups are charged with defining and implement common SBN-wide solutions.
 
-- Bulleted
-- List
+### [Release Management](rm.md)
 
-1. Numbered
-2. List
+Conveners: [](mailto:)
 
-**Bold** and _Italic_ and `Code` text
+Goal is to maintain high-quality releases of SBN-specific software packages
 
-[Link](url) and ![Image](src)
+### [Production and Resource Management](prod.md)
 
-```
+Conveners: [](mailto:)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Work with SCD & SBN to maintain workflows & data-management schemes
 
-[TestWiki](test.md)
+### [Simulation Code Management](sim.md)
 
-### Jekyll Themes
+Conveners: [](mailto:)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SBNSoftware/SBNSoftware.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Develop infrastructure to support a data-driven detector simulation and maintain its consistent configuration
+
+### [Analysis Code Management](ana.md)
+
+Conveners: [](mailto:)
+
+Develops infrastructure to process & analyze data & MC in a consistent way.
+
+### [Beam Simulation](beam.md)
+
+Conveners: [](mailto:)
+
+Study and develop improved beamline simulations and uncertainties.
+
+## Important Information for Developers
+
+### [Release Notes](releasenote.md)
+
+Our currently tagged release is VNN_YY_XX.
+
+### [Production Fhicl Chains](prodfcl.md)
+
+### [Bug Reporting](bug.md)
+
+### [Tutorials](gettingstarted.md) 
 
 ### Support or Contact
 
