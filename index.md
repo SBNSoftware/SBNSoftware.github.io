@@ -1,4 +1,4 @@
-# Welcome to SBN Software Wiki Page
+# Welcome to the SBN Software Wiki Page
 
 See below for helpful links:
 
