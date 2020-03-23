@@ -1,5 +1,8 @@
 theme: jekyll-theme-minimal
 
+title: SBN Software Wiki
+description: A wiki for documentation of the SBN Software packages.
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
