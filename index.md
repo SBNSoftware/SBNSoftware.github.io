@@ -21,7 +21,7 @@ See below for helpful links:
 * [sbndqm](https://github.com/SBNSoftware/sbndqm): Common data quality monitoring code for SBN
 * [sbndaq-minargon](https://github.com/SBNSoftware/sbndaq-minargon): Web-based detector monitoring for SBN
 
-* [sbndaq-xporter]((https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
+* [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
 
 
 
