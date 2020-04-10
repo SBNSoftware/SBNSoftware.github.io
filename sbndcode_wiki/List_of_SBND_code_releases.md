@@ -1,0 +1,226 @@
+---
+lang: en
+title: List of SBND code releases
+---
+
+[]{#SBND-code-organization}
+
+SBND code organization[¶](#SBND-code-organization){.wiki-anchor}
+================================================================
+
+SBND code repository (`sbndcode`) currently depends on `sbndutil`,
+`sbnd_data`, `larsoft`, and `cetbuildtools` (for building). In all
+releases with number greater than 3.8.2, the `lar1ncode`/`sbndcode`
+number matches the underlying `larsoft` version.\
+`sbndutil` versions are independent. Also, `sbndutil` is an \"optional\"
+dependency. So, on [Fermilab
+GPVMs](Computing_resources.html#Where-to-work-interactive-nodes-GPVM){.wiki-page}
+it will be set up but offsite it will not be set up unless it is
+available: usually it is not. If you are building your own `sbndcode`
+with MRB, you can check out also `sbndutil` (`mrb g sbndutil`) and when
+you build the area `sbndutil` will be available to you.
+
+See the (soon to be done) section on getting `sbndcode` offsite for more
+detailed information.
+
+[]{#List-of-sbndcode-releases}
+
+List of `sbndcode` releases[¶](#List-of-sbndcode-releases){.wiki-anchor}
+------------------------------------------------------------------------
+
+[ **Release manager**: [Thomas
+Brooks](mailto:tom.g.r.brooks@gmail.com)]{style="color: green;"}
+
+These are the `sbndcode` releases tagged until now:
+
+  -------------------------------- -------------------------------------------- -----------------------------------------------------------------------
+  Version                          Notes                                        Detailed Notes
+  `v08_48_01`                      Weekly release                               [Release Notes](ReleaseNotes084801.html){.wiki-page}
+  `v08_48_00`                      Weekly release                               [Release Notes](ReleaseNotes084800.html){.wiki-page}
+  `v08_47_00`                      Weekly release                               [Release Notes](ReleaseNotes084700.html){.wiki-page}
+  `v08_46_00`                      Weekly release                               [Release Notes](ReleaseNotes084600.html){.wiki-page}
+  `v08_45_00_1_MCP2_2`             Freeze for MCP 2.2                           [Release Notes](ReleaseNotes0845001MCP22.html){.wiki-page}
+  `v08_45_00_2_SBNWorkshop0320`    Freeze for SBN workshop 03/20                [Release Notes](ReleaseNotes0845002SBNWorkshop0320.html){.wiki-page}
+  `v08_45_00`                      Weekly release                               [Release Notes](ReleaseNotes084500.html){.wiki-page}
+  `v08_44_00_1_MCP2_1`             Freeze for MCP 2.1                           [Release Notes](ReleaseNotes0844001MCP21.html){.wiki-page}
+  `v08_44_00`                      Weekly release                               [Release Notes](ReleaseNotes084400.html){.wiki-page}
+  `v08_43_00`                      Weekly release                               [Release Notes](ReleaseNotes084300.html){.wiki-page}
+  `v08_42_00`                      Weekly release                               [Release Notes](ReleaseNotes084200.html){.wiki-page}
+  `v08_41_01`                      Weekly release                               [Release Notes](ReleaseNotes084101.html){.wiki-page}
+  `v08_41_00`                      Update to art v03.04                         [Release Notes](ReleaseNotes084100.html){.wiki-page}
+  `v08_40_00`                      Weekly release                               [Release Notes](ReleaseNotes084000.html){.wiki-page}
+  `v08_39_00`                      Weekly release                               [Release Notes](ReleaseNotes083900.html){.wiki-page}
+  `v08_38_01`                      Weekly release                               [Release Notes](ReleaseNotes083801.html){.wiki-page}
+  `v08_38_00`                      Weekly release                               [Release Notes](ReleaseNotes083800.html){.wiki-page}
+  `v08_37_00`                      Weekly release                               [Release Notes](ReleaseNotes083700.html){.wiki-page}
+  `v08_36_02`                      Weekly release                               [Release Notes](ReleaseNotes083602.html){.wiki-page}
+  `v08_36_01_3_MCP2_0`             Freeze for MCP 2.0 (v3)                      [Release Notes](ReleaseNotes0836013MCP20.html){.wiki-page}
+  `v08_36_01_2_MCP2_0`             Freeze for MCP 2.0 (v2)                      [Release Notes](ReleaseNotes0836012MCP20.html){.wiki-page}
+  `v08_36_01_1_MCP2_0`             Freeze for MCP 2.0                           [Release Notes](ReleaseNotes0836011MCP20.html){.wiki-page}
+  `v08_36_01`                      Weekly release                               [Release Notes](ReleaseNotes083601.html){.wiki-page}
+  `v08_36_00`                      Update to art v3.03.01                       [Release Notes](ReleaseNotes083600.html){.wiki-page}
+  `v08_35_01`                      Weekly release                               [Release Notes](ReleaseNotes083501.html){.wiki-page}
+  `v08_35_00`                      Weekly release (reco broken)                 [Release Notes](ReleaseNotes083500.html){.wiki-page}
+  `v08_34_00`                      Weekly release                               [Release Notes](ReleaseNotes083400.html){.wiki-page}
+  `v08_33_00`                      Weekly release                               [Release Notes](ReleaseNotes083300.html){.wiki-page}
+  `v08_32_02`                      Weekly release                               [Release Notes](ReleaseNotes083202.html){.wiki-page}
+  `v08_32_01`                      Weekly release                               [Release Notes](ReleaseNotes083201.html){.wiki-page}
+  `v08_32_00`                      Weekly release                               [Release Notes](ReleaseNotes083200.html){.wiki-page}
+  `v08_31_01`                      Weekly release                               [Release Notes](ReleaseNotes083101.html){.wiki-page}
+  `v08_31_00`                      Weekly release                               [Release Notes](ReleaseNotes083100.html){.wiki-page}
+  `v08_30_02`                      Weekly release                               [Release Notes](ReleaseNotes083002.html){.wiki-page}
+  `v08_30_01`                      Weekly release                               [Release Notes](ReleaseNotes083001.html){.wiki-page}
+  `v08_30_00`                      Weekly release                               [Release Notes](ReleaseNotes083000.html){.wiki-page}
+  `v08_29_00`                      Weekly release                               [Release Notes](ReleaseNotes082900.html){.wiki-page}
+  `v08_28_01`                      Weekly release                               [Release Notes](ReleaseNotes082801.html){.wiki-page}
+  `v08_28_00`                      Genie v3 release                             [Release Notes](ReleaseNotes082800.html){.wiki-page}
+  `v08_27_02`                      Weekly release                               [Release Notes](ReleaseNotes082702.html){.wiki-page}
+  `v08_27_00`                      Weekly release                               [Release Notes](ReleaseNotes082700.html){.wiki-page}
+  `v08_26_00`                      Weekly release                               [Release Notes](ReleaseNotes082600.html){.wiki-page}
+  `v08_25_00`                      Weekly release                               [Release Notes](ReleaseNotes082500.html){.wiki-page}
+  `v08_24_00`                      Weekly release                               [Release Notes](ReleaseNotes082400.html){.wiki-page}
+  `v08_23_00`                      Weekly release                               [Release Notes](ReleaseNotes082300.html){.wiki-page}
+  `v08_22_00_01`                   Genie v3 test release                        [Release Notes](ReleaseNotes08220001.html){.wiki-page}
+  `v08_22_00`                      Weekly release (art v3.02.06)                [Release Notes](ReleaseNotes082200.html){.wiki-page}
+  `v08_21_00`                      Weekly release                               [Release Notes](ReleaseNotes082100.html){.wiki-page}
+  `v08_20_01`                      Weekly release                               [Release Notes](ReleaseNotes082001.html){.wiki-page}
+  `v08_20_00`                      Weekly release                               [Release Notes](ReleaseNotes082000.html){.wiki-page}
+  `v08_19_01`                      Weekly release                               [Release Notes](ReleaseNotes081901.html){.wiki-page}
+  `v08_18_00`                      Weekly release (art v3.02.05)                [Release Notes](ReleaseNotes081800.html){.wiki-page}
+  `v08_17_00`                      Weekly release                               [Release Notes](ReleaseNotes081700.html){.wiki-page}
+  `v08_16_00`                      Update to art v3.02.04                       [Release Notes](ReleaseNotes081600.html){.wiki-page}
+  `v08_15_01`                      Weekly release                               [Release Notes](ReleaseNotes081501.html){.wiki-page}
+  `v08_15_00`                      Weekly release                               [Release Notes](ReleaseNotes081500.html){.wiki-page}
+  `v08_14_01`                      Weekly release                               [Release Notes](ReleaseNotes081401.html){.wiki-page}
+  `v08_14_00`                      Weekly release                               [Release Notes](ReleaseNotes081400.html){.wiki-page}
+  `v08_13_02`                      Weekly release                               [Release Notes](ReleaseNotes081302.html){.wiki-page}
+  `v08_13_01`                      larsim fix                                   [Release Notes](ReleaseNotes081301.html){.wiki-page}
+  `v08_13_00_1_SBNWorkshop0319`    Freeze for SBN Workshop 03/19                [Release Notes](ReleaseNotes0813001SBNWorkshop0319.html){.wiki-page}
+  `v08_13_00`                      Weekly release                               [Release Notes](ReleaseNotes081300.html){.wiki-page}
+  `v08_12_00`                      Weekly release                               [Release Notes](ReleaseNotes081200.html){.wiki-page}
+  `v08_11_00`                      Weekly release                               [Release Notes](ReleaseNotes081100.html){.wiki-page}
+  `v08_10_01`                      Update to art v3.01.02                       [Release Notes](ReleaseNotes081001.html){.wiki-page}
+  `v08_10_00`                      Weekly release                               [Release Notes](ReleaseNotes081000.html){.wiki-page}
+  `v08_09_00`                      Weekly release                               [Release Notes](ReleaseNotes080900.html){.wiki-page}
+  `v08_08_00_2_MCP1_0`             Freeze for MCP 1.0 (v2)                      [Release Notes](ReleaseNotes0808002MCP10.html){.wiki-page}
+  `v08_08_00_1_MCP1_0`             Freeze for MCP 1.0                           [Release Notes](ReleaseNotes0808001MCP10.html){.wiki-page}
+  `v08_08_00`                      Weekly release                               [Release Notes](ReleaseNotes080800.html){.wiki-page}
+  `v08_07_01`                      Update to art v3.01.01                       [Release Notes](ReleaseNotes080701.html){.wiki-page}
+  `v08_07_00`                      Weekly release                               [Release Notes](ReleaseNotes080700.html){.wiki-page}
+  `v08_06_00`                      Weekly release                               [Release Notes](ReleaseNotes080600.html){.wiki-page}
+  `v08_05_00`                      Update to art v3.01                          [Release Notes](ReleaseNotes080500.html){.wiki-page}
+  `v08_04_00`                      Weekly release                               [Release Notes](ReleaseNotes080400.html){.wiki-page}
+  `v08_03_00`                      Weekly release                               [Release Notes](ReleaseNotes080300.html){.wiki-page}
+  `v08_02_00`                      Weekly release                               [Release Notes](ReleaseNotes080200.html){.wiki-page}
+  `v08_01_00`                      Weekly release                               [Release Notes](ReleaseNotes080100.html){.wiki-page}
+  `v08_00_00`                      Update to art v3                             [Release Notes](ReleaseNotes080000.html){.wiki-page}
+  `v07_13_01`                      Weekly release                               [Release Notes](ReleaseNotes071301.html){.wiki-page}
+  `v07_13_00`                      Weekly release                               [Release Notes](ReleaseNotes071300.html){.wiki-page}
+  `v07_12_00`                      Weekly release                               [Release Notes](ReleaseNotes071200.html){.wiki-page}
+  `v07_11_00`                      Weekly release                               [Release Notes](ReleaseNotes071100.html){.wiki-page}
+  `v07_10_00`                      Weekly release                               [Release Notes](ReleaseNotes071000.html){.wiki-page}
+  `v07_09_00`                      Weekly release                               [Release Notes](ReleaseNotes070900.html){.wiki-page}
+  `v07_08_00`                      Weekly release                               [Release Notes](ReleaseNotes070800.html){.wiki-page}
+  `v07_07_03`                      Weekly release                               [Release Notes](ReleaseNotes070703.html){.wiki-page}
+  `v07_07_01`                      Weekly release                               [Release Notes](ReleaseNotes070701.html){.wiki-page}
+  `v07_07_00_2_MCP0_9`             Freeze for MCP 0.9 (v2)                      [Release Notes](ReleaseNotes0707002MCP09.html){.wiki-page}
+  `v07_07_00_1_MCP0_9`             Freeze for MCP 0.9                           [Release Notes](ReleaseNotes0707001MCP09.html){.wiki-page}
+  `v07_07_00`                      Weekly release                               [Release Notes](ReleaseNotes070700.html){.wiki-page}
+  `v07_06_02`                      Weekly release                               [Release Notes](ReleaseNotes070602.html){.wiki-page}
+  `v07_06_01`                      Weekly release                               [Release Notes](ReleaseNotes070601.html){.wiki-page}
+  `v07_06_00`                      Weekly release                               [Release Notes](ReleaseNotes070600.html){.wiki-page}
+  `v07_05_00`                      Weekly release                               [Release Notes](ReleaseNotes070500.html){.wiki-page}
+  `v07_04_00`                      Weekly release                               [Release Notes](ReleaseNotes070400.html){.wiki-page}
+  `v07_03_00`                      Weekly release                               [Release Notes](ReleaseNotes070300.html){.wiki-page}
+  `v07_02_00`                      Weekly release                               [Release Notes](ReleaseNotes070200.html){.wiki-page}
+  `v07_01_00`                      Weekly release                               [Release Notes](ReleaseNotes070100.html){.wiki-page}
+  `v07_00_01`                      Weekly release                               [Release Notes](ReleaseNotes070001.html){.wiki-page}
+  `v07_00_00`                      larg4 v07\_00\_00 available                  [Release Notes](ReleaseNotes070000.html){.wiki-page}
+  `v06_85_00`                      Update to art v02\_11\_03 (e17 support)      [Release Notes](ReleaseNotes068500.html){.wiki-page}
+  `v06_84_00`                      Weekly release                               [Release Notes](ReleaseNotes068400.html){.wiki-page}
+  `v06_83_00`                      Weekly release                               [Release Notes](ReleaseNotes068300.html){.wiki-page}
+  `v06_82_00`                      Weekly release                               [Release Notes](ReleaseNotes068200.html){.wiki-page}
+  `v06_80_01`                      Weekly release                               [Release Notes](ReleaseNotes068001.html){.wiki-page}
+  `v06_80_00`                      Update to art v02\_11                        [Release Notes](ReleaseNotes068000.html){.wiki-page}
+  `v06_79_00`                      Weekly release                               [Release Notes](ReleaseNotes067900.html){.wiki-page}
+  `v06_78_00`                      Weekly release                               [Release Notes](ReleaseNotes067800.html){.wiki-page}
+  `v06_77_00`                      Weekly release                               [Release Notes](ReleaseNotes067700.html){.wiki-page}
+  `v06_76_00`                      Weekly release                               [Release Notes](ReleaseNotes067600.html){.wiki-page}
+  `v06_75_01`                      Weekly release                               [Release Notes](ReleaseNotes067501.html){.wiki-page}
+  `v06_75_00`                      Weekly release                               [Release Notes](ReleaseNotes067500.html){.wiki-page}
+  `v06_74_01`                      Weekly release                               [Release Notes](ReleaseNotes067401.html){.wiki-page}
+  `v06_74_00`                      Weekly release                               [Release Notes](ReleaseNotes067400.html){.wiki-page}
+  `v06_73_00`                      Weekly release                               [Release Notes](ReleaseNotes067300.html){.wiki-page}
+  `v06_72_00`                      Weekly release                               [Release Notes](ReleaseNotes067200.html){.wiki-page}
+  `v06_71_00`                      Weekly release                               [Release Notes](ReleaseNotes067100.html){.wiki-page}
+  `v06_70_02`                      Weekly release                               [Release Notes](ReleaseNotes067002.html){.wiki-page}
+  `v06_70_01_01_SBNWorkshop0318`   Freeze for SBN workshop 03/18 (part 2)       [Release Notes](ReleaseNotes06700101SBNWorkshop0318.html){.wiki-page}
+  `v06_70_01_01`                   Freeze for SBN workshop 03/18                [Release Notes](ReleaseNotes06700101.html){.wiki-page}
+  `v06_70_01`                      Weekly release                               [Release Notes](ReleaseNotes067001.html){.wiki-page}
+  `v06_70_00`                      Update to art v02\_10                        [Release Notes](ReleaseNotes067000.html){.wiki-page}
+  `v06_69_01`                      Weekly release                               [Release Notes](ReleaseNotes066901.html){.wiki-page}
+  `v06_69_00`                      Weekly release                               [Release Notes](ReleaseNotes066900.html){.wiki-page}
+  `v06_68_00`                      Weekly release                               [Release Notes](ReleaseNotes066800.html){.wiki-page}
+  `v06_67_01`                      Weekly release                               [Release Notes](ReleaseNotes066701.html){.wiki-page}
+  `v06_67_00`                      Weekly release                               [Release Notes](ReleaseNotes066700.html){.wiki-page}
+  `v06_66_00`                      Weekly release                               [Release Notes](ReleaseNotes066600.html){.wiki-page}
+  `v06_65_00`                      Update to art v02\_09                        [Release Notes](ReleaseNotes066500.html){.wiki-page}
+  `v06_64_00`                      Weekly release                               [Release Notes](ReleaseNotes066400.html){.wiki-page}
+  `v06_63_00`                      Weekly release                               [Release Notes](ReleaseNotes066300.html){.wiki-page}
+  `v06_62_00`                      Weekly release                               [Release Notes](ReleaseNotes066200.html){.wiki-page}
+  `v06_60_00`                      Weekly release                               [Release Notes](ReleaseNotes066000.html){.wiki-page}
+  `v06_59_00`                      Weekly release                               [Release Notes](ReleaseNotes065900.html){.wiki-page}
+  `v06_58_00`                      Weekly release                               [Release Notes](ReleaseNotes065800.html){.wiki-page}
+  `v06_56_01`                      Weekly release                               [Release Notes](ReleaseNotes065601.html){.wiki-page}
+  `v06_56_00`                      Weekly release                               [Release Notes](ReleaseNotes065600.html){.wiki-page}
+  `v06_55_01`                      Weekly release                               [Release Notes](ReleaseNotes065501.html){.wiki-page}
+  `v06_55_00`                      Weekly release                               [Release Notes](ReleaseNotes065500.html){.wiki-page}
+  `v06_54_00`                      Weekly release                               [Release Notes](ReleaseNotes065400.html){.wiki-page}
+  `v06_53_00_SBNWorkshop1017`      Freeze for SBN workshop 10/17                [Release Notes](ReleaseNotes065300SBNWorkshop1017.html){.wiki-page}
+  `v06_53_00`                      Weekly release                               [Release Notes](ReleaseNotes065300.html){.wiki-page}
+  `v06_52_00`                      Weekly release                               [Release Notes](ReleaseNotes065200.html){.wiki-page}
+  `v06_51_00`                      Weekly release                               [Release Notes](ReleaseNotes065100.html){.wiki-page}
+  `v06_50_00`                      Weekly release                               [Release Notes](ReleaseNotes065000.html){.wiki-page}
+  `v06_49_03`                      Weekly release                               [Release Notes](ReleaseNotes064903.html){.wiki-page}
+  `v06_49_02`                      Weekly release                               [Release Notes](ReleaseNotes064902.html){.wiki-page}
+  `v06_48_00_MCC`                  MCC 1.0 freeze                               [Release Notes](ReleaseNotes064800MCC.html){.wiki-page}
+  `v06_48_00`                      Weekly release                               [Release Notes](ReleaseNotes064800.html){.wiki-page}
+  `v06_47_01`                      Weekly release                               [Release Notes](ReleaseNotes064701.html){.wiki-page}
+  `v06_47_00`                      Weekly release                               [Release Notes](ReleaseNotes064700.html){.wiki-page}
+  `v06_46_00`                      Weekly release                               [Release Notes](ReleaseNotes064600.html){.wiki-page}
+  `v06_45_01`                      Weekly release                               [Release Notes](ReleaseNotes064501.html){.wiki-page}
+  `v06_45_00`                      Weekly release                               [Release Notes](ReleaseNotes064500.html){.wiki-page}
+  `v06_44_00`                      Weekly release                               [Release Notes](ReleaseNotes064400.html){.wiki-page}
+  `v06_43_00`                      Weekly release (breaking change)             [Release Notes](ReleaseNotes064300.html){.wiki-page}
+  `v06_42_00`                      Weekly release                               [Release Notes](ReleaseNotes064200.html){.wiki-page}
+  `v06_41_00`                      Weekly release                               [Release Notes](ReleaseNotes064100.html){.wiki-page}
+  `v06_40_01`                      Fixes bug in evd                             [Release Notes](ReleaseNotes064001.html){.wiki-page}
+  `v06_32_00`                      First tagged release for LArSoft v06         [Release notes](ReleaseNotes063200.html){.wiki-page}
+  `v05_12_01_stable`               Last v05 before moving to v06                [Release notes](ReleaseNotes051201stable.html){.wiki-page}
+  `v05_12_01_MCC`                  Tagged as reference point for MCC 0.5        [Release notes](ReleaseNotes051201MCC.html){.wiki-page}
+  `v05_12_01`                      first release with the new name `sbndcode`   
+  -------------------------------- -------------------------------------------- -----------------------------------------------------------------------
+
+[]{#List-of-lar1ndcode-releases}
+
+### List of `lar1ndcode` releases[¶](#List-of-lar1ndcode-releases){.wiki-anchor}
+
+Versions older than 5.9.1 are available only in the old `lar1ndcode`
+name. Needless to say, if you are starting a new project, you want to
+use `sbndcode` instead.
+
+  ------------- --------------------- -------------------------------------------------------------------------------------------------------------
+  Version       Dependencies          Notes
+  v00\_01\_00   LArSoft v02\_03\_02   first release, basic Geometry.
+  v00\_02\_00   LArSoft v02\_05\_02   Geometry in, Corey\'s reweighting code.
+  v00\_03\_00   LArSoft v03\_02\_00   Dirt added to Geometry. Release getting ready to created lar1ndcode ups product.
+  v00\_05\_00   LArSoft v03\_04\_06   Introduce lar1ndutil as a dependency of lar1ndcode
+  v00\_05\_01   LArSoft v03\_04\_06   
+  v00\_06\_00   LArSoft v03\_08\_02   
+  v00\_07\_00   LArSoft v03\_08\_02   Last release in this numbering scheme. lar1ndcode is a dependency of lar1ndutil in this release.
+  v03\_08\_02   LArSoft v03\_08\_02   New versioning system, lar1ndutil is an optional dependency of lar1ndcode, last release before larsoft v4.X
+  v04\_00\_00   LArSoft v04\_00\_00   Make the jump to larsoft v04\_00\_00, required change to cal wire ROI
+  v04\_08\_00   LArSoft v04\_08\_00   
+  v04\_16\_00   LArSoft v04\_16\_00   Add Seed Services
+  v04\_24\_00   LArSoft v04\_24\_00   
+  ------------- --------------------- -------------------------------------------------------------------------------------------------------------

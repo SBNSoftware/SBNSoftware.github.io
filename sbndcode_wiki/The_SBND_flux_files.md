@@ -1,0 +1,184 @@
+---
+lang: en
+title: The SBND flux files
+---
+
+[]{#The-SBND-flux-files}
+
+The SBND flux files[¶](#The-SBND-flux-files){.wiki-anchor}
+==========================================================
+
+-   **Table of contents**
+-   [The SBND flux files](#The-SBND-flux-files)
+    -   [Neutrino flux](#Neutrino-flux)
+    -   [The SBND flux files](#The-SBND-flux-files-2)
+    -   [Where to find the flux files and beam
+        configurations](#Where-to-find-the-flux-files-and-beam-configurations)
+    -   [A note about pre F/G
+        configurations](#A-note-about-pre-FG-configurations)
+    -   [Beam configurations](#Beam-configurations)
+        -   [ConfigA-100m-v1](#ConfigA-100m-v1)
+        -   [ConfigB-v1](#ConfigB-v1)
+        -   [ConfigC-v1](#ConfigC-v1)
+        -   [ConfigD-v1](#ConfigD-v1)
+        -   [ConfigE-v1](#ConfigE-v1)
+        -   [ConfigF-v1](#ConfigF-v1)
+        -   [ConfigG-v1](#ConfigG-v1)
+
+[]{#Neutrino-flux}
+
+Neutrino flux[¶](#Neutrino-flux){.wiki-anchor}
+----------------------------------------------
+
+While flux has a [specific meaning in general
+physics](https://en.wikipedia.org/wiki/Flux){.external}, neutrino
+physicists normally use \'flux\' as shorthand when referring to the
+neutrino rays impinging on a detector, often from a beam-line. \'Flux\'
+does also get used in a more literal sense to describe the number of
+neutrinos passing through a unit area, particularly relevant when
+measuring a cross-section.
+
+[]{#The-SBND-flux-files-2}
+
+The SBND flux files[¶](#The-SBND-flux-files-2){.wiki-anchor}
+------------------------------------------------------------
+
+In a nutshell, each flux file contains a tree where each entry describes
+a neutrino as it passes through a 2D window (usually) defined to be
+upstream of a detector. LArSoft\'s implementation of GENIE randomly
+samples these neutrino rays to generate interactions in a detector
+volume.\
+How the flux files are produced changed in 2017 but they are still used
+in LArSoft/sbndcode in exactly the same way. More information about how
+the flux files used to be generated and how they are generated now can
+be found in [docdb
+5672](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=5672){.external}
+
+[]{#Where-to-find-the-flux-files-and-beam-configurations}
+
+Where to find the flux files and beam configurations[¶](#Where-to-find-the-flux-files-and-beam-configurations){.wiki-anchor}
+----------------------------------------------------------------------------------------------------------------------------
+
+All of the flux files live on dcache as the files need to be readily
+available when running grid jobs. All are stored in subdirectories of
+the following location:\
+
+    /pnfs/sbnd/persistent/stash/fluxFiles
+
+\
+The files are separated into several categories: BooNEToGSimple (which
+are the newest and recommended kind of BNB flux file), the older gsimple
+type (which were are the older flux files and were generated using NuMI
+style decay algorithms) and the raw files used in the generation of the
+former two categories.\
+The flux files are further separated into \'configurations\' which
+describe a particular setup. The configuration encapsulates all of the
+necessary parameters used in propagating the neutrinos from their
+parent\'s decay point to the flux window they pass through. The amount
+of associated parameters would make the directory structure unwieldy so
+each configuration is given a unique identifier with a quantitive
+description given in the gsimple XML file and a more qualitative
+description given on this wiki page below.
+
+    /pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/april07/neutrinoMode
+
+In each of the configuration directories, XML files are located which
+describe the flux window the neutrinos are propagated to.\
+An example location is:\
+
+    /pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/configD-v1.xml
+
+\
+In all cases the XML file accurately describes the flux window but the
+XML files were used in a literal sense only in the older gsimple files.
+For the older gsimple files, the main XML file is stored in the sbndutil
+repository along with the request files used to generate the gsimple
+files.
+
+**The recommended flux files are the BooNEToGSimple files. At time of
+writing, the corresponding configurations are ConfigF-v1, ConfigG-v1**
+
+[]{#A-note-about-pre-FG-configurations}
+
+A note about pre F/G configurations[¶](#A-note-about-pre-FG-configurations){.wiki-anchor}
+-----------------------------------------------------------------------------------------
+
+The beam centre is in the incorrect place along the X-axis for all
+configuration prior to F/G; it is shifted too far along the +ve x-axis
+(1.3m rather than 0.457m). 1.3m is actually the beam\'s x-centre in the
+uboone coordinate system.
+
+[]{#Beam-configurations}
+
+Beam configurations[¶](#Beam-configurations){.wiki-anchor}
+----------------------------------------------------------
+
+[]{#ConfigA-100m-v1}
+
+### ConfigA-100m-v1[¶](#ConfigA-100m-v1){.wiki-anchor}
+
+The baseline length (target to SBND TPC distance) for this configuration
+is 100 m. Additionally, the beam\'s axis is offset to the SBND origin
+such that the beam centre is at +1.3 m along the x-axis in SBND\'s
+coordinate system.\
+The flux window is defined to be somewhat larger than the SBND TPC
+volume; a 10 m x 10 m flux window but is positioned such that the
+beam\'s axis cuts through the exact centre of the flux window.
+Additionally, the flux window is placed 10 m upstream of the SBND TPC
+front face.
+
+[]{#ConfigB-v1}
+
+### ConfigB-v1[¶](#ConfigB-v1){.wiki-anchor}
+
+This configuration copies the settings from ConfigA-100m-v1 but uses a
+110 m baseline.
+
+[]{#ConfigC-v1}
+
+### ConfigC-v1[¶](#ConfigC-v1){.wiki-anchor}
+
+This configuration copies the settings from ConfigB-v1 but uses a very
+very large flux window (80 m x 80 m) flux window pressed up against the
+front face of the TPC. The flux files produced with this beam
+configuration should be used for event generation which includes
+dirt-based interactions. The reason for placing the flux window up
+against the TPC is that it\'s possible to ask GENIE to push rays back
+along Z when generating interactions in the volume. The idea is that
+it\'s better to leave the flux window in some well known location and
+then have whatever generator you are using decide how far upstream the
+flux rays actually start.
+
+[]{#ConfigD-v1}
+
+### ConfigD-v1[¶](#ConfigD-v1){.wiki-anchor}
+
+Files were produced using BooNEtoGSimple. The file uses an identical
+window setup to ConfigB-v1. A new config has been used due to a newer
+flux generation method.
+
+[]{#ConfigE-v1}
+
+### ConfigE-v1[¶](#ConfigE-v1){.wiki-anchor}
+
+Files were produced using BooNEtoGSimple. The file uses an identical
+window setup to ConfigC-v1. A new config has been used due to a newer
+flux generation method.
+
+[]{#ConfigF-v1}
+
+### ConfigF-v1[¶](#ConfigF-v1){.wiki-anchor}
+
+Files were produced using BooNEtoGSimple. The centre of the window has
+been shifted along X so that it is inline with the engineer drawings
+(the X,Y beam centre is now at (0.457, 0) rather than (1.3,0)), but
+otherwise uses an identical window setup to ConfigD-v1.
+
+[]{#ConfigG-v1}
+
+### ConfigG-v1[¶](#ConfigG-v1){.wiki-anchor}
+
+Files were produced using BooNEtoGSimple. The centre of the window has
+been shifted along X so that it is inline with the engineer drawings
+(the X,Y beam centre is now at (0.457, 0) rather than (1.3,0)), but
+otherwise uses an identical window setup to ConfigE-v1.
