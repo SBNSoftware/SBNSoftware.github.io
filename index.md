@@ -1,5 +1,7 @@
 # Welcome to the SBN Software Wiki Page
 
+**New to the SBN Github? Go to the [Github migration to do list](AnalysisInfrastructure/github-migration-to-do-list.md)**
+
 See below for helpful links:
 
 ### [Analysis Infrastructure](AnalysisInfrastructure/index.md)
