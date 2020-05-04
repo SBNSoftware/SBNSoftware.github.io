@@ -13,7 +13,11 @@ Please follow these instructions to make the migration of code repositories to G
 
 All active branches will be migrated, but any un-committed code will not be carried over in the migration.
 
-You will see the repository complete with your branches and latest commits appear on the Github page the morning of May 18. If you do not see your branch or you have any issues, please contact [Fernanda Psihas](mailto:psihas@fnal.gov)
+*The migration will take place between EOB on Friday May 15 to the morning of Monday May 18. During this period any development should just be kept locally, but we recommend holding further development until the migration is completed.*
+
+You will see the repository complete with your branches and latest commits appear on the Github page by the morning of May 18. If you do not see your branch or you have any issues, please contact [Fernanda Psihas](mailto:psihas@fnal.gov)
+
+
 
 #### 3. Get working and pushing to Github
 
