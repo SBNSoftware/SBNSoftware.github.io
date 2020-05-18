@@ -1,0 +1,91 @@
+---
+lang: en
+title: ReleaseNotes065400
+---
+
+  ----------- ------------ -- -- ------------------------------------------------------
+  v06.54.00   10/20/2017         [Release Notes](ReleaseNotes065400.html){.wiki-page}
+  ----------- ------------ -- -- ------------------------------------------------------
+
+[]{#sbndcode-v06_54_00-Release-Notes}
+
+sbndcode v06\_54\_00 Release Notes[¶](#sbndcode-v06_54_00-Release-Notes){.wiki-anchor}
+======================================================================================
+
+-   **Table of contents**
+-   [sbndcode v06\_54\_00 Release
+    Notes](#sbndcode-v06_54_00-Release-Notes)
+    -   [Purpose](#Purpose)
+    -   [New features](#New-features)
+    -   [Bug fixes](#Bug-fixes)
+    -   [Updated dependencies](#Updated-dependencies)
+-   [Change List](#Change-List)
+    -   [sbndcode v06\_54\_00](#sbndcode-v06_54_00)
+    -   [sbndutil v01\_30\_00](#sbndutil-v01_30_00)
+
+[list of sbndcode
+releases](List_of_SBND_code_releases.html){.wiki-page}\
+Download instructions for [sbndcode
+v06\_54\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_54_00/sbndcode-v06_54_00.html){.external}
+
+[]{#Purpose}
+
+Purpose[¶](#Purpose){.wiki-anchor}
+----------------------------------
+
+-   Weekly release
+
+[]{#New-features}
+
+New features[¶](#New-features){.wiki-anchor}
+--------------------------------------------
+
+-   Addition of XML files for SBN workshop
+
+[]{#Bug-fixes}
+
+Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+--------------------------------------
+
+-   Issue
+    [\#17941](/redmine/issues/17941 "Bug: Project.py lar jobs fail to process on the grid due to 'lar' command missing (Closed)"){.issue
+    .tracker-1 .status-5 .priority-7 .priority-highest .closed}
+
+[]{#Updated-dependencies}
+
+Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+------------------------------------------------------------
+
+-   [LArSoft
+    v06.54.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065400){.external}
+
+[]{#Change-List}
+
+Change List[¶](#Change-List){.wiki-anchor}
+==========================================
+
+[]{#sbndcode-v06_54_00}
+
+sbndcode v06\_54\_00[¶](#sbndcode-v06_54_00){.wiki-anchor}
+----------------------------------------------------------
+
+-   2017-10-20 Thomas Brooks : Merge branch \'release/v06\_54\_00\'
+-   2017-10-20 Thomas Brooks : Update for larsoft v06\_54\_00 (trivial)
+
+[]{#sbndutil-v01_30_00}
+
+sbndutil v01\_30\_00[¶](#sbndutil-v01_30_00){.wiki-anchor}
+----------------------------------------------------------
+
+-   2017-10-20 Thomas Brooks : Merge branch \'release/v01\_30\_00\'
+-   2017-10-20 Thomas Brooks : Update for larsoft v06\_54\_00 (trivial)
+-   2017-10-18 Dominic Brailsford : Fix for issue
+    [\#17941](/redmine/issues/17941 "Bug: Project.py lar jobs fail to process on the grid due to 'lar' command missing (Closed)"){.issue
+    .tracker-1 .status-5 .priority-7 .priority-highest .closed} Source
+    the strict (CVMFS) version of the sbnd setup script.
+-   2017-10-18 Dominic Brailsford : Change some of the comments so they
+    don\'t say mcc0.75 anymore
+-   2017-10-18 Dominic Brailsford : Add XML files for the
+    SBNWorkshop1017 production
+-   2017-10-18 Dominic Brailsford : Add generic XML production script so
+    that we don\'t have to make one for EVERY MCP production.

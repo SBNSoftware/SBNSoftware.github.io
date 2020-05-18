@@ -12,6 +12,7 @@ See below for helpful links:
 * [sbncode](https://github.com/SBNSoftware/sbncode): Common SBN code and configs.
 * [icaruscode](https://github.com/SBNSoftware/icaruscode): ICARUS-specific code and configs.
 * [sbndcode](https://github.com/SBNSoftware/sbndcode): SBND-specific code and configs.
+  * [Wiki](sbndcode_wiki/Wiki.md)
 
 * [sbnbuild](https://github.com/SBNSoftware/sbnbuild): Common SBN build scripts and utilities.
 
