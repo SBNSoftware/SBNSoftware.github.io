@@ -105,9 +105,7 @@ type of communication.
     the body put: **`SUBSCRIBE NAME-OF-MAILING-LIST Name Lastname`**,
     for example I would write: `SUBSCRIBE SBND-SOFTWARE Iker de Icaza`.
 
-```{=html}
-<!-- -->
-```
+
 -   Slack is used for day to day communication, particularly useful if
     more than one could answer \--remember SBND collaborators span
     several time zones\-- or if the answer could benefit more people
@@ -115,9 +113,7 @@ type of communication.
     Slack](https://sbnd.slack.com/signup){.external} with you FNAL
     account.
 
-```{=html}
-<!-- -->
-```
+
 -   [Zoom](http://zoom.us/){.external} is used for meetings, you will
     need to have it installed on your computer. You don\'t need to make
     an account to use it, however if you open it with your FNAL email
@@ -198,59 +194,43 @@ Here is a few places to look at more information about Art and LArsoft.
     LArSoft](The_SBND_Guide_to_using_LArSoft.html) (A useful
     page of links and examples)
 
-```{=html}
-<!-- -->
-```
+
 -   LArsoft: [How to setup your directory and launch your first
     job](How_to_setup_your_directory_and_launch_your_first_job.html)
     (This is an SBND wiki page to help set up your first job, it is the
     first thing you should try at )
 
-```{=html}
-<!-- -->
-```
+
 -   LArsoft: [Training
     sessions](https://cdcvs.fnal.gov/redmine/projects/art-larsoft-course/wiki/Instructions_for_Each_Session#Friday){.external}
     (This a link to some useful presentations introducing LArsoft).
 
-```{=html}
-<!-- -->
-```
+
 -   LArsoft: [Helpful tips for
     LArsoft](Helpful_tips_for_Larsoft_building.html) (This
     is a useful list of tips to help you along when editing your build)
 
-```{=html}
-<!-- -->
-```
+
 -   LArsoft doxygen: <http://nusoft.fnal.gov/larsoft/doxsvn/html/> (This
     is the go to place to find out about the code. Some
     functions\\algorithms\\classes are better documented than others)
 
-```{=html}
-<!-- -->
-```
+
 -   LArsoft redmine wiki:
     <https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoftWiki>
     (Gives a nice overview)
 
-```{=html}
-<!-- -->
-```
+
 -   Basic Concepts:
     <https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Using_art_in_LArSoft>
     (A Good link to start off with. It introduces some common features.)
 
-```{=html}
-<!-- -->
-```
+
 -   The Art Workbook: <http://art.fnal.gov/art-workbook/> (It is big,
     and explains things fairly well. **Don\'t** do the examples last
     time I tried they didn\'t work)
 
-```{=html}
-<!-- -->
-```
+
 -   The Analysis Examples: This is a package that can be downloaded into
     your local library. Follow the same procedure as in: [How to setup
     your directory and launch your first
@@ -258,9 +238,7 @@ Here is a few places to look at more information about Art and LArsoft.
     but instead of mrb g sbndcode do mrs g larexamples . You can
     download the package with these steps:
 
-```{=html}
-<!-- -->
-```
+
      mrb g sbndcode 
 
 Do\
@@ -272,15 +250,11 @@ The g is short for gitCheckout.
 -   The mrb reference guide:
     <https://cdcvs.fnal.gov/redmine/projects/mrb/wiki/MrbRefereceGuide>
 
-```{=html}
-<!-- -->
-```
+
 -   The LArsoft coding codeines:
     <https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/The_rules_and_guidelines>
 
-```{=html}
-<!-- -->
-```
+
 -   The Art Wiki: <https://cdcvs.fnal.gov/redmine/projects/art/wiki>
 
 {#C}
@@ -301,14 +275,10 @@ If you have a good c++ tutorial/documentation add it to the list!
 -   Accelerated C++:
     <http://irpp.org/wp-content/uploads/sites/2/2014/04/Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C++.pdf>
 
-```{=html}
-<!-- -->
-```
+
 -   Stack Exchange: <https://stackoverflow.com/questions/tagged/c%2B%2B>
 
-```{=html}
-<!-- -->
-```
+
 -   cppreference: <http://en.cppreference.com/w/cpp/container/vector>
 
 {#ROOT}
@@ -331,33 +301,25 @@ that are useful when learning ROOT. Feel free to add to the list!
     explanation of how things are working but it gives you something to
     work off)
 
-```{=html}
-<!-- -->
-```
+
 -   The Root Tutorials:
     <https://root.cern.ch/doc/master/group__Tutorials.html> (Same
     Principle as above, slightly different selection)
 
-```{=html}
-<!-- -->
-```
+
 -   The Root Userguide:
     <https://root.cern.ch/root/htmldoc/guides/users-guide/ROOTUsersGuide.html>
     (Big, detailed, good explanations, reading all of it is probably too
     much)
 
-```{=html}
-<!-- -->
-```
+
 -   The Root Primer:
     <https://root.cern.ch/root/htmldoc/guides/primer/ROOTPrimer.pdf>
     (Quicker, detailed, jumps straight into it, another useful thing to
     go through at the beginning, a little bit less friendly than the
     Nevis Tutorials.
 
-```{=html}
-<!-- -->
-```
+
 -   Nevis Root Tutorials:
     <https://www.nevis.columbia.edu/~seligman/root-class/> (Good
     Beginners guide, easy to work through for a complete beginner. A

@@ -80,27 +80,19 @@ Useful Examples(#Useful-Examples)
 -   [How to setup your directory and launch your first
     job](How_to_setup_your_directory_and_launch_your_first_job.html)
 
-```{=html}
-<!-- -->
-```
+
 -   [Working on a feature branch (to easily share
     code)](Working_on_a_feature_branch_(to_easily_share_code).html)
 
-```{=html}
-<!-- -->
-```
+
 -   [Viewing events remotely with
     VNC](Viewing_events_remotely_with_VNC.html)
 
-```{=html}
-<!-- -->
-```
+
 -   [Using LArSoft on a local
     machine](Using_LArSoft_on_a_local_machine.html)
 
-```{=html}
-<!-- -->
-```
+
 -   [Running standard SBND
     tests](Integration_test_guide.html)
 
@@ -112,21 +104,15 @@ The links below haven\'t been updated yet:
     SBND\'s [How to launch grid
     jobs](How_to_launch_grid_jobs.html) (in progress)
 
-```{=html}
-<!-- -->
-```
+
 -   [How to run simple track
     reconstruction](How_to_run_simple_track_reconstruction_.html)
 
-```{=html}
-<!-- -->
-```
+
 -   [How to run Fast Optical Simulation
     Jobs](How_to_run_Fast_Optical_Simulation_Jobs_.html)
 
-```{=html}
-<!-- -->
-```
+
 -   [How to set up lar1ndcode
     offiste](How_to_set_up_lar1ndcode_offiste.html)
 

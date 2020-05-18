@@ -22,9 +22,7 @@ When a new LArSoft release is available and you want to develop against the new 
         git checkout develop
         git pull
 
-```{=html}
-<!-- -->
-```
+
 -   If you are working on a feature branch (ignore if you are working in
     develop branch):\
 

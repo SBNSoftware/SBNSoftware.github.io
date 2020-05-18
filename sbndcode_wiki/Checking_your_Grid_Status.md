@@ -38,9 +38,7 @@ Fifemon: Grafana/Kibana(#Fifemon-GrafanaKibana)
     helps you get information from a local command line e.g. gpvms. One
     you have setup sbnd you can run the jobsub command such as
 
-```{=html}
-<!-- -->
-```
+
     jobsub_q --user=yourname 
 
 !(/redmine/attachments/download/59582/jobsub_q.png)

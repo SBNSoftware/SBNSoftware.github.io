@@ -266,61 +266,45 @@ it quickly.
 
         prjurl=`samweb start-project -e sbnd --defname=<definition name> <prjname>`
 
-```{=html}
-<!-- -->
-```
+
 -   Setup the local scratch disk. You must do this otherwise the files
     are copied to /var/temp. This is a bad thing.\
 
         export TMPDIR=/sbnd/data/users/$USER/temp
         mkdir -p $TMPDIR
 
-```{=html}
-<!-- -->
-```
+
 -   Start the consumer process this returns a integer.\
 
          cpid=`samweb start-process -e sbnd --appfamily=art --appname=lar --appversion=v06_70_01 $prjurl --max-files=n --schemas=root` 
 
-```{=html}
-<!-- -->
-```
+
 -   Request the next file.\
 
          fileuri=`samweb get-next-file -e sbnd $prjurl $cpid` 
 
-```{=html}
-<!-- -->
-```
+
 -   Copy the file into the local scratch folder. I couldn\'t get this to
     work so instead i copied the file (ifdh cp \$fileurl ./)\
 
          loc=`ifdh fetchInput $fileuri | grep $TMPDIR` 
 
-```{=html}
-<!-- -->
-```
+
 -   Then you can copy the file and analyse it.\
 
         cp $loc /where/I/want/it 
 
-```{=html}
-<!-- -->
-```
+
 -   Release the file.\
 
          samweb release-file -e sbnd $prjurl $cpid `basename $fileuri` 
 
-```{=html}
-<!-- -->
-```
+
 -   Stop the consumer process.\
 
         samweb stop-process  -e sbnd $prjurl $cpid
 
-```{=html}
-<!-- -->
-```
+
 -   Stop the project.\
 
         samweb stop-project -e sbnd <prjname>

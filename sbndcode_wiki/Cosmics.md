@@ -36,9 +36,7 @@ How to generate cosmic events(#How-to-generate-cosmic-events) {#how-to-generate-
     `_hists.root`). It will need access to dCache (and, likely, a
     [certificate proxy](Get_a_certificate_proxy.html)).
 
-```{=html}
-<!-- -->
-```
+
 -   Job Configuration FHiCL files (in `sbndcode/JobConfigurations` as
     usual):
 
