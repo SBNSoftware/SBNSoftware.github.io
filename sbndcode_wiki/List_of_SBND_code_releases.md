@@ -28,13 +28,19 @@ detailed information.
 List of `sbndcode` releases[¶](#List-of-sbndcode-releases){.wiki-anchor}
 ------------------------------------------------------------------------
 
-[ **Release manager**: [Thomas
-Brooks](mailto:tom.g.r.brooks@gmail.com)]{style="color: green;"}
+[ **Release manager**: [Andrew
+Scarff](mailto:a.scarff@sheffield.ac.uk)]{style="color: green;"} ( was
+[Thomas Brooks](mailto:tom.g.r.brooks@gmail.com) )
 
 These are the `sbndcode` releases tagged until now:
 
   -------------------------------- -------------------------------------------- -----------------------------------------------------------------------
   Version                          Notes                                        Detailed Notes
+  `v08_51_00`                      Weekly release                               [Release Notes](ReleaseNotes085100.html){.wiki-page}
+  `v08_50_02`                      Weekly release                               [Release Notes](ReleaseNotes085002.html){.wiki-page}
+  `v08_50_01`                      Weekly release                               [Release Notes](ReleaseNotes085001.html){.wiki-page}
+  `v08_50_00`                      Weekly release                               [Release Notes](ReleaseNotes085000.html){.wiki-page}
+  `v08_49_00`                      Weekly release                               [Release Notes](ReleaseNotes084900.html){.wiki-page}
   `v08_48_01`                      Weekly release                               [Release Notes](ReleaseNotes084801.html){.wiki-page}
   `v08_48_00`                      Weekly release                               [Release Notes](ReleaseNotes084800.html){.wiki-page}
   `v08_47_00`                      Weekly release                               [Release Notes](ReleaseNotes084700.html){.wiki-page}

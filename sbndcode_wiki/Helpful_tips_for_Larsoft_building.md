@@ -87,3 +87,30 @@ then:
     mrb z 
     mrb i -j4 
     mrbslp 
+
+[]{#Useful-Info-dumpers}
+
+Useful Info dumpers[¶](#Useful-Info-dumpers){.wiki-anchor}
+----------------------------------------------------------
+
+I can never find the correct one to run so I put them here as well.
+
+More info can be found
+[here](https://cdcvs.fnal.gov/redmine/projects/art/wiki){.external}
+
+[]{#Commands}
+
+### Commands[¶](#Commands){.wiki-anchor}
+
+**eventdump.fcl** - Dumps all the data products made in the file onto
+the screen (e.g. car -c eventdump.fcl myartfile.root)\
+**fhicl-dump** - Dumps all the fcl parameters used by the fcl on the
+screen (e.g. fhicl-dump myfcl.fcl)\
+**config\_dumper** - Dumps all the fcl parameters used to create the
+root file (e.g. config\_dumper myartroot.root)\
+**count\_events** - For when you need to know how many you have filtered
+quickly
+
+e.g\
+
+    count_events `while read p; do echo "$p"; done < myfiles.list`

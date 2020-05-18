@@ -27,7 +27,7 @@ Check that you are a SAM user[¶](#Check-that-you-are-a-SAM-user){.wiki-anchor}
 Once you have setup sbndcode (Or setup your local build):
 
     source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
-    setup sbndcode v06_53_00 -q e14:prof
+    setup sbndcode v08_51_00 -q e19:prof
 
 Check to see if you are a SAM user:
 
@@ -36,13 +36,22 @@ Check to see if you are a SAM user:
 If you are not SAM user ask Dom Brailsford
 (<d.brailsford@lancaster.ac.uk>) to add you.
 
-Quick Guide\
-Here is how to use SAM quickly. Setup the following environments:\
+[]{#Quick-Guide}
+
+Quick Guide[¶](#Quick-Guide){.wiki-anchor}
+------------------------------------------
+
+Here is how to use SAM quickly. Setup the following environments note
+this will be done if have setup sbndcode:\
 
     source /grid/fermiapp/products/setups.sh; 
     setup ifdhc; 
     setup sam_web_client;
     setup fife_utils; 
+
+\
+If you setup sbndcode sam will be set up as well. You will need still
+setup fife\_utils though.
 
 Now you can access SAM and locate files and there names using the samweb
 command. The command list-files has an obvious job and you can apply
@@ -137,20 +146,20 @@ Prestage files[¶](#Prestage-files){.wiki-anchor}
 ------------------------------------------------
 
 This is **IMPORTANT**. We need to prestage files before we work on
-anything stored on tape. Files NOT located in /pnfs/uboone/persistent or
-/pnfs/uboone/scratch are in areas that are taped-backed storage,
-Enstore. And while the files are permanently stored on tape, in order to
-access those files, they must be staged to disk within dCache in order
-to be processed. For a file to be staged to tape, the system must wait
-for a tape drive to become available and for the file to be located on
-that tape. This process can take from minutes up to many hours (20+
-hours depending on Enstore load) This means that in order to process a
-file, you are strongly encouraged to stage the file well ahead of time
-so that reading of the file will be prompt and not cause delay. (Trying
-to interactively read a file while that is not staged from tape will
-cause the interactive session to hang waiting for access. Again, this
-can be hours.) In order to prestage a dataset you should issues the
-following commands:
+anything stored on tape. Files NOT located in /pnfs/sbnd/persistent or
+/pnfs/sbnd/scratch are in areas that are taped-backed storage, Enstore.
+And while the files are permanently stored on tape, in order to access
+those files, they must be staged to disk within dCache in order to be
+processed. For a file to be staged to tape, the system must wait for a
+tape drive to become available and for the file to be located on that
+tape. This process can take from minutes up to many hours (20+ hours
+depending on Enstore load) This means that in order to process a file,
+you are strongly encouraged to stage the file well ahead of time so that
+reading of the file will be prompt and not cause delay. (Trying to
+interactively read a file while that is not staged from tape will cause
+the interactive session to hang waiting for access. Again, this can be
+hours.) In order to prestage a dataset you should issues the following
+commands:
 
      samweb prestage-dataset -e sbnd --defname=<your_dataset_name_here> 
 
@@ -181,6 +190,10 @@ Make Sure you have setup fife\_utils to use this.
 
 Running over a dataset. Grid life.[¶](#Running-over-a-dataset-Grid-life){.wiki-anchor}
 --------------------------------------------------------------------------------------
+
+Before embarking on your grid life start of by reading the project.py
+explanation [Using projectpy for grid
+jobs](Using_projectpy_for_grid_jobs.html){.wiki-page}
 
 Once you have a definition that you want to use and you have prestaged
 the files you are ready to run. One way to use the files is via
@@ -240,6 +253,9 @@ project\
 []{#Copying-the-files-to-local-scratch}
 
 ### Copying the files to local scratch.[¶](#Copying-the-files-to-local-scratch){.wiki-anchor}
+
+I don\'t know of anyone who does this, so maybe think twice before doing
+this.
 
 This way you can copy the files. This method is straight from the
 MicroBooNe \"page\":prjurl=\`samweb start-project \--defname=\$def

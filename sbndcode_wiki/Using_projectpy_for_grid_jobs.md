@@ -16,6 +16,50 @@ Redmine
 site](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide){.external}.
 This gives more detail on the specific elements.
 
+[]{#Before-Starting-Grid-Life}
+
+Before Starting Grid Life[¶](#Before-Starting-Grid-Life){.wiki-anchor}
+----------------------------------------------------------------------
+
+Here is a useful process to follow when you submit jobs to the gird.
+
+1.  Copy a file locally to do some initial testing. These might be files
+    you have made or production files. To access production files have a
+    look at [How to create and use a SAM
+    definition](_How_to_create_and_use_a_SAM_definition.html){.wiki-page}.
+    Make sure your larsoft command runs on the GPVM first.
+
+2.  Write project.py script
+
+3.  Run a test sample: rather than running over all events reduce your
+    event number and job number to 1-10\\% of the sample. In project.py
+    can request specific memory, lifetimes and space needed. To be a
+    good citizen you should change these e.g. in the stage you need:\
+
+        <disk>20GB</disk>
+        <memory>1500</memory>
+        <jobsub>--expected-lifetime=3h</jobsub>
+
+    \
+    for 20GB of space required on the node, 1.5 GB of memory and
+    expecting the job to finish within 3 hours. If you go above these
+    then you job will be held. Roughly calculate what you need from
+    output of the larsoft command and the size of the files. For the
+    test job relax the parameters so they will all pass. You you are
+    unsure what these should be set to ask.
+
+4.  Once you test job has come back successful then you alter your
+    requirements so that you set appropriate constraints on your
+    requirements. Don\'t be too harsh otherwise your jobs will be held.
+
+5.  If your test job fails. You can look to see why either by
+    graphana/kibana: [Checking your Grid
+    Status](Checking_your_Grid_Status.html){.wiki-page}, looking at the
+    log files in the output directory/work directory or by getting the
+    log file **jobsub\_fetchlog \--jobid=myid**. If you are not used to
+    jobs have a read
+    [here](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client){.external}.
+
 []{#How-the-write-a-Projectpy-XML-file}
 
 How the write a Project.py XML file[¶](#How-the-write-a-Projectpy-XML-file){.wiki-anchor}

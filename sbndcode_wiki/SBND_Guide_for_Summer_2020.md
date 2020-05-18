@@ -90,10 +90,10 @@ In general, you should select the latest version.
 
 You can skip this section if you don\'t need to develop sbndcode.
 
-[Details](#){#collapse-789dc1d8-show .collapsible
-.collapsed}[Details](#){#collapse-789dc1d8-hide .collapsible}
+[Details](#){#collapse-e478981d-show .collapsible
+.collapsed}[Details](#){#collapse-e478981d-hide .collapsible}
 
-::: {#collapse-789dc1d8 .collapsed-text style="display:none;"}
+::: {#collapse-e478981d .collapsed-text style="display:none;"}
 After steps 1 and 2, you can start setting up your development area:\
 
     mkdir my_larsoft
@@ -265,10 +265,11 @@ contains your generated events runt through detector simulation.
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
-[here](https://cdcvs.fnal.gov/redmine/projects/){.external}.
+[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/TITUS_Event_Display){.external}.
 
-Log in to `sbndgpvm04` and run\
+Open a fresh terminal, log in to an `sbndgpvm` machine, and run\
 
+    MY_WORKDIR=/sbnd/app/users/$USER/workdir
     source /sbnd/app/users/mdeltutt/static_evd/setup.sh
     evd.py -s $MY_WORKDIR/prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root
 
@@ -326,10 +327,10 @@ All the variables stored are described
 Projects[¶](#Projects){.wiki-anchor}
 ------------------------------------
 
-[CRT Thresholds](#){#collapse-e54aae76-show .collapsible .collapsed}[CRT
-Thresholds](#){#collapse-e54aae76-hide .collapsible}
+[CRT Thresholds](#){#collapse-a718c8f3-show .collapsible .collapsed}[CRT
+Thresholds](#){#collapse-a718c8f3-hide .collapsible}
 
-::: {#collapse-e54aae76 .collapsed-text style="display:none;"}
+::: {#collapse-a718c8f3 .collapsed-text style="display:none;"}
 We need to determine the thresholds for the CRT. Since the two SiPMs
 that read the light are on the same side of a CRT strip, there may be a
 difference between tracks that cross the bar close to the SiPMs and
@@ -346,10 +347,10 @@ track reconstruction, this can be done by looking if there is TPC
 activity in time with the CRT hits.
 :::
 
-[Timing offsets](#){#collapse-b6e6c47b-show .collapsible
-.collapsed}[Timing offsets](#){#collapse-b6e6c47b-hide .collapsible}
+[Timing offsets](#){#collapse-8a9bc46b-show .collapsible
+.collapsed}[Timing offsets](#){#collapse-8a9bc46b-hide .collapsible}
 
-::: {#collapse-b6e6c47b .collapsed-text style="display:none;"}
+::: {#collapse-8a9bc46b .collapsed-text style="display:none;"}
 This project can be entirely developed on MC, and the results of it can
 then be applied to data, when available.
 
