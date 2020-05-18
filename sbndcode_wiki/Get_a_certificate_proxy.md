@@ -3,20 +3,20 @@ lang: en
 title: Get a certificate proxy
 ---
 
-[]{#Get-a-SBND-certificate-and-proxy}
+{#Get-a-SBND-certificate-and-proxy}
 
-Get a SBND certificate and proxy[¶](#Get-a-SBND-certificate-and-proxy){.wiki-anchor}
+Get a SBND certificate and proxy(#Get-a-SBND-certificate-and-proxy)
 ====================================================================================
 
 > Note: this page is about certificates and proxies to access grid
 > resources. For \"personal\" certificates to access DocDB and web-based
 > resources, you want a [CILogon
-> certificate](Setting_up_access_with_CILogon_certificate.html){.wiki-page}
+> certificate](Setting_up_access_with_CILogon_certificate.html)
 > instead.
 
-[]{#Virtual-Organization-membership}
+{#Virtual-Organization-membership}
 
-Virtual Organization membership[¶](#Virtual-Organization-membership){.wiki-anchor}
+Virtual Organization membership(#Virtual-Organization-membership)
 ----------------------------------------------------------------------------------
 
 First, you need to be registered in the proper Virtual Organization,
@@ -28,18 +28,18 @@ are `Analysis` (which you should pick if unsure) and `Production`.
 You can check your status by pointing your browser to Fermilab VOMS
 server at <https://voms.fnal.gov:8443/voms/fermilab/user/home.action> .
 You will be required to present a certificate (the [CILogon
-certificate](Setting_up_access_with_CILogon_certificate.html){.wiki-page}
+certificate](Setting_up_access_with_CILogon_certificate.html)
 is good enough for this), and from it the server will know who you are
 and will tell what you can do.
 
 If you don\'t get the expected result (e.g., you are not listed in the
 `fermilab/sbnd` group or you need to play a different role), [request
 the change via service
-desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk){.wiki-page}.
+desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 
-[]{#Get-the-proxy}
+{#Get-the-proxy}
 
-Get the proxy[¶](#Get-the-proxy){.wiki-anchor}
+Get the proxy(#Get-the-proxy)
 ----------------------------------------------
 
 The ritual for getting the certificate and proxy goes like this:\
@@ -66,14 +66,14 @@ The command
 
 will tell you more than you want to know about your current certificate.
 
-[]{#Production-role-jobs}
+{#Production-role-jobs}
 
-Production role jobs[¶](#Production-role-jobs){.wiki-anchor}
+Production role jobs(#Production-role-jobs)
 ------------------------------------------------------------
 
-[]{#Getting-production-privileges}
+{#Getting-production-privileges}
 
-### Getting production privileges[¶](#Getting-production-privileges){.wiki-anchor}
+### Getting production privileges(#Getting-production-privileges)
 
 Submit a service desk ticket asking for production role privileges for
 SBND. You will most likely have to add a computing coordinator to the
@@ -85,9 +85,9 @@ You should then be able to ssh to an sbnd machine as the sbndpro user:\
 
      ssh -Y sbndpro@sbndgpvm01.fnal.gov 
 
-[]{#Getting-the-production-proxy-old-school-method}
+{#Getting-the-production-proxy-old-school-method}
 
-### Getting the production proxy (old-school method)[¶](#Getting-the-production-proxy-old-school-method){.wiki-anchor}
+### Getting the production proxy (old-school method)(#Getting-the-production-proxy-old-school-method)
 
 The following should be run on the command line when logged into the
 sbndpro account.\
@@ -97,9 +97,9 @@ sbndpro account.\
 \
 You should now be able to submit production jobs.
 
-[]{#Getting-the-production-proxy-the-new-method}
+{#Getting-the-production-proxy-the-new-method}
 
-### Getting the production proxy (the new method)[¶](#Getting-the-production-proxy-the-new-method){.wiki-anchor}
+### Getting the production proxy (the new method)(#Getting-the-production-proxy-the-new-method)
 
 A much easier alternative to getting production-role access is to use
 the production proxy certificate that is pushed to the gpvm several

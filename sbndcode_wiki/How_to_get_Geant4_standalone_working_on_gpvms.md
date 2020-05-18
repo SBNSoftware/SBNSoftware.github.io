@@ -3,9 +3,9 @@ lang: en
 title: How to get Geant4 standalone working on gpvms
 ---
 
-[]{#How-to-get-Geant4-standalone-working-on-gpvms}
+{#How-to-get-Geant4-standalone-working-on-gpvms}
 
-How to get Geant4 standalone working on gpvms[¶](#How-to-get-Geant4-standalone-working-on-gpvms){.wiki-anchor}
+How to get Geant4 standalone working on gpvms(#How-to-get-Geant4-standalone-working-on-gpvms)
 ==============================================================================================================
 
 Since I just spent a really long time trying to get standalone G4

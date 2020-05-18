@@ -3,9 +3,9 @@ lang: en
 title: How to create and use a SAM definition
 ---
 
-[]{#How-to-create-and-use-a-SAM-dataset}
+{#How-to-create-and-use-a-SAM-dataset}
 
-How to create and use a SAM dataset[¶](#How-to-create-and-use-a-SAM-dataset){.wiki-anchor}
+How to create and use a SAM dataset(#How-to-create-and-use-a-SAM-dataset)
 ==========================================================================================
 
 This page is a quick guide to how to access files from sam and use them
@@ -19,9 +19,9 @@ or the [MicroBooNE SAM
 Page](https://cdcvs.fnal.gov/redmine/projects/uboonecode/wiki/Sam){.external}\".
 There is plenty of useful information here if what below is not helpful.
 
-[]{#Check-that-you-are-a-SAM-user}
+{#Check-that-you-are-a-SAM-user}
 
-Check that you are a SAM user[¶](#Check-that-you-are-a-SAM-user){.wiki-anchor}
+Check that you are a SAM user(#Check-that-you-are-a-SAM-user)
 ------------------------------------------------------------------------------
 
 Once you have setup sbndcode (Or setup your local build):
@@ -36,9 +36,9 @@ Check to see if you are a SAM user:
 If you are not SAM user ask Dom Brailsford
 (<d.brailsford@lancaster.ac.uk>) to add you.
 
-[]{#Quick-Guide}
+{#Quick-Guide}
 
-Quick Guide[¶](#Quick-Guide){.wiki-anchor}
+Quick Guide(#Quick-Guide)
 ------------------------------------------
 
 Here is how to use SAM quickly. Setup the following environments note
@@ -69,27 +69,27 @@ filters. You can then locate a file using the locate-file command:\
 You can use tools such as ifdh\_fetch (described below) to copy the
 file(s) to your local directory. Make sure you have enough space!
 
-[]{#Make-sure-you-have-Certification}
+{#Make-sure-you-have-Certification}
 
-Make sure you have Certification[¶](#Make-sure-you-have-Certification){.wiki-anchor}
+Make sure you have Certification(#Make-sure-you-have-Certification)
 ------------------------------------------------------------------------------------
 
 Firstly to do some of the task below you will need a proxy so grab one
 of those. Follow the ritual from this page: [Get a certificate
-proxy](Get_a_certificate_proxy.html){.wiki-page}
+proxy](Get_a_certificate_proxy.html)
 
-[]{#Sam-Definitions}
+{#Sam-Definitions}
 
-Sam Definitions[¶](#Sam-Definitions){.wiki-anchor}
+Sam Definitions(#Sam-Definitions)
 --------------------------------------------------
 
 A definition links all files that are similar together so that you can a
 sample quickly. All our Monte Carlo samples will have definitions so
 that you can easily access them but you can make your own.
 
-[]{#Using-Definitions-and-Creating-Datasets}
+{#Using-Definitions-and-Creating-Datasets}
 
-### Using Definitions and Creating Datasets[¶](#Using-Definitions-and-Creating-Datasets){.wiki-anchor}
+### Using Definitions and Creating Datasets(#Using-Definitions-and-Creating-Datasets)
 
 You can see all the definitions by running
 
@@ -107,9 +107,9 @@ connected via
 to use it). You can create your own definitions and delete existing
 ones. You can run samweb help to see the list of options.
 
-[]{#Creating-a-definition}
+{#Creating-a-definition}
 
-### Creating a definition[¶](#Creating-a-definition){.wiki-anchor}
+### Creating a definition(#Creating-a-definition)
 
 If the dataset you require does not exist yet you can make it. To create
 a definition you use:
@@ -121,9 +121,9 @@ There is a whole bunch of meta-data parameters to choose from. You can
 add secondary meta-data parameters by using a \"and\" like in the
 example above.
 
-[]{#Meta-Data}
+{#Meta-Data}
 
-Meta-Data[¶](#Meta-Data){.wiki-anchor}
+Meta-Data(#Meta-Data)
 --------------------------------------
 
 You look at the meta-data associated with file by using the following
@@ -133,16 +133,16 @@ command. You can use this information to create definitions:
 
 You will get a response which will look something like this:
 
-![](/redmine/attachments/download/46765/metadata.png)
+!(/redmine/attachments/download/46765/metadata.png)
 
 You can also search for files with similar meta-data using:
 
     sameweb list-files -e sbnd "metadata-parameter = value" 
     e.g. samweb list-files -e sbnd "defname = production_pre-production_0.5_mc_prodsingle_dualmu_3GeV_fixposcontained_openingangle1.0degree_reco" 
 
-[]{#Prestage-files}
+{#Prestage-files}
 
-Prestage files[¶](#Prestage-files){.wiki-anchor}
+Prestage files(#Prestage-files)
 ------------------------------------------------
 
 This is **IMPORTANT**. We need to prestage files before we work on
@@ -165,9 +165,9 @@ commands:
 
 If you want to only stage a specific amount you can add:\--max-files=n.
 
-[]{#Would-you-like-a-test-file}
+{#Would-you-like-a-test-file}
 
-Would you like a test file?[¶](#Would-you-like-a-test-file){.wiki-anchor}
+Would you like a test file?(#Would-you-like-a-test-file)
 -------------------------------------------------------------------------
 
 Sometimes you just want to copy one file from SAM to a local disk for
@@ -186,14 +186,14 @@ through it in order to copy down multiple files e.g:\
 
 Make Sure you have setup fife\_utils to use this.
 
-[]{#Running-over-a-dataset-Grid-life}
+{#Running-over-a-dataset-Grid-life}
 
-Running over a dataset. Grid life.[¶](#Running-over-a-dataset-Grid-life){.wiki-anchor}
+Running over a dataset. Grid life.(#Running-over-a-dataset-Grid-life)
 --------------------------------------------------------------------------------------
 
 Before embarking on your grid life start of by reading the project.py
 explanation [Using projectpy for grid
-jobs](Using_projectpy_for_grid_jobs.html){.wiki-page}
+jobs](Using_projectpy_for_grid_jobs.html)
 
 Once you have a definition that you want to use and you have prestaged
 the files you are ready to run. One way to use the files is via
@@ -207,7 +207,7 @@ telling project.py what definition to use:
 also be found on the gpvms at:
 /sbnd/app/users/dbarker/samrunjobexample.xml.
 
-![](/redmine/attachments/download/46767/projectpyexample.png)
+!(/redmine/attachments/download/46767/projectpyexample.png)
 
 Usually SAM requires a project (see below) to be made, then files are
 accessed from a definition to be analysed. Project.py does this for you
@@ -215,14 +215,14 @@ under the hood. Run the file using the usually command:
 
     project.py --xml samrunjob.xml --submit --clean
 
-[]{#Running-over-a-dataset-Local-life}
+{#Running-over-a-dataset-Local-life}
 
-Running over a dataset. Local life.[¶](#Running-over-a-dataset-Local-life){.wiki-anchor}
+Running over a dataset. Local life.(#Running-over-a-dataset-Local-life)
 ----------------------------------------------------------------------------------------
 
-[]{#A-quick-way-to-process-the-files}
+{#A-quick-way-to-process-the-files}
 
-### A quick way to process the files.[¶](#A-quick-way-to-process-the-files){.wiki-anchor}
+### A quick way to process the files.(#A-quick-way-to-process-the-files)
 
 In order to use the files one needs to create a project. You can see
 your projects by running: samweb list-projects \--user=\$USER. This
@@ -250,9 +250,9 @@ project\
 
      samweb stop-project <name of project> 
 
-[]{#Copying-the-files-to-local-scratch}
+{#Copying-the-files-to-local-scratch}
 
-### Copying the files to local scratch.[¶](#Copying-the-files-to-local-scratch){.wiki-anchor}
+### Copying the files to local scratch.(#Copying-the-files-to-local-scratch)
 
 I don\'t know of anyone who does this, so maybe think twice before doing
 this.
@@ -325,6 +325,6 @@ it quickly.
 
         samweb stop-project -e sbnd <prjname>
 
-[]{#Using-art}
+{#Using-art}
 
-### Using art.[¶](#Using-art){.wiki-anchor}
+### Using art.(#Using-art)

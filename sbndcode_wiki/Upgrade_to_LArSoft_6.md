@@ -3,9 +3,9 @@ lang: en
 title: Upgrade to LArSoft 6
 ---
 
-[]{#Upgrade-to-LArSoft-6}
+{#Upgrade-to-LArSoft-6}
 
-Upgrade to LArSoft 6[¶](#Upgrade-to-LArSoft-6){.wiki-anchor}
+Upgrade to LArSoft 6(#Upgrade-to-LArSoft-6)
 ============================================================
 
 -   **Table of contents**
@@ -15,15 +15,15 @@ Upgrade to LArSoft 6[¶](#Upgrade-to-LArSoft-6){.wiki-anchor}
     -   [From LArSoft 5.12.1 to LArSoft
         6.32.0](#From-LArSoft-5121-to-LArSoft-6320)
 
-[]{#LArSoft-resources-on-updating-code}
+{#LArSoft-resources-on-updating-code}
 
-LArSoft resources on updating code[¶](#LArSoft-resources-on-updating-code){.wiki-anchor} {#larsoft-resources-on-updating-code .count}
+LArSoft resources on updating code(#LArSoft-resources-on-updating-code) {#larsoft-resources-on-updating-code .count}
 ----------------------------------------------------------------------------------------
 
 The code in our branches (including in fact `develop`) needs to be
 compatible with LArSoft.\
 Every time LArSoft breaks backward compatibility with the past, it
-[announces a breaking change](Breaking_Changes.html){.wiki-page}.
+[announces a breaking change](Breaking_Changes.html).
 Sometimes, tools are provided to help or automatically perform the
 upgrade.\
 If your branch is written against LArSoft version `vXX` (e.g.,
@@ -34,9 +34,9 @@ target version (in the example, relevant breaking changes are documented
 for `v05_13_00`, `v06_00_01`, `v06_02_00`, `v06_11_00`, `v06_14_00`,
 `v06_16_00` and `v06_22_00`\... quite a number of them!).
 
-[]{#From-LArSoft-5121-to-LArSoft-6320}
+{#From-LArSoft-5121-to-LArSoft-6320}
 
-From LArSoft 5.12.1 to LArSoft 6.32.0[¶](#From-LArSoft-5121-to-LArSoft-6320){.wiki-anchor} {#from-larsoft-5.12.1-to-larsoft-6.32.0 .count}
+From LArSoft 5.12.1 to LArSoft 6.32.0(#From-LArSoft-5121-to-LArSoft-6320) {#from-larsoft-5.12.1-to-larsoft-6.32.0 .count}
 ------------------------------------------------------------------------------------------
 
 The old feature branches created before April 17, 2017 are based on a
@@ -87,7 +87,7 @@ The content of your working area might look vaguely like this:
 
 4.  run all the update scripts; the correct list is something you\'ll
     have to figure out from the [breaking change
-    page](Breaking_Changes.html){.wiki-page}\... not fun. This is **just
+    page](Breaking_Changes.html)\... not fun. This is **just
     an example**:\
 
         cd "$MRB_SOURCE" 

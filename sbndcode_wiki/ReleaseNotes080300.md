@@ -4,12 +4,12 @@ title: ReleaseNotes080300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.03.00   01/11/2019         [Release Notes](ReleaseNotes080300.html){.wiki-page}
+  v08.03.00   01/11/2019         [Release Notes](ReleaseNotes080300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_03_00-Release-Notes}
+{#sbndcode-v08_03_00-Release-Notes}
 
-sbndcode v08\_03\_00 Release Notes[¶](#sbndcode-v08_03_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_03\_00 Release Notes(#sbndcode-v08_03_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,46 +24,46 @@ sbndcode v08\_03\_00 Release Notes[¶](#sbndcode-v08_03_00-Release-Notes){.wiki-
     -   [sbndutil v08\_03\_00](#sbndutil-v08_03_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_03\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_03_00/sbndcode-v08_03_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   CRT utility functions
 -   Restructure of CRT code
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.03.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080300){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_03_00}
+{#sbndcode-v08_03_00}
 
-sbndcode v08\_03\_00[¶](#sbndcode-v08_03_00){.wiki-anchor}
+sbndcode v08\_03\_00(#sbndcode-v08_03_00)
 ----------------------------------------------------------
 
 -   2019-01-11 Thomas Brooks : Merge branch \'release/v08\_03\_00\'
@@ -91,9 +91,9 @@ sbndcode v08\_03\_00[¶](#sbndcode-v08_03_00){.wiki-anchor}
     associations
 -   2018-11-29 Thomas Brooks : Added CRT ana utility functions
 
-[]{#sbndutil-v08_03_00}
+{#sbndutil-v08_03_00}
 
-sbndutil v08\_03\_00[¶](#sbndutil-v08_03_00){.wiki-anchor}
+sbndutil v08\_03\_00(#sbndutil-v08_03_00)
 ----------------------------------------------------------
 
 -   2019-01-11 Thomas Brooks : Merge branch \'release/v08\_03\_00\'

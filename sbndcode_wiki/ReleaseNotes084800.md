@@ -4,12 +4,12 @@ title: ReleaseNotes084800
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.48.00   03/26/2020         [Release Notes](ReleaseNotes084800.html){.wiki-page}
+  v08.48.00   03/26/2020         [Release Notes](ReleaseNotes084800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_48_00-Release-Notes}
+{#sbndcode-v08_48_00-Release-Notes}
 
-sbndcode v08\_48\_00 Release Notes[¶](#sbndcode-v08_48_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_48\_00 Release Notes(#sbndcode-v08_48_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,46 +24,46 @@ sbndcode v08\_48\_00 Release Notes[¶](#sbndcode-v08_48_00-Release-Notes){.wiki-
     -   [sbndutil v08\_48\_00](#sbndutil-v08_48_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_48\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_48_00/sbndcode-v08_48_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   Fix to [Bug
     \#24211](https://cdcvs.fnal.gov/redmine/issues/24211#change-76323){.external}
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.48.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084800){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_48_00}
+{#sbndcode-v08_48_00}
 
-sbndcode v08\_48\_00[¶](#sbndcode-v08_48_00){.wiki-anchor}
+sbndcode v08\_48\_00(#sbndcode-v08_48_00)
 ----------------------------------------------------------
 
 -   2020-03-26 Andrew Scarff : Merge branch \'release/v08\_48\_00\'
@@ -182,9 +182,9 @@ sbndcode v08\_48\_00[¶](#sbndcode-v08_48_00){.wiki-anchor}
 -   2020-03-16 Iker de Icaza Astiz : Read the pmt and arapucas data from
     a root file. Somewhat hindering performance.
 
-[]{#sbndutil-v08_48_00}
+{#sbndutil-v08_48_00}
 
-sbndutil v08\_48\_00[¶](#sbndutil-v08_48_00){.wiki-anchor}
+sbndutil v08\_48\_00(#sbndutil-v08_48_00)
 ----------------------------------------------------------
 
 -   2020-03-26 Andrew Scarff : Merge branch \'release/v08\_48\_00\'

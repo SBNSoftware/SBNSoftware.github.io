@@ -3,9 +3,9 @@ lang: en
 title: Helpful tips for Larsoft building
 ---
 
-[]{#Helpful-tips-for-LArsoft}
+{#Helpful-tips-for-LArsoft}
 
-Helpful tips for LArsoft[¶](#Helpful-tips-for-LArsoft){.wiki-anchor}
+Helpful tips for LArsoft(#Helpful-tips-for-LArsoft)
 ====================================================================
 
 This is a combine list of things you might find useful when using
@@ -16,9 +16,9 @@ LArsoft. The examples are taken from other Redmine LArsoft sites:
 
 for more please see them. Please add to the list as well!
 
-[]{#Updating-LArsoft-version-whilst-keeping-the-old-compilation}
+{#Updating-LArsoft-version-whilst-keeping-the-old-compilation}
 
-Updating LArsoft version whilst keeping the old compilation[¶](#Updating-LArsoft-version-whilst-keeping-the-old-compilation){.wiki-anchor}
+Updating LArsoft version whilst keeping the old compilation(#Updating-LArsoft-version-whilst-keeping-the-old-compilation)
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 This is useful for when you want concurrent prof/debug builds using the
@@ -35,9 +35,9 @@ LArsoft version you want e.g. if you wanted v06\_59\_00:
 in.\
 -f tells mrb to use the src directory that already exists.
 
-[]{#Performing-a-Clean-Build}
+{#Performing-a-Clean-Build}
 
-Performing a Clean Build[¶](#Performing-a-Clean-Build){.wiki-anchor}
+Performing a Clean Build(#Performing-a-Clean-Build)
 --------------------------------------------------------------------
 
 The is stolen from site 1. Setup your code.\
@@ -50,9 +50,9 @@ The is stolen from site 1. Setup your code.\
 The z is short for zapBuild and it removes all the local files out of
 the local repository.
 
-[]{#Removing-a-package-from-a-work-area-}
+{#Removing-a-package-from-a-work-area-}
 
-Removing a package from a work area .[¶](#Removing-a-package-from-a-work-area-){.wiki-anchor}
+Removing a package from a work area .(#Removing-a-package-from-a-work-area-)
 ---------------------------------------------------------------------------------------------
 
 This is stolen from site 1. Setup your code.
@@ -61,9 +61,9 @@ This is stolen from site 1. Setup your code.
     rm -rf <repo-name>
     mrb uc 
 
-[]{#Looking-at-the-builds-available}
+{#Looking-at-the-builds-available}
 
-Looking at the builds available[¶](#Looking-at-the-builds-available){.wiki-anchor}
+Looking at the builds available(#Looking-at-the-builds-available)
 ----------------------------------------------------------------------------------
 
 Do the following command to see what qualifiers and versions of sbndcode
@@ -71,9 +71,9 @@ are available.
 
     ups list -aK+ sbndcode 
 
-[]{#Add-a-new-package-to-your-LArsoft-version}
+{#Add-a-new-package-to-your-LArsoft-version}
 
-Add a new package to your LArsoft version.[¶](#Add-a-new-package-to-your-LArsoft-version){.wiki-anchor}
+Add a new package to your LArsoft version.(#Add-a-new-package-to-your-LArsoft-version)
 -------------------------------------------------------------------------------------------------------
 
 Setup your code. Find the version of the package you are downloading
@@ -88,9 +88,9 @@ then:
     mrb i -j4 
     mrbslp 
 
-[]{#Useful-Info-dumpers}
+{#Useful-Info-dumpers}
 
-Useful Info dumpers[¶](#Useful-Info-dumpers){.wiki-anchor}
+Useful Info dumpers(#Useful-Info-dumpers)
 ----------------------------------------------------------
 
 I can never find the correct one to run so I put them here as well.
@@ -98,9 +98,9 @@ I can never find the correct one to run so I put them here as well.
 More info can be found
 [here](https://cdcvs.fnal.gov/redmine/projects/art/wiki){.external}
 
-[]{#Commands}
+{#Commands}
 
-### Commands[¶](#Commands){.wiki-anchor}
+### Commands(#Commands)
 
 **eventdump.fcl** - Dumps all the data products made in the file onto
 the screen (e.g. car -c eventdump.fcl myartfile.root)\

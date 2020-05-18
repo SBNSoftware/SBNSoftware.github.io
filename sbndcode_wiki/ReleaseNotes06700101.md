@@ -4,12 +4,12 @@ title: ReleaseNotes06700101
 ---
 
   -------------- ------------ -- -- --------------------------------------------------------
-  v06.70.01.01   03/14/2018         [Release Notes](ReleaseNotes06700101.html){.wiki-page}
+  v06.70.01.01   03/14/2018         [Release Notes](ReleaseNotes06700101.html)
   -------------- ------------ -- -- --------------------------------------------------------
 
-[]{#sbndcode-v06_70_01_01-Release-Notes}
+{#sbndcode-v06_70_01_01-Release-Notes}
 
-sbndcode v06\_70\_01\_01 Release Notes[¶](#sbndcode-v06_70_01_01-Release-Notes){.wiki-anchor}
+sbndcode v06\_70\_01\_01 Release Notes(#sbndcode-v06_70_01_01-Release-Notes)
 =============================================================================================
 
 -   **Table of contents**
@@ -23,20 +23,20 @@ sbndcode v06\_70\_01\_01 Release Notes[¶](#sbndcode-v06_70_01_01-Release-Notes)
     -   [sbndcode v06\_70\_01\_01](#sbndcode-v06_70_01_01)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_01\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01/sbndcode-v06_70_01_01.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN workshop 03/18
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   BNB-like particle gun fcl files
@@ -45,27 +45,27 @@ New features[¶](#New-features){.wiki-anchor}
 -   Add shower reconstruction
 -   Fast optical simulation
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.70.01.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes06700101){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_70_01_01}
+{#sbndcode-v06_70_01_01}
 
-sbndcode v06\_70\_01\_01[¶](#sbndcode-v06_70_01_01){.wiki-anchor}
+sbndcode v06\_70\_01\_01(#sbndcode-v06_70_01_01)
 -----------------------------------------------------------------
 
 -   2018-03-14 Thomas Brooks : Freeze for SBN workshop 03/2018

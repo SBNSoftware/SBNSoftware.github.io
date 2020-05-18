@@ -4,12 +4,12 @@ title: ReleaseNotes068500
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.85.00   08/01/2018         [Release Notes](ReleaseNotes068500.html){.wiki-page}
+  v06.85.00   08/01/2018         [Release Notes](ReleaseNotes068500.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_85_00-Release-Notes}
+{#sbndcode-v06_85_00-Release-Notes}
 
-sbndcode v06\_85\_00 Release Notes[¶](#sbndcode-v06_85_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_85\_00 Release Notes(#sbndcode-v06_85_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,31 +24,31 @@ sbndcode v06\_85\_00 Release Notes[¶](#sbndcode-v06_85_00-Release-Notes){.wiki-
     -   [sbndutil v01\_61\_00](#sbndutil-v01_61_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_85\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_85_00/sbndcode-v06_85_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Update to art v2\_11\_03
 -   Add e17 (c++17 for SLF machines) support
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [art
@@ -57,23 +57,23 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
     v06.85.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes068500){.external}
 -   larbatch v01.43.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_85_00}
+{#sbndcode-v06_85_00}
 
-sbndcode v06\_85\_00[¶](#sbndcode-v06_85_00){.wiki-anchor}
+sbndcode v06\_85\_00(#sbndcode-v06_85_00)
 ----------------------------------------------------------
 
 -   2018-07-31 Thomas Brooks : Merge branch \'release/v06\_85\_00\'
 -   2018-07-31 Thomas Brooks : Update for larsoft v06\_85\_00
 -   2018-07-31 Thomas Brooks : Merge tag \'v06\_84\_00\' into develop
 
-[]{#sbndutil-v01_61_00}
+{#sbndutil-v01_61_00}
 
-sbndutil v01\_61\_00[¶](#sbndutil-v01_61_00){.wiki-anchor}
+sbndutil v01\_61\_00(#sbndutil-v01_61_00)
 ----------------------------------------------------------
 
 -   2018-07-31 Thomas Brooks : Merge branch \'release/v01\_61\_00\'

@@ -3,18 +3,18 @@ lang: en
 title: Updating sbnd data
 ---
 
-[]{#Updating-sbnd-data}
+{#Updating-sbnd-data}
 
-Updating sbnd data[¶](#Updating-sbnd-data){.wiki-anchor}
+Updating sbnd data(#Updating-sbnd-data)
 ========================================================
 
 -   sbnd\_data is not version controlled by git so everything is much
     more difficult.
 -   There are two ways to treat sbnd\_data to make life a little easier
 
-[]{#Current-version-can-be-updated}
+{#Current-version-can-be-updated}
 
-Current version can be updated[¶](#Current-version-can-be-updated){.wiki-anchor}
+Current version can be updated(#Current-version-can-be-updated)
 --------------------------------------------------------------------------------
 
 -   If new files or directories need to be added the current version can
@@ -42,9 +42,9 @@ Current version can be updated[¶](#Current-version-can-be-updated){.wiki-anchor
 
 -   Publish the transaction.
 
-[]{#New-version-required}
+{#New-version-required}
 
-New version required[¶](#New-version-required){.wiki-anchor}
+New version required(#New-version-required)
 ------------------------------------------------------------
 
 -   If a file that already exists needs to be updated then the version
@@ -54,18 +54,18 @@ New version required[¶](#New-version-required){.wiki-anchor}
 -   We don\'t need this anymore so it can be dropped when sbnd\_data
     v01.03 is needed.
 -   There are some instructions of how to do a manual deployment
-    [here](Write_files_to_SciSoft.html){.wiki-page} but it has been a
+    [here](Write_files_to_SciSoft.html) but it has been a
     while since they were used and may not be valid any more.
 -   A worked example of what I did last time sbnd\_data was uploaded to
     SciSoft follows.
 -   Once the tarball is on SciSoft it can be distributed on
     /grid/fermiapp [like sbndcode and
-    sbndutil](Deploying_a_release_on_fermigrid.html){.wiki-page} and
+    sbndutil](Deploying_a_release_on_fermigrid.html) and
     then rsync\'d to cvmfs (I think).
 
-[]{#New-version-worked-example}
+{#New-version-worked-example}
 
-New version worked example[¶](#New-version-worked-example){.wiki-anchor}
+New version worked example(#New-version-worked-example)
 ------------------------------------------------------------------------
 
     ssh tbrooks@sbndgpvm01.fnal.gov

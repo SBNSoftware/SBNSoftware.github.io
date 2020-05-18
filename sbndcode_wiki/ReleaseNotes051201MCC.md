@@ -4,12 +4,12 @@ title: ReleaseNotes051201MCC
 ---
 
   --------------- ------------ -- -- ---------------------------------------------------------
-  v05.12.01.MCC   03/08/2017         [Release Notes](ReleaseNotes051201MCC.html){.wiki-page}
+  v05.12.01.MCC   03/08/2017         [Release Notes](ReleaseNotes051201MCC.html)
   --------------- ------------ -- -- ---------------------------------------------------------
 
-[]{#sbndcode-v05_12_01_MCC-Release-Notes}
+{#sbndcode-v05_12_01_MCC-Release-Notes}
 
-sbndcode v05\_12\_01\_MCC Release Notes[¶](#sbndcode-v05_12_01_MCC-Release-Notes){.wiki-anchor}
+sbndcode v05\_12\_01\_MCC Release Notes(#sbndcode-v05_12_01_MCC-Release-Notes)
 ===============================================================================================
 
 -   **Table of contents**
@@ -23,38 +23,38 @@ sbndcode v05\_12\_01\_MCC Release Notes[¶](#sbndcode-v05_12_01_MCC-Release-Note
     -   [sbndcode v05\_12\_01\_MCC](#sbndcode-v05_12_01_MCC)
     -   [sbndutil v01\_14\_00\_MCC](#sbndutil-v01_14_00_MCC)
 
-[list of sbndcode releases](List_of_SBND_code_releases.html){.wiki-page}
+[list of sbndcode releases](List_of_SBND_code_releases.html)
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 Frozen for MCC 0.5
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v05_12_01_MCC}
+{#sbndcode-v05_12_01_MCC}
 
-sbndcode v05\_12\_01\_MCC[¶](#sbndcode-v05_12_01_MCC){.wiki-anchor}
+sbndcode v05\_12\_01\_MCC(#sbndcode-v05_12_01_MCC)
 -------------------------------------------------------------------
 
 -   2017-03-01 Thomas Brooks : Merge branch \'release/v05\_12\_01\_MCC\'
@@ -234,9 +234,9 @@ sbndcode v05\_12\_01\_MCC[¶](#sbndcode-v05_12_01_MCC){.wiki-anchor}
     module instance
 -   2016-06-24 Corey Adams : Merge tag \'v05\_12\_01\' into develop
 
-[]{#sbndutil-v01_14_00_MCC}
+{#sbndutil-v01_14_00_MCC}
 
-sbndutil v01\_14\_00\_MCC[¶](#sbndutil-v01_14_00_MCC){.wiki-anchor}
+sbndutil v01\_14\_00\_MCC(#sbndutil-v01_14_00_MCC)
 -------------------------------------------------------------------
 
 -   2017-03-01 Thomas Brooks : Merge branch \'release/v01\_14\_00\_MCC\'

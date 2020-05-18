@@ -4,12 +4,12 @@ title: ReleaseNotes0836011MCP20
 ---
 
   -------------------- ------------ -- -- ------------------------------------------------------------
-  v08.36.01.1.MCP2.0   11/21/2019         [Release Notes](ReleaseNotes0836011MCP20.html){.wiki-page}
+  v08.36.01.1.MCP2.0   11/21/2019         [Release Notes](ReleaseNotes0836011MCP20.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-[]{#sbndcode-v08_36_01_1_MCP2_0-Release-Notes}
+{#sbndcode-v08_36_01_1_MCP2_0-Release-Notes}
 
-sbndcode v08\_36\_01\_1\_MCP2\_0 Release Notes[¶](#sbndcode-v08_36_01_1_MCP2_0-Release-Notes){.wiki-anchor}
+sbndcode v08\_36\_01\_1\_MCP2\_0 Release Notes(#sbndcode-v08_36_01_1_MCP2_0-Release-Notes)
 ===========================================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v08\_36\_01\_1\_MCP2\_0 Release Notes[¶](#sbndcode-v08_36_01_1_MCP2_0-
     -   [sbndutil v08\_36\_01\_1\_MCP2\_0](#sbndutil-v08_36_01_1_MCP2_0)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_36\_01\_1\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_1_MCP2_0/sbndcode-v08_36_01_1_MCP2_0.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 2.0
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   [Geometry
@@ -47,24 +47,24 @@ New features[¶](#New-features){.wiki-anchor}
     -   Remove light guide bars
     -   Fix overlaps and units
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_36_01_1_MCP2_0}
+{#sbndcode-v08_36_01_1_MCP2_0}
 
-sbndcode v08\_36\_01\_1\_MCP2\_0[¶](#sbndcode-v08_36_01_1_MCP2_0){.wiki-anchor}
+sbndcode v08\_36\_01\_1\_MCP2\_0(#sbndcode-v08_36_01_1_MCP2_0)
 -------------------------------------------------------------------------------
 
 -   2019-11-21 Thomas Brooks : Merge branch
@@ -95,9 +95,9 @@ sbndcode v08\_36\_01\_1\_MCP2\_0[¶](#sbndcode-v08_36_01_1_MCP2_0){.wiki-anchor}
 -   2019-11-11 Marina Guzzo : adding new geometry with X-ARAPUCAs and
     fixed CRT overlaps, correcting boundaries in AnaTree
 
-[]{#sbndutil-v08_36_01_1_MCP2_0}
+{#sbndutil-v08_36_01_1_MCP2_0}
 
-sbndutil v08\_36\_01\_1\_MCP2\_0[¶](#sbndutil-v08_36_01_1_MCP2_0){.wiki-anchor}
+sbndutil v08\_36\_01\_1\_MCP2\_0(#sbndutil-v08_36_01_1_MCP2_0)
 -------------------------------------------------------------------------------
 
 -   2019-11-21 Thomas Brooks : Merge branch

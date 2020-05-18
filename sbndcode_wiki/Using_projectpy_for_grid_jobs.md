@@ -3,9 +3,9 @@ lang: en
 title: Using projectpy for grid jobs
 ---
 
-[]{#Using-projectpy-for-Grid-Jobs}
+{#Using-projectpy-for-Grid-Jobs}
 
-Using project.py for Grid Jobs[¶](#Using-projectpy-for-Grid-Jobs){.wiki-anchor}
+Using project.py for Grid Jobs(#Using-projectpy-for-Grid-Jobs)
 ===============================================================================
 
 Explanation courtesy of Dom Brailsford. Firstly to use the grid use
@@ -16,9 +16,9 @@ Redmine
 site](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide){.external}.
 This gives more detail on the specific elements.
 
-[]{#Before-Starting-Grid-Life}
+{#Before-Starting-Grid-Life}
 
-Before Starting Grid Life[¶](#Before-Starting-Grid-Life){.wiki-anchor}
+Before Starting Grid Life(#Before-Starting-Grid-Life)
 ----------------------------------------------------------------------
 
 Here is a useful process to follow when you submit jobs to the gird.
@@ -26,7 +26,7 @@ Here is a useful process to follow when you submit jobs to the gird.
 1.  Copy a file locally to do some initial testing. These might be files
     you have made or production files. To access production files have a
     look at [How to create and use a SAM
-    definition](_How_to_create_and_use_a_SAM_definition.html){.wiki-page}.
+    definition](_How_to_create_and_use_a_SAM_definition.html).
     Make sure your larsoft command runs on the GPVM first.
 
 2.  Write project.py script
@@ -54,15 +54,15 @@ Here is a useful process to follow when you submit jobs to the gird.
 
 5.  If your test job fails. You can look to see why either by
     graphana/kibana: [Checking your Grid
-    Status](Checking_your_Grid_Status.html){.wiki-page}, looking at the
+    Status](Checking_your_Grid_Status.html), looking at the
     log files in the output directory/work directory or by getting the
     log file **jobsub\_fetchlog \--jobid=myid**. If you are not used to
     jobs have a read
     [here](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client){.external}.
 
-[]{#How-the-write-a-Projectpy-XML-file}
+{#How-the-write-a-Projectpy-XML-file}
 
-How the write a Project.py XML file[¶](#How-the-write-a-Projectpy-XML-file){.wiki-anchor}
+How the write a Project.py XML file(#How-the-write-a-Projectpy-XML-file)
 -----------------------------------------------------------------------------------------
 
 Project.py handles job submissions to the grid so that you don\'t have
@@ -73,7 +73,7 @@ generates particles.
 
 So firstly is the header section.
 
-![](/redmine/attachments/download/40804/line1.png)
+!(/redmine/attachments/download/40804/line1.png)
 
 -   The first line is the version of XML you wish to use.
 -   The lines 5-10 are for book keeping. Changing these might change
@@ -81,7 +81,7 @@ So firstly is the header section.
 
 Next is the project element.
 
-![](/redmine/attachments/download/40805/line13.png)
+!(/redmine/attachments/download/40805/line13.png)
 
 -   Line 13 declares the name of the project.
 -   Line 16 is the total number of events you want to produce in the
@@ -101,12 +101,12 @@ The Larsoft sub element:
 Next are the stage sub-elements. This defines the generator-level job
 that you want to run.
 
-![](/redmine/attachments/download/40807/line31.png)
+!(/redmine/attachments/download/40807/line31.png)
 
 -   Line 34 is where the fcl file is defined. You need to specify the
     full path to it.
 -   Line 35 defines where the output file should go. Make sure it\'s a
-    [SBND dCache storage](SBND_dCache_storage.html){.wiki-page} (pnfs)
+    [SBND dCache storage](SBND_dCache_storage.html) (pnfs)
     location.
 -   Line 36 defines the work directory where initial some initial
     processing occurs. Make sure its a dCache area.
@@ -115,11 +115,11 @@ that you want to run.
     to SAM.
 
 End with:\
-![](/redmine/attachments/download/40806/line42.png)
+!(/redmine/attachments/download/40806/line42.png)
 
-[]{#Job-Submission}
+{#Job-Submission}
 
-Job Submission.[¶](#Job-Submission){.wiki-anchor}
+Job Submission.(#Job-Submission)
 -------------------------------------------------
 
 Once you have written your XML script it you just need to pass a few

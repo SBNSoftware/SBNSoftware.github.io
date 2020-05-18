@@ -4,12 +4,12 @@ title: ReleaseNotes082300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.23.00   06/26/2019         [Release Notes](ReleaseNotes082300.html){.wiki-page}
+  v08.23.00   06/26/2019         [Release Notes](ReleaseNotes082300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_23_00-Release-Notes}
+{#sbndcode-v08_23_00-Release-Notes}
 
-sbndcode v08\_23\_00 Release Notes[¶](#sbndcode-v08_23_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_23\_00 Release Notes(#sbndcode-v08_23_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,47 +24,47 @@ sbndcode v08\_23\_00 Release Notes[¶](#sbndcode-v08_23_00-Release-Notes){.wiki-
     -   [sbndutil v08\_23\_00](#sbndutil-v08_23_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_23\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_23_00/sbndcode-v08_23_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   BREAKING CHANGE: Removal of bezier and other unused modules in
     LArSoft
     -   If you notice anything of yours that no longer works let me know
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.23.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082300){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_23_00}
+{#sbndcode-v08_23_00}
 
-sbndcode v08\_23\_00[¶](#sbndcode-v08_23_00){.wiki-anchor}
+sbndcode v08\_23\_00(#sbndcode-v08_23_00)
 ----------------------------------------------------------
 
 -   2019-06-26 Thomas Brooks : Merge branch \'release/v08\_23\_00\'
@@ -76,9 +76,9 @@ sbndcode v08\_23\_00[¶](#sbndcode-v08_23_00){.wiki-anchor}
 -   2019-06-11 Lynn Garren : for nutools v3
 -   2019-06-10 Thomas Brooks : Merge tag \'v08\_22\_00\' into develop
 
-[]{#sbndutil-v08_23_00}
+{#sbndutil-v08_23_00}
 
-sbndutil v08\_23\_00[¶](#sbndutil-v08_23_00){.wiki-anchor}
+sbndutil v08\_23\_00(#sbndutil-v08_23_00)
 ----------------------------------------------------------
 
 -   2019-06-26 Thomas Brooks : Merge branch \'release/v08\_23\_00\'

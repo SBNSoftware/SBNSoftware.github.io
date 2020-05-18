@@ -3,9 +3,9 @@ lang: en
 title: The SBND Guide to using LArSoft
 ---
 
-[]{#The-SBND-Guide-to-using-LArSoft}
+{#The-SBND-Guide-to-using-LArSoft}
 
-The SBND Guide to using LArSoft[¶](#The-SBND-Guide-to-using-LArSoft){.wiki-anchor}
+The SBND Guide to using LArSoft(#The-SBND-Guide-to-using-LArSoft)
 ==================================================================================
 
 -   **Table of contents**
@@ -26,9 +26,9 @@ LArSoft. The following assumes:
 
 -   You have all your computing privileges and accounts, including an
     account on the [SBND GPVM
-    nodes](Computing_resources.html#Where-to-work-interactive-nodes-GPVM){.wiki-page}.
+    nodes](Computing_resources.html#Where-to-work-interactive-nodes-GPVM).
     If you don't, then you need to [submit a Fermilab Service Desk
-    ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk){.wiki-page}
+    ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk)
     requesting access to this node. We will approve as soon as possible.
 -   You are working on one of the SBND GPVM nodes. Many of these should
     work on other machines/sites as well, if they are configured in the
@@ -41,9 +41,9 @@ LArSoft. The following assumes:
 -   You are using the `bash` shell (`zsh` is not well supported to
     date^[1](#fn1)^ ).
 
-[]{#Brief-LArSoft-overview}
+{#Brief-LArSoft-overview}
 
-Brief LArSoft overview.[¶](#Brief-LArSoft-overview){.wiki-anchor}
+Brief LArSoft overview.(#Brief-LArSoft-overview)
 -----------------------------------------------------------------
 
 LArSoft is the software framework used by a number of LArTPC experiments
@@ -56,79 +56,79 @@ For now, it is highly recommended that you read up on the above, before
 we compile our own set of experiences.\
 Hence, helpful reading material:
 
-[LArSoft wiki](.html){.wiki-page}:
+[LArSoft wiki](.html):
 <https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki>\
 [LArSoft quick start
-part](_Quick-start_guide_to_using_and_developing_LArSoft_code_.html){.wiki-page}:
+part](_Quick-start_guide_to_using_and_developing_LArSoft_code_.html):
 <https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Quick-start_guide_to_using_and_developing_LArSoft_code_>\
-[MRB reference guide](MrbRefereceGuide.html){.wiki-page}:
+[MRB reference guide](MrbRefereceGuide.html):
 <https://cdcvs.fnal.gov/redmine/projects/mrb/wiki/MrbRefereceGuide>
 
 If you are new to LArsoft you might find the [Newbie
-Material](Newbie_Material.html){.wiki-page} page useful as well.
+Material](Newbie_Material.html) page useful as well.
 
-[]{#List-of-SBND-code-releases}
+{#List-of-SBND-code-releases}
 
-[List of SBND code releases](List_of_SBND_code_releases.html){.wiki-page}[¶](#List-of-SBND-code-releases){.wiki-anchor}
+[List of SBND code releases](List_of_SBND_code_releases.html)(#List-of-SBND-code-releases)
 -----------------------------------------------------------------------------------------------------------------------
 
-[]{#Useful-Examples}
+{#Useful-Examples}
 
-Useful Examples[¶](#Useful-Examples){.wiki-anchor}
+Useful Examples(#Useful-Examples)
 --------------------------------------------------
 
 -   [How to setup your directory and launch your first
-    job](How_to_setup_your_directory_and_launch_your_first_job.html){.wiki-page}
+    job](How_to_setup_your_directory_and_launch_your_first_job.html)
 
 ```{=html}
 <!-- -->
 ```
 -   [Working on a feature branch (to easily share
-    code)](Working_on_a_feature_branch_(to_easily_share_code).html){.wiki-page}
+    code)](Working_on_a_feature_branch_(to_easily_share_code).html)
 
 ```{=html}
 <!-- -->
 ```
 -   [Viewing events remotely with
-    VNC](Viewing_events_remotely_with_VNC.html){.wiki-page}
+    VNC](Viewing_events_remotely_with_VNC.html)
 
 ```{=html}
 <!-- -->
 ```
 -   [Using LArSoft on a local
-    machine](Using_LArSoft_on_a_local_machine.html){.wiki-page}
+    machine](Using_LArSoft_on_a_local_machine.html)
 
 ```{=html}
 <!-- -->
 ```
 -   [Running standard SBND
-    tests](Integration_test_guide.html){.wiki-page}
+    tests](Integration_test_guide.html)
 
 ------------------------------------------------------------------------
 
 The links below haven\'t been updated yet:
 
--   [How To Launch Grid Jobs](How_To_Launch_Grid_Jobs.html){.wiki-page}\
+-   [How To Launch Grid Jobs](How_To_Launch_Grid_Jobs.html)\
     SBND\'s [How to launch grid
-    jobs](How_to_launch_grid_jobs.html){.wiki-page} (in progress)
+    jobs](How_to_launch_grid_jobs.html) (in progress)
 
 ```{=html}
 <!-- -->
 ```
 -   [How to run simple track
-    reconstruction](How_to_run_simple_track_reconstruction_.html){.wiki-page}
+    reconstruction](How_to_run_simple_track_reconstruction_.html)
 
 ```{=html}
 <!-- -->
 ```
 -   [How to run Fast Optical Simulation
-    Jobs](How_to_run_Fast_Optical_Simulation_Jobs_.html){.wiki-page}
+    Jobs](How_to_run_Fast_Optical_Simulation_Jobs_.html)
 
 ```{=html}
 <!-- -->
 ```
 -   [How to set up lar1ndcode
-    offiste](How_to_set_up_lar1ndcode_offiste.html){.wiki-page}
+    offiste](How_to_set_up_lar1ndcode_offiste.html)
 
 ------------------------------------------------------------------------
 

@@ -4,12 +4,12 @@ title: ReleaseNotes080900
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.09.00   02/20/2019         [Release Notes](ReleaseNotes080900.html){.wiki-page}
+  v08.09.00   02/20/2019         [Release Notes](ReleaseNotes080900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_09_00-Release-Notes}
+{#sbndcode-v08_09_00-Release-Notes}
 
-sbndcode v08\_09\_00 Release Notes[¶](#sbndcode-v08_09_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_09\_00 Release Notes(#sbndcode-v08_09_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,43 +24,43 @@ sbndcode v08\_09\_00 Release Notes[¶](#sbndcode-v08_09_00-Release-Notes){.wiki-
     -   [sbndutil v08\_09\_00](#sbndutil-v08_09_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_09\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_09_00/sbndcode-v08_09_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.09.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080900){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_09_00}
+{#sbndcode-v08_09_00}
 
-sbndcode v08\_09\_00[¶](#sbndcode-v08_09_00){.wiki-anchor}
+sbndcode v08\_09\_00(#sbndcode-v08_09_00)
 ----------------------------------------------------------
 
 -   2019-02-20 Thomas Brooks : Merge branch \'release/v08\_09\_00\'
@@ -72,9 +72,9 @@ sbndcode v08\_09\_00[¶](#sbndcode-v08_09_00){.wiki-anchor}
 -   2019-02-08 Hannah Rogers : Update sbndcode for new updated space
     charge service in larevt
 
-[]{#sbndutil-v08_09_00}
+{#sbndutil-v08_09_00}
 
-sbndutil v08\_09\_00[¶](#sbndutil-v08_09_00){.wiki-anchor}
+sbndutil v08\_09\_00(#sbndutil-v08_09_00)
 ----------------------------------------------------------
 
 -   2019-02-20 Thomas Brooks : Merge branch \'release/v08\_09\_00\'

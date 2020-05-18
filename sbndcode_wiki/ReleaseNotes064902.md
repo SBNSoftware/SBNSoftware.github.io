@@ -4,12 +4,12 @@ title: ReleaseNotes064902
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.49.02   09/08/2017         [Release Notes](ReleaseNotes064902.html){.wiki-page}
+  v06.49.02   09/08/2017         [Release Notes](ReleaseNotes064902.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_49_02-Release-Notes}
+{#sbndcode-v06_49_02-Release-Notes}
 
-sbndcode v06\_49\_02 Release Notes[¶](#sbndcode-v06_49_02-Release-Notes){.wiki-anchor}
+sbndcode v06\_49\_02 Release Notes(#sbndcode-v06_49_02-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,30 +24,30 @@ sbndcode v06\_49\_02 Release Notes[¶](#sbndcode-v06_49_02-Release-Notes){.wiki-
     -   [sbndutil v01\_25\_00](#sbndutil-v01_25_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_49\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_49_02/sbndcode-v06_49_02.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -55,14 +55,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   [art
     v2.08.03](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Release_Notes_20803){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_49_02}
+{#sbndcode-v06_49_02}
 
-sbndcode v06\_49\_02[¶](#sbndcode-v06_49_02){.wiki-anchor}
+sbndcode v06\_49\_02(#sbndcode-v06_49_02)
 ----------------------------------------------------------
 
 -   2017-09-08 Thomas Brooks : Merge branch \'release/v06\_49\_02\'
@@ -86,9 +86,9 @@ sbndcode v06\_49\_02[¶](#sbndcode-v06_49_02){.wiki-anchor}
     feature/team\_for\_art\_2\_08
 -   2017-08-28 Lynn Garren : for larsoft test release v06\_47\_01\_01
 
-[]{#sbndutil-v01_25_00}
+{#sbndutil-v01_25_00}
 
-sbndutil v01\_25\_00[¶](#sbndutil-v01_25_00){.wiki-anchor}
+sbndutil v01\_25\_00(#sbndutil-v01_25_00)
 ----------------------------------------------------------
 
 -   2017-09-08 Thomas Brooks : Merge branch \'release/v01\_25\_00\'

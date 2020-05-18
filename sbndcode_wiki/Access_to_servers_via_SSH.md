@@ -3,9 +3,9 @@ lang: en
 title: Access to servers via SSH
 ---
 
-[]{#Access-to-servers-via-SSH}
+{#Access-to-servers-via-SSH}
 
-Access to servers via SSH[¶](#Access-to-servers-via-SSH){.wiki-anchor}
+Access to servers via SSH(#Access-to-servers-via-SSH)
 ======================================================================
 
 Fermilab servers are most often interactively accessed via Secure Shell
@@ -32,9 +32,9 @@ all of that (in bash shell) is:\
 
 .
 
-[]{#Access-as-a-different-user}
+{#Access-as-a-different-user}
 
-Access as a different user[¶](#Access-as-a-different-user){.wiki-anchor}
+Access as a different user(#Access-as-a-different-user)
 ------------------------------------------------------------------------
 
 You may need to log in a server acting in a different role. For example,

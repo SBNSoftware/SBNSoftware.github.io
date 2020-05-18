@@ -4,12 +4,12 @@ title: ReleaseNotes067400
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.74.00   04/17/2018         [Release Notes](ReleaseNotes067400.html){.wiki-page}
+  v06.74.00   04/17/2018         [Release Notes](ReleaseNotes067400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_74_00-Release-Notes}
+{#sbndcode-v06_74_00-Release-Notes}
 
-sbndcode v06\_74\_00 Release Notes[¶](#sbndcode-v06_74_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_74\_00 Release Notes(#sbndcode-v06_74_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_74\_00 Release Notes[¶](#sbndcode-v06_74_00-Release-Notes){.wiki-
     -   [sbndutil v01\_50\_00](#sbndutil-v01_50_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_74\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_74_00/sbndcode-v06_74_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Clang build (c2) for OSX
@@ -45,28 +45,28 @@ New features[¶](#New-features){.wiki-anchor}
 -   Default version only works for linux builds at the moment
 -   New C.I tests for gallery
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.74.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067400){.external}
 -   larbatch v01.38.03
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_74_00}
+{#sbndcode-v06_74_00}
 
-sbndcode v06\_74\_00[¶](#sbndcode-v06_74_00){.wiki-anchor}
+sbndcode v06\_74\_00(#sbndcode-v06_74_00)
 ----------------------------------------------------------
 
 -   2018-04-17 Thomas Brooks : Merge branch \'release/v06\_74\_00\'
@@ -94,9 +94,9 @@ sbndcode v06\_74\_00[¶](#sbndcode-v06_74_00){.wiki-anchor}
     compilation.
 -   2018-04-10 Thomas Brooks : Merge tag \'v06\_73\_00\' into develop
 
-[]{#sbndutil-v01_50_00}
+{#sbndutil-v01_50_00}
 
-sbndutil v01\_50\_00[¶](#sbndutil-v01_50_00){.wiki-anchor}
+sbndutil v01\_50\_00(#sbndutil-v01_50_00)
 ----------------------------------------------------------
 
 -   2018-04-17 Thomas Brooks : Merge branch \'release/v01\_50\_00\'

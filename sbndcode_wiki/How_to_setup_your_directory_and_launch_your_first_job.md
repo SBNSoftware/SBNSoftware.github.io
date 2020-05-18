@@ -3,9 +3,9 @@ lang: en
 title: How to setup your directory and launch your first job
 ---
 
-[]{#How-to-setup-your-directory-and-launch-your-first-job}
+{#How-to-setup-your-directory-and-launch-your-first-job}
 
-How to setup your directory and launch your first job[¶](#How-to-setup-your-directory-and-launch-your-first-job){.wiki-anchor}
+How to setup your directory and launch your first job(#How-to-setup-your-directory-and-launch-your-first-job)
 ==============================================================================================================================
 
 -   **Table of contents**
@@ -27,17 +27,17 @@ level to be a definitive guide.
 You have here two main options:
 
 1.  you want just to run existing software: this is a [production
-    setup](#Set-up-for-running-existing-code-production-like){.wiki-page}
+    setup](#Set-up-for-running-existing-code-production-like)
 2.  you want to change existing code or add your own, and run it: this
     is a [development
-    setup](#Set-up-for-changing-or-adding-code-development-like){.wiki-page}
+    setup](#Set-up-for-changing-or-adding-code-development-like)
 
 Both start with a [preliminary set
-up](#Set-up-the-general-SBND-environment){.wiki-page}, and then diverge.
+up](#Set-up-the-general-SBND-environment), and then diverge.
 
-[]{#Set-up-the-general-SBND-environment}
+{#Set-up-the-general-SBND-environment}
 
-Set up the general SBND environment[¶](#Set-up-the-general-SBND-environment){.wiki-anchor} {#set-up-the-general-sbnd-environment .count}
+Set up the general SBND environment(#Set-up-the-general-SBND-environment) {#set-up-the-general-sbnd-environment .count}
 ------------------------------------------------------------------------------------------
 
 The most important task this step performs is to tell UPS where to find
@@ -45,12 +45,12 @@ the programs you need (like UPS itself, git, MRB, ROOT, and LArSoft!).
 
 Two options:
 
-1.  using [CVMFS](Computing_resources.html#CVMFS){.wiki-page}\
+1.  using [CVMFS](Computing_resources.html#CVMFS)\
 
         source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
 
 2.  using a local UPS database `/path/to/products` filled with
-    [pullProducts](Using_LArSoft_on_a_local_machine.html#Downloading-a-binary-distribution-with-pullProducts){.wiki-page}:\
+    [pullProducts](Using_LArSoft_on_a_local_machine.html#Downloading-a-binary-distribution-with-pullProducts):\
 
         source /path/to/products/setup
         export MRB_PROJECT=larsoft
@@ -59,17 +59,17 @@ Two options:
 In doubt, go for CVMFS, as it is the one that works more widely and
 therefore a good habit(TM).
 
-[]{#Set-up-for-running-existing-code-production-like}
+{#Set-up-for-running-existing-code-production-like}
 
-Set up for running existing code (*production* like)[¶](#Set-up-for-running-existing-code-production-like){.wiki-anchor} {#set-up-for-running-existing-code-production-like .count}
+Set up for running existing code (*production* like)(#Set-up-for-running-existing-code-production-like) {#set-up-for-running-existing-code-production-like .count}
 ------------------------------------------------------------------------------------------------------------------------
 
 After the [general setup
-above](#Set-up-the-general-SBND-environment){.wiki-page}, you just need
+above](#Set-up-the-general-SBND-environment), you just need
 to set up the version of SBND code you need.
 
 There are different versions of LArSoft that you can set up against, and
-we have [a list of them](List_of_SBND_code_releases.html){.wiki-page}.\
+we have [a list of them](List_of_SBND_code_releases.html).\
 Once you pick your version and qualifiers, you set up both with a single
 command:\
 
@@ -106,22 +106,22 @@ which compiler was used; we usually have no choice
 > most optimised build available, with the recommended compiler;
 > supported since `v06_63_00`).
 
-[]{#Set-up-for-changing-or-adding-code-development-like}
+{#Set-up-for-changing-or-adding-code-development-like}
 
-Set up for changing or adding code (*development* like)[¶](#Set-up-for-changing-or-adding-code-development-like){.wiki-anchor} {#set-up-for-changing-or-adding-code-development-like .count}
+Set up for changing or adding code (*development* like)(#Set-up-for-changing-or-adding-code-development-like) {#set-up-for-changing-or-adding-code-development-like .count}
 ------------------------------------------------------------------------------------------------------------------------------
 
 When you need to change existing code or writing new one, you need to
 have a development area and an environment (that is, an interactive
 shell) with a [development
-environment](#Development-setup){.wiki-page}.\
+environment](#Development-setup).\
 While the development environment allows running of code on almost all
 the cases, there are some corner cases where that might fail. For that
 reason, or to keep the development environment clean from additional
 setup required when running, setting up a [run-only
-environment](#Run-only-setup){.wiki-page} in a separate interactive
+environment](#Run-only-setup) in a separate interactive
 shell is a good idea (as it is to learn to [use a terminal
-multiplexer](Interactive_GPVM_sessions_with_terminal_multiplexers.html){.wiki-page},
+multiplexer](Interactive_GPVM_sessions_with_terminal_multiplexers.html),
 especially when developing on a remote server).
 
 If you will be developing code and intent to add it to the repo, you
@@ -129,25 +129,25 @@ need to be listed as a developer here on the Redmine page. Look at the
 **Overview** tab above and see if your name is listed under *Developer*.
 If you\'re not there, ask someone under *Manager* to add you.
 
-[]{#Development-setup}
+{#Development-setup}
 
-### Development setup[¶](#Development-setup){.wiki-anchor} {#development-setup .count}
+### Development setup(#Development-setup) {#development-setup .count}
 
 First you need to go through the [general setup
-above](#Set-up-the-general-SBND-environment){.wiki-page}.\
+above](#Set-up-the-general-SBND-environment).\
 Then, the first three steps create your working area for the first time.
 To reuse that area later on (that is, after you log out and in again),
 only the *per-login setup* part is needed.\
 We assume you work in a [SBND
-GPVM](Computing_resources.html#GPVM){.wiki-page}, which is painfully
+GPVM](Computing_resources.html#GPVM), which is painfully
 slow but safe: `ssh ${USER}@sbndgpvm01.fnal.gov`.
 
 1.  first time only (or, new working area) setup:
     1.  choose the latest [SBND code
-        release](List_of_SBND_code_releases.html){.wiki-page}
+        release](List_of_SBND_code_releases.html)
 
     2.  go to your user directory in
-        [BlueArc](Computing_resources.html#Local-storage-BlueArc-disks){.wiki-page},
+        [BlueArc](Computing_resources.html#Local-storage-BlueArc-disks),
         `/sbnd/app` - don\'t have one? feel free to create it! And
         create a directory for your new LArSoft release.\
 
@@ -161,7 +161,7 @@ slow but safe: `ssh ${USER}@sbndgpvm01.fnal.gov`.
 
         \
         The qualifiers are the same described in the [previous
-        section](The_SBND_Guide_to_using_LArSoft.html#Set-up-for-running-existing-code-production-like){.wiki-page}
+        section](The_SBND_Guide_to_using_LArSoft.html#Set-up-for-running-existing-code-production-like)
 
 2.  this step belongs to the **per-login setup**: tell MRB that you will
     be running from this directory (the output of `mrb newDev` tells you
@@ -205,7 +205,7 @@ slow but safe: `ssh ${USER}@sbndgpvm01.fnal.gov`.
 > where VERSION is the LArSoft version `sbndcode` current development
 > branch (`develop`) builds against (i.e. mrb g -t v06\_34\_00 larsim ).
 > You can find dependancy for the LArsoft version in the [LArSoft
-> release list](LArSoft_release_list.html){.wiki-page} page.\
+> release list](LArSoft_release_list.html) page.\
 > Or you can do that immediately after, going into the repository
 > directory and running `git checkout LARSOFT_SUITE-VERSION`.
 
@@ -232,13 +232,13 @@ There is a big jump from \"making it work\" to \"making it work well\".
 
 A better explanation than this was given in the *art*/LArSoft course:
 it\'s a good idea to go through [that
-material](Instructions_for_Each_Session.html#Friday){.wiki-page} (but
+material](Instructions_for_Each_Session.html#Friday) (but
 keep in mind that names of packages, setup scripts and versions may need
 to be replaced by SBND specific ones).
 
-[]{#Run-only-setup}
+{#Run-only-setup}
 
-### Run-only setup[¶](#Run-only-setup){.wiki-anchor} {#run-only-setup .count}
+### Run-only setup(#Run-only-setup) {#run-only-setup .count}
 
 While the development environment set up above is good for almost
 everything, there are quirks that may be hard to understand.\
@@ -246,7 +246,7 @@ A setup exclusively for running *with the code you are developing* is as
 follows:
 
 1.  setup the general SBND environment [in whatever way you did
-    before](#Set-up-the-general-SBND-environment){.wiki-page}:\
+    before](#Set-up-the-general-SBND-environment):\
 
         source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
 

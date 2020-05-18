@@ -3,9 +3,9 @@ lang: en
 title: Write files to grid
 ---
 
-[]{#Write-files-to-gridfermiappproductssbnd}
+{#Write-files-to-gridfermiappproductssbnd}
 
-Write files to `/grid/fermiapp/products/sbnd`[¶](#Write-files-to-gridfermiappproductssbnd){.wiki-anchor}
+Write files to `/grid/fermiapp/products/sbnd`(#Write-files-to-gridfermiappproductssbnd)
 ========================================================================================================
 
 -   **Table of contents**
@@ -25,7 +25,7 @@ is very simple:
     asks for a password and creates a new one)
 
 2.  log in `sbndgpvm01.fnal.gov` as `sbnd` user (you need to [be
-    authorised](#Access-privileges){.wiki-page}):
+    authorised](#Access-privileges)):
 
         ssh sbnd@sbndgpvm01.fnal.gov
 
@@ -42,19 +42,19 @@ is very simple:
 > versioned**. If you mess with it, it will stay messed up until you fix
 > it by hand.
 
-[]{#Access-privileges}
+{#Access-privileges}
 
-Access privileges[¶](#Access-privileges){.wiki-anchor}
+Access privileges(#Access-privileges)
 ------------------------------------------------------
 
 To earn the ability to log in as `sbnd` in a SBND GPVM machine, you need
 to be added on a specific list. A [Fermilab service desk
-ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk){.wiki-page}
+ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk)
 is required to start that process.
 
-[]{#Deploying-a-UPS-product}
+{#Deploying-a-UPS-product}
 
-Deploying a UPS product[¶](#Deploying-a-UPS-product){.wiki-anchor}
+Deploying a UPS product(#Deploying-a-UPS-product)
 ------------------------------------------------------------------
 
 > **NOTE**: these instructions need to be properly tested.

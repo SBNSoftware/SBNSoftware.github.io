@@ -3,14 +3,14 @@ lang: en
 title: Tagging a release
 ---
 
-[]{#Tagging-a-release}
+{#Tagging-a-release}
 
-Tagging a release[¶](#Tagging-a-release){.wiki-anchor}
+Tagging a release(#Tagging-a-release)
 ======================================================
 
-[]{#Summary}
+{#Summary}
 
-Summary[¶](#Summary){.wiki-anchor}
+Summary(#Summary)
 ----------------------------------
 
 -   Start release in `releases/` directory.
@@ -20,9 +20,9 @@ Summary[¶](#Summary){.wiki-anchor}
 -   Finish release.
 -   Push to origin.
 
-[]{#Instructions}
+{#Instructions}
 
-Instructions[¶](#Instructions){.wiki-anchor}
+Instructions(#Instructions)
 --------------------------------------------
 
 -   As you will be building sbndcode and sbndutil as part of the
@@ -90,9 +90,9 @@ Instructions[¶](#Instructions){.wiki-anchor}
         git push origin develop master
         git push --tags
 
-[]{#Details-start_releasesh}
+{#Details-start_releasesh}
 
-Details: start\_release.sh[¶](#Details-start_releasesh){.wiki-anchor}
+Details: start\_release.sh(#Details-start_releasesh)
 ---------------------------------------------------------------------
 
 -   Create a new directory for the new tag\

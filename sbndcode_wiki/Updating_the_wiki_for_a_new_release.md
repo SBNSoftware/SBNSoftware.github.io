@@ -3,13 +3,13 @@ lang: en
 title: Updating the wiki for a new release
 ---
 
-[]{#Updating-the-wiki-for-a-new-release}
+{#Updating-the-wiki-for-a-new-release}
 
-Updating the wiki for a new release[¶](#Updating-the-wiki-for-a-new-release){.wiki-anchor}
+Updating the wiki for a new release(#Updating-the-wiki-for-a-new-release)
 ==========================================================================================
 
 -   Update the [release
-    list](List_of_SBND_code_releases.html){.wiki-page}
+    list](List_of_SBND_code_releases.html)
 
 -   Update the [settings/versions
     page](https://cdcvs.fnal.gov/redmine/projects/sbndcode/settings/versions){.external}
@@ -24,4 +24,4 @@ Updating the wiki for a new release[¶](#Updating-the-wiki-for-a-new-release){.w
 
 -   Copy and paste the file into a new wiki page and link it to the
     release list and settings/versions page (see [this
-    example](ReleaseNotes051201MCC.html){.wiki-page})
+    example](ReleaseNotes051201MCC.html))

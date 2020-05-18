@@ -4,12 +4,12 @@ title: ReleaseNotes051201stable
 ---
 
   ------------------ ------------ -- -- ------------------------------------------------------------
-  v05.12.01.stable   04/11/2017         [Release Notes](ReleaseNotes051201stable.html){.wiki-page}
+  v05.12.01.stable   04/11/2017         [Release Notes](ReleaseNotes051201stable.html)
   ------------------ ------------ -- -- ------------------------------------------------------------
 
-[]{#sbndcode-v05_12_01_stable-Release-Notes}
+{#sbndcode-v05_12_01_stable-Release-Notes}
 
-sbndcode v05\_12\_01\_stable Release Notes[¶](#sbndcode-v05_12_01_stable-Release-Notes){.wiki-anchor}
+sbndcode v05\_12\_01\_stable Release Notes(#sbndcode-v05_12_01_stable-Release-Notes)
 =====================================================================================================
 
 -   **Table of contents**
@@ -23,38 +23,38 @@ sbndcode v05\_12\_01\_stable Release Notes[¶](#sbndcode-v05_12_01_stable-Releas
     -   [sbndcode v05\_12\_01\_stable](#sbndcode-v05_12_01_stable)
     -   [sbndutil v01\_14\_00\_stable](#sbndutil-v01_14_00_stable)
 
-[list of sbndcode releases](List_of_SBND_code_releases.html){.wiki-page}
+[list of sbndcode releases](List_of_SBND_code_releases.html)
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 Last v05 before moving to larsoft v06
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v05_12_01_stable}
+{#sbndcode-v05_12_01_stable}
 
-sbndcode v05\_12\_01\_stable[¶](#sbndcode-v05_12_01_stable){.wiki-anchor}
+sbndcode v05\_12\_01\_stable(#sbndcode-v05_12_01_stable)
 -------------------------------------------------------------------------
 
 -   2017-04-11 Thomas Brooks : Merge branch
@@ -63,9 +63,9 @@ sbndcode v05\_12\_01\_stable[¶](#sbndcode-v05_12_01_stable){.wiki-anchor}
 -   2017-03-01 Thomas Brooks : Merge tag \'v05\_12\_01\_MCC\' into
     develop
 
-[]{#sbndutil-v01_14_00_stable}
+{#sbndutil-v01_14_00_stable}
 
-sbndutil v01\_14\_00\_stable[¶](#sbndutil-v01_14_00_stable){.wiki-anchor}
+sbndutil v01\_14\_00\_stable(#sbndutil-v01_14_00_stable)
 -------------------------------------------------------------------------
 
 -   2017-04-11 Thomas Brooks : Merge branch

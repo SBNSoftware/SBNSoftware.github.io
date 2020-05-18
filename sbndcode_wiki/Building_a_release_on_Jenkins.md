@@ -3,14 +3,14 @@ lang: en
 title: Building a release on Jenkins
 ---
 
-[]{#Building-a-release-on-Jenkins}
+{#Building-a-release-on-Jenkins}
 
-Building a release on Jenkins[¶](#Building-a-release-on-Jenkins){.wiki-anchor}
+Building a release on Jenkins(#Building-a-release-on-Jenkins)
 ==============================================================================
 
-[]{#Summary}
+{#Summary}
 
-Summary[¶](#Summary){.wiki-anchor}
+Summary(#Summary)
 ----------------------------------
 
 -   Go to
@@ -18,9 +18,9 @@ Summary[¶](#Summary){.wiki-anchor}
 -   Configure the build in the `Build with Parameters` tab.
 -   Build `sbndcode` and `sbndutil`
 
-[]{#Instructions}
+{#Instructions}
 
-Instructions[¶](#Instructions){.wiki-anchor}
+Instructions(#Instructions)
 --------------------------------------------
 
 -   Log on to the Jenkins server.
@@ -61,9 +61,9 @@ Instructions[¶](#Instructions){.wiki-anchor}
     -   You can rebuild just the failed builds by going to
         `Matrix Reloaded`.
 
-[]{#Build-configuration}
+{#Build-configuration}
 
-Build configuration[¶](#Build-configuration){.wiki-anchor}
+Build configuration(#Build-configuration)
 ----------------------------------------------------------
 
 -   Parameter descriptions:

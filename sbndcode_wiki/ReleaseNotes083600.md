@@ -4,12 +4,12 @@ title: ReleaseNotes083600
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.36.00   11/13/2019         [Release Notes](ReleaseNotes083600.html){.wiki-page}
+  v08.36.00   11/13/2019         [Release Notes](ReleaseNotes083600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_36_00-Release-Notes}
+{#sbndcode-v08_36_00-Release-Notes}
 
-sbndcode v08\_36\_00 Release Notes[¶](#sbndcode-v08_36_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_36\_00 Release Notes(#sbndcode-v08_36_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,30 +24,30 @@ sbndcode v08\_36\_00 Release Notes[¶](#sbndcode-v08_36_00-Release-Notes){.wiki-
     -   [sbndutil v08\_36\_00](#sbndutil-v08_36_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_36\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_00/sbndcode-v08_36_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Update to art v03.03.01
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -55,14 +55,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   [art
     v03.03.01](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_303){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_36_00}
+{#sbndcode-v08_36_00}
 
-sbndcode v08\_36\_00[¶](#sbndcode-v08_36_00){.wiki-anchor}
+sbndcode v08\_36\_00(#sbndcode-v08_36_00)
 ----------------------------------------------------------
 
 -   2019-11-13 Thomas Brooks : Merge branch \'release/v08\_36\_00\'
@@ -77,9 +77,9 @@ sbndcode v08\_36\_00[¶](#sbndcode-v08_36_00){.wiki-anchor}
 -   2019-11-11 Lynn Garren : \--prune-config is enabled by default
 -   2019-10-31 Lynn Garren : for art v3\_03
 
-[]{#sbndutil-v08_36_00}
+{#sbndutil-v08_36_00}
 
-sbndutil v08\_36\_00[¶](#sbndutil-v08_36_00){.wiki-anchor}
+sbndutil v08\_36\_00(#sbndutil-v08_36_00)
 ----------------------------------------------------------
 
 -   2019-11-13 Thomas Brooks : Merge branch \'release/v08\_36\_00\'

@@ -3,9 +3,9 @@ lang: en
 title: Setting up access with CILogon certificate
 ---
 
-[]{#Setting-up-access-with-CILogon-certificate}
+{#Setting-up-access-with-CILogon-certificate}
 
-Setting up access with CILogon certificate[¶](#Setting-up-access-with-CILogon-certificate){.wiki-anchor}
+Setting up access with CILogon certificate(#Setting-up-access-with-CILogon-certificate)
 ========================================================================================================
 
 -   **Table of contents**
@@ -37,9 +37,9 @@ DUNE has [such a good
 explanation](https://web.fnal.gov/collaboration/DUNE/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx){.external}
 that\... well, this is a copy of it.
 
-[]{#First-Why-would-you-want-to-do-this}
+{#First-Why-would-you-want-to-do-this}
 
-First: Why would you want to do this?[¶](#First-Why-would-you-want-to-do-this){.wiki-anchor}
+First: Why would you want to do this?(#First-Why-would-you-want-to-do-this)
 --------------------------------------------------------------------------------------------
 
 [CILogon](http://cilogon.org){.external} provides a free, *year-long
@@ -54,9 +54,9 @@ username/password entry required^[1](#fn1)^*.
 > The CILogon Certificate discussed below *can not* be used to digitally
 > sign email.
 
-[]{#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser}
+{#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser}
 
-Instructions for getting a CILogon Certificate and importing the certificate into your browser[¶](#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser){.wiki-anchor}
+Instructions for getting a CILogon Certificate and importing the certificate into your browser(#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are three steps, documented below:
@@ -65,9 +65,9 @@ There are three steps, documented below:
 2.  importing that certificate in your browser (once every year)
 3.  registering with SBN DocDB (once every life)
 
-[]{#Generating-or-renewing-a-certificate}
+{#Generating-or-renewing-a-certificate}
 
-### Generating or renewing a certificate[¶](#Generating-or-renewing-a-certificate){.wiki-anchor}
+### Generating or renewing a certificate(#Generating-or-renewing-a-certificate)
 
 This is something you need to do once per year. You can copy the
 certificate file on different machines (e.g., your phone, your laptop,
@@ -104,9 +104,9 @@ No penalty in doing this more often.
     file is *your certificate*, and you will need to upload this file to
     your browser(s)
 
-[]{#Loading-the-certificate-into-your-browser}
+{#Loading-the-certificate-into-your-browser}
 
-### Loading the certificate into your browser[¶](#Loading-the-certificate-into-your-browser){.wiki-anchor}
+### Loading the certificate into your browser(#Loading-the-certificate-into-your-browser)
 
 There are too many web browsers around, and they use too many different
 approaches, and they change them too often.\
@@ -121,9 +121,9 @@ anyway. But what you are going to do is:
     browser
 2.  tell your browser to \"import\" your \"p12\" certificate
 
-[]{#Safari-and-Vivaldi-and-Chrome-on-OSX}
+{#Safari-and-Vivaldi-and-Chrome-on-OSX}
 
-#### Safari, and Vivaldi and Chrome on OSX[¶](#Safari-and-Vivaldi-and-Chrome-on-OSX){.wiki-anchor}
+#### Safari, and Vivaldi and Chrome on OSX(#Safari-and-Vivaldi-and-Chrome-on-OSX)
 
 These browsers use the operating system\'s \"key chain\" to access
 certificates.
@@ -132,26 +132,26 @@ certificates.
     downloads folder). This will add it to your O.S. keychain for use
     with Safari.
 
-[]{#Vivaldi-and-Chrome-on-Linux}
+{#Vivaldi-and-Chrome-on-Linux}
 
-#### Vivaldi and Chrome on Linux[¶](#Vivaldi-and-Chrome-on-Linux){.wiki-anchor}
+#### Vivaldi and Chrome on Linux(#Vivaldi-and-Chrome-on-Linux)
 
 1.  go to the URL: `chrome://settings/certificates` (yes, in Vivaldi
     too)
     -   you might need to tell Vivaldi to have preferences shown in a
         tab rather than in a dialogue window\...
 
-[]{#Chrome-on-Windows}
+{#Chrome-on-Windows}
 
-#### Chrome on Windows[¶](#Chrome-on-Windows){.wiki-anchor}
+#### Chrome on Windows(#Chrome-on-Windows)
 
 1.  go to the URL: `chrome://settings`, look for \"Advanced Settings\"
 2.  in there, there should be a \"Manage Certificates\" where you can
     Import them
 
-[]{#Firefox}
+{#Firefox}
 
-#### Firefox[¶](#Firefox){.wiki-anchor}
+#### Firefox(#Firefox)
 
 *(tested on OSX version 47)*
 
@@ -165,9 +165,9 @@ certificates.
 3.  click \"Import\" at the bottom and follow the instructions to import
     your certificate
 
-[]{#Internet-Explorer}
+{#Internet-Explorer}
 
-#### Internet Explorer[¶](#Internet-Explorer){.wiki-anchor}
+#### Internet Explorer(#Internet-Explorer)
 
 1.  double click on the saved certificate file
 2.  select \'Next\' on the wizard (twice)
@@ -175,18 +175,18 @@ certificates.
 4.  keep the default options and click on \"Next\" until you get to
     \"Finish\"
 
-[]{#Access-to-SBN-DocDB}
+{#Access-to-SBN-DocDB}
 
-Access to SBN DocDB[¶](#Access-to-SBN-DocDB){.wiki-anchor}
+Access to SBN DocDB(#Access-to-SBN-DocDB)
 ----------------------------------------------------------
 
 After you get your first certificate, you\'ll have to ask the DocDB
 administrators for access with that new credential.\
 This appears to be needed only once.
 
-[]{#Applying-for-Access-to-DocDB-using-this-certificate}
+{#Applying-for-Access-to-DocDB-using-this-certificate}
 
-### Applying for Access to DocDB using this certificate[¶](#Applying-for-Access-to-DocDB-using-this-certificate){.wiki-anchor}
+### Applying for Access to DocDB using this certificate(#Applying-for-Access-to-DocDB-using-this-certificate)
 
 If you are just renewing a certificate that has not already expired, you
 will not need to reregister with SBND DocDB.\
@@ -199,9 +199,9 @@ human has to accept you in (so it may take one day).
 3.  you\'ll be asked which access groups you want to join (if unsure,
     pick only `SBN`)
 
-[]{#Accessing-DocDB-once-you-have-certificate-access}
+{#Accessing-DocDB-once-you-have-certificate-access}
 
-### Accessing DocDB once you have certificate access[¶](#Accessing-DocDB-once-you-have-certificate-access){.wiki-anchor}
+### Accessing DocDB once you have certificate access(#Accessing-DocDB-once-you-have-certificate-access)
 
 1.  ​go to SBND DocDB: <https://sbn-docdb.fnal.gov>
 2.  if prompted, now or at the next step, by the browser to choose a

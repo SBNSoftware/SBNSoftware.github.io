@@ -3,9 +3,9 @@ lang: en
 title: Newbie Material
 ---
 
-[]{#Newbie-Material}
+{#Newbie-Material}
 
-Newbie Material[¶](#Newbie-Material){.wiki-anchor}
+Newbie Material(#Newbie-Material)
 ==================================================
 
 -   **Table of contents**
@@ -32,12 +32,12 @@ SBND-SOFTWARE YOUR NAME. Here is a list of all the mailing lists
 available: <https://listserv.fnal.gov/scripts/wa.exe?INDEX>. For more
 information see: <http://listserv.fnal.gov/users.asp#subscribe>
 
-[]{#Computing-Access}
+{#Computing-Access}
 
-Computing Access[¶](#Computing-Access){.wiki-anchor}
+Computing Access(#Computing-Access)
 ----------------------------------------------------
 
-See the [Computing resources](Computing_resources.html){.wiki-page} page
+See the [Computing resources](Computing_resources.html) page
 to see a discussion about the computing privileges that SBND has.
 
 To get a Fermilab computing account follow the instructions at [this
@@ -89,9 +89,9 @@ You can reset your Fermilab passwords for service-now
 If you can\'t remember your password because you didn\'t write it down
 then you will have contact the service desk.
 
-[]{#Communication-and-Asking-for-Help}
+{#Communication-and-Asking-for-Help}
 
-Communication and Asking for Help[¶](#Communication-and-Asking-for-Help){.wiki-anchor}
+Communication and Asking for Help(#Communication-and-Asking-for-Help)
 --------------------------------------------------------------------------------------
 
 We use different technology to communicate, depending on the purpose and
@@ -125,9 +125,9 @@ type of communication.
     start meetings with no video and muted, also but less important, put
     your name as you would like it to appear to others.
 
-[]{#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND}
+{#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND}
 
-New to Liquid Argon Technology/ Neutrino physics and SBND?[¶](#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND){.wiki-anchor}
+New to Liquid Argon Technology/ Neutrino physics and SBND?(#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND)
 --------------------------------------------------------------------------------------------------------------------------------------
 
 If you are new to Liquid Argon technology then here as some links you
@@ -180,29 +180,29 @@ Please add to the list!
     Beam](https://arxiv.org/pdf/hep-ex/0104049.pdf){.external} (The LSND
     anomaly paper)
 
-[]{#New-to-the-Software-Surrounding-SBND}
+{#New-to-the-Software-Surrounding-SBND}
 
-New to the Software Surrounding SBND?[¶](#New-to-the-Software-Surrounding-SBND){.wiki-anchor}
+New to the Software Surrounding SBND?(#New-to-the-Software-Surrounding-SBND)
 ---------------------------------------------------------------------------------------------
 
 To get started you need to have a basic knowledge of c++ and you need to
 learn LArsoft. Root and Git are also useful.
 
-[]{#Art-and-LArsoft}
+{#Art-and-LArsoft}
 
-### Art and LArsoft[¶](#Art-and-LArsoft){.wiki-anchor}
+### Art and LArsoft(#Art-and-LArsoft)
 
 Here is a few places to look at more information about Art and LArsoft.
 
 -   LArsoft: [The SBND Guide to using
-    LArSoft](The_SBND_Guide_to_using_LArSoft.html){.wiki-page} (A useful
+    LArSoft](The_SBND_Guide_to_using_LArSoft.html) (A useful
     page of links and examples)
 
 ```{=html}
 <!-- -->
 ```
 -   LArsoft: [How to setup your directory and launch your first
-    job](How_to_setup_your_directory_and_launch_your_first_job.html){.wiki-page}
+    job](How_to_setup_your_directory_and_launch_your_first_job.html)
     (This is an SBND wiki page to help set up your first job, it is the
     first thing you should try at )
 
@@ -217,7 +217,7 @@ Here is a few places to look at more information about Art and LArsoft.
 <!-- -->
 ```
 -   LArsoft: [Helpful tips for
-    LArsoft](Helpful_tips_for_Larsoft_building.html){.wiki-page} (This
+    LArsoft](Helpful_tips_for_Larsoft_building.html) (This
     is a useful list of tips to help you along when editing your build)
 
 ```{=html}
@@ -254,7 +254,7 @@ Here is a few places to look at more information about Art and LArsoft.
 -   The Analysis Examples: This is a package that can be downloaded into
     your local library. Follow the same procedure as in: [How to setup
     your directory and launch your first
-    job](How_to_setup_your_directory_and_launch_your_first_job.html){.wiki-page}
+    job](How_to_setup_your_directory_and_launch_your_first_job.html)
     but instead of mrb g sbndcode do mrs g larexamples . You can
     download the package with these steps:
 
@@ -283,9 +283,9 @@ The g is short for gitCheckout.
 ```
 -   The Art Wiki: <https://cdcvs.fnal.gov/redmine/projects/art/wiki>
 
-[]{#C}
+{#C}
 
-### C++[¶](#C){.wiki-anchor}
+### C++(#C)
 
 There are a multitude of resources for c++. There are several books. The
 one I learnt form was [Accelerated
@@ -311,9 +311,9 @@ If you have a good c++ tutorial/documentation add it to the list!
 ```
 -   cppreference: <http://en.cppreference.com/w/cpp/container/vector>
 
-[]{#ROOT}
+{#ROOT}
 
-### ROOT[¶](#ROOT){.wiki-anchor}
+### ROOT(#ROOT)
 
 [ROOT](https://root.cern.ch/doc/v608/){.external} is also useful to know
 and it can be used within LArsoft. If you are new to ROOT and you have a
@@ -364,15 +364,15 @@ that are useful when learning ROOT. Feel free to add to the list!
     good variety of tasks but doesn\'t go into as much detail as some of
     the other links)
 
-[]{#Git}
+{#Git}
 
-### Git[¶](#Git){.wiki-anchor}
+### Git(#Git)
 
 New to [Git](https://github.com){.external}? if so do the quick
 [tutorial](https://try.github.io/levels/1/challenges/1){.external} to
 get an idea of how it works. To see how it used in SBND see the [Working
 on a feature branch (to easily share
-code)](Working_on_a_feature_branch_(to_easily_share_code).html){.wiki-page}.
+code)](Working_on_a_feature_branch_(to_easily_share_code).html).
 
 **Pro Tip:** Log into a gpvm node and do the following commands to setup
 your git account:

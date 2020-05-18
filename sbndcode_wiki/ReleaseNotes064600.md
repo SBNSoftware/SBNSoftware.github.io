@@ -4,12 +4,12 @@ title: ReleaseNotes064600
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.46.00   08/12/2017         [Release Notes](ReleaseNotes064600.html){.wiki-page}
+  v06.46.00   08/12/2017         [Release Notes](ReleaseNotes064600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_46_00-Release-Notes}
+{#sbndcode-v06_46_00-Release-Notes}
 
-sbndcode v06\_46\_00 Release Notes[¶](#sbndcode-v06_46_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_46\_00 Release Notes(#sbndcode-v06_46_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,32 +24,32 @@ sbndcode v06\_46\_00 Release Notes[¶](#sbndcode-v06_46_00-Release-Notes){.wiki-
     -   [sbndutil v01\_22\_00](#sbndutil-v01_22_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_46\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_46_00/sbndcode-v06_46_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   New version of geometry: v01\_00
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -57,14 +57,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   larbatch v01.32.04
 -   cetbuildtools v5.14.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_46_00}
+{#sbndcode-v06_46_00}
 
-sbndcode v06\_46\_00[¶](#sbndcode-v06_46_00){.wiki-anchor}
+sbndcode v06\_46\_00(#sbndcode-v06_46_00)
 ----------------------------------------------------------
 
 -   2017-08-12 Thomas Brooks : Merge branch \'release/v06\_46\_00\'
@@ -152,9 +152,9 @@ sbndcode v06\_46\_00[¶](#sbndcode-v06_46_00){.wiki-anchor}
 -   2017-04-14 Gianluca Petrillo : This branch uses future geometry.
     THIS COMMIT SHOULD NOT BE MERGED INTO DEVELOP!
 
-[]{#sbndutil-v01_22_00}
+{#sbndutil-v01_22_00}
 
-sbndutil v01\_22\_00[¶](#sbndutil-v01_22_00){.wiki-anchor}
+sbndutil v01\_22\_00(#sbndutil-v01_22_00)
 ----------------------------------------------------------
 
 -   2017-08-12 Thomas Brooks : Merge branch \'release/v01\_22\_00\'

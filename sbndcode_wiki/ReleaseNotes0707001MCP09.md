@@ -4,12 +4,12 @@ title: ReleaseNotes0707001MCP09
 ---
 
   -------------------- ------------ -- -- ------------------------------------------------------------
-  v07.07.00.1.MCP0.9   10/08/2018         [Release Notes](ReleaseNotes0707001MCP09.html){.wiki-page}
+  v07.07.00.1.MCP0.9   10/08/2018         [Release Notes](ReleaseNotes0707001MCP09.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-[]{#sbndcode-v07_07_00_1_MCP0_9-Release-Notes}
+{#sbndcode-v07_07_00_1_MCP0_9-Release-Notes}
 
-sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes[¶](#sbndcode-v07_07_00_1_MCP0_9-Release-Notes){.wiki-anchor}
+sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes(#sbndcode-v07_07_00_1_MCP0_9-Release-Notes)
 ===========================================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes[¶](#sbndcode-v07_07_00_1_MCP0_9-
     -   [sbndutil v07\_07\_00\_1\_MCP0\_9](#sbndutil-v07_07_00_1_MCP0_9)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_07\_00\_1\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_1_MCP0_9/sbndcode-v07_07_00_1_MCP0_9.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 0.9
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Added bnb-like single particle gun fcl
@@ -48,24 +48,24 @@ New features[¶](#New-features){.wiki-anchor}
 -   Addition of pandora calorimetry and PID to standard reco chain
 -   Modification of Anatree for event selection studies
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v07_07_00_1_MCP0_9}
+{#sbndcode-v07_07_00_1_MCP0_9}
 
-sbndcode v07\_07\_00\_1\_MCP0\_9[¶](#sbndcode-v07_07_00_1_MCP0_9){.wiki-anchor}
+sbndcode v07\_07\_00\_1\_MCP0\_9(#sbndcode-v07_07_00_1_MCP0_9)
 -------------------------------------------------------------------------------
 
 -   2018-10-08 Thomas Brooks : Merge branch
@@ -129,9 +129,9 @@ sbndcode v07\_07\_00\_1\_MCP0\_9[¶](#sbndcode-v07_07_00_1_MCP0_9){.wiki-anchor}
 -   2018-03-08 Thomas Brooks : Added fcl files for generating bnblike
     single particles
 
-[]{#sbndutil-v07_07_00_1_MCP0_9}
+{#sbndutil-v07_07_00_1_MCP0_9}
 
-sbndutil v07\_07\_00\_1\_MCP0\_9[¶](#sbndutil-v07_07_00_1_MCP0_9){.wiki-anchor}
+sbndutil v07\_07\_00\_1\_MCP0\_9(#sbndutil-v07_07_00_1_MCP0_9)
 -------------------------------------------------------------------------------
 
 -   2018-10-08 Thomas Brooks : Merge branch

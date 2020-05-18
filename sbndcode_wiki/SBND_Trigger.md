@@ -3,13 +3,13 @@ lang: en
 title: SBND Trigger
 ---
 
-[]{#SBND-Trigger}
+{#SBND-Trigger}
 
-SBND Trigger[¶](#SBND-Trigger){.wiki-anchor}
+SBND Trigger(#SBND-Trigger)
 ============================================
 
 **PMT Channel Mapping for APA 01** *Beam left APA*\
-![](/redmine/attachments/download/54604/APA01_PMTMapping.png)
+!(/redmine/attachments/download/54604/APA01_PMTMapping.png)
 
 Channel numbers are assigned as shown in the attached images. This
 information can be accessed in spreadsheet form\

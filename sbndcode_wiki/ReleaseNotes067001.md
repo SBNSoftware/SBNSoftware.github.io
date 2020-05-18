@@ -4,12 +4,12 @@ title: ReleaseNotes067001
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.70.01   03/08/2018         [Release Notes](ReleaseNotes067001.html){.wiki-page}
+  v06.70.01   03/08/2018         [Release Notes](ReleaseNotes067001.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_70_01-Release-Notes}
+{#sbndcode-v06_70_01-Release-Notes}
 
-sbndcode v06\_70\_01 Release Notes[¶](#sbndcode-v06_70_01-Release-Notes){.wiki-anchor}
+sbndcode v06\_70\_01 Release Notes(#sbndcode-v06_70_01-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_70\_01 Release Notes[¶](#sbndcode-v06_70_01-Release-Notes){.wiki-
     -   [sbndutil v01\_46\_01](#sbndutil-v01_46_01)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01/sbndcode-v06_70_01.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   LArG4ParticleFilter moved to larevt.
@@ -46,14 +46,14 @@ New features[¶](#New-features){.wiki-anchor}
 -   New version of sbnd\_data with histograms for producing BNB-like
     particles.
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -61,14 +61,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   larbatch v01.37.02
 -   sbnd\_data v01.02.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_70_01}
+{#sbndcode-v06_70_01}
 
-sbndcode v06\_70\_01[¶](#sbndcode-v06_70_01){.wiki-anchor}
+sbndcode v06\_70\_01(#sbndcode-v06_70_01)
 ----------------------------------------------------------
 
 -   2018-03-08 Thomas Brooks : Merge branch \'release/v06\_70\_01\'
@@ -123,9 +123,9 @@ sbndcode v06\_70\_01[¶](#sbndcode-v06_70_01){.wiki-anchor}
 -   2018-02-12 Dominic Brailsford : Use new dirt flux files produced by
     Zarko
 
-[]{#sbndutil-v01_46_01}
+{#sbndutil-v01_46_01}
 
-sbndutil v01\_46\_01[¶](#sbndutil-v01_46_01){.wiki-anchor}
+sbndutil v01\_46\_01(#sbndutil-v01_46_01)
 ----------------------------------------------------------
 
 -   2018-03-08 Thomas Brooks : Merge branch \'release/v01\_46\_01\'

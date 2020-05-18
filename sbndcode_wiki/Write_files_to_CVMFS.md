@@ -3,9 +3,9 @@ lang: en
 title: Write files to CVMFS
 ---
 
-[]{#Write-files-to-CVMFS}
+{#Write-files-to-CVMFS}
 
-Write files to CVMFS[¶](#Write-files-to-CVMFS){.wiki-anchor}
+Write files to CVMFS(#Write-files-to-CVMFS)
 ============================================================
 
 -   **Table of contents**
@@ -28,7 +28,7 @@ These are the suggested operations, optimised for \"the less time in
     asks for a password and creates a new one)
 
 2.  copy the files you want to store in CVMFS into `oasiscfs.fnal.gov`
-    (you need to [be authorised](#Access-privileges){.wiki-page}):
+    (you need to [be authorised](#Access-privileges)):
 
         scp sbnd_data-01.00.00-noarch.tar.bz2 cvmfssbnd@oasiscfs.fnal.gov:
 
@@ -37,7 +37,7 @@ These are the suggested operations, optimised for \"the less time in
     `cvmfssbnd`
 
 3.  log in `oasiscfs.fnal.gov` (you need to [be
-    authorised](#Access-privileges){.wiki-page}):
+    authorised](#Access-privileges)):
 
         ssh cvmfssbnd@oasiscfs.fnal.gov
 
@@ -73,9 +73,9 @@ the directory `/cvmfs/sbnd.opensciencegrid.org` might not show with a
 requested), but it takes some time for the CVMFS server to propagate the
 change to the world.
 
-[]{#Access-privileges}
+{#Access-privileges}
 
-Access privileges[¶](#Access-privileges){.wiki-anchor}
+Access privileges(#Access-privileges)
 ------------------------------------------------------
 
 A few SBND people are allowed to log as `cvmfssbnd` on

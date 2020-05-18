@@ -4,12 +4,12 @@ title: ReleaseNotes064800MCC
 ---
 
   --------------- ------------ -- -- ---------------------------------------------------------
-  v06.48.00.MCC   09/04/2017         [Release Notes](ReleaseNotes064800MCC.html){.wiki-page}
+  v06.48.00.MCC   09/04/2017         [Release Notes](ReleaseNotes064800MCC.html)
   --------------- ------------ -- -- ---------------------------------------------------------
 
-[]{#sbndcode-v06_48_00_MCC-Release-Notes}
+{#sbndcode-v06_48_00_MCC-Release-Notes}
 
-sbndcode v06\_48\_00\_MCC Release Notes[¶](#sbndcode-v06_48_00_MCC-Release-Notes){.wiki-anchor}
+sbndcode v06\_48\_00\_MCC Release Notes(#sbndcode-v06_48_00_MCC-Release-Notes)
 ===============================================================================================
 
 -   **Table of contents**
@@ -24,44 +24,44 @@ sbndcode v06\_48\_00\_MCC Release Notes[¶](#sbndcode-v06_48_00_MCC-Release-Note
     -   [sbndutil v01\_24\_00\_MCC](#sbndutil-v01_24_00_MCC)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_48\_00\_MCC](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_48_00_MCC/sbndcode-v06_48_00_MCC.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCC 1.0
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   FCL files and filters for the MCC release
 -   New geometry
 -   CRT code updated and tested with new geometry
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_48_00_MCC}
+{#sbndcode-v06_48_00_MCC}
 
-sbndcode v06\_48\_00\_MCC[¶](#sbndcode-v06_48_00_MCC){.wiki-anchor}
+sbndcode v06\_48\_00\_MCC(#sbndcode-v06_48_00_MCC)
 -------------------------------------------------------------------
 
 -   2017-09-04 Thomas Brooks : Merge branch \'release/v06\_48\_00\_MCC\'
@@ -222,9 +222,9 @@ sbndcode v06\_48\_00\_MCC[¶](#sbndcode-v06_48_00_MCC){.wiki-anchor}
 -   2017-02-14 Dominic Brailsford : Add simulation-level interesting
     particle filter.
 
-[]{#sbndutil-v01_24_00_MCC}
+{#sbndutil-v01_24_00_MCC}
 
-sbndutil v01\_24\_00\_MCC[¶](#sbndutil-v01_24_00_MCC){.wiki-anchor}
+sbndutil v01\_24\_00\_MCC(#sbndutil-v01_24_00_MCC)
 -------------------------------------------------------------------
 
 -   2017-09-04 Thomas Brooks : Merge branch \'release/v01\_24\_00\_MCC\'

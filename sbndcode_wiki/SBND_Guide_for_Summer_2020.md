@@ -3,9 +3,9 @@ lang: en
 title: SBND Guide for Summer 2020
 ---
 
-[]{#SBND-Guide-for-Summer-2020}
+{#SBND-Guide-for-Summer-2020}
 
-SBND Guide for Summer 2020[¶](#SBND-Guide-for-Summer-2020){.wiki-anchor}
+SBND Guide for Summer 2020(#SBND-Guide-for-Summer-2020)
 ========================================================================
 
 -   **Table of contents**
@@ -43,9 +43,9 @@ other areas available:
     Remember that the `app` area has limited disk space, so please do
     not store any data file there, but only the code you need.
 
-[]{#1-Setup-the-SBND-environment}
+{#1-Setup-the-SBND-environment}
 
-1. Setup the SBND environment[¶](#1-Setup-the-SBND-environment){.wiki-anchor}
+1. Setup the SBND environment(#1-Setup-the-SBND-environment)
 -----------------------------------------------------------------------------
 
 Go to the `app` area, where we can install and develop software:\
@@ -63,9 +63,9 @@ it a name of your choice):\
     mkdir $MY_WORKDIR
     cd $MY_WORKDIR
 
-[]{#2-Run-existing-larsoft-software}
+{#2-Run-existing-larsoft-software}
 
-2. Run existing larsoft software[¶](#2-Run-existing-larsoft-software){.wiki-anchor}
+2. Run existing larsoft software(#2-Run-existing-larsoft-software)
 -----------------------------------------------------------------------------------
 
     setup sbndcode v08_43_00 -q e19:prof
@@ -83,9 +83,9 @@ You can also list existing sbndcode versions by running
 
 In general, you should select the latest version.
 
-[]{#3-Install-and-develop-larsoft-software}
+{#3-Install-and-develop-larsoft-software}
 
-3. Install and develop larsoft software[¶](#3-Install-and-develop-larsoft-software){.wiki-anchor}
+3. Install and develop larsoft software(#3-Install-and-develop-larsoft-software)
 -------------------------------------------------------------------------------------------------
 
 You can skip this section if you don\'t need to develop sbndcode.
@@ -126,9 +126,9 @@ The first time you build your code, you need to invoke `mrb i -j` (as
 done above), but every subsequent time you can just do
 `make install -j`, which is slightly faster.
 
-[]{#Build-your-own-LArSoft-plug-in}
+{#Build-your-own-LArSoft-plug-in}
 
-### Build your own LArSoft plug-in[¶](#Build-your-own-LArSoft-plug-in){.wiki-anchor}
+### Build your own LArSoft plug-in(#Build-your-own-LArSoft-plug-in)
 
 Now let\'s assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
@@ -197,9 +197,9 @@ lines:\
 MORE INFORMATION TO BE WRITTEN.
 :::
 
-[]{#4-Generate-Single-Particle-Events}
+{#4-Generate-Single-Particle-Events}
 
-4. Generate Single Particle Events[¶](#4-Generate-Single-Particle-Events){.wiki-anchor}
+4. Generate Single Particle Events(#4-Generate-Single-Particle-Events)
 ---------------------------------------------------------------------------------------
 
 This section will show you how to generate particles in the SBND
@@ -259,9 +259,9 @@ Finally, we can run the detector simulation:\
 The output file `prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root`
 contains your generated events runt through detector simulation.
 
-[]{#5-Look-at-the-Generated-Events-in-the-Event-Display}
+{#5-Look-at-the-Generated-Events-in-the-Event-Display}
 
-5. Look at the Generated Events in the Event Display[¶](#5-Look-at-the-Generated-Events-in-the-Event-Display){.wiki-anchor}
+5. Look at the Generated Events in the Event Display(#5-Look-at-the-Generated-Events-in-the-Event-Display)
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
@@ -276,9 +276,9 @@ Open a fresh terminal, log in to an `sbndgpvm` machine, and run\
 Click on \"Raw Digit\" in the top right, and you will the waveforms from
 your generated events.
 
-[]{#6-Generate-an-Analysis-TTree}
+{#6-Generate-an-Analysis-TTree}
 
-6. Generate an Analysis TTree[¶](#6-Generate-an-Analysis-TTree){.wiki-anchor}
+6. Generate an Analysis TTree(#6-Generate-an-Analysis-TTree)
 -----------------------------------------------------------------------------
 
 Now that you have generated your own events, you can run one last job,
@@ -303,7 +303,7 @@ collection plane:\
     root[0] hitdumper->cd()
     root[1] hitdumpertree->Draw("hit_peakT:hit_wire", "hit_tpc == 1 && hit_plane == 2")
 
-![](/redmine/attachments/download/57665/hitdumper_demo_1.png)
+!(/redmine/attachments/download/57665/hitdumper_demo_1.png)
 
 Or you can look at the optical hits. For example, let\'s look at the Y
 and Z position of the stored optical hits in TPC 0. These correspond to
@@ -313,18 +313,18 @@ the PMTs positions:\
     root[0] hitdumper->cd()
     root[1] hitdumpertree->Draw("ophit_opdet_y:ophit_opdet_z", "ophit_opdet_x<0 && ophit_opdet_x != -9999", "colz")
 
-![](/redmine/attachments/download/57668/hitdumper_demo_2.png)
+!(/redmine/attachments/download/57668/hitdumper_demo_2.png)
 
-[]{#What-are-all-the-information-stored-in-the-TTree}
+{#What-are-all-the-information-stored-in-the-TTree}
 
-### What are all the information stored in the TTree?[¶](#What-are-all-the-information-stored-in-the-TTree){.wiki-anchor}
+### What are all the information stored in the TTree?(#What-are-all-the-information-stored-in-the-TTree)
 
 All the variables stored are described
 [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112){.external}.
 
-[]{#Projects}
+{#Projects}
 
-Projects[¶](#Projects){.wiki-anchor}
+Projects(#Projects)
 ------------------------------------
 
 [CRT Thresholds](#){#collapse-a718c8f3-show .collapsible .collapsed}[CRT
@@ -368,9 +368,9 @@ The anatree module and the plotting script can them but run on a data
 event to check the same offsets on data.
 :::
 
-[]{#Questions}
+{#Questions}
 
-Questions?[¶](#Questions){.wiki-anchor}
+Questions?(#Questions)
 ---------------------------------------
 
 Feel to ask

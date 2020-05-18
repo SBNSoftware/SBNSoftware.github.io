@@ -3,14 +3,14 @@ lang: en
 title: Known quick fixes
 ---
 
-[]{#Known-quick-fixes}
+{#Known-quick-fixes}
 
-Known quick fixes[¶](#Known-quick-fixes){.wiki-anchor}
+Known quick fixes(#Known-quick-fixes)
 ======================================================
 
-[]{#Detector-Clock-Issue}
+{#Detector-Clock-Issue}
 
-Detector Clock Issue.[¶](#Detector-Clock-Issue){.wiki-anchor}
+Detector Clock Issue.(#Detector-Clock-Issue)
 -------------------------------------------------------------
 
 Around the time of the MCP 1.0 samples the detector clock for the optics

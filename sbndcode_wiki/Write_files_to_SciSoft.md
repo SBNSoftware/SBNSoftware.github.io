@@ -3,9 +3,9 @@ lang: en
 title: Write files to SciSoft
 ---
 
-[]{#Write-files-to-SciSoft}
+{#Write-files-to-SciSoft}
 
-Write files to SciSoft[¶](#Write-files-to-SciSoft){.wiki-anchor}
+Write files to SciSoft(#Write-files-to-SciSoft)
 ================================================================
 
 -   Currently sbndcode, sbndutil and sbnd\_data can be written to
@@ -16,9 +16,9 @@ Write files to SciSoft[¶](#Write-files-to-SciSoft){.wiki-anchor}
     can be obtained here
     (<http://scisoft.fnal.gov/scisoft/bundles/tools/>)
 
-[]{#Copy-sbndcode-and-sbndutil-to-SciSoft}
+{#Copy-sbndcode-and-sbndutil-to-SciSoft}
 
-Copy sbndcode and sbndutil to SciSoft[¶](#Copy-sbndcode-and-sbndutil-to-SciSoft){.wiki-anchor}
+Copy sbndcode and sbndutil to SciSoft(#Copy-sbndcode-and-sbndutil-to-SciSoft)
 ----------------------------------------------------------------------------------------------
 
 -   Go to an empty directory on an sbndgpvm, I have a `Jenkins`
@@ -49,16 +49,16 @@ Copy sbndcode and sbndutil to SciSoft[¶](#Copy-sbndcode-and-sbndutil-to-SciSoft
     scisoftportal.fnal.gov and cd in to /nasroot/SciSoft. Changes can be
     made in this directory
 
-[]{#Copy-sbnd_data-to-SciSoft}
+{#Copy-sbnd_data-to-SciSoft}
 
-Copy sbnd\_data to SciSoft[¶](#Copy-sbnd_data-to-SciSoft){.wiki-anchor}
+Copy sbnd\_data to SciSoft(#Copy-sbnd_data-to-SciSoft)
 -----------------------------------------------------------------------
 
 -   sbnd\_data is treated differently as it is not version controlled
     with git or built on Jenkins
 
 -   After a new version is created and [manually
-    deployed](Write_files_to_grid.html){.wiki-page} on /grid/fermiapp
+    deployed](Write_files_to_grid.html) on /grid/fermiapp
     and CVMFS it needs to be uploaded to SciSoft.
 
 -   You should do the steps in this section from your personal account.

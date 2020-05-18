@@ -4,12 +4,12 @@ title: ReleaseNotes0845002SBNWorkshop0320
 ---
 
   ----------------------------- ------------ -- -- ----------------------------------------------------------------------
-  v08.45.00.2.SBNWorkshop0320   03/11/2020         [Release Notes](ReleaseNotes0845002SBNWorkshop0320.html){.wiki-page}
+  v08.45.00.2.SBNWorkshop0320   03/11/2020         [Release Notes](ReleaseNotes0845002SBNWorkshop0320.html)
   ----------------------------- ------------ -- -- ----------------------------------------------------------------------
 
-[]{#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes}
+{#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes}
 
-sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release Notes[¶](#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes){.wiki-anchor}
+sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release Notes(#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes)
 ============================================================================================================================
 
 -   **Table of contents**
@@ -26,40 +26,40 @@ sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release Notes[¶](#sbndcode-v08_45_00_2
         v08\_45\_00\_2\_SBNWorkshop0320](#sbndutil-v08_45_00_2_SBNWorkshop0320)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_45\_00\_2\_SBNWorkshop0320](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_45_00_2_SBNWorkshop0320/sbndcode-v08_45_00_2_SBNWorkshop0320.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN Workshop 03/20
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_45_00_2_SBNWorkshop0320}
+{#sbndcode-v08_45_00_2_SBNWorkshop0320}
 
-sbndcode v08\_45\_00\_2\_SBNWorkshop0320[¶](#sbndcode-v08_45_00_2_SBNWorkshop0320){.wiki-anchor}
+sbndcode v08\_45\_00\_2\_SBNWorkshop0320(#sbndcode-v08_45_00_2_SBNWorkshop0320)
 ------------------------------------------------------------------------------------------------
 
 -   2020-03-11 Thomas Brooks : Merge branch
@@ -80,9 +80,9 @@ sbndcode v08\_45\_00\_2\_SBNWorkshop0320[¶](#sbndcode-v08_45_00_2_SBNWorkshop03
     Default is SCE off, but will use voxelized input when
     EnableSimEfield and EnableSimSpatial parameters are set to true
 
-[]{#sbndutil-v08_45_00_2_SBNWorkshop0320}
+{#sbndutil-v08_45_00_2_SBNWorkshop0320}
 
-sbndutil v08\_45\_00\_2\_SBNWorkshop0320[¶](#sbndutil-v08_45_00_2_SBNWorkshop0320){.wiki-anchor}
+sbndutil v08\_45\_00\_2\_SBNWorkshop0320(#sbndutil-v08_45_00_2_SBNWorkshop0320)
 ------------------------------------------------------------------------------------------------
 
 -   2020-03-11 Thomas Brooks : Merge branch

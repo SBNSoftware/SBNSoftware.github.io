@@ -4,12 +4,12 @@ title: ReleaseNotes063200
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.32.00   06/05/2017         [Release Notes](ReleaseNotes063200.html){.wiki-page}
+  v06.32.00   06/05/2017         [Release Notes](ReleaseNotes063200.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_32_00-Release-Notes}
+{#sbndcode-v06_32_00-Release-Notes}
 
-sbndcode v06\_32\_00 Release Notes[¶](#sbndcode-v06_32_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_32\_00 Release Notes(#sbndcode-v06_32_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_32\_00 Release Notes[¶](#sbndcode-v06_32_00-Release-Notes){.wiki-
     -   [sbndutil v01\_15\_00](#sbndutil-v01_15_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_32_00/sbndcode-v06_32_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 First tagged release for LArSoft v06.
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   New CRT simulations.
@@ -46,14 +46,14 @@ New features[¶](#New-features){.wiki-anchor}
 -   Adoption of ROOT 6
 -   Update to art 2.6
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -64,14 +64,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
     v2\_06\_03](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Release_Notes_20603){.external}
 -   larbatch v01\_30\_00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_32_00}
+{#sbndcode-v06_32_00}
 
-sbndcode v06\_32\_00[¶](#sbndcode-v06_32_00){.wiki-anchor}
+sbndcode v06\_32\_00(#sbndcode-v06_32_00)
 ----------------------------------------------------------
 
 -   2017-06-05 Thomas Brooks : Merge branch \'release/v06\_32\_00\'
@@ -195,9 +195,9 @@ sbndcode v06\_32\_00[¶](#sbndcode-v06_32_00){.wiki-anchor}
     display configuration.
 -   2016-07-12 Gianluca Petrillo : Update to LArSoft 5.14.01
 
-[]{#sbndutil-v01_15_00}
+{#sbndutil-v01_15_00}
 
-sbndutil v01\_15\_00[¶](#sbndutil-v01_15_00){.wiki-anchor}
+sbndutil v01\_15\_00(#sbndutil-v01_15_00)
 ----------------------------------------------------------
 
 -   2017-06-05 Thomas Brooks : Merge branch \'release/v01\_15\_00\'

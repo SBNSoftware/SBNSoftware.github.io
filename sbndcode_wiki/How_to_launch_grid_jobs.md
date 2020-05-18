@@ -3,16 +3,16 @@ lang: en
 title: How to launch grid jobs
 ---
 
-[]{#How-to-launch-grid-jobs}
+{#How-to-launch-grid-jobs}
 
-How to launch grid jobs[¶](#How-to-launch-grid-jobs){.wiki-anchor}
+How to launch grid jobs(#How-to-launch-grid-jobs)
 ==================================================================
 
 SBND now has its
-[VO](Computing_resources.html#Submitting-jobs-Virtual-Organisation){.wiki-page}
+[VO](Computing_resources.html#Submitting-jobs-Virtual-Organisation)
 which is a part of the Fermilab VOMS and allows us to run on the
 [FermiGrid and Open Science
-Grid](Computing_resources.html#Submitting-jobs-grid-resources){.wiki-page}.
+Grid](Computing_resources.html#Submitting-jobs-grid-resources).
 
 Launching jobs is done using the `jobsub_client` package:\
 <https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client>
@@ -20,7 +20,7 @@ Launching jobs is done using the `jobsub_client` package:\
 but a quick way to launch your job is the following:
 
 1.  make sure you create your user directory on the
-    [dCache](Computing_resources.html#World-visible-storage-dCache){.wiki-page}
+    [dCache](Computing_resources.html#World-visible-storage-dCache)
     disk space mounted at:\
 
         mkdir -p "/pnfs/sbnd/scratch/users/${USER}" 
@@ -81,7 +81,7 @@ but a quick way to launch your job is the following:
 
 4.  this is how you would launch the job from your working directory
     (e.g. [BlueArc
-    space](Computing_resources.html#Local-storage-BlueArc-disks){.wiki-page}
+    space](Computing_resources.html#Local-storage-BlueArc-disks)
     like `/sbnd/app/users/`):\
 
         jobsub_submit -G sbnd --role=Analysis -N 3 -M --resource-provides="usage_model=DEDICATED,OPPORTUNISTIC" --OS="SL6" "file://$(pwd)/run_job.sh"
@@ -102,52 +102,52 @@ The results of your job will end up in\
 
     /pnfs/sbnd/scratch/users/${USER}/output_${CLUSTER}.${PROCESS}
 
-[]{#Some-other-useful-commands}
+{#Some-other-useful-commands}
 
-Some other useful commands:[¶](#Some-other-useful-commands){.wiki-anchor}
+Some other useful commands:(#Some-other-useful-commands)
 =========================================================================
 
 For more details go to the [jobsub (client)
-documentation](Using_the_Client.html){.wiki-page}.
+documentation](Using_the_Client.html).
 
-[]{#See-how-your-jobs-are-doing}
+{#See-how-your-jobs-are-doing}
 
-See how your jobs are doing[¶](#See-how-your-jobs-are-doing){.wiki-anchor}
+See how your jobs are doing(#See-how-your-jobs-are-doing)
 --------------------------------------------------------------------------
 
     jobsub_q -G sbnd --user="$USER"
 
-[]{#Remove-a-job}
+{#Remove-a-job}
 
-Remove a job[¶](#Remove-a-job){.wiki-anchor}
+Remove a job(#Remove-a-job)
 --------------------------------------------
 
     jobsub_rm -G sbnd --jobid=<number of job, can get e.g. from previous question>
 
-[]{#Fetch-the-log-files}
+{#Fetch-the-log-files}
 
-Fetch the log files[¶](#Fetch-the-log-files){.wiki-anchor}
+Fetch the log files(#Fetch-the-log-files)
 ----------------------------------------------------------
 
     jobsub_fetchlog -G sbnd --jobid <job id specified at runtime, e.g. 77457.0@fifebatch2.fnal.gov>
 
-[]{#Launching-LArSoft-jobs-also-in-large-numbers}
+{#Launching-LArSoft-jobs-also-in-large-numbers}
 
-Launching LArSoft jobs (also in large numbers)[¶](#Launching-LArSoft-jobs-also-in-large-numbers){.wiki-anchor}
+Launching LArSoft jobs (also in large numbers)(#Launching-LArSoft-jobs-also-in-large-numbers)
 ==============================================================================================================
 
 To be written. Sorry.
 
-[]{#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers}
+{#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers}
 
-Using `project.py` to launch LArSoft jobs (especially in large numbers)[¶](#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers){.wiki-anchor}
+Using `project.py` to launch LArSoft jobs (especially in large numbers)(#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers)
 =============================================================================================================================================================
 
 `project.py` is a wrapper script that takes a lot of the tedious setup
 of grid etc out of the hand of the user, instead using an XML
 configuration file.\
 The general instructions for `project.py` are in `larbatch`\'s [user
-guide](User_guide.html){.wiki-page}.
+guide](User_guide.html).
 
 To use this package with SBND we need to set up `sbndcode` and
 `sbndutil` UPS products. An example shell session could look like this:\
@@ -165,9 +165,9 @@ need two things:
     instance, **which needs to be present in your `FHICL_FILE_PATH`
     path**.
 
-[]{#xml-file-preparation}
+{#xml-file-preparation}
 
-xml file preparation[¶](#xml-file-preparation){.wiki-anchor}
+xml file preparation(#xml-file-preparation)
 ------------------------------------------------------------
 
 Example xml files can be found in the lar1ndutil repository, which you
@@ -191,9 +191,9 @@ you are using. So it has to be present in\
 that case you need to use the tarball option in the file. You can make
 the tarball using the: /lar1ndutil/scripts/make\_tar\_lar1nd.sh ).
 
-[]{#fcl-file-preparation}
+{#fcl-file-preparation}
 
-.fcl file preparation[¶](#fcl-file-preparation){.wiki-anchor}
+.fcl file preparation(#fcl-file-preparation)
 -------------------------------------------------------------
 
 The .fcl files need to be in your FHICL\_FILE\_PATH, so again, they need
@@ -205,9 +205,9 @@ to make install for project.py to pick it up.
 An example .fcl file is in:\
 lar1ndcode/lar1ndcode/JobConfigurations/prod\_eminus\_0.1\_0.9\_lar1nd.fcl
 
-[]{#Running}
+{#Running}
 
-Running[¶](#Running){.wiki-anchor}
+Running(#Running)
 ----------------------------------
 
 Once you have these elements you can run:\

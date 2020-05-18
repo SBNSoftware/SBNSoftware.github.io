@@ -3,13 +3,13 @@ lang: en
 title: Continuous integration
 ---
 
-[]{#Continuous-integration}
+{#Continuous-integration}
 
-Continuous integration[¶](#Continuous-integration){.wiki-anchor}
+Continuous integration(#Continuous-integration)
 ================================================================
 
 -   For detailed information on the integration tests see
-    [here](Integration_test_guide.html){.wiki-page}.
+    [here](Integration_test_guide.html).
 -   Every time someone pushes a commit to develop the integration tests
     will be triggered.
 -   Sometimes larsoft/art folks will trigger builds to test changes in
@@ -24,9 +24,9 @@ Continuous integration[¶](#Continuous-integration){.wiki-anchor}
 -   At the moment only one build (SLF7 e19:prof) will return successes
     for everything (call it the good build).
 
-[]{#Memorycpu-usage}
+{#Memorycpu-usage}
 
-Memory/cpu usage[¶](#Memorycpu-usage){.wiki-anchor}
+Memory/cpu usage(#Memorycpu-usage)
 ---------------------------------------------------
 
 -   Different compilers and OS\'s tend to have different memory/cpu
@@ -40,9 +40,9 @@ Memory/cpu usage[¶](#Memorycpu-usage){.wiki-anchor}
     -   Just find the relevant tests, change the limits and push the
         changes to develop.
 
-[]{#Data-product-changes}
+{#Data-product-changes}
 
-Data product changes[¶](#Data-product-changes){.wiki-anchor}
+Data product changes(#Data-product-changes)
 ------------------------------------------------------------
 
 -   If the output data products change the warning will say \"Difference
@@ -58,11 +58,11 @@ Data product changes[¶](#Data-product-changes){.wiki-anchor}
 -   Try to work out whose changes (either in sbndcode or upstream) are
     responsible and shoot them an email to confirm if they are expected.
 -   If the changes are expected then you can update the reference file,
-    instructions [here](Integration_test_guide.html){.wiki-page}.
+    instructions [here](Integration_test_guide.html).
 
-[]{#Failures}
+{#Failures}
 
-Failures[¶](#Failures){.wiki-anchor}
+Failures(#Failures)
 ------------------------------------
 
 -   You should always try to investigate failures for all builds.

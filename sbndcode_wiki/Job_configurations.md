@@ -3,9 +3,9 @@ lang: en
 title: Job configurations
 ---
 
-[]{#Configuration-of-SBND-jobs-services-and-algorithms}
+{#Configuration-of-SBND-jobs-services-and-algorithms}
 
-Configuration of SBND jobs, services and algorithms[¶](#Configuration-of-SBND-jobs-services-and-algorithms){.wiki-anchor}
+Configuration of SBND jobs, services and algorithms(#Configuration-of-SBND-jobs-services-and-algorithms)
 =========================================================================================================================
 
 -   **Table of contents**
@@ -17,9 +17,9 @@ Configuration of SBND jobs, services and algorithms[¶](#Configuration-of-SBND-j
     -   [Algorithm/module
         configurations](#Algorithmmodule-configurations)
 
-[]{#Organization}
+{#Organization}
 
-Organization[¶](#Organization){.wiki-anchor} {#organization .count}
+Organization(#Organization) {#organization .count}
 --------------------------------------------
 
 The guidelines for the location of the configuration within a repository
@@ -56,9 +56,9 @@ Summary:
   full job configurations                    [source:sbndcode/JobConfigurations](/redmine/projects/sbndcode/repository/entry/sbndcode/JobConfigurations){.source}
   ------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------
 
-[]{#Job-configurations}
+{#Job-configurations}
 
-Job configurations[¶](#Job-configurations){.wiki-anchor} {#job-configurations .count}
+Job configurations(#Job-configurations) {#job-configurations .count}
 --------------------------------------------------------
 
 Job configurations are being updated on demand: many of the
@@ -84,9 +84,9 @@ Note that these can be still improved (some, vastly so).\
 For more information on each of them, check the documentation in the
 configuration files.
 
-[]{#Service-configurations}
+{#Service-configurations}
 
-Service configurations[¶](#Service-configurations){.wiki-anchor} {#service-configurations .count}
+Service configurations(#Service-configurations) {#service-configurations .count}
 ----------------------------------------------------------------
 
 Some preset bundles are provided either as reference of for direct
@@ -113,7 +113,7 @@ In this way, when the maintainers change the configuration needed to
 access the databases, your configuration does not need to be updated,
 but also you are loading the minimal set of services you need.
 
-[]{#Algorithmmodule-configurations}
+{#Algorithmmodule-configurations}
 
-Algorithm/module configurations[¶](#Algorithmmodule-configurations){.wiki-anchor} {#algorithmmodule-configurations .count}
+Algorithm/module configurations(#Algorithmmodule-configurations) {#algorithmmodule-configurations .count}
 ---------------------------------------------------------------------------------

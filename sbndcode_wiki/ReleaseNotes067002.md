@@ -4,12 +4,12 @@ title: ReleaseNotes067002
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.70.02   03/19/2018         [Release Notes](ReleaseNotes067002.html){.wiki-page}
+  v06.70.02   03/19/2018         [Release Notes](ReleaseNotes067002.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_70_02-Release-Notes}
+{#sbndcode-v06_70_02-Release-Notes}
 
-sbndcode v06\_70\_02 Release Notes[¶](#sbndcode-v06_70_02-Release-Notes){.wiki-anchor}
+sbndcode v06\_70\_02 Release Notes(#sbndcode-v06_70_02-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,45 +24,45 @@ sbndcode v06\_70\_02 Release Notes[¶](#sbndcode-v06_70_02-Release-Notes){.wiki-
     -   [sbndutil v01\_46\_02](#sbndutil-v01_46_02)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_02/sbndcode-v06_70_02.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Preparation for saving to SAM
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.70.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067002){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_70_02}
+{#sbndcode-v06_70_02}
 
-sbndcode v06\_70\_02[¶](#sbndcode-v06_70_02){.wiki-anchor}
+sbndcode v06\_70\_02(#sbndcode-v06_70_02)
 ----------------------------------------------------------
 
 -   2018-03-16 Thomas Brooks : Merge branch \'release/v06\_70\_02\'
@@ -120,9 +120,9 @@ sbndcode v06\_70\_02[¶](#sbndcode-v06_70_02){.wiki-anchor}
 -   2018-02-21 Dominic Brailsford : ub-\>sbnd and fclversion -\>
     fcl.version (same for name)
 
-[]{#sbndutil-v01_46_02}
+{#sbndutil-v01_46_02}
 
-sbndutil v01\_46\_02[¶](#sbndutil-v01_46_02){.wiki-anchor}
+sbndutil v01\_46\_02(#sbndutil-v01_46_02)
 ----------------------------------------------------------
 
 -   2018-03-16 Thomas Brooks : Merge branch \'release/v01\_46\_02\'

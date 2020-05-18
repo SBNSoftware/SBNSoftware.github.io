@@ -3,9 +3,9 @@ lang: en
 title: Using LArSoft on a local machine
 ---
 
-[]{#Using-LArSoft-on-a-local-machine}
+{#Using-LArSoft-on-a-local-machine}
 
-Using LArSoft on a local machine[¶](#Using-LArSoft-on-a-local-machine){.wiki-anchor}
+Using LArSoft on a local machine(#Using-LArSoft-on-a-local-machine)
 ====================================================================================
 
 -   **Table of contents**
@@ -23,9 +23,9 @@ This is a collection of hints and tips to allow you to develop and run
 with `sbndcode` (and LArSoft) on a local machine, be it a server in your
 institution or your own laptop.
 
-[]{#Getting-the-software}
+{#Getting-the-software}
 
-Getting the software[¶](#Getting-the-software){.wiki-anchor}
+Getting the software(#Getting-the-software)
 ------------------------------------------------------------
 
 The \"software stack\" `sbndcode` relies upon is big, and it includes
@@ -34,13 +34,13 @@ GCC.\
 There are three main ways to have it available on your computer:
 
 1.  read it from the network via [CVMFS (with a few
-    hops\...)](Computing_resources.html#CVMFS){.wiki-page}; the main
+    hops\...)](Computing_resources.html#CVMFS); the main
     disadvantage is that the network may be slow (use a large cache!
     e.g. `CVMFS_QUOTA_LIMIT=20000`, that is 20 GB^[1](#fn1)^), and it
     does not work on the airplane, which surely disrupts your first
     choice of entertainment on flight;
 2.  [download it all in binary
-    form](#Downloading-a-binary-distribution-with-pullProducts){.wiki-page}
+    form](#Downloading-a-binary-distribution-with-pullProducts)
     from SciSoft;
 3.  download it all in source form and compile it; nobody alive I know
     ever did that, which somehow supports the natural selection model.
@@ -51,9 +51,9 @@ There are three main ways to have it available on your computer:
     mention that if ROOT version changes you have to do the whole thing
     again?
 
-[]{#Supported-platforms}
+{#Supported-platforms}
 
-Supported platforms[¶](#Supported-platforms){.wiki-anchor}
+Supported platforms(#Supported-platforms)
 ----------------------------------------------------------
 
 [![SBND user poll on used
@@ -64,7 +64,7 @@ platform can be supported at two levels:
 
 -   supported by LArSoft: LArSoft provides quite some information about
     the quirks of [supported and \"best effort\"
-    platforms](_Supported_Platforms_.html){.wiki-page}: read the one
+    platforms](_Supported_Platforms_.html): read the one
     pertaining your system carefully
 -   supported by SBND: necessarily a subset of LArSoft\'s: [Scientific
     Linux Fermi 6]{style="color: green;"}, [Scientific Linux Fermi
@@ -72,11 +72,11 @@ platform can be supported at two levels:
     Capitan\")]{style="color: green;"} and [OSX 10.12
     (\"Sierra\")]{style="color: green;"}; once again, read the
     [information on LArSoft support to your
-    platform](_Supported_Platforms_.html){.wiki-page} carefully.
+    platform](_Supported_Platforms_.html) carefully.
 
 If your platform is supported by LArSoft but not by SBND, do not
 despair: follow the instructions to get the LArSoft version you want
-(e.g. from [SciSoft](Installation_procedures.html){.wiki-page}), set up
+(e.g. from [SciSoft](Installation_procedures.html)), set up
 a MRB working area and check out `sbndcode` repository\... if you can
 compile it in the usual way, you are set already.\
 The `sbnd_data` and `sbndutil` packages are platform-independent (they
@@ -85,14 +85,14 @@ do not contain compiled code), so you can get them from
 well, and unpacking the tarball in the products area may be already
 enough.
 
-[]{#List-of-platforms}
+{#List-of-platforms}
 
-### List of platforms[¶](#List-of-platforms){.wiki-anchor}
+### List of platforms(#List-of-platforms)
 
 This platform was updated on October 13, 2017 (which is not the best
 time to do so, since OSX 10.10 is going to fall off the table no later
 than November). LArSoft support is documented on [LArSoft official
-support page](_Supported_Platforms_.html){.wiki-page}.
+support page](_Supported_Platforms_.html).
 
 Platform name
 
@@ -164,13 +164,13 @@ OSX
 [OSX 10.10 (\"Yosemite\") support has ended on November 10,
 2017!]{style="color: yellow;background-color: red;font-weight: bold;font-size: large;padding: 7px;border-style: solid;border-color: yellow;border-width: 3px;"}
 
-[]{#Downloading-a-binary-distribution-with-pullProducts}
+{#Downloading-a-binary-distribution-with-pullProducts}
 
-Downloading a binary distribution with `pullProducts`[¶](#Downloading-a-binary-distribution-with-pullProducts){.wiki-anchor}
+Downloading a binary distribution with `pullProducts`(#Downloading-a-binary-distribution-with-pullProducts)
 ----------------------------------------------------------------------------------------------------------------------------
 
 The general [instructions from
-LArSoft](Installation_procedures.html){.wiki-page} on how to get a
+LArSoft](Installation_procedures.html) on how to get a
 software distribution are basically all you need to know.\
 We are reproducing them here with some SBND twist, but the ones on
 LArSoft are likely to stay more up to date.
@@ -192,7 +192,7 @@ LArSoft are likely to stay more up to date.
     that are already available somewhere
 
 3.  decide [which release
-    version](List_of_SBND_code_releases.html){.wiki-page} you want; if
+    version](List_of_SBND_code_releases.html) you want; if
     you don\'t know your options, you can also find the ones currently
     available at [SBND SciSoft
     page](http://scisoft.fnal.gov/scisoft/bundles/sbnd){.external} (this
@@ -205,7 +205,7 @@ LArSoft are likely to stay more up to date.
     -   the qualifier of the currently supported compiler (e.g. `e14`):
         there is usually only one
     -   which platform you have (see the [supported platform
-        table](#List-of-platforms){.wiki-page}), e.g. `d14`
+        table](#List-of-platforms)), e.g. `d14`
 
 4.  run the `pullProduct` script; if you are in your product area:
 
@@ -213,9 +213,9 @@ LArSoft are likely to stay more up to date.
 
 5.  be patient\...
 
-[]{#Updating-the-local-product-repository}
+{#Updating-the-local-product-repository}
 
-### Updating the local product repository[¶](#Updating-the-local-product-repository){.wiki-anchor}
+### Updating the local product repository(#Updating-the-local-product-repository)
 
 To update a version, you can follows the instructions above and run the
 same `pullProducts` (that script rarely changes) on the same directory.\

@@ -4,12 +4,12 @@ title: ReleaseNotes064300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.43.00   07/13/2017         [Release Notes](ReleaseNotes064300.html){.wiki-page}
+  v06.43.00   07/13/2017         [Release Notes](ReleaseNotes064300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_43_00-Release-Notes}
+{#sbndcode-v06_43_00-Release-Notes}
 
-sbndcode v06\_43\_00 Release Notes[¶](#sbndcode-v06_43_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_43\_00 Release Notes(#sbndcode-v06_43_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_43\_00 Release Notes[¶](#sbndcode-v06_43_00-Release-Notes){.wiki-
     -   [sbndutil v01\_19\_00](#sbndutil-v01_19_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_43_00/sbndcode-v06_43_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   larcorealg introduced to store geometry and utilities independent of
@@ -45,30 +45,30 @@ New features[¶](#New-features){.wiki-anchor}
     -   This is a breaking change, for more information see
         [here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Breaking_Changes#Geometry-and-utility-code-moved-to-larcorealg){.external}
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   experiment\_utilities.py updated to fix project.py for larsoft 6
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.43.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064300){.external}
 -   larbatch v01\_32\_03
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_43_00}
+{#sbndcode-v06_43_00}
 
-sbndcode v06\_43\_00[¶](#sbndcode-v06_43_00){.wiki-anchor}
+sbndcode v06\_43\_00(#sbndcode-v06_43_00)
 ----------------------------------------------------------
 
 -   2017-07-13 Thomas Brooks : Merge branch \'release/v06\_43\_00\'
@@ -80,9 +80,9 @@ sbndcode v06\_43\_00[¶](#sbndcode-v06_43_00){.wiki-anchor}
     .tracker-2 .status-5 .priority-4 .priority-default .closed})
 -   2017-07-01 Thomas Brooks : Merge tag \'v06\_42\_00\' into develop
 
-[]{#sbndutil-v01_19_00}
+{#sbndutil-v01_19_00}
 
-sbndutil v01\_19\_00[¶](#sbndutil-v01_19_00){.wiki-anchor}
+sbndutil v01\_19\_00(#sbndutil-v01_19_00)
 ----------------------------------------------------------
 
 -   2017-07-13 Thomas Brooks : Merge branch \'release/v01\_19\_00\'

@@ -4,12 +4,12 @@ title: ReleaseNotes081800
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.18.00   05/03/2019         [Release Notes](ReleaseNotes081800.html){.wiki-page}
+  v08.18.00   05/03/2019         [Release Notes](ReleaseNotes081800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_18_00-Release-Notes}
+{#sbndcode-v08_18_00-Release-Notes}
 
-sbndcode v08\_18\_00 Release Notes[¶](#sbndcode-v08_18_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_18\_00 Release Notes(#sbndcode-v08_18_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,33 +24,33 @@ sbndcode v08\_18\_00 Release Notes[¶](#sbndcode-v08_18_00-Release-Notes){.wiki-
     -   [sbndutil v08\_18\_00](#sbndutil-v08_18_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_18\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_18_00/sbndcode-v08_18_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 -   Update to art v3.02.05 (s83)
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Optical detector simulation and digitization.
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   art v3\_02\_05
@@ -58,14 +58,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
     v08.18.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081800){.external}
 -   larbatch v01.51.03
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_18_00}
+{#sbndcode-v08_18_00}
 
-sbndcode v08\_18\_00[¶](#sbndcode-v08_18_00){.wiki-anchor}
+sbndcode v08\_18\_00(#sbndcode-v08_18_00)
 ----------------------------------------------------------
 
 -   2019-05-03 Thomas Brooks : Merge branch \'release/v08\_18\_00\'
@@ -95,9 +95,9 @@ sbndcode v08\_18\_00[¶](#sbndcode-v08_18_00){.wiki-anchor}
 -   2019-01-25 Laura Paulucci marinho : Optical waveforms and early
     analysis modules
 
-[]{#sbndutil-v08_18_00}
+{#sbndutil-v08_18_00}
 
-sbndutil v08\_18\_00[¶](#sbndutil-v08_18_00){.wiki-anchor}
+sbndutil v08\_18\_00(#sbndutil-v08_18_00)
 ----------------------------------------------------------
 
 -   2019-05-03 Thomas Brooks : Merge branch \'release/v08\_18\_00\'

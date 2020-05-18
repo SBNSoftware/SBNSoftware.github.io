@@ -4,12 +4,12 @@ title: ReleaseNotes0813001SBNWorkshop0319
 ---
 
   ----------------------------- ------------ -- -- ----------------------------------------------------------------------
-  v08.13.00.1.SBNWorkshop0319   03/16/2019         [Release Notes](ReleaseNotes0813001SBNWorkshop0319.html){.wiki-page}
+  v08.13.00.1.SBNWorkshop0319   03/16/2019         [Release Notes](ReleaseNotes0813001SBNWorkshop0319.html)
   ----------------------------- ------------ -- -- ----------------------------------------------------------------------
 
-[]{#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes}
+{#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes}
 
-sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes[¶](#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes){.wiki-anchor}
+sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes(#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes)
 ============================================================================================================================
 
 -   **Table of contents**
@@ -26,42 +26,42 @@ sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes[¶](#sbndcode-v08_13_00_1
         v08\_13\_00\_1\_SBNWorkshop0319](#sbndutil-v08_13_00_1_SBNWorkshop0319)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_13\_00\_1\_SBNWorkshop0319](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00_1_SBNWorkshop0319/sbndcode-v08_13_00_1_SBNWorkshop0319.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN Workshop 03/19
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Add some fcl files for the workshop
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_13_00_1_SBNWorkshop0319}
+{#sbndcode-v08_13_00_1_SBNWorkshop0319}
 
-sbndcode v08\_13\_00\_1\_SBNWorkshop0319[¶](#sbndcode-v08_13_00_1_SBNWorkshop0319){.wiki-anchor}
+sbndcode v08\_13\_00\_1\_SBNWorkshop0319(#sbndcode-v08_13_00_1_SBNWorkshop0319)
 ------------------------------------------------------------------------------------------------
 
 -   2019-03-16 Thomas Brooks : Merge branch
@@ -84,9 +84,9 @@ sbndcode v08\_13\_00\_1\_SBNWorkshop0319[¶](#sbndcode-v08_13_00_1_SBNWorkshop03
     descriptive
 -   2019-03-15 Thomas Brooks : Merge tag \'v08\_13\_00\' into develop
 
-[]{#sbndutil-v08_13_00_1_SBNWorkshop0319}
+{#sbndutil-v08_13_00_1_SBNWorkshop0319}
 
-sbndutil v08\_13\_00\_1\_SBNWorkshop0319[¶](#sbndutil-v08_13_00_1_SBNWorkshop0319){.wiki-anchor}
+sbndutil v08\_13\_00\_1\_SBNWorkshop0319(#sbndutil-v08_13_00_1_SBNWorkshop0319)
 ------------------------------------------------------------------------------------------------
 
 -   2019-03-16 Thomas Brooks : Merge branch

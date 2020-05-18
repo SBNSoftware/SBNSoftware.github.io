@@ -3,9 +3,9 @@ lang: en
 title: Small data files for SBND processing sbnd data
 ---
 
-[]{#Small-data-files-for-SBND-processing-sbnd_data}
+{#Small-data-files-for-SBND-processing-sbnd_data}
 
-Small data files for SBND processing: `sbnd_data`[¶](#Small-data-files-for-SBND-processing-sbnd_data){.wiki-anchor}
+Small data files for SBND processing: `sbnd_data`(#Small-data-files-for-SBND-processing-sbnd_data)
 ===================================================================================================================
 
 -   **Table of contents**
@@ -38,14 +38,14 @@ and no track of the changes is automatically kept.
 The procedure is actually extremely simple, but we have a long wiki page
 to impress people.
 
-[]{#Availability-and-set-up}
+{#Availability-and-set-up}
 
-Availability and set up[¶](#Availability-and-set-up){.wiki-anchor}
+Availability and set up(#Availability-and-set-up)
 ------------------------------------------------------------------
 
 The product `sbnd_data` is distributed in:
 
--   [CVMFS](Write_files_to_CVMFS.html){.wiki-page}:
+-   [CVMFS](Write_files_to_CVMFS.html):
     `/cvmfs/sbnd/opensciencegrid.org/products`
 -   `/grid/fermiapp/products/sbnd` (not yet)
 
@@ -63,9 +63,9 @@ non-optional in the future.
 > `"Response/sbnd_filters_v0.1.root"` instead of just
 > `"sbnd_filters_v0.1.root"`.
 
-[]{#Content-of-the-package}
+{#Content-of-the-package}
 
-Content of the package[¶](#Content-of-the-package){.wiki-anchor}
+Content of the package(#Content-of-the-package)
 ----------------------------------------------------------------
 
 -   `ups/`: contains the magics for this to be a legit UPS product;
@@ -77,34 +77,34 @@ Content of the package[¶](#Content-of-the-package){.wiki-anchor}
     this whenever you change the content!** This is the only way we have
     to track it.
 
-[]{#Update-procedures-and-policies}
+{#Update-procedures-and-policies}
 
-Update procedures and policies[¶](#Update-procedures-and-policies){.wiki-anchor}
+Update procedures and policies(#Update-procedures-and-policies)
 --------------------------------------------------------------------------------
 
 An update of the package happens in the following steps:
 
 1.  [the latest version is taken as starting
-    point](#Starting-with-the-latest-version){.wiki-page}
-2.  [content is updated](#Updating-the-content){.wiki-page}
-3.  a [new version number](#Version-number-policy){.wiki-page} is
+    point](#Starting-with-the-latest-version)
+2.  [content is updated](#Updating-the-content)
+3.  a [new version number](#Version-number-policy) is
     decided
 4.  `CHANGES` [files in the changed directories are
-    updated](#Guidelines-for-updating-CHANGE-files){.wiki-page}
+    updated](#Guidelines-for-updating-CHANGE-files)
 5.  the [new UPS product is
-    finished](#Declare-and-pack-the-UPS-product){.wiki-page}
+    finished](#Declare-and-pack-the-UPS-product)
 6.  the new UPS product is [Small data files for SBND processing
-    sbnd\_data](#Deploy-the-new-version){.wiki-page} to the [deployment
-    sites](#Availability-and-set-up){.wiki-page}
+    sbnd\_data](#Deploy-the-new-version) to the [deployment
+    sites](#Availability-and-set-up)
 7.  likely, a dependence update should be scheduled for the next release
     of `sbndcode`
 
 These instructions are a detailed version of [the ones from
-LArSoft](Procedure_to_create_a_new_version_of_larsoft_data.html){.wiki-page}.
+LArSoft](Procedure_to_create_a_new_version_of_larsoft_data.html).
 
-[]{#Starting-with-the-latest-version}
+{#Starting-with-the-latest-version}
 
-### Starting with the latest version[¶](#Starting-with-the-latest-version){.wiki-anchor}
+### Starting with the latest version(#Starting-with-the-latest-version)
 
 Have a UPS area specific for this work.\
 To create one:
@@ -138,33 +138,33 @@ To start an update:
 
 You are ready to change the content.
 
-[]{#Updating-the-content}
+{#Updating-the-content}
 
-### Updating the content[¶](#Updating-the-content){.wiki-anchor}
+### Updating the content(#Updating-the-content)
 
 You just do your editing, copying and removing in the copy of the most
 recent `sbnd_data/<latest_version>` [you just
-created](#Starting-with-the-latest-version){.wiki-page}.\
+created](#Starting-with-the-latest-version).\
 Each new subdirectory of `sbnd_data` should have its own `CHANGES` file.
 
-[]{#Choose-the-next-version-number}
+{#Choose-the-next-version-number}
 
-### Choose the next version number[¶](#Choose-the-next-version-number){.wiki-anchor}
+### Choose the next version number(#Choose-the-next-version-number)
 
 The version format is `vMM-mm_pp`, with `MM` the major version, `mm` the
 minor version, and `pp` the \"patch\" version, all with 2 digits,
 0-padded.\
 Try to follow [these
-guidelines](#Guidelines-for-updating-CHANGE-files){.wiki-page} if
+guidelines](#Guidelines-for-updating-CHANGE-files) if
 possible.\
 For the rest of the tutorial, the following is assumed to exist with the
 new version:
 
     declare NewVersion="v01_01_00"
 
-[]{#Guidelines-for-updating-CHANGE-files}
+{#Guidelines-for-updating-CHANGE-files}
 
-### Guidelines for updating \`CHANGE\` files[¶](#Guidelines-for-updating-CHANGE-files){.wiki-anchor}
+### Guidelines for updating \`CHANGE\` files(#Guidelines-for-updating-CHANGE-files)
 
 These guidelines try to cover all the information that in future we
 might want to find out from a old (or current) release.\
@@ -176,7 +176,7 @@ updated:
     of the change and pointers to documentation (e.g. DocDB documents)
     if available]{style="color: red;"}
 -   \`sbnd\_data/\<latest\_version\>/CHANGES\` if a change on the [minor
-    version bump level](#Version-number-policy){.wiki-page} is being
+    version bump level](#Version-number-policy) is being
     performed (e.g. if it is in a new directory or if it adds something
     for the first time)
 -   \`sbnd\_data/\<latest\_version\>/README\` also if it is in a new
@@ -185,9 +185,9 @@ updated:
 > One more time: this is the only way we have to keep record of the
 > content of the package.
 
-[]{#Declare-and-pack-the-UPS-product}
+{#Declare-and-pack-the-UPS-product}
 
-### Declare and pack the UPS product[¶](#Declare-and-pack-the-UPS-product){.wiki-anchor}
+### Declare and pack the UPS product(#Declare-and-pack-the-UPS-product)
 
 We are going to produce a `tar` file with the new content. Note that you
 need `larutils` set up, and you need to know a version of it
@@ -215,24 +215,24 @@ You have now a shiny new `sbnd_data_${NewVersion#v}-noarch.tar.bz2`
 (note for your scripts: there is no `v` in the file name before the
 version number).
 
-[]{#Deploy-the-new-version}
+{#Deploy-the-new-version}
 
-### Deploy the new version[¶](#Deploy-the-new-version){.wiki-anchor}
+### Deploy the new version(#Deploy-the-new-version)
 
 The package needs to be propagated individually to the [deployment
-sites](#Availability-and-set-up){.wiki-page}.
+sites](#Availability-and-set-up).
 
 For CVMFS, the [generic SBND CVMFS update
-instructions](Write_files_to_CVMFS.html){.wiki-page} work well. An
+instructions](Write_files_to_CVMFS.html) work well. An
 update of `sbnd_data` (that typically comes with a `sbndcode` update)
 deserves a new major version number for tag (CVMFS tags grow faster than
 the code in this scheme).
 
 The deployment on `/grid` is still TODO.
 
-[]{#Version-number-policy}
+{#Version-number-policy}
 
-Version number policy[¶](#Version-number-policy){.wiki-anchor}
+Version number policy(#Version-number-policy)
 --------------------------------------------------------------
 
 These are generic guidelines to help in choosing how to bump the version

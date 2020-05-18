@@ -4,12 +4,12 @@ title: ReleaseNotes066900
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.69.00   02/23/2018         [Release Notes](ReleaseNotes066900.html){.wiki-page}
+  v06.69.00   02/23/2018         [Release Notes](ReleaseNotes066900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_69_00-Release-Notes}
+{#sbndcode-v06_69_00-Release-Notes}
 
-sbndcode v06\_69\_00 Release Notes[¶](#sbndcode-v06_69_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_69\_00 Release Notes(#sbndcode-v06_69_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_69\_00 Release Notes[¶](#sbndcode-v06_69_00-Release-Notes){.wiki-
     -   [sbndutil v01\_45\_00](#sbndutil-v01_45_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_69\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_69_00/sbndcode-v06_69_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   New integration tests (runs an end to end job)
@@ -45,28 +45,28 @@ New features[¶](#New-features){.wiki-anchor}
 
             setup lar_ci; test_runner -s develop_test_sbndcode 
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.69.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066900){.external}
 -   larbatch v06\_37\_00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_69_00}
+{#sbndcode-v06_69_00}
 
-sbndcode v06\_69\_00[¶](#sbndcode-v06_69_00){.wiki-anchor}
+sbndcode v06\_69\_00(#sbndcode-v06_69_00)
 ----------------------------------------------------------
 
 -   2018-02-23 Thomas Brooks : Merge branch \'release/v06\_69\_00\'
@@ -107,9 +107,9 @@ sbndcode v06\_69\_00[¶](#sbndcode-v06_69_00){.wiki-anchor}
 -   2017-10-19 Gianluca Petrillo : First draft of the integration tests
     for SBND.
 
-[]{#sbndutil-v01_45_00}
+{#sbndutil-v01_45_00}
 
-sbndutil v01\_45\_00[¶](#sbndutil-v01_45_00){.wiki-anchor}
+sbndutil v01\_45\_00(#sbndutil-v01_45_00)
 ----------------------------------------------------------
 
 -   2018-02-23 Thomas Brooks : Merge branch \'release/v01\_45\_00\'

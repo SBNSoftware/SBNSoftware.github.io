@@ -4,12 +4,12 @@ title: ReleaseNotes070701
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v07.07.01   10/15/2018         [Release Notes](ReleaseNotes070701.html){.wiki-page}
+  v07.07.01   10/15/2018         [Release Notes](ReleaseNotes070701.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v07_07_01-Release-Notes}
+{#sbndcode-v07_07_01-Release-Notes}
 
-sbndcode v07\_07\_01 Release Notes[¶](#sbndcode-v07_07_01-Release-Notes){.wiki-anchor}
+sbndcode v07\_07\_01 Release Notes(#sbndcode-v07_07_01-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,44 +24,44 @@ sbndcode v07\_07\_01 Release Notes[¶](#sbndcode-v07_07_01-Release-Notes){.wiki-
     -   [sbndutil v07\_07\_01](#sbndutil-v07_07_01)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_07\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_01/sbndcode-v07_07_01.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v07.07.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070701){.external}
 -   larbatch v01.46.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v07_07_01}
+{#sbndcode-v07_07_01}
 
-sbndcode v07\_07\_01[¶](#sbndcode-v07_07_01){.wiki-anchor}
+sbndcode v07\_07\_01(#sbndcode-v07_07_01)
 ----------------------------------------------------------
 
 -   2018-10-12 Thomas Brooks : Merge branch \'release/v07\_07\_01\'
@@ -69,9 +69,9 @@ sbndcode v07\_07\_01[¶](#sbndcode-v07_07_01){.wiki-anchor}
 -   2018-10-10 Thomas Brooks : Merge tag \'v07\_07\_00\_2\_MCP0\_9\'
     into develop
 
-[]{#sbndutil-v07_07_01}
+{#sbndutil-v07_07_01}
 
-sbndutil v07\_07\_01[¶](#sbndutil-v07_07_01){.wiki-anchor}
+sbndutil v07\_07\_01(#sbndutil-v07_07_01)
 ----------------------------------------------------------
 
 -   2018-10-12 Thomas Brooks : Merge branch \'release/v07\_07\_01\'

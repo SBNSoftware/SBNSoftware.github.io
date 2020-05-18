@@ -4,12 +4,12 @@ title: ReleaseNotes066300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.63.00   01/15/2018         [Release Notes](ReleaseNotes066300.html){.wiki-page}
+  v06.63.00   01/15/2018         [Release Notes](ReleaseNotes066300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_63_00-Release-Notes}
+{#sbndcode-v06_63_00-Release-Notes}
 
-sbndcode v06\_63\_00 Release Notes[¶](#sbndcode-v06_63_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_63\_00 Release Notes(#sbndcode-v06_63_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v06\_63\_00 Release Notes[¶](#sbndcode-v06_63_00-Release-Notes){.wiki-
     -   [sbndutil v01\_39\_00](#sbndutil-v01_39_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_63\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_63_00/sbndcode-v06_63_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Default version of sbndcode (e14:prof)
@@ -50,14 +50,14 @@ New features[¶](#New-features){.wiki-anchor}
         development area (mrb newDev) the qualifiers still need to be
         specified.
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -65,14 +65,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   larbatch v01.35.00
 -   cetbuildtools v6.01.01
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_63_00}
+{#sbndcode-v06_63_00}
 
-sbndcode v06\_63\_00[¶](#sbndcode-v06_63_00){.wiki-anchor}
+sbndcode v06\_63\_00(#sbndcode-v06_63_00)
 ----------------------------------------------------------
 
 -   2018-01-12 Thomas Brooks : Merge branch \'release/v06\_63\_00\'
@@ -80,9 +80,9 @@ sbndcode v06\_63\_00[¶](#sbndcode-v06_63_00){.wiki-anchor}
 -   2018-01-10 Lynn Garren : find larcoreobj
 -   2018-01-04 Thomas Brooks : Merge tag \'v06\_62\_00\' into develop
 
-[]{#sbndutil-v01_39_00}
+{#sbndutil-v01_39_00}
 
-sbndutil v01\_39\_00[¶](#sbndutil-v01_39_00){.wiki-anchor}
+sbndutil v01\_39\_00(#sbndutil-v01_39_00)
 ----------------------------------------------------------
 
 -   2018-01-12 Thomas Brooks : Merge branch \'release/v01\_39\_00\'

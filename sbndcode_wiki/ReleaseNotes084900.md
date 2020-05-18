@@ -4,12 +4,12 @@ title: ReleaseNotes084900
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.49.00   04/17/2020         [Release Notes](ReleaseNotes084900.html){.wiki-page}
+  v08.49.00   04/17/2020         [Release Notes](ReleaseNotes084900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_49_00-Release-Notes}
+{#sbndcode-v08_49_00-Release-Notes}
 
-sbndcode v08\_49\_00 Release Notes[¶](#sbndcode-v08_49_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_49\_00 Release Notes(#sbndcode-v08_49_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,43 +24,43 @@ sbndcode v08\_49\_00 Release Notes[¶](#sbndcode-v08_49_00-Release-Notes){.wiki-
     -   [sbndutil v08\_49\_00](#sbndutil-v08_49_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_49\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_49_00/sbndcode-v08_49_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.49.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084900){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_49_00}
+{#sbndcode-v08_49_00}
 
-sbndcode v08\_49\_00[¶](#sbndcode-v08_49_00){.wiki-anchor}
+sbndcode v08\_49\_00(#sbndcode-v08_49_00)
 ----------------------------------------------------------
 
 -   2020-04-17 Andrew Scarff : Merge branch \'release/v08\_49\_00\'
@@ -76,9 +76,9 @@ sbndcode v08\_49\_00[¶](#sbndcode-v08_49_00){.wiki-anchor}
     score in T0 producer module
 -   2020-04-07 Andrew Scarff : Merge tag \'v08\_48\_01\' into develop
 
-[]{#sbndutil-v08_49_00}
+{#sbndutil-v08_49_00}
 
-sbndutil v08\_49\_00[¶](#sbndutil-v08_49_00){.wiki-anchor}
+sbndutil v08\_49\_00(#sbndutil-v08_49_00)
 ----------------------------------------------------------
 
 -   2020-04-17 Andrew Scarff : Merge tag \'v08\_49\_00\' into develop

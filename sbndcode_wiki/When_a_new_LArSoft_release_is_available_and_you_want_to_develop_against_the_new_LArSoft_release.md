@@ -4,9 +4,9 @@ title: When a new LArSoft release is available and you want to develop
   against the new LArSoft release
 ---
 
-[]{#When-a-new-LArSoft-release-is-available-and-you-want-to-develop-against-the-new-LArSoft-release}
+{#When-a-new-LArSoft-release-is-available-and-you-want-to-develop-against-the-new-LArSoft-release}
 
-When a new LArSoft release is available and you want to develop against the new LArSoft release[¶](#When-a-new-LArSoft-release-is-available-and-you-want-to-develop-against-the-new-LArSoft-release){.wiki-anchor}
+When a new LArSoft release is available and you want to develop against the new LArSoft release(#When-a-new-LArSoft-release-is-available-and-you-want-to-develop-against-the-new-LArSoft-release)
 ==================================================================================================================================================================================================================
 
 (Stolen from dunetpc wiki)

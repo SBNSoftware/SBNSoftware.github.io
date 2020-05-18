@@ -3,9 +3,9 @@ lang: en
 title: Working on a feature branch (to easily share code)
 ---
 
-[]{#Working-on-a-feature-branch-to-easily-share-code}
+{#Working-on-a-feature-branch-to-easily-share-code}
 
-Working on a feature branch (to easily share code)[¶](#Working-on-a-feature-branch-to-easily-share-code){.wiki-anchor}
+Working on a feature branch (to easily share code)(#Working-on-a-feature-branch-to-easily-share-code)
 ======================================================================================================================
 
 -   **Table of contents**
@@ -15,7 +15,7 @@ Working on a feature branch (to easily share code)[¶](#Working-on-a-feature-bra
 (Adapted from the 35 ton tutorials by Karl Warburton)
 
 [Setup your
-directory](How_to_setup_your_directory_and_launch_your_first_job.html){.wiki-page}.
+directory](How_to_setup_your_directory_and_launch_your_first_job.html).
 
 Change to desired repository (e.g sbndcode).\
 

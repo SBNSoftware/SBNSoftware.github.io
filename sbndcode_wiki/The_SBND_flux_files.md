@@ -3,9 +3,9 @@ lang: en
 title: The SBND flux files
 ---
 
-[]{#The-SBND-flux-files}
+{#The-SBND-flux-files}
 
-The SBND flux files[¶](#The-SBND-flux-files){.wiki-anchor}
+The SBND flux files(#The-SBND-flux-files)
 ==========================================================
 
 -   **Table of contents**
@@ -25,9 +25,9 @@ The SBND flux files[¶](#The-SBND-flux-files){.wiki-anchor}
         -   [ConfigF-v1](#ConfigF-v1)
         -   [ConfigG-v1](#ConfigG-v1)
 
-[]{#Neutrino-flux}
+{#Neutrino-flux}
 
-Neutrino flux[¶](#Neutrino-flux){.wiki-anchor}
+Neutrino flux(#Neutrino-flux)
 ----------------------------------------------
 
 While flux has a [specific meaning in general
@@ -38,9 +38,9 @@ does also get used in a more literal sense to describe the number of
 neutrinos passing through a unit area, particularly relevant when
 measuring a cross-section.
 
-[]{#The-SBND-flux-files-2}
+{#The-SBND-flux-files-2}
 
-The SBND flux files[¶](#The-SBND-flux-files-2){.wiki-anchor}
+The SBND flux files(#The-SBND-flux-files-2)
 ------------------------------------------------------------
 
 In a nutshell, each flux file contains a tree where each entry describes
@@ -54,9 +54,9 @@ the flux files used to be generated and how they are generated now can
 be found in [docdb
 5672](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=5672){.external}
 
-[]{#Where-to-find-the-flux-files-and-beam-configurations}
+{#Where-to-find-the-flux-files-and-beam-configurations}
 
-Where to find the flux files and beam configurations[¶](#Where-to-find-the-flux-files-and-beam-configurations){.wiki-anchor}
+Where to find the flux files and beam configurations(#Where-to-find-the-flux-files-and-beam-configurations)
 ----------------------------------------------------------------------------------------------------------------------------
 
 All of the flux files live on dcache as the files need to be readily
@@ -98,9 +98,9 @@ files.
 **The recommended flux files are the BooNEToGSimple files. At time of
 writing, the corresponding configurations are ConfigF-v1, ConfigG-v1**
 
-[]{#A-note-about-pre-FG-configurations}
+{#A-note-about-pre-FG-configurations}
 
-A note about pre F/G configurations[¶](#A-note-about-pre-FG-configurations){.wiki-anchor}
+A note about pre F/G configurations(#A-note-about-pre-FG-configurations)
 -----------------------------------------------------------------------------------------
 
 The beam centre is in the incorrect place along the X-axis for all
@@ -108,14 +108,14 @@ configuration prior to F/G; it is shifted too far along the +ve x-axis
 (1.3m rather than 0.457m). 1.3m is actually the beam\'s x-centre in the
 uboone coordinate system.
 
-[]{#Beam-configurations}
+{#Beam-configurations}
 
-Beam configurations[¶](#Beam-configurations){.wiki-anchor}
+Beam configurations(#Beam-configurations)
 ----------------------------------------------------------
 
-[]{#ConfigA-100m-v1}
+{#ConfigA-100m-v1}
 
-### ConfigA-100m-v1[¶](#ConfigA-100m-v1){.wiki-anchor}
+### ConfigA-100m-v1(#ConfigA-100m-v1)
 
 The baseline length (target to SBND TPC distance) for this configuration
 is 100 m. Additionally, the beam\'s axis is offset to the SBND origin
@@ -127,16 +127,16 @@ beam\'s axis cuts through the exact centre of the flux window.
 Additionally, the flux window is placed 10 m upstream of the SBND TPC
 front face.
 
-[]{#ConfigB-v1}
+{#ConfigB-v1}
 
-### ConfigB-v1[¶](#ConfigB-v1){.wiki-anchor}
+### ConfigB-v1(#ConfigB-v1)
 
 This configuration copies the settings from ConfigA-100m-v1 but uses a
 110 m baseline.
 
-[]{#ConfigC-v1}
+{#ConfigC-v1}
 
-### ConfigC-v1[¶](#ConfigC-v1){.wiki-anchor}
+### ConfigC-v1(#ConfigC-v1)
 
 This configuration copies the settings from ConfigB-v1 but uses a very
 very large flux window (80 m x 80 m) flux window pressed up against the
@@ -149,34 +149,34 @@ it\'s better to leave the flux window in some well known location and
 then have whatever generator you are using decide how far upstream the
 flux rays actually start.
 
-[]{#ConfigD-v1}
+{#ConfigD-v1}
 
-### ConfigD-v1[¶](#ConfigD-v1){.wiki-anchor}
+### ConfigD-v1(#ConfigD-v1)
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigB-v1. A new config has been used due to a newer
 flux generation method.
 
-[]{#ConfigE-v1}
+{#ConfigE-v1}
 
-### ConfigE-v1[¶](#ConfigE-v1){.wiki-anchor}
+### ConfigE-v1(#ConfigE-v1)
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigC-v1. A new config has been used due to a newer
 flux generation method.
 
-[]{#ConfigF-v1}
+{#ConfigF-v1}
 
-### ConfigF-v1[¶](#ConfigF-v1){.wiki-anchor}
+### ConfigF-v1(#ConfigF-v1)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings
 (the X,Y beam centre is now at (0.457, 0) rather than (1.3,0)), but
 otherwise uses an identical window setup to ConfigD-v1.
 
-[]{#ConfigG-v1}
+{#ConfigG-v1}
 
-### ConfigG-v1[¶](#ConfigG-v1){.wiki-anchor}
+### ConfigG-v1(#ConfigG-v1)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings

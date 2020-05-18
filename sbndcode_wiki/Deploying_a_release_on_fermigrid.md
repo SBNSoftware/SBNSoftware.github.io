@@ -3,14 +3,14 @@ lang: en
 title: Deploying a release on fermigrid
 ---
 
-[]{#Deploying-a-release-on-fermigrid}
+{#Deploying-a-release-on-fermigrid}
 
-Deploying a release on fermigrid[¶](#Deploying-a-release-on-fermigrid){.wiki-anchor}
+Deploying a release on fermigrid(#Deploying-a-release-on-fermigrid)
 ====================================================================================
 
-[]{#Legacy}
+{#Legacy}
 
-Legacy[¶](#Legacy){.wiki-anchor}
+Legacy(#Legacy)
 --------------------------------
 
 -   We no longer deploy `sbndcode` and `sbndutil` on `/grid/fermiapp`.
@@ -20,9 +20,9 @@ Legacy[¶](#Legacy){.wiki-anchor}
 -   Currently still used as a staging area for `sbnd_data` but this will
     have to change if it disappears.
 
-[]{#Old-instructions}
+{#Old-instructions}
 
-Old instructions[¶](#Old-instructions){.wiki-anchor}
+Old instructions(#Old-instructions)
 ----------------------------------------------------
 
 -   The method requires the script pullProducts from

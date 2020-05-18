@@ -3,9 +3,9 @@ lang: en
 title: SBND dCache storage
 ---
 
-[]{#SBND-dCache-storage}
+{#SBND-dCache-storage}
 
-SBND dCache storage[¶](#SBND-dCache-storage){.wiki-anchor}
+SBND dCache storage(#SBND-dCache-storage)
 ==========================================================
 
 -   **Table of contents**
@@ -35,29 +35,29 @@ We have a limited quota of space as well, so fill it responsibly.
 ([check the persistent space
 monitoring\...](https://fifemon.fnal.gov/monitor/dashboard/db/dcache-persistent-usage-by-vo?orgId=1&var-VO=sbnd){.external})\
 More details are in [FIFE
-wiki](Understanding_storage_volumes.html){.wiki-page}.
+wiki](Understanding_storage_volumes.html).
 
-[]{#Remote-access-to-dCache-areas}
+{#Remote-access-to-dCache-areas}
 
-Remote access to dCache areas[¶](#Remote-access-to-dCache-areas){.wiki-anchor}
+Remote access to dCache areas(#Remote-access-to-dCache-areas)
 ------------------------------------------------------------------------------
 
 While dCache areas may happen to be available on some local nodes (e.g.,
 [SBND
-GPVM\'s](Computing_resources.html#Where-to-work-interactive-nodes-GPVM){.wiki-page}),
+GPVM\'s](Computing_resources.html#Where-to-work-interactive-nodes-GPVM)),
 in general the area is not directly reachable.\
-We use a tool called [IFDH](.html){.wiki-page} to fetch files from
+We use a tool called [IFDH](.html) to fetch files from
 wherever they are. Also some code uses IFDH to fetch files: among them,
 LArSoft modules `CORSIKAGen` and `GENIEGen`.
 
 IFDH sometimes requires the user to be *authenticated*, which is usually
 achieved by a certificate.\
-This is the [same procedure](Get_a_certificate_proxy.html){.wiki-page}
+This is the [same procedure](Get_a_certificate_proxy.html)
 as for getting credentials to submit jobs.
 
-[]{#Use-XRootD-to-access-dCache-ROOT-files}
+{#Use-XRootD-to-access-dCache-ROOT-files}
 
-### Use XRootD to access dCache ROOT files[¶](#Use-XRootD-to-access-dCache-ROOT-files){.wiki-anchor}
+### Use XRootD to access dCache ROOT files(#Use-XRootD-to-access-dCache-ROOT-files)
 
 Even where `/pnfs` directory structure is actually visible, it is
 usually a bad idea to access ROOT files from there directly. A better

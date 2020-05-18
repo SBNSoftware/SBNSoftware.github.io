@@ -3,14 +3,14 @@ lang: en
 title: MCC 1p0
 ---
 
-[]{#MCC-1p0}
+{#MCC-1p0}
 
-MCC 1p0[¶](#MCC-1p0){.wiki-anchor}
+MCC 1p0(#MCC-1p0)
 ==================================
 
-[]{#Samples}
+{#Samples}
 
-Samples[¶](#Samples){.wiki-anchor} {#samples .count}
+Samples(#Samples) {#samples .count}
 ----------------------------------
 
   ------------------------------------------------------------------------------------ -----------------

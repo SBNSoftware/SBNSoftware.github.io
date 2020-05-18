@@ -4,12 +4,12 @@ title: ReleaseNotes067401
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.74.01   04/20/2018         [Release Notes](ReleaseNotes067401.html){.wiki-page}
+  v06.74.01   04/20/2018         [Release Notes](ReleaseNotes067401.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_74_01-Release-Notes}
+{#sbndcode-v06_74_01-Release-Notes}
 
-sbndcode v06\_74\_01 Release Notes[¶](#sbndcode-v06_74_01-Release-Notes){.wiki-anchor}
+sbndcode v06\_74\_01 Release Notes(#sbndcode-v06_74_01-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,49 +24,49 @@ sbndcode v06\_74\_01 Release Notes[¶](#sbndcode-v06_74_01-Release-Notes){.wiki-
     -   [sbndutil v01\_50\_01](#sbndutil-v01_50_01)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_74\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_74_01/sbndcode-v06_74_01.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   Default version should now work for OSX 10.12 (Sierra)
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   [\#18001](/redmine/issues/18001 "Bug: lar::ProviderPack should accept objects of classes derived from the required ones (Closed)"){.issue
     .tracker-1 .status-5 .priority-4 .priority-default .closed}
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v06.74.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067401){.external}
 -   larbatch v01.39.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_74_01}
+{#sbndcode-v06_74_01}
 
-sbndcode v06\_74\_01[¶](#sbndcode-v06_74_01){.wiki-anchor}
+sbndcode v06\_74\_01(#sbndcode-v06_74_01)
 ----------------------------------------------------------
 
 -   2018-04-20 Thomas Brooks : Merge branch \'release/v06\_74\_01\'
@@ -79,9 +79,9 @@ sbndcode v06\_74\_01[¶](#sbndcode-v06_74_01){.wiki-anchor}
     [\#18001](/redmine/issues/18001 "Bug: lar::ProviderPack should accept objects of classes derived from the required ones (Closed)"){.issue
     .tracker-1 .status-5 .priority-4 .priority-default .closed}.
 
-[]{#sbndutil-v01_50_01}
+{#sbndutil-v01_50_01}
 
-sbndutil v01\_50\_01[¶](#sbndutil-v01_50_01){.wiki-anchor}
+sbndutil v01\_50\_01(#sbndutil-v01_50_01)
 ----------------------------------------------------------
 
 -   2018-04-20 Thomas Brooks : Merge branch \'release/v01\_50\_01\'

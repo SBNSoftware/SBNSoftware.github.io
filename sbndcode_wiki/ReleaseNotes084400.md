@@ -4,12 +4,12 @@ title: ReleaseNotes084400
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.44.00   03/02/2020         [Release Notes](ReleaseNotes084400.html){.wiki-page}
+  v08.44.00   03/02/2020         [Release Notes](ReleaseNotes084400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_44_00-Release-Notes}
+{#sbndcode-v08_44_00-Release-Notes}
 
-sbndcode v08\_44\_00 Release Notes[¶](#sbndcode-v08_44_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_44\_00 Release Notes(#sbndcode-v08_44_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,20 +24,20 @@ sbndcode v08\_44\_00 Release Notes[¶](#sbndcode-v08_44_00-Release-Notes){.wiki-
     -   [sbndutil v08\_44\_00](#sbndutil-v08_44_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_44\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_44_00/sbndcode-v08_44_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   sbndutil scripts now compatible with python 3.
@@ -45,28 +45,28 @@ New features[¶](#New-features){.wiki-anchor}
 -   Pandora slice ID added to cosmic ID tools.
 -   Changes to make geometry service thread safe.
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.44.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084400){.external}
 -   larbatch v01.52.02
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_44_00}
+{#sbndcode-v08_44_00}
 
-sbndcode v08\_44\_00[¶](#sbndcode-v08_44_00){.wiki-anchor}
+sbndcode v08\_44\_00(#sbndcode-v08_44_00)
 ----------------------------------------------------------
 
 -   2020-03-02 Thomas Brooks : Merge branch \'release/v08\_44\_00\'
@@ -250,9 +250,9 @@ sbndcode v08\_44\_00[¶](#sbndcode-v08_44_00){.wiki-anchor}
 -   2019-11-19 Iker de Icaza Astiz : Add some features to be able to run
     Icarus files, *shouldn\'t* break anything with SBND
 
-[]{#sbndutil-v08_44_00}
+{#sbndutil-v08_44_00}
 
-sbndutil v08\_44\_00[¶](#sbndutil-v08_44_00){.wiki-anchor}
+sbndutil v08\_44\_00(#sbndutil-v08_44_00)
 ----------------------------------------------------------
 
 -   2020-03-02 Thomas Brooks : Merge branch \'release/v08\_44\_00\'

@@ -3,14 +3,14 @@ lang: en
 title: Checking your Grid Status
 ---
 
-[]{#Checking-your-Grid-Status}
+{#Checking-your-Grid-Status}
 
-Checking your Grid Status[¶](#Checking-your-Grid-Status){.wiki-anchor}
+Checking your Grid Status(#Checking-your-Grid-Status)
 ======================================================================
 
-[]{#Fifemon-GrafanaKibana}
+{#Fifemon-GrafanaKibana}
 
-Fifemon: Grafana/Kibana[¶](#Fifemon-GrafanaKibana){.wiki-anchor}
+Fifemon: Grafana/Kibana(#Fifemon-GrafanaKibana)
 ----------------------------------------------------------------
 
 -   [Fifemon](https://fifemon.fnal.gov/){.external} provides you with
@@ -18,7 +18,7 @@ Fifemon: Grafana/Kibana[¶](#Fifemon-GrafanaKibana){.wiki-anchor}
     why your jobs are being held. You need to enter your SERVICE
     password to access it.
 
-![](/redmine/attachments/download/59580/fife.png)
+!(/redmine/attachments/download/59580/fife.png)
 
 -   I find Grafana and User batch details the most useful you can access
     by clicking on the graph ana button indicated
@@ -27,12 +27,12 @@ Fifemon: Grafana/Kibana[¶](#Fifemon-GrafanaKibana){.wiki-anchor}
     is lists, efficiency details and loads of information so just freely
     click around for the info.
 
-![](/redmine/attachments/download/59581/graf.png)
+!(/redmine/attachments/download/59581/graf.png)
 
 -   Kibana gives you specific information such as job locations. You can
     open specific cluster up from graphana and open Kibana for it.
 
-![](/redmine/attachments/download/59583/kib.png)
+!(/redmine/attachments/download/59583/kib.png)
 
 -   \"Jobsub\"=https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Frequently\_Asked\_Questions
     helps you get information from a local command line e.g. gpvms. One
@@ -43,7 +43,7 @@ Fifemon: Grafana/Kibana[¶](#Fifemon-GrafanaKibana){.wiki-anchor}
 ```
     jobsub_q --user=yourname 
 
-![](/redmine/attachments/download/59582/jobsub_q.png)
+!(/redmine/attachments/download/59582/jobsub_q.png)
 
 which list the jobs you have currently running. Sometimes you have
 realised you jobs are incorrect and you might remove them here is a few

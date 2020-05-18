@@ -3,14 +3,14 @@ lang: en
 title: Deploying a release on CVMFS
 ---
 
-[]{#Deploying-a-release-on-CVMFS}
+{#Deploying-a-release-on-CVMFS}
 
-Deploying a release on CVMFS[¶](#Deploying-a-release-on-CVMFS){.wiki-anchor}
+Deploying a release on CVMFS(#Deploying-a-release-on-CVMFS)
 ============================================================================
 
-[]{#Summary}
+{#Summary}
 
-Summary[¶](#Summary){.wiki-anchor}
+Summary(#Summary)
 ----------------------------------
 
 -   Log on to the cvmfs server.
@@ -18,9 +18,9 @@ Summary[¶](#Summary){.wiki-anchor}
 -   Add the new versions of `sbndcode` and `sbndutil`.
 -   Finish the transaction.
 
-[]{#Instructions}
+{#Instructions}
 
-Instructions[¶](#Instructions){.wiki-anchor}
+Instructions(#Instructions)
 --------------------------------------------
 
 -   Log on to the cvmfs server\
@@ -68,9 +68,9 @@ Instructions[¶](#Instructions){.wiki-anchor}
     the repository read/write or read only. You should not cd to any
     location in the repository when you\'re inside a transaction.
 
-[]{#sbnd_data}
+{#sbnd_data}
 
-sbnd\_data[¶](#sbnd_data){.wiki-anchor}
+sbnd\_data(#sbnd_data)
 ---------------------------------------
 
 -   If you want to update sbnd\_data without changing the version number
@@ -79,9 +79,9 @@ sbnd\_data[¶](#sbnd_data){.wiki-anchor}
 
         rsync -r < user >@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/< version >* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
 
-[]{#Details-install_on_cvmfssh}
+{#Details-install_on_cvmfssh}
 
-Details: install\_on\_cvmfs.sh[¶](#Details-install_on_cvmfssh){.wiki-anchor}
+Details: install\_on\_cvmfs.sh(#Details-install_on_cvmfssh)
 ----------------------------------------------------------------------------
 
 -   A modified version of the script used to deploy on `/grid/fermiapp/`

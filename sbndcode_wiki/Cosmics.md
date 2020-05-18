@@ -3,14 +3,14 @@ lang: en
 title: Cosmics
 ---
 
-[]{#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies}
+{#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies}
 
-Cosmic-ray generation (under-development, but good enough for preliminary studies)[¶](#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies){.wiki-anchor}
+Cosmic-ray generation (under-development, but good enough for preliminary studies)(#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies)
 =====================================================================================================================================================================================
 
-[]{#How-to-generate-cosmic-events}
+{#How-to-generate-cosmic-events}
 
-How to generate cosmic events[¶](#How-to-generate-cosmic-events){.wiki-anchor} {#how-to-generate-cosmic-events .count}
+How to generate cosmic events(#How-to-generate-cosmic-events) {#how-to-generate-cosmic-events .count}
 ------------------------------------------------------------------------------
 
 100 events in the examples:
@@ -34,7 +34,7 @@ How to generate cosmic events[¶](#How-to-generate-cosmic-events){.wiki-anchor} 
     `prodcosmics_corsika_sbnd_CosmicsGen-YearMoDaThhmmss.root` *art*
     ROOT output file (and a similarly-named histogram files with suffix
     `_hists.root`). It will need access to dCache (and, likely, a
-    [certificate proxy](Get_a_certificate_proxy.html){.wiki-page}).
+    [certificate proxy](Get_a_certificate_proxy.html)).
 
 ```{=html}
 <!-- -->
@@ -47,9 +47,9 @@ How to generate cosmic events[¶](#How-to-generate-cosmic-events){.wiki-anchor} 
   CORSIKA Generation file   `prodcosmics_corsika_sbnd.fcl`
   ------------------------- --------------------------------
 
-[]{#Cry-parameters}
+{#Cry-parameters}
 
-### Cry parameters[¶](#Cry-parameters){.wiki-anchor} {#cry-parameters .count}
+### Cry parameters(#Cry-parameters) {#cry-parameters .count}
 
 Full module configuration is in `cry_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by
@@ -70,9 +70,9 @@ precision on the rate you need. However, due to the fact that CRY is
 already know to produce significantly lower rates, this should be
 negligible (to confirm with studies?).
 
-[]{#CORSIKA-parameters}
+{#CORSIKA-parameters}
 
-### CORSIKA parameters[¶](#CORSIKA-parameters){.wiki-anchor} {#corsika-parameters .count}
+### CORSIKA parameters(#CORSIKA-parameters) {#corsika-parameters .count}
 
 Full module configuration is in `corsika_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by

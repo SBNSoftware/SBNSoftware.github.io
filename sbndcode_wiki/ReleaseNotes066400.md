@@ -4,12 +4,12 @@ title: ReleaseNotes066400
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v06.64.00   01/19/2018         [Release Notes](ReleaseNotes066400.html){.wiki-page}
+  v06.64.00   01/19/2018         [Release Notes](ReleaseNotes066400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v06_64_00-Release-Notes}
+{#sbndcode-v06_64_00-Release-Notes}
 
-sbndcode v06\_64\_00 Release Notes[¶](#sbndcode-v06_64_00-Release-Notes){.wiki-anchor}
+sbndcode v06\_64\_00 Release Notes(#sbndcode-v06_64_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -25,34 +25,34 @@ sbndcode v06\_64\_00 Release Notes[¶](#sbndcode-v06_64_00-Release-Notes){.wiki-
     -   [sbnd\_data v01\_01\_00](#sbnd_data-v01_01_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_64\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_64_00/sbndcode-v06_64_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   New geometry and optical library with full LDS (PMTs + light bars +
     ARAPUCAs)
     -   See SBN DocDB 4884
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -60,14 +60,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   larbatch v01.36.00
 -   sbnd\_data v01.01.00
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v06_64_00}
+{#sbndcode-v06_64_00}
 
-sbndcode v06\_64\_00[¶](#sbndcode-v06_64_00){.wiki-anchor}
+sbndcode v06\_64\_00(#sbndcode-v06_64_00)
 ----------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Merge branch \'release/v06\_64\_00\'
@@ -76,9 +76,9 @@ sbndcode v06\_64\_00[¶](#sbndcode-v06_64_00){.wiki-anchor}
     full LDS
 -   2018-01-12 Thomas Brooks : Merge tag \'v06\_63\_00\' into develop
 
-[]{#sbndutil-v01_40_00}
+{#sbndutil-v01_40_00}
 
-sbndutil v01\_40\_00[¶](#sbndutil-v01_40_00){.wiki-anchor}
+sbndutil v01\_40\_00(#sbndutil-v01_40_00)
 ----------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Merge branch \'release/v01\_40\_00\'
@@ -87,9 +87,9 @@ sbndutil v01\_40\_00[¶](#sbndutil-v01_40_00){.wiki-anchor}
     Whoops.
 -   2018-01-12 Thomas Brooks : Merge tag \'v01\_39\_00\' into develop
 
-[]{#sbnd_data-v01_01_00}
+{#sbnd_data-v01_01_00}
 
-sbnd\_data v01\_01\_00[¶](#sbnd_data-v01_01_00){.wiki-anchor}
+sbnd\_data v01\_01\_00(#sbnd_data-v01_01_00)
 -------------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Added new optical library from Diego

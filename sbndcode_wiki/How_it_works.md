@@ -3,9 +3,9 @@ lang: en
 title: How it works
 ---
 
-[]{#How-it-works}
+{#How-it-works}
 
-How it works[¶](#How-it-works){.wiki-anchor}
+How it works(#How-it-works)
 ============================================
 
 The core of the process currently relies on

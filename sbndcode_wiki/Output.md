@@ -3,9 +3,9 @@ lang: en
 title: Output
 ---
 
-[]{#Output}
+{#Output}
 
-Output[¶](#Output){.wiki-anchor}
+Output(#Output)
 ================================
 
 All output for all stages of a given Monte Carlo production goes to the

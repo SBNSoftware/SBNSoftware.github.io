@@ -4,12 +4,12 @@ title: ReleaseNotes084100
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.41.00   01/27/2020         [Release Notes](ReleaseNotes084100.html){.wiki-page}
+  v08.41.00   01/27/2020         [Release Notes](ReleaseNotes084100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_41_00-Release-Notes}
+{#sbndcode-v08_41_00-Release-Notes}
 
-sbndcode v08\_41\_00 Release Notes[¶](#sbndcode-v08_41_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_41\_00 Release Notes(#sbndcode-v08_41_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,46 +24,46 @@ sbndcode v08\_41\_00 Release Notes[¶](#sbndcode-v08_41_00-Release-Notes){.wiki-
     -   [sbndutil v08\_41\_00](#sbndutil-v08_41_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_41\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_41_00/sbndcode-v08_41_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Update to art v03.04
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   The default e19 and c7 builds now use python 3. To use python 2,
     setup with e19:py2 or c7:py2.
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.41.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084100){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_41_00}
+{#sbndcode-v08_41_00}
 
-sbndcode v08\_41\_00[¶](#sbndcode-v08_41_00){.wiki-anchor}
+sbndcode v08\_41\_00(#sbndcode-v08_41_00)
 ----------------------------------------------------------
 
 -   2020-01-26 Thomas Brooks : Merge branch \'release/v08\_41\_00\'
@@ -114,9 +114,9 @@ sbndcode v08\_41\_00[¶](#sbndcode-v08_41_00){.wiki-anchor}
     in SBND StashCache area, this allows CI to run CI regression tests
     without requiring the proxy
 
-[]{#sbndutil-v08_41_00}
+{#sbndutil-v08_41_00}
 
-sbndutil v08\_41\_00[¶](#sbndutil-v08_41_00){.wiki-anchor}
+sbndutil v08\_41\_00(#sbndutil-v08_41_00)
 ----------------------------------------------------------
 
 -   2020-01-26 Thomas Brooks : Merge branch \'release/v08\_41\_00\'

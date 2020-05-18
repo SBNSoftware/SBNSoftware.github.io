@@ -3,9 +3,9 @@ lang: en
 title: SAM
 ---
 
-[]{#SAM-for-SBND}
+{#SAM-for-SBND}
 
-SAM for SBND[¶](#SAM-for-SBND){.wiki-anchor}
+SAM for SBND(#SAM-for-SBND)
 ============================================
 
 -   **Table of contents**
@@ -16,9 +16,9 @@ SAM for SBND[¶](#SAM-for-SBND){.wiki-anchor}
 This page collects information about the use, setting and administration
 of the SAM service for SBND.
 
-[]{#SAM-queries}
+{#SAM-queries}
 
-SAM queries[¶](#SAM-queries){.wiki-anchor}
+SAM queries(#SAM-queries)
 ------------------------------------------
 
 The SAM client is called `samweb`, distributed as UPS product, available
@@ -46,12 +46,12 @@ be no need to specify `--experiment=sbnd`. For example:\
       Unauthenticated
       Roles: None
 
-[]{#Administration}
+{#Administration}
 
-Administration[¶](#Administration){.wiki-anchor}
+Administration(#Administration)
 ------------------------------------------------
 
 An interface for listing users can be accessed at:
 <https://samweb.fnal.gov:8483/sam/sbnd/admin/users>. It requires
-[CILogon](Computing_resources.html#Accessing-resources-via-certificates){.wiki-page}
+[CILogon](Computing_resources.html#Accessing-resources-via-certificates)
 authentication.

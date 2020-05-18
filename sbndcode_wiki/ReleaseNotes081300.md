@@ -4,12 +4,12 @@ title: ReleaseNotes081300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.13.00   03/15/2019         [Release Notes](ReleaseNotes081300.html){.wiki-page}
+  v08.13.00   03/15/2019         [Release Notes](ReleaseNotes081300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_13_00-Release-Notes}
+{#sbndcode-v08_13_00-Release-Notes}
 
-sbndcode v08\_13\_00 Release Notes[¶](#sbndcode-v08_13_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_13\_00 Release Notes(#sbndcode-v08_13_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,46 +24,46 @@ sbndcode v08\_13\_00 Release Notes[¶](#sbndcode-v08_13_00-Release-Notes){.wiki-
     -   [sbndutil v08\_13\_00](#sbndutil-v08_13_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_13\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00/sbndcode-v08_13_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   New geometry with updated PDS (not used as default yet)
 -   Addition of optical properties
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.13.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081300){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_13_00}
+{#sbndcode-v08_13_00}
 
-sbndcode v08\_13\_00[¶](#sbndcode-v08_13_00){.wiki-anchor}
+sbndcode v08\_13\_00(#sbndcode-v08_13_00)
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_13\_00\'
@@ -76,9 +76,9 @@ sbndcode v08\_13\_00[¶](#sbndcode-v08_13_00){.wiki-anchor}
 -   2019-02-18 Diego Gamez : adding geometry with updated PDS
 -   2019-02-16 Diego Gamez : adding optical properties to sbnd
 
-[]{#sbndutil-v08_13_00}
+{#sbndutil-v08_13_00}
 
-sbndutil v08\_13\_00[¶](#sbndutil-v08_13_00){.wiki-anchor}
+sbndutil v08\_13\_00(#sbndutil-v08_13_00)
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_13\_00\'

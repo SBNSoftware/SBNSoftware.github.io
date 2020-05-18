@@ -4,12 +4,12 @@ title: ReleaseNotes085100
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.51.00   05/11/2020         [Release Notes](ReleaseNotes085100.html){.wiki-page}
+  v08.51.00   05/11/2020         [Release Notes](ReleaseNotes085100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v08_51_00-Release-Notes}
+{#sbndcode-v08_51_00-Release-Notes}
 
-sbndcode v08\_51\_00 Release Notes[¶](#sbndcode-v08_51_00-Release-Notes){.wiki-anchor}
+sbndcode v08\_51\_00 Release Notes(#sbndcode-v08_51_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,30 +24,30 @@ sbndcode v08\_51\_00 Release Notes[¶](#sbndcode-v08_51_00-Release-Notes){.wiki-
     -   [sbndutil v08\_51\_00](#sbndutil-v08_51_00)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_51\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_51_00/sbndcode-v08_51_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -57,14 +57,14 @@ Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
 -   larcoreobj PR 3
 -   larg4 PR 9
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v08_51_00}
+{#sbndcode-v08_51_00}
 
-sbndcode v08\_51\_00[¶](#sbndcode-v08_51_00){.wiki-anchor}
+sbndcode v08\_51\_00(#sbndcode-v08_51_00)
 ----------------------------------------------------------
 
 -   2020-05-11 Andrew Scarff : Merge branch \'release/v08\_51\_00\'
@@ -80,9 +80,9 @@ sbndcode v08\_51\_00[¶](#sbndcode-v08_51_00){.wiki-anchor}
 -   2019-10-03 Michelle Stancari : adding trigger filter module
 -   2019-10-03 Michelle Stancari : adding filter module
 
-[]{#sbndutil-v08_51_00}
+{#sbndutil-v08_51_00}
 
-sbndutil v08\_51\_00[¶](#sbndutil-v08_51_00){.wiki-anchor}
+sbndutil v08\_51\_00(#sbndutil-v08_51_00)
 ----------------------------------------------------------
 
 -   2020-05-11 Andrew Scarff : Merge branch \'release/v08\_51\_00\'

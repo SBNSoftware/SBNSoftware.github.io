@@ -4,11 +4,11 @@ title: Setting up Fermilab VPN
 ---
 
 > This information has been merged into [another
-> page](VPN.html){.wiki-page} and can be safely deleted.
+> page](VPN.html) and can be safely deleted.
 
-[]{#Setting-up-Fermilab-VPN}
+{#Setting-up-Fermilab-VPN}
 
-Setting up Fermilab VPN[¶](#Setting-up-Fermilab-VPN){.wiki-anchor}
+Setting up Fermilab VPN(#Setting-up-Fermilab-VPN)
 ==================================================================
 
 -   **Table of contents**

@@ -4,12 +4,12 @@ title: ReleaseNotes0707002MCP09
 ---
 
   -------------------- ------------ -- -- ------------------------------------------------------------
-  v07.07.00.2.MCP0.9   10/10/2018         [Release Notes](ReleaseNotes0707002MCP09.html){.wiki-page}
+  v07.07.00.2.MCP0.9   10/10/2018         [Release Notes](ReleaseNotes0707002MCP09.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-[]{#sbndcode-v07_07_00_2_MCP0_9-Release-Notes}
+{#sbndcode-v07_07_00_2_MCP0_9-Release-Notes}
 
-sbndcode v07\_07\_00\_2\_MCP0\_9 Release Notes[¶](#sbndcode-v07_07_00_2_MCP0_9-Release-Notes){.wiki-anchor}
+sbndcode v07\_07\_00\_2\_MCP0\_9 Release Notes(#sbndcode-v07_07_00_2_MCP0_9-Release-Notes)
 ===========================================================================================================
 
 -   **Table of contents**
@@ -24,43 +24,43 @@ sbndcode v07\_07\_00\_2\_MCP0\_9 Release Notes[¶](#sbndcode-v07_07_00_2_MCP0_9-
     -   [sbndutil v07\_07\_00\_2\_MCP0\_9](#sbndutil-v07_07_00_2_MCP0_9)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_07\_00\_2\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_2_MCP0_9/sbndcode-v07_07_00_2_MCP0_9.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 0.9 (v2)
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   Seg fault in Anatree
 -   Fix a few minor issues with CRT simulation
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v07_07_00_2_MCP0_9}
+{#sbndcode-v07_07_00_2_MCP0_9}
 
-sbndcode v07\_07\_00\_2\_MCP0\_9[¶](#sbndcode-v07_07_00_2_MCP0_9){.wiki-anchor}
+sbndcode v07\_07\_00\_2\_MCP0\_9(#sbndcode-v07_07_00_2_MCP0_9)
 -------------------------------------------------------------------------------
 
 -   2018-10-10 Thomas Brooks : Merge branch
@@ -82,9 +82,9 @@ sbndcode v07\_07\_00\_2\_MCP0\_9[¶](#sbndcode-v07_07_00_2_MCP0_9){.wiki-anchor}
 -   2018-10-08 Thomas Brooks : Merge tag \'v07\_07\_00\_1\_MCP0\_9\'
     into develop
 
-[]{#sbndutil-v07_07_00_2_MCP0_9}
+{#sbndutil-v07_07_00_2_MCP0_9}
 
-sbndutil v07\_07\_00\_2\_MCP0\_9[¶](#sbndutil-v07_07_00_2_MCP0_9){.wiki-anchor}
+sbndutil v07\_07\_00\_2\_MCP0\_9(#sbndutil-v07_07_00_2_MCP0_9)
 -------------------------------------------------------------------------------
 
 -   2018-10-10 Thomas Brooks : Merge branch

@@ -4,12 +4,12 @@ title: ReleaseNotes070000
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v07.00.00   08/02/2018         [Release Notes](ReleaseNotes070000.html){.wiki-page}
+  v07.00.00   08/02/2018         [Release Notes](ReleaseNotes070000.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#sbndcode-v07_00_00-Release-Notes}
+{#sbndcode-v07_00_00-Release-Notes}
 
-sbndcode v07\_00\_00 Release Notes[¶](#sbndcode-v07_00_00-Release-Notes){.wiki-anchor}
+sbndcode v07\_00\_00 Release Notes(#sbndcode-v07_00_00-Release-Notes)
 ======================================================================================
 
 -   **Table of contents**
@@ -24,56 +24,56 @@ sbndcode v07\_00\_00 Release Notes[¶](#sbndcode-v07_00_00-Release-Notes){.wiki-
     -   [sbndutil v07\_00\_01](#sbndutil-v07_00_01)
 
 [list of sbndcode
-releases](List_of_SBND_code_releases.html){.wiki-page}\
+releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_00\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_00_00/sbndcode-v07_00_00.html){.external}
 
-[]{#Purpose}
+{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+Purpose(#Purpose)
 ----------------------------------
 
 -   New larg4 available (but not used in sbndcode)
     -   For instructions see the [migration
         notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArG4_Migration_Notes){.external}
 
-[]{#New-features}
+{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+New features(#New-features)
 --------------------------------------------
 
 -   sbndcode and sbndutil now have the same version number
 
-[]{#Bug-fixes}
+{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
+{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v07.00.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070000){.external}
 
-[]{#Change-List}
+{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+Change List(#Change-List)
 ==========================================
 
-[]{#sbndcode-v07_00_00}
+{#sbndcode-v07_00_00}
 
-sbndcode v07\_00\_00[¶](#sbndcode-v07_00_00){.wiki-anchor}
+sbndcode v07\_00\_00(#sbndcode-v07_00_00)
 ----------------------------------------------------------
 
 -   2018-08-01 Thomas Brooks : Merge branch \'release/v07\_00\_00\'
 -   2018-08-01 Thomas Brooks : Update to larsoft v07\_00\_00
 -   2018-07-31 Thomas Brooks : Merge tag \'v06\_85\_00\' into develop
 
-[]{#sbndutil-v07_00_01}
+{#sbndutil-v07_00_01}
 
-sbndutil v07\_00\_01[¶](#sbndutil-v07_00_01){.wiki-anchor}
+sbndutil v07\_00\_01(#sbndutil-v07_00_01)
 ----------------------------------------------------------
 
 -   2018-08-01 Thomas Brooks : Merge branch \'release/v07\_00\_00\'
