@@ -7,7 +7,7 @@ title: ReleaseNotes083500
   v08.35.00   11/08/2019         [Release Notes](ReleaseNotes083500.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_35_00-Release-Notes}
+
 
 sbndcode v08\_35\_00 Release Notes(#sbndcode-v08_35_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_35\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_35_00/sbndcode-v08_35_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release (reco broken)
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -52,12 +52,12 @@ New features(#New-features)
     -   Trained BDTs for vertex selection in Pandora
     -   Module for flash matching added
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -66,12 +66,12 @@ Updated dependencies(#Updated-dependencies)
     v08.35.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083500){.external}
 -   larbatch v01.51.10
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_35_00}
+
 
 sbndcode v08\_35\_00(#sbndcode-v08_35_00)
 ----------------------------------------------------------
@@ -335,7 +335,7 @@ sbndcode v08\_35\_00(#sbndcode-v08_35_00)
 -   2019-06-19 gputnam : first draft of fhicl for proton corsika mode, 3
     readout windows, filter out-of-time events
 
-{#sbndutil-v08_35_00}
+
 
 sbndutil v08\_35\_00(#sbndutil-v08_35_00)
 ----------------------------------------------------------

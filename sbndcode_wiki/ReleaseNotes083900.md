@@ -7,7 +7,7 @@ title: ReleaseNotes083900
   v08.39.00   01/09/2020         [Release Notes](ReleaseNotes083900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_39_00-Release-Notes}
+
 
 sbndcode v08\_39\_00 Release Notes(#sbndcode-v08_39_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_39\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_39_00/sbndcode-v08_39_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly released
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
     gallery
 -   Small CRT API changes
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.39.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083900){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_39_00}
+
 
 sbndcode v08\_39\_00(#sbndcode-v08_39_00)
 ----------------------------------------------------------
@@ -94,7 +94,7 @@ sbndcode v08\_39\_00(#sbndcode-v08_39_00)
 -   2019-11-18 gputnam : Allow for timing information to come from t0 or
     t1 and apply a timing correction.
 
-{#sbndutil-v08_39_00}
+
 
 sbndutil v08\_39\_00(#sbndutil-v08_39_00)
 ----------------------------------------------------------

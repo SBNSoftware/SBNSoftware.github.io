@@ -3,7 +3,7 @@ lang: en
 title: TITUS Event Display
 ---
 
-{#TITUS-Event-Display}
+
 
 TITUS Event Display(#TITUS-Event-Display)
 ==========================================================
@@ -12,7 +12,7 @@ TITUS is python-based event displays for many of the neutrino
 experiments at Fermilab. It is currently used by MicroBooNE, SBND and
 ICARUS.
 
-{#How-to-Use-the-Pre-built-Copy-of-TITUS-on-the-SBND-gpvms}
+
 
 How to Use the Pre-built Copy of TITUS on the SBND gpvms(#How-to-Use-the-Pre-built-Copy-of-TITUS-on-the-SBND-gpvms)
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ Log in to any SBND gpvm machine that use SL7. Then:\
 \
 That\'s it!
 
-{#How-to-Run-the-Event-Display}
+
 
 How to Run the Event Display(#How-to-Run-the-Event-Display)
 ----------------------------------------------------------------------------
@@ -40,7 +40,7 @@ You can use this file as an example:\
 
     evd.py -s3 /sbnd/data/users/mdeltutt/titus_evd_files/prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc_flashreco.root
 
-{#How-to-Use-the-Event-Display}
+
 
 How to Use the Event Display(#How-to-Use-the-Event-Display)
 ----------------------------------------------------------------------------
@@ -48,7 +48,7 @@ How to Use the Event Display(#How-to-Use-the-Event-Display)
 A demo is available here:
 <https://cdcvs.fnal.gov/redmine/attachments/58762/titus_demo_tpc.mov>
 
-{#How-to-Build-and-Install-your-Copy-of-TITUS}
+
 
 How to Build and Install your Copy of TITUS(#How-to-Build-and-Install-your-Copy-of-TITUS)
 ----------------------------------------------------------------------------------------------------------

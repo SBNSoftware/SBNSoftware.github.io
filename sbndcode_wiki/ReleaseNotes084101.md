@@ -7,7 +7,7 @@ title: ReleaseNotes084101
   v08.41.01   02/12/2020         [Release Notes](ReleaseNotes084101.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_41_01-Release-Notes}
+
 
 sbndcode v08\_41\_01 Release Notes(#sbndcode-v08_41_01-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_41\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_41_01/sbndcode-v08_41_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -53,12 +53,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.41.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084101){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_41_01}
+
 
 sbndcode v08\_41\_01(#sbndcode-v08_41_01)
 ----------------------------------------------------------
@@ -85,7 +85,7 @@ sbndcode v08\_41\_01(#sbndcode-v08_41_01)
 -   2019-12-10 gputnam : First draft of parallelizing optical detsim.
     Print outs / time measurements to be cleaned up.
 
-{#sbndutil-v08_41_01}
+
 
 sbndutil v08\_41\_01(#sbndutil-v08_41_01)
 ----------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes080600
   v08.06.00   01/24/2019         [Release Notes](ReleaseNotes080600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_06_00-Release-Notes}
+
 
 sbndcode v08\_06\_00 Release Notes(#sbndcode-v08_06_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_06\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_06_00/sbndcode-v08_06_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -53,12 +53,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.06.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080600){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_06_00}
+
 
 sbndcode v08\_06\_00(#sbndcode-v08_06_00)
 ----------------------------------------------------------
@@ -77,7 +77,7 @@ sbndcode v08\_06\_00(#sbndcode-v08_06_00)
     line
 -   2019-01-18 Thomas Brooks : Merge tag \'v08\_05\_00\' into develop
 
-{#sbndutil-v08_06_00}
+
 
 sbndutil v08\_06\_00(#sbndutil-v08_06_00)
 ----------------------------------------------------------

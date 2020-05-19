@@ -7,7 +7,7 @@ title: ReleaseNotes083801
   v08.38.01   12/23/2019         [Release Notes](ReleaseNotes083801.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_38_01-Release-Notes}
+
 
 sbndcode v08\_38\_01 Release Notes(#sbndcode-v08_38_01-Release-Notes)
 ======================================================================================
@@ -28,19 +28,19 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_38\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_38_01/sbndcode-v08_38_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -48,7 +48,7 @@ Bug fixes(#Bug-fixes)
 -   [\#23722](/redmine/issues/23722 "Bug: Optical hit finder segfaults when processing SBND MC (Resolved)"){.issue
     .tracker-1 .status-3 .priority-6 .priority-high2 .assigned-to-me}
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.38.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083801){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_38_01}
+
 
 sbndcode v08\_38\_01(#sbndcode-v08_38_01)
 ----------------------------------------------------------
@@ -101,7 +101,7 @@ sbndcode v08\_38\_01(#sbndcode-v08_38_01)
     feature/lp\_opflash
 -   2019-09-13 Laura Paulucci Marinho : Initial opFlashFinder for SBND
 
-{#sbndutil-v08_38_01}
+
 
 sbndutil v08\_38\_01(#sbndutil-v08_38_01)
 ----------------------------------------------------------

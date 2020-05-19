@@ -3,7 +3,7 @@ lang: en
 title: Code management and deployment stuff
 ---
 
-{#Code-management-and-deployment-stuff}
+
 
 Code management and deployment stuff(#Code-management-and-deployment-stuff)
 ============================================================================================
@@ -13,7 +13,7 @@ Code management and deployment stuff(#Code-management-and-deployment-stuff)
 -   [Release management
     workflow](Release_management_workflow.html)
 
-{#How-to-deploy-files-to}
+
 
 How to deploy files to\...(#How-to-deploy-files-to)
 --------------------------------------------------------------------

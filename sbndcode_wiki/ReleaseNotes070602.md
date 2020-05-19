@@ -7,7 +7,7 @@ title: ReleaseNotes070602
   v07.06.02   10/04/2018         [Release Notes](ReleaseNotes070602.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v07_06_02-Release-Notes}
+
 
 sbndcode v07\_06\_02 Release Notes(#sbndcode-v07_06_02-Release-Notes)
 ======================================================================================
@@ -28,26 +28,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_06\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_06_02/sbndcode-v07_06_02.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Space charge effect added by Arbin Timilsina (docdb 8823)
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -55,12 +55,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v07.06.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070602){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v07_06_02}
+
 
 sbndcode v07\_06\_02(#sbndcode-v07_06_02)
 ----------------------------------------------------------
@@ -104,7 +104,7 @@ sbndcode v07\_06\_02(#sbndcode-v07_06_02)
 -   2018-09-10 Arbin Timilsina : Initial commit for Space Charge
     Service- still need to implement few things
 
-{#sbndutil-v07_06_02}
+
 
 sbndutil v07\_06\_02(#sbndutil-v07_06_02)
 ----------------------------------------------------------

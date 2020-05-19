@@ -7,7 +7,7 @@ title: ReleaseNotes067401
   v06.74.01   04/20/2018         [Release Notes](ReleaseNotes067401.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_74_01-Release-Notes}
+
 
 sbndcode v06\_74\_01 Release Notes(#sbndcode-v06_74_01-Release-Notes)
 ======================================================================================
@@ -28,21 +28,21 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_74\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_74_01/sbndcode-v06_74_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Default version should now work for OSX 10.12 (Sierra)
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -50,7 +50,7 @@ Bug fixes(#Bug-fixes)
 -   [\#18001](/redmine/issues/18001 "Bug: lar::ProviderPack should accept objects of classes derived from the required ones (Closed)"){.issue
     .tracker-1 .status-5 .priority-4 .priority-default .closed}
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
     v06.74.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067401){.external}
 -   larbatch v01.39.00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_74_01}
+
 
 sbndcode v06\_74\_01(#sbndcode-v06_74_01)
 ----------------------------------------------------------
@@ -79,7 +79,7 @@ sbndcode v06\_74\_01(#sbndcode-v06_74_01)
     [\#18001](/redmine/issues/18001 "Bug: lar::ProviderPack should accept objects of classes derived from the required ones (Closed)"){.issue
     .tracker-1 .status-5 .priority-4 .priority-default .closed}.
 
-{#sbndutil-v01_50_01}
+
 
 sbndutil v01\_50\_01(#sbndutil-v01_50_01)
 ----------------------------------------------------------

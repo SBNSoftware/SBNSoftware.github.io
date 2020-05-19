@@ -7,7 +7,7 @@ title: ReleaseNotes080000
   v08.00.00   12/19/2018         [Release Notes](ReleaseNotes080000.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_00_00-Release-Notes}
+
 
 sbndcode v08\_00\_00 Release Notes(#sbndcode-v08_00_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_00\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_00_00/sbndcode-v08_00_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Upgrade to art v3
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,12 +43,12 @@ New features(#New-features)
 -   [art v3\_00 breaking changes
     page](300_breaking_changes.html)
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.00.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080000){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_00_00}
+
 
 sbndcode v08\_00\_00(#sbndcode-v08_00_00)
 ----------------------------------------------------------
@@ -94,7 +94,7 @@ sbndcode v08\_00\_00(#sbndcode-v08_00_00)
 -   2018-10-08 Lynn Garren : preProcessEvent workarount
 -   2018-10-04 Lynn Garren : fix getEngine calls
 
-{#sbndutil-v08_00_00}
+
 
 sbndutil v08\_00\_00(#sbndutil-v08_00_00)
 ----------------------------------------------------------

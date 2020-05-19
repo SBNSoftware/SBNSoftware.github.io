@@ -3,7 +3,7 @@ lang: en
 title: VPN
 ---
 
-{#Virtual-Private-Network-VPN-to-Fermilab}
+
 
 Virtual Private Network (VPN) to Fermilab(#Virtual-Private-Network-VPN-to-Fermilab)
 ====================================================================================================
@@ -61,7 +61,7 @@ to connect to its VPN.\
 Cisco provides also a client to \"enter\" the VPN. There is also a free
 alternative.
 
-{#Cisco-client-installation}
+
 
 Cisco client installation(#Cisco-client-installation)
 ----------------------------------------------------------------------
@@ -78,7 +78,7 @@ guide you to install the software.
 Once installed, you can start the client interface and fill in the
 information in the table below.
 
-{#Additional-setup-for-Linux}
+
 
 ### Additional setup for Linux(#Additional-setup-for-Linux)
 
@@ -97,7 +97,7 @@ too failed on Gentoo Linux).\
 When the sequence of failures is long enough, you are ready to give a
 try to the free client.
 
-{#Free-client-installation}
+
 
 Free client installation(#Free-client-installation)
 --------------------------------------------------------------------
@@ -107,7 +107,7 @@ The
 client [OpenConnect](http://www.infradead.org/openconnect){.external} is
 available for Linux, Windows, OSX, Android and many others.
 
-{#OpenConnect-for-OSX}
+
 
 ### OpenConnect for OSX(#OpenConnect-for-OSX)
 
@@ -115,7 +115,7 @@ Under OSX, OpenConnect is also via homebrew:
 
     brew install openconnect
 
-{#OpenConnect-for-Linux}
+
 
 ### OpenConnect for Linux(#OpenConnect-for-Linux)
 
@@ -123,7 +123,7 @@ To do (need it? please [ask](mailto:petrillo@fnal.gov)).
 
 Chances are that your distribution has it prepackaged for you.
 
-{#OpenConnect-for-iOS-Apple-mobile}
+
 
 ### OpenConnect for iOS (Apple mobile)(#OpenConnect-for-iOS-Apple-mobile)
 
@@ -142,14 +142,14 @@ it is possible that the user name is required in the full format,
 ^1^ Currently, that is August 2018, there is also another version dubbed
 \"Legacy\" which is based on 4.0, and I am not talking about that one.
 
-{#OpenConnect-for-Android}
+
 
 ### OpenConnect for Android(#OpenConnect-for-Android)
 
 OpenConnect binary distribution is available via
 [F-Droid](https://f-droid.org/repository/browse){.external} .
 
-{#Log-in-the-VPN}
+
 
 Log in the VPN(#Log-in-the-VPN)
 ------------------------------------------------
@@ -165,7 +165,7 @@ The credentials for log in are:
   Password:    Services password (same as for e-mail access, ServiceNow and others)
   ------------ ----------------------------------------------------------------------
 
-{#Cisco-AnyConnect}
+
 
 ### Cisco AnyConnect(#Cisco-AnyConnect)
 
@@ -174,7 +174,7 @@ Mobility Client\" will allow you to enter the information above.\
 The user name might be required in its full glory:
 `user@services.fnal.gov`.
 
-{#OpenConnect-command-line-interface}
+
 
 ### OpenConnect (command line interface)(#OpenConnect-command-line-interface)
 

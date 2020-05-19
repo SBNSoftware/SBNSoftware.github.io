@@ -7,7 +7,7 @@ title: ReleaseNotes066900
   v06.69.00   02/23/2018         [Release Notes](ReleaseNotes066900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_69_00-Release-Notes}
+
 
 sbndcode v06\_69\_00 Release Notes(#sbndcode-v06_69_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_69\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_69_00/sbndcode-v06_69_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
 
             setup lar_ci; test_runner -s develop_test_sbndcode 
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
     v06.69.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066900){.external}
 -   larbatch v06\_37\_00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_69_00}
+
 
 sbndcode v06\_69\_00(#sbndcode-v06_69_00)
 ----------------------------------------------------------
@@ -107,7 +107,7 @@ sbndcode v06\_69\_00(#sbndcode-v06_69_00)
 -   2017-10-19 Gianluca Petrillo : First draft of the integration tests
     for SBND.
 
-{#sbndutil-v01_45_00}
+
 
 sbndutil v01\_45\_00(#sbndutil-v01_45_00)
 ----------------------------------------------------------

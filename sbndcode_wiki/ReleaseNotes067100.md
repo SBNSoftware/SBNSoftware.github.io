@@ -7,7 +7,7 @@ title: ReleaseNotes067100
   v06.71.00   03/22/2018         [Release Notes](ReleaseNotes067100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_71_00-Release-Notes}
+
 
 sbndcode v06\_71\_00 Release Notes(#sbndcode-v06_71_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_71\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_71_00/sbndcode-v06_71_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -46,12 +46,12 @@ New features(#New-features)
     -   No breaking changes have been mentioned so hopefully this
         doesn\'t change any physics
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -61,12 +61,12 @@ Updated dependencies(#Updated-dependencies)
 -   larbatch v01.38.00
 -   genie\_xsec v2\_12\_10
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_71_00}
+
 
 sbndcode v06\_71\_00(#sbndcode-v06_71_00)
 ----------------------------------------------------------
@@ -75,7 +75,7 @@ sbndcode v06\_71\_00(#sbndcode-v06_71_00)
 -   2018-03-22 Thomas Brooks : Update for larsoft v06\_71\_00
 -   2018-03-16 Thomas Brooks : Merge tag \'v06\_70\_02\' into develop
 
-{#sbndutil-v01_47_00}
+
 
 sbndutil v01\_47\_00(#sbndutil-v01_47_00)
 ----------------------------------------------------------

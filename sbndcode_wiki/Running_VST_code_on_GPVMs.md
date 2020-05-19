@@ -3,12 +3,12 @@ lang: en
 title: Running VST code on GPVMs
 ---
 
-{#Running-VST-code-on-GPVMs}
+
 
 Running VST code on GPVMs(#Running-VST-code-on-GPVMs)
 ======================================================================
 
-{#Starting-from-scratch}
+
 
 Starting from scratch(#Starting-from-scratch)
 --------------------------------------------------------------
@@ -50,7 +50,7 @@ Starting from scratch(#Starting-from-scratch)
         mrb i -j4
         mrbslp
 
-{#Setting-up-and-existing-build}
+
 
 Setting up and existing build(#Setting-up-and-existing-build)
 ------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ Setting up and existing build(#Setting-up-and-existing-build)
         mrbsetenv
         mrbslp
 
-{#Simulating-and-viewing-events}
+
 
 Simulating and viewing events(#Simulating-and-viewing-events)
 ------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ Simulating and viewing events(#Simulating-and-viewing-events)
     server](Viewing_events_remotely_with_VNC.html) to see
     the event display
 
-{#Running-the-analysis-code}
+
 
 Running the analysis code(#Running-the-analysis-code)
 ----------------------------------------------------------------------

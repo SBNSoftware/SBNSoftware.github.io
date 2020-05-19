@@ -3,7 +3,7 @@ lang: en
 title: Write files to CVMFS
 ---
 
-{#Write-files-to-CVMFS}
+
 
 Write files to CVMFS(#Write-files-to-CVMFS)
 ============================================================
@@ -73,7 +73,7 @@ the directory `/cvmfs/sbnd.opensciencegrid.org` might not show with a
 requested), but it takes some time for the CVMFS server to propagate the
 change to the world.
 
-{#Access-privileges}
+
 
 Access privileges(#Access-privileges)
 ------------------------------------------------------

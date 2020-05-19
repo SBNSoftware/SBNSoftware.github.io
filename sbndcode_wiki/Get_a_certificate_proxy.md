@@ -3,7 +3,7 @@ lang: en
 title: Get a certificate proxy
 ---
 
-{#Get-a-SBND-certificate-and-proxy}
+
 
 Get a SBND certificate and proxy(#Get-a-SBND-certificate-and-proxy)
 ====================================================================================
@@ -14,7 +14,7 @@ Get a SBND certificate and proxy(#Get-a-SBND-certificate-and-proxy)
 > certificate](Setting_up_access_with_CILogon_certificate.html)
 > instead.
 
-{#Virtual-Organization-membership}
+
 
 Virtual Organization membership(#Virtual-Organization-membership)
 ----------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ If you don\'t get the expected result (e.g., you are not listed in the
 the change via service
 desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 
-{#Get-the-proxy}
+
 
 Get the proxy(#Get-the-proxy)
 ----------------------------------------------
@@ -66,12 +66,12 @@ The command
 
 will tell you more than you want to know about your current certificate.
 
-{#Production-role-jobs}
+
 
 Production role jobs(#Production-role-jobs)
 ------------------------------------------------------------
 
-{#Getting-production-privileges}
+
 
 ### Getting production privileges(#Getting-production-privileges)
 
@@ -85,7 +85,7 @@ You should then be able to ssh to an sbnd machine as the sbndpro user:\
 
      ssh -Y sbndpro@sbndgpvm01.fnal.gov 
 
-{#Getting-the-production-proxy-old-school-method}
+
 
 ### Getting the production proxy (old-school method)(#Getting-the-production-proxy-old-school-method)
 
@@ -97,7 +97,7 @@ sbndpro account.\
 \
 You should now be able to submit production jobs.
 
-{#Getting-the-production-proxy-the-new-method}
+
 
 ### Getting the production proxy (the new method)(#Getting-the-production-proxy-the-new-method)
 

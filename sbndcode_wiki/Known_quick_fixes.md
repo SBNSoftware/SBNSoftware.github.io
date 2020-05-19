@@ -3,12 +3,12 @@ lang: en
 title: Known quick fixes
 ---
 
-{#Known-quick-fixes}
+
 
 Known quick fixes(#Known-quick-fixes)
 ======================================================
 
-{#Detector-Clock-Issue}
+
 
 Detector Clock Issue.(#Detector-Clock-Issue)
 -------------------------------------------------------------

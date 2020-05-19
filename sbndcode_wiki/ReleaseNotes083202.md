@@ -7,7 +7,7 @@ title: ReleaseNotes083202
   v08.32.02   10/22/2019         [Release Notes](ReleaseNotes083202.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_32_02-Release-Notes}
+
 
 sbndcode v08\_32\_02 Release Notes(#sbndcode-v08_32_02-Release-Notes)
 ======================================================================================
@@ -28,12 +28,12 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_32\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_32_02/sbndcode-v08_32_02.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -42,12 +42,12 @@ New features(#New-features)
 -   Fix slow light simulation by switching off Cherenkov light in fcl.
 -   Bug fixes to optical digitization.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -55,12 +55,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.32.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083202){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_32_02}
+
 
 sbndcode v08\_32\_02(#sbndcode-v08_32_02)
 ----------------------------------------------------------
@@ -131,7 +131,7 @@ sbndcode v08\_32\_02(#sbndcode-v08_32_02)
 -   2019-09-10 gputnam : Remove unecessary header files more.
 -   2019-09-10 gputnam : Remove unecessary header files.
 
-{#sbndutil-v08_32_02}
+
 
 sbndutil v08\_32\_02(#sbndutil-v08_32_02)
 ----------------------------------------------------------

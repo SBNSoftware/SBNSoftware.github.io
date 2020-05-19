@@ -3,7 +3,7 @@ lang: en
 title: Vertical Slice Test
 ---
 
-{#Vertical-Slice-Test}
+
 
 Vertical Slice Test(#Vertical-Slice-Test)
 ==========================================================
@@ -14,7 +14,7 @@ Vertical Slice Test(#Vertical-Slice-Test)
 
 Wiki page for the SBND vertical slice test
 
-{#Running-VST-code-on-GPVMs}
 
-[Running VST code on GPVMs](Running_VST_code_on_GPVMs.html)(#Running-VST-code-on-GPVMs) {#running-vst-code-on-gpvms .count}
+
+[Running VST code on GPVMs](Running_VST_code_on_GPVMs.html)(#Running-VST-code-on-GPVMs) 
 --------------------------------------------------------------------------------------------------------------------

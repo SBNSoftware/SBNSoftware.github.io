@@ -7,7 +7,7 @@ title: ReleaseNotes082800
   v08.28.00   08/10/2019         [Release Notes](ReleaseNotes082800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_28_00-Release-Notes}
+
 
 sbndcode v08\_28\_00 Release Notes(#sbndcode-v08_28_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_28\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_28_00/sbndcode-v08_28_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Genie v3 now default
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -54,12 +54,12 @@ Updated dependencies(#Updated-dependencies)
     v08.28.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082800){.external}
 -   genie\_xsec v3\_00\_04a
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_28_00}
+
 
 sbndcode v08\_28\_00(#sbndcode-v08_28_00)
 ----------------------------------------------------------
@@ -73,7 +73,7 @@ sbndcode v08\_28\_00(#sbndcode-v08_28_00)
 -   2019-08-07 Lynn Garren : for genie v3
 -   2019-08-07 Thomas Brooks : Merge tag \'v08\_27\_02\' into develop
 
-{#sbndutil-v08_28_00}
+
 
 sbndutil v08\_28\_00(#sbndutil-v08_28_00)
 ----------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes067000
   v06.70.00   03/05/2018         [Release Notes](ReleaseNotes067000.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_70_00-Release-Notes}
+
 
 sbndcode v06\_70\_00 Release Notes(#sbndcode-v06_70_00-Release-Notes)
 ======================================================================================
@@ -29,26 +29,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_00/sbndcode-v06_70_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Update for art v02\_10
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Change to project.py anatree output, it is now 1:1 with reco output.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Breaking-changes}
+
 
 Breaking changes(#Breaking-changes)
 ----------------------------------------------------
@@ -67,7 +67,7 @@ Breaking changes(#Breaking-changes)
 -   There is no longer a nu qualified build of root. Instead, the e15
     build contains all features that were in the nu qualified build.
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -77,12 +77,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.70.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067000){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_70_00}
+
 
 sbndcode v06\_70\_00(#sbndcode-v06_70_00)
 ----------------------------------------------------------
@@ -94,7 +94,7 @@ sbndcode v06\_70\_00(#sbndcode-v06_70_00)
 -   2018-03-01 Lynn Garren : remove override
 -   2018-03-01 Thomas Brooks : Merge tag \'v06\_69\_01\' into develop
 
-{#sbndutil-v01_46_00}
+
 
 sbndutil v01\_46\_00(#sbndutil-v01_46_00)
 ----------------------------------------------------------

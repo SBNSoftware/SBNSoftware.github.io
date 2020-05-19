@@ -3,7 +3,7 @@ lang: en
 title: Software distribution content
 ---
 
-{#Software-distribution-content}
+
 
 Software distribution content(#Software-distribution-content)
 ==============================================================================
@@ -26,7 +26,7 @@ setting up the UPS area. It will prefer CVMFS if available.
   [Software distribution content](#LArSoft-software-stack)   
   ---------------------------------------------------------------------- --------------------------------
 
-{#LArSoft-software-stack}
+
 
 LArSoft software stack(#LArSoft-software-stack)
 ----------------------------------------------------------------

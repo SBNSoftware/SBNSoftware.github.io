@@ -7,7 +7,7 @@ title: ReleaseNotes083501
   v08.35.01   11/13/2019         [Release Notes](ReleaseNotes083501.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_35_01-Release-Notes}
+
 
 sbndcode v08\_35\_01 Release Notes(#sbndcode-v08_35_01-Release-Notes)
 ======================================================================================
@@ -28,19 +28,19 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_35\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_35_01/sbndcode-v08_35_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -48,7 +48,7 @@ Bug fixes(#Bug-fixes)
 -   Random number generator seed now set by NuRandomService in opdetsim
 -   Out of bounds access to vector in opdetsim
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.35.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083501){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_35_01}
+
 
 sbndcode v08\_35\_01(#sbndcode-v08_35_01)
 ----------------------------------------------------------
@@ -88,7 +88,7 @@ sbndcode v08\_35\_01(#sbndcode-v08_35_01)
     compilation
 -   2019-11-07 Thomas Brooks : Merge tag \'v08\_35\_00\' into develop
 
-{#sbndutil-v08_35_01}
+
 
 sbndutil v08\_35\_01(#sbndutil-v08_35_01)
 ----------------------------------------------------------

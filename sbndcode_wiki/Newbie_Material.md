@@ -3,7 +3,7 @@ lang: en
 title: Newbie Material
 ---
 
-{#Newbie-Material}
+
 
 Newbie Material(#Newbie-Material)
 ==================================================
@@ -32,7 +32,7 @@ SBND-SOFTWARE YOUR NAME. Here is a list of all the mailing lists
 available: <https://listserv.fnal.gov/scripts/wa.exe?INDEX>. For more
 information see: <http://listserv.fnal.gov/users.asp#subscribe>
 
-{#Computing-Access}
+
 
 Computing Access(#Computing-Access)
 ----------------------------------------------------
@@ -89,7 +89,7 @@ You can reset your Fermilab passwords for service-now
 If you can\'t remember your password because you didn\'t write it down
 then you will have contact the service desk.
 
-{#Communication-and-Asking-for-Help}
+
 
 Communication and Asking for Help(#Communication-and-Asking-for-Help)
 --------------------------------------------------------------------------------------
@@ -121,7 +121,7 @@ type of communication.
     start meetings with no video and muted, also but less important, put
     your name as you would like it to appear to others.
 
-{#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND}
+
 
 New to Liquid Argon Technology/ Neutrino physics and SBND?(#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND)
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -176,7 +176,7 @@ Please add to the list!
     Beam](https://arxiv.org/pdf/hep-ex/0104049.pdf){.external} (The LSND
     anomaly paper)
 
-{#New-to-the-Software-Surrounding-SBND}
+
 
 New to the Software Surrounding SBND?(#New-to-the-Software-Surrounding-SBND)
 ---------------------------------------------------------------------------------------------
@@ -184,7 +184,7 @@ New to the Software Surrounding SBND?(#New-to-the-Software-Surrounding-SBND)
 To get started you need to have a basic knowledge of c++ and you need to
 learn LArsoft. Root and Git are also useful.
 
-{#Art-and-LArsoft}
+
 
 ### Art and LArsoft(#Art-and-LArsoft)
 
@@ -257,7 +257,7 @@ The g is short for gitCheckout.
 
 -   The Art Wiki: <https://cdcvs.fnal.gov/redmine/projects/art/wiki>
 
-{#C}
+
 
 ### C++(#C)
 
@@ -281,7 +281,7 @@ If you have a good c++ tutorial/documentation add it to the list!
 
 -   cppreference: <http://en.cppreference.com/w/cpp/container/vector>
 
-{#ROOT}
+
 
 ### ROOT(#ROOT)
 
@@ -326,7 +326,7 @@ that are useful when learning ROOT. Feel free to add to the list!
     good variety of tasks but doesn\'t go into as much detail as some of
     the other links)
 
-{#Git}
+
 
 ### Git(#Git)
 

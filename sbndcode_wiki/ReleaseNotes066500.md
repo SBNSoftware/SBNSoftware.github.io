@@ -7,7 +7,7 @@ title: ReleaseNotes066500
   v06.65.00   01/23/2018         [Release Notes](ReleaseNotes066500.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_65_00-Release-Notes}
+
 
 sbndcode v06\_65\_00 Release Notes(#sbndcode-v06_65_00-Release-Notes)
 ======================================================================================
@@ -29,33 +29,33 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_65\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_65_00/sbndcode-v06_65_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Migrate to art v2\_09\_06
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Use art v2\_09\_06
 
-{#Breaking-changes}
+
 
 Breaking changes(#Breaking-changes)
 ----------------------------------------------------
 
 -   Please use UpdateArt209.sh in larsoft/bin for any feature branches
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -65,12 +65,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.65.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066500){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_65_00}
+
 
 sbndcode v06\_65\_00(#sbndcode-v06_65_00)
 ----------------------------------------------------------
@@ -84,7 +84,7 @@ sbndcode v06\_65\_00(#sbndcode-v06_65_00)
 -   2018-01-19 Thomas Brooks : Merge tag \'v06\_64\_00\' into develop
 -   2018-01-08 Lynn Garren : update CMAKE\_MODULE\_PATH
 
-{#sbndutil-v01_41_00}
+
 
 sbndutil v01\_41\_00(#sbndutil-v01_41_00)
 ----------------------------------------------------------

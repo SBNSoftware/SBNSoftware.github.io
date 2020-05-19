@@ -7,7 +7,7 @@ title: ReleaseNotes085100
   v08.51.00   05/11/2020         [Release Notes](ReleaseNotes085100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_51_00-Release-Notes}
+
 
 sbndcode v08\_51\_00 Release Notes(#sbndcode-v08_51_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_51\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_51_00/sbndcode-v08_51_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
 -   larcoreobj PR 3
 -   larg4 PR 9
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_51_00}
+
 
 sbndcode v08\_51\_00(#sbndcode-v08_51_00)
 ----------------------------------------------------------
@@ -80,7 +80,7 @@ sbndcode v08\_51\_00(#sbndcode-v08_51_00)
 -   2019-10-03 Michelle Stancari : adding trigger filter module
 -   2019-10-03 Michelle Stancari : adding filter module
 
-{#sbndutil-v08_51_00}
+
 
 sbndutil v08\_51\_00(#sbndutil-v08_51_00)
 ----------------------------------------------------------

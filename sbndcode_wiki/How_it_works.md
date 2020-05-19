@@ -3,7 +3,7 @@ lang: en
 title: How it works
 ---
 
-{#How-it-works}
+
 
 How it works(#How-it-works)
 ============================================

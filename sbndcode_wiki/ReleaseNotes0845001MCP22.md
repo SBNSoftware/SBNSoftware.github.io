@@ -7,7 +7,7 @@ title: ReleaseNotes0845001MCP22
   v08.45.00.1.MCP2.2   03/16/2020         [Release Notes](ReleaseNotes0845001MCP22.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-{#sbndcode-v08_45_00_1_MCP2_2-Release-Notes}
+
 
 sbndcode v08\_45\_00\_1\_MCP2\_2 Release Notes(#sbndcode-v08_45_00_1_MCP2_2-Release-Notes)
 ===========================================================================================================
@@ -28,34 +28,34 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_45\_00\_1\_MCP2\_2](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_45_00_1_MCP2_2/sbndcode-v08_45_00_1_MCP2_2.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 2.2
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_45_00_1_MCP2_2}
+
 
 sbndcode v08\_45\_00\_1\_MCP2\_2(#sbndcode-v08_45_00_1_MCP2_2)
 -------------------------------------------------------------------------------
@@ -106,7 +106,7 @@ sbndcode v08\_45\_00\_1\_MCP2\_2(#sbndcode-v08_45_00_1_MCP2_2)
 -   2020-03-05 Iker de Icaza Astiz : Add an option to select which
     detectors to plot waveforms
 
-{#sbndutil-v08_45_00_1_MCP2_2}
+
 
 sbndutil v08\_45\_00\_1\_MCP2\_2(#sbndutil-v08_45_00_1_MCP2_2)
 -------------------------------------------------------------------------------

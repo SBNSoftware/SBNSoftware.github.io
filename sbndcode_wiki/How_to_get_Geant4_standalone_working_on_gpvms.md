@@ -3,7 +3,7 @@ lang: en
 title: How to get Geant4 standalone working on gpvms
 ---
 
-{#How-to-get-Geant4-standalone-working-on-gpvms}
+
 
 How to get Geant4 standalone working on gpvms(#How-to-get-Geant4-standalone-working-on-gpvms)
 ==============================================================================================================

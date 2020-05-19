@@ -7,7 +7,7 @@ title: ReleaseNotes06700101SBNWorkshop0318
   v06.70.01.01.SBNWorkshop0318   03/14/2018         [Release Notes](ReleaseNotes06700101SBNWorkshop0318.html)
   ------------------------------ ------------ -- -- -----------------------------------------------------------------------
 
-{#sbndcode-v06_70_01_01_SBNWorkshop0318-Release-Notes}
+
 
 sbndcode v06\_70\_01\_01\_SBNWorkshop0318 Release Notes(#sbndcode-v06_70_01_01_SBNWorkshop0318-Release-Notes)
 ==============================================================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_01\_01\_SBNWorkshop0318](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01_SBNWorkshop0318/sbndcode-v06_70_01_01_SBNWorkshop0318.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN workshop 03/18 (part 2)
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,22 +43,22 @@ New features(#New-features)
 -   Intrinsic nue BNB genie fcl file
 -   Oscillated BNB-like particle gun electron fcl file
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_70_01_01_SBNWorkshop0318}
+
 
 sbndcode v06\_70\_01\_01\_SBNWorkshop0318(#sbndcode-v06_70_01_01_SBNWorkshop0318)
 --------------------------------------------------------------------------------------------------

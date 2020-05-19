@@ -7,7 +7,7 @@ title: ReleaseNotes064001
   v06.40.01   06/19/2017         [Release Notes](ReleaseNotes064001.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_40_01-Release-Notes}
+
 
 sbndcode v06\_40\_01 Release Notes(#sbndcode-v06_40_01-Release-Notes)
 ======================================================================================
@@ -28,34 +28,34 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_40\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_40_01/sbndcode-v06_40_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Fixes bug in evd
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_40_01}
+
 
 sbndcode v06\_40\_01(#sbndcode-v06_40_01)
 ----------------------------------------------------------
@@ -72,7 +72,7 @@ sbndcode v06\_40\_01(#sbndcode-v06_40_01)
 -   2017-05-18 Gianluca Petrillo : Changed process name of GENIE job.
 -   2017-05-18 Gianluca Petrillo : Update to LArSoft 6.36.00.
 
-{#sbndutil-v01_16_00}
+
 
 sbndutil v01\_16\_00(#sbndutil-v01_16_00)
 ----------------------------------------------------------

@@ -3,7 +3,7 @@ lang: en
 title: Integration test guide
 ---
 
-{#Short-user-guide-to-integration-tests-in-SBND}
+
 
 Short user guide to integration tests in SBND(#Short-user-guide-to-integration-tests-in-SBND)
 ==============================================================================================================
@@ -34,9 +34,9 @@ Short user guide to integration tests in SBND(#Short-user-guide-to-integration-t
             reference](#Results-are-different-from-the-reference)
     -   [Further resources](#Further-resources)
 
-{#What-are-integration-tests}
 
-What are integration tests(#What-are-integration-tests) {#what-are-integration-tests .count}
+
+What are integration tests(#What-are-integration-tests) 
 ------------------------------------------------------------------------
 
 SBND has two levels of tests:
@@ -50,9 +50,9 @@ results, you should run both. This guide is about the latter.\
 Every time code is pushed in `sbndcode` `develop` branch, tests are also
 automatically triggered.
 
-{#What-an-integration-test-does}
 
-What an integration test does(#What-an-integration-test-does) {#what-an-integration-test-does .count}
+
+What an integration test does(#What-an-integration-test-does) 
 ------------------------------------------------------------------------------
 
 An integration test does what it is asked to by its configuration at
@@ -71,9 +71,9 @@ the mismatch must be studied to determine whether the change is
 acceptable or not. In the former case the reference results need to be
 updated, in the latter again the code must be fixed.
 
-{#Introduction-to-test-running}
 
-Introduction to test running(#Introduction-to-test-running) {#introduction-to-test-running .count}
+
+Introduction to test running(#Introduction-to-test-running) 
 ----------------------------------------------------------------------------
 
 For this introduction we run the tests in the local area (as in section
@@ -91,9 +91,9 @@ read from dCache. So:
 
 will run the tests designed to be run during development.
 
-{#The-output-of-a-test-in-detail}
 
-### The output of a test in detail(#The-output-of-a-test-in-detail) {#the-output-of-a-test-in-detail .count}
+
+### The output of a test in detail(#The-output-of-a-test-in-detail) 
 
 The information of this section somehow depends on both the version of
 the test SBND provides, and the version of `lar_ci`. The following
@@ -214,9 +214,9 @@ This is a winner. A local directory
   `avgevent_times.log`                           average CPU times (broken when using `TimeTracker`)
   ---------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-{#Example-of-failure-from-resource-usage}
 
-### Example of failure from resource usage(#Example-of-failure-from-resource-usage) {#example-of-failure-from-resource-usage .count}
+
+### Example of failure from resource usage(#Example-of-failure-from-resource-usage) 
 
 This is the output of `test_runner` after a successful LArSoft job has
 used more resources (or less!) than expected:\
@@ -232,9 +232,9 @@ used more resources (or less!) than expected:\
 To obtain it, I artificially decreased the limit of (resident size)
 memory for the test to about 210 MB.
 
-{#Running-the-integration-test-with-the-Continuous-Integration-system}
 
-Running the integration test with the Continuous Integration system(#Running-the-integration-test-with-the-Continuous-Integration-system) {#running-the-integration-test-with-the-continuous-integration-system .count}
+
+Running the integration test with the Continuous Integration system(#Running-the-integration-test-with-the-Continuous-Integration-system) 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are mainly three ways to run an integration test:
@@ -245,9 +245,9 @@ There are mainly three ways to run an integration test:
 
 Currently tests are run on SLF6 and OSX 10.12 (\"Sierra\").
 
-{#Automatic-testing}
 
-### Automatic testing(#Automatic-testing) {#automatic-testing .count}
+
+### Automatic testing(#Automatic-testing) 
 
 Whenever a commit is pushed into a `develop` branch, a test is
 automatically triggered. The test starts 15 minutes after the first push
@@ -269,9 +269,9 @@ respective tests).
 In this case, the quick test suite is executed (`quick_test_sbndcode`,
 chosen by the SBND `lar_ci` workflow configuration).
 
-{#Testing-of-the-code-in-the-local-working-area}
 
-### Testing of the code in the local working area(#Testing-of-the-code-in-the-local-working-area) {#testing-of-the-code-in-the-local-working-area .count}
+
+### Testing of the code in the local working area(#Testing-of-the-code-in-the-local-working-area) 
 
 Before pushing the code anywhere, integration tests may be executed
 locally from the MRB area^[1](#fn1)^ where the code has just been
@@ -288,9 +288,9 @@ tests in parallel, instead than one after the other.
 ^1^ In fact, they can be run even without a MRB area, in an environment
 where `sbndcode` is already set up.
 
-{#Remote-testing-of-published-code}
 
-### Remote testing of published code(#Remote-testing-of-published-code) {#remote-testing-of-published-code .count}
+
+### Remote testing of published code(#Remote-testing-of-published-code) 
 
 The Continuous Integration system can build and test any publicly
 available branch. To ask for the SBND integration tests, use the
@@ -311,7 +311,7 @@ SBND workflows](LArCI_Workflows.html#SBND-CI-Workflows).
 TODO: document how to run on branches\
 TODO: document how to run other tests
 
-{#Generating-the-reference-files}
+
 
 #### Generating the reference files(#Generating-the-reference-files)
 
@@ -326,9 +326,9 @@ The `Update_ref_files_SBNDCODE_wf` is a special workflow used for this
 purpose only, and we use only one reference platform, assuming (wrongly)
 that all platforms will give the same results.
 
-{#The-reference-result-files}
 
-The reference result files(#The-reference-result-files) {#the-reference-result-files .count}
+
+The reference result files(#The-reference-result-files) 
 ------------------------------------------------------------------------
 
 The reference result files are currently stored in dCache:\
@@ -342,9 +342,9 @@ of
 and the related keys `BASEFILERELPATH_SBNDCODE` and
 `XROOTD_BASEFILEDIR_SBNDCODE`).
 
-{#Available-tests}
 
-Available tests(#Available-tests) {#available-tests .count}
+
+Available tests(#Available-tests) 
 --------------------------------------------------
 
 The available tests can be printed with `test-runner --list-tests` (`-l`
@@ -383,14 +383,14 @@ are run in parallel (for example, sequential tests can\'t be
 parallelised). The figures were obtained from `sbndbuild01.fnal.gov`;
 for reference, 1000 kVs on that machine take about 3 CPU minutes.
 
-{#Investigating-test-failures}
 
-Investigating test failures(#Investigating-test-failures) {#investigating-test-failures .count}
+
+Investigating test failures(#Investigating-test-failures) 
 --------------------------------------------------------------------------
 
-{#Results-are-different-from-the-reference}
 
-### Results are different from the reference(#Results-are-different-from-the-reference) {#results-are-different-from-the-reference .count}
+
+### Results are different from the reference(#Results-are-different-from-the-reference) 
 
 The reference files are normally generated with a special trigger, as
 described above. These special jobs are shown in the
@@ -438,9 +438,9 @@ beyond it (`3`) and the hash of the head commit (`28fc0d2`, introduced
 by the `g` letter). In this case, the correct commit is
 [28fc0d2](/redmine/projects/sbndcode/repository/revisions/28fc0d251f9f5e26f356995f3861fcf9cdc2a7b6 "Tests now use a special single-file flux configuration centrally defined"){.changeset}.
 
-{#Further-resources}
 
-Further resources(#Further-resources) {#further-resources .count}
+
+Further resources(#Further-resources) 
 ------------------------------------------------------
 
 The hub for information on integration tests is the project

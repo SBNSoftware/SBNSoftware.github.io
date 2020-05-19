@@ -7,7 +7,7 @@ title: ReleaseNotes065000
   v06.50.00   09/26/2017         [Release Notes](ReleaseNotes065000.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_50_00-Release-Notes}
+
 
 sbndcode v06\_50\_00 Release Notes(#sbndcode-v06_50_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_50\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_50_00/sbndcode-v06_50_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -54,12 +54,12 @@ Updated dependencies(#Updated-dependencies)
     v06.50.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065000){.external}
 -   larbatch v01\_32\_05
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_50_00}
+
 
 sbndcode v06\_50\_00(#sbndcode-v06_50_00)
 ----------------------------------------------------------
@@ -75,7 +75,7 @@ sbndcode v06\_50\_00(#sbndcode-v06_50_00)
 -   2017-09-14 Thomas Brooks : Merge tag \'v06\_49\_03\' into develop
 -   2017-09-13 Gustavo Valdiviesso : Overdurden turned off in geometry
 
-{#sbndutil-v01_26_00}
+
 
 sbndutil v01\_26\_00(#sbndutil-v01_26_00)
 ----------------------------------------------------------

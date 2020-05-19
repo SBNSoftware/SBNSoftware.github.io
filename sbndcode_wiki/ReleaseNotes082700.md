@@ -7,7 +7,7 @@ title: ReleaseNotes082700
   v08.27.00   07/25/2019         [Release Notes](ReleaseNotes082700.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_27_00-Release-Notes}
+
 
 sbndcode v08\_27\_00 Release Notes(#sbndcode-v08_27_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_27\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_27_00/sbndcode-v08_27_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -48,12 +48,12 @@ New features(#New-features)
         13945](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=13945&filename=CosmicRemoval.pdf&version=1){.external}
         for more information.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -62,12 +62,12 @@ Updated dependencies(#Updated-dependencies)
     v08.27.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082700){.external}
 -   larbatch v01\_51\_05
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_27_00}
+
 
 sbndcode v08\_27\_00(#sbndcode-v08_27_00)
 ----------------------------------------------------------
@@ -100,7 +100,7 @@ sbndcode v08\_27\_00(#sbndcode-v08_27_00)
 -   2019-05-30 Thomas Brooks : First commit (copy from
     tb\_CosmicRemoval)
 
-{#sbndutil-v08_27_00}
+
 
 sbndutil v08\_27\_00(#sbndutil-v08_27_00)
 ----------------------------------------------------------

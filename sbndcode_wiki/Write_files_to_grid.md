@@ -3,7 +3,7 @@ lang: en
 title: Write files to grid
 ---
 
-{#Write-files-to-gridfermiappproductssbnd}
+
 
 Write files to `/grid/fermiapp/products/sbnd`(#Write-files-to-gridfermiappproductssbnd)
 ========================================================================================================
@@ -42,7 +42,7 @@ is very simple:
 > versioned**. If you mess with it, it will stay messed up until you fix
 > it by hand.
 
-{#Access-privileges}
+
 
 Access privileges(#Access-privileges)
 ------------------------------------------------------
@@ -52,7 +52,7 @@ to be added on a specific list. A [Fermilab service desk
 ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk)
 is required to start that process.
 
-{#Deploying-a-UPS-product}
+
 
 Deploying a UPS product(#Deploying-a-UPS-product)
 ------------------------------------------------------------------

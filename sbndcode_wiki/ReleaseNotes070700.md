@@ -7,7 +7,7 @@ title: ReleaseNotes070700
   v07.07.00   10/05/2018         [Release Notes](ReleaseNotes070700.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v07_07_00-Release-Notes}
+
 
 sbndcode v07\_07\_00 Release Notes(#sbndcode-v07_07_00-Release-Notes)
 ======================================================================================
@@ -28,26 +28,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_07\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00/sbndcode-v07_07_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Addition of some fcl configurations for MCP 0.9
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
     v07.07.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070700){.external}
 -   larbatch v01.45.00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v07_07_00}
+
 
 sbndcode v07\_07\_00(#sbndcode-v07_07_00)
 ----------------------------------------------------------
@@ -84,7 +84,7 @@ sbndcode v07\_07\_00(#sbndcode-v07_07_00)
     .tracker-1 .status-5 .priority-5 .priority-high3 .closed}
 -   2018-10-01 Lynn Garren : add missing override
 
-{#sbndutil-v07_07_00}
+
 
 sbndutil v07\_07\_00(#sbndutil-v07_07_00)
 ----------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes082100
   v08.21.00   06/01/2019         [Release Notes](ReleaseNotes082100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_21_00-Release-Notes}
+
 
 sbndcode v08\_21\_00 Release Notes(#sbndcode-v08_21_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_21\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_21_00/sbndcode-v08_21_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -53,12 +53,12 @@ New features(#New-features)
         rather than vice versa
     -   Added analysis modules for all stages
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -66,12 +66,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.20.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082001){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_21_00}
+
 
 sbndcode v08\_21\_00(#sbndcode-v08_21_00)
 ----------------------------------------------------------
@@ -114,7 +114,7 @@ sbndcode v08\_21\_00(#sbndcode-v08_21_00)
 -   2019-05-09 Thomas Brooks : Moved geometry wrappers out of CRT
     directory
 
-{#sbndutil-v08_21_00}
+
 
 sbndutil v08\_21\_00(#sbndutil-v08_21_00)
 ----------------------------------------------------------

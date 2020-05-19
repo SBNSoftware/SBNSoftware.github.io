@@ -7,7 +7,7 @@ title: ReleaseNotes083002
   v08.30.02   09/16/2019         [Release Notes](ReleaseNotes083002.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_30_02-Release-Notes}
+
 
 sbndcode v08\_30\_02 Release Notes(#sbndcode-v08_30_02-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_30\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_30_02/sbndcode-v08_30_02.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,12 +43,12 @@ New features(#New-features)
 -   Noise model update
 -   Trigger emulator for making optical waveforms
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.30.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083002){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_30_02}
+
 
 sbndcode v08\_30\_02(#sbndcode-v08_30_02)
 ----------------------------------------------------------
@@ -91,7 +91,7 @@ sbndcode v08\_30\_02(#sbndcode-v08_30_02)
     Optical waveforms.
 -   2019-09-04 gputnam : Make const functions in pdMap const.
 
-{#sbndutil-v08_30_02}
+
 
 sbndutil v08\_30\_02(#sbndutil-v08_30_02)
 ----------------------------------------------------------

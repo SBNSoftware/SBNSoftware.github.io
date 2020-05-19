@@ -7,7 +7,7 @@ title: ReleaseNotes0813001SBNWorkshop0319
   v08.13.00.1.SBNWorkshop0319   03/16/2019         [Release Notes](ReleaseNotes0813001SBNWorkshop0319.html)
   ----------------------------- ------------ -- -- ----------------------------------------------------------------------
 
-{#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes}
+
 
 sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes(#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes)
 ============================================================================================================================
@@ -30,36 +30,36 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_13\_00\_1\_SBNWorkshop0319](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00_1_SBNWorkshop0319/sbndcode-v08_13_00_1_SBNWorkshop0319.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN Workshop 03/19
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Add some fcl files for the workshop
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_13_00_1_SBNWorkshop0319}
+
 
 sbndcode v08\_13\_00\_1\_SBNWorkshop0319(#sbndcode-v08_13_00_1_SBNWorkshop0319)
 ------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ sbndcode v08\_13\_00\_1\_SBNWorkshop0319(#sbndcode-v08_13_00_1_SBNWorkshop0319)
     descriptive
 -   2019-03-15 Thomas Brooks : Merge tag \'v08\_13\_00\' into develop
 
-{#sbndutil-v08_13_00_1_SBNWorkshop0319}
+
 
 sbndutil v08\_13\_00\_1\_SBNWorkshop0319(#sbndutil-v08_13_00_1_SBNWorkshop0319)
 ------------------------------------------------------------------------------------------------

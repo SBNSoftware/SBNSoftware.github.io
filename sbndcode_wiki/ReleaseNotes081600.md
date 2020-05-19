@@ -7,7 +7,7 @@ title: ReleaseNotes081600
   v08.16.00   04/22/2019         [Release Notes](ReleaseNotes081600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_16_00-Release-Notes}
+
 
 sbndcode v08\_16\_00 Release Notes(#sbndcode-v08_16_00-Release-Notes)
 ======================================================================================
@@ -28,7 +28,7 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_16\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_16_00/sbndcode-v08_16_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
@@ -37,17 +37,17 @@ Purpose(#Purpose)
     -   BREAKING CHANGES: Read the [update
         notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Update_to_art_v3_02){.external}
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.16.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081600){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_16_00}
+
 
 sbndcode v08\_16\_00(#sbndcode-v08_16_00)
 ----------------------------------------------------------
@@ -83,7 +83,7 @@ sbndcode v08\_16\_00(#sbndcode-v08_16_00)
 -   2019-04-04 Lynn Garren : using genie 2
 -   2019-04-04 Lynn Garren : changes for art 3.02
 
-{#sbndutil-v08_16_00}
+
 
 sbndutil v08\_16\_00(#sbndutil-v08_16_00)
 ----------------------------------------------------------

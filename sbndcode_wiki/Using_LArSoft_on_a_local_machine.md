@@ -3,7 +3,7 @@ lang: en
 title: Using LArSoft on a local machine
 ---
 
-{#Using-LArSoft-on-a-local-machine}
+
 
 Using LArSoft on a local machine(#Using-LArSoft-on-a-local-machine)
 ====================================================================================
@@ -23,7 +23,7 @@ This is a collection of hints and tips to allow you to develop and run
 with `sbndcode` (and LArSoft) on a local machine, be it a server in your
 institution or your own laptop.
 
-{#Getting-the-software}
+
 
 Getting the software(#Getting-the-software)
 ------------------------------------------------------------
@@ -51,7 +51,7 @@ There are three main ways to have it available on your computer:
     mention that if ROOT version changes you have to do the whole thing
     again?
 
-{#Supported-platforms}
+
 
 Supported platforms(#Supported-platforms)
 ----------------------------------------------------------
@@ -85,7 +85,7 @@ do not contain compiled code), so you can get them from
 well, and unpacking the tarball in the products area may be already
 enough.
 
-{#List-of-platforms}
+
 
 ### List of platforms(#List-of-platforms)
 
@@ -164,7 +164,7 @@ OSX
 [OSX 10.10 (\"Yosemite\") support has ended on November 10,
 2017!]{style="color: yellow;background-color: red;font-weight: bold;font-size: large;padding: 7px;border-style: solid;border-color: yellow;border-width: 3px;"}
 
-{#Downloading-a-binary-distribution-with-pullProducts}
+
 
 Downloading a binary distribution with `pullProducts`(#Downloading-a-binary-distribution-with-pullProducts)
 ----------------------------------------------------------------------------------------------------------------------------
@@ -213,7 +213,7 @@ LArSoft are likely to stay more up to date.
 
 5.  be patient\...
 
-{#Updating-the-local-product-repository}
+
 
 ### Updating the local product repository(#Updating-the-local-product-repository)
 

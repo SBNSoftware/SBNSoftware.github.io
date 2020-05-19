@@ -3,7 +3,7 @@ lang: en
 title: Updating sbnd data
 ---
 
-{#Updating-sbnd-data}
+
 
 Updating sbnd data(#Updating-sbnd-data)
 ========================================================
@@ -12,7 +12,7 @@ Updating sbnd data(#Updating-sbnd-data)
     more difficult.
 -   There are two ways to treat sbnd\_data to make life a little easier
 
-{#Current-version-can-be-updated}
+
 
 Current version can be updated(#Current-version-can-be-updated)
 --------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ Current version can be updated(#Current-version-can-be-updated)
 
 -   Publish the transaction.
 
-{#New-version-required}
+
 
 New version required(#New-version-required)
 ------------------------------------------------------------
@@ -63,7 +63,7 @@ New version required(#New-version-required)
     sbndutil](Deploying_a_release_on_fermigrid.html) and
     then rsync\'d to cvmfs (I think).
 
-{#New-version-worked-example}
+
 
 New version worked example(#New-version-worked-example)
 ------------------------------------------------------------------------

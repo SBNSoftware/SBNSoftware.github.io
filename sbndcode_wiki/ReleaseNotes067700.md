@@ -7,7 +7,7 @@ title: ReleaseNotes067700
   v06.77.00   05/31/2018         [Release Notes](ReleaseNotes067700.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_77_00-Release-Notes}
+
 
 sbndcode v06\_77\_00 Release Notes(#sbndcode-v06_77_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_77\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_77_00/sbndcode-v06_77_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,12 +43,12 @@ New features(#New-features)
 -   Increase upper memory limit for nu + cosmics detector simulation CI
     test.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
     v06.77.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067700){.external}
 -   larbatch v01.39.02
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_77_00}
+
 
 sbndcode v06\_77\_00(#sbndcode-v06_77_00)
 ----------------------------------------------------------
@@ -73,7 +73,7 @@ sbndcode v06\_77\_00(#sbndcode-v06_77_00)
     nucosmics\_detsim\_quick\_test\_sbndcode CI test
 -   2018-05-11 Thomas Brooks : Merge tag \'v06\_76\_00\' into develop
 
-{#sbndutil-v01_53_00}
+
 
 sbndutil v01\_53\_00(#sbndutil-v01_53_00)
 ----------------------------------------------------------

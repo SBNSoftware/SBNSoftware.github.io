@@ -7,7 +7,7 @@ title: ReleaseNotes067001
   v06.70.01   03/08/2018         [Release Notes](ReleaseNotes067001.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_70_01-Release-Notes}
+
 
 sbndcode v06\_70\_01 Release Notes(#sbndcode-v06_70_01-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01/sbndcode-v06_70_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -46,12 +46,12 @@ New features(#New-features)
 -   New version of sbnd\_data with histograms for producing BNB-like
     particles.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -61,12 +61,12 @@ Updated dependencies(#Updated-dependencies)
 -   larbatch v01.37.02
 -   sbnd\_data v01.02.00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_70_01}
+
 
 sbndcode v06\_70\_01(#sbndcode-v06_70_01)
 ----------------------------------------------------------
@@ -123,7 +123,7 @@ sbndcode v06\_70\_01(#sbndcode-v06_70_01)
 -   2018-02-12 Dominic Brailsford : Use new dirt flux files produced by
     Zarko
 
-{#sbndutil-v01_46_01}
+
 
 sbndutil v01\_46\_01(#sbndutil-v01_46_01)
 ----------------------------------------------------------

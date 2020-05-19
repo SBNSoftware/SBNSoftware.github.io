@@ -3,7 +3,7 @@ lang: en
 title: SBND servers
 ---
 
-{#SBND-servers}
+
 
 SBND servers(#SBND-servers)
 ============================================
@@ -11,7 +11,7 @@ SBND servers(#SBND-servers)
 This is a quick summary of the servers available to SBND and their
 purpose.
 
-{#Servers-from-Fermilab}
+
 
 Servers from Fermilab(#Servers-from-Fermilab)
 --------------------------------------------------------------
@@ -20,7 +20,7 @@ Often servers are offered by Fermilab in the form of *virtual machines*,
 which has little consequence to the normal user except some confusion of
 names.
 
-{#General-purpose-interactive-nodes-open-to-all-SBND-users}
+
 
 ### General purpose: interactive nodes open to all SBND users(#General-purpose-interactive-nodes-open-to-all-SBND-users)
 
@@ -51,7 +51,7 @@ For maintenance, submit a request to the [Interactive Server Facility
 group via Service
 Desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 
-{#SAM-database-setup}
+
 
 ### SAM database setup(#SAM-database-setup)
 
@@ -61,7 +61,7 @@ The server is [`sbndsamgpvm01.fnal.gov`]{style="color: crimson;"},
 Contact people: [Andrzej Szelc](mailto:andrzejs@fnal.gov) and [Dominic
 Brailsford](mailto:d.brailsford@lancaster.ac.uk).
 
-{#DAQ-nodes}
+
 
 ### DAQ nodes(#DAQ-nodes)
 

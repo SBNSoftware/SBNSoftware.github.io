@@ -7,7 +7,7 @@ title: ReleaseNotes06700101
   v06.70.01.01   03/14/2018         [Release Notes](ReleaseNotes06700101.html)
   -------------- ------------ -- -- --------------------------------------------------------
 
-{#sbndcode-v06_70_01_01-Release-Notes}
+
 
 sbndcode v06\_70\_01\_01 Release Notes(#sbndcode-v06_70_01_01-Release-Notes)
 =============================================================================================
@@ -27,14 +27,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_70\_01\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01/sbndcode-v06_70_01_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN workshop 03/18
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
 -   Add shower reconstruction
 -   Fast optical simulation
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.70.01.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes06700101){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_70_01_01}
+
 
 sbndcode v06\_70\_01\_01(#sbndcode-v06_70_01_01)
 -----------------------------------------------------------------

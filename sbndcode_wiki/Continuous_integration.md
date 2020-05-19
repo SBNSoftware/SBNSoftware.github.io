@@ -3,7 +3,7 @@ lang: en
 title: Continuous integration
 ---
 
-{#Continuous-integration}
+
 
 Continuous integration(#Continuous-integration)
 ================================================================
@@ -24,7 +24,7 @@ Continuous integration(#Continuous-integration)
 -   At the moment only one build (SLF7 e19:prof) will return successes
     for everything (call it the good build).
 
-{#Memorycpu-usage}
+
 
 Memory/cpu usage(#Memorycpu-usage)
 ---------------------------------------------------
@@ -40,7 +40,7 @@ Memory/cpu usage(#Memorycpu-usage)
     -   Just find the relevant tests, change the limits and push the
         changes to develop.
 
-{#Data-product-changes}
+
 
 Data product changes(#Data-product-changes)
 ------------------------------------------------------------
@@ -60,7 +60,7 @@ Data product changes(#Data-product-changes)
 -   If the changes are expected then you can update the reference file,
     instructions [here](Integration_test_guide.html).
 
-{#Failures}
+
 
 Failures(#Failures)
 ------------------------------------

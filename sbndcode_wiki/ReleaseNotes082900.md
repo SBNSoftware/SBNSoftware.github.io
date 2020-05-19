@@ -7,7 +7,7 @@ title: ReleaseNotes082900
   v08.29.00   08/22/2019         [Release Notes](ReleaseNotes082900.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_29_00-Release-Notes}
+
 
 sbndcode v08\_29\_00 Release Notes(#sbndcode-v08_29_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_29\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_29_00/sbndcode-v08_29_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -44,12 +44,12 @@ New features(#New-features)
     -   [DocDB
         presentation](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=14109){.external}
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
     v08.29.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082900){.external}
 -   larbatch v01\_51\_07
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_29_00}
+
 
 sbndcode v08\_29\_00(#sbndcode-v08_29_00)
 ----------------------------------------------------------
@@ -96,7 +96,7 @@ sbndcode v08\_29\_00(#sbndcode-v08_29_00)
 -   2019-04-29 Andrew Scarff : Adding ProtoDUNE noise service files to
     sbndcode. Just files copied, no implementation yet.
 
-{#sbndutil-v08_29_00}
+
 
 sbndutil v08\_29\_00(#sbndutil-v08_29_00)
 ----------------------------------------------------------

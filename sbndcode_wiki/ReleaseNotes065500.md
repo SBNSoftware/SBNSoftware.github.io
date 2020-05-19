@@ -7,7 +7,7 @@ title: ReleaseNotes065500
   v06.55.00   10/26/2017         [Release Notes](ReleaseNotes065500.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_55_00-Release-Notes}
+
 
 sbndcode v06\_55\_00 Release Notes(#sbndcode-v06_55_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_55\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_55_00/sbndcode-v06_55_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -44,12 +44,12 @@ New features(#New-features)
 -   Pandora in reconstruction workflow
 -   Gallery examples
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -60,12 +60,12 @@ Updated dependencies(#Updated-dependencies)
     v2.08.04](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_208){.external}
 -   larbatch v01.32.06
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_55_00}
+
 
 sbndcode v06\_55\_00(#sbndcode-v06_55_00)
 ----------------------------------------------------------
@@ -101,7 +101,7 @@ sbndcode v06\_55\_00(#sbndcode-v06_55_00)
 -   2017-10-12 John Marshall : Configuration for larpandoracontent
     v03\_08\_00.
 
-{#sbndutil-v01_31_00}
+
 
 sbndutil v01\_31\_00(#sbndutil-v01_31_00)
 ----------------------------------------------------------

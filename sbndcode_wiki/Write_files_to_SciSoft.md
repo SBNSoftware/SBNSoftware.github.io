@@ -3,7 +3,7 @@ lang: en
 title: Write files to SciSoft
 ---
 
-{#Write-files-to-SciSoft}
+
 
 Write files to SciSoft(#Write-files-to-SciSoft)
 ================================================================
@@ -16,7 +16,7 @@ Write files to SciSoft(#Write-files-to-SciSoft)
     can be obtained here
     (<http://scisoft.fnal.gov/scisoft/bundles/tools/>)
 
-{#Copy-sbndcode-and-sbndutil-to-SciSoft}
+
 
 Copy sbndcode and sbndutil to SciSoft(#Copy-sbndcode-and-sbndutil-to-SciSoft)
 ----------------------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ Copy sbndcode and sbndutil to SciSoft(#Copy-sbndcode-and-sbndutil-to-SciSoft)
     scisoftportal.fnal.gov and cd in to /nasroot/SciSoft. Changes can be
     made in this directory
 
-{#Copy-sbnd_data-to-SciSoft}
+
 
 Copy sbnd\_data to SciSoft(#Copy-sbnd_data-to-SciSoft)
 -----------------------------------------------------------------------

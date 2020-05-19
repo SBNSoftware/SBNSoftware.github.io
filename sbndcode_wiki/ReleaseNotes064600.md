@@ -7,7 +7,7 @@ title: ReleaseNotes064600
   v06.46.00   08/12/2017         [Release Notes](ReleaseNotes064600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_46_00-Release-Notes}
+
 
 sbndcode v06\_46\_00 Release Notes(#sbndcode-v06_46_00-Release-Notes)
 ======================================================================================
@@ -28,26 +28,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_46\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_46_00/sbndcode-v06_46_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   New version of geometry: v01\_00
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
 -   larbatch v01.32.04
 -   cetbuildtools v5.14.00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_46_00}
+
 
 sbndcode v06\_46\_00(#sbndcode-v06_46_00)
 ----------------------------------------------------------
@@ -152,7 +152,7 @@ sbndcode v06\_46\_00(#sbndcode-v06_46_00)
 -   2017-04-14 Gianluca Petrillo : This branch uses future geometry.
     THIS COMMIT SHOULD NOT BE MERGED INTO DEVELOP!
 
-{#sbndutil-v01_22_00}
+
 
 sbndutil v01\_22\_00(#sbndutil-v01_22_00)
 ----------------------------------------------------------

@@ -3,14 +3,14 @@ lang: en
 title: MCC 2p0
 ---
 
-{#MCC-2p0}
+
 
 MCC 2p0(#MCC-2p0)
 ==================================
 
-{#Samples}
 
-Samples(#Samples) {#samples .count}
+
+Samples(#Samples) 
 ----------------------------------
 
 **\'new flux\' refers to the latest flux files produced by Zarko which
@@ -39,9 +39,9 @@ fix the detector/beam centre position (configs F/G)**\
   Cosmics                        Proton model, physics book                                        G4                      3 million         197
   ------------------------------ ----------------------------------------------------------------- ----------------------- ----------------- ---------------------------------------
 
-{#Tape-space}
 
-Tape space(#Tape-space) {#tape-space .count}
+
+Tape space(#Tape-space) 
 ----------------------------------------
 
 \- 395 TB of tape available\
@@ -52,9 +52,9 @@ TB\
 - 197.13 TB can accommodate 3129047 G4 cosmic rays, we\'ll call that 3
 million cosmics
 
-{#Changes}
 
-Changes(#Changes) {#changes .count}
+
+Changes(#Changes) 
 ----------------------------------
 
     - All reco. samples include ROI finder

@@ -7,7 +7,7 @@ title: ReleaseNotes065800
   v06.58.00   12/12/2017         [Release Notes](ReleaseNotes065800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_58_00-Release-Notes}
+
 
 sbndcode v06\_58\_00 Release Notes(#sbndcode-v06_58_00-Release-Notes)
 ======================================================================================
@@ -28,26 +28,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_58\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_58_00/sbndcode-v06_58_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Redesigned BackTracker service
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -55,12 +55,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.58.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065800){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_58_00}
+
 
 sbndcode v06\_58\_00(#sbndcode-v06_58_00)
 ----------------------------------------------------------
@@ -85,7 +85,7 @@ sbndcode v06\_58\_00(#sbndcode-v06_58_00)
     feature/JStock\_BackTrackerIntegratedUpdate
 -   2017-10-26 Jason Stock : BackTrackerService Update. Pre Test 1
 
-{#sbndutil-v01_35_00}
+
 
 sbndutil v01\_35\_00(#sbndutil-v01_35_00)
 ----------------------------------------------------------

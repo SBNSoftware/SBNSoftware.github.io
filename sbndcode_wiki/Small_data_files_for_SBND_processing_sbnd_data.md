@@ -3,7 +3,7 @@ lang: en
 title: Small data files for SBND processing sbnd data
 ---
 
-{#Small-data-files-for-SBND-processing-sbnd_data}
+
 
 Small data files for SBND processing: `sbnd_data`(#Small-data-files-for-SBND-processing-sbnd_data)
 ===================================================================================================================
@@ -38,7 +38,7 @@ and no track of the changes is automatically kept.
 The procedure is actually extremely simple, but we have a long wiki page
 to impress people.
 
-{#Availability-and-set-up}
+
 
 Availability and set up(#Availability-and-set-up)
 ------------------------------------------------------------------
@@ -63,7 +63,7 @@ non-optional in the future.
 > `"Response/sbnd_filters_v0.1.root"` instead of just
 > `"sbnd_filters_v0.1.root"`.
 
-{#Content-of-the-package}
+
 
 Content of the package(#Content-of-the-package)
 ----------------------------------------------------------------
@@ -77,7 +77,7 @@ Content of the package(#Content-of-the-package)
     this whenever you change the content!** This is the only way we have
     to track it.
 
-{#Update-procedures-and-policies}
+
 
 Update procedures and policies(#Update-procedures-and-policies)
 --------------------------------------------------------------------------------
@@ -102,7 +102,7 @@ An update of the package happens in the following steps:
 These instructions are a detailed version of [the ones from
 LArSoft](Procedure_to_create_a_new_version_of_larsoft_data.html).
 
-{#Starting-with-the-latest-version}
+
 
 ### Starting with the latest version(#Starting-with-the-latest-version)
 
@@ -138,7 +138,7 @@ To start an update:
 
 You are ready to change the content.
 
-{#Updating-the-content}
+
 
 ### Updating the content(#Updating-the-content)
 
@@ -147,7 +147,7 @@ recent `sbnd_data/<latest_version>` [you just
 created](#Starting-with-the-latest-version).\
 Each new subdirectory of `sbnd_data` should have its own `CHANGES` file.
 
-{#Choose-the-next-version-number}
+
 
 ### Choose the next version number(#Choose-the-next-version-number)
 
@@ -162,7 +162,7 @@ new version:
 
     declare NewVersion="v01_01_00"
 
-{#Guidelines-for-updating-CHANGE-files}
+
 
 ### Guidelines for updating \`CHANGE\` files(#Guidelines-for-updating-CHANGE-files)
 
@@ -185,7 +185,7 @@ updated:
 > One more time: this is the only way we have to keep record of the
 > content of the package.
 
-{#Declare-and-pack-the-UPS-product}
+
 
 ### Declare and pack the UPS product(#Declare-and-pack-the-UPS-product)
 
@@ -215,7 +215,7 @@ You have now a shiny new `sbnd_data_${NewVersion#v}-noarch.tar.bz2`
 (note for your scripts: there is no `v` in the file name before the
 version number).
 
-{#Deploy-the-new-version}
+
 
 ### Deploy the new version(#Deploy-the-new-version)
 
@@ -230,7 +230,7 @@ the code in this scheme).
 
 The deployment on `/grid` is still TODO.
 
-{#Version-number-policy}
+
 
 Version number policy(#Version-number-policy)
 --------------------------------------------------------------

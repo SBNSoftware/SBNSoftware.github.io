@@ -7,7 +7,7 @@ title: ReleaseNotes0844001MCP21
   v08.44.00.1.MCP2.1   03/04/2020         [Release Notes](ReleaseNotes0844001MCP21.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-{#sbndcode-v08_44_00_1_MCP2_1-Release-Notes}
+
 
 sbndcode v08\_44\_00\_1\_MCP2\_1 Release Notes(#sbndcode-v08_44_00_1_MCP2_1-Release-Notes)
 ===========================================================================================================
@@ -28,34 +28,34 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_44\_00\_1\_MCP2\_1](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_44_00_1_MCP2_1/sbndcode-v08_44_00_1_MCP2_1.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 2.1
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_44_00_1_MCP2_1}
+
 
 sbndcode v08\_44\_00\_1\_MCP2\_1(#sbndcode-v08_44_00_1_MCP2_1)
 -------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ sbndcode v08\_44\_00\_1\_MCP2\_1(#sbndcode-v08_44_00_1_MCP2_1)
 -   2020-03-03 Thomas Brooks : test commit
 -   2020-03-02 Thomas Brooks : Merge tag \'v08\_44\_00\' into develop
 
-{#sbndutil-v08_44_00_1_MCP2_1}
+
 
 sbndutil v08\_44\_00\_1\_MCP2\_1(#sbndutil-v08_44_00_1_MCP2_1)
 -------------------------------------------------------------------------------

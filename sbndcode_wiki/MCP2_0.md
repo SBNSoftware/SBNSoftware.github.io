@@ -3,7 +3,7 @@ lang: en
 title: MCP2 0
 ---
 
-{#MCP2_0}
+
 
 MCP2\_0(#MCP2_0)
 =================================
@@ -27,7 +27,7 @@ MCP2\_0(#MCP2_0)
   BNB intrinsic nu\_e            TPC interactions only, pile-up, new flux, buckets, physics book          G4          194.1k                 official\_MCP2.0\_prodgenie\_intrnue\_spill\_tpc\_gsimple-configf-v1\_physicsbook\_g4\_sbnd
   ------------------------------ ------------------------------------------------------------------------ ----------- ---------------------- ---------------------------------------------------------------------------------------------------------------------------
 
-{#Notes--All-reconstructed-samples-also-have-an-anatree-stage-with-similar-stats-These-can-be-accessed-by-replacing-reco-with-anatree-in-the-SAM-definition--GENIE-and-CORSIKA-have-a-known-seeding-issue-in-these-samples-details-can-be-found-at-httpscdcvsfnalgovredmineissues23921}
+
 
 Notes: - All reconstructed samples also have an anatree stage with similar stats. These can be accessed by replacing \'reco\' with \'anatree\' in the SAM definition - GENIE and CORSIKA have a known seeding issue in these samples, details can be found at: <https://cdcvs.fnal.gov/redmine/issues/23921>.(#Notes--All-reconstructed-samples-also-have-an-anatree-stage-with-similar-stats-These-can-be-accessed-by-replacing-reco-with-anatree-in-the-SAM-definition--GENIE-and-CORSIKA-have-a-known-seeding-issue-in-these-samples-details-can-be-found-at-httpscdcvsfnalgovredmineissues23921)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

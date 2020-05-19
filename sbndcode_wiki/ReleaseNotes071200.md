@@ -7,7 +7,7 @@ title: ReleaseNotes071200
   v07.12.00   12/09/2018         [Release Notes](ReleaseNotes071200.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v07_12_00-Release-Notes}
+
 
 sbndcode v07\_12\_00 Release Notes(#sbndcode-v07_12_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v07\_12\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_12_00/sbndcode-v07_12_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
     removed, any feature branches which use recob::Track functions which
     return TVector3 objects will have to be updated.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
     v07.12.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes071200){.external}
 -   larbatch v01.47.01
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v07_12_00}
+
 
 sbndcode v07\_12\_00(#sbndcode-v07_12_00)
 ----------------------------------------------------------
@@ -91,7 +91,7 @@ sbndcode v07\_12\_00(#sbndcode-v07_12_00)
 -   2018-11-09 Giuseppe Cerati : update recob::Track interface with
     templated functions for returning TVector3-like objects
 
-{#sbndutil-v07_12_00}
+
 
 sbndutil v07\_12\_00(#sbndutil-v07_12_00)
 ----------------------------------------------------------

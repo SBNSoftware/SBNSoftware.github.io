@@ -3,7 +3,7 @@ lang: en
 title: The SBND Guide to using LArSoft
 ---
 
-{#The-SBND-Guide-to-using-LArSoft}
+
 
 The SBND Guide to using LArSoft(#The-SBND-Guide-to-using-LArSoft)
 ==================================================================================
@@ -41,7 +41,7 @@ LArSoft. The following assumes:
 -   You are using the `bash` shell (`zsh` is not well supported to
     date^[1](#fn1)^ ).
 
-{#Brief-LArSoft-overview}
+
 
 Brief LArSoft overview.(#Brief-LArSoft-overview)
 -----------------------------------------------------------------
@@ -67,12 +67,12 @@ part](_Quick-start_guide_to_using_and_developing_LArSoft_code_.html):
 If you are new to LArsoft you might find the [Newbie
 Material](Newbie_Material.html) page useful as well.
 
-{#List-of-SBND-code-releases}
+
 
 [List of SBND code releases](List_of_SBND_code_releases.html)(#List-of-SBND-code-releases)
 -----------------------------------------------------------------------------------------------------------------------
 
-{#Useful-Examples}
+
 
 Useful Examples(#Useful-Examples)
 --------------------------------------------------

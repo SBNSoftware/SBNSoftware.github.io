@@ -3,12 +3,12 @@ lang: en
 title: Deploying a release on fermigrid
 ---
 
-{#Deploying-a-release-on-fermigrid}
+
 
 Deploying a release on fermigrid(#Deploying-a-release-on-fermigrid)
 ====================================================================================
 
-{#Legacy}
+
 
 Legacy(#Legacy)
 --------------------------------
@@ -20,7 +20,7 @@ Legacy(#Legacy)
 -   Currently still used as a staging area for `sbnd_data` but this will
     have to change if it disappears.
 
-{#Old-instructions}
+
 
 Old instructions(#Old-instructions)
 ----------------------------------------------------

@@ -3,7 +3,7 @@ lang: en
 title: List of SBND code releases
 ---
 
-{#SBND-code-organization}
+
 
 SBND code organization(#SBND-code-organization)
 ================================================================
@@ -23,7 +23,7 @@ you build the area `sbndutil` will be available to you.
 See the (soon to be done) section on getting `sbndcode` offsite for more
 detailed information.
 
-{#List-of-sbndcode-releases}
+
 
 List of `sbndcode` releases(#List-of-sbndcode-releases)
 ------------------------------------------------------------------------
@@ -207,7 +207,7 @@ These are the `sbndcode` releases tagged until now:
   `v05_12_01`                      first release with the new name `sbndcode`   
   -------------------------------- -------------------------------------------- -----------------------------------------------------------------------
 
-{#List-of-lar1ndcode-releases}
+
 
 ### List of `lar1ndcode` releases(#List-of-lar1ndcode-releases)
 

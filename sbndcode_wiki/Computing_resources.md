@@ -3,7 +3,7 @@ lang: en
 title: Computing resources
 ---
 
-{#Computing-resources}
+
 
 Computing resources(#Computing-resources)
 ==========================================================
@@ -66,7 +66,7 @@ Here we list some of them.
 > DocDB](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=5892){.external}.
 > **It is a strongly recommended reading, to everybody!**
 
-{#SCD-liaison}
+
 
 #### SCD liaison(#SCD-liaison)
 
@@ -86,7 +86,7 @@ Benedetto]{style="color: limegreen;font-weight: bold;font-size: larger;"}](mailt
 more than most experiment members, and knowing what is going on in the
 experiment more than most of the computing division people.
 
-{#Computing-Access}
+
 
 Computing Access(#Computing-Access)
 ----------------------------------------------------
@@ -133,7 +133,7 @@ If you can\'t remember your password because you didn\'t write it down
 then you will have contact the [service
 desk](mailto:servicedesk@fnal.gov) (+1 (630) 840-2345).
 
-{#Where-to-work-interactive-nodes-GPVM}
+
 
 Where to work: interactive nodes (\"GPVM\")(#Where-to-work-interactive-nodes-GPVM)
 ---------------------------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ by
 [Information about all SBND GPVM\'s](SBND_servers.html) is
 on a [separate page](SBND_servers.html).
 
-{#Opening-a-ticket-in-Fermilab-Service-Desk}
+
 
 Opening a ticket in Fermilab Service Desk(#Opening-a-ticket-in-Fermilab-Service-Desk)
 ------------------------------------------------------------------------------------------------------
@@ -218,7 +218,7 @@ is in \"Core Computing Services\".
 > opened via Redmine, against LArSoft or `sbndcode` pertaining LArSoft
 > or SBND software bug reports or feature requests.
 
-{#Accessing-resources-via-certificates}
+
 
 Accessing resources via certificates(#Accessing-resources-via-certificates)
 --------------------------------------------------------------------------------------------
@@ -237,7 +237,7 @@ you will gain access to:
     server](https://voms.fnal.gov:8443/voms/fermilab/user/home.action){.external}
 -   Jenkins build server
 
-{#Accessing-resources-via-Virtual-Private-Network}
+
 
 Accessing resources via Virtual Private Network(#Accessing-resources-via-Virtual-Private-Network)
 ------------------------------------------------------------------------------------------------------------------
@@ -249,14 +249,14 @@ To allow users to access these resources in full by connecting via a
 Virtual Private Network (VPN), which needs to be [set up on the client
 node](VPN.html).
 
-{#Submitting-jobs-Virtual-Organisation}
+
 
 Submitting jobs: Virtual Organisation(#Submitting-jobs-Virtual-Organisation)
 ---------------------------------------------------------------------------------------------
 
 The name of our virtual organisation is `sbnd`.
 
-{#Submitting-jobs-grid-resources}
+
 
 Submitting jobs: grid resources(#Submitting-jobs-grid-resources)
 ---------------------------------------------------------------------------------
@@ -275,7 +275,7 @@ We can use different resources:
 To submit jobs, you\'ll also need a [certificate
 proxy](Get_a_certificate_proxy.html).
 
-{#Software-distribution}
+
 
 Software distribution(#Software-distribution)
 --------------------------------------------------------------
@@ -290,7 +290,7 @@ The [content of the
 areas](Software_distribution_content.html) is described in
 its own web page.
 
-{#Local-Fermilab-area-FermiApp}
+
 
 ### Local Fermilab area (FermiApp)(#Local-Fermilab-area-FermiApp)
 
@@ -301,7 +301,7 @@ It contains SBND software distribution.\
 software in there are
 [elsewhere](Write_files_to_grid.html).]{style="color: gray;"}*
 
-{#CVMFS}
+
 
 ### CVMFS(#CVMFS)
 
@@ -322,7 +322,7 @@ directory contains our software distribution.
 software in there are
 [elsewhere](Write_files_to_CVMFS.html).]{style="color: gray;"}*
 
-{#Storing-data}
+
 
 Storing data(#Storing-data)
 --------------------------------------------
@@ -334,7 +334,7 @@ detail.\
 Production level data are stored to tape (\"Enstore\") and tracked with
 a database (\"SAM\").
 
-{#Local-storage-BlueArc-disks}
+
 
 ### Local storage: BlueArc disks(#Local-storage-BlueArc-disks)
 
@@ -369,7 +369,7 @@ resource is shared by everyone in the collaboration.
 
 This information can be read using `quota -s` or `df -h`.
 
-{#World-visible-storage-dCache}
+
 
 ### World-visible storage: dCache(#World-visible-storage-dCache)
 
@@ -386,7 +386,7 @@ We have a limited quota of space as well, so fill it responsibly.\
 More information (including how to remotely access it) can be found in
 the [SBND dCache wiki page](SBND_dCache_storage.html).
 
-{#Tape-storage}
+
 
 ### Tape storage(#Tape-storage)
 
@@ -394,7 +394,7 @@ the [SBND dCache wiki page](SBND_dCache_storage.html).
 > is a multi-step procedure requiring access to file transfer service, a
 > file database and actual tape allocation.
 
-{#File-database-SAM}
+
 
 ### File database (SAM)(#File-database-SAM)
 
@@ -412,7 +412,7 @@ access the database.\
 More information on [SBND SAM](SAM.html) is collected in its
 own [web page](SAM.html).
 
-{#Web-server-pages}
+
 
 Web server pages(#Web-server-pages)
 ----------------------------------------------------
@@ -420,7 +420,7 @@ Web server pages(#Web-server-pages)
 SBND and SBN has a number of web pages. Information about them is
 available in the [SBND wiki](SBND_homepage.html).
 
-{#SBN-online-web-gate}
+
 
 ### SBN online web gate(#SBN-online-web-gate)
 
@@ -432,7 +432,7 @@ and can be requested asking [William Badgett](mailto:badgett@fnal.gov).
 Currently the site has almost no content and we are looking for
 volunteers to help populate it with useful detector status info.
 
-{#SBND-data-web-directory}
+
 
 ### SBND data web directory(#SBND-data-web-directory)
 
@@ -447,11 +447,11 @@ writing, the site owners are [Andrzej
 Szelc](mailto:andrzej.szelc@manchester.ac.uk) and [Dominic
 Brailsford](mailto:d.brailsford@lancaster.ac.uk).
 
-{#Communication-tools}
+
 
 ### Communication tools(#Communication-tools)
 
-{#Mailing-lists}
+
 
 #### Mailing lists(#Mailing-lists)
 
@@ -470,7 +470,7 @@ ListServ](http://listserv.fnal.gov){.external}:
   <SBND-COMMIT@fnal.gov>           [Dominic Brailsford](mailto:d.brailsford@lancaster.ac.uk), [Andrzej Szelc](mailto:andrzej.szelc@manchester.ac.uk)                                              To receive notice of commits to sbndcode and sbndutil
   -------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
 
-{#Electronic-logbook}
+
 
 #### Electronic logbook(#Electronic-logbook)
 
@@ -482,7 +482,7 @@ SBND members have an account. New members need to request one by
 clicking on the \"Members\" tab and then on the \"Request an account\"
 link.
 
-{#Other-obscure-services-and-resources}
+
 
 Other obscure services and resources(#Other-obscure-services-and-resources)
 --------------------------------------------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes084000
   v08.40.00   01/17/2020         [Release Notes](ReleaseNotes084000.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_40_00-Release-Notes}
+
 
 sbndcode v08\_40\_00 Release Notes(#sbndcode-v08_40_00-Release-Notes)
 ======================================================================================
@@ -28,28 +28,28 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_40\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_40_00/sbndcode-v08_40_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Support for Pandora SliceID
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   Moved opdet class definitions to shared libraries
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.40.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084000){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_40_00}
+
 
 sbndcode v08\_40\_00(#sbndcode-v08_40_00)
 ----------------------------------------------------------
@@ -86,7 +86,7 @@ sbndcode v08\_40\_00(#sbndcode-v08_40_00)
     preprocessed hits
 -   2019-12-17 Edward Tyley : Upadated Settings XMl to use MVA template
 
-{#sbndutil-v08_40_00}
+
 
 sbndutil v08\_40\_00(#sbndutil-v08_40_00)
 ----------------------------------------------------------

@@ -3,14 +3,14 @@ lang: en
 title: Cosmics
 ---
 
-{#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies}
+
 
 Cosmic-ray generation (under-development, but good enough for preliminary studies)(#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies)
 =====================================================================================================================================================================================
 
-{#How-to-generate-cosmic-events}
 
-How to generate cosmic events(#How-to-generate-cosmic-events) {#how-to-generate-cosmic-events .count}
+
+How to generate cosmic events(#How-to-generate-cosmic-events) 
 ------------------------------------------------------------------------------
 
 100 events in the examples:
@@ -45,9 +45,9 @@ How to generate cosmic events(#How-to-generate-cosmic-events) {#how-to-generate-
   CORSIKA Generation file   `prodcosmics_corsika_sbnd.fcl`
   ------------------------- --------------------------------
 
-{#Cry-parameters}
 
-### Cry parameters(#Cry-parameters) {#cry-parameters .count}
+
+### Cry parameters(#Cry-parameters) 
 
 Full module configuration is in `cry_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by
@@ -68,9 +68,9 @@ precision on the rate you need. However, due to the fact that CRY is
 already know to produce significantly lower rates, this should be
 negligible (to confirm with studies?).
 
-{#CORSIKA-parameters}
 
-### CORSIKA parameters(#CORSIKA-parameters) {#corsika-parameters .count}
+
+### CORSIKA parameters(#CORSIKA-parameters) 
 
 Full module configuration is in `corsika_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by

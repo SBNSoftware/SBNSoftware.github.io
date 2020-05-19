@@ -6,7 +6,7 @@ title: Setting up Fermilab VPN
 > This information has been merged into [another
 > page](VPN.html) and can be safely deleted.
 
-{#Setting-up-Fermilab-VPN}
+
 
 Setting up Fermilab VPN(#Setting-up-Fermilab-VPN)
 ==================================================================

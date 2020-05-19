@@ -7,7 +7,7 @@ title: ReleaseNotes065300
   v06.53.00   10/17/2017         [Release Notes](ReleaseNotes065300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_53_00-Release-Notes}
+
 
 sbndcode v06\_53\_00 Release Notes(#sbndcode-v06_53_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_53\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_53_00/sbndcode-v06_53_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -46,7 +46,7 @@ New features(#New-features)
 -   Features and changes for upcoming SBN workshop (GENIE offset and
     neutron killer)
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -55,7 +55,7 @@ Bug fixes(#Bug-fixes)
     [\#17917](/redmine/issues/17917 "Necessary Maintenance: Anatree needs updating to store information for multiple neutrinos per event/entry (Closed)"){.issue
     .tracker-9 .status-5 .priority-6 .priority-high2 .closed}
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.53.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065300){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_53_00}
+
 
 sbndcode v06\_53\_00(#sbndcode-v06_53_00)
 ----------------------------------------------------------
@@ -120,7 +120,7 @@ sbndcode v06\_53\_00(#sbndcode-v06_53_00)
     some tweaks before use
 -   2017-10-09 Thomas Brooks : Merge tag \'v06\_52\_00\' into develop
 
-{#sbndutil-v01_29_00}
+
 
 sbndutil v01\_29\_00(#sbndutil-v01_29_00)
 ----------------------------------------------------------

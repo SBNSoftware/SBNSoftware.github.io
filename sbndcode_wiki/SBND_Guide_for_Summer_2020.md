@@ -3,7 +3,7 @@ lang: en
 title: SBND Guide for Summer 2020
 ---
 
-{#SBND-Guide-for-Summer-2020}
+
 
 SBND Guide for Summer 2020(#SBND-Guide-for-Summer-2020)
 ========================================================================
@@ -43,7 +43,7 @@ other areas available:
     Remember that the `app` area has limited disk space, so please do
     not store any data file there, but only the code you need.
 
-{#1-Setup-the-SBND-environment}
+
 
 1. Setup the SBND environment(#1-Setup-the-SBND-environment)
 -----------------------------------------------------------------------------
@@ -63,7 +63,7 @@ it a name of your choice):\
     mkdir $MY_WORKDIR
     cd $MY_WORKDIR
 
-{#2-Run-existing-larsoft-software}
+
 
 2. Run existing larsoft software(#2-Run-existing-larsoft-software)
 -----------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ You can also list existing sbndcode versions by running
 
 In general, you should select the latest version.
 
-{#3-Install-and-develop-larsoft-software}
+
 
 3. Install and develop larsoft software(#3-Install-and-develop-larsoft-software)
 -------------------------------------------------------------------------------------------------
@@ -91,9 +91,9 @@ In general, you should select the latest version.
 You can skip this section if you don\'t need to develop sbndcode.
 
 [Details](#){#collapse-e478981d-show .collapsible
-.collapsed}[Details](#){#collapse-e478981d-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-e478981d .collapsed-text style="display:none;"}
+::: 
 After steps 1 and 2, you can start setting up your development area:\
 
     mkdir my_larsoft
@@ -126,7 +126,7 @@ The first time you build your code, you need to invoke `mrb i -j` (as
 done above), but every subsequent time you can just do
 `make install -j`, which is slightly faster.
 
-{#Build-your-own-LArSoft-plug-in}
+
 
 ### Build your own LArSoft plug-in(#Build-your-own-LArSoft-plug-in)
 
@@ -197,7 +197,7 @@ lines:\
 MORE INFORMATION TO BE WRITTEN.
 :::
 
-{#4-Generate-Single-Particle-Events}
+
 
 4. Generate Single Particle Events(#4-Generate-Single-Particle-Events)
 ---------------------------------------------------------------------------------------
@@ -259,7 +259,7 @@ Finally, we can run the detector simulation:\
 The output file `prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root`
 contains your generated events runt through detector simulation.
 
-{#5-Look-at-the-Generated-Events-in-the-Event-Display}
+
 
 5. Look at the Generated Events in the Event Display(#5-Look-at-the-Generated-Events-in-the-Event-Display)
 ---------------------------------------------------------------------------------------------------------------------------
@@ -276,7 +276,7 @@ Open a fresh terminal, log in to an `sbndgpvm` machine, and run\
 Click on \"Raw Digit\" in the top right, and you will the waveforms from
 your generated events.
 
-{#6-Generate-an-Analysis-TTree}
+
 
 6. Generate an Analysis TTree(#6-Generate-an-Analysis-TTree)
 -----------------------------------------------------------------------------
@@ -315,22 +315,22 @@ the PMTs positions:\
 
 !(/redmine/attachments/download/57668/hitdumper_demo_2.png)
 
-{#What-are-all-the-information-stored-in-the-TTree}
+
 
 ### What are all the information stored in the TTree?(#What-are-all-the-information-stored-in-the-TTree)
 
 All the variables stored are described
 [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112){.external}.
 
-{#Projects}
+
 
 Projects(#Projects)
 ------------------------------------
 
-[CRT Thresholds](#){#collapse-a718c8f3-show .collapsible .collapsed}[CRT
-Thresholds](#){#collapse-a718c8f3-hide .collapsible}
+[CRT Thresholds](#)[CRT
+Thresholds](#)
 
-::: {#collapse-a718c8f3 .collapsed-text style="display:none;"}
+::: 
 We need to determine the thresholds for the CRT. Since the two SiPMs
 that read the light are on the same side of a CRT strip, there may be a
 difference between tracks that cross the bar close to the SiPMs and
@@ -348,9 +348,9 @@ activity in time with the CRT hits.
 :::
 
 [Timing offsets](#){#collapse-8a9bc46b-show .collapsible
-.collapsed}[Timing offsets](#){#collapse-8a9bc46b-hide .collapsible}
+.collapsed}[Timing offsets](#)
 
-::: {#collapse-8a9bc46b .collapsed-text style="display:none;"}
+::: 
 This project can be entirely developed on MC, and the results of it can
 then be applied to data, when available.
 
@@ -368,7 +368,7 @@ The anatree module and the plotting script can them but run on a data
 event to check the same offsets on data.
 :::
 
-{#Questions}
+
 
 Questions?(#Questions)
 ---------------------------------------

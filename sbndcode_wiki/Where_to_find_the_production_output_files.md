@@ -3,12 +3,12 @@ lang: en
 title: Where to find the production output files
 ---
 
-{#Where-to-find-the-production-output-files}
+
 
 Where to find the production output files(#Where-to-find-the-production-output-files)
 ======================================================================================================
 
-{#Output}
+
 
 Output(#Output)
 ================================
@@ -19,27 +19,27 @@ instructions on how to use SAM definitions can be found at [How to
 create and use a SAM
 definition](_How_to_create_and_use_a_SAM_definition.html)
 
-{#MCP20}
+
 
 [MCP2.0](MCP2_0.html)(#MCP20)
 ==========================================================
 
-{#MCP21}
+
 
 [MCP2.1](MCP2_1.html)(#MCP21)
 ==========================================================
 
-{#MCP22}
+
 
 [MCP2.2](MCP2_2.html)(#MCP22)
 ==========================================================
 
-{#Workshop0320}
+
 
 [Workshop0320](Workshop_03_2020.html)(#Workshop0320)
 =================================================================================
 
-{#Old-locations}
+
 
 Old locations(#Old-locations)
 ==============================================

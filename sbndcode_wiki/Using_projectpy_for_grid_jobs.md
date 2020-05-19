@@ -3,7 +3,7 @@ lang: en
 title: Using projectpy for grid jobs
 ---
 
-{#Using-projectpy-for-Grid-Jobs}
+
 
 Using project.py for Grid Jobs(#Using-projectpy-for-Grid-Jobs)
 ===============================================================================
@@ -16,7 +16,7 @@ Redmine
 site](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide){.external}.
 This gives more detail on the specific elements.
 
-{#Before-Starting-Grid-Life}
+
 
 Before Starting Grid Life(#Before-Starting-Grid-Life)
 ----------------------------------------------------------------------
@@ -60,7 +60,7 @@ Here is a useful process to follow when you submit jobs to the gird.
     jobs have a read
     [here](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client){.external}.
 
-{#How-the-write-a-Projectpy-XML-file}
+
 
 How the write a Project.py XML file(#How-the-write-a-Projectpy-XML-file)
 -----------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ that you want to run.
 End with:\
 !(/redmine/attachments/download/40806/line42.png)
 
-{#Job-Submission}
+
 
 Job Submission.(#Job-Submission)
 -------------------------------------------------

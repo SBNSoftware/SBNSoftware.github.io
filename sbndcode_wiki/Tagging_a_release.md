@@ -3,12 +3,12 @@ lang: en
 title: Tagging a release
 ---
 
-{#Tagging-a-release}
+
 
 Tagging a release(#Tagging-a-release)
 ======================================================
 
-{#Summary}
+
 
 Summary(#Summary)
 ----------------------------------
@@ -20,7 +20,7 @@ Summary(#Summary)
 -   Finish release.
 -   Push to origin.
 
-{#Instructions}
+
 
 Instructions(#Instructions)
 --------------------------------------------
@@ -90,7 +90,7 @@ Instructions(#Instructions)
         git push origin develop master
         git push --tags
 
-{#Details-start_releasesh}
+
 
 Details: start\_release.sh(#Details-start_releasesh)
 ---------------------------------------------------------------------

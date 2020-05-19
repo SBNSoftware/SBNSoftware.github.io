@@ -3,7 +3,7 @@ lang: en
 title: Access to servers via SSH
 ---
 
-{#Access-to-servers-via-SSH}
+
 
 Access to servers via SSH(#Access-to-servers-via-SSH)
 ======================================================================
@@ -32,7 +32,7 @@ all of that (in bash shell) is:\
 
 .
 
-{#Access-as-a-different-user}
+
 
 Access as a different user(#Access-as-a-different-user)
 ------------------------------------------------------------------------

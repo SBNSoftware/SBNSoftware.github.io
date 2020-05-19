@@ -3,7 +3,7 @@ lang: en
 title: How to launch grid jobs
 ---
 
-{#How-to-launch-grid-jobs}
+
 
 How to launch grid jobs(#How-to-launch-grid-jobs)
 ==================================================================
@@ -102,7 +102,7 @@ The results of your job will end up in\
 
     /pnfs/sbnd/scratch/users/${USER}/output_${CLUSTER}.${PROCESS}
 
-{#Some-other-useful-commands}
+
 
 Some other useful commands:(#Some-other-useful-commands)
 =========================================================================
@@ -110,35 +110,35 @@ Some other useful commands:(#Some-other-useful-commands)
 For more details go to the [jobsub (client)
 documentation](Using_the_Client.html).
 
-{#See-how-your-jobs-are-doing}
+
 
 See how your jobs are doing(#See-how-your-jobs-are-doing)
 --------------------------------------------------------------------------
 
     jobsub_q -G sbnd --user="$USER"
 
-{#Remove-a-job}
+
 
 Remove a job(#Remove-a-job)
 --------------------------------------------
 
     jobsub_rm -G sbnd --jobid=<number of job, can get e.g. from previous question>
 
-{#Fetch-the-log-files}
+
 
 Fetch the log files(#Fetch-the-log-files)
 ----------------------------------------------------------
 
     jobsub_fetchlog -G sbnd --jobid <job id specified at runtime, e.g. 77457.0@fifebatch2.fnal.gov>
 
-{#Launching-LArSoft-jobs-also-in-large-numbers}
+
 
 Launching LArSoft jobs (also in large numbers)(#Launching-LArSoft-jobs-also-in-large-numbers)
 ==============================================================================================================
 
 To be written. Sorry.
 
-{#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers}
+
 
 Using `project.py` to launch LArSoft jobs (especially in large numbers)(#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers)
 =============================================================================================================================================================
@@ -165,7 +165,7 @@ need two things:
     instance, **which needs to be present in your `FHICL_FILE_PATH`
     path**.
 
-{#xml-file-preparation}
+
 
 xml file preparation(#xml-file-preparation)
 ------------------------------------------------------------
@@ -191,7 +191,7 @@ you are using. So it has to be present in\
 that case you need to use the tarball option in the file. You can make
 the tarball using the: /lar1ndutil/scripts/make\_tar\_lar1nd.sh ).
 
-{#fcl-file-preparation}
+
 
 .fcl file preparation(#fcl-file-preparation)
 -------------------------------------------------------------
@@ -205,7 +205,7 @@ to make install for project.py to pick it up.
 An example .fcl file is in:\
 lar1ndcode/lar1ndcode/JobConfigurations/prod\_eminus\_0.1\_0.9\_lar1nd.fcl
 
-{#Running}
+
 
 Running(#Running)
 ----------------------------------

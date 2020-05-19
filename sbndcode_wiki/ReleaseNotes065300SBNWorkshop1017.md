@@ -7,7 +7,7 @@ title: ReleaseNotes065300SBNWorkshop1017
   v06.53.00.SBNWorkshop1017   10/17/2017         [Release Notes](ReleaseNotes065300SBNWorkshop1017.html)
   --------------------------- ------------ -- -- ---------------------------------------------------------------------
 
-{#sbndcode-v06_53_00_SBNWorkshop1017-Release-Notes}
+
 
 sbndcode v06\_53\_00\_SBNWorkshop1017 Release Notes(#sbndcode-v06_53_00_SBNWorkshop1017-Release-Notes)
 =======================================================================================================================
@@ -30,21 +30,21 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_53\_00\_SBNWorkshop1017](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_53_00_SBNWorkshop1017/sbndcode-v06_53_00_SBNWorkshop1017.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for SBN workshop 10/17
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   BNB-like particle gun fcls
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -56,17 +56,17 @@ Bug fixes(#Bug-fixes)
     [\#17927](/redmine/issues/17927 "Bug: anatree fcl does not correctly store cosmic ray information for BNB + cosmic overlays (Closed)"){.issue
     .tracker-1 .status-5 .priority-6 .priority-high2 .closed}
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_53_00_SBNWorkshop1017}
+
 
 sbndcode v06\_53\_00\_SBNWorkshop1017(#sbndcode-v06_53_00_SBNWorkshop1017)
 -------------------------------------------------------------------------------------------
@@ -99,7 +99,7 @@ sbndcode v06\_53\_00\_SBNWorkshop1017(#sbndcode-v06_53_00_SBNWorkshop1017)
     [\#17918](/redmine/issues/17918 "Feature: Store true neutrino ID for each neutrino and each true particle in anatree (for matching) (Closed)"){.issue
     .tracker-2 .status-5 .priority-6 .priority-high2 .closed}
 
-{#sbndutil-v01_29_00_SBNWorkshop1017}
+
 
 sbndutil v01\_29\_00\_SBNWorkshop1017(#sbndutil-v01_29_00_SBNWorkshop1017)
 -------------------------------------------------------------------------------------------

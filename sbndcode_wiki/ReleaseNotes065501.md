@@ -7,7 +7,7 @@ title: ReleaseNotes065501
   v06.55.01   11/03/2017         [Release Notes](ReleaseNotes065501.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_55_01-Release-Notes}
+
 
 sbndcode v06\_55\_01 Release Notes(#sbndcode-v06_55_01-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_55\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_55_01/sbndcode-v06_55_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,12 +43,12 @@ New features(#New-features)
 -   Binaries no longer available for OSX 10.10
 -   Binaries are now available for OSX 10.11, 10.12 and SLF7
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
     v06.55.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065501){.external}
 -   genie\_xsec v2\_12\_8
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_55_01}
+
 
 sbndcode v06\_55\_01(#sbndcode-v06_55_01)
 ----------------------------------------------------------
@@ -73,7 +73,7 @@ sbndcode v06\_55\_01(#sbndcode-v06_55_01)
     single particle default configuration.
 -   2017-10-26 Thomas Brooks : Merge tag \'v06\_55\_00\' into develop
 
-{#sbndutil-v01_31_01}
+
 
 sbndutil v01\_31\_01(#sbndutil-v01_31_01)
 ----------------------------------------------------------

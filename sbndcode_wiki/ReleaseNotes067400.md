@@ -7,7 +7,7 @@ title: ReleaseNotes067400
   v06.74.00   04/17/2018         [Release Notes](ReleaseNotes067400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_74_00-Release-Notes}
+
 
 sbndcode v06\_74\_00 Release Notes(#sbndcode-v06_74_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_74\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_74_00/sbndcode-v06_74_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
 -   Default version only works for linux builds at the moment
 -   New C.I tests for gallery
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
     v06.74.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067400){.external}
 -   larbatch v01.38.03
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_74_00}
+
 
 sbndcode v06\_74\_00(#sbndcode-v06_74_00)
 ----------------------------------------------------------
@@ -94,7 +94,7 @@ sbndcode v06\_74\_00(#sbndcode-v06_74_00)
     compilation.
 -   2018-04-10 Thomas Brooks : Merge tag \'v06\_73\_00\' into develop
 
-{#sbndutil-v01_50_00}
+
 
 sbndutil v01\_50\_00(#sbndutil-v01_50_00)
 ----------------------------------------------------------

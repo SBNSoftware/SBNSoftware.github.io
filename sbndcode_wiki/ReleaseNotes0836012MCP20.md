@@ -7,7 +7,7 @@ title: ReleaseNotes0836012MCP20
   v08.36.01.2.MCP2.0   11/21/2019         [Release Notes](ReleaseNotes0836012MCP20.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-{#sbndcode-v08_36_01_2_MCP2_0-Release-Notes}
+
 
 sbndcode v08\_36\_01\_2\_MCP2\_0 Release Notes(#sbndcode-v08_36_01_2_MCP2_0-Release-Notes)
 ===========================================================================================================
@@ -28,19 +28,19 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_36\_01\_2\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_2_MCP2_0/sbndcode-v08_36_01_2_MCP2_0.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 2.0 (v2)
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -48,17 +48,17 @@ Bug fixes(#Bug-fixes)
 -   Add uncoated PMTs to channel mapping
 -   Add xARAPUCAs to optical digitization and trigger
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_36_01_2_MCP2_0}
+
 
 sbndcode v08\_36\_01\_2\_MCP2\_0(#sbndcode-v08_36_01_2_MCP2_0)
 -------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ sbndcode v08\_36\_01\_2\_MCP2\_0(#sbndcode-v08_36_01_2_MCP2_0)
 -   2019-11-21 Thomas Brooks : Merge tag \'v08\_36\_01\_1\_MCP2\_0\'
     into develop
 
-{#sbndutil-v08_36_01_2_MCP2_0}
+
 
 sbndutil v08\_36\_01\_2\_MCP2\_0(#sbndutil-v08_36_01_2_MCP2_0)
 -------------------------------------------------------------------------------

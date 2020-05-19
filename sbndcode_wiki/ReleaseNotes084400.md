@@ -7,7 +7,7 @@ title: ReleaseNotes084400
   v08.44.00   03/02/2020         [Release Notes](ReleaseNotes084400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_44_00-Release-Notes}
+
 
 sbndcode v08\_44\_00 Release Notes(#sbndcode-v08_44_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_44\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_44_00/sbndcode-v08_44_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
 -   Pandora slice ID added to cosmic ID tools.
 -   Changes to make geometry service thread safe.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
     v08.44.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084400){.external}
 -   larbatch v01.52.02
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_44_00}
+
 
 sbndcode v08\_44\_00(#sbndcode-v08_44_00)
 ----------------------------------------------------------
@@ -250,7 +250,7 @@ sbndcode v08\_44\_00(#sbndcode-v08_44_00)
 -   2019-11-19 Iker de Icaza Astiz : Add some features to be able to run
     Icarus files, *shouldn\'t* break anything with SBND
 
-{#sbndutil-v08_44_00}
+
 
 sbndutil v08\_44\_00(#sbndutil-v08_44_00)
 ----------------------------------------------------------

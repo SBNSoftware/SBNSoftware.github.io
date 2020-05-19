@@ -7,7 +7,7 @@ title: ReleaseNotes083200
   v08.32.00   10/07/2019         [Release Notes](ReleaseNotes083200.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_32_00-Release-Notes}
+
 
 sbndcode v08\_32\_00 Release Notes(#sbndcode-v08_32_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_32_00/sbndcode-v08_32_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -43,12 +43,12 @@ New features(#New-features)
 -   Update CRT filter to add condition that particle is reconstructed in
     the main readout window.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -57,12 +57,12 @@ Updated dependencies(#Updated-dependencies)
     v08.32.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083200){.external}
 -   larbatch v01.51.08
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_32_00}
+
 
 sbndcode v08\_32\_00(#sbndcode-v08_32_00)
 ----------------------------------------------------------
@@ -73,7 +73,7 @@ sbndcode v08\_32\_00(#sbndcode-v08_32_00)
     within the readout window
 -   2019-09-27 Thomas Brooks : Merge tag \'v08\_31\_01\' into develop
 
-{#sbndutil-v08_32_00}
+
 
 sbndutil v08\_32\_00(#sbndutil-v08_32_00)
 ----------------------------------------------------------

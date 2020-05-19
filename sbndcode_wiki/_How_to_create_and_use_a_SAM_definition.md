@@ -3,7 +3,7 @@ lang: en
 title: How to create and use a SAM definition
 ---
 
-{#How-to-create-and-use-a-SAM-dataset}
+
 
 How to create and use a SAM dataset(#How-to-create-and-use-a-SAM-dataset)
 ==========================================================================================
@@ -19,7 +19,7 @@ or the [MicroBooNE SAM
 Page](https://cdcvs.fnal.gov/redmine/projects/uboonecode/wiki/Sam){.external}\".
 There is plenty of useful information here if what below is not helpful.
 
-{#Check-that-you-are-a-SAM-user}
+
 
 Check that you are a SAM user(#Check-that-you-are-a-SAM-user)
 ------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ Check to see if you are a SAM user:
 If you are not SAM user ask Dom Brailsford
 (<d.brailsford@lancaster.ac.uk>) to add you.
 
-{#Quick-Guide}
+
 
 Quick Guide(#Quick-Guide)
 ------------------------------------------
@@ -69,7 +69,7 @@ filters. You can then locate a file using the locate-file command:\
 You can use tools such as ifdh\_fetch (described below) to copy the
 file(s) to your local directory. Make sure you have enough space!
 
-{#Make-sure-you-have-Certification}
+
 
 Make sure you have Certification(#Make-sure-you-have-Certification)
 ------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ Firstly to do some of the task below you will need a proxy so grab one
 of those. Follow the ritual from this page: [Get a certificate
 proxy](Get_a_certificate_proxy.html)
 
-{#Sam-Definitions}
+
 
 Sam Definitions(#Sam-Definitions)
 --------------------------------------------------
@@ -87,7 +87,7 @@ A definition links all files that are similar together so that you can a
 sample quickly. All our Monte Carlo samples will have definitions so
 that you can easily access them but you can make your own.
 
-{#Using-Definitions-and-Creating-Datasets}
+
 
 ### Using Definitions and Creating Datasets(#Using-Definitions-and-Creating-Datasets)
 
@@ -107,7 +107,7 @@ connected via
 to use it). You can create your own definitions and delete existing
 ones. You can run samweb help to see the list of options.
 
-{#Creating-a-definition}
+
 
 ### Creating a definition(#Creating-a-definition)
 
@@ -121,7 +121,7 @@ There is a whole bunch of meta-data parameters to choose from. You can
 add secondary meta-data parameters by using a \"and\" like in the
 example above.
 
-{#Meta-Data}
+
 
 Meta-Data(#Meta-Data)
 --------------------------------------
@@ -140,7 +140,7 @@ You can also search for files with similar meta-data using:
     sameweb list-files -e sbnd "metadata-parameter = value" 
     e.g. samweb list-files -e sbnd "defname = production_pre-production_0.5_mc_prodsingle_dualmu_3GeV_fixposcontained_openingangle1.0degree_reco" 
 
-{#Prestage-files}
+
 
 Prestage files(#Prestage-files)
 ------------------------------------------------
@@ -165,7 +165,7 @@ commands:
 
 If you want to only stage a specific amount you can add:\--max-files=n.
 
-{#Would-you-like-a-test-file}
+
 
 Would you like a test file?(#Would-you-like-a-test-file)
 -------------------------------------------------------------------------
@@ -186,7 +186,7 @@ through it in order to copy down multiple files e.g:\
 
 Make Sure you have setup fife\_utils to use this.
 
-{#Running-over-a-dataset-Grid-life}
+
 
 Running over a dataset. Grid life.(#Running-over-a-dataset-Grid-life)
 --------------------------------------------------------------------------------------
@@ -215,12 +215,12 @@ under the hood. Run the file using the usually command:
 
     project.py --xml samrunjob.xml --submit --clean
 
-{#Running-over-a-dataset-Local-life}
+
 
 Running over a dataset. Local life.(#Running-over-a-dataset-Local-life)
 ----------------------------------------------------------------------------------------
 
-{#A-quick-way-to-process-the-files}
+
 
 ### A quick way to process the files.(#A-quick-way-to-process-the-files)
 
@@ -250,7 +250,7 @@ project\
 
      samweb stop-project <name of project> 
 
-{#Copying-the-files-to-local-scratch}
+
 
 ### Copying the files to local scratch.(#Copying-the-files-to-local-scratch)
 
@@ -309,6 +309,6 @@ it quickly.
 
         samweb stop-project -e sbnd <prjname>
 
-{#Using-art}
+
 
 ### Using art.(#Using-art)

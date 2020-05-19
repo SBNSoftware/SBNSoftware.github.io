@@ -3,12 +3,12 @@ lang: en
 title: Deploying a release on CVMFS
 ---
 
-{#Deploying-a-release-on-CVMFS}
+
 
 Deploying a release on CVMFS(#Deploying-a-release-on-CVMFS)
 ============================================================================
 
-{#Summary}
+
 
 Summary(#Summary)
 ----------------------------------
@@ -18,7 +18,7 @@ Summary(#Summary)
 -   Add the new versions of `sbndcode` and `sbndutil`.
 -   Finish the transaction.
 
-{#Instructions}
+
 
 Instructions(#Instructions)
 --------------------------------------------
@@ -68,7 +68,7 @@ Instructions(#Instructions)
     the repository read/write or read only. You should not cd to any
     location in the repository when you\'re inside a transaction.
 
-{#sbnd_data}
+
 
 sbnd\_data(#sbnd_data)
 ---------------------------------------
@@ -79,7 +79,7 @@ sbnd\_data(#sbnd_data)
 
         rsync -r < user >@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/< version >* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
 
-{#Details-install_on_cvmfssh}
+
 
 Details: install\_on\_cvmfs.sh(#Details-install_on_cvmfssh)
 ----------------------------------------------------------------------------

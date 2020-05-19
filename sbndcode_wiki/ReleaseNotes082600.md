@@ -7,7 +7,7 @@ title: ReleaseNotes082600
   v08.26.00   07/22/2019         [Release Notes](ReleaseNotes082600.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_26_00-Release-Notes}
+
 
 sbndcode v08\_26\_00 Release Notes(#sbndcode-v08_26_00-Release-Notes)
 ======================================================================================
@@ -28,26 +28,26 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_26\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_26_00/sbndcode-v08_26_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   SBND semi-analytic model with full border corrections
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -55,12 +55,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.26.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082600){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_26_00}
+
 
 sbndcode v08\_26\_00(#sbndcode-v08_26_00)
 ----------------------------------------------------------
@@ -79,7 +79,7 @@ sbndcode v08\_26\_00(#sbndcode-v08_26_00)
 -   2019-06-11 Diego Gamez : modifications to update (VUV border
     effects) the optical semi-analytic mode
 
-{#sbndutil-v08_26_00}
+
 
 sbndutil v08\_26\_00(#sbndutil-v08_26_00)
 ----------------------------------------------------------

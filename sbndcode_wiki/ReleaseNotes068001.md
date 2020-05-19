@@ -7,7 +7,7 @@ title: ReleaseNotes068001
   v06.80.01   06/15/2018         [Release Notes](ReleaseNotes068001.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_80_01-Release-Notes}
+
 
 sbndcode v06\_80\_01 Release Notes(#sbndcode-v06_80_01-Release-Notes)
 ======================================================================================
@@ -28,21 +28,21 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_80\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_80_01/sbndcode-v06_80_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Added configuration for POMS
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
@@ -54,7 +54,7 @@ Bug fixes(#Bug-fixes)
     [\#19631](/redmine/issues/19631 "Bug: Project.py cannot run sbndcode jobs due to partially committed metadata features used in the Marc... (Resolved)"){.issue
     .tracker-1 .status-3 .priority-4 .priority-default}
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
     v06.80.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes068001){.external}
 -   larbatch v01.40.01
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_80_01}
+
 
 sbndcode v06\_80\_01(#sbndcode-v06_80_01)
 ----------------------------------------------------------
@@ -85,7 +85,7 @@ sbndcode v06\_80\_01(#sbndcode-v06_80_01)
     project.py metadata fcl params
 -   2018-06-01 Thomas Brooks : Merge tag \'v06\_80\_00\' into develop
 
-{#sbndutil-v01_56_01}
+
 
 sbndutil v01\_56\_01(#sbndutil-v01_56_01)
 ----------------------------------------------------------

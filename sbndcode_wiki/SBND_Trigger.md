@@ -3,7 +3,7 @@ lang: en
 title: SBND Trigger
 ---
 
-{#SBND-Trigger}
+
 
 SBND Trigger(#SBND-Trigger)
 ============================================

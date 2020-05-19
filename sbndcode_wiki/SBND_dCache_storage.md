@@ -3,7 +3,7 @@ lang: en
 title: SBND dCache storage
 ---
 
-{#SBND-dCache-storage}
+
 
 SBND dCache storage(#SBND-dCache-storage)
 ==========================================================
@@ -37,7 +37,7 @@ monitoring\...](https://fifemon.fnal.gov/monitor/dashboard/db/dcache-persistent-
 More details are in [FIFE
 wiki](Understanding_storage_volumes.html).
 
-{#Remote-access-to-dCache-areas}
+
 
 Remote access to dCache areas(#Remote-access-to-dCache-areas)
 ------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ achieved by a certificate.\
 This is the [same procedure](Get_a_certificate_proxy.html)
 as for getting credentials to submit jobs.
 
-{#Use-XRootD-to-access-dCache-ROOT-files}
+
 
 ### Use XRootD to access dCache ROOT files(#Use-XRootD-to-access-dCache-ROOT-files)
 

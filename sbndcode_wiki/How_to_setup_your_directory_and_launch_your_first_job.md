@@ -3,7 +3,7 @@ lang: en
 title: How to setup your directory and launch your first job
 ---
 
-{#How-to-setup-your-directory-and-launch-your-first-job}
+
 
 How to setup your directory and launch your first job(#How-to-setup-your-directory-and-launch-your-first-job)
 ==============================================================================================================================
@@ -35,9 +35,9 @@ You have here two main options:
 Both start with a [preliminary set
 up](#Set-up-the-general-SBND-environment), and then diverge.
 
-{#Set-up-the-general-SBND-environment}
 
-Set up the general SBND environment(#Set-up-the-general-SBND-environment) {#set-up-the-general-sbnd-environment .count}
+
+Set up the general SBND environment(#Set-up-the-general-SBND-environment) 
 ------------------------------------------------------------------------------------------
 
 The most important task this step performs is to tell UPS where to find
@@ -59,9 +59,9 @@ Two options:
 In doubt, go for CVMFS, as it is the one that works more widely and
 therefore a good habit(TM).
 
-{#Set-up-for-running-existing-code-production-like}
 
-Set up for running existing code (*production* like)(#Set-up-for-running-existing-code-production-like) {#set-up-for-running-existing-code-production-like .count}
+
+Set up for running existing code (*production* like)(#Set-up-for-running-existing-code-production-like) 
 ------------------------------------------------------------------------------------------------------------------------
 
 After the [general setup
@@ -106,9 +106,9 @@ which compiler was used; we usually have no choice
 > most optimised build available, with the recommended compiler;
 > supported since `v06_63_00`).
 
-{#Set-up-for-changing-or-adding-code-development-like}
 
-Set up for changing or adding code (*development* like)(#Set-up-for-changing-or-adding-code-development-like) {#set-up-for-changing-or-adding-code-development-like .count}
+
+Set up for changing or adding code (*development* like)(#Set-up-for-changing-or-adding-code-development-like) 
 ------------------------------------------------------------------------------------------------------------------------------
 
 When you need to change existing code or writing new one, you need to
@@ -129,9 +129,9 @@ need to be listed as a developer here on the Redmine page. Look at the
 **Overview** tab above and see if your name is listed under *Developer*.
 If you\'re not there, ask someone under *Manager* to add you.
 
-{#Development-setup}
 
-### Development setup(#Development-setup) {#development-setup .count}
+
+### Development setup(#Development-setup) 
 
 First you need to go through the [general setup
 above](#Set-up-the-general-SBND-environment).\
@@ -236,9 +236,9 @@ material](Instructions_for_Each_Session.html#Friday) (but
 keep in mind that names of packages, setup scripts and versions may need
 to be replaced by SBND specific ones).
 
-{#Run-only-setup}
 
-### Run-only setup(#Run-only-setup) {#run-only-setup .count}
+
+### Run-only setup(#Run-only-setup) 
 
 While the development environment set up above is good for almost
 everything, there are quirks that may be hard to understand.\

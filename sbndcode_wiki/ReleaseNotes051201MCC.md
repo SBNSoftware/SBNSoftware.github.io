@@ -7,7 +7,7 @@ title: ReleaseNotes051201MCC
   v05.12.01.MCC   03/08/2017         [Release Notes](ReleaseNotes051201MCC.html)
   --------------- ------------ -- -- ---------------------------------------------------------
 
-{#sbndcode-v05_12_01_MCC-Release-Notes}
+
 
 sbndcode v05\_12\_01\_MCC Release Notes(#sbndcode-v05_12_01_MCC-Release-Notes)
 ===============================================================================================
@@ -25,34 +25,34 @@ sbndcode v05\_12\_01\_MCC Release Notes(#sbndcode-v05_12_01_MCC-Release-Notes)
 
 [list of sbndcode releases](List_of_SBND_code_releases.html)
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 Frozen for MCC 0.5
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v05_12_01_MCC}
+
 
 sbndcode v05\_12\_01\_MCC(#sbndcode-v05_12_01_MCC)
 -------------------------------------------------------------------
@@ -234,7 +234,7 @@ sbndcode v05\_12\_01\_MCC(#sbndcode-v05_12_01_MCC)
     module instance
 -   2016-06-24 Corey Adams : Merge tag \'v05\_12\_01\' into develop
 
-{#sbndutil-v01_14_00_MCC}
+
 
 sbndutil v01\_14\_00\_MCC(#sbndutil-v01_14_00_MCC)
 -------------------------------------------------------------------

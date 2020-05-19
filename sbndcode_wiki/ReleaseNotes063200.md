@@ -7,7 +7,7 @@ title: ReleaseNotes063200
   v06.32.00   06/05/2017         [Release Notes](ReleaseNotes063200.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_32_00-Release-Notes}
+
 
 sbndcode v06\_32\_00 Release Notes(#sbndcode-v06_32_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_32_00/sbndcode-v06_32_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 First tagged release for LArSoft v06.
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -46,12 +46,12 @@ New features(#New-features)
 -   Adoption of ROOT 6
 -   Update to art 2.6
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -64,12 +64,12 @@ Updated dependencies(#Updated-dependencies)
     v2\_06\_03](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Release_Notes_20603){.external}
 -   larbatch v01\_30\_00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_32_00}
+
 
 sbndcode v06\_32\_00(#sbndcode-v06_32_00)
 ----------------------------------------------------------
@@ -195,7 +195,7 @@ sbndcode v06\_32\_00(#sbndcode-v06_32_00)
     display configuration.
 -   2016-07-12 Gianluca Petrillo : Update to LArSoft 5.14.01
 
-{#sbndutil-v01_15_00}
+
 
 sbndutil v01\_15\_00(#sbndutil-v01_15_00)
 ----------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes065100
   v06.51.00   09/27/2017         [Release Notes](ReleaseNotes065100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_51_00-Release-Notes}
+
 
 sbndcode v06\_51\_00 Release Notes(#sbndcode-v06_51_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_51\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_51_00/sbndcode-v06_51_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -53,12 +53,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v06.51.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes065100){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_51_00}
+
 
 sbndcode v06\_51\_00(#sbndcode-v06_51_00)
 ----------------------------------------------------------
@@ -67,7 +67,7 @@ sbndcode v06\_51\_00(#sbndcode-v06_51_00)
 -   2017-09-27 Thomas Brooks : Update to larsoft v06\_51\_00 (trivial)
 -   2017-09-26 Thomas Brooks : Merge tag \'v06\_50\_00\' into develop
 
-{#sbndutil-v01_27_00}
+
 
 sbndutil v01\_27\_00(#sbndutil-v01_27_00)
 ----------------------------------------------------------

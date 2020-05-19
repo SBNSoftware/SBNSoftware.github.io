@@ -3,7 +3,7 @@ lang: en
 title: Release management workflow
 ---
 
-{#Release-management-workflow}
+
 
 Release management workflow(#Release-management-workflow)
 ==========================================================================
@@ -14,7 +14,7 @@ build)](Jenkins_Build.html), [here
 (CVMFS)](Oasis.html), and
 [here](Uboone_data.html).)
 
-{#Required-permissions}
+
 
 Required permissions(#Required-permissions)
 ------------------------------------------------------------
@@ -30,7 +30,7 @@ in release management, these include:
     VPN](VPN.html) running if off site)
 -   Access to <https://scisoftportal.fnal.gov>
 
-{#Creating-a-new-release}
+
 
 Creating a new release(#Creating-a-new-release)
 ----------------------------------------------------------------
@@ -43,14 +43,14 @@ Creating a new release(#Creating-a-new-release)
     wiki](Updating_the_wiki_for_a_new_release.html)
 6.  Email users on sbnd-software
 
-{#sbnd_data}
+
 
 sbnd\_data(#sbnd_data)
 ---------------------------------------
 
 -   [Updating sbnd\_data](Updating_sbnd_data.html)
 
-{#Code-monitoring}
+
 
 Code monitoring(#Code-monitoring)
 --------------------------------------------------
@@ -58,7 +58,7 @@ Code monitoring(#Code-monitoring)
 -   [Commit emails](Commit_emails.html)
 -   [Continuous integration](Continuous_integration.html)
 
-{#Mailing-lists-you-should-be-on}
+
 
 Mailing lists you should be on(#Mailing-lists-you-should-be-on)
 --------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ Mailing lists you should be on(#Mailing-lists-you-should-be-on)
 -   LARSOFT
 -   ART-USERS
 
-{#Legacy-pages}
+
 
 Legacy pages(#Legacy-pages)
 --------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes0808002MCP10
   v08.08.00.2.MCP1.0   02/14/2019         [Release Notes](ReleaseNotes0808002MCP10.html)
   -------------------- ------------ -- -- ------------------------------------------------------------
 
-{#sbndcode-v08_08_00_2_MCP1_0-Release-Notes}
+
 
 sbndcode v08\_08\_00\_2\_MCP1\_0 Release Notes(#sbndcode-v08_08_00_2_MCP1_0-Release-Notes)
 ===========================================================================================================
@@ -28,34 +28,34 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_08\_00\_2\_MCP1\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_08_00_2_MCP1_0/sbndcode-v08_08_00_2_MCP1_0.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Freeze for MCP 1.0 (v2)
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_08_00_2_MCP1_0}
+
 
 sbndcode v08\_08\_00\_2\_MCP1\_0(#sbndcode-v08_08_00_2_MCP1_0)
 -------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ sbndcode v08\_08\_00\_2\_MCP1\_0(#sbndcode-v08_08_00_2_MCP1_0)
 -   2019-02-13 Thomas Brooks : Merge tag \'v08\_08\_00\_1\_MCP1\_0\'
     into develop
 
-{#sbndutil-v08_08_00_2_MCP1_0}
+
 
 sbndutil v08\_08\_00\_2\_MCP1\_0(#sbndutil-v08_08_00_2_MCP1_0)
 -------------------------------------------------------------------------------

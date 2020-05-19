@@ -3,14 +3,14 @@ lang: en
 title: MCC 1p0 prodmarley nue fermidirac
 ---
 
-{#MCC-1p0-prodmarley-nue-fermidirac}
+
 
 MCC 1p0 prodmarley nue fermidirac(#MCC-1p0-prodmarley-nue-fermidirac)
 ======================================================================================
 
-{#General-information}
 
-General information(#General-information) {#general-information .count}
+
+General information(#General-information) 
 ----------------------------------------------------------
 
 -   **Number of events: 100000**
@@ -18,62 +18,62 @@ General information(#General-information) {#general-information .count}
 -   **Number of events per job: 100**
 -   \*Number of job failures: \*
 
-{#Stage-information}
 
-Stage information(#Stage-information) {#stage-information .count}
+
+Stage information(#Stage-information) 
 ------------------------------------------------------
 
-{#gen}
 
-### gen(#gen) {#gen .count}
+
+### gen(#gen) 
 
 [View details\...](#){#collapse-b532b493-show .collapsible
-.collapsed}[View details\...](#){#collapse-b532b493-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-b532b493 .collapsed-text style="display:none;"}
+::: 
 -   \*fcl file: \*
 :::
 
-{#g4}
 
-### g4(#g4) {#g4 .count}
+
+### g4(#g4) 
 
 [View details\...](#){#collapse-6de61087-show .collapsible
-.collapsed}[View details\...](#){#collapse-6de61087-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-6de61087 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_g4\_sbnd.fcl**
 :::
 
-{#detsim}
 
-### detsim(#detsim) {#detsim .count}
+
+### detsim(#detsim) 
 
 [View details\...](#){#collapse-4850fa97-show .collapsible
-.collapsed}[View details\...](#){#collapse-4850fa97-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-4850fa97 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_detsim\_sbnd.fcl**
 :::
 
-{#reco}
 
-### reco(#reco) {#reco .count}
+
+### reco(#reco) 
 
 [View details\...](#){#collapse-bfbeabd0-show .collapsible
-.collapsed}[View details\...](#){#collapse-bfbeabd0-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-bfbeabd0 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_reco\_sbnd\_basic.fcl**
 :::
 
-{#anatree}
 
-### anatree(#anatree) {#anatree .count}
+
+### anatree(#anatree) 
 
 [View details\...](#){#collapse-3866ba63-show .collapsible
-.collapsed}[View details\...](#){#collapse-3866ba63-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-3866ba63 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_anatree\_sbnd.fcl**
 :::

@@ -7,7 +7,7 @@ title: ReleaseNotes066400
   v06.64.00   01/19/2018         [Release Notes](ReleaseNotes066400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_64_00-Release-Notes}
+
 
 sbndcode v06\_64\_00 Release Notes(#sbndcode-v06_64_00-Release-Notes)
 ======================================================================================
@@ -29,14 +29,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_64\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_64_00/sbndcode-v06_64_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -45,12 +45,12 @@ New features(#New-features)
     ARAPUCAs)
     -   See SBN DocDB 4884
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -60,12 +60,12 @@ Updated dependencies(#Updated-dependencies)
 -   larbatch v01.36.00
 -   sbnd\_data v01.01.00
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_64_00}
+
 
 sbndcode v06\_64\_00(#sbndcode-v06_64_00)
 ----------------------------------------------------------
@@ -76,7 +76,7 @@ sbndcode v06\_64\_00(#sbndcode-v06_64_00)
     full LDS
 -   2018-01-12 Thomas Brooks : Merge tag \'v06\_63\_00\' into develop
 
-{#sbndutil-v01_40_00}
+
 
 sbndutil v01\_40\_00(#sbndutil-v01_40_00)
 ----------------------------------------------------------
@@ -87,7 +87,7 @@ sbndutil v01\_40\_00(#sbndutil-v01_40_00)
     Whoops.
 -   2018-01-12 Thomas Brooks : Merge tag \'v01\_39\_00\' into develop
 
-{#sbnd_data-v01_01_00}
+
 
 sbnd\_data v01\_01\_00(#sbnd_data-v01_01_00)
 -------------------------------------------------------------

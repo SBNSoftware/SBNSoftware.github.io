@@ -3,7 +3,7 @@ lang: en
 title: Computing services and resources for SBND experts
 ---
 
-{#Computing-services-and-resources-for-SBND-experts}
+
 
 Computing services and resources for SBND experts(#Computing-services-and-resources-for-SBND-experts)
 ======================================================================================================================
@@ -15,7 +15,7 @@ Computing services and resources for SBND experts(#Computing-services-and-resour
     -   [SBND support group in
         ServiceNow](#SBND-support-group-in-ServiceNow)
 
-{#File-Transfer-Service}
+
 
 File Transfer Service(#File-Transfer-Service)
 --------------------------------------------------------------
@@ -25,7 +25,7 @@ File Transfer Service(#File-Transfer-Service)
 The status monitor is at:
 <http://sbndsamgpvm01.fnal.gov:8787/fts/status>
 
-{#SBND-support-group-in-ServiceNow}
+
 
 SBND support group in ServiceNow(#SBND-support-group-in-ServiceNow)
 ------------------------------------------------------------------------------------

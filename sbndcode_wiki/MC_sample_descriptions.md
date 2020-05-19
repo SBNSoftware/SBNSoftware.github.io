@@ -3,7 +3,7 @@ lang: en
 title: MC sample descriptions
 ---
 
-{#MC-sample-descriptions}
+
 
 MC sample descriptions(#MC-sample-descriptions)
 ================================================================
@@ -38,19 +38,19 @@ MC sample descriptions(#MC-sample-descriptions)
     -   [Supernova (marley) samples](#Supernova-marley-samples)
         -   [prodmarley\_nue\_fermidirac](#prodmarley_nue_fermidirac)
 
-{#Particle-gun-single-samples}
 
-Particle gun (single) samples(#Particle-gun-single-samples) {#particle-gun-single-samples .count}
+
+Particle gun (single) samples(#Particle-gun-single-samples) 
 ----------------------------------------------------------------------------
 
-{#prodsingle_mu_3GeV_fixposupstream_gaus20degree}
+
 
 ### prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree(#prodsingle_mu_3GeV_fixposupstream_gaus20degree)
 
 [Details](#){#collapse-8097cb59-show .collapsible
-.collapsed}[Details](#){#collapse-8097cb59-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-8097cb59 .collapsed-text style="display:none;"}
+::: 
 A rough basis case for particle generation, useful for making quick
 checks. The sample contains muons produced from a fixed position just
 infront of the upstream face of TPC 2 and fired with a fixed momentum
@@ -63,14 +63,14 @@ generally through going.
 !(/redmine/attachments/download/37680/prodsingle_mu_1.5GeV_fixposupstream_gaus10degree_evd.larortho3d.png)
 :::
 
-{#prodsingle_mu_3GeV_fixposapacross_gaus20degree}
+
 
 ### prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree(#prodsingle_mu_3GeV_fixposapacross_gaus20degree)
 
 [Details](#){#collapse-dc7eb08c-show .collapsible
-.collapsed}[Details](#){#collapse-dc7eb08c-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-dc7eb08c .collapsed-text style="display:none;"}
+::: 
 Similar to
 [prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree](#prodsingle_mu_3GeV_fixposupstream_gaus20degree)
 but the fixed start point is chosen to be just outside of the TPC2 wall
@@ -85,14 +85,14 @@ applied T0.
 !(/redmine/attachments/download/37681/prodsingle_mu_1.5GeV_fixposapacross_gaus10degree_evd.larortho3d.png)
 :::
 
-{#prodsingle_mu_10GeV_frontcorners_cornertocorner}
+
 
 ### prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner(#prodsingle_mu_10GeV_frontcorners_cornertocorner)
 
 [Details](#){#collapse-948ad891-show .collapsible
-.collapsed}[Details](#){#collapse-948ad891-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-948ad891 .collapsed-text style="display:none;"}
+::: 
 The sample is designed to test low level wire characteristics for every
 TPC wire. The fcl file produces a muon which is fired from an upstream
 corner of one of the TPCs and fired into the opposing corner in the same
@@ -112,14 +112,14 @@ deposition.
 !(/redmine/attachments/download/37685/prodsingle_mu_10GeV_frontcorners_cornertocorner_evd.larotho3d_D.png)
 :::
 
-{#prodsingle_mu_3GeV_uniformupstream_fixangleforwardgoing}
+
 
 ### prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing(#prodsingle_mu_3GeV_uniformupstream_fixangleforwardgoing)
 
 [Details](#){#collapse-4d597ff5-show .collapsible
-.collapsed}[Details](#){#collapse-4d597ff5-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-4d597ff5 .collapsed-text style="display:none;"}
+::: 
 The sample contains a set of straight muon trajectories which start just
 in front of the upstream face of the SBND TPC, who have a starting point
 which is uniformly distributed along a line parallel to the x-axis (no
@@ -132,14 +132,14 @@ LAr impurities and electron diffusion.
 !(/redmine/attachments/download/37686/prodsingle_mu_3GeV_uniformupstream_fixangleforwardgoing_evd.larotho3d.png)
 :::
 
-{#prodsingle_dualmu_5GeV_fixposcontained_openingangle10degree}
+
 
 ### prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree(#prodsingle_dualmu_5GeV_fixposcontained_openingangle10degree)
 
 [Details](#){#collapse-237738af-show .collapsible
-.collapsed}[Details](#){#collapse-237738af-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-237738af .collapsed-text style="display:none;"}
+::: 
 This sample contains two muons which have exactly the same
 characteristics except that one of the muon\'s initial angle in the XZ
 plane is slightly larger than the other. All input parameters are fixed
@@ -154,14 +154,14 @@ angle
 !(/redmine/attachments/download/37687/prodsingle_dualmu_5GeV_fixposcontained_openingangle1.0degree.evd.larortho3d.png)
 :::
 
-{#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle}
+
 
 ### prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle)
 
 [Details](#){#collapse-218e4745-show .collapsible
-.collapsed}[Details](#){#collapse-218e4745-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-218e4745 .collapsed-text style="display:none;"}
+::: 
 This sample contains single, fairly low momentum electrons fired
 isotropically from the centre of TPC2. Useful for comparing with
 [prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle).
@@ -169,14 +169,14 @@ isotropically from the centre of TPC2. Useful for comparing with
 !(/redmine/attachments/download/37688/prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle.evd.larortho3d.png)
 :::
 
-{#prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle}
+
 
 ### prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle)
 
 [Details](#){#collapse-9b4dda3c-show .collapsible
-.collapsed}[Details](#){#collapse-9b4dda3c-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-9b4dda3c .collapsed-text style="display:none;"}
+::: 
 Same as
 [prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle)
 but with a uniform momentum range of 200-1500 MeV.
@@ -184,14 +184,14 @@ but with a uniform momentum range of 200-1500 MeV.
 !(/redmine/attachments/download/38653/prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle.png)
 :::
 
-{#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle}
+
 
 ### prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle)
 
 [Details](#){#collapse-84e0146c-show .collapsible
-.collapsed}[Details](#){#collapse-84e0146c-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-84e0146c .collapsed-text style="display:none;"}
+::: 
 This sample contains single, fairly low momentum photons fired
 isotropically from the centre of TPC2. Useful for comparing with
 [prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle).
@@ -199,14 +199,14 @@ isotropically from the centre of TPC2. Useful for comparing with
 !(/redmine/attachments/download/37689/prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle.evd.larorotho3d.png)
 :::
 
-{#prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle}
+
 
 ### prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle)
 
 [Details](#){#collapse-6a79c7d2-show .collapsible
-.collapsed}[Details](#){#collapse-6a79c7d2-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-6a79c7d2 .collapsed-text style="display:none;"}
+::: 
 Same as
 [prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle)
 but with a uniform momentum range of 200-1500 MeV.
@@ -214,14 +214,14 @@ but with a uniform momentum range of 200-1500 MeV.
 !(/redmine/attachments/download/38652/prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle.png)
 :::
 
-{#prodsingle_mu_100-1257MeV_fixposcontained_fixangle}
+
 
 ### prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle(#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
 
 [Details](#){#collapse-deeb4671-show .collapsible
-.collapsed}[Details](#){#collapse-deeb4671-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-deeb4671 .collapsed-text style="display:none;"}
+::: 
 A single muon with a starting point inside of TPC 2, fixed initial
 angles (not parallel to the APA) and a uniform range of momentums chosen
 such that the muon should always be detectable but also always
@@ -232,14 +232,14 @@ PID.
 !(/redmine/attachments/download/37690/prodsingle_mu_100-1257MeV_fixposcontained_fixangle.evd.larorotho3d.png)
 :::
 
-{#prodsingle_proton_200-2250MeV_fixposcontained_fixangle}
+
 
 ### prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle(#prodsingle_proton_200-2250MeV_fixposcontained_fixangle)
 
 [Details](#){#collapse-5908c006-show .collapsible
-.collapsed}[Details](#){#collapse-5908c006-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-5908c006 .collapsed-text style="display:none;"}
+::: 
 Similar to
 [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
 but for protons. The lower momentum threshold for this sample was taken
@@ -250,14 +250,14 @@ NB the upper momentum bound could probably be increased more.
 !(/redmine/attachments/download/37691/prodsingle_proton_200-2250MeV_fixposcontained_fixangle.evd.larortho3d.png)
 :::
 
-{#prodsingle_pi_200-2250MeV_fixposcontained_fixangle}
+
 
 ### prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle(#prodsingle_pi_200-2250MeV_fixposcontained_fixangle)
 
 [Details](#){#collapse-0b76fdfc-show .collapsible
-.collapsed}[Details](#){#collapse-0b76fdfc-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-0b76fdfc .collapsed-text style="display:none;"}
+::: 
 Similar to
 [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
 but for pi+. The lower momentum threshold is taken from
@@ -271,14 +271,14 @@ could be improved.
 !(prodsingle_pi+_100-2250MeV_fixposcontained_fixangle.evd.larorotho3d.png)
 :::
 
-{#prodsingle_electron_100-2250MeV_fixposcontained_fixanglefcl}
+
 
 ### prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl(#prodsingle_electron_100-2250MeV_fixposcontained_fixanglefcl)
 
 [Details](#){#collapse-6ed0fe27-show .collapsible
-.collapsed}[Details](#){#collapse-6ed0fe27-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-6ed0fe27 .collapsed-text style="display:none;"}
+::: 
 Similar to
 [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
 but for electrons. Both momentum bounds are stolen from
@@ -290,14 +290,14 @@ the momentum bounds need improving.
 !(/redmine/attachments/download/37693/prodsingle_electron_100-2250MeV_fixposcontained_fixangle.evd.larortho3d.png)
 :::
 
-{#prodsingle_gamma_100-2250MeV_fixposcontained_fixanglefcl}
+
 
 ### prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl(#prodsingle_gamma_100-2250MeV_fixposcontained_fixanglefcl)
 
 [Details](#){#collapse-4ed726f3-show .collapsible
-.collapsed}[Details](#){#collapse-4ed726f3-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-4ed726f3 .collapsed-text style="display:none;"}
+::: 
 Similar to
 [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
 but for photons. Both momentum bounds are stolen from
@@ -309,19 +309,19 @@ momentum bounds need improving.
 !(/redmine/attachments/download/37694/prodsingle_gamma_100-2250MeV_fixposcontained_fixangle.evd.larortho3d.png)
 :::
 
-{#Beam-GENIE-samples}
 
-Beam (GENIE) samples(#Beam-GENIE-samples) {#beam-genie-samples .count}
+
+Beam (GENIE) samples(#Beam-GENIE-samples) 
 ----------------------------------------------------------
 
-{#prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1fcl}
+
 
 ### prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1fcl)
 
 [Details](#){#collapse-9cbf9d07-show .collapsible
-.collapsed}[Details](#){#collapse-9cbf9d07-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-9cbf9d07 .collapsed-text style="display:none;"}
+::: 
 A rough basis case for beam-related events. This fcl file produces
 single-interaction events (no pileup per ART event) within and including
 the cryostat. The flux files used are booster beam gsimple files in the
@@ -331,14 +331,14 @@ configuration.
 !(/redmine/attachments/download/38582/prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1.png)
 :::
 
-{#prodgenie_nu_spill_cryostat_gsimple-configb-v1fcl}
+
 
 ### prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nu_spill_cryostat_gsimple-configb-v1fcl)
 
 [Details](#){#collapse-46f359ff-show .collapsible
-.collapsed}[Details](#){#collapse-46f359ff-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-46f359ff .collapsed-text style="display:none;"}
+::: 
 Simulates genie booster beam events with full spill structure (5e12
 POT/spill) in the SBND cryostat volume. It uses gsimple flux files
 produced with the
@@ -348,14 +348,14 @@ configuration.
 !(/redmine/attachments/download/38624/prodgenie_nu_spill_cryostat_gsimple-configb-v1.png)
 :::
 
-{#prodgenie_nu_spill_world_gsimple-configc-v1fcl}
+
 
 ### prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl(#prodgenie_nu_spill_world_gsimple-configc-v1fcl)
 
 [Details](#){#collapse-9ff32373-show .collapsible
-.collapsed}[Details](#){#collapse-9ff32373-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-9ff32373 .collapsed-text style="display:none;"}
+::: 
 Simulates genie booster beam events with full spill structure (5e12
 POT/spill) in the full world volume which, as time of writing, includes
 a large amount of surrounding dirt and the SciBooNE hall. The idea here
@@ -371,14 +371,14 @@ maximum neutrino energy in the flux simulation) can travel before
 stopping.
 :::
 
-{#prodgenie_nue_spill_cryostat_gsimple-configb-v1fcl}
+
 
 ### prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nue_spill_cryostat_gsimple-configb-v1fcl)
 
 [Details](#){#collapse-dd090a00-show .collapsible
-.collapsed}[Details](#){#collapse-dd090a00-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-dd090a00 .collapsed-text style="display:none;"}
+::: 
 Uses the same configuration as
 [prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodgenie_nu_spill_cryostat_gsimple-configb-v1.fcl){.external}
 but swaps all muon neutrinos in the beam for electron neutrinos and
@@ -392,19 +392,19 @@ oscillated electron neutrinos from the intrinsic ones.
 !(/redmine/attachments/download/38651/prodgenie_nue_spill_cryostat_gsimple-configb-v1.png)
 :::
 
-{#Cosmic-ray-CORSIKA-samples}
 
-Cosmic ray (CORSIKA) samples(#Cosmic-ray-CORSIKA-samples) {#cosmic-ray-corsika-samples .count}
+
+Cosmic ray (CORSIKA) samples(#Cosmic-ray-CORSIKA-samples) 
 --------------------------------------------------------------------------
 
-{#prodcorsika_cosmics_cmcfcl}
+
 
 ### prodcorsika\_cosmics\_cmc.fcl(#prodcorsika_cosmics_cmcfcl)
 
 [Details](#){#collapse-3f0deff7-show .collapsible
-.collapsed}[Details](#){#collapse-3f0deff7-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-3f0deff7 .collapsed-text style="display:none;"}
+::: 
 Produces cosmic rays using the Cosmic Mass Composition (CMC) model
 implemented in CORSIKA. Only cosmic rays in which the primary ray goes
 near (within 250 cm) of the cryostat are simulated. A lot of useful
@@ -414,14 +414,14 @@ details are shown in a talk by Matt Bass ([Docdb
 !(/redmine/attachments/download/38625/prodcorsika_cosmics_cmc.png)
 :::
 
-{#prodcorsika_cosmics_cmc_frontbackcrt_mu_filterfcl}
+
 
 ### prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl(#prodcorsika_cosmics_cmc_frontbackcrt_mu_filterfcl)
 
 [Details](#){#collapse-c6883680-show .collapsible
-.collapsed}[Details](#){#collapse-c6883680-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-c6883680 .collapsed-text style="display:none;"}
+::: 
 Produces CMC cosmic rays with exactly the same settings as
 [prodcorsika\_cosmics\_cmc.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodcorsika_cosmics_cmc.fcl){.external}
 but tacks on an ART filter which demands that there is a muon in the
@@ -432,19 +432,19 @@ reason for the buffer box is to try and catch muons which pass through
 the front/back CRTs because of an upstream scatter.
 :::
 
-{#Overlayed-overlay-samples}
 
-Overlayed (overlay) samples(#Overlayed-overlay-samples) {#overlayed-overlay-samples .count}
+
+Overlayed (overlay) samples(#Overlayed-overlay-samples) 
 ------------------------------------------------------------------------
 
-{#prodoverlay_corsika_cosmics_cmc_genie_nu_spill_gsimple-configb-v1_cryostat}
+
 
 ### prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat(#prodoverlay_corsika_cosmics_cmc_genie_nu_spill_gsimple-configb-v1_cryostat)
 
 [Details](#){#collapse-cb07dea2-show .collapsible
-.collapsed}[Details](#){#collapse-cb07dea2-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-cb07dea2 .collapsed-text style="display:none;"}
+::: 
 Produces CORSIKA-based composite mass model cosmics overlayed in the
 same ART event with GENIE-based BNB neutrinos with full spill structure.
 The GENIE-produced interactions use the
@@ -455,19 +455,19 @@ cryostat volume.
 !(/redmine/attachments/download/38641/prodoverlay_corsika_cosmics_cmc_genie_nu_spill_gsimple-configb-v1_cryostat.png)
 :::
 
-{#Supernova-marley-samples}
 
-Supernova (marley) samples(#Supernova-marley-samples) {#supernova-marley-samples .count}
+
+Supernova (marley) samples(#Supernova-marley-samples) 
 ----------------------------------------------------------------------
 
-{#prodmarley_nue_fermidirac}
+
 
 ### prodmarley\_nue\_fermidirac(#prodmarley_nue_fermidirac)
 
 [Details](#){#collapse-1a58432a-show .collapsible
-.collapsed}[Details](#){#collapse-1a58432a-hide .collapsible}
+.collapsed}[Details](#)
 
-::: {#collapse-1a58432a .collapsed-text style="display:none;"}
+::: 
 Produces MARLEHY-based electron neutrino interactions from supernova
 events spread evenly throughout the detector and drawn from Fermi-Dirac
 statistics.

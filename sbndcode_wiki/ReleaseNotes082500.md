@@ -7,7 +7,7 @@ title: ReleaseNotes082500
   v08.25.00   07/15/2019         [Release Notes](ReleaseNotes082500.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_25_00-Release-Notes}
+
 
 sbndcode v08\_25\_00 Release Notes(#sbndcode-v08_25_00-Release-Notes)
 ======================================================================================
@@ -28,14 +28,14 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_25\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_25_00/sbndcode-v08_25_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
@@ -46,12 +46,12 @@ New features(#New-features)
     -   To run sbndcode on files generated with previous versions you
         will need to change the clock speed in crtsimmodules\_sbnd.fcl
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.25.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082500){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_25_00}
+
 
 sbndcode v08\_25\_00(#sbndcode-v08_25_00)
 ----------------------------------------------------------
@@ -83,7 +83,7 @@ sbndcode v08\_25\_00(#sbndcode-v08_25_00)
 -   2019-06-19 Laura Paulucci Marinho : ophit module and corrections to
     optical digitizer
 
-{#sbndutil-v08_25_00}
+
 
 sbndutil v08\_25\_00(#sbndutil-v08_25_00)
 ----------------------------------------------------------

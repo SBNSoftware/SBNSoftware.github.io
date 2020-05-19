@@ -7,7 +7,7 @@ title: ReleaseNotes051201stable
   v05.12.01.stable   04/11/2017         [Release Notes](ReleaseNotes051201stable.html)
   ------------------ ------------ -- -- ------------------------------------------------------------
 
-{#sbndcode-v05_12_01_stable-Release-Notes}
+
 
 sbndcode v05\_12\_01\_stable Release Notes(#sbndcode-v05_12_01_stable-Release-Notes)
 =====================================================================================================
@@ -25,34 +25,34 @@ sbndcode v05\_12\_01\_stable Release Notes(#sbndcode-v05_12_01_stable-Release-No
 
 [list of sbndcode releases](List_of_SBND_code_releases.html)
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 Last v05 before moving to larsoft v06
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v05_12_01_stable}
+
 
 sbndcode v05\_12\_01\_stable(#sbndcode-v05_12_01_stable)
 -------------------------------------------------------------------------
@@ -63,7 +63,7 @@ sbndcode v05\_12\_01\_stable(#sbndcode-v05_12_01_stable)
 -   2017-03-01 Thomas Brooks : Merge tag \'v05\_12\_01\_MCC\' into
     develop
 
-{#sbndutil-v01_14_00_stable}
+
 
 sbndutil v01\_14\_00\_stable(#sbndutil-v01_14_00_stable)
 -------------------------------------------------------------------------

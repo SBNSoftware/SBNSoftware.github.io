@@ -3,7 +3,7 @@ lang: en
 title: SAM
 ---
 
-{#SAM-for-SBND}
+
 
 SAM for SBND(#SAM-for-SBND)
 ============================================
@@ -16,7 +16,7 @@ SAM for SBND(#SAM-for-SBND)
 This page collects information about the use, setting and administration
 of the SAM service for SBND.
 
-{#SAM-queries}
+
 
 SAM queries(#SAM-queries)
 ------------------------------------------
@@ -46,7 +46,7 @@ be no need to specify `--experiment=sbnd`. For example:\
       Unauthenticated
       Roles: None
 
-{#Administration}
+
 
 Administration(#Administration)
 ------------------------------------------------

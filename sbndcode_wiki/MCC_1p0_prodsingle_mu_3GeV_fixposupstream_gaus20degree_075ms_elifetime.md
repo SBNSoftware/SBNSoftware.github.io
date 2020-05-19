@@ -4,14 +4,14 @@ title: MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree 075ms
   elifetime
 ---
 
-{#MCC-1p0-prodsingle-mu-3GeV-fixposupstream-gaus20degree-075ms-elifetime}
+
 
 MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree 075ms elifetime(#MCC-1p0-prodsingle-mu-3GeV-fixposupstream-gaus20degree-075ms-elifetime)
 ================================================================================================================================================================
 
-{#General-information}
 
-General information(#General-information) {#general-information .count}
+
+General information(#General-information) 
 ----------------------------------------------------------
 
 -   \*Number of events: \*
@@ -19,62 +19,62 @@ General information(#General-information) {#general-information .count}
 -   \*Number of events per job: \*
 -   \*Number of job failures: \*
 
-{#Stage-information}
 
-Stage information(#Stage-information) {#stage-information .count}
+
+Stage information(#Stage-information) 
 ------------------------------------------------------
 
-{#gen}
 
-### gen(#gen) {#gen .count}
+
+### gen(#gen) 
 
 [View details\...](#){#collapse-20555c6e-show .collapsible
-.collapsed}[View details\...](#){#collapse-20555c6e-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-20555c6e .collapsed-text style="display:none;"}
+::: 
 -   \*fcl file: \*
 :::
 
-{#g4}
 
-### g4(#g4) {#g4 .count}
+
+### g4(#g4) 
 
 [View details\...](#){#collapse-11363500-show .collapsible
-.collapsed}[View details\...](#){#collapse-11363500-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-11363500 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_g4\_sbnd.fcl**
 :::
 
-{#detsim}
 
-### detsim(#detsim) {#detsim .count}
+
+### detsim(#detsim) 
 
 [View details\...](#){#collapse-885d942e-show .collapsible
-.collapsed}[View details\...](#){#collapse-885d942e-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-885d942e .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_detsim\_sbnd.fcl**
 :::
 
-{#reco}
 
-### reco(#reco) {#reco .count}
+
+### reco(#reco) 
 
 [View details\...](#){#collapse-207b4995-show .collapsible
-.collapsed}[View details\...](#){#collapse-207b4995-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-207b4995 .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_reco\_sbnd\_basic.fcl**
 :::
 
-{#anatree}
 
-### anatree(#anatree) {#anatree .count}
+
+### anatree(#anatree) 
 
 [View details\...](#){#collapse-bc0e96fa-show .collapsible
-.collapsed}[View details\...](#){#collapse-bc0e96fa-hide .collapsible}
+.collapsed}[View details\...](#)
 
-::: {#collapse-bc0e96fa .collapsed-text style="display:none;"}
+::: 
 -   **fcl file: standard\_anatree\_sbnd.fcl**
 :::

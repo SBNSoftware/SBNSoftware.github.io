@@ -3,7 +3,7 @@ lang: en
 title: Viewing events remotely with VNC
 ---
 
-{#Viewing-events-remotely-with-VNC}
+
 
 Viewing events remotely with VNC(#Viewing-events-remotely-with-VNC)
 ====================================================================================
@@ -43,9 +43,9 @@ instructions:
     already installed, an example of how to use it is shown at the
     bottom)
 
-{#On-your-chosen-sbndgpvm-ie-ssh-to-it}
 
-On your chosen sbndgpvm (i.e. ssh to it)(#On-your-chosen-sbndgpvm-ie-ssh-to-it) {#on-your-chosen-sbndgpvm-i.e.-ssh-to-it .count}
+
+On your chosen sbndgpvm (i.e. ssh to it)(#On-your-chosen-sbndgpvm-ie-ssh-to-it) 
 ------------------------------------------------------------------------------------------------
 
 Firstly, check whether your chosen VNC server number is available. Run
@@ -80,9 +80,9 @@ Add the following snippet to the bottom of your \$HOME/.profile or
       fi
     fi
 
-{#On-your-local-machine-ie-open-a-new-terminal-window-and-do-not-ssh-anywhere}
 
-On your local machine (i.e. open a new terminal window and do not ssh anywhere)(#On-your-local-machine-ie-open-a-new-terminal-window-and-do-not-ssh-anywhere) {#on-your-local-machine-i.e.-open-a-new-terminal-window-and-do-not-ssh-anywhere .count}
+
+On your local machine (i.e. open a new terminal window and do not ssh anywhere)(#On-your-local-machine-ie-open-a-new-terminal-window-and-do-not-ssh-anywhere) 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Add the following snippet to the bottom of your \$HOME/.ssh/config.
@@ -116,9 +116,9 @@ machine.
 
 **You should now be permanently setup to use VNC.**
 
-{#How-to-use-your-VNC-server}
 
-How to use your VNC server(#How-to-use-your-VNC-server) {#how-to-use-your-vnc-server .count}
+
+How to use your VNC server(#How-to-use-your-VNC-server) 
 ------------------------------------------------------------------------
 
 ssh to your chosen dunegpvm using its new shortened name e.g.\
@@ -155,16 +155,16 @@ viewer open and pointing to localhost:5901 on your local machine.**
 
 ------------------------------------------------------------------------
 
-{#Old-ancient-instructions}
+
 
 Old (ancient) instructions(#Old-ancient-instructions)
 ----------------------------------------------------------------------
 
 (Adapted from the 35 ton tutorials by Karl Warburton)
 
-{#Generate-some-events-to-view}
 
-### Generate some events to view(#Generate-some-events-to-view) {#generate-some-events-to-view .count}
+
+### Generate some events to view(#Generate-some-events-to-view) 
 
 1.  [Setup your
     directory](How_to_setup_your_directory_and_launch_your_first_job.html).
@@ -191,9 +191,9 @@ Old (ancient) instructions(#Old-ancient-instructions)
 
         lar -c standard_reco_sbnd_basic.fcl -s prodsingle..._..._...
 
-{#Viewing-events-with-VNC}
 
-### Viewing events with VNC(#Viewing-events-with-VNC) {#viewing-events-with-vnc .count}
+
+### Viewing events with VNC(#Viewing-events-with-VNC) 
 
 Running GUIs (e.g. TBrowser, Event display) on the gpmvs can be very
 slow, using a VNC server speeds things up significantly.

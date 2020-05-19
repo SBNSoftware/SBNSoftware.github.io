@@ -7,7 +7,7 @@ title: ReleaseNotes066901
   v06.69.01   03/01/2018         [Release Notes](ReleaseNotes066901.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v06_69_01-Release-Notes}
+
 
 sbndcode v06\_69\_01 Release Notes(#sbndcode-v06_69_01-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v06\_69\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_69_01/sbndcode-v06_69_01.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -54,12 +54,12 @@ Updated dependencies(#Updated-dependencies)
     v06.69.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066901){.external}
 -   larbatch v06\_37\_01
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v06_69_01}
+
 
 sbndcode v06\_69\_01(#sbndcode-v06_69_01)
 ----------------------------------------------------------
@@ -87,7 +87,7 @@ sbndcode v06\_69\_01(#sbndcode-v06_69_01)
     standard\_reco\_sbnd\_basic.fcl
 -   2018-02-23 Thomas Brooks : Merge tag \'v06\_69\_00\' into develop
 
-{#sbndutil-v01_45_01}
+
 
 sbndutil v01\_45\_01(#sbndutil-v01_45_01)
 ----------------------------------------------------------

@@ -7,7 +7,7 @@ title: ReleaseNotes081800
   v08.18.00   05/03/2019         [Release Notes](ReleaseNotes081800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_18_00-Release-Notes}
+
 
 sbndcode v08\_18\_00 Release Notes(#sbndcode-v08_18_00-Release-Notes)
 ======================================================================================
@@ -28,7 +28,7 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_18\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_18_00/sbndcode-v08_18_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
@@ -36,19 +36,19 @@ Purpose(#Purpose)
 -   Weekly release
 -   Update to art v3.02.05 (s83)
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
 -   Optical detector simulation and digitization.
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
     v08.18.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081800){.external}
 -   larbatch v01.51.03
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_18_00}
+
 
 sbndcode v08\_18\_00(#sbndcode-v08_18_00)
 ----------------------------------------------------------
@@ -95,7 +95,7 @@ sbndcode v08\_18\_00(#sbndcode-v08_18_00)
 -   2019-01-25 Laura Paulucci marinho : Optical waveforms and early
     analysis modules
 
-{#sbndutil-v08_18_00}
+
 
 sbndutil v08\_18\_00(#sbndutil-v08_18_00)
 ----------------------------------------------------------

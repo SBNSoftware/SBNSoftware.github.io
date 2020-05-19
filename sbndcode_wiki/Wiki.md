@@ -3,7 +3,7 @@ lang: en
 title: Wiki
 ---
 
-{#SBND-code}
+
 
 SBND code(#SBND-code)
 ======================================
@@ -27,9 +27,9 @@ SBND was formerly known as LAr1-ND, and it had its own redmine project.\
 The old wiki can be reached at:
 <https://cdcvs.fnal.gov/redmine/projects/lar1ndcode/wiki> .
 
-{#Developing-SBND-code}
 
-Developing SBND code(#Developing-SBND-code) {#developing-sbnd-code .count}
+
+Developing SBND code(#Developing-SBND-code) 
 ------------------------------------------------------------
 
 -   [The SBND Guide to using
@@ -44,14 +44,14 @@ Developing SBND code(#Developing-SBND-code) {#developing-sbnd-code .count}
     release](When_a_new_LArSoft_release_is_available_and_you_want_to_develop_against_the_new_LArSoft_release.html)
 -   [Project List](Project_List.html)
 
-{#Computing-resources}
 
-[Computing resources](Computing_resources.html)(#Computing-resources) {#computing-resources .count}
+
+[Computing resources](Computing_resources.html)(#Computing-resources) 
 --------------------------------------------------------------------------------------------------
 
-{#Content-of-the-packages}
 
-Content of the packages(#Content-of-the-packages) {#content-of-the-packages .count}
+
+Content of the packages(#Content-of-the-packages) 
 ------------------------------------------------------------------
 
 -   [Configuration of SBND jobs and
@@ -62,22 +62,22 @@ Content of the packages(#Content-of-the-packages) {#content-of-the-packages .cou
 -   [Detector geometry](Detector_geometry.html) description
     files
 
-{#Monte-Carlo-productions}
 
-[Monte Carlo productions](Monte_Carlo_productions.html)(#Monte-Carlo-productions) {#monte-carlo-productions .count}
+
+[Monte Carlo productions](Monte_Carlo_productions.html)(#Monte-Carlo-productions) 
 --------------------------------------------------------------------------------------------------------------
 
-{#Accessing-Files-and-Using-SAM}
 
-Accessing Files and Using SAM(#Accessing-Files-and-Using-SAM) {#accessing-files-and-using-sam .count}
+
+Accessing Files and Using SAM(#Accessing-Files-and-Using-SAM) 
 ------------------------------------------------------------------------------
 
 -   [How to create and use a SAM
     definition](_How_to_create_and_use_a_SAM_definition.html)
 
-{#Running-Jobs-on-the-grid}
 
-Running Jobs on the grid(#Running-Jobs-on-the-grid) {#running-jobs-on-the-grid .count}
+
+Running Jobs on the grid(#Running-Jobs-on-the-grid) 
 --------------------------------------------------------------------
 
 -   [Using project.py for Grid
@@ -87,9 +87,9 @@ Running Jobs on the grid(#Running-Jobs-on-the-grid) {#running-jobs-on-the-grid .
 -   [Vito New thing - To Do](Vito_New_thing_-_To_Do_.html){.wiki-page
     .new}
 
-{#Useful-Tidbits-of-Information}
 
-Useful Tidbits of Information.(#Useful-Tidbits-of-Information) {#useful-tidbits-of-information. .count}
+
+Useful Tidbits of Information.(#Useful-Tidbits-of-Information) 
 -------------------------------------------------------------------------------
 
 -   [How to get Geant4 standalone working on
@@ -106,22 +106,22 @@ Useful Tidbits of Information.(#Useful-Tidbits-of-Information) {#useful-tidbits-
 -   [Known quick fixes](Known_quick_fixes.html)
 -   [TITUS Event Display](TITUS_Event_Display.html)
 
-{#Code-management-and-deployment-stuff}
 
-[Code management and deployment stuff](Code_management_and_deployment_stuff.html)(#Code-management-and-deployment-stuff) {#code-management-and-deployment-stuff .count}
+
+[Code management and deployment stuff](Code_management_and_deployment_stuff.html)(#Code-management-and-deployment-stuff) 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-{#Newbie-Material}
 
-[Newbie Material](Newbie_Material.html)(#Newbie-Material) {#newbie-material .count}
+
+[Newbie Material](Newbie_Material.html)(#Newbie-Material) 
 --------------------------------------------------------------------------------------
 
-{#Vertical-Slice-Test}
 
-[Vertical Slice Test](Vertical_Slice_Test.html)(#Vertical-Slice-Test) {#vertical-slice-test .count}
+
+[Vertical Slice Test](Vertical_Slice_Test.html)(#Vertical-Slice-Test) 
 --------------------------------------------------------------------------------------------------
 
-{#SBND-Assembly-Master-Document}
 
-[SBND Assembly Master Document](SBND_Assembly_Master_Document.html){.wiki-page .new}(#SBND-Assembly-Master-Document) {#sbnd-assembly-master-document .count}
+
+[SBND Assembly Master Document](SBND_Assembly_Master_Document.html){.wiki-page .new}(#SBND-Assembly-Master-Document) 
 -------------------------------------------------------------------------------------------------------------------------------------

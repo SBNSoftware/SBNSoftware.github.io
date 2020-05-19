@@ -3,7 +3,7 @@ lang: en
 title: Updating the wiki for a new release
 ---
 
-{#Updating-the-wiki-for-a-new-release}
+
 
 Updating the wiki for a new release(#Updating-the-wiki-for-a-new-release)
 ==========================================================================================

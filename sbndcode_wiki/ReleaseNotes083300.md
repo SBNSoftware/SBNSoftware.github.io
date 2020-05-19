@@ -7,7 +7,7 @@ title: ReleaseNotes083300
   v08.33.00   10/24/2019         [Release Notes](ReleaseNotes083300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-{#sbndcode-v08_33_00-Release-Notes}
+
 
 sbndcode v08\_33\_00 Release Notes(#sbndcode-v08_33_00-Release-Notes)
 ======================================================================================
@@ -28,24 +28,24 @@ releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
 v08\_33\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_33_00/sbndcode-v08_33_00.html){.external}
 
-{#Purpose}
+
 
 Purpose(#Purpose)
 ----------------------------------
 
 -   Weekly release
 
-{#New-features}
+
 
 New features(#New-features)
 --------------------------------------------
 
-{#Bug-fixes}
+
 
 Bug fixes(#Bug-fixes)
 --------------------------------------
 
-{#Updated-dependencies}
+
 
 Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
@@ -53,12 +53,12 @@ Updated dependencies(#Updated-dependencies)
 -   [LArSoft
     v08.33.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083300){.external}
 
-{#Change-List}
+
 
 Change List(#Change-List)
 ==========================================
 
-{#sbndcode-v08_33_00}
+
 
 sbndcode v08\_33\_00(#sbndcode-v08_33_00)
 ----------------------------------------------------------
@@ -72,7 +72,7 @@ sbndcode v08\_33\_00(#sbndcode-v08_33_00)
     pandora configuration scripts directory in SBNDCode
 -   2019-10-17 Thomas Brooks : Merge tag \'v08\_32\_02\' into develop
 
-{#sbndutil-v08_33_00}
+
 
 sbndutil v08\_33\_00(#sbndutil-v08_33_00)
 ----------------------------------------------------------
