@@ -29,6 +29,18 @@ In order to get the correct repos, mrb will need the Github address.
 
 ```mrb g https://github.com/SBNSoftware/<sbncode, sbndcode, icaruscode>```
 
+#### 4. Clean working area from previous installs and buils
+
+At this moment the best to get going again is to completely remove your localProducts and build directory, and create them from scratch.
+
+```
+rm -rf build_*/  
+rm -rf localProducts_*/
+mrb newDev -v vXX_XX_XX -q QQ:QQ # replace with the needed version and quals, along with any other relevant options
+```
+
+#### 5. Verify credentials and configs
+
 Before you commit and push to the github repository please verify your credentials. The following command should display the email address on your Github account.
 
 ```git config --global user.email ```
