@@ -35,3 +35,19 @@ Before you commit and push to the github repository please verify your credentia
 
 
 For more information about Github accounts and email can be found [here](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address)
+
+
+#### Troubleshooting
+
+One user reported issues when running `mrbsetenv`:
+
+```
+ERROR:
+ERROR: exceeded loop limit (200) attempting to resolve qualifiers for packages.
+ERROR: Unresolved packages:
+ERROR:
+```
+
+*Solution* 
+- under `srcs` folder remove the dot files: `.mrb*` 
+- verify that CMakeLists.txt doesn't contain duplicated entries and that it only lists the repositories that you've cloned.
