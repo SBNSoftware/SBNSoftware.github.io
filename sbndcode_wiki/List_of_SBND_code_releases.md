@@ -8,34 +8,21 @@ title: List of SBND code releases
 SBND code organization(#SBND-code-organization)
 ================================================================
 
-SBND code repository (`sbndcode`) currently depends on `sbndutil`,
-`sbnd_data`, `larsoft`, and `cetbuildtools` (for building). In all
-releases with number greater than 3.8.2, the `lar1ncode`/`sbndcode`
-number matches the underlying `larsoft` version.\
-`sbndutil` versions are independent. Also, `sbndutil` is an \"optional\"
-dependency. So, on [Fermilab
-GPVMs](Computing_resources.html#Where-to-work-interactive-nodes-GPVM)
-it will be set up but offsite it will not be set up unless it is
-available: usually it is not. If you are building your own `sbndcode`
-with MRB, you can check out also `sbndutil` (`mrb g sbndutil`) and when
-you build the area `sbndutil` will be available to you.
+The SBND code repository (`sbndcode`) currently depends on `sbndutil`,`sbnd_data`, `larsoft`, and `cetbuildtools` (for building). In all releases with number greater than 3.8.2, the `lar1ncode`/`sbndcode` number matches the underlying `larsoft` version.\
+`sbndutil` versions are independent. Also, `sbndutil` is an \"optional\" dependency. So, on [Fermilab GPVMs](Computing_resources.html#Where-to-work-interactive-nodes-GPVM) it will be set up but offsite it will not be set up unless it is available: usually it is not. If you are building your own `sbndcode` with MRB, you can check out also `sbndutil` (`mrb g sbndutil`) and when you build the area `sbndutil` will be available to you.
 
-See the (soon to be done) section on getting `sbndcode` offsite for more
-detailed information.
-
-
+See the (soon to be done) section on getting `sbndcode` offsite for more detailed information.
 
 List of `sbndcode` releases(#List-of-sbndcode-releases)
 ------------------------------------------------------------------------
 
-**Release manager**: [Andrew
-Scarff](mailto:a.scarff@sheffield.ac.uk)] ( was
-[Thomas Brooks](mailto:tom.g.r.brooks@gmail.com) )
+**Release manager**: [Andrew Scarff](mailto:a.scarff@sheffield.ac.uk) (was [Thomas Brooks](mailto:tom.g.r.brooks@gmail.com))
 
 These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v08_52_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085200.html)   
   |`v08_51_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085100.html) 
   |`v08_50_02`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085002.html) 
   |`v08_50_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085001.html) 
