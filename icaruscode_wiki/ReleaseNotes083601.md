@@ -4,12 +4,12 @@ title: ReleaseNotes083601
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.36.01   11/27/2019         [Release Notes](ReleaseNotes083601.html){.wiki-page}
+  v08.36.01   11/27/2019         [Release Notes](ReleaseNotes083601.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_36_01-Release-Notes}
 
-icaruscode v08\_36\_01 Release Notes[¶](#icaruscode-v08_36_01-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_36\_01 Release Notes(#icaruscode-v08_36_01-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,50 +24,50 @@ icaruscode v08\_36\_01 Release Notes[¶](#icaruscode-v08_36_01-Release-Notes){.w
     -   [icarusutil v08\_36\_01](#icarusutil-v08_36_01)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_36\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01/icaruscode-v08_36_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Stay current with LArSoft - latest version of art
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.36.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083601){.external}
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_36\_01\")
 
-[]{#icaruscode-v08_36_01}
 
-icaruscode v08\_36\_01[¶](#icaruscode-v08_36_01){.wiki-anchor}
+
+icaruscode v08\_36\_01(#icaruscode-v08_36_01)
 --------------------------------------------------------------
 
 -   2019-11-25 - Tracy Usher - Merge branch \'develop\'
@@ -93,9 +93,9 @@ icaruscode v08\_36\_01[¶](#icaruscode-v08_36_01){.wiki-anchor}
     relevant for tpc
 -   2019-11-01 - drinkingkazu - change discriminator threshold
 
-[]{#icarusutil-v08_36_01}
 
-icarusutil v08\_36\_01[¶](#icarusutil-v08_36_01){.wiki-anchor}
+
+icarusutil v08\_36\_01(#icarusutil-v08_36_01)
 --------------------------------------------------------------
 
 -   2019-11-25 - Tracy Usher - Updating to LArSoft v08\_36\_01

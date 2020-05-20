@@ -3,9 +3,9 @@ lang: en
 title: Software parameters and settings
 ---
 
-[]{#Software-parameters-and-settings}
 
-Software parameters and settings[¶](#Software-parameters-and-settings){.wiki-anchor}
+
+Software parameters and settings(#Software-parameters-and-settings)
 ====================================================================================
 
 -   **Table of contents**
@@ -32,9 +32,9 @@ Software parameters and settings[¶](#Software-parameters-and-settings){.wiki-an
 This page is an attempt to keep track of the parameters of the ICARUS
 detector relevant to the simulation and reconstruction.
 
-[]{#How-to-update-this-page}
 
-### How to update this page[¶](#How-to-update-this-page){.wiki-anchor}
+
+### How to update this page(#How-to-update-this-page)
 
 -   changes are ultimately tracked by Redmine (check the \"history\"
     link usually on top right of the page)
@@ -45,24 +45,24 @@ detector relevant to the simulation and reconstruction.
         show as s link: [v08\_19\_01](/redmine/versions/1911){.version})
     -   if the version you look for is not registered yet, use it anyway
         and inform the [release
-        manager](Roles_and_people.html#release-management){.wiki-page}
+        manager](Roles_and_people.html#release-management)
 
-[]{#Detector-geometry}
 
-Detector geometry[¶](#Detector-geometry){.wiki-anchor}
+
+Detector geometry(#Detector-geometry)
 ------------------------------------------------------
 
 Detector geometry is described in [its own
-page](Detector_geometry.html){.wiki-page}.
+page](Detector_geometry.html).
 
-[]{#Timings}
 
-Timings[¶](#Timings){.wiki-anchor}
+
+Timings(#Timings)
 ----------------------------------
 
-[]{#Code-and-configuration-information}
 
-### Code and configuration information[¶](#Code-and-configuration-information){.wiki-anchor}
+
+### Code and configuration information(#Code-and-configuration-information)
 
 -   \[[v08\_19\_01](/redmine/versions/1911){.version}\] ICARUS uses the
     implementation `detinfo::DetectorClocksStandard` of the detector
@@ -88,9 +88,9 @@ This is an excerpt of from `icarus_detectorclocks`
     DefaultTrigTime:   1.15e3  # Default trigger time in electronics clock [us]
     DefaultBeamTime:   1.15e3  # Default beam gate time in electronics clock [us]
 
-[]{#Timing-overview}
 
-### Timing overview[¶](#Timing-overview){.wiki-anchor}
+
+### Timing overview(#Timing-overview)
 
 For a more detailed explanation of these timings and their relation, see
 the next section.
@@ -155,9 +155,9 @@ Pictographically:\
      |-----------------+-------+-----------------------+-------------------+
     #-2025            #0      #850                   #3107               #6600 TPC readout ticks (raw::RawDigit)
 
-[]{#Detailed-timing-explanation}
 
-### Detailed timing explanation[¶](#Detailed-timing-explanation){.wiki-anchor}
+
+### Detailed timing explanation(#Detailed-timing-explanation)
 
 LArSoft timing system is documented with the `detinfo::DetectorClocks`
 provider interface, which manages the conversion between different
@@ -198,33 +198,33 @@ Doxygen](http://nusoft.fnal.gov/larsoft/doxsvn/html/classdetinfo_1_1DetectorCloc
         starts at `TriggerOffsetPMT` (module configuration), and it
         lasts for a finite time
 
-[]{#Simulation}
 
-Simulation[¶](#Simulation){.wiki-anchor}
+
+Simulation(#Simulation)
 ----------------------------------------
 
-[]{#Event-generation}
 
-### Event generation[¶](#Event-generation){.wiki-anchor}
 
--   [cosmic rays](Cosmic_ray_generation_(CORSIKA).html){.wiki-page}
+### Event generation(#Event-generation)
 
-[]{#TPC-simulation}
+-   [cosmic rays](Cosmic_ray_generation_(CORSIKA).html)
 
-### TPC simulation[¶](#TPC-simulation){.wiki-anchor}
+
+
+### TPC simulation(#TPC-simulation)
 
 -   \[[v08\_19\_01](/redmine/versions/1911){.version}\] TPC readout
     starts recording 340 µs before the global event trigger
     (`icarus_detectorclocks.TriggerOffsetTPC: -0.340e3 # [us]`,
     [source:icaruscode/Utilities/detectorclocks\_icarus.fcl](/redmine/projects/icaruscode/repository/entry/icaruscode/Utilities/detectorclocks_icarus.fcl){.source})
 
-[]{#Optical-simulation}
 
-### Optical simulation[¶](#Optical-simulation){.wiki-anchor}
 
-[]{#Scintillation}
+### Optical simulation(#Optical-simulation)
 
-#### Scintillation[¶](#Scintillation){.wiki-anchor}
+
+
+#### Scintillation(#Scintillation)
 
 Scintillation is simulated based on energy deposition by each particle
 propagating in the detector, via the `FastOptical` process defined in
@@ -319,9 +319,9 @@ scintillation by particle type
 
 `ScintSlowTimeConst`
 
-[]{#Transportation-of-scintillation-photons-to-the-optical-detectors}
 
-#### Transportation of scintillation photons to the optical detectors[¶](#Transportation-of-scintillation-photons-to-the-optical-detectors){.wiki-anchor}
+
+#### Transportation of scintillation photons to the optical detectors(#Transportation-of-scintillation-photons-to-the-optical-detectors)
 
 A summary of the procedures and settings used in ICARUS can be found in
 [SBN DocDB
@@ -443,9 +443,9 @@ library needn\'t to be regenerated, but the coordinates in this
 configuration needed to be shifted accordingly.\
 Note that the propagation time is explicitly enabled.
 
-[]{#Optical-readout-simulation}
 
-#### Optical readout simulation[¶](#Optical-readout-simulation){.wiki-anchor}
+
+#### Optical readout simulation(#Optical-readout-simulation)
 
 Optical detector readout simulation is performed by
 `icarus::simPMTIcarus` module via `icarus::opdet::PMTsimulationAlg`.

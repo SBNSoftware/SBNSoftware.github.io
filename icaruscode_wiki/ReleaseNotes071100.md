@@ -4,12 +4,12 @@ title: ReleaseNotes071100
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v07.11.00   11/16/2018         [Release Notes](ReleaseNotes071100.html){.wiki-page}
+  v07.11.00   11/16/2018         [Release Notes](ReleaseNotes071100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v07_11_00-Release-Notes}
 
-icaruscode v07\_11\_00 Release Notes[¶](#icaruscode-v07_11_00-Release-Notes){.wiki-anchor}
+
+icaruscode v07\_11\_00 Release Notes(#icaruscode-v07_11_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,46 +26,46 @@ icaruscode v07\_11\_00 Release Notes[¶](#icaruscode-v07_11_00-Release-Notes){.w
     -   [icarusutil v07\_11\_00](#icarusutil-v07_11_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v07\_11\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_11_00/icaruscode-v07_11_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the improvements into a tag
 -   Intended to be release for MCC 1.1
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Changes to the TPC signal simulation and processing parameters
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v07.11.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes071100){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v07_11_00}
 
-icaruscode v07\_11\_00[¶](#icaruscode-v07_11_00){.wiki-anchor}
+
+icaruscode v07\_11\_00(#icaruscode-v07_11_00)
 --------------------------------------------------------------
 
 -   2018-11-16 - Usher, Tracy L - Reconcile the services definitions, in
@@ -112,9 +112,9 @@ icaruscode v07\_11\_00[¶](#icaruscode-v07_11_00){.wiki-anchor}
 -   2018-11-09 - Usher, Tracy L - Merge remote-tracking branch
     \'origin/feature/Hilgenberg\_CRTDetSim\' into develop
 
-[]{#icarusutil-v07_11_00}
 
-icarusutil v07\_11\_00[¶](#icarusutil-v07_11_00){.wiki-anchor}
+
+icarusutil v07\_11\_00(#icarusutil-v07_11_00)
 --------------------------------------------------------------
 
 -   2018-11-16 - Usher, Tracy L - Preparing to tag v07\_11\_00

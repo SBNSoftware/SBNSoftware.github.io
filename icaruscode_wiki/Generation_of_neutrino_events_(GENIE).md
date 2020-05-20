@@ -3,9 +3,9 @@ lang: en
 title: 'Generation of neutrino events (GENIE)'
 ---
 
-[]{#Generation-of-neutrino-events-GENIE}
 
-Generation of neutrino events (GENIE)[¶](#Generation-of-neutrino-events-GENIE){.wiki-anchor}
+
+Generation of neutrino events (GENIE)(#Generation-of-neutrino-events-GENIE)
 ============================================================================================
 
 -   **Table of contents**
@@ -26,9 +26,9 @@ Generation of neutrino events (GENIE)[¶](#Generation-of-neutrino-events-GENIE){
         -   [Selecting events via a specific current
             type](#Selecting-events-via-a-specific-current-type)
 
-[]{#Selecting-generated-interactions-FilterNeutrinosActiveVolume-module}
 
-Selecting generated interactions: FilterNeutrinosActiveVolume module[¶](#Selecting-generated-interactions-FilterNeutrinosActiveVolume-module){.wiki-anchor}
+
+Selecting generated interactions: FilterNeutrinosActiveVolume module(#Selecting-generated-interactions-FilterNeutrinosActiveVolume-module)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are a few facilities in LArSoft and ICARUS code which allow
@@ -59,9 +59,9 @@ in its entirety. For example, an event with two interactions will be
 selected even if only one of them satisfies all the requirements of the
 filter, and both interactions will be included in the selected event.
 
-[]{#Selecting-events-with-interactions-in-selected-volumes}
 
-### Selecting events with interactions in selected volumes[¶](#Selecting-events-with-interactions-in-selected-volumes){.wiki-anchor}
+
+### Selecting events with interactions in selected volumes(#Selecting-events-with-interactions-in-selected-volumes)
 
 Events can be selected if they have a neutrino-like interaction in a
 specified volume.
@@ -71,9 +71,9 @@ The location of the interaction is determined by the position
 There are a few ways to specify the volumes: the interaction will be
 accepted if it happens in *any* of the specified volumes.
 
-[]{#Interactions-in-the-active-volumes-of-the-detector}
 
-#### Interactions in the active volumes of the detector[¶](#Interactions-in-the-active-volumes-of-the-detector){.wiki-anchor}
+
+#### Interactions in the active volumes of the detector(#Interactions-in-the-active-volumes-of-the-detector)
 
 The active volume is defined as the volume in between the anode and
 cathode planes, limited by the field cage. That volume is fully
@@ -106,9 +106,9 @@ The explicit configuration of the module, instead, will look like:\
 Note that if the active volume requirement is requested, no other
 location requirement can be specified.
 
-[]{#Interaction-location-via-volume-name}
 
-#### Interaction location via volume name[¶](#Interaction-location-via-volume-name){.wiki-anchor}
+
+#### Interaction location via volume name(#Interaction-location-via-volume-name)
 
 Events can be required to have at least one interaction in any of the
 specified volumes, described by the name they have in the GDML detector
@@ -139,9 +139,9 @@ detectors like ICARUS `inActive: true` is actually a shortcut for
 `volumeNames: [ "volTPCActive" ]`. This also allows to specify
 *additional* volumes.
 
-[]{#Interaction-location-via-volume-coordinates}
 
-#### Interaction location via volume coordinates[¶](#Interaction-location-via-volume-coordinates){.wiki-anchor}
+
+#### Interaction location via volume coordinates(#Interaction-location-via-volume-coordinates)
 
 Events can be required to have at least one interaction in any of the
 specified box-shaped volumes, described by the coordinate ranges on each
@@ -182,9 +182,9 @@ but can\'t be specified together with the request of active volume
 
 ------------------------------------------------------------------------
 
-[]{#Selecting-events-with-a-specific-interaction-type}
 
-### Selecting events with a specific interaction type[¶](#Selecting-events-with-a-specific-interaction-type){.wiki-anchor}
+
+### Selecting events with a specific interaction type(#Selecting-events-with-a-specific-interaction-type)
 
 The filter module
 [[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}
@@ -213,9 +213,9 @@ The interaction types are coded in
 This requirement can be specified *together with* the current type
 (below) and the interaction location requirements.
 
-[]{#Selecting-events-via-a-specific-current-type}
 
-### Selecting events via a specific current type[¶](#Selecting-events-via-a-specific-current-type){.wiki-anchor}
+
+### Selecting events via a specific current type(#Selecting-events-via-a-specific-current-type)
 
 The filter module
 [[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}

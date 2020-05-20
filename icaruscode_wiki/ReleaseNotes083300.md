@@ -4,12 +4,12 @@ title: ReleaseNotes083300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.33.00   10/29/2019         [Release Notes](ReleaseNotes083300.html){.wiki-page}
+  v08.33.00   10/29/2019         [Release Notes](ReleaseNotes083300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_33_00-Release-Notes}
 
-icaruscode v08\_33\_00 Release Notes[¶](#icaruscode-v08_33_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_33\_00 Release Notes(#icaruscode-v08_33_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,51 +24,51 @@ icaruscode v08\_33\_00 Release Notes[¶](#icaruscode-v08_33_00-Release-Notes){.w
     -   [icarusutil v08\_32\_00](#icarusutil-v08_32_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_33\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_33_00/icaruscode-v08_33_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Integration update that picks ups various improvements but nothing
     earthshaking
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.33.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083300){.external}
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_33\_00\")
 
-[]{#icaruscode-v08_33_00}
 
-icaruscode v08\_33\_00[¶](#icaruscode-v08_33_00){.wiki-anchor}
+
+icaruscode v08\_33\_00(#icaruscode-v08_33_00)
 --------------------------------------------------------------
 
 -   2019-10-29 - Usher, Tracy L - Merge remote-tracking branch
@@ -94,7 +94,7 @@ icaruscode v08\_33\_00[¶](#icaruscode-v08_33_00){.wiki-anchor}
     ICARUSMCOpHit to allow for duplicate times
 -   2019-10-04 - Usher, Tracy L - Fix in one more place
 
-[]{#icarusutil-v08_32_00}
 
-icarusutil v08\_32\_00[¶](#icarusutil-v08_32_00){.wiki-anchor}
+
+icarusutil v08\_32\_00(#icarusutil-v08_32_00)
 --------------------------------------------------------------

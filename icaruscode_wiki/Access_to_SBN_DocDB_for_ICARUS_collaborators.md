@@ -3,9 +3,9 @@ lang: en
 title: Access to SBN DocDB for ICARUS collaborators
 ---
 
-[]{#Access-to-SBN-DocDB-for-ICARUS-collaborators}
 
-Access to SBN DocDB for ICARUS collaborators[¶](#Access-to-SBN-DocDB-for-ICARUS-collaborators){.wiki-anchor}
+
+Access to SBN DocDB for ICARUS collaborators(#Access-to-SBN-DocDB-for-ICARUS-collaborators)
 ============================================================================================================
 
 Fermilab DocDB allows for *many* ways to access. Depending on your
@@ -14,11 +14,11 @@ The recommended way is currently via [Single Sign
 On](https://sbn-docdb.fnal.gov/cgi-bin/sso/DocumentDatabase "SSO"){.external}.
 This method allows you to be *identified as yourself*, and allows for
 many actual authentication paths (e.g. [a CILogon
-certificate](Setting_up_access_with_CILogon_certificate.html){.wiki-page}).
+certificate](Setting_up_access_with_CILogon_certificate.html)).
 
-[]{#Solution-to-access-denial-problems}
 
-### Solution to access denial problems[¶](#Solution-to-access-denial-problems){.wiki-anchor}
+
+### Solution to access denial problems(#Solution-to-access-denial-problems)
 
 DocDB has per-document access policies, that are set by the person
 uploading the document (the lists \"can modify\" and \"can view\"): if

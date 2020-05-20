@@ -7,9 +7,9 @@ title: ReleaseNotes085200
   v08.52.00   5/17/2020         [Release Notes](ReleaseNotes052300.html){.wiki-page .new}
   ----------- ----------- -- -- -----------------------------------------------------------
 
-[]{#icaruscode-v08_52_00-Release-Notes}
 
-icaruscode v08\_52\_00 Release Notes[¶](#icaruscode-v08_52_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_52\_00 Release Notes(#icaruscode-v08_52_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,22 +24,22 @@ icaruscode v08\_52\_00 Release Notes[¶](#icaruscode-v08_52_00-Release-Notes){.w
     -   [icarusutil v08\_51\_00](#icarusutil-v08_51_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_52\_00](http://scisoft.fnal.gov/scisoft/bundles/icaruscode/v08_52_00/icaruscode-v08_52_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Stay current with LArSoft - latest versions of
     art/art\_root\_io/root/etc.
 -   First step to multithreading
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
@@ -47,31 +47,31 @@ New features[¶](#New-features){.wiki-anchor}
     fitter
 -   \- Updates from Gianluca Petrillo aiming at trigger studies
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   Continuing to ferret out issues surrounding default geometry change
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   None
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_52\_00\")
 
-[]{#icaruscode-v08_37_00}
 
-icaruscode v08\_37\_00[¶](#icaruscode-v08_37_00){.wiki-anchor}
+
+icaruscode v08\_37\_00(#icaruscode-v08_37_00)
 --------------------------------------------------------------
 
 -   2020-05-17 - Tracy Usher - Moving to LArSoft v08\_52\_00
@@ -141,9 +141,9 @@ icaruscode v08\_37\_00[¶](#icaruscode-v08_37_00){.wiki-anchor}
 -   2020-05-12 - Christopher Hilgenberg - incorporate CRTTrueHits into
     TruthMatchAnalysis module and CRTBackTracker
 
-[]{#icarusutil-v08_51_00}
 
-icarusutil v08\_51\_00[¶](#icarusutil-v08_51_00){.wiki-anchor}
+
+icarusutil v08\_51\_00(#icarusutil-v08_51_00)
 --------------------------------------------------------------
 
 -   unchanged

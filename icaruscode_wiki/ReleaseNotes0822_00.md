@@ -7,9 +7,9 @@ title: ReleaseNotes0822 00
   v08.22.00   06/15/2019         [Release Notes](ReleaseNotes082200.html){.wiki-page .new}
   ----------- ------------ -- -- -----------------------------------------------------------
 
-[]{#icaruscode-v08_22_00-Release-Notes}
 
-icaruscode v08\_22\_00 Release Notes[¶](#icaruscode-v08_22_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_22\_00 Release Notes(#icaruscode-v08_22_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,50 +24,50 @@ icaruscode v08\_22\_00 Release Notes[¶](#icaruscode-v08_22_00-Release-Notes){.w
     -   [icarusutil v08\_22\_00](#icarusutil-v08_22_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_22\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v08_19_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   No major new features
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.22.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082200){.external}
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_22\_00\")
 
-[]{#icaruscode-v08_22_00}
 
-icaruscode v08\_22\_00[¶](#icaruscode-v08_22_00){.wiki-anchor}
+
+icaruscode v08\_22\_00(#icaruscode-v08_22_00)
 --------------------------------------------------------------
 
 -   2019-06-14 - Usher, Tracy L - Merge branch \'develop\'
@@ -148,9 +148,9 @@ icaruscode v08\_22\_00[¶](#icaruscode-v08_22_00){.wiki-anchor}
 -   2019-05-14 - Christian Farnese - commit requested by Andrea Falcone
     for the photons time description
 
-[]{#icarusutil-v08_22_00}
 
-icarusutil v08\_22\_00[¶](#icarusutil-v08_22_00){.wiki-anchor}
+
+icarusutil v08\_22\_00(#icarusutil-v08_22_00)
 --------------------------------------------------------------
 
 -   2019-06-11 - Usher, Tracy L - catch up to larsoft v08\_22\_00

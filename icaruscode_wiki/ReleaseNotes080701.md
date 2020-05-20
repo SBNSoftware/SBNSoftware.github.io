@@ -4,12 +4,12 @@ title: ReleaseNotes080701
 ---
 
   ----------- ----------- -- -- ------------------------------------------------------
-  v08.07.01   02/6/2019         [Release Notes](ReleaseNotes080701.html){.wiki-page}
+  v08.07.01   02/6/2019         [Release Notes](ReleaseNotes080701.html)
   ----------- ----------- -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_07_01-Release-Notes}
 
-icaruscode v08\_07\_01 Release Notes[¶](#icaruscode-v08_07_01-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_07\_01 Release Notes(#icaruscode-v08_07_01-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -25,13 +25,13 @@ icaruscode v08\_07\_01 Release Notes[¶](#icaruscode-v08_07_01-Release-Notes){.w
     -   [icarusutil v08\_07\_01](#icarusutil-v08_07_01)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_07\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_07_01/icaruscode-v08_07_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the LArSoft improvements into a tag
@@ -41,9 +41,9 @@ Purpose[¶](#Purpose){.wiki-anchor}
     finding efficiency
 -   Code cleanup
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 Bug fixes
@@ -52,23 +52,23 @@ Bug fixes
 -   General fix of the issue with poor charge resolution in the gauss
     hit finding
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.07.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080701){.external}
 -   larbatch v01.46.03
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_07_01}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_07\_01\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_07_01){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_07\_01\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_07_01)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_07_01}
 
-icaruscode v08\_07\_01[¶](#icaruscode-v08_07_01){.wiki-anchor}
+
+icaruscode v08\_07\_01(#icaruscode-v08_07_01)
 --------------------------------------------------------------
 
 -   2019-02-05 - Usher, Tracy L - Getting ready to tag v08\_07\_01
@@ -122,9 +122,9 @@ icaruscode v08\_07\_01[¶](#icaruscode-v08_07_01){.wiki-anchor}
 -   2019-01-24 - Usher, Tracy L - Fixes to get code to compile
 -   2019-01-22 - Filippo Varanini - commenting out useless cout
 
-[]{#icarusutil-v08_07_01}
 
-icarusutil v08\_07\_01[¶](#icarusutil-v08_07_01){.wiki-anchor}
+
+icarusutil v08\_07\_01(#icarusutil-v08_07_01)
 --------------------------------------------------------------
 
 -   2019-02-05 - Usher, Tracy L - Tagging v08\_07\_01

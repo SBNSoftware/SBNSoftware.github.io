@@ -4,12 +4,12 @@ title: ReleaseNotes081901
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.19.01   05/13/2019         [Release Notes](ReleaseNotes081901.html){.wiki-page}
+  v08.19.01   05/13/2019         [Release Notes](ReleaseNotes081901.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_19_01-Release-Notes}
 
-icaruscode v08\_19\_01 Release Notes[¶](#icaruscode-v08_19_01-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_19\_01 Release Notes(#icaruscode-v08_19_01-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,47 +26,47 @@ icaruscode v08\_19\_01 Release Notes[¶](#icaruscode-v08_19_01-Release-Notes){.w
     -   [icarusutil v08\_19\_01](#icarusutil-v08_19_01)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_19\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v08_19_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   No major new features
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.19.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081901){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_19_01}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_19\_01\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_19_01){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_19\_01\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_19_01)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_19_01}
 
-icaruscode v08\_19\_01[¶](#icaruscode-v08_19_01){.wiki-anchor}
+
+icaruscode v08\_19\_01(#icaruscode-v08_19_01)
 --------------------------------------------------------------
 
 -   2019-05-13 - Usher, Tracy L - Merge branch \'develop\'
@@ -159,9 +159,9 @@ icaruscode v08\_19\_01[¶](#icaruscode-v08_19_01){.wiki-anchor}
     MultiPartVertex
 -   2019-03-30 - Usher, Tracy L - Moving to larsoft v08\_14\_00
 
-[]{#icarusutil-v08_19_01}
 
-icarusutil v08\_19\_01[¶](#icarusutil-v08_19_01){.wiki-anchor}
+
+icarusutil v08\_19\_01(#icarusutil-v08_19_01)
 --------------------------------------------------------------
 
 -   2019-05-13 - Usher, Tracy L - Chasing LArSoft v08\_19\_01

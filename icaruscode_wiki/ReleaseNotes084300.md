@@ -4,12 +4,12 @@ title: ReleaseNotes084300
 ---
 
   ----------- ----------- -- -- ------------------------------------------------------
-  v08.43.00   2/18/2020         [Release Notes](ReleaseNotes084300.html){.wiki-page}
+  v08.43.00   2/18/2020         [Release Notes](ReleaseNotes084300.html)
   ----------- ----------- -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_43_00-Release-Notes}
 
-icaruscode v08\_43\_00 Release Notes[¶](#icaruscode-v08_43_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_43\_00 Release Notes(#icaruscode-v08_43_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,22 +24,22 @@ icaruscode v08\_43\_00 Release Notes[¶](#icaruscode-v08_43_00-Release-Notes){.w
     -   [icarusutil v08\_36\_02](#icarusutil-v08_36_02)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_43_00/icaruscode-v08_43_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Stay current with LArSoft - latest versions of
     art/art\_root\_io/root/etc.
 -   First step to multithreading
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
@@ -47,29 +47,29 @@ New features[¶](#New-features){.wiki-anchor}
     fitter
 -   \- Updates from Gianluca Petrillo aiming at trigger studies
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   Now using sbndaq\_artdaq\_core v9\_04\_02\_f02
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_37\_00\")
 
-[]{#icaruscode-v08_37_00}
 
-icaruscode v08\_37\_00[¶](#icaruscode-v08_37_00){.wiki-anchor}
+
+icaruscode v08\_37\_00(#icaruscode-v08_37_00)
 --------------------------------------------------------------
 
 -   2020-02-18 - Gianluca Petrillo - Merge remote-tracking branch
@@ -131,9 +131,9 @@ icaruscode v08\_37\_00[¶](#icaruscode-v08_37_00){.wiki-anchor}
 -   2020-01-24 - Gianluca Petrillo - Merge branch
     \'feature/gp\_triggerData\' into develop
 
-[]{#icarusutil-v08_36_02}
 
-icarusutil v08\_36\_02[¶](#icarusutil-v08_36_02){.wiki-anchor}
+
+icarusutil v08\_36\_02(#icarusutil-v08_36_02)
 --------------------------------------------------------------
 
 -   unchanged

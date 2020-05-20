@@ -4,12 +4,12 @@ title: ReleaseNotes083101
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.31.01   10/01/2019         [Release Notes](ReleaseNotes083101.html){.wiki-page}
+  v08.31.01   10/01/2019         [Release Notes](ReleaseNotes083101.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_31_01-Release-Notes}
 
-icaruscode v08\_31\_01 Release Notes[¶](#icaruscode-v08_31_01-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_31\_01 Release Notes(#icaruscode-v08_31_01-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -24,13 +24,13 @@ icaruscode v08\_31\_01 Release Notes[¶](#icaruscode-v08_31_01-Release-Notes){.w
     -   [icarusutil v08\_31\_01](#icarusutil-v08_31_01)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_31\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v08_31_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   NOTE these are the first release notes in some time (sadly), there
@@ -39,39 +39,39 @@ Purpose[¶](#Purpose){.wiki-anchor}
 -   Include new noise response histograms from Filippo
 -   Various icaruscode software updates (see below)
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   New option for TPC electronics noise
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.31.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083101){.external}
 
-[]{#Change-List}
 
-Change List[¶](#Change-List){.wiki-anchor}
+
+Change List(#Change-List)
 ==========================================
 
 (generated with the command \"git log \--date=short
 \--pretty=format:\"\* %ad - %an - %s\" v08\_31\_01\")
 
-[]{#icaruscode-v08_31_01}
 
-icaruscode v08\_31\_01[¶](#icaruscode-v08_31_01){.wiki-anchor}
+
+icaruscode v08\_31\_01(#icaruscode-v08_31_01)
 --------------------------------------------------------------
 
 -   2019-09-26 - Usher, Tracy L - Merge branch \'develop\' of
@@ -320,9 +320,9 @@ icaruscode v08\_31\_01[¶](#icaruscode-v08_31_01){.wiki-anchor}
 -   2019-06-17 - Gianluca Petrillo - Bug fix to the photon visibility
     service mapping.
 
-[]{#icarusutil-v08_31_01}
 
-icarusutil v08\_31\_01[¶](#icarusutil-v08_31_01){.wiki-anchor}
+
+icarusutil v08\_31\_01(#icarusutil-v08_31_01)
 --------------------------------------------------------------
 
 -   2019-10-01 - Usher, Tracy L - Chasing LArSoft

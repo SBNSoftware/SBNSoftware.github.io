@@ -4,12 +4,12 @@ title: ReleaseNotes081100
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.11.00   02/28/2019         [Release Notes](ReleaseNotes081100.html){.wiki-page}
+  v08.11.00   02/28/2019         [Release Notes](ReleaseNotes081100.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_11_00-Release-Notes}
 
-icaruscode v08\_11\_00 Release Notes[¶](#icaruscode-v08_11_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_11\_00 Release Notes(#icaruscode-v08_11_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,27 +26,27 @@ icaruscode v08\_11\_00 Release Notes[¶](#icaruscode-v08_11_00-Release-Notes){.w
     -   [icarusutil v08\_11\_00](#icarusutil-v08_11_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_11\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_11_00/icaruscode-v08_11_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the LArSoft improvements into a tag
 -   Smashes a couple of small bugs in icaruscode
 -   Code cleanup
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   fixes a crash in the PMT detector simulation created when attempting
@@ -55,22 +55,22 @@ Bug fixes[¶](#Bug-fixes){.wiki-anchor}
     of bounds
 -   fix a couple of \"bad\" fhicl parameters in the signal processing
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.11.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081100){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_11_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_11\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_11_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_11\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_11_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_11_00}
 
-icaruscode v08\_11\_00[¶](#icaruscode-v08_11_00){.wiki-anchor}
+
+icaruscode v08\_11\_00(#icaruscode-v08_11_00)
 --------------------------------------------------------------
 
 -   2019-02-28 - Usher, Tracy L - Updating fhicl for track/shower
@@ -95,9 +95,9 @@ icaruscode v08\_11\_00[¶](#icaruscode-v08_11_00){.wiki-anchor}
 -   2019-02-25 - Gianluca Petrillo - Removed \`quantities\` libraries
     (moved to \`lardataalg\`)
 
-[]{#icarusutil-v08_11_00}
 
-icarusutil v08\_11\_00[¶](#icarusutil-v08_11_00){.wiki-anchor}
+
+icarusutil v08\_11\_00(#icarusutil-v08_11_00)
 --------------------------------------------------------------
 
 -   2019-02-28 - Usher, Tracy L - Moving to larsoft v08\_11\_00

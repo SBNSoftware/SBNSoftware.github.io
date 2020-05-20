@@ -4,12 +4,12 @@ title: ReleaseNotes081200
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.12.00   03/09/2019         [Release Notes](ReleaseNotes081200.html){.wiki-page}
+  v08.12.00   03/09/2019         [Release Notes](ReleaseNotes081200.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_12_00-Release-Notes}
 
-icaruscode v08\_12\_00 Release Notes[¶](#icaruscode-v08_12_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_12\_00 Release Notes(#icaruscode-v08_12_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,13 +26,13 @@ icaruscode v08\_12\_00 Release Notes[¶](#icaruscode-v08_12_00-Release-Notes){.w
     -   [icarusutil v08\_12\_00](#icarusutil-v08_12_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_12\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_12_00/icaruscode-v08_12_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   First attempt at release for SBN workshop
@@ -41,34 +41,34 @@ Purpose[¶](#Purpose){.wiki-anchor}
 -   Includes updates to CRT
 -   Reconstruction fhicl includes cluster3D and trajcluster
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.12.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081200){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_12_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_12\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_12_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_12\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_12_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_11_00}
 
-icaruscode v08\_11\_00[¶](#icaruscode-v08_11_00){.wiki-anchor}
+
+icaruscode v08\_11\_00(#icaruscode-v08_11_00)
 --------------------------------------------------------------
 
 -   2019-03-09 - Usher, Tracy L - Give pointers initial (null)
@@ -113,9 +113,9 @@ icaruscode v08\_11\_00[¶](#icaruscode-v08_11_00){.wiki-anchor}
     online first version still on work
 -   2019-03-03 - drinkingkazu - opreco branch
 
-[]{#icarusutil-v08_12_00}
 
-icarusutil v08\_12\_00[¶](#icarusutil-v08_12_00){.wiki-anchor}
+
+icarusutil v08\_12\_00(#icarusutil-v08_12_00)
 --------------------------------------------------------------
 
 -   2019-03-08 - Usher, Tracy L - larsoft v108\_12\_00

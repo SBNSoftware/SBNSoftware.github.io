@@ -4,12 +4,12 @@ title: ReleaseNotes081400
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.14.00   03/30/2019         [Release Notes](ReleaseNotes081400.html){.wiki-page}
+  v08.14.00   03/30/2019         [Release Notes](ReleaseNotes081400.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_14_00-Release-Notes}
 
-icaruscode v08\_14\_00 Release Notes[¶](#icaruscode-v08_14_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_14\_00 Release Notes(#icaruscode-v08_14_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,47 +26,47 @@ icaruscode v08\_14\_00 Release Notes[¶](#icaruscode-v08_14_00-Release-Notes){.w
     -   [icarusutil v08\_14\_00](#icarusutil-v08_14_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_14\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_02/icaruscode-v08_14_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   No major new features
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.14.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081400){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_14_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_14\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_14_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_14\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_14_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_14_00}
 
-icaruscode v08\_14\_00[¶](#icaruscode-v08_14_00){.wiki-anchor}
+
+icaruscode v08\_14\_00(#icaruscode-v08_14_00)
 --------------------------------------------------------------
 
 -   2019-03-25 - Usher, Tracy L - Merge branch \'develop\'
@@ -81,9 +81,9 @@ icaruscode v08\_14\_00[¶](#icaruscode-v08_14_00){.wiki-anchor}
 -   2019-03-22 - Usher, Tracy L - Also need to update to the latest
     version of icarus\_data!
 
-[]{#icarusutil-v08_14_00}
 
-icarusutil v08\_14\_00[¶](#icarusutil-v08_14_00){.wiki-anchor}
+
+icarusutil v08\_14\_00(#icarusutil-v08_14_00)
 --------------------------------------------------------------
 
 -   2019-03-30 - Usher, Tracy L - Moving to larsoft v08\_14\_00

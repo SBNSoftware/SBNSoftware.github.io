@@ -3,9 +3,9 @@ lang: en
 title: Detector geometry
 ---
 
-[]{#ICARUS-detector-geometry-description}
 
-ICARUS detector geometry description[¶](#ICARUS-detector-geometry-description){.wiki-anchor}
+
+ICARUS detector geometry description(#ICARUS-detector-geometry-description)
 ============================================================================================
 
 -   **Table of contents**
@@ -21,9 +21,9 @@ ICARUS detector geometry description[¶](#ICARUS-detector-geometry-description){
             earlier](#icaruscode-versions-versionv08_51_00-and-earlier)
     -   [Where is located everything?](#Where-is-located-everything)
 
-[]{#Geometry-description-versions}
 
-Geometry description versions[¶](#Geometry-description-versions){.wiki-anchor}
+
+Geometry description versions(#Geometry-description-versions)
 ------------------------------------------------------------------------------
 
 Detector geometry description is currently stored in GDML format as a
@@ -47,9 +47,9 @@ directory.
             [v08\_30\_00](/redmine/versions/1992){.version}   [v08\_30\_00](/redmine/versions/1992){.version}   [v08\_44\_00](/redmine/versions/2085){.version}   [[source:icaruscode/Geometry/gdml/icarus\_complete\_light.gdml](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/gdml/icarus_complete_light.gdml){.source}]{style="font-style: monospace;"}                    \"temporary\" version with niobium and molybdenum components of steel removed
             \...                                              \...                                              [v08\_41\_00](/redmine/versions/2084){.version}   [[source:icaruscode/Geometry/gdml/icarus\_complete.gdml](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/gdml/icarus_complete.gdml){.source}]{style="font-style: monospace;"}                                 complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
 
-[]{#Testing-a-new-version-of-the-geometry-description}
 
-### Testing a new version of the geometry description[¶](#Testing-a-new-version-of-the-geometry-description){.wiki-anchor}
+
+### Testing a new version of the geometry description(#Testing-a-new-version-of-the-geometry-description)
 
 LArSoft provides a geometry test module with a decent coverage for
 geometry and channel mapping functions.\
@@ -68,9 +68,9 @@ That configuration can be used as a template to test other geometries,
 or to selectively run tests, or even to enable the thorough ROOT
 geometry overlap test (which takes many, many minutes to complete).
 
-[]{#Selecting-a-geometry}
 
-Selecting a geometry[¶](#Selecting-a-geometry){.wiki-anchor}
+
+Selecting a geometry(#Selecting-a-geometry)
 ------------------------------------------------------------
 
 Configurations using the current default geometry will have to configure
@@ -96,9 +96,9 @@ If a specific geometry is needed in a job configuration that has already
 configured a different one, the following patterns can be used to select
 the desired geometry.
 
-[]{#icaruscode-versions-versionv08_52_00-and-later}
 
-### `icaruscode` versions version:v08\_52\_00 and later[¶](#icaruscode-versions-versionv08_52_00-and-later){.wiki-anchor}
+
+### `icaruscode` versions version:v08\_52\_00 and later(#icaruscode-versions-versionv08_52_00-and-later)
 
 Geometry can be selected by including one of the predefined
 configurations defined in
@@ -211,9 +211,9 @@ version:v08\_52\_00
 >
 > but still requires careful check.
 
-[]{#icaruscode-versions-versionv08_51_00-and-earlier}
 
-### `icaruscode` versions version:v08\_51\_00 and earlier[¶](#icaruscode-versions-versionv08_51_00-and-earlier){.wiki-anchor}
+
+### `icaruscode` versions version:v08\_51\_00 and earlier(#icaruscode-versions-versionv08_51_00-and-earlier)
 
 Geometry can be selected by including one of the predefined
 configurations defined in
@@ -235,9 +235,9 @@ The available drop in configurations are:
   `use_overburden_geometry_icarus.fcl`     [v08\_44\_00](/redmine/versions/2085){.version}   18-m first induction plane wires geometry with concrete overburden
   `use_nooverburden_geometry_icarus.fcl`   [v08\_44\_00](/redmine/versions/2085){.version}   18-m first induction plane wires geometry without concrete overburden
 
-[]{#Where-is-located-everything}
 
-Where is located everything?[¶](#Where-is-located-everything){.wiki-anchor}
+
+Where is located everything?(#Where-is-located-everything)
 ---------------------------------------------------------------------------
 
 A LArSoft module (analyzer) is available which produces an outline of

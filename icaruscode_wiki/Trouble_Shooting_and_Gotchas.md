@@ -3,14 +3,14 @@ lang: en
 title: Trouble Shooting and Gotchas
 ---
 
-[]{#Trouble-Shooting-and-Gotchas}
 
-Trouble Shooting and Gotchas[¶](#Trouble-Shooting-and-Gotchas){.wiki-anchor}
+
+Trouble Shooting and Gotchas(#Trouble-Shooting-and-Gotchas)
 ============================================================================
 
-[]{#Table-of-Contents}
 
-Table of Contents[¶](#Table-of-Contents){.wiki-anchor}
+
+Table of Contents(#Table-of-Contents)
 ======================================================
 
 -   **Table of contents**
@@ -22,9 +22,9 @@ Table of Contents[¶](#Table-of-Contents){.wiki-anchor}
     -   [How to checkout tagged version of
         icaruscode](#How-to-checkout-tagged-version-of-icaruscode)
 
-[]{#Submitting-grid-jobs-for-SBND-ICARUS-with-an-user-of-ICARUS-SBND}
 
-Submitting grid jobs for SBND (ICARUS) with an user of ICARUS (SBND)[¶](#Submitting-grid-jobs-for-SBND-ICARUS-with-an-user-of-ICARUS-SBND){.wiki-anchor}
+
+Submitting grid jobs for SBND (ICARUS) with an user of ICARUS (SBND)(#Submitting-grid-jobs-for-SBND-ICARUS-with-an-user-of-ICARUS-SBND)
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -   Errors of this type have the form of
@@ -88,9 +88,9 @@ the direct URL is:
 after the ticket is in and the approval is granted, you should get SBND
 computing privileges within a business day.
 
-[]{#LogicError}
 
-LogicError..[¶](#LogicError){.wiki-anchor}
+
+LogicError..(#LogicError)
 ------------------------------------------
 
 -   The following type of error message:\
@@ -111,9 +111,9 @@ you need to simply setup sbndcode. for example.\
 
     $ setup sbndcode v08_31_01 -qe17:prof
 
-[]{#How-to-checkout-tagged-version-of-icaruscode}
 
-How to checkout tagged version of icaruscode[¶](#How-to-checkout-tagged-version-of-icaruscode){.wiki-anchor}
+
+How to checkout tagged version of icaruscode(#How-to-checkout-tagged-version-of-icaruscode)
 ------------------------------------------------------------------------------------------------------------
 
 for example\...\

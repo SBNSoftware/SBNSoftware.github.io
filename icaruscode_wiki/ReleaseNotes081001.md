@@ -4,12 +4,12 @@ title: ReleaseNotes081001
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.10.01   02/23/2019         [Release Notes](ReleaseNotes081001.html){.wiki-page}
+  v08.10.01   02/23/2019         [Release Notes](ReleaseNotes081001.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_10_01-Release-Notes}
 
-icaruscode v08\_10\_01 Release Notes[¶](#icaruscode-v08_10_01-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_10\_01 Release Notes(#icaruscode-v08_10_01-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,46 +26,46 @@ icaruscode v08\_10\_01 Release Notes[¶](#icaruscode-v08_10_01-Release-Notes){.w
     -   [icarusutil v08\_07\_01](#icarusutil-v08_07_01)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_07\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_07_01/icaruscode-v08_07_01.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the LArSoft improvements into a tag
 -   This moves to art 3.01.02
 -   Code cleanup
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.10.01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081001){.external}
 -   larbatch v01.48.00
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_10_01}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_10\_01\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_10_01){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_10\_01\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_10_01)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_07_01}
 
-icaruscode v08\_07\_01[¶](#icaruscode-v08_07_01){.wiki-anchor}
+
+icaruscode v08\_07\_01(#icaruscode-v08_07_01)
 --------------------------------------------------------------
 
 -   2019-02-23 - Usher, Tracy L - Moving to larsoft v08\_10\_01
@@ -83,9 +83,9 @@ icaruscode v08\_07\_01[¶](#icaruscode-v08_07_01){.wiki-anchor}
 -   2019-02-06 - Gianluca Petrillo - Python library with helper
     functions concerning ROOT
 
-[]{#icarusutil-v08_07_01}
 
-icarusutil v08\_07\_01[¶](#icarusutil-v08_07_01){.wiki-anchor}
+
+icarusutil v08\_07\_01(#icarusutil-v08_07_01)
 --------------------------------------------------------------
 
 -   2019-02-23 - Usher, Tracy L - Move to larsoft v08\_10\_01

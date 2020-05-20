@@ -4,12 +4,12 @@ title: ReleaseNotes070800
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v07.08.00   10/28/2018         [Release Notes](ReleaseNotes070800.html){.wiki-page}
+  v07.08.00   10/28/2018         [Release Notes](ReleaseNotes070800.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v07_08_00-Release-Notes}
 
-icaruscode v07\_08\_00 Release Notes[¶](#icaruscode-v07_08_00-Release-Notes){.wiki-anchor}
+
+icaruscode v07\_08\_00 Release Notes(#icaruscode-v07_08_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -25,22 +25,22 @@ icaruscode v07\_08\_00 Release Notes[¶](#icaruscode-v07_08_00-Release-Notes){.w
     -   [icarusutil v07\_08\_00](#icarusutil-v07_08_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v07\_08\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_08_00/icaruscode-v07_08_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the improvements into a tag
 -   Expect to see performance improvements in the optical and TPC
     sim/recon code as some effort to profile has been done
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   CRT improvements
@@ -51,23 +51,23 @@ Bug fixes
 -   Bug fixes to all systems (optical waveforms,
     convolution/deconvolution, etc.)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v07.08.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070800){.external}
 -   larbatch v01.46.02
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v07_08_00}
 
-icaruscode v07\_08\_00[¶](#icaruscode-v07_08_00){.wiki-anchor}
+
+icaruscode v07\_08\_00(#icaruscode-v07_08_00)
 --------------------------------------------------------------
 
 -   2018-10-28 - Usher, Tracy L - Preparing to tag v07\_08\_00
@@ -243,9 +243,9 @@ icaruscode v07\_08\_00[¶](#icaruscode-v07_08_00){.wiki-anchor}
 -   2018-09-23 - Usher, Tracy L - Adding a first attempt at a \"hit
     efficiency\" analysis tool. Work in progress here\...
 
-[]{#icarusutil-v07_08_00}
 
-icarusutil v07\_08\_00[¶](#icarusutil-v07_08_00){.wiki-anchor}
+
+icarusutil v07\_08\_00(#icarusutil-v07_08_00)
 --------------------------------------------------------------
 
 -   2018-10-28 - Usher, Tracy L - Preparing to tag v07\_08\_00

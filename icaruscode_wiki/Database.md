@@ -3,9 +3,9 @@ lang: en
 title: Database
 ---
 
-[]{#Database}
 
-Database[¶](#Database){.wiki-anchor}
+
+Database(#Database)
 ====================================
 
 -   **Table of contents**
@@ -20,7 +20,7 @@ Please write your comments with your name about the CRT database table.\
 I will collect all the comments and suggestion and will answer or
 discuss in coming meetings.
 
-[]{#Comments-and-Suggestion-for-ICARUS-CRT-Database}
 
-Comments and Suggestion for ICARUS CRT Database[¶](#Comments-and-Suggestion-for-ICARUS-CRT-Database){.wiki-anchor} {#comments-and-suggestion-for-icarus-crt-database .count}
+
+Comments and Suggestion for ICARUS CRT Database(#Comments-and-Suggestion-for-ICARUS-CRT-Database) 
 ==================================================================================================================

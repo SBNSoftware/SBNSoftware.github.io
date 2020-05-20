@@ -4,12 +4,12 @@ title: ReleaseNotes081302
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.13.02   03/22/2019         [Release Notes](ReleaseNotes081302.html){.wiki-page}
+  v08.13.02   03/22/2019         [Release Notes](ReleaseNotes081302.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_13_02-Release-Notes}
 
-icaruscode v08\_13\_02 Release Notes[¶](#icaruscode-v08_13_02-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_13\_02 Release Notes(#icaruscode-v08_13_02-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -26,48 +26,48 @@ icaruscode v08\_13\_02 Release Notes[¶](#icaruscode-v08_13_02-Release-Notes){.w
     -   [icarusutil v08\_13\_02](#icarusutil-v08_13_02)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_13\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_02/icaruscode-v08_13_02.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   The release for SBN workshop
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   Includes extended photon library
 -   TrajCluster turned off again due to lengthy reconstruction time
 
-[]{#Bug-fixes}
 
-Bug fixes[¶](#Bug-fixes){.wiki-anchor}
+
+Bug fixes(#Bug-fixes)
 --------------------------------------
 
 -   (none?)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.13.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081302){.external}
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_13_02}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_13\_02\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_13_02){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_13\_02\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_13_02)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_13_02}
 
-icaruscode v08\_13\_02[¶](#icaruscode-v08_13_02){.wiki-anchor}
+
+icaruscode v08\_13\_02(#icaruscode-v08_13_02)
 --------------------------------------------------------------
 
 -   2019-03-25 - Usher, Tracy L - Merge branch \'develop\'
@@ -115,9 +115,9 @@ icaruscode v08\_13\_02[¶](#icaruscode-v08_13_02){.wiki-anchor}
 -   2019-03-08 - Usher, Tracy L - Including the optical reconstruction
     into the standard reconstruction chain
 
-[]{#icarusutil-v08_13_02}
 
-icarusutil v08\_13\_02[¶](#icarusutil-v08_13_02){.wiki-anchor}
+
+icarusutil v08\_13\_02(#icarusutil-v08_13_02)
 --------------------------------------------------------------
 
 -   2019-03-22 - Usher, Tracy L - Preparing to tag v08\_13\_02

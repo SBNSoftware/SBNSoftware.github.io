@@ -3,13 +3,13 @@ lang: en
 title: Integration tests
 ---
 
-[]{#Short-user-guide-to-integration-tests-in-ICARUS}
 
-Short user guide to integration tests in ICARUS[¶](#Short-user-guide-to-integration-tests-in-ICARUS){.wiki-anchor}
+
+Short user guide to integration tests in ICARUS(#Short-user-guide-to-integration-tests-in-ICARUS)
 ==================================================================================================================
 
 > *This page was adapted from [SBND
-> one](Integration_test_guide.html){.wiki-page}, and the adaptation is
+> one](Integration_test_guide.html), and the adaptation is
 > not complete yet.*
 
 > *Note:* when the text refers to \"now\" or \"as of today\" or \"at the
@@ -47,9 +47,9 @@ Short user guide to integration tests in ICARUS[¶](#Short-user-guide-to-integra
             reference](#TODO-Results-are-different-from-the-reference)
     -   [Further resources](#Further-resources)
 
-[]{#What-are-integration-tests}
 
-What are integration tests[¶](#What-are-integration-tests){.wiki-anchor} {#what-are-integration-tests .count}
+
+What are integration tests(#What-are-integration-tests) 
 ------------------------------------------------------------------------
 
 ICARUS has two levels of tests:
@@ -65,9 +65,9 @@ LArSoft, an automatic trigger will be activated so that every time code
 is pushed in `icaruscode` `develop` branch, tests are also automatically
 triggered. This is not the case yet as of writing.
 
-[]{#What-an-integration-test-does}
 
-What an integration test does[¶](#What-an-integration-test-does){.wiki-anchor} {#what-an-integration-test-does .count}
+
+What an integration test does(#What-an-integration-test-does) 
 ------------------------------------------------------------------------------
 
 An integration test does what it is asked to by its configuration at
@@ -86,21 +86,21 @@ the mismatch must be studied to determine whether the change is
 acceptable or not. In the former case the reference results need to be
 updated, in the latter again the code must be fixed.
 
-[]{#Introduction-to-test-running}
 
-Introduction to test running[¶](#Introduction-to-test-running){.wiki-anchor} {#introduction-to-test-running .count}
+
+Introduction to test running(#Introduction-to-test-running) 
 ----------------------------------------------------------------------------
 
 For this introduction we run the tests in the local area (as in
 [Integration
-tests](#Testing-of-the-code-in-the-local-working-area){.wiki-page}
+tests](#Testing-of-the-code-in-the-local-working-area)
 below).
 
 The script `test_runner` will execute the requested integration tests.
 Since it relies on the settings from the current UPS environment, no
 particular setup is needed, except for the UPS product containing the
 script, but you need to **[get a certificate
-proxy](Get_a_certificate_proxy.html){.wiki-page}** since the input is
+proxy](Get_a_certificate_proxy.html)** since the input is
 read from dCache. So:
 
     setup lar_ci
@@ -108,9 +108,9 @@ read from dCache. So:
 
 will run the tests designed to be run during development.
 
-[]{#TODO-The-output-of-a-test-in-detail}
 
-### **TODO** The output of a test in detail[¶](#TODO-The-output-of-a-test-in-detail){.wiki-anchor} {#todo-the-output-of-a-test-in-detail .count}
+
+### **TODO** The output of a test in detail(#TODO-The-output-of-a-test-in-detail) 
 
 The information of this section somehow depends on both the version of
 the test SBND provides, and the version of `lar_ci`. The following
@@ -184,7 +184,7 @@ output that will be removed soon, see issue
 .tracker-2 .status-5 .priority-4 .priority-default .closed}).\
 It shows a job failure, and the `errors.log` explains (in its own way)
 that there is a authentication error\... I forgot to [get a certificate
-proxy](Get_a_certificate_proxy.html){.wiki-page}! I rerun after getting
+proxy](Get_a_certificate_proxy.html)! I rerun after getting
 one, to get:\
 
     $ test_runner --statistics ci_g4_regression_quick_test_sbndcode
@@ -231,9 +231,9 @@ This is a winner. A local directory
   `avgevent_times.log`                           average CPU times (broken when using `TimeTracker`)
   ---------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[]{#TODO-Example-of-failure-from-resource-usage}
 
-### **TODO** Example of failure from resource usage[¶](#TODO-Example-of-failure-from-resource-usage){.wiki-anchor} {#todo-example-of-failure-from-resource-usage .count}
+
+### **TODO** Example of failure from resource usage(#TODO-Example-of-failure-from-resource-usage) 
 
 This is the output of `test_runner` after a successful LArSoft job has
 used more resources (or less!) than expected:\
@@ -249,9 +249,9 @@ used more resources (or less!) than expected:\
 To obtain it, I artificially decreased the limit of (resident size)
 memory for the test to about 210 MB.
 
-[]{#Running-the-integration-test-with-the-Continuous-Integration-system}
 
-Running the integration test with the Continuous Integration system[¶](#Running-the-integration-test-with-the-Continuous-Integration-system){.wiki-anchor} {#running-the-integration-test-with-the-continuous-integration-system .count}
+
+Running the integration test with the Continuous Integration system(#Running-the-integration-test-with-the-Continuous-Integration-system) 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are mainly three ways to run an integration test:
@@ -263,9 +263,9 @@ There are mainly three ways to run an integration test:
 Currently tests are run on SLF6 and SLF7 with GCC compiler (Clang
 compiler, and OSX are also potentially available).
 
-[]{#TODO-Automatic-testing}
 
-### **TODO** Automatic testing[¶](#TODO-Automatic-testing){.wiki-anchor} {#todo-automatic-testing .count}
+
+### **TODO** Automatic testing(#TODO-Automatic-testing) 
 
 Whenever a commit is pushed into a `develop` branch, a test is
 automatically triggered. The test starts 15 minutes after the first push
@@ -287,14 +287,14 @@ respective tests).
 In this case, the quick test suite is executed (`quick_test_sbndcode`,
 chosen by the SBND `lar_ci` workflow configuration).
 
-[]{#Testing-of-the-code-in-the-local-working-area}
 
-### Testing of the code in the local working area[¶](#Testing-of-the-code-in-the-local-working-area){.wiki-anchor} {#testing-of-the-code-in-the-local-working-area .count}
+
+### Testing of the code in the local working area(#Testing-of-the-code-in-the-local-working-area) 
 
 Before pushing the code anywhere, integration tests may be executed
 locally from the MRB area^[1](#fn1)^ where the code has just been
 compiled (see also above, the [introduction to test
-running](#Introduction-to-test-running){.wiki-page} section). The
+running](#Introduction-to-test-running) section). The
 commands to do so are:\
 
     setup lar_ci
@@ -307,9 +307,9 @@ tests in parallel, instead than one after the other.
 ^1^ In fact, they can be run even without a MRB area, in an environment
 where `icaruscode` is already set up.
 
-[]{#TODO-Remote-testing-of-published-code}
 
-### **TODO** Remote testing of published code[¶](#TODO-Remote-testing-of-published-code){.wiki-anchor} {#todo-remote-testing-of-published-code .count}
+
+### **TODO** Remote testing of published code(#TODO-Remote-testing-of-published-code) 
 
 The Continuous Integration system can build and test any publicly
 available branch. To ask for the SBND integration tests, use the
@@ -325,14 +325,14 @@ soon as possible (instead of waiting for 15 minutes, which would be
 pointless since we are not pushing anything any more).
 
 In general, the supported workflows are listed in the [list of supported
-SBND workflows](LArCI_Workflows.html#SBND-CI-Workflows){.wiki-page}.
+SBND workflows](LArCI_Workflows.html#SBND-CI-Workflows).
 
 TODO: document how to run on branches\
 TODO: document how to run other tests
 
-[]{#The-reference-result-files}
 
-The reference result files[¶](#The-reference-result-files){.wiki-anchor} {#the-reference-result-files .count}
+
+The reference result files(#The-reference-result-files) 
 ------------------------------------------------------------------------
 
 The reference result files are currently stored in dCache:\
@@ -346,18 +346,18 @@ section of
 and the related keys `BASEFILERELPATH_ICARUSCODE` and
 `XROOTD_BASEFILEDIR_ICARUSCODE`).
 
-[]{#Updating-the-reference-files}
 
-### Updating the reference files[¶](#Updating-the-reference-files){.wiki-anchor} {#updating-the-reference-files .count}
+
+### Updating the reference files(#Updating-the-reference-files) 
 
 When changes render the reference files obsolete, it\'s time to generate
 new ones.\
 It is possible to do this both with a remote test trigger, or locally.\
 Remember that this action will affect the whole collaboration.
 
-[]{#TODO-Generating-the-reference-files-with-a-remote-trigger}
 
-#### **TODO** Generating the reference files with a remote \"trigger\"[¶](#TODO-Generating-the-reference-files-with-a-remote-trigger){.wiki-anchor}
+
+#### **TODO** Generating the reference files with a remote \"trigger\"(#TODO-Generating-the-reference-files-with-a-remote-trigger)
 
 After having concluded there is the need to update reference files, a
 single command will do the trick:\
@@ -370,9 +370,9 @@ The `Update_ref_files_SBNDCODE_wf` is a special workflow used for this
 purpose only, and we use only one reference platform, assuming (wrongly)
 that all platforms will give the same results.
 
-[]{#Generating-the-reference-files-from-a-local-working-area}
 
-#### Generating the reference files from a local working area[¶](#Generating-the-reference-files-from-a-local-working-area){.wiki-anchor}
+
+#### Generating the reference files from a local working area(#Generating-the-reference-files-from-a-local-working-area)
 
 If a test (e.g. `single_g4_seq_test_icaruscode`) requires a new
 reference file, a few steps need to be taken.\
@@ -412,9 +412,9 @@ Note that the new reference files will be copied all together and all at
 the end of the job, and that if one copy fails the script won\'t attempt
 to copy the remaining new reference files.
 
-[]{#TODO-Available-tests}
 
-**TODO** Available tests[¶](#TODO-Available-tests){.wiki-anchor} {#todo-available-tests .count}
+
+**TODO** Available tests(#TODO-Available-tests) 
 ----------------------------------------------------------------
 
 The available tests can be printed with `test-runner --list-tests` (`-l`
@@ -453,14 +453,14 @@ are run in parallel (for example, sequential tests can\'t be
 parallelised). The figures were obtained from `sbndbuild01.fnal.gov`;
 for reference, 1000 kVs on that machine take about 3 CPU minutes.
 
-[]{#TODO-Investigating-test-failures}
 
-**TODO** Investigating test failures[¶](#TODO-Investigating-test-failures){.wiki-anchor} {#todo-investigating-test-failures .count}
+
+**TODO** Investigating test failures(#TODO-Investigating-test-failures) 
 ----------------------------------------------------------------------------------------
 
-[]{#TODO-Results-are-different-from-the-reference}
 
-### **TODO** Results are different from the reference[¶](#TODO-Results-are-different-from-the-reference){.wiki-anchor} {#todo-results-are-different-from-the-reference .count}
+
+### **TODO** Results are different from the reference(#TODO-Results-are-different-from-the-reference) 
 
 The reference files are normally generated with a special trigger, as
 described above. These special jobs are shown in the
@@ -507,9 +507,9 @@ is formed by an actual base tag (`v06_70_01`), the number of commits
 beyond it (`3`) and the hash of the head commit (`28fc0d2`, introduced
 by the `g` letter). In this case, the correct commit is commit:28fc0d2.
 
-[]{#Further-resources}
 
-Further resources[¶](#Further-resources){.wiki-anchor} {#further-resources .count}
+
+Further resources(#Further-resources) 
 ------------------------------------------------------
 
 The hub for information on integration tests is the project

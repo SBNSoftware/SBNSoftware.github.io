@@ -3,9 +3,9 @@ lang: en
 title: SAM File Metadata
 ---
 
-[]{#SAM-File-Metadata}
 
-SAM File Metadata[¶](#SAM-File-Metadata){.wiki-anchor}
+
+SAM File Metadata(#SAM-File-Metadata)
 ======================================================
 
 -   **Table of contents**
@@ -14,14 +14,14 @@ SAM File Metadata[¶](#SAM-File-Metadata){.wiki-anchor}
         -   [29 January 2018](#29-January-2018)
     -   [Useful links](#Useful-links)
 
-[]{#Running-list-of-comments}
 
-Running list of comments[¶](#Running-list-of-comments){.wiki-anchor}
+
+Running list of comments(#Running-list-of-comments)
 --------------------------------------------------------------------
 
-[]{#29-January-2018}
 
-### 29 January 2018[¶](#29-January-2018){.wiki-anchor}
+
+### 29 January 2018(#29-January-2018)
 
 (From Wes)
 
@@ -78,9 +78,9 @@ Running list of comments[¶](#Running-list-of-comments){.wiki-anchor}
     data\_stream, and run\_type can be used for organizing files in such
     ways.)
 
-[]{#Useful-links}
 
-Useful links[¶](#Useful-links){.wiki-anchor}
+
+Useful links(#Useful-links)
 --------------------------------------------
 
 -   [SAM User\'s

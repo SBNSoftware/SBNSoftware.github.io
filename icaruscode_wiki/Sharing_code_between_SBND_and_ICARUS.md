@@ -3,9 +3,9 @@ lang: en
 title: Sharing code between SBND and ICARUS
 ---
 
-[]{#Sharing-code-between-SBND-and-ICARUS}
 
-Sharing code between SBND and ICARUS[¶](#Sharing-code-between-SBND-and-ICARUS){.wiki-anchor}
+
+Sharing code between SBND and ICARUS(#Sharing-code-between-SBND-and-ICARUS)
 ============================================================================================
 
 ***PAGE IN DEVELOPMENT.*** This page is dedicated to advice about using
@@ -19,14 +19,14 @@ and save time than reworking everything! In particular, Yun-Tse Tsai
 (\@Yun-Tse) has done a lot of work on exchange of code between SBND and
 ICARUS and may have some insight.
 
-[]{#Differences-in-icaruscode-vs-sbndcode}
 
-Differences in `icaruscode` vs. `sbndcode`[¶](#Differences-in-icaruscode-vs-sbndcode){.wiki-anchor}
+
+Differences in `icaruscode` vs. `sbndcode`(#Differences-in-icaruscode-vs-sbndcode)
 ---------------------------------------------------------------------------------------------------
 
-[]{#IncludesServices-between-experiments-especially-fcl-includes}
 
-### Includes/Services between experiments (especially .fcl includes)[¶](#IncludesServices-between-experiments-especially-fcl-includes){.wiki-anchor}
+
+### Includes/Services between experiments (especially .fcl includes)(#IncludesServices-between-experiments-especially-fcl-includes)
 
 The fcl includes, services, etc. are different between the two code
 bases. For example, `sbndcode` has four services tables, two of which
@@ -75,9 +75,9 @@ you are looking for:
 **TODO**: cases where ICARUS includes have no direct counterpart in
 SBND?
 
-[]{#Difference-in-moduleproduct-names-between-experiments}
 
-### Difference in module/product names between experiments[¶](#Difference-in-moduleproduct-names-between-experiments){.wiki-anchor}
+
+### Difference in module/product names between experiments(#Difference-in-moduleproduct-names-between-experiments)
 
 Often ICARUS modules and the products they create may differ from those
 used by SBND. The general procedure is quite similar, but in ICARUS we
@@ -98,9 +98,9 @@ example:
   pandora        pandoraGausCryo0, etc.        pandoraICARUSCryo0, etc.
   pandoraTrack   pandoraTrackGausCryo0, etc.   pandoraTrackICARUSCryo0, etc.
 
-[]{#Detector-agnostic-code}
 
-Detector agnostic code[¶](#Detector-agnostic-code){.wiki-anchor}
+
+Detector agnostic code(#Detector-agnostic-code)
 ----------------------------------------------------------------
 
 In general, code pulled from the master branch of the LArSoft git
@@ -138,9 +138,9 @@ type is an error message that looks like the following:\
 This particular failure mode was one specific call to
 `fGeom->WirePitch(geo::kW)` in code originally used with SBND.
 
-[]{#General-advice}
 
-General advice[¶](#General-advice){.wiki-anchor}
+
+General advice(#General-advice)
 ------------------------------------------------
 
 Three pieces of general advice:

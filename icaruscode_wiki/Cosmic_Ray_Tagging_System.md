@@ -3,9 +3,9 @@ lang: en
 title: Cosmic Ray Tagging System
 ---
 
-[]{#Cosmic-Ray-Tagging-System}
 
-Cosmic Ray Tagging System ![schematic showing CRT surrounding the cryostat](/redmine/attachments/download/53137/icarus_crt.png "schematic showing CRT surrounding the cryostat")[¶](#Cosmic-Ray-Tagging-System){.wiki-anchor}
+
+Cosmic Ray Tagging System ![schematic showing CRT surrounding the cryostat](/redmine/attachments/download/53137/icarus_crt.png "schematic showing CRT surrounding the cryostat")(#Cosmic-Ray-Tagging-System)
 =============================================================================================================================================================================================================================
 
 Welcome to the ICARUS Cosmic Ray Tagging System (CRT)
@@ -32,9 +32,9 @@ the classes and dictionary necessary to introduce CRT data products to
 LArSoft. CRT/CRTUtils contains algorithms and utilities for use with
 modules living in CRT.
 
-[]{#Detector-Simulation}
 
-Detector Simulation[¶](#Detector-Simulation){.wiki-anchor}
+
+Detector Simulation(#Detector-Simulation)
 ----------------------------------------------------------
 
 All code related to the CRT detector simulation is contained in
@@ -43,17 +43,17 @@ CRTDetSim\_module.cc
 -   Light output/attenuation
 -   Front-end electronic
 
-[]{#Reconstruction}
 
-Reconstruction[¶](#Reconstruction){.wiki-anchor}
+
+Reconstruction(#Reconstruction)
 ------------------------------------------------
 
 -   CRT hits
 -   CRT tracks
 
-[]{#Work-in-progress}
 
-Work in progress[¶](#Work-in-progress){.wiki-anchor}
+
+Work in progress(#Work-in-progress)
 ----------------------------------------------------
 
 -   Update geometry (e.g. sloped CERN modules -\> rim (vertical))

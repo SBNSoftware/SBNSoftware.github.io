@@ -4,12 +4,12 @@ title: ReleaseNotes080300
 ---
 
   ----------- ------------ -- -- ------------------------------------------------------
-  v08.03.00   01/15/2019         [Release Notes](ReleaseNotes080300.html){.wiki-page}
+  v08.03.00   01/15/2019         [Release Notes](ReleaseNotes080300.html)
   ----------- ------------ -- -- ------------------------------------------------------
 
-[]{#icaruscode-v08_03_00-Release-Notes}
 
-icaruscode v08\_03\_00 Release Notes[¶](#icaruscode-v08_03_00-Release-Notes){.wiki-anchor}
+
+icaruscode v08\_03\_00 Release Notes(#icaruscode-v08_03_00-Release-Notes)
 ==========================================================================================
 
 -   **Table of contents**
@@ -25,13 +25,13 @@ icaruscode v08\_03\_00 Release Notes[¶](#icaruscode-v08_03_00-Release-Notes){.w
     -   [icarusutil v08\_03\_00](#icarusutil-v08_03_00)
 
 [list of icaruscode
-releases](List_of_ICARUS_code_releases.html){.wiki-page}\
+releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
 v08\_03\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_03_00/icaruscode-v08_03_00.html){.external}
 
-[]{#Purpose}
 
-Purpose[¶](#Purpose){.wiki-anchor}
+
+Purpose(#Purpose)
 ----------------------------------
 
 -   Catch up release to get all of the LArSoft improvements into a tag
@@ -40,9 +40,9 @@ Purpose[¶](#Purpose){.wiki-anchor}
 -   Remove references to the famous Field Response \"fudge factor\"
 -   Code cleanup
 
-[]{#New-features}
 
-New features[¶](#New-features){.wiki-anchor}
+
+New features(#New-features)
 --------------------------------------------
 
 -   CRT improvements
@@ -53,23 +53,23 @@ Bug fixes
 -   Bug fixes to all systems (optical waveforms,
     convolution/deconvolution, etc.)
 
-[]{#Updated-dependencies}
 
-Updated dependencies[¶](#Updated-dependencies){.wiki-anchor}
+
+Updated dependencies(#Updated-dependencies)
 ------------------------------------------------------------
 
 -   [LArSoft
     v08.03.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes080300){.external}
 -   larbatch v01.46.02
 
-[]{#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_03_00}
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_03\_00\")[¶](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_03_00){.wiki-anchor}
+
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_03\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_03_00)
 ================================================================================================================================================================================================================================
 
-[]{#icaruscode-v08_03_00}
 
-icaruscode v08\_03\_00[¶](#icaruscode-v08_03_00){.wiki-anchor}
+
+icaruscode v08\_03\_00(#icaruscode-v08_03_00)
 --------------------------------------------------------------
 
 -   2019-01-15 - Usher, Tracy L - Larsoft keep up, getting ready to tag
@@ -99,9 +99,9 @@ icaruscode v08\_03\_00[¶](#icaruscode-v08_03_00){.wiki-anchor}
 -   2018-12-21 - Usher, Tracy L - Give correct name to the \"incoherent
     noise fraction\"
 
-[]{#icarusutil-v08_03_00}
 
-icarusutil v08\_03\_00[¶](#icarusutil-v08_03_00){.wiki-anchor}
+
+icarusutil v08\_03\_00(#icarusutil-v08_03_00)
 --------------------------------------------------------------
 
 -   2019-01-15 - Usher, Tracy L - LArSoft keepup, tagging v08\_03\_00
