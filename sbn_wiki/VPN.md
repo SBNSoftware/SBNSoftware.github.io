@@ -163,7 +163,10 @@ Second password     | from the RSA token application
 
 The client asks for two passwords. The second one changes every minute
 and is obtained from the RSA token or application.
-
+Apparently depending on the system the token to be entered is either 6 digits
+(Android RSA token application?) or 10 digits (iOS?).
+In the latter case the code is made of the 4 digits of your secret
+(that is always the same and you chose) and the 6 digits generated every time.
 
 
 ### Cisco AnyConnect(#Cisco-AnyConnect)
