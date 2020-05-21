@@ -13,6 +13,7 @@ Download instructions for [sbndcode v08_52_00](http://scisoft.fnal.gov/scisoft/b
 * Weekly release
 
 ## New features
+* Includes the improved version of the code on larsim that produces faster and more stable light simulations
 
 ## Bug fixes
 
