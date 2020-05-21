@@ -6,52 +6,53 @@ title: VPN
 Virtual Private Network (VPN) to Fermilab(#Virtual-Private-Network-VPN-to-Fermilab)
 ====================================================================================================
 
-**The information below needs to be updated as now Fermilab has moved to
-a VPN system that requires a token, either soft or hard.**
-
-Currently one way to get get started is:
-
-1.  First you need to get a token by opening a ticket [RSA Token Request
-    form](https://fermi.service-now.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401){.external}
-    (takes a while and both hard and soft tokens are limited)
-2.  [Set it up](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0011426)
-3.  [Use it](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0013046)
-
-Don\'t know how to get a vpn with the cisco alternatives. If you manage
-to work out how to set a vpn with one of the alternatives below please
-update this wiki page.
-
-------------------------------------------------------------------------
-
--   **Table of contents** (links do not work yet... need to find out how to fix them...)
--   [Virtual Private Network (VPN) to Fermilab](#Virtual-Private-Network-VPN-to-Fermilab)
-    -   [Cisco client installation](#Cisco-client-installation)
-        -   [Additional setup for Linux](#Additional-setup-for-Linux)
-    -   [Free client installation](#Free-client-installation)
-        -   [OpenConnect for OSX](#OpenConnect-for-OSX)
-        -   [OpenConnect for Linux](#OpenConnect-for-Linux)
-        -   [OpenConnect for iOS (Apple
-            mobile)](#OpenConnect-for-iOS-Apple-mobile)
-        -   [OpenConnect for Android](#OpenConnect-for-Android)
+**Table of contents** (links do not work yet... need to find out how to fix them...)
+*   [Obtaining the credentials](#RSAtoken)
+*   [Cisco client installation](#Cisco-client-installation)
+    -   [Additional setup for Linux](#Additional-setup-for-Linux)
+*   [Free client installation](#Free-client-installation)
+    -   [OpenConnect for OSX](#OpenConnect-for-OSX)
+    -   [OpenConnect for Linux](#OpenConnect-for-Linux)
+    -   [OpenConnect for iOS (Apple mobile)](#OpenConnect-for-iOS-Apple-mobile)
+    -   [OpenConnect for Android](#OpenConnect-for-Android)
     -   [Log in the VPN](#Log-in-the-VPN)
         -   [Cisco AnyConnect](#Cisco-AnyConnect)
-        -   [OpenConnect (command line
-            interface)](#OpenConnect-command-line-interface)
+        -   [OpenConnect (command line interface)](#OpenConnect-command-line-interface)
 
 Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but crippled.
 
 To allow users to access these resources in full by connecting via a
-Virtual Private Network (VPN), which needs to be set up on the client node.
+Virtual Private Network (VPN)
+For this access, the user must obtain from Fermilab all the credentials to access.
+They also need a program to be correctly set up on the client node (e.g. laptop).
 
 A quite understandable description of the system is documented in
 [CD DocDB 3435](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=3435).
 
 As stated in there, Fermilab has chosen Cisco "AnyConnect", which provides a
 [client](http://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/tsd-products-support-series-home.html)
-to connect to its VPN.
+to connect to its VPN. There is also a free alternative.
 
-Cisco provides also a client to "enter" the VPN. There is also a freealternative.
+
+Obtaining the credentials{#RSAtoken}
+-------------------------------------
+
+Fermilab has adopted an authentication system that requires a token.
+The token (a number) is different on each connection, and the user must be able
+to promptly provide it when requested at the beginning of the connection.
+
+The token can be obtained from a special "key" (an hardware dongle that must be requested to Fermilab)
+or by a software application.
+
+Currently one way to get get started is:
+
+1.  First you need to get a token by opening a ticket [RSA Token Request form](https://fermi.service-now.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401){.external}
+    (takes a while and both hard and soft tokens are limited)
+2.  [Set it up](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0011426)
+3.  [Use it](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0013046)
+
+A token will be requested on each connection.
 
 
 Cisco client installation(#Cisco-client-installation)
@@ -79,12 +80,12 @@ To install that, run
     
 or similar. In short: you need administrator privileges.
 
-The script will also install SysV scripts to start and stop the VPN. It
+The script will also install SystemV scripts to start and stop the VPN. It
 will also try to set it to start automatically (this failed on Gentoo
 Linux).
 
-If your system uses systemd instead, it may still work\... or not (this
-too failed on Gentoo Linux).
+If your system uses [systemd](https://github.com/systemd/systemd) instead,
+it may still work... or not (this too failed on Gentoo Linux).
 
 When the sequence of failures is long enough, you are ready to give a
 try to the free client.
@@ -109,9 +110,12 @@ Under OSX, OpenConnect is also via homebrew:
 
 ### OpenConnect for Linux(#OpenConnect-for-Linux)
 
-To do (need it? please [ask](mailto:petrillo@fnal.gov)).
+To do (need it? please [ask](mailto:petrillo@slac.stanford.edu)).
 
-Chances are that your distribution has it prepackaged for you.
+Chances are that your distribution has it prepackaged for you:
+
+* Gentoo (checked on: 2020-05-19T15:08:15Z): `emerge net-vpn/openconnect`
+* Ubuntu (checked on: 18.04 LTS): `apt install openconnect`
 
 
 
@@ -144,49 +148,81 @@ OpenConnect binary distribution is available via
 Log in the VPN(#Log-in-the-VPN)
 ------------------------------------------------
 
-To start using the VPN, a login must be performed. The VPN "split"
-mode will make sure that only the traffic to Fermilab network goes
-through the VPN.
+To start using the VPN, a login must be performed.
+The VPN "split" mode will make sure that only the traffic to Fermilab network
+goes through the VPN.
 The credentials for log in are:
 
-parameter    | value
------------- | ----------------------------------------------------------------------
-Server       | `vpn.fnal.gov`
-User name    | plain user name (no `@fnal.gov`, `@services.fnal.gov` or such)
-Password     | Services password (same as for e-mail access, ServiceNow and others)
+parameter           | value
+------------------- | ----------------------------------------------------------------------
+Server              | `vpn.fnal.gov`
+Authorization group | `SiteVPN-RSA`
+User name           | plain user name (no `@fnal.gov`, `@services.fnal.gov` or such)
+First password      | Services password (same as for e-mail access, ServiceNow and others)
+Second password     | from the RSA token application
+
+The client asks for two passwords. The second one changes every minute
+and is obtained from the RSA token or application.
 
 
 
 ### Cisco AnyConnect(#Cisco-AnyConnect)
 
-Under OSX, a graphic user interface called "Cisco AnyConnect Secure
-Mobility Client" will allow you to enter the information above.
+Under OSX and Linux, a graphic user interface called
+"Cisco AnyConnect Secure Mobility Client" will allow you to enter the information above.
 
-The user name might be required in its full glory:
-`user@services.fnal.gov`.
+The first box ("Connect to") allows to choose one of the preconfigured clients.
+You want to type the Fermilab VPN server here.
+Note that depending on the client options, the client could attempt to connect
+to a VPN as soon as it is started: make sure that if that happens,
+Fermilab VPN is chosen.
 
+The `SiteVPN-RSA` authorization group should be already preselected - if not, it needs to be chosen.
+Three more text boxes are present.
+The user name appears to be accepted _without_ the `@services.fnal.gov` suffix.
+Two password boxes are the first one for the Fermilab Services password,
+the second password for the RSA token.
+On a successful connection, a dialog box will appear prompting the user to accept
+the conditions of use, and after accepting it the VPN is active.
 
 
 ### OpenConnect (command line interface)(#OpenConnect-command-line-interface)
 
 The simplest command to start is:
 
-    sudo openconnect --user=<USERNAME> vpn.fnal.gov
+    sudo openconnect --user=<USERNAME> --authgroup=SiteVPN-RSA vpn.fnal.gov
 
 or equivalent. Superuser privileges are likely necessary to mess with
-the network configuration.
+the network configuration;
+with no special configuration, the very first password request will come from `sudo`
+and the answer is usually the local user login password.
 
 The `--user` argument, optional, is the one like in the table above. If
 not specified, it will be asked interactively.
+The `--authgroup` argument is also optional, and again its value will be
+asked interactively if the option is omitted.
 
 Remember that if you use that command, the first password request comes
 from `sudo` to gain administrator privileges on your own machine.
-Then, the VPN access password is requested (as in the table above).
+Then if Fermilab certificates are not recognized by your system, you may receive
+_twice_ the confirmation that the certificates being used are trustworthy
+(two different certificates, two requests). Saying `yes` will move forward.
+
+The next prompt may be for the user name, if `--user` was not specified.
+Then the next prompt may be for the access group, if `--authgroup` was not specified.
+Then, the VPN access password is requested (`Password:`: first password from the table above),
+and then the RSA token is (another `Password:`: second password from the table above).
 
 The shell is occupied by `openconnect`, unless the `--background` option
 is specified. If not, to disconnect it is enough to hit `<Ctrl>+<C>`.
 
+> The command I end up using looks like:
+>     
+>     sudo /usr/sbin/openconnect --background --user=<MyUserName> --authgroup=SiteVPN-RSA --setuid="$USER" vpn.fnal.gov
+>     
+> Quite a mouthful.
+
 Chances are that your Linux operating system is distributing convenience
 scripts to manage the VPN... check the standard places (e.g. something
 in `/etc/init.d` for Debian, `service` for RedHat, `rc-service` for
-Gentoo, ...).
+old Gentoo, maybe a `systemd` unit...).
