@@ -15,9 +15,9 @@ Virtual Private Network (VPN) to Fermilab(#Virtual-Private-Network-VPN-to-Fermil
     -   [OpenConnect for Linux](#OpenConnect-for-Linux)
     -   [OpenConnect for iOS (Apple mobile)](#OpenConnect-for-iOS-Apple-mobile)
     -   [OpenConnect for Android](#OpenConnect-for-Android)
-    -   [Log in the VPN](#Log-in-the-VPN)
-        -   [Cisco AnyConnect](#Cisco-AnyConnect)
-        -   [OpenConnect (command line interface)](#OpenConnect-command-line-interface)
+*   [Log in the VPN](#Log-in-the-VPN)
+    -   [Cisco AnyConnect](#Cisco-AnyConnect)
+    -   [OpenConnect (command line interface)](#OpenConnect-command-line-interface)
 
 Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but crippled.
