@@ -310,8 +310,7 @@ Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but
 crippled.\
 To allow users to access these resources in full by connecting via a
-Virtual Private Network (VPN), which needs to be [set up on the client
-node](VPN.html){.wiki-page .new}.
+Virtual Private Network (VPN), which needs to be [set up on the client node](../sbn_wiki/VPN.md)
 
 
 
