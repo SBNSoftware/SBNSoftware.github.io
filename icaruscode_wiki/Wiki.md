@@ -97,3 +97,10 @@ Troubleshooting(#Troubleshooting)
 
 -   [Trouble Shooting and
     Gotchas](Trouble_Shooting_and_Gotchas.html)
+
+
+Contributing to this wiki
+--------------------------
+
+The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io)
+under the [`icaruscode_wiki`](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/icaruscode_wiki) subdirectory.
