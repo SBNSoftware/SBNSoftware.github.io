@@ -28,6 +28,10 @@ See below for helpful links:
 * [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
 
 
+### Contribute to this wiki
+
+The content of this wiki is tracked by the [GIT repository SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io).
+It can be edited directly online or by pushing changes to the repository with GIT.
 
 
 ### Support or Contact
