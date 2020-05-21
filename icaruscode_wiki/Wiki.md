@@ -43,7 +43,7 @@ Developing ICARUS code(#Developing-ICARUS-code)
 
 
 
-[Computing resources](Computing_resources.html)(#Computing-resources) 
+[Computing resources](Computing_Resources.md)(#Computing-resources) 
 --------------------------------------------------------------------------------------------------
 
 
