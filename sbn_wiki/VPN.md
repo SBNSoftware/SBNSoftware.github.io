@@ -201,15 +201,20 @@ The `--user` argument, optional, is the one like in the table above. If
 not specified, it will be asked interactively.
 The `--authgroup` argument is also optional, and again its value will be
 asked interactively if the option is omitted.
+In this log in procedure, **pay attention to the text in the prompts**.
 
 Remember that if you use that command, the first password request comes
-from `sudo` to gain administrator privileges on your own machine.
+from `sudo` to gain administrator privileges on your own machine
+(prompy may be something like `[sudo] password for <username>:`).
 Then if Fermilab certificates are not recognized by your system, you may receive
 _twice_ the confirmation that the certificates being used are trustworthy
 (two different certificates, two requests). Saying `yes` will move forward.
 
-The next prompt may be for the user name, if `--user` was not specified.
-Then the next prompt may be for the access group, if `--authgroup` was not specified.
+Then the next prompt may be for the access group, if `--authgroup` was not specified
+(prompt: `GROUP: [option|option|...]:`).
+At this point FNAL server will always send a message like `Please enter your SERVICES username and password.`.
+The next prompt may be for the user name, _if `--user` was not specified_ (prompt: `Username:`).
+**If the `--user` option is specified, this prompt is skipped, despite the message from FNAL to enter both username _and_ password.**
 Then, the VPN access password is requested (`Password:`: first password from the table above),
 and then the RSA token is (another `Password:`: second password from the table above).
 
@@ -221,6 +226,44 @@ is specified. If not, to disconnect it is enough to hit `<Ctrl>+<C>`.
 >     sudo /usr/sbin/openconnect --background --user=<MyUserName> --authgroup=SiteVPN-RSA --setuid="$USER" vpn.fnal.gov
 >     
 > Quite a mouthful.
+> This is an example of output with `openconnect` `v8.09`:
+>     
+>     POST https://vpn.fnal.gov/
+>     Connected to 198.49.208.88:443
+>     SSL negotiation with vpn.fnal.gov
+>     Server certificate verify failed: signer not found
+>     
+>     Certificate from VPN server "vpn.fnal.gov" failed verification.
+>     Reason: signer not found
+>     To trust this server in future, perhaps add this to your command line:
+>         --servercert pin-sha256:<CertificateHash1>
+>     Enter 'yes' to accept, 'no' to abort; anything else to view: yes
+>     Connected to HTTPS on vpn.fnal.gov with ciphersuite (TLS1.2)-(RSA)-(AES-128-CBC)-(SHA1)
+>     Got HTTP response: HTTP/1.0 302 Temporary moved
+>     POST https://v-main-gcca-1-outside.fnal.gov/
+>     Connected to 198.49.208.79:443
+>     SSL negotiation with v-main-gcca-1-outside.fnal.gov
+>     Server certificate verify failed: signer not found
+>     
+>     Certificate from VPN server "v-main-gcca-1-outside.fnal.gov" failed verification.
+>     Reason: signer not found
+>     To trust this server in future, perhaps add this to your command line:
+>         --servercert pin-sha256:<CertificateHash2>
+>     Enter 'yes' to accept, 'no' to abort; anything else to view: yes
+>     Connected to HTTPS on v-main-gcca-1-outside.fnal.gov with ciphersuite (TLS1.2)-(RSA)-(AES-128-CBC)-(SHA1)
+>     POST XML abilitato
+>     Please enter your SERVICES username and password.
+>     POST https://v-main-gcca-1-outside.fnal.gov/
+>     POST XML abilitato
+>     Please enter your SERVICES username and password.
+>     Password:
+>     Password:
+>     POST https://v-main-gcca-1-outside.fnal.gov/
+>     Got CONNECT response: HTTP/1.1 200 OK
+>     CSTP connected. DPD 30, Keepalive 20
+>     Connected as <MY.IP.ADD.RES>, using SSL, with DTLS + LZS in progress
+>     Continuing in background; pid <PID>
+>     
 
 Chances are that your Linux operating system is distributing convenience
 scripts to manage the VPN... check the standard places (e.g. something
