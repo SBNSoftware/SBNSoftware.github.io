@@ -14,7 +14,7 @@ Write files to SciSoft(#Write-files-to-SciSoft)
     gained by submitting a service desk ticket.
 -   You will need the scripts copyFromJenkins and copyToSciSoft which
     can be obtained here
-    (<http://scisoft.fnal.gov/scisoft/bundles/tools/>)
+    (<http://scisoft.fnal.gov/scisoft/bundles/tools/>). They are also located in the [attachments folder of the wiki](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/sbndcode_wiki/attachments).
 
 
 
