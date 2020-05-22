@@ -119,7 +119,7 @@ previous_util_version=$3
 # create ${working_dir}/${sbndcode_version}
 get_working_dir
 
-today=`date +%m/%d/%Y`
+today=`date '+%d %b %Y'`
 dotver=`echo ${sbndcode_version} | sed -e 's%_%.%g'`
 version_string=`echo ${sbndcode_version} | sed -e 's/_//g' | sed -e 's/^v//'`
 
