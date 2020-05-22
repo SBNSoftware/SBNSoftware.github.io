@@ -95,6 +95,8 @@ Instructions(#Instructions)
 Details: start\_release.sh(#Details-start_releasesh)
 ---------------------------------------------------------------------
 
+Example file can be found [here](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbndcode_wiki/attachments/git_start_release.sh).
+
 -   Create a new directory for the new tag\
 
         mkdir lardev-< version >
