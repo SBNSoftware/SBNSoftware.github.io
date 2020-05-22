@@ -1,0 +1,248 @@
+#!/bin/bash
+
+# copy the artifacts from a Jenkins project
+
+usage()
+{
+    echo "$(basename ${0}) [options] <project> "
+    echo " options:"
+    echo "     -h this help."
+    echo "     -b <build_num> - e.g. 35 (default lastSuccessfulBuild). Mutually exclusive with -w."
+    echo "     -d <dir>. Default copyBack."
+    echo "     -E <cert> - Provide certificate file name to be passed through to curl for all operations."
+    echo "               Use this to generate certificate file from cilogin.p12:"
+    echo "               openssl pkcs12 -in cilogin.p12 -out file.crt.pem -clcerts -nokeys"
+    echo "     -K <key> - Provide private file name to be passed through to curl for all operations."
+    echo "               Use this to generate key file from cilogin.p12:"
+    echo "               openssl pkcs12 -in cilogin.p12 -out file.key.pem -nocerts -nodes"
+    echo "     -f <filter_regex> - filter results by (bash) regex."
+    echo "     -t <build_type> - where build_type is all, debug, prof, or none (default debug & prof) -- repeatable."
+    echo "     -m <machine_type> - where machine_type is one of the types recognized by Jenkins:"
+    echo "          SLF5 SLF6 SLF7 OSX-10.9 OSX-10.10 OSX-10.11 OSX-10.12 OSX-10.13 OSX-10.14. Option is repeatable."
+    echo "     -N - no clobber - do not overwrite existing file."
+    echo "     -n <node_name> - fully qualified name such as buildservice007.fnal.gov (repeatable)."
+    echo "     -p <python_version> - specify PYVER if it used in the build matrix (e.g., v2_7_15a) (repeatable)."
+    echo "     -q <quals> - specify qualifiers if they are used in the build matrix (e.g., artdaq) (repeatable)."
+    echo "     -w - pull from workspace rather than artifacts area (need -E and -K). Mutually exclusive with -b."
+    echo "     -V - print version and exit."
+    echo ""
+    echo "    NOTE: this script pulls the last successful build by default (see -b, -w for alternatives)."
+    echo "    The Jenkins project name (e.g., geant4-release-build) is required."
+    echo "    if build type is not specified, both debug and prof will be copied"
+    echo "    if OS is not specified, the script will look for SLF6, SLF7, and OS_X"
+}
+
+print_version()
+{
+  echo "$(basename ${0}) 3.01.00"
+}
+
+declare -a have_swarm
+declare -a build_array
+declare -a qual_array
+declare -a pyver_array
+declare -a os_array
+
+dir=copyBack
+
+while getopts :b:d:E:K:f:t:m:Nn:p:q:hVw OPT; do
+  case ${OPT} in
+    b)
+      build_num=$OPTARG
+      ((want_build_num=1))
+      ;;
+    d)
+      dir="$OPTARG"
+      ;;
+    E)
+      cert_arg=(-E "${OPTARG}")
+      (( with_certs = 1 ))
+      ;;
+    K) key_arg=(--key "${OPTARG}")
+      (( with_certs = 1 ))
+      ;;
+    f)
+      filter_regex="$OPTARG"
+      ;;
+    t)
+      case ${OPTARG} in
+        debug|opt|prof|none)
+          build_array+=(${OPTARG}) ;;
+        all)
+          build_array+=(debug opt prof) ;;
+        *)
+          echo "ERROR: unrecognized build type ${OPTARG}" 1>&2
+          exit 1
+      esac
+      ;;
+    m|n)
+      case ${OPTARG} in
+        OS[-_]X)
+          os_array+=(OSX-10.1{1,2,3,4})
+          have_swarm+=(1)
+          ;;
+        slf*|SLF*)
+          os_array+=(${OPTARG^^})
+          have_swarm+=(1)
+          ;;
+        d*)
+          os_array+=(OSX-10.$((${OPTARG#d} - 4)))
+          have_swarm+=(1)
+          ;;
+        mac-10.*|OSX-10.*)
+          os_array+=(${OPTARG/mac/OSX})
+          have_swarm+=(1)
+          ;;
+        *.gov|*.org|*.edu|*.com|*.[a-z][a-z]) # Node name
+          os_array+=(${OPTARG})
+          if [[ ${OPTARG} == *.fnal.gov ]]; then
+            have_swarm+=(1)
+          else
+            have_swarm+=(0)
+          fi
+          ;;
+        *)
+          echo "ERROR: Unrecognized argument to -${OPT}" 1>&2; exit 1
+      esac
+      ;;
+    N)
+      (( no_clobber = 1 ))
+      ;;
+    p)
+      pyver_array+=($OPTARG);
+      ;;
+    q)
+      qual_array+=($OPTARG);
+      ;;
+    h)
+      usage
+      exit 1
+      ;;
+    w)
+      ((want_workspace=1))
+      ;;
+    V)
+      print_version
+      exit 1
+      ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift `expr $OPTIND - 1`
+OPTIND=1
+
+print_version
+
+if ((want_workspace)) && (( want_build_num)); then
+  echo "ERROR: -b and -w are mutually exclusive" 1>&2
+  exit 1
+elif ((want_workspace)); then
+  arena="ws"
+elif ((want_build_num)); then
+  arena="artifact"
+else
+  arena="lastSuccessfulBuild/artifact"
+fi
+
+
+project="${1}"
+
+if [ -z ${project} ]
+then
+  echo "ERROR: please specify at least the release url"
+  usage
+  exit 1
+fi
+
+# Defaults
+if ((${#qual_array} == 0)); then
+  qual_array=(none)
+fi
+
+if ((${#pyver_array} == 0)); then
+  pyver_array=(none)
+fi
+
+if ((${#build_array[@]} == 0)); then
+    echo "INFO: default to copying debug and prof artifacts"
+    build_array=(debug prof)
+fi
+
+if ((${#os_array[@]} == 0)); then
+  echo "INFO: default to copying artifacts for SLF and OSX"
+  os_array=(SLF{6,7} OSX-10.1{1,2,3,4})
+  # Horrible Bash trick to have an array filled with a "1" for every
+  # element of os_array.
+  have_swarm=($(printf "1\n%.0s" "${os_array[@]}"))
+fi
+
+# Remove duplicates.
+os_array=(`printf "%s\n" "${os_array[@]}" | sort -u`)
+build_array=(`printf "%s\n" "${build_array[@]}" | sort -u`)
+
+echo "INFO: copy ${project}"
+echo "           ${os_array[@]}"
+echo "           ${build_array[@]}"
+
+base_cmd_args=(-k)
+if (( ${with_certs:-0} )); then
+  base_cmd_args+=("${cert_arg[@]}" "${key_arg[@]}")
+  CRUMB=$(curl "${base_cmd_args[@]}" \
+    "https://buildmaster.fnal.gov/buildmaster/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb)")
+  base_cmd_args+=(-H"${CRUMB}")
+fi
+
+(( os_count = 0 ))
+for OS in "${os_array[@]}"; do
+  want_swarm=${have_swarm[$((os_count++))]}
+  for btype in "${build_array[@]}"; do
+    if [ "${btype}" = "none" ]; then
+      btype=""
+    else
+      btype="BUILDTYPE=${btype},"
+    fi
+    for qtype in "${qual_array[@]}"; do
+      if [ "${qtype}" = "none" ]
+      then
+        qtype=""
+      else
+        qtype="QUAL=${qtype},"
+      fi
+
+      for pyver in "${pyver_array[@]}"; do
+        if [ "${pyver}" = "none" ]; then
+          pyver=""
+        else
+          pyver="PYVER=${pyver},"
+        fi
+
+        if (( want_swarm )); then
+	        url="https://buildmaster.fnal.gov/buildmaster/job/${project}${build_num:+/${build_num}}/${pyver}${btype}${qtype}label1=swarm,label2=${OS}/${arena}/${dir}/"
+        else
+	        url="https://buildmaster.fnal.gov/buildmaster/job/${project}${build_num:+/${build_num}}/${pyver}${btype}${qtype}label1=${OS}/${arena}/${dir}/"
+        fi
+        echo
+        echo ${url}
+        cmd_args=("${base_cmd_args[@]}" "${url}")
+	      artifacts=(`curl "${cmd_args[@]}" | sed -e 's/</\n</g' | grep -e '>view$' \
+	        | sed -e 's/^<a href="\(.*\)\/\*view.*$/\1/'`)
+
+		      for artifact in "${artifacts[@]}"; do
+          [[ -z "${filter_regex}" ]] || [[ "${artifact}" =~ ${filter_regex} ]] || continue
+          echo "copy ${url}/${artifact}"
+          cmd_args=("${base_cmd_args[@]}" -O "${url}/${artifact}")
+          ! { (( ${no_clobber:-0} )) && [[ -f "${artifact}" ]] ; } && \
+	            curl "${cmd_args[@]}"
+		          done # Artifacts
+      done # Python versions
+    done # Qualifiers
+  done # Build types
+done # Nodes / OS types
+
+echo
+print_version
+echo
+
+exit 0
