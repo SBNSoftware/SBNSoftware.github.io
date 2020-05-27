@@ -4,7 +4,8 @@ Please follow these instructions to make the migration of code repositories to G
 
 
 #### 1. Get added to the SBNSoftware organization.
-  - Email Wes or Joseph to request this. [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov).
+  - Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSf_jrYDbaC3_WoLDzBappZkEpPpyD7tSt7UWF59TUyUEAjaSA/viewform?usp=sf_link)
+  - If any issues, please email Wes or Joseph. [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov).
 
 
 #### 2. Make sure your latest code gets migrated
