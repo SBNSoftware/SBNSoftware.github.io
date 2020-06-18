@@ -65,6 +65,8 @@ Content of the packages(#Content-of-the-packages)
 [Monte Carlo productions](Wiki.html)(#Monte-Carlo-productions) 
 -------------------------------------------------------------------------------------------
 
+* [samples used for trigger simulation](samples/trigger_simulation.md)
+
 Useful Tidbits of information. 
 ------------------------------
 
@@ -82,8 +84,7 @@ Useful Tidbits of information.
 Newbie Material 
 ---------------
 
--   [Cosmic Ray Tagging
-    System](Cosmic_Ray_Tagging_System.html)
+-   [Cosmic Ray Tagging System](Cosmic_Ray_Tagging_System.html)
 
 
 
