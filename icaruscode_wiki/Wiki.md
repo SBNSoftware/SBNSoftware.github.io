@@ -5,31 +5,28 @@ title: Wiki
 
 
 
-ICARUS Simulation and Reconstruction Code(#ICARUS-Simulation-and-Reconstruction-Code)
-======================================================================================================
+ICARUS Simulation and Reconstruction Code
+==========================================
 
--   **Table of contents**
--   [ICARUS Simulation and Reconstruction
-    Code](#ICARUS-Simulation-and-Reconstruction-Code)
-    -   [Developing ICARUS code](#Developing-ICARUS-code)
-    -   [Computing resources](#Computing-resources)
-    -   [Content of the packages](#Content-of-the-packages)
-    -   [Monte Carlo productions](#Monte-Carlo-productions)
-    -   [Code management and deployment
-        stuff](#Code-management-and-deployment-stuff)
-    -   [SAM File Metadata](#SAM-File-Metadata)
-    -   [Troubleshooting](#Troubleshooting)
+#### Table of contents
+
+-   [Developing ICARUS code](#developing-icarus-code)
+-   [Computing resources](#computing-resources)
+-   [Content of the packages](#content-of-the-packages)
+-   [Monte Carlo productions](#monte-carlo-productions)
+-   [Code management and deployment stuff](#code-management-and-deployment-stuff)
+-   [SAM File Metadata](#sam-file-metadata)
+-   [Troubleshooting](#troubleshooting)
 
 This is version 0 of a wiki age for ICARUS software\
 It should have more than a passing familiarity with SBND\...
 
 
 
-Developing ICARUS code(#Developing-ICARUS-code) 
-----------------------------------------------------------------
+Developing ICARUS code
+-----------------------
 
--   [The ICARUS Guide to using
-    LArSoft](The_ICARUS_Guide_to_using_LArSoft.html)
+-   [The ICARUS Guide to using LArSoft](The_ICARUS_Guide_to_using_LArSoft.html)
 -   ICARUS code repository: `icaruscode` (use
     `mrb gitCheckout icaruscode` from your MRB working area)
 -   Developing ICARUS code in LArSoft\|More information about developing
@@ -43,27 +40,25 @@ Developing ICARUS code(#Developing-ICARUS-code)
 
 
 
-[Computing resources](Computing_Resources.md)(#Computing-resources) 
---------------------------------------------------------------------------------------------------
+[Computing resources](Computing_Resources.md)
+----------------------------------------------
 
 
 
-Content of the packages(#Content-of-the-packages) 
-------------------------------------------------------------------
+Content of the packages
+------------------------
 
 -   Configuration of ICARUS jobs and utilities
--   [Generating cosmic rays with
-    CORSIKA](Cosmic_ray_generation_(CORSIKA).html)
+-   [Generating cosmic rays with CORSIKA](Cosmic_ray_generation_(CORSIKA).md)
 -   The ICARUS flux files
--   [Detector geometry description
-    files](Detector_geometry.html)
+-   [Detector geometry description files](Detector_geometry.md)
 -   [Software parameters and
-    settings](Software_parameters_and_settings.html)
+    settings](Software_parameters_and_settings.md)
 
 
 
-[Monte Carlo productions](Wiki.html)(#Monte-Carlo-productions) 
--------------------------------------------------------------------------------------------
+Monte Carlo productions
+------------------------
 
 * [samples used for trigger simulation](samples/trigger_simulation.md)
 
@@ -76,28 +71,27 @@ Useful Tidbits of information.
 
 
 
-[Code management and deployment stuff](Code_management_and_deployment_stuff.html)(#Code-management-and-deployment-stuff) 
------------------------------------------------------------------------------------------------------------------------------------------------------
+[Code management and deployment stuff](Code_management_and_deployment_stuff.md)
+--------------------------------------------------------------------------------
 
--   [Roles and people](Roles_and_people.html)
+-   [Roles and people](Roles_and_people.md)
 
 Newbie Material 
 ---------------
 
--   [Cosmic Ray Tagging System](Cosmic_Ray_Tagging_System.html)
+-   [Cosmic Ray Tagging System](Cosmic_Ray_Tagging_System.md)
 
 
 
-[SAM File Metadata](SAM_File_Metadata.html)(#SAM-File-Metadata) 
---------------------------------------------------------------------------------------------
+[SAM File Metadata](SAM_File_Metadata.md)
+------------------------------------------
 
 
 
-Troubleshooting(#Troubleshooting) 
---------------------------------------------------
+Troubleshooting
+----------------
 
--   [Trouble Shooting and
-    Gotchas](Trouble_Shooting_and_Gotchas.html)
+-   [Trouble Shooting and Gotchas](Trouble_Shooting_and_Gotchas.md)
 
 
 Contributing to this wiki
