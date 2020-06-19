@@ -3,8 +3,8 @@ lang:       en
 title:      ICARUS Detector geometry
 ---
 
-ICARUS detector geometry description(#ICARUS-detector-geometry-description)
-============================================================================
+ICARUS detector geometry description
+=====================================
 
 Table of contents
 ------------------
