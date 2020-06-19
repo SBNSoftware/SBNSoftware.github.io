@@ -9,13 +9,13 @@ ICARUS detector geometry description(#ICARUS-detector-geometry-description)
 Table of contents
 ------------------
 
-* [Geometry description versions](#Geometry-description-versions)
-* [Selecting a geometry](#Selecting-a-geometry)
-* [Where is located everything?](#Where-is-located-everything)
+* [Geometry description versions](#geometry-description-versions)
+* [Selecting a geometry](#selecting-a-geometry)
+* [Where is located everything?](#where-is-located-everything)
 
 
-Geometry description versions(#Geometry-description-versions)
-------------------------------------------------------------------------------
+Geometry description versions
+------------------------------
 
 Detector geometry description is currently stored in GDML format as a
 text file in
@@ -40,7 +40,7 @@ directory.
 |         | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`               | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
 
 
-### Testing a new version of the geometry description(#Testing-a-new-version-of-the-geometry-description)
+### Testing a new version of the geometry description
 
 LArSoft provides a geometry test module with a decent coverage
 for geometry and channel mapping functions.
@@ -59,8 +59,8 @@ or to selectively run tests, or even to enable the thorough ROOT
 geometry overlap test (which takes many, many minutes to complete).
 
 
-Selecting a geometry(#Selecting-a-geometry)
-------------------------------------------------------------
+Selecting a geometry
+---------------------
 
 Configurations using the current default geometry will have to configure
 the relevant services: the recommended way is:
@@ -85,7 +85,7 @@ configured a different one, the following patterns can be used to select
 the desired geometry.
 
 
-### `icaruscode` versions `v08_52_00` and later(#icaruscode-versions-v08_52_00-and-later)
+### `icaruscode` versions `v08_52_00` and later
 
 Geometry can be selected by including one of the predefined
 configurations defined in
@@ -144,7 +144,7 @@ name                                              | introduced  | description   
 
 
 
-### `icaruscode` versions `v08_51_00` and earlier(#icaruscode-versions-v08_51_00-and-earlier)
+### `icaruscode` versions `v08_51_00` and earlier
 
 Geometry can be selected by including one of the predefined
 configurations defined in
@@ -167,8 +167,8 @@ name                                   | introduced  | description
 `use_nooverburden_geometry_icarus.fcl` | `v08_44_00` | 18-m first induction plane wires geometry without concrete overburden
 
 
-Where is located everything?(#Where-is-located-everything)
----------------------------------------------------------------------------
+Where is located everything?
+-----------------------------
 
 A LArSoft module (analyzer) is available which produces an outline of
 the location and characteristics of the main elements of the detector:
