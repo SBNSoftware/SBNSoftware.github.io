@@ -32,7 +32,7 @@ Process list:
 sample         | BNB neutrino (`v08_37_00`)
 -------------- | -----------------------------------------------------------------
 Author         | [Ryan Howell](mailto:rjhowell)
-`icaruscode`   | [`v08_37_00`](#-v08-37-00-)
+`icaruscode`   | [`v08_37_00`](#v08-37-00)
 Generation     | `simulation_genie_icarus_bnb.fcl`
 Filtering      | _none_
 Detector       | `standard_g4_icarus.fcl`
