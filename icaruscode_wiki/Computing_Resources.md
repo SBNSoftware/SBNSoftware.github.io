@@ -3,45 +3,31 @@ lang: en
 title: Computing Resources
 ---
 
+Computing Resources
+====================
 
-
-Computing Resources(#Computing-Resources)
-==========================================================
-
--   **Table of contents**
--   [Computing Resources](#Computing-Resources)
-    -   -   -   [SCD liaison](#SCD-liaison)
-
-    -   [Computing Access](#Computing-Access)
-        -   [SSH access to remote
-            servers](#SSH-access-to-remote-servers)
-    -   [Where to work: interactive nodes
-        (\"GPVM\")](#Where-to-work-interactive-nodes-GPVM)
-    -   [Opening a ticket in Fermilab Service
-        Desk](#Opening-a-ticket-in-Fermilab-Service-Desk)
-    -   [Accessing resources (DocDB, VOMS, \...) via
-        certificates](#Accessing-resources-DocDB-VOMS-via-certificates)
-    -   [Accessing resources via Virtual Private
-        Network](#Accessing-resources-via-Virtual-Private-Network)
-    -   [Submitting jobs: Virtual
-        Organisation](#Submitting-jobs-Virtual-Organisation)
-    -   [Submitting jobs: grid
-        resources](#Submitting-jobs-grid-resources)
-    -   [Software distribution](#Software-distribution)
-        -   [CVMFS](#CVMFS)
-    -   [Storing data](#Storing-data)
-        -   [Local storage: BlueArc disks](#Local-storage-BlueArc-disks)
-        -   [World-visible storage:
-            dCache](#World-visible-storage-dCache)
-        -   [Tape storage](#Tape-storage)
-        -   [File database (SAM)](#File-database-SAM)
-    -   [Web server pages](#Web-server-pages)
-        -   [SBN online web gate](#SBN-online-web-gate)
-        -   [ICARUS data web directory](#ICARUS-data-web-directory)
-        -   [Communication tools](#Communication-tools)
-            -   [Mailing lists](#Mailing-lists)
-    -   [Other obscure services and
-        resources](#Other-obscure-services-and-resources)
+-   [SCD liaison](#scd-liaison)
+-   [Computing Access](#computing-access)
+    -   [SSH access to remote servers](#ssh-access-to-remote-servers)
+-   [Where to work: interactive nodes ("GPVM")](#where-to-work-interactive-nodes-gpvm)
+-   [Opening a ticket in Fermilab Service Desk](#opening-a-ticket-in-fermilab-service-desk)
+-   [Accessing resources (DocDB, VOMS, ...) via certificates](#accessing-resources-docdb-voms-via-certificates)
+-   [Accessing resources via Virtual Private Network](#accessing-resources-via-virtual-private-network)
+-   [Submitting jobs: Virtual Organisation](#submitting-jobs-virtual-organisation)
+-   [Submitting jobs: grid resources](#submitting-jobs-grid-resources)
+-   [Software distribution](#software-distribution)
+        -   [CVMFS](#cvmfs)
+-   [Storing data](#storing-data)
+    -   [Local storage: BlueArc disks](#local-storage-bluearc-disks)
+    -   [World-visible storage: dCache](#world-visible-storage-dcache)
+    -   [Tape storage](#tape-storage)
+    -   [File database (SAM)](#file-database-sam)
+-   [Web server pages](#web-server-pages)
+    -   [SBN online web gate](#sbn-online-web-gate)
+    -   [ICARUS data web directory](#icarus-data-web-directory)
+    -   [Communication tools](#communication-tools)
+        -   [Mailing lists](#mailing-lists)
+-   [Other obscure services and resources](#other-obscure-services-and-resources)
 
 ICARUS has a number of computing resources available, many of which are
 supplied by Fermilab Computing Sector (SCD when we talk about the
@@ -57,9 +43,9 @@ Here we list some of them.
 
 
 
-#### SCD liaison(#SCD-liaison)
+#### SCD liaison
 
-The Scientific Computing Division Liaison is a person from Fermilab SCD
+The [Scientific Computing Division Liaison](Roles_and_people.md) is a person from Fermilab SCD
 who acts as a bridge between SCD and an experiment. They is typically
 fairly informed of what is going on, computation-wise, in the
 experiment, and in the computing division^[1](#fn1)^. They is also able
@@ -77,8 +63,8 @@ experiment more than most of the computing division people.
 
 
 
-Computing Access(#Computing-Access)
-----------------------------------------------------
+Computing Access
+-----------------
 
 See the [Computing resources](Computing_resources.html) page
 to see a discussion about the resources available to ICARUS.
@@ -124,7 +110,7 @@ desk](mailto:servicedesk@fnal.gov) (+1 (630) 840-2345).
 
 
 
-### SSH access to remote servers(#SSH-access-to-remote-servers)
+### SSH access to remote servers
 
 Access to servers via terminal is obtained via secure shell (SSH).\
 For most cases you access to a remote server authenticating as yourself
@@ -197,8 +183,8 @@ complication.
 
 
 
-Where to work: interactive nodes (\"GPVM\")(#Where-to-work-interactive-nodes-GPVM)
----------------------------------------------------------------------------------------------------
+Where to work: interactive nodes ("GPVM")
+------------------------------------------
 
 We have some dedicated \"nodes\" where we can log in and work
 interactively.\
@@ -242,8 +228,8 @@ local disk; you can make your own scratch area by
 
 
 
-Opening a ticket in Fermilab Service Desk(#Opening-a-ticket-in-Fermilab-Service-Desk)
-------------------------------------------------------------------------------------------------------
+Opening a ticket in Fermilab Service Desk
+------------------------------------------
 
 When something goes wrong, open a ticket! Its fun, its easy but most
 important it is how you engage experts to solve your problems (well,
@@ -282,8 +268,8 @@ is in \"Core Computing Services\".
 
 
 
-Accessing resources (DocDB, VOMS, \...) via certificates(#Accessing-resources-DocDB-VOMS-via-certificates)
----------------------------------------------------------------------------------------------------------------------------
+Accessing resources (DocDB, VOMS, ...) via certificates
+--------------------------------------------------------
 
 > Note: this section is about \"personal\" certificates, not the kind of
 > [certificate proxies you need to work on the
@@ -303,8 +289,8 @@ you will gain access to:
 
 
 
-Accessing resources via Virtual Private Network(#Accessing-resources-via-Virtual-Private-Network)
-------------------------------------------------------------------------------------------------------------------
+Accessing resources via Virtual Private Network
+------------------------------------------------
 
 Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but
@@ -314,15 +300,15 @@ Virtual Private Network (VPN), which needs to be [set up on the client node](../
 
 
 
-Submitting jobs: Virtual Organisation(#Submitting-jobs-Virtual-Organisation)
----------------------------------------------------------------------------------------------
+Submitting jobs: Virtual Organisation
+--------------------------------------
 
 The name of our virtual organisation is `icarus`.
 
 
 
-Submitting jobs: grid resources(#Submitting-jobs-grid-resources)
----------------------------------------------------------------------------------
+Submitting jobs: grid resources
+--------------------------------
 
 This is about where your job gets actually shipped for execution, and
 who runs it.\
@@ -340,8 +326,8 @@ proxy](Get_a_certificate_proxy.html).
 
 
 
-Software distribution(#Software-distribution)
---------------------------------------------------------------
+Software distribution
+----------------------
 
 ICARUS code and the \"software stack\" it relies on are distributed in
 binary form for a few supported platforms.\
@@ -355,7 +341,7 @@ in its own web page.
 
 
 
-### CVMFS(#CVMFS)
+### CVMFS
 
 ICARUS has a CVMFS area with the `icarus.opensciencegrid.org`.\
 CVMFS is a file system that mirrors locally a remote storage area (not
@@ -376,8 +362,8 @@ software in there are
 
 
 
-Storing data(#Storing-data)
---------------------------------------------
+Storing data
+-------------
 
 We have two types of data storage available, that we\'ll call
 \"BlueArc\" and \"dCache\". FIFE explains [their
@@ -388,7 +374,7 @@ a database (\"SAM\").
 
 
 
-### Local storage: BlueArc disks(#Local-storage-BlueArc-disks)
+### Local storage: BlueArc disks
 
 BlueArc is a brand of the disk servers Fermilab uses. These are
 multi-terabyte disks that are split between experiments.\
@@ -427,7 +413,7 @@ This information can be read using `quota -s` or `df -h`.
 
 
 
-### World-visible storage: dCache(#World-visible-storage-dCache)
+### World-visible storage: dCache
 
 dCache area consists of a huge data space, made of tapes and disks.\
 We have two types of dCache areas:
@@ -445,7 +431,7 @@ the [ICARUS dCache wiki page](ICARUS_dCache_storage.html){.wiki-page
 
 
 
-### Tape storage(#Tape-storage)
+### Tape storage
 
 > 20170906: ICARUS is requesting the ability to store data on tapes.
 > This is a multi-step procedure requiring access to file transfer
@@ -453,7 +439,7 @@ the [ICARUS dCache wiki page](ICARUS_dCache_storage.html){.wiki-page
 
 
 
-### File database (SAM)(#File-database-SAM)
+### File database (SAM)
 
 Fermilab provides a service, SAM, to track where files are currently
 stored. An introduction to the system can be found on [User Guide for
@@ -471,15 +457,15 @@ in its own [web page](SAM.html){.wiki-page .new}.
 
 
 
-Web server pages(#Web-server-pages)
-----------------------------------------------------
+Web server pages
+-----------------
 
 ICARUS and SBN has a number of web pages. Information about them is
 available in the [ICARUS wiki](ICARUS_homepage.html){.wiki-page .new}.
 
 
 
-### SBN online web gate(#SBN-online-web-gate)
+### SBN online web gate
 
 The SBN online web gate is at <https://sbn-online.fnal.gov>. That is not
 a public page.\
@@ -491,7 +477,7 @@ volunteers to help populate it with useful detector status info.
 
 
 
-### ICARUS data web directory(#ICARUS-data-web-directory)
+### ICARUS data web directory
 
 The ICARUS data web directory is at <https://icarus-data.fnal.gov>.\
 The site is currently only accessible via a browser when connected to
@@ -505,11 +491,10 @@ writing, the site owners are [Wes Ketchum](mailto:wketchum@fnal.gov) and
 
 
 
-### Communication tools(#Communication-tools)
+### Communication tools
 
 
-
-#### Mailing lists(#Mailing-lists)
+#### Mailing lists
 
 ICARUS owns some mailing lists for specific purposes. The most generally
 useful are listed in the [ICARUS Redmine
@@ -524,8 +509,8 @@ ListServ](http://listserv.fnal.gov){.external}:
 
 
 
-Other obscure services and resources(#Other-obscure-services-and-resources)
---------------------------------------------------------------------------------------------
+Other obscure services and resources
+-------------------------------------
 
 ICARUS uses more services, which are usually hidden to most users. They
 are documented in [their own
