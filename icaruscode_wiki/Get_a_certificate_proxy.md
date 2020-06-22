@@ -5,15 +5,14 @@ title: Get a certificate proxy
 
 
 
-Get an ICARUS certificate proxy(#Get-an-ICARUS-certificate-proxy)
-==================================================================================
+Get an ICARUS certificate proxy
+================================
 
-This is similar enough to SBND, that we refer to the [documentation in
-there](Get_a_certificate_proxy.html), with the following
+This is similar enough to SBND, that we refer to the
+[documentation in there](../sbndcode_wiki/Get_a_certificate_proxy.md), with the following
 amendments:
 
--   the virtual organization name is, unsurprisingly,
-    [icarus]{style="color: crimson;font-style: monospace;"}, which shows
+-   the virtual organization name is, unsurprisingly, `icarus`, which shows
     in the VOMS interface as `/fermilab/icarus` group.
 -   as a consequence, the correct ritual for summoning a certificate
     proxy ends with a different enchantment:
@@ -26,6 +25,5 @@ amendments:
 -   the setup script is run with:
     `source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh`
 -   the information on production accounts does not apply to ICARUS at
-    all and should not be relied upon: ask [ICARUS production
-    manager](Roles_and_people.html) if you need information
+    all and should not be relied upon: ask [ICARUS production manager](Roles_and_people.md) if you need information
     about that.
