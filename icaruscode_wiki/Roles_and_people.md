@@ -36,3 +36,18 @@ person             | e-mail address
 ------------------ | ------------------------------
 Maya Wospakrik     | <wospakrk@fnal.gov>
 François Drielsma  | <drielsma@slac.stanford.edu>
+
+
+Fermilab Scientific Computing Division ICARUS liaison
+------------------------------------------------------
+
+This person is the preferred gate that Fermilab Scientific Computing Division (SCD) uses to communicate with the experiment.
+It also works the other way around, with for example the liaison conveying ICARUS requests to SCD.
+
+There is one liaison per experiment, who is usually a member of SCD _and_ a collaboration in the experiment.
+Ours is also an over-expert of all computing aspects of ICARUS!
+
+person             | e-mail address
+------------------ | ------------------------------
+Wesley Ketchum     | <wketchum@fnal.gov>
+
