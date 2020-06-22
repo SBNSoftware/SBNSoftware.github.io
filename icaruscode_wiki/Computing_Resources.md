@@ -11,7 +11,7 @@ Computing Resources
     -   [SSH access to remote servers](#ssh-access-to-remote-servers)
 -   [Where to work: interactive nodes ("GPVM")](#where-to-work-interactive-nodes-gpvm)
 -   [Opening a ticket in Fermilab Service Desk](#opening-a-ticket-in-fermilab-service-desk)
--   [Accessing resources (DocDB, VOMS, ...) via certificates](#accessing-resources-docdb-voms-via-certificates)
+-   [Accessing resources (DocDB, VOMS, ...) via certificates](#accessing-resources-docdb-voms--via-certificates)
 -   [Accessing resources via Virtual Private Network](#accessing-resources-via-virtual-private-network)
 -   [Submitting jobs: Virtual Organisation](#submitting-jobs-virtual-organisation)
 -   [Submitting jobs: grid resources](#submitting-jobs-grid-resources)
