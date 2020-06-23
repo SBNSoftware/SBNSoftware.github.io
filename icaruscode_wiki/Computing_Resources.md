@@ -377,10 +377,9 @@ Space available to ICARUS collaboration:
 
 path              | space
 ----------------- | ----------
-`/icarus/app`     | 1.5 TB
-([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
+`/icarus/app`     | 1.5 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
 `/icarus/data`    | ~10 TB~
-                  | 25 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
+_same_            | 25 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
 
 This information can be read using `quota -s` or `df -h`.
 
@@ -404,6 +403,7 @@ We have a limited quota of space as well, so fill it responsibly.
 More information (including how to remotely access it) can be found in
 the [ICARUS dCache wiki page](ICARUS_dCache_storage.md).
 
+We also have some [StashCache storage](computing/stashCache.md).
 
 
 ### Tape storage
