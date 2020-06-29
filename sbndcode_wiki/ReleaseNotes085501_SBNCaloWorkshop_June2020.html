@@ -1,0 +1,62 @@
+---
+lang: en
+title: ReleaseNotes085501SBNCaloWorkshopJune2020
+---
+
+-----------------------------------------------------------------------------
+| v08.55.01.SBNCaloWorkshop.June2020 | 29 Jun 2020 | [ReleaseNotes](ReleaseNotes085501SBNCaloWorkshopJune2020.html) |
+| --- | --- | --- |
+
+
+
+sbndcode v08_55_01_SBNCaloWorkshop_June2020 Release Notes(#sbndcode-v08_55_01_SBNCaloWorkshop_June2020-Release-Notes)
+=======================================================================================
+
+-   **Table of contents**
+-   [sbndcode v08_55_01_SBNCaloWorkshop_June2020 Release Notes](#sbndcode-v08_55_01_SBNCaloWorkshop_June2020-Release-Notes)
+    -   [Purpose](#Purpose)
+    -   [New features](#New-features)
+    -   [Bug fixes](#Bug-fixes)
+    -   [Updated dependencies](#Updated-dependencies)
+-   [Change List](#Change-List)
+    -   [sbndcode v08\_51\_00](#sbndcode-v08_55_01_SBNCaloWorkshop_June2020)
+    -   [sbndutil v08\_51\_00](#sbndutil-v08_55_01_SBNCaloWorkshop_June2020)
+
+[List of sbndcode releases](List_of_SBND_code_releases.html)
+Download instructions for [sbndcode v08_55_01_SBNCaloWorkshop_June2020](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_55_01_SBNCaloWorkshop_June2020/sbndcode-v08_55_01_SBNCaloWork\
+shop_June2020.html)
+
+Purpose(#Purpose)
+---------------------------------------------------
+
+* Release for SBN calorimetry workshop, 6-7 June 2020
+
+New features(#New-features)
+---------------------------------------------------
+
+* New fcls added for the workshop, located in /fcl/workshops/202006_SBNCaloWorkshop
+
+Bug fixes(Bug-fixes)
+---------------------------------------------------
+
+Updated dependencies
+---------------------------------------------------
+
+Change List
+==========================================
+
+sbndcode v08_55_01(#sbndcode-v08_55_01)
+---------------------------------------------------
+
+* 2020-06-29  Andrew Scarff : Merge branch 'release/v08_55_01_SBNCaloWorkshop_June2020'
+* 2020-06-29  Andrew Scarff : SBN calorimetry workshop release
+* 2020-06-26  Dom Brailsford : Tie the detsim pedestal values to those in database_sbnd.fcl Update the database_sbnd.fcl (the pedestal service) values to the current ones
+* 2020-06-26  Dom Brailsford : Load the standard services block, rather than simulation services. The noise service not being correctly loaded for the evd was causing it to crash.  T\
+he simulation services aren't needed anyway...
+* 2020-06-25  Dom Brailsford : Define FCL paramset for the FinalStateParticleFilter in larevt, stored in filters_sbnd.fcl Enable the Filters directory in the CMakeLsits so the fcl ge\
+ts picked up. Add a new fcl for generating genie events and filtering ccpi0.
+* 2020-06-19  Iker de Icaza : Merge pull request #5 from SBNSoftware/feature/icaza_ophit_wvfana
+* 2020-06-17  Andrew Scarff : Merge tag 'v08_55_01' into develop
+* 2020-06-11  Iker de Icaza Astiz : Define ophit_wvfana_sbnd.fcl to ease development of OpDetSim
+
+h2. sbndutil v08_55_01
