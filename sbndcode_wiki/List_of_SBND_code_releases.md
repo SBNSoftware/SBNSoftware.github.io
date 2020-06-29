@@ -22,6 +22,7 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v08_55_01_SBNCaloWorkshop_June2020`|    SBN calo workshop release         |    [Release Notes](ReleaseNotes085501_SBNCaloWorkshop_June2020.html)
   |`v08_55_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085501.html)
   |`v08_55_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085500.html)
   |`v08_54_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085400.html)
