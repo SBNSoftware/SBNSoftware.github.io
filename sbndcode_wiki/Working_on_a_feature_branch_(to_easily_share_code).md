@@ -21,17 +21,17 @@ Change to desired repository (e.g sbndcode).\
 
     cd $MRB_SOURCE/sbndcode 
 
-Make sure you have the latest develop branch.\
+Make sure you have the latest develop branch.
 
     git checkout develop
     git pull 
 
-Make a new feature branch.\
+Make a new feature branch.
 
     git flow feature start < BranchName > 
 
-\
-This will give you a branch called \"feature/BranchName\"
+
+This will give you a branch called \"feature/BranchName\". You may need to run the command "git flow init" before this. If you do set the first option as "master", the second as "develop" (if these are not already set) and leave the rest as defaults.
 
 Do some coding.
 
