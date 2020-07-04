@@ -115,9 +115,9 @@ name                                              | introduced  | description   
 ------------------------------------------------- | ----------- | --------------------------------------------------------- | ----------------
 `use_overburden_geometry_icarus.fcl`              | `v08_52_00` | default geometry with the addition of concrete overburden | _9-m first induction plane wires_
 `use_nooverburden_geometry_icarus.fcl`            | `v08_52_00` | default geometry but without the concrete overburden      | _9-m first induction plane wires_
-`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | 18-m first induction plane wires geometry with default overburden | _no overburden_
-`use_singlewire_nooverburden_geometry_icarus.fcl` | `v08_52_00` | 18-m first induction plane wires without the concrete overburden |
-`use_singlewire_overburden_geometry_icarus.fcl`   | `v08_52_00` | 18-m first induction plane wires geometry with the concrete overburden |
+`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | 18-m first induction plane wires geometry with default overburden | _no overburden_ _(see note below)_
+`use_singlewire_nooverburden_geometry_icarus.fcl` | `v08_52_00` | 18-m first induction plane wires without the concrete overburden | _(see note below)_
+`use_singlewire_overburden_geometry_icarus.fcl`   | `v08_52_00` | 18-m first induction plane wires geometry with the concrete overburden | _(see note below)_
 `use_splitwire_geometry_icarus.fcl`               | `v08_52_00` | 9-m first induction plane wires geometry with default overburden | _no overburden_
 `use_splitwire_nooverburden_geometry_icarus.fcl`  | `v08_52_00` | 9-m first induction plane wires without the concrete overburden
 `use_splitwire_overburden_geometry_icarus.fcl`    | `v08_52_00` | 9-m first induction plane wires geometry with the concrete overburden
@@ -130,17 +130,21 @@ name                                              | introduced  | description   
 > for their respective categories (for example, in `v08_52_00`
 > both geometries default to the split 9-m long wire versions).
 
-> **Note**: none of these configurations is enough to process data files
-> produced before `v08_50_02` at that time, the PMT channel mapping also changed.
-> 
-> A complete service configuration for that purpose is provided
+> **Note**:  PMT channel mapping is also different in the two geomety types:
+> if photon visibility is needed (`PhotonVisibilityService`)
+> and a old photon library (like the one from August 2018) is being used,
+> it needs a specific configuration; this is for _the_ August 2018 photon library:
+>     
+>     PhotonVisibilityService: @local::icarus_legacy_photonvisibilityservice_v08_50_00
+>     
+> A complete service configuration for that purpose is also provided
 > (**as-is**!) as `icarus_legacy_services_v08_50_00` in
 > [`fcl/services/services_icarus_simulation.fcl`](/redmine/projects/icaruscode/repository/entry/fcl/services/services_icarus_simulation.fcl),
 > that can be used as
 >
 >     services: @local::icarus_legacy_services_v08_50_00
 >
-> but still requires careful check.
+> and pulls in most ICARUS simulation services, but still requires careful check.
 
 
 
