@@ -1,8 +1,63 @@
-theme: jekyll-theme-minimal
+# theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 
 title: SBN Software Wiki
+tagline: SBN Software Wiki
 description: A wiki for documentation of the SBN Software packages.
+baseurl: "" # the subpath of your site, e.g. /blog
 
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  # - jekyll-include-cache
+  - jekyll-seo-tag
+  - kramdown
+  - rouge
+
+exclude:
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+#google_analytics: UA-code-here
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: false
+  # -
+    # scope:
+    #   path: ""
+    #   type: "posts"
+    # values:
+    #   author: "C.S. Rhymes"
+    #   layout: post
+    #   image: https://via.placeholder.com/1200x800
+    #   show_sidebar: true
+
+markdown: kramdown
+highlighter: rouge
+
+footer_menu: example_footer_menu
+
+collections:
+  # products:
+  #   output: true
+  #   layout: product
+  #   image: https://via.placeholder.com/800x600
+  #   show_sidebar: false
