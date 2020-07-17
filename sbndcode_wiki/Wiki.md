@@ -1,27 +1,21 @@
 ---
-lang: en
-title: Wiki
+layout: page
+title: SBND Code Wiki
+<!-- subtitle: Page Subtitle -->
+image: sbndcode_wiki/sbnd_logo.png
+description: Wiki documentation specific to SBND
+<!-- hero_image: sbnd_logo.png -->
+<!-- hero_height: is-fullheight -->
+show_sidebar: false
+<!-- menubar: sbndcode_menu -->
+toc_title: SBND Code Contents
+toc: true
 ---
 
 
 
-SBND code(#SBND-code)
+SBND code
 ======================================
-
--   **Table of contents**
--   [SBND code](#SBND-code)
-    -   [Developing SBND code](#Developing-SBND-code)
-    -   [Computing resources](#Computing-resources)
-    -   [Content of the packages](#Content-of-the-packages)
-    -   [Monte Carlo productions](#Monte-Carlo-productions)
-    -   [Accessing Files and Using SAM](#Accessing-Files-and-Using-SAM)
-    -   [Running Jobs on the grid](#Running-Jobs-on-the-grid)
-    -   [Useful Tidbits of Information.](#Useful-Tidbits-of-Information)
-    -   [Code management and deployment
-        stuff](#Code-management-and-deployment-stuff)
-    -   [Newbie Material](#Newbie-Material)
-    -   [Vertical Slice Test](#Vertical-Slice-Test)
-    -   [SBND Assembly Master Document](#SBND-Assembly-Master-Document)
 
 SBND was formerly known as LAr1-ND, and it had its own redmine project.\
 The old wiki can be reached at:
@@ -29,7 +23,7 @@ The old wiki can be reached at:
 
 
 
-Developing SBND code(#Developing-SBND-code) 
+Developing SBND code
 ------------------------------------------------------------
 
 -   [The SBND Guide to using
@@ -46,12 +40,12 @@ Developing SBND code(#Developing-SBND-code)
 
 
 
-[Computing resources](Computing_resources.html)(#Computing-resources) 
+[Computing resources](Computing_resources.html)
 --------------------------------------------------------------------------------------------------
 
 
 
-Content of the packages(#Content-of-the-packages) 
+Content of the packages
 ------------------------------------------------------------------
 
 -   [Configuration of SBND jobs and
@@ -64,12 +58,12 @@ Content of the packages(#Content-of-the-packages)
 
 
 
-[Monte Carlo productions](Monte_Carlo_productions.html)(#Monte-Carlo-productions) 
+[Monte Carlo productions](Monte_Carlo_productions.html) 
 --------------------------------------------------------------------------------------------------------------
 
 
 
-Accessing Files and Using SAM(#Accessing-Files-and-Using-SAM) 
+Accessing Files and Using SAM
 ------------------------------------------------------------------------------
 
 -   [How to create and use a SAM
@@ -77,7 +71,7 @@ Accessing Files and Using SAM(#Accessing-Files-and-Using-SAM)
 
 
 
-Running Jobs on the grid(#Running-Jobs-on-the-grid) 
+Running Jobs on the grid
 --------------------------------------------------------------------
 
 -   [Using project.py for Grid
@@ -89,7 +83,7 @@ Running Jobs on the grid(#Running-Jobs-on-the-grid)
 
 
 
-Useful Tidbits of Information.(#Useful-Tidbits-of-Information) 
+Useful Tidbits of Information.
 -------------------------------------------------------------------------------
 
 -   [How to get Geant4 standalone working on
@@ -108,20 +102,20 @@ Useful Tidbits of Information.(#Useful-Tidbits-of-Information)
 
 
 
-[Code management and deployment stuff](Code_management_and_deployment_stuff.html)(#Code-management-and-deployment-stuff) 
+[Code management and deployment stuff](Code_management_and_deployment_stuff.html)
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-[Newbie Material](Newbie_Material.html)(#Newbie-Material) 
+[Newbie Material](Newbie_Material.html)
 --------------------------------------------------------------------------------------
 
 
 
-[Vertical Slice Test](Vertical_Slice_Test.html)(#Vertical-Slice-Test) 
+[Vertical Slice Test](Vertical_Slice_Test.html)
 --------------------------------------------------------------------------------------------------
 
 
 
-[SBND Assembly Master Document](SBND_Assembly_Master_Document.html){.wiki-page .new}(#SBND-Assembly-Master-Document) 
+[SBND Assembly Master Document](SBND_Assembly_Master_Document.html)
 -------------------------------------------------------------------------------------------------------------------------------------

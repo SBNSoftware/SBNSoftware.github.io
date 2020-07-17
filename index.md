@@ -1,19 +1,28 @@
+---
+title: SBN Software Wiki
+subtitle: A wiki for documentation of the SBN Software packages
+layout: page
+callouts: home_callouts
+show_sidebar: true
+---
+
+
 # Welcome to the SBN Software Wiki Page
 
 **New to the SBN Github? Go to the [Github migration to do list](AnalysisInfrastructure/github-migration-to-do-list.md)**
 
 See below for helpful links:
 
-### [Analysis Infrastructure](AnalysisInfrastructure/index.md)
+### [Analysis Infrastructure](AnalysisInfrastructure/index)
 
 ## List of Repositories
 
 ### Offline Repositories
 * [sbncode](https://github.com/SBNSoftware/sbncode): Common SBN code and configs.
 * [icaruscode](https://github.com/SBNSoftware/icaruscode): ICARUS-specific code and configs.
-  * [Wiki](icaruscode_wiki/Wiki.md)
+  * [Wiki](icaruscode_wiki/Wiki)
 * [sbndcode](https://github.com/SBNSoftware/sbndcode): SBND-specific code and configs.
-  * [Wiki](sbndcode_wiki/Wiki.md)
+  * [Wiki](sbndcode_wiki/Wiki)
 
 * [sbnbuild](https://github.com/SBNSoftware/sbnbuild): Common SBN build scripts and utilities.
 
