@@ -22,6 +22,14 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v08_58_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085800.html)
+  |`v08_57_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085700.html)
+  |`v08_56_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085600.html)
+  |`v08_55_01_SBNCaloWorkshop_June2020_v4`|    SBN calo workshop release v4   |    [Release Notes](ReleaseNotes085502_SBNCaloWorkshop_June2020_v4.html)
+  |`v08_55_01_SBNCaloWorkshop_June2020_v3`|    SBN calo workshop release v3   |    [Release Notes](ReleaseNotes085502_SBNCaloWorkshop_June2020_v3.html)
+  |`v08_55_01_SBNCaloWorkshop_June2020_v2`|    SBN calo workshop release v2   |    [Release Notes](ReleaseNotes085502_SBNCaloWorkshop_June2020_v2.html)
+  |`v08_55_01_SBNCaloWorkshop_June2020`|    SBN calo workshop release         |    [Release Notes](ReleaseNotes085502_SBNCaloWorkshop_June2020.html)
+  |`v08_55_02`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085502.html)
   |`v08_55_01_SBNCaloWorkshop_June2020`|    SBN calo workshop release         |    [Release Notes](ReleaseNotes085501_SBNCaloWorkshop_June2020.html)
   |`v08_55_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085501.html)
   |`v08_55_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes085500.html)
