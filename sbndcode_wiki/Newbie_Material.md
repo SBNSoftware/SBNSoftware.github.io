@@ -1,26 +1,22 @@
 ---
-lang: en
+layout: page
 title: Newbie Material
+subtitle: Got To Start Somewhere
+image: sbndcode_wiki/sbnd_logo.png
+description: Place to start when you're new
+<!-- hero_image: sbnd_logo.png -->
+<!-- hero_height: is-fullheight -->
+show_sidebar: false
+<!-- menubar: sbndcode_menu -->
+<!-- toc_title: SBND Code Contents -->
+toc: true
 ---
 
 
 
-Newbie Material(#Newbie-Material)
-==================================================
 
--   **Table of contents**
--   [Newbie Material](#Newbie-Material)
-    -   [Computing Access](#Computing-Access)
-    -   [Communication and Asking for
-        Help](#Communication-and-Asking-for-Help)
-    -   [New to Liquid Argon Technology/ Neutrino physics and
-        SBND?](#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND)
-    -   [New to the Software Surrounding
-        SBND?](#New-to-the-Software-Surrounding-SBND)
-        -   [Art and LArsoft](#Art-and-LArsoft)
-        -   [C++](#C)
-        -   [ROOT](#ROOT)
-        -   [Git](#Git)
+Newbie Material
+==================================================
 
 All of SBND\'s material can be found on the
 [docDB](http://sbn-docdb.fnal.gov:8080/cgi-bin/DocumentDatabase){.external}.
@@ -34,7 +30,7 @@ information see: <http://listserv.fnal.gov/users.asp#subscribe>
 
 
 
-Computing Access(#Computing-Access)
+Computing Access
 ----------------------------------------------------
 
 See the [Computing resources](Computing_resources.html) page
@@ -91,7 +87,7 @@ then you will have contact the service desk.
 
 
 
-Communication and Asking for Help(#Communication-and-Asking-for-Help)
+Communication and Asking for Help
 --------------------------------------------------------------------------------------
 
 We use different technology to communicate, depending on the purpose and
@@ -123,7 +119,7 @@ type of communication.
 
 
 
-New to Liquid Argon Technology/ Neutrino physics and SBND?(#New-to-Liquid-Argon-Technology-Neutrino-physics-and-SBND)
+New to Liquid Argon Technology/ Neutrino physics and SBND?
 --------------------------------------------------------------------------------------------------------------------------------------
 
 If you are new to Liquid Argon technology then here as some links you
@@ -178,7 +174,7 @@ Please add to the list!
 
 
 
-New to the Software Surrounding SBND?(#New-to-the-Software-Surrounding-SBND)
+New to the Software Surrounding SBND?
 ---------------------------------------------------------------------------------------------
 
 To get started you need to have a basic knowledge of c++ and you need to
@@ -186,7 +182,7 @@ learn LArsoft. Root and Git are also useful.
 
 
 
-### Art and LArsoft(#Art-and-LArsoft)
+### Art and LArsoft
 
 Here is a few places to look at more information about Art and LArsoft.
 
@@ -259,7 +255,7 @@ The g is short for gitCheckout.
 
 
 
-### C++(#C)
+### C++
 
 There are a multitude of resources for c++. There are several books. The
 one I learnt form was [Accelerated
@@ -283,7 +279,7 @@ If you have a good c++ tutorial/documentation add it to the list!
 
 
 
-### ROOT(#ROOT)
+### ROOT
 
 [ROOT](https://root.cern.ch/doc/v608/){.external} is also useful to know
 and it can be used within LArsoft. If you are new to ROOT and you have a
@@ -328,7 +324,7 @@ that are useful when learning ROOT. Feel free to add to the list!
 
 
 
-### Git(#Git)
+### Git
 
 New to [Git](https://github.com){.external}? if so do the quick
 [tutorial](https://try.github.io/levels/1/challenges/1){.external} to
