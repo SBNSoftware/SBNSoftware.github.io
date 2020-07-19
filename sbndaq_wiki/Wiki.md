@@ -1,6 +1,7 @@
 ---
 lang: en
 title: SBN DAQ Software Wiki
+hero_height: is-small
 ---
 
 * TOC

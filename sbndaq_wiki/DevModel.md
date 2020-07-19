@@ -1,6 +1,7 @@
 ---
 lang: en
 title: SBN DAQ Development
+hero_height: is-small
 ---
 
 We, like LArSoft, generally follow a _gitflow_-like development model[^gitflow] for working on changes in the DAQ software. The nature of our developments, however is that we are typically trying to work with the latest and greatest code all the time, so you want to make sure that generally your code works well off of the latest software.

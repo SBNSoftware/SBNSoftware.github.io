@@ -1,6 +1,7 @@
 ---
 lang: en
 title: SBN DAQ Software Setup Instructions
+hero_height: is-small
 ---
 
 These instructions should be largely the same for the different locations in which we typically run/install software: the DAB teststand at Fermilab, and the SBN-FD and SBN-ND DAQ clusters. Please be sure to substitute for the environment where appropriate.
