@@ -17,6 +17,7 @@ see the old wiki for a lot of historical detail.
 # Developing in sbndaq
 
 * [Setup Instructions](Installation)
+* [Development Model](DevModel)
 
 
 # Troubleshooting
@@ -26,5 +27,5 @@ see the old wiki for a lot of historical detail.
 
 The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io)
 under the
-[`sbndaq_wiki`](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/icaruscode_wiki)
+[`sbndaq_wiki`](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/sbndaq_wiki)
 subdirectory. Some details using this particular theme can be found [here](https://github.com/chrisrhymes/bulma-clean-theme).
