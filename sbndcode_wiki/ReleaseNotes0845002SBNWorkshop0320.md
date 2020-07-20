@@ -9,21 +9,21 @@ title: ReleaseNotes0845002SBNWorkshop0320
 
 
 
-sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release Notes(#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes)
+sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release Notes
 ============================================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_45\_00\_2\_SBNWorkshop0320 Release
-    Notes](#sbndcode-v08_45_00_2_SBNWorkshop0320-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
     -   [sbndcode
-        v08\_45\_00\_2\_SBNWorkshop0320](#sbndcode-v08_45_00_2_SBNWorkshop0320)
+        v08\_45\_00\_2\_SBNWorkshop0320]
     -   [sbndutil
-        v08\_45\_00\_2\_SBNWorkshop0320](#sbndutil-v08_45_00_2_SBNWorkshop0320)
+        v08\_45\_00\_2\_SBNWorkshop0320]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -32,34 +32,34 @@ v08\_45\_00\_2\_SBNWorkshop0320](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v0
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for SBN Workshop 03/20
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_45\_00\_2\_SBNWorkshop0320(#sbndcode-v08_45_00_2_SBNWorkshop0320)
+sbndcode v08\_45\_00\_2\_SBNWorkshop0320
 ------------------------------------------------------------------------------------------------
 
 -   2020-03-11 Thomas Brooks : Merge branch
@@ -82,7 +82,7 @@ sbndcode v08\_45\_00\_2\_SBNWorkshop0320(#sbndcode-v08_45_00_2_SBNWorkshop0320)
 
 
 
-sbndutil v08\_45\_00\_2\_SBNWorkshop0320(#sbndutil-v08_45_00_2_SBNWorkshop0320)
+sbndutil v08\_45\_00\_2\_SBNWorkshop0320
 ------------------------------------------------------------------------------------------------
 
 -   2020-03-11 Thomas Brooks : Merge branch

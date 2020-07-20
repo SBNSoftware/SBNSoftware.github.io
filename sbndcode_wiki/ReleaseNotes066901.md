@@ -9,19 +9,19 @@ title: ReleaseNotes066901
 
 
 
-sbndcode v06\_69\_01 Release Notes(#sbndcode-v06_69_01-Release-Notes)
+sbndcode v06\_69\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_69\_01 Release
-    Notes](#sbndcode-v06_69_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_69\_01](#sbndcode-v06_69_01)
-    -   [sbndutil v01\_45\_01](#sbndutil-v01_45_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_69\_01]
+    -   [sbndutil v01\_45\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v06\_69\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_69_01/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_69\_01(#sbndcode-v06_69_01)
+sbndcode v06\_69\_01
 ----------------------------------------------------------
 
 -   2018-03-01 Thomas Brooks : Merge branch \'release/v06\_69\_01\'
@@ -89,7 +89,7 @@ sbndcode v06\_69\_01(#sbndcode-v06_69_01)
 
 
 
-sbndutil v01\_45\_01(#sbndutil-v01_45_01)
+sbndutil v01\_45\_01
 ----------------------------------------------------------
 
 -   2018-03-01 Thomas Brooks : Merge branch \'release/v01\_45\_01\'

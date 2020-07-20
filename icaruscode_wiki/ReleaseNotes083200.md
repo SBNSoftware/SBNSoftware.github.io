@@ -9,19 +9,19 @@ title: ReleaseNotes083200
 
 
 
-icaruscode v08\_32\_00 Release Notes(#icaruscode-v08_32_00-Release-Notes)
+icaruscode v08\_32\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_32\_00 Release
-    Notes](#icaruscode-v08_32_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_32\_00](#icaruscode-v08_32_00)
-    -   [icarusutil v08\_31\_01](#icarusutil-v08_31_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_32\_00]
+    -   [icarusutil v08\_31\_01]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,28 +30,28 @@ v08\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   (none?)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,7 +59,7 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -67,7 +67,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_32\_00(#icaruscode-v08_32_00)
+icaruscode v08\_32\_00
 --------------------------------------------------------------
 
 -   2019-10-08 - drinkingkazu - merge conflict resolved
@@ -100,7 +100,7 @@ icaruscode v08\_32\_00(#icaruscode-v08_32_00)
 
 
 
-icarusutil v08\_31\_01(#icarusutil-v08_31_01)
+icarusutil v08\_31\_01
 --------------------------------------------------------------
 
 -   2019-10-04 - Usher, Tracy L - Moving to LArSoft v08\_32\_00

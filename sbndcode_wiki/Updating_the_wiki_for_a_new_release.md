@@ -5,7 +5,7 @@ title: Updating the wiki for a new release
 
 
 
-Updating the wiki for a new release(#Updating-the-wiki-for-a-new-release)
+Updating the wiki for a new release
 ==========================================================================================
 
 -   Update the [release

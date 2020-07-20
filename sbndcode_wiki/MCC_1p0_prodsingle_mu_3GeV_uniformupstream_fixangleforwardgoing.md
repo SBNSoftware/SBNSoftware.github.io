@@ -5,12 +5,12 @@ title: MCC 1p0 prodsingle mu 3GeV uniformupstream fixangleforwardgoing
 
 
 
-MCC 1p0 prodsingle mu 3GeV uniformupstream fixangleforwardgoing(#MCC-1p0-prodsingle-mu-3GeV-uniformupstream-fixangleforwardgoing)
+MCC 1p0 prodsingle mu 3GeV uniformupstream fixangleforwardgoing
 ==================================================================================================================================================
 
 
 
-General information(#General-information) 
+General information 
 ----------------------------------------------------------
 
 -   **Number of events: 100000**
@@ -20,15 +20,15 @@ General information(#General-information)
 
 
 
-Stage information(#Stage-information) 
+Stage information 
 ------------------------------------------------------
 
 
 
-### gen(#gen) 
+### gen 
 
-[View details\...](#){#collapse-2b443508-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-2b443508-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   \*fcl file: \*
@@ -36,10 +36,10 @@ Stage information(#Stage-information)
 
 
 
-### g4(#g4) 
+### g4 
 
-[View details\...](#){#collapse-832548f8-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-832548f8-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_g4\_sbnd.fcl**
@@ -47,10 +47,10 @@ Stage information(#Stage-information)
 
 
 
-### detsim(#detsim) 
+### detsim 
 
-[View details\...](#){#collapse-c18dabc0-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-c18dabc0-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_detsim\_sbnd.fcl**
@@ -58,10 +58,10 @@ Stage information(#Stage-information)
 
 
 
-### reco(#reco) 
+### reco 
 
-[View details\...](#){#collapse-30f6b2a3-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-30f6b2a3-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_reco\_sbnd\_basic.fcl**
@@ -69,10 +69,10 @@ Stage information(#Stage-information)
 
 
 
-### anatree(#anatree) 
+### anatree 
 
-[View details\...](#){#collapse-a35765a1-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-a35765a1-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_anatree\_sbnd.fcl**

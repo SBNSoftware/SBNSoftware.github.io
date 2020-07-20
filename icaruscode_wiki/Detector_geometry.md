@@ -9,9 +9,9 @@ ICARUS detector geometry description
 Table of contents
 ------------------
 
-* [Geometry description versions](#geometry-description-versions)
-* [Selecting a geometry](#selecting-a-geometry)
-* [Where is located everything?](#where-is-located-everything)
+* [Geometry description versions]
+* [Selecting a geometry]
+* [Where is located everything?]
 
 
 Geometry description versions

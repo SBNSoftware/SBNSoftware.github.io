@@ -9,52 +9,52 @@ title: ReleaseNotes051201MCC
 
 
 
-sbndcode v05\_12\_01\_MCC Release Notes(#sbndcode-v05_12_01_MCC-Release-Notes)
+sbndcode v05\_12\_01\_MCC Release Notes
 ===============================================================================================
 
 -   **Table of contents**
 -   [sbndcode v05\_12\_01\_MCC Release
-    Notes](#sbndcode-v05_12_01_MCC-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v05\_12\_01\_MCC](#sbndcode-v05_12_01_MCC)
-    -   [sbndutil v01\_14\_00\_MCC](#sbndutil-v01_14_00_MCC)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v05\_12\_01\_MCC]
+    -   [sbndutil v01\_14\_00\_MCC]
 
 [list of sbndcode releases](List_of_SBND_code_releases.html)
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 Frozen for MCC 0.5
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v05\_12\_01\_MCC(#sbndcode-v05_12_01_MCC)
+sbndcode v05\_12\_01\_MCC
 -------------------------------------------------------------------
 
 -   2017-03-01 Thomas Brooks : Merge branch \'release/v05\_12\_01\_MCC\'
@@ -236,7 +236,7 @@ sbndcode v05\_12\_01\_MCC(#sbndcode-v05_12_01_MCC)
 
 
 
-sbndutil v01\_14\_00\_MCC(#sbndutil-v01_14_00_MCC)
+sbndutil v01\_14\_00\_MCC
 -------------------------------------------------------------------
 
 -   2017-03-01 Thomas Brooks : Merge branch \'release/v01\_14\_00\_MCC\'

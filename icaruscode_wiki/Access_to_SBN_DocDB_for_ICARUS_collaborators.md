@@ -5,7 +5,7 @@ title: Access to SBN DocDB for ICARUS collaborators
 
 
 
-Access to SBN DocDB for ICARUS collaborators(#Access-to-SBN-DocDB-for-ICARUS-collaborators)
+Access to SBN DocDB for ICARUS collaborators
 ============================================================================================================
 
 Fermilab DocDB allows for *many* ways to access. Depending on your
@@ -18,7 +18,7 @@ certificate](Setting_up_access_with_CILogon_certificate.html)).
 
 
 
-### Solution to access denial problems(#Solution-to-access-denial-problems)
+### Solution to access denial problems
 
 DocDB has per-document access policies, that are set by the person
 uploading the document (the lists \"can modify\" and \"can view\"): if

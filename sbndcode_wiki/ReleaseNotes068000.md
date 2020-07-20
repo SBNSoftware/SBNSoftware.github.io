@@ -9,19 +9,19 @@ title: ReleaseNotes068000
 
 
 
-sbndcode v06\_80\_00 Release Notes(#sbndcode-v06_80_00-Release-Notes)
+sbndcode v06\_80\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_80\_00 Release
-    Notes](#sbndcode-v06_80_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_80\_00](#sbndcode-v06_80_00)
-    -   [sbndutil v01\_56\_00](#sbndutil-v01_56_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_80\_00]
+    -   [sbndutil v01\_56\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,7 +30,7 @@ v06\_80\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_80_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Update to art v2\_11\_02
@@ -39,17 +39,17 @@ Purpose(#Purpose)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [art
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_80\_00(#sbndcode-v06_80_00)
+sbndcode v06\_80\_00
 ----------------------------------------------------------
 
 -   2018-06-01 Thomas Brooks : Merge branch \'release/v06\_80\_00\'
@@ -86,7 +86,7 @@ sbndcode v06\_80\_00(#sbndcode-v06_80_00)
 
 
 
-sbndutil v01\_56\_00(#sbndutil-v01_56_00)
+sbndutil v01\_56\_00
 ----------------------------------------------------------
 
 -   2018-06-01 Thomas Brooks : Merge branch \'release/v01\_56\_00\'

@@ -5,29 +5,29 @@ title: The SBND flux files
 
 
 
-The SBND flux files(#The-SBND-flux-files)
+The SBND flux files
 ==========================================================
 
 -   **Table of contents**
--   [The SBND flux files](#The-SBND-flux-files)
-    -   [Neutrino flux](#Neutrino-flux)
-    -   [The SBND flux files](#The-SBND-flux-files-2)
+-   [The SBND flux files]
+    -   [Neutrino flux]
+    -   [The SBND flux files]
     -   [Where to find the flux files and beam
-        configurations](#Where-to-find-the-flux-files-and-beam-configurations)
+        configurations]
     -   [A note about pre F/G
-        configurations](#A-note-about-pre-FG-configurations)
-    -   [Beam configurations](#Beam-configurations)
-        -   [ConfigA-100m-v1](#ConfigA-100m-v1)
-        -   [ConfigB-v1](#ConfigB-v1)
-        -   [ConfigC-v1](#ConfigC-v1)
-        -   [ConfigD-v1](#ConfigD-v1)
-        -   [ConfigE-v1](#ConfigE-v1)
-        -   [ConfigF-v1](#ConfigF-v1)
-        -   [ConfigG-v1](#ConfigG-v1)
+        configurations]
+    -   [Beam configurations]
+        -   [ConfigA-100m-v1]
+        -   [ConfigB-v1]
+        -   [ConfigC-v1]
+        -   [ConfigD-v1]
+        -   [ConfigE-v1]
+        -   [ConfigF-v1]
+        -   [ConfigG-v1]
 
 
 
-Neutrino flux(#Neutrino-flux)
+Neutrino flux
 ----------------------------------------------
 
 While flux has a [specific meaning in general
@@ -40,7 +40,7 @@ measuring a cross-section.
 
 
 
-The SBND flux files(#The-SBND-flux-files-2)
+The SBND flux files
 ------------------------------------------------------------
 
 In a nutshell, each flux file contains a tree where each entry describes
@@ -56,7 +56,7 @@ be found in [docdb
 
 
 
-Where to find the flux files and beam configurations(#Where-to-find-the-flux-files-and-beam-configurations)
+Where to find the flux files and beam configurations
 ----------------------------------------------------------------------------------------------------------------------------
 
 All of the flux files live on dcache as the files need to be readily
@@ -100,7 +100,7 @@ writing, the corresponding configurations are ConfigF-v1, ConfigG-v1**
 
 
 
-A note about pre F/G configurations(#A-note-about-pre-FG-configurations)
+A note about pre F/G configurations
 -----------------------------------------------------------------------------------------
 
 The beam centre is in the incorrect place along the X-axis for all
@@ -110,12 +110,12 @@ uboone coordinate system.
 
 
 
-Beam configurations(#Beam-configurations)
+Beam configurations
 ----------------------------------------------------------
 
 
 
-### ConfigA-100m-v1(#ConfigA-100m-v1)
+### ConfigA-100m-v1
 
 The baseline length (target to SBND TPC distance) for this configuration
 is 100 m. Additionally, the beam\'s axis is offset to the SBND origin
@@ -129,14 +129,14 @@ front face.
 
 
 
-### ConfigB-v1(#ConfigB-v1)
+### ConfigB-v1
 
 This configuration copies the settings from ConfigA-100m-v1 but uses a
 110 m baseline.
 
 
 
-### ConfigC-v1(#ConfigC-v1)
+### ConfigC-v1
 
 This configuration copies the settings from ConfigB-v1 but uses a very
 very large flux window (80 m x 80 m) flux window pressed up against the
@@ -151,7 +151,7 @@ flux rays actually start.
 
 
 
-### ConfigD-v1(#ConfigD-v1)
+### ConfigD-v1
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigB-v1. A new config has been used due to a newer
@@ -159,7 +159,7 @@ flux generation method.
 
 
 
-### ConfigE-v1(#ConfigE-v1)
+### ConfigE-v1
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigC-v1. A new config has been used due to a newer
@@ -167,7 +167,7 @@ flux generation method.
 
 
 
-### ConfigF-v1(#ConfigF-v1)
+### ConfigF-v1
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings
@@ -176,7 +176,7 @@ otherwise uses an identical window setup to ConfigD-v1.
 
 
 
-### ConfigG-v1(#ConfigG-v1)
+### ConfigG-v1
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings

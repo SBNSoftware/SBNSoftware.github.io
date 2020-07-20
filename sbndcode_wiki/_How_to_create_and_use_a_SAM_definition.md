@@ -5,7 +5,7 @@ title: How to create and use a SAM definition
 
 
 
-How to create and use a SAM dataset(#How-to-create-and-use-a-SAM-dataset)
+How to create and use a SAM dataset
 ==========================================================================================
 
 This page is a quick guide to how to access files from sam and use them
@@ -21,7 +21,7 @@ There is plenty of useful information here if what below is not helpful.
 
 
 
-Check that you are a SAM user(#Check-that-you-are-a-SAM-user)
+Check that you are a SAM user
 ------------------------------------------------------------------------------
 
 Once you have setup sbndcode (Or setup your local build):
@@ -38,7 +38,7 @@ If you are not SAM user ask Dom Brailsford
 
 
 
-Quick Guide(#Quick-Guide)
+Quick Guide
 ------------------------------------------
 
 Here is how to use SAM quickly. Setup the following environments note
@@ -71,7 +71,7 @@ file(s) to your local directory. Make sure you have enough space!
 
 
 
-Make sure you have Certification(#Make-sure-you-have-Certification)
+Make sure you have Certification
 ------------------------------------------------------------------------------------
 
 Firstly to do some of the task below you will need a proxy so grab one
@@ -80,7 +80,7 @@ proxy](Get_a_certificate_proxy.html)
 
 
 
-Sam Definitions(#Sam-Definitions)
+Sam Definitions
 --------------------------------------------------
 
 A definition links all files that are similar together so that you can a
@@ -89,7 +89,7 @@ that you can easily access them but you can make your own.
 
 
 
-### Using Definitions and Creating Datasets(#Using-Definitions-and-Creating-Datasets)
+### Using Definitions and Creating Datasets
 
 You can see all the definitions by running
 
@@ -109,7 +109,7 @@ ones. You can run samweb help to see the list of options.
 
 
 
-### Creating a definition(#Creating-a-definition)
+### Creating a definition
 
 If the dataset you require does not exist yet you can make it. To create
 a definition you use:
@@ -123,7 +123,7 @@ example above.
 
 
 
-Meta-Data(#Meta-Data)
+Meta-Data
 --------------------------------------
 
 You look at the meta-data associated with file by using the following
@@ -142,7 +142,7 @@ You can also search for files with similar meta-data using:
 
 
 
-Prestage files(#Prestage-files)
+Prestage files
 ------------------------------------------------
 
 This is **IMPORTANT**. We need to prestage files before we work on
@@ -167,7 +167,7 @@ If you want to only stage a specific amount you can add:\--max-files=n.
 
 
 
-Would you like a test file?(#Would-you-like-a-test-file)
+Would you like a test file?
 -------------------------------------------------------------------------
 
 Sometimes you just want to copy one file from SAM to a local disk for
@@ -188,7 +188,7 @@ Make Sure you have setup fife\_utils to use this.
 
 
 
-Running over a dataset. Grid life.(#Running-over-a-dataset-Grid-life)
+Running over a dataset. Grid life.
 --------------------------------------------------------------------------------------
 
 Before embarking on your grid life start of by reading the project.py
@@ -217,12 +217,12 @@ under the hood. Run the file using the usually command:
 
 
 
-Running over a dataset. Local life.(#Running-over-a-dataset-Local-life)
+Running over a dataset. Local life.
 ----------------------------------------------------------------------------------------
 
 
 
-### A quick way to process the files.(#A-quick-way-to-process-the-files)
+### A quick way to process the files.
 
 In order to use the files one needs to create a project. You can see
 your projects by running: samweb list-projects \--user=\$USER. This
@@ -252,7 +252,7 @@ project\
 
 
 
-### Copying the files to local scratch.(#Copying-the-files-to-local-scratch)
+### Copying the files to local scratch.
 
 I don\'t know of anyone who does this, so maybe think twice before doing
 this.
@@ -311,4 +311,4 @@ it quickly.
 
 
 
-### Using art.(#Using-art)
+### Using art.

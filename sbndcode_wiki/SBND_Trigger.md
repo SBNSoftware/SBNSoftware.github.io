@@ -5,7 +5,7 @@ title: SBND Trigger
 
 
 
-SBND Trigger(#SBND-Trigger)
+SBND Trigger
 ============================================
 
 **PMT Channel Mapping for APA 01** *Beam left APA*\

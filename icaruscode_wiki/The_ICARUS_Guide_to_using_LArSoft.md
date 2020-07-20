@@ -5,15 +5,15 @@ title: The ICARUS Guide to using LArSoft
 
 
 
-The ICARUS Guide to using LArSoft(#The-ICARUS-Guide-to-using-LArSoft)
+The ICARUS Guide to using LArSoft
 ======================================================================================
 
 -   **Table of contents**
 -   [The ICARUS Guide to using
-    LArSoft](#The-ICARUS-Guide-to-using-LArSoft)
-    -   [Brief LArSoft overview.](#Brief-LArSoft-overview)
-    -   [List of ICARUS code releases](#List-of-ICARUS-code-releases)
-    -   [Useful Examples](#Useful-Examples)
+    LArSoft]
+    -   [Brief LArSoft overview.]
+    -   [List of ICARUS code releases]
+    -   [Useful Examples]
 
 > DISCLAIMER: Due to rapid development this page can become out of date
 > at times. As well, remember that unknown problems don\'t materialize
@@ -42,11 +42,11 @@ run and develop applications in LArSoft. The following assumes:
     second step.
 -   You have a working knowledge of UNIX.
 -   You are using the `bash` shell (`zsh` is not well supported to
-    date^[1](#fn1)^ ).
+    date^[1].
 
 
 
-Brief LArSoft overview.(#Brief-LArSoft-overview)
+Brief LArSoft overview.
 -----------------------------------------------------------------
 
 LArSoft is the software framework used by a number of LArTPC experiments
@@ -72,12 +72,12 @@ Material](Newbie_Material.html){.wiki-page .new} page useful as well.
 
 
 
-[List of ICARUS code releases](List_of_ICARUS_code_releases.html)(#List-of-ICARUS-code-releases)
+[List of ICARUS code releases](List_of_ICARUS_code_releases.html)
 -----------------------------------------------------------------------------------------------------------------------------
 
 
 
-Useful Examples(#Useful-Examples)
+Useful Examples
 --------------------------------------------------
 
 -   [How to setup your directory and launch your first

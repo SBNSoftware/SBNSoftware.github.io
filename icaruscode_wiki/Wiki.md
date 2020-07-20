@@ -10,13 +10,13 @@ ICARUS Simulation and Reconstruction Code
 
 #### Table of contents
 
--   [Developing ICARUS code](#developing-icarus-code)
--   [Computing resources](#computing-resources)
--   [Content of the packages](#content-of-the-packages)
--   [Monte Carlo productions](#monte-carlo-productions)
--   [Code management and deployment stuff](#code-management-and-deployment-stuff)
--   [SAM File Metadata](#sam-file-metadata)
--   [Troubleshooting](#troubleshooting)
+-   [Developing ICARUS code]
+-   [Computing resources]
+-   [Content of the packages]
+-   [Monte Carlo productions]
+-   [Code management and deployment stuff]
+-   [SAM File Metadata]
+-   [Troubleshooting]
 
 This is version 0 of a wiki age for ICARUS software\
 It should have more than a passing familiarity with SBND\...

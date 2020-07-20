@@ -9,19 +9,19 @@ title: ReleaseNotes065300
 
 
 
-sbndcode v06\_53\_00 Release Notes(#sbndcode-v06_53_00-Release-Notes)
+sbndcode v06\_53\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_53\_00 Release
-    Notes](#sbndcode-v06_53_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_53\_00](#sbndcode-v06_53_00)
-    -   [sbndutil v01\_29\_00](#sbndutil-v01_29_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_53\_00]
+    -   [sbndutil v01\_29\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_53\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_53_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Addition of RecoUtils library with truth matching functions and TPC
@@ -48,7 +48,7 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Issue
@@ -57,7 +57,7 @@ Bug fixes(#Bug-fixes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -65,12 +65,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_53\_00(#sbndcode-v06_53_00)
+sbndcode v06\_53\_00
 ----------------------------------------------------------
 
 -   2017-10-17 Thomas Brooks : Merge branch \'release/v06\_53\_00\'
@@ -122,7 +122,7 @@ sbndcode v06\_53\_00(#sbndcode-v06_53_00)
 
 
 
-sbndutil v01\_29\_00(#sbndutil-v01_29_00)
+sbndutil v01\_29\_00
 ----------------------------------------------------------
 
 -   2017-10-17 Thomas Brooks : Merge branch \'release/v01\_29\_00\'

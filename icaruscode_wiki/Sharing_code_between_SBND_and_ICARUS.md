@@ -5,7 +5,7 @@ title: Sharing code between SBND and ICARUS
 
 
 
-Sharing code between SBND and ICARUS(#Sharing-code-between-SBND-and-ICARUS)
+Sharing code between SBND and ICARUS
 ============================================================================================
 
 ***PAGE IN DEVELOPMENT.*** This page is dedicated to advice about using
@@ -21,12 +21,12 @@ ICARUS and may have some insight.
 
 
 
-Differences in `icaruscode` vs. `sbndcode`(#Differences-in-icaruscode-vs-sbndcode)
+Differences in `icaruscode` vs. `sbndcode`
 ---------------------------------------------------------------------------------------------------
 
 
 
-### Includes/Services between experiments (especially .fcl includes)(#IncludesServices-between-experiments-especially-fcl-includes)
+### Includes/Services between experiments (especially .fcl includes)
 
 The fcl includes, services, etc. are different between the two code
 bases. For example, `sbndcode` has four services tables, two of which
@@ -77,7 +77,7 @@ SBND?
 
 
 
-### Difference in module/product names between experiments(#Difference-in-moduleproduct-names-between-experiments)
+### Difference in module/product names between experiments
 
 Often ICARUS modules and the products they create may differ from those
 used by SBND. The general procedure is quite similar, but in ICARUS we
@@ -100,7 +100,7 @@ example:
 
 
 
-Detector agnostic code(#Detector-agnostic-code)
+Detector agnostic code
 ----------------------------------------------------------------
 
 In general, code pulled from the master branch of the LArSoft git
@@ -140,7 +140,7 @@ This particular failure mode was one specific call to
 
 
 
-General advice(#General-advice)
+General advice
 ------------------------------------------------
 
 Three pieces of general advice:

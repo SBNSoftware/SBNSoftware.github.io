@@ -9,20 +9,20 @@ title: ReleaseNotes067000
 
 
 
-sbndcode v06\_70\_00 Release Notes(#sbndcode-v06_70_00-Release-Notes)
+sbndcode v06\_70\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_70\_00 Release
-    Notes](#sbndcode-v06_70_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Breaking changes](#Breaking-changes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_70\_00](#sbndcode-v06_70_00)
-    -   [sbndutil v01\_46\_00](#sbndutil-v01_46_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Breaking changes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_70\_00]
+    -   [sbndutil v01\_46\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -31,26 +31,26 @@ v06\_70\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Update for art v02\_10
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Change to project.py anatree output, it is now 1:1 with reco output.
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Breaking changes(#Breaking-changes)
+Breaking changes
 ----------------------------------------------------
 
 -   [change to
@@ -69,7 +69,7 @@ Breaking changes(#Breaking-changes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [art
@@ -79,12 +79,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_70\_00(#sbndcode-v06_70_00)
+sbndcode v06\_70\_00
 ----------------------------------------------------------
 
 -   2018-03-03 Thomas Brooks : Merge branch \'release/v06\_70\_00\'
@@ -96,7 +96,7 @@ sbndcode v06\_70\_00(#sbndcode-v06_70_00)
 
 
 
-sbndutil v01\_46\_00(#sbndutil-v01_46_00)
+sbndutil v01\_46\_00
 ----------------------------------------------------------
 
 -   2018-03-03 Thomas Brooks : Merge branch \'release/v01\_46\_00\'

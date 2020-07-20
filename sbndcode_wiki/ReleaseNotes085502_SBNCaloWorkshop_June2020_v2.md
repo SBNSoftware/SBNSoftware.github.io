@@ -9,28 +9,28 @@ title: ReleaseNotes085502SBNCaloWorkshopJune2020v2
 
 
 
-sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2 Release Notes(#sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2-Release-Notes)
+sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2 Release Notes
 =======================================================================================
 
 -   **Table of contents**
--   [sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2 Release Notes](#sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2](#sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2)
-    -   [sbndutil sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2](#sbndutil-v08_55_02_SBNCaloWorkshop_June2020_v2)
+-   [sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2 Release Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2]
+    -   [sbndutil sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2]
 
 [List of sbndcode releases](List_of_SBND_code_releases.html)
 Download instructions for [sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_55_02_SBNCaloWorkshop_June2020_v2/sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2.html)
 
-Purpose(#Purpose)
+Purpose
 ---------------------------------------------------
 
 * SBN Calorimetry workshop release. This release was used for all sample productions apart the from light/charge anticorrelated e+p sample (used v4).
 
-New features(#New-features)
+New features
 ---------------------------------------------------
 
 Bug fixes(Bug-fixes)
@@ -42,7 +42,7 @@ Updated dependencies
 Change List
 ==========================================
 
-sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2(#sbndcode-v08_55_02_SBNCaloWorkshop_June2020_v2)
+sbndcode v08_55_02_SBNCaloWorkshop_June2020_v2
 ---------------------------------------------------
 
 * 2020-06-30  Andrew Scarff : Merge branch 'release/lardev-v08_55_02_SBNCaloWorkshop_June2020_v2'

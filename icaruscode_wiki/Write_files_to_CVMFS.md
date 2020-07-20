@@ -5,14 +5,14 @@ title: Write files to CVMFS
 
 
 
-Write files to CVMFS(#Write-files-to-CVMFS)
+Write files to CVMFS
 ============================================================
 
 (original text from Andrzej Szelc)
 
 -   **Table of contents**
--   [Write files to CVMFS](#Write-files-to-CVMFS)
-    -   [Access privileges](#Access-privileges)
+-   [Write files to CVMFS]
+    -   [Access privileges]
 
 Modifications to ICARUS area in CVMFS are performed interacting as user
 `cvmfsicarus` on the server `oasiscfs.fnal.gov`.\
@@ -30,7 +30,7 @@ These are the suggested operations, optimised for \"the less time in
     asks for a password and creates a new one)
 
 2.  copy the files you want to store in CVMFS into `oasiscfs.fnal.gov`
-    (you need to [be authorised](#Access-privileges)):
+    (you need to [be authorised]:
 
         scp icarus_data-01.00.00-noarch.tar.bz2 cvmfsicarus@oasiscfs.fnal.gov:
 
@@ -39,7 +39,7 @@ These are the suggested operations, optimised for \"the less time in
     `cvmfsicarus`
 
 3.  log in `oasiscfs.fnal.gov` (you need to [be
-    authorised](#Access-privileges)):
+    authorised]:
 
         ssh cvmfsicarus@oasiscfs.fnal.gov
 
@@ -77,7 +77,7 @@ the change to the world.
 
 
 
-Access privileges(#Access-privileges)
+Access privileges
 ------------------------------------------------------
 
 A few ICARUS people are allowed to log as `cvmfsicarus` on

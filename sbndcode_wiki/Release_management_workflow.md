@@ -5,7 +5,7 @@ title: Release management workflow
 
 
 
-Release management workflow(#Release-management-workflow)
+Release management workflow
 ==========================================================================
 
 (Note almost all of this information is from the MicroBooNE instructions
@@ -16,7 +16,7 @@ build)](Jenkins_Build.html), [here
 
 
 
-Required permissions(#Required-permissions)
+Required permissions
 ------------------------------------------------------------
 
 Multiple permissions are needed to perform all of the actions involved
@@ -32,7 +32,7 @@ in release management, these include:
 
 
 
-Creating a new release(#Creating-a-new-release)
+Creating a new release
 ----------------------------------------------------------------
 
 1.  [Tag the release](Tagging_a_release.html)
@@ -45,14 +45,14 @@ Creating a new release(#Creating-a-new-release)
 
 
 
-sbnd\_data(#sbnd_data)
+sbnd\_data
 ---------------------------------------
 
 -   [Updating sbnd\_data](Updating_sbnd_data.html)
 
 
 
-Code monitoring(#Code-monitoring)
+Code monitoring
 --------------------------------------------------
 
 -   [Commit emails](Commit_emails.html)
@@ -60,7 +60,7 @@ Code monitoring(#Code-monitoring)
 
 
 
-Mailing lists you should be on(#Mailing-lists-you-should-be-on)
+Mailing lists you should be on
 --------------------------------------------------------------------------------
 
 -   SBND-SOFTWARE
@@ -72,7 +72,7 @@ Mailing lists you should be on(#Mailing-lists-you-should-be-on)
 
 
 
-Legacy pages(#Legacy-pages)
+Legacy pages
 --------------------------------------------
 
 -   [Deploy on

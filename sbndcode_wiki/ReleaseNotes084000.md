@@ -9,19 +9,19 @@ title: ReleaseNotes084000
 
 
 
-sbndcode v08\_40\_00 Release Notes(#sbndcode-v08_40_00-Release-Notes)
+sbndcode v08\_40\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_40\_00 Release
-    Notes](#sbndcode-v08_40_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_40\_00](#sbndcode-v08_40_00)
-    -   [sbndutil v08\_40\_00](#sbndutil-v08_40_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_40\_00]
+    -   [sbndutil v08\_40\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,28 +30,28 @@ v08\_40\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_40_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Support for Pandora SliceID
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Moved opdet class definitions to shared libraries
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_40\_00(#sbndcode-v08_40_00)
+sbndcode v08\_40\_00
 ----------------------------------------------------------
 
 -   2020-01-17 Thomas Brooks : Merge branch \'release/v08\_40\_00\'
@@ -88,7 +88,7 @@ sbndcode v08\_40\_00(#sbndcode-v08_40_00)
 
 
 
-sbndutil v08\_40\_00(#sbndutil-v08_40_00)
+sbndutil v08\_40\_00
 ----------------------------------------------------------
 
 -   2020-01-17 Thomas Brooks : Merge branch \'release/v08\_40\_00\'

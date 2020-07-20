@@ -9,19 +9,19 @@ title: ReleaseNotes080701
 
 
 
-sbndcode v08\_07\_01 Release Notes(#sbndcode-v08_07_01-Release-Notes)
+sbndcode v08\_07\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_07\_01 Release
-    Notes](#sbndcode-v08_07_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_07\_01](#sbndcode-v08_07_01)
-    -   [sbndutil v08\_07\_01](#sbndutil-v08_07_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_07\_01]
+    -   [sbndutil v08\_07\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v08\_07\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_07_01/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Update for art v3\_01\_01 (s75)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   art v3\_01\_01
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_07\_01(#sbndcode-v08_07_01)
+sbndcode v08\_07\_01
 ----------------------------------------------------------
 
 -   2019-02-05 Thomas Brooks : Merge branch \'release/v08\_07\_01\'
@@ -70,7 +70,7 @@ sbndcode v08\_07\_01(#sbndcode-v08_07_01)
 
 
 
-sbndutil v08\_07\_01(#sbndutil-v08_07_01)
+sbndutil v08\_07\_01
 ----------------------------------------------------------
 
 -   2019-02-05 Thomas Brooks : Merge branch \'release/v08\_07\_01\'

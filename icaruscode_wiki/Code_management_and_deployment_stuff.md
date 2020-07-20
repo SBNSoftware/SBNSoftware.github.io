@@ -5,7 +5,7 @@ title: Code management and deployment stuff
 
 
 
-Code management and deployment stuff(#Code-management-and-deployment-stuff)
+Code management and deployment stuff
 ============================================================================================
 
 -   Small data files for ICARUS processing sbnd\_data\|updating
@@ -14,7 +14,7 @@ Code management and deployment stuff(#Code-management-and-deployment-stuff)
 
 
 
-How to deploy files to\...(#How-to-deploy-files-to)
+How to deploy files to\...
 --------------------------------------------------------------------
 
 -   Write files to PNFS\|PNFS persistent area

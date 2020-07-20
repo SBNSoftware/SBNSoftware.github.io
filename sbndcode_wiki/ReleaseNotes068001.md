@@ -9,19 +9,19 @@ title: ReleaseNotes068001
 
 
 
-sbndcode v06\_80\_01 Release Notes(#sbndcode-v06_80_01-Release-Notes)
+sbndcode v06\_80\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_80\_01 Release
-    Notes](#sbndcode-v06_80_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_80\_01](#sbndcode-v06_80_01)
-    -   [sbndutil v01\_56\_01](#sbndutil-v01_56_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_80\_01]
+    -   [sbndutil v01\_56\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,21 +30,21 @@ v06\_80\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_80_01/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Added configuration for POMS
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Issue
@@ -56,7 +56,7 @@ Bug fixes(#Bug-fixes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -65,12 +65,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_80\_01(#sbndcode-v06_80_01)
+sbndcode v06\_80\_01
 ----------------------------------------------------------
 
 -   2018-06-15 Thomas Brooks : Merge branch \'release/v06\_80\_01\'
@@ -87,7 +87,7 @@ sbndcode v06\_80\_01(#sbndcode-v06_80_01)
 
 
 
-sbndutil v01\_56\_01(#sbndutil-v01_56_01)
+sbndutil v01\_56\_01
 ----------------------------------------------------------
 
 -   2018-06-15 Thomas Brooks : Merge branch \'release/v01\_56\_01\'

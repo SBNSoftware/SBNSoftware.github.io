@@ -5,7 +5,7 @@ title: Detector geometry
 
 
 
-SBND detector geometry(#SBND-detector-geometry)
+SBND detector geometry
 ================================================================
 
 Detector description files are stored in GDML format in the

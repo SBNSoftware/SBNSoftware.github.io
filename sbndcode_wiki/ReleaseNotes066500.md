@@ -9,20 +9,20 @@ title: ReleaseNotes066500
 
 
 
-sbndcode v06\_65\_00 Release Notes(#sbndcode-v06_65_00-Release-Notes)
+sbndcode v06\_65\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_65\_00 Release
-    Notes](#sbndcode-v06_65_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Breaking changes](#Breaking-changes)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_65\_00](#sbndcode-v06_65_00)
-    -   [sbndutil v01\_41\_00](#sbndutil-v01_41_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Breaking changes]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_65\_00]
+    -   [sbndutil v01\_41\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -31,33 +31,33 @@ v06\_65\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_65_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Migrate to art v2\_09\_06
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Use art v2\_09\_06
 
 
 
-Breaking changes(#Breaking-changes)
+Breaking changes
 ----------------------------------------------------
 
 -   Please use UpdateArt209.sh in larsoft/bin for any feature branches
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [art
@@ -67,12 +67,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_65\_00(#sbndcode-v06_65_00)
+sbndcode v06\_65\_00
 ----------------------------------------------------------
 
 -   2018-01-23 Thomas Brooks : Merge branch \'release/v06\_65\_00\'
@@ -86,7 +86,7 @@ sbndcode v06\_65\_00(#sbndcode-v06_65_00)
 
 
 
-sbndutil v01\_41\_00(#sbndutil-v01_41_00)
+sbndutil v01\_41\_00
 ----------------------------------------------------------
 
 -   2018-01-23 Thomas Brooks : Merge branch \'release/v01\_41\_00\'

@@ -5,12 +5,12 @@ title: Cosmics
 
 
 
-Cosmic-ray generation (under-development, but good enough for preliminary studies)(#Cosmic-ray-generation-under-development-but-good-enough-for-preliminary-studies)
+Cosmic-ray generation (under-development, but good enough for preliminary studies)
 =====================================================================================================================================================================================
 
 
 
-How to generate cosmic events(#How-to-generate-cosmic-events) 
+How to generate cosmic events 
 ------------------------------------------------------------------------------
 
 100 events in the examples:
@@ -47,7 +47,7 @@ How to generate cosmic events(#How-to-generate-cosmic-events)
 
 
 
-### Cry parameters(#Cry-parameters) 
+### Cry parameters 
 
 Full module configuration is in `cry_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by
@@ -70,7 +70,7 @@ negligible (to confirm with studies?).
 
 
 
-### CORSIKA parameters(#CORSIKA-parameters) 
+### CORSIKA parameters 
 
 Full module configuration is in `corsika_sbnd.fcl` (from
 `sbndcode/LArSoftConfigurations`), and it can be included in your job by

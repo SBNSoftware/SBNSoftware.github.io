@@ -9,19 +9,19 @@ title: ReleaseNotes0808001MCP10
 
 
 
-sbndcode v08\_08\_00\_1\_MCP1\_0 Release Notes(#sbndcode-v08_08_00_1_MCP1_0-Release-Notes)
+sbndcode v08\_08\_00\_1\_MCP1\_0 Release Notes
 ===========================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_08\_00\_1\_MCP1\_0 Release
-    Notes](#sbndcode-v08_08_00_1_MCP1_0-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_08\_00\_1\_MCP1\_0](#sbndcode-v08_08_00_1_MCP1_0)
-    -   [sbndutil v08\_08\_00\_1\_MCP1\_0](#sbndutil-v08_08_00_1_MCP1_0)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_08\_00\_1\_MCP1\_0]
+    -   [sbndutil v08\_08\_00\_1\_MCP1\_0]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,34 +30,34 @@ v08\_08\_00\_1\_MCP1\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_08_00_
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for MCP 1.0
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_08\_00\_1\_MCP1\_0(#sbndcode-v08_08_00_1_MCP1_0)
+sbndcode v08\_08\_00\_1\_MCP1\_0
 -------------------------------------------------------------------------------
 
 -   2019-02-13 Thomas Brooks : Merge branch
@@ -68,7 +68,7 @@ sbndcode v08\_08\_00\_1\_MCP1\_0(#sbndcode-v08_08_00_1_MCP1_0)
 
 
 
-sbndutil v08\_08\_00\_1\_MCP1\_0(#sbndutil-v08_08_00_1_MCP1_0)
+sbndutil v08\_08\_00\_1\_MCP1\_0
 -------------------------------------------------------------------------------
 
 -   2019-02-13 Thomas Brooks : Merge branch

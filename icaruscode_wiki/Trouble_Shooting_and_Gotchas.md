@@ -5,26 +5,26 @@ title: Trouble Shooting and Gotchas
 
 
 
-Trouble Shooting and Gotchas(#Trouble-Shooting-and-Gotchas)
+Trouble Shooting and Gotchas
 ============================================================================
 
 
 
-Table of Contents(#Table-of-Contents)
+Table of Contents
 ======================================================
 
 -   **Table of contents**
--   [Trouble Shooting and Gotchas](#Trouble-Shooting-and-Gotchas)
--   [Table of Contents](#Table-of-Contents)
+-   [Trouble Shooting and Gotchas]
+-   [Table of Contents]
     -   [Submitting grid jobs for SBND (ICARUS) with an user of ICARUS
-        (SBND)](#Submitting-grid-jobs-for-SBND-ICARUS-with-an-user-of-ICARUS-SBND)
-    -   [LogicError..](#LogicError)
+        (SBND)]
+    -   [LogicError..]
     -   [How to checkout tagged version of
-        icaruscode](#How-to-checkout-tagged-version-of-icaruscode)
+        icaruscode]
 
 
 
-Submitting grid jobs for SBND (ICARUS) with an user of ICARUS (SBND)(#Submitting-grid-jobs-for-SBND-ICARUS-with-an-user-of-ICARUS-SBND)
+Submitting grid jobs for SBND (ICARUS) with an user of ICARUS (SBND)
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -   Errors of this type have the form of
@@ -90,7 +90,7 @@ computing privileges within a business day.
 
 
 
-LogicError..(#LogicError)
+LogicError..
 ------------------------------------------
 
 -   The following type of error message:\
@@ -113,7 +113,7 @@ you need to simply setup sbndcode. for example.\
 
 
 
-How to checkout tagged version of icaruscode(#How-to-checkout-tagged-version-of-icaruscode)
+How to checkout tagged version of icaruscode
 ------------------------------------------------------------------------------------------------------------
 
 for example\...\

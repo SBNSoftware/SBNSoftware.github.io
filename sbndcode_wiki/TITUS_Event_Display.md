@@ -5,7 +5,7 @@ title: TITUS Event Display
 
 
 
-TITUS Event Display(#TITUS-Event-Display)
+TITUS Event Display
 ==========================================================
 
 TITUS is python-based event displays for many of the neutrino
@@ -14,7 +14,7 @@ ICARUS.
 
 
 
-How to Use the Pre-built Copy of TITUS on the SBND gpvms(#How-to-Use-the-Pre-built-Copy-of-TITUS-on-the-SBND-gpvms)
+How to Use the Pre-built Copy of TITUS on the SBND gpvms
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Log in to any SBND gpvm machine that use SL7. Then:\
@@ -26,7 +26,7 @@ That\'s it!
 
 
 
-How to Run the Event Display(#How-to-Run-the-Event-Display)
+How to Run the Event Display
 ----------------------------------------------------------------------------
 
 Once you have done the setup above, you can run TITUS by typing:\
@@ -42,7 +42,7 @@ You can use this file as an example:\
 
 
 
-How to Use the Event Display(#How-to-Use-the-Event-Display)
+How to Use the Event Display
 ----------------------------------------------------------------------------
 
 A demo is available here:
@@ -50,7 +50,7 @@ A demo is available here:
 
 
 
-How to Build and Install your Copy of TITUS(#How-to-Build-and-Install-your-Copy-of-TITUS)
+How to Build and Install your Copy of TITUS
 ----------------------------------------------------------------------------------------------------------
 
 TITUS requires `gallery` and `sbndcode`. You can obtain both pulling the

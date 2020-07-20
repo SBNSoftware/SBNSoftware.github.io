@@ -5,13 +5,13 @@ title: Database
 
 
 
-Database(#Database)
+Database
 ====================================
 
 -   **Table of contents**
--   [Database](#Database)
+-   [Database]
 -   [Comments and Suggestion for ICARUS CRT
-    Database](#Comments-and-Suggestion-for-ICARUS-CRT-Database)
+    Database]
 
 I would like to announce a two-week comment period starting now on the
 CRT database documented in
@@ -22,5 +22,5 @@ discuss in coming meetings.
 
 
 
-Comments and Suggestion for ICARUS CRT Database(#Comments-and-Suggestion-for-ICARUS-CRT-Database) 
+Comments and Suggestion for ICARUS CRT Database 
 ==================================================================================================================

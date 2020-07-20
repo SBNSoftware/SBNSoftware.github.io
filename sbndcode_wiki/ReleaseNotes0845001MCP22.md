@@ -9,19 +9,19 @@ title: ReleaseNotes0845001MCP22
 
 
 
-sbndcode v08\_45\_00\_1\_MCP2\_2 Release Notes(#sbndcode-v08_45_00_1_MCP2_2-Release-Notes)
+sbndcode v08\_45\_00\_1\_MCP2\_2 Release Notes
 ===========================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_45\_00\_1\_MCP2\_2 Release
-    Notes](#sbndcode-v08_45_00_1_MCP2_2-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_45\_00\_1\_MCP2\_2](#sbndcode-v08_45_00_1_MCP2_2)
-    -   [sbndutil v08\_45\_00\_1\_MCP2\_2](#sbndutil-v08_45_00_1_MCP2_2)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_45\_00\_1\_MCP2\_2]
+    -   [sbndutil v08\_45\_00\_1\_MCP2\_2]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,34 +30,34 @@ v08\_45\_00\_1\_MCP2\_2](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_45_00_
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for MCP 2.2
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_45\_00\_1\_MCP2\_2(#sbndcode-v08_45_00_1_MCP2_2)
+sbndcode v08\_45\_00\_1\_MCP2\_2
 -------------------------------------------------------------------------------
 
 -   2020-03-16 Thomas Brooks : Merge branch
@@ -108,7 +108,7 @@ sbndcode v08\_45\_00\_1\_MCP2\_2(#sbndcode-v08_45_00_1_MCP2_2)
 
 
 
-sbndutil v08\_45\_00\_1\_MCP2\_2(#sbndutil-v08_45_00_1_MCP2_2)
+sbndutil v08\_45\_00\_1\_MCP2\_2
 -------------------------------------------------------------------------------
 
 -   2020-03-16 Thomas Brooks : Merge branch

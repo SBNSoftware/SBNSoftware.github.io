@@ -5,54 +5,54 @@ title: Computing resources
 
 
 
-Computing resources(#Computing-resources)
+Computing resources
 ==========================================================
 
 -   **Table of contents**
--   [Computing resources](#Computing-resources)
-    -   -   -   [SCD liaison](#SCD-liaison)
+-   [Computing resources]
+    -   -   -   [SCD liaison]
 
-    -   [Computing Access](#Computing-Access)
+    -   [Computing Access]
 
     -   [Where to work: interactive nodes
-        (\"GPVM\")](#Where-to-work-interactive-nodes-GPVM)
+        (\"GPVM\")]
 
     -   [Opening a ticket in Fermilab Service
-        Desk](#Opening-a-ticket-in-Fermilab-Service-Desk)
+        Desk]
 
     -   [Accessing resources via
-        certificates](#Accessing-resources-via-certificates)
+        certificates]
 
     -   [Accessing resources via Virtual Private
-        Network](#Accessing-resources-via-Virtual-Private-Network)
+        Network]
 
     -   [Submitting jobs: Virtual
-        Organisation](#Submitting-jobs-Virtual-Organisation)
+        Organisation]
 
     -   [Submitting jobs: grid
-        resources](#Submitting-jobs-grid-resources)
+        resources]
 
-    -   [Software distribution](#Software-distribution)
+    -   [Software distribution]
         -   [Local Fermilab area
-            (FermiApp)](#Local-Fermilab-area-FermiApp)
-        -   [CVMFS](#CVMFS)
+            (FermiApp)]
+        -   [CVMFS]
 
-    -   [Storing data](#Storing-data)
-        -   [Local storage: BlueArc disks](#Local-storage-BlueArc-disks)
+    -   [Storing data]
+        -   [Local storage: BlueArc disks]
         -   [World-visible storage:
-            dCache](#World-visible-storage-dCache)
-        -   [Tape storage](#Tape-storage)
-        -   [File database (SAM)](#File-database-SAM)
+            dCache]
+        -   [Tape storage]
+        -   [File database (SAM)]
 
-    -   [Web server pages](#Web-server-pages)
-        -   [SBN online web gate](#SBN-online-web-gate)
-        -   [SBND data web directory](#SBND-data-web-directory)
-        -   [Communication tools](#Communication-tools)
-            -   [Mailing lists](#Mailing-lists)
-            -   [Electronic logbook](#Electronic-logbook)
+    -   [Web server pages]
+        -   [SBN online web gate]
+        -   [SBND data web directory]
+        -   [Communication tools]
+            -   [Mailing lists]
+            -   [Electronic logbook]
 
     -   [Other obscure services and
-        resources](#Other-obscure-services-and-resources)
+        resources]
 
 SBND has a number of computing resources available, many of which are
 supplied by Fermilab Computing Sector (SCD when we talk about the
@@ -68,12 +68,12 @@ Here we list some of them.
 
 
 
-#### SCD liaison(#SCD-liaison)
+#### SCD liaison
 
 The Scientific Computing Division Liaison is a person from Fermilab SCD
 who acts as a bridge between SCD and an experiment. They is typically
 fairly informed of what is going on, computation-wise, in the
-experiment, and in the computing division^[1](#fn1)^. They is also able
+experiment, and in the computing division^[1]^. They is also able
 to route any request to the proper people, but they is not necessarily
 required to do actual work on solving the merit of the issues. Also,
 they is not required to be a member of the experiment.
@@ -88,7 +88,7 @@ experiment more than most of the computing division people.
 
 
 
-Computing Access(#Computing-Access)
+Computing Access
 ----------------------------------------------------
 
 See the [Computing resources](Computing_resources.html) page
@@ -116,7 +116,7 @@ log on by typing:\
 (where `$USER` is your Fermilab user name).
 
 If this does not work, please submit a [service desk
-ticket](#Opening-a-ticket-in-Fermilab-Service-Desk) to
+ticket] to
 request a SBND project account (I believe someone has to authorise this
 so it will probably fail):
 
@@ -135,7 +135,7 @@ desk](mailto:servicedesk@fnal.gov) (+1 (630) 840-2345).
 
 
 
-Where to work: interactive nodes (\"GPVM\")(#Where-to-work-interactive-nodes-GPVM)
+Where to work: interactive nodes (\"GPVM\")
 ---------------------------------------------------------------------------------------------------
 
 We have some dedicated \"nodes\" where we can log in and work
@@ -181,7 +181,7 @@ on a [separate page](SBND_servers.html).
 
 
 
-Opening a ticket in Fermilab Service Desk(#Opening-a-ticket-in-Fermilab-Service-Desk)
+Opening a ticket in Fermilab Service Desk
 ------------------------------------------------------------------------------------------------------
 
 This is the favourite sport of ours: when something goes wrong, open a
@@ -220,7 +220,7 @@ is in \"Core Computing Services\".
 
 
 
-Accessing resources via certificates(#Accessing-resources-via-certificates)
+Accessing resources via certificates
 --------------------------------------------------------------------------------------------
 
 > Note: this section is about \"personal\" certificates, not the kind of
@@ -239,7 +239,7 @@ you will gain access to:
 
 
 
-Accessing resources via Virtual Private Network(#Accessing-resources-via-Virtual-Private-Network)
+Accessing resources via Virtual Private Network
 ------------------------------------------------------------------------------------------------------------------
 
 Some resources can be accessed only from within Fermilab network. For
@@ -250,14 +250,14 @@ Virtual Private Network (VPN), which needs to be [set up on the client node](../
 
 
 
-Submitting jobs: Virtual Organisation(#Submitting-jobs-Virtual-Organisation)
+Submitting jobs: Virtual Organisation
 ---------------------------------------------------------------------------------------------
 
 The name of our virtual organisation is `sbnd`.
 
 
 
-Submitting jobs: grid resources(#Submitting-jobs-grid-resources)
+Submitting jobs: grid resources
 ---------------------------------------------------------------------------------
 
 This is about where your job gets actually shipped for execution, and
@@ -276,7 +276,7 @@ proxy](Get_a_certificate_proxy.html).
 
 
 
-Software distribution(#Software-distribution)
+Software distribution
 --------------------------------------------------------------
 
 SBND code and the \"software stack\" it relies on are distributed in
@@ -291,7 +291,7 @@ its own web page.
 
 
 
-### Local Fermilab area (FermiApp)(#Local-Fermilab-area-FermiApp)
+### Local Fermilab area (FermiApp)
 
 This area is visible from Fermi Grid nodes and GPVMs. It is accessible
 as `/grid/fermiapp/products/sbnd`.\
@@ -302,7 +302,7 @@ software in there are
 
 
 
-### CVMFS(#CVMFS)
+### CVMFS
 
 SBND has a CVMFS area with the `sbnd.opensciencegrid.org`.\
 CVMFS is a file system that mirrors locally a remote storage area (not
@@ -323,7 +323,7 @@ software in there are
 
 
 
-Storing data(#Storing-data)
+Storing data
 --------------------------------------------
 
 We have two types of data storage available, that we\'ll call
@@ -335,7 +335,7 @@ a database (\"SAM\").
 
 
 
-### Local storage: BlueArc disks(#Local-storage-BlueArc-disks)
+### Local storage: BlueArc disks
 
 BlueArc is a brand of the disk servers Fermilab uses. These are
 multi-terabyte disks that are split between experiments.\
@@ -370,7 +370,7 @@ This information can be read using `quota -s` or `df -h`.
 
 
 
-### World-visible storage: dCache(#World-visible-storage-dCache)
+### World-visible storage: dCache
 
 dCache area consists of a huge data space, made of tapes and disks.\
 We have two types of dCache areas:
@@ -387,7 +387,7 @@ the [SBND dCache wiki page](SBND_dCache_storage.html).
 
 
 
-### Tape storage(#Tape-storage)
+### Tape storage
 
 > 20170906: SBND is requesting the ability to store data on tapes. This
 > is a multi-step procedure requiring access to file transfer service, a
@@ -395,7 +395,7 @@ the [SBND dCache wiki page](SBND_dCache_storage.html).
 
 
 
-### File database (SAM)(#File-database-SAM)
+### File database (SAM)
 
 Fermilab provides a service, SAM, to track where files are currently
 stored. An introduction to the system can be found on [User Guide for
@@ -413,7 +413,7 @@ own [web page](SAM.html).
 
 
 
-Web server pages(#Web-server-pages)
+Web server pages
 ----------------------------------------------------
 
 SBND and SBN has a number of web pages. Information about them is
@@ -421,7 +421,7 @@ available in the [SBND wiki](SBND_homepage.html).
 
 
 
-### SBN online web gate(#SBN-online-web-gate)
+### SBN online web gate
 
 The SBN online web gate is at <https://sbn-online.fnal.gov>. That is not
 a public page.\
@@ -433,7 +433,7 @@ volunteers to help populate it with useful detector status info.
 
 
 
-### SBND data web directory(#SBND-data-web-directory)
+### SBND data web directory
 
 The SBND data web directory is at <https://sbnd-data.fnal.gov>.\
 The site is currently only accessible via a browser when connected to
@@ -448,11 +448,11 @@ Brailsford](mailto:d.brailsford@lancaster.ac.uk).
 
 
 
-### Communication tools(#Communication-tools)
+### Communication tools
 
 
 
-#### Mailing lists(#Mailing-lists)
+#### Mailing lists
 
 SBND owns some mailing lists for specific purposes. The most generally
 useful are listed in the [SBND Redmine
@@ -471,7 +471,7 @@ ListServ](http://listserv.fnal.gov){.external}:
 
 
 
-#### Electronic logbook(#Electronic-logbook)
+#### Electronic logbook
 
 SBND online system uses an [electronic
 logbook](http://dbweb0.fnal.gov/ECL/sbnd/){.external} (friendly called
@@ -483,7 +483,7 @@ link.
 
 
 
-Other obscure services and resources(#Other-obscure-services-and-resources)
+Other obscure services and resources
 --------------------------------------------------------------------------------------------
 
 SBND uses more services, which are usually hidden to most users. They

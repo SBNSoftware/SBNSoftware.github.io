@@ -9,19 +9,19 @@ title: ReleaseNotes081300
 
 
 
-sbndcode v08\_13\_00 Release Notes(#sbndcode-v08_13_00-Release-Notes)
+sbndcode v08\_13\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_13\_00 Release
-    Notes](#sbndcode-v08_13_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_13\_00](#sbndcode-v08_13_00)
-    -   [sbndutil v08\_13\_00](#sbndutil-v08_13_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_13\_00]
+    -   [sbndutil v08\_13\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v08\_13\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   New geometry with updated PDS (not used as default yet)
@@ -45,12 +45,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -58,12 +58,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_13\_00(#sbndcode-v08_13_00)
+sbndcode v08\_13\_00
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_13\_00\'
@@ -78,7 +78,7 @@ sbndcode v08\_13\_00(#sbndcode-v08_13_00)
 
 
 
-sbndutil v08\_13\_00(#sbndutil-v08_13_00)
+sbndutil v08\_13\_00
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_13\_00\'

@@ -5,12 +5,12 @@ title: Prodsingle dualmu 3GeV fixposcontained openingangle10degree
 
 
 
-Prodsingle dualmu 3GeV fixposcontained openingangle10degree(#Prodsingle-dualmu-3GeV-fixposcontained-openingangle10degree)
+Prodsingle dualmu 3GeV fixposcontained openingangle10degree
 ==========================================================================================================================================
 
 
 
-General information(#General-information) 
+General information 
 ----------------------------------------------------------
 
 -   **Number of events: 10000**
@@ -20,15 +20,15 @@ General information(#General-information)
 
 
 
-Stage information(#Stage-information) 
+Stage information 
 ------------------------------------------------------
 
 
 
-### gen(#gen) 
+### gen 
 
-[View details\...](#){#collapse-1ad47feb-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-1ad47feb-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file:
@@ -45,10 +45,10 @@ Stage information(#Stage-information)
 
 
 
-### g4(#g4) 
+### g4 
 
-[View details\...](#){#collapse-0167cee0-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-0167cee0-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_g4\_sbnd.fcl**
@@ -64,10 +64,10 @@ Stage information(#Stage-information)
 
 
 
-### detsim(#detsim) 
+### detsim 
 
-[View details\...](#){#collapse-405fabee-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-405fabee-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_detsim\_sbnd.fcl**
@@ -83,10 +83,10 @@ Stage information(#Stage-information)
 
 
 
-### reco(#reco) 
+### reco 
 
-[View details\...](#){#collapse-17c9d72d-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-17c9d72d-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_reco\_sbnd\_basic.fcl**
@@ -102,10 +102,10 @@ Stage information(#Stage-information)
 
 
 
-### anatree(#anatree) 
+### anatree 
 
-[View details\...](#){#collapse-d24d9491-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-d24d9491-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_anatree\_sbnd.fcl**

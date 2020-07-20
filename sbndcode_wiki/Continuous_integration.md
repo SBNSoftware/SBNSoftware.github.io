@@ -5,7 +5,7 @@ title: Continuous integration
 
 
 
-Continuous integration(#Continuous-integration)
+Continuous integration
 ================================================================
 
 -   For detailed information on the integration tests see
@@ -26,7 +26,7 @@ Continuous integration(#Continuous-integration)
 
 
 
-Memory/cpu usage(#Memorycpu-usage)
+Memory/cpu usage
 ---------------------------------------------------
 
 -   Different compilers and OS\'s tend to have different memory/cpu
@@ -42,7 +42,7 @@ Memory/cpu usage(#Memorycpu-usage)
 
 
 
-Data product changes(#Data-product-changes)
+Data product changes
 ------------------------------------------------------------
 
 -   If the output data products change the warning will say \"Difference
@@ -62,7 +62,7 @@ Data product changes(#Data-product-changes)
 
 
 
-Failures(#Failures)
+Failures
 ------------------------------------
 
 -   You should always try to investigate failures for all builds.

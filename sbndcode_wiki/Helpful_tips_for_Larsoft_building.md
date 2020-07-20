@@ -5,7 +5,7 @@ title: Helpful tips for Larsoft building
 
 
 
-Helpful tips for LArsoft(#Helpful-tips-for-LArsoft)
+Helpful tips for LArsoft
 ====================================================================
 
 This is a combine list of things you might find useful when using
@@ -18,7 +18,7 @@ for more please see them. Please add to the list as well!
 
 
 
-Updating LArsoft version whilst keeping the old compilation(#Updating-LArsoft-version-whilst-keeping-the-old-compilation)
+Updating LArsoft version whilst keeping the old compilation
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 This is useful for when you want concurrent prof/debug builds using the
@@ -37,7 +37,7 @@ in.\
 
 
 
-Performing a Clean Build(#Performing-a-Clean-Build)
+Performing a Clean Build
 --------------------------------------------------------------------
 
 The is stolen from site 1. Setup your code.\
@@ -52,7 +52,7 @@ the local repository.
 
 
 
-Removing a package from a work area .(#Removing-a-package-from-a-work-area-)
+Removing a package from a work area .
 ---------------------------------------------------------------------------------------------
 
 This is stolen from site 1. Setup your code.
@@ -63,7 +63,7 @@ This is stolen from site 1. Setup your code.
 
 
 
-Looking at the builds available(#Looking-at-the-builds-available)
+Looking at the builds available
 ----------------------------------------------------------------------------------
 
 Do the following command to see what qualifiers and versions of sbndcode
@@ -73,7 +73,7 @@ are available.
 
 
 
-Add a new package to your LArsoft version.(#Add-a-new-package-to-your-LArsoft-version)
+Add a new package to your LArsoft version.
 -------------------------------------------------------------------------------------------------------
 
 Setup your code. Find the version of the package you are downloading
@@ -90,7 +90,7 @@ then:
 
 
 
-Useful Info dumpers(#Useful-Info-dumpers)
+Useful Info dumpers
 ----------------------------------------------------------
 
 I can never find the correct one to run so I put them here as well.
@@ -100,7 +100,7 @@ More info can be found
 
 
 
-### Commands(#Commands)
+### Commands
 
 **eventdump.fcl** - Dumps all the data products made in the file onto
 the screen (e.g. car -c eventdump.fcl myartfile.root)\

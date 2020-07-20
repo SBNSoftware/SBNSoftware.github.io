@@ -5,19 +5,19 @@ title: Using LArSoft on a local machine
 
 
 
-Using LArSoft on a local machine(#Using-LArSoft-on-a-local-machine)
+Using LArSoft on a local machine
 ====================================================================================
 
 -   **Table of contents**
 -   [Using LArSoft on a local
-    machine](#Using-LArSoft-on-a-local-machine)
-    -   [Getting the software](#Getting-the-software)
-    -   [Supported platforms](#Supported-platforms)
-        -   [List of platforms](#List-of-platforms)
+    machine]
+    -   [Getting the software]
+    -   [Supported platforms]
+        -   [List of platforms]
     -   [Downloading a binary distribution with
-        pullProducts](#Downloading-a-binary-distribution-with-pullProducts)
+        pullProducts]
         -   [Updating the local product
-            repository](#Updating-the-local-product-repository)
+            repository]
 
 This is a collection of hints and tips to allow you to develop and run
 with `sbndcode` (and LArSoft) on a local machine, be it a server in your
@@ -25,7 +25,7 @@ institution or your own laptop.
 
 
 
-Getting the software(#Getting-the-software)
+Getting the software
 ------------------------------------------------------------
 
 The \"software stack\" `sbndcode` relies upon is big, and it includes
@@ -36,11 +36,11 @@ There are three main ways to have it available on your computer:
 1.  read it from the network via [CVMFS (with a few
     hops\...)](Computing_resources.html#CVMFS); the main
     disadvantage is that the network may be slow (use a large cache!
-    e.g. `CVMFS_QUOTA_LIMIT=20000`, that is 20 GB^[1](#fn1)^), and it
+    e.g. `CVMFS_QUOTA_LIMIT=20000`, that is 20 GB^[1], and it
     does not work on the airplane, which surely disrupts your first
     choice of entertainment on flight;
 2.  [download it all in binary
-    form](#Downloading-a-binary-distribution-with-pullProducts)
+    form]
     from SciSoft;
 3.  download it all in source form and compile it; nobody alive I know
     ever did that, which somehow supports the natural selection model.
@@ -53,7 +53,7 @@ There are three main ways to have it available on your computer:
 
 
 
-Supported platforms(#Supported-platforms)
+Supported platforms
 ----------------------------------------------------------
 
 [![SBND user poll on used
@@ -87,7 +87,7 @@ enough.
 
 
 
-### List of platforms(#List-of-platforms)
+### List of platforms
 
 This platform was updated on October 13, 2017 (which is not the best
 time to do so, since OSX 10.10 is going to fall off the table no later
@@ -166,7 +166,7 @@ OSX
 
 
 
-Downloading a binary distribution with `pullProducts`(#Downloading-a-binary-distribution-with-pullProducts)
+Downloading a binary distribution with `pullProducts`
 ----------------------------------------------------------------------------------------------------------------------------
 
 The general [instructions from
@@ -205,7 +205,7 @@ LArSoft are likely to stay more up to date.
     -   the qualifier of the currently supported compiler (e.g. `e14`):
         there is usually only one
     -   which platform you have (see the [supported platform
-        table](#List-of-platforms)), e.g. `d14`
+        table], e.g. `d14`
 
 4.  run the `pullProduct` script; if you are in your product area:
 
@@ -215,7 +215,7 @@ LArSoft are likely to stay more up to date.
 
 
 
-### Updating the local product repository(#Updating-the-local-product-repository)
+### Updating the local product repository
 
 To update a version, you can follows the instructions above and run the
 same `pullProducts` (that script rarely changes) on the same directory.\

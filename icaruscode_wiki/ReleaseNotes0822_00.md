@@ -9,19 +9,19 @@ title: ReleaseNotes0822 00
 
 
 
-icaruscode v08\_22\_00 Release Notes(#icaruscode-v08_22_00-Release-Notes)
+icaruscode v08\_22\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_22\_00 Release
-    Notes](#icaruscode-v08_22_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_22\_00](#icaruscode-v08_22_00)
-    -   [icarusutil v08\_22\_00](#icarusutil-v08_22_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_22\_00]
+    -   [icarusutil v08\_22\_00]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,28 +30,28 @@ v08\_22\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   No major new features
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,7 +59,7 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -67,7 +67,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_22\_00(#icaruscode-v08_22_00)
+icaruscode v08\_22\_00
 --------------------------------------------------------------
 
 -   2019-06-14 - Usher, Tracy L - Merge branch \'develop\'
@@ -150,7 +150,7 @@ icaruscode v08\_22\_00(#icaruscode-v08_22_00)
 
 
 
-icarusutil v08\_22\_00(#icarusutil-v08_22_00)
+icarusutil v08\_22\_00
 --------------------------------------------------------------
 
 -   2019-06-11 - Usher, Tracy L - catch up to larsoft v08\_22\_00

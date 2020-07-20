@@ -5,7 +5,7 @@ title: Software distribution content
 
 
 
-Software distribution content(#Software-distribution-content)
+Software distribution content
 ==============================================================================
 
 This page tries to keep track of the content of the two main software
@@ -23,12 +23,12 @@ setting up the UPS area. It will prefer CVMFS if available.
   ---------------------------------------------------------------------- --------------------------------
   CVMFS                                                                  FermiApp
   /`cvmfs/sbnd.opensciencegrid.org/products/sbnd`                        `/grid/fermiapp/products/sbnd`
-  [Software distribution content](#LArSoft-software-stack)   
+  [Software distribution content]   
   ---------------------------------------------------------------------- --------------------------------
 
 
 
-LArSoft software stack(#LArSoft-software-stack)
+LArSoft software stack
 ----------------------------------------------------------------
 
 The \"stack\" is the complete suite of software distributed with a

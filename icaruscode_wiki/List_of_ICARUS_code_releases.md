@@ -5,25 +5,25 @@ title: List of ICARUS code releases
 
 
 
-List of ICARUS code releases(#List-of-ICARUS-code-releases)
+List of ICARUS code releases
 ============================================================================
 
 -   **Table of contents**
--   [List of ICARUS code releases](#List-of-ICARUS-code-releases)
-    -   [List of icaruscode releases](#List-of-icaruscode-releases)
-    -   [Dependencies](#Dependencies)
-        -   [sbndaq\_artdaq\_core quirks](#sbndaq_artdaq_core-quirks)
+-   [List of ICARUS code releases]
+    -   [List of icaruscode releases]
+    -   [Dependencies]
+        -   [sbndaq\_artdaq\_core quirks]
 
 Here we enumerate the impressive number of code releases by the ICARUS
 army.
 
 The army has also filled a [list of
-dependencies](#Dependencies), after the list of releases
+dependencies], after the list of releases
 below.
 
 
 
-List of `icaruscode` releases(#List-of-icaruscode-releases)
+List of `icaruscode` releases
 ----------------------------------------------------------------------------
 
 [ **Transient and temporary release manager**: [Tracy
@@ -58,7 +58,7 @@ These are the `icaruscode` releases tagged until now:
 
 
 
-Dependencies(#Dependencies)
+Dependencies
 --------------------------------------------
 
 The ICARUS code repository (`icaruscode`) currently depends on
@@ -96,7 +96,7 @@ unless otherwise specified:
 
 
 
-### `sbndaq_artdaq_core` quirks(#sbndaq_artdaq_core-quirks)
+### `sbndaq_artdaq_core` quirks
 
 If you need to check out `sbndaq_artdaq_core` in your working area, the
 effective MRB command is:

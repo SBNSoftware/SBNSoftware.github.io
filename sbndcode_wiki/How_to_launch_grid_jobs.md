@@ -5,7 +5,7 @@ title: How to launch grid jobs
 
 
 
-How to launch grid jobs(#How-to-launch-grid-jobs)
+How to launch grid jobs
 ==================================================================
 
 SBND now has its
@@ -104,7 +104,7 @@ The results of your job will end up in\
 
 
 
-Some other useful commands:(#Some-other-useful-commands)
+Some other useful commands:
 =========================================================================
 
 For more details go to the [jobsub (client)
@@ -112,35 +112,35 @@ documentation](Using_the_Client.html).
 
 
 
-See how your jobs are doing(#See-how-your-jobs-are-doing)
+See how your jobs are doing
 --------------------------------------------------------------------------
 
     jobsub_q -G sbnd --user="$USER"
 
 
 
-Remove a job(#Remove-a-job)
+Remove a job
 --------------------------------------------
 
     jobsub_rm -G sbnd --jobid=<number of job, can get e.g. from previous question>
 
 
 
-Fetch the log files(#Fetch-the-log-files)
+Fetch the log files
 ----------------------------------------------------------
 
     jobsub_fetchlog -G sbnd --jobid <job id specified at runtime, e.g. 77457.0@fifebatch2.fnal.gov>
 
 
 
-Launching LArSoft jobs (also in large numbers)(#Launching-LArSoft-jobs-also-in-large-numbers)
+Launching LArSoft jobs (also in large numbers)
 ==============================================================================================================
 
 To be written. Sorry.
 
 
 
-Using `project.py` to launch LArSoft jobs (especially in large numbers)(#Using-projectpy-to-launch-LArSoft-jobs-especially-in-large-numbers)
+Using `project.py` to launch LArSoft jobs (especially in large numbers)
 =============================================================================================================================================================
 
 `project.py` is a wrapper script that takes a lot of the tedious setup
@@ -167,7 +167,7 @@ need two things:
 
 
 
-xml file preparation(#xml-file-preparation)
+xml file preparation
 ------------------------------------------------------------
 
 Example xml files can be found in the lar1ndutil repository, which you
@@ -193,7 +193,7 @@ the tarball using the: /lar1ndutil/scripts/make\_tar\_lar1nd.sh ).
 
 
 
-.fcl file preparation(#fcl-file-preparation)
+.fcl file preparation
 -------------------------------------------------------------
 
 The .fcl files need to be in your FHICL\_FILE\_PATH, so again, they need
@@ -207,7 +207,7 @@ lar1ndcode/lar1ndcode/JobConfigurations/prod\_eminus\_0.1\_0.9\_lar1nd.fcl
 
 
 
-Running(#Running)
+Running
 ----------------------------------
 
 Once you have these elements you can run:\

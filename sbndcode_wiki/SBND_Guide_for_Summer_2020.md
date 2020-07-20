@@ -5,27 +5,27 @@ title: SBND Guide for Summer 2020
 
 
 
-SBND Guide for Summer 2020(#SBND-Guide-for-Summer-2020)
+SBND Guide for Summer 2020
 ========================================================================
 
 -   **Table of contents**
--   [SBND Guide for Summer 2020](#SBND-Guide-for-Summer-2020)
-    -   [1. Setup the SBND environment](#1-Setup-the-SBND-environment)
+-   [SBND Guide for Summer 2020]
+    -   [1. Setup the SBND environment]
     -   [2. Run existing larsoft
-        software](#2-Run-existing-larsoft-software)
+        software]
     -   [3. Install and develop larsoft
-        software](#3-Install-and-develop-larsoft-software)
+        software]
         -   [Build your own LArSoft
-            plug-in](#Build-your-own-LArSoft-plug-in)
+            plug-in]
     -   [4. Generate Single Particle
-        Events](#4-Generate-Single-Particle-Events)
+        Events]
     -   [5. Look at the Generated Events in the Event
-        Display](#5-Look-at-the-Generated-Events-in-the-Event-Display)
-    -   [6. Generate an Analysis TTree](#6-Generate-an-Analysis-TTree)
+        Display]
+    -   [6. Generate an Analysis TTree]
         -   [What are all the information stored in the
-            TTree?](#What-are-all-the-information-stored-in-the-TTree)
-    -   [Projects](#Projects)
-    -   [Questions?](#Questions)
+            TTree?]
+    -   [Projects]
+    -   [Questions?]
 
 Log in to an SBND virtual machine:\
 
@@ -45,7 +45,7 @@ other areas available:
 
 
 
-1. Setup the SBND environment(#1-Setup-the-SBND-environment)
+1. Setup the SBND environment
 -----------------------------------------------------------------------------
 
 Go to the `app` area, where we can install and develop software:\
@@ -65,7 +65,7 @@ it a name of your choice):\
 
 
 
-2. Run existing larsoft software(#2-Run-existing-larsoft-software)
+2. Run existing larsoft software
 -----------------------------------------------------------------------------------
 
     setup sbndcode v08_43_00 -q e19:prof
@@ -85,13 +85,13 @@ In general, you should select the latest version.
 
 
 
-3. Install and develop larsoft software(#3-Install-and-develop-larsoft-software)
+3. Install and develop larsoft software
 -------------------------------------------------------------------------------------------------
 
 You can skip this section if you don\'t need to develop sbndcode.
 
-[Details](#){#collapse-e478981d-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-e478981d-show .collapsible
+.collapsed}[Details]
 
 ::: 
 After steps 1 and 2, you can start setting up your development area:\
@@ -128,7 +128,7 @@ done above), but every subsequent time you can just do
 
 
 
-### Build your own LArSoft plug-in(#Build-your-own-LArSoft-plug-in)
+### Build your own LArSoft plug-in
 
 Now let\'s assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
@@ -199,7 +199,7 @@ MORE INFORMATION TO BE WRITTEN.
 
 
 
-4. Generate Single Particle Events(#4-Generate-Single-Particle-Events)
+4. Generate Single Particle Events
 ---------------------------------------------------------------------------------------
 
 This section will show you how to generate particles in the SBND
@@ -261,7 +261,7 @@ contains your generated events runt through detector simulation.
 
 
 
-5. Look at the Generated Events in the Event Display(#5-Look-at-the-Generated-Events-in-the-Event-Display)
+5. Look at the Generated Events in the Event Display
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
@@ -278,7 +278,7 @@ your generated events.
 
 
 
-6. Generate an Analysis TTree(#6-Generate-an-Analysis-TTree)
+6. Generate an Analysis TTree
 -----------------------------------------------------------------------------
 
 Now that you have generated your own events, you can run one last job,
@@ -317,18 +317,18 @@ the PMTs positions:\
 
 
 
-### What are all the information stored in the TTree?(#What-are-all-the-information-stored-in-the-TTree)
+### What are all the information stored in the TTree?
 
 All the variables stored are described
 [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112){.external}.
 
 
 
-Projects(#Projects)
+Projects
 ------------------------------------
 
-[CRT Thresholds](#)[CRT
-Thresholds](#)
+[CRT Thresholds][CRT
+Thresholds]
 
 ::: 
 We need to determine the thresholds for the CRT. Since the two SiPMs
@@ -347,8 +347,8 @@ track reconstruction, this can be done by looking if there is TPC
 activity in time with the CRT hits.
 :::
 
-[Timing offsets](#){#collapse-8a9bc46b-show .collapsible
-.collapsed}[Timing offsets](#)
+[Timing offsets]{#collapse-8a9bc46b-show .collapsible
+.collapsed}[Timing offsets]
 
 ::: 
 This project can be entirely developed on MC, and the results of it can
@@ -370,7 +370,7 @@ event to check the same offsets on data.
 
 
 
-Questions?(#Questions)
+Questions?
 ---------------------------------------
 
 Feel to ask

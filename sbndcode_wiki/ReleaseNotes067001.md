@@ -9,19 +9,19 @@ title: ReleaseNotes067001
 
 
 
-sbndcode v06\_70\_01 Release Notes(#sbndcode-v06_70_01-Release-Notes)
+sbndcode v06\_70\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_70\_01 Release
-    Notes](#sbndcode-v06_70_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_70\_01](#sbndcode-v06_70_01)
-    -   [sbndutil v01\_46\_01](#sbndutil-v01_46_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_70\_01]
+    -   [sbndutil v01\_46\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_70\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   LArG4ParticleFilter moved to larevt.
@@ -48,12 +48,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_70\_01(#sbndcode-v06_70_01)
+sbndcode v06\_70\_01
 ----------------------------------------------------------
 
 -   2018-03-08 Thomas Brooks : Merge branch \'release/v06\_70\_01\'
@@ -125,7 +125,7 @@ sbndcode v06\_70\_01(#sbndcode-v06_70_01)
 
 
 
-sbndutil v01\_46\_01(#sbndutil-v01_46_01)
+sbndutil v01\_46\_01
 ----------------------------------------------------------
 
 -   2018-03-08 Thomas Brooks : Merge branch \'release/v01\_46\_01\'

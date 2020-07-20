@@ -5,14 +5,14 @@ title: The SBND Guide to using LArSoft
 
 
 
-The SBND Guide to using LArSoft(#The-SBND-Guide-to-using-LArSoft)
+The SBND Guide to using LArSoft
 ==================================================================================
 
 -   **Table of contents**
--   [The SBND Guide to using LArSoft](#The-SBND-Guide-to-using-LArSoft)
-    -   [Brief LArSoft overview.](#Brief-LArSoft-overview)
-    -   [List of SBND code releases](#List-of-SBND-code-releases)
-    -   [Useful Examples](#Useful-Examples)
+-   [The SBND Guide to using LArSoft]
+    -   [Brief LArSoft overview.]
+    -   [List of SBND code releases]
+    -   [Useful Examples]
 
 > DISCLAIMER: There is a lot of material that constantly befalls out of
 > date. Remember that problems that are unknown don\'t fix by
@@ -39,11 +39,11 @@ LArSoft. The following assumes:
     step.
 -   You have a working knowledge of UNIX.
 -   You are using the `bash` shell (`zsh` is not well supported to
-    date^[1](#fn1)^ ).
+    date^[1].
 
 
 
-Brief LArSoft overview.(#Brief-LArSoft-overview)
+Brief LArSoft overview.
 -----------------------------------------------------------------
 
 LArSoft is the software framework used by a number of LArTPC experiments
@@ -69,12 +69,12 @@ Material](Newbie_Material.html) page useful as well.
 
 
 
-[List of SBND code releases](List_of_SBND_code_releases.html)(#List-of-SBND-code-releases)
+[List of SBND code releases](List_of_SBND_code_releases.html)
 -----------------------------------------------------------------------------------------------------------------------
 
 
 
-Useful Examples(#Useful-Examples)
+Useful Examples
 --------------------------------------------------
 
 -   [How to setup your directory and launch your first

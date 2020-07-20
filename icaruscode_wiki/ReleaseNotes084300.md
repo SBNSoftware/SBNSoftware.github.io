@@ -9,19 +9,19 @@ title: ReleaseNotes084300
 
 
 
-icaruscode v08\_43\_00 Release Notes(#icaruscode-v08_43_00-Release-Notes)
+icaruscode v08\_43\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_43\_00 Release
-    Notes](#icaruscode-v08_43_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_37\_00](#icaruscode-v08_37_00)
-    -   [icarusutil v08\_36\_02](#icarusutil-v08_36_02)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_37\_00]
+    -   [icarusutil v08\_36\_02]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,7 +30,7 @@ v08\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_43_00/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Stay current with LArSoft - latest versions of
@@ -39,7 +39,7 @@ Purpose(#Purpose)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
@@ -49,19 +49,19 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   Now using sbndaq\_artdaq\_core v9\_04\_02\_f02
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -69,7 +69,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_37\_00(#icaruscode-v08_37_00)
+icaruscode v08\_37\_00
 --------------------------------------------------------------
 
 -   2020-02-18 - Gianluca Petrillo - Merge remote-tracking branch
@@ -133,7 +133,7 @@ icaruscode v08\_37\_00(#icaruscode-v08_37_00)
 
 
 
-icarusutil v08\_36\_02(#icarusutil-v08_36_02)
+icarusutil v08\_36\_02
 --------------------------------------------------------------
 
 -   unchanged

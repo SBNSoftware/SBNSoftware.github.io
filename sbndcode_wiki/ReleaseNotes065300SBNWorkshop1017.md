@@ -9,21 +9,21 @@ title: ReleaseNotes065300SBNWorkshop1017
 
 
 
-sbndcode v06\_53\_00\_SBNWorkshop1017 Release Notes(#sbndcode-v06_53_00_SBNWorkshop1017-Release-Notes)
+sbndcode v06\_53\_00\_SBNWorkshop1017 Release Notes
 =======================================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_53\_00\_SBNWorkshop1017 Release
-    Notes](#sbndcode-v06_53_00_SBNWorkshop1017-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
     -   [sbndcode
-        v06\_53\_00\_SBNWorkshop1017](#sbndcode-v06_53_00_SBNWorkshop1017)
+        v06\_53\_00\_SBNWorkshop1017]
     -   [sbndutil
-        v01\_29\_00\_SBNWorkshop1017](#sbndutil-v01_29_00_SBNWorkshop1017)
+        v01\_29\_00\_SBNWorkshop1017]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -32,21 +32,21 @@ v06\_53\_00\_SBNWorkshop1017](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_5
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for SBN workshop 10/17
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   BNB-like particle gun fcls
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Issue
@@ -58,17 +58,17 @@ Bug fixes(#Bug-fixes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_53\_00\_SBNWorkshop1017(#sbndcode-v06_53_00_SBNWorkshop1017)
+sbndcode v06\_53\_00\_SBNWorkshop1017
 -------------------------------------------------------------------------------------------
 
 -   2017-10-17 Thomas Brooks : Merge branch
@@ -101,7 +101,7 @@ sbndcode v06\_53\_00\_SBNWorkshop1017(#sbndcode-v06_53_00_SBNWorkshop1017)
 
 
 
-sbndutil v01\_29\_00\_SBNWorkshop1017(#sbndutil-v01_29_00_SBNWorkshop1017)
+sbndutil v01\_29\_00\_SBNWorkshop1017
 -------------------------------------------------------------------------------------------
 
 -   2017-10-17 Thomas Brooks : Merge branch

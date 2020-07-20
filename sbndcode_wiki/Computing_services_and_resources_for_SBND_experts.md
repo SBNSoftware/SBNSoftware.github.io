@@ -5,19 +5,19 @@ title: Computing services and resources for SBND experts
 
 
 
-Computing services and resources for SBND experts(#Computing-services-and-resources-for-SBND-experts)
+Computing services and resources for SBND experts
 ======================================================================================================================
 
 -   **Table of contents**
 -   [Computing services and resources for SBND
-    experts](#Computing-services-and-resources-for-SBND-experts)
-    -   [File Transfer Service](#File-Transfer-Service)
+    experts]
+    -   [File Transfer Service]
     -   [SBND support group in
-        ServiceNow](#SBND-support-group-in-ServiceNow)
+        ServiceNow]
 
 
 
-File Transfer Service(#File-Transfer-Service)
+File Transfer Service
 --------------------------------------------------------------
 
 > Note that this is *not* the CERN FTS service\...
@@ -27,7 +27,7 @@ The status monitor is at:
 
 
 
-SBND support group in ServiceNow(#SBND-support-group-in-ServiceNow)
+SBND support group in ServiceNow
 ------------------------------------------------------------------------------------
 
 [ServiceNow](https://fermi.service-now.com){.external} is the corporate
@@ -43,7 +43,7 @@ contact who knows what to do (triage).
 
 The people in this group will receive e-mails with ServiceNow tickets
 assigned to the group, and are expected to take appropriate and
-appropriately prompt^[1](#fn1)^ action. The action will be most often to
+appropriately prompt^[1]^ action. The action will be most often to
 forward the request to the appropriate SBND experts, to ensure that
 there is progress toward a resolution and to keep the ticket and its
 submitters updated.\

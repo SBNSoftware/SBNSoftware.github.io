@@ -5,12 +5,12 @@ title: Working on a feature branch (to easily share code)
 
 
 
-Working on a feature branch (to easily share code)(#Working-on-a-feature-branch-to-easily-share-code)
+Working on a feature branch (to easily share code)
 ======================================================================================================================
 
 -   **Table of contents**
 -   [Working on a feature branch (to easily share
-    code)](#Working-on-a-feature-branch-to-easily-share-code)
+    code)]
 
 (Adapted from the 35 ton tutorials by Karl Warburton)
 

@@ -9,20 +9,20 @@ title: ReleaseNotes070800
 
 
 
-icaruscode v07\_08\_00 Release Notes(#icaruscode-v07_08_00-Release-Notes)
+icaruscode v07\_08\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v07\_08\_00 Release
-    Notes](#icaruscode-v07_08_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Updated dependencies](#Updated-dependencies)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Updated dependencies]
 -   [Change List (generated with the command \"git log \--date=short
     \--pretty=format:\"\* %ad - %an - %s\"
-    v07\_08\_00\")](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00)
-    -   [icaruscode v07\_08\_00](#icaruscode-v07_08_00)
-    -   [icarusutil v07\_08\_00](#icarusutil-v07_08_00)
+    v07\_08\_00\")]
+    -   [icaruscode v07\_08\_00]
+    -   [icarusutil v07\_08\_00]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -31,7 +31,7 @@ v07\_08\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_08_00/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Catch up release to get all of the improvements into a tag
@@ -40,7 +40,7 @@ Purpose(#Purpose)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   CRT improvements
@@ -53,7 +53,7 @@ Bug fixes
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -62,12 +62,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v07_08_00)
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v07\_08\_00\")
 ================================================================================================================================================================================================================================
 
 
 
-icaruscode v07\_08\_00(#icaruscode-v07_08_00)
+icaruscode v07\_08\_00
 --------------------------------------------------------------
 
 -   2018-10-28 - Usher, Tracy L - Preparing to tag v07\_08\_00
@@ -245,7 +245,7 @@ icaruscode v07\_08\_00(#icaruscode-v07_08_00)
 
 
 
-icarusutil v07\_08\_00(#icarusutil-v07_08_00)
+icarusutil v07\_08\_00
 --------------------------------------------------------------
 
 -   2018-10-28 - Usher, Tracy L - Preparing to tag v07\_08\_00

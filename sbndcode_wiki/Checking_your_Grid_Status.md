@@ -5,12 +5,12 @@ title: Checking your Grid Status
 
 
 
-Checking your Grid Status(#Checking-your-Grid-Status)
+Checking your Grid Status
 ======================================================================
 
 
 
-Fifemon: Grafana/Kibana(#Fifemon-GrafanaKibana)
+Fifemon: Grafana/Kibana
 ----------------------------------------------------------------
 
 -   [Fifemon](https://fifemon.fnal.gov/){.external} provides you with

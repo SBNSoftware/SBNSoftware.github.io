@@ -5,12 +5,12 @@ title: Tagging a release
 
 
 
-Tagging a release(#Tagging-a-release)
+Tagging a release
 ======================================================
 
 
 
-Summary(#Summary)
+Summary
 ----------------------------------
 
 -   Start release in `releases/` directory.
@@ -22,7 +22,7 @@ Summary(#Summary)
 
 
 
-Instructions(#Instructions)
+Instructions
 --------------------------------------------
 
 -   As you will be building sbndcode and sbndutil as part of the
@@ -92,7 +92,7 @@ Instructions(#Instructions)
 
 
 
-Details: start\_release.sh(#Details-start_releasesh)
+Details: start\_release.sh
 ---------------------------------------------------------------------
 
 Example file can be found [here](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbndcode_wiki/attachments/git_start_release.sh).

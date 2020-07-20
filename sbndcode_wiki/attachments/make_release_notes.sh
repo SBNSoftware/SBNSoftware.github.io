@@ -142,26 +142,26 @@ echo "| --- | --- | --- |" >> ${relnote}
 echo >> ${relnote}
 echo >> ${relnote}
 echo >> ${relnote}
-echo "sbndcode ${sbndcode_version} Release Notes(#sbndcode-${sbndcode_version}-Release-Notes)" >> ${relnote}
+echo "sbndcode ${sbndcode_version} Release Notes" >> ${relnote}
 echo "=======================================================================================" >> ${relnote}
 echo >> ${relnote}
 echo "-   **Table of contents**" >> ${relnote}
-echo "-   [sbndcode ${sbndcode_version} Release Notes](#sbndcode-${sbndcode_version}-Release-Notes)" >> ${relnote}
-echo "    -   [Purpose](#Purpose)" >> ${relnote}
-echo "    -   [New features](#New-features)" >> ${relnote}
-echo "    -   [Bug fixes](#Bug-fixes)" >> ${relnote}
-echo "    -   [Updated dependencies](#Updated-dependencies)" >> ${relnote}
-echo "-   [Change List](#Change-List)" >> ${relnote}
-echo "    -   [sbndcode v08\_51\_00](#sbndcode-${sbndcode_version})" >> ${relnote}
-echo "    -   [sbndutil v08\_51\_00](#sbndutil-${sbndcode_version})" >> ${relnote}
+echo "-   [sbndcode ${sbndcode_version} Release Notes]" >> ${relnote}
+echo "    -   [Purpose]" >> ${relnote}
+echo "    -   [New features]" >> ${relnote}
+echo "    -   [Bug fixes]" >> ${relnote}
+echo "    -   [Updated dependencies]" >> ${relnote}
+echo "-   [Change List]" >> ${relnote}
+echo "    -   [sbndcode v08\_51\_00]" >> ${relnote}
+echo "    -   [sbndutil v08\_51\_00]" >> ${relnote}
 echo >> ${relnote}
 echo "[List of sbndcode releases](List_of_SBND_code_releases.html)" >> ${relnote}
 echo "Download instructions for [sbndcode ${sbndcode_version}](http://scisoft.fnal.gov/scisoft/bundles/sbnd/${sbndcode_version}/sbndcode-${sbndcode_version}.html)" >> ${relnote}
 echo >> ${relnote}
-echo "Purpose(#Purpose)" >> ${relnote}
+echo "Purpose" >> ${relnote}
 echo "---------------------------------------------------" >> ${relnote}
 echo >> ${relnote}
-echo "New features(#New-features)" >> ${relnote}
+echo "New features" >> ${relnote}
 echo "---------------------------------------------------" >> ${relnote}
 echo >> ${relnote}
 echo "Bug fixes(Bug-fixes)" >> ${relnote}
@@ -181,7 +181,7 @@ git clone https://github.com/SBNSoftware/${pkg} || { echo "ERROR: failed to clon
 cd ${my_working_dir}/${pkg}
 git checkout ${sbndcode_version}
 relver=`grep '^[  ]*parent' ${my_working_dir}/${pkg}/ups/product_deps | tr "\t" " " | cut -f3 -d" "`
-echo "${pkg} ${relver}(#${pkg}-${relver})" >> ${relnote}
+echo "${pkg} ${relver}" >> ${relnote}
 echo "---------------------------------------------------" >> ${relnote}
 echo >> ${relnote}
 git log --pretty=format:"* %ad  %an : %s" --date=short ${previous_version_string}..${larsoft_version} >> ${relnote}

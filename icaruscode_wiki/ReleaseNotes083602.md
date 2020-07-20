@@ -9,19 +9,19 @@ title: ReleaseNotes083602
 
 
 
-icaruscode v08\_36\_02 Release Notes(#icaruscode-v08_36_02-Release-Notes)
+icaruscode v08\_36\_02 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_36\_02 Release
-    Notes](#icaruscode-v08_36_02-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_36\_02](#icaruscode-v08_36_02)
-    -   [icarusutil v08\_36\_02](#icarusutil-v08_36_02)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_36\_02]
+    -   [icarusutil v08\_36\_02]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,28 +30,28 @@ v08\_36\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_02/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Stay current with LArSoft - latest version of art
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,7 +59,7 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -67,7 +67,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_36\_02(#icaruscode-v08_36_02)
+icaruscode v08\_36\_02
 --------------------------------------------------------------
 
 -   2019-11-27 - Tracy Usher - Merge branch \'develop\'
@@ -83,7 +83,7 @@ icaruscode v08\_36\_02(#icaruscode-v08_36_02)
 
 
 
-icarusutil v08\_36\_02(#icarusutil-v08_36_02)
+icarusutil v08\_36\_02
 --------------------------------------------------------------
 
 -   2019-11-27 - Tracy Usher - Updating to LArSoft v08\_36\_02

@@ -5,7 +5,7 @@ title: Access to servers via SSH
 
 
 
-Access to servers via SSH(#Access-to-servers-via-SSH)
+Access to servers via SSH
 ======================================================================
 
 Fermilab servers are most often interactively accessed via Secure Shell
@@ -34,12 +34,12 @@ all of that (in bash shell) is:\
 
 
 
-Access as a different user(#Access-as-a-different-user)
+Access as a different user
 ------------------------------------------------------------------------
 
 You may need to log in a server acting in a different role. For example,
 you may want to write something in `/grid/fermiapp` on behalf of SBND;
-that can be done^[1](#fn1)^ only on `sbndgpvm01.fnal.gov`, and only by
+that can be done^[1]^ only on `sbndgpvm01.fnal.gov`, and only by
 the `sbnd` user.\
 There is no person holding the `sbnd` user name, but there are some real
 users who are allowed to impersonate it. If you are among them, this is

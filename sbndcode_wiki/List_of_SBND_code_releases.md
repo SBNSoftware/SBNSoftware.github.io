@@ -5,7 +5,7 @@ title: List of SBND code releases
 
 
 
-SBND code organization(#SBND-code-organization)
+SBND code organization
 ================================================================
 
 The SBND code repository (`sbndcode`) currently depends on `sbndutil`,`sbnd_data`, `larsoft`, and `cetbuildtools` (for building). In all releases with number greater than 3.8.2, the `lar1ncode`/`sbndcode` number matches the underlying `larsoft` version.\
@@ -13,7 +13,7 @@ The SBND code repository (`sbndcode`) currently depends on `sbndutil`,`sbnd_data
 
 See the (soon to be done) section on getting `sbndcode` offsite for more detailed information.
 
-List of `sbndcode` releases(#List-of-sbndcode-releases)
+List of `sbndcode` releases
 ------------------------------------------------------------------------
 
 **Release manager**: [Andrew Scarff](mailto:a.scarff@sheffield.ac.uk) (was [Thomas Brooks](mailto:tom.g.r.brooks@gmail.com))
@@ -209,7 +209,7 @@ These are the `sbndcode` releases tagged until now:
 
 
 
-### List of `lar1ndcode` releases(#List-of-lar1ndcode-releases)
+### List of `lar1ndcode` releases
 
 Versions older than 5.9.1 are available only in the old `lar1ndcode`
 name. Needless to say, if you are starting a new project, you want to

@@ -9,19 +9,19 @@ title: ReleaseNotes081200
 
 
 
-sbndcode v08\_12\_00 Release Notes(#sbndcode-v08_12_00-Release-Notes)
+sbndcode v08\_12\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_12\_00 Release
-    Notes](#sbndcode-v08_12_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_12\_00](#sbndcode-v08_12_00)
-    -   [sbndutil v08\_12\_00](#sbndutil-v08_12_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_12\_00]
+    -   [sbndutil v08\_12\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v08\_12\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_12_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Added dirt muons to nu filter fcl file
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_12\_00(#sbndcode-v08_12_00)
+sbndcode v08\_12\_00
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_12\_00\'
@@ -72,7 +72,7 @@ sbndcode v08\_12\_00(#sbndcode-v08_12_00)
 
 
 
-sbndutil v08\_12\_00(#sbndutil-v08_12_00)
+sbndutil v08\_12\_00
 ----------------------------------------------------------
 
 -   2019-03-15 Thomas Brooks : Merge branch \'release/v08\_12\_00\'

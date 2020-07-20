@@ -5,20 +5,20 @@ title: How to setup your directory and launch your first job
 
 
 
-How to setup your directory and launch your first job(#How-to-setup-your-directory-and-launch-your-first-job)
+How to setup your directory and launch your first job
 ==============================================================================================================================
 
 -   **Table of contents**
 -   [How to setup your directory and launch your first
-    job](#How-to-setup-your-directory-and-launch-your-first-job)
+    job]
     -   [Set up the general SBND
-        environment](#Set-up-the-general-SBND-environment)
+        environment]
     -   [Set up for running existing code (production
-        like)](#Set-up-for-running-existing-code-production-like)
+        like)]
     -   [Set up for changing or adding code (development
-        like)](#Set-up-for-changing-or-adding-code-development-like)
-        -   [Development setup](#Development-setup)
-        -   [Run-only setup](#Run-only-setup)
+        like)]
+        -   [Development setup]
+        -   [Run-only setup]
 
 In order to run you first LArSoft SBND job, you will need to execute the
 following steps. Some explanation is included, but is not yet at the
@@ -27,17 +27,17 @@ level to be a definitive guide.
 You have here two main options:
 
 1.  you want just to run existing software: this is a [production
-    setup](#Set-up-for-running-existing-code-production-like)
+    setup]
 2.  you want to change existing code or add your own, and run it: this
     is a [development
-    setup](#Set-up-for-changing-or-adding-code-development-like)
+    setup]
 
 Both start with a [preliminary set
-up](#Set-up-the-general-SBND-environment), and then diverge.
+up], and then diverge.
 
 
 
-Set up the general SBND environment(#Set-up-the-general-SBND-environment) 
+Set up the general SBND environment 
 ------------------------------------------------------------------------------------------
 
 The most important task this step performs is to tell UPS where to find
@@ -61,11 +61,11 @@ therefore a good habit(TM).
 
 
 
-Set up for running existing code (*production* like)(#Set-up-for-running-existing-code-production-like) 
+Set up for running existing code (*production* like) 
 ------------------------------------------------------------------------------------------------------------------------
 
 After the [general setup
-above](#Set-up-the-general-SBND-environment), you just need
+above], you just need
 to set up the version of SBND code you need.
 
 There are different versions of LArSoft that you can set up against, and
@@ -108,18 +108,18 @@ which compiler was used; we usually have no choice
 
 
 
-Set up for changing or adding code (*development* like)(#Set-up-for-changing-or-adding-code-development-like) 
+Set up for changing or adding code (*development* like) 
 ------------------------------------------------------------------------------------------------------------------------------
 
 When you need to change existing code or writing new one, you need to
 have a development area and an environment (that is, an interactive
 shell) with a [development
-environment](#Development-setup).\
+environment].\
 While the development environment allows running of code on almost all
 the cases, there are some corner cases where that might fail. For that
 reason, or to keep the development environment clean from additional
 setup required when running, setting up a [run-only
-environment](#Run-only-setup) in a separate interactive
+environment] in a separate interactive
 shell is a good idea (as it is to learn to [use a terminal
 multiplexer](Interactive_GPVM_sessions_with_terminal_multiplexers.html),
 especially when developing on a remote server).
@@ -131,10 +131,10 @@ If you\'re not there, ask someone under *Manager* to add you.
 
 
 
-### Development setup(#Development-setup) 
+### Development setup 
 
 First you need to go through the [general setup
-above](#Set-up-the-general-SBND-environment).\
+above].\
 Then, the first three steps create your working area for the first time.
 To reuse that area later on (that is, after you log out and in again),
 only the *per-login setup* part is needed.\
@@ -238,7 +238,7 @@ to be replaced by SBND specific ones).
 
 
 
-### Run-only setup(#Run-only-setup) 
+### Run-only setup 
 
 While the development environment set up above is good for almost
 everything, there are quirks that may be hard to understand.\
@@ -246,7 +246,7 @@ A setup exclusively for running *with the code you are developing* is as
 follows:
 
 1.  setup the general SBND environment [in whatever way you did
-    before](#Set-up-the-general-SBND-environment):\
+    before]:\
 
         source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
 

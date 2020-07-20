@@ -5,7 +5,7 @@ title: VPN
 
 
 
-Virtual Private Network (VPN) to Fermilab(#Virtual-Private-Network-VPN-to-Fermilab)
+Virtual Private Network (VPN) to Fermilab
 ====================================================================================================
 
 **The information below needs to be updated as now Fermilab has moved to
@@ -29,19 +29,19 @@ update this wiki page.
 
 -   **Table of contents**
 -   [Virtual Private Network (VPN) to
-    Fermilab](#Virtual-Private-Network-VPN-to-Fermilab)
-    -   [Cisco client installation](#Cisco-client-installation)
-        -   [Additional setup for Linux](#Additional-setup-for-Linux)
-    -   [Free client installation](#Free-client-installation)
-        -   [OpenConnect for OSX](#OpenConnect-for-OSX)
-        -   [OpenConnect for Linux](#OpenConnect-for-Linux)
+    Fermilab]
+    -   [Cisco client installation]
+        -   [Additional setup for Linux]
+    -   [Free client installation]
+        -   [OpenConnect for OSX]
+        -   [OpenConnect for Linux]
         -   [OpenConnect for iOS (Apple
-            mobile)](#OpenConnect-for-iOS-Apple-mobile)
-        -   [OpenConnect for Android](#OpenConnect-for-Android)
-    -   [Log in the VPN](#Log-in-the-VPN)
-        -   [Cisco AnyConnect](#Cisco-AnyConnect)
+            mobile)]
+        -   [OpenConnect for Android]
+    -   [Log in the VPN]
+        -   [Cisco AnyConnect]
         -   [OpenConnect (command line
-            interface)](#OpenConnect-command-line-interface)
+            interface)]
 
 Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but
@@ -63,7 +63,7 @@ alternative.
 
 
 
-Cisco client installation(#Cisco-client-installation)
+Cisco client installation
 ----------------------------------------------------------------------
 
 The [official Cisco AnyConnect
@@ -80,7 +80,7 @@ information in the table below.
 
 
 
-### Additional setup for Linux(#Additional-setup-for-Linux)
+### Additional setup for Linux
 
 The web site will just download a \"script\" `vpnsetup.sh`. That is not
 just the script (it contains the binary data of the package itself).\
@@ -99,7 +99,7 @@ try to the free client.
 
 
 
-Free client installation(#Free-client-installation)
+Free client installation
 --------------------------------------------------------------------
 
 The
@@ -109,7 +109,7 @@ available for Linux, Windows, OSX, Android and many others.
 
 
 
-### OpenConnect for OSX(#OpenConnect-for-OSX)
+### OpenConnect for OSX
 
 Under OSX, OpenConnect is also via homebrew:
 
@@ -117,7 +117,7 @@ Under OSX, OpenConnect is also via homebrew:
 
 
 
-### OpenConnect for Linux(#OpenConnect-for-Linux)
+### OpenConnect for Linux
 
 To do (need it? please [ask](mailto:petrillo@fnal.gov)).
 
@@ -125,11 +125,11 @@ Chances are that your distribution has it prepackaged for you.
 
 
 
-### OpenConnect for iOS (Apple mobile)(#OpenConnect-for-iOS-Apple-mobile)
+### OpenConnect for iOS (Apple mobile)
 
 The idea is that iTune offers an [official
 client](https://itunes.apple.com/us/app/cisco-anyconnect/id1135064690?mt=8){.external}
-based on AnyConnect 4.6^[1](#fn1)^.\
+based on AnyConnect 4.6^[1]^.\
 A [video from Northern Arizona
 University](https://mediaspace.nau.edu/media/How+to+Connect+to+Cisco+AnyConnect+VPN+on+an+iOS+Device/0_wmaarq43){.external}
 may help through the next steps, using the information above.
@@ -144,14 +144,14 @@ it is possible that the user name is required in the full format,
 
 
 
-### OpenConnect for Android(#OpenConnect-for-Android)
+### OpenConnect for Android
 
 OpenConnect binary distribution is available via
 [F-Droid](https://f-droid.org/repository/browse){.external} .
 
 
 
-Log in the VPN(#Log-in-the-VPN)
+Log in the VPN
 ------------------------------------------------
 
 To start using the VPN, a login must be performed. The VPN \"split\"
@@ -167,7 +167,7 @@ The credentials for log in are:
 
 
 
-### Cisco AnyConnect(#Cisco-AnyConnect)
+### Cisco AnyConnect
 
 Under OSX, a graphic user interface called \"Cisco AnyConnect Secure
 Mobility Client\" will allow you to enter the information above.\
@@ -176,7 +176,7 @@ The user name might be required in its full glory:
 
 
 
-### OpenConnect (command line interface)(#OpenConnect-command-line-interface)
+### OpenConnect (command line interface)
 
 The simplest command to start is:
 

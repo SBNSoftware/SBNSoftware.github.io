@@ -9,19 +9,19 @@ title: ReleaseNotes082800
 
 
 
-sbndcode v08\_28\_00 Release Notes(#sbndcode-v08_28_00-Release-Notes)
+sbndcode v08\_28\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_28\_00 Release
-    Notes](#sbndcode-v08_28_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_28\_00](#sbndcode-v08_28_00)
-    -   [sbndutil v08\_28\_00](#sbndutil-v08_28_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_28\_00]
+    -   [sbndutil v08\_28\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v08\_28\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_28_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Genie v3 now default
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_28\_00(#sbndcode-v08_28_00)
+sbndcode v08\_28\_00
 ----------------------------------------------------------
 
 -   2019-08-10 Thomas Brooks : Merge branch \'release/v08\_28\_00\'
@@ -75,7 +75,7 @@ sbndcode v08\_28\_00(#sbndcode-v08_28_00)
 
 
 
-sbndutil v08\_28\_00(#sbndutil-v08_28_00)
+sbndutil v08\_28\_00
 ----------------------------------------------------------
 
 -   2019-08-10 Thomas Brooks : Merge branch \'release/v08\_28\_00\'

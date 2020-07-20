@@ -9,21 +9,21 @@ title: ReleaseNotes081302
 
 
 
-icaruscode v08\_13\_02 Release Notes(#icaruscode-v08_13_02-Release-Notes)
+icaruscode v08\_13\_02 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_13\_02 Release
-    Notes](#icaruscode-v08_13_02-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
 -   [Change List (generated with the command \"git log \--date=short
     \--pretty=format:\"\* %ad - %an - %s\"
-    v08\_13\_02\")](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_13_02)
-    -   [icaruscode v08\_13\_02](#icaruscode-v08_13_02)
-    -   [icarusutil v08\_13\_02](#icarusutil-v08_13_02)
+    v08\_13\_02\")]
+    -   [icaruscode v08\_13\_02]
+    -   [icarusutil v08\_13\_02]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -32,14 +32,14 @@ v08\_13\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_02/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   The release for SBN workshop
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Includes extended photon library
@@ -47,14 +47,14 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -62,12 +62,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_13\_02\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_13_02)
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_13\_02\")
 ================================================================================================================================================================================================================================
 
 
 
-icaruscode v08\_13\_02(#icaruscode-v08_13_02)
+icaruscode v08\_13\_02
 --------------------------------------------------------------
 
 -   2019-03-25 - Usher, Tracy L - Merge branch \'develop\'
@@ -117,7 +117,7 @@ icaruscode v08\_13\_02(#icaruscode-v08_13_02)
 
 
 
-icarusutil v08\_13\_02(#icarusutil-v08_13_02)
+icarusutil v08\_13\_02
 --------------------------------------------------------------
 
 -   2019-03-22 - Usher, Tracy L - Preparing to tag v08\_13\_02

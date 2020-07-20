@@ -9,19 +9,19 @@ title: ReleaseNotes083200
 
 
 
-sbndcode v08\_32\_00 Release Notes(#sbndcode-v08_32_00-Release-Notes)
+sbndcode v08\_32\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_32\_00 Release
-    Notes](#sbndcode-v08_32_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_32\_00](#sbndcode-v08_32_00)
-    -   [sbndutil v08\_32\_00](#sbndutil-v08_32_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_32\_00]
+    -   [sbndutil v08\_32\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v08\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_32_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Update CRT filter to add condition that particle is reconstructed in
@@ -45,12 +45,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_32\_00(#sbndcode-v08_32_00)
+sbndcode v08\_32\_00
 ----------------------------------------------------------
 
 -   2019-10-04 Thomas Brooks : Merge branch \'release/v08\_32\_00\'
@@ -75,7 +75,7 @@ sbndcode v08\_32\_00(#sbndcode-v08_32_00)
 
 
 
-sbndutil v08\_32\_00(#sbndutil-v08_32_00)
+sbndutil v08\_32\_00
 ----------------------------------------------------------
 
 -   2019-10-04 Thomas Brooks : Merge branch \'release/v08\_32\_00\'

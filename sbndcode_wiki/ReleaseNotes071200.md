@@ -9,19 +9,19 @@ title: ReleaseNotes071200
 
 
 
-sbndcode v07\_12\_00 Release Notes(#sbndcode-v07_12_00-Release-Notes)
+sbndcode v07\_12\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v07\_12\_00 Release
-    Notes](#sbndcode-v07_12_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v07\_12\_00](#sbndcode-v07_12_00)
-    -   [sbndutil v07\_12\_00](#sbndutil-v07_12_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v07\_12\_00]
+    -   [sbndutil v07\_12\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v07\_12\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_12_00/sbndcode-v07
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   CRT-TPC track matching tools
@@ -47,12 +47,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -61,12 +61,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v07\_12\_00(#sbndcode-v07_12_00)
+sbndcode v07\_12\_00
 ----------------------------------------------------------
 
 -   2018-11-29 Thomas Brooks : Merge branch \'release/v07\_12\_00\'
@@ -93,7 +93,7 @@ sbndcode v07\_12\_00(#sbndcode-v07_12_00)
 
 
 
-sbndutil v07\_12\_00(#sbndutil-v07_12_00)
+sbndutil v07\_12\_00
 ----------------------------------------------------------
 
 -   2018-11-29 Thomas Brooks : Merge branch \'release/v07\_12\_00\'

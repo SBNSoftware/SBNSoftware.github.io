@@ -5,7 +5,7 @@ title: Cosmic Ray Tagging System
 
 
 
-Cosmic Ray Tagging System ![schematic showing CRT surrounding the cryostat](/redmine/attachments/download/53137/icarus_crt.png "schematic showing CRT surrounding the cryostat")(#Cosmic-Ray-Tagging-System)
+Cosmic Ray Tagging System ![schematic showing CRT surrounding the cryostat](/redmine/attachments/download/53137/icarus_crt.png "schematic showing CRT surrounding the cryostat")
 =============================================================================================================================================================================================================================
 
 Welcome to the ICARUS Cosmic Ray Tagging System (CRT)
@@ -34,7 +34,7 @@ modules living in CRT.
 
 
 
-Detector Simulation(#Detector-Simulation)
+Detector Simulation
 ----------------------------------------------------------
 
 All code related to the CRT detector simulation is contained in
@@ -45,7 +45,7 @@ CRTDetSim\_module.cc
 
 
 
-Reconstruction(#Reconstruction)
+Reconstruction
 ------------------------------------------------
 
 -   CRT hits
@@ -53,7 +53,7 @@ Reconstruction(#Reconstruction)
 
 
 
-Work in progress(#Work-in-progress)
+Work in progress
 ----------------------------------------------------
 
 -   Update geometry (e.g. sloped CERN modules -\> rim (vertical))

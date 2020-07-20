@@ -9,18 +9,18 @@ title: ReleaseNotes06700101
 
 
 
-sbndcode v06\_70\_01\_01 Release Notes(#sbndcode-v06_70_01_01-Release-Notes)
+sbndcode v06\_70\_01\_01 Release Notes
 =============================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_70\_01\_01 Release
-    Notes](#sbndcode-v06_70_01_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_70\_01\_01](#sbndcode-v06_70_01_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_70\_01\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -29,14 +29,14 @@ v06\_70\_01\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01/sbndc
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for SBN workshop 03/18
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   BNB-like particle gun fcl files
@@ -47,12 +47,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -60,12 +60,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_70\_01\_01(#sbndcode-v06_70_01_01)
+sbndcode v06\_70\_01\_01
 -----------------------------------------------------------------
 
 -   2018-03-14 Thomas Brooks : Freeze for SBN workshop 03/2018

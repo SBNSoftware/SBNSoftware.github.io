@@ -5,7 +5,7 @@ title: Setting up access with CILogon certificate
 
 
 
-Setting up access with CILogon certificate(#Setting-up-access-with-CILogon-certificate)
+Setting up access with CILogon certificate
 ========================================================================================================
 
 Take a look at [SBND

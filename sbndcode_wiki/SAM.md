@@ -5,20 +5,20 @@ title: SAM
 
 
 
-SAM for SBND(#SAM-for-SBND)
+SAM for SBND
 ============================================
 
 -   **Table of contents**
--   [SAM for SBND](#SAM-for-SBND)
-    -   [SAM queries](#SAM-queries)
-    -   [Administration](#Administration)
+-   [SAM for SBND]
+    -   [SAM queries]
+    -   [Administration]
 
 This page collects information about the use, setting and administration
 of the SAM service for SBND.
 
 
 
-SAM queries(#SAM-queries)
+SAM queries
 ------------------------------------------
 
 The SAM client is called `samweb`, distributed as UPS product, available
@@ -48,7 +48,7 @@ be no need to specify `--experiment=sbnd`. For example:\
 
 
 
-Administration(#Administration)
+Administration
 ------------------------------------------------
 
 An interface for listing users can be accessed at:

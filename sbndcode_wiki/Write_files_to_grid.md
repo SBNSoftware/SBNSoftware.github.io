@@ -5,14 +5,14 @@ title: Write files to grid
 
 
 
-Write files to `/grid/fermiapp/products/sbnd`(#Write-files-to-gridfermiappproductssbnd)
+Write files to `/grid/fermiapp/products/sbnd`
 ========================================================================================================
 
 -   **Table of contents**
 -   [Write files to
-    /grid/fermiapp/products/sbnd](#Write-files-to-gridfermiappproductssbnd)
-    -   [Access privileges](#Access-privileges)
-    -   [Deploying a UPS product](#Deploying-a-UPS-product)
+    /grid/fermiapp/products/sbnd]
+    -   [Access privileges]
+    -   [Deploying a UPS product]
 
 The procedure to deploy UPS packages into `/grid/fermiapp/products/sbnd`
 is very simple:
@@ -25,7 +25,7 @@ is very simple:
     asks for a password and creates a new one)
 
 2.  log in `sbndgpvm01.fnal.gov` as `sbnd` user (you need to [be
-    authorised](#Access-privileges)):
+    authorised]:
 
         ssh sbnd@sbndgpvm01.fnal.gov
 
@@ -44,7 +44,7 @@ is very simple:
 
 
 
-Access privileges(#Access-privileges)
+Access privileges
 ------------------------------------------------------
 
 To earn the ability to log in as `sbnd` in a SBND GPVM machine, you need
@@ -54,7 +54,7 @@ is required to start that process.
 
 
 
-Deploying a UPS product(#Deploying-a-UPS-product)
+Deploying a UPS product
 ------------------------------------------------------------------
 
 > **NOTE**: these instructions need to be properly tested.

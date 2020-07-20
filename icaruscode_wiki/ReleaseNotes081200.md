@@ -9,21 +9,21 @@ title: ReleaseNotes081200
 
 
 
-icaruscode v08\_12\_00 Release Notes(#icaruscode-v08_12_00-Release-Notes)
+icaruscode v08\_12\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_12\_00 Release
-    Notes](#icaruscode-v08_12_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
 -   [Change List (generated with the command \"git log \--date=short
     \--pretty=format:\"\* %ad - %an - %s\"
-    v08\_12\_00\")](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_12_00)
-    -   [icaruscode v08\_11\_00](#icaruscode-v08_11_00)
-    -   [icarusutil v08\_12\_00](#icarusutil-v08_12_00)
+    v08\_12\_00\")]
+    -   [icaruscode v08\_11\_00]
+    -   [icarusutil v08\_12\_00]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -32,7 +32,7 @@ v08\_12\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_12_00/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   First attempt at release for SBN workshop
@@ -43,19 +43,19 @@ Purpose(#Purpose)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_12\_00\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_12_00)
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_12\_00\")
 ================================================================================================================================================================================================================================
 
 
 
-icaruscode v08\_11\_00(#icaruscode-v08_11_00)
+icaruscode v08\_11\_00
 --------------------------------------------------------------
 
 -   2019-03-09 - Usher, Tracy L - Give pointers initial (null)
@@ -115,7 +115,7 @@ icaruscode v08\_11\_00(#icaruscode-v08_11_00)
 
 
 
-icarusutil v08\_12\_00(#icarusutil-v08_12_00)
+icarusutil v08\_12\_00
 --------------------------------------------------------------
 
 -   2019-03-08 - Usher, Tracy L - larsoft v108\_12\_00

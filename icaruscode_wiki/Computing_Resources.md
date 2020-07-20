@@ -6,28 +6,28 @@ title: Computing Resources
 Computing Resources
 ====================
 
--   [SCD liaison](#scd-liaison)
--   [Computing Access](#computing-access)
-    -   [SSH access to remote servers](#ssh-access-to-remote-servers)
--   [Where to work: interactive nodes ("GPVM")](#where-to-work-interactive-nodes-gpvm)
--   [Opening a ticket in Fermilab Service Desk](#opening-a-ticket-in-fermilab-service-desk)
--   [Accessing resources (DocDB, VOMS, ...) via certificates](#accessing-resources-docdb-voms--via-certificates)
--   [Accessing resources via Virtual Private Network](#accessing-resources-via-virtual-private-network)
--   [Submitting jobs: Virtual Organisation](#submitting-jobs-virtual-organisation)
--   [Submitting jobs: grid resources](#submitting-jobs-grid-resources)
--   [Software distribution](#software-distribution)
-        -   [CVMFS](#cvmfs)
--   [Storing data](#storing-data)
-    -   [Local storage: BlueArc disks](#local-storage-bluearc-disks)
-    -   [World-visible storage: dCache](#world-visible-storage-dcache)
-    -   [Tape storage](#tape-storage)
-    -   [File database (SAM)](#file-database-sam)
--   [Web server pages](#web-server-pages)
-    -   [SBN online web gate](#sbn-online-web-gate)
-    -   [ICARUS data web directory](#icarus-data-web-directory)
-    -   [Communication tools](#communication-tools)
-        -   [Mailing lists](#mailing-lists)
--   [Other obscure services and resources](#other-obscure-services-and-resources)
+-   [SCD liaison]
+-   [Computing Access]
+    -   [SSH access to remote servers]
+-   [Where to work: interactive nodes ("GPVM")]
+-   [Opening a ticket in Fermilab Service Desk]
+-   [Accessing resources (DocDB, VOMS, ...) via certificates]
+-   [Accessing resources via Virtual Private Network]
+-   [Submitting jobs: Virtual Organisation]
+-   [Submitting jobs: grid resources]
+-   [Software distribution]
+        -   [CVMFS]
+-   [Storing data]
+    -   [Local storage: BlueArc disks]
+    -   [World-visible storage: dCache]
+    -   [Tape storage]
+    -   [File database (SAM)]
+-   [Web server pages]
+    -   [SBN online web gate]
+    -   [ICARUS data web directory]
+    -   [Communication tools]
+        -   [Mailing lists]
+-   [Other obscure services and resources]
 
 
 ICARUS has a number of computing resources available, many of which are
@@ -81,7 +81,7 @@ Once your computer is SSH-ready and kerberized, you should be able to log on by 
 
 (where `${USER}` should be replaced by your Fermilab user name).
 
-If this does not work, please submit a [service desk ticket](#opening-a-ticket-in-fermilab-service-desk)
+If this does not work, please submit a [service desk ticket]
 to request a ICARUS project account (note that someone has to authorise
 this so it will probably fail):
 
@@ -185,7 +185,7 @@ and run analyses.
 But they see all the resources that we have available: you can read data
 from ICARUS disks and tapes, and you can submit ICARUS jobs to the
 grid.
-The access is via SSH with FNAL.GOV [Kerberos credentials](#ssh_access_to_remote_servers).
+The access is via SSH with FNAL.GOV [Kerberos credentials].
 The nodes are called: `icarusgpvm0X.fnal.gov` and `icarusbuild0X.fnal.gov`
 (see [ICARUS GPVM page](ICARUS_servers.md) for more details).
 

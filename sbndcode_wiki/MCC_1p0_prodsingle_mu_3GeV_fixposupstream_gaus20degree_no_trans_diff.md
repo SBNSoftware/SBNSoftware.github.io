@@ -6,12 +6,12 @@ title: MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree no trans
 
 
 
-MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree no trans diff(#MCC-1p0-prodsingle-mu-3GeV-fixposupstream-gaus20degree-no-trans-diff)
+MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree no trans diff
 ============================================================================================================================================================
 
 
 
-General information(#General-information) 
+General information 
 ----------------------------------------------------------
 
 -   \*Number of events: \*
@@ -21,15 +21,15 @@ General information(#General-information)
 
 
 
-Stage information(#Stage-information) 
+Stage information 
 ------------------------------------------------------
 
 
 
-### gen(#gen) 
+### gen 
 
-[View details\...](#){#collapse-ebe346a8-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-ebe346a8-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   \*fcl file: \*
@@ -37,10 +37,10 @@ Stage information(#Stage-information)
 
 
 
-### g4(#g4) 
+### g4 
 
-[View details\...](#){#collapse-c1ce62b7-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-c1ce62b7-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_g4\_sbnd.fcl**
@@ -48,10 +48,10 @@ Stage information(#Stage-information)
 
 
 
-### detsim(#detsim) 
+### detsim 
 
-[View details\...](#){#collapse-6c10f82f-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-6c10f82f-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_detsim\_sbnd.fcl**
@@ -59,10 +59,10 @@ Stage information(#Stage-information)
 
 
 
-### reco(#reco) 
+### reco 
 
-[View details\...](#){#collapse-51874ab9-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-51874ab9-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_reco\_sbnd\_basic.fcl**
@@ -70,10 +70,10 @@ Stage information(#Stage-information)
 
 
 
-### anatree(#anatree) 
+### anatree 
 
-[View details\...](#){#collapse-33f4560a-show .collapsible
-.collapsed}[View details\...](#)
+[View details\...]{#collapse-33f4560a-show .collapsible
+.collapsed}[View details\...]
 
 ::: 
 -   **fcl file: standard\_anatree\_sbnd.fcl**

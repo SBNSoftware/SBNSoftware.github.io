@@ -5,7 +5,7 @@ title: Output
 
 
 
-Output(#Output)
+Output
 ================================
 
 All output for all stages of a given Monte Carlo production goes to the

@@ -5,21 +5,21 @@ title: Job configurations
 
 
 
-Configuration of SBND jobs, services and algorithms(#Configuration-of-SBND-jobs-services-and-algorithms)
+Configuration of SBND jobs, services and algorithms
 =========================================================================================================================
 
 -   **Table of contents**
 -   [Configuration of SBND jobs, services and
-    algorithms](#Configuration-of-SBND-jobs-services-and-algorithms)
-    -   [Organization](#Organization)
-    -   [Job configurations](#Job-configurations)
-    -   [Service configurations](#Service-configurations)
+    algorithms]
+    -   [Organization]
+    -   [Job configurations]
+    -   [Service configurations]
     -   [Algorithm/module
-        configurations](#Algorithmmodule-configurations)
+        configurations]
 
 
 
-Organization(#Organization) 
+Organization 
 --------------------------------------------
 
 The guidelines for the location of the configuration within a repository
@@ -58,7 +58,7 @@ Summary:
 
 
 
-Job configurations(#Job-configurations) 
+Job configurations 
 --------------------------------------------------------
 
 Job configurations are being updated on demand: many of the
@@ -86,7 +86,7 @@ configuration files.
 
 
 
-Service configurations(#Service-configurations) 
+Service configurations 
 ----------------------------------------------------------------
 
 Some preset bundles are provided either as reference of for direct
@@ -115,5 +115,5 @@ but also you are loading the minimal set of services you need.
 
 
 
-Algorithm/module configurations(#Algorithmmodule-configurations) 
+Algorithm/module configurations 
 ---------------------------------------------------------------------------------

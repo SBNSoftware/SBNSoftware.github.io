@@ -3,21 +3,21 @@ lang: en
 title: VPN
 ---
 
-Virtual Private Network (VPN) to Fermilab(#Virtual-Private-Network-VPN-to-Fermilab)
+Virtual Private Network (VPN) to Fermilab
 ====================================================================================================
 
 **Table of contents** (links do not work yet... need to find out how to fix them...)
-*   [Obtaining the credentials](#RSAtoken)
-*   [Cisco client installation](#Cisco-client-installation)
-    -   [Additional setup for Linux](#Additional-setup-for-Linux)
-*   [Free client installation](#Free-client-installation)
-    -   [OpenConnect for OSX](#OpenConnect-for-OSX)
-    -   [OpenConnect for Linux](#OpenConnect-for-Linux)
-    -   [OpenConnect for iOS (Apple mobile)](#OpenConnect-for-iOS-Apple-mobile)
-    -   [OpenConnect for Android](#OpenConnect-for-Android)
-*   [Log in the VPN](#Log-in-the-VPN)
-    -   [Cisco AnyConnect](#Cisco-AnyConnect)
-    -   [OpenConnect (command line interface)](#OpenConnect-command-line-interface)
+*   [Obtaining the credentials]
+*   [Cisco client installation]
+    -   [Additional setup for Linux]
+*   [Free client installation]
+    -   [OpenConnect for OSX]
+    -   [OpenConnect for Linux]
+    -   [OpenConnect for iOS (Apple mobile)]
+    -   [OpenConnect for Android]
+*   [Log in the VPN]
+    -   [Cisco AnyConnect]
+    -   [OpenConnect (command line interface)]
 
 Some resources can be accessed only from within Fermilab network. For
 some, the access outside Fermilab network is still allowed but crippled.
@@ -55,7 +55,7 @@ Currently one way to get get started is:
 A token will be requested on each connection.
 
 
-Cisco client installation(#Cisco-client-installation)
+Cisco client installation
 ----------------------------------------------------------------------
 
 The [official Cisco AnyConnect client](http://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/tsd-products-support-series-home.html)
@@ -70,7 +70,7 @@ Once installed, you can start the client interface and fill in the
 information in the table below.
 
 
-### Additional setup for Linux(#Additional-setup-for-Linux)
+### Additional setup for Linux
 
 The web site will just download a "script" `vpnsetup.sh`. That is not
 just the script (it contains the binary data of the package itself).
@@ -92,7 +92,7 @@ try to the free client.
 
 
 
-Free client installation(#Free-client-installation)
+Free client installation
 --------------------------------------------------------------------
 
 The [free](https://www.gnu.org/licenses/oldsy-licenses/lgpl-2.1.html)
@@ -100,7 +100,7 @@ client [OpenConnect](http://www.infradead.org/openconnect) is
 available for Linux, Windows, OSX, Android and many others.
 
 
-### OpenConnect for OSX(#OpenConnect-for-OSX)
+### OpenConnect for OSX
 
 Under OSX, OpenConnect is also via homebrew:
     
@@ -108,7 +108,7 @@ Under OSX, OpenConnect is also via homebrew:
     
 
 
-### OpenConnect for Linux(#OpenConnect-for-Linux)
+### OpenConnect for Linux
 
 To do (need it? please [ask](mailto:petrillo@slac.stanford.edu)).
 
@@ -119,7 +119,7 @@ Chances are that your distribution has it prepackaged for you:
 
 
 
-### OpenConnect for iOS (Apple mobile)(#OpenConnect-for-iOS-Apple-mobile)
+### OpenConnect for iOS (Apple mobile)
 
 The idea is that iTune offers an
 [official client](https://itunes.apple.com/us/app/cisco-anyconnect/id1135064690?mt=8)
@@ -138,14 +138,14 @@ it is possible that the user name is required in the full format,
 
 
 
-### OpenConnect for Android(#OpenConnect-for-Android)
+### OpenConnect for Android
 
 OpenConnect binary distribution is available via
 [F-Droid](https://f-droid.org/repository/browse).
 
 
 
-Log in the VPN(#Log-in-the-VPN)
+Log in the VPN
 ------------------------------------------------
 
 To start using the VPN, a login must be performed.
@@ -169,7 +169,7 @@ In the latter case the code is made of the 4 digits of your secret
 (that is always the same and you chose) and the 6 digits generated every time.
 
 
-### Cisco AnyConnect(#Cisco-AnyConnect)
+### Cisco AnyConnect
 
 Under OSX and Linux, a graphic user interface called
 "Cisco AnyConnect Secure Mobility Client" will allow you to enter the information above.
@@ -189,7 +189,7 @@ On a successful connection, a dialog box will appear prompting the user to accep
 the conditions of use, and after accepting it the VPN is active.
 
 
-### OpenConnect (command line interface)(#OpenConnect-command-line-interface)
+### OpenConnect (command line interface)
 
 The simplest command to start is:
 

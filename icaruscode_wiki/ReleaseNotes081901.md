@@ -9,21 +9,21 @@ title: ReleaseNotes081901
 
 
 
-icaruscode v08\_19\_01 Release Notes(#icaruscode-v08_19_01-Release-Notes)
+icaruscode v08\_19\_01 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_19\_01 Release
-    Notes](#icaruscode-v08_19_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
 -   [Change List (generated with the command \"git log \--date=short
     \--pretty=format:\"\* %ad - %an - %s\"
-    v08\_19\_01\")](#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_19_01)
-    -   [icaruscode v08\_19\_01](#icaruscode-v08_19_01)
-    -   [icarusutil v08\_19\_01](#icarusutil-v08_19_01)
+    v08\_19\_01\")]
+    -   [icaruscode v08\_19\_01]
+    -   [icarusutil v08\_19\_01]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -32,28 +32,28 @@ v08\_19\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_19_01/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   No major new features
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -61,12 +61,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_19\_01\")(#Change-List-generated-with-the-command-git-log-dateshort-prettyformat-ad-an-s-v08_19_01)
+Change List (generated with the command \"git log \--date=short \--pretty=format:\"\* %ad - %an - %s\" v08\_19\_01\")
 ================================================================================================================================================================================================================================
 
 
 
-icaruscode v08\_19\_01(#icaruscode-v08_19_01)
+icaruscode v08\_19\_01
 --------------------------------------------------------------
 
 -   2019-05-13 - Usher, Tracy L - Merge branch \'develop\'
@@ -161,7 +161,7 @@ icaruscode v08\_19\_01(#icaruscode-v08_19_01)
 
 
 
-icarusutil v08\_19\_01(#icarusutil-v08_19_01)
+icarusutil v08\_19\_01
 --------------------------------------------------------------
 
 -   2019-05-13 - Usher, Tracy L - Chasing LArSoft v08\_19\_01

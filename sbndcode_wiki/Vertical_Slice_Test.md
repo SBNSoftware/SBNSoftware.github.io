@@ -5,16 +5,16 @@ title: Vertical Slice Test
 
 
 
-Vertical Slice Test(#Vertical-Slice-Test)
+Vertical Slice Test
 ==========================================================
 
 -   **Table of contents**
--   [Vertical Slice Test](#Vertical-Slice-Test)
-    -   [Running VST code on GPVMs](#Running-VST-code-on-GPVMs)
+-   [Vertical Slice Test]
+    -   [Running VST code on GPVMs]
 
 Wiki page for the SBND vertical slice test
 
 
 
-[Running VST code on GPVMs](Running_VST_code_on_GPVMs.html)(#Running-VST-code-on-GPVMs) 
+[Running VST code on GPVMs](Running_VST_code_on_GPVMs.html) 
 --------------------------------------------------------------------------------------------------------------------

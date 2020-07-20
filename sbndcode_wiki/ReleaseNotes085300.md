@@ -9,26 +9,26 @@ title: ReleaseNotes085300
 
 
 
-sbndcode v08_53_00 Release Notes(#sbndcode-v08_53_00-Release-Notes)
+sbndcode v08_53_00 Release Notes
 =======================================================================================
 
 -   **Table of contents**
--   [sbndcode v08_53_00 Release Notes](#sbndcode-v08_53_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_51\_00](#sbndcode-v08_53_00)
-    -   [sbndutil v08\_51\_00](#sbndutil-v08_53_00)
+-   [sbndcode v08_53_00 Release Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_51\_00]
+    -   [sbndutil v08\_51\_00]
 
 [List of sbndcode releases](List_of_SBND_code_releases.html)
 Download instructions for [sbndcode v08_53_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_53_00/sbndcode-v08_53_00.html)
 
-Purpose(#Purpose)
+Purpose
 ---------------------------------------------------
 
-New features(#New-features)
+New features
 ---------------------------------------------------
 
 Bug fixes(Bug-fixes)
@@ -40,7 +40,7 @@ Updated dependencies
 Change List
 ==========================================
 
-sbndcode v08_53_00(#sbndcode-v08_53_00)
+sbndcode v08_53_00
 ---------------------------------------------------
 
 * 2020-05-22  Andrew Scarff : Merge branch 'release/v08_53_00'

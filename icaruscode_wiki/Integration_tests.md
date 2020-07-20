@@ -5,7 +5,7 @@ title: Integration tests
 
 
 
-Short user guide to integration tests in ICARUS(#Short-user-guide-to-integration-tests-in-ICARUS)
+Short user guide to integration tests in ICARUS
 ==================================================================================================================
 
 > *This page was adapted from [SBND
@@ -18,44 +18,44 @@ Short user guide to integration tests in ICARUS(#Short-user-guide-to-integration
 
 -   **Table of contents**
 -   [Short user guide to integration tests in
-    ICARUS](#Short-user-guide-to-integration-tests-in-ICARUS)
-    -   [What are integration tests](#What-are-integration-tests)
-    -   [What an integration test does](#What-an-integration-test-does)
-    -   [Introduction to test running](#Introduction-to-test-running)
+    ICARUS]
+    -   [What are integration tests]
+    -   [What an integration test does]
+    -   [Introduction to test running]
         -   [TODO The output of a test in
-            detail](#TODO-The-output-of-a-test-in-detail)
+            detail]
         -   [TODO Example of failure from resource
-            usage](#TODO-Example-of-failure-from-resource-usage)
+            usage]
     -   [Running the integration test with the Continuous Integration
-        system](#Running-the-integration-test-with-the-Continuous-Integration-system)
-        -   [TODO Automatic testing](#TODO-Automatic-testing)
+        system]
+        -   [TODO Automatic testing]
         -   [Testing of the code in the local working
-            area](#Testing-of-the-code-in-the-local-working-area)
+            area]
         -   [TODO Remote testing of published
-            code](#TODO-Remote-testing-of-published-code)
-    -   [The reference result files](#The-reference-result-files)
+            code]
+    -   [The reference result files]
         -   [Updating the reference
-            files](#Updating-the-reference-files)
+            files]
             -   [TODO Generating the reference files with a remote
-                \"trigger\"](#TODO-Generating-the-reference-files-with-a-remote-trigger)
+                \"trigger\"]
             -   [Generating the reference files from a local working
-                area](#Generating-the-reference-files-from-a-local-working-area)
-    -   [TODO Available tests](#TODO-Available-tests)
+                area]
+    -   [TODO Available tests]
     -   [TODO Investigating test
-        failures](#TODO-Investigating-test-failures)
+        failures]
         -   [TODO Results are different from the
-            reference](#TODO-Results-are-different-from-the-reference)
-    -   [Further resources](#Further-resources)
+            reference]
+    -   [Further resources]
 
 
 
-What are integration tests(#What-are-integration-tests) 
+What are integration tests 
 ------------------------------------------------------------------------
 
 ICARUS has two levels of tests:
 
 1.  *unit tests* are small tests targeting a single feature or module;
-    you run it with `mrb test -j16` or equivalent^[1](#fn1)^
+    you run it with `mrb test -j16` or equivalent^[1]^
 2.  *integration tests* exercise a complete chain of processing
 
 Before pushing code that has any remote chance of changing existing
@@ -67,7 +67,7 @@ triggered. This is not the case yet as of writing.
 
 
 
-What an integration test does(#What-an-integration-test-does) 
+What an integration test does 
 ------------------------------------------------------------------------------
 
 An integration test does what it is asked to by its configuration at
@@ -88,12 +88,12 @@ updated, in the latter again the code must be fixed.
 
 
 
-Introduction to test running(#Introduction-to-test-running) 
+Introduction to test running 
 ----------------------------------------------------------------------------
 
 For this introduction we run the tests in the local area (as in
 [Integration
-tests](#Testing-of-the-code-in-the-local-working-area)
+tests]
 below).
 
 The script `test_runner` will execute the requested integration tests.
@@ -110,7 +110,7 @@ will run the tests designed to be run during development.
 
 
 
-### **TODO** The output of a test in detail(#TODO-The-output-of-a-test-in-detail) 
+### **TODO** The output of a test in detail 
 
 The information of this section somehow depends on both the version of
 the test SBND provides, and the version of `lar_ci`. The following
@@ -233,7 +233,7 @@ This is a winner. A local directory
 
 
 
-### **TODO** Example of failure from resource usage(#TODO-Example-of-failure-from-resource-usage) 
+### **TODO** Example of failure from resource usage 
 
 This is the output of `test_runner` after a successful LArSoft job has
 used more resources (or less!) than expected:\
@@ -251,7 +251,7 @@ memory for the test to about 210 MB.
 
 
 
-Running the integration test with the Continuous Integration system(#Running-the-integration-test-with-the-Continuous-Integration-system) 
+Running the integration test with the Continuous Integration system 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are mainly three ways to run an integration test:
@@ -265,7 +265,7 @@ compiler, and OSX are also potentially available).
 
 
 
-### **TODO** Automatic testing(#TODO-Automatic-testing) 
+### **TODO** Automatic testing 
 
 Whenever a commit is pushed into a `develop` branch, a test is
 automatically triggered. The test starts 15 minutes after the first push
@@ -289,12 +289,12 @@ chosen by the SBND `lar_ci` workflow configuration).
 
 
 
-### Testing of the code in the local working area(#Testing-of-the-code-in-the-local-working-area) 
+### Testing of the code in the local working area 
 
 Before pushing the code anywhere, integration tests may be executed
-locally from the MRB area^[1](#fn1)^ where the code has just been
+locally from the MRB area^[1]^ where the code has just been
 compiled (see also above, the [introduction to test
-running](#Introduction-to-test-running) section). The
+running]. The
 commands to do so are:\
 
     setup lar_ci
@@ -309,7 +309,7 @@ where `icaruscode` is already set up.
 
 
 
-### **TODO** Remote testing of published code(#TODO-Remote-testing-of-published-code) 
+### **TODO** Remote testing of published code 
 
 The Continuous Integration system can build and test any publicly
 available branch. To ask for the SBND integration tests, use the
@@ -332,7 +332,7 @@ TODO: document how to run other tests
 
 
 
-The reference result files(#The-reference-result-files) 
+The reference result files 
 ------------------------------------------------------------------------
 
 The reference result files are currently stored in dCache:\
@@ -348,7 +348,7 @@ and the related keys `BASEFILERELPATH_ICARUSCODE` and
 
 
 
-### Updating the reference files(#Updating-the-reference-files) 
+### Updating the reference files 
 
 When changes render the reference files obsolete, it\'s time to generate
 new ones.\
@@ -357,7 +357,7 @@ Remember that this action will affect the whole collaboration.
 
 
 
-#### **TODO** Generating the reference files with a remote \"trigger\"(#TODO-Generating-the-reference-files-with-a-remote-trigger)
+#### **TODO** Generating the reference files with a remote \"trigger\"
 
 After having concluded there is the need to update reference files, a
 single command will do the trick:\
@@ -372,7 +372,7 @@ that all platforms will give the same results.
 
 
 
-#### Generating the reference files from a local working area(#Generating-the-reference-files-from-a-local-working-area)
+#### Generating the reference files from a local working area
 
 If a test (e.g. `single_g4_seq_test_icaruscode`) requires a new
 reference file, a few steps need to be taken.\
@@ -414,7 +414,7 @@ to copy the remaining new reference files.
 
 
 
-**TODO** Available tests(#TODO-Available-tests) 
+**TODO** Available tests 
 ----------------------------------------------------------------
 
 The available tests can be printed with `test-runner --list-tests` (`-l`
@@ -436,7 +436,7 @@ time):
   `single_seq_test_sbndcode`        data-like single particle (`prodsingle_sbnd.fcl`) 5-stage chain, in sequence                     1400/1400 kVs
   `nucosmics_seq_test_sbndcode`     neutrino and background (GENIE+CORSIKA) 5-stage chain, in sequence                               6200/6200 kVs
   `gallery_test_sbndcode`           runs tests related to the gallery examples in `sbndcode`                                         
-  `generate_reference_sbndcode`     reruns all the jobs generating output files that can be used as reference^[1](#fn1)^             5800/5800 kVs
+  `generate_reference_sbndcode`     reruns all the jobs generating output files that can be used as reference^[1]^             5800/5800 kVs
   `all_tests_sbndcode`              reruns all tests (used for maintenance only)                                                     12000/6200 kVs
   --------------------------------- ------------------------------------------------------------------------------------------------ ----------------
 
@@ -455,12 +455,12 @@ for reference, 1000 kVs on that machine take about 3 CPU minutes.
 
 
 
-**TODO** Investigating test failures(#TODO-Investigating-test-failures) 
+**TODO** Investigating test failures 
 ----------------------------------------------------------------------------------------
 
 
 
-### **TODO** Results are different from the reference(#TODO-Results-are-different-from-the-reference) 
+### **TODO** Results are different from the reference 
 
 The reference files are normally generated with a special trigger, as
 described above. These special jobs are shown in the
@@ -509,7 +509,7 @@ by the `g` letter). In this case, the correct commit is commit:28fc0d2.
 
 
 
-Further resources(#Further-resources) 
+Further resources 
 ------------------------------------------------------
 
 The hub for information on integration tests is the project

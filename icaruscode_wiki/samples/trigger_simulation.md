@@ -5,10 +5,10 @@ This is meant to be a list of the samples that are used for trigger simulation.
 This kind of lists has the remarkable ability of falling out of date in days, so in case of doubt throw a line to [SBN Slack channel #icarus-trigger-simulation](https://shortbaseline.slack.com/archives/G015B91SL8N).
 
 There are two sections in this page:
-* the [sample list](#the-samples) includes the relevant samples, SAM definitions,
+* the [sample list] includes the relevant samples, SAM definitions,
   file locations, processing information and known uses of the samples
   (which is going to be partial for sure)
-* the [version list](#the-versions) describes the details of the software used
+* the [version list] describes the details of the software used
   for those samples, with stress on what is different from earlier versions and
   from "standard" samples
 
@@ -17,12 +17,12 @@ There are two sections in this page:
 
 
 Process list:
-* [neutrino interactions: BNB beam](#neutrino-interactions-bnb-beam)
-* [neutrino interactions: NuMI beam](#neutrino-interactions-numi-beam)
-* [cosmic ray interactions](#cosmic-ray-interactions)
-* [BNB beam events (neutrino interaction(s) + background(s))](#bnb-beam-events-neutrino-interactions--backgrounds)
-* [NuMI beam events (neutrino interaction(s) + background(s))](#numi-beam-events-neutrino-interactions--backgrounds)
-* [radioactivity](#radioactivity)
+* [neutrino interactions: BNB beam]
+* [neutrino interactions: NuMI beam]
+* [cosmic ray interactions]
+* [BNB beam events (neutrino interaction(s) + background(s))]
+* [NuMI beam events (neutrino interaction(s) + background(s))]
+* [radioactivity]
 
 
 ### Neutrino interactions: BNB beam ###########################################
@@ -32,7 +32,7 @@ Process list:
 sample         | BNB neutrino (`v08_37_00`)
 -------------- | -----------------------------------------------------------------
 Author         | [Ryan Howell](mailto:rjhowell)
-`icaruscode`   | [`v08_37_00`](#v08_37_00)
+`icaruscode`   | [`v08_37_00`]
 Generation     | `simulation_genie_icarus_bnb.fcl`
 Filtering      | _none_
 Detector       | `standard_g4_icarus.fcl`

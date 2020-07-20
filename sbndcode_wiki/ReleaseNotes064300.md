@@ -9,19 +9,19 @@ title: ReleaseNotes064300
 
 
 
-sbndcode v06\_43\_00 Release Notes(#sbndcode-v06_43_00-Release-Notes)
+sbndcode v06\_43\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_43\_00 Release
-    Notes](#sbndcode-v06_43_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_43\_00](#sbndcode-v06_43_00)
-    -   [sbndutil v01\_19\_00](#sbndutil-v01_19_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_43\_00]
+    -   [sbndutil v01\_19\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_43_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   larcorealg introduced to store geometry and utilities independent of
@@ -47,14 +47,14 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   experiment\_utilities.py updated to fix project.py for larsoft 6
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_43\_00(#sbndcode-v06_43_00)
+sbndcode v06\_43\_00
 ----------------------------------------------------------
 
 -   2017-07-13 Thomas Brooks : Merge branch \'release/v06\_43\_00\'
@@ -82,7 +82,7 @@ sbndcode v06\_43\_00(#sbndcode-v06_43_00)
 
 
 
-sbndutil v01\_19\_00(#sbndutil-v01_19_00)
+sbndutil v01\_19\_00
 ----------------------------------------------------------
 
 -   2017-07-13 Thomas Brooks : Merge branch \'release/v01\_19\_00\'

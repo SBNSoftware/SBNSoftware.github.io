@@ -7,8 +7,8 @@ Roles and people
 =================
 
 **Table of contents**
--   [Release management](#release-management)
--   [Production management](#production-management)
+-   [Release management]
+-   [Production management]
 
 
 

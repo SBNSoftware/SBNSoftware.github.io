@@ -9,19 +9,19 @@ title: ReleaseNotes070701
 
 
 
-sbndcode v07\_07\_01 Release Notes(#sbndcode-v07_07_01-Release-Notes)
+sbndcode v07\_07\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v07\_07\_01 Release
-    Notes](#sbndcode-v07_07_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v07\_07\_01](#sbndcode-v07_07_01)
-    -   [sbndutil v07\_07\_01](#sbndutil-v07_07_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v07\_07\_01]
+    -   [sbndutil v07\_07\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v07\_07\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_01/sbndcode-v07
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v07\_07\_01(#sbndcode-v07_07_01)
+sbndcode v07\_07\_01
 ----------------------------------------------------------
 
 -   2018-10-12 Thomas Brooks : Merge branch \'release/v07\_07\_01\'
@@ -71,7 +71,7 @@ sbndcode v07\_07\_01(#sbndcode-v07_07_01)
 
 
 
-sbndutil v07\_07\_01(#sbndutil-v07_07_01)
+sbndutil v07\_07\_01
 ----------------------------------------------------------
 
 -   2018-10-12 Thomas Brooks : Merge branch \'release/v07\_07\_01\'

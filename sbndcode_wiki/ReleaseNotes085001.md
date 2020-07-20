@@ -9,19 +9,19 @@ title: ReleaseNotes085001
 
 
 
-sbndcode v08\_50\_01 Release Notes(#sbndcode-v08_50_01-Release-Notes)
+sbndcode v08\_50\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_50\_01 Release
-    Notes](#sbndcode-v08_50_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_50\_01](#sbndcode-v08_50_01)
-    -   [sbndutil v08\_50\_01](#sbndutil-v08_50_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_50\_01]
+    -   [sbndutil v08\_50\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -31,24 +31,24 @@ ml
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_50\_01(#sbndcode-v08_50_01)
+sbndcode v08\_50\_01
 ----------------------------------------------------------
 
 -   2020-04-23 Andrew Scarff : Merge branch \'release/v08\_50\_01\'
@@ -70,7 +70,7 @@ sbndcode v08\_50\_01(#sbndcode-v08_50_01)
 
 
 
-sbndutil v08\_50\_01(#sbndutil-v08_50_01)
+sbndutil v08\_50\_01
 ----------------------------------------------------------
 
 -   2020-04-23 Andrew Scarff : Merge branch \'release/v08\_50\_01\'

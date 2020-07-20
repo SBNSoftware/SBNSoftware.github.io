@@ -9,19 +9,19 @@ title: ReleaseNotes0707002MCP09
 
 
 
-sbndcode v07\_07\_00\_2\_MCP0\_9 Release Notes(#sbndcode-v07_07_00_2_MCP0_9-Release-Notes)
+sbndcode v07\_07\_00\_2\_MCP0\_9 Release Notes
 ===========================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v07\_07\_00\_2\_MCP0\_9 Release
-    Notes](#sbndcode-v07_07_00_2_MCP0_9-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v07\_07\_00\_2\_MCP0\_9](#sbndcode-v07_07_00_2_MCP0_9)
-    -   [sbndutil v07\_07\_00\_2\_MCP0\_9](#sbndutil-v07_07_00_2_MCP0_9)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v07\_07\_00\_2\_MCP0\_9]
+    -   [sbndutil v07\_07\_00\_2\_MCP0\_9]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,19 +30,19 @@ v07\_07\_00\_2\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for MCP 0.9 (v2)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Seg fault in Anatree
@@ -50,17 +50,17 @@ Bug fixes(#Bug-fixes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v07\_07\_00\_2\_MCP0\_9(#sbndcode-v07_07_00_2_MCP0_9)
+sbndcode v07\_07\_00\_2\_MCP0\_9
 -------------------------------------------------------------------------------
 
 -   2018-10-10 Thomas Brooks : Merge branch
@@ -84,7 +84,7 @@ sbndcode v07\_07\_00\_2\_MCP0\_9(#sbndcode-v07_07_00_2_MCP0_9)
 
 
 
-sbndutil v07\_07\_00\_2\_MCP0\_9(#sbndutil-v07_07_00_2_MCP0_9)
+sbndutil v07\_07\_00\_2\_MCP0\_9
 -------------------------------------------------------------------------------
 
 -   2018-10-10 Thomas Brooks : Merge branch

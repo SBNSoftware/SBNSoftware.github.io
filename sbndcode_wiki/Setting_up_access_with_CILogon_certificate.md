@@ -5,33 +5,33 @@ title: Setting up access with CILogon certificate
 
 
 
-Setting up access with CILogon certificate(#Setting-up-access-with-CILogon-certificate)
+Setting up access with CILogon certificate
 ========================================================================================================
 
 -   **Table of contents**
 -   [Setting up access with CILogon
-    certificate](#Setting-up-access-with-CILogon-certificate)
+    certificate]
     -   [First: Why would you want to do
-        this?](#First-Why-would-you-want-to-do-this)
+        this?]
     -   [Instructions for getting a CILogon Certificate and importing
         the certificate into your
-        browser](#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser)
+        browser]
         -   [Generating or renewing a
-            certificate](#Generating-or-renewing-a-certificate)
+            certificate]
         -   [Loading the certificate into your
-            browser](#Loading-the-certificate-into-your-browser)
+            browser]
             -   [Safari, and Vivaldi and Chrome on
-                OSX](#Safari-and-Vivaldi-and-Chrome-on-OSX)
+                OSX]
             -   [Vivaldi and Chrome on
-                Linux](#Vivaldi-and-Chrome-on-Linux)
-            -   [Chrome on Windows](#Chrome-on-Windows)
-            -   [Firefox](#Firefox)
-            -   [Internet Explorer](#Internet-Explorer)
-    -   [Access to SBN DocDB](#Access-to-SBN-DocDB)
+                Linux]
+            -   [Chrome on Windows]
+            -   [Firefox]
+            -   [Internet Explorer]
+    -   [Access to SBN DocDB]
         -   [Applying for Access to DocDB using this
-            certificate](#Applying-for-Access-to-DocDB-using-this-certificate)
+            certificate]
         -   [Accessing DocDB once you have certificate
-            access](#Accessing-DocDB-once-you-have-certificate-access)
+            access]
 
 DUNE has [such a good
 explanation](https://web.fnal.gov/collaboration/DUNE/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx){.external}
@@ -39,7 +39,7 @@ that\... well, this is a copy of it.
 
 
 
-First: Why would you want to do this?(#First-Why-would-you-want-to-do-this)
+First: Why would you want to do this?
 --------------------------------------------------------------------------------------------
 
 [CILogon](http://cilogon.org){.external} provides a free, *year-long
@@ -49,14 +49,14 @@ certificate (now going to be discontinued).
 
 When accessing DocDB using a certificate, you will be able to access
 *all* the documents you have permissions to access with *no
-username/password entry required^[1](#fn1)^*.
+username/password entry required^[1]^*.
 
 > The CILogon Certificate discussed below *can not* be used to digitally
 > sign email.
 
 
 
-Instructions for getting a CILogon Certificate and importing the certificate into your browser(#Instructions-for-getting-a-CILogon-Certificate-and-importing-the-certificate-into-your-browser)
+Instructions for getting a CILogon Certificate and importing the certificate into your browser
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are three steps, documented below:
@@ -67,7 +67,7 @@ There are three steps, documented below:
 
 
 
-### Generating or renewing a certificate(#Generating-or-renewing-a-certificate)
+### Generating or renewing a certificate
 
 This is something you need to do once per year. You can copy the
 certificate file on different machines (e.g., your phone, your laptop,
@@ -106,7 +106,7 @@ No penalty in doing this more often.
 
 
 
-### Loading the certificate into your browser(#Loading-the-certificate-into-your-browser)
+### Loading the certificate into your browser
 
 There are too many web browsers around, and they use too many different
 approaches, and they change them too often.\
@@ -123,7 +123,7 @@ anyway. But what you are going to do is:
 
 
 
-#### Safari, and Vivaldi and Chrome on OSX(#Safari-and-Vivaldi-and-Chrome-on-OSX)
+#### Safari, and Vivaldi and Chrome on OSX
 
 These browsers use the operating system\'s \"key chain\" to access
 certificates.
@@ -134,7 +134,7 @@ certificates.
 
 
 
-#### Vivaldi and Chrome on Linux(#Vivaldi-and-Chrome-on-Linux)
+#### Vivaldi and Chrome on Linux
 
 1.  go to the URL: `chrome://settings/certificates` (yes, in Vivaldi
     too)
@@ -143,7 +143,7 @@ certificates.
 
 
 
-#### Chrome on Windows(#Chrome-on-Windows)
+#### Chrome on Windows
 
 1.  go to the URL: `chrome://settings`, look for \"Advanced Settings\"
 2.  in there, there should be a \"Manage Certificates\" where you can
@@ -151,7 +151,7 @@ certificates.
 
 
 
-#### Firefox(#Firefox)
+#### Firefox
 
 *(tested on OSX version 47)*
 
@@ -167,7 +167,7 @@ certificates.
 
 
 
-#### Internet Explorer(#Internet-Explorer)
+#### Internet Explorer
 
 1.  double click on the saved certificate file
 2.  select \'Next\' on the wizard (twice)
@@ -177,7 +177,7 @@ certificates.
 
 
 
-Access to SBN DocDB(#Access-to-SBN-DocDB)
+Access to SBN DocDB
 ----------------------------------------------------------
 
 After you get your first certificate, you\'ll have to ask the DocDB
@@ -186,7 +186,7 @@ This appears to be needed only once.
 
 
 
-### Applying for Access to DocDB using this certificate(#Applying-for-Access-to-DocDB-using-this-certificate)
+### Applying for Access to DocDB using this certificate
 
 If you are just renewing a certificate that has not already expired, you
 will not need to reregister with SBND DocDB.\
@@ -201,7 +201,7 @@ human has to accept you in (so it may take one day).
 
 
 
-### Accessing DocDB once you have certificate access(#Accessing-DocDB-once-you-have-certificate-access)
+### Accessing DocDB once you have certificate access
 
 1.  ​go to SBND DocDB: <https://sbn-docdb.fnal.gov>
 2.  if prompted, now or at the next step, by the browser to choose a

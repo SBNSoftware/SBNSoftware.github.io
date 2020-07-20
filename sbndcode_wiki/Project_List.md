@@ -5,7 +5,7 @@ title: Project List
 
 
 
-Project List(#Project-List)
+Project List
 ============================================
 
 This page is a work in progress and I will fill this with more

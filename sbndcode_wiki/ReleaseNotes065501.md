@@ -9,19 +9,19 @@ title: ReleaseNotes065501
 
 
 
-sbndcode v06\_55\_01 Release Notes(#sbndcode-v06_55_01-Release-Notes)
+sbndcode v06\_55\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_55\_01 Release
-    Notes](#sbndcode-v06_55_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_55\_01](#sbndcode-v06_55_01)
-    -   [sbndutil v01\_31\_01](#sbndutil-v01_31_01)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_55\_01]
+    -   [sbndutil v01\_31\_01]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_55\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_55_01/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Binaries no longer available for OSX 10.10
@@ -45,12 +45,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_55\_01(#sbndcode-v06_55_01)
+sbndcode v06\_55\_01
 ----------------------------------------------------------
 
 -   2017-11-02 Thomas Brooks : Merge branch \'release/v06\_55\_01\'
@@ -75,7 +75,7 @@ sbndcode v06\_55\_01(#sbndcode-v06_55_01)
 
 
 
-sbndutil v01\_31\_01(#sbndutil-v01_31_01)
+sbndutil v01\_31\_01
 ----------------------------------------------------------
 
 -   2017-11-02 Thomas Brooks : Merge branch \'release/v01\_31\_01\'

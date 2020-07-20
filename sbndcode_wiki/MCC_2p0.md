@@ -5,12 +5,12 @@ title: MCC 2p0
 
 
 
-MCC 2p0(#MCC-2p0)
+MCC 2p0
 ==================================
 
 
 
-Samples(#Samples) 
+Samples 
 ----------------------------------
 
 **\'new flux\' refers to the latest flux files produced by Zarko which
@@ -41,7 +41,7 @@ fix the detector/beam centre position (configs F/G)**\
 
 
 
-Tape space(#Tape-space) 
+Tape space 
 ----------------------------------------
 
 \- 395 TB of tape available\
@@ -54,7 +54,7 @@ million cosmics
 
 
 
-Changes(#Changes) 
+Changes 
 ----------------------------------
 
     - All reco. samples include ROI finder

@@ -5,12 +5,12 @@ title: Deploying a release on CVMFS
 
 
 
-Deploying a release on CVMFS(#Deploying-a-release-on-CVMFS)
+Deploying a release on CVMFS
 ============================================================================
 
 
 
-Summary(#Summary)
+Summary
 ----------------------------------
 
 -   Log on to the cvmfs server.
@@ -20,7 +20,7 @@ Summary(#Summary)
 
 
 
-Instructions(#Instructions)
+Instructions
 --------------------------------------------
 
 -   Log on to the cvmfs server\
@@ -70,7 +70,7 @@ Instructions(#Instructions)
 
 
 
-sbnd\_data(#sbnd_data)
+sbnd\_data
 ---------------------------------------
 
 -   If you want to update sbnd\_data without changing the version number
@@ -81,7 +81,7 @@ sbnd\_data(#sbnd_data)
 
 
 
-Details: install\_on\_cvmfs.sh(#Details-install_on_cvmfssh)
+Details: install\_on\_cvmfs.sh
 ----------------------------------------------------------------------------
 
 -   A modified version of the script used to deploy on `/grid/fermiapp/`

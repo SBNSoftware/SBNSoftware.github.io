@@ -5,12 +5,12 @@ title: Write files to CVMFS
 
 
 
-Write files to CVMFS(#Write-files-to-CVMFS)
+Write files to CVMFS
 ============================================================
 
 -   **Table of contents**
--   [Write files to CVMFS](#Write-files-to-CVMFS)
-    -   [Access privileges](#Access-privileges)
+-   [Write files to CVMFS]
+    -   [Access privileges]
 
 Modifications to SBND area in CVMFS are performed interacting as user
 `cvmfssbnd` on the server `oasiscfs.fnal.gov`.\
@@ -28,7 +28,7 @@ These are the suggested operations, optimised for \"the less time in
     asks for a password and creates a new one)
 
 2.  copy the files you want to store in CVMFS into `oasiscfs.fnal.gov`
-    (you need to [be authorised](#Access-privileges)):
+    (you need to [be authorised]:
 
         scp sbnd_data-01.00.00-noarch.tar.bz2 cvmfssbnd@oasiscfs.fnal.gov:
 
@@ -37,7 +37,7 @@ These are the suggested operations, optimised for \"the less time in
     `cvmfssbnd`
 
 3.  log in `oasiscfs.fnal.gov` (you need to [be
-    authorised](#Access-privileges)):
+    authorised]:
 
         ssh cvmfssbnd@oasiscfs.fnal.gov
 
@@ -75,7 +75,7 @@ change to the world.
 
 
 
-Access privileges(#Access-privileges)
+Access privileges
 ------------------------------------------------------
 
 A few SBND people are allowed to log as `cvmfssbnd` on

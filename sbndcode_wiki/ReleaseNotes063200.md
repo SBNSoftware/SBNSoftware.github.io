@@ -9,19 +9,19 @@ title: ReleaseNotes063200
 
 
 
-sbndcode v06\_32\_00 Release Notes(#sbndcode-v06_32_00-Release-Notes)
+sbndcode v06\_32\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_32\_00 Release
-    Notes](#sbndcode-v06_32_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_32\_00](#sbndcode-v06_32_00)
-    -   [sbndutil v01\_15\_00](#sbndutil-v01_15_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_32\_00]
+    -   [sbndutil v01\_15\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_32\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_32_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 First tagged release for LArSoft v06.
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   New CRT simulations.
@@ -48,12 +48,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -66,12 +66,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_32\_00(#sbndcode-v06_32_00)
+sbndcode v06\_32\_00
 ----------------------------------------------------------
 
 -   2017-06-05 Thomas Brooks : Merge branch \'release/v06\_32\_00\'
@@ -197,7 +197,7 @@ sbndcode v06\_32\_00(#sbndcode-v06_32_00)
 
 
 
-sbndutil v01\_15\_00(#sbndutil-v01_15_00)
+sbndutil v01\_15\_00
 ----------------------------------------------------------
 
 -   2017-06-05 Thomas Brooks : Merge branch \'release/v01\_15\_00\'

@@ -9,20 +9,20 @@ title: ReleaseNotes066400
 
 
 
-sbndcode v06\_64\_00 Release Notes(#sbndcode-v06_64_00-Release-Notes)
+sbndcode v06\_64\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_64\_00 Release
-    Notes](#sbndcode-v06_64_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_64\_00](#sbndcode-v06_64_00)
-    -   [sbndutil v01\_40\_00](#sbndutil-v01_40_00)
-    -   [sbnd\_data v01\_01\_00](#sbnd_data-v01_01_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_64\_00]
+    -   [sbndutil v01\_40\_00]
+    -   [sbnd\_data v01\_01\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -31,14 +31,14 @@ v06\_64\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_64_00/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   New geometry and optical library with full LDS (PMTs + light bars +
@@ -47,12 +47,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -62,12 +62,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_64\_00(#sbndcode-v06_64_00)
+sbndcode v06\_64\_00
 ----------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Merge branch \'release/v06\_64\_00\'
@@ -78,7 +78,7 @@ sbndcode v06\_64\_00(#sbndcode-v06_64_00)
 
 
 
-sbndutil v01\_40\_00(#sbndutil-v01_40_00)
+sbndutil v01\_40\_00
 ----------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Merge branch \'release/v01\_40\_00\'
@@ -89,7 +89,7 @@ sbndutil v01\_40\_00(#sbndutil-v01_40_00)
 
 
 
-sbnd\_data v01\_01\_00(#sbnd_data-v01_01_00)
+sbnd\_data v01\_01\_00
 -------------------------------------------------------------
 
 -   2018-01-19 Thomas Brooks : Added new optical library from Diego

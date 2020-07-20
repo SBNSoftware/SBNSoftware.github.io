@@ -5,12 +5,12 @@ title: Running VST code on GPVMs
 
 
 
-Running VST code on GPVMs(#Running-VST-code-on-GPVMs)
+Running VST code on GPVMs
 ======================================================================
 
 
 
-Starting from scratch(#Starting-from-scratch)
+Starting from scratch
 --------------------------------------------------------------
 
 1.  Log on to sbndgpvm01/02/03\
@@ -52,7 +52,7 @@ Starting from scratch(#Starting-from-scratch)
 
 
 
-Setting up and existing build(#Setting-up-and-existing-build)
+Setting up and existing build
 ------------------------------------------------------------------------------
 
 1.  On a gpvm set up the SBND environment\
@@ -70,7 +70,7 @@ Setting up and existing build(#Setting-up-and-existing-build)
 
 
 
-Simulating and viewing events(#Simulating-and-viewing-events)
+Simulating and viewing events
 ------------------------------------------------------------------------------
 
 -   There is currently one file for generating single particle events
@@ -98,7 +98,7 @@ Simulating and viewing events(#Simulating-and-viewing-events)
 
 
 
-Running the analysis code(#Running-the-analysis-code)
+Running the analysis code
 ----------------------------------------------------------------------
 
 -   The VST purity analysis code is run using pipeline\_RawHit.fcl which

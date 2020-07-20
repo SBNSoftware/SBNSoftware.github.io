@@ -5,23 +5,23 @@ title: SAM File Metadata
 
 
 
-SAM File Metadata(#SAM-File-Metadata)
+SAM File Metadata
 ======================================================
 
 -   **Table of contents**
--   [SAM File Metadata](#SAM-File-Metadata)
-    -   [Running list of comments](#Running-list-of-comments)
-        -   [29 January 2018](#29-January-2018)
-    -   [Useful links](#Useful-links)
+-   [SAM File Metadata]
+    -   [Running list of comments]
+        -   [29 January 2018]
+    -   [Useful links]
 
 
 
-Running list of comments(#Running-list-of-comments)
+Running list of comments
 --------------------------------------------------------------------
 
 
 
-### 29 January 2018(#29-January-2018)
+### 29 January 2018
 
 (From Wes)
 
@@ -80,7 +80,7 @@ Running list of comments(#Running-list-of-comments)
 
 
 
-Useful links(#Useful-links)
+Useful links
 --------------------------------------------
 
 -   [SAM User\'s

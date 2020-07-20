@@ -9,19 +9,19 @@ title: ReleaseNotes0836013MCP20
 
 
 
-sbndcode v08\_36\_01\_3\_MCP2\_0 Release Notes(#sbndcode-v08_36_01_3_MCP2_0-Release-Notes)
+sbndcode v08\_36\_01\_3\_MCP2\_0 Release Notes
 ===========================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_36\_01\_3\_MCP2\_0 Release
-    Notes](#sbndcode-v08_36_01_3_MCP2_0-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_36\_01\_3\_MCP2\_0](#sbndcode-v08_36_01_3_MCP2_0)
-    -   [sbndutil v08\_36\_01\_3\_MCP2\_0](#sbndutil-v08_36_01_3_MCP2_0)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_36\_01\_3\_MCP2\_0]
+    -   [sbndutil v08\_36\_01\_3\_MCP2\_0]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,36 +30,36 @@ v08\_36\_01\_3\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for MCP 2.0 (v3)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Change location of flux files.
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_36\_01\_3\_MCP2\_0(#sbndcode-v08_36_01_3_MCP2_0)
+sbndcode v08\_36\_01\_3\_MCP2\_0
 -------------------------------------------------------------------------------
 
 -   2019-11-22 Thomas Brooks : Merge branch
@@ -72,7 +72,7 @@ sbndcode v08\_36\_01\_3\_MCP2\_0(#sbndcode-v08_36_01_3_MCP2_0)
 
 
 
-sbndutil v08\_36\_01\_3\_MCP2\_0(#sbndutil-v08_36_01_3_MCP2_0)
+sbndutil v08\_36\_01\_3\_MCP2\_0
 -------------------------------------------------------------------------------
 
 -   2019-11-22 Thomas Brooks : Merge branch

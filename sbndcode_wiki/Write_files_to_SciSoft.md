@@ -5,7 +5,7 @@ title: Write files to SciSoft
 
 
 
-Write files to SciSoft(#Write-files-to-SciSoft)
+Write files to SciSoft
 ================================================================
 
 -   Currently sbndcode, sbndutil and sbnd\_data can be written to
@@ -18,7 +18,7 @@ Write files to SciSoft(#Write-files-to-SciSoft)
 
 
 
-Copy sbndcode and sbndutil to SciSoft(#Copy-sbndcode-and-sbndutil-to-SciSoft)
+Copy sbndcode and sbndutil to SciSoft
 ----------------------------------------------------------------------------------------------
 
 -   Go to an empty directory on an sbndgpvm, I have a `Jenkins`
@@ -51,7 +51,7 @@ Copy sbndcode and sbndutil to SciSoft(#Copy-sbndcode-and-sbndutil-to-SciSoft)
 
 
 
-Copy sbnd\_data to SciSoft(#Copy-sbnd_data-to-SciSoft)
+Copy sbnd\_data to SciSoft
 -----------------------------------------------------------------------
 
 -   sbnd\_data is treated differently as it is not version controlled

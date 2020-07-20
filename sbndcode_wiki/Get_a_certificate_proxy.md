@@ -5,7 +5,7 @@ title: Get a certificate proxy
 
 
 
-Get a SBND certificate and proxy(#Get-a-SBND-certificate-and-proxy)
+Get a SBND certificate and proxy
 ====================================================================================
 
 > Note: this page is about certificates and proxies to access grid
@@ -16,7 +16,7 @@ Get a SBND certificate and proxy(#Get-a-SBND-certificate-and-proxy)
 
 
 
-Virtual Organization membership(#Virtual-Organization-membership)
+Virtual Organization membership
 ----------------------------------------------------------------------------------
 
 First, you need to be registered in the proper Virtual Organization,
@@ -39,7 +39,7 @@ desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 
 
 
-Get the proxy(#Get-the-proxy)
+Get the proxy
 ----------------------------------------------
 
 The ritual for getting the certificate and proxy goes like this:\
@@ -68,12 +68,12 @@ will tell you more than you want to know about your current certificate.
 
 
 
-Production role jobs(#Production-role-jobs)
+Production role jobs
 ------------------------------------------------------------
 
 
 
-### Getting production privileges(#Getting-production-privileges)
+### Getting production privileges
 
 Submit a service desk ticket asking for production role privileges for
 SBND. You will most likely have to add a computing coordinator to the
@@ -87,7 +87,7 @@ You should then be able to ssh to an sbnd machine as the sbndpro user:\
 
 
 
-### Getting the production proxy (old-school method)(#Getting-the-production-proxy-old-school-method)
+### Getting the production proxy (old-school method)
 
 The following should be run on the command line when logged into the
 sbndpro account.\
@@ -99,7 +99,7 @@ You should now be able to submit production jobs.
 
 
 
-### Getting the production proxy (the new method)(#Getting-the-production-proxy-the-new-method)
+### Getting the production proxy (the new method)
 
 A much easier alternative to getting production-role access is to use
 the production proxy certificate that is pushed to the gpvm several

@@ -9,28 +9,28 @@ title: ReleaseNotes085500
 
 
 
-sbndcode v08_55_00 Release Notes(#sbndcode-v08_55_00-Release-Notes)
+sbndcode v08_55_00 Release Notes
 =======================================================================================
 
 -   **Table of contents**
--   [sbndcode v08_55_00 Release Notes](#sbndcode-v08_55_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_51\_00](#sbndcode-v08_55_00)
-    -   [sbndutil v08\_51\_00](#sbndutil-v08_55_00)
+-   [sbndcode v08_55_00 Release Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_51\_00]
+    -   [sbndutil v08\_51\_00]
 
 [List of sbndcode releases](List_of_SBND_code_releases.html)
 Download instructions for [sbndcode v08_55_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_55_00/sbndcode-v08_55_00.html)
 
-Purpose(#Purpose)
+Purpose
 ---------------------------------------------------
 
 * Weekly release
 
-New features(#New-features)
+New features
 ---------------------------------------------------
 
 * Removed SLF6 and legacy builds
@@ -46,7 +46,7 @@ Updated dependencies
 Change List
 ==========================================
 
-sbndcode v08_55_00(#sbndcode-v08_55_00)
+sbndcode v08_55_00
 ---------------------------------------------------
 
 * 2020-06-05  Andrew Scarff : Merge branch 'release/v08_55_00'

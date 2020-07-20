@@ -5,7 +5,7 @@ title: Code management and deployment stuff
 
 
 
-Code management and deployment stuff(#Code-management-and-deployment-stuff)
+Code management and deployment stuff
 ============================================================================================
 
 -   [updating procedures for
@@ -15,7 +15,7 @@ Code management and deployment stuff(#Code-management-and-deployment-stuff)
 
 
 
-How to deploy files to\...(#How-to-deploy-files-to)
+How to deploy files to\...
 --------------------------------------------------------------------
 
 -   [PNFS persistent area](Write_files_to_PNFS.html){.wiki-page .new}

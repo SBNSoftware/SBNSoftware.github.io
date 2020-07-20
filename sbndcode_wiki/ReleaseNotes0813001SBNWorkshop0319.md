@@ -9,21 +9,21 @@ title: ReleaseNotes0813001SBNWorkshop0319
 
 
 
-sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes(#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes)
+sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes
 ============================================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release
-    Notes](#sbndcode-v08_13_00_1_SBNWorkshop0319-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
     -   [sbndcode
-        v08\_13\_00\_1\_SBNWorkshop0319](#sbndcode-v08_13_00_1_SBNWorkshop0319)
+        v08\_13\_00\_1\_SBNWorkshop0319]
     -   [sbndutil
-        v08\_13\_00\_1\_SBNWorkshop0319](#sbndutil-v08_13_00_1_SBNWorkshop0319)
+        v08\_13\_00\_1\_SBNWorkshop0319]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -32,36 +32,36 @@ v08\_13\_00\_1\_SBNWorkshop0319](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v0
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for SBN Workshop 03/19
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Add some fcl files for the workshop
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_13\_00\_1\_SBNWorkshop0319(#sbndcode-v08_13_00_1_SBNWorkshop0319)
+sbndcode v08\_13\_00\_1\_SBNWorkshop0319
 ------------------------------------------------------------------------------------------------
 
 -   2019-03-16 Thomas Brooks : Merge branch
@@ -86,7 +86,7 @@ sbndcode v08\_13\_00\_1\_SBNWorkshop0319(#sbndcode-v08_13_00_1_SBNWorkshop0319)
 
 
 
-sbndutil v08\_13\_00\_1\_SBNWorkshop0319(#sbndutil-v08_13_00_1_SBNWorkshop0319)
+sbndutil v08\_13\_00\_1\_SBNWorkshop0319
 ------------------------------------------------------------------------------------------------
 
 -   2019-03-16 Thomas Brooks : Merge branch

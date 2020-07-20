@@ -5,27 +5,27 @@ title: Small data files for SBND processing sbnd data
 
 
 
-Small data files for SBND processing: `sbnd_data`(#Small-data-files-for-SBND-processing-sbnd_data)
+Small data files for SBND processing: `sbnd_data`
 ===================================================================================================================
 
 -   **Table of contents**
 -   [Small data files for SBND processing:
-    sbnd\_data](#Small-data-files-for-SBND-processing-sbnd_data)
-    -   [Availability and set up](#Availability-and-set-up)
-    -   [Content of the package](#Content-of-the-package)
+    sbnd\_data]
+    -   [Availability and set up]
+    -   [Content of the package]
     -   [Update procedures and
-        policies](#Update-procedures-and-policies)
+        policies]
         -   [Starting with the latest
-            version](#Starting-with-the-latest-version)
-        -   [Updating the content](#Updating-the-content)
+            version]
+        -   [Updating the content]
         -   [Choose the next version
-            number](#Choose-the-next-version-number)
+            number]
         -   [Guidelines for updating \`CHANGE\`
-            files](#Guidelines-for-updating-CHANGE-files)
+            files]
         -   [Declare and pack the UPS
-            product](#Declare-and-pack-the-UPS-product)
-        -   [Deploy the new version](#Deploy-the-new-version)
-    -   [Version number policy](#Version-number-policy)
+            product]
+        -   [Deploy the new version]
+    -   [Version number policy]
 
 The UPS product `sbnd_data` contains small data files necessary to some
 of the processing via `sbndcode` and others.
@@ -40,7 +40,7 @@ to impress people.
 
 
 
-Availability and set up(#Availability-and-set-up)
+Availability and set up
 ------------------------------------------------------------------
 
 The product `sbnd_data` is distributed in:
@@ -65,7 +65,7 @@ non-optional in the future.
 
 
 
-Content of the package(#Content-of-the-package)
+Content of the package
 ----------------------------------------------------------------
 
 -   `ups/`: contains the magics for this to be a legit UPS product;
@@ -79,23 +79,23 @@ Content of the package(#Content-of-the-package)
 
 
 
-Update procedures and policies(#Update-procedures-and-policies)
+Update procedures and policies
 --------------------------------------------------------------------------------
 
 An update of the package happens in the following steps:
 
 1.  [the latest version is taken as starting
-    point](#Starting-with-the-latest-version)
-2.  [content is updated](#Updating-the-content)
-3.  a [new version number](#Version-number-policy) is
+    point]
+2.  [content is updated]
+3.  a [new version number] is
     decided
 4.  `CHANGES` [files in the changed directories are
-    updated](#Guidelines-for-updating-CHANGE-files)
+    updated]
 5.  the [new UPS product is
-    finished](#Declare-and-pack-the-UPS-product)
+    finished]
 6.  the new UPS product is [Small data files for SBND processing
-    sbnd\_data](#Deploy-the-new-version) to the [deployment
-    sites](#Availability-and-set-up)
+    sbnd\_data] to the [deployment
+    sites]
 7.  likely, a dependence update should be scheduled for the next release
     of `sbndcode`
 
@@ -104,7 +104,7 @@ LArSoft](Procedure_to_create_a_new_version_of_larsoft_data.html).
 
 
 
-### Starting with the latest version(#Starting-with-the-latest-version)
+### Starting with the latest version
 
 Have a UPS area specific for this work.\
 To create one:
@@ -140,22 +140,22 @@ You are ready to change the content.
 
 
 
-### Updating the content(#Updating-the-content)
+### Updating the content
 
 You just do your editing, copying and removing in the copy of the most
 recent `sbnd_data/<latest_version>` [you just
-created](#Starting-with-the-latest-version).\
+created].\
 Each new subdirectory of `sbnd_data` should have its own `CHANGES` file.
 
 
 
-### Choose the next version number(#Choose-the-next-version-number)
+### Choose the next version number
 
 The version format is `vMM-mm_pp`, with `MM` the major version, `mm` the
 minor version, and `pp` the \"patch\" version, all with 2 digits,
 0-padded.\
 Try to follow [these
-guidelines](#Guidelines-for-updating-CHANGE-files) if
+guidelines] if
 possible.\
 For the rest of the tutorial, the following is assumed to exist with the
 new version:
@@ -164,7 +164,7 @@ new version:
 
 
 
-### Guidelines for updating \`CHANGE\` files(#Guidelines-for-updating-CHANGE-files)
+### Guidelines for updating \`CHANGE\` files
 
 These guidelines try to cover all the information that in future we
 might want to find out from a old (or current) release.\
@@ -176,7 +176,7 @@ updated:
     of the change and pointers to documentation (e.g. DocDB documents)
     if available]{style="color: red;"}
 -   \`sbnd\_data/\<latest\_version\>/CHANGES\` if a change on the [minor
-    version bump level](#Version-number-policy) is being
+    version bump level] is being
     performed (e.g. if it is in a new directory or if it adds something
     for the first time)
 -   \`sbnd\_data/\<latest\_version\>/README\` also if it is in a new
@@ -187,7 +187,7 @@ updated:
 
 
 
-### Declare and pack the UPS product(#Declare-and-pack-the-UPS-product)
+### Declare and pack the UPS product
 
 We are going to produce a `tar` file with the new content. Note that you
 need `larutils` set up, and you need to know a version of it
@@ -217,10 +217,10 @@ version number).
 
 
 
-### Deploy the new version(#Deploy-the-new-version)
+### Deploy the new version
 
 The package needs to be propagated individually to the [deployment
-sites](#Availability-and-set-up).
+sites].
 
 For CVMFS, the [generic SBND CVMFS update
 instructions](Write_files_to_CVMFS.html) work well. An
@@ -232,7 +232,7 @@ The deployment on `/grid` is still TODO.
 
 
 
-Version number policy(#Version-number-policy)
+Version number policy
 --------------------------------------------------------------
 
 These are generic guidelines to help in choosing how to bump the version

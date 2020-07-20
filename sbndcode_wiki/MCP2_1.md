@@ -5,7 +5,7 @@ title: MCP2 1
 
 
 
-MCP2\_1(#MCP2_1)
+MCP2\_1
 =================================
 
   --------------------- ----------------------------------------------------------------- ----------- ---------------------- ---------------------------------------------------------------------------------------------
@@ -16,5 +16,5 @@ MCP2\_1(#MCP2_1)
 
 
 
-Notes: - This is a small production to address the seeding issue in MCP2.0 (<https://cdcvs.fnal.gov/redmine/issues/23921>) - This production does not include the light simulation(#Notes--This-is-a-small-production-to-address-the-seeding-issue-in-MCP20-httpscdcvsfnalgovredmineissues23921--This-production-does-not-include-the-light-simulation)
+Notes: - This is a small production to address the seeding issue in MCP2.0 (<https://cdcvs.fnal.gov/redmine/issues/23921>) - This production does not include the light simulation
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

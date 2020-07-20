@@ -5,14 +5,14 @@ title: SBND dCache storage
 
 
 
-SBND dCache storage(#SBND-dCache-storage)
+SBND dCache storage
 ==========================================================
 
 -   **Table of contents**
--   [SBND dCache storage](#SBND-dCache-storage)
-    -   [Remote access to dCache areas](#Remote-access-to-dCache-areas)
+-   [SBND dCache storage]
+    -   [Remote access to dCache areas]
         -   [Use XRootD to access dCache ROOT
-            files](#Use-XRootD-to-access-dCache-ROOT-files)
+            files]
 
 dCache area consists of a huge data space, made of tapes and disks.\
 SBND owns one of each of two types of dCache areas. Each of them has
@@ -39,7 +39,7 @@ wiki](Understanding_storage_volumes.html).
 
 
 
-Remote access to dCache areas(#Remote-access-to-dCache-areas)
+Remote access to dCache areas
 ------------------------------------------------------------------------------
 
 While dCache areas may happen to be available on some local nodes (e.g.,
@@ -57,7 +57,7 @@ as for getting credentials to submit jobs.
 
 
 
-### Use XRootD to access dCache ROOT files(#Use-XRootD-to-access-dCache-ROOT-files)
+### Use XRootD to access dCache ROOT files
 
 Even where `/pnfs` directory structure is actually visible, it is
 usually a bad idea to access ROOT files from there directly. A better

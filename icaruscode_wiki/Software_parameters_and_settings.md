@@ -5,36 +5,36 @@ title: Software parameters and settings
 
 
 
-Software parameters and settings(#Software-parameters-and-settings)
+Software parameters and settings
 ====================================================================================
 
 -   **Table of contents**
 -   [Software parameters and
-    settings](#Software-parameters-and-settings)
-    -   -   [How to update this page](#How-to-update-this-page)
+    settings]
+    -   -   [How to update this page]
 
-    -   [Detector geometry](#Detector-geometry)
-    -   [Timings](#Timings)
+    -   [Detector geometry]
+    -   [Timings]
         -   [Code and configuration
-            information](#Code-and-configuration-information)
-        -   [Timing overview](#Timing-overview)
-        -   [Detailed timing explanation](#Detailed-timing-explanation)
-    -   [Simulation](#Simulation)
-        -   [Event generation](#Event-generation)
-        -   [TPC simulation](#TPC-simulation)
-        -   [Optical simulation](#Optical-simulation)
-            -   [Scintillation](#Scintillation)
+            information]
+        -   [Timing overview]
+        -   [Detailed timing explanation]
+    -   [Simulation]
+        -   [Event generation]
+        -   [TPC simulation]
+        -   [Optical simulation]
+            -   [Scintillation]
             -   [Transportation of scintillation photons to the optical
-                detectors](#Transportation-of-scintillation-photons-to-the-optical-detectors)
+                detectors]
             -   [Optical readout
-                simulation](#Optical-readout-simulation)
+                simulation]
 
 This page is an attempt to keep track of the parameters of the ICARUS
 detector relevant to the simulation and reconstruction.
 
 
 
-### How to update this page(#How-to-update-this-page)
+### How to update this page
 
 -   changes are ultimately tracked by Redmine (check the \"history\"
     link usually on top right of the page)
@@ -49,7 +49,7 @@ detector relevant to the simulation and reconstruction.
 
 
 
-Detector geometry(#Detector-geometry)
+Detector geometry
 ------------------------------------------------------
 
 Detector geometry is described in [its own
@@ -57,12 +57,12 @@ page](Detector_geometry.html).
 
 
 
-Timings(#Timings)
+Timings
 ----------------------------------
 
 
 
-### Code and configuration information(#Code-and-configuration-information)
+### Code and configuration information
 
 -   \[[v08\_19\_01](/redmine/versions/1911){.version}\] ICARUS uses the
     implementation `detinfo::DetectorClocksStandard` of the detector
@@ -90,7 +90,7 @@ This is an excerpt of from `icarus_detectorclocks`
 
 
 
-### Timing overview(#Timing-overview)
+### Timing overview
 
 For a more detailed explanation of these timings and their relation, see
 the next section.
@@ -157,7 +157,7 @@ Pictographically:\
 
 
 
-### Detailed timing explanation(#Detailed-timing-explanation)
+### Detailed timing explanation
 
 LArSoft timing system is documented with the `detinfo::DetectorClocks`
 provider interface, which manages the conversion between different
@@ -200,18 +200,18 @@ Doxygen](http://nusoft.fnal.gov/larsoft/doxsvn/html/classdetinfo_1_1DetectorCloc
 
 
 
-Simulation(#Simulation)
+Simulation
 ----------------------------------------
 
 
 
-### Event generation(#Event-generation)
+### Event generation
 
 -   [cosmic rays](Cosmic_ray_generation_(CORSIKA).html)
 
 
 
-### TPC simulation(#TPC-simulation)
+### TPC simulation
 
 -   \[[v08\_19\_01](/redmine/versions/1911){.version}\] TPC readout
     starts recording 340 µs before the global event trigger
@@ -220,11 +220,11 @@ Simulation(#Simulation)
 
 
 
-### Optical simulation(#Optical-simulation)
+### Optical simulation
 
 
 
-#### Scintillation(#Scintillation)
+#### Scintillation
 
 Scintillation is simulated based on energy deposition by each particle
 propagating in the detector, via the `FastOptical` process defined in
@@ -321,7 +321,7 @@ scintillation by particle type
 
 
 
-#### Transportation of scintillation photons to the optical detectors(#Transportation-of-scintillation-photons-to-the-optical-detectors)
+#### Transportation of scintillation photons to the optical detectors
 
 A summary of the procedures and settings used in ICARUS can be found in
 [SBN DocDB
@@ -445,7 +445,7 @@ Note that the propagation time is explicitly enabled.
 
 
 
-#### Optical readout simulation(#Optical-readout-simulation)
+#### Optical readout simulation
 
 Optical detector readout simulation is performed by
 `icarus::simPMTIcarus` module via `icarus::opdet::PMTsimulationAlg`.

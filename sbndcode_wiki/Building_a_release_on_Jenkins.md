@@ -5,12 +5,12 @@ title: Building a release on Jenkins
 
 
 
-Building a release on Jenkins(#Building-a-release-on-Jenkins)
+Building a release on Jenkins
 ==============================================================================
 
 
 
-Summary(#Summary)
+Summary
 ----------------------------------
 
 -   Go to
@@ -20,7 +20,7 @@ Summary(#Summary)
 
 
 
-Instructions(#Instructions)
+Instructions
 --------------------------------------------
 
 -   Log on to the Jenkins server.
@@ -63,7 +63,7 @@ Instructions(#Instructions)
 
 
 
-Build configuration(#Build-configuration)
+Build configuration
 ----------------------------------------------------------
 
 -   Parameter descriptions:

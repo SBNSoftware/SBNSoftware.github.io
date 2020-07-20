@@ -9,52 +9,52 @@ title: ReleaseNotes051201stable
 
 
 
-sbndcode v05\_12\_01\_stable Release Notes(#sbndcode-v05_12_01_stable-Release-Notes)
+sbndcode v05\_12\_01\_stable Release Notes
 =====================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v05\_12\_01\_stable Release
-    Notes](#sbndcode-v05_12_01_stable-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v05\_12\_01\_stable](#sbndcode-v05_12_01_stable)
-    -   [sbndutil v01\_14\_00\_stable](#sbndutil-v01_14_00_stable)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v05\_12\_01\_stable]
+    -   [sbndutil v01\_14\_00\_stable]
 
 [list of sbndcode releases](List_of_SBND_code_releases.html)
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 Last v05 before moving to larsoft v06
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v05\_12\_01\_stable(#sbndcode-v05_12_01_stable)
+sbndcode v05\_12\_01\_stable
 -------------------------------------------------------------------------
 
 -   2017-04-11 Thomas Brooks : Merge branch
@@ -65,7 +65,7 @@ sbndcode v05\_12\_01\_stable(#sbndcode-v05_12_01_stable)
 
 
 
-sbndutil v01\_14\_00\_stable(#sbndutil-v01_14_00_stable)
+sbndutil v01\_14\_00\_stable
 -------------------------------------------------------------------------
 
 -   2017-04-11 Thomas Brooks : Merge branch

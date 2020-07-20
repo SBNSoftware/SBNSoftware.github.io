@@ -9,19 +9,19 @@ title: ReleaseNotes0707001MCP09
 
 
 
-sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes(#sbndcode-v07_07_00_1_MCP0_9-Release-Notes)
+sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes
 ===========================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v07\_07\_00\_1\_MCP0\_9 Release
-    Notes](#sbndcode-v07_07_00_1_MCP0_9-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v07\_07\_00\_1\_MCP0\_9](#sbndcode-v07_07_00_1_MCP0_9)
-    -   [sbndutil v07\_07\_00\_1\_MCP0\_9](#sbndutil-v07_07_00_1_MCP0_9)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v07\_07\_00\_1\_MCP0\_9]
+    -   [sbndutil v07\_07\_00\_1\_MCP0\_9]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v07\_07\_00\_1\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for MCP 0.9
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Added bnb-like single particle gun fcl
@@ -50,22 +50,22 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v07\_07\_00\_1\_MCP0\_9(#sbndcode-v07_07_00_1_MCP0_9)
+sbndcode v07\_07\_00\_1\_MCP0\_9
 -------------------------------------------------------------------------------
 
 -   2018-10-08 Thomas Brooks : Merge branch
@@ -131,7 +131,7 @@ sbndcode v07\_07\_00\_1\_MCP0\_9(#sbndcode-v07_07_00_1_MCP0_9)
 
 
 
-sbndutil v07\_07\_00\_1\_MCP0\_9(#sbndutil-v07_07_00_1_MCP0_9)
+sbndutil v07\_07\_00\_1\_MCP0\_9
 -------------------------------------------------------------------------------
 
 -   2018-10-08 Thomas Brooks : Merge branch

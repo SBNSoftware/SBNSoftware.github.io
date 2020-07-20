@@ -5,7 +5,7 @@ title: Commit emails
 
 
 
-Commit emails(#Commit-emails)
+Commit emails
 ==============================================
 
 -   You should sign up for the SBND-COMMIT mailing list on listserv in

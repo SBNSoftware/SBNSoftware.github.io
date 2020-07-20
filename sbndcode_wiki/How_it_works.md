@@ -5,7 +5,7 @@ title: How it works
 
 
 
-How it works(#How-it-works)
+How it works
 ============================================
 
 The core of the process currently relies on

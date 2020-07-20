@@ -5,50 +5,50 @@ title: MC sample descriptions
 
 
 
-MC sample descriptions(#MC-sample-descriptions)
+MC sample descriptions
 ================================================================
 
 -   **Table of contents**
--   [MC sample descriptions](#MC-sample-descriptions)
-    -   [Particle gun (single) samples](#Particle-gun-single-samples)
-        -   [prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree](#prodsingle_mu_3GeV_fixposupstream_gaus20degree)
-        -   [prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree](#prodsingle_mu_3GeV_fixposapacross_gaus20degree)
-        -   [prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner](#prodsingle_mu_10GeV_frontcorners_cornertocorner)
-        -   [prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing](#prodsingle_mu_3GeV_uniformupstream_fixangleforwardgoing)
-        -   [prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree](#prodsingle_dualmu_5GeV_fixposcontained_openingangle10degree)
-        -   [prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle)
-        -   [prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle)
-        -   [prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle)
-        -   [prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle)
-        -   [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
-        -   [prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle](#prodsingle_proton_200-2250MeV_fixposcontained_fixangle)
-        -   [prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle](#prodsingle_pi_200-2250MeV_fixposcontained_fixangle)
-        -   [prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl](#prodsingle_electron_100-2250MeV_fixposcontained_fixanglefcl)
-        -   [prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl](#prodsingle_gamma_100-2250MeV_fixposcontained_fixanglefcl)
-    -   [Beam (GENIE) samples](#Beam-GENIE-samples)
-        -   [prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl](#prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1fcl)
-        -   [prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl](#prodgenie_nu_spill_cryostat_gsimple-configb-v1fcl)
-        -   [prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl](#prodgenie_nu_spill_world_gsimple-configc-v1fcl)
-        -   [prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl](#prodgenie_nue_spill_cryostat_gsimple-configb-v1fcl)
-    -   [Cosmic ray (CORSIKA) samples](#Cosmic-ray-CORSIKA-samples)
-        -   [prodcorsika\_cosmics\_cmc.fcl](#prodcorsika_cosmics_cmcfcl)
-        -   [prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl](#prodcorsika_cosmics_cmc_frontbackcrt_mu_filterfcl)
-    -   [Overlayed (overlay) samples](#Overlayed-overlay-samples)
-        -   [prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat](#prodoverlay_corsika_cosmics_cmc_genie_nu_spill_gsimple-configb-v1_cryostat)
-    -   [Supernova (marley) samples](#Supernova-marley-samples)
-        -   [prodmarley\_nue\_fermidirac](#prodmarley_nue_fermidirac)
+-   [MC sample descriptions]
+    -   [Particle gun (single) samples]
+        -   [prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree]
+        -   [prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree]
+        -   [prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner]
+        -   [prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing]
+        -   [prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree]
+        -   [prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle]
+        -   [prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle]
+        -   [prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle]
+        -   [prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle]
+        -   [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
+        -   [prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle]
+        -   [prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle]
+        -   [prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl]
+        -   [prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl]
+    -   [Beam (GENIE) samples]
+        -   [prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl]
+        -   [prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl]
+        -   [prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl]
+        -   [prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl]
+    -   [Cosmic ray (CORSIKA) samples]
+        -   [prodcorsika\_cosmics\_cmc.fcl]
+        -   [prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl]
+    -   [Overlayed (overlay) samples]
+        -   [prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat]
+    -   [Supernova (marley) samples]
+        -   [prodmarley\_nue\_fermidirac]
 
 
 
-Particle gun (single) samples(#Particle-gun-single-samples) 
+Particle gun (single) samples 
 ----------------------------------------------------------------------------
 
 
 
-### prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree(#prodsingle_mu_3GeV_fixposupstream_gaus20degree)
+### prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree
 
-[Details](#){#collapse-8097cb59-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-8097cb59-show .collapsible
+.collapsed}[Details]
 
 ::: 
 A rough basis case for particle generation, useful for making quick
@@ -65,14 +65,14 @@ generally through going.
 
 
 
-### prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree(#prodsingle_mu_3GeV_fixposapacross_gaus20degree)
+### prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree
 
-[Details](#){#collapse-dc7eb08c-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-dc7eb08c-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Similar to
-[prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree](#prodsingle_mu_3GeV_fixposupstream_gaus20degree)
+[prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree]
 but the fixed start point is chosen to be just outside of the TPC2 wall
 closest to the APA plane and the initial angles are chosen such that the
 track crosses the central cathode and (generally) the APA plane in TPC1.
@@ -87,10 +87,10 @@ applied T0.
 
 
 
-### prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner(#prodsingle_mu_10GeV_frontcorners_cornertocorner)
+### prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner
 
-[Details](#){#collapse-948ad891-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-948ad891-show .collapsible
+.collapsed}[Details]
 
 ::: 
 The sample is designed to test low level wire characteristics for every
@@ -114,10 +114,10 @@ deposition.
 
 
 
-### prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing(#prodsingle_mu_3GeV_uniformupstream_fixangleforwardgoing)
+### prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing
 
-[Details](#){#collapse-4d597ff5-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-4d597ff5-show .collapsible
+.collapsed}[Details]
 
 ::: 
 The sample contains a set of straight muon trajectories which start just
@@ -134,10 +134,10 @@ LAr impurities and electron diffusion.
 
 
 
-### prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree(#prodsingle_dualmu_5GeV_fixposcontained_openingangle10degree)
+### prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree
 
-[Details](#){#collapse-237738af-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-237738af-show .collapsible
+.collapsed}[Details]
 
 ::: 
 This sample contains two muons which have exactly the same
@@ -156,29 +156,29 @@ angle
 
 
 
-### prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle)
+### prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle
 
-[Details](#){#collapse-218e4745-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-218e4745-show .collapsible
+.collapsed}[Details]
 
 ::: 
 This sample contains single, fairly low momentum electrons fired
 isotropically from the centre of TPC2. Useful for comparing with
-[prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle).
+[prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle].
 
 !(/redmine/attachments/download/37688/prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle.evd.larortho3d.png)
 :::
 
 
 
-### prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle)
+### prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle
 
-[Details](#){#collapse-9b4dda3c-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-9b4dda3c-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Same as
-[prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle)
+[prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle]
 but with a uniform momentum range of 200-1500 MeV.
 
 !(/redmine/attachments/download/38653/prodsingle_electron_200-1500MeV_fixposcentertpc1_isotropicangle.png)
@@ -186,29 +186,29 @@ but with a uniform momentum range of 200-1500 MeV.
 
 
 
-### prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle)
+### prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle
 
-[Details](#){#collapse-84e0146c-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-84e0146c-show .collapsible
+.collapsed}[Details]
 
 ::: 
 This sample contains single, fairly low momentum photons fired
 isotropically from the centre of TPC2. Useful for comparing with
-[prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_electron_50-300MeV_fixposcentertpc1_isotropicangle).
+[prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle].
 
 !(/redmine/attachments/download/37689/prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle.evd.larorotho3d.png)
 :::
 
 
 
-### prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle(#prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle)
+### prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle
 
-[Details](#){#collapse-6a79c7d2-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-6a79c7d2-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Same as
-[prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle](#prodsingle_gamma_50-300MeV_fixposcentertpc1_isotropicangle)
+[prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle]
 but with a uniform momentum range of 200-1500 MeV.
 
 !(/redmine/attachments/download/38652/prodsingle_gamma_200-1500MeV_fixposcentertpc1_isotropicangle.png)
@@ -216,10 +216,10 @@ but with a uniform momentum range of 200-1500 MeV.
 
 
 
-### prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle(#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+### prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle
 
-[Details](#){#collapse-deeb4671-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-deeb4671-show .collapsible
+.collapsed}[Details]
 
 ::: 
 A single muon with a starting point inside of TPC 2, fixed initial
@@ -234,14 +234,14 @@ PID.
 
 
 
-### prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle(#prodsingle_proton_200-2250MeV_fixposcontained_fixangle)
+### prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle
 
-[Details](#){#collapse-5908c006-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-5908c006-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Similar to
-[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
 but for protons. The lower momentum threshold for this sample was taken
 from an ArgoNeuT talk and the upper momentum bound was taken from the
 PSTAR database but increased slightly by hand.\
@@ -252,18 +252,18 @@ NB the upper momentum bound could probably be increased more.
 
 
 
-### prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle(#prodsingle_pi_200-2250MeV_fixposcontained_fixangle)
+### prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle
 
-[Details](#){#collapse-0b76fdfc-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-0b76fdfc-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Similar to
-[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
 but for pi+. The lower momentum threshold is taken from
-[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
 and the upper momentum bound is taken from
-[prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle](#prodsingle_proton_200-2250MeV_fixposcontained_fixangle)
+[prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle]
 as a pi+ is kind of like a muon which also obeys the strong force.\
 NB hand scans showed the events were contained by the momentum bounds
 could be improved.
@@ -273,16 +273,16 @@ could be improved.
 
 
 
-### prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl(#prodsingle_electron_100-2250MeV_fixposcontained_fixanglefcl)
+### prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl
 
-[Details](#){#collapse-6ed0fe27-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-6ed0fe27-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Similar to
-[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
 but for electrons. Both momentum bounds are stolen from
-[pprodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle](#prodsingle_pi_200-2250MeV_fixposcontained_fixangle).\
+[pprodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle].\
 NB hand scans showed the events were contained but there really isn\'t
 any reason why the bounds for an electron should be the same as a pi+;
 the momentum bounds need improving.
@@ -292,16 +292,16 @@ the momentum bounds need improving.
 
 
 
-### prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl(#prodsingle_gamma_100-2250MeV_fixposcontained_fixanglefcl)
+### prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl
 
-[Details](#){#collapse-4ed726f3-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-4ed726f3-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Similar to
-[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle](#prodsingle_mu_100-1257MeV_fixposcontained_fixangle)
+[prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
 but for photons. Both momentum bounds are stolen from
-[pprodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle](#prodsingle_pi_200-2250MeV_fixposcontained_fixangle).\
+[pprodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle].\
 NB hand scans showed the events were contained but there really isn\'t
 any reason why the bounds for a photon should be the same as a pi+; the
 momentum bounds need improving.
@@ -311,15 +311,15 @@ momentum bounds need improving.
 
 
 
-Beam (GENIE) samples(#Beam-GENIE-samples) 
+Beam (GENIE) samples 
 ----------------------------------------------------------
 
 
 
-### prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1fcl)
+### prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl
 
-[Details](#){#collapse-9cbf9d07-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-9cbf9d07-show .collapsible
+.collapsed}[Details]
 
 ::: 
 A rough basis case for beam-related events. This fcl file produces
@@ -333,10 +333,10 @@ configuration.
 
 
 
-### prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nu_spill_cryostat_gsimple-configb-v1fcl)
+### prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl
 
-[Details](#){#collapse-46f359ff-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-46f359ff-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Simulates genie booster beam events with full spill structure (5e12
@@ -350,10 +350,10 @@ configuration.
 
 
 
-### prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl(#prodgenie_nu_spill_world_gsimple-configc-v1fcl)
+### prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl
 
-[Details](#){#collapse-9ff32373-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-9ff32373-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Simulates genie booster beam events with full spill structure (5e12
@@ -373,10 +373,10 @@ stopping.
 
 
 
-### prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl(#prodgenie_nue_spill_cryostat_gsimple-configb-v1fcl)
+### prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl
 
-[Details](#){#collapse-dd090a00-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-dd090a00-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Uses the same configuration as
@@ -394,15 +394,15 @@ oscillated electron neutrinos from the intrinsic ones.
 
 
 
-Cosmic ray (CORSIKA) samples(#Cosmic-ray-CORSIKA-samples) 
+Cosmic ray (CORSIKA) samples 
 --------------------------------------------------------------------------
 
 
 
-### prodcorsika\_cosmics\_cmc.fcl(#prodcorsika_cosmics_cmcfcl)
+### prodcorsika\_cosmics\_cmc.fcl
 
-[Details](#){#collapse-3f0deff7-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-3f0deff7-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Produces cosmic rays using the Cosmic Mass Composition (CMC) model
@@ -416,10 +416,10 @@ details are shown in a talk by Matt Bass ([Docdb
 
 
 
-### prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl(#prodcorsika_cosmics_cmc_frontbackcrt_mu_filterfcl)
+### prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl
 
-[Details](#){#collapse-c6883680-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-c6883680-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Produces CMC cosmic rays with exactly the same settings as
@@ -434,15 +434,15 @@ the front/back CRTs because of an upstream scatter.
 
 
 
-Overlayed (overlay) samples(#Overlayed-overlay-samples) 
+Overlayed (overlay) samples 
 ------------------------------------------------------------------------
 
 
 
-### prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat(#prodoverlay_corsika_cosmics_cmc_genie_nu_spill_gsimple-configb-v1_cryostat)
+### prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat
 
-[Details](#){#collapse-cb07dea2-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-cb07dea2-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Produces CORSIKA-based composite mass model cosmics overlayed in the
@@ -457,15 +457,15 @@ cryostat volume.
 
 
 
-Supernova (marley) samples(#Supernova-marley-samples) 
+Supernova (marley) samples 
 ----------------------------------------------------------------------
 
 
 
-### prodmarley\_nue\_fermidirac(#prodmarley_nue_fermidirac)
+### prodmarley\_nue\_fermidirac
 
-[Details](#){#collapse-1a58432a-show .collapsible
-.collapsed}[Details](#)
+[Details]{#collapse-1a58432a-show .collapsible
+.collapsed}[Details]
 
 ::: 
 Produces MARLEHY-based electron neutrino interactions from supernova

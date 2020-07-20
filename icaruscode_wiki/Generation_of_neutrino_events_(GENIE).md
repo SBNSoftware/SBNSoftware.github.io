@@ -5,30 +5,30 @@ title: 'Generation of neutrino events (GENIE)'
 
 
 
-Generation of neutrino events (GENIE)(#Generation-of-neutrino-events-GENIE)
+Generation of neutrino events (GENIE)
 ============================================================================================
 
 -   **Table of contents**
 -   [Generation of neutrino events
-    (GENIE)](#Generation-of-neutrino-events-GENIE)
+    (GENIE)]
     -   [Selecting generated interactions: FilterNeutrinosActiveVolume
-        module](#Selecting-generated-interactions-FilterNeutrinosActiveVolume-module)
+        module]
         -   [Selecting events with interactions in selected
-            volumes](#Selecting-events-with-interactions-in-selected-volumes)
+            volumes]
             -   [Interactions in the active volumes of the
-                detector](#Interactions-in-the-active-volumes-of-the-detector)
+                detector]
             -   [Interaction location via volume
-                name](#Interaction-location-via-volume-name)
+                name]
             -   [Interaction location via volume
-                coordinates](#Interaction-location-via-volume-coordinates)
+                coordinates]
         -   [Selecting events with a specific interaction
-            type](#Selecting-events-with-a-specific-interaction-type)
+            type]
         -   [Selecting events via a specific current
-            type](#Selecting-events-via-a-specific-current-type)
+            type]
 
 
 
-Selecting generated interactions: FilterNeutrinosActiveVolume module(#Selecting-generated-interactions-FilterNeutrinosActiveVolume-module)
+Selecting generated interactions: FilterNeutrinosActiveVolume module
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 There are a few facilities in LArSoft and ICARUS code which allow
@@ -61,7 +61,7 @@ filter, and both interactions will be included in the selected event.
 
 
 
-### Selecting events with interactions in selected volumes(#Selecting-events-with-interactions-in-selected-volumes)
+### Selecting events with interactions in selected volumes
 
 Events can be selected if they have a neutrino-like interaction in a
 specified volume.
@@ -73,7 +73,7 @@ accepted if it happens in *any* of the specified volumes.
 
 
 
-#### Interactions in the active volumes of the detector(#Interactions-in-the-active-volumes-of-the-detector)
+#### Interactions in the active volumes of the detector
 
 The active volume is defined as the volume in between the anode and
 cathode planes, limited by the field cage. That volume is fully
@@ -108,7 +108,7 @@ location requirement can be specified.
 
 
 
-#### Interaction location via volume name(#Interaction-location-via-volume-name)
+#### Interaction location via volume name
 
 Events can be required to have at least one interaction in any of the
 specified volumes, described by the name they have in the GDML detector
@@ -141,7 +141,7 @@ detectors like ICARUS `inActive: true` is actually a shortcut for
 
 
 
-#### Interaction location via volume coordinates(#Interaction-location-via-volume-coordinates)
+#### Interaction location via volume coordinates
 
 Events can be required to have at least one interaction in any of the
 specified box-shaped volumes, described by the coordinate ranges on each
@@ -184,7 +184,7 @@ but can\'t be specified together with the request of active volume
 
 
 
-### Selecting events with a specific interaction type(#Selecting-events-with-a-specific-interaction-type)
+### Selecting events with a specific interaction type
 
 The filter module
 [[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}
@@ -215,7 +215,7 @@ This requirement can be specified *together with* the current type
 
 
 
-### Selecting events via a specific current type(#Selecting-events-via-a-specific-current-type)
+### Selecting events via a specific current type
 
 The filter module
 [[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}

@@ -9,19 +9,19 @@ title: ReleaseNotes085002
 
 
 
-sbndcode v08\_50\_02 Release Notes(#sbndcode-v08_50_02-Release-Notes)
+sbndcode v08\_50\_02 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_50\_02 Release
-    Notes](#sbndcode-v08_50_02-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_50\_02](#sbndcode-v08_50_02)
-    -   [sbndutil v08\_50\_02](#sbndutil-v08_50_02)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_50\_02]
+    -   [sbndutil v08\_50\_02]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -31,19 +31,19 @@ v08\_50\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_50_02/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly update
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   This larsoft release includes an important bug fix for larreco and
@@ -51,7 +51,7 @@ Bug fixes(#Bug-fixes)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -59,12 +59,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_50\_02(#sbndcode-v08_50_02)
+sbndcode v08\_50\_02
 ----------------------------------------------------------
 
 -   2020-05-01 Andrew Scarff : Merge branch \'release/v08\_50\_02\'
@@ -75,7 +75,7 @@ sbndcode v08\_50\_02(#sbndcode-v08_50_02)
 
 
 
-sbndutil v08\_50\_02(#sbndutil-v08_50_02)
+sbndutil v08\_50\_02
 ----------------------------------------------------------
 
 -   2020-05-01 Andrew Scarff : Merge branch \'release/v08\_50\_02\'

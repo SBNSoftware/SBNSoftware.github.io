@@ -5,19 +5,19 @@ title: Upgrade to LArSoft 6
 
 
 
-Upgrade to LArSoft 6(#Upgrade-to-LArSoft-6)
+Upgrade to LArSoft 6
 ============================================================
 
 -   **Table of contents**
--   [Upgrade to LArSoft 6](#Upgrade-to-LArSoft-6)
+-   [Upgrade to LArSoft 6]
     -   [LArSoft resources on updating
-        code](#LArSoft-resources-on-updating-code)
+        code]
     -   [From LArSoft 5.12.1 to LArSoft
-        6.32.0](#From-LArSoft-5121-to-LArSoft-6320)
+        6.32.0]
 
 
 
-LArSoft resources on updating code(#LArSoft-resources-on-updating-code) 
+LArSoft resources on updating code 
 ----------------------------------------------------------------------------------------
 
 The code in our branches (including in fact `develop`) needs to be
@@ -36,7 +36,7 @@ for `v05_13_00`, `v06_00_01`, `v06_02_00`, `v06_11_00`, `v06_14_00`,
 
 
 
-From LArSoft 5.12.1 to LArSoft 6.32.0(#From-LArSoft-5121-to-LArSoft-6320) 
+From LArSoft 5.12.1 to LArSoft 6.32.0 
 ------------------------------------------------------------------------------------------
 
 The old feature branches created before April 17, 2017 are based on a

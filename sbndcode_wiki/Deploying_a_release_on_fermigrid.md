@@ -5,12 +5,12 @@ title: Deploying a release on fermigrid
 
 
 
-Deploying a release on fermigrid(#Deploying-a-release-on-fermigrid)
+Deploying a release on fermigrid
 ====================================================================================
 
 
 
-Legacy(#Legacy)
+Legacy
 --------------------------------
 
 -   We no longer deploy `sbndcode` and `sbndutil` on `/grid/fermiapp`.
@@ -22,7 +22,7 @@ Legacy(#Legacy)
 
 
 
-Old instructions(#Old-instructions)
+Old instructions
 ----------------------------------------------------
 
 -   The method requires the script pullProducts from

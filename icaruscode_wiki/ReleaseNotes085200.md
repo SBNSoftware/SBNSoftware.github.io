@@ -9,19 +9,19 @@ title: ReleaseNotes085200
 
 
 
-icaruscode v08\_52\_00 Release Notes(#icaruscode-v08_52_00-Release-Notes)
+icaruscode v08\_52\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_52\_00 Release
-    Notes](#icaruscode-v08_52_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_37\_00](#icaruscode-v08_37_00)
-    -   [icarusutil v08\_51\_00](#icarusutil-v08_51_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_37\_00]
+    -   [icarusutil v08\_51\_00]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,7 +30,7 @@ v08\_52\_00](http://scisoft.fnal.gov/scisoft/bundles/icaruscode/v08_52_00/icarus
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Stay current with LArSoft - latest versions of
@@ -39,7 +39,7 @@ Purpose(#Purpose)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Integration update that picks ups various improvements
@@ -49,21 +49,21 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   Continuing to ferret out issues surrounding default geometry change
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   None
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -71,7 +71,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_37\_00(#icaruscode-v08_37_00)
+icaruscode v08\_37\_00
 --------------------------------------------------------------
 
 -   2020-05-17 - Tracy Usher - Moving to LArSoft v08\_52\_00
@@ -143,7 +143,7 @@ icaruscode v08\_37\_00(#icaruscode-v08_37_00)
 
 
 
-icarusutil v08\_51\_00(#icarusutil-v08_51_00)
+icarusutil v08\_51\_00
 --------------------------------------------------------------
 
 -   unchanged

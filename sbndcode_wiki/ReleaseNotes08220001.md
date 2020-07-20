@@ -9,19 +9,19 @@ title: ReleaseNotes08220001
 
 
 
-sbndcode v08\_22\_00\_01 Release Notes(#sbndcode-v08_22_00_01-Release-Notes)
+sbndcode v08\_22\_00\_01 Release Notes
 =============================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_22\_00\_01 Release
-    Notes](#sbndcode-v08_22_00_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_22\_00\_01](#sbndcode-v08_22_00_01)
-    -   [sbndutil v08\_24\_00](#sbndutil-v08_24_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_22\_00\_01]
+    -   [sbndutil v08\_24\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,24 +30,24 @@ v08\_22\_00\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_22_00_01/sbndc
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Genie v3 test release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   genie\_xsec v3.00.04
@@ -56,12 +56,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_22\_00\_01(#sbndcode-v08_22_00_01)
+sbndcode v08\_22\_00\_01
 -----------------------------------------------------------------
 
 -   2019-07-03 Thomas Brooks : Merge remote-tracking branch
@@ -73,7 +73,7 @@ sbndcode v08\_22\_00\_01(#sbndcode-v08_22_00_01)
 
 
 
-sbndutil v08\_24\_00(#sbndutil-v08_24_00)
+sbndutil v08\_24\_00
 ----------------------------------------------------------
 
 -   2019-07-03 Thomas Brooks : Update for larsoft v08\_22\_00\_01 (genie

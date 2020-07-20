@@ -5,7 +5,7 @@ title: SBND servers
 
 
 
-SBND servers(#SBND-servers)
+SBND servers
 ============================================
 
 This is a quick summary of the servers available to SBND and their
@@ -13,7 +13,7 @@ purpose.
 
 
 
-Servers from Fermilab(#Servers-from-Fermilab)
+Servers from Fermilab
 --------------------------------------------------------------
 
 Often servers are offered by Fermilab in the form of *virtual machines*,
@@ -22,7 +22,7 @@ names.
 
 
 
-### General purpose: interactive nodes open to all SBND users(#General-purpose-interactive-nodes-open-to-all-SBND-users)
+### General purpose: interactive nodes open to all SBND users
 
 Access to these servers is via SSH with FNAL.GOV Kerberos credentials:
 
@@ -53,7 +53,7 @@ Desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 
 
 
-### SAM database setup(#SAM-database-setup)
+### SAM database setup
 
 The server is [`sbndsamgpvm01.fnal.gov`]{style="color: crimson;"},
 [accessible as user
@@ -63,7 +63,7 @@ Brailsford](mailto:d.brailsford@lancaster.ac.uk).
 
 
 
-### DAQ nodes(#DAQ-nodes)
+### DAQ nodes
 
 -   DAQ test stand nodes are listed in [their specific
     page](Test_stand_servers_names_and_purpose.html)

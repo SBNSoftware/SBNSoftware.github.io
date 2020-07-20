@@ -9,19 +9,19 @@ title: ReleaseNotes06700101SBNWorkshop0318
 
 
 
-sbndcode v06\_70\_01\_01\_SBNWorkshop0318 Release Notes(#sbndcode-v06_70_01_01_SBNWorkshop0318-Release-Notes)
+sbndcode v06\_70\_01\_01\_SBNWorkshop0318 Release Notes
 ==============================================================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_70\_01\_01\_SBNWorkshop0318 Release
-    Notes](#sbndcode-v06_70_01_01_SBNWorkshop0318-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
     -   [sbndcode
-        v06\_70\_01\_01\_SBNWorkshop0318](#sbndcode-v06_70_01_01_SBNWorkshop0318)
+        v06\_70\_01\_01\_SBNWorkshop0318]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v06\_70\_01\_01\_SBNWorkshop0318](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Freeze for SBN workshop 03/18 (part 2)
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Intrinsic nue BNB genie fcl file
@@ -45,22 +45,22 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_70\_01\_01\_SBNWorkshop0318(#sbndcode-v06_70_01_01_SBNWorkshop0318)
+sbndcode v06\_70\_01\_01\_SBNWorkshop0318
 --------------------------------------------------------------------------------------------------
 
 -   2018-03-14 Thomas Brooks : Freeze for SBN workshop 0318 (Part 2)

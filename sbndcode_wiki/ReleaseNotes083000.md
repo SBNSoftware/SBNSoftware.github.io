@@ -9,19 +9,19 @@ title: ReleaseNotes083000
 
 
 
-sbndcode v08\_30\_00 Release Notes(#sbndcode-v08_30_00-Release-Notes)
+sbndcode v08\_30\_00 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v08\_30\_00 Release
-    Notes](#sbndcode-v08_30_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v08\_30\_00](#sbndcode-v08_30_00)
-    -   [sbndutil v08\_30\_00](#sbndutil-v08_30_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v08\_30\_00]
+    -   [sbndutil v08\_30\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,14 +30,14 @@ v08\_30\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_30_00/sbndcode-v08
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Weekly release
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   CRT T0 tagging added to the standard reconstruction chain
@@ -50,12 +50,12 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -63,12 +63,12 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v08\_30\_00(#sbndcode-v08_30_00)
+sbndcode v08\_30\_00
 ----------------------------------------------------------
 
 -   2019-08-30 Thomas Brooks : Merge branch \'release/v08\_30\_00\'
@@ -82,7 +82,7 @@ sbndcode v08\_30\_00(#sbndcode-v08_30_00)
 
 
 
-sbndutil v08\_30\_00(#sbndutil-v08_30_00)
+sbndutil v08\_30\_00
 ----------------------------------------------------------
 
 -   2019-08-30 Thomas Brooks : Merge branch \'release/v08\_30\_00\'

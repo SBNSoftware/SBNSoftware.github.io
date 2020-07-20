@@ -9,19 +9,19 @@ title: ReleaseNotes064001
 
 
 
-sbndcode v06\_40\_01 Release Notes(#sbndcode-v06_40_01-Release-Notes)
+sbndcode v06\_40\_01 Release Notes
 ======================================================================================
 
 -   **Table of contents**
 -   [sbndcode v06\_40\_01 Release
-    Notes](#sbndcode-v06_40_01-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [sbndcode v06\_40\_01](#sbndcode-v06_40_01)
-    -   [sbndutil v01\_16\_00](#sbndutil-v01_16_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [sbndcode v06\_40\_01]
+    -   [sbndutil v01\_16\_00]
 
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
@@ -30,34 +30,34 @@ v06\_40\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_40_01/sbndcode-v06
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Fixes bug in evd
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 
 
-sbndcode v06\_40\_01(#sbndcode-v06_40_01)
+sbndcode v06\_40\_01
 ----------------------------------------------------------
 
 -   2017-06-17 Thomas Brooks : Merge branch \'release/v06\_40\_01\'
@@ -74,7 +74,7 @@ sbndcode v06\_40\_01(#sbndcode-v06_40_01)
 
 
 
-sbndutil v01\_16\_00(#sbndutil-v01_16_00)
+sbndutil v01\_16\_00
 ----------------------------------------------------------
 
 -   2017-06-17 Thomas Brooks : Merge branch \'release/v01\_16\_00\'

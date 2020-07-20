@@ -9,19 +9,19 @@ title: ReleaseNotes083400
 
 
 
-icaruscode v08\_34\_00 Release Notes(#icaruscode-v08_34_00-Release-Notes)
+icaruscode v08\_34\_00 Release Notes
 ==========================================================================================
 
 -   **Table of contents**
 -   [icaruscode v08\_34\_00 Release
-    Notes](#icaruscode-v08_34_00-Release-Notes)
-    -   [Purpose](#Purpose)
-    -   [New features](#New-features)
-    -   [Bug fixes](#Bug-fixes)
-    -   [Updated dependencies](#Updated-dependencies)
--   [Change List](#Change-List)
-    -   [icaruscode v08\_34\_00](#icaruscode-v08_34_00)
-    -   [icarusutil v08\_34\_00](#icarusutil-v08_34_00)
+    Notes]
+    -   [Purpose]
+    -   [New features]
+    -   [Bug fixes]
+    -   [Updated dependencies]
+-   [Change List]
+    -   [icaruscode v08\_34\_00]
+    -   [icarusutil v08\_34\_00]
 
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
@@ -30,14 +30,14 @@ v08\_34\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_34_00/icaruscode-v
 
 
 
-Purpose(#Purpose)
+Purpose
 ----------------------------------
 
 -   Catch up release to stay current with LArSoft
 
 
 
-New features(#New-features)
+New features
 --------------------------------------------
 
 -   Integration update that picks ups various improvements but nothing
@@ -45,14 +45,14 @@ New features(#New-features)
 
 
 
-Bug fixes(#Bug-fixes)
+Bug fixes
 --------------------------------------
 
 -   (none?)
 
 
 
-Updated dependencies(#Updated-dependencies)
+Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
@@ -60,7 +60,7 @@ Updated dependencies(#Updated-dependencies)
 
 
 
-Change List(#Change-List)
+Change List
 ==========================================
 
 (generated with the command \"git log \--date=short
@@ -68,7 +68,7 @@ Change List(#Change-List)
 
 
 
-icaruscode v08\_34\_00(#icaruscode-v08_34_00)
+icaruscode v08\_34\_00
 --------------------------------------------------------------
 
 -   2019-11-01 - Usher, Tracy L - Merge remote-tracking branch
@@ -84,7 +84,7 @@ icaruscode v08\_34\_00(#icaruscode-v08_34_00)
 
 
 
-icarusutil v08\_34\_00(#icarusutil-v08_34_00)
+icarusutil v08\_34\_00
 --------------------------------------------------------------
 
 -   2019-11-01 - Usher, Tracy L - LArSoft v08\_34\_00

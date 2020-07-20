@@ -5,7 +5,7 @@ title: Updating sbnd data
 
 
 
-Updating sbnd data(#Updating-sbnd-data)
+Updating sbnd data
 ========================================================
 
 -   sbnd\_data is not version controlled by git so everything is much
@@ -14,7 +14,7 @@ Updating sbnd data(#Updating-sbnd-data)
 
 
 
-Current version can be updated(#Current-version-can-be-updated)
+Current version can be updated
 --------------------------------------------------------------------------------
 
 -   If new files or directories need to be added the current version can
@@ -44,7 +44,7 @@ Current version can be updated(#Current-version-can-be-updated)
 
 
 
-New version required(#New-version-required)
+New version required
 ------------------------------------------------------------
 
 -   If a file that already exists needs to be updated then the version
@@ -65,7 +65,7 @@ New version required(#New-version-required)
 
 
 
-New version worked example(#New-version-worked-example)
+New version worked example
 ------------------------------------------------------------------------
 
     ssh tbrooks@sbndgpvm01.fnal.gov

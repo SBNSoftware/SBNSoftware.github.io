@@ -5,7 +5,7 @@ title: Using projectpy for grid jobs
 
 
 
-Using project.py for Grid Jobs(#Using-projectpy-for-Grid-Jobs)
+Using project.py for Grid Jobs
 ===============================================================================
 
 Explanation courtesy of Dom Brailsford. Firstly to use the grid use
@@ -18,7 +18,7 @@ This gives more detail on the specific elements.
 
 
 
-Before Starting Grid Life(#Before-Starting-Grid-Life)
+Before Starting Grid Life
 ----------------------------------------------------------------------
 
 Here is a useful process to follow when you submit jobs to the gird.
@@ -62,7 +62,7 @@ Here is a useful process to follow when you submit jobs to the gird.
 
 
 
-How the write a Project.py XML file(#How-the-write-a-Projectpy-XML-file)
+How the write a Project.py XML file
 -----------------------------------------------------------------------------------------
 
 Project.py handles job submissions to the grid so that you don\'t have
@@ -119,7 +119,7 @@ End with:\
 
 
 
-Job Submission.(#Job-Submission)
+Job Submission.
 -------------------------------------------------
 
 Once you have written your XML script it you just need to pass a few
