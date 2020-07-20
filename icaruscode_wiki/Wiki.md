@@ -1,6 +1,6 @@
 ---
 lang: en
-title: Wiki
+title: ICARUS wiki
 ---
 
 
