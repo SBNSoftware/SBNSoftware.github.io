@@ -20,6 +20,9 @@ see the old wiki for a lot of historical detail.
 * [Setup Instructions](Installation)
 * [Development Model](DevModel)
 
+# Useful Links
+* artdaq: 
+* git info: 
 
 # Troubleshooting
 
