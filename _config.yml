@@ -46,6 +46,7 @@ defaults:
       hero_height: is-small
       show_sidebar: false
       lang: en
+      hide_footer: true
   # -
     # scope:
     #   path: ""
