@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Using LArSoft on a local machine
 ---
 

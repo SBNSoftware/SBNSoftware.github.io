@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'Prodsingle pi+ 100-2250MeV fixposcontained fixangle'
 ---
 

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: How to launch grid jobs
 ---
 

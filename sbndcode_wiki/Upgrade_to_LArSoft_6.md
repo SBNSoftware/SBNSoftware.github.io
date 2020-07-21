@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Upgrade to LArSoft 6
 ---
 

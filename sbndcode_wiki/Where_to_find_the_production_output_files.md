@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Where to find the production output files
 ---
 

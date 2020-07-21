@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: MCC 1p0 prodsingle mu 3GeV fixposapacross gaus20degree 5ms
   electronlifetime
 ---

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: SBND Guide for Summer 2020
 ---
 

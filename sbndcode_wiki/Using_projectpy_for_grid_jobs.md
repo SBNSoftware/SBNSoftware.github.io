@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Using projectpy for grid jobs
 ---
 

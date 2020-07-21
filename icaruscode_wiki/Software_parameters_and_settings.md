@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Software parameters and settings
 ---
 

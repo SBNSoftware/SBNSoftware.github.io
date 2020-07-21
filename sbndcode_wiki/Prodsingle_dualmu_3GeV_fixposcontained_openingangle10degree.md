@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Prodsingle dualmu 3GeV fixposcontained openingangle10degree
 ---
 

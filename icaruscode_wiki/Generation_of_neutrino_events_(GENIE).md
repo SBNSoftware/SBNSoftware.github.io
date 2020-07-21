@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'Generation of neutrino events (GENIE)'
 ---
 

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: MCC 1p0 prodsingle mu 3GeV fixposupstream gaus20degree 10ms
   elifetime
 ---

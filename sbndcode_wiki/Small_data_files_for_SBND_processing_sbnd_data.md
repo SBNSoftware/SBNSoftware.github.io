@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Small data files for SBND processing sbnd data
 ---
 

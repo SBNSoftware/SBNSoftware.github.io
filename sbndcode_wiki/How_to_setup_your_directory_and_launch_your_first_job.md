@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: How to setup your directory and launch your first job
 ---
 

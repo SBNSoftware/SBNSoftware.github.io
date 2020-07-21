@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'Prodsingle mu 100-1257MeV fixposcontained fixangle'
 ---
 

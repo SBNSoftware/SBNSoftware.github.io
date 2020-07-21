@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: ReleaseNotes06700101SBNWorkshop0318
 ---
 

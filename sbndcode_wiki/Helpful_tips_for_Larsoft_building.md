@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Helpful tips for Larsoft building
 ---
 

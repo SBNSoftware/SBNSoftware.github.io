@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Working on a feature branch (to easily share code)
 ---
 

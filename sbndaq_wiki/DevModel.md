@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: SBN DAQ Development
 hero_height: is-small
 ---

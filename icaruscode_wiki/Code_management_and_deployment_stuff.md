@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Code management and deployment stuff
 ---
 

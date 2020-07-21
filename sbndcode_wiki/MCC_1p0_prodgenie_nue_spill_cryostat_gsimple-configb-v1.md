@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'MCC 1p0 prodgenie nue spill cryostat gsimple-configb-v1'
 ---
 

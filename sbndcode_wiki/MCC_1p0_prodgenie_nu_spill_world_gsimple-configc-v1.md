@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'MCC 1p0 prodgenie nu spill world gsimple-configc-v1'
 ---
 

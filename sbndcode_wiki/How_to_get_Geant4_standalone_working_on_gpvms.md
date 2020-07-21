@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: How to get Geant4 standalone working on gpvms
 ---
 

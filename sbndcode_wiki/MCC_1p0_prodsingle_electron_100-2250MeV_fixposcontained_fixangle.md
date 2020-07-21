@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'MCC 1p0 prodsingle electron 100-2250MeV fixposcontained
   fixangle'
 ---

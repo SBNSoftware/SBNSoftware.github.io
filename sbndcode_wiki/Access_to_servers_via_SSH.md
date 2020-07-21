@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Access to servers via SSH
 ---
 

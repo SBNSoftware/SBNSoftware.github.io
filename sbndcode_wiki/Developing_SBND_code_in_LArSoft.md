@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Developing SBND code in LArSoft
 ---
 

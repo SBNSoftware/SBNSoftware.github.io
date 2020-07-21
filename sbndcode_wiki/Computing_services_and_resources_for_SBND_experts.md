@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Computing services and resources for SBND experts
 ---
 

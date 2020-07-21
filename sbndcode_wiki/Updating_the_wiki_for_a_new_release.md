@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Updating the wiki for a new release
 ---
 

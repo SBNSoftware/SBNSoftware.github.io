@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: The SBND flux files
 ---
 

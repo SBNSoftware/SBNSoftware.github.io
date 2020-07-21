@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: The ICARUS Guide to using LArSoft
 ---
 

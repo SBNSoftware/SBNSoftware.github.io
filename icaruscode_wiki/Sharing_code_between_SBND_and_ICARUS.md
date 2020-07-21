@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Sharing code between SBND and ICARUS
 ---
 

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Workshop 03 2020
 ---
 

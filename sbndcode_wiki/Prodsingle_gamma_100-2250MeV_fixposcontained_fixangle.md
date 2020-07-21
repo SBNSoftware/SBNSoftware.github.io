@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'Prodsingle gamma 100-2250MeV fixposcontained fixangle'
 ---
 

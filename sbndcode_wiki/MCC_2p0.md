@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: MCC 2p0
 ---
 

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'MCC 1p0 prodgenie nu singleinteraction cryostat
   gsimple-configb-v1'
 ---

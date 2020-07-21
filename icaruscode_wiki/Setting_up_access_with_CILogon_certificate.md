@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Setting up access with CILogon certificate
 ---
 

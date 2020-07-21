@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'MCC 1p0 prodsingle gamma 200-1500MeV fixposcentertpc1
   isotropicangle'
 ---

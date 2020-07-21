@@ -132,7 +132,7 @@ fi
 relnote=${my_working_dir}/ReleaseNotes-${sbndcode_version}
 rm -f ${relnote}
 echo "---" > ${relnote}
-echo "lang: en" >> ${relnote}
+echo "layout: page" >> ${relnote}
 echo "title: ReleaseNotes${version_string}" >> ${relnote}
 echo "---" >> ${relnote}
 echo >> ${relnote}

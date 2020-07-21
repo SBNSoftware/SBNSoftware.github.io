@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: 'Prodsingle proton 200-2250MeV fixposcontained fixangle'
 ---
 

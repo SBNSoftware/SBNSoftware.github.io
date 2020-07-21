@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: SBN DAQ Software Setup Instructions
 hero_height: is-small
 ---

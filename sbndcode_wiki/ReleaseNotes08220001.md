@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: ReleaseNotes08220001
 ---
 

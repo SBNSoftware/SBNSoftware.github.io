@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: ICARUS wiki
 ---
 

@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Building a release on Jenkins
 ---
 

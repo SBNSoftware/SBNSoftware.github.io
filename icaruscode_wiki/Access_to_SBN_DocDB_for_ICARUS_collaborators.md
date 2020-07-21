@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Access to SBN DocDB for ICARUS collaborators
 ---
 

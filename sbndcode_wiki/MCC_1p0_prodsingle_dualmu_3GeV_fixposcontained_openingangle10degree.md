@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: MCC 1p0 prodsingle dualmu 3GeV fixposcontained
   openingangle10degree
 ---

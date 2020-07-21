@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: MCC0p5
 ---
 

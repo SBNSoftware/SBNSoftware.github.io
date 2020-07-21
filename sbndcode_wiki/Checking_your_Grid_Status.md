@@ -1,5 +1,5 @@
 ---
-lang: en
+layout: page
 title: Checking your Grid Status
 ---
 
