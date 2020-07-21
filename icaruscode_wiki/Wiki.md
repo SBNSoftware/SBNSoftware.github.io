@@ -1,22 +1,18 @@
 ---
 layout: page
 title: ICARUS wiki
+subtitle: Specific Wiki for ICARUS
+description: Wiki documentation specific to ICARUS
+hero_height: is-medium
+# menubar: icaruscode_menu
+toc: true
+toc_title: ICARUS Contents
 ---
 
 
 
 ICARUS Simulation and Reconstruction Code
 ==========================================
-
-#### Table of contents
-
--   [Developing ICARUS code]
--   [Computing resources]
--   [Content of the packages]
--   [Monte Carlo productions]
--   [Code management and deployment stuff]
--   [SAM File Metadata]
--   [Troubleshooting]
 
 This is version 0 of a wiki age for ICARUS software\
 It should have more than a passing familiarity with SBND\...

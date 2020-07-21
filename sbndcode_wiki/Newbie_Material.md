@@ -4,11 +4,6 @@ title: Newbie Material
 subtitle: Got To Start Somewhere
 image: sbndcode_wiki/sbnd_logo.png
 description: Place to start when you're new
-<!-- hero_image: sbnd_logo.png -->
-<!-- hero_height: is-fullheight -->
-show_sidebar: false
-<!-- menubar: sbndcode_menu -->
-<!-- toc_title: SBND Code Contents -->
 toc: true
 ---
 

@@ -1,9 +1,9 @@
 ---
+layout: page
 title: SBN Software Wiki
 subtitle: A wiki for documentation of the SBN Software packages
-layout: page
-callouts: home_callouts
-show_sidebar: true
+hero_height: is-medium
+toc: false
 ---
 
 

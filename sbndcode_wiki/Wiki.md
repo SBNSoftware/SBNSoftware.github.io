@@ -1,15 +1,13 @@
 ---
 layout: page
 title: SBND Code Wiki
-<!-- subtitle: Page Subtitle -->
+subtitle: Specific Wiki for SBND
 image: sbndcode_wiki/sbnd_logo.png
 description: Wiki documentation specific to SBND
-<!-- hero_image: sbnd_logo.png -->
-<!-- hero_height: is-fullheight -->
-show_sidebar: false
-<!-- menubar: sbndcode_menu -->
-toc_title: SBND Code Contents
+hero_height: is-medium
+# menubar: sbndcode_menu
 toc: true
+toc_title: SBND Code Contents
 ---
 
 

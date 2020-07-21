@@ -40,6 +40,11 @@ defaults:
       type: "pages"
     values:
       show_sidebar: false
+      hero_height: is-small
+      favicon: /images/sbn_logo.jpg
+      hero_height: is-small
+      show_sidebar: false
+      lang: en
   # -
     # scope:
     #   path: ""
