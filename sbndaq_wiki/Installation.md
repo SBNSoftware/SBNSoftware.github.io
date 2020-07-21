@@ -81,6 +81,12 @@ mrb g -d <repo_name_with_underscore> git@github.com:SBNSoftware/<repo-name-with-
 ```bash
 mrb g -t <desired tag version *e.g.* v0_05_01> -d <repo_name_with_underscore> git@github.com:SBNSoftware/<repo-name-with-dashes>.git
 ```
+*Note:* An error can occur when attempting to pull down the repositories with a message of "Unable to verify write access...". If this happens, go the the appropriate srcs directory and do these:
+```bash
+git remote set-url origin ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/sbndaq 
+git remote set-url origin ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/sbndaq-artdaq 
+git remote set-url origin ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/sbndaq-artdaq-core
+```
 If you're not sure what tags are needed for the various repos you can do a quick check:
 ```bash
 ups active | grep <repo_name_with_underscore>
