@@ -134,6 +134,7 @@ rm -f ${relnote}
 echo "---" > ${relnote}
 echo "layout: page" >> ${relnote}
 echo "title: ReleaseNotes${version_string}" >> ${relnote}
+echo "toc: true" >> ${relnote}
 echo "---" >> ${relnote}
 echo >> ${relnote}
 echo "-----------------------------------------------------------------------------" >> ${relnote}
@@ -144,16 +145,6 @@ echo >> ${relnote}
 echo >> ${relnote}
 echo "sbndcode ${sbndcode_version} Release Notes" >> ${relnote}
 echo "=======================================================================================" >> ${relnote}
-echo >> ${relnote}
-echo "-   **Table of contents**" >> ${relnote}
-echo "-   [sbndcode ${sbndcode_version} Release Notes]" >> ${relnote}
-echo "    -   [Purpose]" >> ${relnote}
-echo "    -   [New features]" >> ${relnote}
-echo "    -   [Bug fixes]" >> ${relnote}
-echo "    -   [Updated dependencies]" >> ${relnote}
-echo "-   [Change List]" >> ${relnote}
-echo "    -   [sbndcode v08\_51\_00]" >> ${relnote}
-echo "    -   [sbndutil v08\_51\_00]" >> ${relnote}
 echo >> ${relnote}
 echo "[List of sbndcode releases](List_of_SBND_code_releases.html)" >> ${relnote}
 echo "Download instructions for [sbndcode ${sbndcode_version}](http://scisoft.fnal.gov/scisoft/bundles/sbnd/${sbndcode_version}/sbndcode-${sbndcode_version}.html)" >> ${relnote}
