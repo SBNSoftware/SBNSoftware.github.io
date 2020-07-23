@@ -22,8 +22,12 @@ Please see [here](https://sbnsoftware.github.io/AnalysisInfrastructure/github-mi
 git remote set-url origin git@github.com:SBNSoftware/sbndaq-artdaq.git
 ```
 (for `sbndaq-artdaq`, please make sure to get the appropriate repo!)
-
-
+* See the [updated setup instructions](Installation) for more details, but new `mrb g` commands should now point to the new repository. For example:
+```
+mrb g -d sbndaq_artdaq git@github.com:SBNSoftware/sbndaq-artdaq.git
+```
+(again, replacing `sbndaq-artdaq` with the appropriate/desired repository).
+* See [here](https://guides.github.com/) for more guides on how to use Github tools. Particularly useful are the [instructions for setting up an ssh key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for easier pushes.
 
 Old wiki
 ======================================
