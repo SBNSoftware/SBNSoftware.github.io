@@ -42,7 +42,8 @@ function get_package_release()
   git checkout ${pv}
   relver=`grep '^[  ]*parent' ${my_working_dir}/${pkg}/ups/product_deps | tr "\t" " " | cut -f3 -d" "`
   echo >> ${relnote}
-  echo "h2. ${pkg} ${relver}" >> ${relnote}
+  echo "${pkg} ${relver}" >> ${relnote}
+  echo "---------------------------------------------------" >> ${relnote}
   echo >> ${relnote}
   git log --pretty=format:"* %ad  %an : %s" --date=short ${previous_version_string}..${relver} >> ${relnote}
   echo >> ${relnote}
@@ -59,7 +60,8 @@ function get_util_release()
   cd ${my_working_dir}/${pkg}
   relver=`grep '^[  ]*parent' ${my_working_dir}/${pkg}/ups/product_deps | tr "\t" " " | cut -f3 -d" "`
   echo >> ${relnote}
-  echo "h2. ${pkg} ${relver}" >> ${relnote}
+  echo "${pkg} ${relver}" >> ${relnote}
+  echo "---------------------------------------------------" >> ${relnote}
   echo >> ${relnote}
   git log --pretty=format:"* %ad  %an : %s" --date=short ${previous_util_version}..${relver} >> ${relnote}
   echo >> ${relnote}
@@ -147,6 +149,7 @@ echo "sbndcode ${sbndcode_version} Release Notes" >> ${relnote}
 echo "=======================================================================================" >> ${relnote}
 echo >> ${relnote}
 echo "[List of sbndcode releases](List_of_SBND_code_releases.html)" >> ${relnote}
+echo >> ${relnote}
 echo "Download instructions for [sbndcode ${sbndcode_version}](http://scisoft.fnal.gov/scisoft/bundles/sbnd/${sbndcode_version}/sbndcode-${sbndcode_version}.html)" >> ${relnote}
 echo >> ${relnote}
 echo "Purpose" >> ${relnote}
