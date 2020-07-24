@@ -21,9 +21,9 @@ git remote set-url origin git@github.com:SBNSoftware/sbndaq-artdaq.git
 (for `sbndaq-artdaq`, please make sure to get the appropriate repo!)
 * See the [updated setup instructions](Installation) for more details, but new `mrb g` commands should now point to the new repository. For example:
 ```
-mrb g -d sbndaq_artdaq git@github.com:SBNSoftware/sbndaq-artdaq.git
+mrb g -d sbndaq_artdaq --repo-type github -g SBNSoftware sbndaq-artdaq.git
 ```
-(again, replacing `sbndaq-artdaq` with the appropriate/desired repository).
+(again, replacing `sbndaq-artdaq` with the appropriate/desired repository ... we will work to make this a default for mrb).
 * See [here](https://guides.github.com/) for more guides on how to use Github tools. Particularly useful are the [instructions for setting up an ssh key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for easier pushes.
 
 Please see [here](https://sbnsoftware.github.io/AnalysisInfrastructure/github-migration-to-do-list.html) for some useful info on migrating to Github in general, but important things for sbndaq and sbndqm are the above.
