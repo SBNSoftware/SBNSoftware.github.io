@@ -14,6 +14,7 @@ sbndcode v08_59_00 Release Notes
 =======================================================================================
 
 [List of sbndcode releases](List_of_SBND_code_releases.html)
+
 Download instructions for [sbndcode v08_59_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_59_00/sbndcode-v08_59_00.html)
 
 Purpose
@@ -43,7 +44,8 @@ sbndcode v08_59_00
 * 2020-07-22  Andrew Scarff : Making sbndcode depend on larreco to solve issue #13.
 * 2020-07-17  Andrew Scarff : Merge tag 'v08_58_00' into develop
 
-h2. sbndutil v08_59_00
+sbndutil v08_59_00
+---------------------------------------------------
 
 * 2020-07-24  Andrew Scarff : Merge branch 'release/v08_59_00'
 * 2020-07-24  Andrew Scarff : Update to larsoft v08_59_00
