@@ -74,12 +74,12 @@ source localProducts_*/setup
 3. Pull down the necessary repositories using mrb like so:
 ```bash
 cd $MRB_SOURCE
-mrb g -d <repo_name_with_underscore> --repo-type github -g SBNSoftware <repo-name-with-dashes>.git
+mrb g -d <repo_name_with_underscore> --repo-type github -g SBNSoftware <repo-name-with-dashes>
 ```
 *Note:* you may need to do some setup of your github account with proper SSH keys. See [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).)
 *Note:* This will pull from the HEAD of the develop branch and include any changes that may have been pushed since the last tag (`v#_##_##`) was created. Alternatively, if you want to build the tagged, working version that was set up in the previous steps, directly:
 ```bash
-mrb g -t <desired tag version *e.g.* v0_05_01> -d <repo_name_with_underscore> git@github.com:SBNSoftware/<repo-name-with-dashes>.git
+mrb g -t <desired tag version *e.g.* v0_05_01> -d <repo_name_with_underscore> git@github.com:SBNSoftware/<repo-name-with-dashes>
 ```
 <!---
 *Note:* An error can occur when attempting to pull down the repositories with a message of "Unable to verify write access...". If this happens, go the the appropriate srcs directory and do these:
