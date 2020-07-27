@@ -1,34 +1,16 @@
 ---
 layout: page
-title: Computing Resources
+title: Computing resources
+description: Computing resources summary and giudance for ICARUS
+hero_height: is-medium
+# menubar: icaruscode_menu
+toc: true
+toc_title: Contents
 ---
+
 
 Computing Resources
 ====================
-
--   [SCD liaison]
--   [Computing Access]
-    -   [SSH access to remote servers]
--   [Where to work: interactive nodes ("GPVM")]
--   [Opening a ticket in Fermilab Service Desk]
--   [Accessing resources (DocDB, VOMS, ...) via certificates]
--   [Accessing resources via Virtual Private Network]
--   [Submitting jobs: Virtual Organisation]
--   [Submitting jobs: grid resources]
--   [Software distribution]
-        -   [CVMFS]
--   [Storing data]
-    -   [Local storage: BlueArc disks]
-    -   [World-visible storage: dCache]
-    -   [Tape storage]
-    -   [File database (SAM)]
--   [Web server pages]
-    -   [SBN online web gate]
-    -   [ICARUS data web directory]
-    -   [Communication tools]
-        -   [Mailing lists]
--   [Other obscure services and resources]
-
 
 ICARUS has a number of computing resources available, many of which are
 supplied by Fermilab Computing Sector (SCD when we talk about the
