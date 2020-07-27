@@ -191,8 +191,8 @@ is on a [separate page](ICARUS_servers.md).
 
 
 
-[Opening a ticket in Fermilab Service Desk](#service-desk-ticket)
-------------------------------------------------------------------
+Opening a ticket in Fermilab Service Desk
+------------------------------------------
 
 When something goes wrong, open a ticket! Its fun, its easy but most
 important it is how you engage experts to solve your problems (well,
