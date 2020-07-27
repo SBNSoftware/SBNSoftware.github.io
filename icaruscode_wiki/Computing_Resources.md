@@ -63,7 +63,7 @@ Once your computer is SSH-ready and kerberized, you should be able to log on by 
 
 (where `${USER}` should be replaced by your Fermilab user name).
 
-If this does not work, please submit a [service desk ticket]
+If this does not work, please submit a [service desk ticket](#opening-a-ticket-in-fermilab-service-desk)
 to request a ICARUS project account (note that someone has to authorise
 this so it will probably fail):
 
@@ -191,8 +191,8 @@ is on a [separate page](ICARUS_servers.md).
 
 
 
-Opening a ticket in Fermilab Service Desk
-------------------------------------------
+[Opening a ticket in Fermilab Service Desk](#service-desk-ticket)
+------------------------------------------------------------------
 
 When something goes wrong, open a ticket! Its fun, its easy but most
 important it is how you engage experts to solve your problems (well,
