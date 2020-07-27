@@ -360,7 +360,7 @@ Space available to ICARUS collaboration:
 path              | space
 ----------------- | ----------
 `/icarus/app`     | 1.5 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
-`/icarus/data`    | ~10 TB~
+`/icarus/data`    | ~~10 TB~~
 _same_            | 25 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
 
 This information can be read using `quota -s` or `df -h`.
