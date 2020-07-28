@@ -73,7 +73,7 @@ Running Jobs on the grid
 --------------------------------------------------------------------
 
 -   [Using project.py for Grid
-    Jobs](Using_projectpy_for_Grid_Jobs.html)
+    Jobs](Using_projectpy_for_grid_jobs.html)
 -   [Checking your Grid
     Status](Checking_your_Grid_Status.html)
 -   [Vito New thing - To Do](Vito_New_thing_-_To_Do_.html){.wiki-page
