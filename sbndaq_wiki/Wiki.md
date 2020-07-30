@@ -34,6 +34,8 @@ Old wiki
 Please
 see the old wiki for a lot of historical detail.
 
+[Ported Old Redmine Wiki](../sbndaq_oldwiki/Wiki)
+
 [Old redmine wiki](https://cdcvs.fnal.gov/redmine/projects/sbndaq/wiki).
 
 (we are slowly going to work on updating/adding more info here...)

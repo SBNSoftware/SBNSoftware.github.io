@@ -28,6 +28,7 @@ See below for helpful links:
 
 ### Online Repositories
 * [sbndaq](https://github.com/SBNSoftware/sbndaq): SBN DAQ parent code base, including scripts for run control
+  * [Wiki](sbndaq_wiki/Wiki) ([old Redmine wiki here](https://cdcvs.fnal.gov/redmine/projects/sbndaq/wiki))
 * [sbndaq-artdaq](https://github.com/SBNSoftware/sbndaq-artdaq): SBN DAQ code base (e.g. the generators)
 * [sbndaq-artdaq-core](https://github.com/SBNSoftware/sbndaq-artdaq-core): SBN DAQ code data definitions (e.g. the overlays)
 
