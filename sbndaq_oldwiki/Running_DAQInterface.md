@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Running DAQInterface
 ---
 
-[]{#Running-DAQInterface}
 
-Running DAQInterface[¶](#Running-DAQInterface){.wiki-anchor}
+
+Running DAQInterface
 ============================================================
 
 See instruction/documentation/etc. in the DAQInterface Manual:
@@ -19,7 +19,7 @@ subnetworks of the servers. You need to be able to access without a
 password, currently we use ssh key exchange. Look at the relevant
 instructions at [Setting up your account for ssh access to private
 network
-connections](Setting_up_your_account_for_ssh_access_to_private_network_connections.html){.wiki-page}
+connections](Setting_up_your_account_for_ssh_access_to_private_network_connections.html)
 
 It is now easier and faster to start up and terminate using scripts
 `./run` and `./stop`. The rest of the steps are kept down below for
@@ -34,7 +34,7 @@ To run with a static version of pre-built code, do:
 
 2.  Make sure you have the `sbndaq` repository pulled down in your
     working area (for setting up a working area, see the [Installation
-    Instructions](Installation_Instructions.html){.wiki-page})
+    Instructions](Installation_Instructions.html))
 
 3.  Move to the appropriate DAQInterface directory for the cluster. For
     example, for the cluster at DAB:
@@ -79,9 +79,9 @@ that work out of the box. For that do:\
 
 ------------------------------------------------------------------------
 
-[]{#If-instead-you-want-to-have-more-control-of-the-intermediate-steps-dont-use-run-and-proceed-with}
 
-If instead you want to have more control of the intermediate steps don\'t use `./run` and proceed with:[¶](#If-instead-you-want-to-have-more-control-of-the-intermediate-steps-dont-use-run-and-proceed-with){.wiki-anchor}
+
+If instead you want to have more control of the intermediate steps don\'t use `./run` and proceed with:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.  Pick the BoardReader components you would like to include in a run:

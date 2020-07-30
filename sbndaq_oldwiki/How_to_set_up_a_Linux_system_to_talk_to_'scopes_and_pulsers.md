@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: 'How to set up a Linux system to talk to \''scopes and pulsers'
 ---
 
-[]{#How-to-set-up-a-Linux-system-to-talk-to-scopes-and-pulsers}
 
-How to set up a Linux system to talk to \'scopes and pulsers[¶](#How-to-set-up-a-Linux-system-to-talk-to-scopes-and-pulsers){.wiki-anchor}
+
+How to set up a Linux system to talk to \'scopes and pulsers
 ==========================================================================================================================================
 
-[]{#The-New-Way}
 
-The New Way[¶](#The-New-Way){.wiki-anchor}
+
+The New Way
 ==========================================
 
 -   Service desk ticket for SLAM group to enable NI repo on the computer
@@ -36,9 +36,9 @@ The New Way[¶](#The-New-Way){.wiki-anchor}
         >>> rm = pyvisa.ResourceManager()
         >>> print(rm.list_resources())
 
-[]{#The-Old-Way}
 
-The Old Way[¶](#The-Old-Way){.wiki-anchor}
+
+The Old Way
 ==========================================
 
 [NB: Suspect a missing step here]{style="color:red;"}
@@ -78,9 +78,6 @@ The Old Way[¶](#The-Old-Way){.wiki-anchor}
         ablk_helper            13597  1 aesni_intel
         cryptd                 21190  3 ghash_clmulni_intel,aesni_intel,ablk_helper
 
-```{=html}
-<!-- -->
-```
 1.  The first ten entries look good.
 
 2.  Go to NI for install instructions here

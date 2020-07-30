@@ -1,24 +1,24 @@
 ---
-lang: en
+layout: page
 title: ICARUS Noise Measurement (Interim DAQ interface and online
   monitoring)
 ---
 
-[]{#ICARUS-Noise-Measurement-Interim-DAQ-interface-and-online-monitoring}
 
-ICARUS Noise Measurement (Interim DAQ interface and online monitoring)[¶](#ICARUS-Noise-Measurement-Interim-DAQ-interface-and-online-monitoring){.wiki-anchor}
+
+ICARUS Noise Measurement (Interim DAQ interface and online monitoring)
 ==============================================================================================================================================================
 
-[]{#DAQ-and-online-monitoring}
 
-DAQ and online monitoring[¶](#DAQ-and-online-monitoring){.wiki-anchor}
+
+DAQ and online monitoring
 ----------------------------------------------------------------------
 
 The DAQ and online monitor environment have been set up in two tmux
 sessions. All you have to do is to access to the tmux sessions. If the
 tmux session is lost, you can find how to set it up at [DAQ
-setup](#Set-up-DAQ-from-scratch){.wiki-page} and [Online monitor
-setup](#Set-up-the-online-monitor-from-scratch){.wiki-page}.
+setup] and [Online monitor
+setup].
 
 1\. Open two terminals, and for each log in the icarus-gateway01
 machine, and then the icarus-vst01 machine, with the **icarus**
@@ -86,9 +86,9 @@ should be stopped automatically. If it doesn\'t, you can do ctrl+c.
 
 8\. Detach the tmux session: ctrl+b then d
 
-[]{#Run-online-monitoring-analysis-on-the-files-on-disk}
 
-Run online monitoring analysis on the files on disk[¶](#Run-online-monitoring-analysis-on-the-files-on-disk){.wiki-anchor}
+
+Run online monitoring analysis on the files on disk
 --------------------------------------------------------------------------------------------------------------------------
 
 1\. Open a terminal, and log in the icarus-gateway01 machine, and then
@@ -113,9 +113,9 @@ monitoring,\
 
 4\. When you finish, detach the tmux session: ctrl+b then d
 
-[]{#Set-up-DAQ-from-scratch}
 
-Set up DAQ from scratch[¶](#Set-up-DAQ-from-scratch){.wiki-anchor}
+
+Set up DAQ from scratch
 ------------------------------------------------------------------
 
 Normally you should use the **daq** tmux session, in which the
@@ -148,9 +148,9 @@ when you lose your **daq** tmux session and have to set it back.
 
 7\. You can start taking data as what you do normally.
 
-[]{#Set-up-the-online-monitor-from-scratch}
 
-Set up the online monitor from scratch[¶](#Set-up-the-online-monitor-from-scratch){.wiki-anchor}
+
+Set up the online monitor from scratch
 ------------------------------------------------------------------------------------------------
 
 Normally you should use the **om** tmux session, in which the

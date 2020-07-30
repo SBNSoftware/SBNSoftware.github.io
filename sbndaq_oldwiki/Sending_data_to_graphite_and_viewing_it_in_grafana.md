@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Sending data to graphite and viewing it in grafana
 ---
 
-[]{#Sending-data-to-graphite-and-viewing-it-in-grafana}
 
-Sending data to graphite and viewing it in grafana[¶](#Sending-data-to-graphite-and-viewing-it-in-grafana){.wiki-anchor}
+
+Sending data to graphite and viewing it in grafana
 ========================================================================================================================
 
-[]{#DAQ-config-side}
 
-DAQ config side[¶](#DAQ-config-side){.wiki-anchor}
+
+DAQ config side
 --------------------------------------------------
 
 We have a test setup for a graphite DB for metrics running at DAB on
@@ -32,9 +32,9 @@ snippet:
 
 Namespace can be what you like, but the host and port should be that\...
 
-[]{#Grafana-viewing}
 
-Grafana viewing[¶](#Grafana-viewing){.wiki-anchor}
+
+Grafana viewing
 --------------------------------------------------
 
 Log in to sbn-daq02 with port forwarding

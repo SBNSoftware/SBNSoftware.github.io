@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Standalone Bern Readout Instructions
 ---
 
-[]{#Standalone-Bern-Readout-Instructions}
 
-Standalone Bern Readout Instructions[¶](#Standalone-Bern-Readout-Instructions){.wiki-anchor}
+
+Standalone Bern Readout Instructions
 ============================================================================================
 
-[]{#Getting-ready-to-run-the-code}
 
-Getting ready to run the code[¶](#Getting-ready-to-run-the-code){.wiki-anchor}
+
+Getting ready to run the code
 ------------------------------------------------------------------------------
 
 In order to run the readout code, you first need to run the up-to-date
@@ -20,14 +20,14 @@ three relevant files to running the febdrv software. Make sure you run
 the \'makeall\' script so that all the other scripts are properly made,
 then you can begin.
 
-[]{#Febdrv-febconf-and-febctl}
 
-Febdrv, febconf, and febctl[¶](#Febdrv-febconf-and-febctl){.wiki-anchor}
+
+Febdrv, febconf, and febctl
 ------------------------------------------------------------------------
 
-[]{#febdrv}
 
-### febdrv[¶](#febdrv){.wiki-anchor}
+
+### febdrv
 
 For each board chain that you want to run, you need a terminal that is
 running febdrv. febdrv requires three arguments. The first is the name
@@ -51,11 +51,11 @@ they are needed to use febconf and febctl. Below is an example of
 terminal output when running febdrv, the line most helpful for the next
 sections is the one that says \'Newly connected FEB\...\'.
 
-![](/redmine/attachments/download/51266/febdrv_output.png)
+!(/redmine/attachments/download/51266/febdrv_output.png)
 
-[]{#febconf}
 
-### febconf[¶](#febconf){.wiki-anchor}
+
+### febconf
 
 febconf requires an instance of febdrv to communicate with, along with
 3-4 arguments that specify which TCP port to connect to (i.e. the port
@@ -70,7 +70,7 @@ need the same config, then no need to enter an address. Below is an
 example of what the script will tell you to enter if your code is
 compiled correctly.
 
-![](/redmine/attachments/download/51267/febconf.png)
+!(/redmine/attachments/download/51267/febconf.png)
 
 **Note:** sometimes febconf can be finicky, so if you\'re using correct
 syntax but getting an error from febdrv, try switching to a different
@@ -78,9 +78,9 @@ config file first and then back to the one you want. If that doesn\'t
 work, also try doing a DAQ_BEG command with febctl (described below),
 and then a DAQ_END, then running febconf with the files you want.
 
-[]{#febctl}
 
-### febctl[¶](#febctl){.wiki-anchor}
+
+### febctl
 
 febctl requires 2-3 arguments, as well as an active instance of febdrv
 to communicate with. The first argument requires is the first TCP port
@@ -89,7 +89,7 @@ like in febconf). The second is the command you want to use. See the
 below image for a list of available commands, as well as the output of
 febctl when not given any arguments:
 
-![](/redmine/attachments/download/51268/febctl.png)
+!(/redmine/attachments/download/51268/febctl.png)
 
 DAQ_BEG and DAQ_END begin and end the data collection process,
 respectively. You should make sure that the board is in a DAQ_END state
@@ -103,9 +103,9 @@ electrical bridge is between the pins, and generally whenever you\'re
 not explicitly taking data with SiPMs. Once the board is in a state of
 DAQ_BEG, you can begin to use the analysis code.
 
-[]{#The-Analysis-Code}
 
-The Analysis Code[¶](#The-Analysis-Code){.wiki-anchor}
+
+The Analysis Code
 ------------------------------------------------------
 
 The analysis code can be found either attached to this wiki page, or in
@@ -128,9 +128,9 @@ file size. Therefore, an example line to run the code would look like:
 
     ./output_name 5556 1000 92
 
-[]{#Looking-at-your-ROOT-file}
 
-Looking at your ROOT file[¶](#Looking-at-your-ROOT-file){.wiki-anchor}
+
+Looking at your ROOT file
 ----------------------------------------------------------------------
 
 Once you\'ve run the analysis code and it\'s collected the events it was
@@ -158,7 +158,7 @@ out the buffer
 
 Below are the branch names that correspond to these variables.
 
-![](/redmine/attachments/download/51271/branchnames.png)
+!(/redmine/attachments/download/51271/branchnames.png)
 
 The tree in the file can be directly drawn from using the branches
 above, using the Draw command:

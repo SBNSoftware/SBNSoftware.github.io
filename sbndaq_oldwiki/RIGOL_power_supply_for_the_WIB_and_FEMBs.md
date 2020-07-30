@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: RIGOL power supply for the WIB and FEMBs
 ---
 
-[]{#RIGOL-power-supply-for-the-WIB-and-FEMBs}
 
-RIGOL power supply for the WIB and FEMBs[¶](#RIGOL-power-supply-for-the-WIB-and-FEMBs){.wiki-anchor}
+
+RIGOL power supply for the WIB and FEMBs
 ====================================================================================================
 
 At the very bottom of the TPC rack you can see the RIGOL.

@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Running PTB in Standalone Mode
 ---
 
-[]{#Running-the-PTB-in-Standalone-Mode}
 
-[Running the PTB in Standalone Mode](Running_the_PTB_in_Standalone_Mode.html){.wiki-page}[¶](#Running-the-PTB-in-Standalone-Mode){.wiki-anchor}
+
+[Running the PTB in Standalone Mode](Running_the_PTB_in_Standalone_Mode.html)
 ===============================================================================================================================================
 
-[]{#The-PTB-is-only-set-up-to-talk-to-sbnd-test02-for-now}
 
-The PTB is only set up to talk to sbnd-test02 for now:[¶](#The-PTB-is-only-set-up-to-talk-to-sbnd-test02-for-now){.wiki-anchor}
+
+The PTB is only set up to talk to sbnd-test02 for now:
 -------------------------------------------------------------------------------------------------------------------------------
 
 1\) `ssh sbnd@sbnd-test02`
@@ -88,9 +88,9 @@ When screen session is not running:
 
 Once running, jump back to step 7) and go from there
 
-[]{#Advanced-operations}
 
-Advanced operations:[¶](#Advanced-operations){.wiki-anchor}
+
+Advanced operations:
 -----------------------------------------------------------
 
 A few standard configurations can be found in the test_configs
@@ -106,9 +106,9 @@ frequency and lower, more random at higher frequency)\
 various configurations with different frequencies for random_full_gate
 and dab_fake_BNB_XHz_random
 
-[]{#Change-the-configuration}
 
-### Change the configuration:[¶](#Change-the-configuration){.wiki-anchor}
+
+### Change the configuration:
 
 If you have questions feel free to drop me an email or a message on the
 SBND slack (username: David Rivera). I have yet to fully document the

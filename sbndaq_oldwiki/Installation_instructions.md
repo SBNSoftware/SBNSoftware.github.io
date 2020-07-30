@@ -1,27 +1,27 @@
 ---
-lang: en
+layout: page
 title: Installation instructions
 ---
 
-[]{#NEW-INSTRUCTIONS}
 
-NEW INSTRUCTIONS[¶](#NEW-INSTRUCTIONS){.wiki-anchor}
+
+NEW INSTRUCTIONS
 ====================================================
 
 Note that we have a new wiki, and updated instructions, at
 <https://sbnsoftware.github.io/sbndaq_wiki/Installation>.
 
 -   **Table of contents**
--   [NEW INSTRUCTIONS](#NEW-INSTRUCTIONS)
--   [(Old) Installation instructions](#Old-Installation-instructions)
-    -   [Summary Install Script](#Summary-Install-Script)
+-   [NEW INSTRUCTIONS]
+-   [(Old) Installation instructions]
+    -   [Summary Install Script]
     -   [How to update your development area when a new release is
-        available](#How-to-update-your-development-area-when-a-new-release-is-available)
--   [Installation on a remote server](#Installation-on-a-remote-server)
+        available]
+-   [Installation on a remote server]
 
-[]{#Old-Installation-instructions}
 
-(Old) Installation instructions[¶](#Old-Installation-instructions){.wiki-anchor}
+
+(Old) Installation instructions
 ================================================================================
 
 This will be filled out in more detail with time, but for the moment
@@ -126,9 +126,9 @@ repository. In the appropriate srcs areas, you can do these:\
     git remote set-url origin ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/sbndaq-artdaq 
     git remote set-url origin ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/sbndaq-artdaq-core 
 
-[]{#Summary-Install-Script}
 
-Summary Install Script[¶](#Summary-Install-Script){.wiki-anchor}
+
+Summary Install Script
 ----------------------------------------------------------------
 
 Put the commands that never change into your bash login script
@@ -157,9 +157,9 @@ situation) source the script below from your **work** directory
     mrb i -j8 |& tee make.log
     mrbslp
 
-[]{#How-to-update-your-development-area-when-a-new-release-is-available}
 
-How to update your development area when a new release is available[¶](#How-to-update-your-development-area-when-a-new-release-is-available){.wiki-anchor}
+
+How to update your development area when a new release is available
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Set up the common products:\
@@ -188,9 +188,9 @@ Then, make a clean build:\
     mrbsetenv
     mrb i -j8
 
-[]{#Installation-on-a-remote-server}
 
-Installation on a remote server[¶](#Installation-on-a-remote-server){.wiki-anchor}
+
+Installation on a remote server
 ==================================================================================
 
 In order to install sbndaq on a server which doesn\'t have `software`

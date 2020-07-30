@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: ArtdaqDriver program
 ---
 
-[]{#ArtdaqDriver-program}
 
-ArtdaqDriver program[¶](#ArtdaqDriver-program){.wiki-anchor}
+
+ArtdaqDriver program
 ============================================================
 
 Simple test-stand driver:\

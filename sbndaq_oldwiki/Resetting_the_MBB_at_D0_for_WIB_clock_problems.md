@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Resetting the MBB at D0 for WIB clock problems
 ---
 
-[]{#Resetting-the-MBB-at-D0-for-WIB-clock-problems}
 
-Resetting the MBB at D0 for WIB clock problems[¶](#Resetting-the-MBB-at-D0-for-WIB-clock-problems){.wiki-anchor}
+
+Resetting the MBB at D0 for WIB clock problems
 ================================================================================================================
 
 When you are configuring WIB, if you see errors like \"Failed to lock

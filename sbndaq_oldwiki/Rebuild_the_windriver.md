@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Rebuild the windriver
 ---
 
-[]{#Instructions-for-rebuilding-the-windriver-package-into-UPS}
 
-Instructions for rebuilding the windriver package into UPS.[¶](#Instructions-for-rebuilding-the-windriver-package-into-UPS){.wiki-anchor}
+
+Instructions for rebuilding the windriver package into UPS.
 =========================================================================================================================================
 
 1\. ssh -X sbn-daq01.fnal.gov -l artdaq and run the xterm.\

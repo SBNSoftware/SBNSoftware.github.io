@@ -1,12 +1,12 @@
 ---
-lang: en
+layout: page
 title: How to setup White Rabbit switch server nodes and beam signals
   distribution
 ---
 
-[]{#How-to-setup-White-Rabbit-server-nodes-and-beam-signals-distribution}
 
-How to setup White Rabbit server nodes and beam signals distribution[¶](#How-to-setup-White-Rabbit-server-nodes-and-beam-signals-distribution){.wiki-anchor}
+
+How to setup White Rabbit server nodes and beam signals distribution
 ============================================================================================================================================================
 
 Production setup

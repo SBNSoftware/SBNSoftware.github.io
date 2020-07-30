@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Wish List and Requirements for SBN artdaq Based Run Control
 ---
 
-[]{#Wish-List-and-Requirements-for-SBN-artdaq-Based-Run-Control}
 
-Wish List and Requirements for SBN artdaq Based Run Control[¶](#Wish-List-and-Requirements-for-SBN-artdaq-Based-Run-Control){.wiki-anchor}
+
+Wish List and Requirements for SBN artdaq Based Run Control
 ==========================================================================================================================================
 
 We use Esteban Cristaldo\'s
@@ -23,9 +23,9 @@ or the final CDF RunControl Shifter training
 Note that the lower left image on slide 1 of the CHEP slides would often
 take several minutes to load!
 
-[]{#William-Badgett}
 
-William Badgett[¶](#William-Badgett){.wiki-anchor}
+
+William Badgett
 --------------------------------------------------
 
 -   A partition selection function prior to launching DAQInterface
@@ -49,9 +49,9 @@ Selector](/redmine/attachments/download/52856/partition.png "CDF RC Partition Se
 ![CDF RC Subcomponent Status
 Window](/redmine/attachments/download/52857/status.png "CDF RC Subcomponent Status Window")
 
-[]{#Gray-Putnam}
 
-Gray Putnam[¶](#Gray-Putnam){.wiki-anchor}
+
+Gray Putnam
 ------------------------------------------
 
 -   Stronger default configurations and fewer steps for shifters (i.e.
@@ -68,14 +68,14 @@ Gray Putnam[¶](#Gray-Putnam){.wiki-anchor}
 >     C++ API, then the GUI couldl have more direct access to DAQ
 >     processes.
 
-[]{#David-Rivera}
 
-David Rivera[¶](#David-Rivera){.wiki-anchor}
+
+David Rivera
 --------------------------------------------
 
-[]{#Iker-Loïc-de-Icaza-Astiz}
 
-Iker Loïc de Icaza Astiz[¶](#Iker-Loïc-de-Icaza-Astiz){.wiki-anchor}
+
+Iker Loïc de Icaza Astiz
 --------------------------------------------------------------------
 
 I might be repeating what others have already stated, but in the
@@ -84,101 +84,77 @@ interest of setting priorities I write everything I can think of:
 -   Make it more easy and streamlined to start up. More like click
     \"next\" a few times to resume the nominal or last run settings.
 
-```{=html}
-<!-- -->
-```
 -   Make it play nice with other partitions and/or users, i.e. not try
     to kill everything.
 
-```{=html}
-<!-- -->
-```
 -   Reduce the verbosity to stdout
 
-```{=html}
-<!-- -->
-```
 -   Health window of the various subsystems and components
 
-```{=html}
-<!-- -->
-```
 -   Ability to make and load various running profiles
 
-```{=html}
-<!-- -->
-```
 -   \"Hearth beat\" to show status of connection
 
-```{=html}
-<!-- -->
-```
 -   Show current on call expert contact information
 
-```{=html}
-<!-- -->
-```
 -   Add various options for stopping, killing and purging processes
 
-```{=html}
-<!-- -->
-```
 -   A bit of a premium feature would be to have some sort of support for
     showing alerts for smartphones, you know \'cause millennials
 
-[]{#Wes-Ketchum}
 
-Wes Ketchum[¶](#Wes-Ketchum){.wiki-anchor}
+
+Wes Ketchum
 ------------------------------------------
 
-[]{#Ron-Rechenmacher}
 
-Ron Rechenmacher[¶](#Ron-Rechenmacher){.wiki-anchor}
+
+Ron Rechenmacher
 ----------------------------------------------------
 
-[]{#Gennadiy-Lukhanin}
 
-Gennadiy Lukhanin[¶](#Gennadiy-Lukhanin){.wiki-anchor}
+
+Gennadiy Lukhanin
 ------------------------------------------------------
 
-[]{#Eric-Flumerfelt}
 
-Eric Flumerfelt[¶](#Eric-Flumerfelt){.wiki-anchor}
+
+Eric Flumerfelt
 --------------------------------------------------
 
-[]{#JC-Freeman}
 
-JC Freeman[¶](#JC-Freeman){.wiki-anchor}
+
+JC Freeman
 ----------------------------------------
 
-[]{#Yun-Tse-Tsai}
 
-Yun-Tse Tsai[¶](#Yun-Tse-Tsai){.wiki-anchor}
+
+Yun-Tse Tsai
 --------------------------------------------
 
-[]{#Esteban-Cristaldo}
 
-Esteban Cristaldo[¶](#Esteban-Cristaldo){.wiki-anchor}
+
+Esteban Cristaldo
 ------------------------------------------------------
 
-[]{#Angela-Fava}
 
-Angela Fava[¶](#Angela-Fava){.wiki-anchor}
+
+Angela Fava
 ------------------------------------------
 
-[]{#Donatella-Torretta}
 
-Donatella Torretta[¶](#Donatella-Torretta){.wiki-anchor}
+
+Donatella Torretta
 --------------------------------------------------------
 
-[]{#Steve-Hahn}
 
-Steve Hahn[¶](#Steve-Hahn){.wiki-anchor}
+
+Steve Hahn
 ----------------------------------------
 
-[]{#Andy-Mastbaum}
 
-Andy Mastbaum[¶](#Andy-Mastbaum){.wiki-anchor}
+
+Andy Mastbaum
 ----------------------------------------------
 
 For more comparative fun, here\'s the SNO+ run control, which uses
@@ -204,9 +180,9 @@ Main features:
 -   Control of trigger, front end, and HV is integrated into the same
     GUI as run control
 
-![](/redmine/attachments/download/52854/snoprc.png)
+!(/redmine/attachments/download/52854/snoprc.png)
 
 In addition to run control the same GUI is used to configure & control
 the trigger and front end electronics as well as the HV, shown here:
 
-![](/redmine/attachments/download/52853/xl3hv.png)
+!(/redmine/attachments/download/52853/xl3hv.png)

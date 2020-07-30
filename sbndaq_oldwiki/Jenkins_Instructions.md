@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Jenkins Instructions
 ---
 
-[]{#Jenkins-Instructions}
 
-Jenkins Instructions[¶](#Jenkins-Instructions){.wiki-anchor}
+
+Jenkins Instructions
 ============================================================
 
 These instructions are intended to assist you with adding and

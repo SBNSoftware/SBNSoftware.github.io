@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: How to rsync products from FNAL to your local institution
 ---
 
-[]{#How-to-rsync-products-from-FNAL-to-your-local-institution}
 
-How to rsync products from FNAL to your local institution[¶](#How-to-rsync-products-from-FNAL-to-your-local-institution){.wiki-anchor}
+
+How to rsync products from FNAL to your local institution
 ======================================================================================================================================
 
 When setting up a remote **sbndaq** development station or test stand,

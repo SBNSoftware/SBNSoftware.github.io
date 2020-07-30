@@ -1,12 +1,12 @@
 ---
-lang: en
+layout: page
 title: Setting up your account for ssh access to private network
   connections
 ---
 
-[]{#Setting-up-your-account-for-ssh-access-to-private-network-connections}
 
-Setting up your account for ssh access to private network connections[¶](#Setting-up-your-account-for-ssh-access-to-private-network-connections){.wiki-anchor}
+
+Setting up your account for ssh access to private network connections
 ==============================================================================================================================================================
 
 First, test if you can login to the subnets:

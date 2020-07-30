@@ -1,43 +1,43 @@
 ---
-lang: en
+layout: page
 title: Running CAEN DT5702 readout of CRT
 ---
 
-[]{#Running-CAEN-DT5702-readout-of-CRT}
 
-[Running CAEN DT5702 readout of CRT]{.ul}[¶](#Running-CAEN-DT5702-readout-of-CRT){.wiki-anchor}
+
+[Running CAEN DT5702 readout of CRT]{.ul}
 ===============================================================================================
 
 -   **Table of contents**
 -   [Running CAEN DT5702 readout of
-    CRT](#Running-CAEN-DT5702-readout-of-CRT)
--   [Introduction](#Introduction)
--   [Hardware connections](#Hardware-connections)
--   [febdrv](#febdrv)
-    -   [Introduction](#Introduction-2)
-    -   [Usage](#Usage)
-    -   [Running as system service](#Running-as-system-service)
-        -   [Check if febdrv is running](#Check-if-febdrv-is-running)
-        -   [Configuration](#Configuration)
--   [FHiCL configuration](#FHiCL-configuration)
-    -   [Overview](#Overview)
-    -   [Fragment ID](#Fragment-ID)
--   [Code](#Code)
-    -   [Where is the code?](#Where-is-the-code)
-    -   [Status](#Status)
--   [DAQ server configuration](#DAQ-server-configuration)
+    CRT]
+-   [Introduction]
+-   [Hardware connections]
+-   [febdrv]
+    -   [Introduction]
+    -   [Usage]
+    -   [Running as system service]
+        -   [Check if febdrv is running]
+        -   [Configuration]
+-   [FHiCL configuration]
+    -   [Overview]
+    -   [Fragment ID]
+-   [Code]
+    -   [Where is the code?]
+    -   [Status]
+-   [DAQ server configuration]
 
-[]{#Introduction}
 
-Introduction[¶](#Introduction){.wiki-anchor}
+
+Introduction
 ============================================
 
 ICARUS side and top CRT is read using CAEN DT5702 front end boards
 (FEB), developed at University of Bern.
 
-[]{#Hardware-connections}
 
-Hardware connections[¶](#Hardware-connections){.wiki-anchor}
+
+Hardware connections
 ============================================================
 
 -   T0 -- normally should have PPS (1 pulse per second) signal connected
@@ -48,14 +48,14 @@ Hardware connections[¶](#Hardware-connections){.wiki-anchor}
 FEBs are connected to computer with Ethernet cable. They can be chained
 using another Ethernet port (doesn\'t matter which one).
 
-[]{#febdrv}
 
-febdrv[¶](#febdrv){.wiki-anchor}
+
+febdrv
 ================================
 
-[]{#Introduction-2}
 
-Introduction[¶](#Introduction-2){.wiki-anchor}
+
+Introduction
 ----------------------------------------------
 
 febdrv is a program reading out data from FEBs via Ethernet. It uses
@@ -66,9 +66,9 @@ The code was originally written at U.Bern, then modified at CERN, then
 finally modified for SBN experiments. The code can be found in
 `sbndaq-artdaq/Generators/Common/Bern/` .
 
-[]{#Usage}
 
-Usage[¶](#Usage){.wiki-anchor}
+
+Usage
 ------------------------------
 
 As febdrv needs to access Ethernet port it requires root access.
@@ -105,14 +105,14 @@ consecutive numbers.
 
 To **stop** febdrv hit `Ctrl-C`.
 
-[]{#Running-as-system-service}
 
-Running as system service[¶](#Running-as-system-service){.wiki-anchor}
+
+Running as system service
 ----------------------------------------------------------------------
 
-[]{#Check-if-febdrv-is-running}
 
-### Check if febdrv is running[¶](#Check-if-febdrv-is-running){.wiki-anchor}
+
+### Check if febdrv is running
 
 Type `systemctl`. If everything is fine you should see something like:\
 you see something like\
@@ -123,9 +123,9 @@ you see something like\
       febdrv@enp101s0f2.service        loaded active running   febdrv on enp101s0f2
       febdrv@enp101s0f3.service        loaded active running   febdrv on enp101s0f3
 
-[]{#Configuration}
 
-### Configuration[¶](#Configuration){.wiki-anchor}
+
+### Configuration
 
 In `sbndaq-artdaq/Generators/Common/Bern/service/` one can find files
 which allow to run febdrv as system service:
@@ -162,14 +162,14 @@ e.g.\
 
     journalctl -u febdrv@enp101s0f3
 
-[]{#FHiCL-configuration}
 
-FHiCL configuration[¶](#FHiCL-configuration){.wiki-anchor}
+
+FHiCL configuration
 ==========================================================
 
-[]{#Overview}
 
-Overview[¶](#Overview){.wiki-anchor}
+
+Overview
 ------------------------------------
 
 A FHiCL file for CRT corresponds to a single febdrv instance, thus to a
@@ -209,9 +209,9 @@ range only.
 There is an ongoing effort to generate the FHiCL files automatically
 based on the database information.
 
-[]{#Fragment-ID}
 
-Fragment ID[¶](#Fragment-ID){.wiki-anchor}
+
+Fragment ID
 ------------------------------------------
 
 The naming convention for CRT fragments is documented in
@@ -222,22 +222,22 @@ chain. Therefore a single generator produces many different fragment
 IDs. As of now, all of them need to be defined in the FHiCL file in a
 table `fragment_ids`.
 
-[]{#Code}
 
-Code[¶](#Code){.wiki-anchor}
+
+Code
 ============================
 
-[]{#Where-is-the-code}
 
-Where is the code?[¶](#Where-is-the-code){.wiki-anchor}
+
+Where is the code?
 -------------------------------------------------------
 
 `sbndaq-artdaq/Generators/Common/Bern` -- board reader\
 `sbndaq-artdaq-core/Overlays/Common` -- structure definitions
 
-[]{#Status}
 
-Status[¶](#Status){.wiki-anchor}
+
+Status
 --------------------------------
 
 (1/17/20)
@@ -258,9 +258,9 @@ To do:
 -   Prepare framework to read hardware configuration from the DB
 -   Prepare configuration for all FEB in the experiment
 
-[]{#DAQ-server-configuration}
 
-DAQ server configuration[¶](#DAQ-server-configuration){.wiki-anchor}
+
+DAQ server configuration
 ====================================================================
 
 The following actions are needed on each new ICARUS CRT DAQ server:

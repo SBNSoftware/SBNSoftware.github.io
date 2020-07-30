@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Issues with sbndaq and artdaq that need fixes
 ---
 
-[]{#Issues-with-sbndaq-and-artdaq-that-need-fixes}
 
-Issues with sbndaq and artdaq that need fixes[¶](#Issues-with-sbndaq-and-artdaq-that-need-fixes){.wiki-anchor}
+
+Issues with sbndaq and artdaq that need fixes
 ==============================================================================================================
 
 1.  Writing log files to root /log area

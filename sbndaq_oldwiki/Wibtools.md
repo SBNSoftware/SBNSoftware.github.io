@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Wibtools
 ---
 
-[]{#Wibtools}
 
-Wibtools[¶](#Wibtools){.wiki-anchor}
+
+Wibtools
 ====================================
 
-[]{#Running-DAQInterface}
 
-Running DAQInterface[¶](#Running-DAQInterface){.wiki-anchor}
+
+Running DAQInterface
 ------------------------------------------------------------
 
 See instruction/documentation/etc. at the artdaq-daqinterface page:
@@ -28,23 +28,14 @@ steps:
 
          setup sbndaq v#_##_## -q e17:prof:s82
 
-```{=html}
-<!-- -->
-```
 1.  Make sure you have the `sbndaq` repository pulled down in your
     working area (for setting up a working area, see the [Installation
-    Instructions](Installation_Instructions.html){.wiki-page})
+    Instructions](Installation_Instructions.html))
 
-```{=html}
-<!-- -->
-```
 1.  Setup the common sbndaq local products area:
 
          source localProducts_sbndaq_v#_##_##_e17_prof_s82/setup
 
-```{=html}
-<!-- -->
-```
 1.  Setup the latest version of wibtools we are based:
 
          unsetup wibtools
@@ -54,9 +45,6 @@ steps:
 
          setup wibtools v0_00_10 -q e17
 
-```{=html}
-<!-- -->
-```
 1.  To check the latest version of sbndaq you can do:
 
          cd build_slf7.x86_64
@@ -65,24 +53,15 @@ steps:
 
          ups active
 
-```{=html}
-<!-- -->
-```
 1.  Go to the sbndaq repository pulled down in your working area by
     going up one directory:
 
          cd ..
 
-```{=html}
-<!-- -->
-```
 1.  To run the DAQInterface go to the correct directory:
 
          cd srcs/sbndaq/dab/DAQInterface
 
-```{=html}
-<!-- -->
-```
 1.  Now you will need to edit the following files.\
     a) edit the known_boardreaders_list file
 
@@ -110,17 +89,11 @@ steps:
     and make sure that the WIB address is `sbnd-wib101` and WIB metrics
     dim IDName is `wib101`
 
-```{=html}
-<!-- -->
-```
 1.  At this point make sure that you are in the correct directory
     namely:
 
          srcs/sbndaq/dab/DAQInterface
 
-```{=html}
-<!-- -->
-```
 1.  Edit the run file
 
          emacs run
@@ -132,9 +105,6 @@ steps:
     in the code and commenting out the all the other `setdaqcomps`. This
     identifies which fickle file it will be using.
 
-```{=html}
-<!-- -->
-```
 1.  At this point it is advisable to open up another terminal and login
     to the machine on the desired DAQ cluster. For example:
 
@@ -145,23 +115,14 @@ steps:
     using for steps 1-10 will be called the first window and the new
     terminal will be called the second window.
 
-```{=html}
-<!-- -->
-```
 1.  In the second window go to the correct directory:
 
          cd <your_work_directory>/srcs/sbndaq/dab/DAQInterface
 
-```{=html}
-<!-- -->
-```
 1.  In both windows, do:
 
          source ./setup_daqinterface.sh
 
-```{=html}
-<!-- -->
-```
 1.  In the second window introduce the DAQInterface:
 
          DAQInterface &
@@ -170,9 +131,6 @@ steps:
 
          DAQInterface in partition 3 launched and now in "stopped" state, listening on port 13000
 
-```{=html}
-<!-- -->
-```
 1.  In the first window do:
 
          source ./run
@@ -188,9 +146,6 @@ steps:
 
         Sun Jul 28 18:36:24 CDT 2019: BOOT transition underway 
 
-```{=html}
-<!-- -->
-```
 1.  After the process is complete, in the first window you will get a
     message like
 
@@ -209,9 +164,6 @@ steps:
     crash will not be obvious. We will stop here for now and will update
     this wiki page after wibtools have been updated.
 
-```{=html}
-<!-- -->
-```
 1.  To list all info messages created by the WIBReader_generator, search
     for **WIBReader** in the trace buffer:\
 

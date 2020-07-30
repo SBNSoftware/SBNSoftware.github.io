@@ -1,40 +1,40 @@
 ---
-lang: en
+layout: page
 title: List of systems and components
 ---
 
-[]{#List-of-SBN-online-systems-and-components}
 
-List of SBN online systems and components[¶](#List-of-SBN-online-systems-and-components){.wiki-anchor}
+
+List of SBN online systems and components
 ======================================================================================================
 
 -   **Table of contents**
 -   [List of SBN online systems and
-    components](#List-of-SBN-online-systems-and-components)
--   [SBN-ND (SBND) detector hall](#SBN-ND-SBND-detector-hall)
-    -   [Central Server](#Central-Server)
--   [SBN-FD (ICARUS) detector hall](#SBN-FD-ICARUS-detector-hall)
-    -   [Central Servers](#Central-Servers)
-    -   [Vertical Slice Test Stand](#Vertical-Slice-Test-Stand)
-    -   [TPC computer servers](#TPC-computer-servers)
-    -   [PMT computer servers](#PMT-computer-servers)
-    -   [CRT computer servers](#CRT-computer-servers)
-    -   [Naming convention](#Naming-convention)
--   [Wideband](#Wideband)
--   [DAB Test Stand Cluster](#DAB-Test-Stand-Cluster)
-    -   [Annex Room 313](#Annex-Room-313)
+    components]
+-   [SBN-ND (SBND) detector hall]
+    -   [Central Server]
+-   [SBN-FD (ICARUS) detector hall]
+    -   [Central Servers]
+    -   [Vertical Slice Test Stand]
+    -   [TPC computer servers]
+    -   [PMT computer servers]
+    -   [CRT computer servers]
+    -   [Naming convention]
+-   [Wideband]
+-   [DAB Test Stand Cluster]
+    -   [Annex Room 313]
 
-[]{#SBN-ND-SBND-detector-hall}
 
-SBN-ND (SBND) detector hall[¶](#SBN-ND-SBND-detector-hall){.wiki-anchor}
+
+SBN-ND (SBND) detector hall
 ========================================================================
 
 Note the network setup at SBN-ND is temporary, until the production
 equipment arrives and installation commences in \~ April 202
 
-[]{#Central-Server}
 
-Central Server[¶](#Central-Server){.wiki-anchor}
+
+Central Server
 ------------------------------------------------
 
 -   sbnd-gateway01, sbnd-gateway02 : path into the SBND online computing
@@ -47,9 +47,9 @@ Central Server[¶](#Central-Server){.wiki-anchor}
 
 More to come!!!
 
-[]{#SBN-FD-ICARUS-detector-hall}
 
-SBN-FD (ICARUS) detector hall[¶](#SBN-FD-ICARUS-detector-hall){.wiki-anchor}
+
+SBN-FD (ICARUS) detector hall
 ============================================================================
 
 The network is divided into three segments - Fermilab, DAQ, and
@@ -64,9 +64,9 @@ from the Fermilab public network - icarus-gateway01 and
 icarus-gateway02. You must login to one of these two computers to access
 the other computers on the SBN-FD network.
 
-[]{#Central-Servers}
 
-Central Servers[¶](#Central-Servers){.wiki-anchor}
+
+Central Servers
 --------------------------------------------------
 
 -   icarus-gateway01, icarus-gateway02 : Path into the ICARUS online
@@ -80,9 +80,9 @@ Central Servers[¶](#Central-Servers){.wiki-anchor}
 -   icarus-nfs01 : backup ICARUS general purpose file server
 -   icarus-nfs02 : main ICARUS general purpose file server
 
-[]{#Vertical-Slice-Test-Stand}
 
-Vertical Slice Test Stand[¶](#Vertical-Slice-Test-Stand){.wiki-anchor}
+
+Vertical Slice Test Stand
 ----------------------------------------------------------------------
 
 -   icarus-vst01: TPC readout testing
@@ -92,9 +92,9 @@ Vertical Slice Test Stand[¶](#Vertical-Slice-Test-Stand){.wiki-anchor}
     -   vst02 has been rebooted three times in the last month. There is
         probably a hardware issue. 11-Nov-2019.
 
-[]{#TPC-computer-servers}
 
-TPC computer servers[¶](#TPC-computer-servers){.wiki-anchor}
+
+TPC computer servers
 ------------------------------------------------------------
 
 -   icarus-tpc01
@@ -102,17 +102,17 @@ TPC computer servers[¶](#TPC-computer-servers){.wiki-anchor}
 -   icarus-tpc02
     -   icarus-tpc02-dcs
 
-[]{#PMT-computer-servers}
 
-PMT computer servers[¶](#PMT-computer-servers){.wiki-anchor}
+
+PMT computer servers
 ------------------------------------------------------------
 
 -   icarus-pmt01
     -   icarus-pmt01-daq
 
-[]{#CRT-computer-servers}
 
-CRT computer servers[¶](#CRT-computer-servers){.wiki-anchor}
+
+CRT computer servers
 ------------------------------------------------------------
 
 -   icarus-crt01
@@ -120,9 +120,9 @@ CRT computer servers[¶](#CRT-computer-servers){.wiki-anchor}
     2019 or beginning of 2020
 -   icarus-crt03-11 : OS installation ongoing (10/2019)
 
-[]{#Naming-convention}
 
-Naming convention[¶](#Naming-convention){.wiki-anchor}
+
+Naming convention
 ------------------------------------------------------
 
 All computer servers have a Fermilab network connection (131.225.250.0)
@@ -138,23 +138,23 @@ The systems are divided by functionality. The values of xxx so far are.
 -   pdu - power distribution units
 -   ipmi - connections to management ports on the computer servers
 
-[]{#Wideband}
 
-Wideband[¶](#Wideband){.wiki-anchor}
+
+Wideband
 ====================================
 
 -   icarus-crt02
 
-[]{#DAB-Test-Stand-Cluster}
 
-DAB Test Stand Cluster[¶](#DAB-Test-Stand-Cluster){.wiki-anchor}
+
+DAB Test Stand Cluster
 ================================================================
 
 sbn-daq01,02,03,04? (private-network hostnames have \"-priv\" appended)
 
-[]{#Annex-Room-313}
 
-Annex Room 313[¶](#Annex-Room-313){.wiki-anchor}
+
+Annex Room 313
 ------------------------------------------------
 
 -   sbnd-daq32 : NFS disk volume

@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: RunConfig DB requirements notes
 ---
 
-[]{#RunConfig-DB-requirements-notes}
 
-RunConfig DB requirements notes[¶](#RunConfig-DB-requirements-notes){.wiki-anchor}
+
+RunConfig DB requirements notes
 ==================================================================================
 
-[]{#Discussion-15-March-2019Bill-Ron-David-Wes-Gennadiy}
 
-### Discussion 15 March 2019 (Bill, Ron, David, Wes, Gennadiy)[¶](#Discussion-15-March-2019Bill-Ron-David-Wes-Gennadiy){.wiki-anchor}
+
+### Discussion 15 March 2019 (Bill, Ron, David, Wes, Gennadiy)
 
 Want to separate specific technologies from concrete requirements:
 

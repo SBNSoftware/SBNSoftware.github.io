@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Grafana instructions
 ---
 
-[]{#Instructions-for-restarting-the-Grafana-monitoring-system}
 
-Instructions for restarting the Grafana monitoring system.[¶](#Instructions-for-restarting-the-Grafana-monitoring-system){.wiki-anchor}
+
+Instructions for restarting the Grafana monitoring system.
 =======================================================================================================================================
 
 Note: Grafana is running on icarus-db02 in a singularity container.

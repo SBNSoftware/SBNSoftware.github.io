@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Checking multicast request sendingreceiving
 ---
 
-[]{#Checking-multicast-request-sending-and-receiving}
 
-Checking multicast request sending and receiving[¶](#Checking-multicast-request-sending-and-receiving){.wiki-anchor}
+
+Checking multicast request sending and receiving
 ====================================================================================================================
 
-[]{#The-basics-and-configuration}
 
-The basics\... and configuration.[¶](#The-basics-and-configuration){.wiki-anchor}
+
+The basics\... and configuration.
 ---------------------------------------------------------------------------------
 
 Multicast sending and receiving can be checked by using the
@@ -142,9 +142,9 @@ currently valid:\
           request_count: -1  # default
        }
 
-[]{#Running-the-programs}
 
-Running the programs.[¶](#Running-the-programs){.wiki-anchor}
+
+Running the programs.
 -------------------------------------------------------------
 
 Once you believe you have your environment set and valid configuration

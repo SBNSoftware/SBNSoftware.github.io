@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: How to configure WIB and FEMB at D0 using python scripts
 ---
 
-[]{#How-to-configure-WIB-and-FEMB-at-D0-and-SBN-ND-using-python-scripts}
 
-How to configure WIB and FEMB at D0 and SBN-ND using python scripts[¶](#How-to-configure-WIB-and-FEMB-at-D0-and-SBN-ND-using-python-scripts){.wiki-anchor}
+
+How to configure WIB and FEMB at D0 and SBN-ND using python scripts
 ==========================================================================================================================================================
 
 To put the WIB into **[fake waveform mode]{.ul}**, type the following:
@@ -45,7 +45,7 @@ Followed by a bunch of numerical printouts, and then:
     COTS ADC in use
     Start FEMBs of WIB(IP=192.168.230.50) self-check
     FEMBs alive: 
-    [[], []]
+    [, ]
     True
     Turn FEMBs OFF
     time cost = 81.145 seconds

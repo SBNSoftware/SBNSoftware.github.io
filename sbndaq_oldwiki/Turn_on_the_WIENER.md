@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Turn on the WIENER
 ---
 
-[]{#Turn-on-the-WIENER}
 
-Turn on the WIENER[¶](#Turn-on-the-WIENER){.wiki-anchor}
+
+Turn on the WIENER
 ========================================================
 
 AT DAB sometimes there\'s a power outage, you need to physically go

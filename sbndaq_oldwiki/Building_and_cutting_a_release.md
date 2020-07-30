@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Building and cutting a release
 ---
 
-[]{#Building-and-cutting-a-release}
 
-Building and cutting a release[¶](#Building-and-cutting-a-release){.wiki-anchor}
+
+Building and cutting a release
 ================================================================================
 
     srcs/sbndaq/scripts/build_sbnd.sh

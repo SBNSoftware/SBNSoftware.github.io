@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Running at CERN
 ---
 
-[]{#Running-at-CERN}
 
-Running at CERN[¶](#Running-at-CERN){.wiki-anchor}
+
+Running at CERN
 ==================================================
 
 Code has been installed on both the \'upstairs\' (pcatlasst01/pc04-warp)
@@ -13,14 +13,14 @@ and \'downstairs\' (128.141.178.100) machines. Note the upstairs one is
 an Ubuntu machine (for which we hack SLF6 installs to work), while the
 downstairs one is CentOS7 (for which SLF7 works fine).
 
-[]{#Upstairs-server}
 
-**\'Upstairs\' server**[¶](#Upstairs-server){.wiki-anchor}
+
+**\'Upstairs\' server**
 ----------------------------------------------------------
 
-[]{#Logging-in}
 
-### Logging in[¶](#Logging-in){.wiki-anchor}
+
+### Logging in
 
 Login to the CERN network (lxplus.cern.ch) with your CERN username and
 password
@@ -28,22 +28,22 @@ password
 Loggin: ssh <icadaq@pcatlasst01.cern.ch>\
 Password: same as username
 
-[]{#Remember-to-unplug-the-trigger-from-the-SPEXI-board-5th-output-from-the-top}
 
-### Remember to unplug the trigger from the SPEXI board (5th output from the top).[¶](#Remember-to-unplug-the-trigger-from-the-SPEXI-board-5th-output-from-the-top){.wiki-anchor}
 
-[]{#Setting-up-the-software}
+### Remember to unplug the trigger from the SPEXI board (5th output from the top).
 
-Setting up the software:[¶](#Setting-up-the-software){.wiki-anchor}
+
+
+Setting up the software:
 -------------------------------------------------------------------
 
 Do:
 
     source artdaq_dev/setup_icartdaq.sh
 
-[]{#Then-we-will-run-out-of-a-development-area}
 
-Then we will run out of a development area:[¶](#Then-we-will-run-out-of-a-development-area){.wiki-anchor}
+
+Then we will run out of a development area:
 ---------------------------------------------------------------------------------------------------------
 
 Do:
@@ -52,9 +52,9 @@ Do:
     source localProducts_sbndaq_v0_01_03_e15_prof/setup 
     mrbslp
 
-[]{#Running-the-DAQ}
 
-Running the DAQ:[¶](#Running-the-DAQ){.wiki-anchor}
+
+Running the DAQ:
 ---------------------------------------------------
 
 If everything has been setup you can run the DAQ in \"test-stand\" mode
@@ -70,16 +70,16 @@ generator.\
 Then insert the trigger cable back to SPEXI (the same one you
 disconnected before).
 
-[]{#If-you-need-to-stop-an-ongoing-run-you-can-do-Ctrl-C-but-also-remember-to-kill-any-orphaned-art-threads}
 
-If you need to stop an ongoing run, you can do Ctrl-C, but also remember to kill any orphaned art threads:[¶](#If-you-need-to-stop-an-ongoing-run-you-can-do-Ctrl-C-but-also-remember-to-kill-any-orphaned-art-threads){.wiki-anchor}
+
+If you need to stop an ongoing run, you can do Ctrl-C, but also remember to kill any orphaned art threads:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     killall -9 art 
 
-[]{#Analyzing-data}
 
-Analyzing data:[¶](#Analyzing-data){.wiki-anchor}
+
+Analyzing data:
 -------------------------------------------------
 
 TPC data are written here:\
@@ -91,18 +91,18 @@ Note: if you skip the \' -T \<output_file\>\' command the output_file
 will have the same name as the \'fcl\' file, but with the \'root\'
 extension.
 
-[]{#Setting-up}
 
-### Setting up[¶](#Setting-up){.wiki-anchor}
 
-[]{#Downstairs-server}
+### Setting up
 
-**\'Downstairs\' server**[¶](#Downstairs-server){.wiki-anchor}
+
+
+**\'Downstairs\' server**
 --------------------------------------------------------------
 
-[]{#Logging-in-2}
 
-### Logging in[¶](#Logging-in-2){.wiki-anchor}
+
+### Logging in
 
 Login to the CERN network (lxplus.cern.ch) with your CERN username and
 password
@@ -110,9 +110,9 @@ password
 Loggin: ssh -p 7022 <icarus@128.141.178.100>\
 Password: Traccione
 
-[]{#Setting-up-the-software-2}
 
-Setting up the software[¶](#Setting-up-the-software-2){.wiki-anchor}
+
+Setting up the software
 --------------------------------------------------------------------
 
 Do:\
@@ -126,9 +126,9 @@ Then we will run out of a development area:\
     source localProducts_sbndaq_*/setup
     mrbslp
 
-[]{#Building-the-software}
 
-Building the software[¶](#Building-the-software){.wiki-anchor}
+
+Building the software
 --------------------------------------------------------------
 
 If you make a change to the code, you will need to rebuild and install
@@ -141,9 +141,9 @@ it. To do that:\
 Check for any compilation errors. If everything is ok, you should see a
 lot of lines saying \"Installing \<xxx\>\".
 
-[]{#Running-the-DAQ-2}
 
-Running the DAQ[¶](#Running-the-DAQ-2){.wiki-anchor}
+
+Running the DAQ
 ----------------------------------------------------
 
 If everything has been setup you can just run the DAQ in \"test-stand\"
@@ -172,9 +172,9 @@ tell the program to continue even if you log out:
 
     nohup artdaqDriver -c CAENV1730_driver.fcl >& daq.log &
 
-[]{#Analyzing-data-2}
 
-Analyzing data[¶](#Analyzing-data-2){.wiki-anchor}
+
+Analyzing data
 --------------------------------------------------
 
 There is a simple waveform analysis code located here:

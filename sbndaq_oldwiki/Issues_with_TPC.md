@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: Issues with TPC
 ---
 
-[]{#SBND-TPC-readout-troubleshooting}
 
-SBND TPC readout troubleshooting[¶](#SBND-TPC-readout-troubleshooting){.wiki-anchor}
+
+SBND TPC readout troubleshooting
 ====================================================================================
 
-[]{#Status-of-TPC-readout-electronics}
 
-Status of TPC readout electronics[¶](#Status-of-TPC-readout-electronics){.wiki-anchor}
+
+Status of TPC readout electronics
 --------------------------------------------------------------------------------------
 
 Every 12 seconds, an status report (\"XMIT Counter Info Report \") is
@@ -22,18 +22,18 @@ printed.
         packed event (nu) : # If 0, the NU stream (trigger stream) is not processing events, usually due to an issue with the PCIe card
         packed event (sn) : # If 0, the SN stream (continuous stream) is not processing frames, usually due to an issue with the PCIe card
 
-[]{#DAQ-crashing-because-WinDriver-is-not-loaded}
 
-DAQ crashing because WinDriver is not loaded[¶](#DAQ-crashing-because-WinDriver-is-not-loaded){.wiki-anchor}
+
+DAQ crashing because WinDriver is not loaded
 ------------------------------------------------------------------------------------------------------------
 
 Sometimes the WinDriver doesn\'t load automatically. That causes the run
 to crash upon the first call to a Nevis PCIe card. To test if it\'s
 loaded:
 
-[]{#Diagnostic}
 
-### Diagnostic[¶](#Diagnostic){.wiki-anchor}
+
+### Diagnostic
 
 On `sbn-daq01` do:
 
@@ -45,9 +45,9 @@ it with:
 
     /daq/software/products/windriver/configureOnBoot-windriver.sh
 
-[]{#Alternative-diagnostic-Run-the-Nevis-DAQ-code}
 
-### Alternative diagnostic: Run the Nevis DAQ code[¶](#Alternative-diagnostic-Run-the-Nevis-DAQ-code){.wiki-anchor}
+
+### Alternative diagnostic: Run the Nevis DAQ code
 
 Set up windriver first:\
 
@@ -104,9 +104,9 @@ If WinDriver is loaded, you will get:\
 \
 Do not continue running the program, instead exit with CTRL + C
 
-[]{#WIB-FEM-Issues}
 
-WIB-FEM Issues[¶](#WIB-FEM-Issues){.wiki-anchor}
+
+WIB-FEM Issues
 ------------------------------------------------
 
 **Best it to ask for help to experts.** The only solutions available now

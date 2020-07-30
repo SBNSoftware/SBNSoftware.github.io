@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: SBND TPC DAQ
 ---
 
-[]{#SBND-TPC-DAQ}
 
-SBND TPC DAQ[¶](#SBND-TPC-DAQ){.wiki-anchor}
+
+SBND TPC DAQ
 ============================================
 
 A zoom recording of SBND TPC readout/DAQ training is available here:\
@@ -47,9 +47,9 @@ Diagrams showing the hardware connections and signal distribution are
 available at:\
 <https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=11601>
 
-[]{#SBN-ND-reception-tests}
 
-SBN-ND reception tests[¶](#SBN-ND-reception-tests){.wiki-anchor}
+
+SBN-ND reception tests
 ----------------------------------------------------------------
 
 To test at DAB: `ssh` to `sbn-daq01.fnal.gov` (first `ssh` into one of
@@ -96,9 +96,9 @@ The raw binary data format is described at:\
 For more information, see:\
 <https://cdcvs.fnal.gov/redmine/projects/sbn-online/wiki/SBND_Electrical_Installation>
 
-[]{#DAQ-Digitization-conversion-to-LArSoft-rawRawDigit}
 
-DAQ *Digitization* (conversion to LArSoft `raw::RawDigit`)[¶](#DAQ-Digitization-conversion-to-LArSoft-rawRawDigit){.wiki-anchor}
+
+DAQ *Digitization* (conversion to LArSoft `raw::RawDigit`)
 --------------------------------------------------------------------------------------------------------------------------------
 
 An area has been set up to run *digitization* on the artROOT fragments
@@ -120,9 +120,9 @@ To take a look at the waveforms:\
     lar -c analysis.fcl -s /path/to/digits.root -T /path/to/output/analyze.root
     python waveform_plots.py /path/to/analyze.root
 
-[]{#Common-issues}
 
-Common issues[¶](#Common-issues){.wiki-anchor}
+
+Common issues
 ----------------------------------------------
 
 -   Run crashed with\
@@ -138,16 +138,16 @@ Common issues[¶](#Common-issues){.wiki-anchor}
     `configureOnBoot-windriver.sh` script as root (using the `ksu`
     command), available under `sbndaq-artdaq/Generators/SBND/NevisTPC`
 
-[]{#Nevis-hardware-inventory-at-Fermilab}
 
-Nevis hardware inventory at Fermilab[¶](#Nevis-hardware-inventory-at-Fermilab){.wiki-anchor}
+
+Nevis hardware inventory at Fermilab
 --------------------------------------------------------------------------------------------
 
 <https://docs.google.com/spreadsheets/d/1AQXGrZXeNa0D6rSTsjCj5G_V7EQZgRDxtb_MsUXf5_I/edit?usp=sharing>
 
-[]{#Nevis-hardware-production-tests}
 
-Nevis hardware production tests[¶](#Nevis-hardware-production-tests){.wiki-anchor}
+
+Nevis hardware production tests
 ----------------------------------------------------------------------------------
 
 Spreadsheet with results:

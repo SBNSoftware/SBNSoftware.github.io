@@ -1,16 +1,16 @@
 ---
-lang: en
+layout: page
 title: ICARUS TPC Vertical Slice Test
 ---
 
-[]{#ICARUS-TPC-Vertical-Slice-Test}
 
-ICARUS TPC Vertical Slice Test[¶](#ICARUS-TPC-Vertical-Slice-Test){.wiki-anchor}
+
+ICARUS TPC Vertical Slice Test
 ================================================================================
 
-[]{#Current-instructions}
 
-Current instructions[¶](#Current-instructions){.wiki-anchor}
+
+Current instructions
 ------------------------------------------------------------
 
 1\. Log in the gateway machine as the icarus user
@@ -133,9 +133,9 @@ Note the input filename should be set/changed near the top of the
 notebook. To clear/restart/run the notebook, click on the \"Kernel\"
 option in the menu at the top, and then select \"Restart and Run All\".
 
-[]{#Older-instructions-before-April-5-2019}
 
-Older instructions (before April 5 2019)[¶](#Older-instructions-before-April-5-2019){.wiki-anchor}
+
+Older instructions (before April 5 2019)
 --------------------------------------------------------------------------------------------------
 
 1\. Log in the gateway machine
