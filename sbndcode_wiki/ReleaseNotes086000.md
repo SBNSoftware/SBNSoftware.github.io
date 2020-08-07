@@ -33,6 +33,7 @@ Updated dependencies
 ---------------------------------------------------
 
 * [larsoft v08_60_00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes086000)
+* pandora v03_15_00
 
 Change List
 ==========================================
