@@ -77,7 +77,7 @@ This will determine the precision of the visibility information.
 Other relevant parameters are related to the expected resource usage for the process.
 The number of grid jobs (i.e. the number of voxels per job) and the memory and time limit
 per job must be consistent and allow the full processing. For reference,
-the time required to process 1'000'000 photons (in a single voxel) with `v08_62_00`
+the time required to process 1'000'000 photons (in a single voxel) with `v08_63_00`
 was a little above one minute, with memory usage safely below 2000 MB.
 The smaller the jobs, the faster they may go (questionable),
 the less costy is the failure of a job, and the more painful their bookkeeping is.
@@ -90,7 +90,8 @@ postprocessing, and after the postprocessing the fragments are not required any 
 The execution environment under a ICARUS GPVM should be interruptible (running inside a
 [terminal multiplexer](https://github.com/tmux/tmux/wiki) is _strongly_ recommended),
 it should be set up with the `icaruscode` version of choice
-(e.g. `setup icaruscode v08_62_00 -q e19:prof`), and should have a current Kerberos5 ticket
+(e.g. `setup icaruscode v08_63_00 -q e19:prof`) and job submission software
+(`setup jobsub_client`), and should have a current Kerberos5 ticket
 and [grid certificate proxy](../Get_a_certificate_proxy.md).
 
 
@@ -101,7 +102,7 @@ in the helper scripts and to run them.
 
 The first helper script is called `neoSmazza.sh`. It lives in `icaruscode/PMT/scripts`
 under the `icaruscode` repository, and in principle it should be installed with the release.
-In practice, for example `icaruscode` `v08_62_00` has a derived script
+In practice, for example `icaruscode` `v08_63_00` has a derived script
 `neoSmazza202008.sh` which is a legit `neoSmazza.sh` script but customised with
 parameters proper for the photon library that was generated in August 2020.
 Also, by mistake in _that_ release this script (and others) was not installed.
@@ -177,7 +178,8 @@ library version and the software version used to process it.
 1. set up a working area with the chosen `icaruscode` version and [get a grid certificate proxy](../Get_a_certificate_proxy.md):
        
        source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
-       setup icaruscode v08_62_00 -q e19:prof
+       setup icaruscode v08_63_00 -q e19:prof
+       setup jobsub_client
        
 2. modify (a copy of) `neoSmazza.sh` script with the proper parameter values;
 3. run the copy of `neoSmazza.sh`; it should takes no more than a few minutes with a healthy dCache status;
