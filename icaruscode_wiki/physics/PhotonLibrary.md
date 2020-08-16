@@ -175,10 +175,10 @@ library version and the software version used to process it.
 ### Command sequence
 
 1. set up a working area with the chosen `icaruscode` version and [get a grid certificate proxy](../Get_a_certificate_proxy.md):
-    
-    source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
-    setup icaruscode v08_62_00 -q e19:prof
-    
+       
+       source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
+       setup icaruscode v08_62_00 -q e19:prof
+       
 2. modify (a copy of) `neoSmazza.sh` script with the proper parameter values;
 3. run the copy of `neoSmazza.sh`; it should takes no more than a few minutes with a healthy dCache status;
 4. execute the submission script (something like `photonlibrary_builder_icarus-submit.sh`)
