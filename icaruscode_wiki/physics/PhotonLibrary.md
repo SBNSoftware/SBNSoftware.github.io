@@ -77,7 +77,7 @@ This will determine the precision of the visibility information.
 Other relevant parameters are related to the expected resource usage for the process.
 The number of grid jobs (i.e. the number of voxels per job) and the memory and time limit
 per job must be consistent and allow the full processing. For reference,
-the time required to process 1'000'000 photons (in a single voxel) with `v08_63_00`
+the time required to process 1'000'000 photons (in a single voxel) with `v09_00_00`
 was a little above one minute, with memory usage safely below 2000 MB.
 The smaller the jobs, the faster they may go (questionable),
 the less costy is the failure of a job, and the more painful their bookkeeping is.
@@ -90,7 +90,7 @@ postprocessing, and after the postprocessing the fragments are not required any 
 The execution environment under a ICARUS GPVM should be interruptible (running inside a
 [terminal multiplexer](https://github.com/tmux/tmux/wiki) is _strongly_ recommended),
 it should be set up with the `icaruscode` version of choice
-(e.g. `setup icaruscode v08_63_00 -q e19:prof`) and job submission software
+(e.g. `setup icaruscode v09_00_00 -q e19:prof`) and job submission software
 (`setup jobsub_client`), and should have a current Kerberos5 ticket
 and [grid certificate proxy](../Get_a_certificate_proxy.md).
 
@@ -102,7 +102,7 @@ in the helper scripts and to run them.
 
 The first helper script is called `neoSmazza.sh`. It lives in `icaruscode/PMT/scripts`
 under the `icaruscode` repository, and in principle it should be installed with the release.
-In practice, for example `icaruscode` `v08_63_00` has a derived script
+In practice, for example `icaruscode` `v09_00_00` has a derived script
 `neoSmazza202008.sh` which is a legit `neoSmazza.sh` script but customised with
 parameters proper for the photon library that was generated in August 2020.
 Also, by mistake in _that_ release this script (and others) was not installed.
@@ -147,6 +147,12 @@ Running the submission script with the `project'py` option `--checkana`
 will run a load of checks, and it will fail them all because either the current
 version of `project.py` does not support this type of jobs (no input file
 _and_ not _art_ ROOT output file) or I have not figured out how to explain them to it.
+A practical command line:
+    
+    xargs -l project.py --checkana --xml < campaign-xml.list
+    
+(`campaign-xml.list` is a placeholder for the list produced and advertised by
+`neoSmazza.sh`, with full path).
 After this, we have a custom test script that will just check that the exit code
 of the job was good.
 If a job has failed, the job **must** be resubmitted until successful, lest the library
@@ -178,12 +184,17 @@ library version and the software version used to process it.
 1. set up a working area with the chosen `icaruscode` version and [get a grid certificate proxy](../Get_a_certificate_proxy.md):
        
        source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
-       setup icaruscode v08_63_00 -q e19:prof
+       setup icaruscode v09_00_00 -q e19:prof
        setup jobsub_client
        
 2. modify (a copy of) `neoSmazza.sh` script with the proper parameter values;
 3. run the copy of `neoSmazza.sh`; it should takes no more than a few minutes with a healthy dCache status;
 4. execute the submission script (something like `photonlibrary_builder_icarus-submit.sh`)
+5. check when all jobs have completed: `jobsub_q --user "$USER" | less`
+6. check the success of the jobs:
+       
+       xargs -l project.py --checkana --xml < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+       
 
 _to be completed_
 
