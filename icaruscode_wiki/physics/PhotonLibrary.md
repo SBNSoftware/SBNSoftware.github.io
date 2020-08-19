@@ -154,10 +154,28 @@ A practical command line:
 (`campaign-xml.list` is a placeholder for the list produced and advertised by
 `neoSmazza.sh`, with full path).
 After this, we have a custom test script that will just check that the exit code
-of the job was good.
+of the job was good. It also creates in the same directory as the input XML file list
+additional XML file lists which can be used to address the failing jobs:
+    
+    CheckPhotonLibraryJobs.sh campaign-xml.list
+    
 If a job has failed, the job **must** be resubmitted until successful, lest the library
-be left with a hole.
+be left with a hole. A convenient way to do that is to clean up first, and then submit:
+    
+    xargs -l project.py --clean --xml < failed-xml.list
+    xargs -l project.py --submit --xml < failed-xml.list
+    
+`GOTO 1`. **But** first one has to investigate the failure.
+If for example the job took too much time, or memory, the relevant configuration
+parameters in the configuration XML file of the failing jobs must be changed
+to reflect that.
+The next time `CheckPhotonLibraryJobs.sh` can be ran with the option `--skipgood`
+which will make the check of the jobs that are already marked as good _slighty_
+faster.
+
 Once there is one ROOT output file per job, we are ready to the next step.
+`CheckPhotonLibraryJobs.sh` has also produced a file list with all output files in,
+whose path is printed by the script itself at the end.
 
 
 ### Merging job output
@@ -194,8 +212,22 @@ library version and the software version used to process it.
 6. check the success of the jobs:
        
        xargs -l project.py --checkana --xml < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
-       
+       CheckPhotonLibraryJobs.sh /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
 
 _to be completed_
+
+
+### Why is not `project.py` enough?
+
+The `project.py` tool facilitates the check and recovery of failed jobs.
+Why is this load of custom check scripts even needed?
+
+1. apparently `project.py` is not able to correctly check a job that has
+   no input file (generator style job) and has no _art_ ROOT output
+   (analyser style job); photon library jobs fall in that category;
+2. `project.py` is designed to deal with many subjobs sharing the same
+   configuration; each photon library job has a unique configuration
+   (pointing to a specific set of voxels), and is not split into subjobs.
+
 
 
