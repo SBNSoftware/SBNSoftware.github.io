@@ -211,13 +211,30 @@ library version and the software version used to process it.
 5. check when all jobs have completed: `jobsub_q --user "$USER" | less`
 6. check the success of the jobs:
        
-       xargs -l project.py --checkana --xml < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+       photonlibrary_builder_icarus-submit.sh --checkana
        CheckPhotonLibraryJobs.sh /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+
+7. clean the output of the jobs to be resubmitted:
+       
+       xargs -l project.py --clean --xml < /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
+       
+8. after changing their configuration if needed, resubmit them:
+       
+       xargs -l project.py --submit --xml < /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
+       
+9. check the success of the jobs (note: `checkana` only on the new ones, `CheckPhotonLibraryJobs.sh` on all):
+       
+       xargs -l project.py --checkana --xml < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
+       CheckPhotonLibraryJobs.sh --skipgood /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+
+       
 
 _to be completed_
 
 
-### Why is not `project.py` enough?
+### Questions and answers
+
+#### Why is not `project.py` enough?
 
 The `project.py` tool facilitates the check and recovery of failed jobs.
 Why is this load of custom check scripts even needed?
