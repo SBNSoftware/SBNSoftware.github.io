@@ -1,33 +1,25 @@
 ---
 layout: page
 title: List of ICARUS code releases
+subtitle: 
+toc: true
+toc_title: Contents
 ---
-
 
 
 List of ICARUS code releases
 ============================================================================
 
--   **Table of contents**
--   [List of ICARUS code releases]
-    -   [List of icaruscode releases]
-    -   [Dependencies]
-        -   [sbndaq\_artdaq\_core quirks]
+Here we enumerate the impressive number of code releases by the ICARUS army.
 
-Here we enumerate the impressive number of code releases by the ICARUS
-army.
-
-The army has also filled a [list of
-dependencies], after the list of releases
-below.
-
+The army has also filled a [list of dependencies], after the list of releases below.
 
 
 List of `icaruscode` releases
 ----------------------------------------------------------------------------
 
-[ **Transient and temporary release manager**: [Tracy
-Usher](mailto:usher@slac.stanford.edu)]{style="color: red;"}
+[**Transient and temporary release manager**: Tracy
+Usher](mailto:usher@slac.stanford.edu)
 
 These are the `icaruscode` releases tagged until now:
 
@@ -66,33 +58,28 @@ The ICARUS code repository (`icaruscode`) currently depends on
 `cetbuildtools` (for building). In all releases the `icaruscode` release
 tag matches the underlying `larsoft` version. Note that in general,
 `icarusutil` versions are independent though generally also match. Also,
-`icarusutil` is an \"optional\" dependency. So, on [Fermilab
-GPVMs](Computing_resources.html#Where-to-work-interactive-nodes-GPVM)
+`icarusutil` is an "optional" dependency. So, on
+[Fermilab GPVMs](Computing_resources.html#Where-to-work-interactive-nodes-GPVM)
 it will be set up but offsite it will not be set up unless it is
 available: usually it is not. If you are building your own `icaruscode`
 with MRB, you can check out also `icarusutil` (`mrb g icarusutil`) and
 when you build the area `icarusutil` will be available to you.
 
-Summary of dependencies; all are mandatory (even when \"not necessary\")
+Summary of dependencies; all are mandatory (even when "not necessary")
 unless otherwise specified:
 
--   [icaruscode]{style="color: crimson;"} is the main ICARUS simulation
-    and reconstruction software repository;
--   [icarus\_signal\_processing]{style="color: crimson;"} includes
-    algorithms for readout signal processing;
--   [larsoft]{style="color: crimson;"} includes, well, LArSoft; you
-    won\'t go very far without this;
--   [icarus\_data]{style="color: crimson;"} includes data files of
-    moderate size (e.g. for signal processing); it is often necessary,
-    but not always so;
--   [genie\_xsec]{style="color: crimson;"} to allow our experiment to
-    choose which GENIE cross section set to use; necessary when running
-    GENIE;
--   [sbndaq\_artdaq\_core]{style="color: crimson;"} (mandatory since
-    `icaruscode` [version:v08\_32\_00]{style="font: monospace;"})
-    connects to data acquisition (see below);
--   [icarusutil]{style="color: crimson;"} *(optional)* includes scripts
-    and facilities for job submission to the grid(s);
+- `icaruscode` is the main ICARUS simulation
+  and reconstruction software repository;
+- `icarus_signal_processing` includes algorithms for readout signal processing;
+- `larsoft`includes, well, LArSoft; you won't go very far without this;
+- `icarus_data` includes data files of moderate size (e.g. for signal processing);
+  it is often necessary, but not always so;
+- `genie_xsec` to allow our experiment to choose which GENIE cross section set to use;
+  necessary when running GENIE;
+- `sbndaq_artdaq_core` (mandatory since `icaruscode` `v08_32_00`)
+  connects to data acquisition (see below);
+- `icarusutil` *(optional)* includes scripts
+  and facilities for job submission to the grid(s);
 
 
 
@@ -101,11 +88,10 @@ unless otherwise specified:
 If you need to check out `sbndaq_artdaq_core` in your working area, the
 effective MRB command is:
 
-    mrb gitCheckout -d sbndaq_artdaq_core sbndaq%sbndaq-artdaq-core%sbndaq
+    mrb gitCheckout -d sbndaq_artdaq_core sbndaq-artdaq-core
 
-which checks out the repository `sbndaq-artdaq-core` from the
-[sbndaq](/redmine/projects/sbndaq){.project} Redmine project, using
-`sbndaq` as user name as for Fermilab convention, and putting it into
-`sbndaq_artdaq_core` directory because if it is true, as it is, that UPS
-hates underscores, it is just as true that LArSoft build system
-`cet_build_tools` hates hyphens.
+which checks out the repository `sbndaq-artdaq-core` from the default repository
+in GitHub (SBNSoftware), and puts it into `sbndaq_artdaq_core` directory because
+if it is true, as it is, that UPS hates underscores, it is just as true that
+LArSoft build system `cet_build_tools` hates hyphens.
+_(also, this seems still not to be enough to make `cetbuildtools` happy...)_
