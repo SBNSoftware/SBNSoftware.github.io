@@ -23,30 +23,29 @@ Usher](mailto:usher@slac.stanford.edu)
 
 These are the `icaruscode` releases tagged until now:
 
-  ------------- ---------------- -----------------------------------------------------------
-  Version       Notes            Detailed Notes
-  `v08_52_00`   Weekly release   [Release Notes](ReleaseNotes085200.html)
-  `v08_43_00`   Weekly release   [Release Notes](ReleaseNotes084300.html)
-  `v08_37_00`   Weekly release   [Release Notes](ReleaseNotes083700.html)
-  `v08_36_02`   Weekly release   [Release Notes](ReleaseNotes083602.html)
-  `v08_36_01`   Weekly release   [Release Notes](ReleaseNotes083601.html)
-  `v08_34_00`   Weekly release   [Release Notes](ReleaseNotes083400.html)
-  `v08_33_00`   Weekly release   [Release Notes](ReleaseNotes083300.html)
-  `v08_32_00`   Weekly release   [Release Notes](ReleaseNotes083200.html)
-  `v08_31_01`   Weekly release   [Release Notes](ReleaseNotes083101.html)
-  `v08_22_00`   Weekly release   [Release Notes](ReleaseNotes0822_00.html)
-  `v08_19_01`   Weekly release   [Release Notes](ReleaseNotes081901.html)
-  `v08_14_00`   Weekly release   [Release Notes](ReleaseNotes081400.html)
-  `v08_13_02`   Weekly release   [Release Notes](ReleaseNotes081302.html)
-  `v08_12_00`   Weekly release   [Release Notes](ReleaseNotes081200.html)
-  `v08_11_00`   Weekly release   [Release Notes](ReleaseNotes081100.html)
-  `v08_10_01`   Weekly release   [Release Notes](ReleaseNotes081001.html)
-  `v08_07_01`   Weekly release   [Release Notes](ReleaseNotes080701.html)
-  `v08_03_00`   Weekly release   [Release Notes](ReleaseNotes080300.html)
-  `v08_01_00`   Weekly release   [Release Notes](ReleaseNotes080100.html){.wiki-page .new}
-  `v07_11_00`   Weekly release   [Release Notes](ReleaseNotes071100.html)
-  `v07_08_00`   Weekly release   [Release Notes](ReleaseNotes070800.html)
-  ------------- ---------------- -----------------------------------------------------------
+  Version       | Notes            | Detailed Notes
+  ------------- | ---------------- | -----------------------------------------------------------
+  `v08_52_00`   | Weekly release   | [Release Notes](ReleaseNotes085200.html)
+  `v08_43_00`   | Weekly release   | [Release Notes](ReleaseNotes084300.html)
+  `v08_37_00`   | Weekly release   | [Release Notes](ReleaseNotes083700.html)
+  `v08_36_02`   | Weekly release   | [Release Notes](ReleaseNotes083602.html)
+  `v08_36_01`   | Weekly release   | [Release Notes](ReleaseNotes083601.html)
+  `v08_34_00`   | Weekly release   | [Release Notes](ReleaseNotes083400.html)
+  `v08_33_00`   | Weekly release   | [Release Notes](ReleaseNotes083300.html)
+  `v08_32_00`   | Weekly release   | [Release Notes](ReleaseNotes083200.html)
+  `v08_31_01`   | Weekly release   | [Release Notes](ReleaseNotes083101.html)
+  `v08_22_00`   | Weekly release   | [Release Notes](ReleaseNotes082200.html)
+  `v08_19_01`   | Weekly release   | [Release Notes](ReleaseNotes081901.html)
+  `v08_14_00`   | Weekly release   | [Release Notes](ReleaseNotes081400.html)
+  `v08_13_02`   | Weekly release   | [Release Notes](ReleaseNotes081302.html)
+  `v08_12_00`   | Weekly release   | [Release Notes](ReleaseNotes081200.html)
+  `v08_11_00`   | Weekly release   | [Release Notes](ReleaseNotes081100.html)
+  `v08_10_01`   | Weekly release   | [Release Notes](ReleaseNotes081001.html)
+  `v08_07_01`   | Weekly release   | [Release Notes](ReleaseNotes080701.html)
+  `v08_03_00`   | Weekly release   | [Release Notes](ReleaseNotes080300.html)
+  `v08_01_00`   | Weekly release   | [Release Notes](ReleaseNotes080100.html)
+  `v07_11_00`   | Weekly release   | [Release Notes](ReleaseNotes071100.html)
+  `v07_08_00`   | Weekly release   | [Release Notes](ReleaseNotes070800.html)
 
 
 
