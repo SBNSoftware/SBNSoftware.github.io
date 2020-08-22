@@ -144,9 +144,8 @@ and check how the jobs are being queued with the standard commands
 
 Once no jobs is in queue any more, the standard and non-standard checks may be ran.
 Running the submission script with the `project'py` option `--checkana`
-will run a load of checks, and it will fail them all because either the current
-version of `project.py` does not support this type of jobs (no input file
-_and_ not _art_ ROOT output file) or I have not figured out how to explain them to it.
+will run a load of checks. Unfortunately it will not keep in separate lists
+the jobs that need to be resubmitted or have failed or are otherwise unsuccessful.
 A practical command line:
     
     xargs -l project.py --checkana --xml < campaign-xml.list
@@ -238,13 +237,9 @@ _to be completed_
 
 The `project.py` tool facilitates the check and recovery of failed jobs.
 Why is this load of custom check scripts even needed?
-
-1. apparently `project.py` is not able to correctly check a job that has
-   no input file (generator style job) and has no _art_ ROOT output
-   (analyser style job); photon library jobs fall in that category;
-2. `project.py` is designed to deal with many subjobs sharing the same
-   configuration; each photon library job has a unique configuration
-   (pointing to a specific set of voxels), and is not split into subjobs.
+`project.py` is designed to deal with many subjobs sharing the same
+configuration; each photon library job has instead a unique configuration
+(pointing to a specific set of voxels), and is not split into subjobs.
 
 
 
