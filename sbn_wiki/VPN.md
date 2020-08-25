@@ -47,10 +47,10 @@ or by a software application.
 
 Currently one way to get get started is:
 
-1.  First you need to get a token by opening a ticket [RSA Token Request form](https://fermi.service-now.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401){.external}
+1.  First you need to get a token by opening a ticket [RSA Token Request form](https://fermi.servicenowservices.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401){.external}
     (takes a while and both hard and soft tokens are limited)
-2.  [Set it up](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0011426)
-3.  [Use it](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0013046)
+2.  [Set it up](https://fermi.servicenowservices.com/wp?id=kb_article&sys_id=KB0011426)
+3.  [Use it](https://fermi.servicenowservices.com/wp?id=kb_article&sys_id=KB0013046)
 
 A token will be requested on each connection.
 
