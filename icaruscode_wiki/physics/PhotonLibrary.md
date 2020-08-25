@@ -61,7 +61,7 @@ The procedure consists of the following parts:
 
 1. collect the relevant information on the geometry of the detector and the precision of the map;
 2. run the photon simulation in the grid, bookkeep, make sure the job completed;
-   the stanard strategy is that each job is single-threaded, covers a certain contiguous range
+   the standard strategy is that each job is single-threaded, covers a certain contiguous range
    of voxels, and it is comprised of a single subjob (in `project.py` terms, `<njobs>1</njobs>`);
 3. merge the output of all jobs into the single photon library ROOT file;
 4. perform physics checks as needed.
@@ -105,7 +105,6 @@ under the `icaruscode` repository, and in principle it should be installed with 
 In practice, for example `icaruscode` `v09_00_00` has a derived script
 `neoSmazza202008.sh` which is a legit `neoSmazza.sh` script but customised with
 parameters proper for the photon library that was generated in August 2020.
-Also, by mistake in _that_ release this script (and others) was not installed.
 The `neoSmazza.sh` script generates the job configuration files (FHiCL and XML)
 that `project.py` can use to drive the jobs, a XML file list which comes handy
 when some action is required on _all_ the jobs (`xargs` is your friend there),
@@ -128,7 +127,9 @@ and the submission script, which will both come handy soon.
 
 The next step will consist in running the submission script.
 The path of that script was written by `neoSmazza.sh` on screen,
-and it should have a name like `photonlibrary_builder_icarus-submit.sh`.
+and we'll call it `campaign.sh` in this text (the default campaign name is
+`photonlibrary_builder_icarus`, so the default script name is
+`photonlibrary_builder_icarus-submit.sh`).
 This goes through the list of XML job configuration files one by one,
 submitting one job for each configuration file. It is slow enough that while I
 have written all this documentation up to now, it has barely submitted 
@@ -146,35 +147,36 @@ Once no jobs is in queue any more, the standard and non-standard checks may be r
 Running the submission script with the `project'py` option `--checkana`
 will run a load of checks. Unfortunately it will not keep in separate lists
 the jobs that need to be resubmitted or have failed or are otherwise unsuccessful.
-A practical command line:
-    
-    xargs -l project.py --checkana --xml < campaign-xml.list
-    
-(`campaign-xml.list` is a placeholder for the list produced and advertised by
+The same script used to submit the jobs may also be used to check all of them,
+running it with `--checkana` option (`campaign-submit.sh --checkana`).
+(`campaign.sh` is a placeholder for the list produced and advertised by
 `neoSmazza.sh`, with full path).
-After this, we have a custom test script that will just check that the exit code
-of the job was good. It also creates in the same directory as the input XML file list
-additional XML file lists which can be used to address the failing jobs:
+In the best case, the script will report no error (don't hold your breath).
+Either way, after this we have a custom test script that will just collect
+the jobs in practical XML file lists written in the same directory
+as the input XML file list; these additional lists can be used
+to address the failing jobs:
     
-    CheckPhotonLibraryJobs.sh campaign-xml.list
+    CheckPhotonLibraryJobs.py campaign-xml.list
     
 If a job has failed, the job **must** be resubmitted until successful, lest the library
 be left with a hole. A convenient way to do that is to clean up first, and then submit:
     
-    xargs -l project.py --clean --xml < failed-xml.list
-    xargs -l project.py --submit --xml < failed-xml.list
+    xargs -l project.py --clean --xml < campaign-badxml.list
+    xargs -l project.py --submit --xml < campaign-badxml.list
     
 `GOTO 1`. **But** first one has to investigate the failure.
 If for example the job took too much time, or memory, the relevant configuration
 parameters in the configuration XML file of the failing jobs must be changed
 to reflect that.
-The next time `CheckPhotonLibraryJobs.sh` can be ran with the option `--skipgood`
+The next time `CheckPhotonLibraryJobs.py` can be ran with the option `--skipgood`
 which will make the check of the jobs that are already marked as good _slighty_
 faster.
 
 Once there is one ROOT output file per job, we are ready to the next step.
-`CheckPhotonLibraryJobs.sh` has also produced a file list with all output files in,
-whose path is printed by the script itself at the end.
+`CheckPhotonLibraryJobs.py` has also produced a file list with all output files in,
+whose path is printed by the script itself at the end (we'll call it
+`campaign-outputfile.list` here).
 
 
 ### Merging job output
@@ -194,6 +196,25 @@ is used, since the patterns that ROOT `TChain::Add()` supports are not very flex
 The input file can be expressed in XRootD paths (which I believe is recommended)
 or as UNIX paths. Additional information is requested, like a tag for the photon
 library version and the software version used to process it.
+The script name is `MergePhotonLibrary.C`: it is a ROOT macro and it is documented
+inline in Doxygen format.
+Note that this can take *long*, and part of the processing is in ROOT's hands,
+and ROOT does not provide progress feedback (a real life case tool 15 minutes
+for that part alone). The script will report any missing voxel. A voxel is missing
+if no PMT collected any one photon coming from that voxel. There are two main
+possibilities:
+
+1. the voxel is (almost) blind: all its liquid argon is shielded from the PMT;
+2. a file was skipped.
+
+The report of the script says something like:
+    
+     => 5982 voxels missing in 5982 blocks (0 blocks at least 10 voxel big)!
+    
+The `0 blocks at least 10 voxel big` suggests that there is no missing file,
+in which case there would be large blocks missing (e.g. 1850 voxels in a row).
+The 5982 missing voxels are isolated (in as many "blocks"), and it can then be
+presumed that  of the "blind" type.
 
 
 ### Command sequence
@@ -211,24 +232,35 @@ library version and the software version used to process it.
 6. check the success of the jobs:
        
        photonlibrary_builder_icarus-submit.sh --checkana
-       CheckPhotonLibraryJobs.sh /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+       CheckPhotonLibraryJobs.py /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
 
 7. clean the output of the jobs to be resubmitted:
        
-       xargs -l project.py --clean --xml < /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
+       grep -v ^# /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list | xargs -l project.py --clean --xml
        
 8. after changing their configuration if needed, resubmit them:
        
-       xargs -l project.py --submit --xml < /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
+       grep -v ^# /pnfs/icarus/scratch/users/petrillo/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list | xargs -l project.py --submit --xml
        
-9. check the success of the jobs (note: `checkana` only on the new ones, `CheckPhotonLibraryJobs.sh` on all):
+9. check the success of the jobs (note: `checkana` only on the new ones, `CheckPhotonLibraryJobs.py` on all):
        
-       xargs -l project.py --checkana --xml < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list
-       CheckPhotonLibraryJobs.sh --skipgood /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+       grep -v ^# /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-badxml.list | xargs -l project.py --checkana --xml
+       CheckPhotonLibraryJobs.py --skipgood /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-xml.list
+       
+   Back to point 7 if there are failures, otherwise move on.
+10. once all job succeeded, merge the output files into the photon library:
+       
+       pnfsToXRootD < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-outputfile.list > photonlibrary_builder_icarus-outputfile-xrootd.list
+       root -l -q 'MergePhotonLibrary.C++(
+         "PhotonLibrary-20200816.root",
+         "photonlibrary_builder_icarus-outputfile-xrootd.list",
+         "v09_00_00",
+         "20200816",
+         "PhotonLibraryData",
+         "pmtresponse"
+         )'
 
-       
-
-_to be completed_
+Photon library file `PhotonLibrary-20200816.root` is now ready for physics tests!
 
 
 ### Questions and answers
@@ -240,6 +272,4 @@ Why is this load of custom check scripts even needed?
 `project.py` is designed to deal with many subjobs sharing the same
 configuration; each photon library job has instead a unique configuration
 (pointing to a specific set of voxels), and is not split into subjobs.
-
-
 
