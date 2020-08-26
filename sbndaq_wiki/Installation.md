@@ -183,6 +183,13 @@ mrbslp
 ## Installation on a remote server
 First set up local directories that you will need for building and running.  We suggest you put the ```/daq``` mount point on one physical disk or disk array, with each directory below a separate partition.  This is not stricly needed, but will keep your local areas identical to the ones at Fermilab, but modify as local conditions necessitate.
 
+| Directory/Partition | Suggested Size | Purpose |
+| ------------------- | -------------- | ------------------ |
+| /daq/software       | 2 TB           | Prepackaged software copied from FNAL |
+| /daq/log            | 3 TB           | Locally generated log files |
+| /daq/scratch        | 3 TB           | Temporary scratch data files |
+| /daq/run_records    | 1 TB           | Record of locally produced runs and their configurations |
+
 In order to install sbndaq on a server which doesn't have software directory (e.g. outside FNAL), one first needs to copy the software with following commands:
 ```bash
 rsync -arvtzl --del -e 'ssh -o "ProxyCommand ssh -A USERNAME@icarusgpvm01.fnal.gov -W %h:%p"' USERNAME@sbnd-daq32.fnal.gov:/software/products/ /software/products/.  --delete-excluded --exclude 'Xilinx*' --exclude 'Quartus'  --exclude="*.tar.bz2" --exclude "products/" 
