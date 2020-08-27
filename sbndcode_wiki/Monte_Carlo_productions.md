@@ -14,6 +14,7 @@ Monte Carlo productions
 
 ### Current production manager
 
+-   [Mateus F. Carneiro](mailto:mcarneiro@bnl.gov)
 -   [Ed Tyley](mailto:e.tyley@sheffield.ac.uk)
 -   [Gray Putnam](mailto:grayputnam@uchicago.edu)
 
