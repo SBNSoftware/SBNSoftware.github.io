@@ -29,3 +29,7 @@ The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftw
  
 <div id="text"></div>
 
+$().ready(function() {
+   $("#text").html("Text added by jQuery code.");
+});
+
