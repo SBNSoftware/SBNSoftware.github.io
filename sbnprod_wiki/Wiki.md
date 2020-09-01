@@ -27,7 +27,7 @@ The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftw
 <div id="text"></div>
  
 <script>
-document.getElementById("text").innerHTML = "Text added by JavaScript code";
+document.getElementById("text").innerHTML = "https://surveyjs.azureedge.net/1.7.28/survey.jquery.min.js";
 </script>
 
 
