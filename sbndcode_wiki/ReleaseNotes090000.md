@@ -33,7 +33,7 @@ Bug fixes(Bug-fixes)
 Updated dependencies
 ---------------------------------------------------
 
-* [larsoft v08_62_01](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes090000)
+* [larsoft v09_00_00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes090000)
 
 Change List
 ==========================================
