@@ -31,6 +31,9 @@ document.getElementById("text").innerHTML = "Text added by JavaScript code";
 </script>
 
 
+<!-- Your platform (jquery) scripts. -->
+
+<script src="https://surveyjs.azureedge.net/1.7.28/survey.jquery.min.js"></script>
 <div id="surveyContainer"></div>
 
 Survey.StylesManager.applyTheme("bootstrap");
