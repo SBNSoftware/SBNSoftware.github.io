@@ -28,12 +28,13 @@ The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftw
 <div id="text"></div>
 <div id="surveyContainer"></div> 
 
-<link href="https://surveyjs.azureedge.net/1.7.28/survey.css" type="text/css" rel="stylesheet" />
-<script src="https://surveyjs.azureedge.net/1.7.28/survey.jquery.min.js"></script>
+
 
 <script>
 document.getElementById("text").innerHTML = "Text added by JavaScript code";
 
+<link href="https://surveyjs.azureedge.net/1.7.28/survey.css" type="text/css" rel="stylesheet" />
+<script src="https://surveyjs.azureedge.net/1.7.28/survey.jquery.min.js"></script>
 
 var surveyJSON = {"pages":[{"name":"page1","elements":[{"type":"text","name":"question6","title":"Name/tag of the request"},{"type":"text","name":"question5","title":" Contact person (in case of issues/questions during the production) "},{"type":"text","name":"question4","title":"Deadline/priority"},{"type":"text","name":"question3","title":"Code release version"},{"type":"text","name":"question2","title":"Stage(s) of processing chain to run (workflow) (e.g. gen->g4->detsim-> etc.)"},{"type":"text","name":"question1","title":"Total number of events to produce"},{"type":"text","name":"question10","title":"Average number of events per output file or average output file size"},{"type":"text","name":"question9","title":"fcl file(s) to run"},{"type":"text","name":"question8","title":"Location of any input files, if needed"},{"type":"text","name":"question7","title":"Input dataset, if any"},{"type":"text","name":"question11","title":"Has the workflow been tested?"}],"title":"SBN Production Request Form","description":"here's how you ask for Production work"}]}
 
