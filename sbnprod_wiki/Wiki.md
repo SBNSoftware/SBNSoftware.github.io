@@ -23,4 +23,9 @@ Contributing to this wiki
 --------------------------
 
 The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io)
-under the [`icaruscode_wiki`](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/icaruscode_wiki) subdirectory.
+
+<div id="text"></div>
+ 
+<script>
+document.getElementById("text").innerHTML = "Text added by JavaScript code";
+</script>
