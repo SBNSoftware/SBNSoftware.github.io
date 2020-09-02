@@ -27,14 +27,14 @@ These are the suggested operations, optimised for "the less time in `oasiscfs.fn
     (this is just a trick so that it renews if available, otherwise it
     asks for a password and creates a new one)
 2.  copy the files you want to store in CVMFS into `oasiscfs.fnal.gov`
-    (you need to [be authorised](#Access-privileges)):
+    (you need to [be authorised](#access-privileges)):
 
         scp icarus_data-01.00.00-noarch.tar.bz2 cvmfsicarus@oasiscfs.fnal.gov:
 
     will copy all the files (in this case, a single
     `icarus_data-01.00.00-noarch.tar.bz2`) into the home directory of
     `cvmfsicarus`
-3.  log in `oasiscfs.fnal.gov` (you need to [be authorised](#Access-privileges)):
+3.  log in `oasiscfs.fnal.gov` (you need to [be authorised](#access-privileges)):
 
         ssh cvmfsicarus@oasiscfs.fnal.gov
 
