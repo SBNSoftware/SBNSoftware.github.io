@@ -313,7 +313,7 @@ nodes (and Fermigrid as well).
 So it is a safe bet.
 
 You can also install it on your laptop;
-[LArSoft links to instructions](LArSoft_cvmfs_page.md)
+[LArSoft links to instructions](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_cvmfs_page)
 (currently from MicroBooNE). Good news is, it's not hard.
 
 The full path to access the area is:
