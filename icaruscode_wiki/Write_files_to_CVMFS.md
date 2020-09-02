@@ -88,3 +88,10 @@ Users with ICARUS CVMFS upload privileges                      | since
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
+
+
+StashCache
+-----------
+
+StashCache is a storage area visible via CVMFS.
+Nevertheless, it's quite a different beast, and information about it can be found in its own [StashCache wiki page](computing/stashCache.html).
