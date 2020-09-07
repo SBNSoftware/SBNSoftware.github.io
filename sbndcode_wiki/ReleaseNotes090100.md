@@ -24,6 +24,9 @@ Purpose
 
 New features
 ---------------------------------------------------
+This release updates the geometry to v1.5, where PMTs spheres are in vacuum and the xarapuca dummy channels were dropped.
+
+It also swaps the convention for the PDS channel numbers.
 
 Bug fixes(Bug-fixes)
 ---------------------------------------------------
