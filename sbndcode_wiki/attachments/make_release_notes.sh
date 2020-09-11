@@ -131,7 +131,7 @@ if [[ ${previous_version} == *_rc* ]]; then
   previous_version_string=${previous_version}
 fi
 
-relnote=${my_working_dir}/ReleaseNotes-${sbndcode_version}
+relnote=${my_working_dir}/Releases/ReleaseNotes-${sbndcode_version}
 rm -f ${relnote}
 echo "---" > ${relnote}
 echo "layout: page" >> ${relnote}

@@ -1,24 +1,13 @@
 ---
 layout: page
 title: How to setup your directory and launch your first job
+toc: true
 ---
 
 
 
 How to setup your directory and launch your first job
-==============================================================================================================================
-
--   **Table of contents**
--   [How to setup your directory and launch your first
-    job]
-    -   [Set up the general SBND
-        environment]
-    -   [Set up for running existing code (production
-        like)]
-    -   [Set up for changing or adding code (development
-        like)]
-        -   [Development setup]
-        -   [Run-only setup]
+==========================================================
 
 In order to run you first LArSoft SBND job, you will need to execute the
 following steps. Some explanation is included, but is not yet at the
@@ -69,7 +58,7 @@ above], you just need
 to set up the version of SBND code you need.
 
 There are different versions of LArSoft that you can set up against, and
-we have [a list of them](List_of_SBND_code_releases.html).\
+we have [a list of them](Releases/List_of_SBND_code_releases.html).\
 Once you pick your version and qualifiers, you set up both with a single
 command:\
 
@@ -144,7 +133,7 @@ slow but safe: `ssh ${USER}@sbndgpvm01.fnal.gov`.
 
 1.  first time only (or, new working area) setup:
     1.  choose the latest [SBND code
-        release](List_of_SBND_code_releases.html)
+        release](Releases/List_of_SBND_code_releases.html)
 
     2.  go to your user directory in
         [BlueArc](Computing_resources.html#Local-storage-BlueArc-disks),

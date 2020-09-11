@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Using LArSoft on a local machine
+toc: true
 ---
 
 
@@ -8,16 +9,6 @@ title: Using LArSoft on a local machine
 Using LArSoft on a local machine
 ====================================================================================
 
--   **Table of contents**
--   [Using LArSoft on a local
-    machine]
-    -   [Getting the software]
-    -   [Supported platforms]
-        -   [List of platforms]
-    -   [Downloading a binary distribution with
-        pullProducts]
-        -   [Updating the local product
-            repository]
 
 This is a collection of hints and tips to allow you to develop and run
 with `sbndcode` (and LArSoft) on a local machine, be it a server in your
@@ -192,7 +183,7 @@ LArSoft are likely to stay more up to date.
     that are already available somewhere
 
 3.  decide [which release
-    version](List_of_SBND_code_releases.html) you want; if
+    version](Releases/List_of_SBND_code_releases.html) you want; if
     you don\'t know your options, you can also find the ones currently
     available at [SBND SciSoft
     page](http://scisoft.fnal.gov/scisoft/bundles/sbnd){.external} (this

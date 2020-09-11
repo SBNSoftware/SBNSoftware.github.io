@@ -1,6 +1,7 @@
 ---
 layout: page
 title: The SBND Guide to using LArSoft
+toc: true
 ---
 
 
@@ -8,11 +9,6 @@ title: The SBND Guide to using LArSoft
 The SBND Guide to using LArSoft
 ==================================================================================
 
--   **Table of contents**
--   [The SBND Guide to using LArSoft]
-    -   [Brief LArSoft overview.]
-    -   [List of SBND code releases]
-    -   [Useful Examples]
 
 > DISCLAIMER: There is a lot of material that constantly befalls out of
 > date. Remember that problems that are unknown don\'t fix by
@@ -69,7 +65,7 @@ Material](Newbie_Material.html) page useful as well.
 
 
 
-[List of SBND code releases](List_of_SBND_code_releases.html)
+[List of SBND code releases](Releases/List_of_SBND_code_releases.html)
 -----------------------------------------------------------------------------------------------------------------------
 
 

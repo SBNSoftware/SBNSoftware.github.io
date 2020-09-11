@@ -26,7 +26,7 @@ Developing SBND code
 
 -   [The SBND Guide to using
     LArSoft](The_SBND_Guide_to_using_LArSoft.html)
--   [SBND code repository](List_of_SBND_code_releases.html):
+-   [SBND code repository](Releases/List_of_SBND_code_releases.html):
     [`sbndcode`]{style="color: forestgreen;font-weight: bold;"} (use
     `mrb gitCheckout sbndcode` from your MRB working area)
 -   [More information about developing

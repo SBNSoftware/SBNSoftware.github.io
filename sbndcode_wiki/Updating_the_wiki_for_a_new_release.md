@@ -9,7 +9,7 @@ Updating the wiki for a new release
 ==========================================================================================
 
 -   Update the [release
-    list](List_of_SBND_code_releases.html)
+    list](Releases/List_of_SBND_code_releases.html)
 
 -   Update the [settings/versions
     page](https://cdcvs.fnal.gov/redmine/projects/sbndcode/settings/versions){.external}
