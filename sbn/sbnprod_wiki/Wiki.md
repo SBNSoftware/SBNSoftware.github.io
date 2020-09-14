@@ -28,12 +28,12 @@ The form is also a checklist of the needed information. If you need help answeri
 
 | Working Group | Production liaison |
 | --- | --- |
-| `SBN Oscilation` | Marco Roda (Marco.Roda@liverpool.ac.uk) |
-| `SBN Reconstruction` | |
-| `SBN Generators` | Marco Roda (Marco.Roda@liverpool.ac.uk) |
-| `SBN TPC` | |
-| `SBN Light` | |
-| `SBN CRT` | Ivan Leptic (Ivan.Lepetic@rutgers.edu) |
+| SBN Oscilation | Marco Roda (Marco.Roda@liverpool.ac.uk) |
+| SBN Reconstruction | |
+| SBN Generators | Marco Roda (Marco.Roda@liverpool.ac.uk) |
+| SBN TPC | |
+| SBN Light | |
+| SBN CRT | Ivan Leptic (Ivan.Lepetic@rutgers.edu) |
 
 The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/11U_iFOrouFc9fIPJYTifVMSm_nDA9-8ixTwtQBtUCyA/edit?usp=sharing)
 
