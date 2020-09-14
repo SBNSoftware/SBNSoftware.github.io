@@ -22,7 +22,7 @@ Production Sample requests
 
 The SBN Production Group is reponsible for MC sample productions for SBND and ICARUS, as well as eventual Data processing. 
 
-To submit a request to production, please fill the [SBN Production Request Form](https://forms.gle/i5wckyzKCsZYpqL18). The responsible parties should be automatically notified but you can also notify the official group email address: sbn-mc-prod@fnal.gov
+To submit a request to production, please fill the [SBN Production Request Form](https://forms.gle/i5wckyzKCsZYpqL18). The responsible parties should be automatically notified but you can also notify the official group email address: [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
 The form is also a checklist of the needed information. If you need help answering any number of the questions on the survey, please contact your group Production liaison (if no liaison is available contact your group convener):
 
