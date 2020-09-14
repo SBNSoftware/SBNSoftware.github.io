@@ -1,3 +1,5 @@
+- name: SBN
+  link: /sbn/Wiki
   dropdown:
     - name: SBN Code
       link: /sbn/sbncode_wiki/Wiki
@@ -9,8 +11,6 @@
   link: /sbndcode_wiki/Wiki
 - name: sbndaq
   link: /sbndaq_wiki/Wiki
-- name: SBN
-  link: /sbn/Wiki
 
 # dropdown:
   #   - name: Page 2
