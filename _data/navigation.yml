@@ -1,5 +1,8 @@
-- name: sbncode
-  link: /sbncode/Wiki
+  dropdown:
+    - name: SBN Code
+      link: /sbn/sbncode_wiki/Wiki
+    - name: SBN Production
+      link: /sbn/sbnprod_wiki/Wiki
 - name: icaruscode
   link: /icaruscode_wiki/Wiki
 - name: sbndcode
@@ -8,11 +11,7 @@
   link: /sbndaq_wiki/Wiki
 - name: SBN
   link: /sbn/Wiki
-  dropdown:
-    - name: SBN Code
-      link: /sbn/sbncode_wiki/Wiki
-    - name: SBN Productions
-      link: /sbn/sbnprod_wiki/Wiki
+
 # dropdown:
   #   - name: Page 2
   #     link: /page-2/
