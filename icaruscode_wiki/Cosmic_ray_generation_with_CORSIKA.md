@@ -88,12 +88,13 @@ The configuration recommended here **does not include the Cosmic Ray
 Tagging detector**. A different configuration for the `g4` stage needs
 to be validated for that.
 
-| Simulation stage    | Configuration file                  | Comment                                           | Last seen in  |
-| ------------------- | ----------------------------------- | ------------------------------------------------- | ------------- |
-| generation          | `prodcorsika_standard_icarus.fcl`   | cosmic rays only                                  | `v08_44_00`   |
-| detector simulation | `cosmics_g4_icarus_volCryostat.fcl` | saves only particles in cryostats *(recommended)* | `v08_45_00`   |
-| readout simulation  | *standard `detsim` configuration*   |                                                     
-| reconstruction      | *standard `reco` configurations*    |                                                     
+| Simulation stage    | Configuration file                      | Comment                                           | Last seen in  |
+| ------------------- | --------------------------------------- | ------------------------------------------------- | ------------- |
+| generation          | `prodcorsika_standard_icarus.fcl`       | cosmic rays only                                  | `v08_44_00`   |
+| detector simulation | `cosmics_g4_icarus_volCryostat.fcl`     | saves only particles in cryostats *(recommended)* | `v08_45_00`   |
+|                     | `cosmics_g4_icarus_volDetEnclosure.fcl` | saves only particles in detector, including CRT   | `v08_45_00`   |
+| readout simulation  | *standard `detsim` configuration*       |                                                     
+| reconstruction      | *standard `reco` configurations*        |                                                     
 
 ¹ Actually it turns out that out of a primary cosmic ray, only one or
 two shower particles make it to the world volume we are simulating.
