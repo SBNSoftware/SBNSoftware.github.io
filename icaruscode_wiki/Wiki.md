@@ -31,8 +31,7 @@ Developing ICARUS code
     against the new LArSoft release
 -   Project List
 -   [Integration tests](Integration_tests.html)
--   [Introduction to Gallery
-    analysis](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=4339&filename=20171023-Petrillo.pdf "by Gianluca"){.external}
+-   [Introduction to Gallery analysis](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=4339&filename=20171023-Petrillo.pdf "by Gianluca"){.external}
 
 
 
@@ -45,7 +44,7 @@ Content of the packages
 ------------------------
 
 -   Configuration of ICARUS jobs and utilities
--   [Generating cosmic rays with CORSIKA](Cosmic_ray_generation_(CORSIKA).md)
+-   [Generating cosmic rays with CORSIKA](Cosmic_ray_generation_with_CORSIKA.md)
 -   The ICARUS flux files
 -   [Detector geometry description files](Detector_geometry.md)
 -   [Software parameters and
