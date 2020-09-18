@@ -2,7 +2,8 @@
   link: /sbn/Wiki
   dropdown:
     - name: SBN Code
-      link: /sbn/sbncode_wiki/Wiki
+      #link: /sbn/sbncode_wiki/Wiki
+      link: /sbncode/Wiki
     - name: SBN Production
       link: /sbn/sbnprod_wiki/Wiki
 - name: icaruscode
