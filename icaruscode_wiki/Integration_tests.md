@@ -2,7 +2,6 @@
 layout: page
 title: Integration tests
 description: How to run integration ("CI") tests for ICARUS
-hero_height: is-medium
 toc: true
 ---
 
@@ -23,7 +22,7 @@ What are integration tests
 ICARUS has two levels of tests:
 
 1.  *unit tests* are small tests targeting a single feature or module;
-    you run it with `mrb test -j16` or equivalent^[1]^
+    you run it with `mrb test -j16` or equivalent[¹](#footnotes)
 2.  *integration tests* exercise a complete chain of processing
 
 Before pushing code that has any remote chance of changing existing
@@ -61,7 +60,7 @@ Introduction to test running
 ----------------------------------------------------------------------------
 
 For this introduction we run the tests in the local area (as in
-[the instructions below](#testing_of_the_code_in_the_local_working_area)).
+[the instructions below](#testing-of-the-code-in-the-local-working-area)).
 
 The script `test_runner` will execute the requested integration tests.
 Since it relies on the settings from the current UPS environment, no
@@ -80,38 +79,40 @@ will run the tests designed to be run during development.
 
 The information of this section somehow depends on both the version of
 the test SBND provides, and the version of `lar_ci`. The following
-information was compiled using the latest `sbndcode`, `v06_68_00` and
-the current `lar_ci`, `v3_3_0`.
+information was compiled using the latest `icaruscode`, `v09_02_00` and
+the current `lar_ci`, `v3_7_0`.
 
-We use as example the detector propagation test.\
+We use as example the detector propagation test.
 The list of available tests is:
 
     $ test-runner -l
+    [...]
     The current parallel limit is: 5
-    suite quick_test_sbndcode: (5 tests)
-      ci_anatree_regression_quick_test_sbndcode
-      ci_detsim_regression_quick_test_sbndcode
-      ci_g4_regression_quick_test_sbndcode
-      ci_gen_regression_quick_test_sbndcode
-      ci_reco_basic_regression_quick_test_sbndcode
-    suite seq_test_sbndcode: (5 tests)
-      ci_anatree_regression_seq_test_sbndcode
-      ci_detsim_regression_seq_test_sbndcode
-      ci_g4_regression_seq_test_sbndcode
-      ci_gen_regression_seq_test_sbndcode
-      ci_reco_basic_regression_seq_test_sbndcode
-    suite develop_test_sbndcode: (5 tests)
-      ci_anatree_regression_quick_test_sbndcode
-      ci_detsim_regression_quick_test_sbndcode
-      ci_g4_regression_quick_test_sbndcode
-      ci_gen_regression_quick_test_sbndcode
-      ci_reco_basic_regression_quick_test_sbndcode
-    Tests in no suites:
-
-We have 10 tests, and three suites that may share them. We can ask
-`test_runner` to run a single test, or a whole suite, or many of the
-above.\
-The detector propagation test is `ci_g4_regression_quick_test_sbndcode`:
+    suite single_quick_test_icaruscode: (4 tests)
+      single_detsim_quick_test_icaruscode
+      single_g4_quick_test_icaruscode
+      single_gen_quick_test_icaruscode
+      single_reco_quick_test_icaruscode
+    suite single_seq_test_icaruscode: (4 tests)
+      single_detsim_seq_test_icaruscode
+      single_g4_seq_test_icaruscode
+      single_gen_seq_test_icaruscode
+      single_reco_seq_test_icaruscode
+    suite generate_reference_single_test_icaruscode: (4 tests)
+      single_detsim_seq_test_icaruscode
+      single_g4_seq_test_icaruscode
+      single_gen_seq_test_icaruscode
+      single_reco_seq_test_icaruscode
+    suite nucosmics_quick_test_icaruscode: (4 tests)
+      nucosmics_detsim_quick_test_icaruscode
+      nucosmics_g4_quick_test_icaruscode
+      nucosmics_gen_quick_test_icaruscode
+      nucosmics_reco_quick_test_icaruscode
+    [...]
+    
+We have about 10 tests, and loads of test suites that may share them. We can ask
+`test_runner` to run a single test, or a whole suite, or many of the above.
+The detector propagation test is `ci_g4_regression_quick_test_icaruscode`:
 
     $ setup lar_ci
     $ mkdir -p run_ci
@@ -243,12 +244,11 @@ In this case, the quick test suite is executed (`quick_test_icaruscode`,
 chosen by the SBND `lar_ci` workflow configuration).
 
 
-
 ### Testing of the code in the local working area 
 
 Before pushing the code anywhere, integration tests may be executed
-locally from the MRB area^[1]^ where the code has just been
-compiled (see also above, the [introduction to test running](#introduction_to_test_running).
+locally from the MRB area[²](#footnotes) where the code has just been
+compiled (see also above, the [introduction to test running](#introduction-to-test-running).
 The commands to do so are:
 
     setup lar_ci
@@ -256,10 +256,6 @@ The commands to do so are:
 
 Among the useful options: `--parallel-limit=12` will run at most 12
 tests in parallel, instead than one after the other.
-
-^1^ In fact, they can be run even without a MRB area, in an environment
-where `icaruscode` is already set up.
-
 
 
 ### **TODO** Remote testing of published code 
@@ -277,7 +273,7 @@ soon as possible (instead of waiting for 15 minutes, which would be
 pointless since we are not pushing anything any more).
 
 In general, the supported workflows are listed in the
-[list of supported ICARUS workflows](LArCI_Workflows.html#SBND-CI-Workflows).
+[list of supported ICARUS workflows](LArCI_Workflows.html#ICARUS-CI-Workflows).
 
 TODO: document how to run on branches\
 TODO: document how to run other tests
@@ -323,51 +319,50 @@ that all platforms will give the same results.
 
 #### Generating the reference files from a local working area
 
-If a test (e.g. `single_g4_seq_test_icaruscode`) requires a new
-reference file, a few steps need to be taken.
-First, notice that the test may be part of a sequence of tests; for
-example, `single_g4_seq_test_icaruscode` is part of one starting with
-`single_gen_seq_test_icaruscode` and going forth through a "detsim"
-and a \"reco\" stage. The outdated reference files of *all* the stages
-in the chain need to be *manually deleted* from storage, but *the
-directory structure must be left intact*. The reason being:
-
--   `test_runner` will not overwrite existing files, but will rather
-    fail
--   `test_runner` will not created the needed directory which do not
-    exist, but will rather fail
--   the tests following the one being updated (in the example,
-    `single_detsim_seq_test_icaruscode` and
-    `single_reco_seq_test_icaruscode`) will almost surely need to be
-    updated because their input has been
--   `test_runner` will repeat all the tests preceding the one being
-    updated (in the example, `single_gen_seq_test_icaruscode`) and
-    attempt to update their reference files too
-
-The `test_runner` script needs to be tricked to believe it is in a
-workspace environment... this means in practice that we need to
-manually assure the environment looks right.
-Currently, we just need to make sure the environment variable
-`CI_EXP_CODE` is set to the right value (which can be found in
-`test/ci/ci\_tests.cfg` and is `ICARUSCODE`).
-
-    # remove all the old reference files pertaining the suite(s) this test belongs to, then:
-    export CI_EXP_CODE='ICARUSCODE'
-    test_runner --update test_suite [test_suite2 ...]
-
+If a test (e.g. `single_g4_seq_test_icaruscode`) requires a new reference file,
+a few steps need to be taken.
+First, notice that the test may be part of a sequence of tests; for example,
+`single_g4_seq_test_icaruscode` is part of one starting with
+`single_gen_seq_test_icaruscode` and going forth through a "detsim" and a "reco" stage.
+A look into the reference file repository (which can be found in pieces in the usual
+`test/ci/ci_tests.cfg` file as `REFERENCEFILEDIR_ICARUSCODE`; at the time of writing,
+it points to `/pnfs/icarus/persistent/stash/ContinuousIntegration/reference`)
+shows a structure with a tag (e.g. `standard`) and within it test _stages_.
+Within each stage directory there are reference files, a group for each test,
+which for the most part carry timestamps. One file for each group does not carry
+any timestamp, and that one is the current reference file.
+Reference files are generated with:
+    
+    export build_identifier="-$(date +%Y%m%d%H%M)"
+    test_runner --expcode=ICARUSCODE --statistics --update test_suite [test_suite2 ...]
+    
+The first line defines the suffix for each reference file
+(but `test_runner` will not accept it empty). In the example, a timestamp is used.
+The other like asks for updating the reference files, and in addition requests
+extended resource usage statistics
+(good if retuning the expected ranges in `test/ci/ci_tests.cfg`)
+and sets the experiment code name tag (mandatory).
 Note that the new reference files will be copied all together and all at
 the end of the job, and that if one copy fails the script won't attempt
 to copy the remaining new reference files.
+At this point, if the new reference files are blessed, they need to be made current.
+To do so, each one of the new files must be copied to a file without timestamp, e.g.:
+    
+    cp -vaf /pnfs/icarus/persistent/stash/ContinuousIntegration/reference/standard/reco/single_*_test_icaruscode_Reference{-202009212301,}.root
+    
+will make `single_reco_test_icaruscode_Reference-202009212301.root`
+the new `reco` reference file.
 
+> Note: so far it has proven to be a good idea to use the test sequence
+> to generate the reference files. Quick tests are expected to produce
+> the same results, except that they may process fewer events.
 
 
 **TODO** Available tests 
 ----------------------------------------------------------------
 
-The available tests can be printed with `test-runner --list-tests` (`-l`
-for short).
-Test suites should be documented at the beginning of `test/ci/ci_tests.cfg`
-configuration file.
+The available tests can be printed with `test-runner --list-tests` (`-l` for short).
+Test suites should be documented at the beginning of `test/ci/ci_tests.cfg` configuration file.
 A summary of the test suites (which will fall sadly out of date with time):
 
 | test suite name                 | description                                                                                    | run time         |
@@ -381,13 +376,8 @@ A summary of the test suites (which will fall sadly out of date with time):
 | `single_seq_test_sbndcode`      | data-like single particle (`prodsingle_sbnd.fcl`) 5-stage chain, in sequence                   | 1400/1400 kVs
 | `nucosmics_seq_test_sbndcode`   | neutrino and background (GENIE+CORSIKA) 5-stage chain, in sequence                             | 6200/6200 kVs
 | `gallery_test_sbndcode`         | runs tests related to the gallery examples in `sbndcode`                                       | 
-| `generate_reference_sbndcode`   | reruns all the jobs generating output files that can be used as reference^[1]^                 | 5800/5800 kVs
+| `generate_reference_sbndcode`   | reruns all the jobs generating output files that can be used as reference[³](#footnotes)       | 5800/5800 kVs
 | `all_tests_sbndcode`            | reruns all tests (used for maintenance only)                                                   | 12000/6200 kVs
-
-^1^ The test suite `generate_reference_sbndcode` is used by default by
-the workflow to update reference files (`Update_ref_files_SBNDCODE_wf`).
-To use a different one, `trigger` should be explicitly provided with a
-`--gen-ref-tests` option.
 
 Most quick tests typically run just one or two events.
 The run time in the table is the normalised one as reported by the C.I.
@@ -462,8 +452,9 @@ The contact to that system is, at the time of writing,
 
 ------------------------------------------------------------------------
 
-^1^ If the working area is already built, you can run all the tests
-with:
+##### Footnotes
+
+[1] If the working area is already built, you can run all the tests with:
 
     cd "$MRB_BUILDDIR" 
     ctest -j16
@@ -471,6 +462,14 @@ with:
 You can also go to the subdirectory of `$MRB_BUILDDIR` that contains the
 tests you care of, instead, and you\'ll end up running only the tests
 under that directory.
+
+[2] In fact, they can be run even without a MRB area, in an environment
+where `icaruscode` is already set up.
+
+[3] The test suite `generate_reference_sbndcode` is used by default by
+the workflow to update reference files (`Update_ref_files_SBNDCODE_wf`).
+To use a different one, `trigger` should be explicitly provided with a
+`--gen-ref-tests` option.
 
 ------------------------------------------------------------------------
 
