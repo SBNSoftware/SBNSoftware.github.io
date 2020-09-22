@@ -14,8 +14,7 @@ toc_title: SBN Production Contents
 SBN Production Page
 ==========================================
 
-**This is version 0 of a wiki page for the SBN Production Group**
-Here you will found how to make production sample requests as well as instructions and documentation
+Here you will found how to make production sample requests as well as (comming soon) instructions and documentation
 
 Production Sample requests 
 --------------------------
