@@ -73,6 +73,8 @@ read from dCache. So:
 
 will run the tests designed to be run during development.
 
+The official documentation is in the
+[Fermilab Redmine wiki of `lar_ci` package](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki).
 
 
 ### **TODO** The output of a test in detail 
@@ -223,25 +225,24 @@ Currently tests are run on SLF7 with GCC compiler (Clang compiler is also potent
 
 
 
-### **TODO** Automatic testing 
+### Automatic testing 
 
 Whenever a commit is pushed into a `develop` branch, a test is
 automatically triggered. The test starts 15 minutes after the first push
 to `develop`, to give the user the time to push into different
 repositories as needed.
 
--   if the push is in `sbndcode`, only `sbndcode` is built and tested
--   if the push is (also) in the `develop` branch of a LArSoft
-    repository, the C.I. system will check out and build all LArSoft,
-    `sbndcode` and also the code from the other LArSoft-based
-    experiments; this is to ensure that one experiment\'s change does
-    not disrupt the others
+-   if the push is in `icaruscode`, only `icaruscode` is built and tested
+-   if the push is (also) in the `develop` branch of a LArSoft repository,
+    the C.I. system will check out and build all LArSoft,
+    `icaruscode` and also the code from the other LArSoft-based experiments;
+    this is to ensure that one experiment\'s change does not disrupt the others
 
 The result of the test can be checked in the [C.I. dashboard](https://dbweb0.fnal.gov/LarCI/app/ns:ICARUS/view_builds/index)
-(on the top raw, you can select LArSoft or SBND to monitor the respective tests).
+(on the top raw, you can select LArSoft or ICARUS to monitor the respective tests).
 
 In this case, the quick test suite is executed (`quick_test_icaruscode`,
-chosen by the SBND `lar_ci` workflow configuration).
+chosen by the ICARUS `lar_ci` workflow configuration).
 
 
 ### Testing of the code in the local working area 
@@ -260,12 +261,11 @@ tests in parallel, instead than one after the other.
 
 ### **TODO** Remote testing of published code 
 
-The Continuous Integration system can build and test any publicly
-available branch. To ask for the SBND integration tests, use the
-`sbndcode_wf` workflow:
+The Continuous Integration system can build and test any publicly available branch.
+To ask for the ICARUS integration tests, use the `icaruscode_wf` workflow:
 
     setup lar_ci
-    trigger --build-delay 0 --workflow sbndcode_wf
+    trigger -build-delay 0 --workflow icaruscode_wf
 
 This will run the "quick" test, just like if it had been triggered
 automatically. The `--build-delay 0` option tells the system to start as
@@ -273,9 +273,10 @@ soon as possible (instead of waiting for 15 minutes, which would be
 pointless since we are not pushing anything any more).
 
 In general, the supported workflows are listed in the
-[list of supported ICARUS workflows](LArCI_Workflows.html#ICARUS-CI-Workflows).
+[list of supported ICARUS workflows](LArCI_Workflows.md#ICARUS-CI-Workflows).
 
-TODO: document how to run on branches\
+TODO: document how to run on branches
+
 TODO: document how to run other tests
 
 
@@ -302,19 +303,21 @@ Remember that this action will affect the whole collaboration.
 
 
 
-#### **TODO** Generating the reference files with a remote "trigger"
+#### Generating the reference files with a remote "trigger"
 
 After having concluded there is the need to update reference files, a
 single command will do the trick:
+    
+    CI_CERT=/tmp/${USER}/ci_cert.pem
+    kx509 -o "$CI_CERT"
+    trigger --build-delay 0 --cert "$CI_CERT" --workflow Update_ref_files_ICARUSCODE_wf
 
-    trigger --build-delay 0 --workflow Update_ref_files_SBNDCODE_wf --force-platform slf6
-
-(there is the usual requirement of having a grid proxy and `lar_ci` set
-up).
-The `Update_ref_files_SBNDCODE_wf` is a special workflow used for this
-purpose only, and we use only one reference platform, assuming (wrongly)
-that all platforms will give the same results.
-
+(there is the usual requirement of having a grid proxy and `lar_ci` set up).
+The `Update_ref_files_ICARUSCODE_wf` is a special workflow used for this purpose only.
+At the end the temporary file with the certificate can be deleted:
+    
+    rm "$CI_CERT"
+    
 
 
 #### Generating the reference files from a local working area
