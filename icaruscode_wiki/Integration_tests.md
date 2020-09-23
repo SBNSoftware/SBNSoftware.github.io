@@ -65,8 +65,7 @@ For this introduction we run the tests in the local area (as in
 The script `test_runner` will execute the requested integration tests.
 Since it relies on the settings from the current UPS environment, no
 particular setup is needed, except for the UPS product containing the
-script, but you need to [**get a certificate proxy**](Get_a_certificate_proxy.md) since the input is
-read from dCache. So:
+script. So:
 
     setup lar_ci
     test_runner develop_test_icaruscode
@@ -74,7 +73,14 @@ read from dCache. So:
 will run the tests designed to be run during development.
 
 The official documentation is in the
-[Fermilab Redmine wiki of `lar_ci` package](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki).
+[Fermilab Redmine wiki of `lar_ci` package](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki)
+(see also [_Further resources_](#further-resources) at the bottom of this page).
+
+> While currently the tests read all the input they need from unprivileged areas
+> (ICARUS StashCache accessed via CVMFS: `/cvmfs/icarus.osgstorage.org/pnfs/fnal.gov/usr/icarus/persistent/stash`),
+> it is in general still suggested that you [get a certificate proxy](Get_a_certificate_proxy.md)
+> if you find file access issues that might have sneaked in.
+> Having a valid certificate proxy has no drawback.
 
 
 ### **TODO** The output of a test in detail 
@@ -312,7 +318,8 @@ single command will do the trick:
     kx509 -o "$CI_CERT"
     trigger --build-delay 0 --cert "$CI_CERT" --workflow Update_ref_files_ICARUSCODE_wf
 
-(there is the usual requirement of having a grid proxy and `lar_ci` set up).
+(in this case, before these commands,
+[**having a grid certificate proxy is mandatory**](Get_a_certificate_proxy.md)).
 The `Update_ref_files_ICARUSCODE_wf` is a special workflow used for this purpose only.
 At the end the temporary file with the certificate can be deleted:
     
@@ -445,11 +452,12 @@ by the `g` letter). In this case, the correct commit is commit:28fc0d2.
 
 
 
-Further resources 
+Further resources
 ------------------------------------------------------
 
 The hub for information on integration tests is the project
-[`lar_ci`](https://cdcvs.fnal.gov/redmine/projects/lar_ci).\
+[`lar_ci`](https://cdcvs.fnal.gov/redmine/projects/lar_ci).
+
 The contact to that system is, at the time of writing,
 [Vito Di Benedetto](mailto:vito@fnal.gov).
 
