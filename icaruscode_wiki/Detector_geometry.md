@@ -1,17 +1,13 @@
 ---
-lang:       en
-title:      ICARUS Detector geometry
+layout: page
+title: ICARUS Detector geometry
+title: Integration tests
+description: How to run integration ("CI") tests for ICARUS
+toc: true
 ---
 
 ICARUS detector geometry description
 =====================================
-
-Table of contents
-------------------
-
-* [Geometry description versions]
-* [Selecting a geometry]
-* [Where is located everything?]
 
 
 Geometry description versions
@@ -19,7 +15,7 @@ Geometry description versions
 
 Detector geometry description is currently stored in GDML format as a
 text file in
-[source:icaruscode/Geometry/gdml](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/gdml){.source}
+[icaruscode/Geometry/gdml](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
 directory.
 
 
@@ -76,9 +72,9 @@ the relevant services: the recommended way is:
       # ...
     }
 
-The
-[`icaruscode/Geometry/icarus_geometry.fcl`](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/icarus_geometry.fcl){.source}]
-defines and described other options.
+The configuration file
+[`icaruscode/Geometry/icarus_geometry.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/icarus_geometry.fcl)
+defines and describes other options (look at the documentation at top of the file).
 
 If a specific geometry is needed in a job configuration that has already
 configured a different one, the following patterns can be used to select
@@ -89,14 +85,14 @@ the desired geometry.
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[`icaruscode/Geometry/geometry_icarus.fcl`](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/geometry_icarus.fcl),
+[`icaruscode/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 For some selected geometry configurations, drop-in FHiCL files are
 available which change the geometry of a job configuration into a
 different one.
 For example, say you need to run a cosmic ray generation job as defined
 by `prodcorsika_standard_icarus.fcl`
-([`fcl/gen/corsika/prodcorsika_standard_icarus.fcl`](/redmine/projects/icaruscode/repository/entry/fcl/gen/corsika/prodcorsika_standard_icarus.fcl)),
+([`fcl/gen/corsika/prodcorsika_standard_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/fcl/gen/corsika/prodcorsika_standard_icarus.fcl)),
 but with a geometry including the overburden.
 Your job configuration file can be:
 
@@ -105,7 +101,7 @@ Your job configuration file can be:
 
 where we have used the drop-in configuration
 `use_overburden_geometry_icarus.fcl`
-([`icaruscode/Geometry/use_overburden_geometry_icarus.fcl`](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/use_overburden_geometry_icarus.fcl)).
+([`icaruscode/Geometry/use_overburden_geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/use_overburden_geometry_icarus.fcl)).
 _[note that there is a `prodcorsika_overburden_icarus.fcl` for this
 specific example...]_
 
@@ -126,7 +122,7 @@ name                                              | introduced  | description   
 > the configurations `use_overburden_geometry_icarus.fcl` and
 > `use_nooverburden_geometry_icarus.fcl` used to directly select a
 > specific geometry. Now they rely on what is defined as "default"
-> geometry in [`icaruscode/Geometry/geometry_icarus.fcl`](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/geometry_icarus.fcl)
+> geometry in [`icaruscode/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl)
 > for their respective categories (for example, in `v08_52_00`
 > both geometries default to the split 9-m long wire versions).
 
@@ -139,7 +135,7 @@ name                                              | introduced  | description   
 >     
 > A complete service configuration for that purpose is also provided
 > (**as-is**!) as `icarus_legacy_services_v08_50_00` in
-> [`fcl/services/services_icarus_simulation.fcl`](/redmine/projects/icaruscode/repository/entry/fcl/services/services_icarus_simulation.fcl),
+> [`fcl/services/services_icarus_simulation.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/fcl/services/services_icarus_simulation.fcl),
 > that can be used as
 >
 >     services: @local::icarus_legacy_services_v08_50_00
@@ -152,7 +148,7 @@ name                                              | introduced  | description   
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[source:icaruscode/Geometry/geometry_icarus.fcl](/redmine/projects/icaruscode/repository/entry/icaruscode/Geometry/geometry_icarus.fcl),
+[source:icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 The procedures are the same as documented for the newer versions.
 The drop-in configurations also work as above, but with two relevant
