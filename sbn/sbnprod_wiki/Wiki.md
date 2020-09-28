@@ -28,7 +28,7 @@ The form is also a checklist of the needed information. If you need help answeri
 | Working Group | Production liaison |
 | --- | --- |
 | SBN Oscilation | Marco Roda (Marco.Roda@liverpool.ac.uk) |
-| SBN TPC Reco| |
+| SBN TPC Reco | Dominic Brailsford (d.brailsford@lancaster.ac.uk) |
 | SBN Generators | Marco Roda (Marco.Roda@liverpool.ac.uk) |
 | SBN TPC Sim/Calib | Andrews Scarff (a.scarff@sheffield.ac.uk) |
 | SBN PDS | |
