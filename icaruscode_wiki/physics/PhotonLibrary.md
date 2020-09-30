@@ -249,23 +249,38 @@ presumed that  of the "blind" type.
        
    Back to point 7 if there are failures, otherwise move on.
 10. once all job succeeded, merge the output files into the photon library:
-       
-       pnfsToXRootD < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-outputfile.list > photonlibrary_builder_icarus-outputfile-xrootd.list
-       root -l -q 'MergePhotonLibrary.C++(
-         "PhotonLibrary-20200816.root",
-         "photonlibrary_builder_icarus-outputfile-xrootd.list",
-         "v09_00_00",
-         "20200816",
-         "PhotonLibraryData",
-         "pmtresponse"
-         )'
+        
+        pnfsToXRootD < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-outputfile.list > photonlibrary_builder_icarus-outputfile-xrootd.list
+        root -l -q 'MergePhotonLibrary.C++(
+          "PhotonLibrary-20200816.root",
+          "photonlibrary_builder_icarus-outputfile-xrootd.list",
+          "v09_00_00",
+          "20200816",
+          "PhotonLibraryData",
+          "pmtresponse"
+          )'
 
 Photon library file `PhotonLibrary-20200816.root` is now ready for physics tests!
 
 
-### Questions and answers
+Past campaigns
+---------------
 
-#### Why is not `project.py` enough?
+| tag        | software     | included in               | primary output file          | motivation                                              |
+| ---------- | ------------ | ------------------------- | ---------------------------- | ------------------------------------------------------- |
+| `20200816` | `v08_62_01`* | `icarus_data` `v09_01_00` | `PhotonLibrary20200816.root` | updated refraction index and Rayleigh scattering length |
+| `20200925` | `v09_04_01`* | _nowhere yet_             | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
+
+Campaigns with software versions marked with "*" had custom modifications.
+This is not so uncommon, since issues arise on top of the releases.
+Also not uncommon it is that the custom modifications are then added to the next release.
+
+
+
+Questions and answers
+----------------------
+
+### Why is not `project.py` enough?
 
 The `project.py` tool facilitates the check and recovery of failed jobs.
 Why is this load of custom check scripts even needed?
