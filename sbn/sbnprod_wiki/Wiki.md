@@ -35,7 +35,7 @@ The form is also a checklist of the needed information. If you need help answeri
 | SBN CRT | Ivan Leptic (Ivan.Lepetic@rutgers.edu) |
 | SBN Event Selection | |
 
-The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/1G9yPHLbDHr_Y3h2kJdhcSfzu7mUjFE1fc55NbCJgtPo/edit#gid=631355211). If you need to edit the request, please edit your answers to the form. 
+The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/1G9yPHLbDHr_Y3h2kJdhcSfzu7mUjFE1fc55NbCJgtPo/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
 
 
 
