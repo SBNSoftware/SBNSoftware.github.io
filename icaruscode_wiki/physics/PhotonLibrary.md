@@ -276,6 +276,44 @@ This is not so uncommon, since issues arise on top of the releases.
 Also not uncommon it is that the custom modifications are then added to the next release.
 
 
+### 20200816
+
+The August 2020 campaign used a configuration with the default GEANT4+LArSoft settings from `icaruscode` `v08_62_01`,
+which unfortunately do not include TPC wires.
+This triggered the [September 2020](#20200816) campaign.
+
+This campaign was set with 1'000'000 photons in each (5 cm)^3^ voxel, for 74 x 77 x 394 voxels.
+Each job processed 1850 voxels, for a campaign including 1214 jobs.
+Jobs mostly took 2 days or less, but some nodes managed not to fit into 3 days wall-clock,
+which caused the change in the official configuration to request 96 wall clock hours.
+
+Note that the interaction between `project.py` and dCache was affected by severe slowdown.
+
+
+### 20200925
+
+The September 2020 campaign used a configuration with the default GEANT4+LArSoft settings from `icaruscode` `v09_04_01`,
+with modifications to incude steel reflectivity and to leave the TPC wires in the geometry.
+In fact, usually TPC wires are removed when running the GEANT4 simulation
+because they cause a dramatic slow down in the processing, for very limited physics effects.
+When simulating the scintillation photon propagation, thought,
+the wires occlude _at least_ 15% of the viewport of PMT
+(up to 100% for extremely high incidence angles).
+This effect can't be ignored.
+
+This campaign was a rerunning of the [August 2020 campaign](#20200816),
+set with the same 1'000'000 photons in each (5 cm)^3^ voxel, and 74 x 77 x 394 voxels.
+Jobs mostly took 2.5 days, but some nodes managed not to fit into 4 days wall-clock,
+which is a pretty hard limit in the current grid.
+[Vito Di Benedetto](mailto:vito@fnal.gov) helped us with identifying the best-performing noded
+in FermiGrid to submit the recovery jobs,
+but for the future the number of voxels per job should be decreased (was 1850)
+and the number of jobs increased accordingly (was 1214).
+The settings used for this campaign have been integrated in `icaruscode` `v09_05_00`.
+
+Note that the interaction between `project.py` and dCache was again affected by severe slowdown
+and critical failures, which made bookkeeping harder.
+
 
 Questions and answers
 ----------------------
