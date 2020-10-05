@@ -47,8 +47,8 @@ Content of the packages
 -   [Generating cosmic rays with CORSIKA](Cosmic_ray_generation_with_CORSIKA.md)
 -   The ICARUS flux files
 -   [Detector geometry description files](Detector_geometry.md)
--   [Software parameters and
-    settings](Software_parameters_and_settings.md)
+-   [Physics simulation](physics/simulation.md)
+-   [Software parameters and settings](Software_parameters_and_settings.md)
 
 
 
