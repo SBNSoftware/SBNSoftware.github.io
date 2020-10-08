@@ -19,7 +19,7 @@ ICARUS standard configuration for that module is `icarus_corsika_cmc` in
 `fcl/gen/corsika/corsika_icarus.fcl`;
 a configuration `icarus_corsika_p` with only protons as primary cosmic rays is also available.
 Job configurations using it include:
-`icaruscode/fcl/gen/corsika/prodcorsika_standard_icarus.fcl`.
+`fcl/gen/corsika/prodcorsika_standard_icarus.fcl`.
 
 
 
@@ -36,8 +36,8 @@ magnesium nuclei.
 | pregenerated sample location        | `/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard`   | `ShowerInputFiles`    | `v08_19_01` |   more information in the `README` file in there                                            |
 | included primary ray types          | p, He, N, Mg, Fe                                                       | `ShowerInputFiles`    | `v08_19_01` |
 | flux normalization                  | 17200 (p), 9200 (He), 6200 (N), 9200 (Mg), 6200 (Fe)                   | `ShowerFluxConstants` | `v08_19_01` | 1/(π m s²)                                                                                      |
-| exposure time                       | 3.3 ms                                                                 | `SampleTime`          | `v08_19_01` |
-| time offset                         | -1.1 ms                                                                | `TimeOffset`          | `v08_19_01` | on [simulation time scale](Software_parameters_and_settings.html#Timing-overview)       |
+| exposure time                       | 2.9 ms                                                                 | `SampleTime`          | `v08_55_02` |
+| time offset                         | -1.5 ms                                                                | `TimeOffset`          | `v08_55_02` | on [simulation time scale](Software_parameters_and_settings.html#Timing-overview)       |
 | shower area extension               | 10 m                                                                   | `ShowerAreaExtension` | `v08_19_01` | additional on each side of the cryostats                                                        |
 | shower position shift               | 10 m (*x* and *z*)                                                     | `RandomXYShift`       | `v08_19_01` |
 | shower particle entrance            | +18 m (*y*)                                                            | `ProjectToHeight`     | `v08_19_01` | in LArSoft "world" coordinates                                                                  |
@@ -53,12 +53,12 @@ Relevant information from `/pnfs/larsoft/persistent/physics/cosmics/Fermilab/COR
 | flux slope γ          | 2.7                                                     | (Φ ,A, (_E_) ∝ _E_ ^-_γ_^ , _E_ in GeV)  |
 | observation level     | 228 m                                                   |
 
-This is the configuration `icarus_corsika_cmc` from `v08_19_01`:
+This is the configuration `icarus_corsika_cmc` from `v08_55_02`:
 
     @table::standard_CORSIKAGen_CMC
-    SampleTime:     3.3e-3
+    SampleTime:     2.9e-3
     ShowerInputFiles: [ "/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard/p_showers_*.db", "/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard/He_showers_*.db", "/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard/N_showers_*.db", "/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard/Mg_showers_*.db", "/pnfs/larsoft/persistent/physics/cosmics/Fermilab/CORSIKA/standard/Fe_showers_*.db" ]
-    TimeOffset:     -1.1e-3
+    TimeOffset:     -1.5e-3
     BufferBox:        [ -500.0, 500.0,-300.0,300.0,-600.0,600.0 ]   #in cm
     ProjectToHeight:  1800  #height to which particles are projected in cm
 
@@ -88,13 +88,27 @@ The configuration recommended here **does not include the Cosmic Ray
 Tagging detector**. A different configuration for the `g4` stage needs
 to be validated for that.
 
-| Simulation stage    | Configuration file                      | Comment                                           | Last seen in  |
-| ------------------- | --------------------------------------- | ------------------------------------------------- | ------------- |
-| generation          | `prodcorsika_standard_icarus.fcl`       | cosmic rays only                                  | `v08_44_00`   |
-| detector simulation | `cosmics_g4_icarus_volCryostat.fcl`     | saves only particles in cryostats *(recommended)* | `v08_45_00`   |
-|                     | `cosmics_g4_icarus_volDetEnclosure.fcl` | saves only particles in detector, including CRT   | `v08_45_00`   |
-| readout simulation  | *standard `detsim` configuration*       |                                                     
-| reconstruction      | *standard `reco` configurations*        |                                                     
+| Simulation stage    | Configuration file                         | Comment                                           | Last seen in  |
+| ------------------- | ------------------------------------------ | ------------------------------------------------- | ------------- |
+| generation          | `prodcorsika_standard_icarus.fcl`          | cosmic rays only, any time, any primary type      | `v08_44_00`   |
+|                     | `prodcorsika_proton_intime_icarus_bnb.fcl` | protons only, with one in BNB gate; _see below_   | `v09_06_00`   |
+| detector simulation | `cosmics_g4_icarus_volCryostat.fcl`        | saves only particles in cryostats *(recommended)* | `v08_45_00`   |
+|                     | `cosmics_g4_icarus_volDetEnclosure.fcl`    | saves only particles in detector, including CRT   | `v08_45_00`   |
+|                     | `intime_g4_icarus.fcl`                     | special for in-time cosmic ray processing         | `v09_06_00`   |
+| readout simulation  | *standard `detsim` configuration*          |                                                     
+| reconstruction      | *standard `reco` configurations*           |                                                     
+
 
 ¹ Actually it turns out that out of a primary cosmic ray, only one or
 two shower particles make it to the world volume we are simulating.
+
+
+### In-time cosmic ray simulation
+
+Simulation of cosmic rays in time with a beam gate is a complicate business,
+the hardest part defining exactly _what_ needs to be in time
+(it is very different to require the cosmic proton to be in time,
+or any particle, including any shabby neutron, to cross in time,
+and the path in space they cover is also relevant).
+A processing chain is described in `prodcorsika_proton_intime_icarus_bnb.fcl`.
+
