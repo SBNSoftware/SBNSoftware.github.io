@@ -2,7 +2,6 @@
 layout: page
 title: Computing resources
 description: Computing resources summary and giudance for ICARUS
-hero_height: is-medium
 # menubar: icaruscode_menu
 toc: true
 toc_title: Contents
