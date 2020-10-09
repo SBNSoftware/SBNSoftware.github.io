@@ -1,39 +1,13 @@
 ---
 layout: page
 title: Integration test guide
+toc: true
 ---
 
 
 
 Short user guide to integration tests in SBND
 ==============================================================================================================
-
--   **Table of contents**
--   [Short user guide to integration tests in
-    SBND]
-    -   [What are integration tests]
-    -   [What an integration test does]
-    -   [Introduction to test running]
-        -   [The output of a test in
-            detail]
-        -   [Example of failure from resource
-            usage]
-    -   [Running the integration test with the Continuous Integration
-        system]
-        -   [Automatic testing]
-        -   [Testing of the code in the local working
-            area]
-        -   [Remote testing of published
-            code]
-            -   [Generating the reference
-                files]
-    -   [The reference result files]
-    -   [Available tests]
-    -   [Investigating test failures]
-        -   [Results are different from the
-            reference]
-    -   [Further resources]
-
 
 
 What are integration tests 
