@@ -42,7 +42,7 @@ desk](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk).
 Get the proxy
 ----------------------------------------------
 
-The ritual for getting the certificate and proxy goes like this:\
+The ritual for getting the certificate and proxy goes like this:
 
     kinit "${USER}@FNAL.GOV"                                                     # get your Kerberos authentication
     setup cigetcert                                                              # (if not already there)
@@ -53,7 +53,7 @@ The ritual for getting the certificate and proxy goes like this:\
 > `source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh`).
 
 The last line of the output from this sequence should look something
-like:\
+like:
 
     Your proxy is valid until Tue Sep 27 01:49:24 2016
 
