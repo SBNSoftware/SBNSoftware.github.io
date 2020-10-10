@@ -252,14 +252,20 @@ presumed that  of the "blind" type.
         
         pnfsToXRootD < /pnfs/icarus/scratch/users/${USER}/jobOutput/photonlibrary_builder_icarus/20200816/photonlibrary_builder_icarus-outputfile.list > photonlibrary_builder_icarus-outputfile-xrootd.list
         root -l -q 'MergePhotonLibrary.C++(
-          "PhotonLibrary-20200816.root",
+          "PhotonLibrary-20200816-large.root",
           "photonlibrary_builder_icarus-outputfile-xrootd.list",
           "v09_00_00",
           "20200816",
           "PhotonLibraryData",
           "pmtresponse"
           )'
-
+        
+    To gain a bit in file size, it's worth asking ROOT to recreate the tree again; we have a script to do so, although there may be better ROOT ways to do the same:
+        
+        root -l -q 'RecompressROOTtrees.C("PhotonLibrary-20200816-large.root", "PhotonLib-20200816.root", 8, ROOT::kLZMA)'
+        
+    This procedure reduced the 20200925 library from 256 MB to 242 MB: quite small gain, but those few seconds less on each checkout, each run, each job, may be welcome bits.
+    
 Photon library file `PhotonLibrary-20200816.root` is now ready for physics tests!
 
 
@@ -269,7 +275,7 @@ Past campaigns
 | tag        | software     | included in               | primary output file          | motivation                                              |
 | ---------- | ------------ | ------------------------- | ---------------------------- | ------------------------------------------------------- |
 | `20200816` | `v08_62_01`* | `icarus_data` `v09_01_00` | `PhotonLibrary20200816.root` | updated refraction index and Rayleigh scattering length |
-| `20200925` | `v09_04_01`* | _nowhere yet_             | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
+| `20200925` | `v09_04_01`* | `icarus_data` `v09_06_00` | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
 
 Campaigns with software versions marked with "*" had custom modifications.
 This is not so uncommon, since issues arise on top of the releases.
@@ -309,7 +315,7 @@ which is a pretty hard limit in the current grid.
 in FermiGrid to submit the recovery jobs,
 but for the future the number of voxels per job should be decreased (was 1850)
 and the number of jobs increased accordingly (was 1214).
-The settings used for this campaign have been integrated in `icaruscode` `v09_05_00`.
+The settings used for this campaign have been integrated in `icaruscode` `v09_07_00`.
 
 Note that the interaction between `project.py` and dCache was again affected by severe slowdown
 and critical failures, which made bookkeeping harder.
