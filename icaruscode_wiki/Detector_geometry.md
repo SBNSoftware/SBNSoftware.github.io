@@ -1,8 +1,7 @@
 ---
 layout: page
 title: ICARUS Detector geometry
-title: Integration tests
-description: How to run integration ("CI") tests for ICARUS
+description: Description of the detector geometry settings available for ICARUS
 toc: true
 ---
 
