@@ -1,12 +1,9 @@
 ---
 layout: page
-title: ICARUS Detector geometry
+title: ICARUS detector geometry description
 description: Description of the detector geometry settings available for ICARUS
 toc: true
 ---
-
-ICARUS detector geometry description
-=====================================
 
 
 Geometry description versions
