@@ -14,8 +14,9 @@ Each of these sub-groups are charged with defining and implement common SBN-wide
 
 ### [Release Management](rm.md)
 
-Conveners: [](mailto:)
+[List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse)
 
+Conveners: [](mailto:)
 Goal is to maintain high-quality releases of SBN-specific software packages
 
 ### [Production and Resource Management](prod.md)
