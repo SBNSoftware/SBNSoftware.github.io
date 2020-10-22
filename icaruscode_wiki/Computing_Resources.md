@@ -153,6 +153,10 @@ Kerberos 5 commands. That might not be welcome if your institution uses
 Kerberos 5 too with a different realm, which opens a new realm of
 complication.
 
+### Using a VNC connection to view windows
+
+A good wiki page on how to setup for a VNC connection can be found at:
+-   [Viewing events remotely with VNC](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Viewing_events_remotely_with_VNC "by Dom Brailsford"){.external}
 
 
 Where to work: interactive nodes ("GPVM")
