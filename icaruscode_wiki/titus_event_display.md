@@ -28,6 +28,7 @@ Notes
 -----
 
 - Find data files at this [link](https://docs.google.com/spreadsheets/d/1nkMDRcguwIuaHFUH6sFDLd3UcQVNrCpe8pLdELHsuAk/edit#gid=41507160)
+    - Note that this is a protected link, you will need to request access to view the list of runs
 - You can use `samweb` to locate decode files available on PNFS disks:
     - `samweb list-files "run_number=nnnn"`   where `nnnn` is the run number being searched for
     - `samweb locate-file filename`   where filename is a decoded file
