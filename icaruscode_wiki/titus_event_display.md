@@ -27,7 +27,7 @@ How to Run TITUS on a gpvm machine
 Notes
 -----
 
-- Find data files at this link
+- Find data files at this [link](https://docs.google.com/spreadsheets/d/1nkMDRcguwIuaHFUH6sFDLd3UcQVNrCpe8pLdELHsuAk/edit#gid=41507160)
 - You can use `samweb` to locate decode files available on PNFS disks:
     - `samweb list-files "run_number=nnnn"`   where `nnnn` is the run number being searched for
     - `samweb locate-file filename`   where filename is a decoded file
