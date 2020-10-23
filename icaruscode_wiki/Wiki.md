@@ -17,6 +17,10 @@ ICARUS Simulation and Reconstruction Code
 This is version 0 of a wiki age for ICARUS software\
 It should have more than a passing familiarity with SBND\...
 
+Viewing events in the event display
+-----------------------------------------
+
+- [Instructions for running the TITUS event display](titus_event_display.md)
 
 
 Developing ICARUS code
@@ -57,7 +61,7 @@ Monte Carlo productions
 
 * [samples used for trigger simulation](samples/trigger_simulation.md)
 
-Useful Tidbits of information. 
+Useful Tidbits of information.
 ------------------------------
 
 -   How to get Geant4 standalone working on gpvms
@@ -71,7 +75,7 @@ Useful Tidbits of information.
 
 -   [Roles and people](Roles_and_people.md)
 
-Newbie Material 
+Newbie Material
 ---------------
 
 -   [Cosmic Ray Tagging System](Cosmic_Ray_Tagging_System.md)
