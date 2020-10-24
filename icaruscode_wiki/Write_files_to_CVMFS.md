@@ -80,11 +80,11 @@ As of August 2020, these people are:
 
 Users with ICARUS CVMFS upload privileges                      | since
 -------------------------------------------------------------- | ------
-[Wes Ketchum](mailto:wketchum@fnal.gov)                        | ?
-[Yun-Tse Tsai](mailto:yuntse@slac.stanford.edu)                | ?
-[Tracy Usher](mailto:usher@slac.stanford.edu)                  | ?
-[Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | ?
-[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | ?
+[Wes Ketchum](mailto:wketchum@fnal.gov)                        | 2016
+[Yun-Tse Tsai](mailto:yuntse@slac.stanford.edu)                | 2016
+[Tracy Usher](mailto:usher@slac.stanford.edu)                  | The Stone Age
+[Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | 2016
+[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
