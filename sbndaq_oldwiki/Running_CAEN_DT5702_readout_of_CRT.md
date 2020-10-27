@@ -1,32 +1,13 @@
 ---
 layout: page
 title: Running CAEN DT5702 readout of CRT
+toc: true
 ---
 
 
 
 [Running CAEN DT5702 readout of CRT]{.ul}
 ===============================================================================================
-
--   **Table of contents**
--   [Running CAEN DT5702 readout of
-    CRT]
--   [Introduction]
--   [Hardware connections]
--   [febdrv]
-    -   [Introduction]
-    -   [Usage]
-    -   [Running as system service]
-        -   [Check if febdrv is running]
-        -   [Configuration]
--   [FHiCL configuration]
-    -   [Overview]
-    -   [Fragment ID]
--   [Code]
-    -   [Where is the code?]
-    -   [Status]
--   [DAQ server configuration]
-
 
 
 Introduction
