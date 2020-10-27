@@ -6,7 +6,7 @@ toc: true
 
 
 
-[Running CAEN DT5702 readout of CRT]{.ul}
+Running CAEN DT5702 readout of CRT
 ===============================================================================================
 
 
