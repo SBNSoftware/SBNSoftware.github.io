@@ -179,8 +179,7 @@ Troubleshooting
 Other useful links
 --------------------------------------------------------
 
--   [Running CAEN DT5702 readout of
-    CRT](Running_CAEN_DT5702_readout_of_CRT.html)
+-   ~~Running CAEN DT5702 readout of CRT~~ → moved to new wiki
 
 -   [Standalone Bern Readout
     Instructions](Standalone_Bern_Readout_Instructions.html)
