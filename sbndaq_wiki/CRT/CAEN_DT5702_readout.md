@@ -52,10 +52,10 @@ Permissions
 As febdrv needs to access Ethernet port, the boardreader process requires
 special permissions.
 
-Bad solutions:
+Bad solutions we have explored:
 -   Run boardreader as a root user (security risk)
 -   Give root permissions to the executable:
-    `chown root:root febdrv && chmod u+s febdrv` (inconvenient, permissions need to be set after each recompiling and introduces security risk)
+    `chown root:root febdrv && chmod u+s febdrv` (inconvenient, permissions reset on recompiling, security risk)
 -   Set minimum permissions to the executable:
     `setcap cap_net_admin,cap_net_raw=eip febdrv` (doesn't work on nfs)
 
