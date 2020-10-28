@@ -39,110 +39,31 @@ febdrv
 Introduction
 ----------------------------------------------
 
-febdrv is a program reading out data from FEBs via Ethernet. It uses
-zeromq to send data and metrics to artdaq and receive commands and
-configuration from artdaq.
+febdrv communicates with FEBs via Ethernet. Originally written as
+standalone program, it has been adopted to the needs of SBN DAQ
+and finally integrated with the fragment generator.
 
-The code was originally written at U.Bern, then modified at CERN, then
-finally modified for SBN experiments. The code can be found in
-`sbndaq-artdaq/Generators/Common/Bern/` .
+Directory `sbndaq-artdaq/Generators/Common/Bern/` contains old,
+standalone febdrv which is no longer in use.
 
-
-
-Usage
+Permissions
 ------------------------------
 
-As febdrv needs to access Ethernet port it requires root access.
+As febdrv needs to access Ethernet port, the boardreader process requires
+special permissions.
 
--   **Preferred solution: run febdrv as a system service -- see below**
--   sudo
--   Set minimum permissions to the executable:
-    `setcap cap_net_admin,cap_net_raw=eip febdrv` (doesn\'t work on nfs)
+Bad solutions:
+-   Run boardreader as a root user (security risk)
 -   Give root permissions to the executable:
-    `chown root:root febdrv && chmod u+s febdrv`
+    `chown root:root febdrv && chmod u+s febdrv` (inconvenient, permissions need to be set after each recompiling and introduces security risk)
+-   Set minimum permissions to the executable:
+    `setcap cap_net_admin,cap_net_raw=eip febdrv` (doesn't work on nfs)
 
-Syntax:\
-
-    febdrv <ethernet port> <polling time ms> [first zmq port]
-
-for example:\
-
-    # ./febdrv enp101s0f3 300 5530
-    WARNING!! The poll duration is set to minimum 300 ms.
-    Fri Oct  4 16:47:12 2019 febdrv: initialized enp101s0f3 with MAC  68:05:ca:91:9c:27
-    Fri Oct  4 16:47:12 2019 febdrv: listening at tcp://*:5530
-    Fri Oct  4 16:47:12 2019 febdrv: data publisher at tcp://*:5531
-    Fri Oct  4 16:47:12 2019 febdrv: stats publisher at tcp://*:5532
-    Fri Oct  4 16:47:12 2019 febdrv: stats2 publisher at tcp://*:5533
-    Fri Oct  4 16:47:12 2019 Newly connected FEB: 00:60:37:12:34:55 FEB_rev3_IAP7.013
-    Fri Oct  4 16:47:12 2019 Newly connected FEB: 00:60:37:12:34:57 FEB_rev3_IAP7.013
-    Fri Oct  4 16:47:12 2019 Newly connected FEB: 00:60:37:12:34:d7 FEB_rev3_IAP7.013
-    Fri Oct  4 16:47:12 2019 In total 3 FEBs connected.
-
-\
-Here we run febdrv on Ethernet port enp101s0f3. There are 3 FEBs
-connected to that port. Also febdrv opens four zeromq ports with
-consecutive numbers.
-
-To **stop** febdrv hit `Ctrl-C`.
-
-
-
-Running as system service
-----------------------------------------------------------------------
-
-
-
-### Check if febdrv is running
-
-Type `systemctl`. If everything is fine you should see something like:\
-you see something like\
-
-      febdrv-main.service              loaded active running   Main febdrv demon calling individual febdrv instances
-      febdrv@enp101s0f0.service        loaded active running   febdrv on enp101s0f0
-      febdrv@enp101s0f1.service        loaded active running   febdrv on enp101s0f1
-      febdrv@enp101s0f2.service        loaded active running   febdrv on enp101s0f2
-      febdrv@enp101s0f3.service        loaded active running   febdrv on enp101s0f3
-
-
-
-### Configuration
-
-In `sbndaq-artdaq/Generators/Common/Bern/service/` one can find files
-which allow to run febdrv as system service:
-
--   `febdrv`@`.service` → copy to `/etc/systemd/system/` and edit path
-    to febdrv executable in it
--   `febdrv-main.service` → copy to `/etc/systemd/system/` and edit list
-    of Ethernet ports you want to use
--   `febdrv.PORTNAME.conf` → copy to `/etc/`, rename PORTNAME to the
-    Ethernet port, and edit the first zeromq port number
-
-Enable services including every Ethernet port you want to use\
-
-    systemctl enable febdrv@enp101s0f0
-    systemctl enable febdrv@enp101s0f1
-    systemctl enable febdrv@enp101s0f2
-    systemctl enable febdrv@enp101s0f3
-    systemctl enable febdrv-main
-
-You can start an individual instance\
-
-    systemctl start febdrv@enp101s0f0
-
-Or all of them at once\
-
-    systemctl start febdrv-main
-
-The output of febdrv can be viewed with `journalctl`:\
-
-    journalctl -u <service_name>
-
-\
-e.g.\
-
-    journalctl -u febdrv@enp101s0f3
-
+Good solution:
+- Run board reader in a special environment granting it permissions. 
+Syntax for standalone operation (e.g. artdaqDriver) is: `/usr/libexec/ambient_cap_net_raw /bin/bash`
+For DAQInterface `known_boardreaders_list` needs to contain the following line:
+`boardereader_name server_name -1 1 0-15 "/usr/libexec/ambient_cap_net_raw /bin/env LD_LIBRARY_PATH=$LD_LIBRARY_PATH "`
 
 
 FHiCL configuration
@@ -153,32 +74,23 @@ FHiCL configuration
 Overview
 ------------------------------------
 
-A FHiCL file for CRT corresponds to a single febdrv instance, thus to a
-single Ethernet port, or a single *chain* of FEBs connected to that
-port. Presently (1/17/20) the best maintained version of CRT files is in
-`sbndaq/sbn-fd/DAQInterface/configs/standard`. A file should:
+A FHiCL file for CRT corresponds to a single Ethernet port, or a
+single *chain* of FEBs connected to that port. 
 
--   load `crt_common.fcl`
--   specify first zeromq port number (`zmq_listening_port`)
--   specity list of mac addresses (`FEBIDs`)
--   corresponding list determining if HV on that port should be turned
-    on (`TurnOnHV`)
--   load fcl file with *bitstream* configuration and assign it to each
-    FEB (`SlowControlBitStream*`)
+The most important parameters:
+-   list of `fragment_ids` (see below).
+    As fragment ID contains the last 8 bits of FEB MAC addresses
+-   corresponding list of the same size determining if SiPM bias voltage on that FEB should be turned  on (`TurnOnHV`)
+-   delay of PPS signal w.r.t. GPS-synchronised source (`PPS_offset_ns`). This allows fragment generator to correct for the delay introduced by cable lengths
 
-The FEBs are configured with bitstreams containing many settings,
-including:
+Individual FEB configuration, are included from separate files, individual for each FEB.
+These settings include:
 
 -   SiPM voltage adjustment (4V range)
 -   Enabling individual channel amplifiers and triggers
 -   Trigger threshold
 
-Bitstream does **not** determine:
-
--   Whether to turn on or off the SiPM HV. This is done by commands
-    `BIAS_ON` and `BIAS_OF` which are sent to febdrv separately, as
-    defined in the main FHiCL file
--   The absolute value of HV. Each FEB has a potentiometer setting the
+Configuration files do **not** determine the absolute value of HV. Each FEB has a potentiometer setting the
     common voltage *c*, and the voltage on given SiPM is:
 
 > HV\[ch\] = c -- 4.5V + a\[ch\] ÷ 256 × 4V
@@ -213,31 +125,27 @@ Code
 Where is the code?
 -------------------------------------------------------
 
-`sbndaq-artdaq/Generators/Common/Bern` -- board reader\
-`sbndaq-artdaq-core/Overlays/Common` -- structure definitions
+- `sbndaq-artdaq/Generators/Common/Bern` -- board reader
+- `sbndaq-artdaq-core/Overlays/Common` -- structure definitions
 
 
 
 Status
 --------------------------------
 
-(1/17/20)
+(10/27/20)
 
--   Starting and stopping readout works
--   Sending bitstream configuration to FEBs, starting DAQ, turning on HV
--   Data acquisition requires still many tests
--   Absolute time of the events based on nanosecond time measured by FEB
-    and server time of the polls
+-   Board reader is fully functional
+-   CRT measures absolute time of each hit based on nanosecond time measured by FEB
+    and server time of the polls; see:  https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16108 for details
 
 To do:
 
--   Synchronise with other DAQ components
--   Assign correct fragment ID to fragments, according to the new
-    numbering convention
--   Test, test, test
--   Test more (ideas for tests to do welcome)
--   Prepare framework to read hardware configuration from the DB
+-   Cross check timestamps with DAQ components
+-   Prepare framework to produce hardware configuration from the DB
+-   Fix minor bugs in configuration code
 -   Prepare configuration for all FEB in the experiment
+-   Test, and if needed improve performance
 
 
 
@@ -256,3 +164,5 @@ The following actions are needed on each new ICARUS CRT DAQ server:
 
         ONBOOT=yes
         BOOTPROTO=none
+        
+-   Install `/usr/libexec/ambient_cap_net_raw` tool. The program code is in service-now ticket RITM0946313 https://fermi.servicenowservices.com/wp?id=evg-ticket&sys_id=ccc9a992dbaf0810991e76708c961996&table=sc_req_item
