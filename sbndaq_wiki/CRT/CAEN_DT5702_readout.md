@@ -21,10 +21,10 @@ ICARUS side and top CRT is read using CAEN DT5702 front end boards
 Hardware connections
 ============================================================
 
--   T0 -- normally should have PPS (1 pulse per second) signal connected
--   T1 -- optional additional source of trigger
--   Tin/Tout -- coincidence gating (not triggering!)
--   SiPM inputs -- SiPMs, triggering the readout as well
+-   T0 - normally should have PPS (1 pulse per second) signal connected
+-   T1 - optional additional source of trigger
+-   Tin/Tout - coincidence gating (not triggering!)
+-   SiPM inputs - SiPMs, triggering the readout as well
 
 FEBs are connected to computer with Ethernet cable. They can be chained
 using another Ethernet port (doesn\'t matter which one).
@@ -60,8 +60,10 @@ Bad solutions we have explored:
     `setcap cap_net_admin,cap_net_raw=eip febdrv` (doesn't work on nfs)
 
 Good solution:
-- Run board reader in a special environment granting it permissions. 
+- Run board reader in a special environment granting it permissions.
+
 Syntax for standalone operation (e.g. artdaqDriver) is: `/usr/libexec/ambient_cap_net_raw /bin/bash`
+
 For DAQInterface `known_boardreaders_list` needs to contain the following line:
 `boardereader_name server_name -1 1 0-15 "/usr/libexec/ambient_cap_net_raw /bin/env LD_LIBRARY_PATH=$LD_LIBRARY_PATH "`
 
@@ -93,7 +95,7 @@ These settings include:
 Configuration files do **not** determine the absolute value of HV. Each FEB has a potentiometer setting the
     common voltage *c*, and the voltage on given SiPM is:
 
-> HV\[ch\] = c -- 4.5V + a\[ch\] ÷ 256 × 4V
+> HV\[ch\] = c - 4.5V + a\[ch\] ÷ 256 × 4V
 
 where *a*\[ch\] is a value in range \[0, 255\[ specified in the
 bitstream. In other words, bitstream allows to fine tune the HV in 4V
