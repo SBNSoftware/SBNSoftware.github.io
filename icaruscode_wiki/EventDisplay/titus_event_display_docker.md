@@ -35,10 +35,10 @@ Create a Data Folder On Your Local Machine and Download a Data File
 Start the Event Display
 -----------------------
 - Once the image has been pulled and you have your data area set up you can start the container by issuing the command:
--- `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
+    - `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
 - This will put you into a bash shell inside the image, from here you launch the display with:
--- `source setup_titus.sh`
--- `evd.py -i /data/yourdatafile.root`
+    - `source setup_titus.sh`
+    - `evd.py -i /data/yourdatafile.root`
 
 Notes:
 ------
