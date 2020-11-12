@@ -13,9 +13,7 @@ TITUS Event Display via docker
 ==============================
 
 
-Install docker On Your Local Machine
-------------------------------------
-
+#### Install docker On Your Local Machine
 - Instructions for installing and configuring docker can be found at the docker docs site, linked [here](https://docs.docker.com/get-docker/)
 - Note that docker will be configured as the root user, you can find instructions for changing this in the documentation linked above
 
@@ -47,7 +45,7 @@ Install docker On Your Local Machine
     ```
     open -a Xquartz
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
-    docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
+    docker run -it --rm -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
     ```
 - The above will put you into a bash shell inside the image, from here you launch the display with:
   ```
