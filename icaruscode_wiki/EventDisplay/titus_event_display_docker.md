@@ -59,3 +59,4 @@ TITUS Event Display via docker
   ```
   brew install socat
   ```
+- For OSX docker will respect Apple's file system sandbox guidelines... meaning that the path to your data file area on your local machine is best set off of your "Users" area, for example: `/Users/yourusername/data`
