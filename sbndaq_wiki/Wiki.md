@@ -50,6 +50,10 @@ Developing in sbndaq
 * artdaq: 
 * git info: 
 
+sbndaq detector components
+----------------------------------------------
+* [CAEN DT5702 (CRT)](CRT/CAEN_DT5702_readout.md)
+
 Troubleshooting
 ----------------------------------------------
 

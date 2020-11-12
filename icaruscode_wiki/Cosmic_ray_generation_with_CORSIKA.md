@@ -1,8 +1,6 @@
 ---
 layout: page
 title: 'Cosmic ray generation (CORSIKA)'
-hero_height: is-medium
-# menubar: icaruscode_menu
 toc: true
 ---
 

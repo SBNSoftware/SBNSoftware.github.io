@@ -148,18 +148,14 @@ from SBND disks and tapes, and you can submit SBND jobs to the grid.\
 The access is via SSH with FNAL.GOV Kerberos credentials.
 
 The nodes and their OS version are:
-
-  ------------------------------------------------- -------
-  [`sbndgpvm01.fnal.gov`]{style="color: green;"}    SLF 6
-  [`sbndgpvm02.fnal.gov`]{style="color: green;"}    SLF 6
-  [`sbndgpvm03.fnal.gov`]{style="color: green;"}    SLF 6
-  [`sbndgpvm04.fnal.gov`]{style="color: green;"}    SLF 7
-  [ `sbndbuild01.fnal.gov`]{style="color: navy;"}   SLF 6
-  [ `sbndbuild02.fnal.gov`]{style="color: navy;"}   SLF 7
-  ------------------------------------------------- -------
-
-The old `lar1ndgpvm01.fnal.gov` will be discontinued soon: don\'t get
-used to it.
+ | Node                 |  OS   |
+ |----------------------|-------|
+ | sbndgpvm01.fnal.gov  | SLF 7 |
+ | sbndgpvm02.fnal.gov  | SLF 7 |
+ | sbndgpvm03.fnal.gov  | SLF 7 |
+ | sbndgpvm04.fnal.gov  | SLF 7 |
+ | sbndbuild01.fnal.gov | SLF 7 |
+ | sbndbuild02.fnal.gov | SLF 7 |
 
 The [GPVM]{style="color: green;"} interactive machines have no relevant
 local storage, and areas in `/sbnd` and `/pnfs` should be used (the home
@@ -357,11 +353,11 @@ information locally first.
 You should create your own directory under `/sbnd/data/users/${USER}`
 and `/sbnd/app/users/${USER}`, and stick to them.\
 Space available to SBND collaboration:
-
-  -------------- -------
-  `/sbnd/app`    3 TB
-  `/sbnd/data`   16 TB
-  -------------- -------
+  |  |  |
+  |--|--|
+  | `/sbnd/app`  | 3 TB  |
+  | `/sbnd/data` | 16 TB |
+  
 
 Be fair about disk usage and make sure to clean up unneeded stuff, this
 resource is shared by everyone in the collaboration.

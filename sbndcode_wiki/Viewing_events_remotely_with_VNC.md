@@ -1,26 +1,13 @@
 ---
 layout: page
 title: Viewing events remotely with VNC
+toc: true
 ---
 
 
 
 Viewing events remotely with VNC
 ====================================================================================
-
--   **Table of contents**
--   [Viewing events remotely with
-    VNC]
-    -   [On your chosen sbndgpvm (i.e. ssh to
-        it)]
-    -   [On your local machine (i.e. open a new terminal window and do
-        not ssh
-        anywhere)]
-    -   [How to use your VNC server]
-    -   [Old (ancient) instructions]
-        -   [Generate some events to
-            view]
-        -   [Viewing events with VNC]
 
 (Taken and adapted from Dom Brailsford DUNE wiki Instructions)
 
@@ -83,7 +70,7 @@ Add the following snippet to the bottom of your \$HOME/.profile or
 
 
 On your local machine (i.e. open a new terminal window and do not ssh anywhere) 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 Add the following snippet to the bottom of your \$HOME/.ssh/config.
 Change dbrailsf to your own kerberos principal, change the two

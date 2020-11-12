@@ -37,9 +37,9 @@ source /daq/software/products_dev/setup   #dev area
 ```bash
 ups list -aK+ sbndaq
 ```
-It's recommended you use the latest available version with e19:prof:py2:s94 as the option. Then, to set up, use:
+It's recommended you use the latest available version with e19:prof:py2:s97 as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe19:prof:py2:s94
+setup sbndaq v#_##_## -qe19:prof:py2:s97
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
@@ -163,7 +163,7 @@ export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v0_06_00 -q e19:prof:py2:s94
+setup sbndaq v0_07_01 -q e19:prof:py2:s97
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
