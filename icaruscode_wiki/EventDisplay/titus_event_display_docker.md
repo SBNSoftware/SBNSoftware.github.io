@@ -23,7 +23,9 @@ Pull the TITUS Image from dockerhub
 -----------------------------------
 
 - Issue the command:
-  * `docker pull sfbaylaser/titus:latest`
+  ```
+  docker pull sfbaylaser/titus:latest
+  ```
 - This will pull the image into your docker space and save time when you go to start the image
 - Note that the image is large, about 9 GB, so can take a few minutes to download.
 
@@ -37,20 +39,24 @@ Start the Event Display
 -----------------------
 - **On a Linux Machine**
   - Once the image has been pulled and you have your data area set up you can start the container by issuing the command (making sure to substitute in the path to your data directory!):
-    * `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
+    ```
+    docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash
+    ```
 - **On an OSX Machine**
   - Open a terminal window and start socat:
-    * `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
+    ```
+    socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+    ```
   - Open another terminal window to start xquartz, get the IP address and run docker:
     ```
-    `open -a Xquartz`
-    `IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')`
-    `docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash`
+    open -a Xquartz
+    IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+    docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
     ```
 - The above will put you into a bash shell inside the image, from here you launch the display with:
   ```
-  `source setup_titus.sh`
-  `evd.py -i /data/yourdatafile.root`
+  source setup_titus.sh
+  evd.py -i /data/yourdatafile.root
   ```
 
 Notes:
