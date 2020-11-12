@@ -23,7 +23,7 @@ Pull the TITUS Image from dockerhub
 -----------------------------------
 
 - Issue the command:
-  *`docker pull sfbaylaser/titus:latest`
+  * `docker pull sfbaylaser/titus:latest`
 - This will pull the image into your docker space and save time when you go to start the image
 - Note that the image is large, about 9 GB, so can take a few minutes to download.
 
