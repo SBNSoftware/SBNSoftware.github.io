@@ -22,7 +22,7 @@ Install docker On Your Local Machine
 Pull the TITUS Image from dockerhub
 -----------------------------------
 
-- Issue the command 'docker pull sfbaylaser/titus:latest'
+- Issue the command '**docker pull sfbaylaser/titus:latest**'
 - This will pull the image into your docker space and save time when you go to start the image
 - Note that the image is large, about 9 GB, so can take a few minutes to download.
 
@@ -35,10 +35,10 @@ Create a Data Folder On Your Local Machine and Download a Data File
 Start the Event Display
 -----------------------
 - Once the image has been pulled and you have your data area set up you can start the container by issuing the command:
--- docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash
+-- **docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash**
 - This will put you into a bash shell inside the image, from here you launch the display with:
--- source setup_titus.sh
--- evd.py -i /data/yourdatafile.root
+-- **source setup_titus.sh**
+-- **evd.py -i /data/yourdatafile.root**
 
 Notes:
 ------
