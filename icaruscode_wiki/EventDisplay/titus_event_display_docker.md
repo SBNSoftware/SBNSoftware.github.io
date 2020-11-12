@@ -47,7 +47,7 @@ TITUS Event Display via docker
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     docker run -it --rm -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
     ```
-- The above will put you into a bash shell inside the image, from here you launch the display with:
+- **Open the Display Window -** the above will put you into a bash shell inside the image, from here you launch the display with:
   ```
   source setup_titus.sh
   evd.py -i /data/yourdatafile.root
