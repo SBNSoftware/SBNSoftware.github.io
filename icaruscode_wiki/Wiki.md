@@ -20,7 +20,7 @@ It should have more than a passing familiarity with SBND\...
 Viewing events in the event display
 -----------------------------------------
 
-- [Instructions for running the TITUS event display](titus_event_display.md)
+- [Instructions for running the TITUS event display](EventDisplay/titus_event_display.md)
 
 
 Developing ICARUS code

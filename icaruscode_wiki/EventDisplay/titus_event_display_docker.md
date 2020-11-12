@@ -12,7 +12,7 @@ toc_title: TITUS Contents
 TITUS Event Display
 ===================
 
-![alt text](images/evd_icarus_R2278_S1_E1300.png "TITUS Event Display")
+![alt text](../images/evd_icarus_R2278_S1_E1300.png "TITUS Event Display")
 
 
 How to Run TITUS on a gpvm machine
