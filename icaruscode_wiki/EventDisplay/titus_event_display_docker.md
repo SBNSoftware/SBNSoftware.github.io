@@ -37,6 +37,7 @@ Start the Event Display
 -----------------------
 - Once the image has been pulled and you have your data area set up you can start the container by issuing the command:
   * `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
+Be sure to substitue the path to your data folder in the command above!
 - This will put you into a bash shell inside the image, from here you launch the display with:
   * `source setup_titus.sh`
   * `evd.py -i /data/yourdatafile.root`
