@@ -35,8 +35,16 @@ Create a Data Folder On Your Local Machine and Download a Data File
 
 Start the Event Display
 -----------------------
-- Once the image has been pulled and you have your data area set up you can start the container by issuing the command (making sure to substitute in the path to your data directory!):
-  * `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
+- **On a Linux Machine**
+  - Once the image has been pulled and you have your data area set up you can start the container by issuing the command (making sure to substitute in the path to your data directory!):
+    * `docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash`
+- **On an OSX Machine**
+  - Open a terminate window and start socat:
+    * `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
+  - Open another terminal window to start xquartz, get the IP address and run docker:
+    * ```open -a Xquartz
+IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+docker run -it -e DISPLAY=$IP:0 sl7_titus ```
 - This will put you into a bash shell inside the image, from here you launch the display with:
   * `source setup_titus.sh`
   * `evd.py -i /data/yourdatafile.root`
