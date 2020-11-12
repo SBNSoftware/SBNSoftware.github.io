@@ -45,7 +45,7 @@ Start the Event Display
     ```
     open -a Xquartz
     IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
-    docker run -it -e DISPLAY=$IP:0 sl7_titus
+    docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
     ```
 - The above will put you into a bash shell inside the image, from here you launch the display with:
   ```
