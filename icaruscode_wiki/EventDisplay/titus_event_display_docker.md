@@ -43,14 +43,14 @@ Start the Event Display
     * `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
   - Open another terminal window to start xquartz, get the IP address and run docker:
     ```
-    open -a Xquartz
-    IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
-    docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash
+    `open -a Xquartz`
+    `IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')`
+    `docker run -it -e DISPLAY=$IP:0 -v /path/to/your/data/area:/data sfbaylaser/titus /bin/bash`
     ```
 - The above will put you into a bash shell inside the image, from here you launch the display with:
   ```
-  source setup_titus.sh
-  evd.py -i /data/yourdatafile.root
+  `source setup_titus.sh`
+  `evd.py -i /data/yourdatafile.root`
   ```
 
 Notes:
