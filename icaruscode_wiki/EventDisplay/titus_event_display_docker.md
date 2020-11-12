@@ -19,7 +19,7 @@ Install docker On Your Local Machine
 - Instructions for installing and configuring docker can be found at the docker docs site, linked [here](https://docs.docker.com/get-docker/)
 - Note that docker will be configured as the root user, you can find instructions for changing this in the documentation linked above
 
-###Pull the TITUS Image from dockerhub
+### Pull the TITUS Image from dockerhub
 - Issue the command:
   ```
   docker pull sfbaylaser/titus:latest
@@ -27,12 +27,12 @@ Install docker On Your Local Machine
 - This will pull the image into your docker space and save time when you go to start the image
 - Note that the image is large, about 9 GB, so can take a few minutes to download.
 
-###Create a Data Folder On Your Local Machine and Download a Data File
+### Create a Data Folder On Your Local Machine and Download a Data File
 - Create a folder to contain data files that you download
 - See the information on the previous page for finding data files
 - If you have an FNAL computing account then you can copy the data file to your local machine
 
-###Start the Event Display
+### Start the Event Display
 - **On a Linux Machine**
   - Once the image has been pulled and you have your data area set up you can start the container by issuing the command (making sure to substitute in the path to your data directory!):
     ```
@@ -55,5 +55,5 @@ Install docker On Your Local Machine
   evd.py -i /data/yourdatafile.root
   ```
 
-###Notes:
+### Notes:
 - Note that the TITUS event display can only display "decoded" data files, it cannot display files in artdaq format. Be sure to download a decoded data file!
