@@ -9,27 +9,37 @@ toc_title: TITUS Contents
 
 
 
-TITUS Event Display
-===================
-
-![alt text](../images/evd_icarus_R2278_S1_E1300.png "TITUS Event Display")
+TITUS Event Display via docker
+==============================
 
 
-How to Run TITUS on a gpvm machine
-----------------------------------
+Install docker On Your Local Machine
+------------------------------------
 
-- Note that it is best to use a VNC connection to run TITUS remotely, see the instructions to set that up [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Viewing_events_remotely_with_VNC "by Dom Brailsford")
-- Log into a gpvm machine (note: if using VNC make sure the machine you have enabled as above)
-- Navigate to `/icarus/app/TITUS`
-- source the setup file (`setup_TITUS.sh`)
-- Launch the event display with the command `evd.py -i /path/to/your/decoded/file`
+- Instructions for installing and configuring docker can be found at the docker docs site, linked [here](https://docs.docker.com/get-docker/)
+- Note that docker will be configured as the root user, you can find instructions for changing this in the documentation linked above
 
-Notes
------
+Pull the TITUS Image from dockerhub
+-----------------------------------
 
-- Find data files at this [link](https://docs.google.com/spreadsheets/d/1nkMDRcguwIuaHFUH6sFDLd3UcQVNrCpe8pLdELHsuAk/edit#gid=41507160)
-    - Note that this is a protected link, you will need to request access to view the list of runs
-- You can use `samweb` to locate decode files available on PNFS disks:
-    - `samweb list-files "run_number=nnnn"`   where `nnnn` is the run number being searched for
-    - `samweb locate-file filename`   where filename is a decoded file
-- When the display initially opens no drawing objects will have been selected, in the display select "Raw Digit" in the right column to display waveforms.
+- Issue the command 'docker pull sfbaylaser/titus:latest'
+- This will pull the image into your docker space and save time when you go to start the image
+- Note that the image is large, about 9 GB, so can take a few minutes to download.
+
+Create a Data Folder On Your Local Machine and Download a Data File
+-------------------------------------------------------------------
+- Create a folder to contain data files that you download
+- See the information on the previous page for finding data files
+- If you have an FNAL computing account then you can copy the data file to your local machine
+
+Start the Event Display
+-----------------------
+- Once the image has been pulled and you have your data area set up you can start the container by issuing the command:
+-- docker run -i -t --rm -e DISPLAY=$DISPLAY -u docker -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /path/to/your/data/area:/data --name="rdev" sfbaylaser/titus /bin/bash
+- This will put you into a bash shell inside the image, from here you launch the display with:
+-- source setup_titus.sh
+-- evd.py -i /data/yourdatafile.root
+
+Notes:
+------
+- Note that the TITUS event display can only display "decoded" data files, it cannot display files in artdaq format. Be sure to download a decoded data file!
