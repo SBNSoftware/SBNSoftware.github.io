@@ -31,7 +31,7 @@ Process list:
 
 sample         | BNB neutrino (`v08_37_00`)
 -------------- | -----------------------------------------------------------------
-Author         | [Ryan Howell](mailto:rjhowell)
+Author         | @rhowell42
 `icaruscode`   | [`v08_37_00`](#v08_37_00)
 Generation     | `simulation_genie_icarus_bnb.fcl`
 Filtering      | _none_
@@ -69,7 +69,7 @@ None used so far.
 
 sample         | BNB neutrino (`v09_09_01`)
 -------------- | -----------------------------------------------------------------
-Authors        | Gianluca Petrillo, Ryan Howell
+Authors        | @PetrilloAtWork, @rhowell42
 `icaruscode`   | [`v09_09_01`](#v09_09_01) with custom branch
 Generation     | `prodbackground_Ar39_icarus.fcl`
 Filtering      | _none_
@@ -84,6 +84,7 @@ Data path      | `/pnfs/icarus/persistent/users/petrillo/data/trigger/20201112/v
 Information in wiki:
 
 * [geometry](../Detector_geometry.md)
+* [photon visibility map](../physics/PhotonLibrary.md)
 
 
 ### `v08_37_00`
