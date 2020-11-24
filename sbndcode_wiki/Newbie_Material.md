@@ -45,7 +45,7 @@ now).\
 Once your computer is ssh ready and kerberized, you should be able to
 log on by typing:\
 
-    kinit  [yourusername]@FNAL.GOV
+    kinit -f [yourusername]@FNAL.GOV
 
     ssh -Y [yourusername]@sbndgpvm01.fnal.gov
 
