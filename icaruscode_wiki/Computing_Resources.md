@@ -360,16 +360,17 @@ locally first.
 
 You should create your own directory under `/icarus/data/users/${USER}`
 and `/icarus/app/users/${USER}`, and stick to them.
-Space available to ICARUS collaboration:
+Space available to ICARUS collaboration (updated December 3, 2020):
 
-path              | space
------------------ | ----------
-`/icarus/app`     | 1.5 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
-`/icarus/data`    | ~~10 TB~~
-_same_            | 25 TB ([RITM0599944](https://fermi.service-now.com/nav_to.do?uri=sc_task.do?sys_id=c8b8489bdb384700cbd0f3421f961931))
+path              | space      | user quota 
+----------------- | ---------- | ---------- 
+`/icarus/app`     | 4.0 TB     | 100 GB     
+`/icarus/data`    | 25 TB      | 300 GB     
 
-This information can be read using `quota -s` or `df -h`.
-
+To check these limits: from any accessing node (e.g. GPVM),
+`df -h /icarus/{app,data}` returns the space allocated for the whole experiment,
+while `quota -s -f /icarus/app` (and `/icarus/data`) shows the per-user limit (column `limit`).
+Both areas have a per-user storage limit which can be found with `quota -s`.
 
 
 ### World-visible storage: dCache
