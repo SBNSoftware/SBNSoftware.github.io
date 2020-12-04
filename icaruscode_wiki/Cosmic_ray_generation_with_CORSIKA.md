@@ -114,7 +114,8 @@ A processing chain is described in `prodcorsika_proton_intime_icarus_bnb.fcl`.
 Relevant references
 --------------------
 
-* cosmic ray model, including the Constant Mass Composition:
-  Forti et al., _Simulation of atmospheric cascades and deep-underground muons_,
-  [Phys.Rev.D 42 (1990) 3668-3689](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.42.3668)
-* MicroBooNE collaboration, _Cosmic Shielding Studies at MicroBooNE_ (2016), [MICROBOONE-NOTE-1005-PUB](http://microboone.fnal.gov/wp-content/uploads/MICROBOONE-NOTE-1005-PUB.pdf)
+1. cosmic ray model, including the Constant Mass Composition:
+    Forti et al., _Simulation of atmospheric cascades and deep-underground muons_,
+    [Phys.Rev.D 42 (1990) 3668-3689](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.42.3668)
+2. MicroBooNE collaboration, _Cosmic Shielding Studies at MicroBooNE_ (2016),
+    [MICROBOONE-NOTE-1005-PUB](http://microboone.fnal.gov/wp-content/uploads/MICROBOONE-NOTE-1005-PUB.pdf)
