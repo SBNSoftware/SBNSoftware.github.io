@@ -26,7 +26,7 @@ Copy sbndcode and sbndutil to SciSoft
     version. (Like the `releases/` directory I usually keep the last 6
     builds).
 
--   Fetch results of Jenkins build using\
+-   Fetch results of Jenkins build using
 
         copyFromJenkins sbndcode-release-build
 
@@ -35,9 +35,9 @@ Copy sbndcode and sbndutil to SciSoft
 -   There should be one manifest for each binary flavour, and one
     tarball for each binary flavour of each ups product
 
--   Upload all files to scisoft\
+-   Upload all files to scisoft
 
-        copyToSciSoft *
+        copyToSciSoft --node scisoftgpvm01.fnal.gov *
 
 -   The script decides where to copy files based on name and type, the
     naming conventions from Jenkins should not be changed as they are
@@ -63,7 +63,7 @@ Copy sbnd\_data to SciSoft
 
 -   You should do the steps in this section from your personal account.
     Go to any scratch directory and make a tarball of the new sbnd\_data
-    version.\
+    version.
 
         cd < scratch >
         tar -cjf sbnd_data-< dot version >-noarch.tar.bz2 -C /grid/fermiapp/products/sbnd sbnd_data/< new version > sbnd_data/< new version >.version
@@ -73,13 +73,13 @@ Copy sbnd\_data to SciSoft
     tarball name should be the \"dot version\" (underscores replaced by
     periods, and no initial \"v\"), e.g. 01.02.00.
 
--   It is a good idea to check the contents of the generated tarball.\
+-   It is a good idea to check the contents of the generated tarball.
 
         tar -tf *.bz2
 
--   Next, upload the tarball to scisoft using script copyToSciSoft.\
+-   Next, upload the tarball to scisoft using script copyToSciSoft.
 
-        copyToSciSoft *.bz2
+        copyToSciSoft --node scisoftgpvm01.fnal.gov *.bz2
 
 -   If you need to replace an existing tarball, you first need to log in
     to scisoftportal.fnal.gov and delete the existing version from
