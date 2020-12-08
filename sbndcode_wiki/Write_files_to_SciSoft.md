@@ -38,7 +38,7 @@ Copy sbndcode and sbndutil to SciSoft
 
 -   Upload all files to scisoft
 
-        copyToSciSoft --node scisoftgpvm01.fnal.gov *
+        copyToSciSoft *
 
 -   The script decides where to copy files based on name and type, the
     naming conventions from Jenkins should not be changed as they are
@@ -80,7 +80,7 @@ Copy sbnd\_data to SciSoft
 
 -   Next, upload the tarball to scisoft using script copyToSciSoft.
 
-        copyToSciSoft --node scisoftgpvm01.fnal.gov *.bz2
+        copyToSciSoft *.bz2
 
 -   If you need to replace an existing tarball, you first need to log in
     to scisoftportal.fnal.gov and delete the existing version from
