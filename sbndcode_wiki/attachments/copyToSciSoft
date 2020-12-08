@@ -3,12 +3,13 @@
 # copy files to their proper directories
 # File types:
 # .txt - manifest
-# .bz2 - package tarball
+# .tar.bz2, .tar.gz, .tar.xz, .tar.zstd - package tarball
+# .sha256 package tarballs checksums
 # .html - release web page
 # pull*, build*, check* - release scripts
 # *buildcfg* - build configure scripts
 
-# the default copy is via scisoftportal.fnal.gov
+# the default copy is via scisoftgpvm01.fnal.gov
 # other options
 #  --node [username@]<some other machine>
 #  --local
@@ -32,7 +33,7 @@ my $debug=0;
 my $not_dry_run=1;
 my @filelist = ();
 my $iter = -1;
-my $machine = "scisoftportal.fnal.gov";
+my $machine = "scisoftgpvm01.fnal.gov";
 my $print_format_description=0;
 my $username;
 print_version();
@@ -68,21 +69,25 @@ if( $machine ) {
 }
 print "\n";
 
-foreach my $i ( 0 .. $#filelist ) {
-    $copyToSciSoft::fullname = $filelist[$i];
-    $copyToSciSoft::filename = basename($copyToSciSoft::fullname);
-    my @fileparts = split( /\./, $copyToSciSoft::filename );
-    my $ext = $fileparts[$#fileparts];
-    if ( $#fileparts == 0 ) { $ext = "none"; }
-    if( $debug ) { print "DEBUG: checking $copyToSciSoft::filename with extension $ext\n"; }
-    if ( $ext eq "bz2" ) { copy_tarball(); }
-    elsif ( $ext eq "gz" ) { copy_tarball(); }
-    elsif ( $ext eq "html" ) { copy_html(); }
-    elsif ( $ext eq "txt" ) { copy_manifest(); }
-    elsif ( index($copyToSciSoft::filename, "buildcfg") != -1 ) { copy_buildcfg(); }
-    elsif ( index($copyToSciSoft::filename, "-cfg") != -1 ) { copy_buildcfg(); }
-    elsif ( $ext eq "none" ) { copy_script(); }
-    else { print "$thisfile: ignoring $copyToSciSoft::filename\n"; }
+foreach my $file (@filelist) {
+  $copyToSciSoft::fullname = $file;
+  $copyToSciSoft::filename = basename($copyToSciSoft::fullname);
+  my @fileparts = split( /\./, $copyToSciSoft::filename );
+  my $ext = (pop @fileparts) || undef;
+  if( $debug ) { print "DEBUG: checking $copyToSciSoft::filename with extension $ext\n"; }
+  if (not $ext) {
+    copy_script();
+  } elsif ($ext =~ m&^t?(bz2|gz|xz|zstd|sha256)$&) {
+    copy_archive_data();
+  } elsif ($ext eq "txt") {
+    copy_manifest();
+  } elsif ($ext eq "html") {
+    copy_html();
+  } elsif ($copyToSciSoft::filename =~ m&\b(buildcfg|-cfg)\b&) {
+    copy_buildcfg();
+  } else {
+    print "$thisfile: ignoring $copyToSciSoft::filename\n";
+  }
 }
 
 if( $print_format_description ) { 
@@ -108,14 +113,14 @@ sub print_usage {
     print "      --local: use the local system's SciSoft mount for direct copy\n";
     print "      --node: override the default username and machine\n";
     print "              for example, --node cluck.fnal.gov\n";
-    print "                       or  --node username\@scisoftportal.fnal.gov\n";
+    print "                       or  --node username\@scisoftgpvm01.fnal.gov\n";
     print "      --user: override the default username \n";
     print "              for example, --user username\n";
     print_format();
 }
 
 sub print_version {
-  print "copyToSciSoft 1.04.02\n";
+  print "copyToSciSoft 1.06.00\n";
   print "\n";
 }
 
@@ -158,18 +163,21 @@ sub copy_to_scisoft {
     print "DEBUG: can read SciSoft directory \"$mountdir\"\n";
   }
   my $scidir = sprintf("$mountdir/%s", shift);
-  my (@dir_exists_cmd, @mkdir_cmd, @file_exists_cmd, @file_copy_cmd);
+  my (@dir_exists_cmd, @mkdir_cmd, @file_exists_cmd, @file_copy_cmd, $dest);
+  my $source = "$copyToSciSoft::fullname";
   if ( $machine ) {
+    $dest = "${machine}:${scidir}/";
     @dir_exists_cmd = ('ssh', '-K', $machine, "[[ -d \"$scidir\" ]]");
     @mkdir_cmd = ('ssh', '-K', $machine, "mkdir -p \"$scidir\"");
     @file_exists_cmd = ('ssh', '-K', $machine, "[[ -f \"$scidir/$copyToSciSoft::filename\" ]]");
     @file_copy_cmd = ('scp', '-o', 'GSSAPIDelegateCredentials yes',
-                      '-p', "$copyToSciSoft::fullname", "${machine}:${scidir}/");
+                      '-p', $debug ? () : "-q", "$source", "$dest");
   } else {
+    $dest = "${scidir}/";
     @dir_exists_cmd = ('test', '-d', $scidir);
     @mkdir_cmd = ('mkdir', '-p', $scidir);
     @file_exists_cmd = ('test', '-f', "$scidir/$copyToSciSoft::filename");
-    @file_copy_cmd = ('cp', '-p', "$copyToSciSoft::fullname", "$scidir/");
+    @file_copy_cmd = ('cp', '-p', "$source", "$dest");
   }
   if ($not_dry_run) {
     debug_print_cmd(@mkdir_cmd);
@@ -184,14 +192,17 @@ sub copy_to_scisoft {
     if (system(@file_exists_cmd) == 0) {
       print "$copyToSciSoft::filename is already on SciSoft\n";
     } else {
-      print cmd_string(@file_copy_cmd), "\n";
-          if ( system(@file_copy_cmd) ) {
+      $debug and print cmd_string(@file_copy_cmd), "\n";
+      print "$source -> $dest ... ", $debug ? "\n" : "";
+	    if ( system(@file_copy_cmd) ) {
         my $cmd_status = last_exit_status();
-	      print "copy failed with status ", $cmd_status, "\n";
-	            exit($cmd_status);
-		        } else {
-			      if ( $debug ) {
+	      print "FAILED with status ", $cmd_status, "\n";
+	      exit($cmd_status);
+	    } else {
+        if ($debug) {
           printf "DEBUG: copy exited with value %d\n", last_exit_status();
+        } else {
+          print "OK\n";
         }
 	    }
     }
@@ -212,8 +223,8 @@ sub copy_to_scisoft {
   }
 }
 
-sub copy_tarball {
-    if( $debug ) { print "DEBUG: copy_tarball $copyToSciSoft::filename\n"; }
+sub copy_archive_data {
+    if( $debug ) { print "DEBUG: copy_archive_data $copyToSciSoft::filename\n"; }
     my @tparts = split( /\-/, $copyToSciSoft::filename );
     my $product=$tparts[0];
     my $dotver=$tparts[1];
@@ -304,70 +315,70 @@ sub copy_script {
     my $script=$parts[0];
     my $version=$parts[1];
     if ( $copyToSciSoft::filename eq "pullProducts" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $scisoftdir="bundles/tools";
-		         copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $scisoftdir="bundles/tools";
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $copyToSciSoft::filename eq "buildFW" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $scisoftdir="bundles/tools";
-		         copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $scisoftdir="bundles/tools";
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $copyToSciSoft::filename eq "copyToSciSoft" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $scisoftdir="bundles/tools";
-		         copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $scisoftdir="bundles/tools";
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $copyToSciSoft::filename eq "copyFromJenkins" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $scisoftdir="bundles/tools";
-		         copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $scisoftdir="bundles/tools";
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $copyToSciSoft::filename eq "getManifestList" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $scisoftdir="bundles/tools";
-		         copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $scisoftdir="bundles/tools";
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "pullProducts" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
-	      	    my $project="art";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::fullname script\n"; }
+		  my $project="art";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "pullArtDaq" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="artdaq";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="artdaq";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "pullProductsLAr" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="larsoft";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="larsoft";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "pullToyExp" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="tutorial";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="tutorial";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "buildFW" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="art";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="art";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "buildArtDaq" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="artdaq";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="artdaq";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "buildLAr" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="larsoft";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="larsoft";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "buildToyExp" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="tutorial";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="tutorial";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( $script eq "checkPrerequisites" ) { 
-              if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
-	      	    my $project="art";
-		         my $scisoftdir="bundles/$project/".$version;
-			      copy_to_scisoft( $scisoftdir );
+	          if( $debug ) { print "DEBUG: copy $copyToSciSoft::filename script\n"; }
+		  my $project="art";
+		  my $scisoftdir="bundles/$project/".$version;
+		  copy_to_scisoft( $scisoftdir );
     } elsif ( index( $script, 'pull' ) == 0 ) { 
                   print "$thisfile: ignoring $copyToSciSoft::filename script\n";
     } elsif ( index( $script, 'build' ) == 0 ) { 
