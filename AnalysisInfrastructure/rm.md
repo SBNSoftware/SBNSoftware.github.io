@@ -1,3 +1,5 @@
 # Release Management
 
-test
+## Instructions for Building/Releasing `sbncode`
+
+1.  
