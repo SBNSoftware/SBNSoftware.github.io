@@ -26,6 +26,8 @@ Purpose
 New features
 ---------------------------------------------------
 
+* c7 builds available on CVMFS from here.
+
 Bug fixes(Bug-fixes)
 ---------------------------------------------------
 
