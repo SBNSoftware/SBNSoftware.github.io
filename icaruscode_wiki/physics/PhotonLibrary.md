@@ -276,6 +276,7 @@ Past campaigns
 | ---------- | ------------ | ------------------------- | ---------------------------- | ------------------------------------------------------- |
 | `20200816` | `v08_62_01`* | `icarus_data` `v09_01_00` | `PhotonLibrary20200816.root` | updated refraction index and Rayleigh scattering length |
 | `20200925` | `v09_04_01`* | `icarus_data` `v09_06_00` | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
+| `20201209` | `v09_10_01`  | `icarus_data` `v09_??_??` | `PhotonLibrary20201209.root` | opaque photodetectors                                   |
 
 Campaigns with software versions marked with "*" had custom modifications.
 This is not so uncommon, since issues arise on top of the releases.
@@ -319,6 +320,19 @@ The settings used for this campaign have been integrated in `icaruscode` `v09_07
 
 Note that the interaction between `project.py` and dCache was again affected by severe slowdown
 and critical failures, which made bookkeeping harder.
+
+
+### 20201209
+
+The December 2020 campaign was a rerunning of the [September 2020 campaign](#20200925),
+set with the same 1'000'000 photons in each (5 cm)^3^ voxel, and 74 x 77 x 394 voxels.
+It thereby uses the same physics configuration as that previous campaign,
+but the settings this time were already present in `icaruscode` `v09_10_01` release.
+The amount of voxels per job was reduced with respect to the previosu campaign,
+and a two-step strategy was attempted where a job would be scheduled for 2 days,
+and if that fails automatically resubmitted with 3.5 days.
+Due to the age of some of the working nodes, a handful of jobs managed to fail the 3.5 day limit,
+but no job failed it twice (after manual resubmission).
 
 
 Questions and answers
