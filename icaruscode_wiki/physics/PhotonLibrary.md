@@ -197,7 +197,8 @@ The input file can be expressed in XRootD paths (which I believe is recommended)
 or as UNIX paths. Additional information is requested, like a tag for the photon
 library version and the software version used to process it.
 The script name is `MergePhotonLibrary.C`: it is a ROOT macro and it is documented
-inline in Doxygen format.
+inline in Doxygen format. It is currently distributed with `icaruscode` as a "executable"
+(`${ICARUSCODE_FQ_DIR}/bin/MergePhotonLibrary.C`).
 Note that this can take *long*, and part of the processing is in ROOT's hands,
 and ROOT does not provide progress feedback (a real life case tool 15 minutes
 for that part alone). The script will report any missing voxel. A voxel is missing
@@ -215,6 +216,9 @@ The `0 blocks at least 10 voxel big` suggests that there is no missing file,
 in which case there would be large blocks missing (e.g. 1850 voxels in a row).
 The 5982 missing voxels are isolated (in as many "blocks"), and it can then be
 presumed that  of the "blind" type.
+An additional recommended step is to have ROOT "recompress" the library,
+which may gain 5-10% of disk space.
+A ROOT script, `RecompressROOTtrees.C`, is distributed for that purpose.
 
 
 ### Command sequence
@@ -265,6 +269,7 @@ presumed that  of the "blind" type.
         root -l -q 'RecompressROOTtrees.C("PhotonLibrary-20200816-large.root", "PhotonLib-20200816.root", 8, ROOT::kLZMA)'
         
     This procedure reduced the 20200925 library from 256 MB to 242 MB: quite small gain, but those few seconds less on each checkout, each run, each job, may be welcome bits.
+    The ROOT scripts are distributed with `icaruscode` (`${ICARUSCODE_FQ_DIR}/bin`).
     
 Photon library file `PhotonLibrary-20200816.root` is now ready for physics tests!
 
