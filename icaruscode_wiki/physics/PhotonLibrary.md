@@ -223,6 +223,8 @@ A ROOT script, `RecompressROOTtrees.C`, is distributed for that purpose.
 
 ### Command sequence
 
+> The names and tags in these commands are the ones used for the August 2020 production.
+
 1. set up a working area with the chosen `icaruscode` version and [get a grid certificate proxy](../Get_a_certificate_proxy.md):
        
        source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
@@ -281,11 +283,13 @@ Past campaigns
 | ---------- | ------------ | ------------------------- | ---------------------------- | ------------------------------------------------------- |
 | `20200816` | `v08_62_01`* | `icarus_data` `v09_01_00` | `PhotonLibrary20200816.root` | updated refraction index and Rayleigh scattering length |
 | `20200925` | `v09_04_01`* | `icarus_data` `v09_06_00` | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
-| `20201209` | `v09_10_01`  | `icarus_data` `v09_??_??` | `PhotonLibrary20201209.root` | opaque photodetectors                                   |
+| `20201209` | `v09_10_01`  | `icarus_data` `v09_11_00` | `PhotonLibrary20201209.root` | opaque photodetectors                                   |
 
 Campaigns with software versions marked with "*" had custom modifications.
 This is not so uncommon, since issues arise on top of the releases.
 Also not uncommon it is that the custom modifications are then added to the next release.
+
+Unless otherwise noted, the changes from one campaign to the next are incremental.
 
 
 ### 20200816
