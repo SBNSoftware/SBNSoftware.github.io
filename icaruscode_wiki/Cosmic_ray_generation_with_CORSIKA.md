@@ -40,7 +40,7 @@ which only simulates proton primaries.
 | exposure time                       | 2.9 ms                                                                 | `SampleTime`          | `v08_55_02` |
 | time offset                         | -1.5 ms                                                                | `TimeOffset`          | `v08_55_02` | on [simulation time scale](Software_parameters_and_settings.html#Timing-overview)       |
 | shower area extension               | 10 m                                                                   | `ShowerAreaExtension` | `v08_19_01` | additional on each side of the cryostats                                                        |
-| shower position shift               | 10 m (*x* and *z*)                                                     | `RandomXYShift`       | `v08_19_01` |
+| shower position shift               | 10 m (*x* and *z*)                                                     | `RandomXZShift`       | `v08_19_01` |
 | shower particle entrance            | +18 m (*y*)                                                            | `ProjectToHeight`     | `v08_19_01` | in LArSoft "world" coordinates                                                                  |
 | additional space around cryostats   | 5 m (*x*), 3 m (*y*), 6 m (*z*)                                        | `BufferBox`           | `v08_19_01` |
 
