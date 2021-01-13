@@ -8,6 +8,11 @@ toc: true
 toc_title: SBNDAQ Contents
 ---
 
+
+Configuration DB Instructions
+======================================
+[See here for instructions on working with the configuration database](ConfigDB)
+
 JULY 21 2020: GITHUB MIGRATION
 ======================================
 We are officially switching over to using the Github hosted repositories as our central repo.
