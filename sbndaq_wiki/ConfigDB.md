@@ -48,7 +48,7 @@ From the top level of your working area (that you made in step 2), you should "i
  
  Note that it should start lowercase, with upper-case letters for starts of new words. If the configuration name must end in a number, add a hyphen as the last part of the config name (so, `testConfigThreshold200-`).
  
-##Additional operations
+## Additional operations
 
 There is a concept of marking configurations as _active_ and _inactive_ -- _inactive_ configurations will not be displayed in the RC GUI and cannot be run. Typically we want to label any configuration that should not longer be used as _inactive_: configurations that are outdated, or no longer valid, or just no longer needed.
 
