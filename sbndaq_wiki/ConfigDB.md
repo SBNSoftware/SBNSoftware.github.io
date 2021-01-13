@@ -6,7 +6,9 @@ hero_height: is-small
 
 Some useful resource for instructions is located on the [artdaq wiki conftool.py instruction page](https://cdcvs.fnal.gov/redmine/projects/artdaq-utilities/wiki/Artdaq-config-conftool).
 
-##Basic operations
+Useful note: `conftool.py` commands have tab completion, and you can even tab complete configuration names in the conftool.py functions. 
+
+## Basic operations
 
 As a basic description, here's a step-by-step guide for making a new configuration:
 
