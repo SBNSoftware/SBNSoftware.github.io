@@ -43,23 +43,25 @@ You will receive an email once this is complete which gives you your
 Fermilab email account and username (you will need this for service
 now).\
 Once your computer is ssh ready and kerberized, you should be able to
-log on by typing:\
+log on by typing:
 
-    kinit -f [yourusername]@FNAL.GOV
-
-    ssh -Y [yourusername]@sbndgpvm01.fnal.gov
+```shell
+kinit -f [yourusername]@FNAL.GOV
+ssh -Y [yourusername]@sbndgpvm01.fnal.gov
+```
 
 Note that you need to have the right configurations, add the following
-to your machine\'s `~/.ssh/config`\
+to your machine\'s `~/.ssh/config`
 
-    Host *.fnal.gov
-      ForwardAgent yes
-      ForwardX11 yes
-      ForwardX11Trusted yes
-      GSSAPIAuthentication yes
-      GSSAPIDelegateCredentials yes
+```shell
+Host *.fnal.gov
+  ForwardAgent yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  GSSAPIAuthentication yes
+  GSSAPIDelegateCredentials yes
+```
 
-\
 Create the file if it\'s not there. In some systems you might need to
 reload the ssh agent. You also want to have this file in the gpvm
 machine.
@@ -229,14 +231,15 @@ Here is a few places to look at more information about Art and LArsoft.
     but instead of mrb g sbndcode do mrs g larexamples . You can
     download the package with these steps:
 
+```shell
+mrb g sbndcode 
+```
+Do
+```shell
+mrb g larexamples 
+```
 
-     mrb g sbndcode 
-
-Do\
-
-     mrb g larexamples 
-
-The g is short for gitCheckout.
+The `g` is short for gitCheckout.
 
 -   The mrb reference guide:
     <https://cdcvs.fnal.gov/redmine/projects/mrb/wiki/MrbRefereceGuide>
@@ -254,13 +257,12 @@ The g is short for gitCheckout.
 
 There are a multitude of resources for c++. There are several books. The
 one I learnt form was [Accelerated
-C++](http://irpp.org/wp-content/uploads/sites/2/2014/04/Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C++.pdf){.external}
-.
+C++](http://irpp.org/wp-content/uploads/sites/2/2014/04/Andrew-Koening-and-Barbara-E.-Moo-Accelerated-C++.pdf)
 
 For online resources [Stack
-Exchange](https://stackoverflow.com/questions/tagged/c%2B%2B){.external}
+Exchange](https://stackoverflow.com/questions/tagged/c%2B%2B)
 is useful so is
-[cppreference](http://en.cppreference.com/w/cpp/container/vector){.external}.
+[cppreference](http://en.cppreference.com/w/cpp/container/vector).
 If you have a good c++ tutorial/documentation add it to the list!
 
 -   Accelerated C++:
@@ -330,9 +332,10 @@ code)](Working_on_a_feature_branch_(to_easily_share_code).html).
 **Pro Tip:** Log into a gpvm node and do the following commands to setup
 your git account:
 
-    git config --global user.name "Name Lastname" 
-    git config --global user.email "user@fnal.gov" 
-
+```shell
+git config --global user.name "Name Lastname" 
+git config --global user.email "user@fnal.gov" 
+```
 With this you will have your commits signed by you and listed neatly on
 your Redmine account. You CAN list another email other than your FNAL
 one, but you need to change it accordingly on your [Redmine
