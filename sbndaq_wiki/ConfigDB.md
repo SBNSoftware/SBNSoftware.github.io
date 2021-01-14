@@ -12,15 +12,15 @@ Useful note: `conftool.py` commands have tab completion, and you can even tab co
 
 As a basic description, here's a step-by-step guide for making a new configuration:
 
-1. Setup database software
+(1) Setup database software
 
 `source /daq/software/database/setup_database.sh`
  
-2. Makes/move yourself into a clean work directory. There's a special function setup for that:
+(2) Makes/move yourself into a clean work directory. There's a special function setup for that:
 
 `configdb_make_work_dir`
 
-3. Pull down the a configuration to start from.
+(3) Pull down the a configuration to start from.
 
 To see the full list of configurations, you can do
 
@@ -32,7 +32,7 @@ Then, find one that you want to use as a base (generally recent working ones). N
 
 Note "export" means you are exporting _from_ the configuration database _to_ your local area.
  
-4. Make your changes.
+(4) Make your changes.
 
 The previous command will setup a directory that has the configuration files in them. Modify what you would like there. There are a few things to note:
  * The run control will list/automatically select the components you include in your FCL files here (assuming they are also in the `known_boardreaders_list`). It's best to include only the components that are needed for your configuration here. It is always possible to remove components from the RC GUI, but it is not possible to add new ones if they are not part of the configuration.
@@ -40,7 +40,7 @@ The previous command will setup a directory that has the configuration files in 
  * You may pull in configurations from other locations/other exported configs, as needed, but please make sure when you do the import of the final configuration that there is only one folder located in your working area, otherwise there will be the potential for cross-configurations.
  
 
-5. Import your configuration back to the database
+(5) Import your configuration back to the database
 
 From the top level of your working area (that you made in step 2), you should "import" _into_ the configuration database from your working area the configuration. When doing so, you should assign a name to the config -- the configuration DB will automatically append a version number to the name you give (picking 00001 for a new config, or incrementing from the previous if this is the same prefix name)
 
