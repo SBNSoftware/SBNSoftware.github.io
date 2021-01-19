@@ -59,7 +59,9 @@ Content of the packages
 Monte Carlo productions
 ------------------------
 
-* [samples used for trigger simulation](samples/trigger_simulation.md)
+* [samples from SBN production group](samples/SBNproduction.md)
+* notes from specific projects:
+    * [samples used for trigger simulation](samples/trigger_simulation.md)
 
 Useful Tidbits of information.
 ------------------------------
