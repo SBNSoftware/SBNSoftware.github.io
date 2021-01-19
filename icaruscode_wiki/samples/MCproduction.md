@@ -2,6 +2,8 @@
 layout: page
 title: ICARUS simulation samples
 description: ICARUS simulation samples
+toc: true
+
 ---
 
 List of simulated samples
