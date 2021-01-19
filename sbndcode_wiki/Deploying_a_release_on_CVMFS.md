@@ -3,6 +3,7 @@ layout: page
 title: Deploying a release on CVMFS
 ---
 
+[Return to Release Management Workflow](https://sbnsoftware.github.io/sbndcode_wiki/Release_management_workflow.html)
 
 
 Deploying a release on CVMFS
