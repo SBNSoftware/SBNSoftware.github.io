@@ -49,6 +49,30 @@ regular LArSoft analysis modules can be used and run here.
 - Next a new ROOT macro will be needed in `sbnci/sbnci/PlottingScripts`. The file *sbnciplot_showervalidation.C* can be used as an example, the structure of the 
 file should match with the ROOT plots saved inside gDirectories. The output file should always have the name `ci_validation_histos.root` for the comparison 
 script to work.  The validation output files from different CI modules are all kept in separate directories so they won’t get confused.
-- Lastly a new bash script should be created inside the `sbnci/sbnci/scripts` to drive the validation steps. 
+- Lastly a new bash script should be created inside the `sbnci/sbnci/scripts` to drive the validation steps. The script `showervalidation.sh` can be used as
+an example for this. It should provide `sbnciplots.sh` with the desired Root macro from `sbnci/sbnci/PlottingScripts` and the input file which is passed into `showervalidation.sh` as the first argument, this is set in the `lar_ci` config file.
 
+### Updates to *lar_ci*
 
+- The change required in the *lar_ci* package is to create a new config file for the new validation workflow, this should be located inside `lar_ci/cfg`. 
+A good example to use here is `grid_workflow_sbnd_mc_shower.cfg`. 
+- The main edits required here are to change the name set in *validation_process* on L8 and the *validation_tag* set on L9, then to change the script and input filename set in *validation_function1* on L11. The input filename should match the output of the *[mergeana]* section starting on L43.
+- The number of jobs and events to run for the validation is set in *njobs_phase_1* on L4 and *nevents_per_job_phase_1* on L5.
+- The reference version to use for the comparisons is set in *ci_extra_vars_1* on L12, with the location of the reference files set in *ci_extra_vars_2* on L13.
+- The desired simulation chain can be set in the *[sim]* and *[reco]* sections starting on L19 and L30 respectively. The *[reco]* section should also include the fcl to be used to run the analysis module (e.g. `TRACSValidation.fcl`).
+
+## Running the CI Validation
+
+The CI validation can be triggered using the following command (this is for the shower validation workflow):
+
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --jobname sbnd_ci`
+
+To run tests using a feature branch of *lar_ci* (e.g. `feature/ascarff_sbndCiUpdate` here) use:
+
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --version feature/ascarff_sbndCiUpdate --jobname sbnd_ci`
+
+And to include any other feature branches or specific versions us the `--revisions` option, e.g.:
+
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --version feature/ascarff_sbndCiUpdate --jobname sbnd_ci --revisions "SBNSoftware/sbncode@v09_10_01"`
+
+For more info check out the [lar_ci wiki](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki).
