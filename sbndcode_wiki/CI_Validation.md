@@ -63,7 +63,11 @@ A good example to use here is `grid_workflow_sbnd_mc_shower.cfg`.
 
 ## Running the CI Validation
 
-The CI validation can be triggered using the following command (this is for the shower validation workflow):
+Before triggering any CI tests you need to get the right certificates. To get these use these commands:
+
+`setup lar_ci;kx509;voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'`
+
+The CI validation can then be triggered using the following command (this is for the shower validation workflow):
 
 `trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --jobname sbnd_ci`
 
