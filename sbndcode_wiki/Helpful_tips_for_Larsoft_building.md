@@ -12,7 +12,7 @@ This is a combine list of things you might find useful when using
 LArsoft. The examples are taken from other Redmine LArsoft sites:
 
 1.  LArsoft: [Quick-start Guide to using and developing LArsoft
-    code](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Quick-start_guide_to_using_and_developing_LArSoft_code_){.external}
+    code](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/_Quick-start_guide_to_using_and_developing_LArSoft_code_)
 
 for more please see them. Please add to the list as well!
 
@@ -96,7 +96,7 @@ Useful Info dumpers
 I can never find the correct one to run so I put them here as well.
 
 More info can be found
-[here](https://cdcvs.fnal.gov/redmine/projects/art/wiki){.external}
+[here](https://cdcvs.fnal.gov/redmine/projects/art/wiki)
 
 
 

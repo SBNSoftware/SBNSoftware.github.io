@@ -30,7 +30,7 @@ The status monitor is at:
 SBND support group in ServiceNow
 ------------------------------------------------------------------------------------
 
-[ServiceNow](https://fermi.service-now.com){.external} is the corporate
+[ServiceNow](https://fermi.service-now.com) is the corporate
 tool Fermilab Computing Division uses to keep track of and organise the
 \"service\" work. We SBND users interact with it by [opening
 tickets](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk)
@@ -48,13 +48,13 @@ forward the request to the appropriate SBND experts, to ensure that
 there is progress toward a resolution and to keep the ticket and its
 submitters updated.\
 The [current members of SBND support
-group](https://fermi.service-now.com/nav_to.do?uri=%2Fsys_user_group.do%3Fsys_id%3Dfe75d721db50db44a21c7c031f961956){.external}
+group](https://fermi.service-now.com/nav_to.do?uri=%2Fsys_user_group.do%3Fsys_id%3Dfe75d721db50db44a21c7c031f961956)
 can be seen from ServiceNow (search for \"SBND support\" among \"people
 and places\"). To have new people added to the support group, a request
 must be opened with a [ServiceNOW
 ticket](Computing_resources.html#Opening-a-ticket-in-Fermilab-Service-Desk)
 (instructions at [knowledge base item
-\#0010719](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010719){.external}).
+\#0010719](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010719)).
 
 ------------------------------------------------------------------------
 

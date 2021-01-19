@@ -156,7 +156,7 @@ complication.
 ### Using a VNC connection to view windows
 
 A good wiki page on how to setup for a VNC connection can be found at:
--   [Viewing events remotely with VNC](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Viewing_events_remotely_with_VNC "by Dom Brailsford"){.external}
+-   [Viewing events remotely with VNC](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Viewing_events_remotely_with_VNC "by Dom Brailsford")
 
 Note those instructions are valid if you are opening an ssh connection from an OSX laptop/computer. If you are connecting via a laptop/computer running a different operating system (e.g. linux) then you will need to use a remote desktop program supported by that operating system. For example, on ubuntu one can use Remmina.
 

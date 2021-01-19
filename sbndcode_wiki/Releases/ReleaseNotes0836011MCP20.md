@@ -26,7 +26,7 @@ sbndcode v08\_36\_01\_1\_MCP2\_0 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_36\_01\_1\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_1_MCP2_0/sbndcode-v08_36_01_1_MCP2_0.html){.external}
+v08\_36\_01\_1\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_1_MCP2_0/sbndcode-v08_36_01_1_MCP2_0.html)
 
 
 
@@ -41,7 +41,7 @@ New features
 --------------------------------------------
 
 -   [Geometry
-    v01\_04](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=15540&filename=2019_11_20_PATMeeting_Geometry_v01_04.pdf){.external}
+    v01\_04](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=15540&filename=2019_11_20_PATMeeting_Geometry_v01_04.pdf)
     -   Add more ARAPUCAs
     -   Add field cage
     -   Remove light guide bars

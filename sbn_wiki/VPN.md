@@ -47,7 +47,7 @@ or by a software application.
 
 Currently one way to get get started is:
 
-1.  First you need to get a token by opening a ticket [RSA Token Request form](https://fermi.servicenowservices.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401){.external}
+1.  First you need to get a token by opening a ticket [RSA Token Request form](https://fermi.servicenowservices.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401)
     (takes a while and both hard and soft tokens are limited)
 2.  [Set it up](https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011426)
 3.  [Use it](https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0013046)

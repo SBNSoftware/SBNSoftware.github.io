@@ -13,7 +13,7 @@ The SBND Guide to using LArSoft
 > DISCLAIMER: There is a lot of material that constantly befalls out of
 > date. Remember that problems that are unknown don\'t fix by
 > themselves: got a problem? write an e-mail **and** [open a ticket
-> here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues/new){.external}
+> here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues/new)
 > (you need to be logged in to Redmine).
 
 The following is a quick guide (based largely on MicroBooNE experience)

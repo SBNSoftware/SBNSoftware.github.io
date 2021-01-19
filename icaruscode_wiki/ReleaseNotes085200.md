@@ -26,7 +26,7 @@ icaruscode v08\_52\_00 Release Notes
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
-v08\_52\_00](http://scisoft.fnal.gov/scisoft/bundles/icaruscode/v08_52_00/icaruscode-v08_52_00.html){.external}
+v08\_52\_00](http://scisoft.fnal.gov/scisoft/bundles/icaruscode/v08_52_00/icaruscode-v08_52_00.html)
 
 
 

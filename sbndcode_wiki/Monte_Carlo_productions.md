@@ -10,7 +10,7 @@ Monte Carlo productions
 
 
 
-### The Monte Carlo Production has moved home. You can find the mcc samples [here](https://sbnd-data.fnal.gov/index.html){.external}. You will need a vpn to access it.
+### The Monte Carlo Production has moved home. You can find the mcc samples [here](https://sbnd-data.fnal.gov/index.html). You will need a vpn to access it.
 
 ### Current production manager
 

@@ -26,7 +26,7 @@ sbndcode v06\_48\_00\_MCC Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_48\_00\_MCC](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_48_00_MCC/sbndcode-v06_48_00_MCC.html){.external}
+v06\_48\_00\_MCC](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_48_00_MCC/sbndcode-v06_48_00_MCC.html)
 
 
 

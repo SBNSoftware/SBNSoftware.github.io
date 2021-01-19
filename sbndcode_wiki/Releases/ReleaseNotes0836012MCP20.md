@@ -26,7 +26,7 @@ sbndcode v08\_36\_01\_2\_MCP2\_0 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_36\_01\_2\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_2_MCP2_0/sbndcode-v08_36_01_2_MCP2_0.html){.external}
+v08\_36\_01\_2\_MCP2\_0](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_01_2_MCP2_0/sbndcode-v08_36_01_2_MCP2_0.html)
 
 
 

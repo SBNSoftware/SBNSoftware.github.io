@@ -26,7 +26,7 @@ sbndcode v08\_27\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_27\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_27_00/sbndcode-v08_27_00.html){.external}
+v08\_27\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_27_00/sbndcode-v08_27_00.html)
 
 
 
@@ -41,11 +41,11 @@ New features
 --------------------------------------------
 
 -   BREAKING CHANGE: Geant 4 interfaces split out of nutools into
-    [nug4](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Breaking_Changes#nutools-v3_02_00){.external}.
+    [nug4](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Breaking_Changes#nutools-v3_02_00).
 -   Cosmic ID tools
     -   Suite of cosmic ID algorithms for use in analysis code.
     -   See [DocDB:
-        13945](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=13945&filename=CosmicRemoval.pdf&version=1){.external}
+        13945](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=13945&filename=CosmicRemoval.pdf&version=1)
         for more information.
 
 
@@ -59,7 +59,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.27.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082700){.external}
+    v08.27.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082700)
 -   larbatch v01\_51\_05
 
 

@@ -14,9 +14,9 @@ and works on the grid. The second provides a list of file from which you
 can run over. Before we get into accessing the file there is a few
 things to point out first. If you want more information about sam go to
 the [SAM Redmine
-Page](https://cdcvs.fnal.gov/redmine/projects/sam/wiki/User_Guide_for_SAM){.external}
+Page](https://cdcvs.fnal.gov/redmine/projects/sam/wiki/User_Guide_for_SAM)
 or the [MicroBooNE SAM
-Page](https://cdcvs.fnal.gov/redmine/projects/uboonecode/wiki/Sam){.external}\".
+Page](https://cdcvs.fnal.gov/redmine/projects/uboonecode/wiki/Sam)\".
 There is plenty of useful information here if what below is not helpful.
 
 
@@ -101,9 +101,9 @@ be named with the following scheme:
 production\_\[production.type\]\_\[production.name\]\_\[file\_type\]\_\[project.name\]\_\[project.stage\].
 The production name will be the Monte Carlo production name. You can
 find details of the [Monte Carlo
-Website](https://sbnd-data.fnal.gov){.external} (Remember to be
+Website](https://sbnd-data.fnal.gov) (Remember to be
 connected via
-[VPN](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/VPN){.external}\"
+[VPN](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/VPN)\"
 to use it). You can create your own definitions and delete existing
 ones. You can run samweb help to see the list of options.
 
@@ -199,7 +199,7 @@ Once you have a definition that you want to use and you have prestaged
 the files you are ready to run. One way to use the files is via
 project.py and send the job to the grid. If you don\'t know what
 project.py is look at our [redmine
-page](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Using_projectpy_for_grid_jobs){.external}
+page](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Using_projectpy_for_grid_jobs)
 to begin with. Now, quite nicely for us project.py does all the heavy
 lifting when it comes to using SAM. All we need to do is add a line
 telling project.py what definition to use:

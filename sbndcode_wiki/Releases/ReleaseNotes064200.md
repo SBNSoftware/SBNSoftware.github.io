@@ -26,7 +26,7 @@ sbndcode v06\_42\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_42\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_42_00/sbndcode-v06_42_00.html){.external}
+v06\_42\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_42_00/sbndcode-v06_42_00.html)
 
 
 
@@ -42,7 +42,7 @@ New features
 
 \*No changes to sbndcode or sbndutil, for LArSoft changes see the
 [Release
-notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064200){.external}
+notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064200)
 
 
 

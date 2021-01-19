@@ -27,12 +27,12 @@ Instructions
 -   Log on to the Jenkins server.
     -   You either need to be on the internal `fgz` network or the
         [Fermilab
-        VPN](https://fermi.service-now.com/kb_view.do?sysparm_article=KB0560){.external}
+        VPN](https://fermi.service-now.com/kb_view.do?sysparm_article=KB0560)
     -   You now need an [RSA
-        token](https://fermi.service-now.com/kb_view.do?sysparm_article=KB0011463){.external}
+        token](https://fermi.service-now.com/kb_view.do?sysparm_article=KB0011463)
         to access the VPN.
     -   You will also need a [CILogon
-        certificate](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Setting_up_access_with_CILogon_certificate){.external}
+        certificate](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Setting_up_access_with_CILogon_certificate)
         loaded in your browser.
     -   Go to
         <https://buildmaster.fnal.gov/buildmaster/job/sbndcode-release-build/>
@@ -82,7 +82,7 @@ Build configuration
     configuration matrix can be modified by checking the relevant labels
     under the `Configuration Matrix` tab.
 -   Most experiments keep their Jenkins build scripts on
-    [larutils](https://cdcvs.fnal.gov/redmine/projects/larutils/repository/revisions/develop/show/buildScripts){.external}
+    [larutils](https://cdcvs.fnal.gov/redmine/projects/larutils/repository/revisions/develop/show/buildScripts)
     and just call it from the command section of the `Build`
     configuration tab.
 -   I\'m lazy and couldn\'t be bothered to request to push to `larutils`

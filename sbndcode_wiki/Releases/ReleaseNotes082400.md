@@ -26,7 +26,7 @@ sbndcode v08\_24\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_24\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_24_00/sbndcode-v08_24_00.html){.external}
+v08\_24\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_24_00/sbndcode-v08_24_00.html)
 
 
 
@@ -51,7 +51,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.24.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082400){.external}
+    v08.24.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes082400)
 -   art\_root\_io v1\_00\_07 (s86), no explicit dependence
 
 

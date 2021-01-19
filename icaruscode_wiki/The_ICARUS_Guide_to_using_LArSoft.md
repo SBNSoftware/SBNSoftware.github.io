@@ -19,7 +19,7 @@ The ICARUS Guide to using LArSoft
 > at times. As well, remember that unknown problems don\'t materialize
 > solutions out of the ether: if you have a problem? write an e-mail
 > **and** [open a ticket
-> here](https://cdcvs.fnal.gov/redmine/projects/icaruscode/issues/new){.external}
+> here](https://cdcvs.fnal.gov/redmine/projects/icaruscode/issues/new)
 > (you need to be logged in to Redmine).
 
 The following is a quick guide (based largely on MicroBooNE experience

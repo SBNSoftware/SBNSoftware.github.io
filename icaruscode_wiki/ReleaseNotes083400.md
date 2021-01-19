@@ -26,7 +26,7 @@ icaruscode v08\_34\_00 Release Notes
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
-v08\_34\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_34_00/icaruscode-v08_34_00.html){.external}
+v08\_34\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_34_00/icaruscode-v08_34_00.html)
 
 
 
@@ -56,7 +56,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.34.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083400){.external}
+    v08.34.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083400)
 
 
 

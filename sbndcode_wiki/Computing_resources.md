@@ -63,7 +63,7 @@ Here we list some of them.
 > pamphlet]{style="color: red;"}** explaining in a nutshell the
 > different credentials used in Fermilab. It can be found as [document
 > 5892 in the SCD
-> DocDB](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=5892){.external}.
+> DocDB](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=5892).
 > **It is a strongly recommended reading, to everybody!**
 
 
@@ -120,7 +120,7 @@ ticket] to
 request a SBND project account (I believe someone has to authorise this
 so it will probably fail):
 
-1.  [ServiceNow](https://fermi.service-now.com/fsc/){.external} -\>
+1.  [ServiceNow](https://fermi.service-now.com/fsc/) -\>
     Service Catalog -\> Affiliation/Experiment Computing Account Request
 2.  Enter your name, then select `T-1053 (SBND)`
 3.  Verify that the correct Fermilab principal is displayed when you
@@ -190,10 +190,10 @@ You don\'t open a service desk ticket if your jobs crash (most of the
 time, you just have to fix them), if there is a bug in SBND code
 ([e-mail to SBND mailing list](mailto:sbnd-software@fnal.gov) and/or
 [Redmine
-ticket](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues/new){.external}
+ticket](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues/new)
 there) or if you need help with using LArSoft (LArSoft
 [wiki](.html), [mailing list](mailto:larsoft@fnal.gov) or
-[forum](http://www.larforum.org/forum){.external}, and [SBND mailing
+[forum](http://www.larforum.org/forum), and [SBND mailing
 list](mailto:sbnd-software@fnal.gov)).
 
 You need to log in via Fermilab \"Service\" password (the same you use
@@ -210,7 +210,7 @@ with a relevant exception in the creation of computing accounts, which
 is in \"Core Computing Services\".
 
 > This ticket is completely unrelated to [issue tracking
-> tickets](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues){.external},
+> tickets](https://cdcvs.fnal.gov/redmine/projects/sbndcode/issues),
 > opened via Redmine, against LArSoft or `sbndcode` pertaining LArSoft
 > or SBND software bug reports or feature requests.
 
@@ -228,9 +228,9 @@ After you [get a CILogon
 certificate](Setting_up_access_with_CILogon_certificate.html),
 you will gain access to:
 
--   [SBN DocDB](http://sbn-docdb.fnal.gov){.external}
+-   [SBN DocDB](http://sbn-docdb.fnal.gov)
 -   [Fermilab Virtual Organization (VOMS)
-    server](https://voms.fnal.gov:8443/voms/fermilab/user/home.action){.external}
+    server](https://voms.fnal.gov:8443/voms/fermilab/user/home.action)
 -   Jenkins build server
 
 
@@ -454,7 +454,7 @@ SBND owns some mailing lists for specific purposes. The most generally
 useful are listed in the [SBND Redmine
 wiki](SBND_homepage.html#Collaboration).\
 Mailing lists owned by SBND hosted at [Fermilab
-ListServ](http://listserv.fnal.gov){.external}:
+ListServ](http://listserv.fnal.gov):
 
   -------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
   **Mailing list**                 **owner**                                                                                                                                                      **purpose**
@@ -470,7 +470,7 @@ ListServ](http://listserv.fnal.gov){.external}:
 #### Electronic logbook
 
 SBND online system uses an [electronic
-logbook](http://dbweb0.fnal.gov/ECL/sbnd/){.external} (friendly called
+logbook](http://dbweb0.fnal.gov/ECL/sbnd/) (friendly called
 \"eLog\"), accessible at <http://dbweb0.fnal.gov/ECL/sbnd/> . The
 Fermilab service account credentials are used to log in. Most current
 SBND members have an account. New members need to request one by

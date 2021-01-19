@@ -26,7 +26,7 @@ sbndcode v06\_40\_01 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_40\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_40_01/sbndcode-v06_40_01.html){.external}
+v06\_40\_01](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_40_01/sbndcode-v06_40_01.html)
 
 
 

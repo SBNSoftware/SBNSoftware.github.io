@@ -13,7 +13,7 @@ Checking your Grid Status
 Fifemon: Grafana/Kibana
 ----------------------------------------------------------------
 
--   [Fifemon](https://fifemon.fnal.gov/){.external} provides you with
+-   [Fifemon](https://fifemon.fnal.gov/) provides you with
     information about your current running jobs, how much space we have,
     why your jobs are being held. You need to enter your SERVICE
     password to access it.

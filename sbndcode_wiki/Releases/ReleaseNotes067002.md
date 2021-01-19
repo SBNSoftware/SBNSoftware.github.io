@@ -26,7 +26,7 @@ sbndcode v06\_70\_02 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_70\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_02/sbndcode-v06_70_02.html){.external}
+v06\_70\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_02/sbndcode-v06_70_02.html)
 
 
 
@@ -53,7 +53,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v06.70.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067002){.external}
+    v06.70.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067002)
 
 
 

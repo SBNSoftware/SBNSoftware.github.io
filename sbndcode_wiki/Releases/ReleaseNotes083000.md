@@ -26,7 +26,7 @@ sbndcode v08\_30\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_30\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_30_00/sbndcode-v08_30_00.html){.external}
+v08\_30\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_30_00/sbndcode-v08_30_00.html)
 
 
 
@@ -43,10 +43,10 @@ New features
 -   CRT T0 tagging added to the standard reconstruction chain
     -   Example modules for accessing tags added
     -   See [DocDB
-        14349](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=14349){.external}
+        14349](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=14349)
 -   TRACS shower reconstruction added to standard reconstruction chain
     -   See [DocDB
-        14226](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=14226){.external}
+        14226](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=14226)
 
 
 
@@ -59,7 +59,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.30.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083000){.external}
+    v08.30.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083000)
 
 
 

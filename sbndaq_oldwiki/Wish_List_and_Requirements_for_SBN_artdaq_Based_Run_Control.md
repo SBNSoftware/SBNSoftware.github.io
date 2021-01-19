@@ -158,7 +158,7 @@ Andy Mastbaum
 ----------------------------------------------
 
 For more comparative fun, here\'s the SNO+ run control, which uses
-[Orca](http://orca.physics.unc.edu/~markhowe/Orca_Help/Home.html){.external}.
+[Orca](http://orca.physics.unc.edu/~markhowe/Orca_Help/Home.html).
 
 Main features:
 

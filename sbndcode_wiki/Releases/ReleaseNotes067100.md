@@ -26,7 +26,7 @@ sbndcode v06\_71\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_71\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_71_00/sbndcode-v06_71_00.html){.external}
+v06\_71\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_71_00/sbndcode-v06_71_00.html)
 
 
 
@@ -57,7 +57,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v06.71.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067100){.external}
+    v06.71.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067100)
 -   larbatch v01.38.00
 -   genie\_xsec v2\_12\_10
 

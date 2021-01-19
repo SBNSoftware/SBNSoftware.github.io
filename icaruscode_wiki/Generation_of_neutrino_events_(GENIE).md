@@ -38,7 +38,7 @@ They are implemented as *art* filters, which allow to write an event
 into the output *art* ROOT file only if it satisfies some requirements.
 
 ICARUS has its own flavor of selector implemented in
-[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}
+[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html)]{style="font-family: monospace;"}
 filter module.\
 Note that this module has nothing that is specific to ICARUS and can be
 actually used in any LArSoft experiment (but at present it is
@@ -129,7 +129,7 @@ will select interactions happening in *any* of the volumes called
 them), or in *any* volume whose name contains `CRT`.\
 As this example shows, multiple volumes can be specified, and the
 specification is actually a C++ \"default\" regular expression (see e.g.
-[[std::regex]{style="font-family: monospace;"}](https://en.cppreference.com/w/cpp/regex){.external}).
+[[std::regex]{style="font-family: monospace;"}](https://en.cppreference.com/w/cpp/regex)).
 
 These volumes are selected in additions to the ones specified by
 coordinates (below), but can\'t be specified together with the request
@@ -187,7 +187,7 @@ but can\'t be specified together with the request of active volume
 ### Selecting events with a specific interaction type
 
 The filter module
-[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}
+[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html)]{style="font-family: monospace;"}
 described above allows to narrow the selection by requiring *also* a
 specific neutrino interaction type.\
 For example, this configuration requires an neutral current interaction
@@ -208,7 +208,7 @@ neutron:\
 The interaction types are coded in
 [nusimdata:source:nusimdata/SimulationBase/MCNeutrino.h](/redmine/projects/nusimdata/repository/entry/nusimdata/SimulationBase/MCNeutrino.h){.source}
 (type
-[simb::int\_type\_](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespacesimb.html#a2cce734d1b71408bbc7d98d148ac4360){.external}).
+[simb::int\_type\_](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespacesimb.html#a2cce734d1b71408bbc7d98d148ac4360)).
 
 This requirement can be specified *together with* the current type
 (below) and the interaction location requirements.
@@ -218,7 +218,7 @@ This requirement can be specified *together with* the current type
 ### Selecting events via a specific current type
 
 The filter module
-[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html){.external}]{style="font-family: monospace;"}
+[[FilterNeutrinosActiveVolume](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/latest/classFilterNeutrinosActiveVolume.html)]{style="font-family: monospace;"}
 described above allows to narrow the selection by requiring *also* a
 specific neutrino current type:\
 

@@ -26,7 +26,7 @@ sbndcode v07\_00\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v07\_00\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_00_00/sbndcode-v07_00_00.html){.external}
+v07\_00\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_00_00/sbndcode-v07_00_00.html)
 
 
 
@@ -35,7 +35,7 @@ Purpose
 
 -   New larg4 available (but not used in sbndcode)
     -   For instructions see the [migration
-        notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArG4_Migration_Notes){.external}
+        notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArG4_Migration_Notes)
 
 
 
@@ -55,7 +55,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v07.00.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070000){.external}
+    v07.00.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070000)
 
 
 

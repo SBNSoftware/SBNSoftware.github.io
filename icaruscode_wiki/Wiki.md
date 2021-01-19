@@ -35,7 +35,7 @@ Developing ICARUS code
     against the new LArSoft release
 -   Project List
 -   [Integration tests](Integration_tests.html)
--   [Introduction to Gallery analysis](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=4339&filename=20171023-Petrillo.pdf "by Gianluca"){.external}
+-   [Introduction to Gallery analysis](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=4339&filename=20171023-Petrillo.pdf "by Gianluca")
 
 
 

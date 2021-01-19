@@ -9,9 +9,9 @@ How it works
 ============================================
 
 The core of the process currently relies on
-[project.py](https://cdcvs.fnal.gov/redmine/projects/larbatch/repository/revisions/develop/entry/scripts/project.py){.external}
+[project.py](https://cdcvs.fnal.gov/redmine/projects/larbatch/repository/revisions/develop/entry/scripts/project.py)
 which is a python script contained in
-[larbatch](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide){.external}.\
+[larbatch](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide).\
 All samples to be generated are represented by a set of generator-level
 fcl files contained in a sbndcode subdirectory:\
 
@@ -19,7 +19,7 @@ fcl files contained in a sbndcode subdirectory:\
 
 \
 An xml generation script (make\_xml\_MCCVERSION.sh) in
-[sbndutil](https://cdcvs.fnal.gov/redmine/projects/sbndutil){.external}
+[sbndutil](https://cdcvs.fnal.gov/redmine/projects/sbndutil)
 looks for all fcl files in the above directory and makes a project.py
 xml file for each fcl file that it finds. The found fcl file is assumed
 to be a generator-level fcl file and by default uses the following fcl

@@ -228,7 +228,7 @@ Once you have done steps 1 and 2, open a new file (call it, for example,
     physics.producers.generator.AngleDist: 1          # With angles Gaussian distributed
 
 (More information on all the settable parameters can be found
-[here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/EventGenerator#SingleGen.){.external})
+[here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/EventGenerator#SingleGen.))
 
 `prodsingle_muon_sbnd.fcl` is your driver to run larsoft jobs.\
 You can run via:
@@ -265,7 +265,7 @@ contains your generated events runt through detector simulation.
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
-[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/TITUS_Event_Display){.external}.
+[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/TITUS_Event_Display).
 
 Open a fresh terminal, log in to an `sbndgpvm` machine, and run\
 
@@ -320,7 +320,7 @@ the PMTs positions:\
 ### What are all the information stored in the TTree?
 
 All the variables stored are described
-[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112){.external}.
+[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112).
 
 
 
@@ -374,6 +374,6 @@ Questions?
 ---------------------------------------
 
 Feel to ask
-[Marco](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=30269N){.external}
+[Marco](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=30269N)
 and
-[Michelle](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=15290N){.external}.
+[Michelle](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=15290N).

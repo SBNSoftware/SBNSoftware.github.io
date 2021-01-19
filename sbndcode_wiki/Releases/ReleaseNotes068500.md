@@ -26,7 +26,7 @@ sbndcode v06\_85\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_85\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_85_00/sbndcode-v06_85_00.html){.external}
+v06\_85\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_85_00/sbndcode-v06_85_00.html)
 
 
 
@@ -52,9 +52,9 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [art
-    v2.11.03](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_211){.external}
+    v2.11.03](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_211)
 -   [LArSoft
-    v06.85.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes068500){.external}
+    v06.85.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes068500)
 -   larbatch v01.43.00
 
 

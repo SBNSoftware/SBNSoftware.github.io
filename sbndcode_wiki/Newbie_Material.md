@@ -14,7 +14,7 @@ Newbie Material
 ==================================================
 
 All of SBND\'s material can be found on the
-[docDB](http://sbn-docdb.fnal.gov:8080/cgi-bin/DocumentDatabase){.external}.
+[docDB](http://sbn-docdb.fnal.gov:8080/cgi-bin/DocumentDatabase).
 It requires a password to access everything, just ask for it!
 
 To be part of the SBND-software mailing list send an email to:
@@ -32,7 +32,7 @@ See the [Computing resources](Computing_resources.html) page
 to see a discussion about the computing privileges that SBND has.
 
 To get a Fermilab computing account follow the instructions at [this
-site.](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797){.external}
+site.](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797)
 Our experiment number is T1053
 
 **Write down the initial Kerberos and Services Account password before
@@ -69,7 +69,7 @@ machine.
 If this does not work, please submit a service desk ticket to request a
 SBND project account (I believe someone has to authorise this so it will
 probably fail)\
-[ServiceNow](https://fermi.service-now.com/wp/){.external}-\> **Request
+[ServiceNow](https://fermi.service-now.com/wp/)-\> **Request
 Something** -\> **Experiment/Project/Collaboration Computing Account**
 
 Enter your name, then select T-1053 (SBND)\
@@ -78,7 +78,7 @@ your name\
 Enter your home institution, then click Submit.
 
 You can reset your Fermilab passwords for service-now
-[here.](https://password-reset.fnal.gov/showLogin.cc){.external}\
+[here.](https://password-reset.fnal.gov/showLogin.cc)\
 If you can\'t remember your password because you didn\'t write it down
 then you will have contact the service desk.
 
@@ -93,7 +93,7 @@ type of communication.
 -   Emails are used to send announcements, call for meetings or other
     events and, in general all important communication that shouldn\'t
     be missed goes through emails. Sign in to [SBND mailing
-    lists](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Computing_resources#Mailing-lists){.external}
+    lists](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Computing_resources#Mailing-lists)
     by sending an email to <listserv@fnal.gov> with no subject and in
     the body put: **`SUBSCRIBE NAME-OF-MAILING-LIST Name Lastname`**,
     for example I would write: `SUBSCRIBE SBND-SOFTWARE Iker de Icaza`.
@@ -103,11 +103,11 @@ type of communication.
     more than one could answer \--remember SBND collaborators span
     several time zones\-- or if the answer could benefit more people
     than just you. Once you have a FNAL account sign-in to [SBND
-    Slack](https://sbnd.slack.com/signup){.external} with you FNAL
+    Slack](https://sbnd.slack.com/signup) with you FNAL
     account.
 
 
--   [Zoom](http://zoom.us/){.external} is used for meetings, you will
+-   [Zoom](http://zoom.us/) is used for meetings, you will
     need to have it installed on your computer. You don\'t need to make
     an account to use it, however if you open it with your FNAL email
     you can see Fermilab\'s rooms listed. **Pro Tip:** configure it to
@@ -125,24 +125,24 @@ might find useful:
 Stolen straight from the 35 tonne page:
 
 -   [Intro to LArTPCs - Stephen Pordes,
-    2009](http://lartpc-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=436&filename=forcdfstudents.pdf&version=1){.external}
+    2009](http://lartpc-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=436&filename=forcdfstudents.pdf&version=1)
 -   [Intro to LArTPC Reconstruction - Herb Greenlee,
-    2013](https://indico.fnal.gov/getFile.py/access?contribId=35&sessionId=7&resId=0&materialId=slides&confId=6395){.external}
+    2013](https://indico.fnal.gov/getFile.py/access?contribId=35&sessionId=7&resId=0&materialId=slides&confId=6395)
 -   [LArTPCs in the US - Tingjun Yang,
-    2013](http://lartpc-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=1056&filename=lartpcyang.pdf&version=2){.external}
+    2013](http://lartpc-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=1056&filename=lartpcyang.pdf&version=2)
 
 The SBN Proposal: [A Proposal for a Three Detector Short-Baseline
 Neutrino Oscillation Program in the Fermilab Booster Neutrino
-Beam](https://arxiv.org/pdf/1503.01520.pdf){.external}
+Beam](https://arxiv.org/pdf/1503.01520.pdf)
 
-The [MicroBooNE](http://www-microboone.fnal.gov){.external}
+The [MicroBooNE](http://www-microboone.fnal.gov)
 
 -   Public notes:
     <http://www-microboone.fnal.gov/publications/publicnotes/>
 -   Publications:
     <http://www-microboone.fnal.gov/publications/index.html>
 
-The [ICARUS](http://icarus.lngs.infn.it){.external} publications:
+The [ICARUS](http://icarus.lngs.infn.it) publications:
 <http://icarus.lngs.infn.it/publications.php>
 
 Here is a list of publications/books that people have found useful.
@@ -150,23 +150,23 @@ Please add to the list!
 
 -   [The Liquid Argon Time Projection Chamber: A New Concept for
     Neutrino
-    Detectors](http://cds.cern.ch/record/117852/files/CERN-EP-INT-77-8.pdf){.external}
+    Detectors](http://cds.cern.ch/record/117852/files/CERN-EP-INT-77-8.pdf)
     (This is a historical paper where the idea of LArTPCs were first
     considered)
 -   [Studies with a Liquid Argon Time Projection
-    Chamber](http://www.springer.com/us/book/9783658094294){.external}
+    Chamber](http://www.springer.com/us/book/9783658094294)
     (By Michael Schenk. It gives a nice overview of the
     theoretical/Design concepts of the technology)
 -   [Light Sterile Neutrinos: A White
-    Paper](https://arxiv.org/pdf/1204.5379.pdf){.external} (It gives a
+    Paper](https://arxiv.org/pdf/1204.5379.pdf) (It gives a
     good overview of the current status of eV sterile neutrinos. Also
     look at the references within)
 -   [Combined νμ → νe & ν ̄μ → ν ̄e Oscillation Analysis of the
-    MiniBooNE Excesses](https://arxiv.org/pdf/1207.4809.pdf){.external}
+    MiniBooNE Excesses](https://arxiv.org/pdf/1207.4809.pdf)
     (The miniBooNE anomaly paper)
 -   [Evidence for Neutrino Oscillations from the Observation of ν ̄e
     Appearance in a ν ̄μ
-    Beam](https://arxiv.org/pdf/hep-ex/0104049.pdf){.external} (The LSND
+    Beam](https://arxiv.org/pdf/hep-ex/0104049.pdf) (The LSND
     anomaly paper)
 
 
@@ -195,7 +195,7 @@ Here is a few places to look at more information about Art and LArsoft.
 
 
 -   LArsoft: [Training
-    sessions](https://cdcvs.fnal.gov/redmine/projects/art-larsoft-course/wiki/Instructions_for_Each_Session#Friday){.external}
+    sessions](https://cdcvs.fnal.gov/redmine/projects/art-larsoft-course/wiki/Instructions_for_Each_Session#Friday)
     (This a link to some useful presentations introducing LArsoft).
 
 
@@ -278,13 +278,13 @@ If you have a good c++ tutorial/documentation add it to the list!
 
 ### ROOT
 
-[ROOT](https://root.cern.ch/doc/v608/){.external} is also useful to know
+[ROOT](https://root.cern.ch/doc/v608/) is also useful to know
 and it can be used within LArsoft. If you are new to ROOT and you have a
 bit of time to learn it I recommend the [Nevis
-tutorials](https://www.nevis.columbia.edu/~seligman/root-class/){.external}.
+tutorials](https://www.nevis.columbia.edu/~seligman/root-class/).
 Given, is an estimated time to complete each section so you have a good
 idea how much time the whole tutorial takes. The ROOT
-[pages](https://root.cern.ch/doc/v608/modules.html){.external} are
+[pages](https://root.cern.ch/doc/v608/modules.html) are
 powered by doxygen and are useful for finding information about specific
 functions or finding a function you need. Below is a few more places
 that are useful when learning ROOT. Feel free to add to the list!
@@ -323,8 +323,8 @@ that are useful when learning ROOT. Feel free to add to the list!
 
 ### Git
 
-New to [Git](https://github.com){.external}? if so do the quick
-[tutorial](https://try.github.io/levels/1/challenges/1){.external} to
+New to [Git](https://github.com)? if so do the quick
+[tutorial](https://try.github.io/levels/1/challenges/1) to
 get an idea of how it works. To see how it used in SBND see the [Working
 on a feature branch (to easily share
 code)](Working_on_a_feature_branch_(to_easily_share_code).html).
@@ -339,4 +339,4 @@ git config --global user.email "user@fnal.gov"
 With this you will have your commits signed by you and listed neatly on
 your Redmine account. You CAN list another email other than your FNAL
 one, but you need to change it accordingly on your [Redmine
-account.](https://cdcvs.fnal.gov/redmine/my/account){.external}
+account.](https://cdcvs.fnal.gov/redmine/my/account)

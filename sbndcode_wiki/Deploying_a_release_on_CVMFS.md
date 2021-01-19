@@ -96,6 +96,6 @@ Details: install\_on\_cvmfs.sh
     -   Given the limited number of users of pre-built binaries I
         decided to drop this feature.
 -   Most of the heavy lifting is done by the
-    [pullProducts](https://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts){.external}
+    [pullProducts](https://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts)
     script, you shouldn\'t ever have to modify this script but may have
     to pick up changes if instructed.

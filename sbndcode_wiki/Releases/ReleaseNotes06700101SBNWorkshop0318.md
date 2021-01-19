@@ -26,7 +26,7 @@ sbndcode v06\_70\_01\_01\_SBNWorkshop0318 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_70\_01\_01\_SBNWorkshop0318](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01_SBNWorkshop0318/sbndcode-v06_70_01_01_SBNWorkshop0318.html){.external}
+v06\_70\_01\_01\_SBNWorkshop0318](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_70_01_01_SBNWorkshop0318/sbndcode-v06_70_01_01_SBNWorkshop0318.html)
 
 
 

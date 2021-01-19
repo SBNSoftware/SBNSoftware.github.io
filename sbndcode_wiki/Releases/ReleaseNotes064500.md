@@ -26,7 +26,7 @@ sbndcode v06\_45\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_45\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_45_00/sbndcode-v06_45_00.html){.external}
+v06\_45\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_45_00/sbndcode-v06_45_00.html)
 
 
 
@@ -49,7 +49,7 @@ Bug fixes
 --------------------------------------
 
 -   LArSoft issue
-    [\#12979](https://cdcvs.fnal.gov/redmine/issues/12979){.external}
+    [\#12979](https://cdcvs.fnal.gov/redmine/issues/12979)
 
 
 
@@ -57,7 +57,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v06.45.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064500){.external}
+    v06.45.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064500)
 
 
 

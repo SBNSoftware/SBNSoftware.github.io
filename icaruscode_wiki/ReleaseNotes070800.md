@@ -27,7 +27,7 @@ icaruscode v07\_08\_00 Release Notes
 [list of icaruscode
 releases](List_of_ICARUS_code_releases.html)\
 Download instructions for [icaruscode
-v07\_08\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_08_00/icaruscode-v07_08_00.html){.external}
+v07\_08\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_08_00/icaruscode-v07_08_00.html)
 
 
 
@@ -57,7 +57,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v07.08.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070800){.external}
+    v07.08.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes070800)
 -   larbatch v01.46.02
 
 

@@ -236,7 +236,7 @@ repositories as needed.
     not disrupt the others
 
 The result of the test can be checked in the [C.I.
-dashboard](http://dbweb5.fnal.gov:8080/LarCI/app/ns:sbnd/view_builds){.external}
+dashboard](http://dbweb5.fnal.gov:8080/LarCI/app/ns:sbnd/view_builds)
 (on the top raw, you can select LArSoft or SBND to monitor the
 respective tests).
 
@@ -368,7 +368,7 @@ Investigating test failures
 
 The reference files are normally generated with a special trigger, as
 described above. These special jobs are shown in the
-[dashboard](http://dbweb5.fnal.gov:8080/LarCI/app/ns:sbnd/view_builds/index){.external}
+[dashboard](http://dbweb5.fnal.gov:8080/LarCI/app/ns:sbnd/view_builds/index)
 as `sbnd_ci` builds with workflow `Update_ref_files_SBNDCODE`, and can
 be recognised because they have a table header with more columns,
 including a column `gen_ref_files`. A completed reference file job

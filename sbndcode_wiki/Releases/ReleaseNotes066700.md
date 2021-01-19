@@ -26,7 +26,7 @@ sbndcode v06\_67\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_67\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_67_00/sbndcode-v06_67_00.html){.external}
+v06\_67\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_67_00/sbndcode-v06_67_00.html)
 
 
 
@@ -54,7 +54,7 @@ Updated dependencies
 
 -   Use e15 instead of e14 qualifiers
 -   [LArSoft
-    v06.67.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066700){.external}
+    v06.67.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes066700)
 
 
 

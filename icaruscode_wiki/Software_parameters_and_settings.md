@@ -162,7 +162,7 @@ Pictographically:\
 LArSoft timing system is documented with the `detinfo::DetectorClocks`
 provider interface, which manages the conversion between different
 timings. Its documentation is in [LArSoft
-Doxygen](http://nusoft.fnal.gov/larsoft/doxsvn/html/classdetinfo_1_1DetectorClocks.html#details){.external}
+Doxygen](http://nusoft.fnal.gov/larsoft/doxsvn/html/classdetinfo_1_1DetectorClocks.html#details)
 .
 
 -   trigger time: the instant the global event trigger fires
@@ -234,7 +234,7 @@ of scintillation with ionization, and is implemented in
 `larg4::OpFastScintillation`
 (larsim::source:larsim/LArG4/OpFastScintillation.cxx).\
 Some details of the simulation are described in [LArG4 module
-documentation](http://nusoft.fnal.gov/larsoft/doxsvn/html/classlarg4_1_1LArG4.html#details){.external}.
+documentation](http://nusoft.fnal.gov/larsoft/doxsvn/html/classlarg4_1_1LArG4.html#details).
 In particular, scintillation yields and quantum efficiency (in disguise
 as `detinfo::LArProperties::ScintPreScale()`) are applied.\
 The configuration derived from `detinfo::LArProperties` service
@@ -325,7 +325,7 @@ scintillation by particle type
 
 A summary of the procedures and settings used in ICARUS can be found in
 [SBN DocDB
-14569](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=14569){.external}
+14569](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=14569)
 (with the usual warning: that is a static documents and things may have
 changed).
 
@@ -430,9 +430,9 @@ mapping
 The library data file covers the *TPC active volume* of the first
 cryostat (`C:0`) only, and the range parameters refer to that one.\
 The data is mapped (`ICARUSPhotonMappingTransformations` tool, see
-[presentation](https://indico.fnal.gov/event/20409/contribution/2/material/slides/0.pdf){.external}
+[presentation](https://indico.fnal.gov/event/20409/contribution/2/material/slides/0.pdf)
 at [LArSoft coordination meeting on April 9,
-2019](https://indico.fnal.gov/event/20409){.external}) to the second
+2019](https://indico.fnal.gov/event/20409)) to the second
 cryostat to complete the coverage, which is still limited to the TPC
 active volumes; a query outside that volume will return visibility `0`
 on all channels.\

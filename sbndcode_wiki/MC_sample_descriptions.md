@@ -325,7 +325,7 @@ Beam (GENIE) samples
 A rough basis case for beam-related events. This fcl file produces
 single-interaction events (no pileup per ART event) within and including
 the cryostat. The flux files used are booster beam gsimple files in the
-[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1){.external}
+[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1)
 configuration.
 
 !(/redmine/attachments/download/38582/prodgenie_nu_singleinteraction_cryostat_gsimple-configb-v1.png)
@@ -342,7 +342,7 @@ configuration.
 Simulates genie booster beam events with full spill structure (5e12
 POT/spill) in the SBND cryostat volume. It uses gsimple flux files
 produced with the
-[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1){.external}
+[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1)
 configuration.
 
 !(/redmine/attachments/download/38624/prodgenie_nu_spill_cryostat_gsimple-configb-v1.png)
@@ -361,7 +361,7 @@ POT/spill) in the full world volume which, as time of writing, includes
 a large amount of surrounding dirt and the SciBooNE hall. The idea here
 is that the simulation includes out of fiducial volume (dirt) events. It
 uses gsimple flux files produced with the
-[ConfigC-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigC-v1){.external}
+[ConfigC-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigC-v1)
 configuration which is a very large flux window placed up against the
 front face of the TPC. To properly include every possible TPC-entering
 dirt event, the neutrino ray\'s starting position is placed upstream of
@@ -380,7 +380,7 @@ stopping.
 
 ::: 
 Uses the same configuration as
-[prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodgenie_nu_spill_cryostat_gsimple-configb-v1.fcl){.external}
+[prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodgenie_nu_spill_cryostat_gsimple-configb-v1.fcl)
 but swaps all muon neutrinos in the beam for electron neutrinos and
 vice-versa. Right now, the intrinsic beam electron neutrinos are NOT
 swapped for muon neutrinos. This means the sample should be solely
@@ -409,7 +409,7 @@ Produces cosmic rays using the Cosmic Mass Composition (CMC) model
 implemented in CORSIKA. Only cosmic rays in which the primary ray goes
 near (within 250 cm) of the cryostat are simulated. A lot of useful
 details are shown in a talk by Matt Bass ([Docdb
-833](http://sbn-docdb.fnal.gov:8080/cgi-bin/ShowDocument?docid=833){.external}).
+833](http://sbn-docdb.fnal.gov:8080/cgi-bin/ShowDocument?docid=833)).
 
 !(/redmine/attachments/download/38625/prodcorsika_cosmics_cmc.png)
 :::
@@ -423,7 +423,7 @@ details are shown in a talk by Matt Bass ([Docdb
 
 ::: 
 Produces CMC cosmic rays with exactly the same settings as
-[prodcorsika\_cosmics\_cmc.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodcorsika_cosmics_cmc.fcl){.external}
+[prodcorsika\_cosmics\_cmc.fcl](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/MC_sample_descriptions#prodcorsika_cosmics_cmc.fcl)
 but tacks on an ART filter which demands that there is a muon in the
 event whose potential trajectory intersects the front AND back CRTs. The
 actual filter demand is that the straight line path length of the muon
@@ -448,7 +448,7 @@ Overlayed (overlay) samples
 Produces CORSIKA-based composite mass model cosmics overlayed in the
 same ART event with GENIE-based BNB neutrinos with full spill structure.
 The GENIE-produced interactions use the
-[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1){.external}
+[ConfigB-v1](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/The_SBND_flux_files#ConfigB-v1)
 configuration gsimple files as input and are only produced within the
 cryostat volume.
 

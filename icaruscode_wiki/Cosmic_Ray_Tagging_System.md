@@ -26,7 +26,7 @@ origin, CERN, MINOS, and Double Chooz(D) types.
 LArSoft does not currently provide support for CRT code, though some
 people are working to change this. All code related to the CRT with the
 exception of the geometry generation script lives in
-[/icaruscode/CRT](https://cdcvs.fnal.gov/redmine/projects/icaruscode/repository/revisions/master/show/icaruscode/CRT){.external}.
+[/icaruscode/CRT](https://cdcvs.fnal.gov/redmine/projects/icaruscode/repository/revisions/master/show/icaruscode/CRT).
 This directory contains some subdirectories. CRT/CRTProducts contains
 the classes and dictionary necessary to introduce CRT data products to
 LArSoft. CRT/CRTUtils contains algorithms and utilities for use with

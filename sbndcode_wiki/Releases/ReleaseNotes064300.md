@@ -26,7 +26,7 @@ sbndcode v06\_43\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_43_00/sbndcode-v06_43_00.html){.external}
+v06\_43\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_43_00/sbndcode-v06_43_00.html)
 
 
 
@@ -43,7 +43,7 @@ New features
 -   larcorealg introduced to store geometry and utilities independent of
     the art framework
     -   This is a breaking change, for more information see
-        [here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Breaking_Changes#Geometry-and-utility-code-moved-to-larcorealg){.external}
+        [here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Breaking_Changes#Geometry-and-utility-code-moved-to-larcorealg)
 
 
 
@@ -58,7 +58,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v06.43.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064300){.external}
+    v06.43.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes064300)
 -   larbatch v01\_32\_03
 
 

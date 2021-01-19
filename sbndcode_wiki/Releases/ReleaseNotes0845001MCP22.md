@@ -26,7 +26,7 @@ sbndcode v08\_45\_00\_1\_MCP2\_2 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_45\_00\_1\_MCP2\_2](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_45_00_1_MCP2_2/sbndcode-v08_45_00_1_MCP2_2.html){.external}
+v08\_45\_00\_1\_MCP2\_2](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_45_00_1_MCP2_2/sbndcode-v08_45_00_1_MCP2_2.html)
 
 
 

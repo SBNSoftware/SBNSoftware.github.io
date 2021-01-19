@@ -26,7 +26,7 @@ sbndcode v08\_48\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_48\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_48_00/sbndcode-v08_48_00.html){.external}
+v08\_48\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_48_00/sbndcode-v08_48_00.html)
 
 
 
@@ -46,7 +46,7 @@ Bug fixes
 --------------------------------------
 
 -   Fix to [Bug
-    \#24211](https://cdcvs.fnal.gov/redmine/issues/24211#change-76323){.external}
+    \#24211](https://cdcvs.fnal.gov/redmine/issues/24211#change-76323)
 
 
 
@@ -54,7 +54,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.48.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084800){.external}
+    v08.48.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes084800)
 
 
 

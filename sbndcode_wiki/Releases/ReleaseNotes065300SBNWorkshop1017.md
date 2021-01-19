@@ -28,7 +28,7 @@ sbndcode v06\_53\_00\_SBNWorkshop1017 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_53\_00\_SBNWorkshop1017](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_53_00_SBNWorkshop1017/sbndcode-v06_53_00_SBNWorkshop1017.html){.external}
+v06\_53\_00\_SBNWorkshop1017](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_53_00_SBNWorkshop1017/sbndcode-v06_53_00_SBNWorkshop1017.html)
 
 
 

@@ -14,7 +14,7 @@ one please add information about it.
 
 Here is a list of the projects for SBND. For pictures and references see
 this
-[presentation](http://sbn-docdb.fnal.gov:8080/cgi-bin/RetrieveFile?docid=1604&filename=computing_update_plans_towardsMCC1.pdf&version=1){.external}.
+[presentation](http://sbn-docdb.fnal.gov:8080/cgi-bin/RetrieveFile?docid=1604&filename=computing_update_plans_towardsMCC1.pdf&version=1).
 
   -------------------------------------------------------------- ------------------- -------------------
   Project                                                        Brief Description   Person Affiliated

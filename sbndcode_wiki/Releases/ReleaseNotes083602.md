@@ -26,7 +26,7 @@ sbndcode v08\_36\_02 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_36\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_02/sbndcode-v08_36_02.html){.external}
+v08\_36\_02](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_36_02/sbndcode-v08_36_02.html)
 
 
 
@@ -51,7 +51,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v08.36.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083602){.external}
+    v08.36.02](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes083602)
 
 
 

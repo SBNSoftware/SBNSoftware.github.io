@@ -9,11 +9,11 @@ Using project.py for Grid Jobs
 ===============================================================================
 
 Explanation courtesy of Dom Brailsford. Firstly to use the grid use
-[project.py](https://cdcvs.fnal.gov/redmine/projects/larbatch/repository/revisions/develop/entry/scripts/project.py){.external}.
+[project.py](https://cdcvs.fnal.gov/redmine/projects/larbatch/repository/revisions/develop/entry/scripts/project.py).
 
 A useful explanation of project.py can be found in the [LAr Batch Tools
 Redmine
-site](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide){.external}.
+site](https://cdcvs.fnal.gov/redmine/projects/larbatch/wiki/User_guide).
 This gives more detail on the specific elements.
 
 
@@ -58,7 +58,7 @@ Here is a useful process to follow when you submit jobs to the gird.
     log files in the output directory/work directory or by getting the
     log file **jobsub\_fetchlog \--jobid=myid**. If you are not used to
     jobs have a read
-    [here](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client){.external}.
+    [here](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client).
 
 
 
@@ -144,4 +144,4 @@ check command is:\
     project.py --xml prodsingle_mu_100-1257MeV_fixposcontained_fixangle.xml --stage gen --checkana
 
 If you want to check you status with cool graphs sign in
-[Grafana](https://fifemon.fnal.gov/monitor/dashboard/db/experiment-overview?var-experiment=sbnd&orgId=1&from=1508165371912&to=1508252205933&refresh=10s){.external}
+[Grafana](https://fifemon.fnal.gov/monitor/dashboard/db/experiment-overview?var-experiment=sbnd&orgId=1&from=1508165371912&to=1508252205933&refresh=10s)

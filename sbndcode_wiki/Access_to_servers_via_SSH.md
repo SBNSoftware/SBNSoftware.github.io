@@ -56,6 +56,6 @@ the home directory of the virtual user (in the example above, in
 People in that list can add more simply by editing that file, but
 Fermilab demands the list to be kept short for maintenance and security
 purposes (see [DocDB
-5644](http://cd-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=5644){.external}).
+5644](http://cd-docdb.fnal.gov/cgi-bin/RetrieveFile?docid=5644)).
 
 ^1^ This is at the time of writing, 20180129.

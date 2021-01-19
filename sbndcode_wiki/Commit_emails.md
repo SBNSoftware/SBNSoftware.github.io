@@ -10,7 +10,7 @@ Commit emails
 
 -   You should sign up for the SBND-COMMIT mailing list on listserv in
     the [same way as
-    usual](https://listserv.fnal.gov/users.asp){.external}
+    usual](https://listserv.fnal.gov/users.asp)
 -   You\'ll now get an email every time somebody pushes a commit to
     origin, fun!
 -   I recommend diverting them to a folder that doesn\'t send you a

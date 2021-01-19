@@ -50,7 +50,7 @@ Instructions
     being tagged and the version numbers of dependent products.
 
 -   Check the [larsoft release
-    notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list){.external}
+    notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list)
     for version numbers.
 
 -   Files to edit:

@@ -26,7 +26,7 @@ sbndcode v08\_16\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_16\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_16_00/sbndcode-v08_16_00.html){.external}
+v08\_16\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_16_00/sbndcode-v08_16_00.html)
 
 
 
@@ -35,7 +35,7 @@ Purpose
 
 -   Update to art v03\_02
     -   BREAKING CHANGES: Read the [update
-        notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Update_to_art_v3_02){.external}
+        notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/Update_to_art_v3_02)
 
 
 
@@ -53,9 +53,9 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [art
-    v3\_02\_04](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_302){.external}
+    v3\_02\_04](https://cdcvs.fnal.gov/redmine/projects/art/wiki/Series_302)
 -   [LArSoft
-    v08.16.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081600){.external}
+    v08.16.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes081600)
 
 
 

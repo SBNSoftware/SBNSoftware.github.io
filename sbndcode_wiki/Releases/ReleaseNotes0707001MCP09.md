@@ -26,7 +26,7 @@ sbndcode v07\_07\_00\_1\_MCP0\_9 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v07\_07\_00\_1\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_1_MCP0_9/sbndcode-v07_07_00_1_MCP0_9.html){.external}
+v07\_07\_00\_1\_MCP0\_9](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v07_07_00_1_MCP0_9/sbndcode-v07_07_00_1_MCP0_9.html)
 
 
 

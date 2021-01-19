@@ -27,7 +27,7 @@ Running list of comments
 
 -   SCD is setting up a SAM station for us and they need to know what
     file metadata values we may want to add. See
-    [here](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki/Metadata_format){.external}
+    [here](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki/Metadata_format)
     for a list of the default parameters
 
 <!-- -->
@@ -46,7 +46,7 @@ Running list of comments
 
 -   Tracy and I reviewed the MicroBooNE metadata parameters with Herb
     Greenlee. See
-    [here](http://samweb.fnal.gov:8480/sam/uboone/api/values/parameters){.external}
+    [here](http://samweb.fnal.gov:8480/sam/uboone/api/values/parameters)
     for MicroBooNE\'s custom parameters. Ones we would likely like to
     keep:
     -   The \'name\', \'stage\', and \'version\' on the ub\_project
@@ -84,14 +84,14 @@ Useful links
 --------------------------------------------
 
 -   [SAM User\'s
-    Guide](https://cdcvs.fnal.gov/redmine/projects/sam/wiki/User_Guide_for_SAM){.external}
+    Guide](https://cdcvs.fnal.gov/redmine/projects/sam/wiki/User_Guide_for_SAM)
 
 <!-- -->
 
 -   [Built-in SAM
-    metadata](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki/Metadata_format){.external}
+    metadata](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki/Metadata_format)
 
 <!-- -->
 
 -   [MicroBooNE\'s custom parameter
-    fields](http://samweb.fnal.gov:8480/sam/uboone/api/values/parameters){.external}
+    fields](http://samweb.fnal.gov:8480/sam/uboone/api/values/parameters)

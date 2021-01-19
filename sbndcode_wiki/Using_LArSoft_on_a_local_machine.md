@@ -72,7 +72,7 @@ a MRB working area and check out `sbndcode` repository\... if you can
 compile it in the usual way, you are set already.\
 The `sbnd_data` and `sbndutil` packages are platform-independent (they
 do not contain compiled code), so you can get them from
-[SciSoft](http://scisoft.fnal.gov/scisoft/bundles/sbnd){.external} as
+[SciSoft](http://scisoft.fnal.gov/scisoft/bundles/sbnd) as
 well, and unpacking the tarball in the products area may be already
 enough.
 
@@ -173,7 +173,7 @@ LArSoft are likely to stay more up to date.
             cd "${HOME}/SBND/products"
 
     2.  then you need to download [the `pullProduct`
-        script](http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts){.external}:
+        script](http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts):
 
             curl -O 'http://scisoft.fnal.gov/scisoft/bundles/tools/pullProducts'
             chmod a+x pullProducts
@@ -186,9 +186,9 @@ LArSoft are likely to stay more up to date.
     version](Releases/List_of_SBND_code_releases.html) you want; if
     you don\'t know your options, you can also find the ones currently
     available at [SBND SciSoft
-    page](http://scisoft.fnal.gov/scisoft/bundles/sbnd){.external} (this
+    page](http://scisoft.fnal.gov/scisoft/bundles/sbnd) (this
     is the [LArSoft
-    equivalent](http://scisoft.fnal.gov/scisoft/bundles/larsoft){.external},
+    equivalent](http://scisoft.fnal.gov/scisoft/bundles/larsoft),
     for your convenience); you need to know:
     -   the version of `sbndcode`, e.g. `v06_52_00`
     -   the type of build you want: profiling (`prof`) or debugging

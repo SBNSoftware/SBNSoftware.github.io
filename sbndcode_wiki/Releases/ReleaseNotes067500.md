@@ -26,7 +26,7 @@ sbndcode v06\_75\_00 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v06\_75\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_75_00/sbndcode-v06_75_00.html){.external}
+v06\_75\_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v06_75_00/sbndcode-v06_75_00.html)
 
 
 
@@ -51,7 +51,7 @@ Updated dependencies
 ------------------------------------------------------------
 
 -   [LArSoft
-    v06.75.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067500){.external}
+    v06.75.00](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/ReleaseNotes067500)
 -   cetbuildtools v7\_03\_02
 
 

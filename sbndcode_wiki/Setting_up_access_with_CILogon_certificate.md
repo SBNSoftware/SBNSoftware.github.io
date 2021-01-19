@@ -34,7 +34,7 @@ Setting up access with CILogon certificate
             access]
 
 DUNE has [such a good
-explanation](https://web.fnal.gov/collaboration/DUNE/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx){.external}
+explanation](https://web.fnal.gov/collaboration/DUNE/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx)
 that\... well, this is a copy of it.
 
 
@@ -42,7 +42,7 @@ that\... well, this is a copy of it.
 First: Why would you want to do this?
 --------------------------------------------------------------------------------------------
 
-[CILogon](http://cilogon.org){.external} provides a free, *year-long
+[CILogon](http://cilogon.org) provides a free, *year-long
 certificate* that you can load into your browser and use for accessing
 the SBN DocDb. Note that this compares with the *one-week long* KCA
 certificate (now going to be discontinued).
@@ -94,7 +94,7 @@ No penalty in doing this more often.
     the list (and you are a part of SBND, of course):
     -   you will need to obtain an account with one of the institutions
         supporting CILogon (hint:
-        [Fermilab](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797){.external}
+        [Fermilab](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797)
         ) before proceeding with the instructions on this page
 4.  enter a Password to protect your to be generated certificate; do it!
     You will tell your browser to remember it for you, in the end

@@ -28,7 +28,7 @@ sbndcode v08\_13\_00\_1\_SBNWorkshop0319 Release Notes
 [list of sbndcode
 releases](List_of_SBND_code_releases.html)\
 Download instructions for [sbndcode
-v08\_13\_00\_1\_SBNWorkshop0319](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00_1_SBNWorkshop0319/sbndcode-v08_13_00_1_SBNWorkshop0319.html){.external}
+v08\_13\_00\_1\_SBNWorkshop0319](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v08_13_00_1_SBNWorkshop0319/sbndcode-v08_13_00_1_SBNWorkshop0319.html)
 
 
 

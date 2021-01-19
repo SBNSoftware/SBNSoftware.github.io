@@ -33,7 +33,7 @@ We have a limited quota of space as well, so fill it responsibly.
   ------------------------- ---------------------
 
 ([check the persistent space
-monitoring\...](https://fifemon.fnal.gov/monitor/dashboard/db/dcache-persistent-usage-by-vo?orgId=1&var-VO=sbnd){.external})\
+monitoring\...](https://fifemon.fnal.gov/monitor/dashboard/db/dcache-persistent-usage-by-vo?orgId=1&var-VO=sbnd))\
 More details are in [FIFE
 wiki](Understanding_storage_volumes.html).
 

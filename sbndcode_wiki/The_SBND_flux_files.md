@@ -31,7 +31,7 @@ Neutrino flux
 ----------------------------------------------
 
 While flux has a [specific meaning in general
-physics](https://en.wikipedia.org/wiki/Flux){.external}, neutrino
+physics](https://en.wikipedia.org/wiki/Flux), neutrino
 physicists normally use \'flux\' as shorthand when referring to the
 neutrino rays impinging on a detector, often from a beam-line. \'Flux\'
 does also get used in a more literal sense to describe the number of
@@ -52,7 +52,7 @@ How the flux files are produced changed in 2017 but they are still used
 in LArSoft/sbndcode in exactly the same way. More information about how
 the flux files used to be generated and how they are generated now can
 be found in [docdb
-5672](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=5672){.external}
+5672](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=5672)
 
 
 
