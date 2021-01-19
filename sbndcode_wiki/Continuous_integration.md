@@ -79,3 +79,10 @@ Failures
     -   If it\'s something small like an unused variable it\'s often
         faster to quickly make the change yourself than emailing the
         person.
+
+Continuous Integration Validation Plots
+---------------------------------------
+
+- There is a new expanded continuous integration system in place which 
+  compares validation plots from the current codebase to the reference plots. 
+  See [here](CI_Validation.html) for more information.
