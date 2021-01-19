@@ -19,7 +19,7 @@ How to access samples
 ----------------------
 
 Some instructions on how to access sample files are provided in an [older ICARUS wiki page](https://cdcvs.fnal.gov/redmine/projects/sbn-analysis-group/wiki/How_to_access_ICARUS_sample):
-https://cdcvs.fnal.gov/redmine/projects/sbn-analysis-group/wiki/How_to_access_ICARUS_sample
+<https://cdcvs.fnal.gov/redmine/projects/sbn-analysis-group/wiki/How_to_access_ICARUS_sample>
 
 The following instructions aim to quickly go through the most frequently needed steps.
 
