@@ -3,6 +3,7 @@ layout: page
 title: Building a release on Jenkins
 ---
 
+[Return to Release Management Workflow](https://sbnsoftware.github.io/sbndcode_wiki/Release_management_workflow.html)
 
 
 Building a release on Jenkins
