@@ -3,6 +3,7 @@ layout: page
 title: Write files to SciSoft
 ---
 
+[Return to Release Management Workflow](https://sbnsoftware.github.io/sbndcode_wiki/Release_management_workflow.html)
 
 
 Write files to SciSoft
