@@ -88,13 +88,12 @@ A few SBND people are allowed to log as `cvmfssbnd` on
 \
 As of December 2016, these people are blessed:
 
-  --------------------------------------------------------------
-  [Andrzej Szelc](mailto:andrzej.szelc@manchester.ac.uk)
-  [Gianluca Petrillo](mailto:petrillo@fnal.gov)
-  [Corey Adams](mailto:corey.adams@yale.edu)
-  [Roxanne Guenette](mailto:Roxanne.Guenette@physics.ox.ac.uk)
-  [Tom Brooks](mailto:tom.g.r.brooks@gmail.com)
-  --------------------------------------------------------------
+-  [Andrzej Szelc](mailto:aszelc@ed.ac.uk)
+-  [Gianluca Petrillo](mailto:petrillo@fnal.gov)
+-  [Corey Adams](mailto:corey.adams@yale.edu)
+-  [Roxanne Guenette](mailto:Roxanne.Guenette@physics.ox.ac.uk)
+-  [Tom Brooks](mailto:tom.g.r.brooks@gmail.com)
+-  [Andrew Scarff](mailto:a.scarff@sheffield.ac.uk)
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfssbnd`.\
