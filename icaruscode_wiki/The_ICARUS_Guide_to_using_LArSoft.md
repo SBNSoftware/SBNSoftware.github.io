@@ -1,6 +1,7 @@
 ---
 layout: page
 title: The ICARUS Guide to using LArSoft
+toc: true
 ---
 
 
@@ -8,12 +9,6 @@ title: The ICARUS Guide to using LArSoft
 The ICARUS Guide to using LArSoft
 ======================================================================================
 
--   **Table of contents**
--   [The ICARUS Guide to using
-    LArSoft]
-    -   [Brief LArSoft overview.]
-    -   [List of ICARUS code releases]
-    -   [Useful Examples]
 
 > DISCLAIMER: Due to rapid development this page can become out of date
 > at times. As well, remember that unknown problems don\'t materialize
