@@ -28,7 +28,7 @@ in release management, these include:
     certificate](Setting_up_access_with_CILogon_certificate.html)
     loaded in your browser (Will need [Fermilab
     VPN](VPN.html) running if off site)
--   Access to <scisoftgpvm01.fnal.gov >
+-   Access to `scisoftgpvm01.fnal.gov`
 
 
 
