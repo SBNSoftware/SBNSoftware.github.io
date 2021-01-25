@@ -24,14 +24,14 @@ Summary
 Instructions
 --------------------------------------------
 
--   Log on to the cvmfs server\
+-   Log on to the cvmfs server
 
         ssh cvmfssbnd@oasiscfs.fnal.gov
 
 -   Source content for the sbnd cvmfs repository will be visible in
     /cvmfs/sbnd.opensciencegrid.org
 
--   Check the last tags of the cvmfs repository\
+-   Check the last tags of the cvmfs repository
 
         cvmfs_server tag -l sbnd.opensciencegrid.org
 
@@ -39,11 +39,11 @@ Instructions
     over some manifest files into your current directory for some
     reason, these can just be deleted.
 
--   Start a transaction\
+-   Start a transaction
 
         cvmfs_server transaction sbnd.opensciencegrid.org
 
--   Update repository content with shell scripts\
+-   Update repository content with shell scripts
 
         ~/scripts/install_on_cvmfs.sh sbnd-< dot version (no preceeding v) >
 
@@ -53,12 +53,12 @@ Instructions
 
 -   Make sure the installation didn\'t fail.
 
--   End transaction and publish updated content\
+-   End transaction and publish updated content
 
         cvmfs_server publish -m "Published sbndcode < version > and sbndutil < version >" -a < new tag > sbnd.opensciencegrid.org
 
 -   If something goes wrong and you want to get rid of the changed you
-    just made and end the transaction you can\
+    just made and end the transaction you can
 
         cvmfs_server abort sbnd.opensciencegrid.org
 
@@ -71,18 +71,18 @@ Instructions
 
 
 
-sbnd\_data
+sbnd_data
 ---------------------------------------
 
 -   If you want to update sbnd\_data without changing the version number
     you can add new files to the relevant `/grid/fermiapp` directory and
-    use `rsync`\
+    use `rsync`
 
         rsync -r < user >@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/< version >* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
 
 
 
-Details: install\_on\_cvmfs.sh
+Details: install_on_cvmfs.sh
 ----------------------------------------------------------------------------
 
 -   A modified version of the script used to deploy on `/grid/fermiapp/`
