@@ -729,7 +729,7 @@ number of jobs that have to be managed when running in serial mode. To
 avoid this we split the submission into multiple master processes, each
 handling the jobs on 128 nodes as follows:
 
-``` bash
+```bash
 # if default queue, split into separate 128 node jobs and launch as forked processes
 # if in debug queue just run as single job
 {% if queue == 'default' %}
