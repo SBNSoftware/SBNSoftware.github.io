@@ -41,7 +41,7 @@ See below for helpful links:
 ### Contribute to this wiki
 
 The content of this wiki is tracked by the [GIT repository SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io).
-It can be edited directly online or by pushing changes to the repository with GIT.
+It can be edited directly online or by pushing changes to the repository with GIT. Take a look at an [example](example).
 
 
 ### Support or Contact
