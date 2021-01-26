@@ -730,7 +730,7 @@ avoid this we split the submission into multiple master processes, each
 handling the jobs on 128 nodes as follows:
 
 {% raw %}
-```bash
+```jinja
 # if default queue, split into separate 128 node jobs and launch as forked processes
 # if in debug queue just run as single job
 {% if queue == 'default' %}
