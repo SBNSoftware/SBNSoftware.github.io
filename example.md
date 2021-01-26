@@ -61,8 +61,8 @@ Long math $\max\limits_\theta L_{\theta_0}(\theta)$, subject to $D_{KL}^{\rho_{\
 Centered math
 $$f(x)=x^2$$
 
-you can also have references, like equation \ref{eq:mc2}:
 $$ E = m\cdot c^2 \label{eq:mc2}$$
+you can also have references, like equation \ref{eq:mc2}, ... but maybe not yet working:
 
 $$P_{\alpha \rightarrow \beta ,\alpha \neq \beta }=\sin ^{2}(2\theta )\sin ^{2}\left(1.27{\frac {\Delta m^{2}L}{E}}{\frac {\rm {[eV^{2}]\,[km]}}{\rm {[GeV]}}}\right)\label{eq:oscillation}$$
 
