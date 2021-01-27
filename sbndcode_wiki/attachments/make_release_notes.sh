@@ -158,7 +158,7 @@ echo >> ${relnote}
 echo "New features" >> ${relnote}
 echo "---------------------------------------------------" >> ${relnote}
 echo >> ${relnote}
-echo "Bug fixes(Bug-fixes)" >> ${relnote}
+echo "Bug fixes" >> ${relnote}
 echo "---------------------------------------------------" >> ${relnote}
 echo >> ${relnote}
 echo "Updated dependencies" >> ${relnote}
