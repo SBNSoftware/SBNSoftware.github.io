@@ -41,7 +41,7 @@ The status of open requests can be checked at the [SBN Production Requests Datab
 
 Available Samples
 --------------------------
-A list of samples that were requested and produced since Oct 2020 can also be found at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). The spreadsheet contain the configuration files used, the code version, the statistics produced and the SAM dataset for access. If some necessary information can't be found, please emails the production group at [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
+A list of samples that were requested and produced since Oct 2020 can also be found at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). The spreadsheet contain the configuration files used, the code version, the statistics produced and the SAM dataset for access. If necessary information can't be found, please email the production group at [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
 
 Contributing to this wiki
