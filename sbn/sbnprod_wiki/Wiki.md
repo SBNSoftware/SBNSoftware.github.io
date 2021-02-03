@@ -14,9 +14,7 @@ toc_title: SBN Production Contents
 SBN Production Page
 ==========================================
 
-Temporary link to information on the latest samples:
-https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit#gid=1971194639
-
+Temporary [link](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit#gid=1971194639) to information on the latest samples
 
 Here you will found how to make production sample requests as well as (comming soon) instructions and documentation
 
