@@ -31,7 +31,7 @@ Process list:
 
 sample         | BNB neutrino (`v08_37_00`)
 -------------- | -----------------------------------------------------------------
-Author         | @rhowell42
+Author         | Ryan Howell
 `icaruscode`   | [`v08_37_00`](#v08_37_00)
 Generation     | `simulation_genie_icarus_bnb.fcl`
 Filtering      | _none_
@@ -43,8 +43,18 @@ Data path      | `/pnfs/icarus/persistent/users/rhowell/poms/v08_37_00/detsim/bn
 
 ### Neutrino interactions: NuMi beam ##########################################
 
-To do!
-
+sample         | NuMI neutrino (`v09_10_01`)
+-------------- | -----------------------------------------------------------------
+Author         | production (request by NuMI group)
+`icaruscode`   | [`v09_10_01`](#v09_10_01)
+Generation     | `simulation_genie_icarus_numi_volDetEnclosure.fcl`
+Filtering      | `filter_genie_active.fcl`
+Detector       | `standard_g4_icarus.fcl`
+Digitisation   | `multitpc_detsim_icarus.fcl`
+Reconstruction | `reco_icarus_driver_reco_multitpc_gauss.fcl`
+               | `reco_icarus_driver_reco_multitpc_raw.fcl `
+SAM definition | `ICARUS_prod_2020A_00_numioffaxis_v09_10_01_reco2`
+Data path      | 
 
 
 ### Cosmic ray interactions ###################################################
@@ -99,3 +109,7 @@ Information in wiki:
 * PMT single photoelectron response with double exponential shape, 55 ADC (7 mV) amplitude
 * PMT digitisation threshold: 5 ADC
 * PMT electronics noise: disabled by default (3 ADC when enabled)
+
+### `v09_10_01`
+
+* geometry: [`20201107`](https://sbnsoftware.github.io/icaruscode_wiki/Detector_geometry.html) _without_ 3 m thick concrete overburden
