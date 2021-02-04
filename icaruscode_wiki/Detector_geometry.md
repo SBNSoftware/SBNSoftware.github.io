@@ -15,25 +15,25 @@ text file in
 directory.
 
 
-| version    | introduced  | default     | file path                                                             | description
-| ---------- | ----------- | ----------- | --------------------------------------------------------------------- | ------------
-| `20201107` | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`               | more realistic description of walls, updates to PMT materials, with concrete overburden
-| `20201107` | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml` | more realistic description of walls, updates to PMT materials, with no concrete overburden
-| `20200707` | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`               | more realistic description of walls, updates to PMT materials, with concrete overburden
-| `20201107` | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml` | more realistic description of walls, updates to PMT materials, with no concrete overburden
+| version    | introduced  | default     | file path                                                             | based on   | description
+| ---------- | ----------- | ----------- | --------------------------------------------------------------------- | ---------- | ------------
+| `20201107` | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`               | `20200709` | more realistic description of walls, updates to PMT materials, with concrete overburden
+| `20201107` | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml` | `20200709` | more realistic description of walls, updates to PMT materials, with no concrete overburden
+| `20200709` | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`               | `20200307` | fixed overlaps, with concrete overburden
+| `20200709` | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml` | `20200307` | fixed overlaps, with no concrete overburden
 
 
 ### Older versions
 
 | version    | introduced  | default     | removed     | file path                                                            | description
 | ---------- | ----------- | ----------- | ----------- | -------------------------------------------------------------------- | ------------------------------
-|            | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
-|            | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
+| `20200307` | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
+| `20200307` | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
 |            | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
 |            | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`               | complete geometry, first induction plane wires 18 m, with concrete overburden
 |            | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
 |            | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdm`, "temporary" version with niobium and molybdenum components of steel removed
+|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
 |            | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
 
 > _Note_: detector geometry description files have been moved from
