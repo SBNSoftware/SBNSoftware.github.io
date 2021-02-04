@@ -11,25 +11,35 @@ Geometry description versions
 
 Detector geometry description is currently stored in GDML format as a
 text file in
-[icaruscode/Geometry/gdml](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
+[icarusalg/Geometry/gdml](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
 directory.
 
 
-| version  | introduced  | default     | file path                                                     | description
-| -------- | ----------- | ----------- | ------------------------------------------------------------- | ------------
-|          | `v08_45_00` | `v08_50_02` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml` | complete geometry, first induction plane wires 9 m, with no concrete overburden
-|          | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_complete.gdml`               | complete geometry, first induction plane wires 9 m, with concrete overburden
-|          | `v08_44_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|          | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`        | complete geometry, first induction plane wires 18 m, with concrete overburden
+| version    | introduced  | default     | file path                                                             | description
+| ---------- | ----------- | ----------- | --------------------------------------------------------------------- | ------------
+| `20201107` | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`               | more realistic description of walls, updates to PMT materials, with concrete overburden
+| `20201107` | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml` | more realistic description of walls, updates to PMT materials, with no concrete overburden
+| `20200707` | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`               | more realistic description of walls, updates to PMT materials, with concrete overburden
+| `20201107` | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml` | more realistic description of walls, updates to PMT materials, with no concrete overburden
+
 
 ### Older versions
 
-| version | introduced  | default     | removed     | file path                                                     | description
-| ------- | ----------- | ----------- | ----------- | ------------------------------------------------------------- | ------------------------------
-|         | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml` | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
-|         | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|         | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`         | `icarus_complete.gdm`, "temporary" version with niobium and molybdenum components of steel removed
-|         | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`               | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
+| version    | introduced  | default     | removed     | file path                                                            | description
+| ---------- | ----------- | ----------- | ----------- | -------------------------------------------------------------------- | ------------------------------
+|            | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
+|            | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
+|            | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`               | complete geometry, first induction plane wires 18 m, with concrete overburden
+|            | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
+|            | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdm`, "temporary" version with niobium and molybdenum components of steel removed
+|            | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
+
+> _Note_: detector geometry description files have been moved from
+> [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
+> into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
+> starting with ICARUS software release `v09_06_00` (October 2020).
 
 
 ### Testing a new version of the geometry description
@@ -43,7 +53,7 @@ To run the test in the current geometry, one would run:
     lar -c test_geometry_icarus.fcl
 
 after setting up the desired version of `icaruscode` (e.g.
-`setup icaruscode v08_34_00 -q e17:prof`; any qualifier will do).
+`setup icaruscode v09_15_00 -q e19:prof`; any qualifier will do).
 This test is supposed to succeed, or otherwise that geometry/channel
 mapping would not be the default one!
 That configuration can be used as a template to test other geometries,
@@ -69,7 +79,7 @@ the relevant services: the recommended way is:
     }
 
 The configuration file
-[`icaruscode/Geometry/icarus_geometry.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/icarus_geometry.fcl)
+[`icarusalg/Geometry/icarus_geometry.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/icarus_geometry.fcl)
 defines and describes other options (look at the documentation at top of the file).
 
 If a specific geometry is needed in a job configuration that has already
@@ -81,7 +91,7 @@ the desired geometry.
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[`icaruscode/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
+[`icarusalg/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 For some selected geometry configurations, drop-in FHiCL files are
 available which change the geometry of a job configuration into a
@@ -97,7 +107,7 @@ Your job configuration file can be:
 
 where we have used the drop-in configuration
 `use_overburden_geometry_icarus.fcl`
-([`icaruscode/Geometry/use_overburden_geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/use_overburden_geometry_icarus.fcl)).
+([`icarusalg/Geometry/use_overburden_geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/use_overburden_geometry_icarus.fcl)).
 _[note that there is a `prodcorsika_overburden_icarus.fcl` for this
 specific example...]_
 
@@ -118,7 +128,7 @@ name                                              | introduced  | description   
 > the configurations `use_overburden_geometry_icarus.fcl` and
 > `use_nooverburden_geometry_icarus.fcl` used to directly select a
 > specific geometry. Now they rely on what is defined as "default"
-> geometry in [`icaruscode/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl)
+> geometry in [`icarusalg/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl)
 > for their respective categories (for example, in `v08_52_00`
 > both geometries default to the split 9-m long wire versions).
 
@@ -138,6 +148,10 @@ name                                              | introduced  | description   
 >
 > and pulls in most ICARUS simulation services, but still requires careful check.
 
+> **Note** (yet another): detector geometry description files have been moved
+> from [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
+> into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
+> starting with ICARUS software release `v09_06_00` (October 2020).
 
 
 ### `icaruscode` versions `v08_51_00` and earlier
@@ -169,14 +183,13 @@ Where is located everything?
 A LArSoft module (analyzer) is available which produces an outline of
 the location and characteristics of the main elements of the detector:
 after setting up the desired version of `icaruscode` (e.g.
-`setup icaruscode v08_34_00 -q e17:prof`),
+`setup icaruscode v09_15_00 -q e19:prof`),
 
     lar -c dump_icarus_geometry.fcl
 
-will create a text file (in `icaruscode` `v08_36_00` it is called
+will create a text file (in `icaruscode` `v09_15_00` it is called
 `ICARUS-geometry.txt`) with information about wires, TPC's, optical
-detectors, auxiliary detectors (i.e. CRT) etc. in a human-readable
-form.
+detectors, auxiliary detectors (i.e. CRT) etc. in a human-readable form.
 By changing the configuration (in particular, `services.Geometry.ROOT`
 and `services.Geometry.GDML` parameters), alternative geometries can be
 dumped.
@@ -186,4 +199,4 @@ a channel number:
 
     lar -c dump_icarus_channelmap.fcl
 
-(which in `icaruscode` `v08_36_00` it is called `icarus_channelmap.txt`).
+(which in `icaruscode` `v09_15_00` it is called `icarus_channelmap.txt`).
