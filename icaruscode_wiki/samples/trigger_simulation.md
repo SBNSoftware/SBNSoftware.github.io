@@ -109,7 +109,7 @@ Information in wiki:
 
 * geometry: first induction plane wires 18 m long, _with_ 3 m thick concrete overburden
 
-### `v09_06_01`
+### `v09_06_00`
 
 * geometry: first induction plane wires 9 m long, _without_ 3 m thick concrete overburden by default
 * visibility library: [September 2020](../physics/PhotonLibrary.md#20200925)
