@@ -52,7 +52,7 @@ Filtering      | `filter_genie_active.fcl`
 Detector       | `standard_g4_icarus.fcl`
 Digitisation   | `multitpc_detsim_icarus.fcl`
 Reconstruction | `reco_icarus_driver_reco_multitpc_gauss.fcl`
-               | `reco_icarus_driver_reco_multitpc_raw.fcl `
+"              | `reco_icarus_driver_reco_multitpc_raw.fcl`
 SAM definition | `ICARUS_prod_2020A_00_numioffaxis_v09_10_01_reco2`
 Data path      | 
 
