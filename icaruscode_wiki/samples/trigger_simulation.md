@@ -5,10 +5,10 @@ This is meant to be a list of the samples that are used for trigger simulation.
 This kind of lists has the remarkable ability of falling out of date in days, so in case of doubt throw a line to [SBN Slack channel #icarus-trigger-simulation](https://shortbaseline.slack.com/archives/G015B91SL8N).
 
 There are two sections in this page:
-* the [sample list] includes the relevant samples, SAM definitions,
+* the [sample list](#the-samples) includes the relevant samples, SAM definitions,
   file locations, processing information and known uses of the samples
   (which is going to be partial for sure)
-* the [version list] describes the details of the software used
+* the [version list](#the-versions) describes the details of the software used
   for those samples, with stress on what is different from earlier versions and
   from "standard" samples
 
