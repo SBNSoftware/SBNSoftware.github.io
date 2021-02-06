@@ -59,8 +59,16 @@ Data path      |
 
 ### Cosmic ray interactions ###################################################
 
-To do!
-
+sample         | Short exposure (`v09_06_00`)
+-------------- | -------------------------------------------------------------------
+Author         | Marta Babicz
+`icaruscode`   | [`v09_06_00`](#v09_06_00)
+Generation     | custom (`prodcorsika_standard_icarus.fcl` + 500 &micro;s exposure)
+Detector       | custom (`cosmics_g4_icarus_volDetEnclosure.fcl`)
+Digitisation   | custom (`standard_detsim_icarus.fcl` with PMT only)
+Reconstruction | none
+SAM definition | 
+Data path      | `/pnfs/icarus/scratch/users/mbabicz/cosmic_muons_p0[12]/v09_06_00`
 
 
 ### BNB beam events (neutrino interaction(s) + background(s)) #################
@@ -101,12 +109,17 @@ Information in wiki:
 
 * geometry: first induction plane wires 18 m long, _with_ 3 m thick concrete overburden
 
-
-### `v09_09_01`
+### `v09_06_01`
 
 * geometry: first induction plane wires 9 m long, _without_ 3 m thick concrete overburden by default
 * visibility library: [September 2020](../physics/PhotonLibrary.md#20200925)
 * PMT single photoelectron response with double exponential shape, 55 ADC (7 mV) amplitude
+* PMT digitisation threshold: 4 ADC
+* PMT electronics noise: disabled by default
+
+### `v09_09_01`
+
+As [`v09_06_00`](#v09_06_00) above, plus:
 * PMT digitisation threshold: 5 ADC
 * PMT electronics noise: disabled by default (3 ADC when enabled)
 
