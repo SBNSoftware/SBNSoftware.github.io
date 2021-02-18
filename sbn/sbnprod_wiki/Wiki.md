@@ -43,11 +43,11 @@ Available Samples
 --------------------------
 A list of samples that were requested and produced since Oct 2020 can also be found at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). The spreadsheet contain the configuration files used, the code version, the statistics produced and the SAM dataset for access. If necessary information can't be found, please email the production group at [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
- ### Notes on samples ###
- * MC2020A
-   * SBND Intime Cosmic sample in MCP2020A (And possibly older productions)
-     * bug in LArSoft can lead to issues where the best matching particle is non existent
-     * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894)  
+### Notes on samples ###
+* MC2020A
+ * SBND Intime Cosmic sample in MCP2020A (And possibly older productions)
+  * bug in LArSoft can lead to issues where the best matching particle is non existent
+  * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894)  
       
 
 
