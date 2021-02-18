@@ -45,9 +45,9 @@ A list of samples that were requested and produced since Oct 2020 can also be fo
 
 ### Notes on samples ###
 * MC2020A
- * SBND Intime Cosmic sample in MCP2020A (And possibly older productions)
-  * bug in LArSoft can lead to issues where the best matching particle is non existent
-  * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894)  
+  * SBND Intime Cosmic sample in MCP2020A (And possibly older productions)
+    * bug in LArSoft can lead to issues where the best matching particle is non existent
+    * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894)  
       
 
 
