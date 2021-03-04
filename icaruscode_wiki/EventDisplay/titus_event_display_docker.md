@@ -60,3 +60,71 @@ TITUS Event Display via docker
   brew install socat
   ```
 - For OSX docker will respect Apple's file system sandbox guidelines... meaning that the path to your data file area on your local machine is best set off of your "Users" area, for example: `/Users/yourusername/data`
+
+
+Some troubleshooting and experiences
+-------------------------------------
+
+### `Could not connect to display :0` (I)
+
+On a Gentoo Linux system I got blessed with this message when running `evd.py`:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+No protocol specified
+qt.qpa.screen: QXcbConnection: Could not connect to display :0
+Could not connect to any X display.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+and that was it.
+
+Connection to the graphics (`X.org`) server requires several conditions:
+* a socket to the X server must be present in `/tmp/.X11-unix` directory
+  (both on the host machine and inside the container); for example:
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  $ ls -l /tmp/.X11-unix/
+  total 0
+  srwxrwxrwx 1 root root 0 Mar  4 01:14 X0
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  The volume binding argument `-v /tmp/.X11-unix:/tmp/.X11-unix:ro` maps
+  the host `/tmp/.X11-unix` into the container one, for everybody happiness.
+* `DISPLAY` variable must be set to `:N` or equivalent, where `N` is the server number
+  (if there is a `/tmp/.X11-unix/X0`, the server number is `0`);
+  the argument `-e DISPLAY=$DISPLAY` imports host's `DISPLAY` value
+  into the container.
+* a Xauthority cookie must be available in `~/.Xauthority`, or else the X server
+  may refuse to serve. This can be obtained with _another volume binding_:
+  `-v "${HOME}/.Xauthority:/home/docker/.Xauthority"` which again imports the cookies
+  from user's home directory in the host into the home directory of user `docker`
+  (which is the one we use inside the container, per `-u docker` argument).
+  This step may be not necessary if the authentication is provided or circumvented
+  in a different way (for example, `xhost +si:localuser:$USER` or `xhost +local`
+  or even `xhost +`).
+* Xauthority cookie contains the name of the host it belongs to. A shortcut
+  is to set container's host-name the same as the host host-name
+  (urgh, getting entangled with "host" overloading); this can be achieved with
+  the argument `-h "$HOSTNAME"`.
+
+In conclusion, my experience with my Gentoo Linux host was that I needed to add:
+`-v "${HOME}/.Xauthority:/home/docker/.Xauthority" -h "$HOSTNAME"` to the command
+suggested in the main instructions.
+
+Details of the system: Gentoo Linux (updated 20210303), Linux 5.10.13, SystemD-based,
+user added to `docker` UNIX group (`docker` is not run with `sudo`);
+no `xhost` in the system.
+
+
+### `Could not connect to display :0` (II)
+
+On a Ubuntu Linux system I got blessed with this message when running `evd.py`:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+No protocol specified
+qt.qpa.screen: QXcbConnection: Could not connect to display :0
+Could not connect to any X display.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+and that was it.
+
+The rules are the same as mentioned [above](#could-not-connect-to-display-0-i),
+but here the problem is that `/tmp/.X11-unix/X0` is not bound into the container.
+
+Solution: I still have to figure it out...
+
+Details of the system: Ubuntu Linux LTS 20.04, docker installed via Discover
+(front-end of `apt`), and running via `sudo`.
