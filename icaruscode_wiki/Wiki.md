@@ -62,6 +62,7 @@ Monte Carlo productions
 * [samples from SBN production group](samples/MCproduction.md)
 * notes from specific projects:
     * [samples used for trigger simulation](samples/trigger_simulation.md)
+* [finding _data_ files](samples/datafiles.md)
 
 Useful Tidbits of information.
 ------------------------------
