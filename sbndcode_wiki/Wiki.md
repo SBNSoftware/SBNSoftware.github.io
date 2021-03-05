@@ -89,6 +89,7 @@ Useful Tidbits of Information.
 -   [VPN](VPN.html)
 -   [Using project.py for Grid
     Jobs](Using_projectpy_for_Grid_Jobs.html)
+-   [WebEVD for SBN](WebEVD_for_SBN.html)
 -   [Viewing events remotely with
     VNC](Viewing_events_remotely_with_VNC.html)
 -   [Helpful tips for
