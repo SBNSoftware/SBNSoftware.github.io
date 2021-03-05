@@ -12,6 +12,8 @@ toc_title: TITUS Contents
 TITUS Event Display via docker
 ==============================
 
+Instructions
+-------------
 
 #### Install docker On Your Local Machine
 - Instructions for installing and configuring docker can be found at the docker docs site, linked [here](https://docs.docker.com/get-docker/)
