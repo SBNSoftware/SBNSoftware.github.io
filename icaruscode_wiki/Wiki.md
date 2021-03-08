@@ -21,6 +21,7 @@ Viewing events in the event display
 -----------------------------------------
 
 - [Instructions for running the TITUS event display](EventDisplay/titus_event_display.md)
+- [WebEVD for SBN](https://sbnsoftware.github.io/sbndcode_wiki/WebEVD_for_SBN.html)
 
 
 Developing ICARUS code
