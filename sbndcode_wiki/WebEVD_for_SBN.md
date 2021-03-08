@@ -1,10 +1,15 @@
 # WebEVD for SBN
 
-WebEVD is available as a ups product. You will need to set it up, along with a compatible version of sbndcode (for service configurations).
+The instructions on this page have been written assuming SBND for completeness. The same instructions work for 
+The above instructions should work, substituting `icarus` for `sbnd` throughout, except that `icaruscode v09_17_02` is not yet available (as of 5 March 2021).
+
+WebEVD is available as a ups product. You will need to set it up, along with a compatible version of `sbndcode`/`icaruscode` (for service configurations).
 
     source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
+    source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_icarus.sh
     setup webevd v09_05_01 -qe19:prof
     setup sbndcode v09_17_02 -qe19:prof
+    setup icaruscode v09_17_02 -qe19:prof
 
 These are the first versions for which WebEVD worked well for SBN, current as of March 2021. You may be able to use newer versions.
 
@@ -13,6 +18,10 @@ These are the first versions for which WebEVD worked well for SBN, current as of
 To run the event display, simply
 
     lar -c webevdjob_sbnd.fcl my_file.root
+    
+or
+
+    lar -c webevdjob_icarus.fcl my_file.root
 
 and follow on-screen instructions. The ssh command it prints is to be run on your local machine (where your browser window is).
 
@@ -45,7 +54,3 @@ You should make any changes on a new feature branch, push the branch to a fork o
 ## Reporting bugs / suggesting features
 
 The github issue tracker is at https://github.com/LArSoft/webevd/issues
-
-## WebEVD for Icarus
-
-The above instructions should work, substituting `icarus` for `sbnd` throughout, except that `icaruscode v09_17_02` is not yet available (as of 5 March 2021).
