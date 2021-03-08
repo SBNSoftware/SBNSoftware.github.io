@@ -1,8 +1,5 @@
 # WebEVD for SBN
 
-The instructions on this page have been written assuming SBND for completeness. The same instructions work for 
-The above instructions should work, substituting `icarus` for `sbnd` throughout, except that `icaruscode v09_17_02` is not yet available (as of 5 March 2021).
-
 WebEVD is available as a ups product. You will need to set it up, along with a compatible version of `sbndcode`/`icaruscode` (for service configurations).
 
     source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
