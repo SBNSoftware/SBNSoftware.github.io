@@ -291,6 +291,18 @@ We can use different resources:
 
 To submit jobs, you'll also need a [certificate proxy](Get_a_certificate_proxy.md).
 
+_Note_: to ensure that your LArSoft jobs are executed in a complete environment,
+it is strongly recommended that the jobs are executed in the proper [Singularity container](https://singularity.lbl.gov)
+([FIFE documentation here](https://cdcvs.fnal.gov/redmine/projects/fife/wiki/Singularity_jobs)).
+One such container featuring Scientific Linux Fermi 7 (SL7) is available in CVMFS,
+and it can be enabled by adding to `jobsub_submit` the options:
+`--append_condor_requirements='(TARGET.HAS_SINGULARITY=?=true)' -l '+SingularityImage="/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-sl7:latest"'`
+(sandwiched in `<jobsub> </jobsub>` block within each of the `<stage>` blocks
+of job XML configuration when using LArBatch `project.py` to submit the jobs).
+Also note that FIFE recommends that Operating System selection be not enforced
+via `--os` option when using containers (after all, we are explicitly shipping the whole OS);
+in `project.py` XML job configurations, this is equivalent to removing the `<os>` blocks.
+
 
 
 Software distribution
