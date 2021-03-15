@@ -11,6 +11,8 @@ Find data files in [this spreadsheet](https://docs.google.com/spreadsheets/d/1nk
 
 Note that this is a protected link, you will need to request access to view the list of runs.
 
+You can find a hook to how to read from tape files in [the MC samples page](MCproduction.md#copy-all-files-in-a-sam-definition-from-tape)
+
 
 From the run number
 --------------------
