@@ -59,9 +59,11 @@ An SL7 Singularity container can be found here:
 LArSoft can then be run using the Singularity container with a simple
 bash script by passing the commands using a heredoc, for example:
 
+<!--
 <details>
 <summary>larsoft_example.sh</summary>
 <p>
+-->
     
 ```
     #!/bin/bash
@@ -78,9 +80,10 @@ bash script by passing the commands using a heredoc, for example:
 
     EOF
 ```
-
+<!--
 </p>
 </details>
+-->
 
 Things to bear in mind when using Singularity containers:
 
@@ -130,9 +133,12 @@ pip install Balsam
 ```
 Note: installation of some packages from old approach below may be required. 
 
+<!--
 <details>
 <summary>Manual installation [Old]</summary>
 <p>
+-->
+Old instructions:
 This can be pulled from github (https://github.com/argonne-lcf/balsam) in the standard way, then we install it using a
 python virtual environment as follows:
 
@@ -155,8 +161,10 @@ pip install setproctitle
 pip install -e /lus/theta-fs0/projects/neutrinoADSP/path/to/balsam_version/balsam/
 ```
 
+<!--
 </p>
 </details>
+-->
 
 Note that when you log into Theta subsequently, you will have to load
 the python virtual environment by doing:
@@ -178,9 +186,11 @@ The Balsam configuration can be adjusted by modifying
 These should be configured correctly for Theta by default. The settings
 I use can be seen here:
 
+<!--
 <details>
 <summary>settings.json</summary>
 <p>
+-->
     
 ```json
 {
@@ -205,9 +215,10 @@ I use can be seen here:
  "JOB_TEMPLATE": "job-templates/theta.cobaltscheduler.tmpl"
 }
 ```
-
+<!--
 </p>
 </details>
+-->
 
 Settings to note:
 
