@@ -59,9 +59,10 @@ An SL7 Singularity container can be found here:
 LArSoft can then be run using the Singularity container with a simple
 bash script by passing the commands using a heredoc, for example:
 
-[larsoft_example.sh](#){#collapse-22a5fdec-show .collapsible
-.collapsed}[larsoft_example.sh](#)
-
+<details>
+<summary>larsoft_example.sh</summary>
+<p>
+    
 ```bash
     #!/bin/bash
 
@@ -77,6 +78,9 @@ bash script by passing the commands using a heredoc, for example:
 
     EOF
 ```
+
+</p>
+</details>
 
 Things to bear in mind when using Singularity containers:
 
@@ -109,11 +113,27 @@ Balsam is installed on Theta, and the default version can be loaded by:
     # to load specific version
     module load balsam/0.3.5.1
 
-However, the default versions installed on Theta have various issues
-that prevent efficient running at scale in serial-mode. These issues are
-fixed in this branch:
-<https://github.com/balsam-alcf/balsam/tree/serial-mode-zmq>. This can
-be pulled from github in the standard way, then we install it using a
+However, the default versions installed on Theta have various issues that prevent efficient running at scale in serial-mode. 
+
+These issues are fixed in Balsam version 0.4. This can be installed in a python virtual environment as follows:
+```bash
+# create and active virtual env
+module load cray-python
+python -m venv env --system-site-packages
+source env/bin/activate
+
+# install Balsam
+module load gcc/8.3.0
+pip install --upgrade pip
+
+pip install Balsam
+```
+Note: installation of some packages from old approach below may be required. 
+
+<details>
+<summary>Manual installation [Old]</summary>
+<p>
+This can be pulled from github (https://github.com/argonne-lcf/balsam) in the standard way, then we install it using a
 python virtual environment as follows:
 
 ```bash
@@ -133,14 +153,18 @@ pip install setproctitle
 
 # install serial-mode-zmq branch
 pip install -e /lus/theta-fs0/projects/neutrinoADSP/path/to/balsam_version/balsam/
+```
+
+</p>
+</details>
 
 Note that when you log into Theta subsequently, you will have to load
 the python virtual environment by doing:
 
+```bash
 # load virtual env
 source env/bin/activate
 ```
-
 ------------------------------------------------------------------------
 
 
@@ -154,9 +178,10 @@ The Balsam configuration can be adjusted by modifying
 These should be configured correctly for Theta by default. The settings
 I use can be seen here:
 
-[settings.json](#){#collapse-00ab3ced-show .collapsible
-.collapsed}[settings.json](#)
-
+<details>
+<summary>settings.json</summary>
+<p>
+    
 ```json
 {
  "SCHEDULER_CLASS": "CobaltScheduler",
@@ -180,6 +205,9 @@ I use can be seen here:
  "JOB_TEMPLATE": "job-templates/theta.cobaltscheduler.tmpl"
 }
 ```
+
+</p>
+</details>
 
 Settings to note:
 
