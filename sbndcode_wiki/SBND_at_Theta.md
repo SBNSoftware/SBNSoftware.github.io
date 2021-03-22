@@ -63,7 +63,7 @@ bash script by passing the commands using a heredoc, for example:
 <summary>larsoft_example.sh</summary>
 <p>
     
-```bash
+```
     #!/bin/bash
 
     # launch singularity container
