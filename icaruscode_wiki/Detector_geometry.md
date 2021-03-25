@@ -9,18 +9,48 @@ toc: true
 Geometry description versions
 ------------------------------
 
+**Breaking changes in geometry: `v09_18_00`, `v08_57_00`.**
+
+
 Detector geometry description is currently stored in GDML format as a
 text file in
 [icarusalg/Geometry/gdml](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
 directory.
+The "version" string also comprises a compatibility check:
+`Geometry` service will refuse to process an input file generated with a version
+different from the one configured in the current job
+(override with `services.Geometry.SkipConfigurationCheck: true`).
 
 
-| version    | introduced  | default     | file path                                                             | based on   | description
-| ---------- | ----------- | ----------- | --------------------------------------------------------------------- | ---------- | ------------
-| `20201107` | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`               | `20200709` | more realistic description of walls, updates to PMT materials, with concrete overburden
-| `20201107` | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml` | `20200709` | more realistic description of walls, updates to PMT materials, with no concrete overburden
-| `20200709` | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`               | `20200307` | fixed overlaps, with concrete overburden
-| `20200709` | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml` | `20200307` | fixed overlaps, with no concrete overburden
+| version     | introduced  | default     | file path                                                                   | based on   | description
+| ----------- | ----------- | ----------- | --------------------------------------------------------------------------- | ---------- | ------------
+| `icarus_v2` | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107` | fixed orientation of wires, with concrete overburden
+| `icarus_v2` | `v09_18_00` | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107` | fixed orientation of wires, with no concrete overburden
+| `20201107`* | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`                     | `20200709` | more realistic description of walls, updates to PMT materials, with concrete overburden
+| `20201107`* | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml`       | `20200709` | more realistic description of walls, updates to PMT materials, with no concrete overburden
+| `20200709`* | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`                     | `20200307` | fixed overlaps, with concrete overburden
+| `20200709`* | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml`       | `20200307` | fixed overlaps, with no concrete overburden
+
+> _*_ _The detector name configured for these geometry descriptions is `icarus_splitwires`._
+
+
+### Older versions
+
+| version    | introduced  | default     | removed     | file path                                                            | description
+| ---------- | ----------- | ----------- | ----------- | -------------------------------------------------------------------- | ------------------------------
+| `20200307` | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
+| `20200307` | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
+|            | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`               | complete geometry, first induction plane wires 18 m, with concrete overburden
+|            | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
+|            | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
+|            | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
+
+> _Note_: detector geometry description files have been moved from
+> [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
+> into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
+> starting with ICARUS software release `v09_06_00` (October 2020).
 
 
 ### Older versions
@@ -113,14 +143,14 @@ specific example...]_
 
 The available drop in configurations are:
 
-name                                              | introduced  | description                                               | defaults: `v08_52_00`
-------------------------------------------------- | ----------- | --------------------------------------------------------- | ----------------
-`use_overburden_geometry_icarus.fcl`              | `v08_52_00` | default geometry with the addition of concrete overburden | _9-m first induction plane wires_
-`use_nooverburden_geometry_icarus.fcl`            | `v08_52_00` | default geometry but without the concrete overburden      | _9-m first induction plane wires_
-`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | 18-m first induction plane wires geometry with default overburden | _no overburden_ _(see note below)_
-`use_singlewire_nooverburden_geometry_icarus.fcl` | `v08_52_00` | 18-m first induction plane wires without the concrete overburden | _(see note below)_
+name                                              | introduced  | description                                                            | defaults: `v08_52_00`
+------------------------------------------------- | ----------- | ---------------------------------------------------------------------- | ----------------
+`use_overburden_geometry_icarus.fcl`              | `v08_52_00` | default geometry with the addition of concrete overburden              | _9-m first induction plane wires_
+`use_nooverburden_geometry_icarus.fcl`            | `v08_52_00` | default geometry but without the concrete overburden                   | _9-m first induction plane wires_
+`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | 18-m first induction plane wires geometry with default overburden      | _no overburden_ _(see note below)_
+`use_singlewire_nooverburden_geometry_icarus.fcl` | `v08_52_00` | 18-m first induction plane wires without the concrete overburden       | _(see note below)_
 `use_singlewire_overburden_geometry_icarus.fcl`   | `v08_52_00` | 18-m first induction plane wires geometry with the concrete overburden | _(see note below)_
-`use_splitwire_geometry_icarus.fcl`               | `v08_52_00` | 9-m first induction plane wires geometry with default overburden | _no overburden_
+`use_splitwire_geometry_icarus.fcl`               | `v08_52_00` | 9-m first induction plane wires geometry with default overburden       | _no overburden_
 `use_splitwire_nooverburden_geometry_icarus.fcl`  | `v08_52_00` | 9-m first induction plane wires without the concrete overburden
 `use_splitwire_overburden_geometry_icarus.fcl`    | `v08_52_00` | 9-m first induction plane wires geometry with the concrete overburden
 
@@ -132,7 +162,7 @@ name                                              | introduced  | description   
 > for their respective categories (for example, in `v08_52_00`
 > both geometries default to the split 9-m long wire versions).
 
-> **Note**:  PMT channel mapping is also different in the two geomety types:
+> **Note**:  PMT channel mapping is also different in the two geometry types:
 > if photon visibility is needed (`PhotonVisibilityService`)
 > and a old photon library (like the one from August 2018) is being used,
 > it needs a specific configuration; this is for _the_ August 2018 photon library:
