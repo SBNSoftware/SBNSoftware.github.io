@@ -53,25 +53,6 @@ different from the one configured in the current job
 > starting with ICARUS software release `v09_06_00` (October 2020).
 
 
-### Older versions
-
-| version    | introduced  | default     | removed     | file path                                                            | description
-| ---------- | ----------- | ----------- | ----------- | -------------------------------------------------------------------- | ------------------------------
-| `20200307` | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
-| `20200307` | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
-|            | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`               | complete geometry, first induction plane wires 18 m, with concrete overburden
-|            | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
-|            | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
-|            | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
-
-> _Note_: detector geometry description files have been moved from
-> [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
-> into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
-> starting with ICARUS software release `v09_06_00` (October 2020).
-
-
 ### Testing a new version of the geometry description
 
 LArSoft provides a geometry test module with a decent coverage
