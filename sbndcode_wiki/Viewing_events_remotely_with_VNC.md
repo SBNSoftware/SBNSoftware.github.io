@@ -140,6 +140,13 @@ TBrowser.
 to your chosen sbndgpvm (e.g. when you\'re working on it) and a VNC
 viewer open and pointing to localhost:5901 on your local machine.**
 
+If you need to change the VNC display resolution (for example for a correct 
+visualization of TITUS windows), you can set it from the menu at the top left:
+Applications -> System tools -> Settings -> Devices -> Displays.
+A higher resolution (e.g. 1920x1200, empirically on a Mac) should ensure to 
+fully display the TITUS window within the VNC one.
+
+
 ------------------------------------------------------------------------
 
 
