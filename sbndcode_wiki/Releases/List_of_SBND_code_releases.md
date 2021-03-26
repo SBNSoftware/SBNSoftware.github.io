@@ -16,12 +16,20 @@ See the (soon to be done) section on getting `sbndcode` offsite for more detaile
 List of `sbndcode` releases
 ------------------------------------------------------------------------
 
-**Release manager**: [Andrew Scarff](mailto:a.scarff@sheffield.ac.uk), [Patrick Green](mailto:patrick.green-3@postgrad.manchester.ac.uk)
+**Release manager**: [Patrick Green](mailto:patrick.green-3@postgrad.manchester.ac.uk)
 
 These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v09_19_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091900.html)
+  |`v09_18_00_02`               |    Weekly release                           |    [Release Notes](ReleaseNotes09180002.html)
+  |`v09_18_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091800.html)
+  |`v09_17_02`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091702.html)
+  |`v09_17_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091701.html)
+  |`v09_17_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091700.html)
+  |`v09_16_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091600.html)
+  |`v09_15_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091500.html)
   |`v09_14_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091400.html)
   |`v09_13_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091300.html)
   |`v09_12_00_01`               |    Weekly release                           |    [Release Notes](ReleaseNotes09120001.html)
