@@ -1,16 +1,11 @@
 ---
 layout: page
 title: Roles and people
+toc: true
 ---
 
 Roles and people
 =================
-
-**Table of contents**
--   [Release management]
--   [Production management]
-
-
 
 Release management
 -------------------
