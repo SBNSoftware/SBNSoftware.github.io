@@ -98,6 +98,37 @@ configured a different one, the following patterns can be used to select
 the desired geometry.
 
 
+### Legacy configurations
+
+For some breaking changes, legacy configurations are provided for a while,
+which help bridging the gap of the breaking change.
+
+The following table describes the bundles available to process samples
+with a geometry of a specified version.
+If you are in the situation where you have an input file processed
+with a different geometry version you will want to add to your configuration
+a legacy geometry configuration from the table below
+making sure that `icaruscode` you are _currently_ using is listed in the availability column.
+For example, if your `simulation_genie_icarus_bnb_v09_09_02.root` was generated
+with `icaruscode` `v09_09_02` (and, according to the paragraph above,
+with a geometry version `icarus_splitwires`), you may use `icaruscode` `v09_19_00`
+and the geometry configuration preset `icarus_geometry_services_legacy_icarus_splitwires`
+found in there.
+
+Versions are listed and explained in the [paragraph above](#geometry-description-versions).
+
+| applies to samples with | availability | configuration bundle name                                         | notes                                  |
+| ----------------------- | ------------ | ----------------------------------------------------------------- | -------------------------------------- |
+| `icarus_splitwires`     | `v09_19_00`  | `icarus_geometry_services_legacy_icarus_splitwires`               | standard configuration (no overburden) |
+|                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_splitwires` | no overburden (same as standard)       |
+|                         |              | `icarus_geometry_services_overburden_legacy_icarus_splitwires`    | with 3-m concrete overburden           |
+
+The configuration bunbles can be used with the `@table::` syntax as described above.
+Remember that legacy configurations may be retired after a while.
+In such cases, reverting to a previous `icaruscode` version
+is the only way to properly process the legacy samples.
+
+
 ### `icaruscode` versions `v08_52_00` and later
 
 Geometry can be selected by including one of the predefined
