@@ -1,30 +1,18 @@
 ---
 layout: page
 title: The SBND flux files
+subtitle: All about flux files
+image: sbndcode_wiki/sbnd_logo.png
+description: All about flux files
+hero_height: is-medium
+# menubar: sbndcode_menu
+toc: true
+toc_title: SBND Code Contents
 ---
-
 
 
 The SBND flux files
 ==========================================================
-
--   **Table of contents**
--   [The SBND flux files]
-    -   [Neutrino flux]
-    -   [The SBND flux files]
-    -   [Where to find the flux files and beam
-        configurations]
-    -   [A note about pre F/G
-        configurations]
-    -   [Beam configurations]
-        -   [ConfigA-100m-v1]
-        -   [ConfigB-v1]
-        -   [ConfigC-v1]
-        -   [ConfigD-v1]
-        -   [ConfigE-v1]
-        -   [ConfigF-v1]
-        -   [ConfigG-v1]
-
 
 
 Neutrino flux
@@ -61,16 +49,18 @@ Where to find the flux files and beam configurations
 
 All of the flux files live on dcache as the files need to be readily
 available when running grid jobs. All are stored in subdirectories of
-the following location:\
+the following location:
 
-    /pnfs/sbnd/persistent/stash/fluxFiles
+```bash
+/pnfs/sbnd/persistent/stash/fluxFiles
+```
 
-\
 The files are separated into several categories: BooNEToGSimple (which
 are the newest and recommended kind of BNB flux file), the older gsimple
 type (which were are the older flux files and were generated using NuMI
 style decay algorithms) and the raw files used in the generation of the
-former two categories.\
+former two categories.
+
 The flux files are further separated into \'configurations\' which
 describe a particular setup. The configuration encapsulates all of the
 necessary parameters used in propagating the neutrinos from their
@@ -80,15 +70,19 @@ each configuration is given a unique identifier with a quantitive
 description given in the gsimple XML file and a more qualitative
 description given on this wiki page below.
 
-    /pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/april07/neutrinoMode
+```bash
+/pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/april07/neutrinoMode
+```
 
 In each of the configuration directories, XML files are located which
-describe the flux window the neutrinos are propagated to.\
-An example location is:\
+describe the flux window the neutrinos are propagated to.
 
-    /pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/configD-v1.xml
+An example location is:
 
-\
+```bash
+/pnfs/sbnd/persistent/stash/fluxFiles/bnb/BooNEtoGSimple/configD-v1/configD-v1.xml
+```
+
 In all cases the XML file accurately describes the flux window but the
 XML files were used in a literal sense only in the older gsimple files.
 For the older gsimple files, the main XML file is stored in the sbndutil
@@ -99,14 +93,21 @@ files.
 writing, the corresponding configurations are ConfigF-v1, ConfigG-v1**
 
 
+What configuration to use?
+-----------------------------------------------------------------------------------------
+These are the latest and (at the time of writing) more accurate flux configurations to use.
+- Small window (used for most productions): configH
+- Large window (used for the dirt events production): configG (not that this configuration has the X offset incorreclty set to 45.7 cm instead of -73.78 cm - a new file production for the dirt window and the correct offset will be done soon).
 
-A note about pre F/G configurations
+A note about pre H configurations
 -----------------------------------------------------------------------------------------
 
 The beam centre is in the incorrect place along the X-axis for all
-configuration prior to F/G; it is shifted too far along the +ve x-axis
-(1.3m rather than 0.457m). 1.3m is actually the beam\'s x-centre in the
-uboone coordinate system.
+configuration prior to H; For configurations prior to F/G, 
+it is shifted too far along the +ve x-axis (1.3m rather than 0.457m). 1.3m
+is actually the beam\'s x-centre in the uboone coordinate system.
+For the F and G configurations, it was placed at 45.7 cm, but the offeset
+should instead be -73.78 cm according to the latest design.
 
 
 
@@ -182,3 +183,12 @@ Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings
 (the X,Y beam centre is now at (0.457, 0) rather than (1.3,0)), but
 otherwise uses an identical window setup to ConfigE-v1.
+
+
+### ConfigH-v1
+
+Files were produced using BooNEtoGSimple. The centre of the window has
+been changed from `(X, Y) = (45.7, 0) cm` to `(X, Y) = (-73.78, 0) cm`,
+as in the current design. Check https://github.com/SBNSoftware/sbndcode/pull/95
+for more details. Otherwise, it uses an identical window setup to ConfigF-v1.
+
