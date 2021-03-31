@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The SBND flux files
-subtitle: All about flux files
+subtitle: Description of the SBND flux files
 image: sbndcode_wiki/sbnd_logo.png
 description: All about flux files
 hero_height: is-medium
@@ -89,15 +89,12 @@ For the older gsimple files, the main XML file is stored in the sbndutil
 repository along with the request files used to generate the gsimple
 files.
 
-**The recommended flux files are the BooNEToGSimple files. At time of
-writing, the corresponding configurations are ConfigF-v1, ConfigG-v1**
-
 
 What configuration to use?
 -----------------------------------------------------------------------------------------
 These are the latest and (at the time of writing) more accurate flux configurations to use.
-- Small window (used for most productions): configH
-- Large window (used for the dirt events production): configG (not that this configuration has the X offset incorreclty set to 45.7 cm instead of -73.78 cm - a new file production for the dirt window and the correct offset will be done soon).
+- **Small window** (used for most productions): **configH**
+- **Large window** (used for the dirt events production): **configG** (not that this configuration has the X offset incorreclty set to 45.7 cm instead of -73.78 cm - a new file production for the dirt window and the correct offset will be done soon).
 
 A note about pre H configurations
 -----------------------------------------------------------------------------------------
@@ -189,6 +186,6 @@ otherwise uses an identical window setup to ConfigE-v1.
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been changed from `(X, Y) = (45.7, 0) cm` to `(X, Y) = (-73.78, 0) cm`,
-as in the current design. Check https://github.com/SBNSoftware/sbndcode/pull/95
+as in the current design. Check [sbndcode PR #95](https://github.com/SBNSoftware/sbndcode/pull/95)
 for more details. Otherwise, it uses an identical window setup to ConfigF-v1.
 
