@@ -12,36 +12,42 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 Each of these sub-groups are charged with defining and implement common SBN-wide solutions.
 
-### [Release Management](rm.md)
+### [Software Release Management](rm.md)
 
 [List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse)
 
-Conveners: [](mailto:)
-Goal is to maintain high-quality releases of SBN-specific software packages
+Convener(s): [Miquel Nebot-Guinot](mailto:)
+<!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
 
-### [Production and Resource Management](prod.md)
+### [Production and Data Management](prod.md)
 
-Conveners: [](mailto:)
+Conveners: [Mateus Carneiro da Silva and Maya Wospakrik](mailto:)
 
-Work with SCD & SBN to maintain workflows & data-management schemes
+<!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
-### [Simulation Code Management](sim.md)
+### [Workflow Management](prod.md)
 
-Conveners: [](mailto:)
+Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
-Develop infrastructure to support a data-driven detector simulation and maintain its consistent configuration
+<!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
-### [Analysis Code Management](ana.md)
+### [Simulation Infrastructure and Integration](sim.md)
 
-Conveners: [](mailto:)
+Conveners: [Marco del Tutto](mailto:)
 
-Develops infrastructure to process & analyze data & MC in a consistent way.
+<!-- Develop infrastructure to support a data-driven detector simulation and maintain its consistent configuration -->
 
-### [Beam Simulation](beam.md)
+### [Analysis Framework](ana.md)
 
-Conveners: [](mailto:)
+Conveners: [Fernanda Psihas and Gianluca Petrillo](mailto:)
 
-Study and develop improved beamline simulations and uncertainties.
+<!-- Develops infrastructure to process & analyze data & MC in a consistent way. -->
+
+### [Validation Framework](validation.md)
+
+Conveners: [Chris Hilgenberg](mailto:)
+
+<!-- Study and develop improved beamline simulations and uncertainties. -->
 
 ## Important Information for Developers
 
