@@ -25,7 +25,7 @@ Conveners: [Mateus Carneiro da Silva and Maya Wospakrik](mailto:)
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
-### [Workflow Management](prod.md)
+### [Workflow Management](workflow.md)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
