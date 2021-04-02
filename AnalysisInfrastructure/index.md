@@ -16,7 +16,7 @@ Each of these sub-groups are charged with defining and implement common SBN-wide
 
 ### [Software Release Management](rm.md)
 
-[List of open PRs](https://github.com/issues?q=is%3Aopen+is%3Aispr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
+[List of open PRs](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
 Convener(s): [Miquel Nebot-Guinot](mailto:)
 <!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
