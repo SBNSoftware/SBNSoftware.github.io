@@ -8,13 +8,17 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 **If you are looking to get started quickly check out our [Getting Started Page](gettingstarted.md)!**
 
+[List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse)
+
 ## Sub-topic Groups
 
 Each of these sub-groups are charged with defining and implement common SBN-wide solutions.
 
 ### [Software Release Management](rm.md)
 
-[List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse)
+[List of open PRs](https://github.com/issues?q=is%3Aopen+is%3Aispr+org%3ASBNSoftware+archived%3Afalse)
+
+[List of PRs with no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject)
 
 Convener(s): [Miquel Nebot-Guinot](mailto:)
 <!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
