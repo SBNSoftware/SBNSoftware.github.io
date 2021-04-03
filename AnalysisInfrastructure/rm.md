@@ -44,7 +44,7 @@ Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftw
 1. Assuming the last jenkins build was successful and is the code desired, go back to the top area of `sbnbuild` and to `source SBN/copyToSciSoft_sbn.sh`. This pulls down from jenkins and uploads to SciSoft.
 2. Login to CVMFS: `ssh cvmfssbn@oasiscfs.fnal.gov`
 3. Start a server transaction: `cvmfs_server transaction sbn.opensciencegrid.org`
-4. Install the new software into cvmfs: `~/scripts/install_on_cvmfs.sh sbn-XX.YY.ZZ` where `XX.YY.ZZ` is the sbncode version number (note dots instead of underscores!)
+4. Install the new software into cvmfs: `~/sbnbuild/CVMFS/install_on_cvmfs.sh sbn-XX.YY.ZZ` where `XX.YY.ZZ` is the sbncode version number (note dots instead of underscores!)
 5. Publish the changes with a message and a tag: `cvmfs_server publish -m "Published sbn XX.YY.ZZ" -a XX.YY.ZZ sbn.opensciencegrid.org`
 6. Send/post release notes and let SBND and ICARUS release distributors know.
 
