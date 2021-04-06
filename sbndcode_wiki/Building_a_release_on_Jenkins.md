@@ -38,8 +38,9 @@ Instructions
         <https://buildmaster.fnal.gov/buildmaster/job/sbndcode-release-build/>
 -   Configure the build.
     -   If only the version number has changed the fastest way is to go
-        to the `Build with Parameters` tab and just bump the `SBND`
-        parameter
+        to the `Build with Parameters` tab and just bump the `SBND_VERSION`
+        parameter and set `SBND` and `SBNDUTIL` parameters to the relevant release branch. 
+        Finally update the LArSoft SQUAL parameter if required (see LArSoft release notes, rarely changes).
     -   This won\'t save the changes to the parameters.
     -   If more than one parameter has changed then it\'s probably best
         to go the the `Configure` tab as this will save changes.
@@ -68,15 +69,13 @@ Build configuration
 ----------------------------------------------------------
 
 -   Parameter descriptions:
-    -   `SBND`: release version number you used to tag the release
-    -   `LARSOFT_QUAL`: larsoft qualifiers for scientific linux \< art
+    -   `SBND_VERSION`: release version number you used to tag the release
+    -   `SBND`: release branch for sbndcode
+    -   `SBNDUTIL`: release branch for sbndutil, if non-specified gets tag from sbndcode ups products
+    -   `SQUAL`: larsoft s-qualifier for scientific linux \< art
         version \>:\< compiler \>, the larsoft release notes will inform
-        you if either of these change.
-    -   `QUAL`: sbndcode compiler for scientific linux
-    -   `LARSOFT_QUAL_MAC`: larsoft qualifiers for OSX (not currently
-        used)
-    -   `QUAL_MAC`: sbndcode compiler for OSX (not currently used)
--   We only make compiled binaries for SLF6 and SLF7, we used to do OSX
+        you if either of these change. 
+-   We only make compiled binaries for SLF7, we used to do OSX
     builds too but nobody used them and the build time was very long.
 -   If at some point in the future we need to add/drop builds the
     configuration matrix can be modified by checking the relevant labels
