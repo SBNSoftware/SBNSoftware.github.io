@@ -18,8 +18,9 @@ Summary
 -   Merge feature branches.
 -   Bump the version numbers.
 -   Install and run unit tests.
+-   Push release branch to origin and build in Jenkins
 -   Finish release.
--   Push to origin.
+-   Push new tag to origin.
 
 
 
@@ -41,7 +42,7 @@ Instructions
 
         . start_release.sh < version tag > 
 
--   This will create new releases of `sbndcode` and `sbndutil`.
+-   This will create new releases of `sbndcode` and `sbndutil`, with branches `release/vXX_YY_ZZ`.
 
 -   Merge any feature branches that are going into the release, fixing
     any merge conflicts.
@@ -68,8 +69,15 @@ Instructions
 
 -   Commit updates to your local repository for each package
 
-        cd $MRB_SOURCE/< package >
-        git commit -a -m "Update to larsoft < version tag >"
+ cd $MRB_SOURCE/< package >        git commit -a -m "Update to larsoft < version tag >"
+
+-   Push release branch to the remote repository (origin) for each package:
+
+        git push origin release/vXX_YY_ZZ
+
+-   Next go to the Jenkins build instructions, return here once the builds succeed. 
+    We use the release/vXX_YY_ZZ branch to build the binaries BEFORE finishing the release and pushing the tags.
+    This allows any issues in the Jenkins builds to be resolved without needed to revert the tag. 
 
 -   Finish the release branch (once for `sbndcode` and once for
     `sbndutil`):
