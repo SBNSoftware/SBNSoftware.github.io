@@ -1,4 +1,4 @@
-# Welcome to Add Features, Fix Bugs, or Otherwise Develop 
+# How To Add Features, Fix Bugs, or Otherwise Develop 
 
 Need help? Things not working? Contact: [Wes Ketchum, Joseph Zennamo, and Miquel Nebot-Guinot](mailto:wketchum@fnal.gov,jaz8600@fnal.gov,miquel.nebot@ed.ac.uk)
 
