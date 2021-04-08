@@ -80,7 +80,7 @@ From here you are ready to start checking out package! We will start with our ba
 
 If you need to checkout other packages you'll want to check out the scisoft manifests:
 
-1. Go to this website: https://scisoft.fnal.gov/scisoft/bundles/
+1. Go to this website: [https://scisoft.fnal.gov/scisoft/bundles/](https://scisoft.fnal.gov/scisoft/bundles/)
 2. Select the bundle you are working on SBN, SBND, or ICARUS 
 3. Select the <version> you checked out, it is probably the first item in the list
 4. Click the manifest 
