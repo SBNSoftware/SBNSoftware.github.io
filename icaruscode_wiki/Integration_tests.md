@@ -312,9 +312,10 @@ Remember that this action will affect the whole collaboration.
 #### Generating the reference files with a remote "trigger"
 
 After having concluded there is the need to update reference files, a
-single command will do the trick:
+single command (togehter with all due certifology) will do the trick:
     
     CI_CERT=/tmp/${USER}/ci_cert.pem
+    mkdir -p "$(dirname "$CI_CERT")"
     kx509 -o "$CI_CERT"
     trigger --build-delay 0 --cert "$CI_CERT" --workflow Update_ref_files_ICARUSCODE_wf
 
