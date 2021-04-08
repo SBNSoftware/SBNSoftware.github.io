@@ -15,6 +15,8 @@ See below for helpful links:
 
 ### [Analysis Infrastructure](AnalysisInfrastructure/index)
 
+### [How to Add New Features, Fix Bugs, Or Otherwise Develop](AnalysisInfrastructure/how-to-develop)
+
 ## List of Repositories
 
 ### Offline Repositories
