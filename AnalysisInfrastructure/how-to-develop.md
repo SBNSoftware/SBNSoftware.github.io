@@ -24,59 +24,57 @@ If you need to add something to a sub-package, e.g. [`sbnobj`](https://github.co
 
 The next step will be to setup you working area:
 
-From an SBND gpvm or build-machine;
+From an SBND gpvm or build-machine;  
 `source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh`
 
-From an ICARUS gpvm or build-machine; 
+From an ICARUS gpvm or build-machine;  
 `source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh`
 
 Next, you will want to find the latest release of this code. We will do this by using [`ups`](https://cdcvs.fnal.gov/redmine/projects/ups/wiki/Getting_Started_Using_UPS):
 
-`ups list -aK+ <sbncode/sbndcode/icaruscode>`, where you should select the package you are interested in. This provides a list in the form:
+`ups list -aK+ <sbncode/sbndcode/icaruscode>`, where you should select the package you are interested in. This provides a list in the form:  
 
-`"<package>" "<version>" "<operating_system>" "< qualifer>" ""`
+`"<package>" "<version>" "<operating_system>" "< qualifer>" ""`  
 
-Once you have selected the release you would like you set it up by doing:
+Once you have selected the release you would like you set it up by doing:  
 
-`setup <sbncode/sbndcode/icaruscode> <version_number> -q <qualifier>`
+`setup <sbncode/sbndcode/icaruscode> <version_number> -q <qualifier>`  
 
-you can now see all the packages that are setup and where the source code lives by using `ups active`. This lists the active packages as:
+you can now see all the packages that are setup and where the source code lives by using `ups active`. This lists the active packages as:  
 
-`<package> <version> -f <operating system> -q <qualifer>  -z </directory/to/where/code/lives>`
+`<package> <version> -f <operating system> -q <qualifer>  -z </directory/to/where/code/lives>`  
 
-Now we can start setting up a working area to play with code.
+Now we can start setting up a working area to play with code.  
 
 ## Setting Up A Working Area
 
-First move to your experimental `/app`-space:
+First move to your experimental `/app`-space:  
 
-From an SBND gpvm or build-machine;
-`cd /sbnd/app/users/$USER`
+From an SBND gpvm or build-machine;  
+`cd /sbnd/app/users/$USER`  
 
-From an ICARUS gpvm or build-machine; 
-`cd /icarus/app/users/$USER`
+From an ICARUS gpvm or build-machine;   
+`cd /icarus/app/users/$USER`  
 
-Next you'll want to create a directory to build your working area in, I'll call this `workdir`:
-`mkdir workdir`
-`cd workdir`
-`mrb newDev`
+Next you'll want to create a directory to build your working area in, I'll call this `workdir`:  
+`mkdir workdir`  
+`cd workdir`  
+`mrb newDev`  
 
-At this points if you `ls` you'll see three directories: `build_*`, `localProducts_larsoft_<version>_<qualifiers>`, and `src`.
+At this points if you `ls` you'll see three directories: `build_*`, `localProducts_larsoft_<version>_<qualifiers>`, and `src`.  
 
-Your first step will be to setup with working area:
-`source localProducts*/setup`
+Your first step will be to setup with working area:  
+`source localProducts*/setup`  
 
-Now we will want to start checking out the products that you would like to edit! 
+Now we will want to start checking out the products that you would like to edit!   
 
 ## Checking Out The Packages You Want
 
-First thing you'll want to do is move to the directory that holds all the source code:
+First thing you'll want to do is move to the directory that holds all the source code:  
+`cd src`  
 
-`cd src`
-
-From here you are ready to start checking out package! We will start with our baseline package `<sbncode/icaruscode/sbndcode>`:
-
-`mrb g <sbncode/icaruscode/sbndcode>@<version>`
+From here you are ready to start checking out package! We will start with our baseline package `<sbncode/icaruscode/sbndcode>`:  
+`mrb g <sbncode/icaruscode/sbndcode>@<version>`  
 
 If you need to checkout other packages you'll want to check out the scisoft manifests:
 
@@ -87,48 +85,48 @@ If you need to checkout other packages you'll want to check out the scisoft mani
 5. Select the <qualifier>, but selecting any of these is probably fine
 6. Search for the <package> you want to edit and then copy the <package_version> listed
 
-Then you can checkout the <package> via:
-  
+Then you can checkout the <package> via:  
+   
 `mrb g <package>@<package_version>`
 
 ## Creating a Feature Branch
 
 You now have the code based on the previous release! From here we want to help make it your own. To do that select the `<package>` that you'll be editing and:
 
-`cd <package>`
-`git checkout feature/$USER_<feature_name>`
+`cd <package>`  
+`git checkout feature/$USER_<feature_name>`  
 
 This feature name should be unique but not overly wordy. At this point I would recommend that you build your code before making any edits.
 
-`cd $MRB_BUILDDIR`
-`mrbsetenv`
+`cd $MRB_BUILDDIR`  
+`mrbsetenv`  
 
 The block that reads "`check this block for errors`" should be empty, if it isn't then you have a version mismatch somewhere and should check the `ups/product_deps` in each of the `packages` in `$MRB_SOURCE`. If this block is empty then you are *ready to build!*
 
-On the gpvms:
+On the gpvms:  
 `mrb i -j4` 
 
-On the build machines:
+On the build machines:  
 `mrb i -j16` 
 
 This can take a while (the more packages, the more time) so feel free to go get a cup of tea, coffee... OK, are you back? Great! Let's check how the build did.
 
-If you read "`INFO: Stage install / package successful.`" then you are ready to proceed. To point the operating system to your local build do:
+If you read "`INFO: Stage install / package successful.`" then you are ready to proceed. To point the operating system to your local build do:  
 
 `mrbslp`
 
 If you check `ups active` you'll see that it points to your locally built products! 
 
-Now (finally?) you are ready to edit the code:
-`cd $MRB_SOURCE`
-`cd <package>`
- and edit away! 
+Now (finally?) you are ready to edit the code:  
+`cd $MRB_SOURCE`  
+`cd <package>`  
+ and edit away!   
  
- We recommend to regularly commit the changes you make, starting inside `$MRB_SOURCE/<package>`:
- `git status`, this will list all the changes you've made
- `git add <edited_file>`, this adds a change to be tracked
- `git commit -m "<a commit message>"`, this tells git-hub to track this change
- `git push -u origin feature/$USER_<feature_name>`, this pushes it to our shared repository 
+ We recommend to regularly commit the changes you make, starting inside `$MRB_SOURCE/<package>`:  
+ `git status`, this will list all the changes you've made  
+ `git add <edited_file>`, this adds a change to be tracked  
+ `git commit -m "<a commit message>"`, this tells git-hub to track this change  
+ `git push -u origin feature/$USER_<feature_name>`, this pushes it to our shared repository   
 
 After doing a bunch of those you are probably ready for these changes to be merged into our next distributed code release so others can play with it too!
 
