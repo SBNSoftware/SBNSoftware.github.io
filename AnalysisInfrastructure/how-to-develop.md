@@ -1,19 +1,17 @@
 # Welcome to Add Features, Fix Bugs, or Otherwise Develop 
 
-Need help? Not things not working? Contact: [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov)
+Need help? Things not working? Contact: [Wes Ketchum, Joseph Zennamo, and Miquel Nebot-Guinot](mailto:wketchum@fnal.gov,jaz8600@fnal.gov,miquel.nebot@ed.ac.uk)
 
-First, thank you for taking the time to everyone maintain the health and vitality of our code! 
-
-Next, we will assume
+*First, thank you for taking the time to everyone maintain the health and vitality of our code!*
 
 ## Development Philosophy
 
-In general, we suggest that you develop in a ["feature branch"](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) the lastest stable, built, and distributed release (link to release page and notes to be added.)
+In general, we suggest that you develop in a ["feature branch"](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) based on the lastest stable, built, and distributed release (_link to release page and notes to be added._)
 
 This model enables you to start your development from a well-defined starting point:
-1. The code should build
-2. The CI-validation run after the release was distributed provides a basis for comparing your changes against
-3. It allows reviews to have a clearly defined basis 
+1. The code should build out-of-the-box
+2. The CI-validation for this release provides a basis for comparing any changes you make
+3. It allows reviewers to have a clearly defined starting point
 
 ## Finding The Release
 
@@ -95,8 +93,61 @@ Then you can checkout the <package> via:
 
 ## Creating a Feature Branch
 
+You now have the code based on the previous release! From here we want to help make it your own. To do that select the `<package>` that you'll be editing and:
+
+`cd <package>`
+`git checkout feature/$USER_<feature_name>`
+
+This feature name should be unique but not overly wordy. At this point I would recommend that you build your code before making any edits.
+
+`cd $MRB_BUILDDIR`
+`mrbsetenv`
+
+The block that reads "`check this block for errors`" should be empty, if it isn't then you have a version mismatch somewhere and should check the `ups/product_deps` in each of the `packages` in `$MRB_SOURCE`. If this block is empty then you are *ready to build!*
+
+On the gpvms:
+`mrb i -j4` 
+
+On the build machines:
+`mrb i -j16` 
+
+This can take a while (the more packages, the more time) so feel free to go get a cup of tea, coffee... OK, are you back? Great! Let's check how the build did.
+
+If you read "`INFO: Stage install / package successful.`" then you are ready to proceed. To point the operating system to your local build do:
+
+`mrbslp`
+
+If you check `ups active` you'll see that it points to your locally built products! 
+
+Now (finally?) you are ready to edit the code:
+`cd $MRB_SOURCE`
+`cd <package>`
+ and edit away! 
+ 
+ We recommend to regularly commit the changes you make, starting inside `$MRB_SOURCE/<package>`:
+ `git status`, this will list all the changes you've made
+ `git add <edited_file>`, this adds a change to be tracked
+ `git commit -m "<a commit message>"`, this tells git-hub to track this change
+ `git push -u origin feature/$USER_<feature_name>`, this pushes it to our shared repository 
+
+After doing a bunch of those you are probably ready for these changes to be merged into our next distributed code release so others can play with it too!
+
 ## Building and Testing Your Code
 
+There are two things you should do first:
+1. Test building your code by: `cd $MRB_BUILDDIR; mrbsetenv; mrb i -j16`, if it doesn't build it isn't ready to merge into a release
+2. Validate that your change is propogating, run some jobs and verify the change you made is there
+
+For #2 it would be great to post these checks to the DocDB so that others can see what you did!
+ 
 ## Submitting a Pull-Request
 
-This section will change as things 
+Great! Now we know your code builds and you have validated it now we can move to merging it into our release. 
+
+The next step is to alert the [Release-Management Team](https://sbnsoftware.github.io/AnalysisInfrastructure/index) that you would like your code to be reviewed for inclusion into a release. We do this via a [pull-request](https://www.atlassian.com/git/tutorials/making-a-pull-request).
+
+There are two ways to do this:
+1. use the github website: https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name> and click "pull request"
+2. use this command line arguement
+
+You can track your pull-requests...
