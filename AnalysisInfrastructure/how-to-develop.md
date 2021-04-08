@@ -150,4 +150,6 @@ There are two ways to do this:
 1. use the github website: https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name> and click "pull request"
 2. use this command line arguement
 
-You can track your pull-requests...
+You can track your pull-requests here: https://github.com/SBNSoftware/<package>/pulls, to help speed thing along you can suggest someone to review your code changes and post your validation slides to the comments. 
+  
+Once approved this will be merged into our next release! 
