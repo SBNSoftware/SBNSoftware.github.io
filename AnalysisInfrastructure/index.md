@@ -21,9 +21,9 @@ Each of these sub-groups are charged with defining and implement common SBN-wide
 Convener(s): [Miquel Nebot-Guinot](mailto:)
 <!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
 
-### [Production and Data Management](prod.md)
+### [Production and Data Management](https://sbnsoftware.github.io/sbn/sbnprod_wiki/Wiki)
 
-Conveners: [Mateus Carneiro da Silva and Maya Wospakrik](mailto:)
+Conveners: [Mateus Carneiro da Silva and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
