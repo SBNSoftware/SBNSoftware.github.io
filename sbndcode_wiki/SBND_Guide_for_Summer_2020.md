@@ -88,19 +88,13 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-<details>
+{% details Click to expand %}
 
-<summary>
-  Markdown between html tags works when there's an empty line before it.
-</summary>
+	~~~ python
+	Code here
+	~~~
+{% enddetails %}
 
-  here 
-  
-  ~~~python
-  it works
-  ~~~
-
-</details>
 
 ::: 
 After steps 1 and 2, you can start setting up your development area:\
