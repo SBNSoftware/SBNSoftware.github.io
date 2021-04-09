@@ -1,35 +1,25 @@
 ---
 layout: page
-title: SBND Guide for Summer 2020
+title: SBND Commissioning - Get Started Guide
+subtitle: Getting started with SBND commissioning code
+image: sbndcode_wiki/sbnd_logo.png
+description: All about SBND commissioning code
+hero_height: is-medium
+# menubar: sbndcode_menu
+toc: true
+toc_title: SBND Code Contents
 ---
+
 
 
 
 SBND Guide for Summer 2020
 ========================================================================
 
--   **Table of contents**
--   [SBND Guide for Summer 2020]
-    -   [1. Setup the SBND environment]
-    -   [2. Run existing larsoft
-        software]
-    -   [3. Install and develop larsoft
-        software]
-        -   [Build your own LArSoft
-            plug-in]
-    -   [4. Generate Single Particle
-        Events]
-    -   [5. Look at the Generated Events in the Event
-        Display]
-    -   [6. Generate an Analysis TTree]
-        -   [What are all the information stored in the
-            TTree?]
-    -   [Projects]
-    -   [Questions?]
-
-Log in to an SBND virtual machine:\
-
+Log in to an SBND virtual machine:
+```bash
     ssh $USER@sbndgpvm01.fnal.gov
+```
 
 You will land in an area called `nashome`, from there you have two main
 other areas available:
@@ -48,27 +38,33 @@ other areas available:
 1. Setup the SBND environment
 -----------------------------------------------------------------------------
 
-Go to the `app` area, where we can install and develop software:\
+Go to the `app` area, where we can install and develop software:
 
+```bash
     cd /sbnd/app/users/$USER/
+```
 
-Setup the SBND environment first:\
-
+Setup the SBND environment first:
+```bash
     source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
+```
 
 It is good practice to move to a custom working directory (you can give
-it a name of your choice):\
+it a name of your choice):
 
+```bash
     MY_WORKDIR=/sbnd/app/users/$USER/workdir
     mkdir $MY_WORKDIR
     cd $MY_WORKDIR
-
+```
 
 
 2. Run existing larsoft software
 -----------------------------------------------------------------------------------
 
+```bash
     setup sbndcode v08_43_00 -q e19:prof
+```
 
 This setup allows you to have the full sbnd software available, without
 the need to build it yourself.\
@@ -79,7 +75,9 @@ Instructions to do this are in the section below.
 
 You can also list existing sbndcode versions by running
 
+```bash
     ups list -aK+ sbndcode 
+```
 
 In general, you should select the latest version.
 
@@ -88,7 +86,7 @@ In general, you should select the latest version.
 3. Install and develop larsoft software
 -------------------------------------------------------------------------------------------------
 
-You can skip this section if you don\'t need to develop sbndcode.
+You can skip this section if you don't need to develop sbndcode.
 
 [Details]{#collapse-e478981d-show .collapsible
 .collapsed}[Details]
@@ -96,6 +94,7 @@ You can skip this section if you don\'t need to develop sbndcode.
 ::: 
 After steps 1 and 2, you can start setting up your development area:\
 
+```bash
     mkdir my_larsoft
     cd my_larsoft
     mrb newDev
@@ -107,6 +106,7 @@ After steps 1 and 2, you can start setting up your development area:\
     mrb i -j
     cd ../
     mrbslp
+```
 
 Done! You have just built your own version of `sbndcode`. Now, you can
 develop software in the `srcs/sbndcode` directory, and the install
@@ -132,33 +132,38 @@ done above), but every subsequent time you can just do
 
 Now let\'s assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
-directory:\
+directory:
 
+```bash
     cd my_larsoft
     cd srcs/sbndcode/sbndcode/
     mkdir MyProject
+```
 
 We want CMake to know about your folder, so it will be build. You can do
-this by adding\
+this by adding
 
+```bash
     add_subdirectory(MyProject)
+```
 
-\
-at the end of `srcs/sbndcode/sbndcode/CMakeLists.txt`.\
+at the end of `srcs/sbndcode/sbndcode/CMakeLists.txt`.
 Good, now CMake will build that, but we need to add something inside it!
-Let\'s generate our first module:\
+Let\'s generate our first module:
 
+```bash
     cd MyProject/
     cetskelgen analyzer MyAnalyzer
+```
 
-\
 `cetskelgen` will create a template for your plug in (in this case an
 `analyzer` one, but can also be a `producer` or a `filter`) with name
-MyAnalyzer.\
-Now let\'s make our own, simplest, CMakeLists.txt. Open a file called
+MyAnalyzer.
+Now let's make our own, simplest, CMakeLists.txt. Open a file called
 `CMakeLists.txt` inside the ` MyProject` directory, and add these
-lines:\
+lines:
 
+```bash
     art_make(
               MODULE_LIBRARIES larcorealg_Geometry
                                larcore_Geometry_Geometry_service
@@ -195,6 +200,8 @@ lines:\
     install_source()
 
 MORE INFORMATION TO BE WRITTEN.
+```
+
 :::
 
 
@@ -203,10 +210,10 @@ MORE INFORMATION TO BE WRITTEN.
 ---------------------------------------------------------------------------------------
 
 This section will show you how to generate particles in the SBND
-detector to simulate a sample of single-particle generated events.\
-\"Single-particle\" means that every event will contain an initial
+detector to simulate a sample of single-particle generated events.
+"Single-particle" means that every event will contain an initial
 generated particle, with the kinematics of your choice. The event will
-not contain a simulated neutrino event.\
+not contain a simulated neutrino event.
 Note that the initial particle is then propagated though GEANT4, which
 might then create additional other particles in the event (delta-rays,
 electromagnetic showers, etc.).
@@ -214,6 +221,7 @@ electromagnetic showers, etc.).
 Once you have done steps 1 and 2, open a new file (call it, for example,
 `prodsingle_muon_sbnd.fcl`) and add the following lines in it:\
 
+```bash
     #include "prodsingle_sbnd_proj.fcl" 
 
     physics.producers.generator.PDG: [13]             # Generate muons (1 muon per event)
@@ -227,13 +235,16 @@ Once you have done steps 1 and 2, open a new file (call it, for example,
     physics.producers.generator.SigmaThetaYZ: [20]    # With an angular spread of 20 degrees in the Y-Z plan
     physics.producers.generator.AngleDist: 1          # With angles Gaussian distributed
 
+```
 (More information on all the settable parameters can be found
 [here](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/EventGenerator#SingleGen.))
 
-`prodsingle_muon_sbnd.fcl` is your driver to run larsoft jobs.\
+`prodsingle_muon_sbnd.fcl` is your driver to run larsoft jobs.
 You can run via:
 
+```bash
     lar -c prodsingle_sbnd_proj.fcl -n 10
+```
 
 where the option `-n 10` means that we are generating 10 events.
 
@@ -244,17 +255,20 @@ the generated events, with our muons in them. The events in this file
 have not been propagated in the detector using GEANT4 just yet, and the
 detector simulation has also not happened. We need to run this ourself.
 
-Here is how to do it:\
+Here is how to do it:
 
+```bash
     lar -c standard_g4_sbnd.fcl -s prodsingle_sbnd_SinglesGen-*.root -n 10
+```
 
-\
 This job will produce an output file called
 `prodsingle_sbnd_SinglesGen-XXX_G4-XXX.root`, which now contains the all
-the particles propagated by GEANT4.\
-Finally, we can run the detector simulation:\
+the particles propagated by GEANT4.
+Finally, we can run the detector simulation:
 
+```bash
     lar -c standard_detsim_sbnd.fcl -s prodsingle_sbnd_SinglesGen-*_G4-*.root -n 10
+```
 
 The output file `prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root`
 contains your generated events runt through detector simulation.
@@ -267,13 +281,15 @@ contains your generated events runt through detector simulation.
 More information on how to use the event display are
 [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/TITUS_Event_Display).
 
-Open a fresh terminal, log in to an `sbndgpvm` machine, and run\
+Open a fresh terminal, log in to an `sbndgpvm` machine, and run
 
+```bash
     MY_WORKDIR=/sbnd/app/users/$USER/workdir
     source /sbnd/app/users/mdeltutt/static_evd/setup.sh
     evd.py -s $MY_WORKDIR/prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root
+```
 
-Click on \"Raw Digit\" in the top right, and you will the waveforms from
+Click on "Raw Digit" in the top right, and you will the waveforms from
 your generated events.
 
 
@@ -283,35 +299,43 @@ your generated events.
 
 Now that you have generated your own events, you can run one last job,
 which will extract all the relevant information for you and place then
-in an output ROOT TTree.\
-You can run:\
+in an output ROOT TTree.
+You can run:
 
+```bash
     cd $MY_WORKDIR
     lar -c run_hitdumper.fcl -s prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root
+```
 
 This will create a file called `hitdumper_tree.root`. You can explore
-what is in the file:\
+what is in the file:
 
+```bash
     root -l hitdumper_tree.root 
     root[0] hitdumper->cd()
     root[1] hitdumper->Print()
+```
 
-Let\'s look at the hit time vs. hit wire for TPC 1 and only for the
-collection plane:\
+Let's look at the hit time vs. hit wire for TPC 1 and only for the
+collection plane:
 
+```bash
     root -l hitdumper_tree.root 
     root[0] hitdumper->cd()
     root[1] hitdumpertree->Draw("hit_peakT:hit_wire", "hit_tpc == 1 && hit_plane == 2")
+```
 
 !(/redmine/attachments/download/57665/hitdumper_demo_1.png)
 
-Or you can look at the optical hits. For example, let\'s look at the Y
+Or you can look at the optical hits. For example, let's look at the Y
 and Z position of the stored optical hits in TPC 0. These correspond to
-the PMTs positions:\
+the PMTs positions:
 
+```bash
     root -l hitdumper_tree.root 
     root[0] hitdumper->cd()
     root[1] hitdumpertree->Draw("ophit_opdet_y:ophit_opdet_z", "ophit_opdet_x<0 && ophit_opdet_x != -9999", "colz")
+```
 
 !(/redmine/attachments/download/57668/hitdumper_demo_2.png)
 
@@ -323,50 +347,6 @@ All the variables stored are described
 [here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112).
 
 
-
-Projects
-------------------------------------
-
-[CRT Thresholds][CRT
-Thresholds]
-
-::: 
-We need to determine the thresholds for the CRT. Since the two SiPMs
-that read the light are on the same side of a CRT strip, there may be a
-difference between tracks that cross the bar close to the SiPMs and
-those that are away (one strip is 4m long). We should study the CRT PE
-signal as a function of the position in the CRT, and then set the
-threshold.
-
-Using simulation, one can plot the number of CRT triggers as a function
-of the threshold. The number of triggers rises if the threshold is
-lowered, as more noise is captured. To understand how many true triggers
-are in there, one should match the CRT hits with a TPC track. If the
-match cannot be found, one can assume that was noise. Without looking at
-track reconstruction, this can be done by looking if there is TPC
-activity in time with the CRT hits.
-:::
-
-[Timing offsets]{#collapse-8a9bc46b-show .collapsible
-.collapsed}[Timing offsets]
-
-::: 
-This project can be entirely developed on MC, and the results of it can
-then be applied to data, when available.
-
-Run a particle gun simulation shooting particles at different angles in
-the TPC (from example, crossing the CPA, so the t ~0~ can be estimated).
-Running the `hitdumper` module will produce a TTree with:
-
--   The TPC hits time
--   The PDS hits time
--   The CRT hits time\
-    Write a script to make plots of all these times and see if there is
-    an offset.
-
-The anatree module and the plotting script can them but run on a data
-event to check the same offsets on data.
-:::
 
 
 
