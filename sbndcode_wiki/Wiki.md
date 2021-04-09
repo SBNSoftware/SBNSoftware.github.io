@@ -98,7 +98,7 @@ Useful Tidbits of Information.
     code)](Working_on_a_feature_branch_(to_easily_share_code).html)
 -   [Known quick fixes](Known_quick_fixes.html)
 -   [TITUS Event Display](TITUS_Event_Display.html)
-
+-   [Commissioning - Get Started](SBND_Commissioning_Get_Started.html)
 
 
 [Code management and deployment stuff](Code_management_and_deployment_stuff.html)
