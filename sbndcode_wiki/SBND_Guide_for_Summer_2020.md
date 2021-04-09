@@ -134,6 +134,16 @@ Now let\'s assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
 directory:
 
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
 ```bash
     cd my_larsoft
     cd srcs/sbndcode/sbndcode/
