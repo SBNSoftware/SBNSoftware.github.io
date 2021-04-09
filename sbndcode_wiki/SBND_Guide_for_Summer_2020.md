@@ -94,7 +94,11 @@ You can skip this section if you don't need to develop sbndcode.
   Markdown between html tags works when there's an empty line before it.
 </summary>
 
-  here ```it works```
+  here 
+  
+  ~~~python
+  it works
+  ~~~
 
 </details>
 
