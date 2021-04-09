@@ -88,18 +88,6 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
-
-::: 
 After steps 1 and 2, you can start setting up your development area:\
 
 ```bash
@@ -219,8 +207,6 @@ lines:
 
 MORE INFORMATION TO BE WRITTEN.
 ```
-
-:::
 
 
 
