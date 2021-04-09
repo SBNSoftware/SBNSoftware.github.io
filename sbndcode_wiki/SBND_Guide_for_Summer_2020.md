@@ -88,11 +88,15 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-[Details]
+<details>
 
-Test
+<summary>
+  Markdown between html tags works when there's an empty line before it.
+</summary>
 
-[Details]
+  here ```it works```
+
+</details>
 
 ::: 
 After steps 1 and 2, you can start setting up your development area:\
