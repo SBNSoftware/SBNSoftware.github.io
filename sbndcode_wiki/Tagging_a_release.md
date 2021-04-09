@@ -69,7 +69,7 @@ Instructions
 
 -   Commit updates to your local repository for each package
 
- cd $MRB_SOURCE/< package >        git commit -a -m "Update to larsoft < version tag >"
+        git commit -a -m "Update to larsoft < version tag >"
 
 -   Push release branch to the remote repository (origin) for each package:
 
