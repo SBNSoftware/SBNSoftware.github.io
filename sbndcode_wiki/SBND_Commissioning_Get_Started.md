@@ -25,11 +25,11 @@ You will land in an area called `nashome`, from there you have two main
 other areas available:
 
 -   `/sbnd/app/users/$USER/`: Here you should store your software (if
-    this directory doesn\'t exist, you can create it with
+    this directory doesn't exist, you can create it with
     `mkdir /sbnd/app/users/$USER`).
 -   `/sbnd/data/users/$USER/`: Here you should store your files (if this
-    directory doesn\'t exist, you can create it with
-    `mkdir /sbnd/data/users/$USER`).\
+    directory doesn't exist, you can create it with
+    `mkdir /sbnd/data/users/$USER`).
     Remember that the `app` area has limited disk space, so please do
     not store any data file there, but only the code you need.
 
@@ -67,7 +67,7 @@ it a name of your choice):
 ```
 
 This setup allows you to have the full sbnd software available, without
-the need to build it yourself.\
+the need to build it yourself.
 This is useful if you need to run existing software. If instead you need
 to modify existing code (or create new one), you will have to download
 sbndcode in your area, develop, and build your version of sbndcode.
@@ -88,7 +88,7 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-After steps 1 and 2, you can start setting up your development area:\
+After steps 1 and 2, you can start setting up your development area:
 
 ```bash
     mkdir my_larsoft
@@ -319,7 +319,7 @@ collection plane:
     root[1] hitdumpertree->Draw("hit_peakT:hit_wire", "hit_tpc == 1 && hit_plane == 2")
 ```
 
-![HitDumper Demo 1](https://cdcvs.fnal.gov/redmine/attachments/57665/hitdumper_demo_1.png)
+![HitDumper Demo 1](https://cdcvs.fnal.gov/redmine/attachments/download/57665/hitdumper_demo_1.png)
 
 Or you can look at the optical hits. For example, let's look at the Y
 and Z position of the stored optical hits in TPC 0. These correspond to
