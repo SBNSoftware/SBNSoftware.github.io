@@ -88,12 +88,15 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-{% details Click to expand %}
-
-	~~~ python
-	Code here
-	~~~
-{% enddetails %}
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
 
 
 ::: 
