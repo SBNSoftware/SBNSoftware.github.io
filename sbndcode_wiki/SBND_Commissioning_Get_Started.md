@@ -13,7 +13,7 @@ toc_title: SBND Code Contents
 
 
 
-SBND Guide for Summer 2020
+SBND Commissioning - Get Started Guide
 ========================================================================
 
 Log in to an SBND virtual machine:
@@ -63,7 +63,7 @@ it a name of your choice):
 -----------------------------------------------------------------------------------
 
 ```bash
-    setup sbndcode v08_43_00 -q e19:prof
+    setup sbndcode v09_21_00 -q e19:prof
 ```
 
 This setup allows you to have the full sbnd software available, without
@@ -96,7 +96,7 @@ After steps 1 and 2, you can start setting up your development area:\
     mrb newDev
     source localProducts*/setup
     cd srcs/
-    mrb g -t v08_39_00 sbndcode
+    mrb g -t v09_21_00 sbndcode
     cd $MRB_BUILD
     mrbsetenv
     mrb i -j
@@ -106,13 +106,13 @@ After steps 1 and 2, you can start setting up your development area:\
 
 Done! You have just built your own version of `sbndcode`. Now, you can
 develop software in the `srcs/sbndcode` directory, and the install
-software will be places in the `localProducts*` directory.\
+software will be places in the `localProducts*` directory.
 Do not do development in the `localProducts*` or `build*` directories,
 as every change will be lost with a fresh build. Only develop in the
 `srcs` directory.
 
 If you log out and log in again, these are the steps you need to follow
-to get your environment set up (after doing the usual steps 1 and 2):\
+to get your environment set up (after doing the usual steps 1 and 2):
 
     cd my_larsoft
     source localProducts*/setup
@@ -126,19 +126,9 @@ done above), but every subsequent time you can just do
 
 ### Build your own LArSoft plug-in
 
-Now let\'s assume you need to have your own LArSoft plugin (or module).
+Now let's assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
 directory:
-
-<details>
-  <summary>Click to expand!</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
 
 ```bash
     cd my_larsoft
@@ -223,7 +213,7 @@ might then create additional other particles in the event (delta-rays,
 electromagnetic showers, etc.).
 
 Once you have done steps 1 and 2, open a new file (call it, for example,
-`prodsingle_muon_sbnd.fcl`) and add the following lines in it:\
+`prodsingle_muon_sbnd.fcl`) and add the following lines in it:
 
 ```bash
     #include "prodsingle_sbnd_proj.fcl" 
@@ -283,7 +273,7 @@ contains your generated events runt through detector simulation.
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
-[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/TITUS_Event_Display).
+[here](https://sbnsoftware.github.io/sbndcode_wiki/TITUS_Event_Display.html).
 
 Open a fresh terminal, log in to an `sbndgpvm` machine, and run
 
@@ -329,7 +319,7 @@ collection plane:
     root[1] hitdumpertree->Draw("hit_peakT:hit_wire", "hit_tpc == 1 && hit_plane == 2")
 ```
 
-!(/redmine/attachments/download/57665/hitdumper_demo_1.png)
+![HitDumper Demo 1](https://cdcvs.fnal.gov/redmine/attachments/57665/hitdumper_demo_1.png)
 
 Or you can look at the optical hits. For example, let's look at the Y
 and Z position of the stored optical hits in TPC 0. These correspond to
@@ -341,14 +331,14 @@ the PMTs positions:
     root[1] hitdumpertree->Draw("ophit_opdet_y:ophit_opdet_z", "ophit_opdet_x<0 && ophit_opdet_x != -9999", "colz")
 ```
 
-!(/redmine/attachments/download/57668/hitdumper_demo_2.png)
+![HitDumper Demo 2](https://cdcvs.fnal.gov//redmine/attachments/download/57668/hitdumper_demo_2.png)
 
 
 
 ### What are all the information stored in the TTree?
 
 All the variables stored are described
-[here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/repository/revisions/develop/entry/sbndcode/AnalysisTree/HitDumper_module.cc#L112).
+[here](https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/Commissioning/HitDumper_module.cc#L133).
 
 
 
