@@ -88,8 +88,11 @@ In general, you should select the latest version.
 
 You can skip this section if you don't need to develop sbndcode.
 
-[Details]{#collapse-e478981d-show .collapsible
-.collapsed}[Details]
+[Details]
+
+Test
+
+[Details]
 
 ::: 
 After steps 1 and 2, you can start setting up your development area:\
