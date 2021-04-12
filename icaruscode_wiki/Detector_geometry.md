@@ -121,7 +121,7 @@ Versions are listed and explained in the [paragraph above](#geometry-description
 
 | applies to samples with | availability | configuration bundle name                                         | notes                                  |
 | ----------------------- | ------------ | ----------------------------------------------------------------- | -------------------------------------- |
-| `icarus_splitwires`     | `v09_19_00`  | `icarus_geometry_services_legacy_icarus_splitwires`               | standard configuration (no overburden) |
+| `icarus_splitwires`     | `v09_19_02`  | `icarus_geometry_services_legacy_icarus_splitwires`               | standard configuration (no overburden) |
 |                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_splitwires` | no overburden (same as standard)       |
 |                         |              | `icarus_geometry_services_overburden_legacy_icarus_splitwires`    | with 3-m concrete overburden           |
 
