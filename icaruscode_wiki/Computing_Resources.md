@@ -297,11 +297,11 @@ it is strongly recommended that the jobs are executed in the proper [Singularity
 One such container featuring Scientific Linux Fermi 7 (SL7) is available in CVMFS,
 and it can be enabled by adding to `jobsub_submit` the options:
 `--append_condor_requirements='(TARGET.HAS_SINGULARITY=?=true)' -l '+SingularityImage="/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-sl7:latest"'`
-(sandwiched in `<jobsub> </jobsub>` block within each of the `<stage>` blocks
-of job XML configuration when using LArBatch `project.py` to submit the jobs).
+(when using LArBatch `project.py` from `larbatch` `v01_55_01` or newer,
+Singularity containers are enabled in most configurations,
+as [documented by the author](https://indico.fnal.gov/event/48412/#2-container-issues-and-larbatc)).
 Also note that FIFE recommends that Operating System selection be not enforced
-via `--os` option when using containers (after all, we are explicitly shipping the whole OS);
-in `project.py` XML job configurations, this is equivalent to removing the `<os>` blocks.
+via `--os` option when using containers (after all, we are explicitly shipping the whole OS).
 
 
 
