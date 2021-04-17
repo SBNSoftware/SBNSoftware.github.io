@@ -319,8 +319,9 @@ single command (togehter with all due certifology) will do the trick:
     kx509 -o "$CI_CERT"
     trigger --build-delay 0 --cert "$CI_CERT" --workflow Update_ref_files_ICARUSCODE_wf
 
-(in this case, before these commands,
-[**having a grid certificate proxy is mandatory**](Get_a_certificate_proxy.md)).
+(in this case, the ["standard" grid certificate proxy](Get_a_certificate_proxy.md) seems
+not to be enough; with a current Kerberos ticket, the command `kx509` will create
+the proper certificate).
 The `Update_ref_files_ICARUSCODE_wf` is a special workflow used for this purpose only.
 At the end the temporary file with the certificate can be deleted:
     
