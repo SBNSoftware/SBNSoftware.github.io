@@ -14,7 +14,7 @@ To get back to the main CI wiki page, click [here](Continuous_integration.html).
 - The *sbnci* package can be found [here](https://github.com/SBNSoftware/sbnci).
 - It is a UPS package that currently depends on sbndcode, but is expected to depend on icaruscode in the future.
 - The package is written to run validation scripts on the output of the simulation chain, and to compare these validation plots with specified reference plots.
-- There are 3 main directories found in `sbnci/sbnci` for running this ci validation: *Modules*, *PlottingScripts* and *scripts*.
+- There are 4 main directories found in `sbnci/sbnci` for running this ci validation: *Modules*, *PlottingScripts*, *scripts* and *thresholds*.
 - The main recipe for this package is to create ROOT TTrees from an analysis module, create plots of these variables, and then compare them to reference plots.
 
 ### *Modules*
@@ -29,6 +29,9 @@ containing histograms and separate `.png` files for each plot to be displayed on
 ### *scripts*
 The *scripts* directory contains the `.sh` scripts used to run the plotting macros in *PlottingScripts*, setup the appropriate reference files 
 and run the comparison script.
+
+### *thresholds*
+The *thresholds* directory contains the `.txt` files with chi-squared thresholds for the plot comparisons in each validation. Each plot is given two thresholds, this defines "good", "okay" and "bad" agreement. These scales are also used to colour code the chi-squared tables and the plots on the CI dashboard.
 
 
 ## The *lar_ci* Package
@@ -46,6 +49,7 @@ which files to run and which settings to use.
 
 - The first update will be to include the LArSoft analysis modules inside `sbnci/sbnci/Modules`. As *sbnci* depends on *sbndcode* (and *icaruscode* in the future)
 regular LArSoft analysis modules can be used and run here.
+- You will need to provide a prolog-type fcl in the same folder as your new module to define a relevant table of fcl parameters. You should also provide a job fcl in the *JobConfigurations* folder which can be used to run your module.
 - Next a new ROOT macro will be needed in `sbnci/sbnci/PlottingScripts`. The file *sbnciplot_showervalidation.C* can be used as an example, the structure of the 
 file should match with the ROOT plots saved inside gDirectories. The output file should always have the name `ci_validation_histos.root` for the comparison 
 script to work.  The validation output files from different CI modules are all kept in separate directories so they won’t get confused.
@@ -55,28 +59,40 @@ an example for this. It should provide `sbnciplots.sh` with the desired Root mac
 ### Updates to *lar_ci*
 
 - The change required in the *lar_ci* package is to create a new config file for the new validation workflow, this should be located inside `lar_ci/cfg`. 
-A good example to use here is `grid_workflow_sbnd_mc_shower.cfg`. 
-- The main edits required here are to change the name set in *validation_process* on L8 and the *validation_tag* set on L9, then to change the script and input filename set in *validation_function1* on L11. The input filename should match the output of the *[mergeana]* section starting on L43.
-- The number of jobs and events to run for the validation is set in *njobs_phase_1* on L4 and *nevents_per_job_phase_1* on L5.
-- The reference version to use for the comparisons is set in *ci_extra_vars_1* on L12, with the location of the reference files set in *ci_extra_vars_2* on L13.
-- The desired simulation chain can be set in the *[sim]* and *[reco]* sections starting on L19 and L30 respectively. The *[reco]* section should also include the fcl to be used to run the analysis module (e.g. `TRACSValidation.fcl`).
+A good example to use here is `grid_workflow_sbnd_mc_reco_all.cfg`, note this workflow also details how to use multiple analysis modules in the same workflow. 
+- There are a lot of parameters to set in the config file
+   - *validation_process* and *validation_tag* provide a name for your validation workflow
+   - *validation_function* provides the name of the validation script (from *sbnci/scripts*) followed (just a comma inbetween, no gaps) by the name of the input file (this needs to match the output of your *[mergeana]* stage later on, i.e. the tree file
+   - You can have multiple *validation_functionX* parameters (*X=1,2,3...*), you will need a name for each in front of the script name deliminated by a *#* symbol
+   - The *ci_extra_vars_X* parameters allow you to define the enviroment variables needed later. This includes the reference version, the location of reference histogram file(s) and the location of the threshold file.
+   - The desired simulation chain can be set in the *[sim]* and *[reco]* sections. The *[reco]* section should also include the fcl to be used to run the analysis module (e.g. `allrecovalidation_job_sbnd.fcl`). The files do not have to be simulated from scratch, a SAM definition can be used with the *input_defname* tag.
+   - Make sure (particularly with multiple validations) that you get the formatting of *output_to_transfer* in the final stage correct to get all of the histogram files correctly transferred.
 
 ## Running the CI Validation
 
-Before triggering any CI tests you need to get the right certificates. To get these use these commands:
+Before triggering any CI tests you need to get the right certificates and the lar_ci commands. To get these use these commands:
 
-`setup lar_ci;kx509;voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'`
+`setup lar_ci`
+ 
+`setup cigetcert`
+ 
+`cigetcert -s 'fifebatch.fnal.gov'`
+ 
+`voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'`
+ 
+ ....or equivalent!
+  
+The CI validation can then be triggered using the following command (this is for the combined reconstruction workflow):
 
-The CI validation can then be triggered using the following command (this is for the shower validation workflow):
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_all_reco.cfg --jobname sbnd_ci`
 
-`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --jobname sbnd_ci`
+To run tests using a feature branch of *lar_ci* (e.g. `feature/hlay_sbnd_pfp_validation` here) use:
 
-To run tests using a feature branch of *lar_ci* (e.g. `feature/ascarff_sbndCiUpdate` here) use:
-
-`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --version feature/ascarff_sbndCiUpdate --jobname sbnd_ci`
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_all_reco.cfg --version feature/hlay_sbnd_pfp_validation --jobname sbnd_ci`
 
 And to include any other feature branches or specific versions us the `--revisions` option, e.g.:
 
-`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_shower.cfg --version feature/ascarff_sbndCiUpdate --jobname sbnd_ci --revisions "SBNSoftware/sbncode@v09_10_01"`
+`trigger --build-delay 0 --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_all_reco.cfg --version feature/hlay_sbnd_pfp_validation --jobname sbnd_ci --revisions "SBNSoftware/sbncode@v09_10_01"`
 
 For more info check out the [lar_ci wiki](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki).
+For help with importing a new module/workflow feel free to contact me (`h.lay@lancaster.ac.uk`) and I'll do my best to answer any questions!
