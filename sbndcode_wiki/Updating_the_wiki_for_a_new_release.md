@@ -21,4 +21,4 @@ Updating the wiki for a new release
 
 -   Copy and paste the file into a new wiki page and link it to the
     release list (see [this
-    example](ReleaseNotes091100.html))
+    example](Releases/ReleaseNotes091100.html))
