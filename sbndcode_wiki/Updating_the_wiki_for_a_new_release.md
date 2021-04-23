@@ -21,4 +21,4 @@ Updating the wiki for a new release
 
 -   Copy and paste the file into a new wiki page and link it to the
     release list (see [this
-    example](https://sbnsoftware.github.io/sbndcode_wiki/Releases/ReleaseNotes092100.html)
+    example](https://sbnsoftware.github.io/sbndcode_wiki/Releases/ReleaseNotes092100.html))
