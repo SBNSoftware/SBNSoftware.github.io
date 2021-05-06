@@ -16,7 +16,7 @@ toc_title: SBND Code Contents
 SBND Commissioning - Get Started Guide
 ========================================================================
 
-Log in to an SBND virtual machine:
+Log in to an SBND virtual machine, for example:
 ```bash
     ssh $USER@sbndgpvm01.fnal.gov
 ```
@@ -35,7 +35,7 @@ other areas available:
 
 
 
-1. Setup the SBND environment
+Setup the SBND environment
 -----------------------------------------------------------------------------
 
 Go to the `app` area, where we can install and develop software:
@@ -59,7 +59,7 @@ it a name of your choice):
 ```
 
 
-2. Run existing larsoft software
+Run existing larsoft software
 -----------------------------------------------------------------------------------
 
 ```bash
@@ -83,10 +83,10 @@ In general, you should select the latest version.
 
 
 
-3. Install and develop larsoft software
+Install and develop larsoft software
 -------------------------------------------------------------------------------------------------
 
-You can skip this section if you don't need to develop sbndcode.
+*You can skip this section if you don't need to develop sbndcode.*
 
 After steps 1 and 2, you can start setting up your development area:
 
@@ -126,6 +126,8 @@ done above), but every subsequent time you can just do
 
 ### Build your own LArSoft plug-in
 
+*You can skip this section if you don't need to develop sbndcode.*
+
 Now let's assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
 directory:
@@ -145,7 +147,7 @@ this by adding
 
 at the end of `srcs/sbndcode/sbndcode/CMakeLists.txt`.
 Good, now CMake will build that, but we need to add something inside it!
-Let\'s generate our first module:
+Let's generate our first module:
 
 ```bash
     cd MyProject/
@@ -155,7 +157,7 @@ Let\'s generate our first module:
 `cetskelgen` will create a template for your plug in (in this case an
 `analyzer` one, but can also be a `producer` or a `filter`) with name
 MyAnalyzer.
-Now let's make our own, simplest, CMakeLists.txt. Open a file called
+Now let's make our own, simplest, `CMakeLists.txt`. Open a file called
 `CMakeLists.txt` inside the ` MyProject` directory, and add these
 lines:
 
@@ -194,13 +196,11 @@ lines:
 
     install_fhicl()
     install_source()
-
-MORE INFORMATION TO BE WRITTEN.
 ```
+MORE INFORMATION TO BE WRITTEN.
 
 
-
-4. Generate Single Particle Events
+Generate Single Particle Events
 ---------------------------------------------------------------------------------------
 
 This section will show you how to generate particles in the SBND
@@ -237,7 +237,7 @@ Once you have done steps 1 and 2, open a new file (call it, for example,
 You can run via:
 
 ```bash
-    lar -c prodsingle_sbnd_proj.fcl -n 10
+    lar -c prodsingle_muon_sbnd.fcl -n 10
 ```
 
 where the option `-n 10` means that we are generating 10 events.
@@ -249,7 +249,7 @@ the generated events, with our muons in them. The events in this file
 have not been propagated in the detector using GEANT4 just yet, and the
 detector simulation has also not happened. We need to run this ourself.
 
-Here is how to do it:
+Here is how to run GEANT4:
 
 ```bash
     lar -c standard_g4_sbnd.fcl -s prodsingle_sbnd_SinglesGen-*.root -n 10
@@ -269,7 +269,7 @@ contains your generated events runt through detector simulation.
 
 
 
-5. Look at the Generated Events in the Event Display
+Look at the Generated Events in the Event Display
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
@@ -278,17 +278,16 @@ More information on how to use the event display are
 Open a fresh terminal, log in to an `sbndgpvm` machine, and run
 
 ```bash
-    MY_WORKDIR=/sbnd/app/users/$USER/workdir
     source /sbnd/app/users/mdeltutt/static_evd/setup.sh
     evd.py -s $MY_WORKDIR/prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root
 ```
 
-Click on "Raw Digit" in the top right, and you will the waveforms from
+Click on "Raw Digit" in the top right, and you will see the waveforms from
 your generated events.
 
 
 
-6. Generate an Analysis TTree
+Generate an Analysis TTree
 -----------------------------------------------------------------------------
 
 Now that you have generated your own events, you can run one last job,
