@@ -28,7 +28,7 @@ checklist anytime you get in touch with an expert after some anomalies
 during your shift. **If the expert on call does not answer:** you can
 select one other expert contact from the list to call.
 
-  |--------------------|--------------------------------------------------------------|---------------------|-------------------------|
+  
   |**Expert team**     | **Names**                                                    | **Available**       | **Slack tag**           |
   |Shift help          | **Bruce Howard/Francesco Poppi/Wenqiang Gu/Wooyoung Jang**   | 00:00 - 23:59 CST   | `@icarus-shift-help`    |
   |DAQ expert          | **Antoni Aduszkiewicz**                                      | 00:00 - 23:59 CST   | `@sbn_daq_experts`      |
@@ -38,7 +38,6 @@ select one other expert contact from the list to call.
   |DCS expert          | **Geoffry Savage**                                           | 00:00 - 23:59 CST   | n/a                     |
   |Cathode HV expert   | **Hector Carranza**                                          | 00:00 - 23:59 CST   | n/a                     |
   |Cryo expert         | **Claudio Monatanari and cryogenic team**                    | 00:00 - 23:59 CST   | n/a                     |
-  |------------------- |--------------------------------------------------------------|---------------------|-------------------------|
 
 
 # General advice to the shifters
