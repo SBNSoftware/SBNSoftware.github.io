@@ -7,10 +7,9 @@
 Currently, the detector is still in commissioning mode. The reference
 people for operations in this phase are listed below:
 
-  |**Role**                         |  **Name**             |  **Until (Date)**       | **Email**           |  **Slack**           |  **Phone** |
-  |----------------------------------| ---------------------- |-----------------------| ---------------------| ---------------------| ----------------|
-  | Commissioning coordinator      |    **Angela Fava**     |   January 1st, 2021 8am |  <afava@fnal.gov>  |    `@Angela Fava`    |    (xxx)-xxxxxxx |
-  | Deputy commissioning Coordinator |  **Andrea Scarpelli** |   January 1st, 2021 8am |  <ascarpell@bnl.gov>  |  `@Andrea Scarpelli` |  +1 631 8971290 |
+  |**Role**                          |  **Name**              |  **Until (Date)**        | **Email**             |  **Slack**           |  **Phone** |
+  | Commissioning coordinator        |    **Angela Fava**     |   January 1st, 2021 8am  |  <afava@fnal.gov>     |    `@Angela Fava`    |    (xxx)-xxxxxxx |
+  | Deputy commissioning Coordinator |  **Andrea Scarpelli**  |   January 1st, 2021 8am  |  <ascarpell@bnl.gov>  |  `@Andrea Scarpelli` |  +1 631 8971290 |
 
 ## Experts on call (Updated May 3rd)
 
