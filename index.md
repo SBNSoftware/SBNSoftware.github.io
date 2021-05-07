@@ -39,6 +39,8 @@ See below for helpful links:
 
 * [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
 
+### Operations
+* [ICARUS Operations](Operations/SBN_FD/index)
 
 ### Contribute to this wiki
 
