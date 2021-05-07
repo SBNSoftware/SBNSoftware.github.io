@@ -340,7 +340,12 @@ All the variables stored are described
 [here](https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/Commissioning/HitDumper_module.cc#L133).
 
 
+Available Samples
+---------------------------------------
 
+There are commissioning samples available that have already been processed and contain the HitDumper tree:
+
+BNB Neutrino Plus Cosmics: `/sbnd/data/commissioning/simulation/bnb_cosmics/v09_22_01/prod_v1/`
 
 
 Questions?
