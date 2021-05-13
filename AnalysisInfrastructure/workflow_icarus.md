@@ -4,7 +4,7 @@
 
 ### Stage 0
 
-* FCL: stage0_multiTPC_icarus.fcl
+FCL: stage0_multiTPC_icarus.fcl
 
 Decoding and low level reconstruction.
 
