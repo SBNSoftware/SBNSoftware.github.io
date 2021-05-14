@@ -24,3 +24,23 @@ High level reconstruction.
 * Purity DQM.
 * Cluster3D reconstruction.
 * Pandora reconstruction.
+
+## MC 2021A
+
+### Gen
+
+### G4
+
+FCL: cosmics_g4_icarus.fcl
+
+### Detsim
+
+FCL: multitpc_detsim_icarus.fcl
+
+### Reco1
+
+FCL: reco_icarus_driver_reco_multitpc_gauss.fcl
+
+### Reco2
+
+FCL: reco_icarus_driver_reco_multitpc_raw.fcl
