@@ -244,3 +244,17 @@ a channel number:
     lar -c dump_icarus_channelmap.fcl
 
 (which in `icaruscode` `v09_15_00` it is called `icarus_channelmap.txt`).
+
+
+### Booster Neutrino Beam target and decay pipe
+
+Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0, -60000 )` cm.
+
+> **TODO** people with more exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
+
+
+### Neutrinos from Main Injector target and decay pipe
+
+> **TODO** people with approximate or exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
+
+
