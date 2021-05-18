@@ -25,13 +25,35 @@ High level reconstruction.
 * Cluster3D reconstruction.
 * Pandora reconstruction.
 
-## MC 2021A
+## MC 2020
 
 ### Gen
 
 ### G4
 
-FCL: cosmics_g4_icarus.fcl
+FCL: g4_enable_spacecharge.fcl 
+
+### Detsim
+
+FCL: multitpc_detsim_icarus.fcl
+
+### Reco1
+
+FCL: reco_icarus_driver_reco_multitpc_gauss_sce.fcl 
+
+### Reco2
+
+FCL: reco_icarus_driver_reco_multitpc_raw.fcl
+
+## MC 2021
+
+### Gen
+
+### G4
+
+FCL: cosmics_g4_icarus.fcl  
+FCL: g4_enable_spacecharge.fcl  
+FCL: cosmics_g4_enable_spacecharge.fcl
 
 ### Detsim
 
