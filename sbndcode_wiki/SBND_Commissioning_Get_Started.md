@@ -35,7 +35,7 @@ other areas available:
 
 
 
-Setup the SBND environment
+1 - Setup the SBND environment
 -----------------------------------------------------------------------------
 
 Go to the `app` area, where we can install and develop software:
@@ -59,7 +59,7 @@ it a name of your choice):
 ```
 
 
-Run existing larsoft software
+2 - Run existing larsoft software
 -----------------------------------------------------------------------------------
 
 ```bash
@@ -83,7 +83,7 @@ In general, you should select the latest version.
 
 
 
-Install and develop larsoft software
+3 - Install and develop larsoft software
 -------------------------------------------------------------------------------------------------
 
 *You can skip this section if you don't need to develop sbndcode.*
@@ -124,7 +124,7 @@ done above), but every subsequent time you can just do
 
 
 
-### Build your own LArSoft plug-in
+#### Build your own LArSoft plug-in
 
 *You can skip this section if you don't need to develop sbndcode.*
 
