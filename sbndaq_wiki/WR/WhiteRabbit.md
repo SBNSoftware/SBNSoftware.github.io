@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Running CAEN DT5702 readout of CRT
+title: White Rabbit Timing Systems
 toc: true
 ---
 
