@@ -118,9 +118,9 @@ to get your environment set up (after doing the usual steps 1 and 2):
     source localProducts*/setup
     mrbslp
 
-The first time you build your code, you need to invoke `mrb i -j` (as
+The first time you build your code, you need to invoke `mrb i -j4` (as
 done above), but every subsequent time you can just do
-`make install -j`, which is slightly faster.
+`make install -j4`, which is slightly faster.
 
 
 
@@ -145,7 +145,7 @@ this by adding
     add_subdirectory(MyProject)
 ```
 
-at the end of `srcs/sbndcode/sbndcode/CMakeLists.txt`.
+at the end of `my_larsoft/srcs/sbndcode/sbndcode/CMakeLists.txt`.
 Good, now CMake will build that, but we need to add something inside it!
 Let's generate our first module:
 
@@ -157,6 +157,9 @@ Let's generate our first module:
 `cetskelgen` will create a template for your plug in (in this case an
 `analyzer` one, but can also be a `producer` or a `filter`) with name
 MyAnalyzer.
+You can develop your own LArSoft code inside the `MyAnalyzer_module.cc`.
+For now, we will just build the module as it is (empty).
+
 Now let's make our own, simplest, `CMakeLists.txt`. Open a file called
 `CMakeLists.txt` inside the ` MyProject` directory, and add these
 lines:
@@ -197,7 +200,24 @@ lines:
     install_fhicl()
     install_source()
 ```
-MORE INFORMATION TO BE WRITTEN.
+
+Now we need to compile again, go to build directory (which you can also reach via `cd $MRB_BUILDDIR`) and run
+
+```
+    make install -j4
+```
+
+If you log out and log in again, you don't need to run all the steps above,
+but to get your area setup you should run step 1 and 2 above, then:
+
+```
+    cd my_larsoft
+    source localProducts*/setup
+    mrbsetenv
+    mrbslp
+```
+
+And you are good to go.
 
 
 Generate Single Particle Events
