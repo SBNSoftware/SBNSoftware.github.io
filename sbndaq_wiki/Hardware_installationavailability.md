@@ -1,11 +1,11 @@
 ---
-lang: en
+layout: page
 title: Hardware installationavailability
 ---
 
-[]{#WR-hardware-installations-around-the-Lab-and-spares-availability}
 
-# WR hardware installations around the Lab and spares availability[¶](#WR-hardware-installations-around-the-Lab-and-spares-availability){.wiki-anchor}
+
+# WR hardware installations around the Lab and spares availability
 
 To the best of my knowledge **Bill/Michelle please double check the DAB
 and SBND sections**

@@ -1,18 +1,18 @@
 ---
-lang: en
+layout: page
 title: White Rabbit system Wiki
 ---
 
-[]{#White-Rabbit-System}
 
-# White Rabbit System[¶](#White-Rabbit-System){.wiki-anchor}
+
+# White Rabbit System
 
 1\) **WR installation at Fermilab for the SBN program**
 
 This figure illustrates the final deployment of WR Network at Fermilab
 for the SBN program
 
-![](/redmine/attachments/download/62402/WR_installation.png)
+!(/redmine/attachments/download/62402/WR_installation.png)
 
 2\) **WR installation at beam locations: BNB (MI-12) and NuMI (MI-60)**
 
@@ -36,7 +36,7 @@ provides the BNB early warning ; the cable in DIO input 2 ( software
 channel 1) is the \$1D ; the cable in DIO input channel 4 (software
 channel 3) is the BNB RWM.
 
-![](/redmine/attachments/download/63323/spec-dio-mi12-labels.png)
+!(/redmine/attachments/download/63323/spec-dio-mi12-labels.png)
 
 Fig 2b shows the SPEC/DIO card installed in the server at MI-60. The
 beam signals cables entering the DIO are: MIBS \$74 in DIO input 5
@@ -44,7 +44,7 @@ beam signals cables entering the DIO are: MIBS \$74 in DIO input 5
 DIO input 2 (software channel 1) which is the equivalent of the BNB
 \$1D.
 
-![](/redmine/attachments/download/63324/spec-dio-mi60-labels.png)
+!(/redmine/attachments/download/63324/spec-dio-mi60-labels.png)
 
 See point 5) below to see the current beam signals implementation at
 MI12 and MI60.
@@ -60,14 +60,14 @@ crate installed in the Trigger rack on the East Mezzanine.
 
 4\) For **CURRENT STATUS of WR hardware installation at various LAB
 locations and spares** see here: [Hardware
-installation/availability](Hardware_installationavailability.html){.wiki-page}
+installation/availability](Hardware_installationavailability.html)
 
-[]{#How-to-synchronize-a-SPECDIO-in-the-WR-network}
 
-## How to synchronize a SPEC/DIO in the WR network[¶](#How-to-synchronize-a-SPECDIO-in-the-WR-network){.wiki-anchor}
+
+## How to synchronize a SPEC/DIO in the WR network
 
 Read here [Setup SPEC/DIO in WR
-network](Setup_SPECDIO_in_WR_network.html){.wiki-page} for how to
+network](Setup_SPECDIO_in_WR_network.html) for how to
 synchronize a SPEC/DIO.
 
 When the DIO is synchronized, then you can use it to broadcast signals
@@ -79,33 +79,33 @@ At both sending and receiving nodes we use software developed by the
 CERN WR group and provided by the vendor , in our case SevenSolutions,
 Granada, Spain ( web: sevensols.com ).\
 See this page [How to send and receive beam signals on the WR
-network](_How_to_send_and_receive_beam_signals_on_the_WR_network.html){.wiki-page}
+network](_How_to_send_and_receive_beam_signals_on_the_WR_network.html)
 for instructions.
 
 5\) **Current Beam signals settings at MI-12 and MI-60 (as Feb
 22,2021)**\
 See this page [Current beam signals
-settings](_Current_beam_signals_settings_.html){.wiki-page} for details
+settings](_Current_beam_signals_settings_.html) for details
 
 6\) How to setup a WR switch and nodes\
 See here [How to setup a WR switch and
-nodes](_How_to_setup_a_WR_switch_and_nodes_.html){.wiki-page} for info.
+nodes](_How_to_setup_a_WR_switch_and_nodes_.html) for info.
 
 7\) **Troubleshooting**\
-See this page [Troubleshooting](_Troubleshooting_.html){.wiki-page} for
+See this page [Troubleshooting](_Troubleshooting_.html) for
 info
 
 **APPENDIX: find here various technical information on WR hardware and
 installation and tests performed at DAB test stands (2017)**
 
--   [White Rabbit](White_Rabbit.html){.wiki-page}
-    -   [White Rabbit](White_Rabbit.html){.wiki-page} device driver and
+-   [White Rabbit](White_Rabbit.html)
+    -   [White Rabbit](White_Rabbit.html) device driver and
         software installation
-    -   [SPEC Cards](SPEC_Cards.html){.wiki-page} Configuration
-    -   [SPEC DIO](SPEC_DIO.html){.wiki-page} How to set up
-        -   [DIO test (2017)](_DIO_test_(2017).html){.wiki-page}
+    -   [SPEC Cards](SPEC_Cards.html) Configuration
+    -   [SPEC DIO](SPEC_DIO.html) How to set up
+        -   [DIO test (2017)](_DIO_test_(2017).html)
             timeline of DIO tests sbnd-daq25
-    -   [SPEC TDC](SPEC_TDC.html){.wiki-page} How to setup the TDC and
+    -   [SPEC TDC](SPEC_TDC.html) How to setup the TDC and
         run \~tools programs
-    -   [SPEC Fine-Delay](SPEC_Fine-Delay.html){.wiki-page} How to setup
+    -   [SPEC Fine-Delay](SPEC_Fine-Delay.html) How to setup
         the FineDelay and run \~tools programs
