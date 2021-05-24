@@ -62,6 +62,15 @@ Host *.fnal.gov
   GSSAPIDelegateCredentials yes
 ```
 
+For MacOS users, in case they get the following message
+```
+Warning: No xauth data; using fake authentication data for X11 forwarding.
+```
+when logging in to SBND GPVM nodes, they need to add to the above also the line
+```shell
+  XAuthLocation /opt/X11/bin/xauth
+```
+
 Create the file if it\'s not there. In some systems you might need to
 reload the ssh agent. You also want to have this file in the gpvm
 machine.
