@@ -43,7 +43,7 @@ Rename the private key and copy the public key:
 
       cd ~/.ssh
       mv id_rsa sbn_rsa
-      cp id_rsa.pub authorized_keys
+      cat id_rsa.pub >>authorized_keys
 
 Then add the following to your **\~/.ssh/config** file:
 
