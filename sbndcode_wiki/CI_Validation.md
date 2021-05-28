@@ -32,10 +32,12 @@ To get back to the main CI wiki page, click [here](Continuous_integration.html).
 - The test trigger uses the following command:
    
    `trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND_test --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all_test.cfg --revision "repo@branch" --testmode`
+   
 - The key point here is the `--revisions` tag which is where you specify the branches you want to test. For example: `--revisions "SBNSoftware/sbndcode@feature/hlay_vertexing henrylay97/LArContent>larpandoracontent@feature/hlay_vertex_bdt_changes"` would provide the two custom branches for `sbndcode` and `larpandoracontent` respectively. Note the different syntaxes for specifying a branch in the main repository and for using a branch in a forked repository and directing it towards the correct product name.
 - Once your test job has succeeded (or you're feeling brave) then the full reconstruction validation can be triggered with the following command:
    
    `trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all.cfg --revision "repo@branch"`
+   
 - Other options for the trigger command can be found as usual by running `trigger -h`.
 - The results of your trigger can be followed on the [dashboard.](https://dbweb8.fnal.gov:8443/LarCI/app/ns:sbnd/view_builds/index)
 
