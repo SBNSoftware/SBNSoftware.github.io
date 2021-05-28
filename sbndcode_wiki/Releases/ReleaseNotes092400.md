@@ -1,21 +1,21 @@
 ---
 layout: page
-title: ReleaseNotes092204
+title: ReleaseNotes092400
 toc: true
 ---
 
 -----------------------------------------------------------------------------
-| v09.22.04 | 28 May 2021 | [ReleaseNotes](ReleaseNotes092204.html) |
+| v09.24.00 | 28 May 2021 | [ReleaseNotes](ReleaseNotes092400.html) |
 | --- | --- | --- |
 
 
 
-sbndcode v09_22_04 Release Notes
+sbndcode v09_24_00 Release Notes
 =======================================================================================
 
 [List of sbndcode releases](List_of_SBND_code_releases.html)
 
-Download instructions for [sbndcode v09_22_04](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v09_22_04/sbndcode-v09_22_04.html)
+Download instructions for [sbndcode v09_24_00](http://scisoft.fnal.gov/scisoft/bundles/sbnd/v09_24_00/sbndcode-v09_24_00.html)
 
 Purpose
 ---------------------------------------------------
