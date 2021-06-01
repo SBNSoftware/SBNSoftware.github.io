@@ -27,7 +27,7 @@ Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
-### [Workflow Management](workflow.md)
+### [Workflow Management](WorkflowManagement/workflow.md)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
