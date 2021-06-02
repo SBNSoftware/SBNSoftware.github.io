@@ -1,0 +1,186 @@
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    background-color: #ffff99;
+}
+th {
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+    background-color: #ffcc99;
+}
+</style>
+<title>SBND SAM Metadata</title>
+</head>
+<body>
+<h1>SBND SAM Metadata</h1>
+<table>
+<tr>
+<th rowspan=2>Dimension</th>
+<th rowspan=2>Type</th>
+<th rowspan=2>Common Values</th>
+<th colspan=2>Artroot Files</th>
+<th colspan=2>Non-Artroot Files</th>
+</tr>
+<tr>
+<th>Source</th>
+<th>Workflow<br>Override?</th>
+<th>Source</th>
+<th>Workflow<br>Override?</th>
+</tr>
+<tr>
+<td>group</td>
+<td>built-in</td>
+<td>sbnd</td>
+<td>FileCatalogMetadata<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>file_type</td>
+<td>built-in</td>
+<td>data<br>mc</td>
+<td>FileCatalogMetadata<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>run_type</td>
+<td>built-in</td>
+<td>physics</td>
+<td>FileCatalogMetadata<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>application.family</td>
+<td>built-in</td>
+<td>art</td>
+<td>FileCatalogMetadata<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>application.name</td>
+<td>built-in</td>
+<td></td>
+<td>art internal /<br>metadata extractor</td>
+<td>No</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>application.version</td>
+<td>built-in</td>
+<td></td>
+<td>FileCatalogMetadata<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>file_format</td>
+<td>built-in</td>
+<td>binaryraw%<br>artroot<br>root</td>
+<td>art internal</td>
+<td>No</td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>data_tier</td>
+<td>built-in</td>
+<td></td>
+<td>RootOutput module</td>
+<td>No</td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>data_stream</td>
+<td>built-in</td>
+<td></td>
+<td>RootOutput module</td>
+<td>No</td>
+<td>N/A</td>
+<td></td>
+</tr>
+<tr>
+<td>sbnd_project.name</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>sbnd_project.stage</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>sbnd_project.version</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>sbnd_project.software</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>fcl.name</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>No</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>production.name</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+<tr>
+<td>production.type</td>
+<td>parameter</td>
+<td></td>
+<td>FileCatalogMetadataSBND<br>service</td>
+<td>Yes</td>
+<td>same as artroot</td>
+<td></td>
+</tr>
+</table>
+</body>
+</html>
