@@ -55,7 +55,7 @@ different from the one configured in the current job
 > starting with ICARUS software release `v09_06_00` (October 2020).
 
 
-### Testing a new version of the geometry description
+### Running standard tets on a a new version of the geometry description
 
 LArSoft provides a geometry test module with a decent coverage
 for geometry and channel mapping functions.
@@ -219,6 +219,104 @@ name                                   | introduced  | description
 -------------------------------------- | ----------- | ---------------------------------------------------------------------
 `use_overburden_geometry_icarus.fcl`   | `v08_44_00` | 18-m first induction plane wires geometry with concrete overburden
 `use_nooverburden_geometry_icarus.fcl` | `v08_44_00` | 18-m first induction plane wires geometry without concrete overburden
+
+
+### Geometry compatibility checks
+
+With LArSoft `v09_12_00`, `Geometry` service will perform a consistency check
+between the input file and the job configuration: the idea is that the geometry
+configured in the current job must be "compatible" with the one that was used
+to create the input file. If the check fails, an exception will be thrown like:
+
+    %MSG-s ArtException:  PostEndJob 01-Jun-2021 20:59:45 CDT ModuleEndJob
+    ---- EventProcessorFailure BEGIN
+      EventProcessor: an exception occurred during current event processing
+      ---- Geometry BEGIN
+        Geometry used for run run: 5729 is incompatible with the one configured in the job!
+        === job configuration ==================================================
+        Geometry information version: 2
+        Detector name:               'icarus_splitwires'
+        Full configuration:
+        --------------------------------------------------------------------------------
+        ChannelMapping: {
+          WirelessChannels: {
+              CollectionEvenPostChannels: 96
+              CollectionEvenPreChannels: 64
+              CollectionOddPostChannels: 64
+              CollectionOddPreChannels: 96
+              FirstInductionPostChannels: 96
+              FirstInductionPreChannels: 0
+              SecondInductionEvenPostChannels: 64
+              SecondInductionEvenPreChannels: 96
+              SecondInductionOddPostChannels: 96
+              SecondInductionOddPreChannels: 64
+          }
+          tool_type: "ICARUSsplitInductionChannelMapSetupTool"
+        }
+        DisableWiresInG4: true
+        GDML: "icarus_complete_20201107_no_overburden.gdml"
+        Name: "icarus_splitwires"
+        ROOT: "icarus_complete_20201107_no_overburden.gdml"
+        SurfaceY: 690
+        service_type: "Geometry"
+        --------------------------------------------------------------------------------
+        === run configuration ==================================================
+        Geometry information version: 2
+        Detector name:               'icarus_v2'
+        Full configuration:
+        --------------------------------------------------------------------------------
+        ChannelMapping: {
+          WirelessChannels: {
+              CollectionEvenPostChannels: 96
+              CollectionEvenPreChannels: 64
+              CollectionOddPostChannels: 64
+              CollectionOddPreChannels: 96
+              FirstInductionPostChannels: 96
+              FirstInductionPreChannels: 0
+              SecondInductionEvenPostChannels: 64
+              SecondInductionEvenPreChannels: 96
+              SecondInductionOddPostChannels: 96
+              SecondInductionOddPreChannels: 64
+          }
+          tool_type: "ICARUSsplitInductionChannelMapSetupTool"
+    }
+        DisableWiresInG4: true
+        GDML: "icarus_complete_20210311_no_overburden_rotUV.gdml"
+        Name: "icarus_v2"
+        ROOT: "icarus_complete_20210311_no_overburden_rotUV.gdml"
+        SurfaceY: 690
+        service_type: "Geometry"
+        --------------------------------------------------------------------------------
+        ========================================================================
+      ---- Geometry END
+    ---- EventProcessorFailure END
+    ---- FatalRootError BEGIN
+      Fatal Root Error: TTree::SetEntries
+      Tree branches have different numbers of entries, eg art::TriggerResults_TriggerResults__Trigger. has 0 entries while EventAuxiliary has 50 entries.
+      ROOT severity: 2000
+    ---- FatalRootError END
+    %MSG
+
+In this case, a ICARUS data file (from run 5729) had been decoded with a newer version
+of `icaruscode` (`v09_22_00`) which used a geometry with "detector name" `icarus_v2`.
+The job producing the message, though, was from `icaruscode` `v09_17_00` and, as such,
+configured with the geometry named `icarus_splitwires`.
+The error message has two exceptions. The first is from `Geometry` service, informing
+about the failure of the check, of the `Geometry` service configuration of the job being run
+(`job configuration`) and the one found in the input file (`run configuration`,
+referring to the fact that the input file keeps the geometry check information in each
+`art::Run`). The second exception is a consequence of the first one and does not contain
+any relevant information.
+The strongly recommended solution is to solve the inconsistency. In this case, it may be
+a request to ICARUS production for reprocessing the data of the run with a more modern
+`icaruscode` release or, conversely, to configure the current job to use a
+[legacy geometry](#legacy-configurations) or, if at all possible, use an older release of
+`icaruscode` (which is, sadly, the safest bet).
+In case of simulated samples, plain reprocessing is not possible because the very first
+stage (generation) is already bound to a specific geometry; in that case, new samples
+should be generated or requested.
+Only when knowing exactly the implications and consequences, the check should be just
+bypasssed: in that way, physics results are almost always going to be incorrect.
 
 
 Where is located everything?
