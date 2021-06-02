@@ -300,7 +300,7 @@ and it can be enabled by adding to `jobsub_submit` the options:
 (when using LArBatch `project.py` from `larbatch` `v01_55_01` or newer,
 Singularity containers are already enabled in most configurations,
 as [documented by the author](https://indico.fnal.gov/event/48412/#2-container-issues-and-larbatc),
-and normally no action is needed, beside maybe removing the `<os>` section for good measure).
+and often no action is needed, beside maybe adding a `<os>` element for good measure).
 Also note that FIFE recommends that Operating System selection be not enforced
 via `--os` option when using containers (after all, we are explicitly shipping the whole OS).
 
