@@ -63,7 +63,7 @@ it a name of your choice):
 -----------------------------------------------------------------------------------
 
 ```bash
-    setup sbndcode v09_21_00 -q e19:prof
+    setup sbndcode v09_24_00 -q e20:prof
 ```
 
 This setup allows you to have the full sbnd software available, without
@@ -86,7 +86,7 @@ In general, you should select the latest version.
 3 - Install and develop larsoft software
 -------------------------------------------------------------------------------------------------
 
-*You can skip this section if you don't need to develop sbndcode.*
+**You can skip this section if you don't need to develop sbndcode.**
 
 After steps 1 and 2, you can start setting up your development area:
 
@@ -126,7 +126,7 @@ done above), but every subsequent time you can just do
 
 #### Build your own LArSoft plug-in
 
-*You can skip this section if you don't need to develop sbndcode.*
+**You can skip this section if you don't need to develop sbndcode.**
 
 Now let's assume you need to have your own LArSoft plugin (or module).
 Go into `srcs/sbndcode/sbndcode` and start by creating your own
@@ -236,18 +236,18 @@ Once you have done steps 1 and 2, open a new file (call it, for example,
 `prodsingle_muon_sbnd.fcl`) and add the following lines in it:
 
 ```bash
-    #include "prodsingle_sbnd_proj.fcl" 
+#include "prodsingle_sbnd_proj.fcl" 
 
-    physics.producers.generator.PDG: [13]             # Generate muons (1 muon per event)
-    physics.producers.generator.P0: [3]               # With an initial momentum of 3 GeV
-    physics.producers.generator.X0: [155]             # At a starting X position = 155 cm
-    physics.producers.generator.Y0: [0]               # At a starting Y position = 0
-    physics.producers.generator.Z0:[-25]              # At a starting Z position = -25 cm
-    physics.producers.generator.Theta0XZ: [-11.]      # With an initial angle of -11 degrees in the X-Z plane, from the Z axis
-    physics.producers.generator.Theta0YZ: [0]         # With an initial angle of 0 degrees in the Y-Z plane, from the Z axis
-    physics.producers.generator.SigmaThetaXZ: [20]    # With an angular spread of 20 degrees in the Y-Z plan
-    physics.producers.generator.SigmaThetaYZ: [20]    # With an angular spread of 20 degrees in the Y-Z plan
-    physics.producers.generator.AngleDist: 1          # With angles Gaussian distributed
+physics.producers.generator.PDG: [13]             # Generate muons (1 muon per event)
+physics.producers.generator.P0: [3]               # With an initial momentum of 3 GeV
+physics.producers.generator.X0: [155]             # At a starting X position = 155 cm
+physics.producers.generator.Y0: [0]               # At a starting Y position = 0
+physics.producers.generator.Z0:[-25]              # At a starting Z position = -25 cm
+physics.producers.generator.Theta0XZ: [-11.]      # With an initial angle of -11 degrees in the X-Z plane, from the Z axis
+physics.producers.generator.Theta0YZ: [0]         # With an initial angle of 0 degrees in the Y-Z plane, from the Z axis
+physics.producers.generator.SigmaThetaXZ: [20]    # With an angular spread of 20 degrees in the Y-Z plan
+physics.producers.generator.SigmaThetaYZ: [20]    # With an angular spread of 20 degrees in the Y-Z plan
+physics.producers.generator.AngleDist: 1          # With angles Gaussian distributed
 
 ```
 (More information on all the settable parameters can be found
@@ -285,7 +285,7 @@ Finally, we can run the detector simulation:
 ```
 
 The output file `prodsingle_sbnd_SinglesGen-XXX_G4-XXX_DetSim-XXX.root`
-contains your generated events runt through detector simulation.
+contains your generated events run through detector simulation.
 
 
 
