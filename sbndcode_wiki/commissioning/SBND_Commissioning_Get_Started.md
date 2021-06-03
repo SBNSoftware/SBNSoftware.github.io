@@ -356,7 +356,7 @@ the PMTs positions:
 ### What are all the information stored in the TTree?
 
 All the variables stored are described
-[here](https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/Commissioning/HitDumper_module.cc#L133).
+[here](https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/Commissioning/HitDumper_module.cc#L152).
 
 
 7 - Available Samples
