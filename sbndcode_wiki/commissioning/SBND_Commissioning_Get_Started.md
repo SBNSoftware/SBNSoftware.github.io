@@ -295,7 +295,7 @@ Look at the Generated Events in the Event Display
 More information on how to use the event display are
 [here](https://sbnsoftware.github.io/sbndcode_wiki/TITUS_Event_Display.html).
 
-Open a fresh terminal, log in to an `sbndgpvm` machine, and run
+Open a **fresh** terminal, log in to an `sbndgpvm` machine, and run
 
 ```bash
     source /sbnd/app/users/mdeltutt/static_evd/setup.sh
