@@ -220,7 +220,7 @@ but to get your area setup you should run step 1 and 2 above, then:
 And you are good to go.
 
 
-Generate Single Particle Events
+4 - Generate Single Particle Events
 ---------------------------------------------------------------------------------------
 
 This section will show you how to generate particles in the SBND
@@ -289,7 +289,7 @@ contains your generated events run through detector simulation.
 
 
 
-Look at the Generated Events in the Event Display
+5 - Look at the Generated Events in the Event Display
 ---------------------------------------------------------------------------------------------------------------------------
 
 More information on how to use the event display are
@@ -307,7 +307,7 @@ your generated events.
 
 
 
-Generate an Analysis TTree
+6 - Generate an Analysis TTree
 -----------------------------------------------------------------------------
 
 Now that you have generated your own events, you can run one last job,
@@ -359,7 +359,7 @@ All the variables stored are described
 [here](https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/Commissioning/HitDumper_module.cc#L133).
 
 
-Available Samples
+7 - Available Samples
 ---------------------------------------
 
 There are commissioning samples available that have already been processed and contain the HitDumper tree:
@@ -372,7 +372,7 @@ Cosmics only, CRT filtered (east-west): `/sbnd/data/commissioning/simulation/cos
 
 
 
-Questions?
+8 - Questions?
 ---------------------------------------
 
 Feel to ask
