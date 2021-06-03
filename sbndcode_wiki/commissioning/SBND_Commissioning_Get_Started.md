@@ -338,7 +338,7 @@ collection plane:
     root[1] hitdumpertree->Draw("hit_peakT:hit_wire", "hit_tpc == 1 && hit_plane == 2")
 ```
 
-![HitDumper Demo 1](https://cdcvs.fnal.gov/redmine/attachments/download/57665/hitdumper_demo_1.png)
+![HitDumper Demo 1](files/hitdumper_demo_1.png)
 
 Or you can look at the optical hits. For example, let's look at the Y
 and Z position of the stored optical hits in TPC 0. These correspond to
@@ -350,8 +350,7 @@ the PMTs positions:
     root[1] hitdumpertree->Draw("ophit_opdet_y:ophit_opdet_z", "ophit_opdet_x<0 && ophit_opdet_x != -9999", "colz")
 ```
 
-![HitDumper Demo 2](https://cdcvs.fnal.gov//redmine/attachments/download/57668/hitdumper_demo_2.png)
-
+![HitDumper Demo 2](files/hitdumper_demo_2.png)
 
 
 ### What are all the information stored in the TTree?
