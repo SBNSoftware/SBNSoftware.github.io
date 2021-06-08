@@ -10,9 +10,9 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 [List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
-## Sub-topic Groups
+## Topic Groups
 
-Each of these sub-groups are charged with defining and implement common SBN-wide solutions.
+Each of these sgroups are charged with defining and implement common SBN-wide solutions. Please find an organization chart [here](sbnai_orgchart.md). 
 
 ### [Software Release Management](rm.md)
 
@@ -35,7 +35,7 @@ Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
 ### [Simulation Infrastructure and Integration](sim.md)
 
-Conveners: [Marco del Tutto](mailto:)
+Conveners: [Marco del Tutto and Alessandro Menegolli](mailto:)
 
 <!-- Develop infrastructure to support a data-driven detector simulation and maintain its consistent configuration -->
 
