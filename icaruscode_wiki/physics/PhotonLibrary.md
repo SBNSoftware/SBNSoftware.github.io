@@ -284,6 +284,7 @@ Past campaigns
 | `20200816` | `v08_62_01`* | `icarus_data` `v09_01_00` | `PhotonLibrary20200816.root` | updated refraction index and Rayleigh scattering length |
 | `20200925` | `v09_04_01`* | `icarus_data` `v09_06_00` | `PhotonLibrary20200925.root` | TPC wires in geometry, and steel reflectivity           |
 | `20201209` | `v09_10_01`  | `icarus_data` `v09_11_00` | `PhotonLibrary20201209.root` | opaque photodetectors                                   |
+| `20210426` | `v09_22_00`  | _nowhere_                 | `PhotonLibrary20210426.root` | high resolution, low precision                          |
 
 Campaigns with software versions marked with "*" had custom modifications.
 This is not so uncommon, since issues arise on top of the releases.
@@ -342,6 +343,36 @@ and a two-step strategy was attempted where a job would be scheduled for 2 days,
 and if that fails automatically resubmitted with 3.5 days.
 Due to the age of some of the working nodes, a handful of jobs managed to fail the 3.5 day limit,
 but no job failed it twice (after manual resubmission).
+
+
+### 20210426
+
+The April-June 2021 campaign built a test library with high resolution (cell size (1 cm)^3^)
+and low precision (10,000 photons generated per cell).
+This is not an official campaign and it is not meant to be used with LArSoft
+(if you try you'll find out why), although it is stored in LArSoft format.
+Note also that while  coalescing the library back in 5 cm cells would arguably produce
+a more precise library, the lack of information on non-argon areas will bias the cells
+which contain them.
+The library file is currently available in
+`/pnfs/icarus/persistent/users/petrillo/data/PhotonLibrary/PhotonLibrary-20210426.root`.
+
+Compared to the previous campaigns, the event-wise overhead is much more relevant when
+processing 10^4^ photons in a cell than it was for 10^6^ (roughly 7 seconds vs. 70 per cell).
+The campaign was carried entirely `OFFSITE`, which proved to be a challenge.
+First, the CPU time offer per job is strongly limited, and to get a reasonable pool
+of nodes the requirement had to be limited to 23 hours per job. The job size was set
+so that it would take about 7-9 hours on a GPVM to complete. The resulting parameters
+were 13790 jobs, each processing 20350 voxels. Unfortunately, too many of the nodes
+(roughly 20%) reached nevertheless the limit of 23 hours. The submit-check-remove-resubmit
+went tiresome very quickly. With the help of the usual Vito Di Benedetto I could set
+the job parameters so that the job would be automatically released when held,
+which eventually made the process smoother. Also, the submission of 13790 jobs
+takes days, and I staggered it anyway.
+A full check of the job takes also the good part of a day.
+Merging took also over 24 hours, and recompressing took close to that too.
+
+
 
 
 Questions and answers
