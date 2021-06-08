@@ -375,7 +375,7 @@ Cosmics only, CRT filtered (east-west): `/sbnd/data/commissioning/simulation/cos
 8 - Questions?
 ---------------------------------------
 
-Feel to ask
+Feel free to ask
 [Marco](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=30269N)
 and
 [Michelle](http://www-tele.fnal.gov/cgi-bin/telephone.script?type=id&string=15290N).
