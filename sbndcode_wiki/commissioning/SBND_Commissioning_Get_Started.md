@@ -96,7 +96,7 @@ After steps 1 and 2, you can start setting up your development area:
     mrb newDev
     source localProducts*/setup
     cd srcs/
-    mrb g -t v09_21_00 sbndcode
+    mrb g -t v09_24_00 sbndcode
     cd $MRB_BUILD
     mrbsetenv
     mrb i -j
