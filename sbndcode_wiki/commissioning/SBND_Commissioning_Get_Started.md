@@ -99,7 +99,7 @@ After steps 1 and 2, you can start setting up your development area:
     mrb g -t v09_24_00 sbndcode
     cd $MRB_BUILD
     mrbsetenv
-    mrb i -j
+    mrb i -j4
     cd ../
     mrbslp
 ```
