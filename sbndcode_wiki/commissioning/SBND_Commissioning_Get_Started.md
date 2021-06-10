@@ -326,7 +326,7 @@ what is in the file:
 ```bash
     root -l hitdumper_tree.root 
     root[0] hitdumper->cd()
-    root[1] hitdumper->Print()
+    root[1] hitdumpertree->Print()
 ```
 
 Let's look at the hit time vs. hit wire for TPC 1 and only for the
