@@ -1,9 +1,9 @@
 # SBN Workflow Tasks
 
-* Standard workflows / fcl configurations.
+* Standard fcl configurations.
 * Tools.
   * SBN common tools / fife_launch scripts.
-  * Multi-fcl workflows.
+  * Multi-fcl batch jobs.
   * Merging.
   * Production database.
   * SAM successor tools.
