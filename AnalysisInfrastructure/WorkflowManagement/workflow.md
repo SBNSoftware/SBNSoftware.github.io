@@ -1,5 +1,7 @@
 # SBN Analysis Infrastructure Workflow Management
 
+## [Tasks](tasks.md)
+
 ## Standard Workflows
 
 * [SBND](workflow_sbnd.md)
