@@ -13,7 +13,7 @@ Short user guide to integration tests in ICARUS
 > not complete yet.*
 
 > *Note:* when the text refers to "now" or "as of today" or "at the time of writing",
-> you can check the history of the web page to find out when that was.
+> you can use the "blame" feature of GIT to find out when that was.
 
 
 What are integration tests 
@@ -268,23 +268,37 @@ tests in parallel, instead than one after the other.
 ### **TODO** Remote testing of published code 
 
 The Continuous Integration system can build and test any publicly available branch.
-To ask for the ICARUS integration tests, use the `icaruscode_wf` workflow:
+Tests are triggered by a command called `trigger` from `lar_ci`
+The full documentation of `trigger` and `lar_ci` is maintained in [
+Fermilab Redmine](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki/How_to_trigger_the_default_CI_build).
+To ask for the ICARUS integration tests:
 
     setup lar_ci
-    trigger -build-delay 0 --workflow icaruscode_wf
-
+    CI_CERT=/tmp/ci_cert.pem
+    kx509 -o "$CI_CERT"
+    trigger --build-delay 0 --cert "$CI_CERT"
+    
 This will run the "quick" test, just like if it had been triggered
 automatically. The `--build-delay 0` option tells the system to start as
 soon as possible (instead of waiting for 15 minutes, which would be
 pointless since we are not pushing anything any more).
 
-In general, the supported workflows are listed in the
-[list of supported ICARUS workflows](LArCI_Workflows.md#ICARUS-CI-Workflows).
+That command runs the `icaruscode_wf` workflow, which is what we usually want.
+The supported workflows are also listed in
+[the official `lar_ci` documentation](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki/LArCI_Workflows#ICARUS-CI-Workflows).
 
-TODO: document how to run on branches
+Running on specific branches is also possible (`--revisions`) and also documented in
+[`lar_ci` wiki](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki/How_to_trigger_the_default_CI_build).
+To use branches from GitHib the syntax is non-straightforward. For example:
+    
+    trigger --build-delay 0 --cert "$CI_CERT" --revisions 'SBNSoftware/icaruscode@feature/myBranch,SBNSoftware/icarus_signal_processing@v09_22_01'
+    
+will test `develop` branches for everything except for `icaruscode`,
+which will use `feature/myBranch`, and for `icarus_signal_processing`, using `v09_22_01` tag.
+Both repositories are taken from GitHub ([SBNSoftware/icaruscode](https://github.com/SBNSoftware/icaruscode)
+and [SBNSoftware/icarus_signal_processing](https://github.com/SBNSoftware/icarus_signal_processing))
 
-TODO: document how to run other tests
-
+    
 
 
 The reference result files 
