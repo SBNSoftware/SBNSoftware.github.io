@@ -10,6 +10,7 @@
 * [MicroBooNE](metadata_uboone.html)
 * [SBND](metadata_sbnd.html)
 * [ICARUS](metadata_icarus.html)
+* [SBN](metadata_sbn.html)
 
 ## Workflow Tools
 
