@@ -41,10 +41,25 @@ Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftw
 2. Do `git push origin main develop --tags` to push up the changes to main, develop, and the new tag.
 
 #### Distribute software.
-1. Assuming the last jenkins build was successful and is the code desired, go back to the top area of `sbnbuild` and to `source SBN/copyToSciSoft_sbn.sh`. This pulls down from jenkins and uploads to SciSoft.
-2. Login to CVMFS: `ssh cvmfssbn@oasiscfs.fnal.gov`
-3. Start a server transaction: `cvmfs_server transaction sbn.opensciencegrid.org`
-4. Install the new software into cvmfs: `~/sbnbuild/CVMFS/install_on_cvmfs.sh sbn-XX.YY.ZZ` where `XX.YY.ZZ` is the sbncode version number (note dots instead of underscores!)
-5. Publish the changes with a message and a tag: `cvmfs_server publish -m "Published sbn XX.YY.ZZ" -a XX.YY.ZZ sbn.opensciencegrid.org`
-6. Send/post release notes and let SBND and ICARUS release distributors know.
+*SciSoft:
+1. Create and empty directory (better in `data/` ) for each new release version for storing the trabals and manifests.
+2. Fetch results of Jenkins from both e20 and c7 builds using
+
+        perl copyFromJenkins -q e19 sbncode-release-build
+        perl copyFromJenkins -q c7 sbncode-release-build
+from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and manifests, one per flavour)
+3. Upload all files to scisoft
+
+        perl copyToSciSoft *
+
+(The script decides where to copy files based on name and type, the naming conventions from Jenkins should not be changed as they are understood by the script)
+
+*CVMFS:
+1. Login to CVMFS: `ssh cvmfssbn@oasiscfs.fnal.gov`
+2. Start a server transaction: `cvmfs_server transaction sbn.opensciencegrid.org`
+3. Install the new software into cvmfs: `~/sbnbuild/CVMFS/install_on_cvmfs.sh sbn-XX.YY.ZZ` where `XX.YY.ZZ` is the sbncode version number (note dots instead of underscores!)
+4. Publish the changes with a message and a tag: `cvmfs_server publish -m "Published sbn XX.YY.ZZ" -a XX.YY.ZZ sbn.opensciencegrid.org`
+
+*Release notes:
+Send/post release notes (currently email/slack with changes) and let SBND and ICARUS release distributors know.
 
