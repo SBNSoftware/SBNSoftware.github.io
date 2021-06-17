@@ -16,7 +16,7 @@ toc_title: SBND Commissioning - Samples
 SBND Commissioning - Samples
 ========================================================================
 
-There are commissioning samples available that have already been processed and contain the HitDumper tree. These samples are on disk located at `/sbnd/data/commissioning/simulation/bnb_cosmics/`.
+There are commissioning samples available that have already been processed and contain the HitDumper tree. These samples are on disk located at `/sbnd/data/commissioning/simulation/`.
 
 BNB Neutrino Plus Cosmics: `bnb_cosmics/`
 
