@@ -7,7 +7,7 @@ description: All about SBND commissioning code
 hero_height: is-medium
 # menubar: sbndcode_menu
 toc: true
-toc_title: SBND Code Contents
+toc_title: SBND Commissioning - Get Started Guide
 ---
 
 
@@ -362,13 +362,7 @@ All the variables stored are described
 7 - Available Samples
 ---------------------------------------
 
-There are commissioning samples available that have already been processed and contain the HitDumper tree:
-
-BNB Neutrino Plus Cosmics: `/sbnd/data/commissioning/simulation/bnb_cosmics/v09_22_01/prod_v1/`
-
-Cosmics only, CRT filtered (front-back): `/sbnd/data/commissioning/simulation/cosmics_frontbackcrt/v09_22_03_00/prod_v1/`
-
-Cosmics only, CRT filtered (east-west): `/sbnd/data/commissioning/simulation/cosmics_eastwestcrt/v09_22_03_00/prod_v1/`
+There are commissioning samples available that have already been processed and contain the HitDumper tree, check the [commissioning samples page](SBND_Commissioning_Samples).
 
 
 
