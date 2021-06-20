@@ -36,14 +36,14 @@
 <details>
   <summary>sbnpoms_flux_injector.sh</summary>
   
-  Purpose: Add genie flux-related overrides to fcl file.
-
-  Usage: sbnpoms_flux_injector.sh [options]
-
-  Options:
-
-  -h|-?|--help                - Print help message.
-  --fcl &lt;fcl&gt;                 - Fcl file to append (default standard output).
-  --flux_copy_method &lt;method&gt; - Flux copy method (default "IFDH").
-  --max_flux_file_mb &lt;n&gt;      - Maximum size of flux files to copy (default GENIEGen decides).
+  Purpose: Add genie flux-related overrides to fcl file.<br>
+  <br>
+  Usage: sbnpoms_flux_injector.sh [options]<br>
+<br>
+  Options:<br>
+<br>
+  -h|-?|--help                - Print help message.<br>
+  --fcl &lt;fcl&gt;                 - Fcl file to append (default standard output).<br>
+  --flux_copy_method &lt;method&gt; - Flux copy method (default "IFDH").<br>
+  --max_flux_file_mb &lt;n&gt;      - Maximum size of flux files to copy (default GENIEGen decides).<br>
 </details>
