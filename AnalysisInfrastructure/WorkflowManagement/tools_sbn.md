@@ -12,7 +12,7 @@
   -h|-?|--help        - Print help message.<br>
   --fclname <fcl>     - Wrapped fcl file.<br>
   --wrappername <fcl> - Wrapper fcl file.<br>
-  
+  .  
 </details>
 
 <details>
@@ -31,5 +31,5 @@
   --subruns_per_run <n> - Number of subruns per run (default 100).<br>
   --process <process>   - Specify process number (default $PROCESS).<br>
   --run <run>           - Specify base run number (default 1).<br>
-  
+  .
 </details>
