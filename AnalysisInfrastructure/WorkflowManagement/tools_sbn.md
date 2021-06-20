@@ -1,6 +1,8 @@
 # SBN Workflow Tools
 
-<details><summary>sbnpoms_wrapperfcl_maker.sh</summary>
+<details>
+  <summary>sbnpoms_wrapperfcl_maker.sh</summary>
+  
   Purpose: Make an empty wrapper fcl file.<br>
   <br>
   Usage: sbnpoms_wrapperfcl_maker.sh [options]<br>
@@ -12,7 +14,9 @@
   --wrappername <fcl> - Wrapper fcl file.<br>
 </details>
 
-<details><summary>sbnpoms_runnumber_injector.sh</summary>
+<details>
+  <summary>sbnpoms_runnumber_injector.sh</summary>
+  
   Purpose: Append run and subrun overrides to fcl file.<br>
            Subrun follows $PROCESS+1, and wraps by incrementing<br>
            the run number when the subrun exceeds the maximum.<br>
