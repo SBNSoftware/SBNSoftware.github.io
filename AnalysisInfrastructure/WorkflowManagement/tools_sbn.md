@@ -1,5 +1,7 @@
 # SBN Workflow Tools
 
+[sbnutil github repo](https://github.com/SBNSoftware/sbnutil)
+
 <details>
   <summary>sbnpoms_wrapperfcl_maker.sh</summary>
   
