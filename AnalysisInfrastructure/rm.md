@@ -45,8 +45,8 @@ Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftw
 1. Create and empty directory (better in `data/` ) for each new release version for storing the trabals and manifests.
 2. Fetch results of Jenkins from both e20 and c7 builds using
 
-        perl copyFromJenkins -q e19 sbncode-release-build
-        perl copyFromJenkins -q c7 sbncode-release-build
+        perl copyFromJenkins -q e19 sbn-release-build
+        perl copyFromJenkins -q c7 sbn-release-build
 from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and manifests, one per flavour)
 3. Upload all files to scisoft
 
