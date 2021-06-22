@@ -16,8 +16,6 @@
 
 ## Workflow Tools
 
-* [SBND](tools_sbnd.md)
-* [ICARUS](tools_icarus.md)
 * [SBN](tools_sbn.md)
 
 ## SBN Production Database

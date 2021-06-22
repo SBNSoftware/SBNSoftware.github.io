@@ -39,7 +39,7 @@ ups list -aK+ sbndaq
 ```
 It's recommended you use the latest available version with e19:prof:py2:s97 as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe19:prof:py2:s97
+setup sbndaq v#_##_## -qe19:prof:s106
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
