@@ -7,6 +7,10 @@
 * [SBND](workflow_sbnd.md)
 * [ICARUS](workflow_icarus.md)
 
+## Workflow Tools
+
+* [SBN](tools_sbn.md)
+
 ## SAM Metadata
 
 * [MicroBooNE](metadata_uboone.html)
@@ -14,9 +18,10 @@
 * [ICARUS](metadata_icarus.html)
 * [SBN](metadata_sbn.html)
 
-## Workflow Tools
+## dCache Configuration
 
-* [SBN](tools_sbn.md)
+* [SBND](dcache_sbnd.md)
+* [ICARUS](dcache_icarus.md)
 
 ## SBN Production Database
 
