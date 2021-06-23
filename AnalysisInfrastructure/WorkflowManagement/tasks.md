@@ -1,6 +1,9 @@
 # SBN Workflow Tasks
 
 * Standard fcl configurations.
+  * Filters and streams. 
+    * Calibration streams.
+  * Slimming.
 * Tools.
   * SBN common tools / fife_launch scripts.
   * Multi-fcl batch jobs.
