@@ -18,6 +18,13 @@
 * [ICARUS](metadata_icarus.html)
 * [SBN](metadata_sbn.html)
 
+## Samweb
+
+* [MicroBooNE](sam_uboone.html)
+* [SBND](sam_sbnd.html)
+* [ICARUS](sam_icarus.html)
+* [SBN](sam_sbn.html)
+
 ## dCache Configuration
 
 * [MicroBooNE](dcache_uboone.md)
