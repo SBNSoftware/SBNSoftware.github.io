@@ -1,73 +1,73 @@
-| Directory | File family | Width | Wrapper | Library |
+| Directory | File family | Width | Wrapper | Library | SFA |
 | --- | --- | --- | --- | --- |
-| /pnfs/uboone | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc | uboone_mc | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/root-tuple | mc_tuple | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larcv | mc_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/reconstructed-2d | mc_reco | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larcv_mctruth | mc_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/simulated | mc_sim | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite_backtracker | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite_pandora | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/merged_dlreco | mc_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite_mcinfo | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite_opreco | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite_reco2d | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/overlay | mc_overlay | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larcv_wholeview | mc_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/celltree | celltree | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/recolite | mc_recolite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/detector-simulated | mc_detsim | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/reconstructed | mc_reco | 4 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/pandora_debug | pandora_debug | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/mc/uboone/larlite | mc_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/scratch | scratch | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/pnfs | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/raw | data_raw | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/root-tuple | data_tuple | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/reconstructed-2d | data_reco | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/online-monitor-histograms | online-monitor-histograms | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/supernova-fake-data | supernova-fake-data | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/supernova-striped-data | supernova-striped-data | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/larcv | data_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/merged_dlreco | data_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/larlite_opreco | data_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/larlite_reco2d | data_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/larcv_wholeview | data_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/celltree | data_celltree | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/recolite | data_recolite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/reconstructed | data_reco | 6 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/reconstructed/prod_v08_00_00 | data_reco | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/reconstructed/v06_26_01_27 | data_reco | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/online-monitor-sn-hists | online-monitor-sn-hists | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/pandora_debug | pandora_debug | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/crt_swizzled | crt_swizzled | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/swizzled | data_swizzled | 8 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/swizzled/crt | crt_swizzled | 1 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/swizzled/sn | sn_swizzled | 1 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/data/uboone/larlite | data_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/persistent | persistent | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/.upload | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/resilient | resilient | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/reconstructed-2d | overlay_reco | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/root-tuple | overlay_tuple | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larcv | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larcv_mctruth | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/simulated | overlay_sim | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite_backtracker | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite_pandora | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/merged_dlreco | overlay_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite_mcinfo | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite_opreco | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite_reco2d | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larcv_wholeview | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/celltree | overlay_celltree | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/recolite | overlay_recolite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/detector-simulated | overlay_detsim | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/reconstructed | overlay_reco | 10 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/pandora_debug | pandora_debug | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/overlay/uboone/larlite | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/archive | uboone | 3 | cpio_odc | CD-LTO8G2 |
-| /pnfs/uboone/archive/sam_managed_users | smu_archive | 1 | cpio_odc | CD-LTO8G2 |
+| /pnfs/uboone | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/mc | uboone_mc | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/mc/uboone/root-tuple | mc_tuple | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larcv | mc_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/reconstructed-2d | mc_reco | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larcv_mctruth | mc_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/simulated | mc_sim | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/mc/uboone/larlite_backtracker | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larlite_pandora | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/merged_dlreco | mc_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larlite_mcinfo | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larlite_opreco | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larlite_reco2d | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/overlay | mc_overlay | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/mc/uboone/larcv_wholeview | mc_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/celltree | celltree | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/recolite | mc_recolite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/detector-simulated | mc_detsim | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/mc/uboone/reconstructed | mc_reco | 4 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/pandora_debug | pandora_debug | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/mc/uboone/larlite | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/scratch | scratch | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/pnfs | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/raw | data_raw | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/root-tuple | data_tuple | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/reconstructed-2d | data_reco | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/online-monitor-histograms | online-monitor-histograms | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/supernova-fake-data | supernova-fake-data | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/supernova-striped-data | supernova-striped-data | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/larcv | data_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/merged_dlreco | data_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/larlite_opreco | data_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/larlite_reco2d | data_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/larcv_wholeview | data_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/celltree | data_celltree | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/recolite | data_recolite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/reconstructed | data_reco | 6 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/reconstructed/prod_v08_00_00 | data_reco | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/reconstructed/v06_26_01_27 | data_reco | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/online-monitor-sn-hists | online-monitor-sn-hists | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/pandora_debug | pandora_debug | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/data/uboone/crt_swizzled | crt_swizzled | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/swizzled | data_swizzled | 8 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/swizzled/crt | crt_swizzled | 1 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/swizzled/sn | sn_swizzled | 1 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/data/uboone/larlite | data_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/persistent | persistent | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/.upload | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/resilient | resilient | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/overlay | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/overlay/uboone/reconstructed-2d | overlay_reco | 3 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/root-tuple | overlay_tuple | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larcv | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larcv_mctruth | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/simulated | overlay_sim | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/overlay/uboone/larlite_backtracker | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larlite_pandora | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/merged_dlreco | overlay_merged_dlreco | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larlite_mcinfo | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larlite_opreco | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larlite_reco2d | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larcv_wholeview | overlay_larcv | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/celltree | overlay_celltree | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/recolite | overlay_recolite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/detector-simulated | overlay_detsim | 2 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/overlay/uboone/reconstructed | overlay_reco | 10 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/pandora_debug | pandora_debug | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/overlay/uboone/larlite | overlay_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes |
+| /pnfs/uboone/archive | uboone | 3 | cpio_odc | CD-LTO8G2 | No |
+| /pnfs/uboone/archive/sam_managed_users | smu_archive | 1 | cpio_odc | CD-LTO8G2 | Yes |
