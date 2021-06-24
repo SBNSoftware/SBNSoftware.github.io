@@ -25,7 +25,7 @@
 * [ICARUS](dcache_icarus.md)
 * [SBN](dcache_sbn.md)
 
-## FTS
+## FTS (onsite only)
 
 * [MicroBooNE](http://uboonesamgpvm01.fnal.gov:8787/fts/status)
 * [SBND](http://sbndsamgpvm02.fnal.gov:8787/fts/status)
