@@ -1,22 +1,22 @@
-| Directory | File family | Width | Wrapper | Library | SFA |
-| --- | --- | --- | --- | --- |
-| /pnfs/sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/scratch | scratch | 1 | cpio_odc | NONE | No |
-| /pnfs/sbnd/persistent | persistent | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/data | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/tape_backed | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/mc | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/mc/gen | mc_gen | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/gen/root | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/g4 | mc_g4 | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/g4/root | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/reco | mc_reco | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/mc/reco/root | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/detsim | mc_detsim | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/mc/detsim/root | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/mc/anatree | mc_anatree | 1 | cpio_odc | CD-LTO8G2 | Yes |
-| /pnfs/sbnd/users | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/resilient | resilient | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/to_tape | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/archive | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
-| /pnfs/sbnd/unknown | sbnd | 1 | cpio_odc | CD-LTO8G2 | No |
+| Directory | Storage Group | File family | Width | Wrapper | Library | SFA | Pool |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| /pnfs/sbnd | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/scratch | sbnd | scratch | 1 | cpio_odc | NONE | No | PublicScratchPools |
+| /pnfs/sbnd/persistent | sbnd | persistent | 1 | cpio_odc | CD-LTO8G2 | No | SbndAnalysisPools |
+| /pnfs/sbnd/data | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/tape_backed | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/mc | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/mc/gen | sbnd | mc_gen | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/gen/root | sbnd | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/g4 | sbnd | mc_g4 | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/g4/root | sbnd | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/reco | sbnd | mc_reco | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/mc/reco/root | sbnd | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/detsim | sbnd | mc_detsim | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/mc/detsim/root | sbnd | mc_root_small | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/mc/anatree | sbnd | mc_anatree | 1 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
+| /pnfs/sbnd/users | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/resilient | sbnd | resilient | 1 | cpio_odc | CD-LTO8G2 | No |  |
+| /pnfs/sbnd/to_tape | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/archive | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
+| /pnfs/sbnd/unknown | sbnd | sbnd | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
