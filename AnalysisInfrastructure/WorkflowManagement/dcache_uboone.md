@@ -22,7 +22,6 @@
 | /pnfs/uboone/mc/uboone/pandora_debug | uboone | pandora_debug | 2 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
 | /pnfs/uboone/mc/uboone/larlite | uboone | mc_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
 | /pnfs/uboone/scratch | uboone | scratch | 3 | cpio_odc | CD-LTO8G2 | No | PublicScratchPools |
-| /pnfs/uboone/pnfs | uboone | uboone | 3 | cpio_odc | CD-LTO8G2 | No | readWritePools |
 | /pnfs/uboone/data | uboone | uboone | 3 | cpio_odc | CD-LTO8G2 | No | readWritePools |
 | /pnfs/uboone/data/uboone/raw | uboone | data_raw | 3 | cpio_odc | CD-LTO8G2 | No | UbooneReadWritePools (write) |
 | /pnfs/uboone/data/uboone/root-tuple | uboone | data_tuple | 3 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
@@ -48,7 +47,6 @@
 | /pnfs/uboone/data/uboone/swizzled/sn | uboone | sn_swizzled | 1 | cpio_odc | CD-LTO8G2 | No | readWritePools |
 | /pnfs/uboone/data/uboone/larlite | uboone | data_larlite | 2 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
 | /pnfs/uboone/persistent | uboone | persistent | 3 | cpio_odc | CD-LTO8G2 | No | UbooneAnalysisPools |
-| /pnfs/uboone/.upload | uboone | uboone | 3 | cpio_odc | CD-LTO8G2 | No | readWritePools |
 | /pnfs/uboone/resilient | uboone | resilient | 3 | cpio_odc | CD-LTO8G2 | No |  |
 | /pnfs/uboone/overlay | uboone | uboone | 3 | cpio_odc | CD-LTO8G2 | No | readWritePools |
 | /pnfs/uboone/overlay/uboone/reconstructed-2d | uboone | overlay_reco | 3 | cpio_odc | CD-LTO8G2 | Yes | readWritePools |
