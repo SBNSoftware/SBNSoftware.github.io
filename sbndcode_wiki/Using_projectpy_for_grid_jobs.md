@@ -205,5 +205,4 @@ If you need to delete the output to submit again, run:
 project.py --xml config.xml --stage gen --clean
 ```
 
-If you want to check you status with cool graphs sign in
-[Grafana](https://fifemon.fnal.gov/monitor/dashboard/db/experiment-overview?var-experiment=sbnd&orgId=1&from=1508165371912&to=1508252205933&refresh=10s)
+If you want to check you status with cool graphs go to [Grafana User's Batch Details page](https://fifemon.fnal.gov/monitor/d/000000116/user-batch-details?orgId=1) and select your username from the dropdown menu at the top (need Fermilab Services's login).
