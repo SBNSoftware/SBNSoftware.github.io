@@ -32,12 +32,12 @@ Here is a useful process to follow when you submit jobs to the gird.
    event number and job number to 1-10\\% of the sample. In `project.py`
    can request specific memory, lifetimes and space needed. To be a
    good citizen you should change these e.g. in the stage you need (see below):
-```xml
-<disk>20GB</disk>
-<memory>1500</memory>
-<jobsub>--expected-lifetime=3h [...]</jobsub>
+   ```xml
+   <disk>20GB</disk>
+   <memory>1500</memory>
+   <jobsub>--expected-lifetime=3h [...]</jobsub>
 
-```
+   ```
    for 20GB of space required on the node, 1.5 GB of memory and
    expecting the job to finish within 3 hours. If you go above these
    then you job will be held. Roughly calculate what you need from
