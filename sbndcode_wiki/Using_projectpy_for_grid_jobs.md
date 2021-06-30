@@ -36,7 +36,6 @@ Here is a useful process to follow when you submit jobs to the gird.
    <disk>20GB</disk>
    <memory>1500</memory>
    <jobsub>--expected-lifetime=3h [...]</jobsub>
-
    ```
    for 20GB of space required on the node, 1.5 GB of memory and
    expecting the job to finish within 3 hours. If you go above these
@@ -73,19 +72,19 @@ So firstly is the header section.
 <?xml version="1.0"?>
 
 <!DOCTYPE project [
-<!ENTITY release "v09_19_00">
-<!ENTITY releasetag "e19:prof">
-<!ENTITY my_version "v5">
-<!ENTITY my_run "1">
-<!ENTITY name "mdeltutt_prism_enuelastic">
+<!ENTITY release "v09_24_02">
+<!ENTITY releasetag "e20:prof">
+<!ENTITY name "test_grid_submission">
 <!ENTITY file_type "data">
 <!ENTITY run_type "physics">
+<!ENTITY my_version "v5">
 ]>
 ```
 
 - The first line is the version of XML you wish to use.
 - The other 5-10 are for book keeping. Changing these might change
   your output folder structure.
+- You can add custom variables here to use in the xml code below (ex. `my_version`).
 
 Next is the project element.
 
@@ -134,7 +133,7 @@ that you want to run.
     <fcl>prodsingle_mu_bnblike.fcl </fcl>
     <fcl>standard_g4_sbnd.fcl</fcl>
     <fcl>standard_detsim_sbnd.fcl</fcl>
-    <outdir>/pnfs/sbnd/scratch/users/mdeltutt/&release;/output_&my_version;_&my_run;</outdir>
+    <outdir>/pnfs/sbnd/scratch/users/mdeltutt/&release;/output_&my_version;</outdir>
     <workdir>/pnfs/sbnd/resilient/users/mdeltutt/grid_workdir_sbnd/prism_ana_enuelastic</workdir>
     <numjobs>100</numjobs>
     <datatier>generated</datatier>
