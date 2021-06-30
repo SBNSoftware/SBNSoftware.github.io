@@ -120,7 +120,7 @@ The Larsoft sub element:
   If you are running off a tagged release available as UPS product,
   you need to just keep the `tag` and `qual` tags.
   But if you want to run your own version you need to make your own tar file
-  (create a tar file using `make\_tar\_sbnd.sh /pnfs/sbnd/resilient/users/${USER}/mytar.tar`)
+  (create a tar file using `make_tar_sbnd.sh /pnfs/sbnd/resilient/users/${USER}/mytar.tar`)
   and place it the `local` tag as shown in the example above. Make sure the tar file is in dCache
   `resilient` area.
 
