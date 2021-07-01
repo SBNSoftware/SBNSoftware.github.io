@@ -117,7 +117,13 @@ For example, if your `simulation_genie_icarus_bnb_v09_09_02.root` was generated
 with `icaruscode` `v09_09_02` (and, according to the paragraph above,
 with a geometry version `icarus_splitwires`), you may use `icaruscode` `v09_19_00`
 and the geometry configuration preset `icarus_geometry_services_legacy_icarus_splitwires`
-found in there.
+found in there:
+    
+    services: {
+      @table::services                                           # all existing services are replicated
+      @table::icarus_geometry_services_legacy_icarus_splitwires  # overwrite the complete geometry configuration
+    }
+    
 
 Versions are listed and explained in the [paragraph above](#geometry-description-versions).
 
@@ -136,7 +142,7 @@ In such cases, reverting to a previous `icaruscode` version
 is the only way to properly process the legacy samples.
 
 
-### `icaruscode` versions `v08_52_00` and later
+### `icaruscode` versions `v08_52_00` and later:
 
 Geometry can be selected by including one of the predefined
 configurations defined in
