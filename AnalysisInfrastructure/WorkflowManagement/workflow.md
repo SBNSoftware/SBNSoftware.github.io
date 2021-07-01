@@ -42,3 +42,11 @@
 
 * [Development](https://microboone-exp.fnal.gov/cgi-bin/sbndb/query_projects.py?dev=1)
 * [Production](https://microboone-exp.fnal.gov/cgi-bin/sbndb/query_projects.py)
+
+## External links
+
+* [SAM project wiki](https://cdcvs.fnal.gov/redmine/projects/sam-main/wiki)
+  * [Samweb wiki](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki) (metadata, queries, and dimensions)
+  * [Samweb client wiki](https://cdcvs.fnal.gov/redmine/projects/sam-web-client/wiki) (samweb api)
+  * [FTS wiki](https://cdcvs.fnal.gov/redmine/projects/filetransferservice/wiki)
+
