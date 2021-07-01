@@ -123,11 +123,14 @@ Versions are listed and explained in the [paragraph above](#geometry-description
 
 | applies to samples with | availability | configuration bundle name                                         | notes                                  |
 | ----------------------- | ------------ | ----------------------------------------------------------------- | -------------------------------------- |
+| `icarus_v2`             | `v09_25_00`  | `icarus_geometry_services_legacy_icarus_v2`                       | standard configuration (no overburden) |
+|                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_v2`         | no overburden (same as standard)       |
+|                         |              | `icarus_geometry_services_overburden_legacy_icarus_v2`            | with 3-m concrete overburden           |
 | `icarus_splitwires`     | `v09_19_02`  | `icarus_geometry_services_legacy_icarus_splitwires`               | standard configuration (no overburden) |
 |                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_splitwires` | no overburden (same as standard)       |
 |                         |              | `icarus_geometry_services_overburden_legacy_icarus_splitwires`    | with 3-m concrete overburden           |
 
-The configuration bunbles can be used with the `@table::` syntax as described above.
+The configuration bundes can be used with the `@table::` syntax as described above.
 Remember that legacy configurations may be retired after a while.
 In such cases, reverting to a previous `icaruscode` version
 is the only way to properly process the legacy samples.
