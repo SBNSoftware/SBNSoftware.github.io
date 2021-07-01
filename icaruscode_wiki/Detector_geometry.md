@@ -24,6 +24,8 @@ different from the one configured in the current job
 
 | version      | introduced  | default     | file path                                                                   | based on   | description
 | ------------ | ----------- | ----------- | --------------------------------------------------------------------------- | ---------- | ------------
+| `icarus_v3`  | `v09_25_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`          | `20201107` | closer cryostats, added building details; with concrete overburden
+| `icarus_v3`  | `v09_25_00` | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `20201107` | closer cryostats, added building details; with no concrete overburden
 | `icarus_v2`* | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107` | fixed orientation of wires, with concrete overburden
 | `icarus_v2`* | `v09_18_00` | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107` | fixed orientation of wires, with no concrete overburden
 | `20201107`** | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`                     | `20200709` | more realistic description of walls, updates to PMT materials, with concrete overburden
