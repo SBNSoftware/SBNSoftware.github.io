@@ -49,13 +49,12 @@
   * [Samweb wiki](https://cdcvs.fnal.gov/redmine/projects/sam-web/wiki) (metadata, queries, and dimensions)
   * [Samweb client wiki](https://cdcvs.fnal.gov/redmine/projects/sam-web-client/wiki) (samweb api)
   * [FTS wiki](https://cdcvs.fnal.gov/redmine/projects/filetransferservice/wiki)
-
-## dCache and Enstore
-
-* [Fndca home page](https://fndca.fnal.gov)
-* [SFA HUD](https://www-stken.fnal.gov/cgi-bin/enstore_sfa_hud_cgi.py)
-  * [FILES IN TRANSITOIN](https://www-stken.fnal.gov/cgi-bin/enstore_sfa_files_in_transition_cgi.py)
-* [10KDF1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-10KDF1.library_manager)
-* [LTO8F1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8F1.library_manager)
-* [LTO8G2 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8G2.library_manager)
+* dCache and Enstore
+  * [Fndca home page](https://fndca.fnal.gov)
+  * [Enstore home page](https://www-stken.fnal.gov/enstore/enstore_system.html)
+    * [SFA HUD](https://www-stken.fnal.gov/cgi-bin/enstore_sfa_hud_cgi.py)
+      * [FILES IN TRANSITOIN](https://www-stken.fnal.gov/cgi-bin/enstore_sfa_files_in_transition_cgi.py)
+    * [10KDF1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-10KDF1.library_manager)
+    * [LTO8F1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8F1.library_manager)
+    * [LTO8G2 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8G2.library_manager)
 
