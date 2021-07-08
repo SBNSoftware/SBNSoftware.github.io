@@ -57,4 +57,5 @@
     * [10KDF1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-10KDF1.library_manager)
     * [LTO8F1 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8F1.library_manager)
     * [LTO8G2 library manager](https://www-stken.fnal.gov/enstore/status_enstore_system.html#CD-LTO8G2.library_manager)
+  * Enstore User's Guide ([CS docdb 5420](https://cd-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=5420))
 
