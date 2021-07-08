@@ -19,7 +19,9 @@ Each of these sgroups are charged with defining and implement common SBN-wide so
 [List of open PRs](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
 Convener(s): [Miquel Nebot-Guinot](mailto:)
+
 Mailing list and Slack channel: [sbn-software@listserv.fnal.gov](mailto:) , #sbn_release_management
+
 Meetings: Wednesdays, 9:00 CT
 <!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
 
