@@ -35,6 +35,10 @@ Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
+Mailing list: [sbn-workflow@fnal.gov](mailto:)
+
+Meetings: Production & Workflow Meeting, Monday 11am.
+
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
 ### [Simulation Infrastructure and Integration](sim.md)
