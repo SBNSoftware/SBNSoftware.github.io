@@ -35,7 +35,7 @@ Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
-Mailing list: [sbn-workflow@fnal.gov](mailto:listserv@fnal.gov?subject=&body=SUBSCRIBE SBN-WORKFLOW Firstname Lastname)
+Mailing list: [sbn-workflow@fnal.gov](mailto:sbn-workflow@fnal.gov) ([subscribe](https://listserv.fnal.gov/scripts/wa.exe?SUBED1=sbn-workflow&A=1))
 
 Slack channel: #sbn_workflow
 
