@@ -35,7 +35,7 @@ Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
-Mailing list: [sbn-workflow@fnal.gov](mailto:)
+Mailing list: sbn-workflow@fnal.gov
 
 Meetings: Production & Workflow Meeting, Monday 11am.
 
