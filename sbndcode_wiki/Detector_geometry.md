@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Detector geometry
+title: Detector Geometry
 ---
 
 
 
-SBND detector geometry
+SBND Detector Geometry
 ================================================================
 
 Detector description files are stored in GDML format in the
@@ -39,7 +39,7 @@ services.AuxDetGeometry.ROOT: "sbnd_v01_05.gdml"
   | Series | Variant | Patch level | Present in `sbndcode`      |  Default in `sbndcode`     | Description                               
   |--------|---------|-------------|----------------------------|----------------------------|---------------------------------------
   |`2`     | `2.0`   | `v02_00`    | `v09_25_00_01` to `develop`| `v09_25_00_01` | Description
-  |`1`     | `1.5`   | `v01_05`    | `v09_01_00 ` to `develop`  | `v09_01_00` | `v01_04` + Description
+  |`1`     | `1.5`   | `v01_05`    | `v09_01_00` to `develop`  | `v09_01_00` | `v01_04` + Description
   |`1`     | `1.4`   | `v01_04`    | `v08_36_01_1_MCP2_0` to `v09_25_00_01` | `v08_36_01_1_MCP2_0`| `v01_03` - bars + X-ARAPUCAs + field cage
   |`1`     | `1.3`   | `v01_03`    | `v08_13_00` to `v09_25_00_01` | `v08_35_00` to `v08_36_01`| `v01_02` + semi-sphere PMTs model + 5 PMTs per APA window
   |`1`     | `1.2`   | `v01_02`    | `v06_64_00` to `v09_25_00_01` |                 | `v01_01` + arapuca, light bars and foils
