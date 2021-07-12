@@ -22,6 +22,7 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v09_26_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092600.html)
   |`v09_25_00_01`               |    Weekly release                           |    [Release Notes](ReleaseNotes09250001.html)
   |`v09_25_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092500.html)
   |`v09_24_02`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092402.html)
