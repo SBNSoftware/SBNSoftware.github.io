@@ -37,6 +37,8 @@ Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
 
 Mailing list: [sbn-workflow@fnal.gov](mailto:listserv@fnal.gov?subject=&body=SUBSCRIBE SBN-WORKFLOW Firstname Lastname)
 
+Slack channel: #sbn_workflow
+
 Meetings: Production & Workflow Meeting, Monday 11am.
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
