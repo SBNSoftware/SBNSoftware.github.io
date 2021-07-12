@@ -27,8 +27,8 @@ console when the `Geometry` service is initialised or updated.
 
 > NOTE: Files produced with a version of `sbndcode` prior to `v09_25_00_01`
 > cannot be analyzed with `v09_25_00_01` or higher, as the geometry
-> `v2_00` is a breaking change. To analyze old files, you need to add
-> the following to your fcl file:
+> `v02_00` is a breaking change. To analyze old files, you need to add
+> the following at the end of your fcl file in order to set the old geometry:
 ```
 services.Geometry.GDML: "sbnd_v01_05.gdml"
 services.Geometry.ROOT: "sbnd_v01_05.gdml"
