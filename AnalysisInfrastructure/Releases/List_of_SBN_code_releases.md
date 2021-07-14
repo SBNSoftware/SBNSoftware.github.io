@@ -19,6 +19,10 @@ These are the releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v09_26_00`                  |    'sbncode' Weekly release                 |    [Release Notes]()
+  |`v09_25_00_00`               |    'sbncode'/'sbnana' Weekly release        |    [Release Notes]()
+  |`v09_25_00`                  |    'sbncode' requested release              |    [Release Notes]() 
+  |`v09_24_02_00`               |    'sbncode'/'sbnana' Weekly release        |    [Release Notes]()
   |`v09_24_01_00`               |    'sbncode' Weekly release                 |    [Release Notes]() 
   |`v09_24_01_00`               |    'sbnana'  Weekly release                 |    [Release Notes]()
   |`v09_24_00_01`               |    'sbncode' patch release                  |    [Release Notes]() 
