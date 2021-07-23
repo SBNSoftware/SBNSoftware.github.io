@@ -35,6 +35,8 @@ Developing ICARUS code
 [Computing resources](Computing_Resources.md)
 ----------------------------------------------
 
+- [breaking changes and backward compatibility configurations](releases/compatibility.md)
+
 
 
 Content of the packages
