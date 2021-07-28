@@ -8,5 +8,5 @@ standard_reco2_sbnd.fcl<br>
 </details>
 
 <details><summary>CAF maker</summary>
-cafmakerjob_sbnd.fcl
+cafmakerjob_sbnd_sce.fcl
 </details>
