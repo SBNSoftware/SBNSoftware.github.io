@@ -22,6 +22,6 @@ reco_icarus_driver_reco_multitpc_raw.fcl<br>
 </details>
 
 <details><summary>CAF maker</summary>
-cafmakerjob_icarus.fcl
+cafmakerjob_icarus_sce.fcl
 </details>
 
