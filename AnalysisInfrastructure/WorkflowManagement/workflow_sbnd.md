@@ -6,3 +6,7 @@ standard_detsim_sbnd.fcl<br>
 standard_reco1_sbnd.fcl<br>
 standard_reco2_sbnd.fcl<br>
 </details>
+
+<details><summary>CAF maker</summary>
+cafmakerjob_sbnd.fcl
+</details>
