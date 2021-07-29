@@ -42,10 +42,13 @@ Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftw
 2. Fetch results of Jenkins from both e20 and c7 builds using
 
         perl copyFromJenkins -q e20 -q c7 sbn-release-build
+        
 from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and manifests, one per flavour).
+
 3. Upload all files to scisoft
 
         perl copyToSciSoft *
+        
 (The script decides where to copy files based on name and type, the naming conventions from Jenkins should not be changed as they are understood by the script)
 
 #### CVMFS:
