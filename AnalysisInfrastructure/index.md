@@ -53,12 +53,19 @@ Conveners: [Marco del Tutto and Alessandro Menegolli](mailto:)
 
 Conveners: [Fernanda Psihas and Gianluca Petrillo](mailto:)
 
+Mailing list and Slack channel: [sbn-software](mailto:sbn-software@listserv.fnal.gov) , #cafana
+
+Meetings: Thursdays, 11:00 CT
+
 <!-- Develops infrastructure to process & analyze data & MC in a consistent way. -->
 
 ### [Validation Framework](validation.md)
 
 Conveners: [Chris Hilgenberg](mailto:)
 
+Mailing list and Slack channel: [sbn_ci_validation](mailto:sbn_ci_validation@listserv.fnal.gov), #sbn_ci_alerts
+
+Meetings: every other Friday at 9:00 CT 
 <!-- Study and develop improved beamline simulations and uncertainties. -->
 
 ## Important Information for Developers
