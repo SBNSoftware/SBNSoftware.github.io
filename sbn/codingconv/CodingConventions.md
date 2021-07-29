@@ -1,11 +1,16 @@
-% SBN analysis code conventions
-% SBN Analysis Frameworks group
-% June 15, 2021
+---
+title:       SBN analysis code conventions
+description: Summary of code conventions as guidelines for SBN authors and reviewers.
+breaks:      false
+toc:         true
+---
+
+<!-- BEGIN HACKMD this is temporary for HackMD editing -->
+[TOC]
+<!-- END   HACKMD this is temporary for HackMD editing -->
 
 
-################################################################################
-#   Purpose
-################################################################################
+#   Purpose   ##################################################################
 
 
 This set of guidelines aims to improve the readability and maintainability of
@@ -14,12 +19,10 @@ Code performance considerations are secondary here.
 
 
 
-################################################################################
-#  Scope
-################################################################################
+#   Scope   ####################################################################
 
 This policy is intended to cover all code in the following SBN coder repositories:
-`sbnobj`, `sbncode`. `sbnana`.
+`sbnobj`, `sbncode`, `sbnana`.
 It is expected that authors attempt to strictly adhere to it,
 as defined in the "Definitions" paragraph.
 Policy rules may be enforced by reviewers during code review, and by the
@@ -27,9 +30,7 @@ release managers.
 
 
 
-################################################################################
-#  Definitions
-################################################################################
+#   Definitions   ##############################################################
 
 This policy uses coded words to define the priority of the requirements:
 
@@ -56,15 +57,13 @@ priorities in a negative sentence:
 
 \*\*\*\*\* **forbidden** holds the same priority as **required**;
 
-\*\*\*\* **[strongly] not recommended** hold the same priority as **[strongly] recommended**;
+[\*]\*\*\* **[strongly] not recommended** hold the same priority as **[strongly] recommended**;
 
-\*\*\* **discouraged** holds the same priority as **encouraged**.
+\*\* **discouraged** holds the same priority as **encouraged**.
 
 
 
-################################################################################
-#  Compliance and procedures
-################################################################################
+#   Compliance and procedures   ################################################
 
 Code is considered compliant with this policy if _all_ the following apply:
 
@@ -83,9 +82,7 @@ expected to change their code to make it compliant when requested to.
 
 
 
-################################################################################
-#   Naming conventions
-################################################################################
+#   Naming conventions   #######################################################
 
 Rationale: naming should:
 
@@ -119,6 +116,18 @@ Naming of libraries can be almost completely automated by `cet_build_tools`.
   `sbncode_TPCReco_KinkExp` (`libsbncode_TPCReco_KinkExp.so`).
 
 
+##  Source files  ##########################################################
+
+* `cet_build_tools` is somehow biassed toward using `.cc` suffix for C++
+  files, and it is **recommended** that this suffix be used for source files
+  containing the definition of _art_ plugin classes (modules, services, tools);
+  for the other files, it is **strongly recommended** to stick to the existing
+  convention in the source directory or its parent, if any is present.
+* **suggested** suffixes:
+    * C++ headers: `.h`
+    * C++ source: `.cpp`
+    * C++ template implementation: `.tcc`
+
 
 ##  Capitalization  ########################################################
 
@@ -129,46 +138,38 @@ Naming of libraries can be almost completely automated by `cet_build_tools`.
 # Package Names
 
 * Use a descriptive index in any _for_ loop > 5 lines long.
-
 * The use of `using namespace XXX` is _strongly discouraged_
-
 * Use `auto` sparingly if at all.
-
 * Use K&R style for the use of brackets https://en.wikipedia.org/wiki/Indentation_style#K.26R_style
-
 * Begin data members with `f` and use CamelCase i.e. `double fTrackLength`
-
 * Use CamelCase and single string (no - or _ ) in package names.
 
 
 | Proper       | Not Proper    |
 | :---         |    :----:     |
-| FlashMatcher_module.cc | Flash_matcher_module.cc <br>flashMatcher_module.cc<br>FlashMatcher.cc |
-| for (sliceIdx=0; sliceIdx<sliceMax; sliceIdx++)<br>for (iSlice=0; iSlice<maxSlice; iSlice++) | for(i=0;i<10;i++) |
-|using namespace caf{<br>...code ... <br>}|using namespace caf;|
+| `FlashMatcher_module.cc` | `Flash_matcher_module.cc` <br>`flashMatcher_module.cc`<br>`FlashMatcher.cc` |
+| `for (sliceIdx=0; sliceIdx<sliceMax; sliceIdx++)`<br>`for (iSlice=0; iSlice<maxSlice; iSlice++)` | `for(i=0;i<10;i++)` |
+| `{ using caf::Cut; ... }` |`using namespace caf; Cut ...` |
 |auto ||
 
 
-##  CAF-Specific Naming Conventions #############################################################
+##  CAF-Specific Naming Conventions ########################################
 
-* CAFMaker_module.fcl is intended to access art data products, create StandardRecord objects, and call filling functions only. All computations for filling CAF branches and calculations are _required_ to live in the corresponding Fill<specifier>Vars.cxx script.
-
-* StandardRecord is intended to hold the structure of CAF files only. Any dependence to LArSoft packages in StandardRecord is _forbidden_.
-
-* When adding branches or data products to the CAF files, follow the standards for nomenclature and numbering already existing in the file. For example: initialize empty variables to -5 when appropriate, when adding a vector of objects, add also an int indicating vector size, etc.
-
-* Use `k` and CamelCase for names for Cuts and Vars in CAFAna macros.
-
+* When adding branches or data products to the CAF files, follow the standards for nomenclature and numbering already existing in the file. For example: initialize empty variables to `-5` when appropriate, when adding a vector of objects, add also an `int` indicating vector size, etc.
+* Use `k` and CamelCase for names for `Cuts` and `Vars` in CAFAna macros.
 * Name cuts and vars for a frozen analysis with a corresponding `_tag` for example: `kEnergyCut_2020PAC`
-
 * When editing cuts and vars from frozen analyses, create a new copy the cut or var and leave the old one in use for future comparisons.
-
 * Store cuts and vars in sensibly corresponding scripts i.e. keep numu analysis cuts in `Cuts/NumuCuts.cxx` and MC cuts in `Cuts/TruthCuts.cxx` etc. 
 
 
-################################################################################
-#   Coding
-################################################################################
+#   Coding   ###################################################################
+
+##  Organization and layout  ###############################################
+
+Rationale: protect the modularity of the code and control the dependency tree.
+
+* `CAFMaker_module.fcl` is intended to access art data products, create `StandardRecord` objects, and call filling functions only. All computations for filling CAF branches and calculations are **required** to live in the corresponding `Fill<specifier>Vars.cxx` script.
+* `StandardRecord` is intended to hold the structure of CAF files only. Any dependence to LArSoft packages in StandardRecord is _forbidden_.
 
 
 ##  Error handling  ########################################################
@@ -194,20 +195,26 @@ conditions over automatic mitigation.
 
 
 
-################################################################################
-#   Documentation
-################################################################################
+#   Documentation   ############################################################
 
-* **recommended** algorithm classes and function to include a description of
-  their function, an explanation of the input format and requirements, of the
-  assumptions and of the output, plus a reference to external documentation
-  (e.g. SBN DocDB document) describing the physics of it when it applies
+* **recommended** for algorithm classes and function to include also
+    1. description of their function
+       (e.g. "applies proton ID algorithm based on track range")
+    2. explanation of the input format
+       (e.g. "`recob::Track` objects with track fit")
+    3. explanation of the requirements and assumptions on the input
+       (e.g. "tracks are expected to have been corrected for space charge
+       effects")
+    3. an explanation of the features of the output
+       (e.g. "a list of `ana::ParticleID` objects is returned, one for each
+       input track, in the same order; if the algorithm could not be applied,
+       the track is assigned a negative score value")
+    4. plus a reference to external documentation (e.g. SBN DocDB document)
+       describing the physics of it when it applies
 * **recommended** inline documentation in Doxygen format, attached to the object
   being described (for example, to a `class` definition instead than to the file
   where the definition is stored)
 
 
 
-################################################################################
-#   Summary
-################################################################################
+#   Summary   ##################################################################
