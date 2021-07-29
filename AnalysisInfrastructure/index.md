@@ -70,7 +70,7 @@ Meetings: every other Friday at 9:00 CT
 
 ## Important Information for Developers
 
-### [Release Notes](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/AnalysisInfrastructure/Releases/List_of_SBN_code_releases.md)
+### [Release Notes](Releases/List_of_SBN_code_releases.md)
 
 Our currently tagged release is VNN_YY_XX.
 
