@@ -61,6 +61,10 @@ priorities in a negative sentence:
 
 \*\* **discouraged** holds the same priority as **encouraged**.
 
+> While this document is in draft, guidelines that have not been
+> discussed or have been questioned have the priority mark written
+> in italic font (e.g. "it is _**required**_ that ...").
+
 
 
 #   Compliance and procedures   ################################################
@@ -248,6 +252,30 @@ Specific for CAF libraries and tools:
 * `StandardRecord` is intended to hold the structure of CAF files only. Any dependence to LArSoft packages in StandardRecord is **forbidden**.
 
 
+##  Source file metadata  #################################################
+
+Rationale: we want every piece of code associated to one or more authors,
+both to facilitate its use and maintenance by allowing to ask to its authors,
+and as a recognition and acknowledgement.
+
+* Every source file is **required** to report in a header
+  the author(s) and possibly a contact mean (e-mail is **suggested**).
+  Doxygen format is **recommended**:
+  ```cpp
+  /**
+   * @file   TrackBloating/TrackBloatAlg.h
+   * @brief  Algorithm to double the memory required by a track.
+   * @author Mark Johnson (mjohnson@fnal.gov), John Markson (jmarkson@fnal.gov)
+   * /
+  ```
+* Authors other than the ones in the headers are **strongly recommended**
+  to report their name (and contact) upon major additions (including
+  rewritten algorithm implementations) in a C++ comment;
+  it is **recommended** that this information be added in the Doxygen
+  documentation of the function or class being modified with the same
+  `@author` syntax as for the file header.
+
+
 ##  Error handling and message logging  ###################################
 
 Rationale: users should be immediately reported errors stemming from faulty
@@ -305,6 +333,27 @@ conditions over automatic mitigation.
   It is then possible for the users to set a limit so that a few messages
   are logged, but then additional ones are progressively discarded.
 
+
+##  Configuration and experiment-specific features  #######################
+
+The code must work for all SBN experiments with the least possible changes,
+ideally limited to configuraion files. The explicit lack of support for one
+of the experiments is still preferable to code that gives for that experiment
+wrong results.
+
+* Presence in the code of constants describing the specific detectors are
+  **strongly discouraged** in the experiment code repositories, and
+  **forbidden** in the repositories with SBN-shared code.
+  Configuration parameters, via FHiCL or other objects at class construction
+  or via member function calls, shoudl be used instead.
+* If it proves unfeasible to support a feature for a specific experiment,
+  the attempt to use that feature with that experiment is **required**
+  to trigger a fatal error.
+* The use of LArSoft services is **strongly recommended** when they provide
+  the needed features. The loss in flexibility is offset by the wider testing
+  of that code and the promise of interoperability with other experiments,
+  including the other SBN ones. Examples of this include the detector
+  geometry description and the properties and timings of the detectors.
 
 
 ##  Language features  ####################################################
@@ -570,6 +619,31 @@ It should be used judiciously (and sparsely).
   it can at least be "defaulted": `FilterEfficiency() = default;`).
 
 
+##  Quantity types and their units  #######################################
+
+Rationale: clarity and predictability are essential when interpreting data
+values, and relying heavily on conventions facilitate it.
+
+
+### Units
+
+The **required** units for data quantities are described in
+[`StandardRecord` documentation in `sbnanaobj`](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/README.md).
+Existing exceptions should be treated as a bug rather than a precedent.
+
+
+### Data types
+
+The following C++ data types are recommended for storage of some quantities:
+
+* momentum, energy, energy density: `float`
+* charge, charge density: `float`
+* space coordinates: `double` (added precision reduces rounding errors of geometry calculations)
+* relative time: `double` (relative to a reference within the event)
+* absolute time: `long double` (achieves _(barely)_ nanosecond precision on UTC times)
+
+
+
 ### Other features
 
 
@@ -601,4 +675,4 @@ It should be used judiciously (and sparsely).
 
 
 
-#   Summary   ##################################################################
+#   Overview  #################################################################
