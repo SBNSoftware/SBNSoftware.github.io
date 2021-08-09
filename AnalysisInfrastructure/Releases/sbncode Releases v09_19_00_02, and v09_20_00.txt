@@ -1,11 +1,4 @@
-From: Wesley Robert Ketchum <wketchum@fnal.gov>
-Subject: sbncode Releases v09_19_00_02, and v09_20_00
-Date: 5 April 2021 at 15:06:43 CEST
-To: sbn-software <sbn-software@listserv.fnal.gov>
-Cc: Tracy Usher <usher@slac.stanford.edu>, Miquel Nebot-Guinot <miquel.nebot@ed.ac.uk>, Patrick Green <patrick.green@manchester.ac.uk>
 
-This email was sent to you by someone outside the University.
-You should only click on links or attachments if you are certain that the email is genuine and the content is safe.
 Hi all,
  
 We have cut two new releases of sbncode this weekend.
