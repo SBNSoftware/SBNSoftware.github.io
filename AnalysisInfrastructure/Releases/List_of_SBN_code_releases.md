@@ -47,5 +47,5 @@ These are the releases tagged until now:
   |`v09_21_00`                  |    'sbncode' Weekly release ('sbnobj' `v09_11_05`)   |    [Release Notes]()
   |`v09_21_00`                  |    'sbnana'  Weekly release                          |    [Release Notes]()
   |`v09_20_00`                  |    Weekly release                                    |    [Release Notes]()
-  |`v09_19_00_02`               |    Workshop release                                  |    [Release Notes]()
+  |`v09_19_00_02`               |    Workshop release                                  |    [Release Notes](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/AnalysisInfrastructure/Releases/sbncode%20Releases%20v09_19_00_02%2C%20and%20v09_20_00.txt)
   
