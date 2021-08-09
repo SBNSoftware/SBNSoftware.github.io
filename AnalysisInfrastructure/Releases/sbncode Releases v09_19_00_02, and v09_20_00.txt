@@ -1,0 +1,24 @@
+From: Wesley Robert Ketchum <wketchum@fnal.gov>
+Subject: sbncode Releases v09_19_00_02, and v09_20_00
+Date: 5 April 2021 at 15:06:43 CEST
+To: sbn-software <sbn-software@listserv.fnal.gov>
+Cc: Tracy Usher <usher@slac.stanford.edu>, Miquel Nebot-Guinot <miquel.nebot@ed.ac.uk>, Patrick Green <patrick.green@manchester.ac.uk>
+
+This email was sent to you by someone outside the University.
+You should only click on links or attachments if you are certain that the email is genuine and the content is safe.
+Hi all,
+ 
+We have cut two new releases of sbncode this weekend.
+ 
+sbncode v09_19_00_02 is a patch release to be used to make CAF files for the upcoming workshop:
+ 
+* Make event weighting work for cosmics gen files (#110)
+* CAF updates for ICARUS (#108)
+* Improved flash-matching file error messages (#104)
+ 
+sbncode v09_20_00 is a weekly release based on larsoft v09_20_00, and uses sbnanaobj v09_16_06, which adds class versions to StandardRecord objects, allowing for serialization/backwards compatibility moving forward.
+ 
+Wes
+ 
+ 
+ 
