@@ -14,7 +14,7 @@ Download instructions for [sbncode]()
 Purpose
 ---------------------------------------------------
 
-* Weekly release
+* Requested release
 
 New features
 ---------------------------------------------------
