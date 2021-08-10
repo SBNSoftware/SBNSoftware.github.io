@@ -14,8 +14,8 @@ To get back to the main CI wiki page, click [here](Continuous_integration.html).
 
 ### Available Workflows
 - There is currently just one available validation workflow for SBND. It analyses the reconstruction outputs. If you're interested in developing new validation workflows then read the developers section below and feel free to get in contact with the CI & Validation working group via Chris Hilgenburg (chilgenb@umn.edu).
-- The reconstruction validation utilises a set of input detsim files with the SAM definition `sbnd_ci_bnb_nue_detsim_v09_22_02`. This definition consists of 5k BNB neutrino events and 5k intrinsic nue events. This dataset needs periodic updates to reflect changes in the gen, g4 and detsim stages.
-- You can run the validation with any combination of feature branches from the following repositories: `sbndcode`, `sbndutil`, `sbnci` and `larpandoracontent`. If you require use of feature branch from any other repository contact Henry Lay (h.lay@lancaster.ac.uk) to have a custom repository added. Longer term there are plans to allow command line requests of any of the required products.
+- The reconstruction validation utilises a set of input detsim files with the SAM definition `sbnd_ci_bnb_nue_detsim_v09_26_00`. This definition consists of 5k BNB neutrino events and 5k intrinsic nue events. This dataset needs periodic updates to reflect changes in the gen, g4 and detsim stages.
+- You can run the validation with any combination of feature branches from the following repositories: `sbndcode`, `sbndutil`, `sbnci` (and `larpandoracontent` if you use `CI_VALIDATION_SBND_pandora` as your workflow). If you require use of feature branch from any other repository contact Henry Lay (h.lay@lancaster.ac.uk) to have a custom repository added. Longer term there are plans to allow command line requests of any of the required products.
 - Before running any CI jobs you need to setup `lar_ci` and provide yourself with the correct proxies:
 
    `setup lar_ci`
@@ -30,6 +30,8 @@ To get back to the main CI wiki page, click [here](Continuous_integration.html).
    
 - I would recommend a test submission first, this will allow you to test that your combination of feature branches work together and don't cause an easy-to-fix failure for all 10k events on the grid. Note that the validation plots will be meangingless, this is a test that the machinery works. This submission can be followed on the [test dashboard.](https://dbweb9.fnal.gov:8443/TestCI/app/ns:SBND/view_builds/index)
 - The test trigger uses the following command:
+
+**IMPROTANT NOTE** As a temporary addition this workflow requires the extra tag `--version feature/hlay_sbnd_pfp_validation` for all trigger commands
    
    `trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND_test --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all_test.cfg --revision "repo@branch" --testmode`
  
