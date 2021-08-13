@@ -213,7 +213,7 @@ name                                              | introduced  | description   
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[source:icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
+[icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 The procedures are the same as documented for the newer versions.
 The drop-in configurations also work as above, but with two relevant
