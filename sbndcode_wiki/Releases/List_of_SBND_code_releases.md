@@ -22,7 +22,8 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
-  |`v09_28_01`                  |    Production release SBN-2021B_00          |    [Release Notes](ReleaseNotes092801.html)
+  |`v09_28_01_01`               |    Patch release for SBN-2021B              |    [Release Notes](ReleaseNotes09280101.html)
+  |`v09_28_01`                  |    Production release SBN-2021B             |    [Release Notes](ReleaseNotes092801.html)
   |`v09_28_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092800.html)
   |`v09_27_00_02`               |    Weekly release                           |    [Release Notes](ReleaseNotes09270002.html)
   |`v09_27_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092700.html)
@@ -39,9 +40,9 @@ These are the `sbndcode` releases tagged until now:
   |`v09_22_01_01`               |    Weekly release                           |    [Release Notes](ReleaseNotes09220101.html)
   |`v09_22_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092201.html)
   |`v09_21_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092100.html)
-  |`v09_19_00_02`               |    Release for production                   |    [Release Notes](ReleaseNotes09190002.html)
+  |`v09_19_00_02`               |    Release for production (SBN-2021A)       |    [Release Notes](ReleaseNotes09190002.html)
   |`v09_20_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes092000.html)
-  |`v09_19_00_01`               |    Release for production                   |    [Release Notes](ReleaseNotes09190001.html)
+  |`v09_19_00_01`               |    Release for production (SBN-2021A)       |    [Release Notes](ReleaseNotes09190001.html)
   |`v09_19_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091900.html)
   |`v09_18_00_02`               |    Weekly release                           |    [Release Notes](ReleaseNotes09180002.html)
   |`v09_18_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes091800.html)
