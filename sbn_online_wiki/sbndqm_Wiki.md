@@ -77,8 +77,12 @@ mrb i -j8
 ```
  
 
+Release Instructions
+----------------------------------------------
+[See here for release instructions for online-related software](ReleaseInstructions)
+
 Old wiki
-======================================
+----------------------------------------------
 Please
 see the old wiki for a lot of historical detail.
 

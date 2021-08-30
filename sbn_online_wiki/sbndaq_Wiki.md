@@ -9,20 +9,26 @@ toc_title: SBNDAQ Contents
 ---
 
 
-Configuration DB Instructions
-======================================
-[See here for instructions on working with the configuration database](ConfigDB)
-
 
 Developing in sbndaq
 ----------------------------------------------
 
 * [Setup Instructions](Installation)
 * [Development Model](DevModel)
- 
+
+
+Configuration DB Instructions
+----------------------------------------------
+[See here for instructions on working with the configuration database](ConfigDB)
+
+
+Release Instructions
+----------------------------------------------
+[See here for release instructions for online-related software](ReleaseInstructions)
+
 
 Old wiki
-======================================
+----------------------------------------------
 Please
 see the old wiki for a lot of historical detail.
 
