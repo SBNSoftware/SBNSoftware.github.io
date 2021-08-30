@@ -14,6 +14,13 @@ Configuration DB Instructions
 [See here for instructions on working with the configuration database](ConfigDB)
 
 
+Developing in sbndaq
+----------------------------------------------
+
+* [Setup Instructions](Installation)
+* [Development Model](DevModel)
+ 
+
 Old wiki
 ======================================
 Please
@@ -25,11 +32,6 @@ see the old wiki for a lot of historical detail.
 
 (we are slowly going to work on updating/adding more info here...)
 
-Developing in sbndaq
-----------------------------------------------
-
-* [Setup Instructions](Installation)
-* [Development Model](DevModel)
 
 # Useful Links
 * artdaq: [Artdaq Demo Wiki](https://cdcvs.fnal.gov/redmine/projects/artdaq-demo/wiki)
