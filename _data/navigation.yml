@@ -10,8 +10,12 @@
   link: /icaruscode_wiki/Wiki
 - name: sbndcode
   link: /sbndcode_wiki/Wiki
-- name: sbndaq
-  link: /sbndaq_wiki/Wiki
+- name: SBN Online
+  dropdown:
+    - name: sbndaq
+    link: /sbndaq_wiki/Wiki
+    - name: sbndqm
+    link: /sbndqm_wiki/Wiki
 
 # dropdown:
   #   - name: Page 2
