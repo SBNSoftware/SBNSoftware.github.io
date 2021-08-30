@@ -14,14 +14,14 @@
   link: /sbn/Wiki
   dropdown:
     - name: sbndaq
-      link: /sbndaq_wiki/Wiki
+      link: /sbn_online_wiki/sbndaq_Wiki
     - name: sbndqm
-      link: /sbndqm_wiki/Wiki
+      link: /sbn_online_wiki/sbndqm_Wiki
 #- name: SBN Online
 #  link: /sbndaq_wiki/Wiki
 #  dropdown:
 #    - name: sbndaq
-#    link: /sbndaq_wiki/Wiki
+#    link: /sbndaq_wiki/sbndaq_Wiki
 #    - name: sbndqm
 #    link: /sbndqm_wiki/Wiki
 
