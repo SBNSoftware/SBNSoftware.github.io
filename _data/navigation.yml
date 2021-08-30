@@ -11,7 +11,14 @@
 - name: sbndcode
   link: /sbndcode_wiki/Wiki
 - name: SBN Online
-  link: /sbndaq_wiki/Wiki
+  link: /sbn/Wiki
+  dropdown:
+    - name: sbndaq
+      link: /sbndaq_wiki/Wiki
+    - name: sbndqm
+      link: /sbndqm_wiki/Wiki
+#- name: SBN Online
+#  link: /sbndaq_wiki/Wiki
 #  dropdown:
 #    - name: sbndaq
 #    link: /sbndaq_wiki/Wiki
