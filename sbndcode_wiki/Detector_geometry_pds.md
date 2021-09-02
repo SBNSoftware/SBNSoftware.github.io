@@ -1,3 +1,8 @@
+---
+layout: page
+title: Photo Detection System (PDS)
+---
+
 # Channel Mapping
 
 The channel mapping of the PDS in SBND can be found below. Note that `TPC 0 is for x<0` and `TPC 1 is for x>0`. So the mapping is done in a way as if you were looking at the detector from behind TPC 0, from outside the detector. In a way that the channel number increases as Z increases for both APAs.
