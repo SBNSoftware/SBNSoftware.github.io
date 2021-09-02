@@ -36,6 +36,10 @@ services.AuxDetGeometry.GDML: "sbnd_v01_05.gdml"
 services.AuxDetGeometry.ROOT: "sbnd_v01_05.gdml"
 ```
 
+# Find below more information:
+- [Photo Detection System](Detector_geometry_pds.md)
+
+# History of the versions:
   | Series | Variant | Patch level | Present in `sbndcode`      |  Default in `sbndcode`     | Description                               
   |--------|---------|-------------|----------------------------|----------------------------|---------------------------------------
   |`2`     | `2.0`   | `v02_00`    | `v09_25_00_01` to `develop`| `v09_25_00_01` | Description
