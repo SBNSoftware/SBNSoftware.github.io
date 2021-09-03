@@ -25,7 +25,7 @@ If you're a brand new grad student then the whole idea of how a particle physics
   - The format is then the same for any other lists just replacing SBN-YOUNG with any other list. An (incomplete) list of SBND mailing lists can be found [here](https://sbn-nd.fnal.gov/internal/mailing_lists.html) and _TODO ICARUS MAILING LISTS_
 - There is an SBN-wide [slack](https://shortbaseline.slack.com/) workspace. This is where most day-to-day conversations happen. You should be able to find anyone on the experiment here, there are also channels for different groups within the experiments which you can join (e.g. #sbn-young)
 - All important documents, including slides from all internal meetings can be found on the [docDB](https://sbn-docdb.fnal.gov/cgi-bin/sso/DocumentDatabase), you should be able to access this through Fermilab's single sign on once you have your services account (see below).
-- 
+
 ### Computing Access
 - One of the very first things you'll need to do is [apply](https://fermi.servicenowservices.com/wp/?id=evg_sc_cat_item&sys_id=d361073881218500bea3634b5c987c4c) for a Fermilab computing account for your experiment.
 - This will give you a services password (for logging into most Fermilab online resources) and a kerberos password which you use to indentify your computer to the Fermilab servers you will be logging into.
