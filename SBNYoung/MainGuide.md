@@ -1,10 +1,3 @@
----
-layout:page
-title: Things we wish we'd known... SBN Young
----
-
-
-
 # Things we wish we'd known... SBN Young
 
 So you've found this page, chances are that means you're a student or postdoc new to SBN. SBN Young is a group consisting of, and representing the interests of, all young collaborators of SBND and ICARUS.
@@ -38,7 +31,7 @@ If you're a brand new grad student then the whole idea of how a particle physics
 - This will give you a services password (for logging into most Fermilab online resources) and a kerberos password which you use to indentify your computer to the Fermilab servers you will be logging into.
 - There are detailed instruction of how to ssh into the appropriate virtual machines for your experiment in the [SBND](https://sbnsoftware.github.io/sbndcode_wiki/Computing_resources.html) and [ICARUS](https://sbnsoftware.github.io/icaruscode_wiki/Computing_Resources.html) pages.
 
-_TODOs
+## TODOs
 - Software section (LArSoft, ROOT etc as well as sbn specific stuff, again can be heavily linked to experiment pages)
 - Basic explaination of the stages of the sim-reco chain (sounds super basic but I never really got this explained at all)
 - List of important people in each experiment (Spokes, IB chairs, WG conveners etc) obviously you're not immediately going to be interact with many/all of them but I think it helps to feel part of what's going on if you recognise names
