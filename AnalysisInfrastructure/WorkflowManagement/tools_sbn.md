@@ -99,7 +99,7 @@ Purpose: SAM metadata extractor for artroot and non-artroot files.<br>
 <br>
 Usage:<br>
 <br>
-sbnpoms_metadata_extractor.py [options] <file><br>
+sbnpoms_metadata_extractor.py [options] &lt;file&gt;<br>
 <br>
 Arguments:<br>
 <br>
