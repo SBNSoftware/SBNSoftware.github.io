@@ -25,4 +25,4 @@ reco_icarus_driver_reco_multitpc_raw.fcl<br>
 cafmakerjob_icarus_sce.fcl
 </details>
 
-<a href=https://docs.google.com/document/d/13Mvt91CVixfdo1e3ah9Ru-wfbYUXEvHMlcbVk2RYCsE/edit?usp=sharing>MC 2021b</a>
+[MC 2021b](https://docs.google.com/document/d/13Mvt91CVixfdo1e3ah9Ru-wfbYUXEvHMlcbVk2RYCsE/edit?usp=sharing)
