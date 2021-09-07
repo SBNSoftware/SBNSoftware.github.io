@@ -49,3 +49,39 @@
   --flux_copy_method &lt;method&gt; - Flux copy method (default "IFDH").<br>
   --max_flux_file_mb &lt;n&gt;      - Maximum size of flux files to copy (default GENIEGen decides).<br>
 </details>
+
+<details>
+<summary>sbnpoms_metadata_injector.sh</summary>
+
+Purpose: Add fcl overrides for generating SAM metadata.<br>
+<br>
+Usage: sbnpoms_metadata_injector.sh [options]<br>
+<br>
+General options:<br>
+<br>
+-h|-?|--help                  - Print help message.<br>
+--inputfclname &lt;fcl file&gt;     - Fcl file to append to.<br>
+<br>
+Options for overriding SAM built-in metadata (service FileCatalogMetadata).<br>
+<br>
+--mdappfamily &lt;family&gt;        - Application family.<br>
+--mdappversion &lt;version&gt;      - Appliction version.<br>
+--mdfiletype &lt;file_type&gt;      - File type.<br>
+--mdruntype &lt;run_type&gt;        - Run type.<br>
+--mdgroupname &lt;group&gt;         - Group.<br>
+<br>
+Options for overriding experiment-specific metadata.<br>
+<br>
+--mdfclname &lt;fcl file&gt;        - Fcl file name to store in metadata.<br>
+--mdprojectname &lt;project&gt;     - Project name.<br>
+--mdprojectstage &lt;stage&gt;      - Project stage.<br>
+--mdprojectversion &lt;version&gt;  - Project version.<br>
+--mdprojectsoftware &lt;product&gt; - Top level ups product.<br>
+--mdproductionname &lt;campaign&gt; - Campaign name.<br>
+--mdproductiontype &lt;type&gt;     - Campaign type.<br>
+<br>
+Options for non-artroot files.<br>
+<br>
+--tfilemdjsonname &lt;json name&gt; - Name of TFile json file.<br>
+--cafname         &lt;caf name&gt;  - Name of caf file.<br>
+</details>
