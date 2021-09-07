@@ -141,13 +141,24 @@ For #2 it would be great to post these checks to the DocDB so that others can se
 ## Submitting a Pull-Request
 
 Great! Now we know your code builds and you have validated it now we can move to merging it into our release. 
-
+   
+1. Open a Pull Request when your code is ready.
 The next step is to alert the [Release-Management Team](https://sbnsoftware.github.io/AnalysisInfrastructure/index) that you would like your code to be reviewed for inclusion into a release. We do this via a [pull-request](https://www.atlassian.com/git/tutorials/making-a-pull-request).
-
 There are two ways to do this:
-1. use the github website: `https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name>` and click "pull request"
-2. use this command line arguement
+   
+a. use the github website: `https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name>` and click "pull request"
+   
+b. use command line [hub](https://hub.github.com/) extension.
+   
+You can track your pull-requests here: `https://github.com/SBNSoftware/<package>/pulls`
+Add as much information as possible to the comments: description, validation [Validation standard plot] slides, priority, contact details … 
 
-You can track your pull-requests here: `https://github.com/SBNSoftware/<package>/pulls`, to help speed thing along you can suggest someone to review your code changes (here is a [list](suggested-reviewers) of suggested reviewers and their git-hub handles) and post your validation slides to the comments. 
-  
-Once approved this will be merged into our next release! 
+2. Assign a reviewer.
+working group colleague, someone familiar with your code, reviewers [list](suggested-reviewers and their git-hub handles) …
+
+3. Address request, changes or comments.
+
+4. Trigger the integrated CI test with a comment (for e20/c7:prof). 
+If successful your code will be merged into the stack. Wait for nightly build  (e20/c7:debug) outputs (Dashboard or Slack).
+
+5. Your code is ready to be released. Once approved this will be merged into our next release! 

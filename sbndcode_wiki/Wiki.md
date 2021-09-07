@@ -15,7 +15,7 @@ toc_title: SBND Code Contents
 SBND code
 ======================================
 
-SBND was formerly known as LAr1-ND, and it had its own redmine project.\
+SBND was formerly known as LAr1-ND, and it had its own redmine project.
 The old wiki can be reached at:
 <https://cdcvs.fnal.gov/redmine/projects/lar1ndcode/wiki> .
 
@@ -99,6 +99,7 @@ Useful Tidbits of Information.
 -   [Known quick fixes](Known_quick_fixes.html)
 -   [TITUS Event Display](TITUS_Event_Display.html)
 -   [Commissioning - Get Started](commissioning/SBND_Commissioning_Get_Started.html)
+-   [Generation FHICL Files](Generation_fhicls)
 
 
 [Code management and deployment stuff](Code_management_and_deployment_stuff.html)

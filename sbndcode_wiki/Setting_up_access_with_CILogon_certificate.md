@@ -1,63 +1,29 @@
 ---
 layout: page
-title: Setting up access with CILogon certificate
+title:  Setting up access with CILogon certificate
+toc:    true
 ---
 
 
-
-Setting up access with CILogon certificate
-========================================================================================================
-
--   **Table of contents**
--   [Setting up access with CILogon
-    certificate]
-    -   [First: Why would you want to do
-        this?]
-    -   [Instructions for getting a CILogon Certificate and importing
-        the certificate into your
-        browser]
-        -   [Generating or renewing a
-            certificate]
-        -   [Loading the certificate into your
-            browser]
-            -   [Safari, and Vivaldi and Chrome on
-                OSX]
-            -   [Vivaldi and Chrome on
-                Linux]
-            -   [Chrome on Windows]
-            -   [Firefox]
-            -   [Internet Explorer]
-    -   [Access to SBN DocDB]
-        -   [Applying for Access to DocDB using this
-            certificate]
-        -   [Accessing DocDB once you have certificate
-            access]
-
-DUNE has [such a good
-explanation](https://web.fnal.gov/collaboration/DUNE/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx)
-that\... well, this is a copy of it.
+DUNE has [such a good explanation](https://web.fnal.gov/project/LBNF/Documentation/SitePages/Get%20a%20CI%20Logon%20Certificate.aspx)
+that... well, this is a copy of it.
 
 
 
 First: Why would you want to do this?
---------------------------------------------------------------------------------------------
+--------------------------------------
 
-[CILogon](http://cilogon.org) provides a free, *year-long
-certificate* that you can load into your browser and use for accessing
-the SBN DocDb. Note that this compares with the *one-week long* KCA
-certificate (now going to be discontinued).
+[CILogon](http://cilogon.org) provides a free, year-long certificate
+that you can load into your browser and use for accessing the SBN DocDB.
+The recommended way to access resources like SBN DocDB is the Single Sign On
+interface, which anyway does accept CI Logon certificates.
 
-When accessing DocDB using a certificate, you will be able to access
-*all* the documents you have permissions to access with *no
-username/password entry required^[1]^*.
-
-> The CILogon Certificate discussed below *can not* be used to digitally
-> sign email.
+> The CILogon Certificate discussed below *can not* be used to digitally sign email.
 
 
 
 Instructions for getting a CILogon Certificate and importing the certificate into your browser
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 There are three steps, documented below:
 
@@ -72,116 +38,115 @@ There are three steps, documented below:
 This is something you need to do once per year. You can copy the
 certificate file on different machines (e.g., your phone, your laptop,
 your home desktop), or you can have different ones at the same time, all
-of which identify *you*.\
+of which identify *you*.
 No penalty in doing this more often.
 
-1.  point your browser at <https://cilogon.org>
-2.  look through the list of supported Identity Providers
-    -   if your institution is in that list (if that\'s Fermilab, see
+1.  Point your browser at <https://cilogon.org>.
+2.  Look through the list of supported Identity Providers:
+    -   if your institution is in that list (if that's Fermilab, see
         the next option instead):
-        1.  select it and click the \'Log On\' button
+        1.  select it and click the "Log On" button
         2.  follow the log in procedure; this is specific to the
             institution you have picked
     -   if your institution is not on that list, and you have accounts
         at Fermilab:
         1.  select `Fermi National Accelerator Laboratory` and click the
-            \"Log On\" button
+            "Log On" button
         2.  enter your Services username and password (the same you
             access ServiceNow and Fermilab e-mail with; and the user
             name is just that, without `@services.fnal.gov` or anything)
-            and click the \"Login\" button
-3.  if you do not have accounts at Fermi and your institution is not in
+            and click the "Login" button
+3.  If you do not have accounts at Fermi and your institution is not in
     the list (and you are a part of SBND, of course):
     -   you will need to obtain an account with one of the institutions
         supporting CILogon (hint:
-        [Fermilab](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797)
-        ) before proceeding with the instructions on this page
-4.  enter a Password to protect your to be generated certificate; do it!
-    You will tell your browser to remember it for you, in the end
-5.  click "Get New Certificate", then the \'Click Here To Download Your
-    Certificate\' button
-6.  save it to your computer, and make a note of where you save it: this
-    file is *your certificate*, and you will need to upload this file to
-    your browser(s)
+        [Fermilab](https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0013239)
+        ) before proceeding with the instructions on this page.
+4.  Choose "Create Password-Protected Certificate" and enter a password
+    to protect your to be generated certificate; do it!
+    You will tell your browser to remember it for you, in the end.
+5.  Click "Get New Certificate", then on the next page
+    the "Click Here To Download Your Certificate" button.
+6.  Save it to your computer, and make a note of where you save it: this file
+    is *your certificate*, and you will need to upload this file to your browser(s)
+7.  Log off.
 
 
 
 ### Loading the certificate into your browser
 
 There are too many web browsers around, and they use too many different
-approaches, and they change them too often.\
+approaches, and they change them too often.
 If you find this information is outdated (because you have the most
 recent browser and it works different from here), feel free to update
 the pertaining section, also indicating which version you are
-describing.\
+describing.
+
 A search engine will likely give you better information than this
 anyway. But what you are going to do is:
 
-1.  look for the proper secrity/certificate settings page of your
-    browser
-2.  tell your browser to \"import\" your \"p12\" certificate
+1.  look for the proper secrity/certificate settings page of your browser
+2.  tell your browser to "import" your "p12" certificate
 
 
 
 #### Safari, and Vivaldi and Chrome on OSX
 
-These browsers use the operating system\'s \"key chain\" to access
-certificates.
+These browsers use the operating system's "key chain" to access certificates.
 
-1.  click on the certificate that has been downloaded (check the
-    downloads folder). This will add it to your O.S. keychain for use
-    with Safari.
+1.  click on the certificate that has been downloaded (check the downloads folder).
+    This will add it to your O.S. keychain for use with Safari.
 
 
 
 #### Vivaldi and Chrome on Linux
 
-1.  go to the URL: `chrome://settings/certificates` (yes, in Vivaldi
-    too)
-    -   you might need to tell Vivaldi to have preferences shown in a
-        tab rather than in a dialogue window\...
+_(tested on Vivaldi 4.0.2312.41 and Chrome 92.0.4515.107)_
+
+1. Go to the URL: `chrome://settings/certificates` (yes, in Vivaldi too)
+    - you might need to tell Vivaldi to have preferences shown in a
+        tab rather than in a dialogue window...
+    - you should see a page themed in the Chrome way (if Vivaldi shows
+      a page themed in a very different, Vivaldi-like way, then it redirected
+      to `vivaldi://` and will likely show the general preferences instead;
+      in that case, try again with the `chrome://` URL above).
+      
+2. The "Import" button should be fairly obvious under "Your certificates" tab.
 
 
 
 #### Chrome on Windows
 
-1.  go to the URL: `chrome://settings`, look for \"Advanced Settings\"
-2.  in there, there should be a \"Manage Certificates\" where you can
-    Import them
+1.  go to the URL: `chrome://settings`, look for "Advanced Settings"
+2.  in there, there should be a "Manage Certificates" where you can Import them
 
 
 
 #### Firefox
 
-*(tested on OSX version 47)*
+_(tested on version 90.0.2 in Linux)_
 
-1.  access the encryption preferences on the Firefox menu bar
-    -   in OSX, pick \"Preferences\" from the \"Firefox\" menu, then
-        pick the \"Advanced\" tab and the \"Certificates\" tab
-    -   in Windows, pick the \"Options\" menu, select \'Advanced\' icon
-        at the top and finally the \"Encryption\" tab
-2.  pick the \"View Certificates\" button, then the \"Your
-    Certificates\" tab
-3.  click \"Import\" at the bottom and follow the instructions to import
-    your certificate
-
+1. Pick the "Settings" page (or visit `about:preferences` URL)
+2. Look for the "Security" paragraph or directly serach for "Certificates"
+  and click on "View Certificates...".
+3. The tab "Your Certificates" contains the "Import..." button.
 
 
 #### Internet Explorer
 
 1.  double click on the saved certificate file
-2.  select \'Next\' on the wizard (twice)
+2.  select 'Next' on the wizard (twice)
 3.  enter the password you entered for the certificate
-4.  keep the default options and click on \"Next\" until you get to
-    \"Finish\"
+4.  keep the default options and click on "Next" until you get to
+    "Finish"
 
 
 
 Access to SBN DocDB
-----------------------------------------------------------
+--------------------
 
-After you get your first certificate, you\'ll have to ask the DocDB
-administrators for access with that new credential.\
+After you get your first certificate, you'll have to ask the DocDB
+administrators for access with that new credential.
 This appears to be needed only once.
 
 
@@ -189,33 +154,20 @@ This appears to be needed only once.
 ### Applying for Access to DocDB using this certificate
 
 If you are just renewing a certificate that has not already expired, you
-will not need to reregister with SBND DocDB.\
+will not need to reregister with SBND DocDB.
 Otherwise, you have to register and present your new certificate, and a
 human has to accept you in (so it may take one day).
 
-1.  point your certificate-aware browser to SBND DocDB:
-    <https://sbn-docdb.fnal.gov>
-2.  click \"\_apply for access\_\"
-3.  you\'ll be asked which access groups you want to join (if unsure,
-    pick only `SBN`)
+1.  point your certificate-aware browser to SBND DocDB: <https://sbn-docdb.fnal.gov>
+2.  click "apply for access"
+3.  you'll be asked which access groups you want to join (if unsure, pick only `SBN`)
 
 
 
 ### Accessing DocDB once you have certificate access
 
-1.  ​go to SBND DocDB: <https://sbn-docdb.fnal.gov>
-2.  if prompted, now or at the next step, by the browser to choose a
-    certificate to use, choose the same certificate you used to apply
-    for access
-3.  choose the \"Certificate Version of SBN DocDB\" as the link to
-    follow
+1.  go to SBND DocDB: <https://sbn-docdb.fnal.gov>
+2.  if prompted, now or at the next step, by the browser to choose a certificate
+    to use, choose the same certificate you used to apply for access
+3.  choose the "Certificate Version of SBN DocDB" as the link to follow
 
-------------------------------------------------------------------------
-
-^1^ Note however that the URL is different: if you are sent a link
-copied from a person who used password authentication, following that
-link you will be asked for password authentication. This *does not mean
-you don\'t have access to the document*, but just that the URL you are
-following should be changed.\
-You can always go DocDB, authenticate as you wish and then search for
-the document number.

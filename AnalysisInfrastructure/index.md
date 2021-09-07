@@ -19,6 +19,10 @@ Each of these sgroups are charged with defining and implement common SBN-wide so
 [List of open PRs](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
 Convener(s): [Miquel Nebot-Guinot](mailto:)
+
+Mailing list and Slack channel: [sbn-software@listserv.fnal.gov](mailto:) , #sbn_release_management
+
+Meetings: Wednesdays, 9:00 CT
 <!-- Goal is to maintain high-quality releases of SBN-specific software packages -->
 
 ### [Production and Data Management](https://sbnsoftware.github.io/sbn/sbnprod_wiki/Wiki)
@@ -30,6 +34,12 @@ Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
 ### [Workflow Management](WorkflowManagement/workflow.md)
 
 Conveners: [Sophie Berkman and Herb Greenlee](mailto:)
+
+Mailing list: [sbn-workflow@fnal.gov](mailto:sbn-workflow@fnal.gov) ([subscribe](https://listserv.fnal.gov/scripts/wa.exe?SUBED1=sbn-workflow&A=1))
+
+Slack channel: #sbn_workflow
+
+Meetings: Production & Workflow Meeting, Monday 11am.
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
@@ -43,17 +53,24 @@ Conveners: [Marco del Tutto and Alessandro Menegolli](mailto:)
 
 Conveners: [Fernanda Psihas and Gianluca Petrillo](mailto:)
 
+Mailing list and Slack channel: [sbn-software](mailto:sbn-software@listserv.fnal.gov) , #cafana
+
+Meetings: Thursdays, 11:00 CT
+
 <!-- Develops infrastructure to process & analyze data & MC in a consistent way. -->
 
 ### [Validation Framework](validation.md)
 
 Conveners: [Chris Hilgenberg](mailto:)
 
+Mailing list and Slack channel: [sbn_ci_validation](mailto:sbn_ci_validation@listserv.fnal.gov), #sbn_ci_alerts
+
+Meetings: every other Friday at 9:00 CT 
 <!-- Study and develop improved beamline simulations and uncertainties. -->
 
 ## Important Information for Developers
 
-### [Release Notes](releasenote.md)
+### [Release Notes](Releases/List_of_SBN_code_releases.md)
 
 Our currently tagged release is VNN_YY_XX.
 

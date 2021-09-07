@@ -22,14 +22,16 @@ different from the one configured in the current job
 (override with `services.Geometry.SkipConfigurationCheck: true`).
 
 
-| version      | introduced  | default     | file path                                                                   | based on   | description
-| ------------ | ----------- | ----------- | --------------------------------------------------------------------------- | ---------- | ------------
-| `icarus_v2`* | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107` | fixed orientation of wires, with concrete overburden
-| `icarus_v2`* | `v09_18_00` | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107` | fixed orientation of wires, with no concrete overburden
-| `20201107`** | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`                     | `20200709` | more realistic description of walls, updates to PMT materials, with concrete overburden
-| `20201107`** | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml`       | `20200709` | more realistic description of walls, updates to PMT materials, with no concrete overburden
-| `20200709`** | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`                     | `20200307` | fixed overlaps, with concrete overburden
-| `20200709`** | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml`       | `20200307` | fixed overlaps, with no concrete overburden
+| version      | introduced  | default     | file path                                                                   | based on    | description
+| ------------ | ----------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
+| `icarus_v3`  | `v09_25_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`          | `icarus_v2` | closer cryostats, added building details; with concrete overburden
+| `icarus_v3`  | `v09_25_00` | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `icarus_v2` | closer cryostats, added building details; with no concrete overburden
+| `icarus_v2`* | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107`  | fixed orientation of wires, with concrete overburden
+| `icarus_v2`* | `v09_18_00` | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107`  | fixed orientation of wires, with no concrete overburden
+| `20201107`** | `v09_09_01` |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`                     | `20200709`  | more realistic description of walls, updates to PMT materials, with concrete overburden
+| `20201107`** | `v09_09_01` | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml`       | `20200709`  | more realistic description of walls, updates to PMT materials, with no concrete overburden
+| `20200709`** | `v08_57_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`                     | `20200307`  | fixed overlaps, with concrete overburden
+| `20200709`** | `v08_57_00` | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml`       | `20200307`  | fixed overlaps, with no concrete overburden
 
 > _*_ _Versions `v09_18_00` to `v09_19_00_01` erroneously still report this geometry as `icarus_splitwires`. To process files generated with those versions, `services.Geometry.Name: icarus_splitwires` must be specified in the job configuration_
 > 
@@ -115,23 +117,32 @@ For example, if your `simulation_genie_icarus_bnb_v09_09_02.root` was generated
 with `icaruscode` `v09_09_02` (and, according to the paragraph above,
 with a geometry version `icarus_splitwires`), you may use `icaruscode` `v09_19_00`
 and the geometry configuration preset `icarus_geometry_services_legacy_icarus_splitwires`
-found in there.
+found in there:
+    
+    services: {
+      @table::services                                           # all existing services are replicated
+      @table::icarus_geometry_services_legacy_icarus_splitwires  # overwrite the complete geometry configuration
+    }
+    
 
 Versions are listed and explained in the [paragraph above](#geometry-description-versions).
 
 | applies to samples with | availability | configuration bundle name                                         | notes                                  |
 | ----------------------- | ------------ | ----------------------------------------------------------------- | -------------------------------------- |
+| `icarus_v2`             | `v09_25_00`  | `icarus_geometry_services_legacy_icarus_v2`                       | standard configuration (no overburden) |
+|                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_v2`         | no overburden (same as standard)       |
+|                         |              | `icarus_geometry_services_overburden_legacy_icarus_v2`            | with 3-m concrete overburden           |
 | `icarus_splitwires`     | `v09_19_02`  | `icarus_geometry_services_legacy_icarus_splitwires`               | standard configuration (no overburden) |
 |                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_splitwires` | no overburden (same as standard)       |
 |                         |              | `icarus_geometry_services_overburden_legacy_icarus_splitwires`    | with 3-m concrete overburden           |
 
-The configuration bunbles can be used with the `@table::` syntax as described above.
+The configuration bundes can be used with the `@table::` syntax as described above.
 Remember that legacy configurations may be retired after a while.
 In such cases, reverting to a previous `icaruscode` version
 is the only way to properly process the legacy samples.
 
 
-### `icaruscode` versions `v08_52_00` and later
+### `icaruscode` versions `v08_52_00` and later:
 
 Geometry can be selected by including one of the predefined
 configurations defined in
@@ -202,7 +213,7 @@ name                                              | introduced  | description   
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[source:icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
+[icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 The procedures are the same as documented for the newer versions.
 The drop-in configurations also work as above, but with two relevant
@@ -343,6 +354,8 @@ a channel number:
 
 (which in `icaruscode` `v09_15_00` it is called `icarus_channelmap.txt`).
 
+ICARUS geometry update was described in SBN-doc-21693-v3 (Apr 2021).
+
 
 ### Booster Neutrino Beam target and decay pipe
 
@@ -351,8 +364,8 @@ Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0
 > **TODO** people with more exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
 
 
-### Neutrinos from Main Injector target and decay pipe
+### Neutrinos from Main Injector target and decay pipe (NuMI)
 
-> **TODO** people with approximate or exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
-
+ICARUS position w.r.t. NuMI coordinates is described in SBN-doc-22998 (Aug 2021).
+Detector position for MC was updated in the following pull request: https://github.com/SBNSoftware/icaruscode/pull/230
 
