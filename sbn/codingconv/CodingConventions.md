@@ -241,7 +241,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
   **required** that the existing indentation be exactly followed
   otherwise.
   
-**[E]**  The **encouraged** indentation is via spaces (4 per level **suggested**).
+**[R]**  The **required** indentation is via spaces (2 per level **suggested**).
 
 **[D]**  The use of editor-specific directives to describe the indentation settings
   is **discouraged** because of the editor-specificity.
