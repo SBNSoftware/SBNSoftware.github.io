@@ -698,7 +698,7 @@ A similar recommendation still holds for code in implementation files
   likewise, `std::vector{ 3 }` contains one element, `3`,
   while `std::vector(3)` contains three elements initialized to `0`).
 
-**[E]** Logic operators are **encouraged** to be spelled symbolically
+**[R]** Logic operators are **required** to be spelled symbolically
   (`&&`, `||`, `!`) rather than in word (`and`, `or`, `not`),
   as it is a better known syntax. Digraphs and trigraphs are **forbidden**.
 
