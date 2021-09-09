@@ -114,8 +114,8 @@ A "package" is a branch of the source tree in a repository.
   
 **[S]** **suggested** suffixes:
 * C++ headers: `.h`
-* C++ source: `.cpp`
-* C++ template implementation: `.tcc`
+* C++ source: `.cxx`
+* C++ template implementation: `.txx`
 
 
 ##  Capitalization  ########################################################
