@@ -29,7 +29,7 @@ Instructions
 
 #### Create a Data Folder On Your Local Machine and Download a Data File
 - Create a folder to contain data files that you download
-- See the information on the previous page for finding data files
+- See the [information on the previous page](../samples/datafiles.md) for finding data files
 - If you have an FNAL computing account then you can copy the data file to your local machine
 
 #### Start the Event Display
