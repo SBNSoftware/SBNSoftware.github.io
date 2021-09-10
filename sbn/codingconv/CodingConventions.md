@@ -688,7 +688,7 @@ A similar recommendation still holds for code in implementation files
   Plain C-style casts are also **discouraged** in favor of the more expressive
   (and easier to recognise and understand) `static_cast`.
   
-**[F]** The use of labels and `goto` statement are **forbidden**.
+**[F]** The use of labels and `goto` statement are **forbidden** except for the specific purpose of jumping out of deeply-nested loops when all other alternatives have been considered and are worse.
 
 **[S]** Initialization syntax with braces is **suggested** as it is the most universally
   appliable (a famous exception is the initialization of a `std::vector` of
