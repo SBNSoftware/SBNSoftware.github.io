@@ -90,7 +90,7 @@ Options for non-artroot files.<br>
 </details>
 
 <details>
-<summary>sbnoms_metadata_extractor.py</summary>
+<summary>sbnpoms_metadata_extractor.py</summary>
 <br>
 Purpose: SAM metadata extractor for artroot and non-artroot files.<br>
          Use sam_metadata_dumper to extract internal sam metadata from<br>
@@ -110,4 +110,28 @@ Options:<br>
 -h|--help - Print help.<br>
 -e|--experiment &lt;exp&gt; - Experiment (default $SAM_EXPERIMENT).<br>
 <br>
+</details>
+Purpose: Select artroot file(s), and perform various other "between exe"<br>
+         operations.<br>
+<br>
+Usage: sbnpoms_chooser.sh [options]<br>
+<br>
+Options:<br>
+<br>
+-h|--help        - Print help message.<br>
+-S &lt;list&gt;        - Specify list file to receive chosen files (default none).<br>
+-d &lt;directory&gt;   - Specify directory to search for root files (default ".").<br>
+-n &lt;n&gt;           - Number of artroot files to choose (default 1).<br>
+--[no]metadata   - [Do not] extract metadata (using sbnpoms_metadata_extractor.py) <br>
+                   for any artroot file in the input directory into a matching <br>
+                   .json file, if the .json file doesn't already exist.<br>
+                   Default is to extract metadata.<br>
+--delete &lt;list&gt;  - Delete files in the specified list file.<br>
+--[no]match      - [Do not] match unpaired non-artroot root files and <br>
+                   unpaired json files.  Rename json file to match root file.<br>
+                   Default is to match.<br>
+--max_length &lt;n&gt; - Maximum file name length (0=no limit, default 200).<br>
+--unique         - Ensure that .root file names are unique (rename). <br>
+<details>
+<summary>sbnpoms_chooser.sh</summary>
 </details>
