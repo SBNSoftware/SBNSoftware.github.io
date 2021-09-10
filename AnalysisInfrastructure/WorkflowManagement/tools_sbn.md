@@ -5,7 +5,6 @@
 <details>
 <summary>sbnpoms_wrapperfcl_maker.sh</summary>
 <pre>
-
 Purpose: Make an empty wrapper fcl file.
 
 Usage: sbnpoms_wrapperfcl_maker.sh [options]
@@ -14,15 +13,13 @@ Options:
 
 -h|-?|--help        - Print help message.
 --fclname &lt;fcl&gt;     - Wrapped fcl file.
---wrappername &lt;fcl&gt; - Wrapper fcl file.  
-
+--wrappername &lt;fcl&gt; - Wrapper fcl file.
 </pre>
 </details>
 
 <details>
 <summary>sbnpoms_runnumber_injector.sh</summary>
 <pre>
-
 Purpose: Append run and subrun overrides to fcl file.
          Subrun follows \$PROCESS+1, and wraps by incrementing
          the run number when the subrun exceeds the maximum.
@@ -36,14 +33,12 @@ Options:
 --subruns_per_run &lt;n&gt; - Number of subruns per run (default 100).
 --process &lt;process&gt;   - Specify process number (default \$PROCESS).
 --run &lt;run&gt;           - Specify base run number (default 1).
-
 </pre>
 </details>
 
 <details>
 <summary>sbnpoms_flux_injector.sh</summary>
 <pre>
-
 Purpose: Add genie flux-related overrides to fcl file.
 
 Usage: sbnpoms_flux_injector.sh [options]
@@ -54,14 +49,12 @@ Options:
 --fcl &lt;fcl&gt;                 - Fcl file to append (default standard output).
 --flux_copy_method &lt;method&gt; - Flux copy method (default "IFDH").
 --max_flux_file_mb &lt;n&gt;      - Maximum size of flux files to copy (default GENIEGen decides).
-
 </pre>
 </details>
 
 <details>
 <summary>sbnpoms_metadata_injector.sh</summary>
 <pre>
-
 Purpose: Append SAM metadata overrides to a fcl file.
 
 Usage: sbnpoms_metadata_injector.sh [options]
@@ -93,14 +86,12 @@ Options for non-artroot files.
 
 --tfilemdjsonname &lt;json name&gt; - Name of TFile json file.
 --cafname         &lt;caf name&gt;  - Name of caf file.
-
 </pre>
 </details>
 
 <details>
 <summary>sbnpoms_metadata_extractor.py</summary>
 <pre>
-
 Purpose: SAM metadata extractor for artroot and non-artroot files.
          Use sam_metadata_dumper to extract internal sam metadata from
          artroot files.  Otherwise, read metadata from associated .json
@@ -118,7 +109,6 @@ Options:
 
 -h|--help - Print help.
 -e|--experiment &lt;exp&gt; - Experiment (default $SAM_EXPERIMENT).
-
 </pre>
 </details>
 
