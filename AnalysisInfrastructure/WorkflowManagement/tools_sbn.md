@@ -111,6 +111,9 @@ Options:<br>
 -e|--experiment &lt;exp&gt; - Experiment (default $SAM_EXPERIMENT).<br>
 <br>
 </details>
+
+<details>
+<summary>sbnpoms_chooser.sh</summary>
 Purpose: Select artroot file(s), and perform various other "between exe"<br>
          operations.<br>
 <br>
@@ -132,6 +135,4 @@ Options:<br>
                    Default is to match.<br>
 --max_length &lt;n&gt; - Maximum file name length (0=no limit, default 200).<br>
 --unique         - Ensure that .root file names are unique (rename). <br>
-<details>
-<summary>sbnpoms_chooser.sh</summary>
 </details>
