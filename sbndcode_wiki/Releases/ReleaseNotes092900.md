@@ -38,8 +38,8 @@ Bug fixes
 Updated dependencies
 ---------------------------------------------------
 
-sbncode v09_29_00
-larsoft v09_29_00
+* sbncode v09_29_00
+* larsoft v09_29_00
 
 Change List
 ==========================================
