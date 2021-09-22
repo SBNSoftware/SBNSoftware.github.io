@@ -681,7 +681,7 @@ A similar recommendation still holds for code in implementation files
   ```
 
 
-**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden**.
+**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden** except when interfacing with broken external library code, in which case a large and thorough comment is required.
 
 **[D]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
   interfaces without the need for this type of cast.
