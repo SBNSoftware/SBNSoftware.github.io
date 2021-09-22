@@ -32,11 +32,11 @@ This policy uses coded words to define the priority of the requirements:
 
 
 
-|         | Name                                       | Meaning  |
-| ------- | ------------------------------------------ | -------- |
-|  \*\*\* |**[R]** Required <br/> **[F]** Forbidden    | Reviewers are asked to reject code that does not satisfy this requirement.     |
-| \*\*    |**[E]** Encouraged <br/>**[D]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
-| \*      | **[S]** Suggested                          | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
+|         | Name                                         | Meaning  |
+| ------- | -------------------------------------------- | -------- |
+| \*\*\*  | **[R]** Required <br/> **[F]** Forbidden     | Reviewers are asked to reject code that does not satisfy this requirement.     |
+| \*\*    | **[E]** Encouraged <br/> **[D]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
+| \*      | **[S]** Suggested                            | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
 
 
 > While this document is in draft, guidelines that have not been
@@ -111,7 +111,11 @@ A "package" is a branch of the source tree in a repository.
   
 **[R]** for the other files, it is **required** to stick to the existing
   convention in the source directory or its parent, if any is present.
-  
+
+**[E]** names of source files with a main algorithm or class are **encouraged**
+  to match the one of that algorithm or class, e.g. `sbn::Track` source should
+  be called `Track.h`/`Track.cxx`.
+
 **[S]** **suggested** suffixes:
 * C++ headers: `.h`
 * C++ source: `.cxx`
@@ -133,10 +137,15 @@ even at the cost of some additional key strokes, and then to minimize
 possible name collisions or ambiguities.
 
 **[R]** Use of a descriptive control variable is **required**
-  in any loop longer than five lines.
+  in any loop longer than five lines. Descriptive names do not need to be long:
+  in a known formula, `V` and `R` are proper variable names for a voltage
+  and a resistance if unambiguous in the scope, although caution should be taken
+  when using `i` as a real number because of the tradition of `i` being an
+  integral index.
   
 **[D]** Declaration of identifiers starting with an underscore is **discouraged**
-  (even to denote private class members); 
+  (even to denote private class members).
+  
   
 **[F]** declaration of identifiers starting
   with two or more underscores (e.g. `__i`) is **forbidden**.
@@ -147,8 +156,14 @@ possible name collisions or ambiguities.
   `double const F = G * m * M / (d*d);` is acceptable, but 
   `double const F = G * m1 * m2 / (d*d);` should still be preferred.
  
-**[E]** Starting private data members with `f` and use CamelCase is **encouraged** (e.g. `double fTrackLength`).
-
+**[E]** Private data member names are **encouraged** to start with `f` and use CamelCase
+   (e.g. `double fTrackLength`). This pattern should be reserved exclusively for such private data member.
+  Conversely, public data members and local variables should instead follow the more general guideline
+  expressed above (i.e. simple camelCase, e.g. `trackLength`).
+  
+**[E]** Names starting with `f` and using CamelCase (e.g. `double fTrackLength`)
+  are **encouraged** for private data members, and only for them. Conversely,
+  the use of a leading `f` for local variables is **discouraged**
 
 Example:
 ```cpp
@@ -173,7 +188,7 @@ for (simb::MCTruth const& interaction: interactions)
   
   for (int iPart = 0; iPart < interaction.NParticles(); ++iPart)
   {
-    auto part = interaction.GetParticle(iPart);
+    simb::MCParticle const& part = interaction.GetParticle(iPart);
     
     /* ... useful code here ... */
     
@@ -182,6 +197,21 @@ for (simb::MCTruth const& interaction: interactions)
 } // for all interactions
 ```
 Names don't need to be that long, as long as they are meaningful.
+
+
+### Summary of identifier name recommendations
+
+| context                 | name style         | example                       |
+| ----------------------- | ------------------ | ----------------------------- |
+| local variable          | camelCase          | `nearestTrackIndex`           |
+| function                | camelCase          | `findNearestTrack`            |
+| class/struct name       | CamelCase          | `IsolatedTrack`               |
+| public member variable  | camelCase          | `nTracks`                     |
+| private member variable | `f` + CamelCase    | `fNTracks`                    |
+| global variable         | CamelCase          | `GlobalVariablesAreEvil`      |
+| namespace               | short, lower case  | `track`                       |
+| library name            | CamelCase          | `TrackFinder`                 |
+
 
 
 ##  CAF-Specific Naming Conventions ########################################
@@ -242,6 +272,9 @@ Rationale: protect the modularity of the code and control the dependency tree.
   otherwise.
   
 **[R]**  The **required** indentation is via spaces (2 per level **suggested**).
+  While modifying existing, non-complying code, authors are encouraged to
+  reformat tabulator characters away and push a commit with only the indentation
+  change.
 
 **[D]**  The use of editor-specific directives to describe the indentation settings
   is **discouraged** because of the editor-specificity.
@@ -259,15 +292,16 @@ and as a recognition and acknowledgement.
 
 **[R]** Every source file is **required** to report in a header
   the author(s) and possibly a contact mean (e-mail is **suggested**).
-  
+
 **[E]** Doxygen format is **encouraged**:
   ```cpp
   /**
    * @file   TrackBloating/TrackBloatAlg.h
    * @brief  Algorithm to double the memory required by a track.
    * @author Mark Johnson (mjohnson@fnal.gov), John Markson (jmarkson@fnal.gov)
-   * /
+   */
   ```
+
 **[E]** Authors other than the ones in the headers are **encouraged**
   to report their name (and contact) upon major additions (including
   rewritten algorithm implementations) in a C++ comment;
@@ -291,6 +325,11 @@ conditions over automatic mitigation.
 **[E]** C++ exceptions are **encouraged** as tools for reporting error;
   using `cet::exception` as base of exceptions where available is **encouraged**
   as a recognizable pattern and because of the convenience of the class.
+  
+  > The text above is the original thought by G. Petrillo.
+  > C. Backhouse proposes the exact opposite.
+  > Which practice is best for us should be considered
+  > [under discussion](https://github.com/PetrilloAtWork/SBNSoftware.github.io/pull/5).
   
 **[D]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
   have repeatedly been found to hide essential errors.
@@ -421,12 +460,12 @@ of supporting two different compilers (GCC and Clang).
 is **suggested**. An example:
 ```cpp
 unsigned int n = 0;
-for (auto const& elem: data) {
+for (Data_t const& elem: data) {
     (void) elem; // prevent "unused variable" warnings
     ++n;
 }
 ```
-(replace `(void) elem;` with `std::ignore = elem;` if you will).
+(replace `(void) elem;` with `std::ignore = elem;` if you prefer).
 
 
 ### `auto` keyword
@@ -505,8 +544,11 @@ It should be used judiciously (and sparsely).
 
 **[F]** `using namespace` directives are nevertheless always thoroughly
   **forbidden** in global scope of header files.
-  Instead, importing specific symbols at local scope should be preferred
-  (e.g. `using std::begin, std::end;`).
+  You may import specific symbols at local scope (i.e. within the body of your `class`)
+  if absolutely necessary for readability
+  (`using Iterator_t = std::vector<std::vector<std::pair<int, int>>>::const_iterator;`)
+  or for functionality (e.g. `using std::begin, std::end;`).
+  
   
 **[E]** In header files, it is **encouraged** that functions and variables
   that are considered implementation details be enclosed in a namespace;
@@ -628,7 +670,7 @@ A similar recommendation still holds for code in implementation files
   be reflecting its quantity. For example, an item count should be an `unsigned int`,
   an index of STL array or vector should be `std::size_t`
   (because that is the native type of `std::vector::operator[]` parameter),
-  or `std::ptrdiff_t` or, better yet, a [`gsl::index`](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslutil-utilities).
+  or `std::ptrdiff_t` or, better yet, a [`gsl::index`](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslutil-utilities) (the type of indices is a known C++ issue).
   
 **[E]** It is **encouraged** that "variables" that are not expected to be changed
   be _always_ declared constant, so that accidental changes are spotted by
@@ -680,15 +722,18 @@ A similar recommendation still holds for code in implementation files
   protonTrueContained = truePart.contained;
   ```
 
-
-**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden** except when interfacing with broken external library code, in which case a large and thorough comment is required.
+**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
+  except when interfacing with broken external library code,
+  in which case a large and thorough comment is required.
 
 **[D]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
   interfaces without the need for this type of cast.
   Plain C-style casts are also **discouraged** in favor of the more expressive
   (and easier to recognise and understand) `static_cast`.
   
-**[F]** The use of labels and `goto` statement are **forbidden** except for the specific purpose of jumping out of deeply-nested loops when all other alternatives have been considered and are worse.
+**[F]** The use of labels and `goto` statement are **forbidden** except for the
+  specific purpose of jumping out of deeply-nested loops
+  when all other alternatives have been considered and judged worse.
 
 **[S]** Initialization syntax with braces is **suggested** as it is the most universally
   appliable (a famous exception is the initialization of a `std::vector` of
@@ -858,6 +903,7 @@ There are well known patterns that prevent unnecessary copies.
   This usually guarantees optimal performance even when
   the calling code pass a temporary vector
   (e.g. `HitProcessor hitProc { generateHits() };`).
+  If in doubt, though, fall back to the constant reference rule above.
 
 **[E]** Allocation of the memory for a data structure in advance is **encouraged** 
   if its _final_ size is known. For example:
@@ -881,7 +927,8 @@ There are well known patterns that prevent unnecessary copies.
 
 #### Checked vs. unchecked element access (i.e. `at()` vs. `[]`)
 
-Rationale: data collection objects like `std::vector` offer both a checked access (`data.at(index)`) which throws an exception if the requested element
+Rationale: data collection objects like `std::vector` offer both a checked access
+(`data.at(index)`) which throws an exception if the requested element
 is not included in the collection, and an unchecked one (`data[index]`)
 whose behaviour is undefined in such case.
 Most often, the unckecked access should be preferred because faster,
@@ -951,8 +998,8 @@ consideration.
   would reduce the size to 16 bytes.
 
 **[E]** The initialization of configuration data members in the constructor
-  initalizer list is **encouraged**, as is their constantness
-  if the class does not need to be copiable.
+  initializer list is **encouraged**, as is their constantness
+  if the class does not need to be copyable.
   For example:
   ```cpp
   class EnergyEstimatorAlg {
@@ -1136,12 +1183,12 @@ without a systematic comparison the different versions of the code.
 **[R]**  Each repository contains in its main directory a `changes.md` file;
   the start of the file includes information about the format, like the
   pattern used for each entry and the tag for breaking changes.
-  
- **[R]** Authors are **required** to update the `changes.md` log when...
-  
-  * A new algorithm is added: mentioning the purpose of the new feature, e.g.
+
+**[R]** Authors are **required** to update the `changes.md` log when...
+
+* A new algorithm is added: mentioning the purpose of the new feature, e.g.
       ```
-      [20210805] New algorithm BloatTracks available.
+      [20210805] New algorithm `BloatTracks` available.
       ```
 * A change in parameters that may affect future results:
       ```
@@ -1155,12 +1202,12 @@ without a systematic comparison the different versions of the code.
 **[R]** In the last case, the change is defined as breaking and the entry is
       **required** to explicitly state that with a standard tag
       (`**BREAKING CHANGE**` is the recommendation).
-      
+
 **[S]**  A simple format like in the examples above is suggested, given that the
   purpose of this file is as a fast lookup to discover where to find additional
   information. Information about the author of the change can be tracked down
   via GIT so a reference is just **suggested**. 
-  
+
 **[E]** Information about the release
   version, especially for breaking change, is **strongly encouraged** but
   it is the duty of the release manager rather than of the author, as it is
