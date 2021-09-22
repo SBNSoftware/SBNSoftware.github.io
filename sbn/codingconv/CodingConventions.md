@@ -31,14 +31,11 @@ release managers.
 
 This policy uses coded words to define the priority of the requirements:
 
-
-
 |         | Name                                         | Meaning  |
 | ------- | -------------------------------------------- | -------- |
 | \*\*\*  | **[R]** Required <br/> **[F]** Forbidden     | Reviewers are asked to reject code that does not satisfy this requirement.     |
 | \*\*    | **[E]** Encouraged <br/> **[D]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
 | \*      | **[S]** Suggested                            | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
-
 
 > While this document is in draft, guidelines that have not been
 > discussed or have been questioned have the priority mark written
@@ -252,6 +249,8 @@ Specific for CAF libraries and tools:
 
 **[F]** `StandardRecord` is intended to hold the structure of CAF files only. Any dependence to LArSoft packages in `StandardRecord` is **forbidden**.
 
+
+
 #   Coding   ###################################################################
 
 ##  Organization, layout and style  ########################################
@@ -281,8 +280,6 @@ Rationale: protect the modularity of the code and control the dependency tree.
   is **discouraged** because of the editor-specificity.
 
 **[E]** The use of [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style) is **encouraged**.
-
-
 
 
 ##  Source file metadata  #################################################
@@ -526,7 +523,7 @@ It should be used judiciously (and sparsely).
    * Example of usage:
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.cpp}
    * for (recob::MCParticle const& particle: filter.getParticles())
-   * { /* ... */ }
+   * { ... }
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
   auto getParticles() const;
