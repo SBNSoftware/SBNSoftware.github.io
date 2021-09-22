@@ -930,7 +930,8 @@ consideration.
   (except for a polymorphic base class, where the definition should always be
   `virtual ~BaseClass() = default;`).
 
-**[S]** For objects that will exist in large collections an ordering of data members from the largest to the smallest is **suggested**,
+**[S]** For objects that will exist in large collections, and especially for data structures,
+   an ordering of data members from the largest to the smallest is **suggested**,
   to avoid waste of memory due to data alignment. For example:
   ```cpp
   struct TrackData { // BAD data alignment
