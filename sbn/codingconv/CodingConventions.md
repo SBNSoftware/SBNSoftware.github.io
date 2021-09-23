@@ -61,9 +61,9 @@ expected to change their code to make it compliant when requested to.
 
 The conventions are articulated in the following sections:
 
-* [Naming](CodingConventionsList.md#Naming-conventions)
-* [Coding](CodingConventionsList.md#Coding)
-* [Documentation](CodingConventionsList.md#Documentation)
-* [Linking and building](CodingConventionsList.md#Linking-and-building)
+* [Naming](CodingConventionsList.md#naming-conventions)
+* [Coding](CodingConventionsList.md#coding)
+* [Documentation](CodingConventionsList.md#documentation)
+* [Linking and building](CodingConventionsList.md#linking-and-building)
 
 

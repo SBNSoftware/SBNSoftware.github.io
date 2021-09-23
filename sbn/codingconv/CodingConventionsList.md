@@ -10,9 +10,9 @@ toc:         true
 
 Quick links to the introductory sections:
 
-* [Purpose & Scope](CodingConventions.md#Purpose-_-Scope)
-* [Definitions](CodingConventions.md#Definitions)
-* [Compliance and procedures](CodingConventions.md#Compliance-and-procedures)
+* [Purpose & Scope](CodingConventions.md#purpose--scope)
+* [Definitions](CodingConventions.md#definitions)
+* [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
 
 ----
 
