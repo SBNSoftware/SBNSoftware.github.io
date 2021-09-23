@@ -85,6 +85,8 @@ Users with ICARUS CVMFS upload privileges                      | since
 [Tracy Usher](mailto:usher@slac.stanford.edu)                  | The Stone Age
 [Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | 2016
 [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
+Miguel Nebot-Guinot                                            | 2020
+Patrick Green                                                  | 2020
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
