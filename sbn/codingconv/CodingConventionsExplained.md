@@ -2,19 +2,64 @@
 title:       SBN analysis code conventions
 description: Summary of code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
-layout:      page_TOC_1_3
 toc:         true
 ---
 
-----
+<!-- BEGIN HACKMD this is temporary for HackMD editing -->
+[TOC]
+<!-- END   HACKMD this is temporary for HackMD editing -->
 
-Quick links to the introductory sections:
 
-* [Purpose & Scope](CodingConventions.md#purpose--scope)
-* [Definitions](CodingConventions.md#definitions)
-* [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
+#   Purpose & Scope ##################################################################
 
-----
+
+This set of guidelines aims to improve the readability and maintainability of
+the code bases.
+
+This policy is intended to cover all code in the following SBN coder repositories:
+`sbnobj`, `sbncode`, `sbnana`.
+
+It is expected that authors attempt to strictly adhere to it,
+as defined in the "Definitions" paragraph.
+Policy rules may be enforced by reviewers during code review, and by the
+release managers.
+
+
+
+#   Definitions   ##############################################################
+
+This policy uses coded words to define the priority of the requirements:
+
+|         | Name                                         | Meaning  |
+| ------- | -------------------------------------------- | -------- |
+| \*\*\*  | **[R]** Required <br/> **[F]** Forbidden     | Reviewers are asked to reject code that does not satisfy this requirement.     |
+| \*\*    | **[E]** Encouraged <br/> **[D]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
+| \*      | **[S]** Suggested                            | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
+
+> While this document is in draft, guidelines that have not been
+> discussed or have been questioned have the priority mark written
+> in italic font (e.g. "it is _**required**_ that ..." or "**_[R]_**").
+
+
+
+#   Compliance and procedures   ################################################
+
+Code is considered compliant with this policy if _all_ the following apply:
+
+1. all _requirements_ are satisfied;
+2. if the code is subject to code review, reviewers have considered all the
+   recommendations and judged, to their discretion, that a sufficient adherence
+   is in place.
+
+Arbitration by a convener can be requested if no agreement can be met between author(s) and
+reviewers.
+
+> As the conventions and guidelines in this document are going to be many,
+authors are not expected to know them (or even to have read them) all.
+They are instead expected to consider them when pointed to them, and they are
+expected to change their code to make it compliant when requested to.
+
+
 
 #   Naming conventions   #######################################################
 
@@ -57,55 +102,95 @@ A "package" is a branch of the source tree in a repository.
 
 ##  Source files  ##########################################################
 
-[_explanations_](CodingConventionsExplained.md#source-files)
-
-**[E]** Use `.cc` suffix for C++ source files
-  containing the definition of _art_ plugin classes (modules, services, tools).
-
-**[R]** For the other files, stick to the existing
+**[E]** `cet_build_tools` is somehow biassed toward using `.cc` suffix for C++
+  files, and it is **encouraged** that this suffix be used for source files
+  containing the definition of _art_ plugin classes (modules, services, tools);
+  
+**[R]** for the other files, it is **required** to stick to the existing
   convention in the source directory or its parent, if any is present.
 
-**[E]** Match names of source files hosting a main algorithm or class with
-  the name of that algorithm or class (e.g. `sbn::Track` source file should
-  be called `Track.h`/`Track.cxx`).
+**[E]** names of source files with a main algorithm or class are **encouraged**
+  to match the one of that algorithm or class, e.g. `sbn::Track` source should
+  be called `Track.h`/`Track.cxx`.
 
-**[S]** File suffixes:
-
-| type of source               | name pattern                       | example                       |
-| ---------------------------- | ---------------------------------- | ----------------------------- |
-| _art_ plugin source file     | `*_module.cc`, `*_service.cc`, ... | `PCAngleKinkFinder_module.cc` |
-| C++ header                   | `*.h`                              | `Track.h`                     |
-| C++ source                   | `*.cxx`                            | `Track.cxx`                   |
-| C++ template implementation  | `*.txx`                            | `Track.txx`                   |
+**[S]** **suggested** suffixes:
+* C++ headers: `.h`
+* C++ source: `.cxx`
+* C++ template implementation: `.txx`
 
 
 ##  Capitalization  ########################################################
 
-[_explanations_](CodingConventionsExplained.md#capitalization)
-
 **[E]** "CamelCase" is **encouraged** for composite names (e.g. `PhotonLibrary`).
 
-**[R]** _art_ plugin name is **required** to match the file it is defined in.
+**[R]** Plugin name is **required** to match the file it is defined in
+  (this is a `cet_build_tools` build system requirement).
 
 
 ##  Variables and other identifiers  #######################################
 
-[_explanations_](CodingConventionsExplained.md#variables-and-other-identifiers)
+Variable names should be designed with a code reader in mind,
+even at the cost of some additional key strokes, and then to minimize
+possible name collisions or ambiguities.
 
-**[R]** Descriptive control variable name in any loop longer than five lines.
+**[R]** Use of a descriptive control variable is **required**
+  in any loop longer than five lines. Descriptive names do not need to be long:
+  in a known formula, `V` and `R` are proper variable names for a voltage
+  and a resistance if unambiguous in the scope, although caution should be taken
+  when using `i` as a real number because of the tradition of `i` being an
+  integral index.
 
-**[D]** Avoid identifiers starting with an underscore (e.g. `_i`).
+**[D]** Declaration of identifiers starting with an underscore is **discouraged**
+  (even to denote private class members).
 
-**[F]** No declaration of identifiers starting with two or more underscores (e.g. `__i`).
+**[F]** declaration of identifiers starting
+  with two or more underscores (e.g. `__i`) is **forbidden**.
 
-**[F]** No identifiers with different capitalization in the same scope is
-  except (**[D]**) if the capitalization follows a physics formula.
+**[F]** Use of identifiers with different capitalization in the same scope is
+  **forbidden** except if the capitalization follows a physics formula,
+  where it is still **discouraged**. For example,
+  `double const F = G * m * M / (d*d);` is acceptable, but 
+  `double const F = G * m1 * m2 / (d*d);` should still be preferred.
 
-**[E]** Private data member names start with `f` and use CamelCase.
-  Public data members and local variables follow simple camelCase
-  (as above; e.g. `trackLength`).
+**[E]** Private data member names are **encouraged** to start with `f` and use CamelCase
+   (e.g. `double fTrackLength`). This pattern should be reserved exclusively for such private data member.
+  Conversely, public data members and local variables should instead follow the more general guideline
+  expressed above (i.e. simple camelCase, e.g. `trackLength`).
 
-[_Example_](CodingConventionsExplained.md#identifiers-example)
+
+##### Identifiers example
+
+```cpp
+for (auto i: interactions) // * `i` not clear
+                           // * `auto` obscures the type
+                           // * each object copied
+{
+  
+  for (auto p = 0; p < i.NParticles(); ++p) // `p` not clear
+  {
+      auto part = i.GetParticle(p); // inconsistent indentation
+                                    // again copy
+      /* ... useful code here ... */
+  }          // what is this brace closing?
+  
+}            // what is this brace closing?
+```
+should become:
+```cpp
+for (simb::MCTruth const& interaction: interactions)
+{
+  
+  for (int iPart = 0; iPart < interaction.NParticles(); ++iPart)
+  {
+    simb::MCParticle const& part = interaction.GetParticle(iPart);
+    
+    /* ... useful code here ... */
+    
+  } // for all particles
+  
+} // for all interactions
+```
+Names don't need to be that long, as long as they are meaningful.
 
 
 ### Summary of identifier name recommendations
@@ -125,81 +210,80 @@ A "package" is a branch of the source tree in a repository.
 
 ##  CAF-Specific Naming Conventions ########################################
 
-[_explanations_](CodingConventionsExplained.md#caf-specific-naming-conventions)
-
-**[E]** When adding branches or data products to the CAF files,
-  follow the standards for nomenclature and numbering already existing in the file
-  (e.g.: initialize empty variables to `-5`).
-
-**[R]** Use `k` and CamelCase for names for `Cuts` and `Vars` in CAFAna macros
+**[E]** When adding branches or data products to the CAF files, it is **encouraged**
+  to follow the standards for nomenclature and numbering already existing in the file. For example: initialize empty variables to `-5` when appropriate, when adding a vector of objects, add also an `int` indicating vector size, etc.
+  
+**[R]** Use of `k` and CamelCase for names for `Cuts` and `Vars` in CAFAna macros
   is **required**.
-
-**[E]** Use namespaces to tag the names/versions of the cuts.
-  For example:
-  ```cpp
-  namespace SBNworkshop2020 {
     
-    Cut kEnergy;
-    
-  } // namespace SBNworkshop2020
-  ```
-  instead of `Cut kEnergy_SBNworkshop2020`.
+**[E]**  The use of namespaces to tag the names/versions of the cuts is **encouraged**.
+ For example:
+ ```cpp
+ namespace SBNworkshop2020 {
+ 
+   Cut kEnergy;
+     
+ } // namespace SBNworkshop2020
+ ```
+ instead of `Cut kEnergy_SBNworkshop2020`.
 
-**[R]** Names of cuts and vars for a frozen analysis end
-  with a corresponding `_tag` unless defined in a namespace
-  (e.g. `kEnergyCut_2020PAC`).
+**[R]** Names of cuts and vars for a frozen analysis are **required** to end
+  with a corresponding `_tag` unless they are defined in a namespace for example: `kEnergyCut_2020PAC`.
 
-**[R]** When editing cuts and vars from frozen analyses, create a new copy
-  of the cut or var and leave the old one untouched.
+**[R]** When editing cuts and vars from frozen analyses, it is **required** that the editor create a new copy of the cut or var and leave the old one in use for future comparisons.
 
-**[E]** Store cuts and vars in sensibly corresponding scripts
-  (e.g. keep numu analysis cuts in `Cuts/NumuCuts.cxx`).
+**[E]** Storing cuts and vars in sensibly corresponding scripts i.e. keep numu analysis cuts in `Cuts/NumuCuts.cxx` and MC cuts in `Cuts/TruthCuts.cxx` etc. is **encouraged**
 
-**[E]** Remove unused CAF branches.
-
+**[E]** Removing unused CAF branches is **encouraged**.
 
 
 #   Coding   ###################################################################
 
 ##  Organization, layout and style  ########################################
 
-[_explanations_](CodingConventionsExplained.md#organization-layout-and-style)
-
 Rationale: protect the modularity of the code and control the dependency tree.
 
-**[E]** One header and source file per class.
+**[E]** One header and source file per class is **encouraged**. Exceptions apply
+  for implementation details (that may be branched out in a separate file
+  in a `Details` subdirectory, or left in the main file) and for simple
+  helper functions and classes.
 
-**[R]** Indent via spaces (2 per level **suggested**).
+**[R]**  The **required** indentation is via spaces (2 per level **suggested**).
+  Indentation must be uniform: either 2, 3 or 4 characters per level everywhere,
+  on every line of the code and for every level of indentation.
+  In case of modification of existing code violating this requirement,
+  it is **encouraged** that the indentation be standardized first
+  (with a commit solely devoted to reindentation), and it is otherwise
+  **required** that the existing indentation be exactly followed otherwise.
 
-**[D]** Avoid editor-specific directives to describe the indentation settings.
+**[D]**  The use of editor-specific directives to describe the indentation settings
+  is **discouraged** because of the editor-specificity.
 
-**[E]** Use [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style)
+**[E]** The use of [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style) is **encouraged**.
 
 
 ### Specific for CAF libraries and tools
 
-[_explanations_](CodingConventionsExplained.md#specific-for-caf-libraries-and-tools)
-
-**[R]** `CAFMaker_module.fcl` is intended to access _art_ data products,
+**[R]** `CAFMaker_module.fcl` is intended to access _art_ data products, 
   create `StandardRecord` objects, and call filling functions only. 
 
-**[R]** All computations for filling CAF branches and calculations live
-  in the corresponding `Fill<specifier>Vars.cxx` script.
+**[R]** All computations for filling CAF branches and calculations
+  are **required** to live in the corresponding `Fill<specifier>Vars.cxx` script.
 
-**[F]** No dependence to LArSoft packages in `StandardRecord`.
+**[F]** `StandardRecord` is intended to hold the structure of CAF files only.
+  Any dependence to LArSoft packages in `StandardRecord` is **forbidden**.
 
 
 ##  Source file metadata  #################################################
-
-[_explanations_](CodingConventionsExplained.md#source-file-metadata)
 
 Rationale: we want every piece of code associated to one or more authors,
 both to facilitate its use and maintenance by allowing to ask to its authors,
 and as a recognition and acknowledgement.
 
-**[R]** Report author(s) and possibly a contact mean on every source file.
+**[R]** Every source file is **required** to report in a header
+  the author(s) and possibly a contact mean (e-mail is **suggested**).
 
-**[E]** Use Doxygen format for file metadata.
+**[E]** Doxygen format is **encouraged**:
   ```cpp
   /**
    * @file   TrackBloating/TrackBloatAlg.h
@@ -208,79 +292,114 @@ and as a recognition and acknowledgement.
    */
   ```
 
-**[E]** Authors of major changes add their name (and contact).
+**[E]** Authors other than the ones in the headers are **encouraged**
+  to report their name (and contact) upon major additions (including
+  rewritten algorithm implementations) in a C++ comment;
+  it is **encouraged** that this information be added in the Doxygen
+  documentation of the function or class being modified with the same
+  `@author` syntax as for the file header.
 
 
 ##  Error handling and message logging  ###################################
-
-[_explanations_](CodingConventionsExplained.md#error-handling-and-message-logging)
 
 Rationale: users should be immediately reported errors stemming from faulty
 configuration or input. Code should prioritize reporting dangerous or dubious
 conditions over automatic mitigation.
 
-**[E]** Use `assert()` to document assumptions (e.g. `assert(!tracks.empty());`).
+
+**[E]** The liberal use of `assert()` or C++ `concept` constructs is **encouraged**
+  to document assumptions that the code is making and is not (formally)
+  verifying; e.g. a function documented to require as argument a non-empty list
+  of tracks may include as first line a `assert(!tracks.empty());`.
   
-**[E]** Use C++ exceptions to reporting errors (`cet::exception` where available)
+**[E]** C++ exceptions are **encouraged** as tools for reporting error;
+  using `cet::exception` as base of exceptions where available is **encouraged**
+  as a recognizable pattern and because of the convenience of the class.
   
-  > The guideline above is the original thought by G. Petrillo.
+  > The text above is the original thought by G. Petrillo.
   > C. Backhouse proposes the exact opposite.
   > Which practice is best for us should be considered
   > [under discussion](https://github.com/PetrilloAtWork/SBNSoftware.github.io/pull/5).
+  
+**[D]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
+  have repeatedly been found to hide essential errors.
+  
+**[E]** Messages reporting unusual conditions are **encouraged** to be routed into
+  specific streams for easy filtering; examples include the use of
+  `mf::LogError`/`mf::LogProblem` when `messagefacility` library is available,
+  or `std::cerr`.
+  
+**[E]** Within _art_ jobs, message facility library is **strongly encouraged** for message logging.
 
-**[D]** Avoid "catch-all" constructs (`catch (...)`). Really.
+**[D]** Likewise, the use of C++ output stream to console
+  (`std::cout`, `std::cerr`) is **strongly discouraged** unless the code is
+  expected to be run in an environment where message facility is not available.
+  In that case, it is still **suggested** that template output classes be used.
 
-**[E]** Route reports of unusual conditions into specific message streams
-  (use `mf::LogError`/`mf::LogProblem` where available, or `std::cerr`).
-
-**[E]** Use message facility library for message logging in _art_ code
-  (e.g. `LOG_MF_INFO()`, `mf::LogVerbatim()`, ...).
-
-**[D]** Avoid C/C++ output streams to console (`std::cout`, `std::cerr`)
-  when logging libraries are available.
-
-**[F]** Do not include `<iostream>` in header files.
-
-**[E]** With message facility (or Python `logging` module):
-
-* `DEBUG` level: messages that may help tracking bugs
+**[F]** Inclusion of `<iostream>` in a header file is **forbidden**: if output to
+  C++ standard streams is _really_ needed, it should be placed into the
+  implementation file rather than in the header.
+  
+**[E]** When using message facility (or Python `logging` module), the **encouraged**
+  usage of the channels is:
+* `DEBUG` level: messages that may help tracking bugs; but keep in mind
+  that users might be enabling debugging messages to investigate a specific
+  part of the code, and having other parts overwhelm the log 
+  will just make the log both huge and unusable. A good compromise is
+  to provide in the log enough information to roughly identify where
+  an issue is, but expecting that if further investigation is needed,
+  the investigator will have to edit and instrument the source code.
 * `INFO` level: one-time (terse) configuration messages, summary messages
-  at the end of the job, and possibly per-event or per-run summary
-  (e.g. `67 tracks produced from 1267 hits in C:0 T:1.`).
+  at the end of the job, and possibly a per-event or per-run one-line
+  summary (e.g. `67 tracks produced from 1267 hits in C:0 T:1.`).
+  Additional verbosity should be regulated via configuration parameters
+  and disabled by default.
 * `WARNING` level: _exceptional_ conditions that might compromise the result.
+  An example of message not belonging to a warning:
+  `Track point out of fiducial volume.`. Tracks are coming in and out
+  of the fiducial volume all the time, so that is not an exceptional
+  condition; an algorithm should either handle the situation in a
+  documeted way, or otherwise throw an exception.
 * `ERROR` level: _exceptional_ conditions which compromise the result.
-  Most often, the program should be interrupted.
-* `FATAL` level: avoid; the program should be interrupted.
+  Most often, rather than an error message, an exception should be throw.
+* `FATAL` level: avoid; throw an exception instead.
+
+When in _art_, if there is the risk that an error or warning message be spawn
+  too frequently, consider to route it in a different message category.
+  It is then possible for the users to set a limit so that a few messages
+  are logged, but then additional ones are progressively discarded.
 
 
 ##  Configuration and experiment-specific features  #######################
-
-[_explanations_](CodingConventionsExplained.md#configuration-and-experiment-specific-features)
 
 Rationale: code must work for all SBN experiments with the least possible changes,
 ideally limited to configuration files. The explicit lack of support for one
 of the experiments is still preferable to code that gives for that experiment
 wrong results.
 
-**[F]** No constants describing the specific detectors in SBN-shared code,
-  and avoid those in experiment-specific coed too.
+**[F]** Presence in the code of constants describing the specific detectors are
+  **strongly discouraged** in the experiment code repositories, and
+  **forbidden** in the repositories with SBN-shared code.
+  Configuration parameters, via FHiCL or other objects at class construction
+  or via member function calls, should be used instead.
   
-**[R]** Attempt to use a feature of shared code with a detector/experiment that
-  does not support it must trigger a fatal error.
+**[R]** If it proves unfeasible to support a feature for a specific experiment,
+  the attempt to use that feature with that experiment is **required**
+  to trigger a fatal error.
   
-**[E]** Use LArSoft services to gain information and functionality specific to
-  the detector if possible.
+**[E]** The use of LArSoft services is **strongly encouraged** when they provide
+  the needed features. The loss in flexibility is offset by the wider testing
+  of that code and the promise of interoperability with other experiments,
+  including the other SBN ones. Examples of this include the detector
+  geometry description and the properties and timings of the detectors.
 
 
 ##  LArSoft and _art_  ####################################################
 
-[_explanations_](CodingConventionsExplained.md#larsoft-and-art)
+**[E]** In general, the use of the practices recommended by _art_ is **encouraged**.
 
-**[E]** In general, try to adopt the practices recommended by _art_
-  if not conflicting with these guidelines.
-
-**[E]** Depending on the context, read a _art_ data product using:
-
+**[E]** The **encouraged** form for reading a data product from `art::Event` depends on
+  the case. The most common ones are:
 * if no _art_ associations are needed:
   ```cpp
   auto const& hits = event.getByLabel<std::vector<recob::Hit>>(fHitTag);
@@ -290,68 +409,150 @@ wrong results.
   auto const hitHandle = event.getValidHandle<std::vector<recob::Hit>>(fHitTag);
   std::vector<recob::Hit> const& hits = *hitHandle;
   ```
+**[E]** The use of `art::InputTag` in place of plain `std::string` for identifying
+  data products is **strongly encouraged**.
 
-**[E]** Use `art::InputTag` data type to identify data products.
+**[S]** Alternatives to `art::FindManyP` are **suggested** if possible. For example,
+  if there is the prescription that associations are ordered, like in
+  `art::Assns<recob::Cluster, recob::Hit>`, and sequential iterations are needed,
+  [`art::for_each_group_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespaceart.html#af20019c68ad469044f2ce12ed469441d) or
+  [`util::associated_groups_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/ForEachAssociatedGroup_8h.html)
+  (`lardata/Utilities/ForEachAssociatedGroup.h`) are suitable and more efficient.
+  
+**[S]** The use of `art::ProductToken` is **suggested** for simple data product reading.
 
-**[S]** Consider alternatives to `art::FindManyP` if available.
+**[E]** The use of `consumes()` calls in module constructors is **encouraged**.
 
-**[S]** Use of `art::ProductToken` for simple data product reading.
+**[E]** The use of [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
+  is **encouraged** as it adds greatly to both usability and robustness.
 
-**[E]** Declare input data products to _art_ by calling `consumes()`
-  in module constructors.
+**[E]** When data structures indexed by a plane or TPC are needed, the containers provided
+  by [`geo::GeometryCore::makePlaneData()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#a4133ed1f337780925ac5e2d7f7a2ddeb)
+  and similar are **encouraged** and should be preferred over a nested array.
 
-**[E]** Use [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
-  in place of plain `fhicl::ParameterSet` access.
+**[E]** For iteration through TPC, planes etc., the use of
+  `geo::GeometryCore::IterateXxxx()` methods
+  (e.g. [`IteratePlanes()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#ae8ca7d464c8c3e1095ca64a640094367))
+  is **encouraged**.
 
-**[E]** Use the containers provided by LArSoft `Geometry` service to store data
-  by geometry plane, TPC etc.
 
-**[E]** Use `Geometry` service methods to iterate through detector TPC, planes etc.
 
 
 ##  Language features  ####################################################
 
-[_explanations_](CodingConventionsExplained.md#language-features)
+C++ is now a relatively fast-paced standard, adding both language features
+and library components every three years.
+We are a bit behind that, in part because of the constraints from _art_ and
+of supporting two different compilers (GCC and Clang).
 
-**[E]** Motivated adoption of well-supported new features is **encouraged**;
+**[E]** In general, motivated adoption of well-supported new features is **encouraged**;
   still, if the feature is considered too obscure a clarification comment
-  is **suggested**.
+is **suggested**. An example:
+```cpp
+unsigned int n = 0;
+for (Data_t const& elem: data) {
+    (void) elem; // prevent "unused variable" warnings
+    ++n;
+}
+```
+(replace `(void) elem;` with `std::ignore = elem;` if you prefer).
 
 
 ### `auto` keyword
 
-[_explanations_](CodingConventionsExplained.md#auto-keyword)
-
-The `auto` keyword has the magic ability of decreasing with its sole
+_Rationale_: The `auto` keyword has the magic ability of decreasing with its sole
 appearance the readability of the code by a few marks.
 It should be used judiciously (and sparsely).
 
-**[D]** In general, avoid using `auto`.
+**[D]** In general, the use of `auto` is **discouraged**
 
-**[S]** As an exception, use `auto` keyword when the underlying type is _obvious_
+**[S]** The `auto` keyword can be safely used when the underlying type is _obvious_
   from the code in the same line or the previous one.
   In doubt, spell the type out instead.
 
-[_examples_](CodingConventionsExplained.md#auto-examples)
+
+##### `auto` examples
+
+* well known standard functions:
+
+  ```cpp
+  std::vector<int> values = getValues();
+  auto iValue = values.begin(), vend = values.end();
+  ```
+  and also:
+  ```cpp
+  auto vertices = std::make_unique<std::vector<double>>();
+  ```
+  In the last case, `std::make_unique()` is a
+  [standard C++ function](https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique)
+  returning an instance of `std::unique_ptr` whose template type
+  is spelled out in the same line.
+* statements that already spell out the type elsewhere:
+  ```cpp
+  auto const& vertices
+    = event.getByLabel<std::vector<recob::Vertex>>(vertexTag);
+  ```
+  In this case `art::Event::getByLabel()` (which should be reasonably
+  well known anyway) returns the type written in its template argument.
+* in lambda types, of course, `auto` is acceptable when no other option is available:
+  ```cpp
+  auto elem = [&data](std::size_t i){ return data[i]; };
+  auto combine = [](auto a, auto b){ return a + b; };
+  ```
+  but (usually) not:
+  ```cpp
+  auto elem = [&data](auto i){ return data[i]; };
+  ```
+  if the type of `i` is known in advance.
+* returning an implementation detail object with a standard interface
+  is an acceptable use of `auto` provided that the interface is well documented;
+  but using a stable type offering that interface is still **endorsed**.
+  For example (as a class member function):
+  ```.cpp
+  /**
+   * @brief Returns the sequence of particles.
+   * 
+   * The return value is a object that can be iterated in a range-for loop
+   * and supports `begin()`, `end()`, `size()` and `empty()` calls.
+   * Example of usage:
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.cpp}
+   * for (recob::MCParticle const& particle: filter.getParticles())
+   * { ... }
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  auto getParticles() const;
+  ```
 
 
 ### Namespaces
 
-[_explanations_](CodingConventionsExplained.md#namespaces)
+_Rationale_: namespaces are a tool to provide context to "foreign" identifiers
+(cf. `Track` vs. `recob::Track`). Language rules automatically allow omitting
+them in many situations, and they actually increase the understandability of
+the code. Shortcuts to omit them should be considered critically because they
+make it harder for non-experts to interpret the code and increase the chances
+of unexpected behaviour.
 
-**[D]** Avoid importing a namespace (e.g. `using namespace std;`), especially
-  in global scope.
+**[D]** Importing a namespace (e.g. `using namespace std;`) is *discouraged*;
+  it is *strongly discouraged* in global scope;
+  an exception is namespaces containing exclusively
+  [user-defined literal operators](https://en.cppreference.com/w/cpp/language/user_literal)
+  (e.g. `using namespace std::string_literals`);
 
-**[F]** Never ever use `using namespace` directives in global scope of header files.
+**[F]** `using namespace` directives are nevertheless always thoroughly
+  **forbidden** in global scope of header files.
+  You may import specific symbols at local scope (i.e. within the body of your `class`)
+  if absolutely necessary for readability
+  (`using Iterator_t = std::vector<std::vector<std::pair<int, int>>>::const_iterator;`)
+  or for functionality (e.g. `using std::begin, std::end;`).
 
-**[E]** Consider using a namespace to enclose a large self-contained group of
-  utilities and to enclose implementation details.
+**[E]** In header files, it is **encouraged** that functions and variables
+  that are considered implementation details be enclosed in a namespace;
+  a standard choice is a specific namespace for that functionality,
+  the namespace `details`, or both nested (e.g. `sbn::details::vtxStubs`).
+  A similar recommendation still holds for code in implementation files
+  (non-header).
 
-
->
-> Here Gianluca collapsed while editing.
-> The following text will be reduce to a summary like the one above was.
->
 
 ### Variable and parameters
 
