@@ -348,272 +348,76 @@ It should be used judiciously (and sparsely).
   utilities and to enclose implementation details.
 
 
->
-> Here Gianluca collapsed while editing.
-> The following text will be reduce to a summary like the one above was.
->
+### Variables and parameters
 
-### Variable and parameters
+[_explanations_](CodingConventionsExplained.md#variables-and-parameters)
 
-**[R]** It is **required** that variables be defined
-  in the lowest scope they are needed in,
-  and as close as where they are needed as possible. For example:
-  ```cpp
-  std::vector<std::vector<int>> allProtons;
-  std::vector<int> allInitialStateCounts; // BAD: counters should be unsigned
-  std::vector<int> protons;               // BAD: not needed in this scope
-  int nInitialState;                      // BAD: not initialized
-                                          // BAD: a counter should be unsigned
-                                          // BAD: not needed in this scope
-  for (simb::MCTruth truth: mcTruthVec) { // BAD: unnecessary copy
-    protons.clear();
-    nInitialState = 0;
-    for (int iPart = 0; iPart < truth.NParticles(); ++iPart) {
-      if (truth.GetParticle(iPart).StatusCode() != 0) { // BAD: cryptic code
-                                                        // BAD: redundant nesting
-        ++nInitialState;
-        if (truth.GetParticle(iPart).PdgCode() == 2212) { // redundant nesting?
-                                                          // BAD: repetitive code
-          protons.push_back(truth.GetParticle(iPart).TrackId());
-        } // if proton
-      } // if final state particle
-    } // for all particles
-    allProtons.push_back(protons); // BAD: copy of a vector
-    allInitialStateCounts.push_back(nInitialState);
-  } // for each truth
-  ```
-  is better served as:
-  ```cpp
-  std::vector<std::vector<int>> allProtons;
-  std::vector<unsigned int> allInitialStateCounts;
-  for (simb::MCTruth const& truth: mcTruthVec) {
-    std::vector<int> protons;
-    unsigned int nInitialState = 0;
-    for (int iPart = 0; iPart < truth.NParticles(); ++iPart) {
-      simb::MCParticle const& part = truth.GetParticle(iPart);
-      if (part.StatusCode() == 0) continue; // not a primary
-      ++nInitialState;
-      if (part.PdgCode() != 2212) continue;
-      protons.push_back(part.TrackId());
-    } // for all particles
-    allProtons.push_back(std::move(protons));
-    allInitialStateCounts.push_back(nInitialState);
-  } // for each truth
-  ```
-  (here `iPart` is declared `int` rather than `std::size_t`
-  because that is the type (erroneously) used by `simb::MCTruth` interface).
+**[R]** Define variables in the lowest scope they are needed in,
+  and as close as where they are needed as possible
 
-**[S]** The use of a single collection of structured elements is **suggested**
-  over multiple collections of simple elements,
-  when no other performance issue is involved.
-  For example:
-  ```cpp
-  std::vector<double> time(MaxHits, 0.0);
-  std::vector<float> charge(MaxHits, -5.f);
-  for (recob::Hit const& hit: hits) {
-    std::size_t const id = hitToID(hit);
-    time.at(id) = hit.PeakTime();
-    charge.at(id) = hit.Integral();
-  }
-  ```
-  is better written as:
-  ```cpp
-  struct HitInfo_t {
-    double time = 0.0;
-    float charge = -5.f;
-  };
-  std::vector<HitInfo_t> hitInfo(MaxHits);
-  for (recob::Hit const& hit: hits)
-    hitInfo.at(hitToID(hit)) = { hit.PeakTime(), hit.Integral() };
-  ```
-  This improves the ahderence of the code to the concepts it represents
-  (the relation of times and charges).
-  It is easier to pass to other functions, and the result is easier
-  to expand with more information (e.g. hit amplitude).
-  It is less error-prone (it prevents mismatching between charge and time elements),
-  although the constructor syntax in the example has its own risks, relying
-  of a known order for `HitInfo_t` data members
-  (C++20 will allow naming each element to prevent this mismatch).
-  It may also be more efficient (here just a single allocation rather than two),
-  but it may prevent speed optimization too.
-  
-
+**[S]** Prefer a single collection of structured elements over multiple collections
+  of simple elements when no other performance issue is involved.
 
 
 ### C++ best practices
 
-**[F]** Pointer variables _never_ own their memory.
-  The use of `new` operator is **forbidden**.
-  Data arrays should be stored in collections like `std::vector`.
-  Dynamic memory should be allocated via `std::make_unique()`.
-  In case of interface with external libraries which do not follow this rule
-  and return a pointer owning memory, if that memory is requested to be freed
-  with `delete`, immediately wrapping it into a `std::unique_ptr`
-  is **encouraged** and encapsulation in a custom handle object **suggested**.
+[_explanations_](CodingConventionsExplained.md#c-best-practices)
 
-**[E]** More in general, resources that need to be acquired and eventually released
-  are **encouraged** to be managed by a specific object following the
-  [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) pattern,
-  that is an object that automatically books the resource on construction
-  and releases on destruction.
-  
-**[E]** It is **encouraged** that the most information be given
-  to the compiler pinning down the intended features of the code. That includes
-  constantness (next point), attributes (e.g. `[[fallback]]`), the `override` keyword.
-  
-**[R]** It is **required** that the type and constantness of the variables
-  be reflecting its quantity. For example, an item count should be an `unsigned int`,
-  an index of STL array or vector should be `std::size_t`
-  (because that is the native type of `std::vector::operator[]` parameter),
-  or `std::ptrdiff_t` or, better yet, a [`gsl::index`](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslutil-utilities) (the type of indices is a known C++ issue).
-  
-**[E]** It is **encouraged** that "variables" that are not expected to be changed
-  be _always_ declared constant, so that accidental changes are spotted by
-  the compiler (e.g. `int const nParticles = mcTruth.NParticles();`).
-  
-**[E]** The use of temporary variables is **strongly encouraged** to avoid code repetitions
-  that are both questionable in terms of performance
-  (although compilers may be "smart" enough to figure it out)
-  and a maintenance liability.
-  The strong recommendation still holds, even stronger, when adding 
-  lines to existing code which does not support this pattern yet.
-  For example:
-  ```cpp
-  for (recob::Hit const& hit: hits) {
-    ++n;
-    // BAD: repetition of complex code
-    x += geom.Wire(hit.WireID()).GetCenter<geo::Point_t>().X();
-    y += geom.Wire(hit.WireID()).GetCenter<geo::Point_t>().Y();
-    z += geom.Wire(hit.WireID()).GetCenter<geo::Point_t>().Z();
-  }
-  ```
-  should be:
-  ```cpp
-  for (recob::Hit const& hit: hits) {
-    geo::Point_t const& wireCenter
-      = geom.Wire(hit.WireID()).GetCenter<geo::Point_t>();
-    ++n;
-    x += wireCenter.X();
-    y += wireCenter.Y();
-    z += wireCenter.Z();
-  }
-  ```
-  and likewise
-  ```cpp
-  protonRecoLen = sr.reco.trk[iTrk].len;
-  
-  protonTrueE = sr.reco.trk[iTrk].truth.p.startE; // BAD: repetition of complex code
-  protonTrueLen = sr.reco.trk[iTrk].truth.p.length;
-  protonTrueContained = sr.reco.trk[iTrk].truth.p.contained;
-  ```
-  should be:
-  ```cpp
-  caf::SRTrack const& track = sr.reco.trk[iTrk];
-  protonRecoLen = part.len;
-  
-  caf::SRTrueParticle const& truePart = track.truth.p;
-  protonTrueE = truePart.startE;
-  protonTrueLen = truePart.length;
-  protonTrueContained = truePart.contained;
-  ```
 
-**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
-  except when interfacing with broken external library code,
-  in which case a large and thorough comment is required.
+**[F]** Pointer variables _never_ own their memory. Do not use `new` operator.
 
-**[D]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
-  interfaces without the need for this type of cast.
-  Plain C-style casts are also **discouraged** in favor of the more expressive
-  (and easier to recognise and understand) `static_cast`.
+**[E]** Manage a resource by using a wrapping object that follows
+  [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) pattern
+  ([_examples_](CodingConventionsExplained.md#examples-of-resource-manager-objects)).
+
+**[E]** Profusely use decorations explaining your intentions to the compiler
+  (e.g. `const` qualifier, `[[fallback]]` annotation on `switch`, `override` methods).
   
-**[F]** The use of labels and `goto` statement are **forbidden** except for the
-  specific purpose of jumping out of deeply-nested loops
-  when all other alternatives have been considered and judged worse.
+**[R]** Use the most appropriate and descriptive type for each variable and quantity
+  (e.g. use an unsigned type for a counter
+  — many examples [here](CodingConventionsExplained.md#examples-of-c-best-practices) —,
+  use `const` for all variables that are not supposed to be modified, etc.).
 
-**[S]** Initialization syntax with braces is **suggested** as it is the most universally
-  appliable (a famous exception is the initialization of a `std::vector` of
-  numbers with its size, which ends up being ambiguous:
-  `std::vector{ 3, 1 }` contains two elements, `3` and `1`,
-  while `std::vector(3, 1)` containts three elements, all set to `1`;
-  likewise, `std::vector{ 3 }` contains one element, `3`,
-  while `std::vector(3)` contains three elements initialized to `0`).
+**[E]** Qualify as `const` _all_ "variables" that are not expected to changed value.
+  
+**[E]** Use temporary variables to avoid code repetitions.
 
-**[R]** Logic operators are **required** to be spelled symbolically
-  (`&&`, `||`, `!`) rather than in word (`and`, `or`, `not`),
-  as it is a better known syntax. Digraphs and trigraphs are **forbidden**.
+**[F]** Do not use `const_cast` nor `reinterpret_cast`.
 
+**[D]** Avoid `dynamic_cast`.
+  
+**[F]** Avoid `goto` statements.
+
+**[S]** Consider using braces as initialization syntax
+  (e.g. `DataEntry data { 5.0, 7.0 };`).
+
+**[R]** Do not use word-spelling of logical operators
+  (use `&&`, `||`, `!` rather than `and`, `or`, `not`).
+
+
+[_examples_](CodingConventionsExplained.md#examples-of-c-best-practices)
 
 
 #### References vs. pointers
 
-Rationale: references and pointers share the same performance, but have different
-features that make them distinct.
+[_explanations_](CodingConventionsExplained.md#references-vs-pointers)
 
-* characteristics of a reference compared to a pointer are that they
-    1. can't be copied or reassigned to a different object
-    2. can't point to the null memory address (`nullptr`)
+_Rationale_: references and pointers share the same performance, but have different
+features that make them appropriate for different usage patterns.
 
-**[E]** As consequence, use of pointers is **endorsed** only if a variable is allowed to point
-  to "no object" (`nullptr`), or if reassignments are required
-  (note that a class holding a reference data member becomes itself non-copiable —
-  and non-moveable — by default).
-  For example:
-  ```cpp
-  assert(!sr.reco.trk.empty());
-  auto iTrack = sr.reco.trk.begin();
-  auto const tend = sr.reco.trk.end(), 
-  caf::SRTrack const* shortestTrack = &*iTrack;
-  for (; iTrack != tend; ++iTrack) {
-    if (iTrack->len < shortestTrack->len) shortestTrack = &*iTrack;
-  }
-  ```
-  (reassignment required). Or:
-  ```cpp
-  struct TrackQuality {
-      
-      QualityParams_t const fParams;
-      
-      TrackQuality(QualityParams_t params): fParams(std::move(params)) {}
-      
-      bool isGood(caf::SRTrack const& track, QualityParams const* params = nullptr) const
-        { return isGoodAccordingTo(track, params? *params: fParams); }
-      
-      static bool isGoodAccordingTo
-        (caf::SRTrack const& track, QualityParams const& params);
-  };
-  ```
-  Here `TrackQuality::isGood()` can choose between using its own parameters set
-  or one passed by the caller, so its `params` argument is supported to be `nullptr`.
-  The static function `TrackQuality::isGoodAccordingTo()` on the other end requires
-  a `params` object, so its interface does not allow it to be `nullptr`.
-  It should be noted that a better implementation for the above is to have two
-  overloads of `isGood()`: `isGood(caf::SRTrack const& track) const`
-  and `isGood(caf::SRTrack const& track, QualityParams const&) const`,
-  and that the concept of an optional parameter is properly rendered by the
-  aptly named [`std::optional`](https://en.cppreference.com/w/cpp/utility/optional) data type.
+**[E]** Choose a pointer type if a variable is allowed to point to "no object"
+  (`nullptr`), or if reassignments are required.
 
-**[S]** Mixed use is also **suggested** when suitable for the use case.
-  For example, we may want an object to hold a reference to an object, but to be copiable.
-  In this case, a possible pattern is:
-  ```cpp
-  class Matcher {
-      geo::GeometryCore const* fGeom;
-      
-          public:
-      Matcher(geo::GeometryCore const& geom): fGeom(&geom) {}
-      // ...
-  };
-  ```
-  which forces the caller to provide an object, but it stores it as pointer so that
-  it stays copiable and moveable. Again, a copiable reference-like object
-  ([`std::reference_wrapper`](https://en.cppreference.com/w/cpp/utility/functional/reference_wrapper)) is also provided
-  by [`std::ref()` and `std::cref()`](https://en.cppreference.com/w/cpp/utility/functional/ref)
-  (defined in `<functional>` header).
+**[S]** In class definitions, consider mixed use to gain the safety of a
+  reference and the flexibility of a pointer (e.g. presenting a reference
+  in class interface but internally storing a pointer).
 
 
 #### Memory usage and avoiding unnecessary copy of data
 
-Rationale: copying large chunks of data has deleterious effects,
+[_explanations_](CodingConventionsExplained.md#memory-usage-and-avoiding-unnecessary-copy-of-data)
+
+_Rationale_: copying large chunks of data has deleterious effects,
 and has been a common cause of excessive use of memory
 (for example, a temporary copy of a 1-GB data structure may be
 almost negligible in the overall memory balance, but it may make
@@ -621,302 +425,71 @@ a remote job cross a 2 GB memory hard limit and have the job killed).
 There are well known patterns that prevent unnecessary copies.
 
 
-**[E]** It is **required** to avoid copies of return values. For example:
-  ```cpp
-  auto digits = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag); // BAD
-  ```
-  should become
-  ```cpp
-  auto const& digits
-    = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag);
-  ```
-  to avoid copying the returned vector.
+**[E]** Prevent unnecessary copy of values returned by functions
+  (e.g. `auto const& digits = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag);`).
 
-**[R]** Function arguments of large non-trivial types are **required** to be
-  declared as constant references
-  (with "large" being indicatively larger than 32 bytes,
-  or any involving dynamic memory allocation):
-  ```cpp
-  class HitProcessor {
-  
-    std::vector<recob::Hit> fRefHits; ///< Local copy of reference hits.
-    
-        public:
-    
-    /// Constructor: starts from initial hits.
-    HitProcessor(std::vector<recob::Hit> initialHits);
-    
-    /// Returns the collection of compined hits.
-    // BAD: will always copy the return value:
-    std::vector<recob::Hit> combinedHits() const { return fRefHits; }
-    
-    /// Combines the specified `hits` with the existing ones.
-    // BAD: will always copy the argument `hit`:
-    void combineWith(std::vector<recob::Hit> hits);
-    
-  };
-  ```
-  should become:
-  ```cpp
-  class HitProcessor {
-  
-    std::vector<recob::Hit> fRefHits; ///< Local copy of reference hits.
-    
-        public:
-    /// Constructor: starts from initial hits.
-    HitProcessor(std::vector<recob::Hit> initialHits);
-    
-    /// Returns the collection of compined hits.
-    std::vector<recob::Hit> const& combinedHits() const { return fRefHits; }
-    
-    /// Combines the specified `hits` with the existing ones.
-    void combineWith(std::vector<recob::Hit> const& hits);
-    
-  }; 
-  ```
-  (the constructor is explained in a later point).
-  Most typically the use of `combinedHits()` would be along the pattern:
-  ```cpp
-  std::vector<recob::Hit> const& combHits = hitProc.combinedHits();
-  ```
-  The bad example, returning the vector by value, will _always_ copy the hits.
-  Likewise, in the bad example the argument of `combineWith()`
-  will be always copied when calling that method, while in the good one
-  it will not be copied by the method call (the method implementation
-  may still copy it though).
+**[R]** Declare function arguments of large non-trivial types as constant references.
 
-**[S]** The **suggested** pattern for initialization of large data member from
-  function arguments (and constructor's, where it is **endorsed**)
-  is to copy the value into the function parameter, and then move it.
-  The implementation of the constructor
-  in the previous example following that pattern would be:
-  ```cpp
-  HitProcessor::HitProcessor(std::vector<recob::Hit> initialHits)
-    : fRefHits(std::move(initialHits)) {}
-  ```
-  (`std::move()` is defined in `<utility>` header).
-  This usually guarantees optimal performance even when
-  the calling code pass a temporary vector
-  (e.g. `HitProcessor hitProc { generateHits() };`).
-  If in doubt, though, fall back to the constant reference rule above.
+**[S]** Consider, as pattern for initialization of large data members from
+  function arguments, to pass the argument by value and then `std::move()` that value.
 
-**[E]** Allocation of the memory for a data structure in advance is **encouraged** 
-  if its _final_ size is known. For example:
-  ```cpp
-  std::vector<recob::Hit> normalizedHits;
-  // BAD: many reallocations in case of large number of hits
-  for (recob::Hit const& hit: hits)
-      normalizedHits.push_back(normalize(hit));
-  ```
-  would be better as:
-  ```cpp
-  std::vector<recob::Hit> normalizedHits;
-  normalizedHits.reserve(hits.size());
-  for (recob::Hit const& hit: hits)
-      normalizedHits.push_back(normalize(hit));
-  ```
-  Otherwise, each time `normalizedHits` needs to be expanded,
-  say from size _M_ to size _N_, a full copy of _M_ elements and
-  the presence of _M_+_N_ elements at the same time are required.
-  
+**[E]** When the final size of a collection is known in advance,
+  allocate its memory at once.
+
 
 #### Checked vs. unchecked element access (i.e. `at()` vs. `[]`)
 
-Rationale: data collection objects like `std::vector` offer both a checked access
-(`data.at(index)`) which throws an exception if the requested element
-is not included in the collection, and an unchecked one (`data[index]`)
-whose behaviour is undefined in such case.
-Most often, the unckecked access should be preferred because faster,
-but it is important to avoid falling into the "undefined behaviour".
-Conversely, the choice of one over the other conveys the underlining
+[_explanations_](CodingConventionsExplained.md#checked-vs-unchecked-element-access-ie-at-vs-)
+
+_Rationale_: most often, the unchecked access should be preferred because faster,
+but it is important to avoid indices out of range.
+Conversely, the choice of one method over the other reflects the underlining
 consideration.
 
-**[E]** Unchecked access is **encouraged** if the element is already known to be
-  included; this can be achieved by a specific check. For example:
-  ```cpp
-  for (std::size_t i = 0; i < data.size(); ++i) {
-      float const charge
-        = processData(charges.at(i), data.at(i)); // BAD: `i` in `data` by construction
-      if (charge > 0.0) charges.at(i) = charge;   // BAD: redundant check
-  }
-  ```
-  should be
-  ```cpp
-  if (charges.size() != data.size()) {
-      throw cet::exception("") << "Inconsistent charges ("
-        << charges.size() << " vs. " << data.size() << " expected)\n";
-  }
-  for (std::size_t i = 0; i < data.size(); ++i) {
-      float const charge = processData(charges[i], data[i]);
-      if (charge > 0.0) charges[i] = charge;
-  }
-  ```
-**[E]** Unchecked access is **encouraged** also when the element is expected
-  by protocol to be present, in which case documenting the expectation
-  (e.g. with an assertion) is also **encouraged**.
-  If that applies to `charges` of the example above, it may become:
-  ```cpp
-  assert(charges.size() == data.size());
-  for (std::size_t i = 0; i < data.size(); ++i) {
-      double const charge = processData(charges[i], data[i]);
-      if (charge > 0.0) charges[i] = charge;
-  }
-  ```
+**[E]** Use unchecked access when the element is already known to be in range
+
+**[E]** Use unchecked access also when the element is expected and requested
+  to be present, in which case request should be documented.
 
 
 #### User class design
 
-**[D]** As a consequence of the resource management pattern described above ("RAII"),
-  the use of destructors in classes is **strongly discouraged**;
-  they should be unnecessary and omitted entirely
-  (except for a polymorphic base class, where the definition should always be
-  `virtual ~BaseClass() = default;`).
+[_explanations_](CodingConventionsExplained.md#user-class-design)
 
-**[S]** For objects that will exist in large collections, and especially for data structures,
-   an ordering of data members from the largest to the smallest is **suggested**,
-  to avoid waste of memory due to data alignment. For example:
-  ```cpp
-  struct TrackData { // BAD data alignment
-    bool contained { false }; /// If `true`, track is fully contained.
-    double energy { 0.0 };    /// Estimated energy [GeV]
-    unsigned int nHits;       /// Number of hits along the track from all planes.
-  }; // TrackData
-  ```
-  is likely to take 24 bytes, while reordering it as
-  ```cpp
-  struct TrackData {
-    double energy { 0.0 };    /// Estimated energy [GeV]
-    unsigned int nHits;       /// Number of hits along the track from all planes.
-    bool contained { false }; /// If `true`, track is fully contained.
-  }; // TrackData
-  ```
-  would reduce the size to 16 bytes.
+**[D]** You should not _need_ destructors in your classes.
 
-**[E]** The initialization of configuration data members in the constructor
-  initializer list is **encouraged**, as is their constantness
-  if the class does not need to be copyable.
-  For example:
-  ```cpp
-  class EnergyEstimatorAlg {
-  
-    double fChargeThreshold; ///< Minimum charge for a hit to be included.
-  
-      public:
-  
-    EnergyEstimatorAlg(double chargeThr);
-    
-    // ...
-  };
-  ```
-  should rather be:
-  ```cpp
-  class EnergyEstimatorAlg {
-  
-    double const fChargeThreshold; ///< Minimum charge for a hit to be included.
-  
-      public:
-  
-    EnergyEstimatorAlg(double chargeThr);
-    
-    // ...
-  };
-  ```
-**[R]** It is **required** that all member functions that do not modify the object
-  be declared `const`.
-  It is also recommended that class methods changing the class data members
-  be factored so that the parts that do not change that data be on their own
-  (`const`) member function.
+**[S]** For objects that will exist in large collections,
+  and especially for data structures, consider ordering data members
+  from the largest to the smallest to avoid waste of memory from data alignment.
 
-**[E]** The assignment of a initialization value to all non-`const` data members
-  in their declaration in the class is **encouraged**. For example:
-  ```cpp
-  struct FilterEfficiency {
-    unsigned int fTotal;  ///< Number of events processed by the filter.
-    unsigned int fPassed; ///< Number of events passed by the filter.
-    
-    FilterEfficiency(): fTotal(0), fPassed(0) {}
-  };
-  ```
-  would be instead:
-  ```cpp
-  struct FilterEfficiency {
-    unsigned int fTotal { 0 };  ///< Number of events processed by the filter.
-    unsigned int fPassed { 0 }; ///< Number of events passed by the filter.
-  };
-  ```
-  (in this simple case, the constructor can be omitted; in many other cases,
-  it can at least be "defaulted": `FilterEfficiency() = default;`).
-  This reduces the consequences of forgetting the initialization of a data member,
-  for example when adding a new one to the class and there are many constructors.
+**[E]** Initialize configuration data members in the constructor initializer list
+  (and mark them `const` if feasible).
 
-**[E]** The assignment of a known value to all data members of a class is **encouraged**. For example:
-  ```cpp
-  struct Data {
-    short ADC[16]; // BAD (probably): not initialized
-    int channel;   // BAD: not initialized
-  };
-  ```
-  should probably be:
-  ```cpp
-  struct Data {
-    short ADC[16] {}; // all initialized to `0`
-    int channel { InvalidChannel };
-  };
-  ```
-  unless there are good reasons not to initialize ADC counts.
+**[R]** Mark all member functions that do not modify the object as `const`,
+  and consider factoring out the parts of non-`const` methods which do not
+  modify the object as new `const` methods.
 
-**[D]** Empty constructors are **discouraged** and constructors with empty
-  bodies *and* initialization list **forbidden**. For example:
-  ```cpp
-  struct FilterEfficiency {
-    unsigned int fTotal;
-    unsigned int fPassed;
-    
-    FilterEfficiency() {} // BAD: no gain and prevents data initialization
-  };
-  ```
-  will make `fTotal` and `fPassed` uninitialised.
-  The class should not have any default constructor, and it should
-  initialize its members explicitly as shown in the previous point
-  unless it is a *documented* intention to have them uninitialized.
+**[E]** Initialize all non-`const` data members in their declaration in the class.
 
-**[E]** Moderate use of delegated constructors is **encouraged** for maintainability.
-  For example:
-  ```cpp
-  struct WireInfo {
-  
-    geo::WireID const fWireID;
-    raw::ChannelID_t const fChannel { raw::InvalidChannelID };
-    bool fHasHits { false };
-    
-    WireInfo() = default;
-    WireInfo(geo::WireID wireID, raw::ChannelID_t channel);
-    
-    WireInfo(recob::Hit const& hit)
-        : WireInfo(hit.WireID(), hit.Channel())
-        { fHasHits = true; }
-    
-  };
-  ```
+**[E]** All data members of a class should be assigned a known value on construction.
 
-**[S]** For a newly defined data structure, the use of `struct` is **suggested**
-  if there is no "invariant" to be preserved (e.g. for a list of points:
-  `struct { std::vector<geo::Point_t> points; };`, any point is good),
-  of `class` otherwise (e.g. a list of points sorted by _z_ coordinate,
-  `class { std::vector<geo::Point_t> fPoints; /* ... */};` and then the
-  interface to manage it with it staying sorted).
+**[F]** Never write empty constructors.
 
+**[E]** Consider using delegated constructors to improve maintainability.
+
+**[S]** Consider declaring a type a `class` if there is an "invariant"
+  (i.e. constraints on the data members) to be preserved, `struct` otherwise.
 
 
 ##  Quantity types and their units  #######################################
 
-Rationale: clarity and predictability are essential when interpreting data
+_Rationale_: clarity and predictability are essential when interpreting data
 values, and relying heavily on conventions facilitate it.
 
 
 ### Units
 
-**[R]** The **required** units for data quantities are described in
+**[R]** Mandatory units for data quantities are described in
 [`StandardRecord` documentation in `sbnanaobj`](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/README.md).
 Existing exceptions should be treated as a bug rather than a precedent.
 
@@ -925,16 +498,19 @@ Existing exceptions should be treated as a bug rather than a precedent.
 
 **[E]** The following C++ data types are encouraged for storage of some quantities:
 
+| Unit type                                       | data type  |
+| ----------------------------------------------- | ---------- | 
+| momentum, energy, energy density                | `float`    |
+| charge, charge density                          | `float`    |
+| space coordinate <br> (added precision reduces rounding errors of geometry calculations)  | `double`   |
+| time, relative to a reference within the event  | `double`   |
+| absolute time <br>(achieves _(barely)_ nanosecond precision on UTC times)    | `long double`   |
 
 
-| Unit type | data type |
-| -------- | -------- | 
-| momentum, energy, energy density     | `float`  |
-| charge, charge density    | `float`  |
-| space coordinate <br> (added precision reduces rounding errors of geometry calculations)  | `double`  |
-| time, relative to a reference within the event  | `double`  |
-| absolute time <br>(achieves _(barely)_ nanosecond precision on UTC times)    | `long double`  |
-
+>
+> Here Gianluca collapsed while editing.
+> The following text will be reduce to a summary like the one above was.
+>
 
 
 
@@ -943,35 +519,30 @@ Existing exceptions should be treated as a bug rather than a precedent.
 
 ##  Functionality documentation  ##########################################
 
-Rationale: plain-English documentation should allow the use of an algorithm
+[_explanations_](CodingConventionsExplained.md#functionality-documentation)
+
+_Rationale_: plain-English documentation should allow the use of an algorithm
 without falling back to interpret the code, and should especially include
 the assumptions and considerations that are relevant to the users and are
 not expressed by the code.
 
-**[E]** **Encouraged** for algorithm classes and function to include also
+**[E]** Algorithm classes and function should include also
 
 1. description of their function
-       (e.g. "applies proton ID algorithm based on track range")
 2. explanation of the input format
-       (e.g. "`recob::Track` objects with track fit")
- 3. explanation of the requirements and assumptions on the input
-       (e.g. "tracks are expected to have been corrected for space charge
-       effects")
+3. explanation of the requirements and assumptions on the input
 4. an explanation of the features of the output
-       (e.g. "a list of `ana::ParticleID` objects is returned, one for each
-       input track, in the same order; if the algorithm could not be applied,
-       the track is assigned a negative score value")
 5. plus a reference to external documentation (e.g. SBN DocDB document)
-       describing the physics of it when it applies
 
-**[R]** **Encouraged** inline documentation in Doxygen format, attached to the object
-  being described (for example, to a `class` definition instead than to the file
-  where the definition is stored).
+**[R]** Add documentation in the source code, in Doxygen format,
+  attached to the object being described.
 
 
 ##  Tracking of changes  ##################################################
 
-Rationale: discovery of major changes to the functionality of the code or
+[_explanations_](CodingConventionsExplained.md#tracking-of-changes)
+
+_Rationale_: discovery of major changes to the functionality of the code or
 "relevant" changes of working parameters should be achievable
 without a systematic comparison the different versions of the code.
 
@@ -981,32 +552,19 @@ without a systematic comparison the different versions of the code.
 
 **[R]** Authors are **required** to update the `changes.md` log when...
 
-* A new algorithm is added: mentioning the purpose of the new feature, e.g.
-      ```
-      [20210805] New algorithm `BloatTracks` available.
-      ```
-* A change in parameters that may affect future results:
-      ```
-      [20210804] Changed hit finding threshold for `GausHit` (see issue #235)
-      ```
-* A change makes existing samples unreadable or misinterpreted:
-      ```
-      [20210825] **BREAKING CHANGE** From now on all distances are returned in inches.
-      ```
- 
+* ... a new algorithm is added: mentioning the purpose of the new feature.
+* ... a change in parameters that may affect future results.
+* ... a change makes existing samples unreadable or misinterpreted.
+
+
 **[R]** In the last case, the change is defined as breaking and the entry is
-      **required** to explicitly state that with a standard tag
-      (`**BREAKING CHANGE**` is the recommendation).
+  **required** to explicitly state that with a standard tag
+  (`**BREAKING CHANGE**` is the recommendation).
 
-**[S]**  A simple format like in the examples above is suggested, given that the
-  purpose of this file is as a fast lookup to discover where to find additional
-  information. Information about the author of the change can be tracked down
-  via GIT so a reference is just **suggested**. 
+**[S]** Consider keeping the format of the change log simple.
 
-**[E]** Information about the release
-  version, especially for breaking change, is **strongly encouraged** but
-  it is the duty of the release manager rather than of the author, as it is
-  the compilation of a overview of the breaking changes in time.
+**[E]** The information about the release version of a change,
+  should be added by the release manager.
 
 
 #   Linking and building  #####################################################
@@ -1014,56 +572,25 @@ without a systematic comparison the different versions of the code.
 
 ##  Build diagnostics ("warnings")  #######################################
 
-Rationale: compilation warnings have proven to be a powerful tool in early
+[_explanations_](CodingConventionsExplained.md#build-diagnostics-warnings)
+
+_Rationale_: compilation warnings have proven to be a powerful tool in early
 detection of program mistakes. Experience shows that a single ignored warning
 both creates a habit, and makes it harder to spot additional ones.
 
-**[R]**  Building warnings must be addressed. This is a **requirement**, although
-reviewers are not required to take the extra steps to verify it (i.e. checking
-the compilation output from the automatic build or downloading and building it
-themselves).
+**[R]** Building warnings must be addressed.
 
-**[R]**  The build system is set to give a medium level of diagnostics, and to treat
-  all of them as errors, except for the deprecation one, which is supposed to
-  allow a bit of time to maintainers to cope with interface changes:
-  compilation will fail in the presence of diagnostics messages. Successfully
-  completing a compilation in general makes the code compilant with this
-  requirement.
-  
-**[E]**  If the compiler reports as problematic an intended behaviour, it is
-  **strongly encouraged** that the code be reviewed with other people to
-  identify whether the report is correct (hint: it usually is). If the review
-  concludes the diagnostic message is spurious, 
+**[R]** The build system must be set to give a medium level of diagnostics,
+  and to treat all of them as errors, except for the deprecation one.
 
-**[S]** It is exceptionally allowed to "acknowledge" a diagnostic message without
-  removing its cause, for example in case of compiler bugs. 
-  
-**[R]** In that case the
-  **required** approach is to use `#pragma` directives specific to the
-  diagnostics (that may be complicated by dependency on the compiler, e.g.
-  Clang vs. GCC) and, in case of compiler bug, the fencing of the workaround
-  in `#if` preprocessor directives that pin down the version of the buggy
-  compiler; e.g.
-  ```cpp
-  #if defined(__clang__) && (__clang_major__ <= 7)
-  # pragma clang diagnostic push
-  # pragma clang diagnostic ignored "-Wunused-variable"
-  #endif
-  // ...
-  #if defined(__clang__) && (__clang_major__ <= 7)
-  # pragma clang diagnostic pop
-  #endif
-  ```
-  In this example, though, if the variable detected as unused is _really_
-  unused, and for some reason its definition is still desired, the correct
-  acknowledgement is to attribute `[[maybe_unused]]` to that variable.
-  A not uncommon situation requiring this gymnastic is for variables of
-  staged and conditional initialization, when the compiler is not able to
-  determine that the variable would be used only in the code paths where
-  it is initialized (`-Wmaybe-uninitialized`) -- beware that this is usually
-  a sign of a flawed design.
+**[E]** If the compiler reports an intended behaviour as problematic, the code
+  should be reviewed with other people to identify whether the report is correct.
+  If the review concludes the diagnostic message is spurious, the diagnostic
+  message can be "acknowledges".
 
-**[R]** The resolution of deprecation warnings on new code is **required**.
+**[R]** Acknowledgement of a diagnostic message, when decided, must target only
+  the line of code triggering it, must disable only the diagnostic message that
+  needs to be acknowledged, and must be exhaustively documented in a comment.
 
-
+**[R]** Deprecation warnings on new code must be resolved.
 

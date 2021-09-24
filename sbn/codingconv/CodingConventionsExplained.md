@@ -554,7 +554,7 @@ of unexpected behaviour.
   (non-header).
 
 
-### Variable and parameters
+### Variables and parameters
 
 **[R]** It is **required** that variables be defined
   in the lowest scope they are needed in,
@@ -732,10 +732,10 @@ of unexpected behaviour.
   when all other alternatives have been considered and judged worse.
 
 **[S]** Initialization syntax with braces is **suggested** as it is the most universally
-  appliable (a famous exception is the initialization of a `std::vector` of
+  applicable (a famous exception is the initialization of a `std::vector` of
   numbers with its size, which ends up being ambiguous:
   `std::vector{ 3, 1 }` contains two elements, `3` and `1`,
-  while `std::vector(3, 1)` containts three elements, all set to `1`;
+  while `std::vector(3, 1)` contains three elements, all set to `1`;
   likewise, `std::vector{ 3 }` contains one element, `3`,
   while `std::vector(3)` contains three elements initialized to `0`).
 
@@ -744,15 +744,44 @@ of unexpected behaviour.
   as it is a better known syntax. Digraphs and trigraphs are **forbidden**.
 
 
+##### Examples of C++ best practices
+
+###### Examples of resource manager objects
+
+| resource                               | manager class        | library and header                 | replaces               |
+| -------------------------------------- | -------------------- | ---------------------------------- | ---------------------- |
+| memory: dynamic object allocation      | `std::unique_ptr`    | `<memory>`                         | `new T`                |
+| memory: sequence of data               | `std::vector`        | `<vector>`                         | `new T[n]`             |
+| memory: delayed object initialisation  | `std::optional`      | `<optional>`                       | `new T`                |
+| input file                             | `std::ifstream`      | `<fstream>`                        | `FILE* f = open(...)`  |
+| output file                            | `std::ofstream`      | `<fstream>`                        | `FILE* f = open(...)`  |
+| ROOT histogram or tree                 | `TFileService`       | `"art_root_io/TFileService.h"`     | `new TTree` ...        |
+| critical section/mutex                 | `std::scoped_lock`   | `<mutex>`                          | `mtx.lock()`           |
+| `gDirectory`                           | `TDirectoryChanger`  | `icarusalg/Utilities/ROOTutils.h`  | `gDirectory = ...`     |
+
+
+###### Examples of variable types for quantities
+
+| description                                 | suggested types                   | notes                             |
+| ------------------------------------------- | --------------------------------- | --------------------------------- |
+| counter                                     | `unsigned int`                    | integral number, start from 0 up  |
+| detector coordinate                         | `double`                          | needs dynamic range >10⁷          |
+| array index                                 | `int`, `gsl::index`               | used in C-style arrays            |
+| array index                                 | `std::size_t`                     | only used to index `std::vector`  |
+| ADC sample                                  | `unsigned short int`              | reduced size, no sign bit         |
+| timestamp in nanoseconds from 01/01/1970    | `long long int`                   | `double` loses precision!         |
+| time manipulation in LArSoft                | `detinfo::timescales` quantities  | not straightforward to use yet    |
+
+
 
 #### References vs. pointers
 
-Rationale: references and pointers share the same performance, but have different
-features that make them distinct.
+_Rationale_: references and pointers share the same performance, but have different
+features that make them appropriate for different usage patterns:
+a reference, compared to a pointer:
 
-* characteristics of a reference compared to a pointer are that they
-    1. can't be copied or reassigned to a different object
-    2. can't point to the null memory address (`nullptr`)
+1. can't be copied or reassigned to a different object
+2. can't point to the null memory address (while a pointer can be `nullptr`)
 
 **[E]** As consequence, use of pointers is **endorsed** only if a variable is allowed to point
   to "no object" (`nullptr`), or if reassignments are required
@@ -917,8 +946,9 @@ There are well known patterns that prevent unnecessary copies.
       normalizedHits.push_back(normalize(hit));
   ```
   Otherwise, each time `normalizedHits` needs to be expanded,
-  say from size _M_ to size _N_, a full copy of _M_ elements and
-  the presence of _M_+_N_ elements at the same time are required.
+  say from size _M_ to size _N_, the code may be forced to first allocate room
+  for _N_ objects (after which, _M_ + _N_ are allocated), then _copy_ the _N_
+  original elements, then delete them.
   
 
 #### Checked vs. unchecked element access (i.e. `at()` vs. `[]`)
@@ -927,8 +957,8 @@ Rationale: data collection objects like `std::vector` offer both a checked acces
 (`data.at(index)`) which throws an exception if the requested element
 is not included in the collection, and an unchecked one (`data[index]`)
 whose behaviour is undefined in such case.
-Most often, the unckecked access should be preferred because faster,
-but it is important to avoid falling into the "undefined behaviour".
+Most often, the unchecked access should be preferred because faster,
+but it is important to avoid indices out of range.
 Conversely, the choice of one over the other conveys the underlining
 consideration.
 
@@ -952,6 +982,7 @@ consideration.
       if (charge > 0.0) charges[i] = charge;
   }
   ```
+
 **[E]** Unchecked access is **encouraged** also when the element is expected
   by protocol to be present, in which case documenting the expectation
   (e.g. with an assertion) is also **encouraged**.
@@ -1022,11 +1053,69 @@ consideration.
     // ...
   };
   ```
+
 **[R]** It is **required** that all member functions that do not modify the object
   be declared `const`.
   It is also recommended that class methods changing the class data members
   be factored so that the parts that do not change that data be on their own
   (`const`) member function.
+  For example: an object with a collections of tokens (`fTokens`) allows to
+  insert a separator after each instance of a certain token value, and makes
+  the token next to the separator capitalised (`capitalize()`):
+  ```cpp
+  void Parser::insertSeparatorAfter(Token_t const& sep, std::string const& key) {
+    iterator it { fTokens.cbegin() };
+    const_iterator tend { fTokens.cend() };
+    while (it != tend) {
+      if (it->key() == key) {
+        iterator new_it = fTokens.insert(++it, sep)
+        it = ++new_it;
+        tend = fTokens.cend();
+        if (new_it != tend) capitalize(*new_it);
+      }
+      else {
+        ++it;
+      }
+    } // while
+  }
+  ```
+  This implementation can be factorised in a incremental search and an
+  insertion/capitalization:
+  ```cpp
+  Parser::const_iterator Parser::findNextToken
+    (std::string const& key, const_iterator first) const
+  {
+    auto const matchKey = [&key](Token_t const& t){ return t.key() == key; };
+    return std::find_if(first, fTokens.end(), matchKey);
+  }
+  
+  iterator Parser::insertSeparatorBeforeAndCapitalize
+    (const_iterator token, Token_t const& sep)
+  {
+    iterator const newToken = std::next(fTokens.insert(token, sep));
+    if (newToken != fTokens.cend()) capitalize(*newToken);
+    return newToken;
+  }
+  
+  void Parser::insertSeparatorAfter(Token_t const& sep, std::string const& key) {
+    const_iterator next { fTokens.cbegin() };
+    while (true) {
+      const_iterator const itKey = findNextToken(key, next);
+      if (itKey == fTokens.cend()) return;
+      next = insertSeparatorBeforeAndCapitalize(std::next(itKey), sep);
+    } // while
+  }
+  ```
+  This approach is closer to "one function for one task" philosophy.
+  As a side effect, we gain a lookup functionality (`findNextToken()`) that
+  can be reused in other methods. But the main gain is the guarantee that
+  non-const iterators are used only when the modification of the content is
+  needed (`insertSeparatorAndCapitalize()`), and in addition we can't
+  accidentally change the content of the object while looking for the key:
+  the code is more robust.
+  This specific example is simple enough that the advantage is not impressive,
+  but in more complex functions this may make a difference.
+
 
 **[E]** The assignment of a initialization value to all non-`const` data members
   in their declaration in the class is **encouraged**. For example:
@@ -1049,6 +1138,8 @@ consideration.
   it can at least be "defaulted": `FilterEfficiency() = default;`).
   This reduces the consequences of forgetting the initialization of a data member,
   for example when adding a new one to the class and there are many constructors.
+  Note that `const` data members can follow the same pattern, but it's less
+  critical because the compiler will ensure they are initialized at construction.
 
 **[E]** The assignment of a known value to all data members of a class is **encouraged**. For example:
   ```cpp
@@ -1066,14 +1157,14 @@ consideration.
   ```
   unless there are good reasons not to initialize ADC counts.
 
-**[D]** Empty constructors are **discouraged** and constructors with empty
-  bodies *and* initialization list **forbidden**. For example:
+**[F]** Empty constructors (with empty body and *and* no initialization list)
+  are **forbidden**. For example:
   ```cpp
   struct FilterEfficiency {
     unsigned int fTotal;
     unsigned int fPassed;
     
-    FilterEfficiency() {} // BAD: no gain and prevents data initialization
+    FilterEfficiency() {} // BAD: no pro, and deters initialization of data members
   };
   ```
   will make `fTotal` and `fPassed` uninitialised.
@@ -1111,7 +1202,7 @@ consideration.
 
 ##  Quantity types and their units  #######################################
 
-Rationale: clarity and predictability are essential when interpreting data
+_Rationale_: clarity and predictability are essential when interpreting data
 values, and relying heavily on conventions facilitate it.
 
 
@@ -1126,16 +1217,13 @@ Existing exceptions should be treated as a bug rather than a precedent.
 
 **[E]** The following C++ data types are encouraged for storage of some quantities:
 
-
-
-| Unit type | data type |
-| -------- | -------- | 
-| momentum, energy, energy density     | `float`  |
-| charge, charge density    | `float`  |
-| space coordinate <br> (added precision reduces rounding errors of geometry calculations)  | `double`  |
-| time, relative to a reference within the event  | `double`  |
-| absolute time <br>(achieves _(barely)_ nanosecond precision on UTC times)    | `long double`  |
-
+| Unit type                                       | data type  |
+| ----------------------------------------------- | ---------- | 
+| momentum, energy, energy density                | `float`    |
+| charge, charge density                          | `float`    |
+| space coordinate <br> (added precision reduces rounding errors of geometry calculations)  | `double`   |
+| time, relative to a reference within the event  | `double`   |
+| absolute time <br>(achieves _(barely)_ nanosecond precision on UTC times)    | `long double`   |
 
 
 
@@ -1155,7 +1243,7 @@ not expressed by the code.
        (e.g. "applies proton ID algorithm based on track range")
 2. explanation of the input format
        (e.g. "`recob::Track` objects with track fit")
- 3. explanation of the requirements and assumptions on the input
+3. explanation of the requirements and assumptions on the input
        (e.g. "tracks are expected to have been corrected for space charge
        effects")
 4. an explanation of the features of the output
@@ -1199,7 +1287,7 @@ without a systematic comparison the different versions of the code.
       **required** to explicitly state that with a standard tag
       (`**BREAKING CHANGE**` is the recommendation).
 
-**[S]**  A simple format like in the examples above is suggested, given that the
+**[S]**  A simple format like in the examples above is **suggested**, given that the
   purpose of this file is as a fast lookup to discover where to find additional
   information. Information about the author of the change can be tracked down
   via GIT so a reference is just **suggested**. 
@@ -1220,27 +1308,25 @@ detection of program mistakes. Experience shows that a single ignored warning
 both creates a habit, and makes it harder to spot additional ones.
 
 **[R]**  Building warnings must be addressed. This is a **requirement**, although
-reviewers are not required to take the extra steps to verify it (i.e. checking
-the compilation output from the automatic build or downloading and building it
-themselves).
-
-**[R]**  The build system is set to give a medium level of diagnostics, and to treat
+  reviewers are not required to take the extra steps to verify it (i.e. checking
+  the compilation output from the automatic build or downloading and building it
+  themselves).
+  The build system is set to give a medium level of diagnostics, and to treat
   all of them as errors, except for the deprecation one, which is supposed to
   allow a bit of time to maintainers to cope with interface changes:
   compilation will fail in the presence of diagnostics messages. Successfully
-  completing a compilation in general makes the code compilant with this
+  completing a compilation in general makes the code compliant with the previous
   requirement.
-  
+
 **[E]**  If the compiler reports as problematic an intended behaviour, it is
   **strongly encouraged** that the code be reviewed with other people to
   identify whether the report is correct (hint: it usually is). If the review
-  concludes the diagnostic message is spurious, 
-
-**[S]** It is exceptionally allowed to "acknowledge" a diagnostic message without
-  removing its cause, for example in case of compiler bugs. 
+  concludes the diagnostic message is spurious, it is allowed to "acknowledge"
+  it without removing its cause, for example in case of compiler bugs.
   
-**[R]** In that case the
-  **required** approach is to use `#pragma` directives specific to the
+  
+**[R]** When it is assessed that a diagnostic message should be locally disabled,
+  the **required** approach is to use `#pragma` directives specific to the
   diagnostics (that may be complicated by dependency on the compiler, e.g.
   Clang vs. GCC) and, in case of compiler bug, the fencing of the workaround
   in `#if` preprocessor directives that pin down the version of the buggy
