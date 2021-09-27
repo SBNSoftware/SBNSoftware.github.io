@@ -11,31 +11,31 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
 
 ### 
 
-- [Basic Computing](Basic_Computing)   
+- [Basic Computing](Basic_Computing.md)   
   *ssh-ing, vnc, access to FNAL services, setting up an mrb environment, etc*
-- [Key Physics Concepts](Physics_Concepts)  
+- [Key Physics Concepts](Physics_Concepts.md)  
   *LArTPC operation, descriptions of PDS and CRT, motivation for short baseline, etc*
-- [Producing your own events](LArSoft_Workflow)  
+- [Producing your own events](LArSoft_Workflow.md)  
   *Using larsoft to simulate a simple set of events from generation to reconstructed outputs*
-- [Simulation](Simulation)  
+- [Simulation](Simulation.md)  
   *Description of the simulation software*
-- [Reconstruction](Reconstruction)  
+- [Reconstruction](Reconstruction.md)  
   *Description of the reconstruction software*
-- [Using Pandora for Analysis](Pandora_Outputs)  
+- [Using Pandora for Analysis](Pandora_Outputs.md)  
   *How to utilise the Pandora reconstrcution outputs for analysis work*
-- [The Common Analysis Framework](CAF_Intro)  
+- [The Common Analysis Framework](CAF_Intro.md)  
   *How to create and use CAF files*
-- [Writing a LArSoft analyzer / producer](Writing_with_LArSoft)  
+- [Writing a LArSoft analyzer / producer](Writing_with_LArSoft.md)  
   *Creating your own LArSoft modules*
-- [The CI System](Testing_with_the_CI)  
+- [The CI System](Testing_with_the_CI.md)  
   *How to test your code as you go along*
-- [The Working Groups](Working_Groups)  
+- [The Working Groups](Working_Groups.md)  
   *A quick introduction into the work done by the various working groups that make up SBN/SBND/ICARUS*
-- [Git/Github](Git_Intro)  
+- [Git/Github](Git_Intro.md)  
   *How to navigate the wonderful world of git*
-- [Doxygen](Using_Doxygen)  
+- [Doxygen](Using_Doxygen.md)  
   *How to create documentation for SBN object libraries*
-- [Common Acronyms](Acronym_List)  
+- [Common Acronyms](Acronym_List.md)  
   *Why does everyone speak in code?!*
-- [Using the Grid](Grid_Intro)  
+- [Using the Grid](Grid_Intro.md)  
   *How to submit jobs to the FNAL grid computing system*
