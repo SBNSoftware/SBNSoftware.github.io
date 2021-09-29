@@ -97,8 +97,8 @@ Removed guidelines will be marked as such.
 
 The conventions are articulated in the following sections:
 
-* [Naming](CodingConventionsList.md#naming-conventions) ([_with explanations_](CodingConventionsExplained.md#naming-conventions) )
-* [Coding](CodingConventionsList.md#coding) ([_with explanations_](CodingConventionsExplained.md#coding))
-* [Documentation](CodingConventionsList.md#documentation) ([_with explanations_](CodingConventionsExplained.md#documentation))
-* [Linking and building](CodingConventionsList.md#linking-and-building) ([_with explanations_](CodingConventionsExplained.md#linking-and-building))
+* [Naming](CodingConventionsList.md#n-naming-conventions) ([_with explanations_](CodingConventionsExplained.md#n-naming-conventions) )
+* [Coding](CodingConventionsList.md#c-coding) ([_with explanations_](CodingConventionsExplained.md#c-coding))
+* [Documentation](CodingConventionsList.md#d-documentation) ([_with explanations_](CodingConventionsExplained.md#d-documentation))
+* [Linking and building](CodingConventionsList.md#l-linking-and-building) ([_with explanations_](CodingConventionsExplained.md#l-linking-and-building))
 
