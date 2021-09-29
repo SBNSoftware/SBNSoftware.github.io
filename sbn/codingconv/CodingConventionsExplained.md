@@ -2,6 +2,7 @@
 title:       SBN analysis code conventions (with examples and explanations)
 description: Explained code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
+layout:      page_TOC_1_3
 toc:         true
 ---
 
