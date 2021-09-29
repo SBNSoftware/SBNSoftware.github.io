@@ -101,13 +101,13 @@ possible name collisions or ambiguities.
   when using `i` as a real number because of the tradition of `i` being an
   integral index.
 
-**[--]** Declaration of identifiers starting with an underscore is **discouraged**
+**[−−]** Declaration of identifiers starting with an underscore is **discouraged**
   (even to denote private class members).
 
-**[---]** declaration of identifiers starting
+**[−−−]** declaration of identifiers starting
   with two or more underscores (e.g. `__i`) is **forbidden**.
 
-**[---]** Use of identifiers with different capitalization in the same scope is
+**[−−−]** Use of identifiers with different capitalization in the same scope is
   **forbidden** except if the capitalization follows a physics formula,
   where it is still **discouraged**. For example,
   `double const F = G * m * M / (d*d);` is acceptable, but 
@@ -217,7 +217,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
   (with a commit solely devoted to reindentation), and it is otherwise
   **required** that the existing indentation be exactly followed otherwise.
 
-**[--]**  The use of editor-specific directives to describe the indentation settings
+**[−−]**  The use of editor-specific directives to describe the indentation settings
   is **discouraged** because of the editor-specificity.
 
 **[++]** The use of [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style) is **encouraged**.
@@ -231,7 +231,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
 **[+++]** All computations for filling CAF branches and calculations
   are **required** to live in the corresponding `Fill<specifier>Vars.cxx` script.
 
-**[---]** `StandardRecord` is intended to hold the structure of CAF files only.
+**[−−−]** `StandardRecord` is intended to hold the structure of CAF files only.
   Any dependence to LArSoft packages in `StandardRecord` is **forbidden**.
 
 
@@ -282,7 +282,7 @@ conditions over automatic mitigation.
   > Which practice is best for us should be considered
   > [under discussion](https://github.com/PetrilloAtWork/SBNSoftware.github.io/pull/5).
   
-**[--]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
+**[−−]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
   have repeatedly been found to hide essential errors.
   
 **[++]** Messages reporting unusual conditions are **encouraged** to be routed into
@@ -292,12 +292,12 @@ conditions over automatic mitigation.
   
 **[++]** Within _art_ jobs, message facility library is **strongly encouraged** for message logging.
 
-**[--]** Likewise, the use of C++ output stream to console
+**[−−]** Likewise, the use of C++ output stream to console
   (`std::cout`, `std::cerr`) is **strongly discouraged** unless the code is
   expected to be run in an environment where message facility is not available.
   In that case, it is still **suggested** that template output classes be used.
 
-**[---]** Inclusion of `<iostream>` in a header file is **forbidden**: if output to
+**[−−−]** Inclusion of `<iostream>` in a header file is **forbidden**: if output to
   C++ standard streams is _really_ needed, it should be placed into the
   implementation file rather than in the header.
   
@@ -338,7 +338,7 @@ ideally limited to configuration files. The explicit lack of support for one
 of the experiments is still preferable to code that gives for that experiment
 wrong results.
 
-**[---]** Presence in the code of constants describing the specific detectors are
+**[−−−]** Presence in the code of constants describing the specific detectors are
   **strongly discouraged** in the experiment code repositories, and
   **forbidden** in the repositories with SBN-shared code.
   Configuration parameters, via FHiCL or other objects at class construction
@@ -373,7 +373,7 @@ wrong results.
 **[++]** The use of `art::InputTag` in place of plain `std::string` for identifying
   data products is **strongly encouraged**.
 
-**[-]** Alternatives to `art::FindManyP` are **suggested** if possible. For example,
+**[−]** Alternatives to `art::FindManyP` are **suggested** if possible. For example,
   if there is the prescription that associations are ordered, like in
   `art::Assns<recob::Cluster, recob::Hit>`, and sequential iterations are needed,
   [`art::for_each_group_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespaceart.html#af20019c68ad469044f2ce12ed469441d) or
@@ -425,7 +425,7 @@ _Rationale_: The `auto` keyword has the magic ability of decreasing with its sol
 appearance the readability of the code by a few marks.
 It should be used judiciously (and sparsely).
 
-**[--]** In general, the use of `auto` is **discouraged**
+**[−−]** In general, the use of `auto` is **discouraged**
 
 **[+]** The `auto` keyword can be safely used when the underlying type is _obvious_
   from the code in the same line or the previous one.
@@ -494,13 +494,13 @@ the code. Shortcuts to omit them should be considered critically because they
 make it harder for non-experts to interpret the code and increase the chances
 of unexpected behaviour.
 
-**[--]** Importing a namespace (e.g. `using namespace std;`) is *discouraged*;
+**[−−]** Importing a namespace (e.g. `using namespace std;`) is *discouraged*;
   it is *strongly discouraged* in global scope;
   an exception is namespaces containing exclusively
   [user-defined literal operators](https://en.cppreference.com/w/cpp/language/user_literal)
   (e.g. `using namespace std::string_literals`);
 
-**[---]** `using namespace` directives are nevertheless always thoroughly
+**[−−−]** `using namespace` directives are nevertheless always thoroughly
   **forbidden** in global scope of header files.
   You may import specific symbols at local scope (i.e. within the body of your `class`)
   if absolutely necessary for readability
@@ -604,7 +604,7 @@ of unexpected behaviour.
 
 ### C++ best practices
 
-**[---]** Pointer variables _never_ own their memory.
+**[−−−]** Pointer variables _never_ own their memory.
   The use of `new` operator is **forbidden**.
   Data arrays should be stored in collections like `std::vector`.
   Dynamic memory should be allocated via `std::make_unique()`.
@@ -679,16 +679,16 @@ of unexpected behaviour.
   protonTrueContained = truePart.contained;
   ```
 
-**[---]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
+**[−−−]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
   except when interfacing with broken external library code,
   in which case a large and thorough comment is required.
 
-**[--]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
+**[−−]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
   interfaces without the need for this type of cast.
   Plain C-style casts are also **discouraged** in favor of the more expressive
   (and easier to recognise and understand) `static_cast`.
   
-**[---]** The use of labels and `goto` statement are **forbidden** except for the
+**[−−−]** The use of labels and `goto` statement are **forbidden** except for the
   specific purpose of jumping out of deeply-nested loops
   when all other alternatives have been considered and judged worse.
 
@@ -959,7 +959,7 @@ consideration.
 
 #### User class design
 
-**[--]** As a consequence of the resource management pattern described above ("RAII"),
+**[−−]** As a consequence of the resource management pattern described above ("RAII"),
   the use of destructors in classes is **strongly discouraged**;
   they should be unnecessary and omitted entirely
   (except for a polymorphic base class, where the definition should always be
@@ -1118,7 +1118,7 @@ consideration.
   ```
   unless there are good reasons not to initialize ADC counts.
 
-**[---]** Empty constructors (with empty body and *and* no initialization list)
+**[−−−]** Empty constructors (with empty body and *and* no initialization list)
   are **forbidden**. For example:
   ```cpp
   struct FilterEfficiency {

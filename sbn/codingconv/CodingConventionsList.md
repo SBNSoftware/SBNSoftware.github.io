@@ -93,12 +93,12 @@ A "package" is a branch of the source tree in a repository.
 
 **[+++]** Descriptive control variable name in any loop longer than five lines.
 
-**[--]** Avoid identifiers starting with an underscore (e.g. `_i`).
+**[−−]** Avoid identifiers starting with an underscore (e.g. `_i`).
 
-**[---]** No declaration of identifiers starting with two or more underscores (e.g. `__i`).
+**[−−−]** No declaration of identifiers starting with two or more underscores (e.g. `__i`).
 
-**[---]** No identifiers with different capitalization in the same scope is
-  except (**[--]**) if the capitalization follows a physics formula.
+**[−−−]** No identifiers with different capitalization in the same scope is
+  except (**[−−]**) if the capitalization follows a physics formula.
 
 **[++]** Private data member names start with `f` and use CamelCase.
   Public data members and local variables follow simple camelCase
@@ -170,7 +170,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
 
 **[+++]** Indent via spaces (2 per level **suggested**).
 
-**[--]** Avoid editor-specific directives to describe the indentation settings.
+**[−−]** Avoid editor-specific directives to describe the indentation settings.
 
 **[++]** Use [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style)
 
@@ -185,7 +185,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
 **[+++]** All computations for filling CAF branches and calculations live
   in the corresponding `Fill<specifier>Vars.cxx` script.
 
-**[---]** No dependence to LArSoft packages in `StandardRecord`.
+**[−−−]** No dependence to LArSoft packages in `StandardRecord`.
 
 
 ##  [CS] Source file metadata  #############################################
@@ -227,7 +227,7 @@ _**[++]**_ Use C++ exceptions to reporting errors (`cet::exception` where availa
   > Which practice is best for us should be considered
   > [under discussion](https://github.com/PetrilloAtWork/SBNSoftware.github.io/pull/5).
 
-**[--]** Avoid "catch-all" constructs (`catch (...)`). Really.
+**[−−]** Avoid "catch-all" constructs (`catch (...)`). Really.
 
 **[++]** Route reports of unusual conditions into specific message streams
   (use `mf::LogError`/`mf::LogProblem` where available, or `std::cerr`).
@@ -235,10 +235,10 @@ _**[++]**_ Use C++ exceptions to reporting errors (`cet::exception` where availa
 **[++]** Use message facility library for message logging in _art_ code
   (e.g. `LOG_MF_INFO()`, `mf::LogVerbatim()`, ...).
 
-**[--]** Avoid C/C++ output streams to console (`std::cout`, `std::cerr`)
+**[−−]** Avoid C/C++ output streams to console (`std::cout`, `std::cerr`)
   when logging libraries are available.
 
-**[---]** Do not include `<iostream>` in header files.
+**[−−−]** Do not include `<iostream>` in header files.
 
 **[++]** With message facility (or Python `logging` module):
 
@@ -261,7 +261,7 @@ ideally limited to configuration files. The explicit lack of support for one
 of the experiments is still preferable to code that gives for that experiment
 wrong results.
 
-**[---]** No constants describing the specific detectors in SBN-shared code,
+**[−−−]** No constants describing the specific detectors in SBN-shared code,
   and avoid those in experiment-specific coed too.
   
 **[+++]** Attempt to use a feature of shared code with a detector/experiment that
@@ -292,7 +292,7 @@ wrong results.
 
 **[++]** Use `art::InputTag` data type to identify data products.
 
-**[-]** Consider alternatives to `art::FindManyP` if available.
+**[−]** Consider alternatives to `art::FindManyP` if available.
 
 **[+]** Use of `art::ProductToken` for simple data product reading.
 
@@ -325,7 +325,7 @@ The `auto` keyword has the magic ability of decreasing with its sole
 appearance the readability of the code by a few marks.
 It should be used judiciously (and sparsely).
 
-**[--]** In general, avoid using `auto`.
+**[−−]** In general, avoid using `auto`.
 
 **[+]** As an exception, use `auto` keyword when the underlying type is _obvious_
   from the code in the same line or the previous one.
@@ -338,10 +338,10 @@ It should be used judiciously (and sparsely).
 
 [_explanations_](CodingConventionsExplained.md#namespaces)
 
-**[--]** Avoid importing a namespace (e.g. `using namespace std;`), especially
+**[−−]** Avoid importing a namespace (e.g. `using namespace std;`), especially
   in global scope.
 
-**[---]** Never ever use `using namespace` directives in global scope of header files.
+**[−−−]** Never ever use `using namespace` directives in global scope of header files.
 
 **[++]** Consider using a namespace to enclose a large self-contained group of
   utilities and to enclose implementation details.
@@ -363,7 +363,7 @@ It should be used judiciously (and sparsely).
 [_explanations_](CodingConventionsExplained.md#c-best-practices)
 
 
-**[---]** Pointer variables _never_ own their memory. Do not use `new` operator.
+**[−−−]** Pointer variables _never_ own their memory. Do not use `new` operator.
 
 **[++]** Manage a resource by using a wrapping object that follows
   [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) pattern
@@ -381,11 +381,11 @@ It should be used judiciously (and sparsely).
   
 **[++]** Use temporary variables to avoid code repetitions.
 
-**[---]** Do not use `const_cast` nor `reinterpret_cast`.
+**[−−−]** Do not use `const_cast` nor `reinterpret_cast`.
 
-**[--]** Avoid `dynamic_cast`.
+**[−−]** Avoid `dynamic_cast`.
   
-**[---]** Avoid `goto` statements.
+**[−−−]** Avoid `goto` statements.
 
 **[+]** Consider using braces as initialization syntax
   (e.g. `DataEntry data { 5.0, 7.0 };`).
@@ -455,7 +455,7 @@ consideration.
 
 [_explanations_](CodingConventionsExplained.md#user-class-design)
 
-**[--]** You should not _need_ destructors in your classes.
+**[−−]** You should not _need_ destructors in your classes.
 
 **[+]** For objects that will exist in large collections,
   and especially for data structures, consider ordering data members
@@ -472,7 +472,7 @@ consideration.
 
 **[++]** All data members of a class should be assigned a known value on construction.
 
-**[---]** Never write empty constructors.
+**[−−−]** Never write empty constructors.
 
 **[++]** Consider using delegated constructors to improve maintainability.
 

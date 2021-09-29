@@ -29,9 +29,9 @@ This policy uses coded words to define the priority of the requirements:
 
 |                 | Name                                           | Meaning  |
 | --------------- | ---------------------------------------------- | -------- |
-| **+++**/**---** | **[+++]** Required <br/> **[---]** Forbidden   | Reviewers are asked to reject code that does not satisfy this requirement.     |
-| **++**/**--**   | **[++]** Encouraged <br/> **[--]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
-| **+**/**-**     | **[+]**/**[-]** Suggested                      | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
+| **+++**/**---** | **[+++]** Required <br/> **[−−−]** Forbidden   | Reviewers are asked to reject code that does not satisfy this requirement.     |
+| **++**/**--**   | **[++]** Encouraged <br/> **[−−]** Discouraged | Reviewers may reject code that does not satisfy this recommendation. |
+| **+**/**-**     | **[+]**/**[−]** Suggested                      | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
 
 > While this document is in draft, guidelines that have not been
 > discussed or have been questioned may have the priority mark written
