@@ -1,6 +1,6 @@
 ---
 layout: page
-title: List of SBN code releases
+title: SBN Young Guide
 ---
 
 # Things we wish we'd known... SBN Young
