@@ -70,3 +70,13 @@ A good example to use here is `grid_workflow_sbnd_mc_reco_all.cfg`, note this wo
   
 For more info check out the [lar_ci wiki](https://cdcvs.fnal.gov/redmine/projects/lar_ci/wiki).
 For help with importing a new module/workflow feel free to contact me [h.lay@lancaster.ac.uk](h.lay@lancaster.ac.uk) and I'll do my best to answer any questions!
+
+## Available Input Samples
+
+Currently the CI Validation group maintains the following samples for use as input to validation workflows:
+| Sample | Contains | Available from | 
+| --- | --- | --- |
+| BNB + IntrNuE Mix | 5k BNB nu events + 5k BNB intrnue events | g4, detsim | 
+| BNB w/ Cosmics | 1k BNB nu events with cosmic overlay | g4, detsim |
+
+If your validation would require a new sample speak to the CI & Validation group and we'd be happy to help!
