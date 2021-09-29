@@ -76,6 +76,13 @@ _from SBN code base_. Everybody, and **especially the code reviewers**,
 are invited to propose examples they encounter while reading others' code or
 while applying one of the guidelines in this document.
 
+Each main section is denoted by a mnemonic code (e.g. "[NS]" for the subsection
+"Source files" under "Naming"). Each guideline has a mnemonic code made of the
+mnemonic code of its section and a number of two or three digits.
+Each subsection has some room for a few additions, and once a mnemonic code is
+assigned to a guideline, it is never changed nor reused.
+Removed guidelines will be marked as such.
+
 
 
 #   Conventions   ##############################################################
