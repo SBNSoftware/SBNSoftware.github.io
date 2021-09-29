@@ -51,9 +51,9 @@ Conveners: [Marco del Tutto and Alessandro Menegolli](mailto:)
 
 ### [Analysis Framework](ana.md)
 
-Conveners: [Fernanda Psihas and Gianluca Petrillo](mailto:)
+Conveners: [Fernanda Psihas and Gianluca Petrillo](mailto:psihas@fnal.gov,petrillo@slac.stanford.edu)
 
-Mailing list and Slack channel: [sbn-software](mailto:sbn-software@listserv.fnal.gov) , #cafana
+Mailing list and Slack channel: [sbn-software](mailto:sbn-software@listserv.fnal.gov), [`#cafana`](https://shortbaseline.slack.com/archives/CMZCFGRFT)
 
 Meetings: Thursdays, 11:00 CT
 
