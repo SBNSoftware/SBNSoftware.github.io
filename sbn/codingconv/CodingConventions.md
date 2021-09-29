@@ -52,9 +52,17 @@ Arbitration by a convener can be requested if no agreement can be met between au
 reviewers.
 
 > As the conventions and guidelines in this document are going to be many,
-authors are not expected to know them (or even to have read them) all.
-They are instead expected to consider them when pointed to them, and they are
-expected to change their code to make it compliant when requested to.
+> authors are not expected to know them (or even to have read them) all.
+> They are instead expected to consider them when pointed to them,
+> and they are expected to change their code to make it compliant when requested to.
+
+In order to facilitate reference to the guidelines, each one is tagged with a mnemonic code
+and it can be linked directly using `#TAG` at the end of the link
+(e.g. <https://sbnsoftware.github.io/sbn/codingconv/CodingConventionsList.html#NL01>
+for the first naming/libraries guideline, `NL.01`).
+Reviewers are encouraged to add links to the relevant guideline when making a request;
+in GIT markdown, the link may look like:
+`[NL.01](https://sbnsoftware.github.io/sbn/codingconv/CodingConventionsList.html#NL01)`.
 
 
 #   Editing   ##################################################################
