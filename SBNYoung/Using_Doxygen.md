@@ -1,4 +1,7 @@
-# Doxygen
+---
+layout: page
+title: Doxygen
+---
 
 *Under construction*
 

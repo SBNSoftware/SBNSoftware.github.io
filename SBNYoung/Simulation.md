@@ -1,4 +1,7 @@
-# Introduction to Simulation
+---
+layout: page
+title: Introduction to Simulation
+---
 
 *Still under construction*
 

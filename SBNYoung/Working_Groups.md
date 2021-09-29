@@ -1,4 +1,8 @@
-# Experiment Structure
+---
+layout: page
+title: Experiment Structure
+---
+
 
 *Under construction*
 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Acronyms
+---
+
 # All those weird combinations of letters that everyone keeps saying...
 
 *Please add any other acronym you know / come across!*

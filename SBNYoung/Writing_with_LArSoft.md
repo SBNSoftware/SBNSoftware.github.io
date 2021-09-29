@@ -1,3 +1,8 @@
+---
+layout: page
+title: Writing with LArSoft
+---
+
 # How to write LArSoft Analyzer or Producer modules
 
 *Under construction*

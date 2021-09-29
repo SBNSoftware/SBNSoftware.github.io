@@ -1,4 +1,7 @@
-# Git & GitHub
+---
+layout: page
+title: Git & GitHub
+---
 
 *Under construction*
 

@@ -1,3 +1,9 @@
+---
+layout: page
+title: CAFs
+---
+
+
 # Introduction to the Common Analysis Framework (CAFs)
 
 Whether MC or Data, the full reconstruction artroot files are huge. This means running an analysis with them or producing a set of analysis trees from them can take a very long time. This will become increasingly true as time goes on. Therefore, it is useful to have a set of reduced analysis tree files that still retain all the useful information required to do a sophisticated analysis whilst dropping the heavier, less analysis-relevant information like individual wire repsonses. Having a single type of analysis file also allows for more synchronisation in different analyses.

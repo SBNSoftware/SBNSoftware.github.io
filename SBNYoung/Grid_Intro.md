@@ -1,3 +1,8 @@
+---
+layout: page
+title: The Grid
+---
+
 # How to submit jobs to the grid computing system
 
 *Under construction*

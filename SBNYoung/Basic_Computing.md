@@ -1,4 +1,7 @@
-# Basic Computing
+---
+layout: page
+title: Basic Computing
+---
 
 #### Computing Access
 

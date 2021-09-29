@@ -1,3 +1,8 @@
+---
+layout: page
+title: Using the CI
+---
+
 # Testing your code with the Continuous Integration system
 
 Testing you code as you go along is key to picking up errors and failures before they are too hard to unravel. The CI & Validation system is designed to ensure that we test code before it is allowed to be included in release versions of our repositories. 

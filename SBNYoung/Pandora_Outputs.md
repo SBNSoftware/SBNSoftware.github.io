@@ -1,4 +1,7 @@
-# Using Pandora Outputs for Analysis
+---
+layout: page
+title: Using Pandora Outputs for Analysis
+---
 
 *Under construction*
 

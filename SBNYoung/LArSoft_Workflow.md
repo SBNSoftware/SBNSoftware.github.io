@@ -1,3 +1,8 @@
+---
+layout: page
+title: LArSoft Workflow
+---
+
 # Producing your own events
 
 *Still under construction*

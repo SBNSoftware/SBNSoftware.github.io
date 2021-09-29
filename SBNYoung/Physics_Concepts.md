@@ -1,4 +1,7 @@
-# Key Physics Concepts
+---
+layout: page
+title: Key Physics Concepts
+---
 
 ### The SBN Program, LArTPC technology, Neutrino Physics
 

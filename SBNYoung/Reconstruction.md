@@ -1,4 +1,8 @@
-# Introduction to Reconstruction
+---
+layout: page
+title: Introduction to Reconstruction
+---
+
 
 *Under construction*
 
