@@ -1,5 +1,5 @@
 ---
-title:       SBN analysis code conventions: summary
+title:       SBN analysis code conventions — summary
 description: Summary of code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
 layout:      page_TOC_1_3
@@ -9,10 +9,12 @@ toc:         true
 --------------------------------------------------------------------------------
 
 Quick links to the introductory sections:
-
 * [Purpose & Scope](CodingConventions.md#purpose--scope)
 * [Definitions](CodingConventions.md#definitions)
 * [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
+* [Editing](CodingConventions.md#editing)
+
+The guidelines with explanations are on [their own page](CodingConventionsExplained.md).
 
 --------------------------------------------------------------------------------
 
