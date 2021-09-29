@@ -35,4 +35,4 @@ Before approving a PR the release management team will trigger the online CI tes
 
 - A very detailed explaination of all the integration tests can be found [here](../sbndcode_wiki/ContinuousIntegration/Continuous_integration.md)
 - An explanation of how to use the validation tests can be found [here](../sbndcode_wiki/ContinuousIntegration/CI_Validation.md)
-- There are further pages for [developing validation tests](../sbndcode_wiki/ContinuousIntegration/Developing_Validation_tests.md) and a couple of pages useful if you are managing any of the CI tests.
+- There are further pages for [developing validation tests](../sbndcode_wiki/ContinuousIntegration/Developing_Validation_Tests.md) and a couple of pages useful if you are managing any of the CI tests.
