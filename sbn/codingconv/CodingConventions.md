@@ -95,7 +95,9 @@ Removed guidelines will be marked as such.
 
 #   Conventions   ##############################################################
 
-The conventions are articulated in the following sections:
+The convention guidelines are provided at two detail levels,
+[summary](CodingConventionsList.md) and [explained](CodingConventionsExplained.md),
+and are articulated in the following topical sections:
 
 * [Naming](CodingConventionsList.md#n-naming-conventions) ([_with explanations_](CodingConventionsExplained.md#n-naming-conventions) )
 * [Coding](CodingConventionsList.md#c-coding) ([_with explanations_](CodingConventionsExplained.md#c-coding))
