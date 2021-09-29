@@ -75,17 +75,17 @@ _Rationale_: naming should:
 Naming of libraries can be almost completely automated by `cet_build_tools`.
 A "package" is a branch of the source tree in a repository.
 
-**[R]** It is **required** that the implicit rules are
+**[+++]** It is **required** that the implicit rules are
   followed for all code that is built under `cet_build_tools`.
 
-**[E]** It is **encouraged** that the same implicit rules
+**[++]** It is **encouraged** that the same implicit rules
   are followed for all code in SBN repositories.
 
-**[E]** It is **encouraged** that only one library is generated per source code
+**[++]** It is **encouraged** that only one library is generated per source code
   directory (i.e. per package), and that if multiple libraries are desired,
   they be placed in their own subdirectories (sub-packages).
 
-**[R]** Use of CamelCase and single string (no `-` nor `_` ) in package and library
+**[+++]** Use of CamelCase and single string (no `-` nor `_` ) in package and library
   names is **required**.
 
 
@@ -102,18 +102,18 @@ A "package" is a branch of the source tree in a repository.
 
 ##  Source files  ##########################################################
 
-**[E]** `cet_build_tools` is somehow biassed toward using `.cc` suffix for C++
+**[++]** `cet_build_tools` is somehow biassed toward using `.cc` suffix for C++
   files, and it is **encouraged** that this suffix be used for source files
   containing the definition of _art_ plugin classes (modules, services, tools);
   
-**[R]** for the other files, it is **required** to stick to the existing
+**[+++]** for the other files, it is **required** to stick to the existing
   convention in the source directory or its parent, if any is present.
 
-**[E]** names of source files with a main algorithm or class are **encouraged**
+**[++]** names of source files with a main algorithm or class are **encouraged**
   to match the one of that algorithm or class, e.g. `sbn::Track` source should
   be called `Track.h`/`Track.cxx`.
 
-**[S]** **suggested** suffixes:
+**[+]** **suggested** suffixes:
 * C++ headers: `.h`
 * C++ source: `.cxx`
 * C++ template implementation: `.txx`
@@ -121,9 +121,9 @@ A "package" is a branch of the source tree in a repository.
 
 ##  Capitalization  ########################################################
 
-**[E]** "CamelCase" is **encouraged** for composite names (e.g. `PhotonLibrary`).
+**[++]** "CamelCase" is **encouraged** for composite names (e.g. `PhotonLibrary`).
 
-**[R]** Plugin name is **required** to match the file it is defined in
+**[+++]** Plugin name is **required** to match the file it is defined in
   (this is a `cet_build_tools` build system requirement).
 
 
@@ -133,26 +133,26 @@ Variable names should be designed with a code reader in mind,
 even at the cost of some additional key strokes, and then to minimize
 possible name collisions or ambiguities.
 
-**[R]** Use of a descriptive control variable is **required**
+**[+++]** Use of a descriptive control variable is **required**
   in any loop longer than five lines. Descriptive names do not need to be long:
   in a known formula, `V` and `R` are proper variable names for a voltage
   and a resistance if unambiguous in the scope, although caution should be taken
   when using `i` as a real number because of the tradition of `i` being an
   integral index.
 
-**[D]** Declaration of identifiers starting with an underscore is **discouraged**
+**[--]** Declaration of identifiers starting with an underscore is **discouraged**
   (even to denote private class members).
 
-**[F]** declaration of identifiers starting
+**[---]** declaration of identifiers starting
   with two or more underscores (e.g. `__i`) is **forbidden**.
 
-**[F]** Use of identifiers with different capitalization in the same scope is
+**[---]** Use of identifiers with different capitalization in the same scope is
   **forbidden** except if the capitalization follows a physics formula,
   where it is still **discouraged**. For example,
   `double const F = G * m * M / (d*d);` is acceptable, but 
   `double const F = G * m1 * m2 / (d*d);` should still be preferred.
 
-**[E]** Private data member names are **encouraged** to start with `f` and use CamelCase
+**[++]** Private data member names are **encouraged** to start with `f` and use CamelCase
    (e.g. `double fTrackLength`). This pattern should be reserved exclusively for such private data member.
   Conversely, public data members and local variables should instead follow the more general guideline
   expressed above (i.e. simple camelCase, e.g. `trackLength`).
@@ -210,13 +210,13 @@ Names don't need to be that long, as long as they are meaningful.
 
 ##  CAF-Specific Naming Conventions ########################################
 
-**[E]** When adding branches or data products to the CAF files, it is **encouraged**
+**[++]** When adding branches or data products to the CAF files, it is **encouraged**
   to follow the standards for nomenclature and numbering already existing in the file. For example: initialize empty variables to `-5` when appropriate, when adding a vector of objects, add also an `int` indicating vector size, etc.
   
-**[R]** Use of `k` and CamelCase for names for `Cuts` and `Vars` in CAFAna macros
+**[+++]** Use of `k` and CamelCase for names for `Cuts` and `Vars` in CAFAna macros
   is **required**.
     
-**[E]**  The use of namespaces to tag the names/versions of the cuts is **encouraged**.
+**[++]**  The use of namespaces to tag the names/versions of the cuts is **encouraged**.
  For example:
  ```cpp
  namespace SBNworkshop2020 {
@@ -227,14 +227,14 @@ Names don't need to be that long, as long as they are meaningful.
  ```
  instead of `Cut kEnergy_SBNworkshop2020`.
 
-**[R]** Names of cuts and vars for a frozen analysis are **required** to end
+**[+++]** Names of cuts and vars for a frozen analysis are **required** to end
   with a corresponding `_tag` unless they are defined in a namespace for example: `kEnergyCut_2020PAC`.
 
-**[R]** When editing cuts and vars from frozen analyses, it is **required** that the editor create a new copy of the cut or var and leave the old one in use for future comparisons.
+**[+++]** When editing cuts and vars from frozen analyses, it is **required** that the editor create a new copy of the cut or var and leave the old one in use for future comparisons.
 
-**[E]** Storing cuts and vars in sensibly corresponding scripts i.e. keep numu analysis cuts in `Cuts/NumuCuts.cxx` and MC cuts in `Cuts/TruthCuts.cxx` etc. is **encouraged**
+**[++]** Storing cuts and vars in sensibly corresponding scripts i.e. keep numu analysis cuts in `Cuts/NumuCuts.cxx` and MC cuts in `Cuts/TruthCuts.cxx` etc. is **encouraged**
 
-**[E]** Removing unused CAF branches is **encouraged**.
+**[++]** Removing unused CAF branches is **encouraged**.
 
 
 #   Coding   ###################################################################
@@ -243,12 +243,12 @@ Names don't need to be that long, as long as they are meaningful.
 
 Rationale: protect the modularity of the code and control the dependency tree.
 
-**[E]** One header and source file per class is **encouraged**. Exceptions apply
+**[++]** One header and source file per class is **encouraged**. Exceptions apply
   for implementation details (that may be branched out in a separate file
   in a `Details` subdirectory, or left in the main file) and for simple
   helper functions and classes.
 
-**[R]**  The **required** indentation is via spaces (2 per level **suggested**).
+**[+++]**  The **required** indentation is via spaces (2 per level **suggested**).
   Indentation must be uniform: either 2, 3 or 4 characters per level everywhere,
   on every line of the code and for every level of indentation.
   In case of modification of existing code violating this requirement,
@@ -256,21 +256,21 @@ Rationale: protect the modularity of the code and control the dependency tree.
   (with a commit solely devoted to reindentation), and it is otherwise
   **required** that the existing indentation be exactly followed otherwise.
 
-**[D]**  The use of editor-specific directives to describe the indentation settings
+**[--]**  The use of editor-specific directives to describe the indentation settings
   is **discouraged** because of the editor-specificity.
 
-**[E]** The use of [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style) is **encouraged**.
+**[++]** The use of [K&R style of brackets](https://en.wikipedia.org/wiki/Indentation_style#K.26R_style) is **encouraged**.
 
 
 ### Specific for CAF libraries and tools
 
-**[R]** `CAFMaker_module.fcl` is intended to access _art_ data products, 
+**[+++]** `CAFMaker_module.fcl` is intended to access _art_ data products, 
   create `StandardRecord` objects, and call filling functions only. 
 
-**[R]** All computations for filling CAF branches and calculations
+**[+++]** All computations for filling CAF branches and calculations
   are **required** to live in the corresponding `Fill<specifier>Vars.cxx` script.
 
-**[F]** `StandardRecord` is intended to hold the structure of CAF files only.
+**[---]** `StandardRecord` is intended to hold the structure of CAF files only.
   Any dependence to LArSoft packages in `StandardRecord` is **forbidden**.
 
 
@@ -280,10 +280,10 @@ Rationale: we want every piece of code associated to one or more authors,
 both to facilitate its use and maintenance by allowing to ask to its authors,
 and as a recognition and acknowledgement.
 
-**[R]** Every source file is **required** to report in a header
+**[+++]** Every source file is **required** to report in a header
   the author(s) and possibly a contact mean (e-mail is **suggested**).
 
-**[E]** Doxygen format is **encouraged**:
+**[++]** Doxygen format is **encouraged**:
   ```cpp
   /**
    * @file   TrackBloating/TrackBloatAlg.h
@@ -292,7 +292,7 @@ and as a recognition and acknowledgement.
    */
   ```
 
-**[E]** Authors other than the ones in the headers are **encouraged**
+**[++]** Authors other than the ones in the headers are **encouraged**
   to report their name (and contact) upon major additions (including
   rewritten algorithm implementations) in a C++ comment;
   it is **encouraged** that this information be added in the Doxygen
@@ -307,12 +307,12 @@ configuration or input. Code should prioritize reporting dangerous or dubious
 conditions over automatic mitigation.
 
 
-**[E]** The liberal use of `assert()` or C++ `concept` constructs is **encouraged**
+**[++]** The liberal use of `assert()` or C++ `concept` constructs is **encouraged**
   to document assumptions that the code is making and is not (formally)
   verifying; e.g. a function documented to require as argument a non-empty list
   of tracks may include as first line a `assert(!tracks.empty());`.
   
-**[E]** C++ exceptions are **encouraged** as tools for reporting error;
+**[++]** C++ exceptions are **encouraged** as tools for reporting error;
   using `cet::exception` as base of exceptions where available is **encouraged**
   as a recognizable pattern and because of the convenience of the class.
   
@@ -321,26 +321,26 @@ conditions over automatic mitigation.
   > Which practice is best for us should be considered
   > [under discussion](https://github.com/PetrilloAtWork/SBNSoftware.github.io/pull/5).
   
-**[D]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
+**[--]** "Catch-all" constructs (`catch (...)`) are **strongly discouraged** as they
   have repeatedly been found to hide essential errors.
   
-**[E]** Messages reporting unusual conditions are **encouraged** to be routed into
+**[++]** Messages reporting unusual conditions are **encouraged** to be routed into
   specific streams for easy filtering; examples include the use of
   `mf::LogError`/`mf::LogProblem` when `messagefacility` library is available,
   or `std::cerr`.
   
-**[E]** Within _art_ jobs, message facility library is **strongly encouraged** for message logging.
+**[++]** Within _art_ jobs, message facility library is **strongly encouraged** for message logging.
 
-**[D]** Likewise, the use of C++ output stream to console
+**[--]** Likewise, the use of C++ output stream to console
   (`std::cout`, `std::cerr`) is **strongly discouraged** unless the code is
   expected to be run in an environment where message facility is not available.
   In that case, it is still **suggested** that template output classes be used.
 
-**[F]** Inclusion of `<iostream>` in a header file is **forbidden**: if output to
+**[---]** Inclusion of `<iostream>` in a header file is **forbidden**: if output to
   C++ standard streams is _really_ needed, it should be placed into the
   implementation file rather than in the header.
   
-**[E]** When using message facility (or Python `logging` module), the **encouraged**
+**[++]** When using message facility (or Python `logging` module), the **encouraged**
   usage of the channels is:
 * `DEBUG` level: messages that may help tracking bugs; but keep in mind
   that users might be enabling debugging messages to investigate a specific
@@ -377,17 +377,17 @@ ideally limited to configuration files. The explicit lack of support for one
 of the experiments is still preferable to code that gives for that experiment
 wrong results.
 
-**[F]** Presence in the code of constants describing the specific detectors are
+**[---]** Presence in the code of constants describing the specific detectors are
   **strongly discouraged** in the experiment code repositories, and
   **forbidden** in the repositories with SBN-shared code.
   Configuration parameters, via FHiCL or other objects at class construction
   or via member function calls, should be used instead.
   
-**[R]** If it proves unfeasible to support a feature for a specific experiment,
+**[+++]** If it proves unfeasible to support a feature for a specific experiment,
   the attempt to use that feature with that experiment is **required**
   to trigger a fatal error.
   
-**[E]** The use of LArSoft services is **strongly encouraged** when they provide
+**[++]** The use of LArSoft services is **strongly encouraged** when they provide
   the needed features. The loss in flexibility is offset by the wider testing
   of that code and the promise of interoperability with other experiments,
   including the other SBN ones. Examples of this include the detector
@@ -396,9 +396,9 @@ wrong results.
 
 ##  LArSoft and _art_  ####################################################
 
-**[E]** In general, the use of the practices recommended by _art_ is **encouraged**.
+**[++]** In general, the use of the practices recommended by _art_ is **encouraged**.
 
-**[E]** The **encouraged** form for reading a data product from `art::Event` depends on
+**[++]** The **encouraged** form for reading a data product from `art::Event` depends on
   the case. The most common ones are:
 * if no _art_ associations are needed:
   ```cpp
@@ -409,28 +409,28 @@ wrong results.
   auto const hitHandle = event.getValidHandle<std::vector<recob::Hit>>(fHitTag);
   std::vector<recob::Hit> const& hits = *hitHandle;
   ```
-**[E]** The use of `art::InputTag` in place of plain `std::string` for identifying
+**[++]** The use of `art::InputTag` in place of plain `std::string` for identifying
   data products is **strongly encouraged**.
 
-**[S]** Alternatives to `art::FindManyP` are **suggested** if possible. For example,
+**[-]** Alternatives to `art::FindManyP` are **suggested** if possible. For example,
   if there is the prescription that associations are ordered, like in
   `art::Assns<recob::Cluster, recob::Hit>`, and sequential iterations are needed,
   [`art::for_each_group_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespaceart.html#af20019c68ad469044f2ce12ed469441d) or
   [`util::associated_groups_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/ForEachAssociatedGroup_8h.html)
   (`lardata/Utilities/ForEachAssociatedGroup.h`) are suitable and more efficient.
   
-**[S]** The use of `art::ProductToken` is **suggested** for simple data product reading.
+**[+]** The use of `art::ProductToken` is **suggested** for simple data product reading.
 
-**[E]** The use of `consumes()` calls in module constructors is **encouraged**.
+**[++]** The use of `consumes()` calls in module constructors is **encouraged**.
 
-**[E]** The use of [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
+**[++]** The use of [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
   is **encouraged** as it adds greatly to both usability and robustness.
 
-**[E]** When data structures indexed by a plane or TPC are needed, the containers provided
+**[++]** When data structures indexed by a plane or TPC are needed, the containers provided
   by [`geo::GeometryCore::makePlaneData()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#a4133ed1f337780925ac5e2d7f7a2ddeb)
   and similar are **encouraged** and should be preferred over a nested array.
 
-**[E]** For iteration through TPC, planes etc., the use of
+**[++]** For iteration through TPC, planes etc., the use of
   `geo::GeometryCore::IterateXxxx()` methods
   (e.g. [`IteratePlanes()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#ae8ca7d464c8c3e1095ca64a640094367))
   is **encouraged**.
@@ -445,7 +445,7 @@ and library components every three years.
 We are a bit behind that, in part because of the constraints from _art_ and
 of supporting two different compilers (GCC and Clang).
 
-**[E]** In general, motivated adoption of well-supported new features is **encouraged**;
+**[++]** In general, motivated adoption of well-supported new features is **encouraged**;
   still, if the feature is considered too obscure a clarification comment
 is **suggested**. An example:
 ```cpp
@@ -464,9 +464,9 @@ _Rationale_: The `auto` keyword has the magic ability of decreasing with its sol
 appearance the readability of the code by a few marks.
 It should be used judiciously (and sparsely).
 
-**[D]** In general, the use of `auto` is **discouraged**
+**[--]** In general, the use of `auto` is **discouraged**
 
-**[S]** The `auto` keyword can be safely used when the underlying type is _obvious_
+**[+]** The `auto` keyword can be safely used when the underlying type is _obvious_
   from the code in the same line or the previous one.
   In doubt, spell the type out instead.
 
@@ -533,20 +533,20 @@ the code. Shortcuts to omit them should be considered critically because they
 make it harder for non-experts to interpret the code and increase the chances
 of unexpected behaviour.
 
-**[D]** Importing a namespace (e.g. `using namespace std;`) is *discouraged*;
+**[--]** Importing a namespace (e.g. `using namespace std;`) is *discouraged*;
   it is *strongly discouraged* in global scope;
   an exception is namespaces containing exclusively
   [user-defined literal operators](https://en.cppreference.com/w/cpp/language/user_literal)
   (e.g. `using namespace std::string_literals`);
 
-**[F]** `using namespace` directives are nevertheless always thoroughly
+**[---]** `using namespace` directives are nevertheless always thoroughly
   **forbidden** in global scope of header files.
   You may import specific symbols at local scope (i.e. within the body of your `class`)
   if absolutely necessary for readability
   (`using Iterator_t = std::vector<std::vector<std::pair<int, int>>>::const_iterator;`)
   or for functionality (e.g. `using std::begin, std::end;`).
 
-**[E]** In header files, it is **encouraged** that functions and variables
+**[++]** In header files, it is **encouraged** that functions and variables
   that are considered implementation details be enclosed in a namespace;
   a standard choice is a specific namespace for that functionality,
   the namespace `details`, or both nested (e.g. `sbn::details::vtxStubs`).
@@ -556,7 +556,7 @@ of unexpected behaviour.
 
 ### Variables and parameters
 
-**[R]** It is **required** that variables be defined
+**[+++]** It is **required** that variables be defined
   in the lowest scope they are needed in,
   and as close as where they are needed as possible. For example:
   ```cpp
@@ -604,7 +604,7 @@ of unexpected behaviour.
   (here `iPart` is declared `int` rather than `std::size_t`
   because that is the type (erroneously) used by `simb::MCTruth` interface).
 
-**[S]** The use of a single collection of structured elements is **suggested**
+**[+]** The use of a single collection of structured elements is **suggested**
   over multiple collections of simple elements,
   when no other performance issue is involved.
   For example:
@@ -643,7 +643,7 @@ of unexpected behaviour.
 
 ### C++ best practices
 
-**[F]** Pointer variables _never_ own their memory.
+**[---]** Pointer variables _never_ own their memory.
   The use of `new` operator is **forbidden**.
   Data arrays should be stored in collections like `std::vector`.
   Dynamic memory should be allocated via `std::make_unique()`.
@@ -652,27 +652,27 @@ of unexpected behaviour.
   with `delete`, immediately wrapping it into a `std::unique_ptr`
   is **encouraged** and encapsulation in a custom handle object **suggested**.
 
-**[E]** More in general, resources that need to be acquired and eventually released
+**[++]** More in general, resources that need to be acquired and eventually released
   are **encouraged** to be managed by a specific object following the
   [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) pattern,
   that is an object that automatically books the resource on construction
   and releases on destruction.
   
-**[E]** It is **encouraged** that the most information be given
+**[++]** It is **encouraged** that the most information be given
   to the compiler pinning down the intended features of the code. That includes
   constantness (next point), attributes (e.g. `[[fallback]]`), the `override` keyword.
   
-**[R]** It is **required** that the type and constantness of the variables
+**[+++]** It is **required** that the type and constantness of the variables
   be reflecting its quantity. For example, an item count should be an `unsigned int`,
   an index of STL array or vector should be `std::size_t`
   (because that is the native type of `std::vector::operator[]` parameter),
   or `std::ptrdiff_t` or, better yet, a [`gsl::index`](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslutil-utilities) (the type of indices is a known C++ issue).
   
-**[E]** It is **encouraged** that "variables" that are not expected to be changed
+**[++]** It is **encouraged** that "variables" that are not expected to be changed
   be _always_ declared constant, so that accidental changes are spotted by
   the compiler (e.g. `int const nParticles = mcTruth.NParticles();`).
   
-**[E]** The use of temporary variables is **strongly encouraged** to avoid code repetitions
+**[++]** The use of temporary variables is **strongly encouraged** to avoid code repetitions
   that are both questionable in terms of performance
   (although compilers may be "smart" enough to figure it out)
   and a maintenance liability.
@@ -718,20 +718,20 @@ of unexpected behaviour.
   protonTrueContained = truePart.contained;
   ```
 
-**[F]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
+**[---]** The use of `const_cast` and `reinterpret_cast` is **forbidden**
   except when interfacing with broken external library code,
   in which case a large and thorough comment is required.
 
-**[D]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
+**[--]** The use of `dynamic_cast` is **discouraged**, as there is usually a way to design
   interfaces without the need for this type of cast.
   Plain C-style casts are also **discouraged** in favor of the more expressive
   (and easier to recognise and understand) `static_cast`.
   
-**[F]** The use of labels and `goto` statement are **forbidden** except for the
+**[---]** The use of labels and `goto` statement are **forbidden** except for the
   specific purpose of jumping out of deeply-nested loops
   when all other alternatives have been considered and judged worse.
 
-**[S]** Initialization syntax with braces is **suggested** as it is the most universally
+**[+]** Initialization syntax with braces is **suggested** as it is the most universally
   applicable (a famous exception is the initialization of a `std::vector` of
   numbers with its size, which ends up being ambiguous:
   `std::vector{ 3, 1 }` contains two elements, `3` and `1`,
@@ -739,7 +739,7 @@ of unexpected behaviour.
   likewise, `std::vector{ 3 }` contains one element, `3`,
   while `std::vector(3)` contains three elements initialized to `0`).
 
-**[R]** Logic operators are **required** to be spelled symbolically
+**[+++]** Logic operators are **required** to be spelled symbolically
   (`&&`, `||`, `!`) rather than in word (`and`, `or`, `not`),
   as it is a better known syntax. Digraphs and trigraphs are **forbidden**.
 
@@ -783,7 +783,7 @@ a reference, compared to a pointer:
 1. can't be copied or reassigned to a different object
 2. can't point to the null memory address (while a pointer can be `nullptr`)
 
-**[E]** As consequence, use of pointers is **endorsed** only if a variable is allowed to point
+**[++]** As consequence, use of pointers is **endorsed** only if a variable is allowed to point
   to "no object" (`nullptr`), or if reassignments are required
   (note that a class holding a reference data member becomes itself non-copiable —
   and non-moveable — by default).
@@ -822,7 +822,7 @@ a reference, compared to a pointer:
   and that the concept of an optional parameter is properly rendered by the
   aptly named [`std::optional`](https://en.cppreference.com/w/cpp/utility/optional) data type.
 
-**[S]** Mixed use is also **suggested** when suitable for the use case.
+**[+]** Mixed use is also **suggested** when suitable for the use case.
   For example, we may want an object to hold a reference to an object, but to be copiable.
   In this case, a possible pattern is:
   ```cpp
@@ -851,7 +851,7 @@ a remote job cross a 2 GB memory hard limit and have the job killed).
 There are well known patterns that prevent unnecessary copies.
 
 
-**[E]** It is **required** to avoid copies of return values. For example:
+**[++]** It is **required** to avoid copies of return values. For example:
   ```cpp
   auto digits = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag); // BAD
   ```
@@ -862,7 +862,7 @@ There are well known patterns that prevent unnecessary copies.
   ```
   to avoid copying the returned vector.
 
-**[R]** Function arguments of large non-trivial types are **required** to be
+**[+++]** Function arguments of large non-trivial types are **required** to be
   declared as constant references
   (with "large" being indicatively larger than 32 bytes,
   or any involving dynamic memory allocation):
@@ -915,7 +915,7 @@ There are well known patterns that prevent unnecessary copies.
   it will not be copied by the method call (the method implementation
   may still copy it though).
 
-**[S]** The **suggested** pattern for initialization of large data member from
+**[+]** The **suggested** pattern for initialization of large data member from
   function arguments (and constructor's, where it is **endorsed**)
   is to copy the value into the function parameter, and then move it.
   The implementation of the constructor
@@ -930,7 +930,7 @@ There are well known patterns that prevent unnecessary copies.
   (e.g. `HitProcessor hitProc { generateHits() };`).
   If in doubt, though, fall back to the constant reference rule above.
 
-**[E]** Allocation of the memory for a data structure in advance is **encouraged** 
+**[++]** Allocation of the memory for a data structure in advance is **encouraged** 
   if its _final_ size is known. For example:
   ```cpp
   std::vector<recob::Hit> normalizedHits;
@@ -962,7 +962,7 @@ but it is important to avoid indices out of range.
 Conversely, the choice of one over the other conveys the underlining
 consideration.
 
-**[E]** Unchecked access is **encouraged** if the element is already known to be
+**[++]** Unchecked access is **encouraged** if the element is already known to be
   included; this can be achieved by a specific check. For example:
   ```cpp
   for (std::size_t i = 0; i < data.size(); ++i) {
@@ -983,7 +983,7 @@ consideration.
   }
   ```
 
-**[E]** Unchecked access is **encouraged** also when the element is expected
+**[++]** Unchecked access is **encouraged** also when the element is expected
   by protocol to be present, in which case documenting the expectation
   (e.g. with an assertion) is also **encouraged**.
   If that applies to `charges` of the example above, it may become:
@@ -998,13 +998,13 @@ consideration.
 
 #### User class design
 
-**[D]** As a consequence of the resource management pattern described above ("RAII"),
+**[--]** As a consequence of the resource management pattern described above ("RAII"),
   the use of destructors in classes is **strongly discouraged**;
   they should be unnecessary and omitted entirely
   (except for a polymorphic base class, where the definition should always be
   `virtual ~BaseClass() = default;`).
 
-**[S]** For objects that will exist in large collections, and especially for data structures,
+**[+]** For objects that will exist in large collections, and especially for data structures,
    an ordering of data members from the largest to the smallest is **suggested**,
   to avoid waste of memory due to data alignment. For example:
   ```cpp
@@ -1024,7 +1024,7 @@ consideration.
   ```
   would reduce the size to 16 bytes.
 
-**[E]** The initialization of configuration data members in the constructor
+**[++]** The initialization of configuration data members in the constructor
   initializer list is **encouraged**, as is their constantness
   if the class does not need to be copyable.
   For example:
@@ -1054,7 +1054,7 @@ consideration.
   };
   ```
 
-**[R]** It is **required** that all member functions that do not modify the object
+**[+++]** It is **required** that all member functions that do not modify the object
   be declared `const`.
   It is also recommended that class methods changing the class data members
   be factored so that the parts that do not change that data be on their own
@@ -1117,7 +1117,7 @@ consideration.
   but in more complex functions this may make a difference.
 
 
-**[E]** The assignment of a initialization value to all non-`const` data members
+**[++]** The assignment of a initialization value to all non-`const` data members
   in their declaration in the class is **encouraged**. For example:
   ```cpp
   struct FilterEfficiency {
@@ -1141,7 +1141,7 @@ consideration.
   Note that `const` data members can follow the same pattern, but it's less
   critical because the compiler will ensure they are initialized at construction.
 
-**[E]** The assignment of a known value to all data members of a class is **encouraged**. For example:
+**[++]** The assignment of a known value to all data members of a class is **encouraged**. For example:
   ```cpp
   struct Data {
     short ADC[16]; // BAD (probably): not initialized
@@ -1157,7 +1157,7 @@ consideration.
   ```
   unless there are good reasons not to initialize ADC counts.
 
-**[F]** Empty constructors (with empty body and *and* no initialization list)
+**[---]** Empty constructors (with empty body and *and* no initialization list)
   are **forbidden**. For example:
   ```cpp
   struct FilterEfficiency {
@@ -1172,7 +1172,7 @@ consideration.
   initialize its members explicitly as shown in the previous point
   unless it is a *documented* intention to have them uninitialized.
 
-**[E]** Moderate use of delegated constructors is **encouraged** for maintainability.
+**[++]** Moderate use of delegated constructors is **encouraged** for maintainability.
   For example:
   ```cpp
   struct WireInfo {
@@ -1191,7 +1191,7 @@ consideration.
   };
   ```
 
-**[S]** For a newly defined data structure, the use of `struct` is **suggested**
+**[+]** For a newly defined data structure, the use of `struct` is **suggested**
   if there is no "invariant" to be preserved (e.g. for a list of points:
   `struct { std::vector<geo::Point_t> points; };`, any point is good),
   of `class` otherwise (e.g. a list of points sorted by _z_ coordinate,
@@ -1208,14 +1208,14 @@ values, and relying heavily on conventions facilitate it.
 
 ### Units
 
-**[R]** The **required** units for data quantities are described in
+**[+++]** The **required** units for data quantities are described in
 [`StandardRecord` documentation in `sbnanaobj`](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/README.md).
 Existing exceptions should be treated as a bug rather than a precedent.
 
 
 ### Data types
 
-**[E]** The following C++ data types are encouraged for storage of some quantities:
+**[++]** The following C++ data types are encouraged for storage of some quantities:
 
 | Unit type                                       | data type  |
 | ----------------------------------------------- | ---------- | 
@@ -1237,7 +1237,7 @@ without falling back to interpret the code, and should especially include
 the assumptions and considerations that are relevant to the users and are
 not expressed by the code.
 
-**[E]** **Encouraged** for algorithm classes and function to include also
+**[++]** **Encouraged** for algorithm classes and function to include also
 
 1. description of their function
        (e.g. "applies proton ID algorithm based on track range")
@@ -1253,7 +1253,7 @@ not expressed by the code.
 5. plus a reference to external documentation (e.g. SBN DocDB document)
        describing the physics of it when it applies
 
-**[R]** **Encouraged** inline documentation in Doxygen format, attached to the object
+**[+++]** **Encouraged** inline documentation in Doxygen format, attached to the object
   being described (for example, to a `class` definition instead than to the file
   where the definition is stored).
 
@@ -1264,11 +1264,11 @@ Rationale: discovery of major changes to the functionality of the code or
 "relevant" changes of working parameters should be achievable
 without a systematic comparison the different versions of the code.
 
-**[R]**  Each repository contains in its main directory a `changes.md` file;
+**[+++]**  Each repository contains in its main directory a `changes.md` file;
   the start of the file includes information about the format, like the
   pattern used for each entry and the tag for breaking changes.
 
-**[R]** Authors are **required** to update the `changes.md` log when...
+**[+++]** Authors are **required** to update the `changes.md` log when...
 
 * A new algorithm is added: mentioning the purpose of the new feature, e.g.
       ```
@@ -1283,16 +1283,16 @@ without a systematic comparison the different versions of the code.
       [20210825] **BREAKING CHANGE** From now on all distances are returned in inches.
       ```
  
-**[R]** In the last case, the change is defined as breaking and the entry is
+**[+++]** In the last case, the change is defined as breaking and the entry is
       **required** to explicitly state that with a standard tag
       (`**BREAKING CHANGE**` is the recommendation).
 
-**[S]**  A simple format like in the examples above is **suggested**, given that the
+**[+]**  A simple format like in the examples above is **suggested**, given that the
   purpose of this file is as a fast lookup to discover where to find additional
   information. Information about the author of the change can be tracked down
   via GIT so a reference is just **suggested**. 
 
-**[E]** Information about the release
+**[++]** Information about the release
   version, especially for breaking change, is **strongly encouraged** but
   it is the duty of the release manager rather than of the author, as it is
   the compilation of a overview of the breaking changes in time.
@@ -1307,7 +1307,7 @@ Rationale: compilation warnings have proven to be a powerful tool in early
 detection of program mistakes. Experience shows that a single ignored warning
 both creates a habit, and makes it harder to spot additional ones.
 
-**[R]**  Building warnings must be addressed. This is a **requirement**, although
+**[+++]**  Building warnings must be addressed. This is a **requirement**, although
   reviewers are not required to take the extra steps to verify it (i.e. checking
   the compilation output from the automatic build or downloading and building it
   themselves).
@@ -1318,14 +1318,14 @@ both creates a habit, and makes it harder to spot additional ones.
   completing a compilation in general makes the code compliant with the previous
   requirement.
 
-**[E]**  If the compiler reports as problematic an intended behaviour, it is
+**[++]**  If the compiler reports as problematic an intended behaviour, it is
   **strongly encouraged** that the code be reviewed with other people to
   identify whether the report is correct (hint: it usually is). If the review
   concludes the diagnostic message is spurious, it is allowed to "acknowledge"
   it without removing its cause, for example in case of compiler bugs.
   
   
-**[R]** When it is assessed that a diagnostic message should be locally disabled,
+**[+++]** When it is assessed that a diagnostic message should be locally disabled,
   the **required** approach is to use `#pragma` directives specific to the
   diagnostics (that may be complicated by dependency on the compiler, e.g.
   Clang vs. GCC) and, in case of compiler bug, the fencing of the workaround
@@ -1350,7 +1350,7 @@ both creates a habit, and makes it harder to spot additional ones.
   it is initialized (`-Wmaybe-uninitialized`) -- beware that this is usually
   a sign of a flawed design.
 
-**[R]** The resolution of deprecation warnings on new code is **required**.
+**[+++]** The resolution of deprecation warnings on new code is **required**.
 
 
 
