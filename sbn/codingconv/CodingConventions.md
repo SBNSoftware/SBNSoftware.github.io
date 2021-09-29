@@ -34,7 +34,7 @@ This policy uses coded words to define the priority of the requirements:
 | **+**/**-**     | **[+]**/**[-]** Suggested                      | The author should consider implementing the suggestion; a reviewer should not reject code where the author has deliberated not to follow the suggestion.|
 
 > While this document is in draft, guidelines that have not been
-> discussed or have been questioned have the priority mark written
+> discussed or have been questioned may have the priority mark written
 > in italic font (e.g. "it is _**required**_ that ..." or "**_[+++]_**").
 
 
@@ -61,9 +61,8 @@ expected to change their code to make it compliant when requested to.
 
 The conventions are articulated in the following sections:
 
-* [Naming](CodingConventionsList.md#naming-conventions)
-* [Coding](CodingConventionsList.md#coding)
-* [Documentation](CodingConventionsList.md#documentation)
-* [Linking and building](CodingConventionsList.md#linking-and-building)
-
+* [Naming](CodingConventionsList.md#naming-conventions) ([_with explanations_](CodingConventionsExplained.md#naming-conventions) )
+* [Coding](CodingConventionsList.md#coding) ([_with explanations_](CodingConventionsExplained.md#coding))
+* [Documentation](CodingConventionsList.md#documentation) ([_with explanations_](CodingConventionsExplained.md#documentation))
+* [Linking and building](CodingConventionsList.md#linking-and-building) ([_with explanations_](CodingConventionsExplained.md#linking-and-building))
 
