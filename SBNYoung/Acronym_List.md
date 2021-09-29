@@ -19,3 +19,5 @@
 - **POMS** Production Operations Management System (the system used to automise large amounts of the workload in producing large samples of events)
 - **MC** Monte Carlo (simulated events)
 - **SAM** Sequential Access via Metadata (the database system utilised by Fermilab to access and query files via their metadata)
+- **DAQ** Data Acquisition
+- **LAr** Liquid Argon
