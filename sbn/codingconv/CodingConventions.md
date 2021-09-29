@@ -57,6 +57,27 @@ They are instead expected to consider them when pointed to them, and they are
 expected to change their code to make it compliant when requested to.
 
 
+#   Editing   ##################################################################
+
+The editors of this document are at this time
+[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu) and
+[Fernanda Psihas](mailto:psihas@fnal.gov).
+
+This document is expected to evolve as new insights, opinions or practices
+prevail. To propose an addition or a semantic change, please write to the main
+editors of the document so that the topic gets a chance to be discussed before
+integration into the guidelines.
+You can also add a pull request to the GIT repository of the wiki or,
+in case of cosmetic changes, edit the wiki directly.
+
+The examples in the original version of these guidelines are artificial.
+An aspect especially needed at this stage is examples of good and bad practices
+_from SBN code base_. Everybody, and **especially the code reviewers**,
+are invited to propose examples they encounter while reading others' code or
+while applying one of the guidelines in this document.
+
+
+
 #   Conventions   ##############################################################
 
 The conventions are articulated in the following sections:
