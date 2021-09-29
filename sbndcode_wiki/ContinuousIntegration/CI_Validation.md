@@ -7,7 +7,7 @@ title: CI Validation
 
 This page describes how to use the CI validation system.
 
-To get back to the main CI wiki page, click [here](Continuous_integration.html).
+To get back to the main CI wiki page, click [here](Continuous_integration.md).
 There are also pages for [developing](Developing_Validation_Tests.md) new Validations and for those responsible for [managing](Managing_the_CI_Validation_System.md) tests.
 
 
