@@ -120,7 +120,9 @@ If you check `ups active` you'll see that it points to your locally built produc
 Now (finally?) you are ready to edit the code:  
 `cd $MRB_SOURCE`  
 `cd <package>`  
- and edit away!   
+ and edit away!
+ A [list of coding guidelines](../sbn/codingconv/CodingConventions.md) is provided that summarises some local conventions and best practices,
+ and that is strictly enforced for Common Analysis Format (CAF) code.
  
  We recommend to regularly commit the changes you make, starting inside `$MRB_SOURCE/<package>`:  
  `git status`, this will list all the changes you've made  
@@ -129,6 +131,8 @@ Now (finally?) you are ready to edit the code:
  `git push -u origin feature/$USER_<feature_name>`, this pushes it to our shared repository   
 
 After doing a bunch of those you are probably ready for these changes to be merged into our next distributed code release so others can play with it too!
+Code intended for most repository will be subject to an internal review before merging;
+for example, [coding guidelines](../sbn/codingconv/CodingConventions.md) are enforced for Common Analysis Format (CAF) code (in `sbncode`).
 
 ## Building and Testing Your Code
 
