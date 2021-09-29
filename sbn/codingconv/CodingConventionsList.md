@@ -30,18 +30,17 @@ _Rationale_: naming should:
 Naming of libraries can be almost completely automated by `cet_build_tools`.
 A "package" is a branch of the source tree in a repository.
 
-**[R]** It is **required** that the implicit rules are
-  followed for all code that is built under `cet_build_tools`.
+**[R]** The implicit rules of `cet_build_tools` must be followed for all code
+  that is built under it (MRB).
 
-**[E]** It is **encouraged** that the same implicit rules
-  are followed for all code in SBN repositories.
+**[E]** The same implicit rules are encouraged for all code in SBN repositories.
 
-**[E]** It is **encouraged** that only one library is generated per source code
-  directory (i.e. per package), and that if multiple libraries are desired,
-  they be placed in their own subdirectories (sub-packages).
+**[E]** Only one library should generated per source code directory
+  (i.e. per package); if multiple libraries are desired,
+  they should be placed in their own subdirectories (sub-packages).
 
-**[R]** Use of CamelCase and single string (no `-` nor `_` ) in package and library
-  names is **required**.
+**[R]** Package and library names must use CamelCase and single string
+  (no `-` nor `_` ).
 
 
 > ### A summary of `cet_build_tools` naming convention ###
