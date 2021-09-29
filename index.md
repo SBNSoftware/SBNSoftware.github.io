@@ -41,6 +41,9 @@ See below for helpful links:
 ## Operations ##
 * [ICARUS Operations](Operations/SBN_FD/index)
 
+## SBN Young Guide ##
+* [SBN Young Guide](SBNYoung/SBNYoungIndex.md)
+
 ## Contribute to this wiki ##
 
 The content of this wiki is tracked by the [GIT repository SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io).
