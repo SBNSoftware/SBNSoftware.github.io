@@ -73,8 +73,8 @@ For help with importing a new module/workflow feel free to contact me [h.lay@lan
 
 ## Available Input Samples
 
-Currently the CI Validation group maintains the following samples for use as input to validation workflows:
-
+Currently the CI Validation group maintains the following samples for use as input to validation workflows:  
+   
    | Sample | Contains | Available from | 
    | --- | --- | --- |
    | BNB + IntrNuE Mix | 5k BNB nu events + 5k BNB intrnue events | g4, detsim | 
