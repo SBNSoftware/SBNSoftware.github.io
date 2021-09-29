@@ -9,8 +9,6 @@ So you've found this page, chances are that means you're a student or postdoc ne
 This guide is intended to provide resources to help you get started in SBN. It's a compilation of any guides and documentation we could find / write ourselves and is by no means complete but we hope it helps you get up to speed!
 Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported some of this information.
 
-### 
-
 - [Basic Computing](Basic_Computing.md)   
   *ssh-ing, vnc, access to FNAL services, setting up an mrb environment, etc*
 - [Key Physics Concepts](Physics_Concepts.md)  
