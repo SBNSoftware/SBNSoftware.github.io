@@ -1,4 +1,4 @@
-# How to submit jobs to th grid computing system
+# How to submit jobs to the grid computing system
 
 *Under construction*
 
