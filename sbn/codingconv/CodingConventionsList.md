@@ -1,12 +1,12 @@
 ---
-title:       SBN analysis code conventions
+title:       SBN analysis code conventions: summary
 description: Summary of code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
 layout:      page_TOC_1_3
 toc:         true
 ---
 
-----
+--------------------------------------------------------------------------------
 
 Quick links to the introductory sections:
 
@@ -14,9 +14,9 @@ Quick links to the introductory sections:
 * [Definitions](CodingConventions.md#definitions)
 * [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
 
-----
+--------------------------------------------------------------------------------
 
-#   Naming conventions   #######################################################
+#   [N] Naming conventions   ###################################################
 
 _Rationale_: naming should:
 * be predictable to facilitate code discovery and automatic maintenance
@@ -25,7 +25,7 @@ _Rationale_: naming should:
 * bear consistent style
 
 
-##  Libraries and packages  ###############################################
+##  [NL] Libraries and packages  ###########################################
 
 Naming of libraries can be almost completely automated by `cet_build_tools`.
 A "package" is a branch of the source tree in a repository.
@@ -54,9 +54,9 @@ A "package" is a branch of the source tree in a repository.
 >   `sbncode_TPCReco_KinkExp` (`libsbncode_TPCReco_KinkExp.so`).
 
 
-##  Source files  ##########################################################
+##  [NS] Source files  #####################################################
 
-[_explanations_](CodingConventionsExplained.md#source-files)
+[_explanations_](CodingConventionsExplained.md#ns-source-files)
 
 **[++]** Use `.cc` suffix for C++ source files
   containing the definition of _art_ plugin classes (modules, services, tools).
@@ -78,18 +78,18 @@ A "package" is a branch of the source tree in a repository.
 | C++ template implementation  | `*.txx`                            | `Track.txx`                   |
 
 
-##  Capitalization  ########################################################
+##  [NC] Capitalization  ###################################################
 
-[_explanations_](CodingConventionsExplained.md#capitalization)
+[_explanations_](CodingConventionsExplained.md#nc-capitalization)
 
 **[++]** "CamelCase" is **encouraged** for composite names (e.g. `PhotonLibrary`).
 
 **[+++]** _art_ plugin name is **required** to match the file it is defined in.
 
 
-##  Variables and other identifiers  #######################################
+##  [NV] Variables and other identifiers  ##################################
 
-[_explanations_](CodingConventionsExplained.md#variables-and-other-identifiers)
+[_explanations_](CodingConventionsExplained.md#nv-variables-and-other-identifiers)
 
 **[+++]** Descriptive control variable name in any loop longer than five lines.
 
@@ -122,9 +122,9 @@ A "package" is a branch of the source tree in a repository.
 
 
 
-##  CAF-Specific Naming Conventions ########################################
+##  [NA] CAF-Specific Naming Conventions ###################################
 
-[_explanations_](CodingConventionsExplained.md#caf-specific-naming-conventions)
+[_explanations_](CodingConventionsExplained.md#na-caf-specific-naming-conventions)
 
 **[++]** When adding branches or data products to the CAF files,
   follow the standards for nomenclature and numbering already existing in the file
@@ -158,11 +158,11 @@ A "package" is a branch of the source tree in a repository.
 
 
 
-#   Coding   ###################################################################
+#   [C] Coding   ###############################################################
 
-##  Organization, layout and style  ########################################
+##  [CO] Organization, layout and style  ###################################
 
-[_explanations_](CodingConventionsExplained.md#organization-layout-and-style)
+[_explanations_](CodingConventionsExplained.md#co-organization-layout-and-style)
 
 Rationale: protect the modularity of the code and control the dependency tree.
 
@@ -188,9 +188,9 @@ Rationale: protect the modularity of the code and control the dependency tree.
 **[---]** No dependence to LArSoft packages in `StandardRecord`.
 
 
-##  Source file metadata  #################################################
+##  [CS] Source file metadata  #############################################
 
-[_explanations_](CodingConventionsExplained.md#source-file-metadata)
+[_explanations_](CodingConventionsExplained.md#cs-source-file-metadata)
 
 Rationale: we want every piece of code associated to one or more authors,
 both to facilitate its use and maintenance by allowing to ask to its authors,
@@ -210,9 +210,9 @@ and as a recognition and acknowledgement.
 **[++]** Authors of major changes add their name (and contact).
 
 
-##  Error handling and message logging  ###################################
+##  [CE] Error handling and message logging  ###############################
 
-[_explanations_](CodingConventionsExplained.md#error-handling-and-message-logging)
+[_explanations_](CodingConventionsExplained.md#ce-error-handling-and-message-logging)
 
 Rationale: users should be immediately reported errors stemming from faulty
 configuration or input. Code should prioritize reporting dangerous or dubious
@@ -220,7 +220,7 @@ conditions over automatic mitigation.
 
 **[++]** Use `assert()` to document assumptions (e.g. `assert(!tracks.empty());`).
   
-**[++]** Use C++ exceptions to reporting errors (`cet::exception` where available)
+_**[++]**_ Use C++ exceptions to reporting errors (`cet::exception` where available)
   
   > The guideline above is the original thought by G. Petrillo.
   > C. Backhouse proposes the exact opposite.
@@ -252,9 +252,9 @@ conditions over automatic mitigation.
 * `FATAL` level: avoid; the program should be interrupted.
 
 
-##  Configuration and experiment-specific features  #######################
+##  [CC] Configuration and experiment-specific features  ###################
 
-[_explanations_](CodingConventionsExplained.md#configuration-and-experiment-specific-features)
+[_explanations_](CodingConventionsExplained.md#cc-configuration-and-experiment-specific-features)
 
 Rationale: code must work for all SBN experiments with the least possible changes,
 ideally limited to configuration files. The explicit lack of support for one
@@ -271,9 +271,9 @@ wrong results.
   the detector if possible.
 
 
-##  LArSoft and _art_  ####################################################
+##  [CL] LArSoft and _art_  ################################################
 
-[_explanations_](CodingConventionsExplained.md#larsoft-and-art)
+[_explanations_](CodingConventionsExplained.md#cl-larsoft-and-art)
 
 **[++]** In general, try to adopt the practices recommended by _art_
   if not conflicting with these guidelines.
@@ -308,9 +308,9 @@ wrong results.
 **[++]** Use `Geometry` service methods to iterate through detector TPC, planes etc.
 
 
-##  Language features  ####################################################
+##  [CF] Language features  ################################################
 
-[_explanations_](CodingConventionsExplained.md#language-features)
+[_explanations_](CodingConventionsExplained.md#cf-language-features)
 
 **[++]** Motivated adoption of well-supported new features is **encouraged**;
   still, if the feature is considered too obscure a clarification comment
@@ -480,7 +480,7 @@ consideration.
   (i.e. constraints on the data members) to be preserved, `struct` otherwise.
 
 
-##  Quantity types and their units  #######################################
+##  [CQ] Quantity types and their units  ###################################
 
 _Rationale_: clarity and predictability are essential when interpreting data
 values, and relying heavily on conventions facilitate it.
@@ -513,12 +513,12 @@ Existing exceptions should be treated as a bug rather than a precedent.
 
 
 
-#   Documentation   ############################################################
+#   [D] Documentation   ########################################################
 
 
-##  Functionality documentation  ##########################################
+##  [DF] Functionality documentation  ######################################
 
-[_explanations_](CodingConventionsExplained.md#functionality-documentation)
+[_explanations_](CodingConventionsExplained.md#df-functionality-documentation)
 
 _Rationale_: plain-English documentation should allow the use of an algorithm
 without falling back to interpret the code, and should especially include
@@ -537,9 +537,9 @@ not expressed by the code.
   attached to the object being described.
 
 
-##  Tracking of changes  ##################################################
+##  [DC] Tracking of changes  ##############################################
 
-[_explanations_](CodingConventionsExplained.md#tracking-of-changes)
+[_explanations_](CodingConventionsExplained.md#dc-tracking-of-changes)
 
 _Rationale_: discovery of major changes to the functionality of the code or
 "relevant" changes of working parameters should be achievable
@@ -566,12 +566,12 @@ without a systematic comparison the different versions of the code.
   should be added by the release manager.
 
 
-#   Linking and building  #####################################################
+#   [L] Linking and building  ##################################################
 
 
-##  Build diagnostics ("warnings")  #######################################
+##  [LB] Build diagnostics ("warnings")  ###################################
 
-[_explanations_](CodingConventionsExplained.md#build-diagnostics-warnings)
+[_explanations_](CodingConventionsExplained.md#lb-build-diagnostics-warnings)
 
 _Rationale_: compilation warnings have proven to be a powerful tool in early
 detection of program mistakes. Experience shows that a single ignored warning

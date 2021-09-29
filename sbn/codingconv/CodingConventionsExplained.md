@@ -1,6 +1,6 @@
 ---
-title:       SBN analysis code conventions
-description: Summary of code conventions as guidelines for SBN authors and reviewers.
+title:       SBN analysis code conventions (with examples and explanations)
+description: Explained code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
 toc:         true
 ---
@@ -22,7 +22,7 @@ Quick links to the summary sections:
 --------------------------------------------------------------------------------
 
 
-#   Naming conventions   #######################################################
+#   [N] Naming conventions   ###################################################
 
 _Rationale_: naming should:
 * be predictable to facilitate code discovery and automatic maintenance
@@ -31,7 +31,7 @@ _Rationale_: naming should:
 * bear consistent style
 
 
-##  Libraries and packages  ###############################################
+##  [NL] Libraries and packages  ###########################################
 
 Naming of libraries can be almost completely automated by `cet_build_tools`.
 A "package" is a branch of the source tree in a repository.
@@ -61,7 +61,7 @@ A "package" is a branch of the source tree in a repository.
 >   `sbncode_TPCReco_KinkExp` (`libsbncode_TPCReco_KinkExp.so`).
 
 
-##  Source files  ##########################################################
+##  [NS] Source files  #####################################################
 
 **[++]** `cet_build_tools` is somehow biassed toward using `.cc` suffix for C++
   files, and it is **encouraged** that this suffix be used for source files
@@ -80,7 +80,7 @@ A "package" is a branch of the source tree in a repository.
 * C++ template implementation: `.txx`
 
 
-##  Capitalization  ########################################################
+##  [NC] Capitalization  ###################################################
 
 **[++]** "CamelCase" is **encouraged** for composite names (e.g. `PhotonLibrary`).
 
@@ -88,7 +88,7 @@ A "package" is a branch of the source tree in a repository.
   (this is a `cet_build_tools` build system requirement).
 
 
-##  Variables and other identifiers  #######################################
+##  [NV] Variables and other identifiers  ##################################
 
 Variable names should be designed with a code reader in mind,
 even at the cost of some additional key strokes, and then to minimize
@@ -169,7 +169,7 @@ Names don't need to be that long, as long as they are meaningful.
 
 
 
-##  CAF-Specific Naming Conventions ########################################
+##  [NA] CAF-Specific Naming Conventions ###################################
 
 **[++]** When adding branches or data products to the CAF files, it is **encouraged**
   to follow the standards for nomenclature and numbering already existing in the file. For example: initialize empty variables to `-5` when appropriate, when adding a vector of objects, add also an `int` indicating vector size, etc.
@@ -198,9 +198,9 @@ Names don't need to be that long, as long as they are meaningful.
 **[++]** Removing unused CAF branches is **encouraged**.
 
 
-#   Coding   ###################################################################
+#   [C] Coding   ###############################################################
 
-##  Organization, layout and style  ########################################
+##  [CO] Organization, layout and style  ###################################
 
 Rationale: protect the modularity of the code and control the dependency tree.
 
@@ -235,7 +235,7 @@ Rationale: protect the modularity of the code and control the dependency tree.
   Any dependence to LArSoft packages in `StandardRecord` is **forbidden**.
 
 
-##  Source file metadata  #################################################
+##  [CS] Source file metadata  #############################################
 
 Rationale: we want every piece of code associated to one or more authors,
 both to facilitate its use and maintenance by allowing to ask to its authors,
@@ -261,7 +261,7 @@ and as a recognition and acknowledgement.
   `@author` syntax as for the file header.
 
 
-##  Error handling and message logging  ###################################
+##  [CE] Error handling and message logging  ###############################
 
 Rationale: users should be immediately reported errors stemming from faulty
 configuration or input. Code should prioritize reporting dangerous or dubious
@@ -331,7 +331,7 @@ When in _art_, if there is the risk that an error or warning message be spawn
   are logged, but then additional ones are progressively discarded.
 
 
-##  Configuration and experiment-specific features  #######################
+##  [CC] Configuration and experiment-specific features  ###################
 
 Rationale: code must work for all SBN experiments with the least possible changes,
 ideally limited to configuration files. The explicit lack of support for one
@@ -355,7 +355,7 @@ wrong results.
   geometry description and the properties and timings of the detectors.
 
 
-##  LArSoft and _art_  ####################################################
+##  [CL] LArSoft and _art_  ################################################
 
 **[++]** In general, the use of the practices recommended by _art_ is **encouraged**.
 
@@ -399,7 +399,7 @@ wrong results.
 
 
 
-##  Language features  ####################################################
+##  [CF] Language features  ################################################
 
 C++ is now a relatively fast-paced standard, adding both language features
 and library components every three years.
@@ -1161,7 +1161,7 @@ consideration.
 
 
 
-##  Quantity types and their units  #######################################
+##  [CQ] Quantity types and their units  ###################################
 
 _Rationale_: clarity and predictability are essential when interpreting data
 values, and relying heavily on conventions facilitate it.
@@ -1188,10 +1188,10 @@ Existing exceptions should be treated as a bug rather than a precedent.
 
 
 
-#   Documentation   ############################################################
+#   [D] Documentation   ########################################################
 
 
-##  Functionality documentation  ##########################################
+##  [DF] Functionality documentation  ######################################
 
 Rationale: plain-English documentation should allow the use of an algorithm
 without falling back to interpret the code, and should especially include
@@ -1219,7 +1219,7 @@ not expressed by the code.
   where the definition is stored).
 
 
-##  Tracking of changes  ##################################################
+##  [DC] Tracking of changes  ##############################################
 
 Rationale: discovery of major changes to the functionality of the code or
 "relevant" changes of working parameters should be achievable
@@ -1259,10 +1259,10 @@ without a systematic comparison the different versions of the code.
   the compilation of a overview of the breaking changes in time.
 
 
-#   Linking and building  #####################################################
+#   [L] Linking and building  ##################################################
 
 
-##  Build diagnostics ("warnings")  #######################################
+##  [LB] Build diagnostics ("warnings")  ###################################
 
 Rationale: compilation warnings have proven to be a powerful tool in early
 detection of program mistakes. Experience shows that a single ignored warning
