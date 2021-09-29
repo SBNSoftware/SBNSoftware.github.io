@@ -8,7 +8,7 @@ toc:         true
 
 --------------------------------------------------------------------------------
 
-Quick links to the introductory sections:
+Quick links to the [introductory sections](CodingConventions.md):
 * [Purpose & Scope](CodingConventions.md#purpose--scope)
 * [Definitions](CodingConventions.md#definitions)
 * [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
