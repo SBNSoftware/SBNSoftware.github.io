@@ -13,11 +13,11 @@ Quick links to the introductory sections:
 * [Definitions](CodingConventions.md#definitions)
 * [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
 
-Quick links to the summary sections:
-* [Naming conventions](CodingConventionsList.md#naming-conventions)
-* [Coding](CodingConventionsList.md#coding)
-* [Documentation](CodingConventionsList.md#documentation)
-* [Linking and building](CodingConventionsList.md#linking-and-building)
+Quick links to the [summary sections](CodingConventionsList.md):
+* [Naming conventions](CodingConventionsList.md#n-naming-conventions)
+* [Coding](CodingConventionsList.md#c-coding)
+* [Documentation](CodingConventionsList.md#d-documentation)
+* [Linking and building](CodingConventionsList.md#l-linking-and-building)
 
 --------------------------------------------------------------------------------
 
