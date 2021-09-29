@@ -2,14 +2,13 @@
 title:       SBN analysis code conventions (with examples and explanations)
 description: Explained code conventions as guidelines for SBN authors and reviewers.
 breaks:      false
-layout:      page_TOC_1_3
+layout:      page_TOC_1_3
 toc:         true
 ---
 
 --------------------------------------------------------------------------------
 
-Quick links to the introductory sections:
-
+Quick links to the [introductory sections](CodingConventions.md):
 * [Purpose & Scope](CodingConventions.md#purpose--scope)
 * [Definitions](CodingConventions.md#definitions)
 * [Compliance and procedures](CodingConventions.md#compliance-and-procedures)
