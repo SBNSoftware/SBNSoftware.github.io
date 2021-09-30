@@ -79,6 +79,7 @@ A "package" is a branch of the source tree in a repository.
 
 `[NS.04]` <span id="NS04"> **[+]**
   File suffixes:
+  
   | type of source               | name pattern                       | example                       |
   | ---------------------------- | ---------------------------------- | ----------------------------- |
   | _art_ plugin source file     | `*_module.cc`, `*_service.cc`, ... | `PCAngleKinkFinder_module.cc` |
@@ -112,7 +113,7 @@ A "package" is a branch of the source tree in a repository.
   No declaration of identifiers starting with two or more underscores (e.g. `__i`).
 
 `[NV.04]` <span id="NV04"> **[−−−]**
-  No identifiers with different capitalization in the same scope is
+  No identifiers with different capitalization in the same scope
   except (**[−−]**) if the capitalization follows a physics formula.
 
 `[NV.05]` <span id="NV05"> **[++]**
