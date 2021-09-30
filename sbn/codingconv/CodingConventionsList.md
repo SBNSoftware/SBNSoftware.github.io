@@ -291,6 +291,11 @@ conditions over automatic mitigation.
     Most often, the program should be interrupted.
   * `FATAL` level: avoid; the program should be interrupted.
 
+`[CE.09]` <span id="CE09"> _**[+++]**_
+  A failure to retrieve configured input data must trigger a fatal error.
+  This behaviour may be bypassed with a separate configuration parameter,
+  provided that additional diagnostic information is then reported.
+
 
 ##  [CC] Configuration and experiment-specific features  ###################
 

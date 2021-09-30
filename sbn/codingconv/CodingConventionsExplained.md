@@ -377,6 +377,16 @@ conditions over automatic mitigation.
   It is then possible for the users to set a limit so that a few messages
   are logged, but then additional ones are progressively discarded.
 
+`[CE.09]` <span id="CE09"> _**[+++]**_
+  When a module fails to load a data product that is specified by configuration,
+  it is assumed that there is either a configuration error or a defective input,
+  and as such the module is **required** to emit a fatal error.
+  This behaviour can be optionally disabled by a flag as an additional configuration
+  parameter or, in alternative, by a parameter listing the mandatory input,
+  where missing data not in the required categories does not trigger a fatal
+  error. In these cases it is **recommended** that the number of missing data
+  products be tracked and reported at the end of the job.
+
 
 ##  [CC] Configuration and experiment-specific features  ###################
 
