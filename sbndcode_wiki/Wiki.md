@@ -80,6 +80,12 @@ Running Jobs on the grid
     .new}
 
 
+Using the CI & Validation System
+--------------------------------------------------------------------
+
+-   [Continuous Integration Tests](ContinuousIntegration/Continuous_integration.md)
+-   [Validation Tests](ContinuousIntegration/CI_Validation.md)
+
 
 Useful Tidbits of Information.
 -------------------------------------------------------------------------------
