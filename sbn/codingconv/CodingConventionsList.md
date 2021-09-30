@@ -165,7 +165,7 @@ A "package" is a branch of the source tree in a repository.
   instead of `Cut kEnergy_SBNworkshop2020`.
 
 `[NA.04]` <span id="NA04"> **[+++]**
-  with a corresponding `_tag` unless defined in a namespace
+  End the name of a cut with a corresponding `_tag` unless defined in a namespace
   (e.g. `kEnergyCut_2020PAC`).
 
 `[NA.05]` <span id="NA05"> **[+++]**
