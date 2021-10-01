@@ -48,7 +48,7 @@ Copy sbndcode and sbndutil to SciSoft
 -   The script will not overwrite an existing file with the same name.
 
 -   To replace an existing file on scisoft.fnal.gov, ssh in to
-    scisoftportal.fnal.gov and cd in to /nasroot/SciSoft. Changes can be
+    scisoftgpvm01.fnal.gov and cd in to /nasroot/SciSoft. Changes can be
     made in this directory
 
 
