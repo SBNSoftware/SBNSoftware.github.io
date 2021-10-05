@@ -2,8 +2,8 @@
 layout: page
 title: SBND Code Wiki
 subtitle: Specific Wiki for SBND
-image: sbndcode_wiki/sbnd_logo.png
-hero_image: sbndcode_wiki/sbnd_logo.png
+image: sbnd_logo.png
+hero_image: sbnd_logo.png
 description: Wiki documentation specific to SBND
 hero_height: is-medium
 # menubar: sbndcode_menu
