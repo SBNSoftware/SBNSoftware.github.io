@@ -4,14 +4,14 @@ title: Running CAEN DT5702 readout of CRT
 toc: true
 ---
 
-# Introduction
+## Introduction
 
 ICARUS side and top CRT is read using CAEN DT5702 front end boards
 (FEB), developed at University of Bern.
 
 
 
-# Hardware connections
+## Hardware connections
 
 -   T0 - normally should have PPS (1 pulse per second) signal connected
 -   T1 - optional additional source of trigger
@@ -23,9 +23,9 @@ using another Ethernet port (doesn\'t matter which one).
 
 
 
-# febdrv
+## febdrv
 
-## Introduction
+### Introduction
 
 
 febdrv communicates with FEBs via Ethernet. Originally written as
@@ -35,7 +35,7 @@ and finally integrated with the fragment generator.
 Directory `sbndaq-artdaq/Generators/Common/Bern/` contains old,
 standalone febdrv which is no longer in use.
 
-## Permissions
+### Permissions
 
 
 As febdrv needs to access Ethernet port, the boardreader process requires
@@ -57,9 +57,9 @@ For DAQInterface `known_boardreaders_list` needs to contain the following line:
 `boardereader_name server_name -1 1 0-15 "/usr/libexec/ambient_cap_net_raw /bin/env LD_LIBRARY_PATH=$LD_LIBRARY_PATH "`
 
 
-# FHiCL configuration
+## FHiCL configuration
 
-## Overview
+### Overview
 
 A FHiCL file for CRT corresponds to a single Ethernet port, or a
 single *chain* of FEBs connected to that port. 
@@ -91,7 +91,7 @@ based on the database information.
 
 
 
-## Fragment ID
+### Fragment ID
 
 The naming convention for CRT fragments is documented in
 <https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16111>
@@ -103,9 +103,9 @@ table `fragment_ids`.
 
 
 
-# Code
+## Code
 
-## Where is the code?
+### Where is the code?
 
 
 - `sbndaq-artdaq/Generators/Common/Bern` -- board reader
@@ -113,7 +113,7 @@ table `fragment_ids`.
 
 
 
-## Status
+### Status
 
 (10/08/21)
 
@@ -128,7 +128,7 @@ To do:
 
 
 
-# DAQ server configuration
+## DAQ server configuration
 
 
 The following actions are needed on each new ICARUS CRT DAQ server:
