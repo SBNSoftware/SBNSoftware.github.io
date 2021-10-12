@@ -20,8 +20,8 @@ Filters are located in `sbndcode/sbndcode/Filters/`
 |------|------------|-------------|
 | GenCRTFilter | `simb::MCTruth` | Keeps events with particles of specified type and that, based on initial truth information, will intersect the specified CRTs |
 | GenNuFilter | `simb::MCTruth` | Keeps events with neutrinos that match the requested conditions: CC or NC, PDG of lepton, vertex in the TPC |
-| LArG4CRTFilter | `simb::MCParti`cle | Keeps events with geant propagated particles that cross specified CRT panels, in a certain range of momentum (additional options available).|
-| LArG4FakeTriggerFilter | `simb::MCParti`cle | Keeps events if there is at least one geant particle depositing a configurable energy in the TPC and with a time in a configurable window. |
+| LArG4CRTFilter | `simb::MCParticle` | Keeps events with geant propagated particles that cross specified CRT panels, in a certain range of momentum (additional options available).|
+| LArG4FakeTriggerFilter | `simb::MCParticle` | Keeps events if there is at least one geant particle depositing a configurable energy in the TPC and with a time in a configurable window. |
 | CRTTrigFilter | `sbnd::crt::CRTData` | Description |
 
 
