@@ -99,7 +99,8 @@ Useful Tidbits of Information.
 -   [Known quick fixes](Known_quick_fixes.html)
 -   [TITUS Event Display](TITUS_Event_Display.html)
 -   [Commissioning - Get Started](commissioning/SBND_Commissioning_Get_Started.html)
--   [Generation FHICL Files](Generation_fhicls)
+-   [Generation FHICL Files](simulation/sbnd_generation_fhicls)
+-   [LArSoft Filters](simulation/sbnd_filters)
 
 
 [Code management and deployment stuff](Code_management_and_deployment_stuff.html)
