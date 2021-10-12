@@ -158,7 +158,7 @@ mrb i -j8
 Put the commands that never change into your bash login script
 ```bash
 source /daq/software/products/setup
-setup mrb
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
