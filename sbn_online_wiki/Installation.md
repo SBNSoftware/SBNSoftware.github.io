@@ -35,11 +35,11 @@ source /daq/software/products_dev/setup   #dev area
 ```
 3. Setup the version of sbndaq we are based. To see a list of the different available versions, use
 ```bash
-ups list -aK+ sbndaq
+ups list -aK+ sbndaq -qe20:s112:prof
 ```
 It's recommended you use the latest available version with e20:prof:s106 as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe20:prof:s106
+setup sbndaq v#_##_## -qe20:prof:s112
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
@@ -55,7 +55,7 @@ If you're doing development work, then you'll want to be able to create a develo
 
 1. Setup the `mrb` environment:
 ```bash
-setup mrb
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
@@ -101,25 +101,51 @@ sbndaq
 ```
 
 4. Build by doing:
+
+Important: If prompted to run the `mrb uc` command (see the output example below) then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
+```bash
+------------------------------------
+INFO: stage cmake for MRB project sbndaq v1_00_00
+------------------------------------
+CMake Error at /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:37 (message):
+  Current CMake subdirectory inclusion order is not consistent with current
+  packages and their interdependencies.
+
+  Please run "mrb uc" to regenerate ${MRB_SOURCE}/CMakeLists.txt with
+  subdirectories listed for inclusion in the correct order.
+Call Stack (most recent call first):
+  /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:79 (mrb_check_subdir_order)
+  CMakeLists.txt:5 (include)
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: stage cmake FAILED for MRB project sbndaq v1_00_00 with code 1
+```
+
 ```bash
 cd $MRB_BUILDDIR
 mrbsetenv
 mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 mrbslp
 ```
 The `-j8` option tells it to parallelize the build on 8 threads. You may use more or less depending on the number of cores available on the machine you are building on.
 
+If prompted to run the `mrb uc` command then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
+
 5. If you need to rebuild repositories you've already pulled down (like, after changing a few lines of code), you will typically only need to do:
 ```
 cd $MRB_BUILDDIR
-make -j8 install
+make i -j8
 ```
 However, if you pull down new repositories or make changes to product dependencies, it's often true you may need to do a cleanup ("zap") and complete rebuild:
 ```bash
 cd $MRB_BUILDDIR
 mrb z
+mrb zi
 mrbsetenv
-mrb i -j32
+mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 mrbslp
 ```
 
@@ -138,7 +164,7 @@ setup sbndaq {version} -q {qualifiers}
 ```
 3. Create a new `localProducts` directory, _while keeping the same `srcs` directory_:
 ```bash
-setup mrb
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 cd <your_existing_working_area>
 mrb newDev -p
@@ -152,18 +178,21 @@ cd $MRB_BUILDDIR
 mrb z
 mrbsetenv
 mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 ```
 
 ### Suggested summary install script
 Put the commands that never change into your bash login script
 ```bash
 source /daq/software/products/setup
-setup mrb
+source /daq/software/products_dev/setup
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v0_07_01 -q e19:prof:py2:s97
+setup sbndaq v1_00_00 -q e20:prof:s112
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
@@ -171,12 +200,15 @@ echo sbndaq qualifiers: $my_sbndaq_quals
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 
-mrb g -d sbndaq git@github.com:SBNSoftware/sbndaq.git
-mrb g -d sbndaq_artdaq  git@github.com:SBNSoftware/sbndaq-artdaq.git
+mrb g sbndaq
+mrb g sbndaq_artdaq
 
 cd build*
 mrbsetenv
 mrb i -j8 |& tee make.log
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8 |& tee make.log
+
 mrbslp
 ```
 
