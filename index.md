@@ -3,7 +3,7 @@ layout: page
 title: SBN Software Wiki
 subtitle: A wiki for documentation of the SBN Software packages
 hero_height: is-medium
-toc: false
+toc: true
 ---
 
 
@@ -13,13 +13,12 @@ toc: false
 
 See below for helpful links:
 
-### [Analysis Infrastructure](AnalysisInfrastructure/index)
+## [Analysis Infrastructure](AnalysisInfrastructure/index) ##
+### [How to Add New Features, Fix Bugs, Or Otherwise Develop](AnalysisInfrastructure/how-to-develop) ###
 
-### [How to Add New Features, Fix Bugs, Or Otherwise Develop](AnalysisInfrastructure/how-to-develop)
+## List of Repositories ##
 
-## List of Repositories
-
-### Offline Repositories
+### Offline Repositories ###
 * [sbncode](https://github.com/SBNSoftware/sbncode): Common SBN code and configs.
 * [icaruscode](https://github.com/SBNSoftware/icaruscode): ICARUS-specific code and configs.
   * [Wiki](icaruscode_wiki/Wiki) ([old Redmine wiki here](https://cdcvs.fnal.gov/redmine/projects/icaruscode/wiki))
@@ -28,7 +27,7 @@ See below for helpful links:
 
 * [sbnbuild](https://github.com/SBNSoftware/sbnbuild): Common SBN build scripts and utilities.
 
-### Online Repositories
+### Online Repositories ###
 * [sbndaq](https://github.com/SBNSoftware/sbndaq): SBN DAQ parent code base, including scripts for run control
   * [Wiki](sbndaq_wiki/Wiki) ([old Redmine wiki here](https://cdcvs.fnal.gov/redmine/projects/sbndaq/wiki))
 * [sbndaq-artdaq](https://github.com/SBNSoftware/sbndaq-artdaq): SBN DAQ code base (e.g. the generators)
@@ -39,15 +38,20 @@ See below for helpful links:
 
 * [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
 
-### Operations
+## Operations ##
 * [ICARUS Operations](Operations/SBN_FD/index)
 
-### Contribute to this wiki
+## SBN Young Guide ##
+* [SBN Young Guide](SBNYoung/SBNYoungIndex.md)
+
+## Contribute to this wiki ##
 
 The content of this wiki is tracked by the [GIT repository SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io).
 It can be edited directly online or by pushing changes to the repository with GIT. Take a look at an [example](example).
 
 If you have an old redmine wiki page that you want to port, there are instructions on [importing from redmine](importing_from_redmine).
+
+If you are making changes, you can download and test them locally. [Instructions here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 
 ### Support or Contact
 

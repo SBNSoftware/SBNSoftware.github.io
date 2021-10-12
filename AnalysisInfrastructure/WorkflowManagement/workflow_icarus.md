@@ -20,3 +20,9 @@ multitpc_detsim_icarus.fcl<br>
 reco_icarus_driver_reco_multitpc_gauss.fcl<br>
 reco_icarus_driver_reco_multitpc_raw.fcl<br>
 </details>
+
+<details><summary>CAF maker</summary>
+cafmakerjob_icarus_sce.fcl
+</details>
+
+[MC 2021B](https://docs.google.com/document/d/13Mvt91CVixfdo1e3ah9Ru-wfbYUXEvHMlcbVk2RYCsE/edit?usp=sharing)

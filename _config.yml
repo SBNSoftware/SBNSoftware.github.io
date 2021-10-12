@@ -13,6 +13,7 @@ plugins:
   - jekyll-github-metadata
   - kramdown
   - rouge
+  - jekyll-site-tree
 
 exclude:
   - Gemfile
@@ -58,6 +59,13 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 syntax_highlighter: rouge
+
+site_tree.file: map.md
+# site_tree.collapse = true
+# hide status error pages (404.html, 287.html, ...) & any js, css, json... files from the site tree.
+# site_tree.exclude:
+#   - /\d+\.[^\/]+$
+#   - \.(js|css|json|xml|png|jpeg|jpg|art|ant|ico)$
 
 footer_menu: example_footer_menu
 

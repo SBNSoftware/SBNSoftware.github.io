@@ -213,7 +213,7 @@ name                                              | introduced  | description   
 
 Geometry can be selected by including one of the predefined
 configurations defined in
-[source:icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/geometry_icarus.fcl),
+[icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
 The procedures are the same as documented for the newer versions.
 The drop-in configurations also work as above, but with two relevant
@@ -354,6 +354,8 @@ a channel number:
 
 (which in `icaruscode` `v09_15_00` it is called `icarus_channelmap.txt`).
 
+ICARUS geometry update was described in SBN-doc-21693-v3 (Apr 2021).
+
 
 ### Booster Neutrino Beam target and decay pipe
 
@@ -362,8 +364,8 @@ Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0
 > **TODO** people with more exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
 
 
-### Neutrinos from Main Injector target and decay pipe
+### Neutrinos from Main Injector target and decay pipe (NuMI)
 
-> **TODO** people with approximate or exact knowledge feel free to add it here (also mentioning `icaruscode` version when referring to world coordinates)
-
+ICARUS position w.r.t. NuMI coordinates is described in SBN-doc-22998 (Aug 2021).
+Detector position for MC was updated in the following pull request: https://github.com/SBNSoftware/icaruscode/pull/230
 

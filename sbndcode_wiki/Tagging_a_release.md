@@ -48,13 +48,16 @@ Instructions
     any merge conflicts.
 
 -   Change any files that include the version number of the package
-    being tagged and the version numbers of dependent products.
+    being tagged and the version numbers of dependent products. 
+    Note: from v09_31_00 (art 3.09) onward the package version number is set in CMakeLists rather than product_deps
 
 -   Check the [larsoft release
     notes](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/LArSoft_release_list)
     for version numbers.
 
 -   Files to edit:
+    -   `$MRB_SOURCE/sbndcode/CMakeLists.txt`
+    -   `$MRB_SOURCE/sbndutil/CMakeLists.txt`
     -   `$MRB_SOURCE/sbndcode/ups/product_deps`
     -   `$MRB_SOURCE/sbndutil/ups/product_deps`
 

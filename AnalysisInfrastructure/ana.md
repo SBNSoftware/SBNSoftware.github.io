@@ -1,3 +1,5 @@
-# Analysis Code Management
+# Analysis frameworks and formats
 
-test
+Material:
+* [coding guidelines for CAF software](../sbn/codingconv/CodingConventions.md) (and beyond)
+

@@ -2,7 +2,8 @@
 layout: page
 title: SBND Code Wiki
 subtitle: Specific Wiki for SBND
-image: sbndcode_wiki/sbnd_logo.png
+# image: sbnd_logo.png
+# hero_image: sbnd_logo.png
 description: Wiki documentation specific to SBND
 hero_height: is-medium
 # menubar: sbndcode_menu
@@ -79,6 +80,12 @@ Running Jobs on the grid
 -   [Vito New thing - To Do](Vito_New_thing_-_To_Do_.html){.wiki-page
     .new}
 
+
+Using the CI & Validation System
+--------------------------------------------------------------------
+
+-   [Continuous Integration Tests](ContinuousIntegration/Continuous_integration.md)
+-   [Validation Tests](ContinuousIntegration/CI_Validation.md)
 
 
 Useful Tidbits of Information.

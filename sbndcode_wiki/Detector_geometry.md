@@ -3,7 +3,9 @@ layout: page
 title: Detector Geometry
 ---
 
-
+This page contains information about the most recent version of the SBND geometry (`v02_00`). The content here presented is constantly being updated as requested.
+- [Photo Detection System](Detector_geometry_pds.md)
+- [How to Visualize the Geometry](Detector_geometry_view.md)
 
 SBND Detector Geometry
 ================================================================
@@ -35,6 +37,7 @@ services.Geometry.ROOT: "sbnd_v01_05.gdml"
 services.AuxDetGeometry.GDML: "sbnd_v01_05.gdml"
 services.AuxDetGeometry.ROOT: "sbnd_v01_05.gdml"
 ```
+
 
   | Series | Variant | Patch level | Present in `sbndcode`      |  Default in `sbndcode`     | Description                               
   |--------|---------|-------------|----------------------------|----------------------------|---------------------------------------

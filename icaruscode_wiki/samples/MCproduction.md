@@ -10,9 +10,14 @@ List of simulated samples
 --------------------------
 
 ICARUS simulation samples are produced under the umbrella of the SBN production team.
+The instructions to request a new sample can be found in the [SBN production wiki](../../sbn/sbnprod_wiki/Wiki.md#production-sample-requests).
 
 Samples are currently tracked on a database in the form of a [spreadsheet][MCDB].
 Samples produced October 2020 and earlier were tracked in [ICARUS wiki](https://cdcvs.fnal.gov/redmine/projects/icarus-production/wiki/Status_of_MC_Production).
+
+The SBN Analysis Infrastructure group is attempting to keep a list of
+["standard" configurations used in the SBN production campaigns](https://sbnsoftware.github.io/AnalysisInfrastructure/WorkflowManagement/workflow_icarus.html)
+(which may also include ICARUS-specific samples).
 
 
 How to access samples

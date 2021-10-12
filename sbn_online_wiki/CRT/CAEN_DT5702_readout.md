@@ -4,22 +4,14 @@ title: Running CAEN DT5702 readout of CRT
 toc: true
 ---
 
-
-
-Running CAEN DT5702 readout of CRT
-===============================================================================================
-
-
-Introduction
-============================================
+## Introduction
 
 ICARUS side and top CRT is read using CAEN DT5702 front end boards
 (FEB), developed at University of Bern.
 
 
 
-Hardware connections
-============================================================
+## Hardware connections
 
 -   T0 - normally should have PPS (1 pulse per second) signal connected
 -   T1 - optional additional source of trigger
@@ -31,13 +23,10 @@ using another Ethernet port (doesn\'t matter which one).
 
 
 
-febdrv
-================================
+## febdrv
 
+### Introduction
 
-
-Introduction
-----------------------------------------------
 
 febdrv communicates with FEBs via Ethernet. Originally written as
 standalone program, it has been adopted to the needs of SBN DAQ
@@ -46,8 +35,8 @@ and finally integrated with the fragment generator.
 Directory `sbndaq-artdaq/Generators/Common/Bern/` contains old,
 standalone febdrv which is no longer in use.
 
-Permissions
-------------------------------
+### Permissions
+
 
 As febdrv needs to access Ethernet port, the boardreader process requires
 special permissions.
@@ -68,20 +57,16 @@ For DAQInterface `known_boardreaders_list` needs to contain the following line:
 `boardereader_name server_name -1 1 0-15 "/usr/libexec/ambient_cap_net_raw /bin/env LD_LIBRARY_PATH=$LD_LIBRARY_PATH "`
 
 
-FHiCL configuration
-==========================================================
+## FHiCL configuration
 
-
-
-Overview
-------------------------------------
+### Overview
 
 A FHiCL file for CRT corresponds to a single Ethernet port, or a
 single *chain* of FEBs connected to that port. 
 
 The most important parameters:
+-   Number of FEB in the chain (`generated_fragments_per_event`)
 -   list of `fragment_ids` (see below).
-    As fragment ID contains the last 8 bits of FEB MAC addresses
 -   corresponding list of the same size determining if SiPM bias voltage on that FEB should be turned  on (`TurnOnHV`)
 -   delay of PPS signal w.r.t. GPS-synchronised source (`PPS_offset_ns`). This allows fragment generator to correct for the delay introduced by cable lengths
 
@@ -106,8 +91,7 @@ based on the database information.
 
 
 
-Fragment ID
-------------------------------------------
+### Fragment ID
 
 The naming convention for CRT fragments is documented in
 <https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16111>
@@ -119,23 +103,19 @@ table `fragment_ids`.
 
 
 
-Code
-============================
+## Code
 
+### Where is the code?
 
-
-Where is the code?
--------------------------------------------------------
 
 - `sbndaq-artdaq/Generators/Common/Bern` -- board reader
 - `sbndaq-artdaq-core/Overlays/Common` -- structure definitions
 
 
 
-Status
---------------------------------
+### Status
 
-(10/27/20)
+(10/08/21)
 
 -   Board reader is fully functional
 -   CRT measures absolute time of each hit based on nanosecond time measured by FEB
@@ -145,14 +125,11 @@ To do:
 
 -   Cross check timestamps with DAQ components
 -   Prepare framework to produce hardware configuration from the DB
--   Fix minor bugs in configuration code
--   Prepare configuration for all FEB in the experiment
--   Test, and if needed improve performance
 
 
 
-DAQ server configuration
-====================================================================
+## DAQ server configuration
+
 
 The following actions are needed on each new ICARUS CRT DAQ server:
 

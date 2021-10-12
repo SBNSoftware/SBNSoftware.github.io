@@ -120,7 +120,9 @@ If you check `ups active` you'll see that it points to your locally built produc
 Now (finally?) you are ready to edit the code:  
 `cd $MRB_SOURCE`  
 `cd <package>`  
- and edit away!   
+ and edit away!
+ A [list of coding guidelines](../sbn/codingconv/CodingConventions.md) is provided that summarises some local conventions and best practices,
+ and that is strictly enforced for Common Analysis Format (CAF) code.
  
  We recommend to regularly commit the changes you make, starting inside `$MRB_SOURCE/<package>`:  
  `git status`, this will list all the changes you've made  
@@ -129,6 +131,8 @@ Now (finally?) you are ready to edit the code:
  `git push -u origin feature/$USER_<feature_name>`, this pushes it to our shared repository   
 
 After doing a bunch of those you are probably ready for these changes to be merged into our next distributed code release so others can play with it too!
+Code intended for most repository will be subject to an internal review before merging;
+for example, [coding guidelines](../sbn/codingconv/CodingConventions.md) are enforced for Common Analysis Format (CAF) code (in `sbncode`).
 
 ## Building and Testing Your Code
 
@@ -141,13 +145,24 @@ For #2 it would be great to post these checks to the DocDB so that others can se
 ## Submitting a Pull-Request
 
 Great! Now we know your code builds and you have validated it now we can move to merging it into our release. 
-
+   
+1. Open a Pull Request when your code is ready.
 The next step is to alert the [Release-Management Team](https://sbnsoftware.github.io/AnalysisInfrastructure/index) that you would like your code to be reviewed for inclusion into a release. We do this via a [pull-request](https://www.atlassian.com/git/tutorials/making-a-pull-request).
-
 There are two ways to do this:
-1. use the github website: `https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name>` and click "pull request"
-2. use this command line arguement
+   
+a. use the github website: `https://github.com/SBNSoftware/<package>/tree/feature/$USER_<feature_name>` and click "pull request"
+   
+b. use command line [hub](https://hub.github.com/) extension.
+   
+You can track your pull-requests here: `https://github.com/SBNSoftware/<package>/pulls`
+Add as much information as possible to the comments: description, validation [Validation standard plot] slides, priority, contact details … 
 
-You can track your pull-requests here: `https://github.com/SBNSoftware/<package>/pulls`, to help speed thing along you can suggest someone to review your code changes (here is a [list](suggested-reviewers) of suggested reviewers and their git-hub handles) and post your validation slides to the comments. 
-  
-Once approved this will be merged into our next release! 
+2. Assign a reviewer.
+working group colleague, someone familiar with your code, reviewers [list](suggested-reviewers and their git-hub handles) …
+
+3. Address request, changes or comments.
+
+4. Trigger the integrated CI test with a comment (for e20/c7:prof). 
+If successful your code will be merged into the stack. Wait for nightly build  (e20/c7:debug) outputs (Dashboard or Slack).
+
+5. Your code is ready to be released. Once approved this will be merged into our next release! 
