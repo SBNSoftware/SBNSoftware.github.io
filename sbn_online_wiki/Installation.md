@@ -109,6 +109,8 @@ mrbslp
 ```
 The `-j8` option tells it to parallelize the build on 8 threads. You may use more or less depending on the number of cores available on the machine you are building on.
 
+If prompted to run the `mrb uc` command then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
+
 5. If you need to rebuild repositories you've already pulled down (like, after changing a few lines of code), you will typically only need to do:
 ```
 cd $MRB_BUILDDIR
@@ -118,6 +120,7 @@ However, if you pull down new repositories or make changes to product dependenci
 ```bash
 cd $MRB_BUILDDIR
 mrb z
+mrb zi
 mrbsetenv
 mrb i -j32
 mrbslp
