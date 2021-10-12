@@ -39,7 +39,7 @@ ups list -aK+ sbndaq
 ```
 It's recommended you use the latest available version with e20:prof:s106 as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe20:prof:s106
+setup sbndaq v#_##_## -qe20:prof:s112
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
