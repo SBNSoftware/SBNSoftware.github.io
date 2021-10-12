@@ -55,7 +55,7 @@ If you're doing development work, then you'll want to be able to create a develo
 
 1. Setup the `mrb` environment:
 ```bash
-setup mrb
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
@@ -138,7 +138,7 @@ setup sbndaq {version} -q {qualifiers}
 ```
 3. Create a new `localProducts` directory, _while keeping the same `srcs` directory_:
 ```bash
-setup mrb
+setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 cd <your_existing_working_area>
 mrb newDev -p
