@@ -102,7 +102,24 @@ sbndaq
 
 4. Build by doing:
 
-Important: If prompted to run the `mrb uc` command then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
+Important: If prompted to run the `mrb uc` command (see the output example below) then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
+```bash
+------------------------------------
+INFO: stage cmake for MRB project sbndaq v1_00_00
+------------------------------------
+CMake Error at /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:37 (message):
+  Current CMake subdirectory inclusion order is not consistent with current
+  packages and their interdependencies.
+
+  Please run "mrb uc" to regenerate ${MRB_SOURCE}/CMakeLists.txt with
+  subdirectories listed for inclusion in the correct order.
+Call Stack (most recent call first):
+  /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:79 (mrb_check_subdir_order)
+  CMakeLists.txt:5 (include)
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: stage cmake FAILED for MRB project sbndaq v1_00_00 with code 1
+```bash
+
 ```bash
 cd $MRB_BUILDDIR
 mrbsetenv
