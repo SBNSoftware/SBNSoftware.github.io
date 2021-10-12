@@ -101,6 +101,8 @@ sbndaq
 ```
 
 4. Build by doing:
+
+Important: If prompted to run the `mrb uc` command then run it followed by `mrbsetenv` and rerun the build `mrb i -j8`.
 ```bash
 cd $MRB_BUILDDIR
 mrbsetenv
