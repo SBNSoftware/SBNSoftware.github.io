@@ -35,7 +35,7 @@ source /daq/software/products_dev/setup   #dev area
 ```
 3. Setup the version of sbndaq we are based. To see a list of the different available versions, use
 ```bash
-ups list -aK+ sbndaq
+ups list -aK+ sbndaq -qe20:s112:prof
 ```
 It's recommended you use the latest available version with e20:prof:s106 as the option. Then, to set up, use:
 ```bash
