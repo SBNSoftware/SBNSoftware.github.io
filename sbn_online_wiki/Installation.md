@@ -114,7 +114,7 @@ If prompted to run the `mrb uc` command then run it followed by `mrbsetenv` and 
 5. If you need to rebuild repositories you've already pulled down (like, after changing a few lines of code), you will typically only need to do:
 ```
 cd $MRB_BUILDDIR
-make -j8 install
+make i -j8
 ```
 However, if you pull down new repositories or make changes to product dependencies, it's often true you may need to do a cleanup ("zap") and complete rebuild:
 ```bash
@@ -122,7 +122,7 @@ cd $MRB_BUILDDIR
 mrb z
 mrb zi
 mrbsetenv
-mrb i -j32
+mrb i -j8
 mrbslp
 ```
 
@@ -155,18 +155,21 @@ cd $MRB_BUILDDIR
 mrb z
 mrbsetenv
 mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 ```
 
 ### Suggested summary install script
 Put the commands that never change into your bash login script
 ```bash
 source /daq/software/products/setup
+source /daq/software/products_dev/setup
 setup mrb v5_18_01
 export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v0_07_01 -q e19:prof:py2:s97
+setup sbndaq v1_00_00 -q e20:prof:s112
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
@@ -174,12 +177,15 @@ echo sbndaq qualifiers: $my_sbndaq_quals
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 
-mrb g -d sbndaq git@github.com:SBNSoftware/sbndaq.git
-mrb g -d sbndaq_artdaq  git@github.com:SBNSoftware/sbndaq-artdaq.git
+mrb g sbndaq
+mrb g sbndaq_artdaq
 
 cd build*
 mrbsetenv
 mrb i -j8 |& tee make.log
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8 |& tee make.log
+
 mrbslp
 ```
 
