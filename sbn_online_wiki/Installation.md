@@ -105,6 +105,8 @@ sbndaq
 cd $MRB_BUILDDIR
 mrbsetenv
 mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 mrbslp
 ```
 The `-j8` option tells it to parallelize the build on 8 threads. You may use more or less depending on the number of cores available on the machine you are building on.
@@ -123,6 +125,8 @@ mrb z
 mrb zi
 mrbsetenv
 mrb i -j8
+#run only if prompted by mrb
+#mrb uc && mrbsetenv && mrb i -j8
 mrbslp
 ```
 
