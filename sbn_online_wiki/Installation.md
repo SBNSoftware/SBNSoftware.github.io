@@ -118,7 +118,7 @@ Call Stack (most recent call first):
   CMakeLists.txt:5 (include)
 -- Configuring incomplete, errors occurred!
 FATAL ERROR: stage cmake FAILED for MRB project sbndaq v1_00_00 with code 1
-```bash
+```
 
 ```bash
 cd $MRB_BUILDDIR
