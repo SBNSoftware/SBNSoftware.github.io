@@ -13,6 +13,7 @@ command that installs configuration migration tools into the ```$SBNDAQ_DIR/conf
 $MRB_TOP/srcs/sbndaq/configDB_tools/config-migration-scripts/ and create a new one if required. Rerun the ```mrb -i; mrbslp``` command to install your new script into the $MRB_TOP/localProducts_*/sbndaq/version/configDB_tools/config-migration-scripts directory.
 
 * Setup the sbndaq product from the ```$MRB_TOP/localProducts_*``` directory and confirm that the ```migrateConfigs.sh``` script will execute from ```$MRB_TOP/localProducts_*```  by running the ```which migrateConfigs.sh``` command.
+
 ```bash
 ups list -aK+ sbndaq -z $MRB_TOP/localProducts_*
 #$ "sbndaq" "v1_00_00" "Linux64bit+3.10-2.17" "e20:prof:s112" ""
@@ -51,11 +52,13 @@ Examples:
 ```
 
 * Migrate sbndaq configurations.
+
 ```bash
 migrateConfigs.sh -c ./my-configs.list -s ./my-working-migrate.script
 ```
 
 * Check the output for errors.
+
 ```bash
 Info: Running migrateConfigs.sh
 Info: Instructions https://sbnsoftware.github.io/sbn_online_wiki/MigrateConfigs
