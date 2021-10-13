@@ -20,7 +20,7 @@ Developing in sbndaq
 Configuration DB Instructions
 ----------------------------------------------
 * [See here for instructions on working with the configuration database](ConfigDB)
-* [See here for instructions on migrating configurations in the configurations database](MigrateConfigs.md)
+* [See here for instructions on migrating configurations in the configurations database](MigrateConfigs)
 
 
 Release Instructions
