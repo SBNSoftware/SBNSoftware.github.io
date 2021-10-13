@@ -59,7 +59,7 @@ migrateConfigs.sh -c ./my-configs.list -s ./my-working-migrate.script
 
 * Check the output for errors.
 
-```bash
+```
 Info: Running migrateConfigs.sh
 Info: Instructions https://sbnsoftware.github.io/sbn_online_wiki/MigrateConfigs
 Info: Running migrateConfigs.sh with options:
