@@ -50,7 +50,7 @@ Examples:
 ```
 
 * Migrate sbndaq configurations.
-```nash
+```bash
 migrateConfigs.sh -c ./my-configs.list -s ./my-working-migrate.script
 ```
 
