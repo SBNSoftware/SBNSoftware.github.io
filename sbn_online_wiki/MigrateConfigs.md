@@ -25,7 +25,7 @@ which migrateConfigs.sh
 
 * Run ```migrateConfigs.sh --help``` and review its usage.
 ```bash
-$ migrateConfigs.sh --help
+migrateConfigs.sh --help
 Info: Running migrateConfigs.sh
 Info: Instructions https://sbnsoftware.github.io/sbn_online_wiki/MigrateConfigs
 
