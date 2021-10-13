@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Instructions for migrating configurations in artdaq_database.
+title: If you need to change one or more parameters in fhicl files for multiple sbndaq configurations, you may follow the procedure as described below.
 hero_height: is-small
 ---
-
-If you need to change one or more parameters in fhicl files for multiple sbndaq configurations, you may follow the procedure as described below.
 
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` 
 command that installs configuration migration tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
