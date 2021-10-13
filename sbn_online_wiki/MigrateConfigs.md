@@ -24,7 +24,7 @@ which migrateConfigs.sh
 * Create a new file with [a list of configuration names](https://github.com/SBNSoftware/sbndaq/blob/develop/configDB_tools/config-migration-scripts/configs-example.list) you need to migrate.
 
 * Run ```migrateConfigs.sh --help``` and review its usage.
-```
+```bash
 $ migrateConfigs.sh --help
 Info: Running migrateConfigs.sh
 Info: Instructions https://sbnsoftware.github.io/sbn_online_wiki/MigrateConfigs
@@ -50,12 +50,12 @@ Examples:
 ```
 
 * Migrate sbndaq configurations.
-```
+```nash
 migrateConfigs.sh -c ./my-configs.list -s ./my-working-migrate.script
 ```
 
 * Check the output for errors.
-```
+```bash
 Info: Running migrateConfigs.sh
 Info: Instructions https://sbnsoftware.github.io/sbn_online_wiki/MigrateConfigs
 Info: Running migrateConfigs.sh with options:
