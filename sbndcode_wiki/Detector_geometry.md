@@ -5,6 +5,7 @@ title: Detector Geometry
 
 This page contains information about the most recent version of the SBND geometry (`v02_00`). The content here presented is constantly being updated as requested.
 - [Photo Detection System](Detector_geometry_pds.md)
+- [Cosmic Ray Tagger (CRT) System](Detector_geometry_crt.md)
 - [How to Visualize the Geometry](Detector_geometry_view.md)
 
 SBND Detector Geometry
