@@ -32,14 +32,14 @@ There are also pages for [developing](Developing_Validation_Tests.md) new Valida
    
    ```
    trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND_test \
-           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all_test.cfg --revision "repo@branch" --testmode
+           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all_test.cfg --revisions "repo@branch" --testmode
    ```
  
 - Once your test job has succeeded (or you're feeling brave) then the full validation can be triggered with the following command:
    
    ```
    trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND \
-           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all.cfg --revision "repo@branch"
+           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all.cfg --revisions "repo@branch"
    ```
 
 **READ THIS SECTION BEFORE TRIGGERING**
