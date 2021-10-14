@@ -14,7 +14,8 @@ Detection physics
 
 ### Scintillation photons
 
-* propagation to the optical detectors
+* [physics of scintillation](Scintillation.md)
+* [propagation to the optical detectors](PhotonPropagation.md)
     * [photon visibility map](PhotonLibrary.md)
 
 
