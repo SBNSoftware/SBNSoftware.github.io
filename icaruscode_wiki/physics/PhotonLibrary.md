@@ -25,6 +25,8 @@ from anywhere in the active part of the detector, to any of the optical detector
 The resulting map is queried each time a group of photons needs to be propagated.
 
 This page describes a procedure to generate such a map, commonly called "photon library", for ICARUS detector.
+More static documentation, written at the time of library of December 2020,
+is in [SBN DocDB 19958](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=19958).
 
 
 Content of the map
@@ -343,6 +345,8 @@ and a two-step strategy was attempted where a job would be scheduled for 2 days,
 and if that fails automatically resubmitted with 3.5 days.
 Due to the age of some of the working nodes, a handful of jobs managed to fail the 3.5 day limit,
 but no job failed it twice (after manual resubmission).
+
+This production is also documented in [SBN DocDB 19958](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=19958).
 
 
 ### 20210426
