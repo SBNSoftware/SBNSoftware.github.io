@@ -32,7 +32,8 @@ The model described the allocation of the deposited energy between ionization an
 A summary of the model is the following:
 
 1. all the energy deposited in a GEANT4 step is considered (steps are usually small: millimetre-sized)
-2. the deposited energy is divided in 19.5-eV "quanta"
+2. the deposited energy is divided in 19.5-eV "quanta":
+   this is equivalent to a bit over 50,000 photons/MeV, or about 24,000 photons/cm for a minimum-ionizing particle (2.1 MeV/cm)
 3. 17% of the quanta is immediately assigned to scintillation, the remaining 79% is assigned to ionization
 4. recombination is estimated, and the ionization quanta lost for recombination are reassigned to scintillation
 
