@@ -7,7 +7,9 @@ title: Introduction to Simulation
 
 # Simulation software for SBN
 ### CORSIKA 
-CORSIKA is SBN's adopted Monte Carlo (MC) simulation package for generating cosmogenic particles. CORSIKA simulates detailed air showers initiated by highly energetic cosmic particles. More information about CORSIKA is available here: https://www.iap.kit.edu/corsika/. 
+CORSIKA is SBN's adopted Monte Carlo (MC) simulation package for generating cosmogenic particles. CORSIKA simulates detailed air showers initiated by highly energetic cosmic particles. More information about CORSIKA is available here: https://www.iap.kit.edu/corsika/.
+
+ICARUS documentation is currently in [ICARUS wiki](../icaruscode_wiki/Cosmic_ray_generation_with_CORSIKA.md).
 
 
 ### G4
