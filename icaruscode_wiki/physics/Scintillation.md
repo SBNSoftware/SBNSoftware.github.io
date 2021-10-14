@@ -1,9 +1,10 @@
 ---
 layout: page
-title: ICARUS simulation: scintillation
+title: "ICARUS simulation: scintillation"
 description: Simulation of the physics of scintillation
 toc: true
 ---
+
 
 Simulation of the physics of scintillation
 ===========================================
