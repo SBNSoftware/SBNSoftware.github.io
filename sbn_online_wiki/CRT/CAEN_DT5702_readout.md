@@ -139,7 +139,7 @@ The following actions are needed on each new ICARUS CRT DAQ server:
 
 -   In order to ensure the Ethernet ports are up at boot, for each
     Ethernet port to be used for FEB readout modify the following lines
-    in the corresponding files in `/etc/sysconfig/network-scripts/`:\
+    in the corresponding files in `/etc/sysconfig/network-scripts/`:
 
         ONBOOT=yes
         BOOTPROTO=none
