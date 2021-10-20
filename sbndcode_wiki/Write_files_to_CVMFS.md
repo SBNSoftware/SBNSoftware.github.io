@@ -85,15 +85,15 @@ A few SBND people are allowed to log as `cvmfssbnd` on
     kinit blesseduser@FNAL.GOV
     ssh cvmfssbnd@oasiscfs.fnal.gov
 
-\
-As of December 2016, these people are blessed:
 
--  [Andrzej Szelc](mailto:aszelc@ed.ac.uk)
--  [Gianluca Petrillo](mailto:petrillo@fnal.gov)
--  [Corey Adams](mailto:corey.adams@yale.edu)
--  [Roxanne Guenette](mailto:Roxanne.Guenette@physics.ox.ac.uk)
--  [Tom Brooks](mailto:tom.g.r.brooks@gmail.com)
--  [Andrew Scarff](mailto:a.scarff@sheffield.ac.uk)
+
+As of October 2021, these people are blessed:
+- [Andrzej Szelc](mailto:a.szelc@ed.ac.uk)
+- [Patrick Green](mailto:patrick.green-3@postgrad.manchester.ac.uk)
+- [Miquel Nebot-Guinot](mailto:miquel.nebot@ed.ac.uk)
+- [Wes Ketchum](mailto:wketchum@fnal.gov)
+- [Chris Hilgenberg](mailto:chilgenb@umn.edu)
+- [Vito Di Benedetto](mailto:vito@fnal.gov)
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfssbnd`.\
