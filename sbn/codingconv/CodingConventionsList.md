@@ -547,7 +547,8 @@ consideration.
   from the largest to the smallest to avoid waste of memory from data alignment.
 
 [`[CF.153]`](#CF153) <span id="CF153"> **[++]**
-  Initialize configuration data members in the constructor initializer list
+  Initialize data members holding configuration information
+  (e.g. a threshold for an algorithm) in the constructor initializer list
   (and mark them `const` if feasible).
 
 [`[CF.154]`](#CF154) <span id="CF154"> **[+++]**
