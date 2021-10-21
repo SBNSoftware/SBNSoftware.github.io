@@ -528,10 +528,10 @@ Conversely, the choice of one method over the other reflects the underlining
 consideration.
 
 [`[CF.121]`](#CF121) <span id="CF121"> **[++]**
-  Use unchecked access when the element is already known to be in range
+  Use unchecked access when the element is already known to be in range.
 
 [`[CF.122]`](#CF122) <span id="CF122"> **[++]**
-  to be present, in which case request should be documented.
+  Use unchecked access when the element is expected by protocol to be present.
 
 
 #### User class design
