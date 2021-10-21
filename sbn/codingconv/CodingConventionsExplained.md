@@ -417,10 +417,10 @@ wrong results.
 
 ##  [CL] LArSoft and _art_  ################################################
 
-[`[CC.01]`](#CC01) <span id="CC01"> **[++]**
+[`[CL.01]`](#CL01) <span id="CL01"> **[++]**
   In general, the use of the practices recommended by _art_ is **encouraged**.
 
-[`[CC.02]`](#CC02) <span id="CC02"> **[++]**
+[`[CL.02]`](#CL02) <span id="CL02"> **[++]**
   The **encouraged** form for reading a data product from `art::Event` depends on
   the case. The most common ones are:
   * if no _art_ associations are needed:
@@ -433,7 +433,7 @@ wrong results.
     std::vector<recob::Hit> const& hits = *hitHandle;
     ```
 
-[`[CC.03]`](#CC03) <span id="CC03"> **[++]**
+[`[CL.03]`](#CL03) <span id="CL03"> **[++]**
   The use of `art::InputTag` in place of plain `std::string` for identifying
   data products is **strongly encouraged**.
   Example:
@@ -465,7 +465,7 @@ wrong results.
     art::InputTag thm_label = fTRKHMproducer.empty()? fTRKproducer: fTRKHMproducer;
   ```
 
-[`[CC.04]`](#CC04) <span id="CC04"> **[−]**
+[`[CL.04]`](#CL04) <span id="CL04"> **[−]**
   Alternatives to `art::FindManyP` are **suggested** if possible. For example,
   if there is the prescription that associations are ordered, like in
   `art::Assns<recob::Cluster, recob::Hit>`, and sequential iterations are needed,
@@ -473,22 +473,22 @@ wrong results.
   [`util::associated_groups_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/ForEachAssociatedGroup_8h.html)
   (`lardata/Utilities/ForEachAssociatedGroup.h`) are suitable and more efficient.
 
-[`[CC.05]`](#CC05) <span id="CC05"> **[+]**
+[`[CL.05]`](#CL05) <span id="CL05"> **[+]**
   The use of `art::ProductToken` is **suggested** for simple data product reading.
 
-[`[CC.06]`](#CC06) <span id="CC06"> **[++]**
+[`[CL.06]`](#CL06) <span id="CL06"> **[++]**
   The use of `consumes()` calls in module constructors is **encouraged**.
 
-[`[CC.07]`](#CC07) <span id="CC07"> **[++]**
+[`[CL.07]`](#CL07) <span id="CL07"> **[++]**
   The use of [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
   is **encouraged** as it adds greatly to both usability and robustness.
 
-[`[CC.08]`](#CC08) <span id="CC08"> **[++]**
+[`[CL.08]`](#CL08) <span id="CL08"> **[++]**
   When data structures indexed by a plane or TPC are needed, the containers provided
   by [`geo::GeometryCore::makePlaneData()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#a4133ed1f337780925ac5e2d7f7a2ddeb)
   and similar are **encouraged** and should be preferred over a nested array.
 
-[`[CC.09]`](#CC09) <span id="CC09"> **[++]**
+[`[CL.09]`](#CL09) <span id="CL09"> **[++]**
   For iteration through TPC, planes etc., the use of
   `geo::GeometryCore::IterateXxxx()` methods
   (e.g. [`IteratePlanes()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#ae8ca7d464c8c3e1095ca64a640094367))
