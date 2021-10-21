@@ -1143,23 +1143,23 @@ consideration.
   struct TrackData { // BAD data alignment
     bool contained { false }; /// If `true`, track is fully contained.
     double energy { 0.0 };    /// Estimated energy [GeV]
-    unsigned int nHits;       /// Number of hits along the track from all planes.
+    unsigned int nHits { 0 }; /// Number of hits along the track from all planes.
   }; // TrackData
   ```
   is likely to take 24 bytes, while reordering it as
   ```cpp
   struct TrackData {
     double energy { 0.0 };    /// Estimated energy [GeV]
-    unsigned int nHits;       /// Number of hits along the track from all planes.
+    unsigned int nHits { 0 }; /// Number of hits along the track from all planes.
     bool contained { false }; /// If `true`, track is fully contained.
   }; // TrackData
   ```
   would reduce the size to 16 bytes.
 
 [`[CF.153]`](#CF153) <span id="CF153"> **[++]**
-  The initialization of configuration data members in the constructor
-  initializer list is **encouraged**, as is their constantness
-  if the class does not need to be copyable.
+  The initialization of data members containing configuration information
+  is **encouraged** to happen in the constructor initializer list,
+  and their constantness is also recommended if the class does not need to be copyable.
   For example:
   ```cpp
   class EnergyEstimatorAlg {
@@ -1168,7 +1168,8 @@ consideration.
     
       public:
     
-    EnergyEstimatorAlg(double chargeThr);
+    EnergyEstimatorAlg(double chargeThr)
+      { fChargeThreshold = chargeThr; }
     
     // ...
   };
@@ -1181,11 +1182,15 @@ consideration.
     
       public:
     
-    EnergyEstimatorAlg(double chargeThr);
+    EnergyEstimatorAlg(double chargeThr)
+      : fChargeThreshold{ chargeThr }
+      {}
     
     // ...
   };
   ```
+  if the class does not need to be copied or moved, and the same but without `const`
+  if the class _does_ need to be copied or moved.
 
 [`[CF.154]`](#CF154) <span id="CF154"> **[+++]**
   It is **required** that all member functions that do not modify the object
