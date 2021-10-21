@@ -1041,7 +1041,9 @@ consideration.
   Unchecked access is **encouraged** also when the element is expected
   by protocol to be present, in which case documenting the expectation
   (e.g. with an assertion) is also **encouraged**.
-  If that applies to `charges` of the example above, it may become:
+  If that applies to `charges` of the example above,
+  because for example the documentation explicitly asserts that `data`
+  is assumed to have the same size as `charge`, the snippet may become:
   ```cpp
   assert(charges.size() == data.size());
   for (std::size_t i = 0; i < data.size(); ++i) {
