@@ -436,6 +436,34 @@ wrong results.
 [`[CC.03]`](#CC03) <span id="CC03"> **[++]**
   The use of `art::InputTag` in place of plain `std::string` for identifying
   data products is **strongly encouraged**.
+  Example:
+  ```cpp
+  // ... at declaration ...
+  
+    std::string fTRKHMproducer;
+    
+  // ... at initialization ...
+    
+      fTRKHMproducer= p.get<std::string>("TRKHMproducer", "");
+  
+  // ... at utilization ...
+    
+    art::InputTag thm_label = (fTRKHMproducer.size() ? art::InputTag(fTRKHMproducer) : fTRKproducer);
+  ```
+  should be:
+  ```cpp
+  // ... at declaration ...
+  
+    art::InputTag fTRKHMproducer;
+    
+  // ... at initialization ...
+    
+      fTRKHMproducer= p.get<art::InputTag>("TRKHMproducer", {});
+  
+  // ... at utilization ...
+    
+    art::InputTag thm_label = fTRKHMproducer.empty()? fTRKproducer: fTRKHMproducer;
+  ```
 
 [`[CC.04]`](#CC04) <span id="CC04"> **[−]**
   Alternatives to `art::FindManyP` are **suggested** if possible. For example,
