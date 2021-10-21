@@ -472,6 +472,51 @@ wrong results.
   [`art::for_each_group_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/namespaceart.html#af20019c68ad469044f2ce12ed469441d) or
   [`util::associated_groups_with_left()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/ForEachAssociatedGroup_8h.html)
   (`lardata/Utilities/ForEachAssociatedGroup.h`) are suitable and more efficient.
+  Also, if `art::Ptr` objects are not needed, `art::FindMany` will yield
+  vectors of C pointers instead.
+  Furthermore, if only one associated element is expected, using `art::FindOneP`
+  (or `art::FindOne`, slightly more complicate to use) will implicitly check that assumption
+  and will fail if there are more than one objects associated to the same key object
+  (which is a good failure, since it highlights a wrong expectation).
+  `art::FindOneP` returns a `art::Ptr` to the object associated to a key,
+  and that pointer is null if no such object exists.
+  For example, Pandora may associate timing information (`anab::T0`) to a track
+  (`recob::Track`). To retrieve the timing for a collection of `tracks`:
+  ```cpp
+    art::FindManyP<anab::T0> fmT0(tracks, event, fT0Label);
+  
+  // in a track loop:
+  
+      std::vector<art::Ptr<anab::T0>> const& t0s = fmT0.at(i);
+      if (!t0s.empty())
+      {
+        track_t0 = t0s.front()->Time() / 1e3 /* ns -> us */;
+      }
+  ```
+  is better written as:
+  ```cpp
+    art::FindOneP<anab::T0> fmT0(tracks, event, fT0Label);
+  
+  // in a track loop:
+  
+      art::Ptr<anab::T0> const& t0 = fmT0.at(i);
+      if (t0)
+      {
+        track_t0 = t0->Time() / 1e3 /* ns -> us */;
+      }  
+  ```
+  or as:
+  ```cpp
+    art::FindOne<anab::T0> fmT0(tracks, event, fT0Label);
+  
+  // in a track loop
+  
+      cet::maybe_ref t0 = fmT0.at(i);
+      if (t0)
+      {
+        track_t0 = t0.ref().Time() / 1e3 /* ns -> us */;
+      }  
+  ```
 
 [`[CL.05]`](#CL05) <span id="CL05"> **[+]**
   The use of `art::ProductToken` is **suggested** for simple data product reading.
