@@ -323,11 +323,11 @@ wrong results.
 
 [_explanations_](CodingConventionsExplained.md#cl-larsoft-and-art)
 
-[`[CC.01]`](#CC01) <span id="CC01"> **[++]**
+[`[CL.01]`](#CL01) <span id="CL01"> **[++]**
   In general, try to adopt the practices recommended by _art_
   if not conflicting with these guidelines.
 
-[`[CC.02]`](#CC02) <span id="CC02"> **[++]**
+[`[CL.02]`](#CL02) <span id="CL02"> **[++]**
   Depending on the context, read a _art_ data product using:
   * if no _art_ associations are needed:
     ```cpp
@@ -339,28 +339,28 @@ wrong results.
     std::vector<recob::Hit> const& hits = *hitHandle;
     ```
 
-[`[CC.03]`](#CC03) <span id="CC03"> **[++]**
+[`[CL.03]`](#CL03) <span id="CL03"> **[++]**
   Use `art::InputTag` data type to identify data products.
 
-[`[CC.04]`](#CC04) <span id="CC04"> **[−]**
+[`[CL.04]`](#CL04) <span id="CL04"> **[−]**
   Consider alternatives to `art::FindManyP` if available.
 
-[`[CC.05]`](#CC05) <span id="CC05"> **[+]**
+[`[CL.05]`](#CL05) <span id="CL05"> **[+]**
   Use of `art::ProductToken` for simple data product reading.
 
-[`[CC.06]`](#CC06) <span id="CC06"> **[++]**
+[`[CL.06]`](#CL06) <span id="CL06"> **[++]**
   Declare input data products to _art_ by calling `consumes()`
   in module constructors.
 
-[`[CC.07]`](#CC07) <span id="CC07"> **[++]**
+[`[CL.07]`](#CL07) <span id="CL07"> **[++]**
   Use [configuration validation](https://cdcvs.fnal.gov/redmine/projects/fhicl-cpp/wiki/Configuration_validation_and_fhiclcpp_types)
   in place of plain `fhicl::ParameterSet` access.
 
-[`[CC.08]`](#CC08) <span id="CC08"> **[++]**
+[`[CL.08]`](#CL08) <span id="CL08"> **[++]**
   Use the containers provided by LArSoft `Geometry` service to store data
   by geometry plane, TPC etc.
 
-[`[CC.09]`](#CC09) <span id="CC09"> **[++]**
+[`[CL.09]`](#CL09) <span id="CL09"> **[++]**
   Use `Geometry` service methods to iterate through detector TPC, planes etc.
 
 
