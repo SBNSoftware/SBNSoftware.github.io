@@ -1260,24 +1260,29 @@ consideration.
   The assignment of a initialization value to all non-`const` data members
   in their declaration in the class is **encouraged**. For example:
   ```cpp
-  struct FilterEfficiency {
-    unsigned int fTotal;  ///< Number of events processed by the filter.
-    unsigned int fPassed; ///< Number of events passed by the filter.
+  struct Vector3D {
+    float x;
+    float y;
+    float z;
     
-    FilterEfficiency(): fTotal(0), fPassed(0) {}
+    Vector3D(): x{ 0.0 }, y{ 0.0 }, z{ 0.0 } {}
   };
   ```
   would be instead:
   ```cpp
-  struct FilterEfficiency {
-    unsigned int fTotal { 0 };  ///< Number of events processed by the filter.
-    unsigned int fPassed { 0 }; ///< Number of events passed by the filter.
+  struct Vector3D {
+    float x { 0.0 };
+    float y { 0.0 };
+    float z { 0.0 };
   };
   ```
   (in this simple case, the constructor can be omitted; in many other cases,
-  it can at least be "defaulted": `FilterEfficiency() = default;`).
+  it can at least be "defaulted": `Vector3D() = default;`).
   This reduces the consequences of forgetting the initialization of a data member,
   for example when adding a new one to the class and there are many constructors.
+  It also allows aggregate initialization, e.g. `Vector3D const xAxis { 1.0, 0.0, 0.0 };`,
+  which would not be possible with only the default (argumentless, or
+  ["nullary"](https://en.wikipedia.org/wiki/Arity#Nullary)) constructor specified.
   Note that `const` data members can follow the same pattern, but it's less
   critical because the compiler will ensure they are initialized at construction.
 
