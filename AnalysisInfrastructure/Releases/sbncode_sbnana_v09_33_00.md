@@ -4,7 +4,7 @@ title: Release Notes Page
 toc: true
 ---
 
-sbncode v09_33_00 Release Notes
+sbncode sbnana v09_33_00 Release Notes
 =======================================================================================
 
 [List of sbncode releases](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/AnalysisInfrastructure/Releases)
