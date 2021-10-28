@@ -17,10 +17,11 @@ If the E menu is not shown, type the letter E in the upper left corner of the wi
 
 <img width="752" alt="Screen Shot 2021-10-28 at 4 00 57 PM" src="https://user-images.githubusercontent.com/25019296/139337240-76015d25-7d2b-45c9-aebe-656781c70389.png">
 
-Each output has three parameters:  TCLK event, delay and vernier (width).  By default, settings are disabled when you first connect to the ACnet console.  To enable settings temporarily, find the smaller "Utilities" window.    Click on "Settings" and choose a time -- choose the shortest time in which you can effectively do whatever work you need to do.   See below.
+Each output has three parameters:  TCLK event, delay and vernier (width).  Vernier is not available on B channels (page 4).  By default, settings are disabled when you first connect to the ACnet console.  To enable settings temporarily, find the smaller "Utilities" window.    Click on "Settings" and choose a time -- choose the shortest time in which you can effectively do whatever work you need to do.   See below.
 
-<img width="630" alt="Screen Shot 2021-10-28 at 4 28 18 PM" src="https://user-images.githubu<img width="630" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339376-ede82214-719f-40d7-ab6d-2909dcb52fc6.png">
-sercontent.com/25019296/139339310-1db1a005-50df-4d8a-b353-dffd75b039e1.png">    <img width="630" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339453-525c1bff-f95d-46c9-973a-dc64781e6f9a.png">
+<img width="630" alt="Screen Shot 2021-10-28 at 4 28 18 PM" src="https://user-images.githubu<img width="630" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339376-ede82214-719f-40d7-ab6d-2909dcb52fc6.png">   <img width="630" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339453-525c1bff-f95d-46c9-973a-dc64781e6f9a.png">
 
+The yellow columns show the last set value of the parameter.   The green numbers show the actual setting as read back from the device.   To change the setting, simply type over the yellow numbers and press return.  After a moment, the green column should show the new value when the setting was successful.   If you see another number in green or a red error code, the setting failed.  In case of failure, the reasons could be:  Settings are disabled in the Utilities window; you do not have privilege from your account to change these device sestting; or there could be a hardware fault.
 
+When finished setting, be sure to disabled Settings on the Utilities window.   When you are finished with your ACnet console session as a whole, be sure to log out by clicking "Shutdown Console" on the Utilities window.
 
