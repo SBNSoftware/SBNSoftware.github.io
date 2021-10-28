@@ -19,7 +19,8 @@ If the E menu is not shown, type the letter E in the upper left corner of the wi
 
 Each output has three parameters:  TCLK event, delay and vernier (width).  Vernier is not available on B channels (page 4).  By default, settings are disabled when you first connect to the ACnet console.  To enable settings temporarily, find the smaller "Utilities" window.    Click on "Settings" and choose a time -- choose the shortest time in which you can effectively do whatever work you need to do.   Note you must be connected from on site in order to enable settings.
 
-<img width="630" alt="Enabling Settings" src="https://user-images.githubu<img width="630" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339376-ede82214-719f-40d7-ab6d-2909dcb52fc6.png">   <img width="630" alt="Settings Enabled" src="https://user-images.githubusercontent.com/25019296/139339453-525c1bff-f95d-46c9-973a-dc64781e6f9a.png">
+<img width="560" alt="Screen Shot 2021-10-28 at 4 28 30 PM" src="https://user-images.githubusercontent.com/25019296/139339376-ede82214-719f-40d7-ab6d-2909dcb52fc6.png">
+<img width="560" alt="Settings Enabled" src="https://user-images.githubusercontent.com/25019296/139339453-525c1bff-f95d-46c9-973a-dc64781e6f9a.png">
 
 The yellow columns show the last set value of the parameter.   The green numbers show the actual setting as read back from the device.   To change the setting, simply type over the yellow numbers and press return.  After a moment, the green column should show the new value when the setting was successful.   If you see another number in green or a red error code, the setting failed.  In case of failure, the reasons could be:  Settings are disabled in the Utilities window; you do not have privilege from your account to change these device sestting; or there could be a hardware fault.
 
