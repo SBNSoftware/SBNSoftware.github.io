@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Running CAEN DT5702 readout of CRT
+title: Multi-Function Timing Unit (MFTU)
 ---
 
 ## The Multi-Function Timing Unit (MFTU)
