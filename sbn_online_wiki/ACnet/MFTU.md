@@ -17,7 +17,7 @@ If the E menu is not shown, type the letter E in the upper left corner of the wi
 
 <img width="752" alt="An MFTU control page" src="https://user-images.githubusercontent.com/25019296/139337240-76015d25-7d2b-45c9-aebe-656781c70389.png">
 
-Each output has three parameters:  TCLK event, delay and vernier (width).  Vernier is not available on B channels (page 4).  By default, settings are disabled when you first connect to the ACnet console.  To enable settings temporarily, find the smaller "Utilities" window.    Click on "Settings" and choose a time -- choose the shortest time in which you can effectively do whatever work you need to do.   Note you must be connected from on site in order to enable settings. 
+Each output has three parameters:  TCLK event, delay and vernier.  Vernier is not available on B channels (page 4).  By default, settings are disabled when you first connect to the ACnet console.  To enable settings temporarily, find the smaller "Utilities" window.    Click on "Settings" and choose a time -- choose the shortest time in which you can effectively do whatever work you need to do.   Note you must be connected from on site in order to enable settings. 
 
 <img width="600" alt="Screen Shot 2021-10-28 at 4 28 18 PM" src="https://user-images.githubusercontent.com/25019296/139340926-d9e105b6-ad8b-4c38-ad50-f7efa4a88855.png">
 <img width="600" alt="Settings Enabled" src="https://user-images.githubusercontent.com/25019296/139339453-525c1bff-f95d-46c9-973a-dc64781e6f9a.png">
