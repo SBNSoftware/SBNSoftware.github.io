@@ -26,4 +26,6 @@ The yellow columns show the last set value of the parameter.   The green numbers
 
 When finished setting, be sure to disable Settings on the Utilities window.   When you are finished with your ACnet console session as a whole, be sure to log out by clicking "Shutdown Console" on the Utilities window.
 
+Note that Clockodile, page D33, has a mode where you can get the event description text to learn what 1D, 74 and the like are
+
 (wb)
