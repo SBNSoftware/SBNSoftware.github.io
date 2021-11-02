@@ -49,6 +49,7 @@ sbndaq detector components
 ----------------------------------------------
 * [CAEN DT5702 (CRT)](CRT/CAEN_DT5702_readout.md)
 * [White Rabbit Timing System](WR/WhiteRabbit.md)
+* Configuring the [Multi Function Timing Unit (MFTU)](ACnet/MFTU.md) Beam Timing Interface
 
 Troubleshooting
 ----------------------------------------------
