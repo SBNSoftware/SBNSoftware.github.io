@@ -6,6 +6,10 @@ Meetings: Bi-weekly, Fridays at 9 am CT
 
 Mailing list: sbn_ci_validation
 
+Slack channels
+  [\#sbn_ci](https://shortbaseline.slack.com/archives/C02JCTMAHTP)
+  [\#sbn_ci_alerts](https://shortbaseline.slack.com/archives/C01CY1H1CC9)
+
 Scientific computing liaison: [Vito Di Benedetto](mailto:vito@fnal.gov)
 
 ## Validation liasons
