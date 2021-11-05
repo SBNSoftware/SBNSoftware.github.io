@@ -5,8 +5,8 @@ title: SBN CI and Validation Wiki
 #description: Wiki for the SBN Production Team
 hero_height: is-medium
 # menubar: sbnprod_menu
-#toc: true
-#toc_title: Contents
+toc: true
+toc_title: Contents
 ---
 
 
