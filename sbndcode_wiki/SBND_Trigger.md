@@ -97,7 +97,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
       _pmtTrigger_maxpassed = pmttriggerlist[0]->maxPMTs;
     }
   ```
-_
+
   
 
 
