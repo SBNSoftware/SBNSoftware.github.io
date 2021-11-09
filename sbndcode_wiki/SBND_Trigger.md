@@ -38,7 +38,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
     lar -c run_pmttriggerproducer.fcl -s [DetSim root file]
   ```
 **Change the Parameters**
-  The fhicl file can be found in ```bash sbndcode/Trigger```. 
+  The fhicl file can be found in ```sbndcode/Trigger```. 
   
   The following parameters can be changed in the fhicl:
   
@@ -57,7 +57,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   _EvHists:_     if SaveHists=true, which event numbers to save the histograms for, max number of events = 3 (default = [1,2,3])
   
 **Read the Products**
-  The module outputs a pmttriggerproducer product, with object name sbnd::comm::pmtTrigger, that containes the numPassed and maxPMTs variables described above. An example of how to read these can be found in the commisioning hitdumper module (```bash  sbndcode/Commissioning/HitDumper_module.cc```). Below is the main code from this module.
+  The module outputs a pmttriggerproducer product, with object name sbnd::comm::pmtTrigger, that containes the numPassed and maxPMTs variables described above. An example of how to read these can be found in the commisioning hitdumper module (```sbndcode/Commissioning/HitDumper_module.cc```). Below is the main code from this module.
   
   ```bash
       art::Handle<std::vector<sbnd::comm::pmtTrigger> > pmtTriggerListHandle;
