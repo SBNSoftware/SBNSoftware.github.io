@@ -47,6 +47,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   ```
   
 **Change the Parameters**
+
   The fhicl file can be found in ```sbndcode/Trigger```. 
   
   The following parameters can be changed in the fhicl:
@@ -79,6 +80,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   
   
 **Read the Products**
+
   The module outputs a pmttriggerproducer product, with object name sbnd::comm::pmtTrigger, that containes the numPassed and maxPMTs variables described above. An example of how to read these can be found in the commisioning hitdumper module (```sbndcode/Commissioning/HitDumper_module.cc```). Below is the main code from this module.
   
   ```bash
