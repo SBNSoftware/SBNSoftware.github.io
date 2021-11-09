@@ -31,8 +31,10 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
 
 
 **Output:** 
-  std::vector<int> numPassed = number of pmt pairs above threshold, index = time during trigger window (usually beam spill)
-  int maxPMTs = maximum number of pmt pairs above threshold during trigger window (usually beam spill)
+  ```std::vector<int> numPassed``` = number of pmt pairs above threshold, index = time during trigger window (usually beam spill)
+  
+  ```int maxPMTs``` = maximum number of pmt pairs above threshold during trigger window (usually beam spill)
+  
   Optional: histograms for all included channels of every step of the hardware trigger logic for up to three configurable events
   
   
