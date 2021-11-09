@@ -17,3 +17,6 @@ here:
 <https://docs.google.com/spreadsheets/d/1kI8WF8RoWlY-Mlga5AjhH72JrFG3PEZWJYm9_y1EvII/edit?usp=sharing>\
 and here:
 <https://docs.google.com/spreadsheets/d/15WJKhYOfIDmWfz2Lb58-w46xkHGvzrhZ_obu3TbIlFw/edit?usp=sharing>
+
+
+**PMT Hardware Trigger Simulation**
