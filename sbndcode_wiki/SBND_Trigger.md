@@ -27,10 +27,12 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
 
 
 **Input:** 
+
   OpDet Waveforms (typically using Detsim files will have all these waveforms, reco 1 and 2 files may contain some filtered set of them)
 
 
 **Output:** 
+
   ```std::vector<int> numPassed``` = number of pmt pairs above threshold, index = time during trigger window (usually beam spill)
   
   ```int maxPMTs``` = maximum number of pmt pairs above threshold during trigger window (usually beam spill)
