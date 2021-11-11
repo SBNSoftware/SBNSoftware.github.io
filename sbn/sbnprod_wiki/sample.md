@@ -33,8 +33,8 @@ SBND MC
 ICARUS MC
 --------------------------
 
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions per stage: | reco2 files | calibration ntuples | CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions: reco2 files | Samweb definitions: calibration ntuples | Samweb definitions: CAF analysis files | Notes |   
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
                
 
 
