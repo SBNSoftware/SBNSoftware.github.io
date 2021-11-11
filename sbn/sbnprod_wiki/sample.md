@@ -35,7 +35,7 @@ ICARUS MC
 
 | Sample Description | production push | approx. date production | release version | # Events | Samweb definitions per stage: | reco2 files | calibration ntuples | CAF analysis files | Notes |   
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | --- | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | hists_official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test tes |  |                
+               
 
 
 ### Notes on samples ###
@@ -49,8 +49,5 @@ Processed Data SBN Production Samples
 
 ICARUS DATA
 --------------------------
-
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions per stage: | reco2 files | calibration ntuples | CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | --- | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | hists_official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test tes |  |                
+              
 
