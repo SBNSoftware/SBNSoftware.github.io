@@ -30,21 +30,19 @@ Metrics to monitor are defined by the physics working groups and are compared to
    cigetcert -s 'fifebatch.fnal.gov'
    voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'
    ```
-   ....or equivalent!
+   Alternatively, after `sbnci` is setup, you can do `source get_proxy.sh`.
    
 - I would recommend a test submission first, this will allow you to test that your combination of feature branches work together and don't cause an easy-to-fix failure for all 10k events on the grid. Note that the validation plots will be meangingless, this is a test that the machinery works. This submission can be followed on the [test dashboard.](https://dbweb9.fnal.gov:8443/TestCI/app/ns:SBND/view_builds/index)
 - The test trigger uses the following command:
    
    ```
-   trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND_test \
-           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all_test.cfg --revisions "repo@branch" --testmode
+   trigger --build-delay 0 --jobname <sbnd or icarus>_ci --workflow CI_VALIDATION_<SBND or ICARUS>.cfg --gridwf-cfg cfg/<sbnd or icarus>/<your grid workflow>_test.cfg --revisions "SBNSoftware/<repo1>@<branch1> SBNSoftware/<repo2>@<branch2> ..." --testmode
    ```
  
 - Once your test job has succeeded (or you're feeling brave) then the full validation can be triggered with the following command:
    
    ```
-   trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_SBND \
-           --gridwf-cfg cfg/grid_workflow_sbnd_mc_reco_all.cfg --revisions "repo@branch"
+   trigger --build-delay 0 --jobname <sbnd or icarus>_ci --workflow CI_VALIDATION_<SBND or ICARUS>.cfg --gridwf-cfg cfg/<sbnd or icarus>/<your grid workflow>.cfg --revisions "SBNSoftware/<repo1>@<branch1> SBNSoftware/<repo2>@<branch2> ..."
    ```
 
 **READ THIS SECTION BEFORE TRIGGERING**
