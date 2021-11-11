@@ -25,8 +25,8 @@ Monte Carlo official SBN Production Samples
 SBND MC
 --------------------------
 
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions per stage: | reco2 files | calibration ntuples | CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions: reco2 files | Samweb definitions: calibration ntuples | Samweb definitions: CAF analysis files | Notes |   
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | --- | official_MC2021Bv1_prodoverlay<br>_corsika_cosmics_proton_genie<br>_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | hists_official_MC2021Bv1<br>_prodoverlay_corsika_cosmics<br>_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay<br>_corsika_cosmics_proton_genie<br>_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test test |              
 
 
