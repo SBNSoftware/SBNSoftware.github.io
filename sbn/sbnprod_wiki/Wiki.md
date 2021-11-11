@@ -16,7 +16,7 @@ SBN Production Page
 
 Here you will found how to make production sample requests as well as (comming soon) instructions and documentation
 
-Available Samples
+Available Samples (WORK IN PROGRESS)
 --------------------------
 [SBN Production Available Samples Page](/sbn/sbnprod_wiki/sample)
 
