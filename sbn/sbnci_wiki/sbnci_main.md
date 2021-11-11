@@ -33,5 +33,6 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 2. [SBN CI & validation system](/sbn/sbnci_wiki/Continuous_integration)
 3. [Integration tests](/sbn/sbnci_wiki/Integration_test_guide)
 4. [Validation tests](/sbn/sbnci_wiki/CI_Validation)
+5. [Managing the CI system](/sbn/sbnci_wiki/Managing_the_CI_Validation_System)
 
 
