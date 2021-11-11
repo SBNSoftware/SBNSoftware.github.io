@@ -26,7 +26,7 @@ Continuous integration
 
 ## Triggering the CI on your feature branch
 
-If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build.
+If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build. For "standard" validation workflows, there are wrapper scripts that make triggering CI builds much more conventient. See the [Quick Start Guide](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbn/sbnci_wiki/sbnci_main.md#quick-start-guide) on the main page.
 
 First you need to ensure you have a grid proxy and setup the `lar_ci` package. You can do this by invoking `get_proxy.sh`.
 
@@ -34,7 +34,7 @@ First you need to ensure you have a grid proxy and setup the `lar_ci` package. Y
 You can then trigger the CI using the following command:
 
 ```
-trigger --build-delay 0 --workflow <you workflow here> --revisions "SBNSoftware/repo1@branch1 SBNSoftware/repo"
+trigger --build-delay 0 --workflow <you workflow here> --revisions "SBNSoftware/<repo1>@<branch1> SBNSoftware/<repo2>@<branch2> ..."
 ```
 
 Using the --revisions flag to specify the branch(es) you want to test, e.g.
