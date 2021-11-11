@@ -34,7 +34,7 @@ First you need to ensure you have a grid proxy and setup the `lar_ci` package. Y
 You can then trigger the CI using the following command:
 
 ```
-trigger --build-delay 0 --workflow <you workflow here> --revisions "SBNSoftware/<repo1>@<branch1> SBNSoftware/<repo2>@<branch2> ..."
+trigger --build-delay 0 --jobname <sbnd or icarus>_ci --workflow <your workflow>.cfg --gridwf-cfg cfg/<sbnd or icarus>/<your grid workflow>.cfg --revisions "SBNSoftware/<repo1>@<branch1> SBNSoftware/<repo2>@<branch2> ..." (optional --testmode)
 ```
 
 Using the --revisions flag to specify the branch(es) you want to test, e.g.
@@ -58,7 +58,7 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
     hasn\'t increased/decreased massively from the set limits.
 -   If it has then an investigation is needed.
 -   If not the memory/cpu limits can be changed in
-    `sbndcode/test/ci/ci_tests.cfg`
+    `<sbndcode or icaruscode>/test/ci/ci_tests.cfg`
     -   Just find the relevant tests, change the limits and push the
         changes to develop.
 
@@ -80,7 +80,7 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
 -   Try to work out whose changes (either in sbndcode or upstream) are
     responsible and shoot them an email to confirm if they are expected.
 -   If the changes are expected then you can update the reference file,
-    instructions [here](Integration_test_guide.html).
+    instructions [here](/sbn/sbnci_wiki/Integration_test_guide.html).
 
 
 
@@ -103,6 +103,6 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
 
 ### Last stop: validation
 
-Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. T[Click here](/sbn/sbnci_wiki/CI_Validation) for more information.
+Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. [Click here](/sbn/sbnci_wiki/CI_Validation) for more information.
 
 [Back to SBN CI & Validation main page](/sbn/sbnci_wiki/sbnci_main)
