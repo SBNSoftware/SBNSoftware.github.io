@@ -5,19 +5,31 @@ title: Developing Validation Tests
 
 # Developing Validation Tests
 
-If you want to add to the existing validation tests described [here](CI_Validation.md) then this article describes the packages where the validations are defined and some basics about how to create new ones. Like all coding there is a large element of trial and error to this, but feel free to contact the CI & Valdiation group for help / queries.
+If you want to add to the existing validation tests described [here](/sbn/sbnci_wiki/CI_Validation), then this article describes the packages where the validations are defined and some basics about how to create new ones. Like all coding, there is a large element of trial and error to this, but feel free to contact the [CI & Valdiation group](/sbn/sbnci_wiki/SBN_CI_Validation_group) for help / queries.
 
 ## Relevant Software Packages 
 
 ### The `sbnci` Package
-- The `sbnci` package can be found [here](https://github.com/SBNSoftware/sbnci).
-- It is a UPS package that currently depends on sbndcode, but is expected to depend on icaruscode in the future.
-- The package is written to run validation scripts on the output of the simulation chain, and to compare these validation plots with specified reference plots.
-- There are 4 main directories found in `sbnci/sbnci` for running this ci validation: *Modules*, *PlottingScripts*, *scripts* and *thresholds*.
-- The main recipe for this package is to create ROOT TTrees from an analysis module, create plots of these variables, and then compare them to reference plots.
+- Can be found [here](https://github.com/SBNSoftware/sbnci).
+- UPS package that currently depends (optionally) on `sbndcode` *or* `icaruscode` but *not both* at once in order to avoid dependency clashes.
+- **IMPORTANT:** you must pass *one* of two build options to `mrb b` in order to pick up the experiment specific code. Both options are set to `OFF` by default. In this case, only the experiment agnostic parts of `sbnci` are built.
+```
+mrb i -j<number of cores> -DSBND=ON  # build sbnci with sbndcode support
+# or
+mrb i -j<number of cores> -DICARUS=ON # build sbnci with icaruscode support
+```
+- Contains `art` analyzer modules, `ROOT` macros, and scripts.
+- There are instances of all of the above for each physics working group: TPC reco, TPC sim/cal, PDS sim/reco, CRT sim/reco
+- Validation analyzer modules process the output of some `FHiCL` subset of some simulation or reconstruction chain, producing TTree(s)
+- TTrees are processed by ROOT plotting macros to produce a set of reference histograms (`TH1`) corresponding to the set of metrics defined by each physics working group
+- The histograms are compared to some reference version of the code being tested and the compatibility is quantified with a chi-squared.
+- `sbnci/bin` contains several convenient scripts for running validation or reference sample production jobs
+- `sbnci/sbnci` contains three directories: one common area, one SBND specific, and one ICARUS specific
+- There are 3 directories found in `sbnci/sbnci/Common`: `Modules`, `PlottingScripts`, and `scripts`.
+- The experiment specific directories contain `Modules`, `JobConfigurations`, `PlottingScripts`, `thresholds`.
 
 ###### *Modules*
-The *Modules* directory contains LArSoft analysis modules for making ROOT TTrees from the simulations, e.g. it currently contains the Shower Validation Module. 
+The *Modules* directory contains LArSoft analysis modules for making ROOT TTrees from the simulations, e.g. it currently contains the Shower Validation Module. Whenever possible, these modules should be made experiment agnostic (living in `sbnci/Common`) through use of `FHiCL` parameters.
 These modules should probably move to sbndcode, icaruscode or sbncode at some point down the road. 
 
 ###### *PlottingScripts*
@@ -27,7 +39,7 @@ containing histograms and separate `.png` files for each plot to be displayed on
 
 ###### *scripts*
 The *scripts* directory contains the `.sh` scripts used to run the plotting macros in *PlottingScripts*, setup the appropriate reference files 
-and run the comparison script.
+and run the comparison script. These can usually be made experiement agnostic so live in `sbnci/Common`.
 
 ###### *thresholds*
 The *thresholds* directory contains the `.txt` files with chi-squared thresholds for the plot comparisons in each validation. Each plot is given two thresholds, this defines "good", "okay" and "bad" agreement. These scales are also used to colour code the chi-squared tables and the plots on the CI dashboard.
