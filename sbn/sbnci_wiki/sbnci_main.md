@@ -9,7 +9,7 @@ hero_height: is-medium
 Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below.
 
 ## Quick Start Guide
-1. Get a valid kerberos ticket with forwarding enabled (`kinit -k <username>`)
+1. Get a valid kerberos ticket with forwarding enabled (`kinit -f <username>`)
 2. ssh into one of your experiment's gpvm nodes
 3. setup your environment: `source /cvmfs/<sbnd or icarus>.opensciencegrid.org/products/<sbnd or icarus>/setup_<sbnd or icarus>.sh`
 4. `setup sbnci -v v09_35_01 -q e20:prof`
