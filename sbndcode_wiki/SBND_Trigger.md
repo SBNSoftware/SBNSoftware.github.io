@@ -69,6 +69,8 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   _Unpaired:_     set of unpaired PMT channel numbers
   
     (default = adjacent channel numbers -> PMTs reflected across x axis, last 8 channels unpaired)
+    
+  _PairLogic:_   logic for pairing PMTs, options are "OR" or "AND" (default = "OR")
   
   _WindowStart:_ start time of the trigger window, in us (default = 0.0)
   
