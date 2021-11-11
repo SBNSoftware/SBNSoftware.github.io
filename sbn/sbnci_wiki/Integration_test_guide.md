@@ -21,7 +21,7 @@ SBND has two levels of tests:
 
 Before pushing code that has any remote chance of changing existing
 results, you should run both. This guide is about the latter.\
-Every time code is pushed in `sbndcode` `develop` branch, tests are also
+Every time code is pushed to the `sbndcode` or `icaruscode``develop` branch, tests are 
 automatically triggered.
 
 
@@ -71,8 +71,7 @@ will run the tests designed to be run during development.
 
 The information of this section somehow depends on both the version of
 the test SBND provides, and the version of `lar_ci`. The following
-information was compiled using the latest `sbndcode`, `v06_68_00` and
-the current `lar_ci`, `v3_3_0`.
+information was compiled using `sbndcode v06_68_00` and `lar_ci v3_3_0`.
 
 We use as example the detector propagation test.\
 The list of available tests is:
@@ -217,13 +216,13 @@ There are mainly three ways to run an integration test:
 2.  locally, testing the code in the local development area
 3.  remotely, testing the code in the GIT remote repositories
 
-Currently tests are run on SLF6 and OSX 10.12 (\"Sierra\").
+Currently tests are run on SLF7.
 
 
 
 ### Automatic testing 
 
-Whenever a commit is pushed into a `develop` branch, a test is
+Whenever a commit is pushed to a `develop` branch, a test is
 automatically triggered. The test starts 15 minutes after the first push
 to `develop`, to give the user the time to push into different
 repositories as needed.
