@@ -54,7 +54,7 @@ Commonly used CI input samples are stored in
 ```
 For convenience and robustness against grid hickups, input samples are declared to SAM. The input samples use the same names regardless of the default reference tag, however the tag used in the sample production is written to the file metadata in `Dataset.Tag` with the format `<SAM definition name>_vXX_YY_ZZ`. This is used to check if a requested reference tag has a corresponding dataset. When the default reference tag is updated, the previous reference files get transfered to a subdirectory within their parent directory with name, `vXX_YY_ZZ`. 
 
-To generate an input sample for a particular tag, you run a standard validation trigger but using a special config file:
+To generate a "standard" input sample for a particular tag, there are convenience scripts for triggering the production. See the tables below. To generate a custom reference sample, you run a standard validation trigger but using a special config file:
   ```
   trigger --build-delay 0 --jobname sbnd_ci --workflow CI_VALIDATION_<exp> \
            --gridwf-cfg <sample_config_goes_here.cfg> --revisions "SBNSoftware/<exp code>@<tag>"
@@ -64,6 +64,8 @@ Information on available samples is given below. Note the template arguments bel
   
   |   BNB + IntrNuE Mix |                                                                             | 
   | ------------------- | --------------------------------------------------------------------------- |
+  | Test script         | generate_bnb_intrnue_mix_validation_sample_test.sh <new reference tag>  |
+  | Full script         | generate_bnb_intrnue_mix_validation_sample.sh <new reference tag>  |
   | Test configuration  | cfg/grid_workflow_\<exp\>\_generate_bnb_intrnue_mix_validation_sample_test.cfg |
   | Full configuration  | cfg/grid_workflow_\<exp\>\_generate_bnb_intrnue_mix_validation_sample.cfg      |
   | SAM test definition | \<exp\>\_ci_input_bnb_intrnue_mix_\<stage\>\_test                             |
@@ -71,6 +73,8 @@ Information on available samples is given below. Note the template arguments bel
   
   | BNB w/ Cosmics      |                                                                         |
   | ------------------- | ----------------------------------------------------------------------- |
+  | Test script         | generate_nu_cosmic_validation_sample_test.sh <new reference tag>  |
+  | Full script         | generate_nu_cosmic_validation_sample.sh <new reference tag>  |
   | Test configuration  | cfg/grid_workflow_\<exp\>\_generate_nu_cosmic_validation_sample_test.cfg |
   | Full configuration  | cfg/grid_workflow_\<exp\>\_generate_nu_cosmic_validation_sample.cfg      |
   | SAM test definition | \<exp\>\_ci_input_nu_cosmic_overlay_\<stage\>\_test                       |
