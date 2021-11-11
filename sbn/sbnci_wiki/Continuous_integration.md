@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Continuous integration
+title: Continuous Integration and Validation System
 ---
 
 
@@ -26,7 +26,7 @@ Continuous integration
 
 ## Triggering the CI on your feature branch
 
-If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build. For "standard" validation workflows, there are wrapper scripts that make triggering CI builds much more conventient. See the [Quick Start Guide](/sbn/sbnci_wiki/sbnci_main.md#quick-start-guide) on the main page.
+If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build. For "standard" validation workflows, there are wrapper scripts that make triggering CI builds much more conventient. See the [Quick Start Guide](/sbn/sbnci_wiki/sbnci_main.html#quick-start-guide) on the main page.
 
 First you need to ensure you have a grid proxy and setup the `lar_ci` package. You can do this by invoking `get_proxy.sh`.
 
@@ -103,6 +103,6 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
 
 ### Last stop: validation
 
-Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. [Click here](/sbn/sbnci_wiki/CI_Validation) for more information.
+Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. T[Click here](/sbn/sbnci_wiki/CI_Validation) for more information.
 
 [Back to SBN CI & Validation main page](/sbn/sbnci_wiki/sbnci_main)
