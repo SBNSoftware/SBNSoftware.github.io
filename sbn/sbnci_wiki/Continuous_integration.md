@@ -8,8 +8,8 @@ title: Continuous integration
 Continuous integration
 ================================================================
 
--   For detailed information on the integration tests see
-    [here](Integration_test_guide.html).
+-   For detailed information on the integration tests
+    [click here](Integration_test_guide.html).
 -   Every time someone pushes a commit to develop the integration tests
     will be triggered.
 -   Sometimes larsoft/art folks will trigger builds to test changes in
@@ -26,7 +26,7 @@ Continuous integration
 
 ## Triggering the CI on your feature branch
 
-If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build. For "standard" validation workflows, there are wrapper scripts that make triggering CI builds much more conventient. See the [Quick Start Guide](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbn/sbnci_wiki/sbnci_main.md#quick-start-guide) on the main page.
+If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build. For "standard" validation workflows, there are wrapper scripts that make triggering CI builds much more conventient. See the [Quick Start Guide](/sbn/sbnci_wiki/sbnci_main.md#quick-start-guide) on the main page.
 
 First you need to ensure you have a grid proxy and setup the `lar_ci` package. You can do this by invoking `get_proxy.sh`.
 
@@ -43,7 +43,7 @@ Using the --revisions flag to specify the branch(es) you want to test, e.g.
 --revisions "SBNSoftware/sbndcode@feature/hlay_vertexing henrylay97/LArContent>larpandoracontent@feature/hlay_vertex_bdt_changes"
 ```
 
-would provide the two custom branches for `sbndcode` and `larpandoracontent` respectively. Note the different syntaxes for specifying a branch in the main repository and for using a branch in a forked repository and directing it towards the correct product name. The results will be available on [this](https://dbweb8.fnal.gov:8443/LarCI/app/ns:sbnd/view_builds/index) dashboard. To trigger a larger validation test please refer to [this](CI_Validation.md) page.
+would provide the two custom branches for `sbndcode` and `larpandoracontent` respectively. Note the different syntaxes for specifying a branch in the main repository and for using a branch in a forked repository and directing it towards the correct product name. The results will be available on [this dashboard](https://dbweb8.fnal.gov:8443/LarCI/app/ns:sbnd/view_builds/index). To trigger a larger validation test please refer to [this page](/sbn/sbnci_wiki/CI_Validation).
 
 ## How to interpret the test results
 
@@ -103,6 +103,6 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
 
 ### Last stop: validation
 
-Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. [Click here](CI_Validation.html) for more information.
+Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. [Click here](/sbn/sbnci_wiki/CI_Validation) for more information.
 
 [Back to SBN CI & Validation main page](/sbn/sbnci_wiki/sbnci_main)
