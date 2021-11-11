@@ -21,29 +21,23 @@ Continuous integration
     and checking them whenever you get around to it.
 -   Each test will return as either a success, warning or failure.
 -   Warnings either mean changes in data products or memory/cpu usage.
--   At the moment only one build (SLF7 e19:prof) will return successes
+-   At the moment only one build (SLF7 e20:prof) will return successes
     for everything (call it the good build).
 
 ## Triggering the CI on your feature branch
 
 If you have a feature branch, or a series of feature branches you want to test. This is the recipe for triggering the CI build.
 
-First you need to ensure you have a proxy and setup the `lar_ci` package:
+First you need to ensure you have a grid proxy and setup the `lar_ci` package. You can do this by invoking `get_proxy.sh`.
 
-```
-setup lar_ci
-setup cigetcert
-cigetcert -s 'fifebatch.fnal.gov'
-voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'
-```
 
 You can then trigger the CI using the following command:
 
 ```
-trigger --build-delay 0 --workflow sbndcode_wf --force-platform slf7 --revision "repo@branch"
+trigger --build-delay 0 --workflow <you workflow here> --revisions "SBNSoftware/repo1@branch1 SBNSoftware/repo"
 ```
 
-Using the revision tag to specify the branch(es) you want to test, e.g.
+Using the --revisions flag to specify the branch(es) you want to test, e.g.
 
 ```
 --revisions "SBNSoftware/sbndcode@feature/hlay_vertexing henrylay97/LArContent>larpandoracontent@feature/hlay_vertex_bdt_changes"
@@ -101,14 +95,14 @@ would provide the two custom branches for `sbndcode` and `larpandoracontent` res
     someone is just doing some testing and ignore it.
 -   Sometimes the builds will just fail randomly, I usually just wait
     for a few successive failures before taking any action.
--   The `c7` compiler is a little stricter than `e19` so you will
+-   The `c7` compiler is a little stricter than `e20` so you will
     sometimes get failures from that.
     -   If it\'s something small like an unused variable it\'s often
         faster to quickly make the change yourself than emailing the
         person.
 
-### Continuous Integration Validation Plots
+### Last stop: validation
 
-- There is a new expanded continuous integration system in place which 
-  compares validation plots from the current codebase to the reference plots. 
-  See [here](CI_Validation.html) for more information.
+Following the unit and regression tests discussed above, the CI system can optionally move on to the validation stage. [Click here](CI_Validation.html) for more information.
+
+[Back to SBN CI & Validation main page](/sbn/sbnci_wiki/sbnci_main)
