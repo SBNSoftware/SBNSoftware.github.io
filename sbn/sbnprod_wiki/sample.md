@@ -36,6 +36,8 @@ SBND MC
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_*_sbnd | hists_official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test test | 
 
+<script src="https://docs.google.com/spreadsheets/d/19VOatTLPosUNs4j-_t1oQIrv8KLiVEAphRNz65fniB4/edit#gid=1971194639"></script>
+
 
 ICARUS MC
 --------------------------
