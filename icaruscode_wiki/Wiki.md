@@ -27,6 +27,7 @@ Developing ICARUS code
 -   [The ICARUS Guide to using LArSoft](The_ICARUS_Guide_to_using_LArSoft.html)
 -   ICARUS code repository: `icaruscode` (use
     `mrb gitCheckout icaruscode` from your MRB working area)
+-   [ICARUS code reference](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/versionlist.html) (Doxygen-generated; protected access)
 -   [Integration tests](Integration_tests.html)
 -   [Introduction to Gallery analysis](https://sbn-docdb.fnal.gov/cgi-bin/private/RetrieveFile?docid=4339&filename=20171023-Petrillo.pdf "by Gianluca")
 
