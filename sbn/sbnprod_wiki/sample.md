@@ -29,8 +29,7 @@ SBND MC
 
 | Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition | Notes |   
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue + cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | the dataset name is incorrect (not the contents) |
-| --- | --- | --- | --- | 14800 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
+| BNB nue + cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
 | --- | --- | --- | --- | 14800 | flat caf | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_flat_caf_sbnd | --- |
 | BNB nue + cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | --- |
 | --- | --- | --- | --- | 15000 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
