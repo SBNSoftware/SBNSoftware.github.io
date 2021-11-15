@@ -47,9 +47,9 @@ SBND MC
 | in-time cosmics, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd_reco2_sbnd	| --- |
 | BNB neutrinos + cosmics, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodgenie_nu_singleinteraction_tpc_sbnd_reco2_sbnd	| --- |
 | BNB nu-only, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodcorsika_proton_intime_filter_sce_reco2_sbnd	| --- |
-| SBNWorkshop2021_CAF_SBND_IntimeCosmics | SBNWorkshop0421 | --- | v09_19_00_02 | 150627 | flat cafs | 	workshop_SBNWorkshop0421_prodcorsika_proton_intime_filter_flat_caf_sbnd		| --- |
-| SBNWorkshop2021_CAF_SBND_NuEOverlay | SBNWorkshop0421 | --- | v09_19_00_01 | 45700 | flat cafs | 	workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| --- |
-| SBNWorkshop2021_CAF_SBND_BNBOverlay | SBNWorkshop0421 | --- | v09_19_00_01 | 286850 | flat cafs | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| --- |
+| SBNWorkshop2021_IntimeCosmics | SBNWorkshop0421 | --- | v09_19_00_02 | 150627 | flat cafs | 	workshop_SBNWorkshop0421_prodcorsika_proton_intime_filter_flat_caf_sbnd		| --- |
+| SBNWorkshop2021_NuEOverlay | SBNWorkshop0421 | --- | v09_19_00_01 | 45700 | flat cafs | 	workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| --- |
+| SBNWorkshop2021_BNBOverlay | SBNWorkshop0421 | --- | v09_19_00_01 | 286850 | flat cafs | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| --- |
 | Intime cosmics | MCP2020A | --- | v09_09_00 | 151407 | reco2 | official_MCP2020A_prodcorsika_proton_intime_filter_reco2_sbnd	| --- |
 | BNBnue | MCP2020A | --- | v09_09_00 | 72300 | reco2 | official_MCP2020A_prodgenie_intrnue_singleinteraction_tpc_gsimple-configf-v1_reco2_sbnd	| --- |
 | BNBnue+cosmics | MCP2020A | --- | v09_09_00 | 45950 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
