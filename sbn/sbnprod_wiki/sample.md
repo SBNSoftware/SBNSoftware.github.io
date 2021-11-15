@@ -29,16 +29,16 @@ SBND MC
 
 | Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition | Notes |   
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue+cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | the dataset name is incorrect (not the contents) |
+| BNB nue + cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | the dataset name is incorrect (not the contents) |
 | --- | --- | --- | --- | 14800 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
 | --- | --- | --- | --- | 14800 | flat caf | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_flat_caf_sbnd | --- |
-| BNB nue+cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | --- |
+| BNB nue + cosmic | MC2021Bv1 | --- | v09_28_01_02 | 15000 | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | --- |
 | --- | --- | --- | --- | 15000 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
 | --- | --- | --- | --- | 15000 | caf | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | --- |
 | BNB full-osc + cosmics | MC2021Bv1 | --- | v09_28_01_02 | --- | reco1 | test15_official_test15_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco1_sbnd | --- |
 | --- | --- | --- | --- | --- | reco2 | test_official_test_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
 | --- | --- | --- | --- | --- | caf | test_official_test_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | --- |
-| BNB nu+cosmic | MC2021Bv1 | --- | v09_28_01_02 | --- | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco1_sbnd | --- |
+| BNB nu + cosmic | MC2021Bv1 | --- | v09_28_01_02 | --- | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco1_sbnd | --- |
 | --- | --- | --- | --- | --- | reco2 | test100_official_test100_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | --- |
 | --- | --- | --- | --- | --- | caf | test100_official_test100_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | --- |
 | CAFs of SBND in-time cosmics, with SCE | MCP2021A | --- | v09_28_00 | 1144 | flat caf | official_MCP2021A_CAF_prodcorsika_proton_intime_filter_sc_concat_caf_sbnd | --- |
@@ -52,8 +52,8 @@ SBND MC
 | BNB Overlay | SBNWorkshop0421 | --- | v09_19_00_01 | 286850 | flat cafs | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| --- |
 | Intime cosmics | MCP2020A | --- | v09_09_00 | 151407 | reco2 | official_MCP2020A_prodcorsika_proton_intime_filter_reco2_sbnd	| --- |
 | BNBnue | MCP2020A | --- | v09_09_00 | 72300 | reco2 | official_MCP2020A_prodgenie_intrnue_singleinteraction_tpc_gsimple-configf-v1_reco2_sbnd	| --- |
-| BNBnue+cosmics | MCP2020A | --- | v09_09_00 | 45950 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
-| BNB nu+cosmics | MCP2020A | --- | v09_09_00 | 287350 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
+| BNBnue + cosmics | MCP2020A | --- | v09_09_00 | 45950 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
+| BNB nu + cosmics | MCP2020A | --- | v09_09_00 | 287350 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
 | Cathode crossing muons | MCP2020A | --- |	v09_08_00 | 9700 | detsim | official_MCP2020A_prodsingle_mu_10GeV_cathodecrossing_detsim_sbnd	| --- |
 | low energy electrons | MCP2020A | --- |	v09_08_00 | 19000 | detsim | official_MCP2020A_prodsingle_electron_1-50MeV_detsim_sbnd	| --- |
 | Stopping muons from top | MCP2020A | --- |	v09_08_00 | 9500 | detsim | official_MCP2020A_prodsingle_muplus_stopping_fromtop_detsim_sbnd	| --- |
@@ -79,9 +79,9 @@ ICARUS MC
 | COSMICs_ML | --- | --- | v09_07_00_prof	 | 543700 | detsim | ICARUS_poms_prod_cosmics_ML_v09_07_00_detsim	| --- |
 | Intime cosmics | MCP2020A | --- | v09_09_00 | 189534 | reco2 | ICARUS_prod_2020A_00_intime_cosmic_v09_09_00_reco2_halfstats	| --- |
 | --- | --- | --- | --- | 159538 | reco2SCEfix | ICARUS_prod_intime_cosmic_v09_09_02_01_reco2SCEfix | --- |
-| BNB Nue+cosmics | MCP2020A | --- | v09_09_00 | 58339 | reco2 | ICARUS_prod_2020A_00_BNB_nue_cosmic_v09_09_00_reco2	| --- |
+| BNB Nue + cosmics | MCP2020A | --- | v09_09_00 | 58339 | reco2 | ICARUS_prod_2020A_00_BNB_nue_cosmic_v09_09_00_reco2	| --- |
 | --- | --- | --- | --- | 56514 | reco2SCEfix | ICARUS_prod_BNB_nue_cosmic_v09_09_02_01_reco2SCEfix | --- |
-| BNB Nu+cosmics | MCP2020A | --- | v09_09_00 | 189775 | reco2 | ICARUS_prod_2020A_00_BNB_nu_cosmic_v09_09_00_reco2_halfstats	| --- |
+| BNB Nu + cosmics | MCP2020A | --- | v09_09_00 | 189775 | reco2 | ICARUS_prod_2020A_00_BNB_nu_cosmic_v09_09_00_reco2_halfstats	| --- |
 | --- | --- | --- | --- | 165816 | reco2SCEfix | ICARUS_prod_BNB_nu_cosmic_v09_09_02_01_reco2SCEfix | --- |
 | BNB nue | MCP2020A | --- | v09_09_00 | 50976 | reco2 | ICARUS_prod_2020A_00_BNB_nue_v09_09_00_reco2	| --- |
 | --- | --- | --- | --- | 51092 | reco2SCEfix | ICARUS_prod_BNB_nue_v09_09_02_01_reco2SCEfix | --- |
