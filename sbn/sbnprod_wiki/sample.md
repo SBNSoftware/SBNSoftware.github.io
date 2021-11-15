@@ -40,12 +40,12 @@ SBND MC
 | BNB nu + cosmic | MC2021Bv1 | --- | v09_28_01_02 | --- | reco1 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco1_sbnd | 
 | --- | --- | --- | --- | --- | reco2 | test100_official_test100_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | 
 | --- | --- | --- | --- | --- | caf | test100_official_test100_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | 
-| CAFs of SBND in-time cosmics, with SCE | MCP2021A | --- | v09_28_00 | 1144 | flat caf | official_MCP2021A_CAF_prodcorsika_proton_intime_filter_sc_concat_caf_sbnd |
-| CAFS of SBND BNB nu-only with SCE | MCP2021A | --- | v09_28_00 | 150000 | flat caf | official_MCP2021A_CAF_prodgenie_nu_singleinteraction_tpc_sbnd_flat_caf_sbnd	| 
-| CAFs of SBND BNB neutrinos + cosmics, with SCE | MCP2021A | --- | v09_28_00 | 185300 | flat caf | official_MCP2021A_CAF_prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd_flat_caf_sbnd		| 
 | in-time cosmics, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd_reco2_sbnd	| 
+| --- | --- | --- | v09_28_00 | 1144 | flat caf | official_MCP2021A_CAF_prodcorsika_proton_intime_filter_sc_concat_caf_sbnd |
 | BNB neutrinos + cosmics, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodgenie_nu_singleinteraction_tpc_sbnd_reco2_sbnd	| 
+| --- | --- | --- | v09_28_00 | 185300 | flat caf | official_MCP2021A_CAF_prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd_flat_caf_sbnd		| 
 | BNB nu-only, with SCE | MCP2021A | --- | v09_26_00 | --- | reco2 | official_MCP2021A_prodcorsika_proton_intime_filter_sce_reco2_sbnd	| 
+| --- | --- | --- | v09_28_00 | 150000 | flat caf | official_MCP2021A_CAF_prodgenie_nu_singleinteraction_tpc_sbnd_flat_caf_sbnd	| 
 | In time Cosmics | SBNWorkshop0421 | --- | v09_19_00_02 | 150627 | flat cafs | 	workshop_SBNWorkshop0421_prodcorsika_proton_intime_filter_flat_caf_sbnd	|
 | NuE Overlay | SBNWorkshop0421 | --- | v09_19_00_01 | 45700 | flat cafs | 	workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	|
 | BNB Overlay | SBNWorkshop0421 | --- | v09_19_00_01 | 286850 | flat cafs | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc_flat_caf_sbnd	| 
