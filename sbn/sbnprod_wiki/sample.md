@@ -27,33 +27,43 @@ Monte Carlo official SBN Production Samples
 SBND MC
 --------------------------
 
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions: reco2 files | Samweb definitions: calibration ntuples | Samweb definitions: CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | official_MC2021Bv1_prodoverlay<br>_corsika_cosmics_proton_genie<br>_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | hists_official_MC2021Bv1<br>_prodoverlay_corsika_cosmics<br>_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay<br>_corsika_cosmics_proton_genie<br>_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test test |     
-
-
-
-
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions: reco2 files | Samweb definitions: calibration ntuples | Samweb definitions: CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | hists_official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test test |   
-
-
-
-
-
 | Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition | Notes |   
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | BNB nue+cosmic | MC2021B | --- | v09_28_01_02 | 14800 | reco2 | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | test test |
 | --- | --- | --- | --- | --- | calib | hists_official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_sbnd | test test |
 | --- | --- | --- | --- | --- | caf | official_MC2021Bv1_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd | test test |
 
+
+
+| Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition | Notes |   
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Intime cosmics | MCP2020A | --- | v09_09_00 | 151407 | reco2 | official_MCP2020A_prodcorsika_proton_intime_filter_reco2_sbnd	| --- |
+| BNBnue | MCP2020A | --- | v09_09_00 | 72300 | reco2 | official_MCP2020A_prodgenie_intrnue_singleinteraction_tpc_gsimple-configf-v1_reco2_sbnd	| --- |
+| BNBnue+cosmics | MCP2020A | --- | v09_09_00 | 45950 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| MCP2020A |
+| BNB nu+cosmics | --- | --- | v09_09_00 | 287350 | reco2 | official_MCP2020A_prodoverlay_corsika_cosmics_proton_genie_nu_spill_gsimple-configf-v1_tpc-configf-v1_tpc_reco2_sbnd	| --- |
+| Cathode crossing muons | MCP2020A | --- |	v09_08_00 | 9700 | detsim | official_MCP2020A_prodsingle_mu_10GeV_cathodecrossing_detsim_sbnd	| --- |
+| low energy electrons | MCP2020A | --- |	v09_08_00 | 19000 | detsim | official_MCP2020A_prodsingle_electron_1-50MeV_detsim_sbnd	| --- |
+| Stopping muons from top | MCP2020A | --- |	v09_08_00 | 9500 | detsim | official_MCP2020A_prodsingle_muplus_stopping_fromtop_detsim_sbnd	| --- |
+| BNB nu (single interaction) | MCP2020A | --- |	v09_09_00 | 198400 | reco2 | official_MCP2020A_prodgenie_nu_singleinteraction_tpc_gsimple-configf-v1_reco2_sbnd	| --- |
+
 ICARUS MC
 --------------------------
 
-| Sample Description | production push | approx. date production | release version | # Events | Samweb definitions: reco2 files | Samweb definitions: calibration ntuples | Samweb definitions: CAF analysis files | Notes |   
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-               
+| Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition | Notes |   
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| BNB nu-only | --- | MCP2020A | v09_09_02_01 | 113302 | reco2 | poms_icarus_prod_2020A_00_BNB_nu_v09_09_02_01_reco2		| --- |
+| NuMI off axis for ICARUS | --- | MCP2020A | v09_07_00_prof | 70790 | reco2 | ICARUS_prod_2020A_00_numioffaxis_v09_10_01_reco2	| --- |
+| COSMICs_ML | --- | --- | v09_07_00_prof	 | 543700 | detsim | ICARUS_poms_prod_cosmics_ML_v09_07_00_detsim	| --- |
+| Intime cosmics | MCP2020A | --- | v09_09_00 | 189534 | reco2 | ICARUS_prod_2020A_00_intime_cosmic_v09_09_00_reco2_halfstats	| --- |
+| --- | --- | --- | --- | 159538 | reco2SCEfix | ICARUS_prod_intime_cosmic_v09_09_02_01_reco2SCEfix | --- |
+| BNB Nue+cosmics | MCP2020A | --- | v09_09_00 | 58339 | reco2 | ICARUS_prod_2020A_00_BNB_nue_cosmic_v09_09_00_reco2	| --- |
+| --- | --- | --- | --- | 56514 | reco2SCEfix | ICARUS_prod_BNB_nue_cosmic_v09_09_02_01_reco2SCEfix | --- |
+| BNB Nu+cosmics | MCP2020A | --- | v09_09_00 | 189775 | reco2 | ICARUS_prod_2020A_00_BNB_nu_cosmic_v09_09_00_reco2_halfstats	| --- |
+| --- | --- | --- | --- | 165816 | reco2SCEfix | ICARUS_prod_BNB_nu_cosmic_v09_09_02_01_reco2SCEfix | --- |
+| BNB nue | MCP2020A | --- | v09_09_00 | 50976 | reco2 | ICARUS_prod_2020A_00_BNB_nue_v09_09_00_reco2	| --- |
+| --- | --- | --- | --- | 51092 | reco2SCEfix | ICARUS_prod_BNB_nue_v09_09_02_01_reco2SCEfix | --- |
+
+
 
 
 ### Notes on samples ###
