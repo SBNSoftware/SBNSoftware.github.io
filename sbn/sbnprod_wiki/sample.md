@@ -64,6 +64,39 @@ ICARUS MC
 
 | Sample Description | production push | approx. date production | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- | --- | 
+| NuMI nue + cosmics | MCP2021B | --- | v09_28_01_01_01 | 10020 | reco2 | IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 10020 | caf |IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_caf |
+| NuMI + cosmic | MCP2021B | --- | v09_28_01_01_01 | 60278 | reco1 | IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_reco1 |
+| --- | --- | --- | --- | 59625 | reco2 | IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 59625 | caf | IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_caf |
+| BNB nue+cosmic | MCP2021B | --- | v09_28_01_01_01 | 16598 | reco1 | IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_reco1 |
+| --- | --- | --- | --- | 15471 | reco2 | IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 15471 | caf | IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_caf |
+| BNB full-osc | MCP2021B | --- | v09_28_01_01_01 | 16091 | reco1 | IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_reco1 |
+| --- | --- | --- | --- | 15960 | reco2 | IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 9048 | caf | IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_caf |
+| In-time Cosmics | MCP2021B | --- | v09_28_01_01_01 | 50479 | reco1 | IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_reco1 |
+| --- | --- | --- | --- | 50452 | reco2 | IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 50452 | caf | IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_caf |
+| BNB nu+cosmics | MCP2021B | --- | v09_28_01_01_01 | 51827 | reco1 | IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_reco1 |
+| --- | --- | --- | --- | 50478 | reco2 | IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_reco2 |
+| --- | --- | --- | --- | --- | calib ntuples | IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_CalibTuples |
+| --- | --- | --- | --- | 49872 | caf | IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_caf |
+| Intime cosmics with overburden | MCP2021A | --- | v09_27_00_02 | 32525 | reco2 | ICARUS_prod_2021A_00_nu_outoftime_ovb_v09_27_00_02 |
+| Nu + Cosmics Overburden | MCP2021A | --- | v09_27_00_02 | 31489 | reco2 | ICARUS_prod_2021A_00_intime_outoftime_ovb_v09_27_00_02	|
+| intime cosmics | MCP2020A | --- | v09_17_00 | 14939 | detsim | ICARUS_event_selection_intime_cosmics_v09_17_00_detsim	|
+| BNB Nu + intime cosmics | MCP2020A | --- | v09_17_00 | 11175 | detsim | ICARUS_event_selection_BNB_NuPlus_intime_cosmics_v09_17_00_detsim	|
+| Intime Cosmics | SBNWorkshop0421 | --- | v09_19_00_02 | 112223 | caf | workshop_SBNWorkshop0421_prod_corsika_intime_cosmics-config_caf_icarus	|
+| BNB Nue | SBNWorkshop0421 | --- | v09_19_00_02 | 53250 | caf | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_cosmics_proton_genie_intrnue_spill_gsimple-config_caf_icarus	|
+| BNB Nu | SBNWorkshop0421 | --- | v09_19_00_02 | 162896 | caf | workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_cosmics_proton_genie_nu_spill_gsimple-config_caf_icarus	|
+| BNB Nue+cosmics | MCP2020A | --- | v09_17_01 | 9190 | reco2 | poms_icarus_bnb_nue_cosmic_v09_17_01_reco2	|
+| --- | --- | --- | --- | 8790 | caf | poms_icarus_bnb_nue_cosmic_v09_17_01_caf | 
+| Numi off axis + cosmic | MCP2020A | --- | v09_17_01 | 47425 | reco2 | icarus_numi_offaxis_cosmic_v09_17_01	|
 | BNB nu-only | MCP2020A | --- | v09_09_02_01 | 113302 | reco2 | poms_icarus_prod_2020A_00_BNB_nu_v09_09_02_01_reco2		|
 | NuMI off axis for ICARUS | MCP2020A | --- | v09_07_00_prof | 70790 | reco2 | ICARUS_prod_2020A_00_numioffaxis_v09_10_01_reco2	|
 | COSMICs_ML | --- | --- | v09_07_00_prof	 | 543700 | detsim | ICARUS_poms_prod_cosmics_ML_v09_07_00_detsim	|
@@ -75,31 +108,7 @@ ICARUS MC
 | --- | --- | --- | --- | 165816 | reco2SCEfix | ICARUS_prod_BNB_nu_cosmic_v09_09_02_01_reco2SCEfix | 
 | BNB nue | MCP2020A | --- | v09_09_00 | 50976 | reco2 | ICARUS_prod_2020A_00_BNB_nue_v09_09_00_reco2	| 
 | --- | --- | --- | --- | 51092 | reco2SCEfix | ICARUS_prod_BNB_nue_v09_09_02_01_reco2SCEfix | 
-
-
-ICARUS BNB nu-only sample	ICARUS	icaruscode v09_09_02_01	poms_icarus_prod_2020A_00_BNB_nu_v09_09_02_01_reco2				113302
-Numi off axis + cosmic	ICARUS	icaruscode v09_17_01 in branch feature/gp_numiCosmicProton	icarus_numi_offaxis_cosmic_v09_17_01				47425
-BNB Nue+cosmics, ICARUS	ICARUS	icaruscode v09_17_01	"poms_icarus_bnb_nue_cosmic_v09_17_01_reco2
-"		poms_icarus_bnb_nue_cosmic_v09_17_01_caf		9190 /  8790
-SBNworkshop2021_CAF_ICARUS_nu	ICARUS	icaruscode v09_19_00_02	workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_cosmics_proton_genie_nu_spill_gsimple-config_caf_icarus				162896
-SBNworkshop2021_CAF_ICARUS_nue	ICARUS	icaruscode v09_19_00_02	workshop_SBNWorkshop0421_prodoverlay_corsika_cosmics_cosmics_proton_genie_intrnue_spill_gsimple-config_caf_icarus				53250
-SBNworkshop2021_CAF_ICARUS_cosmics	ICARUS	icaruscode v09_19_00_02	workshop_SBNWorkshop0421_prod_corsika_intime_cosmics-config_caf_icarus				112223
-Event selection, BNB Nu+ intime cosmics, ICARUS 	ICARUS	icaruscode v09_17_00 -q e19:prof	ICARUS_event_selection_BNB_NuPlus_intime_cosmics_v09_17_00_detsim				11175
-Event selection, intime cosmics, ICARUS	ICARUS	icaruscode v09_17_00 -q e19:prof	ICARUS_event_selection_intime_cosmics_v09_17_00_detsim				14939
-ICARUS NU+Cosmics Overburden	ICARUS	icaruscode v09_27_00_02	ICARUS_prod_2021A_00_intime_outoftime_ovb_v09_27_00_02				31489
-ICARUS Intime cosmics with overburden	ICARUS	icaruscode v09_27_00_02	ICARUS_prod_2021A_00_nu_outoftime_ovb_v09_27_00_02				32525
-ICARUS, BNB nu+cosmics, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_reco1				51827
-ICARUS, BNB nu+cosmics, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_reco2	IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_CalibTuples	IcarusProd2021B_BNB_Nu_Cosmics_v09_28_01_01_01_caf		50478 /  None / 49872
-ICARUS, In-time Cosmics, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_reco1				50479
-ICARUS, In-time Cosmics,	ICARUS	v09_28_01_01_01	IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_reco2	IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_CalibTuples	IcarusProd2021B_Intime_Cosmic_v09_28_01_01_01_caf		50452 /  None  /  50452
-ICARUS, BNB full-osc, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_reco1				16091
-ICARUS, BNB full-osc,	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_reco2	IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_CalibTuples	IcarusProd2021B_BNB_FullOsc_Cosmics_v09_28_01_01_01_caf		15960 /  None /  9048
-ICARUS , BNB nue+cosmic,	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_reco1				16598
-ICARUS , BNB nue+cosmic, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_reco2	IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_CalibTuples	IcarusProd2021B_BNB_Nue_Cosmics_v09_28_01_01_01_caf		15471 / None /  15471
-ICARUS, NuMI + cosmic MC, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_reco1				60278
-ICARUS, NuMI + cosmic MC, 	ICARUS	v09_28_01_01_01	IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_reco2	IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_CalibTuples	IcarusProd2021B_NuMI_Nu_Cosmics_v09_28_01_01_01_caf		59625 / none / 59625
-NuMI nue + cosmics	ICARUS	icaruscode v09_28_01_01_01	IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_reco2	IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_CalibTuples	IcarusProd2021B_NuMI_Nue_Cosmics_v09_28_01_01_01_caf		10020 / none / 10020
-
+		
 
 ### Notes on samples ###
 * MC2020A
