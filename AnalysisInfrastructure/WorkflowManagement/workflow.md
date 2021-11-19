@@ -51,6 +51,8 @@
   * [FTS wiki](https://cdcvs.fnal.gov/redmine/projects/filetransferservice/wiki)
 * [fife_utils wiki](https://cdcvs.fnal.gov/redmine/projects/fife_utils/wiki)
   * [fife_launch wiki](https://cdcvs.fnal.gov/redmine/projects/fife_utils/wiki/Fife_launchfife_wrap)
+* [jobsub wiki](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki)
+  * [jobsub client wiki](https://cdcvs.fnal.gov/redmine/projects/jobsub/wiki/Using_the_Client)
 * dCache and Enstore
   * [Fndca home page](https://fndca.fnal.gov)
   * [Enstore home page](https://www-stken.fnal.gov/enstore/enstore_system.html)
