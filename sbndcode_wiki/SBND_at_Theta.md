@@ -1054,7 +1054,46 @@ dominate over copying time.
 
 ### Modifying Theta processed file metadata for SAM declaration
 
+The art-root file metadata is not generated automatically. Instead it needs to be modified in art-root file during jobs. This can be done at the merge stage by replacing empty.fcl used to merge with a fcl containing the required information. This is similar to what is done in the fhicls automatically created for grid jobs. An example of modifying the art-root file metadata is shown below using FileCatalogMetadata and FileCatalogMetadataSBND services:
 
+```
+services.FileCatalogMetadata: {
+    applicationFamily: "art" 
+    applicationVersion: "v08_36_01_3_MCP2_0"    
+    fileType: "mc"
+    group: "sbnd"
+    runType: "physics"    
+    service_type: "FileCatalogMetadata"   
+}
+
+services.FileCatalogMetadataSBND: {   
+    FCLName: "standard_reco_sbnd_basic.fcl" 
+    FCLVersion: "v08_36_01_3_MCP2_0"     
+    ProjectName: "prodcorsika_cosmics_proton_theta" 
+    ProjectStage: "reco" 
+    ProjectVersion: "v08_36_01_3_MCP2_0"
+    ProjectSoftware: "sbndcode"     
+    ProductionName: "MCP2.0-Theta"
+    ProductionType: "Theta"
+    service_type: "FileCatalogMetadataSBND" 
+}
+```
+Declaring the metadata to SAM is done via creating a .json file from the art-root file. For the Theta-generated files, this needs to be done after the transfer to FNAL since we require access to samweb to generate the unique file checksums. This was achieved using a slightly modified version of the standard SBND POMs production script:
+
+`/sbnd/app/users/pgreen/metadata_theta/metadataextractor_theta.sh`
+
+This can be run locally as follows:
+
+`source metadataextractor_theta.sh <art-root file>`
+
+Or can be integrated into the FTS as the initial script run during processing.
+
+The required difference from the standard script is an additional line to remove the list of parent files (the individual event files) as these are not declared to SAM:
+
+```
+# Remove the parents
+sed -i '/parents/c\    "parents": [],' $OUTPUTFILE
+```
 
 ### Automating FNAL file handling using FTS
 
