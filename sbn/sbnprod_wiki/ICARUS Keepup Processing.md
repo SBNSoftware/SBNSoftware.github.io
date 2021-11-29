@@ -18,7 +18,7 @@ The second configuration, called the Minimum Bias, collects events in coincidenc
 
 Production uses the `data_stream`, `run_number`, and `data_tier` to construct different datasets to run through the POMS workflows in the keepup processing as shown below:
 
-![Screen Shot 2021-11-24 at 3.52.50 PM.png](ICARUS%20Keepup%20Processing%200f717a500ae14d5aa44a3778450bb75f/Screen_Shot_2021-11-24_at_3.52.50_PM.png)
+![Screen Shot 2021-11-24 at 3.52.50 PM.png](Screen_Shot_2021-11-24_at_3.52.50_PM.png)
 
 Currently we are using 1 standard fcl file in the stage 0 reconstruction `stage0_multiTPC_splitstream_nofilter_icarus.fcl`
 
