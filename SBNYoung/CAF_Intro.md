@@ -26,10 +26,42 @@ However, often for analysis work you will be using a pre-made set of CAFs produc
 
 #### Understanding CAF structure
 
-CAFs consist of a series of branches containing different types of information. The top level currently (29-09-2021) consists of three things: 
-- hdr (*header* contains things like the run and subrun information)
-- mc (contains monte carlo truth information) 
-- reco (contains the reconstructed output information). 
+The CAF's have been built by a wide number of analyzers to contain the information useful for them. The file structure is *not* pristene (nor is it intended to be). One should inspect the variables they use to make sure they are sensible. Also! If there is information in the CAF's that is missing and necessary for your analysis, you are heavily encouraged to contribute them to the structure. 
+
+CAFs consist of a series of branches containing different types of information. These branches are built from the C++ class [StandardRecord](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/StandardRecord.h) in the [sbnanaobj](https://github.com/sbnsoftware/sbnanaobj) repository. Each entry in the branch consists of one detector readout.
+
+Going through some of the important branch structures in StandardRecord:
+- [hdr](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRHeader.h): *header*, contains things like the run and subrun information
+- [mc](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTruthBranch.h): contains monte carlo truth information
+  - [nu](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueInteraction.h): list of neutrino interactions in readout
+    - [prim](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueParticle.h): list of primary particles produced in the neutrino interaction
+    - E: neutrino energy [GeV]
+    - ... others
+  - [prtl](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRMeVPrtl.h): list of decays from the MeVPrtl generator
+    - E: Portal particle energy [GeV]
+    - ... others
+- [true_particles](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueParticle.h): list of all true particles (taken from G4) in the readout
+- [slc](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRSlice.h): list of reconstructed slices in the readout
+  - [reco](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRSliceRecoBranch.h): reconstructed objects in the slice
+    - [trk](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrack.h): list of tracks in the slice
+      - [truth](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrackTruth.h): truth matching for the track
+        - [p](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueParticle.h): true particle best matched to the track
+          - *NOTE* about computing an efficiency: the list of particles truth matched to a track excludes those with no reconstructed track. Thus, the denomenator of any efficiency should always be taken from the true_particles branch, which has the list of all particles.
+      - [chi2pid](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrkChi2PID.h): per-plane particle ID of track
+      - len: track length [cm]
+      - ... others
+    - [shw](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRShower.h): list of tracks in the slice
+      - [truth](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrackTruth.h): truth matching for the track
+        - [p](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueParticle.h): true particle best matched to the track
+          - *NOTE* about computing an efficiency: the list of particles truth matched to a shower excludes those with no reconstructed shower. Thus, the denomenator of any efficiency should always be taken from the true_particles branch, which has the list of all particles.
+      - ... others
+    - [stub](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRStub.h): list of stubs (low energy hadronic objects) in the slice
+  - [fmatch](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRFlashMatch.h): flash match information for the slice
+  - [truth](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRTrueInteraction.h): best matched neutrino to the slice (if there is one)
+    - *NOTE* about computing an efficiency: the list of neutrinos truth matched to a slice excludes those with no reconstructed slice. Thus, the denomenator of any efficiency should always be taken from the mc.nu branch, which has the list of all neutrinos.
+  - ... others
+- [crt_hits](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRCRTHit.h): list of CRT hits in the readout
+- [crt_tracks](https://github.com/SBNSoftware/sbnanaobj/blob/develop/sbnanaobj/StandardRecord/SRCRTTrack.h): list of CRT tracks in the readout
 
 Each of these then has its own structure with more types of information. The best way of understanding this structure is either to open a `.flat.caf.root` file in a ROOT `TBrowser` and *browse* the contents or use the [sbnanaobj/StandardRecord](https://github.com/SBNSoftware/sbnanaobj/tree/develop/sbnanaobj/StandardRecord) directory where this structure is defined.
 
