@@ -21,6 +21,7 @@ Configuration DB Instructions
 ----------------------------------------------
 * [See here for instructions on working with the configuration database](ConfigDB)
 * [See here for instructions on migrating configurations in the configurations database](MigrateConfigs)
+* [See here for instructions on synchronizing run history records in the /daq/run_records/ directory with the Online MongoDB](ImportRunHistory)
 
 
 Release Instructions
