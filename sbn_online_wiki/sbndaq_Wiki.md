@@ -22,7 +22,9 @@ Configuration DB Instructions
 * [See here for instructions on working with the configuration database](ConfigDB)
 * [See here for instructions on migrating configurations in the configurations database](MigrateConfigs)
 * [See here for instructions on synchronizing run history records in the /daq/run_records/ directory with the Online MongoDB](ImportRunHistory)
+* [See here for instructions on synchronizing run history records in the Online MongoDB with the Online UconDB](TransferRunHistory)
 * [See here for instructions for configuring import_run_history_cronjob.sh](ImportRunHistoryCronjob)
+* [See here for instructions for configuring xfer_run_history.sh](TransferRunHistoryCronjob)
 
 
 Release Instructions
