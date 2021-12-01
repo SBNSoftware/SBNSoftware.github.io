@@ -38,6 +38,6 @@ You will get a read out telling you the results from each test. Tests can either
 
 Before approving a PR the release management team will trigger the online CI tests and may also run a larger validation test (runs a full sample of events and checks the physics outputs against reference histograms). There is a large amount of information about the system provided by the CI & Validation group:  
 
-- A very detailed explaination of all the integration tests can be found [here](../sbndcode_wiki/ContinuousIntegration/Continuous_integration.md)
-- An explanation of how to use the validation tests can be found [here](../sbndcode_wiki/ContinuousIntegration/CI_Validation.md)
-- There are further pages for [developing validation tests](../sbndcode_wiki/ContinuousIntegration/Developing_Validation_Tests.md) and a couple of pages useful if you are managing any of the CI tests.
+- A very detailed explaination of all the integration tests can be found [here](../sbn/sbnci_wiki/Continuous_integration.md)
+- An explanation of how to use the validation tests can be found [here](../sbn/sbnci_wiki/CI_Validation.md)
+- There are further pages for [developing validation tests](../sbn/sbnci_wiki/Developing_Validation_Tests.md) and a couple of pages useful if you are managing any of the CI tests.
