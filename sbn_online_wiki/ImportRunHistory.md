@@ -4,11 +4,11 @@ title: If you need to synchronize run history records in the /daq/run_records/ d
 hero_height: is-small
 ---
 
-_Note: This procedure runs incrementally and pushes runs that exist in the /daq/run_records/ directory but are not yet transferred into the Online MongoDB. It is safe to run it multiple times._
+_Note: This procedure runs incrementally and pushes runs that exist in the /daq/run_records/ directory but are not yet transferred into the Online MongoDB. The current (last) run is excluded from synchronization._
 
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs configuration migration tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
-* Review [$HOME/.artdaq_database_tools.env](https://github.com/SBNSoftware/sbndaq/blob/feature/dbtools/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of .artdaq_database_tools.env._
+* Review [$HOME/.artdaq_database_tools.env](https://github.com/SBNSoftware/sbndaq/blob/feature/dbtools/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of ```.artdaq_database_tools.env```._
  
 
 * Setup the sbndaq product from the ```$MRB_TOP/localProducts_*``` directory and confirm that the ```import_run_history.sh``` script will execute from ```$MRB_TOP/localProducts_*```  by running the ```which import_run_history.sh``` command.
@@ -22,14 +22,12 @@ which import_run_history.sh
 ```
 
 * Run import_run_history.sh.
-* 
+
 ```bash
 $ import_run_history.sh
 ```
 
 * Check the output for errors.
-* 
-_Note: Run 826 was pushed to the Online MongoDB._
 
 ```bash
 $ import_run_history.sh
@@ -60,3 +58,5 @@ failed_runs_file:/daq/log/dbtools/failed_runs-120121142947.KruBM0vi
 
 Wed Dec  1 14:29:48 CST 2021: DAQInterface in partition 999 launched and now in "stopped" state, listening on port 6659
 ```
+
+_Note: Run 826 was pushed to the Online MongoDB with the first execution of ```import_run_history.sh```, and the second execution did nothing since the database was up to date. It is safe to run ```import_run_history.sh``` multiple times._
