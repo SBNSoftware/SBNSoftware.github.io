@@ -35,6 +35,9 @@ cp $(which import_run_history_cronjob.sh) ${HOME}/cronjobs/ && chmod a+rx ${HOME
 ```bash
 $ crontab -l
 */5 * * * * /home/nfs/sbnd/cronjobs/import_run_history_cronjob.sh >> /daq/log/dbtools/database-history-icarus_v4x_db.log 2>&1
+```
+
+```bash
 15:56:23sbnd@sbnd-gateway02:~
 $ tail -100 /daq/log/dbtools/database-history-icarus_v4x_db.log
 runs_file:/daq/log/dbtools/runs-829-828.txt
