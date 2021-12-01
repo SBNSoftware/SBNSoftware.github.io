@@ -4,6 +4,8 @@ title: Steps to configure a cronjob for synchronizing run history records in the
 hero_height: is-small
 ---
 
+_Note: This cron job imports the most recent run history records that, for various reasons, did not get imported by daqinterface._
+
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs configuration migration tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
 * Review [$HOME/.artdaq_database_tools.env](https://github.com/SBNSoftware/sbndaq/blob/feature/dbtools/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of .artdaq_database_tools.env._
