@@ -22,12 +22,15 @@ which import_run_history.sh
 ```
 
 * Run import_run_history.sh.
+* 
 ```bash
 $ import_run_history.sh
 ```
 
 * Check the output for errors.
+* 
 _Note: Run 826 was pushed to the Online MongoDB._
+
 ```bash
 $ import_run_history.sh
 runs_file:/daq/log/dbtools/retry-runs-120121142635.txt
