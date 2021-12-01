@@ -31,3 +31,14 @@ cp $(which import_run_history_cronjob.sh) ${HOME}/cronjobs/ && chmod a+rx ${HOME
 ```
 
 * Wait 6 mins and verify the cronjob runs by running the ```tail -100 /daq/log/dbtools/database-history-icarus_v4x_db.log``` command.
+
+```bash
+$ crontab -l
+*/5 * * * * /home/nfs/sbnd/cronjobs/import_run_history_cronjob.sh >> /daq/log/dbtools/database-history-icarus_v4x_db.log 2>&1
+15:56:23sbnd@sbnd-gateway02:~
+$ tail -100 /daq/log/dbtools/database-history-icarus_v4x_db.log
+runs_file:/daq/log/dbtools/runs-829-828.txt
+failed_runs_file:/daq/log/dbtools/failed_runs-829-828.gOUQMKoA
+Wed Dec  1 16:00:03 CST 2021: DAQInterface in partition 999 launched and now in "stopped" state, listening on port 6659
+16:03:16sbnd@sbnd-gateway02:~
+```
