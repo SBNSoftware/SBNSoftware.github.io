@@ -59,4 +59,4 @@ failed_runs_file:/daq/log/dbtools/failed_runs-120121142947.KruBM0vi
 Wed Dec  1 14:29:48 CST 2021: DAQInterface in partition 999 launched and now in "stopped" state, listening on port 6659
 ```
 
-_Note: Run 826 was imported into ArtdaqDB with the first execution of ```importRunHistory2ArtdaqDB.sh```, and the second execution did nothing since the database was up to date. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
+_Note: Run 826 was imported into ArtdaqDB with the first execution of ```importRunHistory2ArtdaqDB.sh```, and the second execution did *nothing* since the database was up to date. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
