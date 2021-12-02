@@ -22,7 +22,7 @@ Configuration DB Instructions
 * [See here for instructions on working with the configuration database](ConfigDB)
 * [See here for instructions on migrating configurations in the configurations database](MigrateConfigs)
 
-Copy ```run history records``` from /daq/run_records into ArtdaqDB, and into UconDB
+Copy ```run history``` from /daq/run_records into ArtdaqDB, and into UconDB
 ----------------------------------------------
 * [Import run history from /daq/run_records/ into ArtdaqDB](ImportRunHistory2ArtdaqDB)
   * [Configure importRunHistory2ArtdaqDB-cron.sh](ImportRunHistory2ArtdaqDB_cron)
