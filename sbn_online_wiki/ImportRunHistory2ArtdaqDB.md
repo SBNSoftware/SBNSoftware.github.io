@@ -6,7 +6,7 @@ hero_height: is-small
 
 _Note: ```importRunHistory2ArtdaqDB.sh``` imports run history records that exist in /daq/run_records/ but have not yet been imported into ArtdaqDB. The current (last) run is excluded from import. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
 
-* Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs configuration migration tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
+* Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs database tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
 * Review [$HOME/.artdaq_database_tools.env](https://github.com/SBNSoftware/sbndaq/blob/feature/dbtools/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of .artdaq_database_tools.env._
  
