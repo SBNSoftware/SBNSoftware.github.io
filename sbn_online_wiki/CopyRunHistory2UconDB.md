@@ -72,4 +72,4 @@ Copying blob file to ucondb...
 $ copyRunHistory2UconDB.sh
 ```
 
-_Note: Runs 826-828 were copied to UconDB with the first execution of ```copyRunHistory2UconDB.sh```, and the second execution did nothing since UconDB was up to date. It is safe to run ```copyRunHistory2UconDB.sh``` repeatedly._
+_Note: Runs 826-828 were copied to UconDB with the first execution of ```copyRunHistory2UconDB.sh```, and the second execution did **nothing** since UconDB was up to date. It is safe to run ```copyRunHistory2UconDB.sh``` repeatedly._
