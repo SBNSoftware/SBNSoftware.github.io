@@ -1,10 +1,10 @@
 ---
 layout: page
-title: If you need to import run history records from /daq/run_records/ into ArdaqDB, you may follow the procedure, as described below.
+title: If you need to import run history records from /daq/run_records/ into ArtdaqDB, you may follow the procedure, as described below.
 hero_height: is-small
 ---
 
-_Note: ```importRunHistory2ArtdaqDB.sh``` imports run history records that exist in /daq/run_records/ but have not yet been imported into ArdaqDB. The current (last) run is excluded from import. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
+_Note: ```importRunHistory2ArtdaqDB.sh``` imports run history records that exist in /daq/run_records/ but have not yet been imported into ArtdaqDB. The current (last) run is excluded from import. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
 
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs configuration migration tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
@@ -59,4 +59,4 @@ failed_runs_file:/daq/log/dbtools/failed_runs-120121142947.KruBM0vi
 Wed Dec  1 14:29:48 CST 2021: DAQInterface in partition 999 launched and now in "stopped" state, listening on port 6659
 ```
 
-_Note: Run 826 was imported into ArdaqDB with the first execution of ```importRunHistory2ArtdaqDB.sh```, and the second execution did nothing since the database was up to date. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
+_Note: Run 826 was imported into ArtdaqDB with the first execution of ```importRunHistory2ArtdaqDB.sh```, and the second execution did nothing since the database was up to date. It is safe to run ```importRunHistory2ArtdaqDB.sh``` repeatedly._
