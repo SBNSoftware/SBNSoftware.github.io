@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Steps to configure a cronjob for synchronizing run history records in the /daq/run_records/ directory with the Online MongoDB instance.
+title: Steps to configure a cronjob for importing run history records from the /daq/run_records/ directory into artdaq_database.
 hero_height: is-small
 ---
 
