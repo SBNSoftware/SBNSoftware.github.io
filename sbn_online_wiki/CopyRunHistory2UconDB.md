@@ -1,10 +1,10 @@
 ---
 layout: page
-title: If you need to copy run history records from artdaq_database into UconDB, you may follow the procedure, as described below.
+title: If you need to copy run history records from ArtdaqDB into UconDB, you may follow the procedure, as described below.
 hero_height: is-small
 ---
 
-_Note: ```copyRunHistory2UconDB.sh``` copies run history records that exist in artdaq_database but have not yet been copied into UconDB. It is safe to run ```copyRunHistory2UconDB.sh``` repeatedly._
+_Note: ```copyRunHistory2UconDB.sh``` copies run history records that exist in ArtdaqDB but have not yet been copied into UconDB. It is safe to run ```copyRunHistory2UconDB.sh``` repeatedly._
 
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs database tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
