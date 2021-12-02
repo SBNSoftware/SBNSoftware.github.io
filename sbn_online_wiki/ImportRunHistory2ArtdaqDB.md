@@ -18,7 +18,7 @@ ups list -aK+ sbndaq -z $MRB_TOP/localProducts_*
 #$ "sbndaq" "v1_00_01" "Linux64bit+3.10-2.17" "e20:prof:s112" ""
 setup "sbndaq" "v1_00_01" -q "e20:prof:s112"
 which importRunHistory2ArtdaqDB.sh
-#$ ~/DAQ_DevAreas/DAQ_23Nov2021GAL/localProducts_sbndaq_v1_00_01_e20_prof_s112/sbndaq/v1_00_01/configDB_tools/xfer_run_history.sh
+#$ ~/DAQ_DevAreas/DAQ_23Nov2021GAL/localProducts_sbndaq_v1_00_01_e20_prof_s112/sbndaq/v1_00_01/configDB_tools/importRunHistory2ArtdaqDB.sh
 ```
 
 * Run importRunHistory2ArtdaqDB.sh.
