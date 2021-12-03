@@ -71,7 +71,7 @@ Now we will want to start checking out the products that you would like to edit!
 ## Checking Out The Packages You Want
 
 First thing you'll want to do is move to the directory that holds all the source code:  
-`cd src`  
+`cd srcs
 
 From here you are ready to start checking out package! We will start with our baseline package `<sbncode/icaruscode/sbndcode>`:  
 `mrb g <sbncode/icaruscode/sbndcode>@<version>`  
