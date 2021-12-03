@@ -55,11 +55,9 @@ the following location:
 /pnfs/sbnd/persistent/stash/fluxFiles
 ```
 
-The files are separated into several categories: BooNEToGSimple (which
-are the newest and recommended kind of BNB flux file), the older gsimple
-type (which were are the older flux files and were generated using NuMI
-style decay algorithms) and the raw files used in the generation of the
-former two categories.
+The files are separated into several categories: 
+- _BooNEToGSimple_ (which are the newest and recommended kind of BNB flux file), the older gsimple type (which were are the older flux files and were generated using NuMI style decay algorithms) and the raw files used in the generation of the former two categories.
+- _BooNE_ The original flux files in BooNE ntuple format.
 
 The flux files are further separated into "configurations" which
 describe a particular setup. The configuration encapsulates all of the
