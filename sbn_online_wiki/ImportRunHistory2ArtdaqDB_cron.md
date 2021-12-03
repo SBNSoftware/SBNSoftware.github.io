@@ -27,7 +27,7 @@ cp $(which importRunHistory2ArtdaqDB-cron.sh) ${HOME}/cronjobs/ && chmod a+rx ${
 * Add or update the crontab entry for ```importRunHistory2ArtdaqDB-cron.sh``` with the ```crontab -e``` command (_uses vi editor_).
  
 ```bash
-*/5 * * * * /home/nfs/sbnd/cronjobs/importRunHistory2ArtdaqDB-cron.sh >> /daq/log/dbtools/database-artdaqdb-icarus_v4x_db.log 2>&1
+*/5 * * * * ~/cronjobs/importRunHistory2ArtdaqDB-cron.sh >> /daq/log/dbtools/database-artdaqdb-icarus_v4x_db.log 2>&1
 ```
 
 * Wait 6 mins and verify the cronjob runs by running the ```tail -100 /daq/log/dbtools/database-artdaqdb-icarus_v4x_db.log``` command.
