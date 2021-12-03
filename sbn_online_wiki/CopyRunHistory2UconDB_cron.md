@@ -27,7 +27,7 @@ cp $(which copyRunHistory2UconDB-cron.sh) ${HOME}/cronjobs/ && chmod a+rx ${HOME
 * Add or update the crontab entry for ```copyRunHistory2UconDB-cron.sh``` with the ```crontab -e``` command (_uses vi editor_).
  
 ```bash
-*/5 * * * * /home/nfs/sbnd/cronjobs/copyRunHistory2UconDB-cron.sh >> /daq/log/dbtools/database-ucondb-icarus_v4x_db.log 2>&1
+*/5 * * * * ~/cronjobs/copyRunHistory2UconDB-cron.sh >> /daq/log/dbtools/database-ucondb-icarus_v4x_db.log 2>&1
 ```
 
 * Wait 6 mins and verify the cronjob runs by running the ```tail -100 /daq/log/dbtools/database-ucondb-icarus_v4x_db.log``` command.
