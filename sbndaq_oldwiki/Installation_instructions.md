@@ -81,7 +81,7 @@ changes that may have been pushed since the last tag (v\#\_\#\#\_\#\#)
 was created. Alternatively, if you want to build the tagged, working
 version that was set up in the previous steps, directly:\
 
-    mrb g -t <desired tag version *e.g.* v0_05_01> -d <repo_name_with_underscore> ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/<repo-name>
+    mrb g -t <desired tag version *e.g.* v0_05_01> -d <repo_name_with_underscore> ssh://p-sbndaq@cdcvs.fnal.gov/cvs/projects/<repo-name-with-dashes>.git
 
 \
 If you\'re not sure what tags are needed for the various repos you can
