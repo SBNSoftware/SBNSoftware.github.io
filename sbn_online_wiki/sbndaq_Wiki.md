@@ -29,6 +29,11 @@ Copy ```run history``` from /daq/run_records into ArtdaqDB, and into UconDB
 * [Copy run history from ArtdaqDB into UconDB](CopyRunHistory2UconDB)
   * [Configure copyRunHistory2UconDB-cron.sh](CopyRunHistory2UconDB_cron)
 
+Grafana monitoring Instructions
+----------------------------------------------
+ * [Configure runrecords_monitor.sh](RunRecordsMonitor)
+ * [Configure disk_monitor.shh](DiskMonitor)
+
 
 Release Instructions
 ----------------------------------------------
