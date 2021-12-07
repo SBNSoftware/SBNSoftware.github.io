@@ -8,7 +8,7 @@ _Note: ```importRunHistory2ArtdaqDB.sh``` imports run history records that exist
 
 * Check out the latest sbndaq project code into your [MRB](https://sbnsoftware.github.io/sbn_online_wiki/Installation) area, run a build, followed by the ```mrb -i; mrbslp``` command that installs database tools into the ```$SBNDAQ_DIR/configDB_tools``` directory.
 
-* Review [$HOME/.artdaq_database_tools.env](https://github.com/SBNSoftware/sbndaq/blob/feature/dbtools/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of .artdaq_database_tools.env._
+* Review [$HOME/.artdaq_database_tools.env](https://raw.githubusercontent.com/SBNSoftware/sbndaq/develop/configDB_tools/config/artdaq_database_tools.env.example) or create a new one if required. _Ask Wes or Gennadiy to send you a working copy of .artdaq_database_tools.env._
  
 
 * Setup the sbndaq product from the ```$MRB_TOP/localProducts_*``` directory and confirm that the ```importRunHistory2ArtdaqDB.sh``` script will execute from ```$MRB_TOP/localProducts_*```  by running the ```which importRunHistory2ArtdaqDB.sh``` command.
