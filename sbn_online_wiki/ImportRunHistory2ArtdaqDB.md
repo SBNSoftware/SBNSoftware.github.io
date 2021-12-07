@@ -36,7 +36,7 @@ failed_runs_file:/daq/log/dbtools/failed_runs-120121142635.kCfWqo40
 
 Wed Dec  1 14:26:36 CST 2021: DAQInterface in partition 999 launched and now in "stopped" state, listening on port 6659
 Run 826
-Attempting to save config info to the database...b'BULKLOADER is running on sbnd-gateway02 and ARTDAQ_DATABASE_URI=mongodb://sbnd-db01.fnal.gov:28058,sbnd-db02.fnal.gov:28058,mongodb-p02.fnal.gov:27018/sbnd_db_archive?replicaSet=sbnddaqprd\nLoaded 10 files with 8 threads in 162 msecs.\nAvarage file load time is 129 msecs.'
+Attempting to save config info to the database...b'BULKLOADER is running on sbnd-gateway02 and ARTDAQ_DATABASE_URI=mongodb://sbnd-db01.example.com:28058,sbnd-db02.example.com:28058,mongodb-p02.example.com:27018/sbnd_db_archive?replicaSet=sbnddaqprd\nLoaded 10 files with 8 threads in 162 msecs.\nAvarage file load time is 129 msecs.'
 Archived ('SystemLayout', 'schema', './schema.fcl')
 Archived ('RunHistory', 'tpc01', './826/tpc01.fcl')
 Archived ('RunHistory', 'ptb01', './826/ptb01.fcl')
