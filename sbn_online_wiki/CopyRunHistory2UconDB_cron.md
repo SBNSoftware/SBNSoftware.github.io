@@ -31,4 +31,4 @@ cp $(which copyRunHistory2UconDB-cron.sh) ${HOME}/cronjobs/ && chmod a+rx ${HOME
 */3 * * * * ARTDAQ_DATABASE_TOOLS_ENV=~/.artdaq_database_tools_pending.env ~/cronjobs/copyRunHistory2UconDB-cron.sh >> /daq/log/dbtools/database-ucondb-pending.log  2>&1
 ```
 
-* Wait 4 mins and verify the cronjob runs by running the ```tail -100 /daq/log/dbtools/database-ucondb*.log``` command.
+* Wait 4 mins and verify the cronjob runs by running the ``` ls  /daq/log/dbtools/database-ucondb{,-pending}.log |xargs -n1 tail -20``` command.
