@@ -9,7 +9,8 @@ _Note: Grafana is running in a singularity container, which is managed by System
 * ssh into grafana server as root
 
 * stop grafana container with "systemctl stop grafana.service; systemctl reset-failed grafana.service"
-  _Note: Sometimes it may be necessary to delete old pid or authdigest_shm files._
+
+_Note: Sometimes it may be necessary to delete old pid or authdigest_shm files._
 
 ```bash
 rm /data/grafana/data/container/pids/*.pid
@@ -17,7 +18,9 @@ rm /data/grafana/data/container/httpd/data/authdigest_shm.*
 ```
 
 * start grafana container with  session with  "systemctl start  grafana.service; systemctl status grafana.service".
-   _An output example from the status check is given below._
+
+_An output example from the status check is given below._
+   
 ```bash
 bash-4.2# systemctl status grafana.service
 ● grafana.service - Grafana service
