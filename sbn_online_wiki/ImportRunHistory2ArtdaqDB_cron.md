@@ -30,4 +30,4 @@ cp $(which importRunHistory2ArtdaqDB-cron.sh) ${HOME}/cronjobs/ && chmod a+rx ${
 */5 * * * * ~/cronjobs/importRunHistory2ArtdaqDB-cron.sh >> /daq/log/dbtools/database-artdaqdb.log 2>&1
 ```
 
-* Wait 6 mins and verify the cronjob runs by running the ```tail -100 /daq/log/dbtools/database-artdaqdb.log``` command.
+* Wait 6 mins and verify the cronjob runs by running the ```tail -20 /daq/log/dbtools/database-artdaqdb.log``` command.
