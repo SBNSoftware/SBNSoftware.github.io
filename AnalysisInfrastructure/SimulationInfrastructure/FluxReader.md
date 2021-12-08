@@ -1,13 +1,7 @@
 ---
 layout: page
 title: FluxReader
-# subtitle: Subtitle
-# image: sbndcode_wiki/sbnd_logo.png
-# description: All about SBND commissioning code
 hero_height: is-medium
-# menubar: sbndcode_menu
-toc: true
-toc_title: FluxReader
 ---
 
 
