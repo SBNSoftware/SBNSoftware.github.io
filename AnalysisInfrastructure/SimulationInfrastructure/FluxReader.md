@@ -14,7 +14,7 @@ toc_title: FluxReader
 FluxReader
 ========================================================================
 
-The `FluxReadwer` code allows reading gSimple, Dk2Nu, or BooNE files direclty into LArSoft. For each neutrino ray, an MCTruth dataproduct is created with associated MCFlux.
+The `FluxReader` code allows reading gSimple, Dk2Nu, or BooNE files direclty into LArSoft. For each neutrino ray, an MCTruth dataproduct is created with associated MCFlux.
 The usual LArSoft chain involves starting with a neutrino event generator, which reads in gSimple flux files and saves neutrino interactions in the LArSoft art::Event. In this way though, neutrinos that do not interact are lost and one cannot calculate, for example, the neutrino flux. FluxReader instead reads in gSimple files direclty and saves all the neutrinos to the LArSoft art::Event. There is no neutrino event generator involved in this case.
 Note that in this case, each MCTruth product does not represent a neutrino interaction, but just a neutrino ray.
 
