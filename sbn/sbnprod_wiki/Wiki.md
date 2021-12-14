@@ -43,6 +43,9 @@ The form is also a checklist of the needed information. If you need help answeri
 
 The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
 
+ICARUS data Keepup processing
+--------------------------
+ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
 
 Contributing to this wiki
 --------------------------
