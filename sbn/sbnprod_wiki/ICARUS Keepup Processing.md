@@ -11,8 +11,8 @@ The first configuration, called "Majority trigger", is a hardware trigger based 
 
 - bnb
 - numi
-- offbeambnb
-- offbeamnumi
+- offbeambnb (available from icaruscode v09_37_01_02)
+- offbeamnumi (available from icaruscode v09_37_01_02)
 
 The second configuration, called the Minimum Bias, collects events in coincidence with the beam spills but ignoring the PMT light requirement. The data stream associated with this configuration is called the "unknown" stream and it contains a mix of the BNB and NuMI beam spills. The raw files categorized as the "unknown" stream will then split into file with only the BNB beam spills and file with only the NuMI beam spills.
 
