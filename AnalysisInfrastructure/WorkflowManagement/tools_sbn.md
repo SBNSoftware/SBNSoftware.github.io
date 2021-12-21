@@ -263,3 +263,45 @@ Options:
 </pre>
 </details>
 
+<details>
+<summary>sbnd/sbndpoms_caf_concatenation.sh</summary>
+<pre>
+Purpose: Produces concatenated caf files from a dataset of standard cafs.
+         Also provides the option to flatten the concatenated file.
+
+Usage: sbndpoms_caf_concatenation.sh --defname &lt;SAMDEF&gt; [options]
+
+Options:
+
+-h|-?|--help         - Print help message.
+--workdir &lt;dir&gt;      - Top level directory for producing the files.
+--outdir &lt;dir&gt;       - Top level directory for storing the files.
+--size &lt;maxsize&gt;     - Specify the maximum size of one of the files.
+--flatten            - Created flattened caf files too.
+</pre>
+</details>
+
+<details>
+<summary>sbnd/sbndpoms_genfclwithrunnumber_maker.sh</summary>
+<pre>
+Purpose: Wrapper script to create a set of initial fcl files.
+         Makes use of the sbnpoms_metadata_injector.sh script.
+
+Usage: sbndpoms_genfclwithrunnumber_maker.sh [options]
+
+Options:
+
+-h|-?|--help         - Print help message.
+--fcl &lt;fcl&gt;          - The gen fcl file for this campaign.
+--outdir &lt;dir&gt;       - Top level directory for storing the files.
+--samdeclare         - Declare produced fcls to SAM.
+--nfiles &lt;n&gt;         - Number of files (i.e. subruns) to produce.
+--workdir &lt;dir&gt;      - Top level directory for producing the files.
+--mdprojver &lt;ver&gt;    - Code version being used for campaign.
+--mdprojname &lt;name&gt;  - Name of production (i.e. MCPXXXXA).
+--mdprojtype &lt;type&gt;  - Type of production (i.e. official).
+--mdstagename &lt;name&gt; - Name of stage (i.e. gen).
+-v|--verbose         - Increases verbosity of output.
+</pre>
+</details>
+
