@@ -30,7 +30,7 @@ Note that Clockodile, page D33, has a mode where you can get the event descripti
 
 (wb)
 
-## SBND MFTU Channel Configuration
+## MFTU Channel Configuration
 
 There are currently two MFTU(s) installed for SBN.  One at SBN-ND and one at SBN-FD.  The one at SBN-ND is MFTU-004 with an IP address of 10.200.5.14.  The one at SBN-FD is MFTU-005 with an IP address of 10.200.5.15.  These are both on the Controls Network using a special VLAN set up for the MFTU to communicate with Acnet.  An Erlang Frontend performs all direct communication with the MFTU.  The Frontend then communicates with Acnet to handle all requests.  This is done because the MFTU can only handle one communication request at a time.
  
