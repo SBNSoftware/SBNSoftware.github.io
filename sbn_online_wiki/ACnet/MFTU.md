@@ -62,17 +62,18 @@ If a channel is armed and no trigger (BES) comes along, the channel is cleared o
 
 **Channels A9 through A14**
 
-Trigger: $1D
+Trigger: \$1D
 
 Channel A9 is shown as an example in the table below.  Currently all these channels arm on a TCLK $1D for the first possible EVENT.
 
 Settings for 16 different EVENTs per channel
+
 | Channel A9 | | | | | | | | | | | | |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arming and Triggering EVENTs | $1D | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
+| Arming and Triggering EVENTs | \$1D | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE |
 | Delay Setting (count of ticks synced to TCLK) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-When a TCLK $1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the $1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
+When a TCLK \$1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the \$1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
  
 All of Channels A9 through A14 function in this manner with the possibility for independently different Arming EVENTs and Delay Settings.
 
@@ -87,17 +88,18 @@ This channel is a TTL output of the BRF signal.
 
 **Channels B1 through B8**
 
-Trigger: $74
+Trigger: \$74
 
 Channel B1 is shown as an example in the table below.  Currently all these channels arm on a MBS $74 for the first possible EVENT.
 
 Settings for 16 different EVENTs per channel
+
 | Channel B1 | | | | | | | | | | | | |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arming and Triggering EVENTs | $74 | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
+| Arming and Triggering EVENTs | \$74 | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE |
 | Delay Setting (count of ticks synced to MIBS) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-When a MIBS $74 is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the $74 (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to MIBS for the Delay Setting.  Since it is synced to MIBS, this results in each tick being in sync with the LLRF divided by 7 value of approximately 7.5MHz frequency or about 132nS.  Once this value is counted, the Channel output will fire. 
+When a MIBS \$74 is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the \$74 (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to MIBS for the Delay Setting.  Since it is synced to MIBS, this results in each tick being in sync with the LLRF divided by 7 value of approximately 7.5MHz frequency or about 132nS.  Once this value is counted, the Channel output will fire. 
  
 All of Channels B1 through B8 function in this manner with the possibility for independently different Arming EVENTs and Delay Settings.
 
@@ -105,17 +107,18 @@ All of Channels B1 through B8 function in this manner with the possibility for i
 
 **Channels B9 through B16**
 
-Trigger: $1D
+Trigger: \$1D
 
 Channel B9 is shown as an example in the table below.  Currently all these channels arm on a TCLK $1D for the first possible EVENT.
 
 Settings for 16 different EVENTs per channel
+
 | Channel B9 | | | | | | | | | | | | |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arming and Triggering EVENTs | $1D | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
+| Arming and Triggering EVENTs | \$1D | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE |
 | Delay Setting (count of ticks synced to TCLK) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-When a TCLK $1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the $1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
+When a TCLK \$1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the \$1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
  
 All of Channels B9 through B16 function in this manner with the possibility for independently different Arming EVENTs and Delay Settings.
 
