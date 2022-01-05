@@ -49,7 +49,7 @@ Channel A1 is shown as an example in the table below.  Currently all these chann
 
 
 | Channel A1 | Settings for 16 different EVENTs per channel |
-|------------|----------------------------------------------|
+|------------|---|---|---|---|---|---|---|---|---|---|---|---|
 | Arming EVENTs | $1D | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
 | Delay Setting (count of RF Buckets) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Vern Delay Setting (1nS increments) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 
