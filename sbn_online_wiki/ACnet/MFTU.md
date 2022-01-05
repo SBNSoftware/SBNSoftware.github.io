@@ -29,3 +29,36 @@ When finished setting, be sure to disable Settings on the Utilities window.   Wh
 Note that Clockodile, page D33, has a mode where you can get the event description text to learn what 1D, 74 and the like are
 
 (wb)
+
+## SBND MFTU Channel Configuration
+
+There are currently two MFTU(s) installed for SBN.  One at SBN-ND and one at SBN-FD.  The one at SBN-ND is MFTU-004 with an IP address of 10.200.5.14.  The one at SBN-FD is MFTU-005 with an IP address of 10.200.5.15.  These are both on the Controls Network using a special VLAN set up for the MFTU to communicate with Acnet.  An Erlang Frontend performs all direct communication with the MFTU.  The Frontend then communicates with Acnet to handle all requests.  This is done because the MFTU can only handle one communication request at a time.
+ 
+The general premise of the MFTU is as follows. An arming signal comes along for a given channel (usually a Clock EVENT, up to 16 different Clock EVENTs could be chosen per channel).  A trigger then comes along after which the channel that was armed will start counting a specified number of counts (the quantity that is counted corresponds to the Clock EVENT that armed the channel, 16 different possible values).  Upon reaching the count, the channel will then fire an output high for a specified amount of time (currently defaulted to 1uS).  The cycle then repeats when another arming signal comes along.  This is a very simplified description and there are numerous options for every channel but this is the overall functionality of a given channel and sequence of timing that occurs with an MFTU.  All channels also have an independent enable/disable option.
+ 
+All channels are 50 Ohm TTL signals.
+ 
+Both of the MFTU(s) are configured the same way. 
+The channels will be described as follows.  Note: The $FE EVENT is a null setting.  The $FE EVENT will never occur on TCLK.
+
+Channels A1 through A8
+
+Trigger: BES ($1F)
+
+Channel A1 is shown as an example in the table below.  Currently all these channels arm on a TCLK $1D for the first possible EVENT.
+
+
+| Channel A1 | Settings for 16 different EVENTs per channel |
+-------------------------------------------------------------
+| Arming EVENTs | $1D | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
+| Delay Setting (count of RF Buckets) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Vern Delay Setting (1nS increments) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 
+
+When a TCLK $1D is seen, the channel is armed.  The Delay setting that corresponds to the $1D (in the same column) is then loaded into a counter for that channel.  When the trigger (BES) is received, the channel will start counting the Delay Setting.  These channels are set up to count the BRF buckets as its clock source for the Delay Setting.  Once this value is counted, the Channel output will fire.  The Vernier Delay Setting that corresponds to the $1D (in the same column) was also loaded into a delay line chip that delays the output by the setting in 1nS increments. 
+ 
+All of Channels A1 through A8 function in this manner with the possibility for independently different Arming EVENTs, Delay Settings, and Vern Delay Settings.
+If a channel is armed and no trigger (BES) comes along, the channel is cleared on a TCLK $11, $12, $13, $14, $15, $16, $17, or $1C.
+
+
+
+
