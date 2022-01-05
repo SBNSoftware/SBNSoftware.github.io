@@ -47,15 +47,15 @@ Trigger: BES (\$1F)
 
 Channel A1 is shown as an example in the table below.  Currently all these channels arm on a TCLK $1D for the first possible EVENT.
 
-
+Settings for 16 different EVENTs per channel
              
-| Channel A1 | Set|ting|s fo|r 16| dif|fere|nt E|VENT|s p|er |cha|nnel|
+| Channel A1 | | | | | | | | | | | | |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|
 | Arming EVENTs | \$1D | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE |
 | Delay Setting (count of RF Buckets) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Vern Delay Setting (1nS increments) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 
 
-When a TCLK \$1D is seen, the channel is armed.  The Delay setting that corresponds to the $1D (in the same column) is then loaded into a counter for that channel.  When the trigger (BES) is received, the channel will start counting the Delay Setting.  These channels are set up to count the BRF buckets as its clock source for the Delay Setting.  Once this value is counted, the Channel output will fire.  The Vernier Delay Setting that corresponds to the $1D (in the same column) was also loaded into a delay line chip that delays the output by the setting in 1nS increments. 
+When a TCLK \\$1D is seen, the channel is armed.  The Delay setting that corresponds to the $1D (in the same column) is then loaded into a counter for that channel.  When the trigger (BES) is received, the channel will start counting the Delay Setting.  These channels are set up to count the BRF buckets as its clock source for the Delay Setting.  Once this value is counted, the Channel output will fire.  The Vernier Delay Setting that corresponds to the $1D (in the same column) was also loaded into a delay line chip that delays the output by the setting in 1nS increments. 
  
 All of Channels A1 through A8 function in this manner with the possibility for independently different Arming EVENTs, Delay Settings, and Vern Delay Settings.
 If a channel is armed and no trigger (BES) comes along, the channel is cleared on a TCLK $11, $12, $13, $14, $15, $16, $17, or $1C.
