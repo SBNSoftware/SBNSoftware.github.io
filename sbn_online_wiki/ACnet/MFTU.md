@@ -47,8 +47,8 @@ Trigger: BES ($1F)
 
 Channel A1 is shown as an example in the table below.  Currently all these channels arm on a TCLK $1D for the first possible EVENT.
 
-
-| Channel A1 | Settings for 16 different EVENTs per channel | | | | | | | | | | | |
+             Settings for 16 different EVENTs per channel
+| Channel A1 | | | | | | | | | | | | |
 |------------|---|---|---|---|---|---|---|---|---|---|---|---|
 | Arming EVENTs | $1D | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE | $FE |
 | Delay Setting (count of RF Buckets) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
