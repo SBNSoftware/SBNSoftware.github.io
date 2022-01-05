@@ -39,7 +39,7 @@ The general premise of the MFTU is as follows. An arming signal comes along for 
 All channels are 50 Ohm TTL signals.
  
 Both of the MFTU(s) are configured the same way. 
-The channels will be described as follows.  Note: The \$FE EVENT is a null setting.  The \$FE EVENT will never occur on TCLK.
+The channels will be described as follows.  Note: The \\$FE EVENT is a null setting.  The \\$FE EVENT will never occur on TCLK.
 
 **Channels A1 through A8**
 
