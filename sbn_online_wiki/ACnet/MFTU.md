@@ -74,7 +74,7 @@ Settings for 16 different EVENTs per channel
 | Arming and Triggering EVENTs | \$1D | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE | \$FE |
 | Delay Setting (count of ticks synced to TCLK) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-When a TCLK \$1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the \$1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
+When a TCLK \\$1D is seen, the channel is armed and triggered at the same time.  The Delay setting that corresponds to the \$1D (in the same column) is counted immediately.  These channels are set up to count the number of ticks with a clock synced to TCLK for the Delay Setting.  Since it is synced to TCLK, this results in each tick being 1 uS.  Once this value is counted, the Channel output will fire.
  
 All of Channels A9 through A14 function in this manner with the possibility for independently different Arming EVENTs and Delay Settings.
 
