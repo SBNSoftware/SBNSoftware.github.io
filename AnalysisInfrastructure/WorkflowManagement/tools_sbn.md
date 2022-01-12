@@ -249,6 +249,21 @@ Options:
 </details>
 
 <details>
+<summary>sbnpoms_hepevt_extractor.sh</summary>
+<pre>
+-h|-?|--help          - Print help message.
+-i|--input            - Specify input hepevt text file (no default).
+-o|--output           - Specify output hepevt text file
+                        (default HEPevents.txt in current directory).
+-n &lt;nev&gt;              - Number of events to extract (default 20).
+--nskip &lt;nev&gt;         - Number of events to skip (default 0).
+--nskip_process &lt;nev&gt; - Number of events to skip per process (default same as -n).
+--process &lt;proc&gt;      - Override $PROCESS environment variable for the
+                        purpose of calculating skip events.
+</pre>
+</details>
+
+<details>
 <summary>sbnpoms_wrapperfcl_maker.sh</summary>
 <pre>
 Purpose: Make an empty wrapper fcl file.
