@@ -22,6 +22,7 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v09_42_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes094201.html)
   |`v09_37_01_03p01`            |    Patch release for SBN-2021C              |    [Release Notes](ReleaseNotes09370103p01.html)
   |`v09_42_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes094200.html)
   |`v09_37_01_03`               |    Patch release for SBN-2021C              |    [Release Notes](ReleaseNotes09370103.html)
