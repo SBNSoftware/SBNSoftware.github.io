@@ -9,7 +9,7 @@ NEW INSTRUCTIONS
 ====================================================
 
 Note that we have a new wiki, and updated instructions, at
-<https://sbnsoftware.github.io/sbndaq_wiki/Installation>.
+<https://sbnsoftware.github.io/sbn_online_wiki/Installation>.
 
 -   **Table of contents**
 -   [NEW INSTRUCTIONS]
