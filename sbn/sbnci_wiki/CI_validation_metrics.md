@@ -1,7 +1,7 @@
 # TPC reco
-- Showers
-- Tracks
-- PF objects
+- Shower completeness, purity, true kinematics for electrons and PandoraShowers
+- Tracks length, completeness, purity, true kinematics for muons and protons 
+- PFParticles
 
 # TPC sim/calibration
 
@@ -9,18 +9,18 @@
 - Noise RMS distribution across all TPC channels
 - Average TPC Pulse Height distribution across all TPC channels 
 - Average PMT Pulse Height distribution across all PMT channels
-- 
+
 ## If Reconstructed
-- Noise RMS distribution across all TPC channels
-- Average TPC Pulse Height distribution across all TPC channels
-- Average PMT Pulse Height distribution across all PMT channels
+- Noise RMS across all TPC channels
+- Average TPC pulse height across all TPC channels
+- Average PMT pulse height across all PMT channels
 - Track end points and lengths
-- Average PMT Flash Time
-- Average PMT Flash Amplitude
+- Average OpFlash time and amplitude
 
 # PDS sim/reco
-- SimPhotons
-- Flashes
+- SimPhotons multiplicity
+- OpHit time and amplitude (PEs)
+- Flash time, position, amplitude (PEs) and multiplicity
 
 # CRT sim/reco
 - Hit position/uncertainties and light yield
