@@ -4,20 +4,19 @@
 - PF objects
 
 # TPC sim/calibration
+
 ## If Online
-- Histogram of Noise RMS distribution across all TPC channels (average over > 50 events)
-- Histogram of Average TPC Pulse Height distribution across all TPC channels (average over > 50 events)
-- Histogram of Average PMT Pulse Height distribution across all PMT channels (average over > 50 events)
+- Noise RMS distribution across all TPC channels
+- Average TPC Pulse Height distribution across all TPC channels 
+- Average PMT Pulse Height distribution across all PMT channels
+- 
 ## If Reconstructed
-- Histogram of Noise RMS distribution across all TPC channels (average over > 50 events)
-- Histogram of Average TPC Pulse Height distribution across all TPC channels (average over > 50 events)
-- Histogram of Average PMT Pulse Height distribution across all PMT channels (average over > 50 events)
-- Histogram of Track Lengths across many events (histogram over > 1000 events)
-- Histogram of Track X End Point Location across many events (histogram over > 1000 events)
-- Histogram of Track Y End Point Location across many events (histogram over > 1000 events)
-- Histogram of Track Z End Point Location across many events (histogram over > 1000 events)
-- Histogram of Average PMT Flash Time across many events (histogram over > 1000 events)
-- Histogram of Average PMT Flash Amplitude across many events (histogram over > 1000 events)
+- Noise RMS distribution across all TPC channels
+- Average TPC Pulse Height distribution across all TPC channels
+- Average PMT Pulse Height distribution across all PMT channels
+- Track end points and lengths
+- Average PMT Flash Time
+- Average PMT Flash Amplitude
 
 # PDS sim/reco
 - SimPhotons
@@ -27,3 +26,4 @@
 - Hit position/uncertainties and light yield
 - Track end points/angles
 
+[Main CI page](/sbn/sbnci_wiki/sbnci_main)
