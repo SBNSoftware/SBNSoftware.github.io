@@ -7,7 +7,7 @@ hero_height: is-medium
 
 Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below. For more information, check out the links at the bottom. 
 
-Current reference tags and outages (if any)
+## Current reference tags and outages (if any)
 - sbndcode    v09_37_01_01
 - ~~icaruscode  v09_37_01_03~~   broken (reference samples in progress)
 
