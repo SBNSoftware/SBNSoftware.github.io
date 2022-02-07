@@ -4,9 +4,12 @@ title: SBN Continuous Integration and Validation Wiki
 
 hero_height: is-medium
 ---
-# SBN Continuous Integration and Validation
 
-Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below.
+Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below. For more information, check out the links at the bottom. 
+
+Current reference tags and outages (if any)
+- sbndcode    v09_37_01_01
+- ~~icaruscode  v09_37_01_03~~   broken (reference samples in progress)
 
 ## Quick Start Guide
 1. Get a valid kerberos ticket with forwarding enabled (`kinit -f <username>`)
