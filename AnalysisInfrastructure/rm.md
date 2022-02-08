@@ -18,7 +18,7 @@ Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftw
 3. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch, but use defaults for all the rest of the prompts.
 4. In each repo, do `git flow release start vXX_YY_ZZ` where `vXX_YY_ZZ` is the new version number for this package. This will create a `release/vXX_YY_ZZ` in this repo based on `develop`.
 5. Merge in any pull requests that were not already on develop. (E.g. `git merge origin/feature/username_MyImportantPR`.) Resolve any conflicts as needed.
-6. Edit `ups/product_deps` to have the new version number (top of the file) and update versions of any dependencies (middle of file) as needed.
+6. Edit `CMakeLists.txt` to have the new version number (at `project(sbncode VERSION `) and update versions of any dependencies in `ups/product_deps` (middle of file) as needed. Check LArSoft release notes and search for depencecies changes.
 7. Commit all changes, and push up to the origin: `git commit -a -m 'my message'; git push origin release/vXX_YY_ZZ`
 8. Do this for all needed repos.
 9. Test locally: `cd $MRB_BUILDDIR; mrbsetenv; mrb i -j32; mrbslp`. Resolve any conflicts, and be sure to commit and push updates.
