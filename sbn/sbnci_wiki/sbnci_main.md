@@ -11,7 +11,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 - `sbndcode`: TPC reco validation plot comparison temporarily unavailable
 - `icaruscode`: broken (reference samples in progress)
 
-## Current reference tags and outages (if any)
+## Current reference tags
 - `sbndcode`:    `v09_37_01_01`
 - `icaruscode`:  `v09_37_01_03`
 
