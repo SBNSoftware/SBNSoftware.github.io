@@ -8,7 +8,7 @@ hero_height: is-medium
 Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below. For more information, check out the links at the bottom. 
 
 ## Current reference tags and outages (if any)
-- sbndcode    v09_37_01_01
+- sbndcode    v09_37_01_01   TPC reco comparison temporarily unavailable
 - ~~icaruscode  v09_37_01_03~~   broken (reference samples in progress)
 
 ## Quick Start Guide
@@ -34,7 +34,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 ### More Information
 1. [SBN CI & Validation working group information](/sbn/sbnci_wiki/SBN_CI_Validation_group)
 2. [List of validation metrics](/sbn/sbnci_wiki/CI_validation_metrics)
-3. [Validation results](/sbn/sbnci_wiki/sbnci_validation_results)
+3. [Validation results](https://docs.google.com/spreadsheets/d/15rEeZ8xrf1LXR84cB7tLVJPEKxr8JYftXa69TUqqUNU/edit?usp=sharing)
 4. [SBN CI & validation system](/sbn/sbnci_wiki/Continuous_integration)
 5. [Integration tests](/sbn/sbnci_wiki/Integration_test_guide)
 6. [Validation tests](/sbn/sbnci_wiki/CI_Validation)
