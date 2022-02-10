@@ -105,8 +105,10 @@ even at the cost of some additional key strokes, and then to minimize
 possible name collisions or ambiguities.
 
 [`[NV.01]`](#NV01) <span id="NV01"> **[+++]**
-  Use of a descriptive control variable is **required**
-  in any loop longer than five lines. Descriptive names do not need to be long:
+  Use of a descriptive control variable is **required** in any loop longer than five lines.
+  They should suggest the meaning and purpose of the variable rather than its format,
+  which is already described by its type.
+  Descriptive names do not need to be long:
   in a known formula, `V` and `R` are proper variable names for a voltage
   and a resistance if unambiguous in the scope, although caution should be taken
   when using `i` as a real number because of the tradition of `i` being an
