@@ -8,7 +8,7 @@ hero_height: is-medium
 Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below. For more information, check out the links at the bottom. 
 
 ## Outages
-- `sbndcode`: TPC reco validation plot comparison temporarily unavailable
+- `sbndcode`: nominal
 - `icaruscode`: broken (reference samples in progress)
 
 ## Current reference tags
