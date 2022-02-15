@@ -1,4 +1,8 @@
-# Validation Input Samples
+---
+layout: page
+title: Validation Samples and Metrics
+---
+# Input Samples
 | | BNB &nu;&mu; + Intr. &nu;e (10k events) | CORSIKA + BNB &nu;&mu; (1k events) |
 | --- | --- | --- |
 | SBND   | prodgenie_nu_singleinteraction_tpc_sbnd.fcl + prodgenie_intrnue_singleinteraction_tpc_sbnd.fcl | prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd.fcl |
@@ -6,7 +10,7 @@
 
 Location: `/pnfs/<sbnd or icarus>/persistent/ContinuousIntegration/input/validation/`
 
-# Validation Metrics by Physics Working Group
+# Validation Metrics by Working Group
 
 ## TPC reco
 - Shower completeness, purity, true kinematics for electrons and PandoraShowers
