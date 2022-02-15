@@ -1,4 +1,12 @@
-# List of Validation Metrics by Physics Working Group
+# Validation Input Samples
+| | BNB &nu;&mu; + Intr. &nu;e (10k events) | CORSIKA + BNB &nu;&mu; (1k events) |
+| - | --- | --- |
+| SBND   | prodgenie_nu_singleinteraction_tpc_sbnd.fcl + prodgenie_intrnue_singleinteraction_tpc_sbnd.fcl | prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd.fcl |
+| ICARUS | simulation_genie_icarus_bnb.fcl + simulation_genie_icarus_Mar2019_nue.fcl | prodcorsika_proton_intime_icarus_bnb.fcl |
+
+Location: `/pnfs/<sbnd or icarus>/persistent/ContinuousIntegration/input/validation/`
+
+# Validation Metrics by Physics Working Group
 
 ## TPC reco
 - Shower completeness, purity, true kinematics for electrons and PandoraShowers
@@ -7,12 +15,12 @@
 
 ## TPC sim/calibration
 
-### If Online
+### If Online (not yet available)
 - Noise RMS distribution across all TPC channels
 - Average TPC Pulse Height distribution across all TPC channels 
 - Average PMT Pulse Height distribution across all PMT channels
 
-### If Reconstructed
+### If Reconstructed (not yet available)
 - Noise RMS across all TPC channels
 - Average TPC pulse height across all TPC channels
 - Average PMT pulse height across all PMT channels
