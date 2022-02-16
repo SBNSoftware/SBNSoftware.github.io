@@ -615,6 +615,7 @@ It should be used judiciously (and sparsely).
   is an acceptable use of `auto` provided that the interface is well documented;
   but using a stable type offering that interface is still **endorsed**.
   For example (as a class member function):
+  
   ```.cpp
   /**
    * @brief Returns the sequence of particles.
