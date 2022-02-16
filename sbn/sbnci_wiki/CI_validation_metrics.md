@@ -3,6 +3,7 @@ layout: page
 title: Validation Samples and Metrics
 ---
 # Input Samples
+
 | Experiment | BNB nu_mu + Intr. nu_e (10k events) | CORSIKA + BNB nu_mu (1k events) |
 | --- | --- | --- |
 | SBND   | prodgenie_nu_singleinteraction_tpc_sbnd.fcl + prodgenie_intrnue_singleinteraction_tpc_sbnd.fcl | prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd.fcl |
