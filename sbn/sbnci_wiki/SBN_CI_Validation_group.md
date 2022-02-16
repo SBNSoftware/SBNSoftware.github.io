@@ -14,11 +14,11 @@ Scientific computing liaison: [Vito Di Benedetto](mailto:vito@fnal.gov)
 
 ## Validation liasons
 
-|       Working group                   |                            Liaison(s)                                                              |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| SBN TPC reconstruction                | [Henry Lay](mailto:h.lay@lancaster.ac.uk), [Dom Brailsford](mailto:d.brailsford@lancaster.ac.uk)   |
-| SBN TPC simulation and calibration    | [Mike Mooney](mailto:mrmooney@colostate.edu )                                                      |
-| SBN CRT simulation and reconstruction | [Ivan Lepetic](mailto:ivan.lepetic@rutgers.edu), [Umut Kose](mailto:umut.kose@cern.ch)             |
-| SBN PDS simulation and reconstruction | [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)                                             |
+|       Working group                   |                            Liaison(s)                                                                 |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| SBN TPC reconstruction                | [Henry Lay](mailto:h.lay@lancaster.ac.uk) (SBND), [Dom Brailsford](mailto:d.brailsford@lancaster.ac.uk) (SBND), [Sergey Martynenko](mailto:smartynen@bnl.gov) (ICARUS)     |
+| SBN TPC simulation and calibration    | [Mike Mooney](mailto:mrmooney@colostate.edu)                                                         |
+| SBN CRT simulation and reconstruction | [Ivan Lepetic](mailto:ivan.lepetic@rutgers.edu) (SBND), [Umut Kose](mailto:umut.kose@cern.ch) (ICARUS) |
+| SBN PDS simulation and reconstruction | [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)                                                |
 
 [Back to SBN CI & Validation main page](/sbn/sbnci_wiki/sbnci_main)
