@@ -3,7 +3,7 @@ layout: page
 title: Validation Samples and Metrics
 ---
 # Input Samples
-| Expt | BNB &nu;&mu; + Intr. &nu;e (10k events) | CORSIKA + BNB &nu;&mu; (1k events) |
+| Experiment | BNB nu_mu + Intr. nu_e (10k events) | CORSIKA + BNB nu_mu (1k events) |
 | --- | --- | --- |
 | SBND   | prodgenie_nu_singleinteraction_tpc_sbnd.fcl + prodgenie_intrnue_singleinteraction_tpc_sbnd.fcl | prodoverlay_corsika_cosmics_proton_genie_nu_spill_tpc_sbnd.fcl |
 | ICARUS | simulation_genie_icarus_bnb.fcl + simulation_genie_icarus_Mar2019_nue.fcl | prodcorsika_proton_intime_icarus_bnb.fcl |
