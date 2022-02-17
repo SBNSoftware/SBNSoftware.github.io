@@ -8,11 +8,11 @@ hero_height: is-medium
 Welcome to the SBN CI & validation main page! If you just want to run a validation test for your pull request, continue reading the Quick Start Guide below. For more information, check out the links at the bottom. 
 
 ## Outages
-- `sbndcode`: nominal
+- `sbndcode`: CRT validation refs temporarily unavailable
 - `icaruscode`: broken (reference samples in progress)
 
 ## Current reference tags
-- `sbndcode`:    `v09_37_01_01`
+- `sbndcode`:    `v09_37_01_03p01`
 - `icaruscode`:  `v09_37_01_03`
 
 ## Quick Start Guide
