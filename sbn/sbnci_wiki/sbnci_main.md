@@ -19,7 +19,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 1. Get a valid kerberos ticket with forwarding enabled (`kinit -f <username>`)
 2. ssh into one of your experiment's gpvm nodes
 3. setup your environment: `source /cvmfs/<sbnd or icarus>.opensciencegrid.org/products/<sbnd or icarus>/setup_<sbnd or icarus>.sh`
-4. `setup sbnci v09_35_01 -q e20:prof`
+4. `setup sbnci v09_37_01 -q e20:prof`
 5. `source get_proxy.sh`
 6. Test the CI workflow with a small sample using one of the following executables. Pass as an argument a space-separated list of the `repository@branch`'s you are testing and omit SBNSoftware from the repository name. Note that only SBNSoftware repositories are supported at this time.
 -  `tpc_reco_validation_test.sh`
