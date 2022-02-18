@@ -87,16 +87,17 @@ A few ICARUS people are allowed to log as `cvmfsicarus` on
 `oasiscfs.fnal.gov`, and they can add a few others.
 As of August 2020, these people are:
 
-Users with ICARUS CVMFS upload privileges                      | since
--------------------------------------------------------------- | ------
+Users with ICARUS CVMFS upload privileges                      | since(—to)
+-------------------------------------------------------------- | -----------
 [Wes Ketchum](mailto:wketchum@fnal.gov)                        | 2016
-[Yun-Tse Tsai](mailto:yuntse@slac.stanford.edu)                | 2016
+[Yun-Tse Tsai](mailto:yuntse@slac.stanford.edu)                | 2016—2021
 [Tracy Usher](mailto:usher@slac.stanford.edu)                  | The Stone Age
-[Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | 2016
+[Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | 2016—2021
 [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
 Miquel Nebot-Guinot                                            | 2020
 Patrick Green                                                  | 2020
-Chris Hilgenberg                                               | 2021
+Chris Hilgenberg                                               | 2021—2022
+Matthew Rosenberg                                              | 2022
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
