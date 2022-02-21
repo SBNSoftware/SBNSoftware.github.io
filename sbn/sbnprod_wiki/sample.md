@@ -64,14 +64,14 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
-| NuMI nue + cosmics | MCP2021C | v09_37_01_02p01 | 13326 | reco1 | Official_IcarusProd2021C_NuMI_Nue_Cosmics_v09_37_01_02p01_reco1 |
-| --- | --- | --- | 13326 | reco2 | Official_IcarusProd2021C_NuMI_Nue_Cosmics_v09_37_01_02p01_reco2 |
-| --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NuMI_Nue_Cosmics_v09_37_01_02p01_CalibTuples |
-| --- | --- | --- | 13326 | caf |Official_IcarusProd2021C_NuMI_Nue_Cosmics_v09_37_01_02p01_caf |
-| NuMI nu + cosmic | MCP2021C | v09_37_01_02p01 | 48487 | reco1 | Official_IcarusProd2021C_NuMI_Nu_Cosmics_v09_37_01_02p01_reco1 |
-| --- | --- | --- | 48459 | reco2 | Official_IcarusProd2021C_NuMI_Nu_Cosmics_v09_37_01_02p01_reco2 |
-| --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NuMI_Nu_Cosmics_v09_37_01_02p01_CalibTuples |
-| --- | --- | --- | 48459 | caf | Official_IcarusProd2021C_NuMI_Nu_Cosmics_v09_37_01_02p01_caf |
+| NuMI nue + cosmics | MCP2021C | v09_37_01_02p01 | 13326 | reco1 | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_reco1 |
+| --- | --- | --- | 13326 | reco2 | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_CalibTuples |
+| --- | --- | --- | 13326 | caf |Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_caf |
+| NuMI nu + cosmic | MCP2021C | v09_37_01_02p01 | 48487 | reco1 | Official_IcarusProd2021C_NUMI_Nu_Cosmics_v09_37_01_02p01_reco1 |
+| --- | --- | --- | 48459 | reco2 | Official_IcarusProd2021C_NUMI_Nu_Cosmics_v09_37_01_02p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NUMI_Nu_Cosmics_v09_37_01_02p01_CalibTuples |
+| --- | --- | --- | 48459 | caf | Official_IcarusProd2021C_NUMI_Nu_Cosmics_v09_37_01_02p01_caf |
 | NUMI full osc | MCP2021C | v09_37_01_02p01 | 16565 | reco1 | Official_IcarusProd2021C_NUMI_FullOsc_Cosmics_v09_37_01_02p01_reco1 |
 | --- | --- | --- | 16564 | reco2 | Official_IcarusProd2021C_NUMI_FullOsc_Cosmics_v09_37_01_02p01_reco2 |
 | --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NUMI_FullOsc_Cosmics_v09_37_01_02p01_CalibTuples |
