@@ -9,7 +9,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 
 ## Outages
 - `sbndcode`: nominal
-- `icaruscode`: full crt validation reference missing
+- `icaruscode`: nominal
 
 ## Current reference tags
 - `sbndcode`:    `v09_37_01_03p01`
