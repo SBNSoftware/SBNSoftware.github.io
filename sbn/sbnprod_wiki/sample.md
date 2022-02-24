@@ -64,6 +64,14 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| Cosmics, Lifetime 1 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime1ms_v09_37_01_03p01_reco2_commonruns |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime1ms_v09_37_01_03p01_calibtuples_commonruns |
+| Cosmics, Lifetime 3.5 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_v09_37_01_03p01_reco2_commonruns |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_v09_37_01_03p01_calibtuples_commonruns |
+| Cosmics, Lifetime 6 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime6ms_v09_37_01_03p01_reco2_commonruns |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_v09_37_01_03p01_calibtuples_commonruns |
+| Cosmics, Lifetime 10 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime10ms_v09_37_01_03p01_reco2_commonruns |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime10ms_v09_37_01_03p01_calibtuples_commonruns |
 | NuMI nue + cosmics | MCP2021C | v09_37_01_02p01 | 13326 | reco1 | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_reco1 |
 | --- | --- | --- | 13326 | reco2 | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_reco2 |
 | --- | --- | --- | --- | calib ntuples | Official_IcarusProd2021C_NUMI_Nue_Cosmics_v09_37_01_02p01_CalibTuples |
