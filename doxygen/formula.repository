@@ -1,0 +1,210 @@
+\form#0:$ A $
+\form#1:$ \Phi_{A}(E) \propto E^{-\gamma_{A}} $
+\form#2:$ E $
+\form#3:$ n_{A} = \pi S T k_{A} \int E^{-\gamma_{A}} dE $
+\form#4:$ S $
+\form#5:$ T $
+\form#6:$ k_{A} $
+\form#7:$ S_{\Phi} $
+\form#8:$ S_{o} $
+\form#9:$ S_{d} $
+\form#10:$ K_{A} $
+\form#11:$ m^{-2}s^{-1} $
+\form#12:$\alpha$
+\form#13:$p(E_\nu)$
+\form#14:$E_\nu$
+\form#15:$p(E_\nu) = $
+\form#16:$ @var PinchParamType::BETA @brief Use the fitting convention in which the pinching parameter is called $
+\form#17:$ @details In the "beta" convention, the probability density function $
+\form#18:$ describing the distribution of neutrino energies $
+\form#19:$ is given by $
+\form#20:$\left(\frac{\beta}{\left<E_\nu\right>} \right)^{\beta}\frac{E_\nu^(\beta - 1)}{\Gamma(\beta)} \exp\left(\frac{-\beta E_\nu}{\left<E_\nu\right>}\right)$
+\form#21:$\beta = \alpha + 1$
+\form#22:$ x = 0 $
+\form#23:$\pi^+$
+\form#24:$\pi^1$
+\form#25:$\pi^0$
+\form#26:$ \lceil (upper - lower) / step \rceil $
+\form#27:$ u \in [ 0, +1 [ $
+\form#28:$ 1/2N $
+\form#29:$ \mu $
+\form#30:$ \sigma $
+\form#31:$ x = \mu + \sigma z $
+\form#32:\[ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] \]
+\form#33:$ \tau_{s} $
+\form#34:$ \tau $
+\form#35:$ t_{0} $
+\form#36:$ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] $
+\form#37:$ \mu_{i} \propto (\Delta V_{i})^{k} $
+\form#38:$ \mu_{i} $
+\form#39:$ i $
+\form#40:$ \Delta V_{i} $
+\form#41:$ k $
+\form#42:$ N $
+\form#43:\[ \mu = \prod_{i} \mu_{i} \]
+\form#44:\[ \mu_{i} = a (\Delta V_{i})^{k} \]
+\form#45:$ a $
+\form#46:$ \Delta V $
+\form#47:$ R = \sum_{i} R_{i} $
+\form#48:$ \rho_{i} = R_{i} / R $
+\form#49:\[ \Delta V_{i} = \Delta V \rho_{i} \]
+\form#50:$ \Delta V / R $
+\form#51:\[ \mu = \prod_{i} a (\Delta V \rho_{i})^{k} \]
+\form#52:\[ a \Delta V^{k} = \sqrt[N]{\frac{\mu}{(\prod_{i} \rho_{i})^{k}}} \]
+\form#53:\[ \mu_{i} = a (\Delta V)^{k} (\rho_{i})^{k} \]
+\form#54:$ \hat{u} $
+\form#55:$ \hat{v} $
+\form#56:$ \hat{n} $
+\form#57:$ \hat{u} \times \hat{v} \cdot \hat{m} = +1 $
+\form#58:$ ( m, s ) $
+\form#59:$ \left[ -\pi, \pi \right] $
+\form#60:$ \pi/2 $
+\form#61:$ \vec{a} \times \vec{b} \cdot \vec{c} $
+\form#62:$ \int_{\vec{p}_{1}}^{\vec{p}_{2}} \rho(\vec{p}) d\vec{p} $
+\form#63:$ \rho(\vec{p}) $
+\form#64:$ \vec{p} $
+\form#65:$ \theta_{z} \in [ 0, \pi ]$
+\form#66:$ ds $
+\form#67:$ dE/ds $
+\form#68:$ ( \ell, w ) $
+\form#69:$ \ell $
+\form#70:$ w $
+\form#71:$ ( w, d ) $
+\form#72:$ \left[ -\frac{w}{2}, \frac{w}{2} \right] $
+\form#73:$ \left[ -\frac{d}{2}, \frac{d}{2} \right] $
+\form#74:$ d $
+\form#75:$ \phi_{z} $
+\form#76:$ \hat{l} $
+\form#77:$ \hat{w} $
+\form#78:$ \hat{l} \times \hat{w} \cdot \hat{n} = +1 $
+\form#79:$ \vec{a}_{w} $
+\form#80:$ \vec{b}_{w} $
+\form#81:$ \vec{b}_{w} - \vec{a}_{w} $
+\form#82:$ dE/dx $
+\form#83:$ R = A/(1 + (dE/dx)*k/E) $
+\form#84:$ A = 0.800 \pm 0.003 $
+\form#85:$ k = 0.0486 $
+\form#86:$ \pi \rightarrow 180 $
+\form#87:$ \chi^{2} = \sum_{i} \left(\frac{y_{i} - e(x_{i})}{\sigma_{i}}\right)^{2} $
+\form#88:$ ( x_{i}, y_{i} \pm \sigma_{i} ) $
+\form#89:$ e() $
+\form#90:$ \left(y - e(x)\right)^{2} $
+\form#91:$ \left(\frac{y - e(x)}{s}\right)^{2} $
+\form#92:$ ( y_{i} \pm \sigma_{y,i} ) $
+\form#93:$ ( x_{i} ) $
+\form#94:$ y = a x + b $
+\form#95:$ \chi^{2} = \sum_{i} \frac{ \left(y_{i} - a x_{i} - b \right)^{2} }{ \sigma^{2}_{y,i} }$
+\form#96:$ f(x) = a_{0} + a_{1} x + a_{2} x^{2} $
+\form#97:$ \chi^{2} = \sum_{i} \frac{ \left(y_{i} - f(x_{i}) \right)^{2} }{ \sigma^{2}_{y,i} }$
+\form#98:$ y $
+\form#99:$ \bar{s}^{-2} = \frac{1}{N} \sum_{i=1}^{N} s_{y}^{-2} $
+\form#100:$ s^{-2} $
+\form#101:$ s^{-1/2} $
+\form#102:$ \chi^{2} $
+\form#103:$ A(t) = e^{-t/\tau} $
+\form#104:$ \sigma_{E}^2 / x $
+\form#105:$ \pi $
+\form#106:$ \pm\pi/2 $
+\form#107:$ \alpha \in [ -\pi, \pi ]$
+\form#108:$ \tan(\alpha) = dT/dW $
+\form#109:$ dW $
+\form#110:$[ 0, \pi ]$
+\form#111:$ [ 0, \pi/2 ] $
+\form#112:$ [0,\pi] $
+\form#113:$ \vartheta $
+\form#114:$ [-\pi,\pi[ $
+\form#115:$ \phi $
+\form#116:$ +\pi/2 $
+\form#117:$ 2^{32} $
+\form#118:$f(E_{\nu}, t_{SN}) / g(E_{\nu}, t_{SN})$
+\form#119:$ f(E_nu, t_SN) $
+\form#120:$ g(E_{\nu}, t_{SN})$
+\form#121:$ \min \left\{ \left| \vec{r}_{i} - \vec{r_{j}} \right| \right\}_{i \neq j} < R $
+\form#122:$ \vec{r_{k}} $
+\form#123:$ R $
+\form#124:$ N^{2} $
+\form#125:$ dx $
+\form#126:$ s/\sqrt{12} $
+\form#127:$ s $
+\form#128:$ [ -\pi, \pi ] $
+\form#129:\[ \left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi & \sin\psi & 0\\ -\cos\vartheta\sin\psi & \cos\vartheta\cos\psi & \sin\psi\\ \sin\vartheta\sin\psi & -\sin\vartheta\cos\psi & \cos\vartheta\\ & & & \cos\psi & \sin\psi & 0\\ & & & -\cos\vartheta\sin\psi & \cos\vartheta\cos\psi & \sin\psi\\ & & & \sin\vartheta\sin\psi & -\sin\vartheta\cos\psi & \cos\vartheta\\ & & & & & & 1\end{array}\right)\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=R^{T}\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)\]
+\form#130:\[ \left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi & -\cos\vartheta\sin\psi & \sin\vartheta\sin\psi\\ \sin\psi & \cos\vartheta\cos\psi & -\sin\vartheta\cos\psi\\ 0 & \sin\psi & \cos\vartheta\\ & & & \cos\psi & -\cos\vartheta\sin\psi & \sin\vartheta\sin\psi\\ & & & \sin\psi & \cos\vartheta\cos\psi & -\sin\vartheta\cos\psi\\ & & & 0 & \sin\psi & \cos\vartheta\\ & & & & & & 1\end{array}\right)\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=R\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right) \]
+\form#131:\begin{eqnarray*} \psi & = & \begin{cases} \begin{cases} \frac{\pi}{2} & a_{x} \geq 0 \\ \frac{3\pi}{2} & a_{x} < 0 \end{cases} & a_{y}=0 \mbox{ resp. } |a_{y}|<10^{-14} \\ - \arctan \frac{a_{x}}{a_{y}} & a_{y} < 0 \\ \pi - \arctan \frac{a_{x}}{a_{y}} & a_{y} > 0 \end{cases} \\ \vartheta & = & \arccos a_{z} \end{eqnarray*}
+\form#132:$M$
+\form#133:$\theta$
+\form#134:$\theta_{1/2}=0$
+\form#135:$N_{before}$
+\form#136:$T$
+\form#137:\[ M=\left(\begin{array}{cc} \sigma^{2} & 0\\ 0 & \sigma^{2}\end{array}\right)\]
+\form#138:$\overline{M}$
+\form#139:\begin{eqnarray*} x' & = & x'\\ y' & = & y'\\ z' & = & z'\\ a_{x}' & = & \sin\theta_{1}\\ a_{y}' & = & \sin\theta_{2}\\ a_{z}' & = & \sqrt{1-\sin^{2}\theta_{1}-\sin^{2}\theta_{2}}\\ \frac{q}{p}' & = & \frac{q}{p}'\end{eqnarray*}
+\form#140:\[ J=\frac{\partial\left(x',y',z',a_{x}',a_{y}',a_{z}',\frac{q}{p}'\right)}{\partial\left(\theta_{1},\theta_{2}\right)}\]
+\form#141:\[ J=\left(\begin{array}{cc} 0 & 0\\ 0 & 0\\ 0 & 0\\ \cos\theta_{1} & 0\\ 0 & \cos\theta_{2}\\ -\frac{\cos\theta_{1}\sin\theta_{1}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}} & -\frac{\cos\theta_{2}\sin\theta_{2}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}}\\ 0 & 0\end{array}\right) \overset{\theta_{1/2}=0}{=} \left(\begin{array}{cc} 0 & 0\\ 0 & 0\\ 0 & 0\\ 1 & 0\\ 0 & 1\\ 0 & 0\\ 0 & 0\end{array}\right)\]
+\form#142:\[ \overline{M}=J\: M\: J^{T}=\left(\begin{array}{ccccccc} 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & \sigma^{2} & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & \sigma^{2} & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\end{array}\right)\]
+\form#143:$N$
+\form#144:\[ N=R\overline{M}R^{T}=\sigma^{2}\left(\begin{array}{ccccccc} 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & \cos^{2}\psi+\cos^{2}\theta-\cos^{2}\theta\cos^{2}\psi & \cos\psi\sin\psi\sin^{2}\theta & -\cos\theta\sin\psi\sin\theta & 0\\ 0 & 0 & 0 & \cos\psi\sin\psi\sin^{2}\theta & \sin^{2}\psi+\cos^{2}\theta\cos^{2}\psi & \cos\theta\cos\psi\sin\theta & 0\\ 0 & 0 & 0 & -\cos\theta\sin\psi\sin\theta & \cos\theta\cos\psi\sin\theta & \sin^{2}\theta & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 0\end{array}\right)\]
+\form#145:$N_{after}$
+\form#146:\begin{eqnarray*} C_{new} & = C_{old} + 0.5 \cdot T N_{before} T^{T} + 0.5 \cdot N_{after} \end{eqnarray*}
+\form#147:\begin{eqnarray*}x & = & O_{x}+uU_{x}+vV_{x}\\y & = & O_{y}+uU_{y}+vV_{y}\\z & = & O_{z}+uU_{z}+vV_{z}\\a_{x} & = & \frac{\mbox{spu}}{\widetilde{p}}\left(N_{x}+u\prime U_{x}+v\prime V_{x}\right)\\a_{y} & = & \frac{\mbox{spu}}{\widetilde{p}}\left(N_{y}+u\prime U_{y}+v\prime V_{y}\right)\\a_{z} & = & \frac{\mbox{spu}}{\widetilde{p}}\left(N_{z}+u\prime U_{z}+v\prime V_{z}\right)\\\frac{q}{p} & = & \frac{q}{p}\end{eqnarray*}
+\form#148:\begin{eqnarray*}u & = & \left(x-O_{x}\right)U_{x}+\left(y-O_{y}\right)U_{y}+\left(z-O_{z}\right)U_{z}\\v & = & \left(x-O_{x}\right)U_{x}+\left(y-O_{y}\right)U_{y}+\left(z-O_{z}\right)U_{z}\\u\prime & = & \frac{a_{x}U_{x}+a_{y}U_{y}+a_{z}U_{z}}{a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}}\\v\prime & = & \frac{a_{x}V_{x}+a_{y}V_{y}+a_{z}V_{z}}{a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}}\\\frac{q}{p} & = & \frac{q}{p}\\\mbox{spu} & = & \frac{a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}}{|a_{x}^{2}N_{x}^{2}+a_{y}^{2}N_{y}^{2}+a_{z}^{2}N_{z}^{2}|}=\pm1\end{eqnarray*}
+\form#149:$J_{p,M}=\left(\begin{array}{ccccc}\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & \frac{\partial x}{\partial u\prime} & \frac{\partial x}{\partial v\prime} & \frac{\partial x}{\partial\frac{q}{p}}\\\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} & \frac{\partial y}{\partial u\prime} & \frac{\partial y}{\partial v\prime} & \frac{\partial y}{\partial\frac{q}{p}}\\\frac{\partial z}{\partial u} & \frac{\partial z}{\partial v} & \frac{\partial z}{\partial u\prime} & \frac{\partial z}{\partial v\prime} & \frac{\partial z}{\partial\frac{q}{p}}\\\frac{\partial a_{x}}{\partial u} & \frac{\partial a_{x}}{\partial v} & \frac{\partial a_{x}}{\partial u\prime} & \frac{\partial a_{x}}{\partial v\prime} & \frac{\partial a_{x}}{\partial\frac{q}{p}}\\\frac{\partial a_{y}}{\partial u} & \frac{\partial a_{y}}{\partial v} & \frac{\partial a_{y}}{\partial u\prime} & \frac{\partial a_{y}}{\partial v\prime} & \frac{\partial a_{y}}{\partial\frac{q}{p}}\\\frac{\partial a_{z}}{\partial u} & \frac{\partial a_{z}}{\partial v} & \frac{\partial a_{z}}{\partial u\prime} & \frac{\partial a_{z}}{\partial v\prime} & \frac{\partial a_{z}}{\partial\frac{q}{p}}\\\frac{\partial\frac{q}{p}}{\partial u} & \frac{\partial\frac{q}{p}}{\partial v} & \frac{\partial\frac{q}{p}}{\partial u\prime} & \frac{\partial\frac{q}{p}}{\partial v\prime} & \frac{\partial\frac{q}{p}}{\partial\frac{q}{p}}\end{array}\right)$
+\form#150:$J_{p,M}=\left(\begin{array}{cccccc}U_{x} & V_{x} & 0 & 0 & 0\\U_{y} & V_{y} & 0 & 0 & 0\\U_{z} & V_{z} & 0 & 0 & 0\\0 & 0 & \left\{ \frac{\textrm{spu}}{\widetilde{p}}U_{x}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{x}\left(U_{x}\widetilde{p}_{x}+U_{y}\widetilde{p}_{y}+U_{z}\widetilde{p}_{z}\right)\right]\right\} & \left\{ \frac{\textrm{spu}}{\widetilde{p}}V_{x}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{x}\left(V_{x}\widetilde{p}_{x}+V_{y}\widetilde{p}_{y}+V_{z}\widetilde{p}_{z}\right)\right]\right\} & 0\\0 & 0 & \left\{ \frac{\textrm{spu}}{\widetilde{p}}U_{y}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{y}\left(U_{x}\widetilde{p}_{x}+U_{y}\widetilde{p}_{y}+U_{z}\widetilde{p}_{z}\right)\right]\right\} & \left\{ \frac{\textrm{spu}}{\widetilde{p}}V_{y}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{y}\left(V_{x}\widetilde{p}_{x}+V_{y}\widetilde{p}_{y}+V_{z}\widetilde{p}_{z}\right)\right]\right\} & 0\\0 & 0 & \left\{ \frac{\textrm{spu}}{\widetilde{p}}U_{z}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{z}\left(U_{x}\widetilde{p}_{x}+U_{y}\widetilde{p}_{y}+U_{z}\widetilde{p}_{z}\right)\right]\right\} & \left\{ \frac{\textrm{spu}}{\widetilde{p}}V_{z}-\left[\frac{\textrm{spu}}{\widetilde{p}^{3}}\widetilde{p}_{z}\left(V_{x}\widetilde{p}_{x}+V_{y}\widetilde{p}_{y}+V_{z}\widetilde{p}_{z}\right)\right]\right\} & 0\\0 & 0 & 0 & 0 & 1\end{array}\right)$
+\form#151:\begin{eqnarray*}\widetilde{p} & = & \sqrt{\widetilde{p}_{x}^{2}+\widetilde{p}_{y}^{2}+\widetilde{p}_{z}^{2}}\\\widetilde{p}_{x} & = & \textrm{spu}\left(N_{x}+u\prime U_{x}+v\prime V_{x}\right)\\\widetilde{p}_{y} & = & \textrm{spu}\left(N_{y}+u\prime U_{y}+v\prime V_{y}\right)\\\widetilde{p}_{z} & = & \textrm{spu}\left(N_{z}+u\prime U_{z}+v\prime V_{z}\right)\end{eqnarray*}
+\form#152:$J_{M,p}=\left(\begin{array}{ccccccc}\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} & \frac{\partial u}{\partial z} & \frac{\partial u}{\partial a_{x}} & \frac{\partial u}{\partial a_{y}} & \frac{\partial u}{\partial a_{z}} & \frac{\partial u}{\partial\frac{q}{p}}\\\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y} & \frac{\partial v}{\partial z} & \frac{\partial v}{\partial a_{x}} & \frac{\partial v}{\partial a_{y}} & \frac{\partial v}{\partial a_{z}} & \frac{\partial v}{\partial\frac{q}{p}}\\\frac{\partial u\prime}{\partial x} & \frac{\partial u\prime}{\partial y} & \frac{\partial u\prime}{\partial z} & \frac{\partial u\prime}{\partial a_{x}} & \frac{\partial u\prime}{\partial a_{y}} & \frac{\partial u\prime}{\partial a_{z}} & \frac{\partial u\prime}{\partial\frac{q}{p}}\\\frac{\partial v\prime}{\partial x} & \frac{\partial v\prime}{\partial y} & \frac{\partial v\prime}{\partial z} & \frac{\partial v\prime}{\partial a_{x}} & \frac{\partial v\prime}{\partial a_{y}} & \frac{\partial v\prime}{\partial a_{z}} & \frac{\partial v\prime}{\partial\frac{q}{p}}\\ \frac{\partial\frac{q}{p}}{\partial x} & \frac{\partial\frac{q}{p}}{\partial y} & \frac{\partial\frac{q}{p}}{\partial z} & \frac{\partial\frac{q}{p}}{\partial a_{x}} & \frac{\partial\frac{q}{p}}{\partial a_{y}} & \frac{\partial\frac{q}{p}}{\partial a_{z}} & \frac{\partial\frac{q}{p}}{\partial\frac{q}{p}}\\ \\\end{array}\right)$
+\form#153:$J_{M,p}=\left(\begin{array}{ccccccc} U_{x} & U_{y} & U_{z} & 0 & 0 & 0 & 0\\ V_{x} & V_{y} & V_{z} & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & \frac{U_{x}\left(a_{y}N_{y}+a_{z}N_{z}\right)-N_{x}\left(a_{y}U_{y}+a_{z}U_{z}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & \frac{U_{y}\left(a_{x}N_{x}+a_{z}N_{z}\right)-N_{y}\left(a_{x}U_{x}+a_{z}U_{z}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & \frac{U_{z}\left(a_{x}N_{x}+a_{y}N_{y}\right)-N_{z}\left(a_{x}U_{x}+a_{y}U_{y}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & 0\\ 0 & 0 & 0 & \frac{V_{x}\left(a_{y}N_{y}+a_{z}N_{z}\right)-N_{x}\left(a_{y}V_{y}+a_{z}V_{z}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & \frac{V_{y}\left(a_{x}N_{x}+a_{z}N_{z}\right)-N_{y}\left(a_{x}V_{x}+a_{z}V_{z}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & \frac{V_{z}\left(a_{x}N_{x}+a_{y}N_{y}\right)-N_{z}\left(a_{x}V_{x}+a_{y}V_{y}\right)}{\left(a_{x}N_{x}+a_{y}N_{y}+a_{z}N_{z}\right)^{2}} & 0\\ 0 & 0 & 0 & 0 & 0 & 0 & 1\\ \\\end{array}\right)$
+\form#154:\[ \sqrt{\sum_i^{\rm bins}\left({s_i\over\sqrt{s_i+b_i}}\right)^2} \]
+\form#155:$\chi^2$
+\form#156:$ \chi^2 $
+\form#157:\[ \chi^2=2\sum_i^{\rm bins}\left(e_i-o_i+o_i\ln\left({o_i\over e_i}\right)\right) \]
+\form#158:\[ \chi^2=2\left(e-o+o\ln\left({o\over e}\right)\right) \]
+\form#159:$ \nu_\mu\to\nu_e $
+\form#160:$ \nu_\mu\to\nu_\mu $
+\form#161:$ \nu_e\to\nu_e $
+\form#162:$ \nu_e\to\nu_\mu $
+\form#163:$ \nu_\mu\to\nu_\tau $
+\form#164:$ \nu_e\to\nu_\tau $
+\form#165:$ \Delta m^2_{21} $
+\form#166:$ \sin^22\theta_{12} $
+\form#167:$\nu_e\to\nu_e$
+\form#168:$\bar\nu_e\to\bar\nu_e$
+\form#169:$\nu_\mu\to\nu_\mu$
+\form#170:$\bar\nu_\mu\to\bar\nu_\mu$
+\form#171:$\nu_\mu\to\nu_e$
+\form#172:$\bar\nu_\mu\to\bar\nu_e$
+\form#173:$\nu_e\to\nu_\mu$
+\form#174:$\bar\nu_e\to\bar\nu_\mu$
+\form#175:$\nu_e\to\nu_\tau$
+\form#176:$\bar\nu_e\to\bar\nu_\tau$
+\form#177:$\nu_\mu\to\nu_\tau$
+\form#178:$\bar\nu_\mu\to\bar\nu_\tau$
+\form#179:$\nu_e $
+\form#180:$\nu_\mu$
+\form#181:$\nu_e$
+\form#182:$\nu_\tau$
+\form#183:$ \theta_{13} $
+\form#184:$ \sin^22\theta_{13} $
+\form#185:$ \delta_{CP}/\pi $
+\form#186:$ \sin^2\theta_{23} $
+\form#187:$ \sin^22\theta_{23} $
+\form#188:$ \Delta m^2_{32} $
+\form#189:$ \Delta m^2_{32}\times10^3{\rm eV}^2 $
+\form#190:$ \tan^2\theta_{12} $
+\form#191:$ \rho $
+\form#192:$ \Delta m^2_{41} $
+\form#193:$ \Delta m^2_{43} $
+\form#194:$ \delta_{13}/\pi $
+\form#195:$ \delta_{14}/\pi $
+\form#196:$ \delta_{24}/\pi $
+\form#197:$ \sin^2\theta_{13} $
+\form#198:$ \theta_{23} $
+\form#199:$ \theta_{14} $
+\form#200:$ \sin^2\theta_{14} $
+\form#201:$ \sin^22\theta_{14} $
+\form#202:$ \theta_{24} $
+\form#203:$ \sin^2\theta_{24} $
+\form#204:$ \sin^22\theta_{24} $
+\form#205:$ \theta_{34} $
+\form#206:$ \sin^2\theta_{34} $
+\form#207:$ \sin^22\theta_{34} $
+\form#208:$ \Delta m^2 $
+\form#209:$[-2^{53}+1, 2^{53}-1]$
