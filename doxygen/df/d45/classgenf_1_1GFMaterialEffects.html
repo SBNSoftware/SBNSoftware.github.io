@@ -1231,7 +1231,7 @@ Static Private Attributes</h2></td></tr>
 <br/>
  This is a detailed description of the mathematics involved: <br/>
  We define a local coordinate system cs' with initial momentum in z-direction: <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi &amp; \sin\psi &amp; 0\\ -\cos\vartheta\sin\psi &amp; \cos\vartheta\cos\psi &amp; \sin\psi\\ \sin\vartheta\sin\psi &amp; -\sin\vartheta\cos\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; \cos\psi &amp; \sin\psi &amp; 0\\ &amp; &amp; &amp; -\cos\vartheta\sin\psi &amp; \cos\vartheta\cos\psi &amp; \sin\psi\\ &amp; &amp; &amp; \sin\vartheta\sin\psi &amp; -\sin\vartheta\cos\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; &amp; &amp; &amp; 1\end{array}\right)\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=R^{T}\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)\]" src="../../form_129.png"/>
+<img class="formulaDsp" alt="\[ \left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi &amp; \sin\psi &amp; 0\\ -\cos\vartheta\sin\psi &amp; \cos\vartheta\cos\psi &amp; \sin\psi\\ \sin\vartheta\sin\psi &amp; -\sin\vartheta\cos\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; \cos\psi &amp; \sin\psi &amp; 0\\ &amp; &amp; &amp; -\cos\vartheta\sin\psi &amp; \cos\vartheta\cos\psi &amp; \sin\psi\\ &amp; &amp; &amp; \sin\vartheta\sin\psi &amp; -\sin\vartheta\cos\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; &amp; &amp; &amp; 1\end{array}\right)\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=R^{T}\left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)\]" src="../../form_106.png"/>
 </p>
 </li>
 </ul>
@@ -1239,50 +1239,50 @@ Static Private Attributes</h2></td></tr>
  Now the global coordinate system cs is:<br/>
  </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi &amp; -\cos\vartheta\sin\psi &amp; \sin\vartheta\sin\psi\\ \sin\psi &amp; \cos\vartheta\cos\psi &amp; -\sin\vartheta\cos\psi\\ 0 &amp; \sin\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; \cos\psi &amp; -\cos\vartheta\sin\psi &amp; \sin\vartheta\sin\psi\\ &amp; &amp; &amp; \sin\psi &amp; \cos\vartheta\cos\psi &amp; -\sin\vartheta\cos\psi\\ &amp; &amp; &amp; 0 &amp; \sin\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; &amp; &amp; &amp; 1\end{array}\right)\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=R\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right) \]" src="../../form_130.png"/>
+<img class="formulaDsp" alt="\[ \left(\begin{array}{c} x\\ y\\ z\\ a_{x}\\ a_{y}\\ a_{z}\\ \frac{q}{p}\end{array}\right)=\left(\begin{array}{ccccccc} \cos\psi &amp; -\cos\vartheta\sin\psi &amp; \sin\vartheta\sin\psi\\ \sin\psi &amp; \cos\vartheta\cos\psi &amp; -\sin\vartheta\cos\psi\\ 0 &amp; \sin\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; \cos\psi &amp; -\cos\vartheta\sin\psi &amp; \sin\vartheta\sin\psi\\ &amp; &amp; &amp; \sin\psi &amp; \cos\vartheta\cos\psi &amp; -\sin\vartheta\cos\psi\\ &amp; &amp; &amp; 0 &amp; \sin\psi &amp; \cos\vartheta\\ &amp; &amp; &amp; &amp; &amp; &amp; 1\end{array}\right)\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right)=R\left(\begin{array}{c} x'\\ y'\\ z'\\ a_{x}'\\ a_{y}'\\ a_{z}'\\ \frac{q}{p}'\end{array}\right) \]" src="../../form_107.png"/>
 </p>
 <p><br/>
  with the Euler angles</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} \psi &amp; = &amp; \begin{cases} \begin{cases} \frac{\pi}{2} &amp; a_{x} \geq 0 \\ \frac{3\pi}{2} &amp; a_{x} < 0 \end{cases} &amp; a_{y}=0 \mbox{ resp. } |a_{y}|<10^{-14} \\ - \arctan \frac{a_{x}}{a_{y}} &amp; a_{y} < 0 \\ \pi - \arctan \frac{a_{x}}{a_{y}} &amp; a_{y} > 0 \end{cases} \\ \vartheta &amp; = &amp; \arccos a_{z} \end{eqnarray*}" src="../../form_131.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} \psi &amp; = &amp; \begin{cases} \begin{cases} \frac{\pi}{2} &amp; a_{x} \geq 0 \\ \frac{3\pi}{2} &amp; a_{x} < 0 \end{cases} &amp; a_{y}=0 \mbox{ resp. } |a_{y}|<10^{-14} \\ - \arctan \frac{a_{x}}{a_{y}} &amp; a_{y} < 0 \\ \pi - \arctan \frac{a_{x}}{a_{y}} &amp; a_{y} > 0 \end{cases} \\ \vartheta &amp; = &amp; \arccos a_{z} \end{eqnarray*}" src="../../form_108.png"/>
 </p>
 <p><br/>
- <img class="formulaInl" alt="$M$" src="../../form_132.png"/> is the multiple scattering error-matrix in the <img class="formulaInl" alt="$\theta$" src="../../form_133.png"/> coordinate system. <img class="formulaInl" alt="$\theta_{1/2}=0$" src="../../form_134.png"/> are the multiple scattering angles. There is only an error in direction (which later leads to an error in position, when <img class="formulaInl" alt="$N_{before}$" src="../../form_135.png"/> is propagated with <img class="formulaInl" alt="$T$" src="../../form_136.png"/>). </p>
+ <img class="formulaInl" alt="$M$" src="../../form_109.png"/> is the multiple scattering error-matrix in the <img class="formulaInl" alt="$\theta$" src="../../form_110.png"/> coordinate system. <img class="formulaInl" alt="$\theta_{1/2}=0$" src="../../form_111.png"/> are the multiple scattering angles. There is only an error in direction (which later leads to an error in position, when <img class="formulaInl" alt="$N_{before}$" src="../../form_112.png"/> is propagated with <img class="formulaInl" alt="$T$" src="../../form_113.png"/>). </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ M=\left(\begin{array}{cc} \sigma^{2} &amp; 0\\ 0 &amp; \sigma^{2}\end{array}\right)\]" src="../../form_137.png"/>
+<img class="formulaDsp" alt="\[ M=\left(\begin{array}{cc} \sigma^{2} &amp; 0\\ 0 &amp; \sigma^{2}\end{array}\right)\]" src="../../form_114.png"/>
 </p>
 <p><br/>
- This translates into the noise matrix <img class="formulaInl" alt="$\overline{M}$" src="../../form_138.png"/> in the local cs' via jacobian J. The mean scattering angle is always 0, this means that <img class="formulaInl" alt="$\theta_{1/2}=0$" src="../../form_134.png"/>):</p>
+ This translates into the noise matrix <img class="formulaInl" alt="$\overline{M}$" src="../../form_115.png"/> in the local cs' via jacobian J. The mean scattering angle is always 0, this means that <img class="formulaInl" alt="$\theta_{1/2}=0$" src="../../form_111.png"/>):</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} x' &amp; = &amp; x'\\ y' &amp; = &amp; y'\\ z' &amp; = &amp; z'\\ a_{x}' &amp; = &amp; \sin\theta_{1}\\ a_{y}' &amp; = &amp; \sin\theta_{2}\\ a_{z}' &amp; = &amp; \sqrt{1-\sin^{2}\theta_{1}-\sin^{2}\theta_{2}}\\ \frac{q}{p}' &amp; = &amp; \frac{q}{p}'\end{eqnarray*}" src="../../form_139.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} x' &amp; = &amp; x'\\ y' &amp; = &amp; y'\\ z' &amp; = &amp; z'\\ a_{x}' &amp; = &amp; \sin\theta_{1}\\ a_{y}' &amp; = &amp; \sin\theta_{2}\\ a_{z}' &amp; = &amp; \sqrt{1-\sin^{2}\theta_{1}-\sin^{2}\theta_{2}}\\ \frac{q}{p}' &amp; = &amp; \frac{q}{p}'\end{eqnarray*}" src="../../form_116.png"/>
 </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ M=\left(\begin{array}{cc} \sigma^{2} &amp; 0\\ 0 &amp; \sigma^{2}\end{array}\right)\]" src="../../form_137.png"/>
-</p>
-<p><br/>
- </p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[ J=\frac{\partial\left(x',y',z',a_{x}',a_{y}',a_{z}',\frac{q}{p}'\right)}{\partial\left(\theta_{1},\theta_{2}\right)}\]" src="../../form_140.png"/>
+<img class="formulaDsp" alt="\[ M=\left(\begin{array}{cc} \sigma^{2} &amp; 0\\ 0 &amp; \sigma^{2}\end{array}\right)\]" src="../../form_114.png"/>
 </p>
 <p><br/>
  </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ J=\left(\begin{array}{cc} 0 &amp; 0\\ 0 &amp; 0\\ 0 &amp; 0\\ \cos\theta_{1} &amp; 0\\ 0 &amp; \cos\theta_{2}\\ -\frac{\cos\theta_{1}\sin\theta_{1}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}} &amp; -\frac{\cos\theta_{2}\sin\theta_{2}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}}\\ 0 &amp; 0\end{array}\right) \overset{\theta_{1/2}=0}{=} \left(\begin{array}{cc} 0 &amp; 0\\ 0 &amp; 0\\ 0 &amp; 0\\ 1 &amp; 0\\ 0 &amp; 1\\ 0 &amp; 0\\ 0 &amp; 0\end{array}\right)\]" src="../../form_141.png"/>
+<img class="formulaDsp" alt="\[ J=\frac{\partial\left(x',y',z',a_{x}',a_{y}',a_{z}',\frac{q}{p}'\right)}{\partial\left(\theta_{1},\theta_{2}\right)}\]" src="../../form_117.png"/>
+</p>
+<p><br/>
+ </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ J=\left(\begin{array}{cc} 0 &amp; 0\\ 0 &amp; 0\\ 0 &amp; 0\\ \cos\theta_{1} &amp; 0\\ 0 &amp; \cos\theta_{2}\\ -\frac{\cos\theta_{1}\sin\theta_{1}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}} &amp; -\frac{\cos\theta_{2}\sin\theta_{2}}{\sqrt{\cos^{2}\theta_{1}-\sin^{2}\theta_{2}}}\\ 0 &amp; 0\end{array}\right) \overset{\theta_{1/2}=0}{=} \left(\begin{array}{cc} 0 &amp; 0\\ 0 &amp; 0\\ 0 &amp; 0\\ 1 &amp; 0\\ 0 &amp; 1\\ 0 &amp; 0\\ 0 &amp; 0\end{array}\right)\]" src="../../form_118.png"/>
 </p>
 <p> <br/>
  </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \overline{M}=J\: M\: J^{T}=\left(\begin{array}{ccccccc} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \sigma^{2} &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma^{2} &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right)\]" src="../../form_142.png"/>
+<img class="formulaDsp" alt="\[ \overline{M}=J\: M\: J^{T}=\left(\begin{array}{ccccccc} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \sigma^{2} &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma^{2} &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right)\]" src="../../form_119.png"/>
 </p>
-<p>The following transformation brings the noise matrix into the global coordinate system cs, resulting in <img class="formulaInl" alt="$N$" src="../../form_143.png"/> :</p>
+<p>The following transformation brings the noise matrix into the global coordinate system cs, resulting in <img class="formulaInl" alt="$N$" src="../../form_120.png"/> :</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ N=R\overline{M}R^{T}=\sigma^{2}\left(\begin{array}{ccccccc} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \cos^{2}\psi+\cos^{2}\theta-\cos^{2}\theta\cos^{2}\psi &amp; \cos\psi\sin\psi\sin^{2}\theta &amp; -\cos\theta\sin\psi\sin\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \cos\psi\sin\psi\sin^{2}\theta &amp; \sin^{2}\psi+\cos^{2}\theta\cos^{2}\psi &amp; \cos\theta\cos\psi\sin\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; -\cos\theta\sin\psi\sin\theta &amp; \cos\theta\cos\psi\sin\theta &amp; \sin^{2}\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right)\]" src="../../form_144.png"/>
+<img class="formulaDsp" alt="\[ N=R\overline{M}R^{T}=\sigma^{2}\left(\begin{array}{ccccccc} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \cos^{2}\psi+\cos^{2}\theta-\cos^{2}\theta\cos^{2}\psi &amp; \cos\psi\sin\psi\sin^{2}\theta &amp; -\cos\theta\sin\psi\sin\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; \cos\psi\sin\psi\sin^{2}\theta &amp; \sin^{2}\psi+\cos^{2}\theta\cos^{2}\psi &amp; \cos\theta\cos\psi\sin\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; -\cos\theta\sin\psi\sin\theta &amp; \cos\theta\cos\psi\sin\theta &amp; \sin^{2}\theta &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\end{array}\right)\]" src="../../form_121.png"/>
 </p>
 <p><br/>
 </p>
-<p>Now two <img class="formulaInl" alt="$N$" src="../../form_143.png"/> are calculated: <img class="formulaInl" alt="$N_{before}$" src="../../form_135.png"/> (at the start point, with initial direction #directionBefore) and <img class="formulaInl" alt="$N_{after}$" src="../../form_145.png"/> (at the final point, with direction #directionAfter). <img class="formulaInl" alt="$N_{before}$" src="../../form_135.png"/> is the propagated with the #jacobian of extrapolation <img class="formulaInl" alt="$T$" src="../../form_136.png"/>. The new covariance matrix with multiple scattering in global cs is:</p>
+<p>Now two <img class="formulaInl" alt="$N$" src="../../form_120.png"/> are calculated: <img class="formulaInl" alt="$N_{before}$" src="../../form_112.png"/> (at the start point, with initial direction #directionBefore) and <img class="formulaInl" alt="$N_{after}$" src="../../form_122.png"/> (at the final point, with direction #directionAfter). <img class="formulaInl" alt="$N_{before}$" src="../../form_112.png"/> is the propagated with the #jacobian of extrapolation <img class="formulaInl" alt="$T$" src="../../form_113.png"/>. The new covariance matrix with multiple scattering in global cs is:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\begin{eqnarray*} C_{new} &amp; = C_{old} + 0.5 \cdot T N_{before} T^{T} + 0.5 \cdot N_{after} \end{eqnarray*}" src="../../form_146.png"/>
+<img class="formulaDsp" alt="\begin{eqnarray*} C_{new} &amp; = C_{old} + 0.5 \cdot T N_{before} T^{T} + 0.5 \cdot N_{after} \end{eqnarray*}" src="../../form_123.png"/>
 </p>
 <p><br/>
  <br/>

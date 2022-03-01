@@ -254,10 +254,10 @@ class icarus::opdet::AsymExpPulseFunction&lt; T &gt;</h3>
 </dl>
 <p>This functor (class behaving like a function) describes the shape of the response to a single photoelectron as an exponentially raising and then exponentially falling shape: </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] \]" src="../../form_32.png"/>
+<img class="formulaDsp" alt="\[ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] \]" src="../../form_6.png"/>
 </p>
-<p> with <img class="formulaInl" alt="$ \tau_{s} $" src="../../form_33.png"/> the rise time and <img class="formulaInl" alt="$ \tau $" src="../../form_34.png"/> the fall time; <img class="formulaInl" alt="$ t_{0} $" src="../../form_35.png"/> is the start of the signal formation, i.e. the time at which the signal starts raising.</p>
-<p>Note that <img class="formulaInl" alt="$ t_{0} $" src="../../form_35.png"/> is not the peak time, and <img class="formulaInl" alt="$ A $" src="../../form_0.png"/> is not the peak amplitude of the signal. </p>
+<p> with <img class="formulaInl" alt="$ \tau_{s} $" src="../../form_7.png"/> the rise time and <img class="formulaInl" alt="$ \tau $" src="../../form_8.png"/> the fall time; <img class="formulaInl" alt="$ t_{0} $" src="../../form_9.png"/> is the start of the signal formation, i.e. the time at which the signal starts raising.</p>
+<p>Note that <img class="formulaInl" alt="$ t_{0} $" src="../../form_9.png"/> is not the peak time, and <img class="formulaInl" alt="$ A $" src="../../form_10.png"/> is not the peak amplitude of the signal. </p>
 
 <p>Definition at line <a class="el" href="../../d7/d9d/AsymExpPulseFunction_8h_source.html#l00030">30</a> of file <a class="el" href="../../d7/d9d/AsymExpPulseFunction_8h_source.html">AsymExpPulseFunction.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -371,7 +371,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <p>The time parameters (<code>peakTime</code>, <code>raiseTau</code> and <code>fallTau</code>) must be measured in same unit. The <code>peakTime</code> defines the position of the shape with respect to time 0.</p>
-<dl class="section note"><dt>Note</dt><dd>The construction parameters are <em>not</em> the ones described by the functional form documented in the class, <img class="formulaInl" alt="$ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] $" src="../../form_36.png"/>: the <code>amplitude</code> parameter is the actual maximum of the signal response, and <code>peakTime</code> is the actual time at which the signal peaks. These parameters are more easily read from a measured waveform. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The construction parameters are <em>not</em> the ones described by the functional form documented in the class, <img class="formulaInl" alt="$ A \left[ exp(-(t - t_{0})/\tau_{s}) - exp(-(t - t_{0})/\tau) \right] $" src="../../form_11.png"/>: the <code>amplitude</code> parameter is the actual maximum of the signal response, and <code>peakTime</code> is the actual time at which the signal peaks. These parameters are more easily read from a measured waveform. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d7/d9d/AsymExpPulseFunction_8h_source.html#l00165">165</a> of file <a class="el" href="../../d7/d9d/AsymExpPulseFunction_8h_source.html">AsymExpPulseFunction.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  : <a class="code" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#acbaae2ad375b37225fb85ecf2d91c838">fAmplitude</a>(<a class="code" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#a385b40ca8df3174a4d30bf61da0fd69f">amplitude</a>)</div>

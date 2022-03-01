@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a31b277799350e6a2a27beec6f994c233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the covariance between intercept and slope of the fit.  <a href="#a31b277799350e6a2a27beec6f994c233">More...</a><br/></td></tr>
 <tr class="separator:a31b277799350e6a2a27beec6f994c233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3a2a3a0b13dde0e958e3cbba67f5db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/dc3/classlar_1_1util_1_1details_1_1SimplePolyFitterDataBase.html#a2a3fb9bf968aeff83bfc0d8dde6ec1a3">Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d76/classlar_1_1util_1_1LinearFit.html#a5e3a2a3a0b13dde0e958e3cbba67f5db">ChiSquare</a> () const override</td></tr>
-<tr class="memdesc:a5e3a2a3a0b13dde0e958e3cbba67f5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_102.png"/> of the fit.  <a href="#a5e3a2a3a0b13dde0e958e3cbba67f5db">More...</a><br/></td></tr>
+<tr class="memdesc:a5e3a2a3a0b13dde0e958e3cbba67f5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_79.png"/> of the fit.  <a href="#a5e3a2a3a0b13dde0e958e3cbba67f5db">More...</a><br/></td></tr>
 <tr class="separator:a5e3a2a3a0b13dde0e958e3cbba67f5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlar_1_1util_1_1details_1_1SimplePolyFitterBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlar_1_1util_1_1details_1_1SimplePolyFitterBase')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html">lar::util::details::SimplePolyFitterBase&lt; T, 1U &gt;</a></td></tr>
 <tr class="memitem:ae5e857b88e1c1e5b31e512ba0ed5a34d inherit pub_methods_classlar_1_1util_1_1details_1_1SimplePolyFitterBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html#ae5e857b88e1c1e5b31e512ba0ed5a34d">isValid</a> () const override</td></tr>
@@ -367,7 +367,7 @@ class lar::util::LinearFit&lt; T &gt;</h3>
   </table>
   </dd>
 </dl>
-<p>The linear regression connects measurements <img class="formulaInl" alt="$ ( y_{i} \pm \sigma_{y,i} ) $" src="../../form_92.png"/> with a parameter <img class="formulaInl" alt="$ ( x_{i} ) $" src="../../form_93.png"/> not affected by uncertainty. The returned parameters describe a straight line <img class="formulaInl" alt="$ y = a x + b $" src="../../form_94.png"/> obtained by minimization of <img class="formulaInl" alt="$ \chi^{2} = \sum_{i} \frac{ \left(y_{i} - a x_{i} - b \right)^{2} }{ \sigma^{2}_{y,i} }$" src="../../form_95.png"/></p>
+<p>The linear regression connects measurements <img class="formulaInl" alt="$ ( y_{i} \pm \sigma_{y,i} ) $" src="../../form_69.png"/> with a parameter <img class="formulaInl" alt="$ ( x_{i} ) $" src="../../form_70.png"/> not affected by uncertainty. The returned parameters describe a straight line <img class="formulaInl" alt="$ y = a x + b $" src="../../form_71.png"/> obtained by minimization of <img class="formulaInl" alt="$ \chi^{2} = \sum_{i} \frac{ \left(y_{i} - a x_{i} - b \right)^{2} }{ \sigma^{2}_{y,i} }$" src="../../form_72.png"/></p>
 <p>This saves having to link to <a class="el" href="../../d0/d10/namespaceROOT.html">ROOT</a> for the simplest cases.</p>
 <p>This simple linear fitter does not store any result: each time a result is requested, it is computed anew. In particular that is true also for <a class="el" href="../../de/d76/classlar_1_1util_1_1LinearFit.html#a5e3a2a3a0b13dde0e958e3cbba67f5db" title="Returns the  of the fit. ">ChiSquare()</a>, that requires the full parameters set and therefore reruns the full fit (<a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html#ace155ab1da0a41774be251414c78ec21" title="Computes and returns all the parameters of the fit result. ">FitParameters()</a>) and for the covariance matrix of the parameters. </p>
 
@@ -473,8 +473,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_102.png"/> of the fit. </p>
-<dl class="section return"><dt>Returns</dt><dd>the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_102.png"/> of the fit (not divided by <a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html#aad5aa30de4b0390798c2be2e22e54a33" title="Returns the degrees of freedom in the determination of the fit. ">NDF()</a>) </dd></dl>
+<p>Returns the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_79.png"/> of the fit. </p>
+<dl class="section return"><dt>Returns</dt><dd>the <img class="formulaInl" alt="$ \chi^{2} $" src="../../form_79.png"/> of the fit (not divided by <a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html#aad5aa30de4b0390798c2be2e22e54a33" title="Returns the degrees of freedom in the determination of the fit. ">NDF()</a>) </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d8/dd9/classlar_1_1util_1_1details_1_1SimplePolyFitterBase.html#ae812ba5cd684f8a6c7f8a9217fa32c25">lar::util::details::SimplePolyFitterBase&lt; T, 1U &gt;</a>.</p>
 

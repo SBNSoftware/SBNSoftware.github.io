@@ -702,9 +702,9 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the azimuth angle, in <img class="formulaInl" alt="$ [-\pi,\pi[ $" src="../../form_114.png"/> [radians] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the azimuth angle, in <img class="formulaInl" alt="$ [-\pi,\pi[ $" src="../../form_91.png"/> [radians] </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a86123ebdc66d96ef79f258cacfc6b968" title="&quot;Zenith&quot; angle of trajectory, with respect to the vertical axis. ">ZenithAngle()</a></dd></dl>
-<p>The angle is defined on the plane orthogonal to the <em>y</em> direction. It describes the angle of the trajectory at the specified point. The angle is measured starting from the positive <em>z</em> direction, counterclockwise. Therefore, a trajectory start lying on the demiplane of <em>y</em> axis and positive <em>z</em> axis returns 0 radians, while one lying on the demiplane of <em>y</em> axis and positive <em>x</em> axis returns <img class="formulaInl" alt="$ +\pi/2 $" src="../../form_116.png"/> radians.</p>
+<p>The angle is defined on the plane orthogonal to the <em>y</em> direction. It describes the angle of the trajectory at the specified point. The angle is measured starting from the positive <em>z</em> direction, counterclockwise. Therefore, a trajectory start lying on the demiplane of <em>y</em> axis and positive <em>z</em> axis returns 0 radians, while one lying on the demiplane of <em>y</em> axis and positive <em>x</em> axis returns <img class="formulaInl" alt="$ +\pi/2 $" src="../../form_93.png"/> radians.</p>
 <p>If the point number is invalid, the behaviour is undefined. </p>
 
 <p>Definition at line <a class="el" href="../../d4/d19/Trajectory_8cxx_source.html#l00096">96</a> of file <a class="el" href="../../d4/d19/Trajectory_8cxx_source.html">Trajectory.cxx</a>.</p>
@@ -1988,9 +1988,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the azimuthal angle, in <img class="formulaInl" alt="$ [-\pi,\pi[ $" src="../../form_114.png"/> [radians] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the azimuthal angle, in <img class="formulaInl" alt="$ [-\pi,\pi[ $" src="../../form_91.png"/> [radians] </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a3b687a52f1815c3f4f2f942fd9304d93" title="Trajectory angle at point, with respect to positive z direction. ">Theta()</a>, <a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a86123ebdc66d96ef79f258cacfc6b968" title="&quot;Zenith&quot; angle of trajectory, with respect to the vertical axis. ">ZenithAngle()</a></dd></dl>
-<p>The angle is measured on the plane orthogonal to the <em>z</em> axis, in the same reference where <code><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a3b687a52f1815c3f4f2f942fd9304d93" title="Trajectory angle at point, with respect to positive z direction. ">Theta()</a></code> is measured. The angle is measured counterclockwise from the <em>x</em> axis. Skyward direction is expected to be <img class="formulaInl" alt="$ +\pi/2 $" src="../../form_116.png"/> radians in this system, provided that the standard reference frame with the <em>y</em> axis pointing skyward is chosen.</p>
+<p>The angle is measured on the plane orthogonal to the <em>z</em> axis, in the same reference where <code><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a3b687a52f1815c3f4f2f942fd9304d93" title="Trajectory angle at point, with respect to positive z direction. ">Theta()</a></code> is measured. The angle is measured counterclockwise from the <em>x</em> axis. Skyward direction is expected to be <img class="formulaInl" alt="$ +\pi/2 $" src="../../form_93.png"/> radians in this system, provided that the standard reference frame with the <em>y</em> axis pointing skyward is chosen.</p>
 <p>If the point number is invalid, the behaviour is undefined. </p>
 
 <p>Definition at line <a class="el" href="../../d7/db7/Trajectory_8h_source.html#l00337">337</a> of file <a class="el" href="../../d7/db7/Trajectory_8h_source.html">Trajectory.h</a>.</p>
@@ -2279,7 +2279,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>angle with respect to positive <em>z</em>, in <img class="formulaInl" alt="$ [0,\pi] $" src="../../form_112.png"/> [radians]</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>angle with respect to positive <em>z</em>, in <img class="formulaInl" alt="$ [0,\pi] $" src="../../form_89.png"/> [radians]</dd></dl>
 <p>The reference direction is the positive <em>z</em> axis. Although this usually matches the beam direction, this is not guaranteed and if the explicit angle from beam direction is needed, the scalar product of the beam direction and the direction from <code><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#a96de07f17265b4cefe1a3556ebbc7896" title="Returns the direction of the trajectory at the first point. ">StartDirection()</a></code> should be used instead.</p>
 <p>If the point number is invalid, the behaviour is undefined. </p>
 
@@ -2572,9 +2572,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>opposite of the actual zenith angle, in <img class="formulaInl" alt="$ [0,\pi] $" src="../../form_112.png"/> [radians] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>opposite of the actual zenith angle, in <img class="formulaInl" alt="$ [0,\pi] $" src="../../form_89.png"/> [radians] </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d7/d1c/classrecob_1_1Trajectory.html#af8ba9aa3e79845440edd8c29fcc453df" title="&quot;Azimuth&quot; angle of trajectory, with respect to the sky. ">AzimuthAngle()</a></dd></dl>
-<p>The angle is defined with respect to the negative <em>y</em> direction. It describes the angle at the specified point on the trajectory. Therefore, a trajectory starting along the positive <em>y</em> direction returns <img class="formulaInl" alt="$ \pi $" src="../../form_105.png"/> radians, while a trajectory going downward along the negative <em>y</em> direction returns 0.</p>
+<p>The angle is defined with respect to the negative <em>y</em> direction. It describes the angle at the specified point on the trajectory. Therefore, a trajectory starting along the positive <em>y</em> direction returns <img class="formulaInl" alt="$ \pi $" src="../../form_82.png"/> radians, while a trajectory going downward along the negative <em>y</em> direction returns 0.</p>
 <p>This is designed so that vertical cosmic rays produce trajectories with angle 0 radians.</p>
 <p>If the point number is invalid, the behaviour is undefined. </p>
 

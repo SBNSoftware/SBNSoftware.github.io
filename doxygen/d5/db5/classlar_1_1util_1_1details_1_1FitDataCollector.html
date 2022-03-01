@@ -163,10 +163,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a039e303e0f690f7fffd3f472a267e468"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#a039e303e0f690f7fffd3f472a267e468">UncertaintyToWeight</a> (<a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a> <a class="el" href="../../dd/dea/fix__cmake__genie3_8pl.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>)</td></tr>
-<tr class="memdesc:a039e303e0f690f7fffd3f472a267e468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an uncertainty into a weight ( <img class="formulaInl" alt="$ s^{-2} $" src="../../form_100.png"/>)  <a href="#a039e303e0f690f7fffd3f472a267e468">More...</a><br/></td></tr>
+<tr class="memdesc:a039e303e0f690f7fffd3f472a267e468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an uncertainty into a weight ( <img class="formulaInl" alt="$ s^{-2} $" src="../../form_77.png"/>)  <a href="#a039e303e0f690f7fffd3f472a267e468">More...</a><br/></td></tr>
 <tr class="separator:a039e303e0f690f7fffd3f472a267e468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ffc00b73ada60025f8593a7553477e4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#a3ffc00b73ada60025f8593a7553477e4">WeightToUncertainty</a> (<a class="el" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a> w)</td></tr>
-<tr class="memdesc:a3ffc00b73ada60025f8593a7553477e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a weight back to an uncertainty ( <img class="formulaInl" alt="$ s^{-1/2} $" src="../../form_101.png"/>)  <a href="#a3ffc00b73ada60025f8593a7553477e4">More...</a><br/></td></tr>
+<tr class="memdesc:a3ffc00b73ada60025f8593a7553477e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a weight back to an uncertainty ( <img class="formulaInl" alt="$ s^{-1/2} $" src="../../form_78.png"/>)  <a href="#a3ffc00b73ada60025f8593a7553477e4">More...</a><br/></td></tr>
 <tr class="separator:a3ffc00b73ada60025f8593a7553477e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -525,7 +525,7 @@ template&lt;typename VIter , typename UIter , typename VPred , typename UPred &g
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of points added</dd></dl>
-<p>Each element is added with the uncertainty pointed by the matching element in the list pointed by begin_weight: the <img class="formulaInl" alt="$ y $" src="../../form_98.png"/> measurement of <code>*(begin_value)</code> will have uncertainty <code>*(begin_uncertainty)</code>, the next measurement <code>*(begin_value + 1)</code> will have uncertainty <code>*(begin_uncertainty + 1)</code>, etc.</p>
+<p>Each element is added with the uncertainty pointed by the matching element in the list pointed by begin_weight: the <img class="formulaInl" alt="$ y $" src="../../form_75.png"/> measurement of <code>*(begin_value)</code> will have uncertainty <code>*(begin_uncertainty)</code>, the next measurement <code>*(begin_value + 1)</code> will have uncertainty <code>*(begin_uncertainty + 1)</code>, etc.</p>
 <p>The predicates are required to react to a call like with: </p>
 <pre class="fragment">Measurement_t VPred::operator() (typename VIter::value_type);
 Data_t UPred::operator() (typename UIter::value_type);
@@ -926,7 +926,7 @@ template&lt;typename T , unsigned int D&gt; </div>
   </table>
   </dd>
 </dl>
-<p>The average is the square root of the harmonic average of the variances (that is, the errors squared): <img class="formulaInl" alt="$ \bar{s}^{-2} = \frac{1}{N} \sum_{i=1}^{N} s_{y}^{-2} $" src="../../form_99.png"/> </p>
+<p>The average is the square root of the harmonic average of the variances (that is, the errors squared): <img class="formulaInl" alt="$ \bar{s}^{-2} = \frac{1}{N} \sum_{i=1}^{N} s_{y}^{-2} $" src="../../form_76.png"/> </p>
 
 <p>Definition at line <a class="el" href="../../de/dd8/SimpleFits_8h_source.html#l00277">277</a> of file <a class="el" href="../../de/dd8/SimpleFits_8h_source.html">SimpleFits.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          { <span class="keywordflow">return</span> <a class="code" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#a3ffc00b73ada60025f8593a7553477e4">WeightToUncertainty</a>(<a class="code" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#a504e6d750057212db59e4a4ddba3db03">s2</a>.<a class="code" href="../../db/d57/classlar_1_1util_1_1details_1_1WeightTracker.html#a21cf0e4be6cfbf1fac2b2a5650f5500c">AverageWeight</a>()); }</div>
@@ -1115,7 +1115,7 @@ template&lt;typename T , unsigned int D&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Transforms an uncertainty into a weight ( <img class="formulaInl" alt="$ s^{-2} $" src="../../form_100.png"/>) </p>
+<p>Transforms an uncertainty into a weight ( <img class="formulaInl" alt="$ s^{-2} $" src="../../form_77.png"/>) </p>
 
 <p>Definition at line <a class="el" href="../../de/dd8/SimpleFits_8h_source.html#l00317">317</a> of file <a class="el" href="../../de/dd8/SimpleFits_8h_source.html">SimpleFits.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          { <span class="keywordflow">return</span> <a class="code" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a>(1.)/<a class="code" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#abcee99c58b01642177b6c7a5a0c88eb2">sqr</a>(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>); }</div>
@@ -1149,7 +1149,7 @@ template&lt;typename T , unsigned int D&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Transforms a weight back to an uncertainty ( <img class="formulaInl" alt="$ s^{-1/2} $" src="../../form_101.png"/>) </p>
+<p>Transforms a weight back to an uncertainty ( <img class="formulaInl" alt="$ s^{-1/2} $" src="../../form_78.png"/>) </p>
 
 <p>Definition at line <a class="el" href="../../de/dd8/SimpleFits_8h_source.html#l00321">321</a> of file <a class="el" href="../../de/dd8/SimpleFits_8h_source.html">SimpleFits.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          { <span class="keywordflow">return</span> <a class="code" href="../../d5/db5/classlar_1_1util_1_1details_1_1FitDataCollector.html#afc58b254c9f739e9ff8af762d8bda1d9">Data_t</a>(1.)/std::sqrt(<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a8cdc67339147aad209b4122a38d7e246">w</a>); }</div>
