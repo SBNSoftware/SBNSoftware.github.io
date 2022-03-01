@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yetanotherprovider',['YetAnotherProvider',['../structYetAnotherProvider.html',1,'']]]
+  ['yetanotherprovider',['YetAnotherProvider',['../d7/d7b/structYetAnotherProvider.html',1,'']]]
 ];
