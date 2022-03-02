@@ -14,9 +14,32 @@ Location: `/pnfs/<sbnd or icarus>/persistent/ContinuousIntegration/input/validat
 # Validation Metrics by Working Group
 
 ## TPC reco
-- Shower completeness, purity, true kinematics for electrons and PandoraShowers
-- Tracks length, completeness, purity, true kinematics for muons and protons 
-- PFParticles
+- Shower Validation Module
+   - Hit & energy completeness
+   - Hit & energy purity
+   - Reconstructed shower direction and start point relative to truth
+   - Reconstructed shower energy & dEdx
+- Reconstruction Efficiency Module
+  - Hit completeness & purity (for true electrons, muons and protons)
+  - Reconstruction efficiency in terms of energy, momentum and angles in xy, xz and yz (for true electrons, muons and protons)
+  - Reconstruction efficiency with quality requirements in terms of energy, momentum and angles in xy, xz and yz (for true electrons, muons and protons)
+- PFP Slice Module
+  - Slice completeness & purity (by hits)
+  - Nu score (slice ID)
+  - Number of neutrino slices
+  - Number of slices
+  - Vertex position (x, y & z)
+  - Vertex accurary (x, y & z) relative to truth
+  - Slice PDG
+- PFP Module
+  - Energy completeness & purity (per pfp, electron, muon and proton)
+  - Hit completeness & purity (per pfp, electron, muon and proton)
+  - Space point to hit ratio (per pfp, electron, muon and proton)
+  - Number of reconstructed pfps, showers & tracks (per electron, muon and proton)
+  - Number of reconstructed pfps, neutrino pfps, showers & tracks per event
+  - Number of hits & track ID score per pfp
+- _Track Validation Module_
+  - Ported to sbnci but not yet included in the triggers
 
 ## TPC sim/calibration
 
