@@ -6,3 +6,7 @@
 git add -A ../doxygen || exit 1
 
 git commit -m 'Automated documentation update by doxygen_scripts/update_git.sh run by '$USER' on '$HOSTNAME || exit 1
+
+git gc || exit 1
+
+git push || exit 1
