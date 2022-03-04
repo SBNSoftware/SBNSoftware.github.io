@@ -162,7 +162,7 @@ working group colleague, someone familiar with your code, reviewers [list](sugge
 
 3. Address request, changes or comments.
 
-4. Trigger the integrated CI test with a comment (for e20/c7:prof). 
+4. Trigger the integrated (for e20/c7:prof) CI test with the comment `trigger build` in your GitHub PR . 
 If successful your code will be merged into the stack. Wait for nightly build  (e20/c7:debug) outputs (Dashboard or Slack).
 
 5. Your code is ready to be released. Once approved this will be merged into our next release! 
