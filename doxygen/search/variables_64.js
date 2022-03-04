@@ -237,7 +237,7 @@ var searchData=
   ['distances_5flandau_5fsbnd',['Distances_landau_sbnd',['../d3/dbc/opticalsimparameterisations__sbnd_8fcl.html#a14eabe9f06a89e68348458fa3631e19b',1,'opticalsimparameterisations_sbnd.fcl']]],
   ['distances_5fradial_5frefl_5fsbnd',['Distances_radial_refl_SBND',['../d3/dbc/opticalsimparameterisations__sbnd_8fcl.html#aa61b5fc4ede8428474725e8cd2822f99',1,'opticalsimparameterisations_sbnd.fcl']]],
   ['distributedfhicldir',['DistributedFHiCLdir',['../d1/d39/testFHiCLfiles__icarus_8sh.html#a967e5f15f60d1331a9c3edd1df536dfb',1,'testFHiCLfiles_icarus.sh']]],
-  ['distributionnames',['DistributionNames',['../d5/d58/classevgen_1_1SingleGen.html#a4e5c7467cbdfbddb7a42495a73284fbb',1,'evgen::SingleGen']]],
+  ['distributionnames',['DistributionNames',['../df/dd7/classevgen_1_1larg4SingleGen.html#a585bcdbec142becd8a6ea933d480866b',1,'evgen::larg4SingleGen::DistributionNames()'],['../d5/d58/classevgen_1_1SingleGen.html#a4e5c7467cbdfbddb7a42495a73284fbb',1,'evgen::SingleGen::DistributionNames()']]],
   ['dk2nu_5fbnb_5fat_5fuboone_5fv1',['dk2nu_bnb_at_uboone_v1',['../df/d01/fluxreader__source__dk2nu_8fcl.html#a7bdd1ecd94e98aabc78f1e41e1b0b2ec',1,'fluxreader_source_dk2nu.fcl']]],
   ['dk2nu_5fbnb_5fat_5fuboone_5fv2',['dk2nu_bnb_at_uboone_v2',['../df/d01/fluxreader__source__dk2nu_8fcl.html#aaf8bcbdf8d9716a43aedc3190ffc4e0d',1,'fluxreader_source_dk2nu.fcl']]],
   ['dk2nu_5fnumi_5fat_5fuboone',['dk2nu_numi_at_uboone',['../df/d01/fluxreader__source__dk2nu_8fcl.html#a1c5b9a187e617f6b87c56b2076b44c27',1,'fluxreader_source_dk2nu.fcl']]],

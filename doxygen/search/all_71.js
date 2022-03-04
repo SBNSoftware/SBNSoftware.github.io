@@ -52,7 +52,7 @@ var searchData=
   ['quadexpr',['QuadExpr',['../d7/d0d/classQuadExpr.html',1,'QuadExpr'],['../d7/d0d/classQuadExpr.html#a1330e1dce4d4d40f897c2a48d4f91cc3',1,'QuadExpr::QuadExpr()']]],
   ['quadexpr_2ecxx',['QuadExpr.cxx',['../d1/d06/QuadExpr_8cxx.html',1,'']]],
   ['quadexpr_2eh',['QuadExpr.h',['../df/d68/QuadExpr_8h.html',1,'']]],
-  ['quadratic',['QUADRATIC',['../d3/d4e/classlar__content_1_1SupportVectorMachine.html#a3b4771839a2e03669c6113166fc0b900a4fd63f6f0c4b4bfae8315576609cc50d',1,'lar_content::SupportVectorMachine::QUADRATIC()'],['../d7/d0d/classQuadExpr.html#a0fef5faa4cef448b3bd6f305614e829b',1,'QuadExpr::Quadratic()']]],
+  ['quadratic',['Quadratic',['../d7/d0d/classQuadExpr.html#a0fef5faa4cef448b3bd6f305614e829b',1,'QuadExpr::Quadratic()'],['../d3/d4e/classlar__content_1_1SupportVectorMachine.html#a3b4771839a2e03669c6113166fc0b900a4fd63f6f0c4b4bfae8315576609cc50d',1,'lar_content::SupportVectorMachine::QUADRATIC()']]],
   ['quadraticfit',['QuadraticFit',['../d8/d1a/classlar_1_1util_1_1QuadraticFit.html',1,'lar::util']]],
   ['quadraticfittest',['QuadraticFitTest',['../d3/d31/SimpleFits__test_8cc.html#ae6e6b4e5ca30b1428baa1b933f18e39f',1,'SimpleFits_test.cc']]],
   ['quadratickernel',['QuadraticKernel',['../d3/d4e/classlar__content_1_1SupportVectorMachine.html#a9b965a34770e1cafe560ed3423847f8c',1,'lar_content::SupportVectorMachine']]],
