@@ -75,7 +75,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">CrtCal.cc File Reference</div>  </div>
 </div><!--header-->
@@ -88,6 +89,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Macros</h2></td></tr>
 <tr class="memitem:a188cbb6072631ab69cbdbda18c78ef50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/CrtCal_8cc.html#a188cbb6072631ab69cbdbda18c78ef50">CRT_CAL_CC</a></td></tr>
 <tr class="separator:a188cbb6072631ab69cbdbda18c78ef50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4ebb5ff3e6a0b0cf936c6f1022d054c4"><td class="memItemLeft" align="right" valign="top">Double_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/CrtCal_8cc.html#a4ebb5ff3e6a0b0cf936c6f1022d054c4">langaufun</a> (Double_t *<a class="el" href="../../d1/d01/singles_8fcl.html#aa2441c6f4af6ae1d48f43c716144deac">x</a>, Double_t *par)</td></tr>
+<tr class="separator:a4ebb5ff3e6a0b0cf936c6f1022d054c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a188cbb6072631ab69cbdbda18c78ef50"></a>
@@ -102,6 +108,89 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../da/d90/CrtCal_8cc_source.html#l00002">2</a> of file <a class="el" href="../../da/d90/CrtCal_8cc_source.html">CrtCal.cc</a>.</p>
 
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4ebb5ff3e6a0b0cf936c6f1022d054c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Double_t langaufun </td>
+          <td>(</td>
+          <td class="paramtype">Double_t *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Double_t *&#160;</td>
+          <td class="paramname"><em>par</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../da/d90/CrtCal_8cc_source.html#l00835">835</a> of file <a class="el" href="../../da/d90/CrtCal_8cc_source.html">CrtCal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                                               {</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160; </div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="comment">//Fit parameters:</span></div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <span class="comment">//par[0]=Width (scale) parameter of Landau density</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="comment">//par[1]=Most Probable (MP, location) parameter of Landau density</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="comment">//par[2]=Total area (integral -inf to inf, normalization constant)</span></div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="comment">//par[3]=Width (sigma) of convoluted Gaussian function</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    <span class="comment">//In the Landau distribution (represented by the CERNLIB approximation),</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="comment">//the maximum is located at x=-0.22278298 with the location parameter=0.</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    <span class="comment">//This shift is corrected within this function, so that the actual</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <span class="comment">//maximum is identical to the MP parameter.</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160; </div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;       <span class="comment">// Numeric constants</span></div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;       Double_t invsq2pi = 0.3989422804014;   <span class="comment">// (2 pi)^(-1/2)</span></div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;       Double_t mpshift  = -0.22278298;       <span class="comment">// Landau maximum location</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160; </div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;       <span class="comment">// Control constants</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;       Double_t np = 100.0;      <span class="comment">// number of convolution steps</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;       Double_t sc =   5.0;      <span class="comment">// convolution extends to +-sc Gaussian sigmas</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160; </div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;       <span class="comment">// Variables</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;       Double_t xx;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;       Double_t mpc;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;       Double_t fland;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;       Double_t sum = 0.0;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;       Double_t xlow,xupp;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;       Double_t step;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;       Double_t i;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;       <span class="comment">// MP shift correction</span></div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;       mpc = par[1] - mpshift * par[0];</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160; </div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;       <span class="comment">// Range of convolution integral</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;       xlow = <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] - sc * par[3];</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;       xupp = <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] + sc * par[3];</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160; </div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;       step = (xupp-xlow) / np;</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160; </div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;       <span class="comment">// Convolution integral of Landau and Gaussian by sum</span></div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;       <span class="keywordflow">for</span>(i=1.0; i&lt;=np/2; i++) {</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;          xx = xlow + (i-.5) * step;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;          fland = TMath::Landau(xx,mpc,par[0]) / par[0];</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;          sum += fland * TMath::Gaus(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0],xx,par[3]);</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160; </div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;          xx = xupp - (i-.5) * step;</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;          fland = TMath::Landau(xx,mpc,par[0]) / par[0];</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;          sum += fland * TMath::Gaus(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0],xx,par[3]);</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;       }</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160; </div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;       <span class="keywordflow">return</span> (par[2] * step * sum * invsq2pi / par[3]);</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160; }</div>
+<div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

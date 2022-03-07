@@ -531,6 +531,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a958d846096090f6b9a8ffc0c1756b5ef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a958d846096090f6b9a8ffc0c1756b5ef"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d72/namespaceutil.html#a958d846096090f6b9a8ffc0c1756b5ef">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="../../d5/dd0/classutil_1_1Binner.html">Binner</a>&lt; T &gt; const &amp;)</td></tr>
 <tr class="separator:a958d846096090f6b9a8ffc0c1756b5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34dfade21c61885697d926440f77118a"><td class="memTemplParams" colspan="2">template&lt;typename Event &gt; </td></tr>
+<tr class="memitem:a34dfade21c61885697d926440f77118a"><td class="memTemplItemLeft" align="right" valign="top">art::InputTag&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">inputTagOf</a> (Event const &amp;event, art::ProductID const &amp;productID)</td></tr>
+<tr class="memdesc:a34dfade21c61885697d926440f77118a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and returns the input tag of the producer of <code>productID</code>.  <a href="#a34dfade21c61885697d926440f77118a">More...</a><br/></td></tr>
+<tr class="separator:a34dfade21c61885697d926440f77118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b3baf272be38961453b208e3f8cd44"><td class="memTemplParams" colspan="2">template&lt;typename Event , typename Handle &gt; </td></tr>
+<tr class="memitem:a48b3baf272be38961453b208e3f8cd44"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak"/>
+&lt; std::is_void_v&lt; std::void_t<br class="typebreak"/>
+&lt; typename Handle::HandleTag &gt;<br class="typebreak"/>
+ &gt;, art::InputTag &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d72/namespaceutil.html#a48b3baf272be38961453b208e3f8cd44">inputTagOf</a> (Event const &amp;event, Handle const &amp;handle)</td></tr>
+<tr class="memdesc:a48b3baf272be38961453b208e3f8cd44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and returns the input tag of the product with the specified <code>handle</code>.  <a href="#a48b3baf272be38961453b208e3f8cd44">More...</a><br/></td></tr>
+<tr class="separator:a48b3baf272be38961453b208e3f8cd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1164888fe44fc72dd6690011fbf1fc1"><td class="memTemplParams" colspan="2">template&lt;typename Event , typename T &gt; </td></tr>
+<tr class="memitem:ae1164888fe44fc72dd6690011fbf1fc1"><td class="memTemplItemLeft" align="right" valign="top">art::InputTag&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d72/namespaceutil.html#ae1164888fe44fc72dd6690011fbf1fc1">inputTagOf</a> (Event const &amp;event, art::Ptr&lt; T &gt; const &amp;ptr)</td></tr>
+<tr class="memdesc:ae1164888fe44fc72dd6690011fbf1fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and returns the input tag of the product <code>ptr</code> points to.  <a href="#ae1164888fe44fc72dd6690011fbf1fc1">More...</a><br/></td></tr>
+<tr class="separator:ae1164888fe44fc72dd6690011fbf1fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa5684872204728adc89bc973f65b91"><td class="memTemplParams" colspan="2">template&lt;typename Coll , typename KeyOp , typename CmpOp , typename RefOp , typename KeySortOp &gt; </td></tr>
 <tr class="memitem:adfa5684872204728adc89bc973f65b91"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d72/namespaceutil.html#adfa5684872204728adc89bc973f65b91">clusterBy</a> (Coll const &amp;objs, KeyOp keyFunc, CmpOp sameGroup, RefOp objRef, KeySortOp keySort)</td></tr>
 <tr class="memdesc:adfa5684872204728adc89bc973f65b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a simple clustering.  <a href="#adfa5684872204728adc89bc973f65b91">More...</a><br/></td></tr>
@@ -5848,6 +5863,186 @@ template&lt;typename T  = std::size_t&gt; </div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;} <span class="comment">// util::infinite_counter()</span></div>
 <div class="ttc" id="structutil_1_1span_html"><div class="ttname"><a href="../../d5/d70/structutil_1_1span.html">util::span</a></div><div class="ttdoc">Simple class with a begin and an end. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7a/span_8h_source.html#l00125">span.h:125</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_acc1957472e01a8d9ecd245e26338f0b9"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">icarus::ns::util::begin</a></div><div class="ttdeci">auto begin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00573">FixedBins.h:573</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a34dfade21c61885697d926440f77118a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Event &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">art::InputTag util::inputTagOf </td>
+          <td>(</td>
+          <td class="paramtype">Event const &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">art::ProductID const &amp;&#160;</td>
+          <td class="paramname"><em>productID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads and returns the input tag of the producer of <code>productID</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>type of event to read data from (<code>art::Event</code> interface) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>event to read data products from </td></tr>
+    <tr><td class="paramname">productID</td><td>reference data product </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the input tag of the producer of <code>productID</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">art::Exception</td><td>(error code: <code>art::errors::ProductNotFound</code>) if no input tag could be found</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This utility facilitates the traversal of associations. Assuming that a pointer to a data product element is available, we may need to read another data product from the same producer (e.g. from a pointer to a <code><a class="el" href="../../d9/dca/classrecob_1_1Track.html" title="Track from a non-cascading particle.A recob::Track consists of a recob::TrackTrajectory, plus additional members relevant for a &quot;fitted&quot; track: ">recob::Track</a></code> from a collection, we want to learn the associations of that track to <code><a class="el" href="../../db/d4e/classrecob_1_1Hit.html" title="2D representation of charge deposited in the TDC/wire plane ">recob::Hit</a></code>, assuming that the same module that produced the tracks also produced their associations to hit). This is trivial if the input tag of the data product element is known, but it's not if that data product is instead known only by a pointer/association. In that case, this function discovers the needed input tag. Example: </p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> <span class="keyword">const</span>&amp; assns</div>
+<div class="line">  = <span class="keyword">event</span>.getProduct&lt;std::vector&lt;recob::Hit&gt;&gt;(<a class="code" href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">inputTagOf</a>(trackPtr.id()));</div>
+</div><!-- fragment --><p> where <code>trackPtr</code> is a <code>art::Ptr&lt;<a class="el" href="../../d9/dca/classrecob_1_1Track.html" title="Track from a non-cascading particle.A recob::Track consists of a recob::TrackTrajectory, plus additional members relevant for a &quot;fitted&quot; track: ">recob::Track</a>&gt;</code> that may come for example from a <code><a class="el" href="../../dc/d21/classrecob_1_1PFParticle.html" title="Hierarchical representation of particle flow. ">recob::PFParticle</a></code>/<code><a class="el" href="../../d9/dca/classrecob_1_1Track.html" title="Track from a non-cascading particle.A recob::Track consists of a recob::TrackTrajectory, plus additional members relevant for a &quot;fitted&quot; track: ">recob::Track</a></code> association. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html#l00108">108</a> of file <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html">CanvasUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  cet::exempt_ptr&lt;art::BranchDescription const&gt; metaDescr</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    = <span class="keyword">event</span>.getProductDescription(productID);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">if</span> (metaDescr) <span class="keywordflow">return</span> metaDescr-&gt;inputTag();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">throw</span> art::Exception(art::errors::ProductNotFound)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Branch (and input tag) not found for product ID &quot;</span> &lt;&lt; productID;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} <span class="comment">// util::inputTagOf()</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a48b3baf272be38961453b208e3f8cd44"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Event , typename Handle &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt; std::is_void_v&lt;std::void_t&lt;typename Handle::HandleTag&gt; &gt;, art::InputTag &gt; util::inputTagOf </td>
+          <td>(</td>
+          <td class="paramtype">Event const &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handle const &amp;&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads and returns the input tag of the product with the specified <code>handle</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>type of event to read data from (<code>art::Event</code> interface) </td></tr>
+    <tr><td class="paramname">Handle</td><td>type of handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>event to read data products from </td></tr>
+    <tr><td class="paramname">handle</td><td>data product handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the input tag of the producer of data product at <code>handle</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">art::Exception</td><td>(error code: <code>art::errors::ProductNotFound</code>) if no input tag could be found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><code>inputTag(Event const&amp;, art::ProductID const&amp;)</code></dd></dl>
+<p>This utility is a wrapper of the version working on product ID. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html#l00075">75</a> of file <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html">CanvasUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">inputTagOf</a>(event, handle.id()); }</div>
+<div class="ttc" id="namespaceutil_html_a34dfade21c61885697d926440f77118a"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">util::inputTagOf</a></div><div class="ttdeci">art::InputTag inputTagOf(Event const &amp;event, art::ProductID const &amp;productID)</div><div class="ttdoc">Reads and returns the input tag of the producer of productID. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc2/CanvasUtils_8h_source.html#l00108">CanvasUtils.h:108</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae1164888fe44fc72dd6690011fbf1fc1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Event , typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">art::InputTag util::inputTagOf </td>
+          <td>(</td>
+          <td class="paramtype">Event const &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">art::Ptr&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads and returns the input tag of the product <code>ptr</code> points to. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Event</td><td>type of event to read data from (<code>art::Event</code> interface) </td></tr>
+    <tr><td class="paramname">T</td><td>type of the datum pointed by the pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>event to read data products from </td></tr>
+    <tr><td class="paramname">ptr</td><td><em>art</em> pointer to the data product element </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the input tag of the producer of data product of <code>ptr</code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">art::Exception</td><td>(error code: <code>art::errors::ProductNotFound</code>) if no input tag could be found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd><code>inputTag(Event const&amp;, art::ProductID const&amp;)</code></dd></dl>
+<p>This utility is a wrapper of the version working on product ID. </p>
+
+<p>Definition at line <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html#l00093">93</a> of file <a class="el" href="../../dc/dc2/CanvasUtils_8h_source.html">CanvasUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">inputTagOf</a>(event, ptr.id()); }</div>
+<div class="ttc" id="namespaceutil_html_a34dfade21c61885697d926440f77118a"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a34dfade21c61885697d926440f77118a">util::inputTagOf</a></div><div class="ttdeci">art::InputTag inputTagOf(Event const &amp;event, art::ProductID const &amp;productID)</div><div class="ttdoc">Reads and returns the input tag of the producer of productID. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc2/CanvasUtils_8h_source.html#l00108">CanvasUtils.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
