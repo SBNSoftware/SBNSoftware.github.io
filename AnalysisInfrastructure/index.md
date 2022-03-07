@@ -59,7 +59,7 @@ Meetings: Thursdays, 11:00 CT
 
 <!-- Develops infrastructure to process & analyze data & MC in a consistent way. -->
 
-### [Validation Framework](validation.md)
+### [Validation Framework](https://sbnsoftware.github.io/sbn/sbnci_wiki/sbnci_main)
 
 Conveners: [Chris Hilgenberg](mailto:)
 
