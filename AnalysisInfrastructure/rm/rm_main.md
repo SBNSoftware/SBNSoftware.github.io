@@ -1,18 +1,22 @@
 # Release Management
 
-## SBN Build instructions for an SBN software stack build
+Charge:
+
+## Release management (pre)requisites
 
 
-Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftware/sbnbuild)
-* `SBN/setup_build.sh` sets up local mrb area for testing a sbncode / SBN stack release build. Takes larsoft version number and qualifiers as argument.
-* `SBN/setup_build_sbana.sh` sets up a local mrb area for testing a sbnana release build. Takes sbnana version number to use and qualifiers as argument.
-* `SBN/copyToSciSoft_sbn.sh` pulls down from jenkins and pushes up to SciSoft the output of a successful release build for SBN software.
-* `SBN/copyToSciSoft_sbnana.sh` pulls down from jenkins and pushes up to SciSoft the output of a successful release build for sbnana package.
-* `ScisoftScripts` folder has copies of scripts from https://scisoft.fnal.gov/scisoft/bundles/tools/.
+## SBN Release instructions for an SBN software stack build, release and distribution.
+
+Different release instructions for:
+   * sbncode and partners
+   * sbnana
+   * sbndata
+   * Production release peculiarities 
+
 
 ### Prepare release and test locally.
 
-0. Login to one of the build nodes, move to a working area, and clone the sbnbuild repo.
+0. Login to one of the build nodes, move to a working area, and clone the sbnbuild repo (where [release manegement tools](rm_tools.md) live.
 1. Move into `sbnbuild` and do `source SBN/setup_build.sh <version> <quals>` where the version in the larsoft version, and the quals are a choice of quals for testing (e.g. `c7:debug`).
 2. Do `mrb g <repo>` for the repositories that need to be updated. (Check release notes or use `ups active | grep lardataobj` to see if `lardataobj` has changed, and if you will need to change `sbnobj` or not).
 3. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch, but use defaults for all the rest of the prompts.
