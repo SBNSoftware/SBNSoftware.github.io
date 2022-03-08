@@ -444,183 +444,186 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment"># ------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">function FindDoxyfile() {</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">  local -r ExptName=&quot;$1&quot;</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">  local -r ExptCodeName=&quot;$(ExperimentCodeProduct &quot;$ExptName&quot; )&quot;</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">  local -a CandidateDoxyfiles</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">  local GITrepoPath</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">  for GITrepoPath in &quot;$(GITrepositoryPath)&quot; &quot;$(GITrepositoryPath &quot;$0&quot;)&quot; ; do</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">    [[ -n &quot;$GITrepoPath&quot; ]] || continue</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">    CandidateDoxyfiles+=(</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/${ExptCodeName}.doxy&quot;</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile.${ExptCodeName}&quot;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/${ExptName}.doxy&quot;</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile.${ExptCode}&quot;</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile&quot;</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">    )</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">  done</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">  CandidateDoxyfiles+=(</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">    &quot;${ExptCodeName}/docs/Doxyfile&quot;</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">    &quot;Doxyfile.${ExptCodeName}&quot;</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">    &quot;Doxyfile.${ExptName}&quot;</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">    &quot;${ExptCodeName}.doxy&quot;</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">    &quot;${ExptName}.doxy&quot;</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">    &#39;Doxyfile&#39;</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">    )</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">  local Doxyfile</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">  for Doxyfile in &quot;${CandidateDoxyfiles[@]}&quot; &quot;&quot; ; do</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">    [[ -r &quot;$Doxyfile&quot; ]] || continue</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">    echo &quot;$Doxyfile&quot;</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">    return</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">  done</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">  return 1</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">} # FindDoxyfile()</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">function Unquote() {</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">  local String=&quot;$1&quot;</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">  String=&quot;${String#\&quot;}&quot;</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">  String=&quot;${String%\&quot;}&quot;</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">  String=&quot;${String#\&#39;}&quot;</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">  String=&quot;${String%\&#39;}&quot;</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">  echo $String</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">} # Unquote()</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">function ExtractFromMetadata() {</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">  # </span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">  # Prints the value of metadata value Key in the specified metadata file.</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">  # Metadata files are created by this same script.</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">  # looks for a Doxygen file in the repository directories;</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">  local -r ExptName=&quot;$1&quot;</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">  shift</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">  local -a PriorityDirs=( &quot;$@&quot; )</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">  local -r ExptCodeName=&quot;$(ExperimentCodeProduct &quot;$ExptName&quot; )&quot;</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">  local -a CandidateDoxyfiles</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">  local GITrepoPath</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">  for GITrepoPath in &quot;${PriorityDirs[@]}&quot; &quot;$(GITrepositoryPath)&quot; &quot;$(GITrepositoryPath &quot;$0&quot;)&quot; ; do</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">    [[ -n &quot;$GITrepoPath&quot; ]] || continue</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">    CandidateDoxyfiles+=(</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/${ExptCodeName}.doxy&quot;</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile.${ExptCodeName}&quot;</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/${ExptName}.doxy&quot;</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile.${ExptCode}&quot;</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">      &quot;${GITrepoPath}/${RepoDocSubdir}/Doxyfile&quot;</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">    )</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">  done</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">  CandidateDoxyfiles+=(</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">    &quot;${ExptCodeName}/docs/Doxyfile&quot;</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">    &quot;Doxyfile.${ExptCodeName}&quot;</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">    &quot;Doxyfile.${ExptName}&quot;</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">    &quot;${ExptCodeName}.doxy&quot;</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">    &quot;${ExptName}.doxy&quot;</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">    &#39;Doxyfile&#39;</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">    )</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">  local Doxyfile</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">  for Doxyfile in &quot;${CandidateDoxyfiles[@]}&quot; &quot;&quot; ; do</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">    [[ -r &quot;$Doxyfile&quot; ]] || continue</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">    echo &quot;$Doxyfile&quot;</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">    return</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">  done</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">  return 1</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">} # FindDoxyfile()</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">function Unquote() {</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">  local String=&quot;$1&quot;</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">  String=&quot;${String#\&quot;}&quot;</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">  String=&quot;${String%\&quot;}&quot;</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">  String=&quot;${String#\&#39;}&quot;</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">  String=&quot;${String%\&#39;}&quot;</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">  echo $String</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">} # Unquote()</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">function ExtractFromMetadata() {</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">  # </span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">  # An error code (1) is returned if the variable is not defined.</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">  # </span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">  # Usage:  ExtractFromMetadata Key MetadataFile</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">  # </span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">  # This works only for variables with values defined on a single line.</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">  # Also, it does not do any decent parsing.</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">  # Prints the value of metadata value Key in the specified metadata file.</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">  # Metadata files are created by this same script.</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">  # </span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">  # An error code (1) is returned if the variable is not defined.</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">  # </span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">  # Usage:  ExtractFromMetadata Key MetadataFile</span></div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">  # </span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">  local -r Key=&quot;$1&quot;</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">  local -r DataFile=&quot;$2&quot;</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">  [[ -r &quot;$DataFile&quot; ]] || return 1 # no file, no key</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">  # note that we are avoiding using `eval` for security reasons</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">  local DefLine</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">  DefLine=&quot;$(grep -E &quot;^[[:blank:]]*${Key}[[:blank:]]*=[[:blank:]]*&quot; &quot;$DataFile&quot; | sed -e &#39;s/[[:blank:]]*=[[:blank:]]*/</span>=/<span class="stringliteral">&#39; | sed -e &#39;</span><a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>/[[:blank:]]*#.*$<span class="comment">//g&#39;)&quot;</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -i res=$?</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  [[ $res != 0 ]] &amp;&amp; <span class="keywordflow">return</span> $res</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  [[ -<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> <span class="stringliteral">&quot;$DefLine&quot;</span> ]] &amp;&amp; <span class="keywordflow">return</span> 1</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> <span class="stringliteral">&quot;$DefLine&quot;</span> || <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;Could not assign &#39;${Key}&#39; with the line \`local \&quot;${DefLine}\&quot;\`.&quot;</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  Unquote <span class="stringliteral">&quot;${!Key}&quot;</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">return</span> 0</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;} # ExtractFromMetadata()</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;function ExtractValueFromDoxyfile() {</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="preprocessor">  # </span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Prints the value assigned to VarName in the specified file.</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # An error code (1) is returned if the variable is not defined.</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Usage:  ExtractValueFromDoxyfile VarName DefinitionFile</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # This works only for variables with values defined on a single line.</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Also, it does not do any decent parsing.</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">  # This works only for variables with values defined on a single line.</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">  # Also, it does not do any decent parsing.</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">  # </span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">  local -r Key=&quot;$1&quot;</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">  local -r DataFile=&quot;$2&quot;</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">  [[ -r &quot;$DataFile&quot; ]] || return 1 # no file, no key</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">  # note that we are avoiding using `eval` for security reasons</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">  local DefLine</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">  DefLine=&quot;$(grep -E &quot;^[[:blank:]]*${Key}[[:blank:]]*=[[:blank:]]*&quot; &quot;$DataFile&quot; | sed -e &#39;s/[[:blank:]]*=[[:blank:]]*/</span>=/<span class="stringliteral">&#39; | sed -e &#39;</span><a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>/[[:blank:]]*#.*$<span class="comment">//g&#39;)&quot;</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -i res=$?</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  [[ $res != 0 ]] &amp;&amp; <span class="keywordflow">return</span> $res</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  [[ -<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> <span class="stringliteral">&quot;$DefLine&quot;</span> ]] &amp;&amp; <span class="keywordflow">return</span> 1</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> <span class="stringliteral">&quot;$DefLine&quot;</span> || <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;Could not assign &#39;${Key}&#39; with the line \`local \&quot;${DefLine}\&quot;\`.&quot;</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  Unquote <span class="stringliteral">&quot;${!Key}&quot;</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="keywordflow">return</span> 0</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;} # ExtractFromMetadata()</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;function ExtractValueFromDoxyfile() {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">  # </span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Prints the value assigned to VarName in the specified file.</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # An error code (1) is returned if the variable is not defined.</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Usage:  ExtractValueFromDoxyfile VarName DefinitionFile</span></div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> VarName=<span class="stringliteral">&quot;$1&quot;</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> Doxyfile=<span class="stringliteral">&quot;$2&quot;</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">  # since our metadata has a format compatible with Doxygen, we use the same tool</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="preprocessor"></span>  ExtractFromMetadata <span class="stringliteral">&quot;$VarName&quot;</span> <span class="stringliteral">&quot;$Doxyfile&quot;</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # This works only for variables with values defined on a single line.</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Also, it does not do any decent parsing.</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> VarName=<span class="stringliteral">&quot;$1&quot;</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> Doxyfile=<span class="stringliteral">&quot;$2&quot;</span></div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;} # ExtractValueFromDoxyfile()</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor"></span><span class="keyword">function</span> FindFirstVariableName() {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor">  #</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Prints the name of the first &quot;variable&quot; in the input stream, introduced as</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # &quot;${VarName}&quot;, with VarName a valid bash variable identifier</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="preprocessor"></span>  </div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor">  #</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # this means:</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * do not print anything by default</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * look for a line with pattern ${VarName} (VarName made of letters, underscores and, except the first character, numbers</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * when found, execute the three commands:</span></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * match the variable name and replace the whole line with it</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * print the new line</span></div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * quit</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="preprocessor"></span>  sed -<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ab6cfbbcbb53c275375289d47dec67f46">n</a> -<a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a> <span class="stringliteral">&#39;/\$\{[[:alpha:]_][[:alnum:]_]*\}/{s/^.*\$\{([[:alpha:]_][[:alnum:]_]*)\}.*$/\1/;p;q}&#39;</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;} # FindFirstVariableName()</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;function EscapeSedReplacementLiteralPattern() {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> Value=<span class="stringliteral">&quot;$1&quot;</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> <a class="code" href="../../df/d96/MetadataSBN__service_8cc.html#a77cb3d81ac9f770cccd72d3c592799b8">Escape</a>=<span class="stringliteral">&quot;$2&quot;</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  Value=<span class="stringliteral">&quot;${Value//\\/\\\\}&quot;</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  [[ <span class="stringliteral">&quot;$Escape&quot;</span> != <span class="charliteral">&#39;\&#39;</span> ]] &amp;&amp; Value=<span class="stringliteral">&quot;${Value//${Escape}/\\${Escape}}&quot;</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  echo <span class="stringliteral">&quot;$Value&quot;</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;} # EscapeSedReplacementLiteralPattern()</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;function ReplaceEnvironmentVariables() {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="preprocessor">  #</span></div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Using `sed`, which means a lot of potential problems...</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> TemplateFile=<span class="stringliteral">&quot;$1&quot;</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> DestFile=<span class="stringliteral">&quot;$2&quot;</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  </div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="keywordflow">if</span> [[ <span class="stringliteral">&quot;$TemplateFile&quot;</span> -ef <span class="stringliteral">&quot;$DestFile&quot;</span> ]]; then</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;ReplaceEnvironmentVariables does not support in-place changes (&#39;${TemplateFile}&#39; and &#39;${DestFile}&#39; are the same file).&quot;</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a> </div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  </div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  cp <span class="stringliteral">&quot;$TemplateFile&quot;</span> <span class="stringliteral">&quot;$DestFile&quot;</span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: can&#39;t create file &#39;${DestFile}&#39;.&quot;</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor">  # since our metadata has a format compatible with Doxygen, we use the same tool</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor"></span>  ExtractFromMetadata <span class="stringliteral">&quot;$VarName&quot;</span> <span class="stringliteral">&quot;$Doxyfile&quot;</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  </div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;} # ExtractValueFromDoxyfile()</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="preprocessor"></span><span class="keyword">function</span> FindFirstVariableName() {</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="preprocessor">  #</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Prints the name of the first &quot;variable&quot; in the input stream, introduced as</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # &quot;${VarName}&quot;, with VarName a valid bash variable identifier</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor"></span>  </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor">  #</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # this means:</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * do not print anything by default</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * look for a line with pattern ${VarName} (VarName made of letters, underscores and, except the first character, numbers</span></div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # * when found, execute the three commands:</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * match the variable name and replace the whole line with it</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * print the new line</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #     * quit</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # </span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="preprocessor"></span>  sed -<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ab6cfbbcbb53c275375289d47dec67f46">n</a> -<a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a> <span class="stringliteral">&#39;/\$\{[[:alpha:]_][[:alnum:]_]*\}/{s/^.*\$\{([[:alpha:]_][[:alnum:]_]*)\}.*$/\1/;p;q}&#39;</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;} # FindFirstVariableName()</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;function EscapeSedReplacementLiteralPattern() {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> Value=<span class="stringliteral">&quot;$1&quot;</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> <a class="code" href="../../df/d96/MetadataSBN__service_8cc.html#a77cb3d81ac9f770cccd72d3c592799b8">Escape</a>=<span class="stringliteral">&quot;$2&quot;</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  Value=<span class="stringliteral">&quot;${Value//\\/\\\\}&quot;</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  [[ <span class="stringliteral">&quot;$Escape&quot;</span> != <span class="charliteral">&#39;\&#39;</span> ]] &amp;&amp; Value=<span class="stringliteral">&quot;${Value//${Escape}/\\${Escape}}&quot;</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  echo <span class="stringliteral">&quot;$Value&quot;</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;} # EscapeSedReplacementLiteralPattern()</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;function ReplaceEnvironmentVariables() {</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="preprocessor">  #</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # Using `sed`, which means a lot of potential problems...</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> TemplateFile=<span class="stringliteral">&quot;$1&quot;</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> -<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a> DestFile=<span class="stringliteral">&quot;$2&quot;</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  </div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="keywordflow">if</span> [[ <span class="stringliteral">&quot;$TemplateFile&quot;</span> -ef <span class="stringliteral">&quot;$DestFile&quot;</span> ]]; then</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;ReplaceEnvironmentVariables does not support in-place changes (&#39;${TemplateFile}&#39; and &#39;${DestFile}&#39; are the same file).&quot;</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a> </div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  </div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> VarName LastVarName</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="keywordflow">while</span> <a class="code" href="../../df/d43/crtt0matchingalg__icarus_8fcl.html#af8bc618309fb2d0f55f7f5ae0760b466">true</a> ; <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    VarName=<span class="stringliteral">&quot;$(FindFirstVariableName &lt; &quot;</span>$DestFile<span class="stringliteral">&quot;)&quot;</span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    [[ $? == 0 ]] || <span class="keywordflow">break</span> # done</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    [[ -<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> <span class="stringliteral">&quot;$VarName&quot;</span> ]] &amp;&amp; <span class="keywordflow">break</span> # done</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    </div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="preprocessor">    # avoid infinite loops (from bugs, presumably)</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor"></span>    [[ <span class="stringliteral">&quot;$LastVarName&quot;</span> == <span class="stringliteral">&quot;$VarName&quot;</span> ]] &amp;&amp; <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;Internal error: variable &#39;${VarName}&#39; still present in &#39;${DestFile}&#39; after substitution.&quot;</span></div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    LastVarName=<span class="stringliteral">&quot;$VarName&quot;</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    </div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> Value</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    Value=<span class="stringliteral">&quot;${!VarName}&quot;</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: error evaluating the variable &#39;${VarName}&#39;.&quot;</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    </div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    echo <span class="stringliteral">&quot;Replacing: &#39;\${${VarName}}&#39; =&gt; &#39;${Value}&#39;&quot;</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    sed -i -<a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a> <span class="stringliteral">&quot;s@\\$\\{${VarName}\\}@$(EscapeSedReplacementLiteralPattern &quot;</span>$Value<span class="stringliteral">&quot; &#39;@&#39;)@g&quot;</span> <span class="stringliteral">&quot;$DestFile&quot;</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: error replacing variable &#39;${VarName}&#39; with value &#39;${Value}&#39;.&quot;</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  done</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="keywordflow">return</span> 0</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;} # ReplaceEnvironmentVariables()</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># for test: bash utilities.sh testCommand args</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="preprocessor"></span><span class="keywordflow">if</span> [[ <span class="stringliteral">&quot;${BASH_SOURCE[0]}&quot;</span> == <span class="stringliteral">&quot;$0&quot;</span> ]] &amp;&amp; [[ $# -gt 0 ]]; then</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  echo <span class="stringliteral">&quot;CMD&gt; $*&quot;</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="stringliteral">&quot;$@&quot;</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="keywordflow">else</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="keyword">true</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  cp <span class="stringliteral">&quot;$TemplateFile&quot;</span> <span class="stringliteral">&quot;$DestFile&quot;</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: can&#39;t create file &#39;${DestFile}&#39;.&quot;</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  </div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> VarName LastVarName</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="keywordflow">while</span> <a class="code" href="../../df/d43/crtt0matchingalg__icarus_8fcl.html#af8bc618309fb2d0f55f7f5ae0760b466">true</a> ; <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    VarName=<span class="stringliteral">&quot;$(FindFirstVariableName &lt; &quot;</span>$DestFile<span class="stringliteral">&quot;)&quot;</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    [[ $? == 0 ]] || <span class="keywordflow">break</span> # done</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    [[ -<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> <span class="stringliteral">&quot;$VarName&quot;</span> ]] &amp;&amp; <span class="keywordflow">break</span> # done</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="preprocessor">    # avoid infinite loops (from bugs, presumably)</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor"></span>    [[ <span class="stringliteral">&quot;$LastVarName&quot;</span> == <span class="stringliteral">&quot;$VarName&quot;</span> ]] &amp;&amp; <a class="code" href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a> 1 <span class="stringliteral">&quot;Internal error: variable &#39;${VarName}&#39; still present in &#39;${DestFile}&#39; after substitution.&quot;</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    LastVarName=<span class="stringliteral">&quot;$VarName&quot;</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    </div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <a class="code" href="../../d5/d61/make__xml__premcc1_80_8sh.html#a6a381711e6b60dd64d5ecdb1d135c1b8">local</a> Value</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    Value=<span class="stringliteral">&quot;${!VarName}&quot;</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: error evaluating the variable &#39;${VarName}&#39;.&quot;</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    echo <span class="stringliteral">&quot;Replacing: &#39;\${${VarName}}&#39; =&gt; &#39;${Value}&#39;&quot;</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    sed -i -<a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a> <span class="stringliteral">&quot;s@\\$\\{${VarName}\\}@$(EscapeSedReplacementLiteralPattern &quot;</span>$Value<span class="stringliteral">&quot; &#39;@&#39;)@g&quot;</span> <span class="stringliteral">&quot;$DestFile&quot;</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <a class="code" href="../../dc/d35/utilities_8sh.html#a6ac3fc870da1107466a14a9d126ae0c2">LASTFATAL</a> <span class="stringliteral">&quot;ReplaceEnvironmentVariables: error replacing variable &#39;${VarName}&#39; with value &#39;${Value}&#39;.&quot;</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  done</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <span class="keywordflow">return</span> 0</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;} # ReplaceEnvironmentVariables()</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># for test: bash utilities.sh testCommand args</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="preprocessor"></span><span class="keywordflow">if</span> [[ <span class="stringliteral">&quot;${BASH_SOURCE[0]}&quot;</span> == <span class="stringliteral">&quot;$0&quot;</span> ]] &amp;&amp; [[ $# -gt 0 ]]; then</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  echo <span class="stringliteral">&quot;CMD&gt; $*&quot;</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  <span class="stringliteral">&quot;$@&quot;</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keyword">true</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="preprocessor"># ------------------------------------------------------------------------------</span></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_ae40184b0245025a43c56daa3261d5e3c"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a></div><div class="ttdeci">process_name opflash particleana ie ie ie z</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00092">run_opflash_electron.fcl:92</a></div></div>
 <div class="ttc" id="testFHiCLfiles__icarus_8sh_html_ae7f6f0e2404de45f440084bbe98215d9"><div class="ttname"><a href="../../d1/d39/testFHiCLfiles__icarus_8sh.html#ae7f6f0e2404de45f440084bbe98215d9">FATAL</a></div><div class="ttdeci">then echo FATAL</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d39/testFHiCLfiles__icarus_8sh_source.html#l00033">testFHiCLfiles_icarus.sh:33</a></div></div>
 <div class="ttc" id="utilities_8sh_html_a1a4ad1bded5c0e70fa3f511142a50892"><div class="ttname"><a href="../../dc/d35/utilities_8sh.html#a1a4ad1bded5c0e70fa3f511142a50892">isRelativePath</a></div><div class="ttdeci">function isRelativePath()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d35/utilities_8sh_source.html#l00032">utilities.sh:32</a></div></div>

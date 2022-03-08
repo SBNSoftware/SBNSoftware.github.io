@@ -86,27 +86,37 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p>Utilities for the conversion of trigger gate data formats.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../da/d7a/OpticalTriggerGate_8h_source.html">sbnobj/ICARUS/PMT/Trigger/Data/OpticalTriggerGate.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../de/dad/TrackedOpticalTriggerGate_8h_source.html">icaruscode/PMT/Trigger/Utilities/TrackedOpticalTriggerGate.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d0a/DataProductPointerMap_8h_source.html">icaruscode/Utilities/DataProductPointerMap.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/d81/OpDetWaveformMeta_8h_source.html">icaruscode/IcarusObj/OpDetWaveformMeta.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/d7a/OpticalTriggerGate_8h_source.html">sbnobj/ICARUS/PMT/Trigger/Data/OpticalTriggerGate.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d5/d85/enumerate_8h_source.html">larcorealg/CoreUtils/enumerate.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d5/dbc/lardataobj_2lardataobj_2RawData_2OpDetWaveform_8h_source.html">lardataobj/RawData/OpDetWaveform.h</a>&quot;</code><br/>
 <code>#include &quot;art/Persistency/Common/PtrMaker.h&quot;</code><br/>
 <code>#include &quot;canvas/Persistency/Common/Assns.h&quot;</code><br/>
 <code>#include &quot;canvas/Persistency/Common/Ptr.h&quot;</code><br/>
-<code>#include &quot;canvas/Utilities/Exception.h&quot;</code><br/>
+<code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
+<code>#include &quot;cetlib_except/exception.h&quot;</code><br/>
 <code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;tuple&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;stdexcept&gt;</code><br/>
 <code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;type_traits&gt;</code><br/>
 </div>
 <p><a href="../../d9/dd0/TriggerDataUtils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc4/classicarus_1_1trigger_1_1TriggerGateReader.html">icarus::trigger::TriggerGateReader&lt; OpDetInfo &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembles and returns trigger gates from serialized data.  <a href="../../d3/dc4/classicarus_1_1trigger_1_1TriggerGateReader.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html">icarus::trigger::TriggerGateIndex&lt; GateObject &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates each optical detector channel to a gate.  <a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc4/classicarus_1_1trigger_1_1TriggerGateReader.html">icarus::trigger::TriggerGateReader&lt; OpDetInfo &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembles and returns trigger gates from serialized data.  <a href="../../d3/dc4/classicarus_1_1trigger_1_1TriggerGateReader.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -119,6 +129,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8ff10aaae563bd9dbc0791eddd38dd18"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a8ff10aaae563bd9dbc0791eddd38dd18">icarus::trigger::OpDetWaveformDataProductMap_t</a> = <a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c">util::DataProductPointerMap_t</a>&lt; <a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> &gt;</td></tr>
 <tr class="memdesc:a8ff10aaae563bd9dbc0791eddd38dd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map <code><a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c" title="Type of map for data product pointers to art pointers. ">util::DataProductPointerMap_t</a></code> for <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code> objects.  <a href="#a8ff10aaae563bd9dbc0791eddd38dd18">More...</a><br/></td></tr>
 <tr class="separator:a8ff10aaae563bd9dbc0791eddd38dd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ce2de9cbdd80f7e8a615f96f3af605a">icarus::trigger::OpDetWaveformMetaDataProductMap_t</a> = <a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c">util::DataProductPointerMap_t</a>&lt; <a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> &gt;</td></tr>
+<tr class="memdesc:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map <code><a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c" title="Type of map for data product pointers to art pointers. ">util::DataProductPointerMap_t</a></code> for <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> objects.  <a href="#a5ce2de9cbdd80f7e8a615f96f3af605a">More...</a><br/></td></tr>
+<tr class="separator:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -127,21 +140,30 @@ Functions</h2></td></tr>
 &lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5e3e2f0504cab0c10790916793f11381">icarus::trigger::transformIntoOpticalTriggerGate</a> (Gates &amp;&amp;gates)</td></tr>
 <tr class="memdesc:a5e3e2f0504cab0c10790916793f11381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the trigger gates in serializable format.  <a href="#a5e3e2f0504cab0c10790916793f11381">More...</a><br/></td></tr>
 <tr class="separator:a5e3e2f0504cab0c10790916793f11381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9bbdfa0c1b916b19f47bc49f1283a9"><td class="memTemplParams" colspan="2">template&lt;typename Gates &gt; </td></tr>
-<tr class="memitem:a7c9bbdfa0c1b916b19f47bc49f1283a9"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; std::vector<br class="typebreak"/>
+<tr class="memitem:af409e4751a20ddcb4691ff47a87918a5"><td class="memTemplParams" colspan="2">template&lt;typename OpDetInfo  = sbn::OpDetWaveformMeta&gt; </td></tr>
+<tr class="memitem:af409e4751a20ddcb4691ff47a87918a5"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; std::vector<br class="typebreak"/>
 &lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a> &gt;<br class="typebreak"/>
 , art::Assns<br class="typebreak"/>
 &lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>, <br class="typebreak"/>
-<a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7c9bbdfa0c1b916b19f47bc49f1283a9">icarus::trigger::transformIntoOpticalTriggerGate</a> (Gates &amp;&amp;gates, art::PtrMaker&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a> &gt; const &amp;makeGatePtr, OpDetWaveformDataProductMap_t const &amp;opDetWavePtrs)</td></tr>
-<tr class="memdesc:a7c9bbdfa0c1b916b19f47bc49f1283a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the trigger gates in serializable format.  <a href="#a7c9bbdfa0c1b916b19f47bc49f1283a9">More...</a><br/></td></tr>
-<tr class="separator:a7c9bbdfa0c1b916b19f47bc49f1283a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6736024500372ceab639e928601828"><td class="memTemplParams" colspan="2">template&lt;typename GateObject , typename TriggerGateData &gt; </td></tr>
-<tr class="memitem:a7a6736024500372ceab639e928601828"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; GateObject &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7a6736024500372ceab639e928601828">icarus::trigger::FillTriggerGates</a> (std::vector&lt; TriggerGateData &gt; const &amp;gates, art::Assns&lt; TriggerGateData, <a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> &gt; const &amp;gateToWaveforms)</td></tr>
-<tr class="memdesc:a7a6736024500372ceab639e928601828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a gate object out of trigger gate data products.  <a href="#a7a6736024500372ceab639e928601828">More...</a><br/></td></tr>
-<tr class="separator:a7a6736024500372ceab639e928601828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+OpDetInfo &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af409e4751a20ddcb4691ff47a87918a5">icarus::trigger::transformIntoOpticalTriggerGate</a> (std::vector&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7037bc74f4245057c2d1d4c63dd2f8a9">icarus::trigger::TrackedOpticalTriggerGate</a>&lt; OpDetInfo &gt;&gt; &amp;&amp;gates, art::PtrMaker&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a> &gt; const &amp;makeGatePtr, <a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c">util::DataProductPointerMap_t</a>&lt; OpDetInfo &gt; const &amp;opDetInfoPtrs)</td></tr>
+<tr class="memdesc:af409e4751a20ddcb4691ff47a87918a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the trigger gates in serializable format.  <a href="#af409e4751a20ddcb4691ff47a87918a5">More...</a><br/></td></tr>
+<tr class="separator:af409e4751a20ddcb4691ff47a87918a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad698f9a75039e30134185f65943904dd"><td class="memTemplParams" colspan="2">template&lt;typename OpDetInfo &gt; </td></tr>
+<tr class="memitem:ad698f9a75039e30134185f65943904dd"><td class="memTemplItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7037bc74f4245057c2d1d4c63dd2f8a9">icarus::trigger::TrackedOpticalTriggerGate</a><br class="typebreak"/>
+&lt; OpDetInfo &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad698f9a75039e30134185f65943904dd">icarus::trigger::FillTriggerGates</a> (std::vector&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a> &gt; const &amp;gates, art::Assns&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>, OpDetInfo &gt; const &amp;gateToWaveformInfo)</td></tr>
+<tr class="memdesc:ad698f9a75039e30134185f65943904dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a gate object out of trigger gate data products.  <a href="#ad698f9a75039e30134185f65943904dd">More...</a><br/></td></tr>
+<tr class="separator:ad698f9a75039e30134185f65943904dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9edd5a2e2064c7ec0d2eacce5df61a"><td class="memTemplParams" colspan="2">template&lt;typename OpDetInfo  = sbn::OpDetWaveformMeta, typename Event &gt; </td></tr>
+<tr class="memitem:acd9edd5a2e2064c7ec0d2eacce5df61a"><td class="memTemplItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7037bc74f4245057c2d1d4c63dd2f8a9">icarus::trigger::TrackedOpticalTriggerGate</a><br class="typebreak"/>
+&lt; OpDetInfo &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#acd9edd5a2e2064c7ec0d2eacce5df61a">icarus::trigger::ReadTriggerGates</a> (Event const &amp;event, art::InputTag const &amp;dataTag)</td></tr>
+<tr class="memdesc:acd9edd5a2e2064c7ec0d2eacce5df61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembles and returns trigger gates from serialized data.  <a href="#acd9edd5a2e2064c7ec0d2eacce5df61a">More...</a><br/></td></tr>
+<tr class="separator:acd9edd5a2e2064c7ec0d2eacce5df61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utilities for the conversion of trigger gate data formats. </p>
+<dl class="section author"><dt>Author</dt><dd>Gianluca Petrillo (<a href="#" onclick="location.href='mai'+'lto:'+'pet'+'ri'+'llo'+'@s'+'lac'+'.s'+'tan'+'fo'+'rd.'+'ed'+'u'; return false;">petri<span style="display: none;">.nosp@m.</span>llo@<span style="display: none;">.nosp@m.</span>slac.<span style="display: none;">.nosp@m.</span>stan<span style="display: none;">.nosp@m.</span>ford.<span style="display: none;">.nosp@m.</span>edu</a>) </dd></dl>
 
 <p>Definition in file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
 </div></div><!-- contents -->

@@ -422,7 +422,7 @@ The variables that will go into the CosmicDisplay n-tuple.</h2></td></tr>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      }</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>  &lt;&lt; <span class="stringliteral">&quot;Trigger Data product &quot;</span> &lt;&lt; <a class="code" href="../../d7/d7e/classicarus_1_1crt_1_1CRTDataAnalysis.html#af8b4027a1ec046d4cfd4df3491324b31">fTriggerLabel</a>.label() &lt;&lt; <span class="stringliteral">&quot; not found!\n&quot;</span> ;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      mf::LogError(<span class="stringliteral">&quot;CRTDataAnalysis&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Trigger Data product &quot;</span> &lt;&lt; <a class="code" href="../../d7/d7e/classicarus_1_1crt_1_1CRTDataAnalysis.html#af8b4027a1ec046d4cfd4df3491324b31">fTriggerLabel</a>.label() &lt;&lt; <span class="stringliteral">&quot; not found!&quot;</span> ; </div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    art::Handle&lt;vector&lt;icarus::crt::CRTData&gt;&gt; crtDAQHandle;</div>

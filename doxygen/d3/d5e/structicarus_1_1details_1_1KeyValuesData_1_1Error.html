@@ -91,11 +91,15 @@ Inheritance diagram for icarus::details::KeyValuesData::Error:</div>
   <img src="../../d3/d5e/structicarus_1_1details_1_1KeyValuesData_1_1Error.png" usemap="#icarus::details::KeyValuesData::Error_map" alt=""/>
   <map id="icarus::details::KeyValuesData::Error_map" name="icarus::details::KeyValuesData::Error_map">
 <area href="../../d4/dd0/structicarus_1_1details_1_1KeyedCSVparser_1_1ParserError.html" alt="icarus::details::KeyedCSVparser::ParserError" shape="rect" coords="0,168,293,192"/>
-<area href="../../de/dbd/structicarus_1_1details_1_1KeyValuesData_1_1ConversionFailed.html" alt="icarus::details::KeyValuesData::ConversionFailed" shape="rect" coords="303,168,596,192"/>
-<area href="../../d6/d30/structicarus_1_1details_1_1KeyValuesData_1_1DuplicateKey.html" alt="icarus::details::KeyValuesData::DuplicateKey" shape="rect" coords="606,168,899,192"/>
-<area href="../../d4/d4a/structicarus_1_1details_1_1KeyValuesData_1_1ItemNotFound.html" alt="icarus::details::KeyValuesData::ItemNotFound" shape="rect" coords="909,168,1202,192"/>
-<area href="../../df/db9/structicarus_1_1details_1_1KeyValuesData_1_1ValueNotAvailable.html" alt="icarus::details::KeyValuesData::ValueNotAvailable" shape="rect" coords="1212,168,1505,192"/>
+<area href="../../d2/d1c/structicarus_1_1details_1_1KeyValuesData_1_1ErrorOnKey.html" alt="icarus::details::KeyValuesData::ErrorOnKey" shape="rect" coords="303,168,596,192"/>
 <area href="../../d3/de3/structicarus_1_1details_1_1KeyedCSVparser_1_1InvalidFormat.html" alt="icarus::details::KeyedCSVparser::InvalidFormat" shape="rect" coords="0,224,293,248"/>
+<area href="../../d8/dd0/structicarus_1_1details_1_1KeyedCSVparser_1_1MissingValues.html" alt="icarus::details::KeyedCSVparser::MissingValues" shape="rect" coords="606,224,899,248"/>
+<area href="../../de/dbd/structicarus_1_1details_1_1KeyValuesData_1_1ConversionFailed.html" alt="icarus::details::KeyValuesData::ConversionFailed" shape="rect" coords="606,280,899,304"/>
+<area href="../../d6/d30/structicarus_1_1details_1_1KeyValuesData_1_1DuplicateKey.html" alt="icarus::details::KeyValuesData::DuplicateKey" shape="rect" coords="606,336,899,360"/>
+<area href="../../d4/d4a/structicarus_1_1details_1_1KeyValuesData_1_1ItemNotFound.html" alt="icarus::details::KeyValuesData::ItemNotFound" shape="rect" coords="606,392,899,416"/>
+<area href="../../d2/da5/structicarus_1_1details_1_1KeyValuesData_1_1MissingSize.html" alt="icarus::details::KeyValuesData::MissingSize" shape="rect" coords="606,448,899,472"/>
+<area href="../../df/db9/structicarus_1_1details_1_1KeyValuesData_1_1ValueNotAvailable.html" alt="icarus::details::KeyValuesData::ValueNotAvailable" shape="rect" coords="606,504,899,528"/>
+<area href="../../db/d60/structicarus_1_1details_1_1KeyValuesData_1_1WrongSize.html" alt="icarus::details::KeyValuesData::WrongSize" shape="rect" coords="606,560,899,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -106,7 +110,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00171">171</a> of file <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html">KeyedCSVparser.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00552">552</a> of file <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html">KeyedCSVparser.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a14fcbba933ad12448bc05ba95a070903"></a>
 <div class="memitem">
@@ -130,8 +134,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00173">173</a> of file <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html">KeyedCSVparser.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;: std::runtime_error(std::move(<a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#a25a3f236e071521c1ae6d2efe0ebe688">msg</a>)) {}</div>
+<p>Definition at line <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00554">554</a> of file <a class="el" href="../../d8/d6f/KeyedCSVparser_8h_source.html">KeyedCSVparser.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;: std::runtime_error(std::move(<a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#a25a3f236e071521c1ae6d2efe0ebe688">msg</a>)) {}</div>
 <div class="ttc" id="namespacesortDataLoggerFiles_html_a25a3f236e071521c1ae6d2efe0ebe688"><div class="ttname"><a href="../../d3/d46/namespacesortDataLoggerFiles.html#a25a3f236e071521c1ae6d2efe0ebe688">sortDataLoggerFiles.msg</a></div><div class="ttdeci">string msg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00436">sortDataLoggerFiles.py:436</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -606,11 +606,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01619">1619</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;{</div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;    <span class="comment">// Sort by &quot;modified start time&quot; of pulse</span></div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;    <span class="keywordflow">return</span> left-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>()-&gt;<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>() &lt; right-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>()-&gt;<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>();</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01707">1707</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;{</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;    <span class="comment">// Sort by &quot;modified start time&quot; of pulse</span></div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;    <span class="keywordflow">return</span> left-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>()-&gt;<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>() &lt; right-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>()-&gt;<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>();</div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;}</div>
 <div class="ttc" id="classreco_1_1ClusterHit2D_html_aff6811c0027819262adcd9497d6141d7"><div class="ttname"><a href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">reco::ClusterHit2D::getHit</a></div><div class="ttdeci">const recob::Hit * getHit() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/daa/Cluster3D_8h_source.html#l00078">Cluster3D.h:78</a></div></div>
 <div class="ttc" id="classrecob_1_1Hit_html_a46ddaf21b6eec49d205220f7daf3a85c"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">recob::Hit::PeakTime</a></div><div class="ttdeci">float PeakTime() const </div><div class="ttdoc">Time of the signal peak, in tick units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00218">Hit.h:218</a></div></div>
 </div><!-- fragment -->
@@ -640,11 +640,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00574">574</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;{</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="comment">// Sort by &quot;modified start time&quot; of pulse</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordflow">return</span> left.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#ad664c71dd06e6a26eb8947397ec49102">getAvePeakTime</a>() - left.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#a4da91427a164e2fab0461c8d31e18d58">getSigmaPeakTime</a>() &lt; right.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#ad664c71dd06e6a26eb8947397ec49102">getAvePeakTime</a>() - right.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#a4da91427a164e2fab0461c8d31e18d58">getSigmaPeakTime</a>();</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00609">609</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;{</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="comment">// Sort by &quot;modified start time&quot; of pulse</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <span class="keywordflow">return</span> left.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#ad664c71dd06e6a26eb8947397ec49102">getAvePeakTime</a>() - left.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#a4da91427a164e2fab0461c8d31e18d58">getSigmaPeakTime</a>() &lt; right.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#ad664c71dd06e6a26eb8947397ec49102">getAvePeakTime</a>() - right.<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html#a4da91427a164e2fab0461c8d31e18d58">getSigmaPeakTime</a>();</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;}</div>
 <div class="ttc" id="classreco_1_1ClusterHit3D_html_a4da91427a164e2fab0461c8d31e18d58"><div class="ttname"><a href="../../df/d06/classreco_1_1ClusterHit3D.html#a4da91427a164e2fab0461c8d31e18d58">reco::ClusterHit3D::getSigmaPeakTime</a></div><div class="ttdeci">float getSigmaPeakTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/daa/Cluster3D_8h_source.html#l00165">Cluster3D.h:165</a></div></div>
 <div class="ttc" id="classreco_1_1ClusterHit3D_html_ad664c71dd06e6a26eb8947397ec49102"><div class="ttname"><a href="../../df/d06/classreco_1_1ClusterHit3D.html#ad664c71dd06e6a26eb8947397ec49102">reco::ClusterHit3D::getAvePeakTime</a></div><div class="ttdeci">float getAvePeakTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/daa/Cluster3D_8h_source.html#l00163">Cluster3D.h:163</a></div></div>
 </div><!-- fragment -->
@@ -674,10 +674,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00456">456</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;{</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">return</span> (*left).getAvePeakTime() &lt; (*right).getAvePeakTime();</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00468">468</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;{</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keywordflow">return</span> (*left).getAvePeakTime() &lt; (*right).getAvePeakTime();</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

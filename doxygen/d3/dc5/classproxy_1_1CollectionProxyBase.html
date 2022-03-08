@@ -707,7 +707,7 @@ template&lt;typename Tag , typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d3/dc5/classproxy_1_1CollectionProxyBase.html#a906a6bda273b8bb5ddd2b4316721cde0" title="Returns the associated data proxy specified by AuxTag. ">get()</a>, <a class="el" href="../../d3/dc5/classproxy_1_1CollectionProxyBase.html#a0af946ba0dea88aaeec1aacce48bd451" title="Returns whether this class knowns about the specified type (Tag). ">has()</a></dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>C++17 <code>if constexpr</code> should be used instead (see the example below)</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>C++17 <code>if constexpr</code> should be used instead (see the example below)</dd></dl>
 <p>This method is a <code><a class="el" href="../../d3/dc5/classproxy_1_1CollectionProxyBase.html#a906a6bda273b8bb5ddd2b4316721cde0" title="Returns the associated data proxy specified by AuxTag. ">get()</a></code> which forgives when the requested type is not available (because this proxy was configured not to hold it).</p>
 <p>The difference with <code><a class="el" href="../../d3/dc5/classproxy_1_1CollectionProxyBase.html#a906a6bda273b8bb5ddd2b4316721cde0" title="Returns the associated data proxy specified by AuxTag. ">get()</a></code> is the following: </p>
 <div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="../../d2/dbd/trackfinderalgorithms_8fcl.html#a5204d4188eee282d2235cd231d828bd2">tracks</a>.has&lt;<a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a>&gt;()) {</div>
@@ -729,7 +729,7 @@ template&lt;typename Tag , typename T &gt; </div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>If the wrapped data product is something different than a vector of space points (which in the example is likely, if space points are associated to tracks), the almost-correct type of return value needs to be specified as second template parameter <code>T</code>.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This functionality is not trivial to use! It's mostly meant for implementation of higher level wrappers.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Use C++17 constexpr if instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Use C++17 constexpr if instead. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d4/de6/CollectionProxy_8h_source.html#l00413">413</a> of file <a class="el" href="../../d4/de6/CollectionProxy_8h_source.html">CollectionProxy.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    { <span class="keywordflow">return</span> getIfHas&lt;Tag, T&gt;(std::bool_constant&lt;has&lt;Tag&gt;()&gt;{}); }</div>

@@ -90,8 +90,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;optional&gt;</code><br/>
+<code>#include &lt;regex&gt;</code><br/>
+<code>#include &lt;initializer_list&gt;</code><br/>
 <code>#include &lt;stdexcept&gt;</code><br/>
 <code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;limits&gt;</code><br/>
+<code>#include &lt;type_traits&gt;</code><br/>
 <code>#include &lt;charconv&gt;</code><br/>
 <code>#include &lt;cstddef&gt;</code><br/>
 </div>
@@ -100,14 +104,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/daf/structicarus_1_1details_1_1KeyValuesData.html">icarus::details::KeyValuesData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of key/values items.  <a href="../../d1/daf/structicarus_1_1details_1_1KeyValuesData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1f/structicarus_1_1details_1_1KeyValuesData_1_1Item.html">icarus::details::KeyValuesData::Item</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a single item of data: a key and several values.  <a href="../../dd/d1f/structicarus_1_1details_1_1KeyValuesData_1_1Item.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/structicarus_1_1details_1_1KeyValuesData_1_1Item_1_1StringConverter.html">icarus::details::KeyValuesData::Item::StringConverter&lt; T, typename &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converter class for interpreting strings as type <code>T</code>.  <a href="../../d8/da6/structicarus_1_1details_1_1KeyValuesData_1_1Item_1_1StringConverter.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html">icarus::details::KeyedCSVparser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser to fill a <code><a class="el" href="../../d1/daf/structicarus_1_1details_1_1KeyValuesData.html">KeyValuesData</a></code> structure out of a character buffer.  <a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser to fill a <code><a class="el" href="../../d1/daf/structicarus_1_1details_1_1KeyValuesData.html" title="A set of key/values items. ">KeyValuesData</a></code> structure out of a character buffer.  <a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5e/structicarus_1_1details_1_1KeyValuesData_1_1Error.html">icarus::details::KeyValuesData::Error</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1c/structicarus_1_1details_1_1KeyValuesData_1_1ErrorOnKey.html">icarus::details::KeyValuesData::ErrorOnKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d30/structicarus_1_1details_1_1KeyValuesData_1_1DuplicateKey.html">icarus::details::KeyValuesData::DuplicateKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,9 +127,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/structicarus_1_1details_1_1KeyValuesData_1_1ValueNotAvailable.html">icarus::details::KeyValuesData::ValueNotAvailable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da5/structicarus_1_1details_1_1KeyValuesData_1_1MissingSize.html">icarus::details::KeyValuesData::MissingSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/structicarus_1_1details_1_1KeyValuesData_1_1WrongSize.html">icarus::details::KeyValuesData::WrongSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd0/structicarus_1_1details_1_1KeyedCSVparser_1_1ParserError.html">icarus::details::KeyedCSVparser::ParserError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de3/structicarus_1_1details_1_1KeyedCSVparser_1_1InvalidFormat.html">icarus::details::KeyedCSVparser::InvalidFormat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd0/structicarus_1_1details_1_1KeyedCSVparser_1_1MissingValues.html">icarus::details::KeyedCSVparser::MissingValues</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

@@ -140,13 +140,13 @@ class icarus::trigger::TriggerGateIndex&lt; GateObject &gt;</h3>
 
 <p>Associates each optical detector channel to a gate. </p>
 
-<p>Definition at line <a class="el" href="../../d2/d51/SlidingWindowCombinerAlg_8h_source.html#l00036">36</a> of file <a class="el" href="../../d2/d51/SlidingWindowCombinerAlg_8h_source.html">SlidingWindowCombinerAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/d51/SlidingWindowCombinerAlg_8h_source.html#l00037">37</a> of file <a class="el" href="../../d2/d51/SlidingWindowCombinerAlg_8h_source.html">SlidingWindowCombinerAlg.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a71958151710dade17e9c6c272e8486cc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GateObject&gt; </div>
+template&lt;typename GateObject &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html">icarus::trigger::TriggerGateIndex</a>&lt; GateObject &gt;::<a class="el" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a71958151710dade17e9c6c272e8486cc">TriggerGate_t</a> =  GateObject</td>
@@ -156,7 +156,7 @@ template&lt;typename GateObject&gt; </div>
 
 <p>Type of gate the index lists. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00324">324</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00330">330</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
 
 </div>
 </div>
@@ -178,11 +178,11 @@ template&lt;typename GateObject &gt; </div>
 </div><div class="memdoc">
 <p>Constructs an empty index expecting to be filled by <code>expectedChannels</code> registered channels. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00529">529</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;{</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <span class="keywordflow">if</span> (expectedChannels &gt; 0) <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.reserve(expectedChannels);</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::TriggerGateIndex(size_t)</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">TriggerDataUtils.h:351</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00663">663</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;{</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <span class="keywordflow">if</span> (expectedChannels &gt; 0) <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.reserve(expectedChannels);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::TriggerGateIndex(size_t)</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">TriggerDataUtils.h:357</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -204,12 +204,12 @@ template&lt;typename GateObject &gt; </div>
 
 <p>Initializes the index from all the <code>gates</code> in the specified collection. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00537">537</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;{</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a71958151710dade17e9c6c272e8486cc">TriggerGate_t</a> <span class="keyword">const</span>&amp; gate: gates) <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ba6ca3e810bcd943fb542207b92c84f">add</a>(gate);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::TriggerGateIndex(gates)</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a71958151710dade17e9c6c272e8486cc"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a71958151710dade17e9c6c272e8486cc">icarus::trigger::TriggerGateIndex::TriggerGate_t</a></div><div class="ttdeci">GateObject TriggerGate_t</div><div class="ttdoc">Type of gate the index lists. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00324">TriggerDataUtils.h:324</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a9ba6ca3e810bcd943fb542207b92c84f"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ba6ca3e810bcd943fb542207b92c84f">icarus::trigger::TriggerGateIndex::add</a></div><div class="ttdeci">void add(TriggerGate_t const &amp;gate)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00546">TriggerDataUtils.h:546</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00671">671</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;{</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a71958151710dade17e9c6c272e8486cc">TriggerGate_t</a> <span class="keyword">const</span>&amp; gate: gates) <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ba6ca3e810bcd943fb542207b92c84f">add</a>(gate);</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::TriggerGateIndex(gates)</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a71958151710dade17e9c6c272e8486cc"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a71958151710dade17e9c6c272e8486cc">icarus::trigger::TriggerGateIndex::TriggerGate_t</a></div><div class="ttdeci">GateObject TriggerGate_t</div><div class="ttdoc">Type of gate the index lists. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00330">TriggerDataUtils.h:330</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a9ba6ca3e810bcd943fb542207b92c84f"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ba6ca3e810bcd943fb542207b92c84f">icarus::trigger::TriggerGateIndex::add</a></div><div class="ttdeci">void add(TriggerGate_t const &amp;gate)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00680">TriggerDataUtils.h:680</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,25 +237,25 @@ template&lt;typename GateObject &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00546">546</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;{</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">raw::Channel_t</a> <span class="keyword">const</span> channel: gate.channels()) {</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> chIndex = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(channel);</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#ad846422bb0a617a32f9d40300800f07d">expandToHold</a>(chIndex) || !<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex]) {</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;      <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex] = &amp;gate;</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    }</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex] != &amp;gate) {</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;TriggerGateIndex&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;TriggerGateIndex::add(): &quot;</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;A gate was already present for channel &quot;</span> &lt;&lt; channel &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span>;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    }</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::add()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">TriggerDataUtils.h:351</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_ad846422bb0a617a32f9d40300800f07d"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#ad846422bb0a617a32f9d40300800f07d">icarus::trigger::TriggerGateIndex::expandToHold</a></div><div class="ttdeci">bool expandToHold(std::size_t chIndex)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00595">TriggerDataUtils.h:595</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00680">680</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;{</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">raw::Channel_t</a> <span class="keyword">const</span> channel: gate.channels()) {</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> chIndex = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(channel);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#ad846422bb0a617a32f9d40300800f07d">expandToHold</a>(chIndex) || !<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex]) {</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;      <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex] = &amp;gate;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    }</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex] != &amp;gate) {</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;TriggerGateIndex&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;TriggerGateIndex::add(): &quot;</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;A gate was already present for channel &quot;</span> &lt;&lt; channel &lt;&lt; <span class="stringliteral">&quot;.\n&quot;</span>;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  } <span class="comment">// for</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::add()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">TriggerDataUtils.h:357</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_ad846422bb0a617a32f9d40300800f07d"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#ad846422bb0a617a32f9d40300800f07d">icarus::trigger::TriggerGateIndex::expandToHold</a></div><div class="ttdeci">bool expandToHold(std::size_t chIndex)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00729">TriggerDataUtils.h:729</a></div></div>
 <div class="ttc" id="namespaceraw_html_ab3db8feaa51f2c564eb00582c3d72590"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">raw::Channel_t</a></div><div class="ttdeci">unsigned int Channel_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbc/lardataobj_2lardataobj_2RawData_2OpDetWaveform_8h_source.html#l00022">lardataobj/lardataobj/RawData/OpDetWaveform.h:22</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -286,8 +286,8 @@ template&lt;typename GateObject &gt; </div>
 
 <p>Converts a channel number into an index. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00609">609</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(channel); }</div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00743">743</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;  { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(channel); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,16 +317,16 @@ template&lt;typename GateObject &gt; </div>
 <p>Extends internal map with <code>nullptr</code> to hold at least <code>chIndex</code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>whether an extension was performed </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00595">595</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;{</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">if</span> (chIndex &lt; <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.resize(chIndex + 1U, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::expandToHold()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">TriggerDataUtils.h:351</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00729">729</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;{</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;  <span class="keywordflow">if</span> (chIndex &lt; <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.resize(chIndex + 1U, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::expandToHold()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">TriggerDataUtils.h:357</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -348,14 +348,14 @@ template&lt;typename GateObject &gt; </div>
 
 <p>Returns the gate corresponding to the specified <code>channel</code>. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00574">574</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;{</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> chIndex = <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#af7914e2bfe5e16d7a4fdd8bcf9d85cf5">channelIndex</a>(channel);</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="keywordflow">return</span> (chIndex &lt; <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ea229af9d3db1be97009338a524e791">nChannels</a>())? <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex]: <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::find()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_af7914e2bfe5e16d7a4fdd8bcf9d85cf5"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#af7914e2bfe5e16d7a4fdd8bcf9d85cf5">icarus::trigger::TriggerGateIndex::channelIndex</a></div><div class="ttdeci">static std::size_t channelIndex(raw::Channel_t channel)</div><div class="ttdoc">Converts a channel number into an index. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00609">TriggerDataUtils.h:609</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">TriggerDataUtils.h:351</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a9ea229af9d3db1be97009338a524e791"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ea229af9d3db1be97009338a524e791">icarus::trigger::TriggerGateIndex::nChannels</a></div><div class="ttdeci">unsigned int nChannels() const </div><div class="ttdoc">Returns the total number of registered channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00567">TriggerDataUtils.h:567</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00708">708</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;{</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> chIndex = <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#af7914e2bfe5e16d7a4fdd8bcf9d85cf5">channelIndex</a>(channel);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <span class="keywordflow">return</span> (chIndex &lt; <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ea229af9d3db1be97009338a524e791">nChannels</a>())? <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>[chIndex]: <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::find()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_af7914e2bfe5e16d7a4fdd8bcf9d85cf5"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#af7914e2bfe5e16d7a4fdd8bcf9d85cf5">icarus::trigger::TriggerGateIndex::channelIndex</a></div><div class="ttdeci">static std::size_t channelIndex(raw::Channel_t channel)</div><div class="ttdoc">Converts a channel number into an index. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00743">TriggerDataUtils.h:743</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">TriggerDataUtils.h:357</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a9ea229af9d3db1be97009338a524e791"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a9ea229af9d3db1be97009338a524e791">icarus::trigger::TriggerGateIndex::nChannels</a></div><div class="ttdeci">unsigned int nChannels() const </div><div class="ttdoc">Returns the total number of registered channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00701">TriggerDataUtils.h:701</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -376,9 +376,9 @@ template&lt;typename GateObject &gt; </div>
 
 <p>Returns the total number of registered channels. </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00567">567</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.size()); }</div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">TriggerDataUtils.h:351</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00701">701</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">fGates</a>.size()); }</div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a547e4e5d5225e902199cbd7c4487d071"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a547e4e5d5225e902199cbd7c4487d071">icarus::trigger::TriggerGateIndex::fGates</a></div><div class="ttdeci">std::vector&lt; TriggerGate_t const * &gt; fGates</div><div class="ttdoc">Index of gates by channel number (the same gate may appear many times). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">TriggerDataUtils.h:357</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,13 +405,13 @@ template&lt;typename GateObject &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00584">584</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;{</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> gate = <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a2f1e7e2547de1fd46c192f82f5367111">find</a>(channel);</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <span class="keywordflow">if</span> (gate) <span class="keywordflow">return</span> *gate;</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  <span class="keywordflow">throw</span> std::out_of_range(<a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">std::to_string</a>(channel));</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::operator[]()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a2f1e7e2547de1fd46c192f82f5367111"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a2f1e7e2547de1fd46c192f82f5367111">icarus::trigger::TriggerGateIndex::find</a></div><div class="ttdeci">TriggerGate_t const * find(raw::Channel_t const channel) const </div><div class="ttdoc">Returns the gate corresponding to the specified channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00574">TriggerDataUtils.h:574</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00718">718</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;{</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> gate = <a class="code" href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a2f1e7e2547de1fd46c192f82f5367111">find</a>(channel);</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="keywordflow">if</span> (gate) <span class="keywordflow">return</span> *gate;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <span class="keywordflow">throw</span> std::out_of_range(<a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">std::to_string</a>(channel));</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;} <span class="comment">// icarus::trigger::TriggerGateIndex::operator[]()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateIndex_html_a2f1e7e2547de1fd46c192f82f5367111"><div class="ttname"><a href="../../d2/d5d/classicarus_1_1trigger_1_1TriggerGateIndex.html#a2f1e7e2547de1fd46c192f82f5367111">icarus::trigger::TriggerGateIndex::find</a></div><div class="ttdeci">TriggerGate_t const * find(raw::Channel_t const channel) const </div><div class="ttdoc">Returns the gate corresponding to the specified channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00708">TriggerDataUtils.h:708</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a7718dbf2e5e4aa346e7fbabaa451457f"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">icarus::trigger::to_string</a></div><div class="ttdeci">std::string to_string(WindowPattern const &amp;pattern)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d48/WindowPattern_8h_source.html#l00102">WindowPattern.h:102</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -421,7 +421,7 @@ template&lt;typename GateObject &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GateObject&gt; </div>
+template&lt;typename GateObject &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -439,7 +439,7 @@ template&lt;typename GateObject&gt; </div>
 
 <p>Index of gates by channel number (the same gate may appear many times). </p>
 
-<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00351">351</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00357">357</a> of file <a class="el" href="../../d9/dd0/TriggerDataUtils_8h_source.html">TriggerDataUtils.h</a>.</p>
 
 </div>
 </div>

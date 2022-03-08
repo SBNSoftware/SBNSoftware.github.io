@@ -262,8 +262,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dd/d85/NumuSelection_8cxx_source.html#l00065">65</a> of file <a class="el" href="../../dd/d85/NumuSelection_8cxx_source.html">NumuSelection.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> std::max_element(boxes.begin(), boxes.end(), [dim](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.Max()[dim] &lt; rhs.Max()[dim]; })-&gt;Max()[dim];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> std::max_element(boxes.begin(), boxes.end(), [dim](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.Max()[dim] &lt; rhs.Max()[dim]; })-&gt;<a class="code" href="../../df/d0b/namespaceicarus_1_1trigger_1_1GateOps.html#a5f911d3e5680fd441ece928befad808a">Max</a>()[dim];</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_1_1trigger_1_1GateOps_html_a5f911d3e5680fd441ece928befad808a"><div class="ttname"><a href="../../df/d0b/namespaceicarus_1_1trigger_1_1GateOps.html#a5f911d3e5680fd441ece928befad808a">icarus::trigger::GateOps::Max</a></div><div class="ttdeci">constexpr auto Max</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2f/TriggerGateOperations_8h_source.html#l00387">TriggerGateOperations.h:387</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,8 +294,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dd/d85/NumuSelection_8cxx_source.html#l00061">61</a> of file <a class="el" href="../../dd/d85/NumuSelection_8cxx_source.html">NumuSelection.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> std::min_element(boxes.begin(), boxes.end(), [dim](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.Min()[dim] &lt; rhs.Min()[dim]; })-&gt;Min()[dim];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> std::min_element(boxes.begin(), boxes.end(), [dim](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.Min()[dim] &lt; rhs.Min()[dim]; })-&gt;<a class="code" href="../../df/d0b/namespaceicarus_1_1trigger_1_1GateOps.html#af6976026c4298dddd07dc7db743a0e94">Min</a>()[dim];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_1_1trigger_1_1GateOps_html_af6976026c4298dddd07dc7db743a0e94"><div class="ttname"><a href="../../df/d0b/namespaceicarus_1_1trigger_1_1GateOps.html#af6976026c4298dddd07dc7db743a0e94">icarus::trigger::GateOps::Min</a></div><div class="ttdeci">constexpr auto Min</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d2f/TriggerGateOperations_8h_source.html#l00385">TriggerGateOperations.h:385</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

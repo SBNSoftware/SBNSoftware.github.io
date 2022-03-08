@@ -150,36 +150,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.BackTrackerService:        @local::standard_backtrackerservice</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.ParticleInventoryService:  @local::standard_particleinventoryservice</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.mcassociationsGausCryoE.HitParticleAssociations.HitModuleLabelVec: [<span class="stringliteral">&quot;cluster3DCryoE&quot;</span>]</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.mcassociationsGausCryoW.HitParticleAssociations.HitModuleLabelVec: [<span class="stringliteral">&quot;cluster3DCryoW&quot;</span>]</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.message.destinations :</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  STDCOUT:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;     <a class="code" href="../../d9/da0/structtype.html">type</a>:      <span class="stringliteral">&quot;cout&quot;</span>      #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service to <a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#a6e6fc5a1833d744f7bd6bde59dd95323">output</a> <span class="keyword">this</span> destination to <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;     threshold: <span class="stringliteral">&quot;DEBUG&quot;</span>     #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service that <span class="keyword">this</span> destination applies to WARNING <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> higher level messages</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;     categories:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;       Cluster3D:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;       {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;         limit: -1</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;         reportEvery: 1</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;       }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;       PMAlgTracker:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;       {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;         limit: -1</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;         reportEvery: 1</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;       }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;       <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;       {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;         limit: 0  #don<span class="stringliteral">&#39;t print anything at the infomsg level except the explicitly named categories</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral">         reportEvery: 0</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral">       }</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral">     }</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">  }</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral">}</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"># Use this to take out the interplane offsets that are put in during the G4 stage</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.cluster3DCryoE.Hit3DBuilderAlg.UseT0Offsets: <span class="keyword">true</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.cluster3DCryoW.Hit3DBuilderAlg.UseT0Offsets: <span class="keyword">true</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.mcassociationsGausCryoE.HitParticleAssociations.HitModuleLabelVec: [<span class="stringliteral">&quot;cluster3DCryoE&quot;</span>]</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.producers.mcassociationsGausCryoW.HitParticleAssociations.HitModuleLabelVec: [<span class="stringliteral">&quot;cluster3DCryoW&quot;</span>]</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.message.destinations :</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  STDCOUT:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;     <a class="code" href="../../d9/da0/structtype.html">type</a>:      <span class="stringliteral">&quot;cout&quot;</span>      #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service to <a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#a6e6fc5a1833d744f7bd6bde59dd95323">output</a> <span class="keyword">this</span> destination to <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;     threshold: <span class="stringliteral">&quot;DEBUG&quot;</span>     #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service that <span class="keyword">this</span> destination applies to WARNING <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> higher level messages</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     categories:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;       Cluster3D:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;       {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;         limit: -1</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;         reportEvery: 1</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;       }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;       PMAlgTracker:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;       {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;         limit: -1</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;         reportEvery: 1</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;       }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;       <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;       {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;         limit: 0  #don<span class="stringliteral">&#39;t print anything at the infomsg level except the explicitly named categories</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral">         reportEvery: 0</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">       }</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral">     }</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">  }</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral"></span></div>
 <div class="ttc" id="icarus__opana__modules_8fcl_html_a932088cc476dd55a54d83c53120b3cad"><div class="ttname"><a href="../../dd/d2b/icarus__opana__modules_8fcl.html#a932088cc476dd55a54d83c53120b3cad">ICARUSCheatOpFlashTPC1</a></div><div class="ttdeci">BEGIN_PROLOG ICARUSCheatOpFlashTPC1</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2b/icarus__opana__modules_8fcl_source.html#l00038">icarus_opana_modules.fcl:38</a></div></div>
 <div class="ttc" id="run__icarus__flashfinder_8fcl_html_acb6c20654c148fe838d7915c7ebedcfb"><div class="ttname"><a href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a></div><div class="ttdeci">process_name drop raw::OpDetWaveforms_DataApr2016RecoStage1_saturation_ * physics</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/run__icarus__flashfinder_8fcl_source.html#l00052">run_icarus_flashfinder.fcl:52</a></div></div>
 <div class="ttc" id="cafmakerjob__icarus__sce_8fcl_html_add41635ddcf6b5ea618a8983bbb716f4"><div class="ttname"><a href="../../d1/d59/cafmakerjob__icarus__sce_8fcl.html#add41635ddcf6b5ea618a8983bbb716f4">EnableCalEfieldSCE</a></div><div class="ttdeci">services SpaceChargeService EnableCalEfieldSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d59/cafmakerjob__icarus__sce_8fcl_source.html#l00013">cafmakerjob_icarus_sce.fcl:13</a></div></div>

@@ -106,6 +106,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d95/classsbn_1_1DumpPMTconfiguration.html">DumpPMTconfiguration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps on console the content of <code><a class="el" href="../../d4/d46/structsbn_1_1PMTconfiguration.html" title="Class containing configuration for PMT readout. ">sbn::PMTconfiguration</a></code> data product.  <a href="../../d2/d95/classsbn_1_1DumpPMTconfiguration.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">OpDetWaveformMeta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative information from <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code> data.  <a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">OpDetWaveformMetaMaker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converter from <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code> into <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code>.  <a href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4a/classsbn_1_1DuplicateEventTracker.html">DuplicateEventTracker</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps track of duplicate events in the job.  <a href="../../de/d4a/classsbn_1_1DuplicateEventTracker.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,6 +322,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f2d5681859445bf9b9962f792683242"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d67/namespacesbn.html#a8f2d5681859445bf9b9962f792683242">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="../../df/d9c/structsbn_1_1V1730Configuration.html">sbn::V1730Configuration</a> const &amp;config)</td></tr>
 <tr class="memdesc:a8f2d5681859445bf9b9962f792683242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the configuration into a stream with default verbosity.  <a href="#a8f2d5681859445bf9b9962f792683242">More...</a><br/></td></tr>
 <tr class="separator:a8f2d5681859445bf9b9962f792683242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Creation of `sbn::OpDetWaveformMeta` from `raw::OpDetWaveform`</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>The creation of summary objects <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> from optical detector waveforms is possible with two options:</p>
+<ul>
+<li>one shot: call to convert a single waveform (<code><a class="el" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25" title="Creates a sbn::OpDetWaveformMeta out of a raw::OpDetWaveform. ">makeOpDetWaveformMeta()</a></code>);</li>
+<li>bulk: converter object reused for multiple conversions (<code><a class="el" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html" title="Converter from raw::OpDetWaveform into sbn::OpDetWaveformMeta. ">sbn::OpDetWaveformMetaMaker</a></code>).</li>
+</ul>
+<p>For usage examples, see their respective documentation. </p>
+</div></td></tr>
+<tr class="memitem:a96a78b71c5fd60a64d1ca7470e135b25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">OpDetWaveformMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">makeOpDetWaveformMeta</a> (<a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> const &amp;waveform, <a class="el" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> const &amp;<a class="el" href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a>)</td></tr>
+<tr class="memdesc:a96a78b71c5fd60a64d1ca7470e135b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> out of a <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code>.  <a href="#a96a78b71c5fd60a64d1ca7470e135b25">More...</a><br/></td></tr>
+<tr class="separator:a96a78b71c5fd60a64d1ca7470e135b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00106bf158274ab5b9f613d990c7beb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">OpDetWaveformMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d67/namespacesbn.html#a00106bf158274ab5b9f613d990c7beb8">makeOpDetWaveformMeta</a> (<a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> const &amp;waveform, <a class="el" href="../../d9/d1a/namespaceutil_1_1quantities_1_1intervals.html#a07912d3786fd25377de6216b0c77b532">util::quantities::intervals::microseconds</a> opDetTickPeriod)</td></tr>
+<tr class="memdesc:a00106bf158274ab5b9f613d990c7beb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> out of a <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code>.  <a href="#a00106bf158274ab5b9f613d990c7beb8">More...</a><br/></td></tr>
+<tr class="separator:a00106bf158274ab5b9f613d990c7beb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Set of values to identify a beam. </p>
@@ -699,6 +719,143 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a96a78b71c5fd60a64d1ca7470e135b25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> sbn::makeOpDetWaveformMeta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> const &amp;&#160;</td>
+          <td class="paramname"><em>waveform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> const &amp;&#160;</td>
+          <td class="paramname"><em>detTimings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> out of a <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">waveform</td><td>the input waveform </td></tr>
+    <tr><td class="paramname">detTimings</td><td>timing service provider </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> object with the summary information</dd></dl>
+<p>Returns a new summary object extracted from the <code>waveform</code>.</p>
+<p>The timing information is used to determine whether the global trigger and beam times are included.</p>
+<p>Example: </p>
+<div class="fragment"><div class="line"><a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> <span class="keyword">const</span> <a class="code" href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a> = <a class="code" href="../../d7/d8a/namespacedetinfo.html#a2ef927ca9aaa32d366a9a0d26e7e14e7">detinfo::makeDetectorTimings</a></div>
+<div class="line">  (art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(event));</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a> = <a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">sbn::makeOpDetWaveformMeta</a>(waveform, detTimings);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="../../dd/dd6/OpDetWaveformMetaUtils_8cxx_source.html#l00083">83</a> of file <a class="el" href="../../dd/dd6/OpDetWaveformMetaUtils_8cxx_source.html">OpDetWaveformMetaUtils.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a>{ <a class="code" href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a> }.make(waveform);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="ttc" id="classsbn_1_1OpDetWaveformMetaMaker_html"><div class="ttname"><a href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a></div><div class="ttdoc">Converter from raw::OpDetWaveform into sbn::OpDetWaveformMeta. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dee/OpDetWaveformMetaUtils_8h_source.html#l00123">OpDetWaveformMetaUtils.h:123</a></div></div>
+<div class="ttc" id="ExtractEnergyDepositionSummary__module_8cc_html_ac977879c6351c98d7eb034f13e4758a6"><div class="ttname"><a href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a></div><div class="ttdeci">fDetProps &amp;fDetProps fDetProps &amp;fDetProps detTimings</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc_source.html#l00301">ExtractEnergyDepositionSummary_module.cc:301</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a00106bf158274ab5b9f613d990c7beb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> sbn::makeOpDetWaveformMeta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a> const &amp;&#160;</td>
+          <td class="paramname"><em>waveform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d1a/namespaceutil_1_1quantities_1_1intervals.html#a07912d3786fd25377de6216b0c77b532">util::quantities::intervals::microseconds</a>&#160;</td>
+          <td class="paramname"><em>opDetTickPeriod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> out of a <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">waveform</td><td>the input waveform </td></tr>
+    <tr><td class="paramname">opDetTickPeriod</td><td>period of the optical detector digitizer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> object with the summary information</dd></dl>
+<p>Returns a new summary object extracted from the <code>waveform</code>.</p>
+<p>Information requiring timing is not saved.</p>
+<p>Example: </p>
+<div class="fragment"><div class="line"><a class="code" href="../../d2/dc6/structutil_1_1quantities_1_1concepts_1_1Interval.html">util::quantities::intervals::nanoseconds</a> <span class="keyword">const</span> opDetPeriod { 2.0 };</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a> = <a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">sbn::makeOpDetWaveformMeta</a>(waveform, opDetPeriod);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="../../dd/dd6/OpDetWaveformMetaUtils_8cxx_source.html#l00091">91</a> of file <a class="el" href="../../dd/dd6/OpDetWaveformMetaUtils_8cxx_source.html">OpDetWaveformMetaUtils.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a>{ opDetTickPeriod }.make(waveform);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="ttc" id="classsbn_1_1OpDetWaveformMetaMaker_html"><div class="ttname"><a href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a></div><div class="ttdoc">Converter from raw::OpDetWaveform into sbn::OpDetWaveformMeta. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dee/OpDetWaveformMetaUtils_8h_source.html#l00123">OpDetWaveformMetaUtils.h:123</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a94c55039c91d5784e20f7abf5e4496e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; sbn::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d66/structsbn_1_1V1730channelConfiguration.html">sbn::V1730channelConfiguration</a> const &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prints the configuration into a stream with default verbosity. </p>
+
+<p>Definition at line <a class="el" href="../../d2/d0e/V1730channelConfiguration_8h_source.html#l00191">191</a> of file <a class="el" href="../../d2/d0e/V1730channelConfiguration_8h_source.html">V1730channelConfiguration.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  { config.dump(out); <span class="keywordflow">return</span> out; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a8f2d5681859445bf9b9962f792683242"></a>
 <div class="memitem">
 <div class="memproto">
@@ -774,45 +931,6 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../de/d9b/PMTconfiguration_8h_source.html#l00150">150</a> of file <a class="el" href="../../de/d9b/PMTconfiguration_8h_source.html">PMTconfiguration.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  { config.dump(out); <span class="keywordflow">return</span> out; }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a94c55039c91d5784e20f7abf5e4496e6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; sbn::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d66/structsbn_1_1V1730channelConfiguration.html">sbn::V1730channelConfiguration</a> const &amp;&#160;</td>
-          <td class="paramname"><em>config</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the configuration into a stream with default verbosity. </p>
-
-<p>Definition at line <a class="el" href="../../d2/d0e/V1730channelConfiguration_8h_source.html#l00191">191</a> of file <a class="el" href="../../d2/d0e/V1730channelConfiguration_8h_source.html">V1730channelConfiguration.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  { config.dump(out); <span class="keywordflow">return</span> out; }</div>
 </div><!-- fragment -->
 </div>
 </div>
