@@ -6,9 +6,19 @@ toc: true
 
 # Software Release Management
 
-Charge:
+### Charge:
 
 Define the methodology for integrating new code into the software stack, managing its integration, and overseeing the building and release of this code in coordination with SBND and ICARUS release managers.
+
+### Model:
+
+A Release model based on reviewed Pull Request code development. See [how to develop](https://sbnsoftware.github.io/AnalysisInfrastructure/how-to-develop) for detailed instructions.
+
+### Software managed:
+* sbncode, sbnobj, sbnanaobj
+* sbnana
+* sbndata
+* sbndaq_artdaq_core
 
 # Release code convention
 ![image](https://user-images.githubusercontent.com/8134042/157476481-912159d9-9f92-4e82-b772-a2f159f52452.png)
