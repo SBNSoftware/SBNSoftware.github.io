@@ -142,11 +142,12 @@ There are two things you should do first:
 
 For #2 it would be great to post these checks to the DocDB so that others can see what you did!
  
-## Submitting a Pull-Request
+## Submitting a Pull-Request 
 
 Great! Now we know your code builds and you have validated it now we can move to merging it into our release. 
    
 1. Open a Pull Request  (PR) when your code is ready.
+Check [here](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/larsoft_pr) if your development its at LArSoft level.
 The next step is to alert the [Release-Management Team](https://sbnsoftware.github.io/AnalysisInfrastructure/index) that you would like your code to be reviewed for inclusion into a release. We do this via a [pull-request](https://www.atlassian.com/git/tutorials/making-a-pull-request).
 There are two ways to do this:
    
