@@ -14,7 +14,7 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 Each of these sgroups are charged with defining and implement common SBN-wide solutions. Please find an organization chart [here](sbnai_orgchart.md). 
 
-### [Software Release Management](rm.md)
+### [Software Release Management](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_main)
 
 [List of open PRs](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
