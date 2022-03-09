@@ -1,3 +1,10 @@
+---
+layout: page
+title:  Release Management tools
+toc: true
+---
+
+
 ##SBN Release Management tools
 
 Helper scripts are kept as part of the sbnbuild repo(https://github.com/SBNSoftware/sbnbuild)
