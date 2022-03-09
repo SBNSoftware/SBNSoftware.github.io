@@ -1,8 +1,26 @@
+---
+layout: page
+title:  Release Management
+toc: true
+---
+
 # Release Management
 
 Charge:
 
+Define the methodology for integrating new code into the software stack, managing its integration, and overseeing the building and release of this code in coordination with SBND and ICARUS release managers.
+
 ## Release management (pre)requisites
+Multiple permissions are needed to perform all of the actions involved
+in release management, these include:
+
+-   Access to cvmfssbn account on oasiscfs.fnal.gov
+-   Access to sbn account on GPVMs
+-   Account on the Jenkins build server and a [CILogon
+    certificate](Setting_up_access_with_CILogon_certificate.html)
+    loaded in your browser (Will need [Fermilab
+    VPN](VPN.html) running if off site)
+-   Access to `scisoftgpvm01.fnal.gov`
 
 
 ## SBN Release instructions for an SBN software stack build, release and distribution.
