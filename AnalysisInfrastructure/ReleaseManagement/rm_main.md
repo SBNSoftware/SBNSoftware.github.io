@@ -4,6 +4,9 @@ title:  Release Management
 toc: true
 ---
 
+Looking for how to get your piece of code in, see the [Code Development](https://sbnsoftware.github.io/AnalysisInfrastructure/how-to-develop) instructions.
+
+
 # Software Release Management
 
 ### Charge:
