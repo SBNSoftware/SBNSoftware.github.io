@@ -64,18 +64,18 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
-| Cosmics, Lifetime 3.5 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_calibtuples_commonruns |
-| Cosmics, Lifetime 6 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_calibtuples_commonruns |
-| Cosmics, Lifetime 3.5 ms, No Diffusion  | MCP2021C | v09_37_01_03p01 | 20925 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoDiffusion_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoDiffusion_v09_37_01_03p01_calibtuples_commonruns |
-| Cosmics, Lifetime 6 ms, No Diffusion  | MCP2021C | v09_37_01_03p01 | 20750 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoDiffusion_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoDiffusion_v09_37_01_03p01_calibtuples_commonruns |
-| Cosmics, Lifetime 3.5 ms, No SCE No Diffusion | MCP2021C | v09_37_01_03p01 | 21125 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_NoDiffusion_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_NoDiffusion_v09_37_01_03p01_calibtuples_commonruns |
-| Cosmics, Lifetime 6 ms, No SCE No Diffusion | MCP2021C | v09_37_01_03p01 | 20600 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_NoDiffusion_v09_37_01_03p01_reco2_commonruns |
-| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoSCE_NoDiffusion_v09_37_01_03p01_calibtuples_commonruns |
+| Cosmics, Lifetime 3.5 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_calibtuples |
+| Cosmics, Lifetime 6 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_calibtuples |
+| Cosmics, Lifetime 3.5 ms, No Diffusion  | MCP2021C | v09_37_01_03p01 | 20925 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoDiffusion_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoDiffusion_v09_37_01_03p01_calibtuples |
+| Cosmics, Lifetime 6 ms, No Diffusion  | MCP2021C | v09_37_01_03p01 | 20750 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoDiffusion_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoDiffusion_v09_37_01_03p01_calibtuples |
+| Cosmics, Lifetime 3.5 ms, No SCE No Diffusion | MCP2021C | v09_37_01_03p01 | 21125 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_NoDiffusion_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_NoDiffusion_v09_37_01_03p01_calibtuples |
+| Cosmics, Lifetime 6 ms, No SCE No Diffusion | MCP2021C | v09_37_01_03p01 | 20600 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_NoDiffusion_v09_37_01_03p01_reco2 |
+| --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime6ms_NoSCE_NoDiffusion_v09_37_01_03p01_calibtuples |
 | Cosmics, Lifetime 1 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime1ms_v09_37_01_03p01_reco2_commonruns |
 | --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime1ms_v09_37_01_03p01_calibtuples_commonruns |
 | Cosmics, Lifetime 3.5 ms  | MCP2021C | v09_37_01_03p01 | 20200 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_v09_37_01_03p01_reco2_commonruns |
