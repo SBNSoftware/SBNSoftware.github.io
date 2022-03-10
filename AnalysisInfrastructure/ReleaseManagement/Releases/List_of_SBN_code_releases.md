@@ -4,16 +4,8 @@ title: List of SBN code releases
 ---
 
 
-
-SBN Analysis Infrastructure Group
-================================================================
-
-See the [Code Development](https://sbnsoftware.github.io/AnalysisInfrastructure/how-to-develop) section on How To Add Features, Fix Bugs, or Otherwise Develop.
-
 List of `sbncode` releases
 ------------------------------------------------------------------------
-
-**Release managment team**: [Miquel Nebot-Guinot, Wes Ketchum, Joseph Zennamo, Patrick Green, Tracy Usher, Sergey Martynenko and Matt Rosenberg](mailto:miquel.nebot@ed.ac.uk,wketchum@fnal.gov,jaz8600@fnal.gov,patrick.green-3@postgrad.manchester.ac.uk,usher@slac.stanford.edu,smartynen@bnl.gov,Matthew.Rosenberg@tufts.edu)
 
 These are the releases tagged until now:
   
