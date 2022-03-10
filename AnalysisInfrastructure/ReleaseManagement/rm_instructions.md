@@ -98,3 +98,39 @@ For keeping up a poduction branch, when a pacth is needed:
     git push --tags
     
  5). Distrubute it as usual.
+
+
+## Trouble shooting, useful git procedures (TO BE UPDATED)
+
+### Trouble shooting cvmfs/scisoft publications
+   * delete manualy 
+   * re-install
+
+NOTE that the cvmfs publish tag is not the same as the release tag. cvmfs will complain about a tag already used.
+```bash
+cvmfs_server publish -m "Publication message" -a 09.41.00 sbn.opensciencegrid.org
+Tag name '09.41.00' is already in use.
+```
+just increment an extra number each time you need to update
+```bash
+cvmfs_server publish -m "Published sbn 09.41.00.00" -a 09.41.00.00 sbn.opensciencegrid.org
+Processing changes...
+```
+
+### Create a tag from a tag
+
+if branch a the same stage just creatre a release in GitHub with the tag name from the branch.
+	- From past versions :
+    git fetch --all --tags
+    git checkout tags/SBN2021C -b release/v09_12_08
+    git log --oneline --graph
+    git tag -a v09_12_08 -m "Version v09_12_08, production release SBN2021C"
+    git push --tags
+
+
+### Cherry picking commits for patch/fix
+
+mrb g sbnanaobj@v09_17_06_01 
+git checkout -b feature/miquelnebot_prodCAFfix
+git cherry-pick dedb4687017d111bb938f09ec5fbec7bdd7a3516
+git push origin feature/miquelnebot_prodCAFfix 
