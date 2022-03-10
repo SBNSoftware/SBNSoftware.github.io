@@ -1,4 +1,4 @@
-M%---
+---
 layout: page
 title: List of SBN code releases
 ---
@@ -11,6 +11,14 @@ These are the releases tagged until now:
   
 | Version        |      Notes                       |      Detailed Notes                          
 |----------------|----------------------------------|--------------------------------------------
+|`v09_44_00_01`  | 'sbncode' patch release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_44_00_01.md)
+|`v09_44_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_44_00.md)
+|`v09_43_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_43_00.md)
+|`v09_42_04`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_42_04.md)
+|`v09_42_03`     | 'sbncode' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_42_03.md)
+|`v09_37_01_01`  | 'sbnana' SBN2021C production patch release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbnana_v09_37_01_01.md)
+|`v09_42_02`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_42_02.md)
+|`v09_42_01`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_42_01.md)
 |`v09_42_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_42_00.md)
 |`v09_37_01_03`  | 'sbncode' SBN2021C production patch release   |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_37_01_03.md)
 |`v09_41_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_41_00.md)
