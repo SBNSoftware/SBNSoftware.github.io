@@ -13,7 +13,7 @@ See the [Code Development](https://sbnsoftware.github.io/AnalysisInfrastructure/
 List of `sbncode` releases
 ------------------------------------------------------------------------
 
-**Release managment team**: [Miquel Nebot-Guinot, Wes Ketchum, Joseph Zennamo, Patrick Green and Tracy Usher](mailto:miquel.nebot@ed.ac.uk,wketchum@fnal.gov,jaz8600@fnal.gov)
+**Release managment team**: [Miquel Nebot-Guinot, Wes Ketchum, Joseph Zennamo, Patrick Green, Tracy Usher, Sergey Martynenko and Matt Rosenberg](mailto:miquel.nebot@ed.ac.uk,wketchum@fnal.gov,jaz8600@fnal.gov,patrick.green-3@postgrad.manchester.ac.uk,usher@slac.stanford.edu,smartynen@bnl.gov,Matthew.Rosenberg@tufts.edu)
 
 These are the releases tagged until now:
   
