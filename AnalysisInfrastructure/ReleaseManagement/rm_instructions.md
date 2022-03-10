@@ -77,3 +77,24 @@ from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and 
 ### Notify and distribute Release notes:
 Send/post release notes (currently email/slack with changes) and let SBND and ICARUS release distributors know.
 
+## Production release
+
+ Production release branches are meant to be mantained so, don't close the relase branch when it's created. Use:
+ 
+    git flow release finish -k <branch name>
+    
+For keeping up a poduction branch, when a pacth is needed:
+
+1). Checkout release branch from git, use git fetch and git switch to get in non-detached head:
+    
+    git fetch origin release/SBN2021C
+    git switch release/SBN2021C
+    
+2). Merge any updates. Note: PRs can be directed to merge into this branch instead of develop. 
+3). Bump version numbers and push updated branch for use on Jenkins as normal.
+4). Create new tag (from within release branch) and push it:
+    
+    git tag -a v09_37_01_01 -m "Version v09_37_01_01, patch release for SBN2021C"
+    git push --tags
+    
+ 5). Distrubute it as usual.
