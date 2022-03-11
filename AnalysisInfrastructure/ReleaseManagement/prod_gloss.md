@@ -1,21 +1,21 @@
----
-layout: page
-title: SBN Production Release Glossary
-subtitle: Describes the names and goals of production releases 
-description: 
-hero_height: is-medium
-# menubar: sbnprod_menu
-toc: true
-toc_title: SBN Production Contents
----
-
-
-
-SBN Production Release Glossary
+#SBN Production Release Glossary
 ==========================================
 
-2021B
+## Production SBN 2021C (December, 2021)
 
-2021C
+### Main purpose: Test release for final production campaign to be launched for 2022 conference season
 
-2022A
+* Critical updates in Geant4 interfaces and charge/light simulation model and CRT simulation
+* Updates in ICARUS noise model and signal processing
+* New Beyond Standard Model physics simulation models
+* Tuning of high-level reconstruction and analysis interfaces
+
+## Production SBN 2022A (pending)
+
+### Final production campaign to be launched for 2022 conference season; support ICARUS first neutrino data and ICARUS+SBND simulation, and SBND commissioning samples
+
+* See list of SBN 2021C
+* Improved tuning of PMT reconstruction in ICARUS
+* Improved ICARUS TPC simulation
+* Add in side and top panel CRT to ICARUS data reconstruction
+* Improved simulation speed and memory usage in latest LArG4 release 
