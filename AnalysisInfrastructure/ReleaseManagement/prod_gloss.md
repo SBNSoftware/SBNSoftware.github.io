@@ -9,6 +9,7 @@
 
    ### Final production campaign to be launched for 2022 conference season; support ICARUS first neutrino data and ICARUS+SBND simulation, and SBND commissioning samples
 
+Major updates in this release:
   * See list of SBN 2021C
   * Improved tuning of PMT reconstruction in ICARUS
   * Improved ICARUS TPC simulation
@@ -20,6 +21,7 @@
 
   ### Main purpose: Test release for final production campaign to be launched for 2022 conference season
 
+Major updates in this release:
   * Critical updates in Geant4 interfaces and charge/light simulation model and CRT simulation
   * Updates in ICARUS noise model and signal processing
   * New Beyond Standard Model physics simulation models
