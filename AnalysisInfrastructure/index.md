@@ -10,6 +10,8 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 [List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
+### [Production Release Glossary](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/prod_gloss)
+
 ## Topic Groups
 
 Each of these sgroups are charged with defining and implement common SBN-wide solutions. Please find an organization chart [here](sbnai_orgchart.md). 
