@@ -586,6 +586,7 @@ var searchData=
   ['driftvolumeat',['driftVolumeAt',['../de/d54/classgeo_1_1DriftPartitions.html#a672bb4ee071d90f0dc16c0f1781c1cf9',1,'geo::DriftPartitions::driftVolumeAt(Position_t const &amp;pos) const '],['../de/d54/classgeo_1_1DriftPartitions.html#ab30255ed4f6b35741169a5b002c8a11f',1,'geo::DriftPartitions::driftVolumeAt(double drift) const ']]],
   ['driftwindow',['DriftWindow',['../d7/dd9/classimg_1_1DataProviderAlg.html#a710838bceef6015fc8eaed35cef7d67f',1,'img::DataProviderAlg']]],
   ['drop',['drop',['../d0/d43/classflashmatch_1_1QCluster__t.html#a0466dedde0cc2d4aac234dc9912c2236',1,'flashmatch::QCluster_t']]],
+  ['droppedtrackscollection',['DroppedTracksCollection',['../d8/d82/classlarg4_1_1ParticleListActionService.html#ab3ecfee5d0b579f3d9145d6295f4d6b7',1,'larg4::ParticleListActionService']]],
   ['dropprovider',['DropProvider',['../d8/d83/classtesting_1_1TesterEnvironment.html#a43d95a0befa80d35712c3385e0187b19',1,'testing::TesterEnvironment']]],
   ['dummyfilter',['DummyFilter',['../d2/da2/classDummyFilter.html#a6cee35940fa4c05c3a41b42b1b4e9bb3',1,'DummyFilter']]],
   ['dummyproducer',['DummyProducer',['../d9/d8d/classDummyProducer.html#a362a74f91ca130df8227165be3908f1b',1,'DummyProducer']]],

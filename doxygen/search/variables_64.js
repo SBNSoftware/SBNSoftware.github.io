@@ -294,6 +294,7 @@ var searchData=
   ['driftvelfudgefactor',['DriftVelFudgeFactor',['../d2/dfe/structdetinfo_1_1DetectorPropertiesStandard_1_1Configuration__t.html#a74a54baae764d9ecaf7394c20ef2e084',1,'detinfo::DetectorPropertiesStandard::Configuration_t']]],
   ['driftwindow',['DriftWindow',['../de/d6b/structimg_1_1DataProviderAlg_1_1Config.html#a881232eafb8afb65ab4adf070268022f',1,'img::DataProviderAlg::Config']]],
   ['dropboxwait',['dropboxwait',['../d9/d7c/classpython_1_1stagedef_1_1StageDef.html#a56d4671c6d87f917c115b080f5be470c',1,'python::stagedef::StageDef']]],
+  ['droppedcol_5f',['droppedCol_',['../d8/d82/classlarg4_1_1ParticleListActionService.html#ab3131e2683c85dbda8315a6fd4a3d778',1,'larg4::ParticleListActionService']]],
   ['dsp',['dSP',['../d6/d42/structtrkf_1_1CCTrackMaker_1_1MatchPars.html#a48f733e21cab737693b10ab9e8a3ed5c',1,'trkf::CCTrackMaker::MatchPars']]],
   ['dtdwstart',['dtdwstart',['../db/d11/classvertex_1_1FeatureVertexFinder.html#aa00bb239b7f47f9d7b4b8f4fa921068a',1,'vertex::FeatureVertexFinder']]],
   ['dtdwstarterror',['dtdwstartError',['../db/d11/classvertex_1_1FeatureVertexFinder.html#aae0f4491d71cee77adb56d39008add30',1,'vertex::FeatureVertexFinder']]],

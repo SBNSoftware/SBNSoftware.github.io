@@ -154,7 +154,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00052">52</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00053">53</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aae5b070b5328749de06fb4b2c73d8666"></a>
 <div class="memitem">
@@ -178,19 +178,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00124">124</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ae41ec24b5e441312b54d731f5c7a7870">seed_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">long</span>&gt;(<span class="stringliteral">&quot;seed&quot;</span>, -1))</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;macroPath&quot;</span>, <span class="stringliteral">&quot;FW_SEARCH_PATH&quot;</span>))</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">pathFinder_</a>(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;visMacro&quot;</span>, <span class="stringliteral">&quot;larg4.mac&quot;</span>))</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::vector&lt;art::InputTag&gt;&gt;(<span class="stringliteral">&quot;inputCollections&quot;</span>, {})}</div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00125">125</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ae41ec24b5e441312b54d731f5c7a7870">seed_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">long</span>&gt;(<span class="stringliteral">&quot;seed&quot;</span>, -1))</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;macroPath&quot;</span>, <span class="stringliteral">&quot;FW_SEARCH_PATH&quot;</span>))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">pathFinder_</a>(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;visMacro&quot;</span>, <span class="stringliteral">&quot;larg4.mac&quot;</span>))</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  , <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::vector&lt;art::InputTag&gt;&gt;(<span class="stringliteral">&quot;inputCollections&quot;</span>, {})}</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a34d68d70634e264be459a9e089e3305f"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">larg4::larg4Main::pathFinder_</a></div><div class="ttdeci">cet::search_path pathFinder_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00086">larg4Main_module.cc:86</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ae41ec24b5e441312b54d731f5c7a7870"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ae41ec24b5e441312b54d731f5c7a7870">larg4::larg4Main::seed_</a></div><div class="ttdeci">long seed_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00076">larg4Main_module.cc:76</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a9febd1ff644c87de174784dec26e259a"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">larg4::larg4Main::g4MacroFile_</a></div><div class="ttdeci">std::string g4MacroFile_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00089">larg4Main_module.cc:89</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a97eceb0d4d8a11ad6cca749cb9f50196"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">larg4::larg4Main::inputCollectionTags_</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; inputCollectionTags_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00092">larg4Main_module.cc:92</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a615b387d0f4b163812579e5dd9dbf47c"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">larg4::larg4Main::macroPath_</a></div><div class="ttdeci">std::string macroPath_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00082">larg4Main_module.cc:82</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a34d68d70634e264be459a9e089e3305f"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">larg4::larg4Main::pathFinder_</a></div><div class="ttdeci">cet::search_path pathFinder_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00087">larg4Main_module.cc:87</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ae41ec24b5e441312b54d731f5c7a7870"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ae41ec24b5e441312b54d731f5c7a7870">larg4::larg4Main::seed_</a></div><div class="ttdeci">long seed_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00077">larg4Main_module.cc:77</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a9febd1ff644c87de174784dec26e259a"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">larg4::larg4Main::g4MacroFile_</a></div><div class="ttdeci">std::string g4MacroFile_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00090">larg4Main_module.cc:90</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a97eceb0d4d8a11ad6cca749cb9f50196"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">larg4::larg4Main::inputCollectionTags_</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; inputCollectionTags_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00093">larg4Main_module.cc:93</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a615b387d0f4b163812579e5dd9dbf47c"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">larg4::larg4Main::macroPath_</a></div><div class="ttdeci">std::string macroPath_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00083">larg4Main_module.cc:83</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,13 +207,13 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00170">170</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>.reset();</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">larg4Main_module.cc:66</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00172">172</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>.reset();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">larg4Main_module.cc:67</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,15 +239,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00178">178</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  mf::LogDebug(<span class="stringliteral">&quot;Main_Run_Manager&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;In begin job&quot;</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>) {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>.reset(<span class="keyword">new</span> artg4tk::ArtG4RunManager);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">larg4Main_module.cc:66</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00180">180</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  mf::LogDebug(<span class="stringliteral">&quot;Main_Run_Manager&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;In begin job&quot;</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>.reset(<span class="keyword">new</span> artg4tk::ArtG4RunManager);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">larg4Main_module.cc:67</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,86 +273,86 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00188">188</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">processingRun_</a>++ != 0) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="comment">// Get the physics list and pass it to Geant and initialize the list if necessary</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  art::ServiceHandle&lt;artg4tk::PhysicsListHolderService const&gt; physicsListHolder;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserInitialization(physicsListHolder-&gt;makePhysicsList());</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">// Get all of the detectors and initialize them</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">// Declare the detector construction to Geant</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">auto</span> detectorHolder = art::ServiceHandle&lt;artg4tk::DetectorHolderService&gt;().<span class="keyword">get</span>();</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserInitialization(</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">new</span> artg4tk::ArtG4DetectorConstruction{detectorHolder-&gt;worldPhysicalVolume()});</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="comment">// Get all of the actions and initialize them</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">auto</span> actionHolder = art::ServiceHandle&lt;artg4tk::ActionHolderService&gt;().<span class="keyword">get</span>();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  actionHolder-&gt;initialize();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="comment">// Store the run in the action holder</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  actionHolder-&gt;setCurrArtRun(<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a>);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="comment">// Declare the primary generator action to Geant</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4PrimaryGeneratorAction{actionHolder});</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="comment">// Note that these actions (and ArtG4PrimaryGeneratorAction above) are all</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="comment">// generic actions that really don&#39;t do much on their own. Rather, to</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">// use the power of actions, one must create action objects (derived from</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="comment">// @ActionBase@) and register them with the Art @ActionHolder@ service.</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="comment">// See @ActionBase@ and/or @ActionHolderService@ for more information.</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4SteppingAction{actionHolder});</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4StackingAction{actionHolder});</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4EventAction{actionHolder, detectorHolder});</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4TrackingAction{actionHolder});</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;Initialize();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  physicsListHolder-&gt;initializePhysicsList();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">//get the pointer to the User Interface manager</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">UI_</a> = G4UImanager::GetUIpointer();</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="comment">// Find the macro (or try to) along the directory path.</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  std::string macroLocation = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">bool</span> macroWasFound = <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">pathFinder_</a>.find_file(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>, macroLocation);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Finding path for &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a> &lt;&lt; <span class="stringliteral">&quot;...\nSearch &quot;</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                           &lt;&lt; (macroWasFound ? <span class="stringliteral">&quot;successful &quot;</span> : <span class="stringliteral">&quot;unsuccessful &quot;</span>) &lt;&lt; <span class="stringliteral">&quot;and path is: \n&quot;</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                           &lt;&lt; macroLocation;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// Execute the macro if we were able to find it</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">if</span> (macroWasFound) {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// Create the string containing the execution command</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Executing macro: &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    std::string commandToExecute = <span class="stringliteral">&quot;/control/execute &quot;</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    commandToExecute.append(macroLocation);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">UI_</a>-&gt;ApplyCommand(commandToExecute);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Unable to find &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a> &lt;&lt; <span class="stringliteral">&quot; in the path(s) &quot;</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                             &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// Open a UI if asked</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#aecd20f810bf1e1d6c5015e3e401591b5">uiAtBeginRun_</a>) {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a> = <span class="keyword">new</span> G4UIterminal;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a>-&gt;SessionStart();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a>;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// Start the Geant run!</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnBeginRun(<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a>.id().run());</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a2bd27c910ed95d24696192c88960ac23"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">larg4::larg4Main::UI_</a></div><div class="ttdeci">G4UImanager * UI_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00070">larg4Main_module.cc:70</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a3805d8e88c862753492dd4f6e5657739"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">larg4::larg4Main::processingRun_</a></div><div class="ttdeci">static std::atomic&lt; int &gt; processingRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00115">larg4Main_module.cc:115</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">larg4Main_module.cc:66</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_af8fe7f151fb990950b845c61073cf014"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">larg4::larg4Main::session_</a></div><div class="ttdeci">G4UIsession * session_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00069">larg4Main_module.cc:69</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a34d68d70634e264be459a9e089e3305f"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">larg4::larg4Main::pathFinder_</a></div><div class="ttdeci">cet::search_path pathFinder_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00086">larg4Main_module.cc:86</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_aecd20f810bf1e1d6c5015e3e401591b5"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#aecd20f810bf1e1d6c5015e3e401591b5">larg4::larg4Main::uiAtBeginRun_</a></div><div class="ttdeci">bool uiAtBeginRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00104">larg4Main_module.cc:104</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a9febd1ff644c87de174784dec26e259a"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">larg4::larg4Main::g4MacroFile_</a></div><div class="ttdeci">std::string g4MacroFile_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00089">larg4Main_module.cc:89</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a615b387d0f4b163812579e5dd9dbf47c"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">larg4::larg4Main::macroPath_</a></div><div class="ttdeci">std::string macroPath_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00082">larg4Main_module.cc:82</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00190">190</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">processingRun_</a>++ != 0) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="comment">// Get the physics list and pass it to Geant and initialize the list if necessary</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  art::ServiceHandle&lt;artg4tk::PhysicsListHolderService const&gt; physicsListHolder;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserInitialization(physicsListHolder-&gt;makePhysicsList());</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">// Get all of the detectors and initialize them</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">// Declare the detector construction to Geant</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">auto</span> detectorHolder = art::ServiceHandle&lt;artg4tk::DetectorHolderService&gt;().<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserInitialization(</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">new</span> artg4tk::ArtG4DetectorConstruction{detectorHolder-&gt;worldPhysicalVolume()});</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="comment">// Get all of the actions and initialize them</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keyword">auto</span> actionHolder = art::ServiceHandle&lt;artg4tk::ActionHolderService&gt;().<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  actionHolder-&gt;initialize();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="comment">// Store the run in the action holder</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  actionHolder-&gt;setCurrArtRun(<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="comment">// Declare the primary generator action to Geant</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4PrimaryGeneratorAction{actionHolder});</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">// Note that these actions (and ArtG4PrimaryGeneratorAction above) are all</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="comment">// generic actions that really don&#39;t do much on their own. Rather, to</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="comment">// use the power of actions, one must create action objects (derived from</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="comment">// @ActionBase@) and register them with the Art @ActionHolder@ service.</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">// See @ActionBase@ and/or @ActionHolderService@ for more information.</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4SteppingAction{actionHolder});</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4StackingAction{actionHolder});</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4EventAction{actionHolder, detectorHolder});</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;SetUserAction(<span class="keyword">new</span> artg4tk::ArtG4TrackingAction{actionHolder});</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;Initialize();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  physicsListHolder-&gt;initializePhysicsList();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="comment">//get the pointer to the User Interface manager</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">UI_</a> = G4UImanager::GetUIpointer();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// Find the macro (or try to) along the directory path.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  std::string macroLocation = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordtype">bool</span> macroWasFound = <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">pathFinder_</a>.find_file(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>, macroLocation);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Finding path for &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a> &lt;&lt; <span class="stringliteral">&quot;...\nSearch &quot;</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                           &lt;&lt; (macroWasFound ? <span class="stringliteral">&quot;successful &quot;</span> : <span class="stringliteral">&quot;unsuccessful &quot;</span>) &lt;&lt; <span class="stringliteral">&quot;and path is: \n&quot;</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                           &lt;&lt; macroLocation;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="comment">// Execute the macro if we were able to find it</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">if</span> (macroWasFound) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">// Create the string containing the execution command</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Executing macro: &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    std::string commandToExecute = <span class="stringliteral">&quot;/control/execute &quot;</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    commandToExecute.append(macroLocation);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">UI_</a>-&gt;ApplyCommand(commandToExecute);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;larg4Main&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Unable to find &quot;</span> &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">g4MacroFile_</a> &lt;&lt; <span class="stringliteral">&quot; in the path(s) &quot;</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                             &lt;&lt; <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">macroPath_</a>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// Open a UI if asked</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#aecd20f810bf1e1d6c5015e3e401591b5">uiAtBeginRun_</a>) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a> = <span class="keyword">new</span> G4UIterminal;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a>-&gt;SessionStart();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">session_</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="comment">// Start the Geant run!</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnBeginRun(<a class="code" href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a>.id().run());</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a2bd27c910ed95d24696192c88960ac23"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a2bd27c910ed95d24696192c88960ac23">larg4::larg4Main::UI_</a></div><div class="ttdeci">G4UImanager * UI_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00071">larg4Main_module.cc:71</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a3805d8e88c862753492dd4f6e5657739"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">larg4::larg4Main::processingRun_</a></div><div class="ttdeci">static std::atomic&lt; int &gt; processingRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00116">larg4Main_module.cc:116</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">larg4Main_module.cc:67</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_af8fe7f151fb990950b845c61073cf014"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#af8fe7f151fb990950b845c61073cf014">larg4::larg4Main::session_</a></div><div class="ttdeci">G4UIsession * session_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00070">larg4Main_module.cc:70</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a34d68d70634e264be459a9e089e3305f"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a34d68d70634e264be459a9e089e3305f">larg4::larg4Main::pathFinder_</a></div><div class="ttdeci">cet::search_path pathFinder_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00087">larg4Main_module.cc:87</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_aecd20f810bf1e1d6c5015e3e401591b5"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#aecd20f810bf1e1d6c5015e3e401591b5">larg4::larg4Main::uiAtBeginRun_</a></div><div class="ttdeci">bool uiAtBeginRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00105">larg4Main_module.cc:105</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a9febd1ff644c87de174784dec26e259a"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a9febd1ff644c87de174784dec26e259a">larg4::larg4Main::g4MacroFile_</a></div><div class="ttdeci">std::string g4MacroFile_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00090">larg4Main_module.cc:90</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a615b387d0f4b163812579e5dd9dbf47c"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a615b387d0f4b163812579e5dd9dbf47c">larg4::larg4Main::macroPath_</a></div><div class="ttdeci">std::string macroPath_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00083">larg4Main_module.cc:83</a></div></div>
 <div class="ttc" id="condor__lar__pubs_8sh_html_aace24c54f354f24f1dec3b4fd3a15d10"><div class="ttname"><a href="../../da/dc6/condor__lar__pubs_8sh.html#aace24c54f354f24f1dec3b4fd3a15d10">r</a></div><div class="ttdeci">esac echo uname r</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dc6/condor__lar__pubs_8sh_source.html#l00698">condor_lar_pubs.sh:698</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -379,16 +379,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00285">285</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span> (--<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">processingRun_</a> != 0) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnEndRun();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a3805d8e88c862753492dd4f6e5657739"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">larg4::larg4Main::processingRun_</a></div><div class="ttdeci">static std::atomic&lt; int &gt; processingRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00115">larg4Main_module.cc:115</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">larg4Main_module.cc:66</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00288">288</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">if</span> (--<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">processingRun_</a> != 0) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnEndRun();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a3805d8e88c862753492dd4f6e5657739"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a3805d8e88c862753492dd4f6e5657739">larg4::larg4Main::processingRun_</a></div><div class="ttdeci">static std::atomic&lt; int &gt; processingRun_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00116">larg4Main_module.cc:116</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">larg4Main_module.cc:67</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -414,20 +414,20 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00295">295</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">empty</a>(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>)) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getMany&lt;std::vector&lt;simb::MCTruth&gt;&gt;();</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  std::vector&lt;art::Handle&lt;MCTruthCollection&gt;&gt; result;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; tag : <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    result.push_back(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getHandle&lt;<a class="code" href="../../d1/df3/larg4Main__module_8cc.html#a1ab9957e0f94540555655cb3fc2a5c83">MCTruthCollection</a>&gt;(tag));</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
-<div class="ttc" id="larg4Main__module_8cc_html_a1ab9957e0f94540555655cb3fc2a5c83"><div class="ttname"><a href="../../d1/df3/larg4Main__module_8cc.html#a1ab9957e0f94540555655cb3fc2a5c83">MCTruthCollection</a></div><div class="ttdeci">std::vector&lt; simb::MCTruth &gt; MCTruthCollection</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00047">larg4Main_module.cc:47</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a97eceb0d4d8a11ad6cca749cb9f50196"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">larg4::larg4Main::inputCollectionTags_</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; inputCollectionTags_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00092">larg4Main_module.cc:92</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00298">298</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;{</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">empty</a>(<a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>)) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getMany&lt;std::vector&lt;simb::MCTruth&gt;&gt;();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  std::vector&lt;art::Handle&lt;MCTruthCollection&gt;&gt; result;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; tag : <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">inputCollectionTags_</a>) {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    result.push_back(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getHandle&lt;<a class="code" href="../../d1/df3/larg4Main__module_8cc.html#a1ab9957e0f94540555655cb3fc2a5c83">MCTruthCollection</a>&gt;(tag));</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;}</div>
+<div class="ttc" id="larg4Main__module_8cc_html_a1ab9957e0f94540555655cb3fc2a5c83"><div class="ttname"><a href="../../d1/df3/larg4Main__module_8cc.html#a1ab9957e0f94540555655cb3fc2a5c83">MCTruthCollection</a></div><div class="ttdeci">std::vector&lt; simb::MCTruth &gt; MCTruthCollection</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00048">larg4Main_module.cc:48</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a97eceb0d4d8a11ad6cca749cb9f50196"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a97eceb0d4d8a11ad6cca749cb9f50196">larg4::larg4Main::inputCollectionTags_</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; inputCollectionTags_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00093">larg4Main_module.cc:93</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_a74da18d4f0023feee71c1352a99b3910"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">icarus::ns::util::empty</a></div><div class="ttdeci">bool empty(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00555">FixedBins.h:555</a></div></div>
 </div><!-- fragment -->
@@ -455,28 +455,29 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00263">263</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="comment">// The holder services need the event</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  art::ServiceHandle&lt;artg4tk::ActionHolderService&gt;()-&gt;setCurrArtEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  art::ServiceHandle&lt;artg4tk::DetectorHolderService&gt;()-&gt;setCurrArtEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> mclists = <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a698ebaf3902c29056c9e9cada35b8a45">inputCollections</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  art::ServiceHandle&lt;larg4::MCTruthEventActionService&gt;()-&gt;setInputCollections(mclists);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  art::ServiceHandle&lt;larg4::ParticleListActionService&gt; pla;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  pla-&gt;setInputCollections(mclists);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> pid = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getProductID&lt;std::vector&lt;simb::MCParticle&gt;&gt;();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  pla-&gt;setPtrInfo(pid, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.productGetter(pid));</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnDoOneEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event());</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnEndEvent();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(pla-&gt;ParticleCollection());</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(pla-&gt;AssnsMCTruthToMCParticle());</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">larg4Main_module.cc:66</a></div></div>
-<div class="ttc" id="classlarg4_1_1larg4Main_html_a698ebaf3902c29056c9e9cada35b8a45"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a698ebaf3902c29056c9e9cada35b8a45">larg4::larg4Main::inputCollections</a></div><div class="ttdeci">std::vector&lt; art::Handle&lt; MCTruthCollection &gt; &gt; inputCollections(art::Event const &amp;e) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00295">larg4Main_module.cc:295</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00265">265</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// The holder services need the event</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  art::ServiceHandle&lt;artg4tk::ActionHolderService&gt;()-&gt;setCurrArtEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  art::ServiceHandle&lt;artg4tk::DetectorHolderService&gt;()-&gt;setCurrArtEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> mclists = <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#a698ebaf3902c29056c9e9cada35b8a45">inputCollections</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  art::ServiceHandle&lt;larg4::MCTruthEventActionService&gt;()-&gt;setInputCollections(mclists);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  art::ServiceHandle&lt;larg4::ParticleListActionService&gt; pla;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  pla-&gt;setInputCollections(mclists);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> pid = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getProductID&lt;std::vector&lt;simb::MCParticle&gt;&gt;();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  pla-&gt;setPtrInfo(pid, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.productGetter(pid));</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnDoOneEvent(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event());</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <a class="code" href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">runManager_</a>-&gt;BeamOnEndEvent();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(pla-&gt;ParticleCollection());</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(pla-&gt;AssnsMCTruthToMCParticle());</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(pla-&gt;DroppedTracksCollection());</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_ad2a2f1bc7f476d7f534509b5361d3081"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#ad2a2f1bc7f476d7f534509b5361d3081">larg4::larg4Main::runManager_</a></div><div class="ttdeci">static std::unique_ptr&lt; artg4tk::ArtG4RunManager &gt; runManager_</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">larg4Main_module.cc:67</a></div></div>
+<div class="ttc" id="classlarg4_1_1larg4Main_html_a698ebaf3902c29056c9e9cada35b8a45"><div class="ttname"><a href="../../d9/ddb/classlarg4_1_1larg4Main.html#a698ebaf3902c29056c9e9cada35b8a45">larg4::larg4Main::inputCollections</a></div><div class="ttdeci">std::vector&lt; art::Handle&lt; MCTruthCollection &gt; &gt; inputCollections(art::Event const &amp;e) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df3/larg4Main__module_8cc_source.html#l00298">larg4Main_module.cc:298</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -500,7 +501,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00113">113</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -522,7 +523,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00090">90</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -544,7 +545,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00114">114</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -566,7 +567,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -588,7 +589,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -610,7 +611,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -632,7 +633,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00098">98</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -654,7 +655,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00116">116</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -676,7 +677,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00101">101</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -698,7 +699,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00066">66</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00067">67</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -720,7 +721,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00076">76</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -742,7 +743,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00069">69</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -764,7 +765,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00071">71</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -786,7 +787,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>
@@ -808,7 +809,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html#l00106">106</a> of file <a class="el" href="../../d1/df3/larg4Main__module_8cc_source.html">larg4Main_module.cc</a>.</p>
 
 </div>
 </div>

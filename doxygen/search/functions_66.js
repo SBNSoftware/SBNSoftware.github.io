@@ -879,7 +879,7 @@ var searchData=
   ['fshowerareaextension',['fShowerAreaExtension',['../d4/d4d/namespaceevgen.html#a2f68b5076160aa00d34c23aef76657f4',1,'evgen']]],
   ['fsignalshapingwindow',['fSignalShapingWindow',['../d6/d28/TrackAreaHit__module_8cc.html#ad6e2e1062d88a2c34270729e748b0201',1,'TrackAreaHit_module.cc']]],
   ['fsort_5findexes',['fsort_indexes',['../d4/d39/classtrkf_1_1TrackAna.html#a5337eda6e1ce927bb4e561a50fd677bb',1,'trkf::TrackAna']]],
-  ['fsparsifymargin',['fSparsifyMargin',['../d7/d6f/namespacelarg4.html#a95cc1fd01da25b36ff0a43ccc1aaa54b',1,'larg4']]],
+  ['fsparsifymargin',['fSparsifyMargin',['../d7/d6f/namespacelarg4.html#a8e8e271d091bb20355f9fd28aff46211',1,'larg4']]],
   ['fsparsifytrajectories',['fSparsifyTrajectories',['../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788',1,'larg4::fSparsifyTrajectories(p.get&lt; bool &gt;(&quot;SparsifyTrajectories&quot;, false))'],['../d7/d6f/namespacelarg4.html#a2401eda010f80909e2e840ed624fe368',1,'larg4::fSparsifyTrajectories(pset.get&lt; bool &gt;(&quot;SparsifyTrajectories&quot;, false))']]],
   ['fsplitbysign',['fSplitBySign',['../d7/d63/namespaceana.html#a7e4d9eac350bec156a6d119f72f8c972',1,'ana']]],
   ['ft0label',['fT0Label',['../d6/d28/TrackAreaHit__module_8cc.html#a14c80d1251b48192b8338a26526240be',1,'TrackAreaHit_module.cc']]],

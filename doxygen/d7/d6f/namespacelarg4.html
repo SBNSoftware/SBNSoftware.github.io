@@ -252,8 +252,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1b01617121ba0aa1c9513c76829eeb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6ce3f9836e56b8a5680e677ec82788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788">fSparsifyTrajectories</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; <a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a> &gt;(&quot;SparsifyTrajectories&quot;, false))</td></tr>
 <tr class="separator:a5b6ce3f9836e56b8a5680e677ec82788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95cc1fd01da25b36ff0a43ccc1aaa54b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a95cc1fd01da25b36ff0a43ccc1aaa54b">fSparsifyMargin</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; double &gt;(&quot;SparsifyMargin&quot;))</td></tr>
-<tr class="separator:a95cc1fd01da25b36ff0a43ccc1aaa54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8e271d091bb20355f9fd28aff46211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a8e8e271d091bb20355f9fd28aff46211">fSparsifyMargin</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; double &gt;(&quot;SparsifyMargin&quot;, 0.015))</td></tr>
+<tr class="separator:a8e8e271d091bb20355f9fd28aff46211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada3cf1e8af03d431eadc0ba286362d40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#ada3cf1e8af03d431eadc0ba286362d40">fKeepTransportation</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; <a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a> &gt;(&quot;KeepTransportation&quot;, false))</td></tr>
 <tr class="separator:ada3cf1e8af03d431eadc0ba286362d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e9a53deb1b9f087958ac2868583618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#ad5e9a53deb1b9f087958ac2868583618">fKeepSecondToLast</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; <a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a> &gt;(&quot;KeepSecondToLast&quot;, false))</td></tr>
@@ -772,24 +772,26 @@ template&lt;typename TVector3 &gt; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        fNotStoredCounterUMap.emplace(i, 0); <span class="comment">// -- initialize counter</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      mf::LogInfo(<span class="stringliteral">&quot;ParticleListActionService&quot;</span>) &lt;&lt; sstored.str() &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">else</span> { <span class="comment">// -- Keep all processes</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      mf::LogInfo(<span class="stringliteral">&quot;ParticleListActionService&quot;</span>)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Storing full tracking information for all processes. \n&quot;</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">if</span> (customNotStored) <span class="comment">// -- custom list will be ignored</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        mf::LogWarning(<span class="stringliteral">&quot;StoredPhysics&quot;</span>)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;NotStoredPhysics provided, but will be ignored.&quot;</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; To use NotStoredPhysics, set keepEMShowerDaughters to false&quot;</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// -- sparsify info</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788">fSparsifyTrajectories</a>)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      mf::LogInfo(<span class="stringliteral">&quot;ParticleListActionService&quot;</span>)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Trajectory sparsification enabled with SparsifyMargin : &quot;</span> &lt;&lt; <a class="code" href="../../d7/d6f/namespacelarg4.html#a95cc1fd01da25b36ff0a43ccc1aaa54b">fSparsifyMargin</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
-<div class="ttc" id="namespacelarg4_html_a95cc1fd01da25b36ff0a43ccc1aaa54b"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a95cc1fd01da25b36ff0a43ccc1aaa54b">larg4::fSparsifyMargin</a></div><div class="ttdeci">fSparsifyMargin(p.get&lt; double &gt;(&quot;SparsifyMargin&quot;))</div></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="comment">//hjw std::cout &lt;&lt; &quot;sstored-&quot;&lt;&lt;sstored.str()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">else</span> { <span class="comment">// -- Keep all processes</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">//hjw std::cout &lt;&lt; &quot;sstored-&quot;&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      mf::LogInfo(<span class="stringliteral">&quot;ParticleListActionService&quot;</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Storing full tracking information for all processes. \n&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">if</span> (customNotStored) <span class="comment">// -- custom list will be ignored</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        mf::LogWarning(<span class="stringliteral">&quot;StoredPhysics&quot;</span>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;NotStoredPhysics provided, but will be ignored.&quot;</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; To use NotStoredPhysics, set keepEMShowerDaughters to false&quot;</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// -- sparsify info</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788">fSparsifyTrajectories</a>)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      mf::LogInfo(<span class="stringliteral">&quot;ParticleListActionService&quot;</span>)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Trajectory sparsification enabled with SparsifyMargin : &quot;</span> &lt;&lt; <a class="code" href="../../d7/d6f/namespacelarg4.html#a8e8e271d091bb20355f9fd28aff46211">fSparsifyMargin</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="ttc" id="namespacelarg4_html_a8e8e271d091bb20355f9fd28aff46211"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a8e8e271d091bb20355f9fd28aff46211">larg4::fSparsifyMargin</a></div><div class="ttdeci">fSparsifyMargin(p.get&lt; double &gt;(&quot;SparsifyMargin&quot;, 0.015))</div></div>
 <div class="ttc" id="namespacelarg4_html_afa4d3c9101652691b43d5137906c5173"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#afa4d3c9101652691b43d5137906c5173">larg4::fNotStoredPhysics</a></div><div class="ttdeci">fNotStoredPhysics(p.get&lt; std::vector&lt; std::string &gt;&gt;(&quot;NotStoredPhysics&quot;,{}))</div></div>
 <div class="ttc" id="namespacelarg4_html_a3688e7a8c85c6aee4708a08cdb11c7dc"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a3688e7a8c85c6aee4708a08cdb11c7dc">larg4::fKeepEMShowerDaughters</a></div><div class="ttdeci">fKeepEMShowerDaughters(p.get&lt; bool &gt;(&quot;keepEMShowerDaughters&quot;, true))</div></div>
 <div class="ttc" id="namespacelarg4_html_a5b6ce3f9836e56b8a5680e677ec82788"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788">larg4::fSparsifyTrajectories</a></div><div class="ttdeci">fSparsifyTrajectories(p.get&lt; bool &gt;(&quot;SparsifyTrajectories&quot;, false))</div></div>
@@ -828,7 +830,7 @@ template&lt;typename TVector3 &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a95cc1fd01da25b36ff0a43ccc1aaa54b"></a>
+<a class="anchor" id="a8e8e271d091bb20355f9fd28aff46211"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -836,7 +838,7 @@ template&lt;typename TVector3 &gt; </div>
           <td class="memname">larg4::fSparsifyMargin </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; double &gt;&#160;</td>
-          <td class="paramname">&quot;SparsifyMargin&quot;</td><td>)</td>
+          <td class="paramname">&quot;SparsifyMargin&quot;, 0.015</td><td>)</td>
           <td></td>
         </tr>
       </table>
