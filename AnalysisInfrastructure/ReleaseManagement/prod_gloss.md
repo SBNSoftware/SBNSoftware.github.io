@@ -1,4 +1,4 @@
-#SBN Production Release Glossary
+# SBN Production Release Glossary
 ==========================================
 
 ## Production SBN 2021C (December, 2021)
