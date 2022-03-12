@@ -82,85 +82,92 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;BEGIN_PROLOG</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;higgsM: 0.240 # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a>/c^2</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">higgsM</a>: 0.240 # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a>/c^2</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;kaon2higgs: {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  tool_type: Kaon2HiggsFlux</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  M: @local::higgsM</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  M: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  MixingAngle: 5<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-5</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  KDAROnly: <span class="keyword">false</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  Beam2DetectorRotation: @local::icarus_numi_beam2detector_rotation</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  BeamOrigin: @<a class="code" href="../../d8/d66/numi__kaon__common_8fcl.html#a3bba3bb2f92fb244325a72e22c326192">local::icarus_numi_beam_origin</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment">// timing config</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  SpillTimeConfig: <span class="stringliteral">&quot;&quot;</span> </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  IgnoreParentDecayTime: <span class="keyword">true</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;mono_energy_flux: {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  tool_type: MonoEnergyHiggsFlux</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a>: 0.3 # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  M: @local::higgsM</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  MixingAngle: 5<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-5</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../d5/df9/find__global__symbol_8sh.html#ae2fcd9af85e9525dadab1ac2cb45a22d">X</a>: 0 # cm</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Y: 0</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Z: -10000</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Xdir: 0 # unit-<a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">vector</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Ydir: 0</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Zdir: 1</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;decay_higgs: {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  tool_type: HiggsMakeDecay</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ReferenceRayLength: 2100 # 21<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a55a56854d78e363691470c7297fde77c">m</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ReferenceHiggsMass: @local::higgsM</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ReferenceHiggsMixing: 5<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-5</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ReferenceRayDistance: 10400 # 104<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a55a56854d78e363691470c7297fde77c">m</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ReferenceHiggsEnergyFromKaonEnergy: 15. # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"># RayTrace configs</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span>mcraytrace: @local::rethrow_ray_trace_box</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;mcraytrace.ReferencePrtlMass: @local::higgsM # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;mcraytrace.ReferenceScndPDG: 211 # pion</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;mcraytrace.NThrows: 100 </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;wgtraytrace: @local::weighted_ray_trace_box</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;wgtraytrace.ReferencePrtlMass: @local::higgsM # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;wgtraytrace.ReferenceScndPDG: 211 # pion</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;mxdraytrace: @local::mixedweight_ray_trace_box</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;mxdraytrace.ReferencePrtlMass: @local::higgsM # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;mxdraytrace.ReferenceScndPDG: 211 # pion</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;dissonant_higgs_gen: {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  module_type: MeVPrtlGen</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  Deweight: <span class="keyword">true</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  MesonGen: @local::numi_kaon</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  Flux: @local::kaon2higgs</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  RayTrace: @local::mxdraytrace</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../db/d2a/g4__cosmics__purity__15ms_8fcl.html#a60dcef720886299bc25259deebc32540">Decay</a>: @local::decay_higgs</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;dissonant_higgs: @local::dissonant_higgs_gen</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;dissonant_higgs.Deweight: <span class="keyword">false</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;dissonant_higgs.Produce: <span class="keyword">false</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;dissonant_higgs.AnaOutput: <span class="keyword">true</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  KDAROnly: <span class="keyword">false</span> #as written <span class="keyword">this</span> only includes KDAR <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> <a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a7b2bf70ffa39f1dfb889345161a8788f">absorber</a> (not all KDAR)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  KDIFOnly: <span class="keyword">false</span> #includes KDIF (<a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> <a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a7b2bf70ffa39f1dfb889345161a8788f">absorber</a> or <a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a354a8d8136c792d815d20c323561a25c">beamline</a>)</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">   13</a></span>&#160;  KDIFandBeamline: <a class="code" href="../../d7/d6f/namespacelarg4.html#a7eeba60c219f2d1b4094606a12d28d18">false</a> <span class="preprocessor">#inlcudes KDIF from beamline, KDIF from absorber, and KDAR from beamline (this option orthogonal to &quot;KDAROnly&quot;)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  Beam2DetectorRotation: @local::icarus_numi_beam2detector_rotation</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  BeamOrigin: @<a class="code" href="../../d8/d66/numi__kaon__common_8fcl.html#a3bba3bb2f92fb244325a72e22c326192">local::icarus_numi_beam_origin</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// timing config</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  SpillTimeConfig: <span class="stringliteral">&quot;&quot;</span> </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  IgnoreParentDecayTime: <span class="keyword">true</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;mono_energy_flux: {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  tool_type: MonoEnergyHiggsFlux</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a>: 0.3 # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  M: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  MixingAngle: 5<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-5</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d5/df9/find__global__symbol_8sh.html#ae2fcd9af85e9525dadab1ac2cb45a22d">X</a>: 0 # cm</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Y: 0</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Z: -10000</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Xdir: 0 # unit-<a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">vector</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  Ydir: 0</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Zdir: 1</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;decay_higgs: {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  tool_type: HiggsMakeDecay</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  ReferenceRayLength: 2100 # 21<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a55a56854d78e363691470c7297fde77c">m</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ReferenceHiggsMass: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ReferenceHiggsMixing: 5<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-5</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ReferenceRayDistance: 10400 # 104<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a55a56854d78e363691470c7297fde77c">m</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ReferenceHiggsEnergyFromKaonEnergy: 15. # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"># RayTrace configs</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span>mcraytrace: @local::rethrow_ray_trace_box</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;mcraytrace.ReferencePrtlMass: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a> # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;mcraytrace.ReferenceScndPDG: 211 # pion</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;mcraytrace.NThrows: 100 </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;wgtraytrace: @local::weighted_ray_trace_box</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;wgtraytrace.ReferencePrtlMass: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a> # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;wgtraytrace.ReferenceScndPDG: 211 # pion</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;mxdraytrace: @local::mixedweight_ray_trace_box</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;mxdraytrace.ReferencePrtlMass: @<a class="code" href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">local::higgsM</a> # <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;mxdraytrace.ReferenceScndPDG: 211 # pion</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;dissonant_higgs_gen: {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  module_type: MeVPrtlGen</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  Deweight: <span class="keyword">true</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  MesonGen: @local::numi_kaon</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  Flux: @local::kaon2higgs</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  RayTrace: @local::mxdraytrace</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../db/d2a/g4__cosmics__purity__15ms_8fcl.html#a60dcef720886299bc25259deebc32540">Decay</a>: @local::decay_higgs</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;dissonant_higgs: @local::dissonant_higgs_gen</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;dissonant_higgs.Deweight: <span class="keyword">false</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;dissonant_higgs.Produce: <span class="keyword">false</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;dissonant_higgs.AnaOutput: <span class="keyword">true</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;END_PROLOG</div>
+<div class="ttc" id="dissonant__higgs_8fcl_html_a7b2bf70ffa39f1dfb889345161a8788f"><div class="ttname"><a href="../../d1/d9a/dissonant__higgs_8fcl.html#a7b2bf70ffa39f1dfb889345161a8788f">absorber</a></div><div class="ttdeci">BEGIN_PROLOG KDIF from absorber</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9a/dissonant__higgs_8fcl_source.html#l00013">dissonant_higgs.fcl:13</a></div></div>
 <div class="ttc" id="g4__cosmics__purity__15ms_8fcl_html_a60dcef720886299bc25259deebc32540"><div class="ttname"><a href="../../db/d2a/g4__cosmics__purity__15ms_8fcl.html#a60dcef720886299bc25259deebc32540">Decay</a></div><div class="ttdeci">process_name Decay</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d2a/g4__cosmics__purity__15ms_8fcl_source.html#l00007">g4_cosmics_purity_15ms.fcl:7</a></div></div>
 <div class="ttc" id="rawtorootconvert_8fcl_html_a073d3febd81cab639f2a8aa357dc5ef1"><div class="ttname"><a href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a></div><div class="ttdeci">process_name E</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/rawtorootconvert_8fcl_source.html#l00026">rawtorootconvert.fcl:26</a></div></div>
 <div class="ttc" id="find__global__symbol_8sh_html_ae2fcd9af85e9525dadab1ac2cb45a22d"><div class="ttname"><a href="../../d5/df9/find__global__symbol_8sh.html#ae2fcd9af85e9525dadab1ac2cb45a22d">X</a></div><div class="ttdeci">then echo echo For and will not be changed by echo further linking echo echo B echo The symbol is in the uninitialized data multiple common symbols may appear with the echo same name If the symbol is defined the common echo symbols are treated as undefined references For more echo details on common see the discussion of warn common echo in *Note Linker see the discussion of warn common echo in *Note Linker such as a global int variable echo as opposed to a large global array echo echo I echo The symbol is an indirect reference to another symbol This echo is a GNU extension to the a out object file format which is echo rarely used echo echo N echo The symbol is a debugging symbol echo echo R echo The symbol is in a read only data section echo echo S echo The symbol is in an uninitialized data section for small echo objects echo echo T echo The symbol is in the the normal defined echo symbol is used with no error When a weak undefined symbol echo is linked and the symbol is not the value of the echo weak symbol becomes zero with no error echo echo W echo The symbol is a weak symbol that has not been specifically echo tagged as a weak object symbol When a weak defined symbol echo is linked with a normal defined the normal defined echo symbol is used with no error When a weak undefined symbol echo is linked and the symbol is not the value of the echo weak symbol becomes zero with no error echo echo echo The symbol is a stabs symbol in an a out object file In echo this the next values printed are the stabs other echo the stabs desc and the stab type Stabs symbols are echo used to hold debugging information For more echo see *Note or object file format specific echo echo For Mac OS X</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/find__global__symbol_8sh_source.html#l00107">find_global_symbol.sh:107</a></div></div>
 <div class="ttc" id="namespacegen__crt__frags_html_a55a56854d78e363691470c7297fde77c"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#a55a56854d78e363691470c7297fde77c">gen_crt_frags.m</a></div><div class="ttdeci">tuple m</div><div class="ttdoc">now if test mode generate materials, CRT shell, world, gdml header else just generate CRT shell for u...</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l01347">gen_crt_frags.py:1347</a></div></div>
+<div class="ttc" id="namespacelarg4_html_a7eeba60c219f2d1b4094606a12d28d18"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a7eeba60c219f2d1b4094606a12d28d18">larg4::false</a></div><div class="ttdeci">return false</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8a/OpFastScintillation_8hh_source.html#l00592">OpFastScintillation.hh:592</a></div></div>
+<div class="ttc" id="testFHiCLfiles_8sh_html_a6401d1c0a168bb3757821ca209161fe2"><div class="ttname"><a href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a></div><div class="ttdeci">exclude from</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db0/testFHiCLfiles_8sh_source.html#l00347">testFHiCLfiles.sh:347</a></div></div>
+<div class="ttc" id="dissonant__higgs_8fcl_html_a354a8d8136c792d815d20c323561a25c"><div class="ttname"><a href="../../d1/d9a/dissonant__higgs_8fcl.html#a354a8d8136c792d815d20c323561a25c">beamline</a></div><div class="ttdeci">BEGIN_PROLOG KDIF from and KDAR from beamline(this option orthogonal to&quot;KDAROnly&quot;) Beam2DetectorRotation</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9a/dissonant__higgs_8fcl_source.html#l00013">dissonant_higgs.fcl:13</a></div></div>
 <div class="ttc" id="namespacelar_1_1dump_html_a71d4403edbac4d265176f8677118194f"><div class="ttname"><a href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">lar::dump::vector</a></div><div class="ttdeci">auto vector(Vector const &amp;v)</div><div class="ttdoc">Returns a manipulator which will print the specified array. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da9/DumpUtils_8h_source.html#l00265">DumpUtils.h:265</a></div></div>
 <div class="ttc" id="structutil_1_1quantities_1_1concepts_1_1Quantity_html"><div class="ttname"><a href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">util::quantities::concepts::Quantity</a></div><div class="ttdoc">A value measured in the specified unit. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d8e/quantities_8h_source.html#l00566">quantities.h:566</a></div></div>
 <div class="ttc" id="numi__kaon__common_8fcl_html_a3bba3bb2f92fb244325a72e22c326192"><div class="ttname"><a href="../../d8/d66/numi__kaon__common_8fcl.html#a3bba3bb2f92fb244325a72e22c326192">icarus_numi_beam_origin</a></div><div class="ttdeci">BEGIN_PROLOG icarus_numi_beam_origin</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d66/numi__kaon__common_8fcl_source.html#l00008">numi_kaon_common.fcl:8</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="numi__kaon__common_8fcl_html"><div class="ttname"><a href="../../d8/d66/numi__kaon__common_8fcl.html">numi_kaon_common.fcl</a></div></div>
+<div class="ttc" id="dissonant__higgs_8fcl_html_a55548c006be38de61bfcbffc04a5c2ed"><div class="ttname"><a href="../../d1/d9a/dissonant__higgs_8fcl.html#a55548c006be38de61bfcbffc04a5c2ed">higgsM</a></div><div class="ttdeci">BEGIN_PROLOG higgsM</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9a/dissonant__higgs_8fcl_source.html#l00013">dissonant_higgs.fcl:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

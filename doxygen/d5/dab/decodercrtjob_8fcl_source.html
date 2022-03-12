@@ -119,14 +119,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <a class="code" href="../../df/d80/Deprecated_2multitpc__detsim__icarus_8fcl.html#a4e0ea5450ce2ebf02cc0e858844734a4">producers</a>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   crtdaq: @<a class="code" href="../../d9/d88/crt__decoderdefs__icarus_8fcl.html#af6d10558f339a6da70a091bfb55ed0f1">local::crtdaq_icarus</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   daqCRT: @<a class="code" href="../../d9/d88/crt__decoderdefs__icarus_8fcl.html#af6d10558f339a6da70a091bfb55ed0f1">local::crtdaq_icarus</a></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   <a class="code" href="../../d7/df8/decodePMT__icarus_8fcl.html#ad4b16e1798c3d95f9f92731e311a5267">daqTrigger</a>: @local::decodeTrigger</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"> #define the producer and filter modules for this path, order matters, </span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #filters reject all following items.  see lines starting physics.producers below</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/dab/decodercrtjob_8fcl.html#a10f42d6a2fe4835c333d7a2c104e0c00">   49</a></span>&#160;<span class="preprocessor"></span> <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>: [ <a class="code" href="../../d7/df8/decodePMT__icarus_8fcl.html#ad4b16e1798c3d95f9f92731e311a5267">daqTrigger</a>, crtdaq]</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d5/dab/decodercrtjob_8fcl.html#a10f42d6a2fe4835c333d7a2c104e0c00">   49</a></span>&#160;<span class="preprocessor"></span> <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>: [ <a class="code" href="../../d7/df8/decodePMT__icarus_8fcl.html#ad4b16e1798c3d95f9f92731e311a5267">daqTrigger</a>, daqCRT]</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d5/dab/decodercrtjob_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">   51</a></span>&#160;<span class="preprocessor"> #define the output stream, there could be more than one if using filters </span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span> <a class="code" href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a>:  [ out1 ]</div>
