@@ -152,7 +152,22 @@ Metrics available:
 
 **Output:** 
 
-  PMT software trigger metrics ```sbnd::trigger::pmtSoftwareTrigger```. 
+  PMT software trigger metrics ```sbnd::trigger::pmtSoftwareTrigger```.
+  
+  The following metrics are contained in the above data product:
+  
+  _foundBeamTrigger_: boolean, whether the beam trigger fragment was found 
+  
+  _nAboveThreshold_: number of total PMTs (# ranges from 0-120) above a ADC threshold (set in fcl) during the beam window (set in fcl, default 1.8 us) 
+  
+  _triggerTimestamp_: trigger time in ns with respect to the beam spill 
+  
+  _promptPE_: prompt light; total photoelectron count from all PMTs 100 ns after the triggerTimestamp
+  
+  _prelimPE_: preliminiary light; total photoelectron count from all PMTs during the beam spill, before the triggerTimestamp
+  
+  _pmtInfoVec_: data product ```std::vector<sbnd::trigger::pmtInfo> pmtInfoVec;```, which contains the channel # for every PMT, baseline info for every PMT, and a vector of pulse information if you run the producer with the pulse algorithm turned on. However, this data product is currently not accessed when reading the metrics in the hitdumpertree. 
+
   
  **Run the Simulation**
 
@@ -174,4 +189,18 @@ Metrics available:
   
   _WvfmLength_: waveform length, default 5120 samples (could also determine from fragments)
   
-  _Verbose_: verbose output for debugging 
+  _Verbose_: verbose output for debugging
+  
+  _SaveHists_: boolean, whether or not to save the 10 us waveforms in histograms for the first few events 
+  
+  _BaselineAlgo_: input a string corresponding to the algorithm for calculating the baseline. Current options: "constant" or "estimate." If choosing "estimate," the mean and standard deviation of the first 500 ns (250 entries) of each waveform is calculated. If the standard deviation is above 3 ADC, the mean and stddev of the last 500 ns of each waveform is used instead. 
+    
+  _InputBaseline_: input baseline for ```BaselineAlgo: "constant"```; default 8000 ADC 
+  
+  _InputBaselineSigma_: input baseline stddev for ```BaselineAlgo: "constant```; default 2.0 ADC 
+  
+  _ADCThreshold_: ADC threshold to calculate ```nAboveThreshold```, default 7960 ADC 
+  
+  _FindPulses_: boolean, whether or not to use the crude pulse finder (more computational); default False
+  
+ _PEArea_: Conversion between ADCxns to photoelectrons when using the crude pulse finder 
