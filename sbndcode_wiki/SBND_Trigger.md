@@ -100,6 +100,78 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
     }
   ```
 
+CAEN1730 Fragment Simulation
+-----------------------------------------------------------------------------  
+
+The PMT fragment producer (```sbndcode/Trigger/pmtArtdaqFragmentProducer_module.cc```) converts simulated PMT waveforms into CAEN1730 artdaq::Fragment format. For each PMT hardware trigger, waveforms are saved for 5120 samples (~10us, 2ns sampling) from -1us to +9us around the trigger time. Sets of 8 fragments are created per trigger, each containing 15 PMT waveforms + beam signal and timestamps. Trigger time(s) are offset by 0.5 seconds to avoid negative times.
+
+**Input:** 
+
+  OpDet Waveforms ```raw::OpDetWaveform``` (Detsim stage or later)
+  PMT Hardware trigger output ```sbnd::comm::pmtTrigger```
+
+**Output:** 
+
+  CAEN1730 Fragments ```std::vector<artdaq::Fragment>```. Set of 8 fragments are produced for each PMT hardware trigger. Each fragment contains 15 PMT waveforms, 5120 samples (~10us). First fragment of set contains binary beam signal (1 if waveform bin in time with beam, otherwise 0) in  16th channel. Fragment metadata also simulated -- fragment ID (0-7), number of channels, waveform length, trigger timestamp. 
   
+**Run the Simulation**
 
+  ```bash
+    lar -c run_pmtArtdaqFragmentProducer.fcl -s [PMT hardware trigger root file]
+  ```
+  
+**Change the Parameters**
 
+  The fhicl file can be found in ```sbndcode/Trigger```. 
+  
+  The following parameters can be changed in the fhicl:    
+  
+  _InputModuleNameWvfm_:  input opdet waveforms module name, default "opdaq"
+  
+  _InputModuleNameTrigger_: input pmt hardware trigger module name, default "pmttriggerproducer"
+  
+  _Baseline_: PMT baseline used when extending/combining waveforms if full 3ms is not simulated, default 8000 ADC
+  
+  _MultiplicityThreshold_: PMT-pair multiplicity threshold to pass hardware trigger, default 10 pairs
+  
+  _BeamWindowLength_: beam window length, default 1.8 us (extended by 0.2us to account for delayed signals)
+  
+  _Verbose_: verbose output for debugging 
+  
+  
+ PMT Software Trigger Simulation
+-----------------------------------------------------------------------------
+
+The PMT software trigger producer (```sbndcode/Trigger/pmtSoftwareTriggerProducer_module.cc```) extracts PMT waveforms from CAEN1730 artdaq::Fragment format, determines which set of fragments is in time with the beam spill, runs desired software trigger metric algorithms and creates ```sbnd::trigger::pmtSoftwareTrigger``` object to store results. Filter module(s) can then be run using these metrics.
+
+Metrics available: 
+
+**Input:** 
+
+  CAEN1730 Fragments ```std::vector<artdaq::Fragment>``` created by the fragment simulation producer module.
+
+**Output:** 
+
+  PMT software trigger metrics ```sbnd::trigger::pmtSoftwareTrigger```. 
+  
+ **Run the Simulation**
+
+  ```bash
+    lar -c run_pmtsoftwaretriggerproducer.fcl -s [PMT fragment simulation root file]
+  ```
+  
+**Change the Parameters**
+
+  The fhicl file can be found in ```sbndcode/Trigger```. 
+  
+  The following parameters can be changed in the fhicl:    
+  
+  _is_persistable_:  controls whether trigger metrics object is written to output root file, default "true"
+  
+  _TriggerTimeOffset_: trigger time offset, must match offset used in fragment producer, default 0.5s
+  
+  _BeamWindowLength_: beam window length, default 1.8 us (extended by 0.2us to account for delayed signals)
+  
+  _WvfmLength_: waveform length, default 5120 samples (could also determine from fragments)
+  
+  _Verbose_: verbose output for debugging 
