@@ -1,0 +1,89 @@
+/**
+\mainpage SBN doxygen
+
+To find documentation, start searching with the box in the top-right.
+
+The following repositories are currently indexed:
+
+From the <a href="https://github.com/LArSoft/">LARSoft github</a>:
+
+<ul>
+<li><a href="https://github.com/LARSoft/larana">larana</a></li>
+<li><a href="https://github.com/LARSoft/larbatch">larbatch</a></li>
+<li><a href="https://github.com/LARSoft/larcore">larcore</a></li>
+<li><a href="https://github.com/LARSoft/larcorealg">larcorealg</a></li>
+<li><a href="https://github.com/LARSoft/larcoreobj">larcoreobj</a></li>
+<li><a href="https://github.com/LARSoft/lardata">lardata</a></li>
+<li><a href="https://github.com/LARSoft/lardataalg">lardataalg</a></li>
+<li><a href="https://github.com/LARSoft/larevt">larevt</a></li>
+<li><a href="https://github.com/LARSoft/larg4">larg4</a></li>
+<li><a href="https://github.com/LARSoft/lardataobj">lardataobj</a></li>
+<li><a href="https://github.com/LARSoft/larexamples">larexamples</a></li>
+<li><a href="https://github.com/LARSoft/lareventdisplay">lareventdisplay</a></li>
+<li><a href="https://github.com/LARSoft/larpandora">larpandora</a></li>
+<li><a href="https://github.com/LARSoft/larpandoracontent">larpandoracontent</a></li>
+<li><a href="https://github.com/LARSoft/larreco">larreco</a></li>
+<!-- <li><a href="https://github.com/LARSoft/larana">larrecodnn</a></li> -->
+<li><a href="https://github.com/LARSoft/larsim">larsim</a></li>
+<li><a href="https://github.com/LARSoft/larsoft">larsoft</a></li>
+<li><a href="https://github.com/LARSoft/larsoftobj">larsoftobj</a></li>
+<li><a href="https://github.com/LARSoft/larutils">larutils</a></li>
+<li><a href="https://github.com/LARSoft/larwirecell">larwirecell</a></li>
+<li><a href="https://github.com/LARSoft/webevd">webevd</a></li>
+</ul>
+
+From the <a href="https://github.com/SBNSoftware/">SBN software github</a>:
+
+<ul>
+<li><a href="https://github.com/SBNSoftware/sbnobj/">sbnobj</a></li>
+<li><a href="https://github.com/SBNSoftware/sbncode/">sbncode</a></li>
+<li><a href="https://github.com/SBNSoftware/sbndcode/">sbndcode</a></li>
+<li><a href="https://github.com/SBNSoftware/icaruscode/">icaruscode</a></li>
+<li><a href="https://github.com/SBNSoftware/icarusalg/">icarusalg</a></li>
+<li><a href="https://github.com/SBNSoftware/sbndutil/">sbndutil</a></li>
+<li><a href="https://github.com/SBNSoftware/sbnanaobj/">sbnanaobj</a></li>
+<li><a href="https://github.com/SBNSoftware/sbnana/">sbnana</a></li>
+</li>
+
+<!--
+From redmine:
+
+<ul>
+<li><a href="http://redmine.fnal.gov/projects/nusimdata/repository">nusimdata</a></li>
+<li><a href="http://redmine.fnal.gov/projects/nutools/repository">nutools</a></li>
+<li><a href="https://github.com/WireCell/wire-cell-build">wirecell</a> (<a href="https://wirecell.github.io/doxy/html/">native documentation</a></li>)
+<li><a href="http://redmine.fnal.gov/projects/dunetpc/repository">dunetpc</a></li>
+<li><a href="http://redmine.fnal.gov/projects/protoduneana/repository">protoduneana</a></li>
+<li><a href="http://redmine.fnal.gov/projects/duneutil/repository">duneutil</a></li>
+<li><a href="http://redmine.fnal.gov/projects/ifdh-art/repository">ifdh-art</a></li>
+<li><a href="http://redmine.fnal.gov/projects/art/repository">art</a></li>
+<li><a href="http://redmine.fnal.gov/projects/messagefacility/repository">messagefacility</a></li>
+<li><a href="http://redmine.fnal.gov/projects/cetlib/repository">cetlib</a></li>
+<li><a href="http://redmine.fnal.gov/projects/fhicl-cpp/repository">fhiclcpp</a></li>
+<li><a href="http://redmine.fnal.gov/projects/ppfx/repository">ppfx</a></li>
+<li><a href="http://redmine.fnal.gov/projects/gallery/repository">gallery</a></li>
+<li><a href="http://redmine.fnal.gov/projects/canvas/repository">canvas</a></li>
+<li><a href="http://redmine.fnal.gov/projects/lbne-beamsim/repository">g4lbne</a></li>
+<li><a href="http://redmine.fnal.gov/projects/dune-raw-data/repository">dune-raw-data</a></li>
+</ul>
+
+From elsewhere:
+
+<ul>
+<li>(Probably the wrong version of) <span style='text-decoration:line-through'><a href="https://github.com/Geant4/geant4.git">geant4</a></span> (very slow)</li>
+<li>(Probably the wrong version of) <a href="https://github.com/GENIEMC/GENIE.git">genie</a></li>
+
+</ul>
+
+To add:
+
+<ul>
+<li>dk2nu</li>
+<li>ifbeam</li>
+</ul>
+
+Contact <a href="mailto:bckhouse@fnal.gov">bckhouse@fnal.gov</a> with comments/questions/bug reports/fixes
+
+-->
+
+*/
