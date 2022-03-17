@@ -40,6 +40,10 @@ See below for helpful links:
 
 * [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
 
+
+## Documentation ###
+* [doxygen](doxygen): Auto-generated from the source code, updated nightly
+
 ## Operations ##
 * [ICARUS Operations](Operations/SBN_FD/index)
 
