@@ -770,6 +770,7 @@ var searchData=
   ['_7eutilexception',['~UtilException',['../d2/de1/classutil_1_1UtilException.html#a9b08237d1ad265ec19be5cf5b1b230d5',1,'util::UtilException']]],
   ['_7evector',['~Vector',['../da/d05/classgeoalgo_1_1Vector.html#ac41dcec43bca5af657d2c09abe7ee782',1,'geoalgo::Vector']]],
   ['_7evertex',['~Vertex',['../d3/da3/classlar__content_1_1LArPointingCluster_1_1Vertex.html#af67ae925fb5b20600ee3cfcd8865f437',1,'lar_content::LArPointingCluster::Vertex']]],
+  ['_7evertexmonitoringalgorithm',['~VertexMonitoringAlgorithm',['../df/dc0/classlar__content_1_1VertexMonitoringAlgorithm.html#aeeafb34d30ac83791768e8183c58c2e3',1,'lar_content::VertexMonitoringAlgorithm']]],
   ['_7evisualizationaction',['~VisualizationAction',['../d7/ddc/classlarg4_1_1VisualizationAction.html#a200a2c485de7190b3aca7b06a37c2224',1,'larg4::VisualizationAction']]],
   ['_7evisualparticlemonitoringalgorithm',['~VisualParticleMonitoringAlgorithm',['../d9/d4d/classlar__content_1_1VisualParticleMonitoringAlgorithm.html#a2809124b400c74ab7af0321bb44f7db4',1,'lar_content::VisualParticleMonitoringAlgorithm']]],
   ['_7evoronoidiagram',['~VoronoiDiagram',['../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#a64d41ddb05b7ca3d4464a0e12c5e020b',1,'voronoi2d::VoronoiDiagram']]],

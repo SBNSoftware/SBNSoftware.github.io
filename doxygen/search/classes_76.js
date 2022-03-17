@@ -60,6 +60,7 @@ var searchData=
   ['vertexfitter',['VertexFitter',['../dc/de5/classtrkf_1_1VertexFitter.html',1,'trkf']]],
   ['vertexhistos',['VertexHistos',['../d5/d64/structVertexHistos.html',1,'']]],
   ['vertexhit',['VertexHit',['../d8/de1/classsbn_1_1VertexHit.html',1,'sbn']]],
+  ['vertexmonitoringalgorithm',['VertexMonitoringAlgorithm',['../df/dc0/classlar__content_1_1VertexMonitoringAlgorithm.html',1,'lar_content']]],
   ['vertexrefinementalgorithm',['VertexRefinementAlgorithm',['../d6/d65/classlar__content_1_1VertexRefinementAlgorithm.html',1,'lar_content']]],
   ['vertexscore',['VertexScore',['../de/d2b/classlar__content_1_1VertexSelectionBaseAlgorithm_1_1VertexScore.html',1,'lar_content::VertexSelectionBaseAlgorithm']]],
   ['vertexselectionbasealgorithm',['VertexSelectionBaseAlgorithm',['../d6/d1e/classlar__content_1_1VertexSelectionBaseAlgorithm.html',1,'lar_content']]],
@@ -77,15 +78,15 @@ var searchData=
   ['vm',['VM',['../d0/d4c/classuscript_1_1VM.html',1,'uscript']]],
   ['volt',['Volt',['../d4/d36/structutil_1_1quantities_1_1units_1_1Volt.html',1,'util::quantities::units']]],
   ['volume',['Volume',['../db/da7/classlar_1_1util_1_1simple__geo_1_1Volume.html',1,'lar::util::simple_geo']]],
-  ['volumeinfo_5ft',['VolumeInfo_t',['../d8/d76/structutil_1_1PositionInVolumeFilter_1_1VolumeInfo__t.html',1,'util::PositionInVolumeFilter']]],
   ['volumeinfo_5ft',['VolumeInfo_t',['../d9/da0/structlarg4_1_1thePositionInVolumeFilter_1_1VolumeInfo__t.html',1,'larg4::thePositionInVolumeFilter']]],
+  ['volumeinfo_5ft',['VolumeInfo_t',['../d8/d76/structutil_1_1PositionInVolumeFilter_1_1VolumeInfo__t.html',1,'util::PositionInVolumeFilter']]],
   ['volyz',['VolYZ',['../da/d22/structana_1_1SBNOsc_1_1Cuts_1_1VolYZ.html',1,'ana::SBNOsc::Cuts']]],
   ['voronoidiagram',['VoronoiDiagram',['../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html',1,'voronoi2d']]],
   ['voronoipathfinder',['VoronoiPathFinder',['../d8/d3c/classlar__cluster3d_1_1VoronoiPathFinder.html',1,'lar_cluster3d']]],
-  ['vtx3store',['Vtx3Store',['../d2/d71/structcluster_1_1ClusterCrawlerAlg_1_1Vtx3Store.html',1,'cluster::ClusterCrawlerAlg']]],
   ['vtx3store',['Vtx3Store',['../d2/d05/structtca_1_1Vtx3Store.html',1,'tca']]],
+  ['vtx3store',['Vtx3Store',['../d2/d71/structcluster_1_1ClusterCrawlerAlg_1_1Vtx3Store.html',1,'cluster::ClusterCrawlerAlg']]],
   ['vtxcandidate',['VtxCandidate',['../d3/d65/classpma_1_1VtxCandidate.html',1,'pma']]],
   ['vtxpar',['vtxPar',['../d3/d8b/structtrkf_1_1CCTrackMaker_1_1vtxPar.html',1,'trkf::CCTrackMaker']]],
-  ['vtxstore',['VtxStore',['../d9/d5e/structcluster_1_1ClusterCrawlerAlg_1_1VtxStore.html',1,'cluster::ClusterCrawlerAlg']]],
-  ['vtxstore',['VtxStore',['../dc/d11/structtca_1_1VtxStore.html',1,'tca']]]
+  ['vtxstore',['VtxStore',['../dc/d11/structtca_1_1VtxStore.html',1,'tca']]],
+  ['vtxstore',['VtxStore',['../d9/d5e/structcluster_1_1ClusterCrawlerAlg_1_1VtxStore.html',1,'cluster::ClusterCrawlerAlg']]]
 ];

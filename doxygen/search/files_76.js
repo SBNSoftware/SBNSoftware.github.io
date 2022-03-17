@@ -56,6 +56,8 @@ var searchData=
   ['vertexfitter_5fmodule_2ecc',['VertexFitter_module.cc',['../dd/d68/VertexFitter__module_8cc.html',1,'']]],
   ['vertexhit_2ecc',['VertexHit.cc',['../d9/d82/VertexHit_8cc.html',1,'']]],
   ['vertexhit_2eh',['VertexHit.h',['../d3/d37/VertexHit_8h.html',1,'']]],
+  ['vertexmonitoringalgorithm_2ecc',['VertexMonitoringAlgorithm.cc',['../dc/d79/VertexMonitoringAlgorithm_8cc.html',1,'']]],
+  ['vertexmonitoringalgorithm_2eh',['VertexMonitoringAlgorithm.h',['../dd/daa/VertexMonitoringAlgorithm_8h.html',1,'']]],
   ['vertexrefinementalgorithm_2ecc',['VertexRefinementAlgorithm.cc',['../da/d30/VertexRefinementAlgorithm_8cc.html',1,'']]],
   ['vertexrefinementalgorithm_2eh',['VertexRefinementAlgorithm.h',['../df/d97/VertexRefinementAlgorithm_8h.html',1,'']]],
   ['vertexselectionbasealgorithm_2ecc',['VertexSelectionBaseAlgorithm.cc',['../d6/dfb/VertexSelectionBaseAlgorithm_8cc.html',1,'']]],
