@@ -338,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> distanceToCollectedHits(collectedHits.empty()</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                    ? std::numeric_limits&lt;float&gt;::max()</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                    ? <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>()</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                                    : LArClusterHelper::GetClosestDistance(pCaloHit-&gt;GetPositionVector(), collectedHits));</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> distanceToMuonHits(muonDirection.GetCrossProduct(pCaloHit-&gt;GetPositionVector() - positionOnMuon).GetMagnitude());</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
@@ -350,6 +350,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    } <span class="keywordflow">while</span> (hitsAdded);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

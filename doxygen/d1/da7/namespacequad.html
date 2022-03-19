@@ -674,10 +674,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i + 1 &lt; lines.size(); ++i) {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keyword">const</span> Line2D <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> = lines[i];</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      j0 = std::max(j0, i + 1);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      j0 = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(j0, i + 1);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keywordflow">while</span> (j0 &lt; lines.size() &amp;&amp; <a class="code" href="../../d1/da7/namespacequad.html#aba4316d3d266fecf8599917db02d5aa7">CloseAngles</a>(a.m, lines[j0].m))</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        ++j0;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      jmax = std::max(jmax, j0);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      jmax = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(jmax, j0);</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keywordflow">while</span> (jmax &lt; lines.size() &amp;&amp; !<a class="code" href="../../d1/da7/namespacequad.html#aba4316d3d266fecf8599917db02d5aa7">CloseAngles</a>(a.m, lines[jmax].m))</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        ++jmax;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
@@ -697,10 +697,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i + 1 &lt; lines.size(); ++i) {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keyword">const</span> Line2D a = lines[i];</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      j0 = std::max(j0, i + 1);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      j0 = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(j0, i + 1);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keywordflow">while</span> (j0 &lt; lines.size() &amp;&amp; <a class="code" href="../../d1/da7/namespacequad.html#aba4316d3d266fecf8599917db02d5aa7">CloseAngles</a>(a.m, lines[j0].m))</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        ++j0;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      jmax = std::max(jmax, j0);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      jmax = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(jmax, j0);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="keywordflow">while</span> (jmax &lt; lines.size() &amp;&amp; !<a class="code" href="../../d1/da7/namespacequad.html#aba4316d3d266fecf8599917db02d5aa7">CloseAngles</a>(a.m, lines[jmax].m))</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        ++jmax;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
@@ -722,6 +722,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_ae40184b0245025a43c56daa3261d5e3c"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a></div><div class="ttdeci">process_name opflash particleana ie ie ie z</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00092">run_opflash_electron.fcl:92</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
 <div class="ttc" id="namespacequad_html_aba4316d3d266fecf8599917db02d5aa7"><div class="ttname"><a href="../../d1/da7/namespacequad.html#aba4316d3d266fecf8599917db02d5aa7">quad::CloseAngles</a></div><div class="ttdeci">bool CloseAngles(float ma, float mb)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d11/QuadVtx__module_8cc_source.html#l00188">QuadVtx_module.cc:188</a></div></div>
 </div><!-- fragment -->

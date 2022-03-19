@@ -296,9 +296,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a> = 0;</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> = 0;</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">double</span> x_min = std::numeric_limits&lt;double&gt;::max(), x_max = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordtype">double</span> y_min = std::numeric_limits&lt;double&gt;::max(), y_max = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">double</span> z_min = std::numeric_limits&lt;double&gt;::max(), z_max = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">double</span> x_min = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>(), x_max = -<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordtype">double</span> y_min = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>(), y_max = -<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">double</span> z_min = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>(), z_max = -<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="comment">// Get a bunch of associations (again)</span></div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="comment">// N.B. this is a horribly inefficient way of doing things but as this is only</span></div>
@@ -365,8 +365,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a1ee46684f478bb60123d981e1d42c47c">fShowerDirectionInputLabel</a>, showerDirection);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="comment">// the direction line</span></div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordtype">double</span> minProj = std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordtype">double</span> maxProj = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <span class="keywordtype">double</span> minProj = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keywordtype">double</span> maxProj = -<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="comment">//initialise counter point</span></div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keywordtype">int</span> point = 0;</div>
@@ -381,16 +381,16 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;      ++point;</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;      x_min = std::min(x, x_min);</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;      x_max = std::max(x, x_max);</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;      x_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(x, x_max);</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      y_min = std::min(y, y_min);</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;      y_max = std::max(y, y_max);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;      y_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(y, y_max);</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;      z_min = std::min(z, z_min);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;      z_max = std::max(z, z_max);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;      z_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(z, z_max);</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;      <span class="comment">// Calculate the projection of (point-startpoint) along the direction</span></div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;      <span class="keywordtype">double</span> proj = <a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#af1dd20c800f7d033b2025c814b74d741">shower::LArPandoraShowerAlg::SpacePointProjection</a>(</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        spacePoint, showerStartPosition, showerDirection);</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;      maxProj = std::max(proj, maxProj);</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;      maxProj = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(proj, maxProj);</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;      minProj = std::min(proj, minProj);</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    } <span class="comment">// loop over spacepoints</span></div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
@@ -427,11 +427,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      trackPoly-&gt;SetPoint(point, x, y, z);</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;      ++point;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      x_min = std::min(x, x_min);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      x_max = std::max(x, x_max);</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;      x_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(x, x_max);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      y_min = std::min(y, y_min);</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;      y_max = std::max(y, y_max);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;      y_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(y, y_max);</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;      z_min = std::min(z, z_min);</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      z_max = std::max(z, z_max);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      z_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(z, z_max);</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    } <span class="comment">// loop over track spacepoints</span></div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  }</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
@@ -478,11 +478,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      y = pos.Y();</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;      z = pos.Z();</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;      x_min = std::min(x, x_min);</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      x_max = std::max(x, x_max);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      x_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(x, x_max);</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      y_min = std::min(y, y_min);</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;      y_max = std::max(y, y_max);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;      y_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(y, y_max);</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      z_min = std::min(z, z_min);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;      z_max = std::max(z, z_max);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;      z_max = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(z, z_max);</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;      <span class="comment">// If running pandora cheating it will call photons pdg 22</span></div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;      <span class="keywordflow">if</span> (pdg == 11 || pdg == 22) {</div>
@@ -592,6 +592,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classrecob_1_1Track_html_a0f79353d3ee5824fa80770901d1686a9"><div class="ttname"><a href="../../d9/dca/classrecob_1_1Track.html#a0f79353d3ee5824fa80770901d1686a9">recob::Track::LocationAtPoint</a></div><div class="ttdeci">Point_t const &amp; LocationAtPoint(size_t i) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html#l00126">bj/lardataobj/RecoBase/Track.h:126</a></div></div>
 <div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_a5eaaab1350d4922f938e8e675df3ad06"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a5eaaab1350d4922f938e8e675df3ad06">shower::LArPandoraShowerAlg::fInitialTrackInputLabel</a></div><div class="ttdeci">const std::string fInitialTrackInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d43/LArPandoraShowerAlg_8h_source.html#l00147">LArPandoraShowerAlg.h:147</a></div></div>
 <div class="ttc" id="classrecob_1_1Track_html_a9128436d1a2465fc9f5393898b6fa236"><div class="ttname"><a href="../../d9/dca/classrecob_1_1Track.html#a9128436d1a2465fc9f5393898b6fa236">recob::Track::NumberTrajectoryPoints</a></div><div class="ttdeci">size_t NumberTrajectoryPoints() const </div><div class="ttdoc">Various functions related to the presence and the number of (valid) points. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html#l00102">bj/lardataobj/RecoBase/Track.h:102</a></div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a1e5aaaf25e8609a835e8c7c6fda71456"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a></div><div class="ttdeci">process_name opflash particleana ie ie y</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00091">run_opflash_electron.fcl:91</a></div></div>
 <div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_a3cccd86cc496c53ba0fa25c6bffab9b1"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a3cccd86cc496c53ba0fa25c6bffab9b1">shower::LArPandoraShowerAlg::fInitialTrackSpacePointsInputLabel</a></div><div class="ttdeci">const std::string fInitialTrackSpacePointsInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d43/LArPandoraShowerAlg_8h_source.html#l00150">LArPandoraShowerAlg.h:150</a></div></div>

@@ -48,5 +48,6 @@ var searchData=
   ['testing',['testing',['../d6/d6c/namespacesbnd_1_1testing.html',1,'sbnd']]],
   ['tof',['ToF',['../d6/dfc/namespacesbnd_1_1ToF.html',1,'sbnd']]],
   ['tpcgeoutil',['TPCGeoUtil',['../db/d50/namespacesbnd_1_1TPCGeoUtil.html',1,'sbnd']]],
+  ['trigger',['trigger',['../dc/daa/namespacesbnd_1_1trigger.html',1,'sbnd']]],
   ['util',['util',['../d2/dba/namespacesbn_1_1util.html',1,'sbn']]]
 ];

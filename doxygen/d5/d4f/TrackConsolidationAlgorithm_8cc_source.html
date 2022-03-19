@@ -137,8 +137,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    CaloHitList associatedHits, caloHitListJ;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    pClusterJ-&gt;GetOrderedCaloHitList().FillCaloHitList(caloHitListJ);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> minL(std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">float</span> maxL(std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> minL(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">float</span> maxL(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Loop over hits from shower clusters, and make associations with track clusters</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// (Determine if hits from shower clusters can be used to fill gaps in track cluster)</span></div>
@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                minL = std::min(minL, rL);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                maxL = std::max(maxL, rL);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                maxL = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(maxL, rL);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            associatedHits.push_back(pCaloHitJ);</div>
@@ -227,6 +227,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;} <span class="comment">// namespace lar_content</span></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="TrackConsolidationAlgorithm_8h_html"><div class="ttname"><a href="../../df/df1/TrackConsolidationAlgorithm_8h.html">TrackConsolidationAlgorithm.h</a></div><div class="ttdoc">Header file for the track consolidation algorithm class. </div></div>
 <div class="ttc" id="classlar__content_1_1TwoDSlidingFitConsolidationAlgorithm_html_ab6d9e68232de0dc63b980cb649f6860c"><div class="ttname"><a href="../../d1/d88/classlar__content_1_1TwoDSlidingFitConsolidationAlgorithm.html#ab6d9e68232de0dc63b980cb649f6860c">lar_content::TwoDSlidingFitConsolidationAlgorithm::ReadSettings</a></div><div class="ttdeci">pandora::StatusCode ReadSettings(const pandora::TiXmlHandle xmlHandle)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc9/TwoDSlidingFitConsolidationAlgorithm_8cc_source.html#l00221">TwoDSlidingFitConsolidationAlgorithm.cc:221</a></div></div>
 <div class="ttc" id="classlar__content_1_1TrackConsolidationAlgorithm_html_afcbb0f25843fa477ae4f251e87735d29"><div class="ttname"><a href="../../d0/d4f/classlar__content_1_1TrackConsolidationAlgorithm.html#afcbb0f25843fa477ae4f251e87735d29">lar_content::TrackConsolidationAlgorithm::GetReclusteredHits</a></div><div class="ttdeci">void GetReclusteredHits(const TwoDSlidingFitResultList &amp;slidingFitResultList, const pandora::ClusterVector &amp;showerClusters, ClusterToHitMap &amp;caloHitsToAdd, ClusterToHitMap &amp;caloHitsToRemove) const </div><div class="ttdoc">Get the list of hits to be added to track clusters and removed from shower clusters. </div></div>

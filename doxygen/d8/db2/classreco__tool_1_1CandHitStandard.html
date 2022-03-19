@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        hitCandidate.maxDerivative = *(startItr + firstTime);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        hitCandidate.minDerivative = *(startItr + lastTime);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        hitCandidate.hitCenter = roiStartTick + maxTime;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        hitCandidate.hitSigma = std::max(2., <span class="keywordtype">float</span>(lastTime - firstTime) / 6.);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        hitCandidate.hitSigma = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(2., <span class="keywordtype">float</span>(lastTime - firstTime) / 6.);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        hitCandidate.hitHeight = maxValue;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        hitCandidateVec.push_back(hitCandidate);</div>
@@ -356,6 +356,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div>
 <div class="ttc" id="classreco__tool_1_1CandHitStandard_html_aa756c4a3cb71214a8b96d9981b9c06f3"><div class="ttname"><a href="../../d8/db2/classreco__tool_1_1CandHitStandard.html#aa756c4a3cb71214a8b96d9981b9c06f3">reco_tool::CandHitStandard::findHitCandidates</a></div><div class="ttdeci">void findHitCandidates(const recob::Wire::RegionsOfInterest_t::datarange_t &amp;, const size_t, const size_t, const size_t, HitCandidateVec &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5e/CandHitStandard__tool_8cc_source.html#l00049">CandHitStandard_tool.cc:49</a></div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classreco__tool_1_1CandHitStandard_html_a0cb6720b21fafaedb09e228d56e873fb"><div class="ttname"><a href="../../d8/db2/classreco__tool_1_1CandHitStandard.html#a0cb6720b21fafaedb09e228d56e873fb">reco_tool::CandHitStandard::fRoiThreshold</a></div><div class="ttdeci">const float fRoiThreshold</div><div class="ttdoc">minimum maximum to minimum peak distance </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d5e/CandHitStandard__tool_8cc_source.html#l00037">CandHitStandard_tool.cc:37</a></div></div>
 </div><!-- fragment -->
 </div>

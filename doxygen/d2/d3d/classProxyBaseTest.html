@@ -796,7 +796,7 @@ template&lt;typename Track &gt; </div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <span class="comment">// (the order is not guaranteed to be the same in expected and fetched)</span></div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      BOOST_TEST(</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        indexOf(expectedHits, hitPtr) !=</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        std::numeric_limits&lt;std::size_t&gt;::max()</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;std::size_t&gt;::max</a>()</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        );</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    } <span class="comment">// for hit</span></div>
@@ -858,7 +858,7 @@ template&lt;typename Track &gt; </div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      <span class="comment">// (the order is not guaranteed to be the same in expected and fetched)</span></div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      BOOST_TEST(</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        indexOf(expectedHits, hitPtr) !=</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        std::numeric_limits&lt;std::size_t&gt;::max()</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;std::size_t&gt;::max</a>()</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        );</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    } <span class="comment">// for special hit</span></div>
@@ -886,7 +886,7 @@ template&lt;typename Track &gt; </div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      <span class="comment">// with this check we just ask the hit is there</span></div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      <span class="comment">// (the order is not guaranteed to be the same in expected and fetched)</span></div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> index = indexOf(expectedHits, hitPtr);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      BOOST_TEST(index != std::numeric_limits&lt;std::size_t&gt;::max());</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      BOOST_TEST(index != <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;std::size_t&gt;::max</a>());</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;      BOOST_TEST(&amp;(hitInfo.main()) == &amp;expectedTrack);</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      BOOST_TEST(hitInfo.mainPtr() == expectedTrackPtr);</div>
@@ -937,7 +937,7 @@ template&lt;typename Track &gt; </div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      <span class="comment">// with this check we just ask the hit is there</span></div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;      <span class="comment">// (the order is not guaranteed to be the same in expected and fetched)</span></div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span> index = indexOf(expectedHits, hitPtr);</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      BOOST_TEST(index != std::numeric_limits&lt;std::size_t&gt;::max());</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      BOOST_TEST(index != <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;std::size_t&gt;::max</a>());</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;      BOOST_TEST(&amp;(iHit.main()) == &amp;expectedTrack);</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;      BOOST_TEST(iHit.mainPtr() == expectedTrackPtr);</div>
@@ -986,6 +986,7 @@ template&lt;typename Track &gt; </div>
 <div class="ttc" id="trackfinderalgorithms_8fcl_html_a5204d4188eee282d2235cd231d828bd2"><div class="ttname"><a href="../../d2/dbd/trackfinderalgorithms_8fcl.html#a5204d4188eee282d2235cd231d828bd2">tracks</a></div><div class="ttdeci">ClusterModuleLabel join with tracks</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/trackfinderalgorithms_8fcl_source.html#l00056">trackfinderalgorithms.fcl:56</a></div></div>
 <div class="ttc" id="structtag_1_1DirectHitAssns_html"><div class="ttname"><a href="../../db/d48/structtag_1_1DirectHitAssns.html">tag::DirectHitAssns</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d13/ProxyBaseTest__module_8cc_source.html#l00155">ProxyBaseTest_module.cc:155</a></div></div>
 <div class="ttc" id="PMTconfigurationExtraction__module_8cc_html_ac33ee765f5ad9f134540bac393721cfe"><div class="ttname"><a href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">get</a></div><div class="ttdeci">get()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d87/PMTconfigurationExtraction__module_8cc_source.html#l00168">PMTconfigurationExtraction_module.cc:168</a></div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="namespaceproxy_html_a6d533757bf74dcbd042f9ac20de6cec0"><div class="ttname"><a href="../../df/de7/namespaceproxy.html#a6d533757bf74dcbd042f9ac20de6cec0">proxy::withAssociatedMetaAs</a></div><div class="ttdeci">auto withAssociatedMetaAs(Args &amp;&amp;...args)</div><div class="ttdoc">Helper function to merge associated data with metadata. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d3b/withAssociated_8h_source.html#l00149">withAssociated.h:149</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aaae74cf315284bc0f44c2e050c119781"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">icarus::ns::util::size</a></div><div class="ttdeci">std::size_t size(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00561">FixedBins.h:561</a></div></div>
 <div class="ttc" id="classrecob_1_1TrackHitMeta_html"><div class="ttname"><a href="../../de/de2/classrecob_1_1TrackHitMeta.html">recob::TrackHitMeta</a></div><div class="ttdoc">Data related to recob::Hit associated with recob::Track.The purpose is to collect several variables t...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/de1/TrackHitMeta_8h_source.html#l00043">TrackHitMeta.h:43</a></div></div>

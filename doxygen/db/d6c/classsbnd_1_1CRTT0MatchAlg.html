@@ -1396,8 +1396,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">double</span> Vd = driftDirection * <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a>.DriftVelocity();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Shift the most postive end to the most positive limit</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">double</span> maxX = std::max(startX, endX);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">double</span> maxLimit = std::max(xLimits.first, xLimits.second);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">double</span> maxX = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(startX, endX);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">double</span> maxLimit = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(xLimits.first, xLimits.second);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">double</span> maxShift = maxLimit - maxX;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// Shift the most negative end to the most negative limit</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">double</span> minX = std::min(startX, endX);</div>
@@ -1408,10 +1408,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> t0min = minShift/Vd;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">//  if (t0min&gt;2500)  std::cout &lt;&lt; &quot; t0 min &quot; &lt;&lt; t0min &lt;&lt; &quot; t0max &quot; &lt;&lt; t0max &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> std::make_pair(std::min(t0min, t0max), std::max(t0min, t0max));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> std::make_pair(std::min(t0min, t0max), <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(t0min, t0max));</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// CRTT0MatchAlg::TrackT0Range()</span></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="namespacedetsim_html_a560adbb3abf95a23d45a53ed25d8c0c7"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detsim::detProp</a></div><div class="ttdeci">auto const detProp</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df8/SimWire__module_8cc_source.html#l00154">SimWire_module.cc:154</a></div></div>
 </div><!-- fragment -->
 </div>

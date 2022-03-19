@@ -789,7 +789,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            hitCandidate.maxDerivative = *(startItr + firstTime);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            hitCandidate.minDerivative = *(startItr + lastTime);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            hitCandidate.hitCenter     = roiStartTick + maxTime;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            hitCandidate.hitSigma      = std::max(2.,<span class="keywordtype">float</span>(lastTime - firstTime) / 6.);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            hitCandidate.hitSigma      = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(2.,<span class="keywordtype">float</span>(lastTime - firstTime) / 6.);</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            hitCandidate.hitHeight     = maxValue;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            hitCandidateVec.push_back(hitCandidate);</div>
@@ -801,6 +801,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classreco__tool_1_1CandHitICARUS_html_ad954e3b7dcf1e7162476fb875f9a3855"><div class="ttname"><a href="../../d3/dc3/classreco__tool_1_1CandHitICARUS.html#ad954e3b7dcf1e7162476fb875f9a3855">reco_tool::CandHitICARUS::findHitCandidates</a></div><div class="ttdeci">void findHitCandidates(const recob::Wire::RegionsOfInterest_t::datarange_t &amp;, size_t, size_t, size_t, HitCandidateVec &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d13/CandHitICARUS__tool_8cc_source.html#l00094">CandHitICARUS_tool.cc:94</a></div></div>
 </div><!-- fragment -->
 </div>

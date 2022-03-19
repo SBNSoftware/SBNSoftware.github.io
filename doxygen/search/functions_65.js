@@ -192,6 +192,7 @@ var searchData=
   ['escape',['escape',['../da/de8/classnlohmann_1_1json__pointer.html#a8abf3577f9a0087f29a233893cdc73ad',1,'nlohmann::json_pointer::escape()'],['../df/d96/MetadataSBN__service_8cc.html#a77cb3d81ac9f770cccd72d3c592799b8',1,'Escape():&#160;MetadataSBN_service.cc']]],
   ['escapingefraction',['EscapingEFraction',['../dd/d36/classlarg4_1_1ISCalcCorrelated.html#a7344cd6cdc7d82c71a7396a5d310eab2',1,'larg4::ISCalcCorrelated::EscapingEFraction()'],['../d4/d86/classlarg4_1_1ISCalculationCorrelated.html#ac88450ece723b50b94d68c9ed65f31b0',1,'larg4::ISCalculationCorrelated::EscapingEFraction()']]],
   ['essentiallyequal',['EssentiallyEqual',['../dd/de9/classcaf_1_1CAFMaker.html#a6862262de3731e6fcea8b1ce5ff2be03',1,'caf::CAFMaker']]],
+  ['estimatebaseline',['estimateBaseline',['../dc/dc4/classsbnd_1_1trigger_1_1pmtSoftwareTriggerProducer.html#a675e0aac5e7143d8350e119672d91c06',1,'sbnd::trigger::pmtSoftwareTriggerProducer']]],
   ['estimatebaselinestddev',['EstimateBaselineStdDev',['../da/dc3/classopdet_1_1OpDeconvolutionAlgWiener.html#aede9a5bb38916089c41e6a67edc20a63',1,'opdet::OpDeconvolutionAlgWiener']]],
   ['estimatefluctuations',['EstimateFluctuations',['../d3/d47/classhit_1_1DPRawHitFinder.html#ac4a2e230f393678103d444e9dc423064',1,'hit::DPRawHitFinder']]],
   ['estimateheight',['EstimateHeight',['../d3/d01/PCAngleKinkFinder__module_8cc.html#a9cccea9fc3b9a3b647eff572d77f0ca9',1,'PCAngleKinkFinder_module.cc']]],

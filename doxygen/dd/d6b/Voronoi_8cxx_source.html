@@ -828,7 +828,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="keywordtype">double</span> maxRadius = *std::max_element(radSqrVec.begin(),radSqrVec.end());</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    delta  = std::max(5.<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-7, maxRadius - radius);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    delta  = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(5.<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-7, maxRadius - radius);</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">if</span> (radius &gt; 1000.)</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    {</div>
@@ -1216,7 +1216,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    <span class="keywordtype">bool</span>          outsideHull(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;    <a class="code" href="../../db/d08/namespacedcel2d.html#ae0b6902d81ed3331f0047ff86ed44808">dcel2d::Point</a> vertexPos(vertex.<a class="code" href="../../da/d40/classdcel2d_1_1Vertex.html#a7a15dff047cf8b1c749dda87c57ea61b">getCoords</a>()[0],vertex.<a class="code" href="../../da/d40/classdcel2d_1_1Vertex.html#a7a15dff047cf8b1c749dda87c57ea61b">getCoords</a>()[1],NULL);</div>
 <div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    distToConvexHull  = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    distToConvexHull  = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    firstHullPointItr = <a class="code" href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#a2009ad3e839e201d2e5843a85e7d25c3">fConvexHullList</a>.begin();</div>
 <div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;</div>
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    <span class="comment">// Now check to see if the vertex is inside the convex hull</span></div>
@@ -1304,7 +1304,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    <span class="keywordtype">double</span> totalArea(0.);</div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    <span class="keywordtype">int</span>    nNonInfiniteFaces(0);</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="keywordtype">double</span> smallestArea(std::numeric_limits&lt;double&gt;::max());</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="keywordtype">double</span> smallestArea(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>());</div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    <span class="keywordtype">double</span> largestArea(0.);</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;</div>
 <div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    std::vector&lt;std::pair&lt;double,const dcel2d::Face*&gt;&gt; areaFaceVec;</div>
@@ -1332,7 +1332,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;</div>
 <div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;            <span class="keywordflow">if</span> (!halfEdge)</div>
 <div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;            {</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                faceArea = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                faceArea = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                doNext   = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;            }</div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
@@ -1350,7 +1350,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;</div>
 <div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;            <span class="keywordflow">if</span> (!halfEdge-&gt;<a class="code" href="../../db/d38/classdcel2d_1_1HalfEdge.html#ab588ce8d93d5162c988a8d420a351e0a">getTargetVertex</a>() || !twinEdge-&gt;<a class="code" href="../../db/d38/classdcel2d_1_1HalfEdge.html#ab588ce8d93d5162c988a8d420a351e0a">getTargetVertex</a>())</div>
 <div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;            {</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                faceArea = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                faceArea = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;            }</div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;</div>
@@ -1381,7 +1381,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;            <span class="keywordflow">if</span> (!halfEdge)</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            {</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                faceArea = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                faceArea = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;            }</div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;</div>
@@ -1390,12 +1390,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        areaFaceVec.emplace_back(faceArea,&amp;face);</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        <span class="keywordflow">if</span> (faceArea &lt; std::numeric_limits&lt;double&gt;::max() &amp;&amp; faceArea &gt; 0.)</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        <span class="keywordflow">if</span> (faceArea &lt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>() &amp;&amp; faceArea &gt; 0.)</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        {</div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;            nNonInfiniteFaces++;</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;            totalArea    += faceArea;</div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;            smallestArea  = std::min(faceArea,smallestArea);</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;            largestArea   = std::max(faceArea,largestArea);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;            largestArea   = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(faceArea,largestArea);</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        }</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keywordflow">if</span> (faceArea &lt; 1.<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-4) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;---&gt; face area &lt;= 0: &quot;</span> &lt;&lt; faceArea &lt;&lt; <span class="stringliteral">&quot;, with &quot;</span> &lt;&lt; numEdges &lt;&lt; <span class="stringliteral">&quot; edges&quot;</span> &lt;&lt; std::endl;</div>
@@ -1407,7 +1407,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    std::sort(areaFaceVec.begin(),areaFaceVec.end(),[](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a>, <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a9453748558088ae22499027391c13aaf">right</a>){<span class="keywordflow">return</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a>.first &lt; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a9453748558088ae22499027391c13aaf">right</a>.first;});</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
 <div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;    std::vector&lt;std::pair&lt;double,const dcel2d::Face*&gt;&gt;::iterator firstItr = std::find_if(areaFaceVec.begin(),areaFaceVec.end(),[](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; val){<span class="keywordflow">return</span> val.first &gt; 0.;});</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    std::vector&lt;std::pair&lt;double,const dcel2d::Face*&gt;&gt;::iterator lastItr = std::find_if(areaFaceVec.begin(),areaFaceVec.end(),[](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; val){<span class="keywordflow">return</span> !(val.first &lt; std::numeric_limits&lt;double&gt;::max());});</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    std::vector&lt;std::pair&lt;double,const dcel2d::Face*&gt;&gt;::iterator lastItr = std::find_if(areaFaceVec.begin(),areaFaceVec.end(),[](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; val){<span class="keywordflow">return</span> !(val.first &lt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>());});</div>
 <div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
 <div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    <span class="keywordtype">size_t</span> nToKeep = 0.8 * std::distance(firstItr,lastItr);</div>
 <div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;</div>
@@ -1453,7 +1453,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <span class="comment">// Set up the winner</span></div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    <a class="code" href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#abdf19e349c893b0b291b0c23919c2bc8">PointPair</a> closestEdge(prevPoint,curPoint);</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    closestDistance = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    closestDistance = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;double&gt;::max</a>();</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="comment">// curPointItr is meant to point to the second point</span></div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    <span class="keywordflow">while</span>(curPointItr != <a class="code" href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#a74a6f25cdd10e1b8510e1efb13c4b1c9">fPointList</a>.end())</div>
@@ -1531,6 +1531,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classvoronoi2d_1_1VoronoiDiagram_html_abfdc714c5ec8243394f77f81de70ae84"><div class="ttname"><a href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#abfdc714c5ec8243394f77f81de70ae84">voronoi2d::VoronoiDiagram::isInsideConvexHull</a></div><div class="ttdeci">bool isInsideConvexHull(const dcel2d::Vertex &amp;) const </div><div class="ttdoc">Is a vertex inside the convex hull - meant to be a fast check. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d6b/Voronoi_8cxx_source.html#l01102">Voronoi.cxx:1102</a></div></div>
 <div class="ttc" id="classvoronoi2d_1_1IEvent_html_acd05fe61efa39c3a56bb837ed343d506"><div class="ttname"><a href="../../d6/d91/classvoronoi2d_1_1IEvent.html#acd05fe61efa39c3a56bb837ed343d506">voronoi2d::IEvent::setInvalid</a></div><div class="ttdeci">virtual void setInvalid() const =0</div><div class="ttdoc">Interface for configuring the particular algorithm tool. </div></div>
 <div class="ttc" id="classvoronoi2d_1_1IEvent_html_a54e26b2cf8fdba3288a9c3c9cd375872"><div class="ttname"><a href="../../d6/d91/classvoronoi2d_1_1IEvent.html#a54e26b2cf8fdba3288a9c3c9cd375872">voronoi2d::IEvent::isCircle</a></div><div class="ttdeci">virtual bool isCircle() const =0</div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classvoronoi2d_1_1VoronoiDiagram_html_a3aa6f7a03f5546a0cf6dba6a0d574273"><div class="ttname"><a href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#a3aa6f7a03f5546a0cf6dba6a0d574273">voronoi2d::VoronoiDiagram::fXMax</a></div><div class="ttdeci">double fXMax</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d6b/Voronoi_8h_source.html#l00198">Voronoi.h:198</a></div></div>
 <div class="ttc" id="classvoronoi2d_1_1IEvent_html_a6a5fa2e627db72fa5a210dd8abfe422a"><div class="ttname"><a href="../../d6/d91/classvoronoi2d_1_1IEvent.html#a6a5fa2e627db72fa5a210dd8abfe422a">voronoi2d::IEvent::isValid</a></div><div class="ttdeci">virtual bool isValid() const =0</div></div>
 <div class="ttc" id="classvoronoi2d_1_1VoronoiDiagram_html_a172c07c50577903f4697248facabde3a"><div class="ttname"><a href="../../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html#a172c07c50577903f4697248facabde3a">voronoi2d::VoronoiDiagram::Area</a></div><div class="ttdeci">double Area() const </div><div class="ttdoc">Computes the area of the enclosed convext hull. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d6b/Voronoi_8cxx_source.html#l00104">Voronoi.cxx:104</a></div></div>

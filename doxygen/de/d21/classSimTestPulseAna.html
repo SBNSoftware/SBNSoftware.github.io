@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea96febb3cccee89734ceea7baa9dabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe58f99d4e63c9ba3324f784d8ba7bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/classSimTestPulseAna.html#abe58f99d4e63c9ba3324f784d8ba7bec">endJob</a> () override</td></tr>
 <tr class="separator:abe58f99d4e63c9ba3324f784d8ba7bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b4c5d1383185fa6ec6a6067b87fe57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/classSimTestPulseAna.html#ae5b4c5d1383185fa6ec6a6067b87fe57">compute_params</a> (const std::vector&lt; float &gt; &amp;wf, float &amp;mean, float &amp;rms, float &amp;min, float &amp;max, int &amp;argmin, int &amp;argmax)</td></tr>
+<tr class="memitem:ae5b4c5d1383185fa6ec6a6067b87fe57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/classSimTestPulseAna.html#ae5b4c5d1383185fa6ec6a6067b87fe57">compute_params</a> (const std::vector&lt; float &gt; &amp;wf, float &amp;mean, float &amp;rms, float &amp;min, float &amp;<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>, int &amp;argmin, int &amp;argmax)</td></tr>
 <tr class="separator:ae5b4c5d1383185fa6ec6a6067b87fe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bff1e2257c50773a5106932e0eb6fe2"><td class="memItemLeft" align="right" valign="top">TTree *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/classSimTestPulseAna.html#a5bff1e2257c50773a5106932e0eb6fe2">CreateTree</a> (std::string <a class="el" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>)</td></tr>
 <tr class="separator:a5bff1e2257c50773a5106932e0eb6fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -692,13 +692,13 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="../../d1/d75/SimTestPulseAna__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d1/d75/SimTestPulseAna__module_8cc_source.html">SimTestPulseAna_module.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a> = std_dev = 0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    min = std::numeric_limits&lt;float&gt;::max();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    max = std::numeric_limits&lt;float&gt;::min();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    min = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = std::numeric_limits&lt;float&gt;::min();</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> idx=0; idx&lt;wf.size(); ++idx)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v = wf[idx];</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">if</span>(v &lt; min) { min = v; argmin=idx; }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>(v &gt; max) { max = v; argmax=idx; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>(v &gt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>) { <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = v; argmax=idx; }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a> += v;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a> /= (float)(wf.size());</div>
@@ -706,6 +706,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std_dev += pow(v - <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a>,2);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std_dev = sqrt(std_dev / (<span class="keywordtype">float</span>)(wf.size()));</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="namespacepmtana_html_afea8da0c88fccc3252529b6a49284b4a"><div class="ttname"><a href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">pmtana::mean</a></div><div class="ttdeci">double mean(const std::vector&lt; short &gt; &amp;wf, size_t start, size_t nsample)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de4/UtilFunc_8cxx_source.html#l00013">UtilFunc.cxx:13</a></div></div>
 </div><!-- fragment -->
 </div>
