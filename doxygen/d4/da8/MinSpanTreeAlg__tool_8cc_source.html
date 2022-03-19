@@ -492,7 +492,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        aveNumEdges += float(curEdgeMap[<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>].<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>());</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        maxNumEdges  = std::max(maxNumEdges,curEdgeMap[<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>].<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>());</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        maxNumEdges  = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(maxNumEdges,curEdgeMap[<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>].<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>());</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    aveNumEdges /= float(hitPairList.size());</div>
@@ -545,7 +545,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="keywordtype">float</span>                     pcaWidth  = 3.0*sqrt(pca.<a class="code" href="../../da/d30/classreco_1_1PrincipalComponents.html#a63b9daab10ace7b78d01560531b7742a">getEigenValues</a>()[1]);</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <span class="keywordtype">float</span>                     pcaHeight = 3.0*sqrt(pca.<a class="code" href="../../da/d30/classreco_1_1PrincipalComponents.html#a63b9daab10ace7b78d01560531b7742a">getEigenValues</a>()[0]);</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <span class="keyword">const</span> Eigen::Vector3f&amp;    pcaCenter = pca.<a class="code" href="../../da/d30/classreco_1_1PrincipalComponents.html#ae4372271684515437a46256ca8a24802">getAvePosition</a>();</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="keywordtype">float</span>                     alpha     = std::min(<span class="keywordtype">float</span>(1.),std::max(<span class="keywordtype">float</span>(0.001),pcaWidth/pcaLen));</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="keywordtype">float</span>                     alpha     = std::min(<span class="keywordtype">float</span>(1.),<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(<span class="keywordtype">float</span>(0.001),pcaWidth/pcaLen));</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            </div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <span class="comment">// Create a temporary container for the isolated points</span></div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <a class="code" href="../../d1/d57/namespacereco.html#aab75a768396cf90cd2c732e28eea246a">reco::ProjectedPointList</a>  isolatedPointList;</div>
@@ -585,7 +585,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                <span class="comment">// Call the AStar function to try to find the best path...</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="comment">//                AStar(startHit,stopHit,alpha,topNode,clusterParams);</span></div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    </div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordtype">float</span> cost(std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordtype">float</span> cost(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    </div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                <a class="code" href="../../d0/d5f/classlar__cluster3d_1_1MinSpanTreeAlg.html#a5e6e2861ea6a7157166cb9c1d32b1ece">LeastCostPath</a>(curEdgeMap[startHit].<a class="code" href="../../d9/dd2/selectors_8fcl.html#a2602587bf9a1efd1e11d4fdeb2da110a">front</a>(),stopHit,clusterParams,cost);</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    </div>
@@ -728,7 +728,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    </div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    reco::Hit3DToEdgeMap::const_iterator edgeListItr = curEdgeMap.find(std::get&lt;1&gt;(curEdge));</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    showMeTheMoney = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    showMeTheMoney = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>();</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (edgeListItr != curEdgeMap.end() &amp;&amp; !edgeListItr-&gt;second.empty())</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    {</div>
@@ -754,7 +754,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            <a class="code" href="../../d0/d5f/classlar__cluster3d_1_1MinSpanTreeAlg.html#a5e6e2861ea6a7157166cb9c1d32b1ece">LeastCostPath</a>(edge,goalNode,clusterParams,currentCost);</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="keywordflow">if</span> (currentCost &lt; std::numeric_limits&lt;float&gt;::max())</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="keywordflow">if</span> (currentCost &lt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>())</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            {</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                showMeTheMoney = std::get&lt;2&gt;(edge) + currentCost;</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;                <span class="keywordflow">break</span>;</div>
@@ -762,7 +762,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        }</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    }</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordflow">if</span> (showMeTheMoney &lt; std::numeric_limits&lt;float&gt;::max())</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordflow">if</span> (showMeTheMoney &lt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>())</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    {</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        clusterParams.<a class="code" href="../../d7/d9b/classreco_1_1ClusterParameters.html#a65711b62acca2cfd6d28162db3856284">getBestHitPairListPtr</a>().push_front(std::get&lt;1&gt;(curEdge));</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        clusterParams.<a class="code" href="../../d7/d9b/classreco_1_1ClusterParameters.html#aad7749ef41e14ddd73061b0113334e17">getBestEdgeList</a>().push_front(curEdge);</div>
@@ -805,7 +805,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <a class="code" href="../../d1/d57/namespacereco.html#ad2e55059e696dd652ce2edaccbb18b66">reco::HitPairListPtr</a> hitPairListPtr;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordtype">float</span>               bestQuality(0.);</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keywordtype">float</span>               curEdgeWeight = std::max(0.3,std::get&lt;2&gt;(curEdge));</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keywordtype">float</span>               curEdgeWeight = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(0.3,std::get&lt;2&gt;(curEdge));</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="keywordtype">float</span>               curEdgeProj(1./curEdgeWeight);</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    reco::Hit3DToEdgeMap::const_iterator edgeListItr = hitToEdgeMap.find(std::get&lt;1&gt;(curEdge));</div>
@@ -818,7 +818,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordtype">float</span>                  curEdgeVec[] = {secondHitPos[0]-firstHitPos[0],secondHitPos[1]-firstHitPos[1],secondHitPos[2]-firstHitPos[2]};</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="keywordtype">float</span>                  curEdgeMag   = std::sqrt(curEdgeVec[0]*curEdgeVec[0]+curEdgeVec[1]*curEdgeVec[1]+curEdgeVec[2]*curEdgeVec[2]);</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        curEdgeMag = std::max(<span class="keywordtype">float</span>(0.1),curEdgeMag);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        curEdgeMag = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(<span class="keywordtype">float</span>(0.1),curEdgeMag);</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; edge : edgeListItr-&gt;second)</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        {</div>
@@ -1140,6 +1140,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classlar__cluster3d_1_1kdTree_html_ab61ed2c554aa6deb4727f4aaa7a916a1"><div class="ttname"><a href="../../de/ddb/classlar__cluster3d_1_1kdTree.html#ab61ed2c554aa6deb4727f4aaa7a916a1">lar_cluster3d::kdTree::KdTreeNodeList</a></div><div class="ttdeci">std::list&lt; KdTreeNode &gt; KdTreeNodeList</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d58/kdTree_8h_source.html#l00067">kdTree.h:67</a></div></div>
 <div class="ttc" id="kdTree_8h_html"><div class="ttname"><a href="../../dc/d58/kdTree_8h.html">kdTree.h</a></div><div class="ttdoc">Implements a kdTree for use in clustering. </div></div>
 <div class="ttc" id="classlar__cluster3d_1_1kdTree_html_a1023bdc1a739553ad8f3228e315a6c3f"><div class="ttname"><a href="../../de/ddb/classlar__cluster3d_1_1kdTree.html#a1023bdc1a739553ad8f3228e315a6c3f">lar_cluster3d::kdTree::FindNearestNeighbors</a></div><div class="ttdeci">size_t FindNearestNeighbors(const reco::ClusterHit3D *, const KdTreeNode &amp;, CandPairList &amp;, float &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d50/kdTree_8cxx_source.html#l00170">kdTree.cxx:170</a></div></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a0c5d3db5d5490bc3fc8fb3bbdb282f36"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a0c5d3db5d5490bc3fc8fb3bbdb282f36">geo::GeometryCore::ChannelToWire</a></div><div class="ttdeci">std::vector&lt; geo::WireID &gt; ChannelToWire(raw::ChannelID_t const channel) const </div><div class="ttdoc">Returns a list of wires connected to the specified TPC channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l01107">GeometryCore.cxx:1107</a></div></div>
 <div class="ttc" id="Cluster3D_8h_html"><div class="ttname"><a href="../../d0/daa/Cluster3D_8h.html">Cluster3D.h</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aaae74cf315284bc0f44c2e050c119781"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">icarus::ns::util::size</a></div><div class="ttdeci">std::size_t size(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00561">FixedBins.h:561</a></div></div>

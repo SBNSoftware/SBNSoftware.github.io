@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// we start the index with the best guess that all the items will have</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// a unique key and they are contiguous:</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// the index would have the same size as the data</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt;size_t&gt; Index(data.size(), std::numeric_limits&lt;size_t&gt;::max());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt;size_t&gt; Index(data.size(), <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;size_t&gt;::max</a>());</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">size_t</span> min_size = 0; <span class="comment">// minimum size needed to hold all keys</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
@@ -136,8 +136,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (Index.size() &lt;= key) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// make room for the entry: double the size</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        Index.resize(</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          std::max(key + 1, Index.size() * 2),</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          std::numeric_limits&lt;size_t&gt;::max()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(key + 1, Index.size() * 2),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;size_t&gt;::max</a>()</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          );</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      } <span class="comment">// if expand index</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      Index[key] = iDatum;</div>
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">if</span> (key &gt;= min_size) min_size = key + 1;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">if</span> (Index.size() &lt;= key) {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// make room for the entry: double the size</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        Index.resize(std::max(key + 1, Index.size() * 2), <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        Index.resize(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(key + 1, Index.size() * 2), <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      } <span class="comment">// if expand index</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      Index[key] = &amp;datum;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    } <span class="comment">// for datum</span></div>
@@ -207,6 +207,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // LARDATA_UTILITIES_MAKEINDEX_H</span></div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="namespaceutil_html_a38f3c0e9aaa9c0640cefeb60a7abeb51"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a38f3c0e9aaa9c0640cefeb60a7abeb51">util::MakeIndex</a></div><div class="ttdeci">std::vector&lt; size_t &gt; MakeIndex(Coll const &amp;data, KeyOf key_of=KeyOf())</div><div class="ttdoc">Creates a map of indices from an existing collection. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/MakeIndex_8h_source.html#l00043">MakeIndex.h:43</a></div></div>
 <div class="ttc" id="namespacelar_1_1dump_html_a71d4403edbac4d265176f8677118194f"><div class="ttname"><a href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">lar::dump::vector</a></div><div class="ttdeci">auto vector(Vector const &amp;v)</div><div class="ttdoc">Returns a manipulator which will print the specified array. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da9/DumpUtils_8h_source.html#l00265">DumpUtils.h:265</a></div></div>
 <div class="ttc" id="namespaceutil_html_a18642be0ec704376f3a90a55a6258587"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a18642be0ec704376f3a90a55a6258587">util::MakeMap</a></div><div class="ttdeci">auto MakeMap(Coll const &amp;data, KeyOf key_of=KeyOf()) -&gt; std::vector&lt; decltype(key_of(*(data.begin()))) const * &gt;</div><div class="ttdoc">Creates a map of objects from an existing collection. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/MakeIndex_8h_source.html#l00099">MakeIndex.h:99</a></div></div>

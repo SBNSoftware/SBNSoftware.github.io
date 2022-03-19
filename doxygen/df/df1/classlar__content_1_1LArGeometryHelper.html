@@ -254,7 +254,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">if</span> ((pLineGap-&gt;GetLineStartZ() &gt; maxZ) || (pLineGap-&gt;GetLineEndZ() &lt; minZ))</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> gapMinZ(std::max(minZ, pLineGap-&gt;GetLineStartZ()));</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> gapMinZ(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(minZ, pLineGap-&gt;GetLineStartZ()));</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> gapMaxZ(std::min(maxZ, pLineGap-&gt;GetLineEndZ()));</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> ((gapMaxZ - gapMinZ) &gt; std::numeric_limits&lt;float&gt;::epsilon())</div>
@@ -263,6 +263,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordflow">return</span> gapDeltaZ;</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="reco__sbnd_8fcl_html_a8bcdaf138f1238e67ebf243c201082df"><div class="ttname"><a href="../../df/df8/reco__sbnd_8fcl.html#a8bcdaf138f1238e67ebf243c201082df">pandora</a></div><div class="ttdeci">required by fuzzyCluster table::sbnd_g4_services gaushitTruthMatch pandora</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df8/reco__sbnd_8fcl_source.html#l00180">reco_sbnd.fcl:180</a></div></div>
 </div><!-- fragment -->
 </div>

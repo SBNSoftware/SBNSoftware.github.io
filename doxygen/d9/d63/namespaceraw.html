@@ -213,12 +213,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac59223371efaecdc5ef8389bc976a20a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a">InvalidChannelID</a> = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&gt;::max()</td></tr>
+<tr class="memitem:ac59223371efaecdc5ef8389bc976a20a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a">InvalidChannelID</a> = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td></tr>
 <tr class="memdesc:ac59223371efaecdc5ef8389bc976a20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of an invalid channel.  <a href="#ac59223371efaecdc5ef8389bc976a20a">More...</a><br/></td></tr>
 <tr class="separator:ac59223371efaecdc5ef8389bc976a20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f047463077056c363283cbefbae0c8d"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/namespaceraw.html#a7f047463077056c363283cbefbae0c8d">onemask</a> = 0x003f</td></tr>
 <tr class="separator:a7f047463077056c363283cbefbae0c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75df51eee07d044d0794ff094f55d820"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/namespaceraw.html#a75df51eee07d044d0794ff094f55d820">InvalidChannel</a> = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&gt;::max()</td></tr>
+<tr class="memitem:a75df51eee07d044d0794ff094f55d820"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d63/namespaceraw.html#a75df51eee07d044d0794ff094f55d820">InvalidChannel</a> = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td></tr>
 <tr class="memdesc:a75df51eee07d044d0794ff094f55d820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnemonics for an invalid channel number.  <a href="#a75df51eee07d044d0794ff094f55d820">More...</a><br/></td></tr>
 <tr class="separator:a75df51eee07d044d0794ff094f55d820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1032,7 +1032,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    }</div>
 <div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;</div>
 <div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    <span class="keywordtype">short</span> high = (wf_size &gt;&gt; (<span class="keyword">sizeof</span>(short)*8-1));</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="keywordtype">short</span> <a class="code" href="../../d6/d69/clusteralgorithms_8fcl.html#ae8c2886a2cc7a0fb0fbf4efdb2d32257">low</a>  = wf_size % ((std::numeric_limits&lt;short&gt;::max()+1));</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="keywordtype">short</span> <a class="code" href="../../d6/d69/clusteralgorithms_8fcl.html#ae8c2886a2cc7a0fb0fbf4efdb2d32257">low</a>  = wf_size % ((<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;short&gt;::max</a>()+1));</div>
 <div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    comp_short.push_back(high);</div>
 <div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    comp_short.push_back(low);</div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    comp_short.push_back(*wf.begin());</div>
@@ -1100,6 +1100,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;  }</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="clusteralgorithms_8fcl_html_ae8c2886a2cc7a0fb0fbf4efdb2d32257"><div class="ttname"><a href="../../d6/d69/clusteralgorithms_8fcl.html#ae8c2886a2cc7a0fb0fbf4efdb2d32257">low</a></div><div class="ttdeci">standard_dbscan3dalg useful for diagnostics hits not in a line will not be clustered on on only for track like only for track like on on the smaller the less shower like tracks low</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/clusteralgorithms_8fcl_source.html#l00253">clusteralgorithms.fcl:253</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aac918da84f16d53ad17bab4f817da1c4"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">icarus::ns::util::end</a></div><div class="ttdeci">auto end(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00585">FixedBins.h:585</a></div></div>
 <div class="ttc" id="namespaceraw_html_af6cebfe404656da04da63aadb9811aeb"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#af6cebfe404656da04da63aadb9811aeb">raw::add_to_sequence_terminate</a></div><div class="ttdeci">void add_to_sequence_terminate(std::vector&lt; bool &gt; array, std::vector&lt; bool &gt; &amp;cmp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/raw_8cxx_source.html#l01203">raw.cxx:1203</a></div></div>
@@ -2781,7 +2782,7 @@ raw::Uncompress(digit.ADC(), uncompressed, digit.ADC());</pre>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a> raw::InvalidChannel = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&gt;::max()</td>
+          <td class="memname">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a> raw::InvalidChannel = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#ab3db8feaa51f2c564eb00582c3d72590">Channel_t</a>&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2797,7 +2798,7 @@ raw::Uncompress(digit.ADC(), uncompressed, digit.ADC());</pre>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a> raw::InvalidChannelID = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&gt;::max()</td>
+          <td class="memname">constexpr <a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a> raw::InvalidChannelID = std::numeric_limits&lt;<a class="el" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">ChannelID_t</a>&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">

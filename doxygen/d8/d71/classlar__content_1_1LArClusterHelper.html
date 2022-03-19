@@ -289,7 +289,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/d12/LArClusterHelper_8cc_source.html#l00364">364</a> of file <a class="el" href="../../db/d12/LArClusterHelper_8cc_source.html">LArClusterHelper.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;{</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    averageZ = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    averageZ = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>();</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a> &gt; xmax)</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
@@ -320,6 +320,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    averageZ = zsum / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a>);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="run__vertexcharge__icarus_8fcl_html_a0bb005bed46cb3379a0703e7b92b23c5"><div class="ttname"><a href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a></div><div class="ttdeci">process_name pandoraGausCryo1 vertexChargeCryo1 vertexStubCryo1 xmin</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d48/run__vertexcharge__icarus_8fcl_source.html#l00109">run_vertexcharge_icarus.fcl:109</a></div></div>
 <div class="ttc" id="IntegerRanges__test_8cc_html_abbc7e5f346bfa932ca51b4b07ccef76d"><div class="ttname"><a href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a></div><div class="ttdeci">std::size_t count(Cont const &amp;cont)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/df5/IntegerRanges__test_8cc_source.html#l00029">IntegerRanges_test.cc:29</a></div></div>
@@ -390,11 +391,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_FOUND);</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> minX(std::min(lowerBound.GetX(), upperBound.GetX()));</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxX(std::max(lowerBound.GetX(), upperBound.GetX()));</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxX(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(lowerBound.GetX(), upperBound.GetX()));</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> minY(std::min(lowerBound.GetY(), upperBound.GetY()));</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxY(std::max(lowerBound.GetY(), upperBound.GetY()));</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxY(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(lowerBound.GetY(), upperBound.GetY()));</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> minZ(std::min(lowerBound.GetZ(), upperBound.GetZ()));</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxZ(std::max(lowerBound.GetZ(), upperBound.GetZ()));</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> maxZ(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(lowerBound.GetZ(), upperBound.GetZ()));</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> OrderedCaloHitList::value_type &amp;layerEntry : pCluster-&gt;GetOrderedCaloHitList())</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    {</div>
@@ -416,6 +417,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    }</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    caloHitList.sort(<a class="code" href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#a5c6b1f6eb6de0c5ede0315d44119b3af">LArClusterHelper::SortHitsByPosition</a>);</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArClusterHelper_html_a5c6b1f6eb6de0c5ede0315d44119b3af"><div class="ttname"><a href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#a5c6b1f6eb6de0c5ede0315d44119b3af">lar_content::LArClusterHelper::SortHitsByPosition</a></div><div class="ttdeci">static bool SortHitsByPosition(const pandora::CaloHit *const pLhs, const pandora::CaloHit *const pRhs)</div><div class="ttdoc">Sort calo hits by their position (use Z, followed by X, followed by Y) </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/LArClusterHelper_8cc_source.html#l00708">LArClusterHelper.cc:708</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -874,7 +876,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="../../db/d12/LArClusterHelper_8cc_source.html#l00283">283</a> of file <a class="el" href="../../db/d12/LArClusterHelper_8cc_source.html">LArClusterHelper.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">bool</span> distanceFound(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">float</span> minDistanceSquared(std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">float</span> minDistanceSquared(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    CartesianVector closestPosition1(0.f, 0.f, 0.f);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    CartesianVector closestPosition2(0.f, 0.f, 0.f);</div>
@@ -916,6 +918,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    outputPosition1 = closestPosition1;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    outputPosition2 = closestPosition2;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -971,12 +974,12 @@ Static Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keyword">const</span> OrderedCaloHitList &amp;orderedCaloHitList(pCluster-&gt;GetOrderedCaloHitList());</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a>(std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">float</span> ymin(std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">float</span> zmin(std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">float</span> xmax(-std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">float</span> ymax(-std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">float</span> zmax(-std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a>(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">float</span> ymin(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">float</span> zmin(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">float</span> xmax(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordtype">float</span> ymax(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">float</span> zmax(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">for</span> (OrderedCaloHitList::const_iterator ochIter = orderedCaloHitList.begin(), ochIterEnd = orderedCaloHitList.end(); ochIter != ochIterEnd; ++ochIter)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
@@ -985,17 +988,18 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keyword">const</span> CaloHit *<span class="keyword">const</span> pCaloHit = *hIter;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keyword">const</span> CartesianVector &amp;<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>(pCaloHit-&gt;GetPositionVector());</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <a class="code" href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a> = std::min(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetX(), <a class="code" href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a>);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            xmax = std::max(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetX(), xmax);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            xmax = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetX(), xmax);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            ymin = std::min(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetY(), ymin);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            ymax = std::max(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetY(), ymax);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            ymax = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetY(), ymax);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            zmin = std::min(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetZ(), zmin);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            zmax = std::max(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetZ(), zmax);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            zmax = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.GetZ(), zmax);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        }</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    minimumCoordinate.SetValues(xmin, ymin, zmin);</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    maximumCoordinate.SetValues(xmax, ymax, zmax);</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="run__vertexcharge__icarus_8fcl_html_a0bb005bed46cb3379a0703e7b92b23c5"><div class="ttname"><a href="../../d4/d48/run__vertexcharge__icarus_8fcl.html#a0bb005bed46cb3379a0703e7b92b23c5">xmin</a></div><div class="ttdeci">process_name pandoraGausCryo1 vertexChargeCryo1 vertexStubCryo1 xmin</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d48/run__vertexcharge__icarus_8fcl_source.html#l00109">run_vertexcharge_icarus.fcl:109</a></div></div>
 </div><!-- fragment -->
@@ -1729,9 +1733,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// ATTN In 2D case, we will actually calculate the quadrature sum of deltaX and deltaU/V/W</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> minX(std::numeric_limits&lt;float&gt;::max()), maxX(-std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">float</span> minY(std::numeric_limits&lt;float&gt;::max()), maxY(-std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> minZ(std::numeric_limits&lt;float&gt;::max()), maxZ(-std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> minX(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>()), maxX(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">float</span> minY(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>()), maxY(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> minZ(<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>()), maxZ(-<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::numeric_limits&lt;float&gt;::max</a>());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span> (OrderedCaloHitList::const_iterator iter = orderedCaloHitList.begin(), iterEnd = orderedCaloHitList.end(); iter != iterEnd; ++iter)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
@@ -1739,17 +1743,18 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">const</span> CartesianVector &amp;hitPosition((*hitIter)-&gt;GetPositionVector());</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            minX = std::min(hitPosition.GetX(), minX);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            maxX = std::max(hitPosition.GetX(), maxX);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            maxX = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(hitPosition.GetX(), maxX);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            minY = std::min(hitPosition.GetY(), minY);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            maxY = std::max(hitPosition.GetY(), maxY);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            maxY = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(hitPosition.GetY(), maxY);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            minZ = std::min(hitPosition.GetZ(), minZ);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            maxZ = std::max(hitPosition.GetZ(), maxZ);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            maxZ = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(hitPosition.GetZ(), maxZ);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> deltaX(maxX - minX), deltaY(maxY - minY), deltaZ(maxZ - minZ);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> (deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

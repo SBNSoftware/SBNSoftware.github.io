@@ -438,7 +438,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordtype">int</span>    curWire    = hitPair-&gt;getHits()[planeToCheck]-&gt;WireID().Wire;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordtype">double</span> deltaTicks = referenceTicks - hitPair-&gt;getHits()[planeToCheck]-&gt;getTimeTicks();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            maxDeltaTicks = std::max(maxDeltaTicks, deltaTicks);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            maxDeltaTicks = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(maxDeltaTicks, deltaTicks);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            minDeltaTicks = std::min(minDeltaTicks, deltaTicks);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (bestDeltaTicks &gt; fabs(deltaTicks))</div>
@@ -472,12 +472,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        bestDeltaTicks = nextBestDeltaTicks;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    bestDeltaTicks = std::max(std::min(bestDeltaTicks,<a class="code" href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a32fb5bb0c5a4aca51956d6fe8dd8c8e4">m_maximumDeltaTicks</a>), <a class="code" href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a0b1cfd528a91ee16de34140d421da403">m_minimumDeltaTicks</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    bestDeltaTicks = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(std::min(bestDeltaTicks,<a class="code" href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a32fb5bb0c5a4aca51956d6fe8dd8c8e4">m_maximumDeltaTicks</a>), <a class="code" href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a0b1cfd528a91ee16de34140d421da403">m_minimumDeltaTicks</a>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (minDeltaTicks * maxDeltaTicks &gt; 0. &amp;&amp; bestDeltaTicks &gt; 30.) bestDeltaTicks = 0.;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> bestDeltaTicks;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SkeletonAlg_html_a0b1cfd528a91ee16de34140d421da403"><div class="ttname"><a href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a0b1cfd528a91ee16de34140d421da403">lar_cluster3d::SkeletonAlg::m_minimumDeltaTicks</a></div><div class="ttdeci">double m_minimumDeltaTicks</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dfc/SkeletonAlg_8h_source.html#l00084">SkeletonAlg.h:84</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SkeletonAlg_html_a32fb5bb0c5a4aca51956d6fe8dd8c8e4"><div class="ttname"><a href="../../d2/d2b/classlar__cluster3d_1_1SkeletonAlg.html#a32fb5bb0c5a4aca51956d6fe8dd8c8e4">lar_cluster3d::SkeletonAlg::m_maximumDeltaTicks</a></div><div class="ttdeci">double m_maximumDeltaTicks</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dfc/SkeletonAlg_8h_source.html#l00085">SkeletonAlg.h:85</a></div></div>
 </div><!-- fragment -->
