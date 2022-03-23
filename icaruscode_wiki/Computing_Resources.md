@@ -304,6 +304,8 @@ and often no action is needed, beside maybe adding a `<os>` element for good mea
 Also note that FIFE recommends that Operating System selection be not enforced
 via `--os` option when using containers (after all, we are explicitly shipping the whole OS).
 
+And, about FIFE recomendations, [Project**-**py](https://cdcvs.fnal.gov/redmine/projects/project-py/wiki/Project-py_guide)
+is the recommended job submission tool (SBN-specific wiki documentation pending).
 
 
 Software distribution
