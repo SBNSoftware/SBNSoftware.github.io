@@ -28,7 +28,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
 
 **Input:** 
 
-  OpDet Waveforms (typically using Detsim files will have all these waveforms, reco 1 and 2 files may contain some filtered set of them)
+  OpDet Waveforms (typically Detsim files will have all these waveforms, reco 1 and 2 files may contain some filtered set of them)
 
 
 **Output:** 
@@ -37,7 +37,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   
   ```int maxPMTs``` = maximum number of pmt pairs above threshold during trigger window (usually beam spill)
   
-  Optional: histograms for all included channels of every step of the hardware trigger logic for up to three configurable events
+  Optional: histograms for all included channels of every step of the hardware trigger logic for a configurable set of events
   
   
 **Run the Simulation**
@@ -54,7 +54,9 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   
   _OpDetsToPlot:_ choice to include coated, uncoated, or all PMTs (default = all)
   
-  _Threshold:_    individual PMT threshold, in ADC (default = 7960 ADC); should be _below_ baseline; simulated baseline = 8000 ADC, ideal single PE response: 1 PE                   ~8 ADC, test bench: 1 PE ~ 25 ADC
+  _IndividualThresholds:_ if true, Threshold needs to be a 120 element array of each individual PMT ADC threshold in order of lowest to highest channel number (default = false)
+  
+  _Threshold:_    PMT threshold, in ADC, format: [coated, uncoated], unless IndividualThresholds is true, (default = [7960, 7976.0] ADC); should be _below_ baseline; simulated baseline = 8000 ADC, ideal single PE response: 1 PE ~ 8 ADC, test bench: 1 PE ~ 25 ADC
   
   _OVTHRWidth:_   over-threshold width (page 40 of hardware trigger manual), controls the number of extra ticks to stay high after a rising edge (trigger goes                       from 0 to 1) (default = 11)
   
@@ -74,11 +76,13 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   
   _WindowStart:_ start time of the trigger window, in us (default = 0.0)
   
-  _WindowEnd:_   end time of the trigger window, in us (default = 1.6)
+  _WindowEnd:_   end time of the trigger window, in us (default = 1.8)
   
-  _SaveHists:_   if true, saves the waveform histograms (default = true)
+  _SaveHists:_   if true, saves the waveform histograms (default = false)
   
-  _EvHists:_     if SaveHists=true, which event numbers to save the histograms for, max number of events = 3 (default = [1,2,3])
+  _EvHists:_     if SaveHists=true, which event numbers to save the histograms for (default = [1]); if too many hists are saved, may have memory issues, try saving less events.
+  
+  _Verbose:_     if true, outputs text about the event (default = false)
   
   
 **Read the Products**
