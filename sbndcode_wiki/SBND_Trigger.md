@@ -56,7 +56,7 @@ The PMT hardware trigger simulation is a LArSoft producer module that adds in va
   
   _IndividualThresholds:_ if true, Threshold needs to be a 120 element array of each individual PMT ADC threshold in order of lowest to highest channel number (default = false)
   
-  _Threshold:_    PMT threshold, in ADC, format: [coated, uncoated], unless IndividualThresholds is true, (default = [7960, 7976.0] ADC); should be _below_ baseline; simulated baseline = 8000 ADC, ideal single PE response: 1 PE ~ 8 ADC, test bench: 1 PE ~ 25 ADC
+  _Threshold:_    PMT threshold, in ADC; format: [coated, uncoated], unless IndividualThresholds is true, (default = [7960, 7976.0] ADC); should be _below_ baseline; simulated baseline = 8000 ADC, ideal single PE response: 1 PE ~ 8 ADC, test bench: 1 PE ~ 25 ADC
   
   _OVTHRWidth:_   over-threshold width (page 40 of hardware trigger manual), controls the number of extra ticks to stay high after a rising edge (trigger goes                       from 0 to 1) (default = 11)
   
