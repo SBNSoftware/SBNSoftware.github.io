@@ -204,7 +204,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gates are opened when the waveform transits above threshold, and closed a fixed time after that. Optionally, if a transition happens when the gate is already open, the opening can be extended by another fixed time; otherwise, the opening time is considered dead time and transitions occurring in that while will be ignored.</p>
 <p>Note that gates at higher thresholds are usually not contained in the ones with lower thresholds: the former ones start later <em>and</em> end later. Also, transitions on higher thresholds do not affect the lower threshold gates. For example, if the thresholds are at 50 and 100 counts, and the waveforms raises to 110, then starts oscillating between 90 and 110 counts, the gate for threshold 100 will be reopened or kept open, but the one for threshold 50 will close after the fixed time has elapsed and stay closed as long as no transition from under 50 to 50 or more happens. </p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00066">66</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00068">68</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aa01f6f554f915f79343c5349ec0da7a8"></a>
 <div class="memitem">
@@ -224,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00069">69</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00071">71</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
 
 </div>
 </div>
@@ -250,9 +250,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  , <a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a4be759d900eaf5bf5680904a9ebbe53d">fGateDuration</a>(config.GateDuration())</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  , <a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">fExtendGate</a>(config.ExtendGate())</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{}</div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a4be759d900eaf5bf5680904a9ebbe53d"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a4be759d900eaf5bf5680904a9ebbe53d">icarus::trigger::FixedTriggerGateBuilder::fGateDuration</a></div><div class="ttdeci">microsecond fGateDuration</div><div class="ttdoc">Duration of a channel gate [s]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00178">FixedTriggerGateBuilder.h:178</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_aa01f6f554f915f79343c5349ec0da7a8"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#aa01f6f554f915f79343c5349ec0da7a8">icarus::trigger::FixedTriggerGateBuilder::Base_t</a></div><div class="ttdeci">icarus::trigger::ManagedTriggerGateBuilder Base_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00069">FixedTriggerGateBuilder.h:69</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_acc49bf9e8f8389d2976b0e8545e3568e"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">icarus::trigger::FixedTriggerGateBuilder::fExtendGate</a></div><div class="ttdeci">bool const fExtendGate</div><div class="ttdoc">Whether gate opening time can be extended. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">FixedTriggerGateBuilder.h:182</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a4be759d900eaf5bf5680904a9ebbe53d"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a4be759d900eaf5bf5680904a9ebbe53d">icarus::trigger::FixedTriggerGateBuilder::fGateDuration</a></div><div class="ttdeci">microsecond fGateDuration</div><div class="ttdoc">Duration of a channel gate [s]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">FixedTriggerGateBuilder.h:180</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_aa01f6f554f915f79343c5349ec0da7a8"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#aa01f6f554f915f79343c5349ec0da7a8">icarus::trigger::FixedTriggerGateBuilder::Base_t</a></div><div class="ttdeci">icarus::trigger::ManagedTriggerGateBuilder Base_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00071">FixedTriggerGateBuilder.h:71</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_acc49bf9e8f8389d2976b0e8545e3568e"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">icarus::trigger::FixedTriggerGateBuilder::fExtendGate</a></div><div class="ttdeci">bool const fExtendGate</div><div class="ttdoc">Whether gate opening time can be extended. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00184">FixedTriggerGateBuilder.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,12 +283,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/dd0/classicarus_1_1trigger_1_1TriggerGateBuilder.html#ac03aab16783dfb146a15c1c959cb74d9">icarus::trigger::TriggerGateBuilder</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00169">169</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d0/d80/classicarus_1_1trigger_1_1ManagedTriggerGateBuilder.html#a2e64ed8b9dc9cc3275330410597be90a">unifiedBuild</a>(FixedGateManager(<a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">fGateTicks</a>, <a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">fExtendGate</a>), waveforms);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a1f83b405ffbd4c8e6a167441125dacb3"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">icarus::trigger::FixedTriggerGateBuilder::fGateTicks</a></div><div class="ttdeci">optical_time_ticks fGateTicks</div><div class="ttdoc">Duration of a channel gate [ticks]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">FixedTriggerGateBuilder.h:180</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_acc49bf9e8f8389d2976b0e8545e3568e"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">icarus::trigger::FixedTriggerGateBuilder::fExtendGate</a></div><div class="ttdeci">bool const fExtendGate</div><div class="ttdoc">Whether gate opening time can be extended. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">FixedTriggerGateBuilder.h:182</a></div></div>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00171">171</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d0/d80/classicarus_1_1trigger_1_1ManagedTriggerGateBuilder.html#a2e64ed8b9dc9cc3275330410597be90a">unifiedBuild</a>(FixedGateManager(<a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">fGateTicks</a>, <a class="code" href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">fExtendGate</a>), waveforms);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a1f83b405ffbd4c8e6a167441125dacb3"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">icarus::trigger::FixedTriggerGateBuilder::fGateTicks</a></div><div class="ttdeci">optical_time_ticks fGateTicks</div><div class="ttdoc">Duration of a channel gate [ticks]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">FixedTriggerGateBuilder.h:182</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_acc49bf9e8f8389d2976b0e8545e3568e"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#acc49bf9e8f8389d2976b0e8545e3568e">icarus::trigger::FixedTriggerGateBuilder::fExtendGate</a></div><div class="ttdeci">bool const fExtendGate</div><div class="ttdoc">Whether gate opening time can be extended. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00184">FixedTriggerGateBuilder.h:184</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1ManagedTriggerGateBuilder_html_a2e64ed8b9dc9cc3275330410597be90a"><div class="ttname"><a href="../../d0/d80/classicarus_1_1trigger_1_1ManagedTriggerGateBuilder.html#a2e64ed8b9dc9cc3275330410597be90a">icarus::trigger::ManagedTriggerGateBuilder::unifiedBuild</a></div><div class="ttdeci">std::vector&lt; TriggerGates &gt; unifiedBuild(GateMgr &amp;&amp;gateManager, std::vector&lt; WaveformWithBaseline &gt; const &amp;waveforms) const </div><div class="ttdoc">Returns a collection of TriggerGates objects sorted by threshold. </div></div>
 </div><!-- fragment -->
 </div>
@@ -327,8 +327,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// icarus::trigger::FixedTriggerGateBuilder::setup()</span></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1TriggerGateBuilder_html_a9f8cd486c57783b762ae79d099cbbe5f"><div class="ttname"><a href="../../db/dd0/classicarus_1_1trigger_1_1TriggerGateBuilder.html#a9f8cd486c57783b762ae79d099cbbe5f">icarus::trigger::TriggerGateBuilder::setup</a></div><div class="ttdeci">virtual void setup(detinfo::DetectorTimings const &amp;timings)</div><div class="ttdoc">Algorithm setup. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8a/TriggerGateBuilder_8cxx_source.html#l00148">TriggerGateBuilder.cxx:148</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a4be759d900eaf5bf5680904a9ebbe53d"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a4be759d900eaf5bf5680904a9ebbe53d">icarus::trigger::FixedTriggerGateBuilder::fGateDuration</a></div><div class="ttdeci">microsecond fGateDuration</div><div class="ttdoc">Duration of a channel gate [s]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00178">FixedTriggerGateBuilder.h:178</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a1f83b405ffbd4c8e6a167441125dacb3"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">icarus::trigger::FixedTriggerGateBuilder::fGateTicks</a></div><div class="ttdeci">optical_time_ticks fGateTicks</div><div class="ttdoc">Duration of a channel gate [ticks]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">FixedTriggerGateBuilder.h:180</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a4be759d900eaf5bf5680904a9ebbe53d"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a4be759d900eaf5bf5680904a9ebbe53d">icarus::trigger::FixedTriggerGateBuilder::fGateDuration</a></div><div class="ttdeci">microsecond fGateDuration</div><div class="ttdoc">Duration of a channel gate [s]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">FixedTriggerGateBuilder.h:180</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1FixedTriggerGateBuilder_html_a1f83b405ffbd4c8e6a167441125dacb3"><div class="ttname"><a href="../../d6/dd1/classicarus_1_1trigger_1_1FixedTriggerGateBuilder.html#a1f83b405ffbd4c8e6a167441125dacb3">icarus::trigger::FixedTriggerGateBuilder::fGateTicks</a></div><div class="ttdeci">optical_time_ticks fGateTicks</div><div class="ttdoc">Duration of a channel gate [ticks]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">FixedTriggerGateBuilder.h:182</a></div></div>
 <div class="ttc" id="namespacedetinfo_1_1timescales_html_ae5337ea437331d7a4d6ff67b3bdbf734"><div class="ttname"><a href="../../dc/d8b/namespacedetinfo_1_1timescales.html#ae5337ea437331d7a4d6ff67b3bdbf734">detinfo::timescales::optical_time_ticks</a></div><div class="ttdeci">timescale_traits&lt; OpticalTimeCategory &gt;::tick_interval_t optical_time_ticks</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/daf/DetectorTimingTypes_8h_source.html#l00431">DetectorTimingTypes.h:431</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -354,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether gate opening time can be extended. </p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">182</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00184">184</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Duration of a channel gate [s]. </p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00178">178</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">180</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Duration of a channel gate [ticks]. </p>
 
-<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00180">180</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html#l00182">182</a> of file <a class="el" href="../../d2/dbd/FixedTriggerGateBuilder_8h_source.html">FixedTriggerGateBuilder.h</a>.</p>
 
 </div>
 </div>

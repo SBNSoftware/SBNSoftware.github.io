@@ -208,6 +208,7 @@ var searchData=
   ['artvertexpointvector',['artVertexPointVector',['../d4/d23/classlar__cluster3d_1_1Cluster3D_1_1ArtOutputHandler.html#ad1b77244dc14d339549f637fc733bf39',1,'lar_cluster3d::Cluster3D::ArtOutputHandler']]],
   ['arxiv',['arXiv',['../d9/de1/detectorproperties__sbnd_8fcl.html#a92896e33fa12c1c5d1173741ddb3e289',1,'detectorproperties_sbnd.fcl']]],
   ['as',['as',['../d7/d76/structuscript_1_1Value.html#a032ffb100f52797d3ad6b9f003febe85',1,'uscript::Value']]],
+  ['asicshapingtime',['ASICShapingTime',['../da/d2d/signalservices__icarus_8fcl.html#ac0e59e7c2f32b05fe2efc5335c8c5776',1,'signalservices_icarus.fcl']]],
   ['aspectratio',['AspectRatio',['../d4/d37/structtca_1_1ShowerStruct.html#a3067e8e4caa6816bf39504bc8ce0ad2c',1,'tca::ShowerStruct']]],
   ['asserts',['asserts',['../dc/d8f/structproxy_1_1TrackPoint.html#ac0b0b8df766f5f04a33ca32c8ea9b48e',1,'proxy::TrackPoint']]],
   ['asshit_5fidx',['asshit_idx',['../d4/da1/structpmtana_1_1LiteOpFlash__t.html#a158d93a9999548a19b6162b87cc3eb1d',1,'pmtana::LiteOpFlash_t::asshit_idx()'],['../d2/d3d/structlightana_1_1LiteOpFlash__t.html#a19592bbda1043e0d7b3576721a8036df',1,'lightana::LiteOpFlash_t::asshit_idx()']]],
