@@ -304,6 +304,7 @@ var searchData=
   ['transversetrackhitsbasetool_2eh',['TransverseTrackHitsBaseTool.h',['../d7/dc7/TransverseTrackHitsBaseTool_8h.html',1,'']]],
   ['treeholder_2eh',['TreeHolder.h',['../dd/d2e/TreeHolder_8h.html',1,'']]],
   ['trig_5ffilter_2efcl',['trig_filter.fcl',['../d5/d71/trig__filter_8fcl.html',1,'']]],
+  ['trigger_5femulation_5ficarus_2efcl',['trigger_emulation_icarus.fcl',['../d9/d2f/trigger__emulation__icarus_8fcl.html',1,'']]],
   ['trigger_5ficarus_2efcl',['trigger_icarus.fcl',['../da/da4/trigger__icarus_8fcl.html',1,'']]],
   ['trigger_5finfo_2efcl',['trigger_info.fcl',['../d3/d4f/trigger__info_8fcl.html',1,'']]],
   ['triggeralgo_5fservice_2efcl',['triggeralgo_service.fcl',['../dd/d97/triggeralgo__service_8fcl.html',1,'']]],

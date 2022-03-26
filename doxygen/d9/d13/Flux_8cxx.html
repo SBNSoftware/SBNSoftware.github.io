@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>makediscriminatewaveforms_icarus.fcl File Reference</title>
+<title>Flux.cxx File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -70,42 +70,44 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_04d670c4adcb884258431ddc1ce2763c.html">icaruscode</a></li><li class="navelem"><a class="el" href="../../dir_94314c0f385d81f04de3b3bdb34c1673.html">icaruscode</a></li><li class="navelem"><a class="el" href="../../dir_c03f57aeab4998d455c0a24e3e31d83b.html">PMT</a></li><li class="navelem"><a class="el" href="../../dir_becb29c9bc7ce1d3ed44097dfd058784.html">Trigger</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_607631e62e9a0bd3594c73aa619e3f2e.html">sbnana</a></li><li class="navelem"><a class="el" href="../../dir_a5c37560a791aae8879036327be57c99.html">sbnana</a></li><li class="navelem"><a class="el" href="../../dir_305f101192e33e865c4c8e0d3c5c3dd2.html">CAFAna</a></li><li class="navelem"><a class="el" href="../../dir_76f8b3088ca42a02f18030c87101a105.html">XSec</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">makediscriminatewaveforms_icarus.fcl File Reference</div>  </div>
+<div class="title">Flux.cxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../da/dbf/services__common__icarus_8fcl_source.html">services_common_icarus.fcl</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/dd6/rootoutput__icarus_8fcl_source.html">rootoutput_icarus.fcl</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../da/da4/trigger__icarus_8fcl_source.html">trigger_icarus.fcl</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d3/d24/Flux_8h_source.html">sbnana/CAFAna/XSec/Flux.h</a>&quot;</code><br/>
+<code>#include &quot;sbnanaobj/StandardRecord/Proxy/SRProxy.h&quot;</code><br/>
+<code>#include &quot;TH1.h&quot;</code><br/>
 </div>
-<p><a href="../../d1/daf/makediscriminatewaveforms__icarus_8fcl_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../d9/d13/Flux_8cxx_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d7/d63/namespaceana"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html">ana</a></td></tr>
+<tr class="memdesc:d7/d63/namespaceana"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oscillation analysis framework, runs over CAF files outside of ART. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac5e1a86a80a66be919506220de4e17ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#ac5e1a86a80a66be919506220de4e17ec">ana::IsCCQEOnArgon</a> (const caf::SRTrueInteractionProxy *<a class="el" href="../../d0/ddd/clustermodules_8fcl.html#a56870c2f2bb7bcf949940e27803969ad">nu</a>, int <a class="el" href="../../d9/dd2/selectors_8fcl.html#a697017f6ca07cbb4f47653babf318012">pdg</a>)</td></tr>
+<tr class="separator:ac5e1a86a80a66be919506220de4e17ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fa916a71a45c6f97c9b90126293f1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#ac0fa916a71a45c6f97c9b90126293f1e">ana::IsNCQEOnArgon</a> (const caf::SRTrueInteractionProxy *<a class="el" href="../../d0/ddd/clustermodules_8fcl.html#a56870c2f2bb7bcf949940e27803969ad">nu</a>, int <a class="el" href="../../d9/dd2/selectors_8fcl.html#a697017f6ca07cbb4f47653babf318012">pdg</a>)</td></tr>
+<tr class="separator:ac0fa916a71a45c6f97c9b90126293f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05a5e63628cf45b7b74ec7abe97fae2"><td class="memItemLeft" align="right" valign="top">Cut&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#ac05a5e63628cf45b7b74ec7abe97fae2">ana::IsCCQEOnArgonCut</a> (int <a class="el" href="../../d9/dd2/selectors_8fcl.html#a697017f6ca07cbb4f47653babf318012">pdg</a>)</td></tr>
+<tr class="separator:ac05a5e63628cf45b7b74ec7abe97fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a10f42d6a2fe4835c333d7a2c104e0c00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d97/zengen_8fcl.html#a1db6238aa0908b080da39a39910960e2">process_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/daf/makediscriminatewaveforms__icarus_8fcl.html#a10f42d6a2fe4835c333d7a2c104e0c00">__pad0__</a></td></tr>
-<tr class="separator:a10f42d6a2fe4835c333d7a2c104e0c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866ac3aec1e2b76ef9c49f055c4338ae"><td class="memItemLeft" align="right" valign="top">const Var&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a866ac3aec1e2b76ef9c49f055c4338ae">ana::kInvXSec</a> ([](const <a class="el" href="../../d7/df6/namespacecaf.html#a2da49d3794fa9c8bce969bfae80a9ed8">caf::SRSliceProxy</a> *sr){const double GeV2perm2=2.56819e31;return GeV2perm2/sr-&gt;truth.xsec;})</td></tr>
+<tr class="separator:a866ac3aec1e2b76ef9c49f055c4338ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a10f42d6a2fe4835c333d7a2c104e0c00"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d97/zengen_8fcl.html#a1db6238aa0908b080da39a39910960e2">process_name</a> __pad0__</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d1/daf/makediscriminatewaveforms__icarus_8fcl_source.html#l00093">93</a> of file <a class="el" href="../../d1/daf/makediscriminatewaveforms__icarus_8fcl_source.html">makediscriminatewaveforms_icarus.fcl</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
