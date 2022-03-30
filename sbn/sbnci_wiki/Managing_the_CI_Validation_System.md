@@ -56,6 +56,10 @@ Validation input samples are stored in the experiment specific persistent dCache
 		gen/
 		g4/
 		detsim/
+			files_current.root → SAM def for 'current' (version in metadata)
+			vii_jj_kk/
+			vxx_yy_zz/
+				files_vxx_yy_xx.root → SAM def for version (version in def name)
 		test/
 			gen/
 			g4/
