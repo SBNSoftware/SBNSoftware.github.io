@@ -13,7 +13,7 @@ The CI system consists of two parts the integration tests and the validation tes
 
 The integration tests or standard CI are run everytime something is pushed to develop or someone wants to test a branch/PR. We currently run a suite of 8 unit tests and 13 integration tests, a build & installation check is also run. 
 
-If you're managing the CI system then its your job to monitor the output of these tests. Depending on where you see warnings/failures then there are different things you need to do
+If you're managing the CI system then it is your job to monitor the output of these tests. Depending on where you see warnings/failures then there are different things you need to do
 
 ##### build / install
 If you see failures in either of these stages then someone is testing code that doesn't compile. The logs are usually fairly self explanatory in this scenario. If this is a test of the develop branch then you should speak to the release manager right away. If this is against a PR then you and the release manager need to ensure that the PR is updated to fix these issues before it is merged.
@@ -48,9 +48,22 @@ For each reference tag, before any validation tests can be triggered, a correspo
 The default reference tag will be updated whenever something has changed upstream from the stage being validated that the inputs should reflect, there is a breaking change, a significant improvment has been made or a new feature is introduced.
 
 ##### Input Samples
-Commonly used CI input samples are stored in 
+Validation input samples are stored in the experiment specific persistent dCache areas. Samples from simulation or reconstruction stages of interest for various reference versions of the experiment code. 
 ```
-/pnfs/<experiment>/persistent/ContinuousIntegration/input/validation/<sample name>
+/pnfs/<experiment>/persistent/ContinuousIntegration/input/validation/
+	sample A/
+	sample B/
+		gen/
+		g4/
+		detsim/
+		test/
+			gen/
+			g4/
+			detsim/
+				files_current.root → SAM def for 'current' (version in metadata)
+				vii_jj_kk/
+				vxx_yy_zz/
+					files_vxx_yy_xx.root → SAM def for version (version in def name)
 ```
 For convenience and robustness against grid hickups, input samples are declared to SAM. The input samples use the same names regardless of the default reference tag, however the tag used in the sample production is written to the file metadata in `Dataset.Tag` with the format `<SAM definition name>_vXX_YY_ZZ`. This is used to check if a requested reference tag has a corresponding dataset. When the default reference tag is updated, the previous reference files get transfered to a subdirectory within their parent directory with name, `vXX_YY_ZZ`. 
 
@@ -83,4 +96,20 @@ Information on available samples is given below. Note the template arguments bel
   The \_test configs are not *only* for testing whether the generation works with current develop branches but also produces the input files required for the \_test versions of the actual validation. Hence, it is important to run the \_test config first even if you are sure the main config will be successful.
 
 ##### Reference Files
-*Not yet available*
+Reference files contain analysis objects, only TH1F's for now (can be expanded). When the validtion is run, a new, corresponding set of analysis objects is produced and compared against those in the reference file. At present, there is only a single reference file per validation (sub)workflow. Each file contains the version of the experiment code that was used to produce it. In each (sub)workflow directory, there is a (local) symlink that points to whatever version that corresponds to the latest integration release. The directory and file naming structure is below.
+```
+/pnfs/<experiment>/persistent/ContinuousIntegration/reference/validation/
+    WorkflowA/
+    WorkflowB/
+    test/
+        WorkflowA/
+            ci_validation_histos_vII_JJ_KK.root
+            ci_validation_histos_vXX_YY_ZZ.root
+            ci_validation_histos.root (symlink pointing to 'current' version)
+        WorkflowB/
+            SubworkflowA/
+            SubworkflowB/
+                ci_validation_histos_vII_JJ_KK.root
+                ci_validation_histos_vXX_YY_ZZ.root
+                ci_validation_histos.root (symlink pointing to 'current' version)
+```
