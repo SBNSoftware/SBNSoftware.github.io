@@ -130,11 +130,11 @@ Reference files contain analysis objects, only TH1F's for now (can be expanded).
         WorkflowA/
             ci_validation_histos_vII_JJ_KK.root
             ci_validation_histos_vXX_YY_ZZ.root
-            ci_validation_histos.root (symlink pointing to 'current' version)
+            ci_validation_histos_current.root (symlink pointing to 'current' version)
         WorkflowB/
             SubworkflowA/
             SubworkflowB/
                 ci_validation_histos_vII_JJ_KK.root
                 ci_validation_histos_vXX_YY_ZZ.root
-                ci_validation_histos.root (symlink pointing to 'current' version)
+                ci_validation_histos_current.root (symlink pointing to 'current' version)
 ```
