@@ -1,0 +1,25 @@
+
+------------
+layout: page
+title: SBND DAQ for the CRT \#\#
+-----------------------------
+
+open two terminal windows.  For each 
+ - login as sbnd on sbnd-gateway01.fnal.gov
+ - source "mstancar_launchdaq.sh" 
+ 
+ In one window, type "DAQInterface"
+ 
+ In the other window, look at the file "run" and find the line with setdaqcomps.sh
+ The list of things that is there is all the things that will be included in the DAQ
+ 
+ Type ./run to  start the run and type ./stop to stop the run
+ 
+ The data will magically appear in /daq/scratch/data/
+ 
+
+
+
+
+
+
