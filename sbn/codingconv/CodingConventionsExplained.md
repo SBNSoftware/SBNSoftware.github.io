@@ -1415,6 +1415,42 @@ not expressed by the code.
   **Encouraged** inline documentation in Doxygen format, attached to the object
   being described (for example, to a `class` definition instead than to the file
   where the definition is stored).
+  Example:
+  ```cpp
+  /// Time utilities
+  namespace times {
+    
+    /// Nanosecond-precision absolute timestamp.
+    struct Timestamp {
+      std::int32_t seconds; ///< Seconds past from the Epoch in UTC time scale.
+      std::uint32_t nanoseconds; ///< Nanoseconds from the start of the last second.
+      
+      /**
+       * @brief Adds the specified number of nanoseconds to this timestamp.
+       * @param delta number of nanoseconds to add (may be negative)
+       * @return this same timestamp (updated)
+       *
+       * If `delta` is negative, the resulting timestamp will be earlier than before.
+       */
+      Timestamp& addNanosecond(std::int64_t delta);
+      
+      /// Returns how much this timestamp is ahead of the `reference` one [ns]
+      constexpr std::int64_t operator- (Timestamp const& reference) const;
+  
+    }; // Timestamp
+    
+    /*
+     * @brief Sends the timestamp `ts` to the specified output stream.
+     * @return the output stream `out`
+     * 
+     * The printed format is `"<seconds>.<nanoseconds> s"`.
+     */
+    std::ostream& operator<< (std::ostream& out, Timestamp const& ts);
+    
+  } // namespace time
+  ```
+  The Doxygen style (e.g. `///` vs. `//!`) should match the one already in use in the library.
+  If no previous documentation is present, the style `///` is *encouraged*.
 
 
 ##  [DC] Tracking of changes  ##############################################
