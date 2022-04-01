@@ -9,7 +9,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 
 ## Outages
 - `sbndcode`: undergoing maintainance
-- `icaruscode`: nominal
+- `icaruscode`: undergoing maintainance
 
 ## Current reference tags
 - `sbndcode`:    `v09_37_01_03p01`
