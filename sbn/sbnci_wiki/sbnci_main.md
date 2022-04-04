@@ -19,8 +19,8 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 - references unavailable for SBN2022A and 'current'
 
 ## Approved reference tags (and alias, if available)
-- sbndcode:    `v09_37_01_03p01` (SBN2021C), `v09_37_02_01` (SBN2022A), `v09_46_00` (current)
-- icaruscode:  `v09_37_01_03` (SBN2021C), `v09_37_02_01` (SBN2022A), `v09_46_00` (current)
+- sbndcode:    `v09_37_01_03p01` (sbn2021c), `v09_37_02_01` (sbn2022a), `v09_46_00` (current)
+- icaruscode:  `v09_37_01_03` (sbn2021c), `v09_37_02_01` (sbn2022a), `v09_46_00` (current)
 
 ## Quick Start Guide
 1. Get a valid kerberos ticket with forwarding enabled (`kinit -f <username>`)
