@@ -12,6 +12,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 - BNB nu + cosmics unavailable for 'current'
 - crt test unavailable for 'current'
 - references unavailable for SBN2022A and 'current'
+
 #### icaruscode
 - input samples unavailable for 'current'
 - PDS validation unavailable for SBN2022A
