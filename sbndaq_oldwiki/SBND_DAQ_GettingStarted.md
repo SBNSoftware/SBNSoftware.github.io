@@ -6,6 +6,8 @@ title: SBND DAQ for the CRT \#\#
 
 open two terminal windows.  For each 
  - login as sbnd on sbnd-gateway01.fnal.gov
+ - ssh to sbnd-evb04
+ - (optional: start a tmux session)
  - source "mstancar_launchdaq.sh" 
  
  In one window, type "DAQInterface"
@@ -15,6 +17,7 @@ open two terminal windows.  For each
   - pmtx02 is the 1730 digitizer connected to link 1, in the Xarapuca crate on the right
   - crt2x2upstr is just what it sounds like - all 4 modules on the upstream (south) frame
   - crt2x2dwnstr is just what it sounds like - all 4 modules on the downstream (north) frame
+  - crt_test is the test setup on the A-frame
   - ptb01 is the trigger board
  
  Type ./run to  start the run and type ./stop to stop the run
