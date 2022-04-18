@@ -366,6 +366,6 @@ Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0
 
 ### Neutrinos from Main Injector target and decay pipe (NuMI)
 
-ICARUS position w.r.t. NuMI coordinates is described in SBN-doc-22998 (Aug 2021).
-Detector position for MC was updated in the following pull request: https://github.com/SBNSoftware/icaruscode/pull/230
+ICARUS position w.r.t. NuMI coordinates is described in [SBN DocDB 22998](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=22998) (August 2021).
+Detector position for MC was updated in the [`icaruscode` pull request #230](https://github.com/SBNSoftware/icaruscode/pull/230)/
 
