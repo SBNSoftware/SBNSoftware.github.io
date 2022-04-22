@@ -4,11 +4,11 @@ WebEVD is available as a ups product. You will need to set it up, along with a c
 
     source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
     source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
-    setup webevd v09_08_00 -qe20:prof
-    setup sbndcode v09_39_01 -qe20:prof
-    setup icaruscode v09_39_01 -qe20:prof
+    setup webevd v09_08_06 -qe20:prof
+    setup sbndcode v09_48_01 -qe20:prof   # depending on
+    setup icaruscode v09_48_01 -qe20:prof # desired expt
 
-These are latest versions as of December 2021. You may be able to use newer versions.
+These are latest versions as of April 2022. You may be able to use newer versions.
 
 ## Running
 
