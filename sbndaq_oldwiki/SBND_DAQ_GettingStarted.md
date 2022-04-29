@@ -1,10 +1,32 @@
 
 ------------------------------
- SBND DAQ for the CRT \#\#
+## other setup info
 -----------------------------
 
+1730 digitizer channels:  
+even channels have no inputs
+ch1: - TRIGGER from PTB to 1730
+ch3: - RWM
+ch5: - RWM
+ch7: - RWM
+ch9: - BES
+ch11: - RWM
+ch13: - RWM
+ch15: - TRIGGER from PTB to 1730
 
-instructions for running the DAQ:
+WR TDC inputs:
+ch1: t0 reset from CRT fanout (32 ns cable)
+ch2: t1 reset from CRT fanout (32 ns cable)
+ch3: empty
+ch4: empty
+ch5: empty
+
+CRT T0 reset: PPS
+CRT T1 reset: BES from AD's fiber to TTL converter
+
+------------------------------
+## DAQ instructions for the CRT \#\#
+-----------------------------
 
 open two terminal windows.  For each 
  - login as sbnd on sbnd-gateway01.fnal.gov
@@ -29,6 +51,12 @@ open two terminal windows.  For each
  Type ./run to  start the run and type ./stop to stop the run
  
  The data will magically appear in /daq/scratch/data/.  It is suggested to make a directory for your data here and move it there at the end of the day each day.
+ 
+ (3) setup - specified in knownboardreaders.txt 
+ pmtx02 boardreader is on sbnd-pds03
+ crt board readers are on sbnd-pds05
+ WR board reader is on sbnd-clk01
+ PTB board reader is on sbnd-ptb01
  
  ------------------
  How to debug things when the DAQ crashes. . . in the window where the DAQInterface was running, look through the output to the screen for something like this
