@@ -1,8 +1,10 @@
 
-------------
-layout: page
-title: SBND DAQ for the CRT \#\#
+------------------------------
+ SBND DAQ for the CRT \#\#
 -----------------------------
+
+
+instructions for running the DAQ:
 
 open two terminal windows.  For each 
  - login as sbnd on sbnd-gateway01.fnal.gov
@@ -12,7 +14,6 @@ open two terminal windows.  For each
  
  In one window, type "DAQInterface"
  
- -------------
  In the other window, 
  (1) look at the file "run" and find the line with setdaqcomps.sh
  You will find a list of things that will be included in the DAQ run, add or delete what you (don't) need. 
@@ -21,8 +22,9 @@ open two terminal windows.  For each
   - crt2x2dwnstr is just what it sounds like - all 4 modules on the downstream (north) frame
   - crt_test is the test setup on the A-frame
   - ptb01 is the trigger board
- (2) check the file boot.txt, things work best if the machine where you are running the daq is the one assigned to the eventbuilder and dispatcher here
- -------------------------
+   * if PULL is after any of those names, then the system data is pulled by the DAQ instead of pushed to the DAQ.  Only one system can push data.
+   
+(2) check the file boot.txt, things work best if the machine where you are running the daq is the one assigned to the eventbuilder and dispatcher here
  
  Type ./run to  start the run and type ./stop to stop the run
  
