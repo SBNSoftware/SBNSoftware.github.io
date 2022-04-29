@@ -4,24 +4,39 @@
 -----------------------------
 
 1730 digitizer channels:  
+
 even channels have no inputs
+
 ch1: - TRIGGER from PTB to 1730
+
 ch3: - RWM
+
 ch5: - RWM
+
 ch7: - RWM
+
 ch9: - BES
+
 ch11: - RWM
+
 ch13: - RWM
+
 ch15: - TRIGGER from PTB to 1730
 
 WR TDC inputs:
+
 ch1: t0 reset from CRT fanout (32 ns cable)
+
 ch2: t1 reset from CRT fanout (32 ns cable)
+
 ch3: empty
+
 ch4: empty
+
 ch5: empty
 
 CRT T0 reset: PPS
+
 CRT T1 reset: BES from AD's fiber to TTL converter
 
 ------------------------------
