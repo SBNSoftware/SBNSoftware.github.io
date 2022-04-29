@@ -11,8 +11,7 @@ Write files to SciSoft
 
 -   Currently sbndcode, sbndutil and sbnd\_data can be written to
     scisoft
--   You will need permission to copy files to SciSoft, this can be
-    gained by submitting a service desk ticket.
+-   You will need permission to copy files to SciSoft, these can be requested by submitting a ticket to scisoft. See instructions here: https://scisoft.fnal.gov/
 -   You will need the scripts copyFromJenkins and copyToSciSoft which
     can be obtained here
     (<http://scisoft.fnal.gov/scisoft/bundles/tools/>). They are also located in the [attachments folder of the wiki](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/sbndcode_wiki/attachments).
@@ -27,11 +26,10 @@ Copy sbndcode and sbndutil to SciSoft
     version. (Like the `releases/` directory I usually keep the last 6
     builds).
 
--   Fetch results of Jenkins from both e19 and c7 builds using
+-   Fetch results of Jenkins from both e20 and c7 builds using
 
-        copyFromJenkins -q e19 sbndcode-release-build
-        copyFromJenkins -q c7 sbndcode-release-build
-
+        copyFromJenkins -q e20 -q c7 sbndcode-release-build
+        
 -   This will fetch the build artifacts (tarballs and manifests)
 
 -   There should be one manifest for each binary flavour, and one
