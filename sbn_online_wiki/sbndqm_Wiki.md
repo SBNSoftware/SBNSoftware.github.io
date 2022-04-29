@@ -34,7 +34,9 @@ To setup a development environment in an an offline machine (like `icarusgpvm, s
 source /cvmfs/fermilab.opensciencegrid.org/products/artdaq/setup
 source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh #(or /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh)
 
-setup sbndqm v0_07_07 -qe20:prof #replace with your desired version here!
+setup sbndqm v1_02_00 -q e20:prof #replace with your desired version here!
+setup mrb
+export MRB_PROJECT=sbndqm
 
 mkdir <your_new_dev_area>
 cd <your_new_dev_area>
@@ -50,9 +52,11 @@ mrb i -j8
 
 To setup a development environment in an online machine (like `icarus-evb01`, `sbn-daq01`):
 ```
-source /daq/software/products
+source /daq/software/products/setup
 
-setup sbndqm v0_07_07 -qe20:prof #replace with your desired version here!
+setup sbndqm v1_02_00 -q e20:prof #replace with your desired version here!
+setup mrb
+export MRB_PROJECT=sbndqm
 
 mkdir <your_new_dev_area>
 cd <your_new_dev_area>
