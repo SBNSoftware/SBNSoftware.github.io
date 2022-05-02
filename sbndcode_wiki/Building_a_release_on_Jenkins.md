@@ -34,6 +34,7 @@ Instructions
     -   You will also need a [CILogon
         certificate](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Setting_up_access_with_CILogon_certificate)
         loaded in your browser.
+        - NB: When generating ther CILogon certificate, use the Fermilab identity provider rather than the institution.
     -   Go to
         <https://buildmaster.fnal.gov/buildmaster/job/sbndcode-release-build/>
 -   Configure the build.
