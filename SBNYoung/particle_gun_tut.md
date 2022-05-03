@@ -28,6 +28,5 @@ physics.producers.generator.SigmaThetaXZ: [0]    #No variance
 physics.producers.generator.SigmaThetaYZ: [0]    #
 physics.producers.generator.AngleDist: 0         #0:Uniform 1:Gaussian
 ```
-![Alt text](/SBNSoftware.github.io/SBNYoung/Images/coords.png)
-
+![Alt text](SBNYoung/Images/coords.png)
 
