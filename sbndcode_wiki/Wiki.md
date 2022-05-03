@@ -124,6 +124,8 @@ Useful Tidbits of Information.
 [Vertical Slice Test](Vertical_Slice_Test.html)
 --------------------------------------------------------------------------------------------------
 
+[DAQ](DAQ.html)
+--------------------------------------------------------------------------------------------------
 
 
 [SBND Assembly Master Document](SBND_Assembly_Master_Document.html)
