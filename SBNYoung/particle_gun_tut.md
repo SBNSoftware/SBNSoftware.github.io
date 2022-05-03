@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Getting started in SBND
+image: sbndcode_wiki/sbnd_logo.png
+# menubar: sbndcode_menu
+toc: true
+toc_title: SBND Code - Get Started Guide
 ---
 
 # Viewing charged particles in SBND using a particle gun generator and analyzer module
@@ -8,7 +12,7 @@ title: Getting started in SBND
 ## Particle Gun
 The particle gun is a simple way to simulate a single particle, or multiple particles at a time in the SBND detector (This can be done in ICARUS as well but I've done it here in SBND). Let's look at a particle gun .fcl file and see what's going on!
 
-```
+```bash
 #include "prodsingle_sbnd_proj.fcl" #Include .fcl for producing particles
 
 physics.producers.generator.PadOutVectors: true  #Duplicates single element vectors to match length of longest vector
@@ -28,5 +32,6 @@ physics.producers.generator.SigmaThetaXZ: [0]    #No variance
 physics.producers.generator.SigmaThetaYZ: [0]    #
 physics.producers.generator.AngleDist: 0         #0:Uniform 1:Gaussian
 ```
-![Alt text](SBNYoung/Images/coords.png)
+For every 
+![Alt text](Images/coords.png)
 
