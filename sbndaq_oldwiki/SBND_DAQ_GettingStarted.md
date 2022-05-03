@@ -1,6 +1,6 @@
 
 ------------------------------
-## other setup info
+## other CRT \#\# setup info
 -----------------------------
 
 1730 digitizer channels:  
