@@ -142,7 +142,7 @@ Private Attributes</h2></td></tr>
 </ul>
 <p><code>NOpenings</code> (one count per channel, from <code>TriggerGateInfo::nOpenings</code>): the number of times the gate opened;</p>
 <ul>
-<li><code>OpeningTime</code> (one time per channel, based on <code>TriggerGateInfo::firstOpenTime</code>): first time that channel opened, or very large number (<code>std::numeric_limits&lt;double&gt;<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max()</a></code>) if no opening happened at all (note that in this case the value in <code>TriggerGateInfo::firstOpenTime</code> is ignored).</li>
+<li><code>OpeningTime</code> (one time per channel, based on <code>TriggerGateInfo::firstOpenTime</code>): first time that channel opened, or very large number (<code>std::numeric_limits&lt;double&gt;::max()</code>) if no opening happened at all (note that in this case the value in <code>TriggerGateInfo::firstOpenTime</code> is ignored).</li>
 </ul>
 <p>All branches come from a variable size vector with size the number of available trigger gates. </p>
 

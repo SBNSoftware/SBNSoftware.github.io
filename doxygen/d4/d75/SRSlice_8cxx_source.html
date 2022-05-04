@@ -86,40 +86,28 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d70/SRSlice_8h.html">sbnanaobj/StandardRecord/SRSlice.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;climits&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>caf</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">   14</a></span>&#160;  <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">SRSlice::SRSlice</a>():</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    producer(UINT_MAX),</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    charge(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN()),</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    is_clear_cosmic(<a class="code" href="../../d7/d6f/namespacelarg4.html#a7eeba60c219f2d1b4094606a12d28d18">false</a>),</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    nu_pdg(INT_MIN),</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../da/dae/namespaceselection.html#a597bc96ada5cbaf173a6e6f1ac145787">nu_score</a>(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN()),</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    self(INT_MIN)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {  }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>caf</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">   11</a></span>&#160;  <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">SRSlice::SRSlice</a>()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {  }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">   15</a></span>&#160;  <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">SRSlice::~SRSlice</a>(){  }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">   18</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">SRSlice::setDefault</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#af51fcd64ac7c654e2911a0cbc6ad4f5c">charge</a>         = -5;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">   24</a></span>&#160;  <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">SRSlice::~SRSlice</a>(){  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">   27</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">SRSlice::setDefault</a>()</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../de/d9c/classcaf_1_1SRSlice.html#af51fcd64ac7c654e2911a0cbc6ad4f5c">charge</a>         = -5;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// end namespace caf</span><span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////</span></div>
-<div class="ttc" id="namespacepmtana_html_a9860e62c78db1dd9c7d635a2832b883a"><div class="ttname"><a href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">pmtana::std</a></div><div class="ttdeci">double std(const std::vector&lt; short &gt; &amp;wf, const double ped_mean, size_t start, size_t nsample)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de4/UtilFunc_8cxx_source.html#l00042">UtilFunc.cxx:42</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSlice_html_afd30e9874190893db7559dcc8b73dd2d"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">caf::SRSlice::~SRSlice</a></div><div class="ttdeci">virtual ~SRSlice()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00024">SRSlice.cxx:24</a></div></div>
-<div class="ttc" id="namespacelarg4_html_a7eeba60c219f2d1b4094606a12d28d18"><div class="ttname"><a href="../../d7/d6f/namespacelarg4.html#a7eeba60c219f2d1b4094606a12d28d18">larg4::false</a></div><div class="ttdeci">return false</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d8a/OpFastScintillation_8hh_source.html#l00592">OpFastScintillation.hh:592</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSlice_html_aad41aaf7fca4290ef4deeb4ce0de2617"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">caf::SRSlice::SRSlice</a></div><div class="ttdeci">SRSlice()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00014">SRSlice.cxx:14</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSlice_html_a5899316320377919b5bbe04d37482a5e"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">caf::SRSlice::setDefault</a></div><div class="ttdeci">void setDefault()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00027">SRSlice.cxx:27</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSlice_html_af51fcd64ac7c654e2911a0cbc6ad4f5c"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#af51fcd64ac7c654e2911a0cbc6ad4f5c">caf::SRSlice::charge</a></div><div class="ttdeci">float charge</div><div class="ttdoc">Calorimetric energy. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d70/SRSlice_8h_source.html#l00028">SRSlice.h:28</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;} <span class="comment">// end namespace caf</span><span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">////////////////////////////////////////////////////////////////////////</span></div>
+<div class="ttc" id="classcaf_1_1SRSlice_html_afd30e9874190893db7559dcc8b73dd2d"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#afd30e9874190893db7559dcc8b73dd2d">caf::SRSlice::~SRSlice</a></div><div class="ttdeci">virtual ~SRSlice()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00015">SRSlice.cxx:15</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSlice_html_aad41aaf7fca4290ef4deeb4ce0de2617"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#aad41aaf7fca4290ef4deeb4ce0de2617">caf::SRSlice::SRSlice</a></div><div class="ttdeci">SRSlice()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00011">SRSlice.cxx:11</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSlice_html_a5899316320377919b5bbe04d37482a5e"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#a5899316320377919b5bbe04d37482a5e">caf::SRSlice::setDefault</a></div><div class="ttdeci">void setDefault()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d75/SRSlice_8cxx_source.html#l00018">SRSlice.cxx:18</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSlice_html_af51fcd64ac7c654e2911a0cbc6ad4f5c"><div class="ttname"><a href="../../de/d9c/classcaf_1_1SRSlice.html#af51fcd64ac7c654e2911a0cbc6ad4f5c">caf::SRSlice::charge</a></div><div class="ttdeci">float charge</div><div class="ttdoc">Calorimetric energy. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d70/SRSlice_8h_source.html#l00033">SRSlice.h:33</a></div></div>
 <div class="ttc" id="SRSlice_8h_html"><div class="ttname"><a href="../../da/d70/SRSlice_8h.html">SRSlice.h</a></div></div>
-<div class="ttc" id="namespaceselection_html_a597bc96ada5cbaf173a6e6f1ac145787"><div class="ttname"><a href="../../da/dae/namespaceselection.html#a597bc96ada5cbaf173a6e6f1ac145787">selection.nu_score</a></div><div class="ttdeci">def nu_score</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d2e/selection_8py_source.html#l00068">selection.py:68</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

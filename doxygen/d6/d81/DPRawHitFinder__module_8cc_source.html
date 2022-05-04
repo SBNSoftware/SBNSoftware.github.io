@@ -1319,7 +1319,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    <span class="keywordflow">if</span>(fEndTime - fStartTime &lt; 0){size = 0;}</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;    <span class="comment">// --- TH1D HitSignal ---</span></div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    TH1F hitSignal(<span class="stringliteral">&quot;hitSignal&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,<a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(size,1),fStartTime,fEndTime+1);</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;    TH1F hitSignal(<span class="stringliteral">&quot;hitSignal&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,std::max(size,1),fStartTime,fEndTime+1);</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    hitSignal.Sumw2();</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
 <div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <span class="comment">// #############################</span></div>
@@ -1371,7 +1371,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;        peakStart = std::get&lt;2&gt;(fPeakVals.at(i));</div>
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;        peakEnd = std::get&lt;3&gt;(fPeakVals.at(i));</div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;        peakMeanSeed=peakMean-peakMeanShift;</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        peakMeanRangeLow = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakStart-peakMeanShift, peakMeanSeed-fFitPeakMeanRange);</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        peakMeanRangeLow = std::max(peakStart-peakMeanShift, peakMeanSeed-fFitPeakMeanRange);</div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        peakMeanRangeHi = std::min(peakEnd, peakMeanSeed+fFitPeakMeanRange);</div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        amplitude = fSignalVector[peakMean];</div>
 <div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
@@ -1391,13 +1391,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(NPeaks &gt;= 2 &amp;&amp; i == NPeaks-1)</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        {</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToPrevMean = 0.5*(peakMean - std::get&lt;0&gt;(fPeakVals.at(i-1)));</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;          Exponentials.SetParLimits(2*(i+1)+1, <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), peakMeanRangeHi );</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;          Exponentials.SetParLimits(2*(i+1)+1, std::max(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), peakMeanRangeHi );</div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        }</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        {</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToNextMean = 0.5*(std::get&lt;0&gt;(fPeakVals.at(i+1)) - peakMean);</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToPrevMean = 0.5*(peakMean - std::get&lt;0&gt;(fPeakVals.at(i-1)));</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;          Exponentials.SetParLimits(2*(i+1)+1, <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), std::min(peakMeanRangeHi, peakMeanSeed+HalfDistanceToNextMean) );</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;          Exponentials.SetParLimits(2*(i+1)+1, std::max(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), std::min(peakMeanRangeHi, peakMeanSeed+HalfDistanceToNextMean) );</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        }</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        <span class="keywordflow">if</span>(fLogLevel &gt;= 4)</div>
@@ -1433,7 +1433,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        peakStart = std::get&lt;2&gt;(fPeakVals.at(i));</div>
 <div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        peakEnd = std::get&lt;3&gt;(fPeakVals.at(i));</div>
 <div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;        peakMeanSeed=peakMean-peakMeanShift;</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        peakMeanRangeLow = <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakStart-peakMeanShift, peakMeanSeed-fFitPeakMeanRange);</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;        peakMeanRangeLow = std::max(peakStart-peakMeanShift, peakMeanSeed-fFitPeakMeanRange);</div>
 <div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;        peakMeanRangeHi = std::min(peakEnd, peakMeanSeed+fFitPeakMeanRange);</div>
 <div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;        amplitude = fSignalVector[peakMean];</div>
 <div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;</div>
@@ -1453,13 +1453,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(NPeaks &gt;= 2 &amp;&amp; i == NPeaks-1)</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        {</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToPrevMean = 0.5*(peakMean - std::get&lt;0&gt;(fPeakVals.at(i-1)));</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;          Exponentials.SetParLimits(4*i+3, <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), peakMeanRangeHi );</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;          Exponentials.SetParLimits(4*i+3, std::max(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), peakMeanRangeHi );</div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        }</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        {</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToNextMean = 0.5*(std::get&lt;0&gt;(fPeakVals.at(i+1)) - peakMean);</div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;          <span class="keywordtype">double</span> HalfDistanceToPrevMean = 0.5*(peakMean - std::get&lt;0&gt;(fPeakVals.at(i-1)));</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;          Exponentials.SetParLimits(4*i+3, <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">std::max</a>(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), std::min(peakMeanRangeHi, peakMeanSeed+HalfDistanceToNextMean) );</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;          Exponentials.SetParLimits(4*i+3, std::max(peakMeanRangeLow, peakMeanSeed-HalfDistanceToPrevMean), std::min(peakMeanRangeHi, peakMeanSeed+HalfDistanceToNextMean) );</div>
 <div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        }</div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        <span class="keywordflow">if</span>(fLogLevel &gt;= 4)</div>
@@ -1925,7 +1925,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="RawTypes_8h_html"><div class="ttname"><a href="../../d9/d38/RawTypes_8h.html">RawTypes.h</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_ade2cf0283396a7392ceb31412dae00f3"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#ade2cf0283396a7392ceb31412dae00f3">hit::DPRawHitFinder::produce</a></div><div class="ttdeci">void produce(art::Event &amp;evt) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00298">DPRawHitFinder_module.cc:298</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_ae873bae18638eea8b66a26fe11e4e579"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#ae873bae18638eea8b66a26fe11e4e579">hit::DPRawHitFinder::FindPeakWithMaxDeviation</a></div><div class="ttdeci">void FindPeakWithMaxDeviation(const std::vector&lt; float &gt; fSignalVector, int fNPeaks, int fStartTime, int fEndTime, bool fSameShape, ParameterVec fparamVec, PeakTimeWidVec fpeakVals, PeakDevVec &amp;fPeakDev)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l01437">DPRawHitFinder_module.cc:1437</a></div></div>
-<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_ac9477ba0777994afe86517a16056a222"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#ac9477ba0777994afe86517a16056a222">hit::DPRawHitFinder::PeakDevVec</a></div><div class="ttdeci">std::vector&lt; std::tuple&lt; double, int, int, int &gt;&gt; PeakDevVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00083">DPRawHitFinder_module.cc:83</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_a5de73e8a267d20adb4ffa956e32a4759"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#a5de73e8a267d20adb4ffa956e32a4759">hit::DPRawHitFinder::fMaxTau</a></div><div class="ttdeci">double fMaxTau</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00184">DPRawHitFinder_module.cc:184</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_ac596806a27037af14f3c8557c2fcd45d"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#ac596806a27037af14f3c8557c2fcd45d">hit::DPRawHitFinder::fMaxMultiHit</a></div><div class="ttdeci">int fMaxMultiHit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00174">DPRawHitFinder_module.cc:174</a></div></div>

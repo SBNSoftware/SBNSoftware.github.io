@@ -20,7 +20,6 @@ var searchData=
   ['kdtreenodeinfot',['KDTreeNodeInfoT',['../de/d97/classlar__content_1_1KDTreeNodeInfoT.html',1,'lar_content']]],
   ['kdtreenodeinfot_3c_20data_2c_20dim_20_3e',['KDTreeNodeInfoT&lt; DATA, DIM &gt;',['../de/d97/classlar__content_1_1KDTreeNodeInfoT.html',1,'lar_content']]],
   ['kdtreenodet',['KDTreeNodeT',['../d5/d0b/classlar__content_1_1KDTreeNodeT.html',1,'lar_content']]],
-  ['keepbypositionfiltertag',['KeepByPositionFilterTag',['../d2/d97/structlarg4_1_1KeepByPositionFilterTag.html',1,'larg4']]],
   ['keepbypositionfiltertag',['KeepByPositionFilterTag',['../d9/db3/structutil_1_1KeepByPositionFilterTag.html',1,'util']]],
   ['kernelestimate',['KernelEstimate',['../df/d6b/classlar__content_1_1RPhiFeatureTool_1_1KernelEstimate.html',1,'lar_content::RPhiFeatureTool']]],
   ['ketrack',['KETrack',['../df/db0/classtrkf_1_1KETrack.html',1,'trkf']]],

@@ -98,6 +98,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad032ee38060f22192154ea23be18bf76"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db1/namespacedaq_1_1details.html#ad032ee38060f22192154ea23be18bf76">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html">BoardSetup_t::ChannelSetup_t</a> const &amp;)</td></tr>
+<tr class="separator:ad032ee38060f22192154ea23be18bf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae7326d142e54ba06d1f7f6356445ee"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db1/namespacedaq_1_1details.html#aeae7326d142e54ba06d1f7f6356445ee">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="../../d3/d5f/classdaq_1_1details_1_1BoardInfoLookup.html">BoardInfoLookup</a> const &amp;)</td></tr>
 <tr class="separator:aeae7326d142e54ba06d1f7f6356445ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea2b5b7f772d9564fceb250f6cc6255"><td class="memTemplParams" colspan="2">template&lt;typename Coll , typename Key , typename KeyExtractor &gt; </td></tr>
@@ -140,17 +142,17 @@ template&lt;typename Coll , typename Key , typename KeyExtractor &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00164">164</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">std::begin</a>, <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">std::end</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> b = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(coll);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(coll);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">auto</span> it = std::lower_bound(</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    b, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, key,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    [&amp;extractKey](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>, Key <span class="keyword">const</span>&amp; key){ <span class="keywordflow">return</span> extractKey(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>) &lt; key; }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    );</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">return</span> ((it != <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) &amp;&amp; (extractKey(*it) == key))? &amp;*it: <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;} <span class="comment">// daq::details::binarySearch()</span></div>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00218">218</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">std::begin</a>, <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">std::end</a>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> b = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(coll);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(coll);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">auto</span> it = std::lower_bound(</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    b, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, key,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    [&amp;extractKey](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>, Key <span class="keyword">const</span>&amp; key){ <span class="keywordflow">return</span> extractKey(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>) &lt; key; }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    );</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">return</span> ((it != <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) &amp;&amp; (extractKey(*it) == key))? &amp;*it: <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;} <span class="comment">// daq::details::binarySearch()</span></div>
 <div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aac918da84f16d53ad17bab4f817da1c4"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">icarus::ns::util::end</a></div><div class="ttdeci">auto end(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00585">FixedBins.h:585</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_acc1957472e01a8d9ecd245e26338f0b9"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">icarus::ns::util::begin</a></div><div class="ttdeci">auto begin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00573">FixedBins.h:573</a></div></div>
@@ -186,13 +188,72 @@ template&lt;std::size_t KeyIndex = 0U, typename Coll , typename Key &gt; </div>
 <p>Finds the element in <code>coll</code> with the item <code>KeyIndex</code> equal to <code>key</code>. </p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the item found, or <code>nullptr</code> if none </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00180">180</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/db1/namespacedaq_1_1details.html#a4ea2b5b7f772d9564fceb250f6cc6255">binarySearch</a></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    (coll, key, [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>){ <span class="keywordflow">return</span> std::get&lt;KeyIndex&gt;(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>); });</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;} <span class="comment">// daq::details::binarySearch()</span></div>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00234">234</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/db1/namespacedaq_1_1details.html#a4ea2b5b7f772d9564fceb250f6cc6255">binarySearch</a></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    (coll, key, [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>){ <span class="keywordflow">return</span> std::get&lt;KeyIndex&gt;(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>); });</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;} <span class="comment">// daq::details::binarySearch()</span></div>
 <div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
-<div class="ttc" id="namespacedaq_1_1details_html_a4ea2b5b7f772d9564fceb250f6cc6255"><div class="ttname"><a href="../../da/db1/namespacedaq_1_1details.html#a4ea2b5b7f772d9564fceb250f6cc6255">daq::details::binarySearch</a></div><div class="ttdeci">Coll::value_type const * binarySearch(Coll const &amp;coll, Key const &amp;key, KeyExtractor &amp;&amp;extractKey)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00164">PMTDecoderUtils.h:164</a></div></div>
+<div class="ttc" id="namespacedaq_1_1details_html_a4ea2b5b7f772d9564fceb250f6cc6255"><div class="ttname"><a href="../../da/db1/namespacedaq_1_1details.html#a4ea2b5b7f772d9564fceb250f6cc6255">daq::details::binarySearch</a></div><div class="ttdeci">Coll::value_type const * binarySearch(Coll const &amp;coll, Key const &amp;key, KeyExtractor &amp;&amp;extractKey)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00218">PMTDecoderUtils.h:218</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad032ee38060f22192154ea23be18bf76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; daq::details::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BoardSetup_t::ChannelSetup_t const &amp;&#160;</td>
+          <td class="paramname"><em>chSetup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html#l00022">22</a> of file <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html">PMTDecoderUtils.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  out &lt;&lt; <span class="stringliteral">&quot;channel &quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">if</span> (chSetup.hasChannel()) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> (chSetup.category.empty()) out &lt;&lt; chSetup.channelID;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">else</span> out &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span> &lt;&lt; std::hex &lt;&lt; chSetup.channelID &lt;&lt; std::dec;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">else</span> out &lt;&lt; <span class="stringliteral">&quot;from channel DB&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">if</span> (chSetup.mustSkip()) out &lt;&lt; <span class="stringliteral">&quot;, always skipped&quot;</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (chSetup.mustSave() || chSetup.hasChannel()) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span> (chSetup.mustSave() || (chSetup.minSpan == 0))</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;, always saved&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;, saved if span larger than &quot;</span> &lt;&lt; chSetup.minSpan &lt;&lt; <span class="stringliteral">&quot; ADC&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot;, saved if in channel DB&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">if</span> (chSetup.minSpan &gt; 0)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot; and if span larger than &quot;</span> &lt;&lt; chSetup.minSpan &lt;&lt; <span class="stringliteral">&quot; ADC&quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (chSetup.onGlobalOnly) out &lt;&lt; <span class="stringliteral">&quot; only if on global trigger&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (!chSetup.category.empty())</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot; in special category &#39;&quot;</span> &lt;&lt; chSetup.category &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  } <span class="comment">// if not forced to skip</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// daq::details::operator&lt;&lt; (daq::details::BoardSetup_t::ChannelSetup_t)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -220,29 +281,44 @@ template&lt;std::size_t KeyIndex = 0U, typename Coll , typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html#l00019">19</a> of file <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html">PMTDecoderUtils.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  out &lt;&lt; <span class="stringliteral">&quot;Information on &quot;</span> &lt;&lt; <a class="code" href="../../dc/db0/corsika__icarus_8fcl.html#ab93e705c5d934e7777f11582689b7e1f">db</a>.nBoardInfo() &lt;&lt; <span class="stringliteral">&quot; boards recorded:&quot;</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">for</span> (BoardInfoLookup::BoardInfo_t <span class="keyword">const</span>&amp; boardInfo: <a class="code" href="../../dc/db0/corsika__icarus_8fcl.html#ab93e705c5d934e7777f11582689b7e1f">db</a>.allBoardInfo()) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    assert(boardInfo.setup);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  board \&quot;&quot;</span> &lt;&lt; boardInfo.setup-&gt;name</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;\&quot; (fragment ID &quot;</span> &lt;&lt; std::hex &lt;&lt; boardInfo.fragmentID &lt;&lt; std::dec</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;): trigger delay &quot;</span> &lt;&lt; boardInfo.setup-&gt;triggerDelay</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, TTT reset delay &quot;</span> &lt;&lt; boardInfo.setup-&gt;TTTresetDelay</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, pre-trigger buffer length &quot;</span> &lt;&lt; boardInfo.facts.preTriggerTime;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (boardInfo.config) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot;, buffer &quot;</span> &lt;&lt; boardInfo.config-&gt;bufferLength</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tick long, board ID &quot;</span> &lt;&lt; boardInfo.config-&gt;boardID</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; with &quot;</span> &lt;&lt; boardInfo.config-&gt;nChannels &lt;&lt; <span class="stringliteral">&quot; channels&quot;</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot; (no PMT configuration)&quot;</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  } <span class="comment">// for board info</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  out &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// daq::details::operator&lt;&lt; (daq::details::BoardInfoLookup)</span></div>
+<p>Definition at line <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html#l00058">58</a> of file <a class="el" href="../../d1/d74/PMTDecoderUtils_8cxx_source.html">PMTDecoderUtils.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  out &lt;&lt; <span class="stringliteral">&quot;Information on &quot;</span> &lt;&lt; <a class="code" href="../../dc/db0/corsika__icarus_8fcl.html#ab93e705c5d934e7777f11582689b7e1f">db</a>.nBoardInfo() &lt;&lt; <span class="stringliteral">&quot; boards recorded:&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">for</span> (BoardInfoLookup::BoardInfo_t <span class="keyword">const</span>&amp; boardInfo: <a class="code" href="../../dc/db0/corsika__icarus_8fcl.html#ab93e705c5d934e7777f11582689b7e1f">db</a>.allBoardInfo()) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    assert(boardInfo.setup);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  board \&quot;&quot;</span> &lt;&lt; boardInfo.setup-&gt;name</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;\&quot; (fragment ID &quot;</span> &lt;&lt; std::hex &lt;&lt; boardInfo.fragmentID &lt;&lt; std::dec</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;): trigger delay &quot;</span> &lt;&lt; boardInfo.setup-&gt;triggerDelay</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, TTT reset delay &quot;</span> &lt;&lt; boardInfo.setup-&gt;TTTresetDelay</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, pre-trigger buffer length &quot;</span> &lt;&lt; boardInfo.facts.preTriggerTime;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (boardInfo.config) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot;, buffer &quot;</span> &lt;&lt; boardInfo.config-&gt;bufferLength</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; tick long, board ID &quot;</span> &lt;&lt; boardInfo.config-&gt;boardID</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; with &quot;</span> &lt;&lt; boardInfo.config-&gt;nChannels &lt;&lt; <span class="stringliteral">&quot; channels&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot; (no PMT configuration)&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::vector&lt;std::size_t&gt; specialChannels;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iChannel, chSetup ]</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      : <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(boardInfo.setup-&gt;channelSettings)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">if</span> (!chSetup.isDefault()) specialChannels.push_back(iChannel);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (specialChannels.empty()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; specialChannels.size() &lt;&lt; <span class="stringliteral">&quot; special channel configurations:&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span> (std::size_t <span class="keyword">const</span> iCh: specialChannels) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot;\n    ch.number &quot;</span> &lt;&lt; iCh &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        &lt;&lt; boardInfo.setup-&gt;channelSettings[iCh];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  } <span class="comment">// for board info</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  out &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">// daq::details::operator&lt;&lt; (daq::details::BoardInfoLookup)</span></div>
+<div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
 <div class="ttc" id="corsika__icarus_8fcl_html_ab93e705c5d934e7777f11582689b7e1f"><div class="ttname"><a href="../../dc/db0/corsika__icarus_8fcl.html#ab93e705c5d934e7777f11582689b7e1f">db</a></div><div class="ttdeci">height to which particles are projected pnfs larsoft persistent physics cosmics Fermilab CORSIKA standard He_showers_ * db</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db0/corsika__icarus_8fcl_source.html#l00039">corsika_icarus.fcl:39</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -91,7 +91,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../d3/d37/IICARUSChannelMap_8h_source.html">icaruscode/Decode/ChannelMapping/IICARUSChannelMap.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">icaruscode/Decode/DataProducts/ExtraTriggerInfo.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/da7/BeamBits_8h_source.html">icaruscode/Decode/BeamBits.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/de6/FHiCLutils_8h_source.html">icarusalg/Utilities/FHiCLutils.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d2/d09/BinaryDumpUtils_8h_source.html">icarusalg/Utilities/BinaryDumpUtils.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d9b/PMTconfiguration_8h_source.html">sbnobj/Common/PMT/Data/PMTconfiguration.h</a>&quot;</code><br/>
 <code>#include &quot;sbndaq-artdaq-core/Overlays/Common/CAENV1730Fragment.hh&quot;</code><br/>
@@ -119,6 +118,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
 <code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/TableAs.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/OptionalSequence.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/Sequence.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/OptionalAtom.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/Atom.h&quot;</code><br/>
@@ -127,6 +127,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;ostream&gt;</code><br/>
 <code>#include &lt;unordered_map&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;set&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;optional&gt;</code><br/>
@@ -147,8 +149,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/structicarus_1_1DaqDecoderICARUSPMT_1_1BoardSetupConfig.html">icarus::DaqDecoderICARUSPMT::BoardSetupConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration of the V1730 readout board setup.  <a href="../../d4/dbb/structicarus_1_1DaqDecoderICARUSPMT_1_1BoardSetupConfig.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5c/structicarus_1_1DaqDecoderICARUSPMT_1_1BoardSetupConfig_1_1ChannelSetupConfig.html">icarus::DaqDecoderICARUSPMT::BoardSetupConfig::ChannelSetupConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/structicarus_1_1DaqDecoderICARUSPMT_1_1Config.html">icarus::DaqDecoderICARUSPMT::Config</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main tool configuration.  <a href="../../d0/de2/structicarus_1_1DaqDecoderICARUSPMT_1_1Config.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main module configuration.  <a href="../../d0/de2/structicarus_1_1DaqDecoderICARUSPMT_1_1Config.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/structicarus_1_1DaqDecoderICARUSPMT_1_1FragmentInfo__t.html">icarus::DaqDecoderICARUSPMT::FragmentInfo_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of useful information from fragment data.  <a href="../../d5/d53/structicarus_1_1DaqDecoderICARUSPMT_1_1FragmentInfo__t.html#details">More...</a><br/></td></tr>
@@ -159,6 +163,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd7/structicarus_1_1DaqDecoderICARUSPMT_1_1TriggerInfo__t.html">icarus::DaqDecoderICARUSPMT::TriggerInfo_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of information about the global trigger.  <a href="../../db/dd7/structicarus_1_1DaqDecoderICARUSPMT_1_1TriggerInfo__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d4f/structicarus_1_1DaqDecoderICARUSPMT_1_1ProtoWaveform__t.html">icarus::DaqDecoderICARUSPMT::ProtoWaveform_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the information collected about a waveform (with the waveform itself).  <a href="../../dc/d4f/structicarus_1_1DaqDecoderICARUSPMT_1_1ProtoWaveform__t.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de4/structicarus_1_1DaqDecoderICARUSPMT_1_1TreeData__EventID__t.html">icarus::DaqDecoderICARUSPMT::TreeData_EventID_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/ddc/structData.html">Data</a> structure for basic event information in simple <a class="el" href="../../d0/d10/namespaceROOT.html">ROOT</a> trees.  <a href="../../d9/de4/structicarus_1_1DaqDecoderICARUSPMT_1_1TreeData__EventID__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +173,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure collecting all data for a fragment <a class="el" href="../../d0/d10/namespaceROOT.html">ROOT</a> tree.  <a href="../../dd/d11/structicarus_1_1DaqDecoderICARUSPMT_1_1TreeFragment__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfd/structicarus_1_1DaqDecoderICARUSPMT_1_1TreeFragment__t_1_1Data__t.html">icarus::DaqDecoderICARUSPMT::TreeFragment_t::Data_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da4/structicarus_1_1dumpChannel.html">icarus::dumpChannel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -179,6 +188,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a4949202c39928a2a4840f75ae371bfcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html">daq::details::BoardSetup_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/namespaceicarus.html#a4949202c39928a2a4840f75ae371bfcf">icarus::convert</a> (DaqDecoderICARUSPMT::BoardSetupConfig const &amp;config)</td></tr>
 <tr class="memdesc:a4949202c39928a2a4840f75ae371bfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special function <code>fhicl::TableAs</code> uses to convert BoardSetupConfig.  <a href="#a4949202c39928a2a4840f75ae371bfcf">More...</a><br/></td></tr>
 <tr class="separator:a4949202c39928a2a4840f75ae371bfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bff9bf6782b452381d48c3fb459a183"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/namespaceicarus.html#a8bff9bf6782b452381d48c3fb459a183">icarus::operator&lt;&lt;</a> (std::ostream &amp;out, dumpChannel const &amp;d)</td></tr>
+<tr class="separator:a8bff9bf6782b452381d48c3fb459a183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaccb36c60e159d4d41fe3a587dfadb6b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/namespaceicarus.html#aaccb36c60e159d4d41fe3a587dfadb6b">icarus::operator&lt;&lt;</a> (std::ostream &amp;out, DaqDecoderICARUSPMT::SplitTimestamp_t const &amp;time)</td></tr>
 <tr class="separator:aaccb36c60e159d4d41fe3a587dfadb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -204,7 +215,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01108">1108</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01302">1302</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
 
 </div>
 </div>

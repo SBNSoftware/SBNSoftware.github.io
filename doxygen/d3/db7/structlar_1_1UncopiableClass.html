@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
  <dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="../../d7/d1f/structlar_1_1UnmovableClass.html" title="An empty class that can&#39;t be moved (copy is allowed). ">UnmovableClass</a></code>, <code><a class="el" href="../../de/d4e/structlar_1_1UncopiableAndUnmovableClass.html" title="An empty class that can&#39;t be copied nor moved. ">UncopiableAndUnmovableClass</a></code></dd></dl>
 <p>A class derived from this one can still be copied with an explicit effort. For example, to enable copy construction: </p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>CopiableClass: <span class="keyword">protected</span> UncopiableAndUnmovableClass {</div>
-<div class="line">  CopiableClass(CopiableClass <span class="keyword">const</span>&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
+<div class="line">  CopiableClass(CopiableClass <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
 <div class="line">    : <a class="code" href="../../d3/db7/structlar_1_1UncopiableClass.html#ae35fd93c96d5c299aa8880b7c6050b31">UncopiableClass</a>() <span class="comment">// , ...</span></div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// ...</span></div>
@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">};</div>
 </div><!-- fragment --><p> the default constructor of the base class can be called explicitly instead of the copy constructor. To provide an assignment operation, </p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>CopyAssignableClass: <span class="keyword">protected</span> <a class="code" href="../../d3/db7/structlar_1_1UncopiableClass.html#ae35fd93c96d5c299aa8880b7c6050b31">UncopiableClass</a> {</div>
-<div class="line">  CopyAssignableClass&amp; <a class="code" href="../../d3/db7/structlar_1_1UncopiableClass.html#ac4f93567a132b6903f6d0aa366e2cf8a">operator= </a>(CopyAssignableClass <span class="keyword">const</span>&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
+<div class="line">  CopyAssignableClass&amp; <a class="code" href="../../d3/db7/structlar_1_1UncopiableClass.html#ac4f93567a132b6903f6d0aa366e2cf8a">operator= </a>(CopyAssignableClass <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// ...</span></div>
 <div class="line">      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>

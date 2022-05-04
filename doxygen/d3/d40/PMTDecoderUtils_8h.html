@@ -86,10 +86,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Some helpers for PMT decoder tool.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d9b/PMTconfiguration_8h_source.html">sbnobj/Common/PMT/Data/PMTconfiguration.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d0e/V1730channelConfiguration_8h_source.html">sbnobj/Common/PMT/Data/V1730channelConfiguration.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/d6e/spacetime_8h_source.html">lardataalg/Utilities/quantities/spacetime.h</a>&quot;</code><br/>
 <code>#include &lt;ostream&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;array&gt;</code><br/>
+<code>#include &lt;optional&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;utility&gt;</code><br/>
 <code>#include &lt;tuple&gt;</code><br/>
@@ -102,6 +105,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html">daq::details::BoardSetup_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information of the setup of a V1730 readout board.  <a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html">daq::details::BoardSetup_t::ChannelSetup_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special settings for one channel on the board.  <a href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbc/structdaq_1_1details_1_1BoardFacts__t.html">daq::details::BoardFacts_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative information of a V1730 readout board.  <a href="../../d6/dbc/structdaq_1_1details_1_1BoardFacts__t.html#details">More...</a><br/></td></tr>
@@ -122,6 +128,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad032ee38060f22192154ea23be18bf76"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db1/namespacedaq_1_1details.html#ad032ee38060f22192154ea23be18bf76">daq::details::operator&lt;&lt;</a> (std::ostream &amp;, BoardSetup_t::ChannelSetup_t const &amp;)</td></tr>
+<tr class="separator:ad032ee38060f22192154ea23be18bf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae7326d142e54ba06d1f7f6356445ee"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db1/namespacedaq_1_1details.html#aeae7326d142e54ba06d1f7f6356445ee">daq::details::operator&lt;&lt;</a> (std::ostream &amp;, BoardInfoLookup const &amp;)</td></tr>
 <tr class="separator:aeae7326d142e54ba06d1f7f6356445ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ea2b5b7f772d9564fceb250f6cc6255"><td class="memTemplParams" colspan="2">template&lt;typename Coll , typename Key , typename KeyExtractor &gt; </td></tr>

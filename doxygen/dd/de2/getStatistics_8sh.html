@@ -114,7 +114,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a12e4810461dcd5902c6fce437b688e48"><td class="memItemLeft" align="right" valign="top">then echo lines of code <br class="typebreak"/>
 excluding <a class="el" href="../../d3/d42/expand__fcl_8sh.html#a7afe607ebf2db4e1aea9c4ba30953f99">fcl</a> files <a class="el" href="../../d9/dd2/selectors_8fcl.html#afc0d6ff0fbd96178fd96c24264fd88df">and</a> <br class="typebreak"/>
 anything <a class="el" href="../../d2/d2c/duplicate__finder__run__subrun_8sh.html#af623bf5f52bd5b3d3fb5381d86820c12">in</a> <a class="el" href="../../de/d9d/run__pmttriggerproducer_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> ups <a class="el" href="../../d4/da8/run__lar_8sh.html#a5117cc0c38927e52c97588af17aea67a">directory</a> <br class="typebreak"/>
-cloc <a class="el" href="../../dd/db0/testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc4c7af50e9255262">exclude</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/getStatistics_8sh.html#a12e4810461dcd5902c6fce437b688e48">dir</a></td></tr>
+cloc <a class="el" href="../../d4/d9a/sbndcode_2test_2fcl_2testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc4c7af50e9255262">exclude</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/getStatistics_8sh.html#a12e4810461dcd5902c6fce437b688e48">dir</a></td></tr>
 <tr class="separator:a12e4810461dcd5902c6fce437b688e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -170,13 +170,14 @@ cloc <a class="el" href="../../dd/db0/testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{REP}</div>
-<div class="line">    lista=`git log --all --format=<span class="stringliteral">&#39;&quot;%cN&quot;&#39;</span> | sort -u`</div>
+<div class="line">    lista=`git log --all --<a class="code" href="../../d4/d0b/fclmodule_8cxx.html#a3363db4a4cd3d5ba846e50e6d958f0ee">format</a>=<span class="stringliteral">&#39;&quot;%cN&quot;&#39;</span> | sort -u`</div>
 <div class="line">    author_list=`echo ${author_list} ${lista}`</div>
 <div class="line">    <a class="code" href="../../dd/de2/getStatistics_8sh.html#a8b19a663a0e1bb8a35e89b71fea32c44">cd</a> ${thisdir}</div>
 <div class="line">    echo <span class="stringliteral">&quot;${lista}&quot;</span></div>
 <div class="line">  done</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="../../d6/d2d/build-dunepdsprce_8sh.html#a67297dd2c14a12b51604362f866d9bcc">elif</a> [ <span class="stringliteral">&quot;${type}&quot;</span> = <span class="stringliteral">&quot;code&quot;</span> ]</div>
+<div class="ttc" id="fclmodule_8cxx_html_a3363db4a4cd3d5ba846e50e6d958f0ee"><div class="ttname"><a href="../../d4/d0b/fclmodule_8cxx.html#a3363db4a4cd3d5ba846e50e6d958f0ee">format</a></div><div class="ttdeci">static std::string format(PyObject *obj, unsigned int pos, unsigned int indent, unsigned int maxlen, unsigned int depth)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0b/fclmodule_8cxx_source.html#l00374">fclmodule.cxx:374</a></div></div>
 <div class="ttc" id="build-dunepdsprce_8sh_html_a67297dd2c14a12b51604362f866d9bcc"><div class="ttname"><a href="../../d6/d2d/build-dunepdsprce_8sh.html#a67297dd2c14a12b51604362f866d9bcc">elif</a></div><div class="ttdeci">then source cvmfs dune opensciencegrid org products dune setup_dune sh exit elif[-f/grid/fermiapp/products/dune/setup_dune_fermiapp.sh]</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/build-dunepdsprce_8sh_source.html#l00068">build-dunepdsprce.sh:68</a></div></div>
 <div class="ttc" id="getStatistics_8sh_html_a8b19a663a0e1bb8a35e89b71fea32c44"><div class="ttname"><a href="../../dd/de2/getStatistics_8sh.html#a8b19a663a0e1bb8a35e89b71fea32c44">cd</a></div><div class="ttdeci">do cd</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de2/getStatistics_8sh_source.html#l00062">getStatistics.sh:62</a></div></div>
 </div><!-- fragment -->
@@ -189,7 +190,7 @@ cloc <a class="el" href="../../dd/db0/testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">then echo lines of code excluding <a class="el" href="../../d3/d42/expand__fcl_8sh.html#a7afe607ebf2db4e1aea9c4ba30953f99">fcl</a> files <a class="el" href="../../d9/dd2/selectors_8fcl.html#afc0d6ff0fbd96178fd96c24264fd88df">and</a> anything <a class="el" href="../../d2/d2c/duplicate__finder__run__subrun_8sh.html#af623bf5f52bd5b3d3fb5381d86820c12">in</a> <a class="el" href="../../de/d9d/run__pmttriggerproducer_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> ups <a class="el" href="../../d4/da8/run__lar_8sh.html#a5117cc0c38927e52c97588af17aea67a">directory</a> cloc <a class="el" href="../../dd/db0/testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc4c7af50e9255262">exclude</a> dir</td>
+          <td class="memname">then echo lines of code excluding <a class="el" href="../../d3/d42/expand__fcl_8sh.html#a7afe607ebf2db4e1aea9c4ba30953f99">fcl</a> files <a class="el" href="../../d9/dd2/selectors_8fcl.html#afc0d6ff0fbd96178fd96c24264fd88df">and</a> anything <a class="el" href="../../d2/d2c/duplicate__finder__run__subrun_8sh.html#af623bf5f52bd5b3d3fb5381d86820c12">in</a> <a class="el" href="../../de/d9d/run__pmttriggerproducer_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> ups <a class="el" href="../../d4/da8/run__lar_8sh.html#a5117cc0c38927e52c97588af17aea67a">directory</a> cloc <a class="el" href="../../d4/d9a/sbndcode_2test_2fcl_2testFHiCLfiles_8sh.html#ada1484d8a2b1dc3dc4c7af50e9255262">exclude</a> dir</td>
         </tr>
       </table>
 </div><div class="memdoc">

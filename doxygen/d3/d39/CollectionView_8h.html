@@ -178,7 +178,7 @@ Interface substitution technique</h1>
 <div class="line"><span class="keyword">    </span>{ <span class="keywordflow">return</span> asData().chiSquare() / asData().DegreesOfFreedom(); }</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">protected</span>:</div>
-<div class="line">  DataInterface(<a class="code" href="../../d4/ddc/structData.html">Data</a> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>): <a class="code" href="../../d4/ddc/structData.html">Data</a>(data) {}</div>
+<div class="line">  DataInterface(<a class="code" href="../../d4/ddc/structData.html">Data</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>): <a class="code" href="../../d4/ddc/structData.html">Data</a>(data) {}</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">friend</span> DataInterface <span class="keyword">const</span>&amp; makeDataInterface(<a class="code" href="../../d4/ddc/structData.html">Data</a> <span class="keyword">const</span>&amp;);</div>
 <div class="line"></div>
@@ -189,7 +189,7 @@ Interface substitution technique</h1>
 <div class="line">  { <span class="keywordflow">return</span> static_const&lt;DataInterface const&amp;&gt;(data); }</div>
 </div><!-- fragment --><p> With this pattern, an interface object can be obtained only by calling <code>makeDataInterface()</code> on the base object, and in this way it will be returned only as a reference (in this case, constant). The interface object can't be copied, and it must be passed around as reference. It's not possible to convert it back to <code><a class="el" href="../../d4/ddc/structData.html">Data</a></code>, because the base class is private. There is a single protected constructor. This choice, compared to deleting all constructors, allows for a derived class to acquire the same interface: </p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>DataWithInterface: <span class="keyword">public</span> DataInterface {</div>
-<div class="line">  DataWithInterface(<a class="code" href="../../d4/ddc/structData.html">Data</a> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>): DataInterface(from) {}</div>
+<div class="line">  DataWithInterface(<a class="code" href="../../d4/ddc/structData.html">Data</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>): DataInterface(from) {}</div>
 <div class="line">}; <span class="comment">// class DataWithInterface</span></div>
 </div><!-- fragment --><p> This simple class provides the storage for <code><a class="el" href="../../d4/ddc/structData.html">Data</a></code> in addition to exposing <code>DataInterface</code>. There are other ways to achieve the same goal (e.g., multiple inheritance).</p>
 <p>The presence of a friend function should raise a warning. Friendship is required because the function is attempting a downcast from a private base class. If it is intended that the full <code><a class="el" href="../../d4/ddc/structData.html">Data</a></code> interface is exposed, then the inheritance can be public and no special friendship will be needed. Another way is to replace the <code>static_cast</code> with a <code>reinterpret_cast</code>. </p>

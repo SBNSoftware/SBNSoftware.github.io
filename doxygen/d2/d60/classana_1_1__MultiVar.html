@@ -78,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../df/da7/classana_1_1__MultiVar-members.html">List of all members</a>  </div>
@@ -108,6 +109,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a79890b72a9e43a64c0ebd4907a2b1328"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d60/classana_1_1__MultiVar.html#a79890b72a9e43a64c0ebd4907a2b1328">MaxID</a> ()</td></tr>
 <tr class="separator:a79890b72a9e43a64c0ebd4907a2b1328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adb2fb5a39227730de70ab5641d4f8ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d60/classana_1_1__MultiVar.html#adb2fb5a39227730de70ab5641d4f8ebf">_MultiVar</a> (const std::function&lt; VarFunc_t &gt; &amp;fun, int id)</td></tr>
+<tr class="separator:adb2fb5a39227730de70ab5641d4f8ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad7e01ff1e64c9794e0e2bfc68fc85771"><td class="memItemLeft" align="right" valign="top">std::function&lt; VarFunc_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a></td></tr>
@@ -127,7 +133,7 @@ class ana::_MultiVar&lt; T &gt;</h3>
 
 <p>A Var that returns multiple results for each slice. eg the properties of multiple prongs. All results will be filled into the <a class="el" href="../../d9/dfa/classana_1_1Spectrum.html" title="Representation of a spectrum in any variable, with associated POT. ">Spectrum</a>. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00014">14</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00016">16</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a81519fa81e0e363a9b0e4ec4c16eaba4"></a>
 <div class="memitem">
@@ -147,13 +153,56 @@ template&lt;class T &gt; </div>
 
 <p>std::function can wrap a real function, function object, or lambda </p>
 
-<p>Definition at line <a class="el" href="../../d8/dc3/MultiVar_8cxx_source.html#l00010">10</a> of file <a class="el" href="../../d8/dc3/MultiVar_8cxx_source.html">MultiVar.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    : <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a>(fun), <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">fID</a>(<a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">fgNextID</a>--)</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  }</div>
-<div class="ttc" id="classana_1_1__MultiVar_html_a1d6a92e75308b8c91ee073b9286d1258"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">ana::_MultiVar::fID</a></div><div class="ttdeci">int fID</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00036">MultiVar.h:36</a></div></div>
-<div class="ttc" id="classana_1_1__MultiVar_html_ad7e01ff1e64c9794e0e2bfc68fc85771"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">ana::_MultiVar::fFunc</a></div><div class="ttdeci">std::function&lt; VarFunc_t &gt; fFunc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00034">MultiVar.h:34</a></div></div>
-<div class="ttc" id="classana_1_1__MultiVar_html_a0760c9e7a991305320df55f145c5d4d1"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">ana::_MultiVar::fgNextID</a></div><div class="ttdeci">static int fgNextID</div><div class="ttdoc">The next ID that hasn&amp;#39;t yet been assigned. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00038">MultiVar.h:38</a></div></div>
+<p>Definition at line <a class="el" href="../../d8/dc3/MultiVar_8cxx_source.html#l00012">12</a> of file <a class="el" href="../../d8/dc3/MultiVar_8cxx_source.html">MultiVar.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a>(fun), <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">fID</a>(<a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">fgNextID</a>--)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div>
+<div class="ttc" id="classana_1_1__MultiVar_html_a1d6a92e75308b8c91ee073b9286d1258"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">ana::_MultiVar::fID</a></div><div class="ttdeci">int fID</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00043">MultiVar.h:43</a></div></div>
+<div class="ttc" id="classana_1_1__MultiVar_html_ad7e01ff1e64c9794e0e2bfc68fc85771"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">ana::_MultiVar::fFunc</a></div><div class="ttdeci">std::function&lt; VarFunc_t &gt; fFunc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00041">MultiVar.h:41</a></div></div>
+<div class="ttc" id="classana_1_1__MultiVar_html_a0760c9e7a991305320df55f145c5d4d1"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">ana::_MultiVar::fgNextID</a></div><div class="ttdeci">static int fgNextID</div><div class="ttdoc">The next ID that hasn&amp;#39;t yet been assigned. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00045">MultiVar.h:45</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adb2fb5a39227730de70ab5641d4f8ebf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d60/classana_1_1__MultiVar.html">ana::_MultiVar</a>&lt; T &gt;::<a class="el" href="../../d2/d60/classana_1_1__MultiVar.html">_MultiVar</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; VarFunc_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00036">36</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      : <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a>(fun), <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">fID</a>(<span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="ttc" id="classana_1_1__MultiVar_html_a1d6a92e75308b8c91ee073b9286d1258"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">ana::_MultiVar::fID</a></div><div class="ttdeci">int fID</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00043">MultiVar.h:43</a></div></div>
+<div class="ttc" id="classana_1_1__MultiVar_html_ad7e01ff1e64c9794e0e2bfc68fc85771"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">ana::_MultiVar::fFunc</a></div><div class="ttdeci">std::function&lt; VarFunc_t &gt; fFunc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00041">MultiVar.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,9 +232,9 @@ template&lt;class T&gt; </div>
 
 <p>Vars with the same definition will have the same ID. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00030">30</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">fID</a>;}</div>
-<div class="ttc" id="classana_1_1__MultiVar_html_a1d6a92e75308b8c91ee073b9286d1258"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">ana::_MultiVar::fID</a></div><div class="ttdeci">int fID</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00036">MultiVar.h:36</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00032">32</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">fID</a>;}</div>
+<div class="ttc" id="classana_1_1__MultiVar_html_a1d6a92e75308b8c91ee073b9286d1258"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a1d6a92e75308b8c91ee073b9286d1258">ana::_MultiVar::fID</a></div><div class="ttdeci">int fID</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00043">MultiVar.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -212,9 +261,9 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00032">32</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">fgNextID</a>-1;}</div>
-<div class="ttc" id="classana_1_1__MultiVar_html_a0760c9e7a991305320df55f145c5d4d1"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">ana::_MultiVar::fgNextID</a></div><div class="ttdeci">static int fgNextID</div><div class="ttdoc">The next ID that hasn&amp;#39;t yet been assigned. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00038">MultiVar.h:38</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">fgNextID</a>-1;}</div>
+<div class="ttc" id="classana_1_1__MultiVar_html_a0760c9e7a991305320df55f145c5d4d1"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#a0760c9e7a991305320df55f145c5d4d1">ana::_MultiVar::fgNextID</a></div><div class="ttdeci">static int fgNextID</div><div class="ttdoc">The next ID that hasn&amp;#39;t yet been assigned. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00045">MultiVar.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -244,11 +293,11 @@ template&lt;class T&gt; </div>
 
 <p>Allows a variable to be called with double value = myVar(sr) syntax. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00024">24</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a>(sr);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="ttc" id="classana_1_1__MultiVar_html_ad7e01ff1e64c9794e0e2bfc68fc85771"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">ana::_MultiVar::fFunc</a></div><div class="ttdeci">std::function&lt; VarFunc_t &gt; fFunc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00034">MultiVar.h:34</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00026">26</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">fFunc</a>(sr);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="ttc" id="classana_1_1__MultiVar_html_ad7e01ff1e64c9794e0e2bfc68fc85771"><div class="ttname"><a href="../../d2/d60/classana_1_1__MultiVar.html#ad7e01ff1e64c9794e0e2bfc68fc85771">ana::_MultiVar::fFunc</a></div><div class="ttdeci">std::function&lt; VarFunc_t &gt; fFunc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/MultiVar_8h_source.html#l00041">MultiVar.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,7 +342,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
 
 </div>
 </div>
@@ -319,7 +368,7 @@ template&lt;class T&gt; </div>
 
 <p>The next ID that hasn't yet been assigned. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00045">45</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +392,7 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00036">36</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d69/MultiVar_8h_source.html#l00043">43</a> of file <a class="el" href="../../d6/d69/MultiVar_8h_source.html">MultiVar.h</a>.</p>
 
 </div>
 </div>

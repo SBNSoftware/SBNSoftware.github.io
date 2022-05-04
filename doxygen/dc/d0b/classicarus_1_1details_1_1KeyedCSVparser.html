@@ -176,7 +176,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af06dd360710be96e07322f933a62ac74"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">FixedSize</a> = std::numeric_limits&lt;unsigned int&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td></tr>
+<tr class="memitem:af06dd360710be96e07322f933a62ac74"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">FixedSize</a> = std::numeric_limits&lt;unsigned int&gt;::max()</td></tr>
 <tr class="memdesc:af06dd360710be96e07322f933a62ac74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expected values are missing.  <a href="#af06dd360710be96e07322f933a62ac74">More...</a><br/></td></tr>
 <tr class="separator:af06dd360710be96e07322f933a62ac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729aba90a83c1a9da2f246f154075ff2"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a729aba90a83c1a9da2f246f154075ff2">DynamicSize</a> = <a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">FixedSize</a> - 1U</td></tr>
@@ -508,11 +508,11 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>this parser (<code><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abee7735c70aa6ae0f207b1479a30e190" title="Adds known patterns. ">addPatterns()</a></code> calls may be chained)</dd></dl>
 <p>Each pattern is a pair key regex/number of values, like in <code><a class="el" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a89bb47daca7ce9720b08d53a9bb86a33" title="Adds a single known pattern. ">addPattern()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00178">178</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>: patterns) <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>.emplace_back(std::move(<a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>));</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::addPatterns()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00182">182</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>: patterns) <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>.emplace_back(std::move(<a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::addPatterns()</span></div>
 <div class="ttc" id="namespaceLVDSpatterns_html_ad2b1658effcfafaf8c9a54a6845befa0"><div class="ttname"><a href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">LVDSpatterns.pattern</a></div><div class="ttdeci">tuple pattern</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3e/LVDSpatterns_8py_source.html#l00112">LVDSpatterns.py:112</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_ae0d83082b288290400612a077a35b8b9"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">icarus::details::KeyedCSVparser::fPatterns</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::regex, unsigned int &gt; &gt; fPatterns</div><div class="ttdoc">List of known patterns for matching keys, and how many values they hold. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00517">KeyedCSVparser.h:517</a></div></div>
 </div><!-- fragment -->
@@ -532,12 +532,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00188">188</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>: patterns)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>.emplace_back(std::regex{ <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>.first }, <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>.second);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::addPatterns()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00192">192</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>: patterns)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>.emplace_back(std::regex{ <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>.first }, <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>.second);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::addPatterns()</span></div>
 <div class="ttc" id="namespaceLVDSpatterns_html_ad2b1658effcfafaf8c9a54a6845befa0"><div class="ttname"><a href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">LVDSpatterns.pattern</a></div><div class="ttdeci">tuple pattern</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3e/LVDSpatterns_8py_source.html#l00112">LVDSpatterns.py:112</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_ae0d83082b288290400612a077a35b8b9"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">icarus::details::KeyedCSVparser::fPatterns</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::regex, unsigned int &gt; &gt; fPatterns</div><div class="ttdoc">List of known patterns for matching keys, and how many values they hold. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00517">KeyedCSVparser.h:517</a></div></div>
 </div><!-- fragment -->
@@ -567,35 +567,35 @@ Private Attributes</h2></td></tr>
 
 <p>Extracts the next token from the <code>buffer</code> and returns its value, stripped. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00229">229</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span>  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  std::size_t <span class="keyword">const</span> length = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">findTokenLength</a>(buffer);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">moveBufferHead</a>(buffer, length + ((start + length == bend)? 0: 1));</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ start, length });</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span>  </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keyword">auto</span> finish = start;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">while</span> (finish != bend) {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (*finish == <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">fSep</a>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ++finish;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">// update the start of the buffer</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  std::size_t <span class="keyword">const</span> tokenLength = std::distance(start, finish);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">moveBufferHead</a>(buffer, tokenLength + ((finish == bend)? 0: 1));</div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00233">233</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#if 1</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span>  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  std::size_t <span class="keyword">const</span> length = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">findTokenLength</a>(buffer);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">moveBufferHead</a>(buffer, length + ((start + length == bend)? 0: 1));</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ start, length });</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor"></span>  </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keyword">auto</span> finish = start;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">while</span> (finish != bend) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">if</span> (*finish == <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">fSep</a>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    ++finish;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  } <span class="comment">// for</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ start, tokenLength });</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span>} <span class="comment">// icarus::details::KeyedCSVparser::extractToken()</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">// update the start of the buffer</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  std::size_t <span class="keyword">const</span> tokenLength = std::distance(start, finish);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">moveBufferHead</a>(buffer, tokenLength + ((finish == bend)? 0: 1));</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ start, tokenLength });</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span>} <span class="comment">// icarus::details::KeyedCSVparser::extractToken()</span></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ac27be52617e5c2346bb0af46485a8696"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">icarus::ns::util::cbegin</a></div><div class="ttdeci">auto cbegin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00567">FixedBins.h:567</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a8c25aabb417b1e4a81296da7fce6b8db"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">icarus::details::KeyedCSVparser::fSep</a></div><div class="ttdeci">char const fSep</div><div class="ttdoc">Character used as token separator. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00514">KeyedCSVparser.h:514</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ad9f95380d00f1d88d8f89fb910938752"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">icarus::ns::util::cend</a></div><div class="ttdeci">auto cend(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00579">FixedBins.h:579</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a97dea55f29caa3b51a12d8a35ac63b0c"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">icarus::details::KeyedCSVparser::moveBufferHead</a></div><div class="ttdeci">static Buffer_t &amp; moveBufferHead(Buffer_t &amp;buffer, std::size_t size) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00274">KeyedCSVparser.cxx:274</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_af0d3aadc1c5bdd3969db599742b890e6"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">icarus::details::KeyedCSVparser::findTokenLength</a></div><div class="ttdeci">std::size_t findTokenLength(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the length of the next toke, up to the next separator (excluded). </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00205">KeyedCSVparser.cxx:205</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a4cb097531ee1c4a77518251c30cdee88"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">icarus::details::KeyedCSVparser::strip</a></div><div class="ttdeci">static SubBuffer_t strip(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00284">KeyedCSVparser.cxx:284</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a97dea55f29caa3b51a12d8a35ac63b0c"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a97dea55f29caa3b51a12d8a35ac63b0c">icarus::details::KeyedCSVparser::moveBufferHead</a></div><div class="ttdeci">static Buffer_t &amp; moveBufferHead(Buffer_t &amp;buffer, std::size_t size) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00278">KeyedCSVparser.cxx:278</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_af0d3aadc1c5bdd3969db599742b890e6"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">icarus::details::KeyedCSVparser::findTokenLength</a></div><div class="ttdeci">std::size_t findTokenLength(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the length of the next toke, up to the next separator (excluded). </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00209">KeyedCSVparser.cxx:209</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a4cb097531ee1c4a77518251c30cdee88"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">icarus::details::KeyedCSVparser::strip</a></div><div class="ttdeci">static SubBuffer_t strip(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00288">KeyedCSVparser.cxx:288</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -623,18 +623,18 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the length of the next toke, up to the next separator (excluded). </p>
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00205">205</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keyword">auto</span> finish = start;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">while</span> (finish != bend) {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">if</span> (*finish == <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">fSep</a>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    ++finish;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">return</span> std::distance(start, finish);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::findTokenLength()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00209">209</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> start = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), bend = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(buffer);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">auto</span> finish = start;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">while</span> (finish != bend) {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">if</span> (*finish == <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">fSep</a>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    ++finish;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  } <span class="comment">// for</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">return</span> std::distance(start, finish);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::findTokenLength()</span></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ac27be52617e5c2346bb0af46485a8696"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">icarus::ns::util::cbegin</a></div><div class="ttdeci">auto cbegin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00567">FixedBins.h:567</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a8c25aabb417b1e4a81296da7fce6b8db"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a8c25aabb417b1e4a81296da7fce6b8db">icarus::details::KeyedCSVparser::fSep</a></div><div class="ttdeci">char const fSep</div><div class="ttdoc">Character used as token separator. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00514">KeyedCSVparser.h:514</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ad9f95380d00f1d88d8f89fb910938752"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">icarus::ns::util::cend</a></div><div class="ttdeci">auto cend(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00579">FixedBins.h:579</a></div></div>
@@ -665,12 +665,12 @@ Private Attributes</h2></td></tr>
 
 <p>Is content of <code>buffer</code> a key (as opposed to a value)? </p>
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00256">256</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordflow">return</span> !buffer.empty() &amp;&amp; std::isalpha(buffer.front());</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::isKey()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00260">260</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> !buffer.empty() &amp;&amp; std::isalpha(buffer.front());</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::isKey()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,8 +699,8 @@ template&lt;typename String &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00266">266</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  { <span class="keywordflow">return</span> { data(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>), <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>) }; } <span class="comment">// C++20: use begin/end constructor</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00270">270</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  { <span class="keywordflow">return</span> { data(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>), <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>) }; } <span class="comment">// C++20: use begin/end constructor</span></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aaae74cf315284bc0f44c2e050c119781"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">icarus::ns::util::size</a></div><div class="ttdeci">std::size_t size(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00561">FixedBins.h:561</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
@@ -764,13 +764,13 @@ template&lt;typename String &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00274">274</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a> = std::min(<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>, buffer.size());</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordflow">return</span> buffer = { buffer.data() + <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>, buffer.size() - <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a> };</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;} <span class="comment">// details::KeyedCSVparser::eatBufferHead()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00278">278</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a> = std::min(<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>, buffer.size());</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keywordflow">return</span> buffer = { buffer.data() + <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>, buffer.size() - <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a> };</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;} <span class="comment">// details::KeyedCSVparser::eatBufferHead()</span></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aaae74cf315284bc0f44c2e050c119781"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">icarus::ns::util::size</a></div><div class="ttdeci">std::size_t size(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00561">FixedBins.h:561</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -920,8 +920,8 @@ template&lt;typename BIter , typename EIter &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00199">199</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#adb28c248f88391e4a4b0d13a145405ae">parse</a>(std::string_view{ <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.data(), <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.size() }); }</div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00203">203</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#adb28c248f88391e4a4b0d13a145405ae">parse</a>(std::string_view{ <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.data(), <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.size() }); }</div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_adb28c248f88391e4a4b0d13a145405ae"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#adb28c248f88391e4a4b0d13a145405ae">icarus::details::KeyedCSVparser::parse</a></div><div class="ttdeci">ParsedData_t parse(std::string_view const &amp;s) const </div><div class="ttdoc">Parses the buffer s and returns a data structure with the content. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00679">KeyedCSVparser.h:679</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
@@ -997,90 +997,94 @@ template&lt;typename BIter , typename EIter &gt; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string tokenStr { <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(token), <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">cend</a>(token) };</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// if there are values pending, this is not a key, period.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> bKey = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">if</span> (forcedValues &gt;= 0) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        bKey = (forcedValues == 0); <span class="comment">// if no more forced values, next is key</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        --forcedValues;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="comment">// if the key may still be a key</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>, <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a> ]: <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (!std::regex_match(<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(token), <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(token), <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        bKey = <span class="keyword">true</span>; <span class="comment">// matching a pattern implies this is a key</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        std::string <span class="keyword">const</span>&amp; key = tokenStr;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// how many values to expect:</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a>) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">FixedSize</a>: <span class="comment">// read the next token immediately as fixed size</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a>.empty()) <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;              </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;              <span class="keyword">auto</span> <span class="keyword">const</span> sizeToken = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae3f0697d09eab1604fb3f5a27e6f9c8c">peekToken</a>(<a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">empty</a>(sizeToken)) <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;              <span class="comment">// the value is loaded in `forcedValues` and already excludes</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;              <span class="comment">// the size token just read</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;              <span class="keywordtype">char</span> <span class="keyword">const</span> *b = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(sizeToken), *<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(sizeToken);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;              <span class="keywordflow">if</span> (std::from_chars(b, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, forcedValues).ptr != <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key, std::string{ sizeToken });</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;              </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;              ++forcedValues; <span class="comment">// the size will be forced in the values anyway</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;              </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            } <span class="comment">// FixedSize</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a729aba90a83c1a9da2f246f154075ff2">DynamicSize</a>:</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="comment">// nothing to do, the normal algorithm rules will follow</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;          <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            forcedValues = <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        } <span class="comment">// switch</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      } <span class="comment">// for pattern</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">if</span> (bKey) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="comment">// let the &quot;standard&quot; pattern decide</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      bKey = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aeb89c7d0c15ba2c368a7d5637e07f6ec">isKey</a>(token);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    } <span class="keywordflow">while</span> (<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (bKey) currentItem = &amp;(data.makeItem(std::move(tokenStr)));</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordflow">if</span> (!currentItem) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">throw</span> InvalidFormat(</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;         <span class="stringliteral">&quot;values started without a key (&#39;&quot;</span> + tokenStr + <span class="stringliteral">&quot;&#39; is not a valid key).&quot;</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;         );</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      currentItem-&gt;addValue(std::move(tokenStr));</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  } <span class="comment">// while</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">if</span> (forcedValues &gt; 0) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    assert(currentItem);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">throw</span> MissingValues(currentItem-&gt;key(), forcedValues);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} <span class="comment">// icarus::KeyedCSVparser::parse()</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> bKey = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">// if there are values pending, this is not a key, period;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="comment">// if all required values have been assigned, the next token is a key.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordflow">if</span> (forcedValues &gt;= 0) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        bKey = (forcedValues == 0); <span class="comment">// if no more forced values, next is key</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        --forcedValues;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">// if we know the token is a key, we still need to check for matching</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="comment">// patterns to assign required values</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (!bKey) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="comment">// the token may still be a key (if `bKey` is true, it is for sure: we can</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="comment">// decide that a non-key (!bKey) is actually a key, but not the opposite)</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>, <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a> ]: <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">fPatterns</a>) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (!std::regex_match(<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(token), <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(token), <a class="code" href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">pattern</a>)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        bKey = <span class="keyword">true</span>; <span class="comment">// matching a pattern implies this is a key</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        std::string <span class="keyword">const</span>&amp; key = tokenStr;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">// how many values to expect:</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a>) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">FixedSize</a>: <span class="comment">// read the next token immediately as fixed size</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a>.empty()) <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;              </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;              <span class="keyword">auto</span> <span class="keyword">const</span> sizeToken = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae3f0697d09eab1604fb3f5a27e6f9c8c">peekToken</a>(<a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">empty</a>(sizeToken)) <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;              </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;              <span class="comment">// the value is loaded in `forcedValues` and already excludes</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;              <span class="comment">// the size token just read</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;              <span class="keywordtype">char</span> <span class="keyword">const</span> *b = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">begin</a>(sizeToken), *<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> = <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(sizeToken);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;              <span class="keywordflow">if</span> (std::from_chars(b, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, forcedValues).ptr != <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">MissingSize</a>(key, std::string{ sizeToken });</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;              </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;              ++forcedValues; <span class="comment">// the size will be forced in the values anyway</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;              </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            } <span class="comment">// FixedSize</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          <span class="keywordflow">case</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a729aba90a83c1a9da2f246f154075ff2">DynamicSize</a>:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="comment">// nothing to do, the normal algorithm rules will follow</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            forcedValues = <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">values</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        } <span class="comment">// switch</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      } <span class="comment">// for pattern</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">if</span> (bKey) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="comment">// let the &quot;standard&quot; pattern decide</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      bKey = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aeb89c7d0c15ba2c368a7d5637e07f6ec">isKey</a>(token);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    } <span class="keywordflow">while</span> (<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span> (bKey) currentItem = &amp;(data.makeItem(std::move(tokenStr)));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="keywordflow">if</span> (!currentItem) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">throw</span> InvalidFormat(</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;         <span class="stringliteral">&quot;values started without a key (&#39;&quot;</span> + tokenStr + <span class="stringliteral">&quot;&#39; is not a valid key).&quot;</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;         );</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      currentItem-&gt;addValue(std::move(tokenStr));</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  } <span class="comment">// while</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">if</span> (forcedValues &gt; 0) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    assert(currentItem);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">throw</span> MissingValues(currentItem-&gt;key(), forcedValues);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;} <span class="comment">// icarus::KeyedCSVparser::parse()</span></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_af06dd360710be96e07322f933a62ac74"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af06dd360710be96e07322f933a62ac74">icarus::details::KeyedCSVparser::FixedSize</a></div><div class="ttdeci">static constexpr unsigned int FixedSize</div><div class="ttdoc">Expected values are missing. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00432">KeyedCSVparser.h:432</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_aeb89c7d0c15ba2c368a7d5637e07f6ec"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aeb89c7d0c15ba2c368a7d5637e07f6ec">icarus::details::KeyedCSVparser::isKey</a></div><div class="ttdeci">bool isKey(SubBuffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Is content of buffer a key (as opposed to a value)? </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00256">KeyedCSVparser.cxx:256</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_aeb89c7d0c15ba2c368a7d5637e07f6ec"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aeb89c7d0c15ba2c368a7d5637e07f6ec">icarus::details::KeyedCSVparser::isKey</a></div><div class="ttdeci">bool isKey(SubBuffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Is content of buffer a key (as opposed to a value)? </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00260">KeyedCSVparser.cxx:260</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ac27be52617e5c2346bb0af46485a8696"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">icarus::ns::util::cbegin</a></div><div class="ttdeci">auto cbegin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00567">FixedBins.h:567</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ad9f95380d00f1d88d8f89fb910938752"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ad9f95380d00f1d88d8f89fb910938752">icarus::ns::util::cend</a></div><div class="ttdeci">auto cend(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00579">FixedBins.h:579</a></div></div>
-<div class="ttc" id="runFilesFromSAM_8sh_html_ae489866f8220882799d2786ca0690e5b"><div class="ttname"><a href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a></div><div class="ttdeci">stream</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/runFilesFromSAM_8sh_source.html#l00261">runFilesFromSAM.sh:261</a></div></div>
+<div class="ttc" id="runFilesFromSAM_8sh_html_ae489866f8220882799d2786ca0690e5b"><div class="ttname"><a href="../../d0/d8f/runFilesFromSAM_8sh.html#ae489866f8220882799d2786ca0690e5b">stream</a></div><div class="ttdeci">stream</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/runFilesFromSAM_8sh_source.html#l00263">runFilesFromSAM.sh:263</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a729aba90a83c1a9da2f246f154075ff2"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a729aba90a83c1a9da2f246f154075ff2">icarus::details::KeyedCSVparser::DynamicSize</a></div><div class="ttdeci">static constexpr unsigned int DynamicSize</div><div class="ttdoc">Mnemonic size value used in addPattern() calls. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00434">KeyedCSVparser.h:434</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aac918da84f16d53ad17bab4f817da1c4"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">icarus::ns::util::end</a></div><div class="ttdeci">auto end(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00585">FixedBins.h:585</a></div></div>
 <div class="ttc" id="namespaceLVDSpatterns_html_ad2b1658effcfafaf8c9a54a6845befa0"><div class="ttname"><a href="../../df/d32/namespaceLVDSpatterns.html#ad2b1658effcfafaf8c9a54a6845befa0">LVDSpatterns.pattern</a></div><div class="ttdeci">tuple pattern</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3e/LVDSpatterns_8py_source.html#l00112">LVDSpatterns.py:112</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_acc1957472e01a8d9ecd245e26338f0b9"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#acc1957472e01a8d9ecd245e26338f0b9">icarus::ns::util::begin</a></div><div class="ttdeci">auto begin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00573">FixedBins.h:573</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_ae0d83082b288290400612a077a35b8b9"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae0d83082b288290400612a077a35b8b9">icarus::details::KeyedCSVparser::fPatterns</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::regex, unsigned int &gt; &gt; fPatterns</div><div class="ttdoc">List of known patterns for matching keys, and how many values they hold. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00517">KeyedCSVparser.h:517</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a9a32d155b70268c48ab541c1c9e4ed27"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a9a32d155b70268c48ab541c1c9e4ed27">icarus::details::KeyedCSVparser::extractToken</a></div><div class="ttdeci">SubBuffer_t extractToken(Buffer_t &amp;buffer) const noexcept</div><div class="ttdoc">Extracts the next token from the buffer and returns its value, stripped. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00229">KeyedCSVparser.cxx:229</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a9a32d155b70268c48ab541c1c9e4ed27"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a9a32d155b70268c48ab541c1c9e4ed27">icarus::details::KeyedCSVparser::extractToken</a></div><div class="ttdeci">SubBuffer_t extractToken(Buffer_t &amp;buffer) const noexcept</div><div class="ttdoc">Extracts the next token from the buffer and returns its value, stripped. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00233">KeyedCSVparser.cxx:233</a></div></div>
 <div class="ttc" id="namespacechannelDBConverter_html_a5db4217e69ac7c2d95856da42b13f8e5"><div class="ttname"><a href="../../d4/d43/namespacechannelDBConverter.html#a5db4217e69ac7c2d95856da42b13f8e5">channelDBConverter.values</a></div><div class="ttdeci">list values</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d11/channelDBConverter_8py_source.html#l00248">channelDBConverter.py:248</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_abf8e8a43b60b0a40a20ad3abf0c1b520"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#abf8e8a43b60b0a40a20ad3abf0c1b520">icarus::details::KeyedCSVparser::MissingSize</a></div><div class="ttdeci">KeyValuesData::MissingSize MissingSize</div><div class="ttdoc">Expected number of values is missing. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00427">KeyedCSVparser.h:427</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_ae3f0697d09eab1604fb3f5a27e6f9c8c"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae3f0697d09eab1604fb3f5a27e6f9c8c">icarus::details::KeyedCSVparser::peekToken</a></div><div class="ttdeci">SubBuffer_t peekToken(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the value of the next token, stripped. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00221">KeyedCSVparser.cxx:221</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_ae3f0697d09eab1604fb3f5a27e6f9c8c"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#ae3f0697d09eab1604fb3f5a27e6f9c8c">icarus::details::KeyedCSVparser::peekToken</a></div><div class="ttdeci">SubBuffer_t peekToken(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the value of the next token, stripped. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00225">KeyedCSVparser.cxx:225</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_a74da18d4f0023feee71c1352a99b3910"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#a74da18d4f0023feee71c1352a99b3910">icarus::ns::util::empty</a></div><div class="ttdeci">bool empty(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00555">FixedBins.h:555</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1143,13 +1147,13 @@ template&lt;typename BIter , typename EIter &gt; </div>
 
 <p>Returns the value of the next token, stripped. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00221">221</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">findTokenLength</a>(buffer) });</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::peekToken()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00225">225</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">strip</a>({ <a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">cbegin</a>(buffer), <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">findTokenLength</a>(buffer) });</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::peekToken()</span></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_ac27be52617e5c2346bb0af46485a8696"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#ac27be52617e5c2346bb0af46485a8696">icarus::ns::util::cbegin</a></div><div class="ttdeci">auto cbegin(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00567">FixedBins.h:567</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_af0d3aadc1c5bdd3969db599742b890e6"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">icarus::details::KeyedCSVparser::findTokenLength</a></div><div class="ttdeci">std::size_t findTokenLength(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the length of the next toke, up to the next separator (excluded). </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00205">KeyedCSVparser.cxx:205</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a4cb097531ee1c4a77518251c30cdee88"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">icarus::details::KeyedCSVparser::strip</a></div><div class="ttdeci">static SubBuffer_t strip(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00284">KeyedCSVparser.cxx:284</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_af0d3aadc1c5bdd3969db599742b890e6"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#af0d3aadc1c5bdd3969db599742b890e6">icarus::details::KeyedCSVparser::findTokenLength</a></div><div class="ttdeci">std::size_t findTokenLength(Buffer_t const &amp;buffer) const noexcept</div><div class="ttdoc">Returns the length of the next toke, up to the next separator (excluded). </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00209">KeyedCSVparser.cxx:209</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a4cb097531ee1c4a77518251c30cdee88"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a4cb097531ee1c4a77518251c30cdee88">icarus::details::KeyedCSVparser::strip</a></div><div class="ttdeci">static SubBuffer_t strip(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00288">KeyedCSVparser.cxx:288</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1175,10 +1179,10 @@ template&lt;typename BIter , typename EIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00284">284</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a355e4dcc7b24c613e3b1583df775f5d8">stripRight</a>(<a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aca9d25cfa07b18998aea425092f349d3">stripLeft</a>(stripRightChars&lt;&#39;\n&#39;, &#39;\r&#39;, &#39;\0&#39;&gt;(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>))); }</div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a355e4dcc7b24c613e3b1583df775f5d8"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a355e4dcc7b24c613e3b1583df775f5d8">icarus::details::KeyedCSVparser::stripRight</a></div><div class="ttdeci">static SubBuffer_t stripRight(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00304">KeyedCSVparser.cxx:304</a></div></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_aca9d25cfa07b18998aea425092f349d3"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aca9d25cfa07b18998aea425092f349d3">icarus::details::KeyedCSVparser::stripLeft</a></div><div class="ttdeci">static SubBuffer_t stripLeft(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00290">KeyedCSVparser.cxx:290</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00288">288</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a355e4dcc7b24c613e3b1583df775f5d8">stripRight</a>(<a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aca9d25cfa07b18998aea425092f349d3">stripLeft</a>(stripRightChars&lt;&#39;\n&#39;, &#39;\r&#39;, &#39;\0&#39;&gt;(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>))); }</div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a355e4dcc7b24c613e3b1583df775f5d8"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a355e4dcc7b24c613e3b1583df775f5d8">icarus::details::KeyedCSVparser::stripRight</a></div><div class="ttdeci">static SubBuffer_t stripRight(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00308">KeyedCSVparser.cxx:308</a></div></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_aca9d25cfa07b18998aea425092f349d3"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#aca9d25cfa07b18998aea425092f349d3">icarus::details::KeyedCSVparser::stripLeft</a></div><div class="ttdeci">static SubBuffer_t stripLeft(SubBuffer_t s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00294">KeyedCSVparser.cxx:294</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1205,16 +1209,16 @@ template&lt;typename BIter , typename EIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00290">290</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">if</span> (!std::isspace(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.front())) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_prefix(1);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripLeft()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00294">294</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">if</span> (!std::isspace(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.front())) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_prefix(1);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripLeft()</span></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1241,16 +1245,16 @@ template&lt;typename BIter , typename EIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00304">304</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span> (!std::isspace(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.back())) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_suffix(1);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRight()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00308">308</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span> (!std::isspace(<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.back())) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_suffix(1);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRight()</span></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1287,16 +1291,16 @@ template&lt;typename BIter , typename EIter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00319">319</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.back() != c) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_suffix(1);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRightChar()</span></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00323">323</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">while</span> (!<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.empty()) {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.back() != c) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>.remove_suffix(1);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRightChar()</span></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1326,17 +1330,17 @@ template&lt;char... Chars&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00334">334</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">auto</span> ns = <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">char</span> c: { Chars... }) ns = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a2bff20e81998bcd78b3e69c586a97015">stripRightChar</a>(ns, c);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (ns == <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>) <span class="keywordflow">return</span> ns;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> = ns;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  } <span class="comment">// while(true)</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRightChars()</span></div>
-<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a2bff20e81998bcd78b3e69c586a97015"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a2bff20e81998bcd78b3e69c586a97015">icarus::details::KeyedCSVparser::stripRightChar</a></div><div class="ttdeci">static SubBuffer_t stripRightChar(SubBuffer_t s, char c) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00319">KeyedCSVparser.cxx:319</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00338">338</a> of file <a class="el" href="../../d6/dbb/KeyedCSVparser_8cxx_source.html">KeyedCSVparser.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">auto</span> ns = <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">char</span> c: { Chars... }) ns = <a class="code" href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a2bff20e81998bcd78b3e69c586a97015">stripRightChar</a>(ns, c);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">if</span> (ns == <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>) <span class="keywordflow">return</span> ns;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> = ns;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  } <span class="comment">// while(true)</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;} <span class="comment">// icarus::details::KeyedCSVparser::stripRightChars()</span></div>
+<div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html_a2bff20e81998bcd78b3e69c586a97015"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html#a2bff20e81998bcd78b3e69c586a97015">icarus::details::KeyedCSVparser::stripRightChar</a></div><div class="ttdeci">static SubBuffer_t stripRightChar(SubBuffer_t s, char c) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dbb/KeyedCSVparser_8cxx_source.html#l00323">KeyedCSVparser.cxx:323</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1400,7 +1404,7 @@ template&lt;char... Chars&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr unsigned int icarus::details::KeyedCSVparser::FixedSize = std::numeric_limits&lt;unsigned int&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td>
+          <td class="memname">constexpr unsigned int icarus::details::KeyedCSVparser::FixedSize = std::numeric_limits&lt;unsigned int&gt;::max()</td>
         </tr>
       </table>
   </td>

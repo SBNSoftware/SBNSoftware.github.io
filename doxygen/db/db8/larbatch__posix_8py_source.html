@@ -889,103 +889,106 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordflow">if</span> debug:</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Change mode for %s using posix.&#39;</span> % path)</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        os.chmod(path, mode)</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="comment"># Make symbolic link.</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="comment"># Use nfs.</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            os.chmod(path, mode)</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="keywordflow">except</span>:</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;Warning: chmod failed for path %s&#39;</span> % path)</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
-<div class="line"><a name="l00818"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">  818</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">symlink</a>(src, dest):</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="comment"># Make sure we have a kerberos ticket.</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <span class="keywordflow">if</span> src.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> <span class="keywordflow">not</span> pnfs_is_mounted:</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Make symbolic link from %s to %s using nfs server.&#39;</span> % (src, dest))</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        larbatch_utilities.test_ticket()</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        cmd = [<span class="stringliteral">&#39;ssh&#39;</span>, larbatch_utilities.nfs_server(), <span class="stringliteral">&#39;ln&#39;</span>, <span class="stringliteral">&#39;-s&#39;</span>, src, dest]</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        jobinfo = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        q = queue.Queue()</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        thread = threading.Thread(target=larbatch_utilities.wait_for_subprocess, args=[jobinfo, q])</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        thread.start()</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        thread.join(timeout=60)</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="keywordflow">if</span> thread.is_alive():</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Terminating subprocess.&#39;</span>)</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            jobinfo.terminate()</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            thread.join()</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        rc = q.get()</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        jobout = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        joberr = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordflow">if</span> rc != 0:</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            <span class="keywordflow">raise</span> IFDHError(cmd, rc, jobout, joberr)</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Make symbolic link from %s to %s using posix.&#39;</span> % (src, dest))</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        os.symlink(src, dest)</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="comment"># Read a symbolic link.</span></div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<span class="comment"># Use nfs.</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="comment"># Make symbolic link.</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="comment"># Use nfs.</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">  821</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">symlink</a>(src, dest):</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="comment"># Make sure we have a kerberos ticket.</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keywordflow">if</span> src.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> <span class="keywordflow">not</span> pnfs_is_mounted:</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Make symbolic link from %s to %s using nfs server.&#39;</span> % (src, dest))</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        larbatch_utilities.test_ticket()</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        cmd = [<span class="stringliteral">&#39;ssh&#39;</span>, larbatch_utilities.nfs_server(), <span class="stringliteral">&#39;ln&#39;</span>, <span class="stringliteral">&#39;-s&#39;</span>, src, dest]</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        jobinfo = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        q = queue.Queue()</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        thread = threading.Thread(target=larbatch_utilities.wait_for_subprocess, args=[jobinfo, q])</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        thread.start()</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        thread.join(timeout=60)</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="keywordflow">if</span> thread.is_alive():</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Terminating subprocess.&#39;</span>)</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;            jobinfo.terminate()</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            thread.join()</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        rc = q.get()</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        jobout = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        joberr = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordflow">if</span> rc != 0:</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            <span class="keywordflow">raise</span> IFDHError(cmd, rc, jobout, joberr)</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Make symbolic link from %s to %s using posix.&#39;</span> % (src, dest))</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        os.symlink(src, dest)</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
-<div class="line"><a name="l00853"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">  853</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">readlink</a>(path):</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    result = <span class="stringliteral">&#39;&#39;</span></div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="comment"># Make sure we have a kerberos ticket.</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keywordflow">if</span> path.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> not_pnfs_is_mounted:</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Read symbolic link %s using nfs server.&#39;</span> % path)</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        larbatch_utilities.test_ticket()</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        cmd = [<span class="stringliteral">&#39;ssh&#39;</span>, larbatch_utilities.nfs_server(), <span class="stringliteral">&#39;readlink&#39;</span>, path]</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        jobinfo = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        q = queue.Queue()</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        thread = threading.Thread(target=larbatch_utilities.wait_for_subprocess, args=[jobinfo, q])</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        thread.start()</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        thread.join(timeout=60)</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="keywordflow">if</span> thread.is_alive():</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Terminating subprocess.&#39;</span>)</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;            jobinfo.terminate()</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            thread.join()</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        rc = q.get()</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        jobout = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        joberr = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="keywordflow">if</span> rc != 0:</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <span class="keywordflow">raise</span> IFDHError(cmd, rc, jobout, joberr)</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        result = jobout.strip()</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Read symbolic link %s using posix.&#39;</span> % path)</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        result = os.readlink(path)</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="comment"># Done.</span></div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <span class="keywordflow">return</span> result</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;<span class="comment"># Read a symbolic link.</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="comment"># Use nfs.</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;</div>
+<div class="line"><a name="l00856"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">  856</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">readlink</a>(path):</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    result = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="comment"># Make sure we have a kerberos ticket.</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordflow">if</span> path.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> not_pnfs_is_mounted:</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Read symbolic link %s using nfs server.&#39;</span> % path)</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        larbatch_utilities.test_ticket()</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        cmd = [<span class="stringliteral">&#39;ssh&#39;</span>, larbatch_utilities.nfs_server(), <span class="stringliteral">&#39;readlink&#39;</span>, path]</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        jobinfo = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        q = queue.Queue()</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        thread = threading.Thread(target=larbatch_utilities.wait_for_subprocess, args=[jobinfo, q])</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        thread.start()</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        thread.join(timeout=60)</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="keywordflow">if</span> thread.is_alive():</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;                <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Terminating subprocess.&#39;</span>)</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            jobinfo.terminate()</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            thread.join()</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        rc = q.get()</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        jobout = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        joberr = <a class="code" href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">convert_str</a>(q.get())</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <span class="keywordflow">if</span> rc != 0:</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <span class="keywordflow">raise</span> IFDHError(cmd, rc, jobout, joberr)</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        result = jobout.strip()</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Read symbolic link %s using posix.&#39;</span> % path)</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        result = os.readlink(path)</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="comment"># Done.</span></div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;<span class="comment"># Convert a root file path to a streamable path or uri that can be opened </span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;<span class="comment"># using TFile::Open.</span></div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;<span class="comment"># Non-dCache paths (paths not starting with &#39;/pnfs/&#39;) are not changed.</span></div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="comment"># dCache paths (patsh starting with &#39;/pnfs/&#39;) may be converted to an xrootd uri.</span></div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;</div>
-<div class="line"><a name="l00897"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">  897</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">root_stream</a>(path):</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    stream = path</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    <span class="keywordflow">if</span> path.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> (prefer_grid <span class="keywordflow">or</span> <span class="keywordflow">not</span> pnfs_is_mounted):</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Stream path %s using xrootd.&#39;</span> % path)</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        larbatch_utilities.test_proxy()</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        stream = larbatch_utilities.xrootd_uri(path)</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">if</span> debug:</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Stream path %s as normal file.&#39;</span> % path)</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="keywordflow">return</span> stream</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">return</span> result</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;<span class="comment"># Convert a root file path to a streamable path or uri that can be opened </span></div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;<span class="comment"># using TFile::Open.</span></div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="comment"># Non-dCache paths (paths not starting with &#39;/pnfs/&#39;) are not changed.</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;<span class="comment"># dCache paths (patsh starting with &#39;/pnfs/&#39;) may be converted to an xrootd uri.</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno"><a class="line" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">  900</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">root_stream</a>(path):</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    stream = path</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keywordflow">if</span> path.startswith(<span class="stringliteral">&#39;/pnfs/&#39;</span>) <span class="keywordflow">and</span> (prefer_grid <span class="keywordflow">or</span> <span class="keywordflow">not</span> pnfs_is_mounted):</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Stream path %s using xrootd.&#39;</span> % path)</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        larbatch_utilities.test_proxy()</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        stream = larbatch_utilities.xrootd_uri(path)</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">if</span> debug:</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            <a class="code" href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a>(<span class="stringliteral">&#39;*** Larbatch_posix: Stream path %s as normal file.&#39;</span> % path)</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    <span class="keywordflow">return</span> stream</div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a7a323cd1e296cd81825cbd8f3c78e544"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a7a323cd1e296cd81825cbd8f3c78e544">python.larbatch_posix.rmdir</a></div><div class="ttdeci">def rmdir</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00745">larbatch_posix.py:745</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_ad4b6f32487be1d5bb289b3ecfa3e20d8"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#ad4b6f32487be1d5bb289b3ecfa3e20d8">python.larbatch_posix.dcache_file.local_path</a></div><div class="ttdeci">local_path</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00163">larbatch_posix.py:163</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_a6b31afc2becd36f659d60551a6a0a04a"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#a6b31afc2becd36f659d60551a6a0a04a">python.larbatch_posix.dcache_file.readline</a></div><div class="ttdeci">def readline</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00237">larbatch_posix.py:237</a></div></div>
@@ -996,7 +999,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a8975349ec6b0427eebf111f540b9cd11"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8975349ec6b0427eebf111f540b9cd11">python.larbatch_posix.stat</a></div><div class="ttdeci">def stat</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00482">larbatch_posix.py:482</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_a43b66514c63e917a6d6714f074112521"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#a43b66514c63e917a6d6714f074112521">python.larbatch_posix.dcache_file.fileno</a></div><div class="ttdeci">def fileno</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00222">larbatch_posix.py:222</a></div></div>
 <div class="ttc" id="update__sources_8sh_html_a9d5114a203443f620e1c5755709c1860"><div class="ttname"><a href="../../da/d1b/update__sources_8sh.html#a9d5114a203443f620e1c5755709c1860">print</a></div><div class="ttdeci">do one_file $F done echo for F in find $TOP name CMakeLists txt print</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d1b/update__sources_8sh_source.html#l00094">update_sources.sh:94</a></div></div>
-<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a2c0c9c0ca6fc7988af9d4ed98faf7eff"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">python.larbatch_posix.readlink</a></div><div class="ttdeci">def readlink</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00853">larbatch_posix.py:853</a></div></div>
+<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a2c0c9c0ca6fc7988af9d4ed98faf7eff"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a2c0c9c0ca6fc7988af9d4ed98faf7eff">python.larbatch_posix.readlink</a></div><div class="ttdeci">def readlink</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00856">larbatch_posix.py:856</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a48ee5518bc37cbd88e6d5149a961e2aa"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a48ee5518bc37cbd88e6d5149a961e2aa">python.larbatch_posix.rename</a></div><div class="ttdeci">def rename</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00682">larbatch_posix.py:682</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_ad2c67d61e1d7f9d0cbc8d9f7e4900d4c"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#ad2c67d61e1d7f9d0cbc8d9f7e4900d4c">python.larbatch_posix.dcache_file.__del__</a></div><div class="ttdeci">def __del__</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00188">larbatch_posix.py:188</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_adecd939a483e4711ba54a0075578aa1e"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#adecd939a483e4711ba54a0075578aa1e">python.larbatch_posix.walk</a></div><div class="ttdeci">def walk</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00585">larbatch_posix.py:585</a></div></div>
@@ -1010,11 +1013,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a7a24f5c6917233c1819211a8ac984fe8"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a7a24f5c6917233c1819211a8ac984fe8">python.larbatch_posix.rmtree</a></div><div class="ttdeci">def rmtree</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00758">larbatch_posix.py:758</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_af6fbd0e86960be680bc8dbba172b921e"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#af6fbd0e86960be680bc8dbba172b921e">python.larbatch_posix.listdir</a></div><div class="ttdeci">def listdir</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00318">larbatch_posix.py:318</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a039074a49017e6d3aa4ca706a9c4972f"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a039074a49017e6d3aa4ca706a9c4972f">python.larbatch_posix.use_grid</a></div><div class="ttdeci">def use_grid</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00150">larbatch_posix.py:150</a></div></div>
-<div class="ttc" id="namespacepython_1_1larbatch__utilities_html_a9e3a7154b402efc0da7836dc7bd1632e"><div class="ttname"><a href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">python.larbatch_utilities.convert_str</a></div><div class="ttdeci">def convert_str</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5b/larbatch__utilities_8py_source.html#l01173">larbatch_utilities.py:1173</a></div></div>
-<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a6290ddd4f0f4e4ee862511a6c2fbaea5"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">python.larbatch_posix.root_stream</a></div><div class="ttdeci">def root_stream</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00897">larbatch_posix.py:897</a></div></div>
+<div class="ttc" id="namespacepython_1_1larbatch__utilities_html_a9e3a7154b402efc0da7836dc7bd1632e"><div class="ttname"><a href="../../d4/d03/namespacepython_1_1larbatch__utilities.html#a9e3a7154b402efc0da7836dc7bd1632e">python.larbatch_utilities.convert_str</a></div><div class="ttdeci">def convert_str</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5b/larbatch__utilities_8py_source.html#l01171">larbatch_utilities.py:1171</a></div></div>
+<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a6290ddd4f0f4e4ee862511a6c2fbaea5"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a6290ddd4f0f4e4ee862511a6c2fbaea5">python.larbatch_posix.root_stream</a></div><div class="ttdeci">def root_stream</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00900">larbatch_posix.py:900</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_aebaaf5d6529d8a944c33f4c3a790a1b7"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#aebaaf5d6529d8a944c33f4c3a790a1b7">python.larbatch_posix.remove</a></div><div class="ttdeci">def remove</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00715">larbatch_posix.py:715</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_afc46e5dbb9414b7da792c92187181f0d"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#afc46e5dbb9414b7da792c92187181f0d">python.larbatch_posix.copy</a></div><div class="ttdeci">def copy</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00294">larbatch_posix.py:294</a></div></div>
-<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a8c318db408672d1e9a9524c63be6c7c7"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">python.larbatch_posix.symlink</a></div><div class="ttdeci">def symlink</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00818">larbatch_posix.py:818</a></div></div>
+<div class="ttc" id="namespacepython_1_1larbatch__posix_html_a8c318db408672d1e9a9524c63be6c7c7"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8c318db408672d1e9a9524c63be6c7c7">python.larbatch_posix.symlink</a></div><div class="ttdeci">def symlink</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00821">larbatch_posix.py:821</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_a27471bc9cfd36b990bc5329d92fbbdd1"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#a27471bc9cfd36b990bc5329d92fbbdd1">python.larbatch_posix.dcache_file.readlines</a></div><div class="ttdeci">def readlines</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00242">larbatch_posix.py:242</a></div></div>
 <div class="ttc" id="namespacepython_1_1larbatch__posix_html_a5691a311aad1dcf190c8700f455a5935"><div class="ttname"><a href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">python.larbatch_posix.mkdir</a></div><div class="ttdeci">def mkdir</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00642">larbatch_posix.py:642</a></div></div>
 <div class="ttc" id="classpython_1_1larbatch__posix_1_1dcache__file_html_accc5565cee841a679a0373225598e11e"><div class="ttname"><a href="../../db/d9a/classpython_1_1larbatch__posix_1_1dcache__file.html#accc5565cee841a679a0373225598e11e">python.larbatch_posix.dcache_file.truncate</a></div><div class="ttdeci">def truncate</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db8/larbatch__posix_8py_source.html#l00252">larbatch_posix.py:252</a></div></div>

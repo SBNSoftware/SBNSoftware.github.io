@@ -89,51 +89,54 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef LARCOREALG_COREUTILS_FROMFUTUREIMPORT_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LARCOREALG_COREUTILS_FROMFUTUREIMPORT_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @defgroup FutureStandards Future C++ features</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @brief Features expected to be provided by future C++ standards.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Namespace anticipating some simple features of C++ standards not yet adopted.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * It is recommended that whenever all supported compilers support each single</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * feature, that be removed from here, and the standard one immediately adopted.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * The aim is that the interface and behaviour here are as similar as possible,</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * so that the update should boil down to a different header inclusion and a</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * different namespace.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @addtogroup FutureStandards</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span> </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d0/d92/namespaceutil_1_1pre__std.html">   31</a></span>&#160;<span class="keyword">namespace </span>util::pre_std {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if (__cplusplus &lt; 202000L) // still to be defined, should be C++20</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span>  <span class="comment"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">  /// Transparent functor that returns its argument just as passed.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../da/d49/structutil_1_1pre__std_1_1identity.html">   36</a></span>&#160;<span class="comment"></span>  <span class="keyword">struct </span><a class="code" href="../../da/d49/structutil_1_1pre__std_1_1identity.html">identity</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">   38</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">is_transparent</a> {}; <span class="comment">// STL algorithms will be happy to find this</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">   41</a></span>&#160;    constexpr T&amp;&amp; <a class="code" href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">operator() </a>(T&amp;&amp; t) <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">const</a> noexcept</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      { <span class="keywordflow">return</span> std::forward&lt;T&gt;(t); }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }; <span class="comment">// identity&lt;&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // (__cplusplus &lt; 202000L)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span>  </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace pre_std</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif // LARCOREALG_COREUTILS_FROMFUTUREIMPORT_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span> <span class="comment">// std::forward()</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @defgroup FutureStandards Future C++ features</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @brief Features expected to be provided by future C++ standards.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * Namespace anticipating some simple features of C++ standards not yet adopted.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * It is recommended that whenever all supported compilers support each single</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * feature, that be removed from here, and the standard one immediately adopted.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * The aim is that the interface and behaviour here are as similar as possible,</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * so that the update should boil down to a different header inclusion and a</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * different namespace.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * @addtogroup FutureStandards</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> */</span> </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d0/d92/namespaceutil_1_1pre__std.html">   34</a></span>&#160;<span class="keyword">namespace </span>util::pre_std {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if (__cplusplus &lt; 202000L) // still to be defined, should be C++20</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span>  <span class="comment"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">  /// Transparent functor that returns its argument just as passed.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../da/d49/structutil_1_1pre__std_1_1identity.html">   39</a></span>&#160;<span class="comment"></span>  <span class="keyword">struct </span><a class="code" href="../../da/d49/structutil_1_1pre__std_1_1identity.html">identity</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">   41</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">is_transparent</a> {}; <span class="comment">// STL algorithms will be happy to find this</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">   44</a></span>&#160;    constexpr T&amp;&amp; <a class="code" href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">operator() </a>(T&amp;&amp; t) <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">const</a> noexcept</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      { <span class="keywordflow">return</span> std::forward&lt;T&gt;(t); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }; <span class="comment">// identity&lt;&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // (__cplusplus &lt; 202000L)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>  </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace pre_std</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // LARCOREALG_COREUTILS_FROMFUTUREIMPORT_H</span></div>
 <div class="ttc" id="namespaceSortModuleTimes_html_a805854df4323f914a9a09f4e266b4794"><div class="ttname"><a href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">SortModuleTimes.const</a></div><div class="ttdeci">string const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df3/SortModuleTimes_8py_source.html#l00871">SortModuleTimes.py:871</a></div></div>
-<div class="ttc" id="structutil_1_1pre__std_1_1identity_html"><div class="ttname"><a href="../../da/d49/structutil_1_1pre__std_1_1identity.html">util::pre_std::identity</a></div><div class="ttdoc">Transparent functor that returns its argument just as passed. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00036">fromFutureImport.h:36</a></div></div>
-<div class="ttc" id="structutil_1_1pre__std_1_1identity_html_a5abba5152bdddd975a54be393726bb8d"><div class="ttname"><a href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">util::pre_std::identity::operator()</a></div><div class="ttdeci">constexpr T &amp;&amp; operator()(T &amp;&amp;t) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00041">fromFutureImport.h:41</a></div></div>
-<div class="ttc" id="structutil_1_1pre__std_1_1identity_1_1is__transparent_html"><div class="ttname"><a href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">util::pre_std::identity::is_transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00038">fromFutureImport.h:38</a></div></div>
+<div class="ttc" id="structutil_1_1pre__std_1_1identity_html"><div class="ttname"><a href="../../da/d49/structutil_1_1pre__std_1_1identity.html">util::pre_std::identity</a></div><div class="ttdoc">Transparent functor that returns its argument just as passed. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00039">fromFutureImport.h:39</a></div></div>
+<div class="ttc" id="structutil_1_1pre__std_1_1identity_html_a5abba5152bdddd975a54be393726bb8d"><div class="ttname"><a href="../../da/d49/structutil_1_1pre__std_1_1identity.html#a5abba5152bdddd975a54be393726bb8d">util::pre_std::identity::operator()</a></div><div class="ttdeci">constexpr T &amp;&amp; operator()(T &amp;&amp;t) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00044">fromFutureImport.h:44</a></div></div>
+<div class="ttc" id="structutil_1_1pre__std_1_1identity_1_1is__transparent_html"><div class="ttname"><a href="../../d9/dde/structutil_1_1pre__std_1_1identity_1_1is__transparent.html">util::pre_std::identity::is_transparent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d23/fromFutureImport_8h_source.html#l00041">fromFutureImport.h:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

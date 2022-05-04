@@ -16,8 +16,6 @@ var searchData=
   ['layerfitresultmap',['LayerFitResultMap',['../db/de7/namespacelar__content.html#ac69b9f748ffe2918a4a0e46579b159d4',1,'lar_content']]],
   ['layerinterpolationlist',['LayerInterpolationList',['../db/de7/namespacelar__content.html#ac934f98884b6a634e3e163d7563b43c6',1,'lar_content']]],
   ['leadingmcparticletopostbremsstrahlunghitlist',['LeadingMCParticleToPostBremsstrahlungHitList',['../d3/d6e/classlar__content_1_1LArMuonLeadingHelper.html#a437c793252b89f0dc4adf9102210a873',1,'lar_content::LArMuonLeadingHelper']]],
-  ['leaf',['Leaf',['../df/d90/classRStarTree.html#a714c1b2eb9af185bda7c5cdb3a097185',1,'RStarTree']]],
-  ['leaf_5ftype',['leaf_type',['../d9/dd4/structRStarLeaf.html#a3b7d1ed06b63cd6e117c0f973e8ef09f',1,'RStarLeaf']]],
   ['left_5ft',['left_t',['../da/d4c/structlar_1_1util_1_1assns__traits_3_01art_1_1Assns_3_01L_00_01R_00_01D_01_4_01_4.html#ab16be49aba4315592e4c206df148f05d',1,'lar::util::assns_traits&lt; art::Assns&lt; L, R, D &gt; &gt;']]],
   ['leftptr_5ft',['leftptr_t',['../da/d4c/structlar_1_1util_1_1assns__traits_3_01art_1_1Assns_3_01L_00_01R_00_01D_01_4_01_4.html#a230864e0a7776399ea45609c2e90b10b',1,'lar::util::assns_traits&lt; art::Assns&lt; L, R, D &gt; &gt;']]],
   ['length_5ft',['Length_t',['../da/dec/classsim_1_1SimDriftedElectronCluster.html#a68be888ec28820609d7ed383248a8f37',1,'sim::SimDriftedElectronCluster::Length_t()'],['../d5/dfe/classsim_1_1SimEnergyDeposit.html#a014025501498acc8bb03ff76c68c0f75',1,'sim::SimEnergyDeposit::Length_t()'],['../d1/d4e/namespacelar_1_1fhicl_1_1geo.html#a19dcc30480760205cf964e0617aae97a',1,'lar::fhicl::geo::Length_t()'],['../d6/d23/namespacegeo.html#a63f4a2aa11d6bebb2b018bf037aef79a',1,'geo::Length_t()']]],
