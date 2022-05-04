@@ -7,7 +7,9 @@ toc: true
 toc_title: SBND Code - Get Started Guide
 ---
 # Viewing charged particles in SBND using a particle gun generator and analyzer module
+
 (Requires some knowledge of reconstruction chains, `c++`, `python` and a recent version of `sbndcode`. I ran on `v09\_43_00`)<br/><br/>If you still need to setup your `sbndcode` area, follow steps 1-3 on the [SBND Commissioning Page - Get Started Guide](https://sbnsoftware.github.io/sbndcode_wiki/commissioning/SBND_Commissioning_Get_Started.html)
+
 1 - Visual Studio Code
 ----------------------
 Although there are many text editor options, I'd recommend [Visual Studio Code](https://code.visualstudio.com/) for many reasons: <br/><br/>
