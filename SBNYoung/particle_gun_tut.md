@@ -357,12 +357,15 @@ Now we should take a moment to check that we have everything before compiling ou
 cd $MRB_BUILDDIR
 mrb i -j64
 ```
+
 If the stage install is not a success, check that your `CMakeLists.txt` are properly filled in, and that you have all of the correct header files for both the module and `.fcl` file. For reference, the complete tutorial for building the analyzer module lives at `/sbnd/app/users/brindenc/sbndcode_v09_43_00/srcs/sbndcode/sbndcode/PGUNtutorial/`. If the build is successful, head over to the tutorial space you made earlier and run the analyzer module:
 ```bash
 cd /sbnd/app/users/$USER/tutorial/data
 lar -c $MRB_SOURCE/sbndcode/sbndcode/PGUNtutorial/MyAnalyzer.fcl -s prodsingle_sbnd_SinglesGen-*_G4-*_DetSim-*.root
 ```
+
 You should now have `MyAnalyzer.root` in your `data` directory. Nice work! Now, click on `MyAnalyzer.root` by opening your current folder in the explorer pane and selecting the file. It should look something like this when you select the `Eng` `TBranch`
+
 ![VSCode2](Images/vscode2.png)
 ![VSCode3](Images/vscode3.png)
 5 - Running MyAnalyzer
