@@ -94,7 +94,7 @@ the relevant services: the recommended way is:
     }
 
 The configuration file
-[`icarusalg/Geometry/icarus_geometry.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/icarus_geometry.fcl)
+[`icarusalg/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl)
 defines and describes other options (look at the documentation at top of the file).
 
 If a specific geometry is needed in a job configuration that has already
