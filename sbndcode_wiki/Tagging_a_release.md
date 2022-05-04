@@ -103,6 +103,47 @@ Instructions
         git push --tags
 
 
+Production releases and patches 
+---------------------------------------------------------------------
+
+-   When doing the intitial production release, the same steps as above are followed. 
+    However, we want to preseve the release branch to allow future patches. To do this: 
+
+        git flow release finish -k <branch name>
+
+-   The branch can then be renamed as desired, e.g. to release/SBN2021B. Branch protection
+    rules should also be applied to prevent unintentional changes by users. This is set up 
+    to automatically be applied to any branches named: release/SBN*
+
+-   This branch is then used for creating a new release. I do this manually rather than using git flow:
+
+    1). Checkout release branch from git, either:
+        
+        mrb g sbndcode@release/SBN2021B
+        
+    or if already checked out develop,
+        
+        git fetch origin release/SBN2021B
+	    git switch release/SBN2021B
+    
+    2). Merge any updates. Note that PRs can be directed to merge into this branch instead of develop. 
+    
+    3). Bump version numbers and push updated branch for use on Jenkins as normal.
+    
+    4). Create a new tag manually while on the release branch: 
+    
+        git tag -a v09_28_01_01 -m "Version v09_28_01_01, patch release for SBN-2021B"
+        git push --tags
+
+-   If backporting changes to a patch of the production branch, cherry-picking of commits may be required.
+    For example, to merge a single commit from develop into the prodCAFfix branch: 
+
+        mrb g sbnanaobj@v09_17_06_01
+        git checkout -b feature/miquelnebot_prodCAFfix
+        git cherry-pick dedb4687017d111bb938f09ec5fbec7bdd7a3516
+        git push origin feature/miquelnebot_prodCAFfix
+
+    This branch could then be merged to the release branch via a PR. 
 
 Details: start_release.sh
 ---------------------------------------------------------------------
