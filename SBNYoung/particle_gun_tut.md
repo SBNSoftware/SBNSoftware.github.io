@@ -71,7 +71,7 @@ We will be looking primarily at MCParticle data products for this tutorial, and 
 ```bash
 lar -c eventdump.fcl prodsingle_sbnd_SinglesGen-*_G4-*_DetSim-*.root -n 1 | grep MCParticle
 ```
-where the output shows a `vector` with the [simb::MCParticle](https://nusoft.fnal.gov/larsoft/doxsvn/html/classsimb_1_1MCParticle.html) class. We will be using this class to get the `G4` level information about our muons. First, however, we want to see what our detector sees using the [TITUS Event Display](https://sbnsoftware.github.io/sbndcode_wiki/TITUS_Event_Display.html)
+where the output shows a vector with the [simb::MCParticle](https://nusoft.fnal.gov/larsoft/doxsvn/html/classsimb_1_1MCParticle.html) class. We will be using this class to get the G4 level information about our muons. First, however, we want to see what our detector sees using the [TITUS Event Display](https://sbnsoftware.github.io/sbndcode_wiki/TITUS_Event_Display.html)
 
 3 - TITUS Event Display
 -----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ mkdir PGUNtutorial
 cd PGUNtutorial
 cetskelgen analyzer MyAnalyzer
 ```
-`cetskelgen` produces a skeleton of a module with the class name being MyAnalyzer. Specifying `analyzer` after `cetskelgen` determines the type of `art` module being used, namely an analyzer module. There are also producer and filter modules which won't be covered here, but you can familiarize yourself with them [here](https://indico.fnal.gov/event/20453/contributions/57771/attachments/36174/44057/larsofttutorial1.pdf). Before we get too far ahead, we need to add the sub directory to the `CMakeLists.txt` so that our module will be compiled. To do this execute
+`cetskelgen` produces a skeleton of a module with the class name being MyAnalyzer. Specifying `analyzer` after `cetskelgen` determines the type of art module being used, namely an analyzer module. There are also producer and filter modules which won't be covered here, but you can familiarize yourself with them [here](https://indico.fnal.gov/event/20453/contributions/57771/attachments/36174/44057/larsofttutorial1.pdf). Before we get too far ahead, we need to add the sub directory to the `CMakeLists.txt` so that our module will be compiled. To do this execute
 ```bash
 echo 'add_subdirectory(PGUNtutorial)' >> ../CMakeLists.txt
 ```
@@ -362,9 +362,11 @@ If the stage install is not a success, check that your `CMakeLists.txt` are prop
 cd /sbnd/app/users/$USER/tutorial/data
 lar -c $MRB_SOURCE/sbndcode/sbndcode/PGUNtutorial/MyAnalyzer.fcl -s prodsingle_sbnd_SinglesGen-*_G4-*_DetSim-*.root
 ```
+
 You should now have `MyAnalyzer.root` in your `data` directory. Nice work! Now, click on `MyAnalyzer.root` by opening your current folder in the explorer pane and selecting the file. It should look something like this when you select the *Eng* TBranch
 ![VSCode2](Images/vscode2.png)
 ![VSCode3](Images/vscode3.png)
+
 5 - Running MyAnalyzer
 -----------------------------------------------------------------------------
 
