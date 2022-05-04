@@ -83,25 +83,36 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/df2/SRBNBInfo_8h.html">sbnanaobj/StandardRecord/SRBNBInfo.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/db0/BNBSpillInfo_8h.html">sbnobj/Common/POTAccounting/BNBSpillInfo.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>caf</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d7/df6/namespacecaf.html#ae0fd2ab32773b7917a283f769c610cbd">FillExposure</a>(<span class="keyword">const</span> std::vector&lt;sbn::BNBSpillInfo&gt;&amp; bnb_spill_info,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                    std::vector&lt;caf::SRBNBInfo&gt;&amp; BNBInfo,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                    <span class="keywordtype">double</span>&amp; subRunPOT);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="../../d8/db2/classcaf_1_1SRBNBInfo.html">caf::SRBNBInfo</a> <a class="code" href="../../d7/df6/namespacecaf.html#a535a8b99983097835b0244864a3619f9">makeSRBNBInfo</a>(<a class="code" href="../../d3/d22/classsbn_1_1BNBSpillInfo.html">sbn::BNBSpillInfo</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/da2/SRNuMIInfo_8h.html">sbnanaobj/StandardRecord/SRNuMIInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d36/NuMISpillInfo_8h.html">sbnobj/Common/POTAccounting/NuMISpillInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>caf</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d7/df6/namespacecaf.html#ae0fd2ab32773b7917a283f769c610cbd">FillExposure</a>(<span class="keyword">const</span> std::vector&lt;sbn::BNBSpillInfo&gt;&amp; bnb_spill_info,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                    std::vector&lt;caf::SRBNBInfo&gt;&amp; BNBInfo,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                    <span class="keywordtype">double</span>&amp; subRunPOT);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../d8/db2/classcaf_1_1SRBNBInfo.html">caf::SRBNBInfo</a> <a class="code" href="../../d7/df6/namespacecaf.html#a535a8b99983097835b0244864a3619f9">makeSRBNBInfo</a>(<a class="code" href="../../d3/d22/classsbn_1_1BNBSpillInfo.html">sbn::BNBSpillInfo</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d7/df6/namespacecaf.html#a9c3cbde327a06ee1437431ee46b44722">FillExposureNuMI</a>(<span class="keyword">const</span> std::vector&lt;sbn::NuMISpillInfo&gt;&amp; numi_spill_info,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    std::vector&lt;caf::SRNuMIInfo&gt;&amp; NuMIInfo,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <span class="keywordtype">double</span>&amp; subRunPOT);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classcaf_1_1SRBNBInfo_html"><div class="ttname"><a href="../../d8/db2/classcaf_1_1SRBNBInfo.html">caf::SRBNBInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/df2/SRBNBInfo_8h_source.html#l00008">SRBNBInfo.h:8</a></div></div>
 <div class="ttc" id="BNBSpillInfo_8h_html"><div class="ttname"><a href="../../d2/db0/BNBSpillInfo_8h.html">BNBSpillInfo.h</a></div></div>
 <div class="ttc" id="namespacecaf_html_ae0fd2ab32773b7917a283f769c610cbd"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#ae0fd2ab32773b7917a283f769c610cbd">caf::FillExposure</a></div><div class="ttdeci">void FillExposure(const std::vector&lt; sbn::BNBSpillInfo &gt; &amp;bnb_spill_info, std::vector&lt; caf::SRBNBInfo &gt; &amp;BNBInfo, double &amp;subRunPOT)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d46/FillExposure_8cxx_source.html#l00035">FillExposure.cxx:35</a></div></div>
 <div class="ttc" id="classsbn_1_1BNBSpillInfo_html"><div class="ttname"><a href="../../d3/d22/classsbn_1_1BNBSpillInfo.html">sbn::BNBSpillInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/db0/BNBSpillInfo_8h_source.html#l00013">BNBSpillInfo.h:13</a></div></div>
 <div class="ttc" id="namespacecaf_html_a535a8b99983097835b0244864a3619f9"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#a535a8b99983097835b0244864a3619f9">caf::makeSRBNBInfo</a></div><div class="ttdeci">caf::SRBNBInfo makeSRBNBInfo(sbn::BNBSpillInfo const &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d46/FillExposure_8cxx_source.html#l00007">FillExposure.cxx:7</a></div></div>
+<div class="ttc" id="SRNuMIInfo_8h_html"><div class="ttname"><a href="../../de/da2/SRNuMIInfo_8h.html">SRNuMIInfo.h</a></div></div>
+<div class="ttc" id="NuMISpillInfo_8h_html"><div class="ttname"><a href="../../d5/d36/NuMISpillInfo_8h.html">NuMISpillInfo.h</a></div></div>
 <div class="ttc" id="SRBNBInfo_8h_html"><div class="ttname"><a href="../../d4/df2/SRBNBInfo_8h.html">SRBNBInfo.h</a></div></div>
+<div class="ttc" id="namespacecaf_html_a9c3cbde327a06ee1437431ee46b44722"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#a9c3cbde327a06ee1437431ee46b44722">caf::FillExposureNuMI</a></div><div class="ttdeci">void FillExposureNuMI(const std::vector&lt; sbn::NuMISpillInfo &gt; &amp;numi_spill_info, std::vector&lt; caf::SRNuMIInfo &gt; &amp;NuMIInfo, double &amp;subRunPOT)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d46/FillExposure_8cxx_source.html#l00045">FillExposure.cxx:45</a></div></div>
 <div class="ttc" id="namespacesortDataLoggerFiles_html_aabcd6b22cdd9f4c3c9c394a72f90183a"><div class="ttname"><a href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">sortDataLoggerFiles.info</a></div><div class="ttdeci">tuple info</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00386">sortDataLoggerFiles.py:386</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

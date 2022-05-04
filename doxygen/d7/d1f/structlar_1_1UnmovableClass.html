@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
  <dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="../../d3/db7/structlar_1_1UncopiableClass.html" title="An empty class that can&#39;t be copied (moving is allowed). ">UncopiableClass</a></code>, <code><a class="el" href="../../de/d4e/structlar_1_1UncopiableAndUnmovableClass.html" title="An empty class that can&#39;t be copied nor moved. ">UncopiableAndUnmovableClass</a></code></dd></dl>
 <p>A class derived from this one can still be moved with an explicit effort. For example, to enable move construction: </p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>MoveableClass: <span class="keyword">protected</span> <a class="code" href="../../d7/d1f/structlar_1_1UnmovableClass.html#a6612bc6916db4d685f52483d0dde2c0d">UnmovableClass</a> {</div>
-<div class="line">  MoveableClass(MoveableClass&amp;&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
+<div class="line">  MoveableClass(MoveableClass&amp;&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
 <div class="line">    : <a class="code" href="../../d7/d1f/structlar_1_1UnmovableClass.html#a6612bc6916db4d685f52483d0dde2c0d">UnmovableClass</a>() <span class="comment">// , ...</span></div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// ...</span></div>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">};</div>
 </div><!-- fragment --><p> the default constructor of the base class can be called explicitly instead of the move constructor. To provide a move assignment operation, </p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>MoveAssignableClass: <span class="keyword">protected</span> <a class="code" href="../../d7/d1f/structlar_1_1UnmovableClass.html#a6612bc6916db4d685f52483d0dde2c0d">UnmovableClass</a> {</div>
-<div class="line">  MoveAssignableClass&amp; <a class="code" href="../../d7/d1f/structlar_1_1UnmovableClass.html#a08c0f87732e377ef3440109a8d89b089">operator= </a>(MoveAssignableClass&amp;&amp; <a class="code" href="../../dd/db0/testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
+<div class="line">  MoveAssignableClass&amp; <a class="code" href="../../d7/d1f/structlar_1_1UnmovableClass.html#a08c0f87732e377ef3440109a8d89b089">operator= </a>(MoveAssignableClass&amp;&amp; <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a>)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// ...</span></div>
 <div class="line">      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>

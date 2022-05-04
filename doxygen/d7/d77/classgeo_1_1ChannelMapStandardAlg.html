@@ -1067,14 +1067,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d9/db3/ChannelMapStandardAlg_8cxx_source.html#l00387">387</a> of file <a class="el" href="../../d9/db3/ChannelMapStandardAlg_8cxx_source.html">ChannelMapStandardAlg.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                                                    {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = 0;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max = 0;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; cryo_tpc: <a class="code" href="../../d7/d77/classgeo_1_1ChannelMapStandardAlg.html#a115ff0283cc1a2defa229c0ec0219f5d">fNPlanes</a>)</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nPlanes: cryo_tpc)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (nPlanes &gt; max) max = nPlanes;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> max;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  } <span class="comment">// ChannelMapStandardAlg::MaxROPs()</span></div>
 <div class="ttc" id="classgeo_1_1ChannelMapStandardAlg_html_a115ff0283cc1a2defa229c0ec0219f5d"><div class="ttname"><a href="../../d7/d77/classgeo_1_1ChannelMapStandardAlg.html#a115ff0283cc1a2defa229c0ec0219f5d">geo::ChannelMapStandardAlg::fNPlanes</a></div><div class="ttdeci">TPCInfoMap_t&lt; unsigned int &gt; fNPlanes</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/ChannelMapStandardAlg_8h_source.html#l00247">ChannelMapStandardAlg.h:247</a></div></div>
-<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1103,11 +1102,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d9/db3/ChannelMapStandardAlg_8cxx_source.html#l00369">369</a> of file <a class="el" href="../../d9/db3/ChannelMapStandardAlg_8cxx_source.html">ChannelMapStandardAlg.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = 0;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max = 0;</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nTPCs: <a class="code" href="../../d7/d77/classgeo_1_1ChannelMapStandardAlg.html#a7817360f09e29208ea393362a4cd82d5">fNTPC</a>) <span class="keywordflow">if</span> (nTPCs &gt; max) max = nTPCs;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">return</span> max;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  } <span class="comment">// ChannelMapStandardAlg::MaxTPCs()</span></div>
-<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="classgeo_1_1ChannelMapStandardAlg_html_a7817360f09e29208ea393362a4cd82d5"><div class="ttname"><a href="../../d7/d77/classgeo_1_1ChannelMapStandardAlg.html#a7817360f09e29208ea393362a4cd82d5">geo::ChannelMapStandardAlg::fNTPC</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; fNTPC</div><div class="ttdoc">number of TPCs in each cryostat </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d97/ChannelMapStandardAlg_8h_source.html#l00236">ChannelMapStandardAlg.h:236</a></div></div>
 </div><!-- fragment -->
 </div>

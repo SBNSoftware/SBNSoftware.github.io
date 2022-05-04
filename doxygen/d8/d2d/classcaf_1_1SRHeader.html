@@ -138,16 +138,25 @@ Public Attributes</h2></td></tr>
 <tr class="separator:addc455f1eef72e1c4e17f4d16a784490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8d8052853e84556c5a2f96c0f1c834"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a7d8d8052853e84556c5a2f96c0f1c834">cluster</a></td></tr>
 <tr class="separator:a7d8d8052853e84556c5a2f96c0f1c834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5d16c6609ab1ca1b26f445f7c2094b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a9b5d16c6609ab1ca1b26f445f7c2094b">nbnbinfo</a></td></tr>
+<tr class="memdesc:a9b5d16c6609ab1ca1b26f445f7c2094b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of BNBInfo objects.  <a href="#a9b5d16c6609ab1ca1b26f445f7c2094b">More...</a><br/></td></tr>
+<tr class="separator:a9b5d16c6609ab1ca1b26f445f7c2094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3121396c13966efc1302a1f2b77850"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/db2/classcaf_1_1SRBNBInfo.html">caf::SRBNBInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a7f3121396c13966efc1302a1f2b77850">bnbinfo</a></td></tr>
 <tr class="memdesc:a7f3121396c13966efc1302a1f2b77850"><td class="mdescLeft">&#160;</td><td class="mdescRight">storing beam information per subrun  <a href="#a7f3121396c13966efc1302a1f2b77850">More...</a><br/></td></tr>
 <tr class="separator:a7f3121396c13966efc1302a1f2b77850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c109ccf797ee9c0f8315fe031f36a10"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a4c109ccf797ee9c0f8315fe031f36a10">nnumiinfo</a></td></tr>
+<tr class="memdesc:a4c109ccf797ee9c0f8315fe031f36a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of NuMIInfo objects.  <a href="#a4c109ccf797ee9c0f8315fe031f36a10">More...</a><br/></td></tr>
+<tr class="separator:a4c109ccf797ee9c0f8315fe031f36a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a0505af0fe6b0599d587a54e0dcdef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d53/classcaf_1_1SRNuMIInfo.html">caf::SRNuMIInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a55a0505af0fe6b0599d587a54e0dcdef">numiinfo</a></td></tr>
+<tr class="memdesc:a55a0505af0fe6b0599d587a54e0dcdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">storing beam information per subrun  <a href="#a55a0505af0fe6b0599d587a54e0dcdef">More...</a><br/></td></tr>
+<tr class="separator:a55a0505af0fe6b0599d587a54e0dcdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c9c987929f9bee7d3e863fcb1aceb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html#a51c9c987929f9bee7d3e863fcb1aceb9">husk</a></td></tr>
 <tr class="separator:a51c9c987929f9bee7d3e863fcb1aceb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header representing overview information for the current event/slice. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00016">16</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00017">17</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4e8337cad1b8c02c0716eace12274fb1"></a>
 <div class="memitem">
@@ -179,23 +188,27 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#addc455f1eef72e1c4e17f4d16a784490">proc</a>(-1),</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#a7d8d8052853e84556c5a2f96c0f1c834">cluster</a>(-1),</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// blind(false),</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#a51c9c987929f9bee7d3e863fcb1aceb9">husk</a>(<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  {  }</div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a6f19c2f93cf48edf2c387d1e85b3999d"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a6f19c2f93cf48edf2c387d1e85b3999d">caf::SRHeader::fno</a></div><div class="ttdeci">unsigned int fno</div><div class="ttdoc">Index of file processed by CAFMaker. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00029">SRHeader.h:29</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a65ad5f3b17e957b000b7e61d94b7757e"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a65ad5f3b17e957b000b7e61d94b7757e">caf::SRHeader::det</a></div><div class="ttdeci">Det_t det</div><div class="ttdoc">Detector, SBND=1 ICARUS=2. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00033">SRHeader.h:33</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#a9b5d16c6609ab1ca1b26f445f7c2094b">nbnbinfo</a>(0),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#a4c109ccf797ee9c0f8315fe031f36a10">nnumiinfo</a>(0),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../d8/d2d/classcaf_1_1SRHeader.html#a51c9c987929f9bee7d3e863fcb1aceb9">husk</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {  }</div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a6f19c2f93cf48edf2c387d1e85b3999d"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a6f19c2f93cf48edf2c387d1e85b3999d">caf::SRHeader::fno</a></div><div class="ttdeci">unsigned int fno</div><div class="ttdoc">Index of file processed by CAFMaker. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00030">SRHeader.h:30</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a65ad5f3b17e957b000b7e61d94b7757e"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a65ad5f3b17e957b000b7e61d94b7757e">caf::SRHeader::det</a></div><div class="ttdeci">Det_t det</div><div class="ttdoc">Detector, SBND=1 ICARUS=2. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00034">SRHeader.h:34</a></div></div>
 <div class="ttc" id="namespacecaf_html_a88cb085d561d33ebc90b2b3a7d63b712ab4d13b94d3510eee360aa04bdc17cf2c"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#a88cb085d561d33ebc90b2b3a7d63b712ab4d13b94d3510eee360aa04bdc17cf2c">caf::kUNKNOWN</a></div><div class="ttdoc">Unknown detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d70/SREnums_8h_source.html#l00009">SREnums.h:9</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a48b8c7f6615b43927bd2f955c98aa725"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a48b8c7f6615b43927bd2f955c98aa725">caf::SRHeader::subrun</a></div><div class="ttdeci">unsigned int subrun</div><div class="ttdoc">subrun number </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00023">SRHeader.h:23</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a5525ced8b3c78601c00672fecb627af2"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a5525ced8b3c78601c00672fecb627af2">caf::SRHeader::run</a></div><div class="ttdeci">unsigned int run</div><div class="ttdoc">run number </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00022">SRHeader.h:22</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_aa2af5013c045114ec566da54161a8c07"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#aa2af5013c045114ec566da54161a8c07">caf::SRHeader::ismc</a></div><div class="ttdeci">bool ismc</div><div class="ttdoc">data or MC? True if MC </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00028">SRHeader.h:28</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a4c109ccf797ee9c0f8315fe031f36a10"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a4c109ccf797ee9c0f8315fe031f36a10">caf::SRHeader::nnumiinfo</a></div><div class="ttdeci">size_t nnumiinfo</div><div class="ttdoc">Number of NuMIInfo objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00042">SRHeader.h:42</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a48b8c7f6615b43927bd2f955c98aa725"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a48b8c7f6615b43927bd2f955c98aa725">caf::SRHeader::subrun</a></div><div class="ttdeci">unsigned int subrun</div><div class="ttdoc">subrun number </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00024">SRHeader.h:24</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a5525ced8b3c78601c00672fecb627af2"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a5525ced8b3c78601c00672fecb627af2">caf::SRHeader::run</a></div><div class="ttdeci">unsigned int run</div><div class="ttdoc">run number </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00023">SRHeader.h:23</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_aa2af5013c045114ec566da54161a8c07"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#aa2af5013c045114ec566da54161a8c07">caf::SRHeader::ismc</a></div><div class="ttdeci">bool ismc</div><div class="ttdoc">data or MC? True if MC </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00029">SRHeader.h:29</a></div></div>
 <div class="ttc" id="namespacecaf_html_ac2aba4ca61299c15095c7003ef105c8fa6f0e0fb18bf4cb5e8714ffde8e881ebb"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#ac2aba4ca61299c15095c7003ef105c8fa6f0e0fb18bf4cb5e8714ffde8e881ebb">caf::kMCUnknown</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d70/SREnums_8h_source.html#l00036">SREnums.h:36</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a4069f1c6c3d297107c7955d7fa6335fc"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a4069f1c6c3d297107c7955d7fa6335fc">caf::SRHeader::evt</a></div><div class="ttdeci">unsigned int evt</div><div class="ttdoc">ART event number, indexes trigger windows. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00026">SRHeader.h:26</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_ad19350fc2419d8faee37b692a778ca01"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#ad19350fc2419d8faee37b692a778ca01">caf::SRHeader::mctype</a></div><div class="ttdeci">MCType_t mctype</div><div class="ttdoc">Type of Monte Carlo used to generate this record. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00032">SRHeader.h:32</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a89bd7cd1a1581473023d92980c91cb9f"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a89bd7cd1a1581473023d92980c91cb9f">caf::SRHeader::pot</a></div><div class="ttdeci">float pot</div><div class="ttdoc">POT of the subrun associated with this record. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00031">SRHeader.h:31</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a56cd8c01d5d38c683b5c01ec50433c87"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a56cd8c01d5d38c683b5c01ec50433c87">caf::SRHeader::ngenevt</a></div><div class="ttdeci">unsigned int ngenevt</div><div class="ttdoc">Number of events generated in input file associated with this record (before any filters) ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00030">SRHeader.h:30</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_addc455f1eef72e1c4e17f4d16a784490"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#addc455f1eef72e1c4e17f4d16a784490">caf::SRHeader::proc</a></div><div class="ttdeci">int proc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00036">SRHeader.h:36</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a51c9c987929f9bee7d3e863fcb1aceb9"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a51c9c987929f9bee7d3e863fcb1aceb9">caf::SRHeader::husk</a></div><div class="ttdeci">bool husk</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00044">SRHeader.h:44</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_aa4ea8d6b2faf23b6a66ed12b339506dd"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#aa4ea8d6b2faf23b6a66ed12b339506dd">caf::SRHeader::subevt</a></div><div class="ttdeci">unsigned short subevt</div><div class="ttdoc">slice number within spill </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00027">SRHeader.h:27</a></div></div>
-<div class="ttc" id="classcaf_1_1SRHeader_html_a7d8d8052853e84556c5a2f96c0f1c834"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a7d8d8052853e84556c5a2f96c0f1c834">caf::SRHeader::cluster</a></div><div class="ttdeci">int cluster</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00037">SRHeader.h:37</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a4069f1c6c3d297107c7955d7fa6335fc"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a4069f1c6c3d297107c7955d7fa6335fc">caf::SRHeader::evt</a></div><div class="ttdeci">unsigned int evt</div><div class="ttdoc">ART event number, indexes trigger windows. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00027">SRHeader.h:27</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_ad19350fc2419d8faee37b692a778ca01"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#ad19350fc2419d8faee37b692a778ca01">caf::SRHeader::mctype</a></div><div class="ttdeci">MCType_t mctype</div><div class="ttdoc">Type of Monte Carlo used to generate this record. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00033">SRHeader.h:33</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a89bd7cd1a1581473023d92980c91cb9f"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a89bd7cd1a1581473023d92980c91cb9f">caf::SRHeader::pot</a></div><div class="ttdeci">float pot</div><div class="ttdoc">POT of the subrun associated with this record. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00032">SRHeader.h:32</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a56cd8c01d5d38c683b5c01ec50433c87"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a56cd8c01d5d38c683b5c01ec50433c87">caf::SRHeader::ngenevt</a></div><div class="ttdeci">unsigned int ngenevt</div><div class="ttdoc">Number of events generated in input file associated with this record (before any filters) ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00031">SRHeader.h:31</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_addc455f1eef72e1c4e17f4d16a784490"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#addc455f1eef72e1c4e17f4d16a784490">caf::SRHeader::proc</a></div><div class="ttdeci">int proc</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00037">SRHeader.h:37</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a51c9c987929f9bee7d3e863fcb1aceb9"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a51c9c987929f9bee7d3e863fcb1aceb9">caf::SRHeader::husk</a></div><div class="ttdeci">bool husk</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00049">SRHeader.h:49</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a9b5d16c6609ab1ca1b26f445f7c2094b"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a9b5d16c6609ab1ca1b26f445f7c2094b">caf::SRHeader::nbnbinfo</a></div><div class="ttdeci">size_t nbnbinfo</div><div class="ttdoc">Number of BNBInfo objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00040">SRHeader.h:40</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_aa4ea8d6b2faf23b6a66ed12b339506dd"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#aa4ea8d6b2faf23b6a66ed12b339506dd">caf::SRHeader::subevt</a></div><div class="ttdeci">unsigned short subevt</div><div class="ttdoc">slice number within spill </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00028">SRHeader.h:28</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHeader_html_a7d8d8052853e84556c5a2f96c0f1c834"><div class="ttname"><a href="../../d8/d2d/classcaf_1_1SRHeader.html#a7d8d8052853e84556c5a2f96c0f1c834">caf::SRHeader::cluster</a></div><div class="ttdeci">int cluster</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6d/SRHeader_8h_source.html#l00038">SRHeader.h:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -212,8 +225,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d10/SRHeader_8cxx_source.html#l00033">33</a> of file <a class="el" href="../../d1/d10/SRHeader_8cxx_source.html">SRHeader.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{  }</div>
+<p>Definition at line <a class="el" href="../../d1/d10/SRHeader_8cxx_source.html#l00035">35</a> of file <a class="el" href="../../d1/d10/SRHeader_8cxx_source.html">SRHeader.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,7 +243,7 @@ Public Attributes</h2></td></tr>
 
 <p>storing beam information per subrun </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00039">39</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +257,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00037">37</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +273,7 @@ Public Attributes</h2></td></tr>
 
 <p>Detector, SBND=1 ICARUS=2. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00033">33</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +289,7 @@ Public Attributes</h2></td></tr>
 
 <p>ART event number, indexes trigger windows. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00026">26</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00027">27</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +305,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether this event is there first in the input file. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00035">35</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00036">36</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +321,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether this event is the first in the subrun. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00035">35</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +337,7 @@ Public Attributes</h2></td></tr>
 
 <p>Index of file processed by <a class="el" href="../../dd/de9/classcaf_1_1CAFMaker.html" title="Module to create Common Analysis Files from ART files. ">CAFMaker</a>. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00029">29</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00030">30</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -339,7 +352,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If true, this record has been filterd out, and only remains as a receptacle for exposure information. It should be skipped in any analysis, apart from for including its POT. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00044">44</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00049">49</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +368,7 @@ Public Attributes</h2></td></tr>
 
 <p>data or MC? True if MC </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00028">28</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00029">29</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +384,23 @@ Public Attributes</h2></td></tr>
 
 <p>Type of Monte Carlo used to generate this record. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00032">32</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00033">33</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b5d16c6609ab1ca1b26f445f7c2094b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t caf::SRHeader::nbnbinfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of BNBInfo objects. </p>
+
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00040">40</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +416,39 @@ Public Attributes</h2></td></tr>
 
 <p>Number of events generated in input file associated with this record (before any filters) </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00030">30</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00031">31</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c109ccf797ee9c0f8315fe031f36a10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t caf::SRHeader::nnumiinfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of NuMIInfo objects. </p>
+
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00042">42</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a55a0505af0fe6b0599d587a54e0dcdef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d53/classcaf_1_1SRNuMIInfo.html">caf::SRNuMIInfo</a>&gt; caf::SRHeader::numiinfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>storing beam information per subrun </p>
+
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00043">43</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +464,7 @@ Public Attributes</h2></td></tr>
 
 <p>POT of the subrun associated with this record. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00031">31</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00032">32</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +478,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00036">36</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00037">37</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +494,7 @@ Public Attributes</h2></td></tr>
 
 <p>run number </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00022">22</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00023">23</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +510,7 @@ Public Attributes</h2></td></tr>
 
 <p>slice number within spill </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00027">27</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00028">28</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +526,7 @@ Public Attributes</h2></td></tr>
 
 <p>subrun number </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00023">23</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6d/SRHeader_8h_source.html#l00024">24</a> of file <a class="el" href="../../d6/d6d/SRHeader_8h_source.html">SRHeader.h</a>.</p>
 
 </div>
 </div>

@@ -144,8 +144,6 @@ Functions</h2></td></tr>
 <tr class="separator:a79a45072fdd85bf0ebad67cf8239041e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22063fa0be7d6f3e872411843ab5e6c2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d52/namespacedaq.html#a22063fa0be7d6f3e872411843ab5e6c2">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="../../da/d0d/structdaq_1_1PMTDecoder_1_1SplitTimestamp__t.html">PMTDecoder::SplitTimestamp_t</a> const &amp;time)</td></tr>
 <tr class="separator:a22063fa0be7d6f3e872411843ab5e6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8e812a0256bf10d75b4c08c6ab0dfd"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d52/namespacedaq.html#aca8e812a0256bf10d75b4c08c6ab0dfd">getNanoseconds_since_UTC_epoch_fix</a> (icarus::ICARUSTriggerInfo const &amp;info)</td></tr>
-<tr class="separator:aca8e812a0256bf10d75b4c08c6ab0dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a79a45072fdd85bf0ebad67cf8239041e"></a>
@@ -176,37 +174,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;          };</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    } <span class="comment">// convert(BoardSetupConfig)</span></div>
 <div class="ttc" id="namespaceutil_1_1fhicl_html_a7a710f4f9eb8ce2c8206162757289de0"><div class="ttname"><a href="../../da/d95/namespaceutil_1_1fhicl.html#a7a710f4f9eb8ce2c8206162757289de0">util::fhicl::getOptionalValue</a></div><div class="ttdeci">std::optional&lt; typename Optional::value_type &gt; getOptionalValue(Optional const &amp;parameter)</div><div class="ttdoc">Returns the value of an optional parameter as std::optional. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de6/FHiCLutils_8h_source.html#l00188">FHiCLutils.h:188</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aca8e812a0256bf10d75b4c08c6ab0dfd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::uint64_t daq::getNanoseconds_since_UTC_epoch_fix </td>
-          <td>(</td>
-          <td class="paramtype">icarus::ICARUSTriggerInfo const &amp;&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00054">54</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>.wr_seconds == -2 || <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>.wr_nanoseconds == -3)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> correction = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>.wr_seconds &gt;= 1483228800)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      correction = 37;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    uint64_t <span class="keyword">const</span> corrected_ts</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      { (<a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>.wr_seconds-correction)*1000000000ULL + <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a>.wr_nanoseconds };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> corrected_ts;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  } <span class="comment">// getNanoseconds_since_UTC_epoch_fix()</span></div>
-<div class="ttc" id="namespacesortDataLoggerFiles_html_aabcd6b22cdd9f4c3c9c394a72f90183a"><div class="ttname"><a href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">sortDataLoggerFiles.info</a></div><div class="ttdeci">tuple info</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00386">sortDataLoggerFiles.py:386</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

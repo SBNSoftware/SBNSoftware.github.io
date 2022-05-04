@@ -172,6 +172,7 @@ var searchData=
   ['dummyfilter',['DummyFilter',['../d2/da2/classDummyFilter.html',1,'']]],
   ['dummyproducer',['DummyProducer',['../d9/d8d/classDummyProducer.html',1,'']]],
   ['dumpartdaqfragments',['DumpArtDAQfragments',['../d8/da8/classsbn_1_1DumpArtDAQfragments.html',1,'sbn']]],
+  ['dumpchannel',['dumpChannel',['../d0/da4/structicarus_1_1dumpChannel.html',1,'icarus']]],
   ['dumpchannelmap',['DumpChannelMap',['../d8/d4d/classgeo_1_1DumpChannelMap.html',1,'geo']]],
   ['dumpchargedspacepoints',['DumpChargedSpacePoints',['../df/d48/classrecob_1_1DumpChargedSpacePoints.html',1,'recob']]],
   ['dumpcheattracks',['DumpCheatTracks',['../d2/d18/classlar_1_1example_1_1tests_1_1DumpCheatTracks.html',1,'lar::example::tests']]],

@@ -1948,242 +1948,247 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;<span class="comment"># Also randomize and shorten names of data files that are longer than</span></div>
 <div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;<span class="comment"># 200 characters.</span></div>
 <div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="comment">ran=0</span></div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;<span class="comment">if [ $USE_SAM -eq 0 -a x$INFILE = x -a x$INLIST = x ]; then</span></div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;<span class="comment">  ran=1</span></div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;<span class="comment">fi</span></div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;<span class="comment">      nc=`echo $datafile | wc -c`</span></div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="comment">      if [ -f ${datafile}.json -o $ran != 0 -o $nc -ge 200 ]; then</span></div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;<span class="comment">        base=`basename $datafile`</span></div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;<span class="comment">        ext=${base##*.}</span></div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;<span class="comment">        stem=${base%.*}</span></div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;<span class="comment">        newstem=`echo $stem | cut -c1-150`_`uuidgen`</span></div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;<span class="comment">        echo &quot;mv $datafile ${newstem}.${ext}&quot;</span></div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="comment">        mv $datafile ${newstem}.${ext}</span></div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="comment">        if [ -f ${datafile}.json ]; then</span></div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;<span class="comment">          mv ${datafile}.json ${newstem}.${ext}.json</span></div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;<span class="comment">        fi</span></div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;<span class="comment">      fi</span></div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;<span class="comment">  done</span></div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;<span class="comment">done</span></div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;<span class="comment"># Calculate root metadata for all data files and save as json file.</span></div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;<span class="comment"># If json metadata already exists, merge with newly geneated root metadata.</span></div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;<span class="comment">      json=${datafile}.json</span></div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;<span class="comment">      if [ -f $json ]; then</span></div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;<span class="comment">        ./root_metadata.py --output=&quot;${json}2&quot; &quot;$datafile&quot; &gt;&amp; /dev/null</span></div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;<span class="comment">        ./merge_json.py $json ${json}2 &gt; ${json}3</span></div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;<span class="comment">        mv -f ${json}3 $json</span></div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;<span class="comment">        rm ${json}2</span></div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;<span class="comment">      else</span></div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;<span class="comment">        ./root_metadata.py --output=&quot;$json&quot; &quot;$datafile&quot; &gt;&amp; /dev/null</span></div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;<span class="comment">      fi</span></div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">  done</span></div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;<span class="comment">done</span></div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;<span class="comment">#create a master lar.stat file which contains the overall exit code of all stages</span></div>
-<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;<span class="comment">stageStat=0</span></div>
-<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;<span class="comment">overallStat=0</span></div>
-<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;<span class="comment">while [ $stageStat -lt $nfcls ]; do</span></div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;<span class="comment">  stat=`cat larStage$stageStat.stat`</span></div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;<span class="comment">  if [[ &quot;$stat&quot; = 65 &amp;&amp; $ART_VERSION &lt; v2_01 ]]; then</span></div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;<span class="comment">   # Workaround TimeTracker crash bug for input files with zero events. </span></div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;<span class="comment">    for json in *.json; do  </span></div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;<span class="comment">        if grep -q &#39;&quot;events&quot;: *&quot;0&quot;&#39; $json; then</span></div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;<span class="comment">         stat=0</span></div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;<span class="comment">        fi</span></div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;<span class="comment">    done</span></div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;<span class="comment">  fi    </span></div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;<span class="comment">  overallStat=$[$stat+$overallStat]</span></div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;<span class="comment">  </span></div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;<span class="comment">  #do some cleanup of intermediate files</span></div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="comment">  #rm Stage$stageStat.fcl  </span></div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="comment">  stageStat=$[$stageStat +1] </span></div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="comment">done</span></div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="comment">echo $overallStat &gt; lar.stat</span></div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="comment">valstat=$overallStat</span></div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="comment"># Make local output directories for files that we have to save.</span></div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="comment">mkdir out</span></div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="comment">mkdir log</span></div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="comment"># Also randomize data files that are already declared to sam.</span></div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;<span class="comment">ran=0</span></div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;<span class="comment">if [ $USE_SAM -eq 0 -a x$INFILE = x -a x$INLIST = x ]; then</span></div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;<span class="comment">  ran=1</span></div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="comment">fi</span></div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;<span class="comment">      nc=`echo $datafile | wc -c`</span></div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;<span class="comment">      if ifdh getMetadata $datafile &gt; /dev/null 2&gt; /dev/null; then</span></div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;<span class="comment">        nc=200</span></div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;<span class="comment">      fi</span></div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;<span class="comment">      if [ -f ${datafile}.json -o $ran != 0 -o $nc -ge 200 ]; then</span></div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="comment">        base=`basename $datafile`</span></div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="comment">        ext=${base##*.}</span></div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;<span class="comment">        stem=${base%.*}</span></div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;<span class="comment">        newstem=`echo $stem | cut -c1-150`_`uuidgen`</span></div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;<span class="comment">        echo &quot;mv $datafile ${newstem}.${ext}&quot;</span></div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;<span class="comment">        mv $datafile ${newstem}.${ext}</span></div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;<span class="comment">        if [ -f ${datafile}.json ]; then</span></div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;<span class="comment">          mv ${datafile}.json ${newstem}.${ext}.json</span></div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;<span class="comment">        fi</span></div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;<span class="comment">      fi</span></div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;<span class="comment">  done</span></div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;<span class="comment">done</span></div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;<span class="comment"># Calculate root metadata for all data files and save as json file.</span></div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;<span class="comment"># If json metadata already exists, merge with newly geneated root metadata.</span></div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;<span class="comment">      json=${datafile}.json</span></div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;<span class="comment">      if [ -f $json ]; then</span></div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;<span class="comment">        ./root_metadata.py --output=&quot;${json}2&quot; &quot;$datafile&quot; &gt;&amp; /dev/null</span></div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;<span class="comment">        ./merge_json.py $json ${json}2 &gt; ${json}3</span></div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;<span class="comment">        mv -f ${json}3 $json</span></div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;<span class="comment">        rm ${json}2</span></div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;<span class="comment">      else</span></div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;<span class="comment">        ./root_metadata.py --output=&quot;$json&quot; &quot;$datafile&quot; &gt;&amp; /dev/null</span></div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;<span class="comment">      fi</span></div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;<span class="comment">  done</span></div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;<span class="comment">done</span></div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;<span class="comment">#create a master lar.stat file which contains the overall exit code of all stages</span></div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;<span class="comment">stageStat=0</span></div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;<span class="comment">overallStat=0</span></div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;<span class="comment">while [ $stageStat -lt $nfcls ]; do</span></div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;<span class="comment">  stat=`cat larStage$stageStat.stat`</span></div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;<span class="comment">  if [[ &quot;$stat&quot; = 65 &amp;&amp; $ART_VERSION &lt; v2_01 ]]; then</span></div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;<span class="comment">   # Workaround TimeTracker crash bug for input files with zero events. </span></div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;<span class="comment">    for json in *.json; do  </span></div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;<span class="comment">        if grep -q &#39;&quot;events&quot;: *&quot;0&quot;&#39; $json; then</span></div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;<span class="comment">         stat=0</span></div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;<span class="comment">        fi</span></div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="comment">    done</span></div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="comment">  fi    </span></div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="comment">  overallStat=$[$stat+$overallStat]</span></div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="comment">  #do some cleanup of intermediate files</span></div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="comment">  #rm Stage$stageStat.fcl  </span></div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="comment">  stageStat=$[$stageStat +1] </span></div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="comment">done</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="comment">echo $overallStat &gt; lar.stat</span></div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="comment">valstat=$overallStat</span></div>
 <div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<span class="comment"># Stash all of the files we want to save in the local directories that we just created.</span></div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<span class="comment"># Make local output directories for files that we have to save.</span></div>
 <div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;<span class="comment"># First move data files and corresponding .json files into the out and log subdirectories.</span></div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<span class="comment">      mv $datafile out</span></div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;<span class="comment">      if [ -f ${datafile}.json ]; then</span></div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;<span class="comment">        mv ${datafile}.json log</span></div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;<span class="comment">      fi</span></div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;<span class="comment">  done</span></div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;<span class="comment">done</span></div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;<span class="comment"># Move any remaining files into the log subdirectory.</span></div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="comment">for outfile in *; do</span></div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="comment">  if [ -f $outfile ]; then</span></div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;<span class="comment">    mv $outfile log</span></div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;<span class="comment">  fi</span></div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;<span class="comment">done</span></div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;<span class="comment"># Do validation (if requested).</span></div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;<span class="comment">if [ $VALIDATE_IN_JOB -eq 1 ]; then</span></div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="comment">    #If SAM was used, get the parent files based on the cpid</span></div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;<span class="comment">    if [ $USE_SAM -ne 0 ]; then</span></div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;<span class="comment">      id=`cat log/cpid.txt`</span></div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;<span class="comment">      parent_files=($(ifdh translateConstraints &quot;consumer_process_id=$id and consumed_status consumed&quot;))</span></div>
-<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;<span class="comment">      stat=$?</span></div>
-<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;<span class="comment">      if [ $stat -ne 0 ]; then</span></div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;<span class="comment">        echo &quot;Failed to determine parentage.&quot;</span></div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;<span class="comment">        #exit 1</span></div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;<span class="comment">      fi</span></div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;<span class="comment">    </span></div>
-<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;<span class="comment">    echo &quot;The file&#39;s parents are: &quot;</span></div>
-<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;<span class="comment">    </span></div>
-<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;<span class="comment">    for elt in ${parent_files[*]};</span></div>
-<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;<span class="comment">    do</span></div>
-<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;<span class="comment">      echo $elt</span></div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;<span class="comment">    done </span></div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;<span class="comment">mkdir out</span></div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;<span class="comment">mkdir log</span></div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<span class="comment"># Stash all of the files we want to save in the local directories that we just created.</span></div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<span class="comment"># First move data files and corresponding .json files into the out and log subdirectories.</span></div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;<span class="comment">for ftype in ${DATAFILETYPES[*]}; do</span></div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;<span class="comment">  for datafile in *.${ftype}; do</span></div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<span class="comment">    if [ -f $datafile ]; then</span></div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;<span class="comment">      mv $datafile out</span></div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;<span class="comment">      if [ -f ${datafile}.json ]; then</span></div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;<span class="comment">        mv ${datafile}.json log</span></div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;<span class="comment">      fi</span></div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="comment">  done</span></div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="comment">done</span></div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;<span class="comment"># Move any remaining files into the log subdirectory.</span></div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment">for outfile in *; do</span></div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;<span class="comment">  if [ -f $outfile ]; then</span></div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="comment">    mv $outfile log</span></div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;<span class="comment">  fi</span></div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="comment">done</span></div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;<span class="comment"># Do validation (if requested).</span></div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;<span class="comment">if [ $VALIDATE_IN_JOB -eq 1 ]; then</span></div>
+<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;<span class="comment">    #If SAM was used, get the parent files based on the cpid</span></div>
+<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;<span class="comment">    if [ $USE_SAM -ne 0 ]; then</span></div>
+<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;<span class="comment">      id=`cat log/cpid.txt`</span></div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;<span class="comment">      parent_files=($(ifdh translateConstraints &quot;consumer_process_id=$id and consumed_status consumed&quot;))</span></div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;<span class="comment">      stat=$?</span></div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;<span class="comment">      if [ $stat -ne 0 ]; then</span></div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;<span class="comment">        echo &quot;Failed to determine parentage.&quot;</span></div>
+<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;<span class="comment">        #exit 1</span></div>
+<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;<span class="comment">      fi</span></div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;<span class="comment">    echo &quot;The file&#39;s parents are: &quot;</span></div>
 <div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;<span class="comment">    </span></div>
-<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;<span class="comment">    echo &quot;The file&#39;s aunts are: &quot;</span></div>
-<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;<span class="comment">    for elt in ${aunt_files[*]};</span></div>
-<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;<span class="comment">    do</span></div>
-<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;<span class="comment">      echo $elt</span></div>
-<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;<span class="comment">    done  </span></div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;<span class="comment">    </span></div>
-<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;<span class="comment">    #if we are maintain the output&#39;s parentage, combine the file&#39;s parents and aunts into a flat string</span></div>
-<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;<span class="comment">    #this string will be interpretted by validate_in_job.py. If these are left empty, then validate_in_job will not change the file&#39;s parentage</span></div>
-<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;<span class="comment">    if [ $MAINTAIN_PARENTAGE -eq 1 ]; then</span></div>
-<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;<span class="comment">       export JOBS_PARENTS=`echo ${parent_files[*]}`</span></div>
-<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;<span class="comment">       export JOBS_AUNTS=`echo ${aunt_files[*]}`</span></div>
-<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;<span class="comment">    </span></div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;<span class="comment">    # Do validation function for the whole job.</span></div>
-<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;<span class="comment">    valstat=$overallStat</span></div>
-<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;<span class="comment">    if [ $valstat -eq 0 ]; then</span></div>
-<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;<span class="comment">      curdir=`pwd`</span></div>
-<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;<span class="comment">      cd $curdir/log</span></div>
-<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;<span class="comment">      dataopt=&#39;&#39;</span></div>
-<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;<span class="comment">      for ftype in ${DATAFILETYPES[*]}; do</span></div>
-<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;<span class="comment">        dataopt=&quot;$dataopt --data_file_type $ftype&quot;</span></div>
-<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;<span class="comment">      done</span></div>
-<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;<span class="comment">      echo &quot;./validate_in_job.py --dir $curdir/out --logfiledir $curdir/log --outdir $OUTDIR/$OUTPUT_SUBDIR --declare $DECLARE_IN_JOB --copy $COPY_TO_FTS --maintain_parentage $MAINTAIN_PARENTAGE $dataopt&quot;</span></div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;<span class="comment">      ./validate_in_job.py --dir $curdir/out --logfiledir $curdir/log --outdir $OUTDIR/$OUTPUT_SUBDIR --declare $DECLARE_IN_JOB --copy $COPY_TO_FTS --maintain_parentage $MAINTAIN_PARENTAGE $dataopt</span></div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;<span class="comment">      valstat=$?</span></div>
-<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;<span class="comment">      cd $curdir</span></div>
-<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;<span class="comment">fi</span></div>
-<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;<span class="comment"># Make a tarball of the log directory contents, and save the tarball in the log directory.</span></div>
-<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;<span class="comment">rm -f log.tar</span></div>
-<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;<span class="comment">tar -cjf log.tar -C log .</span></div>
-<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;<span class="comment">mv log.tar log</span></div>
-<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;<span class="comment"># For copy back, setup up current version of ifdhc.</span></div>
-<div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;<span class="comment"># May be different than version setup by larsoft.</span></div>
-<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;<span class="comment">echo &quot;Setting up current version of ifdhc.&quot;</span></div>
-<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;<span class="comment">if [ x$IFDHC_DIR != x ]; then</span></div>
-<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;<span class="comment">  unsetup ifdhc</span></div>
-<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;<span class="comment">fi</span></div>
-<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;<span class="comment">setup ifdhc</span></div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;<span class="comment">echo &quot;IFDHC_DIR=$IFDHC_DIR&quot;</span></div>
-<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;<span class="comment"># Create remote output and log directories.</span></div>
-<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;<span class="comment">export IFDH_CP_MAXRETRIES=5</span></div>
-<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;<span class="comment">echo &quot;Make directory ${LOGDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
-<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;<span class="comment">date</span></div>
-<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;<span class="comment">subdir=$OUTPUT_SUBDIR</span></div>
-<div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;<span class="comment">dir=$LOGDIR</span></div>
-<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;<span class="comment">while echo $subdir | grep -q /; do</span></div>
-<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;<span class="comment">  dir=${dir}/${subdir%%/*}</span></div>
-<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;<span class="comment">  subdir=${subdir#*/</span>}</div>
-<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;  echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT $dir&quot;</span></div>
-<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;  ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT $dir</div>
-<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;done</div>
-<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT ${LOGDIR}/$OUTPUT_SUBDIR&quot;</span></div>
-<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>}/$OUTPUT_SUBDIR</div>
-<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;echo <span class="stringliteral">&quot;Done making directory ${LOGDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
-<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;date</div>
-<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;</div>
-<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;<span class="keywordflow">if</span> [ ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a7e4430272f87205808f374a1d5250f40">OUTDIR</a>} != ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>} ]; then</div>
-<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;  echo <span class="stringliteral">&quot;Make directory ${OUTDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
-<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;  date</div>
-<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;  subdir=$OUTPUT_SUBDIR</div>
-<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;  <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>=$OUTDIR</div>
-<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;  <span class="keywordflow">while</span> echo $subdir | grep -<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a7ffae28be1e862c24a9f06074a0b0ba0">q</a> /; <span class="keywordflow">do</span></div>
-<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;    <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>=${<a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>}/${subdir%%<span class="comment">/*}</span></div>
-<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;<span class="comment">    subdir=${subdir#*/</span>}</div>
-<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;    echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT $dir&quot;</span></div>
-<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;    ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT $dir</div>
-<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;  done</div>
-<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;  echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT ${OUTDIR}/$OUTPUT_SUBDIR&quot;</span></div>
-<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;  ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a7e4430272f87205808f374a1d5250f40">OUTDIR</a>}/$OUTPUT_SUBDIR</div>
-<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;  echo <span class="stringliteral">&quot;Done making directory ${OUTDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
-<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;  date</div>
-<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
-<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;</div>
-<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;<span class="preprocessor"># Transfer tarball in log subdirectory.</span></div>
-<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;statout=0</div>
-<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;echo <span class="stringliteral">&quot;ls log&quot;</span></div>
-<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;<a class="code" href="../../d0/d18/run__job_8sh.html#a47fe9e2107b9a91874523a7097786305">ls</a> log</div>
-<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;echo <span class="stringliteral">&quot;ifdh cp -D $IFDH_OPT log/log.tar ${LOGDIR}/$OUTPUT_SUBDIR&quot;</span></div>
-<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;ifdh cp -D $IFDH_OPT log/log.tar ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>}/$OUTPUT_SUBDIR</div>
-<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;date</div>
-<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;<a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8975349ec6b0427eebf111f540b9cd11">stat</a>=$?</div>
-<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;<span class="keywordflow">if</span> [ $stat -ne 0 ]; then</div>
-<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;  statout=1</div>
-<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;  echo <span class="stringliteral">&quot;ifdh cp failed with status ${stat}.&quot;</span></div>
-<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
-<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;</div>
-<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;<span class="preprocessor"># Transfer data files in out subdirectory.</span></div>
-<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;<span class="keywordflow">if</span> [ $COPY_TO_FTS -eq 0 ]; then</div>
-<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;</div>
-<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;  <span class="keywordflow">if</span> [ <span class="stringliteral">&quot;$( ls -A out )&quot;</span> ]; then</div>
-<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;    echo <span class="stringliteral">&quot;ifdh cp -D $IFDH_OPT out/* ${OUTDIR}/$OUTPUT_SUBDIR&quot;</span></div>
-<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;    ifdh cp -D $IFDH_OPT out<span class="comment">/* ${OUTDIR}/$OUTPUT_SUBDIR</span></div>
-<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;<span class="comment">    stat=$?</span></div>
-<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;<span class="comment">    if [ $stat -ne 0 ]; then</span></div>
-<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;<span class="comment">      statout=1</span></div>
-<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;<span class="comment">      echo &quot;ifdh cp failed with status ${stat}.&quot;</span></div>
-<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;<span class="comment">    fi</span></div>
-<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;<span class="comment">  fi</span></div>
-<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;<span class="comment">fi  </span></div>
-<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;<span class="comment">if [ $statout -eq 0 -a -f log/lar.stat ]; then</span></div>
-<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;<span class="comment">  statout=`cat log/lar.stat`</span></div>
-<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;<span class="comment">fi</span></div>
-<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;<span class="comment">if [ $statout -eq 0 ]; then</span></div>
-<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;<span class="comment">  statout=$valstat</span></div>
-<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;<span class="comment">fi  </span></div>
-<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;<span class="comment">exit $statout</span></div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;<span class="comment">    for elt in ${parent_files[*]};</span></div>
+<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;<span class="comment">    do</span></div>
+<div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;<span class="comment">      echo $elt</span></div>
+<div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;<span class="comment">    done </span></div>
+<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;<span class="comment">    echo &quot;The file&#39;s aunts are: &quot;</span></div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;<span class="comment">    for elt in ${aunt_files[*]};</span></div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;<span class="comment">    do</span></div>
+<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;<span class="comment">      echo $elt</span></div>
+<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;<span class="comment">    done  </span></div>
+<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;<span class="comment">    #if we are maintain the output&#39;s parentage, combine the file&#39;s parents and aunts into a flat string</span></div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;<span class="comment">    #this string will be interpretted by validate_in_job.py. If these are left empty, then validate_in_job will not change the file&#39;s parentage</span></div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;<span class="comment">    if [ $MAINTAIN_PARENTAGE -eq 1 ]; then</span></div>
+<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;<span class="comment">       export JOBS_PARENTS=`echo ${parent_files[*]}`</span></div>
+<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;<span class="comment">       export JOBS_AUNTS=`echo ${aunt_files[*]}`</span></div>
+<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;<span class="comment">    # Do validation function for the whole job.</span></div>
+<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;<span class="comment">    valstat=$overallStat</span></div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;<span class="comment">    if [ $valstat -eq 0 ]; then</span></div>
+<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;<span class="comment">      curdir=`pwd`</span></div>
+<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;<span class="comment">      cd $curdir/log</span></div>
+<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;<span class="comment">      dataopt=&#39;&#39;</span></div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;<span class="comment">      for ftype in ${DATAFILETYPES[*]}; do</span></div>
+<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;<span class="comment">        dataopt=&quot;$dataopt --data_file_type $ftype&quot;</span></div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;<span class="comment">      done</span></div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;<span class="comment">      echo &quot;./validate_in_job.py --dir $curdir/out --logfiledir $curdir/log --outdir $OUTDIR/$OUTPUT_SUBDIR --declare $DECLARE_IN_JOB --copy $COPY_TO_FTS --maintain_parentage $MAINTAIN_PARENTAGE $dataopt&quot;</span></div>
+<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;<span class="comment">      ./validate_in_job.py --dir $curdir/out --logfiledir $curdir/log --outdir $OUTDIR/$OUTPUT_SUBDIR --declare $DECLARE_IN_JOB --copy $COPY_TO_FTS --maintain_parentage $MAINTAIN_PARENTAGE $dataopt</span></div>
+<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;<span class="comment">      valstat=$?</span></div>
+<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;<span class="comment">      cd $curdir</span></div>
+<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;<span class="comment">fi</span></div>
+<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;<span class="comment"># Make a tarball of the log directory contents, and save the tarball in the log directory.</span></div>
+<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;<span class="comment">rm -f log.tar</span></div>
+<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;<span class="comment">tar -cjf log.tar -C log .</span></div>
+<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;<span class="comment">mv log.tar log</span></div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;<span class="comment"># For copy back, setup up current version of ifdhc.</span></div>
+<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;<span class="comment"># May be different than version setup by larsoft.</span></div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;<span class="comment">echo &quot;Setting up current version of ifdhc.&quot;</span></div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;<span class="comment">if [ x$IFDHC_DIR != x ]; then</span></div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;<span class="comment">  unsetup ifdhc</span></div>
+<div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;<span class="comment">fi</span></div>
+<div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;<span class="comment">setup ifdhc</span></div>
+<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;<span class="comment">echo &quot;IFDHC_DIR=$IFDHC_DIR&quot;</span></div>
+<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;<span class="comment"># Create remote output and log directories.</span></div>
+<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;<span class="comment">export IFDH_CP_MAXRETRIES=5</span></div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;<span class="comment">echo &quot;Make directory ${LOGDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
+<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;<span class="comment">date</span></div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;<span class="comment">subdir=$OUTPUT_SUBDIR</span></div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;<span class="comment">dir=$LOGDIR</span></div>
+<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;<span class="comment">while echo $subdir | grep -q /; do</span></div>
+<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;<span class="comment">  dir=${dir}/${subdir%%/*}</span></div>
+<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;<span class="comment">  subdir=${subdir#*/</span>}</div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;  echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT $dir&quot;</span></div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;  ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT $dir</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;done</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT ${LOGDIR}/$OUTPUT_SUBDIR&quot;</span></div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>}/$OUTPUT_SUBDIR</div>
+<div class="line"><a name="l02053"></a><span class="lineno"> 2053</span>&#160;echo <span class="stringliteral">&quot;Done making directory ${LOGDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
+<div class="line"><a name="l02054"></a><span class="lineno"> 2054</span>&#160;date</div>
+<div class="line"><a name="l02055"></a><span class="lineno"> 2055</span>&#160;</div>
+<div class="line"><a name="l02056"></a><span class="lineno"> 2056</span>&#160;<span class="keywordflow">if</span> [ ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a7e4430272f87205808f374a1d5250f40">OUTDIR</a>} != ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>} ]; then</div>
+<div class="line"><a name="l02057"></a><span class="lineno"> 2057</span>&#160;  echo <span class="stringliteral">&quot;Make directory ${OUTDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
+<div class="line"><a name="l02058"></a><span class="lineno"> 2058</span>&#160;  date</div>
+<div class="line"><a name="l02059"></a><span class="lineno"> 2059</span>&#160;  subdir=$OUTPUT_SUBDIR</div>
+<div class="line"><a name="l02060"></a><span class="lineno"> 2060</span>&#160;  <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>=$OUTDIR</div>
+<div class="line"><a name="l02061"></a><span class="lineno"> 2061</span>&#160;  <span class="keywordflow">while</span> echo $subdir | grep -<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a7ffae28be1e862c24a9f06074a0b0ba0">q</a> /; <span class="keywordflow">do</span></div>
+<div class="line"><a name="l02062"></a><span class="lineno"> 2062</span>&#160;    <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>=${<a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a>}/${subdir%%<span class="comment">/*}</span></div>
+<div class="line"><a name="l02063"></a><span class="lineno"> 2063</span>&#160;<span class="comment">    subdir=${subdir#*/</span>}</div>
+<div class="line"><a name="l02064"></a><span class="lineno"> 2064</span>&#160;    echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT $dir&quot;</span></div>
+<div class="line"><a name="l02065"></a><span class="lineno"> 2065</span>&#160;    ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT $dir</div>
+<div class="line"><a name="l02066"></a><span class="lineno"> 2066</span>&#160;  done</div>
+<div class="line"><a name="l02067"></a><span class="lineno"> 2067</span>&#160;  echo <span class="stringliteral">&quot;ifdh mkdir $IFDH_OPT ${OUTDIR}/$OUTPUT_SUBDIR&quot;</span></div>
+<div class="line"><a name="l02068"></a><span class="lineno"> 2068</span>&#160;  ifdh <a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a5691a311aad1dcf190c8700f455a5935">mkdir</a> $IFDH_OPT ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a7e4430272f87205808f374a1d5250f40">OUTDIR</a>}/$OUTPUT_SUBDIR</div>
+<div class="line"><a name="l02069"></a><span class="lineno"> 2069</span>&#160;  echo <span class="stringliteral">&quot;Done making directory ${OUTDIR}/${OUTPUT_SUBDIR}.&quot;</span></div>
+<div class="line"><a name="l02070"></a><span class="lineno"> 2070</span>&#160;  date</div>
+<div class="line"><a name="l02071"></a><span class="lineno"> 2071</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
+<div class="line"><a name="l02072"></a><span class="lineno"> 2072</span>&#160;</div>
+<div class="line"><a name="l02073"></a><span class="lineno"> 2073</span>&#160;<span class="preprocessor"># Transfer tarball in log subdirectory.</span></div>
+<div class="line"><a name="l02074"></a><span class="lineno"> 2074</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;statout=0</div>
+<div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;echo <span class="stringliteral">&quot;ls log&quot;</span></div>
+<div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;<a class="code" href="../../d0/d18/run__job_8sh.html#a47fe9e2107b9a91874523a7097786305">ls</a> log</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;echo <span class="stringliteral">&quot;ifdh cp -D $IFDH_OPT log/log.tar ${LOGDIR}/$OUTPUT_SUBDIR&quot;</span></div>
+<div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;ifdh cp -D $IFDH_OPT log/log.tar ${<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#acf4c24a80f7dd6c1dff993f17ea55b5b">LOGDIR</a>}/$OUTPUT_SUBDIR</div>
+<div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;date</div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;<a class="code" href="../../d9/d4d/namespacepython_1_1larbatch__posix.html#a8975349ec6b0427eebf111f540b9cd11">stat</a>=$?</div>
+<div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;<span class="keywordflow">if</span> [ $stat -ne 0 ]; then</div>
+<div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;  statout=1</div>
+<div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;  echo <span class="stringliteral">&quot;ifdh cp failed with status ${stat}.&quot;</span></div>
+<div class="line"><a name="l02085"></a><span class="lineno"> 2085</span>&#160;<a class="code" href="../../da/dcd/condor__hadd__sam_8sh.html#a4761c2071128814f9800e0b1f6953e86">fi</a></div>
+<div class="line"><a name="l02086"></a><span class="lineno"> 2086</span>&#160;</div>
+<div class="line"><a name="l02087"></a><span class="lineno"> 2087</span>&#160;<span class="preprocessor"># Transfer data files in out subdirectory.</span></div>
+<div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;<span class="keywordflow">if</span> [ $COPY_TO_FTS -eq 0 ]; then</div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;</div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;  <span class="keywordflow">if</span> [ <span class="stringliteral">&quot;$( ls -A out )&quot;</span> ]; then</div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;    echo <span class="stringliteral">&quot;ifdh cp -D $IFDH_OPT out/* ${OUTDIR}/$OUTPUT_SUBDIR&quot;</span></div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;    ifdh cp -D $IFDH_OPT out<span class="comment">/* ${OUTDIR}/$OUTPUT_SUBDIR</span></div>
+<div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;<span class="comment">    stat=$?</span></div>
+<div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;<span class="comment">    if [ $stat -ne 0 ]; then</span></div>
+<div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;<span class="comment">      statout=1</span></div>
+<div class="line"><a name="l02097"></a><span class="lineno"> 2097</span>&#160;<span class="comment">      echo &quot;ifdh cp failed with status ${stat}.&quot;</span></div>
+<div class="line"><a name="l02098"></a><span class="lineno"> 2098</span>&#160;<span class="comment">    fi</span></div>
+<div class="line"><a name="l02099"></a><span class="lineno"> 2099</span>&#160;<span class="comment">  fi</span></div>
+<div class="line"><a name="l02100"></a><span class="lineno"> 2100</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02101"></a><span class="lineno"> 2101</span>&#160;<span class="comment">fi  </span></div>
+<div class="line"><a name="l02102"></a><span class="lineno"> 2102</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02103"></a><span class="lineno"> 2103</span>&#160;<span class="comment">if [ $statout -eq 0 -a -f log/lar.stat ]; then</span></div>
+<div class="line"><a name="l02104"></a><span class="lineno"> 2104</span>&#160;<span class="comment">  statout=`cat log/lar.stat`</span></div>
+<div class="line"><a name="l02105"></a><span class="lineno"> 2105</span>&#160;<span class="comment">fi</span></div>
+<div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;<span class="comment">if [ $statout -eq 0 ]; then</span></div>
+<div class="line"><a name="l02108"></a><span class="lineno"> 2108</span>&#160;<span class="comment">  statout=$valstat</span></div>
+<div class="line"><a name="l02109"></a><span class="lineno"> 2109</span>&#160;<span class="comment">fi  </span></div>
+<div class="line"><a name="l02110"></a><span class="lineno"> 2110</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;<span class="comment">exit $statout</span></div>
 <div class="ttc" id="namespaceICARUSservices_html_a79d6f2aec6b1f718280ca90904e29b38"><div class="ttname"><a href="../../dc/d08/namespaceICARUSservices.html#a79d6f2aec6b1f718280ca90904e29b38">ICARUSservices.args</a></div><div class="ttdeci">tuple args</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d23/ICARUSservices_8py_source.html#l00129">ICARUSservices.py:129</a></div></div>
 <div class="ttc" id="condor__hadd__sam_8sh_html_a938905f86f1fa006c80da01599a5f93c"><div class="ttname"><a href="../../da/dcd/condor__hadd__sam_8sh.html#a938905f86f1fa006c80da01599a5f93c">DATAFILETYPES</a></div><div class="ttdeci">then DATAFILETYPES[0]</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dcd/condor__hadd__sam_8sh_source.html#l00468">condor_hadd_sam.sh:468</a></div></div>
 <div class="ttc" id="condor__hadd__sam_8sh_html_a7e4430272f87205808f374a1d5250f40"><div class="ttname"><a href="../../da/dcd/condor__hadd__sam_8sh.html#a7e4430272f87205808f374a1d5250f40">OUTDIR</a></div><div class="ttdeci">then OUTDIR</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dcd/condor__hadd__sam_8sh_source.html#l00361">condor_hadd_sam.sh:361</a></div></div>

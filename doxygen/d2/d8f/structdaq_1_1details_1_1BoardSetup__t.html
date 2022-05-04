@@ -76,6 +76,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -90,6 +92,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html">ChannelSetup_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special settings for one channel on the board.  <a href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad83a34e69a3a25c8c8dd6faa024c50ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ad83a34e69a3a25c8c8dd6faa024c50ef">AllChannelSetup_t</a> = <a class="el" href="../../d0/d99/find__fhicl_8sh.html#a0e50d715b86162838c8a191974455ae0">std::array</a>&lt; <a class="el" href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html">ChannelSetup_t</a>, <a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ab477ef2d9f791c42f98ba21192d6e5ac">NBoardChannels</a> &gt;</td></tr>
+<tr class="separator:ad83a34e69a3a25c8c8dd6faa024c50ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6251ee4e4e21820ad919726f97d22ec4"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a6251ee4e4e21820ad919726f97d22ec4">hasFragmentID</a> () const </td></tr>
@@ -110,18 +123,39 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af0bc877a00c19594bcab46523f3900be"><td class="memItemLeft" align="right" valign="top">nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#af0bc877a00c19594bcab46523f3900be">TTTresetDelay</a> = 0_ns</td></tr>
 <tr class="memdesc:af0bc877a00c19594bcab46523f3900be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay from TTT reset issue to enact.  <a href="#af0bc877a00c19594bcab46523f3900be">More...</a><br/></td></tr>
 <tr class="separator:af0bc877a00c19594bcab46523f3900be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc5966a1a9b32697d2a508ae6cfef02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ad83a34e69a3a25c8c8dd6faa024c50ef">AllChannelSetup_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a3cc5966a1a9b32697d2a508ae6cfef02">channelSettings</a></td></tr>
+<tr class="memdesc:a3cc5966a1a9b32697d2a508ae6cfef02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of settings channel by channel.  <a href="#a3cc5966a1a9b32697d2a508ae6cfef02">More...</a><br/></td></tr>
+<tr class="separator:a3cc5966a1a9b32697d2a508ae6cfef02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a85d5c5b8ec289b33b00092a22c3946a0"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">NoFragmentID</a> = std::numeric_limits&lt;unsigned int&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td></tr>
+<tr class="memitem:ab477ef2d9f791c42f98ba21192d6e5ac"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ab477ef2d9f791c42f98ba21192d6e5ac">NBoardChannels</a> = 16U</td></tr>
+<tr class="memdesc:ab477ef2d9f791c42f98ba21192d6e5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; V1730B has 16 channels (can become a template parameter).  <a href="#ab477ef2d9f791c42f98ba21192d6e5ac">More...</a><br/></td></tr>
+<tr class="separator:ab477ef2d9f791c42f98ba21192d6e5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d5c5b8ec289b33b00092a22c3946a0"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">NoFragmentID</a> = std::numeric_limits&lt;unsigned int&gt;::max()</td></tr>
 <tr class="memdesc:a85d5c5b8ec289b33b00092a22c3946a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special value to mark the absence of fragment ID information.  <a href="#a85d5c5b8ec289b33b00092a22c3946a0">More...</a><br/></td></tr>
 <tr class="separator:a85d5c5b8ec289b33b00092a22c3946a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Information of the setup of a V1730 readout board. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00038">38</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00041">41</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ad83a34e69a3a25c8c8dd6faa024c50ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ad83a34e69a3a25c8c8dd6faa024c50ef">daq::details::BoardSetup_t::AllChannelSetup_t</a> =  <a class="el" href="../../d0/d99/find__fhicl_8sh.html#a0e50d715b86162838c8a191974455ae0">std::array</a>&lt;<a class="el" href="../../da/d8d/structdaq_1_1details_1_1BoardSetup__t_1_1ChannelSetup__t.html">ChannelSetup_t</a>, <a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ab477ef2d9f791c42f98ba21192d6e5ac">NBoardChannels</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00091">91</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6251ee4e4e21820ad919726f97d22ec4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,14 +179,30 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns whether this object contains a valid fragment ID. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00054">54</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a498fc21ed6f70f6190f32a0e924262e6">fragmentID</a> != <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">NoFragmentID</a>; }</div>
-<div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_a498fc21ed6f70f6190f32a0e924262e6"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a498fc21ed6f70f6190f32a0e924262e6">daq::details::BoardSetup_t::fragmentID</a></div><div class="ttdeci">unsigned int fragmentID</div><div class="ttdoc">ID of the DAQ fragment associated to this board. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00047">PMTDecoderUtils.h:47</a></div></div>
-<div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_a85d5c5b8ec289b33b00092a22c3946a0"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">daq::details::BoardSetup_t::NoFragmentID</a></div><div class="ttdeci">static constexpr unsigned int NoFragmentID</div><div class="ttdoc">Special value to mark the absence of fragment ID information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00042">PMTDecoderUtils.h:42</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00106">106</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a498fc21ed6f70f6190f32a0e924262e6">fragmentID</a> != <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">NoFragmentID</a>; }</div>
+<div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_a498fc21ed6f70f6190f32a0e924262e6"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a498fc21ed6f70f6190f32a0e924262e6">daq::details::BoardSetup_t::fragmentID</a></div><div class="ttdeci">unsigned int fragmentID</div><div class="ttdoc">ID of the DAQ fragment associated to this board. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00096">PMTDecoderUtils.h:96</a></div></div>
+<div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_a85d5c5b8ec289b33b00092a22c3946a0"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">daq::details::BoardSetup_t::NoFragmentID</a></div><div class="ttdeci">static constexpr unsigned int NoFragmentID</div><div class="ttdoc">Special value to mark the absence of fragment ID information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00048">PMTDecoderUtils.h:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3cc5966a1a9b32697d2a508ae6cfef02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#ad83a34e69a3a25c8c8dd6faa024c50ef">AllChannelSetup_t</a> daq::details::BoardSetup_t::channelSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set of settings channel by channel. </p>
+
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00103">103</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a498fc21ed6f70f6190f32a0e924262e6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +215,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>ID of the DAQ fragment associated to this board. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00047">47</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00096">96</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
 
 </div>
 </div>
@@ -181,6 +231,30 @@ Static Public Attributes</h2></td></tr>
 
 <p>Board name as specified in DAQ configuration. </p>
 
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00093">93</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab477ef2d9f791c42f98ba21192d6e5ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t daq::details::BoardSetup_t::NBoardChannels = 16U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>&lt; V1730B has 16 channels (can become a template parameter). </p>
+
 <p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00044">44</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
 
 </div>
@@ -193,7 +267,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr unsigned int daq::details::BoardSetup_t::NoFragmentID = std::numeric_limits&lt;unsigned int&gt;::<a class="el" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a>()</td>
+          <td class="memname">constexpr unsigned int daq::details::BoardSetup_t::NoFragmentID = std::numeric_limits&lt;unsigned int&gt;::max()</td>
         </tr>
       </table>
   </td>
@@ -205,7 +279,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Special value to mark the absence of fragment ID information. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00042">42</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00048">48</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +295,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Delay from global trigger to TTT set. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00049">49</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00098">98</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +311,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Delay from TTT reset issue to enact. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00051">51</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00100">100</a> of file <a class="el" href="../../d3/d40/PMTDecoderUtils_8h_source.html">PMTDecoderUtils.h</a>.</p>
 
 </div>
 </div>

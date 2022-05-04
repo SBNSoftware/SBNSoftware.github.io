@@ -468,60 +468,90 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// prepare the output</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; pmtVector</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      = *(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getValidHandle&lt; std::vector&lt;sim::SimPhotons&gt; &gt;(<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#acd56373633b8ce0cf2fa57f388eed724">fInputModuleName</a>));</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData =</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// prepare the algorithm</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">auto</span> PMTsimulator = <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a95561b84e7b06f34f59814882d4e0498">makePMTsimulator</a>(</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      *(lar::providerFrom&lt;detinfo::LArPropertiesService&gt;()),</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      clockData,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      *<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a63bafa737d931f1066a1631d77213ad2">fSinglePhotonResponseFunc</a>,</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#ad30431b8059e277c6b28a1af02d65848">fEfficiencyEngine</a>,</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a88a3bb71e6c51350c87db690838aa1d6">fDarkNoiseEngine</a>,</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#aefd96a0caef0f85ec616e08e398d2121">fElectronicsNoiseEngine</a>,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a460c8ecf975d5784fc528470a75e39d6">fWritePhotons</a></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      );</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#af074a71e4be844774dd7636a37f1203e">firstTime</a>()) {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      mf::LogDebug log { <span class="stringliteral">&quot;SimPMTIcarus&quot;</span> };</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;PMT simulation configuration (first event):\n&quot;</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      PMTsimulator-&gt;printConfiguration(log);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    } <span class="comment">// if first time</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// run the algorithm</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; photons : pmtVector) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ channelWaveforms, photons_used ]</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        = PMTsimulator-&gt;simulate(photons);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      std::move(</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        channelWaveforms.cbegin(), channelWaveforms.cend(),</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::back_inserter(*pulseVecPtr)</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        );</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span> (simphVecPtr &amp;&amp; photons_used)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        simphVecPtr-&gt;emplace_back(std::move(photons_used.value()));</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    } <span class="comment">// for</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;SimPMTIcarus&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Generated &quot;</span> &lt;&lt; pulseVecPtr-&gt;size()</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; waveforms out of &quot;</span> &lt;&lt; pmtVector.size() &lt;&lt; <span class="stringliteral">&quot; optical channels.&quot;</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// save the result</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(pulseVecPtr));</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> (simphVecPtr) <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(simphVecPtr));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  } <span class="comment">// SimPMTIcarus::produce()</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimPhotons&gt; &gt; pmtVector;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimPhotonsLite&gt; &gt; pmtLiteVector;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    pmtVector = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getHandle&lt; std::vector&lt;sim::SimPhotons&gt; &gt;(<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#acd56373633b8ce0cf2fa57f388eed724">fInputModuleName</a>);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">if</span>(!pmtVector.isValid())</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      pmtLiteVector = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getHandle&lt; std::vector&lt;sim::SimPhotonsLite&gt; &gt;(<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#acd56373633b8ce0cf2fa57f388eed724">fInputModuleName</a>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData =</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// prepare the algorithm</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">auto</span> PMTsimulator = <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a95561b84e7b06f34f59814882d4e0498">makePMTsimulator</a>(</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      *(lar::providerFrom&lt;detinfo::LArPropertiesService&gt;()),</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      clockData,</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      *<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a63bafa737d931f1066a1631d77213ad2">fSinglePhotonResponseFunc</a>,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#ad30431b8059e277c6b28a1af02d65848">fEfficiencyEngine</a>,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a88a3bb71e6c51350c87db690838aa1d6">fDarkNoiseEngine</a>,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#aefd96a0caef0f85ec616e08e398d2121">fElectronicsNoiseEngine</a>,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a460c8ecf975d5784fc528470a75e39d6">fWritePhotons</a></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      );</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#af074a71e4be844774dd7636a37f1203e">firstTime</a>()) {</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      mf::LogDebug log { <span class="stringliteral">&quot;SimPMTIcarus&quot;</span> };</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;PMT simulation configuration (first event):\n&quot;</span>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      PMTsimulator-&gt;printConfiguration(log);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    } <span class="comment">// if first time</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// run the algorithm</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nopch = 0;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span>(pmtVector.isValid()) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      nopch = pmtVector-&gt;size();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; photons : *pmtVector) {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">// Make an empty SimPhotonsLite with the same channel number.</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="../../d7/d6b/classsim_1_1SimPhotonsLite.html">sim::SimPhotonsLite</a> lite_photons(photons.OpChannel());</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ channelWaveforms, photons_used ]</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          = PMTsimulator-&gt;simulate(photons, lite_photons);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        std::move(</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          channelWaveforms.cbegin(), channelWaveforms.cend(),</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;          std::back_inserter(*pulseVecPtr)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;          );</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">if</span> (simphVecPtr &amp;&amp; photons_used)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          simphVecPtr-&gt;emplace_back(std::move(photons_used.value()));</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      } <span class="comment">// for</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pmtLiteVector.isValid()) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      nopch = pmtLiteVector-&gt;size();</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; lite_photons : *pmtLiteVector) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment">// Make an empty SimPhotons with the same channel number.</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="../../d3/dd1/classsim_1_1SimPhotons.html">sim::SimPhotons</a> photons(lite_photons.OpChannel);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ channelWaveforms, photons_used ]</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          = PMTsimulator-&gt;simulate(photons, lite_photons);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        std::move(</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;          channelWaveforms.cbegin(), channelWaveforms.cend(),</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;          std::back_inserter(*pulseVecPtr)</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;          );</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      } <span class="comment">// for</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;SimPMTIcarus&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Generated &quot;</span> &lt;&lt; pulseVecPtr-&gt;size()</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; waveforms out of &quot;</span> &lt;&lt; nopch &lt;&lt; <span class="stringliteral">&quot; optical channels.&quot;</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// save the result</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(pulseVecPtr));</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">if</span> (simphVecPtr) <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(simphVecPtr));</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  } <span class="comment">// SimPMTIcarus::produce()</span></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_a95561b84e7b06f34f59814882d4e0498"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a95561b84e7b06f34f59814882d4e0498">icarus::opdet::SimPMTIcarus::makePMTsimulator</a></div><div class="ttdeci">icarus::opdet::PMTsimulationAlgMaker makePMTsimulator</div><div class="ttdoc">The actual simulation algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00232">SimPMTIcarus_module.cc:232</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_a88a3bb71e6c51350c87db690838aa1d6"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a88a3bb71e6c51350c87db690838aa1d6">icarus::opdet::SimPMTIcarus::fDarkNoiseEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fDarkNoiseEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00235">SimPMTIcarus_module.cc:235</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_aefd96a0caef0f85ec616e08e398d2121"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#aefd96a0caef0f85ec616e08e398d2121">icarus::opdet::SimPMTIcarus::fElectronicsNoiseEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fElectronicsNoiseEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00236">SimPMTIcarus_module.cc:236</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_acd56373633b8ce0cf2fa57f388eed724"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#acd56373633b8ce0cf2fa57f388eed724">icarus::opdet::SimPMTIcarus::fInputModuleName</a></div><div class="ttdeci">art::InputTag fInputModuleName</div><div class="ttdoc">Input tag for simulated scintillation photons (or photoelectrons). </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00224">SimPMTIcarus_module.cc:224</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_a63bafa737d931f1066a1631d77213ad2"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a63bafa737d931f1066a1631d77213ad2">icarus::opdet::SimPMTIcarus::fSinglePhotonResponseFunc</a></div><div class="ttdeci">std::unique_ptr&lt; SinglePhotonResponseFunc_t &gt; const fSinglePhotonResponseFunc</div><div class="ttdoc">Single photoelectron response function. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00229">SimPMTIcarus_module.cc:229</a></div></div>
+<div class="ttc" id="classsim_1_1SimPhotons_html"><div class="ttname"><a href="../../d3/dd1/classsim_1_1SimPhotons.html">sim::SimPhotons</a></div><div class="ttdoc">Collection of photons which recorded on one channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd4/SimPhotons_8h_source.html#l00136">SimPhotons.h:136</a></div></div>
+<div class="ttc" id="classsim_1_1SimPhotonsLite_html"><div class="ttname"><a href="../../d7/d6b/classsim_1_1SimPhotonsLite.html">sim::SimPhotonsLite</a></div><div class="ttdoc">Compact representation of photons on a channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/dd4/SimPhotons_8h_source.html#l00103">SimPhotons.h:103</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_ad30431b8059e277c6b28a1af02d65848"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#ad30431b8059e277c6b28a1af02d65848">icarus::opdet::SimPMTIcarus::fEfficiencyEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fEfficiencyEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00234">SimPMTIcarus_module.cc:234</a></div></div>
 <div class="ttc" id="classicarus_1_1opdet_1_1SimPMTIcarus_html_a460c8ecf975d5784fc528470a75e39d6"><div class="ttname"><a href="../../d1/dd5/classicarus_1_1opdet_1_1SimPMTIcarus.html#a460c8ecf975d5784fc528470a75e39d6">icarus::opdet::SimPMTIcarus::fWritePhotons</a></div><div class="ttdeci">bool fWritePhotons</div><div class="ttdoc">Whether to save contributing photons. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de0/SimPMTIcarus__module_8cc_source.html#l00226">SimPMTIcarus_module.cc:226</a></div></div>

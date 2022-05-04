@@ -111,7 +111,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functor to convert tick point into a tick number and a subsample index. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00534">534</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00535">535</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a8cc1efaf65cd0e09a145fc88e813b2ea"></a>
 <div class="memitem">
@@ -123,7 +123,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00539">539</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00540">540</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
 
 </div>
 </div>
@@ -150,9 +150,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00541">541</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      : <a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">fNSubsamples</a>(static_cast&lt;double&gt;(nSubsamples)) {}</div>
-<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a82d08920134ad9e2a89c0848099602d0"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::fNSubsamples</a></div><div class="ttdeci">double const fNSubsamples</div><div class="ttdoc">Number of subsamples. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00536">PMTsimulationAlg.h:536</a></div></div>
+<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00542">542</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      : <a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">fNSubsamples</a>(static_cast&lt;double&gt;(nSubsamples)) {}</div>
+<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a82d08920134ad9e2a89c0848099602d0"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::fNSubsamples</a></div><div class="ttdeci">double const fNSubsamples</div><div class="ttdoc">Number of subsamples. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00537">PMTsimulationAlg.h:537</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -173,19 +173,19 @@ Private Attributes</h2></td></tr>
 
 <p>Converts the <code>tick_d</code> in a subsample number and tick number. </p>
 
-<p>Definition at line <a class="el" href="../../d4/da9/PMTsimulationAlg_8cxx_source.html#l00691">691</a> of file <a class="el" href="../../d4/da9/PMTsimulationAlg_8cxx_source.html">PMTsimulationAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;{</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> tickNumber_d = std::floor(<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a1b0297fa00c2a02d37fbf27a7a396cf0">tick_d</a>);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> subtick = std::floor((<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a1b0297fa00c2a02d37fbf27a7a396cf0">tick_d</a> - tickNumber_d) * <a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">fNSubsamples</a>);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordflow">return</span> {</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html#aba5e94aee1f80a1599a87a0b247a96f3">tick::castFrom</a>(tickNumber_d),</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a8cc1efaf65cd0e09a145fc88e813b2ea">SubsampleIndex_t</a><span class="keyword">&gt;</span>(subtick)</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    };</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;} <span class="comment">// icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::operator()</span></div>
+<p>Definition at line <a class="el" href="../../d4/da9/PMTsimulationAlg_8cxx_source.html#l00721">721</a> of file <a class="el" href="../../d4/da9/PMTsimulationAlg_8cxx_source.html">PMTsimulationAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;{</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> tickNumber_d = std::floor(<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a1b0297fa00c2a02d37fbf27a7a396cf0">tick_d</a>);</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> subtick = std::floor((<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a1b0297fa00c2a02d37fbf27a7a396cf0">tick_d</a> - tickNumber_d) * <a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">fNSubsamples</a>);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="keywordflow">return</span> {</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html#aba5e94aee1f80a1599a87a0b247a96f3">tick::castFrom</a>(tickNumber_d),</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a8cc1efaf65cd0e09a145fc88e813b2ea">SubsampleIndex_t</a><span class="keyword">&gt;</span>(subtick)</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    };</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;} <span class="comment">// icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::operator()</span></div>
 <div class="ttc" id="structutil_1_1quantities_1_1concepts_1_1Quantity_html_aba5e94aee1f80a1599a87a0b247a96f3"><div class="ttname"><a href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html#aba5e94aee1f80a1599a87a0b247a96f3">util::quantities::concepts::Quantity::castFrom</a></div><div class="ttdeci">static constexpr quantity_t castFrom(U value)</div><div class="ttdoc">Returns a new quantity initialized with the specified value. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d8e/quantities_8h_source.html#l00825">quantities.h:825</a></div></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a1b0297fa00c2a02d37fbf27a7a396cf0"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a1b0297fa00c2a02d37fbf27a7a396cf0">util::quantities::tick_d</a></div><div class="ttdeci">tick_as&lt; double &gt; tick_d</div><div class="ttdoc">Tick number, represented by double. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00087">electronics.h:87</a></div></div>
-<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a82d08920134ad9e2a89c0848099602d0"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::fNSubsamples</a></div><div class="ttdeci">double const fNSubsamples</div><div class="ttdoc">Number of subsamples. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00536">PMTsimulationAlg.h:536</a></div></div>
-<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a8cc1efaf65cd0e09a145fc88e813b2ea"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a8cc1efaf65cd0e09a145fc88e813b2ea">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::SubsampleIndex_t</a></div><div class="ttdeci">DiscretePhotoelectronPulse::SubsampleIndex_t SubsampleIndex_t</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00539">PMTsimulationAlg.h:539</a></div></div>
+<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a82d08920134ad9e2a89c0848099602d0"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a82d08920134ad9e2a89c0848099602d0">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::fNSubsamples</a></div><div class="ttdeci">double const fNSubsamples</div><div class="ttdoc">Number of subsamples. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00537">PMTsimulationAlg.h:537</a></div></div>
+<div class="ttc" id="classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter_html_a8cc1efaf65cd0e09a145fc88e813b2ea"><div class="ttname"><a href="../../d1/d42/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1TimeToTickAndSubtickConverter.html#a8cc1efaf65cd0e09a145fc88e813b2ea">icarus::opdet::PMTsimulationAlg::TimeToTickAndSubtickConverter::SubsampleIndex_t</a></div><div class="ttdeci">DiscretePhotoelectronPulse::SubsampleIndex_t SubsampleIndex_t</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00540">PMTsimulationAlg.h:540</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,7 +210,7 @@ Private Attributes</h2></td></tr>
 
 <p>Number of subsamples. </p>
 
-<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00536">536</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html#l00537">537</a> of file <a class="el" href="../../dd/d06/PMTsimulationAlg_8h_source.html">PMTsimulationAlg.h</a>.</p>
 
 </div>
 </div>

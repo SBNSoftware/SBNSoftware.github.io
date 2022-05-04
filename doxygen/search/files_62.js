@@ -94,6 +94,7 @@ var searchData=
   ['build_2dlarsoft_2ddbg_2dprof_2esh',['build-larsoft-dbg-prof.sh',['../dd/db3/build-larsoft-dbg-prof_8sh.html',1,'']]],
   ['build_2dlarsoft_2dpy3_2esh',['build-larsoft-py3.sh',['../d8/df0/build-larsoft-py3_8sh.html',1,'']]],
   ['build_2dlarsoft_2drc_2esh',['build-larsoft-rc.sh',['../d7/df3/build-larsoft-rc_8sh.html',1,'']]],
+  ['build_2dlarsoft_2dwith_2dspack_2esh',['build-larsoft-with-spack.sh',['../d5/da0/build-larsoft-with-spack_8sh.html',1,'']]],
   ['build_2dlarsoft_2esh',['build-larsoft.sh',['../d1/d82/build-larsoft_8sh.html',1,'']]],
   ['build_2dlarsoftobj_2esh',['build-larsoftobj.sh',['../d1/d32/build-larsoftobj_8sh.html',1,'']]],
   ['build_5flarcv_2esh',['build_larcv.sh',['../dd/dfe/build__larcv_8sh.html',1,'']]],

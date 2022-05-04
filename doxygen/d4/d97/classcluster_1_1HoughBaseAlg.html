@@ -540,11 +540,11 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo:</a></b></dt><dd>explain where the 0.001 comes from </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000112">Todo:</a></b></dt><dd>: the collection plane's characteristic hit width's are, </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo:</a></b></dt><dd>: on average, about 5 time samples wider than the induction plane's.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo:</a></b></dt><dd>: this is hard-coded for now. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo:</a></b></dt><dd>should it really be wire_pitch[0] in the if statements below, or the pitch for the plane of the hit? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo:</a></b></dt><dd>explain where the 0.001 comes from </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo:</a></b></dt><dd>: the collection plane's characteristic hit width's are, </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000112">Todo:</a></b></dt><dd>: on average, about 5 time samples wider than the induction plane's.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo:</a></b></dt><dd>: this is hard-coded for now. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo:</a></b></dt><dd>should it really be wire_pitch[0] in the if statements below, or the pitch for the plane of the hit? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d3/dee/HoughBaseAlg_8cxx_source.html#l01029">1029</a> of file <a class="el" href="../../d3/dee/HoughBaseAlg_8cxx_source.html">HoughBaseAlg.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;{</div>
@@ -674,7 +674,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> wireMax = hit.at(randInd)-&gt;WireID().Wire;</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;</div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;    <span class="comment">// Add the randomly selected point to the accumulator</span></div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;    std::array&lt;int, 3&gt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = c.AddPointReturnMax(wireMax, (<span class="keywordtype">int</span>)(hit.at(randInd)-&gt;PeakTime()));</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;    std::array&lt;int, 3&gt; max = c.AddPointReturnMax(wireMax, (<span class="keywordtype">int</span>)(hit.at(randInd)-&gt;PeakTime()));</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    maxCell = max.at(0);</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;    xMax = max.at(1);</div>
 <div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;    yMax = max.at(2);</div>
@@ -887,7 +887,6 @@ Friends</h2></td></tr>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classcluster_1_1HoughBaseAlg_html_a9d38f560353218665e80e25689ec16b0"><div class="ttname"><a href="../../d4/d97/classcluster_1_1HoughBaseAlg.html#a9d38f560353218665e80e25689ec16b0">cluster::HoughBaseAlg::fMissedHits</a></div><div class="ttdeci">int fMissedHits</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d87/HoughBaseAlg_8h_source.html#l00550">HoughBaseAlg.h:550</a></div></div>
-<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a748e324d604cec19be4553eaa4a8e208"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a748e324d604cec19be4553eaa4a8e208">geo::GeometryCore::SignalType</a></div><div class="ttdeci">SigType_t SignalType(geo::PlaneID const &amp;pid) const </div><div class="ttdoc">Returns the type of signal on the channels of specified TPC plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00578">GeometryCore.cxx:578</a></div></div>
@@ -1067,11 +1066,11 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000107">Todo:</a></b></dt><dd>provide comment about where the 0.001 comes from </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000106">Todo:</a></b></dt><dd>provide comment about where the 0.001 comes from </dd></dl>
 <p>characteristic hit width of induction and collection plane</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000108">Todo:</a></b></dt><dd>: the collection plane's characteristic hit width's are, </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000109">Todo:</a></b></dt><dd>: on average, about 5 time samples wider than the induction plane's. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo:</a></b></dt><dd>: this is hard-coded for now. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000107">Todo:</a></b></dt><dd>: the collection plane's characteristic hit width's are, </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000108">Todo:</a></b></dt><dd>: on average, about 5 time samples wider than the induction plane's. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000109">Todo:</a></b></dt><dd>: this is hard-coded for now. </dd></dl>
 <h2>Outline of PPHT, J. Matas et. al. </h2>
 <p>LOOP over hits, picking a random one Enter the point into the accumulator IF it is already in the accumulator or part of a line, skip it Store it in a vector of points that have been chosen</p>
 <p>Find max value in accumulator; IF above threshold, create a line Subtract points in line from accumulator</p>
@@ -1268,7 +1267,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    wireMax = hits[randInd]-&gt;WireID().Wire;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">    /// Add the randomly selected point to the accumulator</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment"></span>    std::array&lt;int, 3&gt; <a class="code" href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a> = c.AddPointReturnMax(wireMax, (<span class="keywordtype">int</span>)(hits[randInd]-&gt;PeakTime()));</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment"></span>    std::array&lt;int, 3&gt; max = c.AddPointReturnMax(wireMax, (<span class="keywordtype">int</span>)(hits[randInd]-&gt;PeakTime()));</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    maxCell = max[0];</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    xMax = max[1];</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    yMax = max[2];</div>
@@ -1460,7 +1459,6 @@ Friends</h2></td></tr>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classcluster_1_1HoughBaseAlg_html_a9d38f560353218665e80e25689ec16b0"><div class="ttname"><a href="../../d4/d97/classcluster_1_1HoughBaseAlg.html#a9d38f560353218665e80e25689ec16b0">cluster::HoughBaseAlg::fMissedHits</a></div><div class="ttdeci">int fMissedHits</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d87/HoughBaseAlg_8h_source.html#l00550">HoughBaseAlg.h:550</a></div></div>
-<div class="ttc" id="pmttriggerproducer_8fcl_html_a527d89be40c3c20ca8162df059180fd9"><div class="ttname"><a href="../../d7/d5a/pmttriggerproducer_8fcl.html#a527d89be40c3c20ca8162df059180fd9">max</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated ideal single PE test page of manual option are OR or AND window for pmt trigger time start window for pmt trigger time end etc then what events all hists are saved for max</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/pmttriggerproducer_8fcl_source.html#l00023">pmttriggerproducer.fcl:23</a></div></div>
 <div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a748e324d604cec19be4553eaa4a8e208"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a748e324d604cec19be4553eaa4a8e208">geo::GeometryCore::SignalType</a></div><div class="ttdeci">SigType_t SignalType(geo::PlaneID const &amp;pid) const </div><div class="ttdoc">Returns the type of signal on the channels of specified TPC plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00578">GeometryCore.cxx:578</a></div></div>
 <div class="ttc" id="classcluster_1_1HoughBaseAlg_html_a577a8813358cbb79ccf3bc5fcf970a0d"><div class="ttname"><a href="../../d4/d97/classcluster_1_1HoughBaseAlg.html#a577a8813358cbb79ccf3bc5fcf970a0d">cluster::HoughBaseAlg::fMinHits</a></div><div class="ttdeci">int fMinHits</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d87/HoughBaseAlg_8h_source.html#l00531">HoughBaseAlg.h:531</a></div></div>
@@ -1548,8 +1546,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000116">Todo:</a></b></dt><dd>could eventually refine this method to throw out hits that are </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000117">Todo:</a></b></dt><dd>far from the hough line and refine the fit </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo:</a></b></dt><dd>could eventually refine this method to throw out hits that are </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000116">Todo:</a></b></dt><dd>far from the hough line and refine the fit </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d3/dee/HoughBaseAlg_8cxx_source.html#l01375">1375</a> of file <a class="el" href="../../d3/dee/HoughBaseAlg_8cxx_source.html">HoughBaseAlg.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;{</div>
