@@ -271,8 +271,7 @@ void MyAnalyzer::analyze(art::Event const& e)
 }//end analyze
 ```
 Finally, we'll complete our module by building the `reset` function, which clears all of the vectors.
-```
-c++
+```c++
 void MyAnalyzer::reset(){
   //Geant info
   pdg.clear();
@@ -364,6 +363,8 @@ lar -c $MRB_SOURCE/sbndcode/sbndcode/PGUNtutorial/MyAnalyzer.fcl -s prodsingle_s
 You should now have `MyAnalyzer.root` in your `data` directory. Nice work! Now, click on `MyAnalyzer.root` by opening your current folder in the explorer pane and selecting the file. It should look something like this when you select the `Eng` `TBranch`
 ![VSCode2](Images/vscode2.png)
 ![VSCode3](Images/vscode3.png)
+5 - Running MyAnalyzer
+-----------------------------------------------------------------------------
 
 
 
