@@ -59,6 +59,7 @@ see the old wiki for a lot of historical detail.
 * artdaq: [Artdaq Demo Wiki](https://cdcvs.fnal.gov/redmine/projects/artdaq-demo/wiki)
 * git info: [Github guides](https://guides.github.com/)
 * [Older instructions on Github Migration](GithubMigration.md)
+* [Run CAENdump](CAENdump_setup.md)
 
 sbndaq detector components
 ----------------------------------------------
