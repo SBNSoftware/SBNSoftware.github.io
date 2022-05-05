@@ -29,7 +29,7 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 ```
 source /cvmfs/<sbnd or icarus>.opensciencegrid.org/products/<sbnd or icarus>/setup_<sbnd or icarus>.sh
 ```
-4. `setup sbnci v09_46_02 -q e20:prof`
+4. `setup sbnci v09_48_01 -q e20:prof`
 5. `source get_proxy.sh`
 6. To validate your code, you will need to provide the following.
 - Validation workflow (`tpcreco`, `tpcsim`, `pds`, or `crt`)
