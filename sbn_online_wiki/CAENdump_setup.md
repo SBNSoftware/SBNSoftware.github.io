@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SBN DAQ Software Setup Instructions
+title: SBND CAENdump Setup
 hero_height: is-small
 ---
 
