@@ -115,7 +115,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00035">35</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00036">36</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab69aba15ef00d236943af0d58dff86bd"></a>
 <div class="memitem">
@@ -139,18 +139,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00052">52</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    : EDProducer{pset}, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;DisambigAlg&quot;</span>))</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a> = pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ChanHitLabel&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// let HitCollectionCreator declare that we are going to produce</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// hits and associations with wires and raw digits</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// (with no particular product label)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../de/dfe/classrecob_1_1HitAndAssociationsWriterBase.html#adbc6a4d07ee8f3c4ebffc5e29436e351">recob::HitCollectionCreator::declare_products</a>(producesCollector());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="ttc" id="classapa_1_1APAHitFinder_html_aaf99fe9435494b8fd146949e205c7041"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">apa::APAHitFinder::fDisambigAlg</a></div><div class="ttdeci">apa::DisambigAlg fDisambigAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00043">APAHitFinder_module.cc:43</a></div></div>
-<div class="ttc" id="classapa_1_1APAHitFinder_html_a8343dda3e6d1c4f7a22ec8cfc957f735"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">apa::APAHitFinder::fChanHitLabel</a></div><div class="ttdeci">std::string fChanHitLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00046">APAHitFinder_module.cc:46</a></div></div>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00053">53</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    : EDProducer{pset}, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;DisambigAlg&quot;</span>))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a> = pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ChanHitLabel&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// let HitCollectionCreator declare that we are going to produce</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// hits and associations with wires and raw digits</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// (with no particular product label)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../de/dfe/classrecob_1_1HitAndAssociationsWriterBase.html#adbc6a4d07ee8f3c4ebffc5e29436e351">recob::HitCollectionCreator::declare_products</a>(producesCollector());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="ttc" id="classapa_1_1APAHitFinder_html_aaf99fe9435494b8fd146949e205c7041"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">apa::APAHitFinder::fDisambigAlg</a></div><div class="ttdeci">apa::DisambigAlg fDisambigAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00044">APAHitFinder_module.cc:44</a></div></div>
+<div class="ttc" id="classapa_1_1APAHitFinder_html_a8343dda3e6d1c4f7a22ec8cfc957f735"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">apa::APAHitFinder::fChanHitLabel</a></div><div class="ttdeci">std::string fChanHitLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00047">APAHitFinder_module.cc:47</a></div></div>
 <div class="ttc" id="classrecob_1_1HitAndAssociationsWriterBase_html_adbc6a4d07ee8f3c4ebffc5e29436e351"><div class="ttname"><a href="../../de/dfe/classrecob_1_1HitAndAssociationsWriterBase.html#adbc6a4d07ee8f3c4ebffc5e29436e351">recob::HitAndAssociationsWriterBase::declare_products</a></div><div class="ttdeci">static void declare_products(art::ProducesCollector &amp;collector, std::string instance_name=&quot;&quot;, bool doWireAssns=true, bool doRawDigitAssns=true)</div><div class="ttdoc">Declares the hit products we are going to fill. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d4a/HitCreator_8cxx_source.html#l00248">HitCreator.cxx:248</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -178,62 +178,62 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00065">65</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// this object contains the hit collection</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// and its associations to wires and raw digits:</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d4/dd2/classrecob_1_1HitCollectionCreator.html">recob::HitCollectionCreator</a> hcol(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; ChannelHits;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>, ChannelHits);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// also get the associated wires and raw digits;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// we assume they have been created by the same module as the hits</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    art::FindOneP&lt;raw::RawDigit&gt; ChannelHitRawDigits(ChannelHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    art::FindOneP&lt;recob::Wire&gt; ChannelHitWires(ChannelHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Make unambiguous collection hits</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; ChHits;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    art::fill_ptr_vector(ChHits, ChannelHits);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> = 0; <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> &lt; ChHits.size(); <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>++) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">if</span> (ChHits[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>]-&gt;View() != <a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      art::Ptr&lt;recob::Wire&gt; wire = ChannelHitWires.at(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      art::Ptr&lt;raw::RawDigit&gt; rawdigits = ChannelHitRawDigits.at(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">// just copy it</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      hcol.emplace_back(*ChHits[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>], wire, rawdigits);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Run alg on all APAs</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clock_data =</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> det_prop =</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, clock_data);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a44118f4a8b9ce8fb7e6c7eab17085e73">RunDisambig</a>(clock_data, det_prop, ChannelHits);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> t = 0; t &lt; <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>.size(); t++) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      art::Ptr&lt;recob::Hit&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>[t].first;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> wid = <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>[t].second;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="comment">// create a new hit copy of the original one, but with new wire ID</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="../../d1/de4/classrecob_1_1HitCreator.html">recob::HitCreator</a> disambiguous_hit(*hit, wid);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="comment">// get the objects associated with the original hit;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="comment">// since hit comes from ChannelHits, its key is the index in that collection</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">// and also the index for the query of associated objects</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      art::Ptr&lt;recob::Hit&gt;::key_type hit_index = hit.key();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      art::Ptr&lt;recob::Wire&gt; wire = ChannelHitWires.at(hit_index);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      art::Ptr&lt;raw::RawDigit&gt; rawdigits = ChannelHitRawDigits.at(hit_index);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      hcol.emplace_back(disambiguous_hit.move(), wire, rawdigits);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    } <span class="comment">// for</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// put the hit collection and associations into the event</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    hcol.put_into(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
-<div class="ttc" id="classapa_1_1APAHitFinder_html_aaf99fe9435494b8fd146949e205c7041"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">apa::APAHitFinder::fDisambigAlg</a></div><div class="ttdeci">apa::DisambigAlg fDisambigAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00043">APAHitFinder_module.cc:43</a></div></div>
-<div class="ttc" id="classapa_1_1APAHitFinder_html_a8343dda3e6d1c4f7a22ec8cfc957f735"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">apa::APAHitFinder::fChanHitLabel</a></div><div class="ttdeci">std::string fChanHitLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00046">APAHitFinder_module.cc:46</a></div></div>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00066">66</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// this object contains the hit collection</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// and its associations to wires and raw digits:</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../d4/dd2/classrecob_1_1HitCollectionCreator.html">recob::HitCollectionCreator</a> hcol(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; ChannelHits;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>, ChannelHits);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// also get the associated wires and raw digits;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// we assume they have been created by the same module as the hits</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    art::FindOneP&lt;raw::RawDigit&gt; ChannelHitRawDigits(ChannelHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    art::FindOneP&lt;recob::Wire&gt; ChannelHitWires(ChannelHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">fChanHitLabel</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Make unambiguous collection hits</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; ChHits;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    art::fill_ptr_vector(ChHits, ChannelHits);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> = 0; <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> &lt; ChHits.size(); <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>++) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span> (ChHits[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>]-&gt;View() != <a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      art::Ptr&lt;recob::Wire&gt; wire = ChannelHitWires.at(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      art::Ptr&lt;raw::RawDigit&gt; rawdigits = ChannelHitRawDigits.at(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// just copy it</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      hcol.emplace_back(*ChHits[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>], wire, rawdigits);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Run alg on all APAs</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clock_data =</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> det_prop =</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, clock_data);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a44118f4a8b9ce8fb7e6c7eab17085e73">RunDisambig</a>(clock_data, det_prop, ChannelHits);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> t = 0; t &lt; <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>.size(); t++) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      art::Ptr&lt;recob::Hit&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>[t].first;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> wid = <a class="code" href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">fDisambigAlg</a>.<a class="code" href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">fDisambigHits</a>[t].second;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="comment">// create a new hit copy of the original one, but with new wire ID</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="../../d1/de4/classrecob_1_1HitCreator.html">recob::HitCreator</a> disambiguous_hit(*hit, wid);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="comment">// get the objects associated with the original hit;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">// since hit comes from ChannelHits, its key is the index in that collection</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">// and also the index for the query of associated objects</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      art::Ptr&lt;recob::Hit&gt;::key_type hit_index = hit.key();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      art::Ptr&lt;recob::Wire&gt; wire = ChannelHitWires.at(hit_index);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      art::Ptr&lt;raw::RawDigit&gt; rawdigits = ChannelHitRawDigits.at(hit_index);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      hcol.emplace_back(disambiguous_hit.move(), wire, rawdigits);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    } <span class="comment">// for</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// put the hit collection and associations into the event</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    hcol.put_into(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="ttc" id="classapa_1_1APAHitFinder_html_aaf99fe9435494b8fd146949e205c7041"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#aaf99fe9435494b8fd146949e205c7041">apa::APAHitFinder::fDisambigAlg</a></div><div class="ttdeci">apa::DisambigAlg fDisambigAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00044">APAHitFinder_module.cc:44</a></div></div>
+<div class="ttc" id="classapa_1_1APAHitFinder_html_a8343dda3e6d1c4f7a22ec8cfc957f735"><div class="ttname"><a href="../../d7/d70/classapa_1_1APAHitFinder.html#a8343dda3e6d1c4f7a22ec8cfc957f735">apa::APAHitFinder::fChanHitLabel</a></div><div class="ttdeci">std::string fChanHitLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00047">APAHitFinder_module.cc:47</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a></div><div class="ttdoc">Planes which measure Z direction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00132">geo_types.h:132</a></div></div>
 <div class="ttc" id="classapa_1_1DisambigAlg_html_a44118f4a8b9ce8fb7e6c7eab17085e73"><div class="ttname"><a href="../../de/d30/classapa_1_1DisambigAlg.html#a44118f4a8b9ce8fb7e6c7eab17085e73">apa::DisambigAlg::RunDisambig</a></div><div class="ttdeci">void RunDisambig(detinfo::DetectorClocksData const &amp;clockData, detinfo::DetectorPropertiesData const &amp;detProp, art::Handle&lt; std::vector&lt; recob::Hit &gt;&gt; GausHits)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d6a/DisambigAlg_8cxx_source.html#l00054">DisambigAlg.cxx:54</a></div></div>
 <div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
@@ -241,8 +241,8 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="getStatistics_8sh_html_a04d4c2131ccb24cc78386597e8a21c5b"><div class="ttname"><a href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a></div><div class="ttdeci">while getopts h</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de2/getStatistics_8sh_source.html#l00013">getStatistics.sh:13</a></div></div>
 <div class="ttc" id="classrecob_1_1HitCreator_html"><div class="ttname"><a href="../../d1/de4/classrecob_1_1HitCreator.html">recob::HitCreator</a></div><div class="ttdoc">Class managing the creation of a new recob::Hit object. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/HitCreator_8h_source.html#l00083">HitCreator.h:83</a></div></div>
 <div class="ttc" id="classrecob_1_1HitCollectionCreator_html"><div class="ttname"><a href="../../d4/dd2/classrecob_1_1HitCollectionCreator.html">recob::HitCollectionCreator</a></div><div class="ttdoc">A class handling a collection of hits and its associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/HitCreator_8h_source.html#l00508">HitCreator.h:508</a></div></div>
-<div class="ttc" id="classapa_1_1DisambigAlg_html_a785b3f38607aec5a6cf10c99c55dd943"><div class="ttname"><a href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">apa::DisambigAlg::fDisambigHits</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; art::Ptr&lt; recob::Hit &gt;, geo::WireID &gt; &gt; fDisambigHits</div><div class="ttdoc">The final list of hits to pass back to be made. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/DisambigAlg_8h_source.html#l00060">DisambigAlg.h:60</a></div></div>
-<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00007">DataStructs.cxx:7</a></div></div>
+<div class="ttc" id="classapa_1_1DisambigAlg_html_a785b3f38607aec5a6cf10c99c55dd943"><div class="ttname"><a href="../../de/d30/classapa_1_1DisambigAlg.html#a785b3f38607aec5a6cf10c99c55dd943">apa::DisambigAlg::fDisambigHits</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; art::Ptr&lt; recob::Hit &gt;, geo::WireID &gt; &gt; fDisambigHits</div><div class="ttdoc">The final list of hits to pass back to be made. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd6/DisambigAlg_8h_source.html#l00064">DisambigAlg.h:64</a></div></div>
+<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,7 +265,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00046">46</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00047">47</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html#l00045">45</a> of file <a class="el" href="../../db/d9e/APAHitFinder__module_8cc_source.html">APAHitFinder_module.cc</a>.</p>
 
 </div>
 </div>

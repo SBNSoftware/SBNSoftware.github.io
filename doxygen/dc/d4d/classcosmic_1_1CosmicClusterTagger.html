@@ -114,7 +114,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00032">32</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00034">34</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa3fdb898fd97487a85f3b8ef6b94f213"></a>
 <div class="memitem">
@@ -138,34 +138,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00046">46</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                                         : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* geo = lar::providerFrom&lt;geo::Geometry&gt;();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataForJob();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> detp =</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataForJob(clock_data);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> samplingRate = <a class="code" href="../../d7/d8a/namespacedetinfo.html#a0c4d3d5b85e37497364174c3513ffcae">sampling_rate</a>(clock_data);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">fClusterModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;ClusterModuleLabel&quot;</span>, <span class="stringliteral">&quot;cluster&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TickLimit&quot;</span>, 0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> driftVelocity = detp.DriftVelocity(detp.Efield(), detp.Temperature()); <span class="comment">// cm/us</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">fDetectorWidthTicks</a> =</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    2 * geo-&gt;DetHalfWidth() / (driftVelocity * samplingRate / 1000); <span class="comment">// ~3200 for uB</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get(<span class="stringliteral">&quot;MinTickDrift&quot;</span>, 3200);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">fMaxTickDrift</a> = <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a> + <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">fDetectorWidthTicks</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  produces&lt;std::vector&lt;anab::CosmicTag&gt;&gt;();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  produces&lt;art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;&gt;();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a52d5f0c2b5a38671ea033c3293586b39"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">cosmic::CosmicClusterTagger::fMinTickDrift</a></div><div class="ttdeci">int fMinTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00042">CosmicClusterTagger_module.cc:42</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_abe95ee546f5ad5ee9028aed1ba57e2b1"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">cosmic::CosmicClusterTagger::fClusterModuleLabel</a></div><div class="ttdeci">std::string fClusterModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00039">CosmicClusterTagger_module.cc:39</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00048">48</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                                         : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* geo = lar::providerFrom&lt;geo::Geometry&gt;();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataForJob();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> detp =</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataForJob(clock_data);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">double</span> <span class="keyword">const</span> samplingRate = <a class="code" href="../../d7/d8a/namespacedetinfo.html#a0c4d3d5b85e37497364174c3513ffcae">sampling_rate</a>(clock_data);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">fClusterModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;ClusterModuleLabel&quot;</span>, <span class="stringliteral">&quot;cluster&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TickLimit&quot;</span>, 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> driftVelocity = detp.DriftVelocity(detp.Efield(), detp.Temperature()); <span class="comment">// cm/us</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">fDetectorWidthTicks</a> =</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    2 * geo-&gt;DetHalfWidth() / (driftVelocity * samplingRate / 1000); <span class="comment">// ~3200 for uB</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get(<span class="stringliteral">&quot;MinTickDrift&quot;</span>, 3200);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">fMaxTickDrift</a> = <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a> + <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">fDetectorWidthTicks</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  produces&lt;std::vector&lt;anab::CosmicTag&gt;&gt;();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  produces&lt;art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;&gt;();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a52d5f0c2b5a38671ea033c3293586b39"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">cosmic::CosmicClusterTagger::fMinTickDrift</a></div><div class="ttdeci">int fMinTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00044">CosmicClusterTagger_module.cc:44</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_abe95ee546f5ad5ee9028aed1ba57e2b1"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">cosmic::CosmicClusterTagger::fClusterModuleLabel</a></div><div class="ttdeci">std::string fClusterModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">CosmicClusterTagger_module.cc:41</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_ae1e1e33a706c04209fb2bd33e1be6e91"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">cosmic::CosmicClusterTagger::fDetectorWidthTicks</a></div><div class="ttdeci">int fDetectorWidthTicks</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00040">CosmicClusterTagger_module.cc:40</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a142d4f753cfb0895c2d6d3df6a2e55dc"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">cosmic::CosmicClusterTagger::fTickLimit</a></div><div class="ttdeci">int fTickLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">CosmicClusterTagger_module.cc:41</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_ae1e1e33a706c04209fb2bd33e1be6e91"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#ae1e1e33a706c04209fb2bd33e1be6e91">cosmic::CosmicClusterTagger::fDetectorWidthTicks</a></div><div class="ttdeci">int fDetectorWidthTicks</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00042">CosmicClusterTagger_module.cc:42</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a142d4f753cfb0895c2d6d3df6a2e55dc"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">cosmic::CosmicClusterTagger::fTickLimit</a></div><div class="ttdeci">int fTickLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">CosmicClusterTagger_module.cc:43</a></div></div>
 <div class="ttc" id="namespacedetinfo_html_a0c4d3d5b85e37497364174c3513ffcae"><div class="ttname"><a href="../../d7/d8a/namespacedetinfo.html#a0c4d3d5b85e37497364174c3513ffcae">detinfo::sampling_rate</a></div><div class="ttdeci">double sampling_rate(DetectorClocksData const &amp;data)</div><div class="ttdoc">Returns the period of the TPC readout electronics clock. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5b/DetectorClocksData_8h_source.html#l00643">DetectorClocksData.h:643</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_acd49052e3a77760c4903ea2fba383a73"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">cosmic::CosmicClusterTagger::fMaxTickDrift</a></div><div class="ttdeci">int fMaxTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">CosmicClusterTagger_module.cc:43</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_acd49052e3a77760c4903ea2fba383a73"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">cosmic::CosmicClusterTagger::fMaxTickDrift</a></div><div class="ttdeci">int fMaxTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00045">CosmicClusterTagger_module.cc:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,82 +192,82 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00068">68</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  std::unique_ptr&lt;std::vector&lt;anab::CosmicTag&gt;&gt; cosmicTagClusterVector(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">new</span> std::vector&lt;anab::CosmicTag&gt;);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;&gt; assnOutCosmicTagCluster(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">new</span> art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  art::Handle&lt;std::vector&lt;recob::Cluster&gt;&gt; Cluster_h;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">fClusterModuleLabel</a>, Cluster_h);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;art::Ptr&lt;recob::Cluster&gt;&gt; ClusterVec;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  art::fill_ptr_vector(ClusterVec, Cluster_h);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>  <span class="comment">// LOOP OVER CLUSTERS</span><span class="comment"></span></div>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::unique_ptr&lt;std::vector&lt;anab::CosmicTag&gt;&gt; cosmicTagClusterVector(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">new</span> std::vector&lt;anab::CosmicTag&gt;);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;&gt; assnOutCosmicTagCluster(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">new</span> art::Assns&lt;recob::Cluster, anab::CosmicTag&gt;);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  art::Handle&lt;std::vector&lt;recob::Cluster&gt;&gt; Cluster_h;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">fClusterModuleLabel</a>, Cluster_h);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::vector&lt;art::Ptr&lt;recob::Cluster&gt;&gt; ClusterVec;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  art::fill_ptr_vector(ClusterVec, Cluster_h);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iCluster = 0; iCluster &lt; Cluster_h-&gt;size(); iCluster++) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">float</span> cosmicScore = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d2/d6d/namespaceanab.html#a40acd39c201a96c82cf12ab90ac55891">anab::CosmicTagID_t</a> tag_id = <a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">anab::CosmicTagID_t::kUnknown</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    art::Ptr&lt;recob::Cluster&gt; tCluster = ClusterVec.at(iCluster);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// art::Ptr&lt;recob::Track&gt; tTrack; // unused</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;float&gt; endPt1;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::vector&lt;float&gt; endPt2;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Doing some checks on the cluster to determine if it&#39;s a cosmic</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> failClusterTickCheck = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> [<a class="code" href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">t0</a>, t1] = <a class="code" href="../../db/de7/namespacelar__content.html#ae6b37e49b3abc64dd11cbe3cb250e6ef">std::minmax</a>(tCluster-&gt;StartTick(), tCluster-&gt;EndTick());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">t0</a> + <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> &lt; <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a>) { <span class="comment">// This is into the pre-spill window</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      failClusterTickCheck = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (t1 - <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> &gt; <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">fMaxTickDrift</a>) { <span class="comment">// This is into the post-spill window</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      failClusterTickCheck = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (failClusterTickCheck) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      cosmicScore = 1.;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      tag_id = <a class="code" href="../../d2/d6d/namespaceanab.html#a9fe608cb94ecb24648735af28f641ac2a3706213c73425b3b607ba161cb033354">anab::CosmicTagID_t::kOutsideDrift_Partial</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (endPt1.size() &lt; 1) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> = 0; <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> &lt; 3; <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>++) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        endPt1.push_back(-999);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        endPt2.push_back(-999);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Making stuff to save!</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    cosmicTagClusterVector-&gt;emplace_back(endPt1, endPt2, cosmicScore, tag_id);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, *cosmicTagClusterVector, tCluster, *assnOutCosmicTagCluster);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span>  <span class="comment">// END OF CLUSTER LOOP</span><span class="comment"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span>  <span class="comment">// LOOP OVER CLUSTERS</span><span class="comment"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iCluster = 0; iCluster &lt; Cluster_h-&gt;size(); iCluster++) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">float</span> cosmicScore = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d2/d6d/namespaceanab.html#a40acd39c201a96c82cf12ab90ac55891">anab::CosmicTagID_t</a> tag_id = <a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">anab::CosmicTagID_t::kUnknown</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    art::Ptr&lt;recob::Cluster&gt; tCluster = ClusterVec.at(iCluster);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// art::Ptr&lt;recob::Track&gt; tTrack; // unused</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::vector&lt;float&gt; endPt1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::vector&lt;float&gt; endPt2;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Doing some checks on the cluster to determine if it&#39;s a cosmic</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> failClusterTickCheck = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> [<a class="code" href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">t0</a>, t1] = <a class="code" href="../../db/de7/namespacelar__content.html#ae6b37e49b3abc64dd11cbe3cb250e6ef">std::minmax</a>(tCluster-&gt;StartTick(), tCluster-&gt;EndTick());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">t0</a> + <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> &lt; <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">fMinTickDrift</a>) { <span class="comment">// This is into the pre-spill window</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      failClusterTickCheck = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (t1 - <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">fTickLimit</a> &gt; <a class="code" href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">fMaxTickDrift</a>) { <span class="comment">// This is into the post-spill window</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      failClusterTickCheck = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (failClusterTickCheck) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      cosmicScore = 1.;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      tag_id = <a class="code" href="../../d2/d6d/namespaceanab.html#a9fe608cb94ecb24648735af28f641ac2a3706213c73425b3b607ba161cb033354">anab::CosmicTagID_t::kOutsideDrift_Partial</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (endPt1.size() &lt; 1) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> = 0; <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> &lt; 3; <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a>++) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        endPt1.push_back(-999);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        endPt2.push_back(-999);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Making stuff to save!</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    cosmicTagClusterVector-&gt;emplace_back(endPt1, endPt2, cosmicScore, tag_id);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, *cosmicTagClusterVector, tCluster, *assnOutCosmicTagCluster);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(cosmicTagClusterVector));</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(assnOutCosmicTagCluster));</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;} <span class="comment">// end of produce</span></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a52d5f0c2b5a38671ea033c3293586b39"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">cosmic::CosmicClusterTagger::fMinTickDrift</a></div><div class="ttdeci">int fMinTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00042">CosmicClusterTagger_module.cc:42</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_abe95ee546f5ad5ee9028aed1ba57e2b1"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">cosmic::CosmicClusterTagger::fClusterModuleLabel</a></div><div class="ttdeci">std::string fClusterModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00039">CosmicClusterTagger_module.cc:39</a></div></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"></span>  <span class="comment">// END OF CLUSTER LOOP</span><span class="comment"></span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">  /////////////////////////////////</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(cosmicTagClusterVector));</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(assnOutCosmicTagCluster));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// end of produce</span></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a52d5f0c2b5a38671ea033c3293586b39"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a52d5f0c2b5a38671ea033c3293586b39">cosmic::CosmicClusterTagger::fMinTickDrift</a></div><div class="ttdeci">int fMinTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00044">CosmicClusterTagger_module.cc:44</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_abe95ee546f5ad5ee9028aed1ba57e2b1"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#abe95ee546f5ad5ee9028aed1ba57e2b1">cosmic::CosmicClusterTagger::fClusterModuleLabel</a></div><div class="ttdeci">std::string fClusterModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">CosmicClusterTagger_module.cc:41</a></div></div>
 <div class="ttc" id="namespacelar__content_html_ae6b37e49b3abc64dd11cbe3cb250e6ef"><div class="ttname"><a href="../../db/de7/namespacelar__content.html#ae6b37e49b3abc64dd11cbe3cb250e6ef">lar_content::minmax</a></div><div class="ttdeci">std::pair&lt; float, float &gt; minmax(const float a, const float b)</div><div class="ttdoc">minmax </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df7/KDTreeLinkerToolsT_8cc_source.html#l00014">KDTreeLinkerToolsT.cc:14</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">geo::kUnknown</a></div><div class="ttdoc">Unknown view. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00136">geo_types.h:136</a></div></div>
 <div class="ttc" id="namespaceanab_html_a40acd39c201a96c82cf12ab90ac55891"><div class="ttname"><a href="../../d2/d6d/namespaceanab.html#a40acd39c201a96c82cf12ab90ac55891">anab::CosmicTagID_t</a></div><div class="ttdeci">enum anab::cosmic_tag_id CosmicTagID_t</div></div>
 <div class="ttc" id="namespacemake__calib__df_html_a2b8237bac57d5c373c623869ad4513c8"><div class="ttname"><a href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">make_calib_df.t0</a></div><div class="ttdeci">int t0</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0e/make__calib__df_8py_source.html#l00042">make_calib_df.py:42</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a142d4f753cfb0895c2d6d3df6a2e55dc"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">cosmic::CosmicClusterTagger::fTickLimit</a></div><div class="ttdeci">int fTickLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">CosmicClusterTagger_module.cc:41</a></div></div>
-<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00581">lardata/lardata/Utilities/AssociationUtil.h:581</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_a142d4f753cfb0895c2d6d3df6a2e55dc"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#a142d4f753cfb0895c2d6d3df6a2e55dc">cosmic::CosmicClusterTagger::fTickLimit</a></div><div class="ttdeci">int fTickLimit</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">CosmicClusterTagger_module.cc:43</a></div></div>
+<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00586">lardata/lardata/Utilities/AssociationUtil.h:586</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="namespaceanab_html_a9fe608cb94ecb24648735af28f641ac2a3706213c73425b3b607ba161cb033354"><div class="ttname"><a href="../../d2/d6d/namespaceanab.html#a9fe608cb94ecb24648735af28f641ac2a3706213c73425b3b607ba161cb033354">anab::kOutsideDrift_Partial</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d86/CosmicTag_8h_source.html#l00029">CosmicTag.h:29</a></div></div>
-<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_acd49052e3a77760c4903ea2fba383a73"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">cosmic::CosmicClusterTagger::fMaxTickDrift</a></div><div class="ttdeci">int fMaxTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">CosmicClusterTagger_module.cc:43</a></div></div>
+<div class="ttc" id="classcosmic_1_1CosmicClusterTagger_html_acd49052e3a77760c4903ea2fba383a73"><div class="ttname"><a href="../../dc/d4d/classcosmic_1_1CosmicClusterTagger.html#acd49052e3a77760c4903ea2fba383a73">cosmic::CosmicClusterTagger::fMaxTickDrift</a></div><div class="ttdeci">int fMaxTickDrift</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00045">CosmicClusterTagger_module.cc:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,7 +290,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00039">39</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">41</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00045">45</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00041">41</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../d9/dbe/CosmicClusterTagger__module_8cc_source.html">CosmicClusterTagger_module.cc</a>.</p>
 
 </div>
 </div>

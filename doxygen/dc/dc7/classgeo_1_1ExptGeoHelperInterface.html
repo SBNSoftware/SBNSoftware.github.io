@@ -126,7 +126,7 @@ Private Member Functions</h2></td></tr>
 <p>It is expected that such requests will occur infrequently within a job. Calculations that occur frequently should be handled via interfaces that are passed back to the <a class="el" href="../../d8/df3/classgeo_1_1Geometry.html" title="The geometry of one entire detector, as served by art. ">Geometry</a> service.</p>
 <dl class="section note"><dt>Note</dt><dd>The public interface for this service cannot be overriden. The experiment-specific sub-classes should implement only the private methods without promoting their visibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00061">61</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00054">54</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a19a378457cb4396ebf0abc77b2b89345"></a>
 <div class="memitem">
@@ -138,7 +138,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00064">64</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00057">57</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
 
 </div>
 </div>
@@ -212,10 +212,10 @@ Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a (shared) pointer to the channel mapping algorithm</dd></dl>
 <p>This method creates a new <a class="el" href="../../d0/dff/classgeo_1_1ChannelMapAlg.html" title="Interface for a class providing readout channel mapping to geometry. ">ChannelMapAlg</a> according to the geometry and specified configuration. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00079">79</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(sortingParameters, detectorName);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00072">72</a> of file <a class="el" href="../../d3/d16/ExptGeoHelperInterface_8h_source.html">ExptGeoHelperInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(sortingParameters, detectorName);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a15786f9ce9332e11052a7f73652e5bed"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">geo::ExptGeoHelperInterface::doConfigureChannelMapAlg</a></div><div class="ttdeci">virtual ChannelMapAlgPtr_t doConfigureChannelMapAlg(fhicl::ParameterSet const &amp;sortingParameters, std::string const &amp;detectorName) const =0</div></div>
 </div><!-- fragment -->
 </div>

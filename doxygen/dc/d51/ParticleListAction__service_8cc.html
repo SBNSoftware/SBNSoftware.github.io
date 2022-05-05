@@ -74,73 +74,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ParticleListAction_service.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d77/ParticleListAction__service_8h_source.html">larg4/pluginActions/ParticleListAction_service.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/da4/GeneratedParticleInfo_8h_source.html">lardataobj/Simulation/GeneratedParticleInfo.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d2/d94/sim_8h_source.html">lardataobj/Simulation/sim.h</a>&quot;</code><br/>
-<code>#include &quot;nug4/G4Base/PrimaryParticleInformation.h&quot;</code><br/>
-<code>#include &quot;nug4/ParticleNavigation/ParticleList.h&quot;</code><br/>
-<code>#include &quot;nusimdata/SimulationBase/MCGeneratorInfo.h&quot;</code><br/>
-<code>#include &quot;nusimdata/SimulationBase/MCTruth.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Handle.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Services/Registry/ServiceDefinitionMacros.h&quot;</code><br/>
-<code>#include &quot;canvas/Persistency/Common/Ptr.h&quot;</code><br/>
-<code>#include &quot;canvas/Utilities/Exception.h&quot;</code><br/>
-<code>#include &quot;cetlib_except/exception.h&quot;</code><br/>
-<code>#include &quot;Geant4/G4DynamicParticle.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4Event.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4ParticleDefinition.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4PrimaryParticle.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4Step.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4StepPoint.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4String.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4ThreeVector.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4Track.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4VProcess.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4VUserPrimaryParticleInformation.hh&quot;</code><br/>
-<code>#include &quot;TLorentzVector.h&quot;</code><br/>
-<code>#include &quot;range/v3/view.hpp&quot;</code><br/>
-<code>#include &lt;algorithm&gt;</code><br/>
-<code>#include &lt;cassert&gt;</code><br/>
-<code>#include &lt;string&gt;</code><br/>
 </div>
 <p><a href="../../dc/d51/ParticleListAction__service_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d71/classlarg4_1_1UpdateDaughterInformation.html">larg4::UpdateDaughterInformation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:d7/d6f/namespacelarg4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html">larg4</a></td></tr>
-<tr class="memdesc:d7/d6f/namespacelarg4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geant4 interface. <br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a3688e7a8c85c6aee4708a08cdb11c7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a3688e7a8c85c6aee4708a08cdb11c7dc">larg4::fKeepEMShowerDaughters</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;keepEMShowerDaughters&quot;, true))</td></tr>
-<tr class="separator:a3688e7a8c85c6aee4708a08cdb11c7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4d3c9101652691b43d5137906c5173"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#afa4d3c9101652691b43d5137906c5173">larg4::fNotStoredPhysics</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; std::vector&lt; std::string &gt;&gt;(&quot;NotStoredPhysics&quot;,{}))</td></tr>
-<tr class="separator:afa4d3c9101652691b43d5137906c5173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b01617121ba0aa1c9513c76829eeb0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a1b01617121ba0aa1c9513c76829eeb0b">larg4::fkeepOnlyPrimaryFullTraj</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;keepOnlyPrimaryFullTrajectories&quot;, false))</td></tr>
-<tr class="separator:a1b01617121ba0aa1c9513c76829eeb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6ce3f9836e56b8a5680e677ec82788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a5b6ce3f9836e56b8a5680e677ec82788">larg4::fSparsifyTrajectories</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;SparsifyTrajectories&quot;, false))</td></tr>
-<tr class="separator:a5b6ce3f9836e56b8a5680e677ec82788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8e271d091bb20355f9fd28aff46211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#a8e8e271d091bb20355f9fd28aff46211">larg4::fSparsifyMargin</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; double &gt;(&quot;SparsifyMargin&quot;, 0.015))</td></tr>
-<tr class="separator:a8e8e271d091bb20355f9fd28aff46211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3cf1e8af03d431eadc0ba286362d40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#ada3cf1e8af03d431eadc0ba286362d40">larg4::fKeepTransportation</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;KeepTransportation&quot;, false))</td></tr>
-<tr class="separator:ada3cf1e8af03d431eadc0ba286362d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5e9a53deb1b9f087958ac2868583618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html#ad5e9a53deb1b9f087958ac2868583618">larg4::fKeepSecondToLast</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;KeepSecondToLast&quot;, false))</td></tr>
-<tr class="separator:ad5e9a53deb1b9f087958ac2868583618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

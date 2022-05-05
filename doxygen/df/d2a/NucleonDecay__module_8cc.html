@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Run.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
 <code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;Framework/Algorithm/AlgFactory.h&quot;</code><br/>
@@ -167,10 +168,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00095">95</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;             {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NucleonDecay&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the nucleon decay generator&quot;</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00096">96</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;             {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NucleonDecay&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the nucleon decay generator&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,10 +199,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00101">101</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                        {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    dpdg = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;DecayedNucleon&quot;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                        {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    dpdg = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;DecayedNucleon&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -247,7 +248,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -262,9 +263,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    dpdg = genie::utils::nucleon_decay::DecayedNucleonPdgCode(<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a>)</div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ac2a349dc924dd5aaca363d8cc43e34b5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a></div><div class="ttdeci">gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00123">NeutronOsc_module.cc:123</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ac2a349dc924dd5aaca363d8cc43e34b5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a></div><div class="ttdeci">gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00124">NeutronOsc_module.cc:124</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -278,7 +279,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00098">98</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -292,7 +293,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -307,11 +308,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>genie::EventRecordVisitorI *<span class="keyword">&gt;</span> (<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a>-&gt;GetAlgorithm(<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a>,<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a>))</div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00112">NeutronOsc_module.cc:112</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00110">NeutronOsc_module.cc:110</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00116">NeutronOsc_module.cc:116</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00113">NeutronOsc_module.cc:113</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00111">NeutronOsc_module.cc:111</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">NeutronOsc_module.cc:117</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00094">94</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -325,7 +326,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00088">88</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -339,7 +340,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00111">111</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00112">112</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -353,7 +354,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00087">87</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00088">88</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>
@@ -369,7 +370,7 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">  genie::PDGLibrary::Instance()</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00084">84</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html#l00085">85</a> of file <a class="el" href="../../df/d2a/NucleonDecay__module_8cc_source.html">NucleonDecay_module.cc</a>.</p>
 
 </div>
 </div>

@@ -94,45 +94,47 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef RECOTOOL_CFLOATALGOBASE_H</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RECOTOOL_CFLOATALGOBASE_H</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d6c/CMAlgoBase_8h.html">CMAlgoBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d6c/CMAlgoBase_8h.html">larreco/RecoAlg/CMTool/CMToolBase/CMAlgoBase.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>util {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">class </span>GeometryUtilities;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>cmtool {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     \class CFloatAlgoBase</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     An abstract base class for mathcing algorithm. Having this base class helps</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     to have a better overall design of various merging for iterative approach.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     The algorithms are run through CMergeManager.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">   30</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">CFloatAlgoBase</a> : <span class="keyword">public</span> <a class="code" href="../../d5/dc2/classcmtool_1_1CMAlgoBase.html">CMAlgoBase</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">       Core function: given the CPAN input, return whether a cluster should be</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">       merged or not.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">   37</a></span>&#160;    <a class="code" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">Float</a>(<a class="code" href="../../dc/de6/classutil_1_1GeometryUtilities.html">util::GeometryUtilities</a> <span class="keyword">const</span>&amp;,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          <span class="keyword">const</span> std::vector&lt;const cluster::ClusterParamsAlg*&gt;&amp; clusters)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (clusters.size())</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>cmtool {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     \class CFloatAlgoBase</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     An abstract base class for mathcing algorithm. Having this base class helps</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     to have a better overall design of various merging for iterative approach.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     The algorithms are run through CMergeManager.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">   32</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">CFloatAlgoBase</a> : <span class="keyword">public</span> <a class="code" href="../../d5/dc2/classcmtool_1_1CMAlgoBase.html">CMAlgoBase</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">       Core function: given the CPAN input, return whether a cluster should be</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">       merged or not.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">   39</a></span>&#160;    <a class="code" href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">Float</a>(<a class="code" href="../../dc/de6/classutil_1_1GeometryUtilities.html">util::GeometryUtilities</a> <span class="keyword">const</span>&amp;,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          <span class="keyword">const</span> std::vector&lt;const cluster::ClusterParamsAlg*&gt;&amp; clusters)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">if</span> (clusters.size())</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="comment">/** @} */</span> <span class="comment">// end of doxygen group</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="comment">/** @} */</span> <span class="comment">// end of doxygen group</span></div>
 <div class="ttc" id="classutil_1_1GeometryUtilities_html"><div class="ttname"><a href="../../dc/de6/classutil_1_1GeometryUtilities.html">util::GeometryUtilities</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db5/GeometryUtilities_8h_source.html#l00035">GeometryUtilities.h:35</a></div></div>
-<div class="ttc" id="classcmtool_1_1CFloatAlgoBase_html_af31b9b94ed009ac6bdbb9d0cc84e422e"><div class="ttname"><a href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">cmtool::CFloatAlgoBase::Float</a></div><div class="ttdeci">virtual float Float(util::GeometryUtilities const &amp;, const std::vector&lt; const cluster::ClusterParamsAlg * &gt; &amp;clusters)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/CFloatAlgoBase_8h_source.html#l00037">CFloatAlgoBase.h:37</a></div></div>
+<div class="ttc" id="classcmtool_1_1CFloatAlgoBase_html_af31b9b94ed009ac6bdbb9d0cc84e422e"><div class="ttname"><a href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html#af31b9b94ed009ac6bdbb9d0cc84e422e">cmtool::CFloatAlgoBase::Float</a></div><div class="ttdeci">virtual float Float(util::GeometryUtilities const &amp;, const std::vector&lt; const cluster::ClusterParamsAlg * &gt; &amp;clusters)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/CFloatAlgoBase_8h_source.html#l00039">CFloatAlgoBase.h:39</a></div></div>
 <div class="ttc" id="CMAlgoBase_8h_html"><div class="ttname"><a href="../../d3/d6c/CMAlgoBase_8h.html">CMAlgoBase.h</a></div><div class="ttdoc">Class def header for a class CMAlgoBase. </div></div>
 <div class="ttc" id="classcmtool_1_1CMAlgoBase_html"><div class="ttname"><a href="../../d5/dc2/classcmtool_1_1CMAlgoBase.html">cmtool::CMAlgoBase</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6c/CMAlgoBase_8h_source.html#l00030">CMAlgoBase.h:30</a></div></div>
-<div class="ttc" id="classcmtool_1_1CFloatAlgoBase_html"><div class="ttname"><a href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">cmtool::CFloatAlgoBase</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/CFloatAlgoBase_8h_source.html#l00030">CFloatAlgoBase.h:30</a></div></div>
+<div class="ttc" id="classcmtool_1_1CFloatAlgoBase_html"><div class="ttname"><a href="../../d0/d3b/classcmtool_1_1CFloatAlgoBase.html">cmtool::CFloatAlgoBase</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d20/CFloatAlgoBase_8h_source.html#l00032">CFloatAlgoBase.h:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

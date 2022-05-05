@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4ea13ec7fa459271cb5a80d81a6d91ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c073349ccfdbca3a50e9416587840a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html">DumpChannelMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#aa3c073349ccfdbca3a50e9416587840a">operator=</a> (<a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html">DumpChannelMap</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:aa3c073349ccfdbca3a50e9416587840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a570627f5afdb69b28847884a361399"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a4a570627f5afdb69b28847884a361399">analyze</a> (art::Event const &amp;) override</td></tr>
-<tr class="separator:a4a570627f5afdb69b28847884a361399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9f1203171e22747b39c9ba9f398d9a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a3a9f1203171e22747b39c9ba9f398d9a">beginRun</a> (art::Run const &amp;) override</td></tr>
+<tr class="memitem:af97a4049009286d009dda940da4f83d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#af97a4049009286d009dda940da4f83d7">analyze</a> (art::Event const &amp;) override</td></tr>
+<tr class="separator:af97a4049009286d009dda940da4f83d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9f1203171e22747b39c9ba9f398d9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a3a9f1203171e22747b39c9ba9f398d9a">beginRun</a> (art::Run const &amp;) override</td></tr>
 <tr class="memdesc:a3a9f1203171e22747b39c9ba9f398d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives the dumping.  <a href="#a3a9f1203171e22747b39c9ba9f398d9a">More...</a><br/></td></tr>
 <tr class="separator:a3a9f1203171e22747b39c9ba9f398d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -161,7 +161,7 @@ Private Attributes</h2></td></tr>
 <li><em>OutputCategory</em> (string, default: <a class="el" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html" title="Prints on screen the current channel-wire and optical detector maps. ">DumpChannelMap</a>): output category used by the message facility to output information (INFO level) </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00052">52</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00058">58</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="adaf37d6138428eb4e16d85a05e69b6e6"></a>
 <div class="memitem">
@@ -173,7 +173,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00108">108</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -200,23 +200,23 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00246">246</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  : art::EDAnalyzer(config)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>  (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>())</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">DoChannelToWires</a>(config().ChannelToWires())</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">DoWireToChannel</a> (config().WireToChannel())</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">DoOpDetChannels</a> (config().OpDetChannels())</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>    (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>())</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>     (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>())</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;} <span class="comment">// geo::DumpChannelMap::DumpChannelMap()</span></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a239ef14dde6cf9465803cee71884baaf"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">geo::DumpChannelMap::DoOpDetChannels</a></div><div class="ttdeci">bool DoOpDetChannels</div><div class="ttdoc">Dump optical detector channel -&amp;gt; optical detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00124">DumpChannelMap_module.cc:124</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a2f284f509f253a96e7de2cb3d812b779"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">geo::DumpChannelMap::OutputCategory</a></div><div class="ttdeci">std::string OutputCategory</div><div class="ttdoc">Name of the category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00121">DumpChannelMap_module.cc:121</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a1510731a0533e63b1372d39fc44a6359"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">geo::DumpChannelMap::DoWireToChannel</a></div><div class="ttdeci">bool DoWireToChannel</div><div class="ttdoc">Dump wire -&amp;gt; channel mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00123">DumpChannelMap_module.cc:123</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_abf0048f13de4ea0b4fa9141fe8711595"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">geo::DumpChannelMap::DoChannelToWires</a></div><div class="ttdeci">bool DoChannelToWires</div><div class="ttdoc">Dump channel -&amp;gt; wires mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00122">DumpChannelMap_module.cc:122</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a382f14b8e00bfd0cc6aa6127d34b90eb"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">geo::DumpChannelMap::LastChannel</a></div><div class="ttdeci">raw::ChannelID_t LastChannel</div><div class="ttdoc">Last channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">DumpChannelMap_module.cc:127</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a518303ed05446e4369b464290ea31443"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">geo::DumpChannelMap::FirstChannel</a></div><div class="ttdeci">raw::ChannelID_t FirstChannel</div><div class="ttdoc">First channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00126">DumpChannelMap_module.cc:126</a></div></div>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00239">239</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  : art::EDAnalyzer(config)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>  (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>())</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">DoChannelToWires</a>(config().ChannelToWires())</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">DoWireToChannel</a> (config().WireToChannel())</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">DoOpDetChannels</a> (config().OpDetChannels())</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>    (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>())</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  , <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>     (config().<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>())</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;} <span class="comment">// geo::DumpChannelMap::DumpChannelMap()</span></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a239ef14dde6cf9465803cee71884baaf"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">geo::DumpChannelMap::DoOpDetChannels</a></div><div class="ttdeci">bool DoOpDetChannels</div><div class="ttdoc">Dump optical detector channel -&amp;gt; optical detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00130">DumpChannelMap_module.cc:130</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a2f284f509f253a96e7de2cb3d812b779"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">geo::DumpChannelMap::OutputCategory</a></div><div class="ttdeci">std::string OutputCategory</div><div class="ttdoc">Name of the category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">DumpChannelMap_module.cc:127</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a1510731a0533e63b1372d39fc44a6359"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">geo::DumpChannelMap::DoWireToChannel</a></div><div class="ttdeci">bool DoWireToChannel</div><div class="ttdoc">Dump wire -&amp;gt; channel mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00129">DumpChannelMap_module.cc:129</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_abf0048f13de4ea0b4fa9141fe8711595"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">geo::DumpChannelMap::DoChannelToWires</a></div><div class="ttdeci">bool DoChannelToWires</div><div class="ttdoc">Dump channel -&amp;gt; wires mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00128">DumpChannelMap_module.cc:128</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a382f14b8e00bfd0cc6aa6127d34b90eb"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">geo::DumpChannelMap::LastChannel</a></div><div class="ttdeci">raw::ChannelID_t LastChannel</div><div class="ttdoc">Last channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00133">DumpChannelMap_module.cc:133</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a518303ed05446e4369b464290ea31443"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">geo::DumpChannelMap::FirstChannel</a></div><div class="ttdeci">raw::ChannelID_t FirstChannel</div><div class="ttdoc">First channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00132">DumpChannelMap_module.cc:132</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,7 +269,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4a570627f5afdb69b28847884a361399"></a>
+<a class="anchor" id="af97a4049009286d009dda940da4f83d7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -277,7 +277,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void geo::DumpChannelMap::analyze </td>
+          <td class="memname">void geo::DumpChannelMap::analyze </td>
           <td>(</td>
           <td class="paramtype">art::Event const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -286,13 +286,13 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00114">114</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00120">120</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,46 +313,46 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Drives the dumping. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00259">259</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                              {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> <span class="keyword">const</span>&amp; geom = *(art::ServiceHandle&lt;geo::Geometry const&gt;());</div>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00252">252</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                              {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> <span class="keyword">const</span>&amp; geom = *(art::ServiceHandle&lt;geo::Geometry const&gt;());</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">DoChannelToWires</a>) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    DumpChannelToWires dumper;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    dumper.Setup(geom);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    dumper.SetLimits(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>, <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    dumper.Dump(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">DoChannelToWires</a>) {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    DumpChannelToWires dumper;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">DoWireToChannel</a>) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    DumpWireToChannel dumper;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    dumper.Setup(geom);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    dumper.SetLimits(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">FirstChannel</a>, <a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">LastChannel</a>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="comment">//  dumper.SetLimits(FirstChannel, LastChannel);</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    dumper.Dump(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">DoWireToChannel</a>) {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    DumpWireToChannel dumper;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">DoOpDetChannels</a>) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    DumpOpticalDetectorChannels dumper;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    dumper.Setup(geom);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">//  dumper.SetLimits(FirstChannel, LastChannel);</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    dumper.Dump(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">DoOpDetChannels</a>) {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    DumpOpticalDetectorChannels dumper;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    dumper.Setup(geom);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    dumper.Dump(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;} <span class="comment">// geo::DumpChannelMap::beginRun()</span></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a239ef14dde6cf9465803cee71884baaf"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">geo::DumpChannelMap::DoOpDetChannels</a></div><div class="ttdeci">bool DoOpDetChannels</div><div class="ttdoc">Dump optical detector channel -&amp;gt; optical detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00124">DumpChannelMap_module.cc:124</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a2f284f509f253a96e7de2cb3d812b779"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">geo::DumpChannelMap::OutputCategory</a></div><div class="ttdeci">std::string OutputCategory</div><div class="ttdoc">Name of the category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00121">DumpChannelMap_module.cc:121</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a1510731a0533e63b1372d39fc44a6359"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">geo::DumpChannelMap::DoWireToChannel</a></div><div class="ttdeci">bool DoWireToChannel</div><div class="ttdoc">Dump wire -&amp;gt; channel mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00123">DumpChannelMap_module.cc:123</a></div></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    dumper.Dump(<a class="code" href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">OutputCategory</a>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;} <span class="comment">// geo::DumpChannelMap::beginRun()</span></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a239ef14dde6cf9465803cee71884baaf"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a239ef14dde6cf9465803cee71884baaf">geo::DumpChannelMap::DoOpDetChannels</a></div><div class="ttdeci">bool DoOpDetChannels</div><div class="ttdoc">Dump optical detector channel -&amp;gt; optical detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00130">DumpChannelMap_module.cc:130</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a2f284f509f253a96e7de2cb3d812b779"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a2f284f509f253a96e7de2cb3d812b779">geo::DumpChannelMap::OutputCategory</a></div><div class="ttdeci">std::string OutputCategory</div><div class="ttdoc">Name of the category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">DumpChannelMap_module.cc:127</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a1510731a0533e63b1372d39fc44a6359"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a1510731a0533e63b1372d39fc44a6359">geo::DumpChannelMap::DoWireToChannel</a></div><div class="ttdeci">bool DoWireToChannel</div><div class="ttdoc">Dump wire -&amp;gt; channel mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00129">DumpChannelMap_module.cc:129</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a></div><div class="ttdoc">Description of geometry of one entire detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l01468">GeometryCore.h:1468</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_abf0048f13de4ea0b4fa9141fe8711595"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">geo::DumpChannelMap::DoChannelToWires</a></div><div class="ttdeci">bool DoChannelToWires</div><div class="ttdoc">Dump channel -&amp;gt; wires mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00122">DumpChannelMap_module.cc:122</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a382f14b8e00bfd0cc6aa6127d34b90eb"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">geo::DumpChannelMap::LastChannel</a></div><div class="ttdeci">raw::ChannelID_t LastChannel</div><div class="ttdoc">Last channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">DumpChannelMap_module.cc:127</a></div></div>
-<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a518303ed05446e4369b464290ea31443"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">geo::DumpChannelMap::FirstChannel</a></div><div class="ttdeci">raw::ChannelID_t FirstChannel</div><div class="ttdoc">First channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00126">DumpChannelMap_module.cc:126</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_abf0048f13de4ea0b4fa9141fe8711595"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#abf0048f13de4ea0b4fa9141fe8711595">geo::DumpChannelMap::DoChannelToWires</a></div><div class="ttdeci">bool DoChannelToWires</div><div class="ttdoc">Dump channel -&amp;gt; wires mapping. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00128">DumpChannelMap_module.cc:128</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a382f14b8e00bfd0cc6aa6127d34b90eb"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a382f14b8e00bfd0cc6aa6127d34b90eb">geo::DumpChannelMap::LastChannel</a></div><div class="ttdeci">raw::ChannelID_t LastChannel</div><div class="ttdoc">Last channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00133">DumpChannelMap_module.cc:133</a></div></div>
+<div class="ttc" id="classgeo_1_1DumpChannelMap_html_a518303ed05446e4369b464290ea31443"><div class="ttname"><a href="../../d8/d4d/classgeo_1_1DumpChannelMap.html#a518303ed05446e4369b464290ea31443">geo::DumpChannelMap::FirstChannel</a></div><div class="ttdeci">raw::ChannelID_t FirstChannel</div><div class="ttdoc">First channel to be printed. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00132">DumpChannelMap_module.cc:132</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,7 +425,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dump channel -&gt; wires mapping. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00122">122</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00128">128</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dump optical detector channel -&gt; optical detector. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00124">124</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00130">130</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Private Attributes</h2></td></tr>
 
 <p>Dump wire -&gt; channel mapping. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00123">123</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00129">129</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Private Attributes</h2></td></tr>
 
 <p>First channel to be printed. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00126">126</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00132">132</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ Private Attributes</h2></td></tr>
 
 <p>Last channel to be printed. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">127</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00133">133</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>
@@ -545,7 +545,7 @@ Private Attributes</h2></td></tr>
 
 <p>Name of the category for output. </p>
 
-<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00121">121</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html#l00127">127</a> of file <a class="el" href="../../db/d22/DumpChannelMap__module_8cc_source.html">DumpChannelMap_module.cc</a>.</p>
 
 </div>
 </div>

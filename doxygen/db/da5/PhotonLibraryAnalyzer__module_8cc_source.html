@@ -85,23 +85,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Ben Jones, MIT, April 2012</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//   bjpjones@mit.edu</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/fwd.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h.html">larsim/PhotonPropagation/PhotonVisibilityService.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d55/larsim_2larsim_2Simulation_2PhotonVoxels_8h.html">larsim/Simulation/PhotonVoxels.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/da9/DumpUtils_8h.html">larcorealg/CoreUtils/DumpUtils.h</a>&quot;</span> <span class="comment">// lar::dump::vector3D()</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;art_root_io/TFileService.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/EDAnalyzer.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/ModuleMacros.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h.html">larsim/PhotonPropagation/PhotonVisibilityService.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d55/larsim_2larsim_2Simulation_2PhotonVoxels_8h.html">larsim/Simulation/PhotonVoxels.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/da9/DumpUtils_8h.html">larcorealg/CoreUtils/DumpUtils.h</a>&quot;</span> <span class="comment">// lar::dump::vector3D()</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;TH1D.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;TH2D.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;TH3D.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/EDAnalyzer.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/ModuleMacros.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;TH1D.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;TH2D.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;TH3D.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>phot {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -357,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classsim_1_1PhotonVoxelDef_html_ac1ff499a3bb6f6b47ae3d15b8eeb85d2"><div class="ttname"><a href="../../da/d6a/classsim_1_1PhotonVoxelDef.html#ac1ff499a3bb6f6b47ae3d15b8eeb85d2">sim::PhotonVoxelDef::GetVoxelCoords</a></div><div class="ttdeci">std::array&lt; int, 3U &gt; GetVoxelCoords(int ID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d3a/larsim_2larsim_2Simulation_2PhotonVoxels_8cxx_source.html#l00168">larsim/larsim/Simulation/PhotonVoxels.cxx:168</a></div></div>
 <div class="ttc" id="classphot_1_1PhotonLibraryAnalyzer_html_a81b9eb49d20afd9fa5d91d0100a8e4d2"><div class="ttname"><a href="../../d5/dc3/classphot_1_1PhotonLibraryAnalyzer.html#a81b9eb49d20afd9fa5d91d0100a8e4d2">phot::PhotonLibraryAnalyzer::fOpDet</a></div><div class="ttdeci">int fOpDet</div><div class="ttdef"><b>Definition:</b> <a href="../../db/da5/PhotonLibraryAnalyzer__module_8cc_source.html#l00043">PhotonLibraryAnalyzer_module.cc:43</a></div></div>
 <div class="ttc" id="NuVertexChargeTree__module_8cc_html_aa8ae0901ab0cec47d6c9bf9c22af764f"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#aa8ae0901ab0cec47d6c9bf9c22af764f">tfs</a></div><div class="ttdeci">art::ServiceHandle&lt; art::TFileService &gt; tfs</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00253">NuVertexChargeTree_module.cc:253</a></div></div>
-<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00007">DataStructs.cxx:7</a></div></div>
+<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 <div class="ttc" id="namespacedcel2d_html_a73786dc417fa3b61065033eb97a465a4"><div class="ttname"><a href="../../db/d08/namespacedcel2d.html#a73786dc417fa3b61065033eb97a465a4">dcel2d::Coords</a></div><div class="ttdeci">Eigen::Vector3f Coords</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d84/DCEL_8h_source.html#l00046">DCEL.h:46</a></div></div>
 <div class="ttc" id="larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h_html"><div class="ttname"><a href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h.html">PhotonVisibilityService.h</a></div></div>
 <div class="ttc" id="Geometry_8h_html"><div class="ttname"><a href="../../d3/d8b/Geometry_8h.html">Geometry.h</a></div><div class="ttdoc">art framework interface to geometry description </div></div>

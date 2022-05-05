@@ -143,7 +143,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00039">39</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00040">40</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ad4c47b49a23e01f25986db6e8a9320c6"></a>
 <div class="memitem">
@@ -155,7 +155,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00045">45</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00072">72</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00073">73</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -210,39 +210,39 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  : EDProducer{ <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get_PSet() },</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>(<span class="keyword">new</span> marley::Event), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a>(0), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a>(0), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a>(0)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">// Configure the module (including MARLEY itself) using the FHiCL parameters</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  this-&gt;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a1bc5d89e24839e6f4d4a09dc0fd8e03a">reconfigure</a>( <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> );</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// Create a ROOT TTree using the TFileService that will store the MARLEY</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// event objects (useful for debugging purposes)</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  art::ServiceHandle&lt;art::TFileService const&gt; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#aa8ae0901ab0cec47d6c9bf9c22af764f">tfs</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a> = tfs-&gt;make&lt;TTree&gt;(<span class="stringliteral">&quot;MARLEY_event_tree&quot;</span>,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="stringliteral">&quot;Neutrino events generated by MARLEY&quot;</span>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;event&quot;</span>, <span class="stringliteral">&quot;marley::Event&quot;</span>, <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>.get());</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Add branches that give the art::Event run, subrun, and event numbers for</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// easy match-ups between the MARLEY and art TTrees. All three are recorded</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// as 32-bit unsigned integers.</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;run_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a>, <span class="stringliteral">&quot;run_number/i&quot;</span>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;subrun_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a>, <span class="stringliteral">&quot;subrun_number/i&quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;event_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a>, <span class="stringliteral">&quot;event_number/i&quot;</span>);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  produces&lt; std::vector&lt;simb::MCTruth&gt;   &gt;();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../d4/d4d/namespaceevgen.html#a31fbf4ad9d853a87fefed5bf11c59aa6">produces&lt; sumdata::RunData, art::InRun &gt;</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a1bc5d89e24839e6f4d4a09dc0fd8e03a"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a1bc5d89e24839e6f4d4a09dc0fd8e03a">evgen::MarleyGen::reconfigure</a></div><div class="ttdeci">virtual void reconfigure(const Parameters &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00165">MARLEYGen_module.cc:165</a></div></div>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  : EDProducer{ <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get_PSet() },</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>(<span class="keyword">new</span> marley::Event), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a>(0), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a>(0), <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a>(0)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Configure the module (including MARLEY itself) using the FHiCL parameters</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  this-&gt;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a1bc5d89e24839e6f4d4a09dc0fd8e03a">reconfigure</a>( <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Create a ROOT TTree using the TFileService that will store the MARLEY</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// event objects (useful for debugging purposes)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  art::ServiceHandle&lt;art::TFileService const&gt; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#aa8ae0901ab0cec47d6c9bf9c22af764f">tfs</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a> = tfs-&gt;make&lt;TTree&gt;(<span class="stringliteral">&quot;MARLEY_event_tree&quot;</span>,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="stringliteral">&quot;Neutrino events generated by MARLEY&quot;</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;event&quot;</span>, <span class="stringliteral">&quot;marley::Event&quot;</span>, <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>.get());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// Add branches that give the art::Event run, subrun, and event numbers for</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// easy match-ups between the MARLEY and art TTrees. All three are recorded</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">// as 32-bit unsigned integers.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;run_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a>, <span class="stringliteral">&quot;run_number/i&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;subrun_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a>, <span class="stringliteral">&quot;subrun_number/i&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Branch(<span class="stringliteral">&quot;event_number&quot;</span>, &amp;<a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a>, <span class="stringliteral">&quot;event_number/i&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  produces&lt; std::vector&lt;simb::MCTruth&gt;   &gt;();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="../../d4/d4d/namespaceevgen.html#a31fbf4ad9d853a87fefed5bf11c59aa6">produces&lt; sumdata::RunData, art::InRun &gt;</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a1bc5d89e24839e6f4d4a09dc0fd8e03a"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a1bc5d89e24839e6f4d4a09dc0fd8e03a">evgen::MarleyGen::reconfigure</a></div><div class="ttdeci">virtual void reconfigure(const Parameters &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00166">MARLEYGen_module.cc:166</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="namespaceevgen_html_a31fbf4ad9d853a87fefed5bf11c59aa6"><div class="ttname"><a href="../../d4/d4d/namespaceevgen.html#a31fbf4ad9d853a87fefed5bf11c59aa6">evgen::produces&lt; sumdata::RunData, art::InRun &gt;</a></div><div class="ttdeci">produces&lt; sumdata::RunData, art::InRun &gt;()</div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a315a0f036d68500a77ea3c63c41f5f1b"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">evgen::MarleyGen::fRunNumber</a></div><div class="ttdeci">uint_fast32_t fRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00098">MARLEYGen_module.cc:98</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a5f4f8295e5969aacbccb7201123c39a4"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">evgen::MarleyGen::fSubRunNumber</a></div><div class="ttdeci">uint_fast32_t fSubRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">MARLEYGen_module.cc:99</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ae9fe97ad315c425e393716ef2dcae84d"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">evgen::MarleyGen::fEventTree</a></div><div class="ttdeci">TTree * fEventTree</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00095">MARLEYGen_module.cc:95</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a35a0531c406d6cb650281880dc739044"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">evgen::MarleyGen::fEventNumber</a></div><div class="ttdeci">uint_fast32_t fEventNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">MARLEYGen_module.cc:100</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a315a0f036d68500a77ea3c63c41f5f1b"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">evgen::MarleyGen::fRunNumber</a></div><div class="ttdeci">uint_fast32_t fRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">MARLEYGen_module.cc:99</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a5f4f8295e5969aacbccb7201123c39a4"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">evgen::MarleyGen::fSubRunNumber</a></div><div class="ttdeci">uint_fast32_t fSubRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">MARLEYGen_module.cc:100</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ae9fe97ad315c425e393716ef2dcae84d"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">evgen::MarleyGen::fEventTree</a></div><div class="ttdeci">TTree * fEventTree</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00096">MARLEYGen_module.cc:96</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a35a0531c406d6cb650281880dc739044"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">evgen::MarleyGen::fEventNumber</a></div><div class="ttdeci">uint_fast32_t fEventNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00101">MARLEYGen_module.cc:101</a></div></div>
 <div class="ttc" id="NuVertexChargeTree__module_8cc_html_aa8ae0901ab0cec47d6c9bf9c22af764f"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#aa8ae0901ab0cec47d6c9bf9c22af764f">tfs</a></div><div class="ttdeci">art::ServiceHandle&lt; art::TFileService &gt; tfs</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00253">NuVertexChargeTree_module.cc:253</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_af1f8fb75897eb4fccd0483e042e38aaf"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">evgen::MarleyGen::fEvent</a></div><div class="ttdeci">std::unique_ptr&lt; marley::Event &gt; fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00092">MARLEYGen_module.cc:92</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_af1f8fb75897eb4fccd0483e042e38aaf"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">evgen::MarleyGen::fEvent</a></div><div class="ttdeci">std::unique_ptr&lt; marley::Event &gt; fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00093">MARLEYGen_module.cc:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,11 +269,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00130">130</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  run.put(std::make_unique&lt;sumdata::RunData&gt;(geo-&gt;DetectorName()));</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00131">131</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  run.put(std::make_unique&lt;sumdata::RunData&gt;(geo-&gt;DetectorName()));</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -299,40 +299,40 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00137">137</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="comment">// Get the run, subrun, and event numbers from the current art::Event</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.event();</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  std::unique_ptr&lt; std::vector&lt;simb::MCTruth&gt; &gt;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    truthcol(<span class="keyword">new</span> std::vector&lt;simb::MCTruth&gt;);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">// Get the primary vertex location for this event</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  TLorentzVector vertex_pos = <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">fVertexSampler</a>-&gt;sample_vertex_pos(*geo);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="comment">// Create the MCTruth object, and retrieve the marley::Event object</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// that was generated as it was created</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  simb::MCTruth truth = <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">fMarleyHelper</a>-&gt;create_MCTruth(vertex_pos,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>.get());</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="comment">// Write the marley::Event object to the event tree</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Fill();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  truthcol-&gt;push_back(truth);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(truthcol));</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ae64bc9e00d260fd8a713ea3e595ffccb"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">evgen::MarleyGen::fMarleyHelper</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::MARLEYHelper &gt; fMarleyHelper</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00085">MARLEYGen_module.cc:85</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a315a0f036d68500a77ea3c63c41f5f1b"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">evgen::MarleyGen::fRunNumber</a></div><div class="ttdeci">uint_fast32_t fRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00098">MARLEYGen_module.cc:98</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a5f4f8295e5969aacbccb7201123c39a4"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">evgen::MarleyGen::fSubRunNumber</a></div><div class="ttdeci">uint_fast32_t fSubRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">MARLEYGen_module.cc:99</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ab20a6178270f560223b53ef85e74e878"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">evgen::MarleyGen::fVertexSampler</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::ActiveVolumeVertexSampler &gt; fVertexSampler</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00089">MARLEYGen_module.cc:89</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ae9fe97ad315c425e393716ef2dcae84d"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">evgen::MarleyGen::fEventTree</a></div><div class="ttdeci">TTree * fEventTree</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00095">MARLEYGen_module.cc:95</a></div></div>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00138">138</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="comment">// Get the run, subrun, and event numbers from the current art::Event</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">fRunNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">fSubRunNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">fEventNumber</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.event();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::unique_ptr&lt; std::vector&lt;simb::MCTruth&gt; &gt;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    truthcol(<span class="keyword">new</span> std::vector&lt;simb::MCTruth&gt;);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="comment">// Get the primary vertex location for this event</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  TLorentzVector vertex_pos = <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">fVertexSampler</a>-&gt;sample_vertex_pos(*geo);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// Create the MCTruth object, and retrieve the marley::Event object</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="comment">// that was generated as it was created</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  simb::MCTruth truth = <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">fMarleyHelper</a>-&gt;create_MCTruth(vertex_pos,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">fEvent</a>.get());</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="comment">// Write the marley::Event object to the event tree</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">fEventTree</a>-&gt;Fill();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  truthcol-&gt;push_back(truth);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(truthcol));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ae64bc9e00d260fd8a713ea3e595ffccb"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">evgen::MarleyGen::fMarleyHelper</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::MARLEYHelper &gt; fMarleyHelper</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00086">MARLEYGen_module.cc:86</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a315a0f036d68500a77ea3c63c41f5f1b"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a315a0f036d68500a77ea3c63c41f5f1b">evgen::MarleyGen::fRunNumber</a></div><div class="ttdeci">uint_fast32_t fRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">MARLEYGen_module.cc:99</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a5f4f8295e5969aacbccb7201123c39a4"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a5f4f8295e5969aacbccb7201123c39a4">evgen::MarleyGen::fSubRunNumber</a></div><div class="ttdeci">uint_fast32_t fSubRunNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">MARLEYGen_module.cc:100</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ab20a6178270f560223b53ef85e74e878"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">evgen::MarleyGen::fVertexSampler</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::ActiveVolumeVertexSampler &gt; fVertexSampler</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00090">MARLEYGen_module.cc:90</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ae9fe97ad315c425e393716ef2dcae84d"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae9fe97ad315c425e393716ef2dcae84d">evgen::MarleyGen::fEventTree</a></div><div class="ttdeci">TTree * fEventTree</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00096">MARLEYGen_module.cc:96</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_a35a0531c406d6cb650281880dc739044"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">evgen::MarleyGen::fEventNumber</a></div><div class="ttdeci">uint_fast32_t fEventNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">MARLEYGen_module.cc:100</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_af1f8fb75897eb4fccd0483e042e38aaf"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">evgen::MarleyGen::fEvent</a></div><div class="ttdeci">std::unique_ptr&lt; marley::Event &gt; fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00092">MARLEYGen_module.cc:92</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_a35a0531c406d6cb650281880dc739044"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#a35a0531c406d6cb650281880dc739044">evgen::MarleyGen::fEventNumber</a></div><div class="ttdeci">uint_fast32_t fEventNumber</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00101">MARLEYGen_module.cc:101</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_af1f8fb75897eb4fccd0483e042e38aaf"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#af1f8fb75897eb4fccd0483e042e38aaf">evgen::MarleyGen::fEvent</a></div><div class="ttdeci">std::unique_ptr&lt; marley::Event &gt; fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00093">MARLEYGen_module.cc:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,25 +358,25 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00165">165</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; seed_service = art::ServiceHandle&lt;rndm::NuRandomService&gt;();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; geom_service = art::ServiceHandle&lt;geo::Geometry const&gt;();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// Create a new evgen::ActiveVolumeVertexSampler object based on the current</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// configuration</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">fVertexSampler</a> = std::make_unique&lt;evgen::ActiveVolumeVertexSampler&gt;(</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>().vertex_, *seed_service, *geom_service, <span class="stringliteral">&quot;MARLEY_Vertex_Sampler&quot;</span>);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// Create a new marley::Generator object based on the current configuration</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  fhicl::ParameterSet marley_pset = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get_PSet().get&lt; fhicl::ParameterSet &gt;(</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="stringliteral">&quot;marley_parameters&quot;</span> );</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">fMarleyHelper</a> = std::make_unique&lt;MARLEYHelper&gt;( marley_pset,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    *seed_service, <span class="stringliteral">&quot;MARLEY&quot;</span> );</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00166">166</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; seed_service = art::ServiceHandle&lt;rndm::NuRandomService&gt;();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; geom_service = art::ServiceHandle&lt;geo::Geometry const&gt;();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// Create a new evgen::ActiveVolumeVertexSampler object based on the current</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="comment">// configuration</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">fVertexSampler</a> = std::make_unique&lt;evgen::ActiveVolumeVertexSampler&gt;(</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>().vertex_, *seed_service, *geom_service, <span class="stringliteral">&quot;MARLEY_Vertex_Sampler&quot;</span>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// Create a new marley::Generator object based on the current configuration</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  fhicl::ParameterSet marley_pset = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get_PSet().get&lt; fhicl::ParameterSet &gt;(</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="stringliteral">&quot;marley_parameters&quot;</span> );</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">fMarleyHelper</a> = std::make_unique&lt;MARLEYHelper&gt;( marley_pset,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    *seed_service, <span class="stringliteral">&quot;MARLEY&quot;</span> );</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ae64bc9e00d260fd8a713ea3e595ffccb"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">evgen::MarleyGen::fMarleyHelper</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::MARLEYHelper &gt; fMarleyHelper</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00085">MARLEYGen_module.cc:85</a></div></div>
-<div class="ttc" id="classevgen_1_1MarleyGen_html_ab20a6178270f560223b53ef85e74e878"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">evgen::MarleyGen::fVertexSampler</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::ActiveVolumeVertexSampler &gt; fVertexSampler</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00089">MARLEYGen_module.cc:89</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ae64bc9e00d260fd8a713ea3e595ffccb"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ae64bc9e00d260fd8a713ea3e595ffccb">evgen::MarleyGen::fMarleyHelper</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::MARLEYHelper &gt; fMarleyHelper</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00086">MARLEYGen_module.cc:86</a></div></div>
+<div class="ttc" id="classevgen_1_1MarleyGen_html_ab20a6178270f560223b53ef85e74e878"><div class="ttname"><a href="../../d7/dbf/classevgen_1_1MarleyGen.html#ab20a6178270f560223b53ef85e74e878">evgen::MarleyGen::fVertexSampler</a></div><div class="ttdeci">std::unique_ptr&lt; evgen::ActiveVolumeVertexSampler &gt; fVertexSampler</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d04/MARLEYGen__module_8cc_source.html#l00090">MARLEYGen_module.cc:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -399,7 +399,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00101">101</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00095">95</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00096">96</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00085">85</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00086">86</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -487,7 +487,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00098">98</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>
@@ -531,7 +531,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html#l00090">90</a> of file <a class="el" href="../../db/d04/MARLEYGen__module_8cc_source.html">MARLEYGen_module.cc</a>.</p>
 
 </div>
 </div>

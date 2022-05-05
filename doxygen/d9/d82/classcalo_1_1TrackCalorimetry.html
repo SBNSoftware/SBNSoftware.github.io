@@ -122,7 +122,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00039">39</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00040">40</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a54c759948f53f3a3a25350939a13555f"></a>
 <div class="memitem">
@@ -146,22 +146,22 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00061">61</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackModuleLabel&quot;</span>))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>))</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">fTrackCaloAlg</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;TrackCalorimetryAlg&quot;</span>))</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackModuleLabel&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  produces&lt;std::vector&lt;anab::Calorimetry&gt;&gt;();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  produces&lt;art::Assns&lt;recob::Track, anab::Calorimetry&gt;&gt;();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae2332d1a1ee4b71512d7d3f3659741e5"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">calo::TrackCalorimetry::fHitModuleLabel</a></div><div class="ttdeci">std::string fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">TrackCalorimetry_module.cc:56</a></div></div>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00062">62</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackModuleLabel&quot;</span>))</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>))</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  , <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">fTrackCaloAlg</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;TrackCalorimetryAlg&quot;</span>))</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackModuleLabel&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  produces&lt;std::vector&lt;anab::Calorimetry&gt;&gt;();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  produces&lt;art::Assns&lt;recob::Track, anab::Calorimetry&gt;&gt;();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae2332d1a1ee4b71512d7d3f3659741e5"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">calo::TrackCalorimetry::fHitModuleLabel</a></div><div class="ttdeci">std::string fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00057">TrackCalorimetry_module.cc:57</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae1b2cdfe4aa33c0d99364dfbbfedf41e"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">calo::TrackCalorimetry::fTrackCaloAlg</a></div><div class="ttdeci">TrackCalorimetryAlg fTrackCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00058">TrackCalorimetry_module.cc:58</a></div></div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_a1484acbe641442d92ad1f988f57f2cad"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">calo::TrackCalorimetry::fTrackModuleLabel</a></div><div class="ttdeci">std::string fTrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00055">TrackCalorimetry_module.cc:55</a></div></div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae1b2cdfe4aa33c0d99364dfbbfedf41e"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">calo::TrackCalorimetry::fTrackCaloAlg</a></div><div class="ttdeci">TrackCalorimetryAlg fTrackCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00059">TrackCalorimetry_module.cc:59</a></div></div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_a1484acbe641442d92ad1f988f57f2cad"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">calo::TrackCalorimetry::fTrackModuleLabel</a></div><div class="ttdeci">std::string fTrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">TrackCalorimetry_module.cc:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,65 +284,65 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00075">75</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  art::Handle&lt;std::vector&lt;recob::Track&gt;&gt; trackHandle;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>, trackHandle);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  std::vector&lt;recob::Track&gt; <span class="keyword">const</span>&amp; trackVector(*trackHandle);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Get Hits from event.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a>, hitHandle);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::vector&lt;recob::Hit&gt; <span class="keyword">const</span>&amp; hitVector(*hitHandle);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Get track&lt;--&gt;hit associations</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  art::Handle&lt;art::Assns&lt;recob::Track, recob::Hit&gt;&gt; assnTrackHitHandle;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>, assnTrackHitHandle);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::vector&lt;std::vector&lt;size_t&gt;&gt; hit_indices_per_track =</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#aaad77dda9b06a4598bea92f328bc7e76">util::GetAssociatedVectorManyI</a>(assnTrackHitHandle, trackHandle);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// Make the container for the calo product to put onto the event.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::unique_ptr&lt;std::vector&lt;anab::Calorimetry&gt;&gt; caloPtr(<span class="keyword">new</span> std::vector&lt;anab::Calorimetry&gt;);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::vector&lt;anab::Calorimetry&gt;&amp; caloVector(*caloPtr);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">// Make a container for the track&lt;--&gt;calo associations.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// One entry per track, with entry equal to index in calorimetry collection of</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// associated object.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  std::vector&lt;size_t&gt; assnTrackCaloVector;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Track, anab::Calorimetry&gt;&gt; assnTrackCaloPtr(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">new</span> art::Assns&lt;recob::Track, anab::Calorimetry&gt;);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> det_prop =</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, clock_data);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">fTrackCaloAlg</a>.<a class="code" href="../../d9/dc9/classcalo_1_1TrackCalorimetryAlg.html#a3c3f042922bb9727773d7bbd1354a326">ExtractCalorimetry</a>(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    clock_data,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    det_prop,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    trackVector,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    hitVector,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    hit_indices_per_track,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    caloVector,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    assnTrackCaloVector,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    lar::extractProviders&lt;geo::Geometry, detinfo::LArPropertiesService&gt;());</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">//Make the associations for ART</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> calo_iter = 0; calo_iter &lt; assnTrackCaloVector.size(); calo_iter++) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (assnTrackCaloVector[calo_iter] == std::numeric_limits&lt;size_t&gt;::max()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    art::Ptr&lt;recob::Track&gt; trk_ptr(trackHandle, assnTrackCaloVector[calo_iter]);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, caloVector, trk_ptr, *assnTrackCaloPtr, calo_iter);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(caloPtr));</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(assnTrackCaloPtr));</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae2332d1a1ee4b71512d7d3f3659741e5"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">calo::TrackCalorimetry::fHitModuleLabel</a></div><div class="ttdeci">std::string fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">TrackCalorimetry_module.cc:56</a></div></div>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00076">76</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  art::Handle&lt;std::vector&lt;recob::Track&gt;&gt; trackHandle;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>, trackHandle);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  std::vector&lt;recob::Track&gt; <span class="keyword">const</span>&amp; trackVector(*trackHandle);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Get Hits from event.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">fHitModuleLabel</a>, hitHandle);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::vector&lt;recob::Hit&gt; <span class="keyword">const</span>&amp; hitVector(*hitHandle);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Get track&lt;--&gt;hit associations</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  art::Handle&lt;art::Assns&lt;recob::Track, recob::Hit&gt;&gt; assnTrackHitHandle;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">fTrackModuleLabel</a>, assnTrackHitHandle);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  std::vector&lt;std::vector&lt;size_t&gt;&gt; hit_indices_per_track =</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#aaad77dda9b06a4598bea92f328bc7e76">util::GetAssociatedVectorManyI</a>(assnTrackHitHandle, trackHandle);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Make the container for the calo product to put onto the event.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::unique_ptr&lt;std::vector&lt;anab::Calorimetry&gt;&gt; caloPtr(<span class="keyword">new</span> std::vector&lt;anab::Calorimetry&gt;);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  std::vector&lt;anab::Calorimetry&gt;&amp; caloVector(*caloPtr);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Make a container for the track&lt;--&gt;calo associations.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// One entry per track, with entry equal to index in calorimetry collection of</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// associated object.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  std::vector&lt;size_t&gt; assnTrackCaloVector;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Track, anab::Calorimetry&gt;&gt; assnTrackCaloPtr(</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">new</span> art::Assns&lt;recob::Track, anab::Calorimetry&gt;);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> det_prop =</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, clock_data);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">fTrackCaloAlg</a>.<a class="code" href="../../d9/dc9/classcalo_1_1TrackCalorimetryAlg.html#a3c3f042922bb9727773d7bbd1354a326">ExtractCalorimetry</a>(</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    clock_data,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    det_prop,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    trackVector,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    hitVector,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    hit_indices_per_track,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    caloVector,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    assnTrackCaloVector,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    lar::extractProviders&lt;geo::Geometry, detinfo::LArPropertiesService&gt;());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">//Make the associations for ART</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> calo_iter = 0; calo_iter &lt; assnTrackCaloVector.size(); calo_iter++) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (assnTrackCaloVector[calo_iter] == std::numeric_limits&lt;size_t&gt;::max()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    art::Ptr&lt;recob::Track&gt; trk_ptr(trackHandle, assnTrackCaloVector[calo_iter]);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, caloVector, trk_ptr, *assnTrackCaloPtr, calo_iter);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(caloPtr));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(assnTrackCaloPtr));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae2332d1a1ee4b71512d7d3f3659741e5"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae2332d1a1ee4b71512d7d3f3659741e5">calo::TrackCalorimetry::fHitModuleLabel</a></div><div class="ttdeci">std::string fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00057">TrackCalorimetry_module.cc:57</a></div></div>
 <div class="ttc" id="classcalo_1_1TrackCalorimetryAlg_html_a3c3f042922bb9727773d7bbd1354a326"><div class="ttname"><a href="../../d9/dc9/classcalo_1_1TrackCalorimetryAlg.html#a3c3f042922bb9727773d7bbd1354a326">calo::TrackCalorimetryAlg::ExtractCalorimetry</a></div><div class="ttdeci">void ExtractCalorimetry(detinfo::DetectorClocksData const &amp;clock_data, detinfo::DetectorPropertiesData const &amp;det_prop, std::vector&lt; recob::Track &gt; const &amp;, std::vector&lt; recob::Hit &gt; const &amp;, std::vector&lt; std::vector&lt; size_t &gt;&gt; const &amp;, std::vector&lt; anab::Calorimetry &gt; &amp;, std::vector&lt; size_t &gt; &amp;, Providers_t providers)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dcd/TrackCalorimetryAlg_8cxx_source.html#l00029">TrackCalorimetryAlg.cxx:29</a></div></div>
-<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00581">lardata/lardata/Utilities/AssociationUtil.h:581</a></div></div>
-<div class="ttc" id="namespaceutil_html_aaad77dda9b06a4598bea92f328bc7e76"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#aaad77dda9b06a4598bea92f328bc7e76">util::GetAssociatedVectorManyI</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; size_t &gt; &gt; GetAssociatedVectorManyI(art::Handle&lt; art::Assns&lt; T, U &gt; &gt; h, art::Handle&lt; std::vector&lt; T &gt; &gt; index_p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00933">lardata/lardata/Utilities/AssociationUtil.h:933</a></div></div>
+<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00586">lardata/lardata/Utilities/AssociationUtil.h:586</a></div></div>
+<div class="ttc" id="namespaceutil_html_aaad77dda9b06a4598bea92f328bc7e76"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#aaad77dda9b06a4598bea92f328bc7e76">util::GetAssociatedVectorManyI</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; size_t &gt; &gt; GetAssociatedVectorManyI(art::Handle&lt; art::Assns&lt; T, U &gt; &gt; h, art::Handle&lt; std::vector&lt; T &gt; &gt; index_p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00938">lardata/lardata/Utilities/AssociationUtil.h:938</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae1b2cdfe4aa33c0d99364dfbbfedf41e"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">calo::TrackCalorimetry::fTrackCaloAlg</a></div><div class="ttdeci">TrackCalorimetryAlg fTrackCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00058">TrackCalorimetry_module.cc:58</a></div></div>
-<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_a1484acbe641442d92ad1f988f57f2cad"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">calo::TrackCalorimetry::fTrackModuleLabel</a></div><div class="ttdeci">std::string fTrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00055">TrackCalorimetry_module.cc:55</a></div></div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_ae1b2cdfe4aa33c0d99364dfbbfedf41e"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#ae1b2cdfe4aa33c0d99364dfbbfedf41e">calo::TrackCalorimetry::fTrackCaloAlg</a></div><div class="ttdeci">TrackCalorimetryAlg fTrackCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00059">TrackCalorimetry_module.cc:59</a></div></div>
+<div class="ttc" id="classcalo_1_1TrackCalorimetry_html_a1484acbe641442d92ad1f988f57f2cad"><div class="ttname"><a href="../../d9/d82/classcalo_1_1TrackCalorimetry.html#a1484acbe641442d92ad1f988f57f2cad">calo::TrackCalorimetry::fTrackModuleLabel</a></div><div class="ttdeci">std::string fTrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">TrackCalorimetry_module.cc:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,7 +365,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">56</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00057">57</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00058">58</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00059">59</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00055">55</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html#l00056">56</a> of file <a class="el" href="../../de/ddc/TrackCalorimetry__module_8cc_source.html">TrackCalorimetry_module.cc</a>.</p>
 
 </div>
 </div>
