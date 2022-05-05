@@ -88,38 +88,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef ScintTime_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ScintTime_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Handle.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;art/Utilities/ToolMacros.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>phot</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d92/classphot_1_1ScintTime.html">ScintTime</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ae7e70b9bfe6b28c0ef97236813801d37">ScintTime</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ad44796670c7a81e6dc1e8f562777fd63">~ScintTime</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">GenScintTime</a>(<span class="keywordtype">bool</span> is_fast, CLHEP::HepRandomEngine&amp; engine)      = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">   29</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">GetScintTime</a>()<span class="keyword"> const        </span>{<span class="keywordflow">return</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a>;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">   32</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>CLHEP {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">class </span>HepRandomEngine;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>phot</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d92/classphot_1_1ScintTime.html">ScintTime</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ad44796670c7a81e6dc1e8f562777fd63">~ScintTime</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">GenScintTime</a>(<span class="keywordtype">bool</span> is_fast, CLHEP::HepRandomEngine&amp; engine)      = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">   23</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">GetScintTime</a>()<span class="keyword"> const        </span>{<span class="keywordflow">return</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a>;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="comment">// FIXME: This should be private, with a protected setter.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="comment">//        2022-04-10 CHG</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">   28</a></span>&#160;      <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> { 0.0 };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classphot_1_1ScintTime_html_af6efcef2390bc1cc60748f795e7c55fc"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">phot::ScintTime::GenScintTime</a></div><div class="ttdeci">virtual void GenScintTime(bool is_fast, CLHEP::HepRandomEngine &amp;engine)=0</div></div>
-<div class="ttc" id="classphot_1_1ScintTime_html"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html">phot::ScintTime</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00022">ScintTime.h:22</a></div></div>
+<div class="ttc" id="classphot_1_1ScintTime_html"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html">phot::ScintTime</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00017">ScintTime.h:17</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTime_html_ad44796670c7a81e6dc1e8f562777fd63"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#ad44796670c7a81e6dc1e8f562777fd63">phot::ScintTime::~ScintTime</a></div><div class="ttdeci">virtual ~ScintTime()=default</div></div>
-<div class="ttc" id="classphot_1_1ScintTime_html_a2001bf1c8bd320e42952fee34c278fa1"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">phot::ScintTime::GetScintTime</a></div><div class="ttdeci">double GetScintTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00029">ScintTime.h:29</a></div></div>
-<div class="ttc" id="classphot_1_1ScintTime_html_ae7e70b9bfe6b28c0ef97236813801d37"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#ae7e70b9bfe6b28c0ef97236813801d37">phot::ScintTime::ScintTime</a></div><div class="ttdeci">ScintTime()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd0/ScintTime_8cxx_source.html#l00016">ScintTime.cxx:16</a></div></div>
-<div class="ttc" id="classphot_1_1ScintTime_html_ab65c30945e427832beca345165f51356"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">phot::ScintTime::timing</a></div><div class="ttdeci">double timing</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00032">ScintTime.h:32</a></div></div>
+<div class="ttc" id="classphot_1_1ScintTime_html_a2001bf1c8bd320e42952fee34c278fa1"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">phot::ScintTime::GetScintTime</a></div><div class="ttdeci">double GetScintTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00023">ScintTime.h:23</a></div></div>
+<div class="ttc" id="classphot_1_1ScintTime_html_ab65c30945e427832beca345165f51356"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">phot::ScintTime::timing</a></div><div class="ttdeci">double timing</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00028">ScintTime.h:28</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

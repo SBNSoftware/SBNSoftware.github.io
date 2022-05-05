@@ -125,7 +125,7 @@ Private Member Functions</h2></td></tr>
 <p>This is an interface to a service that virtualizes detector or experiment-specific knowledge that is required by the <a class="el" href="../../d8/df3/classgeo_1_1Geometry.html" title="The geometry of one entire detector, as served by art. ">Geometry</a> service. Experiments implement the private virtual functions within a concrete service provider class to perform the specified actions as appropriate for the particular experiment. It is expected that such requests will occur infrequently within a job. Calculations that occur frequently should be handled via interfaces that are passed back to the <a class="el" href="../../d8/df3/classgeo_1_1Geometry.html" title="The geometry of one entire detector, as served by art. ">Geometry</a> service.</p>
 <dl class="section note"><dt>Note</dt><dd>The public interface for this service cannot be overriden. The experiment-specific sub-classes should implement only the private methods without promoting their visibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00060">60</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00056">56</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="aabe6dcf8fc34168ccec066d987eba5dd"></a>
 <div class="memitem">
@@ -137,7 +137,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00063">63</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00059">59</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
 
 </div>
 </div>
@@ -201,10 +201,10 @@ Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a (shared) pointer to the channel mapping algorithm</dd></dl>
 <p>This method creates a new <a class="el" href="../../d0/dff/classgeo_1_1ChannelMapAlg.html" title="Interface for a class providing readout channel mapping to geometry. ">ChannelMapAlg</a> according to the geometry and specified configuration, then it configures the geometry itself according to the channel map (usually, it resorts the data). </p>
 
-<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00095">95</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/d64/classgeo_1_1AuxDetExptGeoHelperInterface.html#a6d85273c73137b943a748d2f4889df4b">doConfigureAuxDetChannelMapAlg</a>(sortingParameters);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html#l00091">91</a> of file <a class="el" href="../../d7/d85/AuxDetExptGeoHelperInterface_8h_source.html">AuxDetExptGeoHelperInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/d64/classgeo_1_1AuxDetExptGeoHelperInterface.html#a6d85273c73137b943a748d2f4889df4b">doConfigureAuxDetChannelMapAlg</a>(sortingParameters);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="ttc" id="classgeo_1_1AuxDetExptGeoHelperInterface_html_a6d85273c73137b943a748d2f4889df4b"><div class="ttname"><a href="../../d3/d64/classgeo_1_1AuxDetExptGeoHelperInterface.html#a6d85273c73137b943a748d2f4889df4b">geo::AuxDetExptGeoHelperInterface::doConfigureAuxDetChannelMapAlg</a></div><div class="ttdeci">virtual AuxDetChannelMapAlgPtr_t doConfigureAuxDetChannelMapAlg(fhicl::ParameterSet const &amp;sortingParameters) const =0</div><div class="ttdoc">Implementation of ConfigureChannelMapAlg (pure virtual) </div></div>
 </div><!-- fragment -->
 </div>

@@ -97,90 +97,84 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span><span class="comment">///</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span><span class="comment">/// \author  rs@fnal.gov</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span><span class="comment">////////////////////////////////////////////////////////////////////////////////</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef GEO_ExptGeoHelperInterface_h</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GEO_ExptGeoHelperInterface_h</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef GEO_ExptGeoHelperInterface_h</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define GEO_ExptGeoHelperInterface_h</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// LArSoft libraries</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d80/ChannelMapAlg_8h.html">larcorealg/Geometry/ChannelMapAlg.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// framework libraries</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceDeclarationMacros.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>fhicl { <span class="keyword">class </span>ParameterSet; }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// C/C++ standard libraries</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// std::shared_ptr&lt;&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// std::unique_ptr&lt;&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// prototypes of geometry classes</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>geo</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">class </span>ChannelMapAlg;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>geo</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">  /**</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   * @brief Interface to a service with detector-specific geometry knowledge</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * This is an interface to a service that virtualizes detector or</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * experiment-specific knowledge that is required by the Geometry service.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   * Experiments implement the private virtual function within a concrete</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * service provider class to perform the specified actions as appropriate for</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   * the particular experiment.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   * It is expected that such requests will occur infrequently within a job.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">   * Calculations that occur frequently should be handled via interfaces that</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">   * are passed back to the Geometry service.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">   * @note The public interface for this service cannot be overriden.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">   * The experiment-specific sub-classes should implement only the private</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">   * methods without promoting their visibility.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">   61</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">ExptGeoHelperInterface</a></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">   64</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a> = std::unique_ptr&lt;ChannelMapAlg&gt;;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">    /// Virtual destructor; does nothing</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a99342c563a092a9f24558f0a1ed89f28">~ExptGeoHelperInterface</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     * @brief Configure and initialize the channel map</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     * @param sortingParameters parameters for the channel map algorithm</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">     * @param detectorName name of detector described by geometry</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     * @return a (shared) pointer to the channel mapping algorithm</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     * This method creates a new ChannelMapAlg according to the geometry and</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     * specified configuration.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">   79</a></span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">ConfigureChannelMapAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; sortingParameters,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                           std::string <span class="keyword">const</span>&amp; detectorName)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(sortingParameters, detectorName);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>geo</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">  /**</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   * @brief Interface to a service with detector-specific geometry knowledge</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * This is an interface to a service that virtualizes detector or</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   * experiment-specific knowledge that is required by the Geometry service.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   * Experiments implement the private virtual function within a concrete</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   * service provider class to perform the specified actions as appropriate for</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">   * the particular experiment.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">   * It is expected that such requests will occur infrequently within a job.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">   * Calculations that occur frequently should be handled via interfaces that</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">   * are passed back to the Geometry service.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">   * @note The public interface for this service cannot be overriden.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">   * The experiment-specific sub-classes should implement only the private</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">   * methods without promoting their visibility.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">   54</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">ExptGeoHelperInterface</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">   57</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a> = std::unique_ptr&lt;ChannelMapAlg&gt;;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    /// Virtual destructor; does nothing</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a99342c563a092a9f24558f0a1ed89f28">~ExptGeoHelperInterface</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     * @brief Configure and initialize the channel map</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     * @param sortingParameters parameters for the channel map algorithm</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * @param detectorName name of detector described by geometry</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     * @return a (shared) pointer to the channel mapping algorithm</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * This method creates a new ChannelMapAlg according to the geometry and</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * specified configuration.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">   72</a></span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">ConfigureChannelMapAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; sortingParameters,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                           std::string <span class="keyword">const</span>&amp; detectorName)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(sortingParameters, detectorName);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; sortingParameters,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                             std::string <span class="keyword">const</span>&amp; detectorName) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }; <span class="comment">// end ExptGeoHelperInterface class declaration</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">ChannelMapAlgPtr_t</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">doConfigureChannelMapAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; sortingParameters,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                             std::string <span class="keyword">const</span>&amp; detectorName) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }; <span class="comment">// end ExptGeoHelperInterface class declaration</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;DECLARE_ART_SERVICE_INTERFACE(<a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">geo::ExptGeoHelperInterface</a>, SHARED)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // GEO_ExptGeoHelperInterface_h</span></div>
-<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">geo::ExptGeoHelperInterface</a></div><div class="ttdoc">Interface to a service with detector-specific geometry knowledge. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00061">ExptGeoHelperInterface.h:61</a></div></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;DECLARE_ART_SERVICE_INTERFACE(<a class="code" href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">geo::ExptGeoHelperInterface</a>, SHARED)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // GEO_ExptGeoHelperInterface_h</span></div>
+<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html">geo::ExptGeoHelperInterface</a></div><div class="ttdoc">Interface to a service with detector-specific geometry knowledge. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00054">ExptGeoHelperInterface.h:54</a></div></div>
 <div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a99342c563a092a9f24558f0a1ed89f28"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a99342c563a092a9f24558f0a1ed89f28">geo::ExptGeoHelperInterface::~ExptGeoHelperInterface</a></div><div class="ttdeci">virtual ~ExptGeoHelperInterface()=default</div><div class="ttdoc">Virtual destructor; does nothing. </div></div>
-<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a19a378457cb4396ebf0abc77b2b89345"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">geo::ExptGeoHelperInterface::ChannelMapAlgPtr_t</a></div><div class="ttdeci">std::unique_ptr&lt; ChannelMapAlg &gt; ChannelMapAlgPtr_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00064">ExptGeoHelperInterface.h:64</a></div></div>
-<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a3ce54eb63bcaf0bc26d422f6bfa1999b"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">geo::ExptGeoHelperInterface::ConfigureChannelMapAlg</a></div><div class="ttdeci">ChannelMapAlgPtr_t ConfigureChannelMapAlg(fhicl::ParameterSet const &amp;sortingParameters, std::string const &amp;detectorName) const </div><div class="ttdoc">Configure and initialize the channel map. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00079">ExptGeoHelperInterface.h:79</a></div></div>
+<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a19a378457cb4396ebf0abc77b2b89345"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a19a378457cb4396ebf0abc77b2b89345">geo::ExptGeoHelperInterface::ChannelMapAlgPtr_t</a></div><div class="ttdeci">std::unique_ptr&lt; ChannelMapAlg &gt; ChannelMapAlgPtr_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00057">ExptGeoHelperInterface.h:57</a></div></div>
+<div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a3ce54eb63bcaf0bc26d422f6bfa1999b"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a3ce54eb63bcaf0bc26d422f6bfa1999b">geo::ExptGeoHelperInterface::ConfigureChannelMapAlg</a></div><div class="ttdeci">ChannelMapAlgPtr_t ConfigureChannelMapAlg(fhicl::ParameterSet const &amp;sortingParameters, std::string const &amp;detectorName) const </div><div class="ttdoc">Configure and initialize the channel map. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d16/ExptGeoHelperInterface_8h_source.html#l00072">ExptGeoHelperInterface.h:72</a></div></div>
 <div class="ttc" id="classgeo_1_1ExptGeoHelperInterface_html_a15786f9ce9332e11052a7f73652e5bed"><div class="ttname"><a href="../../dc/dc7/classgeo_1_1ExptGeoHelperInterface.html#a15786f9ce9332e11052a7f73652e5bed">geo::ExptGeoHelperInterface::doConfigureChannelMapAlg</a></div><div class="ttdeci">virtual ChannelMapAlgPtr_t doConfigureChannelMapAlg(fhicl::ParameterSet const &amp;sortingParameters, std::string const &amp;detectorName) const =0</div></div>
+<div class="ttc" id="ChannelMapAlg_8h_html"><div class="ttname"><a href="../../d1/d80/ChannelMapAlg_8h.html">ChannelMapAlg.h</a></div><div class="ttdoc">Interface to algorithm class for a specific detector channel mapping. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

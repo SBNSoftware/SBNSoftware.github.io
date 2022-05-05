@@ -90,76 +90,77 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;cetlib_except/exception.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/df6/KHitContainerWireX_8h.html">lardata/RecoObjects/KHitContainerWireX.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d1b/KHitWireX_8h.html">lardata/RecoObjects/KHitWireX.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>trkf {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  /// Fill container.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /// Arguments:</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  /// hits       - RecoBase/Hit collection.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  /// only_plane - Choose hits from this plane if &gt;= 0.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  /// This method converts the hits in the input collection into</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  /// KHitWireX objects and inserts them into the base class.  Hits</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /// corresponding to the same readout wire are grouped together as</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// KHitGroup objects.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span>  <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">   34</a></span>&#160;  <a class="code" href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">KHitContainerWireX::fill</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d11/classdetinfo_1_1DetectorPropertiesData.html">detinfo::DetectorPropertiesData</a>&amp; <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a>,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           <span class="keyword">const</span> art::PtrVector&lt;recob::Hit&gt;&amp; hits,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keywordtype">int</span> only_plane)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Get services.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geom;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Make a temporary map from channel number to KHitGroup objects.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// The KHitGroup pointers are borrowed references to KHitGroup</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// objects stored by value in the base class.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::map&lt;unsigned int, KHitGroup*&gt; group_map;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Loop over hits.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (art::PtrVector&lt;recob::Hit&gt;::const_iterator ihit = hits.begin(); ihit != hits.end();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         ++ihit) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a>&amp; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = **ihit;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// Extract the wire id from the Hit.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> hitWireID = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      uint32_t channel = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a5722fa298fffc3ac441e8a07d9a6048b">Channel</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">// Choose plane.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">if</span> (only_plane &gt;= 0 &amp;&amp; hitWireID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a> != (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(only_plane)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="comment">// See if we need to make a new KHitGroup.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html">KHitGroup</a>* pgr = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">if</span> (group_map.count(channel) == 0) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="../../d5/dcd/classtrkf_1_1KHitContainer.html#aa0b05e36aec1f04d8f4cd84c9a0b49de">getUnsorted</a>().push_back(<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html">KHitGroup</a>());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        pgr = &amp;(<a class="code" href="../../d5/dcd/classtrkf_1_1KHitContainer.html#aa0b05e36aec1f04d8f4cd84c9a0b49de">getUnsorted</a>().back());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        group_map[channel] = pgr;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        pgr = group_map[channel];</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">if</span> (!pgr) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;KHitContainerWireX&quot;</span>)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: no group map for channel &quot;</span> &lt;&lt; channel &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      pgr-&gt;<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html#ab6c161dd2cd09c5586732d2dbc1581a2">addHit</a>(std::make_shared&lt;KHitWireX&gt;(detProp, *ihit, pgr-&gt;<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html#a8ee8080a8dc65f22fabdd6684b50bf38">getSurface</a>()));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// end namespace trkf</span></div>
-<div class="ttc" id="classtrkf_1_1KHitContainerWireX_html_a29f025ed86755ee427b66b4daa942323"><div class="ttname"><a href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">trkf::KHitContainerWireX::fill</a></div><div class="ttdeci">void fill(const detinfo::DetectorPropertiesData &amp;clock_data, const art::PtrVector&lt; recob::Hit &gt; &amp;hits, int only_plane) override</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df9/KHitContainerWireX_8cxx_source.html#l00034">KHitContainerWireX.cxx:34</a></div></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;cetlib_except/exception.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/df6/KHitContainerWireX_8h.html">lardata/RecoObjects/KHitContainerWireX.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d1b/KHitWireX_8h.html">lardata/RecoObjects/KHitWireX.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>trkf {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  /// Fill container.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /// Arguments:</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">  /// hits       - RecoBase/Hit collection.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">  /// only_plane - Choose hits from this plane if &gt;= 0.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">  /// This method converts the hits in the input collection into</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">  /// KHitWireX objects and inserts them into the base class.  Hits</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /// corresponding to the same readout wire are grouped together as</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">  /// KHitGroup objects.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span>  <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">   35</a></span>&#160;  <a class="code" href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">KHitContainerWireX::fill</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d11/classdetinfo_1_1DetectorPropertiesData.html">detinfo::DetectorPropertiesData</a>&amp; <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keyword">const</span> art::PtrVector&lt;recob::Hit&gt;&amp; hits,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           <span class="keywordtype">int</span> only_plane)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Get services.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geom;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Make a temporary map from channel number to KHitGroup objects.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// The KHitGroup pointers are borrowed references to KHitGroup</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// objects stored by value in the base class.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::map&lt;unsigned int, KHitGroup*&gt; group_map;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Loop over hits.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (art::PtrVector&lt;recob::Hit&gt;::const_iterator ihit = hits.begin(); ihit != hits.end();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         ++ihit) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a>&amp; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = **ihit;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="comment">// Extract the wire id from the Hit.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> hitWireID = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      uint32_t channel = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a5722fa298fffc3ac441e8a07d9a6048b">Channel</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="comment">// Choose plane.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span> (only_plane &gt;= 0 &amp;&amp; hitWireID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a> != (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)(only_plane)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="comment">// See if we need to make a new KHitGroup.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html">KHitGroup</a>* pgr = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (group_map.count(channel) == 0) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="../../d5/dcd/classtrkf_1_1KHitContainer.html#aa0b05e36aec1f04d8f4cd84c9a0b49de">getUnsorted</a>().push_back(<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html">KHitGroup</a>());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        pgr = &amp;(<a class="code" href="../../d5/dcd/classtrkf_1_1KHitContainer.html#aa0b05e36aec1f04d8f4cd84c9a0b49de">getUnsorted</a>().back());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        group_map[channel] = pgr;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        pgr = group_map[channel];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">if</span> (!pgr) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;KHitContainerWireX&quot;</span>)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;: no group map for channel &quot;</span> &lt;&lt; channel &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      pgr-&gt;<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html#ab6c161dd2cd09c5586732d2dbc1581a2">addHit</a>(std::make_shared&lt;KHitWireX&gt;(detProp, *ihit, pgr-&gt;<a class="code" href="../../da/d6a/classtrkf_1_1KHitGroup.html#a8ee8080a8dc65f22fabdd6684b50bf38">getSurface</a>()));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// end namespace trkf</span></div>
+<div class="ttc" id="classtrkf_1_1KHitContainerWireX_html_a29f025ed86755ee427b66b4daa942323"><div class="ttname"><a href="../../de/dc0/classtrkf_1_1KHitContainerWireX.html#a29f025ed86755ee427b66b4daa942323">trkf::KHitContainerWireX::fill</a></div><div class="ttdeci">void fill(const detinfo::DetectorPropertiesData &amp;clock_data, const art::PtrVector&lt; recob::Hit &gt; &amp;hits, int only_plane) override</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df9/KHitContainerWireX_8cxx_source.html#l00035">KHitContainerWireX.cxx:35</a></div></div>
 <div class="ttc" id="KHitContainerWireX_8h_html"><div class="ttname"><a href="../../df/df6/KHitContainerWireX_8h.html">KHitContainerWireX.h</a></div><div class="ttdoc">A KHitContainer for KHitWireX type measurements. </div></div>
 <div class="ttc" id="classrecob_1_1Hit_html_ac490abcf98854d93cf2fa85eadf4d469"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">recob::Hit::WireID</a></div><div class="ttdeci">geo::WireID WireID() const </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00233">Hit.h:233</a></div></div>
 <div class="ttc" id="KHitWireX_8h_html"><div class="ttname"><a href="../../d5/d1b/KHitWireX_8h.html">KHitWireX.h</a></div><div class="ttdoc">Kalman filter wire-time measurement on a SurfWireX surface. </div></div>
@@ -174,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classrecob_1_1Hit_html"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a></div><div class="ttdoc">2D representation of charge deposited in the TDC/wire plane </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00048">Hit.h:48</a></div></div>
 <div class="ttc" id="classrecob_1_1Hit_html_a5722fa298fffc3ac441e8a07d9a6048b"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a5722fa298fffc3ac441e8a07d9a6048b">recob::Hit::Channel</a></div><div class="ttdeci">raw::ChannelID_t Channel() const </div><div class="ttdoc">ID of the readout channel the hit was extracted from. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00230">Hit.h:230</a></div></div>
 <div class="ttc" id="Geometry_8h_html"><div class="ttname"><a href="../../d3/d8b/Geometry_8h.html">Geometry.h</a></div><div class="ttdoc">art framework interface to geometry description </div></div>
-<div class="ttc" id="namespacedetsim_html_a560adbb3abf95a23d45a53ed25d8c0c7"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detsim::detProp</a></div><div class="ttdeci">auto const detProp</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df8/SimWire__module_8cc_source.html#l00154">SimWire_module.cc:154</a></div></div>
+<div class="ttc" id="namespacedetsim_html_a560adbb3abf95a23d45a53ed25d8c0c7"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detsim::detProp</a></div><div class="ttdeci">auto const detProp</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df8/SimWire__module_8cc_source.html#l00157">SimWire_module.cc:157</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

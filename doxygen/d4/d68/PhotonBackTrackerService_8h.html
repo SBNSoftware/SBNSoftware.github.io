@@ -81,21 +81,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">PhotonBackTrackerService.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;map&gt;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Services/Registry/ActivityRegistry.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Services/Registry/ServiceDeclarationMacros.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/View.h&quot;</code><br/>
-<code>#include &quot;art/Persistency/Provenance/ScheduleContext.h&quot;</code><br/>
-<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/d08/SimListUtils_8h_source.html">larsim/Simulation/SimListUtils.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d9/d32/PhotonBackTracker_8h_source.html">larsim/MCCheater/PhotonBackTracker.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d9/d32/PhotonBackTracker_8h_source.html">larsim/MCCheater/PhotonBackTracker.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d48/geo__types_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_types.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/dad/OpHit_8h_source.html">lardataobj/RecoBase/OpHit.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../dd/d59/ParticleInventoryService_8h_source.html">larsim/MCCheater/ParticleInventoryService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/dba/DetectorClocksService_8h_source.html">lardata/DetectorInfoServices/DetectorClocksService.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/dc1/OpDetBacktrackerRecord_8h_source.html">lardataobj/Simulation/OpDetBacktrackerRecord.h</a>&quot;</code><br/>
+<code>#include &quot;art/Framework/Services/Registry/ServiceDeclarationMacros.h&quot;</code><br/>
+<code>#include &quot;art/Persistency/Provenance/ScheduleContext.h&quot;</code><br/>
+<code>#include &quot;canvas/Persistency/Common/Ptr.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Comment.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Name.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Table.h&quot;</code><br/>
+<code>#include &lt;set&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div>
 <p><a href="../../d4/d68/PhotonBackTrackerService_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,6 +105,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:df/dc4/namespaceart"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc4/namespaceart.html">art</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/d70/namespacefhicl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d70/namespacefhicl.html">fhicl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/df9/namespacecheat"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df9/namespacecheat.html">cheat</a></td></tr>
 <tr class="memdesc:df/df9/namespacecheat"><td class="mdescLeft">&#160;</td><td class="mdescRight">code to link reconstructed objects back to the MC truth information <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

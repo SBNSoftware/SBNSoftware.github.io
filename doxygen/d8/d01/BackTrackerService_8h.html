@@ -81,17 +81,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">BackTrackerService.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br/>
-<code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/View.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Services/Registry/ActivityRegistry.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/dbd/BackTracker_8h_source.html">larsim/MCCheater/BackTracker.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d48/geo__types_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_types.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d26/Hit_8h_source.html">lardataobj/RecoBase/Hit.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d9/d12/SpacePoint_8h_source.html">lardataobj/RecoBase/SpacePoint.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/dde/SimChannel_8h_source.html">lardataobj/Simulation/SimChannel.h</a>&quot;</code><br/>
 <code>#include &quot;art/Framework/Services/Registry/ServiceDeclarationMacros.h&quot;</code><br/>
 <code>#include &quot;art/Persistency/Provenance/ScheduleContext.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/dbd/BackTracker_8h_source.html">larsim/MCCheater/BackTracker.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/dc6/ParticleInventory_8h_source.html">larsim/MCCheater/ParticleInventory.h</a>&quot;</code><br/>
+<code>#include &quot;canvas/Persistency/Common/Ptr.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Comment.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Name.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Table.h&quot;</code><br/>
+<code>#include &lt;set&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div>
 <p><a href="../../d8/d01/BackTrackerService_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,6 +106,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:d7/d8a/namespacedetinfo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8a/namespacedetinfo.html">detinfo</a></td></tr>
+<tr class="memdesc:d7/d8a/namespacedetinfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">General LArSoft Utilities. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/dc4/namespaceart"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc4/namespaceart.html">art</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/d70/namespacefhicl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d70/namespacefhicl.html">fhicl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/df9/namespacecheat"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df9/namespacecheat.html">cheat</a></td></tr>
 <tr class="memdesc:df/df9/namespacecheat"><td class="mdescLeft">&#160;</td><td class="mdescRight">code to link reconstructed objects back to the MC truth information <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

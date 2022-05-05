@@ -84,17 +84,20 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;TComplex.h&quot;</code><br/>
-<code>#include &lt;TMath.h&gt;</code><br/>
+<code>#include &quot;TMath.h&quot;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 <code>#include &quot;art/Framework/Core/EDProducer.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;art_root_io/TFileService.h&quot;</code><br/>
-<code>#include &quot;cetlib/search_path.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
 <code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
+<code>#include &quot;cetlib_except/exception.h&quot;</code><br/>
 <code>#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Random/RandFlat.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>

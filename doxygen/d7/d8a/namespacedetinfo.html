@@ -247,12 +247,10 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General LArSoft Utilities. </p>
+<p>Title: <a class="el" href="../../d9/d98/classFlashHypothesis.html">FlashHypothesis</a> Creator Class Author: Wes Ketchum (<a href="#" onclick="location.href='mai'+'lto:'+'wke'+'tc'+'hum'+'@l'+'anl'+'.g'+'ov'; return false;">wketc<span style="display: none;">.nosp@m.</span>hum@<span style="display: none;">.nosp@m.</span>lanl.<span style="display: none;">.nosp@m.</span>gov</a>)</p>
+<p>Description: class that produces a flash hypothesis for a trajectory. Input: Trajectory (std::vector&lt;TVector3&gt; objects) Output: FlashHypotheses</p>
 <p>Title: OpFlash Algorithims Author: Ben Jones, MIT (Edited by <a href="#" onclick="location.href='mai'+'lto:'+'wke'+'tc'+'hum'+'@l'+'anl'+'.g'+'ov'; return false;">wketc<span style="display: none;">.nosp@m.</span>hum@<span style="display: none;">.nosp@m.</span>lanl.<span style="display: none;">.nosp@m.</span>gov</a> and <a href="#" onclick="location.href='mai'+'lto:'+'gle'+'b.'+'sin'+'ev'+'@du'+'ke'+'.ed'+'u'; return false;">gleb.<span style="display: none;">.nosp@m.</span>sine<span style="display: none;">.nosp@m.</span>v@duk<span style="display: none;">.nosp@m.</span>e.ed<span style="display: none;">.nosp@m.</span>u</a>)</p>
 <p>Description: These are the algorithms used by OpFlashFinder to produce flashes.</p>
-<p>ClusterMatchTQ class</p>
-<p><a href="#" onclick="location.href='mai'+'lto:'+'tjy'+'an'+'g@f'+'na'+'l.g'+'ov'; return false;">tjyan<span style="display: none;">.nosp@m.</span>g@fn<span style="display: none;">.nosp@m.</span>al.go<span style="display: none;">.nosp@m.</span>v</a></p>
-<p>Algorithm for matching clusters between different views based on time and charge information</p>
-<p>Input: a list of clusters and all hits associated with clusters Output: a vector of index vectors. Each group of indices represent a particle candidate</p>
 <p>Title: SpacePointAlg_TimeSort class Author: <a href="#" onclick="location.href='mai'+'lto:'+'wke'+'tc'+'hum'+'@l'+'anl'+'.g'+'ov'; return false;">wketc<span style="display: none;">.nosp@m.</span>hum@<span style="display: none;">.nosp@m.</span>lanl.<span style="display: none;">.nosp@m.</span>gov</a> Inputs: std::vector&lt;recob::Hit&gt; (one for each plane) Outputs: std::vector&lt;recob::SpacePoint&gt;</p>
 <p>Description: This space point algorithm tries to improve speed by (1) keeping hit collections distinct among planes; (2) sorting hit collections by time; and, (3) having a lookup table for (y,z) coordinate positions. The original use case for this code was with the TTHitFinder, which produces an incredibly large number of hits per plane, making some sorted space point alg more attractive.</p>
 <p>This code is totally microboone specific, btw. </p>

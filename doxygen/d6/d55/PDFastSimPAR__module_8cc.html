@@ -81,53 +81,43 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">PDFastSimPAR_module.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;art/Framework/Core/EDProducer.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/da2/counter_8h_source.html">larcorealg/CoreUtils/counter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d5/d85/enumerate_8h_source.html">larcorealg/CoreUtils/enumerate.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d9/d92/BoxBoundedGeo_8h_source.html">larcorealg/Geometry/BoxBoundedGeo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/d38/OpDetGeo_8h_source.html">larcorealg/Geometry/OpDetGeo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d5/d7d/geo__vectors_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_vectors.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/dc1/OpDetBacktrackerRecord_8h_source.html">lardataobj/Simulation/OpDetBacktrackerRecord.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d0/ddf/SimEnergyDeposit_8h_source.html">lardataobj/Simulation/SimEnergyDeposit.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/dd4/SimPhotons_8h_source.html">lardataobj/Simulation/SimPhotons.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/df7/ISTPC_8h_source.html">larsim/IonizationScintillation/ISTPC.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/ddf/PropagationTimeModel_8h_source.html">larsim/PhotonPropagation/PropagationTimeModel.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/d76/ScintTime_8h_source.html">larsim/PhotonPropagation/ScintTimeTools/ScintTime.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/d9a/SemiAnalyticalModel_8h_source.html">larsim/PhotonPropagation/SemiAnalyticalModel.h</a>&quot;</code><br/>
+<code>#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Core/EDProducer.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Handle.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Services/Optional/RandomNumberGenerator.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;art/Utilities/make_tool.h&quot;</code><br/>
 <code>#include &quot;canvas/Utilities/Exception.h&quot;</code><br/>
 <code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
-<code>#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</code><br/>
+<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Atom.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Comment.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/DelegatedParameter.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Name.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/types/OptionalDelegatedParameter.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/da2/counter_8h_source.html">larcorealg/CoreUtils/counter.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/d85/enumerate_8h_source.html">larcorealg/CoreUtils/enumerate.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../df/d13/CryostatGeo_8h_source.html">larcorealg/Geometry/CryostatGeo.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../da/d38/OpDetGeo_8h_source.html">larcorealg/Geometry/OpDetGeo.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../dd/dc1/OpDetBacktrackerRecord_8h_source.html">lardataobj/Simulation/OpDetBacktrackerRecord.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d0/ddf/SimEnergyDeposit_8h_source.html">lardataobj/Simulation/SimEnergyDeposit.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../da/dd4/SimPhotons_8h_source.html">lardataobj/Simulation/SimPhotons.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/de8/PhotonVisibilityTypes_8h_source.html">larsim/PhotonPropagation/PhotonVisibilityTypes.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d76/ScintTime_8h_source.html">larsim/PhotonPropagation/ScintTimeTools/ScintTime.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d2/df7/ISTPC_8h_source.html">larsim/IonizationScintillation/ISTPC.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d6/d9a/SemiAnalyticalModel_8h_source.html">larsim/PhotonPropagation/SemiAnalyticalModel.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/ddf/PropagationTimeModel_8h_source.html">larsim/PhotonPropagation/PropagationTimeModel.h</a>&quot;</code><br/>
-<code>#include &quot;CLHEP/Random/RandFlat.h&quot;</code><br/>
-<code>#include &quot;CLHEP/Random/RandPoissonQ.h&quot;</code><br/>
-<code>#include &quot;Geant4/G4DynamicParticle.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4EmProcessSubType.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4EmSaturation.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4Material.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4MaterialPropertiesTable.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4OpticalPhoton.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4ParticleMomentum.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4PhysicsOrderedFreeVector.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4PhysicsTable.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4Poisson.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4ThreeVector.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4VPhysicalVolume.hh&quot;</code><br/>
-<code>#include &quot;Geant4/G4VRestDiscreteProcess.hh&quot;</code><br/>
-<code>#include &quot;Geant4/Randomize.hh&quot;</code><br/>
-<code>#include &quot;Geant4/globals.hh&quot;</code><br/>
-<code>#include &quot;Geant4/templates.hh&quot;</code><br/>
 <code>#include &quot;cetlib_except/exception.h&quot;</code><br/>
+<code>#include &quot;CLHEP/Random/RandPoissonQ.h&quot;</code><br/>
 <code>#include &lt;cmath&gt;</code><br/>
 <code>#include &lt;ctime&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div>
 <p><a href="../../d6/d55/PDFastSimPAR__module_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

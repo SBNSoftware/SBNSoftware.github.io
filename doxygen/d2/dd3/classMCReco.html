@@ -114,7 +114,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00027">27</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00028">28</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae42d795088cc779947c6d6655f1f02e2"></a>
 <div class="memitem">
@@ -138,43 +138,43 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  : EDProducer{pset}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>   (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCRecoPart&quot;</span>))</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>   (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCRecoEdep&quot;</span>))</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">fMCSAlg</a> (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCShowerRecoAlg&quot;</span>))</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">fMCTAlg</a> (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCTrackRecoAlg&quot;</span>))</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">//for backwards compatibility to using the &quot;G4ModName&quot; label...</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span>(!(pset.get_if_present&lt;art::InputTag&gt;(<span class="stringliteral">&quot;MCParticleLabel&quot;</span>,<a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>) &amp;&amp;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;       pset.get_if_present&lt;art::InputTag&gt;(<span class="stringliteral">&quot;SimChannelLabel&quot;</span>,<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>)) ){</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    mf::LogWarning(<span class="stringliteral">&quot;MCReco_module&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;USING DEPRECATED G4ModName CONFIG IN MCRECO_MODULE&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                    &lt;&lt; <span class="stringliteral">&quot;\nUse &#39;MCParticleLabel&#39; and &#39;SimChannelLabel&#39; instead.&quot;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a> = pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;G4ModName&quot;</span>,<span class="stringliteral">&quot;largeant&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a> = pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;G4ModName&quot;</span>,<span class="stringliteral">&quot;largeant&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">fUseSimEnergyDeposit</a> = pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;UseSimEnergyDeposit&quot;</span>,<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  produces&lt; std::vector&lt; sim::MCShower&gt; &gt;();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  produces&lt; std::vector&lt; sim::MCTrack&gt;  &gt;();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//MCReco::~MCReco()</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//{</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Clean up dynamic memory and other resources here.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//}</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="ttc" id="classMCReco_html_aa8e1f41ad22c2b8262bde318139c6bee"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">MCReco::fMCSAlg</a></div><div class="ttdeci">::sim::MCShowerRecoAlg fMCSAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00043">MCReco_module.cc:43</a></div></div>
-<div class="ttc" id="classMCReco_html_ac2de9305e32bf7be503fcb94c4b406b6"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">MCReco::fEdep</a></div><div class="ttdeci">::sim::MCRecoEdep fEdep</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00042">MCReco_module.cc:42</a></div></div>
-<div class="ttc" id="classMCReco_html_a5d29903ca610cdfcfb12fffb116ae646"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">MCReco::fMCParticleLabel</a></div><div class="ttdeci">art::InputTag fMCParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00037">MCReco_module.cc:37</a></div></div>
-<div class="ttc" id="classMCReco_html_af2a7d4e659b97f15e1ff16259ae6a7ae"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">MCReco::fPart</a></div><div class="ttdeci">::sim::MCRecoPart fPart</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00041">MCReco_module.cc:41</a></div></div>
-<div class="ttc" id="classMCReco_html_ac7c7698ae29db19b528598cc6b2e8511"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">MCReco::fSimChannelLabel</a></div><div class="ttdeci">art::InputTag fSimChannelLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00038">MCReco_module.cc:38</a></div></div>
-<div class="ttc" id="classMCReco_html_a14767844c014f5f16fe5035cae9b3e60"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">MCReco::fUseSimEnergyDeposit</a></div><div class="ttdeci">bool fUseSimEnergyDeposit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00039">MCReco_module.cc:39</a></div></div>
-<div class="ttc" id="classMCReco_html_a88f7cd0ba5663f957b78c9e29f982415"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">MCReco::fMCTAlg</a></div><div class="ttdeci">::sim::MCTrackRecoAlg fMCTAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00044">MCReco_module.cc:44</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00048">48</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  : EDProducer{pset}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>   (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCRecoPart&quot;</span>))</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>   (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCRecoEdep&quot;</span>))</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">fMCSAlg</a> (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCShowerRecoAlg&quot;</span>))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  , <a class="code" href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">fMCTAlg</a> (pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;MCTrackRecoAlg&quot;</span>))</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">//for backwards compatibility to using the &quot;G4ModName&quot; label...</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span>(!(pset.get_if_present&lt;art::InputTag&gt;(<span class="stringliteral">&quot;MCParticleLabel&quot;</span>,<a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>) &amp;&amp;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;       pset.get_if_present&lt;art::InputTag&gt;(<span class="stringliteral">&quot;SimChannelLabel&quot;</span>,<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>)) ){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    mf::LogWarning(<span class="stringliteral">&quot;MCReco_module&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;USING DEPRECATED G4ModName CONFIG IN MCRECO_MODULE&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                    &lt;&lt; <span class="stringliteral">&quot;\nUse &#39;MCParticleLabel&#39; and &#39;SimChannelLabel&#39; instead.&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a> = pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;G4ModName&quot;</span>,<span class="stringliteral">&quot;largeant&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a> = pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;G4ModName&quot;</span>,<span class="stringliteral">&quot;largeant&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">fUseSimEnergyDeposit</a> = pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;UseSimEnergyDeposit&quot;</span>,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  produces&lt; std::vector&lt; sim::MCShower&gt; &gt;();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  produces&lt; std::vector&lt; sim::MCTrack&gt;  &gt;();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//MCReco::~MCReco()</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//{</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// Clean up dynamic memory and other resources here.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="ttc" id="classMCReco_html_aa8e1f41ad22c2b8262bde318139c6bee"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">MCReco::fMCSAlg</a></div><div class="ttdeci">::sim::MCShowerRecoAlg fMCSAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00044">MCReco_module.cc:44</a></div></div>
+<div class="ttc" id="classMCReco_html_ac2de9305e32bf7be503fcb94c4b406b6"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">MCReco::fEdep</a></div><div class="ttdeci">::sim::MCRecoEdep fEdep</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00043">MCReco_module.cc:43</a></div></div>
+<div class="ttc" id="classMCReco_html_a5d29903ca610cdfcfb12fffb116ae646"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">MCReco::fMCParticleLabel</a></div><div class="ttdeci">art::InputTag fMCParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00038">MCReco_module.cc:38</a></div></div>
+<div class="ttc" id="classMCReco_html_af2a7d4e659b97f15e1ff16259ae6a7ae"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">MCReco::fPart</a></div><div class="ttdeci">::sim::MCRecoPart fPart</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00042">MCReco_module.cc:42</a></div></div>
+<div class="ttc" id="classMCReco_html_ac7c7698ae29db19b528598cc6b2e8511"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">MCReco::fSimChannelLabel</a></div><div class="ttdeci">art::InputTag fSimChannelLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00039">MCReco_module.cc:39</a></div></div>
+<div class="ttc" id="classMCReco_html_a14767844c014f5f16fe5035cae9b3e60"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">MCReco::fUseSimEnergyDeposit</a></div><div class="ttdeci">bool fUseSimEnergyDeposit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00040">MCReco_module.cc:40</a></div></div>
+<div class="ttc" id="classMCReco_html_a88f7cd0ba5663f957b78c9e29f982415"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">MCReco::fMCTAlg</a></div><div class="ttdeci">::sim::MCTrackRecoAlg fMCTAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00045">MCReco_module.cc:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,69 +201,69 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00078">78</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//  std::unique_ptr&lt; std::vector&lt;sim::MCTrack&gt; &gt; outTrackArray(new std::vector&lt;sim::MCTrack&gt;);</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Retrieve mcparticles</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  art::Handle&lt;std::vector&lt;simb::MCParticle&gt; &gt; mcpHandle;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>,mcpHandle);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span>(!mcpHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve simb::MCParticle&quot;</span>;;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Find associations</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  art::FindOneP&lt;simb::MCTruth&gt; ass(mcpHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;simb::Origin_t&gt; orig_array;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  orig_array.reserve(mcpHandle-&gt;size());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;mcpHandle-&gt;size(); ++i) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> art::Ptr&lt;simb::MCTruth&gt; &amp;mct = ass.at(i);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    orig_array.push_back(mct-&gt;Origin());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">const</span> std::vector&lt;simb::MCParticle&gt;&amp; mcp_array(*mcpHandle);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>.<a class="code" href="../../d9/d6a/classsim_1_1MCRecoPart.html#a6fbc5908dd0547f4298e9e0525f2de3f">AddParticles</a>(mcp_array,orig_array);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//  std::unique_ptr&lt; std::vector&lt;sim::MCTrack&gt; &gt; outTrackArray(new std::vector&lt;sim::MCTrack&gt;);</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Retrieve mcparticles</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  art::Handle&lt;std::vector&lt;simb::MCParticle&gt; &gt; mcpHandle;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>,mcpHandle);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span>(!mcpHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve simb::MCParticle&quot;</span>;;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Find associations</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  art::FindOneP&lt;simb::MCTruth&gt; ass(mcpHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">fMCParticleLabel</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::vector&lt;simb::Origin_t&gt; orig_array;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  orig_array.reserve(mcpHandle-&gt;size());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;mcpHandle-&gt;size(); ++i) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> art::Ptr&lt;simb::MCTruth&gt; &amp;mct = ass.at(i);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    orig_array.push_back(mct-&gt;Origin());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">const</span> std::vector&lt;simb::MCParticle&gt;&amp; mcp_array(*mcpHandle);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>.<a class="code" href="../../d9/d6a/classsim_1_1MCRecoPart.html#a6fbc5908dd0547f4298e9e0525f2de3f">AddParticles</a>(mcp_array,orig_array);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// change implemented by David Caratelli to allow for MCRECO to run without SimChannels and using</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// SimEnergyDeposits instead</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">fUseSimEnergyDeposit</a> == <span class="keyword">true</span>) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// Retrieve SimEnergyDeposit</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimEnergyDeposit&gt; &gt; sedHandle;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>,sedHandle);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span>(!sedHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve sim::SimEnergyDeposit&quot;</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">const</span> std::vector&lt;sim::SimEnergyDeposit&gt;&amp;  sed_array(*sedHandle);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">MakeMCEdep</a>(sed_array);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Retrieve SimChannel</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimChannel&gt; &gt; schHandle;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>,schHandle);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span>(!schHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve sim::SimChannel&quot;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">const</span> std::vector&lt;sim::SimChannel&gt;&amp;  sch_array(*schHandle);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">MakeMCEdep</a>(sch_array);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">//Add MCShowers and MCTracks to the event</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(<a class="code" href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">fMCSAlg</a>.<a class="code" href="../../d4/d28/classsim_1_1MCShowerRecoAlg.html#a6d4c07431ea41ae7ee279bdc4b15a26a">Reconstruct</a>(<a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>,<a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>));</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(<a class="code" href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">fMCTAlg</a>.<a class="code" href="../../d9/d3c/classsim_1_1MCTrackRecoAlg.html#ac265cd804c2413265f9163b3f834cd4e">Reconstruct</a>(<a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>,<a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>));</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#a78366a0381294d41f70205aafe703ab7">Clear</a>();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>.clear();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="ttc" id="classsim_1_1MCRecoEdep_html_a78366a0381294d41f70205aafe703ab7"><div class="ttname"><a href="../../df/df0/classsim_1_1MCRecoEdep.html#a78366a0381294d41f70205aafe703ab7">sim::MCRecoEdep::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df9/MCRecoEdep_8h_source.html#l00125">MCRecoEdep.h:125</a></div></div>
-<div class="ttc" id="classsim_1_1MCRecoEdep_html_ace6f36fe2f7ab4dd6a3c7a7734f6762e"><div class="ttname"><a href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">sim::MCRecoEdep::MakeMCEdep</a></div><div class="ttdeci">void MakeMCEdep(const std::vector&lt; sim::SimChannel &gt; &amp;schArray)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d18/MCRecoEdep_8cxx_source.html#l00060">MCRecoEdep.cxx:60</a></div></div>
-<div class="ttc" id="classsim_1_1MCShowerRecoAlg_html_a6d4c07431ea41ae7ee279bdc4b15a26a"><div class="ttname"><a href="../../d4/d28/classsim_1_1MCShowerRecoAlg.html#a6d4c07431ea41ae7ee279bdc4b15a26a">sim::MCShowerRecoAlg::Reconstruct</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; sim::MCShower &gt; &gt; Reconstruct(MCRecoPart &amp;part_v, MCRecoEdep &amp;edep_v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db6/MCShowerRecoAlg_8cxx_source.html#l00041">MCShowerRecoAlg.cxx:41</a></div></div>
-<div class="ttc" id="classMCReco_html_aa8e1f41ad22c2b8262bde318139c6bee"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">MCReco::fMCSAlg</a></div><div class="ttdeci">::sim::MCShowerRecoAlg fMCSAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00043">MCReco_module.cc:43</a></div></div>
-<div class="ttc" id="classMCReco_html_ac2de9305e32bf7be503fcb94c4b406b6"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">MCReco::fEdep</a></div><div class="ttdeci">::sim::MCRecoEdep fEdep</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00042">MCReco_module.cc:42</a></div></div>
-<div class="ttc" id="classMCReco_html_a5d29903ca610cdfcfb12fffb116ae646"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">MCReco::fMCParticleLabel</a></div><div class="ttdeci">art::InputTag fMCParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00037">MCReco_module.cc:37</a></div></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// change implemented by David Caratelli to allow for MCRECO to run without SimChannels and using</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// SimEnergyDeposits instead</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">fUseSimEnergyDeposit</a> == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Retrieve SimEnergyDeposit</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimEnergyDeposit&gt; &gt; sedHandle;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>,sedHandle);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span>(!sedHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve sim::SimEnergyDeposit&quot;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">const</span> std::vector&lt;sim::SimEnergyDeposit&gt;&amp;  sed_array(*sedHandle);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">MakeMCEdep</a>(sed_array);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// Retrieve SimChannel</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    art::Handle&lt;std::vector&lt;sim::SimChannel&gt; &gt; schHandle;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">fSimChannelLabel</a>,schHandle);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(!schHandle.isValid()) <span class="keywordflow">throw</span> cet::exception(__FUNCTION__) &lt;&lt; <span class="stringliteral">&quot;Failed to retrieve sim::SimChannel&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">const</span> std::vector&lt;sim::SimChannel&gt;&amp;  sch_array(*schHandle);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">MakeMCEdep</a>(sch_array);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">//Add MCShowers and MCTracks to the event</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(<a class="code" href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">fMCSAlg</a>.<a class="code" href="../../d4/d28/classsim_1_1MCShowerRecoAlg.html#a6d4c07431ea41ae7ee279bdc4b15a26a">Reconstruct</a>(<a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>,<a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(<a class="code" href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">fMCTAlg</a>.<a class="code" href="../../d9/d3c/classsim_1_1MCTrackRecoAlg.html#ac265cd804c2413265f9163b3f834cd4e">Reconstruct</a>(<a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>,<a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>));</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">fEdep</a>.<a class="code" href="../../df/df0/classsim_1_1MCRecoEdep.html#a78366a0381294d41f70205aafe703ab7">Clear</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">fPart</a>.clear();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="classsim_1_1MCRecoEdep_html_a78366a0381294d41f70205aafe703ab7"><div class="ttname"><a href="../../df/df0/classsim_1_1MCRecoEdep.html#a78366a0381294d41f70205aafe703ab7">sim::MCRecoEdep::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df9/MCRecoEdep_8h_source.html#l00123">MCRecoEdep.h:123</a></div></div>
+<div class="ttc" id="classsim_1_1MCRecoEdep_html_ace6f36fe2f7ab4dd6a3c7a7734f6762e"><div class="ttname"><a href="../../df/df0/classsim_1_1MCRecoEdep.html#ace6f36fe2f7ab4dd6a3c7a7734f6762e">sim::MCRecoEdep::MakeMCEdep</a></div><div class="ttdeci">void MakeMCEdep(const std::vector&lt; sim::SimChannel &gt; &amp;schArray)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d18/MCRecoEdep_8cxx_source.html#l00066">MCRecoEdep.cxx:66</a></div></div>
+<div class="ttc" id="classsim_1_1MCShowerRecoAlg_html_a6d4c07431ea41ae7ee279bdc4b15a26a"><div class="ttname"><a href="../../d4/d28/classsim_1_1MCShowerRecoAlg.html#a6d4c07431ea41ae7ee279bdc4b15a26a">sim::MCShowerRecoAlg::Reconstruct</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; sim::MCShower &gt; &gt; Reconstruct(MCRecoPart &amp;part_v, MCRecoEdep &amp;edep_v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/db6/MCShowerRecoAlg_8cxx_source.html#l00045">MCShowerRecoAlg.cxx:45</a></div></div>
+<div class="ttc" id="classMCReco_html_aa8e1f41ad22c2b8262bde318139c6bee"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#aa8e1f41ad22c2b8262bde318139c6bee">MCReco::fMCSAlg</a></div><div class="ttdeci">::sim::MCShowerRecoAlg fMCSAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00044">MCReco_module.cc:44</a></div></div>
+<div class="ttc" id="classMCReco_html_ac2de9305e32bf7be503fcb94c4b406b6"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac2de9305e32bf7be503fcb94c4b406b6">MCReco::fEdep</a></div><div class="ttdeci">::sim::MCRecoEdep fEdep</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00043">MCReco_module.cc:43</a></div></div>
+<div class="ttc" id="classMCReco_html_a5d29903ca610cdfcfb12fffb116ae646"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a5d29903ca610cdfcfb12fffb116ae646">MCReco::fMCParticleLabel</a></div><div class="ttdeci">art::InputTag fMCParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00038">MCReco_module.cc:38</a></div></div>
 <div class="ttc" id="classsim_1_1MCRecoPart_html_a6fbc5908dd0547f4298e9e0525f2de3f"><div class="ttname"><a href="../../d9/d6a/classsim_1_1MCRecoPart.html#a6fbc5908dd0547f4298e9e0525f2de3f">sim::MCRecoPart::AddParticles</a></div><div class="ttdeci">void AddParticles(const std::vector&lt; simb::MCParticle &gt; &amp;mcp_v, const std::vector&lt; simb::Origin_t &gt; &amp;orig_v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc7/MCRecoPart_8cxx_source.html#l00128">MCRecoPart.cxx:128</a></div></div>
-<div class="ttc" id="classMCReco_html_af2a7d4e659b97f15e1ff16259ae6a7ae"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">MCReco::fPart</a></div><div class="ttdeci">::sim::MCRecoPart fPart</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00041">MCReco_module.cc:41</a></div></div>
-<div class="ttc" id="classMCReco_html_ac7c7698ae29db19b528598cc6b2e8511"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">MCReco::fSimChannelLabel</a></div><div class="ttdeci">art::InputTag fSimChannelLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00038">MCReco_module.cc:38</a></div></div>
-<div class="ttc" id="classMCReco_html_a14767844c014f5f16fe5035cae9b3e60"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">MCReco::fUseSimEnergyDeposit</a></div><div class="ttdeci">bool fUseSimEnergyDeposit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00039">MCReco_module.cc:39</a></div></div>
-<div class="ttc" id="classMCReco_html_a88f7cd0ba5663f957b78c9e29f982415"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">MCReco::fMCTAlg</a></div><div class="ttdeci">::sim::MCTrackRecoAlg fMCTAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00044">MCReco_module.cc:44</a></div></div>
-<div class="ttc" id="classsim_1_1MCTrackRecoAlg_html_ac265cd804c2413265f9163b3f834cd4e"><div class="ttname"><a href="../../d9/d3c/classsim_1_1MCTrackRecoAlg.html#ac265cd804c2413265f9163b3f834cd4e">sim::MCTrackRecoAlg::Reconstruct</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; sim::MCTrack &gt; &gt; Reconstruct(MCRecoPart &amp;part_v, MCRecoEdep &amp;edep_v)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/MCTrackRecoAlg_8cxx_source.html#l00030">MCTrackRecoAlg.cxx:30</a></div></div>
-<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00007">DataStructs.cxx:7</a></div></div>
+<div class="ttc" id="classMCReco_html_af2a7d4e659b97f15e1ff16259ae6a7ae"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#af2a7d4e659b97f15e1ff16259ae6a7ae">MCReco::fPart</a></div><div class="ttdeci">::sim::MCRecoPart fPart</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00042">MCReco_module.cc:42</a></div></div>
+<div class="ttc" id="classMCReco_html_ac7c7698ae29db19b528598cc6b2e8511"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#ac7c7698ae29db19b528598cc6b2e8511">MCReco::fSimChannelLabel</a></div><div class="ttdeci">art::InputTag fSimChannelLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00039">MCReco_module.cc:39</a></div></div>
+<div class="ttc" id="classMCReco_html_a14767844c014f5f16fe5035cae9b3e60"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a14767844c014f5f16fe5035cae9b3e60">MCReco::fUseSimEnergyDeposit</a></div><div class="ttdeci">bool fUseSimEnergyDeposit</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00040">MCReco_module.cc:40</a></div></div>
+<div class="ttc" id="classMCReco_html_a88f7cd0ba5663f957b78c9e29f982415"><div class="ttname"><a href="../../d2/dd3/classMCReco.html#a88f7cd0ba5663f957b78c9e29f982415">MCReco::fMCTAlg</a></div><div class="ttdeci">::sim::MCTrackRecoAlg fMCTAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/MCReco__module_8cc_source.html#l00045">MCReco_module.cc:45</a></div></div>
+<div class="ttc" id="classsim_1_1MCTrackRecoAlg_html_ac265cd804c2413265f9163b3f834cd4e"><div class="ttname"><a href="../../d9/d3c/classsim_1_1MCTrackRecoAlg.html#ac265cd804c2413265f9163b3f834cd4e">sim::MCTrackRecoAlg::Reconstruct</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; sim::MCTrack &gt; &gt; Reconstruct(MCRecoPart &amp;part_v, MCRecoEdep &amp;edep_v)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/MCTrackRecoAlg_8cxx_source.html#l00031">MCTrackRecoAlg.cxx:31</a></div></div>
+<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,7 +286,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00037">37</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00038">38</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00043">43</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00044">44</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00045">45</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00041">41</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00038">38</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00039">39</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>
@@ -418,7 +418,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00039">39</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d6/de8/MCReco__module_8cc_source.html">MCReco_module.cc</a>.</p>
 
 </div>
 </div>

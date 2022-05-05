@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
 <code>#include &quot;art/Framework/Principal/Run.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
 <code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;Framework/Algorithm/AlgFactory.h&quot;</code><br/>
@@ -162,10 +163,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00119">119</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;             {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NeutronOsc&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the neutron-antineutron oscillation generator&quot;</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00120">120</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;             {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NeutronOsc&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the neutron-antineutron oscillation generator&quot;</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,7 +211,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00116">116</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">117</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -224,7 +225,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00122">122</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00123">123</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -238,7 +239,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00123">123</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00124">124</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -253,11 +254,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>genie::EventRecordVisitorI *<span class="keyword">&gt;</span> (<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a>-&gt;GetAlgorithm(<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a>,<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a>))</div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00112">NeutronOsc_module.cc:112</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00110">NeutronOsc_module.cc:110</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00116">NeutronOsc_module.cc:116</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00113">NeutronOsc_module.cc:113</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00111">NeutronOsc_module.cc:111</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">NeutronOsc_module.cc:117</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">117</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00118">118</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -271,7 +272,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00112">112</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00113">113</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -285,7 +286,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00128">128</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00129">129</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -299,7 +300,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00110">110</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00111">111</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +316,7 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">  genie::PDGLibrary::Instance()</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00107">107</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00108">108</a> of file <a class="el" href="../../d5/d56/NeutronOsc__module_8cc_source.html">NeutronOsc_module.cc</a>.</p>
 
 </div>
 </div>

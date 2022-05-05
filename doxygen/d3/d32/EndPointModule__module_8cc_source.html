@@ -97,126 +97,128 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span><span class="comment">//Thanks to B. Morgan of U. of Warwick for comments and suggestions</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Framework includes</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/EDProducer.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/ModuleMacros.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Event.h&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Framework includes</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/EDProducer.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/ModuleMacros.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Event.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Handle.h&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Ptr.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/PtrVector.h&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// LArSoft includes</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d62/EndPoint2D_8h.html">lardataobj/RecoBase/EndPoint2D.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d77/Cluster_8h.html">lardataobj/RecoBase/Cluster.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d26/Hit_8h.html">lardataobj/RecoBase/Hit.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h.html">lardata/Utilities/AssociationUtil.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d2a/EndPointAlg_8h.html">larreco/RecoAlg/EndPointAlg.h</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/// 2D end point reconstruction</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span><span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">  ///module to find 2D end points</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html">   42</a></span>&#160;<span class="comment"></span> <span class="keyword">class </span><a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html">EndPointModule</a> :  <span class="keyword">public</span> art::EDProducer {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Assns.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Ptr.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/PtrVector.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// LArSoft includes</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d62/EndPoint2D_8h.html">lardataobj/RecoBase/EndPoint2D.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/d77/Cluster_8h.html">lardataobj/RecoBase/Cluster.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d26/Hit_8h.html">lardataobj/RecoBase/Hit.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h.html">lardata/Utilities/AssociationUtil.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d2a/EndPointAlg_8h.html">larreco/RecoAlg/EndPointAlg.h</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/// 2D end point reconstruction</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span><span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">  ///module to find 2D end points</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html">   44</a></span>&#160;<span class="comment"></span> <span class="keyword">class </span><a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html">EndPointModule</a> :  <span class="keyword">public</span> art::EDProducer {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">EndPointModule</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">EndPointModule</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">produce</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">   52</a></span>&#160;    std::string <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">produce</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">   54</a></span>&#160;    <a class="code" href="../../d8/d74/classcluster_1_1EndPointAlg.html">EndPointAlg</a> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">fEPAlg</a>;            <span class="comment">///&lt; object that contains the end point finding algorithm</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">   54</a></span>&#160;    std::string <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">   56</a></span>&#160;    <a class="code" href="../../d8/d74/classcluster_1_1EndPointAlg.html">EndPointAlg</a> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">fEPAlg</a>;            <span class="comment">///&lt; object that contains the end point finding algorithm</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  };</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">   65</a></span>&#160;  <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">EndPointModule::EndPointModule</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    : EDProducer{pset}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    , fEPAlg(pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;EndPointAlg&quot;</span>))</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    fDBScanModuleLabel = pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;DBScanModuleLabel&quot;</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    produces&lt; std::vector&lt;recob::EndPoint2D&gt; &gt;();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    produces&lt; art::Assns&lt;recob::EndPoint2D, recob::Hit&gt; &gt;();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">   67</a></span>&#160;  <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">EndPointModule::EndPointModule</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    : EDProducer{pset}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    , fEPAlg(pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;EndPointAlg&quot;</span>))</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    fDBScanModuleLabel = pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;DBScanModuleLabel&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    produces&lt; std::vector&lt;recob::EndPoint2D&gt; &gt;();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    produces&lt; art::Assns&lt;recob::EndPoint2D, recob::Hit&gt; &gt;();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">EndPointModule::produce</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    art::Handle&lt; std::vector&lt;recob::Cluster&gt; &gt; clusterListHandle;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    evt.getByLabel(<a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>,clusterListHandle);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//Point to a collection of vertices to output.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//.......................................</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    art::PtrVector&lt;recob::Cluster&gt; clusIn;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ii = 0; ii &lt; clusterListHandle-&gt;size(); ++ii)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        art::Ptr&lt;recob::Cluster&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a>(clusterListHandle, ii);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        clusIn.push_back(cluster);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// make a std::vector&lt;recob::Cluster&gt; for the output of the</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Hough Transform</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::vector&lt;recob::EndPoint2D&gt; vtxOut;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::vector&lt; art::PtrVector&lt;recob::Hit&gt; &gt; vtxHitsOut;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">size_t</span> numvtx = <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">fEPAlg</a>.<a class="code" href="../../d8/d74/classcluster_1_1EndPointAlg.html#a9e7a0ed4ff85c924cff845428103f847">EndPoint</a>(clusIn, vtxOut, vtxHitsOut, evt, <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    MF_LOG_DEBUG(<span class="stringliteral">&quot;Vertex&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; numvtx &lt;&lt; <span class="stringliteral">&quot;vertices with VertexService&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">   79</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">EndPointModule::produce</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    art::Handle&lt; std::vector&lt;recob::Cluster&gt; &gt; clusterListHandle;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    evt.getByLabel(<a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>,clusterListHandle);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//Point to a collection of vertices to output.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//.......................................</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    art::PtrVector&lt;recob::Cluster&gt; clusIn;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ii = 0; ii &lt; clusterListHandle-&gt;size(); ++ii)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        art::Ptr&lt;recob::Cluster&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a>(clusterListHandle, ii);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        clusIn.push_back(cluster);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// make a std::vector&lt;recob::Cluster&gt; for the output of the</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Hough Transform</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::vector&lt;recob::EndPoint2D&gt; vtxOut;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt; art::PtrVector&lt;recob::Hit&gt; &gt; vtxHitsOut;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">size_t</span> numvtx = <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">fEPAlg</a>.<a class="code" href="../../d8/d74/classcluster_1_1EndPointAlg.html#a9e7a0ed4ff85c924cff845428103f847">EndPoint</a>(clusIn, vtxOut, vtxHitsOut, evt, <a class="code" href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">fDBScanModuleLabel</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//Point to a collection of vertices to output.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::unique_ptr&lt;std::vector&lt;recob::EndPoint2D&gt; &gt; vtxcol(<span class="keyword">new</span> std::vector&lt;recob::EndPoint2D&gt;(vtxOut));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::unique_ptr&lt; art::Assns&lt;recob::EndPoint2D, recob::Hit&gt; &gt; assn(<span class="keyword">new</span> art::Assns&lt;recob::EndPoint2D, recob::Hit&gt;);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> v = 0; v &lt; vtxcol-&gt;size(); ++v)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(*<span class="keyword">this</span>, evt, *(vtxcol.get()), vtxHitsOut[v], *(assn.get()), v);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    evt.put(std::move(vtxcol));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    evt.put(std::move(assn));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <span class="comment">// end namespace</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    MF_LOG_DEBUG(<span class="stringliteral">&quot;Vertex&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; numvtx &lt;&lt; <span class="stringliteral">&quot;vertices with VertexService&quot;</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//Point to a collection of vertices to output.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::unique_ptr&lt;std::vector&lt;recob::EndPoint2D&gt; &gt; vtxcol(<span class="keyword">new</span> std::vector&lt;recob::EndPoint2D&gt;(vtxOut));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::unique_ptr&lt; art::Assns&lt;recob::EndPoint2D, recob::Hit&gt; &gt; assn(<span class="keyword">new</span> art::Assns&lt;recob::EndPoint2D, recob::Hit&gt;);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> v = 0; v &lt; vtxcol-&gt;size(); ++v)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a>(*<span class="keyword">this</span>, evt, *(vtxcol.get()), vtxHitsOut[v], *(assn.get()), v);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    evt.put(std::move(vtxcol));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    evt.put(std::move(assn));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;} <span class="comment">// end namespace</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  DEFINE_ART_MODULE(EndPointModule)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a>{</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  DEFINE_ART_MODULE(EndPointModule)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 <div class="ttc" id="EndPointAlg_8h_html"><div class="ttname"><a href="../../da/d2a/EndPointAlg_8h.html">EndPointAlg.h</a></div><div class="ttdoc">algorithm to find 2D endpoints </div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_afac1ac7b61385644c993fbb774a1922f"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a></div><div class="ttdeci">process_name cluster</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="Hit_8h_html"><div class="ttname"><a href="../../de/d26/Hit_8h.html">Hit.h</a></div><div class="ttdoc">Declaration of signal hit object. </div></div>
-<div class="ttc" id="classcluster_1_1EndPointModule_html_a7b40870c33e15f96dcba5e5741d6ed6e"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">cluster::EndPointModule::produce</a></div><div class="ttdeci">void produce(art::Event &amp;evt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00077">EndPointModule_module.cc:77</a></div></div>
+<div class="ttc" id="classcluster_1_1EndPointModule_html_a7b40870c33e15f96dcba5e5741d6ed6e"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a7b40870c33e15f96dcba5e5741d6ed6e">cluster::EndPointModule::produce</a></div><div class="ttdeci">void produce(art::Event &amp;evt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00079">EndPointModule_module.cc:79</a></div></div>
 <div class="ttc" id="EndPoint2D_8h_html"><div class="ttname"><a href="../../d5/d62/EndPoint2D_8h.html">EndPoint2D.h</a></div></div>
 <div class="ttc" id="classcluster_1_1EndPointAlg_html_a9e7a0ed4ff85c924cff845428103f847"><div class="ttname"><a href="../../d8/d74/classcluster_1_1EndPointAlg.html#a9e7a0ed4ff85c924cff845428103f847">cluster::EndPointAlg::EndPoint</a></div><div class="ttdeci">size_t EndPoint(const art::PtrVector&lt; recob::Cluster &gt; &amp;clusIn, std::vector&lt; recob::EndPoint2D &gt; &amp;vtxcol, std::vector&lt; art::PtrVector&lt; recob::Hit &gt; &gt; &amp;vtxHitsOut, art::Event const &amp;evt, std::string const &amp;label) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d4d/EndPointAlg_8cxx_source.html#l00122">EndPointAlg.cxx:122</a></div></div>
-<div class="ttc" id="classcluster_1_1EndPointModule_html_ade0256f3b44d0a911360bcc90b703fec"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">cluster::EndPointModule::fDBScanModuleLabel</a></div><div class="ttdeci">std::string fDBScanModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00052">EndPointModule_module.cc:52</a></div></div>
+<div class="ttc" id="classcluster_1_1EndPointModule_html_ade0256f3b44d0a911360bcc90b703fec"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#ade0256f3b44d0a911360bcc90b703fec">cluster::EndPointModule::fDBScanModuleLabel</a></div><div class="ttdeci">std::string fDBScanModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00054">EndPointModule_module.cc:54</a></div></div>
 <div class="ttc" id="Cluster_8h_html"><div class="ttname"><a href="../../d8/d77/Cluster_8h.html">Cluster.h</a></div><div class="ttdoc">Declaration of cluster object. </div></div>
 <div class="ttc" id="classcluster_1_1EndPointAlg_html"><div class="ttname"><a href="../../d8/d74/classcluster_1_1EndPointAlg.html">cluster::EndPointAlg</a></div><div class="ttdoc">Algorithm to find 2D end points. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/EndPointAlg_8h_source.html#l00027">EndPointAlg.h:27</a></div></div>
-<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00581">lardata/lardata/Utilities/AssociationUtil.h:581</a></div></div>
+<div class="ttc" id="namespaceutil_html_ac016dc123242a7f1d5c81594de910717"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ac016dc123242a7f1d5c81594de910717">util::CreateAssn</a></div><div class="ttdeci">bool CreateAssn(art::Event &amp;evt, std::vector&lt; T &gt; const &amp;a, art::Ptr&lt; U &gt; const &amp;b, art::Assns&lt; U, T &gt; &amp;assn, std::string a_instance, size_t index=UINT_MAX)</div><div class="ttdoc">Creates a single one-to-one association. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h_source.html#l00586">lardata/lardata/Utilities/AssociationUtil.h:586</a></div></div>
 <div class="ttc" id="lardata_2lardata_2Utilities_2AssociationUtil_8h_html"><div class="ttname"><a href="../../d5/d9c/lardata_2lardata_2Utilities_2AssociationUtil_8h.html">AssociationUtil.h</a></div></div>
-<div class="ttc" id="classcluster_1_1EndPointModule_html_a5bae94230c3802884a974097942eed2e"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">cluster::EndPointModule::fEPAlg</a></div><div class="ttdeci">EndPointAlg fEPAlg</div><div class="ttdoc">object that contains the end point finding algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00054">EndPointModule_module.cc:54</a></div></div>
-<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00007">DataStructs.cxx:7</a></div></div>
-<div class="ttc" id="classcluster_1_1EndPointModule_html"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html">cluster::EndPointModule</a></div><div class="ttdoc">module to find 2D end points </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00042">EndPointModule_module.cc:42</a></div></div>
-<div class="ttc" id="classcluster_1_1EndPointModule_html_a0217a38df9b7909c21eedf157258720a"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">cluster::EndPointModule::EndPointModule</a></div><div class="ttdeci">EndPointModule(fhicl::ParameterSet const &amp;pset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00065">EndPointModule_module.cc:65</a></div></div>
+<div class="ttc" id="classcluster_1_1EndPointModule_html_a5bae94230c3802884a974097942eed2e"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a5bae94230c3802884a974097942eed2e">cluster::EndPointModule::fEPAlg</a></div><div class="ttdeci">EndPointAlg fEPAlg</div><div class="ttdoc">object that contains the end point finding algorithm </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00056">EndPointModule_module.cc:56</a></div></div>
+<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
+<div class="ttc" id="classcluster_1_1EndPointModule_html"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html">cluster::EndPointModule</a></div><div class="ttdoc">module to find 2D end points </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00044">EndPointModule_module.cc:44</a></div></div>
+<div class="ttc" id="classcluster_1_1EndPointModule_html_a0217a38df9b7909c21eedf157258720a"><div class="ttname"><a href="../../d0/d4b/classcluster_1_1EndPointModule.html#a0217a38df9b7909c21eedf157258720a">cluster::EndPointModule::EndPointModule</a></div><div class="ttdeci">EndPointModule(fhicl::ParameterSet const &amp;pset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d32/EndPointModule__module_8cc_source.html#l00067">EndPointModule_module.cc:67</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

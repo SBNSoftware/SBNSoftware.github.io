@@ -81,14 +81,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">ProjectionMatchingAlg.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;fhiclcpp/fwd.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/types/Atom.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;fhiclcpp/types/Atom.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Comment.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Name.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/types/Table.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d26/Hit_8h_source.html">lardataobj/RecoBase/Hit.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/d13/DataProviderAlg_8h_source.html">larreco/RecoAlg/ImagePatternAlgs/DataProvider/DataProviderAlg.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d48/geo__types_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_types.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../df/d67/PmaTrack3D_8h_source.html">larreco/RecoAlg/PMAlg/PmaTrack3D.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/de4/larreco_2larreco_2RecoAlg_2PMAlg_2Utilities_8h_source.html">larreco/RecoAlg/PMAlg/Utilities.h</a>&quot;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div>
 <p><a href="../../da/d26/ProjectionMatchingAlg_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -101,11 +104,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:d2/d70/namespacefhicl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d70/namespacefhicl.html">fhicl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d7/d8a/namespacedetinfo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8a/namespacedetinfo.html">detinfo</a></td></tr>
 <tr class="memdesc:d7/d8a/namespacedetinfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">General LArSoft Utilities. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d6/d23/namespacegeo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d23/namespacegeo.html">geo</a></td></tr>
 <tr class="memdesc:d6/d23/namespacegeo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that the geometry check information is available. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d05/namespaceimg"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d05/namespaceimg.html">img</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d2/d42/namespacelariov"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d42/namespacelariov.html">lariov</a></td></tr>
 <tr class="memdesc:d2/d42/namespacelariov"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters for channels, events, etc. <br/></td></tr>

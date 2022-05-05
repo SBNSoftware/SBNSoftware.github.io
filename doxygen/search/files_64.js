@@ -69,7 +69,6 @@ var searchData=
   ['decon1droi_5fmodule_2ecc',['Decon1DROI_module.cc',['../da/d33/Decon1DROI__module_8cc.html',1,'']]],
   ['decontools_5ficarus_2efcl',['deconTools_icarus.fcl',['../d7/d13/deconTools__icarus_8fcl.html',1,'']]],
   ['dedx_2epy',['dedx.py',['../df/df9/dedx_8py.html',1,'']]],
-  ['defaultopdetresponse_2eh',['DefaultOpDetResponse.h',['../d6/d12/DefaultOpDetResponse_8h.html',1,'']]],
   ['defaultopdetresponse_5fservice_2ecc',['DefaultOpDetResponse_service.cc',['../dd/dae/DefaultOpDetResponse__service_8cc.html',1,'']]],
   ['deltarayextensionalgorithm_2ecc',['DeltaRayExtensionAlgorithm.cc',['../da/de0/DeltaRayExtensionAlgorithm_8cc.html',1,'']]],
   ['deltarayextensionalgorithm_2eh',['DeltaRayExtensionAlgorithm.h',['../db/d65/DeltaRayExtensionAlgorithm_8h.html',1,'']]],

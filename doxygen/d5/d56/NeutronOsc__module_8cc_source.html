@@ -116,286 +116,287 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Core/ModuleMacros.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Event.h&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Run.h&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// GENIE includes</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;Framework/Algorithm/AlgFactory.h&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;Framework/EventGen/EventRecordVisitorI.h&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;Framework/EventGen/EventRecord.h&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;Physics/NNBarOscillation/NNBarOscMode.h&quot;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;Framework/ParticleData/PDGLibrary.h&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;Framework/GHEP/GHepParticle.h&quot;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;Framework/Utils/AppInit.h&quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// larsoft includes</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &quot;nusimdata/SimulationBase/MCTruth.h&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;nusimdata/SimulationBase/MCParticle.h&quot;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;nugen/EventGeneratorBase/GENIE/GENIE2ART.h&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d86/RunData_8h.html">larcoreobj/SummaryData/RunData.h</a>&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// c++ includes</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;CLHEP/Random/RandFlat.h&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span>evgen {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">class </span>NeutronOsc;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a> : <span class="keyword">public</span> art::EDProducer {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(fhicl::ParameterSet <span class="keyword">const</span> &amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// The destructor generated by the compiler is fine for classes</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// without bare pointers or other resource use.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// Plugins should not be copied or assigned.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp; <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99b389aeb44eb6c09b3a1224dc86aa3a">operator = </a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp; <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99b389aeb44eb6c09b3a1224dc86aa3a">operator = </a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Required functions.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">produce</a>(art::Event &amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">// Selected optional functions.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">beginRun</a>(art::Run&amp; run) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// Additional functions</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">SelectAnnihilationMode</a>(<span class="keywordtype">int</span> pdg_code);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Declare member data here.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">   95</a></span>&#160;  <span class="keyword">const</span> genie::EventRecordVisitorI * <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">mcgen</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">   96</a></span>&#160;  genie::NNBarOscMode_t <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">gOptDecayMode</a>    = genie::kNONull;             <span class="comment">// neutron-antineutron oscillation mode</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">   97</a></span>&#160;  CLHEP::RandFlat <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">flatDist</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/ParameterSet.h&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// GENIE includes</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;Framework/Algorithm/AlgFactory.h&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;Framework/EventGen/EventRecordVisitorI.h&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;Framework/EventGen/EventRecord.h&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;Physics/NNBarOscillation/NNBarOscMode.h&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;Framework/ParticleData/PDGLibrary.h&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;Framework/GHEP/GHepParticle.h&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;Framework/Utils/AppInit.h&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// larsoft includes</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;nusimdata/SimulationBase/MCTruth.h&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &quot;nusimdata/SimulationBase/MCParticle.h&quot;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &quot;nugen/EventGeneratorBase/GENIE/GENIE2ART.h&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d86/RunData_8h.html">larcoreobj/SummaryData/RunData.h</a>&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// c++ includes</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;CLHEP/Random/RandFlat.h&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">namespace </span>evgen {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">class </span>NeutronOsc;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a> : <span class="keyword">public</span> art::EDProducer {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(fhicl::ParameterSet <span class="keyword">const</span> &amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// The destructor generated by the compiler is fine for classes</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// without bare pointers or other resource use.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Plugins should not be copied or assigned.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">NeutronOsc</a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp; <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99b389aeb44eb6c09b3a1224dc86aa3a">operator = </a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> <span class="keyword">const</span> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp; <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99b389aeb44eb6c09b3a1224dc86aa3a">operator = </a>(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">NeutronOsc</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Required functions.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">produce</a>(art::Event &amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Selected optional functions.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">beginRun</a>(art::Run&amp; run) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// Additional functions</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">SelectAnnihilationMode</a>(<span class="keywordtype">int</span> pdg_code);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// Declare member data here.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">   96</a></span>&#160;  <span class="keyword">const</span> genie::EventRecordVisitorI * <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">mcgen</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">   97</a></span>&#160;  genie::NNBarOscMode_t <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">gOptDecayMode</a>    = genie::kNONull;             <span class="comment">// neutron-antineutron oscillation mode</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">   98</a></span>&#160;  CLHEP::RandFlat <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">flatDist</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">  102</a></span>&#160;<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">evgen::NeutronOsc::NeutronOsc</a>(fhicl::ParameterSet <span class="keyword">const</span> &amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  : art::EDProducer{p}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// create a default random engine; obtain the random seed from NuRandomService,</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// unless overridden in configuration with key &quot;Seed&quot;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  , flatDist{art::ServiceHandle&lt;rndm::NuRandomService&gt;{}-&gt;createEngine(*<span class="keyword">this</span>, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, <span class="stringliteral">&quot;Seed&quot;</span>)}</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#af5e6c4a8fe01152a65ec01923e1c8158">  107</a></span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  genie::PDGLibrary::Instance(); <span class="comment">//Ensure Messenger is started first in GENIE.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">  110</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a>   = <span class="stringliteral">&quot;genie::EventGenerator&quot;</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// GENIE v2 // string sconfig = &quot;NeutronOsc&quot;;</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">  112</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a> = <span class="stringliteral">&quot;NNBarOsc&quot;</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// GENIE v3 needs a tune (even if irrelevant)</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  evgb::SetEventGeneratorListAndTune(<span class="stringliteral">&quot;Default&quot;</span>,<span class="stringliteral">&quot;Default&quot;</span>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">  116</a></span>&#160;  genie::AlgFactory * <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a> = genie::AlgFactory::Instance();</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">  117</a></span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a> =</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>genie::EventRecordVisitorI *<span class="keyword">&gt;</span> (algf-&gt;GetAlgorithm(sname,sconfig));</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a60684982ab558d698e8ab94048d7042f">  119</a></span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a>) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NeutronOsc&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the neutron-antineutron oscillation generator&quot;</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">  122</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">fDecayMode</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;DecayMode&quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">  123</a></span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a> = (genie::NNBarOscMode_t) fDecayMode;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  produces&lt; std::vector&lt;simb::MCTruth&gt; &gt;();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  produces&lt; sumdata::RunData, art::InRun &gt;();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">  128</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a> = art::ServiceHandle&lt;rndm::NuRandomService&gt;()-&gt;getSeed();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  genie::utils::app_init::RandGen(seed);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">evgen::NeutronOsc::produce</a>(art::Event &amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">// Implementation of required member function here.</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  genie::EventRecord * <span class="keyword">event</span> = <span class="keyword">new</span> genie::EventRecord;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">int</span> target = 1000180400;  <span class="comment">//Only use argon target</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">int</span> decay  = SelectAnnihilationMode(target);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  genie::Interaction * interaction = genie::Interaction::NOsc(target,decay);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">event</span>-&gt;AttachSummary(interaction);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="comment">// Simulate decay</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a>-&gt;ProcessEventRecord(event);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">//  genie::Interaction *inter = event-&gt;Summary();</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">//  const genie::InitialState &amp;initState = inter-&gt;InitState();</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">//  std::cout&lt;&lt;&quot;initState = &quot;&lt;&lt;initState.AsString()&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">//  const genie::ProcessInfo &amp;procInfo = inter-&gt;ProcInfo();</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//  std::cout&lt;&lt;&quot;procInfo = &quot;&lt;&lt;procInfo.AsString()&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  MF_LOG_DEBUG(<span class="stringliteral">&quot;NeutronOsc&quot;</span>)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Generated event: &quot;</span> &lt;&lt; *event;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::unique_ptr&lt; std::vector&lt;simb::MCTruth&gt; &gt; truthcol(<span class="keyword">new</span> std::vector&lt;simb::MCTruth&gt;);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  simb::MCTruth truth;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="comment">// Find boundary of active volume</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">double</span> minx = 1e9;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">double</span> maxx = -1e9;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">double</span> miny = 1e9;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">double</span> maxy = -1e9;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">double</span> minz = 1e9;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">double</span> maxz = -1e9;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i&lt;geo-&gt;NTPC(); ++i){</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a> &amp;tpc = geo-&gt;TPC(i);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (minx&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#afd042da19afb090ba80e93ee64d4dec5">MinX</a>()) minx = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#afd042da19afb090ba80e93ee64d4dec5">MinX</a>();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">if</span> (maxx&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#ae141949f30631ded82199f4375c21b7e">MaxX</a>()) maxx = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#ae141949f30631ded82199f4375c21b7e">MaxX</a>();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (miny&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#abc0cab4f0fcd826d11aaa8b3dfb2de02">MinY</a>()) miny = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#abc0cab4f0fcd826d11aaa8b3dfb2de02">MinY</a>();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (maxy&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a71626e62af098d6a8c09dd97bbf4812b">MaxY</a>()) maxy = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a71626e62af098d6a8c09dd97bbf4812b">MaxY</a>();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (minz&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a67f01c76c031e29c5bcc610f23a0be85">MinZ</a>()) minz = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a67f01c76c031e29c5bcc610f23a0be85">MinZ</a>();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (maxz&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#aff3c6d62c880e387d35ab093bdbdcffc">MaxZ</a>()) maxz = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#aff3c6d62c880e387d35ab093bdbdcffc">MaxZ</a>();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="comment">// Assign vertice position</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d6/d55/multigen_8fcl.html#ac34c9cce9286f898da9018a51aa394c0">X0</a> = flatDist.fire( minx, maxx );</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../db/dd5/gen__protons_8fcl.html#a4f981fb8e76f7dbe1581a4331eaee318">Y0</a> = flatDist.fire( miny, maxy );</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../db/dd5/gen__protons_8fcl.html#ad568969a7bb41b7836fed304fdf4f46e">Z0</a> = flatDist.fire( minz, maxz );</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  TIter partitr(event);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  genie::GHepParticle *part = 0;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">// GHepParticles return units of GeV/c for p.  the V_i are all in fermis</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">// and are relative to the center of the struck nucleus.</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// add the vertex X/Y/Z to the V_i for status codes 0 and 1</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">int</span> trackid = 0;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  std::string primary(<span class="stringliteral">&quot;primary&quot;</span>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">while</span>( (part = dynamic_cast&lt;genie::GHepParticle *&gt;(partitr.Next())) ){</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    simb::MCParticle tpart(trackid,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                           part-&gt;Pdg(),</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                           primary,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                           part-&gt;FirstMother(),</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                           part-&gt;Mass(),</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                           part-&gt;Status());</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    TLorentzVector pos(X0, Y0, Z0, 0);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    TLorentzVector mom(part-&gt;Px(), part-&gt;Py(), part-&gt;Pz(), part-&gt;E());</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    tpart.AddTrajectoryPoint(pos,mom);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(part-&gt;PolzIsSet()) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      TVector3 polz;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      part-&gt;GetPolarization(polz);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      tpart.SetPolarization(polz);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    truth.Add(tpart);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    ++trackid;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  }<span class="comment">// end loop to convert GHepParticles to MCParticles</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  truth.SetOrigin(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">simb::kUnknown</a>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  truthcol-&gt;push_back(truth);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="comment">//FillHistograms(truth);</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  e.put(std::move(truthcol));</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">delete</span> event;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">  216</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">evgen::NeutronOsc::beginRun</a>(art::Run&amp; run)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  run.put(std::make_unique&lt;sumdata::RunData&gt;(geo-&gt;DetectorName()));</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">  103</a></span>&#160;<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">evgen::NeutronOsc::NeutronOsc</a>(fhicl::ParameterSet <span class="keyword">const</span> &amp; <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  : art::EDProducer{p}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// create a default random engine; obtain the random seed from NuRandomService,</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// unless overridden in configuration with key &quot;Seed&quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  , flatDist{art::ServiceHandle&lt;rndm::NuRandomService&gt;{}-&gt;createEngine(*<span class="keyword">this</span>, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, <span class="stringliteral">&quot;Seed&quot;</span>)}</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#af5e6c4a8fe01152a65ec01923e1c8158">  108</a></span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  genie::PDGLibrary::Instance(); <span class="comment">//Ensure Messenger is started first in GENIE.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">  111</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a>   = <span class="stringliteral">&quot;genie::EventGenerator&quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// GENIE v2 // string sconfig = &quot;NeutronOsc&quot;;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">  113</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a> = <span class="stringliteral">&quot;NNBarOsc&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// GENIE v3 needs a tune (even if irrelevant)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  evgb::SetEventGeneratorListAndTune(<span class="stringliteral">&quot;Default&quot;</span>,<span class="stringliteral">&quot;Default&quot;</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">  117</a></span>&#160;  genie::AlgFactory * <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a> = genie::AlgFactory::Instance();</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">  118</a></span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a> =</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>genie::EventRecordVisitorI *<span class="keyword">&gt;</span> (algf-&gt;GetAlgorithm(sname,sconfig));</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a60684982ab558d698e8ab94048d7042f">  120</a></span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a>) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;NeutronOsc&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Couldn&#39;t instantiate the neutron-antineutron oscillation generator&quot;</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">  123</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">fDecayMode</a> = <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;DecayMode&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">  124</a></span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a> = (genie::NNBarOscMode_t) fDecayMode;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  produces&lt; std::vector&lt;simb::MCTruth&gt; &gt;();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  produces&lt; sumdata::RunData, art::InRun &gt;();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">  129</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a> = art::ServiceHandle&lt;rndm::NuRandomService&gt;()-&gt;getSeed();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  genie::utils::app_init::RandGen(seed);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">  133</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">evgen::NeutronOsc::produce</a>(art::Event &amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// Implementation of required member function here.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  genie::EventRecord * <span class="keyword">event</span> = <span class="keyword">new</span> genie::EventRecord;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">int</span> target = 1000180400;  <span class="comment">//Only use argon target</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">int</span> decay  = SelectAnnihilationMode(target);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  genie::Interaction * interaction = genie::Interaction::NOsc(target,decay);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keyword">event</span>-&gt;AttachSummary(interaction);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">// Simulate decay</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a>-&gt;ProcessEventRecord(event);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">//  genie::Interaction *inter = event-&gt;Summary();</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">//  const genie::InitialState &amp;initState = inter-&gt;InitState();</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">//  std::cout&lt;&lt;&quot;initState = &quot;&lt;&lt;initState.AsString()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//  const genie::ProcessInfo &amp;procInfo = inter-&gt;ProcInfo();</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">//  std::cout&lt;&lt;&quot;procInfo = &quot;&lt;&lt;procInfo.AsString()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  MF_LOG_DEBUG(<span class="stringliteral">&quot;NeutronOsc&quot;</span>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Generated event: &quot;</span> &lt;&lt; *event;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  std::unique_ptr&lt; std::vector&lt;simb::MCTruth&gt; &gt; truthcol(<span class="keyword">new</span> std::vector&lt;simb::MCTruth&gt;);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  simb::MCTruth truth;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="comment">// Find boundary of active volume</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">double</span> minx = 1e9;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">double</span> maxx = -1e9;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">double</span> miny = 1e9;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">double</span> maxy = -1e9;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">double</span> minz = 1e9;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">double</span> maxz = -1e9;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i&lt;geo-&gt;NTPC(); ++i){</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a> &amp;tpc = geo-&gt;TPC(i);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">if</span> (minx&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#afd042da19afb090ba80e93ee64d4dec5">MinX</a>()) minx = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#afd042da19afb090ba80e93ee64d4dec5">MinX</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (maxx&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#ae141949f30631ded82199f4375c21b7e">MaxX</a>()) maxx = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#ae141949f30631ded82199f4375c21b7e">MaxX</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (miny&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#abc0cab4f0fcd826d11aaa8b3dfb2de02">MinY</a>()) miny = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#abc0cab4f0fcd826d11aaa8b3dfb2de02">MinY</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (maxy&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a71626e62af098d6a8c09dd97bbf4812b">MaxY</a>()) maxy = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a71626e62af098d6a8c09dd97bbf4812b">MaxY</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (minz&gt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a67f01c76c031e29c5bcc610f23a0be85">MinZ</a>()) minz = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a67f01c76c031e29c5bcc610f23a0be85">MinZ</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (maxz&lt;tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#aff3c6d62c880e387d35ab093bdbdcffc">MaxZ</a>()) maxz = tpc.<a class="code" href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#aff3c6d62c880e387d35ab093bdbdcffc">MaxZ</a>();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// Assign vertice position</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d6/d55/multigen_8fcl.html#ac34c9cce9286f898da9018a51aa394c0">X0</a> = flatDist.fire( minx, maxx );</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../db/dd5/gen__protons_8fcl.html#a4f981fb8e76f7dbe1581a4331eaee318">Y0</a> = flatDist.fire( miny, maxy );</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../db/dd5/gen__protons_8fcl.html#ad568969a7bb41b7836fed304fdf4f46e">Z0</a> = flatDist.fire( minz, maxz );</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  TIter partitr(event);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  genie::GHepParticle *part = 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">// GHepParticles return units of GeV/c for p.  the V_i are all in fermis</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// and are relative to the center of the struck nucleus.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="comment">// add the vertex X/Y/Z to the V_i for status codes 0 and 1</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">int</span> trackid = 0;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  std::string primary(<span class="stringliteral">&quot;primary&quot;</span>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">while</span>( (part = dynamic_cast&lt;genie::GHepParticle *&gt;(partitr.Next())) ){</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    simb::MCParticle tpart(trackid,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                           part-&gt;Pdg(),</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                           primary,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                           part-&gt;FirstMother(),</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                           part-&gt;Mass(),</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                           part-&gt;Status());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    TLorentzVector pos(X0, Y0, Z0, 0);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    TLorentzVector mom(part-&gt;Px(), part-&gt;Py(), part-&gt;Pz(), part-&gt;E());</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    tpart.AddTrajectoryPoint(pos,mom);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span>(part-&gt;PolzIsSet()) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      TVector3 polz;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      part-&gt;GetPolarization(polz);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      tpart.SetPolarization(polz);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    truth.Add(tpart);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    ++trackid;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }<span class="comment">// end loop to convert GHepParticles to MCParticles</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  truth.SetOrigin(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">simb::kUnknown</a>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  truthcol-&gt;push_back(truth);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="comment">//FillHistograms(truth);</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  e.put(std::move(truthcol));</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">delete</span> event;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">  217</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">evgen::NeutronOsc::beginRun</a>(art::Run&amp; run)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  run.put(std::make_unique&lt;sumdata::RunData&gt;(geo-&gt;DetectorName()));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">  223</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">evgen::NeutronOsc::SelectAnnihilationMode</a>(<span class="keywordtype">int</span> pdg_code)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="comment">// if the mode is set to &#39;random&#39; (the default), pick one at random!</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>)<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a> == 0) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    std::string pdg_string = <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">std::to_string</a>(static_cast&lt;long long&gt;(pdg_code));</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (pdg_string.size() != 10) {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expecting PDG code to be a 10-digit integer; instead, it&#39;s the following: &quot;</span> &lt;&lt; pdg_string &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#accc237606badc0385cb717703091fb61">exit</a>(1);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="comment">// count number of protons &amp; neutrons</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">int</span> n_nucleons = std::stoi(pdg_string.substr(6,3)) - 1;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">int</span> n_protons  = std::stoi(pdg_string.substr(3,3));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// factor proton / neutron ratio into branching ratios</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">double</span> proton_frac  = ((double)n_protons) / ((double)n_nucleons);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">double</span> neutron_frac = 1 - proton_frac;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">// set branching ratios, taken from bubble chamber data</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n_modes = 16;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">double</span> br [n_modes] = { 0.010, 0.080, 0.100, 0.220,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                            0.360, 0.160, 0.070, 0.020,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                            0.015, 0.065, 0.110, 0.280,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                            0.070, 0.240, 0.100, 0.100 };</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_modes; i++) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">if</span> (i &lt; 7)</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        br[i] *= proton_frac;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        br[i] *= neutron_frac;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">// randomly generate a number between 1 and 0</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> = flatDist.fire();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">// loop through all modes, figure out which one our random number corresponds to</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">double</span> threshold = 0;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_modes; i++) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      threshold += br[i];</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="keywordflow">if</span> (p &lt; threshold) {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">// once we&#39;ve found our mode, return it!</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        mode = i + 1;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">// error message, in case the random number selection fails</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Random selection of final state failed!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#accc237606badc0385cb717703091fb61">exit</a>(1);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">// if specific annihilation mode specified, just use that</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a> = (int) <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;DEFINE_ART_MODULE(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a>)</div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_a99cb917c50afe0d366642b8bfdf0bc95"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">evgen::NeutronOsc::NeutronOsc</a></div><div class="ttdeci">NeutronOsc(fhicl::ParameterSet const &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00102">NeutronOsc_module.cc:102</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_a77cefa31afed23c423c36048d543d969"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">evgen::NeutronOsc::beginRun</a></div><div class="ttdeci">void beginRun(art::Run &amp;run) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00216">NeutronOsc_module.cc:216</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00071">NeutronOsc_module.cc:71</a></div></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">  224</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">evgen::NeutronOsc::SelectAnnihilationMode</a>(<span class="keywordtype">int</span> pdg_code)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// if the mode is set to &#39;random&#39; (the default), pick one at random!</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>)<a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a> == 0) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    std::string pdg_string = <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">std::to_string</a>(static_cast&lt;long long&gt;(pdg_code));</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (pdg_string.size() != 10) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Expecting PDG code to be a 10-digit integer; instead, it&#39;s the following: &quot;</span> &lt;&lt; pdg_string &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#accc237606badc0385cb717703091fb61">exit</a>(1);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">// count number of protons &amp; neutrons</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">int</span> n_nucleons = std::stoi(pdg_string.substr(6,3)) - 1;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">int</span> n_protons  = std::stoi(pdg_string.substr(3,3));</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">// factor proton / neutron ratio into branching ratios</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordtype">double</span> proton_frac  = ((double)n_protons) / ((double)n_nucleons);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordtype">double</span> neutron_frac = 1 - proton_frac;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="comment">// set branching ratios, taken from bubble chamber data</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> n_modes = 16;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordtype">double</span> br [n_modes] = { 0.010, 0.080, 0.100, 0.220,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                            0.360, 0.160, 0.070, 0.020,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                            0.015, 0.065, 0.110, 0.280,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                            0.070, 0.240, 0.100, 0.100 };</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_modes; i++) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keywordflow">if</span> (i &lt; 7)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        br[i] *= proton_frac;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        br[i] *= neutron_frac;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// randomly generate a number between 1 and 0</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> = flatDist.fire();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="comment">// loop through all modes, figure out which one our random number corresponds to</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">double</span> threshold = 0;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n_modes; i++) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      threshold += br[i];</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">if</span> (p &lt; threshold) {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="comment">// once we&#39;ve found our mode, return it!</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        mode = i + 1;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">// error message, in case the random number selection fails</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Random selection of final state failed!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#accc237606badc0385cb717703091fb61">exit</a>(1);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="comment">// if specific annihilation mode specified, just use that</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a> = (int) <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;DEFINE_ART_MODULE(<a class="code" href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a>)</div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_a99cb917c50afe0d366642b8bfdf0bc95"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99cb917c50afe0d366642b8bfdf0bc95">evgen::NeutronOsc::NeutronOsc</a></div><div class="ttdeci">NeutronOsc(fhicl::ParameterSet const &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00103">NeutronOsc_module.cc:103</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_a77cefa31afed23c423c36048d543d969"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a77cefa31afed23c423c36048d543d969">evgen::NeutronOsc::beginRun</a></div><div class="ttdeci">void beginRun(art::Run &amp;run) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00217">NeutronOsc_module.cc:217</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html">evgen::NeutronOsc</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00072">NeutronOsc_module.cc:72</a></div></div>
 <div class="ttc" id="generate__icarus__geometry__splitwire_8pl_html_accc237606badc0385cb717703091fb61"><div class="ttname"><a href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#accc237606badc0385cb717703091fb61">exit</a></div><div class="ttdeci">exit</div><div class="ttdef"><b>Definition:</b> <a href="../../de/ddc/generate__icarus__geometry__splitwire_8pl_source.html#l00430">generate_icarus_geometry_splitwire.pl:430</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ac2a349dc924dd5aaca363d8cc43e34b5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a></div><div class="ttdeci">gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00123">NeutronOsc_module.cc:123</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ac2a349dc924dd5aaca363d8cc43e34b5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ac2a349dc924dd5aaca363d8cc43e34b5">gOptDecayMode</a></div><div class="ttdeci">gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00124">NeutronOsc_module.cc:124</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae329b0f520125896d02940bec370fca7">geo::kUnknown</a></div><div class="ttdoc">Unknown view. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00136">geo_types.h:136</a></div></div>
 <div class="ttc" id="gen__protons_8fcl_html_ad568969a7bb41b7836fed304fdf4f46e"><div class="ttname"><a href="../../db/dd5/gen__protons_8fcl.html#ad568969a7bb41b7836fed304fdf4f46e">Z0</a></div><div class="ttdeci">process_name opdaq physics producers generator physics producers generator physics producers generator Z0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd5/gen__protons_8fcl_source.html#l00045">gen_protons.fcl:45</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_afd042da19afb090ba80e93ee64d4dec5"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#afd042da19afb090ba80e93ee64d4dec5">geo::BoxBoundedGeo::MinX</a></div><div class="ttdeci">double MinX() const </div><div class="ttdoc">Returns the world x coordinate of the start of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00088">BoxBoundedGeo.h:88</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00112">NeutronOsc_module.cc:112</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_abe5e28540193e39b90ed0ebcc0cda5e5"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#abe5e28540193e39b90ed0ebcc0cda5e5">sconfig</a></div><div class="ttdeci">string sconfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00113">NeutronOsc_module.cc:113</a></div></div>
 <div class="ttc" id="classgeo_1_1TPCGeo_html"><div class="ttname"><a href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a></div><div class="ttdoc">Geometry information for a single TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/de9/TPCGeo_8h_source.html#l00038">TPCGeo.h:38</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_ae141949f30631ded82199f4375c21b7e"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#ae141949f30631ded82199f4375c21b7e">geo::BoxBoundedGeo::MaxX</a></div><div class="ttdeci">double MaxX() const </div><div class="ttdoc">Returns the world x coordinate of the end of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00091">BoxBoundedGeo.h:91</a></div></div>
 <div class="ttc" id="gen__protons_8fcl_html_a4f981fb8e76f7dbe1581a4331eaee318"><div class="ttname"><a href="../../db/dd5/gen__protons_8fcl.html#a4f981fb8e76f7dbe1581a4331eaee318">Y0</a></div><div class="ttdeci">process_name opdaq physics producers generator physics producers generator Y0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd5/gen__protons_8fcl_source.html#l00045">gen_protons.fcl:45</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_a142ccec72da9af97fafa506a783d8d4c"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">fDecayMode</a></div><div class="ttdeci">int fDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00122">NeutronOsc_module.cc:122</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_a05822bf718cba7383871c168faf7c7bb"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">evgen::NeutronOsc::SelectAnnihilationMode</a></div><div class="ttdeci">int SelectAnnihilationMode(int pdg_code)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00223">NeutronOsc_module.cc:223</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_a142ccec72da9af97fafa506a783d8d4c"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a142ccec72da9af97fafa506a783d8d4c">fDecayMode</a></div><div class="ttdeci">int fDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00123">NeutronOsc_module.cc:123</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_a05822bf718cba7383871c168faf7c7bb"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a05822bf718cba7383871c168faf7c7bb">evgen::NeutronOsc::SelectAnnihilationMode</a></div><div class="ttdeci">int SelectAnnihilationMode(int pdg_code)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00224">NeutronOsc_module.cc:224</a></div></div>
 <div class="ttc" id="multigen_8fcl_html_ac34c9cce9286f898da9018a51aa394c0"><div class="ttname"><a href="../../d6/d55/multigen_8fcl.html#ac34c9cce9286f898da9018a51aa394c0">X0</a></div><div class="ttdeci">standard_singlep gaussian distribution X0</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d55/multigen_8fcl_source.html#l00008">multigen.fcl:8</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_a293ce5698eb90e443ab64bc64382e508"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a></div><div class="ttdeci">mcgen</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">NeutronOsc_module.cc:117</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_a293ce5698eb90e443ab64bc64382e508"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a293ce5698eb90e443ab64bc64382e508">mcgen</a></div><div class="ttdeci">mcgen</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00118">NeutronOsc_module.cc:118</a></div></div>
 <div class="ttc" id="noise__ana_8cxx_html_a166889fdc8b9a698a68cedffc20aed31"><div class="ttname"><a href="../../d4/d03/noise__ana_8cxx.html#a166889fdc8b9a698a68cedffc20aed31">mode</a></div><div class="ttdeci">const char mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d03/noise__ana_8cxx_source.html#l00020">noise_ana.cxx:20</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_a67f01c76c031e29c5bcc610f23a0be85"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a67f01c76c031e29c5bcc610f23a0be85">geo::BoxBoundedGeo::MinZ</a></div><div class="ttdeci">double MinZ() const </div><div class="ttdoc">Returns the world z coordinate of the start of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00118">BoxBoundedGeo.h:118</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ae21f357c223957d36046a0d71cc6aed7"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a></div><div class="ttdeci">unsigned int seed</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00128">NeutronOsc_module.cc:128</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00110">NeutronOsc_module.cc:110</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_ae3b89363d90e623984f89b0d4778a3e8"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">evgen::NeutronOsc::produce</a></div><div class="ttdeci">void produce(art::Event &amp;e) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00132">NeutronOsc_module.cc:132</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ae21f357c223957d36046a0d71cc6aed7"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a></div><div class="ttdeci">unsigned int seed</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00129">NeutronOsc_module.cc:129</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_ad3ac3a4d8e2bc1582a0619b6e70fd958"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#ad3ac3a4d8e2bc1582a0619b6e70fd958">sname</a></div><div class="ttdeci">string sname</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00111">NeutronOsc_module.cc:111</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_ae3b89363d90e623984f89b0d4778a3e8"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#ae3b89363d90e623984f89b0d4778a3e8">evgen::NeutronOsc::produce</a></div><div class="ttdeci">void produce(art::Event &amp;e) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00133">NeutronOsc_module.cc:133</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_a71626e62af098d6a8c09dd97bbf4812b"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#a71626e62af098d6a8c09dd97bbf4812b">geo::BoxBoundedGeo::MaxY</a></div><div class="ttdeci">double MaxY() const </div><div class="ttdoc">Returns the world y coordinate of the end of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00106">BoxBoundedGeo.h:106</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_afded3ddc65610ace00b7398d600ac5c7"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">evgen::NeutronOsc::mcgen</a></div><div class="ttdeci">const genie::EventRecordVisitorI * mcgen</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00095">NeutronOsc_module.cc:95</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_afded3ddc65610ace00b7398d600ac5c7"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#afded3ddc65610ace00b7398d600ac5c7">evgen::NeutronOsc::mcgen</a></div><div class="ttdeci">const genie::EventRecordVisitorI * mcgen</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00096">NeutronOsc_module.cc:96</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a7718dbf2e5e4aa346e7fbabaa451457f"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">icarus::trigger::to_string</a></div><div class="ttdeci">std::string to_string(WindowPattern const &amp;pattern)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d48/WindowPattern_8h_source.html#l00102">WindowPattern.h:102</a></div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_a41ff273625c6c6b607f20d723cffdc96"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">evgen::NeutronOsc::gOptDecayMode</a></div><div class="ttdeci">genie::NNBarOscMode_t gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00096">NeutronOsc_module.cc:96</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_a41ff273625c6c6b607f20d723cffdc96"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a41ff273625c6c6b607f20d723cffdc96">evgen::NeutronOsc::gOptDecayMode</a></div><div class="ttdeci">genie::NNBarOscMode_t gOptDecayMode</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00097">NeutronOsc_module.cc:97</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_aff3c6d62c880e387d35ab093bdbdcffc"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#aff3c6d62c880e387d35ab093bdbdcffc">geo::BoxBoundedGeo::MaxZ</a></div><div class="ttdeci">double MaxZ() const </div><div class="ttdoc">Returns the world z coordinate of the end of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00121">BoxBoundedGeo.h:121</a></div></div>
-<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00116">NeutronOsc_module.cc:116</a></div></div>
+<div class="ttc" id="NeutronOsc__module_8cc_html_a4aa5cfd2eae5cd62f8d52d658f5b6ec4"><div class="ttname"><a href="../../d5/d56/NeutronOsc__module_8cc.html#a4aa5cfd2eae5cd62f8d52d658f5b6ec4">algf</a></div><div class="ttdeci">genie::AlgFactory * algf</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00117">NeutronOsc_module.cc:117</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="RunData_8h_html"><div class="ttname"><a href="../../da/d86/RunData_8h.html">RunData.h</a></div></div>
 <div class="ttc" id="classgeo_1_1BoxBoundedGeo_html_abc0cab4f0fcd826d11aaa8b3dfb2de02"><div class="ttname"><a href="../../db/d54/classgeo_1_1BoxBoundedGeo.html#abc0cab4f0fcd826d11aaa8b3dfb2de02">geo::BoxBoundedGeo::MinY</a></div><div class="ttdeci">double MinY() const </div><div class="ttdoc">Returns the world y coordinate of the start of the box. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d92/BoxBoundedGeo_8h_source.html#l00103">BoxBoundedGeo.h:103</a></div></div>
 <div class="ttc" id="Geometry_8h_html"><div class="ttname"><a href="../../d3/d8b/Geometry_8h.html">Geometry.h</a></div><div class="ttdoc">art framework interface to geometry description </div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 <div class="ttc" id="classevgen_1_1NeutronOsc_html_a99b389aeb44eb6c09b3a1224dc86aa3a"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a99b389aeb44eb6c09b3a1224dc86aa3a">evgen::NeutronOsc::operator=</a></div><div class="ttdeci">NeutronOsc &amp; operator=(NeutronOsc const &amp;)=delete</div></div>
-<div class="ttc" id="classevgen_1_1NeutronOsc_html_a2b1dcebea26f2293f37d730c51e9cd88"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">evgen::NeutronOsc::flatDist</a></div><div class="ttdeci">CLHEP::RandFlat flatDist</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00097">NeutronOsc_module.cc:97</a></div></div>
+<div class="ttc" id="classevgen_1_1NeutronOsc_html_a2b1dcebea26f2293f37d730c51e9cd88"><div class="ttname"><a href="../../dd/d5b/classevgen_1_1NeutronOsc.html#a2b1dcebea26f2293f37d730c51e9cd88">evgen::NeutronOsc::flatDist</a></div><div class="ttdeci">CLHEP::RandFlat flatDist</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d56/NeutronOsc__module_8cc_source.html#l00098">NeutronOsc_module.cc:98</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

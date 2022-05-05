@@ -88,53 +88,54 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span><span class="comment">///</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span><span class="comment">////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d47/SurfWireLine_8h.html">lardata/RecoObjects/SurfWireLine.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/de5/WireGeo_8h.html">larcorealg/Geometry/WireGeo.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;TMath.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>trkf {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  /// Constructor.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  /// Arguments:</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  /// wireid - Wire id.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /// x      - X coordinate.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  ///</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">   25</a></span>&#160;<span class="comment"></span>  <a class="code" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">SurfWireLine::SurfWireLine</a>(<span class="keyword">const</span> <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a>&amp; wireid, <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Get geometry service.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geom;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Get wire geometry.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../de/dce/classgeo_1_1WireGeo.html">geo::WireGeo</a> <span class="keyword">const</span>&amp; wgeom = geom-&gt;WireIDToWireGeo(wireid);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Get wire center and angle from the wire geometry.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Put local origin at center of wire.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> xyz[3] = {0.};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    wgeom.<a class="code" href="../../de/dce/classgeo_1_1WireGeo.html#a967f3f96296bf6953f8405ac4e5e7427">GetCenter</a>(xyz);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html#a7f3b2ae299cdf0896ef61c2d982a5864">phi</a> = TMath::PiOver2() - wgeom.<a class="code" href="../../de/dce/classgeo_1_1WireGeo.html#a0607dce1b981e52fc158ad5cbfd343d0">ThetaZ</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Update base class.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    *<span class="keyword">static_cast&lt;</span><a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html">SurfYZLine</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>) = <a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html#a9a8ceb8b02738000052cc7b152b36865">SurfYZLine</a>(x, xyz[1], xyz[2], phi);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  /// Destructor.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">   48</a></span>&#160;<span class="comment"></span>  <a class="code" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">SurfWireLine::~SurfWireLine</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// end namespace trkf</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d47/SurfWireLine_8h.html">lardata/RecoObjects/SurfWireLine.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/Geometry_8h.html">larcore/Geometry/Geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/de5/WireGeo_8h.html">larcorealg/Geometry/WireGeo.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;TMath.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>trkf {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  /// Constructor.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">  /// Arguments:</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">  /// wireid - Wire id.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">  /// x      - X coordinate.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">  ///</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">   26</a></span>&#160;<span class="comment"></span>  <a class="code" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">SurfWireLine::SurfWireLine</a>(<span class="keyword">const</span> <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a>&amp; wireid, <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Get geometry service.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geom;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Get wire geometry.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../de/dce/classgeo_1_1WireGeo.html">geo::WireGeo</a> <span class="keyword">const</span>&amp; wgeom = geom-&gt;WireIDToWireGeo(wireid);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Get wire center and angle from the wire geometry.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Put local origin at center of wire.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">double</span> xyz[3] = {0.};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    wgeom.<a class="code" href="../../de/dce/classgeo_1_1WireGeo.html#a967f3f96296bf6953f8405ac4e5e7427">GetCenter</a>(xyz);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html#a7f3b2ae299cdf0896ef61c2d982a5864">phi</a> = TMath::PiOver2() - wgeom.<a class="code" href="../../de/dce/classgeo_1_1WireGeo.html#a0607dce1b981e52fc158ad5cbfd343d0">ThetaZ</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Update base class.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    *<span class="keyword">static_cast&lt;</span><a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html">SurfYZLine</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>) = <a class="code" href="../../d5/d6a/classtrkf_1_1SurfYZLine.html#a9a8ceb8b02738000052cc7b152b36865">SurfYZLine</a>(x, xyz[1], xyz[2], phi);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  /// Destructor.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">   49</a></span>&#160;<span class="comment"></span>  <a class="code" href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">SurfWireLine::~SurfWireLine</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// end namespace trkf</span></div>
 <div class="ttc" id="classgeo_1_1WireGeo_html"><div class="ttname"><a href="../../de/dce/classgeo_1_1WireGeo.html">geo::WireGeo</a></div><div class="ttdoc">Geometry description of a TPC wireThe wire is a single straight segment on a wire plane...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de5/WireGeo_8h_source.html#l00065">WireGeo.h:65</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
-<div class="ttc" id="classtrkf_1_1SurfWireLine_html_a57e166927f84cf53a1a0c5d89cbfecd8"><div class="ttname"><a href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">trkf::SurfWireLine::SurfWireLine</a></div><div class="ttdeci">SurfWireLine(const geo::WireID &amp;wireid, double x)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d28/SurfWireLine_8cxx_source.html#l00025">SurfWireLine.cxx:25</a></div></div>
+<div class="ttc" id="classtrkf_1_1SurfWireLine_html_a57e166927f84cf53a1a0c5d89cbfecd8"><div class="ttname"><a href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a57e166927f84cf53a1a0c5d89cbfecd8">trkf::SurfWireLine::SurfWireLine</a></div><div class="ttdeci">SurfWireLine(const geo::WireID &amp;wireid, double x)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d28/SurfWireLine_8cxx_source.html#l00026">SurfWireLine.cxx:26</a></div></div>
 <div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
 <div class="ttc" id="classgeo_1_1WireGeo_html_a0607dce1b981e52fc158ad5cbfd343d0"><div class="ttname"><a href="../../de/dce/classgeo_1_1WireGeo.html#a0607dce1b981e52fc158ad5cbfd343d0">geo::WireGeo::ThetaZ</a></div><div class="ttdeci">double ThetaZ() const </div><div class="ttdoc">Returns angle of wire with respect to z axis in the Y-Z plane in radians. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de5/WireGeo_8h_source.html#l00250">WireGeo.h:250</a></div></div>
-<div class="ttc" id="classtrkf_1_1SurfWireLine_html_a961a05cb8d478555e10da4f1334c77d5"><div class="ttname"><a href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">trkf::SurfWireLine::~SurfWireLine</a></div><div class="ttdeci">virtual ~SurfWireLine()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d28/SurfWireLine_8cxx_source.html#l00048">SurfWireLine.cxx:48</a></div></div>
+<div class="ttc" id="classtrkf_1_1SurfWireLine_html_a961a05cb8d478555e10da4f1334c77d5"><div class="ttname"><a href="../../d1/d45/classtrkf_1_1SurfWireLine.html#a961a05cb8d478555e10da4f1334c77d5">trkf::SurfWireLine::~SurfWireLine</a></div><div class="ttdeci">virtual ~SurfWireLine()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d28/SurfWireLine_8cxx_source.html#l00049">SurfWireLine.cxx:49</a></div></div>
 <div class="ttc" id="SurfWireLine_8h_html"><div class="ttname"><a href="../../d2/d47/SurfWireLine_8h.html">SurfWireLine.h</a></div><div class="ttdoc">Linear surface defined by wire id and x coordinate. </div></div>
 <div class="ttc" id="WireGeo_8h_html"><div class="ttname"><a href="../../da/de5/WireGeo_8h.html">WireGeo.h</a></div><div class="ttdoc">Encapsulate the geometry of a wire. </div></div>
 <div class="ttc" id="classtrkf_1_1SurfYZLine_html_a7f3b2ae299cdf0896ef61c2d982a5864"><div class="ttname"><a href="../../d5/d6a/classtrkf_1_1SurfYZLine.html#a7f3b2ae299cdf0896ef61c2d982a5864">trkf::SurfYZLine::phi</a></div><div class="ttdeci">double phi() const </div><div class="ttdoc">Rotation angle about x-axis. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d79/SurfYZLine_8h_source.html#l00095">SurfYZLine.h:95</a></div></div>

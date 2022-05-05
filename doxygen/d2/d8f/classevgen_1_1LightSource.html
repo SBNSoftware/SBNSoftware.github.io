@@ -258,7 +258,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 <li><code>NMaxFactor</code> (real value, default: 100 times <code>N</code>): as a safety valve, do not attempt more than this times the requested number of photons: for example, in an event where 500 photons are required, with <code>NMax: 20</code> no more than 10000 generations will be attempted; this is useful if the generation volume efficiency can't be guaranteed to be high (e.g. if only generation in liquid argon is requested in a generation volume that is entirely made of steel). </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00129">129</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00131">131</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9f7e525a12ae02ece255f184c6355ded"></a>
 <div class="memitem">
@@ -282,20 +282,20 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00268">268</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    : art::EDProducer{pset}</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SourceMode&quot;</span>)}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">fFillTree</a>{pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;FillTree&quot;</span>)}</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">fPosDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;PosDist&quot;</span>)}</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">fTDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TDist&quot;</span>)}</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">fPDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;PDist&quot;</span>)}</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>{makeSet(pset.get&lt;std::vector&lt;std::string&gt;&gt;(<span class="stringliteral">&quot;SelectMaterials&quot;</span>, {}))}</div>
-<div class="ttc" id="classevgen_1_1LightSource_html_acd927042b22d9a585fba8d73c113a16e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">evgen::LightSource::fTDist</a></div><div class="ttdeci">int fTDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00206">LightSource_module.cc:206</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_aa1fb0b88008384e0986d6389d51e230f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">evgen::LightSource::fPosDist</a></div><div class="ttdeci">int fPosDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00205">LightSource_module.cc:205</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a829f3c7219084015a9335e45005e1829"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">evgen::LightSource::fFillTree</a></div><div class="ttdeci">bool fFillTree</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00204">LightSource_module.cc:204</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a8f7b96f2d943f252a9a0357f25bb707f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">evgen::LightSource::fSourceMode</a></div><div class="ttdeci">int fSourceMode</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00203">LightSource_module.cc:203</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00210">LightSource_module.cc:210</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7d074132f5424674ba67121b169287f3"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">evgen::LightSource::fPDist</a></div><div class="ttdeci">int fPDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00207">LightSource_module.cc:207</a></div></div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00270">270</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    : art::EDProducer{pset}</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SourceMode&quot;</span>)}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">fFillTree</a>{pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;FillTree&quot;</span>)}</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">fPosDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;PosDist&quot;</span>)}</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">fTDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TDist&quot;</span>)}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">fPDist</a>{pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;PDist&quot;</span>)}</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    , <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>{makeSet(pset.get&lt;std::vector&lt;std::string&gt;&gt;(<span class="stringliteral">&quot;SelectMaterials&quot;</span>, {}))}</div>
+<div class="ttc" id="classevgen_1_1LightSource_html_acd927042b22d9a585fba8d73c113a16e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">evgen::LightSource::fTDist</a></div><div class="ttdeci">int fTDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00208">LightSource_module.cc:208</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_aa1fb0b88008384e0986d6389d51e230f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">evgen::LightSource::fPosDist</a></div><div class="ttdeci">int fPosDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00207">LightSource_module.cc:207</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a829f3c7219084015a9335e45005e1829"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">evgen::LightSource::fFillTree</a></div><div class="ttdeci">bool fFillTree</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00206">LightSource_module.cc:206</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a8f7b96f2d943f252a9a0357f25bb707f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">evgen::LightSource::fSourceMode</a></div><div class="ttdeci">int fSourceMode</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00205">LightSource_module.cc:205</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00212">LightSource_module.cc:212</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7d074132f5424674ba67121b169287f3"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">evgen::LightSource::fPDist</a></div><div class="ttdeci">int fPDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00209">LightSource_module.cc:209</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -314,16 +314,16 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00376">376</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    run.put(std::make_unique&lt;sumdata::RunData&gt;(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a42ebac075e48c50ffd72ca2e41b677c0">DetectorName</a>()));</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">fFirstVoxel</a>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00249">LightSource_module.cc:249</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7fe9f3e001b1dd6dc5d52146bec816b6"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">evgen::LightSource::fFirstVoxel</a></div><div class="ttdeci">int fFirstVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00245">LightSource_module.cc:245</a></div></div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00378">378</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    run.put(std::make_unique&lt;sumdata::RunData&gt;(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a42ebac075e48c50ffd72ca2e41b677c0">DetectorName</a>()));</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">fFirstVoxel</a>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00251">LightSource_module.cc:251</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7fe9f3e001b1dd6dc5d52146bec816b6"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">evgen::LightSource::fFirstVoxel</a></div><div class="ttdeci">int fFirstVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00247">LightSource_module.cc:247</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a42ebac075e48c50ffd72ca2e41b677c0"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a42ebac075e48c50ffd72ca2e41b677c0">geo::GeometryCore::DetectorName</a></div><div class="ttdeci">std::string DetectorName() const </div><div class="ttdoc">Returns a string with the name of the detector, as configured. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l01761">GeometryCore.h:1761</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a35fa6a1c86ad88b5ca28fb1d646edf48"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">evgen::LightSource::fCurrentVoxel</a></div><div class="ttdeci">int fCurrentVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00220">LightSource_module.cc:220</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a35fa6a1c86ad88b5ca28fb1d646edf48"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">evgen::LightSource::fCurrentVoxel</a></div><div class="ttdeci">int fCurrentVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00222">LightSource_module.cc:222</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -350,40 +350,40 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 
 <p>Throws an exception if any of the configured materials is not present. </p>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00548">548</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  {</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    TGeoManager <span class="keyword">const</span>&amp; manager = *(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">ROOTGeoManager</a>());</div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00550">550</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  {</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    { <span class="comment">// start scope</span></div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;      mf::LogDebug log(<span class="stringliteral">&quot;LightSource&quot;</span>);</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; matList = *(manager.GetListOfMaterials());</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      log &lt;&lt; matList.GetSize() &lt;&lt; <span class="stringliteral">&quot; elements/materials in the geometry:&quot;</span>;</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>* obj : matList) {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span> mat = <span class="keyword">dynamic_cast&lt;</span>TGeoMaterial <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">const</a>*<span class="keyword">&gt;</span>(obj);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot;\n  &#39;&quot;</span> &lt;&lt; mat-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot;&#39; (Z=&quot;</span> &lt;&lt; mat-&gt;GetZ() &lt;&lt; <span class="stringliteral">&quot; A=&quot;</span> &lt;&lt; mat-&gt;GetA() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      } <span class="comment">// for</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    }   <span class="comment">// end scope</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    std::set&lt;std::string&gt; missingMaterials;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; matName : <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>) {</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      <span class="keywordflow">if</span> (!manager.GetMaterial(matName.c_str())) missingMaterials.insert(matName);</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    }</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordflow">if</span> (missingMaterials.empty()) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    art::Exception <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>(art::errors::Configuration);</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;Requested filtering on &quot;</span> &lt;&lt; missingMaterials.size()</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; materials which are not present in the geometry:&quot;</span>;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; matName : missingMaterials)</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;      <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;\n  &#39;&quot;</span> &lt;&lt; matName &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  } <span class="comment">// LightSource::checkMaterials()</span></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00249">LightSource_module.cc:249</a></div></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    TGeoManager <span class="keyword">const</span>&amp; manager = *(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">ROOTGeoManager</a>());</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    { <span class="comment">// start scope</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      mf::LogDebug log(<span class="stringliteral">&quot;LightSource&quot;</span>);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; matList = *(manager.GetListOfMaterials());</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      log &lt;&lt; matList.GetSize() &lt;&lt; <span class="stringliteral">&quot; elements/materials in the geometry:&quot;</span>;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>* obj : matList) {</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span> mat = <span class="keyword">dynamic_cast&lt;</span>TGeoMaterial <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">const</a>*<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot;\n  &#39;&quot;</span> &lt;&lt; mat-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot;&#39; (Z=&quot;</span> &lt;&lt; mat-&gt;GetZ() &lt;&lt; <span class="stringliteral">&quot; A=&quot;</span> &lt;&lt; mat-&gt;GetA() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      } <span class="comment">// for</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    }   <span class="comment">// end scope</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    std::set&lt;std::string&gt; missingMaterials;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; matName : <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>) {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      <span class="keywordflow">if</span> (!manager.GetMaterial(matName.c_str())) missingMaterials.insert(matName);</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    }</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordflow">if</span> (missingMaterials.empty()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    art::Exception <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>(art::errors::Configuration);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;Requested filtering on &quot;</span> &lt;&lt; missingMaterials.size()</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; materials which are not present in the geometry:&quot;</span>;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; matName : missingMaterials)</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;      <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;\n  &#39;&quot;</span> &lt;&lt; matName &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  } <span class="comment">// LightSource::checkMaterials()</span></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00251">LightSource_module.cc:251</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_aa06cc82de2ccb3c591cf6a8309dfa55f"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">geo::GeometryCore::ROOTGeoManager</a></div><div class="ttdeci">TGeoManager * ROOTGeoManager() const </div><div class="ttdoc">Access to the ROOT geometry description manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00202">GeometryCore.cxx:202</a></div></div>
 <div class="ttc" id="namespaceSortModuleTimes_html_a805854df4323f914a9a09f4e266b4794"><div class="ttname"><a href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">SortModuleTimes.const</a></div><div class="ttdeci">string const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df3/SortModuleTimes_8py_source.html#l00871">SortModuleTimes.py:871</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00210">LightSource_module.cc:210</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00212">LightSource_module.cc:212</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -401,102 +401,102 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00385">385</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a>==<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d485e4275178a099d732fb12928844">kFILE</a>) {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <span class="comment">//  Each event, read coordinates of gun and number of photons to shoot from file</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="comment">// read in one line</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">readParametersFromInputFile</a>()){</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="comment">// Loop file if required</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        mf::LogWarning(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source : Warning, reached end of file,&quot;</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                                      &lt;&lt; <span class="stringliteral">&quot; looping back to beginning&quot;</span>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.clear();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.seekg(0, std::ios::beg);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.getline(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a301abc50080ad7c67db6b3751072ee92">fDummyString</a>, 256);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">readParametersFromInputFile</a>()) {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;          <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source : File error in &quot;</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                              &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ae52f9b9cdee85630e69f58a77fe47380">fFileName</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      }</div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00387">387</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a>==<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d485e4275178a099d732fb12928844">kFILE</a>) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="comment">//  Each event, read coordinates of gun and number of photons to shoot from file</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      <span class="comment">// read in one line</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">readParametersFromInputFile</a>()){</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="comment">// Loop file if required</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        mf::LogWarning(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source : Warning, reached end of file,&quot;</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                                      &lt;&lt; <span class="stringliteral">&quot; looping back to beginning&quot;</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.clear();</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.seekg(0, std::ios::beg);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.getline(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a301abc50080ad7c67db6b3751072ee92">fDummyString</a>, 256);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">readParametersFromInputFile</a>()) {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;          <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source : File error in &quot;</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                              &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ae52f9b9cdee85630e69f58a77fe47380">fFileName</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">fThePhotonVoxelDef</a> = <a class="code" href="../../da/d6a/classsim_1_1PhotonVoxelDef.html">sim::PhotonVoxelDef</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>,</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>,</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                               1,</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>,</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>,</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                               1,</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>,</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>,</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                               1);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>=0;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7ad756a3b989e395c442bbe65f28cf5c">kSCAN</a>) {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <span class="comment">//  Step through detector using a number of steps provided in the config file</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <span class="comment">//  firing a constant number of photons from each point</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">fThePhotonVoxelDef</a>.<a class="code" href="../../da/d6a/classsim_1_1PhotonVoxelDef.html#ab7efc9d5005459325eb490c1ca34c879">GetPhotonVoxel</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>).<a class="code" href="../../d1/de0/classsim_1_1PhotonVoxel.html#a88f0fdf5288005e33f7e6b432f1cd84e">GetCenter</a>();</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      <span class="comment">//  Neither file or scan mode, probably a config file error</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN : Light Source, unrecognised source mode\n&quot;</span>;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keyword">auto</span> truthcol = std::make_unique&lt;std::vector&lt;simb::MCTruth&gt;&gt;();</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">fThePhotonVoxelDef</a> = <a class="code" href="../../da/d6a/classsim_1_1PhotonVoxelDef.html">sim::PhotonVoxelDef</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>,</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                               1,</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>,</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>,</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                               1,</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() - <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                                               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>,</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                                               1);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>=0;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">fSourceMode</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7ad756a3b989e395c442bbe65f28cf5c">kSCAN</a>) {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="comment">//  Step through detector using a number of steps provided in the config file</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      <span class="comment">//  firing a constant number of photons from each point</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">fThePhotonVoxelDef</a>.<a class="code" href="../../da/d6a/classsim_1_1PhotonVoxelDef.html#ab7efc9d5005459325eb490c1ca34c879">GetPhotonVoxel</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>).<a class="code" href="../../d1/de0/classsim_1_1PhotonVoxel.html#a88f0fdf5288005e33f7e6b432f1cd84e">GetCenter</a>();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="comment">//  Neither file or scan mode, probably a config file error</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;EVGEN : Light Source, unrecognised source mode\n&quot;</span>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    truthcol-&gt;push_back(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af4e56470c14139ccdb580e5cd7d84a83">Sample</a>());</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">const</span> nPhotons = truthcol-&gt;back().NParticles();</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(truthcol));</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keyword">auto</span> truthcol = std::make_unique&lt;std::vector&lt;simb::MCTruth&gt;&gt;();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    truthcol-&gt;push_back(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af4e56470c14139ccdb580e5cd7d84a83">Sample</a>());</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">const</span> nPhotons = truthcol-&gt;back().NParticles();</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html">phot::PhotonVisibilityService</a>* vis = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      vis = art::ServiceHandle&lt;phot::PhotonVisibilityService&gt;().<span class="keyword">get</span>();</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">catch</span> (art::Exception <span class="keyword">const</span>&amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      <span class="comment">// if the service is not configured, then this is not a build job</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="comment">// (it is a simple generation job instead)</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <span class="keywordflow">if</span> (e.categoryCode() != art::errors::ServiceNotFound) <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">if</span> (vis &amp;&amp; vis-&gt;<a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#aab2963539791835d8236d1b0a68b5dce">IsBuildJob</a>()) {</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Light source : Stowing voxel params &quot;</span>;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      vis-&gt;<a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#a1ab1b813954bf8c26c9509bef6e89ee0">StoreLightProd</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>, nPhotons);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> != <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a99bb46be3a571187b1ffe69086e9a7ec">fLastVoxel</a>) { ++<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>; }</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;      mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source fully scanned detector.  Starting over.&quot;</span>;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">fFirstVoxel</a>;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    }</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  }</div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a301abc50080ad7c67db6b3751072ee92"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a301abc50080ad7c67db6b3751072ee92">evgen::LightSource::fDummyString</a></div><div class="ttdeci">char fDummyString[256]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00194">LightSource_module.cc:194</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_af15ca5932dae612c775895497ff4dc0b"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">evgen::LightSource::fInputFile</a></div><div class="ttdeci">std::ifstream fInputFile</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00192">LightSource_module.cc:192</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7ad756a3b989e395c442bbe65f28cf5c"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7ad756a3b989e395c442bbe65f28cf5c">evgen::LightSource::kSCAN</a></div><div class="ttdeci">static const int kSCAN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00189">LightSource_module.cc:189</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7fe9f3e001b1dd6dc5d52146bec816b6"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">evgen::LightSource::fFirstVoxel</a></div><div class="ttdeci">int fFirstVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00245">LightSource_module.cc:245</a></div></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(truthcol));</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html">phot::PhotonVisibilityService</a>* vis = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      vis = art::ServiceHandle&lt;phot::PhotonVisibilityService&gt;().<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    }</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">catch</span> (art::Exception <span class="keyword">const</span>&amp; <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>) {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <span class="comment">// if the service is not configured, then this is not a build job</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      <span class="comment">// (it is a simple generation job instead)</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      <span class="keywordflow">if</span> (e.categoryCode() != art::errors::ServiceNotFound) <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    }</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">if</span> (vis &amp;&amp; vis-&gt;<a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#aab2963539791835d8236d1b0a68b5dce">IsBuildJob</a>()) {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Light source : Stowing voxel params &quot;</span>;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      vis-&gt;<a class="code" href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#a1ab1b813954bf8c26c9509bef6e89ee0">StoreLightProd</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>, nPhotons);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    }</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> != <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a99bb46be3a571187b1ffe69086e9a7ec">fLastVoxel</a>) { ++<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a>; }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>)</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;EVGEN Light Source fully scanned detector.  Starting over.&quot;</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">fCurrentVoxel</a> = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">fFirstVoxel</a>;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  }</div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a301abc50080ad7c67db6b3751072ee92"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a301abc50080ad7c67db6b3751072ee92">evgen::LightSource::fDummyString</a></div><div class="ttdeci">char fDummyString[256]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00196">LightSource_module.cc:196</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_af15ca5932dae612c775895497ff4dc0b"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">evgen::LightSource::fInputFile</a></div><div class="ttdeci">std::ifstream fInputFile</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00194">LightSource_module.cc:194</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7ad756a3b989e395c442bbe65f28cf5c"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7ad756a3b989e395c442bbe65f28cf5c">evgen::LightSource::kSCAN</a></div><div class="ttdeci">static const int kSCAN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00191">LightSource_module.cc:191</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7fe9f3e001b1dd6dc5d52146bec816b6"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7fe9f3e001b1dd6dc5d52146bec816b6">evgen::LightSource::fFirstVoxel</a></div><div class="ttdeci">int fFirstVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00247">LightSource_module.cc:247</a></div></div>
 <div class="ttc" id="classsim_1_1PhotonVoxelDef_html"><div class="ttname"><a href="../../da/d6a/classsim_1_1PhotonVoxelDef.html">sim::PhotonVoxelDef</a></div><div class="ttdoc">Representation of a region of space diced into voxels. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/larsim_2larsim_2Simulation_2PhotonVoxels_8h_source.html#l00058">larsim/larsim/Simulation/PhotonVoxels.h:58</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ae52f9b9cdee85630e69f58a77fe47380"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ae52f9b9cdee85630e69f58a77fe47380">evgen::LightSource::fFileName</a></div><div class="ttdeci">std::string fFileName</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00193">LightSource_module.cc:193</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00232">LightSource_module.cc:232</a></div></div>
-<div class="ttc" id="classphot_1_1PhotonVisibilityService_html_a1ab1b813954bf8c26c9509bef6e89ee0"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#a1ab1b813954bf8c26c9509bef6e89ee0">phot::PhotonVisibilityService::StoreLightProd</a></div><div class="ttdeci">void StoreLightProd(int VoxID, double N)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d29/PhotonVisibilityService__service_8cc_source.html#l00490">PhotonVisibilityService_service.cc:490</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a35fa6a1c86ad88b5ca28fb1d646edf48"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">evgen::LightSource::fCurrentVoxel</a></div><div class="ttdeci">int fCurrentVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00220">LightSource_module.cc:220</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_af4e56470c14139ccdb580e5cd7d84a83"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af4e56470c14139ccdb580e5cd7d84a83">evgen::LightSource::Sample</a></div><div class="ttdeci">simb::MCTruth Sample()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00459">LightSource_module.cc:459</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ae52f9b9cdee85630e69f58a77fe47380"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ae52f9b9cdee85630e69f58a77fe47380">evgen::LightSource::fFileName</a></div><div class="ttdeci">std::string fFileName</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00195">LightSource_module.cc:195</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
+<div class="ttc" id="classphot_1_1PhotonVisibilityService_html_a1ab1b813954bf8c26c9509bef6e89ee0"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#a1ab1b813954bf8c26c9509bef6e89ee0">phot::PhotonVisibilityService::StoreLightProd</a></div><div class="ttdeci">void StoreLightProd(int VoxID, double N)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d03/PhotonVisibilityService_8cc_source.html#l00491">PhotonVisibilityService.cc:491</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a35fa6a1c86ad88b5ca28fb1d646edf48"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a35fa6a1c86ad88b5ca28fb1d646edf48">evgen::LightSource::fCurrentVoxel</a></div><div class="ttdeci">int fCurrentVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00222">LightSource_module.cc:222</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_af4e56470c14139ccdb580e5cd7d84a83"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af4e56470c14139ccdb580e5cd7d84a83">evgen::LightSource::Sample</a></div><div class="ttdeci">simb::MCTruth Sample()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00461">LightSource_module.cc:461</a></div></div>
 <div class="ttc" id="classsim_1_1PhotonVoxel_html_a88f0fdf5288005e33f7e6b432f1cd84e"><div class="ttname"><a href="../../d1/de0/classsim_1_1PhotonVoxel.html#a88f0fdf5288005e33f7e6b432f1cd84e">sim::PhotonVoxel::GetCenter</a></div><div class="ttdeci">Point GetCenter() const </div><div class="ttdoc">Returns the center of the voxel (type Point). </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/larsim_2larsim_2Simulation_2PhotonVoxels_8h_source.html#l00199">larsim/larsim/Simulation/PhotonVoxels.h:199</a></div></div>
-<div class="ttc" id="classphot_1_1PhotonVisibilityService_html_aab2963539791835d8236d1b0a68b5dce"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#aab2963539791835d8236d1b0a68b5dce">phot::PhotonVisibilityService::IsBuildJob</a></div><div class="ttdeci">bool IsBuildJob() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h_source.html#l00160">larsim/larsim/PhotonPropagation/PhotonVisibilityService.h:160</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ac31ae20dad9222a2de9ae9ff2d9cf790"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">evgen::LightSource::fThePhotonVoxelDef</a></div><div class="ttdeci">sim::PhotonVoxelDef fThePhotonVoxelDef</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00217">LightSource_module.cc:217</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00229">LightSource_module.cc:229</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ac532b1e11fefd56ed7f177f40490f5e4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">evgen::LightSource::readParametersFromInputFile</a></div><div class="ttdeci">bool readParametersFromInputFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00619">LightSource_module.cc:619</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a52d485e4275178a099d732fb12928844"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d485e4275178a099d732fb12928844">evgen::LightSource::kFILE</a></div><div class="ttdeci">static const int kFILE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00188">LightSource_module.cc:188</a></div></div>
+<div class="ttc" id="classphot_1_1PhotonVisibilityService_html_aab2963539791835d8236d1b0a68b5dce"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html#aab2963539791835d8236d1b0a68b5dce">phot::PhotonVisibilityService::IsBuildJob</a></div><div class="ttdeci">bool IsBuildJob() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h_source.html#l00165">larsim/larsim/PhotonPropagation/PhotonVisibilityService.h:165</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00236">LightSource_module.cc:236</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ac31ae20dad9222a2de9ae9ff2d9cf790"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac31ae20dad9222a2de9ae9ff2d9cf790">evgen::LightSource::fThePhotonVoxelDef</a></div><div class="ttdeci">sim::PhotonVoxelDef fThePhotonVoxelDef</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00219">LightSource_module.cc:219</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00231">LightSource_module.cc:231</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ac532b1e11fefd56ed7f177f40490f5e4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac532b1e11fefd56ed7f177f40490f5e4">evgen::LightSource::readParametersFromInputFile</a></div><div class="ttdeci">bool readParametersFromInputFile()</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00621">LightSource_module.cc:621</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a52d485e4275178a099d732fb12928844"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d485e4275178a099d732fb12928844">evgen::LightSource::kFILE</a></div><div class="ttdeci">static const int kFILE</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00190">LightSource_module.cc:190</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00007">DataStructs.cxx:7</a></div></div>
-<div class="ttc" id="classphot_1_1PhotonVisibilityService_html"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html">phot::PhotonVisibilityService</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h_source.html#l00032">larsim/larsim/PhotonPropagation/PhotonVisibilityService.h:32</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a8f7b96f2d943f252a9a0357f25bb707f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">evgen::LightSource::fSourceMode</a></div><div class="ttdeci">int fSourceMode</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00203">LightSource_module.cc:203</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00233">LightSource_module.cc:233</a></div></div>
+<div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
+<div class="ttc" id="classphot_1_1PhotonVisibilityService_html"><div class="ttname"><a href="../../d6/d8a/classphot_1_1PhotonVisibilityService.html">phot::PhotonVisibilityService</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d61/larsim_2larsim_2PhotonPropagation_2PhotonVisibilityService_8h_source.html#l00037">larsim/larsim/PhotonPropagation/PhotonVisibilityService.h:37</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a8f7b96f2d943f252a9a0357f25bb707f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a8f7b96f2d943f252a9a0357f25bb707f">evgen::LightSource::fSourceMode</a></div><div class="ttdeci">int fSourceMode</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00205">LightSource_module.cc:205</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00235">LightSource_module.cc:235</a></div></div>
 <div class="ttc" id="classsim_1_1PhotonVoxelDef_html_ab7efc9d5005459325eb490c1ca34c879"><div class="ttname"><a href="../../da/d6a/classsim_1_1PhotonVoxelDef.html#ab7efc9d5005459325eb490c1ca34c879">sim::PhotonVoxelDef::GetPhotonVoxel</a></div><div class="ttdeci">PhotonVoxel GetPhotonVoxel(int ID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d3a/larsim_2larsim_2Simulation_2PhotonVoxels_8cxx_source.html#l00139">larsim/larsim/Simulation/PhotonVoxels.cxx:139</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a99bb46be3a571187b1ffe69086e9a7ec"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a99bb46be3a571187b1ffe69086e9a7ec">evgen::LightSource::fLastVoxel</a></div><div class="ttdeci">int fLastVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00246">LightSource_module.cc:246</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a99bb46be3a571187b1ffe69086e9a7ec"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a99bb46be3a571187b1ffe69086e9a7ec">evgen::LightSource::fLastVoxel</a></div><div class="ttdeci">int fLastVoxel</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00248">LightSource_module.cc:248</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,32 +523,32 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 <p>Reads from <code>fInputFile</code> all other parameters in one line. </p>
 <dl class="section return"><dt>Returns</dt><dd>whether all reading were successful (<code>ifstream::good()</code>). </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00619">619</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                                                {</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a>;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a> &gt;&gt; x &gt;&gt; y &gt;&gt; z &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a></div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;      &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a></div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;      &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a> = { <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>, z };</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.good()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    std::string dummy;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    std::getline(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>, dummy); <span class="comment">// this can fail for what I care</span></div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  } <span class="comment">// LightSource::readParametersFromInputFile()</span></div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00621">621</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                                                {</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a>;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a> &gt;&gt; x &gt;&gt; y &gt;&gt; z &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a></div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;      &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;      &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a> &gt;&gt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a> = { <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>, <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>, z };</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>.good()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    std::string dummy;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    std::getline(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">fInputFile</a>, dummy); <span class="comment">// this can fail for what I care</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  } <span class="comment">// LightSource::readParametersFromInputFile()</span></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_ae40184b0245025a43c56daa3261d5e3c"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a></div><div class="ttdeci">process_name opflash particleana ie ie ie z</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00092">run_opflash_electron.fcl:92</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_af15ca5932dae612c775895497ff4dc0b"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">evgen::LightSource::fInputFile</a></div><div class="ttdeci">std::ifstream fInputFile</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00192">LightSource_module.cc:192</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_af15ca5932dae612c775895497ff4dc0b"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af15ca5932dae612c775895497ff4dc0b">evgen::LightSource::fInputFile</a></div><div class="ttdeci">std::ifstream fInputFile</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00194">LightSource_module.cc:194</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a633f12c3549fa168b7b7d73a8268f660"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">evgen::LightSource::fSigmaP</a></div><div class="ttdeci">double fSigmaP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00237">LightSource_module.cc:237</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00232">LightSource_module.cc:232</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a9eece3697f06474ead6d549f04a80fe4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">evgen::LightSource::fT</a></div><div class="ttdeci">double fT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00231">LightSource_module.cc:231</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a633f12c3549fa168b7b7d73a8268f660"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">evgen::LightSource::fSigmaP</a></div><div class="ttdeci">double fSigmaP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00239">LightSource_module.cc:239</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a9eece3697f06474ead6d549f04a80fe4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">evgen::LightSource::fT</a></div><div class="ttdeci">double fT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00233">LightSource_module.cc:233</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a1e5aaaf25e8609a835e8c7c6fda71456"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a></div><div class="ttdeci">process_name opflash particleana ie ie y</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00091">run_opflash_electron.fcl:91</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a52d726951484c31151378004bb18b1be"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">evgen::LightSource::fP</a></div><div class="ttdeci">double fP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00236">LightSource_module.cc:236</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00229">LightSource_module.cc:229</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_aae59151feaf46e3b321b5c22566ed3af"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">evgen::LightSource::fN</a></div><div class="ttdeci">int fN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00240">LightSource_module.cc:240</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_afa921f01e89b7459c0a727a0bc366922"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">evgen::LightSource::fSigmaT</a></div><div class="ttdeci">double fSigmaT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00235">LightSource_module.cc:235</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00233">LightSource_module.cc:233</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00236">LightSource_module.cc:236</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a52d726951484c31151378004bb18b1be"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">evgen::LightSource::fP</a></div><div class="ttdeci">double fP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00238">LightSource_module.cc:238</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00231">LightSource_module.cc:231</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_aae59151feaf46e3b321b5c22566ed3af"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">evgen::LightSource::fN</a></div><div class="ttdeci">int fN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00242">LightSource_module.cc:242</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_afa921f01e89b7459c0a727a0bc366922"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">evgen::LightSource::fSigmaT</a></div><div class="ttdeci">double fSigmaT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00237">LightSource_module.cc:237</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00235">LightSource_module.cc:235</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -573,120 +573,120 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00459">459</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  {</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Light source debug : Shooting at &quot;</span> &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    CLHEP::RandFlat flat(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">fEngine</a>, -1.0, 1.0);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    CLHEP::RandGaussQ gauss(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">fEngine</a>);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    MaterialPointFilter <a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>);</div>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00461">461</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    mf::LogVerbatim(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Light source debug : Shooting at &quot;</span> &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    CLHEP::RandFlat flat(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">fEngine</a>, -1.0, 1.0);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    CLHEP::RandGaussQ gauss(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">fEngine</a>);</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    simb::MCTruth mct;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    mct.SetOrigin(simb::kSingleParticle);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">const</span> nMax = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(double(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) * <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af528fe7b304d0635db01e38cf3a2d801">fNMaxF</a>);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> fired = 0ULL;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">while</span> (mct.NParticles() &lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) {</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      <span class="keywordflow">if</span> (fired &gt;= nMax) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      <span class="comment">// Choose momentum (supplied in eV, convert to GeV)</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      <span class="keywordtype">double</span> <span class="keyword">const</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> =</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-9 * ((<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">fPDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) ? gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a>) : <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a> + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a> * flat.fire());</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      <span class="comment">// Choose position</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;      ++fired;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      <a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a548d1ca220f4b2c401e17d62ddf02d93">fPointSource</a>) { x = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>; }</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">fPosDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) {</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;          x = {gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>),</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;               gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>),</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;               gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>)};</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        }</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;          x = {<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a> * flat.fire(),</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a> * flat.fire(),</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a> * flat.fire()};</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        }</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>.accept(x)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      }</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      <span class="comment">// Choose time</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      <span class="keywordtype">double</span> t;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">fTDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) { t = gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a>); }</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        t = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a> + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a> * flat.fire();</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      }</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      <span class="comment">//assume the position is relative to the center of the TPC</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      <span class="comment">//x += fTPCCenter;</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">fShotPos</a> = TLorentzVector(x.X(), x.Y(), x.Z(), t);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    MaterialPointFilter <a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">fGeom</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">fSelectedMaterials</a>);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    simb::MCTruth mct;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    mct.SetOrigin(simb::kSingleParticle);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> <span class="keyword">const</span> nMax = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(double(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) * <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#af528fe7b304d0635db01e38cf3a2d801">fNMaxF</a>);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> fired = 0ULL;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">while</span> (mct.NParticles() &lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) {</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      <span class="keywordflow">if</span> (fired &gt;= nMax) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;      <span class="comment">// Choose momentum (supplied in eV, convert to GeV)</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="keywordtype">double</span> <span class="keyword">const</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> =</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-9 * ((<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">fPDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) ? gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a>) : <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">fP</a> + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">fSigmaP</a> * flat.fire());</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      <span class="comment">// Choose position</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;      ++fired;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      <a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a548d1ca220f4b2c401e17d62ddf02d93">fPointSource</a>) { x = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>; }</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">fPosDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;          x = {gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a>),</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;               gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a>),</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;               gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z(), <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a>)};</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        }</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          x = {<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.X() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">fSigmaX</a> * flat.fire(),</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Y() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">fSigmaY</a> * flat.fire(),</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;               <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">fCenter</a>.Z() + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">fSigmaZ</a> * flat.fire()};</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        }</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>.accept(x)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      }</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;      <span class="comment">// Choose time</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;      <span class="keywordtype">double</span> t;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">fTDist</a> == <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">kGAUS</a>) { t = gauss.fire(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a>); }</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        t = <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">fT</a> + <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">fSigmaT</a> * flat.fire();</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;      }</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      <span class="comment">//assume the position is relative to the center of the TPC</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      <span class="comment">//x += fTPCCenter;</span></div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="comment">// Choose angles</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;      <span class="keywordtype">double</span> costh = flat.fire();</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;      <span class="keywordtype">double</span> sinth = std::sqrt(1.0 - cet::square(costh));</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;      <span class="keywordtype">double</span> phi = 2 * M_PI * flat.fire();</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;      <span class="comment">// Generate momentum 4-vector</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">fShotPos</a> = TLorentzVector(x.X(), x.Y(), x.Z(), t);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;      <span class="comment">// Choose angles</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;      <span class="keywordtype">double</span> costh = flat.fire();</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;      <span class="keywordtype">double</span> sinth = std::sqrt(1.0 - cet::square(costh));</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;      <span class="keywordtype">double</span> phi = 2 * M_PI * flat.fire();</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">fShotMom</a> = TLorentzVector(p * sinth * cos(phi), p * sinth * sin(phi), p * costh, p);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;      <span class="comment">// Generate momentum 4-vector</span></div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <span class="keywordtype">int</span> trackid = -(mct.NParticles() +</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                      1); <span class="comment">// set track id to -i as these are all primary particles and have id &lt;= 0</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;      std::string primary(<span class="stringliteral">&quot;primary&quot;</span>);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="../../d5/d7e/prodsingle__libraryana_8fcl.html#aed2b5cb487f42ccbf8476d023c1fe274">PDG</a> = 0; <span class="comment">//optical photons have PDG 0</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      simb::MCParticle part(trackid, PDG, primary);</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      part.AddTrajectoryPoint(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">fShotPos</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">fShotMom</a>);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">fFillTree</a>) <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ade5a31685b0ac36531a6a6bf18248e05">fPhotonsGenerated</a>-&gt;Fill();</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">fShotMom</a> = TLorentzVector(p * sinth * cos(phi), p * sinth * sin(phi), p * costh, p);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;      <span class="keywordtype">int</span> trackid = -(mct.NParticles() +</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                      1); <span class="comment">// set track id to -i as these are all primary particles and have id &lt;= 0</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      std::string primary(<span class="stringliteral">&quot;primary&quot;</span>);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="../../d5/d7e/prodsingle__libraryana_8fcl.html#aed2b5cb487f42ccbf8476d023c1fe274">PDG</a> = 0; <span class="comment">//optical photons have PDG 0</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      simb::MCParticle part(trackid, PDG, primary);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      part.AddTrajectoryPoint(<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">fShotPos</a>, <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">fShotMom</a>);</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      mct.Add(part);</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Generated &quot;</span> &lt;&lt; mct.NParticles() &lt;&lt; <span class="stringliteral">&quot; photons after &quot;</span> &lt;&lt; fired</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                               &lt;&lt; <span class="stringliteral">&quot; tries.&quot;</span>;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordflow">if</span> (mct.NParticles() &lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) {</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;      <span class="comment">// this may mean `NMaxFactor` is too small, or the volume is wrong;</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      <span class="comment">// or it may be just expected</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      mf::LogWarning(<span class="stringliteral">&quot;LightSource&quot;</span>)</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Warning: &quot;</span> &lt;&lt; mct.NParticles() &lt;&lt; <span class="stringliteral">&quot; photons generated after &quot;</span> &lt;&lt; fired &lt;&lt; <span class="stringliteral">&quot; tries, but &quot;</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a> &lt;&lt; <span class="stringliteral">&quot; were requested.&quot;</span>;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordflow">return</span> mct;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  } <span class="comment">// LightSource::Sample()</span></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_acd927042b22d9a585fba8d73c113a16e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">evgen::LightSource::fTDist</a></div><div class="ttdeci">int fTDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00206">LightSource_module.cc:206</a></div></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">fFillTree</a>) <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#ade5a31685b0ac36531a6a6bf18248e05">fPhotonsGenerated</a>-&gt;Fill();</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      mct.Add(part);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;LightSource&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Generated &quot;</span> &lt;&lt; mct.NParticles() &lt;&lt; <span class="stringliteral">&quot; photons after &quot;</span> &lt;&lt; fired</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                               &lt;&lt; <span class="stringliteral">&quot; tries.&quot;</span>;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordflow">if</span> (mct.NParticles() &lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a>) {</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      <span class="comment">// this may mean `NMaxFactor` is too small, or the volume is wrong;</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      <span class="comment">// or it may be just expected</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      mf::LogWarning(<span class="stringliteral">&quot;LightSource&quot;</span>)</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Warning: &quot;</span> &lt;&lt; mct.NParticles() &lt;&lt; <span class="stringliteral">&quot; photons generated after &quot;</span> &lt;&lt; fired &lt;&lt; <span class="stringliteral">&quot; tries, but &quot;</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        &lt;&lt; <a class="code" href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">fN</a> &lt;&lt; <span class="stringliteral">&quot; were requested.&quot;</span>;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    }</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">return</span> mct;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  } <span class="comment">// LightSource::Sample()</span></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_acd927042b22d9a585fba8d73c113a16e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#acd927042b22d9a585fba8d73c113a16e">evgen::LightSource::fTDist</a></div><div class="ttdeci">int fTDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00208">LightSource_module.cc:208</a></div></div>
 <div class="ttc" id="prodsingle__libraryana_8fcl_html_aed2b5cb487f42ccbf8476d023c1fe274"><div class="ttname"><a href="../../d5/d7e/prodsingle__libraryana_8fcl.html#aed2b5cb487f42ccbf8476d023c1fe274">PDG</a></div><div class="ttdeci">process_name stream1 can override from command line with o or output services DetectorPropertiesService services DetectorPropertiesService services DetectorPropertiesService services DetectorPropertiesService physics analyzers pmtresponse NeutronTrackingCut services LArG4Parameters gaussian physics producers generator PDG</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7e/prodsingle__libraryana_8fcl_source.html#l00081">prodsingle_libraryana.fcl:81</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a548d1ca220f4b2c401e17d62ddf02d93"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a548d1ca220f4b2c401e17d62ddf02d93">evgen::LightSource::fPointSource</a></div><div class="ttdeci">bool fPointSource</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00230">LightSource_module.cc:230</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a548d1ca220f4b2c401e17d62ddf02d93"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a548d1ca220f4b2c401e17d62ddf02d93">evgen::LightSource::fPointSource</a></div><div class="ttdeci">bool fPointSource</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00232">LightSource_module.cc:232</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00249">LightSource_module.cc:249</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7c70720c33beabcd325c8f7f13daa94e"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7c70720c33beabcd325c8f7f13daa94e">evgen::LightSource::fGeom</a></div><div class="ttdeci">geo::GeometryCore const &amp; fGeom</div><div class="ttdoc">Geometry service provider (cached). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00251">LightSource_module.cc:251</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a60d4e6b2ff8b3dad15efdf8f6e937336"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">evgen::LightSource::kGAUS</a></div><div class="ttdeci">static const int kGAUS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00187">LightSource_module.cc:187</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a633f12c3549fa168b7b7d73a8268f660"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">evgen::LightSource::fSigmaP</a></div><div class="ttdeci">double fSigmaP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00237">LightSource_module.cc:237</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a083d7ecaa2d8d2d1c21c123bf84218db"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">evgen::LightSource::fShotMom</a></div><div class="ttdeci">TLorentzVector fShotMom</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00199">LightSource_module.cc:199</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_af528fe7b304d0635db01e38cf3a2d801"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af528fe7b304d0635db01e38cf3a2d801">evgen::LightSource::fNMaxF</a></div><div class="ttdeci">double const fNMaxF</div><div class="ttdoc">Maximum number of attempted samplings (factor on top of fN). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00243">LightSource_module.cc:243</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ab567e93fb1b3d1747015d3c8d5faa9c1"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">evgen::LightSource::fEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00248">LightSource_module.cc:248</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ade5a31685b0ac36531a6a6bf18248e05"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ade5a31685b0ac36531a6a6bf18248e05">evgen::LightSource::fPhotonsGenerated</a></div><div class="ttdeci">TTree * fPhotonsGenerated</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00197">LightSource_module.cc:197</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00232">LightSource_module.cc:232</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a9eece3697f06474ead6d549f04a80fe4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">evgen::LightSource::fT</a></div><div class="ttdeci">double fT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00231">LightSource_module.cc:231</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_aa1fb0b88008384e0986d6389d51e230f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">evgen::LightSource::fPosDist</a></div><div class="ttdeci">int fPosDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00205">LightSource_module.cc:205</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a52d726951484c31151378004bb18b1be"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">evgen::LightSource::fP</a></div><div class="ttdeci">double fP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00236">LightSource_module.cc:236</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a829f3c7219084015a9335e45005e1829"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">evgen::LightSource::fFillTree</a></div><div class="ttdeci">bool fFillTree</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00204">LightSource_module.cc:204</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a60d4e6b2ff8b3dad15efdf8f6e937336"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a60d4e6b2ff8b3dad15efdf8f6e937336">evgen::LightSource::kGAUS</a></div><div class="ttdeci">static const int kGAUS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00189">LightSource_module.cc:189</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a633f12c3549fa168b7b7d73a8268f660"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a633f12c3549fa168b7b7d73a8268f660">evgen::LightSource::fSigmaP</a></div><div class="ttdeci">double fSigmaP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00239">LightSource_module.cc:239</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a083d7ecaa2d8d2d1c21c123bf84218db"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a083d7ecaa2d8d2d1c21c123bf84218db">evgen::LightSource::fShotMom</a></div><div class="ttdeci">TLorentzVector fShotMom</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00201">LightSource_module.cc:201</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_af528fe7b304d0635db01e38cf3a2d801"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#af528fe7b304d0635db01e38cf3a2d801">evgen::LightSource::fNMaxF</a></div><div class="ttdeci">double const fNMaxF</div><div class="ttdoc">Maximum number of attempted samplings (factor on top of fN). </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00245">LightSource_module.cc:245</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ab567e93fb1b3d1747015d3c8d5faa9c1"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ab567e93fb1b3d1747015d3c8d5faa9c1">evgen::LightSource::fEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00250">LightSource_module.cc:250</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ade5a31685b0ac36531a6a6bf18248e05"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ade5a31685b0ac36531a6a6bf18248e05">evgen::LightSource::fPhotonsGenerated</a></div><div class="ttdeci">TTree * fPhotonsGenerated</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00199">LightSource_module.cc:199</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a5cbc164db5e200544c0ab44227ff2af0"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a5cbc164db5e200544c0ab44227ff2af0">evgen::LightSource::fSigmaX</a></div><div class="ttdeci">double fSigmaX</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00234">LightSource_module.cc:234</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a9eece3697f06474ead6d549f04a80fe4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a9eece3697f06474ead6d549f04a80fe4">evgen::LightSource::fT</a></div><div class="ttdeci">double fT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00233">LightSource_module.cc:233</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_aa1fb0b88008384e0986d6389d51e230f"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aa1fb0b88008384e0986d6389d51e230f">evgen::LightSource::fPosDist</a></div><div class="ttdeci">int fPosDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00207">LightSource_module.cc:207</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a69638716039e7196e789e23d532adeb8"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a69638716039e7196e789e23d532adeb8">evgen::LightSource::fSigmaZ</a></div><div class="ttdeci">double fSigmaZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00236">LightSource_module.cc:236</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a52d726951484c31151378004bb18b1be"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a52d726951484c31151378004bb18b1be">evgen::LightSource::fP</a></div><div class="ttdeci">double fP</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00238">LightSource_module.cc:238</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a829f3c7219084015a9335e45005e1829"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a829f3c7219084015a9335e45005e1829">evgen::LightSource::fFillTree</a></div><div class="ttdeci">bool fFillTree</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00206">LightSource_module.cc:206</a></div></div>
 <div class="ttc" id="g4__3drift__faketrigger__filter_8fcl_html_ad9fbd36ae83bd91dd0be317f6be97a63"><div class="ttname"><a href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a></div><div class="ttdeci">physics filters filter</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl_source.html#l00008">g4_3drift_faketrigger_filter.fcl:8</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00229">LightSource_module.cc:229</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_aae59151feaf46e3b321b5c22566ed3af"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">evgen::LightSource::fN</a></div><div class="ttdeci">int fN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00240">LightSource_module.cc:240</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a4d99f4160dc80a200c2913080dd3c625"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a4d99f4160dc80a200c2913080dd3c625">evgen::LightSource::fCenter</a></div><div class="ttdeci">geo::Point_t fCenter</div><div class="ttdoc">Central position of source [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00231">LightSource_module.cc:231</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_aae59151feaf46e3b321b5c22566ed3af"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#aae59151feaf46e3b321b5c22566ed3af">evgen::LightSource::fN</a></div><div class="ttdeci">int fN</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00242">LightSource_module.cc:242</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_afa921f01e89b7459c0a727a0bc366922"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">evgen::LightSource::fSigmaT</a></div><div class="ttdeci">double fSigmaT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00235">LightSource_module.cc:235</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_ac201be76a7f3e7f38457d27a190d00d9"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">evgen::LightSource::fShotPos</a></div><div class="ttdeci">TLorentzVector fShotPos</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00198">LightSource_module.cc:198</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_afa921f01e89b7459c0a727a0bc366922"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#afa921f01e89b7459c0a727a0bc366922">evgen::LightSource::fSigmaT</a></div><div class="ttdeci">double fSigmaT</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00237">LightSource_module.cc:237</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_ac201be76a7f3e7f38457d27a190d00d9"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#ac201be76a7f3e7f38457d27a190d00d9">evgen::LightSource::fShotPos</a></div><div class="ttdeci">TLorentzVector fShotPos</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00200">LightSource_module.cc:200</a></div></div>
 <div class="ttc" id="namespacegeo_html_a5a6f22c2aa9d0ccf6ca08bf2773a0541"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a></div><div class="ttdeci">ROOT::Math::PositionVector3D&lt; ROOT::Math::Cartesian3D&lt; double &gt;, ROOT::Math::GlobalCoordinateSystemTag &gt; Point_t</div><div class="ttdoc">Type for representation of position in physical 3D space. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7d/geo__vectors_8h_source.html#l00184">geo_vectors.h:184</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00233">LightSource_module.cc:233</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00210">LightSource_module.cc:210</a></div></div>
-<div class="ttc" id="classevgen_1_1LightSource_html_a7d074132f5424674ba67121b169287f3"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">evgen::LightSource::fPDist</a></div><div class="ttdeci">int fPDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00207">LightSource_module.cc:207</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a78b168209d05c1cc21bc224051bc381d"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a78b168209d05c1cc21bc224051bc381d">evgen::LightSource::fSigmaY</a></div><div class="ttdeci">double fSigmaY</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00235">LightSource_module.cc:235</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a0bc2f79e2d2e9fffa448502b4dc01dc4"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a0bc2f79e2d2e9fffa448502b4dc01dc4">evgen::LightSource::fSelectedMaterials</a></div><div class="ttdeci">std::set&lt; std::string &gt; const fSelectedMaterials</div><div class="ttdoc">Names of materials to consider scintillation from. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00212">LightSource_module.cc:212</a></div></div>
+<div class="ttc" id="classevgen_1_1LightSource_html_a7d074132f5424674ba67121b169287f3"><div class="ttname"><a href="../../d2/d8f/classevgen_1_1LightSource.html#a7d074132f5424674ba67121b169287f3">evgen::LightSource::fPDist</a></div><div class="ttdeci">int fPDist</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d01/LightSource__module_8cc_source.html#l00209">LightSource_module.cc:209</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -711,7 +711,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 
 <p>Central position of source [cm]. </p>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00229">229</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00231">231</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -733,7 +733,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00220">220</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00222">222</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -755,7 +755,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00194">194</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00196">196</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -777,7 +777,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00248">248</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00250">250</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -799,7 +799,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00200">200</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00202">202</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -821,7 +821,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00193">193</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00195">195</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -843,7 +843,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00204">204</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00206">206</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -865,7 +865,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00245">245</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00247">247</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 
 <p>Geometry service provider (cached). </p>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00249">249</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00251">251</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00192">192</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00194">194</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -933,7 +933,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00246">246</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00248">248</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -955,7 +955,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00240">240</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00242">242</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 
 <p>Maximum number of attempted samplings (factor on top of <code>fN</code>). </p>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00243">243</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00245">245</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1001,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00236">236</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00238">238</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1023,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00207">207</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00209">209</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1045,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00197">197</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00199">199</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1067,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00230">230</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00232">232</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1089,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00205">205</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00207">207</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1111,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00225">225</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00227">227</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1133,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00224">224</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00226">226</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1157,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 
 <p>Names of materials to consider scintillation from. </p>
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00210">210</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00212">212</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1179,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00199">199</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00201">201</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1201,7 +1201,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00198">198</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00200">200</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1223,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00237">237</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00239">239</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1245,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00235">235</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00237">237</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1267,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00232">232</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00234">234</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1289,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00233">233</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00235">235</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1311,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00234">234</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00236">236</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1333,7 +1333,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00203">203</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00205">205</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1355,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00231">231</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00233">233</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1377,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00206">206</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00208">208</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1399,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00217">217</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00219">219</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1421,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00223">223</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00225">225</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1443,7 +1443,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00226">226</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00228">228</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1465,7 +1465,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00183">183</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00185">185</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1487,7 +1487,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00219">219</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00221">221</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1509,7 +1509,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00213">213</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00215">215</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1531,7 +1531,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00214">214</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00216">216</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1553,7 +1553,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00215">215</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00217">217</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1575,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00188">188</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00190">190</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1597,7 +1597,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00187">187</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00189">189</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1619,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00189">189</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00191">191</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1641,7 @@ vdouble[3]  RegionMax           (only used if UseCustomRegion=true)
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00186">186</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html#l00188">188</a> of file <a class="el" href="../../dc/d01/LightSource__module_8cc_source.html">LightSource_module.cc</a>.</p>
 
 </div>
 </div>

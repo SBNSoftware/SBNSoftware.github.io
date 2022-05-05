@@ -276,7 +276,7 @@ struct CCHit {
 train" (that is the set of hits extracted from the same region of interest). That is a concept that is not portable. If your hit list is still the original one as produced by this algorithm, or if at least the hits from the same train are stored sorted and contiguously, for a hit with index <code>iHit</code>, the equivalent value of <code>LoHitID</code> is <code>iHit - hit.LocalIndex()</code>.</p>
 <p>There is no pointer to the wire any more in <code><a class="el" href="../../db/d4e/classrecob_1_1Hit.html" title="2D representation of charge deposited in the TDC/wire plane ">recob::Hit</a></code>. The wire can be obtained through associations, that are typically produced by the art module that runs <a class="el" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html" title="Hit finder algorithm designed to work with Cluster Crawler. ">CCHitFinderAlg</a> (e.g. <code>CCHitFinder</code>). The channel ID is also directly available as <code><a class="el" href="../../db/d4e/classrecob_1_1Hit.html#a5722fa298fffc3ac441e8a07d9a6048b" title="ID of the readout channel the hit was extracted from. ">recob::Hit::Channel()</a></code>. </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00078">78</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00079">79</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aea4453720a39a10043708a31a35a8ac5"></a>
 <div class="memitem">
@@ -305,7 +305,7 @@ train" (that is the set of hits extracted from the same region of interest). Tha
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17806b31ffd96a9368c3b92cee96bb46">reconfigure</a>(pset);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a17806b31ffd96a9368c3b92cee96bb46"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17806b31ffd96a9368c3b92cee96bb46">hit::CCHitFinderAlg::reconfigure</a></div><div class="ttdeci">virtual void reconfigure(fhicl::ParameterSet const &amp;pset)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00057">CCHitFinderAlg.cxx:57</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abdffd560885669bce9470a6b7ab0cc6c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abdffd560885669bce9470a6b7ab0cc6c">hit::CCHitFinderAlg::FitCache</a></div><div class="ttdeci">std::unique_ptr&lt; GausFitCache &gt; FitCache</div><div class="ttdoc">a set of functions ready to be used </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00178">CCHitFinderAlg.h:178</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abdffd560885669bce9470a6b7ab0cc6c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abdffd560885669bce9470a6b7ab0cc6c">hit::CCHitFinderAlg::FitCache</a></div><div class="ttdeci">std::unique_ptr&lt; GausFitCache &gt; FitCache</div><div class="ttdoc">a set of functions ready to be used </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00179">CCHitFinderAlg.h:179</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -454,8 +454,8 @@ train" (that is the set of hits extracted from the same region of interest). Tha
 <div class="ttc" id="classlar_1_1util_1_1GaussianFit_html_ae2cc5f755c18d47429824d8792f734dc"><div class="ttname"><a href="../../d7/de5/classlar_1_1util_1_1GaussianFit.html#ae2cc5f755c18d47429824d8792f734dc">lar::util::GaussianFit::FillResults</a></div><div class="ttdeci">virtual bool FillResults(FitParameters_t &amp;params, FitMatrix_t &amp;Xmat, Data_t &amp;det, FitMatrix_t &amp;Smat) const override</div><div class="ttdoc">Fills the specified parameters. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/SimpleFits_8h_source.html#l01888">SimpleFits.h:1888</a></div></div>
 <div class="ttc" id="classlar_1_1util_1_1GaussianFit_html"><div class="ttname"><a href="../../d7/de5/classlar_1_1util_1_1GaussianFit.html">lar::util::GaussianFit</a></div><div class="ttdoc">&amp;quot;Fast&amp;quot; Gaussian fit </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/SimpleFits_8h_source.html#l01018">SimpleFits.h:1018</a></div></div>
 <div class="ttc" id="classlar_1_1util_1_1GaussianFit_html_a0c7d8282cee71e74462ead6919c21b4a"><div class="ttname"><a href="../../d7/de5/classlar_1_1util_1_1GaussianFit.html#a0c7d8282cee71e74462ead6919c21b4a">lar::util::GaussianFit::NDF</a></div><div class="ttdeci">virtual int NDF() const override</div><div class="ttdoc">Returns the degrees of freedom in the determination of the fit. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/SimpleFits_8h_source.html#l01170">SimpleFits.h:1170</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">CCHitFinderAlg.h:130</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -722,23 +722,23 @@ train" (that is the set of hits extracted from the same region of interest). Tha
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  } <span class="comment">// FitNG</span></div>
 <div class="ttc" id="detectorproperties__icarus_8fcl_html_acfd440223f806c44323dbd1053b99123"><div class="ttname"><a href="../../d1/d33/detectorproperties__icarus_8fcl.html#acfd440223f806c44323dbd1053b99123">second</a></div><div class="ttdeci">second</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d33/detectorproperties__icarus_8fcl_source.html#l00008">detectorproperties_icarus.fcl:8</a></div></div>
 <div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_a04f387a6fde8b9bc4a39b8f975b174c4"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a04f387a6fde8b9bc4a39b8f975b174c4">hit::CCHitFinderAlg::FitStats_t::AddMultiGaus</a></div><div class="ttdeci">void AddMultiGaus(unsigned int nGaus)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00846">CCHitFinderAlg.cxx:846</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00176">CCHitFinderAlg.h:176</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
-<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_ab5ee1975c1004acbad4b22e02458a63e"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#ab5ee1975c1004acbad4b22e02458a63e">hit::CCHitFinderAlg::FitStats_t::AddFast</a></div><div class="ttdeci">void AddFast()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00189">CCHitFinderAlg.h:189</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00137">CCHitFinderAlg.h:137</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00177">CCHitFinderAlg.h:177</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00195">CCHitFinderAlg.h:195</a></div></div>
+<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_ab5ee1975c1004acbad4b22e02458a63e"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#ab5ee1975c1004acbad4b22e02458a63e">hit::CCHitFinderAlg::FitStats_t::AddFast</a></div><div class="ttdeci">void AddFast()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00190">CCHitFinderAlg.h:190</a></div></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a10eae1fb7996a75ca0c4c7c78e05874a"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">util::quantities::ticks</a></div><div class="ttdeci">tick ticks</div><div class="ttdoc">Alias for common language habits. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00078">electronics.h:78</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">CCHitFinderAlg.h:113</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00114">CCHitFinderAlg.h:114</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a1650c0178cbf5edaf8d552c34d4c5744"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a1650c0178cbf5edaf8d552c34d4c5744">hit::CCHitFinderAlg::FastGaussianFit</a></div><div class="ttdeci">static bool FastGaussianFit(unsigned short npt, float const *ticks, float const *signl, std::array&lt; double, 3 &gt; &amp;params, std::array&lt; double, 3 &gt; &amp;paramerrors, float &amp;chidof)</div><div class="ttdoc">Performs a &amp;quot;fast&amp;quot; fit. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00276">CCHitFinderAlg.cxx:276</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00100">CCHitFinderAlg.h:100</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
 <div class="ttc" id="RangeForWrapper__test_8cc_html_a2a47a7f29f0ddd7ff5d68f8aff63125c"><div class="ttname"><a href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">copy</a></div><div class="ttdeci">T copy(T const &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/RangeForWrapper__test_8cc_source.html#l00098">RangeForWrapper_test.cc:98</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00193">CCHitFinderAlg.h:193</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a98a8f94d0b5bc73752d6fb0bc9d13b0a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a98a8f94d0b5bc73752d6fb0bc9d13b0a">hit::CCHitFinderAlg::chinorm</a></div><div class="ttdeci">float chinorm</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00115">CCHitFinderAlg.h:115</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">CCHitFinderAlg.h:130</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00132">CCHitFinderAlg.h:132</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">CCHitFinderAlg.h:102</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a98a8f94d0b5bc73752d6fb0bc9d13b0a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a98a8f94d0b5bc73752d6fb0bc9d13b0a">hit::CCHitFinderAlg::chinorm</a></div><div class="ttdeci">float chinorm</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00116">CCHitFinderAlg.h:116</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -821,12 +821,12 @@ train" (that is the set of hits extracted from the same region of interest). Tha
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">dof</a> = -1;</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  } <span class="comment">// MakeCrudeHit</span></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a10eae1fb7996a75ca0c4c7c78e05874a"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">util::quantities::ticks</a></div><div class="ttdeci">tick ticks</div><div class="ttdoc">Alias for common language habits. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00078">electronics.h:78</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
 <div class="ttc" id="namespacepmtana_html_afea8da0c88fccc3252529b6a49284b4a"><div class="ttname"><a href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">pmtana::mean</a></div><div class="ttdeci">double mean(const std::vector&lt; short &gt; &amp;wf, size_t start, size_t nsample)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de4/UtilFunc_8cxx_source.html#l00013">UtilFunc.cxx:13</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aebf94c9b626026e83f8ac608ba62e9ea"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aebf94c9b626026e83f8ac608ba62e9ea">hit::CCHitFinderAlg::Sqrt2Pi</a></div><div class="ttdeci">static constexpr float Sqrt2Pi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00117">CCHitFinderAlg.h:117</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">CCHitFinderAlg.h:130</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aebf94c9b626026e83f8ac608ba62e9ea"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aebf94c9b626026e83f8ac608ba62e9ea">hit::CCHitFinderAlg::Sqrt2Pi</a></div><div class="ttdeci">static constexpr float Sqrt2Pi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00118">CCHitFinderAlg.h:118</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00132">CCHitFinderAlg.h:132</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -848,37 +848,37 @@ template&lt;typename Stream &gt; </div>
 
 <p>Print the fit statistics. </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00231">231</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                                    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  out &lt;&lt; <span class="stringliteral">&quot;CCHitFinderAlg fit statistics:&quot;</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">fUseFastFit</a>) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  fast 1-Gaussian fits: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">FastFits</a></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; succeeded (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">FastFits</a> &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  fast 1-Gaussian fits: disabled&quot;</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nGaus = 1; nGaus &lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">MaxGaussians</a>; ++nGaus) {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1] == 0) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  &quot;</span> &lt;&lt; nGaus &lt;&lt; <span class="stringliteral">&quot;-Gaussian fits: &quot;</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1]</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; accepted (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1] &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  } <span class="comment">// for nGaus</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back() &gt; 0) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.size()</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;-Gaussian fits or higher: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back()</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; accepted (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back() &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  out &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;} <span class="comment">// CCHitFinderAlg::FitStats_t::Print()</span></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00176">CCHitFinderAlg.h:176</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
-<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_aeccb9d12103683d00cdf1eb161b8d64d"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">hit::CCHitFinderAlg::FitStats_t::FastFits</a></div><div class="ttdeci">unsigned int FastFits</div><div class="ttdoc">count of single-Gaussian fast fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00182">CCHitFinderAlg.h:182</a></div></div>
-<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_a7a76a44c1030d4c0e5c61610cf226bfd"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">hit::CCHitFinderAlg::FitStats_t::MultiGausFits</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; MultiGausFits</div><div class="ttdoc">multi-Gaussian stats </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00183">CCHitFinderAlg.h:183</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6cfabcb516b330ac4b7e5ac5755db6cb"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">hit::CCHitFinderAlg::MaxGaussians</a></div><div class="ttdeci">static constexpr unsigned int MaxGaussians</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00220">CCHitFinderAlg.h:220</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00193">CCHitFinderAlg.h:193</a></div></div>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00232">232</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  out &lt;&lt; <span class="stringliteral">&quot;CCHitFinderAlg fit statistics:&quot;</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">fUseFastFit</a>) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  fast 1-Gaussian fits: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">FastFits</a></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; succeeded (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">FastFits</a> &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  fast 1-Gaussian fits: disabled&quot;</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nGaus = 1; nGaus &lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">MaxGaussians</a>; ++nGaus) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1] == 0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  &quot;</span> &lt;&lt; nGaus &lt;&lt; <span class="stringliteral">&quot;-Gaussian fits: &quot;</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1]</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; accepted (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>[nGaus-1] &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  } <span class="comment">// for nGaus</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back() &gt; 0) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;\n  &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.size()</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;-Gaussian fits or higher: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">FinalFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back()</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; accepted (&quot;</span> &lt;&lt; <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">TriedFitStats</a>.<a class="code" href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">MultiGausFits</a>.back() &lt;&lt; <span class="stringliteral">&quot; tried)&quot;</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  out &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;} <span class="comment">// CCHitFinderAlg::FitStats_t::Print()</span></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00177">CCHitFinderAlg.h:177</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00195">CCHitFinderAlg.h:195</a></div></div>
+<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_aeccb9d12103683d00cdf1eb161b8d64d"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#aeccb9d12103683d00cdf1eb161b8d64d">hit::CCHitFinderAlg::FitStats_t::FastFits</a></div><div class="ttdeci">unsigned int FastFits</div><div class="ttdoc">count of single-Gaussian fast fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00183">CCHitFinderAlg.h:183</a></div></div>
+<div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_a7a76a44c1030d4c0e5c61610cf226bfd"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a7a76a44c1030d4c0e5c61610cf226bfd">hit::CCHitFinderAlg::FitStats_t::MultiGausFits</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; MultiGausFits</div><div class="ttdoc">multi-Gaussian stats </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00184">CCHitFinderAlg.h:184</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6cfabcb516b330ac4b7e5ac5755db6cb"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">hit::CCHitFinderAlg::MaxGaussians</a></div><div class="ttdeci">static constexpr unsigned int MaxGaussians</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00221">CCHitFinderAlg.h:221</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -959,26 +959,26 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    } <span class="comment">// fStudyHits</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2f83e63cc847e4a58ded867f067c4c3b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2f83e63cc847e4a58ded867f067c4c3b">hit::CCHitFinderAlg::fMaxBumps</a></div><div class="ttdeci">unsigned short fMaxBumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">CCHitFinderAlg.h:102</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a88fd042073d65a6959e867f1c2b7c1b7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a88fd042073d65a6959e867f1c2b7c1b7">hit::CCHitFinderAlg::fChiSplit</a></div><div class="ttdeci">float fChiSplit</div><div class="ttdoc">Estimated noise error on the Signal. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">CCHitFinderAlg.h:104</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2477340dffe52f897f931c875d1ab23f"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2477340dffe52f897f931c875d1ab23f">hit::CCHitFinderAlg::fWTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_af6cd89a568bfb64156f5914f0cda18e7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#af6cd89a568bfb64156f5914f0cda18e7">hit::CCHitFinderAlg::fWWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00107">CCHitFinderAlg.h:107</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a5b09ebd5e1f4dff595b8f2cc4d3a56a6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a5b09ebd5e1f4dff595b8f2cc4d3a56a6">hit::CCHitFinderAlg::fUWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a09dd77685f657b5a2c83fad9374390e4"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a09dd77685f657b5a2c83fad9374390e4">hit::CCHitFinderAlg::fUseChannelFilter</a></div><div class="ttdeci">bool fUseChannelFilter</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00120">CCHitFinderAlg.h:120</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00176">CCHitFinderAlg.h:176</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a17b52be120b3407e9653748d21a80915"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17b52be120b3407e9653748d21a80915">hit::CCHitFinderAlg::fVWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a908a732947f76278e4a24a120041770c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a908a732947f76278e4a24a120041770c">hit::CCHitFinderAlg::fVTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2f83e63cc847e4a58ded867f067c4c3b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2f83e63cc847e4a58ded867f067c4c3b">hit::CCHitFinderAlg::fMaxBumps</a></div><div class="ttdeci">unsigned short fMaxBumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">CCHitFinderAlg.h:103</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a88fd042073d65a6959e867f1c2b7c1b7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a88fd042073d65a6959e867f1c2b7c1b7">hit::CCHitFinderAlg::fChiSplit</a></div><div class="ttdeci">float fChiSplit</div><div class="ttdoc">Estimated noise error on the Signal. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00105">CCHitFinderAlg.h:105</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2477340dffe52f897f931c875d1ab23f"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2477340dffe52f897f931c875d1ab23f">hit::CCHitFinderAlg::fWTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">CCHitFinderAlg.h:161</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_af6cd89a568bfb64156f5914f0cda18e7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#af6cd89a568bfb64156f5914f0cda18e7">hit::CCHitFinderAlg::fWWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">CCHitFinderAlg.h:161</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00108">CCHitFinderAlg.h:108</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a5b09ebd5e1f4dff595b8f2cc4d3a56a6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a5b09ebd5e1f4dff595b8f2cc4d3a56a6">hit::CCHitFinderAlg::fUWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a09dd77685f657b5a2c83fad9374390e4"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a09dd77685f657b5a2c83fad9374390e4">hit::CCHitFinderAlg::fUseChannelFilter</a></div><div class="ttdeci">bool fUseChannelFilter</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00121">CCHitFinderAlg.h:121</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ab447c2a24bfbcc75686a9f5b766f97cf"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ab447c2a24bfbcc75686a9f5b766f97cf">hit::CCHitFinderAlg::fUseFastFit</a></div><div class="ttdeci">bool fUseFastFit</div><div class="ttdoc">whether to attempt using a fast fit on single gauss. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00177">CCHitFinderAlg.h:177</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a17b52be120b3407e9653748d21a80915"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17b52be120b3407e9653748d21a80915">hit::CCHitFinderAlg::fVWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a908a732947f76278e4a24a120041770c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a908a732947f76278e4a24a120041770c">hit::CCHitFinderAlg::fVTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_acfe7f48838b9ee6f36a7fb7cdc19ba60"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#acfe7f48838b9ee6f36a7fb7cdc19ba60">hit::CCHitFinderAlg::TriedFitStats</a></div><div class="ttdeci">FitStats_t TriedFitStats</div><div class="ttdoc">counts of the tried fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00195">CCHitFinderAlg.h:195</a></div></div>
 <div class="ttc" id="namespacedetsim_html_ac17a92de25bbd84bdd320811fff947c6"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#ac17a92de25bbd84bdd320811fff947c6">detsim::MF_LOG_WARNING</a></div><div class="ttdeci">MF_LOG_WARNING(&quot;SimWire&quot;)&lt;&lt; &quot;SimWire is an example module that works for the &quot;&lt;&lt; &quot;MicroBooNE detector. Each experiment should implement &quot;&lt;&lt; &quot;its own version of this module to simulate electronics &quot;&lt;&lt; &quot;response.&quot;</div></div>
 <div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_ab7215304d41b849d9ec3164d835f461d"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#ab7215304d41b849d9ec3164d835f461d">hit::CCHitFinderAlg::FitStats_t::Reset</a></div><div class="ttdeci">void Reset(unsigned int nGaus)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00838">CCHitFinderAlg.cxx:838</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00100">CCHitFinderAlg.h:100</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6cfabcb516b330ac4b7e5ac5755db6cb"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">hit::CCHitFinderAlg::MaxGaussians</a></div><div class="ttdeci">static constexpr unsigned int MaxGaussians</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00220">CCHitFinderAlg.h:220</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ac15d6ae938a6f9cd3572bca3a9cd4710"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ac15d6ae938a6f9cd3572bca3a9cd4710">hit::CCHitFinderAlg::fMaxXtraHits</a></div><div class="ttdeci">unsigned short fMaxXtraHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">CCHitFinderAlg.h:103</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a24e1f4966f8a1f3b8cccdddf1d933121"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a24e1f4966f8a1f3b8cccdddf1d933121">hit::CCHitFinderAlg::fUTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00193">CCHitFinderAlg.h:193</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00157">CCHitFinderAlg.h:157</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6cfabcb516b330ac4b7e5ac5755db6cb"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6cfabcb516b330ac4b7e5ac5755db6cb">hit::CCHitFinderAlg::MaxGaussians</a></div><div class="ttdeci">static constexpr unsigned int MaxGaussians</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00221">CCHitFinderAlg.h:221</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ac15d6ae938a6f9cd3572bca3a9cd4710"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ac15d6ae938a6f9cd3572bca3a9cd4710">hit::CCHitFinderAlg::fMaxXtraHits</a></div><div class="ttdeci">unsigned short fMaxXtraHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">CCHitFinderAlg.h:104</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a24e1f4966f8a1f3b8cccdddf1d933121"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a24e1f4966f8a1f3b8cccdddf1d933121">hit::CCHitFinderAlg::fUTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">CCHitFinderAlg.h:102</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1148,36 +1148,36 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">delete</span>[] signl;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  } <span class="comment">//RunCCHitFinder</span></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2f83e63cc847e4a58ded867f067c4c3b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2f83e63cc847e4a58ded867f067c4c3b">hit::CCHitFinderAlg::fMaxBumps</a></div><div class="ttdeci">unsigned short fMaxBumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">CCHitFinderAlg.h:102</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2f83e63cc847e4a58ded867f067c4c3b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2f83e63cc847e4a58ded867f067c4c3b">hit::CCHitFinderAlg::fMaxBumps</a></div><div class="ttdeci">unsigned short fMaxBumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">CCHitFinderAlg.h:103</a></div></div>
 <div class="ttc" id="structhit_1_1CCHitFinderAlg_1_1FitStats__t_html_a04f387a6fde8b9bc4a39b8f975b174c4"><div class="ttname"><a href="../../d7/d63/structhit_1_1CCHitFinderAlg_1_1FitStats__t.html#a04f387a6fde8b9bc4a39b8f975b174c4">hit::CCHitFinderAlg::FitStats_t::AddMultiGaus</a></div><div class="ttdeci">void AddMultiGaus(unsigned int nGaus)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00846">CCHitFinderAlg.cxx:846</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a88fd042073d65a6959e867f1c2b7c1b7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a88fd042073d65a6959e867f1c2b7c1b7">hit::CCHitFinderAlg::fChiSplit</a></div><div class="ttdeci">float fChiSplit</div><div class="ttdoc">Estimated noise error on the Signal. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">CCHitFinderAlg.h:104</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a8614ed683fa8a1ebde848349ed33dafc"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a8614ed683fa8a1ebde848349ed33dafc">hit::CCHitFinderAlg::geom</a></div><div class="ttdeci">art::ServiceHandle&lt; geo::Geometry const  &gt; geom</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00124">CCHitFinderAlg.h:124</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a88fd042073d65a6959e867f1c2b7c1b7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a88fd042073d65a6959e867f1c2b7c1b7">hit::CCHitFinderAlg::fChiSplit</a></div><div class="ttdeci">float fChiSplit</div><div class="ttdoc">Estimated noise error on the Signal. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00105">CCHitFinderAlg.h:105</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a8614ed683fa8a1ebde848349ed33dafc"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a8614ed683fa8a1ebde848349ed33dafc">hit::CCHitFinderAlg::geom</a></div><div class="ttdeci">art::ServiceHandle&lt; geo::Geometry const  &gt; geom</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00125">CCHitFinderAlg.h:125</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7b3ee014bf3a106f585551e86024a465"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7b3ee014bf3a106f585551e86024a465">hit::CCHitFinderAlg::FitNG</a></div><div class="ttdeci">void FitNG(unsigned short nGaus, unsigned short npt, float *ticks, float *signl)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00325">CCHitFinderAlg.cxx:325</a></div></div>
 <div class="ttc" id="classlariov_1_1ChannelStatusProvider_html_abda9787c4790d2e8a5cfbd5d3a806fb1"><div class="ttname"><a href="../../d8/d7e/classlariov_1_1ChannelStatusProvider.html#abda9787c4790d2e8a5cfbd5d3a806fb1">lariov::ChannelStatusProvider::IsBad</a></div><div class="ttdeci">virtual bool IsBad(raw::ChannelID_t channel) const =0</div><div class="ttdoc">Returns whether the specified channel is bad in the current run. </div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae78f40eb4eee3ebbfcb5aa8a1bf2d0a5"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae78f40eb4eee3ebbfcb5aa8a1bf2d0a5">hit::CCHitFinderAlg::theChannel</a></div><div class="ttdeci">raw::ChannelID_t theChannel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00111">CCHitFinderAlg.h:111</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae78f40eb4eee3ebbfcb5aa8a1bf2d0a5"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae78f40eb4eee3ebbfcb5aa8a1bf2d0a5">hit::CCHitFinderAlg::theChannel</a></div><div class="ttdeci">raw::ChannelID_t theChannel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00112">CCHitFinderAlg.h:112</a></div></div>
 <div class="ttc" id="namespacechannelDBConverter_html_af481fa22253619167bce75a37e10ec34"><div class="ttname"><a href="../../d4/d43/namespacechannelDBConverter.html#af481fa22253619167bce75a37e10ec34">channelDBConverter.first</a></div><div class="ttdeci">first</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d11/channelDBConverter_8py_source.html#l00146">channelDBConverter.py:146</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa6f29e707ab7a504756a84cde33d3de2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa6f29e707ab7a504756a84cde33d3de2">hit::CCHitFinderAlg::StoreHits</a></div><div class="ttdeci">void StoreHits(unsigned short TStart, unsigned short npt, HitChannelInfo_t info, float adcsum)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00589">CCHitFinderAlg.cxx:589</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a3e4d87bdae1017a2b57a9004ecb1f404"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a3e4d87bdae1017a2b57a9004ecb1f404">hit::CCHitFinderAlg::StudyHits</a></div><div class="ttdeci">void StudyHits(unsigned short flag, unsigned short npt=0, float *ticks=0, float *signl=0, unsigned short tstart=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00660">CCHitFinderAlg.cxx:660</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00107">CCHitFinderAlg.h:107</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00137">CCHitFinderAlg.h:137</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00108">CCHitFinderAlg.h:108</a></div></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a10eae1fb7996a75ca0c4c7c78e05874a"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">util::quantities::ticks</a></div><div class="ttdeci">tick ticks</div><div class="ttdoc">Alias for common language habits. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00078">electronics.h:78</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00082">CCHitFinderAlg.h:82</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">CCHitFinderAlg.h:113</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00083">CCHitFinderAlg.h:83</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00114">CCHitFinderAlg.h:114</a></div></div>
 <div class="ttc" id="classrecob_1_1Wire_html_afa7b3d93bc453f9c89c326411788f536"><div class="ttname"><a href="../../d2/db7/classrecob_1_1Wire.html#afa7b3d93bc453f9c89c326411788f536">recob::Wire::Channel</a></div><div class="ttdeci">raw::ChannelID_t Channel() const </div><div class="ttdoc">Returns the ID of the channel (or InvalidChannelID) </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9f/Wire_8h_source.html#l00231">Wire.h:231</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
 <div class="ttc" id="classlariov_1_1ChannelStatusProvider_html"><div class="ttname"><a href="../../d8/d7e/classlariov_1_1ChannelStatusProvider.html">lariov::ChannelStatusProvider</a></div><div class="ttdoc">Class providing information about the quality of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/ded/ChannelStatusProvider_8h_source.html#l00049">ChannelStatusProvider.h:49</a></div></div>
 <div class="ttc" id="classrecob_1_1Wire_html_afa0b45258e1bdf824a8681e3c03f1720"><div class="ttname"><a href="../../d2/db7/classrecob_1_1Wire.html#afa0b45258e1bdf824a8681e3c03f1720">recob::Wire::Signal</a></div><div class="ttdeci">std::vector&lt; float &gt; Signal() const </div><div class="ttdoc">Return a zero-padded full length vector filled with RoI signal. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2c/Wire_8cxx_source.html#l00047">Wire.cxx:47</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aadcfebf61abba2046b6ab22fe913714d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aadcfebf61abba2046b6ab22fe913714d">hit::CCHitFinderAlg::theWireNum</a></div><div class="ttdeci">unsigned short theWireNum</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00112">CCHitFinderAlg.h:112</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00100">CCHitFinderAlg.h:100</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aadcfebf61abba2046b6ab22fe913714d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aadcfebf61abba2046b6ab22fe913714d">hit::CCHitFinderAlg::theWireNum</a></div><div class="ttdeci">unsigned short theWireNum</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">CCHitFinderAlg.h:113</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
 <div class="ttc" id="classrecob_1_1Wire_html"><div class="ttname"><a href="../../d2/db7/classrecob_1_1Wire.html">recob::Wire</a></div><div class="ttdoc">Class holding the regions of interest of signal from a channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d9f/Wire_8h_source.html#l00118">Wire.h:118</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ac15d6ae938a6f9cd3572bca3a9cd4710"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ac15d6ae938a6f9cd3572bca3a9cd4710">hit::CCHitFinderAlg::fMaxXtraHits</a></div><div class="ttdeci">unsigned short fMaxXtraHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">CCHitFinderAlg.h:103</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ac15d6ae938a6f9cd3572bca3a9cd4710"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ac15d6ae938a6f9cd3572bca3a9cd4710">hit::CCHitFinderAlg::fMaxXtraHits</a></div><div class="ttdeci">unsigned short fMaxXtraHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">CCHitFinderAlg.h:104</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_af2e76cea7c6cae439641ee6537e35e99"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#af2e76cea7c6cae439641ee6537e35e99">hit::CCHitFinderAlg::MakeCrudeHit</a></div><div class="ttdeci">void MakeCrudeHit(unsigned short npt, float *ticks, float *signl)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00545">CCHitFinderAlg.cxx:545</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00193">CCHitFinderAlg.h:193</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a762543bcc7a7fac3bb5456309ebcd812"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a762543bcc7a7fac3bb5456309ebcd812">hit::CCHitFinderAlg::SelRAT</a></div><div class="ttdeci">bool SelRAT</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">CCHitFinderAlg.h:174</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a98a8f94d0b5bc73752d6fb0bc9d13b0a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a98a8f94d0b5bc73752d6fb0bc9d13b0a">hit::CCHitFinderAlg::chinorm</a></div><div class="ttdeci">float chinorm</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00115">CCHitFinderAlg.h:115</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00157">CCHitFinderAlg.h:157</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a799f30e5035dd02d9e20ae7776473ae9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a799f30e5035dd02d9e20ae7776473ae9">hit::CCHitFinderAlg::FinalFitStats</a></div><div class="ttdeci">FitStats_t FinalFitStats</div><div class="ttdoc">counts of the good fits </div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">CCHitFinderAlg.h:194</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a762543bcc7a7fac3bb5456309ebcd812"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a762543bcc7a7fac3bb5456309ebcd812">hit::CCHitFinderAlg::SelRAT</a></div><div class="ttdeci">bool SelRAT</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00175">CCHitFinderAlg.h:175</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad540ed888f9553698d14dab1e889f7e9"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad540ed888f9553698d14dab1e889f7e9">hit::CCHitFinderAlg::fMinRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">CCHitFinderAlg.h:102</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a98a8f94d0b5bc73752d6fb0bc9d13b0a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a98a8f94d0b5bc73752d6fb0bc9d13b0a">hit::CCHitFinderAlg::chinorm</a></div><div class="ttdeci">float chinorm</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00116">CCHitFinderAlg.h:116</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1292,18 +1292,18 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    } <span class="comment">// hit</span></div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;  } <span class="comment">// StoreHits</span></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a68f7dc896873ac57e2a003412510fb03"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a68f7dc896873ac57e2a003412510fb03">hit::CCHitFinderAlg::SqrtPi</a></div><div class="ttdeci">static constexpr float SqrtPi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00118">CCHitFinderAlg.h:118</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a68f7dc896873ac57e2a003412510fb03"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a68f7dc896873ac57e2a003412510fb03">hit::CCHitFinderAlg::SqrtPi</a></div><div class="ttdeci">static constexpr float SqrtPi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00119">CCHitFinderAlg.h:119</a></div></div>
 <div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a3e4d87bdae1017a2b57a9004ecb1f404"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a3e4d87bdae1017a2b57a9004ecb1f404">hit::CCHitFinderAlg::StudyHits</a></div><div class="ttdeci">void StudyHits(unsigned short flag, unsigned short npt=0, float *ticks=0, float *signl=0, unsigned short tstart=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d55/CCHitFinderAlg_8cxx_source.html#l00660">CCHitFinderAlg.cxx:660</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00082">CCHitFinderAlg.h:82</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abe35fca480b956394f47751a343a1b04"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abe35fca480b956394f47751a343a1b04">hit::CCHitFinderAlg::hiTime</a></div><div class="ttdeci">std::vector&lt; float &gt; hiTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00173">CCHitFinderAlg.h:173</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6e4049d1199a0c530181700e22d003e6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6e4049d1199a0c530181700e22d003e6">hit::CCHitFinderAlg::loTime</a></div><div class="ttdeci">std::vector&lt; float &gt; loTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00171">CCHitFinderAlg.h:171</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aebf94c9b626026e83f8ac608ba62e9ea"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aebf94c9b626026e83f8ac608ba62e9ea">hit::CCHitFinderAlg::Sqrt2Pi</a></div><div class="ttdeci">static constexpr float Sqrt2Pi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00117">CCHitFinderAlg.h:117</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">CCHitFinderAlg.h:130</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00157">CCHitFinderAlg.h:157</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00083">CCHitFinderAlg.h:83</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae8588cf64afa0dcc9675a7a007b538e2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae8588cf64afa0dcc9675a7a007b538e2">hit::CCHitFinderAlg::dof</a></div><div class="ttdeci">int dof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abe35fca480b956394f47751a343a1b04"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abe35fca480b956394f47751a343a1b04">hit::CCHitFinderAlg::hiTime</a></div><div class="ttdeci">std::vector&lt; float &gt; hiTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">CCHitFinderAlg.h:174</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6e4049d1199a0c530181700e22d003e6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6e4049d1199a0c530181700e22d003e6">hit::CCHitFinderAlg::loTime</a></div><div class="ttdeci">std::vector&lt; float &gt; loTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00172">CCHitFinderAlg.h:172</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aebf94c9b626026e83f8ac608ba62e9ea"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aebf94c9b626026e83f8ac608ba62e9ea">hit::CCHitFinderAlg::Sqrt2Pi</a></div><div class="ttdeci">static constexpr float Sqrt2Pi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00118">CCHitFinderAlg.h:118</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a7569daa1d44591fa3e348e2c4a6ec24a"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a7569daa1d44591fa3e348e2c4a6ec24a">hit::CCHitFinderAlg::parerr</a></div><div class="ttdeci">std::vector&lt; double &gt; parerr</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00132">CCHitFinderAlg.h:132</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bfccb60b4e4bb3d7f94b61d5e27e32b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bfccb60b4e4bb3d7f94b61d5e27e32b">hit::CCHitFinderAlg::fStudyHits</a></div><div class="ttdeci">bool fStudyHits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
 <div class="ttc" id="namespacesortDataLoggerFiles_html_aabcd6b22cdd9f4c3c9c394a72f90183a"><div class="ttname"><a href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">sortDataLoggerFiles.info</a></div><div class="ttdeci">tuple info</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00386">sortDataLoggerFiles.py:386</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1533,33 +1533,33 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;      <a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abe35fca480b956394f47751a343a1b04">hiTime</a>.clear();</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    }</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  } <span class="comment">// StudyHits</span></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2477340dffe52f897f931c875d1ab23f"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2477340dffe52f897f931c875d1ab23f">hit::CCHitFinderAlg::fWTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_af6cd89a568bfb64156f5914f0cda18e7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#af6cd89a568bfb64156f5914f0cda18e7">hit::CCHitFinderAlg::fWWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a2477340dffe52f897f931c875d1ab23f"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a2477340dffe52f897f931c875d1ab23f">hit::CCHitFinderAlg::fWTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">CCHitFinderAlg.h:161</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_af6cd89a568bfb64156f5914f0cda18e7"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#af6cd89a568bfb64156f5914f0cda18e7">hit::CCHitFinderAlg::fWWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fWWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">CCHitFinderAlg.h:161</a></div></div>
 <div class="ttc" id="build-dunepdsprce_8sh_html_a7540356e7646404cc3d25929740df7e6"><div class="ttname"><a href="../../d6/d2d/build-dunepdsprce_8sh.html#a7540356e7646404cc3d25929740df7e6">flag</a></div><div class="ttdeci">then echo unknown compiler flag</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/build-dunepdsprce_8sh_source.html#l00066">build-dunepdsprce.sh:66</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a79db95e8c2917985e691726dca81245b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a79db95e8c2917985e691726dca81245b">hit::CCHitFinderAlg::loWire</a></div><div class="ttdeci">std::vector&lt; float &gt; loWire</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00170">CCHitFinderAlg.h:170</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a79db95e8c2917985e691726dca81245b"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a79db95e8c2917985e691726dca81245b">hit::CCHitFinderAlg::loWire</a></div><div class="ttdeci">std::vector&lt; float &gt; loWire</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00171">CCHitFinderAlg.h:171</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a9453748558088ae22499027391c13aaf"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a9453748558088ae22499027391c13aaf">right</a></div><div class="ttdeci">walls no right</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00105">selectors.fcl:105</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a46ae05d6e7f5b65992998a126bd31833"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a46ae05d6e7f5b65992998a126bd31833">hit::CCHitFinderAlg::hiWire</a></div><div class="ttdeci">std::vector&lt; float &gt; hiWire</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00172">CCHitFinderAlg.h:172</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">CCHitFinderAlg.h:136</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00107">CCHitFinderAlg.h:107</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a261b184f4d3757b88fb5dd7d5bab6d1d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a261b184f4d3757b88fb5dd7d5bab6d1d">hit::CCHitFinderAlg::bumpRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; bumpRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00166">CCHitFinderAlg.h:166</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a5b09ebd5e1f4dff595b8f2cc4d3a56a6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a5b09ebd5e1f4dff595b8f2cc4d3a56a6">hit::CCHitFinderAlg::fUWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a17b52be120b3407e9653748d21a80915"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17b52be120b3407e9653748d21a80915">hit::CCHitFinderAlg::fVWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a908a732947f76278e4a24a120041770c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a908a732947f76278e4a24a120041770c">hit::CCHitFinderAlg::fVTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a46ae05d6e7f5b65992998a126bd31833"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a46ae05d6e7f5b65992998a126bd31833">hit::CCHitFinderAlg::hiWire</a></div><div class="ttdeci">std::vector&lt; float &gt; hiWire</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00173">CCHitFinderAlg.h:173</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae4249dab24857554e69000b191a92631"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae4249dab24857554e69000b191a92631">hit::CCHitFinderAlg::bumps</a></div><div class="ttdeci">std::vector&lt; unsigned short &gt; bumps</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00137">CCHitFinderAlg.h:137</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0bd5ced15ce154534e5f3e832d922e39"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0bd5ced15ce154534e5f3e832d922e39">hit::CCHitFinderAlg::fChiNorms</a></div><div class="ttdeci">std::vector&lt; float &gt; fChiNorms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00108">CCHitFinderAlg.h:108</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a261b184f4d3757b88fb5dd7d5bab6d1d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a261b184f4d3757b88fb5dd7d5bab6d1d">hit::CCHitFinderAlg::bumpRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; bumpRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00167">CCHitFinderAlg.h:167</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a5b09ebd5e1f4dff595b8f2cc4d3a56a6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a5b09ebd5e1f4dff595b8f2cc4d3a56a6">hit::CCHitFinderAlg::fUWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a17b52be120b3407e9653748d21a80915"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a17b52be120b3407e9653748d21a80915">hit::CCHitFinderAlg::fVWireRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVWireRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a908a732947f76278e4a24a120041770c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a908a732947f76278e4a24a120041770c">hit::CCHitFinderAlg::fVTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fVTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">CCHitFinderAlg.h:160</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">CCHitFinderAlg.h:113</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abe35fca480b956394f47751a343a1b04"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abe35fca480b956394f47751a343a1b04">hit::CCHitFinderAlg::hiTime</a></div><div class="ttdeci">std::vector&lt; float &gt; hiTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00173">CCHitFinderAlg.h:173</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a242b42a75f0ce8620ea3a3ab3f4fe2f8"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a242b42a75f0ce8620ea3a3ab3f4fe2f8">hit::CCHitFinderAlg::bumpCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; bumpCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00163">CCHitFinderAlg.h:163</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6e4049d1199a0c530181700e22d003e6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6e4049d1199a0c530181700e22d003e6">hit::CCHitFinderAlg::loTime</a></div><div class="ttdeci">std::vector&lt; float &gt; loTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00171">CCHitFinderAlg.h:171</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aadcfebf61abba2046b6ab22fe913714d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aadcfebf61abba2046b6ab22fe913714d">hit::CCHitFinderAlg::theWireNum</a></div><div class="ttdeci">unsigned short theWireNum</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00112">CCHitFinderAlg.h:112</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">CCHitFinderAlg.h:134</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00100">CCHitFinderAlg.h:100</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a9c67967b1e75470c5484274b72baaa1e"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a9c67967b1e75470c5484274b72baaa1e">hit::CCHitFinderAlg::hitCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; hitCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00167">CCHitFinderAlg.h:167</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a24e1f4966f8a1f3b8cccdddf1d933121"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a24e1f4966f8a1f3b8cccdddf1d933121">hit::CCHitFinderAlg::fUTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">CCHitFinderAlg.h:158</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a9773435cba25edeb20a79fd26d490fb2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a9773435cba25edeb20a79fd26d490fb2">hit::CCHitFinderAlg::hitRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; hitRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00168">CCHitFinderAlg.h:168</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0d387152f32d2223a2acc4593b8bb534"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0d387152f32d2223a2acc4593b8bb534">hit::CCHitFinderAlg::RATCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; RATCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00164">CCHitFinderAlg.h:164</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a762543bcc7a7fac3bb5456309ebcd812"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a762543bcc7a7fac3bb5456309ebcd812">hit::CCHitFinderAlg::SelRAT</a></div><div class="ttdeci">bool SelRAT</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">CCHitFinderAlg.h:174</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a1f1cade57cd6844df666937356959a7c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a1f1cade57cd6844df666937356959a7c">hit::CCHitFinderAlg::bumpChi</a></div><div class="ttdeci">std::vector&lt; float &gt; bumpChi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00165">CCHitFinderAlg.h:165</a></div></div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">CCHitFinderAlg.h:130</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0a8d3033daeddce0f32238e1ace52973"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0a8d3033daeddce0f32238e1ace52973">hit::CCHitFinderAlg::thePlane</a></div><div class="ttdeci">unsigned short thePlane</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00114">CCHitFinderAlg.h:114</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_abe35fca480b956394f47751a343a1b04"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#abe35fca480b956394f47751a343a1b04">hit::CCHitFinderAlg::hiTime</a></div><div class="ttdeci">std::vector&lt; float &gt; hiTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">CCHitFinderAlg.h:174</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a242b42a75f0ce8620ea3a3ab3f4fe2f8"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a242b42a75f0ce8620ea3a3ab3f4fe2f8">hit::CCHitFinderAlg::bumpCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; bumpCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00164">CCHitFinderAlg.h:164</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a6e4049d1199a0c530181700e22d003e6"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a6e4049d1199a0c530181700e22d003e6">hit::CCHitFinderAlg::loTime</a></div><div class="ttdeci">std::vector&lt; float &gt; loTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00172">CCHitFinderAlg.h:172</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aadcfebf61abba2046b6ab22fe913714d"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aadcfebf61abba2046b6ab22fe913714d">hit::CCHitFinderAlg::theWireNum</a></div><div class="ttdeci">unsigned short theWireNum</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">CCHitFinderAlg.h:113</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ad8aea7335b17e5239f3edd2fe3e20928"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ad8aea7335b17e5239f3edd2fe3e20928">hit::CCHitFinderAlg::chidof</a></div><div class="ttdeci">float chidof</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">CCHitFinderAlg.h:135</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_ae72a4c99b87124909c8863cea703e951"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#ae72a4c99b87124909c8863cea703e951">hit::CCHitFinderAlg::fMinPeak</a></div><div class="ttdeci">std::vector&lt; float &gt; fMinPeak</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">CCHitFinderAlg.h:101</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a9c67967b1e75470c5484274b72baaa1e"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a9c67967b1e75470c5484274b72baaa1e">hit::CCHitFinderAlg::hitCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; hitCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00168">CCHitFinderAlg.h:168</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a24e1f4966f8a1f3b8cccdddf1d933121"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a24e1f4966f8a1f3b8cccdddf1d933121">hit::CCHitFinderAlg::fUTickRange</a></div><div class="ttdeci">std::vector&lt; short &gt; fUTickRange</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">CCHitFinderAlg.h:159</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a9773435cba25edeb20a79fd26d490fb2"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a9773435cba25edeb20a79fd26d490fb2">hit::CCHitFinderAlg::hitRMS</a></div><div class="ttdeci">std::vector&lt; float &gt; hitRMS</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00169">CCHitFinderAlg.h:169</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a0d387152f32d2223a2acc4593b8bb534"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a0d387152f32d2223a2acc4593b8bb534">hit::CCHitFinderAlg::RATCnt</a></div><div class="ttdeci">std::vector&lt; int &gt; RATCnt</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00165">CCHitFinderAlg.h:165</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a762543bcc7a7fac3bb5456309ebcd812"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a762543bcc7a7fac3bb5456309ebcd812">hit::CCHitFinderAlg::SelRAT</a></div><div class="ttdeci">bool SelRAT</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00175">CCHitFinderAlg.h:175</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a1f1cade57cd6844df666937356959a7c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a1f1cade57cd6844df666937356959a7c">hit::CCHitFinderAlg::bumpChi</a></div><div class="ttdeci">std::vector&lt; float &gt; bumpChi</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00166">CCHitFinderAlg.h:166</a></div></div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_aa000ad8398e5c9c019ed12dd8846d34c"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#aa000ad8398e5c9c019ed12dd8846d34c">hit::CCHitFinderAlg::par</a></div><div class="ttdeci">std::vector&lt; double &gt; par</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">CCHitFinderAlg.h:131</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1587,9 +1587,9 @@ template&lt;typename Stream &gt; </div>
 
 <p>Returns (and loses) the collection of reconstructed hits. </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00092">92</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{ <span class="keywordflow">return</span> std::move(<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">allhits</a>); }</div>
-<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00082">CCHitFinderAlg.h:82</a></div></div>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00093">93</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{ <span class="keywordflow">return</span> std::move(<a class="code" href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">allhits</a>); }</div>
+<div class="ttc" id="classhit_1_1CCHitFinderAlg_html_a887ad2a4ac5f1061d228f5acef0ca734"><div class="ttname"><a href="../../d7/d45/classhit_1_1CCHitFinderAlg.html#a887ad2a4ac5f1061d228f5acef0ca734">hit::CCHitFinderAlg::allhits</a></div><div class="ttdeci">std::vector&lt; recob::Hit &gt; allhits</div><div class="ttdef"><b>Definition:</b> <a href="../../da/de1/CCHitFinderAlg_8h_source.html#l00083">CCHitFinderAlg.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1604,7 +1604,7 @@ template&lt;typename Stream &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00082">82</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00083">83</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1626,7 +1626,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00165">165</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00166">166</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1648,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00163">163</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00164">164</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1670,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00166">166</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00167">167</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1692,7 +1692,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">136</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00137">137</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1714,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">134</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">135</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1736,7 +1736,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00115">115</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00116">116</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1758,7 +1758,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00135">135</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00136">136</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1780,7 +1780,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00109">109</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00110">110</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1802,7 +1802,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00107">107</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00108">108</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1826,7 +1826,7 @@ template&lt;typename Stream &gt; </div>
 
 <p>Estimated noise error on the Signal. </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">104</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00105">105</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1850,7 +1850,7 @@ template&lt;typename Stream &gt; </div>
 
 <p>counts of the good fits </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00193">193</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">194</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1874,7 +1874,7 @@ template&lt;typename Stream &gt; </div>
 
 <p>a set of functions ready to be used </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00178">178</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00179">179</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +1896,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">102</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">103</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1918,7 +1918,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00103">103</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00104">104</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1940,7 +1940,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00100">100</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">101</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1962,7 +1962,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00101">101</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00102">102</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -1984,7 +1984,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00157">157</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">158</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2006,7 +2006,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00108">108</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00109">109</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2028,7 +2028,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00120">120</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00121">121</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2052,7 +2052,7 @@ template&lt;typename Stream &gt; </div>
 
 <p>whether to attempt using a fast fit on single gauss. </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00176">176</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00177">177</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2074,7 +2074,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">158</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">159</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2096,7 +2096,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00158">158</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">159</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2118,7 +2118,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">159</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">160</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2140,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00159">159</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">160</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2162,7 +2162,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">160</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">161</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2184,7 +2184,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00160">160</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00161">161</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2206,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00124">124</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00125">125</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2228,7 +2228,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00167">167</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00168">168</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2250,7 +2250,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00173">173</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">174</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2272,7 +2272,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00168">168</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00169">169</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2294,7 +2294,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00172">172</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00173">173</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2316,7 +2316,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00171">171</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00172">172</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2338,7 +2338,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00170">170</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00171">171</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2360,7 +2360,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00220">220</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00221">221</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2382,7 +2382,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00130">130</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">131</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2404,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00131">131</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00132">132</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2426,7 +2426,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00133">133</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00134">134</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2448,7 +2448,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00132">132</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00133">133</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2470,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00164">164</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00165">165</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2492,7 +2492,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00174">174</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00175">175</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2514,7 +2514,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00117">117</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00118">118</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2536,7 +2536,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00118">118</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00119">119</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2558,7 +2558,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00111">111</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00112">112</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2580,7 +2580,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">113</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00114">114</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2602,7 +2602,7 @@ template&lt;typename Stream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00112">112</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00113">113</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
@@ -2626,7 +2626,7 @@ template&lt;typename Stream &gt; </div>
 
 <p>counts of the tried fits </p>
 
-<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00194">194</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html#l00195">195</a> of file <a class="el" href="../../da/de1/CCHitFinderAlg_8h_source.html">CCHitFinderAlg.h</a>.</p>
 
 </div>
 </div>
