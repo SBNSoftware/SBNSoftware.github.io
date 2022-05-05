@@ -18,7 +18,7 @@ A list of samples that were requested and produced since Oct 2020 and the status
 
 The spreadsheet contain the configuration files used, the code version, the statistics produced and the SAM dataset for access. Currently the production passes are organized in spreadsheet tabs. If necessary information can't be found, please email the production group at [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
-More information about the workflow can be found at the [SBN Analysis Infrastructure Workflow Management page](AnalysisInfrastructure/WorkflowManagement/workflow.md)
+More information about the workflow can be found at the [SBN Analysis Infrastructure Workflow Management page](../../AnalysisInfrastructure/WorkflowManagement/workflow.md).
 
 
 Monte Carlo official SBN Production Samples
