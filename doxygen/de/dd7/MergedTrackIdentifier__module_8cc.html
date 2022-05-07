@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../de/d26/Hit_8h_source.html">lardataobj/RecoBase/Hit.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../dc/de1/TrackHitMeta_8h_source.html">lardataobj/RecoBase/TrackHitMeta.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/df8/DetectorPropertiesStandard_8h_source.html">lardataalg/DetectorInfo/DetectorPropertiesStandard.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/df8/DetectorPropertiesService_8h_source.html">lardata/DetectorInfoServices/DetectorPropertiesService.h</a>&quot;</code><br/>
@@ -155,20 +156,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/dd7/MergedTrackIdentifier__module_8cc_source.html#l00087">87</a> of file <a class="el" href="../../de/dd7/MergedTrackIdentifier__module_8cc_source.html">MergedTrackIdentifier_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  TVector3 start(vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().x(), vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().y(), vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().z());</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  TVector3 avg_dir(0., 0., 0.);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_tp = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a6b511acb9901537891b19ad8ef87a8b1">FirstValidPoint</a>(); i_tp &lt; trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a9128436d1a2465fc9f5393898b6fa236">NumberTrajectoryPoints</a>(); i_tp = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a02de134e5abf432a8701cf41b97cefe3">NextValidPoint</a>(i_tp+1)) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    TVector3 <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a0f79353d3ee5824fa80770901d1686a9">LocationAtPoint</a>&lt;TVector3&gt;(i_tp);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    avg_dir += (p - start).Unit();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> avg_dir.Unit();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../de/dd7/MergedTrackIdentifier__module_8cc_source.html#l00088">88</a> of file <a class="el" href="../../de/dd7/MergedTrackIdentifier__module_8cc_source.html">MergedTrackIdentifier_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  TVector3 start(vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().x(), vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().y(), vtx.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>().z());</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  TVector3 avg_dir(0., 0., 0.);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_tp = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a6b511acb9901537891b19ad8ef87a8b1">FirstValidPoint</a>(); i_tp &lt; trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a9128436d1a2465fc9f5393898b6fa236">NumberTrajectoryPoints</a>(); i_tp = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a02de134e5abf432a8701cf41b97cefe3">NextValidPoint</a>(i_tp+1)) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    TVector3 <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a> = trk.<a class="code" href="../../d9/dca/classrecob_1_1Track.html#a0f79353d3ee5824fa80770901d1686a9">LocationAtPoint</a>&lt;TVector3&gt;(i_tp);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    avg_dir += (p - start).Unit();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">return</span> avg_dir.Unit();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="classrecob_1_1Track_html_a0f79353d3ee5824fa80770901d1686a9"><div class="ttname"><a href="../../d9/dca/classrecob_1_1Track.html#a0f79353d3ee5824fa80770901d1686a9">recob::Track::LocationAtPoint</a></div><div class="ttdeci">Point_t const &amp; LocationAtPoint(size_t i) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html#l00126">bj/lardataobj/RecoBase/Track.h:126</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classrecob_1_1Track_html_a9128436d1a2465fc9f5393898b6fa236"><div class="ttname"><a href="../../d9/dca/classrecob_1_1Track.html#a9128436d1a2465fc9f5393898b6fa236">recob::Track::NumberTrajectoryPoints</a></div><div class="ttdeci">size_t NumberTrajectoryPoints() const </div><div class="ttdoc">Various functions related to the presence and the number of (valid) points. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html#l00102">bj/lardataobj/RecoBase/Track.h:102</a></div></div>

@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;canvas/Persistency/Common/FindMany.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">larcorealg/Geometry/PlaneGeo.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../da/de5/WireGeo_8h_source.html">larcorealg/Geometry/WireGeo.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d26/Hit_8h_source.html">lardataobj/RecoBase/Hit.h</a>&quot;</code><br/>
@@ -213,15 +214,15 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00084">84</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9">kCRTNotDefined</a> = -1,   <span class="comment">///&lt; Not defined</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa">kCRTHorizontal</a> = 0,    <span class="comment">///&lt; Horizontal Tagger</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b">kCRTVertical</a> = 1,      <span class="comment">///&lt; VertivalTagger</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>};</div>
-<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa">kCRTHorizontal</a></div><div class="ttdoc">Horizontal Tagger. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00086">HitDumper_module.cc:86</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b">kCRTVertical</a></div><div class="ttdoc">VertivalTagger. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00087">HitDumper_module.cc:87</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9">kCRTNotDefined</a></div><div class="ttdoc">Not defined. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00085">HitDumper_module.cc:85</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00085">85</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9">kCRTNotDefined</a> = -1,   <span class="comment">///&lt; Not defined</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa">kCRTHorizontal</a> = 0,    <span class="comment">///&lt; Horizontal Tagger</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b">kCRTVertical</a> = 1,      <span class="comment">///&lt; VertivalTagger</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span>};</div>
+<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ab5edf18ca685b09f7a0368575fc38ffa">kCRTHorizontal</a></div><div class="ttdoc">Horizontal Tagger. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00087">HitDumper_module.cc:87</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86a824068a9375592445af590b3ddbdba9b">kCRTVertical</a></div><div class="ttdoc">VertivalTagger. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00088">HitDumper_module.cc:88</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a36faebf9bf41a9ccbb6925cb820cfd86ac8636a6e1987a33128536709575ad2a9">kCRTNotDefined</a></div><div class="ttdoc">Not defined. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00086">HitDumper_module.cc:86</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,19 +253,19 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00090">90</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                       {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666">kPDNotDefined</a> = -1,   <span class="comment">///&lt; Not defined</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517">kPMTCoated</a> = 0,       <span class="comment">///&lt; Coated PMT</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d">kPMTUnCoated</a> = 1,     <span class="comment">///&lt; Uncoated PMT</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c">kXArapucaVis</a>,         <span class="comment">///&lt; Arapuca Vis</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246">kXArapucaVuv</a>,         <span class="comment">///&lt; Arapuca VUV</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span>};</div>
-<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d">kPMTUnCoated</a></div><div class="ttdoc">Uncoated PMT. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00093">HitDumper_module.cc:93</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666">kPDNotDefined</a></div><div class="ttdoc">Not defined. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00091">HitDumper_module.cc:91</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246">kXArapucaVuv</a></div><div class="ttdoc">Arapuca VUV. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00095">HitDumper_module.cc:95</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c">kXArapucaVis</a></div><div class="ttdoc">Arapuca Vis. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00094">HitDumper_module.cc:94</a></div></div>
-<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517">kPMTCoated</a></div><div class="ttdoc">Coated PMT. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00092">HitDumper_module.cc:92</a></div></div>
+<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                       {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666">kPDNotDefined</a> = -1,   <span class="comment">///&lt; Not defined</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517">kPMTCoated</a> = 0,       <span class="comment">///&lt; Coated PMT</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d">kPMTUnCoated</a> = 1,     <span class="comment">///&lt; Uncoated PMT</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c">kXArapucaVis</a>,         <span class="comment">///&lt; Arapuca Vis</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span>  <a class="code" href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246">kXArapucaVuv</a>,         <span class="comment">///&lt; Arapuca VUV</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span>};</div>
+<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a2e994421ed68082be11e97c1a916836d">kPMTUnCoated</a></div><div class="ttdoc">Uncoated PMT. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00094">HitDumper_module.cc:94</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a47aeda62f64434cd6134c8de34256666">kPDNotDefined</a></div><div class="ttdoc">Not defined. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00092">HitDumper_module.cc:92</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a07defcb0bd86d5ee1d511b5f42aa9246">kXArapucaVuv</a></div><div class="ttdoc">Arapuca VUV. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00096">HitDumper_module.cc:96</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a540c468f171d89617818f2424d76518c">kXArapucaVis</a></div><div class="ttdoc">Arapuca Vis. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00095">HitDumper_module.cc:95</a></div></div>
+<div class="ttc" id="HitDumper__module_8cc_html_a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517"><div class="ttname"><a href="../../d9/d48/HitDumper__module_8cc.html#a30f85764c9a87ba907ed0937744265a8a671c9d86a2befaa8c86c902e7a571517">kPMTCoated</a></div><div class="ttdoc">Coated PMT. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d48/HitDumper__module_8cc_source.html#l00093">HitDumper_module.cc:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,7 +280,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
 
 </div>
 </div>
@@ -293,7 +294,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00081">81</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
 
 </div>
 </div>
@@ -307,7 +308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00081">81</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d9/d48/HitDumper__module_8cc_source.html">HitDumper_module.cc</a>.</p>
 
 </div>
 </div>
