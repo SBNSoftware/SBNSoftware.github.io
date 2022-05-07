@@ -178,7 +178,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00046">46</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abf1f7661717ba1317022be10135521e2"></a>
 <div class="memitem">
@@ -212,20 +212,20 @@ Private Attributes</h2></td></tr>
 <p>Arguments:</p>
 <p>pset - Fcl parameters. </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00182">182</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                                   :</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;MCTruthAssociations&quot;</span>))</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">fGeometry</a>           = lar::providerFrom&lt;geo::Geometry&gt;();</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a873373badb988f7c844dd018c5fa337c">reconfigure</a>(pset);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Report.</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;AssociationsTruth&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;AssociationsTruth configured\n&quot;</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a1ef337a069779f5eb8835d41d9f976be"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">truth::AssociationsTruth::fGeometry</a></div><div class="ttdeci">const geo::GeometryCore * fGeometry</div><div class="ttdoc">pointer to Geometry service </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00172">AssociationsTruth_tool.cc:172</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a873373badb988f7c844dd018c5fa337c"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a873373badb988f7c844dd018c5fa337c">truth::AssociationsTruth::reconfigure</a></div><div class="ttdeci">void reconfigure(fhicl::ParameterSet const &amp;pset) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00205">AssociationsTruth_tool.cc:205</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00183">183</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                                   :</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;MCTruthAssociations&quot;</span>))</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">fGeometry</a>           = lar::providerFrom&lt;geo::Geometry&gt;();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a873373badb988f7c844dd018c5fa337c">reconfigure</a>(pset);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">// Report.</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;AssociationsTruth&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;AssociationsTruth configured\n&quot;</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a1ef337a069779f5eb8835d41d9f976be"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">truth::AssociationsTruth::fGeometry</a></div><div class="ttdeci">const geo::GeometryCore * fGeometry</div><div class="ttdoc">pointer to Geometry service </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00173">AssociationsTruth_tool.cc:173</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a873373badb988f7c844dd018c5fa337c"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a873373badb988f7c844dd018c5fa337c">truth::AssociationsTruth::reconfigure</a></div><div class="ttdeci">void reconfigure(fhicl::ParameterSet const &amp;pset) override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00206">AssociationsTruth_tool.cc:206</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -244,8 +244,8 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00195">195</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00196">196</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,11 +273,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#aed1b389efe52b67e3bea8ca9f7a4e23f">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00345">345</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">GetSetOfEveIDs</a>();</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00346">346</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;{</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">GetSetOfEveIDs</a>();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a736c2b7256abcc6b577bc02496261bcc"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">truth::MCTruthAssociations::GetSetOfEveIDs</a></div><div class="ttdeci">std::set&lt; int &gt; GetSetOfEveIDs() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00494">MCTruthAssociations.cpp:494</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -316,11 +316,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#ae06234af24607171a80075ff90429feb">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00357">357</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;{</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">GetSetOfEveIDs</a>(hits);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00358">358</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">GetSetOfEveIDs</a>(hits);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a736c2b7256abcc6b577bc02496261bcc"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a736c2b7256abcc6b577bc02496261bcc">truth::MCTruthAssociations::GetSetOfEveIDs</a></div><div class="ttdeci">std::set&lt; int &gt; GetSetOfEveIDs() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00494">MCTruthAssociations.cpp:494</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -348,11 +348,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a44d3560c4333b13cb9cd93e6e61e71a3">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00351">351</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">GetSetOfTrackIDs</a>();</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00352">352</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;{</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">GetSetOfTrackIDs</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_ac5638fade6b4482938e1751b23de5c6a"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">truth::MCTruthAssociations::GetSetOfTrackIDs</a></div><div class="ttdeci">std::set&lt; int &gt; GetSetOfTrackIDs() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00505">MCTruthAssociations.cpp:505</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -391,11 +391,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#aef4824c60c72a29a566a2903612edb4f">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00364">364</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">GetSetOfTrackIDs</a>(hits);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00365">365</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">GetSetOfTrackIDs</a>(hits);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_ac5638fade6b4482938e1751b23de5c6a"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ac5638fade6b4482938e1751b23de5c6a">truth::MCTruthAssociations::GetSetOfTrackIDs</a></div><div class="ttdeci">std::set&lt; int &gt; GetSetOfTrackIDs() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00505">MCTruthAssociations.cpp:505</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -452,12 +452,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a5ec220d72f701872ae70325e8c2cddb6">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00398">398</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;{</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ae1a178ced7564e49d1f85677d246170d">HitChargeCollectionEfficiency</a>(trackIDs, hits, allhits, view);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00399">399</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ae1a178ced7564e49d1f85677d246170d">HitChargeCollectionEfficiency</a>(trackIDs, hits, allhits, view);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_ae1a178ced7564e49d1f85677d246170d"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ae1a178ced7564e49d1f85677d246170d">truth::MCTruthAssociations::HitChargeCollectionEfficiency</a></div><div class="ttdeci">double HitChargeCollectionEfficiency(std::set&lt; int &gt;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;, geo::View_t const &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00434">MCTruthAssociations.cpp:434</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,11 +501,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#ae9e93b49fe6c949f67ca45819f6bdc5d">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00379">379</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;{</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aecc1492ebf1accbce9ad7ff1a9ce29f3">HitChargeCollectionPurity</a>(trackIDs, hits);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00380">380</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;{</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aecc1492ebf1accbce9ad7ff1a9ce29f3">HitChargeCollectionPurity</a>(trackIDs, hits);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_aecc1492ebf1accbce9ad7ff1a9ce29f3"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aecc1492ebf1accbce9ad7ff1a9ce29f3">truth::MCTruthAssociations::HitChargeCollectionPurity</a></div><div class="ttdeci">double HitChargeCollectionPurity(std::set&lt; int &gt;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00398">MCTruthAssociations.cpp:398</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -562,11 +562,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a896baec0d7492de027ad2dab44fca3ce">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00388">388</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;{</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a09bd4791efb7fce8f9f24627b96e5ecd">HitCollectionEfficiency</a>(trackIDs, hits, allhits, view);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00389">389</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a09bd4791efb7fce8f9f24627b96e5ecd">HitCollectionEfficiency</a>(trackIDs, hits, allhits, view);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a09bd4791efb7fce8f9f24627b96e5ecd"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a09bd4791efb7fce8f9f24627b96e5ecd">truth::MCTruthAssociations::HitCollectionEfficiency</a></div><div class="ttdeci">double HitCollectionEfficiency(std::set&lt; int &gt;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;, geo::View_t const &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00338">MCTruthAssociations.cpp:338</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -611,11 +611,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a3b1de0df163c70b6f90414b901c87c93">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00371">371</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a3bad8c255c30dfcfa0e6fb00672bfa53">HitCollectionPurity</a>(trackIDs, hits);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00372">372</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a3bad8c255c30dfcfa0e6fb00672bfa53">HitCollectionPurity</a>(trackIDs, hits);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a3bad8c255c30dfcfa0e6fb00672bfa53"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a3bad8c255c30dfcfa0e6fb00672bfa53">truth::MCTruthAssociations::HitCollectionPurity</a></div><div class="ttdeci">double HitCollectionPurity(std::set&lt; int &gt;, std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; const &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00305">MCTruthAssociations.cpp:305</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -654,20 +654,20 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a2a9dc51a68f81505beb3964a1d49f024">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00331">331</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    std::vector&lt;truth::TrackIDE&gt; locTrackIDEVec = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a8f53df9dd4a5b6f0e85b401b3b0be366">HitToEveID</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::vector&lt;sim::TrackIDE&gt;   outputVec;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    </div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    outputVec.reserve(locTrackIDEVec.size());</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; trackIDE : locTrackIDEVec) outputVec.emplace_back(trackIDE.trackID,trackIDE.energyFrac,trackIDE.energy,trackIDE.numElectrons);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> outputVec;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00332">332</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::vector&lt;truth::TrackIDE&gt; locTrackIDEVec = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a8f53df9dd4a5b6f0e85b401b3b0be366">HitToEveID</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    std::vector&lt;sim::TrackIDE&gt;   outputVec;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    outputVec.reserve(locTrackIDEVec.size());</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; trackIDE : locTrackIDEVec) outputVec.emplace_back(trackIDE.trackID,trackIDE.energyFrac,trackIDE.energy,trackIDE.numElectrons);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">return</span> outputVec;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a8f53df9dd4a5b6f0e85b401b3b0be366"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a8f53df9dd4a5b6f0e85b401b3b0be366">truth::MCTruthAssociations::HitToEveID</a></div><div class="ttdeci">std::vector&lt; TrackIDE &gt; HitToEveID(art::Ptr&lt; recob::Hit &gt; const &amp;hit) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00261">MCTruthAssociations.cpp:261</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -705,19 +705,19 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#ae1470f2ae4d6e0d2561cfa50cd22653d">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00299">299</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    std::vector&lt;truth::TrackIDE&gt; locTrackIDEVec = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ab3c760be0470cd277c9ff8848faf806c">HitToTrackID</a>(&amp;<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    std::vector&lt;sim::TrackIDE&gt;   outputVec;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    outputVec.reserve(locTrackIDEVec.size());</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; trackIDE : locTrackIDEVec) outputVec.emplace_back(trackIDE.trackID,trackIDE.energyFrac,trackIDE.energy,trackIDE.numElectrons);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">return</span> outputVec;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00300">300</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    std::vector&lt;truth::TrackIDE&gt; locTrackIDEVec = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ab3c760be0470cd277c9ff8848faf806c">HitToTrackID</a>(&amp;<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    std::vector&lt;sim::TrackIDE&gt;   outputVec;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    outputVec.reserve(locTrackIDEVec.size());</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; trackIDE : locTrackIDEVec) outputVec.emplace_back(trackIDE.trackID,trackIDE.energyFrac,trackIDE.energy,trackIDE.numElectrons);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">return</span> outputVec;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_ab3c760be0470cd277c9ff8848faf806c"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#ab3c760be0470cd277c9ff8848faf806c">truth::MCTruthAssociations::HitToTrackID</a></div><div class="ttdeci">std::vector&lt; TrackIDE &gt; HitToTrackID(const recob::Hit *) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00180">MCTruthAssociations.cpp:180</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -756,12 +756,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a64c9152b1f4c04bbf8a19b151f4e4cf6">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00313">313</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a3661beef8e5507c5abf83cc6488bbc53">HitToTrackID</a>(clockData, *<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00314">314</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a3661beef8e5507c5abf83cc6488bbc53">HitToTrackID</a>(clockData, *<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;}</div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a3661beef8e5507c5abf83cc6488bbc53"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a3661beef8e5507c5abf83cc6488bbc53">truth::AssociationsTruth::HitToTrackID</a></div><div class="ttdeci">std::vector&lt; sim::TrackIDE &gt; HitToTrackID(detinfo::DetectorClocksData const &amp;, recob::Hit const &amp;hit) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00299">AssociationsTruth_tool.cc:299</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a3661beef8e5507c5abf83cc6488bbc53"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a3661beef8e5507c5abf83cc6488bbc53">truth::AssociationsTruth::HitToTrackID</a></div><div class="ttdeci">std::vector&lt; sim::TrackIDE &gt; HitToTrackID(detinfo::DetectorClocksData const &amp;, recob::Hit const &amp;hit) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00300">AssociationsTruth_tool.cc:300</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -799,12 +799,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a30c73b038baff4fa62a79b578981bc17">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00408">408</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;{</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aefe5824e1b8b27d9e9306c00f8b319fa">HitToXYZ</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00409">409</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aefe5824e1b8b27d9e9306c00f8b319fa">HitToXYZ</a>(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_aefe5824e1b8b27d9e9306c00f8b319fa"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aefe5824e1b8b27d9e9306c00f8b319fa">truth::MCTruthAssociations::HitToXYZ</a></div><div class="ttdeci">std::vector&lt; double &gt; HitToXYZ(art::Ptr&lt; recob::Hit &gt; const &amp;hit) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00291">MCTruthAssociations.cpp:291</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -833,11 +833,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a43ab6e79b7f83c9c9ac3d1ecef6e786c">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00287">287</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5f6b27a08d02b52876c5ca344307f6f3">MCTruthToParticles</a>(mct);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00288">288</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5f6b27a08d02b52876c5ca344307f6f3">MCTruthToParticles</a>(mct);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a5f6b27a08d02b52876c5ca344307f6f3"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5f6b27a08d02b52876c5ca344307f6f3">truth::MCTruthAssociations::MCTruthToParticles</a></div><div class="ttdeci">std::vector&lt; const simb::MCParticle * &gt; MCTruthToParticles(art::Ptr&lt; simb::MCTruth &gt; const &amp;mct) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00158">MCTruthAssociations.cpp:158</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -865,11 +865,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a6d4776063ad53d4d1356c46e47aa24da">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00293">293</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5e7d31beefdd19f4bc33013e91eee10e">MCTruthVector</a>();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00294">294</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5e7d31beefdd19f4bc33013e91eee10e">MCTruthVector</a>();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a5e7d31beefdd19f4bc33013e91eee10e"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a5e7d31beefdd19f4bc33013e91eee10e">truth::MCTruthAssociations::MCTruthVector</a></div><div class="ttdeci">const MCTruthTruthVec &amp; MCTruthVector() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00173">MCTruthAssociations.cpp:173</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -899,12 +899,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#aba29f70a5755a5f9294d79852184df69">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00268">268</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// Unfortunately, this requires special handling at the moment...</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a6980fa45da24867f8f34dfff13caa4c8"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">truth::AssociationsTruth::fParticleList</a></div><div class="ttdeci">sim::ParticleList fParticleList</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00169">AssociationsTruth_tool.cc:169</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00269">269</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">// Unfortunately, this requires special handling at the moment...</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a6980fa45da24867f8f34dfff13caa4c8"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">truth::AssociationsTruth::fParticleList</a></div><div class="ttdeci">sim::ParticleList fParticleList</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00170">AssociationsTruth_tool.cc:170</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -932,12 +932,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#af63db44f918f25c766c2318bdd96221d">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00281">281</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aab458dd44be92c9588216333b7727fab">ParticleToMCTruth</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00282">282</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aab458dd44be92c9588216333b7727fab">ParticleToMCTruth</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_aab458dd44be92c9588216333b7727fab"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#aab458dd44be92c9588216333b7727fab">truth::MCTruthAssociations::ParticleToMCTruth</a></div><div class="ttdeci">const art::Ptr&lt; simb::MCTruth &gt; &amp; ParticleToMCTruth(const simb::MCParticle *p) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00153">MCTruthAssociations.cpp:153</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -971,65 +971,65 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#ae8ed5605b4e771a9ab335f1ddf5b88ff">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00218">218</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// Create a container for testing</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="../../d4/d7c/namespacetruth.html#aee781b66627c43664f2246eb5534caa5">HitParticleAssociationsVec</a> partHitAssnsVec;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// Get a handle for the associations...</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    art::Handle&lt;art::Assns&lt;simb::MCParticle, recob::Hit, anab::BackTrackerHitMatchingData&gt;&gt; partHitAssnsHandle;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; assnsProducerLabel : <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">fAssnsProducerLabels</a>)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(assnsProducerLabel, partHitAssnsHandle);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">if</span> (!partHitAssnsHandle.isValid())</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;AssociationsTruth&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;===&gt;&gt; NO MCParticle &lt;--&gt; Hit associations found for run/subrun/event: &quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a55e2c56da94db4f51d63d4a7374d47ad">run</a>() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a8ad6085e2724767e4e97cd1bc345b33f">subRun</a>() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.id().<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a0553ee275455dc5169eeaa405b0e52ef">event</a>() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        partHitAssnsVec.emplace_back(&amp;*partHitAssnsHandle);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// Recover the associations between MCTruth and MCParticles</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    art::Handle&lt;std::vector&lt;simb::MCParticle&gt;&gt; mcParticleHandle;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>, mcParticleHandle);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    std::vector&lt;art::Ptr&lt;simb::MCParticle&gt;&gt; mcParticlePtrVec;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    art::fill_ptr_vector(mcParticlePtrVec, mcParticleHandle);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="../../d4/d7c/namespacetruth.html#abed233cdc2d71d13c6d751e94439cee1">MCTruthAssns</a> mcTruthAssns(mcParticleHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// Pass this to the truth associations code</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a2e8022fb3b3913a9c2aa807915f867c5">setup</a>(partHitAssnsVec, mcParticlePtrVec, mcTruthAssns, *<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">fGeometry</a>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">// Ugliness to follow! Basically, we need to build the &quot;particle list&quot; and the current implementation of</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// that code requires a copy...</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> MCTruthParticleList&amp; locParticleList = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a6e437e3587f1d679cc77cf45f007fcd4">getParticleList</a>();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">// Clear the current container</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.clear();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">// Now we add particles back in one at a time...</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ae5523f84c7884451cef6ac6241de2b91">element</a> : locParticleList)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.Add(<span class="keyword">new</span> simb::MCParticle(*(<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ae5523f84c7884451cef6ac6241de2b91">element</a>.second)));</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Just to be consistent with the backtracker...</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.AdoptEveIdCalculator(<span class="keyword">new</span> sim::EmEveIdCalculator);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00219">219</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// Create a container for testing</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="../../d4/d7c/namespacetruth.html#aee781b66627c43664f2246eb5534caa5">HitParticleAssociationsVec</a> partHitAssnsVec;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">// Get a handle for the associations...</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    art::Handle&lt;art::Assns&lt;simb::MCParticle, recob::Hit, anab::BackTrackerHitMatchingData&gt;&gt; partHitAssnsHandle;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; assnsProducerLabel : <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">fAssnsProducerLabels</a>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(assnsProducerLabel, partHitAssnsHandle);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">if</span> (!partHitAssnsHandle.isValid())</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;AssociationsTruth&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;===&gt;&gt; NO MCParticle &lt;--&gt; Hit associations found for run/subrun/event: &quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a55e2c56da94db4f51d63d4a7374d47ad">run</a>() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a8ad6085e2724767e4e97cd1bc345b33f">subRun</a>() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.id().<a class="code" href="../../d0/d2f/structtca_1_1TCEvent.html#a0553ee275455dc5169eeaa405b0e52ef">event</a>() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        partHitAssnsVec.emplace_back(&amp;*partHitAssnsHandle);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// Recover the associations between MCTruth and MCParticles</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    art::Handle&lt;std::vector&lt;simb::MCParticle&gt;&gt; mcParticleHandle;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>, mcParticleHandle);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    std::vector&lt;art::Ptr&lt;simb::MCParticle&gt;&gt; mcParticlePtrVec;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    art::fill_ptr_vector(mcParticlePtrVec, mcParticleHandle);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../d4/d7c/namespacetruth.html#abed233cdc2d71d13c6d751e94439cee1">MCTruthAssns</a> mcTruthAssns(mcParticleHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// Pass this to the truth associations code</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a2e8022fb3b3913a9c2aa807915f867c5">setup</a>(partHitAssnsVec, mcParticlePtrVec, mcTruthAssns, *<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">fGeometry</a>);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">// Ugliness to follow! Basically, we need to build the &quot;particle list&quot; and the current implementation of</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">// that code requires a copy...</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> MCTruthParticleList&amp; locParticleList = <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a6e437e3587f1d679cc77cf45f007fcd4">getParticleList</a>();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// Clear the current container</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.clear();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// Now we add particles back in one at a time...</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ae5523f84c7884451cef6ac6241de2b91">element</a> : locParticleList)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.Add(<span class="keyword">new</span> simb::MCParticle(*(<a class="code" href="../../d4/d43/namespacechannelDBConverter.html#ae5523f84c7884451cef6ac6241de2b91">element</a>.second)));</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Just to be consistent with the backtracker...</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">fParticleList</a>.AdoptEveIdCalculator(<span class="keyword">new</span> sim::EmEveIdCalculator);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
 <div class="ttc" id="structtca_1_1TCEvent_html_a0553ee275455dc5169eeaa405b0e52ef"><div class="ttname"><a href="../../d0/d2f/structtca_1_1TCEvent.html#a0553ee275455dc5169eeaa405b0e52ef">tca::TCEvent::event</a></div><div class="ttdeci">unsigned int event</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da4/DataStructs_8h_source.html#l00634">DataStructs.h:634</a></div></div>
 <div class="ttc" id="structtca_1_1TCEvent_html_a55e2c56da94db4f51d63d4a7374d47ad"><div class="ttname"><a href="../../d0/d2f/structtca_1_1TCEvent.html#a55e2c56da94db4f51d63d4a7374d47ad">tca::TCEvent::run</a></div><div class="ttdeci">unsigned int run</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da4/DataStructs_8h_source.html#l00635">DataStructs.h:635</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a6980fa45da24867f8f34dfff13caa4c8"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">truth::AssociationsTruth::fParticleList</a></div><div class="ttdeci">sim::ParticleList fParticleList</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00169">AssociationsTruth_tool.cc:169</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a1ef337a069779f5eb8835d41d9f976be"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">truth::AssociationsTruth::fGeometry</a></div><div class="ttdeci">const geo::GeometryCore * fGeometry</div><div class="ttdoc">pointer to Geometry service </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00172">AssociationsTruth_tool.cc:172</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a6980fa45da24867f8f34dfff13caa4c8"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a6980fa45da24867f8f34dfff13caa4c8">truth::AssociationsTruth::fParticleList</a></div><div class="ttdeci">sim::ParticleList fParticleList</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00170">AssociationsTruth_tool.cc:170</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a1ef337a069779f5eb8835d41d9f976be"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a1ef337a069779f5eb8835d41d9f976be">truth::AssociationsTruth::fGeometry</a></div><div class="ttdeci">const geo::GeometryCore * fGeometry</div><div class="ttdoc">pointer to Geometry service </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00173">AssociationsTruth_tool.cc:173</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="namespacetruth_html_abed233cdc2d71d13c6d751e94439cee1"><div class="ttname"><a href="../../d4/d7c/namespacetruth.html#abed233cdc2d71d13c6d751e94439cee1">truth::MCTruthAssns</a></div><div class="ttdeci">art::FindOneP&lt; simb::MCTruth &gt; MCTruthAssns</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/MCTruthAssociations_8h_source.html#l00043">MCTruthAssociations.h:43</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aeaaaf9c22a1781c8feca8af9ed571a6a"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">truth::AssociationsTruth::fAssnsProducerLabels</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; fAssnsProducerLabels</div><div class="ttdoc">tag for finding the tracks </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00162">AssociationsTruth_tool.cc:162</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aeaaaf9c22a1781c8feca8af9ed571a6a"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">truth::AssociationsTruth::fAssnsProducerLabels</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; fAssnsProducerLabels</div><div class="ttdoc">tag for finding the tracks </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">AssociationsTruth_tool.cc:163</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a6e437e3587f1d679cc77cf45f007fcd4"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a6e437e3587f1d679cc77cf45f007fcd4">truth::MCTruthAssociations::getParticleList</a></div><div class="ttdeci">const MCTruthParticleList &amp; getParticleList() const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00107">MCTruthAssociations.cpp:107</a></div></div>
 <div class="ttc" id="namespacetruth_html_aee781b66627c43664f2246eb5534caa5"><div class="ttname"><a href="../../d4/d7c/namespacetruth.html#aee781b66627c43664f2246eb5534caa5">truth::HitParticleAssociationsVec</a></div><div class="ttdeci">std::vector&lt; const HitParticleAssociations * &gt; HitParticleAssociationsVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d72/MCTruthAssociations_8h_source.html#l00045">MCTruthAssociations.h:45</a></div></div>
 <div class="ttc" id="structtca_1_1TCEvent_html_a8ad6085e2724767e4e97cd1bc345b33f"><div class="ttname"><a href="../../d0/d2f/structtca_1_1TCEvent.html#a8ad6085e2724767e4e97cd1bc345b33f">tca::TCEvent::subRun</a></div><div class="ttdeci">unsigned int subRun</div><div class="ttdef"><b>Definition:</b> <a href="../../da/da4/DataStructs_8h_source.html#l00636">DataStructs.h:636</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aba462d7201ff094cae961f70c74c64ef"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">truth::AssociationsTruth::fG4ProducerLabel</a></div><div class="ttdeci">art::InputTag fG4ProducerLabel</div><div class="ttdoc">Input tag for G4 producer (MCParticle/MCTruth) </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">AssociationsTruth_tool.cc:163</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aba462d7201ff094cae961f70c74c64ef"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">truth::AssociationsTruth::fG4ProducerLabel</a></div><div class="ttdeci">art::InputTag fG4ProducerLabel</div><div class="ttdoc">Input tag for G4 producer (MCParticle/MCTruth) </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00164">AssociationsTruth_tool.cc:164</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a2e8022fb3b3913a9c2aa807915f867c5"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a2e8022fb3b3913a9c2aa807915f867c5">truth::MCTruthAssociations::setup</a></div><div class="ttdeci">void setup(const HitParticleAssociationsVec &amp;, const MCParticleVec &amp;, const MCTruthAssns &amp;, const geo::GeometryCore &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00038">MCTruthAssociations.cpp:38</a></div></div>
 <div class="ttc" id="namespacechannelDBConverter_html_ae5523f84c7884451cef6ac6241de2b91"><div class="ttname"><a href="../../d4/d43/namespacechannelDBConverter.html#ae5523f84c7884451cef6ac6241de2b91">channelDBConverter.element</a></div><div class="ttdeci">list element</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d11/channelDBConverter_8py_source.html#l00251">channelDBConverter.py:251</a></div></div>
@@ -1063,13 +1063,13 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a90e9b17d04acab7d3f206d48d2001ce9">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00205">205</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">fAssnsProducerLabels</a> = pset.get&lt;std::vector&lt;art::InputTag&gt;&gt;(<span class="stringliteral">&quot;AssnsProducerLabels&quot;</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>     = pset.get&lt;art::InputTag&gt;             (<span class="stringliteral">&quot;G4ProducerLabel&quot;</span>);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aeaaaf9c22a1781c8feca8af9ed571a6a"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">truth::AssociationsTruth::fAssnsProducerLabels</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; fAssnsProducerLabels</div><div class="ttdoc">tag for finding the tracks </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00162">AssociationsTruth_tool.cc:162</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aba462d7201ff094cae961f70c74c64ef"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">truth::AssociationsTruth::fG4ProducerLabel</a></div><div class="ttdeci">art::InputTag fG4ProducerLabel</div><div class="ttdoc">Input tag for G4 producer (MCParticle/MCTruth) </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">AssociationsTruth_tool.cc:163</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00206">206</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">fAssnsProducerLabels</a> = pset.get&lt;std::vector&lt;art::InputTag&gt;&gt;(<span class="stringliteral">&quot;AssnsProducerLabels&quot;</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">fG4ProducerLabel</a>     = pset.get&lt;art::InputTag&gt;             (<span class="stringliteral">&quot;G4ProducerLabel&quot;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aeaaaf9c22a1781c8feca8af9ed571a6a"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aeaaaf9c22a1781c8feca8af9ed571a6a">truth::AssociationsTruth::fAssnsProducerLabels</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; fAssnsProducerLabels</div><div class="ttdoc">tag for finding the tracks </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">AssociationsTruth_tool.cc:163</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_aba462d7201ff094cae961f70c74c64ef"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#aba462d7201ff094cae961f70c74c64ef">truth::AssociationsTruth::fG4ProducerLabel</a></div><div class="ttdeci">art::InputTag fG4ProducerLabel</div><div class="ttdoc">Input tag for G4 producer (MCParticle/MCTruth) </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00164">AssociationsTruth_tool.cc:164</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1107,11 +1107,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#ac6c73afb4e77a3667ea525e55a5591df">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00434">434</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#affc873ea98b466e5b3833f63dd10ca6b">SpacePointHitsToXYZ</a>(hits);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00435">435</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;{</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#affc873ea98b466e5b3833f63dd10ca6b">SpacePointHitsToXYZ</a>(hits);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_affc873ea98b466e5b3833f63dd10ca6b"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#affc873ea98b466e5b3833f63dd10ca6b">truth::MCTruthAssociations::SpacePointHitsToXYZ</a></div><div class="ttdeci">std::vector&lt; double &gt; SpacePointHitsToXYZ(art::PtrVector&lt; recob::Hit &gt; const &amp;hits) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00298">MCTruthAssociations.cpp:298</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1162,23 +1162,23 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#af5920b28cc08b0cf9f7617f8bba45c73">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00415">415</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;{</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// Get hits that make up this space point.</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    art::PtrVector&lt;recob::SpacePoint&gt; spv;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    spv.push_back(spt);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    art::FindManyP&lt;recob::Hit&gt; fmh(spv, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, label);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    std::vector&lt; art::Ptr&lt;recob::Hit&gt; &gt; hitv = fmh.at(0);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="comment">// make a PtrVector</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    art::PtrVector&lt;recob::Hit&gt; hits;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> = 0; <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> &lt; hitv.size(); ++<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>) hits.push_back(hitv[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>]);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a56172ce66c10b96499df26ba36926a41">SpacePointHitsToXYZ</a>(clockData, hits);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00416">416</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="comment">// Get hits that make up this space point.</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    art::PtrVector&lt;recob::SpacePoint&gt; spv;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    spv.push_back(spt);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    art::FindManyP&lt;recob::Hit&gt; fmh(spv, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, label);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    std::vector&lt; art::Ptr&lt;recob::Hit&gt; &gt; hitv = fmh.at(0);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="comment">// make a PtrVector</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    art::PtrVector&lt;recob::Hit&gt; hits;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> = 0; <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> &lt; hitv.size(); ++<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>) hits.push_back(hitv[<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>]);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a56172ce66c10b96499df26ba36926a41">SpacePointHitsToXYZ</a>(clockData, hits);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
 <div class="ttc" id="getStatistics_8sh_html_a04d4c2131ccb24cc78386597e8a21c5b"><div class="ttname"><a href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a></div><div class="ttdeci">while getopts h</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de2/getStatistics_8sh_source.html#l00013">getStatistics.sh:13</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a56172ce66c10b96499df26ba36926a41"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a56172ce66c10b96499df26ba36926a41">truth::AssociationsTruth::SpacePointHitsToXYZ</a></div><div class="ttdeci">std::vector&lt; double &gt; SpacePointHitsToXYZ(detinfo::DetectorClocksData const &amp;clockData, art::PtrVector&lt; recob::Hit &gt; const &amp;hits) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00434">AssociationsTruth_tool.cc:434</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_a56172ce66c10b96499df26ba36926a41"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#a56172ce66c10b96499df26ba36926a41">truth::AssociationsTruth::SpacePointHitsToXYZ</a></div><div class="ttdeci">std::vector&lt; double &gt; SpacePointHitsToXYZ(detinfo::DetectorClocksData const &amp;clockData, art::PtrVector&lt; recob::Hit &gt; const &amp;hits) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00435">AssociationsTruth_tool.cc:435</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1222,12 +1222,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a64353e5ece985cbc1e6f424f6f0ea99a">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00320">320</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a84184466c327cee4565ed697f0b6a54e">TrackIDsToHits</a>(allhits,tkIDs);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00321">321</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a84184466c327cee4565ed697f0b6a54e">TrackIDsToHits</a>(allhits,tkIDs);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a84184466c327cee4565ed697f0b6a54e"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a84184466c327cee4565ed697f0b6a54e">truth::MCTruthAssociations::TrackIDsToHits</a></div><div class="ttdeci">const std::vector&lt; std::vector&lt; art::Ptr&lt; recob::Hit &gt; &gt; &gt; TrackIDsToHits(std::vector&lt; art::Ptr&lt; recob::Hit &gt;&gt; const &amp;, std::vector&lt; int &gt; const &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00223">MCTruthAssociations.cpp:223</a></div></div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1255,11 +1255,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#afacbd8817cedb7a233fb98a337ba08a5">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00275">275</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a59ad582436a0746191f7656a7656adc6">TrackIDToMCTruth</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00276">276</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a59ad582436a0746191f7656a7656adc6">TrackIDToMCTruth</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a59ad582436a0746191f7656a7656adc6"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a59ad582436a0746191f7656a7656adc6">truth::MCTruthAssociations::TrackIDToMCTruth</a></div><div class="ttdeci">const art::Ptr&lt; simb::MCTruth &gt; &amp; TrackIDToMCTruth(int const &amp;id) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00140">MCTruthAssociations.cpp:140</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1288,9 +1288,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a6fe118f8727ad06ec17eb60710e1addb">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a49dfe83a555af8a658c11b5e3b71f72e">TrackIDToMotherParticle</a>(<span class="keywordtype">id</span>);}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00081">81</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a49dfe83a555af8a658c11b5e3b71f72e">TrackIDToMotherParticle</a>(<span class="keywordtype">id</span>);}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a49dfe83a555af8a658c11b5e3b71f72e"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a49dfe83a555af8a658c11b5e3b71f72e">truth::MCTruthAssociations::TrackIDToMotherParticle</a></div><div class="ttdeci">const simb::MCParticle * TrackIDToMotherParticle(int const &amp;id) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00132">MCTruthAssociations.cpp:132</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1319,9 +1319,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d7f/classtruth_1_1IMCTruthMatching.html#a67112004a7b9e0eeacfd7aedbae5c2cd">truth::IMCTruthMatching</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a1cdeeb3099f860af0bc6cb07a5859f38">TrackIDToParticle</a>(<span class="keywordtype">id</span>);}</div>
-<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">AssociationsTruth_tool.cc:166</a></div></div>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">fMCTruthAssociations</a>.<a class="code" href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a1cdeeb3099f860af0bc6cb07a5859f38">TrackIDToParticle</a>(<span class="keywordtype">id</span>);}</div>
+<div class="ttc" id="classtruth_1_1AssociationsTruth_html_ae3841a53df2c2e99ae2fadc2352f77ae"><div class="ttname"><a href="../../dc/dd4/classtruth_1_1AssociationsTruth.html#ae3841a53df2c2e99ae2fadc2352f77ae">truth::AssociationsTruth::fMCTruthAssociations</a></div><div class="ttdeci">MCTruthAssociations fMCTruthAssociations</div><div class="ttdoc">The class that does the work. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">AssociationsTruth_tool.cc:167</a></div></div>
 <div class="ttc" id="classtruth_1_1MCTruthAssociations_html_a1cdeeb3099f860af0bc6cb07a5859f38"><div class="ttname"><a href="../../de/dbb/classtruth_1_1MCTruthAssociations.html#a1cdeeb3099f860af0bc6cb07a5859f38">truth::MCTruthAssociations::TrackIDToParticle</a></div><div class="ttdeci">const simb::MCParticle * TrackIDToParticle(int const &amp;id) const </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d7d/MCTruthAssociations_8cpp_source.html#l00113">MCTruthAssociations.cpp:113</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1347,7 +1347,7 @@ Private Attributes</h2></td></tr>
 
 <p>tag for finding the tracks </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00162">162</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">163</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1371,7 @@ Private Attributes</h2></td></tr>
 
 <p>Input tag for G4 producer (MCParticle/MCTruth) </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00163">163</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00164">164</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1395,7 @@ Private Attributes</h2></td></tr>
 
 <p>pointer to Geometry service </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00172">172</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00173">173</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1419,7 @@ Private Attributes</h2></td></tr>
 
 <p>The class that does the work. </p>
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00166">166</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00167">167</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1441,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00169">169</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html#l00170">170</a> of file <a class="el" href="../../d7/d9f/AssociationsTruth__tool_8cc_source.html">AssociationsTruth_tool.cc</a>.</p>
 
 </div>
 </div>

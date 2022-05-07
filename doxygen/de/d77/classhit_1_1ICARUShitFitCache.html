@@ -145,7 +145,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Customized function cache for ICARUS hit shape. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00067">67</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00068">68</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afcadb3205401a9a2166770020eae3967"></a>
 <div class="memitem">
@@ -171,9 +171,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor (see base class constructor). </p>
 
-<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00071">71</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        : <a class="code" href="../../d9/df7/classhit_1_1GausFitCache.html">hit::GausFitCache</a>(new_name)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {}</div>
+<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00072">72</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        : <a class="code" href="../../d9/df7/classhit_1_1GausFitCache.html">hit::GausFitCache</a>(new_name)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {}</div>
 <div class="ttc" id="classhit_1_1GausFitCache_html"><div class="ttname"><a href="../../d9/df7/classhit_1_1GausFitCache.html">hit::GausFitCache</a></div><div class="ttdoc">A set of TF1 linear sum of base functions (Gaussians) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc9/GausFitCache_8h_source.html#l00046">GausFitCache.h:46</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -205,17 +205,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="../../d9/df7/classhit_1_1GausFitCache.html#ae7171dc6d0e2adffbbdf27deb329557e">hit::GausFitCache</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00081">81</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;               <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> nPeaks = nFunc;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;               std::string <span class="keyword">const</span> func_name = <a class="code" href="../../d9/df7/classhit_1_1GausFitCache.html#a3b8599ecb50906cbb70641e8415b74f1">FunctionName</a>(nFunc);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;               <span class="keyword">auto</span>* pF = <span class="keyword">new</span> TF1(func_name.c_str(), <a class="code" href="../../de/d77/classhit_1_1ICARUShitFitCache.html#a40656a356f9dcabd878addf708cd9910">fitf</a>, 0.0, 1.0, 1 + nFunc * 5);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;               pF-&gt;SetParName(0, <span class="stringliteral">&quot;NPeaks&quot;</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;               pF-&gt;FixParameter(0, (<span class="keywordtype">double</span>) nPeaks);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;               <span class="keywordflow">return</span> pF;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          } <span class="comment">// CreateFunction()</span></div>
+<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;               <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">const</span> nPeaks = nFunc;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;               std::string <span class="keyword">const</span> func_name = <a class="code" href="../../d9/df7/classhit_1_1GausFitCache.html#a3b8599ecb50906cbb70641e8415b74f1">FunctionName</a>(nFunc);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;               <span class="keyword">auto</span>* pF = <span class="keyword">new</span> TF1(func_name.c_str(), <a class="code" href="../../de/d77/classhit_1_1ICARUShitFitCache.html#a40656a356f9dcabd878addf708cd9910">fitf</a>, 0.0, 1.0, 1 + nFunc * 5);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;               pF-&gt;SetParName(0, <span class="stringliteral">&quot;NPeaks&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;               pF-&gt;FixParameter(0, (<span class="keywordtype">double</span>) nPeaks);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;               <span class="keywordflow">return</span> pF;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          } <span class="comment">// CreateFunction()</span></div>
 <div class="ttc" id="classhit_1_1GausFitCache_html_a3b8599ecb50906cbb70641e8415b74f1"><div class="ttname"><a href="../../d9/df7/classhit_1_1GausFitCache.html#a3b8599ecb50906cbb70641e8415b74f1">hit::GausFitCache::FunctionName</a></div><div class="ttdeci">virtual std::string FunctionName(size_t nFunc) const </div><div class="ttdoc">Returns a name for the function with nFunc base functions. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d2c/GausFitCache_8cxx_source.html#l00080">GausFitCache.cxx:80</a></div></div>
-<div class="ttc" id="classhit_1_1ICARUShitFitCache_html_a40656a356f9dcabd878addf708cd9910"><div class="ttname"><a href="../../de/d77/classhit_1_1ICARUShitFitCache.html#a40656a356f9dcabd878addf708cd9910">hit::ICARUShitFitCache::fitf</a></div><div class="ttdeci">static Double_t fitf(Double_t const *x, Double_t const *par)</div><div class="ttdoc">ICARUS hit shape. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l01363">ICARUSHitFinder_module.cc:1363</a></div></div>
+<div class="ttc" id="classhit_1_1ICARUShitFitCache_html_a40656a356f9dcabd878addf708cd9910"><div class="ttname"><a href="../../de/d77/classhit_1_1ICARUShitFitCache.html#a40656a356f9dcabd878addf708cd9910">hit::ICARUShitFitCache::fitf</a></div><div class="ttdeci">static Double_t fitf(Double_t const *x, Double_t const *par)</div><div class="ttdoc">ICARUS hit shape. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l01364">ICARUSHitFinder_module.cc:1364</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,14 +253,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ICARUS hit shape. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l01363">1363</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        {</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;            <span class="keywordtype">int</span> <span class="keyword">const</span> npeaks=(int)(par[0]);</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;            Double_t fitval=0;</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> jp=0;jp&lt;npeaks;jp++)</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                fitval += par[5*jp+1]+par[5*jp+2]*TMath::Exp(-(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0]-par[5*jp+3])/par[5*jp+4])/(1+TMath::Exp(-(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0]-par[5*jp+3])/par[5*jp+5]));</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;            <span class="keywordflow">return</span> fitval;</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html#l01364">1364</a> of file <a class="el" href="../../d0/d99/ICARUSHitFinder__module_8cc_source.html">ICARUSHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        {</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;            <span class="keywordtype">int</span> <span class="keyword">const</span> npeaks=(int)(par[0]);</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;            Double_t fitval=0;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> jp=0;jp&lt;npeaks;jp++)</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;                fitval += par[5*jp+1]+par[5*jp+2]*TMath::Exp(-(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0]-par[5*jp+3])/par[5*jp+4])/(1+TMath::Exp(-(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0]-par[5*jp+3])/par[5*jp+5]));</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;            <span class="keywordflow">return</span> fitval;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 </div><!-- fragment -->
 </div>

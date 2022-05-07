@@ -104,6 +104,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../dc/d69/Shower_8h_source.html">lardataobj/RecoBase/Shower.h</a>&quot;</code><br/>
 <code>#include &quot;nusimdata/SimulationBase/MCParticle.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../df/d7c/Exceptions_8h_source.html">larcorealg/Geometry/Exceptions.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/df8/DetectorPropertiesStandard_8h_source.html">lardataalg/DetectorInfo/DetectorPropertiesStandard.h</a>&quot;</code><br/>
@@ -2991,19 +2992,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00375">375</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                       : <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a6a80d135e7146eedd7c40fb23864aff3">IterateCryostats</a>()) {</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="../../d3/d1a/classgeo_1_1details_1_1geometry__element__iterator.html">geo::GeometryCore::TPC_iterator</a> iTPC = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad41eeaffc6fffe29567223789e255489">begin_TPC</a>(cryo.ID()),</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                    tend = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad5f42c7fb57037b973db92bfa9984c15">end_TPC</a>(cryo.ID());</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    std::vector&lt;geo::BoxBoundedGeo&gt; this_tpc_volumes;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">while</span> (iTPC != tend) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d22/sbnd__flashalgo_8fcl.html#a648c7afac4085c93cd1ba4a75dfe8818">TPC</a> = *iTPC;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      this_tpc_volumes.push_back(TPC.<a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html#a660a7a6b893390ca0cf521f87d06d7bc">ActiveBoundingBox</a>());</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      iTPC++;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;     fTPCVolumes.push_back(std::move(this_tpc_volumes));</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  }</div>
-<div class="ttc" id="NuVertexChargeTree__module_8cc_html_ad544178eb97bd705ef1dc4dc3e72b405"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a></div><div class="ttdeci">const geo::GeometryCore * geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00372">NuVertexChargeTree_module.cc:372</a></div></div>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00376">376</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                       : <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a6a80d135e7146eedd7c40fb23864aff3">IterateCryostats</a>()) {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <a class="code" href="../../d3/d1a/classgeo_1_1details_1_1geometry__element__iterator.html">geo::GeometryCore::TPC_iterator</a> iTPC = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad41eeaffc6fffe29567223789e255489">begin_TPC</a>(cryo.ID()),</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                                    tend = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad5f42c7fb57037b973db92bfa9984c15">end_TPC</a>(cryo.ID());</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    std::vector&lt;geo::BoxBoundedGeo&gt; this_tpc_volumes;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">while</span> (iTPC != tend) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d4/d22/sbnd__flashalgo_8fcl.html#a648c7afac4085c93cd1ba4a75dfe8818">TPC</a> = *iTPC;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      this_tpc_volumes.push_back(TPC.<a class="code" href="../../d9/dff/classgeo_1_1TPCGeo.html#a660a7a6b893390ca0cf521f87d06d7bc">ActiveBoundingBox</a>());</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      iTPC++;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;     fTPCVolumes.push_back(std::move(this_tpc_volumes));</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  }</div>
+<div class="ttc" id="NuVertexChargeTree__module_8cc_html_ad544178eb97bd705ef1dc4dc3e72b405"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a></div><div class="ttdeci">const geo::GeometryCore * geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00373">NuVertexChargeTree_module.cc:373</a></div></div>
 <div class="ttc" id="classgeo_1_1TPCGeo_html"><div class="ttname"><a href="../../d9/dff/classgeo_1_1TPCGeo.html">geo::TPCGeo</a></div><div class="ttdoc">Geometry information for a single TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/de9/TPCGeo_8h_source.html#l00038">TPCGeo.h:38</a></div></div>
 <div class="ttc" id="classgeo_1_1TPCGeo_html_a660a7a6b893390ca0cf521f87d06d7bc"><div class="ttname"><a href="../../d9/dff/classgeo_1_1TPCGeo.html#a660a7a6b893390ca0cf521f87d06d7bc">geo::TPCGeo::ActiveBoundingBox</a></div><div class="ttdeci">geo::BoxBoundedGeo const &amp; ActiveBoundingBox() const </div><div class="ttdoc">Returns the box of the active volume of this TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/de9/TPCGeo_8h_source.html#l00320">TPCGeo.h:320</a></div></div>
 <div class="ttc" id="sbnd__flashalgo_8fcl_html_a648c7afac4085c93cd1ba4a75dfe8818"><div class="ttname"><a href="../../d4/d22/sbnd__flashalgo_8fcl.html#a648c7afac4085c93cd1ba4a75dfe8818">TPC</a></div><div class="ttdeci">BEGIN_PROLOG TPC</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d22/sbnd__flashalgo_8fcl_source.html#l00014">sbnd_flashalgo.fcl:14</a></div></div>
@@ -3028,21 +3029,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00388">388</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                                              : fTPCVolumes) {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">double</span> XMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinX() &lt; rhs.MinX(); })-&gt;MinX();</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">double</span> YMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinY() &lt; rhs.MinY(); })-&gt;MinY();</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">double</span> ZMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinZ() &lt; rhs.MinZ(); })-&gt;MinZ();</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">double</span> XMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxX() &lt; rhs.MaxX(); })-&gt;MaxX();</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">double</span> YMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxY() &lt; rhs.MaxY(); })-&gt;MaxY();</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">double</span> ZMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxZ() &lt; rhs.MaxZ(); })-&gt;MaxZ();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">// fActiveVolumes.emplace_back(XMin, XMax, YMin, YMax, ZMin, ZMax);</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    fFiducialVolumes.emplace_back(XMin + fFiducialInset[0], XMax - fFiducialInset[1], </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                                  YMin + fFiducialInset[2], YMax - fFiducialInset[3], </div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                                  ZMin + fFiducialInset[4], ZMax - fFiducialInset[5]);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00389">389</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                                              : fTPCVolumes) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">double</span> XMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinX() &lt; rhs.MinX(); })-&gt;MinX();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">double</span> YMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinY() &lt; rhs.MinY(); })-&gt;MinY();</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">double</span> ZMin = std::min_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MinZ() &lt; rhs.MinZ(); })-&gt;MinZ();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">double</span> XMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxX() &lt; rhs.MaxX(); })-&gt;MaxX();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">double</span> YMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxY() &lt; rhs.MaxY(); })-&gt;MaxY();</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordtype">double</span> ZMax = std::max_element(tpcs.begin(), tpcs.end(), [](<span class="keyword">auto</span> &amp;lhs, <span class="keyword">auto</span> &amp;rhs) { <span class="keywordflow">return</span> lhs.MaxZ() &lt; rhs.MaxZ(); })-&gt;MaxZ();</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// fActiveVolumes.emplace_back(XMin, XMax, YMin, YMax, ZMin, ZMax);</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    fFiducialVolumes.emplace_back(XMin + fFiducialInset[0], XMax - fFiducialInset[1], </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                                  YMin + fFiducialInset[2], YMax - fFiducialInset[3], </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                  ZMin + fFiducialInset[4], ZMax - fFiducialInset[5]);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3098,33 +3099,33 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00411">411</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                                                           {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keyword">const</span> simb::MCParticle *ret = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iparticle = 0; iparticle &lt; (int)g4_mcparticles.size(); iparticle++) {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keywordflow">if</span> (infos[iparticle]-&gt;hasGeneratedParticleIndex() &amp;&amp;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        (int)infos[iparticle]-&gt;generatedParticleIndex() &lt; mctruth.NParticles() &amp;&amp; <span class="comment">// TODO: why is this number sometimes bigger than the number of particles?</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        mctruth.GetParticle(infos[iparticle]-&gt;generatedParticleIndex()).TrackId() == genie_part.TrackId() &amp;&amp;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        g4_mcparticles[iparticle]-&gt;Process() == <span class="stringliteral">&quot;primary&quot;</span> <span class="comment">/* TODO: will have to remove this restriction to include secondary particles*/</span>) {</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      <span class="comment">// if a genie particle re-scatters in g4 and makes more particles, then multiple g4 particles can match to a </span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <span class="comment">// genie particle. Thus, we also check that the start location of the associated genie particle matches the g4</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="comment">// and that the pdgid matches (to be on the safe side)</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      <span class="comment">// Note that this should be accounted for by requiring the process to be primary. This is a bit of redundancy.</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keyword">const</span> simb::MCParticle&amp; matched_genie_particle = mctruth.GetParticle(infos[iparticle]-&gt;generatedParticleIndex());</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keywordflow">if</span> ((matched_genie_particle.Position().Vect() - g4_mcparticles[iparticle]-&gt;Position().Vect()).Mag() &lt; 1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-4 &amp;&amp;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        matched_genie_particle.PdgCode() == g4_mcparticles[iparticle]-&gt;PdgCode()) {</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="comment">// this should only be true for one particle</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        assert(ret == <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        ret = g4_mcparticles[iparticle].get();</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00412">412</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                                                           {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keyword">const</span> simb::MCParticle *ret = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iparticle = 0; iparticle &lt; (int)g4_mcparticles.size(); iparticle++) {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">if</span> (infos[iparticle]-&gt;hasGeneratedParticleIndex() &amp;&amp;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        (int)infos[iparticle]-&gt;generatedParticleIndex() &lt; mctruth.NParticles() &amp;&amp; <span class="comment">// TODO: why is this number sometimes bigger than the number of particles?</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        mctruth.GetParticle(infos[iparticle]-&gt;generatedParticleIndex()).TrackId() == genie_part.TrackId() &amp;&amp;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        g4_mcparticles[iparticle]-&gt;Process() == <span class="stringliteral">&quot;primary&quot;</span> <span class="comment">/* TODO: will have to remove this restriction to include secondary particles*/</span>) {</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <span class="comment">// if a genie particle re-scatters in g4 and makes more particles, then multiple g4 particles can match to a </span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="comment">// genie particle. Thus, we also check that the start location of the associated genie particle matches the g4</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      <span class="comment">// and that the pdgid matches (to be on the safe side)</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="comment">// Note that this should be accounted for by requiring the process to be primary. This is a bit of redundancy.</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keyword">const</span> simb::MCParticle&amp; matched_genie_particle = mctruth.GetParticle(infos[iparticle]-&gt;generatedParticleIndex());</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      <span class="keywordflow">if</span> ((matched_genie_particle.Position().Vect() - g4_mcparticles[iparticle]-&gt;Position().Vect()).Mag() &lt; 1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-4 &amp;&amp;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        matched_genie_particle.PdgCode() == g4_mcparticles[iparticle]-&gt;PdgCode()) {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="comment">// this should only be true for one particle</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        assert(ret == <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        ret = g4_mcparticles[iparticle].get();</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  }</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -3140,7 +3141,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00255">255</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00256">256</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
 
 </div>
 </div>
@@ -3154,7 +3155,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00252">252</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00253">253</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
 
 </div>
 </div>
@@ -3168,7 +3169,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00372">372</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00373">373</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
 
 </div>
 </div>
@@ -3182,7 +3183,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00253">253</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00254">254</a> of file <a class="el" href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html">NuVertexChargeTree_module.cc</a>.</p>
 
 </div>
 </div>

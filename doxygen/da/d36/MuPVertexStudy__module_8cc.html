@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;<a class="el" href="../../de/df8/DetectorPropertiesService_8h_source.html">lardata/DetectorInfoServices/DetectorPropertiesService.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/dba/DetectorClocksService_8h_source.html">lardata/DetectorInfoServices/DetectorClocksService.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d9/d92/BoxBoundedGeo_8h_source.html">larcorealg/Geometry/BoxBoundedGeo.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d8/d01/BackTrackerService_8h_source.html">larsim/MCCheater/BackTrackerService.h</a>&quot;</code><br/>
@@ -183,15 +184,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html#l00317">317</a> of file <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html">MuPVertexStudy_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                                                                                                                                                             {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;pair: matches) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">if</span> (pair.first == particle.TrackId()) {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">return</span> pair.second / particleE;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    } </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordflow">return</span> 0.;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html#l00318">318</a> of file <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html">MuPVertexStudy_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                                                                                                                             {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;pair: matches) {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (pair.first == particle.TrackId()) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keywordflow">return</span> pair.second / particleE;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    } </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordflow">return</span> 0.;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,31 +264,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html#l00326">326</a> of file <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html">MuPVertexStudy_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                                                                                                                                      {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordtype">float</span> matchE = 0.;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;pair: matches) {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">bool</span> matches = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">if</span> (pair.first == particle.TrackId()) matches = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_d = 0; i_d &lt; particle.NumberDaughters(); i_d++) {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> (pair.first == particle.Daughter(i_d)) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          <span class="keywordtype">bool</span> showerDaughter = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_p = 0; i_p &lt; particles.size(); i_p++) {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">if</span> (pair.first == particles[i_p].TrackId()) {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;              showerDaughter = particles[i_p].Process() == <span class="stringliteral">&quot;muIoni&quot;</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;              <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;          matches = showerDaughter;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">if</span> (matches) matchE += pair.second;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> matchE / totalE;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html#l00327">327</a> of file <a class="el" href="../../da/d36/MuPVertexStudy__module_8cc_source.html">MuPVertexStudy_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                                                                                                                                      {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordtype">float</span> matchE = 0.;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;pair: matches) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">bool</span> matches = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (pair.first == particle.TrackId()) matches = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_d = 0; i_d &lt; particle.NumberDaughters(); i_d++) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> (pair.first == particle.Daughter(i_d)) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordtype">bool</span> showerDaughter = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_p = 0; i_p &lt; particles.size(); i_p++) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">if</span> (pair.first == particles[i_p].TrackId()) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;              showerDaughter = particles[i_p].Process() == <span class="stringliteral">&quot;muIoni&quot;</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;          }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          matches = showerDaughter;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">if</span> (matches) matchE += pair.second;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordflow">return</span> matchE / totalE;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
