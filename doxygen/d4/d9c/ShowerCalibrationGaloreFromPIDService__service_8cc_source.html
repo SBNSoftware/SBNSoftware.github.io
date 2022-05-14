@@ -88,18 +88,72 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// our header</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dff/ShowerCalibrationGaloreFromPIDService_8h.html">larexamples/Services/ShowerCalibrationGalore/Services/ShowerCalibrationGaloreFromPIDService.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceDefinitionMacros.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;DEFINE_ART_SERVICE_INTERFACE_IMPL(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../d4/d63/classlar_1_1ServiceProviderImplementationWrapper.html">lar::example::ShowerCalibrationGaloreFromPIDService</a>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../dd/d8f/classlar_1_1ServiceProviderInterfaceWrapper.html">lar::example::ShowerCalibrationGaloreService</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  )</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/// LArSoft libraries</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span><span class="preprocessor">#include &quot;<a class="code" href="../../db/dd5/ShowerCalibrationGaloreFromPID_8h.html">larexamples/Services/ShowerCalibrationGalore/Providers/ShowerCalibrationGaloreFromPID.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dfd/ShowerCalibrationGaloreService_8h.html">larexamples/Services/ShowerCalibrationGalore/Services/ShowerCalibrationGaloreService.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceDeclarationMacros.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>lar {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">namespace </span>example {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * @brief Service for shower energy calibration according to particle type</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * @ingroup ShowerCalibrationGalore</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * @see @ref ShowerCalibrationGalore &quot;ShowerCalibrationGalore example overview&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * See the ShowerCalibrationGaloreFromPID provider documentation for</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * configuration instructions and implementation details.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     * See the ShowerCalibrationGalore provider class documentation for an</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     * explanation of the interface.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * Use this service and its provider by its interface only:</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     *     lar::example::ShowerCalibrationGalore const* calib</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     *       = lar::providerFrom&lt;lar::example::ShowerCalibrationGaloreService&gt;();</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * The code does not need to mention, nor to include, nor to link to</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * `ShowerCalibrationGaloreFromPIDService` service.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * Configuration parameters</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * -------------------------</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * In addition to the service provider:</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     * * *service_provider* must be set to</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     *   `&quot;ShowerCalibrationGaloreFromPIDService&quot;` in order to tell _art_ to</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     *   load this implementation.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../de/d2b/namespacelar_1_1example.html#ac8014c2c1f2011334e62fbfb19d03aad">ShowerCalibrationGaloreFromPIDService</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      = <a class="code" href="../../d4/d63/classlar_1_1ServiceProviderImplementationWrapper.html">lar::ServiceProviderImplementationWrapper</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../de/d2b/namespacelar_1_1example.html#ac8014c2c1f2011334e62fbfb19d03aad">   53</a></span>&#160;        &lt;<a class="code" href="../../d3/df5/classlar_1_1example_1_1ShowerCalibrationGaloreFromPID.html">ShowerCalibrationGaloreFromPID</a>, <a class="code" href="../../dd/d8f/classlar_1_1ServiceProviderInterfaceWrapper.html">ShowerCalibrationGaloreService</a>&gt;;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="comment">// namespace example</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace lar</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;DECLARE_ART_SERVICE_INTERFACE_IMPL(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../d4/d63/classlar_1_1ServiceProviderImplementationWrapper.html">lar::example::ShowerCalibrationGaloreFromPIDService</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../dd/d8f/classlar_1_1ServiceProviderInterfaceWrapper.html">lar::example::ShowerCalibrationGaloreService</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  LEGACY</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  )</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Services/Registry/ServiceDefinitionMacros.h&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;DEFINE_ART_SERVICE_INTERFACE_IMPL(</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d4/d63/classlar_1_1ServiceProviderImplementationWrapper.html">lar::example::ShowerCalibrationGaloreFromPIDService</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../dd/d8f/classlar_1_1ServiceProviderInterfaceWrapper.html">lar::example::ShowerCalibrationGaloreService</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  )</div>
+<div class="ttc" id="classlar_1_1example_1_1ShowerCalibrationGaloreFromPID_html"><div class="ttname"><a href="../../d3/df5/classlar_1_1example_1_1ShowerCalibrationGaloreFromPID.html">lar::example::ShowerCalibrationGaloreFromPID</a></div><div class="ttdoc">Shower calibration service provider correcting according to PID. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd5/ShowerCalibrationGaloreFromPID_8h_source.html#l00121">ShowerCalibrationGaloreFromPID.h:121</a></div></div>
+<div class="ttc" id="ShowerCalibrationGaloreService_8h_html"><div class="ttname"><a href="../../dc/dfd/ShowerCalibrationGaloreService_8h.html">ShowerCalibrationGaloreService.h</a></div><div class="ttdoc">Interface for a shower calibration art service. </div></div>
+<div class="ttc" id="namespacelar_1_1example_html_ac8014c2c1f2011334e62fbfb19d03aad"><div class="ttname"><a href="../../de/d2b/namespacelar_1_1example.html#ac8014c2c1f2011334e62fbfb19d03aad">lar::example::ShowerCalibrationGaloreFromPIDService</a></div><div class="ttdeci">lar::ServiceProviderImplementationWrapper&lt; ShowerCalibrationGaloreFromPID, ShowerCalibrationGaloreService &gt; ShowerCalibrationGaloreFromPIDService</div><div class="ttdoc">Service for shower energy calibration according to particle type. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9c/ShowerCalibrationGaloreFromPIDService__service_8cc_source.html#l00053">ShowerCalibrationGaloreFromPIDService_service.cc:53</a></div></div>
+<div class="ttc" id="ShowerCalibrationGaloreFromPID_8h_html"><div class="ttname"><a href="../../db/dd5/ShowerCalibrationGaloreFromPID_8h.html">ShowerCalibrationGaloreFromPID.h</a></div><div class="ttdoc">Shower energy calibration according to particle type. </div></div>
 <div class="ttc" id="classlar_1_1ServiceProviderImplementationWrapper_html"><div class="ttname"><a href="../../d4/d63/classlar_1_1ServiceProviderImplementationWrapper.html">lar::ServiceProviderImplementationWrapper</a></div><div class="ttdoc">Service implementation returning a provider. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0f/ServiceProviderWrappers_8h_source.html#l00235">ServiceProviderWrappers.h:235</a></div></div>
 <div class="ttc" id="classlar_1_1ServiceProviderInterfaceWrapper_html"><div class="ttname"><a href="../../dd/d8f/classlar_1_1ServiceProviderInterfaceWrapper.html">lar::ServiceProviderInterfaceWrapper</a></div><div class="ttdoc">Service returning a provider interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0f/ServiceProviderWrappers_8h_source.html#l00132">ServiceProviderWrappers.h:132</a></div></div>
-<div class="ttc" id="ShowerCalibrationGaloreFromPIDService_8h_html"><div class="ttname"><a href="../../d6/dff/ShowerCalibrationGaloreFromPIDService_8h.html">ShowerCalibrationGaloreFromPIDService.h</a></div><div class="ttdoc">Shower energy calibration according to particle type. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
