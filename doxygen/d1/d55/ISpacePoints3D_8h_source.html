@@ -92,36 +92,38 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ISpacePoints3D_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ISpacePoints3D_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/PtrVector.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/FindManyP.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;nuevdb/EventDisplayBase/View3D.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d12/SpacePoint_8h.html">lardataobj/RecoBase/SpacePoint.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d26/Hit_8h.html">lardataobj/RecoBase/Hit.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>evdb_tool</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">ISpacePoints3D</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#a4c8c1552bffe87523a62054771db5017">~ISpacePoints3D</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#abac2a2f6bba07f881f8b1d839d1a2b17">Draw</a>(<span class="keyword">const</span> <a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">std::vector</a>&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt;&amp;,   <span class="comment">// Space points</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                          evdb::View3D*,                                     <span class="comment">// 3D display</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                          <span class="keywordtype">int</span> = 1,                                           <span class="comment">// Color</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                          <span class="keywordtype">int</span> = 1,                                           <span class="comment">// Marker</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          <span class="keywordtype">float</span> = 1.,                                        <span class="comment">// Size</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          <span class="keyword">const</span> art::FindManyP&lt;recob::Hit&gt;* = <span class="keyword">nullptr</span>        <span class="comment">// pointer</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                         ) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="Hit_8h_html"><div class="ttname"><a href="../../de/d26/Hit_8h.html">Hit.h</a></div><div class="ttdoc">Declaration of signal hit object. </div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/FindManyP.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Ptr.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>evdb { <span class="keyword">class </span>View3D; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>recob {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">class </span>Hit;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">class </span>SpacePoint;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>evdb_tool</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">ISpacePoints3D</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#a4c8c1552bffe87523a62054771db5017">~ISpacePoints3D</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#abac2a2f6bba07f881f8b1d839d1a2b17">Draw</a>(<span class="keyword">const</span> <a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">std::vector</a>&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt;&amp;,   <span class="comment">// Space points</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          evdb::View3D*,                                     <span class="comment">// 3D display</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          <span class="keywordtype">int</span> = 1,                                           <span class="comment">// Color</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                          <span class="keywordtype">int</span> = 1,                                           <span class="comment">// Marker</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                          <span class="keywordtype">float</span> = 1.,                                        <span class="comment">// Size</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          <span class="keyword">const</span> art::FindManyP&lt;recob::Hit&gt;* = <span class="keyword">nullptr</span>        <span class="comment">// pointer</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                         ) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classevdb__tool_1_1ISpacePoints3D_html_abac2a2f6bba07f881f8b1d839d1a2b17"><div class="ttname"><a href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#abac2a2f6bba07f881f8b1d839d1a2b17">evdb_tool::ISpacePoints3D::Draw</a></div><div class="ttdeci">virtual void Draw(const std::vector&lt; art::Ptr&lt; recob::SpacePoint &gt;&gt; &amp;, evdb::View3D *, int=1, int=1, float=1., const art::FindManyP&lt; recob::Hit &gt; *=nullptr) const =0</div></div>
 <div class="ttc" id="classevdb__tool_1_1ISpacePoints3D_html_a4c8c1552bffe87523a62054771db5017"><div class="ttname"><a href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html#a4c8c1552bffe87523a62054771db5017">evdb_tool::ISpacePoints3D::~ISpacePoints3D</a></div><div class="ttdeci">virtual ~ISpacePoints3D() noexcept=default</div></div>
 <div class="ttc" id="namespacelar_1_1dump_html_a71d4403edbac4d265176f8677118194f"><div class="ttname"><a href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">lar::dump::vector</a></div><div class="ttdeci">auto vector(Vector const &amp;v)</div><div class="ttdoc">Returns a manipulator which will print the specified array. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da9/DumpUtils_8h_source.html#l00265">DumpUtils.h:265</a></div></div>
-<div class="ttc" id="classevdb__tool_1_1ISpacePoints3D_html"><div class="ttname"><a href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">evdb_tool::ISpacePoints3D</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d55/ISpacePoints3D_8h_source.html#l00023">ISpacePoints3D.h:23</a></div></div>
-<div class="ttc" id="SpacePoint_8h_html"><div class="ttname"><a href="../../d9/d12/SpacePoint_8h.html">SpacePoint.h</a></div></div>
+<div class="ttc" id="classevdb__tool_1_1ISpacePoints3D_html"><div class="ttname"><a href="../../d2/dea/classevdb__tool_1_1ISpacePoints3D.html">evdb_tool::ISpacePoints3D</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d55/ISpacePoints3D_8h_source.html#l00027">ISpacePoints3D.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

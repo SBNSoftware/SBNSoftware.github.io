@@ -91,97 +91,95 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/fwd.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>art { <span class="keyword">class </span>Event; }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/PtrVector.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Ptr.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;fhiclcpp/fwd.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>fhicl { <span class="keyword">class </span>ParameterSet; }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>util {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">class </span>PxLine;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">class </span>PxPoint;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>recob {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">class </span>Hit;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">class </span>Cluster;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>recob {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">class </span>Hit;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>evd {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>evd {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html">   29</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html">GraphClusterAlg</a> {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html">   31</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html">GraphClusterAlg</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2544225e52246691251ded3b03e2434a">GraphClusterAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2544225e52246691251ded3b03e2434a">GraphClusterAlg</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#abc0b1904068818dc37424e79450b2e46">reconfigure</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#abc0b1904068818dc37424e79450b2e46">reconfigure</a>(fhicl::ParameterSet <span class="keyword">const</span>&amp; pset);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//   void GetStartEndHits(unsigned int plane, recob::Hit * starthit,recob::Hit * endhit);</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//   void GetStartEndHits(unsigned int plane);</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ac65dc87be3d6c1f56e0aaa3f7a88f6b5">GetStartEndHits</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane,<a class="code" href="../../d7/d65/classutil_1_1PxLine.html">util::PxLine</a> &amp;startendpoints);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//   void GetStartEndHits(unsigned int plane, recob::Hit * starthit,recob::Hit * endhit);</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//   void GetStartEndHits(unsigned int plane);</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ac65dc87be3d6c1f56e0aaa3f7a88f6b5">GetStartEndHits</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane,<a class="code" href="../../d7/d65/classutil_1_1PxLine.html">util::PxLine</a> &amp;startendpoints);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//void GetHitList(unsigned int plane,std::vector&lt; art::Ptr &lt;recob::Hit&gt; &gt; ptrhitlist);</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a8a47758a19d810997126487e595ac5f3">GetHitList</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane, art::PtrVector &lt;recob::Hit&gt;  &amp;ptrhitlist);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//void GetHitList(unsigned int plane,std::vector&lt; art::Ptr &lt;recob::Hit&gt; &gt; ptrhitlist);</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a8a47758a19d810997126487e595ac5f3">GetHitList</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane, art::PtrVector &lt;recob::Hit&gt;  &amp;ptrhitlist);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2314ecb4f28a52c6a13cc41751c2c053">GetHitListAndEndPoints</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane, art::PtrVector &lt;recob::Hit&gt;  &amp;ptrhitlist,<a class="code" href="../../d7/d65/classutil_1_1PxLine.html">util::PxLine</a> &amp;startendpoints);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2314ecb4f28a52c6a13cc41751c2c053">GetHitListAndEndPoints</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plane, art::PtrVector &lt;recob::Hit&gt;  &amp;ptrhitlist,<a class="code" href="../../d7/d65/classutil_1_1PxLine.html">util::PxLine</a> &amp;startendpoints);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#adf38054b6b0d37ee96391146f3e85190">CheckValidity</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#adf38054b6b0d37ee96391146f3e85190">CheckValidity</a>(art::Event&amp; <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector &lt; util::PxLine &gt; <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a437f9078d47e0acbffea332976eb62e5">GetSeedLines</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::vector &lt; util::PxLine &gt; <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a437f9078d47e0acbffea332976eb62e5">GetSeedLines</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">   55</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">fNPlanes</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">   57</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">fNPlanes</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">TestFlag</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">fRun</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">   61</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">fSubRun</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">fEvent</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">TestFlag</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">fRun</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">fSubRun</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">fEvent</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    std::vector&lt; recob::Hit * &gt; starthit;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">    std::vector&lt; recob::Hit * &gt; endhit;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//     std::vector &lt; std::vector&lt; recob::Hit * &gt; &gt; hitlist;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//     std::vector &lt; util::PxLine &gt; plines;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//     std::vector &lt;unsigned int&gt; swire;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//     std::vector &lt;unsigned int&gt; ewire;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//     std::vector &lt;double&gt; stime;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//     std::vector &lt;double&gt; etime;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    std::vector&lt; recob::Hit * &gt; starthit;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">    std::vector&lt; recob::Hit * &gt; endhit;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//     std::vector &lt; std::vector&lt; recob::Hit * &gt; &gt; hitlist;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//     std::vector &lt; util::PxLine &gt; plines;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//     std::vector &lt;unsigned int&gt; swire;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//     std::vector &lt;unsigned int&gt; ewire;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//     std::vector &lt;double&gt; stime;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//     std::vector &lt;double&gt; etime;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }; <span class="comment">//class GraphClusterAlg</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }; <span class="comment">//class GraphClusterAlg</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">//namespace evd</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">//namespace evd</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html_a9b0ae1d6e5d0e3889a9d9651de075175"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">evd::GraphClusterAlg::fNPlanes</a></div><div class="ttdeci">unsigned int fNPlanes</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00057">GraphClusterAlg.h:57</a></div></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html_aa04c02f1fa6763f56ce65ecea9c98d54"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">evd::GraphClusterAlg::TestFlag</a></div><div class="ttdeci">int TestFlag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00059">GraphClusterAlg.h:59</a></div></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html_a9b0ae1d6e5d0e3889a9d9651de075175"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a9b0ae1d6e5d0e3889a9d9651de075175">evd::GraphClusterAlg::fNPlanes</a></div><div class="ttdeci">unsigned int fNPlanes</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00055">GraphClusterAlg.h:55</a></div></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html_aa04c02f1fa6763f56ce65ecea9c98d54"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#aa04c02f1fa6763f56ce65ecea9c98d54">evd::GraphClusterAlg::TestFlag</a></div><div class="ttdeci">int TestFlag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00057">GraphClusterAlg.h:57</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_a2544225e52246691251ded3b03e2434a"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2544225e52246691251ded3b03e2434a">evd::GraphClusterAlg::GraphClusterAlg</a></div><div class="ttdeci">GraphClusterAlg(fhicl::ParameterSet const &amp;pset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00023">GraphClusterAlg.cxx:23</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_a437f9078d47e0acbffea332976eb62e5"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a437f9078d47e0acbffea332976eb62e5">evd::GraphClusterAlg::GetSeedLines</a></div><div class="ttdeci">std::vector&lt; util::PxLine &gt; GetSeedLines()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00201">GraphClusterAlg.cxx:201</a></div></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html_ade960d428fce01272353d67916690644"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">evd::GraphClusterAlg::fSubRun</a></div><div class="ttdeci">int fSubRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00061">GraphClusterAlg.h:61</a></div></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html_ade960d428fce01272353d67916690644"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ade960d428fce01272353d67916690644">evd::GraphClusterAlg::fSubRun</a></div><div class="ttdeci">int fSubRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00059">GraphClusterAlg.h:59</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_adf38054b6b0d37ee96391146f3e85190"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#adf38054b6b0d37ee96391146f3e85190">evd::GraphClusterAlg::CheckValidity</a></div><div class="ttdeci">int CheckValidity(art::Event &amp;evt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00216">GraphClusterAlg.cxx:216</a></div></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html">evd::GraphClusterAlg</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00031">GraphClusterAlg.h:31</a></div></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html">evd::GraphClusterAlg</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00029">GraphClusterAlg.h:29</a></div></div>
 <div class="ttc" id="classutil_1_1PxLine_html"><div class="ttname"><a href="../../d7/d65/classutil_1_1PxLine.html">util::PxLine</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5d/PxUtils_8h_source.html#l00063">PxUtils.h:63</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_a2314ecb4f28a52c6a13cc41751c2c053"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a2314ecb4f28a52c6a13cc41751c2c053">evd::GraphClusterAlg::GetHitListAndEndPoints</a></div><div class="ttdeci">void GetHitListAndEndPoints(unsigned int plane, art::PtrVector&lt; recob::Hit &gt; &amp;ptrhitlist, util::PxLine &amp;startendpoints)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00055">GraphClusterAlg.cxx:55</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_ac65dc87be3d6c1f56e0aaa3f7a88f6b5"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#ac65dc87be3d6c1f56e0aaa3f7a88f6b5">evd::GraphClusterAlg::GetStartEndHits</a></div><div class="ttdeci">void GetStartEndHits(unsigned int plane, util::PxLine &amp;startendpoints)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00065">GraphClusterAlg.cxx:65</a></div></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html_a904e51c5fa9594e676aadb5c0d6028d7"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">evd::GraphClusterAlg::fEvent</a></div><div class="ttdeci">int fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00062">GraphClusterAlg.h:62</a></div></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html_a904e51c5fa9594e676aadb5c0d6028d7"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a904e51c5fa9594e676aadb5c0d6028d7">evd::GraphClusterAlg::fEvent</a></div><div class="ttdeci">int fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00060">GraphClusterAlg.h:60</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_a8a47758a19d810997126487e595ac5f3"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#a8a47758a19d810997126487e595ac5f3">evd::GraphClusterAlg::GetHitList</a></div><div class="ttdeci">void GetHitList(unsigned int plane, art::PtrVector&lt; recob::Hit &gt; &amp;ptrhitlist)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00176">GraphClusterAlg.cxx:176</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
-<div class="ttc" id="classevd_1_1GraphClusterAlg_html_af5faaf6a61e3ac2e8ef15c0307b9f164"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">evd::GraphClusterAlg::fRun</a></div><div class="ttdeci">int fRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00060">GraphClusterAlg.h:60</a></div></div>
+<div class="ttc" id="classevd_1_1GraphClusterAlg_html_af5faaf6a61e3ac2e8ef15c0307b9f164"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#af5faaf6a61e3ac2e8ef15c0307b9f164">evd::GraphClusterAlg::fRun</a></div><div class="ttdeci">int fRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d30/GraphClusterAlg_8h_source.html#l00058">GraphClusterAlg.h:58</a></div></div>
 <div class="ttc" id="classevd_1_1GraphClusterAlg_html_abc0b1904068818dc37424e79450b2e46"><div class="ttname"><a href="../../db/d4b/classevd_1_1GraphClusterAlg.html#abc0b1904068818dc37424e79450b2e46">evd::GraphClusterAlg::reconfigure</a></div><div class="ttdeci">void reconfigure(fhicl::ParameterSet const &amp;pset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d10/GraphClusterAlg_8cxx_source.html#l00046">GraphClusterAlg.cxx:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

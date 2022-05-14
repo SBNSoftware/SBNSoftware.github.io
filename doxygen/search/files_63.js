@@ -341,6 +341,7 @@ var searchData=
   ['collectionsplitting_5fmodule_2ecc',['CollectionSplitting_module.cc',['../db/d88/CollectionSplitting__module_8cc.html',1,'']]],
   ['collectionview_2eh',['CollectionView.h',['../d3/d39/CollectionView_8h.html',1,'']]],
   ['collectionview_5ftest_2ecc',['CollectionView_test.cc',['../d2/d41/CollectionView__test_8cc.html',1,'']]],
+  ['colordrawingoptions_2ecc',['ColorDrawingOptions.cc',['../d6/d0a/ColorDrawingOptions_8cc.html',1,'']]],
   ['colordrawingoptions_2eh',['ColorDrawingOptions.h',['../d8/da2/ColorDrawingOptions_8h.html',1,'']]],
   ['colordrawingoptions_5fservice_2ecc',['ColorDrawingOptions_service.cc',['../dc/deb/ColorDrawingOptions__service_8cc.html',1,'']]],
   ['combineintolibrary_2esh',['CombineIntoLibrary.sh',['../d5/d36/CombineIntoLibrary_8sh.html',1,'']]],
