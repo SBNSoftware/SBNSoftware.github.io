@@ -13,11 +13,12 @@ Release management
 Release managers build and publish the official releases of ICARUS code
 ([ICARUS LArSoft](https://cdcvs.fnal.gov/redmine/projects/icaruscode)).
 
-person        | e-mail address
-------------- | ---------------------------
-Tracy Usher   | <usher@slac.stanford.edu>
+person            | e-mail address
+----------------- | ------------------------------
+Sergey Martynenko | <smartynen@bnl.gov>
+Matt Rosenberg    | <Matthew.Rosenberg@tufts.edu>
 
-
+Past release managers: [Tracy Usher](mailto:usher@slac.stanford.edu).
 
 Production management
 ----------------------
