@@ -14,5 +14,10 @@ var searchData=
   ['direction_5funknown',['DIRECTION_UNKNOWN',['../dc/d23/classlar__content_1_1LArVertexHelper.html#abe775010afc9ad0b237c3e941bbca540a0727448c2d244b7aa218bac0dbcb1fdc',1,'lar_content::LArVertexHelper']]],
   ['disable',['disable',['../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#affce49e05e4d32130e79a4727875a14ea0aaa87422396fdd678498793b6d5250e',1,'icarus::trigger::LVDSgates']]],
   ['discarded',['discarded',['../dc/df0/namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46',1,'nlohmann::detail']]],
-  ['dopenclosing',['DOPENCLOSING',['../db/d6d/namespacecaldata.html#a7d6fb719857c9156cd6b6c70b3eab895af9d8033a83ff6b685994a598b3415531',1,'caldata::DOPENCLOSING()'],['../da/d1c/namespaceicarus__tool.html#afe7e4716cb5a3347ba8de71a6476b45aaf94c1068552a24d7d2ad23a5173cead6',1,'icarus_tool::DOPENCLOSING()'],['../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a4d357ad38b944015c0c4283911f58857',1,'reco_tool::DOPENCLOSING()']]]
+  ['dopenclosing',['DOPENCLOSING',['../db/d6d/namespacecaldata.html#a7d6fb719857c9156cd6b6c70b3eab895af9d8033a83ff6b685994a598b3415531',1,'caldata::DOPENCLOSING()'],['../da/d1c/namespaceicarus__tool.html#afe7e4716cb5a3347ba8de71a6476b45aaf94c1068552a24d7d2ad23a5173cead6',1,'icarus_tool::DOPENCLOSING()'],['../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a4d357ad38b944015c0c4283911f58857',1,'reco_tool::DOPENCLOSING()']]],
+  ['driftgatebnb',['DriftGateBNB',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5a92af0915fd65b22bf2ce7405864f47a5',1,'sbn::bits']]],
+  ['driftgatecalibration',['DriftGateCalibration',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5a6845306661c58da587064a229c8506b4',1,'sbn::bits']]],
+  ['driftgatenumi',['DriftGateNuMI',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5ac92fc00aaefee70a32ec773b7e94c7c8',1,'sbn::bits']]],
+  ['driftgateoffbeambnb',['DriftGateOffbeamBNB',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5aeaced084d7ef6bde1c2931b80f89076b',1,'sbn::bits']]],
+  ['driftgateoffbeamnumi',['DriftGateOffbeamNuMI',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5a051f7732e4d7e86e086ee7ea331b1cd7',1,'sbn::bits']]]
 ];

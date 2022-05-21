@@ -280,6 +280,8 @@ var searchData=
   ['get_5felements_2eh',['get_elements.h',['../d7/d43/get__elements_8h.html',1,'']]],
   ['get_5felements_5ftest_2ecc',['get_elements_test.cc',['../d8/da1/get__elements__test_8cc.html',1,'']]],
   ['getcollection_2eh',['getCollection.h',['../dd/d05/getCollection_8h.html',1,'']]],
+  ['getdetectortype_2ecxx',['GetDetectorType.cxx',['../d4/dea/GetDetectorType_8cxx.html',1,'']]],
+  ['getdetectortype_2eh',['GetDetectorType.h',['../da/deb/GetDetectorType_8h.html',1,'']]],
   ['getfv_2ecc',['GetFV.cc',['../d1/d21/GetFV_8cc.html',1,'']]],
   ['getstatistics_2esh',['getStatistics.sh',['../dd/de2/getStatistics_8sh.html',1,'']]],
   ['gettingt0tags_5fmodule_2ecc',['GettingT0Tags_module.cc',['../d5/dfe/GettingT0Tags__module_8cc.html',1,'']]],

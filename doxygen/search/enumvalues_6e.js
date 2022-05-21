@@ -2,7 +2,7 @@ var searchData=
 [
   ['n',['N',['../d6/db3/classicarus_1_1DaqDecoderICARUSPMT.html#ac77b2241f3748694113a37725ba99f47a8d9c307cb7f3c4a32822a51922d1ceaa',1,'icarus::DaqDecoderICARUSPMT::N()'],['../de/d59/classdaq_1_1PMTDecoder.html#abf86d2b9be86da6025fccdff8af70636a8d9c307cb7f3c4a32822a51922d1ceaa',1,'daq::PMTDecoder::N()']]],
   ['name_5fseparator',['name_separator',['../d8/d22/classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098acc3c64f8ae08c00de1b33f19a4d2913a',1,'nlohmann::detail::lexer']]],
-  ['nbits',['NBits',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7af70ee26411a62fc16375f8bbb65f0c2f',1,'sbn::bits']]],
+  ['nbits',['NBits',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7af70ee26411a62fc16375f8bbb65f0c2f',1,'sbn::bits::NBits()'],['../de/d90/namespacesbn_1_1bits.html#aac4b8236c5c8ff26ead5ec05aa083affaf70ee26411a62fc16375f8bbb65f0c2f',1,'sbn::bits::NBits()'],['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bdaf70ee26411a62fc16375f8bbb65f0c2f',1,'sbn::bits::NBits()'],['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5af70ee26411a62fc16375f8bbb65f0c2f',1,'sbn::bits::NBits()']]],
   ['nc',['NC',['../db/db5/classicarus_1_1WeakCurrentType.html#a807cf4f70db12631107ee66c083d025cad756323b20984b60b2b191a53bbc84eb',1,'icarus::WeakCurrentType']]],
   ['nchargemodes',['NChargeModes',['../d9/dda/classrecob_1_1Cluster.html#aa17dc18f271144cf4eb7818eff94b5efacb5c9ad554d5d18971091ae391cd6bf2',1,'recob::Cluster']]],
   ['negative_5fin_5fx',['NEGATIVE_IN_X',['../db/de7/namespacelar__content.html#a3585faad7098258631416880b5fb9efea1d379e7c3170aaea617503d3b76b8998',1,'lar_content']]],

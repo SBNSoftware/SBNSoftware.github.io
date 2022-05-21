@@ -81,38 +81,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">LArPandoraShowerAlg.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;art_root_io/TFileService.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;art_root_io/TFileService.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;canvas/Persistency/Common/FindManyP.h&quot;</code><br/>
 <code>#include &quot;canvas/Persistency/Common/Ptr.h&quot;</code><br/>
-<code>#include &quot;cetlib_except/exception.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
-<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/df8/DetectorPropertiesService_8h_source.html">lardata/DetectorInfoServices/DetectorPropertiesService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d0/d5b/DetectorClocksData_8h_source.html">lardataalg/DetectorInfo/DetectorClocksData.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/d7a/DetectorPropertiesData_8h_source.html">lardataalg/DetectorInfo/DetectorPropertiesData.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/d26/Hit_8h_source.html">lardataobj/RecoBase/Hit.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/d5c/PFParticle_8h_source.html">lardataobj/RecoBase/PFParticle.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d9/d12/SpacePoint_8h_source.html">lardataobj/RecoBase/SpacePoint.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html">lardataobj/RecoBase/Track.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/db6/SpaceCharge_8h_source.html">larevt/SpaceCharge/SpaceCharge.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d1/dda/SpaceChargeService_8h_source.html">larevt/SpaceChargeServices/SpaceChargeService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d1/d2b/ShowerElementHolder_8hh_source.html">larpandora/LArPandoraEventBuilding/LArPandoraShower/Algs/ShowerElementHolder.hh</a>&quot;</code><br/>
-<code>#include &lt;algorithm&gt;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
-<code>#include &lt;map&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &quot;TCanvas.h&quot;</code><br/>
-<code>#include &quot;TH3F.h&quot;</code><br/>
-<code>#include &quot;TMath.h&quot;</code><br/>
-<code>#include &quot;TPolyLine3D.h&quot;</code><br/>
-<code>#include &quot;TPolyMarker3D.h&quot;</code><br/>
-<code>#include &quot;TString.h&quot;</code><br/>
-<code>#include &quot;TStyle.h&quot;</code><br/>
-<code>#include &quot;TTree.h&quot;</code><br/>
-<code>#include &quot;TVector.h&quot;</code><br/>
+<code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
 <code>#include &quot;TVector3.h&quot;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div>
 <p><a href="../../dc/d43/LArPandoraShowerAlg_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,8 +100,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:d0/de3/namespacereco_1_1shower"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de3/namespacereco_1_1shower.html">reco::shower</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d7/d8a/namespacedetinfo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8a/namespacedetinfo.html">detinfo</a></td></tr>
 <tr class="memdesc:d7/d8a/namespacedetinfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">General LArSoft Utilities. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/dc7/namespacerecob"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc7/namespacerecob.html">recob</a></td></tr>
+<tr class="memdesc:df/dc7/namespacerecob"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstruction base classes. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dc/de1/namespacespacecharge"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de1/namespacespacecharge.html">spacecharge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/dc4/namespaceart"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc4/namespaceart.html">art</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d3/db9/namespaceshower"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db9/namespaceshower.html">shower</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

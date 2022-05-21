@@ -610,6 +610,7 @@ var searchData=
   ['crttzeroproducer_5ficarus_2efcl',['crttzeroproducer_icarus.fcl',['../d4/d8f/crttzeroproducer__icarus_8fcl.html',1,'']]],
   ['crttzeroproducer_5fsbnd_2efcl',['crttzeroproducer_sbnd.fcl',['../d3/d69/crttzeroproducer__sbnd_8fcl.html',1,'']]],
   ['cruexception_2eh',['CRUException.h',['../d1/d1d/CRUException_8h.html',1,'']]],
+  ['crumbs_5fhelper_2eh',['CRUMBS_helper.h',['../d2/df7/CRUMBS__helper_8h.html',1,'']]],
   ['crumbs_5fmodule_2ecc',['CRUMBS_module.cc',['../d8/d37/CRUMBS__module_8cc.html',1,'']]],
   ['crumbsresult_2ecc',['CRUMBSResult.cc',['../d5/d17/CRUMBSResult_8cc.html',1,'']]],
   ['crumbsresult_2eh',['CRUMBSResult.h',['../df/d27/CRUMBSResult_8h.html',1,'']]],

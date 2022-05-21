@@ -120,17 +120,17 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the line gap parameters for the Pandora API </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00065">65</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    PandoraApi::Geometry::LineGap::Parameters parameters;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    parameters.m_lineGapType = pandora::TPC_DRIFT_GAP;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    parameters.m_lineStartX = <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a>.GetX1();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    parameters.m_lineEndX = <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a>.GetX2();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    parameters.m_lineStartZ = -std::numeric_limits&lt;float&gt;::max();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    parameters.m_lineEndZ = std::numeric_limits&lt;float&gt;::max();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> parameters;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00028">28</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    PandoraApi::Geometry::LineGap::Parameters parameters;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    parameters.m_lineGapType = pandora::TPC_DRIFT_GAP;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    parameters.m_lineStartX = <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a>.GetX1();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    parameters.m_lineEndX = <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a>.GetX2();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    parameters.m_lineStartZ = -std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    parameters.m_lineEndZ = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> parameters;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="ttc" id="namespacegen__crt__frags_html_a4c51c3458849c6d83454cd6ea3f7faff"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gen_crt_frags.gap</a></div><div class="ttdeci">float gap</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l00055">gen_crt_frags.py:55</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -197,17 +197,17 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the line gap parameters for the Pandora API </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00080">80</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    PandoraApi::Geometry::LineGap::Parameters parameters;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    parameters.m_lineGapType = gapType;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    parameters.m_lineStartX = xFirst;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    parameters.m_lineEndX = xLast;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    parameters.m_lineStartZ = std::min(firstPoint, lastPoint) - halfWirePitch;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    parameters.m_lineEndZ = std::max(firstPoint, lastPoint) + halfWirePitch;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> parameters;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00043">43</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    PandoraApi::Geometry::LineGap::Parameters parameters;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    parameters.m_lineGapType = gapType;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    parameters.m_lineStartX = xFirst;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    parameters.m_lineEndX = xLast;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    parameters.m_lineStartZ = std::min(firstPoint, lastPoint) - halfWirePitch;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    parameters.m_lineEndZ = std::max(firstPoint, lastPoint) + halfWirePitch;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> parameters;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,34 +227,34 @@ Functions</h2></td></tr>
 <p>Factory class that returns the correct detector type interface. </p>
 <dl class="section return"><dt>Returns</dt><dd>The detector type interface </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00022">22</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nPlanes(geo-&gt;MaxPlanes());</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::set&lt;geo::_plane_proj&gt; planeSet;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iPlane = 0; iPlane &lt; nPlanes; ++iPlane)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      (<span class="keywordtype">void</span>)planeSet.insert(geo-&gt;TPC(0, 0).Plane(iPlane).View());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>) &amp;&amp;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a>)) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> DUNEFarDetVDThreeView; <span class="comment">//TODO Address bare pointer</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a>) &amp;&amp;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;             planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a7aa5678675f243c5e03583de1bfe1b4e">geo::kW</a>)) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> VintageLArTPCThreeView;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a>) &amp;&amp;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>)) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ICARUS;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 2 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a7aa5678675f243c5e03583de1bfe1b4e">geo::kW</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>)) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ProtoDUNEDualPhase;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LArPandora&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;LArPandoraDetectorType::GetDetectorType --- unable to &quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                          <span class="stringliteral">&quot;determine the detector type from the geometry GDML&quot;</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d4/dea/GetDetectorType_8cxx_source.html#l00024">24</a> of file <a class="el" href="../../d4/dea/GetDetectorType_8cxx_source.html">GetDetectorType.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    art::ServiceHandle&lt;geo::Geometry const&gt; geo;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nPlanes(geo-&gt;MaxPlanes());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::set&lt;geo::_plane_proj&gt; planeSet;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iPlane = 0; iPlane &lt; nPlanes; ++iPlane)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      (<span class="keywordtype">void</span>)planeSet.insert(geo-&gt;TPC(0, 0).Plane(iPlane).View());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>) &amp;&amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a>)) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> DUNEFarDetVDThreeView; <span class="comment">//TODO Address bare pointer</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a>) &amp;&amp;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;             planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a7aa5678675f243c5e03583de1bfe1b4e">geo::kW</a>)) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> VintageLArTPCThreeView;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 3 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a>) &amp;&amp;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;             planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>)) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ICARUS;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (nPlanes == 2 &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a7aa5678675f243c5e03583de1bfe1b4e">geo::kW</a>) &amp;&amp; planeSet.count(<a class="code" href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a>)) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> ProtoDUNEDualPhase;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LArPandora&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;LArPandoraDetectorType::GetDetectorType --- unable to &quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                          <span class="stringliteral">&quot;determine the detector type from the geometry GDML&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a></div><div class="ttdoc">Planes which measure V. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00130">geo_types.h:130</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a29e198ce46b2c8fc4a31422f42f77c64">geo::kZ</a></div><div class="ttdoc">Planes which measure Z direction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00132">geo_types.h:132</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a></div><div class="ttdoc">Planes which measure Y direction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00133">geo_types.h:133</a></div></div>
@@ -311,10 +311,10 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the wire angle </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00054">54</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> (0.5f * M_PI - larsoftGeometry-&gt;WireAngleToVertical(view, tpc, cstat));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html#l00017">17</a> of file <a class="el" href="../../d9/d1a/LArPandoraDetectorType_8cxx_source.html">LArPandoraDetectorType.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> (0.5f * M_PI - larsoftGeometry-&gt;WireAngleToVertical(view, tpc, cstat));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>

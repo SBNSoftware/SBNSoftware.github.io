@@ -4,6 +4,7 @@ var searchData=
   ['absidtype',['AbsIDtype',['../d3/dbd/namespacegeo_1_1details.html#afd4c24f94e9af6210d956b7d9c97eb04',1,'geo::details::AbsIDtype()'],['../d4/d4e/namespacereadout_1_1details.html#a6236f689dba0cc47ff71f3d12eed0249',1,'readout::details::AbsIDtype()']]],
   ['accumulatorvaluesvec',['AccumulatorValuesVec',['../de/d87/namespacelar__cluster3d.html#ad5bd2ce57f93c121a751804b0629b03b',1,'lar_cluster3d']]],
   ['action_5ft',['Action_t',['../db/d95/classTestManagerClass.html#aefd1ae1d0dd623c9b5f78c93c95fbc54',1,'TestManagerClass']]],
+  ['adc_5farray_5ft',['adc_array_t',['../d6/d16/FEBData_8hh.html#a13ec328561053bf81ab991db624762f9',1,'FEBData.hh']]],
   ['adc_5fcount_5ft',['ADC_Count_t',['../df/d17/namespaceoptdata.html#a322c74b88e1327bbd0739237eb2edfe0',1,'optdata::ADC_Count_t()'],['../d9/d63/namespaceraw.html#a8b8fff2e2c09178dd4d634156f54863e',1,'raw::ADC_Count_t()']]],
   ['adcchannel',['AdcChannel',['../d8/d9c/larwirecell_2larwirecell_2LArInterface_2AdcTypes_8h.html#a9bc4ca433f6ebb5c6e14734923b300f1',1,'AdcChannel():&#160;AdcTypes.h'],['../de/d66/sbndcode_2sbndcode_2DetectorSim_2Services_2AdcTypes_8h.html#a9bc4ca433f6ebb5c6e14734923b300f1',1,'AdcChannel():&#160;AdcTypes.h']]],
   ['adcchannelvector',['AdcChannelVector',['../d8/d9c/larwirecell_2larwirecell_2LArInterface_2AdcTypes_8h.html#ade804588b75cded8eae977dd167ad94c',1,'AdcChannelVector():&#160;AdcTypes.h'],['../de/d66/sbndcode_2sbndcode_2DetectorSim_2Services_2AdcTypes_8h.html#ade804588b75cded8eae977dd167ad94c',1,'AdcChannelVector():&#160;AdcTypes.h']]],
