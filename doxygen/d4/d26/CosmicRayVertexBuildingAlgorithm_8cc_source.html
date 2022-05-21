@@ -266,177 +266,175 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="comment">// ATTN X is the vertical coordinate in Dual-Phase geometry</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> minVerticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? minPosition.GetX() : minPosition.GetY());</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> maxVerticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? maxPosition.GetX() : maxPosition.GetY());</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> vtxVerticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? vtxPosition.GetX() : vtxPosition.GetY());</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span> endVerticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? endPosition.GetX() : endPosition.GetY());</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">if</span> (!foundVtx || (minVerticalCoordinate &gt; std::max(maxVerticalCoordinate, vtxVerticalCoordinate)))</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                foundVtx = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                vtxPosition = minPosition;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                vtxDirection = minDirection;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span> (!foundVtx || (maxVerticalCoordinate &gt; std::max(minVerticalCoordinate, vtxVerticalCoordinate)))</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                foundVtx = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                vtxPosition = maxPosition;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                vtxDirection = maxDirection;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (!foundEnd || (minVerticalCoordinate &lt; std::min(maxVerticalCoordinate, endVerticalCoordinate)))</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                foundEnd = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                endPosition = minPosition;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                endDirection = minDirection;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">if</span> (!foundEnd || (maxVerticalCoordinate &lt; std::min(minVerticalCoordinate, endVerticalCoordinate)))</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                foundEnd = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                endPosition = maxPosition;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                endDirection = maxDirection;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">catch</span> (StatusCodeException &amp;statusCodeException)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span> (STATUS_CODE_FAILURE == statusCodeException.GetStatusCode())</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">throw</span> statusCodeException;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (!(foundVtx &amp;&amp; foundEnd))</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    this-&gt;<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">SetParticleParameters</a>(vtxPosition, vtxDirection, pPfo);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">if</span> (!foundVtx || (minVerticalCoordinate &gt; std::max(maxVerticalCoordinate, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? vtxPosition.GetX() : vtxPosition.GetY())))</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                foundVtx = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                vtxPosition = minPosition;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                vtxDirection = minDirection;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (!foundVtx || (maxVerticalCoordinate &gt; std::max(minVerticalCoordinate, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? vtxPosition.GetX() : vtxPosition.GetY())))</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                foundVtx = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                vtxPosition = maxPosition;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                vtxDirection = maxDirection;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">if</span> (!foundEnd || (minVerticalCoordinate &lt; std::min(maxVerticalCoordinate, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? endPosition.GetX() : endPosition.GetY())))</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                foundEnd = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                endPosition = minPosition;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                endDirection = minDirection;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">if</span> (!foundEnd || (maxVerticalCoordinate &lt; std::min(minVerticalCoordinate, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? endPosition.GetX() : endPosition.GetY())))</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                foundEnd = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                endPosition = maxPosition;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                endDirection = maxDirection;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">catch</span> (StatusCodeException &amp;statusCodeException)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (STATUS_CODE_FAILURE == statusCodeException.GetStatusCode())</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordflow">throw</span> statusCodeException;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> (!(foundVtx &amp;&amp; foundEnd))</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    this-&gt;<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">SetParticleParameters</a>(vtxPosition, vtxDirection, pPfo);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">  237</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">CosmicRayVertexBuildingAlgorithm::BuildCosmicRayDaughter</a>(<span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pDaughterPfo)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span> (pDaughterPfo-&gt;GetParentPfoList().size() != 1)</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">  235</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">CosmicRayVertexBuildingAlgorithm::BuildCosmicRayDaughter</a>(<span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pDaughterPfo)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (pDaughterPfo-&gt;GetParentPfoList().size() != 1)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pParentPfo = *(pDaughterPfo-&gt;GetParentPfoList().begin());</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pParentPfo = *(pDaughterPfo-&gt;GetParentPfoList().begin());</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    ClusterList parentList, daughterList;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a3a161c3a29f9165256fc8c6ec3b588a4">LArPfoHelper::GetClusters</a>(pParentPfo, TPC_3D, parentList);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a3a161c3a29f9165256fc8c6ec3b588a4">LArPfoHelper::GetClusters</a>(pDaughterPfo, TPC_3D, daughterList);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> (daughterList.empty() || parentList.empty())</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">bool</span> found(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">float</span> closestMaxVerticalCoordinate(-std::numeric_limits&lt;float&gt;::max()), maxVerticalCoordinate(-std::numeric_limits&lt;float&gt;::max());</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    CartesianVector closestMaxVerticalVertex(0.f, 0.f, 0.f), maxVerticalVertex(0.f, 0.f, 0.f);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Cluster *<span class="keyword">const</span> pDaughterCluster : daughterList)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        CaloHitList daughterCaloHitList;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        pDaughterCluster-&gt;GetOrderedCaloHitList().FillCaloHitList(daughterCaloHitList);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> Cluster *<span class="keyword">const</span> pParentCluster : parentList)</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            CaloHitList parentCaloHitList;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            pParentCluster-&gt;GetOrderedCaloHitList().FillCaloHitList(parentCaloHitList);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> CaloHit *<span class="keyword">const</span> pDaughterCaloHit : daughterCaloHitList)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keyword">const</span> CartesianVector &amp;daughterPosition(pDaughterCaloHit-&gt;GetPositionVector());</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">const</span> CaloHit *<span class="keyword">const</span> pParentCaloHit : parentCaloHitList)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    <span class="keyword">const</span> CartesianVector &amp;parentPosition(pParentCaloHit-&gt;GetPositionVector());</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">float</span> separationSquared((daughterPosition - parentPosition).GetMagnitudeSquared());</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">float</span> verticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? daughterPosition.GetX() : daughterPosition.GetY());</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    <span class="keywordflow">if</span> (verticalCoordinate &gt; maxVerticalCoordinate)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                    {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        maxVerticalCoordinate = verticalCoordinate;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        maxVerticalVertex = daughterPosition;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    <span class="keywordflow">if</span> (separationSquared &lt; (<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a> * <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a>))</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="keywordflow">if</span> (verticalCoordinate &gt; closestMaxVerticalCoordinate)</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                            found = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                            closestMaxVerticalCoordinate = verticalCoordinate;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                            closestMaxVerticalVertex = daughterPosition;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                        }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;daughterVertex(found ? closestMaxVerticalVertex : maxVerticalVertex);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;vertexPosition(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a0d393eb873b1577d5cb1694b8982c4c3">m_useParentShowerVertex</a> ? <a class="code" href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#ab2d6eb2bbdc37dff0b0bdab501978038">LArClusterHelper::GetClosestPosition</a>(daughterVertex, parentList) : daughterVertex);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    this-&gt;<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">SetParticleParameters</a>(vertexPosition, CartesianVector(0.f, 0.f, 0.f), pDaughterPfo);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ClusterList parentList, daughterList;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a3a161c3a29f9165256fc8c6ec3b588a4">LArPfoHelper::GetClusters</a>(pParentPfo, TPC_3D, parentList);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a3a161c3a29f9165256fc8c6ec3b588a4">LArPfoHelper::GetClusters</a>(pDaughterPfo, TPC_3D, daughterList);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (daughterList.empty() || parentList.empty())</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">bool</span> found(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">float</span> closestMaxVerticalCoordinate(-std::numeric_limits&lt;float&gt;::max()), maxVerticalCoordinate(-std::numeric_limits&lt;float&gt;::max());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    CartesianVector closestMaxVerticalVertex(0.f, 0.f, 0.f), maxVerticalVertex(0.f, 0.f, 0.f);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Cluster *<span class="keyword">const</span> pDaughterCluster : daughterList)</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        CaloHitList daughterCaloHitList;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        pDaughterCluster-&gt;GetOrderedCaloHitList().FillCaloHitList(daughterCaloHitList);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> Cluster *<span class="keyword">const</span> pParentCluster : parentList)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            CaloHitList parentCaloHitList;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            pParentCluster-&gt;GetOrderedCaloHitList().FillCaloHitList(parentCaloHitList);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> CaloHit *<span class="keyword">const</span> pDaughterCaloHit : daughterCaloHitList)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keyword">const</span> CartesianVector &amp;daughterPosition(pDaughterCaloHit-&gt;GetPositionVector());</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">const</span> CaloHit *<span class="keyword">const</span> pParentCaloHit : parentCaloHitList)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                    <span class="keyword">const</span> CartesianVector &amp;parentPosition(pParentCaloHit-&gt;GetPositionVector());</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">float</span> separationSquared((daughterPosition - parentPosition).GetMagnitudeSquared());</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">float</span> verticalCoordinate(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a> ? daughterPosition.GetX() : daughterPosition.GetY());</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    <span class="keywordflow">if</span> (verticalCoordinate &gt; maxVerticalCoordinate)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        maxVerticalCoordinate = verticalCoordinate;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        maxVerticalVertex = daughterPosition;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                    }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    <span class="keywordflow">if</span> (separationSquared &lt; (<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a> * <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a>))</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                    {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <span class="keywordflow">if</span> (verticalCoordinate &gt; closestMaxVerticalCoordinate)</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                            found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                            closestMaxVerticalCoordinate = verticalCoordinate;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                            closestMaxVerticalVertex = daughterPosition;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                        }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;daughterVertex(found ? closestMaxVerticalVertex : maxVerticalVertex);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;vertexPosition(<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a0d393eb873b1577d5cb1694b8982c4c3">m_useParentShowerVertex</a> ? <a class="code" href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#ab2d6eb2bbdc37dff0b0bdab501978038">LArClusterHelper::GetClosestPosition</a>(daughterVertex, parentList) : daughterVertex);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    this-&gt;<a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">SetParticleParameters</a>(vertexPosition, CartesianVector(0.f, 0.f, 0.f), pDaughterPfo);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">  303</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">CosmicRayVertexBuildingAlgorithm::SetParticleParameters</a>(</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;vtxPosition, <span class="keyword">const</span> CartesianVector &amp;vtxDirection, <span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pPfo)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (!pPfo-&gt;GetVertexList().empty())</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    PandoraContentApi::ParticleFlowObject::Metadata metadata;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    metadata.m_momentum = vtxDirection;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::ParticleFlowObject::AlterMetadata(*<span class="keyword">this</span>, pPfo, metadata));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d08/namespacedcel2d.html#a8054eb55cf5bd8624fa0f46dfe56afa7">VertexList</a> *pVertexList = NULL;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    std::string vertexListName;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CreateTemporaryListAndSetCurrent(*<span class="keyword">this</span>, pVertexList, vertexListName));</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    PandoraContentApi::Vertex::Parameters parameters;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    parameters.m_position = vtxPosition;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    parameters.m_vertexLabel = VERTEX_START;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    parameters.m_vertexType = VERTEX_3D;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">const</span> Vertex *pVertex(NULL);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Vertex::Create(*<span class="keyword">this</span>, parameters, pVertex));</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> (!pVertexList-&gt;empty())</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::SaveList&lt;Vertex&gt;(*<span class="keyword">this</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a2fef8ada01aa354669120311a3ee74aa">m_vertexListName</a>));</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::AddToPfo&lt;Vertex&gt;(*<span class="keyword">this</span>, pPfo, pVertex));</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">  301</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">CosmicRayVertexBuildingAlgorithm::SetParticleParameters</a>(</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">const</span> CartesianVector &amp;vtxPosition, <span class="keyword">const</span> CartesianVector &amp;vtxDirection, <span class="keyword">const</span> ParticleFlowObject *<span class="keyword">const</span> pPfo)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">if</span> (!pPfo-&gt;GetVertexList().empty())</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    PandoraContentApi::ParticleFlowObject::Metadata metadata;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    metadata.m_momentum = vtxDirection;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::ParticleFlowObject::AlterMetadata(*<span class="keyword">this</span>, pPfo, metadata));</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d08/namespacedcel2d.html#a8054eb55cf5bd8624fa0f46dfe56afa7">VertexList</a> *pVertexList = NULL;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    std::string vertexListName;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CreateTemporaryListAndSetCurrent(*<span class="keyword">this</span>, pVertexList, vertexListName));</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    PandoraContentApi::Vertex::Parameters parameters;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    parameters.m_position = vtxPosition;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    parameters.m_vertexLabel = VERTEX_START;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    parameters.m_vertexType = VERTEX_3D;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">const</span> Vertex *pVertex(NULL);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Vertex::Create(*<span class="keyword">this</span>, parameters, pVertex));</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (!pVertexList-&gt;empty())</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::SaveList&lt;Vertex&gt;(*<span class="keyword">this</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a2fef8ada01aa354669120311a3ee74aa">m_vertexListName</a>));</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::AddToPfo&lt;Vertex&gt;(*<span class="keyword">this</span>, pPfo, pVertex));</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">//------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">  334</a></span>&#160;StatusCode <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">CosmicRayVertexBuildingAlgorithm::ReadSettings</a>(<span class="keyword">const</span> TiXmlHandle xmlHandle)</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    PANDORA_RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;InputPfoListName&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ad9d4040ad60eb940994c551947448ecc">m_parentPfoListName</a>));</div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">  332</a></span>&#160;StatusCode <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">CosmicRayVertexBuildingAlgorithm::ReadSettings</a>(<span class="keyword">const</span> TiXmlHandle xmlHandle)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    PANDORA_RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;InputPfoListName&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ad9d4040ad60eb940994c551947448ecc">m_parentPfoListName</a>));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    PANDORA_RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;OutputVertexListName&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a2fef8ada01aa354669120311a3ee74aa">m_vertexListName</a>));</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    PANDORA_RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;OutputVertexListName&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a2fef8ada01aa354669120311a3ee74aa">m_vertexListName</a>));</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;UseParentForShowerVertex&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a0d393eb873b1577d5cb1694b8982c4c3">m_useParentShowerVertex</a>));</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;SlidingFitHalfWindow&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a63de6c3860f4ffb94d1bbac90b515dd5">m_halfWindowLayers</a>));</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=,</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;UseParentForShowerVertex&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a0d393eb873b1577d5cb1694b8982c4c3">m_useParentShowerVertex</a>));</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;SlidingFitHalfWindow&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a63de6c3860f4ffb94d1bbac90b515dd5">m_halfWindowLayers</a>));</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;IsDualPhase&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a>));</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=, XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;IsDualPhase&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">m_isDualPhase</a>));</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;MaxVertexDisplacementFromTrack&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a>));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;} <span class="comment">// namespace lar_content</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    PANDORA_RETURN_RESULT_IF_AND_IF(STATUS_CODE_SUCCESS, STATUS_CODE_NOT_FOUND, !=,</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        XmlHelper::ReadValue(xmlHandle, <span class="stringliteral">&quot;MaxVertexDisplacementFromTrack&quot;</span>, <a class="code" href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5d39ae61d438e6164afee4544d424292">m_maxVertexDisplacementFromTrack</a>));</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;} <span class="comment">// namespace lar_content</span></div>
 <div class="ttc" id="namespacelar__content_html_aadb15607288350e81f1aa78ce569c5b6"><div class="ttname"><a href="../../db/de7/namespacelar__content.html#aadb15607288350e81f1aa78ce569c5b6">lar_content::LArPointingClusterMap</a></div><div class="ttdeci">std::unordered_map&lt; const pandora::Cluster *, LArPointingCluster &gt; LArPointingClusterMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da7/LArPointingCluster_8h_source.html#l00197">LArPointingCluster.h:197</a></div></div>
 <div class="ttc" id="LArPfoHelper_8h_html"><div class="ttname"><a href="../../d1/d22/LArPfoHelper_8h.html">LArPfoHelper.h</a></div><div class="ttdoc">Header file for the pfo helper class. </div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a0d393eb873b1577d5cb1694b8982c4c3"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a0d393eb873b1577d5cb1694b8982c4c3">lar_content::CosmicRayVertexBuildingAlgorithm::m_useParentShowerVertex</a></div><div class="ttdeci">bool m_useParentShowerVertex</div><div class="ttdoc">use the parent pfo for the shower vertices </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d20/CosmicRayVertexBuildingAlgorithm_8h_source.html#l00081">CosmicRayVertexBuildingAlgorithm.h:81</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArPfoHelper_html_a3a161c3a29f9165256fc8c6ec3b588a4"><div class="ttname"><a href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a3a161c3a29f9165256fc8c6ec3b588a4">lar_content::LArPfoHelper::GetClusters</a></div><div class="ttdeci">static void GetClusters(const pandora::PfoList &amp;pfoList, const pandora::HitType &amp;hitType, pandora::ClusterList &amp;clusterList)</div><div class="ttdoc">Get a list of clusters of a particular hit type from a list of pfos. </div></div>
-<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a8f3feafc0c05b2ebb9f24f3c0bffc0d7"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">lar_content::CosmicRayVertexBuildingAlgorithm::SetParticleParameters</a></div><div class="ttdeci">void SetParticleParameters(const pandora::CartesianVector &amp;vtxPosition, const pandora::CartesianVector &amp;vtxDirection, const pandora::ParticleFlowObject *const pPfo) const </div><div class="ttdoc">Set the vertex and direction of the Pfos. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00303">CosmicRayVertexBuildingAlgorithm.cc:303</a></div></div>
+<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a8f3feafc0c05b2ebb9f24f3c0bffc0d7"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a8f3feafc0c05b2ebb9f24f3c0bffc0d7">lar_content::CosmicRayVertexBuildingAlgorithm::SetParticleParameters</a></div><div class="ttdeci">void SetParticleParameters(const pandora::CartesianVector &amp;vtxPosition, const pandora::CartesianVector &amp;vtxDirection, const pandora::ParticleFlowObject *const pPfo) const </div><div class="ttdoc">Set the vertex and direction of the Pfos. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00301">CosmicRayVertexBuildingAlgorithm.cc:301</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a41d437d8a65693905d45ab0698862548"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a41d437d8a65693905d45ab0698862548">lar_content::CosmicRayVertexBuildingAlgorithm::m_isDualPhase</a></div><div class="ttdeci">bool m_isDualPhase</div><div class="ttdoc">type of geometry </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d20/CosmicRayVertexBuildingAlgorithm_8h_source.html#l00082">CosmicRayVertexBuildingAlgorithm.h:82</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArPointingCluster_html"><div class="ttname"><a href="../../d6/d0d/classlar__content_1_1LArPointingCluster.html">lar_content::LArPointingCluster</a></div><div class="ttdoc">LArPointingCluster class. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da7/LArPointingCluster_8h_source.html#l00020">LArPointingCluster.h:20</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a2fef8ada01aa354669120311a3ee74aa"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a2fef8ada01aa354669120311a3ee74aa">lar_content::CosmicRayVertexBuildingAlgorithm::m_vertexListName</a></div><div class="ttdeci">std::string m_vertexListName</div><div class="ttdoc">The name of the output vertex list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d20/CosmicRayVertexBuildingAlgorithm_8h_source.html#l00085">CosmicRayVertexBuildingAlgorithm.h:85</a></div></div>
@@ -446,7 +444,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classlar__content_1_1LArGeometryHelper_html_a90a571d65107eedd480a692c166c5bfe"><div class="ttname"><a href="../../df/df1/classlar__content_1_1LArGeometryHelper.html#a90a571d65107eedd480a692c166c5bfe">lar_content::LArGeometryHelper::GetWireZPitch</a></div><div class="ttdeci">static float GetWireZPitch(const pandora::Pandora &amp;pandora, const float maxWirePitchDiscrepancy=0.01)</div><div class="ttdoc">Return the wire pitch. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de8/LArGeometryHelper_8h_source.html#l00272">LArGeometryHelper.h:272</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_aaee5d6a10a07a3f01b4efc91429242f4"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#aaee5d6a10a07a3f01b4efc91429242f4">lar_content::CosmicRayVertexBuildingAlgorithm::BuildCosmicRayParent</a></div><div class="ttdeci">void BuildCosmicRayParent(const LArPointingClusterMap &amp;pointingClusterMap, const pandora::ParticleFlowObject *const pPfo) const </div><div class="ttdoc">Reconstruct the vertex and direction of a parent cosmic-ray Pfo. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00139">CosmicRayVertexBuildingAlgorithm.cc:139</a></div></div>
 <div class="ttc" id="LArGeometryHelper_8h_html"><div class="ttname"><a href="../../d5/de8/LArGeometryHelper_8h.html">LArGeometryHelper.h</a></div><div class="ttdoc">Header file for the geometry helper class. </div></div>
-<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a5a776271bc9180ac975707c812002ce2"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">lar_content::CosmicRayVertexBuildingAlgorithm::ReadSettings</a></div><div class="ttdeci">pandora::StatusCode ReadSettings(const pandora::TiXmlHandle xmlHandle)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00334">CosmicRayVertexBuildingAlgorithm.cc:334</a></div></div>
+<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a5a776271bc9180ac975707c812002ce2"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5a776271bc9180ac975707c812002ce2">lar_content::CosmicRayVertexBuildingAlgorithm::ReadSettings</a></div><div class="ttdeci">pandora::StatusCode ReadSettings(const pandora::TiXmlHandle xmlHandle)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00332">CosmicRayVertexBuildingAlgorithm.cc:332</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a7a353ea98f1b9f27b672b1fb955251c0"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a7a353ea98f1b9f27b672b1fb955251c0">lar_content::CosmicRayVertexBuildingAlgorithm::BuildCosmicRayParticles</a></div><div class="ttdeci">void BuildCosmicRayParticles(const LArPointingClusterMap &amp;pointingClusterMap, const pandora::PfoVector &amp;pfoVector) const </div><div class="ttdoc">Reconstruct the vertex and direction of a list of cosmic-ray Pfos. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00120">CosmicRayVertexBuildingAlgorithm.cc:120</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_ada26fb0ed16ff3b5030bf530c4457ca9"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ada26fb0ed16ff3b5030bf530c4457ca9">lar_content::CosmicRayVertexBuildingAlgorithm::Run</a></div><div class="ttdeci">pandora::StatusCode Run()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00032">CosmicRayVertexBuildingAlgorithm.cc:32</a></div></div>
 <div class="ttc" id="LArClusterHelper_8h_html"><div class="ttname"><a href="../../d2/de3/LArClusterHelper_8h.html">LArClusterHelper.h</a></div><div class="ttdoc">Header file for the cluster helper class. </div></div>
@@ -462,7 +460,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classlar__content_1_1LArPfoHelper_html_a97d1d4db7672fb26d6dbf32d24d9d5a5"><div class="ttname"><a href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a97d1d4db7672fb26d6dbf32d24d9d5a5">lar_content::LArPfoHelper::GetAllDownstreamPfos</a></div><div class="ttdeci">static void GetAllDownstreamPfos(const pandora::PfoList &amp;inputPfoList, pandora::PfoList &amp;outputPfoList)</div><div class="ttdoc">Get a flat list of all pfos, recursively, of all daughters associated with those pfos in an input lis...</div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a5c4b678efc6b431f76a61e6c42cfe562"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a5c4b678efc6b431f76a61e6c42cfe562">lar_content::CosmicRayVertexBuildingAlgorithm::GetCosmicPfos</a></div><div class="ttdeci">void GetCosmicPfos(const pandora::PfoList *const pPfoList, pandora::PfoVector &amp;pfoVector) const </div><div class="ttdoc">Get the list of input pfos to this algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00058">CosmicRayVertexBuildingAlgorithm.cc:58</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArClusterHelper_html_ab2d6eb2bbdc37dff0b0bdab501978038"><div class="ttname"><a href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#ab2d6eb2bbdc37dff0b0bdab501978038">lar_content::LArClusterHelper::GetClosestPosition</a></div><div class="ttdeci">static pandora::CartesianVector GetClosestPosition(const pandora::CartesianVector &amp;position, const pandora::ClusterList &amp;clusterList)</div><div class="ttdoc">Get closest position in a list of clusters to a specified input position vector. </div></div>
-<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_ab99f872bff9c298367008ab8fe77d2fc"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">lar_content::CosmicRayVertexBuildingAlgorithm::BuildCosmicRayDaughter</a></div><div class="ttdeci">void BuildCosmicRayDaughter(const pandora::ParticleFlowObject *const pPfo) const </div><div class="ttdoc">Reconstruct the vertex and direction of a daughter cosmic-ray Pfo. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00237">CosmicRayVertexBuildingAlgorithm.cc:237</a></div></div>
+<div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_ab99f872bff9c298367008ab8fe77d2fc"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#ab99f872bff9c298367008ab8fe77d2fc">lar_content::CosmicRayVertexBuildingAlgorithm::BuildCosmicRayDaughter</a></div><div class="ttdeci">void BuildCosmicRayDaughter(const pandora::ParticleFlowObject *const pPfo) const </div><div class="ttdoc">Reconstruct the vertex and direction of a daughter cosmic-ray Pfo. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00235">CosmicRayVertexBuildingAlgorithm.cc:235</a></div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayVertexBuildingAlgorithm_html_a4a7039100d7294f2c75c7942d75196f1"><div class="ttname"><a href="../../df/ddc/classlar__content_1_1CosmicRayVertexBuildingAlgorithm.html#a4a7039100d7294f2c75c7942d75196f1">lar_content::CosmicRayVertexBuildingAlgorithm::BuildPointingClusterMap</a></div><div class="ttdeci">void BuildPointingClusterMap(const pandora::PfoVector &amp;pfoVector, LArPointingClusterMap &amp;pointingClusterMap) const </div><div class="ttdoc">Build a map of 3D sliding fits from the input Pfos. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d26/CosmicRayVertexBuildingAlgorithm_8cc_source.html#l00084">CosmicRayVertexBuildingAlgorithm.cc:84</a></div></div>
 <div class="ttc" id="namespacedcel2d_html_a8054eb55cf5bd8624fa0f46dfe56afa7"><div class="ttname"><a href="../../db/d08/namespacedcel2d.html#a8054eb55cf5bd8624fa0f46dfe56afa7">dcel2d::VertexList</a></div><div class="ttdeci">std::list&lt; Vertex &gt; VertexList</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d84/DCEL_8h_source.html#l00182">DCEL.h:182</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArPointingCluster_1_1Vertex_html_a447def263c03ccc73c2b97eb8e1047a3"><div class="ttname"><a href="../../d3/da3/classlar__content_1_1LArPointingCluster_1_1Vertex.html#a447def263c03ccc73c2b97eb8e1047a3">lar_content::LArPointingCluster::Vertex::GetPosition</a></div><div class="ttdeci">const pandora::CartesianVector &amp; GetPosition() const </div><div class="ttdoc">Get the vertex position. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/da7/LArPointingCluster_8h_source.html#l00247">LArPointingCluster.h:247</a></div></div>

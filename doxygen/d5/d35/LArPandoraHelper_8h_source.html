@@ -87,44 +87,44 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef LAR_PANDORA_HELPER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LAR_PANDORA_HELPER_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;art/Framework/Principal/Event.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>art { <span class="keyword">class </span>Event; }</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dde/SimChannel_8h.html">lardataobj/Simulation/SimChannel.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;canvas/Persistency/Common/Ptr.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>anab {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">class </span>CosmicTag;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/dd5/gen__protons_8fcl.html#a2ba58fd55d60df6cb1370202e33b642e">T0</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../df/df8/reco__sbnd_8fcl.html#a8bcdaf138f1238e67ebf243c201082df">pandora</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">class </span>ParticleFlowObject;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">   24</a></span>&#160;  <span class="keyword">class </span>Vertex;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">IntVector</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>recob {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">class </span>Cluster;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">class </span>Hit;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">class </span>PFParticle;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">class </span>Seed;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span><a class="code" href="../../d8/d7f/structShower.html">Shower</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/de7/namespacelar__content.html#af80e62ad7209ac1918f78beaad623009">Slice</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">class </span>SpacePoint;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">class </span><a class="code" href="../../d4/d66/structTrack.html">Track</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">class </span>Vertex;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">class </span>Wire;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>larpandoraobj {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">class </span>PFParticleMetadata;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>sim {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">class </span>SimChannel;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">struct </span>TrackIDE;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>simb {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">class </span>MCParticle;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>anab {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">class </span>CosmicTag;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/dd5/gen__protons_8fcl.html#a2ba58fd55d60df6cb1370202e33b642e">T0</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../df/df8/reco__sbnd_8fcl.html#a8bcdaf138f1238e67ebf243c201082df">pandora</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">class </span>ParticleFlowObject;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">   25</a></span>&#160;  <span class="keyword">class </span>Vertex;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">typedef</span> std::vector&lt;int&gt; <a class="code" href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">IntVector</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>recob {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">class </span>Cluster;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">class </span>Hit;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">class </span>PFParticle;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span>Seed;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">class </span><a class="code" href="../../d8/d7f/structShower.html">Shower</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">class </span><a class="code" href="../../db/de7/namespacelar__content.html#af80e62ad7209ac1918f78beaad623009">Slice</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">class </span>SpacePoint;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">class </span><a class="code" href="../../d4/d66/structTrack.html">Track</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">class </span>Vertex;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">class </span>Wire;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>larpandoraobj {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">class </span>PFParticleMetadata;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;nusimdata/SimulationBase/MCParticle.h&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dde/SimChannel_8h.html">lardataobj/Simulation/SimChannel.h</a>&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>simb {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">class </span>MCTruth;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
@@ -843,7 +843,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="namespacelar__pandora_html_a90e5269db8b14c92cd9d0ead95669954"><div class="ttname"><a href="../../d1/d8f/namespacelar__pandora.html#a90e5269db8b14c92cd9d0ead95669954">lar_pandora::MCParticlesToPFParticles</a></div><div class="ttdeci">std::map&lt; art::Ptr&lt; simb::MCParticle &gt;, art::Ptr&lt; recob::PFParticle &gt; &gt; MCParticlesToPFParticles</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/LArPandoraHelper_8h_source.html#l00096">LArPandoraHelper.h:96</a></div></div>
 <div class="ttc" id="namespacelar__pandora_html_a1f4696796573424eb174b1271704ad5d"><div class="ttname"><a href="../../d1/d8f/namespacelar__pandora.html#a1f4696796573424eb174b1271704ad5d">lar_pandora::ShowerVector</a></div><div class="ttdeci">std::vector&lt; art::Ptr&lt; recob::Shower &gt; &gt; ShowerVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/LArPandoraHelper_8h_source.html#l00064">LArPandoraHelper.h:64</a></div></div>
 <div class="ttc" id="structShower_html"><div class="ttname"><a href="../../d8/d7f/structShower.html">Shower</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/df6/Data_8h_source.html#l00014">Data.h:14</a></div></div>
-<div class="ttc" id="namespacepandora_html_ac626cbb39243f71a104f27162bebc9fc"><div class="ttname"><a href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">pandora::IntVector</a></div><div class="ttdeci">std::vector&lt; int &gt; IntVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/LArPandoraHelper_8h_source.html#l00024">LArPandoraHelper.h:24</a></div></div>
+<div class="ttc" id="namespacepandora_html_ac626cbb39243f71a104f27162bebc9fc"><div class="ttname"><a href="../../d5/d92/namespacepandora.html#ac626cbb39243f71a104f27162bebc9fc">pandora::IntVector</a></div><div class="ttdeci">std::vector&lt; int &gt; IntVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/LArPandoraHelper_8h_source.html#l00025">LArPandoraHelper.h:25</a></div></div>
 <div class="ttc" id="namespacelar__pandora_html_a8bd7ac9e3a41dbac4f16b2c74bc659ce"><div class="ttname"><a href="../../d1/d8f/namespacelar__pandora.html#a8bd7ac9e3a41dbac4f16b2c74bc659ce">lar_pandora::CosmicTagVector</a></div><div class="ttdeci">std::vector&lt; art::Ptr&lt; anab::CosmicTag &gt; &gt; CosmicTagVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d35/LArPandoraHelper_8h_source.html#l00071">LArPandoraHelper.h:71</a></div></div>
 <div class="ttc" id="classlar__pandora_1_1LArPandoraHelper_html_aa67b16e8a4309de1d4761da83e9ab0f6"><div class="ttname"><a href="../../d4/d03/classlar__pandora_1_1LArPandoraHelper.html#aa67b16e8a4309de1d4761da83e9ab0f6">lar_pandora::LArPandoraHelper::GetParentPFParticle</a></div><div class="ttdeci">static art::Ptr&lt; recob::PFParticle &gt; GetParentPFParticle(const PFParticleMap &amp;particleMap, const art::Ptr&lt; recob::PFParticle &gt; daughterParticle)</div><div class="ttdoc">Return the top-level parent particle by navigating up the chain of parent/daughter associations...</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dcb/LArPandoraHelper_8cxx_source.html#l01216">LArPandoraHelper.cxx:1216</a></div></div>
 <div class="ttc" id="structTrack_html"><div class="ttname"><a href="../../d4/d66/structTrack.html">Track</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/df6/Data_8h_source.html#l00007">Data.h:7</a></div></div>

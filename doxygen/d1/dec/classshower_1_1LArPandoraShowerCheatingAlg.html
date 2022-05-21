@@ -125,7 +125,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00018">18</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00033">33</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a05b154f0bcd816a7e3a78fabe3fb1a44"></a>
 <div class="memitem">
@@ -141,20 +141,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00003">3</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  : <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;LArPandoraShowerAlg&quot;</span>))</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">fHitModuleLabel</a>(pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>))</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">fPFParticleLabel</a>(pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;PFParticleLabel&quot;</span>))</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ShowerStartPositionInputLabel&quot;</span>))</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ShowerDirectionInputLabel&quot;</span>))</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;InitialTrackSpacePointsInputLabel&quot;</span>))</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{}</div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a45fe2e1ce5d75310d0009bfdb8c98e23"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">shower::LArPandoraShowerCheatingAlg::fLArPandoraShowerAlg</a></div><div class="ttdeci">shower::LArPandoraShowerAlg fLArPandoraShowerAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00041">LArPandoraShowerCheatingAlg.h:41</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae25c085eec8f6d0e607c1e8f8cf73010"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">shower::LArPandoraShowerCheatingAlg::fShowerDirectionInputLabel</a></div><div class="ttdeci">std::string fShowerDirectionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00049">LArPandoraShowerCheatingAlg.h:49</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad6e3fc4dbf4a4543a6ad38ba290d272c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">shower::LArPandoraShowerCheatingAlg::fHitModuleLabel</a></div><div class="ttdeci">art::InputTag fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00043">LArPandoraShowerCheatingAlg.h:43</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad180c8412809b1d829af1fa5c7ecf528"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">shower::LArPandoraShowerCheatingAlg::fShowerStartPositionInputLabel</a></div><div class="ttdeci">std::string fShowerStartPositionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00048">LArPandoraShowerCheatingAlg.h:48</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a4bfcefcf5191f9d643c7315a7098bf3c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">shower::LArPandoraShowerCheatingAlg::fInitialTrackSpacePointsInputLabel</a></div><div class="ttdeci">std::string fInitialTrackSpacePointsInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00050">LArPandoraShowerCheatingAlg.h:50</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ab43166de65330f183b7f8c0cc86af1a2"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">shower::LArPandoraShowerCheatingAlg::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00044">LArPandoraShowerCheatingAlg.h:44</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00017">17</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  : <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>(pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;LArPandoraShowerAlg&quot;</span>))</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">fHitModuleLabel</a>(pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;HitModuleLabel&quot;</span>))</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">fPFParticleLabel</a>(pset.get&lt;art::InputTag&gt;(<span class="stringliteral">&quot;PFParticleLabel&quot;</span>))</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ShowerStartPositionInputLabel&quot;</span>))</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;ShowerDirectionInputLabel&quot;</span>))</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  , <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;InitialTrackSpacePointsInputLabel&quot;</span>))</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a45fe2e1ce5d75310d0009bfdb8c98e23"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">shower::LArPandoraShowerCheatingAlg::fLArPandoraShowerAlg</a></div><div class="ttdeci">shower::LArPandoraShowerAlg fLArPandoraShowerAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00056">LArPandoraShowerCheatingAlg.h:56</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae25c085eec8f6d0e607c1e8f8cf73010"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">shower::LArPandoraShowerCheatingAlg::fShowerDirectionInputLabel</a></div><div class="ttdeci">std::string fShowerDirectionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00064">LArPandoraShowerCheatingAlg.h:64</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad6e3fc4dbf4a4543a6ad38ba290d272c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">shower::LArPandoraShowerCheatingAlg::fHitModuleLabel</a></div><div class="ttdeci">art::InputTag fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00058">LArPandoraShowerCheatingAlg.h:58</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad180c8412809b1d829af1fa5c7ecf528"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">shower::LArPandoraShowerCheatingAlg::fShowerStartPositionInputLabel</a></div><div class="ttdeci">std::string fShowerStartPositionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00063">LArPandoraShowerCheatingAlg.h:63</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a4bfcefcf5191f9d643c7315a7098bf3c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">shower::LArPandoraShowerCheatingAlg::fInitialTrackSpacePointsInputLabel</a></div><div class="ttdeci">std::string fInitialTrackSpacePointsInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00065">LArPandoraShowerCheatingAlg.h:65</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ab43166de65330f183b7f8c0cc86af1a2"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">shower::LArPandoraShowerCheatingAlg::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00059">LArPandoraShowerCheatingAlg.h:59</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,211 +201,211 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00062">62</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Making Debug Event Display&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//Function for drawing reco showers to check direction and initial track selection</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Get run info to make unique canvas names</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> run = Event.run();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> subRun = Event.subRun();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> <span class="keyword">event</span> = Event.event();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">int</span> PFPID = pfparticle-&gt;Self();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// Create the canvas</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  TString canvasName = Form(<span class="stringliteral">&quot;canvas_%i_%i_%i_%i&quot;</span>, run, subRun, event, PFPID);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  TCanvas* canvas = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae847ff1c906c19e25ac16dedb4b782a4">tfs</a>-&gt;make&lt;TCanvas&gt;(canvasName, canvasName);</div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00076">76</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Initialise variables</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a> = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; showerSpacePoints;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; otherSpacePoints;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> hitHandle = Event.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">fHitModuleLabel</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; hits;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  art::fill_ptr_vector(hits, hitHandle);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="comment">// Get the hits associated with the space points</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">const</span> art::FindManyP&lt;recob::SpacePoint&gt; fmsph(hitHandle, Event, <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">if</span> (!fmsph.isValid()) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Spacepoint and hit association not valid. Stopping.&quot;</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Making Debug Event Display&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">//Function for drawing reco showers to check direction and initial track selection</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Get run info to make unique canvas names</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">int</span> run = Event.run();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">int</span> subRun = Event.subRun();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">int</span> <span class="keyword">event</span> = Event.event();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">int</span> PFPID = pfparticle-&gt;Self();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Create the canvas</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  TString canvasName = Form(<span class="stringliteral">&quot;canvas_%i_%i_%i_%i&quot;</span>, run, subRun, event, PFPID);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  TCanvas* canvas = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae847ff1c906c19e25ac16dedb4b782a4">tfs</a>-&gt;make&lt;TCanvas&gt;(canvasName, canvasName);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Initialise variables</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a> = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a> = 0;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  std::map&lt;art::Ptr&lt;recob::SpacePoint&gt;, art::Ptr&lt;recob::Hit&gt;&gt; spacePointHitMap;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">//Get the hits from the true particle</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> : hits) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> trueParticleID = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a72de169a757bda30b4643146a5f18975">TrueParticleID</a>(clockData, <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>));</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; sps = fmsph.at(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.key());</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (sps.size() == 1) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      art::Ptr&lt;recob::SpacePoint&gt; sp = sps.front();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">if</span> (trueParticleID == trueParticle-&gt;TrackId()) { showerSpacePoints.push_back(sp); }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        otherSpacePoints.push_back(sp);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; showerSpacePoints;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; otherSpacePoints;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> hitHandle = Event.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">fHitModuleLabel</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; hits;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  art::fill_ptr_vector(hits, hitHandle);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">// Get the hits associated with the space points</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">const</span> art::FindManyP&lt;recob::SpacePoint&gt; fmsph(hitHandle, Event, <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span> (!fmsph.isValid()) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Spacepoint and hit association not valid. Stopping.&quot;</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>)) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Start position not set, returning &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>)) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Direction not set, returning &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>)) {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;TrackSpacePoints not set, returning &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">// Get info from shower property holder</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  TVector3 showerStartPosition = {-999, -999, -999};</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  TVector3 showerDirection = {-999, -999, -999};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; trackSpacePoints;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>, showerStartPosition);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>, showerDirection);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>, trackSpacePoints);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="comment">// Create 3D point at vertex, chosed to be origin for ease of use of display</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">double</span> startXYZ[3] = {0, 0, 0};</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">auto</span> startPoly = std::make_unique&lt;TPolyMarker3D&gt;(1, startXYZ);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="comment">// Get the min and max projections along the direction to know how long to draw</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// the direction line</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">double</span> minProj = std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">double</span> maxProj = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">double</span> x_min = std::numeric_limits&lt;double&gt;::max(), x_max = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">double</span> y_min = std::numeric_limits&lt;double&gt;::max(), y_max = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">double</span> z_min = std::numeric_limits&lt;double&gt;::max(), z_max = -std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">//initialise counter point</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">int</span> point = 0;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="comment">// Make 3D points for each spacepoint in the shower</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">auto</span> showerPoly = std::make_unique&lt;TPolyMarker3D&gt;(showerSpacePoints.size());</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> spacePoint : showerSpacePoints) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(spacePoint) - showerStartPosition;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    x = pos.X();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    y = pos.Y();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    z = pos.Z();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    x_min = std::min(x, x_min);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    x_max = std::max(x, x_max);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    y_min = std::min(y, y_min);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    y_max = std::max(y, y_max);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    z_min = std::min(z, z_min);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    z_max = std::max(z, z_max);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    showerPoly-&gt;SetPoint(point, x, y, z);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    ++point;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// Calculate the projection of (point-startpoint) along the direction</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">double</span> proj =</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#af1dd20c800f7d033b2025c814b74d741">SpacePointProjection</a>(spacePoint, showerStartPosition, showerDirection);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    maxProj = std::max(proj, maxProj);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    minProj = std::min(proj, minProj);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  } <span class="comment">// loop over spacepoints</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// Create TPolyLine3D arrays</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">double</span> xDirPoints[2] = {minProj * showerDirection.X(), maxProj * showerDirection.X()};</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">double</span> yDirPoints[2] = {minProj * showerDirection.Y(), maxProj * showerDirection.Y()};</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">double</span> zDirPoints[2] = {minProj * showerDirection.Z(), maxProj * showerDirection.Z()};</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">auto</span> dirPoly = std::make_unique&lt;TPolyLine3D&gt;(2, xDirPoints, yDirPoints, zDirPoints);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  point = 0; <span class="comment">// re-initialise counter</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">auto</span> trackPoly = std::make_unique&lt;TPolyMarker3D&gt;(trackSpacePoints.size());</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> spacePoint : trackSpacePoints) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(spacePoint) - showerStartPosition;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    x = pos.X();</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    y = pos.Y();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    z = pos.Z();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    trackPoly-&gt;SetPoint(point, x, y, z);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    ++point;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  } <span class="comment">// loop over track spacepoints</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">//  we want to draw all of the PFParticles in the event</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">//Get the PFParticles</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  std::map&lt;art::Ptr&lt;recob::SpacePoint&gt;, art::Ptr&lt;recob::Hit&gt;&gt; spacePointHitMap;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">//Get the hits from the true particle</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> : hits) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> trueParticleID = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a72de169a757bda30b4643146a5f18975">TrueParticleID</a>(clockData, <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; sps = fmsph.at(<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>.key());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (sps.size() == 1) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      art::Ptr&lt;recob::SpacePoint&gt; sp = sps.front();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">if</span> (trueParticleID == trueParticle-&gt;TrackId()) { showerSpacePoints.push_back(sp); }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        otherSpacePoints.push_back(sp);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>)) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Start position not set, returning &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>)) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Direction not set, returning &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">if</span> (!ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">CheckElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>)) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    mf::LogError(<span class="stringliteral">&quot;LArPandoraShowerCheatingAlg&quot;</span>)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;TrackSpacePoints not set, returning &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// Get info from shower property holder</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  TVector3 showerStartPosition = {-999, -999, -999};</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  TVector3 showerDirection = {-999, -999, -999};</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; trackSpacePoints;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">fShowerStartPositionInputLabel</a>, showerStartPosition);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">fShowerDirectionInputLabel</a>, showerDirection);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  ShowerEleHolder.<a class="code" href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">GetElement</a>(<a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">fInitialTrackSpacePointsInputLabel</a>, trackSpacePoints);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">// Create 3D point at vertex, chosed to be origin for ease of use of display</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">double</span> startXYZ[3] = {0, 0, 0};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">auto</span> startPoly = std::make_unique&lt;TPolyMarker3D&gt;(1, startXYZ);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">// Get the min and max projections along the direction to know how long to draw</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">// the direction line</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">double</span> minProj = std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">double</span> maxProj = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">double</span> x_min = std::numeric_limits&lt;double&gt;::max(), x_max = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">double</span> y_min = std::numeric_limits&lt;double&gt;::max(), y_max = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">double</span> z_min = std::numeric_limits&lt;double&gt;::max(), z_max = -std::numeric_limits&lt;double&gt;::max();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">//initialise counter point</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">int</span> point = 0;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// Make 3D points for each spacepoint in the shower</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">auto</span> showerPoly = std::make_unique&lt;TPolyMarker3D&gt;(showerSpacePoints.size());</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> spacePoint : showerSpacePoints) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(spacePoint) - showerStartPosition;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    x = pos.X();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    y = pos.Y();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    z = pos.Z();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    x_min = std::min(x, x_min);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    x_max = std::max(x, x_max);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    y_min = std::min(y, y_min);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    y_max = std::max(y, y_max);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    z_min = std::min(z, z_min);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    z_max = std::max(z, z_max);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    showerPoly-&gt;SetPoint(point, x, y, z);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    ++point;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Calculate the projection of (point-startpoint) along the direction</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">double</span> proj =</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#af1dd20c800f7d033b2025c814b74d741">SpacePointProjection</a>(spacePoint, showerStartPosition, showerDirection);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    maxProj = std::max(proj, maxProj);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    minProj = std::min(proj, minProj);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  } <span class="comment">// loop over spacepoints</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">// Create TPolyLine3D arrays</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">double</span> xDirPoints[2] = {minProj * showerDirection.X(), maxProj * showerDirection.X()};</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">double</span> yDirPoints[2] = {minProj * showerDirection.Y(), maxProj * showerDirection.Y()};</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">double</span> zDirPoints[2] = {minProj * showerDirection.Z(), maxProj * showerDirection.Z()};</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">auto</span> dirPoly = std::make_unique&lt;TPolyLine3D&gt;(2, xDirPoints, yDirPoints, zDirPoints);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">auto</span> otherPoly = std::make_unique&lt;TPolyMarker3D&gt;(otherSpacePoints.size());</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="comment">// initialise counters</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  point = 0; <span class="comment">// re-initialise counter</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; sp : otherSpacePoints) {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(sp) - showerStartPosition;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    x = pos.X();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    y = pos.Y();</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    z = pos.Z();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    x_min = std::min(x, x_min);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    x_max = std::max(x, x_max);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    y_min = std::min(y, y_min);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    y_max = std::max(y, y_max);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    z_min = std::min(z, z_min);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    z_max = std::max(z, z_max);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    otherPoly-&gt;SetPoint(point, x, y, z);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    ++point;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  gStyle-&gt;SetOptStat(0);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  TH3F axes(<span class="stringliteral">&quot;axes&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1, x_min, x_max, 1, y_min, y_max, 1, z_min, z_max);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  axes.SetDirectory(0);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  axes.GetXaxis()-&gt;SetTitle(<span class="stringliteral">&quot;X&quot;</span>);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  axes.GetYaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Y&quot;</span>);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  axes.GetZaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Z&quot;</span>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  axes.Draw();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  otherPoly-&gt;SetMarkerStyle(20);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  otherPoly-&gt;SetMarkerColor(4);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  otherPoly-&gt;Draw();</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">// Draw all of the things</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  showerPoly-&gt;SetMarkerStyle(20);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  showerPoly-&gt;Draw();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  trackPoly-&gt;SetMarkerStyle(20);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  trackPoly-&gt;SetMarkerColor(2);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  trackPoly-&gt;Draw();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  startPoly-&gt;SetMarkerStyle(21);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  startPoly-&gt;SetMarkerSize(2);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  startPoly-&gt;SetMarkerColor(3);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  startPoly-&gt;Draw();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  dirPoly-&gt;SetLineWidth(1);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  dirPoly-&gt;SetLineColor(6);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  dirPoly-&gt;Draw();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  point = 0; <span class="comment">// re-initialise counter</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">auto</span> trackPoly = std::make_unique&lt;TPolyMarker3D&gt;(trackSpacePoints.size());</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> spacePoint : trackSpacePoints) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(spacePoint) - showerStartPosition;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    x = pos.X();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    y = pos.Y();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    z = pos.Z();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    trackPoly-&gt;SetPoint(point, x, y, z);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    ++point;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  } <span class="comment">// loop over track spacepoints</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="comment">//  we want to draw all of the PFParticles in the event</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="comment">//Get the PFParticles</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keyword">auto</span> otherPoly = std::make_unique&lt;TPolyMarker3D&gt;(otherSpacePoints.size());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">// initialise counters</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  point = 0; <span class="comment">// re-initialise counter</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; sp : otherSpacePoints) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    TVector3 pos = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">fLArPandoraShowerAlg</a>.<a class="code" href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">SpacePointPosition</a>(sp) - showerStartPosition;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    x = pos.X();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    y = pos.Y();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    z = pos.Z();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    x_min = std::min(x, x_min);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    x_max = std::max(x, x_max);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    y_min = std::min(y, y_min);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    y_max = std::max(y, y_max);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    z_min = std::min(z, z_min);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    z_max = std::max(z, z_max);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    otherPoly-&gt;SetPoint(point, x, y, z);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ++point;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  gStyle-&gt;SetOptStat(0);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  TH3F axes(<span class="stringliteral">&quot;axes&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1, x_min, x_max, 1, y_min, y_max, 1, z_min, z_max);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  axes.SetDirectory(0);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  axes.GetXaxis()-&gt;SetTitle(<span class="stringliteral">&quot;X&quot;</span>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  axes.GetYaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Y&quot;</span>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  axes.GetZaxis()-&gt;SetTitle(<span class="stringliteral">&quot;Z&quot;</span>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  axes.Draw();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  otherPoly-&gt;SetMarkerStyle(20);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  otherPoly-&gt;SetMarkerColor(4);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  otherPoly-&gt;Draw();</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// Save the canvas. Don&#39;t usually need this when using TFileService but this in the alg</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="comment">// not a module and didn&#39;t work without this so im going with it.</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  canvas-&gt;Write();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// Draw all of the things</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  showerPoly-&gt;SetMarkerStyle(20);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  showerPoly-&gt;Draw();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  trackPoly-&gt;SetMarkerStyle(20);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  trackPoly-&gt;SetMarkerColor(2);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  trackPoly-&gt;Draw();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  startPoly-&gt;SetMarkerStyle(21);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  startPoly-&gt;SetMarkerSize(2);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  startPoly-&gt;SetMarkerColor(3);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  startPoly-&gt;Draw();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  dirPoly-&gt;SetLineWidth(1);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  dirPoly-&gt;SetLineColor(6);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  dirPoly-&gt;Draw();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="comment">// Save the canvas. Don&#39;t usually need this when using TFileService but this in the alg</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="comment">// not a module and didn&#39;t work without this so im going with it.</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  canvas-&gt;Write();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_ae40184b0245025a43c56daa3261d5e3c"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#ae40184b0245025a43c56daa3261d5e3c">z</a></div><div class="ttdeci">process_name opflash particleana ie ie ie z</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00092">run_opflash_electron.fcl:92</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a45fe2e1ce5d75310d0009bfdb8c98e23"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">shower::LArPandoraShowerCheatingAlg::fLArPandoraShowerAlg</a></div><div class="ttdeci">shower::LArPandoraShowerAlg fLArPandoraShowerAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00041">LArPandoraShowerCheatingAlg.h:41</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a45fe2e1ce5d75310d0009bfdb8c98e23"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a45fe2e1ce5d75310d0009bfdb8c98e23">shower::LArPandoraShowerCheatingAlg::fLArPandoraShowerAlg</a></div><div class="ttdeci">shower::LArPandoraShowerAlg fLArPandoraShowerAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00056">LArPandoraShowerCheatingAlg.h:56</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a1e5aaaf25e8609a835e8c7c6fda71456"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a></div><div class="ttdeci">process_name opflash particleana ie ie y</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00091">run_opflash_electron.fcl:91</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae25c085eec8f6d0e607c1e8f8cf73010"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">shower::LArPandoraShowerCheatingAlg::fShowerDirectionInputLabel</a></div><div class="ttdeci">std::string fShowerDirectionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00049">LArPandoraShowerCheatingAlg.h:49</a></div></div>
-<div class="ttc" id="classreco_1_1shower_1_1ShowerElementHolder_html_a134f1f910013d19f0c9be6362fd8e57c"><div class="ttname"><a href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">reco::shower::ShowerElementHolder::CheckElement</a></div><div class="ttdeci">bool CheckElement(const std::string &amp;Name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2b/ShowerElementHolder_8hh_source.html#l00415">ShowerElementHolder.hh:415</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad6e3fc4dbf4a4543a6ad38ba290d272c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">shower::LArPandoraShowerCheatingAlg::fHitModuleLabel</a></div><div class="ttdeci">art::InputTag fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00043">LArPandoraShowerCheatingAlg.h:43</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_af1dd20c800f7d033b2025c814b74d741"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#af1dd20c800f7d033b2025c814b74d741">shower::LArPandoraShowerAlg::SpacePointProjection</a></div><div class="ttdeci">double SpacePointProjection(art::Ptr&lt; recob::SpacePoint &gt; const &amp;sp, TVector3 const &amp;vertex, TVector3 const &amp;direction) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/LArPandoraShowerAlg_8cxx_source.html#l00363">LArPandoraShowerAlg.cxx:363</a></div></div>
-<div class="ttc" id="classreco_1_1shower_1_1ShowerElementHolder_html_a552520756de1a9c6357d0815942954ed"><div class="ttname"><a href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">reco::shower::ShowerElementHolder::GetElement</a></div><div class="ttdeci">int GetElement(const std::string &amp;Name, T &amp;Element) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2b/ShowerElementHolder_8hh_source.html#l00219">ShowerElementHolder.hh:219</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a72de169a757bda30b4643146a5f18975"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a72de169a757bda30b4643146a5f18975">shower::LArPandoraShowerCheatingAlg::TrueParticleID</a></div><div class="ttdeci">int TrueParticleID(detinfo::DetectorClocksData const &amp;clockData, const art::Ptr&lt; recob::Hit &gt; &amp;hit) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00256">LArPandoraShowerCheatingAlg.cxx:256</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad180c8412809b1d829af1fa5c7ecf528"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">shower::LArPandoraShowerCheatingAlg::fShowerStartPositionInputLabel</a></div><div class="ttdeci">std::string fShowerStartPositionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00048">LArPandoraShowerCheatingAlg.h:48</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a4bfcefcf5191f9d643c7315a7098bf3c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">shower::LArPandoraShowerCheatingAlg::fInitialTrackSpacePointsInputLabel</a></div><div class="ttdeci">std::string fInitialTrackSpacePointsInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00050">LArPandoraShowerCheatingAlg.h:50</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae847ff1c906c19e25ac16dedb4b782a4"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae847ff1c906c19e25ac16dedb4b782a4">shower::LArPandoraShowerCheatingAlg::tfs</a></div><div class="ttdeci">art::ServiceHandle&lt; art::TFileService &gt; tfs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00046">LArPandoraShowerCheatingAlg.h:46</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ab43166de65330f183b7f8c0cc86af1a2"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">shower::LArPandoraShowerCheatingAlg::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00044">LArPandoraShowerCheatingAlg.h:44</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae25c085eec8f6d0e607c1e8f8cf73010"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae25c085eec8f6d0e607c1e8f8cf73010">shower::LArPandoraShowerCheatingAlg::fShowerDirectionInputLabel</a></div><div class="ttdeci">std::string fShowerDirectionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00064">LArPandoraShowerCheatingAlg.h:64</a></div></div>
+<div class="ttc" id="classreco_1_1shower_1_1ShowerElementHolder_html_a134f1f910013d19f0c9be6362fd8e57c"><div class="ttname"><a href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a134f1f910013d19f0c9be6362fd8e57c">reco::shower::ShowerElementHolder::CheckElement</a></div><div class="ttdeci">bool CheckElement(const std::string &amp;Name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2b/ShowerElementHolder_8hh_source.html#l00417">ShowerElementHolder.hh:417</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad6e3fc4dbf4a4543a6ad38ba290d272c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad6e3fc4dbf4a4543a6ad38ba290d272c">shower::LArPandoraShowerCheatingAlg::fHitModuleLabel</a></div><div class="ttdeci">art::InputTag fHitModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00058">LArPandoraShowerCheatingAlg.h:58</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_af1dd20c800f7d033b2025c814b74d741"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#af1dd20c800f7d033b2025c814b74d741">shower::LArPandoraShowerAlg::SpacePointProjection</a></div><div class="ttdeci">double SpacePointProjection(art::Ptr&lt; recob::SpacePoint &gt; const &amp;sp, TVector3 const &amp;vertex, TVector3 const &amp;direction) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/LArPandoraShowerAlg_8cxx_source.html#l00384">LArPandoraShowerAlg.cxx:384</a></div></div>
+<div class="ttc" id="classreco_1_1shower_1_1ShowerElementHolder_html_a552520756de1a9c6357d0815942954ed"><div class="ttname"><a href="../../d2/d47/classreco_1_1shower_1_1ShowerElementHolder.html#a552520756de1a9c6357d0815942954ed">reco::shower::ShowerElementHolder::GetElement</a></div><div class="ttdeci">int GetElement(const std::string &amp;Name, T &amp;Element) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d2b/ShowerElementHolder_8hh_source.html#l00221">ShowerElementHolder.hh:221</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a72de169a757bda30b4643146a5f18975"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a72de169a757bda30b4643146a5f18975">shower::LArPandoraShowerCheatingAlg::TrueParticleID</a></div><div class="ttdeci">int TrueParticleID(detinfo::DetectorClocksData const &amp;clockData, const art::Ptr&lt; recob::Hit &gt; &amp;hit) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00270">LArPandoraShowerCheatingAlg.cxx:270</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ad180c8412809b1d829af1fa5c7ecf528"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ad180c8412809b1d829af1fa5c7ecf528">shower::LArPandoraShowerCheatingAlg::fShowerStartPositionInputLabel</a></div><div class="ttdeci">std::string fShowerStartPositionInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00063">LArPandoraShowerCheatingAlg.h:63</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_a4bfcefcf5191f9d643c7315a7098bf3c"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#a4bfcefcf5191f9d643c7315a7098bf3c">shower::LArPandoraShowerCheatingAlg::fInitialTrackSpacePointsInputLabel</a></div><div class="ttdeci">std::string fInitialTrackSpacePointsInputLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00065">LArPandoraShowerCheatingAlg.h:65</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae847ff1c906c19e25ac16dedb4b782a4"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae847ff1c906c19e25ac16dedb4b782a4">shower::LArPandoraShowerCheatingAlg::tfs</a></div><div class="ttdeci">art::ServiceHandle&lt; art::TFileService &gt; tfs</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00061">LArPandoraShowerCheatingAlg.h:61</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ab43166de65330f183b7f8c0cc86af1a2"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ab43166de65330f183b7f8c0cc86af1a2">shower::LArPandoraShowerCheatingAlg::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00059">LArPandoraShowerCheatingAlg.h:59</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_a918f014b30ef32f5279add7ee3031e6b"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">shower::LArPandoraShowerAlg::SpacePointPosition</a></div><div class="ttdeci">TVector3 SpacePointPosition(art::Ptr&lt; recob::SpacePoint &gt; const &amp;sp) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/LArPandoraShowerAlg_8cxx_source.html#l00294">LArPandoraShowerAlg.cxx:294</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerAlg_html_a918f014b30ef32f5279add7ee3031e6b"><div class="ttname"><a href="../../db/ddf/classshower_1_1LArPandoraShowerAlg.html#a918f014b30ef32f5279add7ee3031e6b">shower::LArPandoraShowerAlg::SpacePointPosition</a></div><div class="ttdeci">TVector3 SpacePointPosition(art::Ptr&lt; recob::SpacePoint &gt; const &amp;sp) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d2d/LArPandoraShowerAlg_8cxx_source.html#l00315">LArPandoraShowerAlg.cxx:315</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,34 +423,34 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00031">31</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Roll up showers if not already done:</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::map&lt;int, std::vector&lt;int&gt;&gt; showerMothers;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Loop over daughters and find th`e mothers</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; particleIt : trueParticles) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> simb::MCParticle* particle = particleIt.second;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> simb::MCParticle* mother = particle;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(particle-&gt;PdgCode()) != 11 &amp;&amp; <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(particle-&gt;PdgCode()) != 22) { <span class="keywordflow">continue</span>; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// While the grand mother exists and is an electron or photon</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Note the true mother will skip this loop and fill itself into the map</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">while</span> (mother-&gt;Mother() != 0 &amp;&amp; trueParticles.find(mother-&gt;Mother()) != trueParticles.end()) {</div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00045">45</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> motherId = mother-&gt;Mother();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trueParticles[motherId]-&gt;PdgCode()) != 11 &amp;&amp;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trueParticles[motherId]-&gt;PdgCode()) != 22) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      mother = trueParticles[motherId];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    showerMothers[mother-&gt;TrackId()].push_back(particle-&gt;TrackId());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">return</span> showerMothers;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// Roll up showers if not already done:</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::map&lt;int, std::vector&lt;int&gt;&gt; showerMothers;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Loop over daughters and find th`e mothers</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; particleIt : trueParticles) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> simb::MCParticle* particle = particleIt.second;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> simb::MCParticle* mother = particle;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(particle-&gt;PdgCode()) != 11 &amp;&amp; <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(particle-&gt;PdgCode()) != 22) { <span class="keywordflow">continue</span>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// While the grand mother exists and is an electron or photon</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Note the true mother will skip this loop and fill itself into the map</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">while</span> (mother-&gt;Mother() != 0 &amp;&amp; trueParticles.find(mother-&gt;Mother()) != trueParticles.end()) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordtype">int</span> motherId = mother-&gt;Mother();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trueParticles[motherId]-&gt;PdgCode()) != 11 &amp;&amp;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trueParticles[motherId]-&gt;PdgCode()) != 22) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      mother = trueParticles[motherId];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    showerMothers[mother-&gt;TrackId()].push_back(particle-&gt;TrackId());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> showerMothers;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -468,23 +468,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00013">13</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">const</span> sim::ParticleList&amp; particles = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">particleInventory</a>-&gt;ParticleList();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::map&lt;int, const simb::MCParticle*&gt; trueParticles;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// Make a map of track id to particle</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">for</span> (sim::ParticleList::const_iterator particleIt = particles.begin();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;       particleIt != particles.end();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;       ++particleIt) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> simb::MCParticle* particle = particleIt-&gt;second;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    trueParticles[particle-&gt;TrackId()] = particle;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//std::cout&lt;&lt;&quot;Particle ID: &quot;&lt;&lt;particle-&gt;TrackId()&lt;&lt;&quot; and PDG: &quot;&lt;&lt;particle-&gt;PdgCode()&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> trueParticles;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae3f8ecf010a0e2b3dc48fc29234bb7eb"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">shower::LArPandoraShowerCheatingAlg::particleInventory</a></div><div class="ttdeci">art::ServiceHandle&lt; cheat::ParticleInventoryService &gt; particleInventory</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00045">LArPandoraShowerCheatingAlg.h:45</a></div></div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00027">27</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">const</span> sim::ParticleList&amp; particles = <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">particleInventory</a>-&gt;ParticleList();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::map&lt;int, const simb::MCParticle*&gt; trueParticles;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Make a map of track id to particle</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">for</span> (sim::ParticleList::const_iterator particleIt = particles.begin();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;       particleIt != particles.end();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;       ++particleIt) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> simb::MCParticle* particle = particleIt-&gt;second;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    trueParticles[particle-&gt;TrackId()] = particle;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//std::cout&lt;&lt;&quot;Particle ID: &quot;&lt;&lt;particle-&gt;TrackId()&lt;&lt;&quot; and PDG: &quot;&lt;&lt;particle-&gt;PdgCode()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> trueParticles;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae3f8ecf010a0e2b3dc48fc29234bb7eb"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">shower::LArPandoraShowerCheatingAlg::particleInventory</a></div><div class="ttdeci">art::ServiceHandle&lt; cheat::ParticleInventoryService &gt; particleInventory</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00060">LArPandoraShowerCheatingAlg.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -512,21 +512,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00256">256</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">double</span> particleEnergy = 0;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordtype">int</span> likelyTrackID = 0;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  art::ServiceHandle&lt;cheat::BackTrackerService&gt; bt_serv;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  std::vector&lt;sim::TrackIDE&gt; trackIDs = bt_serv-&gt;HitToTrackIDEs(clockData, <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idIt = 0; idIt &lt; trackIDs.size(); ++idIt) {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">if</span> (trackIDs.at(idIt).energy &gt; particleEnergy) {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      particleEnergy = trackIDs.at(idIt).energy;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      likelyTrackID = trackIDs.at(idIt).trackID;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">return</span> likelyTrackID;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00270">270</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">double</span> particleEnergy = 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">int</span> likelyTrackID = 0;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  art::ServiceHandle&lt;cheat::BackTrackerService&gt; bt_serv;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  std::vector&lt;sim::TrackIDE&gt; trackIDs = bt_serv-&gt;HitToTrackIDEs(clockData, <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idIt = 0; idIt &lt; trackIDs.size(); ++idIt) {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span> (trackIDs.at(idIt).energy &gt; particleEnergy) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      particleEnergy = trackIDs.at(idIt).energy;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      likelyTrackID = trackIDs.at(idIt).trackID;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordflow">return</span> likelyTrackID;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -567,70 +567,70 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00274">274</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  art::ServiceHandle&lt;cheat::BackTrackerService&gt; bt_serv;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  art::ServiceHandle&lt;cheat::ParticleInventoryService&gt; <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">particleInventory</a>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="comment">//Find the energy for each track ID.</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  std::map&lt;int, double&gt; trackIDToEDepMap;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  std::map&lt;int, double&gt; trackIDTo3EDepMap;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">std::vector</a>&lt;art::Ptr&lt;recob::Hit&gt;&gt;::const_iterator hitIt = hits.begin(); hitIt != hits.end();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;       ++hitIt) {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    art::Ptr&lt;recob::Hit&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = *hitIt;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">//Get the plane ID</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> wireid = (*hitIt)-&gt;<a class="code" href="../../de/db1/structgeo_1_1WireID.html#a27e19a98be832681be8967bb9da9b6e6">WireID</a>();</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">PlaneID</a> = wireid.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::vector&lt;sim::TrackIDE&gt; trackIDs = bt_serv-&gt;HitToTrackIDEs(clockData, hit);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idIt = 0; idIt &lt; trackIDs.size(); ++idIt) {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      trackIDTo3EDepMap[<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trackIDs[idIt].trackID)] += trackIDs[idIt].energy;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">if</span> (PlaneID == planeid) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        trackIDToEDepMap[<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trackIDs[idIt].trackID)] += trackIDs[idIt].energy;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="comment">//Find the energy for each showermother.</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  std::map&lt;int, double&gt; MotherIDtoEMap;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  std::map&lt;int, double&gt; MotherIDto3EMap;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordflow">for</span> (std::map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;::const_iterator showermother = ShowersMothers.begin();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;       showermother != ShowersMothers.end();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;       ++showermother) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;int&gt;::const_iterator daughter = (showermother-&gt;second).begin();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;         daughter != (showermother-&gt;second).<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>();</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;         ++daughter) {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      MotherIDtoEMap[showermother-&gt;first] += trackIDToEDepMap[*daughter];</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      MotherIDto3EMap[showermother-&gt;first] += trackIDTo3EDepMap[*daughter];</div>
+<p>Definition at line <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html#l00288">288</a> of file <a class="el" href="../../d1/d1d/LArPandoraShowerCheatingAlg_8cxx_source.html">LArPandoraShowerCheatingAlg.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  art::ServiceHandle&lt;cheat::BackTrackerService&gt; bt_serv;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  art::ServiceHandle&lt;cheat::ParticleInventoryService&gt; <a class="code" href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">particleInventory</a>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="comment">//Find the energy for each track ID.</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  std::map&lt;int, double&gt; trackIDToEDepMap;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  std::map&lt;int, double&gt; trackIDTo3EDepMap;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">std::vector</a>&lt;art::Ptr&lt;recob::Hit&gt;&gt;::const_iterator hitIt = hits.begin(); hitIt != hits.end();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;       ++hitIt) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    art::Ptr&lt;recob::Hit&gt; <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = *hitIt;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//Get the plane ID</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> wireid = (*hitIt)-&gt;<a class="code" href="../../de/db1/structgeo_1_1WireID.html#a27e19a98be832681be8967bb9da9b6e6">WireID</a>();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">PlaneID</a> = wireid.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    std::vector&lt;sim::TrackIDE&gt; trackIDs = bt_serv-&gt;HitToTrackIDEs(clockData, hit);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idIt = 0; idIt &lt; trackIDs.size(); ++idIt) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      trackIDTo3EDepMap[<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trackIDs[idIt].trackID)] += trackIDs[idIt].energy;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">if</span> (PlaneID == planeid) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        trackIDToEDepMap[<a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(trackIDs[idIt].trackID)] += trackIDs[idIt].energy;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      }</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="comment">//Loop over the mothers to find the most like candidate by identifying which true shower deposited the most energy in the hits.</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordtype">double</span> maxenergy = -1;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">int</span> objectTrack = -99999;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">for</span> (std::map&lt;int, double&gt;::iterator mapIt = MotherIDto3EMap.begin();</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;       mapIt != MotherIDto3EMap.end();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;       mapIt++) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">double</span> energy_three = mapIt-&gt;second;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordtype">double</span> trackid = mapIt-&gt;first;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> (energy_three &gt; maxenergy) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      maxenergy = energy_three;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      objectTrack = trackid;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="comment">//Find the energy for each showermother.</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  std::map&lt;int, double&gt; MotherIDtoEMap;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  std::map&lt;int, double&gt; MotherIDto3EMap;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">for</span> (std::map&lt;<span class="keywordtype">int</span>, std::vector&lt;int&gt;&gt;::const_iterator showermother = ShowersMothers.begin();</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;       showermother != ShowersMothers.end();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;       ++showermother) {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;int&gt;::const_iterator daughter = (showermother-&gt;second).begin();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;         daughter != (showermother-&gt;second).<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;         ++daughter) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      MotherIDtoEMap[showermother-&gt;first] += trackIDToEDepMap[*daughter];</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      MotherIDto3EMap[showermother-&gt;first] += trackIDTo3EDepMap[*daughter];</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">//If the none of the shower mother deposited no energy then we cannot match this.</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">if</span> (maxenergy == 0) { <span class="keywordflow">return</span> std::make_pair(-99999, -99999); }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">return</span> std::make_pair(objectTrack, MotherIDtoEMap[objectTrack]);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">//Loop over the mothers to find the most like candidate by identifying which true shower deposited the most energy in the hits.</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">double</span> maxenergy = -1;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">int</span> objectTrack = -99999;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">for</span> (std::map&lt;int, double&gt;::iterator mapIt = MotherIDto3EMap.begin();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;       mapIt != MotherIDto3EMap.end();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;       mapIt++) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">double</span> energy_three = mapIt-&gt;second;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">double</span> trackid = mapIt-&gt;first;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (energy_three &gt; maxenergy) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      maxenergy = energy_three;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      objectTrack = trackid;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="comment">//If the none of the shower mother deposited no energy then we cannot match this.</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">if</span> (maxenergy == 0) { <span class="keywordflow">return</span> std::make_pair(-99999, -99999); }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> std::make_pair(objectTrack, MotherIDtoEMap[objectTrack]);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
 <div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="namespacegeo_1_1fhicl_html_a05ff5cebd7313582756a33d8e8a5971a"><div class="ttname"><a href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::fhicl::PlaneID</a></div><div class="ttdeci">IDparameter&lt; geo::PlaneID &gt; PlaneID</div><div class="ttdoc">Member type of validated geo::PlaneID parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddc/geo__types__fhicl_8h_source.html#l00375">geo_types_fhicl.h:375</a></div></div>
 <div class="ttc" id="namespacelar_1_1dump_html_a71d4403edbac4d265176f8677118194f"><div class="ttname"><a href="../../db/dfa/namespacelar_1_1dump.html#a71d4403edbac4d265176f8677118194f">lar::dump::vector</a></div><div class="ttdeci">auto vector(Vector const &amp;v)</div><div class="ttdoc">Returns a manipulator which will print the specified array. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/da9/DumpUtils_8h_source.html#l00265">DumpUtils.h:265</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
-<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae3f8ecf010a0e2b3dc48fc29234bb7eb"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">shower::LArPandoraShowerCheatingAlg::particleInventory</a></div><div class="ttdeci">art::ServiceHandle&lt; cheat::ParticleInventoryService &gt; particleInventory</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00045">LArPandoraShowerCheatingAlg.h:45</a></div></div>
+<div class="ttc" id="classshower_1_1LArPandoraShowerCheatingAlg_html_ae3f8ecf010a0e2b3dc48fc29234bb7eb"><div class="ttname"><a href="../../d1/dec/classshower_1_1LArPandoraShowerCheatingAlg.html#ae3f8ecf010a0e2b3dc48fc29234bb7eb">shower::LArPandoraShowerCheatingAlg::particleInventory</a></div><div class="ttdeci">art::ServiceHandle&lt; cheat::ParticleInventoryService &gt; particleInventory</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00060">LArPandoraShowerCheatingAlg.h:60</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aac918da84f16d53ad17bab4f817da1c4"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">icarus::ns::util::end</a></div><div class="ttdeci">auto end(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00585">FixedBins.h:585</a></div></div>
 <div class="ttc" id="structgeo_1_1PlaneID_html_a02c2afa6841ef86ea8ab49478cdf5b29"><div class="ttname"><a href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">geo::PlaneID::Plane</a></div><div class="ttdeci">PlaneID_t Plane</div><div class="ttdoc">Index of the plane within its TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00493">geo_types.h:493</a></div></div>
 <div class="ttc" id="structgeo_1_1WireID_html_a27e19a98be832681be8967bb9da9b6e6"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html#a27e19a98be832681be8967bb9da9b6e6">geo::WireID::WireID</a></div><div class="ttdeci">constexpr WireID()=default</div><div class="ttdoc">Default constructor: an invalid TPC ID. </div></div>
@@ -656,7 +656,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00043">43</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00058">58</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -678,7 +678,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00050">50</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00065">65</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +700,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00041">41</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00056">56</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00044">44</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00059">59</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00049">49</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00064">64</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -766,7 +766,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00048">48</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00063">63</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -788,7 +788,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00045">45</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00060">60</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +810,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00046">46</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
+<p>Definition at line <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html#l00061">61</a> of file <a class="el" href="../../da/d54/LArPandoraShowerCheatingAlg_8h_source.html">LArPandoraShowerCheatingAlg.h</a>.</p>
 
 </div>
 </div>

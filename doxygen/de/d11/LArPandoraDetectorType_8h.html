@@ -87,6 +87,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>Helper functions for extracting detector geometry for use in reconsruction.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d48/geo__types_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_types.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d5/d7d/geo__vectors_8h_source.html">larcoreobj/SimpleTypesAndConstants/geo_vectors.h</a>&quot;</code><br/>
 <code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;Api/PandoraApi.h&quot;</code><br/>
 </div>
@@ -113,9 +115,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8f989229c15e22af2c82091ea5190723"><td class="memItemLeft" align="right" valign="top">LArPandoraDetectorType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d43/namespacelar__pandora_1_1detector__functions.html#a8f989229c15e22af2c82091ea5190723">lar_pandora::detector_functions::GetDetectorType</a> ()</td></tr>
-<tr class="memdesc:a8f989229c15e22af2c82091ea5190723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory class that returns the correct detector type interface.  <a href="#a8f989229c15e22af2c82091ea5190723">More...</a><br/></td></tr>
-<tr class="separator:a8f989229c15e22af2c82091ea5190723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff8fa1b8f4f5db3fff5ae4c4922a792e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d43/namespacelar__pandora_1_1detector__functions.html#aff8fa1b8f4f5db3fff5ae4c4922a792e">lar_pandora::detector_functions::WireAngle</a> (const <a class="el" href="../../d6/d23/namespacegeo.html#a6baec40eaf3ff161f7eb1a5f0779794f">geo::View_t</a> view, const <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html#a9ef6da76be5aebbe743ad0d4f888e418">geo::TPCID::TPCID_t</a> tpc, const <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html#abbd8aef3486d368d18ce29eaa9ab2913">geo::CryostatID::CryostatID_t</a> cstat, const art::ServiceHandle&lt; <a class="el" href="../../d8/df3/classgeo_1_1Geometry.html">geo::Geometry</a> &gt; &amp;larsoftGeometry)</td></tr>
 <tr class="memdesc:aff8fa1b8f4f5db3fff5ae4c4922a792e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the wire angle of a LArTPC view in a given TPC/cryostat.  <a href="#aff8fa1b8f4f5db3fff5ae4c4922a792e">More...</a><br/></td></tr>
 <tr class="separator:aff8fa1b8f4f5db3fff5ae4c4922a792e"><td class="memSeparator" colspan="2">&#160;</td></tr>
