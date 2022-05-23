@@ -24,6 +24,8 @@ different from the one configured in the current job
 
 | version      | introduced  | default     | file path                                                                   | based on    | description
 | ------------ | ----------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
+|              | _not yet_   |             | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `20210527`  | closer cryostats, added building and CRT details; with concrete overburden
+|              | _not yet_   |             | `icarusalg/Geometry/gdml/icarus_complete_20220518_no_overburden.gdml`       | `20210527`  | closer cryostats, added building and CRT details; with no concrete overburden
 | `icarus_v3`  | `v09_25_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`          | `icarus_v2` | closer cryostats, added building details; with concrete overburden
 | `icarus_v3`  | `v09_25_00` | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `icarus_v2` | closer cryostats, added building details; with no concrete overburden
 | `icarus_v2`* | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107`  | fixed orientation of wires, with concrete overburden
@@ -40,16 +42,20 @@ different from the one configured in the current job
 
 ### Older versions
 
-| version    | introduced  | default     | removed     | file path                                                            | description
-| ---------- | ----------- | ----------- | ----------- | -------------------------------------------------------------------- | ------------------------------
-| `20200307` | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with no concrete overburden
-| `20200307` | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry, first induction plane wires 9 m, with concrete overburden
-|            | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml` | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`               | complete geometry, first induction plane wires 18 m, with concrete overburden
-|            | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
-|            | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`        | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
-|            | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                      | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
+| name       | version     | introduced  | default     | removed     | file path                                                             | description
+| ---------- | ----------- | ----------- | ----------- | ----------- | --------------------------------------------------------------------- | ------------------------------
+| `20210527` | `icarus_v3` | `v09_25_00` |             |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`    | closer cryostats, added building details; with concrete overburden
+| `20210527` | `icarus_v3` | `v09_25_00` | `v09_25_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml` | closer cryostats, added building details; with no concrete overburden
+| `20200307` | `20200307`  | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 9 m, with no concrete overburden
+| `20200307` | `20200307`  | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                       | complete geometry, first induction plane wires 9 m, with concrete overburden
+|            |             | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml`  | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            |             | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`                | complete geometry, first induction plane wires 18 m, with concrete overburden
+|            |             | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
+|            |             | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 18 m, with no concrete overburden
+|            |             | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                 | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
+|            |             | ...         | ...         | `v08_41_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                       | complete geometry: TPC (first induction plane wires 18 m), PMT, CRT, concrete overburden
+
+In this table, "name" refers to the specific geometry, while "version" is the "detector name" that was assigned to it in LArSoft. All geometry files with the same version are expected to be compatible at LArSoft `GeometryCore` level, but they may differ either in format or in details besides the cryostat/TPC/plane/wire/PMT/CRT active components.
 
 > _Note_: detector geometry description files have been moved from
 > [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
