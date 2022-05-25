@@ -37,7 +37,7 @@ source /daq/software/products_dev/setup   #dev area
 ```bash
 ups list -aK+ sbndaq -qe20:s112:prof
 ```
-It's recommended you use the latest available version (this is currently v1_00_01 as of 2/2022) with e20:prof:s112 as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_01_00 as of 5/2022) with e20:prof:s112 as the option. Then, to set up, use:
 ```bash
 setup sbndaq v#_##_## -qe20:prof:s112
 ```
@@ -55,7 +55,7 @@ If you're doing development work, then you'll want to be able to create a develo
 
 1. Setup the `mrb` environment:
 ```bash
-setup mrb v5_18_01
+setup mrb v5_19_05
 export MRB_PROJECT=sbndaq
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
@@ -164,7 +164,7 @@ setup sbndaq {version} -q {qualifiers}
 ```
 3. Create a new `localProducts` directory, _while keeping the same `srcs` directory_:
 ```bash
-setup mrb v5_18_01
+setup mrb v5_19_05
 export MRB_PROJECT=sbndaq
 cd <your_existing_working_area>
 mrb newDev -p
@@ -187,12 +187,12 @@ Put the commands that never change into your bash login script
 ```bash
 source /daq/software/products/setup
 source /daq/software/products_dev/setup
-setup mrb v5_18_01
+setup mrb v5_19_05
 export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v1_00_01 -q e20:prof:s112
+setup sbndaq v1_01_00 -q e20:prof:s112
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
