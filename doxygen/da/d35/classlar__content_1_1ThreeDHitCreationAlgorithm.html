@@ -350,7 +350,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    std::string clusterListName;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CreateTemporaryListAndSetCurrent(*<span class="keyword">this</span>, pClusterList, clusterListName));</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    PandoraContentApi::Cluster::Parameters parameters;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> parameters;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    parameters.m_caloHitList.insert(parameters.m_caloHitList.end(), caloHitList.begin(), caloHitList.end());</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">const</span> Cluster *pCluster3D(<span class="keyword">nullptr</span>);</div>
@@ -364,6 +364,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1ThreeDHitCreationAlgorithm_html_af06d7c4082df78211002d4080c3cd182"><div class="ttname"><a href="../../da/d35/classlar__content_1_1ThreeDHitCreationAlgorithm.html#af06d7c4082df78211002d4080c3cd182">lar_content::ThreeDHitCreationAlgorithm::m_outputClusterListName</a></div><div class="ttdeci">std::string m_outputClusterListName</div><div class="ttdoc">The name of the output cluster list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc4/ThreeDHitCreationAlgorithm_8h_source.html#l00276">ThreeDHitCreationAlgorithm.h:276</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArPfoHelper_html_a13bdb547f45c2729806f42e6f2bb698e"><div class="ttname"><a href="../../d3/d10/classlar__content_1_1LArPfoHelper.html#a13bdb547f45c2729806f42e6f2bb698e">lar_content::LArPfoHelper::GetThreeDClusterList</a></div><div class="ttdeci">static void GetThreeDClusterList(const pandora::ParticleFlowObject *const pPfo, pandora::ClusterList &amp;clusterList)</div><div class="ttdoc">Get the list of 3D clusters from an input pfo. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d78/LArPfoHelper_8cc_source.html#l00136">LArPfoHelper.cc:136</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,7 +464,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="../../da/d35/classlar__content_1_1ThreeDHitCreationAlgorithm.html#a61e2285c028f3ade8554074c9d790d2a">CheckThreeDHit</a>(protoHit))</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_INVALID_PARAMETER);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    PandoraContentApi::CaloHit::Parameters parameters;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::CaloHit::Parameters</a> parameters;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    parameters.m_positionVector = protoHit.GetPosition3D();</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    parameters.m_hitType = TPC_3D;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
@@ -491,6 +492,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CaloHit::Create(*<span class="keyword">this</span>, parameters, pCaloHit3D));</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1ThreeDHitCreationAlgorithm_html_a61e2285c028f3ade8554074c9d790d2a"><div class="ttname"><a href="../../da/d35/classlar__content_1_1ThreeDHitCreationAlgorithm.html#a61e2285c028f3ade8554074c9d790d2a">lar_content::ThreeDHitCreationAlgorithm::CheckThreeDHit</a></div><div class="ttdeci">bool CheckThreeDHit(const ProtoHit &amp;protoHit) const </div><div class="ttdoc">Check that a new three dimensional position is not unphysical. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/ThreeDHitCreationAlgorithm_8cc_source.html#l00373">ThreeDHitCreationAlgorithm.cc:373</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

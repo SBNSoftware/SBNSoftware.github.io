@@ -369,7 +369,7 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="../../db/de1/ClusterSplittingAlgorithm_8cc_source.html#l00077">77</a> of file <a class="el" href="../../db/de1/ClusterSplittingAlgorithm_8cc_source.html">ClusterSplittingAlgorithm.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Split cluster into two CaloHit lists</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    PandoraContentApi::Cluster::Parameters firstParameters, secondParameters;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> firstParameters, secondParameters;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (STATUS_CODE_SUCCESS != this-&gt;<a class="code" href="../../df/d73/classlar__content_1_1ClusterSplittingAlgorithm.html#aa1f79df5a064a58650252a7f008a13a2">DivideCaloHits</a>(pCluster, firstParameters.m_caloHitList, secondParameters.m_caloHitList))</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
@@ -398,6 +398,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1ClusterSplittingAlgorithm_html_aa1f79df5a064a58650252a7f008a13a2"><div class="ttname"><a href="../../df/d73/classlar__content_1_1ClusterSplittingAlgorithm.html#aa1f79df5a064a58650252a7f008a13a2">lar_content::ClusterSplittingAlgorithm::DivideCaloHits</a></div><div class="ttdeci">virtual pandora::StatusCode DivideCaloHits(const pandora::Cluster *const pCluster, pandora::CaloHitList &amp;firstCaloHitList, pandora::CaloHitList &amp;secondCaloHitList) const =0</div><div class="ttdoc">Divide calo hits in a cluster into two lists, each associated with a separate fragment cluster...</div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

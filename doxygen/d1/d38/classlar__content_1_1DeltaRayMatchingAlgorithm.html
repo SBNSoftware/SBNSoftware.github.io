@@ -765,7 +765,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CreateTemporaryListAndSetCurrent(*<span class="keyword">this</span>, pPfoList, pfoListName));</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="comment">// TODO Correct these placeholder parameters</span></div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    PandoraContentApi::ParticleFlowObject::Parameters pfoParameters;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> pfoParameters;</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    pfoParameters.m_particleId = E_MINUS; <span class="comment">// SHOWER</span></div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    pfoParameters.m_charge = PdgTable::GetParticleCharge(pfoParameters.m_particleId.Get());</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    pfoParameters.m_mass = PdgTable::GetParticleMass(pfoParameters.m_particleId.Get());</div>
@@ -782,6 +782,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::SetPfoParentDaughterRelationship(*<span class="keyword">this</span>, pParentPfo, pDaughterPfo));</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;}</div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="classlar__content_1_1DeltaRayMatchingAlgorithm_html_ab95ad1b0abbbe9902c25e4af38249106"><div class="ttname"><a href="../../d1/d38/classlar__content_1_1DeltaRayMatchingAlgorithm.html#ab95ad1b0abbbe9902c25e4af38249106">lar_content::DeltaRayMatchingAlgorithm::m_daughterPfoListName</a></div><div class="ttdeci">std::string m_daughterPfoListName</div><div class="ttdoc">The daughter pfo list name for new daughter particles. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc9/DeltaRayMatchingAlgorithm_8h_source.html#l00300">DeltaRayMatchingAlgorithm.h:300</a></div></div>
 </div><!-- fragment -->
 </div>

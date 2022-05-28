@@ -452,7 +452,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                }</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                {</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                    PandoraContentApi::Cluster::Parameters parameters;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> parameters;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    parameters.m_caloHitList.push_back(pCaloHit);</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Cluster::Create(*<span class="keyword">this</span>, parameters, pClusterToModify));</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
@@ -466,6 +466,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1TrackRefinementBaseAlgorithm_html_ae18b897281503fcd8c3a0925fbaa47b4"><div class="ttname"><a href="../../d4/d7f/classlar__content_1_1TrackRefinementBaseAlgorithm.html#ae18b897281503fcd8c3a0925fbaa47b4">lar_content::TrackRefinementBaseAlgorithm::m_minClusterLength</a></div><div class="ttdeci">float m_minClusterLength</div><div class="ttdoc">The minimum length of a considered cluster. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/TrackRefinementBaseAlgorithm_8h_source.html#l00307">TrackRefinementBaseAlgorithm.h:307</a></div></div>
 <div class="ttc" id="classlar__content_1_1TrackRefinementBaseAlgorithm_html_aa3c0d1d304ce9306859f39fdfa19f6aa"><div class="ttname"><a href="../../d4/d7f/classlar__content_1_1TrackRefinementBaseAlgorithm.html#aa3c0d1d304ce9306859f39fdfa19f6aa">lar_content::TrackRefinementBaseAlgorithm::m_minHitFractionForHitRemoval</a></div><div class="ttdeci">float m_minHitFractionForHitRemoval</div><div class="ttdoc">The threshold fraction of hits to be removed from the cluster for hit removal to proceed. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/TrackRefinementBaseAlgorithm_8h_source.html#l00312">TrackRefinementBaseAlgorithm.h:312</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArClusterHelper_html_ad25a3f6ab4539b67890161352e50bf1c"><div class="ttname"><a href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#ad25a3f6ab4539b67890161352e50bf1c">lar_content::LArClusterHelper::GetLengthSquared</a></div><div class="ttdeci">static float GetLengthSquared(const pandora::Cluster *const pCluster)</div><div class="ttdoc">Get length squared of cluster. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d12/LArClusterHelper_8cc_source.html#l00065">LArClusterHelper.cc:65</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -891,7 +892,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;            }</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            {</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                PandoraContentApi::Cluster::Parameters parameters;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> parameters;</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                parameters.m_caloHitList.push_back(pCaloHit);</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Cluster::Create(*<span class="keyword">this</span>, parameters, pClosestCluster));</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                createdClusters.push_back(pClosestCluster);</div>
@@ -913,6 +914,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;}</div>
 <div class="ttc" id="namespaceana_1_1SBNOsc_html_a554dcefb3915564914a229ee77872470"><div class="ttname"><a href="../../da/d73/namespaceana_1_1SBNOsc.html#a554dcefb3915564914a229ee77872470">ana::SBNOsc::closestDistance</a></div><div class="ttdeci">double closestDistance(const TVector3 &amp;line0, const TVector3 &amp;line1, const TVector3 &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d16/sbnana_2sbnanalysis_2ana_2SBNOsc_2Utilities_8cxx_source.html#l00490">sbnana/sbnanalysis/ana/SBNOsc/Utilities.cxx:490</a></div></div>
 <div class="ttc" id="classlar__content_1_1TrackRefinementBaseAlgorithm_html_a47fef26117a1203e30ea452565e56e31"><div class="ttname"><a href="../../d4/d7f/classlar__content_1_1TrackRefinementBaseAlgorithm.html#a47fef26117a1203e30ea452565e56e31">lar_content::TrackRefinementBaseAlgorithm::m_maxHitDistanceFromCluster</a></div><div class="ttdeci">float m_maxHitDistanceFromCluster</div><div class="ttdoc">The threshold separation between a hit and cluster for the hit to be merged into the cluster...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d62/TrackRefinementBaseAlgorithm_8h_source.html#l00314">TrackRefinementBaseAlgorithm.h:314</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="classlar__content_1_1LArClusterHelper_html_ab497c7920ac690eab1e4d195c6cb9e50"><div class="ttname"><a href="../../d8/d71/classlar__content_1_1LArClusterHelper.html#ab497c7920ac690eab1e4d195c6cb9e50">lar_content::LArClusterHelper::GetClosestDistance</a></div><div class="ttdeci">static float GetClosestDistance(const pandora::ClusterList &amp;clusterList1, const pandora::ClusterList &amp;clusterList2)</div><div class="ttdoc">Get closest distance between clusters in a pair of cluster lists. </div></div>
 </div><!-- fragment -->
 </div>
@@ -2190,7 +2192,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;            }</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            {</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                PandoraContentApi::Cluster::Parameters parameters;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;                <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> parameters;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                parameters.m_caloHitList.push_back(pCaloHit);</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Cluster::Create(*<span class="keyword">this</span>, parameters, pClusterToModify));</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
@@ -2212,6 +2214,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="keywordflow">return</span> pCluster;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    }</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;}</div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

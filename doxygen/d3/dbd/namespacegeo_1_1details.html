@@ -161,6 +161,13 @@ int, Levels &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a clas
 <tr class="memitem:a4909ccf57b9f1dfb02e60f74d66e05f0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/dbd/namespacegeo_1_1details.html#a4909ccf57b9f1dfb02e60f74d66e05f0">static_less</a> (T <a class="el" href="../../d1/d82/OnlineDecoder_8fcl.html#a99b093ee2be2d37375506bb99fb5ea75">a</a>, T b)</td></tr>
 <tr class="memdesc:a4909ccf57b9f1dfb02e60f74d66e05f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function translation of <code>std::less</code>.  <a href="#a4909ccf57b9f1dfb02e60f74d66e05f0">More...</a><br/></td></tr>
 <tr class="separator:a4909ccf57b9f1dfb02e60f74d66e05f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940fea1b7c9bcb0079559701a829aba0"><td class="memTemplParams" colspan="2">template&lt;typename GEOIT &gt; </td></tr>
+<tr class="memitem:a940fea1b7c9bcb0079559701a829aba0"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t<br class="typebreak"/>
+&lt; std::is_base_of_v<br class="typebreak"/>
+&lt; <a class="el" href="../../d6/d8f/classgeo_1_1details_1_1geometry__iterator__base.html">geometry_iterator_base</a>, <br class="typebreak"/>
+GEOIT &gt;, std::ostream &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/dbd/namespacegeo_1_1details.html#a940fea1b7c9bcb0079559701a829aba0">operator&lt;&lt;</a> (std::ostream &amp;out, GEOIT const &amp;it)</td></tr>
+<tr class="memdesc:a940fea1b7c9bcb0079559701a829aba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream output for all geometry ID iterator types: prints the pointed ID.  <a href="#a940fea1b7c9bcb0079559701a829aba0">More...</a><br/></td></tr>
+<tr class="separator:a940fea1b7c9bcb0079559701a829aba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42f32bb1ad5dfd11d67c94e3eddf65c"><td class="memTemplParams" colspan="2">template&lt;typename GEOIDITER &gt; </td></tr>
 <tr class="memitem:ac42f32bb1ad5dfd11d67c94e3eddf65c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/dbd/namespacegeo_1_1details.html#ac42f32bb1ad5dfd11d67c94e3eddf65c">operator==</a> (<a class="el" href="../../d3/d1a/classgeo_1_1details_1_1geometry__element__iterator.html">geometry_element_iterator</a>&lt; GEOIDITER &gt; const &amp;iter, GEOIDITER const &amp;id_iter)</td></tr>
 <tr class="memdesc:ac42f32bb1ad5dfd11d67c94e3eddf65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator: geometry ID and element point to the same ID.  <a href="#ac42f32bb1ad5dfd11d67c94e3eddf65c">More...</a><br/></td></tr>
@@ -451,10 +458,10 @@ template&lt;typename GEOIDITER &gt; </div>
 
 <p>Comparison operator: geometry ID and element point to different IDs. </p>
 
-<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l05993">5993</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l05994"></a><span class="lineno"> 5994</span>&#160;{</div>
-<div class="line"><a name="l05995"></a><span class="lineno"> 5995</span>&#160;  <span class="keywordflow">return</span> iter.id_iterator() != id_iter;</div>
-<div class="line"><a name="l05996"></a><span class="lineno"> 5996</span>&#160;} <span class="comment">// operator!=(iterator_t, id_iterator_t)</span></div>
+<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l05992">5992</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l05993"></a><span class="lineno"> 5993</span>&#160;{</div>
+<div class="line"><a name="l05994"></a><span class="lineno"> 5994</span>&#160;  <span class="keywordflow">return</span> iter.id_iterator() != id_iter;</div>
+<div class="line"><a name="l05995"></a><span class="lineno"> 5995</span>&#160;} <span class="comment">// operator!=(iterator_t, id_iterator_t)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -494,8 +501,41 @@ template&lt;typename GEOIDITER &gt; </div>
 
 <p>Comparison operator: geometry ID and element point to different IDs. </p>
 
-<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l00743">743</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;      { <span class="keywordflow">return</span> iter != id_iter; }</div>
+<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l00751">751</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      { <span class="keywordflow">return</span> iter != id_iter; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a940fea1b7c9bcb0079559701a829aba0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GEOIT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;std::is_base_of_v&lt;<a class="el" href="../../d6/d8f/classgeo_1_1details_1_1geometry__iterator__base.html">geometry_iterator_base</a>, GEOIT&gt;, std::ostream&amp;&gt; geo::details::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GEOIT const &amp;&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stream output for all geometry ID iterator types: prints the pointed ID. </p>
+
+<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l00721">721</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;      { <span class="keywordflow">return</span> out &lt;&lt; <span class="stringliteral">&quot;geometry_iterator{ &quot;</span> &lt;&lt; *it &lt;&lt; <span class="stringliteral">&quot; }&quot;</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -527,10 +567,10 @@ template&lt;typename GEOIDITER &gt; </div>
 
 <p>Comparison operator: geometry ID and element point to the same ID. </p>
 
-<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l05986">5986</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l05987"></a><span class="lineno"> 5987</span>&#160;{</div>
-<div class="line"><a name="l05988"></a><span class="lineno"> 5988</span>&#160;  <span class="keywordflow">return</span> iter.id_iterator() == id_iter;</div>
-<div class="line"><a name="l05989"></a><span class="lineno"> 5989</span>&#160;} <span class="comment">// operator==(iterator_t, id_iterator_t)</span></div>
+<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l05985">5985</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l05986"></a><span class="lineno"> 5986</span>&#160;{</div>
+<div class="line"><a name="l05987"></a><span class="lineno"> 5987</span>&#160;  <span class="keywordflow">return</span> iter.id_iterator() == id_iter;</div>
+<div class="line"><a name="l05988"></a><span class="lineno"> 5988</span>&#160;} <span class="comment">// operator==(iterator_t, id_iterator_t)</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -570,8 +610,8 @@ template&lt;typename GEOIDITER &gt; </div>
 
 <p>Comparison operator: geometry ID and element point to the same ID. </p>
 
-<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l00729">729</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;      { <span class="keywordflow">return</span> iter == id_iter; }</div>
+<p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l00737">737</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;      { <span class="keywordflow">return</span> iter == id_iter; }</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -885,7 +885,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=,</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                PandoraContentApi::CreateTemporaryListAndSetCurrent&lt;ClusterList&gt;(*pAlgorithm, pTemporaryList, temporaryListName));</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            PandoraContentApi::Cluster::Parameters hitParameters;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> hitParameters;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            hitParameters.m_caloHitList = daughterHits;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::Cluster::Create(*pAlgorithm, hitParameters, pFragmentCluster));</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::SaveList&lt;Cluster&gt;(*pAlgorithm, temporaryListName, currentListName));</div>
@@ -900,6 +900,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div>
 <div class="ttc" id="namespacenlohmann_1_1detail_html_a59fca69799f6b9e366710cb9043aa77d"><div class="ttname"><a href="../../dc/df0/namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d">nlohmann::detail::void</a></div><div class="ttdeci">j template void())</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/db8/json_8hpp_source.html#l03108">json.hpp:3108</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -309,7 +309,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            clusterList.push_back(pClusterW);</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="comment">// TODO Correct these placeholder parameters</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        PandoraContentApi::ParticleFlowObject::Parameters pfoParameters;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> pfoParameters;</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        pfoParameters.m_particleId = MU_MINUS; <span class="comment">// TRACK</span></div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        pfoParameters.m_charge = PdgTable::GetParticleCharge(pfoParameters.m_particleId.Get());</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        pfoParameters.m_mass = PdgTable::GetParticleMass(pfoParameters.m_particleId.Get());</div>
@@ -325,6 +325,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::SaveList&lt;Pfo&gt;(*<span class="keyword">this</span>, <a class="code" href="../../d7/dde/classlar__content_1_1VertexBasedPfoRecoveryAlgorithm.html#a730b972712d7ad311c139f38f8255c97">m_outputPfoListName</a>));</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1VertexBasedPfoRecoveryAlgorithm_html_a730b972712d7ad311c139f38f8255c97"><div class="ttname"><a href="../../d7/dde/classlar__content_1_1VertexBasedPfoRecoveryAlgorithm.html#a730b972712d7ad311c139f38f8255c97">lar_content::VertexBasedPfoRecoveryAlgorithm::m_outputPfoListName</a></div><div class="ttdeci">std::string m_outputPfoListName</div><div class="ttdoc">The name of the output pfo list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d20/VertexBasedPfoRecoveryAlgorithm_8h_source.html#l00202">VertexBasedPfoRecoveryAlgorithm.h:202</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

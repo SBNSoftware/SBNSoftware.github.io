@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Framework includes.  
+<p>LArSoft plugin for SBND CRT detector simulation parameters.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -281,13 +281,24 @@ Variables</h2></td></tr>
 <tr class="separator:a68e886c38d422188899ae9814e575f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Framework includes. </p>
-<p>Class: CRTDetSim Module Type: producer File: CRTDetSim_module.cc</p>
+<div class="textblock"><p>LArSoft plugin for SBND CRT detector simulation parameters. </p>
+<p>Framework includes.</p>
+<p>Makes <a class="el" href="../../d0/df9/classsbnd_1_1crt_1_1CRTData.html">sbnd::crt::CRTData</a> from <a class="el" href="../../d1/d41/classsbnd_1_1crt_1_1FEBData.html">sbnd::crt::FEBData</a>.</p>
+<p>Class for SBND CRT detector simulation parameters.</p>
+<dl class="section author"><dt>Author</dt><dd>Andy Mastbaum </dd>
+<dd>
+Marco Del TuttoClass: CRTDetSim Module Type: producer File: CRTDetSim_module.cc</dd></dl>
 <p>Based on LArIAT TOFSimDigits.cc (Author: Lucas Mendes Santos)</p>
 <p>Author: <a href="#" onclick="location.href='mai'+'lto:'+'mas'+'tb'+'aum'+'@u'+'chi'+'ca'+'go.'+'ed'+'u'; return false;">mastb<span style="display: none;">.nosp@m.</span>aum@<span style="display: none;">.nosp@m.</span>uchic<span style="display: none;">.nosp@m.</span>ago.<span style="display: none;">.nosp@m.</span>edu</a></p>
 <p>Class: <a class="el" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html">CRTSimHitProducer</a> Module Type: producer File: CRTSimHitProducer_module.cc</p>
 <p>Producer module for constructing CRTHits from simulated CRT data</p>
 <p>Author: Thomas Brooks E-mail address: <a href="#" onclick="location.href='mai'+'lto:'+'tbr'+'oo'+'ks@'+'fn'+'al.'+'go'+'v'; return false;">tbroo<span style="display: none;">.nosp@m.</span>ks@f<span style="display: none;">.nosp@m.</span>nal.g<span style="display: none;">.nosp@m.</span>ov</a></p>
+<p>This class contains all the parameters for the CRT detector simulation. Note that physics parameters do not have default values, and all parameters need to be initialized via fhicl.</p>
+<dl class="section author"><dt>Author</dt><dd>Andy Mastbaum </dd>
+<dd>
+Marco Del Tutto</dd></dl>
+<p>This class loops over <a class="el" href="../../d1/d41/classsbnd_1_1crt_1_1FEBData.html">sbnd::crt::FEBData</a> objects and only selects strips which have both SiPM ADC values above a certain (configurable) threshold. The two SiPMs in the selected strips are then saved in <a class="el" href="../../d0/df9/classsbnd_1_1crt_1_1CRTData.html">sbnd::crt::CRTData</a> objects.</p>
+<dl class="section author"><dt>Author</dt><dd>Marco Del Tutto</dd></dl>
 <p>Class: <a class="el" href="../../d1/dd5/classsbnd_1_1CRTT0Matching.html">CRTT0Matching</a> Module Type: producer File: CRTT0Matching_module.cc</p>
 <p>Author: Thomas Brooks E-mail address: <a href="#" onclick="location.href='mai'+'lto:'+'tbr'+'oo'+'ks@'+'fn'+'al.'+'go'+'v'; return false;">tbroo<span style="display: none;">.nosp@m.</span>ks@f<span style="display: none;">.nosp@m.</span>nal.g<span style="display: none;">.nosp@m.</span>ov</a></p>
 <p>Modified from <a class="el" href="../../d1/dd5/classsbnd_1_1CRTT0Matching.html">CRTT0Matching</a> by Thomas Warburton. </p>

@@ -118,6 +118,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7316465fdf22b7f2ca5a97dff8fde11c"><td class="memItemLeft" align="right" valign="top">art::InputTag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">fCrtModuleLabel</a></td></tr>
 <tr class="memdesc:a7316465fdf22b7f2ca5a97dff8fde11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of crt producer  <a href="#a7316465fdf22b7f2ca5a97dff8fde11c">More...</a><br/></td></tr>
 <tr class="separator:a7316465fdf22b7f2ca5a97dff8fde11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a471f3ce4a8c432d5e49cd41fb3524"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a17a471f3ce4a8c432d5e49cd41fb3524">fG4RefTime</a></td></tr>
+<tr class="separator:a17a471f3ce4a8c432d5e49cd41fb3524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e521713e9b912fdd2c66c81eddedbb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html">CRTHitRecoAlg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a></td></tr>
 <tr class="separator:a4e521713e9b912fdd2c66c81eddedbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -147,21 +149,24 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  : EDProducer(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>), <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;HitAlg&quot;</span>))</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// Initialize member data here, if know don&#39;t want to reconfigure on the fly</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    produces&lt; std::vector&lt;sbn::crt::CRTHit&gt; &gt;();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    produces&lt; art::Assns&lt;sbn::crt::CRTHit , sbnd::crt::CRTData&gt; &gt;();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a202a4261f78b79bc94cfcc7fb968e282">reconfigure</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  } <span class="comment">// CRTSimHitProducer()</span></div>
-<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a4e521713e9b912fdd2c66c81eddedbb4"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">sbnd::CRTSimHitProducer::hitAlg</a></div><div class="ttdeci">CRTHitRecoAlg hitAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00100">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:100</a></div></div>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00107">107</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  : EDProducer(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  , <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a17a471f3ce4a8c432d5e49cd41fb3524">fG4RefTime</a>(art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataForJob().G4ToElecTime(0)) <span class="comment">// us</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  , <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;HitAlg&quot;</span>), <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a17a471f3ce4a8c432d5e49cd41fb3524">fG4RefTime</a>)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// Initialize member data here, if know don&#39;t want to reconfigure on the fly</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    produces&lt; std::vector&lt;sbn::crt::CRTHit&gt; &gt;();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    produces&lt; art::Assns&lt;sbn::crt::CRTHit , sbnd::crt::CRTData&gt; &gt;();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a202a4261f78b79bc94cfcc7fb968e282">reconfigure</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  } <span class="comment">// CRTSimHitProducer()</span></div>
+<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a4e521713e9b912fdd2c66c81eddedbb4"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">sbnd::CRTSimHitProducer::hitAlg</a></div><div class="ttdeci">CRTHitRecoAlg hitAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00102">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:102</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a202a4261f78b79bc94cfcc7fb968e282"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a202a4261f78b79bc94cfcc7fb968e282">sbnd::CRTSimHitProducer::reconfigure</a></div><div class="ttdeci">void reconfigure(fhicl::ParameterSet const &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00119">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:119</a></div></div>
+<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a202a4261f78b79bc94cfcc7fb968e282"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a202a4261f78b79bc94cfcc7fb968e282">sbnd::CRTSimHitProducer::reconfigure</a></div><div class="ttdeci">void reconfigure(fhicl::ParameterSet const &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00123">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:123</a></div></div>
+<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a17a471f3ce4a8c432d5e49cd41fb3524"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a17a471f3ce4a8c432d5e49cd41fb3524">sbnd::CRTSimHitProducer::fG4RefTime</a></div><div class="ttdeci">double fG4RefTime</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00100">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -235,10 +240,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00127">127</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  } <span class="comment">// CRTSimHitProducer::beginJob()</span></div>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00131">131</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  } <span class="comment">// CRTSimHitProducer::beginJob()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,10 +268,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00178">178</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  } <span class="comment">// CRTSimHitProducer::endJob()</span></div>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00182">182</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  } <span class="comment">// CRTSimHitProducer::endJob()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,52 +345,52 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00133">133</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::unique_ptr&lt; std::vector&lt;sbn::crt::CRTHit&gt; &gt; CRTHitcol( <span class="keyword">new</span> std::vector&lt;sbn::crt::CRTHit&gt;);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    std::unique_ptr&lt; art::Assns&lt;sbn::crt::CRTHit, sbnd::crt::CRTData&gt; &gt; Hitassn( <span class="keyword">new</span> art::Assns&lt;sbn::crt::CRTHit, sbnd::crt::CRTData&gt;);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    art::PtrMaker&lt;sbn::crt::CRTHit&gt; makeHitPtr(event);</div>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00137">137</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">int</span> nHits = 0;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// Retrieve list of CRT hits</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    art::Handle&lt; std::vector&lt;sbnd::crt::CRTData&gt;&gt; crtListHandle;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    std::vector&lt;art::Ptr&lt;sbnd::crt::CRTData&gt; &gt; crtList;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (event.getByLabel(<a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">fCrtModuleLabel</a>, crtListHandle))</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      art::fill_ptr_vector(crtList, crtListHandle);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(event);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a> = art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(event, clockData);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// Fill a vector of pairs of time and width direction for each CRT plane</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// The y crossing point of z planes and z crossing point of y planes would be constant</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::map&lt;std::pair&lt;std::string, unsigned&gt;, std::vector&lt;CRTStrip&gt;&gt; taggerStrips = <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>.<a class="code" href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#abc11c85df438e63c52e62cf6571aa22f">CreateTaggerStrips</a>(clockData, <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a>, crtList);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;CRTSimHitProducer&quot;</span>)</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      &lt;&lt;<span class="stringliteral">&quot;Number of SiPM hits = &quot;</span>&lt;&lt;crtList.size();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    std::vector&lt;std::pair&lt;sbn::crt::CRTHit, std::vector&lt;int&gt;&gt;&gt; crtHitPairs = <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>.<a class="code" href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#a58b3c0b5b2e35a652045d7dacd25d87d">CreateCRTHits</a>(taggerStrips);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; crtHitPair : crtHitPairs){</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      CRTHitcol-&gt;push_back(crtHitPair.first);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      art::Ptr&lt;sbn::crt::CRTHit&gt; hitPtr = makeHitPtr(CRTHitcol-&gt;size()-1);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      nHits++;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; data_i : crtHitPair.second){</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        Hitassn-&gt;addSingle(hitPtr, crtList[data_i]);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">event</span>.put(std::move(CRTHitcol));</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keyword">event</span>.put(std::move(Hitassn));</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;CRTSimHitProducer&quot;</span>)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      &lt;&lt;<span class="stringliteral">&quot;Number of CRT hits produced = &quot;</span>&lt;&lt;nHits;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  } <span class="comment">// CRTSimHitProducer::produce()</span></div>
-<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a4e521713e9b912fdd2c66c81eddedbb4"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">sbnd::CRTSimHitProducer::hitAlg</a></div><div class="ttdeci">CRTHitRecoAlg hitAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00100">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:100</a></div></div>
-<div class="ttc" id="classsbnd_1_1CRTHitRecoAlg_html_abc11c85df438e63c52e62cf6571aa22f"><div class="ttname"><a href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#abc11c85df438e63c52e62cf6571aa22f">sbnd::CRTHitRecoAlg::CreateTaggerStrips</a></div><div class="ttdeci">std::map&lt; std::pair&lt; std::string, unsigned &gt;, std::vector&lt; CRTStrip &gt; &gt; CreateTaggerStrips(detinfo::DetectorClocksData const &amp;clockData, detinfo::DetectorPropertiesData const &amp;detProp, std::vector&lt; art::Ptr&lt; sbnd::crt::CRTData &gt;&gt; data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d9b/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html#l00034">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.cc:34</a></div></div>
-<div class="ttc" id="classsbnd_1_1CRTHitRecoAlg_html_a58b3c0b5b2e35a652045d7dacd25d87d"><div class="ttname"><a href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#a58b3c0b5b2e35a652045d7dacd25d87d">sbnd::CRTHitRecoAlg::CreateCRTHits</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; sbn::crt::CRTHit, std::vector&lt; int &gt; &gt; &gt; CreateCRTHits(std::map&lt; std::pair&lt; std::string, unsigned &gt;, std::vector&lt; CRTStrip &gt;&gt; taggerStrips)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d9b/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html#l00122">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.cc:122</a></div></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    std::unique_ptr&lt; std::vector&lt;sbn::crt::CRTHit&gt; &gt; CRTHitcol( <span class="keyword">new</span> std::vector&lt;sbn::crt::CRTHit&gt;);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    std::unique_ptr&lt; art::Assns&lt;sbn::crt::CRTHit, sbnd::crt::CRTData&gt; &gt; Hitassn( <span class="keyword">new</span> art::Assns&lt;sbn::crt::CRTHit, sbnd::crt::CRTData&gt;);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    art::PtrMaker&lt;sbn::crt::CRTHit&gt; makeHitPtr(event);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> nHits = 0;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// Retrieve list of CRT hits</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    art::Handle&lt; std::vector&lt;sbnd::crt::CRTData&gt;&gt; crtListHandle;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    std::vector&lt;art::Ptr&lt;sbnd::crt::CRTData&gt; &gt; crtList;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span> (event.getByLabel(<a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">fCrtModuleLabel</a>, crtListHandle))</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      art::fill_ptr_vector(crtList, crtListHandle);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(event);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a> = art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(event, clockData);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// Fill a vector of pairs of time and width direction for each CRT plane</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// The y crossing point of z planes and z crossing point of y planes would be constant</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::map&lt;std::pair&lt;std::string, unsigned&gt;, std::vector&lt;CRTStrip&gt;&gt; taggerStrips = <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>.<a class="code" href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#abc11c85df438e63c52e62cf6571aa22f">CreateTaggerStrips</a>(clockData, <a class="code" href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detProp</a>, crtList);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;CRTSimHitProducer&quot;</span>)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      &lt;&lt;<span class="stringliteral">&quot;Number of SiPM hits = &quot;</span>&lt;&lt;crtList.size();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::vector&lt;std::pair&lt;sbn::crt::CRTHit, std::vector&lt;int&gt;&gt;&gt; crtHitPairs = <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">hitAlg</a>.<a class="code" href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#a58b3c0b5b2e35a652045d7dacd25d87d">CreateCRTHits</a>(taggerStrips);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; crtHitPair : crtHitPairs){</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      CRTHitcol-&gt;push_back(crtHitPair.first);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      art::Ptr&lt;sbn::crt::CRTHit&gt; hitPtr = makeHitPtr(CRTHitcol-&gt;size()-1);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      nHits++;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; data_i : crtHitPair.second){</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        Hitassn-&gt;addSingle(hitPtr, crtList[data_i]);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">event</span>.put(std::move(CRTHitcol));</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">event</span>.put(std::move(Hitassn));</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    mf::LogInfo(<span class="stringliteral">&quot;CRTSimHitProducer&quot;</span>)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      &lt;&lt;<span class="stringliteral">&quot;Number of CRT hits produced = &quot;</span>&lt;&lt;nHits;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  } <span class="comment">// CRTSimHitProducer::produce()</span></div>
+<div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a4e521713e9b912fdd2c66c81eddedbb4"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a4e521713e9b912fdd2c66c81eddedbb4">sbnd::CRTSimHitProducer::hitAlg</a></div><div class="ttdeci">CRTHitRecoAlg hitAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00102">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:102</a></div></div>
+<div class="ttc" id="classsbnd_1_1CRTHitRecoAlg_html_abc11c85df438e63c52e62cf6571aa22f"><div class="ttname"><a href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#abc11c85df438e63c52e62cf6571aa22f">sbnd::CRTHitRecoAlg::CreateTaggerStrips</a></div><div class="ttdeci">std::map&lt; std::pair&lt; std::string, unsigned &gt;, std::vector&lt; CRTStrip &gt; &gt; CreateTaggerStrips(detinfo::DetectorClocksData const &amp;clockData, detinfo::DetectorPropertiesData const &amp;detProp, std::vector&lt; art::Ptr&lt; sbnd::crt::CRTData &gt;&gt; data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d9b/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html#l00040">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.cc:40</a></div></div>
+<div class="ttc" id="classsbnd_1_1CRTHitRecoAlg_html_a58b3c0b5b2e35a652045d7dacd25d87d"><div class="ttname"><a href="../../df/d5d/classsbnd_1_1CRTHitRecoAlg.html#a58b3c0b5b2e35a652045d7dacd25d87d">sbnd::CRTHitRecoAlg::CreateCRTHits</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; sbn::crt::CRTHit, std::vector&lt; int &gt; &gt; &gt; CreateCRTHits(std::map&lt; std::pair&lt; std::string, unsigned &gt;, std::vector&lt; CRTStrip &gt;&gt; taggerStrips)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d9b/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html#l00128">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.cc:128</a></div></div>
 <div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a7316465fdf22b7f2ca5a97dff8fde11c"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">sbnd::CRTSimHitProducer::fCrtModuleLabel</a></div><div class="ttdeci">art::InputTag fCrtModuleLabel</div><div class="ttdoc">name of crt producer </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00098">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:98</a></div></div>
 <div class="ttc" id="namespacedetsim_html_a560adbb3abf95a23d45a53ed25d8c0c7"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#a560adbb3abf95a23d45a53ed25d8c0c7">detsim::detProp</a></div><div class="ttdeci">auto const detProp</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df8/SimWire__module_8cc_source.html#l00157">SimWire_module.cc:157</a></div></div>
 </div><!-- fragment -->
@@ -405,12 +410,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00119">119</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">fCrtModuleLabel</a>       = (<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;art::InputTag&gt; (<span class="stringliteral">&quot;CrtModuleLabel&quot;</span>)); </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  } <span class="comment">// CRTSimHitProducer::reconfigure()</span></div>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00123">123</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">fCrtModuleLabel</a>       = (<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;art::InputTag&gt; (<span class="stringliteral">&quot;CrtModuleLabel&quot;</span>)); </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  } <span class="comment">// CRTSimHitProducer::reconfigure()</span></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classsbnd_1_1CRTSimHitProducer_html_a7316465fdf22b7f2ca5a97dff8fde11c"><div class="ttname"><a href="../../d9/d12/classsbnd_1_1CRTSimHitProducer.html#a7316465fdf22b7f2ca5a97dff8fde11c">sbnd::CRTSimHitProducer::fCrtModuleLabel</a></div><div class="ttdeci">art::InputTag fCrtModuleLabel</div><div class="ttdoc">name of crt producer </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00098">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc:98</a></div></div>
 </div><!-- fragment -->
@@ -441,6 +446,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a17a471f3ce4a8c432d5e49cd41fb3524"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double sbnd::CRTSimHitProducer::fG4RefTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4e521713e9b912fdd2c66c81eddedbb4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -459,7 +486,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d5/d29/sbndcode_2sbndcode_2CRT_2CRTSimHitProducer__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTSimHitProducer_module.cc</a>.</p>
 
 </div>
 </div>

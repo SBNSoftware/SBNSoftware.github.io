@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_04d670c4adcb884258431ddc1ce2763c.html">icaruscode</a></li><li class="navelem"><a class="el" href="../../dir_94314c0f385d81f04de3b3bdb34c1673.html">icaruscode</a></li><li class="navelem"><a class="el" href="../../dir_08f4d6f1659022e42922153073ac0496.html">CRT</a></li><li class="navelem"><a class="el" href="../../dir_668b64186049fb6450210d8909d6d725.html">CRTUtils</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_e0f1515b72b556ea1a60650362b3fd43.html">sbndcode</a></li><li class="navelem"><a class="el" href="../../dir_c704eecb2dcddc67a44d0dda177b30ed.html">sbndcode</a></li><li class="navelem"><a class="el" href="../../dir_dcdfce40224fbff8e01e82ff9db35d03.html">CRT</a></li><li class="navelem"><a class="el" href="../../dir_426b8529d4b0f0c718011aa5e966489d.html">CRTSimulation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,19 +78,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">CRTDetSimAlg.h File Reference</div>  </div>
+<div class="title">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;art/Framework/Principal/Handle.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
-<code>#include &quot;nurandom/RandomUtils/NuRandomService.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d0/d5b/DetectorClocksData_8h_source.html">lardataalg/DetectorInfo/DetectorClocksData.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d6/d60/ElecClock_8h_source.html">lardataalg/DetectorInfo/ElecClock.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d9/d48/AuxDetSimChannel_8h_source.html">lardataobj/Simulation/AuxDetSimChannel.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d4/d8a/AuxDetGeo_8h_source.html">larcorealg/Geometry/AuxDetGeo.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d7/dc4/AuxDetGeometry_8h_source.html">larcore/Geometry/AuxDetGeometry.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../da/d16/NumericUtils_8h_source.html">larcorealg/CoreUtils/NumericUtils.h</a>&quot;</code><br/>
+<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Random/RandomEngine.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Random/RandFlat.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Random/RandGauss.h&quot;</code><br/>
@@ -101,28 +99,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &quot;TGeoManager.h&quot;</code><br/>
 <code>#include &quot;TGeoNode.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/d9d/ICARUS_2CRT_2CRTData_8hh_source.html">sbnobj/ICARUS/CRT/CRTData.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/d21/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTCommonUtils_8h_source.html">icaruscode/CRT/CRTUtils/CRTCommonUtils.h</a>&quot;</code><br/>
+<code>#include &quot;Math/Interpolator.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/d16/FEBData_8hh_source.html">sbnobj/SBND/CRT/FEBData.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dc/d38/SBND_2CRT_2CRTData_8hh_source.html">sbnobj/SBND/CRT/CRTData.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/dcf/CRTDetSimParams_8h_source.html">CRTDetSimParams.h</a>&quot;</code><br/>
 </div>
-<p><a href="../../d0/d4a/CRTDetSimAlg_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc5/structChanData.html">ChanData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/structsbnd_1_1crt_1_1SiPMData.html">sbnd::crt::SiPMData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dab/structTagger.html">Tagger</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d29/structsbnd_1_1crt_1_1StripData.html">sbnd::crt::StripData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d74/classicarus_1_1crt_1_1CRTDetSimAlg.html">icarus::crt::CRTDetSimAlg</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html">sbnd::crt::Tagger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d18/classsbnd_1_1crt_1_1CRTDetSimAlg.html">sbnd::crt::CRTDetSimAlg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:da/d4d/namespaceicarus"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/namespaceicarus.html">icarus</a></td></tr>
-<tr class="memdesc:da/d4d/namespaceicarus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cluster finding and building. <br/></td></tr>
+<tr class="memitem:df/d92/namespacesbnd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d92/namespacesbnd.html">sbnd</a></td></tr>
+<tr class="memdesc:df/d92/namespacesbnd"><td class="mdescLeft">&#160;</td><td class="mdescRight">LArSoft plugin for SBND CRT detector simulation parameters. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/d33/namespaceicarus_1_1crt"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html">icarus::crt</a></td></tr>
+<tr class="memitem:d3/d4f/namespacesbnd_1_1crt"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4f/namespacesbnd_1_1crt.html">sbnd::crt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -573,17 +573,17 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">// 2. the time of the previously triggered event, t_previous_event (NOTE: Events are non-sequential!)</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// 3. the number of beam spills since the previously triggered event, number_of_gates_since_previous_event</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> &amp; raw_data = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getProduct&lt; std::vector&lt;artdaq::Fragment&gt; &gt;({ <a class="code" href="../../d7/dc5/classsbn_1_1BNBRetriever.html#a3148cb4dc3fd0fafc5e2168d1cade104">raw_data_label</a>, <span class="stringliteral">&quot;ICARUSTriggerUDP&quot;</span> });</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> &amp; raw_data = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getProduct&lt; std::vector&lt;artdaq::Fragment&gt; &gt;({ <a class="code" href="../../d7/dc5/classsbn_1_1BNBRetriever.html#a3148cb4dc3fd0fafc5e2168d1cade104">raw_data_label</a>, <span class="stringliteral">&quot;ICARUSTriggerV2&quot;</span> });</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  TriggerInfo_t triggerInfo;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> raw_datum : raw_data){</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;   </div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    uint64_t artdaq_ts = raw_datum.timestamp();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    icarus::ICARUSTriggerUDPFragment frag(raw_datum);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    icarus::ICARUSTriggerV2Fragment frag(raw_datum);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    std::string data = frag.GetDataString();</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">char</span> *buffer = <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(data.c_str());</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    icarus::ICARUSTriggerInfo datastream_info = icarus::parse_ICARUSTriggerString(buffer);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    icarus::ICARUSTriggerInfo datastream_info = icarus::parse_ICARUSTriggerV2String(buffer);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    triggerInfo.gate_type = datastream_info.gate_type;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    triggerInfo.number_of_gates_since_previous_event = frag.getDeltaGatesBNB();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  </div>

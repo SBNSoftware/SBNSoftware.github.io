@@ -89,23 +89,26 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    NpeScaleShift:        -1085.0  # Model parameter <span class="keywordflow">for</span> correcting distance down <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#ade4428e663a46d1b7fc450d4dcbcd3f6">strip</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    UseReadoutWindow:     <span class="keyword">false</span>  # Only reconstruct hits within central readout window</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    TimeCoincidenceLimit: 0.08  # Minimum time between two overlapping <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a> strips [us]</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ClockSpeedCRT:        @local::sbnd_crtsim.ClockSpeedCRT</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;standard_crtsimhitproducer:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    module_type:          <span class="stringliteral">&quot;sbndcode/CRT/CRTSimHitProducer&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    CrtModuleLabel:       <span class="stringliteral">&quot;crt&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    HitAlg:               @local::standard_crtsimhitalg</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ClockSpeedCRT:        @local::sbnd_crtsim.DetSimParams.ClockSpeedCRT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d6/d18/cosmic__common__sbnd_8fcl.html#aaa49898585c021e2ede4c4d8f9d75efa">TimeOffset</a>:           @local::sbnd_crtsim.DetSimParams.GlobalT0Offset</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    UseG4RefTimeOffset:   @local::sbnd_crtsim.DetSimParams.UseG4RefTimeOffset</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;standard_crtsimhitproducer:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    module_type:          <span class="stringliteral">&quot;sbndcode/CRT/CRTSimHitProducer&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    CrtModuleLabel:       <span class="stringliteral">&quot;crt&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    HitAlg:               @local::standard_crtsimhitalg</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;END_PROLOG</div>
 <div class="ttc" id="runPID_8fcl_html_aabb4fa2ad6efed7d03a95c66834213ae"><div class="ttname"><a href="../../d5/dbe/runPID_8fcl.html#aabb4fa2ad6efed7d03a95c66834213ae">photon</a></div><div class="ttdeci">process_name can override from command line with o or output photon</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbe/runPID_8fcl_source.html#l00028">runPID.fcl:28</a></div></div>
 <div class="ttc" id="CORSIKAGen_8fcl_html_a424b27db311314d6e22e0e78fd28a35a"><div class="ttname"><a href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a></div><div class="ttdeci">BEGIN_PROLOG TPC Trig offset(g4 rise time) ProjectToHeight</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d0d/CORSIKAGen_8fcl_source.html#l00007">CORSIKAGen.fcl:7</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="namespacegen__crt__frags_html_ade4428e663a46d1b7fc450d4dcbcd3f6"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#ade4428e663a46d1b7fc450d4dcbcd3f6">gen_crt_frags.strip</a></div><div class="ttdeci">def strip</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l00292">gen_crt_frags.py:292</a></div></div>
 <div class="ttc" id="crtsimmodules__sbnd_8fcl_html"><div class="ttname"><a href="../../d3/d38/crtsimmodules__sbnd_8fcl.html">crtsimmodules_sbnd.fcl</a></div></div>
+<div class="ttc" id="cosmic__common__sbnd_8fcl_html_aaa49898585c021e2ede4c4d8f9d75efa"><div class="ttname"><a href="../../d6/d18/cosmic__common__sbnd_8fcl.html#aaa49898585c021e2ede4c4d8f9d75efa">TimeOffset</a></div><div class="ttdeci">BEGIN_PROLOG cm ms TimeOffset</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d18/cosmic__common__sbnd_8fcl_source.html#l00006">cosmic_common_sbnd.fcl:6</a></div></div>
 <div class="ttc" id="run__genericCRT_8fcl_html_a90f57f2367b563070286d12581daaf00"><div class="ttname"><a href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a></div><div class="ttdeci">process_name crt</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d07/run__genericCRT_8fcl_source.html#l00082">run_genericCRT.fcl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
