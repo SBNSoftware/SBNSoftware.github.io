@@ -109,71 +109,74 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d9f/detsimmodules__sbnd_8fcl.html">detsimmodules_sbnd.fcl</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d38/crtsimmodules__sbnd_8fcl.html">crtsimmodules_sbnd.fcl</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dfe/opdetdigitizer__sbnd_8fcl.html">opdetdigitizer_sbnd.fcl</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d5f/rootoutput__sbnd_8fcl.html">rootoutput_sbnd.fcl</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d8/da0/crtslimmer__sbnd_8fcl.html">crtslimmer_sbnd.fcl</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dfe/opdetdigitizer__sbnd_8fcl.html">opdetdigitizer_sbnd.fcl</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d5f/rootoutput__sbnd_8fcl.html">rootoutput_sbnd.fcl</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#af2add7ab297ee1d26dfa1669347fcda6">process_name</a>: DetSim</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  TFileService: { <a class="code" href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a>: @local::sbnd_tfileoutput.fileName }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  @table::sbnd_detsim_services</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  FileCatalogMetadata: @local::sbnd_file_catalog_mc</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  AuxDetExptGeoHelperInterface: { service_provider: <span class="stringliteral">&quot;sbndcode/CRT/CRTGeometryHelper&quot;</span> }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="../../d2/d42/prodsingle__sbnd__crt_8fcl.html#aa1d1f32a5aa3a48ec61e52067a6c87dd">AuxDetGeometry</a>: { @table::sbnd_geo_source }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#af2add7ab297ee1d26dfa1669347fcda6">process_name</a>: DetSim</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  TFileService: { <a class="code" href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a>: @local::sbnd_tfileoutput.fileName }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  @table::sbnd_detsim_services</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  FileCatalogMetadata: @local::sbnd_file_catalog_mc</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  AuxDetExptGeoHelperInterface: { service_provider: <span class="stringliteral">&quot;sbndcode/CRT/CRTGeometryHelper&quot;</span> }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d2/d42/prodsingle__sbnd__crt_8fcl.html#aa1d1f32a5aa3a48ec61e52067a6c87dd">AuxDetGeometry</a>: { @table::sbnd_geo_source }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  module_type:     RootInput</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  module_type:     RootInput</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"># Define and configure some modules to do work on each event.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># First modules are defined; they are scheduled later.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Modules are grouped by type.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../df/d80/Deprecated_2multitpc__detsim__icarus_8fcl.html#a4e0ea5450ce2ebf02cc0e858844734a4">producers</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../de/dd8/cafmaker__defs_8fcl.html#a51e0d9c0a0193b96a30fbee8ed106966">rns</a>:       { module_type: <span class="stringliteral">&quot;RandomNumberSaver&quot;</span> }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>:       @<a class="code" href="../../d7/d9f/detsimmodules__sbnd_8fcl.html#a30c8561c963b8e0cdb82a5c618e932c1">local::sbnd_simwire</a></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>:       @local::sbnd_crtsim</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../de/d56/sbnmar18__detsim__icarus_8fcl.html#a910bc382211ce5cb3f512992a4506c87">opdaq</a>:     @<a class="code" href="../../d6/dfe/opdetdigitizer__sbnd_8fcl.html#a1e5a01b6ac76b083c6ac721c0b675674">local::sbnd_opdetdigitizer</a></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  #define the producer and filter modules for this path, order matters,</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d1/dcf/standard__detsim__sbnd_8fcl.html#a567cf0b956af116534123a9559eebbb1">   69</a></span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../db/d8e/g4__dirt__filter_8fcl.html#aa9008b860fdd101ff58c8275f4b6becc">simulate</a>:  [ <a class="code" href="../../de/dd8/cafmaker__defs_8fcl.html#a51e0d9c0a0193b96a30fbee8ed106966">rns</a>,  <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>, <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>, <a class="code" href="../../de/d56/sbnmar18__detsim__icarus_8fcl.html#a910bc382211ce5cb3f512992a4506c87">opdaq</a>]</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d1/dcf/standard__detsim__sbnd_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">   72</a></span>&#160;<span class="preprocessor">  #define the output stream, there could be more than one if using filters</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a>:   [ out1 ]</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">  #ie analyzers and output streams.  these all run simultaneously</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../db/d5b/triggersim__singlewindow__icarus__data__multiconfig_8fcl.html#a5433c7eb7204082c3cc8fdac7f8c5044">end_paths</a>: [<a class="code" href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a>]</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"># block to define where the output goes.  if you defined a filter in the physics</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># block and put it in the trigger_paths then you need to put a SelectEvents: {SelectEvents: [XXX]}</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># entry in the output stream you want those to go to, where XXX is the label of the filter module(s)</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dd/d08/triggersim__singlewindow__icarus_8fcl.html#a0cfd9e1c19570259ad279d6a291a27f8">outputs</a>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  out1:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    @<a class="code" href="../../d2/d5f/rootoutput__sbnd_8fcl.html#a2fdb0e02ab01c076cb1ad04b8b73dee9">table::sbnd_rootoutput</a> # inherit shared settings</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;simulated&quot;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    compressionLevel: 1 # TODO <a class="code" href="../../d6/d69/clusteralgorithms_8fcl.html#aa35e3cfae25e3012db4303ce9c233262">better</a> to use no <a class="code" href="../../d2/d1a/namespacedetsim.html#a9e95297335cc9b0658662fb5659e716a">compression</a> here <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> Huffman encoding</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"># Define and configure some modules to do work on each event.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># First modules are defined; they are scheduled later.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Modules are grouped by type.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../df/d80/Deprecated_2multitpc__detsim__icarus_8fcl.html#a4e0ea5450ce2ebf02cc0e858844734a4">producers</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../de/dd8/cafmaker__defs_8fcl.html#a51e0d9c0a0193b96a30fbee8ed106966">rns</a>:       { module_type: <span class="stringliteral">&quot;RandomNumberSaver&quot;</span> }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>:       @<a class="code" href="../../d7/d9f/detsimmodules__sbnd_8fcl.html#a30c8561c963b8e0cdb82a5c618e932c1">local::sbnd_simwire</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d9/d44/crtsim__sbnd_8fcl.html#a2ae89daa1484feff83f5924f129bf28b">crtsim</a>:    @local::sbnd_crtsim</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>:       @local::sbnd_crtslimmer</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../de/d56/sbnmar18__detsim__icarus_8fcl.html#a910bc382211ce5cb3f512992a4506c87">opdaq</a>:     @<a class="code" href="../../d6/dfe/opdetdigitizer__sbnd_8fcl.html#a1e5a01b6ac76b083c6ac721c0b675674">local::sbnd_opdetdigitizer</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">  #define the producer and filter modules for this path, order matters,</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d1/dcf/standard__detsim__sbnd_8fcl.html#a567cf0b956af116534123a9559eebbb1">   71</a></span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../db/d8e/g4__dirt__filter_8fcl.html#aa9008b860fdd101ff58c8275f4b6becc">simulate</a>:  [ <a class="code" href="../../de/dd8/cafmaker__defs_8fcl.html#a51e0d9c0a0193b96a30fbee8ed106966">rns</a>, <a class="code" href="../../d0/dab/Deprecated_2standard__detsim__icarus_8fcl.html#a92314ca679c2f212b049f5e598c52278">daq</a>, <a class="code" href="../../d9/d44/crtsim__sbnd_8fcl.html#a2ae89daa1484feff83f5924f129bf28b">crtsim</a>, <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>, <a class="code" href="../../de/d56/sbnmar18__detsim__icarus_8fcl.html#a910bc382211ce5cb3f512992a4506c87">opdaq</a>]</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="../../d1/dcf/standard__detsim__sbnd_8fcl.html#a09c6b60bb7451f9136e25140ffdff6bd">   74</a></span>&#160;<span class="preprocessor">  #define the output stream, there could be more than one if using filters</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a>:   [ out1 ]</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">  #ie analyzers and output streams.  these all run simultaneously</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../db/d5b/triggersim__singlewindow__icarus__data__multiconfig_8fcl.html#a5433c7eb7204082c3cc8fdac7f8c5044">end_paths</a>: [<a class="code" href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a>]</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"># block to define where the output goes.  if you defined a filter in the physics</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># block and put it in the trigger_paths then you need to put a SelectEvents: {SelectEvents: [XXX]}</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># entry in the output stream you want those to go to, where XXX is the label of the filter module(s)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dd/d08/triggersim__singlewindow__icarus_8fcl.html#a0cfd9e1c19570259ad279d6a291a27f8">outputs</a>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  out1:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    @<a class="code" href="../../d2/d5f/rootoutput__sbnd_8fcl.html#a2fdb0e02ab01c076cb1ad04b8b73dee9">table::sbnd_rootoutput</a> # inherit shared settings</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;simulated&quot;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    compressionLevel: 1 # TODO <a class="code" href="../../d6/d69/clusteralgorithms_8fcl.html#aa35e3cfae25e3012db4303ce9c233262">better</a> to use no <a class="code" href="../../d2/d1a/namespacedetsim.html#a9e95297335cc9b0658662fb5659e716a">compression</a> here <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> Huffman encoding</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="ttc" id="namespacedetsim_html_a9e95297335cc9b0658662fb5659e716a"><div class="ttname"><a href="../../d2/d1a/namespacedetsim.html#a9e95297335cc9b0658662fb5659e716a">detsim::compression</a></div><div class="ttdeci">TString compression(pset.get&lt; std::string &gt;(&quot;CompressionType&quot;))</div></div>
 <div class="ttc" id="cafmaker__defs_8fcl_html_a51e0d9c0a0193b96a30fbee8ed106966"><div class="ttname"><a href="../../de/dd8/cafmaker__defs_8fcl.html#a51e0d9c0a0193b96a30fbee8ed106966">rns</a></div><div class="ttdeci">BEGIN_PROLOG pandoraTrackRangeCryoW pandoraTrackRangeCryoW rns</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dd8/cafmaker__defs_8fcl_source.html#l00184">cafmaker_defs.fcl:184</a></div></div>
 <div class="ttc" id="run__icarus__flashfinder_8fcl_html_acb6c20654c148fe838d7915c7ebedcfb"><div class="ttname"><a href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a></div><div class="ttdeci">process_name drop raw::OpDetWaveforms_DataApr2016RecoStage1_saturation_ * physics</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/run__icarus__flashfinder_8fcl_source.html#l00052">run_icarus_flashfinder.fcl:52</a></div></div>
+<div class="ttc" id="crtsim__sbnd_8fcl_html_a2ae89daa1484feff83f5924f129bf28b"><div class="ttname"><a href="../../d9/d44/crtsim__sbnd_8fcl.html#a2ae89daa1484feff83f5924f129bf28b">crtsim</a></div><div class="ttdeci">process_name crtsim</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d44/crtsim__sbnd_8fcl_source.html#l00053">crtsim_sbnd.fcl:53</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a105d60ff52767c8ff2f42edb14ca79a4"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a></div><div class="ttdeci">do source</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00032">updateVersionList.sh:32</a></div></div>
 <div class="ttc" id="messages__sbnd_8fcl_html"><div class="ttname"><a href="../../d1/dc4/messages__sbnd_8fcl.html">messages_sbnd.fcl</a></div></div>
 <div class="ttc" id="detsimmodules__sbnd_8fcl_html"><div class="ttname"><a href="../../d7/d9f/detsimmodules__sbnd_8fcl.html">detsimmodules_sbnd.fcl</a></div></div>
@@ -194,6 +197,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="sbnmar18__detsim__icarus_8fcl_html_a910bc382211ce5cb3f512992a4506c87"><div class="ttname"><a href="../../de/d56/sbnmar18__detsim__icarus_8fcl.html#a910bc382211ce5cb3f512992a4506c87">opdaq</a></div><div class="ttdeci">process_name opdaq</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d56/sbnmar18__detsim__icarus_8fcl_source.html#l00045">sbnmar18_detsim_icarus.fcl:45</a></div></div>
 <div class="ttc" id="prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_html_a2146d742a76b29baa7a12ef30d6af3a4"><div class="ttname"><a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a></div><div class="ttdeci">services TFileService fileName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_source.html#l00018">prodcorsika_genie_protononly_icarus_numi_nue_volDetEnclosure_tpc.fcl:18</a></div></div>
 <div class="ttc" id="multigen_8fcl_html_af2918a3010ca3d5d8363909c79687437"><div class="ttname"><a href="../../d6/d55/multigen_8fcl.html#af2918a3010ca3d5d8363909c79687437">stream1</a></div><div class="ttdeci">standard_singlep gaussian distribution ie ie ie gaussian gaussian gaussian larg4Main stream1</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d55/multigen_8fcl_source.html#l00018">multigen.fcl:18</a></div></div>
+<div class="ttc" id="crtslimmer__sbnd_8fcl_html"><div class="ttname"><a href="../../d8/da0/crtslimmer__sbnd_8fcl.html">crtslimmer_sbnd.fcl</a></div></div>
 <div class="ttc" id="run__genericCRT_8fcl_html_a90f57f2367b563070286d12581daaf00"><div class="ttname"><a href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a></div><div class="ttdeci">process_name crt</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d07/run__genericCRT_8fcl_source.html#l00082">run_genericCRT.fcl:82</a></div></div>
 <div class="ttc" id="Deprecated_2multitpc__detsim__icarus_8fcl_html_a4e0ea5450ce2ebf02cc0e858844734a4"><div class="ttname"><a href="../../df/d80/Deprecated_2multitpc__detsim__icarus_8fcl.html#a4e0ea5450ce2ebf02cc0e858844734a4">producers</a></div><div class="ttdeci">physics producers</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d80/Deprecated_2multitpc__detsim__icarus_8fcl_source.html#l00015">Deprecated/multitpc_detsim_icarus.fcl:15</a></div></div>
 <div class="ttc" id="triggersim__singlewindow__icarus_8fcl_html_a0cfd9e1c19570259ad279d6a291a27f8"><div class="ttname"><a href="../../dd/d08/triggersim__singlewindow__icarus_8fcl.html#a0cfd9e1c19570259ad279d6a291a27f8">outputs</a></div><div class="ttdeci">BEGIN_PROLOG sequence::SlidingWindowTriggerPatternsWindowPair END_PROLOG trigslidewindowOR6m output outputs</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d08/triggersim__singlewindow__icarus_8fcl_source.html#l00200">triggersim_singlewindow_icarus.fcl:200</a></div></div>

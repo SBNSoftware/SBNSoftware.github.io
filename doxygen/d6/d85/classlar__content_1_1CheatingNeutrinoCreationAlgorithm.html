@@ -325,7 +325,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    pNeutrinoPfo = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    PandoraContentApi::ParticleFlowObject::Parameters pfoParameters;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> pfoParameters;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    pfoParameters.m_particleId = pMCNeutrino-&gt;GetParticleId();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    pfoParameters.m_charge = PdgTable::GetParticleCharge(pfoParameters.m_particleId.Get());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    pfoParameters.m_mass = PdgTable::GetParticleMass(pfoParameters.m_particleId.Get());</div>
@@ -344,6 +344,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::ReplaceCurrentList&lt;Pfo&gt;(*<span class="keyword">this</span>, <a class="code" href="../../d6/d85/classlar__content_1_1CheatingNeutrinoCreationAlgorithm.html#a6ceaaa40f31a569e6108f01bd7298df6">m_neutrinoPfoListName</a>));</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1CheatingNeutrinoCreationAlgorithm_html_a6ceaaa40f31a569e6108f01bd7298df6"><div class="ttname"><a href="../../d6/d85/classlar__content_1_1CheatingNeutrinoCreationAlgorithm.html#a6ceaaa40f31a569e6108f01bd7298df6">lar_content::CheatingNeutrinoCreationAlgorithm::m_neutrinoPfoListName</a></div><div class="ttdeci">std::string m_neutrinoPfoListName</div><div class="ttdoc">The name of the neutrino pfo list. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc3/CheatingNeutrinoCreationAlgorithm_8h_source.html#l00081">CheatingNeutrinoCreationAlgorithm.h:81</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -134,7 +134,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5f7150ee7e5f51b2811376ceb5151dd7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#a5f7150ee7e5f51b2811376ceb5151dd7">CheckMatchedClusters3D</a> (const pandora::Cluster *const pCluster1, const pandora::Cluster *const pCluster2, const pandora::Cluster *const pCluster3) const =0</td></tr>
 <tr class="memdesc:a5f7150ee7e5f51b2811376ceb5151dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that three clusters have a consistent 3D position.  <a href="#a5f7150ee7e5f51b2811376ceb5151dd7">More...</a><br/></td></tr>
 <tr class="separator:a5f7150ee7e5f51b2811376ceb5151dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed5cc54740ec89d3ca288290fe6a3f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#a7ed5cc54740ec89d3ca288290fe6a3f4">SetPfoParameters</a> (const <a class="el" href="../../da/d15/classlar__content_1_1CosmicRayBaseMatchingAlgorithm_1_1Particle.html">CosmicRayBaseMatchingAlgorithm::Particle</a> &amp;protoParticle, PandoraContentApi::ParticleFlowObject::Parameters &amp;pfoParameters) const =0</td></tr>
+<tr class="memitem:a7ed5cc54740ec89d3ca288290fe6a3f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#a7ed5cc54740ec89d3ca288290fe6a3f4">SetPfoParameters</a> (const <a class="el" href="../../da/d15/classlar__content_1_1CosmicRayBaseMatchingAlgorithm_1_1Particle.html">CosmicRayBaseMatchingAlgorithm::Particle</a> &amp;protoParticle, <a class="el" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> &amp;pfoParameters) const =0</td></tr>
 <tr class="memdesc:a7ed5cc54740ec89d3ca288290fe6a3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate Pfo properties from proto particle.  <a href="#a7ed5cc54740ec89d3ca288290fe6a3f4">More...</a><br/></td></tr>
 <tr class="separator:a7ed5cc54740ec89d3ca288290fe6a3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -301,7 +301,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> (!(isAvailableU &amp;&amp; isAvailableV &amp;&amp; isAvailableW))</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        PandoraContentApi::ParticleFlowObject::Parameters pfoParameters;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> pfoParameters;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        this-&gt;<a class="code" href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#a7ed5cc54740ec89d3ca288290fe6a3f4">SetPfoParameters</a>(particle, pfoParameters);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (pfoParameters.m_clusterList.empty())</div>
@@ -316,6 +316,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
 <div class="ttc" id="classlar__content_1_1CosmicRayBaseMatchingAlgorithm_html_a7ed5cc54740ec89d3ca288290fe6a3f4"><div class="ttname"><a href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#a7ed5cc54740ec89d3ca288290fe6a3f4">lar_content::CosmicRayBaseMatchingAlgorithm::SetPfoParameters</a></div><div class="ttdeci">virtual void SetPfoParameters(const CosmicRayBaseMatchingAlgorithm::Particle &amp;protoParticle, PandoraContentApi::ParticleFlowObject::Parameters &amp;pfoParameters) const =0</div><div class="ttdoc">Calculate Pfo properties from proto particle. </div></div>
 <div class="ttc" id="classlar__content_1_1CosmicRayBaseMatchingAlgorithm_html_af9b4d7ab949742219b95811fef030586"><div class="ttname"><a href="../../d7/d47/classlar__content_1_1CosmicRayBaseMatchingAlgorithm.html#af9b4d7ab949742219b95811fef030586">lar_content::CosmicRayBaseMatchingAlgorithm::m_outputPfoListName</a></div><div class="ttdeci">std::string m_outputPfoListName</div><div class="ttdoc">The name of the output PFO list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d7e/CosmicRayBaseMatchingAlgorithm_8h_source.html#l00159">CosmicRayBaseMatchingAlgorithm.h:159</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1041,7 +1042,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">PandoraContentApi::ParticleFlowObject::Parameters &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> &amp;&#160;</td>
           <td class="paramname"><em>pfoParameters</em>&#160;</td>
         </tr>
         <tr>

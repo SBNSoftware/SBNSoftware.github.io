@@ -240,7 +240,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">const</span> pandora::Pandora* pPandora(settings.m_pPrimaryPandora);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> LArDetectorGap&amp; <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a> : listOfGaps) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      PandoraApi::Geometry::LineGap::Parameters parameters;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraApi::Geometry::LineGap::Parameters</a> parameters;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        parameters = detType-&gt;CreateLineGapParametersFromDetectorGaps(<a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gap</a>);</div>
@@ -266,6 +266,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
 <div class="ttc" id="namespacegen__crt__frags_html_a4c51c3458849c6d83454cd6ea3f7faff"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#a4c51c3458849c6d83454cd6ea3f7faff">gen_crt_frags.gap</a></div><div class="ttdeci">float gap</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l00055">gen_crt_frags.py:55</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="namespacelar__pandora_1_1detector__functions_html_a8f989229c15e22af2c82091ea5190723"><div class="ttname"><a href="../../d7/d43/namespacelar__pandora_1_1detector__functions.html#a8f989229c15e22af2c82091ea5190723">lar_pandora::detector_functions::GetDetectorType</a></div><div class="ttdeci">LArPandoraDetectorType * GetDetectorType()</div><div class="ttdoc">Factory class that returns the correct detector type interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dea/GetDetectorType_8cxx_source.html#l00024">GetDetectorType.cxx:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -537,7 +538,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> pandora::Pandora* pPandora(settings.m_pPrimaryPandora);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> LArDriftVolume&amp; driftVolume : driftVolumeList) {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      PandoraApi::Geometry::LArTPC::Parameters parameters;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraApi::Geometry::LArTPC::Parameters</a> parameters;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        parameters.m_larTPCVolumeId = driftVolume.GetVolumeID();</div>
@@ -576,6 +577,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      }</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }</div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1101,7 +1103,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            firstBadWire = -1;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            lastBadWire = -1;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            PandoraApi::Geometry::LineGap::Parameters parameters;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraApi::Geometry::LineGap::Parameters</a> parameters;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;              <span class="keywordtype">float</span> xFirst(-std::numeric_limits&lt;float&gt;::max());</div>
@@ -1150,6 +1152,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="ttc" id="sbnd__flashalgo_8fcl_html_a648c7afac4085c93cd1ba4a75dfe8818"><div class="ttname"><a href="../../d4/d22/sbnd__flashalgo_8fcl.html#a648c7afac4085c93cd1ba4a75dfe8818">TPC</a></div><div class="ttdeci">BEGIN_PROLOG TPC</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d22/sbnd__flashalgo_8fcl_source.html#l00014">sbnd_flashalgo.fcl:14</a></div></div>
 <div class="ttc" id="classgeo_1_1PlaneGeo_html"><div class="ttname"><a href="../../d4/d67/classgeo_1_1PlaneGeo.html">geo::PlaneGeo</a></div><div class="ttdoc">Geometry information for a single wire plane.The plane is represented in the geometry by a solid whic...</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d80/PlaneGeo_8h_source.html#l00082">PlaneGeo.h:82</a></div></div>
 <div class="ttc" id="classlariov_1_1ChannelStatusProvider_html"><div class="ttname"><a href="../../d8/d7e/classlariov_1_1ChannelStatusProvider.html">lariov::ChannelStatusProvider</a></div><div class="ttdoc">Class providing information about the quality of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/ded/ChannelStatusProvider_8h_source.html#l00049">ChannelStatusProvider.h:49</a></div></div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="namespacelar__pandora_1_1detector__functions_html_a8f989229c15e22af2c82091ea5190723"><div class="ttname"><a href="../../d7/d43/namespacelar__pandora_1_1detector__functions.html#a8f989229c15e22af2c82091ea5190723">lar_pandora::detector_functions::GetDetectorType</a></div><div class="ttdeci">LArPandoraDetectorType * GetDetectorType()</div><div class="ttdoc">Factory class that returns the correct detector type interface. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dea/GetDetectorType_8cxx_source.html#l00024">GetDetectorType.cxx:24</a></div></div>
 <div class="ttc" id="namespaceraw_html_abfe7badfcad7fe0e9474829fbd1408b2"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a></div><div class="ttdeci">unsigned int ChannelID_t</div><div class="ttdoc">Type representing the ID of a readout channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/RawTypes_8h_source.html#l00028">RawTypes.h:28</a></div></div>
 </div><!-- fragment -->

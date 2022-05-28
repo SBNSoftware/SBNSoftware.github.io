@@ -597,7 +597,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::CreateTemporaryListAndSetCurrent(*<span class="keyword">this</span>, pPfoList, pfoListName));</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="comment">// TODO Correct these placeholder parameters</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    PandoraContentApi::ParticleFlowObject::Parameters pfoParameters;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::ParticleFlowObject::Parameters</a> pfoParameters;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    pfoParameters.m_particleId = MU_MINUS;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    pfoParameters.m_charge = PdgTable::GetParticleCharge(pfoParameters.m_particleId.Get());</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    pfoParameters.m_mass = PdgTable::GetParticleMass(pfoParameters.m_particleId.Get());</div>
@@ -614,6 +614,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        PANDORA_THROW_RESULT_IF(STATUS_CODE_SUCCESS, !=, PandoraContentApi::ReplaceCurrentList&lt;Pfo&gt;(*<span class="keyword">this</span>, <a class="code" href="../../dd/d34/classlar__content_1_1ParticleRecoveryAlgorithm.html#a0ceacccb1943a18455d792507eb88b3b">m_outputPfoListName</a>));</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="classlar__content_1_1ParticleRecoveryAlgorithm_html_a0ceacccb1943a18455d792507eb88b3b"><div class="ttname"><a href="../../dd/d34/classlar__content_1_1ParticleRecoveryAlgorithm.html#a0ceacccb1943a18455d792507eb88b3b">lar_content::ParticleRecoveryAlgorithm::m_outputPfoListName</a></div><div class="ttdeci">std::string m_outputPfoListName</div><div class="ttdoc">The output pfo list name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dae/ParticleRecoveryAlgorithm_8h_source.html#l00178">ParticleRecoveryAlgorithm.h:178</a></div></div>
 </div><!-- fragment -->
 </div>

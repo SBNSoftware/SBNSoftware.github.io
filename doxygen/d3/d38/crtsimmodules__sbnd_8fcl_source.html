@@ -80,69 +80,91 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../d3/d38/crtsimmodules__sbnd_8fcl.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;BEGIN_PROLOG</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;sbnd_crtsim: {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  module_type: <span class="stringliteral">&quot;sbndcode/CRT/CRTDetSim&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  G4ModuleLabel: <span class="stringliteral">&quot;genericcrt&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="comment">// Global timing offset [ns]</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="comment">// For Corsika cosmics, use 2.76e6 (see corsika_sbnd.fcl)</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  GlobalT0Offset: 0.0</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="comment">// Shape parameters for mean time delay vs. Npe</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  TDelayNorm: 4125.74</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  TDelayShift: -300.31</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  TDelaySigma: 90.392</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  TDelayOffset: -1.525</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// Shape parameters for time delay RMS vs. Npe  </span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  TDelayRMSGausNorm: 2.09138</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  TDelayRMSGausShift: 7.23993</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  TDelayRMSGausSigma: 170.027</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  TDelayRMSExpNorm: 1.6544</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  TDelayRMSExpShift: 75.6183</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  TDelayRMSExpScale: 79.3543</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<a class="code" href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#aeb8896b62be028341c88047878bd2196">standard_sbnd_crtsimparams</a>: {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">  # Global timing offset [ns]</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # For Corsika cosmics, use 2.76e6 (see corsika_sbnd.fcl)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span>  GlobalT0Offset: 0.0</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  UseG4RefTimeOffset: <span class="keyword">true</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">  # Shape parameters for mean time delay vs. Npe</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span>  TDelayNorm: 4125.74</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  TDelayShift: -300.31</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  TDelaySigma: 90.392</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  TDelayOffset: -1.525</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  # Shape parameters <span class="keywordflow">for</span> time delay RMS vs. Npe</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  TDelayRMSGausNorm: 2.09138</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  TDelayRMSGausShift: 7.23993</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  TDelayRMSGausSigma: 170.027</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  TDelayRMSExpNorm: 1.6544</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  TDelayRMSExpShift: 75.6183</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  TDelayRMSExpScale: 79.3543</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  TriggerDelay: 10 # ns</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="comment">// Clock speed of the CRT system [MHz] (1 ns = 1 tick @ 1000 MHz)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// (was 16 MHz for files before v08_25_00)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ClockSpeedCRT: 1000.</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">  # Clock speed of the CRT system [MHz] (1 ns = 1 tick @ 1000 MHz)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # (was 16 MHz for files before v08_25_00)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span>  ClockSpeedCRT: 1000.</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// Propagation delay [ns/cm]</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  # Propagation delay [ns/cm]</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  PropDelay: 0.0061</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  fPropDelayError: 0.007</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  PropDelayError: 0.007</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Interpolator time resolution [ns]</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  # Interpolator time resolution [ns]</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  TResInterpolator: 1.268</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Model parameters for Npe vs. distance along strip</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  # Model parameters <span class="keywordflow">for</span> Npe vs. distance along <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#ade4428e663a46d1b7fc450d4dcbcd3f6">strip</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  NpeScaleNorm: 8.023e7 #5.261e7</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  NpeScaleShift: -1085.0</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Mean deposited charge for mips [GeV]</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  # Mean deposited charge <span class="keywordflow">for</span> mips [<a class="code" href="../../da/dc7/TriggerEfficiencyPlots__module_8cc.html#a9b9a9849202763819111e555ade76102">GeV</a>]</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  UseEdep: <span class="keyword">true</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Q0: 1.75e-3</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// ADC model: Pedestal offset [ADC], slope [ADC/photon], RMS [ADC]</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  QPed: 0.0 #63.6</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  # ADC model: Pedestal offset [ADC], slope [ADC/photon], RMS [ADC]</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span>  QPed: 0.0 #63.6</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  QSlope: 40.0 #131.9</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QRMS: 80.0 #15.0</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  QThreshold: 60.0 #100</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Coincidence window for two fibers on a strip [ticks = ns]</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  StripCoincidenceWindow: 100.0 #30.0</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">  # Coincidence window for two fibers on a strip [ticks = ns]</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>  StripCoincidenceWindow: 100.0 #30.0</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Coincidence for hits in a tagger [ticks = ns]</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  # Coincidence <span class="keywordflow">for</span> hits <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../df/d62/structtagger.html">tagger</a> [<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">ticks</a> = ns]</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  TaggerPlaneCoincidenceWindow: 150.0 #5</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Effective absorption length (for transverse response) [cm]</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  AbsLenEff: 8.5</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  # Effective absorption length (for transverse response) [cm]</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>  AbsLenEff: 8.5</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// Minimum time between energy deposits that SiPMs can resolve [ns]</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  # Minimum time between energy deposits that SiPMs can resolve [ns]</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  SipmTimeResponse: 2.0</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  AdcSaturation: 4095</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  DeadTime: 22000</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#a67468f1c10430c0734332ce88b8fded4">   66</a></span>&#160;  WaveformX: [0., 11.83, 18.59, 28.72,  41.40,  51.53,  62.51, 75.]</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#a67468f1c10430c0734332ce88b8fded4">WaveformY</a>: [0., 3.412, 12.08, 34.138, 65.646, 84.554, 101.1, 108.3]</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  DoWaveformEmulation: <span class="keyword">true</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  DebugTrigger: <span class="keyword">false</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;sbnd_crtsim: {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  module_type: <span class="stringliteral">&quot;sbndcode/CRT/CRTDetSim&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  G4ModuleLabel: <span class="stringliteral">&quot;genericcrt&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  DetSimParams: @<a class="code" href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#aeb8896b62be028341c88047878bd2196">local::standard_sbnd_crtsimparams</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;END_PROLOG</div>
+<div class="ttc" id="TriggerEfficiencyPlots__module_8cc_html_a9b9a9849202763819111e555ade76102"><div class="ttname"><a href="../../da/dc7/TriggerEfficiencyPlots__module_8cc.html#a9b9a9849202763819111e555ade76102">GeV</a></div><div class="ttdeci">util::quantities::gigaelectronvolt GeV</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dc7/TriggerEfficiencyPlots__module_8cc_source.html#l00090">TriggerEfficiencyPlots_module.cc:90</a></div></div>
+<div class="ttc" id="structtagger_html"><div class="ttname"><a href="../../df/d62/structtagger.html">tagger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d37/CRTTrueHitRecoAlg_8h_source.html#l00040">CRTTrueHitRecoAlg.h:40</a></div></div>
+<div class="ttc" id="namespaceutil_1_1quantities_html_a10eae1fb7996a75ca0c4c7c78e05874a"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">util::quantities::ticks</a></div><div class="ttdeci">tick ticks</div><div class="ttdoc">Alias for common language habits. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00078">electronics.h:78</a></div></div>
+<div class="ttc" id="crtsimmodules__sbnd_8fcl_html_aeb8896b62be028341c88047878bd2196"><div class="ttname"><a href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#aeb8896b62be028341c88047878bd2196">standard_sbnd_crtsimparams</a></div><div class="ttdeci">BEGIN_PROLOG standard_sbnd_crtsimparams</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d38/crtsimmodules__sbnd_8fcl_source.html#l00066">crtsimmodules_sbnd.fcl:66</a></div></div>
+<div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
+<div class="ttc" id="namespacegen__crt__frags_html_ade4428e663a46d1b7fc450d4dcbcd3f6"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#ade4428e663a46d1b7fc450d4dcbcd3f6">gen_crt_frags.strip</a></div><div class="ttdeci">def strip</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l00292">gen_crt_frags.py:292</a></div></div>
+<div class="ttc" id="quiet__Math__Functor__test_8sh_html_adfac98fbd1e85554d2cf0454cdcbc717"><div class="ttname"><a href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a></div><div class="ttdeci">if &amp;&amp;[-z&quot;$BASH_VERSION&quot;] then echo Attempting to switch to bash bash shellSwitch exit fi &amp;&amp;[&quot;$1&quot;= 'shellSwitch'] shift declare a IncludeDirectives for Dir in</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df7/quiet__Math__Functor__test_8sh_source.html#l00023">quiet_Math_Functor_test.sh:23</a></div></div>
+<div class="ttc" id="crtsimmodules__sbnd_8fcl_html_a67468f1c10430c0734332ce88b8fded4"><div class="ttname"><a href="../../d3/d38/crtsimmodules__sbnd_8fcl.html#a67468f1c10430c0734332ce88b8fded4">WaveformY</a></div><div class="ttdeci">BEGIN_PROLOG WaveformY</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d38/crtsimmodules__sbnd_8fcl_source.html#l00066">crtsimmodules_sbnd.fcl:66</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

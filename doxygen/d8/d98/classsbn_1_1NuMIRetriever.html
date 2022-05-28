@@ -393,7 +393,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">int</span> gate_type = 0;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  art::Handle&lt; std::vector&lt;artdaq::Fragment&gt; &gt; raw_data_ptr;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d8/d98/classsbn_1_1NuMIRetriever.html#a9f1ad036a305edbb57d34bfcc324564b">raw_data_label_</a>, <span class="stringliteral">&quot;ICARUSTriggerUDP&quot;</span>, raw_data_ptr);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d8/d98/classsbn_1_1NuMIRetriever.html#a9f1ad036a305edbb57d34bfcc324564b">raw_data_label_</a>, <span class="stringliteral">&quot;ICARUSTriggerV2&quot;</span>, raw_data_ptr);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> &amp; raw_data = (*raw_data_ptr);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">double</span> t_current_event  = 0;</div>
@@ -403,10 +403,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> raw_datum : raw_data){</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    uint64_t artdaq_ts = raw_datum.timestamp();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    icarus::ICARUSTriggerUDPFragment frag(raw_datum);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    icarus::ICARUSTriggerV2Fragment frag(raw_datum);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::string data = frag.GetDataString();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">char</span> *buffer = <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(data.c_str());</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    icarus::ICARUSTriggerInfo datastream_info = icarus::parse_ICARUSTriggerString(buffer);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    icarus::ICARUSTriggerInfo datastream_info = icarus::parse_ICARUSTriggerV2String(buffer);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    gate_type = datastream_info.gate_type;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    number_of_gates_since_previous_event = frag.getDeltaGatesNuMI();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>

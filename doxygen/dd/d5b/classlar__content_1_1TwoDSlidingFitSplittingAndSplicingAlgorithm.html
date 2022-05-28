@@ -910,11 +910,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        PandoraContentApi::InitializeFragmentation(*<span class="keyword">this</span>, clusterList, clusterListToDeleteName, clusterListToSaveName));</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">// Entire replacement cluster goes into new principal cluster</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    PandoraContentApi::Cluster::Parameters principalParameters;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> principalParameters;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    pReplacementCluster-&gt;GetOrderedCaloHitList().FillCaloHitList(principalParameters.m_caloHitList);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// Distribute hits in branch cluster between new principal and residual clusters</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    PandoraContentApi::Cluster::Parameters residualParameters;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">PandoraContentApi::Cluster::Parameters</a> residualParameters;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    this-&gt;<a class="code" href="../../dd/d5b/classlar__content_1_1TwoDSlidingFitSplittingAndSplicingAlgorithm.html#ac93f902e3292ae5c6d554d9bb183be3d">SplitBranchCluster</a>(</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        pBranchCluster, branchSplitPosition, branchSplitDirection, principalParameters.m_caloHitList, residualParameters.m_caloHitList);</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
@@ -925,6 +925,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;}</div>
+<div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
 <div class="ttc" id="classlar__content_1_1TwoDSlidingFitSplittingAndSplicingAlgorithm_html_ac93f902e3292ae5c6d554d9bb183be3d"><div class="ttname"><a href="../../dd/d5b/classlar__content_1_1TwoDSlidingFitSplittingAndSplicingAlgorithm.html#ac93f902e3292ae5c6d554d9bb183be3d">lar_content::TwoDSlidingFitSplittingAndSplicingAlgorithm::SplitBranchCluster</a></div><div class="ttdeci">void SplitBranchCluster(const pandora::Cluster *const pCluster, const pandora::CartesianVector &amp;splitPosition, const pandora::CartesianVector &amp;splitDirection, pandora::CaloHitList &amp;principalCaloHitList, pandora::CaloHitList &amp;branchCaloHitList) const </div><div class="ttdoc">Separate cluster into the branch hits to be split from the primary cluster. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d3f/TwoDSlidingFitSplittingAndSplicingAlgorithm_8cc_source.html#l00322">TwoDSlidingFitSplittingAndSplicingAlgorithm.cc:322</a></div></div>
 </div><!-- fragment -->
 </div>

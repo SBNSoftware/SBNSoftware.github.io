@@ -76,72 +76,82 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d8/d5a/structsbnd_1_1crt_1_1Tagger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sbnd::crt::Tagger Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">CRTDetSimAlg.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac63f2f45a1649cde67d4822d6ea7f6a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#ac63f2f45a1649cde67d4822d6ea7f6a7">size</a> ()</td></tr>
+<tr class="memdesc:ac63f2f45a1649cde67d4822d6ea7f6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of strips with energy deposits for this tagger.  <a href="#ac63f2f45a1649cde67d4822d6ea7f6a7">More...</a><br/></td></tr>
+<tr class="separator:ac63f2f45a1649cde67d4822d6ea7f6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab898afc78dd68b6f571bbd58b5c00ba4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak"/>
-&lt; unsigned, uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#ab898afc78dd68b6f571bbd58b5c00ba4">planesHit</a></td></tr>
-<tr class="separator:ab898afc78dd68b6f571bbd58b5c00ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61becad9581347d42d8a67ca7296c18d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d0/df9/classsbnd_1_1crt_1_1CRTData.html">sbnd::crt::CRTData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#a61becad9581347d42d8a67ca7296c18d">data</a></td></tr>
-<tr class="separator:a61becad9581347d42d8a67ca7296c18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25d2215e3adadbe8e1de4f050daa387e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector<br class="typebreak"/>
-&lt; <a class="el" href="../../d0/d26/classsim_1_1AuxDetIDE.html">sim::AuxDetIDE</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#a25d2215e3adadbe8e1de4f050daa387e">ides</a></td></tr>
-<tr class="separator:a25d2215e3adadbe8e1de4f050daa387e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3884eb18ca8c18aa8e5263a384acec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d3/d29/structsbnd_1_1crt_1_1StripData.html">StripData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#a5f3884eb18ca8c18aa8e5263a384acec">data</a></td></tr>
+<tr class="memdesc:a5f3884eb18ca8c18aa8e5263a384acec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of strips that have energy deposits.  <a href="#a5f3884eb18ca8c18aa8e5263a384acec">More...</a><br/></td></tr>
+<tr class="separator:a5f3884eb18ca8c18aa8e5263a384acec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html#l00132">132</a> of file <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTDetSim_module.cc</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a61becad9581347d42d8a67ca7296c18d"></a>
+<div class="textblock"><p>A struct to temporarily store information on a CRT <a class="el" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html">Tagger</a>. </p>
+
+<p>Definition at line <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html#l00111">111</a> of file <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac63f2f45a1649cde67d4822d6ea7f6a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sbnd::crt::Tagger::size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of strips with energy deposits for this tagger. </p>
+
+<p>Definition at line <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html#l00115">115</a> of file <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#a5f3884eb18ca8c18aa8e5263a384acec">data</a>.size();}</div>
+<div class="ttc" id="structsbnd_1_1crt_1_1Tagger_html_a5f3884eb18ca8c18aa8e5263a384acec"><div class="ttname"><a href="../../d9/d13/structsbnd_1_1crt_1_1Tagger.html#a5f3884eb18ca8c18aa8e5263a384acec">sbnd::crt::Tagger::data</a></div><div class="ttdeci">std::vector&lt; StripData &gt; data</div><div class="ttdoc">A vector of strips that have energy deposits. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html#l00112">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h:112</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5f3884eb18ca8c18aa8e5263a384acec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../d0/df9/classsbnd_1_1crt_1_1CRTData.html">sbnd::crt::CRTData</a>&gt; sbnd::crt::Tagger::data</td>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d3/d29/structsbnd_1_1crt_1_1StripData.html">StripData</a>&gt; sbnd::crt::Tagger::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html#l00134">134</a> of file <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTDetSim_module.cc</a>.</p>
+<p>A vector of strips that have energy deposits. </p>
 
-</div>
-</div>
-<a class="anchor" id="a25d2215e3adadbe8e1de4f050daa387e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="../../d0/d26/classsim_1_1AuxDetIDE.html">sim::AuxDetIDE</a>&gt; &gt; sbnd::crt::Tagger::ides</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html#l00135">135</a> of file <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTDetSim_module.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab898afc78dd68b6f571bbd58b5c00ba4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;unsigned, uint32_t&gt; &gt; sbnd::crt::Tagger::planesHit</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html#l00133">133</a> of file <a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTDetSim_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html#l00112">112</a> of file <a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d7/d67/sbndcode_2sbndcode_2CRT_2CRTDetSim__module_8cc_source.html">sbndcode/sbndcode/CRT/CRTDetSim_module.cc</a></li>
+<li><a class="el" href="../../d1/d30/sbndcode_2sbndcode_2CRT_2CRTSimulation_2CRTDetSimAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTSimulation/CRTDetSimAlg.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
