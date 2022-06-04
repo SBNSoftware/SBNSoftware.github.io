@@ -100,11 +100,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;art/Utilities/make_tool.h&quot;</code><br/>
 <code>#include &quot;canvas/Utilities/Exception.h&quot;</code><br/>
 <code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
+<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
 <code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Random/RandPoissonQ.h&quot;</code><br/>
 <code>#include &quot;CLHEP/Units/SystemOfUnits.h&quot;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
-<code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;utility&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
@@ -124,10 +124,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a750afb10ca7e5cffd233a3a9c59be7fa"><td class="memItemLeft" align="right" valign="top">createEngine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7c/namespacephot.html#a750afb10ca7e5cffd233a3a9c59be7fa">phot::fScintTimeEngine</a> (art::ServiceHandle&lt; rndm::NuRandomService &gt;() -&gt;createEngine(*<a class="el" href="../../db/d64/TestGeneratedEventTimestamp__module_8cc.html#af5e6c4a8fe01152a65ec01923e1c8158">this</a>,&quot;HepJamesRandom&quot;,&quot;scinttime&quot;, pset,&quot;SeedScintTime&quot;))</td></tr>
-<tr class="separator:a750afb10ca7e5cffd233a3a9c59be7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7348070169b9e9c9d3227baddbe15912"><td class="memItemLeft" align="right" valign="top">createEngine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7c/namespacephot.html#a7348070169b9e9c9d3227baddbe15912">phot::fIncludePropTime</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">pset.get</a>&lt; bool &gt;(&quot;IncludePropTime&quot;, false))</td></tr>
-<tr class="separator:a7348070169b9e9c9d3227baddbe15912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf9f9a127f749700f79fb39e0cfe5c8"><td class="memItemLeft" align="right" valign="top">createEngine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7c/namespacephot.html#a4bf9f9a127f749700f79fb39e0cfe5c8">phot::fRandPoissPhot</a> (std::make_unique&lt; CLHEP::RandPoissonQ &gt;(fPhotonEngine))</td></tr>
+<tr class="separator:a4bf9f9a127f749700f79fb39e0cfe5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

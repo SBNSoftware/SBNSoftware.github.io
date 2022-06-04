@@ -94,19 +94,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>phot</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../dd/d92/classphot_1_1ScintTime.html">ScintTime</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ad44796670c7a81e6dc1e8f562777fd63">~ScintTime</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html">   17</a></span>&#160;  <span class="keyword">class </span><a class="code" href="../../dd/d92/classphot_1_1ScintTime.html">ScintTime</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ad44796670c7a81e6dc1e8f562777fd63">~ScintTime</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">GenScintTime</a>(<span class="keywordtype">bool</span> is_fast, CLHEP::HepRandomEngine&amp; engine)      = 0;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">   23</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">GetScintTime</a>()<span class="keyword"> const        </span>{<span class="keywordflow">return</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a>;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="comment">// FIXME: This should be private, with a protected setter.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="comment">//        2022-04-10 CHG</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">   28</a></span>&#160;      <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> { 0.0 };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">GenScintTime</a>(<span class="keywordtype">bool</span> is_fast, CLHEP::HepRandomEngine&amp; engine)      = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">   23</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#a2001bf1c8bd320e42952fee34c278fa1">GetScintTime</a>()<span class="keyword"> const        </span>{<span class="keywordflow">return</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a>;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// FIXME: This should be private, with a protected setter.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//        2022-04-10 CHG</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">   28</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> { 0.0 };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>

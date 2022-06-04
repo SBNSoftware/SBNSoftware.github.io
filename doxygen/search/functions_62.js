@@ -108,7 +108,7 @@ var searchData=
   ['bestplanechi2pid',['BestPlaneChi2PID',['../d7/d63/namespaceana.html#a145cf0893ede25731ded41ca1f0ce4bf',1,'ana']]],
   ['bestscore',['BestScore',['../d2/dae/classsbn_1_1MVAPID.html#aa36c0a2573844d8c3ede90dfd3b3d70b',1,'sbn::MVAPID']]],
   ['beta',['Beta',['../d7/d77/classcaf_1_1SRLorentzVector.html#a090a775f996539b2b3c9d27e34551352',1,'caf::SRLorentzVector']]],
-  ['bi_5fexp',['bi_exp',['../d8/da8/classlarg4_1_1OpFastScintillation.html#a1ea57f26d674500fbafa01f690344f88',1,'larg4::OpFastScintillation::bi_exp()'],['../d1/dcf/classphot_1_1ScintTimeLAr.html#a9f8eb8af079c8eac0bd60ddb08090882',1,'phot::ScintTimeLAr::bi_exp()']]],
+  ['bi_5fexp',['bi_exp',['../d8/da8/classlarg4_1_1OpFastScintillation.html#a1ea57f26d674500fbafa01f690344f88',1,'larg4::OpFastScintillation::bi_exp()'],['../d1/dcf/classphot_1_1ScintTimeLAr.html#a19eebe0db021f7fbdb17877696120a69',1,'phot::ScintTimeLAr::bi_exp()']]],
   ['bidirectional_5fiterator_5ftests',['bidirectional_iterator_tests',['../d6/dd6/RangeForWrapper__test_8cc.html#a51379344dce07fe790f8dcefd6b33cee',1,'RangeForWrapper_test.cc']]],
   ['bin',['bin',['../d5/dd0/classutil_1_1Binner.html#a7591979141fcf3d3ffe69012ed495509',1,'util::Binner::bin()'],['../d5/d62/namespaceicarus_1_1ns_1_1util.html#a512aa20fb28b8c00f3d290ba176b40e1',1,'icarus::ns::util::bin(T value)'],['../d5/d62/namespaceicarus_1_1ns_1_1util.html#a64fdae264f83fd6c6fa57c5e7bd29939',1,'icarus::ns::util::bin(T value)']]],
   ['bin2d',['Bin2D',['../d5/d12/classems_1_1Bin2D.html#a7a18bc4fef7f754899db255d322abd39',1,'ems::Bin2D']]],

@@ -589,7 +589,7 @@ var searchData=
   ['channellist',['channelList',['../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad',1,'sbnd::trigger::pmtArtdaqFragmentProducer::channelList()'],['../dc/dc4/classsbnd_1_1trigger_1_1pmtSoftwareTriggerProducer.html#aafbb5aa0705dd6917af1998b9075c65a',1,'sbnd::trigger::pmtSoftwareTriggerProducer::channelList()']]],
   ['channellist_5ft',['ChannelList_t',['../d1/d10/classicarus_1_1trigger_1_1ReadoutTriggerGate.html#ae28cba86a4b82ce9edaaf101060f6c94',1,'icarus::trigger::ReadoutTriggerGate']]],
   ['channelmap',['ChannelMap',['../d7/d63/classgeo_1_1GeometryCore.html#a31df2fee5bd608323d79957123e2f34c',1,'geo::GeometryCore']]],
-  ['channelmap_5ft',['ChannelMap_t',['../df/dfc/classdetsim_1_1SimDriftElectrons.html#a1a54d6ad289e9958e81af5ea733dd1d4',1,'detsim::SimDriftElectrons::ChannelMap_t()'],['../db/d19/classlarg4_1_1LArVoxelReadout.html#acafbc91c93e8f5ca9250acf814044566',1,'larg4::LArVoxelReadout::ChannelMap_t()']]],
+  ['channelmap_5ft',['ChannelMap_t',['../df/dfc/classdetsim_1_1SimDriftElectrons.html#a58cb5a2562b885ca49f2ed94fd280af1',1,'detsim::SimDriftElectrons::ChannelMap_t()'],['../db/d19/classlarg4_1_1LArVoxelReadout.html#acafbc91c93e8f5ca9250acf814044566',1,'larg4::LArVoxelReadout::ChannelMap_t()']]],
   ['channelmapalg',['ChannelMapAlg',['../d0/dff/classgeo_1_1ChannelMapAlg.html',1,'geo']]],
   ['channelmapalg_2ecxx',['ChannelMapAlg.cxx',['../dd/d44/ChannelMapAlg_8cxx.html',1,'']]],
   ['channelmapalg_2eh',['ChannelMapAlg.h',['../d1/d80/ChannelMapAlg_8h.html',1,'']]],

@@ -110,10 +110,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:adb4e84bd05fa4bb0026c939c0f6dd4a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adb4e84bd05fa4bb0026c939c0f6dd4a5">single_exp</a> (double t, double tau2)</td></tr>
-<tr class="separator:adb4e84bd05fa4bb0026c939c0f6dd4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8eb8af079c8eac0bd60ddb08090882"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a9f8eb8af079c8eac0bd60ddb08090882">bi_exp</a> (double t, double tau1, double tau2)</td></tr>
-<tr class="separator:a9f8eb8af079c8eac0bd60ddb08090882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803d42e35e77e87018ee0394577861cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a803d42e35e77e87018ee0394577861cb">single_exp</a> (double t, double tau2) const </td></tr>
+<tr class="separator:a803d42e35e77e87018ee0394577861cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19eebe0db021f7fbdb17877696120a69"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a19eebe0db021f7fbdb17877696120a69">bi_exp</a> (double t, double tau1, double tau2) const </td></tr>
+<tr class="separator:a19eebe0db021f7fbdb17877696120a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -166,17 +166,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    , <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">SDTime</a>{pset.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;SlowDecayTime&quot;</span>,  0.0)}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    , <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">FRTime</a>{pset.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;FastRisingTime&quot;</span>, 0.0)}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    , <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">FDTime</a>{pset.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;FastDecayTime&quot;</span>,  0.0)}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#add03caab4a295329d3e7c44e09419fcf">LogLevel</a> &gt;= 1 ) </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ScintTimeLAr Tool configure:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fast rising time: &quot;</span>   &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">FRTime</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;, Fast decay time: &quot;</span>  &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">FDTime</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;, Slow rising time: &quot;</span> &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a03ef4f2486ff20d707999ee3defdf45b">SRTime</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot;, Slow decay time: &quot;</span>  &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">SDTime</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                      &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#add03caab4a295329d3e7c44e09419fcf">LogLevel</a> &gt;= 1 ) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;ScintTimeLAr Tool configure:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fast rising time: &quot;</span>   &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">FRTime</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;, Fast decay time: &quot;</span>  &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">FDTime</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;, Slow rising time: &quot;</span> &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a03ef4f2486ff20d707999ee3defdf45b">SRTime</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;, Slow decay time: &quot;</span>  &lt;&lt; <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">SDTime</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_a359bc3542bd3c79344462fb5d93c63e8"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">phot::ScintTimeLAr::FDTime</a></div><div class="ttdeci">double FDTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00033">ScintTimeLAr.h:33</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_adbad02890a9ba985eb9be24ee35b831c"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">phot::ScintTimeLAr::SDTime</a></div><div class="ttdeci">double SDTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00031">ScintTimeLAr.h:31</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_af0c7911da6aaf72e2d65b7618cb61206"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">phot::ScintTimeLAr::FRTime</a></div><div class="ttdeci">double FRTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00032">ScintTimeLAr.h:32</a></div></div>
@@ -187,7 +186,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9f8eb8af079c8eac0bd60ddb08090882"></a>
+<a class="anchor" id="a19eebe0db021f7fbdb17877696120a69"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -215,7 +214,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -225,10 +224,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00044">44</a> of file <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html">ScintTimeLAr.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> (((<a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau2) * (1.0 - <a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau1))) / tau2) / tau2) * (tau1 + tau2);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00043">43</a> of file <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html">ScintTimeLAr.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> (((<a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau2) * (1.0 - <a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau1))) / tau2) / tau2) * (tau1 + tau2);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="ttc" id="namespacemake__calib__df_html_ada2bd95dba6a990f1012b56dacc20b0e"><div class="ttname"><a href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">make_calib_df.exp</a></div><div class="ttdeci">def exp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0e/make__calib__df_8py_source.html#l00043">make_calib_df.py:43</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -268,56 +267,52 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="../../dd/d92/classphot_1_1ScintTime.html#af6efcef2390bc1cc60748f795e7c55fc">phot::ScintTime</a>.</p>
 
 <p>Definition at line <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00054">54</a> of file <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html">ScintTimeLAr.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">double</span> tau1;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">double</span> tau2;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(is_fast == 1)  <span class="comment">// fast scinitllation</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            tau1 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">FRTime</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            tau2 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">FDTime</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            tau1 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a03ef4f2486ff20d707999ee3defdf45b">SRTime</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            tau2 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">SDTime</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        CLHEP::RandFlat randflatscinttime{engine};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> ((tau1 == 0.0) || (tau1 == -1.0))</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> = -tau2 * std::log(randflatscinttime());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">//ran1, ran2 = random numbers for the algorithm        </span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">while</span> (1)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keyword">auto</span> ran1 = randflatscinttime();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">auto</span> ran2 = randflatscinttime();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">auto</span> d = (tau1 + tau2) / tau2;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">auto</span> t = -tau2 * std::log(1 - ran1);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keyword">auto</span> <a class="code" href="../../d5/d79/decoderTools__icarus_8fcl.html#a86703f8a44dd6742852257943d5a25c6">g</a> = d * <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adb4e84bd05fa4bb0026c939c0f6dd4a5">single_exp</a>(t, tau2);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (ran2 &lt;= <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a9f8eb8af079c8eac0bd60ddb08090882">bi_exp</a>(t, tau1, tau2) / <a class="code" href="../../d5/d79/decoderTools__icarus_8fcl.html#a86703f8a44dd6742852257943d5a25c6">g</a>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> = t;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> tau1;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> tau2;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(is_fast) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      tau1 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">FRTime</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      tau2 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">FDTime</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      tau1 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a03ef4f2486ff20d707999ee3defdf45b">SRTime</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      tau2 = <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">SDTime</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    CLHEP::RandFlat randflatscinttime{engine};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> ((tau1 &lt; 1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-8) || (tau1 == -1.0)) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> = -tau2 * std::log(randflatscinttime());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//ran1, ran2 = random numbers for the algorithm</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">auto</span> ran1 = randflatscinttime();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keyword">auto</span> ran2 = randflatscinttime();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">auto</span> d = (tau1 + tau2) / tau2;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">auto</span> t = -tau2 * std::log(1 - ran1);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keyword">auto</span> <a class="code" href="../../d5/d79/decoderTools__icarus_8fcl.html#a86703f8a44dd6742852257943d5a25c6">g</a> = d * <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a803d42e35e77e87018ee0394577861cb">single_exp</a>(t, tau2);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">if</span> (ran2 &lt;= <a class="code" href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a19eebe0db021f7fbdb17877696120a69">bi_exp</a>(t, tau1, tau2) / <a class="code" href="../../d5/d79/decoderTools__icarus_8fcl.html#a86703f8a44dd6742852257943d5a25c6">g</a>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">timing</a> = t;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="ttc" id="classphot_1_1ScintTimeLAr_html_a19eebe0db021f7fbdb17877696120a69"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a19eebe0db021f7fbdb17877696120a69">phot::ScintTimeLAr::bi_exp</a></div><div class="ttdeci">double bi_exp(double t, double tau1, double tau2) const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00043">ScintTimeLAr.cc:43</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_a359bc3542bd3c79344462fb5d93c63e8"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a359bc3542bd3c79344462fb5d93c63e8">phot::ScintTimeLAr::FDTime</a></div><div class="ttdeci">double FDTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00033">ScintTimeLAr.h:33</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_adbad02890a9ba985eb9be24ee35b831c"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adbad02890a9ba985eb9be24ee35b831c">phot::ScintTimeLAr::SDTime</a></div><div class="ttdeci">double SDTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00031">ScintTimeLAr.h:31</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_af0c7911da6aaf72e2d65b7618cb61206"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#af0c7911da6aaf72e2d65b7618cb61206">phot::ScintTimeLAr::FRTime</a></div><div class="ttdeci">double FRTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00032">ScintTimeLAr.h:32</a></div></div>
 <div class="ttc" id="decoderTools__icarus_8fcl_html_a86703f8a44dd6742852257943d5a25c6"><div class="ttname"><a href="../../d5/d79/decoderTools__icarus_8fcl.html#a86703f8a44dd6742852257943d5a25c6">g</a></div><div class="ttdeci">BEGIN_PROLOG g</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d79/decoderTools__icarus_8fcl_source.html#l00007">decoderTools_icarus.fcl:7</a></div></div>
-<div class="ttc" id="classphot_1_1ScintTimeLAr_html_adb4e84bd05fa4bb0026c939c0f6dd4a5"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#adb4e84bd05fa4bb0026c939c0f6dd4a5">phot::ScintTimeLAr::single_exp</a></div><div class="ttdeci">double single_exp(double t, double tau2)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00038">ScintTimeLAr.cc:38</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTimeLAr_html_a03ef4f2486ff20d707999ee3defdf45b"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a03ef4f2486ff20d707999ee3defdf45b">phot::ScintTimeLAr::SRTime</a></div><div class="ttdeci">double SRTime</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d53/ScintTimeLAr_8h_source.html#l00030">ScintTimeLAr.h:30</a></div></div>
-<div class="ttc" id="classphot_1_1ScintTimeLAr_html_a9f8eb8af079c8eac0bd60ddb08090882"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a9f8eb8af079c8eac0bd60ddb08090882">phot::ScintTimeLAr::bi_exp</a></div><div class="ttdeci">double bi_exp(double t, double tau1, double tau2)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00044">ScintTimeLAr.cc:44</a></div></div>
+<div class="ttc" id="classphot_1_1ScintTimeLAr_html_a803d42e35e77e87018ee0394577861cb"><div class="ttname"><a href="../../d1/dcf/classphot_1_1ScintTimeLAr.html#a803d42e35e77e87018ee0394577861cb">phot::ScintTimeLAr::single_exp</a></div><div class="ttdeci">double single_exp(double t, double tau2) const </div><div class="ttdef"><b>Definition:</b> <a href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00037">ScintTimeLAr.cc:37</a></div></div>
+<div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="classphot_1_1ScintTime_html_ab65c30945e427832beca345165f51356"><div class="ttname"><a href="../../dd/d92/classphot_1_1ScintTime.html#ab65c30945e427832beca345165f51356">phot::ScintTime::timing</a></div><div class="ttdeci">double timing</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d76/ScintTime_8h_source.html#l00028">ScintTime.h:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="adb4e84bd05fa4bb0026c939c0f6dd4a5"></a>
+<a class="anchor" id="a803d42e35e77e87018ee0394577861cb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -339,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -349,10 +344,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00038">38</a> of file <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html">ScintTimeLAr.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau2) / tau2;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html#l00037">37</a> of file <a class="el" href="../../df/dd4/ScintTimeLAr_8cc_source.html">ScintTimeLAr.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">std::exp</a>((-1.0 * t) / tau2) / tau2;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="ttc" id="namespacemake__calib__df_html_ada2bd95dba6a990f1012b56dacc20b0e"><div class="ttname"><a href="../../d6/d11/namespacemake__calib__df.html#ada2bd95dba6a990f1012b56dacc20b0e">make_calib_df.exp</a></div><div class="ttdeci">def exp</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0e/make__calib__df_8py_source.html#l00043">make_calib_df.py:43</a></div></div>
 </div><!-- fragment -->
 </div>
