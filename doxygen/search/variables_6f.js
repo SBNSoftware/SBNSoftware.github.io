@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['o',['O',['../d8/dcd/structgeo_1_1fhicl_1_1IDConfig_3_01geo_1_1OpDetID_01_4.html#a1ededdcb1f262c66931eb9324aea2718',1,'geo::fhicl::IDConfig&lt; geo::OpDetID &gt;::O()'],['../d4/d0a/classnlohmann_1_1detail_1_1serializer.html#acf3c88660d3cbc65fc71c4d84f2a9f59',1,'nlohmann::detail::serializer::o()']]],
+  ['o',['o',['../d4/d0a/classnlohmann_1_1detail_1_1serializer.html#acf3c88660d3cbc65fc71c4d84f2a9f59',1,'nlohmann::detail::serializer::o()'],['../d8/dcd/structgeo_1_1fhicl_1_1IDConfig_3_01geo_1_1OpDetID_01_4.html#a1ededdcb1f262c66931eb9324aea2718',1,'geo::fhicl::IDConfig&lt; geo::OpDetID &gt;::O()']]],
   ['oa',['oa',['../df/d13/classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2',1,'nlohmann::detail::output_adapter::oa()'],['../df/d1a/classnlohmann_1_1detail_1_1binary__writer.html#a6f15b782a7900f50ef37d123008e601b',1,'nlohmann::detail::binary_writer::oa()']]],
   ['object',['object',['../d1/de3/unionnlohmann_1_1basic__json_1_1json__value.html#a4a2209bb26e7088cd36bf24824ab5521',1,'nlohmann::basic_json::json_value']]],
   ['object_5felement',['object_element',['../dc/d68/classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db',1,'nlohmann::detail::json_sax_dom_parser::object_element()'],['../d6/d69/classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a2a8adecd936ba6ec187f1216241b508f',1,'nlohmann::detail::json_sax_dom_callback_parser::object_element()']]],
@@ -67,7 +67,7 @@ var searchData=
   ['opdetwaveformstag',['OpDetWaveformsTag',['../de/dff/structdetsim_1_1DumpOpDetWaveforms_1_1Config.html#a4fe358c652c83781d069090c0a786bd8',1,'detsim::DumpOpDetWaveforms::Config']]],
   ['opdigi',['opdigi',['../d4/df2/prodsingle__optical__electronic_8fcl.html#adf192b54636dd5be176822a0ab24763c',1,'opdigi():&#160;prodsingle_optical_electronic.fcl'],['../d0/d8e/prodsingle__fastoptical_8fcl.html#adf192b54636dd5be176822a0ab24763c',1,'opdigi():&#160;prodsingle_fastoptical.fcl'],['../d7/d21/prodsingle__fastoptical__sbnd_8fcl.html#adf192b54636dd5be176822a0ab24763c',1,'opdigi():&#160;prodsingle_fastoptical_sbnd.fcl']]],
   ['open_5fangle',['open_angle',['../d7/d43/classcaf_1_1SRShower.html#a5cda583358c9d9e429b7a33151437517',1,'caf::SRShower']]],
-  ['openangle',['OpenAngle',['../d6/d9b/structtca_1_1ShowerStruct3D.html#ab181750c38066dcaae01f84a4d6d197f',1,'tca::ShowerStruct3D::OpenAngle()'],['../d7/d8c/classsbn_1_1Razzle.html#a4b24250b6639a7a368c54045c3128551',1,'sbn::Razzle::openAngle()']]],
+  ['openangle',['openAngle',['../d7/d8c/classsbn_1_1Razzle.html#a4b24250b6639a7a368c54045c3128551',1,'sbn::Razzle::openAngle()'],['../d6/d9b/structtca_1_1ShowerStruct3D.html#ab181750c38066dcaae01f84a4d6d197f',1,'tca::ShowerStruct3D::OpenAngle()']]],
   ['opening',['opening',['../dd/d31/structicarus_1_1trigger_1_1details_1_1TriggerGateStatus.html#a0c09a822d5e5a4e00d4985a951f104b5',1,'icarus::trigger::details::TriggerGateStatus']]],
   ['opening_5fangle',['opening_angle',['../d2/d0e/classcluster_1_1cluster__params.html#adf5518fe78a60ff1984ffb82100d420c',1,'cluster::cluster_params']]],
   ['opening_5fangle_5fcharge_5fwgt',['opening_angle_charge_wgt',['../d2/d0e/classcluster_1_1cluster__params.html#ab2776dca97eb1a854a210e33d622a9af',1,'cluster::cluster_params']]],
