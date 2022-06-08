@@ -63,8 +63,7 @@ see the old wiki for a lot of historical detail.
 
 sbndaq detector components
 ----------------------------------------------
-* [List of boardreaders](boardreaders.md)
-* [White Rabbit Timing System](WR/WhiteRabbit.md)
+* [List of boardreaders](Boardreaders.md)
 * Configuring the [Multi Function Timing Unit (MFTU)](ACnet/MFTU.md) Beam Timing Interface
 
 Troubleshooting
