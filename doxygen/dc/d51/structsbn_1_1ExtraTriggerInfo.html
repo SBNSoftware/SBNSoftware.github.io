@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -91,6 +92,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df1/structsbn_1_1ExtraTriggerInfo_1_1CryostatInfo.html">CryostatInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger data pertaining a single cryostat.  <a href="../../d5/df1/structsbn_1_1ExtraTriggerInfo_1_1CryostatInfo.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aecb0c79ee02a9e351bd257cb99ba4b4d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aecb0c79ee02a9e351bd257cb99ba4b4d">isValid</a> () const noexcept</td></tr>
@@ -114,6 +121,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa7eae48f07d88f1dfd3b634b4c3ecbde"><td class="memItemLeft" align="right" valign="top">sbn::triggerSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aa7eae48f07d88f1dfd3b634b4c3ecbde">sourceType</a> { sbn::triggerSource::NBits }</td></tr>
 <tr class="memdesc:aa7eae48f07d88f1dfd3b634b4c3ecbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this gate (<code>sbn::triggerSource::NBits</code> marks this object invalid).  <a href="#aa7eae48f07d88f1dfd3b634b4c3ecbde">More...</a><br/></td></tr>
 <tr class="separator:aa7eae48f07d88f1dfd3b634b4c3ecbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0d965b3bfb4b141541e188ac01c187"><td class="memItemLeft" align="right" valign="top">sbn::triggerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a4a0d965b3bfb4b141541e188ac01c187">triggerType</a> { sbn::triggerType::NBits }</td></tr>
+<tr class="memdesc:a4a0d965b3bfb4b141541e188ac01c187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this trigger (see <code>sbn::triggerType</code>).  <a href="#a4a0d965b3bfb4b141541e188ac01c187">More...</a><br/></td></tr>
+<tr class="separator:a4a0d965b3bfb4b141541e188ac01c187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af296fbcf17cc408186ef4f49c4f1eb0c"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#af296fbcf17cc408186ef4f49c4f1eb0c">enableGateTimestamp</a> { <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">NoTimestamp</a> }</td></tr>
+<tr class="memdesc:af296fbcf17cc408186ef4f49c4f1eb0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute timestamp of the opening of the enable gate [ns].  <a href="#af296fbcf17cc408186ef4f49c4f1eb0c">More...</a><br/></td></tr>
+<tr class="separator:af296fbcf17cc408186ef4f49c4f1eb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Counters and times since the beginning of the run.</div></td></tr>
 <tr class="memitem:acbbec1e38c4afbcc587f2c2332668dd0"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#acbbec1e38c4afbcc587f2c2332668dd0">triggerTimestamp</a> { <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">NoTimestamp</a> }</td></tr>
 <tr class="memdesc:acbbec1e38c4afbcc587f2c2332668dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute timestamp of this trigger [ns].  <a href="#acbbec1e38c4afbcc587f2c2332668dd0">More...</a><br/></td></tr>
@@ -169,6 +182,40 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7c2e70f20023c3b9e3896e4fdf743a42"><td class="memItemLeft" align="right" valign="top">static constexpr std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a7c2e70f20023c3b9e3896e4fdf743a42">UnknownCorrection</a> = std::numeric_limits&lt;std::int64_t&gt;::max()</td></tr>
 <tr class="memdesc:a7c2e70f20023c3b9e3896e4fdf743a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special timestamp correction value indicating an unknown correction.  <a href="#a7c2e70f20023c3b9e3896e4fdf743a42">More...</a><br/></td></tr>
 <tr class="separator:a7c2e70f20023c3b9e3896e4fdf743a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Trigger topology</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp5f57070d3f0b4a52f4db6300a3b0dbb4"></a>The information is represented in groups of cryostats and, within each of them, of PMT "walls", that is groups of PMT lying on the same geometric plane (in SBN detectors that is behind each anode).</p>
+<p>Currently the information is represented by fixed size arrays, because the overhead of a variable length container (<code>std::vector</code>) is comparable to the data itself. </p>
+</td></tr>
+<tr class="memitem:a6b36ad216be1e86fb83202cd6e1ffe12"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a6b36ad216be1e86fb83202cd6e1ffe12">MaxCryostats</a> { 2 }</td></tr>
+<tr class="memdesc:a6b36ad216be1e86fb83202cd6e1ffe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of cryostats in the detector.  <a href="#a6b36ad216be1e86fb83202cd6e1ffe12">More...</a><br/></td></tr>
+<tr class="separator:a6b36ad216be1e86fb83202cd6e1ffe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f842e33799711df6136bb86773d46b"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ad5f842e33799711df6136bb86773d46b">MaxWalls</a> { 2 }</td></tr>
+<tr class="memdesc:ad5f842e33799711df6136bb86773d46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of PMT "walls" in a cryostat.  <a href="#ad5f842e33799711df6136bb86773d46b">More...</a><br/></td></tr>
+<tr class="separator:ad5f842e33799711df6136bb86773d46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0943a54b98750e94dbe8e2bf8b459e"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#abe0943a54b98750e94dbe8e2bf8b459e">EastCryostat</a> { 0 }</td></tr>
+<tr class="memdesc:abe0943a54b98750e94dbe8e2bf8b459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnemonic index for the east cryostat.  <a href="#abe0943a54b98750e94dbe8e2bf8b459e">More...</a><br/></td></tr>
+<tr class="separator:abe0943a54b98750e94dbe8e2bf8b459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543fdccbc511cc4fe88a5ebc239ff293"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a543fdccbc511cc4fe88a5ebc239ff293">WestCryostat</a> { 1 }</td></tr>
+<tr class="memdesc:a543fdccbc511cc4fe88a5ebc239ff293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnemonic index for the west cryostat.  <a href="#a543fdccbc511cc4fe88a5ebc239ff293">More...</a><br/></td></tr>
+<tr class="separator:a543fdccbc511cc4fe88a5ebc239ff293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b3a1075927c0b501917211cced59c9"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ac6b3a1075927c0b501917211cced59c9">EastPMTwall</a> { 0 }</td></tr>
+<tr class="memdesc:ac6b3a1075927c0b501917211cced59c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnemonic index for the east PMT wall within a cryostat.  <a href="#ac6b3a1075927c0b501917211cced59c9">More...</a><br/></td></tr>
+<tr class="separator:ac6b3a1075927c0b501917211cced59c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c85b3444e25422441dfdd8c97abb63"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a86c85b3444e25422441dfdd8c97abb63">WestPMTwall</a> { 1 }</td></tr>
+<tr class="memdesc:a86c85b3444e25422441dfdd8c97abb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mnemonic index for the west PMT wall within a cryostat.  <a href="#a86c85b3444e25422441dfdd8c97abb63">More...</a><br/></td></tr>
+<tr class="separator:a86c85b3444e25422441dfdd8c97abb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c658e0c6ca1c6bc0ca64528fbf113a9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a7c658e0c6ca1c6bc0ca64528fbf113a9">triggerLocationBits</a> { 0U }</td></tr>
+<tr class="memdesc:a7c658e0c6ca1c6bc0ca64528fbf113a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bits for the trigger location (.  <a href="#a7c658e0c6ca1c6bc0ca64528fbf113a9">More...</a><br/></td></tr>
+<tr class="separator:a7c658e0c6ca1c6bc0ca64528fbf113a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1297c8e313503ac9b2a33ee75cbeb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d99/find__fhicl_8sh.html#a0e50d715b86162838c8a191974455ae0">std::array</a>&lt; <a class="el" href="../../d5/df1/structsbn_1_1ExtraTriggerInfo_1_1CryostatInfo.html">CryostatInfo</a>, <br class="typebreak"/>
+<a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a6b36ad216be1e86fb83202cd6e1ffe12">MaxCryostats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5c1297c8e313503ac9b2a33ee75cbeb3">cryostats</a></td></tr>
+<tr class="memdesc:a5c1297c8e313503ac9b2a33ee75cbeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of each LVDS channel in each PMT wall at trigger time.  <a href="#a5c1297c8e313503ac9b2a33ee75cbeb3">More...</a><br/></td></tr>
+<tr class="separator:a5c1297c8e313503ac9b2a33ee75cbeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba62561b35d3b847d39f09ddfb27c539"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d90/namespacesbn_1_1bits.html#ab4ce434d8f4ba28d3271763ad1d206cb">sbn::bits::triggerLocationMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aba62561b35d3b847d39f09ddfb27c539">triggerLocation</a> () const </td></tr>
+<tr class="memdesc:aba62561b35d3b847d39f09ddfb27c539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the location of the trigger.  <a href="#aba62561b35d3b847d39f09ddfb27c539">More...</a><br/></td></tr>
+<tr class="separator:aba62561b35d3b847d39f09ddfb27c539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Additional information on trigger. </p>
@@ -186,7 +233,7 @@ Static Public Attributes</h2></td></tr>
 <li>including triggers and gates from any source (tagged as "any"). </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00044">44</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00045">45</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aecb0c79ee02a9e351bd257cb99ba4b4d"></a>
 <div class="memitem">
@@ -211,9 +258,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns whether this object contains any valid information. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00153">153</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aa7eae48f07d88f1dfd3b634b4c3ecbde">sourceType</a> != sbn::triggerSource::NBits; }</div>
-<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_aa7eae48f07d88f1dfd3b634b4c3ecbde"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aa7eae48f07d88f1dfd3b634b4c3ecbde">sbn::ExtraTriggerInfo::sourceType</a></div><div class="ttdeci">sbn::triggerSource sourceType</div><div class="ttdoc">Type of this gate (sbn::triggerSource::NBits marks this object invalid). </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00059">ExtraTriggerInfo.h:59</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00257">257</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aa7eae48f07d88f1dfd3b634b4c3ecbde">sourceType</a> != sbn::triggerSource::NBits; }</div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_aa7eae48f07d88f1dfd3b634b4c3ecbde"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aa7eae48f07d88f1dfd3b634b4c3ecbde">sbn::ExtraTriggerInfo::sourceType</a></div><div class="ttdeci">sbn::triggerSource sourceType</div><div class="ttdoc">Type of this gate (sbn::triggerSource::NBits marks this object invalid). </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00060">ExtraTriggerInfo.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -241,8 +288,8 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns whether the <code>count</code> is valid (i.e. is not <code>0</code>). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00166">166</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a> != 0U; }</div>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00270">270</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a> != 0U; }</div>
 <div class="ttc" id="IntegerRanges__test_8cc_html_abbc7e5f346bfa932ca51b4b07ccef76d"><div class="ttname"><a href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a></div><div class="ttdeci">std::size_t count(Cont const &amp;cont)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/df5/IntegerRanges__test_8cc_source.html#l00029">IntegerRanges_test.cc:29</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -271,9 +318,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns whether the specified <code>ID</code> is valid (i.e. is not <code>NoID</code>). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00158">158</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    { <span class="keywordflow">return</span> ID != <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#adcee59b30b8e2626e22d96363542e421">NoID</a>; }</div>
-<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_adcee59b30b8e2626e22d96363542e421"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#adcee59b30b8e2626e22d96363542e421">sbn::ExtraTriggerInfo::NoID</a></div><div class="ttdeci">static constexpr unsigned int NoID</div><div class="ttdoc">Special ID value indicating the absence of an ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00047">ExtraTriggerInfo.h:47</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00262">262</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    { <span class="keywordflow">return</span> ID != <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#adcee59b30b8e2626e22d96363542e421">NoID</a>; }</div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_adcee59b30b8e2626e22d96363542e421"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#adcee59b30b8e2626e22d96363542e421">sbn::ExtraTriggerInfo::NoID</a></div><div class="ttdeci">static constexpr unsigned int NoID</div><div class="ttdoc">Special ID value indicating the absence of an ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00048">ExtraTriggerInfo.h:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -301,9 +348,43 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns whether the timestamp <code>ts</code> is valid (i.e. is not <code>NoTimestamp</code>). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00162">162</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    { <span class="keywordflow">return</span> ts != <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">NoTimestamp</a>; }</div>
-<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_a5a6f2485167e39b58921ce2a22c8aada"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">sbn::ExtraTriggerInfo::NoTimestamp</a></div><div class="ttdeci">static constexpr std::uint64_t NoTimestamp</div><div class="ttdoc">Special timestamp value indicating the absence of timestamp. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00051">ExtraTriggerInfo.h:51</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00266">266</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    { <span class="keywordflow">return</span> ts != <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">NoTimestamp</a>; }</div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_a5a6f2485167e39b58921ce2a22c8aada"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">sbn::ExtraTriggerInfo::NoTimestamp</a></div><div class="ttdeci">static constexpr std::uint64_t NoTimestamp</div><div class="ttdoc">Special timestamp value indicating the absence of timestamp. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00052">ExtraTriggerInfo.h:52</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aba62561b35d3b847d39f09ddfb27c539"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d90/namespacesbn_1_1bits.html#ab4ce434d8f4ba28d3271763ad1d206cb">sbn::bits::triggerLocationMask</a> sbn::ExtraTriggerInfo::triggerLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the location of the trigger. </p>
+<p>The returned value is a mask of <code><a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aac4b8236c5c8ff26ead5ec05aa083aff" title="Location or locations generating a trigger. ">sbn::bits::triggerLocation</a></code> bits. To test the state of a bit, it needs to be converted into a mask, e.g.: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> onTPCEE</div>
+<div class="line">  = extraTriggerInfo.triggerLocation() &amp; <a class="code" href="../../de/d90/namespacesbn_1_1bits.html#a3b8fd0787ccd1963c6aa5c8bf17f4290">mask</a>(sbn::triggerLocation::TPCEE);</div>
+<div class="line"><span class="keywordtype">bool</span> onTPCxE = extraTriggerInfo.triggerLocation()</div>
+<div class="line">  &amp; <a class="code" href="../../de/d90/namespacesbn_1_1bits.html#a3b8fd0787ccd1963c6aa5c8bf17f4290">mask</a>(sbn::triggerLocation::TPCEE, sbn::triggerLocation::TPCWE);</div>
+</div><!-- fragment --> 
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00247">247</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    { <span class="keywordflow">return</span> { <a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a7c658e0c6ca1c6bc0ca64528fbf113a9">triggerLocationBits</a> }; }</div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_a7c658e0c6ca1c6bc0ca64528fbf113a9"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a7c658e0c6ca1c6bc0ca64528fbf113a9">sbn::ExtraTriggerInfo::triggerLocationBits</a></div><div class="ttdeci">unsigned int triggerLocationBits</div><div class="ttdoc">Bits for the trigger location (. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00230">ExtraTriggerInfo.h:230</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,7 +400,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Gates from any source since the previous trigger also from any source (minimum is <code>1</code>: the current gate). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00119">119</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00126">126</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +415,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Gates from any source since the previous trigger also of this source (minimum is <code>1</code>: the current trigger). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00103">103</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00110">110</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +431,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Type of the previous trigger. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00115">115</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00122">122</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +447,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Absolute timestamp of the previous trigger from any source [ns]. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00135">135</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00142">142</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +462,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Triggers from any source since the previous trigger also of this source (minimum is <code>1</code>: the current trigger). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00099">99</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00106">106</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +478,87 @@ Static Public Attributes</h2></td></tr>
 
 <p>Absolute timestamp of the opening of this beam gate [ns]. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00070">70</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00077">77</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c1297c8e313503ac9b2a33ee75cbeb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d99/find__fhicl_8sh.html#a0e50d715b86162838c8a191974455ae0">std::array</a>&lt;<a class="el" href="../../d5/df1/structsbn_1_1ExtraTriggerInfo_1_1CryostatInfo.html">CryostatInfo</a>, <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a6b36ad216be1e86fb83202cd6e1ffe12">MaxCryostats</a>&gt; sbn::ExtraTriggerInfo::cryostats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status of each LVDS channel in each PMT wall at trigger time. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00233">233</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe0943a54b98750e94dbe8e2bf8b459e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::EastCryostat { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mnemonic index for the east cryostat. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00179">179</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6b3a1075927c0b501917211cced59c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::EastPMTwall { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mnemonic index for the east PMT wall within a cryostat. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00185">185</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af296fbcf17cc408186ef4f49c4f1eb0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t sbn::ExtraTriggerInfo::enableGateTimestamp { <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada">NoTimestamp</a> }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Absolute timestamp of the opening of the enable gate [ns]. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00066">66</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +574,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Incremental counter of gates from this source opened from start of the run. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00082">82</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00089">89</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +589,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Gates from this source since the previous trigger also of this source (minimum is <code>1</code>: the current gate). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00095">95</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00102">102</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +605,55 @@ Static Public Attributes</h2></td></tr>
 
 <p>Incremental counter of gates from any source opened from start of the run. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00076">76</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00083">83</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b36ad216be1e86fb83202cd6e1ffe12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::MaxCryostats { 2 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of cryostats in the detector. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00173">173</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5f842e33799711df6136bb86773d46b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::MaxWalls { 2 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of PMT "walls" in a cryostat. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00176">176</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -468,7 +677,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Special ID value indicating the absence of an ID. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00047">47</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00048">48</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +701,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Special timestamp value indicating the absence of timestamp. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00051">51</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00052">52</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +717,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Absolute timestamp of the previous trigger from this same source [ns]. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00132">132</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00139">139</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +733,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Type of this gate (<code>sbn::triggerSource::NBits</code> marks this object invalid). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00059">59</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00060">60</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +749,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Incremental counter of triggers from this source from start of the run. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00079">79</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00086">86</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +765,24 @@ Static Public Attributes</h2></td></tr>
 
 <p>The identifier of this trigger (usually matching the event number). </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00073">73</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00080">80</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c658e0c6ca1c6bc0ca64528fbf113a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int sbn::ExtraTriggerInfo::triggerLocationBits { 0U }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bits for the trigger location (. </p>
+<dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#aba62561b35d3b847d39f09ddfb27c539" title="Returns the location of the trigger. ">triggerLocation()</a></code>). </dd></dl>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00230">230</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -572,7 +798,23 @@ Static Public Attributes</h2></td></tr>
 
 <p>Absolute timestamp of this trigger [ns]. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00067">67</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00074">74</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a0d965b3bfb4b141541e188ac01c187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbn::triggerType sbn::ExtraTriggerInfo::triggerType { sbn::triggerType::NBits }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of this trigger (see <code>sbn::triggerType</code>). </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00063">63</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +838,55 @@ Static Public Attributes</h2></td></tr>
 
 <p>Special timestamp correction value indicating an unknown correction. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00055">55</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00056">56</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a543fdccbc511cc4fe88a5ebc239ff293"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::WestCryostat { 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mnemonic index for the west cryostat. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00182">182</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86c85b3444e25422441dfdd8c97abb63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t sbn::ExtraTriggerInfo::WestPMTwall { 1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mnemonic index for the west PMT wall within a cryostat. </p>
+
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00188">188</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +902,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Correction added to the White Rabbit time to get the trigger time. </p>
 
-<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00146">146</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html#l00153">153</a> of file <a class="el" href="../../d4/d44/ExtraTriggerInfo_8h_source.html">ExtraTriggerInfo.h</a>.</p>
 
 </div>
 </div>

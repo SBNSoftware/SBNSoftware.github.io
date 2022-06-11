@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#ad3d2eae5365f1777514bf8e73b50a9a2">nErrors</a> = 0; <span class="comment">// error count</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// get the provider we just set up (but accessing it by the interface)ß</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* <a class="code" href="../../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7af6147c9c9b908be9b52803698be57ad2">Calibration</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* Calibration</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    = TesterEnv.Provider&lt;<a class="code" href="../../d8/d59/classlar_1_1example_1_1ShowerCalibrationGalore.html">lar::example::ShowerCalibrationGalore</a>&gt;();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">//</span></div>
@@ -170,7 +170,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  );</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  mf::LogInfo(<span class="stringliteral">&quot;ShowerCalibrationGaloreFromPID_test&quot;</span>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    &lt;&lt; <a class="code" href="../../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7af6147c9c9b908be9b52803698be57ad2">Calibration</a>-&gt;report() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    &lt;&lt; Calibration-&gt;report() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#ad3d2eae5365f1777514bf8e73b50a9a2">nErrors</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// main()</span></div>
@@ -181,7 +181,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="namespacelar_1_1example_1_1tests_html_a16235e6cb523d53b4d9a9a2032714455"><div class="ttname"><a href="../../d8/d14/namespacelar_1_1example_1_1tests.html#a16235e6cb523d53b4d9a9a2032714455">lar::example::tests::ShowerCalibrationTableTest</a></div><div class="ttdeci">unsigned int ShowerCalibrationTableTest(Stream &amp;&amp;out, lar::example::ShowerCalibrationGalore const *calibration, float Emin=0.0, float Emax=2.5, float Estep=0.1, std::vector&lt; lar::example::ShowerCalibrationGalore::PDGID_t &gt; const &amp;pids={11, 13, 111, 2212, 22})</div><div class="ttdoc">Synthetic test: prints corrections for showers in a energy range. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d40/ShowerCalibrationGaloreTests_8h_source.html#l00083">ShowerCalibrationGaloreTests.h:83</a></div></div>
 <div class="ttc" id="namespaceSortModuleTimes_html_ad3d2eae5365f1777514bf8e73b50a9a2"><div class="ttname"><a href="../../d7/d8e/namespaceSortModuleTimes.html#ad3d2eae5365f1777514bf8e73b50a9a2">SortModuleTimes.nErrors</a></div><div class="ttdeci">int nErrors</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df3/SortModuleTimes_8py_source.html#l00897">SortModuleTimes.py:897</a></div></div>
 <div class="ttc" id="classlar_1_1example_1_1ShowerCalibrationGalore_html"><div class="ttname"><a href="../../d8/d59/classlar_1_1example_1_1ShowerCalibrationGalore.html">lar::example::ShowerCalibrationGalore</a></div><div class="ttdoc">Interface for a shower calibration service provider. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d19/ShowerCalibrationGalore_8h_source.html#l00044">ShowerCalibrationGalore.h:44</a></div></div>
-<div class="ttc" id="namespacesbn_1_1bits_html_a75de4e8e9acdc3cc9566cf28c92420e7af6147c9c9b908be9b52803698be57ad2"><div class="ttname"><a href="../../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7af6147c9c9b908be9b52803698be57ad2">sbn::bits::triggerSource::Calibration</a></div><div class="ttdoc">Type of source: calibration trigger. </div></div>
 </div><!-- fragment -->
 </div>
 </div>

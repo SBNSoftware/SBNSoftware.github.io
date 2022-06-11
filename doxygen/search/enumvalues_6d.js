@@ -2,6 +2,7 @@ var searchData=
 [
   ['madespacepoint',['MADESPACEPOINT',['../df/d06/classreco_1_1ClusterHit3D.html#a5a393b9e2f9116aa5c0dad758f168b97acd6ad979c91818a8c6a996f99a38ade0',1,'reco::ClusterHit3D']]],
   ['magenta',['MAGENTA',['../db/d0c/classlar__content_1_1LArFormattingHelper.html#a7bcdd7f886242b624f45e07d894f537da9b52e55aa1be7b0cd58dd0d75b1644b4',1,'lar_content::LArFormattingHelper']]],
+  ['majority',['Majority',['../de/d90/namespacesbn_1_1bits.html#a3aa56afbd0c41e891f23184430b636caabb6e3fbcfb3068381efffc7e352b5eb7',1,'sbn::bits']]],
   ['mall',['mAll',['../dc/d77/namespacenumu.html#ad2e4dcd33863f65cb175376b85586f67a05aeff1dfc19e12e5db25a010f63f647',1,'numu']]],
   ['mc_5fproc_5falpha_5finelastic',['MC_PROC_ALPHA_INELASTIC',['../db/de7/namespacelar__content.html#af34bcec2b818f020cb2835da09a7c5eda482574848c0ea27318d73f1307214394',1,'lar_content']]],
   ['mc_5fproc_5fannihil',['MC_PROC_ANNIHIL',['../db/de7/namespacelar__content.html#af34bcec2b818f020cb2835da09a7c5eda30aa14591dc3ec9ccc8be018ab3557ba',1,'lar_content']]],
@@ -66,6 +67,7 @@ var searchData=
   ['minbiasgatenumi',['MinbiasGateNuMI',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5af72628a5d9737c8e278a2a42443b3c31',1,'sbn::bits']]],
   ['minbiasgateoffbeambnb',['MinbiasGateOffbeamBNB',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5a4576b401aadb5969289129a3a37b003e',1,'sbn::bits']]],
   ['minbiasgateoffbeamnumi',['MinbiasGateOffbeamNuMI',['../de/d90/namespacesbn_1_1bits.html#a0a9f156808d02156f4c20ad6d5de57f5a49f83f04681b90af1b740074c2cb8ee3',1,'sbn::bits']]],
+  ['minimumbias',['MinimumBias',['../de/d90/namespacesbn_1_1bits.html#a3aa56afbd0c41e891f23184430b636caaaf86c05950477957092d7856ac4d93cb',1,'sbn::bits']]],
   ['mintimecosmic',['mIntimeCosmic',['../dc/d77/namespacenumu.html#ad2e4dcd33863f65cb175376b85586f67a6dc675ad68d688f135a93e35cb7197f2',1,'numu']]],
   ['missingargument',['MissingArgument',['../d8/d30/structConfigurationParser.html#a9667bafb0de3d5959bf5e12eca29c7eea278d1253e4dc8ae77dd5a12620e04d89',1,'ConfigurationParser']]],
   ['mixed',['MIXED',['../df/d1f/classlar__content_1_1CosmicRayTaggingMonitoringTool.html#a75c494dff6d4fca99ba21dcc2e8afe0ea5d17877cad9662e76986b8f213211f37',1,'lar_content::CosmicRayTaggingMonitoringTool']]],
