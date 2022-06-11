@@ -59,5 +59,5 @@ var searchData=
   ['extract_5ftags_5ft',['extract_tags_t',['../d7/d1f/group__MetaprogrammingTagged.html#gabc0685c0b0eafbf7aedb59f3e9eef67c',1,'util']]],
   ['extract_5fto_5ftuple_5ftype_5ft',['extract_to_tuple_type_t',['../d2/d70/group__MetaprogrammingGeneral.html#gadd76c6a44bd9dab837bcf7681cc2de0b',1,'util']]],
   ['extractcoordtype_5ft',['ExtractCoordType_t',['../da/d16/namespacelar_1_1example_1_1details.html#a886acd0d92856f7d7d8e4763d269532f',1,'lar::example::details']]],
-  ['extrainfoptr',['ExtraInfoPtr',['../d3/de9/classdaq_1_1TriggerDecoder.html#ab6e3ba0b3f5b2b8215869527c5816ff1',1,'daq::TriggerDecoder']]]
+  ['extrainfoptr',['ExtraInfoPtr',['../d3/de9/classdaq_1_1TriggerDecoder.html#ab6e3ba0b3f5b2b8215869527c5816ff1',1,'daq::TriggerDecoder::ExtraInfoPtr()'],['../d3/de9/classdaq_1_1TriggerDecoder.html#ab6e3ba0b3f5b2b8215869527c5816ff1',1,'daq::TriggerDecoder::ExtraInfoPtr()']]]
 ];

@@ -466,19 +466,19 @@ template&lt;typename Principal &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00324">324</a> of file <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html">TriggerConfigurationExtractor.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="comment">// TFile::Open() call is needed to support non-local URL</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">// (e.g. XRootD URL are not supported by TFile constructor).</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/d4d/namespaceicarus.html#ac53f892d9e87bb348f4ebd2d67563ab3">extractTriggerReadoutConfiguration</a>(*(</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    std::unique_ptr&lt;TFile&gt;{ TFile::Open(srcFileName.c_str(), <span class="stringliteral">&quot;READ&quot;</span>) }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    ),</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    std::move(extractor)</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    );</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;} <span class="comment">// icarus::extractTriggerReadoutConfiguration(string)</span></div>
-<div class="ttc" id="namespaceicarus_html_ac53f892d9e87bb348f4ebd2d67563ab3"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#ac53f892d9e87bb348f4ebd2d67563ab3">icarus::extractTriggerReadoutConfiguration</a></div><div class="ttdeci">icarus::TriggerConfiguration extractTriggerReadoutConfiguration(std::string const &amp;srcFileName, icarus::TriggerConfigurationExtractor extractor)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00324">TriggerConfigurationExtractor.cxx:324</a></div></div>
+<p>Definition at line <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00326">326</a> of file <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html">TriggerConfigurationExtractor.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">// TFile::Open() call is needed to support non-local URL</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="comment">// (e.g. XRootD URL are not supported by TFile constructor).</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../da/d4d/namespaceicarus.html#ac53f892d9e87bb348f4ebd2d67563ab3">extractTriggerReadoutConfiguration</a>(*(</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    std::unique_ptr&lt;TFile&gt;{ TFile::Open(srcFileName.c_str(), <span class="stringliteral">&quot;READ&quot;</span>) }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    ),</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    std::move(extractor)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    );</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;} <span class="comment">// icarus::extractTriggerReadoutConfiguration(string)</span></div>
+<div class="ttc" id="namespaceicarus_html_ac53f892d9e87bb348f4ebd2d67563ab3"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#ac53f892d9e87bb348f4ebd2d67563ab3">icarus::extractTriggerReadoutConfiguration</a></div><div class="ttdeci">icarus::TriggerConfiguration extractTriggerReadoutConfiguration(std::string const &amp;srcFileName, icarus::TriggerConfigurationExtractor extractor)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00326">TriggerConfigurationExtractor.cxx:326</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -506,13 +506,13 @@ template&lt;typename Principal &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00340">340</a> of file <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html">TriggerConfigurationExtractor.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../db/db1/namespaceicarus_1_1details.html#a2e2da86f0beda1c42bf9eea09494c048">details::extractTriggerReadoutConfigurationImpl</a></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    (<a class="code" href="../../d6/d72/namespaceutil.html#af2d88f5bae56f21ca3cb21da09295a7d">util::readConfigurationFromArtFile</a>(srcFile), std::move(extractor));</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;} <span class="comment">// icarus::extractTriggerReadoutConfiguration(TFile)</span></div>
+<p>Definition at line <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00342">342</a> of file <a class="el" href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html">TriggerConfigurationExtractor.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../db/db1/namespaceicarus_1_1details.html#a2e2da86f0beda1c42bf9eea09494c048">details::extractTriggerReadoutConfigurationImpl</a></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    (<a class="code" href="../../d6/d72/namespaceutil.html#af2d88f5bae56f21ca3cb21da09295a7d">util::readConfigurationFromArtFile</a>(srcFile), std::move(extractor));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;} <span class="comment">// icarus::extractTriggerReadoutConfiguration(TFile)</span></div>
 <div class="ttc" id="namespaceutil_html_af2d88f5bae56f21ca3cb21da09295a7d"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af2d88f5bae56f21ca3cb21da09295a7d">util::readConfigurationFromArtFile</a></div><div class="ttdeci">std::map&lt; fhicl::ParameterSetID, fhicl::ParameterSet &gt; readConfigurationFromArtFile(TFile &amp;file)</div><div class="ttdoc">Reads and returns the art configuration stored in sourceDir. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d73/ReadArtConfiguration_8cxx_source.html#l00021">ReadArtConfiguration.cxx:21</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1details_html_a2e2da86f0beda1c42bf9eea09494c048"><div class="ttname"><a href="../../db/db1/namespaceicarus_1_1details.html#a2e2da86f0beda1c42bf9eea09494c048">icarus::details::extractTriggerReadoutConfigurationImpl</a></div><div class="ttdeci">icarus::TriggerConfiguration extractTriggerReadoutConfigurationImpl(ConfigMap const &amp;configMap, icarus::TriggerConfigurationExtractor extractor)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html#l00385">TriggerConfigurationExtractor.h:385</a></div></div>
 </div><!-- fragment -->

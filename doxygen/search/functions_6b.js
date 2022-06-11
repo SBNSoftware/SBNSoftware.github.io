@@ -73,7 +73,7 @@ var searchData=
   ['kisncfromnumu',['kIsNCFromNumu',['../d7/d63/namespaceana.html#a4a086d839e0948ecba47fb0fa7349e7f',1,'ana']]],
   ['kisnueapp',['kIsNueApp',['../d7/d63/namespaceana.html#a5b9c8041aa7649f698ed46c546dc36c8',1,'ana']]],
   ['kisnumuapp',['kIsNumuApp',['../d7/d63/namespaceana.html#aa6f1e4ab9db7a2ee50da568d29907a9f',1,'ana']]],
-  ['kisnumucc',['kIsNumuCC',['../d7/d63/namespaceana.html#ac132f741b9dde835fbc51e5c3b5fd918',1,'ana::kIsNumuCC()'],['../de/d10/XSecSelection_2eventsel_8h.html#a2a7e596cb7606db1e05ff5523df8e92a',1,'kIsNuMuCC():&#160;eventsel.h']]],
+  ['kisnumucc',['kIsNuMuCC',['../de/d10/XSecSelection_2eventsel_8h.html#a2a7e596cb7606db1e05ff5523df8e92a',1,'kIsNuMuCC():&#160;eventsel.h'],['../d7/d63/namespaceana.html#ac132f741b9dde835fbc51e5c3b5fd918',1,'ana::kIsNumuCC()']]],
   ['kisnuslice',['kIsNuSlice',['../de/d10/XSecSelection_2eventsel_8h.html#a30576c3ed38b8268768463312634a17d',1,'eventsel.h']]],
   ['kistaufrome',['kIsTauFromE',['../d7/d63/namespaceana.html#a4b5ec995e651144db14f14a7df2f96e3',1,'ana']]],
   ['kistaufrommu',['kIsTauFromMu',['../d7/d63/namespaceana.html#a4e75f4bcf29c5c56d8f8a1602a337431',1,'ana']]],

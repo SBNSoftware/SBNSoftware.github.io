@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>standard_reco1reco2_noflashmatch_sbnd.fcl Source File</title>
+<title>reco2_sce_no_opt0finder.fcl Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -75,26 +75,41 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">standard_reco1reco2_noflashmatch_sbnd.fcl</div>  </div>
+<div class="title">reco2_sce_no_opt0finder.fcl</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d8/db5/standard__reco1reco2__noflashmatch__sbnd_8fcl.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor"># File:    standard_reco1reco2_flashmatch_sbnd.fcl</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Purpose: The standard reconstruction workflow for both &#39;reco1&#39; and &#39;reco2&#39;, and flash matching.</span></div>
+<a href="../../d4/ded/reco2__sce__no__opt0finder_8fcl.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor"># File:    standard_reco2_sce_no_opt0finder.fcl</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Purpose: The standard reconstruction workflow for &#39;reco2&#39;, starts at 2D clustering and includes all high level reconstruction (+ SCE reco)</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Version: 1.0</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Changes:</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20201014 (mdeltutt@fnal.gov) [v1.0]</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20200923 (grayputnam@uchicago.edu) [v1.0]</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   Initial definition</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># job configuration</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/df8/reco__sbnd_8fcl.html">reco_sbnd.fcl</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#af2add7ab297ee1d26dfa1669347fcda6">process_name</a>: Reco1Reco2</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#af2add7ab297ee1d26dfa1669347fcda6">process_name</a>: Reco2</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.trigger_paths: [ fullreco_noflashmatch ]</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d4/ded/reco2__sce__no__opt0finder_8fcl.html#a0e083b6915f680c25fe54312670f914d">   15</a></span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.reco2_sce: [@<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">sequence::physics</a>.reco2_no_opt0finder,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    <a class="code" href="../../d9/dc7/reco2__sce_8fcl.html#a094254f8b87848bb75a5bf829328390f">pandoraSCE</a>, <a class="code" href="../../d9/dc7/reco2__sce_8fcl.html#a0e083b6915f680c25fe54312670f914d">pandoraSCETrack</a>, <a class="code" href="../../d9/dc7/reco2__sce_8fcl.html#afcd32b25bf2901e5b9a7a67ed41a8751">pandoraSCEShower</a>, <a class="code" href="../../d9/dc7/reco2__sce_8fcl.html#ad7d1c2327dc37dfc8d9ab5c238b48183">pandoraSCECalo</a>, <a class="code" href="../../d9/dc7/reco2__sce_8fcl.html#a5966329e5b59998774a63002e0364070">pandoraSCEPid</a>]</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a>.trigger_paths: [ reco2_sce ]</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"># turn on space charge service</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.SpaceCharge.EnableCalSpatialSCE: <span class="keyword">true</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.SpaceCharge.EnableSimSpatialSCE: <span class="keyword">true</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.SpaceCharge.EnableSimEfieldSCE: <span class="keyword">true</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.SpaceCharge.EnableCalEfieldSCE: <span class="keyword">true</span></div>
 <div class="ttc" id="reco__sbnd_8fcl_html"><div class="ttname"><a href="../../df/df8/reco__sbnd_8fcl.html">reco_sbnd.fcl</a></div></div>
 <div class="ttc" id="run__icarus__flashfinder_8fcl_html_acb6c20654c148fe838d7915c7ebedcfb"><div class="ttname"><a href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a></div><div class="ttdeci">process_name drop raw::OpDetWaveforms_DataApr2016RecoStage1_saturation_ * physics</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/run__icarus__flashfinder_8fcl_source.html#l00052">run_icarus_flashfinder.fcl:52</a></div></div>
+<div class="ttc" id="reco2__sce_8fcl_html_a094254f8b87848bb75a5bf829328390f"><div class="ttname"><a href="../../d9/dc7/reco2__sce_8fcl.html#a094254f8b87848bb75a5bf829328390f">pandoraSCE</a></div><div class="ttdeci">process_name pandoraSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc7/reco2__sce_8fcl_source.html#l00015">reco2_sce.fcl:15</a></div></div>
+<div class="ttc" id="OnlineDecoder_8fcl_html_a0537db4dea1638cb5438c97430059f5b"><div class="ttname"><a href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a></div><div class="ttdeci">BEGIN_PROLOG daq daq pscale_event Meta decoded_stream services</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d82/OnlineDecoder_8fcl_source.html#l00014">OnlineDecoder.fcl:14</a></div></div>
+<div class="ttc" id="reco2__sce_8fcl_html_a0e083b6915f680c25fe54312670f914d"><div class="ttname"><a href="../../d9/dc7/reco2__sce_8fcl.html#a0e083b6915f680c25fe54312670f914d">pandoraSCETrack</a></div><div class="ttdeci">process_name pandoraSCETrack</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc7/reco2__sce_8fcl_source.html#l00015">reco2_sce.fcl:15</a></div></div>
+<div class="ttc" id="reco2__sce_8fcl_html_afcd32b25bf2901e5b9a7a67ed41a8751"><div class="ttname"><a href="../../d9/dc7/reco2__sce_8fcl.html#afcd32b25bf2901e5b9a7a67ed41a8751">pandoraSCEShower</a></div><div class="ttdeci">process_name pandoraSCEShower</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc7/reco2__sce_8fcl_source.html#l00015">reco2_sce.fcl:15</a></div></div>
+<div class="ttc" id="reco2__sce_8fcl_html_a5966329e5b59998774a63002e0364070"><div class="ttname"><a href="../../d9/dc7/reco2__sce_8fcl.html#a5966329e5b59998774a63002e0364070">pandoraSCEPid</a></div><div class="ttdeci">process_name pandoraSCEPid</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc7/reco2__sce_8fcl_source.html#l00015">reco2_sce.fcl:15</a></div></div>
+<div class="ttc" id="reco2__sce_8fcl_html_ad7d1c2327dc37dfc8d9ab5c238b48183"><div class="ttname"><a href="../../d9/dc7/reco2__sce_8fcl.html#ad7d1c2327dc37dfc8d9ab5c238b48183">pandoraSCECalo</a></div><div class="ttdeci">process_name pandoraSCECalo</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc7/reco2__sce_8fcl_source.html#l00015">reco2_sce.fcl:15</a></div></div>
 <div class="ttc" id="triggersim__eastmodule__icarus_8fcl_html_af2add7ab297ee1d26dfa1669347fcda6"><div class="ttname"><a href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#af2add7ab297ee1d26dfa1669347fcda6">process_name</a></div><div class="ttdeci">BEGIN_PROLOG sequence::SlidingWindowTriggerPatternsOppositeWindows END_PROLOG process_name</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db4/triggersim__eastmodule__icarus_8fcl_source.html#l00134">triggersim_eastmodule_icarus.fcl:134</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
