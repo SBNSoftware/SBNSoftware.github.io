@@ -5,7 +5,7 @@
 | CRT  | A.Aduszkiewicz, E.Yandel | [CAEN DT5702](CRT/CAEN_DT5702_readout.md) | ? |
 | PMT  |                |               |                        |
 | TPC  |                |               |                        |
-| trigger | Jacob?, Wes?, D.Torretta |               |                        |
+| trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
 | WR   | D.Torretta, W.Badgett, G.Lukhanin | [White Rabbit Timing System](WR/WhiteRabbit.md) |                        |
 
 To add: EventBuilder, DataLogger, Dispatcher, add section for SBND as needed?
