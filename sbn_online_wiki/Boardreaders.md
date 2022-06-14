@@ -1,15 +1,30 @@
-# List of BoardReaders
+# List of DAQ components
 
 | Name | Lead developers | Documentation | Documentation Complete |
 | ---- | -------------- | ------------- | ---------------------- |
 | CRT  | A.Aduszkiewicz, E.Yandel | [CAEN DT5702](CRT/CAEN_DT5702_readout.md) | ? |
 | PMT  |                |               |                        |
 | TPC  |                |               |                        |
-| trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
+| ICARUS trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
+| SBND trigger |  |               |                        |
 | WR   | D.Torretta, W.Badgett, G.Lukhanin | [White Rabbit Timing System](WR/WhiteRabbit.md) |                        |
+| | | | |
+| EventBuilders | | | |
+| Dispatchers | | | |
 
-To add: EventBuilder, DataLogger, Dispatcher, add section for SBND as needed?
+
+# Description of the columns
+## Lead developers
+Persons familiar with the code, in particular the part responsible for communication with the hardware.
+
+## Documentation
+The documentation should include:
+- overview of the communication with hardware,
+- description of FHiCL parameters. The FHiCL files include 1-line documentation for each parameters, but this is often insufficient. Here we can expand it with necessary details, including information why certain parameters were chosen.
+
+## ICARUS and SBND documentation
+In many cases ICARUS and SBND documentation is mostely identical, and it's easier to maintain one version of documentation, with a separate section explaining the differences between the two experiments.
 
 
-- **lead developer** – refers to person familiar with the code, in particular the part responsible for communication with the hardware.
-- **documentation** – We yet need to define what should be included in the documentation, and what criteria it should fulfill to be called "complete" (85% qs can be answered) or "will be complete by" <date> (configuration parameters, how they affect data taking, what typical parameters are), systematically go through each parameter of configuration, short explanation in fhicl file, long explanation in wiki page incl. why a selection was made
+## Documentation complete
+Realistically the documentation is considered complete if it can help to answer most of the questions that may arise about functioning of the boardreader.
