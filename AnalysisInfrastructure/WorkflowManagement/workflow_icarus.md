@@ -1,8 +1,9 @@
 # ICARUS Standard Workflows
 
 <details><summary>Data keep up processing</summary>
-stage0_multiTPC_icarus.fcl<br>
-stage1_multiTPC_icarus_gauss.fcl<br>
+stage0_multiTPC_splitstream_nofilter_icarus.fcl<br>
+stage1_multiTPC_nofilter_icarus_gauss.fcl (BNB time window)<br>
+stage1_multiTPC_nofilter_icarus_gauss_numi.fcl (NUMI time window)<br>
 </details>
 
 <details><summary>MC 2020</summary>
