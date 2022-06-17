@@ -22,4 +22,4 @@ Production uses the `data_stream`, `run_number`, and `data_tier` to construct di
 
 Currently we are using 1 standard fcl file in the stage 0 reconstruction `stage0_multiTPC_splitstream_nofilter_icarus.fcl`
 
-Meanwhile, there will be 2 different fcl files used in the stage 1 reconstruction depending on the beam spill or trigger type. We are running the `stage1_multiTPC_nofilter_icarus_gauss` for the BNB trigger/beam spill stage 0 files and `<new_numi_stage1_fcl>` for the NuMI trigger/beam spill stage 0 files.
+Meanwhile, there will be 2 different fcl files used in the stage 1 reconstruction depending on the beam spill or trigger type. We are running the `stage1_multiTPC_nofilter_icarus_gauss.fcl` for the BNB trigger/beam spill stage 0 files and `stage1_multiTPC_nofilter_icarus_gauss_numi.fcl` for the NuMI trigger/beam spill stage 0 files.
