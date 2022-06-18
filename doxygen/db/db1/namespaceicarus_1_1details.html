@@ -286,66 +286,66 @@ template&lt;typename ConfigMap &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html#l00385">385</a> of file <a class="el" href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html">TriggerConfigurationExtractor.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">    * Requirements: ConfigMap is a mapping type supporting iteration and whose</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">    * elements support structured assignment into a pair, the first element</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">    * being an identifier (process name, parameter set ID...) and the second</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">    * being a `fhicl::ParameterSet` with the configuration (or something</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">    * offering the same interface).</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">    * </span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">    * The plan is to look in all the FHiCL configuration fragments we can find</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">    * in the input config, and find all the useful configuration therein.</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">    * Given that there may be multiple input files, there may also be multiple</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">    * configurations for the same detector components.</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">    * In that case, we will extract parameters from each and every one of the</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">    * configurations, and throw an exception if they are not all consistent.</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">    * </span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">    * Consistency is tested only for the extracted parameters, not for the whole</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">    * FHiCL configuration fragment.</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">using</span> Key_t = std::tuple_element_t&lt;0U, typename ConfigMap::value_type&gt;;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    std::optional&lt;std::pair&lt;Key_t, icarus::TriggerConfiguration&gt;&gt; config;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// look in the global configuration for all parameter sets which contain</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="comment">// `configuration_documents` as a (direct) name;</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ <span class="keywordtype">id</span>, pset ]: configMap) {</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">if</span> (!extractor.<a class="code" href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#ab307f2b86c16bdde7c1d38549371742e">mayHaveConfiguration</a>(pset)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      fhicl::ParameterSet <span class="keyword">const</span> configDocs</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        = extractor.<a class="code" href="../../df/dfd/classicarus_1_1TriggerConfigurationExtractorBase.html#a368cea993b921e4153bc05b7c5d14c2b">convertConfigurationDocuments</a></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;          (pset, <span class="stringliteral">&quot;configuration_documents&quot;</span>, { std::regex{ <span class="stringliteral">&quot;icarustrigger.*&quot;</span> } })</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        ;</div>
+<p>Definition at line <a class="el" href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html#l00390">390</a> of file <a class="el" href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html">TriggerConfigurationExtractor.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">    * Requirements: ConfigMap is a mapping type supporting iteration and whose</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">    * elements support structured assignment into a pair, the first element</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">    * being an identifier (process name, parameter set ID...) and the second</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">    * being a `fhicl::ParameterSet` with the configuration (or something</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">    * offering the same interface).</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">    * </span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">    * The plan is to look in all the FHiCL configuration fragments we can find</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">    * in the input config, and find all the useful configuration therein.</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">    * Given that there may be multiple input files, there may also be multiple</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">    * configurations for the same detector components.</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">    * In that case, we will extract parameters from each and every one of the</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">    * configurations, and throw an exception if they are not all consistent.</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">    * </span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">    * Consistency is tested only for the extracted parameters, not for the whole</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">    * FHiCL configuration fragment.</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">using</span> Key_t = std::tuple_element_t&lt;0U, typename ConfigMap::value_type&gt;;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    std::optional&lt;std::pair&lt;Key_t, icarus::TriggerConfiguration&gt;&gt; config;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="comment">// look in the global configuration for all parameter sets which contain</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="comment">// `configuration_documents` as a (direct) name;</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ <span class="keywordtype">id</span>, pset ]: configMap) {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <span class="keywordflow">if</span> (!extractor.<a class="code" href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#ab307f2b86c16bdde7c1d38549371742e">mayHaveConfiguration</a>(pset)) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <a class="code" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a> candidateConfig = extractor.<a class="code" href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#a528aff576c0a4125f9de40076d8762db">extract</a>(configDocs);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">if</span> (config) {</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">if</span> (config-&gt;second == candidateConfig) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        mf::LogError log(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot;Found two candidate configurations differring:&quot;</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;          <span class="stringliteral">&quot;\nFirst [&quot;</span> &lt;&lt; config-&gt;first &lt;&lt; <span class="stringliteral">&quot;]:\n&quot;</span> &lt;&lt; config-&gt;second</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;\nSecond [&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;]:\n&quot;</span> &lt;&lt; candidateConfig</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;          ;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>)</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;extractTriggerReadoutConfiguration() found inconsistent configurations.\n&quot;</span>;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      } <span class="comment">// if incompatible configurations</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      config.emplace(std::move(<span class="keywordtype">id</span>), std::move(candidateConfig));</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    } <span class="comment">// for all configuration documents</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">if</span> (!config) {</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>)</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;extractTriggerReadoutConfiguration() could not find a suitable configuration.\n&quot;</span>;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      fhicl::ParameterSet <span class="keyword">const</span> configDocs</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        = extractor.<a class="code" href="../../df/dfd/classicarus_1_1TriggerConfigurationExtractorBase.html#a368cea993b921e4153bc05b7c5d14c2b">convertConfigurationDocuments</a></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;          (pset, <span class="stringliteral">&quot;configuration_documents&quot;</span>, { std::regex{ <span class="stringliteral">&quot;icarustrigger.*&quot;</span> } })</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        ;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      </div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <a class="code" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a> candidateConfig = extractor.<a class="code" href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#a528aff576c0a4125f9de40076d8762db">extract</a>(configDocs);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="keywordflow">if</span> (config) {</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">if</span> (config-&gt;second == candidateConfig) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        mf::LogError log(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot;Found two candidate configurations differring:&quot;</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;          <span class="stringliteral">&quot;\nFirst [&quot;</span> &lt;&lt; config-&gt;first &lt;&lt; <span class="stringliteral">&quot;]:\n&quot;</span> &lt;&lt; config-&gt;second</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;\nSecond [&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;]:\n&quot;</span> &lt;&lt; candidateConfig</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;          ;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;extractTriggerReadoutConfiguration() found inconsistent configurations.\n&quot;</span>;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      } <span class="comment">// if incompatible configurations</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      config.emplace(std::move(<span class="keywordtype">id</span>), std::move(candidateConfig));</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    } <span class="comment">// for all configuration documents</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span> std::move(config-&gt;second);</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  } <span class="comment">// extractPMTreadoutConfigurationImpl(ConfigMap)</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">if</span> (!config) {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;extractTriggerReadoutConfiguration&quot;</span>)</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;extractTriggerReadoutConfiguration() could not find a suitable configuration.\n&quot;</span>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">return</span> std::move(config-&gt;second);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  } <span class="comment">// extractPMTreadoutConfigurationImpl(ConfigMap)</span></div>
 <div class="ttc" id="classicarus_1_1TriggerConfigurationExtractorBase_html_a368cea993b921e4153bc05b7c5d14c2b"><div class="ttname"><a href="../../df/dfd/classicarus_1_1TriggerConfigurationExtractorBase.html#a368cea993b921e4153bc05b7c5d14c2b">icarus::TriggerConfigurationExtractorBase::convertConfigurationDocuments</a></div><div class="ttdeci">static fhicl::ParameterSet convertConfigurationDocuments(fhicl::ParameterSet const &amp;container, std::string const &amp;configListKey, std::initializer_list&lt; std::regex const  &gt; components)</div><div class="ttdoc">Returns a parameter set with the content of configuration_documents key from container. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00022">TriggerConfigurationExtractor.cxx:22</a></div></div>
 <div class="ttc" id="structicarus_1_1TriggerConfiguration_html"><div class="ttname"><a href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/TriggerConfiguration_8h_source.html#l00031">TriggerConfiguration.h:31</a></div></div>
-<div class="ttc" id="classicarus_1_1TriggerConfigurationExtractor_html_ab307f2b86c16bdde7c1d38549371742e"><div class="ttname"><a href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#ab307f2b86c16bdde7c1d38549371742e">icarus::TriggerConfigurationExtractor::mayHaveConfiguration</a></div><div class="ttdeci">static bool mayHaveConfiguration(fhicl::ParameterSet const &amp;pset)</div><div class="ttdoc">Returns whether pset may contain the needed configuration. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html#l00323">TriggerConfigurationExtractor.h:323</a></div></div>
+<div class="ttc" id="classicarus_1_1TriggerConfigurationExtractor_html_ab307f2b86c16bdde7c1d38549371742e"><div class="ttname"><a href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#ab307f2b86c16bdde7c1d38549371742e">icarus::TriggerConfigurationExtractor::mayHaveConfiguration</a></div><div class="ttdeci">static bool mayHaveConfiguration(fhicl::ParameterSet const &amp;pset)</div><div class="ttdoc">Returns whether pset may contain the needed configuration. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d3b/TriggerConfigurationExtractor_8h_source.html#l00326">TriggerConfigurationExtractor.h:326</a></div></div>
 <div class="ttc" id="classicarus_1_1TriggerConfigurationExtractor_html_a528aff576c0a4125f9de40076d8762db"><div class="ttname"><a href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html#a528aff576c0a4125f9de40076d8762db">icarus::TriggerConfigurationExtractor::extract</a></div><div class="ttdeci">icarus::TriggerConfiguration extract(fhicl::ParameterSet const &amp;config) const </div><div class="ttdoc">Extracts all supported Trigger configuration from config. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d84/TriggerConfigurationExtractor_8cxx_source.html#l00114">TriggerConfigurationExtractor.cxx:114</a></div></div>
 </div><!-- fragment -->
 </div>

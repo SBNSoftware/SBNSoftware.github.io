@@ -111,6 +111,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6feb0a0c43e50e345d72295914257813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26b1dccdb1471f9e47871f873db275a6"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a26b1dccdb1471f9e47871f873db275a6">UseG4RefTimeOffset</a></td></tr>
 <tr class="separator:a26b1dccdb1471f9e47871f873db275a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae336d04bf627bc29aacd498e1c6459"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#acae336d04bf627bc29aacd498e1c6459">PropDelay</a></td></tr>
+<tr class="separator:acae336d04bf627bc29aacd498e1c6459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80079957e9a1dac6d0d45862b82cf058"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a80079957e9a1dac6d0d45862b82cf058">TDelayNorm</a></td></tr>
+<tr class="separator:a80079957e9a1dac6d0d45862b82cf058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2581e1cf6c076a5a3b699b6883521a2b"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a2581e1cf6c076a5a3b699b6883521a2b">TDelayShift</a></td></tr>
+<tr class="separator:a2581e1cf6c076a5a3b699b6883521a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d0312873ece45eaf03cda281ce78b2"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a00d0312873ece45eaf03cda281ce78b2">TDelaySigma</a></td></tr>
+<tr class="separator:a00d0312873ece45eaf03cda281ce78b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f053c7e8863e9d422b31094ebfdfcf1"><td class="memItemLeft" align="right" valign="top">fhicl::Atom&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a9f053c7e8863e9d422b31094ebfdfcf1">TDelayOffset</a></td></tr>
+<tr class="separator:a9f053c7e8863e9d422b31094ebfdfcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -181,6 +191,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acae336d04bf627bc29aacd498e1c6459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fhicl::Atom&lt;double&gt; sbnd::CRTHitRecoAlg::Config::PropDelay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a064506b7deb9774591fe3ff608ae11a2">Name</a>(<span class="stringliteral">&quot;PropDelay&quot;</span>),</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a464dcdfc23aebeb11b3294807e8a4c60">Comment</a>(<span class="stringliteral">&quot;Delay in pulse arrival time [ns/m]&quot;</span>),</div>
+<div class="line">      }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00118">118</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2632a9fb1942bc3d1f187e7a7cac5c5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -214,6 +242,78 @@ Public Attributes</h2></td></tr>
 <div class="line">      }</div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00090">90</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80079957e9a1dac6d0d45862b82cf058"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fhicl::Atom&lt;double&gt; sbnd::CRTHitRecoAlg::Config::TDelayNorm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a064506b7deb9774591fe3ff608ae11a2">Name</a>(<span class="stringliteral">&quot;TDelayNorm&quot;</span>),</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a464dcdfc23aebeb11b3294807e8a4c60">Comment</a>(<span class="stringliteral">&quot;Time delay fit: Gaussian normalization&quot;</span>),</div>
+<div class="line">      }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00122">122</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f053c7e8863e9d422b31094ebfdfcf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fhicl::Atom&lt;double&gt; sbnd::CRTHitRecoAlg::Config::TDelayOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a064506b7deb9774591fe3ff608ae11a2">Name</a>(<span class="stringliteral">&quot;TDelayOffset&quot;</span>),</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a464dcdfc23aebeb11b3294807e8a4c60">Comment</a>(<span class="stringliteral">&quot;Time delay fit: Gaussian baseline offset&quot;</span>),</div>
+<div class="line">      }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00134">134</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2581e1cf6c076a5a3b699b6883521a2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fhicl::Atom&lt;double&gt; sbnd::CRTHitRecoAlg::Config::TDelayShift</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a064506b7deb9774591fe3ff608ae11a2">Name</a>(<span class="stringliteral">&quot;TDelayShift&quot;</span>),</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a464dcdfc23aebeb11b3294807e8a4c60">Comment</a>(<span class="stringliteral">&quot;Time delay fit: Gaussian x shift&quot;</span>),</div>
+<div class="line">      }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00126">126</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00d0312873ece45eaf03cda281ce78b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fhicl::Atom&lt;double&gt; sbnd::CRTHitRecoAlg::Config::TDelaySigma</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a064506b7deb9774591fe3ff608ae11a2">Name</a>(<span class="stringliteral">&quot;TDelaySigma&quot;</span>),</div>
+<div class="line">        <a class="code" href="../../de/d93/structsbnd_1_1CRTHitRecoAlg_1_1Config.html#a464dcdfc23aebeb11b3294807e8a4c60">Comment</a>(<span class="stringliteral">&quot;Time delay fit: Gaussian width&quot;</span>),</div>
+<div class="line">      }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00130">130</a> of file <a class="el" href="../../de/d07/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">sbndcode/sbndcode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
 
 </div>
 </div>

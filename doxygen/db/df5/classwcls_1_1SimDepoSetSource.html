@@ -331,13 +331,14 @@ Private Attributes</h2></td></tr>
 
 <p>IDepoSetSource. </p>
 
-<p>Definition at line <a class="el" href="../../d6/df9/SimDepoSetSource_8cxx_source.html#l00256">256</a> of file <a class="el" href="../../d6/df9/SimDepoSetSource_8cxx_source.html">SimDepoSetSource.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.empty()) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    out = std::make_shared&lt;WireCell::SimpleDepoSet&gt;(<a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a4d47290a4d1edd28909cad0b692610e5">m_count</a>, <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>);</div>
+<p>Definition at line <a class="el" href="../../d6/df9/SimDepoSetSource_8cxx_source.html#l00255">255</a> of file <a class="el" href="../../d6/df9/SimDepoSetSource_8cxx_source.html">SimDepoSetSource.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.empty()) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    out = std::make_shared&lt;WireCell::SimpleDepoSet&gt;(<a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a4d47290a4d1edd28909cad0b692610e5">m_count</a>, <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.clear();</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    ++<a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a4d47290a4d1edd28909cad0b692610e5">m_count</a>;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -475,8 +476,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="../../d8/df5/messageservice_8fcl.html#a8d1a8a85a0b2a30cac1090ea528dd015">std::cerr</a> &lt;&lt; <span class="stringliteral">&quot;SimDepoSetSource: ready with &quot;</span> &lt;&lt; <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.size() &lt;&lt; <span class="stringliteral">&quot; depos spanning: [&quot;</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;              &lt;&lt; <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.front()-&gt;time()/units::us &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;              &lt;&lt; <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.back()-&gt;time()/units::us &lt;&lt; <span class="stringliteral">&quot;]us\n&quot;</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">m_depos</a>.push_back(<span class="keyword">nullptr</span>); <span class="comment">// EOS marker</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 <div class="ttc" id="classwcls_1_1SimDepoSetSource_html_a6f2866d05ee17b63f53fc50a80851adc"><div class="ttname"><a href="../../db/df5/classwcls_1_1SimDepoSetSource.html#a6f2866d05ee17b63f53fc50a80851adc">wcls::SimDepoSetSource::m_depos</a></div><div class="ttdeci">WireCell::IDepo::vector m_depos</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d87/SimDepoSetSource_8h_source.html#l00040">SimDepoSetSource.h:40</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a697017f6ca07cbb4f47653babf318012"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a697017f6ca07cbb4f47653babf318012">pdg</a></div><div class="ttdeci">var pdg</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00014">selectors.fcl:14</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a8d1a8a85a0b2a30cac1090ea528dd015"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a8d1a8a85a0b2a30cac1090ea528dd015">cerr</a></div><div class="ttdeci">BEGIN_PROLOG could also be cerr</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
