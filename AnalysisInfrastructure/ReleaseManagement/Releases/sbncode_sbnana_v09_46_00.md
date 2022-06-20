@@ -1,10 +1,10 @@
 ---
 layout: page
-title: sbncode_v09_46_00
+title: sbncode_sbnana_v09_46_00
 toc: true
 ---
 
-sbncode_v09_46_00 Release Notes
+sbncode_sbnana_v09_46_00 Release Notes
 =======================================================================================
 
 [List of sbncode releases](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases)
