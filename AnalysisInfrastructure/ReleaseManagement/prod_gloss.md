@@ -3,7 +3,7 @@
 
 [List of available samples](https://sbnsoftware.github.io/sbn/sbnprod_wiki/sample)
 
-## Production SBN 2022A (pending)
+## Production SBN 2022A (May, 2022)
 
 ### Final production campaign to be launched for 2022 conference season; support ICARUS first neutrino data and ICARUS+SBND simulation, and SBND commissioning samples
 
