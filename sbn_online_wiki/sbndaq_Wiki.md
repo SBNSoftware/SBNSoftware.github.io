@@ -36,6 +36,7 @@ Grafana monitoring Instructions
 * [Restart Grafana](RestartGrafana)
 * [Configure runrecords_monitor.sh](RunRecordsMonitor)
 * [Configure disk_monitor.shh](DiskMonitor)
+* [Add a panel in Grafana](PanelGrafana)
 
 
 Release Instructions
