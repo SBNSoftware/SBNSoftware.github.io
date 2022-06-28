@@ -1,4 +1,5 @@
 If the metric you want to display on Grafana is already monitored by a script running on evb machines then you only need to add a new panel on Grafana.
+-	Login to Grafana as “admin” user (ask to Gennadiy for the password)
 -	Go to “Shifter DAQ Status” page
 -	Click on “Add Panel” on the top right of the page:
 
