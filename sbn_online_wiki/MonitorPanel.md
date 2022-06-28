@@ -11,10 +11,10 @@ If the metric you want to display on Grafana is already monitored by a script ru
 
 -	Modify the title and add a description in “Panel options” on the right
 -	Go to select metric and select:
-o	Icarus
-o	The machine or the component you want to monitor
-o	The partition you want to monitor
-o	The metric you are interested to monitor
+  -	  Icarus
+  -   The machine or the component you want to monitor
+  -   the partition you want to monitor
+  -   the metric you are interested to monitor
 -	Click on “Time series” on the the top right part of the page and select the type of visualization you want to use for the monitoring (Graph, Gauge, Table etc)
 
 ![immagine](https://user-images.githubusercontent.com/97683442/176136353-2e4a4b4c-942d-4476-b723-a84970614182.png)
