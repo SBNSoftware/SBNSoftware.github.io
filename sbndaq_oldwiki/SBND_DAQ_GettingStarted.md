@@ -47,7 +47,7 @@ open two terminal windows.  For each
  - login as sbnd on sbnd-gateway01.fnal.gov
  - ssh to sbnd-evb04
  - (optional: start a tmux session)
- - source "mstancar_launchdaq.sh" 
+ - source "crt_launchdaq.sh" 
  
  In one window, type "DAQInterface"
  
