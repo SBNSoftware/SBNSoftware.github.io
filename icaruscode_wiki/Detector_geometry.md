@@ -148,14 +148,22 @@ Remember that legacy configurations may be retired after a while.
 In such cases, reverting to a previous `icaruscode` version
 is the only way to properly process the legacy samples.
 
+There may also be drop-in configuration files setting up a legacy geometry (and possibly other settings proper for their legacy context).
+Instructions to use them are provided in the [following section](#drop-in-configurations). The available drop-in configurations for legacy geometries are:
 
-### `icaruscode` versions `v08_52_00` and later:
+name                                              | introduced  | removed     | description                                                            
+------------------------------------------------- | ----------- | ----------- | ---------------------------------------------------------------------- 
+`services_compat_icarus_v3.fcl`                   | `v09_53_02` |             | `icarus_v3` default geometry (i.e. no overburden)
+
+
+
+### Drop-in configurations
 
 Geometry can be selected by including one of the predefined
 configurations defined in
 [`icarusalg/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
 which also has documentation on how to do that.
-For some selected geometry configurations, drop-in FHiCL files are
+For some selected geometry configurations, drop-in FHiCL files are also
 available which change the geometry of a job configuration into a
 different one.
 For example, say you need to run a cosmic ray generation job as defined
@@ -173,71 +181,23 @@ where we have used the drop-in configuration
 _[note that there is a `prodcorsika_overburden_icarus.fcl` for this
 specific example...]_
 
-The available drop in configurations are:
+The available drop-in configurations for geometry options are:
 
-name                                              | introduced  | description                                                            | defaults: `v08_52_00`
-------------------------------------------------- | ----------- | ---------------------------------------------------------------------- | ----------------
-`use_overburden_geometry_icarus.fcl`              | `v08_52_00` | default geometry with the addition of concrete overburden              | _9-m first induction plane wires_
-`use_nooverburden_geometry_icarus.fcl`            | `v08_52_00` | default geometry but without the concrete overburden                   | _9-m first induction plane wires_
-`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | 18-m first induction plane wires geometry with default overburden      | _no overburden_ _(see note below)_
-`use_singlewire_nooverburden_geometry_icarus.fcl` | `v08_52_00` | 18-m first induction plane wires without the concrete overburden       | _(see note below)_
-`use_singlewire_overburden_geometry_icarus.fcl`   | `v08_52_00` | 18-m first induction plane wires geometry with the concrete overburden | _(see note below)_
-`use_splitwire_geometry_icarus.fcl`               | `v08_52_00` | 9-m first induction plane wires geometry with default overburden       | _no overburden_
-`use_splitwire_nooverburden_geometry_icarus.fcl`  | `v08_52_00` | 9-m first induction plane wires without the concrete overburden
-`use_splitwire_overburden_geometry_icarus.fcl`    | `v08_52_00` | 9-m first induction plane wires geometry with the concrete overburden
+name                                              | introduced  | removed     | description                                                            | defaults: `v08_52_00`
+------------------------------------------------- | ----------- | ----------- | ---------------------------------------------------------------------- | ----------------
+`use_overburden_geometry_icarus.fcl`              | `v08_52_00` | `v09_53_02` | default geometry with the addition of concrete overburden              | _9-m first induction plane wires_
+`use_nooverburden_geometry_icarus.fcl`            | `v08_52_00` | `v09_53_02` | default geometry but without the concrete overburden                   | _9-m first induction plane wires_
+`use_singlewire_geometry_icarus.fcl`              | `v08_52_00` | `v09_32_01` | 18-m first induction plane wires geometry with default overburden      | _no overburden_
+`use_singlewire_nooverburden_geometry_icarus.fcl` |             |             | 18-m first induction plane wires without the concrete overburden
+`use_singlewire_overburden_geometry_icarus.fcl`   |             |             | 18-m first induction plane wires geometry with the concrete overburden
+`use_splitwire_geometry_icarus.fcl`               | `v08_52_00` | `v09_53_02` | 9-m first induction plane wires geometry with default overburden       | _no overburden_
+`use_splitwire_nooverburden_geometry_icarus.fcl`  |             |             | 9-m first induction plane wires without the concrete overburden
+`use_splitwire_overburden_geometry_icarus.fcl`    |             |             | 9-m first induction plane wires geometry with the concrete overburden
 
-> **Note: breaking change with respect to `v08_50_02` and earlier**: 
-> the configurations `use_overburden_geometry_icarus.fcl` and
-> `use_nooverburden_geometry_icarus.fcl` used to directly select a
-> specific geometry. Now they rely on what is defined as "default"
-> geometry in [`icarusalg/Geometry/geometry_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl)
-> for their respective categories (for example, in `v08_52_00`
-> both geometries default to the split 9-m long wire versions).
-
-> **Note**:  PMT channel mapping is also different in the two geometry types:
-> if photon visibility is needed (`PhotonVisibilityService`)
-> and a old photon library (like the one from August 2018) is being used,
-> it needs a specific configuration; this is for _the_ August 2018 photon library:
->     
->     PhotonVisibilityService: @local::icarus_legacy_photonvisibilityservice_v08_50_00
->     
-> A complete service configuration for that purpose is also provided
-> (**as-is**!) as `icarus_legacy_services_v08_50_00` in
-> [`fcl/services/services_icarus_simulation.fcl`](https://github.com/SBNSoftware/icaruscode/blob/develop/fcl/services/services_icarus_simulation.fcl),
-> that can be used as
->
->     services: @local::icarus_legacy_services_v08_50_00
->
-> and pulls in most ICARUS simulation services, but still requires careful check.
-
-> **Note** (yet another): detector geometry description files have been moved
+> **Note**: detector geometry description files have been moved
 > from [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
 > into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
 > starting with ICARUS software release `v09_06_00` (October 2020).
-
-
-### `icaruscode` versions `v08_51_00` and earlier
-
-Geometry can be selected by including one of the predefined
-configurations defined in
-[icaruscode/Geometry/geometry_icarus.fcl](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/geometry_icarus.fcl),
-which also has documentation on how to do that.
-The procedures are the same as documented for the newer versions.
-The drop-in configurations also work as above, but with two relevant
-differences.
-First, fewer configurations are available here, changing only the
-overburden setting.
-Second, each of the drop in configurations explicitly selects a specific
-geometry (namely, the one with single 18-m long wires on the first
-induction plane).
-
-The available drop in configurations are:
-
-name                                   | introduced  | description
--------------------------------------- | ----------- | ---------------------------------------------------------------------
-`use_overburden_geometry_icarus.fcl`   | `v08_44_00` | 18-m first induction plane wires geometry with concrete overburden
-`use_nooverburden_geometry_icarus.fcl` | `v08_44_00` | 18-m first induction plane wires geometry without concrete overburden
-
 
 ### Geometry compatibility checks
 
@@ -375,4 +335,12 @@ Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0
 
 ICARUS position w.r.t. NuMI coordinates is described in [SBN DocDB 22998](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=22998) (August 2021).
 Detector position for MC was updated in the [`icaruscode` pull request #230](https://github.com/SBNSoftware/icaruscode/pull/230)/
+
+
+## Information phased out of this wiki
+
+The following information has been removed from this page; look for it in GIT history if needed.
+
+* [`icaruscode` versions `v08_51_00` and earlier](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/83a33e9236c4a88babd003627a62b87a279c3a6b/icaruscode_wiki/Detector_geometry.md)
+
 
