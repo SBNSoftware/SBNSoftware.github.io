@@ -9,7 +9,7 @@ toc: true
 Geometry description versions
 ------------------------------
 
-**Breaking changes in geometry: `v09_18_00`, `v08_57_00`.**
+**Breaking changes in geometry: `v09_53_02`, `v09_25_00`, `v09_18_00`, `v08_57_00`.**
 
 
 Detector geometry description is currently stored in GDML format as a
