@@ -44,17 +44,19 @@ CRT T1 reset: BES from AD's fiber to TTL converter
 -----------------------------
 
 open two terminal windows.  For each 
- - login as sbnd on sbnd-gateway01.fnal.gov
- - ssh to sbnd-evb04
- - (optional: start a tmux session)
+ - ssh to sbnd-gateway01.fnal.gov
+ - from gateway ssh to sbnd-evb04 (as sbnd)
+ - (optional: start a tmux or screen session)
  - source "crt_launchdaq.sh" 
  
- In one window, type "DAQInterface"
+ In one window, type "DAQInterface" or "DAQInterface &"
+ 
+(NOTE: You can not close the terminal, disconnect it from the internet, close your laptop, etc. when the DAQInterface is open in your terminal or the    DAQ will disconnect. Additionally, when running the DAQ, a Message Viewer window opens from this terminal. Running in a screen or tmux session on evb04 allows to disconnect from the screen/tmux session without crashing the DAQ. The Message Viewer will remain visible until you exit the evb04 ssh session or close the window. There is no way to reopen it again without starting a new run. Using a VNC (instructions to come) can help get around this issue.)
  
  In the other window, 
  (1) look at the file "run" and find the line with setdaqcomps.sh
  You will find a list of things that will be included in the DAQ run, add or delete what you (don't) need. 
-  - pmtx02 is the 1730 digitizer connected to link 1, in the Xarapuca crate on the right
+  - pmtx03 is the 1730 digitizer connected to pds03 link 1, in the Xarapuca crate on the left
   - crt2x2upstr is just what it sounds like - all 4 modules on the upstream (south) frame
   - crt2x2dwnstr is just what it sounds like - all 4 modules on the downstream (north) frame
   - crt_test is the test setup on the A-frame
@@ -65,10 +67,10 @@ open two terminal windows.  For each
  
  Type ./run to  start the run and type ./stop to stop the run
  
- The data will magically appear in /daq/scratch/data/.  It is suggested to make a directory for your data here and move it there at the end of the day each day.
+ The data will magically appear in /daq/scratch/crtdata/.  It is suggested to make a directory for your data here and move it there at the end of the day each day.
  
  (3) setup - specified in knownboardreaders.txt 
- pmtx02 boardreader is on sbnd-pds03
+ pmtx03 boardreader is on sbnd-pds03
  crt board readers are on sbnd-pds05
  WR board reader is on sbnd-clk01
  PTB board reader is on sbnd-ptb01
