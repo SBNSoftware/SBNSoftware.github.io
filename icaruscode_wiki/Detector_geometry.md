@@ -22,10 +22,9 @@ different from the one configured in the current job
 (override with `services.Geometry.SkipConfigurationCheck: true`).
 
 
-| version      | introduced  | default     | file path                                                                   | based on    | description
-| ------------ | ----------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
-|              | _not yet_   |             | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `20210527`  | closer cryostats, added building and CRT details; with concrete overburden
-|              | _not yet_   |             | `icarusalg/Geometry/gdml/icarus_complete_20220518_no_overburden.gdml`       | `20210527`  | closer cryostats, added building and CRT details; with no concrete overburden
+| version      | introduced                  | default     | file path                                                                   | based on    | description
+| ------------ | --------------------------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
+| `icarus_v4`  | `v09_53_02`, `v09_37_02_09` | `v09_53_02` | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `icarus_v3` | updated CRT module positions
 | `icarus_v3`  | `v09_25_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`          | `icarus_v2` | closer cryostats, added building details; with concrete overburden
 | `icarus_v3`  | `v09_25_00` | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `icarus_v2` | closer cryostats, added building details; with no concrete overburden
 | `icarus_v2`* | `v09_18_00` |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107`  | fixed orientation of wires, with concrete overburden
@@ -39,6 +38,7 @@ different from the one configured in the current job
 > 
 > _*_ _*_ _The detector name configured for these geometry descriptions is `icarus_splitwires`._
 
+> _Note_: since `icarus_v4` geometry, no-overburden geometry is not provided any more.
 
 ### Older versions
 
@@ -135,6 +135,7 @@ Versions are listed and explained in the [paragraph above](#geometry-description
 
 | applies to samples with | availability | configuration bundle name                                         | notes                                  |
 | ----------------------- | ------------ | ----------------------------------------------------------------- | -------------------------------------- |
+| `icarus_v3`             | `v09_53_02`  | `icarus_geometry_services_legacy_icarus_v3`                       | standard configuration (no overburden) |
 | `icarus_v2`             | `v09_25_00`  | `icarus_geometry_services_legacy_icarus_v2`                       | standard configuration (no overburden) |
 |                         |              | `icarus_geometry_services_no_overburden_legacy_icarus_v2`         | no overburden (same as standard)       |
 |                         |              | `icarus_geometry_services_overburden_legacy_icarus_v2`            | with 3-m concrete overburden           |
