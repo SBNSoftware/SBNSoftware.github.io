@@ -137,6 +137,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0004260b6ca7c08b8bb2543e0978f554"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d3/d98/classcaf_1_1SRCRTTrack.html">SRCRTTrack</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html#a0004260b6ca7c08b8bb2543e0978f554">crt_tracks</a></td></tr>
 <tr class="memdesc:a0004260b6ca7c08b8bb2543e0978f554"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRT tracks in event.  <a href="#a0004260b6ca7c08b8bb2543e0978f554">More...</a><br/></td></tr>
 <tr class="separator:a0004260b6ca7c08b8bb2543e0978f554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f1460ae2e0d5f268733df011f8a791"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html#a98f1460ae2e0d5f268733df011f8a791">nopflashes</a></td></tr>
+<tr class="memdesc:a98f1460ae2e0d5f268733df011f8a791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of OpFlashes in spill.  <a href="#a98f1460ae2e0d5f268733df011f8a791">More...</a><br/></td></tr>
+<tr class="separator:a98f1460ae2e0d5f268733df011f8a791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba196f9400aabf944adcc2f74a381cd6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/d78/classcaf_1_1SROpFlash.html">SROpFlash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html#aba196f9400aabf944adcc2f74a381cd6">opflashes</a></td></tr>
+<tr class="memdesc:aba196f9400aabf944adcc2f74a381cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of OpFlashes in spill.  <a href="#aba196f9400aabf944adcc2f74a381cd6">More...</a><br/></td></tr>
+<tr class="separator:aba196f9400aabf944adcc2f74a381cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75a262722cd1139c133fe56082f4987"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html#aa75a262722cd1139c133fe56082f4987">pass_flashtrig</a></td></tr>
 <tr class="memdesc:aa75a262722cd1139c133fe56082f4987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this Record passed the Flash Trigger requirement.  <a href="#aa75a262722cd1139c133fe56082f4987">More...</a><br/></td></tr>
 <tr class="separator:aa75a262722cd1139c133fe56082f4987"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +150,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html" title="The StandardRecord is the primary top-level object in the Common Analysis File trees. ">StandardRecord</a> is the primary top-level object in the Common Analysis File trees. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00025">25</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00027">27</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a39e6aa96990ed7945c545184398471bd"></a>
 <div class="memitem">
@@ -166,9 +172,9 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../dc/d78/classcaf_1_1StandardRecord.html#a87045d3b3ce12dc6fa428f69e2c8d266">reco</a>(),</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../dc/d78/classcaf_1_1StandardRecord.html#aa516d06c2a593036e25990664094f22c">mc</a>()</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {  }</div>
-<div class="ttc" id="classcaf_1_1StandardRecord_html_a0bb1ea678d47b6e4dcd892a98bd52bac"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#a0bb1ea678d47b6e4dcd892a98bd52bac">caf::StandardRecord::hdr</a></div><div class="ttdeci">SRHeader hdr</div><div class="ttdoc">Header branch: run, subrun, etc. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00032">StandardRecord.h:32</a></div></div>
-<div class="ttc" id="classcaf_1_1StandardRecord_html_a87045d3b3ce12dc6fa428f69e2c8d266"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#a87045d3b3ce12dc6fa428f69e2c8d266">caf::StandardRecord::reco</a></div><div class="ttdeci">SRSliceRecoBranch reco</div><div class="ttdoc">Slice reco branch: tracks, showers, etc. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00034">StandardRecord.h:34</a></div></div>
-<div class="ttc" id="classcaf_1_1StandardRecord_html_aa516d06c2a593036e25990664094f22c"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#aa516d06c2a593036e25990664094f22c">caf::StandardRecord::mc</a></div><div class="ttdeci">SRTruthBranch mc</div><div class="ttdoc">Truth branch for all interactions. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00035">StandardRecord.h:35</a></div></div>
+<div class="ttc" id="classcaf_1_1StandardRecord_html_a0bb1ea678d47b6e4dcd892a98bd52bac"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#a0bb1ea678d47b6e4dcd892a98bd52bac">caf::StandardRecord::hdr</a></div><div class="ttdeci">SRHeader hdr</div><div class="ttdoc">Header branch: run, subrun, etc. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00034">StandardRecord.h:34</a></div></div>
+<div class="ttc" id="classcaf_1_1StandardRecord_html_a87045d3b3ce12dc6fa428f69e2c8d266"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#a87045d3b3ce12dc6fa428f69e2c8d266">caf::StandardRecord::reco</a></div><div class="ttdeci">SRSliceRecoBranch reco</div><div class="ttdoc">Slice reco branch: tracks, showers, etc. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00036">StandardRecord.h:36</a></div></div>
+<div class="ttc" id="classcaf_1_1StandardRecord_html_aa516d06c2a593036e25990664094f22c"><div class="ttname"><a href="../../dc/d78/classcaf_1_1StandardRecord.html#aa516d06c2a593036e25990664094f22c">caf::StandardRecord::mc</a></div><div class="ttdeci">SRTruthBranch mc</div><div class="ttdoc">Truth branch for all interactions. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6f/StandardRecord_8h_source.html#l00037">StandardRecord.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,7 +212,7 @@ Public Attributes</h2></td></tr>
 
 <p>CRT hits in event. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00044">44</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00046">46</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +228,7 @@ Public Attributes</h2></td></tr>
 
 <p>CRT tracks in event. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00046">46</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00048">48</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +244,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of fake-reco slices. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00040">40</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00042">42</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +260,7 @@ Public Attributes</h2></td></tr>
 
 <p>Header branch: run, subrun, etc. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00032">32</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +276,7 @@ Public Attributes</h2></td></tr>
 
 <p>Truth branch for all interactions. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00035">35</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00037">37</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +292,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of CRT hits in event. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00043">43</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00045">45</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +308,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of CRT tracks in event. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00045">45</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00047">47</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +324,23 @@ Public Attributes</h2></td></tr>
 
 <p>Number of Fake-Reco's in list. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00039">39</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98f1460ae2e0d5f268733df011f8a791"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int caf::StandardRecord::nopflashes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of OpFlashes in spill. </p>
+
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00049">49</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +356,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of slices in list. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00037">37</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00039">39</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +372,23 @@ Public Attributes</h2></td></tr>
 
 <p>Number of true particles in list. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00043">43</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba196f9400aabf944adcc2f74a381cd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/d78/classcaf_1_1SROpFlash.html">SROpFlash</a>&gt; caf::StandardRecord::opflashes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of OpFlashes in spill. </p>
+
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00050">50</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +404,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether this Record passed the Flash Trigger requirement. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00049">49</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00052">52</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +420,7 @@ Public Attributes</h2></td></tr>
 
 <p>Slice reco branch: tracks, showers, etc. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00034">34</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00036">36</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +436,7 @@ Public Attributes</h2></td></tr>
 
 <p>Slice branch. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00038">38</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00040">40</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +452,7 @@ Public Attributes</h2></td></tr>
 
 <p>True particles in spill. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00042">42</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html#l00044">44</a> of file <a class="el" href="../../d6/d6f/StandardRecord_8h_source.html">StandardRecord.h</a>.</p>
 
 </div>
 </div>
