@@ -16,12 +16,13 @@ See the (soon to be done) section on getting `sbndcode` offsite for more detaile
 List of `sbndcode` releases
 ------------------------------------------------------------------------
 
-**Release manager**: [Patrick Green](mailto:patrick.green-3@postgrad.manchester.ac.uk)
+**Release manager**: [Fran Nicolás](mailto:fjnicolas@ugr.es)
 
 These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|--------------------------------------------
+  |`v09_54_00`                  |    Weekly release                           |    [Release Notes](ReleaseNotes095400.html)
   |`v09_53_02`                  |    Weekly release                           |    [Release Notes](ReleaseNotes095302.html)
   |`v09_53_01`                  |    Weekly release                           |    [Release Notes](ReleaseNotes095301.html)
   |`v09_53_00_01`               |    Weekly release                           |    [Release Notes](ReleaseNotes09530001.html)
