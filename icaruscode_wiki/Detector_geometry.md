@@ -324,6 +324,19 @@ a channel number:
 ICARUS geometry update was described in SBN-doc-21693-v3 (Apr 2021).
 
 
+### Access to the `Geometry` service via Python
+
+It is possible to interact with LArSoft and ICARUS service providers via Python.
+With a fully set up `icaruscode` in the working area, the geometry provider ([`geo::GeometryCore`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html))
+can be initialized with the standard ICARUS configuration via:
+```.py
+from ICARUSservices import ServiceManager
+geom = ServiceManager.get('Geometry')
+```
+For example, to get the standard geometry dump the statement `print(geom.Info())` can be used.
+The bridge between the C++ code and Python is provided by `cppyy` library, which defines also what can be expected to work and what shouldn't.
+
+
 ### Booster Neutrino Beam target and decay pipe
 
 Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0, -60000 )` cm.
@@ -335,7 +348,6 @@ Roughly, the BNB target is about 600 m upstream of the detector, i.e. at `( 0, 0
 
 ICARUS position w.r.t. NuMI coordinates is described in [SBN DocDB 22998](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=22998) (August 2021).
 Detector position for MC was updated in the [`icaruscode` pull request #230](https://github.com/SBNSoftware/icaruscode/pull/230)/
-
 
 ## Information phased out of this wiki
 
