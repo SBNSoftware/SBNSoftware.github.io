@@ -336,6 +336,8 @@ geom = ServiceManager.get('Geometry')
 For example, to get the standard geometry dump the statement `print(geom.Info())` can be used.
 The bridge between the C++ code and Python is provided by `cppyy` library, which defines also what can be expected to work and what shouldn't.
 
+Examples are available in [a specific wiki page](interfaces/python/geometry_examples.md).
+
 
 ### Booster Neutrino Beam target and decay pipe
 
