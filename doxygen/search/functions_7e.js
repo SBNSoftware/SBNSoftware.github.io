@@ -619,6 +619,7 @@ var searchData=
   ['_7eshowerrecoalgbase',['~ShowerRecoAlgBase',['../db/d4c/classshowerreco_1_1ShowerRecoAlgBase.html#a5f16132d645a1705a1d4b13d852597f5',1,'showerreco::ShowerRecoAlgBase']]],
   ['_7eshowerrecoexception',['~ShowerRecoException',['../dd/dd7/classshowerreco_1_1ShowerRecoException.html#a28e76148259962daf0eb5e41e3955410',1,'showerreco::ShowerRecoException']]],
   ['_7eshoweruniqueproduerptrbase',['~ShowerUniqueProduerPtrBase',['../de/dcb/classreco_1_1shower_1_1ShowerUniqueProduerPtrBase.html#a0a53608d2a5a574a571f17370b9df9b5',1,'reco::shower::ShowerUniqueProduerPtrBase']]],
+  ['_7esignalshaper',['~SignalShaper',['../d3/dd7/classutil_1_1SignalShaper.html#a125c6c4f049a2f6b8789adf9ab15a245',1,'util::SignalShaper']]],
   ['_7esignalshaping',['~SignalShaping',['../db/dd1/classutil_1_1SignalShaping.html#a75010872a5df9b5f851b69923c82cdd6',1,'util::SignalShaping']]],
   ['_7esignalshapingservicesbnd',['~SignalShapingServiceSBND',['../d4/d92/classutil_1_1SignalShapingServiceSBND.html#a57a63c40d904f0c0bcaf0368e5588247',1,'util::SignalShapingServiceSBND']]],
   ['_7esimdeposetsource',['~SimDepoSetSource',['../db/df5/classwcls_1_1SimDepoSetSource.html#abf652c87e9cf3ea1efac8322571f83e9',1,'wcls::SimDepoSetSource']]],
