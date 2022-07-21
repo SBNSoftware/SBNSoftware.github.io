@@ -14,7 +14,7 @@ As a basic description, here's a step-by-step guide for making a new configurati
 
 (1) Setup database software
 
-`source /daq/software/database/setup_database.sh`
+`source ~/DAQ_DevAreas/DAQ_SHIFTER_CURRENT/DAQInterface/setup_daqinterface.sh`
  
 (2) Makes/move yourself into a clean work directory. There's a special function setup for that:
 
