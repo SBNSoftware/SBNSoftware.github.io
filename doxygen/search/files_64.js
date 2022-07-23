@@ -248,6 +248,8 @@ var searchData=
   ['dlpfocharacterisationalgorithm_2eh',['DlPfoCharacterisationAlgorithm.h',['../d3/dfe/DlPfoCharacterisationAlgorithm_8h.html',1,'']]],
   ['dltrackshowerstreamselectionalgorithm_2ecc',['DlTrackShowerStreamSelectionAlgorithm.cc',['../da/d98/DlTrackShowerStreamSelectionAlgorithm_8cc.html',1,'']]],
   ['dltrackshowerstreamselectionalgorithm_2eh',['DlTrackShowerStreamSelectionAlgorithm.h',['../df/ddd/DlTrackShowerStreamSelectionAlgorithm_8h.html',1,'']]],
+  ['dlvertexingalgorithm_2ecc',['DlVertexingAlgorithm.cc',['../d0/d83/DlVertexingAlgorithm_8cc.html',1,'']]],
+  ['dlvertexingalgorithm_2eh',['DlVertexingAlgorithm.h',['../d4/d45/DlVertexingAlgorithm_8h.html',1,'']]],
   ['dogit_2esh',['doGit.sh',['../d6/da2/doGit_8sh.html',1,'']]],
   ['dprawhitfinder_5fmodule_2ecc',['DPRawHitFinder_module.cc',['../d6/d81/DPRawHitFinder__module_8cc.html',1,'']]],
   ['drawgaushits_5ftool_2ecc',['DrawGausHits_tool.cc',['../d1/d3e/DrawGausHits__tool_8cc.html',1,'']]],

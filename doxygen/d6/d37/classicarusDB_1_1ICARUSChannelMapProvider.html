@@ -339,20 +339,20 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the PMT fragment ID for the specified channel mapping database key. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00289">289</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">   * PMT channel mapping database stores the board number (0-23) as key.</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">   * Fragment ID are currently in the pattern 0x20xx, with xx the board number.</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="comment">// protest if this is a fragment not from the PMT;</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="comment">// but make an exception for old PMT fragment IDs (legacy)</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  assert((DBkey &amp; 0xFF) &lt; 24);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">return</span> (DBkey &amp; 0xFF) | 0x2000;</div>
+<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00291">291</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">   * PMT channel mapping database stores the board number (0-23) as key.</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">   * Fragment ID are currently in the pattern 0x20xx, with xx the board number.</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="comment">// protest if this is a fragment not from the PMT;</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="comment">// but make an exception for old PMT fragment IDs (legacy)</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  assert((DBkey &amp; 0xFF) &lt; 24);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;} <span class="comment">// ICARUSChannelMapProvider::PMTfragmentIDtoDBkey()</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">return</span> (DBkey &amp; 0xFF) | 0x2000;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;} <span class="comment">// ICARUSChannelMapProvider::PMTfragmentIDtoDBkey()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,12 +380,12 @@ Private Attributes</h2></td></tr>
 <p>Returns the list of board channel-to-PMT channel ID mapping within the specified fragment. </p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the mapping list, or <code>nullptr</code> if invalid fragment </dd></dl>
 
-<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00263">263</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">auto</span> it = <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ae677b51111ca961ba88371969e9603e9">fFragmentToDigitizerMap</a>.find(<a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a395f71dcd5eae396d1b45dced3109b51">PMTfragmentIDtoDBkey</a>(fragmentID));</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">return</span> (it == <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ae677b51111ca961ba88371969e9603e9">fFragmentToDigitizerMap</a>.end())? <span class="keyword">nullptr</span>: &amp;(it-&gt;second);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
-<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a395f71dcd5eae396d1b45dced3109b51"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a395f71dcd5eae396d1b45dced3109b51">icarusDB::ICARUSChannelMapProvider::PMTfragmentIDtoDBkey</a></div><div class="ttdeci">static constexpr unsigned int PMTfragmentIDtoDBkey(unsigned int fragmentID)</div><div class="ttdoc">Returns the channel mapping database key for the specified PMT fragment ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00272">ICARUSChannelMapProvider.cxx:272</a></div></div>
+<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00265">265</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keyword">auto</span> it = <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ae677b51111ca961ba88371969e9603e9">fFragmentToDigitizerMap</a>.find(<a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a395f71dcd5eae396d1b45dced3109b51">PMTfragmentIDtoDBkey</a>(fragmentID));</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">return</span> (it == <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ae677b51111ca961ba88371969e9603e9">fFragmentToDigitizerMap</a>.end())? <span class="keyword">nullptr</span>: &amp;(it-&gt;second);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a395f71dcd5eae396d1b45dced3109b51"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a395f71dcd5eae396d1b45dced3109b51">icarusDB::ICARUSChannelMapProvider::PMTfragmentIDtoDBkey</a></div><div class="ttdeci">static constexpr unsigned int PMTfragmentIDtoDBkey(unsigned int fragmentID)</div><div class="ttdoc">Returns the channel mapping database key for the specified PMT fragment ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00274">ICARUSChannelMapProvider.cxx:274</a></div></div>
 <div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_ae677b51111ca961ba88371969e9603e9"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ae677b51111ca961ba88371969e9603e9">icarusDB::ICARUSChannelMapProvider::fFragmentToDigitizerMap</a></div><div class="ttdeci">IChannelMapping::FragmentToDigitizerChannelMap fFragmentToDigitizerMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/ICARUSChannelMapProvider_8h_source.html#l00077">ICARUSChannelMapProvider.h:77</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -460,7 +460,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    </div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
 <div class="ttc" id="namespaceicarusDB_html_a0b2ff93e818861e19ade3a1b82e3a417"><div class="ttname"><a href="../../de/d35/namespaceicarusDB.html#a0b2ff93e818861e19ade3a1b82e3a417">icarusDB::DigitizerChannelChannelIDPairVec</a></div><div class="ttdeci">std::vector&lt; DigitizerChannelChannelIDPair &gt; DigitizerChannelChannelIDPairVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/IICARUSChannelMap_8h_source.html#l00027">IICARUSChannelMap.h:27</a></div></div>
-<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a4511fa7bdc46273475a9cdc181ede34f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a4511fa7bdc46273475a9cdc181ede34f">icarusDB::ICARUSChannelMapProvider::findPMTfragmentEntry</a></div><div class="ttdeci">DigitizerChannelChannelIDPairVec const * findPMTfragmentEntry(unsigned int fragmentID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00263">ICARUSChannelMapProvider.cxx:263</a></div></div>
+<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a4511fa7bdc46273475a9cdc181ede34f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a4511fa7bdc46273475a9cdc181ede34f">icarusDB::ICARUSChannelMapProvider::findPMTfragmentEntry</a></div><div class="ttdeci">DigitizerChannelChannelIDPairVec const * findPMTfragmentEntry(unsigned int fragmentID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00265">ICARUSChannelMapProvider.cxx:265</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -644,15 +644,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d1f/classicarusDB_1_1IICARUSChannelMap.html#aa5a46074e557167b9f7ca433cafc3b3e">icarusDB::IICARUSChannelMap</a>.</p>
 
-<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00253">253</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::pair&lt;double, double&gt; gainandpedestal(-99, -99);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pair : <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a80dc5daab3f5bb694e475fc1ebc21c5f">fSideCRTChannelToCalibrationMap</a>){</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>)pair.first.first == mac5 &amp;&amp; (<span class="keywordtype">int</span>)pair.first.second == chan)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        gainandpedestal = std::make_pair(pair.second.first, pair.second.second);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">return</span> gainandpedestal;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00258">258</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> itGainAndPedestal = <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a80dc5daab3f5bb694e475fc1ebc21c5f">fSideCRTChannelToCalibrationMap</a>.find({ mac5, chan });</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> (itGainAndPedestal == <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a80dc5daab3f5bb694e475fc1ebc21c5f">fSideCRTChannelToCalibrationMap</a>.cend())</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      ? std::pair{ -99., -99. }: itGainAndPedestal-&gt;second;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  }</div>
 <div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a80dc5daab3f5bb694e475fc1ebc21c5f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a80dc5daab3f5bb694e475fc1ebc21c5f">icarusDB::ICARUSChannelMapProvider::fSideCRTChannelToCalibrationMap</a></div><div class="ttdeci">IChannelMapping::SideCRTChannelToCalibrationMap fSideCRTChannelToCalibrationMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/ICARUSChannelMapProvider_8h_source.html#l00083">ICARUSChannelMapProvider.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -730,7 +727,12 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> simmacaddress;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">/* untested:</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">    auto const it = fTopCRTHWtoSimMacAddressPairMap.find(hwmacaddress);</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">    return (it == fTopCRTHWtoSimMacAddressPairMap.end())? 0: it-&gt;second;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  }</div>
 <div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_ad0777841363e297bbb7024c5a9e4d65f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#ad0777841363e297bbb7024c5a9e4d65f">icarusDB::ICARUSChannelMapProvider::fTopCRTHWtoSimMacAddressPairMap</a></div><div class="ttdeci">IChannelMapping::TopCRTHWtoSimMacAddressPairMap fTopCRTHWtoSimMacAddressPairMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dce/ICARUSChannelMapProvider_8h_source.html#l00081">ICARUSChannelMapProvider.h:81</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -827,7 +829,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a4511fa7bdc46273475a9cdc181ede34f">findPMTfragmentEntry</a>(fragmentID) != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
-<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a4511fa7bdc46273475a9cdc181ede34f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a4511fa7bdc46273475a9cdc181ede34f">icarusDB::ICARUSChannelMapProvider::findPMTfragmentEntry</a></div><div class="ttdeci">DigitizerChannelChannelIDPairVec const * findPMTfragmentEntry(unsigned int fragmentID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00263">ICARUSChannelMapProvider.cxx:263</a></div></div>
+<div class="ttc" id="classicarusDB_1_1ICARUSChannelMapProvider_html_a4511fa7bdc46273475a9cdc181ede34f"><div class="ttname"><a href="../../d6/d37/classicarusDB_1_1ICARUSChannelMapProvider.html#a4511fa7bdc46273475a9cdc181ede34f">icarusDB::ICARUSChannelMapProvider::findPMTfragmentEntry</a></div><div class="ttdeci">DigitizerChannelChannelIDPairVec const * findPMTfragmentEntry(unsigned int fragmentID) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00265">ICARUSChannelMapProvider.cxx:265</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -954,20 +956,20 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the channel mapping database key for the specified PMT fragment ID. </p>
 
-<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00272">272</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">   * PMT channel mapping database stores the board number (0-23) as key.</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">   * Fragment ID are currently in the pattern 0x20xx, with xx the board number.</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">// protest if this is a fragment not from the PMT;</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="comment">// but make an exception for old PMT fragment IDs (legacy)</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  assert(((fragmentID &amp; ~0xFF) == 0x00) || ((fragmentID &amp; ~0xFF) == 0x20));</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">return</span> fragmentID &amp; 0xFF;</div>
+<p>Definition at line <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html#l00274">274</a> of file <a class="el" href="../../d0/d66/ICARUSChannelMapProvider_8cxx_source.html">ICARUSChannelMapProvider.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">   * PMT channel mapping database stores the board number (0-23) as key.</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">   * Fragment ID are currently in the pattern 0x20xx, with xx the board number.</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="comment">// protest if this is a fragment not from the PMT;</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="comment">// but make an exception for old PMT fragment IDs (legacy)</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  assert(((fragmentID &amp; ~0xFF) == 0x00) || ((fragmentID &amp; ~0xFF) == 0x20));</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;} <span class="comment">// ICARUSChannelMapProvider::PMTfragmentIDtoDBkey()</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">return</span> fragmentID &amp; 0xFF;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;} <span class="comment">// ICARUSChannelMapProvider::PMTfragmentIDtoDBkey()</span></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -225,45 +225,44 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; time_photon_pair : time_m) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; this_time = time_photon_pair.first;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Channel=&quot;</span> &lt;&lt; opch &lt;&lt; <span class="stringliteral">&quot;, time=&quot;</span> &lt;&lt; this_time &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; time_m[this_time] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">if</span>(this_time &gt; (oph_time + <a class="code" href="../../df/d49/classICARUSMCOpHit.html#ab6c977de2336368a787f5cb26eb98be7">_merge_period</a>) &amp;&amp; in_window) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="../../df/d27/classrecob_1_1OpHit.html">recob::OpHit</a> oph(opch, </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                         oph_time,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                         oph_time + clockData.TriggerTime(),</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                         0, <span class="comment">// frame</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                         1., <span class="comment">// width</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                         pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a3f0fcd9cde7aeb1b47ae223be652d00e">_spe_area</a>, <span class="comment">// area,</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                         pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a637febd1b8ad3e75781f8a8c5a82e2fa">_spe_amp</a>, <span class="comment">// peakheight,</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                         pe, <span class="comment">// pe</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                         0.);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        oph_v-&gt;emplace_back(std::move(oph));</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        in_window = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        pe = 0;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">if</span>(!in_window) oph_time = this_time;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      in_window = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      pe += time_photon_pair.second;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(in_window) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <a class="code" href="../../df/d27/classrecob_1_1OpHit.html">recob::OpHit</a> oph(opch, </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                       oph_time,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                       oph_time + clockData.TriggerTime(),</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                       0, <span class="comment">// frame</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                       1., <span class="comment">// width</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                       pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a3f0fcd9cde7aeb1b47ae223be652d00e">_spe_area</a>, <span class="comment">// area,</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                       pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a637febd1b8ad3e75781f8a8c5a82e2fa">_spe_amp</a>, <span class="comment">// peakheight,</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                       pe, <span class="comment">// pe</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                       0.);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      oph_v-&gt;emplace_back(std::move(oph));</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  e.put(std::move(oph_v));</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;DEFINE_ART_MODULE(<a class="code" href="../../df/d49/classICARUSMCOpHit.html">ICARUSMCOpHit</a>)</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">if</span>(this_time &gt; (oph_time + <a class="code" href="../../df/d49/classICARUSMCOpHit.html#ab6c977de2336368a787f5cb26eb98be7">_merge_period</a>) &amp;&amp; in_window) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="../../df/d27/classrecob_1_1OpHit.html">recob::OpHit</a> oph(opch, </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                         oph_time,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                         oph_time + clockData.TriggerTime(),</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                         0, <span class="comment">// frame</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                         1., <span class="comment">// width</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                         pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a3f0fcd9cde7aeb1b47ae223be652d00e">_spe_area</a>, <span class="comment">// area,</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                         pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a637febd1b8ad3e75781f8a8c5a82e2fa">_spe_amp</a>, <span class="comment">// peakheight,</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                         pe, <span class="comment">// pe</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                         0.);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        oph_v-&gt;emplace_back(std::move(oph));</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        in_window = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        pe = 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">if</span>(!in_window) oph_time = this_time;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      in_window = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      pe += time_photon_pair.second;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(in_window) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <a class="code" href="../../df/d27/classrecob_1_1OpHit.html">recob::OpHit</a> oph(opch, </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                       oph_time,</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                       oph_time + clockData.TriggerTime(),</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                       0, <span class="comment">// frame</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                       1., <span class="comment">// width</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                       pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a3f0fcd9cde7aeb1b47ae223be652d00e">_spe_area</a>, <span class="comment">// area,</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                       pe * <a class="code" href="../../df/d49/classICARUSMCOpHit.html#a637febd1b8ad3e75781f8a8c5a82e2fa">_spe_amp</a>, <span class="comment">// peakheight,</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                       pe, <span class="comment">// pe</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                       0.);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      oph_v-&gt;emplace_back(std::move(oph));</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  e.put(std::move(oph_v));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;DEFINE_ART_MODULE(<a class="code" href="../../df/d49/classICARUSMCOpHit.html">ICARUSMCOpHit</a>)</div>
 <div class="ttc" id="messageservice_8fcl_html_a8d1a8a85a0b2a30cac1090ea528dd015"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a8d1a8a85a0b2a30cac1090ea528dd015">cerr</a></div><div class="ttdeci">BEGIN_PROLOG could also be cerr</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classICARUSMCOpHit_html_a380cb1d7bdd6d68d349d23afd6b1441b"><div class="ttname"><a href="../../df/d49/classICARUSMCOpHit.html#a380cb1d7bdd6d68d349d23afd6b1441b">ICARUSMCOpHit::_simph_producer</a></div><div class="ttdeci">std::string _simph_producer</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6a/ICARUSMCOpHit__module_8cc_source.html#l00050">ICARUSMCOpHit_module.cc:50</a></div></div>
@@ -279,7 +278,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="OpHit_8h_html"><div class="ttname"><a href="../../d3/dad/OpHit_8h.html">OpHit.h</a></div></div>
 <div class="ttc" id="classICARUSMCOpHit_html_a72cd87ff666e63d8fb2f1a204e51c8a3"><div class="ttname"><a href="../../df/d49/classICARUSMCOpHit.html#a72cd87ff666e63d8fb2f1a204e51c8a3">ICARUSMCOpHit::produce</a></div><div class="ttdeci">void produce(art::Event &amp;e) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d6a/ICARUSMCOpHit__module_8cc_source.html#l00065">ICARUSMCOpHit_module.cc:65</a></div></div>
 <div class="ttc" id="Geometry_8h_html"><div class="ttname"><a href="../../d3/d8b/Geometry_8h.html">Geometry.h</a></div><div class="ttdoc">art framework interface to geometry description </div></div>
-<div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 <div class="ttc" id="classICARUSMCOpHit_html_a8132aa2c69973339522cc97f3693b52a"><div class="ttname"><a href="../../df/d49/classICARUSMCOpHit.html#a8132aa2c69973339522cc97f3693b52a">ICARUSMCOpHit::operator=</a></div><div class="ttdeci">ICARUSMCOpHit &amp; operator=(ICARUSMCOpHit const &amp;)=delete</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

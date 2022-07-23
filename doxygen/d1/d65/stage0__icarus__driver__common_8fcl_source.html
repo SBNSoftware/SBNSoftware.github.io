@@ -125,78 +125,89 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"> #reco sequence and trigger_paths to be defined elsewhere</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a0ce41f94bc3f669256b44597207c679d">streamBNB</a>:            [ outBNB ]</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a3ed1873e2cee751cde4179a100b262b5">streamNUMI</a>:           [ outNUMI ]</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <a class="code" href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a77377b60b5b6286ca14fa580bd5649fe">streamOffbeamBNB</a>:     [ outOffbeamBNB ]</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <a class="code" href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a609e9f44d5803f4c519f45a593cdfc15">streamOffbeamNUMI</a>:    [ outOffbeamNUMI ]</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; streamUnknown:        [ outUnknown ]</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <a class="code" href="../../db/d5b/triggersim__singlewindow__icarus__data__multiconfig_8fcl.html#a5433c7eb7204082c3cc8fdac7f8c5044">end_paths</a>:            [ <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a0ce41f94bc3f669256b44597207c679d">streamBNB</a> ]</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#block to define where the output goes.  if you defined a filter in the physics</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#block and put it in the trigger_paths then you need to put a SelectEvents: {SelectEvents: [XXX]}</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#entry in the output stream you want those to go to, where XXX is the label of the filter module(s)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dd/d08/triggersim__singlewindow__icarus_8fcl.html#a0cfd9e1c19570259ad279d6a291a27f8">outputs</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; outBNB:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   module_type: RootOutput</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   compressionLevel: 1</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; outNUMI:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   module_type: RootOutput</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   compressionLevel: 1</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; outOffbeamBNB:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   module_type: RootOutput</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   compressionLevel: 1</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; outOffbeamNUMI:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   module_type: RootOutput</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;   compressionLevel: 1</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; outUnknown:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;   module_type: RootOutput</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;   compressionLevel: 1</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"># Include this as per directive of Kazu and Andrea (circa March 25, 2021) for introduction of the filter</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#services.DetectorClocksService.InheritClockConfig: false</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">### Here we try to suppress known and pointless messages</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### See https://cdcvs.fnal.gov/redmine/projects/messagefacility/wiki for details</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span><a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.message.destinations :</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  STDCOUT:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     <a class="code" href="../../d9/da0/structtype.html">type</a>:      <span class="stringliteral">&quot;cout&quot;</span>      #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service to <a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#a6e6fc5a1833d744f7bd6bde59dd95323">output</a> <span class="keyword">this</span> destination to <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;     threshold: <span class="stringliteral">&quot;WARNING&quot;</span>   #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service that <span class="keyword">this</span> destination applies to WARNING <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> higher level messages</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;     categories:</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;       <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;       {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;         limit: -1  #don<span class="stringliteral">&#39;t print anything at the infomsg level except the explicitly named categories</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral">         reportEvery: 1</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">       }</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="stringliteral">     }</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="stringliteral">  }</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; streamCommon:         [ outCommon ]</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a0ce41f94bc3f669256b44597207c679d">streamBNB</a>:            [ outBNB ]</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a3ed1873e2cee751cde4179a100b262b5">streamNUMI</a>:           [ outNUMI ]</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <a class="code" href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a77377b60b5b6286ca14fa580bd5649fe">streamOffbeamBNB</a>:     [ outOffbeamBNB ]</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <a class="code" href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a609e9f44d5803f4c519f45a593cdfc15">streamOffbeamNUMI</a>:    [ outOffbeamNUMI ]</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; streamUnknown:        [ outUnknown ]</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <a class="code" href="../../db/d5b/triggersim__singlewindow__icarus__data__multiconfig_8fcl.html#a5433c7eb7204082c3cc8fdac7f8c5044">end_paths</a>:            [ <a class="code" href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a0ce41f94bc3f669256b44597207c679d">streamBNB</a> ]</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#block to define where the output goes.  if you defined a filter in the physics</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#block and put it in the trigger_paths then you need to put a SelectEvents: {SelectEvents: [XXX]}</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#entry in the output stream you want those to go to, where XXX is the label of the filter module(s)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><a class="code" href="../../dd/d08/triggersim__singlewindow__icarus_8fcl.html#a0cfd9e1c19570259ad279d6a291a27f8">outputs</a>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; outCommon:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   <a class="code" href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a>: <span class="stringliteral">&quot;%ifb_%tc-%p.root&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   fileProperties: {maxInputFiles: 1}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   checkFileName: <span class="keyword">false</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; outBNB:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; outNUMI:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; outOffbeamBNB:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; outOffbeamNUMI:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; outUnknown:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;   module_type: RootOutput</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;   <a class="code" href="../../d5/dbe/runPID_8fcl.html#ad3280e14053550a887293ef5622a706b">dataTier</a>: <span class="stringliteral">&quot;reconstructed&quot;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;   compressionLevel: 1</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;   <a class="code" href="../../d6/d1f/test__mchdb_8fcl.html#a25f52fd74d69421ba7eb79482e67070e">saveMemoryObjectThreshold</a>: 0</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"># Include this as per directive of Kazu and Andrea (circa March 25, 2021) for introduction of the filter</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#services.DetectorClocksService.InheritClockConfig: false</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">### Here we try to suppress known and pointless messages</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### See https://cdcvs.fnal.gov/redmine/projects/messagefacility/wiki for details</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span><a class="code" href="../../d1/d82/OnlineDecoder_8fcl.html#a0537db4dea1638cb5438c97430059f5b">services</a>.message.destinations :</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  STDCOUT:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;     <a class="code" href="../../d9/da0/structtype.html">type</a>:      <span class="stringliteral">&quot;cout&quot;</span>      #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service to <a class="code" href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#a6e6fc5a1833d744f7bd6bde59dd95323">output</a> <span class="keyword">this</span> destination to <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;     threshold: <span class="stringliteral">&quot;WARNING&quot;</span>   #tells <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a> service that <span class="keyword">this</span> destination applies to WARNING <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> higher level messages</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     categories:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;     {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;       <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;       {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;         limit: -1  #don<span class="stringliteral">&#39;t print anything at the infomsg level except the explicitly named categories</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral">         reportEvery: 1</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral">       }</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="stringliteral">     }</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="stringliteral">  }</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="stringliteral">}</span></div>
 <div class="ttc" id="stage0__multiTPC__splitstream__icarus_8fcl_html_a3ed1873e2cee751cde4179a100b262b5"><div class="ttname"><a href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a3ed1873e2cee751cde4179a100b262b5">streamNUMI</a></div><div class="ttdeci">process_name sequence::icarus_stage0_multiTPC physics sequence::icarus_stage0_multiTPC physics sequence::icarus_stage0_multiTPC physics purityinfoana1 physics pathUnknown physics streamNUMI</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl_source.html#l00011">stage0_multiTPC_splitstream_icarus.fcl:11</a></div></div>
 <div class="ttc" id="stage0__icarus__defs_8fcl_html_a60282af8c24ff2c6eeab02d8d311be51"><div class="ttname"><a href="../../df/dc1/stage0__icarus__defs_8fcl.html#a60282af8c24ff2c6eeab02d8d311be51">icarus_stage0_analyzers</a></div><div class="ttdeci">BEGIN_PROLOG icarus_stage0_analyzers</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc1/stage0__icarus__defs_8fcl_source.html#l00097">stage0_icarus_defs.fcl:97</a></div></div>
 <div class="ttc" id="run__icarus__flashfinder_8fcl_html_acb6c20654c148fe838d7915c7ebedcfb"><div class="ttname"><a href="../../dc/d38/run__icarus__flashfinder_8fcl.html#acb6c20654c148fe838d7915c7ebedcfb">physics</a></div><div class="ttdeci">process_name drop raw::OpDetWaveforms_DataApr2016RecoStage1_saturation_ * physics</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/run__icarus__flashfinder_8fcl_source.html#l00052">run_icarus_flashfinder.fcl:52</a></div></div>
@@ -214,6 +225,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="stage0__multiTPC__splitstream__nofilter__icarus_8fcl_html_a77377b60b5b6286ca14fa580bd5649fe"><div class="ttname"><a href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a77377b60b5b6286ca14fa580bd5649fe">streamOffbeamBNB</a></div><div class="ttdeci">process_name sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics purityinfoana1 physics pathUnknown physics streamOffbeamBNB</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl_source.html#l00011">stage0_multiTPC_splitstream_nofilter_icarus.fcl:11</a></div></div>
 <div class="ttc" id="stage0__multiTPC__splitstream__icarus_8fcl_html_a0ce41f94bc3f669256b44597207c679d"><div class="ttname"><a href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl.html#a0ce41f94bc3f669256b44597207c679d">streamBNB</a></div><div class="ttdeci">process_name sequence::icarus_stage0_multiTPC physics sequence::icarus_stage0_multiTPC physics sequence::icarus_stage0_multiTPC physics purityinfoana1 physics pathUnknown physics streamBNB</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da6/stage0__multiTPC__splitstream__icarus_8fcl_source.html#l00011">stage0_multiTPC_splitstream_icarus.fcl:11</a></div></div>
 <div class="ttc" id="services__common__icarus_8fcl_html"><div class="ttname"><a href="../../da/dbf/services__common__icarus_8fcl.html">services_common_icarus.fcl</a></div></div>
+<div class="ttc" id="prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_html_a2146d742a76b29baa7a12ef30d6af3a4"><div class="ttname"><a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a></div><div class="ttdeci">services TFileService fileName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_source.html#l00018">prodcorsika_genie_protononly_icarus_numi_nue_volDetEnclosure_tpc.fcl:18</a></div></div>
 <div class="ttc" id="triggersim__eastmodule__icarus_8fcl_html_a6e6fc5a1833d744f7bd6bde59dd95323"><div class="ttname"><a href="../../dd/db4/triggersim__eastmodule__icarus_8fcl.html#a6e6fc5a1833d744f7bd6bde59dd95323">output</a></div><div class="ttdeci">BEGIN_PROLOG sequence::SlidingWindowTriggerPatternsOppositeWindows END_PROLOG simSlidingORM6O6 effSlidingORW output</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/db4/triggersim__eastmodule__icarus_8fcl_source.html#l00134">triggersim_eastmodule_icarus.fcl:134</a></div></div>
 <div class="ttc" id="stage0__multiTPC__splitstream__nofilter__icarus_8fcl_html_a609e9f44d5803f4c519f45a593cdfc15"><div class="ttname"><a href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl.html#a609e9f44d5803f4c519f45a593cdfc15">streamOffbeamNUMI</a></div><div class="ttdeci">process_name sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics sequence::icarus_stage0_data physics purityinfoana1 physics pathUnknown physics streamOffbeamNUMI</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d4b/stage0__multiTPC__splitstream__nofilter__icarus_8fcl_source.html#l00011">stage0_multiTPC_splitstream_nofilter_icarus.fcl:11</a></div></div>
 <div class="ttc" id="stage0__icarus__defs_8fcl_html"><div class="ttname"><a href="../../df/dc1/stage0__icarus__defs_8fcl.html">stage0_icarus_defs.fcl</a></div></div>
