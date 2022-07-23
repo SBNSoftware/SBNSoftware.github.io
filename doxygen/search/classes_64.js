@@ -152,6 +152,7 @@ var searchData=
   ['dlmasteralgorithm',['DLMasterAlgorithm',['../d3/dae/classlar__dl__content_1_1DLMasterAlgorithm.html',1,'lar_dl_content']]],
   ['dlpfocharacterisationalgorithm',['DlPfoCharacterisationAlgorithm',['../d7/d58/classlar__dl__content_1_1DlPfoCharacterisationAlgorithm.html',1,'lar_dl_content']]],
   ['dltrackshowerstreamselectionalgorithm',['DlTrackShowerStreamSelectionAlgorithm',['../d7/db6/classlar__dl__content_1_1DlTrackShowerStreamSelectionAlgorithm.html',1,'lar_dl_content']]],
+  ['dlvertexingalgorithm',['DlVertexingAlgorithm',['../d7/d76/classlar__dl__content_1_1DlVertexingAlgorithm.html',1,'lar_dl_content']]],
   ['dontadddirectory',['DontAddDirectory',['../df/dc0/classana_1_1DontAddDirectory.html',1,'ana']]],
   ['dontclusterstruct',['DontClusterStruct',['../d7/dce/structtca_1_1DontClusterStruct.html',1,'tca']]],
   ['dotdict',['dotDict',['../dd/d54/classgenerate__simple__weighted__template_1_1dotDict.html',1,'generate_simple_weighted_template']]],

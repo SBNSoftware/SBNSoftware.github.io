@@ -167,6 +167,7 @@ var searchData=
   ['_7edlhittrackshoweridalgorithm',['~DlHitTrackShowerIdAlgorithm',['../d6/d04/classlar__dl__content_1_1DlHitTrackShowerIdAlgorithm.html#a3559ebec48613baca77d5cff261123b9',1,'lar_dl_content::DlHitTrackShowerIdAlgorithm']]],
   ['_7edlhitvalidationalgorithm',['~DlHitValidationAlgorithm',['../d4/d1b/classlar__dl__content_1_1DlHitValidationAlgorithm.html#a4fd0e4076717f50314aff91001617d8c',1,'lar_dl_content::DlHitValidationAlgorithm']]],
   ['_7edltrackshowerstreamselectionalgorithm',['~DlTrackShowerStreamSelectionAlgorithm',['../d7/db6/classlar__dl__content_1_1DlTrackShowerStreamSelectionAlgorithm.html#a9c2bad2b0fe2a7a956269971d3882953',1,'lar_dl_content::DlTrackShowerStreamSelectionAlgorithm']]],
+  ['_7edlvertexingalgorithm',['~DlVertexingAlgorithm',['../d7/d76/classlar__dl__content_1_1DlVertexingAlgorithm.html#a6050582e5523ae34819637d29804fcb0',1,'lar_dl_content::DlVertexingAlgorithm']]],
   ['_7edontadddirectory',['~DontAddDirectory',['../df/dc0/classana_1_1DontAddDirectory.html#ad6863c1eb0134091abe5da526e666658',1,'ana::DontAddDirectory']]],
   ['_7edrawgaushits',['~DrawGausHits',['../d3/dca/classevdb__tool_1_1DrawGausHits.html#ae249765b43153c5172d177fe062a7f2d',1,'evdb_tool::DrawGausHits']]],
   ['_7edrawingpad',['~DrawingPad',['../dc/d61/classevd_1_1DrawingPad.html#aea9a39961727264947d483c69bc07bab',1,'evd::DrawingPad']]],

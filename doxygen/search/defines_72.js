@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['r_5f_5fdictionary_5ffilename',['R__DICTIONARY_FILENAME',['../da/d77/StandardRecord__dict_8cc.html#a685704d1d4b17cca97c2c35ec173710f',1,'StandardRecord_dict.cc']]],
   ['r_5fmax',['R_MAX',['../d7/d8b/NestAlg_8cxx.html#a44d864c7ff8bf7f56435a1226c9e8a99',1,'NestAlg.cxx']]],
   ['r_5ftol',['R_TOL',['../d7/d8b/NestAlg_8cxx.html#acdecae10545d6a882ff7b96070c917dc',1,'NestAlg.cxx']]],
   ['rawdigitana_5fmodule',['RawDigitAna_module',['../d9/d9d/RawDigitAna__module_8cc.html#a6545a0e93bc39b150809783bf70df2be',1,'RawDigitAna_module.cc']]],
