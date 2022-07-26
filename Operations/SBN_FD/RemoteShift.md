@@ -418,9 +418,9 @@ section](RemoteShift/edit?section=19){.icon-only
 
 From a terminal, do:
 
-    ssh -KL 10080:localhost:10080 icarus@icarus-gateway01.fnal.gov ssh -KL 10080:localhost:10080 icarus@icarus-evb01.fnal.gov
+    ssh -KL 10089:localhost:10080 icarus@icarus-gateway01.fnal.gov ssh -KL 10080:localhost:10080 icarus@icarus-evb06.fnal.gov
 
-Then, in a browser, open <http://localhost:10080> . This will grant
+Then, in a browser, open <http://localhost:10089> . This will grant
 access to the Grafana page. Login is \"ICARUS-Shift\". Password can be
 found on the [SBN-FD Electronic Logbook Projects
 page](http://dbweb0.fnal.gov/ECL/sbnfd/PL/project?pid=1).
@@ -428,13 +428,13 @@ page](http://dbweb0.fnal.gov/ECL/sbnfd/PL/project?pid=1).
 If you get errors following the above, try breaking the step into two
 and going to db02 instead, so\
 
-    ssh -KL 10080:localhost:10080 icarus@icarus-gateway01.fnal.gov
+    ssh -KL 10089:localhost:10080 icarus@icarus-gateway01.fnal.gov
 
 and then in the terminal this opens
 
-    ssh -KL 10080:localhost:10080 icarus@icarus-db02.fnal.gov
+    ssh -KL 10080:localhost:10080 icarus@icarus-evb06.fnal.gov
 
-and *then* opening the web browser and going to <http://localhost:10080>
+and *then* opening the web browser and going to <http://localhost:10089>
 .
 
 ~\
