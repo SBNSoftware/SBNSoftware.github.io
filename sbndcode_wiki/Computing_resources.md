@@ -47,7 +47,7 @@ Computing Access
 ----------------------------------------------------
 
 To get a Fermilab computing account follow the instructions at this
-site: https://get-connected.fnal.gov/accessandbadging/access/.
+site: <https://get-connected.fnal.gov/accessandbadging/access/>.
 Our experiment number is `T-1053 (SBND)`.
 
 **Write down the initial Kerberos and Services Account passwords before
@@ -59,7 +59,7 @@ Fermilab email account and username (you will need this for service
 now).
 
 The next step is to "kerberize" your machine. You can follow instructions here:
-- Mac: https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011294
+- Mac: <https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011294>
 - Linux:
 - Windows:
 
@@ -104,14 +104,16 @@ from SBND disks and tapes, and you can submit SBND jobs to the grid.
 The access is via SSH with FNAL.GOV Kerberos credentials.
 
 The nodes and their OS version are:
- | Node                 |  OS   |
- |----------------------|-------|
- | sbndgpvm01.fnal.gov  | SLF 7 |
- | sbndgpvm02.fnal.gov  | SLF 7 |
- | sbndgpvm03.fnal.gov  | SLF 7 |
- | sbndgpvm04.fnal.gov  | SLF 7 |
- | sbndbuild01.fnal.gov | SLF 7 |
- | sbndbuild02.fnal.gov | SLF 7 |
+ Node                 |  OS   
+----------------------|-------
+ `sbndgpvm01.fnal.gov` | SLF 7 
+ `sbndgpvm02.fnal.gov` | SLF 7 
+ `sbndgpvm03.fnal.gov` | SLF 7 
+ `sbndgpvm04.fnal.gov` | SLF 7 
+ `sbndbuild01.fnal.gov` | SLF 7 
+ `sbndbuild02.fnal.gov` | SLF 7 
+
+
 
 The `GPVM` interactive machines have no relevant
 local storage, and areas in `/sbnd` and `/pnfs` should be used (the home
