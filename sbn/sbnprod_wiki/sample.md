@@ -104,6 +104,18 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| NUMI in-time cosmics with Overburden | MC2022A | v09_37_02_04 | 809,054 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_reco2 | 
+| --- | --- | --- | --- | calib tuple | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_calibtuples |
+| --- | --- | v09_37_02_07 | 809,054 | caf | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_07_caf |
+| --- | --- | --- | --- | flatcaf | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_07_flatcaf |
+| NUMI in-time cosmics without Overburden | MC2022A | v09_37_02_04 | 1,441,943 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_v09_37_02_04_reco2 | 
+| --- | --- | --- | --- | calib tuple | IcarusProd_2022A_NUMI_in-time_Cosmics_v09_37_02_04_calibtuples |
+| --- | --- | v09_37_02_07 | 1,443,061 | caf | IcarusProd_2022A_NUMI_in-time_Cosmics_v09_37_02_07_caf |
+| --- | --- | --- | --- | flatcaf | IcarusProd_2022A_NUMI_in-time_Cosmics_v09_37_02_07_flatcaf |
+| BNB in-time cosmics with Overburden | MC2022A | v09_37_02_04 | 1,909,017 | reco2 | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_04_reco2 | 
+| --- | --- | --- | --- | calib tuple | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_04_calibtuples |
+| --- | --- | v09_37_02_07 | 1,909,017 | caf | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_07_caf |
+| --- | --- | --- | --- | flatcaf | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_07_flatcaf |
 | Cosmics, Lifetime 3.5 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_reco2 |
 | --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_calibtuples |
 | Cosmics, Lifetime 6 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_reco2 |
