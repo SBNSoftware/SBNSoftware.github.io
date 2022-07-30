@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pair_5ft',['pair_t',['../dd/d1f/structicarus_1_1details_1_1KeyValuesData_1_1Item.html#ac218b0729fc25b6a688e4bf9358f76f0',1,'icarus::details::KeyValuesData::Item::pair_t()'],['../d5/d70/structutil_1_1span.html#a496b8c052396852fdf02a5a290f53f4a',1,'util::span::pair_t()'],['../d7/ddf/classlar_1_1util_1_1StatCollector2D.html#acee020a0d03a4a3329f6788998c704ac',1,'lar::util::StatCollector2D::Pair_t()']]],
+  ['pair_5ft',['Pair_t',['../d7/ddf/classlar_1_1util_1_1StatCollector2D.html#acee020a0d03a4a3329f6788998c704ac',1,'lar::util::StatCollector2D::Pair_t()'],['../dd/d1f/structicarus_1_1details_1_1KeyValuesData_1_1Item.html#ac218b0729fc25b6a688e4bf9358f76f0',1,'icarus::details::KeyValuesData::Item::pair_t()'],['../d5/d70/structutil_1_1span.html#a496b8c052396852fdf02a5a290f53f4a',1,'util::span::pair_t()']]],
   ['pairvalue_5ft',['PairValue_t',['../d8/d54/classcluster_1_1HoughTransformCounters.html#a6f260ca7de7dbc82d5eb8425a62d3b96',1,'cluster::HoughTransformCounters']]],
   ['pairvector',['PairVector',['../d2/d72/classlar__pandora_1_1LArPandoraEvent.html#afdd887a216d2f94e0ed1176b6bde3e17',1,'lar_pandora::LArPandoraEvent']]],
   ['pandorainstancelist',['PandoraInstanceList',['../d6/d5d/MultiPandoraApi_8h.html#a956393c8e5d448a1202f6831b0187d4e',1,'MultiPandoraApi.h']]],

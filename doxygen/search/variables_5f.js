@@ -1167,6 +1167,7 @@ var searchData=
   ['_5fres_5fflash_5ftpc_5fv',['_res_flash_tpc_v',['../df/d89/classflashmatch_1_1FlashMatchManager.html#aa1b08f21b60950610278e78683f92885',1,'flashmatch::FlashMatchManager']]],
   ['_5fres_5ftpc_5fflash_5fv',['_res_tpc_flash_v',['../df/d89/classflashmatch_1_1FlashMatchManager.html#ac4faa5512148f98adae573fb9e64c858',1,'flashmatch::FlashMatchManager']]],
   ['_5fresult_5fv',['_result_v',['../d1/d6f/classSBNDOpT0Finder.html#af52c4a3eb400d3f85dc46589bfbe884a',1,'SBNDOpT0Finder']]],
+  ['_5frisetime_5fcalc_5fptr',['_risetime_calc_ptr',['../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab29fcd5ff985a31c25227f639c0f6c9d',1,'pmtana::PMTPulseRecoBase']]],
   ['_5frms',['_rms',['../de/d21/classSimTestPulseAna.html#a76e4620b326b232cd42e62222555278c',1,'SimTestPulseAna']]],
   ['_5froot_5fhistos',['_root_histos',['../d1/da1/classana_1_1SBNOsc_1_1NumuSelection.html#a6ddd6a667ae254d54e9f10e281021c86',1,'ana::SBNOsc::NumuSelection']]],
   ['_5frr_5fu',['_rr_u',['../d7/d7f/classanalysis_1_1CalorimetryAnalysis.html#ac110f1b3b250bb297040a7c12f06f821',1,'analysis::CalorimetryAnalysis']]],
