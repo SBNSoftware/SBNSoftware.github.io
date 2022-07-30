@@ -581,6 +581,7 @@ var searchData=
   ['_7eresponse',['~Response',['../dd/d7c/classicarus__tool_1_1Response.html#a8df4163b1fd3d49ea5f7d27757877fa3',1,'icarus_tool::Response']]],
   ['_7erethrowraytracebox',['~ReThrowRayTraceBox',['../dc/d11/classevgen_1_1ldm_1_1ReThrowRayTraceBox.html#ad08e5014b3d8e76c88c71a767076aaae',1,'evgen::ldm::ReThrowRayTraceBox']]],
   ['_7ereweightablespectrum',['~ReweightableSpectrum',['../dd/d5e/classana_1_1ReweightableSpectrum.html#ac9ca550b9bf81175810de354e817e531',1,'ana::ReweightableSpectrum']]],
+  ['_7erisetimecalculatorbase',['~RiseTimeCalculatorBase',['../da/dba/classpmtana_1_1RiseTimeCalculatorBase.html#a2b3d72f8d151b61de528202a0182c1d4',1,'pmtana::RiseTimeCalculatorBase']]],
   ['_7erktrackrep',['~RKTrackRep',['../dc/d1d/classgenf_1_1RKTrackRep.html#acef74f09e3420a15bf3a614445640c20',1,'genf::RKTrackRep']]],
   ['_7eroicannyedgedetection',['~ROICannyEdgeDetection',['../d9/d0d/classicarus__tool_1_1ROICannyEdgeDetection.html#a2833e5c0b111a993d165c7c427290774',1,'icarus_tool::ROICannyEdgeDetection']]],
   ['_7eroideconvolution',['~ROIDeconvolution',['../de/dbb/classicarus__tool_1_1ROIDeconvolution.html#ac4a719e1b52501974494ab19a243d055',1,'icarus_tool::ROIDeconvolution']]],

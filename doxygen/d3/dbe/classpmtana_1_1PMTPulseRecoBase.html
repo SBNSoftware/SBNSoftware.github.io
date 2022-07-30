@@ -150,6 +150,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a746bbec32ea04e965e9fa552d4baa855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d18/structpmtana_1_1pulse__param.html">pulse_param</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a746bbec32ea04e965e9fa552d4baa855">_pulse</a></td></tr>
 <tr class="memdesc:a746bbec32ea04e965e9fa552d4baa855"><td class="mdescLeft">&#160;</td><td class="mdescRight">A subject <a class="el" href="../../d4/d18/structpmtana_1_1pulse__param.html">pulse_param</a> object to be filled with the last reconstructed pulse parameters.  <a href="#a746bbec32ea04e965e9fa552d4baa855">More...</a><br/></td></tr>
 <tr class="separator:a746bbec32ea04e965e9fa552d4baa855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29fcd5ff985a31c25227f639c0f6c9d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="../../da/dba/classpmtana_1_1RiseTimeCalculatorBase.html">pmtana::RiseTimeCalculatorBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab29fcd5ff985a31c25227f639c0f6c9d">_risetime_calc_ptr</a> = nullptr</td></tr>
+<tr class="memdesc:ab29fcd5ff985a31c25227f639c0f6c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool for rise time calculation.  <a href="#ab29fcd5ff985a31c25227f639c0f6c9d">More...</a><br/></td></tr>
+<tr class="separator:ab29fcd5ff985a31c25227f639c0f6c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -165,7 +169,7 @@ Private Attributes</h2></td></tr>
 <p>All methods specified as "virtual" should be implemented by the inherit children class.</p>
 <p>This class provides some basic std::vector calculation algorithms such as integral, derivative, max and min algorithms. Inherit children classes are encouraged to use these provided methods when possible. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00066">66</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00070">70</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6abacecdd4a81a1a6150aa2e478c7ecf"></a>
 <div class="memitem">
@@ -188,9 +192,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                             , <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">_status</a> (<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">//*************************************************************************</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  { <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ae4439989d8422a3153bb923823aefb99">Reset</a>(); }</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00110">PMTPulseRecoBase.h:110</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00114">PMTPulseRecoBase.h:114</a></div></div>
 <div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ae4439989d8422a3153bb923823aefb99"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ae4439989d8422a3153bb923823aefb99">pmtana::PMTPulseRecoBase::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">A method to be called event-wise to reset parameters. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d30/PMTPulseRecoBase_8cxx_source.html#l00057">PMTPulseRecoBase.cxx:57</a></div></div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a0f08863e9a12d72503eaa4fa141d1050"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a0f08863e9a12d72503eaa4fa141d1050">pmtana::PMTPulseRecoBase::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdoc">Unique name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00102">PMTPulseRecoBase.h:102</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a0f08863e9a12d72503eaa4fa141d1050"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a0f08863e9a12d72503eaa4fa141d1050">pmtana::PMTPulseRecoBase::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdoc">Unique name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00106">PMTPulseRecoBase.h:106</a></div></div>
 <div class="ttc" id="sbndpoms__genfclwithrunnumber__maker_8sh_html_a19dd16849ed641adb2aff777fdc4bd8b"><div class="ttname"><a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a></div><div class="ttdeci">then echo fcl name</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh_source.html#l00220">sbndpoms_genfclwithrunnumber_maker.sh:220</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -313,9 +317,9 @@ Private Attributes</h2></td></tr>
 
 <p>A getter for the number of reconstructed pulses from the input waveform. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00102">102</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">_pulse_v</a>.size();};</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00119">PMTPulseRecoBase.h:119</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00106">106</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">_pulse_v</a>.size();};</div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00123">PMTPulseRecoBase.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,7 +355,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="ttc" id="messageservice_8fcl_html_a8d1a8a85a0b2a30cac1090ea528dd015"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a8d1a8a85a0b2a30cac1090ea528dd015">cerr</a></div><div class="ttdeci">BEGIN_PROLOG could also be cerr</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00119">PMTPulseRecoBase.h:119</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00123">PMTPulseRecoBase.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -374,7 +378,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">_pulse_v</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00119">PMTPulseRecoBase.h:119</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00123">PMTPulseRecoBase.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -601,7 +605,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d30/PMTPulseRecoBase_8cxx_source.html#l00021">21</a> of file <a class="el" href="../../dc/d30/PMTPulseRecoBase_8cxx_source.html">PMTPulseRecoBase.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a0f08863e9a12d72503eaa4fa141d1050">_name</a>; }</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a0f08863e9a12d72503eaa4fa141d1050"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a0f08863e9a12d72503eaa4fa141d1050">pmtana::PMTPulseRecoBase::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdoc">Unique name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00102">PMTPulseRecoBase.h:102</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a0f08863e9a12d72503eaa4fa141d1050"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a0f08863e9a12d72503eaa4fa141d1050">pmtana::PMTPulseRecoBase::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdoc">Unique name. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00106">PMTPulseRecoBase.h:106</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -641,7 +645,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">_status</a> = this-&gt;<a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#af83b89738448fe0a6f0c50e0cf42bb2b">RecoPulse</a>(wf,mean_v,sigma_v);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">_status</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00110">PMTPulseRecoBase.h:110</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00114">PMTPulseRecoBase.h:114</a></div></div>
 <div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_af83b89738448fe0a6f0c50e0cf42bb2b"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#af83b89738448fe0a6f0c50e0cf42bb2b">pmtana::PMTPulseRecoBase::RecoPulse</a></div><div class="ttdeci">virtual bool RecoPulse(const pmtana::Waveform_t &amp;, const pmtana::PedestalMean_t &amp;, const pmtana::PedestalSigma_t &amp;)=0</div></div>
 </div><!-- fragment -->
 </div>
@@ -721,9 +725,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">_pulse_v</a>.reserve(3);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="ttc" id="structpmtana_1_1pulse__param_html_ac4f19a44d4aa2588c44397f768b394cf"><div class="ttname"><a href="../../d4/d18/structpmtana_1_1pulse__param.html#ac4f19a44d4aa2588c44397f768b394cf">pmtana::pulse_param::reset_param</a></div><div class="ttdeci">void reset_param()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00039">PMTPulseRecoBase.h:39</a></div></div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a746bbec32ea04e965e9fa552d4baa855"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a746bbec32ea04e965e9fa552d4baa855">pmtana::PMTPulseRecoBase::_pulse</a></div><div class="ttdeci">pulse_param _pulse</div><div class="ttdoc">A subject pulse_param object to be filled with the last reconstructed pulse parameters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00122">PMTPulseRecoBase.h:122</a></div></div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00119">PMTPulseRecoBase.h:119</a></div></div>
+<div class="ttc" id="structpmtana_1_1pulse__param_html_ac4f19a44d4aa2588c44397f768b394cf"><div class="ttname"><a href="../../d4/d18/structpmtana_1_1pulse__param.html#ac4f19a44d4aa2588c44397f768b394cf">pmtana::pulse_param::reset_param</a></div><div class="ttdeci">void reset_param()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00043">PMTPulseRecoBase.h:43</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a746bbec32ea04e965e9fa552d4baa855"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a746bbec32ea04e965e9fa552d4baa855">pmtana::PMTPulseRecoBase::_pulse</a></div><div class="ttdeci">pulse_param _pulse</div><div class="ttdoc">A subject pulse_param object to be filled with the last reconstructed pulse parameters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00126">PMTPulseRecoBase.h:126</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_a16d7fff4ece1caca3ab33c3db429b630"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#a16d7fff4ece1caca3ab33c3db429b630">pmtana::PMTPulseRecoBase::_pulse_v</a></div><div class="ttdeci">pulse_param_array _pulse_v</div><div class="ttdoc">A container array of pulse_param struct objects to store (possibly multiple) reconstructed pulse(s)...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00123">PMTPulseRecoBase.h:123</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -744,7 +748,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../dc/d30/PMTPulseRecoBase_8cxx_source.html#l00026">26</a> of file <a class="el" href="../../dc/d30/PMTPulseRecoBase_8cxx_source.html">PMTPulseRecoBase.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">_status</a>; }</div>
-<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00110">PMTPulseRecoBase.h:110</a></div></div>
+<div class="ttc" id="classpmtana_1_1PMTPulseRecoBase_html_ab4f1b5ddc8d35b0d29fd150525d4941f"><div class="ttname"><a href="../../d3/dbe/classpmtana_1_1PMTPulseRecoBase.html#ab4f1b5ddc8d35b0d29fd150525d4941f">pmtana::PMTPulseRecoBase::_status</a></div><div class="ttdeci">bool _status</div><div class="ttdoc">Status after pulse reconstruction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00114">PMTPulseRecoBase.h:114</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -769,7 +773,7 @@ Private Attributes</h2></td></tr>
 
 <p>Unique name. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00102">102</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00106">106</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +797,7 @@ Private Attributes</h2></td></tr>
 
 <p>A subject <a class="el" href="../../d4/d18/structpmtana_1_1pulse__param.html">pulse_param</a> object to be filled with the last reconstructed pulse parameters. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00122">122</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00126">126</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +821,31 @@ Private Attributes</h2></td></tr>
 
 <p>A container array of <a class="el" href="../../d4/d18/structpmtana_1_1pulse__param.html">pulse_param</a> struct objects to store (possibly multiple) reconstructed pulse(s). </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00123">123</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab29fcd5ff985a31c25227f639c0f6c9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../da/dba/classpmtana_1_1RiseTimeCalculatorBase.html">pmtana::RiseTimeCalculatorBase</a>&gt; pmtana::PMTPulseRecoBase::_risetime_calc_ptr = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tool for rise time calculation. </p>
+
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00129">129</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +869,7 @@ Private Attributes</h2></td></tr>
 
 <p>Status after pulse reconstruction. </p>
 
-<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00110">110</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html#l00114">114</a> of file <a class="el" href="../../d6/d33/PMTPulseRecoBase_8h_source.html">PMTPulseRecoBase.h</a>.</p>
 
 </div>
 </div>
