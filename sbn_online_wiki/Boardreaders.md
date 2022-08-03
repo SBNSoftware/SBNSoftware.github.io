@@ -7,7 +7,7 @@
 | TPC  |                |               |                        |
 | ICARUS trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
 | SBND trigger |  J. Sensenig|               |                        |
-| WR   | D.Torretta, W.Badgett, G.Lukhanin | [White Rabbit Timing System](WR/WhiteRabbit.md) |                        |
+| WR   | D.Torretta, W.Badgett | [White Rabbit Timing System](WR/WhiteRabbit.md) |                        |
 | spectdc | G.Lukhanin | |                        |
 | | | | |
 | EventBuilders | | | |
