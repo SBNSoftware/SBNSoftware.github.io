@@ -116,6 +116,26 @@ ICARUS MC
 | --- | --- | --- | --- | calib tuple | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_04_calibtuples |
 | --- | --- | v09_37_02_07 | 1,909,017 | caf | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_07_caf |
 | --- | --- | --- | --- | flatcaf | IcarusProd_2022A_BNB_in-time_Cosmics_v09_37_02_07_flatcaf |
+| nu+cosmics w/Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd2022A_icarus_BNB_Nu_Cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd2022A_icarus_BNB_Nu_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | calib tuples | hist_IcarusProd2022A_icarus_BNB_Nu_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd2022A_icarus_BNB_Nu_Cosmics_v09_37_02_04_caf |
+| --- | --- | --- | # | flatcaf | IcarusProd2022A_icarus_BNB_Nu_Cosmics_v09_37_02_04_flatcaf |
+| NuMI nu+cosmics w/o Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd2022A_icarus_numi_nu_cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd2022A_icarus_numi_nu_cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd2022A_icarus_numi_nu_cosmics_v09_37_02_04_caf |
+| BNB fullosc+cosmics w/Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd_2022A_BNB_FullOsc_Cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd_2022A_BNB_FullOsc_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd_2022A_BNB_FullOsc_Cosmics_v09_37_02_04_caf |
+| BNB nue+cosmics w/Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd_2022A_BNB_Nue_Cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd_2022A_BNB_Nue_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd_2022A_BNB_Nue_Cosmics_v09_37_02_04_caf |
+| NuMI full-osc+cosmics w/o Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd_2022A_NuMI_FullOsc_Cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd_2022A_NuMI_FullOsc_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd_2022A_NuMI_FullOsc_Cosmics_v09_37_02_04_caf |
+| NuMI nue+cosmics w/o Overburden | MC2022A | v09_37_02_04 | # | reco1 | IcarusProd_2022A_NuMI_Nue_Cosmics_v09_37_02_04_reco1 |
+| --- | --- | --- | # | reco2 | IcarusProd_2022A_NuMI_Nue_Cosmics_v09_37_02_04_reco2 |
+| --- | --- | --- | # | caf | IcarusProd_2022A_NuMI_Nue_Cosmics_v09_37_02_04_caf |
 | Cosmics, Lifetime 3.5 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_reco2 |
 | --- | --- | --- | --- | calib ntuples | IcarusProd_PuritySample_eLifetime3.5ms_NoSCE_v09_37_01_03p01_calibtuples |
 | Cosmics, Lifetime 6 ms, No SCE  | MCP2021C | v09_37_01_03p01 | 24400 | reco2 | IcarusProd_PuritySample_eLifetime6ms_NoSCE_v09_37_01_03p01_reco2 |
