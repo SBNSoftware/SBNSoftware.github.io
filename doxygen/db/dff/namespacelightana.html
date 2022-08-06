@@ -102,6 +102,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d01/classlightana_1_1SimpleFlashAlgoFactory.html">SimpleFlashAlgoFactory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concrete factory class for <a class="el" href="../../dd/d42/classlightana_1_1SimpleFlashAlgo.html">lightana::SimpleFlashAlgo</a>.  <a href="../../d6/d01/classlightana_1_1SimpleFlashAlgoFactory.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/classlightana_1_1DriftEstimatorBase.html">DriftEstimatorBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddc/classlightana_1_1DriftEstimatorPMTRatio.html">DriftEstimatorPMTRatio</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/classlightana_1_1FlashGeoBarycenter.html">FlashGeoBarycenter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d61/classlightana_1_1FlashGeoBase.html">FlashGeoBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da9/classlightana_1_1FlashT0Base.html">FlashT0Base</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de8/classlightana_1_1FlashT0FirstHit.html">FlashT0FirstHit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2e/classlightana_1_1FlashT0SelectedChannels.html">FlashT0SelectedChannels</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -140,7 +154,32 @@ Variables</h2></td></tr>
 <tr class="memitem:a89041e3f820042f8cd662a01528d018e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d01/classlightana_1_1SimpleFlashAlgoFactory.html">SimpleFlashAlgoFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dff/namespacelightana.html#a89041e3f820042f8cd662a01528d018e">__SimpleFlashAlgoFactoryStaticObject__</a></td></tr>
 <tr class="separator:a89041e3f820042f8cd662a01528d018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File: <a class="el" href="../../d2/d83/DriftEstimatorBase_8hh.html">DriftEstimatorBase.hh</a></p>
+<p>Interface class for drift coordinate estimation from reco objects</p>
+<p>Created by Fran Nicolas, June 2022</p>
+<p>File: <a class="el" href="../../d5/dff/DriftEstimatorPMTRatio__tool_8cc.html">DriftEstimatorPMTRatio_tool.cc</a></p>
+<p>Base class: <a class="el" href="../../d2/d83/DriftEstimatorBase_8hh.html">DriftEstimatorBase.hh</a></p>
+<p>Tool description: this tool estimates the drift coordinate from the ratio between the #PE reconstructed for the uncoated/coated PMTs. It requires a calibration curve (speficied in the CalibrationFile fhicl parameter). Once the drift has been estimated, the photon propagation time is calculated using the VUV and VIS light group velocities</p>
+<p>Created by Fran Nicolas, June 2022</p>
+<p>File: <a class="el" href="../../d9/d61/FlashGeoBarycenter__tool_8cc.html">FlashGeoBarycenter_tool.cc</a></p>
+<p>Base class: <a class="el" href="../../d3/d6a/FlashGeoBase_8hh.html">FlashGeoBase.hh</a></p>
+<p>It computes the PMTs barycenter weighted by the reconstructed number of PE</p>
+<p>File: FlashGeoBase.h</p>
+<p>Interfacce class for a tool to calculate the <a class="el" href="../../db/d3c/classrecob_1_1OpFlash.html">recob::OpFlash</a> Y and Z coordinates (PDS plane)</p>
+<p>Created by Fran Nicolas, June 2022</p>
+<p>File: FlashT0Base.h</p>
+<p>Interfacce class for a tool to calculate the <a class="el" href="../../db/d3c/classrecob_1_1OpFlash.html">recob::OpFlash</a> <a class="el" href="../../d5/d21/namespacet0.html" title="code to link reconstructed objects back to the MC truth information ">t0</a> from the associated recob::OpHits</p>
+<p>Created by Fran Nicolas, June 2022</p>
+<p>File: <a class="el" href="../../d3/d31/FlashT0FirstHit__tool_8cc.html">FlashT0FirstHit_tool.cc</a></p>
+<p>Base class: <a class="el" href="../../d2/d81/FlashT0Base_8hh.html">FlashT0Base.hh</a></p>
+<p>Algorithm description: The OpFlash <a class="el" href="../../d5/d21/namespacet0.html" title="code to link reconstructed objects back to the MC truth information ">t0</a> is set to the OpHit with the largest signal (#PE). Only OpHits above the MinHitPE cut are considered</p>
+<p>Created by Fran Nicolas, June 2022</p>
+<p>File: <a class="el" href="../../d4/d16/FlashT0SelectedChannels__tool_8cc.html">FlashT0SelectedChannels_tool.cc</a></p>
+<p>Base class: <a class="el" href="../../d2/d81/FlashT0Base_8hh.html">FlashT0Base.hh</a></p>
+<p>Algorithm description: it averages the OpHit times for the photon detectors (PDs) containing a certain fraction (PDFraction) of the integrated signal. Only OpHit in the interval [FlashPeakTime-PreWindow, FlashPeakTime-PostWindow] and above MinHitPE are taken into account</p>
+<p>Created by Fran Nicolas, June 2022 </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a82c23ca8123b758ff54947bb4e483e7c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +204,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d65/sbndcode_2sbndcode_2OpDetReco_2OpFlash_2FlashFinder_2FlashFinderTypes_8h_source.html#l00051">51</a> of file <a class="el" href="../../d8/d65/sbndcode_2sbndcode_2OpDetReco_2OpFlash_2FlashFinder_2FlashFinderTypes_8h_source.html">sbndcode/sbndcode/OpDetReco/OpFlash/FlashFinder/FlashFinderTypes.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d65/sbndcode_2sbndcode_2OpDetReco_2OpFlash_2FlashFinder_2FlashFinderTypes_8h_source.html#l00053">53</a> of file <a class="el" href="../../d8/d65/sbndcode_2sbndcode_2OpDetReco_2OpFlash_2FlashFinder_2FlashFinderTypes_8h_source.html">sbndcode/sbndcode/OpDetReco/OpFlash/FlashFinder/FlashFinderTypes.h</a>.</p>
 
 </div>
 </div>

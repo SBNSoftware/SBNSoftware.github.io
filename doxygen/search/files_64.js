@@ -263,6 +263,8 @@ var searchData=
   ['drawwiredata_5ftool_2ecc',['DrawWireData_tool.cc',['../d8/dd2/DrawWireData__tool_8cc.html',1,'']]],
   ['drawwirehist_5ftool_2ecc',['DrawWireHist_tool.cc',['../db/d70/DrawWireHist__tool_8cc.html',1,'']]],
   ['driftelectronstoplane_5fmodule_2ecc',['DriftElectronstoPlane_module.cc',['../df/df1/DriftElectronstoPlane__module_8cc.html',1,'']]],
+  ['driftestimatorbase_2ehh',['DriftEstimatorBase.hh',['../d2/d83/DriftEstimatorBase_8hh.html',1,'']]],
+  ['driftestimatorpmtratio_5ftool_2ecc',['DriftEstimatorPMTRatio_tool.cc',['../d5/dff/DriftEstimatorPMTRatio__tool_8cc.html',1,'']]],
   ['driftpartitions_2ecxx',['DriftPartitions.cxx',['../d4/d06/DriftPartitions_8cxx.html',1,'']]],
   ['driftpartitions_2eh',['DriftPartitions.h',['../df/df2/DriftPartitions_8h.html',1,'']]],
   ['driftvolumes_5ftest_2ecxx',['driftvolumes_test.cxx',['../de/d4e/driftvolumes__test_8cxx.html',1,'']]],

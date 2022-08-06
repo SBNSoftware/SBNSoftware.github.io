@@ -488,7 +488,7 @@ std::unique_ptr<br class="typebreak"/>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    icarus_signal_processing::ArrayFloat outputArray(dataArray.size(),icarus_signal_processing::VectorFloat(dataArray[0].<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>(),0.));</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    icarus_signal_processing::ArrayBool  selectedVals(dataArray.size(),icarus_signal_processing::VectorBool(dataArray[0].<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aaae74cf315284bc0f44c2e050c119781">size</a>(),<span class="keyword">false</span>));</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="code" href="../../d1/df7/classcaldata_1_1ROIFinder.html#a8e7a32a8640cb667bd6b071ce1ebaa97">fROIToolMap</a>.at(planeID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>)-&gt;FindROIs(event, dataArray, mapItr-&gt;first, outputArray, selectedVals);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="code" href="../../d1/df7/classcaldata_1_1ROIFinder.html#a8e7a32a8640cb667bd6b071ce1ebaa97">fROIToolMap</a>.at(planeID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>)-&gt;FindROIs(event, dataArray, channelVec, mapItr-&gt;first, outputArray, selectedVals);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">//    icarus_signal_processing::ArrayFloat morphedWaveforms(dataArray.size());</span></div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
@@ -564,7 +564,7 @@ std::unique_ptr<br class="typebreak"/>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="comment">// Loop through candidate roi&#39;s</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <span class="keywordtype">size_t</span> startRoi = candidateROIVec.front().first;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <span class="keywordtype">size_t</span> stopRoi  = startRoi;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            <span class="keywordtype">size_t</span> stopRoi  = candidateROIVec.front().second;    <span class="comment">//startRoi;</span></div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; roi : candidateROIVec)</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            {</div>
