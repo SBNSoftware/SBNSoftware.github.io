@@ -152,7 +152,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00056">56</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00069">69</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a88994e8111ef8b7f73bfe66ced1f799a"></a>
 <div class="memitem">
@@ -176,117 +176,116 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                                :</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  EDProducer{pset},</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Indicate that the Input Module comes from .fcl</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>   = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;InputModule&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">fGenModule</a>     = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;GenModule&quot;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>   = pset.get&lt; std::vector&lt; std::string &gt; &gt;(<span class="stringliteral">&quot;InputLabels&quot;</span>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; ch : pset.get&lt; std::vector&lt; unsigned int &gt; &gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      (<span class="stringliteral">&quot;ChannelMasks&quot;</span>, std::vector&lt; unsigned int &gt;()))</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.insert(ch);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>   = pset.get&lt; std::vector&lt; std::string &gt; &gt;(<span class="stringliteral">&quot;PD&quot;</span>, <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a> = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;Electronics&quot;</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a> = this-&gt;<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a33d596950a09c7f5912be393c8f6fe64">PDNamesToList</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">fDaphne_Freq</a>  = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;DaphneFreq&quot;</span>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a> = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;HitThreshold&quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">bool</span> useCalibrator = pset.get&lt; <span class="keywordtype">bool</span> &gt; (<span class="stringliteral">&quot;UseCalibrator&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>(*lar::providerFrom&lt; geo::Geometry &gt;());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a190e9c0eebbc9d18fceab92a557d0809">fMaxOpChannel</a> = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a07e176f3ff3f93b46c19fffdddbff72b">MaxOpChannel</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (useCalibrator) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="comment">// If useCalibrator, get it from ART</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a> = lar::providerFrom&lt;calib::IPhotonCalibratorService&gt;();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="comment">// If not useCalibrator, make an internal one based</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="comment">// on fhicl settings to hit finder.</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordtype">bool</span>  areaToPE      = pset.get&lt; <span class="keywordtype">bool</span> &gt; (<span class="stringliteral">&quot;AreaToPE&quot;</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordtype">float</span> <a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a>       = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;SPEArea&quot;</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordtype">float</span> SPEShift      = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;SPEShift&quot;</span>, 0.);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="comment">// Reproduce behavior from GetSPEScales()</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keywordflow">if</span> (!areaToPE) <a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a> = 20;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="comment">// Delete and replace if we are reconfiguring</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a> = <span class="keyword">new</span> <a class="code" href="../../d4/da5/classcalib_1_1PhotonCalibratorStandard.html">calib::PhotonCalibratorStandard</a>(<a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a>, SPEShift, areaToPE);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// Initialize the hit finder algorithm</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> hit_alg_pset = pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;HitAlgoPset&quot;</span>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::string threshAlgName = hit_alg_pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;Name&quot;</span>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span>      (threshAlgName == <span class="stringliteral">&quot;Threshold&quot;</span>)</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d7/d61/classpmtana_1_1AlgoThreshold.html">pmtana::AlgoThreshold</a>(hit_alg_pset);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;SiPM&quot;</span>)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d1/d09/classpmtana_1_1AlgoSiPM.html">pmtana::AlgoSiPM</a>(hit_alg_pset);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;SlidingWindow&quot;</span>)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d3/d8a/classpmtana_1_1AlgoSlidingWindow.html">pmtana::AlgoSlidingWindow</a>(hit_alg_pset);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;FixedWindow&quot;</span>)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = <span class="keyword">new</span> <a class="code" href="../../db/dfc/classpmtana_1_1AlgoFixedWindow.html">pmtana::AlgoFixedWindow</a>(hit_alg_pset);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;CFD&quot;</span> )</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d4/d6a/classpmtana_1_1AlgoCFD.html">pmtana::AlgoCFD</a>(hit_alg_pset);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">throw</span> art::Exception(art::errors::UnimplementedFeature)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Cannot find implementation for &quot;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    &lt;&lt; threshAlgName &lt;&lt; <span class="stringliteral">&quot; algorithm.\n&quot;</span>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> ped_alg_pset = pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;PedAlgoPset&quot;</span>);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::string pedAlgName = ped_alg_pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;Name&quot;</span>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>      (pedAlgName == <span class="stringliteral">&quot;Edges&quot;</span>)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d3/dd2/classpmtana_1_1PedAlgoEdges.html">pmtana::PedAlgoEdges</a>(ped_alg_pset);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pedAlgName == <span class="stringliteral">&quot;RollingMean&quot;</span>)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../db/d86/classpmtana_1_1PedAlgoRollingMean.html">pmtana::PedAlgoRollingMean</a>(ped_alg_pset);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pedAlgName == <span class="stringliteral">&quot;UB&quot;</span>   )</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../db/de8/classpmtana_1_1PedAlgoUB.html">pmtana::PedAlgoUB</a>(ped_alg_pset);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">throw</span> art::Exception(art::errors::UnimplementedFeature)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Cannot find implementation for &quot;</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    &lt;&lt; pedAlgName &lt;&lt; <span class="stringliteral">&quot; algorithm.\n&quot;</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    produces&lt; std::vector&lt; recob::OpHit &gt; &gt;();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>.<a class="code" href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a8f3bebbcf42828d397ab6fb6ce17db03">AddRecoAlgo</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>.<a class="code" href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a76036f77bea6e1bb9f507a15611bc4af">SetDefaultPedAlgo</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a>);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  }</div>
-<div class="ttc" id="classpmtana_1_1AlgoFixedWindow_html"><div class="ttname"><a href="../../db/dfc/classpmtana_1_1AlgoFixedWindow.html">pmtana::AlgoFixedWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d41/AlgoFixedWindow_8h_source.html#l00037">AlgoFixedWindow.h:37</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a69994f22d55014c7ebec0149e6b31f30"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">opdet::SBNDOpHitFinder::fInputLabels</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fInputLabels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00076">SBNDOpHitFinder_module.cc:76</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00117">117</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                                                :</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  EDProducer{pset},</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>()</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// Indicate that the Input Module comes from .fcl</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>   = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;InputModule&quot;</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">fGenModule</a>     = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;GenModule&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>   = pset.get&lt; std::vector&lt; std::string &gt; &gt;(<span class="stringliteral">&quot;InputLabels&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; ch : pset.get&lt; std::vector&lt; unsigned int &gt; &gt;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      (<span class="stringliteral">&quot;ChannelMasks&quot;</span>, std::vector&lt; unsigned int &gt;()))</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.insert(ch);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>   = pset.get&lt; std::vector&lt; std::string &gt; &gt;(<span class="stringliteral">&quot;PD&quot;</span>, <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a> = pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;Electronics&quot;</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a> = this-&gt;<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a33d596950a09c7f5912be393c8f6fe64">PDNamesToList</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">_pd_to_use</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">fDaphne_Freq</a>  = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;DaphneFreq&quot;</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a> = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;HitThreshold&quot;</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> useCalibrator = pset.get&lt; <span class="keywordtype">bool</span> &gt; (<span class="stringliteral">&quot;UseCalibrator&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>(*lar::providerFrom&lt; geo::Geometry &gt;());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a190e9c0eebbc9d18fceab92a557d0809">fMaxOpChannel</a> = <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a07e176f3ff3f93b46c19fffdddbff72b">MaxOpChannel</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">if</span> (useCalibrator) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="comment">// If useCalibrator, get it from ART</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a> = lar::providerFrom&lt;calib::IPhotonCalibratorService&gt;();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="comment">// If not useCalibrator, make an internal one based</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="comment">// on fhicl settings to hit finder.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordtype">bool</span>  areaToPE      = pset.get&lt; <span class="keywordtype">bool</span> &gt; (<span class="stringliteral">&quot;AreaToPE&quot;</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordtype">float</span> <a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a>       = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;SPEArea&quot;</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordtype">float</span> SPEShift      = pset.get&lt; <span class="keywordtype">float</span> &gt;(<span class="stringliteral">&quot;SPEShift&quot;</span>, 0.);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="comment">// Reproduce behavior from GetSPEScales()</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">if</span> (!areaToPE) <a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a> = 20;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="comment">// Delete and replace if we are reconfiguring</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a> = <span class="keyword">new</span> <a class="code" href="../../d4/da5/classcalib_1_1PhotonCalibratorStandard.html">calib::PhotonCalibratorStandard</a>(<a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a>, SPEShift, areaToPE);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// Initialize the rise time calculator tool</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> rise_alg_pset = pset.get_if_present&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;RiseTimeCalculator&quot;</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// Initialize the hit finder algorithm</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> hit_alg_pset = pset.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;HitAlgoPset&quot;</span>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::string threshAlgName = hit_alg_pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;Name&quot;</span>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;Threshold&quot;</span>)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = thresholdAlgorithm&lt;pmtana::AlgoThreshold&gt;(hit_alg_pset, rise_alg_pset);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;SiPM&quot;</span>)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = thresholdAlgorithm&lt;pmtana::AlgoSiPM&gt;(hit_alg_pset, rise_alg_pset);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;SlidingWindow&quot;</span>)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = thresholdAlgorithm&lt;pmtana::AlgoSlidingWindow&gt;(hit_alg_pset, rise_alg_pset);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;FixedWindow&quot;</span>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = thresholdAlgorithm&lt;pmtana::AlgoFixedWindow&gt;(hit_alg_pset, rise_alg_pset);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (threshAlgName == <span class="stringliteral">&quot;CFD&quot;</span>)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a> = thresholdAlgorithm&lt;pmtana::AlgoCFD&gt;(hit_alg_pset, rise_alg_pset);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">throw</span> art::Exception(art::errors::UnimplementedFeature)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;Cannot find implementation for &quot;</span> &lt;&lt; threshAlgName &lt;&lt; <span class="stringliteral">&quot; algorithm.\n&quot;</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Initialize the pedestal estimation algorithm</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> ped_alg_pset = pset.get&lt; fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;PedAlgoPset&quot;</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    std::string pedAlgName = ped_alg_pset.get&lt; std::string &gt;(<span class="stringliteral">&quot;Name&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span>      (pedAlgName == <span class="stringliteral">&quot;Edges&quot;</span>)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../d3/dd2/classpmtana_1_1PedAlgoEdges.html">pmtana::PedAlgoEdges</a>(ped_alg_pset);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pedAlgName == <span class="stringliteral">&quot;RollingMean&quot;</span>)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../db/d86/classpmtana_1_1PedAlgoRollingMean.html">pmtana::PedAlgoRollingMean</a>(ped_alg_pset);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pedAlgName == <span class="stringliteral">&quot;UB&quot;</span>   )</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a> = <span class="keyword">new</span> <a class="code" href="../../db/de8/classpmtana_1_1PedAlgoUB.html">pmtana::PedAlgoUB</a>(ped_alg_pset);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">throw</span> art::Exception(art::errors::UnimplementedFeature)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Cannot find implementation for &quot;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    &lt;&lt; pedAlgName &lt;&lt; <span class="stringliteral">&quot; algorithm.\n&quot;</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    produces&lt; std::vector&lt; recob::OpHit &gt; &gt;();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>.<a class="code" href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a8f3bebbcf42828d397ab6fb6ce17db03">AddRecoAlgo</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>.<a class="code" href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a76036f77bea6e1bb9f507a15611bc4af">SetDefaultPedAlgo</a>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a69994f22d55014c7ebec0149e6b31f30"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">opdet::SBNDOpHitFinder::fInputLabels</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fInputLabels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">SBNDOpHitFinder_module.cc:89</a></div></div>
 <div class="ttc" id="NuVertexChargeTree__module_8cc_html_ad544178eb97bd705ef1dc4dc3e72b405"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a></div><div class="ttdeci">const geo::GeometryCore * geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00373">NuVertexChargeTree_module.cc:373</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a33d596950a09c7f5912be393c8f6fe64"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a33d596950a09c7f5912be393c8f6fe64">opdet::SBNDOpHitFinder::PDNamesToList</a></div><div class="ttdeci">std::vector&lt; int &gt; PDNamesToList(std::vector&lt; std::string &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00319">SBNDOpHitFinder_module.cc:319</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_adac8bbd065ba65ddde59c2f1801a7672"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">opdet::SBNDOpHitFinder::fChannelMasks</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; fChannelMasks</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00077">SBNDOpHitFinder_module.cc:77</a></div></div>
-<div class="ttc" id="classpmtana_1_1AlgoThreshold_html"><div class="ttname"><a href="../../d7/d61/classpmtana_1_1AlgoThreshold.html">pmtana::AlgoThreshold</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d0b/AlgoThreshold_8h_source.html#l00035">AlgoThreshold.h:35</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6928f29e02ff655867be33fa29dd275b"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">opdet::SBNDOpHitFinder::_opch_to_use</a></div><div class="ttdeci">std::vector&lt; int &gt; _opch_to_use</div><div class="ttdoc">List of of opch (will be infered from _pd_to_use) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00080">SBNDOpHitFinder_module.cc:80</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ab5aca7a8e1c4961443627b7d382faea3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">opdet::SBNDOpHitFinder::fCalib</a></div><div class="ttdeci">calib::IPhotonCalibrator const * fCalib</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">SBNDOpHitFinder_module.cc:89</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a33d596950a09c7f5912be393c8f6fe64"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a33d596950a09c7f5912be393c8f6fe64">opdet::SBNDOpHitFinder::PDNamesToList</a></div><div class="ttdeci">std::vector&lt; int &gt; PDNamesToList(std::vector&lt; std::string &gt;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00338">SBNDOpHitFinder_module.cc:338</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_adac8bbd065ba65ddde59c2f1801a7672"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">opdet::SBNDOpHitFinder::fChannelMasks</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; fChannelMasks</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00090">SBNDOpHitFinder_module.cc:90</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6928f29e02ff655867be33fa29dd275b"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">opdet::SBNDOpHitFinder::_opch_to_use</a></div><div class="ttdeci">std::vector&lt; int &gt; _opch_to_use</div><div class="ttdoc">List of of opch (will be infered from _pd_to_use) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00093">SBNDOpHitFinder_module.cc:93</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ab5aca7a8e1c4961443627b7d382faea3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">opdet::SBNDOpHitFinder::fCalib</a></div><div class="ttdeci">calib::IPhotonCalibrator const * fCalib</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00102">SBNDOpHitFinder_module.cc:102</a></div></div>
 <div class="ttc" id="ophit__finder__sbnd_8fcl_html_a525f6c60c51307d7f1e1c20e30fa3f2c"><div class="ttname"><a href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a525f6c60c51307d7f1e1c20e30fa3f2c">SPEArea</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated this number is pmt_uncoated sbnd_ophit_finder_pmt SPEArea</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da1/ophit__finder__sbnd_8fcl_source.html#l00012">ophit_finder_sbnd.fcl:12</a></div></div>
 <div class="ttc" id="classpmtana_1_1PulseRecoManager_html_a8f3bebbcf42828d397ab6fb6ce17db03"><div class="ttname"><a href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a8f3bebbcf42828d397ab6fb6ce17db03">pmtana::PulseRecoManager::AddRecoAlgo</a></div><div class="ttdeci">void AddRecoAlgo(pmtana::PMTPulseRecoBase *algo, PMTPedestalBase *ped_algo=nullptr)</div><div class="ttdoc">A method to set pulse reconstruction algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc6/PulseRecoManager_8cxx_source.html#l00024">PulseRecoManager.cxx:24</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a190e9c0eebbc9d18fceab92a557d0809"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a190e9c0eebbc9d18fceab92a557d0809">opdet::SBNDOpHitFinder::fMaxOpChannel</a></div><div class="ttdeci">unsigned int fMaxOpChannel</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00087">SBNDOpHitFinder_module.cc:87</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a190e9c0eebbc9d18fceab92a557d0809"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a190e9c0eebbc9d18fceab92a557d0809">opdet::SBNDOpHitFinder::fMaxOpChannel</a></div><div class="ttdeci">unsigned int fMaxOpChannel</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00100">SBNDOpHitFinder_module.cc:100</a></div></div>
 <div class="ttc" id="classpmtana_1_1PedAlgoEdges_html"><div class="ttname"><a href="../../d3/dd2/classpmtana_1_1PedAlgoEdges.html">pmtana::PedAlgoEdges</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/dda/PedAlgoEdges_8h_source.html#l00032">PedAlgoEdges.h:32</a></div></div>
 <div class="ttc" id="classcalib_1_1PhotonCalibratorStandard_html"><div class="ttname"><a href="../../d4/da5/classcalib_1_1PhotonCalibratorStandard.html">calib::PhotonCalibratorStandard</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d2c/PhotonCalibratorStandard_8h_source.html#l00022">PhotonCalibratorStandard.h:22</a></div></div>
-<div class="ttc" id="classpmtana_1_1AlgoSlidingWindow_html"><div class="ttname"><a href="../../d3/d8a/classpmtana_1_1AlgoSlidingWindow.html">pmtana::AlgoSlidingWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/da0/AlgoSlidingWindow_8h_source.html#l00032">AlgoSlidingWindow.h:32</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a07e176f3ff3f93b46c19fffdddbff72b"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a07e176f3ff3f93b46c19fffdddbff72b">geo::GeometryCore::MaxOpChannel</a></div><div class="ttdeci">unsigned int MaxOpChannel() const </div><div class="ttdoc">Largest optical channel number. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00259">GeometryCore.cxx:259</a></div></div>
 <div class="ttc" id="classpmtana_1_1PedAlgoUB_html"><div class="ttname"><a href="../../db/de8/classpmtana_1_1PedAlgoUB.html">pmtana::PedAlgoUB</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8e/PedAlgoUB_8h_source.html#l00032">PedAlgoUB.h:32</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6bbf309a5394cdffbf89539f97077d68"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">opdet::SBNDOpHitFinder::fDaphne_Freq</a></div><div class="ttdeci">Float_t fDaphne_Freq</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">SBNDOpHitFinder_module.cc:86</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00083">SBNDOpHitFinder_module.cc:83</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ae55df145d4ee67618060c1a65a2bedb3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">opdet::SBNDOpHitFinder::fHitThreshold</a></div><div class="ttdeci">Float_t fHitThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">SBNDOpHitFinder_module.cc:86</a></div></div>
-<div class="ttc" id="classpmtana_1_1AlgoSiPM_html"><div class="ttname"><a href="../../d1/d09/classpmtana_1_1AlgoSiPM.html">pmtana::AlgoSiPM</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d96/AlgoSiPM_8h_source.html#l00022">AlgoSiPM.h:22</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6bbf309a5394cdffbf89539f97077d68"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">opdet::SBNDOpHitFinder::fDaphne_Freq</a></div><div class="ttdeci">Float_t fDaphne_Freq</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">SBNDOpHitFinder_module.cc:99</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00096">SBNDOpHitFinder_module.cc:96</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ae55df145d4ee67618060c1a65a2bedb3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">opdet::SBNDOpHitFinder::fHitThreshold</a></div><div class="ttdeci">Float_t fHitThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">SBNDOpHitFinder_module.cc:99</a></div></div>
 <div class="ttc" id="classpmtana_1_1PulseRecoManager_html_a76036f77bea6e1bb9f507a15611bc4af"><div class="ttname"><a href="../../d0/d94/classpmtana_1_1PulseRecoManager.html#a76036f77bea6e1bb9f507a15611bc4af">pmtana::PulseRecoManager::SetDefaultPedAlgo</a></div><div class="ttdeci">void SetDefaultPedAlgo(pmtana::PMTPedestalBase *algo)</div><div class="ttdoc">A method to set a choice of pedestal estimation method. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dc6/PulseRecoManager_8cxx_source.html#l00033">PulseRecoManager.cxx:33</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6e8d598772469915f545296e24b4f0a1"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">opdet::SBNDOpHitFinder::fInputModule</a></div><div class="ttdeci">std::string fInputModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00074">SBNDOpHitFinder_module.cc:74</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6e8d598772469915f545296e24b4f0a1"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">opdet::SBNDOpHitFinder::fInputModule</a></div><div class="ttdeci">std::string fInputModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00087">SBNDOpHitFinder_module.cc:87</a></div></div>
 <div class="ttc" id="classpmtana_1_1PedAlgoRollingMean_html"><div class="ttname"><a href="../../db/d86/classpmtana_1_1PedAlgoRollingMean.html">pmtana::PedAlgoRollingMean</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d06/PedAlgoRollingMean_8h_source.html#l00032">PedAlgoRollingMean.h:32</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_af28fe26a1ee7fecf3187340ccfd87a2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">opdet::SBNDOpHitFinder::fPulseRecoMgr</a></div><div class="ttdeci">pmtana::PulseRecoManager fPulseRecoMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00082">SBNDOpHitFinder_module.cc:82</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a97bda9e9bdf584f3ba175fd6523e8e2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">opdet::SBNDOpHitFinder::fPedAlg</a></div><div class="ttdeci">pmtana::PMTPedestalBase * fPedAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00084">SBNDOpHitFinder_module.cc:84</a></div></div>
-<div class="ttc" id="classpmtana_1_1AlgoCFD_html"><div class="ttname"><a href="../../d4/d6a/classpmtana_1_1AlgoCFD.html">pmtana::AlgoCFD</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d48/AlgoCFD_8h_source.html#l00035">AlgoCFD.h:35</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_aea0a684988a9b81f030f99088e3a2f0d"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">opdet::SBNDOpHitFinder::_pd_to_use</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _pd_to_use</div><div class="ttdoc">PDS to use (ex: &amp;quot;pmt&amp;quot;, &amp;quot;barepmt&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00078">SBNDOpHitFinder_module.cc:78</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a4faf5f0caaf30747206e5ef2338cd57e"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">opdet::SBNDOpHitFinder::fGenModule</a></div><div class="ttdeci">std::string fGenModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00075">SBNDOpHitFinder_module.cc:75</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00079">SBNDOpHitFinder_module.cc:79</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_af28fe26a1ee7fecf3187340ccfd87a2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">opdet::SBNDOpHitFinder::fPulseRecoMgr</a></div><div class="ttdeci">pmtana::PulseRecoManager fPulseRecoMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00095">SBNDOpHitFinder_module.cc:95</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a97bda9e9bdf584f3ba175fd6523e8e2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">opdet::SBNDOpHitFinder::fPedAlg</a></div><div class="ttdeci">pmtana::PMTPedestalBase * fPedAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00097">SBNDOpHitFinder_module.cc:97</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_aea0a684988a9b81f030f99088e3a2f0d"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aea0a684988a9b81f030f99088e3a2f0d">opdet::SBNDOpHitFinder::_pd_to_use</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _pd_to_use</div><div class="ttdoc">PDS to use (ex: &amp;quot;pmt&amp;quot;, &amp;quot;barepmt&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00091">SBNDOpHitFinder_module.cc:91</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a4faf5f0caaf30747206e5ef2338cd57e"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">opdet::SBNDOpHitFinder::fGenModule</a></div><div class="ttdeci">std::string fGenModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00088">SBNDOpHitFinder_module.cc:88</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00092">SBNDOpHitFinder_module.cc:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,15 +310,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00188">188</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00083">SBNDOpHitFinder_module.cc:83</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a97bda9e9bdf584f3ba175fd6523e8e2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">opdet::SBNDOpHitFinder::fPedAlg</a></div><div class="ttdeci">pmtana::PMTPedestalBase * fPedAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00084">SBNDOpHitFinder_module.cc:84</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00205">205</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">delete</span> <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">fPedAlg</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00096">SBNDOpHitFinder_module.cc:96</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a97bda9e9bdf584f3ba175fd6523e8e2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a97bda9e9bdf584f3ba175fd6523e8e2c">opdet::SBNDOpHitFinder::fPedAlg</a></div><div class="ttdeci">pmtana::PMTPedestalBase * fPedAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00097">SBNDOpHitFinder_module.cc:97</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -415,31 +414,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00319">319</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                                                             {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::vector&lt;int&gt; out_ch_v;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a> : pd_names) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      std::vector&lt;int&gt; ch_v;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="comment">// std::cout&lt;&lt;&quot;@rodrigoa debug: Electronics=&quot;&lt;&lt;fElectronics&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a>==<span class="stringliteral">&quot;Daphne&quot;</span>){</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">//take only daphne xarapuca channels (80 Mhz) for now ~rodrigoa</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        ch_v = <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">_pds_map</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a1d7efb745c7d34cf48337836bc73f819">getChannelsOfType</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, <span class="stringliteral">&quot;daphne&quot;</span>);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        ch_v = <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">_pds_map</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a1d7efb745c7d34cf48337836bc73f819">getChannelsOfType</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      out_ch_v.insert(out_ch_v.end(), ch_v.begin(), ch_v.end());</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> out_ch_v;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  }</div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_aff104fa97df8b325ba9cc021fe0330ad"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">opdet::SBNDOpHitFinder::_pds_map</a></div><div class="ttdeci">opdet::sbndPDMapAlg _pds_map</div><div class="ttdoc">map for photon detector types </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00091">SBNDOpHitFinder_module.cc:91</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    std::vector&lt;int&gt; out_ch_v;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a> : pd_names) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      std::vector&lt;int&gt; ch_v;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="comment">// std::cout&lt;&lt;&quot;@rodrigoa debug: Electronics=&quot;&lt;&lt;fElectronics&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a>==<span class="stringliteral">&quot;Daphne&quot;</span>){</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">//take only daphne xarapuca channels (80 Mhz) for now ~rodrigoa</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        ch_v = <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">_pds_map</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a1d7efb745c7d34cf48337836bc73f819">getChannelsOfType</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, <span class="stringliteral">&quot;daphne&quot;</span>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        ch_v = <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">_pds_map</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a1d7efb745c7d34cf48337836bc73f819">getChannelsOfType</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      out_ch_v.insert(out_ch_v.end(), ch_v.begin(), ch_v.end());</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">return</span> out_ch_v;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_aff104fa97df8b325ba9cc021fe0330ad"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#aff104fa97df8b325ba9cc021fe0330ad">opdet::SBNDOpHitFinder::_pds_map</a></div><div class="ttdeci">opdet::sbndPDMapAlg _pds_map</div><div class="ttdoc">map for photon detector types </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00104">SBNDOpHitFinder_module.cc:104</a></div></div>
 <div class="ttc" id="classopdet_1_1sbndPDMapAlg_html_a1d7efb745c7d34cf48337836bc73f819"><div class="ttname"><a href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a1d7efb745c7d34cf48337836bc73f819">opdet::sbndPDMapAlg::getChannelsOfType</a></div><div class="ttdeci">std::vector&lt; int &gt; getChannelsOfType(std::string pdname) const </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/sbndPDMapAlg__tool_8cc_source.html#l00047">sbndPDMapAlg_tool.cc:47</a></div></div>
 <div class="ttc" id="sbndpoms__genfclwithrunnumber__maker_8sh_html_a19dd16849ed641adb2aff777fdc4bd8b"><div class="ttname"><a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a></div><div class="ttdeci">then echo fcl name</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh_source.html#l00220">sbndpoms_genfclwithrunnumber_maker.sh:220</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00079">SBNDOpHitFinder_module.cc:79</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00092">SBNDOpHitFinder_module.cc:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -457,145 +456,147 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00197">197</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">// These is the storage pointer we will put in the event</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::unique_ptr&lt; std::vector&lt; recob::OpHit &gt; &gt;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    HitPtrFinal(<span class="keyword">new</span> std::vector&lt; recob::OpHit &gt;);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">// These is a temporary storage pointer</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    std::unique_ptr&lt; std::vector&lt; recob::OpHit &gt; &gt;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    HitPtr(<span class="keyword">new</span> std::vector&lt; recob::OpHit &gt;);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    std::vector&lt; const sim::BeamGateInfo* &gt; beamGateArray;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getView(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">fGenModule</a>, beamGateArray);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">catch</span> (art::Exception <span class="keyword">const</span>&amp; <a class="code" href="../../da/d2d/namespaceevd.html#a911fe581afad27a720ee200bd61362a6">err</a>)</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="keywordflow">if</span> ( err.categoryCode() != art::errors::ProductNotFound ) <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>(*lar::providerFrom&lt; geo::Geometry &gt;());</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData_CAEN = art::ServiceHandle&lt;detinfo::DetectorClocksService&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; calibrator(*<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="../../d0/d00/classdetinfo_1_1ElecClock.html">detinfo::ElecClock</a> <span class="keyword">const</span> optical_clock_daphne = <a class="code" href="../../d0/d00/classdetinfo_1_1ElecClock.html">detinfo::ElecClock</a>(clockData_CAEN.OpticalClock().Time(),</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                                       clockData_CAEN.OpticalClock().FramePeriod(),</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                                       <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">fDaphne_Freq</a>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a> <span class="keyword">const</span>&amp; clockData_Daphne = <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a>(-clockData_CAEN.G4ToElecTime(0),</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                                                                       clockData_CAEN.TriggerOffsetTPC(),</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                                                                       clockData_CAEN.TriggerTime(),</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                                                                       clockData_CAEN.BeamGateTime(),</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                                                                       clockData_CAEN.TPCClock(),</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                                                                       optical_clock_daphne,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                                                                       clockData_CAEN.TriggerClock(),</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                                                                       clockData_CAEN.ExternalClock());</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a> <span class="keyword">const</span>&amp; clockData = (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a>==<span class="stringliteral">&quot;Daphne&quot;</span>) ?  clockData_Daphne : clockData_CAEN;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">// std::cout&lt;&lt;&quot;@rodrigoa debug: frecuencies &quot;&lt;&lt;clockData_Daphne.OpticalClock().Frequency()&lt;&lt;&quot;  &quot;&lt;&lt;clockData.OpticalClock().Frequency()&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="comment">// Get the pulses from the event</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">// Load pulses into WaveformVector</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.empty() &amp;&amp; <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.empty() &amp;&amp; <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.size()&lt;2) {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.empty())</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, wfHandle);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.front(), wfHandle);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      assert(wfHandle.isValid());</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="../../dc/d8a/namespaceopdet.html#ae782e2bdd12030193f989f2e9ec2c108">RunHitFinder</a>(*wfHandle,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                   *HitPtr,</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                   *<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                   <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>,</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a>,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                   clockData,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                   calibrator);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="comment">// Reserve a large enough array</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordtype">int</span> totalsize = 0;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> label : <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, label, wfHandle);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">if</span> (!wfHandle.isValid()) <span class="keywordflow">continue</span>; <span class="comment">// Skip non-existent collections</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        totalsize += wfHandle-&gt;size();</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      std::vector&lt; raw::OpDetWaveform &gt; WaveformVector;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      WaveformVector.reserve(totalsize);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> label : fInputLabels)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, label, wfHandle);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (!wfHandle.isValid()) <span class="keywordflow">continue</span>; <span class="comment">// Skip non-existent collections</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wf : *wfHandle)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          <span class="comment">// If this channel is in the channel mask, ingore it</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          <span class="keywordflow">if</span> ( <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.find(wf.ChannelNumber()) != <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.end() ) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          <span class="comment">// If this PDS in not in the list of PDS to use, ingore it</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          <span class="keywordflow">if</span> ( std::find(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.begin(), <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.end(), wf.ChannelNumber()) == <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.end() ) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          WaveformVector.push_back(wf);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <a class="code" href="../../dc/d8a/namespaceopdet.html#ae782e2bdd12030193f989f2e9ec2c108">RunHitFinder</a>(WaveformVector,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                   *HitPtr,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                   *<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                   <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a>,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                   clockData,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                   calibrator);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="comment">// for (auto h : *HitPtr)</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="comment">//   std::cout &lt;&lt; &quot;&gt; ophit time &quot; &lt;&lt; h.PeakTime()</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, corrected &quot; &lt;&lt; h.PeakTime() - clockData.TriggerTime()</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, area &quot; &lt;&lt; h.Area()</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, pe &quot; &lt;&lt; h.PE() &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// Now correct the time. Unfortunately, there are no setter methods for OpHits,</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// so we have to make a new OpHit vector.</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> : *HitPtr) {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      (*HitPtrFinal).emplace_back(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.OpChannel(),</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PeakTime() + clockData.TriggerTime(),</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PeakTimeAbs(),</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Frame(),</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Width(),</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Area(),</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Amplitude(),</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PE(),</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                  0.0);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// Store results into the event</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(HitPtrFinal));</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  }</div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a69994f22d55014c7ebec0149e6b31f30"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">opdet::SBNDOpHitFinder::fInputLabels</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fInputLabels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00076">SBNDOpHitFinder_module.cc:76</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00214">214</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// These is the storage pointer we will put in the event</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    std::unique_ptr&lt; std::vector&lt; recob::OpHit &gt; &gt;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    HitPtrFinal(<span class="keyword">new</span> std::vector&lt; recob::OpHit &gt;);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// These is a temporary storage pointer</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    std::unique_ptr&lt; std::vector&lt; recob::OpHit &gt; &gt;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    HitPtr(<span class="keyword">new</span> std::vector&lt; recob::OpHit &gt;);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    std::vector&lt; const sim::BeamGateInfo* &gt; beamGateArray;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getView(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">fGenModule</a>, beamGateArray);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">catch</span> (art::Exception <span class="keyword">const</span>&amp; <a class="code" href="../../da/d2d/namespaceevd.html#a911fe581afad27a720ee200bd61362a6">err</a>)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span> ( err.categoryCode() != art::errors::ProductNotFound ) <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>(*lar::providerFrom&lt; geo::Geometry &gt;());</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clockData_CAEN = art::ServiceHandle&lt;detinfo::DetectorClocksService&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; calibrator(*<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">fCalib</a>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="../../d0/d00/classdetinfo_1_1ElecClock.html">detinfo::ElecClock</a> <span class="keyword">const</span> optical_clock_daphne = <a class="code" href="../../d0/d00/classdetinfo_1_1ElecClock.html">detinfo::ElecClock</a>(clockData_CAEN.OpticalClock().Time(),</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                                                                       clockData_CAEN.OpticalClock().FramePeriod(),</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                                                       <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">fDaphne_Freq</a>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a> <span class="keyword">const</span>&amp; clockData_Daphne = <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a>(-clockData_CAEN.G4ToElecTime(0),</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                                                                       clockData_CAEN.TriggerOffsetTPC(),</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                                                                       clockData_CAEN.TriggerTime(),</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                                                       clockData_CAEN.BeamGateTime(),</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                                                       clockData_CAEN.TPCClock(),</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                                                       optical_clock_daphne,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                                                                       clockData_CAEN.TriggerClock(),</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                                                                       clockData_CAEN.ExternalClock());</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a> <span class="keyword">const</span>&amp; clockData = (<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">fElectronics</a>==<span class="stringliteral">&quot;Daphne&quot;</span>) ?  clockData_Daphne : clockData_CAEN;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">// std::cout&lt;&lt;&quot;@rodrigoa debug: frecuencies &quot;&lt;&lt;clockData_Daphne.OpticalClock().Frequency()&lt;&lt;&quot;  &quot;&lt;&lt;clockData.OpticalClock().Frequency()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="comment">// Get the pulses from the event</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// Load pulses into WaveformVector</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.empty() &amp;&amp; <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.empty() &amp;&amp; <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.size()&lt;2) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.empty())</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, wfHandle);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>.front(), wfHandle);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      assert(wfHandle.isValid());</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="../../dc/d8a/namespaceopdet.html#ae782e2bdd12030193f989f2e9ec2c108">RunHitFinder</a>(*wfHandle,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                   *HitPtr,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                   *<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                   <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a>,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                   clockData,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                   calibrator);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="comment">// Reserve a large enough array</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keywordtype">int</span> totalsize = 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> label : <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">fInputLabels</a>)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, label, wfHandle);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">if</span> (!wfHandle.isValid()) <span class="keywordflow">continue</span>; <span class="comment">// Skip non-existent collections</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        totalsize += wfHandle-&gt;size();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      std::vector&lt; raw::OpDetWaveform &gt; WaveformVector;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      WaveformVector.reserve(totalsize);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> label : fInputLabels)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wfHandle;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">fInputModule</a>, label, wfHandle);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">if</span> (!wfHandle.isValid()) <span class="keywordflow">continue</span>; <span class="comment">// Skip non-existent collections</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wf : *wfHandle)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          <span class="comment">// If this channel is in the channel mask, ingore it</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <span class="keywordflow">if</span> ( <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.find(wf.ChannelNumber()) != <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">fChannelMasks</a>.end() ) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;          <span class="comment">// If this PDS in not in the list of PDS to use, ingore it</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          <span class="keywordflow">if</span> ( std::find(<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.begin(), <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.end(), wf.ChannelNumber()) == <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">_opch_to_use</a>.end() ) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;          WaveformVector.push_back(wf);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <a class="code" href="../../dc/d8a/namespaceopdet.html#ae782e2bdd12030193f989f2e9ec2c108">RunHitFinder</a>(WaveformVector,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                   *HitPtr,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">fPulseRecoMgr</a>,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                   *<a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">fThreshAlg</a>,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                   <a class="code" href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a>,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                   <a class="code" href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">fHitThreshold</a>,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                   clockData,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                   calibrator);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="comment">// for (auto h : *HitPtr)</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="comment">//   std::cout &lt;&lt; &quot;&gt; ophit time &quot; &lt;&lt; h.PeakTime()</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, corrected &quot; &lt;&lt; h.PeakTime() - clockData.TriggerTime()</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, area &quot; &lt;&lt; h.Area()</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="comment">//             &lt;&lt; &quot;, pe &quot; &lt;&lt; h.PE() &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">// Now correct the time. Unfortunately, there are no setter methods for OpHits,</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="comment">// so we have to make a new OpHit vector.</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a> : *HitPtr) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      (*HitPtrFinal).emplace_back(<a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.OpChannel(),</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PeakTime() + clockData.TriggerTime(),</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PeakTimeAbs(),</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.StartTime() + clockData.TriggerTime(),</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.RiseTime(),</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Frame(),</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Width(),</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Area(),</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.Amplitude(),</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                  <a class="code" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>.PE(),</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                  0.0);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">// Store results into the event</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(HitPtrFinal));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a69994f22d55014c7ebec0149e6b31f30"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a69994f22d55014c7ebec0149e6b31f30">opdet::SBNDOpHitFinder::fInputLabels</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fInputLabels</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">SBNDOpHitFinder_module.cc:89</a></div></div>
 <div class="ttc" id="NuVertexChargeTree__module_8cc_html_ad544178eb97bd705ef1dc4dc3e72b405"><div class="ttname"><a href="../../dd/d33/NuVertexChargeTree__module_8cc.html#ad544178eb97bd705ef1dc4dc3e72b405">geometry</a></div><div class="ttdeci">const geo::GeometryCore * geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d33/NuVertexChargeTree__module_8cc_source.html#l00373">NuVertexChargeTree_module.cc:373</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_adac8bbd065ba65ddde59c2f1801a7672"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">opdet::SBNDOpHitFinder::fChannelMasks</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; fChannelMasks</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00077">SBNDOpHitFinder_module.cc:77</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_adac8bbd065ba65ddde59c2f1801a7672"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#adac8bbd065ba65ddde59c2f1801a7672">opdet::SBNDOpHitFinder::fChannelMasks</a></div><div class="ttdeci">std::set&lt; unsigned int &gt; fChannelMasks</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00090">SBNDOpHitFinder_module.cc:90</a></div></div>
 <div class="ttc" id="namespaceevd_html_a911fe581afad27a720ee200bd61362a6"><div class="ttname"><a href="../../da/d2d/namespaceevd.html#a911fe581afad27a720ee200bd61362a6">evd::err</a></div><div class="ttdeci">EResult err(const char *call)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2a/WebEVDServer_8cxx_source.html#l00140">WebEVDServer.cxx:140</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6928f29e02ff655867be33fa29dd275b"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">opdet::SBNDOpHitFinder::_opch_to_use</a></div><div class="ttdeci">std::vector&lt; int &gt; _opch_to_use</div><div class="ttdoc">List of of opch (will be infered from _pd_to_use) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00080">SBNDOpHitFinder_module.cc:80</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ab5aca7a8e1c4961443627b7d382faea3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">opdet::SBNDOpHitFinder::fCalib</a></div><div class="ttdeci">calib::IPhotonCalibrator const * fCalib</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">SBNDOpHitFinder_module.cc:89</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6928f29e02ff655867be33fa29dd275b"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6928f29e02ff655867be33fa29dd275b">opdet::SBNDOpHitFinder::_opch_to_use</a></div><div class="ttdeci">std::vector&lt; int &gt; _opch_to_use</div><div class="ttdoc">List of of opch (will be infered from _pd_to_use) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00093">SBNDOpHitFinder_module.cc:93</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ab5aca7a8e1c4961443627b7d382faea3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ab5aca7a8e1c4961443627b7d382faea3">opdet::SBNDOpHitFinder::fCalib</a></div><div class="ttdeci">calib::IPhotonCalibrator const * fCalib</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00102">SBNDOpHitFinder_module.cc:102</a></div></div>
 <div class="ttc" id="getStatistics_8sh_html_a04d4c2131ccb24cc78386597e8a21c5b"><div class="ttname"><a href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a></div><div class="ttdeci">while getopts h</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de2/getStatistics_8sh_source.html#l00013">getStatistics.sh:13</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6bbf309a5394cdffbf89539f97077d68"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">opdet::SBNDOpHitFinder::fDaphne_Freq</a></div><div class="ttdeci">Float_t fDaphne_Freq</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">SBNDOpHitFinder_module.cc:86</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00083">SBNDOpHitFinder_module.cc:83</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6bbf309a5394cdffbf89539f97077d68"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6bbf309a5394cdffbf89539f97077d68">opdet::SBNDOpHitFinder::fDaphne_Freq</a></div><div class="ttdeci">Float_t fDaphne_Freq</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">SBNDOpHitFinder_module.cc:99</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a5efe7b8732c3402610192ec45f1593ef"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a5efe7b8732c3402610192ec45f1593ef">opdet::SBNDOpHitFinder::fThreshAlg</a></div><div class="ttdeci">pmtana::PMTPulseRecoBase * fThreshAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00096">SBNDOpHitFinder_module.cc:96</a></div></div>
 <div class="ttc" id="classdetinfo_1_1DetectorClocksData_html"><div class="ttname"><a href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a></div><div class="ttdoc">Contains all timing reference information for the detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d5b/DetectorClocksData_8h_source.html#l00283">DetectorClocksData.h:283</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ae55df145d4ee67618060c1a65a2bedb3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">opdet::SBNDOpHitFinder::fHitThreshold</a></div><div class="ttdeci">Float_t fHitThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">SBNDOpHitFinder_module.cc:86</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ae55df145d4ee67618060c1a65a2bedb3"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ae55df145d4ee67618060c1a65a2bedb3">opdet::SBNDOpHitFinder::fHitThreshold</a></div><div class="ttdeci">Float_t fHitThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">SBNDOpHitFinder_module.cc:99</a></div></div>
 <div class="ttc" id="namespaceopdet_html_ae782e2bdd12030193f989f2e9ec2c108"><div class="ttname"><a href="../../dc/d8a/namespaceopdet.html#ae782e2bdd12030193f989f2e9ec2c108">opdet::RunHitFinder</a></div><div class="ttdeci">void RunHitFinder(std::vector&lt; raw::OpDetWaveform &gt; const &amp;opDetWaveformVector, std::vector&lt; recob::OpHit &gt; &amp;hitVector, pmtana::PulseRecoManager const &amp;pulseRecoMgr, pmtana::PMTPulseRecoBase const &amp;threshAlg, geo::GeometryCore const &amp;geometry, float hitThreshold, detinfo::DetectorClocksData const &amp;clocksData, calib::IPhotonCalibrator const &amp;calibrator, bool use_start_time)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d77/OpHitAlg_8cxx_source.html#l00030">OpHitAlg.cxx:30</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6e8d598772469915f545296e24b4f0a1"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">opdet::SBNDOpHitFinder::fInputModule</a></div><div class="ttdeci">std::string fInputModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00074">SBNDOpHitFinder_module.cc:74</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_af28fe26a1ee7fecf3187340ccfd87a2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">opdet::SBNDOpHitFinder::fPulseRecoMgr</a></div><div class="ttdeci">pmtana::PulseRecoManager fPulseRecoMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00082">SBNDOpHitFinder_module.cc:82</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a6e8d598772469915f545296e24b4f0a1"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a6e8d598772469915f545296e24b4f0a1">opdet::SBNDOpHitFinder::fInputModule</a></div><div class="ttdeci">std::string fInputModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00087">SBNDOpHitFinder_module.cc:87</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_af28fe26a1ee7fecf3187340ccfd87a2c"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#af28fe26a1ee7fecf3187340ccfd87a2c">opdet::SBNDOpHitFinder::fPulseRecoMgr</a></div><div class="ttdeci">pmtana::PulseRecoManager fPulseRecoMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00095">SBNDOpHitFinder_module.cc:95</a></div></div>
 <div class="ttc" id="classdetinfo_1_1ElecClock_html"><div class="ttname"><a href="../../d0/d00/classdetinfo_1_1ElecClock.html">detinfo::ElecClock</a></div><div class="ttdoc">Class representing the time measured by an electronics clock. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d60/ElecClock_8h_source.html#l00091">ElecClock.h:91</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a4faf5f0caaf30747206e5ef2338cd57e"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">opdet::SBNDOpHitFinder::fGenModule</a></div><div class="ttdeci">std::string fGenModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00075">SBNDOpHitFinder_module.cc:75</a></div></div>
-<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00079">SBNDOpHitFinder_module.cc:79</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_a4faf5f0caaf30747206e5ef2338cd57e"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#a4faf5f0caaf30747206e5ef2338cd57e">opdet::SBNDOpHitFinder::fGenModule</a></div><div class="ttdeci">std::string fGenModule</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00088">SBNDOpHitFinder_module.cc:88</a></div></div>
+<div class="ttc" id="classopdet_1_1SBNDOpHitFinder_html_ac3687ef62be6a91d89423f8230a43f29"><div class="ttname"><a href="../../dd/dd4/classopdet_1_1SBNDOpHitFinder.html#ac3687ef62be6a91d89423f8230a43f29">opdet::SBNDOpHitFinder::fElectronics</a></div><div class="ttdeci">std::string fElectronics</div><div class="ttdoc">PDS readouts to use (ex: &amp;quot;CAEN&amp;quot;, &amp;quot;Daphne&amp;quot;) </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00092">SBNDOpHitFinder_module.cc:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -620,7 +621,7 @@ Private Attributes</h2></td></tr>
 
 <p>List of of opch (will be infered from _pd_to_use) </p>
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -644,7 +645,7 @@ Private Attributes</h2></td></tr>
 
 <p>PDS to use (ex: "pmt", "barepmt") </p>
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00078">78</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -668,7 +669,7 @@ Private Attributes</h2></td></tr>
 
 <p>map for photon detector types </p>
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -690,7 +691,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -712,7 +713,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00090">90</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -734,7 +735,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -758,7 +759,7 @@ Private Attributes</h2></td></tr>
 
 <p>PDS readouts to use (ex: "CAEN", "Daphne") </p>
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -780,7 +781,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00075">75</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00088">88</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -802,7 +803,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -824,7 +825,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00076">76</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -846,7 +847,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00074">74</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -868,7 +869,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00087">87</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00100">100</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -890,7 +891,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00084">84</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00097">97</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -912,7 +913,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00082">82</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00095">95</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>
@@ -934,7 +935,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d4/de5/SBNDOpHitFinder__module_8cc_source.html">SBNDOpHitFinder_module.cc</a>.</p>
 
 </div>
 </div>

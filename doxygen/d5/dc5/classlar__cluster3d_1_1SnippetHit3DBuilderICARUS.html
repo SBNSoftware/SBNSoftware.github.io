@@ -1261,91 +1261,107 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;    <span class="comment">// Try to output a formatted string</span></div>
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;    std::string debugMessage(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;</div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    <span class="comment">// Initialize the plane to hit vector map</span></div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> cryoIdx = 0; cryoIdx &lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ab4691c2dc44983f6082defa5a34cb001">Ncryostats</a>(); cryoIdx++)</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    {</div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> tpcIdx = 0; tpcIdx &lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a8edd7b95c82390f84514f145c0980cc9">NTPC</a>(); tpcIdx++)</div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;        {</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,0)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,1)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,2)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;</div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;            <span class="comment">// Should we provide output?</span></div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a>)</div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;            {</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;                std::ostringstream outputString;</div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;</div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;                outputString &lt;&lt; <span class="stringliteral">&quot;***&gt; plane 0 offset: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,0))-&gt;second</div>
-<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;                             &lt;&lt; <span class="stringliteral">&quot;, plane 1: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,1))-&gt;second</div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;                             &lt;&lt; <span class="stringliteral">&quot;, plane    2: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,2))-&gt;second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;                outputString &lt;&lt; <span class="stringliteral">&quot;     Det prop plane 0: &quot;</span> &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,0)) &lt;&lt; <span class="stringliteral">&quot;, plane 1: &quot;</span>  &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,1)) &lt;&lt; <span class="stringliteral">&quot;, plane 2: &quot;</span> &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,2)) &lt;&lt; <span class="stringliteral">&quot;, Trig: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d8a/namespacedetinfo.html#a3d7c800dd526147cd2c0e43c6e34daa4">trigger_offset</a>(clock_data) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;                debugMessage += outputString.str();</div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;            }</div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;        }</div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;    }</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;</div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a>)</div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;    {</div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;        mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; debugMessage &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;</div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    <span class="comment">// Keep track of x position limits</span></div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    std::map&lt;geo::PlaneID,double&gt; planeIDToPositionMap;</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;</div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    <span class="comment">// Initialize the plane to hit vector map</span></div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> cryoIdx = 0; cryoIdx &lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ab4691c2dc44983f6082defa5a34cb001">Ncryostats</a>(); cryoIdx++)</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;    {</div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> tpcIdx = 0; tpcIdx &lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a8edd7b95c82390f84514f145c0980cc9">NTPC</a>(); tpcIdx++)</div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;        {</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,0)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,1)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,2)] = <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a92fa7abf812d8248c22871db8cb707ef">SnippetHitMap</a>();</div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;</div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;            <span class="comment">// Should we provide output?</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a>)</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;            {</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;                std::ostringstream outputString;</div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;                outputString &lt;&lt; <span class="stringliteral">&quot;***&gt; plane 0 offset: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,0))-&gt;second</div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;                             &lt;&lt; <span class="stringliteral">&quot;, plane 1: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,1))-&gt;second</div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;                             &lt;&lt; <span class="stringliteral">&quot;, plane    2: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,2))-&gt;second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;                outputString &lt;&lt; <span class="stringliteral">&quot;     Det prop plane 0: &quot;</span> &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,0)) &lt;&lt; <span class="stringliteral">&quot;, plane 1: &quot;</span>  &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,1)) &lt;&lt; <span class="stringliteral">&quot;, plane 2: &quot;</span> &lt;&lt; det_prop.GetXTicksOffset(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cryoIdx,tpcIdx,2)) &lt;&lt; <span class="stringliteral">&quot;, Trig: &quot;</span> &lt;&lt; <a class="code" href="../../d7/d8a/namespacedetinfo.html#a3d7c800dd526147cd2c0e43c6e34daa4">trigger_offset</a>(clock_data) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;                debugMessage += outputString.str() + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;            }</div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;</div>
+<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;            <span class="keywordtype">double</span> xPosition(det_prop.ConvertTicksToX(0., 2, tpcIdx, cryoIdx));</div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;            planeIDToPositionMap[<a class="code" href="../../d2/d66/namespacegeo_1_1fhicl.html#a05ff5cebd7313582756a33d8e8a5971a">geo::PlaneID</a>(cryoIdx,tpcIdx,2)] = xPosition;</div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;        }</div>
 <div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;    }</div>
 <div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;    <span class="comment">// Cycle through the recob hits to build ClusterHit2D objects and insert</span></div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;    <span class="comment">// them into the map</span></div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; recobHit : recobHitVec)</div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;    {</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;        <span class="comment">// Reject hits with negative charge, these are misreconstructed</span></div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;        <span class="keywordflow">if</span> (recobHit-&gt;Integral() &lt; 0.) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;</div>
-<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;        <span class="comment">// For some detectors we can have multiple wire ID&#39;s associated to a given channel.</span></div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;        <span class="comment">// So we recover the list of these wire IDs</span></div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;        <span class="keyword">const</span> std::vector&lt;geo::WireID&gt;&amp; wireIDs = <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a0c5d3db5d5490bc3fc8fb3bbdb282f36">ChannelToWire</a>(recobHit-&gt;Channel());</div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a>)</div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;    {</div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; planeToPositionPair : planeIDToPositionMap)</div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;        {</div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;            std::ostringstream outputString;</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;</div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;            outputString &lt;&lt; <span class="stringliteral">&quot;***&gt; Plane &quot;</span> &lt;&lt; planeToPositionPair.first &lt;&lt; <span class="stringliteral">&quot; has time=0 position: &quot;</span> &lt;&lt; planeToPositionPair.second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;</div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;            debugMessage += outputString.str();</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;        }</div>
 <div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;        <span class="comment">// Start/End ticks to identify the snippet</span></div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;        <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a29013053f3e47afe1ff5ce14106d2ffa">HitStartEndPair</a> hitStartEndPair(recobHit-&gt;StartTick(),recobHit-&gt;EndTick());</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;</div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;        <span class="comment">// Can this really happen?</span></div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;        <span class="keywordflow">if</span> (hitStartEndPair.second &lt;= hitStartEndPair.first)</div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;        {</div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;            <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Yes, found a hit with end time less than start time: &quot;</span> &lt;&lt; hitStartEndPair.first &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; hitStartEndPair.second &lt;&lt; <span class="stringliteral">&quot;, mult: &quot;</span> &lt;&lt; recobHit-&gt;Multiplicity() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        }</div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;</div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="comment">// And then loop over all possible to build out our maps</span></div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;        <span class="comment">//for(const auto&amp; wireID : wireIDs)</span></div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> wireID : wireIDs)</div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        {</div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;            <span class="comment">// Check if this is an invalid TPC</span></div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;            <span class="comment">// (for example, in protoDUNE there are logical TPC&#39;s which see no signal)</span></div>
-<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;            <span class="keywordflow">if</span> (std::find(<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.begin(),<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.end(),wireID.TPC) != <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.end()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;</div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;            <span class="comment">// Note that a plane ID will define cryostat, TPC and plane</span></div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>&amp; planeID = wireID.planeID();</div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;</div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;            <span class="keywordtype">double</span> hitPeakTime(recobHit-&gt;PeakTime() - <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(planeID)-&gt;second);</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;            <span class="keywordtype">double</span> xPosition(det_prop.ConvertTicksToX(recobHit-&gt;PeakTime(), planeID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>, planeID.<a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html#a4a7f86b46d9d48a040b7ef5d65973811">TPC</a>, planeID.<a class="code" href="../../d9/d73/structgeo_1_1CryostatID.html#a2bfb744818e075d94be15dd18c950441">Cryostat</a>));</div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;</div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.emplace_back(0, 0., 0., xPosition, hitPeakTime, wireID, recobHit);</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;        mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; debugMessage &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;</div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae53dfb381b3ae0d692561e92507a275a">m_weHaveAllBeenHereBefore</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    }</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;    <span class="comment">// Cycle through the recob hits to build ClusterHit2D objects and insert</span></div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;    <span class="comment">// them into the map</span></div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; recobHit : recobHitVec)</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;    {</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        <span class="comment">// Reject hits with negative charge, these are misreconstructed</span></div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keywordflow">if</span> (recobHit-&gt;Integral() &lt; 0.) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;        <span class="comment">// For some detectors we can have multiple wire ID&#39;s associated to a given channel.</span></div>
+<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;        <span class="comment">// So we recover the list of these wire IDs</span></div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;        <span class="keyword">const</span> std::vector&lt;geo::WireID&gt;&amp; wireIDs = <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">m_geometry</a>-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a0c5d3db5d5490bc3fc8fb3bbdb282f36">ChannelToWire</a>(recobHit-&gt;Channel());</div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;</div>
+<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;        <span class="comment">// Start/End ticks to identify the snippet</span></div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        <a class="code" href="../../de/d87/namespacelar__cluster3d.html#a29013053f3e47afe1ff5ce14106d2ffa">HitStartEndPair</a> hitStartEndPair(recobHit-&gt;StartTick(),recobHit-&gt;EndTick());</div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;</div>
+<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;        <span class="comment">// Can this really happen?</span></div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;        <span class="keywordflow">if</span> (hitStartEndPair.second &lt;= hitStartEndPair.first)</div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;        {</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;            <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Yes, found a hit with end time less than start time: &quot;</span> &lt;&lt; hitStartEndPair.first &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; hitStartEndPair.second &lt;&lt; <span class="stringliteral">&quot;, mult: &quot;</span> &lt;&lt; recobHit-&gt;Multiplicity() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;        }</div>
 <div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[planeID][hitStartEndPair].emplace_back(&amp;<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.back());</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a34e71f5b9087cda3cb9c2f56b4afa9d0">m_planeToWireToHitSetMap</a>[planeID][wireID.Wire].insert(&amp;<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.back());</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        }</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;    }</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;    <span class="comment">// Make a loop through to sort the recover hits in time order</span></div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;<span class="comment">//    for(auto&amp; hitVectorMap : m_planeToSnippetHitMap)</span></div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;<span class="comment">//        std::sort(hitVectorMap.second.begin(), hitVectorMap.second.end(), SetHitTimeOrder);</span></div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>)</div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;    {</div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;        theClockMakeHits.stop();</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">m_timeVector</a>[<a class="code" href="../../d7/d62/classlar__cluster3d_1_1IHit3DBuilder.html#a106b6bc370529171ba25d281f07e2f64a36be75fd7137661b8b1fa13717140d22">COLLECTARTHITS</a>] = theClockMakeHits.accumulated_real_time();</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    }</div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;        <span class="comment">// And then loop over all possible to build out our maps</span></div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        <span class="comment">//for(const auto&amp; wireID : wireIDs)</span></div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> wireID : wireIDs)</div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        {</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;            <span class="comment">// Check if this is an invalid TPC</span></div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;            <span class="comment">// (for example, in protoDUNE there are logical TPC&#39;s which see no signal)</span></div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;            <span class="keywordflow">if</span> (std::find(<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.begin(),<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.end(),wireID.TPC) != <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae676516948bc8d39716001f946ec0edd">m_invalidTPCVec</a>.end()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;            <span class="comment">// Note that a plane ID will define cryostat, TPC and plane</span></div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>&amp; planeID = wireID.planeID();</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;            <span class="keywordtype">double</span> hitPeakTime(recobHit-&gt;PeakTime() - <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">m_PlaneToT0OffsetMap</a>.find(planeID)-&gt;second);</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;            <span class="keywordtype">double</span> xPosition(det_prop.ConvertTicksToX(recobHit-&gt;PeakTime(), planeID.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>, planeID.<a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html#a4a7f86b46d9d48a040b7ef5d65973811">TPC</a>, planeID.<a class="code" href="../../d9/d73/structgeo_1_1CryostatID.html#a2bfb744818e075d94be15dd18c950441">Cryostat</a>));</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.emplace_back(0, 0., 0., xPosition, hitPeakTime, wireID, recobHit);</div>
 <div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;    mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt; Number of ART hits: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;}</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">m_planeToSnippetHitMap</a>[planeID][hitStartEndPair].emplace_back(&amp;<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.back());</div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;            <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a34e71f5b9087cda3cb9c2f56b4afa9d0">m_planeToWireToHitSetMap</a>[planeID][wireID.Wire].insert(&amp;<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.back());</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;        }</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;    }</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;    <span class="comment">// Make a loop through to sort the recover hits in time order</span></div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;<span class="comment">//    for(auto&amp; hitVectorMap : m_planeToSnippetHitMap)</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="comment">//        std::sort(hitVectorMap.second.begin(), hitVectorMap.second.end(), SetHitTimeOrder);</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>)</div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;    {</div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;        theClockMakeHits.stop();</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">m_timeVector</a>[<a class="code" href="../../d7/d62/classlar__cluster3d_1_1IHit3DBuilder.html#a106b6bc370529171ba25d281f07e2f64a36be75fd7137661b8b1fa13717140d22">COLLECTARTHITS</a>] = theClockMakeHits.accumulated_real_time();</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;    }</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;    mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt; Number of ART hits: &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;}</div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a7089a8ed90849c6f60d5cfbfc4a0ac5d"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">lar_cluster3d::SnippetHit3DBuilderICARUS::m_PlaneToT0OffsetMap</a></div><div class="ttdeci">PlaneToT0OffsetMap m_PlaneToT0OffsetMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00273">SnippetHit3DBuilderICARUS_tool.cc:273</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a1b8baf1febd6bee1f79d0901407a61ba"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">lar_cluster3d::SnippetHit3DBuilderICARUS::m_timeVector</a></div><div class="ttdeci">std::vector&lt; float &gt; m_timeVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00267">SnippetHit3DBuilderICARUS_tool.cc:267</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a6ba3dd5fe040a9ecded2ac5ea728081b"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">lar_cluster3d::SnippetHit3DBuilderICARUS::m_enableMonitoring</a></div><div class="ttdeci">bool m_enableMonitoring</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00265">SnippetHit3DBuilderICARUS_tool.cc:265</a></div></div>
@@ -1580,70 +1596,70 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create a new 2D hit collection from hits associated to 3D space points. </p>
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01878">1878</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;{</div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;    <span class="comment">// Set up the timing</span></div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;    cet::cpu_timer theClockBuildNewHits;</div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;</div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>) theClockBuildNewHits.start();</div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;</div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;    <span class="comment">// We want to build a unique list of hits from the input 3D points which, we know, reuse 2D points frequently</span></div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;    <span class="comment">// At the same time we need to create a new 2D hit with the &quot;correct&quot; WireID and replace the old 2D hit in the</span></div>
-<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;    <span class="comment">// ClusterHit2D object with this new one... while keeping track of the use of the old ones. My head is spinning...</span></div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;    <span class="comment">// Declare a set which will allow us to keep track of those CusterHit2D objects we have seen already</span></div>
-<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;    std::set&lt;const reco::ClusterHit2D*&gt; visitedHit2DSet;</div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;</div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;    <span class="comment">// Use this handy art utility to make art::Ptr objects to the new recob::Hits for use in the output phase</span></div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;    art::PtrMaker&lt;recob::Hit&gt; ptrMaker(event);</div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;</div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;    <span class="comment">// Reserve enough memory to replace every recob::Hit we have considered (this is upper limit)</span></div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;    hitPtrVec.reserve(<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size());</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;</div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;    <span class="comment">// Scheme is to loop through all 3D hits, then through each associated ClusterHit2D object</span></div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html">reco::ClusterHit3D</a>&amp; hit3D : hitPairList)</div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    {</div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;        <a class="code" href="../../d1/d57/namespacereco.html#a18a79deb8f0ef4286b94eaf8cbe88e75">reco::ClusterHit2DVec</a>&amp; hit2DVec = hit3D.getHits();</div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;</div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;        <span class="comment">// The loop is over the index so we can recover the correct WireID to associate to the new hit when made</span></div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> idx = 0; idx &lt; hit3D.getHits().size(); idx++)</div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        {</div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html">reco::ClusterHit2D</a>* hit2D = hit2DVec[idx];</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01894">1894</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;{</div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;    <span class="comment">// Set up the timing</span></div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;    cet::cpu_timer theClockBuildNewHits;</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>) theClockBuildNewHits.start();</div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;</div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;    <span class="comment">// We want to build a unique list of hits from the input 3D points which, we know, reuse 2D points frequently</span></div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;    <span class="comment">// At the same time we need to create a new 2D hit with the &quot;correct&quot; WireID and replace the old 2D hit in the</span></div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    <span class="comment">// ClusterHit2D object with this new one... while keeping track of the use of the old ones. My head is spinning...</span></div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;    <span class="comment">// Declare a set which will allow us to keep track of those CusterHit2D objects we have seen already</span></div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;    std::set&lt;const reco::ClusterHit2D*&gt; visitedHit2DSet;</div>
 <div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;</div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;            <span class="keywordflow">if</span> (!hit2D) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;</div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;            <span class="comment">// Have we seen this 2D hit already?</span></div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;            <span class="keywordflow">if</span> (visitedHit2DSet.find(hit2D) == visitedHit2DSet.end())</div>
-<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;            {</div>
-<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;                visitedHit2DSet.insert(hit2D);</div>
-<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;</div>
-<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;                <span class="comment">// Create and save the new recob::Hit with the correct WireID</span></div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;                hitPtrVec.emplace_back(<a class="code" href="../../d1/de4/classrecob_1_1HitCreator.html">recob::HitCreator</a>(*hit2D-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>(), hit3D.getWireIDs()[idx]).<a class="code" href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">copy</a>());</div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;                <span class="comment">// Recover a pointer to it...</span></div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;                <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a>* newHit = &amp;hitPtrVec.back();</div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;                <span class="comment">// Create a mapping from this hit to an art Ptr representing it</span></div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;                recobHitToPtrMap[newHit] = ptrMaker(hitPtrVec.size()-1);</div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;    <span class="comment">// Use this handy art utility to make art::Ptr objects to the new recob::Hits for use in the output phase</span></div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    art::PtrMaker&lt;recob::Hit&gt; ptrMaker(event);</div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;    <span class="comment">// Reserve enough memory to replace every recob::Hit we have considered (this is upper limit)</span></div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;    hitPtrVec.reserve(<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size());</div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;</div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;    <span class="comment">// Scheme is to loop through all 3D hits, then through each associated ClusterHit2D object</span></div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="../../df/d06/classreco_1_1ClusterHit3D.html">reco::ClusterHit3D</a>&amp; hit3D : hitPairList)</div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    {</div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;        <a class="code" href="../../d1/d57/namespacereco.html#a18a79deb8f0ef4286b94eaf8cbe88e75">reco::ClusterHit2DVec</a>&amp; hit2DVec = hit3D.getHits();</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;</div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;        <span class="comment">// The loop is over the index so we can recover the correct WireID to associate to the new hit when made</span></div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> idx = 0; idx &lt; hit3D.getHits().size(); idx++)</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;        {</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html">reco::ClusterHit2D</a>* hit2D = hit2DVec[idx];</div>
 <div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;                <span class="comment">// And set the pointer to this hit in the ClusterHit2D object</span></div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;                <span class="keyword">const_cast&lt;</span><a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html">reco::ClusterHit2D</a>*<span class="keyword">&gt;</span>(hit2D)-&gt;setHit(newHit);</div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;            }</div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;        }</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;    }</div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;</div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    <span class="keywordtype">size_t</span> numNewHits = hitPtrVec.size();</div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;</div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>)</div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;    {</div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;        theClockBuildNewHits.stop();</div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;</div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">m_timeVector</a>[<a class="code" href="../../d7/d62/classlar__cluster3d_1_1IHit3DBuilder.html#a106b6bc370529171ba25d281f07e2f64a2318b586bd8686134619b5f022f434c5">BUILDNEWHITS</a>] = theClockBuildNewHits.accumulated_real_time();</div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;    }</div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;</div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;    mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt; New output recob::Hit size: &quot;</span> &lt;&lt; numNewHits &lt;&lt; <span class="stringliteral">&quot; (vs &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size() &lt;&lt; <span class="stringliteral">&quot; input)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;</div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;}</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;            <span class="keywordflow">if</span> (!hit2D) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;</div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;            <span class="comment">// Have we seen this 2D hit already?</span></div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;            <span class="keywordflow">if</span> (visitedHit2DSet.find(hit2D) == visitedHit2DSet.end())</div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;            {</div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;                visitedHit2DSet.insert(hit2D);</div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;</div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;                <span class="comment">// Create and save the new recob::Hit with the correct WireID</span></div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;                hitPtrVec.emplace_back(<a class="code" href="../../d1/de4/classrecob_1_1HitCreator.html">recob::HitCreator</a>(*hit2D-&gt;<a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">getHit</a>(), hit3D.getWireIDs()[idx]).<a class="code" href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">copy</a>());</div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;</div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;                <span class="comment">// Recover a pointer to it...</span></div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;                <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a>* newHit = &amp;hitPtrVec.back();</div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;</div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;                <span class="comment">// Create a mapping from this hit to an art Ptr representing it</span></div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;                recobHitToPtrMap[newHit] = ptrMaker(hitPtrVec.size()-1);</div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;</div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;                <span class="comment">// And set the pointer to this hit in the ClusterHit2D object</span></div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;                <span class="keyword">const_cast&lt;</span><a class="code" href="../../df/dcf/classreco_1_1ClusterHit2D.html">reco::ClusterHit2D</a>*<span class="keyword">&gt;</span>(hit2D)-&gt;setHit(newHit);</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;            }</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;        }</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    }</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;</div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;    <span class="keywordtype">size_t</span> numNewHits = hitPtrVec.size();</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">m_enableMonitoring</a>)</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;    {</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;        theClockBuildNewHits.stop();</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;        <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">m_timeVector</a>[<a class="code" href="../../d7/d62/classlar__cluster3d_1_1IHit3DBuilder.html#a106b6bc370529171ba25d281f07e2f64a2318b586bd8686134619b5f022f434c5">BUILDNEWHITS</a>] = theClockBuildNewHits.accumulated_real_time();</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    }</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    mf::LogDebug(<span class="stringliteral">&quot;Cluster3D&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;&gt;&gt;&gt;&gt;&gt; New output recob::Hit size: &quot;</span> &lt;&lt; numNewHits &lt;&lt; <span class="stringliteral">&quot; (vs &quot;</span> &lt;&lt; <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">m_clusterHit2DMasterList</a>.size() &lt;&lt; <span class="stringliteral">&quot; input)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;</div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;}</div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a1b8baf1febd6bee1f79d0901407a61ba"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">lar_cluster3d::SnippetHit3DBuilderICARUS::m_timeVector</a></div><div class="ttdeci">std::vector&lt; float &gt; m_timeVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00267">SnippetHit3DBuilderICARUS_tool.cc:267</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a6ba3dd5fe040a9ecded2ac5ea728081b"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a6ba3dd5fe040a9ecded2ac5ea728081b">lar_cluster3d::SnippetHit3DBuilderICARUS::m_enableMonitoring</a></div><div class="ttdeci">bool m_enableMonitoring</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00265">SnippetHit3DBuilderICARUS_tool.cc:265</a></div></div>
 <div class="ttc" id="classreco_1_1ClusterHit2D_html_aff6811c0027819262adcd9497d6141d7"><div class="ttname"><a href="../../df/dcf/classreco_1_1ClusterHit2D.html#aff6811c0027819262adcd9497d6141d7">reco::ClusterHit2D::getHit</a></div><div class="ttdeci">const recob::Hit * getHit() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/daa/Cluster3D_8h_source.html#l00077">Cluster3D.h:77</a></div></div>
@@ -2331,16 +2347,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a7089a8ed90849c6f60d5cfbfc4a0ac5d"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7089a8ed90849c6f60d5cfbfc4a0ac5d">lar_cluster3d::SnippetHit3DBuilderICARUS::m_PlaneToT0OffsetMap</a></div><div class="ttdeci">PlaneToT0OffsetMap m_PlaneToT0OffsetMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00273">SnippetHit3DBuilderICARUS_tool.cc:273</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a1b8baf1febd6bee1f79d0901407a61ba"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b8baf1febd6bee1f79d0901407a61ba">lar_cluster3d::SnippetHit3DBuilderICARUS::m_timeVector</a></div><div class="ttdeci">std::vector&lt; float &gt; m_timeVector</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00267">SnippetHit3DBuilderICARUS_tool.cc:267</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_ade540e77f5f791c6de88e37efbf6fd29"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ade540e77f5f791c6de88e37efbf6fd29">lar_cluster3d::SnippetHit3DBuilderICARUS::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">clear the tuple vectors before processing next event </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00416">SnippetHit3DBuilderICARUS_tool.cc:416</a></div></div>
-<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a5c40bd6781bab1e2ed7f7fdf9e3b7305"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a5c40bd6781bab1e2ed7f7fdf9e3b7305">lar_cluster3d::SnippetHit3DBuilderICARUS::CreateNewRecobHitCollection</a></div><div class="ttdeci">void CreateNewRecobHitCollection(art::Event &amp;, reco::HitPairList &amp;, std::vector&lt; recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;)</div><div class="ttdoc">Create a new 2D hit collection from hits associated to 3D space points. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01878">SnippetHit3DBuilderICARUS_tool.cc:1878</a></div></div>
+<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a5c40bd6781bab1e2ed7f7fdf9e3b7305"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a5c40bd6781bab1e2ed7f7fdf9e3b7305">lar_cluster3d::SnippetHit3DBuilderICARUS::CreateNewRecobHitCollection</a></div><div class="ttdeci">void CreateNewRecobHitCollection(art::Event &amp;, reco::HitPairList &amp;, std::vector&lt; recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;)</div><div class="ttdoc">Create a new 2D hit collection from hits associated to 3D space points. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01894">SnippetHit3DBuilderICARUS_tool.cc:1894</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_adcf16245a84b15f2379f9688f9cc7e47"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#adcf16245a84b15f2379f9688f9cc7e47">lar_cluster3d::SnippetHit3DBuilderICARUS::m_tupleTree</a></div><div class="ttdeci">TTree * m_tupleTree</div><div class="ttdoc">output analysis tree </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00276">SnippetHit3DBuilderICARUS_tool.cc:276</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a72618cf97364c4cf03c47e50226f8cac"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a72618cf97364c4cf03c47e50226f8cac">lar_cluster3d::SnippetHit3DBuilderICARUS::BuildHit3D</a></div><div class="ttdeci">void BuildHit3D(reco::HitPairList &amp;hitPairList) const </div><div class="ttdoc">Given the ClusterHit2D objects, build the HitPairMap. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00579">SnippetHit3DBuilderICARUS_tool.cc:579</a></div></div>
-<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a18e7f9645ab424e6cf058611a6f692ad"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a18e7f9645ab424e6cf058611a6f692ad">lar_cluster3d::SnippetHit3DBuilderICARUS::makeWireAssns</a></div><div class="ttdeci">void makeWireAssns(const art::Event &amp;, art::Assns&lt; recob::Wire, recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;) const </div><div class="ttdoc">Create recob::Wire to recob::Hit associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01946">SnippetHit3DBuilderICARUS_tool.cc:1946</a></div></div>
+<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a18e7f9645ab424e6cf058611a6f692ad"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a18e7f9645ab424e6cf058611a6f692ad">lar_cluster3d::SnippetHit3DBuilderICARUS::makeWireAssns</a></div><div class="ttdeci">void makeWireAssns(const art::Event &amp;, art::Assns&lt; recob::Wire, recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;) const </div><div class="ttdoc">Create recob::Wire to recob::Hit associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01962">SnippetHit3DBuilderICARUS_tool.cc:1962</a></div></div>
 <div class="ttc" id="structgeo_1_1PlaneID_html"><div class="ttname"><a href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a></div><div class="ttdoc">The data type to uniquely identify a Plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00472">geo_types.h:472</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a1b9ac8738eb571d8c5188ecaea945d37"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a1b9ac8738eb571d8c5188ecaea945d37">lar_cluster3d::SnippetHit3DBuilderICARUS::m_geometry</a></div><div class="ttdeci">const geo::Geometry * m_geometry</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00320">SnippetHit3DBuilderICARUS_tool.cc:320</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_ab4691c2dc44983f6082defa5a34cb001"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#ab4691c2dc44983f6082defa5a34cb001">geo::GeometryCore::Ncryostats</a></div><div class="ttdeci">unsigned int Ncryostats() const </div><div class="ttdoc">Returns the number of cryostats in the detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l02002">GeometryCore.h:2002</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a22cea46d1e7e149edae50ba1313c39b7"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a22cea46d1e7e149edae50ba1313c39b7">lar_cluster3d::SnippetHit3DBuilderICARUS::m_planeToSnippetHitMap</a></div><div class="ttdeci">PlaneToSnippetHitMap m_planeToSnippetHitMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00311">SnippetHit3DBuilderICARUS_tool.cc:311</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1IHit3DBuilder_html_a106b6bc370529171ba25d281f07e2f64a296a9c371047095c4b1d2bda465ea136"><div class="ttname"><a href="../../d7/d62/classlar__cluster3d_1_1IHit3DBuilder.html#a106b6bc370529171ba25d281f07e2f64a296a9c371047095c4b1d2bda465ea136">lar_cluster3d::IHit3DBuilder::NUMTIMEVALUES</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/de6/IHit3DBuilder_8h_source.html#l00078">IHit3DBuilder.h:78</a></div></div>
-<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a4263e440a05a894f49718444e673d467"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a4263e440a05a894f49718444e673d467">lar_cluster3d::SnippetHit3DBuilderICARUS::makeRawDigitAssns</a></div><div class="ttdeci">void makeRawDigitAssns(const art::Event &amp;, art::Assns&lt; raw::RawDigit, recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;) const </div><div class="ttdoc">Create raw::RawDigit to recob::Hit associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01992">SnippetHit3DBuilderICARUS_tool.cc:1992</a></div></div>
+<div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a4263e440a05a894f49718444e673d467"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a4263e440a05a894f49718444e673d467">lar_cluster3d::SnippetHit3DBuilderICARUS::makeRawDigitAssns</a></div><div class="ttdeci">void makeRawDigitAssns(const art::Event &amp;, art::Assns&lt; raw::RawDigit, recob::Hit &gt; &amp;, RecobHitToPtrMap &amp;) const </div><div class="ttdoc">Create raw::RawDigit to recob::Hit associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l02008">SnippetHit3DBuilderICARUS_tool.cc:2008</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a25cf31c90c828f144966a6b6eab4ba8e"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a25cf31c90c828f144966a6b6eab4ba8e">geo::GeometryCore::Nplanes</a></div><div class="ttdeci">unsigned int Nplanes(unsigned int tpc=0, unsigned int cstat=0) const </div><div class="ttdoc">Returns the total number of wire planes in the specified TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l02854">GeometryCore.h:2854</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a3d4b9e0f4b86f32116c4e2d4d7a1a670"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a3d4b9e0f4b86f32116c4e2d4d7a1a670">lar_cluster3d::SnippetHit3DBuilderICARUS::m_clusterHit2DMasterList</a></div><div class="ttdeci">Hit2DList m_clusterHit2DMasterList</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00310">SnippetHit3DBuilderICARUS_tool.cc:310</a></div></div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_a7b3e198cc05fd4ca77af6981934d15f8"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#a7b3e198cc05fd4ca77af6981934d15f8">lar_cluster3d::SnippetHit3DBuilderICARUS::m_outputHistograms</a></div><div class="ttdeci">bool m_outputHistograms</div><div class="ttdoc">Take the time to create and fill some histograms for diagnostics. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00263">SnippetHit3DBuilderICARUS_tool.cc:263</a></div></div>
@@ -3150,51 +3166,51 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create <a class="el" href="../../d7/d64/classraw_1_1RawDigit.html" title="Collection of charge vs time digitized from a single readout channel. ">raw::RawDigit</a> to <a class="el" href="../../db/d4e/classrecob_1_1Hit.html" title="2D representation of charge deposited in the TDC/wire plane ">recob::Hit</a> associations. </p>
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01992">1992</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;{</div>
-<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;    <span class="comment">// Let&#39;s make sure the input associations container is empty</span></div>
-<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;    rawDigitAssns = art::Assns&lt;raw::RawDigit, recob::Hit&gt;();</div>
-<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;</div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;    <span class="comment">// First task is to recover all of the previous wire &lt;--&gt; hit associations and map them by channel number</span></div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;    <span class="comment">// Create the temporary container</span></div>
-<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;    std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;raw::RawDigit&gt;&gt; channelToRawDigitMap;</div>
-<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;</div>
-<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;    <span class="comment">// Go through the list of input sources and fill out the map</span></div>
-<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inputTag : <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">m_hitFinderTagVec</a>)</div>
-<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;    {</div>
-<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;        art::ValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle = <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(inputTag);</div>
-<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;</div>
-<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;        art::FindOneP&lt;raw::RawDigit&gt; hitToRawDigitAssns(hitHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, inputTag);</div>
-<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;</div>
-<div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;        <span class="keywordflow">if</span> (hitToRawDigitAssns.isValid())</div>
-<div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;        {</div>
-<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> rawDigitIdx = 0; rawDigitIdx &lt; hitToRawDigitAssns.size(); rawDigitIdx++)</div>
-<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;            {</div>
-<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;                art::Ptr&lt;raw::RawDigit&gt; rawDigit = hitToRawDigitAssns.at(rawDigitIdx);</div>
-<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;</div>
-<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;                channelToRawDigitMap[rawDigit-&gt;Channel()] = rawDigit;</div>
-<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;            }</div>
-<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;        }</div>
-<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;    }</div>
-<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;</div>
-<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;    <span class="comment">// Now fill the container</span></div>
-<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; hitPtrPair : recobHitPtrMap)</div>
-<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;    {</div>
-<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;        <a class="code" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a> channel = hitPtrPair.first-&gt;Channel();</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l02008">2008</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;{</div>
+<div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;    <span class="comment">// Let&#39;s make sure the input associations container is empty</span></div>
+<div class="line"><a name="l02011"></a><span class="lineno"> 2011</span>&#160;    rawDigitAssns = art::Assns&lt;raw::RawDigit, recob::Hit&gt;();</div>
+<div class="line"><a name="l02012"></a><span class="lineno"> 2012</span>&#160;</div>
+<div class="line"><a name="l02013"></a><span class="lineno"> 2013</span>&#160;    <span class="comment">// First task is to recover all of the previous wire &lt;--&gt; hit associations and map them by channel number</span></div>
+<div class="line"><a name="l02014"></a><span class="lineno"> 2014</span>&#160;    <span class="comment">// Create the temporary container</span></div>
+<div class="line"><a name="l02015"></a><span class="lineno"> 2015</span>&#160;    std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;raw::RawDigit&gt;&gt; channelToRawDigitMap;</div>
+<div class="line"><a name="l02016"></a><span class="lineno"> 2016</span>&#160;</div>
+<div class="line"><a name="l02017"></a><span class="lineno"> 2017</span>&#160;    <span class="comment">// Go through the list of input sources and fill out the map</span></div>
+<div class="line"><a name="l02018"></a><span class="lineno"> 2018</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inputTag : <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">m_hitFinderTagVec</a>)</div>
+<div class="line"><a name="l02019"></a><span class="lineno"> 2019</span>&#160;    {</div>
+<div class="line"><a name="l02020"></a><span class="lineno"> 2020</span>&#160;        art::ValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle = <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(inputTag);</div>
+<div class="line"><a name="l02021"></a><span class="lineno"> 2021</span>&#160;</div>
+<div class="line"><a name="l02022"></a><span class="lineno"> 2022</span>&#160;        art::FindOneP&lt;raw::RawDigit&gt; hitToRawDigitAssns(hitHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, inputTag);</div>
 <div class="line"><a name="l02023"></a><span class="lineno"> 2023</span>&#160;</div>
-<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;        std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;raw::RawDigit&gt;&gt;::iterator chanRawDigitItr = channelToRawDigitMap.find(channel);</div>
-<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;</div>
-<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;        <span class="keywordflow">if</span> (chanRawDigitItr == channelToRawDigitMap.end())</div>
-<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;        {</div>
-<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;            <span class="comment">//mf::LogDebug(&quot;Cluster3D&quot;) &lt;&lt; &quot;** Did not find channel to wire match! Skipping...&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;           <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;        }</div>
-<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;</div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;        rawDigitAssns.addSingle(chanRawDigitItr-&gt;second, hitPtrPair.second);</div>
+<div class="line"><a name="l02024"></a><span class="lineno"> 2024</span>&#160;        <span class="keywordflow">if</span> (hitToRawDigitAssns.isValid())</div>
+<div class="line"><a name="l02025"></a><span class="lineno"> 2025</span>&#160;        {</div>
+<div class="line"><a name="l02026"></a><span class="lineno"> 2026</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> rawDigitIdx = 0; rawDigitIdx &lt; hitToRawDigitAssns.size(); rawDigitIdx++)</div>
+<div class="line"><a name="l02027"></a><span class="lineno"> 2027</span>&#160;            {</div>
+<div class="line"><a name="l02028"></a><span class="lineno"> 2028</span>&#160;                art::Ptr&lt;raw::RawDigit&gt; rawDigit = hitToRawDigitAssns.at(rawDigitIdx);</div>
+<div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;                channelToRawDigitMap[rawDigit-&gt;Channel()] = rawDigit;</div>
+<div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;            }</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;        }</div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;    }</div>
 <div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;</div>
-<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;}</div>
+<div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;    <span class="comment">// Now fill the container</span></div>
+<div class="line"><a name="l02036"></a><span class="lineno"> 2036</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; hitPtrPair : recobHitPtrMap)</div>
+<div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;    {</div>
+<div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;        <a class="code" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a> channel = hitPtrPair.first-&gt;Channel();</div>
+<div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160;</div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;        std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;raw::RawDigit&gt;&gt;::iterator chanRawDigitItr = channelToRawDigitMap.find(channel);</div>
+<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;</div>
+<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;        <span class="keywordflow">if</span> (chanRawDigitItr == channelToRawDigitMap.end())</div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;        {</div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;            <span class="comment">//mf::LogDebug(&quot;Cluster3D&quot;) &lt;&lt; &quot;** Did not find channel to wire match! Skipping...&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;           <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;        }</div>
+<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;</div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;        rawDigitAssns.addSingle(chanRawDigitItr-&gt;second, hitPtrPair.second);</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;    }</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02052"></a><span class="lineno"> 2052</span>&#160;}</div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_ae9b42c364245ee8753e6145fd104b040"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">lar_cluster3d::SnippetHit3DBuilderICARUS::m_hitFinderTagVec</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; m_hitFinderTagVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00249">SnippetHit3DBuilderICARUS_tool.cc:249</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 <div class="ttc" id="namespaceraw_html_abfe7badfcad7fe0e9474829fbd1408b2"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a></div><div class="ttdeci">unsigned int ChannelID_t</div><div class="ttdoc">Type representing the ID of a readout channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/RawTypes_8h_source.html#l00028">RawTypes.h:28</a></div></div>
@@ -3241,51 +3257,51 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create <a class="el" href="../../d2/db7/classrecob_1_1Wire.html" title="Class holding the regions of interest of signal from a channel. ">recob::Wire</a> to <a class="el" href="../../db/d4e/classrecob_1_1Hit.html" title="2D representation of charge deposited in the TDC/wire plane ">recob::Hit</a> associations. </p>
 
-<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01946">1946</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;{</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;    <span class="comment">// Let&#39;s make sure the input associations container is empty</span></div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;    wireAssns = art::Assns&lt;recob::Wire, recob::Hit&gt;();</div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;</div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;    <span class="comment">// First task is to recover all of the previous wire &lt;--&gt; hit associations and map them by channel number</span></div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;    <span class="comment">// Create the temporary container</span></div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;    std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;recob::Wire&gt;&gt; channelToWireMap;</div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;    <span class="comment">// Go through the list of input sources and fill out the map</span></div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inputTag : <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">m_hitFinderTagVec</a>)</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;    {</div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;        art::ValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle = <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(inputTag);</div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;</div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;        art::FindOneP&lt;recob::Wire&gt; hitToWireAssns(hitHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, inputTag);</div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;</div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;        <span class="keywordflow">if</span> (hitToWireAssns.isValid())</div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        {</div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> wireIdx = 0; wireIdx &lt; hitToWireAssns.size(); wireIdx++)</div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;            {</div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;                art::Ptr&lt;recob::Wire&gt; wire = hitToWireAssns.at(wireIdx);</div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;</div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;                channelToWireMap[wire-&gt;Channel()] = wire;</div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;            }</div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;        }</div>
-<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;    }</div>
-<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;</div>
-<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;    <span class="comment">// Now fill the container</span></div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; hitPtrPair : recobHitPtrMap)</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;    {</div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;        <a class="code" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a> channel = hitPtrPair.first-&gt;Channel();</div>
+<p>Definition at line <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l01962">1962</a> of file <a class="el" href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html">SnippetHit3DBuilderICARUS_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;{</div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;    <span class="comment">// Let&#39;s make sure the input associations container is empty</span></div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;    wireAssns = art::Assns&lt;recob::Wire, recob::Hit&gt;();</div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;</div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;    <span class="comment">// First task is to recover all of the previous wire &lt;--&gt; hit associations and map them by channel number</span></div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;    <span class="comment">// Create the temporary container</span></div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;    std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;recob::Wire&gt;&gt; channelToWireMap;</div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;</div>
+<div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;    <span class="comment">// Go through the list of input sources and fill out the map</span></div>
+<div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; inputTag : <a class="code" href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">m_hitFinderTagVec</a>)</div>
+<div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;    {</div>
+<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;        art::ValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt; hitHandle = <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getValidHandle&lt;std::vector&lt;recob::Hit&gt;&gt;(inputTag);</div>
+<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;</div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;        art::FindOneP&lt;recob::Wire&gt; hitToWireAssns(hitHandle, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, inputTag);</div>
 <div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;</div>
-<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;        std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;recob::Wire&gt;&gt;::iterator chanWireItr = channelToWireMap.find(channel);</div>
-<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;</div>
-<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;        <span class="keywordflow">if</span> (!(chanWireItr != channelToWireMap.end()))</div>
-<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;        {</div>
-<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;            <span class="comment">//mf::LogDebug(&quot;Cluster3D&quot;) &lt;&lt; &quot;** Did not find channel to wire match! Skipping...&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;        }</div>
-<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;</div>
-<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;        wireAssns.addSingle(chanWireItr-&gt;second, hitPtrPair.second);</div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;        <span class="keywordflow">if</span> (hitToWireAssns.isValid())</div>
+<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;        {</div>
+<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> wireIdx = 0; wireIdx &lt; hitToWireAssns.size(); wireIdx++)</div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;            {</div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;                art::Ptr&lt;recob::Wire&gt; wire = hitToWireAssns.at(wireIdx);</div>
+<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;</div>
+<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;                channelToWireMap[wire-&gt;Channel()] = wire;</div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;            }</div>
+<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;        }</div>
 <div class="line"><a name="l01987"></a><span class="lineno"> 1987</span>&#160;    }</div>
 <div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;</div>
-<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;}</div>
+<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;    <span class="comment">// Now fill the container</span></div>
+<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; hitPtrPair : recobHitPtrMap)</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;    {</div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;        <a class="code" href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a> channel = hitPtrPair.first-&gt;Channel();</div>
+<div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;</div>
+<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;        std::unordered_map&lt;raw::ChannelID_t, art::Ptr&lt;recob::Wire&gt;&gt;::iterator chanWireItr = channelToWireMap.find(channel);</div>
+<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;</div>
+<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;        <span class="keywordflow">if</span> (!(chanWireItr != channelToWireMap.end()))</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;        {</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;            <span class="comment">//mf::LogDebug(&quot;Cluster3D&quot;) &lt;&lt; &quot;** Did not find channel to wire match! Skipping...&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;        }</div>
+<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;</div>
+<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;        wireAssns.addSingle(chanWireItr-&gt;second, hitPtrPair.second);</div>
+<div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;    }</div>
+<div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;</div>
+<div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;}</div>
 <div class="ttc" id="classlar__cluster3d_1_1SnippetHit3DBuilderICARUS_html_ae9b42c364245ee8753e6145fd104b040"><div class="ttname"><a href="../../d5/dc5/classlar__cluster3d_1_1SnippetHit3DBuilderICARUS.html#ae9b42c364245ee8753e6145fd104b040">lar_cluster3d::SnippetHit3DBuilderICARUS::m_hitFinderTagVec</a></div><div class="ttdeci">std::vector&lt; art::InputTag &gt; m_hitFinderTagVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de8/SnippetHit3DBuilderICARUS__tool_8cc_source.html#l00249">SnippetHit3DBuilderICARUS_tool.cc:249</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
 <div class="ttc" id="namespaceraw_html_abfe7badfcad7fe0e9474829fbd1408b2"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#abfe7badfcad7fe0e9474829fbd1408b2">raw::ChannelID_t</a></div><div class="ttdeci">unsigned int ChannelID_t</div><div class="ttdoc">Type representing the ID of a readout channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/RawTypes_8h_source.html#l00028">RawTypes.h:28</a></div></div>

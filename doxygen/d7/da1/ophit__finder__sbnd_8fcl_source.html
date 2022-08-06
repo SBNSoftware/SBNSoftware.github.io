@@ -99,38 +99,40 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a8ca106e1b056cfd88306c66c945edf2c">reco_man</a>:       @local::standard_preco_manager</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  HitAlgoPset:    @local::sbnd_opreco_hit_slidingwindow</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  PedAlgoPset:    @local::sbnd_opreco_pedestal_rmsslider</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># OpHit for PMT - Configuration</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span>sbnd_ophit_finder_pmt: @<a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a60ec032d69049a6be8b330cdcca7f418">local::sbnd_ophit_finder</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;sbnd_ophit_finder_pmt.PD: [<span class="stringliteral">&quot;pmt_coated&quot;</span>, <span class="stringliteral">&quot;pmt_uncoated&quot;</span>]</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;sbnd_ophit_finder_pmt.SPEArea: 66.33 # It<span class="stringliteral">&#39;s 66.33 ADC = 132.66 ADCxns x 0.5ns^-1</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">                                     # for the ideal response</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">                                     # and is 317.1 ADC = 634.2 ADCxns x 0.5ns^-1</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">                                     # for the test bench response,</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">                                     # where 0.5 is the sampling rate</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.PedRangeMax:  8004</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.PedRangeMin:  7994</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.Threshold:    1.7</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.MaxSigma:     1.7</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.HitAlgoPset.ADCThreshold: 7</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">#</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral"># OpHit for XArapuca - Configuration</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">  #uncomment to calculate risetime</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #RiseTimeCalculator:   @local::sbnd_opreco_risetimecalculator</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># OpHit for PMT - Configuration</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span>sbnd_ophit_finder_pmt: @<a class="code" href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a60ec032d69049a6be8b330cdcca7f418">local::sbnd_ophit_finder</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;sbnd_ophit_finder_pmt.PD: [<span class="stringliteral">&quot;pmt_coated&quot;</span>, <span class="stringliteral">&quot;pmt_uncoated&quot;</span>]</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;sbnd_ophit_finder_pmt.SPEArea: 66.33 # It<span class="stringliteral">&#39;s 66.33 ADC = 132.66 ADCxns x 0.5ns^-1</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">                                     # for the ideal response</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">                                     # and is 317.1 ADC = 634.2 ADCxns x 0.5ns^-1</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">                                     # for the test bench response,</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">                                     # where 0.5 is the sampling rate</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.PedRangeMax:  8004</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.PedRangeMin:  7994</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.Threshold:    1.7</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.PedAlgoPset.MaxSigma:     1.7</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">sbnd_ophit_finder_pmt.HitAlgoPset.ADCThreshold: 7</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">#</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca: @local::sbnd_ophit_finder</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.PD: [&quot;xarapuca_vis&quot;, &quot;xarapuca_vuv&quot;]</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.Electronics: &quot;Daphne&quot;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.SPEArea: 8541. # It&#39;</span><a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> 66.33 ADC = 132.66 ADCxns <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> 0.5ns^-1</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.PedRangeMax:  1520</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.PedRangeMin:  1480</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.Threshold:    5</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.MaxSigma:     5</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;sbnd_ophit_finder_arapuca.HitAlgoPset.ADCThreshold: 20</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral"># OpHit for XArapuca - Configuration</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">#</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca: @local::sbnd_ophit_finder</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.PD: [&quot;xarapuca_vis&quot;, &quot;xarapuca_vuv&quot;]</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.Electronics: &quot;Daphne&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">sbnd_ophit_finder_arapuca.SPEArea: 8541. # It&#39;</span><a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> 66.33 ADC = 132.66 ADCxns <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> 0.5ns^-1</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.PedRangeMax:  1520</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.PedRangeMin:  1480</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.Threshold:    5</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;sbnd_ophit_finder_arapuca.PedAlgoPset.MaxSigma:     5</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;sbnd_ophit_finder_arapuca.HitAlgoPset.ADCThreshold: 20</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;END_PROLOG</div>
 <div class="ttc" id="ophitconfig__sbnd_8fcl_html"><div class="ttname"><a href="../../d4/d6f/ophitconfig__sbnd_8fcl.html">ophitconfig_sbnd.fcl</a></div></div>
 <div class="ttc" id="ophit__finder__sbnd_8fcl_html_a8ca106e1b056cfd88306c66c945edf2c"><div class="ttname"><a href="../../d7/da1/ophit__finder__sbnd_8fcl.html#a8ca106e1b056cfd88306c66c945edf2c">reco_man</a></div><div class="ttdeci">BEGIN_PROLOG pmt_uncoated this number is reco_man</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da1/ophit__finder__sbnd_8fcl_source.html#l00012">ophit_finder_sbnd.fcl:12</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
