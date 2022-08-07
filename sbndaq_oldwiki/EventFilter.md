@@ -1,6 +1,7 @@
 
 
-branch:  feature/sbnd_eventfilter
+branch:  feature/sbnd_eventfilter. as user sbnd
+   - last commit - never
 directory:  /home/nfs/sbnd/DAQ_DevAreas/DAQ_6Aug2022_MS
 repos:    sbndaq_artdaq,sbndaq_artdaq_core
 new files:  sbndaq-artdaq/ArtModules/SBND/softwaretrigger/
