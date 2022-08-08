@@ -12,5 +12,6 @@ new files:  sbndaq-artdaq/ArtModules/SBND/softwaretrigger/
 status: code created Aug 7, 2022.  Needs to be tested on CRT## data by putting producer in front of analysis module in fcl,
          set verbose to true and see that hit counts are sensible.
          
-         Currently doesn't build
+         Aug 7, 2022: does not build
+         Aug 8, 2022: Now builds! needs to be tested.
 
