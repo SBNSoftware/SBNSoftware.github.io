@@ -14,4 +14,5 @@ status: code created Aug 7, 2022.  Needs to be tested on CRT## data by putting p
          
          Aug 7, 2022: does not build
          Aug 8, 2022: Now builds! needs to be tested.
+         Aug 9, 2022: Added to sbndcode (branch feature/eyandel_trigger) and tested/debugged. Now running smoothly on both simulated and real CRT## data. Analyzer and/or filter to look at metrics needed.
 
