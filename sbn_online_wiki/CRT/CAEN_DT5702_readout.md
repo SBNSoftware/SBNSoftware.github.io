@@ -133,6 +133,9 @@ A boardreader reads out all FEBs connected to given Ethernet port. Each FEB is d
 - All hits from a poll are grouped in shorter periods of time. Hits in each period is saved in an _art fragment_
 - All fragments within the specified time window are saved in _fragment containers_, for each FEB. Note, this applies to `DAQInterface` only – `artdaqDriver` (a test utility) saves fragments individually.
 
+The format of CRT data saved in a single event is visualized in the following diagram:
+![CRT data format diagram](crt_data_format_2.png)
+
 `BernCRTTranslator` method `icarus::crt::BernCRTTranslator::getCRTData(std::vector<artdaq::Fragment> const & frags)` recognizes whether a fragment is a fragment or fragment container, recognizes data format (for older formats used before 2021), and outputs it in a flat vector, convenient for analysis.
 
 
