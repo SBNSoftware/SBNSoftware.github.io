@@ -85,7 +85,7 @@ Unused/historical parameters:
 -  `feb_restart_period_s` – if set to a value different than 0, boardeader will restart FEB readout each given number of seconds. Obsolete workaround for data corruption issue, eventually fixed in firmware
 -  `initial_delay_s` – if set to a value different than 0, boardreader will discard all fragments for the specified number of seconds at the beginning of the run.
 
-FEB configuration (see DT5702 documentation for details):
+FEB configuration (see DT5702 documentation for details, SBN docdb 24843):
 -   `ProbeBitStream` – normally should be a string with 224 `0`s
 -   `FEBConfigurationMACxxx` – replace `xxx` with last 8 bits of FEB MAC address, without padding zero. The parameters are explained in DT5702 documentation, and interpreted by `BernCRTFEBConfiguration`. Note, for consistency `true` value always enables a setting and `false` disables it. The most important parameters are:
     -   `channel_configuration` – an array of 32 arrays with settings for each input SiPM channel. The columns in each array correspond to following parameters:
