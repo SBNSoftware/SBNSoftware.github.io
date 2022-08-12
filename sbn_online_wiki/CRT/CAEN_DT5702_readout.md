@@ -62,13 +62,45 @@ For DAQInterface `known_boardreaders_list` needs to contain the following line:
 ### Overview
 
 A FHiCL file for CRT corresponds to a single Ethernet port, or a
-single *chain* of FEBs connected to that port. 
+single *chain* of FEBs connected to that port.
 
-The most important parameters:
--   Number of FEB in the chain (`generated_fragments_per_event`)
--   list of `fragment_ids` (see below).
--   corresponding list of the same size determining if SiPM bias voltage on that FEB should be turned  on (`TurnOnHV`)
--   delay of PPS signal w.r.t. GPS-synchronised source (`PPS_offset_ns`). This allows fragment generator to correct for the delay introduced by cable lengths
+#### Parameters to be specified for each boardreader:
+-  `generator` – set to: BernCRTData
+-  `fragment_type` – value used since 2021: BERNCRTV2
+-  `ethernet_port` – name of port used to connect to chain of FEBs
+-  `generated_fragments_per_event` – must equal to number of FEB in the chain
+-  `firmware_flag` – can be ICARUS or SBND, to allow for differences in readout procedure and data format
+-  `feb_poll_ms` – time between consecutive FEB polls. 
+-  `FEBBufferCapacity` – number of _fragments_ that can be stored for each FEB
+-  `fragment_period_ms` – time period covered by a single fragment
+-  `max_time_with_no_data_ms` – if a FEB registers no hits within the specified time, the boardreader prints a warning message. Default value: 1000
+-  `max_tolerable_t0_` – if value of ts0 counter exceeds the specified value, the boardreader prints a warning message. Default value: 1'000'100'000 ns. Normally if PPS is received, ts0 restarts after reaching ~1e9, thus much higher value suggests issue with PPS
+
+Size of each of the following lists must equal to `generated_fragments_per_event`. The order does not need to correspond to physical order in the chain, but must be consistent between the lists:
+-  `fragment_ids` – list of FEBs connected in the chain. See fragment ID format documentation in SBN docdb 16111 (ICARUS) _(SBND draft: docdb 27088)_
+-  `TurnOnHV` – set to true to allow bias voltage to be turned on on the corresponding FEB
+-  `PPS_offset_ns` – allows to input PPS delay due to signal propagation in cables, to allow boardreader to compute corrected timestamps. It is not critical to have this value correct, as the timestamp is recalculated from scratch later by the decoder
+
+Unused/historical parameters:
+-  `feb_restart_period_s` – if set to a value different than 0, boardeader will restart FEB readout each given number of seconds. Obsolete workaround for data corruption issue, eventually fixed in firmware
+-  `initial_delay_s` – if set to a value different than 0, boardreader will discard all fragments for the specified number of seconds at the beginning of the run.
+
+FEB configuration (see DT5702 documentation for details):
+-   `ProbeBitStream` – normally should be a string with 224 `0`s
+-   `FEBConfigurationMACxxx` – replace `xxx` with last 8 bits of FEB MAC address, without padding zero. The parameters are explained in DT5702 documentation, and interpreted by `BernCRTFEBConfiguration`. Note, for consistency `true` value always enables a setting and `false` disables it. The most important parameters are:
+    -   `channel_configuration` – an array of 32 arrays with settings for each input SiPM channel. The columns in each array correspond to following parameters:
+        -   time threshold ajustment 0–15
+        -   charge threshold adjustment 0–15
+        -   activate discriminator 0–1 (boolean)
+        -   HV adjustment 0–255
+        -   high-high bias 0–1 (boolean)
+        -   HG gain 0–63
+        -   LG gain 0–63
+        -   test HG 0–1 (boolean)
+        -   test LG 0–1 (boolean)
+        -   enable preamp 0–1 (boolean)
+    -   `charge_threshold` and `time_threshold` SiPM input threshold 0–1023
+-   `SlowControlBitStreamxxx` – alternative way to provide FEB configuration in original CAEN string format
 
 Individual FEB configuration, are included from separate files, individual for each FEB.
 These settings include:
