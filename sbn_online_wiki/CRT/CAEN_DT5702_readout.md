@@ -123,7 +123,7 @@ based on the database information.
 
 
 
-### Data format and readout procedure overview
+## Data format and readout procedure overview
 
 A boardreader reads out all FEBs connected to given Ethernet port. Each FEB is distinguished by different fragment ID.
 
