@@ -148,16 +148,16 @@ A boardreader reads out all FEBs connected to given Ethernet port. Each FEB is d
 
 ### Status
 
-(10/08/21)
+(8/1/22)
 
--   Board reader is fully functional
+-   Board reader fully functional
 -   CRT measures absolute time of each hit based on nanosecond time measured by FEB
-    and server time of the polls; see:  https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16108 for details
+    and server time of the polls; see:  https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16108 for details    
 
 To do:
 
--   Cross check timestamps with DAQ components
--   Prepare framework to produce hardware configuration from the DB
+-   Ongoing cross checks timestamps between CRT and other DAQ components
+-   Ongoing works on further improvements of FEB firmware
 
 
 
