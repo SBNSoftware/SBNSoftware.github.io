@@ -123,16 +123,17 @@ based on the database information.
 
 
 
-### Fragment ID
+### Data format and readout procedure overview
 
-The naming convention for CRT fragments is documented in
-<https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=16111>
+A boardreader reads out all FEBs connected to given Ethernet port. Each FEB is distinguished by different fragment ID.
 
-Fragment generator collects data from several FEBs connected in ethernet
-chain. Therefore a single generator produces many different fragment
-IDs. As of now, all of them need to be defined in the FHiCL file in a
-table `fragment_ids`.
+- Each time an FEB receives signal on SiPM input exceeding the threshold, or a signal on either T0 or T1 inputs, it triggers and reads out all SiPM inputs, and writes the data into an internal buffer. To avoid confusion with ICARUS trigger we call each readout a _hit_
+- periodically the boardreader _polls_ all data from the buffer into the server memory
+- Data from a single hit is saved in `BernCRTHitV2` structure
+- All hits from a poll are grouped in shorter periods of time. Hits in each period is saved in an _art fragment_
+- All fragments within the specified time window are saved in _fragment containers_, for each FEB. Note, this applies to `DAQInterface` only – `artdaqDriver` (a test utility) saves fragments individually.
 
+`BernCRTTranslator` method `icarus::crt::BernCRTTranslator::getCRTData(std::vector<artdaq::Fragment> const & frags)` recognizes whether a fragment is a fragment or fragment container, recognizes data format (for older formats used before 2021), and outputs it in a flat vector, convenient for analysis.
 
 
 ## Code
