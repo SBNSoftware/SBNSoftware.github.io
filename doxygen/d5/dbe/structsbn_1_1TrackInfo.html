@@ -117,6 +117,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a773fe6dbf3b6542a00d9b0beac498c25"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a773fe6dbf3b6542a00d9b0beac498c25">t0</a></td></tr>
 <tr class="memdesc:a773fe6dbf3b6542a00d9b0beac498c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">T0 of track [us].  <a href="#a773fe6dbf3b6542a00d9b0beac498c25">More...</a><br/></td></tr>
 <tr class="separator:a773fe6dbf3b6542a00d9b0beac498c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7178b711a5e27583a3198ae32831f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#abe7178b711a5e27583a3198ae32831f1">whicht0</a></td></tr>
+<tr class="memdesc:abe7178b711a5e27583a3198ae32831f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which T0 producer was used to tag.  <a href="#abe7178b711a5e27583a3198ae32831f1">More...</a><br/></td></tr>
+<tr class="separator:abe7178b711a5e27583a3198ae32831f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c11839a06ddb0500ca1c2bfcb9b4b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad2c11839a06ddb0500ca1c2bfcb9b4b3">id</a></td></tr>
 <tr class="memdesc:ad2c11839a06ddb0500ca1c2bfcb9b4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of track.  <a href="#ad2c11839a06ddb0500ca1c2bfcb9b4b3">More...</a><br/></td></tr>
 <tr class="separator:ad2c11839a06ddb0500ca1c2bfcb9b4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +216,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac49af673ccfa63cc7a834b4eee904e4b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ac49af673ccfa63cc7a834b4eee904e4b">tracks_near_end_costh</a></td></tr>
 <tr class="memdesc:ac49af673ccfa63cc7a834b4eee904e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of tracks near the end of this track.  <a href="#ac49af673ccfa63cc7a834b4eee904e4b">More...</a><br/></td></tr>
 <tr class="separator:ac49af673ccfa63cc7a834b4eee904e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f440bcf81663c6e013017837df73df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a72f440bcf81663c6e013017837df73df">tracks_near_start_dist</a></td></tr>
+<tr class="memdesc:a72f440bcf81663c6e013017837df73df"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of tracks near the start of this track.  <a href="#a72f440bcf81663c6e013017837df73df">More...</a><br/></td></tr>
+<tr class="separator:a72f440bcf81663c6e013017837df73df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1735c11f3f7c8ec91afabd563733c0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aee1735c11f3f7c8ec91afabd563733c0">tracks_near_start_costh</a></td></tr>
+<tr class="memdesc:aee1735c11f3f7c8ec91afabd563733c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of tracks near the start of this track.  <a href="#aee1735c11f3f7c8ec91afabd563733c0">More...</a><br/></td></tr>
+<tr class="separator:aee1735c11f3f7c8ec91afabd563733c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c130b681d580405b8a25ea035fab3e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/da1/structsbn_1_1HitInfo.html">HitInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a08c130b681d580405b8a25ea035fab3e">endhits</a></td></tr>
 <tr class="memdesc:a08c130b681d580405b8a25ea035fab3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of hits near the endpoint of the track on the collection plane.  <a href="#a08c130b681d580405b8a25ea035fab3e">More...</a><br/></td></tr>
 <tr class="separator:a08c130b681d580405b8a25ea035fab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,58 +254,58 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00304">304</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;               :</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a773fe6dbf3b6542a00d9b0beac498c25">t0</a>(-1),</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad2c11839a06ddb0500ca1c2bfcb9b4b3">id</a>(-1),</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a257880b881da22f3c7f1d98bee7707b0">cryostat</a>(-1),</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6a168156ab5189f8eb15b832e4584ab0">clear_cosmic_muon</a>(<span class="keyword">false</span>),</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a8a2d9ce75b50eeaae7f8e474409e50ee">length</a>(-1),</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae00e474d6435c63f0bde49445292adcb">hit_min_time_p0_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#af3b40114748938226e2c4ad6148c845f">hit_max_time_p0_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad75fa6d4e8f4ddf732f2baf4ebf3b25f">hit_min_time_p1_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a2e8d633bd1defd04f0c910352a8cd796">hit_max_time_p1_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#afca55f1b821e0e85eb23af5cbf2c32f0">hit_min_time_p2_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#add27cc27e2c952974626cc5e009ea206">hit_max_time_p2_tpcE</a>(-100000),</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae7076bc02c7d005d255318fd9977a747">hit_min_time_p0_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a65bf8f15de4226a1ccb15dc78d409914">hit_max_time_p0_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a1156a14c307e3fdfa50ab0c5b1cd2382">hit_min_time_p1_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#afec978169c26057753ed93edd3801a06">hit_max_time_p1_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6e39b8ea2c6e055d663a38f132aff5a9">hit_min_time_p2_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad3281ae335c32987d2cd91ff69e2b6de">hit_max_time_p2_tpcW</a>(-100000),</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a3cca874451695e2232389f24d5a4354d">const_fit_C</a>(-1),</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aad162c36e7a7ea94e7cd4cc946e3a88f">const_fit_residuals</a>(-1),</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aac0d335f843346bf7e6d81822b92c793">exp_fit_A</a>(-1),</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a0b1331cbed2353df2490ef8b6f02c2fe">exp_fit_R</a>(-1),</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a5afbae2e59eb6e4e04937d7c4bb43009">exp_fit_residuals</a>(-1),</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aa40e3ce345939ea722b7ab6e820b2112">n_fit_point</a>(-1),</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a58016fd35ee567c686cbed4b9286f644">selected</a>(-1),</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a290676a02c65061db816352f2a493c9a">nprescale</a>(-1) {}</div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a2e8d633bd1defd04f0c910352a8cd796"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a2e8d633bd1defd04f0c910352a8cd796">sbn::TrackInfo::hit_max_time_p1_tpcE</a></div><div class="ttdeci">float hit_max_time_p1_tpcE</div><div class="ttdoc">Max hit time of track on plane 1 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00271">TrackCaloSkimmerObj.h:271</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_add27cc27e2c952974626cc5e009ea206"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#add27cc27e2c952974626cc5e009ea206">sbn::TrackInfo::hit_max_time_p2_tpcE</a></div><div class="ttdeci">float hit_max_time_p2_tpcE</div><div class="ttdoc">Max hit time of track on plane 2 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00273">TrackCaloSkimmerObj.h:273</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_afec978169c26057753ed93edd3801a06"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#afec978169c26057753ed93edd3801a06">sbn::TrackInfo::hit_max_time_p1_tpcW</a></div><div class="ttdeci">float hit_max_time_p1_tpcW</div><div class="ttdoc">Max hit time of track on plane 1 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00277">TrackCaloSkimmerObj.h:277</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a290676a02c65061db816352f2a493c9a"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a290676a02c65061db816352f2a493c9a">sbn::TrackInfo::nprescale</a></div><div class="ttdeci">int nprescale</div><div class="ttdoc">Prescale of the tool that selected this track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00291">TrackCaloSkimmerObj.h:291</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a8a2d9ce75b50eeaae7f8e474409e50ee"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a8a2d9ce75b50eeaae7f8e474409e50ee">sbn::TrackInfo::length</a></div><div class="ttdeci">float length</div><div class="ttdoc">Length of track [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00266">TrackCaloSkimmerObj.h:266</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_afca55f1b821e0e85eb23af5cbf2c32f0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#afca55f1b821e0e85eb23af5cbf2c32f0">sbn::TrackInfo::hit_min_time_p2_tpcE</a></div><div class="ttdeci">float hit_min_time_p2_tpcE</div><div class="ttdoc">Min hit time of track on plane 2 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00272">TrackCaloSkimmerObj.h:272</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a3cca874451695e2232389f24d5a4354d"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a3cca874451695e2232389f24d5a4354d">sbn::TrackInfo::const_fit_C</a></div><div class="ttdeci">float const_fit_C</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00281">TrackCaloSkimmerObj.h:281</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_ae7076bc02c7d005d255318fd9977a747"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae7076bc02c7d005d255318fd9977a747">sbn::TrackInfo::hit_min_time_p0_tpcW</a></div><div class="ttdeci">float hit_min_time_p0_tpcW</div><div class="ttdoc">Min hit time of track on plane 0 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00274">TrackCaloSkimmerObj.h:274</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_aac0d335f843346bf7e6d81822b92c793"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aac0d335f843346bf7e6d81822b92c793">sbn::TrackInfo::exp_fit_A</a></div><div class="ttdeci">float exp_fit_A</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00284">TrackCaloSkimmerObj.h:284</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_aa40e3ce345939ea722b7ab6e820b2112"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aa40e3ce345939ea722b7ab6e820b2112">sbn::TrackInfo::n_fit_point</a></div><div class="ttdeci">int n_fit_point</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00288">TrackCaloSkimmerObj.h:288</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a257880b881da22f3c7f1d98bee7707b0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a257880b881da22f3c7f1d98bee7707b0">sbn::TrackInfo::cryostat</a></div><div class="ttdeci">int cryostat</div><div class="ttdoc">Cryostat number of track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00261">TrackCaloSkimmerObj.h:261</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a65bf8f15de4226a1ccb15dc78d409914"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a65bf8f15de4226a1ccb15dc78d409914">sbn::TrackInfo::hit_max_time_p0_tpcW</a></div><div class="ttdeci">float hit_max_time_p0_tpcW</div><div class="ttdoc">Max hit time of track on plane 0 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00275">TrackCaloSkimmerObj.h:275</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a6a168156ab5189f8eb15b832e4584ab0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6a168156ab5189f8eb15b832e4584ab0">sbn::TrackInfo::clear_cosmic_muon</a></div><div class="ttdeci">bool clear_cosmic_muon</div><div class="ttdoc">Whether Pandora thinks the track is &amp;quot;clearly&amp;quot; a cosmic. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00262">TrackCaloSkimmerObj.h:262</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_aad162c36e7a7ea94e7cd4cc946e3a88f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aad162c36e7a7ea94e7cd4cc946e3a88f">sbn::TrackInfo::const_fit_residuals</a></div><div class="ttdeci">float const_fit_residuals</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00282">TrackCaloSkimmerObj.h:282</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_ad2c11839a06ddb0500ca1c2bfcb9b4b3"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad2c11839a06ddb0500ca1c2bfcb9b4b3">sbn::TrackInfo::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">ID of track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00260">TrackCaloSkimmerObj.h:260</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_ae00e474d6435c63f0bde49445292adcb"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae00e474d6435c63f0bde49445292adcb">sbn::TrackInfo::hit_min_time_p0_tpcE</a></div><div class="ttdeci">float hit_min_time_p0_tpcE</div><div class="ttdoc">Min hit time of track on plane 0 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00268">TrackCaloSkimmerObj.h:268</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_ad75fa6d4e8f4ddf732f2baf4ebf3b25f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad75fa6d4e8f4ddf732f2baf4ebf3b25f">sbn::TrackInfo::hit_min_time_p1_tpcE</a></div><div class="ttdeci">float hit_min_time_p1_tpcE</div><div class="ttdoc">Min hit time of track on plane 1 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00270">TrackCaloSkimmerObj.h:270</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a5afbae2e59eb6e4e04937d7c4bb43009"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a5afbae2e59eb6e4e04937d7c4bb43009">sbn::TrackInfo::exp_fit_residuals</a></div><div class="ttdeci">float exp_fit_residuals</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00286">TrackCaloSkimmerObj.h:286</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a1156a14c307e3fdfa50ab0c5b1cd2382"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a1156a14c307e3fdfa50ab0c5b1cd2382">sbn::TrackInfo::hit_min_time_p1_tpcW</a></div><div class="ttdeci">float hit_min_time_p1_tpcW</div><div class="ttdoc">Min hit time of track on plane 1 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00276">TrackCaloSkimmerObj.h:276</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a6e39b8ea2c6e055d663a38f132aff5a9"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6e39b8ea2c6e055d663a38f132aff5a9">sbn::TrackInfo::hit_min_time_p2_tpcW</a></div><div class="ttdeci">float hit_min_time_p2_tpcW</div><div class="ttdoc">Min hit time of track on plane 2 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00278">TrackCaloSkimmerObj.h:278</a></div></div>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00308">308</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;               :</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a773fe6dbf3b6542a00d9b0beac498c25">t0</a>(-1),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad2c11839a06ddb0500ca1c2bfcb9b4b3">id</a>(-1),</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a257880b881da22f3c7f1d98bee7707b0">cryostat</a>(-1),</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6a168156ab5189f8eb15b832e4584ab0">clear_cosmic_muon</a>(<span class="keyword">false</span>),</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a8a2d9ce75b50eeaae7f8e474409e50ee">length</a>(-1),</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae00e474d6435c63f0bde49445292adcb">hit_min_time_p0_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#af3b40114748938226e2c4ad6148c845f">hit_max_time_p0_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad75fa6d4e8f4ddf732f2baf4ebf3b25f">hit_min_time_p1_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a2e8d633bd1defd04f0c910352a8cd796">hit_max_time_p1_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#afca55f1b821e0e85eb23af5cbf2c32f0">hit_min_time_p2_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#add27cc27e2c952974626cc5e009ea206">hit_max_time_p2_tpcE</a>(-100000),</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae7076bc02c7d005d255318fd9977a747">hit_min_time_p0_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a65bf8f15de4226a1ccb15dc78d409914">hit_max_time_p0_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a1156a14c307e3fdfa50ab0c5b1cd2382">hit_min_time_p1_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#afec978169c26057753ed93edd3801a06">hit_max_time_p1_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6e39b8ea2c6e055d663a38f132aff5a9">hit_min_time_p2_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad3281ae335c32987d2cd91ff69e2b6de">hit_max_time_p2_tpcW</a>(-100000),</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a3cca874451695e2232389f24d5a4354d">const_fit_C</a>(-1),</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aad162c36e7a7ea94e7cd4cc946e3a88f">const_fit_residuals</a>(-1),</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aac0d335f843346bf7e6d81822b92c793">exp_fit_A</a>(-1),</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a0b1331cbed2353df2490ef8b6f02c2fe">exp_fit_R</a>(-1),</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a5afbae2e59eb6e4e04937d7c4bb43009">exp_fit_residuals</a>(-1),</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#aa40e3ce345939ea722b7ab6e820b2112">n_fit_point</a>(-1),</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a58016fd35ee567c686cbed4b9286f644">selected</a>(-1),</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <a class="code" href="../../d5/dbe/structsbn_1_1TrackInfo.html#a290676a02c65061db816352f2a493c9a">nprescale</a>(-1) {}</div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a2e8d633bd1defd04f0c910352a8cd796"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a2e8d633bd1defd04f0c910352a8cd796">sbn::TrackInfo::hit_max_time_p1_tpcE</a></div><div class="ttdeci">float hit_max_time_p1_tpcE</div><div class="ttdoc">Max hit time of track on plane 1 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00272">TrackCaloSkimmerObj.h:272</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_add27cc27e2c952974626cc5e009ea206"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#add27cc27e2c952974626cc5e009ea206">sbn::TrackInfo::hit_max_time_p2_tpcE</a></div><div class="ttdeci">float hit_max_time_p2_tpcE</div><div class="ttdoc">Max hit time of track on plane 2 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00274">TrackCaloSkimmerObj.h:274</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_afec978169c26057753ed93edd3801a06"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#afec978169c26057753ed93edd3801a06">sbn::TrackInfo::hit_max_time_p1_tpcW</a></div><div class="ttdeci">float hit_max_time_p1_tpcW</div><div class="ttdoc">Max hit time of track on plane 1 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00278">TrackCaloSkimmerObj.h:278</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a290676a02c65061db816352f2a493c9a"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a290676a02c65061db816352f2a493c9a">sbn::TrackInfo::nprescale</a></div><div class="ttdeci">int nprescale</div><div class="ttdoc">Prescale of the tool that selected this track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00292">TrackCaloSkimmerObj.h:292</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a8a2d9ce75b50eeaae7f8e474409e50ee"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a8a2d9ce75b50eeaae7f8e474409e50ee">sbn::TrackInfo::length</a></div><div class="ttdeci">float length</div><div class="ttdoc">Length of track [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00267">TrackCaloSkimmerObj.h:267</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_afca55f1b821e0e85eb23af5cbf2c32f0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#afca55f1b821e0e85eb23af5cbf2c32f0">sbn::TrackInfo::hit_min_time_p2_tpcE</a></div><div class="ttdeci">float hit_min_time_p2_tpcE</div><div class="ttdoc">Min hit time of track on plane 2 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00273">TrackCaloSkimmerObj.h:273</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a3cca874451695e2232389f24d5a4354d"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a3cca874451695e2232389f24d5a4354d">sbn::TrackInfo::const_fit_C</a></div><div class="ttdeci">float const_fit_C</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00282">TrackCaloSkimmerObj.h:282</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_ae7076bc02c7d005d255318fd9977a747"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae7076bc02c7d005d255318fd9977a747">sbn::TrackInfo::hit_min_time_p0_tpcW</a></div><div class="ttdeci">float hit_min_time_p0_tpcW</div><div class="ttdoc">Min hit time of track on plane 0 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00275">TrackCaloSkimmerObj.h:275</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_aac0d335f843346bf7e6d81822b92c793"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aac0d335f843346bf7e6d81822b92c793">sbn::TrackInfo::exp_fit_A</a></div><div class="ttdeci">float exp_fit_A</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00285">TrackCaloSkimmerObj.h:285</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_aa40e3ce345939ea722b7ab6e820b2112"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aa40e3ce345939ea722b7ab6e820b2112">sbn::TrackInfo::n_fit_point</a></div><div class="ttdeci">int n_fit_point</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00289">TrackCaloSkimmerObj.h:289</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a257880b881da22f3c7f1d98bee7707b0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a257880b881da22f3c7f1d98bee7707b0">sbn::TrackInfo::cryostat</a></div><div class="ttdeci">int cryostat</div><div class="ttdoc">Cryostat number of track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00262">TrackCaloSkimmerObj.h:262</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a65bf8f15de4226a1ccb15dc78d409914"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a65bf8f15de4226a1ccb15dc78d409914">sbn::TrackInfo::hit_max_time_p0_tpcW</a></div><div class="ttdeci">float hit_max_time_p0_tpcW</div><div class="ttdoc">Max hit time of track on plane 0 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00276">TrackCaloSkimmerObj.h:276</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a6a168156ab5189f8eb15b832e4584ab0"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6a168156ab5189f8eb15b832e4584ab0">sbn::TrackInfo::clear_cosmic_muon</a></div><div class="ttdeci">bool clear_cosmic_muon</div><div class="ttdoc">Whether Pandora thinks the track is &amp;quot;clearly&amp;quot; a cosmic. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00263">TrackCaloSkimmerObj.h:263</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_aad162c36e7a7ea94e7cd4cc946e3a88f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#aad162c36e7a7ea94e7cd4cc946e3a88f">sbn::TrackInfo::const_fit_residuals</a></div><div class="ttdeci">float const_fit_residuals</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00283">TrackCaloSkimmerObj.h:283</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_ad2c11839a06ddb0500ca1c2bfcb9b4b3"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad2c11839a06ddb0500ca1c2bfcb9b4b3">sbn::TrackInfo::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">ID of track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00261">TrackCaloSkimmerObj.h:261</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_ae00e474d6435c63f0bde49445292adcb"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ae00e474d6435c63f0bde49445292adcb">sbn::TrackInfo::hit_min_time_p0_tpcE</a></div><div class="ttdeci">float hit_min_time_p0_tpcE</div><div class="ttdoc">Min hit time of track on plane 0 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00269">TrackCaloSkimmerObj.h:269</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_ad75fa6d4e8f4ddf732f2baf4ebf3b25f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad75fa6d4e8f4ddf732f2baf4ebf3b25f">sbn::TrackInfo::hit_min_time_p1_tpcE</a></div><div class="ttdeci">float hit_min_time_p1_tpcE</div><div class="ttdoc">Min hit time of track on plane 1 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00271">TrackCaloSkimmerObj.h:271</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a5afbae2e59eb6e4e04937d7c4bb43009"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a5afbae2e59eb6e4e04937d7c4bb43009">sbn::TrackInfo::exp_fit_residuals</a></div><div class="ttdeci">float exp_fit_residuals</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00287">TrackCaloSkimmerObj.h:287</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a1156a14c307e3fdfa50ab0c5b1cd2382"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a1156a14c307e3fdfa50ab0c5b1cd2382">sbn::TrackInfo::hit_min_time_p1_tpcW</a></div><div class="ttdeci">float hit_min_time_p1_tpcW</div><div class="ttdoc">Min hit time of track on plane 1 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00277">TrackCaloSkimmerObj.h:277</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a6e39b8ea2c6e055d663a38f132aff5a9"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a6e39b8ea2c6e055d663a38f132aff5a9">sbn::TrackInfo::hit_min_time_p2_tpcW</a></div><div class="ttdeci">float hit_min_time_p2_tpcW</div><div class="ttdoc">Min hit time of track on plane 2 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00279">TrackCaloSkimmerObj.h:279</a></div></div>
 <div class="ttc" id="structsbn_1_1TrackInfo_html_a773fe6dbf3b6542a00d9b0beac498c25"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a773fe6dbf3b6542a00d9b0beac498c25">sbn::TrackInfo::t0</a></div><div class="ttdeci">float t0</div><div class="ttdoc">T0 of track [us]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00259">TrackCaloSkimmerObj.h:259</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a58016fd35ee567c686cbed4b9286f644"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a58016fd35ee567c686cbed4b9286f644">sbn::TrackInfo::selected</a></div><div class="ttdeci">int selected</div><div class="ttdoc">Index of the tool that selected this track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00290">TrackCaloSkimmerObj.h:290</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_af3b40114748938226e2c4ad6148c845f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#af3b40114748938226e2c4ad6148c845f">sbn::TrackInfo::hit_max_time_p0_tpcE</a></div><div class="ttdeci">float hit_max_time_p0_tpcE</div><div class="ttdoc">Max hit time of track on plane 0 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00269">TrackCaloSkimmerObj.h:269</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_ad3281ae335c32987d2cd91ff69e2b6de"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad3281ae335c32987d2cd91ff69e2b6de">sbn::TrackInfo::hit_max_time_p2_tpcW</a></div><div class="ttdeci">float hit_max_time_p2_tpcW</div><div class="ttdoc">Max hit time of track on plane 2 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00279">TrackCaloSkimmerObj.h:279</a></div></div>
-<div class="ttc" id="structsbn_1_1TrackInfo_html_a0b1331cbed2353df2490ef8b6f02c2fe"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a0b1331cbed2353df2490ef8b6f02c2fe">sbn::TrackInfo::exp_fit_R</a></div><div class="ttdeci">float exp_fit_R</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00285">TrackCaloSkimmerObj.h:285</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a58016fd35ee567c686cbed4b9286f644"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a58016fd35ee567c686cbed4b9286f644">sbn::TrackInfo::selected</a></div><div class="ttdeci">int selected</div><div class="ttdoc">Index of the tool that selected this track. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00291">TrackCaloSkimmerObj.h:291</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_af3b40114748938226e2c4ad6148c845f"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#af3b40114748938226e2c4ad6148c845f">sbn::TrackInfo::hit_max_time_p0_tpcE</a></div><div class="ttdeci">float hit_max_time_p0_tpcE</div><div class="ttdoc">Max hit time of track on plane 0 TPC E. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00270">TrackCaloSkimmerObj.h:270</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_ad3281ae335c32987d2cd91ff69e2b6de"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#ad3281ae335c32987d2cd91ff69e2b6de">sbn::TrackInfo::hit_max_time_p2_tpcW</a></div><div class="ttdeci">float hit_max_time_p2_tpcW</div><div class="ttdoc">Max hit time of track on plane 2 TPC W. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00280">TrackCaloSkimmerObj.h:280</a></div></div>
+<div class="ttc" id="structsbn_1_1TrackInfo_html_a0b1331cbed2353df2490ef8b6f02c2fe"><div class="ttname"><a href="../../d5/dbe/structsbn_1_1TrackInfo.html#a0b1331cbed2353df2490ef8b6f02c2fe">sbn::TrackInfo::exp_fit_R</a></div><div class="ttdeci">float exp_fit_R</div><div class="ttdoc">Fit parameter. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00286">TrackCaloSkimmerObj.h:286</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,7 +322,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether Pandora thinks the track is "clearly" a cosmic. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00262">262</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00263">263</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +338,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00281">281</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00282">282</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +354,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00282">282</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00283">283</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +370,7 @@ Public Attributes</h2></td></tr>
 
 <p>Cryostat number of track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00261">261</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00262">262</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +386,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of space points in each daughter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00294">294</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00295">295</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +402,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pandora PDG codes of daughter PFP's. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00293">293</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00294">294</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +418,7 @@ Public Attributes</h2></td></tr>
 
 <p>Smallest distance from any daughter Space Point to <a class="el" href="../../d4/d66/structTrack.html">Track</a> End [cm]. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00295">295</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00296">296</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +434,7 @@ Public Attributes</h2></td></tr>
 
 <p>Direction of track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00265">265</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00266">266</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -441,7 +450,7 @@ Public Attributes</h2></td></tr>
 
 <p>End position of track [cm]. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00264">264</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00265">265</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +466,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of hits near the endpoint of the track on the collection plane. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00300">300</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00304">304</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +482,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00284">284</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00285">285</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +498,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00285">285</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00286">286</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +514,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00286">286</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00287">287</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +530,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 0 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00269">269</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00270">270</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +546,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 0 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00275">275</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00276">276</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +562,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 1 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00271">271</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00272">272</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -569,7 +578,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 1 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00277">277</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00278">278</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +594,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 2 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00273">273</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00274">274</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +610,7 @@ Public Attributes</h2></td></tr>
 
 <p>Max hit time of track on plane 2 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00279">279</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00280">280</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -617,7 +626,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 0 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00268">268</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00269">269</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +642,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 0 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00274">274</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00275">275</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +658,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 1 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00270">270</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00271">271</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +674,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 1 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00276">276</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00277">277</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +690,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 2 TPC E. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00272">272</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00273">273</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +706,7 @@ Public Attributes</h2></td></tr>
 
 <p>Min hit time of track on plane 2 TPC W. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00278">278</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00279">279</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +770,7 @@ Public Attributes</h2></td></tr>
 
 <p>ID of track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00260">260</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00261">261</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +786,7 @@ Public Attributes</h2></td></tr>
 
 <p>Length of track [cm]. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00266">266</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00267">267</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +818,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fit parameter. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00288">288</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00289">289</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -825,7 +834,7 @@ Public Attributes</h2></td></tr>
 
 <p>Prescale of the tool that selected this track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00291">291</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00292">292</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -841,7 +850,7 @@ Public Attributes</h2></td></tr>
 
 <p>Index of the tool that selected this track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00290">290</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00291">291</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +866,7 @@ Public Attributes</h2></td></tr>
 
 <p>Start position of track [cm]. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00263">263</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00264">264</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -889,7 +898,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of tracks near the end of this track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00298">298</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00299">299</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +914,39 @@ Public Attributes</h2></td></tr>
 
 <p>List of tracks near the end of this track. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00297">297</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00298">298</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee1735c11f3f7c8ec91afabd563733c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; sbn::TrackInfo::tracks_near_start_costh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of tracks near the start of this track. </p>
+
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00302">302</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72f440bcf81663c6e013017837df73df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; sbn::TrackInfo::tracks_near_start_dist</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of tracks near the start of this track. </p>
+
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00301">301</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
@@ -921,7 +962,23 @@ Public Attributes</h2></td></tr>
 
 <p>Truth-matching information. </p>
 
-<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00302">302</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00306">306</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe7178b711a5e27583a3198ae32831f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sbn::TrackInfo::whicht0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Which T0 producer was used to tag. </p>
+
+<p>Definition at line <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html#l00260">260</a> of file <a class="el" href="../../d0/df5/TrackCaloSkimmerObj_8h_source.html">TrackCaloSkimmerObj.h</a>.</p>
 
 </div>
 </div>
