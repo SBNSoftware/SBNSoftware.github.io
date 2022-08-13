@@ -28,8 +28,8 @@ var searchData=
   ['vector2d',['Vector2D',['../da/df2/structVectorTraitsTester_1_1Vector2D.html',1,'VectorTraitsTester']]],
   ['vector2dcomparison',['Vector2DComparison',['../da/df2/structlar_1_1util_1_1Vector2DComparison.html',1,'lar::util']]],
   ['vector2dcomparison_3c_20typename_20comp_5ft_3a_3avalue_5ft_20_3e',['Vector2DComparison&lt; typename Comp_t::Value_t &gt;',['../da/df2/structlar_1_1util_1_1Vector2DComparison.html',1,'lar::util']]],
-  ['vector3d',['Vector3D',['../d1/d6a/structsbn_1_1Vector3D.html',1,'sbn']]],
   ['vector3d',['Vector3D',['../d3/d6c/structVectorTraitsTester_1_1Vector3D.html',1,'VectorTraitsTester']]],
+  ['vector3d',['Vector3D',['../d1/d6a/structsbn_1_1Vector3D.html',1,'sbn']]],
   ['vector3dcomparison',['Vector3DComparison',['../df/da7/structlar_1_1util_1_1Vector3DComparison.html',1,'lar::util']]],
   ['vector3dstruct',['Vector3DStruct',['../de/d32/classutil_1_1manip_1_1details_1_1Vector3DStruct.html',1,'util::manip::details']]],
   ['vector4d',['Vector4D',['../d9/dd6/structVectorTraitsTester_1_1Vector4D.html',1,'VectorTraitsTester']]],
@@ -43,8 +43,8 @@ var searchData=
   ['vectorscalar',['VectorScalar',['../d7/d53/structgeo_1_1vect_1_1details_1_1VectorScalar.html',1,'geo::vect::details']]],
   ['vectortraitstester',['VectorTraitsTester',['../d7/ddf/structVectorTraitsTester.html',1,'']]],
   ['vertex',['Vertex',['../d5/d52/classrecob_1_1Vertex.html',1,'recob']]],
-  ['vertex',['Vertex',['../d3/da3/classlar__content_1_1LArPointingCluster_1_1Vertex.html',1,'lar_content::LArPointingCluster']]],
   ['vertex',['Vertex',['../da/d40/classdcel2d_1_1Vertex.html',1,'dcel2d']]],
+  ['vertex',['Vertex',['../d3/da3/classlar__content_1_1LArPointingCluster_1_1Vertex.html',1,'lar_content::LArPointingCluster']]],
   ['vertexassnmeta',['VertexAssnMeta',['../d6/d9f/classrecob_1_1VertexAssnMeta.html',1,'recob']]],
   ['vertexassociatedpfostool',['VertexAssociatedPfosTool',['../d0/d99/classlar__content_1_1VertexAssociatedPfosTool.html',1,'lar_content']]],
   ['vertexbasedpfomopupalgorithm',['VertexBasedPfoMopUpAlgorithm',['../db/d12/classlar__content_1_1VertexBasedPfoMopUpAlgorithm.html',1,'lar_content']]],
@@ -82,10 +82,10 @@ var searchData=
   ['volyz',['VolYZ',['../da/d22/structana_1_1SBNOsc_1_1Cuts_1_1VolYZ.html',1,'ana::SBNOsc::Cuts']]],
   ['voronoidiagram',['VoronoiDiagram',['../dc/d8c/classvoronoi2d_1_1VoronoiDiagram.html',1,'voronoi2d']]],
   ['voronoipathfinder',['VoronoiPathFinder',['../d8/d3c/classlar__cluster3d_1_1VoronoiPathFinder.html',1,'lar_cluster3d']]],
-  ['vtx3store',['Vtx3Store',['../d2/d05/structtca_1_1Vtx3Store.html',1,'tca']]],
   ['vtx3store',['Vtx3Store',['../d2/d71/structcluster_1_1ClusterCrawlerAlg_1_1Vtx3Store.html',1,'cluster::ClusterCrawlerAlg']]],
+  ['vtx3store',['Vtx3Store',['../d2/d05/structtca_1_1Vtx3Store.html',1,'tca']]],
   ['vtxcandidate',['VtxCandidate',['../d3/d65/classpma_1_1VtxCandidate.html',1,'pma']]],
   ['vtxpar',['vtxPar',['../d3/d8b/structtrkf_1_1CCTrackMaker_1_1vtxPar.html',1,'trkf::CCTrackMaker']]],
-  ['vtxstore',['VtxStore',['../dc/d11/structtca_1_1VtxStore.html',1,'tca']]],
-  ['vtxstore',['VtxStore',['../d9/d5e/structcluster_1_1ClusterCrawlerAlg_1_1VtxStore.html',1,'cluster::ClusterCrawlerAlg']]]
+  ['vtxstore',['VtxStore',['../d9/d5e/structcluster_1_1ClusterCrawlerAlg_1_1VtxStore.html',1,'cluster::ClusterCrawlerAlg']]],
+  ['vtxstore',['VtxStore',['../dc/d11/structtca_1_1VtxStore.html',1,'tca']]]
 ];

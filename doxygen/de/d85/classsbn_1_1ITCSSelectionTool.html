@@ -92,8 +92,9 @@ Inheritance diagram for sbn::ITCSSelectionTool:</div>
  <div class="center">
   <img src="../../de/d85/classsbn_1_1ITCSSelectionTool.png" usemap="#sbn::ITCSSelectionTool_map" alt=""/>
   <map id="sbn::ITCSSelectionTool_map" name="sbn::ITCSSelectionTool_map">
-<area href="../../da/d64/classsbn_1_1TrackCaloSkimmerSelectAnode2CathodeTrack.html" alt="sbn::TrackCaloSkimmerSelectAnode2CathodeTrack" shape="rect" coords="0,56,301,80"/>
-<area href="../../dc/d4c/classsbn_1_1TrackCaloSkimmerSelectStoppingTrack.html" alt="sbn::TrackCaloSkimmerSelectStoppingTrack" shape="rect" coords="311,56,612,80"/>
+<area href="../../d0/d78/classsbn_1_1TrackCaloSkimmerSelectAllTrack.html" alt="sbn::TrackCaloSkimmerSelectAllTrack" shape="rect" coords="0,56,301,80"/>
+<area href="../../da/d64/classsbn_1_1TrackCaloSkimmerSelectAnode2CathodeTrack.html" alt="sbn::TrackCaloSkimmerSelectAnode2CathodeTrack" shape="rect" coords="311,56,612,80"/>
+<area href="../../dc/d4c/classsbn_1_1TrackCaloSkimmerSelectStoppingTrack.html" alt="sbn::TrackCaloSkimmerSelectStoppingTrack" shape="rect" coords="622,56,923,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -101,6 +102,14 @@ Inheritance diagram for sbn::ITCSSelectionTool:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abb2a280e363dfafe7298f0ffc131c4e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#abb2a280e363dfafe7298f0ffc131c4e0">ITCSSelectionTool</a> (const fhicl::ParameterSet &amp;<a class="el" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>)</td></tr>
 <tr class="separator:abb2a280e363dfafe7298f0ffc131c4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed225bb71ce0837e4955e21072e12ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a5ed225bb71ce0837e4955e21072e12ff">fRequireT0</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;RequireT0&quot;, true))</td></tr>
+<tr class="separator:a5ed225bb71ce0837e4955e21072e12ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c33da5862426cd9043e0e2be4e5a2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a93c33da5862426cd9043e0e2be4e5a2d">fInvert</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;(&quot;Invert&quot;, false))</td></tr>
+<tr class="separator:a93c33da5862426cd9043e0e2be4e5a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072ea88e23bcf7c2289c78baf7ef6a77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a072ea88e23bcf7c2289c78baf7ef6a77">fNPreScale</a> (<a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; unsigned &gt;(&quot;PreScale&quot;, 1))</td></tr>
+<tr class="separator:a072ea88e23bcf7c2289c78baf7ef6a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d5b7105a872c161aefccb067c2cc4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a14d5b7105a872c161aefccb067c2cc4a">fISelect</a> (0)</td></tr>
+<tr class="separator:a14d5b7105a872c161aefccb067c2cc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eadaba4da9c75bcfacea00e4ae5855c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6eadaba4da9c75bcfacea00e4ae5855c">~ITCSSelectionTool</a> () noexcept=<a class="el" href="../../de/d36/crtt0matchingalg__sbnd_8fcl.html#a6c2384a9e3f7a8c21ae6f762a8ee0ece">default</a></td></tr>
 <tr class="separator:a6eadaba4da9c75bcfacea00e4ae5855c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92c99499165acc5b3a420bbaf48a459"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ac92c99499165acc5b3a420bbaf48a459">DoSelect</a> (const <a class="el" href="../../d5/dbe/structsbn_1_1TrackInfo.html">TrackInfo</a> &amp;t)</td></tr>
@@ -117,6 +126,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a6f649a8c744bbfe54bcccf5e9f2e1e28"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">fAllowT0</a></td></tr>
+<tr class="separator:a6f649a8c744bbfe54bcccf5e9f2e1e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17df894cea8540e96f3044c11c9abd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#af17df894cea8540e96f3044c11c9abd9">fRequireT0</a></td></tr>
+<tr class="separator:af17df894cea8540e96f3044c11c9abd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb7b943525132f57219884d2039c79d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">fInvert</a></td></tr>
 <tr class="separator:afcb7b943525132f57219884d2039c79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad73ce5032310e6be70f65a92a5e08c28"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a></td></tr>
@@ -152,19 +165,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00011">11</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                               :</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">fInvert</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Invert&quot;</span>, <span class="keyword">false</span>)),</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;PreScale&quot;</span>, 1)),</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a>(0) </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="comment">// Set ISelect to a random number</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="comment">// so that events get prescaled uniformly across runs</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      srand (time(NULL)); <span class="comment">// random seed</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> = rand();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">fAllowT0</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::vector&lt;bool&gt;&gt;(<span class="stringliteral">&quot;AllowT0&quot;</span>, {})),</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a46a0f354c78d0e521c7114d62842204c"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">sbn::ITCSSelectionTool::fISelect</a></div><div class="ttdeci">unsigned fISelect</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00042">ITCSSelectionTool.h:42</a></div></div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_afcb7b943525132f57219884d2039c79d"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">sbn::ITCSSelectionTool::fInvert</a></div><div class="ttdeci">bool fInvert</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00040">ITCSSelectionTool.h:40</a></div></div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_ad73ce5032310e6be70f65a92a5e08c28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">sbn::ITCSSelectionTool::fNPreScale</a></div><div class="ttdeci">unsigned fNPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00041">ITCSSelectionTool.h:41</a></div></div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a6f649a8c744bbfe54bcccf5e9f2e1e28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">sbn::ITCSSelectionTool::fAllowT0</a></div><div class="ttdeci">std::vector&lt; bool &gt; fAllowT0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00053">ITCSSelectionTool.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,20 +219,114 @@ Protected Attributes</h2></td></tr>
 
 <p>For external modules to call: run the actual selection. </p>
 
-<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00025">25</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> selected = <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a5cbac1882a6d5cb8c651f94110c15de8">Select</a>(t) == !<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">fInvert</a> <span class="comment">/* implement inversion */</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// update index</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> += selected;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> selected &amp;&amp; (<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> % <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a> == 0) <span class="comment">/* implement prescale */</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a46a0f354c78d0e521c7114d62842204c"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">sbn::ITCSSelectionTool::fISelect</a></div><div class="ttdeci">unsigned fISelect</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00042">ITCSSelectionTool.h:42</a></div></div>
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00027">27</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> has_good_t0 = t.whicht0 &gt;= 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Check if the T0 is allowed</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">fAllowT0</a>.empty()) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span> (t.whicht0 &gt;= 0 &amp;&amp; ((<span class="keywordtype">unsigned</span>)t.whicht0 &gt;= <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">fAllowT0</a>.size() || !<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">fAllowT0</a>[t.whicht0])) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        has_good_t0 = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (!has_good_t0 &amp;&amp; <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#af17df894cea8540e96f3044c11c9abd9">fRequireT0</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> selected = <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a5cbac1882a6d5cb8c651f94110c15de8">Select</a>(t) == !<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">fInvert</a> <span class="comment">/* implement inversion */</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// update index</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> += selected;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> selected &amp;&amp; (<a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> % <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a> == 0) <span class="comment">/* implement prescale */</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a46a0f354c78d0e521c7114d62842204c"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">sbn::ITCSSelectionTool::fISelect</a></div><div class="ttdeci">unsigned fISelect</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00057">ITCSSelectionTool.h:57</a></div></div>
 <div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a5cbac1882a6d5cb8c651f94110c15de8"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a5cbac1882a6d5cb8c651f94110c15de8">sbn::ITCSSelectionTool::Select</a></div><div class="ttdeci">virtual bool Select(const TrackInfo &amp;t)=0</div><div class="ttdoc">For children to implement: Whether to select a given track. </div></div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_afcb7b943525132f57219884d2039c79d"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">sbn::ITCSSelectionTool::fInvert</a></div><div class="ttdeci">bool fInvert</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00040">ITCSSelectionTool.h:40</a></div></div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_ad73ce5032310e6be70f65a92a5e08c28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">sbn::ITCSSelectionTool::fNPreScale</a></div><div class="ttdeci">unsigned fNPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00041">ITCSSelectionTool.h:41</a></div></div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_af17df894cea8540e96f3044c11c9abd9"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#af17df894cea8540e96f3044c11c9abd9">sbn::ITCSSelectionTool::fRequireT0</a></div><div class="ttdeci">bool fRequireT0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00054">ITCSSelectionTool.h:54</a></div></div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a6f649a8c744bbfe54bcccf5e9f2e1e28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a6f649a8c744bbfe54bcccf5e9f2e1e28">sbn::ITCSSelectionTool::fAllowT0</a></div><div class="ttdeci">std::vector&lt; bool &gt; fAllowT0</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00053">ITCSSelectionTool.h:53</a></div></div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_afcb7b943525132f57219884d2039c79d"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#afcb7b943525132f57219884d2039c79d">sbn::ITCSSelectionTool::fInvert</a></div><div class="ttdeci">bool fInvert</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00055">ITCSSelectionTool.h:55</a></div></div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_ad73ce5032310e6be70f65a92a5e08c28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">sbn::ITCSSelectionTool::fNPreScale</a></div><div class="ttdeci">unsigned fNPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00056">ITCSSelectionTool.h:56</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a93c33da5862426cd9043e0e2be4e5a2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbn::ITCSSelectionTool::fInvert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;&#160;</td>
+          <td class="paramname">&quot;Invert&quot;, false</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14d5b7105a872c161aefccb067c2cc4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbn::ITCSSelectionTool::fISelect </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00016">16</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <span class="comment">// Set ISelect to a random number</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="comment">// so that events get prescaled uniformly across runs</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      srand (time(NULL)); <span class="comment">// random seed</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">fISelect</a> = rand();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_a46a0f354c78d0e521c7114d62842204c"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#a46a0f354c78d0e521c7114d62842204c">sbn::ITCSSelectionTool::fISelect</a></div><div class="ttdeci">unsigned fISelect</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00057">ITCSSelectionTool.h:57</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a072ea88e23bcf7c2289c78baf7ef6a77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbn::ITCSSelectionTool::fNPreScale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; unsigned &gt;&#160;</td>
+          <td class="paramname">&quot;PreScale&quot;, 1</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ed225bb71ce0837e4955e21072e12ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbn::ITCSSelectionTool::fRequireT0 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d87/PMTconfigurationExtraction__module_8cc.html#ac33ee765f5ad9f134540bac393721cfe">p.get</a>&lt; bool &gt;&#160;</td>
+          <td class="paramname">&quot;RequireT0&quot;, true</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a3c5cf0a17f194261d346dddf76b9c213"></a>
@@ -253,9 +350,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00034">34</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a>; }</div>
-<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_ad73ce5032310e6be70f65a92a5e08c28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">sbn::ITCSSelectionTool::fNPreScale</a></div><div class="ttdeci">unsigned fNPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00041">ITCSSelectionTool.h:41</a></div></div>
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00047">47</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">fNPreScale</a>; }</div>
+<div class="ttc" id="classsbn_1_1ITCSSelectionTool_html_ad73ce5032310e6be70f65a92a5e08c28"><div class="ttname"><a href="../../de/d85/classsbn_1_1ITCSSelectionTool.html#ad73ce5032310e6be70f65a92a5e08c28">sbn::ITCSSelectionTool::fNPreScale</a></div><div class="ttdeci">unsigned fNPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../db/deb/ITCSSelectionTool_8h_source.html#l00056">ITCSSelectionTool.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,11 +380,33 @@ Protected Attributes</h2></td></tr>
 
 <p>For children to implement: Whether to select a given track. </p>
 
-<p>Implemented in <a class="el" href="../../dc/d4c/classsbn_1_1TrackCaloSkimmerSelectStoppingTrack.html#af01a57c2b164654377fe3a872995a5ed">sbn::TrackCaloSkimmerSelectStoppingTrack</a>, and <a class="el" href="../../da/d64/classsbn_1_1TrackCaloSkimmerSelectAnode2CathodeTrack.html#a437c45cd3405dd200b32a896a9a7bdf0">sbn::TrackCaloSkimmerSelectAnode2CathodeTrack</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/d4c/classsbn_1_1TrackCaloSkimmerSelectStoppingTrack.html#af01a57c2b164654377fe3a872995a5ed">sbn::TrackCaloSkimmerSelectStoppingTrack</a>, <a class="el" href="../../d0/d78/classsbn_1_1TrackCaloSkimmerSelectAllTrack.html#a78ff89f4027e3829fcf6d97c66608a89">sbn::TrackCaloSkimmerSelectAllTrack</a>, and <a class="el" href="../../da/d64/classsbn_1_1TrackCaloSkimmerSelectAnode2CathodeTrack.html#a437c45cd3405dd200b32a896a9a7bdf0">sbn::TrackCaloSkimmerSelectAnode2CathodeTrack</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6f649a8c744bbfe54bcccf5e9f2e1e28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;bool&gt; sbn::ITCSSelectionTool::fAllowT0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00053">53</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="afcb7b943525132f57219884d2039c79d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +425,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00040">40</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00055">55</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +447,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00042">42</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00057">57</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +469,29 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00041">41</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00056">56</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af17df894cea8540e96f3044c11c9abd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sbn::ITCSSelectionTool::fRequireT0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html#l00054">54</a> of file <a class="el" href="../../db/deb/ITCSSelectionTool_8h_source.html">ITCSSelectionTool.h</a>.</p>
 
 </div>
 </div>
