@@ -8,6 +8,7 @@ new files:  sbndaq-artdaq/ArtModules/SBND/softwaretrigger/
              sbndaq-artdaq/ArtModules/SBND/MetricProducer_module.cc
              sbndaq-artdaq-core/Obj/SBND/CRTmetric.h
              sbndaq-artdaq-core/Obj/SBND/CRTmetric.cc
+setup script: ~sbnd/launchdaq_softwaretrig.sh
              
 status: code created Aug 7, 2022.  Needs to be tested on CRT## data by putting producer in front of analysis module in fcl,
          set verbose to true and see that hit counts are sensible.
