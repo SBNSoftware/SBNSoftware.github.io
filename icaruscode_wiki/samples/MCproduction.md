@@ -77,7 +77,7 @@ The action of copying all of the needed files from tape to disk (dCache) is call
 Instructions on how to do that are in the [old ICARUS wiki](https://cdcvs.fnal.gov/redmine/projects/icarus-production/wiki/How_to_pre-stage_files_and_check_if_you_need_to_do_it)
 at https://cdcvs.fnal.gov/redmine/projects/icarus-production/wiki/How_to_pre-stage_files_and_check_if_you_need_to_do_it.
 
-
+Use [this script](scripts/checkRawFilesOnlineStatus.sh) to check how many raw data files are online given the run number and stream name.
 
 ### SAM query setup ################################################################
 
