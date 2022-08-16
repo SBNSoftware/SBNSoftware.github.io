@@ -32,10 +32,12 @@ Help()
    # Display Help
    echo "To run checkRawFilesOnlineStatus.sh script."
    echo
-   echo "Syntax: sh checkRawFilesOnlineStatus.sh [-r -s | -h ]"
+   echo "Syntax: sh checkRawFilesOnlineStatus.sh [-r -s -l -L | -h ]"
    echo "options:"
    echo "r     Enter run number. Default is run 8460."
    echo "s     Enter stream name. Default is 'all'."
+   echo "l     (optional) Enter file to write the list of available files in."
+   echo "L     (optional) Enter file to write the list of unavailable files in."
    echo "h     Print this Help menu."
    echo
 }
@@ -47,9 +49,11 @@ Help()
 # Set variables
 run=8460
 stream=all
+availableList=''
+notAvailableList=''
 
 # Get the options
-while getopts ":hr:s:" option; do
+while getopts ":hr:s:l:L:" option; do
    case $option in
       h) # display Help
          Help
@@ -58,6 +62,10 @@ while getopts ":hr:s:" option; do
          run=$OPTARG;;
       s) # Enter a stream name
          stream=$OPTARG;;
+      l) # Enter a file name
+         availableList=$OPTARG;;
+      L) # Enter a file name
+         notAvailableList=$OPTARG;;
      \?) # Invalid option
          echo "Error: Invalid option"
          exit;;
@@ -65,8 +73,11 @@ while getopts ":hr:s:" option; do
 done
 
 # break run number into subfolders
-r1=`echo ${run:0:2}`
-r2=`echo ${run:2:2}`
+runstr="$(printf '%08d' "$run")"
+r1="${runstr: -8:2}"
+r2="${runstr: -6:2}"
+r3="${runstr: -4:2}"
+r4="${runstr: -2:2}"
 
 # if stream name is specified as all, use wildcard
 if [[ "${stream}" == "all" ]]; then
@@ -81,14 +92,33 @@ if [[ -f "listtotalrawfiles.temp" ]]; then
 fi
 
 # find files with the appropriate run number and stream
-find /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/v1_01_00/icarus_daq_v1_01_00/daq/00/00/${r1}/${r2} -type f -name "data*.root" | awk -Fdata_dl '{print "data_dl"$2}' >& listtotalrawfiles.temp
+ArchiveDir="/pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/v1_01_00/icarus_daq_v1_01_00/daq/${r1}/${r2}/${r3}/${r4}"
+if [[ ! -d "$ArchiveDir" ]]; then
+	echo "The archive directory for run ${run} stream ${stream} does not exist... presumably no file is staged."
+	echo "The directory is: '${ArchiveDir}'."
+	exit 1
+fi
+
+find "$ArchiveDir" -type f -name "data*.root" | awk -Fdata_dl '{print "data_dl"$2}' >& listtotalrawfiles.temp
 
 # count total available files on tape area
 n_total=`wc -l listtotalrawfiles.temp | awk '{print $1}'`
 
+[[ -n "$availableList" ]] && [[ -r "$availableList" ]] && rm -f "$availableList"
+[[ -n "$notAvailableList" ]] && [[ -r "$notAvailableList" ]] && rm -f "$notAvailableList"
+
 # check if files online
 for f in `cat listtotalrawfiles.temp`; do 
-	cat /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/v1_01_00/icarus_daq_v1_01_00/daq/00/00/${r1}/${r2}/".(get)(${f})(locality)" | grep ONLINE >> listofonlinefiles.temp; 
+	cat "${ArchiveDir}/.(get)(${f})(locality)" | grep ONLINE >> listofonlinefiles.temp
+	if [[ $? == 0 ]]; then
+		if [[ -n "$availableList" ]]; then
+			echo "${ArchiveDir}/${f}" >> "$availableList"
+		fi
+	else
+		if [[ -n "$notAvailableList" ]]; then
+			echo "${ArchiveDir}/${f}" >> "$notAvailableList"
+		fi
+	fi
 done
 
 # count how many are online
@@ -101,6 +131,13 @@ fi
 
 # print result
 echo "Online files for run number: ${run} and stream name: ${stream}: ${n_online} files out of available ${n_total} files"
+
+if [[ -n "$availableList" ]]; then
+	echo "List of available files written into '${availableList}'."
+fi
+if [[ -n "$notAvailableList" ]]; then
+	echo "List of unavailable files written into '${notAvailableList}'."
+fi
 
 # clear the temporary output files
 rm listtotalrawfiles.temp
