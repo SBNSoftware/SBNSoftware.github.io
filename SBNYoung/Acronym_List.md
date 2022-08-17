@@ -10,7 +10,7 @@ title: Acronyms
 - **SBN** Short Baseline Neutrino (multi-detector physics program)
 - **SBND** Short Baseline Near Detector
 - **ICARUS** Imaging Cosmics And Rare Underground Signals
-- **FNAL** Fermilab National Accelerator Laboratory
+- **FNAL** Fermi National Accelerator Laboratory, Fermilab
 - **BNB** Booster Neutrino Beam (the Fermilab neutrino beam on which SBN operates)
 - **NuMI** Neutrinos at the Main Injector (a higher energy Fermilab beam which will also provide some off-axis data)
 - **TPC** Time Projection Chamber
