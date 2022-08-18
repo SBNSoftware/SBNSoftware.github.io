@@ -104,6 +104,8 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| ICARUS intime cosmics 1D drift simulation waveform files | MC2022A | v09_51_00 | 217,332 | reco2 | IcarusProd_2022A_Intime_Cosmic_WF_v09_51_00_reco2 | 
+| --- | --- | --- | 204,630 | calib tuple | IcarusProd_2022A_Intime_Cosmic_WF_v09_51_00_calibtuples |
 | NUMI in-time cosmics with Overburden | MC2022A | v09_37_02_04 | 809,054 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_reco2 | 
 | --- | --- | --- | --- | calib tuple | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_calibtuples |
 | --- | --- | v09_37_02_07 | 809,054 | caf | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_07_caf |
