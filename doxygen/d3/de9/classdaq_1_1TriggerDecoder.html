@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8e783789900cd917ffd95ca27bbe935e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd938f81dcff3187deb093f1b1c15dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abdd938f81dcff3187deb093f1b1c15dc">TriggerDecoder</a> (fhicl::ParameterSet const &amp;pset)</td></tr>
 <tr class="separator:abdd938f81dcff3187deb093f1b1c15dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dac31585da20d0dba0ecc1270a7caa6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a0dac31585da20d0dba0ecc1270a7caa6">consumes</a> (art::ConsumesCollector &amp;collector) override</td></tr>
+<tr class="memdesc:a0dac31585da20d0dba0ecc1270a7caa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare to the framework what you expect to read.  <a href="#a0dac31585da20d0dba0ecc1270a7caa6">More...</a><br/></td></tr>
+<tr class="separator:a0dac31585da20d0dba0ecc1270a7caa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af676a9d0e86ea15680193b2fd7ac2499"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#af676a9d0e86ea15680193b2fd7ac2499">produces</a> (art::ProducesCollector &amp;) override</td></tr>
 <tr class="memdesc:af676a9d0e86ea15680193b2fd7ac2499"><td class="mdescLeft">&#160;</td><td class="mdescRight">The space point building should output the hit collection for those hits which combine to form space points - a nice noise filter!  <a href="#af676a9d0e86ea15680193b2fd7ac2499">More...</a><br/></td></tr>
 <tr class="separator:af676a9d0e86ea15680193b2fd7ac2499"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1a51df6523d2e2a84be1e780b30c16a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ae1a51df6523d2e2a84be1e780b30c16a">initializeDataProducts</a> () override</td></tr>
 <tr class="memdesc:ae1a51df6523d2e2a84be1e780b30c16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize any data products the tool will output.  <a href="#ae1a51df6523d2e2a84be1e780b30c16a">More...</a><br/></td></tr>
 <tr class="separator:ae1a51df6523d2e2a84be1e780b30c16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b001af0f862bcfd045494ad9128449"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a68b001af0f862bcfd045494ad9128449">setupRun</a> (art::Run const &amp;run) override</td></tr>
+<tr class="memdesc:a68b001af0f862bcfd045494ad9128449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preparation to process a new run.  <a href="#a68b001af0f862bcfd045494ad9128449">More...</a><br/></td></tr>
+<tr class="separator:a68b001af0f862bcfd045494ad9128449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4868c2de69125f6162435d788284fff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad4868c2de69125f6162435d788284fff">process_fragment</a> (const artdaq::Fragment &amp;fragment) override</td></tr>
 <tr class="memdesc:ad4868c2de69125f6162435d788284fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a set of recob hits, run DBscan to form 3D clusters.  <a href="#ad4868c2de69125f6162435d788284fff">More...</a><br/></td></tr>
 <tr class="separator:ad4868c2de69125f6162435d788284fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,12 +154,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a8eddb0efa24a356243683486f43e69 inherit pub_methods_classdaq_1_1IDecoder"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a1a8eddb0efa24a356243683486f43e69">~IDecoder</a> () noexcept=<a class="el" href="../../de/d36/crtt0matchingalg__sbnd_8fcl.html#a6c2384a9e3f7a8c21ae6f762a8ee0ece">default</a></td></tr>
 <tr class="memdesc:a1a8eddb0efa24a356243683486f43e69 inherit pub_methods_classdaq_1_1IDecoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual Destructor.  <a href="#a1a8eddb0efa24a356243683486f43e69">More...</a><br/></td></tr>
 <tr class="separator:a1a8eddb0efa24a356243683486f43e69 inherit pub_methods_classdaq_1_1IDecoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d2d55970b02c9ee9235281e7269fd4c inherit pub_methods_classdaq_1_1IDecoder"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a2d2d55970b02c9ee9235281e7269fd4c">consumes</a> (art::ConsumesCollector &amp;)</td></tr>
-<tr class="memdesc:a2d2d55970b02c9ee9235281e7269fd4c inherit pub_methods_classdaq_1_1IDecoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare to the framework what you expect to read.  <a href="#a2d2d55970b02c9ee9235281e7269fd4c">More...</a><br/></td></tr>
-<tr class="separator:a2d2d55970b02c9ee9235281e7269fd4c inherit pub_methods_classdaq_1_1IDecoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7606211f66e5bce6a293a52871fdba inherit pub_methods_classdaq_1_1IDecoder"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a8f7606211f66e5bce6a293a52871fdba">setupRun</a> (art::Run const &amp;run)</td></tr>
-<tr class="memdesc:a8f7606211f66e5bce6a293a52871fdba inherit pub_methods_classdaq_1_1IDecoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preparation to process a new run.  <a href="#a8f7606211f66e5bce6a293a52871fdba">More...</a><br/></td></tr>
-<tr class="separator:a8f7606211f66e5bce6a293a52871fdba inherit pub_methods_classdaq_1_1IDecoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a604fd18909452f272134d92b68eb5678 inherit pub_methods_classdaq_1_1IDecoder"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a604fd18909452f272134d92b68eb5678">setupEvent</a> (art::Event const &amp;event)</td></tr>
 <tr class="memdesc:a604fd18909452f272134d92b68eb5678 inherit pub_methods_classdaq_1_1IDecoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preparation to process a new event.  <a href="#a604fd18909452f272134d92b68eb5678">More...</a><br/></td></tr>
 <tr class="separator:a604fd18909452f272134d92b68eb5678 inherit pub_methods_classdaq_1_1IDecoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +174,8 @@ Private Types</h2></td></tr>
 <tr class="separator:aa33d247db9f4b8d19c55ffe164b85252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e3ba0b3f5b2b8215869527c5816ff1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ab6e3ba0b3f5b2b8215869527c5816ff1">ExtraInfoPtr</a> = std::unique_ptr&lt; <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html">sbn::ExtraTriggerInfo</a> &gt;</td></tr>
 <tr class="separator:ab6e3ba0b3f5b2b8215869527c5816ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1f59738f3f3b740bf32ffe63933e76"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#aad1f59738f3f3b740bf32ffe63933e76">microseconds</a> = <a class="el" href="../../d3/d63/namespaceutil_1_1quantities.html#ab25cb1eb618bd67516b664f63c2dc1a9">util::quantities::microsecond</a></td></tr>
+<tr class="separator:aad1f59738f3f3b740bf32ffe63933e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd2244a1c5b9044d5a5f17386e06403"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a2bd2244a1c5b9044d5a5f17386e06403">nanoseconds</a> = <a class="el" href="../../d3/d63/namespaceutil_1_1quantities.html#a601d5581a465f2bed2bf3c294178ca8c">util::quantities::nanosecond</a></td></tr>
 <tr class="separator:a2bd2244a1c5b9044d5a5f17386e06403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021096237e2cce66ba40f5d86ffeb092"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a021096237e2cce66ba40f5d86ffeb092">TriggerCollection</a> = std::vector&lt; <a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html">raw::ExternalTrigger</a> &gt;</td></tr>
@@ -224,6 +226,9 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:ac1231062bed968688de20bdf9c1cc4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae143f1c658b87ed735fec56ad2b9bae2"><td class="memItemLeft" align="right" valign="top">static std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ae143f1c658b87ed735fec56ad2b9bae2">encodeLVDSbits</a> (short int cryostat, short int connector, std::uint64_t connectorWord)</td></tr>
 <tr class="separator:ae143f1c658b87ed735fec56ad2b9bae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d596c5c4873fb809fe59da9bc9f3e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414">sim::BeamType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ab3d596c5c4873fb809fe59da9bc9f3e1">simGateType</a> (sbn::triggerSource <a class="el" href="../../d6/dda/condor__stop__project_8sh.html#a97e1f07713f796fdf1ef266b43236328">source</a>)</td></tr>
+<tr class="memdesc:ab3d596c5c4873fb809fe59da9bc9f3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the beam type corresponding to the specified trigger <code>source</code>.  <a href="#ab3d596c5c4873fb809fe59da9bc9f3e1">More...</a><br/></td></tr>
+<tr class="separator:ab3d596c5c4873fb809fe59da9bc9f3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -239,16 +244,23 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5e838e83df2a18e9ff7cd0388dcca21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#aa33d247db9f4b8d19c55ffe164b85252">BeamGateInfoPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a5e838e83df2a18e9ff7cd0388dcca21f">fBeamGateInfo</a></td></tr>
 <tr class="separator:a5e838e83df2a18e9ff7cd0388dcca21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a00430c2dc4e28f12dfa8ea308d56c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a21a00430c2dc4e28f12dfa8ea308d56c">fDiagnosticOutput</a></td></tr>
+<tr class="memdesc:a21a00430c2dc4e28f12dfa8ea308d56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces large number of diagnostic messages, use with caution!  <a href="#a21a00430c2dc4e28f12dfa8ea308d56c">More...</a><br/></td></tr>
 <tr class="separator:a21a00430c2dc4e28f12dfa8ea308d56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abde66a924d44fce506569889299eafb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">fDebug</a></td></tr>
+<tr class="memdesc:abde66a924d44fce506569889299eafb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this for debugging this tool.  <a href="#abde66a924d44fce506569889299eafb6">More...</a><br/></td></tr>
 <tr class="separator:abde66a924d44fce506569889299eafb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0382129fad62e7a4c30f053586bf8405"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a0382129fad62e7a4c30f053586bf8405">fLastEvent</a> = 0</td></tr>
 <tr class="separator:a0382129fad62e7a4c30f053586bf8405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817e49833aff7c91de10d2827f20e2d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a817e49833aff7c91de10d2827f20e2d5">fDetTimings</a></td></tr>
 <tr class="memdesc:a817e49833aff7c91de10d2827f20e2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detector clocks and timings.  <a href="#a817e49833aff7c91de10d2827f20e2d5">More...</a><br/></td></tr>
 <tr class="separator:a817e49833aff7c91de10d2827f20e2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf86fbb29717e26da6a1d4ee51f49162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#acf86fbb29717e26da6a1d4ee51f49162">fOffset</a></td></tr>
-<tr class="separator:acf86fbb29717e26da6a1d4ee51f49162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ee51b3a1c5eda16d9fc85ffb435639"><td class="memItemLeft" align="right" valign="top">art::InputTag&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">fTriggerConfigTag</a></td></tr>
+<tr class="memdesc:ad0ee51b3a1c5eda16d9fc85ffb435639"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/ddc/structData.html">Data</a> product with hardware trigger configuration.  <a href="#ad0ee51b3a1c5eda16d9fc85ffb435639">More...</a><br/></td></tr>
+<tr class="separator:ad0ee51b3a1c5eda16d9fc85ffb435639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac626792ba95f3685ed1ef5aac6bceb86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a> <br class="typebreak"/>
+const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ac626792ba95f3685ed1ef5aac6bceb86">fTriggerConfiguration</a> = nullptr</td></tr>
+<tr class="memdesc:ac626792ba95f3685ed1ef5aac6bceb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached pointer to the trigger configuration of the current run, if any.  <a href="#ac626792ba95f3685ed1ef5aac6bceb86">More...</a><br/></td></tr>
+<tr class="separator:ac626792ba95f3685ed1ef5aac6bceb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -297,7 +309,68 @@ Static Private Attributes</h2></td></tr>
 <p>Besides the main data product (empty instance name) an additional <code>std::vector&lt;<a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html">raw::ExternalTrigger</a>&gt;</code> data product with instance name <code>"previous"</code> is also produced, which relays the same kind of information but for the <em>previous</em> trigger. This information also comes from the trigger DAQ. If no previous trigger is available, this collection will be empty.</p>
 <h2>Timestamps and corrections </h2>
 <p>The reference trigger time is driven by the trigger fragment time, which is expected to have been derived from the actual trigger time from the White Rabbit system properly corrected to UTC by the board reader.</p>
-<p>All absolute timestamps are corrected to be on that same scale. The absolute timestamps related to the White Rabbit time are added an offset to achieve this correction; this offset is stored in the data product (<code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ac26a97a55039b8729f5ffd8fc9733b81" title="Correction added to the White Rabbit time to get the trigger time. ">sbn::ExtraTriggerInfo::WRtimeToTriggerTime</a></code>). </p>
+<p>All absolute timestamps are corrected to be on that same scale. The absolute timestamps related to the White Rabbit time are added an offset to achieve this correction; this offset is stored in the data product (<code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ac26a97a55039b8729f5ffd8fc9733b81" title="Correction added to the White Rabbit time to get the trigger time. ">sbn::ExtraTriggerInfo::WRtimeToTriggerTime</a></code>).</p>
+<p>Produces:</p>
+<ul>
+<li><code>std::vector&lt;<a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html">raw::ExternalTrigger</a>&gt;</code> containing the absolute trigger time stamp from the White Rabbit system, and a trigger count; it always includes a single entry (zero <em>might</em> be supported).</li>
+<li><p class="startli"><code>std::vector&lt;<a class="el" href="../../dd/d0b/classraw_1_1Trigger.html">raw::Trigger</a>&gt;</code> containing:</p>
+<ul>
+<li><code>TriggerTime()</code>: the relative time of the trigger as reported in the White Rabbit timestamp, measured in the <a class="el" href="../../d5/dca/classicarus_1_1trigger_1_1DumpTriggerGateData.html#DetectorClocksElectronicsTime">electronics time scale</a> (for ICARUS it will always be <code><a class="el" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html#a97752c751ce6873c94d29ece8fcc215f" title="Trigger electronics clock time in [us]. ">detinfo::DetectorClocksData::TriggerTime()</a></code>).</li>
+<li><code>BeamGateTime()</code>: relative time of the announced arrival of the beam, also in <a class="el" href="../../d5/dca/classicarus_1_1trigger_1_1DumpTriggerGateData.html#DetectorClocksElectronicsTime">electronics time scale</a>.</li>
+<li><code>TriggerCount()</code>: the trigger count from the beginning of the run.</li>
+<li><code>TriggerBits()</code>: includes the beam(s) with an open gate when the trigger happened (currently only one beam gate per trigger); definitions are in <code>sbn::beamType</code> namespace.</li>
+</ul>
+<p class="startli">It always includes a single entry (zero <em>might</em> be supported).</p>
+</li>
+<li><code>std::vector&lt;<a class="el" href="../../dc/d42/classsim_1_1BeamGateInfo.html">sim::BeamGateInfo</a>&gt;</code> containing information on the "main" beam gate associated to each trigger (a way to say that if by any chance there are more than one bits set for the trigger, this gate will pick only one of them):<ul>
+<li><code>Start()</code>: relative time of the announced arrival of the beam, in <a class="el" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html#DetectorClocksSimulationTime">simulation time scale</a>.</li>
+<li><code>Width()</code>: duration of the gate, in nanoseconds; read from trigger configuration if specified (<code>TrigConfigLabel</code>), set to <code>0</code> otherwise.</li>
+<li><code>BeamType()</code>: the type of the beam gate being described (BNB, NuMI).</li>
+</ul>
+</li>
+<li><p class="startli"><code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html" title="Additional information on trigger. ">sbn::ExtraTriggerInfo</a></code>: the most complete collection of information, duplicating also some from the other data products. Note that differently from the usual, this is a <em>single object</em>, not a collection; also, this data product has no instance name. The information already available includes:</p>
+<ul>
+<li><code>sourceType</code>: the type of beam or trigger source, a value from <code>sbn::triggerSource</code> (equivalent to <code><a class="el" href="../../dd/d0b/classraw_1_1Trigger.html#a9b37b0218222430596b968c6448cdde2" title="Trigger Bits. ">raw::Trigger::TriggerBits()</a></code>, but in the form of an enumerator rather than a bit mask). Also called gate type.</li>
+<li><code>triggerTimestamp</code>: same as <code><a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html#a910a7b1b3ca0397e77c000f2a4fa61a2">raw::ExternalTrigger::GetTrigTime()</a></code> (nanoseconds from the Epoch, Coordinated Universal Time).</li>
+<li><code>beamGateTimestamp</code>: absolute time of the beam gate opening as reported by the trigger hardware, directly comparable with <code>triggerTimestamp</code> (same scale and unit).</li>
+<li><code>enableGateTimestamp</code>: absolute time of the enable gate opening as reported by the trigger hardware, directly comparable with <code>triggerTimestamp</code> (same scale and unit). This is the gate that enables the generation of trigger primitives and the off-spill readout of PMT. Its duration can be found in the trigger configuration data product (<code><a class="el" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a></code>).</li>
+<li><code>triggerID</code>: same as <code><a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html#a0b508c9f5442ff06c04bad30bf8852b0">raw::ExternalTrigger::GetTrigID()</a></code>. Should match the event number.</li>
+<li><code>gateID</code>: the count of gates since the beginning of the run, as reported by the trigger hardware.</li>
+<li><code>gateCountFromPreviousTrigger</code>: number of gates since the last trigger: specifically, if this trigger is e.g. from off-beam BNB gate, this is the number of off-beam BNB gates from the last off-beam BNB trigger (minimum number is <code>1</code>, since that gate is included).</li>
+<li><code>previousTriggerTimestamp</code>: absolute timestamp of the previous trigger from this source. For example, if this trigger is from an off-beam BNB gate, this represents the previous off-beam BNB trigger.</li>
+<li><code>gateCount</code>: total number of gates of this type (triggered or not) from the beginning of the run (minimum <code>1</code> since this one is included). For example, if this trigger is from an off-beam BNB gate, this is the number of off-beam BNB gates from the beginning of the run.</li>
+<li><code>triggerCount</code>: total number of triggers from gates of this type from the beginning of the run (minimum <code>1</code> since this one is included). For example, if this trigger is from an off-beam BNB gate, this is the number of off-beam BNB triggers from the beginning of the run.</li>
+<li><code>anyTriggerCountFromPreviousTrigger</code>: number of triggers that occurred since the last trigger of this time (the one with timestamp <code>previousTriggerTimestamp</code>). For example, if this trigger is from an off-beam BNB gate, this is the number of triggers from any gate (including also e.g. off-beam NuMI, BNB, calibration...) that occurred from the previous off-beam BNB trigger.</li>
+<li><code>anyGateCountFromAnyPreviousTrigger</code>: how many gates have passed since the last trigger (reported by <code>anyPreviousTriggerTimestamp</code>). The minimum value is <code>1</code>.</li>
+<li><code>anyPreviousTriggerTimestamp</code>: absolute timestamp of the previous trigger (from any source). For example, if this trigger is from an off-beam BNB gate, and the previous was from a NuMI gate, this represents that previous (NuMI) trigger.</li>
+<li><code>anyPreviousTriggerSourceType</code>: the type of gate of the previous trigger (the one reported by <code>anyPreviousTriggerTimestamp</code>).</li>
+<li><code>WRtimeToTriggerTime</code> (nanoseconds): correction added to the GPS/White Rabbit time to obtain the trigger timestamp (normally it's the conversion from TAI to NTP timestamps).</li>
+<li><code>triggerLocationBits</code>: whether the trigger came from the east or west cryostat (currently the triggers combine the two opposite PMT walls, so there is no TPC-level granularity).</li>
+<li><code>cryostats</code>: information per cryostat (east first, then west). Note however that only the cryostats that are mentioned in <code>triggerLocationBits</code> have the information filled.<ul>
+<li><code>triggerCount</code>: number of triggers in this cryostat fired during the trigger window; only the first one becomes the global trigger, but we still keep the count of how many happen. Its value is <code>0</code> when trigger happened from elsewhere.</li>
+<li><p class="startli"><code>LVDSstatus</code>: information per PMT wall (i.e. TPC; east first, then west) of the LVDS signals of the discriminated PMT pairs at the time of the global trigger. All bits are <code>0</code> when trigger happened elsewhere. Otherwise, the encoding is currently implemented in terms of hardware connectors as follows:</p>
+<ul>
+<li>east wall: <code>00&lt;C3P2&gt;&lt;C3P1&gt;&lt;C3P0&gt;00&lt;C2P2&gt;&lt;C2P1&gt;&lt;C2P0&gt;</code></li>
+<li>west wall: <code>00&lt;C1P2&gt;&lt;C1P1&gt;&lt;C1P0&gt;00&lt;C0P2&gt;&lt;C0P1&gt;&lt;C0P0&gt;</code></li>
+</ul>
+<p class="startli">For the expected matching with PMT, see the documentation of <code><a class="el" href="../../d5/df1/structsbn_1_1ExtraTriggerInfo_1_1CryostatInfo.html#ae75911cf0b6b1e5e6bcbeb82912adc02" title="Status of LVDS signals from PMT pairs at the time of the trigger. ">sbn::ExtraTriggerInfo::CryostatInfo::LVDSstatus</a></code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="startli">Information may be missing. If a count is not available, its value is set to <code>0</code> (which is an invalid value because their valid range starts with <code>1</code> since they include the current event), and if a timestamp is not available it is set to <code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a5a6f2485167e39b58921ce2a22c8aada" title="Special timestamp value indicating the absence of timestamp. ">sbn::ExtraTriggerInfo::NoTimestamp</a></code>; these two conditions can be checked with static methods <code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ad1f2eb58694b134eeab9baface9ac8fd" title="Returns whether the timestamp ts is valid (i.e. is not NoTimestamp). ">sbn::ExtraTriggerInfo::isValidTimestamp()</a></code> and <code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#a7db676b21173cf54584eb697a9c6d169" title="Returns whether the count is valid (i.e. is not 0). ">sbn::ExtraTriggerInfo::isValidCount()</a></code> respectively.</p>
+</li>
+</ul>
+<p>Besides the main data product (empty instance name) an additional <code>std::vector&lt;<a class="el" href="../../d8/dcd/classraw_1_1ExternalTrigger.html">raw::ExternalTrigger</a>&gt;</code> data product with instance name <code>"previous"</code> is also produced, which relays the same kind of information but for the <em>previous</em> trigger. This information also comes from the trigger DAQ. If no previous trigger is available, this collection will be empty.</p>
+<h2>Timestamps and corrections </h2>
+<p>The reference trigger time is driven by the trigger fragment time, which is expected to have been derived from the actual trigger time from the White Rabbit system properly corrected to UTC by the board reader.</p>
+<p>All absolute timestamps are corrected to be on that same scale. The absolute timestamps related to the White Rabbit time are added an offset to achieve this correction; this offset is stored in the data product (<code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ac26a97a55039b8729f5ffd8fc9733b81" title="Correction added to the White Rabbit time to get the trigger time. ">sbn::ExtraTriggerInfo::WRtimeToTriggerTime</a></code>).</p>
+<h2>Configuration </h2>
+<ul>
+<li><code>TrigConfigLabel</code> (input tag, mandatory): tag of the trigger configuration data product (see <code><a class="el" href="../../d2/da0/classicarus_1_1TriggerConfigurationExtractor.html" title="Class to extract PMT readout board configuration. ">icarus::TriggerConfigurationExtractor</a></code> module) to be used. Specifying its tag is mandatory, but if it is explicitly specified empty, the decoder will try to work around its absence.</li>
+<li><code>DiagnosticOutput</code> (flag, default: <code>false</code>): prints on console trigger data diagnostics (including a full dump of the parsed content).</li>
+<li><code>Debug</code> (flag, default: <code>false</code>): prints on console decoding debug information, including a dump of the trigger data fragment. </li>
+</ul>
 
 <p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00130">130</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -341,7 +414,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00147">147</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00231">231</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -385,7 +458,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00148">148</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00232">232</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -429,7 +502,29 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00149">149</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00233">233</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad1f59738f3f3b740bf32ffe63933e76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#aad1f59738f3f3b740bf32ffe63933e76">daq::TriggerDecoder::microseconds</a> =  <a class="el" href="../../d3/d63/namespaceutil_1_1quantities.html#ab25cb1eb618bd67516b664f63c2dc1a9">util::quantities::microsecond</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00214">214</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -473,7 +568,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00133">133</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00215">215</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -517,7 +612,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00146">146</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00230">230</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -561,7 +656,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00144">144</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00228">228</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -605,7 +700,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00145">145</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00229">229</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -706,8 +801,8 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">fDebug</a> = pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Debug&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
-<div class="ttc" id="classdaq_1_1TriggerDecoder_html_a21a00430c2dc4e28f12dfa8ea308d56c"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a21a00430c2dc4e28f12dfa8ea308d56c">daq::TriggerDecoder::fDiagnosticOutput</a></div><div class="ttdeci">bool fDiagnosticOutput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00154">TriggerDecoder_tool.cc:154</a></div></div>
-<div class="ttc" id="classdaq_1_1TriggerDecoder_html_abde66a924d44fce506569889299eafb6"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">daq::TriggerDecoder::fDebug</a></div><div class="ttdeci">bool fDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00155">TriggerDecoder_tool.cc:155</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_a21a00430c2dc4e28f12dfa8ea308d56c"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a21a00430c2dc4e28f12dfa8ea308d56c">daq::TriggerDecoder::fDiagnosticOutput</a></div><div class="ttdeci">bool fDiagnosticOutput</div><div class="ttdoc">Produces large number of diagnostic messages, use with caution! </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00154">TriggerDecoder_tool.cc:154</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_abde66a924d44fce506569889299eafb6"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">daq::TriggerDecoder::fDebug</a></div><div class="ttdeci">bool fDebug</div><div class="ttdoc">Use this for debugging this tool. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00155">TriggerDecoder_tool.cc:155</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -743,6 +838,42 @@ Static Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a37ba6c45d7338cbe5cd1ce33b1309ea8">daq::IDecoder</a>.</p>
 
+</div>
+</div>
+<a class="anchor" id="a0dac31585da20d0dba0ecc1270a7caa6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daq::TriggerDecoder::consumes </td>
+          <td>(</td>
+          <td class="paramtype">art::ConsumesCollector &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declare to the framework what you expect to read. </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a2d2d55970b02c9ee9235281e7269fd4c">daq::IDecoder</a>.</p>
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00311">311</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                                               {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    collector.consumes&lt;<a class="code" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a>, art::InRun&gt;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      (<a class="code" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">fTriggerConfigTag</a>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  }</div>
+<div class="ttc" id="structicarus_1_1TriggerConfiguration_html"><div class="ttname"><a href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/TriggerConfiguration_8h_source.html#l00031">TriggerConfiguration.h:31</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_ad0ee51b3a1c5eda16d9fc85ffb435639"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">daq::TriggerDecoder::fTriggerConfigTag</a></div><div class="ttdeci">art::InputTag fTriggerConfigTag</div><div class="ttdoc">Data product with hardware trigger configuration. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00239">TriggerDecoderV2_tool.cc:239</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae143f1c658b87ed735fec56ad2b9bae2"></a>
@@ -784,25 +915,25 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Encodes the <code>connectorWord</code> LVDS bits from the specified <code>cryostat</code> and <code>connector</code> into the format required by <code><a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html" title="Additional information on trigger. ">sbn::ExtraTriggerInfo</a></code>. </p>
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00650">650</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="comment">/*                                                     </span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment">     * Encoding of the LVDS channels from the trigger:</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">     * * east wall:  `00&lt;C0P2&gt;&lt;C0P1&gt;&lt;C0P0&gt;00&lt;C1P2&gt;&lt;C1P1&gt;&lt;C1P0&gt;`</span></div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="comment">     * * west wall:  `00&lt;C2P2&gt;&lt;C2P1&gt;&lt;C2P0&gt;00&lt;C3P2&gt;&lt;C3P1&gt;&lt;C3P0&gt;`                                                                               </span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment">     * The prescription from `sbn::ExtraTriggerInfo` translates into:</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment">     * * east wall:  `00&lt;C3P2&gt;&lt;C3P1&gt;&lt;C3P0&gt;00&lt;C2P2&gt;&lt;C2P1&gt;&lt;C2P0&gt;`</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment">     * * west wall:  `00&lt;C1P2&gt;&lt;C1P1&gt;&lt;C1P0&gt;00&lt;C0P2&gt;&lt;C0P1&gt;&lt;C0P0&gt;`                                                                               </span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment">     * Therefore, the two 32-bit half-words need to be swapped</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment">     * This holds for both cryostats, and both walls.  </span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    std::uint64_t lsw = connectorWord &amp; 0xFFFFFFFFULL;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    std::uint64_t msw = connectorWord &gt;&gt; 32ULL;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    assert(connectorWord == ((msw &lt;&lt; 32ULL) | lsw));</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    std::swap(lsw, msw);</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keywordflow">return</span> (msw &lt;&lt; 32ULL) | lsw;</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  } <span class="comment">// TriggerDecoder::encodeLVDSbits()       </span></div>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00752">752</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  {</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">     * Encoding of the LVDS channels from the trigger:</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">     * * east wall:  `00&lt;C0P2&gt;&lt;C0P1&gt;&lt;C0P0&gt;00&lt;C1P2&gt;&lt;C1P1&gt;&lt;C1P0&gt;`</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">     * * west wall:  `00&lt;C2P2&gt;&lt;C2P1&gt;&lt;C2P0&gt;00&lt;C3P2&gt;&lt;C3P1&gt;&lt;C3P0&gt;`</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="comment">     * The prescription from `sbn::ExtraTriggerInfo` translates into:</span></div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">     * * east wall:  `00&lt;C3P2&gt;&lt;C3P1&gt;&lt;C3P0&gt;00&lt;C2P2&gt;&lt;C2P1&gt;&lt;C2P0&gt;`</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="comment">     * * west wall:  `00&lt;C1P2&gt;&lt;C1P1&gt;&lt;C1P0&gt;00&lt;C0P2&gt;&lt;C0P1&gt;&lt;C0P0&gt;`</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="comment">     * Therefore, the two 32-bit half-words need to be swapped</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="comment">     * This holds for both cryostats, and both walls.  </span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    std::uint64_t lsw = connectorWord &amp; 0xFFFFFFFFULL;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    std::uint64_t msw = connectorWord &gt;&gt; 32ULL;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    assert(connectorWord == ((msw &lt;&lt; 32ULL) | lsw));</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    std::swap(lsw, msw);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="keywordflow">return</span> (msw &lt;&lt; 32ULL) | lsw;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  } <span class="comment">// TriggerDecoder::encodeLVDSbits()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1027,8 +1158,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>Combines second and nanosecond counts into a 64-bit timestamp. </p>
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00197">197</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> * 1000000000ULL + ns; }</div>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00282">282</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a> * 1000000000ULL + ns; }</div>
 <div class="ttc" id="file__to__url_8sh_html_a096ad3d3698082826189c839d7a6e46f"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a096ad3d3698082826189c839d7a6e46f">s</a></div><div class="ttdeci">then echo File list $list not found else cat $list while read file do echo $file sed s</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00060">file_to_url.sh:60</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1484,7 +1615,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  }</div>
 <div class="ttc" id="classicarus_1_1details_1_1KeyedCSVparser_html"><div class="ttname"><a href="../../dc/d0b/classicarus_1_1details_1_1KeyedCSVparser.html">icarus::details::KeyedCSVparser</a></div><div class="ttdoc">Parser to fill a KeyValuesData structure out of a character buffer. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d6f/KeyedCSVparser_8h_source.html#l00416">KeyedCSVparser.h:416</a></div></div>
 <div class="ttc" id="classdaq_1_1TriggerDecoder_html_a817e49833aff7c91de10d2827f20e2d5"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a817e49833aff7c91de10d2827f20e2d5">daq::TriggerDecoder::fDetTimings</a></div><div class="ttdeci">detinfo::DetectorTimings const fDetTimings</div><div class="ttdoc">Detector clocks and timings. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00162">TriggerDecoder_tool.cc:162</a></div></div>
-<div class="ttc" id="classdaq_1_1TriggerDecoder_html_a21a00430c2dc4e28f12dfa8ea308d56c"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a21a00430c2dc4e28f12dfa8ea308d56c">daq::TriggerDecoder::fDiagnosticOutput</a></div><div class="ttdeci">bool fDiagnosticOutput</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00154">TriggerDecoder_tool.cc:154</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_a21a00430c2dc4e28f12dfa8ea308d56c"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a21a00430c2dc4e28f12dfa8ea308d56c">daq::TriggerDecoder::fDiagnosticOutput</a></div><div class="ttdeci">bool fDiagnosticOutput</div><div class="ttdoc">Produces large number of diagnostic messages, use with caution! </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00154">TriggerDecoder_tool.cc:154</a></div></div>
 <div class="ttc" id="structdaq_1_1TriggerDecoder_1_1TriggerGateTypes_html_a1e27cf5dac412e582522b310caaeb424"><div class="ttname"><a href="../../d9/d52/structdaq_1_1TriggerDecoder_1_1TriggerGateTypes.html#a1e27cf5dac412e582522b310caaeb424">daq::TriggerDecoder::TriggerGateTypes::OffbeamNuMI</a></div><div class="ttdeci">static constexpr int OffbeamNuMI</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00184">TriggerDecoder_tool.cc:184</a></div></div>
 <div class="ttc" id="classdaq_1_1TriggerDecoder_html_a2f8165f55dc22bec8870de0dea92e2a3"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a2f8165f55dc22bec8870de0dea92e2a3">daq::TriggerDecoder::NuMIgateDuration</a></div><div class="ttdeci">static constexpr nanoseconds NuMIgateDuration</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00188">TriggerDecoder_tool.cc:188</a></div></div>
 <div class="ttc" id="structdaq_1_1TriggerDecoder_1_1TriggerGateTypes_html_a3288e715e19a257f47bcf58260c837f2"><div class="ttname"><a href="../../d9/d52/structdaq_1_1TriggerDecoder_1_1TriggerGateTypes.html#a3288e715e19a257f47bcf58260c837f2">daq::TriggerDecoder::TriggerGateTypes::BNB</a></div><div class="ttdeci">static constexpr int BNB</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00181">TriggerDecoder_tool.cc:181</a></div></div>
@@ -1496,7 +1627,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="classdaq_1_1TriggerDecoder_html_a86034880037588b67d0f4a3f94a719c6"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a86034880037588b67d0f4a3f94a719c6">daq::TriggerDecoder::fTriggerExtra</a></div><div class="ttdeci">ExtraInfoPtr fTriggerExtra</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00152">TriggerDecoder_tool.cc:152</a></div></div>
 <div class="ttc" id="classdaq_1_1TriggerDecoder_html_a44b38012c59096e6d48555e83638450e"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#a44b38012c59096e6d48555e83638450e">daq::TriggerDecoder::makeTriggerFragment</a></div><div class="ttdeci">icarus::ICARUSTriggerUDPFragment makeTriggerFragment(artdaq::Fragment const &amp;fragment) const </div><div class="ttdoc">Creates a ICARUSTriggerInfo from a generic fragment. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00246">TriggerDecoder_tool.cc:246</a></div></div>
 <div class="ttc" id="namespacesbn_1_1bits_html_a3b8fd0787ccd1963c6aa5c8bf17f4290"><div class="ttname"><a href="../../de/d90/namespacesbn_1_1bits.html#a3b8fd0787ccd1963c6aa5c8bf17f4290">sbn::bits::mask</a></div><div class="ttdeci">constexpr mask_t&lt; EnumType &gt; mask(EnumType bit, OtherBits...otherBits)</div><div class="ttdoc">Returns a mask with all specified bits set. </div></div>
-<div class="ttc" id="classdaq_1_1TriggerDecoder_html_abde66a924d44fce506569889299eafb6"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">daq::TriggerDecoder::fDebug</a></div><div class="ttdeci">bool fDebug</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00155">TriggerDecoder_tool.cc:155</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_abde66a924d44fce506569889299eafb6"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#abde66a924d44fce506569889299eafb6">daq::TriggerDecoder::fDebug</a></div><div class="ttdeci">bool fDebug</div><div class="ttdoc">Use this for debugging this tool. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00155">TriggerDecoder_tool.cc:155</a></div></div>
 <div class="ttc" id="structdaq_1_1TriggerDecoder_1_1TriggerGateTypes_html_ac0a0aae06f63094c8ae088bff2bdfa49"><div class="ttname"><a href="../../d9/d52/structdaq_1_1TriggerDecoder_1_1TriggerGateTypes.html#ac0a0aae06f63094c8ae088bff2bdfa49">daq::TriggerDecoder::TriggerGateTypes::NuMI</a></div><div class="ttdeci">static constexpr int NuMI</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00182">TriggerDecoder_tool.cc:182</a></div></div>
 <div class="ttc" id="classdetinfo_1_1DetectorTimings_html_af7a0488ce02ed69e706dcbd92f0ae1a2"><div class="ttname"><a href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#af7a0488ce02ed69e706dcbd92f0ae1a2">detinfo::DetectorTimings::toSimulationTime</a></div><div class="ttdeci">simulation_time toSimulationTime(FromTime time) const </div><div class="ttdoc">Converts a time point into simulation time scale. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00495">DetectorTimings.h:495</a></div></div>
 <div class="ttc" id="classdetinfo_1_1DetectorTimings_html_a9f53be8d5c5437cb6a268b3509682183"><div class="ttname"><a href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a9f53be8d5c5437cb6a268b3509682183">detinfo::DetectorTimings::TriggerTime</a></div><div class="ttdeci">electronics_time TriggerTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00331">DetectorTimings.h:331</a></div></div>
@@ -1623,6 +1754,96 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a68b001af0f862bcfd045494ad9128449"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daq::TriggerDecoder::setupRun </td>
+          <td>(</td>
+          <td class="paramtype">art::Run const &amp;&#160;</td>
+          <td class="paramname"><em>run</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Preparation to process a new run. </p>
+<p>To be called on every <em>art</em> run transition. </p>
+
+<p>Reimplemented from <a class="el" href="../../db/d88/classdaq_1_1IDecoder.html#a8f7606211f66e5bce6a293a52871fdba">daq::IDecoder</a>.</p>
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00403">403</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                                 {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ac626792ba95f3685ed1ef5aac6bceb86">fTriggerConfiguration</a> = <a class="code" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">fTriggerConfigTag</a>.empty()</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      ? <span class="keyword">nullptr</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      : &amp;(run.getProduct&lt;<a class="code" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a>&gt;(<a class="code" href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">fTriggerConfigTag</a>))</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      ;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  } <span class="comment">// TriggerDecoder::setupRun()</span></div>
+<div class="ttc" id="structicarus_1_1TriggerConfiguration_html"><div class="ttname"><a href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8b/TriggerConfiguration_8h_source.html#l00031">TriggerConfiguration.h:31</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_ac626792ba95f3685ed1ef5aac6bceb86"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ac626792ba95f3685ed1ef5aac6bceb86">daq::TriggerDecoder::fTriggerConfiguration</a></div><div class="ttdeci">icarus::TriggerConfiguration const * fTriggerConfiguration</div><div class="ttdoc">Cached pointer to the trigger configuration of the current run, if any. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00248">TriggerDecoderV2_tool.cc:248</a></div></div>
+<div class="ttc" id="classdaq_1_1TriggerDecoder_html_ad0ee51b3a1c5eda16d9fc85ffb435639"><div class="ttname"><a href="../../d3/de9/classdaq_1_1TriggerDecoder.html#ad0ee51b3a1c5eda16d9fc85ffb435639">daq::TriggerDecoder::fTriggerConfigTag</a></div><div class="ttdeci">art::InputTag fTriggerConfigTag</div><div class="ttdoc">Data product with hardware trigger configuration. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00239">TriggerDecoderV2_tool.cc:239</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab3d596c5c4873fb809fe59da9bc9f3e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414">sim::BeamType_t</a> daq::TriggerDecoder::simGateType </td>
+          <td>(</td>
+          <td class="paramtype">sbn::triggerSource&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the beam type corresponding to the specified trigger <code>source</code>. </p>
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00773">773</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  {</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">switch</span> (<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a>) {</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;      <span class="keywordflow">case</span> sbn::triggerSource::BNB:</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;      <span class="keywordflow">case</span> sbn::triggerSource::OffbeamBNB:</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414aed4f04828e0a0dc7d49762177ec8e11f">sim::kBNB</a>;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;      <span class="keywordflow">case</span> sbn::triggerSource::NuMI:</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;      <span class="keywordflow">case</span> sbn::triggerSource::OffbeamNuMI:</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414ae23705b0de67d8573e9eb3b9acee396c">sim::kNuMI</a>;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      <span class="keywordflow">case</span> sbn::triggerSource::Calib:</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414a7711da5dd6f52ee2e29c5e83e579d692">sim::kUnknown</a>;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        mf::LogWarning(<span class="stringliteral">&quot;TriggerDecoder&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Unsupported trigger source &quot;</span> &lt;&lt; <a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a>);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414a7711da5dd6f52ee2e29c5e83e579d692">sim::kUnknown</a>;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    } <span class="comment">// switch source</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  } <span class="comment">// TriggerDecoder::simGateType()</span></div>
+<div class="ttc" id="updateVersionList_8sh_html_a105d60ff52767c8ff2f42edb14ca79a4"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a105d60ff52767c8ff2f42edb14ca79a4">source</a></div><div class="ttdeci">do source</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00032">updateVersionList.sh:32</a></div></div>
+<div class="ttc" id="namespacesim_html_a5913768852589e05224bb2a7336af414a7711da5dd6f52ee2e29c5e83e579d692"><div class="ttname"><a href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414a7711da5dd6f52ee2e29c5e83e579d692">sim::kUnknown</a></div><div class="ttdoc">Unknown beam type. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9e/BeamTypes_8h_source.html#l00010">BeamTypes.h:10</a></div></div>
+<div class="ttc" id="namespacesim_html_a5913768852589e05224bb2a7336af414ae23705b0de67d8573e9eb3b9acee396c"><div class="ttname"><a href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414ae23705b0de67d8573e9eb3b9acee396c">sim::kNuMI</a></div><div class="ttdoc">NuMI. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9e/BeamTypes_8h_source.html#l00012">BeamTypes.h:12</a></div></div>
+<div class="ttc" id="namespacesim_html_a5913768852589e05224bb2a7336af414aed4f04828e0a0dc7d49762177ec8e11f"><div class="ttname"><a href="../../d8/d7d/namespacesim.html#a5913768852589e05224bb2a7336af414aed4f04828e0a0dc7d49762177ec8e11f">sim::kBNB</a></div><div class="ttdoc">BNB. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d9e/BeamTypes_8h_source.html#l00011">BeamTypes.h:11</a></div></div>
+<div class="ttc" id="sbndpoms__genfclwithrunnumber__maker_8sh_html_a19dd16849ed641adb2aff777fdc4bd8b"><div class="ttname"><a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a></div><div class="ttdeci">then echo fcl name</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh_source.html#l00220">sbndpoms_genfclwithrunnumber_maker.sh:220</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="ac1231062bed968688de20bdf9c1cc4bf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1697,8 +1918,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>Returns the difference <code>a - b</code>. </p>
 
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00200">200</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>) - static_cast&lt;long long int&gt;(b); }</div>
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00285">285</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>) - static_cast&lt;long long int&gt;(b); }</div>
 <div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1790,6 +2011,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Use this for debugging this tool. </p>
+
 <p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00155">155</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
 
 </div>
@@ -1836,6 +2059,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Produces large number of diagnostic messages, use with caution! </p>
+
 <p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00154">154</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
 
 </div>
@@ -1859,28 +2084,6 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00160">160</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf86fbb29717e26da6a1d4ee51f49162"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int daq::TriggerDecoder::fOffset</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00157">157</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>
@@ -1947,6 +2150,54 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html#l00149">149</a> of file <a class="el" href="../../d6/dae/TriggerDecoder__tool_8cc_source.html">TriggerDecoder_tool.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0ee51b3a1c5eda16d9fc85ffb435639"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">art::InputTag daq::TriggerDecoder::fTriggerConfigTag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d4/ddc/structData.html">Data</a> product with hardware trigger configuration. </p>
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00239">239</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac626792ba95f3685ed1ef5aac6bceb86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d0c/structicarus_1_1TriggerConfiguration.html">icarus::TriggerConfiguration</a> const* daq::TriggerDecoder::fTriggerConfiguration = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cached pointer to the trigger configuration of the current run, if any. </p>
+
+<p>Definition at line <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html#l00248">248</a> of file <a class="el" href="../../dd/da9/TriggerDecoderV2__tool_8cc_source.html">TriggerDecoderV2_tool.cc</a>.</p>
 
 </div>
 </div>

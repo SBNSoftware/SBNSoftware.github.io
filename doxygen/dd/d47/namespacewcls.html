@@ -144,6 +144,8 @@ Classes</h2></td></tr>
 <p>Contact <a href="#" onclick="location.href='mai'+'lto:'+'bru'+'ss'+'ell'+'@y'+'ale'+'.e'+'du'; return false;">bruss<span style="display: none;">.nosp@m.</span>ell@<span style="display: none;">.nosp@m.</span>yale.<span style="display: none;">.nosp@m.</span>edu</a> for comments/questions.</p>
 <p>Modified by Wenqiang Gu (<a href="#" onclick="location.href='mai'+'lto:'+'wgu'+'@b'+'nl.'+'go'+'v'; return false;">wgu@b<span style="display: none;">.nosp@m.</span>nl.g<span style="display: none;">.nosp@m.</span>ov</a>), 9/16/2019 A generic SimChannel saver for multiple volumes</p>
 <p>A sim depo set source provides IDepoSet objects to WCT from LS simulation objects. Modified from the <a class="el" href="../../d0/d36/classwcls_1_1SimDepoSource.html">SimDepoSource</a> for IDepoSet for better efficiency</p>
+<p>The WC/LS sim depo source adapts larsoft SimEnergyDeposit to WCT's IDepos.</p>
+<p>Note, this WC/LS file unusually verbose. Besides just data conversion, additional WCT guts are exposed allow optional application of WCT ionization/recombination models, or to rely on the depo provider to already provide depo in units of <a class="el" href="../../d1/d33/detectorproperties__icarus_8fcl.html#a6c3ed9156cb6e7b7a7b21d4c7409cb39">electrons</a>.</p>
 <p>A sim depo source provides IDepo objects to WCT from LS simulation objects.</p>
 <p>Multiple strategies are possible for ingesting depositions into WCT simulation.</p>
 <p>1) Treat the vector of SimEnergyDeposit in each art::Event in whole and independently from those in other art::Event's. That's what this converter does.</p>

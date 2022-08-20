@@ -93,33 +93,34 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  mevprtl_mom_beamcoord(flux.mom_beamcoord),</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  mevprtl_mom(flux.mom),</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  mevprtl_start(flux.pos),</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  mevprtl_enter(inout[0]),</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  mevprtl_exit(inout[1]),</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  decay_pos(decay.pos),</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  daughter_mom(decay.daughter_mom),</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  daughter_e(decay.daughter_e),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  daughter_pdg(decay.daughter_pdg),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  pot(pot),</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  flux_weight(flux_weight),</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  ray_weight(ray_weight),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  decay_weight(decay_weight),</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d3/d5d/namespacelib_1_1dedx.html#af9508f78ba8143119daa95dbd8220f91">mass</a>(flux.<a class="code" href="../../d3/d5d/namespacelib_1_1dedx.html#af9508f78ba8143119daa95dbd8220f91">mass</a>),</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  C1(flux.C1),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  C2(flux.C2),</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  C3(flux.C3),</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  C4(flux.C4),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  C5(flux.C5),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  decay_width(decay.decay_width),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  mean_lifetime(decay.mean_lifetime),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  mean_distance(decay.mean_distance)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <a class="code" href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a279ba294f8a644827cb37ba06a2773d2">gen</a> = (<a class="code" href="../../d7/df2/namespaceevgen_1_1ldm.html#a27ab58a0860bfd7644fdc17dea65e663">evgen::ldm::Generator</a>)flux.<a class="code" href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#abeb5a006de6cb1a810b88b5291d6d96f">generator</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  equiv_enu(flux.equiv_enu),</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  mevprtl_enter(inout[0]),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  mevprtl_exit(inout[1]),</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  decay_pos(decay.pos),</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  daughter_mom(decay.daughter_mom),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  daughter_e(decay.daughter_e),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  daughter_pdg(decay.daughter_pdg),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  pot(pot),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  flux_weight(flux_weight),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  ray_weight(ray_weight),</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  decay_weight(decay_weight),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../d3/d5d/namespacelib_1_1dedx.html#af9508f78ba8143119daa95dbd8220f91">mass</a>(flux.<a class="code" href="../../d3/d5d/namespacelib_1_1dedx.html#af9508f78ba8143119daa95dbd8220f91">mass</a>),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  C1(flux.C1),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  C2(flux.C2),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  C3(flux.C3),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  C4(flux.C4),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  C5(flux.C5),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  decay_width(decay.decay_width),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  mean_lifetime(decay.mean_lifetime),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  mean_distance(decay.mean_distance)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;     <a class="code" href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a279ba294f8a644827cb37ba06a2773d2">gen</a> = (<a class="code" href="../../d7/df2/namespaceevgen_1_1ldm.html#a27ab58a0860bfd7644fdc17dea65e663">evgen::ldm::Generator</a>)flux.<a class="code" href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#abeb5a006de6cb1a810b88b5291d6d96f">generator</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlDecay_html"><div class="ttname"><a href="../../d6/d55/classevgen_1_1ldm_1_1MeVPrtlDecay.html">evgen::ldm::MeVPrtlDecay</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/MeVPrtlDecay_8h_source.html#l00008">MeVPrtlDecay.h:8</a></div></div>
 <div class="ttc" id="namespaceevgen_1_1ldm_html_a27ab58a0860bfd7644fdc17dea65e663"><div class="ttname"><a href="../../d7/df2/namespaceevgen_1_1ldm.html#a27ab58a0860bfd7644fdc17dea65e663">evgen::ldm::Generator</a></div><div class="ttdeci">Generator</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/MeVPrtlTruth_8h_source.html#l00012">MeVPrtlTruth.h:12</a></div></div>
-<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlTruth_html_a364ba2b69d372fde1f5f600ab23e8fbd"><div class="ttname"><a href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a364ba2b69d372fde1f5f600ab23e8fbd">evgen::ldm::MeVPrtlTruth::MeVPrtlTruth</a></div><div class="ttdeci">MeVPrtlTruth()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/MeVPrtlTruth_8h_source.html#l00057">MeVPrtlTruth.h:57</a></div></div>
-<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlTruth_html_a279ba294f8a644827cb37ba06a2773d2"><div class="ttname"><a href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a279ba294f8a644827cb37ba06a2773d2">evgen::ldm::MeVPrtlTruth::gen</a></div><div class="ttdeci">Generator gen</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/MeVPrtlTruth_8h_source.html#l00054">MeVPrtlTruth.h:54</a></div></div>
-<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html_abeb5a006de6cb1a810b88b5291d6d96f"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#abeb5a006de6cb1a810b88b5291d6d96f">evgen::ldm::MeVPrtlFlux::generator</a></div><div class="ttdeci">int generator</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00026">MeVPrtlFlux.h:26</a></div></div>
+<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlTruth_html_a364ba2b69d372fde1f5f600ab23e8fbd"><div class="ttname"><a href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a364ba2b69d372fde1f5f600ab23e8fbd">evgen::ldm::MeVPrtlTruth::MeVPrtlTruth</a></div><div class="ttdeci">MeVPrtlTruth()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/MeVPrtlTruth_8h_source.html#l00058">MeVPrtlTruth.h:58</a></div></div>
+<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlTruth_html_a279ba294f8a644827cb37ba06a2773d2"><div class="ttname"><a href="../../d9/dfa/classevgen_1_1ldm_1_1MeVPrtlTruth.html#a279ba294f8a644827cb37ba06a2773d2">evgen::ldm::MeVPrtlTruth::gen</a></div><div class="ttdeci">Generator gen</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da4/MeVPrtlTruth_8h_source.html#l00055">MeVPrtlTruth.h:55</a></div></div>
+<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html_abeb5a006de6cb1a810b88b5291d6d96f"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#abeb5a006de6cb1a810b88b5291d6d96f">evgen::ldm::MeVPrtlFlux::generator</a></div><div class="ttdeci">int generator</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00027">MeVPrtlFlux.h:27</a></div></div>
 <div class="ttc" id="namespacelib_1_1dedx_html_af9508f78ba8143119daa95dbd8220f91"><div class="ttname"><a href="../../d3/d5d/namespacelib_1_1dedx.html#af9508f78ba8143119daa95dbd8220f91">lib.dedx.mass</a></div><div class="ttdeci">float mass</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/dedx_8py_source.html#l00047">dedx.py:47</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html">evgen::ldm::MeVPrtlFlux</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00008">MeVPrtlFlux.h:8</a></div></div>
 <div class="ttc" id="MeVPrtlTruth_8h_html"><div class="ttname"><a href="../../d6/da4/MeVPrtlTruth_8h.html">MeVPrtlTruth.h</a></div></div>

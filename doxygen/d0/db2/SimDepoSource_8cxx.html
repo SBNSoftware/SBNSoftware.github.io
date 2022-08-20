@@ -76,8 +76,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">SimDepoSource.cxx File Reference</div>  </div>
 </div><!--header-->
@@ -89,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <code>#include &quot;WireCellUtil/Units.h&quot;</code><br/>
 <code>#include &quot;WireCellUtil/String.h&quot;</code><br/>
 <code>#include &quot;WireCellUtil/NamedFactory.h&quot;</code><br/>
-<code>#include &quot;WireCellIface/SimpleDepo.h&quot;</code><br/>
+<code>#include &quot;WireCellAux/SimpleDepo.h&quot;</code><br/>
 <code>#include &quot;WireCellIface/IRecombinationModel.h&quot;</code><br/>
 </div>
 <p><a href="../../d0/db2/SimDepoSource_8cxx_source.html">Go to the source code of this file.</a></p>
@@ -111,59 +110,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/dc8/namespacewcls_1_1bits"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc8/namespacewcls_1_1bits.html">wcls::bits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aa9f2839ef3f14e812c1b68306b821b76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db2/SimDepoSource_8cxx.html#aa9f2839ef3f14e812c1b68306b821b76">WIRECELL_FACTORY</a> (wclsSimDepoSource, <a class="el" href="../../d0/d36/classwcls_1_1SimDepoSource.html">wcls::SimDepoSource</a>, <a class="el" href="../../dc/d49/classwcls_1_1IArtEventVisitor.html">wcls::IArtEventVisitor</a>, WireCell::IDepoSource, WireCell::IConfigurable) namespace <a class="el" href="../../de/d3c/opticaldetectormodules__sbnd_8fcl.html#ad12a1353fd51cb90e19060647a396652">units</a></td></tr>
-<tr class="separator:aa9f2839ef3f14e812c1b68306b821b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aa9f2839ef3f14e812c1b68306b821b76"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WIRECELL_FACTORY </td>
-          <td>(</td>
-          <td class="paramtype">wclsSimDepoSource&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d0/d36/classwcls_1_1SimDepoSource.html">wcls::SimDepoSource</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d49/classwcls_1_1IArtEventVisitor.html">wcls::IArtEventVisitor</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">WireCell::IDepoSource&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">WireCell::IConfigurable&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The WC/LS sim depo source adapts larsoft SimEnergyDeposit to WCT's IDepos.</p>
-<p>Note, this WC/LS file unusually verbose. Besides just data conversion, additional WCT guts are exposed allow optional application of WCT ionization/recombination models, or to rely on the depo provider to already provide depo in units of <a class="el" href="../../d1/d33/detectorproperties__icarus_8fcl.html#a6c3ed9156cb6e7b7a7b21d4c7409cb39">electrons</a>. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
