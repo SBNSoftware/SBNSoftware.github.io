@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a61d6aa2a9ac1dfd57a36b9d021b26248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9bf05ade90213834bb58aafe03c8169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html">DaqDecoderICARUSTrigger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#ab9bf05ade90213834bb58aafe03c8169">operator=</a> (<a class="el" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html">DaqDecoderICARUSTrigger</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ab9bf05ade90213834bb58aafe03c8169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a96fd7526f807894ad9724727df0f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2a96fd7526f807894ad9724727df0f54">beginRun</a> (art::Run &amp;run) override</td></tr>
+<tr class="separator:a2a96fd7526f807894ad9724727df0f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9644cfd1451bd1a7726e96b18ba347ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a9644cfd1451bd1a7726e96b18ba347ff">produce</a> (art::Event &amp;<a class="el" href="../../d9/dd2/selectors_8fcl.html#ad3fec9b8b789cdb7b6899bd350d3a726">e</a>) override</td></tr>
 <tr class="separator:a9644cfd1451bd1a7726e96b18ba347ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -140,16 +142,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00047">47</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                                  : art::EDProducer{params}, <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">fInputTag</a>(params.get&lt;std::string&gt;(<span class="stringliteral">&quot;FragmentsLabel&quot;</span>, <span class="stringliteral">&quot;daq:ICARUSTriggerUDP&quot;</span>))</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a> = art::make_tool&lt;IDecoder&gt;(params.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;DecoderTool&quot;</span>));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;produces(producesCollector());</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a2bc88717a3e76eafd4cfa166ad40e440"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">daq::DaqDecoderICARUSTrigger::fInputTag</a></div><div class="ttdeci">art::InputTag fInputTag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">DaqDecoderICARUSTrigger_module.cc:41</a></div></div>
-<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a38d7b5c9bd42dcf52ef5f082c7b4f79b"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">daq::DaqDecoderICARUSTrigger::fDecoderTool</a></div><div class="ttdeci">std::unique_ptr&lt; IDecoder &gt; fDecoderTool</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00040">DaqDecoderICARUSTrigger_module.cc:40</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00048">48</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                                                  : art::EDProducer{params}, <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">fInputTag</a>(params.get&lt;std::string&gt;(<span class="stringliteral">&quot;FragmentsLabel&quot;</span>, <span class="stringliteral">&quot;daq:ICARUSTriggerUDP&quot;</span>))</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    consumes&lt;artdaq::Fragments&gt;(<a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">fInputTag</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a> = art::make_tool&lt;IDecoder&gt;(params.get&lt;fhicl::ParameterSet&gt;(<span class="stringliteral">&quot;DecoderTool&quot;</span>));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;produces(producesCollector());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a2bc88717a3e76eafd4cfa166ad40e440"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">daq::DaqDecoderICARUSTrigger::fInputTag</a></div><div class="ttdeci">art::InputTag fInputTag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00042">DaqDecoderICARUSTrigger_module.cc:42</a></div></div>
+<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a38d7b5c9bd42dcf52ef5f082c7b4f79b"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">daq::DaqDecoderICARUSTrigger::fDecoderTool</a></div><div class="ttdeci">std::unique_ptr&lt; IDecoder &gt; fDecoderTool</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">DaqDecoderICARUSTrigger_module.cc:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,6 +206,36 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2a96fd7526f807894ad9724727df0f54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daq::DaqDecoderICARUSTrigger::beginRun </td>
+          <td>(</td>
+          <td class="paramtype">art::Run &amp;&#160;</td>
+          <td class="paramname"><em>run</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00058">58</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;setupRun(run);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a38d7b5c9bd42dcf52ef5f082c7b4f79b"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">daq::DaqDecoderICARUSTrigger::fDecoderTool</a></div><div class="ttdeci">std::unique_ptr&lt; IDecoder &gt; fDecoderTool</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">DaqDecoderICARUSTrigger_module.cc:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a61d6aa2a9ac1dfd57a36b9d021b26248"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,23 +306,23 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00055">55</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;initializeDataProducts();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> &amp; daq_handle = <span class="keyword">event</span>.getValidHandle&lt;artdaq::Fragments&gt;(<a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">fInputTag</a>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(daq_handle.isValid() &amp;&amp; daq_handle-&gt;size() &gt; 0)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp; rawFrag: *daq_handle) <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;process_fragment(rawFrag);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;No Trigger Fragment Information Found!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;outputDataProducts(event);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a2bc88717a3e76eafd4cfa166ad40e440"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">daq::DaqDecoderICARUSTrigger::fInputTag</a></div><div class="ttdeci">art::InputTag fInputTag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">DaqDecoderICARUSTrigger_module.cc:41</a></div></div>
-<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a38d7b5c9bd42dcf52ef5f082c7b4f79b"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">daq::DaqDecoderICARUSTrigger::fDecoderTool</a></div><div class="ttdeci">std::unique_ptr&lt; IDecoder &gt; fDecoderTool</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00040">DaqDecoderICARUSTrigger_module.cc:40</a></div></div>
+<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00064">64</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;initializeDataProducts();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> &amp; daq_handle = <span class="keyword">event</span>.getValidHandle&lt;artdaq::Fragments&gt;(<a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">fInputTag</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(daq_handle.isValid() &amp;&amp; daq_handle-&gt;size() &gt; 0)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp; rawFrag: *daq_handle) <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;process_fragment(rawFrag);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;No Trigger Fragment Information Found!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">fDecoderTool</a>-&gt;outputDataProducts(event);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a2bc88717a3e76eafd4cfa166ad40e440"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a2bc88717a3e76eafd4cfa166ad40e440">daq::DaqDecoderICARUSTrigger::fInputTag</a></div><div class="ttdeci">art::InputTag fInputTag</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00042">DaqDecoderICARUSTrigger_module.cc:42</a></div></div>
+<div class="ttc" id="classdaq_1_1DaqDecoderICARUSTrigger_html_a38d7b5c9bd42dcf52ef5f082c7b4f79b"><div class="ttname"><a href="../../d1/de8/classdaq_1_1DaqDecoderICARUSTrigger.html#a38d7b5c9bd42dcf52ef5f082c7b4f79b">daq::DaqDecoderICARUSTrigger::fDecoderTool</a></div><div class="ttdeci">std::unique_ptr&lt; IDecoder &gt; fDecoderTool</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">DaqDecoderICARUSTrigger_module.cc:41</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -312,7 +346,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00040">40</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">41</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -334,7 +368,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00041">41</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html#l00042">42</a> of file <a class="el" href="../../d4/dca/DaqDecoderICARUSTrigger__module_8cc_source.html">DaqDecoderICARUSTrigger_module.cc</a>.</p>
 
 </div>
 </div>

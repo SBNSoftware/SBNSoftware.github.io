@@ -678,59 +678,68 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    simb::MCTruth mctruth;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_d = 0; i_d &lt; mevprtl_truth.daughter_mom.size(); i_d++) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      TLorentzVector daughter4p(mevprtl_truth.daughter_mom[i_d], mevprtl_truth.daughter_e[i_d]);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      simb::MCParticle d(0, mevprtl_truth.daughter_pdg[i_d], <span class="stringliteral">&quot;primary&quot;</span>, -1, daughter4p.M());</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      d.AddTrajectoryPoint(mevprtl_truth.decay_pos, daughter4p);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      mctruth.Add(d);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">// TODO:</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">// Flux systematic uncertainties are often evaluated on the neutrino energy.</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">// We need to figure out how to translate this for the case of heavy particles</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// with different production kinematics. For now, we could save the neutrino energy</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// so that the flux uncertainties &quot;work&quot; at some level.</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">// However, the existing MCTruth object has no way to &quot;just&quot; set a neutrino energy.</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// This is __very__ very annoying.</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    mctruthColl-&gt;push_back(mctruth);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    mcfluxColl-&gt;push_back(kaon);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">// Make the associations only if we are producing stuff</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">// Otherwise this crashes</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#afa6ca1e3f697f1e77a460a07ec0c072c">fProduce</a>) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      art::PtrMaker&lt;simb::MCFlux&gt; MCFluxPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      art::PtrMaker&lt;simb::MCTruth&gt; MCTruthPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// Add the &quot;Neutrino&quot; as the 0th MCParticle</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">// This hopefully (???) won&#39;t do anything too bad and will give us</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// the chance to use the neutrino energy in other things</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    simb::MCParticle fakenu(0, kaon.fntype, <span class="stringliteral">&quot;primary&quot;</span>, -1, 0, -1<span class="comment">/* don&#39;t track */</span>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    fakenu.AddTrajectoryPoint(mevprtl_truth.decay_pos, TLorentzVector(0, 0, flux.<a class="code" href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#a0f27c7e4bd8715df7cef6aa55e4aaed3">equiv_enu</a>, flux.<a class="code" href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#a0f27c7e4bd8715df7cef6aa55e4aaed3">equiv_enu</a>));</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    mctruth.Add(fakenu);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    mctruth.SetNeutrino(-1, -1, -1, -1, -1, -1, </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        -1., -1., -1., -1.); </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_d = 0; i_d &lt; mevprtl_truth.daughter_mom.size(); i_d++) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      TLorentzVector daughter4p(mevprtl_truth.daughter_mom[i_d], mevprtl_truth.daughter_e[i_d]);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      simb::MCParticle d(0, mevprtl_truth.daughter_pdg[i_d], <span class="stringliteral">&quot;primary&quot;</span>, -1, daughter4p.M());</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      d.AddTrajectoryPoint(mevprtl_truth.decay_pos, daughter4p);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      mctruth.Add(d);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">// TODO:</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// Flux systematic uncertainties are often evaluated on the neutrino energy.</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// We need to figure out how to translate this for the case of heavy particles</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">// with different production kinematics. For now, we could save the neutrino energy</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">// so that the flux uncertainties &quot;work&quot; at some level.</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// However, the existing MCTruth object has no way to &quot;just&quot; set a neutrino energy.</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// This is __very__ very annoying.</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      art::Ptr&lt;simb::MCTruth&gt; MCTruthPtr = MCTruthPtrMaker(mctruthColl-&gt;size() - 1);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      art::Ptr&lt;simb::MCFlux&gt; MCFluxPtr = MCFluxPtrMaker(mcfluxColl-&gt;size() - 1);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      truth2fluxAssn-&gt;addSingle(MCTruthPtr, MCFluxPtr);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// TODO: implement for real</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="../../dc/d42/classsim_1_1BeamGateInfo.html">sim::BeamGateInfo</a> gate;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    beamgateColl-&gt;push_back(gate);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    mctruthColl-&gt;push_back(mctruth);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    mcfluxColl-&gt;push_back(kaon);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// Make the associations only if we are producing stuff</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// Otherwise this crashes</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#afa6ca1e3f697f1e77a460a07ec0c072c">fProduce</a>) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      art::PtrMaker&lt;simb::MCFlux&gt; MCFluxPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      art::PtrMaker&lt;simb::MCTruth&gt; MCTruthPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#a93f370f65b25110f64027d19e823fb09">fAnaOutput</a>) {</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      *<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#ac867c87772fa952ed7c15c97e381cdfd">fMeVPrtl</a> = mevprtl_truth;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#af912c7155ce63e42c911450529d71e21">fTree</a>-&gt;Fill();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      art::Ptr&lt;simb::MCTruth&gt; MCTruthPtr = MCTruthPtrMaker(mctruthColl-&gt;size() - 1);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      art::Ptr&lt;simb::MCFlux&gt; MCFluxPtr = MCFluxPtrMaker(mcfluxColl-&gt;size() - 1);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      truth2fluxAssn-&gt;addSingle(MCTruthPtr, MCFluxPtr);</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#afa6ca1e3f697f1e77a460a07ec0c072c">fProduce</a>) {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mctruthColl));</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mcfluxColl));</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(truth2fluxAssn));</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(beamgateColl));</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">// TODO: implement for real</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="../../dc/d42/classsim_1_1BeamGateInfo.html">sim::BeamGateInfo</a> gate;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    beamgateColl-&gt;push_back(gate);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#a93f370f65b25110f64027d19e823fb09">fAnaOutput</a>) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      *<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#ac867c87772fa952ed7c15c97e381cdfd">fMeVPrtl</a> = mevprtl_truth;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#af912c7155ce63e42c911450529d71e21">fTree</a>-&gt;Fill();</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mevprtlColl));</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#afa6ca1e3f697f1e77a460a07ec0c072c">fProduce</a>) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mctruthColl));</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mcfluxColl));</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(truth2fluxAssn));</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(beamgateColl));</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(mevprtlColl));</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;}</div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html_adcf2e4fcc32174cef7be5a7ceca6de0d"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#adcf2e4fcc32174cef7be5a7ceca6de0d">evgen::ldm::MeVPrtlFlux::mom</a></div><div class="ttdeci">TLorentzVector mom</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00014">MeVPrtlFlux.h:14</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlGen_html_af912c7155ce63e42c911450529d71e21"><div class="ttname"><a href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#af912c7155ce63e42c911450529d71e21">evgen::ldm::MeVPrtlGen::fTree</a></div><div class="ttdeci">TTree * fTree</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d89/MeVPrtlGen__module_8cc_source.html#l00107">MeVPrtlGen_module.cc:107</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlDecay_html"><div class="ttname"><a href="../../d6/d55/classevgen_1_1ldm_1_1MeVPrtlDecay.html">evgen::ldm::MeVPrtlDecay</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/da7/MeVPrtlDecay_8h_source.html#l00008">MeVPrtlDecay.h:8</a></div></div>
@@ -744,6 +753,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlGen_html_a12f25dec74cd12bdace4288ea1374dec"><div class="ttname"><a href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#a12f25dec74cd12bdace4288ea1374dec">evgen::ldm::MeVPrtlGen::fNCalls</a></div><div class="ttdeci">std::array&lt; uint64_t, 4 &gt; fNCalls</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d89/MeVPrtlGen__module_8cc_source.html#l00112">MeVPrtlGen_module.cc:112</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlGen_html_a71ac4084395f871a198a71504f326dcf"><div class="ttname"><a href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#a71ac4084395f871a198a71504f326dcf">evgen::ldm::MeVPrtlGen::fSubRunPOT</a></div><div class="ttdeci">double fSubRunPOT</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d89/MeVPrtlGen__module_8cc_source.html#l00094">MeVPrtlGen_module.cc:94</a></div></div>
 <div class="ttc" id="classsim_1_1BeamGateInfo_html"><div class="ttname"><a href="../../dc/d42/classsim_1_1BeamGateInfo.html">sim::BeamGateInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/da6/BeamGateInfo_8h_source.html#l00015">BeamGateInfo.h:15</a></div></div>
+<div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html_a0f27c7e4bd8715df7cef6aa55e4aaed3"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#a0f27c7e4bd8715df7cef6aa55e4aaed3">evgen::ldm::MeVPrtlFlux::equiv_enu</a></div><div class="ttdeci">double equiv_enu</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00018">MeVPrtlFlux.h:18</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlGen_html_a93f370f65b25110f64027d19e823fb09"><div class="ttname"><a href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#a93f370f65b25110f64027d19e823fb09">evgen::ldm::MeVPrtlGen::fAnaOutput</a></div><div class="ttdeci">bool fAnaOutput</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d89/MeVPrtlGen__module_8cc_source.html#l00091">MeVPrtlGen_module.cc:91</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlGen_html_aa66b5ac145039ca18edf7e54dd9133b5"><div class="ttname"><a href="../../d2/dba/classevgen_1_1ldm_1_1MeVPrtlGen.html#aa66b5ac145039ca18edf7e54dd9133b5">evgen::ldm::MeVPrtlGen::fDoDeweight</a></div><div class="ttdeci">bool fDoDeweight</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d89/MeVPrtlGen__module_8cc_source.html#l00093">MeVPrtlGen_module.cc:93</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1MeVPrtlFlux_html_a1d711334523448561e99baaa2f0bdf50"><div class="ttname"><a href="../../df/db2/classevgen_1_1ldm_1_1MeVPrtlFlux.html#a1d711334523448561e99baaa2f0bdf50">evgen::ldm::MeVPrtlFlux::pos</a></div><div class="ttdeci">TLorentzVector pos</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbd/MeVPrtlFlux_8h_source.html#l00011">MeVPrtlFlux.h:11</a></div></div>

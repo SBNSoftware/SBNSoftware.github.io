@@ -334,6 +334,7 @@ var searchData=
   ['_7eimevprtlstage',['~IMeVPrtlStage',['../da/d5c/classevgen_1_1ldm_1_1IMeVPrtlStage.html#a1c3c6cd3ed311b02871142858d0beb84',1,'evgen::ldm::IMeVPrtlStage']]],
   ['_7einfotransfer',['~InfoTransfer',['../d6/dfd/classevd_1_1InfoTransfer.html#a9c133c8b99f546531f59ac522cdcb745',1,'evd::InfoTransfer']]],
   ['_7einoisefilter',['~INoiseFilter',['../d7/d11/classdaq_1_1INoiseFilter.html#ae9713dd7e92328cee6c8be1b08ff05ad',1,'daq::INoiseFilter']]],
+  ['_7einormalizecharge',['~INormalizeCharge',['../df/d67/classINormalizeCharge.html#a4cfac9390a7bcb4e98f99c40a968db00',1,'INormalizeCharge']]],
   ['_7einput_5fadapter_5fprotocol',['~input_adapter_protocol',['../d8/d5f/structnlohmann_1_1detail_1_1input__adapter__protocol.html#a92dac74def4ac5adacd0684088bd4082',1,'nlohmann::detail::input_adapter_protocol']]],
   ['_7einput_5fbuffer_5fadapter',['~input_buffer_adapter',['../d8/dba/classnlohmann_1_1detail_1_1input__buffer__adapter.html#ac242b822b2f6772e5fc682ddb80cb066',1,'nlohmann::detail::input_buffer_adapter']]],
   ['_7einput_5fstream_5fadapter',['~input_stream_adapter',['../db/df0/classnlohmann_1_1detail_1_1input__stream__adapter.html#a2d71eb469267abd864f765481d1e823f',1,'nlohmann::detail::input_stream_adapter']]],

@@ -133,6 +133,8 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a06db063eb55ec5aba4800a1020e40cc3"><td class="memItemLeft" align="right" valign="top">TLorentzVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classevgen_1_1ldm_1_1IMeVPrtlFlux.html#a06db063eb55ec5aba4800a1020e40cc3">BeamOrigin</a> ()</td></tr>
 <tr class="separator:a06db063eb55ec5aba4800a1020e40cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d916593b654837f0cb9ae34597c644"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classevgen_1_1ldm_1_1IMeVPrtlFlux.html#a96d916593b654837f0cb9ae34597c644">EnuLab</a> (double enucm, TLorentzVector meson_mom, TLorentzVector meson_pos)</td></tr>
+<tr class="separator:a96d916593b654837f0cb9ae34597c644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -299,6 +301,57 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
 <div class="ttc" id="classevgen_1_1ldm_1_1IMeVPrtlFlux_html_a6bd1ef59f79d7913dfd10785f116a65c"><div class="ttname"><a href="../../d9/d4a/classevgen_1_1ldm_1_1IMeVPrtlFlux.html#a6bd1ef59f79d7913dfd10785f116a65c">evgen::ldm::IMeVPrtlFlux::fBeamOrigin</a></div><div class="ttdeci">TVector3 fBeamOrigin</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d66/IMeVPrtlFlux_8h_source.html#l00104">IMeVPrtlFlux.h:104</a></div></div>
 <div class="ttc" id="classevgen_1_1ldm_1_1IMeVPrtlFlux_html_abaa2598a68cc1cae8bfad78c5d0a5c0b"><div class="ttname"><a href="../../d9/d4a/classevgen_1_1ldm_1_1IMeVPrtlFlux.html#abaa2598a68cc1cae8bfad78c5d0a5c0b">evgen::ldm::IMeVPrtlFlux::fTimeShiftMethod</a></div><div class="ttdeci">evgb::EvtTimeShiftI * fTimeShiftMethod</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d66/IMeVPrtlFlux_8h_source.html#l00102">IMeVPrtlFlux.h:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a96d916593b654837f0cb9ae34597c644"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double evgen::ldm::IMeVPrtlFlux::EnuLab </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>enucm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TLorentzVector&#160;</td>
+          <td class="paramname"><em>meson_mom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TLorentzVector&#160;</td>
+          <td class="paramname"><em>meson_pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d66/IMeVPrtlFlux_8h_source.html#l00119">119</a> of file <a class="el" href="../../d8/d66/IMeVPrtlFlux_8h_source.html">IMeVPrtlFlux.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                                                  { <span class="comment">// all in detector coordinates</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Assume neutrino travels to center of detector</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">double</span> costh = meson_mom.Vect().Unit().Dot(-meson_pos.Vect().Unit());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Scale factor</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">double</span> M = 1. / (meson_mom.Gamma() * (1 - meson_mom.Beta() * costh));</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> M * enucm;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
