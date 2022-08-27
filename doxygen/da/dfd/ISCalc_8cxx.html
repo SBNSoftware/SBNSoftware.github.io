@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>DetectorPropertiesStandard.cxx File Reference</title>
+<title>ISCalc.cxx File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -70,44 +70,31 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_0f2c87f5beb3fe411942285746344c32.html">lardataalg</a></li><li class="navelem"><a class="el" href="../../dir_259dd620637dfb40183900b4e0424853.html">lardataalg</a></li><li class="navelem"><a class="el" href="../../dir_a324f88d8a4bca579d77a60354fb1ee6.html">DetectorInfo</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_b73b02d482d1c4a3db20c3d9ad52d395.html">srcs</a></li><li class="navelem"><a class="el" href="../../dir_c1de2b5dcb01608846a246cb763d5e03.html">larsim</a></li><li class="navelem"><a class="el" href="../../dir_64cfb79233dad4b4de390a7389ba145b.html">larsim</a></li><li class="navelem"><a class="el" href="../../dir_13d1a504471bf6ef392ce5339c6effa3.html">IonizationScintillation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">DetectorPropertiesStandard.cxx File Reference</div>  </div>
+<div class="title">ISCalc.cxx File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Separation of service from Detector info class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/df8/DetectorPropertiesStandard_8h_source.html">lardataalg/DetectorInfo/DetectorPropertiesStandard.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/dd7/ProviderUtil_8h_source.html">larcorealg/CoreUtils/ProviderUtil.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../df/d13/CryostatGeo_8h_source.html">larcorealg/Geometry/CryostatGeo.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/de7/GeometryCore_8h_source.html">larcorealg/Geometry/GeometryCore.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">larcorealg/Geometry/PlaneGeo.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../df/de9/TPCGeo_8h_source.html">larcorealg/Geometry/TPCGeo.h</a>&quot;</code><br/>
-<code>#include &quot;cetlib/pow.h&quot;</code><br/>
-<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/types/Table.h&quot;</code><br/>
-<code>#include &lt;sstream&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d8e/ISCalc_8h_source.html">larsim/IonizationScintillation/ISCalc.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d2e/ServiceUtil_8h_source.html">larcore/CoreUtils/ServiceUtil.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/df8/DetectorPropertiesService_8h_source.html">lardata/DetectorInfoServices/DetectorPropertiesService.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/d9f/LArPropertiesService_8h_source.html">lardata/DetectorInfoServices/LArPropertiesService.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d0/ddf/SimEnergyDeposit_8h_source.html">lardataobj/Simulation/SimEnergyDeposit.h</a>&quot;</code><br/>
 </div>
-<p><a href="../../da/d17/DetectorPropertiesStandard_8cxx_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../da/dfd/ISCalc_8cxx_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d7/d8a/namespacedetinfo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8a/namespacedetinfo.html">detinfo</a></td></tr>
-<tr class="memdesc:d7/d8a/namespacedetinfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">General LArSoft Utilities. <br/></td></tr>
+<tr class="memitem:d7/d6f/namespacelarg4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/namespacelarg4.html">larg4</a></td></tr>
+<tr class="memdesc:d7/d6f/namespacelarg4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geant4 interface. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Separation of service from Detector info class. </p>
-<dl class="section author"><dt>Author</dt><dd>Jonathan Paley (<a href="#" onclick="location.href='mai'+'lto:'+'jpa'+'le'+'y@f'+'na'+'l.g'+'ov'; return false;">jpale<span style="display: none;">.nosp@m.</span>y@fn<span style="display: none;">.nosp@m.</span>al.go<span style="display: none;">.nosp@m.</span>v</a>) </dd></dl>
-
-<p>Definition in file <a class="el" href="../../da/d17/DetectorPropertiesStandard_8cxx_source.html">DetectorPropertiesStandard.cxx</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

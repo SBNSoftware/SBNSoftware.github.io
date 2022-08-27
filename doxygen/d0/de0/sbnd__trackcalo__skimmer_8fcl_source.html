@@ -96,73 +96,74 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  T0ModuleLabel: <span class="stringliteral">&quot;&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  TrackIsFieldDistortionCorrected: <span class="keyword">false</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>: <span class="stringliteral">&quot;pandoraTrack&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  module_type: <span class="stringliteral">&quot;GnocchiCalorimetry&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;caloskim: {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  module_type: TrackCaloSkimmer</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  CALOproducer: <span class="stringliteral">&quot;caloskimCalorimetry&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  TRKproducer:  <span class="stringliteral">&quot;pandoraTrack&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  T0producers: [<span class="stringliteral">&quot;pandora&quot;</span>]</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  PFPproducer: <span class="stringliteral">&quot;pandora&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d4/d07/stage1__multiTPC__icarus__gauss__MC_8fcl.html#ae7113d08c7d35d23ac96dbfa6bdd1b0f">G4producer</a>: <span class="stringliteral">&quot;largeant&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  SimChannelproducer: <span class="stringliteral">&quot;simdrift&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  HITproducer: <span class="stringliteral">&quot;gaushit&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../dc/d5a/ntupler__saveWF__icarus__MC_8fcl.html#aa74ae6a7cb99b33cb7c92bbeba9bea53">RawDigitproducers</a>: [<span class="stringliteral">&quot;daq&quot;</span>]</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  RequireT0: <span class="keyword">true</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  HitRawDigitsTickCollectWidth: 50</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  DoTailFit: <span class="keyword">false</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  SilenceMissingDataProducts: <span class="keyword">true</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  SelectionTools: []</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;caloskim_nodigits: @local::caloskim</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;caloskim_nodigits.RawDigitproducers: []</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;stopping_selection: {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  tool_type: TrackCaloSkimmerSelectStoppingTrack</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  FVInsetMinX: 15</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  FVInsetMaxX: 15</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  FVInsetMinY: 15</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  FVInsetMaxY: 15</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  FVInsetMinZ: 15</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  FVInsetMaxZ: 15</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  MinTimeTickInset: 100</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  MaxTimeTickInset: 100</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  EndMediandQdxCut: 1600</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  NumberTimeSamples: 3400</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  MediandQdxRRMax: 5.</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  CheckFiducialX: <span class="keyword">false</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;throughgoing_selection: {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  tool_type: TrackCaloSkimmerSelectStoppingTrack</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  Invert: <span class="keyword">true</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  PreScale: 1</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  FVInsetMinX: 5</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  FVInsetMaxX: 5</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  FVInsetMinY: 5</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  FVInsetMaxY: 5</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  FVInsetMinZ: 5</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  FVInsetMaxZ: 5</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  MinTimeTickInset: 0</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  MaxTimeTickInset: 0</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  EndMediandQdxCut: -1</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  RequireDownwards: <span class="keyword">false</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  NumberTimeSamples: 3400</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  CheckFiducialX: <span class="keyword">false</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;a2c_selection: {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  tool_type: TrackCaloSkimmerSelectAnode2CathodeTrack</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  TickCut: 2500</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;caloskim_nodigits_goldentracks: @local::caloskim_nodigits</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;caloskim_nodigits_goldentracks.SelectionTools: [@local::stopping_selection, @local::a2c_selection, @local::throughgoing_selection]</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  NormTools: []</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  module_type: <span class="stringliteral">&quot;GnocchiCalorimetry&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;caloskim: {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  module_type: TrackCaloSkimmer</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  CALOproducer: <span class="stringliteral">&quot;caloskimCalorimetry&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  TRKproducer:  <span class="stringliteral">&quot;pandoraTrack&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  T0producers: [<span class="stringliteral">&quot;pandora&quot;</span>]</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  PFPproducer: <span class="stringliteral">&quot;pandora&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d4/d07/stage1__multiTPC__icarus__gauss__MC_8fcl.html#ae7113d08c7d35d23ac96dbfa6bdd1b0f">G4producer</a>: <span class="stringliteral">&quot;largeant&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  SimChannelproducer: <span class="stringliteral">&quot;simdrift&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  HITproducer: <span class="stringliteral">&quot;gaushit&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../dc/d5a/ntupler__saveWF__icarus__MC_8fcl.html#aa74ae6a7cb99b33cb7c92bbeba9bea53">RawDigitproducers</a>: [<span class="stringliteral">&quot;daq&quot;</span>]</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  RequireT0: <span class="keyword">true</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  HitRawDigitsTickCollectWidth: 50</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  DoTailFit: <span class="keyword">false</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  SilenceMissingDataProducts: <span class="keyword">true</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  SelectionTools: []</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;caloskim_nodigits: @local::caloskim</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;caloskim_nodigits.RawDigitproducers: []</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;stopping_selection: {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  tool_type: TrackCaloSkimmerSelectStoppingTrack</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  FVInsetMinX: 15</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  FVInsetMaxX: 15</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  FVInsetMinY: 15</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  FVInsetMaxY: 15</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  FVInsetMinZ: 15</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  FVInsetMaxZ: 15</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  MinTimeTickInset: 100</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  MaxTimeTickInset: 100</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  EndMediandQdxCut: 1600</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  NumberTimeSamples: 3400</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  MediandQdxRRMax: 5.</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  CheckFiducialX: <span class="keyword">false</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;throughgoing_selection: {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  tool_type: TrackCaloSkimmerSelectStoppingTrack</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  Invert: <span class="keyword">true</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  PreScale: 1</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  FVInsetMinX: 5</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  FVInsetMaxX: 5</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  FVInsetMinY: 5</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  FVInsetMaxY: 5</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  FVInsetMinZ: 5</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  FVInsetMaxZ: 5</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  MinTimeTickInset: 0</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  MaxTimeTickInset: 0</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  EndMediandQdxCut: -1</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  RequireDownwards: <span class="keyword">false</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  NumberTimeSamples: 3400</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  CheckFiducialX: <span class="keyword">false</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;a2c_selection: {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  tool_type: TrackCaloSkimmerSelectAnode2CathodeTrack</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  TickCut: 2500</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;caloskim_nodigits_goldentracks: @local::caloskim_nodigits</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;caloskim_nodigits_goldentracks.SelectionTools: [@local::stopping_selection, @local::a2c_selection, @local::throughgoing_selection]</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;END_PROLOG</div>
 <div class="ttc" id="stage1__multiTPC__icarus__gauss__MC_8fcl_html_ae7113d08c7d35d23ac96dbfa6bdd1b0f"><div class="ttname"><a href="../../d4/d07/stage1__multiTPC__icarus__gauss__MC_8fcl.html#ae7113d08c7d35d23ac96dbfa6bdd1b0f">G4producer</a></div><div class="ttdeci">process_name mcassociationsGausCryoW physics analyzers caloskimE G4producer</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d07/stage1__multiTPC__icarus__gauss__MC_8fcl_source.html#l00033">stage1_multiTPC_icarus_gauss_MC.fcl:33</a></div></div>
 <div class="ttc" id="icarus__trackcalo__skimmer_8fcl_html_aece7f056f55595aaaf481c4fb8852c8d"><div class="ttname"><a href="../../da/dbf/icarus__trackcalo__skimmer_8fcl.html#aece7f056f55595aaaf481c4fb8852c8d">caloskim_calorimetry</a></div><div class="ttdeci">BEGIN_PROLOG caloskim_calorimetry</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dbf/icarus__trackcalo__skimmer_8fcl_source.html#l00006">icarus_trackcalo_skimmer.fcl:6</a></div></div>
 <div class="ttc" id="calotest__icarus_8fcl_html_aa452b123e860066c1429d25b7a1a34e9"><div class="ttname"><a href="../../d8/d49/calotest__icarus_8fcl.html#aa452b123e860066c1429d25b7a1a34e9">CalAreaConstants</a></div><div class="ttdeci">stream1 physics producers calorimetryfit CaloAlg CalAreaConstants</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d49/calotest__icarus_8fcl_source.html#l00041">calotest_icarus.fcl:41</a></div></div>

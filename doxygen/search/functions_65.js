@@ -191,7 +191,7 @@ var searchData=
   ['errortoken',['ErrorToken',['../db/d77/classuscript_1_1Scanner.html#a9c991c0234d56490f5e65431bb5370cd',1,'uscript::Scanner']]],
   ['errxyz',['ErrXYZ',['../db/d88/classrecob_1_1SpacePoint.html#a8af6a2e3feb48615c4748afa3ff889bd',1,'recob::SpacePoint']]],
   ['escape',['escape',['../da/de8/classnlohmann_1_1json__pointer.html#a8abf3577f9a0087f29a233893cdc73ad',1,'nlohmann::json_pointer::escape()'],['../df/d96/MetadataSBN__service_8cc.html#a77cb3d81ac9f770cccd72d3c592799b8',1,'Escape():&#160;MetadataSBN_service.cc']]],
-  ['escapingefraction',['EscapingEFraction',['../dd/d36/classlarg4_1_1ISCalcCorrelated.html#a7344cd6cdc7d82c71a7396a5d310eab2',1,'larg4::ISCalcCorrelated::EscapingEFraction()'],['../d4/d86/classlarg4_1_1ISCalculationCorrelated.html#ac88450ece723b50b94d68c9ed65f31b0',1,'larg4::ISCalculationCorrelated::EscapingEFraction()']]],
+  ['escapingefraction',['EscapingEFraction',['../dd/d36/classlarg4_1_1ISCalcCorrelated.html#acc1ef1dcaf1b57c5b6364199d01e1ff6',1,'larg4::ISCalcCorrelated::EscapingEFraction()'],['../d4/d86/classlarg4_1_1ISCalculationCorrelated.html#ac88450ece723b50b94d68c9ed65f31b0',1,'larg4::ISCalculationCorrelated::EscapingEFraction()']]],
   ['essentiallyequal',['EssentiallyEqual',['../dd/de9/classcaf_1_1CAFMaker.html#a6862262de3731e6fcea8b1ce5ff2be03',1,'caf::CAFMaker']]],
   ['estimatebaseline',['estimateBaseline',['../dc/dc4/classsbnd_1_1trigger_1_1pmtSoftwareTriggerProducer.html#a675e0aac5e7143d8350e119672d91c06',1,'sbnd::trigger::pmtSoftwareTriggerProducer']]],
   ['estimatebaselinestddev',['EstimateBaselineStdDev',['../da/dc3/classopdet_1_1OpDeconvolutionAlgWiener.html#aede9a5bb38916089c41e6a67edc20a63',1,'opdet::OpDeconvolutionAlgWiener']]],
