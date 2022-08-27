@@ -1529,7 +1529,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="comment">// Sort by channel, then time</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> ( lhs.ChannelNumber()  &lt; rhs.ChannelNumber() ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span> ( rhs.ChannelNumber()  &gt; rhs.ChannelNumber() ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span> ( lhs.ChannelNumber()  &gt; rhs.ChannelNumber() ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> ( lhs.TimeStamp() &lt; rhs.TimeStamp() );</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>

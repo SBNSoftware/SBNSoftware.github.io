@@ -210,53 +210,57 @@ wanna drift <a class="el" href="../../de/d9d/run__pmttriggerproducer_8fcl.html#a
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; LarqlAlpha: 0.0372</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; LarqlBeta: 0.0124</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;# The following parameters specify details of wireplanes or similar</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; #  areas with optically parameterized transmissions (Ben J 2013)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"> #  volume names to be associated with an optical wireplane model</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span> OpticalParamVolumes:      [<span class="stringliteral">&quot;volTPCPlaneVert_PV&quot;</span>]</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"> #  specification of which model to use for each volume</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span> OpticalParamModels:       [<span class="stringliteral">&quot;OverlaidWireplanes&quot;</span>]</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"> # orientation of each wireplane set</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #  0 = Xdrift, 1 = Ydrift, 2 = Zdrift</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span> OpticalParamOrientations: [0]</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  #* ion+excitation work <span class="keyword">function</span> <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> eV</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  #* <a class="code" href="../../dd/d98/genie_8fcl.html#a2a8f9c9104fa902df33b6e0decbca5c4">https</a>:<span class="comment">//doi.org/10.1016/0168-9002(90)90011-T</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; Wph: 19.5</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; # The following parameters specify details of wireplanes or similar</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; # areas with optically parameterized transmissions (Ben J 2013)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"> #  volume names to be associated with an optical wireplane model</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span> OpticalParamVolumes:      [<span class="stringliteral">&quot;volTPCPlaneVert_PV&quot;</span>]</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"> #  specification of which model to use for each volume</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span> OpticalParamModels:       [<span class="stringliteral">&quot;OverlaidWireplanes&quot;</span>]</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"> # This a set of floats which is specific to the particular model used.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> # For overlaid wireplanes, should be a vector of vectors of</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #                                 [plane angle, pitch/mm, wire diameter/mm]</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> # This format is chosen to allow for future extensions to the model</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #  for, eg, DUNE wireplane development.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span> OpticalParamParameters:   [ [ [60,  3, 0.15],</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                               [-60, 3, 0.15],</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                               [0,   3, 0.15] ] ]</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <a class="code" href="../../da/da3/cosmics__g4__icarus__lite_8fcl.html#a6452dfdd506d78612a94036f7b215ac7">UseLitePhotons</a>: <span class="keyword">false</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;jp250L_largeantparameters:     @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;bo_largeantparameters:         @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;argoneut_largeantparameters:   @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"># The following line is already in simulationservices_microboone.fcl</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># and so it should not also be included here, for clarity&#39;s sake.</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#microboone_largeantparameters: @local::standard_largeantparameters</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span>dune35t_largeantparameters:    @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;dunefd_largeantparameters:   @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;standard_larvoxelcalculator:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; VoxelSizeX:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; VoxelSizeY:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; VoxelSizeZ:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; VoxelSizeT:     5000.0  #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ns</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; VoxelOffsetX:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; VoxelOffsetY:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; VoxelOffsetZ:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; VoxelOffsetT:   -2500.0 #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ns</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; VoxelEnergyCut: 1.e-6   #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"> # orientation of each wireplane set</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #  0 = Xdrift, 1 = Ydrift, 2 = Zdrift</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span> OpticalParamOrientations: [0]</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"> # This a set of floats which is specific to the particular model used.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> # For overlaid wireplanes, should be a vector of vectors of</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #                                 [plane angle, pitch/mm, wire diameter/mm]</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> # This format is chosen to allow for future extensions to the model</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #  for, eg, DUNE wireplane development.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="preprocessor"> #</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span> OpticalParamParameters:   [ [ [60,  3, 0.15],</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                               [-60, 3, 0.15],</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                               [0,   3, 0.15] ] ]</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <a class="code" href="../../da/da3/cosmics__g4__icarus__lite_8fcl.html#a6452dfdd506d78612a94036f7b215ac7">UseLitePhotons</a>: <span class="keyword">false</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;jp250L_largeantparameters:     @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;bo_largeantparameters:         @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;argoneut_largeantparameters:   @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"># The following line is already in simulationservices_microboone.fcl</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># and so it should not also be included here, for clarity&#39;s sake.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#microboone_largeantparameters: @local::standard_largeantparameters</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span>dune35t_largeantparameters:    @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;dunefd_largeantparameters:   @<a class="code" href="../../d5/d44/simulationservices_8fcl.html#a16bdac1a15b2f26c8f1b45c0d05c9591">local::standard_largeantparameters</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;standard_larvoxelcalculator:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; VoxelSizeX:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; VoxelSizeY:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; VoxelSizeZ:     0.03    #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; VoxelSizeT:     5000.0  #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ns</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; VoxelOffsetX:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; VoxelOffsetY:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; VoxelOffsetZ:   0.0     #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> cm</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; VoxelOffsetT:   -2500.0 #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ns</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; VoxelEnergyCut: 1.e-6   #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> <a class="code" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html">GeV</a></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486aea23122caaaed75b787c745a188871f6">geo::kV</a></div><div class="ttdoc">Planes which measure V. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00130">geo_types.h:130</a></div></div>
 <div class="ttc" id="generate__icarus__geometry__splitwire_8pl_html_a09c6b60bb7451f9136e25140ffdff6bd"><div class="ttname"><a href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a></div><div class="ttdeci">#define the</div></div>
 <div class="ttc" id="rawtorootconvert_8fcl_html_a073d3febd81cab639f2a8aa357dc5ef1"><div class="ttname"><a href="../../d4/d3a/rawtorootconvert_8fcl.html#a073d3febd81cab639f2a8aa357dc5ef1">E</a></div><div class="ttdeci">process_name E</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d3a/rawtorootconvert_8fcl_source.html#l00026">rawtorootconvert.fcl:26</a></div></div>

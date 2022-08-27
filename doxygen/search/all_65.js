@@ -541,7 +541,7 @@ var searchData=
   ['errslope_5ftree',['errslope_tree',['../df/d0e/classicarus_1_1ICARUSPurityDQM.html#a2c38af3914fe0f2830d82c8396eafd8f',1,'icarus::ICARUSPurityDQM']]],
   ['errxyz',['ErrXYZ',['../db/d88/classrecob_1_1SpacePoint.html#a8af6a2e3feb48615c4748afa3ff889bd',1,'recob::SpacePoint']]],
   ['escape',['escape',['../da/de8/classnlohmann_1_1json__pointer.html#a8abf3577f9a0087f29a233893cdc73ad',1,'nlohmann::json_pointer::escape()'],['../df/d96/MetadataSBN__service_8cc.html#a77cb3d81ac9f770cccd72d3c592799b8',1,'Escape():&#160;MetadataSBN_service.cc']]],
-  ['escapingefraction',['EscapingEFraction',['../dd/d36/classlarg4_1_1ISCalcCorrelated.html#a7344cd6cdc7d82c71a7396a5d310eab2',1,'larg4::ISCalcCorrelated::EscapingEFraction()'],['../d4/d86/classlarg4_1_1ISCalculationCorrelated.html#ac88450ece723b50b94d68c9ed65f31b0',1,'larg4::ISCalculationCorrelated::EscapingEFraction()']]],
+  ['escapingefraction',['EscapingEFraction',['../dd/d36/classlarg4_1_1ISCalcCorrelated.html#acc1ef1dcaf1b57c5b6364199d01e1ff6',1,'larg4::ISCalcCorrelated::EscapingEFraction()'],['../d4/d86/classlarg4_1_1ISCalculationCorrelated.html#ac88450ece723b50b94d68c9ed65f31b0',1,'larg4::ISCalculationCorrelated::EscapingEFraction()']]],
   ['esh_5f1_5fcompleteness',['esh_1_completeness',['../d4/d22/classNuShowerEff.html#aa137c9da491e9377908fd47d0e845d2f',1,'NuShowerEff']]],
   ['esh_5f1_5fpurity',['esh_1_purity',['../d4/d22/classNuShowerEff.html#accc29741100277aaff040c63991ce2d5',1,'NuShowerEff']]],
   ['esh_5fcompleteness',['esh_completeness',['../d4/d22/classNuShowerEff.html#a1e006064f7186c6c5cbdd25cb2c86ebd',1,'NuShowerEff']]],
