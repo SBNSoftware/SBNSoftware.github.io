@@ -149,7 +149,7 @@ var searchData=
   ['minmaxcollector_3c_20float_20_3e',['MinMaxCollector&lt; float &gt;',['../de/dc6/classlar_1_1util_1_1MinMaxCollector.html',1,'lar::util']]],
   ['minspantreealg',['MinSpanTreeAlg',['../d0/d5f/classlar__cluster3d_1_1MinSpanTreeAlg.html',1,'lar_cluster3d']]],
   ['mismatchingunit',['MismatchingUnit',['../d7/dc6/structutil_1_1quantities_1_1MismatchingUnit.html',1,'util::quantities']]],
-  ['missingsize',['MissingSize',['../d2/da5/structicarus_1_1details_1_1KeyValuesData_1_1MissingSize.html',1,'icarus::details::KeyValuesData']]],
+  ['missingsize',['MissingSize',['../d8/dd6/structicarus_1_1KeyValuesData_1_1MissingSize.html',1,'icarus::KeyValuesData']]],
   ['missingtracksegmenttool',['MissingTrackSegmentTool',['../df/dfd/classlar__content_1_1MissingTrackSegmentTool.html',1,'lar_content']]],
   ['missingtracktool',['MissingTrackTool',['../d2/dd0/classlar__content_1_1MissingTrackTool.html',1,'lar_content']]],
   ['missingunit',['MissingUnit',['../d6/d3a/structutil_1_1quantities_1_1MissingUnit.html',1,'util::quantities']]],

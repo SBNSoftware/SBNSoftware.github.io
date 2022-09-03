@@ -1,6 +1,7 @@
 var searchData=
 [
   ['absorbed',['ABSORBED',['../df/d1f/classlar__content_1_1CosmicRayTaggingMonitoringTool.html#a75c494dff6d4fca99ba21dcc2e8afe0eab4b94fd42bc13ca478fec11d7c66f992',1,'lar_content::CosmicRayTaggingMonitoringTool']]],
+  ['add',['add',['../d8/d1b/classicarus_1_1details_1_1KeyValueParser.html#a70b88604eb9bfae129e752865e42b7b0a34ec78fcc91ffb1e54cd85e4a0924332',1,'icarus::details::KeyValueParser']]],
   ['address',['address',['../d5/de2/structlar_1_1debug_1_1CallInfoPrinter_1_1opt.html#a1c71a07f197896caac6cbe8a98246ff4a054e56159931f47d645747211ed0ea1c',1,'lar::debug::CallInfoPrinter::opt']]],
   ['alpha',['ALPHA',['../d7/dfe/classevgen_1_1MarleyTimeGen.html#a1db03c6adf87a05bb8792c5eaabacc00a002101f8725e5c78d9f30d87f3fa4c87',1,'evgen::MarleyTimeGen']]],
   ['and',['AND',['../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#affce49e05e4d32130e79a4727875a14ea558ffc8f5770d8e4f95f51d822685532',1,'icarus::trigger::LVDSgates']]],

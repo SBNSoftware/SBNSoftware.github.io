@@ -358,8 +358,6 @@ var searchData=
   ['trueparticle_2eh',['TrueParticle.h',['../d8/d2e/TrueParticle_8h.html',1,'']]],
   ['trueparticlehelpers_2ecxx',['TrueParticleHelpers.cxx',['../d9/de5/TrueParticleHelpers_8cxx.html',1,'']]],
   ['trueparticlehelpers_2eh',['TrueParticleHelpers.h',['../de/ddb/TrueParticleHelpers_8h.html',1,'']]],
-  ['truncmean_2ecxx',['TruncMean.cxx',['../de/dc6/TruncMean_8cxx.html',1,'']]],
-  ['truncmean_2eh',['TruncMean.h',['../d8/d26/TruncMean_8h.html',1,'']]],
   ['truthmatch_2ecc',['TruthMatch.cc',['../d8/d74/TruthMatch_8cc.html',1,'']]],
   ['truthmatchutils_2ecc',['TruthMatchUtils.cc',['../d5/dc6/TruthMatchUtils_8cc.html',1,'']]],
   ['truthmatchutils_2eh',['TruthMatchUtils.h',['../de/dbc/TruthMatchUtils_8h.html',1,'']]],

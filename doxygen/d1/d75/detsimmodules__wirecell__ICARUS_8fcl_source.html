@@ -112,24 +112,29 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="comment">//   &quot;wclsFrameSaver:spthresholds&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ]</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// Make available parameters via Jsonnet&#39;s std.extVar()</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        params: {}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        structs: {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">            # load values from simulationservices_icarus.fcl</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # Longitudinal diffusion constant [cm2/ns]</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>            DL: @<a class="code" href="../../df/de9/simulationservices__icarus_8fcl.html#ac038a15a732fd3c9452efcc21f771ed1">local::icarus_largeantparameters</a>.LongitudinalDiffusion</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">            # Transverse diffusion constant [cm2/ns]</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>            DT: @<a class="code" href="../../df/de9/simulationservices__icarus_8fcl.html#ac038a15a732fd3c9452efcc21f771ed1">local::icarus_largeantparameters</a>.TransverseDiffusion</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">            # load values from services_common_icarus.fcl</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # Electron lifetime [microseconds]</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span>            lifetime: @<a class="code" href="../../d1/d33/detectorproperties__icarus_8fcl.html#a9b9fa69c4a598d1a5315974a4beb5cb5">local::icarus_detproperties</a>.Electronlifetime</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">            # Electron drift speed, assumes a certain applied E-field [mm/us]</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # driftSpeed: 1.565</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span>        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        params: {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            files_fields: <span class="stringliteral">&quot;garfield-icarus-fnal-rev1.json.bz2&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        structs: {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">            # load values from simulationservices_icarus.fcl</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # Longitudinal diffusion constant [cm2/ns]</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>            DL: @<a class="code" href="../../df/de9/simulationservices__icarus_8fcl.html#ac038a15a732fd3c9452efcc21f771ed1">local::icarus_largeantparameters</a>.LongitudinalDiffusion</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">            # Transverse diffusion constant [cm2/ns]</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span>            DT: @<a class="code" href="../../df/de9/simulationservices__icarus_8fcl.html#ac038a15a732fd3c9452efcc21f771ed1">local::icarus_largeantparameters</a>.TransverseDiffusion</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">            # load values from services_common_icarus.fcl</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # Electron lifetime [microseconds]</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>            lifetime: @<a class="code" href="../../d1/d33/detectorproperties__icarus_8fcl.html#a9b9fa69c4a598d1a5315974a4beb5cb5">local::icarus_detproperties</a>.Electronlifetime</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">            # Electron drift speed, assumes a certain applied E-field [mm/us]</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # driftSpeed: 1.565</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">            # Scaling Parameters from int and coh noise components</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>            int_noise_scale: 1.0</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            coh_noise_scale: 1.09</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;END_PROLOG</div>
 <div class="ttc" id="detsimmodules__wirecell__ICARUS_8fcl_html_a94e9bf7d612697da6d3b652b91a8455d"><div class="ttname"><a href="../../d1/d75/detsimmodules__wirecell__ICARUS_8fcl.html#a94e9bf7d612697da6d3b652b91a8455d">icarus_simwire_wirecell</a></div><div class="ttdeci">BEGIN_PROLOG icarus_simwire_wirecell</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d75/detsimmodules__wirecell__ICARUS_8fcl_source.html#l00017">detsimmodules_wirecell_ICARUS.fcl:17</a></div></div>
 <div class="ttc" id="detectorproperties__icarus_8fcl_html_a9b9fa69c4a598d1a5315974a4beb5cb5"><div class="ttname"><a href="../../d1/d33/detectorproperties__icarus_8fcl.html#a9b9fa69c4a598d1a5315974a4beb5cb5">icarus_detproperties</a></div><div class="ttdeci">BEGIN_PROLOG icarus_detproperties</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d33/detectorproperties__icarus_8fcl_source.html#l00008">detectorproperties_icarus.fcl:8</a></div></div>
 <div class="ttc" id="Deprecated_2wirecell__multitpc__detsim__icarus_8fcl_html_afe07e1c8db25c541ac02889d8a7e45a7"><div class="ttname"><a href="../../d3/d13/Deprecated_2wirecell__multitpc__detsim__icarus_8fcl.html#afe07e1c8db25c541ac02889d8a7e45a7">configs</a></div><div class="ttdeci">process_name WireCellLarsoft configs</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d13/Deprecated_2wirecell__multitpc__detsim__icarus_8fcl_source.html#l00031">Deprecated/wirecell_multitpc_detsim_icarus.fcl:31</a></div></div>

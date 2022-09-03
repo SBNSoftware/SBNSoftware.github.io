@@ -144,7 +144,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0492c833b98c64604b64a1e661db722a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Count&gt;<br/>
+<div class="textblock"><h3>template&lt;typename Count = unsigned int&gt;<br/>
 class icarus::ns::util::PassCounter&lt; Count &gt;</h3>
 
 <p>Class counting pass/fail events. </p>
@@ -171,13 +171,13 @@ class icarus::ns::util::PassCounter&lt; Count &gt;</h3>
 <li>difference <code>operator-(Count)</code> </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00014">14</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00015">15</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ac03965cf848e1657f291f47aa1218db8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html">icarus::ns::util::PassCounter</a>&lt; Count &gt;::<a class="el" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a> =  Count</td>
@@ -187,7 +187,7 @@ template&lt;typename Count&gt; </div>
 
 <p>Type used for counters. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00044">44</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00045">45</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
 
 </div>
 </div>
@@ -210,15 +210,15 @@ template&lt;typename Count &gt; </div>
 
 <p>Adds a single event, specifying whether it "passes" or not. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00111">111</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                  {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  ++<a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (pass) ++<a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <span class="comment">// icarus::ns::util::PassCounter&lt;&gt;::add()</span></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00098">PassCounter.h:98</a></div></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00112">112</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  ++<a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> (pass) ++<a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;} <span class="comment">// icarus::ns::util::PassCounter&lt;&gt;::add()</span></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00100">PassCounter.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,7 +226,7 @@ template&lt;typename Count &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -247,9 +247,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Adds a single event which did not "pass". </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00075">75</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{ <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">add</a>(<span class="keyword">false</span>); }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a885f6ae6e6d62785456aeca63b040a58"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">icarus::ns::util::PassCounter::add</a></div><div class="ttdeci">void add(bool pass)</div><div class="ttdoc">Adds a single event, specifying whether it &amp;quot;passes&amp;quot; or not. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00111">PassCounter.h:111</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00076">76</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{ <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">add</a>(<span class="keyword">false</span>); }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a885f6ae6e6d62785456aeca63b040a58"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">icarus::ns::util::PassCounter::add</a></div><div class="ttdeci">void add(bool pass)</div><div class="ttdoc">Adds a single event, specifying whether it &amp;quot;passes&amp;quot; or not. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00112">PassCounter.h:112</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -257,7 +257,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -278,9 +278,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Adds a single event which did "pass". </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00078">78</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">add</a>(<span class="keyword">true</span>); }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a885f6ae6e6d62785456aeca63b040a58"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">icarus::ns::util::PassCounter::add</a></div><div class="ttdeci">void add(bool pass)</div><div class="ttdoc">Adds a single event, specifying whether it &amp;quot;passes&amp;quot; or not. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00111">PassCounter.h:111</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00079">79</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">add</a>(<span class="keyword">true</span>); }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a885f6ae6e6d62785456aeca63b040a58"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a885f6ae6e6d62785456aeca63b040a58">icarus::ns::util::PassCounter::add</a></div><div class="ttdeci">void add(bool pass)</div><div class="ttdoc">Adds a single event, specifying whether it &amp;quot;passes&amp;quot; or not. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00112">PassCounter.h:112</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -288,7 +288,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -309,10 +309,10 @@ template&lt;typename Count&gt; </div>
 
 <p>Returns whether there is no event recorded yet. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00062">62</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">total</a>() == <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{}; }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_af0ad0c91c3567db7855732a58fb81c20"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">icarus::ns::util::PassCounter::total</a></div><div class="ttdeci">Count_t total() const </div><div class="ttdoc">Returns the total number of registered events. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00059">PassCounter.h:59</a></div></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_ac03965cf848e1657f291f47aa1218db8"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">icarus::ns::util::PassCounter::Count_t</a></div><div class="ttdeci">Count Count_t</div><div class="ttdoc">Type used for counters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00044">PassCounter.h:44</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00063">63</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">total</a>() == <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{}; }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_af0ad0c91c3567db7855732a58fb81c20"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">icarus::ns::util::PassCounter::total</a></div><div class="ttdeci">Count_t total() const </div><div class="ttdoc">Returns the total number of registered events. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00060">PassCounter.h:60</a></div></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_ac03965cf848e1657f291f47aa1218db8"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">icarus::ns::util::PassCounter::Count_t</a></div><div class="ttdeci">Count Count_t</div><div class="ttdoc">Type used for counters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00045">PassCounter.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -341,10 +341,10 @@ template&lt;typename Count&gt; </div>
 
 <p>Returns the number of events which "failed". </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00056">56</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">total</a>() - <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a17c6c31d4400616510e54843bd4aed01">passed</a>(); }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_af0ad0c91c3567db7855732a58fb81c20"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">icarus::ns::util::PassCounter::total</a></div><div class="ttdeci">Count_t total() const </div><div class="ttdoc">Returns the total number of registered events. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00059">PassCounter.h:59</a></div></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a17c6c31d4400616510e54843bd4aed01"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a17c6c31d4400616510e54843bd4aed01">icarus::ns::util::PassCounter::passed</a></div><div class="ttdeci">Count_t passed() const </div><div class="ttdoc">Returns the number of events which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00053">PassCounter.h:53</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00057">57</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">total</a>() - <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a17c6c31d4400616510e54843bd4aed01">passed</a>(); }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_af0ad0c91c3567db7855732a58fb81c20"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#af0ad0c91c3567db7855732a58fb81c20">icarus::ns::util::PassCounter::total</a></div><div class="ttdeci">Count_t total() const </div><div class="ttdoc">Returns the total number of registered events. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00060">PassCounter.h:60</a></div></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a17c6c31d4400616510e54843bd4aed01"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a17c6c31d4400616510e54843bd4aed01">icarus::ns::util::PassCounter::passed</a></div><div class="ttdeci">Count_t passed() const </div><div class="ttdoc">Returns the number of events which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00054">PassCounter.h:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -373,9 +373,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Returns the number of events which "passed". </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00053">53</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>; }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00054">54</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>; }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00100">PassCounter.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -383,7 +383,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -404,9 +404,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Direct read-only access to data members for derived classes. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00092">92</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>; }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00093">93</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a>; }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00100">PassCounter.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -427,16 +427,16 @@ template&lt;typename Count &gt; </div>
 
 <p>Resets all counts. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00121">121</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                           {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a> = <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a> = <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{};</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// icarus::ns::util::PassCounter&lt;&gt;::reset()</span></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00098">PassCounter.h:98</a></div></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_ac03965cf848e1657f291f47aa1218db8"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">icarus::ns::util::PassCounter::Count_t</a></div><div class="ttdeci">Count Count_t</div><div class="ttdoc">Type used for counters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00044">PassCounter.h:44</a></div></div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00122">122</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                           {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a> = <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">fPassed</a> = <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">Count_t</a>{};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">// icarus::ns::util::PassCounter&lt;&gt;::reset()</span></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_ac03965cf848e1657f291f47aa1218db8"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#ac03965cf848e1657f291f47aa1218db8">icarus::ns::util::PassCounter::Count_t</a></div><div class="ttdeci">Count Count_t</div><div class="ttdoc">Type used for counters. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00045">PassCounter.h:45</a></div></div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_a0492c833b98c64604b64a1e661db722a"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#a0492c833b98c64604b64a1e661db722a">icarus::ns::util::PassCounter::fPassed</a></div><div class="ttdeci">Count_t fPassed</div><div class="ttdoc">Entries which &amp;quot;passed&amp;quot;. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00100">PassCounter.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,7 +444,7 @@ template&lt;typename Count &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -465,9 +465,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Returns the total number of registered events. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00059">59</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>; }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00098">PassCounter.h:98</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00060">60</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>; }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -475,7 +475,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -496,9 +496,9 @@ template&lt;typename Count&gt; </div>
 
 <p>Direct read-only access to data members for derived classes. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00089">89</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>; }</div>
-<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00098">PassCounter.h:98</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00090">90</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">fTotal</a>; }</div>
+<div class="ttc" id="classicarus_1_1ns_1_1util_1_1PassCounter_html_aa6b9c1224951a8f5362387272468d90e"><div class="ttname"><a href="../../de/d1a/classicarus_1_1ns_1_1util_1_1PassCounter.html#aa6b9c1224951a8f5362387272468d90e">icarus::ns::util::PassCounter::fTotal</a></div><div class="ttdeci">Count_t fTotal</div><div class="ttdoc">Total entries. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dff/PassCounter_8h_source.html#l00099">PassCounter.h:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -507,7 +507,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -525,7 +525,7 @@ template&lt;typename Count&gt; </div>
 
 <p>Entries which "passed". </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00099">99</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00100">100</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ template&lt;typename Count&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Count&gt; </div>
+template&lt;typename Count = unsigned int&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -551,7 +551,7 @@ template&lt;typename Count&gt; </div>
 
 <p>Total entries. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00098">98</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dff/PassCounter_8h_source.html#l00099">99</a> of file <a class="el" href="../../d3/dff/PassCounter_8h_source.html">PassCounter.h</a>.</p>
 
 </div>
 </div>
