@@ -5,6 +5,8 @@ var searchData=
   ['nameselector_2eh',['NameSelector.h',['../d0/da3/NameSelector_8h.html',1,'']]],
   ['nameselector_5ftest_2ecxx',['NameSelector_test.cxx',['../d2/d24/NameSelector__test_8cxx.html',1,'']]],
   ['namespaces_2eh',['namespaces.h',['../d6/d7b/namespaces_8h.html',1,'']]],
+  ['ncdeltaradiative_5fmodule_2ecc',['NCDeltaRadiative_module.cc',['../d3/d35/NCDeltaRadiative__module_8cc.html',1,'']]],
+  ['ncradiativeresonant_5fmodule_2ecc',['NCRadiativeResonant_module.cc',['../d1/d1c/NCRadiativeResonant__module_8cc.html',1,'']]],
   ['ndkgen_5fmodule_2ecc',['NDKGen_module.cc',['../d4/da7/NDKGen__module_8cc.html',1,'']]],
   ['nearbyclustermopupalgorithm_2ecc',['NearbyClusterMopUpAlgorithm.cc',['../d3/d1a/NearbyClusterMopUpAlgorithm_8cc.html',1,'']]],
   ['nearbyclustermopupalgorithm_2eh',['NearbyClusterMopUpAlgorithm.h',['../da/de8/NearbyClusterMopUpAlgorithm_8h.html',1,'']]],

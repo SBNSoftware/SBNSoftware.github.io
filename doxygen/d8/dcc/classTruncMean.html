@@ -81,14 +81,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d8/d26/TruncMean_8h_source.html">TruncMean.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html">TruncMean.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a988d804012ed97e6b01f94abda57060c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcc/classTruncMean.html#a988d804012ed97e6b01f94abda57060c">CalcTruncMeanProfile</a> (const std::vector&lt; float &gt; &amp;rr_v, const std::vector&lt; float &gt; &amp;dq_v, std::vector&lt; float &gt; &amp;dq_trunc_v, const float &amp;nsigma=1)</td></tr>
 <tr class="memdesc:a988d804012ed97e6b01f94abda57060c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given residual range and dq vectors return truncated local dq. Input vectors are assumed to be match pair-wise (nth entry in rr_v corresponds to nth entry in dq_v vector). Input rr_v values are also assumed to be ordered: monotonically increasing or decreasing. For every dq value a truncated linear dq value is calculated as follows: 0) all dq values within a rr range set by the class variable _rad are selected. 1) the median and rms of these values is calculated. 2) the subset of local dq values within the range [median-rms, median+rms] is selected. 3) the resulting local truncated dq is the average of this truncated subset.  std::vector&lt;float&gt; rr_v -&gt; vector of x-axis coordinates (i.e. position for track profile)  std::vector&lt;float&gt; dq_v -&gt; vector of measured values for which truncated profile is requested (i.e. charge profile of a track)  std::vector&lt;float&gt; dq_trunc_v -&gt; passed by reference -&gt; output stored here  float nsigma -&gt; optional parameter, number of sigma to keep around RMS for TM calculation.  <a href="#a988d804012ed97e6b01f94abda57060c">More...</a><br/></td></tr>
 <tr class="separator:a988d804012ed97e6b01f94abda57060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699ce0cac77cc81e8e689f11d62acc91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91">CalcIterativeTruncMean</a> (std::vector&lt; float &gt; v, const size_t &amp;nmin, const size_t &amp;nmax, const size_t &amp;currentiteration, const size_t &amp;lmin, const float &amp;convergencelimit, const float &amp;nsigma, const float &amp;oldmed=<a class="el" href="../../d8/d26/TruncMean_8h.html#a6a248efd9c7935ccce8406bdd47052ca">kINVALID_FLOAT</a>)</td></tr>
+<tr class="memitem:a699ce0cac77cc81e8e689f11d62acc91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91">CalcIterativeTruncMean</a> (std::vector&lt; float &gt; v, const size_t &amp;nmin, const size_t &amp;nmax, const size_t &amp;currentiteration, const size_t &amp;lmin, const float &amp;convergencelimit, const float &amp;nsigma, const float &amp;oldmed=<a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h.html#a6a248efd9c7935ccce8406bdd47052ca">kINVALID_FLOAT</a>)</td></tr>
 <tr class="memdesc:a699ce0cac77cc81e8e689f11d62acc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively calculate the truncated mean of a distribution  std::vector&lt;float&gt; v -&gt; vector of values for which truncated mean is asked  size_t nmin -&gt; minimum number of iterations to converge on truncated mean  size_t nmax -&gt; maximum number of iterations to converge on truncated mean  size_t lmin -&gt; minimum number of entries in vector before exiting and returning current value  size_t currentiteration -&gt; current iteration  float convergencelimit -&gt; fractional difference between successive iterations under which the iteration is completed, provided nmin iterations have occurred.  nsigma -&gt; number of sigma around the median value to keep when the distribution is trimmed.  <a href="#a699ce0cac77cc81e8e689f11d62acc91">More...</a><br/></td></tr>
 <tr class="separator:a699ce0cac77cc81e8e689f11d62acc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43354bf73fb11abfde452ef538ae2380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcc/classTruncMean.html#a43354bf73fb11abfde452ef538ae2380">setRadius</a> (const float &amp;rad)</td></tr>
@@ -112,7 +112,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The truncated mean class allows to compute the following quantities 1) the truncated mean profile of an ordered vector of values, such as the charge profile along a particle's track. To create such a profile use the function <a class="el" href="../../d8/dcc/classTruncMean.html#a988d804012ed97e6b01f94abda57060c" title="Given residual range and dq vectors return truncated local dq. Input vectors are assumed to be match ...">CalcTruncMeanProfile()</a> 2) Get the truncated mean value of a distribution. This function iteratively hones in on the truncated mean of a distribution by updating the mean and cutting the tails after each iteration. For this functionality use <a class="el" href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91" title="Iteratively calculate the truncated mean of a distribution  std::vector&lt;float&gt; v -&gt; vector of values ...">CalcIterativeTruncMean()</a> doxygen documentation! </p>
 
-<p>Definition at line <a class="el" href="../../d8/d26/TruncMean_8h_source.html#l00033">33</a> of file <a class="el" href="../../d8/d26/TruncMean_8h_source.html">TruncMean.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html#l00033">33</a> of file <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a699ce0cac77cc81e8e689f11d62acc91"></a>
 <div class="memitem">
@@ -164,7 +164,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float &amp;&#160;</td>
-          <td class="paramname"><em>oldmed</em> = <code><a class="el" href="../../d8/d26/TruncMean_8h.html#a6a248efd9c7935ccce8406bdd47052ca">kINVALID_FLOAT</a></code>&#160;</td>
+          <td class="paramname"><em>oldmed</em> = <code><a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h.html#a6a248efd9c7935ccce8406bdd47052ca">kINVALID_FLOAT</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,7 +176,7 @@ Private Attributes</h2></td></tr>
 
 <p>Iteratively calculate the truncated mean of a distribution  std::vector&lt;float&gt; v -&gt; vector of values for which truncated mean is asked  size_t nmin -&gt; minimum number of iterations to converge on truncated mean  size_t nmax -&gt; maximum number of iterations to converge on truncated mean  size_t lmin -&gt; minimum number of entries in vector before exiting and returning current value  size_t currentiteration -&gt; current iteration  float convergencelimit -&gt; fractional difference between successive iterations under which the iteration is completed, provided nmin iterations have occurred.  nsigma -&gt; number of sigma around the median value to keep when the distribution is trimmed. </p>
 
-<p>Definition at line <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html#l00007">7</a> of file <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00007">7</a> of file <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a> = <a class="code" href="../../d8/dcc/classTruncMean.html#af288d09996f6fd1cf35db78d86b2a363">Mean</a>(v);</div>
@@ -208,11 +208,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91">CalcIterativeTruncMean</a>(v, nmin, nmax, lmin, currentiteration+1, convergencelimit, nsigma, med);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
-<div class="ttc" id="classTruncMean_html_a2a7233b09d57157d0d71cfd2ce5b915a"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a2a7233b09d57157d0d71cfd2ce5b915a">TruncMean::Median</a></div><div class="ttdeci">float Median(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00114">TruncMean.cxx:114</a></div></div>
-<div class="ttc" id="classTruncMean_html_a50ab261c091caf32e3c678e71691461c"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a50ab261c091caf32e3c678e71691461c">TruncMean::RMS</a></div><div class="ttdeci">float RMS(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00128">TruncMean.cxx:128</a></div></div>
+<div class="ttc" id="classTruncMean_html_a2a7233b09d57157d0d71cfd2ce5b915a"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a2a7233b09d57157d0d71cfd2ce5b915a">TruncMean::Median</a></div><div class="ttdeci">float Median(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00114">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:114</a></div></div>
+<div class="ttc" id="classTruncMean_html_a50ab261c091caf32e3c678e71691461c"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a50ab261c091caf32e3c678e71691461c">TruncMean::RMS</a></div><div class="ttdeci">float RMS(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00128">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:128</a></div></div>
 <div class="ttc" id="namespacepmtana_html_afea8da0c88fccc3252529b6a49284b4a"><div class="ttname"><a href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">pmtana::mean</a></div><div class="ttdeci">double mean(const std::vector&lt; short &gt; &amp;wf, size_t start, size_t nsample)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de4/UtilFunc_8cxx_source.html#l00013">UtilFunc.cxx:13</a></div></div>
-<div class="ttc" id="classTruncMean_html_a699ce0cac77cc81e8e689f11d62acc91"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91">TruncMean::CalcIterativeTruncMean</a></div><div class="ttdeci">float CalcIterativeTruncMean(std::vector&lt; float &gt; v, const size_t &amp;nmin, const size_t &amp;nmax, const size_t &amp;currentiteration, const size_t &amp;lmin, const float &amp;convergencelimit, const float &amp;nsigma, const float &amp;oldmed=kINVALID_FLOAT)</div><div class="ttdoc">Iteratively calculate the truncated mean of a distribution  std::vector&amp;lt;float&amp;gt; v -&amp;gt; vector of values ...</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00007">TruncMean.cxx:7</a></div></div>
-<div class="ttc" id="classTruncMean_html_af288d09996f6fd1cf35db78d86b2a363"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#af288d09996f6fd1cf35db78d86b2a363">TruncMean::Mean</a></div><div class="ttdeci">float Mean(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00104">TruncMean.cxx:104</a></div></div>
+<div class="ttc" id="classTruncMean_html_a699ce0cac77cc81e8e689f11d62acc91"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a699ce0cac77cc81e8e689f11d62acc91">TruncMean::CalcIterativeTruncMean</a></div><div class="ttdeci">float CalcIterativeTruncMean(std::vector&lt; float &gt; v, const size_t &amp;nmin, const size_t &amp;nmax, const size_t &amp;currentiteration, const size_t &amp;lmin, const float &amp;convergencelimit, const float &amp;nsigma, const float &amp;oldmed=kINVALID_FLOAT)</div><div class="ttdoc">Iteratively calculate the truncated mean of a distribution  std::vector&amp;lt;float&amp;gt; v -&amp;gt; vector of values ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00007">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:7</a></div></div>
+<div class="ttc" id="classTruncMean_html_af288d09996f6fd1cf35db78d86b2a363"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#af288d09996f6fd1cf35db78d86b2a363">TruncMean::Mean</a></div><div class="ttdeci">float Mean(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00104">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:104</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,7 +254,7 @@ Private Attributes</h2></td></tr>
 
 <p>Given residual range and dq vectors return truncated local dq. Input vectors are assumed to be match pair-wise (nth entry in rr_v corresponds to nth entry in dq_v vector). Input rr_v values are also assumed to be ordered: monotonically increasing or decreasing. For every dq value a truncated linear dq value is calculated as follows: 0) all dq values within a rr range set by the class variable _rad are selected. 1) the median and rms of these values is calculated. 2) the subset of local dq values within the range [median-rms, median+rms] is selected. 3) the resulting local truncated dq is the average of this truncated subset.  std::vector&lt;float&gt; rr_v -&gt; vector of x-axis coordinates (i.e. position for track profile)  std::vector&lt;float&gt; dq_v -&gt; vector of measured values for which truncated profile is requested (i.e. charge profile of a track)  std::vector&lt;float&gt; dq_trunc_v -&gt; passed by reference -&gt; output stored here  float nsigma -&gt; optional parameter, number of sigma to keep around RMS for TM calculation. </p>
 
-<p>Definition at line <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html#l00043">43</a> of file <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00043">43</a> of file <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// how many points to sample</span></div>
@@ -313,9 +313,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="ttc" id="classTruncMean_html_a2a7233b09d57157d0d71cfd2ce5b915a"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a2a7233b09d57157d0d71cfd2ce5b915a">TruncMean::Median</a></div><div class="ttdeci">float Median(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00114">TruncMean.cxx:114</a></div></div>
-<div class="ttc" id="classTruncMean_html_ad34164ff516cda159d2a001aa14ec3e5"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#ad34164ff516cda159d2a001aa14ec3e5">TruncMean::_rad</a></div><div class="ttdeci">double _rad</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d26/TruncMean_8h_source.html#l00089">TruncMean.h:89</a></div></div>
-<div class="ttc" id="classTruncMean_html_a50ab261c091caf32e3c678e71691461c"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a50ab261c091caf32e3c678e71691461c">TruncMean::RMS</a></div><div class="ttdeci">float RMS(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dc6/TruncMean_8cxx_source.html#l00128">TruncMean.cxx:128</a></div></div>
+<div class="ttc" id="classTruncMean_html_a2a7233b09d57157d0d71cfd2ce5b915a"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a2a7233b09d57157d0d71cfd2ce5b915a">TruncMean::Median</a></div><div class="ttdeci">float Median(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00114">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:114</a></div></div>
+<div class="ttc" id="classTruncMean_html_ad34164ff516cda159d2a001aa14ec3e5"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#ad34164ff516cda159d2a001aa14ec3e5">TruncMean::_rad</a></div><div class="ttdeci">double _rad</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html#l00089">larana/larana/TruncatedMean/Algorithm/TruncMean.h:89</a></div></div>
+<div class="ttc" id="classTruncMean_html_a50ab261c091caf32e3c678e71691461c"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#a50ab261c091caf32e3c678e71691461c">TruncMean::RMS</a></div><div class="ttdeci">float RMS(const std::vector&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00128">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx:128</a></div></div>
 <div class="ttc" id="namespacechannelDBConverter_html_ab6cfbbcbb53c275375289d47dec67f46"><div class="ttname"><a href="../../d4/d43/namespacechannelDBConverter.html#ab6cfbbcbb53c275375289d47dec67f46">channelDBConverter.n</a></div><div class="ttdeci">int n</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d11/channelDBConverter_8py_source.html#l00249">channelDBConverter.py:249</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -342,7 +342,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html#l00104">104</a> of file <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00104">104</a> of file <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="../../da/dc9/namespacepmtana.html#afea8da0c88fccc3252529b6a49284b4a">mean</a> = 0.;</div>
@@ -378,7 +378,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html#l00114">114</a> of file <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00114">114</a> of file <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (v.size() == 1) <span class="keywordflow">return</span> v[0];</div>
@@ -416,7 +416,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html#l00128">128</a> of file <a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a>.</p>
+<p>Definition at line <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html#l00128">128</a> of file <a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">float</span> avg = 0.;</div>
@@ -455,9 +455,9 @@ Private Attributes</h2></td></tr>
 
 <p>Set the smearing radius over which to take hits for truncated mean computaton. </p>
 
-<p>Definition at line <a class="el" href="../../d8/d26/TruncMean_8h_source.html#l00077">77</a> of file <a class="el" href="../../d8/d26/TruncMean_8h_source.html">TruncMean.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html#l00077">77</a> of file <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{ <a class="code" href="../../d8/dcc/classTruncMean.html#ad34164ff516cda159d2a001aa14ec3e5">_rad</a> = rad; }</div>
-<div class="ttc" id="classTruncMean_html_ad34164ff516cda159d2a001aa14ec3e5"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#ad34164ff516cda159d2a001aa14ec3e5">TruncMean::_rad</a></div><div class="ttdeci">double _rad</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d26/TruncMean_8h_source.html#l00089">TruncMean.h:89</a></div></div>
+<div class="ttc" id="classTruncMean_html_ad34164ff516cda159d2a001aa14ec3e5"><div class="ttname"><a href="../../d8/dcc/classTruncMean.html#ad34164ff516cda159d2a001aa14ec3e5">TruncMean::_rad</a></div><div class="ttdeci">double _rad</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html#l00089">larana/larana/TruncatedMean/Algorithm/TruncMean.h:89</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -481,13 +481,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Smearing radius over which charge from neighboring hits is scanned to calculate local truncated mean </p>
 
-<p>Definition at line <a class="el" href="../../d8/d26/TruncMean_8h_source.html#l00089">89</a> of file <a class="el" href="../../d8/d26/TruncMean_8h_source.html">TruncMean.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html#l00089">89</a> of file <a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="../../d8/d26/TruncMean_8h_source.html">TruncMean.h</a></li>
-<li><a class="el" href="../../de/dc6/TruncMean_8cxx_source.html">TruncMean.cxx</a></li>
+<li><a class="el" href="../../d0/d3f/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8h_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.h</a></li>
+<li><a class="el" href="../../d7/dd9/larana_2larana_2TruncatedMean_2Algorithm_2TruncMean_8cxx_source.html">larana/larana/TruncatedMean/Algorithm/TruncMean.cxx</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

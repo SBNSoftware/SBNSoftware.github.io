@@ -100,7 +100,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00221">221</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00226">226</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a208ccfe20f8adf673bf5aa58c80c45e3"></a>
 <div class="memitem">
@@ -132,19 +132,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00222">222</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">  222</a></span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">def </span><a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">add</a>(self, data, key = None):</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">if</span> key <span class="keywordflow">is</span> <span class="keywordtype">None</span>: key = data</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">try</span>:</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="keywordflow">if</span> key &gt;= self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">minKey</a>: <span class="keywordflow">return</span> <span class="keyword">False</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">  227</a></span>&#160;    <span class="keywordflow">except</span> AttributeError: <span class="keywordflow">pass</span> <span class="comment"># no self.minKey yet?</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">  228</a></span>&#160;    self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">minKey</a> = key</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">minData</a> = data</div>
+<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00227">227</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">  227</a></span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">def </span><a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">add</a>(self, data, key = None):</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> key <span class="keywordflow">is</span> <span class="keywordtype">None</span>: key = data</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <span class="keywordflow">if</span> key &gt;= self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">minKey</a>: <span class="keywordflow">return</span> <span class="keyword">False</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">  232</a></span>&#160;    <span class="keywordflow">except</span> AttributeError: <span class="keywordflow">pass</span> <span class="comment"># no self.minKey yet?</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">  233</a></span>&#160;    self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">minKey</a> = key</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    self.<a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">minData</a> = data</div>
     <span class="keywordflow">return</span> <span class="keyword">True</span></div>
-<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a56677472b1870147b3924b2c46ac2447"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">sortDataLoggerFiles.MinimumAccumulator.minKey</a></div><div class="ttdeci">minKey</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00227">sortDataLoggerFiles.py:227</a></div></div>
-<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a208ccfe20f8adf673bf5aa58c80c45e3"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">sortDataLoggerFiles.MinimumAccumulator.add</a></div><div class="ttdeci">def add</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00222">sortDataLoggerFiles.py:222</a></div></div>
-<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_aa26df84ca7dc5c3c2c26c16af55e2afb"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">sortDataLoggerFiles.MinimumAccumulator.minData</a></div><div class="ttdeci">minData</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00228">sortDataLoggerFiles.py:228</a></div></div>
+<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a56677472b1870147b3924b2c46ac2447"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a56677472b1870147b3924b2c46ac2447">sortDataLoggerFiles.MinimumAccumulator.minKey</a></div><div class="ttdeci">minKey</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00232">sortDataLoggerFiles.py:232</a></div></div>
+<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a208ccfe20f8adf673bf5aa58c80c45e3"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a208ccfe20f8adf673bf5aa58c80c45e3">sortDataLoggerFiles.MinimumAccumulator.add</a></div><div class="ttdeci">def add</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00227">sortDataLoggerFiles.py:227</a></div></div>
+<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_aa26df84ca7dc5c3c2c26c16af55e2afb"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#aa26df84ca7dc5c3c2c26c16af55e2afb">sortDataLoggerFiles.MinimumAccumulator.minData</a></div><div class="ttdeci">minData</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00233">sortDataLoggerFiles.py:233</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -162,13 +162,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00231">231</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">  231</a></span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keyword">def </span><a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">min</a>(self): <span class="keywordflow">return</span> self.minData</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"># class MinimumAccumulator</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00236">236</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">  236</a></span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">def </span><a class="code" href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">min</a>(self): <span class="keywordflow">return</span> self.minData</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"># class MinimumAccumulator</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 </div>
-<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a7f723663f4f69caebd1b6990aea56f70"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">sortDataLoggerFiles.MinimumAccumulator.min</a></div><div class="ttdeci">def min</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00231">sortDataLoggerFiles.py:231</a></div></div>
+<div class="ttc" id="classsortDataLoggerFiles_1_1MinimumAccumulator_html_a7f723663f4f69caebd1b6990aea56f70"><div class="ttname"><a href="../../d7/d2e/classsortDataLoggerFiles_1_1MinimumAccumulator.html#a7f723663f4f69caebd1b6990aea56f70">sortDataLoggerFiles.MinimumAccumulator.min</a></div><div class="ttdeci">def min</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00236">sortDataLoggerFiles.py:236</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00228">228</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00233">233</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00227">227</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html#l00232">232</a> of file <a class="el" href="../../d5/dc8/sortDataLoggerFiles_8py_source.html">sortDataLoggerFiles.py</a>.</p>
 
 </div>
 </div>
