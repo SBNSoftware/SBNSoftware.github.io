@@ -429,7 +429,7 @@ wrong results.
   the case. The most common ones are:
   * if no _art_ associations are needed:
     ```cpp
-    auto const& hits = event.getByLabel<std::vector<recob::Hit>>(fHitTag);
+    auto const& hits = event.getProduct<std::vector<recob::Hit>>(fHitTag);
     ```
   * if associations are needed, and therefore `art::Ptr` or `art::Handle`:
     ```cpp
@@ -599,9 +599,9 @@ It should be used judiciously (and sparsely).
 * statements that already spell out the type elsewhere:
   ```cpp
   auto const& vertices
-    = event.getByLabel<std::vector<recob::Vertex>>(vertexTag);
+    = event.getProduct<std::vector<recob::Vertex>>(vertexTag);
   ```
-  In this case `art::Event::getByLabel()` (which should be reasonably
+  In this case `art::Event::getProduct()` (which should be reasonably
   well known anyway) returns the type written in its template argument.
 * in lambda types, of course, `auto` is acceptable when no other option is available:
   ```cpp
@@ -981,12 +981,12 @@ There are well known patterns that prevent unnecessary copies.
 [`[CF.111]`](#CF111) <span id="CF111"> **[++]**
   It is **required** to avoid copies of return values. For example:
   ```cpp
-  auto digits = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag); // BAD
+  auto digits = event.getProduct<std::vector<raw::RawDigits>>(WaveformTag); // BAD
   ```
   should become
   ```cpp
   auto const& digits
-    = event.getByLabel<std::vector<raw::RawDigits>>(WaveformTag);
+    = event.getProduct<std::vector<raw::RawDigits>>(WaveformTag);
   ```
   to avoid copying the returned vector.
 
