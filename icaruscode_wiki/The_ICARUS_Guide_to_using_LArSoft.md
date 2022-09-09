@@ -12,10 +12,11 @@ The ICARUS Guide to using LArSoft
 
 > DISCLAIMER: Due to rapid development this page can become out of date
 > at times. As well, remember that unknown problems don\'t materialize
-> solutions out of the ether: if you have a problem? write an e-mail
-> **and** [open a ticket
-> here](https://cdcvs.fnal.gov/redmine/projects/icaruscode/issues/new)
-> (you need to be logged in to Redmine).
+> solutions out of the ether: do you have a problem? start by writing in
+> Slack channel [`#icarus_general`](https://shortbaseline.slack.com/archives/C014TBQ9P6J)
+> (or another more appropriate one in [workspace SBN](https://shortbaseline.slack.com));
+> optionally also [open a GitHub issue in `icaruscode`](https://github.com/SBNSoftware/SBNSoftware.github.io/issues)
+> or where appropriate.
 
 The following is a quick guide (based largely on MicroBooNE experience
 and stolen from SBNDcode wiki) to the things you need to do in order to
@@ -37,7 +38,7 @@ run and develop applications in LArSoft. The following assumes:
     second step.
 -   You have a working knowledge of UNIX.
 -   You are using the `bash` shell (`zsh` is not well supported to
-    date^[1].
+    date¹).
 
 
 
@@ -123,6 +124,9 @@ The links below haven\'t been updated yet:
 
 ------------------------------------------------------------------------
 
-^1^ Whenever in Redmine wiki you see the claim \"to date\", you can
-verify when that claim was written by exploring the *History* of that
-page, via the link on the top right of the page itself.
+¹ Whenever in GitHub wiki you see the claim "to date", you can
+verify when that claim was written by exploring the commit history of that
+page. You'll need to switch to the edit mode ("Improve this page" on top right),
+then take note of the name of the file, click on the directory that contains it
+(the link is shown by GitHub just above the editing box) and then look for the
+file in the listing.
