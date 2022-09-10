@@ -8,6 +8,7 @@ var searchData=
   ['crtcommonutils',['CRTCommonUtils',['../dd/d12/namespacesbnd_1_1CRTCommonUtils.html',1,'sbnd']]],
   ['details',['details',['../d2/d02/namespacesim_1_1details.html',1,'sim']]],
   ['details',['details',['../d0/ddd/namespacesbndaq_1_1details.html',1,'sbndaq']]],
+  ['details',['details',['../de/d93/namespacesbn_1_1details.html',1,'sbn']]],
   ['dump',['dump',['../d1/d34/namespacesim_1_1dump.html',1,'sim']]],
   ['energy',['energy',['../df/dce/namespaceshowerreco_1_1energy.html',1,'showerreco']]],
   ['evwgh',['evwgh',['../d7/dae/namespacesbn_1_1evwgh.html',1,'sbn']]],

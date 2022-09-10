@@ -74,6 +74,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:db/dd9/PedAlgoFixed_8cxx"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd9/PedAlgoFixed_8cxx.html">PedAlgoFixed.cxx</a></td></tr>
+<tr class="memdesc:db/dd9/PedAlgoFixed_8cxx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pedestal "algorithm" reading the pedestals from somewhere else. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d4/ddd/PedAlgoFixed_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/PedAlgoFixed_8h.html">PedAlgoFixed.h</a></td></tr>
+<tr class="memdesc:d4/ddd/PedAlgoFixed_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pedestal "algorithm" reading the pedestals from somewhere else. <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/d48/AlgoCFD_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/AlgoCFD_8h.html">AlgoCFD.h</a></td></tr>
 <tr class="memdesc:da/d48/AlgoCFD_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class definition file of AlgoCFD. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,9 +119,14 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d2/d70/namespacefhicl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d70/namespacefhicl.html">fhicl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/dc9/namespacepmtana"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/namespacepmtana.html">pmtana</a></td></tr>
+<tr class="memdesc:da/dc9/namespacepmtana"><td class="mdescLeft">&#160;</td><td class="mdescRight">LArSoft libraries. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>This is a big hack.</p>
+<p>The optical reconstruction mini-framework passes to the pedestal algorithm only a pointer to the waveform samples, with no context at all. In this algorithm we need to figure out that context. We take the pointer of every single possible input, because we need to know the index of the waveform, which is required to match the index in the pedestal and RMS lists. We can't even just take the address of the first waveform, because we don't know the <em>actual</em> type of the vector the waveform belongs too (in LArSoft, that is <code><a class="el" href="../../d0/d29/classraw_1_1OpDetWaveform.html">raw::OpDetWaveform</a></code>, which has different size and therefore pointer math than the vector of samples it derives from).</p>
+<h2>Multithreading note </h2>
+<p>This class is not multithread-ready. To process multiple events, the input sets should be placed into a container with controlled access (one writes, many read). </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

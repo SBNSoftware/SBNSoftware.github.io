@@ -504,10 +504,10 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000143">Todo:</a></b></dt><dd>think about effects of drift between planes </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo:</a></b></dt><dd>think about effects of drift between planes </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000145">Todo:</a></b></dt><dd>check on what happens if we allow the tdc value to be </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000146">Todo:</a></b></dt><dd>beyond the end of the expected number of ticks </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000146">Todo:</a></b></dt><dd>think about effects of drift between planes </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000147">Todo:</a></b></dt><dd>think about effects of drift between planes </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000148">Todo:</a></b></dt><dd>check on what happens if we allow the tdc value to be </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000149">Todo:</a></b></dt><dd>beyond the end of the expected number of ticks </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d0/d99/LArVoxelReadout_8cxx_source.html#l00336">336</a> of file <a class="el" href="../../d0/d99/LArVoxelReadout_8cxx_source.html">LArVoxelReadout.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  {</div>
@@ -1379,11 +1379,12 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// we didn&#39;t fully decompose because it might be unnecessary;</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="comment">// now we need the full thing</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> distance = plane.DistanceFromPlane(pos);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a> = plane.DistanceFromPlane(pos);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span> plane.ComposePoint&lt;<a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a>&gt;(distance, landingPos + offPlane);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span> plane.ComposePoint&lt;<a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a>&gt;(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, landingPos + offPlane);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  } <span class="comment">// LArVoxelReadout::RecoverOffPlaneDeposit()</span></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classlarg4_1_1LArVoxelReadout_html_a824a9d9db87dda3b652d7c6bcf90e7db"><div class="ttname"><a href="../../db/d19/classlarg4_1_1LArVoxelReadout.html#a824a9d9db87dda3b652d7c6bcf90e7db">larg4::LArVoxelReadout::fOffPlaneMargin</a></div><div class="ttdeci">double fOffPlaneMargin</div><div class="ttdoc">Charge deposited within this many [cm] from the plane is lead onto it. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d42/LArVoxelReadout_8h_source.html#l00347">LArVoxelReadout.h:347</a></div></div>
 <div class="ttc" id="namespacegeo_html_a5a6f22c2aa9d0ccf6ca08bf2773a0541"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a></div><div class="ttdeci">ROOT::Math::PositionVector3D&lt; ROOT::Math::Cartesian3D&lt; double &gt;, ROOT::Math::GlobalCoordinateSystemTag &gt; Point_t</div><div class="ttdoc">Type for representation of position in physical 3D space. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7d/geo__vectors_8h_source.html#l00184">geo_vectors.h:184</a></div></div>
 </div><!-- fragment -->

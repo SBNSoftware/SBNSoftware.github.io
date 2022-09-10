@@ -114,6 +114,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a467f52157e5cbacaecec97c20c32fe92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af327afefd42cb6f6e21995504c0187da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a> (const <a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> &amp;<a class="el" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, const <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> *geo, const <a class="el" href="../../da/d57/classspacecharge_1_1SpaceCharge.html">spacecharge::SpaceCharge</a> *sce)</td></tr>
 <tr class="separator:af327afefd42cb6f6e21995504c0187da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f22110a28eb10513bf36707dd3f926"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#ae6f22110a28eb10513bf36707dd3f926">Normalize</a> (double dQdx, const art::Event &amp;<a class="el" href="../../d9/dd2/selectors_8fcl.html#ad3fec9b8b789cdb7b6899bd350d3a726">e</a>, const <a class="el" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;<a class="el" href="../../dd/de2/getStatistics_8sh.html#a04d4c2131ccb24cc78386597e8a21c5b">h</a>, const <a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> &amp;location, const <a class="el" href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a> &amp;direction, double t0)</td></tr>
+<tr class="separator:ae6f22110a28eb10513bf36707dd3f926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -131,12 +133,17 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a12cce6696e885f9b1de368821a1a3a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6db291004af9ca5624598f06c7a96810"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">fSelectNeutrino</a></td></tr>
 <tr class="separator:a6db291004af9ca5624598f06c7a96810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be86b31f253e737dae77111cd798a8d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; fhicl::ParameterSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a5be86b31f253e737dae77111cd798a8d">fNormToolConfig</a></td></tr>
+<tr class="separator:a5be86b31f253e737dae77111cd798a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f1ea1cec04991a96ef3b08024f7a3e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="../../df/d67/classINormalizeCharge.html">INormalizeCharge</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a92f1ea1cec04991a96ef3b08024f7a3e">fNormTools</a></td></tr>
+<tr class="separator:a92f1ea1cec04991a96ef3b08024f7a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55b8896bba2fe758045013560391a5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html">calo::CalorimetryAlg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a></td></tr>
 <tr class="separator:aa55b8896bba2fe758045013560391a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00051">51</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00054">54</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afebf195f688d846170f4d6c77992f76d"></a>
 <div class="memitem">
@@ -160,32 +167,25 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00086">86</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;PFParticleLabel&quot;</span>, <span class="stringliteral">&quot;pandora&quot;</span>)),</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">fTrackLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackLabel&quot;</span>, <span class="stringliteral">&quot;pandoraTrack&quot;</span>)),</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">fHitVacuumRadius</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;HitVacuumRadius&quot;</span>)),</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">fUseTrackSPRecovery</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;UseTrackSPRecovery&quot;</span>)),</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;CorrectSCE&quot;</span>)),</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;PositionsAreSCECorrected&quot;</span>)),</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">fSelectNeutrino</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;SelectNeutrino&quot;</span>)),</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;fhicl::ParameterSet &gt;(<span class="stringliteral">&quot;CaloAlg&quot;</span>))</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  produces&lt;std::vector&lt;sbn::VertexHit&gt;&gt;();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  produces&lt;art::Assns&lt;recob::Slice, sbn::VertexHit&gt;&gt;();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  produces&lt;art::Assns&lt;recob::Hit, sbn::VertexHit&gt;&gt;();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  produces&lt;art::Assns&lt;recob::Vertex, sbn::VertexHit&gt;&gt;();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_abf959e177e47fb57d675b737a6fa6c17"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">sbn::VertexChargeVacuum::fTrackLabel</a></div><div class="ttdeci">art::InputTag fTrackLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00070">VertexChargeVacuum_module.cc:70</a></div></div>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;PFParticleLabel&quot;</span>, <span class="stringliteral">&quot;pandora&quot;</span>)),</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">fTrackLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;TrackLabel&quot;</span>, <span class="stringliteral">&quot;pandoraTrack&quot;</span>)),</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">fHitVacuumRadius</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">float</span>&gt;(<span class="stringliteral">&quot;HitVacuumRadius&quot;</span>)),</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">fUseTrackSPRecovery</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;UseTrackSPRecovery&quot;</span>)),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;CorrectSCE&quot;</span>)),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;PositionsAreSCECorrected&quot;</span>)),</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">fSelectNeutrino</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;SelectNeutrino&quot;</span>)),</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a5be86b31f253e737dae77111cd798a8d">fNormToolConfig</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::vector&lt;fhicl::ParameterSet&gt;&gt;(<span class="stringliteral">&quot;NormTools&quot;</span>, {})),</div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_abf959e177e47fb57d675b737a6fa6c17"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">sbn::VertexChargeVacuum::fTrackLabel</a></div><div class="ttdeci">art::InputTag fTrackLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">VertexChargeVacuum_module.cc:73</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">VertexChargeVacuum_module.cc:74</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1bf451559fef2cfc38528d6e17871f2a"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">sbn::VertexChargeVacuum::fUseTrackSPRecovery</a></div><div class="ttdeci">bool fUseTrackSPRecovery</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">VertexChargeVacuum_module.cc:72</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aacbc916df6b9f927e52a8aa4170edc8f"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">sbn::VertexChargeVacuum::fCorrectSCE</a></div><div class="ttdeci">bool fCorrectSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">VertexChargeVacuum_module.cc:73</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aa55b8896bba2fe758045013560391a5b"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">sbn::VertexChargeVacuum::fCaloAlg</a></div><div class="ttdeci">calo::CalorimetryAlg fCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">VertexChargeVacuum_module.cc:78</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a8c1ea6e5aa866070ca14f62f2d18fadf"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">sbn::VertexChargeVacuum::fHitVacuumRadius</a></div><div class="ttdeci">float fHitVacuumRadius</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00071">VertexChargeVacuum_module.cc:71</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a6db291004af9ca5624598f06c7a96810"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">sbn::VertexChargeVacuum::fSelectNeutrino</a></div><div class="ttdeci">bool fSelectNeutrino</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">VertexChargeVacuum_module.cc:75</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1e059a3e71fbaac7fee0d4eaca56d8a1"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">sbn::VertexChargeVacuum::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00069">VertexChargeVacuum_module.cc:69</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00077">VertexChargeVacuum_module.cc:77</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1bf451559fef2cfc38528d6e17871f2a"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">sbn::VertexChargeVacuum::fUseTrackSPRecovery</a></div><div class="ttdeci">bool fUseTrackSPRecovery</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">VertexChargeVacuum_module.cc:75</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a5be86b31f253e737dae77111cd798a8d"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a5be86b31f253e737dae77111cd798a8d">sbn::VertexChargeVacuum::fNormToolConfig</a></div><div class="ttdeci">std::vector&lt; fhicl::ParameterSet &gt; fNormToolConfig</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00079">VertexChargeVacuum_module.cc:79</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aacbc916df6b9f927e52a8aa4170edc8f"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">sbn::VertexChargeVacuum::fCorrectSCE</a></div><div class="ttdeci">bool fCorrectSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00076">VertexChargeVacuum_module.cc:76</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a8c1ea6e5aa866070ca14f62f2d18fadf"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">sbn::VertexChargeVacuum::fHitVacuumRadius</a></div><div class="ttdeci">float fHitVacuumRadius</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">VertexChargeVacuum_module.cc:74</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a6db291004af9ca5624598f06c7a96810"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">sbn::VertexChargeVacuum::fSelectNeutrino</a></div><div class="ttdeci">bool fSelectNeutrino</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">VertexChargeVacuum_module.cc:78</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1e059a3e71fbaac7fee0d4eaca56d8a1"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">sbn::VertexChargeVacuum::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">VertexChargeVacuum_module.cc:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -238,6 +238,93 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae6f22110a28eb10513bf36707dd3f926"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double sbn::VertexChargeVacuum::Normalize </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dQdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const art::Event &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00219">219</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                                                                                                                              {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordtype">double</span> ret = dQdx;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">// Normtools configured -- use those</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a92f1ea1cec04991a96ef3b08024f7a3e">fNormTools</a>.size()) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp;nt: <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a92f1ea1cec04991a96ef3b08024f7a3e">fNormTools</a>) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      ret = nt-&gt;Normalize(ret, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, h, location, direction, <a class="code" href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">t0</a>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="comment">// Otherwise, fix using configured electron lifetime</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span> dprop =</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, clock_data);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ret = ret * <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ab8985318b191077b239ddc8e337f9e32">LifetimeCorrection</a>(clock_data, dprop, h.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>(), 0.);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="ttc" id="namespacemake__calib__df_html_a2b8237bac57d5c373c623869ad4513c8"><div class="ttname"><a href="../../d6/d11/namespacemake__calib__df.html#a2b8237bac57d5c373c623869ad4513c8">make_calib_df.t0</a></div><div class="ttdeci">int t0</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0e/make__calib__df_8py_source.html#l00042">make_calib_df.py:42</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_a46ddaf21b6eec49d205220f7daf3a85c"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">recob::Hit::PeakTime</a></div><div class="ttdeci">float PeakTime() const </div><div class="ttdoc">Time of the signal peak, in tick units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00218">Hit.h:218</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aa55b8896bba2fe758045013560391a5b"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">sbn::VertexChargeVacuum::fCaloAlg</a></div><div class="ttdeci">calo::CalorimetryAlg fCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00083">VertexChargeVacuum_module.cc:83</a></div></div>
+<div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a92f1ea1cec04991a96ef3b08024f7a3e"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a92f1ea1cec04991a96ef3b08024f7a3e">sbn::VertexChargeVacuum::fNormTools</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; INormalizeCharge &gt; &gt; fNormTools</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00080">VertexChargeVacuum_module.cc:80</a></div></div>
+<div class="ttc" id="classcalo_1_1CalorimetryAlg_html_ab8985318b191077b239ddc8e337f9e32"><div class="ttname"><a href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ab8985318b191077b239ddc8e337f9e32">calo::CalorimetryAlg::LifetimeCorrection</a></div><div class="ttdeci">double LifetimeCorrection(detinfo::DetectorClocksData const &amp;clock_data, detinfo::DetectorPropertiesData const &amp;det_prop, double time, double T0=0) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d75/CalorimetryAlg_8cxx_source.html#l00246">CalorimetryAlg.cxx:246</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="afd9c1d0bc673b56a5eaf2ff39ded11a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -324,16 +411,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00201">201</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                                                                                                                     {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a> tpc = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">FindTPCAtPosition</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">if</span> (tpc &amp;&amp; !<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>) <span class="keywordflow">return</span> <a class="code" href="../../d7/d67/namespacesbn.html#a1a10a86f315c547e1dbe2c658210ff17">sbn::GetLocation</a>(sce, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, tpc);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00212">212</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                                                                                                                     {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a> tpc = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">FindTPCAtPosition</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">if</span> (tpc &amp;&amp; !<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>) <span class="keywordflow">return</span> <a class="code" href="../../d7/d67/namespacesbn.html#a1a10a86f315c547e1dbe2c658210ff17">sbn::GetLocation</a>(sce, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, tpc);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="namespacesbn_html_a1a10a86f315c547e1dbe2c658210ff17"><div class="ttname"><a href="../../d7/d67/namespacesbn.html#a1a10a86f315c547e1dbe2c658210ff17">sbn::GetLocation</a></div><div class="ttdeci">geo::Point_t GetLocation(const spacecharge::SpaceCharge *sce, geo::Point_t loc_w, geo::TPCID TPC, float xsign=1.)</div><div class="ttdoc">Get the location in the presence of space charge. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df9/StubMergeAlgorithms_8cxx_source.html#l00003">StubMergeAlgorithms.cxx:3</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">VertexChargeVacuum_module.cc:74</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00077">VertexChargeVacuum_module.cc:77</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a7953310daac7f0bf2f57ceb9760e278f"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">geo::GeometryCore::FindTPCAtPosition</a></div><div class="ttdeci">geo::TPCID FindTPCAtPosition(double const worldLoc[3]) const </div><div class="ttdoc">Returns the ID of the TPC at specified location. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l02462">GeometryCore.h:2462</a></div></div>
 <div class="ttc" id="structgeo_1_1TPCID_html"><div class="ttname"><a href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a></div><div class="ttdoc">The data type to uniquely identify a TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00386">geo_types.h:386</a></div></div>
 </div><!-- fragment -->
@@ -377,15 +464,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00194">194</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                                                                                                                    {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a> tpc = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">FindTPCAtPosition</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">if</span> (tpc &amp;&amp; <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>) <span class="keywordflow">return</span> <a class="code" href="../../d7/d67/namespacesbn.html#aaef792ed2a23f5895b0147f6b7140566">sbn::GetLocationAtWires</a>(sce, geo, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, tpc);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00205">205</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                                                                                                    {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a> tpc = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">FindTPCAtPosition</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">if</span> (tpc &amp;&amp; <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">fPositionsAreSCECorrected</a>) <span class="keywordflow">return</span> <a class="code" href="../../d7/d67/namespacesbn.html#aaef792ed2a23f5895b0147f6b7140566">sbn::GetLocationAtWires</a>(sce, geo, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, tpc);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">VertexChargeVacuum_module.cc:74</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a12cce6696e885f9b1de368821a1a3a79"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a12cce6696e885f9b1de368821a1a3a79">sbn::VertexChargeVacuum::fPositionsAreSCECorrected</a></div><div class="ttdeci">bool fPositionsAreSCECorrected</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00077">VertexChargeVacuum_module.cc:77</a></div></div>
 <div class="ttc" id="namespacesbn_html_aaef792ed2a23f5895b0147f6b7140566"><div class="ttname"><a href="../../d7/d67/namespacesbn.html#aaef792ed2a23f5895b0147f6b7140566">sbn::GetLocationAtWires</a></div><div class="ttdeci">geo::Point_t GetLocationAtWires(const spacecharge::SpaceCharge *sce, const geo::GeometryCore *geo, geo::Point_t loc, geo::TPCID TPC, float xsign=1.)</div><div class="ttdoc">Get the SCE-distorted location (i.e. the location &amp;quot;seen&amp;quot; by the wireplanes) </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df9/StubMergeAlgorithms_8cxx_source.html#l00033">StubMergeAlgorithms.cxx:33</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a7953310daac7f0bf2f57ceb9760e278f"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a7953310daac7f0bf2f57ceb9760e278f">geo::GeometryCore::FindTPCAtPosition</a></div><div class="ttdeci">geo::TPCID FindTPCAtPosition(double const worldLoc[3]) const </div><div class="ttdoc">Returns the ID of the TPC at specified location. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l02462">GeometryCore.h:2462</a></div></div>
 <div class="ttc" id="structgeo_1_1TPCID_html"><div class="ttname"><a href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a></div><div class="ttdoc">The data type to uniquely identify a TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00386">geo_types.h:386</a></div></div>
@@ -414,222 +501,229 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00208">208</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="comment">// output stuff</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  std::unique_ptr&lt;std::vector&lt;sbn::VertexHit&gt;&gt; outVHit(<span class="keyword">new</span> std::vector&lt;sbn::VertexHit&gt;);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Slice, sbn::VertexHit&gt;&gt; assn(<span class="keyword">new</span> art::Assns&lt;recob::Slice, sbn::VertexHit&gt;);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Vertex, sbn::VertexHit&gt;&gt; vtxAssn(<span class="keyword">new</span> art::Assns&lt;recob::Vertex, sbn::VertexHit&gt;);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Hit, sbn::VertexHit&gt;&gt; hitAssn(<span class="keyword">new</span> art::Assns&lt;recob::Hit, sbn::VertexHit&gt;);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  art::PtrMaker&lt;sbn::VertexHit&gt; vhitPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="comment">// collect services</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> *geo = lar::providerFrom&lt;geo::Geometry&gt;();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> dprop =</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, clock_data);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* sce = lar::providerFrom&lt;spacecharge::SpaceChargeService&gt;();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="comment">// If we are not correcting for SCE, then blank out the service</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>) sce = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// get the PFParticle&#39;s and the associated data</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  art::Handle&lt;std::vector&lt;recob::PFParticle&gt;&gt; pfparticle_handle;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>, pfparticle_handle);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  std::vector&lt;art::Ptr&lt;recob::PFParticle&gt;&gt; pfparticles;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  art::fill_ptr_vector(pfparticles, pfparticle_handle);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  art::FindManyP&lt;recob::Vertex&gt; pfparticleVertices(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  art::FindManyP&lt;recob::Cluster&gt; pfparticleClusters(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  art::FindManyP&lt;recob::Slice&gt; pfparticleSlices(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  art::FindManyP&lt;recob::Track&gt; pfparticleTracks(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">fTrackLabel</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="comment">// organize the PFPlist into a map</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  std::map&lt;unsigned, art::Ptr&lt;recob::PFParticle&gt;&gt; id_to_pfp;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; pfparticles.size(); i++) {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    id_to_pfp[pfparticles[i]-&gt;Self()] = pfparticles[i];</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">// get all the hits</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; hit_handle;</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="comment">// evt.getByLabel(fHitLabel, hit_handle);</span></div>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00241">241</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;{</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// output stuff</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  std::unique_ptr&lt;std::vector&lt;sbn::VertexHit&gt;&gt; outVHit(<span class="keyword">new</span> std::vector&lt;sbn::VertexHit&gt;);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Slice, sbn::VertexHit&gt;&gt; assn(<span class="keyword">new</span> art::Assns&lt;recob::Slice, sbn::VertexHit&gt;);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Vertex, sbn::VertexHit&gt;&gt; vtxAssn(<span class="keyword">new</span> art::Assns&lt;recob::Vertex, sbn::VertexHit&gt;);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  std::unique_ptr&lt;art::Assns&lt;recob::Hit, sbn::VertexHit&gt;&gt; hitAssn(<span class="keyword">new</span> art::Assns&lt;recob::Hit, sbn::VertexHit&gt;);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">// std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; hits;</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// art::fill_ptr_vector(hits, hit_handle);</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// map to space-points</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="comment">// art::FindManyP&lt;recob::SpacePoint&gt; hitSPs(hits, evt, fPFParticleLabel);</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="comment">// iterate over the &quot;primary&quot; PFParticles</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_pfp = 0; i_pfp &lt; pfparticles.size(); i_pfp++) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> &amp;pfp = *pfparticles[i_pfp];</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">if</span> (!pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#adee6c4a6cbdfafad9677723cdbbbeadf">IsPrimary</a>()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">// Ignore PFP&#39;s with no vertex</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (!pfparticleVertices.at(i_pfp).size()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">// If configured, require this to be a PFP neutrino</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">unsigned</span> pfpPDGC = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#a32c8cb40cc8bbc9e90fead96e4aea50e">PdgCode</a>());</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">fSelectNeutrino</a> &amp;&amp;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        (pfpPDGC != 12) &amp;&amp; (pfpPDGC != 14) &amp;&amp; (pfpPDGC != 16) ) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  art::PtrMaker&lt;sbn::VertexHit&gt; vhitPtrMaker {<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>};</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="comment">// collect services</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> *geo = lar::providerFrom&lt;geo::Geometry&gt;();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clock_data = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> dprop =</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    art::ServiceHandle&lt;detinfo::DetectorPropertiesService const&gt;()-&gt;DataFor(<a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, clock_data);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>* sce = lar::providerFrom&lt;spacecharge::SpaceChargeService&gt;();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// If we are not correcting for SCE, then blank out the service</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>) sce = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="comment">// get the PFParticle&#39;s and the associated data</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  art::Handle&lt;std::vector&lt;recob::PFParticle&gt;&gt; pfparticle_handle;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.getByLabel(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>, pfparticle_handle);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  std::vector&lt;art::Ptr&lt;recob::PFParticle&gt;&gt; pfparticles;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  art::fill_ptr_vector(pfparticles, pfparticle_handle);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="comment">// we found a primary PFP! Get its vertex.</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> art::Ptr&lt;recob::Vertex&gt; &amp;vtx_ptr = pfparticleVertices.at(i_pfp).at(0); </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> &amp;vert = *vtx_ptr;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">// The presence of space charge creates two different positions: the position as</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="comment">// &quot;seen&quot; by the wires (post-space charge) and the true position (pre-space charge)</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// In some cases we want the wire-position and in other we want the true-position.</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">// To be explicit, create two different vertexes for these two different cases</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> vert_absolute(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>(), geo, sce),</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a27c6d5cb2a8c36b5b3682858196c39e1">covariance</a>(), </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a61fe81959ffdf3f2cf2c03d9b54ffe44">chi2</a>(),</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#ac53bbdbfa39d8433e19d2eff393dd901">ndof</a>(),</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a126de3f72fc18c6b74bb61fda01d62d8">ID</a>());</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  art::FindManyP&lt;recob::Vertex&gt; pfparticleVertices(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  art::FindManyP&lt;recob::Cluster&gt; pfparticleClusters(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  art::FindManyP&lt;recob::Slice&gt; pfparticleSlices(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  art::FindManyP&lt;recob::Track&gt; pfparticleTracks(pfparticles, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">fTrackLabel</a>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="comment">// organize the PFPlist into a map</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  std::map&lt;unsigned, art::Ptr&lt;recob::PFParticle&gt;&gt; id_to_pfp;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; pfparticles.size(); i++) {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    id_to_pfp[pfparticles[i]-&gt;Self()] = pfparticles[i];</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="comment">// get all the hits</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">// art::Handle&lt;std::vector&lt;recob::Hit&gt;&gt; hit_handle;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="comment">// evt.getByLabel(fHitLabel, hit_handle);</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> vert_atwires(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a467f52157e5cbacaecec97c20c32fe92">PositionAtWires</a>(vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>(), geo, sce),</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a27c6d5cb2a8c36b5b3682858196c39e1">covariance</a>(), </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a61fe81959ffdf3f2cf2c03d9b54ffe44">chi2</a>(),</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#ac53bbdbfa39d8433e19d2eff393dd901">ndof</a>(),</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a126de3f72fc18c6b74bb61fda01d62d8">ID</a>());</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="comment">// std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; hits;</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="comment">// art::fill_ptr_vector(hits, hit_handle);</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="comment">// map to space-points</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">// art::FindManyP&lt;recob::SpacePoint&gt; hitSPs(hits, evt, fPFParticleLabel);</span></div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="comment">// also get all the daughter PFParticles</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">const</span> std::vector&lt;size_t&gt; &amp;daughters = pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#acb616fd7e34a9ed6948b669720ca910d">Daughters</a>();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    std::vector&lt;art::Ptr&lt;recob::PFParticle&gt;&gt; daughterPFPs;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> d: daughters) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      daughterPFPs.push_back(id_to_pfp.at(d));</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="comment">// iterate over the &quot;primary&quot; PFParticles</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_pfp = 0; i_pfp &lt; pfparticles.size(); i_pfp++) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> &amp;pfp = *pfparticles[i_pfp];</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">if</span> (!pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#adee6c4a6cbdfafad9677723cdbbbeadf">IsPrimary</a>()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// Ignore PFP&#39;s with no vertex</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (!pfparticleVertices.at(i_pfp).size()) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// look up the hits of each daughter</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    std::array&lt;std::vector&lt;std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt;&gt;, 3&gt; daughterPlaneHits;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> art::Ptr&lt;recob::PFParticle&gt; &amp;d: daughterPFPs) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_plane = 0; i_plane &lt; 3; i_plane++) {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        daughterPlaneHits[i_plane].emplace_back();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Cluster&gt;&gt; &amp;d_clusters = pfparticleClusters.at(d.key());</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      art::FindManyP&lt;recob::Hit&gt; d_cluster_hits(d_clusters, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; d_clusters.size(); i++) {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; &amp;this_cluster_hits = d_cluster_hits.at(i);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        daughterPlaneHits[d_clusters[i]-&gt;Plane().Plane].back().insert(</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          daughterPlaneHits[d_clusters[i]-&gt;<a class="code" href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a>().<a class="code" href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a>].back().<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(),</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          this_cluster_hits.begin(), this_cluster_hits.end());</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// Get the Slice associated with the primary PFP</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    art::Ptr&lt;recob::Slice&gt; thisSlc = pfparticleSlices.at(i_pfp).at(0);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// look up the hits</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    art::FindManyP&lt;recob::Hit&gt; thisSlcHits({thisSlc}, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; &amp;hits = thisSlcHits.at(0);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// work on each plane</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_plane = 0; i_plane &lt; 3; i_plane++) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="comment">// vacuum up all the hits within the radius</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; nearbyHits;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit = 0; i_hit &lt; hits.size(); i_hit++) {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = *hits[i_hit];</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span> (hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a> == i_plane) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a>(hit, vert_atwires, geo, dprop) &lt; <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">fHitVacuumRadius</a>) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            nearbyHits.push_back(hits[i_hit]);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          }</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="comment">// and find the hit SP&#39;s</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      art::FindManyP&lt;recob::SpacePoint&gt; hitSPs(nearbyHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="comment">// Compute all needed information for each hit</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit = 0; i_hit &lt; nearbyHits.size(); i_hit++) {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;hit = *nearbyHits[i_hit];</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html">sbn::VertexHit</a> vhit;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ad6b77ca03a7be3aaab701e425914192a">wire</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>();</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a50bfa643c4678601cb66b2e657634d46">charge</a> = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#aba2a5e717635e3e262cad41718f55cd8">ElectronsFromADCArea</a>(hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">Integral</a>(), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>) * <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ab8985318b191077b239ddc8e337f9e32">LifetimeCorrection</a>(clock_data, dprop, hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>(), 0.);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ac58f8fdbdb6bb982fa7fc2753c32829c">proj_dist_to_vertex</a> = <a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a>(hit, vert_atwires, geo, dprop);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a47e905e563d1c2fd094bb88f4bcf7aae">vtxw</a> = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ae81e63f01473939eb6bc9c2cb5455906">WireCoordinate</a>(vert_atwires.position(), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>());</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab8e8af23e7074e6ec7689e244f93cb4b">vtxx</a> = vert_atwires.position().x();</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a683dabd117b48ba9236cfc73f0a28558">vtxXYZ</a> = vert_absolute.position();</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="comment">// lookup the spacepoint location</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; &amp;hit_sp = hitSPs.at(i_hit);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordtype">bool</span> has_xyz = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordtype">int</span> spID = -1;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> spXYZ;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">// Space-Point!</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">if</span> (hit_sp.size()) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;          <span class="keyword">const</span> <a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html">recob::SpacePoint</a> sp = *hit_sp.at(0);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;          spID = sp.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#a9aa5f938876ad987f773babe89bc4bc2">ID</a>();</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;          spXYZ = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(sp.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#ada759df1d5b2f9ea223826412c18a1c4">position</a>(), geo, sce);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;          has_xyz = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// No Space-Point. If configured, see if we can look up a point along the assigned track</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">fUseTrackSPRecovery</a>) {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;          <span class="keywordtype">unsigned</span> plane = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          art::Ptr&lt;recob::PFParticle&gt; matchingPFP;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_pfp_chk = 0; i_pfp_chk &lt; daughterPlaneHits[plane].size(); i_pfp_chk++) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit_chk = 0; i_hit_chk &lt; daughterPlaneHits[plane][i_pfp_chk].size(); i_hit_chk++) {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;              <span class="keywordflow">if</span> (daughterPlaneHits[plane][i_pfp_chk][i_hit_chk] == nearbyHits[i_hit]) {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                matchingPFP = daughterPFPs[i_pfp_chk];</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;              }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;          <span class="keywordflow">if</span> (matchingPFP) {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Track&gt;&gt; &amp;pfptrack = pfparticleTracks.at(matchingPFP.key()); </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordflow">if</span> (pfptrack.size()) {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;              <span class="keyword">const</span> <a class="code" href="../../d9/dca/classrecob_1_1Track.html">recob::Track</a> &amp;thisTrack = *pfptrack.at(0);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;              spXYZ = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(<a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a6ee9c0dad8309c68062cfb1cb9f7fd78">PlaceHitAlongTrack</a>(thisTrack, vert_atwires, hit, geo, dprop), geo, sce); </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;              has_xyz = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;          }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        }</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span> (has_xyz) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab929d3b2a6fcd005e74ffb489ba33029">spID</a> = spID;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a22f829d1da6843fffeedd0a734f75281">spXYZ</a> = spXYZ;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// If configured, require this to be a PFP neutrino</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">unsigned</span> pfpPDGC = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#a32c8cb40cc8bbc9e90fead96e4aea50e">PdgCode</a>());</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">fSelectNeutrino</a> &amp;&amp;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        (pfpPDGC != 12) &amp;&amp; (pfpPDGC != 14) &amp;&amp; (pfpPDGC != 16) ) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// we found a primary PFP! Get its vertex.</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">const</span> art::Ptr&lt;recob::Vertex&gt; &amp;vtx_ptr = pfparticleVertices.at(i_pfp).at(0); </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> &amp;vert = *vtx_ptr;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// The presence of space charge creates two different positions: the position as</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// &quot;seen&quot; by the wires (post-space charge) and the true position (pre-space charge)</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// In some cases we want the wire-position and in other we want the true-position.</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// To be explicit, create two different vertexes for these two different cases</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> vert_absolute(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>(), geo, sce),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a27c6d5cb2a8c36b5b3682858196c39e1">covariance</a>(), </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a61fe81959ffdf3f2cf2c03d9b54ffe44">chi2</a>(),</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#ac53bbdbfa39d8433e19d2eff393dd901">ndof</a>(),</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a126de3f72fc18c6b74bb61fda01d62d8">ID</a>());</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a> vert_atwires(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a467f52157e5cbacaecec97c20c32fe92">PositionAtWires</a>(vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">position</a>(), geo, sce),</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a27c6d5cb2a8c36b5b3682858196c39e1">covariance</a>(), </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a61fe81959ffdf3f2cf2c03d9b54ffe44">chi2</a>(),</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#ac53bbdbfa39d8433e19d2eff393dd901">ndof</a>(),</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            vert.<a class="code" href="../../d5/d52/classrecob_1_1Vertex.html#a126de3f72fc18c6b74bb61fda01d62d8">ID</a>());</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">// also get all the daughter PFParticles</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">const</span> std::vector&lt;size_t&gt; &amp;daughters = pfp.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#acb616fd7e34a9ed6948b669720ca910d">Daughters</a>();</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    std::vector&lt;art::Ptr&lt;recob::PFParticle&gt;&gt; daughterPFPs;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> d: daughters) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      daughterPFPs.push_back(id_to_pfp.at(d));</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// look up the hits of each daughter</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    std::array&lt;std::vector&lt;std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt;&gt;, 3&gt; daughterPlaneHits;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> art::Ptr&lt;recob::PFParticle&gt; &amp;d: daughterPFPs) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_plane = 0; i_plane &lt; 3; i_plane++) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        daughterPlaneHits[i_plane].emplace_back();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Cluster&gt;&gt; &amp;d_clusters = pfparticleClusters.at(d.key());</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      art::FindManyP&lt;recob::Hit&gt; d_cluster_hits(d_clusters, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; d_clusters.size(); i++) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; &amp;this_cluster_hits = d_cluster_hits.at(i);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        daughterPlaneHits[d_clusters[i]-&gt;Plane().Plane].back().insert(</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          daughterPlaneHits[d_clusters[i]-&gt;<a class="code" href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a>().<a class="code" href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a>].back().<a class="code" href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">end</a>(),</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          this_cluster_hits.begin(), this_cluster_hits.end());</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// Get the Slice associated with the primary PFP</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    art::Ptr&lt;recob::Slice&gt; thisSlc = pfparticleSlices.at(i_pfp).at(0);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// look up the hits</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    art::FindManyP&lt;recob::Hit&gt; thisSlcHits({thisSlc}, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; &amp;hits = thisSlcHits.at(0);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">// work on each plane</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_plane = 0; i_plane &lt; 3; i_plane++) {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      <span class="comment">// vacuum up all the hits within the radius</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      std::vector&lt;art::Ptr&lt;recob::Hit&gt;&gt; nearbyHits;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit = 0; i_hit &lt; hits.size(); i_hit++) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> = *hits[i_hit];</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">if</span> (hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a> == i_plane) {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a>(hit, vert_atwires, geo, dprop) &lt; <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">fHitVacuumRadius</a>) {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            nearbyHits.push_back(hits[i_hit]);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;          }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="comment">// and find the hit SP&#39;s</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      art::FindManyP&lt;recob::SpacePoint&gt; hitSPs(nearbyHits, <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">fPFParticleLabel</a>);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="comment">// Compute all needed information for each hit</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit = 0; i_hit &lt; nearbyHits.size(); i_hit++) {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;hit = *nearbyHits[i_hit];</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html">sbn::VertexHit</a> vhit;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ad6b77ca03a7be3aaab701e425914192a">wire</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>();</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ac58f8fdbdb6bb982fa7fc2753c32829c">proj_dist_to_vertex</a> = <a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a>(hit, vert_atwires, geo, dprop);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a47e905e563d1c2fd094bb88f4bcf7aae">vtxw</a> = geo-&gt;<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ae81e63f01473939eb6bc9c2cb5455906">WireCoordinate</a>(vert_atwires.position(), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>());</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab8e8af23e7074e6ec7689e244f93cb4b">vtxx</a> = vert_atwires.position().x();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a683dabd117b48ba9236cfc73f0a28558">vtxXYZ</a> = vert_absolute.position();</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// Compute the charge, using everything we have</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a50bfa643c4678601cb66b2e657634d46">charge</a> = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#aba2a5e717635e3e262cad41718f55cd8">ElectronsFromADCArea</a>(<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#ae6f22110a28eb10513bf36707dd3f926">Normalize</a>(hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">Integral</a>(), <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>, <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>, </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                                              vert_absolute.position() <span class="comment">/* close enuff to hit */</span>, </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                                              <a class="code" href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a>() <span class="comment">/* no direction available */</span>,</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                                              0. <span class="comment">/* TODO: add T0*/</span>),  </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                   hit.WireID().Plane);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          <a class="code" href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a> <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a> = (spXYZ - vert_absolute.position()).Unit();</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          <span class="comment">// Compute the pitch. Since we have used the corrected vertex and Space-Point position, the</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;          <span class="comment">// pt and dir here are space-charge corrected regardless of the input configuration</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a> = <a class="code" href="../../d7/d67/namespacesbn.html#a26e09a34b4fa0cd63629b6f2cfb241b8">sbn::GetPitch</a>(geo, sce, spXYZ, dir, hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a025b7a27fcb52523170cf0e0b2ab5c03">View</a>(), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>(), <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>, <span class="keyword">true</span>); </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a> = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#aba2a5e717635e3e262cad41718f55cd8">ElectronsFromADCArea</a>((hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">Integral</a>() / vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a>), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>) * <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ab8985318b191077b239ddc8e337f9e32">LifetimeCorrection</a>(clock_data, dprop, hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>(), 0.);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          <span class="comment">// Same here -- input position is already corrected</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          <span class="keywordtype">float</span> EField = <a class="code" href="../../d7/d67/namespacesbn.html#a1b179e033d1397c4c4941f70b467c7f9">sbn::GetEfield</a>(dprop, sce, spXYZ, hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a6294ee94759182af41f9edaf99aef017">dedx</a> = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ae390af3771f9aba05f14a3d6d4c86e96">dEdx_AREA</a>(clock_data, dprop, vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a>, hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>(), hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>().<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>, 0., EField);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab929d3b2a6fcd005e74ffb489ba33029">spID</a> = -1;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a> = -1;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a> = -1;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a6294ee94759182af41f9edaf99aef017">dedx</a> = -1;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="comment">// Save!</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        outVHit-&gt;push_back(vhit);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        art::Ptr&lt;sbn::VertexHit&gt; thisVHitPtr = vhitPtrMaker(outVHit-&gt;size()-1);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        assn-&gt;addSingle(thisSlc, thisVHitPtr);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        vtxAssn-&gt;addSingle(vtx_ptr, thisVHitPtr);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        hitAssn-&gt;addSingle(nearbyHits[i_hit], thisVHitPtr);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      } <span class="comment">// end iterate over hits</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    } <span class="comment">// end iterate over planes</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  } <span class="comment">// end iterate over pfparticle&#39;s </span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(outVHit));</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(vtxAssn));</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(assn));</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(hitAssn));</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="comment">// lookup the spacepoint location</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::SpacePoint&gt;&gt; &amp;hit_sp = hitSPs.at(i_hit);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordtype">bool</span> has_xyz = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">int</span> spID = -1;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <a class="code" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a> spXYZ;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="comment">// Space-Point!</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">if</span> (hit_sp.size()) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          <span class="keyword">const</span> <a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html">recob::SpacePoint</a> sp = *hit_sp.at(0);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          spID = sp.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#a9aa5f938876ad987f773babe89bc4bc2">ID</a>();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;          spXYZ = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(sp.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#ada759df1d5b2f9ea223826412c18a1c4">position</a>(), geo, sce);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;          has_xyz = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="comment">// No Space-Point. If configured, see if we can look up a point along the assigned track</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">fUseTrackSPRecovery</a>) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;          <span class="keywordtype">unsigned</span> plane = hit.WireID().Plane;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;          art::Ptr&lt;recob::PFParticle&gt; matchingPFP;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_pfp_chk = 0; i_pfp_chk &lt; daughterPlaneHits[plane].size(); i_pfp_chk++) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_hit_chk = 0; i_hit_chk &lt; daughterPlaneHits[plane][i_pfp_chk].size(); i_hit_chk++) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;              <span class="keywordflow">if</span> (daughterPlaneHits[plane][i_pfp_chk][i_hit_chk] == nearbyHits[i_hit]) {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                matchingPFP = daughterPFPs[i_pfp_chk];</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;              }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;          <span class="keywordflow">if</span> (matchingPFP) {</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <span class="keyword">const</span> std::vector&lt;art::Ptr&lt;recob::Track&gt;&gt; &amp;pfptrack = pfparticleTracks.at(matchingPFP.key()); </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <span class="keywordflow">if</span> (pfptrack.size()) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;              <span class="keyword">const</span> <a class="code" href="../../d9/dca/classrecob_1_1Track.html">recob::Track</a> &amp;thisTrack = *pfptrack.at(0);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;              spXYZ = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">PositionAbsolute</a>(<a class="code" href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a6ee9c0dad8309c68062cfb1cb9f7fd78">PlaceHitAlongTrack</a>(thisTrack, vert_atwires, hit, geo, dprop), geo, sce); </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;              has_xyz = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;          }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        }</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">if</span> (has_xyz) {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab929d3b2a6fcd005e74ffb489ba33029">spID</a> = spID;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a22f829d1da6843fffeedd0a734f75281">spXYZ</a> = spXYZ;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;          <a class="code" href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a> <a class="code" href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dir</a> = (spXYZ - vert_absolute.position()).Unit();</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          <span class="comment">// Compute the pitch. Since we have used the corrected vertex and Space-Point position, the</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;          <span class="comment">// pt and dir here are space-charge corrected regardless of the input configuration</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a> = <a class="code" href="../../d7/d67/namespacesbn.html#a26e09a34b4fa0cd63629b6f2cfb241b8">sbn::GetPitch</a>(geo, sce, spXYZ, dir, hit.<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a57a84b9e6854158fc65a20208a5b4d8d">View</a>(), hit.WireID(), <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">fCorrectSCE</a>, <span class="keyword">true</span>); </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a> = vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a50bfa643c4678601cb66b2e657634d46">charge</a> / vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;          <span class="comment">// Same here -- input position is already corrected</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;          <span class="keywordtype">float</span> EField = <a class="code" href="../../d7/d67/namespacesbn.html#a1b179e033d1397c4c4941f70b467c7f9">sbn::GetEfield</a>(dprop, sce, spXYZ, hit.WireID(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a6294ee94759182af41f9edaf99aef017">dedx</a> = <a class="code" href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">fCaloAlg</a>.<a class="code" href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ae390af3771f9aba05f14a3d6d4c86e96">dEdx_AREA</a>(clock_data, dprop, vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a>, hit.PeakTime(), hit.WireID().Plane, 0., EField);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#ab929d3b2a6fcd005e74ffb489ba33029">spID</a> = -1;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">pitch</a> = -1;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">dqdx</a> = -1;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;          vhit.<a class="code" href="../../d8/de1/classsbn_1_1VertexHit.html#a6294ee94759182af41f9edaf99aef017">dedx</a> = -1;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        }</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">// Save!</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        outVHit-&gt;push_back(vhit);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        art::Ptr&lt;sbn::VertexHit&gt; thisVHitPtr = vhitPtrMaker(outVHit-&gt;size()-1);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        assn-&gt;addSingle(thisSlc, thisVHitPtr);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        vtxAssn-&gt;addSingle(vtx_ptr, thisVHitPtr);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        hitAssn-&gt;addSingle(nearbyHits[i_hit], thisVHitPtr);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      } <span class="comment">// end iterate over hits</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    } <span class="comment">// end iterate over planes</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  } <span class="comment">// end iterate over pfparticle&#39;s </span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(outVHit));</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(vtxAssn));</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(assn));</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <a class="code" href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">evt</a>.put(std::move(hitAssn));</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;}</div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_ae81e63f01473939eb6bc9c2cb5455906"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#ae81e63f01473939eb6bc9c2cb5455906">geo::GeometryCore::WireCoordinate</a></div><div class="ttdeci">geo::Length_t WireCoordinate(double YPos, double ZPos, geo::PlaneID const &amp;planeid) const </div><div class="ttdoc">Returns the index of the nearest wire to the specified position. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l01217">GeometryCore.cxx:1217</a></div></div>
 <div class="ttc" id="namespacegeo_html_a22d2a7c73b2795146b92cd54ded9e817"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#a22d2a7c73b2795146b92cd54ded9e817">geo::Vector_t</a></div><div class="ttdeci">ROOT::Math::DisplacementVector3D&lt; ROOT::Math::Cartesian3D&lt; double &gt;, ROOT::Math::GlobalCoordinateSystemTag &gt; Vector_t</div><div class="ttdoc">Type for representation of momenta in 3D space. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7d/geo__vectors_8h_source.html#l00164">geo_vectors.h:164</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_abf959e177e47fb57d675b737a6fa6c17"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">sbn::VertexChargeVacuum::fTrackLabel</a></div><div class="ttdeci">art::InputTag fTrackLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00070">VertexChargeVacuum_module.cc:70</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_abf959e177e47fb57d675b737a6fa6c17"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#abf959e177e47fb57d675b737a6fa6c17">sbn::VertexChargeVacuum::fTrackLabel</a></div><div class="ttdeci">art::InputTag fTrackLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">VertexChargeVacuum_module.cc:73</a></div></div>
 <div class="ttc" id="classrecob_1_1PFParticle_html_acb616fd7e34a9ed6948b669720ca910d"><div class="ttname"><a href="../../dc/d21/classrecob_1_1PFParticle.html#acb616fd7e34a9ed6948b669720ca910d">recob::PFParticle::Daughters</a></div><div class="ttdeci">const std::vector&lt; size_t &gt; &amp; Daughters() const </div><div class="ttdoc">Returns the collection of daughter particles. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5c/PFParticle_8h_source.html#l00114">PFParticle.h:114</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_a76a5ef1ec495472a7f5f86b845ea4687"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#a76a5ef1ec495472a7f5f86b845ea4687">sbn::VertexHit::dqdx</a></div><div class="ttdeci">float dqdx</div><div class="ttdoc">charge/pitch [#elec/cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00020">VertexHit.h:20</a></div></div>
 <div class="ttc" id="rawdigitfilter__icarus_8fcl_html_aa2b9cfdf9a8f294302be0cdf6affea22"><div class="ttname"><a href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a></div><div class="ttdeci">BEGIN_PROLOG true icarus_rawdigitfilter FilterTools FilterPlane1 Plane</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5e/rawdigitfilter__icarus_8fcl_source.html#l00008">rawdigitfilter_icarus.fcl:8</a></div></div>
@@ -637,11 +731,10 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classsbn_1_1VertexHit_html_a6294ee94759182af41f9edaf99aef017"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#a6294ee94759182af41f9edaf99aef017">sbn::VertexHit::dedx</a></div><div class="ttdeci">float dedx</div><div class="ttdoc">Recombination corrected dQ/dx [MeV/cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00021">VertexHit.h:21</a></div></div>
 <div class="ttc" id="classrecob_1_1Hit_html_ac490abcf98854d93cf2fa85eadf4d469"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">recob::Hit::WireID</a></div><div class="ttdeci">geo::WireID WireID() const </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00233">Hit.h:233</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_ad6b77ca03a7be3aaab701e425914192a"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#ad6b77ca03a7be3aaab701e425914192a">sbn::VertexHit::wire</a></div><div class="ttdeci">geo::WireID wire</div><div class="ttdoc">Wire that the hit is on. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00011">VertexHit.h:11</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_af327afefd42cb6f6e21995504c0187da"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">sbn::VertexChargeVacuum::PositionAbsolute</a></div><div class="ttdeci">geo::Point_t PositionAbsolute(const geo::Point_t &amp;p, const geo::GeometryCore *geo, const spacecharge::SpaceCharge *sce)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00201">VertexChargeVacuum_module.cc:201</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_af327afefd42cb6f6e21995504c0187da"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#af327afefd42cb6f6e21995504c0187da">sbn::VertexChargeVacuum::PositionAbsolute</a></div><div class="ttdeci">geo::Point_t PositionAbsolute(const geo::Point_t &amp;p, const geo::GeometryCore *geo, const spacecharge::SpaceCharge *sce)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00212">VertexChargeVacuum_module.cc:212</a></div></div>
 <div class="ttc" id="classrecob_1_1SpacePoint_html_ada759df1d5b2f9ea223826412c18a1c4"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html#ada759df1d5b2f9ea223826412c18a1c4">recob::SpacePoint::position</a></div><div class="ttdeci">geo::Point_t position() const </div><div class="ttdoc">Returns the position of the point in world coordinates [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00080">SpacePoint.h:80</a></div></div>
 <div class="ttc" id="classrecob_1_1PFParticle_html_a32c8cb40cc8bbc9e90fead96e4aea50e"><div class="ttname"><a href="../../dc/d21/classrecob_1_1PFParticle.html#a32c8cb40cc8bbc9e90fead96e4aea50e">recob::PFParticle::PdgCode</a></div><div class="ttdeci">int PdgCode() const </div><div class="ttdoc">Return the type of particle as a PDG ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5c/PFParticle_8h_source.html#l00083">PFParticle.h:83</a></div></div>
 <div class="ttc" id="classrecob_1_1Hit_html_a98fe3ce584899b6f824260d8b4153bd8"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">recob::Hit::Integral</a></div><div class="ttdeci">float Integral() const </div><div class="ttdoc">Integral under the calibrated signal waveform of the hit, in tick x ADC units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00224">Hit.h:224</a></div></div>
-<div class="ttc" id="classrecob_1_1Hit_html_a025b7a27fcb52523170cf0e0b2ab5c03"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a025b7a27fcb52523170cf0e0b2ab5c03">recob::Hit::View</a></div><div class="ttdeci">geo::View_t View() const </div><div class="ttdoc">View for the plane of the hit. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00232">Hit.h:232</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html">sbn::VertexHit</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00009">VertexHit.h:9</a></div></div>
 <div class="ttc" id="classrecob_1_1Vertex_html"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html">recob::Vertex</a></div><div class="ttdoc">Definition of vertex object for LArSoft. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00035">Vertex.h:35</a></div></div>
@@ -649,7 +742,8 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classrecob_1_1Vertex_html_a61fe81959ffdf3f2cf2c03d9b54ffe44"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html#a61fe81959ffdf3f2cf2c03d9b54ffe44">recob::Vertex::chi2</a></div><div class="ttdeci">double chi2() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00064">Vertex.h:64</a></div></div>
 <div class="ttc" id="classcalo_1_1CalorimetryAlg_html_aba2a5e717635e3e262cad41718f55cd8"><div class="ttname"><a href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#aba2a5e717635e3e262cad41718f55cd8">calo::CalorimetryAlg::ElectronsFromADCArea</a></div><div class="ttdeci">double ElectronsFromADCArea(double area, unsigned short plane) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4b/CalorimetryAlg_8h_source.html#l00153">CalorimetryAlg.h:153</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1bf451559fef2cfc38528d6e17871f2a"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">sbn::VertexChargeVacuum::fUseTrackSPRecovery</a></div><div class="ttdeci">bool fUseTrackSPRecovery</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">VertexChargeVacuum_module.cc:72</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_ae6f22110a28eb10513bf36707dd3f926"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#ae6f22110a28eb10513bf36707dd3f926">sbn::VertexChargeVacuum::Normalize</a></div><div class="ttdeci">double Normalize(double dQdx, const art::Event &amp;e, const recob::Hit &amp;h, const geo::Point_t &amp;location, const geo::Vector_t &amp;direction, double t0)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00219">VertexChargeVacuum_module.cc:219</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1bf451559fef2cfc38528d6e17871f2a"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1bf451559fef2cfc38528d6e17871f2a">sbn::VertexChargeVacuum::fUseTrackSPRecovery</a></div><div class="ttdeci">bool fUseTrackSPRecovery</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">VertexChargeVacuum_module.cc:75</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1ns_1_1util_html_aac918da84f16d53ad17bab4f817da1c4"><div class="ttname"><a href="../../d5/d62/namespaceicarus_1_1ns_1_1util.html#aac918da84f16d53ad17bab4f817da1c4">icarus::ns::util::end</a></div><div class="ttdeci">auto end(FixedBins&lt; T, C &gt; const &amp;) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dbd/FixedBins_8h_source.html#l00585">FixedBins.h:585</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_ac58f8fdbdb6bb982fa7fc2753c32829c"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#ac58f8fdbdb6bb982fa7fc2753c32829c">sbn::VertexHit::proj_dist_to_vertex</a></div><div class="ttdeci">float proj_dist_to_vertex</div><div class="ttdoc">Distnace from the hit to the vertex on the wireplane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00013">VertexHit.h:13</a></div></div>
 <div class="ttc" id="classrecob_1_1PFParticle_html_adee6c4a6cbdfafad9677723cdbbbeadf"><div class="ttname"><a href="../../dc/d21/classrecob_1_1PFParticle.html#adee6c4a6cbdfafad9677723cdbbbeadf">recob::PFParticle::IsPrimary</a></div><div class="ttdeci">bool IsPrimary() const </div><div class="ttdoc">Returns whether the particle is the root of the flow. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5c/PFParticle_8h_source.html#l00086">PFParticle.h:86</a></div></div>
@@ -657,31 +751,30 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="structgeo_1_1PlaneID_html_a02c2afa6841ef86ea8ab49478cdf5b29"><div class="ttname"><a href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">geo::PlaneID::Plane</a></div><div class="ttdeci">PlaneID_t Plane</div><div class="ttdoc">Index of the plane within its TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00493">geo_types.h:493</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a></div><div class="ttdoc">Description of geometry of one entire detector. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l01476">GeometryCore.h:1476</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_ab8e8af23e7074e6ec7689e244f93cb4b"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#ab8e8af23e7074e6ec7689e244f93cb4b">sbn::VertexHit::vtxx</a></div><div class="ttdeci">float vtxx</div><div class="ttdoc">X-Position of the vertex associated with this hit as seen by wire-planes. Not space charge corrected...</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00015">VertexHit.h:15</a></div></div>
-<div class="ttc" id="VertexChargeVacuum__module_8cc_html_a07f97d307a34be00007da0b0d5c6f0ce"><div class="ttname"><a href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a></div><div class="ttdeci">float Vert2HitDistance(const recob::Hit &amp;hit, const recob::Vertex &amp;vert, const geo::GeometryCore *geo, const detinfo::DetectorPropertiesData &amp;dprop)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00120">VertexChargeVacuum_module.cc:120</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aacbc916df6b9f927e52a8aa4170edc8f"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">sbn::VertexChargeVacuum::fCorrectSCE</a></div><div class="ttdeci">bool fCorrectSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">VertexChargeVacuum_module.cc:73</a></div></div>
-<div class="ttc" id="VertexChargeVacuum__module_8cc_html_a6ee9c0dad8309c68062cfb1cb9f7fd78"><div class="ttname"><a href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a6ee9c0dad8309c68062cfb1cb9f7fd78">PlaceHitAlongTrack</a></div><div class="ttdeci">geo::Point_t PlaceHitAlongTrack(const recob::Track &amp;trk, const recob::Vertex &amp;vert, const recob::Hit &amp;hit, const geo::GeometryCore *geo, const detinfo::DetectorPropertiesData &amp;dprop)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00159">VertexChargeVacuum_module.cc:159</a></div></div>
+<div class="ttc" id="classgeo_1_1GeometryCore_html_a57a84b9e6854158fc65a20208a5b4d8d"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a57a84b9e6854158fc65a20208a5b4d8d">geo::GeometryCore::View</a></div><div class="ttdeci">View_t View(geo::PlaneID const &amp;pid) const </div><div class="ttdoc">Returns the view (wire orientation) on the channels of specified TPC plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00622">GeometryCore.cxx:622</a></div></div>
+<div class="ttc" id="VertexChargeVacuum__module_8cc_html_a07f97d307a34be00007da0b0d5c6f0ce"><div class="ttname"><a href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a07f97d307a34be00007da0b0d5c6f0ce">Vert2HitDistance</a></div><div class="ttdeci">float Vert2HitDistance(const recob::Hit &amp;hit, const recob::Vertex &amp;vert, const geo::GeometryCore *geo, const detinfo::DetectorPropertiesData &amp;dprop)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00131">VertexChargeVacuum_module.cc:131</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aacbc916df6b9f927e52a8aa4170edc8f"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aacbc916df6b9f927e52a8aa4170edc8f">sbn::VertexChargeVacuum::fCorrectSCE</a></div><div class="ttdeci">bool fCorrectSCE</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00076">VertexChargeVacuum_module.cc:76</a></div></div>
+<div class="ttc" id="VertexChargeVacuum__module_8cc_html_a6ee9c0dad8309c68062cfb1cb9f7fd78"><div class="ttname"><a href="../../d5/dfa/VertexChargeVacuum__module_8cc.html#a6ee9c0dad8309c68062cfb1cb9f7fd78">PlaceHitAlongTrack</a></div><div class="ttdeci">geo::Point_t PlaceHitAlongTrack(const recob::Track &amp;trk, const recob::Vertex &amp;vert, const recob::Hit &amp;hit, const geo::GeometryCore *geo, const detinfo::DetectorPropertiesData &amp;dprop)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00170">VertexChargeVacuum_module.cc:170</a></div></div>
 <div class="ttc" id="classrecob_1_1Vertex_html_a27c6d5cb2a8c36b5b3682858196c39e1"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html#a27c6d5cb2a8c36b5b3682858196c39e1">recob::Vertex::covariance</a></div><div class="ttdeci">const SMatrixSym33 &amp; covariance() const </div><div class="ttdoc">Return vertex 3D covariance (be careful, the matrix may have rank=2). </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00062">Vertex.h:62</a></div></div>
 <div class="ttc" id="namespacedropbox_html_a407b5b895ba9265893768748aaa73825"><div class="ttname"><a href="../../de/d9a/namespacedropbox.html#a407b5b895ba9265893768748aaa73825">dropbox.dir</a></div><div class="ttdeci">tuple dir</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d81/dropbox_8py_source.html#l00028">dropbox.py:28</a></div></div>
 <div class="ttc" id="classrecob_1_1SpacePoint_html_a9aa5f938876ad987f773babe89bc4bc2"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html#a9aa5f938876ad987f773babe89bc4bc2">recob::SpacePoint::ID</a></div><div class="ttdeci">ID_t ID() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00075">SpacePoint.h:75</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_af603e15bae3c2ee029add4fd472c8b18"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#af603e15bae3c2ee029add4fd472c8b18">sbn::VertexHit::pitch</a></div><div class="ttdeci">float pitch</div><div class="ttdoc">Computed pitch of a track traversing from the vertex to this hit. Space charge corrected. [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00019">VertexHit.h:19</a></div></div>
-<div class="ttc" id="classrecob_1_1Hit_html_a46ddaf21b6eec49d205220f7daf3a85c"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">recob::Hit::PeakTime</a></div><div class="ttdeci">float PeakTime() const </div><div class="ttdoc">Time of the signal peak, in tick units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00218">Hit.h:218</a></div></div>
 <div class="ttc" id="classrecob_1_1PFParticle_html"><div class="ttname"><a href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a></div><div class="ttdoc">Hierarchical representation of particle flow. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5c/PFParticle_8h_source.html#l00044">PFParticle.h:44</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aa55b8896bba2fe758045013560391a5b"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">sbn::VertexChargeVacuum::fCaloAlg</a></div><div class="ttdeci">calo::CalorimetryAlg fCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">VertexChargeVacuum_module.cc:78</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_aa55b8896bba2fe758045013560391a5b"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#aa55b8896bba2fe758045013560391a5b">sbn::VertexChargeVacuum::fCaloAlg</a></div><div class="ttdeci">calo::CalorimetryAlg fCaloAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00083">VertexChargeVacuum_module.cc:83</a></div></div>
 <div class="ttc" id="classrecob_1_1Vertex_html_a126de3f72fc18c6b74bb61fda01d62d8"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html#a126de3f72fc18c6b74bb61fda01d62d8">recob::Vertex::ID</a></div><div class="ttdeci">int ID() const </div><div class="ttdoc">Return vertex id. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00099">Vertex.h:99</a></div></div>
 <div class="ttc" id="classcalo_1_1CalorimetryAlg_html_ae390af3771f9aba05f14a3d6d4c86e96"><div class="ttname"><a href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ae390af3771f9aba05f14a3d6d4c86e96">calo::CalorimetryAlg::dEdx_AREA</a></div><div class="ttdeci">double dEdx_AREA(detinfo::DetectorClocksData const &amp;clock_data, detinfo::DetectorPropertiesData const &amp;det_prop, recob::Hit const &amp;hit, double pitch, double T0=0) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d75/CalorimetryAlg_8cxx_source.html#l00131">CalorimetryAlg.cxx:131</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a467f52157e5cbacaecec97c20c32fe92"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a467f52157e5cbacaecec97c20c32fe92">sbn::VertexChargeVacuum::PositionAtWires</a></div><div class="ttdeci">geo::Point_t PositionAtWires(const geo::Point_t &amp;p, const geo::GeometryCore *geo, const spacecharge::SpaceCharge *sce)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00194">VertexChargeVacuum_module.cc:194</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a467f52157e5cbacaecec97c20c32fe92"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a467f52157e5cbacaecec97c20c32fe92">sbn::VertexChargeVacuum::PositionAtWires</a></div><div class="ttdeci">geo::Point_t PositionAtWires(const geo::Point_t &amp;p, const geo::GeometryCore *geo, const spacecharge::SpaceCharge *sce)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00205">VertexChargeVacuum_module.cc:205</a></div></div>
 <div class="ttc" id="namespacesbn_html_a1b179e033d1397c4c4941f70b467c7f9"><div class="ttname"><a href="../../d7/d67/namespacesbn.html#a1b179e033d1397c4c4941f70b467c7f9">sbn::GetEfield</a></div><div class="ttdeci">double GetEfield(const detinfo::DetectorPropertiesData &amp;dprop, const spacecharge::SpaceCharge *sce, geo::Point_t loc, geo::TPCID TPC, bool correct_loc_sce, float xsign=1.)</div><div class="ttdoc">Get the E-Field in the presence of space charge. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/df9/StubMergeAlgorithms_8cxx_source.html#l00014">StubMergeAlgorithms.cxx:14</a></div></div>
 <div class="ttc" id="classrecob_1_1Vertex_html_ac53bbdbfa39d8433e19d2eff393dd901"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html#ac53bbdbfa39d8433e19d2eff393dd901">recob::Vertex::ndof</a></div><div class="ttdeci">int ndof() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00066">Vertex.h:66</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_ab929d3b2a6fcd005e74ffb489ba33029"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#ab929d3b2a6fcd005e74ffb489ba33029">sbn::VertexHit::spID</a></div><div class="ttdeci">int spID</div><div class="ttdoc">ID of the SpacePoint associated with this hit. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00016">VertexHit.h:16</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a8c1ea6e5aa866070ca14f62f2d18fadf"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">sbn::VertexChargeVacuum::fHitVacuumRadius</a></div><div class="ttdeci">float fHitVacuumRadius</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00071">VertexChargeVacuum_module.cc:71</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a8c1ea6e5aa866070ca14f62f2d18fadf"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a8c1ea6e5aa866070ca14f62f2d18fadf">sbn::VertexChargeVacuum::fHitVacuumRadius</a></div><div class="ttdeci">float fHitVacuumRadius</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">VertexChargeVacuum_module.cc:74</a></div></div>
 <div class="ttc" id="classrecob_1_1Hit_html"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a></div><div class="ttdoc">2D representation of charge deposited in the TDC/wire plane </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00048">Hit.h:48</a></div></div>
 <div class="ttc" id="namespacetca_html_a3bc30aeace71ea50324b602afa2155f2"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a3bc30aeace71ea50324b602afa2155f2">tca::evt</a></div><div class="ttdeci">TCEvent evt</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d0a/DataStructs_8cxx_source.html#l00008">DataStructs.cxx:8</a></div></div>
-<div class="ttc" id="classcalo_1_1CalorimetryAlg_html_ab8985318b191077b239ddc8e337f9e32"><div class="ttname"><a href="../../d1/de6/classcalo_1_1CalorimetryAlg.html#ab8985318b191077b239ddc8e337f9e32">calo::CalorimetryAlg::LifetimeCorrection</a></div><div class="ttdeci">double LifetimeCorrection(detinfo::DetectorClocksData const &amp;clock_data, detinfo::DetectorPropertiesData const &amp;det_prop, double time, double T0=0) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d75/CalorimetryAlg_8cxx_source.html#l00246">CalorimetryAlg.cxx:246</a></div></div>
 <div class="ttc" id="namespacegeo_html_a5a6f22c2aa9d0ccf6ca08bf2773a0541"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541">geo::Point_t</a></div><div class="ttdeci">ROOT::Math::PositionVector3D&lt; ROOT::Math::Cartesian3D&lt; double &gt;, ROOT::Math::GlobalCoordinateSystemTag &gt; Point_t</div><div class="ttdoc">Type for representation of position in physical 3D space. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d7d/geo__vectors_8h_source.html#l00184">geo_vectors.h:184</a></div></div>
 <div class="ttc" id="classrecob_1_1Vertex_html_acfcf9490d5fd62a3f4e316b2b53d9ed4"><div class="ttname"><a href="../../d5/d52/classrecob_1_1Vertex.html#acfcf9490d5fd62a3f4e316b2b53d9ed4">recob::Vertex::position</a></div><div class="ttdeci">const Point_t &amp; position() const </div><div class="ttdoc">Return vertex 3D position. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d2d/Vertex_8h_source.html#l00060">Vertex.h:60</a></div></div>
 <div class="ttc" id="classrecob_1_1Track_html"><div class="ttname"><a href="../../d9/dca/classrecob_1_1Track.html">recob::Track</a></div><div class="ttdoc">Track from a non-cascading particle.A recob::Track consists of a recob::TrackTrajectory, plus additional members relevant for a &amp;quot;fitted&amp;quot; track: </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d53/bj_2lardataobj_2RecoBase_2Track_8h_source.html#l00049">bj/lardataobj/RecoBase/Track.h:49</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a6db291004af9ca5624598f06c7a96810"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">sbn::VertexChargeVacuum::fSelectNeutrino</a></div><div class="ttdeci">bool fSelectNeutrino</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">VertexChargeVacuum_module.cc:75</a></div></div>
-<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1e059a3e71fbaac7fee0d4eaca56d8a1"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">sbn::VertexChargeVacuum::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00069">VertexChargeVacuum_module.cc:69</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a6db291004af9ca5624598f06c7a96810"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a6db291004af9ca5624598f06c7a96810">sbn::VertexChargeVacuum::fSelectNeutrino</a></div><div class="ttdeci">bool fSelectNeutrino</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">VertexChargeVacuum_module.cc:78</a></div></div>
+<div class="ttc" id="classsbn_1_1VertexChargeVacuum_html_a1e059a3e71fbaac7fee0d4eaca56d8a1"><div class="ttname"><a href="../../de/d17/classsbn_1_1VertexChargeVacuum.html#a1e059a3e71fbaac7fee0d4eaca56d8a1">sbn::VertexChargeVacuum::fPFParticleLabel</a></div><div class="ttdeci">art::InputTag fPFParticleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">VertexChargeVacuum_module.cc:72</a></div></div>
 <div class="ttc" id="classrecob_1_1SpacePoint_html"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html">recob::SpacePoint</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00023">SpacePoint.h:23</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_a683dabd117b48ba9236cfc73f0a28558"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#a683dabd117b48ba9236cfc73f0a28558">sbn::VertexHit::vtxXYZ</a></div><div class="ttdeci">geo::Point_t vtxXYZ</div><div class="ttdoc">3D location of the Vertex associated with this hit. Space charge corrected. [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00018">VertexHit.h:18</a></div></div>
 <div class="ttc" id="classsbn_1_1VertexHit_html_a47e905e563d1c2fd094bb88f4bcf7aae"><div class="ttname"><a href="../../d8/de1/classsbn_1_1VertexHit.html#a47e905e563d1c2fd094bb88f4bcf7aae">sbn::VertexHit::vtxw</a></div><div class="ttdeci">float vtxw</div><div class="ttdoc">Wire of the vertex associated with this hit. Not space charge corrected. [cm]. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d37/VertexHit_8h_source.html#l00014">VertexHit.h:14</a></div></div>
@@ -707,7 +800,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">78</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00083">83</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -729,7 +822,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">73</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00076">76</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -751,7 +844,51 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00071">71</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">74</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5be86b31f253e737dae77111cd798a8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;fhicl::ParameterSet&gt; sbn::VertexChargeVacuum::fNormToolConfig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00079">79</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92f1ea1cec04991a96ef3b08024f7a3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="../../df/d67/classINormalizeCharge.html">INormalizeCharge</a>&gt; &gt; sbn::VertexChargeVacuum::fNormTools</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00080">80</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -773,7 +910,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00069">69</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">72</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -795,7 +932,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00074">74</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00077">77</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -817,7 +954,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">75</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00078">78</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -839,7 +976,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00070">70</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00073">73</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>
@@ -861,7 +998,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00072">72</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html#l00075">75</a> of file <a class="el" href="../../d5/dfa/VertexChargeVacuum__module_8cc_source.html">VertexChargeVacuum_module.cc</a>.</p>
 
 </div>
 </div>

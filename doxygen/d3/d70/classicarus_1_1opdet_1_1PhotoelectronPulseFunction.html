@@ -97,6 +97,7 @@ Inheritance diagram for icarus::opdet::PhotoelectronPulseFunction&lt; T &gt;:</d
 <area href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html" title="Describes the waveform from a single photoelectron. " alt="icarus::opdet::AsymExpPulseFunction&lt; T &gt;" shape="rect" coords="0,56,279,80"/>
 <area href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html" title="Describes the waveform from a single photoelectron. " alt="icarus::opdet::AsymGaussPulseFunction&lt; T &gt;" shape="rect" coords="289,56,568,80"/>
 <area href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html" title="Describes the waveform from a single photoelectron. " alt="icarus::opdet::CustomPulseFunction&lt; T &gt;" shape="rect" coords="578,56,857,80"/>
+<area href="../../de/d14/classicarus_1_1opdet_1_1SampledWaveformFunction.html" title="Describes the waveform from a single photoelectron. " alt="icarus::opdet::SampledWaveformFunction&lt; T &gt;" shape="rect" coords="867,56,1146,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -358,7 +359,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#a275a7884cb477258e3ff75eb3478c80f">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#ade66fd46850b460b84d620f898a20e11">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#af799363e5eff8dd8d49266062540550a">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#a275a7884cb477258e3ff75eb3478c80f">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#ade66fd46850b460b84d620f898a20e11">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d14/classicarus_1_1opdet_1_1SampledWaveformFunction.html#a18170191b9f5359ba5715954ab3b40f7">icarus::opdet::SampledWaveformFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#af799363e5eff8dd8d49266062540550a">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="../../d6/de8/PhotoelectronPulseFunction_8h_source.html#l00147">147</a> of file <a class="el" href="../../d6/de8/PhotoelectronPulseFunction_8h_source.html">PhotoelectronPulseFunction.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            {}</div>
@@ -418,7 +419,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the amplitude of the first peak in ADC counts. </p>
 
-<p>Reimplemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#ada3f781655e3dcd3afb1c46d60d511ad">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#a4e7a0d87583d3e6be32b2e789756327e">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#a075d7f7ab82cde3f8e1849a318273606">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#ada3f781655e3dcd3afb1c46d60d511ad">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#a4e7a0d87583d3e6be32b2e789756327e">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d14/classicarus_1_1opdet_1_1SampledWaveformFunction.html#ac18f43e655b9eb004b27dc9645eeec6a">icarus::opdet::SampledWaveformFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#a075d7f7ab82cde3f8e1849a318273606">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="../../d6/de8/PhotoelectronPulseFunction_8h_source.html#l00131">131</a> of file <a class="el" href="../../d6/de8/PhotoelectronPulseFunction_8h_source.html">PhotoelectronPulseFunction.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d3/d70/classicarus_1_1opdet_1_1PhotoelectronPulseFunction.html#a052b86d86eaaee9de6553752e2ab140c">evaluateAt</a>(<a class="code" href="../../d3/d70/classicarus_1_1opdet_1_1PhotoelectronPulseFunction.html#a049fb1b0a9f1c207ae640f053b46ef65">peakTime</a>()); }</div>
@@ -452,7 +453,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the time at which the first peak is found. </p>
 
-<p>Implemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#a56298099940d9eaa43ea0e7b278787f9">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#aa2a9d6404355485b776b8671ba3c69ec">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#ac9adacd897b16f37896db2f03456f69e">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../d7/db7/classicarus_1_1opdet_1_1CustomPulseFunction.html#a56298099940d9eaa43ea0e7b278787f9">icarus::opdet::CustomPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d3d/classicarus_1_1opdet_1_1AsymExpPulseFunction.html#aa2a9d6404355485b776b8671ba3c69ec">icarus::opdet::AsymExpPulseFunction&lt; T &gt;</a>, <a class="el" href="../../de/d14/classicarus_1_1opdet_1_1SampledWaveformFunction.html#abd59bc2fa2d375af50274d99beca7c2e">icarus::opdet::SampledWaveformFunction&lt; T &gt;</a>, and <a class="el" href="../../dd/d88/classicarus_1_1opdet_1_1AsymGaussPulseFunction.html#ac9adacd897b16f37896db2f03456f69e">icarus::opdet::AsymGaussPulseFunction&lt; T &gt;</a>.</p>
 
 </div>
 </div>

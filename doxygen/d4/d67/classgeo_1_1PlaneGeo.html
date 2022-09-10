@@ -882,7 +882,7 @@ base", is defined by the normal (the same as for the previous one), and two orth
       </table>
 </div><div class="memdoc">
 <p>Type for projections in the plane frame base representation. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000057">Todo:</a></b></dt><dd>the following should be a PositionVector2D </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000060">Todo:</a></b></dt><dd>the following should be a PositionVector2D </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
 
@@ -1392,8 +1392,9 @@ template&lt;typename Point &gt; </div>
 <p>The choice of the projection reference point embodies the same convention used in <code><a class="el" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a21c6d4862b5747e4a2a6e15574a3cad8">PointProjection()</a></code> and <code><a class="el" href="../../d4/d67/classgeo_1_1PlaneGeo.html#aeede19abc095438b99159258a3f663c2" title="Decomposes a 3D point in two components. ">DecomposePoint()</a></code>. In fact, the strict definition of the result of this method is a 3D point whose decomposition on the plane frame base matches the method arguments. </p>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01054">1054</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Point&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">fDecompWire</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">ComposePoint</a>(distance, proj)); }</div>
+<div class="fragment"><div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Point&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">fDecompWire</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">ComposePoint</a>(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj)); }</div>
 <div class="ttc" id="classgeo_1_1Decomposer_html_a83847babe58b47e91f8ce65bc93b4e50"><div class="ttname"><a href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">geo::Decomposer::ComposePoint</a></div><div class="ttdeci">Point_t ComposePoint(DecomposedVector_t const &amp;decomp) const </div><div class="ttdoc">Returns the 3D point from composition of projection and distance. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/Decomposer_8h_source.html#l00611">Decomposer.h:611</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classgeo_1_1PlaneGeo_html_a44b84270ade2573b0eccc313e2ae3b59"><div class="ttname"><a href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">geo::PlaneGeo::fDecompWire</a></div><div class="ttdeci">WireDecomposer_t fDecompWire</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d80/PlaneGeo_8h_source.html#l01491">PlaneGeo.h:1491</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1431,7 +1432,8 @@ template&lt;typename Point &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01057">1057</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;      { <span class="keywordflow">return</span> ComposePoint&lt;DefaultPoint_t&gt;(distance, proj); }</div>
+<div class="fragment"><div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;      { <span class="keywordflow">return</span> ComposePoint&lt;DefaultPoint_t&gt;(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj); }</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1568,8 +1570,9 @@ template&lt;typename Point &gt; </div>
 <p>Given the arbitrary definition of the projection reference, it is assumed that the same convention is used as in <a class="el" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a21dff1895ff04d2a5f41676d412b8626" title="Returns the projection of the specified point on the plane. ">PointWidthDepthProjection()</a> and <a class="el" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a72251509d7d33d882f56254210557bc2" title="Decomposes a 3D point in two components. ">DecomposePointWidthDepth()</a>. </p>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01322">1322</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Point&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a2d67a76434a114159bdf5910d83a49c7">fDecompFrame</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">ComposePoint</a>(distance, proj)); }</div>
+<div class="fragment"><div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Point&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a2d67a76434a114159bdf5910d83a49c7">fDecompFrame</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">ComposePoint</a>(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj)); }</div>
 <div class="ttc" id="classgeo_1_1Decomposer_html_a83847babe58b47e91f8ce65bc93b4e50"><div class="ttname"><a href="../../dc/d13/classgeo_1_1Decomposer.html#a83847babe58b47e91f8ce65bc93b4e50">geo::Decomposer::ComposePoint</a></div><div class="ttdeci">Point_t ComposePoint(DecomposedVector_t const &amp;decomp) const </div><div class="ttdoc">Returns the 3D point from composition of projection and distance. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/Decomposer_8h_source.html#l00611">Decomposer.h:611</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classgeo_1_1PlaneGeo_html_a2d67a76434a114159bdf5910d83a49c7"><div class="ttname"><a href="../../d4/d67/classgeo_1_1PlaneGeo.html#a2d67a76434a114159bdf5910d83a49c7">geo::PlaneGeo::fDecompFrame</a></div><div class="ttdeci">WidthDepthDecomposer_t fDecompFrame</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d80/PlaneGeo_8h_source.html#l01495">PlaneGeo.h:1495</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1607,7 +1610,8 @@ template&lt;typename Point &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01325">1325</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;      { <span class="keywordflow">return</span> ComposePoint&lt;DefaultPoint_t&gt;(distance, proj); }</div>
+<div class="fragment"><div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;      { <span class="keywordflow">return</span> ComposePoint&lt;DefaultPoint_t&gt;(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj); }</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1743,8 +1747,9 @@ template&lt;typename Vector &gt; </div>
 </ol>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01005">1005</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Vector&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">fDecompWire</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#aff1c13b57d33e84341377b0027e8b3d8">ComposeVector</a>(distance, proj)); }</div>
+<div class="fragment"><div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;      { <span class="keywordflow">return</span> geo::vect::convertTo&lt;Vector&gt;(<a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">fDecompWire</a>.<a class="code" href="../../dc/d13/classgeo_1_1Decomposer.html#aff1c13b57d33e84341377b0027e8b3d8">ComposeVector</a>(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj)); }</div>
 <div class="ttc" id="classgeo_1_1Decomposer_html_aff1c13b57d33e84341377b0027e8b3d8"><div class="ttname"><a href="../../dc/d13/classgeo_1_1Decomposer.html#aff1c13b57d33e84341377b0027e8b3d8">geo::Decomposer::ComposeVector</a></div><div class="ttdeci">Vector_t ComposeVector(DecomposedVector_t const &amp;decomp) const </div><div class="ttdoc">Returns the 3D vector from composition of projection and distance. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc6/Decomposer_8h_source.html#l00648">Decomposer.h:648</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classgeo_1_1PlaneGeo_html_a44b84270ade2573b0eccc313e2ae3b59"><div class="ttname"><a href="../../d4/d67/classgeo_1_1PlaneGeo.html#a44b84270ade2573b0eccc313e2ae3b59">geo::PlaneGeo::fDecompWire</a></div><div class="ttdeci">WireDecomposer_t fDecompWire</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d80/PlaneGeo_8h_source.html#l01491">PlaneGeo.h:1491</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1782,7 +1787,8 @@ template&lt;typename Vector &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l01008">1008</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;      { <span class="keywordflow">return</span> ComposeVector&lt;DefaultVector_t&gt;(distance, proj); }</div>
+<div class="fragment"><div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;      { <span class="keywordflow">return</span> ComposeVector&lt;DefaultVector_t&gt;(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a>, proj); }</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2549,7 +2555,8 @@ template&lt;typename Vector &gt; </div>
 <p>This is a pure geometry computation: the position is shifted by the drift distance in the direction opposite to the normal to the plane (as returned by <code><a class="el" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a9747db83dd7c5dc6fe68da661b04ffc8" title="Returns the direction normal to the plane. ">GetNormalDirection()</a></code>), no matter where the position is relative to the plane. The wording about "electron position" is just meant to remind that the drift shift is taken with opposite sign: since the point is assumed to be an electron, a positive drift normally moves its position toward the wire plane. </p>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l00643">643</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;      { position -= distance * GetNormalDirection&lt;geo::Vector_t&gt;(); }</div>
+<div class="fragment"><div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;      { position -= <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a> * GetNormalDirection&lt;geo::Vector_t&gt;(); }</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2586,8 +2593,9 @@ template&lt;typename Vector &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l00645">645</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;      { position -= distance * <a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a9747db83dd7c5dc6fe68da661b04ffc8">GetNormalDirection</a>(); }</div>
+<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;      { position -= <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a> * <a class="code" href="../../d4/d67/classgeo_1_1PlaneGeo.html#a9747db83dd7c5dc6fe68da661b04ffc8">GetNormalDirection</a>(); }</div>
 <div class="ttc" id="classgeo_1_1PlaneGeo_html_a9747db83dd7c5dc6fe68da661b04ffc8"><div class="ttname"><a href="../../d4/d67/classgeo_1_1PlaneGeo.html#a9747db83dd7c5dc6fe68da661b04ffc8">geo::PlaneGeo::GetNormalDirection</a></div><div class="ttdeci">Vector GetNormalDirection() const </div><div class="ttdoc">Returns the direction normal to the plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d80/PlaneGeo_8h_source.html#l00442">PlaneGeo.h:442</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4031,7 +4039,7 @@ template&lt;typename Vector &gt; </div>
 <p>The position is projected on the wire plane, and the ID of the nearest wire to the projected point is returned.</p>
 <p>If the wire does not exist, an exception is thrown that contains both the wire that would be the closest one (<code>badWireID()</code>), and also the wire that is actually the closest one (<code>betterWireID()</code>). When this happens, the specified position was outside the wire plane.</p>
 <p>Note that the caller should check for containment: this function may or may not report the position being outside the plane, depending on where it is. In the current implementation, the wires are considered infinitely long, and if the position projection is closer than half the wire pitch from any of these extrapolated wires, the method will not report error.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000058">Todo:</a></b></dt><dd>When the ID is out of range, instead of throwing an exception, return an invalid wire ID with the wire number set to the non-existing wire which <em>would</em> be the nearest to <code>pos</code>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo:</a></b></dt><dd>When the ID is out of range, instead of throwing an exception, return an invalid wire ID with the wire number set to the non-existing wire which <em>would</em> be the nearest to <code>pos</code>. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d8/dd0/PlaneGeo_8cxx_source.html#l00649">649</a> of file <a class="el" href="../../d8/dd0/PlaneGeo_8cxx_source.html">PlaneGeo.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                                                               {</div>
@@ -6124,7 +6132,7 @@ template&lt;typename Point &gt; </div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a85071fd2271c89f98fa3d4fb2086f9eb">geo::kY</a></div><div class="ttdoc">Planes which measure Y direction. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00133">geo_types.h:133</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486a62e6ba50af3526eba733c9dec8746bea"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486a62e6ba50af3526eba733c9dec8746bea">geo::k3D</a></div><div class="ttdoc">3-dimensional objects, potentially hits, clusters, prongs, etc. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00135">geo_types.h:135</a></div></div>
 <div class="ttc" id="namespacegeo_html_aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b"><div class="ttname"><a href="../../d6/d23/namespacegeo.html#aca2efd2e6b858cf0a9c12384c3b2f486ae2842cacc3d7d281d01b4316380b8d5b">geo::kU</a></div><div class="ttdoc">Planes which measure U. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00129">geo_types.h:129</a></div></div>
-<div class="ttc" id="namespaceicarus_1_1trigger_html_a7718dbf2e5e4aa346e7fbabaa451457f"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">icarus::trigger::to_string</a></div><div class="ttdeci">std::string to_string(WindowPattern const &amp;pattern)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d48/WindowPattern_8h_source.html#l00102">WindowPattern.h:102</a></div></div>
+<div class="ttc" id="namespaceicarus_1_1trigger_html_a7718dbf2e5e4aa346e7fbabaa451457f"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a7718dbf2e5e4aa346e7fbabaa451457f">icarus::trigger::to_string</a></div><div class="ttdeci">std::string to_string(WindowPattern const &amp;pattern)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d48/WindowPattern_8h_source.html#l00115">WindowPattern.h:115</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

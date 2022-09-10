@@ -7,7 +7,7 @@ var searchData=
   ['beta',['BETA',['../d7/dfe/classevgen_1_1MarleyTimeGen.html#a1db03c6adf87a05bb8792c5eaabacc00a36b84f8e3fba5bf993e3ba352d62d146',1,'evgen::MarleyTimeGen']]],
   ['black',['BLACK',['../db/d0c/classlar__content_1_1LArFormattingHelper.html#a7bcdd7f886242b624f45e07d894f537da5da6ae92f84d3fca728e557cb669feca',1,'lar_content::LArFormattingHelper']]],
   ['blue',['BLUE',['../db/d0c/classlar__content_1_1LArFormattingHelper.html#a7bcdd7f886242b624f45e07d894f537da92ee546c513e31232abcb81005f5c307',1,'lar_content::LArFormattingHelper']]],
-  ['bnb',['BNB',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7a87243927c932713e00ea95a19985b447',1,'sbn::bits']]],
+  ['bnb',['BNB',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7a87243927c932713e00ea95a19985b447',1,'sbn::bits::BNB()'],['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7a87243927c932713e00ea95a19985b447',1,'sbn::bits::BNB()'],['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7a87243927c932713e00ea95a19985b447',1,'sbn::bits::BNB()'],['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7a87243927c932713e00ea95a19985b447',1,'sbn::bits::BNB()']]],
   ['bold',['BOLD',['../db/d0c/classlar__content_1_1LArFormattingHelper.html#a313bc6322f5f7914a800b08b87d99392a557caee41e4d33de78d7909b3a0ceaa0',1,'lar_content::LArFormattingHelper']]],
   ['boolean',['boolean',['../dc/df0/namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a84e2c64f38f78ba3ea5c905ab5a2da27',1,'nlohmann::detail']]],
   ['bson',['bson',['../dc/df0/namespacenlohmann_1_1detail.html#aa554fc6a11519e4f347deb25a9f0db40a0b6879b186bfb2b1ec65d2460e4eccd4',1,'nlohmann::detail']]],

@@ -112,6 +112,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae2a6ed5c4560ebfdd4ef3113d110ac9e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">nshw</a></td></tr>
 <tr class="memdesc:ae2a6ed5c4560ebfdd4ef3113d110ac9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of trac showers.  <a href="#ae2a6ed5c4560ebfdd4ef3113d110ac9e">More...</a><br/></td></tr>
 <tr class="separator:ae2a6ed5c4560ebfdd4ef3113d110ac9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2628858fb201c1e4788831019b78e1d1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dca/classcaf_1_1SRHit.html">SRHit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a2628858fb201c1e4788831019b78e1d1">hit</a></td></tr>
+<tr class="memdesc:a2628858fb201c1e4788831019b78e1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of hits.  <a href="#a2628858fb201c1e4788831019b78e1d1">More...</a><br/></td></tr>
+<tr class="separator:a2628858fb201c1e4788831019b78e1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c8b57a66780a869499e7427649781e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a22c8b57a66780a869499e7427649781e">nhit</a></td></tr>
+<tr class="memdesc:a22c8b57a66780a869499e7427649781e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of hits.  <a href="#a22c8b57a66780a869499e7427649781e">More...</a><br/></td></tr>
+<tr class="separator:a22c8b57a66780a869499e7427649781e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e70c92eb7c299176698b9e4de4ad36f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/d88/classcaf_1_1SRStub.html">SRStub</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a4e70c92eb7c299176698b9e4de4ad36f">stub</a></td></tr>
 <tr class="memdesc:a4e70c92eb7c299176698b9e4de4ad36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of stubs.  <a href="#a4e70c92eb7c299176698b9e4de4ad36f">More...</a><br/></td></tr>
 <tr class="separator:a4e70c92eb7c299176698b9e4de4ad36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +128,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vectors of reconstructed objects found by various algorithms. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00016">16</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00017">17</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4b6bba7385f347ce4f59d675109d7351"></a>
 <div class="memitem">
@@ -141,12 +147,14 @@ Public Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                       :</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">ntrk</a>(0),</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">nshw</a>(0),</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a848e25710f341d30c968c802ba232bab">nstub</a>(0)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {  </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  }</div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_ae2a6ed5c4560ebfdd4ef3113d110ac9e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">caf::SRSliceRecoBranch::nshw</a></div><div class="ttdeci">size_t nshw</div><div class="ttdoc">Number of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00026">SRSliceRecoBranch.h:26</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a848e25710f341d30c968c802ba232bab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a848e25710f341d30c968c802ba232bab">caf::SRSliceRecoBranch::nstub</a></div><div class="ttdeci">size_t nstub</div><div class="ttdoc">Number of stubs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00029">SRSliceRecoBranch.h:29</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a1b5baf14377b8c663eb509243ccfbfab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">caf::SRSliceRecoBranch::ntrk</a></div><div class="ttdeci">size_t ntrk</div><div class="ttdoc">Number of panora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00023">SRSliceRecoBranch.h:23</a></div></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a22c8b57a66780a869499e7427649781e">nhit</a>(0),</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a848e25710f341d30c968c802ba232bab">nstub</a>(0)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {  </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_ae2a6ed5c4560ebfdd4ef3113d110ac9e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">caf::SRSliceRecoBranch::nshw</a></div><div class="ttdeci">size_t nshw</div><div class="ttdoc">Number of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00027">SRSliceRecoBranch.h:27</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a22c8b57a66780a869499e7427649781e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a22c8b57a66780a869499e7427649781e">caf::SRSliceRecoBranch::nhit</a></div><div class="ttdeci">size_t nhit</div><div class="ttdoc">Number of hits. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00030">SRSliceRecoBranch.h:30</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a848e25710f341d30c968c802ba232bab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a848e25710f341d30c968c802ba232bab">caf::SRSliceRecoBranch::nstub</a></div><div class="ttdeci">size_t nstub</div><div class="ttdoc">Number of stubs. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00033">SRSliceRecoBranch.h:33</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a1b5baf14377b8c663eb509243ccfbfab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">caf::SRSliceRecoBranch::ntrk</a></div><div class="ttdeci">size_t ntrk</div><div class="ttdoc">Number of panora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00024">SRSliceRecoBranch.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -163,9 +171,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html#l00018">18</a> of file <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html">SRSliceRecoBranch.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  { </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html#l00019">19</a> of file <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html">SRSliceRecoBranch.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  { </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,24 +191,59 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html#l00022">22</a> of file <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html">SRSliceRecoBranch.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//    nvtx   = vtx.size();</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">ntrk</a>   = <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a552931166fc958bab194c6387b5f980c">trk</a>.size();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">nshw</a>   = <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a5c5bbbcb677ae05a38aa07adf1b0c3a6">shw</a>.size();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// nshw_em = shw_em.size();</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// nshw_pandora = shw_pandora.size();</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a5c5bbbcb677ae05a38aa07adf1b0c3a6"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a5c5bbbcb677ae05a38aa07adf1b0c3a6">caf::SRSliceRecoBranch::shw</a></div><div class="ttdeci">std::vector&lt; SRShower &gt; shw</div><div class="ttdoc">Vector of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00025">SRSliceRecoBranch.h:25</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_ae2a6ed5c4560ebfdd4ef3113d110ac9e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">caf::SRSliceRecoBranch::nshw</a></div><div class="ttdeci">size_t nshw</div><div class="ttdoc">Number of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00026">SRSliceRecoBranch.h:26</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a1b5baf14377b8c663eb509243ccfbfab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">caf::SRSliceRecoBranch::ntrk</a></div><div class="ttdeci">size_t ntrk</div><div class="ttdoc">Number of panora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00023">SRSliceRecoBranch.h:23</a></div></div>
-<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a552931166fc958bab194c6387b5f980c"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a552931166fc958bab194c6387b5f980c">caf::SRSliceRecoBranch::trk</a></div><div class="ttdeci">std::vector&lt; SRTrack &gt; trk</div><div class="ttdoc">Vector of pandora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00022">SRSliceRecoBranch.h:22</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html#l00023">23</a> of file <a class="el" href="../../d3/dbf/SRSliceRecoBranch_8cxx_source.html">SRSliceRecoBranch.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//    nvtx   = vtx.size();</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">ntrk</a>   = <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a552931166fc958bab194c6387b5f980c">trk</a>.size();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">nshw</a>   = <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a5c5bbbcb677ae05a38aa07adf1b0c3a6">shw</a>.size();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a22c8b57a66780a869499e7427649781e">nhit</a>   = <a class="code" href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a2628858fb201c1e4788831019b78e1d1">hit</a>.size();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// nshw_em = shw_em.size();</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// nshw_pandora = shw_pandora.size();</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a5c5bbbcb677ae05a38aa07adf1b0c3a6"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a5c5bbbcb677ae05a38aa07adf1b0c3a6">caf::SRSliceRecoBranch::shw</a></div><div class="ttdeci">std::vector&lt; SRShower &gt; shw</div><div class="ttdoc">Vector of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00026">SRSliceRecoBranch.h:26</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a2628858fb201c1e4788831019b78e1d1"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a2628858fb201c1e4788831019b78e1d1">caf::SRSliceRecoBranch::hit</a></div><div class="ttdeci">std::vector&lt; SRHit &gt; hit</div><div class="ttdoc">Vector of hits. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00029">SRSliceRecoBranch.h:29</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_ae2a6ed5c4560ebfdd4ef3113d110ac9e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#ae2a6ed5c4560ebfdd4ef3113d110ac9e">caf::SRSliceRecoBranch::nshw</a></div><div class="ttdeci">size_t nshw</div><div class="ttdoc">Number of trac showers. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00027">SRSliceRecoBranch.h:27</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a22c8b57a66780a869499e7427649781e"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a22c8b57a66780a869499e7427649781e">caf::SRSliceRecoBranch::nhit</a></div><div class="ttdeci">size_t nhit</div><div class="ttdoc">Number of hits. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00030">SRSliceRecoBranch.h:30</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a1b5baf14377b8c663eb509243ccfbfab"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a1b5baf14377b8c663eb509243ccfbfab">caf::SRSliceRecoBranch::ntrk</a></div><div class="ttdeci">size_t ntrk</div><div class="ttdoc">Number of panora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00024">SRSliceRecoBranch.h:24</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSliceRecoBranch_html_a552931166fc958bab194c6387b5f980c"><div class="ttname"><a href="../../d0/d19/classcaf_1_1SRSliceRecoBranch.html#a552931166fc958bab194c6387b5f980c">caf::SRSliceRecoBranch::trk</a></div><div class="ttdeci">std::vector&lt; SRTrack &gt; trk</div><div class="ttdoc">Vector of pandora tracks. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00023">SRSliceRecoBranch.h:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a2628858fb201c1e4788831019b78e1d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dca/classcaf_1_1SRHit.html">SRHit</a>&gt; caf::SRSliceRecoBranch::hit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vector of hits. </p>
+
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00029">29</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22c8b57a66780a869499e7427649781e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t caf::SRSliceRecoBranch::nhit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of hits. </p>
+
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00030">30</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae2a6ed5c4560ebfdd4ef3113d110ac9e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +256,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of trac showers. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00026">26</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00027">27</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +272,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of stubs. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00029">29</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00033">33</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +288,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of panora tracks. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00023">23</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00024">24</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +304,7 @@ Public Attributes</h2></td></tr>
 
 <p>Vector of trac showers. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00025">25</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00026">26</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +320,7 @@ Public Attributes</h2></td></tr>
 
 <p>Vector of stubs. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00028">28</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00032">32</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>
@@ -293,7 +336,7 @@ Public Attributes</h2></td></tr>
 
 <p>Vector of pandora tracks. </p>
 
-<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00022">22</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html#l00023">23</a> of file <a class="el" href="../../d4/db7/SRSliceRecoBranch_8h_source.html">SRSliceRecoBranch.h</a>.</p>
 
 </div>
 </div>

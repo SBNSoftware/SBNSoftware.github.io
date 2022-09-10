@@ -78,6 +78,8 @@ var searchData=
   ['peakfittermrqdt_5ftool_2ecc',['PeakFitterMrqdt_tool.cc',['../d8/d6e/PeakFitterMrqdt__tool_8cc.html',1,'']]],
   ['pedalgoedges_2ecxx',['PedAlgoEdges.cxx',['../d2/de0/PedAlgoEdges_8cxx.html',1,'']]],
   ['pedalgoedges_2eh',['PedAlgoEdges.h',['../db/dda/PedAlgoEdges_8h.html',1,'']]],
+  ['pedalgofixed_2ecxx',['PedAlgoFixed.cxx',['../db/dd9/PedAlgoFixed_8cxx.html',1,'']]],
+  ['pedalgofixed_2eh',['PedAlgoFixed.h',['../d4/ddd/PedAlgoFixed_8h.html',1,'']]],
   ['pedalgormsslider_2ecxx',['PedAlgoRmsSlider.cxx',['../d1/d9b/PedAlgoRmsSlider_8cxx.html',1,'']]],
   ['pedalgormsslider_2eh',['PedAlgoRmsSlider.h',['../db/d46/PedAlgoRmsSlider_8h.html',1,'']]],
   ['pedalgorollingmean_2ecxx',['PedAlgoRollingMean.cxx',['../d6/d4b/PedAlgoRollingMean_8cxx.html',1,'']]],
@@ -244,6 +246,7 @@ var searchData=
   ['pmtverticalslicingalg_2ecxx',['PMTverticalSlicingAlg.cxx',['../dc/d81/PMTverticalSlicingAlg_8cxx.html',1,'']]],
   ['pmtverticalslicingalg_2eh',['PMTverticalSlicingAlg.h',['../d4/df1/PMTverticalSlicingAlg_8h.html',1,'']]],
   ['pmtwaveformbaselines_5fmodule_2ecc',['PMTWaveformBaselines_module.cc',['../d6/d53/PMTWaveformBaselines__module_8cc.html',1,'']]],
+  ['pmtwaveformbaselinesfromchanneldata_5fmodule_2ecc',['PMTWaveformBaselinesFromChannelData_module.cc',['../d4/d9f/PMTWaveformBaselinesFromChannelData__module_8cc.html',1,'']]],
   ['pmtwaveformbaselinesfromreadoutconfiguration_5fmodule_2ecc',['PMTWaveformBaselinesFromReadoutConfiguration_module.cc',['../d3/dd2/PMTWaveformBaselinesFromReadoutConfiguration__module_8cc.html',1,'']]],
   ['pngarena_2ecxx',['PNGArena.cxx',['../db/d25/PNGArena_8cxx.html',1,'']]],
   ['pngarena_2eh',['PNGArena.h',['../d2/d8a/PNGArena_8h.html',1,'']]],
@@ -624,5 +627,7 @@ var searchData=
   ['pxutils_2eh',['PxUtils.h',['../db/d5d/PxUtils_8h.html',1,'']]],
   ['pyutils_2ecxx',['PyUtils.cxx',['../d8/d39/PyUtils_8cxx.html',1,'']]],
   ['pyutils_2eh',['PyUtils.h',['../d6/dbe/PyUtils_8h.html',1,'']]],
-  ['test_5fkrypton_5fatomic_5fnumber_2efcl',['test_krypton_atomic_number.fcl',['../de/d32/Providers_2test__krypton__atomic__number_8fcl.html',1,'']]]
+  ['test_5fkrypton_5fatomic_5fnumber_2efcl',['test_krypton_atomic_number.fcl',['../de/d32/Providers_2test__krypton__atomic__number_8fcl.html',1,'']]],
+  ['triggerresponsemanager_2ecxx',['TriggerResponseManager.cxx',['../db/da7/PMT_2Trigger_2Utilities_2TriggerResponseManager_8cxx.html',1,'']]],
+  ['triggerresponsemanager_2eh',['TriggerResponseManager.h',['../d9/d0e/PMT_2Trigger_2Utilities_2TriggerResponseManager_8h.html',1,'']]]
 ];

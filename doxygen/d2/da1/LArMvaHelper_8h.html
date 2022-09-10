@@ -83,7 +83,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d3/df4/LArMvaInterface_8h_source.html">larpandoracontent/LArObjects/LArMvaInterface.h</a>&quot;</code><br/>
+<code>#include &quot;Api/PandoraContentApi.h&quot;</code><br/>
+<code>#include &quot;Helpers/XmlHelper.h&quot;</code><br/>
+<code>#include &quot;Pandora/Algorithm.h&quot;</code><br/>
 <code>#include &quot;Pandora/AlgorithmTool.h&quot;</code><br/>
+<code>#include &quot;Pandora/PandoraInternal.h&quot;</code><br/>
 <code>#include &quot;Pandora/StatusCodes.h&quot;</code><br/>
 <code>#include &lt;chrono&gt;</code><br/>
 <code>#include &lt;ctime&gt;</code><br/>
@@ -110,6 +114,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a9b05c2599a42c14ae9ca0bee436adba3"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a9b05c2599a42c14ae9ca0bee436adba3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/de7/namespacelar__content.html#a9b05c2599a42c14ae9ca0bee436adba3">lar_content::MvaFeatureToolVector</a> = std::vector&lt; MvaFeatureTool&lt; Ts...&gt; * &gt;</td></tr>
 <tr class="separator:a9b05c2599a42c14ae9ca0bee436adba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff3784b4ae73ec28cc47af8e9b36d8c"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a1ff3784b4ae73ec28cc47af8e9b36d8c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/de7/namespacelar__content.html#a1ff3784b4ae73ec28cc47af8e9b36d8c">lar_content::MvaFeatureToolMap</a> = std::map&lt; std::string, MvaFeatureTool&lt; Ts...&gt; * &gt;</td></tr>
+<tr class="separator:a1ff3784b4ae73ec28cc47af8e9b36d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

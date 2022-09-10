@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"># ##############################################################################</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d82/namespaceICARUSgeometryChecker.html#af5d632e37d4038e71ce334cdeaea7af4">   45</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d3/d82/namespaceICARUSgeometryChecker.html#af5d632e37d4038e71ce334cdeaea7af4">GeoPairToString</a>(pair):</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot; - &quot;</span>.join(map(<span class="keyword">lambda</span> obj: str(obj.ID()), pair))</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot; - &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(<span class="keyword">lambda</span> obj: str(obj.ID()), pair))</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d3/d82/namespaceICARUSgeometryChecker.html#ab2f037b03b3fcc5d161bd55bf6767b33">   48</a></span>&#160;<span class="keyword">def </span><a class="code" href="../../d3/d82/namespaceICARUSgeometryChecker.html#ab2f037b03b3fcc5d161bd55bf6767b33">BoxToString</a>(box): <span class="keywordflow">return</span> <span class="stringliteral">&quot;%s -- %s&quot;</span> % (box.Min(), box.Max())</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
@@ -371,7 +371,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">if</span> len(borders) == 0:</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      logging.error(</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;       <span class="stringliteral">&quot;Wire %s \&quot;start\&quot; at %s cm does not touch any plane border (%s)&quot;</span>,</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;       wireID, start, <span class="stringliteral">&quot;, &quot;</span>.join(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;       wireID, start, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;       )</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      shorterWires.setdefault(wireID, []).append(<span class="stringliteral">&#39;start&#39;</span>)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment"># if error</span></div>
@@ -386,7 +386,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> len(borders) == 0:</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      logging.error(</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;       <span class="stringliteral">&quot;Wire %s \&quot;end\&quot; at %s cm does not touch any plane border (%s)&quot;</span>,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;       wireID, end, <span class="stringliteral">&quot;, &quot;</span>.join(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;       wireID, end, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;       )</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      shorterWires.setdefault(wireID, []).append(<span class="stringliteral">&#39;end&#39;</span>)</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment"># if error</span></div>
@@ -782,7 +782,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  <span class="keywordflow">if</span> overlappingCryostats:</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    msg = <span class="stringliteral">&quot;%s cryostat overlaps detected: %s.&quot;</span> % (</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;     len(overlappingCryostats),</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingCryostats)),</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingCryostats)),</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;     )</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    FailureSummary.append(msg)</div>
@@ -794,7 +794,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  overlappingTPCs = <a class="code" href="../../d3/d82/namespaceICARUSgeometryChecker.html#a5b09a6e0972211f2c2b909c3ef393115">CheckGeoObjOverlaps</a>(TPCs, <span class="stringliteral">&quot;TPC&quot;</span>)</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <span class="keywordflow">if</span> overlappingTPCs:</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    msg = <span class="stringliteral">&quot;%s TPC overlaps detected: %s.&quot;</span> % (</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;     len(overlappingTPCs), <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingTPCs)),</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;     len(overlappingTPCs), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingTPCs)),</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;     )</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    FailureSummary.append(msg)</div>
@@ -808,7 +808,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  <span class="keywordflow">if</span> overlappingActiveVolTPCs:</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    msg = <span class="stringliteral">&quot;%s TPC active volume overlaps detected: %s.&quot;</span> % (</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;     len(overlappingActiveVolTPCs),</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingActiveVolTPCs)),</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingActiveVolTPCs)),</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;     )</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    FailureSummary.append(msg)</div>
@@ -822,7 +822,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keywordflow">if</span> overlappingPlanes:</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire plane overlaps detected: %s.&quot;</span>,</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;     len(overlappingPlanes),</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingPlanes))</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingPlanes))</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;     )</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    FailureSummary.append \</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;      (<span class="stringliteral">&quot;%s wire plane overlaps detected.&quot;</span> % len(overlappingPlanes))</div>
@@ -838,7 +838,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes are correctly aligned along z.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment on z: %s&quot;</span>,</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      ),</div>
@@ -852,7 +852,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    logging.info(<span class="stringliteral">&quot;Top of all %d planes is correctly aligned.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment of top side: %s&quot;</span>,</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;      ),</div>
@@ -866,7 +866,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    logging.info(<span class="stringliteral">&quot;Bottom of all %d planes is correctly aligned.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment of bottom side: %s&quot;</span>,</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      ),</div>
@@ -883,7 +883,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;     )</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering the touching side: %s&quot;</span>,</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;      ),</div>
@@ -902,7 +902,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;     )</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering bottom side: %s&quot;</span>,</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;      ),</div>
@@ -921,7 +921,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;     )</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering top side: %s&quot;</span>,</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;      ),</div>
@@ -939,7 +939,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes have matching views.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present direction inconsistencies:&quot;</span>,</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="stringliteral">&quot;%s vs. %s&quot;</span> % (planeA.ID(), planeB.ID())</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="keywordflow">for</span> planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;      ),</div>
@@ -954,7 +954,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes have consistent directions.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present view inconsistencies:&quot;</span>,</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="stringliteral">&quot;%s vs. %s&quot;</span> % (planeA.ID(), planeB.ID())</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">for</span> planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;      ),</div>
@@ -975,7 +975,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;      len(shorterWires),</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      )</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    <span class="keywordflow">for</span> wireID, ends <span class="keywordflow">in</span> shorterWires.items():</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      logging.error(<span class="stringliteral">&quot;  %s: %s&quot;</span>, wireID, <span class="stringliteral">&quot;, &quot;</span>.join(ends))</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      logging.error(<span class="stringliteral">&quot;  %s: %s&quot;</span>, wireID, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(ends))</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    FailureSummary.append \</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;      (<span class="stringliteral">&quot;%d wires do not end on plane frame&quot;</span> % len(shorterWires))</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;  <span class="comment"># if error</span></div>
@@ -1007,7 +1007,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  </div>
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  <span class="keywordflow">if</span> FailureSummary:</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    logging.info(<span class="stringliteral">&quot;%d failure categories detected:\n - %s&quot;</span>,</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;     len(FailureSummary), <span class="stringliteral">&quot;\n - &quot;</span>.join(FailureSummary),</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;     len(FailureSummary), <span class="stringliteral">&quot;\n - &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(FailureSummary),</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;     )</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;  <span class="comment"># if failures</span></div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <span class="keywordflow">return</span> 1 <span class="keywordflow">if</span> FailureSummary <span class="keywordflow">else</span> 0</div>
@@ -1050,6 +1050,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classICARUSgeometryChecker_1_1SimpleProximityClusterer_html_a1f8e58e5dea59c532787a0091851a68c"><div class="ttname"><a href="../../d1/d30/classICARUSgeometryChecker_1_1SimpleProximityClusterer.html#a1f8e58e5dea59c532787a0091851a68c">ICARUSgeometryChecker.SimpleProximityClusterer._compareKeys</a></div><div class="ttdeci">def _compareKeys</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00574">ICARUSgeometryChecker.py:574</a></div></div>
 <div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
 <div class="ttc" id="classICARUSgeometryChecker_1_1SimpleProximityClusterer_html"><div class="ttname"><a href="../../d1/d30/classICARUSgeometryChecker_1_1SimpleProximityClusterer.html">ICARUSgeometryChecker.SimpleProximityClusterer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00556">ICARUSgeometryChecker.py:556</a></div></div>
+<div class="ttc" id="namespaceopdet_1_1factory_html_a22a875ecbd4a799c06ecb0057ef7fb73"><div class="ttname"><a href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">opdet::factory::join</a></div><div class="ttdeci">S join(S const &amp;sep, Coll const &amp;s)</div><div class="ttdoc">Returns a concatenation of strings in s separated by sep. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfe/OpRecoFactoryStuff_8h_source.html#l00573">OpRecoFactoryStuff.h:573</a></div></div>
 <div class="ttc" id="classICARUSgeometryChecker_1_1StatCollector_html_a6daacd7e51ad93fc30cfed5f124bb1e4"><div class="ttname"><a href="../../de/d3f/classICARUSgeometryChecker_1_1StatCollector.html#a6daacd7e51ad93fc30cfed5f124bb1e4">ICARUSgeometryChecker.StatCollector.n</a></div><div class="ttdeci">n</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00623">ICARUSgeometryChecker.py:623</a></div></div>
 <div class="ttc" id="classICARUSgeometryChecker_1_1NestedIteration_html_aa3599b9f0b6f5a4c8b4fb3082ee7aedd"><div class="ttname"><a href="../../d1/d74/classICARUSgeometryChecker_1_1NestedIteration.html#aa3599b9f0b6f5a4c8b4fb3082ee7aedd">ICARUSgeometryChecker.NestedIteration.__init__</a></div><div class="ttdeci">def __init__</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00026">ICARUSgeometryChecker.py:26</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
