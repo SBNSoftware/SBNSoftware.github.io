@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3785c052bde2a4e68c4463d666625fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: picks the manager.  <a href="#a3785c052bde2a4e68c4463d666625fa0">More...</a><br/></td></tr>
 <tr class="separator:a3785c052bde2a4e68c4463d666625fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f8de889dfbdc036a56ac024729267b"><td class="memTemplParams" colspan="2">template&lt;typename Op &gt; </td></tr>
-<tr class="memitem:ae3f8de889dfbdc036a56ac024729267b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/dc4/classgeo_1_1ROOTGeometryNavigator.html#ae3f8de889dfbdc036a56ac024729267b">apply</a> (<a class="el" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> &amp;path, Op &amp;&amp;op) const </td></tr>
+<tr class="memitem:ae3f8de889dfbdc036a56ac024729267b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/dc4/classgeo_1_1ROOTGeometryNavigator.html#ae3f8de889dfbdc036a56ac024729267b">apply</a> (<a class="el" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> &amp;<a class="el" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>, Op &amp;&amp;op) const </td></tr>
 <tr class="memdesc:ae3f8de889dfbdc036a56ac024729267b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the specified operation to all nodes under the <code>path</code>.  <a href="#ae3f8de889dfbdc036a56ac024729267b">More...</a><br/></td></tr>
 <tr class="separator:ae3f8de889dfbdc036a56ac024729267b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c2d92b39d9cd1277d8340a2a311de6"><td class="memTemplParams" colspan="2">template&lt;typename Op &gt; </td></tr>
@@ -123,10 +123,10 @@ Private Attributes</h2></td></tr>
 <div class="line"></div>
 <div class="line"><span class="comment">// the operation executed on all nodes accumulates the paths in `volumePaths`</span></div>
 <div class="line">std::vector&lt;geo::GeoNodePath&gt; volumePaths;</div>
-<div class="line"><span class="keyword">auto</span> findVolume = [&amp;volumePaths, volumeName](<span class="keyword">auto</span>&amp; path)</div>
+<div class="line"><span class="keyword">auto</span> findVolume = [&amp;volumePaths, volumeName](<span class="keyword">auto</span>&amp; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>)</div>
 <div class="line">  {</div>
-<div class="line">    <span class="keywordflow">if</span> (path.current().GetVolume()-&gt;GetName() == volumeName)</div>
-<div class="line">      volumePaths.push_back(path);</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.current().GetVolume()-&gt;GetName() == volumeName)</div>
+<div class="line">      volumePaths.push_back(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>);</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">  };</div>
 <div class="line"></div>
@@ -285,10 +285,11 @@ template&lt;typename Op &gt; </div>
 
 <p>Definition at line <a class="el" href="../../de/db2/ROOTGeometryNavigator_8h_source.html#l00151">151</a> of file <a class="el" href="../../de/db2/ROOTGeometryNavigator_8h_source.html">ROOTGeometryNavigator.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> path { &amp;node };</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dc4/classgeo_1_1ROOTGeometryNavigator.html#ae3f8de889dfbdc036a56ac024729267b">apply</a>(path, std::forward&lt;Op&gt;(op));</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a> { &amp;node };</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d9/dc4/classgeo_1_1ROOTGeometryNavigator.html#ae3f8de889dfbdc036a56ac024729267b">apply</a>(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>, std::forward&lt;Op&gt;(op));</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;} <span class="comment">// geo::ROOTGeometryNavigator::apply()</span></div>
 <div class="ttc" id="classgeo_1_1ROOTGeometryNavigator_html_ae3f8de889dfbdc036a56ac024729267b"><div class="ttname"><a href="../../d9/dc4/classgeo_1_1ROOTGeometryNavigator.html#ae3f8de889dfbdc036a56ac024729267b">geo::ROOTGeometryNavigator::apply</a></div><div class="ttdeci">bool apply(geo::GeoNodePath &amp;path, Op &amp;&amp;op) const </div><div class="ttdoc">Applies the specified operation to all nodes under the path. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/db2/ROOTGeometryNavigator_8h_source.html#l00128">ROOTGeometryNavigator.h:128</a></div></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="classgeo_1_1GeoNodePath_html"><div class="ttname"><a href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a></div><div class="ttdoc">Representation of a node and its ancestry. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dac/GeoNodePath_8h_source.html#l00038">GeoNodePath.h:38</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -198,13 +198,14 @@ Static Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;         ++iterDghtr) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">const</span> LArDaughterDriftVolume&amp; daughterVolume(*iterDghtr);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> (cstat == daughterVolume.GetCryostat() &amp;&amp; tpc == daughterVolume.GetTpc())</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> std::distance(iter-&gt;second.GetTpcVolumeList().begin(), iterDghtr);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(iter-&gt;second.GetTpcVolumeList().begin(), iterDghtr);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;LArPandora&quot;</span>)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; LArPandoraGeometry::GetDaughterVolumeID --- found a daughter volume that doesn&#39;t belong &quot;</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;         <span class="stringliteral">&quot;to the drift volume &quot;</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
 <div class="ttc" id="classlar__pandora_1_1LArPandoraGeometry_html_ae64de69b265d284aa2fd0c88ded52e5d"><div class="ttname"><a href="../../d1/d8a/classlar__pandora_1_1LArPandoraGeometry.html#ae64de69b265d284aa2fd0c88ded52e5d">lar_pandora::LArPandoraGeometry::GetTpcID</a></div><div class="ttdeci">static unsigned int GetTpcID(const unsigned int cstat, const unsigned int tpc)</div><div class="ttdoc">Generate a unique identifier for each TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d35/LArPandoraGeometry_8cxx_source.html#l00195">LArPandoraGeometry.cxx:195</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

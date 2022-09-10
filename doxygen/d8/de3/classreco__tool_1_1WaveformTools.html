@@ -482,7 +482,7 @@ template&lt;typename T &gt; </div>
 <p>Definition at line <a class="el" href="../../d9/d42/WaveformTools__tool_8cc_source.html#l00304">304</a> of file <a class="el" href="../../d9/d42/WaveformTools__tool_8cc_source.html">WaveformTools_tool.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// Need a minimum distance or else nothing to do</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span> (std::distance(startItr,stopItr) &gt; 4)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,stopItr) &gt; 4)</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    {</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="comment">// This is a divide and conquer algorithm, start by finding the maximum element.</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keyword">typename</span> std::vector&lt;T&gt;::iterator firstItr = std::max_element(startItr,stopItr,[](<span class="keywordtype">float</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a>, <span class="keywordtype">float</span> <a class="code" href="../../d9/dd2/selectors_8fcl.html#a9453748558088ae22499027391c13aaf">right</a>){<span class="keywordflow">return</span> std::fabs(left) &lt; std::fabs(right);});</div>
@@ -532,14 +532,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">if</span> (firstItr != secondItr)</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            {</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">// Get the &quot;peak&quot; position</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordtype">size_t</span> peakBin = std::distance(startItr,firstItr) + std::distance(firstItr,secondItr) / 2;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordtype">size_t</span> peakBin = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,firstItr) + <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(firstItr,secondItr) / 2;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                <span class="comment">// Advance (forward or backward) the first and second iterators to get back to zero crossing</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                <span class="keywordflow">while</span>(firstItr  != startItr) <span class="keywordflow">if</span> (*--firstItr  &lt; 0.) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">while</span>(secondItr != stopItr)  <span class="keywordflow">if</span> (*++secondItr &gt; 0.) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <span class="keywordtype">size_t</span> firstBin = std::distance(startItr,firstItr);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="keywordtype">size_t</span> lastBin  = std::distance(startItr,secondItr);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                <span class="keywordtype">size_t</span> firstBin = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,firstItr);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                <span class="keywordtype">size_t</span> lastBin  = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,secondItr);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                <span class="comment">// Find leading peaks</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <a class="code" href="../../d8/de3/classreco__tool_1_1WaveformTools.html#a093ca5ef19322526cc40a42a9d43fe36">findPeaks</a>(startItr, firstItr, peakTupleVec, threshold, firstTick);</div>
@@ -548,7 +548,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                peakTupleVec.push_back(<a class="code" href="../../d8/de3/classreco__tool_1_1WaveformTools.html#ab17bb7b3ba2f28c6d8f5fd48e1b1a0ca">PeakTuple</a>(firstBin+firstTick,peakBin+firstTick,lastBin+firstTick));</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="comment">// Find downstream peaks</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <a class="code" href="../../d8/de3/classreco__tool_1_1WaveformTools.html#a093ca5ef19322526cc40a42a9d43fe36">findPeaks</a>(secondItr, stopItr, peakTupleVec, threshold, firstTick + std::distance(startItr,secondItr));</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                <a class="code" href="../../d8/de3/classreco__tool_1_1WaveformTools.html#a093ca5ef19322526cc40a42a9d43fe36">findPeaks</a>(secondItr, stopItr, peakTupleVec, threshold, firstTick + <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,secondItr));</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            }</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
@@ -557,6 +557,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
 <div class="ttc" id="classreco__tool_1_1WaveformTools_html_ab17bb7b3ba2f28c6d8f5fd48e1b1a0ca"><div class="ttname"><a href="../../d8/de3/classreco__tool_1_1WaveformTools.html#ab17bb7b3ba2f28c6d8f5fd48e1b1a0ca">reco_tool::WaveformTools::PeakTuple</a></div><div class="ttdeci">std::tuple&lt; size_t, size_t, size_t &gt; PeakTuple</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d42/WaveformTools__tool_8cc_source.html#l00026">WaveformTools_tool.cc:26</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a9453748558088ae22499027391c13aaf"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a9453748558088ae22499027391c13aaf">right</a></div><div class="ttdeci">walls no right</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00105">selectors.fcl:105</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a1abc6b9e279feba048394f49a85218c9"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a></div><div class="ttdeci">walls no left</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00105">selectors.fcl:105</a></div></div>
 <div class="ttc" id="classreco__tool_1_1WaveformTools_html_a093ca5ef19322526cc40a42a9d43fe36"><div class="ttname"><a href="../../d8/de3/classreco__tool_1_1WaveformTools.html#a093ca5ef19322526cc40a42a9d43fe36">reco_tool::WaveformTools::findPeaks</a></div><div class="ttdeci">void findPeaks(std::vector&lt; float &gt;::iterator, std::vector&lt; float &gt;::iterator, PeakTupleVec &amp;, float, size_t) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d42/WaveformTools__tool_8cc_source.html#l00297">WaveformTools_tool.cc:297</a></div></div>
 </div><!-- fragment -->
@@ -1008,14 +1009,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="comment">// 2) is the new element smaller/larger than the current min/max?</span></div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="comment">// Make sure we are not running off the end of the vector</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keywordflow">if</span> (std::distance(inputItr,inputWaveform.end()) &gt; halfWindowSize)</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputItr,inputWaveform.end()) &gt; halfWindowSize)</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keywordflow">if</span> (std::distance(minElementItr,inputItr) &gt;= halfWindowSize)</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(minElementItr,inputItr) &gt;= halfWindowSize)</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                minElementItr = std::min_element(inputItr - halfWindowSize + 1, inputItr + halfWindowSize + 1);</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(inputItr + halfWindowSize) &lt; *minElementItr)</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                minElementItr = inputItr + halfWindowSize;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">if</span> (std::distance(maxElementItr,inputItr) &gt;= halfWindowSize)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(maxElementItr,inputItr) &gt;= halfWindowSize)</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                maxElementItr = std::max_element(inputItr - halfWindowSize + 1, inputItr + halfWindowSize + 1);</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(inputItr + halfWindowSize) &gt; *maxElementItr)</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                maxElementItr = inputItr + halfWindowSize;</div>
@@ -1029,7 +1030,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keywordflow">if</span> (!histogramMap.empty())</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        {</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordtype">int</span> curBin = std::distance(inputWaveform.begin(),inputItr);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordtype">int</span> curBin = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputWaveform.begin(),inputItr);</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            histogramMap.at(<a class="code" href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a79adefc3f0a28c6fa5b05711c82fd366">WAVEFORM</a>)-&gt;Fill(   curBin, *inputItr);</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            histogramMap.at(<a class="code" href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815af521a5ba08dc8529b5aea8331cf371f9">EROSION</a>)-&gt;Fill(    curBin, *minElementItr);</div>
@@ -1043,6 +1044,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;}</div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815af521a5ba08dc8529b5aea8331cf371f9"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815af521a5ba08dc8529b5aea8331cf371f9">reco_tool::EROSION</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00031">IWaveformTool.h:31</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815a76c1e3eba784b1fb3715b1dab2ae6080"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a76c1e3eba784b1fb3715b1dab2ae6080">reco_tool::AVERAGE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00033">IWaveformTool.h:33</a></div></div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815af077689d851a9d6f7e351d5dd6912e70"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815af077689d851a9d6f7e351d5dd6912e70">reco_tool::DILATION</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00032">IWaveformTool.h:32</a></div></div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815af8dafadc03f0cd1c0a665a889a72edbc"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815af8dafadc03f0cd1c0a665a889a72edbc">reco_tool::DIFFERENCE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00034">IWaveformTool.h:34</a></div></div>
@@ -1446,9 +1448,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;        <span class="comment">// 2) is the new element smaller/larger than the current min/max?</span></div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <span class="comment">// Make sure we are not running off the end of the vector</span></div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keywordflow">if</span> (std::distance(inputItr,erosionVec.end()) &gt; halfWindowSize)</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputItr,erosionVec.end()) &gt; halfWindowSize)</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            <span class="keywordflow">if</span> (std::distance(maxElementItr,inputItr) &gt;= halfWindowSize)</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(maxElementItr,inputItr) &gt;= halfWindowSize)</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                maxElementItr = std::max_element(inputItr - halfWindowSize + 1, inputItr + halfWindowSize + 1);</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(inputItr + halfWindowSize) &gt; *maxElementItr)</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                maxElementItr = inputItr + halfWindowSize;</div>
@@ -1459,7 +1461,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <span class="keywordflow">if</span> (!histogramMap.empty())</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        {</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">int</span> curBin = std::distance(erosionVec.begin(),inputItr);</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            <span class="keywordtype">int</span> curBin = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(erosionVec.begin(),inputItr);</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            histogramMap.at(<a class="code" href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a33857548c3aa3ed7293d024f9d19a0a7">OPENING</a>)-&gt;Fill(curBin, *maxElementItr);</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        }</div>
@@ -1481,9 +1483,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="comment">// 2) is the new element smaller/larger than the current min/max?</span></div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        <span class="comment">// Make sure we are not running off the end of the vector</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">if</span> (std::distance(inputItr,dilationVec.end()) &gt; halfWindowSize)</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputItr,dilationVec.end()) &gt; halfWindowSize)</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        {</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;            <span class="keywordflow">if</span> (std::distance(minElementItr,inputItr) &gt;= halfWindowSize)</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(minElementItr,inputItr) &gt;= halfWindowSize)</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                minElementItr = std::min_element(inputItr - halfWindowSize + 1, inputItr + halfWindowSize + 1);</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(inputItr + halfWindowSize) &lt; *minElementItr)</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                minElementItr = inputItr + halfWindowSize;</div>
@@ -1494,7 +1496,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keywordflow">if</span> (!histogramMap.empty())</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            <span class="keywordtype">int</span> curBin = std::distance(dilationVec.begin(),inputItr);</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            <span class="keywordtype">int</span> curBin = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(dilationVec.begin(),inputItr);</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            histogramMap.at(<a class="code" href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a2b55797250d3e4676a9067d65f6ae1b4">CLOSING</a>)-&gt;Fill(curBin, *minElementItr);</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            histogramMap.at(<a class="code" href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a4d357ad38b944015c0c4283911f58857">DOPENCLOSING</a>)-&gt;Fill(curBin, *minElementItr - openingVec.at(curBin));</div>
@@ -1504,6 +1506,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;}</div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815a2b55797250d3e4676a9067d65f6ae1b4"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a2b55797250d3e4676a9067d65f6ae1b4">reco_tool::CLOSING</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00036">IWaveformTool.h:36</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815a33857548c3aa3ed7293d024f9d19a0a7"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a33857548c3aa3ed7293d024f9d19a0a7">reco_tool::OPENING</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00035">IWaveformTool.h:35</a></div></div>
 <div class="ttc" id="namespacereco__tool_html_a8bea517f468bea2e99443428a7507815a4d357ad38b944015c0c4283911f58857"><div class="ttname"><a href="../../de/df2/namespacereco__tool.html#a8bea517f468bea2e99443428a7507815a4d357ad38b944015c0c4283911f58857">reco_tool::DOPENCLOSING</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd0/IWaveformTool_8h_source.html#l00037">IWaveformTool.h:37</a></div></div>
 </div><!-- fragment -->
@@ -1907,7 +1910,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// First bins are not smoothed</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">std::copy</a>(startItr, startItr + medianBin, smoothVec.begin());</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">while</span>(std::distance(startItr,stopItr) &gt; 0)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,stopItr) &gt; 0)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">std::copy</a>(startItr,startItr+nBins,medianVec.begin());</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        std::sort(medianVec.begin(),medianVec.end());</div>
@@ -1924,6 +1927,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="RangeForWrapper__test_8cc_html_a2a47a7f29f0ddd7ff5d68f8aff63125c"><div class="ttname"><a href="../../d6/dd6/RangeForWrapper__test_8cc.html#a2a47a7f29f0ddd7ff5d68f8aff63125c">copy</a></div><div class="ttdeci">T copy(T const &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd6/RangeForWrapper__test_8cc_source.html#l00098">RangeForWrapper_test.cc:98</a></div></div>
 </div><!-- fragment -->
 </div>

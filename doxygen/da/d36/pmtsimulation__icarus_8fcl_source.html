@@ -87,237 +87,361 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># * `PMTsimulationAlg` algorithm:</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     * `icarus_pmtsimulationalg_standard`: main configuration, expected to be</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       used in production and by the general user</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     * `icarus_pmtsimulationalg_noise`: a general use configuration,</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       including dark and electronics noise disabled</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     * `icarus_pmtsimulationalg_nonoise`: as `icarus_pmtsimulationalg_noise`</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       but with dark and electronics noise disabled</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Usage:</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     * `icarus_pmtsimulationalg_202202`: a general use configuration,</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       including dark and electronics noise; `noise` and `nonoise` variants</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       (the latter with dark and electronics noise disabled)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     * `icarus_pmtsimulationalg_2018`: legacy configuration (until June 2022),</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       including dark and electronics noise; `noise` and `nonoise` variants</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#       (the latter with dark and electronics noise disabled)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># * `PMTsimulationAlg` algorithm configuration needs to be included verbatim</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     into the configuration of `SimPMTIcarus` module</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#    </span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Changes:</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20181024 (petrillo@slac.stanford.edu)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   detached from `opdetsim_pmt_icarus.fcl`</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20200212 (petrillo@slac.stanford.edu)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   reconnected quantum efficiency to the value in `opticalproperties_icarus.fcl`</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210206 (petrillo@slac.stanford.edu)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   added explicit noise configuration, and made standard an alias of it</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210212 (petrillo@slac.stanford.edu)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   updated baseline to reflect the one in data</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210615 (petrillo@slac.stanford.edu)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#  updated PMT readout enable window to 2 ms</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d5a/opticalproperties__icarus_8fcl.html">opticalproperties_icarus.fcl</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;BEGIN_PROLOG</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">################################################################################</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  Configurations for `PMTsimulationAlg`</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">################################################################################</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Detector and readout parameters</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Usage:</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># * `PMTsimulationAlg` algorithm configuration needs to be included verbatim</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#     into the configuration of `SimPMTIcarus` module</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#    </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Changes:</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20181024 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   detached from `opdetsim_pmt_icarus.fcl`</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20200212 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   reconnected quantum efficiency to the value in `opticalproperties_icarus.fcl`</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210206 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   added explicit noise configuration, and made standard an alias of it</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210212 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#   updated baseline to reflect the one in data</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20210615 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#  updated PMT readout enable window to 2 ms</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 20220706 (petrillo@slac.stanford.edu)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#  introduced configuration for SPR 202202</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/d5a/opticalproperties__icarus_8fcl.html">opticalproperties_icarus.fcl</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;BEGIN_PROLOG</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">################################################################################</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  Configurations for `PMTsimulationAlg`</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">################################################################################</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a>: {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  nominalPMTgain: 7.0e6  # <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> multiplication gain factor</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} # <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Single photoelectron response configurations</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Single photoelectron response with a Gaussian rise and a fall shape.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Parameters are as used since forever to at least v08_46_00.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_gaussian: {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  # run `lar --print-description AsymGaussPulseFunctionTool` for configuration</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>  tool_type: AsymGaussPulseFunctionTool</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  TransitTime:               <span class="stringliteral">&quot;55.1 ns&quot;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  RaiseTime:                 <span class="stringliteral">&quot;3.8 ns&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  FallTime:                  <span class="stringliteral">&quot;13.7 ns&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  MeanAmplitude:             <span class="stringliteral">&quot;0.9 pC&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ADC:                       -11.1927       #charge to adc factor</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} # icarus_photoelectronresponse_gaussian</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Single photoelectron response with exponential rise and a fall shapes.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Parameters are reworked from an ICARUS trigger note (not yet released as</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># of April 2020), which come from data analysis from the BNL group.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># In particular, raise and fall times are reported to be 1.4 and 3.2 ns for</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># the PMT, and 1.8 and 4.2 ns including the cable distortion at CERN (10 m),</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># which is not the setup of the actual ICARUS detector (37 m).</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The average gain is considered to be 7 x 10^6 (somehow lower than the nominal</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 10^7 which we had targetted).</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Attenuation from the cable is considered negligible.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The peak charge is computed starting from the charge of a photoelectron</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># (-1.6 x 10^-7 pC), multiplied by the gain (7 x 10^6). At signal peak time,</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># the current from that charge is -0.14 mA, i.e. a voltage drop on 50 ohm</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># of -7.07 mV. In this parametrisation, we inject the gain and let the code</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># compute the amplitude.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The digitizer converts a range up to 2 volt with 14 bit, which translates into</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># about 8.192 ADC/mV and 409.6 ADC/mA.</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># In short, the peak signal is expected to be -7.07 mV, -0.14 mA, -57.93 ADC.</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The integral of the shape is 191.407 ADC (time 0 to infinity, 2 ns sampling).</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_exponentials: {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">  # run `lar --print-description AsymGaussPulseFunctionTool` for configuration</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>  tool_type: AsymExpPulseFunctionTool</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  TransitTime:               <span class="stringliteral">&quot;55.1 ns&quot;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  RaiseTimeConstant:         <span class="stringliteral">&quot;1.8 ns&quot;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  FallTimeConstant:          <span class="stringliteral">&quot;4.2 ns&quot;</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  Gain:                      @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain  # Gain = 7.0e6 =&gt; PeakCurrent: -0.14144 mA</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  ADC:                       409.6  # ADC / mA</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} # icarus_photoelectronresponse_exponentials</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Custom photoelectron response.</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># This is just an example for an arbitrary function shape; the example tries to</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># reproduce an `AsymGaussPulseFunction`.</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The names of the parameters are arbitrary and their value must be numerical.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Detector and readout parameters</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a>: {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  nominalPMTgain: 7.0e6  # <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> multiplication gain factor</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} # <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Single photoelectron response configurations</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Single photoelectron response with a Gaussian rise and a fall shape.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Parameters are as used since forever to at least v08_46_00.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_gaussian: {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  # run `lar --print-description AsymGaussPulseFunctionTool` for configuration</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>  tool_type: AsymGaussPulseFunctionTool</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  TransitTime:               <span class="stringliteral">&quot;55.1 ns&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  RaiseTime:                 <span class="stringliteral">&quot;3.8 ns&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  FallTime:                  <span class="stringliteral">&quot;13.7 ns&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  MeanAmplitude:             <span class="stringliteral">&quot;0.9 pC&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  ADC:                       -11.1927       #charge to adc factor</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} # icarus_photoelectronresponse_gaussian</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Single photoelectron response with exponential rise and a fall shapes.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Parameters are reworked from an ICARUS trigger note (not yet released as</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># of April 2020), which come from data analysis from the BNL group.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># In particular, raise and fall times are reported to be 1.4 and 3.2 ns for</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># the PMT, and 1.8 and 4.2 ns including the cable distortion at CERN (10 m),</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># which is not the setup of the actual ICARUS detector (37 m).</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The average gain is considered to be 7 x 10^6 (somehow lower than the nominal</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># 10^7 which we had targetted).</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Attenuation from the cable is considered negligible.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The peak charge is computed starting from the charge of a photoelectron</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># (-1.6 x 10^-7 pC), multiplied by the gain (7 x 10^6). At signal peak time,</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># the current from that charge is -0.14 mA, i.e. a voltage drop on 50 ohm</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># of -7.07 mV. In this parametrisation, we inject the gain and let the code</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># compute the amplitude.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The digitizer converts a range up to 2 volt with 14 bit, which translates into</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># about 8.192 ADC/mV and 409.6 ADC/mA.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># In short, the peak signal is expected to be -7.07 mV, -0.14 mA, -57.93 ADC.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The integral of the shape is 191.407 ADC (time 0 to infinity, 2 ns sampling).</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_exponentials: {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">  # run `lar --print-description AsymGaussPulseFunctionTool` for configuration</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span>  tool_type: AsymExpPulseFunctionTool</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  TransitTime:               <span class="stringliteral">&quot;55.1 ns&quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  RaiseTimeConstant:         <span class="stringliteral">&quot;1.8 ns&quot;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  FallTimeConstant:          <span class="stringliteral">&quot;4.2 ns&quot;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  Gain:                      @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain  # Gain = 7.0e6 =&gt; PeakCurrent: -0.14144 mA</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  ADC:                       409.6  # ADC / mA</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} # icarus_photoelectronresponse_exponentials</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Single photoelectron response from data.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_customexample: {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_202202: {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">  # run `lar --print-description CustomPulseFunctionTool` for configuration</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span>  tool_type: CustomPulseFunctionTool</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  ShapeFormula:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="stringliteral">&quot;[ADC] * [MeanAmplitude] * exp(-0.5*((x - [TransitTime])/((x &lt; [TransitTime])? [RaiseTime]: [FallTime]))**2)&quot;</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  PeakTime: <span class="stringliteral">&quot;[TransitTime]&quot;</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a>: {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    TransitTime:               55.1</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    RaiseTime:                 3.8</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    FallTime:                  13.7</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    MeanAmplitude:             0.9</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ADC:                       -11.1927</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  } # parameters</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} # icarus_photoelectronresponse_standard</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># pick one</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_standard: @local::icarus_photoelectronresponse_exponentials</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Standard configuration: `icarus_pmtsimulationalg_standard`</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;icarus_pmtsimulationalg_noise: {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  Baseline:                  14999.5         #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  SinglePhotonResponse: @local::icarus_photoelectronresponse_standard</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">  158</a></span>&#160;  AmpNoise:                  3.0            # <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC; temporary <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>, see SBN DocDB 19187</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a>:             <span class="stringliteral">&quot;1.6 kHz&quot;</span>      # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> CERN <a class="code" href="../../d9/d41/assnschainutils__test_8fcl.html#acd68d7a64c1ae7d4e9979d5efc1c200f">test</a> stand measurement</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">  ##This is the readout window size for each &quot;trigger&quot; on the electronics</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span>  ReadoutWindowSize:         2000           #<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">ticks</a> (<span class="keywordflow">if</span> 2ns each --&gt; 4us)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  tool_type: SampledWaveformFunctionTool</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  WaveformData: <span class="stringliteral">&quot;Responses/SPR202202.txt&quot;</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  TransitTime:  <span class="stringliteral">&quot;55.1 ns&quot;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  Gain:          @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} # icarus_photoelectronresponse_202202</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Custom photoelectron response.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># This is just an example for an arbitrary function shape; the example tries to</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># reproduce an `AsymGaussPulseFunction`.</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The names of the parameters are arbitrary and their value must be numerical.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># </span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_customexample: {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">  # run `lar --print-description CustomPulseFunctionTool` for configuration</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span>  tool_type: CustomPulseFunctionTool</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  ShapeFormula:</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="stringliteral">&quot;[ADC] * [MeanAmplitude] * exp(-0.5*((x - [TransitTime])/((x &lt; [TransitTime])? [RaiseTime]: [FallTime]))**2)&quot;</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  PeakTime: <span class="stringliteral">&quot;[TransitTime]&quot;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a>: {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    TransitTime:               55.1</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    RaiseTime:                 3.8</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    FallTime:                  13.7</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    MeanAmplitude:             0.9</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    ADC:                       -11.1927</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  } # parameters</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;} # icarus_photoelectronresponse_customexample</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># pick one</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span>icarus_photoelectronresponse_standard: @local::icarus_photoelectronresponse_exponentials</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="preprocessor">##fraction of readout window size that should come before the &quot;trigger&quot; on the electronics</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span>  PreTrigFraction:           0.25           # fraction</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">  ##Threshold in ADC counts for a PMT self-trigger.</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # 18 ADC = 6x 3 ADC (RMS, see AmpNoise above),~35% of standard SPR (55 ADC);</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # number of noise samples above 18 ADC: ~0.35 samples for 2 ms x 360 channels</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  ##NOTE this is assumed to be positive-going and ABOVE BASELINE! Pulse polarity is corrected before determining trigger.</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor"></span>  ThresholdADC:              18             # ADC <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">counts</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Configuration preset components</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulation.disable_noise: {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  AmpNoise:      0.0     # RMS <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">counts</a></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a>: <span class="stringliteral">&quot;0 kHz&quot;</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;} # icarus_pmtsimulation.disable_noise</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  PulsePolarity:             -1             #Pulse polarity (1 = positive, -1 = negative)</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  TriggerOffsetPMT:          &quot;-1.0 ms&quot;      <span class="preprocessor">#Time relative to trigger when readout begins</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span>  ReadoutEnablePeriod:       <span class="stringliteral">&quot;2.0 ms&quot;</span>       #Time <span class="keywordflow">for</span> which pmt readout is enabled</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  CreateBeamGateTriggers:    <span class="keyword">true</span>           #Option to create unbiased readout around <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a73612bb96db9f03da750daebe08715d5">beam</a> spill</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  BeamGateTriggerRepPeriod:  <span class="stringliteral">&quot;2.0 us&quot;</span>       #Repetition Period <span class="keywordflow">for</span> BeamGateTriggers</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  BeamGateTriggerNReps:      10             #<a class="code" href="../../d9/d93/evd__uboone__efficiency_8fcl.html#ade77f18477640c757c9fd6a978ee42e4">Number</a> of beamgate trigger reps to produce</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  Saturation:                300            #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> number of <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.e. to see <a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#a643b16d98aad4b48575ac3d416002e7a">saturation</a> effects <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> signal</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  QE:                        @<a class="code" href="../../dd/d5a/opticalproperties__icarus_8fcl.html#ad0c3a0eea60b568a34f544fec28bc130">local::icarus_opticalproperties</a>.ScintPreScale # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> opticalproperties_icarus.fcl</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  FluctuateGain:             <span class="keyword">true</span>           # apply per-photoelectron gain fluctuations</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  PMTspecs: {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    DynodeK:                   0.75           # gain on <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> multiplication <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">                                              # is proportional to dV^k</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # relative multiplication stage resistors in Hamamatsu 5912,</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # from their datasheet; if the resistor on first stage is 17.4 R, the one on</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # the second stage is 3.4 R, etc. The value of R is not necessary.</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # Only multiplication stages are included.</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span>    VoltageDistribution:    [ 17.4, 3.4, 5.0, 3.33, 1.67, 1.0, 1.2, 1.5, 2.2, 3.0 ]</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    Gain:                   @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain  # total typical <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> gain</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  } # PMTspecs</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;} # icarus_pmtsimulationalg_noise</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### No-noise configuration: `icarus_pmtsimulationalg_nonoise`</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulationalg_nonoise: {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  @table::icarus_pmtsimulationalg_noise</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  AmpNoise:      0.0     # RMS <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">counts</a></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a>: <span class="stringliteral">&quot;0 kHz&quot;</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;} # icarus_pmtsimulationalg_nonoise</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### The standard configuration (`icarus_pmtsimulationalg_standard`) is chosen</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### below.</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Configuration &quot;2022&quot;:</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  * based on SPR202202</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  * gain: 9.7 x 10^6</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  * electronics noise included</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###  * readout is fundamentally different from the real one: the hardwware readout</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    collects channels in groups of 180 (full cryostat in Run1, may change in future)</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    based on a trigger logic (channels above a O(10) p.e. threshold); the simulation</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    instead does not assume a readout trigger logic and tries to read out every</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    photoelectron (each channel independently, against a &lt;&lt; 1 p.e. threshold);</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    the part that is not included in the simulation but would be included in data</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    is comprised only of noise (and exceptionally low response fluctuations of single</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    photoelectrons), so post-processing can trim and extend the this simulation to</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    reflect the real readout by removing the channels in the regions (cryostats)</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    that would not be triggered, and generating the missing waveforms with noise.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    The single photoelectron response 202202 used in the simulation is 800 samples</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    (1.6 us) long; since every single photoelectron &quot;triggers&quot; the simulation, each</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    waveform will end with pure noise. With the current setting of a 4 us buffer</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    we have about 1 us of noise in the pre-trigger buffer, 1.6 us of signal and then</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    1.4 us of noise (additional photoelectrons in these 4 us would just effectively</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    extend the &quot;signal&quot; part). All this considered, we keep the PMT readout buffer</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    in the simulation 1+3 us, sizeably smaller than the 3+7 us used in the hardware</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    for Run1, to save space (using 3+7, we would still have 1.6 us of signal,</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    and the 3 us before and 5.4 us after it would still be pure noise).</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    Likewise, we don&#39;t attempt to cover the full beam gate time like in hardware</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    (7+21 us in Run1 settings), since all the signal will be included anyway.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    But we do force all 360 channels to take data at beam gate time (&quot;only&quot; for</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###    1+21 us around the beam gate opening though).</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;icarus_pmtsimulationalg_202202_noise: {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Configuration used for standard simulation</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Includes noise.</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulationalg_standard: @local::icarus_pmtsimulationalg_noise</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">  212</a></span>&#160;  Baseline:                  14999.5        # <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC; <span class="keywordflow">try</span> to distribute rounding errors</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#ac5f80da6fe713d8ff647aa6eecc0ed36">SinglePhotonResponse</a>: @local::icarus_photoelectronresponse_standard</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">  216</a></span>&#160;  AmpNoise:                  3.0            # <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC; temporary <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>, see SBN DocDB 19187</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a>:             <span class="stringliteral">&quot;1.6 kHz&quot;</span>      # per channel, <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> CERN <a class="code" href="../../d9/d41/assnschainutils__test_8fcl.html#acd68d7a64c1ae7d4e9979d5efc1c200f">test</a> stand measurement</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">  ## This is the readout window size for each &quot;trigger&quot; on the electronics</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#aefa99bdb59292602d674b1400cb7cd27">ReadoutWindowSize</a>:         2000           # <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">ticks</a> (2 ns each --&gt; 4 us)</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>END_PROLOG</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="preprocessor">##fraction of readout window size that should come before the &quot;trigger&quot; on the electronics</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>  PreTrigFraction:           0.25           # fraction (1+3 us)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="preprocessor">##Threshold in ADC counts for a PMT self-trigger.</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # 15 ADC = 5x 3 ADC (RMS, see AmpNoise above),~45% of standard SPR (4 mV, 33 ADC);</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # number of noise samples above 15 ADC: ~206 samples for 2 ms x 360 channels (300 Hz)</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # number of noise samples above 18 ADC: ~0.36 samples for 2 ms x 360 channels (0.5 Hz)</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  ##NOTE this is assumed to be positive-going and ABOVE BASELINE! Pulse polarity is corrected before determining trigger.</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span>  ThresholdADC:              18             # ADC <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">counts</a></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  PulsePolarity:             -1             #Pulse polarity (1 = positive, -1 = negative)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  TriggerOffsetPMT:          &quot;-1.0 ms&quot;      <span class="preprocessor"># PMT enable gate start: time relative to trigger when readout begins</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor"></span>  ReadoutEnablePeriod:       <span class="stringliteral">&quot;2.0 ms&quot;</span>       # <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> enable gate duration: time <span class="keywordflow">for</span> which <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> readout is enabled</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  CreateBeamGateTriggers:    <span class="keyword">true</span>           #Option to create unbiased readout around <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a73612bb96db9f03da750daebe08715d5">beam</a> spill</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  BeamGateTriggerRepPeriod:  <span class="stringliteral">&quot;2.0 us&quot;</span>       # Repetition period <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> number of repetitions <span class="keywordflow">for</span> BeamGateTriggers:</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  BeamGateTriggerNReps:      10             # should cover -7/+21 us, instead just goes -1 to 21 us)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  QE:                        @<a class="code" href="../../dd/d5a/opticalproperties__icarus_8fcl.html#ad0c3a0eea60b568a34f544fec28bc130">local::icarus_opticalproperties</a>.<a class="code" href="../../dc/db0/icarus__prodsingle__fastoptical_8fcl.html#adb6173ebd1f7c5a253fa43973b87634b">ScintPreScale</a> # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> opticalproperties_icarus.fcl</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  FluctuateGain:             <span class="keyword">true</span>           # apply per-photoelectron gain fluctuations</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  PMTspecs: {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    DynodeK:                   0.75           # gain on <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> multiplication <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                              # is proportional to dV^<a class="code" href="../../d9/dd2/selectors_8fcl.html#a122a7b8666811f02fba2c0fcdc485d17">k</a></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    # relative multiplication <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a> resistors <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> Hamamatsu 5912,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> their datasheet; <span class="keywordflow">if</span> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> resistor on <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#af481fa22253619167bce75a37e10ec34">first</a> <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a> is 17.4 R, <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../d5/d6b/makeNoOverburdenVersionOf_8sh.html#aed8c88c45b85ce77144caff93012211c">one</a> on</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    # <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../d1/d33/detectorproperties__icarus_8fcl.html#acfd440223f806c44323dbd1053b99123">second</a> <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a> is 3.4 R, etc. The value of R is not necessary.</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    # Only multiplication stages <a class="code" href="../../d8/d12/TrainMVA_8sh.html#aa61aa3cae4743faa47e73b5dc92e765a">are</a> included.</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    VoltageDistribution:    [ 17.4, 3.4, 5.0, 3.33, 1.67, 1.0, 1.2, 1.5, 2.2, 3.0 ]</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    Gain:                   @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain  # total typical <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> gain</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  } # PMTspecs</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;} # icarus_pmtsimulationalg_202202_noise</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;icarus_pmtsimulationalg_202202_nonoise: {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  @table::icarus_pmtsimulationalg_202202_noise</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  @table::icarus_pmtsimulation.disable_noise</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;icarus_pmtsimulationalg_202202: @local::icarus_pmtsimulationalg_202202_noise</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Legacy configuration, pre-2022</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulationalg_2018: {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  Baseline:                  14999.5         #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#ac5f80da6fe713d8ff647aa6eecc0ed36">SinglePhotonResponse</a>: @local::icarus_photoelectronresponse_standard</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  AmpNoise:                  3.0            # <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> ADC; temporary <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>, see SBN DocDB 19187</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a>:             <span class="stringliteral">&quot;1.6 kHz&quot;</span>      # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> CERN <a class="code" href="../../d9/d41/assnschainutils__test_8fcl.html#acd68d7a64c1ae7d4e9979d5efc1c200f">test</a> stand measurement</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">  ##This is the readout window size for each &quot;trigger&quot; on the electronics</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#aefa99bdb59292602d674b1400cb7cd27">ReadoutWindowSize</a>:         2000           #<a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">ticks</a> (<span class="keywordflow">if</span> 2ns each --&gt; 4us)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="preprocessor">##fraction of readout window size that should come before the &quot;trigger&quot; on the electronics</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span>  PreTrigFraction:           0.25           # fraction</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">  ##Threshold in ADC counts for a PMT self-trigger.</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # 18 ADC = 6x 3 ADC (RMS, see AmpNoise above),~35% of standard SPR (55 ADC);</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  # number of noise samples above 18 ADC: ~0.35 samples for 2 ms x 360 channels</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  ##NOTE this is assumed to be positive-going and ABOVE BASELINE! Pulse polarity is corrected before determining trigger.</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor"></span>  ThresholdADC:              18             # ADC <a class="code" href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">counts</a></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  PulsePolarity:             -1             #Pulse polarity (1 = positive, -1 = negative)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  TriggerOffsetPMT:          &quot;-1.0 ms&quot;      <span class="preprocessor">#Time relative to trigger when readout begins</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span>  ReadoutEnablePeriod:       <span class="stringliteral">&quot;2.0 ms&quot;</span>       #Time <span class="keywordflow">for</span> which pmt readout is enabled</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  CreateBeamGateTriggers:    <span class="keyword">true</span>           #Option to create unbiased readout around <a class="code" href="../../d8/ddf/namespacegen__crt__frags.html#a73612bb96db9f03da750daebe08715d5">beam</a> spill</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  BeamGateTriggerRepPeriod:  <span class="stringliteral">&quot;2.0 us&quot;</span>       #Repetition Period <span class="keywordflow">for</span> BeamGateTriggers</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  BeamGateTriggerNReps:      10             #<a class="code" href="../../d9/d93/evd__uboone__efficiency_8fcl.html#ade77f18477640c757c9fd6a978ee42e4">Number</a> of beamgate trigger reps to produce</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  Saturation:                300            #<a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> number of <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.e. to see <a class="code" href="../../dc/d38/run__icarus__flashfinder_8fcl.html#a643b16d98aad4b48575ac3d416002e7a">saturation</a> effects <a class="code" href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> signal</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  QE:                        @<a class="code" href="../../dd/d5a/opticalproperties__icarus_8fcl.html#ad0c3a0eea60b568a34f544fec28bc130">local::icarus_opticalproperties</a>.ScintPreScale # <a class="code" href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a> opticalproperties_icarus.fcl</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  FluctuateGain:             <span class="keyword">true</span>           # apply per-photoelectron gain fluctuations</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  PMTspecs: {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    DynodeK:                 0.75           # gain on <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> multiplication <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">                                            # is proportional to dV^k</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # relative multiplication stage resistors in Hamamatsu 5912, from</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # JINST 13 (2018) 10, P10030 (https://doi.org/10.1088/1748-0221/13/10/P10030);</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # if the resistor on first stage is 17.4 R, the one on the second stage is 3.4 R,</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # etc. The value of R is not necessary.</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    # Only multiplication stages are included.</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span>    VoltageDistribution:    [ 17.4, 3.4, 5.0, 3.33, 1.67, 1.0, 1.2, 1.5, 2.2, 3.0 ]</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    Gain:                   @<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">local::icarus_settings_opdet</a>.nominalPMTgain  # total typical <a class="code" href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a> gain</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  } # PMTspecs</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;} # icarus_pmtsimulationalg_2018</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;icarus_pmtsimulationalg_2018_noise: @local::icarus_pmtsimulationalg_2018</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Legacy no-noise configuration: `icarus_pmtsimulationalg_2018_nonoise`</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulationalg_2018_nonoise: {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  @table::icarus_pmtsimulationalg_2018</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  @table::icarus_pmtsimulation.disable_noise</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;} # icarus_pmtsimulationalg_2018_nonoise</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span><span class="preprocessor">### Configuration used for standard simulation</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor"></span><span class="preprocessor">###</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Includes noise.</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span>icarus_pmtsimulationalg_standard: @local::icarus_pmtsimulationalg_2018_nonoise</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor"># - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span>END_PROLOG</div>
+<div class="ttc" id="detectorproperties__icarus_8fcl_html_acfd440223f806c44323dbd1053b99123"><div class="ttname"><a href="../../d1/d33/detectorproperties__icarus_8fcl.html#acfd440223f806c44323dbd1053b99123">second</a></div><div class="ttdeci">second</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d33/detectorproperties__icarus_8fcl_source.html#l00008">detectorproperties_icarus.fcl:8</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_aefa99bdb59292602d674b1400cb7cd27"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#aefa99bdb59292602d674b1400cb7cd27">ReadoutWindowSize</a></div><div class="ttdeci">temporary see SBN DocDB from CERN test stand measurement ReadoutWindowSize</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
+<div class="ttc" id="icarus__prodsingle__fastoptical_8fcl_html_adb6173ebd1f7c5a253fa43973b87634b"><div class="ttname"><a href="../../dc/db0/icarus__prodsingle__fastoptical_8fcl.html#adb6173ebd1f7c5a253fa43973b87634b">ScintPreScale</a></div><div class="ttdeci">stream1 stream1 can override from command line with o or output services LArPropertiesService ScintPreScale</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/db0/icarus__prodsingle__fastoptical_8fcl_source.html#l00100">icarus_prodsingle_fastoptical.fcl:100</a></div></div>
 <div class="ttc" id="NestAlg_8cxx_html_a22444ba2cb9b0cb365bd42ae734ec7d8"><div class="ttname"><a href="../../d7/d8b/NestAlg_8cxx.html#a22444ba2cb9b0cb365bd42ae734ec7d8">PMT</a></div><div class="ttdeci">#define PMT</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/NestAlg_8cxx_source.html#l00019">NestAlg.cxx:19</a></div></div>
 <div class="ttc" id="namespacegen__crt__frags_html_a73612bb96db9f03da750daebe08715d5"><div class="ttname"><a href="../../d8/ddf/namespacegen__crt__frags.html#a73612bb96db9f03da750daebe08715d5">gen_crt_frags.beam</a></div><div class="ttdeci">def beam</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d8c/gen__crt__frags_8py_source.html#l00212">gen_crt_frags.py:212</a></div></div>
+<div class="ttc" id="namespacechannelDBConverter_html_af481fa22253619167bce75a37e10ec34"><div class="ttname"><a href="../../d4/d43/namespacechannelDBConverter.html#af481fa22253619167bce75a37e10ec34">channelDBConverter.first</a></div><div class="ttdeci">first</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d11/channelDBConverter_8py_source.html#l00146">channelDBConverter.py:146</a></div></div>
+<div class="ttc" id="TrainMVA_8sh_html_aa61aa3cae4743faa47e73b5dc92e765a"><div class="ttname"><a href="../../d8/d12/TrainMVA_8sh.html#aa61aa3cae4743faa47e73b5dc92e765a">are</a></div><div class="ttdeci">esac done echo Signal files are</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d12/TrainMVA_8sh_source.html#l00025">TrainMVA.sh:25</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="generate__icarus__geometry__splitwire_8pl_html_a09c6b60bb7451f9136e25140ffdff6bd"><div class="ttname"><a href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a></div><div class="ttdeci">#define the</div></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a10eae1fb7996a75ca0c4c7c78e05874a"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a10eae1fb7996a75ca0c4c7c78e05874a">util::quantities::ticks</a></div><div class="ttdeci">tick ticks</div><div class="ttdoc">Alias for common language habits. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00078">electronics.h:78</a></div></div>
 <div class="ttc" id="opticalproperties__icarus_8fcl_html_ad0c3a0eea60b568a34f544fec28bc130"><div class="ttname"><a href="../../dd/d5a/opticalproperties__icarus_8fcl.html#ad0c3a0eea60b568a34f544fec28bc130">icarus_opticalproperties</a></div><div class="ttdeci">BEGIN_PROLOG icarus_opticalproperties</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d5a/opticalproperties__icarus_8fcl_source.html#l00028">opticalproperties_icarus.fcl:28</a></div></div>
 <div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
 <div class="ttc" id="opticalproperties__icarus_8fcl_html"><div class="ttname"><a href="../../dd/d5a/opticalproperties__icarus_8fcl.html">opticalproperties_icarus.fcl</a></div></div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a500c1dffd1a40266c70f078561a5b7a4"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a></div><div class="ttdeci">BEGIN_PROLOG icarus_settings_opdet</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a500c1dffd1a40266c70f078561a5b7a4"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a500c1dffd1a40266c70f078561a5b7a4">icarus_settings_opdet</a></div><div class="ttdeci">BEGIN_PROLOG icarus_settings_opdet</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00212">pmtsimulation_icarus.fcl:212</a></div></div>
 <div class="ttc" id="namespaceutil_1_1quantities_html_a42eb0c0ed5b989f76465a19852864081"><div class="ttname"><a href="../../d3/d63/namespaceutil_1_1quantities.html#a42eb0c0ed5b989f76465a19852864081">util::quantities::counts</a></div><div class="ttdeci">counts_as&lt;&gt; counts</div><div class="ttdoc">Number of ADC counts, represented by signed short int. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d57/electronics_8h_source.html#l00116">electronics.h:116</a></div></div>
 <div class="ttc" id="run__icarus__flashfinder_8fcl_html_a643b16d98aad4b48575ac3d416002e7a"><div class="ttname"><a href="../../dc/d38/run__icarus__flashfinder_8fcl.html#a643b16d98aad4b48575ac3d416002e7a">saturation</a></div><div class="ttdeci">process_name drop raw::OpDetWaveforms_DataApr2016RecoStage1_saturation_ saturation</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d38/run__icarus__flashfinder_8fcl_source.html#l00052">run_icarus_flashfinder.fcl:52</a></div></div>
+<div class="ttc" id="selectors_8fcl_html_aadc113fa4af9aeff01481eed2a98e7cc"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a></div><div class="ttdeci">return match has_match and(match.match_pdg==11 or match.match_pdg==-11)</div></div>
+<div class="ttc" id="makeNoOverburdenVersionOf_8sh_html_aed8c88c45b85ce77144caff93012211c"><div class="ttname"><a href="../../d5/d6b/makeNoOverburdenVersionOf_8sh.html#aed8c88c45b85ce77144caff93012211c">one</a></div><div class="ttdeci">then echo Cowardly refusing to create a new FHiCL file with the same name as the original one('${SourceName}').&quot; &gt;&amp;2 exit 1 fi echo &quot;'$</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6b/makeNoOverburdenVersionOf_8sh_source.html#l00065">makeNoOverburdenVersionOf.sh:65</a></div></div>
 <div class="ttc" id="crt__detsimalg__test_8cxx_html_a53bd0b5c76b5bae4277c01b9208521ba"><div class="ttname"><a href="../../d1/d01/crt__detsimalg__test_8cxx.html#a53bd0b5c76b5bae4277c01b9208521ba">Parameters</a></div><div class="ttdeci">fhicl::Table&lt; sbnd::crt::CRTDetSimParams &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d01/crt__detsimalg__test_8cxx_source.html#l00022">crt_detsimalg_test.cxx:22</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_ac5f80da6fe713d8ff647aa6eecc0ed36"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#ac5f80da6fe713d8ff647aa6eecc0ed36">SinglePhotonResponse</a></div><div class="ttdeci">try to distribute rounding errors SinglePhotonResponse</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 <div class="ttc" id="quiet__Math__Functor__test_8sh_html_adfac98fbd1e85554d2cf0454cdcbc717"><div class="ttname"><a href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a></div><div class="ttdeci">if &amp;&amp;[-z&quot;$BASH_VERSION&quot;] then echo Attempting to switch to bash bash shellSwitch exit fi &amp;&amp;[&quot;$1&quot;= 'shellSwitch'] shift declare a IncludeDirectives for Dir in</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df7/quiet__Math__Functor__test_8sh_source.html#l00023">quiet_Math_Functor_test.sh:23</a></div></div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a09793e3904ead33f57a578b263d46cab"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a></div><div class="ttdeci">temporary see SBN DocDB DarkNoiseRate</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a09793e3904ead33f57a578b263d46cab"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a09793e3904ead33f57a578b263d46cab">DarkNoiseRate</a></div><div class="ttdeci">temporary see SBN DocDB DarkNoiseRate</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 <div class="ttc" id="runFilesFromSAM_8sh_html_ad7668fe49909e0598d75380816eba577"><div class="ttname"><a href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a></div><div class="ttdeci">stage</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/runFilesFromSAM_8sh_source.html#l00284">runFilesFromSAM.sh:284</a></div></div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 <div class="ttc" id="assnschainutils__test_8fcl_html_acd68d7a64c1ae7d4e9979d5efc1c200f"><div class="ttname"><a href="../../d9/d41/assnschainutils__test_8fcl.html#acd68d7a64c1ae7d4e9979d5efc1c200f">test</a></div><div class="ttdeci">BEGIN_PROLOG hitmakerfive clustermakerfour pfparticlemakerthree showermakertwo END_PROLOG hitmakerfive clustermakerfour pfparticlemakerthree sequence::inline_paths sequence::inline_paths sequence::inline_paths showermakers test</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d41/assnschainutils__test_8fcl_source.html#l00019">assnschainutils_test.fcl:19</a></div></div>
+<div class="ttc" id="selectors_8fcl_html_a122a7b8666811f02fba2c0fcdc485d17"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a122a7b8666811f02fba2c0fcdc485d17">k</a></div><div class="ttdeci">pdgs k</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="evd__uboone__efficiency_8fcl_html_ade77f18477640c757c9fd6a978ee42e4"><div class="ttname"><a href="../../d9/d93/evd__uboone__efficiency_8fcl.html#ade77f18477640c757c9fd6a978ee42e4">Number</a></div><div class="ttdeci">process_name showerreco Particles Coinciding wih the Vertex services ScanOptions nu_mu services ScanOptions Number</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d93/evd__uboone__efficiency_8fcl_source.html#l00054">evd_uboone_efficiency.fcl:54</a></div></div>
 <div class="ttc" id="icaruscode_2test_2fcl_2testFHiCLfiles_8sh_html_a6401d1c0a168bb3757821ca209161fe2"><div class="ttname"><a href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh.html#a6401d1c0a168bb3757821ca209161fe2">from</a></div><div class="ttdeci">exclude from</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8f/icaruscode_2test_2fcl_2testFHiCLfiles_8sh_source.html#l00347">icaruscode/test/fcl/testFHiCLfiles.sh:347</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

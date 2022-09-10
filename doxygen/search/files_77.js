@@ -6,6 +6,8 @@ var searchData=
   ['waveformintegrity_5fmodule_2ecc',['WaveformIntegrity_module.cc',['../d8/dd6/WaveformIntegrity__module_8cc.html',1,'']]],
   ['waveformoperations_2eh',['WaveformOperations.h',['../d6/d8e/WaveformOperations_8h.html',1,'']]],
   ['waveformoperations_5ftest_2ecc',['WaveformOperations_test.cc',['../db/d67/WaveformOperations__test_8cc.html',1,'']]],
+  ['waveformrms_2ecxx',['WaveformRMS.cxx',['../db/de2/WaveformRMS_8cxx.html',1,'']]],
+  ['waveformrms_2eh',['WaveformRMS.h',['../dc/d91/WaveformRMS_8h.html',1,'']]],
   ['waveformtools_5ficarus_2efcl',['waveformtools_icarus.fcl',['../d2/d4a/waveformtools__icarus_8fcl.html',1,'']]],
   ['waveformtools_5ftool_2ecc',['WaveformTools_tool.cc',['../d9/d42/WaveformTools__tool_8cc.html',1,'']]],
   ['wcls_2ddecode_2dto_2dsig_2dbase_2efcl',['wcls-decode-to-sig-base.fcl',['../d4/d7d/wcls-decode-to-sig-base_8fcl.html',1,'']]],
@@ -68,6 +70,7 @@ var searchData=
   ['withparalleldata_2eh',['withParallelData.h',['../d0/d5c/withParallelData_8h.html',1,'']]],
   ['withproxyasauxstructbase_2eh',['WithProxyAsAuxStructBase.h',['../d4/dd4/WithProxyAsAuxStructBase_8h.html',1,'']]],
   ['withzeroorone_2eh',['withZeroOrOne.h',['../de/ddd/withZeroOrOne_8h.html',1,'']]],
+  ['writebeamgateinfo_5fmodule_2ecc',['WriteBeamGateInfo_module.cc',['../d6/d58/WriteBeamGateInfo__module_8cc.html',1,'']]],
   ['wvfana_5fmodule_2ecc',['wvfAna_module.cc',['../d8/d50/wvfAna__module_8cc.html',1,'']]],
   ['wvfanaicarus_5fmodule_2ecc',['wvfAnaicarus_module.cc',['../d1/dc8/wvfAnaicarus__module_8cc.html',1,'']]]
 ];

@@ -1361,7 +1361,7 @@ Private Types</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae4a32b9f6e0b4c6f7be2da8def634272"><td class="memItemLeft" align="right" valign="top">std::vector&lt; TGeoNode const * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#ae4a32b9f6e0b4c6f7be2da8def634272">FindDetectorEnclosure</a> (std::string const &amp;<a class="el" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>=&quot;volDetEnclosure&quot;) const </td></tr>
 <tr class="separator:ae4a32b9f6e0b4c6f7be2da8def634272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfdf330f5749a04ece04f9ce0cff9c12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#acfdf330f5749a04ece04f9ce0cff9c12">FindFirstVolume</a> (std::string const &amp;<a class="el" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, std::vector&lt; const TGeoNode * &gt; &amp;path) const </td></tr>
+<tr class="memitem:acfdf330f5749a04ece04f9ce0cff9c12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#acfdf330f5749a04ece04f9ce0cff9c12">FindFirstVolume</a> (std::string const &amp;<a class="el" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, std::vector&lt; const TGeoNode * &gt; &amp;<a class="el" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>) const </td></tr>
 <tr class="separator:acfdf330f5749a04ece04f9ce0cff9c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0143911432bbf6cb2a7f44c1a5e901a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a0143911432bbf6cb2a7f44c1a5e901a0">BuildGeometry</a> (<a class="el" href="../../df/d6f/classgeo_1_1GeometryBuilder.html">geo::GeometryBuilder</a> &amp;builder)</td></tr>
 <tr class="separator:a0143911432bbf6cb2a7f44c1a5e901a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1948,7 +1948,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a constant reference to the specified auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000046">Todo:</a></b></dt><dd><p class="startdd">what happens if it does not exist? </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000049">Todo:</a></b></dt><dd><p class="startdd">what happens if it does not exist? </p>
 <p class="enddd">remove the default parameter? </p>
 </dd></dl>
 
@@ -2813,11 +2813,12 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01119">1119</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;  {</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> path{ gGeoManager-&gt;GetTopNode() };</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a968f535a263d52d92a5e2cb32e37d2f7">Cryostats</a>() = builder.<a class="code" href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a3f2bbe95e2269a5c0ba4a293cefa37ed">extractCryostats</a>(path);</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad6ee5718d1e5d211d7aa01b78ca773e0">AuxDets</a>() = builder.<a class="code" href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a211d3ad94eec0ae5ca390a5aa2fe1c26">extractAuxiliaryDetectors</a>(path);</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>{ gGeoManager-&gt;GetTopNode() };</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a968f535a263d52d92a5e2cb32e37d2f7">Cryostats</a>() = builder.<a class="code" href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a3f2bbe95e2269a5c0ba4a293cefa37ed">extractCryostats</a>(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>);</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad6ee5718d1e5d211d7aa01b78ca773e0">AuxDets</a>() = builder.<a class="code" href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a211d3ad94eec0ae5ca390a5aa2fe1c26">extractAuxiliaryDetectors</a>(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>);</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;  }</div>
 <div class="ttc" id="classgeo_1_1GeometryBuilder_html_a3f2bbe95e2269a5c0ba4a293cefa37ed"><div class="ttname"><a href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a3f2bbe95e2269a5c0ba4a293cefa37ed">geo::GeometryBuilder::extractCryostats</a></div><div class="ttdeci">Cryostats_t extractCryostats(Path_t const &amp;path)</div><div class="ttdoc">Looks for all cryostats under the specified path. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d81/GeometryBuilder_8h_source.html#l00090">GeometryBuilder.h:90</a></div></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryBuilder_html_a211d3ad94eec0ae5ca390a5aa2fe1c26"><div class="ttname"><a href="../../df/d6f/classgeo_1_1GeometryBuilder.html#a211d3ad94eec0ae5ca390a5aa2fe1c26">geo::GeometryBuilder::extractAuxiliaryDetectors</a></div><div class="ttdeci">AuxDets_t extractAuxiliaryDetectors(Path_t const &amp;path)</div><div class="ttdoc">Looks for all auxiliary detectors under the specified path. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d81/GeometryBuilder_8h_source.html#l00113">GeometryBuilder.h:113</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_ad6ee5718d1e5d211d7aa01b78ca773e0"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#ad6ee5718d1e5d211d7aa01b78ca773e0">geo::GeometryCore::AuxDets</a></div><div class="ttdeci">AuxDetList_t &amp; AuxDets()</div><div class="ttdoc">Return the interfal auxiliary detectors list. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l05502">GeometryCore.h:5502</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_a968f535a263d52d92a5e2cb32e37d2f7"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#a968f535a263d52d92a5e2cb32e37d2f7">geo::GeometryCore::Cryostats</a></div><div class="ttdeci">CryostatList_t &amp; Cryostats()</div><div class="ttdoc">Return the internal cryostat list. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/de7/GeometryCore_8h_source.html#l05496">GeometryCore.h:5496</a></div></div>
@@ -2901,7 +2902,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether a intersection point was found</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000054">Todo:</a></b></dt><dd><p class="startdd">what happens for channels from different TPCs? </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000057">Todo:</a></b></dt><dd><p class="startdd">what happens for channels from different TPCs? </p>
 <p class="enddd">what happens for channels with multiple intersection points?</p>
 </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>This is clearly not APA-aware </dd></dl>
@@ -3447,7 +3448,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a726d568ab88c86b98146f99678568d8e">GetElement()</a> method is overloaded and its return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000021">Todo:</a></b></dt><dd>Make the cryostat number mandatory (as <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a>) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo:</a></b></dt><dd>Make the cryostat number mandatory (as <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a>) </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00321">321</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                                                          {</div>
@@ -3533,7 +3534,7 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../de/da3/classgeo_1_1CryostatGeo.html#af6acf6ab68d0798eb317777a80bcb30e" title="Returns boundaries of the cryostat (in centimetres). ">CryostatGeo::Boundaries()</a></dd></dl>
 <p>The boundaries array is filled with: [0] lower x coordinate [1] upper x coordinate [2] lower y coordinate [3] upper y coordinate [4] lower z coordinate [5] upper z coordinate</p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Use <code><a class="el" href="../../de/da3/classgeo_1_1CryostatGeo.html#af6acf6ab68d0798eb317777a80bcb30e" title="Returns boundaries of the cryostat (in centimetres). ">CryostatGeo::Boundaries()</a></code> (from <code>Cryostat(cid)</code>). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo:</a></b></dt><dd>What happen on invalid cryostat? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000025">Todo:</a></b></dt><dd>What happen on invalid cryostat? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00812">812</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  {</div>
@@ -3886,7 +3887,7 @@ Private Attributes</h2></td></tr>
 <p>Returns the tolerance used in looking for positions. </p>
 <dl class="section return"><dt>Returns</dt><dd>the tolerance value</dd></dl>
 <p>This parameter is used as tolerance ("wiggle") for methods that require it (e.g. <code><a class="el" href="../../de/da3/classgeo_1_1CryostatGeo.html#adbdb77e96709880e40d5d3f3a46cd2a0" title="Returns the index of the TPC at specified location. ">geo::CryostatGeo::FindTPCAtPosition()</a></code>). Typically, it's a additional fraction of tolerance: 0 means no tolerance, 0.1 means 10% tolerance.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000017">Todo:</a></b></dt><dd>Confirm the definition of wiggle: this one is taken from other doc </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000020">Todo:</a></b></dt><dd>Confirm the definition of wiggle: this one is taken from other doc </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l01739">1739</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a3de7527301c4a2a14c261d5d93851aee">fPositionWiggle</a>; }</div>
@@ -3923,13 +3924,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00650">650</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; path = <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ae4a32b9f6e0b4c6f7be2da8def634272">FindDetectorEnclosure</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (path.empty()) {</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a> = <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ae4a32b9f6e0b4c6f7be2da8def634272">FindDetectorEnclosure</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.empty()) {</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;      <span class="keywordflow">throw</span> cet::exception(<span class="stringliteral">&quot;GeometryCore&quot;</span>)</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;DetectorEnclosureBox(): can&#39;t find enclosure volume &#39;&quot;</span> &lt;&lt; <a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a> &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    }</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    TGeoVolume <span class="keyword">const</span>* pEncl = path.back()-&gt;GetVolume();</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    TGeoVolume <span class="keyword">const</span>* pEncl = <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.back()-&gt;GetVolume();</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keyword">auto</span> <span class="keyword">const</span>* pBox = <span class="keyword">dynamic_cast&lt;</span>TGeoBBox <a class="code" href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">const</a>*<span class="keyword">&gt;</span>(pEncl-&gt;GetShape());</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="comment">// check that this is indeed a box</span></div>
@@ -3940,7 +3941,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span>;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <a class="code" href="../../d7/d2a/classgeo_1_1LocalTransformation.html">geo::LocalTransformation&lt;TGeoHMatrix&gt;</a> trans(path, path.size() - 1);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <a class="code" href="../../d7/d2a/classgeo_1_1LocalTransformation.html">geo::LocalTransformation&lt;TGeoHMatrix&gt;</a> trans(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>, <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.size() - 1);</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="comment">// get the half width, height, etc of the cryostat</span></div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> halfwidth  = pBox-&gt;GetDX();</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> halfheight = pBox-&gt;GetDY();</div>
@@ -3953,6 +3954,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  } <span class="comment">// geo::GeometryCore::DetectorEnclosureBox()</span></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_ae4a32b9f6e0b4c6f7be2da8def634272"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#ae4a32b9f6e0b4c6f7be2da8def634272">geo::GeometryCore::FindDetectorEnclosure</a></div><div class="ttdeci">std::vector&lt; TGeoNode const * &gt; FindDetectorEnclosure(std::string const &amp;name=&quot;volDetEnclosure&quot;) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l01087">GeometryCore.cxx:1087</a></div></div>
 <div class="ttc" id="classgeo_1_1LocalTransformation_html_ad5fc0e9190e7a3213e592fec90ee7889"><div class="ttname"><a href="../../d7/d2a/classgeo_1_1LocalTransformation.html#ad5fc0e9190e7a3213e592fec90ee7889">geo::LocalTransformation::LocalToWorld</a></div><div class="ttdeci">void LocalToWorld(double const *local, double *world) const </div><div class="ttdoc">Transforms a point from local frame to world frame. </div></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="classgeo_1_1LocalTransformation_html"><div class="ttname"><a href="../../d7/d2a/classgeo_1_1LocalTransformation.html">geo::LocalTransformation</a></div><div class="ttdoc">Class to transform between world and local coordinates. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d27/LocalTransformation_8h_source.html#l00064">LocalTransformation.h:64</a></div></div>
 <div class="ttc" id="namespaceSortModuleTimes_html_a805854df4323f914a9a09f4e266b4794"><div class="ttname"><a href="../../d7/d8e/namespaceSortModuleTimes.html#a805854df4323f914a9a09f4e266b4794">SortModuleTimes.const</a></div><div class="ttdeci">string const</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df3/SortModuleTimes_8py_source.html#l00871">SortModuleTimes.py:871</a></div></div>
 <div class="ttc" id="sbndpoms__genfclwithrunnumber__maker_8sh_html_a19dd16849ed641adb2aff777fdc4bd8b"><div class="ttname"><a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a></div><div class="ttdeci">then echo fcl name</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh_source.html#l00220">sbndpoms_genfclwithrunnumber_maker.sh:220</a></div></div>
@@ -4022,7 +4024,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d9/dff/classgeo_1_1TPCGeo.html#a0fcad5daf16e14b04be6fdb949429fa0" title="Half height (associated with y coordinate) of active TPC volume [cm]. ">geo::TPCGeo::ActiveHalfHeight()</a></dd></dl>
 <p>See <code><a class="el" href="../../d9/dff/classgeo_1_1TPCGeo.html#a0fcad5daf16e14b04be6fdb949429fa0" title="Half height (associated with y coordinate) of active TPC volume [cm]. ">geo::TPCGeo::ActiveHalfHeight()</a></code> for more details.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000028">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000031">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
 <p class="enddd">rename the function </p>
 </dd></dl>
 
@@ -4106,7 +4108,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d9/dff/classgeo_1_1TPCGeo.html#ad27c155668c5d9f850334cc2e005e7aa" title="Half width (associated with x coordinate) of active TPC volume [cm]. ">geo::TPCGeo::ActiveHalfWidth()</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000027">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000030">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
 <p class="enddd">rename the function </p>
 </dd></dl>
 
@@ -4191,7 +4193,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="../../d9/dff/classgeo_1_1TPCGeo.html#adf14d253e55f0968131f4d59bf218fe9" title="Length (associated with z coordinate) of active TPC volume [cm]. ">geo::TPCGeo::ActiveLength()</a></dd></dl>
 <p>See <code><a class="el" href="../../d9/dff/classgeo_1_1TPCGeo.html#adf14d253e55f0968131f4d59bf218fe9" title="Length (associated with z coordinate) of active TPC volume [cm]. ">geo::TPCGeo::ActiveLength()</a></code> for more details.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000029">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000032">Todo:</a></b></dt><dd><p class="startdd">deprecate this function </p>
 <p class="enddd">rename the function </p>
 </dd></dl>
 
@@ -5377,12 +5379,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01087">1087</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;  {</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;     std::vector&lt;TGeoNode const*&gt; path { <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">ROOTGeoManager</a>()-&gt;GetTopNode() };</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;     <span class="keywordflow">if</span> (!<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#acfdf330f5749a04ece04f9ce0cff9c12">FindFirstVolume</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, path)) path.clear();</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;     <span class="keywordflow">return</span> path;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;     std::vector&lt;TGeoNode const*&gt; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a> { <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">ROOTGeoManager</a>()-&gt;GetTopNode() };</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;     <span class="keywordflow">if</span> (!<a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#acfdf330f5749a04ece04f9ce0cff9c12">FindFirstVolume</a>(<a class="code" href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a>, <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>)) <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.clear();</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;     <span class="keywordflow">return</span> <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>;</div>
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;  } <span class="comment">// FindDetectorEnclosure()</span></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_acfdf330f5749a04ece04f9ce0cff9c12"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#acfdf330f5749a04ece04f9ce0cff9c12">geo::GeometryCore::FindFirstVolume</a></div><div class="ttdeci">bool FindFirstVolume(std::string const &amp;name, std::vector&lt; const TGeoNode * &gt; &amp;path) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l01096">GeometryCore.cxx:1096</a></div></div>
 <div class="ttc" id="classgeo_1_1GeometryCore_html_aa06cc82de2ccb3c591cf6a8309dfa55f"><div class="ttname"><a href="../../d7/d63/classgeo_1_1GeometryCore.html#aa06cc82de2ccb3c591cf6a8309dfa55f">geo::GeometryCore::ROOTGeoManager</a></div><div class="ttdeci">TGeoManager * ROOTGeoManager() const </div><div class="ttdoc">Access to the ROOT geometry description manager. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d6a/GeometryCore_8cxx_source.html#l00202">GeometryCore.cxx:202</a></div></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="sbndpoms__genfclwithrunnumber__maker_8sh_html_a19dd16849ed641adb2aff777fdc4bd8b"><div class="ttname"><a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh.html#a19dd16849ed641adb2aff777fdc4bd8b">name</a></div><div class="ttdeci">then echo fcl name</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d30/sbndpoms__genfclwithrunnumber__maker_8sh_source.html#l00220">sbndpoms_genfclwithrunnumber_maker.sh:220</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -6263,7 +6266,7 @@ template&lt;typename GeoID , typename ContextID &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the name of the specified TPC</dd></dl>
 <p>This information is used in the event display.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo:</a></b></dt><dd><p class="startdd">Use a cryostat ID instead </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000026">Todo:</a></b></dt><dd><p class="startdd">Use a cryostat ID instead </p>
 <p class="enddd">What if it does not exist? </p>
 </dd></dl>
 
@@ -7098,7 +7101,7 @@ template&lt;typename GeoID , typename ContextID &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the name of the specified TPC</dd></dl>
 <p>This information is used by Geant4 simulation</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000030">Todo:</a></b></dt><dd><p class="startdd">Use a <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a> instead </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000033">Todo:</a></b></dt><dd><p class="startdd">Use a <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a> instead </p>
 <p class="enddd">What if it does not exist? </p>
 </dd></dl>
 
@@ -11101,9 +11104,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the number of auxiliary detectors. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000044">Todo:</a></b></dt><dd>use a AutDetID_t instead of unsigned int? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000047">Todo:</a></b></dt><dd>use a AutDetID_t instead of unsigned int? </dd></dl>
 <p>This method returns the total number of scintillator paddles (Auxiliary Detectors aka AuxDet) outside of the cryostat</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000045">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000048">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l04548">4548</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l04548"></a><span class="lineno"> 4548</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#ad6ee5718d1e5d211d7aa01b78ca773e0">AuxDets</a>().size(); }</div>
@@ -11218,7 +11221,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the number of cryostats in the detector. </p>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a47ff99e8758729d98e6d301eaf4743ab">NElements()</a> and <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#aadb2bdd791ef1348ec2134c14b1c4b73">NSiblingElements()</a> methods are overloaded and their return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000020">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l02002">2002</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a968f535a263d52d92a5e2cb32e37d2f7">Cryostats</a>().size(); }</div>
@@ -11322,7 +11325,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the ID of the channel, or <a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a" title="ID of an invalid channel. ">raw::InvalidChannelID</a> if invalid wire </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000009">Bug:</a></b></dt><dd>on invalid wire, a <code><a class="el" href="../../d6/d6c/classgeo_1_1InvalidWireError.html" title="Exception thrown on invalid wire number. ">geo::InvalidWireError</a></code> exception is thrown</dd></dl>
 <p>The different versions allow different way to provide the position.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000053">Todo:</a></b></dt><dd>remove the integers version </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000056">Todo:</a></b></dt><dd>remove the integers version </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01279">1279</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;  {</div>
@@ -11695,7 +11698,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the index of the wire</dd></dl>
 <p>The different versions allow different way to provide the position.</p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7f9644be6b7a420fbeeb54c9ded33d62" title="Returns the ID of wire closest to position in the specified TPC. ">NearestWireID()</a> instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000041">Todo:</a></b></dt><dd><p class="startdd">remove the integers version </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000044">Todo:</a></b></dt><dd><p class="startdd">remove the integers version </p>
 <p class="enddd">what happens when no wire is found? </p>
 </dd></dl>
 
@@ -12088,7 +12091,7 @@ template&lt;typename T &gt; </div>
 <dl class="bug"><dt><b><a class="el" href="../../de/da5/bug.html#_bug000004">Bug:</a></b></dt><dd>Instead of returning an invalid wire ID, an exception is thrown!</dd></dl>
 <p>The different versions allow different way to provide the position.</p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd>Use the version with a <code><a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541" title="Type for representation of position in physical 3D space. ">geo::Point_t</a></code> and <code><a class="el" href="../../d4/d41/structgeo_1_1PlaneID.html" title="The data type to uniquely identify a Plane. ">PlaneID</a></code> arguments </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000040">Todo:</a></b></dt><dd>remove the integers version </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000043">Todo:</a></b></dt><dd>remove the integers version </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01272">1272</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;  {</div>
@@ -12502,7 +12505,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Number of electronics channels for all the optical detectors. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000055">Todo:</a></b></dt><dd>add explanation of the different IDs </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000058">Todo:</a></b></dt><dd>add explanation of the different IDs </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00253">253</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  {</div>
@@ -12604,7 +12607,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000031">Todo:</a></b></dt><dd><p class="startdd">Make all the arguments mandatory (as <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a>) </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000034">Todo:</a></b></dt><dd><p class="startdd">Make all the arguments mandatory (as <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a>) </p>
 <p>Change return type to size_t </p>
 <p class="enddd">what happens if TPC does not exist? </p>
 </dd></dl>
@@ -12647,7 +12650,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of planes in specified TPC, or 0 if no TPC found</dd></dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a47ff99e8758729d98e6d301eaf4743ab">NElements()</a> and <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#aadb2bdd791ef1348ec2134c14b1c4b73">NSiblingElements()</a> methods are overloaded and their return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000032">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000035">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l02925">2925</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;      {</div>
@@ -12888,7 +12891,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo:</a></b></dt><dd><p class="startdd">Make the cryostat number mandatory (as <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a>) </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000027">Todo:</a></b></dt><dd><p class="startdd">Make the cryostat number mandatory (as <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a>) </p>
 <p>Change return type to size_t </p>
 <p class="enddd">what happens if it does not exist? </p>
 </dd></dl>
@@ -12931,7 +12934,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of TPCs in specified cryostat, or 0 if no cryostat found</dd></dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a47ff99e8758729d98e6d301eaf4743ab">NElements()</a> and <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#aadb2bdd791ef1348ec2134c14b1c4b73">NSiblingElements()</a> methods are overloaded and their return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000025">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000028">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l02389">2389</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l02390"></a><span class="lineno"> 2390</span>&#160;      {</div>
@@ -12990,7 +12993,7 @@ template&lt;typename T &gt; </div>
 <p>Returns the number of views (different wire orientations) </p>
 <p>Returns the number of different views, or wire orientations, in the detector.</p>
 <p>The function assumes that all TPCs in all cryostats of a detector have the same number of planes, which should be a safe assumption.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000033">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000036">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00307">307</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  {</div>
@@ -13047,7 +13050,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000037">Todo:</a></b></dt><dd><p class="startdd">Make all the arguments mandatory (as <a class="el" href="../../d4/d41/structgeo_1_1PlaneID.html" title="The data type to uniquely identify a Plane. ">PlaneID</a>) </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000040">Todo:</a></b></dt><dd><p class="startdd">Make all the arguments mandatory (as <a class="el" href="../../d4/d41/structgeo_1_1PlaneID.html" title="The data type to uniquely identify a Plane. ">PlaneID</a>) </p>
 <p>Change return type to size_t </p>
 <p class="enddd">what happens if it does not exist? </p>
 </dd></dl>
@@ -13091,7 +13094,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of wires in specified plane, or 0 if no plane found</dd></dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a47ff99e8758729d98e6d301eaf4743ab">NElements()</a> and <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#aadb2bdd791ef1348ec2134c14b1c4b73">NSiblingElements()</a> methods are overloaded and their return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000038">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000041">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l03359">3359</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l03360"></a><span class="lineno"> 3360</span>&#160;      {</div>
@@ -13344,7 +13347,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <p>This name is defined in the geometry (GDML) description.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000043">Todo:</a></b></dt><dd>Change to use <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000046">Todo:</a></b></dt><dd>Change to use <a class="el" href="../../d9/d73/structgeo_1_1CryostatID.html" title="The data type to uniquely identify a cryostat. ">CryostatID</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01870">1870</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;  {</div>
@@ -13461,7 +13464,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a726d568ab88c86b98146f99678568d8e">GetElement()</a> method is overloaded and its return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000034">Todo:</a></b></dt><dd>remove the version with integers </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000037">Todo:</a></b></dt><dd>remove the version with integers </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l03000">3000</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l03002"></a><span class="lineno"> 3002</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a93b943c9a953f5b98e166cd21865ad4d">Plane</a>(<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html">geo::PlaneID</a>(cstat, tpc, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>)); }</div>
@@ -13566,7 +13569,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>distance between the planes</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000035">Todo:</a></b></dt><dd><p class="startdd">add a version with plane IDs </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000038">Todo:</a></b></dt><dd><p class="startdd">add a version with plane IDs </p>
 <p>deprecate this function </p>
 <p>add a default version for a given <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a> </p>
 <p>add a version with two plane indices for a given <a class="el" href="../../d2/d4d/structgeo_1_1TPCID.html" title="The data type to uniquely identify a TPC. ">TPCID</a> </p>
@@ -13731,7 +13734,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the ID of the channel, or <a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a" title="ID of an invalid channel. ">raw::InvalidChannelID</a> if invalid wire</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000051">Todo:</a></b></dt><dd><p class="startdd">Verify the <a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a" title="ID of an invalid channel. ">raw::InvalidChannelID</a> part </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000054">Todo:</a></b></dt><dd><p class="startdd">Verify the <a class="el" href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a" title="ID of an invalid channel. ">raw::InvalidChannelID</a> part </p>
 <p class="enddd">remove the integers version </p>
 </dd></dl>
 
@@ -13932,7 +13935,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>constant reference to <a class="el" href="../../db/d4f/classgeo_1_1AuxDetGeo.html">AuxDetGeo</a> object of the auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000047">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000050">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00532">532</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  {</div>
@@ -13987,7 +13990,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>constant reference to <a class="el" href="../../db/d4f/classgeo_1_1AuxDetGeo.html">AuxDetGeo</a> object of the auxiliary detector</dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use the version with <code><a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541" title="Type for representation of position in physical 3D space. ">geo::Point_t</a></code>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000048">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000051">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00541">541</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  { <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a1f333c0cab2d2d56580c15c7e851ac66">PositionToAuxDet</a>(<a class="code" href="../../d0/d8e/namespacegeo_1_1vect.html#a9434f534ebf26ef00f38182378df6e8c">geo::vect::makePointFromCoords</a>(worldLoc), ad, <a class="code" href="../../d3/d3e/OpFlashAlg__test_8cc.html#a9831d5eb20e67514532655869f703820">tolerance</a>); }</div>
@@ -14044,7 +14047,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to <a class="el" href="../../d5/df8/classgeo_1_1AuxDetSensitiveGeo.html">AuxDetSensitiveGeo</a> object of the auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000049">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000052">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00563">563</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  {</div>
@@ -14106,7 +14109,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to <a class="el" href="../../d5/df8/classgeo_1_1AuxDetSensitiveGeo.html">AuxDetSensitiveGeo</a> object of the auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000050">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000053">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use the version with <code><a class="el" href="../../d6/d23/namespacegeo.html#a5a6f22c2aa9d0ccf6ca08bf2773a0541" title="Type for representation of position in physical 3D space. ">geo::Point_t</a></code>. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00572">572</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
@@ -14979,7 +14982,7 @@ template&lt;typename Stream &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the type of signal on the specified plane, or <a class="el" href="../../d6/d23/namespacegeo.html#a3b3c27511a16721236b09f14b66a58beac3aae5646e132e0a884ed6cb736945ad" title="Who knows? ">geo::kMysteryType</a></dd></dl>
 <p>Assumes that all the channels on the plane have the same signal type.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000036">Todo:</a></b></dt><dd>verify that kMysteryType is returned on invalid plane </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000039">Todo:</a></b></dt><dd>verify that kMysteryType is returned on invalid plane </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00599">599</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  {</div>
@@ -15022,7 +15025,7 @@ template&lt;typename Stream &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the type of signal on the specified channel, or <a class="el" href="../../d6/d23/namespacegeo.html#a3b3c27511a16721236b09f14b66a58beac3aae5646e132e0a884ed6cb736945ad" title="Who knows? ">geo::kMysteryType</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000052">Todo:</a></b></dt><dd>verify that kMysteryType is returned on invalid channel </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000055">Todo:</a></b></dt><dd>verify that kMysteryType is returned on invalid channel </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l00593">593</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  {</div>
@@ -15136,7 +15139,7 @@ template&lt;typename Stream &gt; </div>
 <p>The position of the detector respect to earth surface. </p>
 <dl class="section return"><dt>Returns</dt><dd>typical y position at surface in units of cm</dd></dl>
 <p>This is the depth (y) of the surface (where earth meets air) for this detector site. The number is expressed in world coordinates and in centimetres, and it represents the y coordinate of earth surface. A negative value means that the origin of coordinates, typically matching the detector centre, is above surface.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000018">Todo:</a></b></dt><dd>check that this is actually how it is used </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000021">Todo:</a></b></dt><dd>check that this is actually how it is used </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l01820">1820</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a81c2b5e8408ae548bbb3dcb8f7c92c25">fSurfaceY</a>; }</div>
@@ -15838,7 +15841,7 @@ template&lt;typename Stream &gt; </div>
   </dd>
 </dl>
 <p>The <a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a726d568ab88c86b98146f99678568d8e">GetElement()</a> method is overloaded and its return depends on the type of ID.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000026">Todo:</a></b></dt><dd>remove the version with integers </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000029">Todo:</a></b></dt><dd>remove the version with integers </dd></dl>
 
 <p>Definition at line <a class="el" href="../../db/de7/GeometryCore_8h_source.html#l02431">2431</a> of file <a class="el" href="../../db/de7/GeometryCore_8h_source.html">GeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l02432"></a><span class="lineno"> 2432</span>&#160;      { <span class="keywordflow">return</span> <a class="code" href="../../d7/d63/classgeo_1_1GeometryCore.html#a84aba48f49cf9add6cf0641a4527e45b">TPC</a>(<a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html">geo::TPCID</a>(cstat, tpc)); }</div>
@@ -16059,7 +16062,7 @@ template&lt;typename Stream &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether the value is within range</dd></dl>
 <p>If min is larger than max, they are swapped. A tolerance of 10^-6 (absolute) is used.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000056">Todo:</a></b></dt><dd><p class="startdd">Use wiggle instead of 10^-6 </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000059">Todo:</a></b></dt><dd><p class="startdd">Use wiggle instead of 10^-6 </p>
 <p class="enddd">resort source code for a bit of speed up </p>
 </dd></dl>
 
@@ -16071,7 +16074,7 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;  }</div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -16229,7 +16232,7 @@ template&lt;typename Stream &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>name of the volume containing the point</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000019">Todo:</a></b></dt><dd><p class="startdd">what happens if none? </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo:</a></b></dt><dd><p class="startdd">what happens if none? </p>
 <p class="enddd">Unify the coordinates type </p>
 </dd></dl>
 
@@ -16495,7 +16498,7 @@ template&lt;typename Stream &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>an index interpolation between the two nearest wires </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>Use <code>WireCoordinate(geo::Point_t const&amp;, geo::PlaneID const&amp;)</code> instead</dd></dl>
 <p>Respect to <code><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html#a7f9644be6b7a420fbeeb54c9ded33d62" title="Returns the ID of wire closest to position in the specified TPC. ">NearestWireID()</a></code>, this method returns a real number, representing a continuous coordinate in the wire axis, with the round values corresponding to the actual wires.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000042">Todo:</a></b></dt><dd>Unify (y, z) coordinate </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000045">Todo:</a></b></dt><dd>Unify (y, z) coordinate </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html#l01217">1217</a> of file <a class="el" href="../../d1/d6a/GeometryCore_8cxx_source.html">GeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;  {</div>
@@ -17250,7 +17253,7 @@ template&lt;typename Point &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the distance between the two wires</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The current geometry assumptions imply that wire pitch is constant between all wires on the same wire plane. This is an assumption non-trivial to remove.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000039">Todo:</a></b></dt><dd><p class="startdd">add a version with wire IDs </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000042">Todo:</a></b></dt><dd><p class="startdd">add a version with wire IDs </p>
 <p>deprecate this function </p>
 <p class="enddd">document what will happen (in the future methods) with wires on different planes</p>
 </dd></dl>

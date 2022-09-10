@@ -1066,18 +1066,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                                            <span class="keywordtype">int</span>                                   firstTick)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <span class="comment">// Need a minimum number of ticks to do any work here</span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="keywordflow">if</span> (std::distance(startItr,stopItr) &gt; 4)</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,stopItr) &gt; 4)</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;    {</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        <span class="comment">// Find the highest peak in the range given</span></div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        <span class="keyword">auto</span> maxItr = std::max_element(startItr, stopItr);</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;</div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        <span class="keywordtype">float</span> maxValue = *maxItr;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordtype">int</span>   maxTime  = std::distance(startItr,maxItr);</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordtype">int</span>   maxTime  = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,maxItr);</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;</div>
 <div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        <span class="keywordflow">if</span> (maxValue &gt;= PeakMin)</div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;        {</div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;            <span class="comment">// backwards to find first bin for this candidate hit</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;            <span class="keyword">auto</span> firstItr = std::distance(startItr,maxItr) &gt; 2 ? maxItr - 1 : startItr;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;            <span class="keyword">auto</span> firstItr = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,maxItr) &gt; 2 ? maxItr - 1 : startItr;</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;            <span class="keywordtype">bool</span> PeakStartIsHere = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;            <span class="keywordflow">while</span>(firstItr != startItr)</div>
@@ -1097,13 +1097,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;                firstItr--;</div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;            }</div>
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;            <span class="keywordtype">int</span> firstTime = std::distance(startItr,firstItr);</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;            <span class="keywordtype">int</span> firstTime = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,firstItr);</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;</div>
 <div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;            <span class="comment">// Recursive call to find all candidate hits earlier than this peak</span></div>
 <div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;            findCandidatePeaks(startItr, firstItr - 1, timeValsVec, PeakMin, firstTick);</div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;</div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;            <span class="comment">// forwards to find last bin for this candidate hit</span></div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;            <span class="keyword">auto</span> lastItr = std::distance(maxItr,stopItr) &gt; 2 ? maxItr + 1 : stopItr - 1;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;            <span class="keyword">auto</span> lastItr = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(maxItr,stopItr) &gt; 2 ? maxItr + 1 : stopItr - 1;</div>
 <div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;            <span class="keywordtype">bool</span> PeakEndIsHere = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;</div>
 <div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;            <span class="keywordflow">while</span>(lastItr != stopItr)</div>
@@ -1122,13 +1122,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;                lastItr++;</div>
 <div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;            }</div>
 <div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;            <span class="keywordtype">int</span> lastTime = std::distance(startItr,lastItr);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;            <span class="keywordtype">int</span> lastTime = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,lastItr);</div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;            <span class="comment">// Now save this candidate&#39;s start and max time info</span></div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;            timeValsVec.push_back(std::make_tuple(firstTick+firstTime,firstTick+maxTime,firstTick+lastTime));</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;            <span class="comment">// Recursive call to find all candidate hits later than this peak</span></div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;            findCandidatePeaks(lastItr + 1, stopItr, timeValsVec, PeakMin, firstTick + std::distance(startItr,lastItr + 1));</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;            findCandidatePeaks(lastItr + 1, stopItr, timeValsVec, PeakMin, firstTick + <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,lastItr + 1));</div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;        }</div>
 <div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;    }</div>
 <div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div>
@@ -1861,8 +1861,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;    <span class="comment">// First pass through to build the erosion vector</span></div>
 <div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    <span class="keywordflow">for</span>(std::vector&lt;float&gt;::const_iterator inputItr = inputVec.begin(); inputItr != inputVec.end(); inputItr++)</div>
 <div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    {</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;        <span class="keywordtype">size_t</span> startOffset = std::distance(inputVec.begin(),inputItr);</div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;        <span class="keywordtype">size_t</span> stopOffset  = std::distance(inputItr,inputVec.end());</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;        <span class="keywordtype">size_t</span> startOffset = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputVec.begin(),inputItr);</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;        <span class="keywordtype">size_t</span> stopOffset  = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(inputItr,inputVec.end());</div>
 <div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="../../db/df5/IntegerRanges__test_8cc.html#abbc7e5f346bfa932ca51b4b07ccef76d">count</a>       = std::min(2 * halfBinsToAverage, std::min(startOffset + halfBinsToAverage + 1, halfBinsToAverage + stopOffset - 1));</div>
 <div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;</div>
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;        <span class="keywordflow">if</span> (startOffset &gt;= halfBinsToAverage) runningSum -= *(inputItr - halfBinsToAverage);</div>
@@ -1952,6 +1952,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="classanab_1_1FVectorWriter_html_a4f5f51963c0a635249f98e97f38da62f"><div class="ttname"><a href="../../d2/dd8/classanab_1_1FVectorWriter.html#a4f5f51963c0a635249f98e97f38da62f">anab::FVectorWriter::initOutputs</a></div><div class="ttdeci">FVector_ID initOutputs(std::string const &amp;dataTag, size_t dataSize, std::vector&lt; std::string &gt; const &amp;names=std::vector&lt; std::string &gt;(N,&quot;&quot;))</div></div>
 <div class="ttc" id="namespaceraw_html_ac59223371efaecdc5ef8389bc976a20a"><div class="ttname"><a href="../../d9/d63/namespaceraw.html#ac59223371efaecdc5ef8389bc976a20a">raw::InvalidChannelID</a></div><div class="ttdeci">constexpr ChannelID_t InvalidChannelID</div><div class="ttdoc">ID of an invalid channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d38/RawTypes_8h_source.html#l00032">RawTypes.h:32</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_ad1961c2589248e97da206b2c3cf7184d"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#ad1961c2589248e97da206b2c3cf7184d">hit::DPRawHitFinder::AddPeak</a></div><div class="ttdeci">void AddPeak(std::tuple&lt; double, int, int, int &gt; fPeakDevCand, PeakTimeWidVec &amp;fpeakValsTemp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l01566">DPRawHitFinder_module.cc:1566</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_a05328850b7bee78dc15ccc110df30f47"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#a05328850b7bee78dc15ccc110df30f47">hit::DPRawHitFinder::fChi2NDFRetryFactorMultiHits</a></div><div class="ttdeci">double fChi2NDFRetryFactorMultiHits</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00180">DPRawHitFinder_module.cc:180</a></div></div>
 <div class="ttc" id="classrecob_1_1HitCollectionCreator_html"><div class="ttname"><a href="../../d4/dd2/classrecob_1_1HitCollectionCreator.html">recob::HitCollectionCreator</a></div><div class="ttdoc">A class handling a collection of hits and its associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/HitCreator_8h_source.html#l00508">HitCreator.h:508</a></div></div>
 <div class="ttc" id="classhit_1_1DPRawHitFinder_html_a0dc30a5c3e2686b23da073a5768af760"><div class="ttname"><a href="../../d3/d47/classhit_1_1DPRawHitFinder.html#a0dc30a5c3e2686b23da073a5768af760">hit::DPRawHitFinder::ParameterVec</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; double, double &gt;&gt; ParameterVec</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d81/DPRawHitFinder__module_8cc_source.html#l00085">DPRawHitFinder_module.cc:85</a></div></div>

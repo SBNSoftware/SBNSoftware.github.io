@@ -126,6 +126,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d2d/classcaf_1_1SRHeader.html">SRHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header representing overview information for the current event/slice.  <a href="../../d8/d2d/classcaf_1_1SRHeader.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d28/classcaf_1_1SRSpacePoint.html">SRSpacePoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a rb::Spacepoint, knows pfp ID and position.  <a href="../../d4/d28/classcaf_1_1SRSpacePoint.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dca/classcaf_1_1SRHit.html">SRHit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a rb::Hit, knows hit amplitude and integral, geometric IDs, and time.  <a href="../../df/dca/classcaf_1_1SRHit.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d77/classcaf_1_1SRLorentzVector.html">SRLorentzVector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">4-vector with more efficient storage than TLorentzVector  <a href="../../d7/d77/classcaf_1_1SRLorentzVector.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +190,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a Pol0 and Exp fit to dEdx vs res. range.  <a href="../../d6/df0/classcaf_1_1SRTrackStoppingChi2Fit.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de1/classcaf_1_1SRTrackTruth.html">SRTrackTruth</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de6/classcaf_1_1SRTrigger.html">SRTrigger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dba/classcaf_1_1SRTrkChi2PID.html">SRTrkChi2PID</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/d66/structTrack.html">Track</a> PID from dE/dx v. residual range Chi2.  <a href="../../db/dba/classcaf_1_1SRTrkChi2PID.html#details">More...</a><br/></td></tr>
@@ -561,6 +569,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6fe0ffbbac3cd8875a06875b44a45256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c8574a81f3a96275cb3912d0aa5da6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#a1c8574a81f3a96275cb3912d0aa5da6f">FillPFPVars</a> (const <a class="el" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> &amp;particle, const <a class="el" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> *primary, const <a class="el" href="../../d6/de5/classlarpandoraobj_1_1PFParticleMetadata.html">larpandoraobj::PFParticleMetadata</a> *pfpMeta, <a class="el" href="../../d7/d30/classcaf_1_1SRPFP.html">caf::SRPFP</a> &amp;srpfp, bool allowEmpty)</td></tr>
 <tr class="separator:a1c8574a81f3a96275cb3912d0aa5da6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1cc4a9058e51facf0bb3cff9dd6d96a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#aa1cc4a9058e51facf0bb3cff9dd6d96a">FillHitVars</a> (const <a class="el" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;<a class="el" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>, unsigned producer, const <a class="el" href="../../db/d88/classrecob_1_1SpacePoint.html">recob::SpacePoint</a> &amp;spacepoint, const <a class="el" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> &amp;particle, <a class="el" href="../../df/dca/classcaf_1_1SRHit.html">caf::SRHit</a> &amp;srhit, bool allowEmpty)</td></tr>
+<tr class="separator:aa1cc4a9058e51facf0bb3cff9dd6d96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d8fd4eb0e87cdf2ed8c4fc7ee5f8fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#a34d8fd4eb0e87cdf2ed8c4fc7ee5f8fa">SetNuMuCCPrimary</a> (std::vector&lt; <a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html">caf::StandardRecord</a> &gt; &amp;recs, std::vector&lt; <a class="el" href="../../d5/d40/classcaf_1_1SRTrueInteraction.html">caf::SRTrueInteraction</a> &gt; &amp;srneutrinos)</td></tr>
 <tr class="separator:a34d8fd4eb0e87cdf2ed8c4fc7ee5f8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2585c9591bf7b18d350fc0dabc353cf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#a2585c9591bf7b18d350fc0dabc353cf5">ApplyNumuCCMatching</a> (std::vector&lt; <a class="el" href="../../dc/d78/classcaf_1_1StandardRecord.html">caf::StandardRecord</a> &gt; &amp;recs, const std::vector&lt; <a class="el" href="../../d5/d40/classcaf_1_1SRTrueInteraction.html">caf::SRTrueInteraction</a> &gt; &amp;srneutrinos, unsigned truth_ind)</td></tr>
@@ -568,6 +578,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a1cdedc110744c9384a52a281202f12da"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
 <tr class="memitem:a1cdedc110744c9384a52a281202f12da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#a1cdedc110744c9384a52a281202f12da">CopyPropertyIfSet</a> (const std::map&lt; std::string, T &gt; &amp;props, const std::string &amp;search, U &amp;<a class="el" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>)</td></tr>
 <tr class="separator:a1cdedc110744c9384a52a281202f12da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fbd60860b8fe8d0498d214fc692bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#af7fbd60860b8fe8d0498d214fc692bb6">FillTrigger</a> (const <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html">sbn::ExtraTriggerInfo</a> &amp;addltrig_info, const std::vector&lt; <a class="el" href="../../dd/d0b/classraw_1_1Trigger.html">raw::Trigger</a> &gt; &amp;trig_info, std::vector&lt; <a class="el" href="../../dd/de6/classcaf_1_1SRTrigger.html">caf::SRTrigger</a> &gt; &amp;triggerInfo)</td></tr>
+<tr class="separator:af7fbd60860b8fe8d0498d214fc692bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ab90a68b51342bda06f7f63ccb315f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#aa0ab90a68b51342bda06f7f63ccb315f">FillSRGlobal</a> (const <a class="el" href="../../d7/dd9/classsbn_1_1evwgh_1_1EventWeightParameterSet.html">sbn::evwgh::EventWeightParameterSet</a> &amp;pset, <a class="el" href="../../d5/df3/classcaf_1_1SRGlobal.html">caf::SRGlobal</a> &amp;srglobal, std::map&lt; std::string, unsigned int &gt; &amp;weightPSetIndex)</td></tr>
 <tr class="separator:aa0ab90a68b51342bda06f7f63ccb315f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51dfcbf9214f133dd7fc8569d291aee6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/namespacecaf.html#a51dfcbf9214f133dd7fc8569d291aee6">FillTrackTruth</a> (const std::vector&lt; art::Ptr&lt; <a class="el" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &gt;&gt; &amp;hits, const std::map&lt; int, <a class="el" href="../../dc/d2a/structcaf_1_1HitsEnergy.html">caf::HitsEnergy</a> &gt; &amp;id_hits_map, const std::vector&lt; <a class="el" href="../../d2/d22/classcaf_1_1SRTrueParticle.html">caf::SRTrueParticle</a> &gt; &amp;particles, const <a class="el" href="../../d0/dc3/classdetinfo_1_1DetectorClocksData.html">detinfo::DetectorClocksData</a> &amp;clockData, <a class="el" href="../../db/ddd/classcaf_1_1SRTrack.html">caf::SRTrack</a> &amp;srtrack, bool allowEmpty)</td></tr>
@@ -1599,127 +1611,127 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00730">730</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                                               {</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <span class="comment">//   std::vector&lt;unsigned&gt; matches_truth;</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; recs.size(); i++) {</span></div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <span class="comment">//     if (recs[i].slc.tmatch.index == (int)truth_ind) {</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;  <span class="comment">//       matches_truth.push_back(i);</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  <span class="comment">//   }</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="comment">//   // first -- remove any cases where most of the slice</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="comment">//   // matches to non-primary particles of the neutrino</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <span class="comment">//   unsigned ind = 0;</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;  <span class="comment">//   std::vector&lt;float&gt; matching_primary_energy;</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  <span class="comment">//   while (ind &lt; matches_truth.size()) {</span></div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="comment">//     const caf::SRSliceRecoBranch &amp;reco = recs[matches_truth[ind]].reco;</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="comment">//     const caf::SRSlice &amp;slice = recs[matches_truth[ind]].slc;</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <span class="comment">//     caf::SRVector3D vertex = slice.vertex;</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <span class="comment">//     float primary_energy = 0.;</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="comment">//     float total_energy = 0.;</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  <span class="comment">//     // check the primary tracks of the slice</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;  <span class="comment">//     for (const caf::SRTrack &amp;track: reco.trk) {</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  <span class="comment">//       caf::SRVector3D start = track.start;</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  <span class="comment">//       float dist = sqrt((start.x - vertex.x) * (start.x - vertex.x) +</span></div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  <span class="comment">//                         (start.y - vertex.y) * (start.y - vertex.y) +</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="comment">//                         (start.z - vertex.z) * (start.z - vertex.z));</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  <span class="comment">//       if (track.parent == slice.self &amp;&amp; dist &lt; 10.) {</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  <span class="comment">//         for (const caf::SRTrackTruth::ParticleMatch &amp;pmatch: track.truth.matches) {</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  <span class="comment">//           total_energy += pmatch.energy;</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <span class="comment">//           for (unsigned i_part = 0; i_part &lt; recs[0].true_particles.size(); i_part++) {</span></div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  <span class="comment">//             const caf::SRTrueParticle &amp;particle = recs[0].true_particles[i_part];</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  <span class="comment">//             if (particle.G4ID == pmatch.G4ID) {</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <span class="comment">//               if (particle.start_process == caf::kG4primary) {</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="comment">//                 primary_energy += pmatch.energy;</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="comment">//               }</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <span class="comment">//               break;</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  <span class="comment">//             }</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="comment">//           }</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <span class="comment">//         }</span></div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  <span class="comment">//       }</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  <span class="comment">//     if (primary_energy / total_energy &lt; 0.5) {</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  <span class="comment">//       recs[matches_truth[ind]].slc.tmatch.is_numucc_primary = false;</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <span class="comment">//       matches_truth.erase(matches_truth.begin()+ind);</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="comment">//     else {</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <span class="comment">//       matching_primary_energy.push_back(primary_energy);</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="comment">//       ind ++;</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="comment">//   }</span></div>
+<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00755">755</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                                               {</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <span class="comment">//   std::vector&lt;unsigned&gt; matches_truth;</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; recs.size(); i++) {</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  <span class="comment">//     if (recs[i].slc.tmatch.index == (int)truth_ind) {</span></div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  <span class="comment">//       matches_truth.push_back(i);</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  <span class="comment">//   // first -- remove any cases where most of the slice</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  <span class="comment">//   // matches to non-primary particles of the neutrino</span></div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="comment">//   unsigned ind = 0;</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  <span class="comment">//   std::vector&lt;float&gt; matching_primary_energy;</span></div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <span class="comment">//   while (ind &lt; matches_truth.size()) {</span></div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  <span class="comment">//     const caf::SRSliceRecoBranch &amp;reco = recs[matches_truth[ind]].reco;</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="comment">//     const caf::SRSlice &amp;slice = recs[matches_truth[ind]].slc;</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  <span class="comment">//     caf::SRVector3D vertex = slice.vertex;</span></div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  <span class="comment">//     float primary_energy = 0.;</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  <span class="comment">//     float total_energy = 0.;</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <span class="comment">//     // check the primary tracks of the slice</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="comment">//     for (const caf::SRTrack &amp;track: reco.trk) {</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <span class="comment">//       caf::SRVector3D start = track.start;</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="comment">//       float dist = sqrt((start.x - vertex.x) * (start.x - vertex.x) +</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <span class="comment">//                         (start.y - vertex.y) * (start.y - vertex.y) +</span></div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <span class="comment">//                         (start.z - vertex.z) * (start.z - vertex.z));</span></div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="comment">//   // less than two matches! All good</span></div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="comment">//   if (matches_truth.size() &lt; 2) return;</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  <span class="comment">//   // If this is a numu CC interaction, break</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="comment">//   // tie by matching the muon</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="comment">//   // Whoever has a track matching closer to the</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="comment">//   // start of the muon wins</span></div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="comment">//   if (abs(srneutrinos[truth_ind].pdg == 14) &amp;&amp; srneutrinos[truth_ind].iscc) {</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <span class="comment">//     const caf::SRTrueParticle &amp;muon = srneutrinos[truth_ind].prim[0];</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="comment">//     float closest_dist = -1;</span></div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="comment">//     int best_index = -1;</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  <span class="comment">//     for (unsigned ind = 0; ind &lt; matches_truth.size(); ind++) {</span></div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  <span class="comment">//       const caf::SRSliceRecoBranch &amp;reco = recs[matches_truth[ind]].reco;</span></div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  <span class="comment">//       const caf::SRSlice &amp;slice = recs[matches_truth[ind]].slc;</span></div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="comment">//       caf::SRVector3D vertex = slice.vertex;</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="comment">//       for (const caf::SRTrack &amp;track: reco.trk) {</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="comment">//         caf::SRVector3D start = track.start;</span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <span class="comment">//         float dist = sqrt((start.x - vertex.x) * (start.x - vertex.x) +</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  <span class="comment">//                           (start.y - vertex.y) * (start.y - vertex.y) +</span></div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  <span class="comment">//                           (start.z - vertex.z) * (start.z - vertex.z));</span></div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  <span class="comment">//         if (track.parent == slice.self &amp;&amp; dist &lt; 10. &amp;&amp; track.truth.matches.size()) {</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;  <span class="comment">//           const caf::SRTrackTruth::ParticleMatch &amp;pmatch = track.truth.matches[0];</span></div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;  <span class="comment">//           if (pmatch.energy / muon.planeVisE &gt; 0.05 &amp;&amp; pmatch.G4ID == muon.G4ID) {</span></div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="comment">//              caf::SRVector3D start = track.start;</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  <span class="comment">//              caf::SRVector3D end = track.end;</span></div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="comment">//              float start_dist = sqrt((start.x - muon.start.x) * (start.x - muon.start.x) +</span></div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="comment">//                                      (start.y - muon.start.y) * (start.y - muon.start.y) +</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <span class="comment">//                                      (start.z - muon.start.z) * (start.z - muon.start.z));</span></div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  <span class="comment">//              float end_dist = sqrt((end.x - muon.start.x) * (end.x - muon.start.x) +</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  <span class="comment">//                                    (end.y - muon.start.y) * (end.y - muon.start.y) +</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  <span class="comment">//                                    (end.z - muon.start.z) * (end.z - muon.start.z));</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  <span class="comment">//              float this_dist = std::min(start_dist, end_dist);</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  <span class="comment">//              if (closest_dist &lt; 0. || this_dist &lt; closest_dist) {</span></div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <span class="comment">//                closest_dist = this_dist;</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="comment">//                best_index = ind;</span></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="comment">//              }</span></div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  <span class="comment">//           }</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  <span class="comment">//         }</span></div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;  <span class="comment">//       }</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  <span class="comment">//     // found a match!</span></div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  <span class="comment">//     if (best_index &gt;= 0) {</span></div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  <span class="comment">//       for (unsigned i = 0; i &lt; matches_truth.size(); i++) {</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <span class="comment">//         if ((int)i == best_index) recs[matches_truth[i]].slc.tmatch.is_numucc_primary = true;</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <span class="comment">//         else                 recs[matches_truth[i]].slc.tmatch.is_numucc_primary = false;</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <span class="comment">//       }</span></div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <span class="comment">//       return;</span></div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="comment">//     // no match :( fallback on non numu-CC matching</span></div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="comment">//     else {}</span></div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  <span class="comment">//   }</span></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="comment">//   // Otherwise, take the most energetic one</span></div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="comment">//   unsigned best_index = std::distance(matching_primary_energy.begin(),</span></div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="comment">//                                       std::max_element(matching_primary_energy.begin(), matching_primary_energy.end()));</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; matches_truth.size(); i++) {</span></div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="comment">//     if (i == best_index) recs[matches_truth[i]].slc.tmatch.is_numucc_primary = true;</span></div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  <span class="comment">//     else                 recs[matches_truth[i]].slc.tmatch.is_numucc_primary = false;</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;  <span class="comment">//   }</span></div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="comment">//       if (track.parent == slice.self &amp;&amp; dist &lt; 10.) {</span></div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="comment">//         for (const caf::SRTrackTruth::ParticleMatch &amp;pmatch: track.truth.matches) {</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="comment">//           total_energy += pmatch.energy;</span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  <span class="comment">//           for (unsigned i_part = 0; i_part &lt; recs[0].true_particles.size(); i_part++) {</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="comment">//             const caf::SRTrueParticle &amp;particle = recs[0].true_particles[i_part];</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="comment">//             if (particle.G4ID == pmatch.G4ID) {</span></div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="comment">//               if (particle.start_process == caf::kG4primary) {</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;  <span class="comment">//                 primary_energy += pmatch.energy;</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  <span class="comment">//               }</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="comment">//               break;</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  <span class="comment">//             }</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  <span class="comment">//           }</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  <span class="comment">//         }</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  <span class="comment">//       }</span></div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="comment">//     if (primary_energy / total_energy &lt; 0.5) {</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;  <span class="comment">//       recs[matches_truth[ind]].slc.tmatch.is_numucc_primary = false;</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  <span class="comment">//       matches_truth.erase(matches_truth.begin()+ind);</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <span class="comment">//     else {</span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  <span class="comment">//       matching_primary_energy.push_back(primary_energy);</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  <span class="comment">//       ind ++;</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;  <span class="comment">//   // less than two matches! All good</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  <span class="comment">//   if (matches_truth.size() &lt; 2) return;</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="comment">//   // If this is a numu CC interaction, break</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="comment">//   // tie by matching the muon</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <span class="comment">//   // Whoever has a track matching closer to the</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;  <span class="comment">//   // start of the muon wins</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  <span class="comment">//   if (abs(srneutrinos[truth_ind].pdg == 14) &amp;&amp; srneutrinos[truth_ind].iscc) {</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;  <span class="comment">//     const caf::SRTrueParticle &amp;muon = srneutrinos[truth_ind].prim[0];</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  <span class="comment">//     float closest_dist = -1;</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  <span class="comment">//     int best_index = -1;</span></div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <span class="comment">//     for (unsigned ind = 0; ind &lt; matches_truth.size(); ind++) {</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  <span class="comment">//       const caf::SRSliceRecoBranch &amp;reco = recs[matches_truth[ind]].reco;</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="comment">//       const caf::SRSlice &amp;slice = recs[matches_truth[ind]].slc;</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  <span class="comment">//       caf::SRVector3D vertex = slice.vertex;</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;  <span class="comment">//       for (const caf::SRTrack &amp;track: reco.trk) {</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  <span class="comment">//         caf::SRVector3D start = track.start;</span></div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  <span class="comment">//         float dist = sqrt((start.x - vertex.x) * (start.x - vertex.x) +</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  <span class="comment">//                           (start.y - vertex.y) * (start.y - vertex.y) +</span></div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  <span class="comment">//                           (start.z - vertex.z) * (start.z - vertex.z));</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <span class="comment">//         if (track.parent == slice.self &amp;&amp; dist &lt; 10. &amp;&amp; track.truth.matches.size()) {</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <span class="comment">//           const caf::SRTrackTruth::ParticleMatch &amp;pmatch = track.truth.matches[0];</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <span class="comment">//           if (pmatch.energy / muon.planeVisE &gt; 0.05 &amp;&amp; pmatch.G4ID == muon.G4ID) {</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <span class="comment">//              caf::SRVector3D start = track.start;</span></div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;  <span class="comment">//              caf::SRVector3D end = track.end;</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="comment">//              float start_dist = sqrt((start.x - muon.start.x) * (start.x - muon.start.x) +</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  <span class="comment">//                                      (start.y - muon.start.y) * (start.y - muon.start.y) +</span></div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <span class="comment">//                                      (start.z - muon.start.z) * (start.z - muon.start.z));</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="comment">//              float end_dist = sqrt((end.x - muon.start.x) * (end.x - muon.start.x) +</span></div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="comment">//                                    (end.y - muon.start.y) * (end.y - muon.start.y) +</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="comment">//                                    (end.z - muon.start.z) * (end.z - muon.start.z));</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="comment">//              float this_dist = std::min(start_dist, end_dist);</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <span class="comment">//              if (closest_dist &lt; 0. || this_dist &lt; closest_dist) {</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="comment">//                closest_dist = this_dist;</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  <span class="comment">//                best_index = ind;</span></div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;  <span class="comment">//              }</span></div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  <span class="comment">//           }</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  <span class="comment">//         }</span></div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  <span class="comment">//       }</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <span class="comment">//     // found a match!</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  <span class="comment">//     if (best_index &gt;= 0) {</span></div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  <span class="comment">//       for (unsigned i = 0; i &lt; matches_truth.size(); i++) {</span></div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  <span class="comment">//         if ((int)i == best_index) recs[matches_truth[i]].slc.tmatch.is_numucc_primary = true;</span></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="comment">//         else                 recs[matches_truth[i]].slc.tmatch.is_numucc_primary = false;</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="comment">//       }</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="comment">//       return;</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="comment">//     // no match :( fallback on non numu-CC matching</span></div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="comment">//     else {}</span></div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  <span class="comment">//   // Otherwise, take the most energetic one</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="comment">//   unsigned best_index = std::distance(matching_primary_energy.begin(),</span></div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="comment">//                                       std::max_element(matching_primary_energy.begin(), matching_primary_energy.end()));</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; matches_truth.size(); i++) {</span></div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="comment">//     if (i == best_index) recs[matches_truth[i]].slc.tmatch.is_numucc_primary = true;</span></div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;  <span class="comment">//     else                 recs[matches_truth[i]].slc.tmatch.is_numucc_primary = false;</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1755,12 +1767,12 @@ template&lt;class T , class U &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00855">855</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  {</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keyword">auto</span> it = props.find(search);</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <span class="keywordflow">if</span> ( it != props.end() ) <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a> = it-&gt;second;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  }</div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00880">880</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  {</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <span class="keyword">auto</span> it = props.find(search);</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <span class="keywordflow">if</span> ( it != props.end() ) <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a> = it-&gt;second;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  }</div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2179,6 +2191,105 @@ template&lt;class T , class U &gt; </div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  }</div>
 <div class="ttc" id="FillTrue_8cxx_html_a83bdb96b82db6cc1828287fd5f770f6f"><div class="ttname"><a href="../../d8/d86/FillTrue_8cxx.html#a83bdb96b82db6cc1828287fd5f770f6f">FRFillNumuCC</a></div><div class="ttdeci">bool FRFillNumuCC(const simb::MCTruth &amp;mctruth, const std::vector&lt; art::Ptr&lt; sim::MCTrack &gt;&gt; &amp;mctracks, const std::vector&lt; geo::BoxBoundedGeo &gt; &amp;volumes, TRandom &amp;rand, caf::SRFakeReco &amp;fakereco)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d86/FillTrue_8cxx_source.html#l00680">FillTrue.cxx:680</a></div></div>
 <div class="ttc" id="classcaf_1_1SRFakeReco_html"><div class="ttname"><a href="../../da/d65/classcaf_1_1SRFakeReco.html">caf::SRFakeReco</a></div><div class="ttdoc">The SRFakeReco is a faked reconstruction using estimates from the SBN proposal. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db1/SRFakeReco_8h_source.html#l00015">SRFakeReco.h:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa1cc4a9058e51facf0bb3cff9dd6d96a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void caf::FillHitVars </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d4e/classrecob_1_1Hit.html">recob::Hit</a> &amp;&#160;</td>
+          <td class="paramname"><em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>producer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d88/classrecob_1_1SpacePoint.html">recob::SpacePoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>spacepoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/d21/classrecob_1_1PFParticle.html">recob::PFParticle</a> &amp;&#160;</td>
+          <td class="paramname"><em>particle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dca/classcaf_1_1SRHit.html">caf::SRHit</a> &amp;&#160;</td>
+          <td class="paramname"><em>srhit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowEmpty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00716">716</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#abd62965de973e561d0471fcdb7767703">setDefault</a>();</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#ae0e7d2339c129dcec888c714e4eca6aa">peakTime</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">PeakTime</a>();</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a75b38f6a4ec02c823f9214ef73cd54dc">RMS</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a42419566c0e9da6d42cfdf67803c0899">RMS</a>();</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a0ddb564772f903f2ca56cfa4de6a73c1">peakAmplitude</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a5a6d25fb947ac7eed319c06b5cb19327">PeakAmplitude</a>();</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#ac1080d9dc66c87b774079b529700e73b">integral</a> = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">Integral</a>();</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a> wire = hit.<a class="code" href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">WireID</a>();</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#ac5aa3b5b4a498aa76ba45ccbbba4f5fb">cryoID</a> = wire.<a class="code" href="../../d9/d73/structgeo_1_1CryostatID.html#a2bfb744818e075d94be15dd18c950441">Cryostat</a>;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a1fd48d98dbc0d42ca11cbc9fc5da8a8a">tpcID</a> = wire.<a class="code" href="../../d2/d4d/structgeo_1_1TPCID.html#a4a7f86b46d9d48a040b7ef5d65973811">TPC</a>;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a294b220aa6cb221c2cce546ae21c5947">planeID</a> = wire.<a class="code" href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">Plane</a>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a4a2840f79e68ec747cd18d7a531ae10a">wireID</a> = wire.<a class="code" href="../../de/db1/structgeo_1_1WireID.html#ac303d2971eb9697f3a65821bb92bb934">Wire</a>;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a54f45f9a517aa06356b1de7775834e4f">spacepoint</a>.<a class="code" href="../../d4/d28/classcaf_1_1SRSpacePoint.html#ada61a7c9b23011224fe033c6a74ea03a">XYZ</a> = SRVector3D (spacepoint.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#a46ff8f390cf4ec3381f1e9d840edbe7c">XYZ</a>());</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a54f45f9a517aa06356b1de7775834e4f">spacepoint</a>.<a class="code" href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a980ddb1176d2cc27c7f36e1b188e997b">chisq</a> = spacepoint.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#affacd833f00e5080e14f5c29610df6ad">Chisq</a>();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a54f45f9a517aa06356b1de7775834e4f">spacepoint</a>.<a class="code" href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a6fd927ad187fb46e9001e509d9b16072">pfpID</a> = particle.<a class="code" href="../../dc/d21/classrecob_1_1PFParticle.html#ab7bca1c5b0094f70a67e56ca1659b3dc">Self</a>();</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    srhit.<a class="code" href="../../df/dca/classcaf_1_1SRHit.html#a54f45f9a517aa06356b1de7775834e4f">spacepoint</a>.<a class="code" href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a92e51c7a86a56e1582fcdc58196af37e">ID</a> = spacepoint.<a class="code" href="../../db/d88/classrecob_1_1SpacePoint.html#a9aa5f938876ad987f773babe89bc4bc2">ID</a>();</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;  }</div>
+<div class="ttc" id="classcaf_1_1SRSpacePoint_html_a6fd927ad187fb46e9001e509d9b16072"><div class="ttname"><a href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a6fd927ad187fb46e9001e509d9b16072">caf::SRSpacePoint::pfpID</a></div><div class="ttdeci">int pfpID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00023">SRHit.h:23</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSpacePoint_html_a980ddb1176d2cc27c7f36e1b188e997b"><div class="ttname"><a href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a980ddb1176d2cc27c7f36e1b188e997b">caf::SRSpacePoint::chisq</a></div><div class="ttdeci">double chisq</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00020">SRHit.h:20</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSpacePoint_html_a92e51c7a86a56e1582fcdc58196af37e"><div class="ttname"><a href="../../d4/d28/classcaf_1_1SRSpacePoint.html#a92e51c7a86a56e1582fcdc58196af37e">caf::SRSpacePoint::ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00022">SRHit.h:22</a></div></div>
+<div class="ttc" id="classrecob_1_1PFParticle_html_ab7bca1c5b0094f70a67e56ca1659b3dc"><div class="ttname"><a href="../../dc/d21/classrecob_1_1PFParticle.html#ab7bca1c5b0094f70a67e56ca1659b3dc">recob::PFParticle::Self</a></div><div class="ttdeci">size_t Self() const </div><div class="ttdoc">Returns the index of this particle. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d5c/PFParticle_8h_source.html#l00092">PFParticle.h:92</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_ac490abcf98854d93cf2fa85eadf4d469"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#ac490abcf98854d93cf2fa85eadf4d469">recob::Hit::WireID</a></div><div class="ttdeci">geo::WireID WireID() const </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00233">Hit.h:233</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_ae0e7d2339c129dcec888c714e4eca6aa"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#ae0e7d2339c129dcec888c714e4eca6aa">caf::SRHit::peakTime</a></div><div class="ttdeci">float peakTime</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00032">SRHit.h:32</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_a42419566c0e9da6d42cfdf67803c0899"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a42419566c0e9da6d42cfdf67803c0899">recob::Hit::RMS</a></div><div class="ttdeci">float RMS() const </div><div class="ttdoc">RMS of the hit shape, in tick units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00220">Hit.h:220</a></div></div>
+<div class="ttc" id="classrecob_1_1SpacePoint_html_affacd833f00e5080e14f5c29610df6ad"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html#affacd833f00e5080e14f5c29610df6ad">recob::SpacePoint::Chisq</a></div><div class="ttdeci">Double32_t Chisq() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00078">SpacePoint.h:78</a></div></div>
+<div class="ttc" id="structgeo_1_1CryostatID_html_a2bfb744818e075d94be15dd18c950441"><div class="ttname"><a href="../../d9/d73/structgeo_1_1CryostatID.html#a2bfb744818e075d94be15dd18c950441">geo::CryostatID::Cryostat</a></div><div class="ttdeci">CryostatID_t Cryostat</div><div class="ttdoc">Index of cryostat. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00212">geo_types.h:212</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_a98fe3ce584899b6f824260d8b4153bd8"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a98fe3ce584899b6f824260d8b4153bd8">recob::Hit::Integral</a></div><div class="ttdeci">float Integral() const </div><div class="ttdoc">Integral under the calibrated signal waveform of the hit, in tick x ADC units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00224">Hit.h:224</a></div></div>
+<div class="ttc" id="structgeo_1_1WireID_html_ac303d2971eb9697f3a65821bb92bb934"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html#ac303d2971eb9697f3a65821bb92bb934">geo::WireID::Wire</a></div><div class="ttdeci">WireID_t Wire</div><div class="ttdoc">Index of the wire within its plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00580">geo_types.h:580</a></div></div>
+<div class="ttc" id="structgeo_1_1WireID_html"><div class="ttname"><a href="../../de/db1/structgeo_1_1WireID.html">geo::WireID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00560">geo_types.h:560</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a4a2840f79e68ec747cd18d7a531ae10a"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a4a2840f79e68ec747cd18d7a531ae10a">caf::SRHit::wireID</a></div><div class="ttdeci">int wireID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00042">SRHit.h:42</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a75b38f6a4ec02c823f9214ef73cd54dc"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a75b38f6a4ec02c823f9214ef73cd54dc">caf::SRHit::RMS</a></div><div class="ttdeci">float RMS</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00034">SRHit.h:34</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a294b220aa6cb221c2cce546ae21c5947"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a294b220aa6cb221c2cce546ae21c5947">caf::SRHit::planeID</a></div><div class="ttdeci">int planeID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00041">SRHit.h:41</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_a5a6d25fb947ac7eed319c06b5cb19327"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a5a6d25fb947ac7eed319c06b5cb19327">recob::Hit::PeakAmplitude</a></div><div class="ttdeci">float PeakAmplitude() const </div><div class="ttdoc">The estimated amplitude of the hit at its peak, in ADC units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00221">Hit.h:221</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a0ddb564772f903f2ca56cfa4de6a73c1"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a0ddb564772f903f2ca56cfa4de6a73c1">caf::SRHit::peakAmplitude</a></div><div class="ttdeci">float peakAmplitude</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00036">SRHit.h:36</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_ac5aa3b5b4a498aa76ba45ccbbba4f5fb"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#ac5aa3b5b4a498aa76ba45ccbbba4f5fb">caf::SRHit::cryoID</a></div><div class="ttdeci">int cryoID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00039">SRHit.h:39</a></div></div>
+<div class="ttc" id="classcaf_1_1SRSpacePoint_html_ada61a7c9b23011224fe033c6a74ea03a"><div class="ttname"><a href="../../d4/d28/classcaf_1_1SRSpacePoint.html#ada61a7c9b23011224fe033c6a74ea03a">caf::SRSpacePoint::XYZ</a></div><div class="ttdeci">SRVector3D XYZ</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00019">SRHit.h:19</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a54f45f9a517aa06356b1de7775834e4f"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a54f45f9a517aa06356b1de7775834e4f">caf::SRHit::spacepoint</a></div><div class="ttdeci">SRSpacePoint spacepoint</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00044">SRHit.h:44</a></div></div>
+<div class="ttc" id="classrecob_1_1SpacePoint_html_a46ff8f390cf4ec3381f1e9d840edbe7c"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html#a46ff8f390cf4ec3381f1e9d840edbe7c">recob::SpacePoint::XYZ</a></div><div class="ttdeci">const Double32_t * XYZ() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00076">SpacePoint.h:76</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_a1fd48d98dbc0d42ca11cbc9fc5da8a8a"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#a1fd48d98dbc0d42ca11cbc9fc5da8a8a">caf::SRHit::tpcID</a></div><div class="ttdeci">int tpcID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00040">SRHit.h:40</a></div></div>
+<div class="ttc" id="structgeo_1_1PlaneID_html_a02c2afa6841ef86ea8ab49478cdf5b29"><div class="ttname"><a href="../../d4/d41/structgeo_1_1PlaneID.html#a02c2afa6841ef86ea8ab49478cdf5b29">geo::PlaneID::Plane</a></div><div class="ttdeci">PlaneID_t Plane</div><div class="ttdoc">Index of the plane within its TPC. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00493">geo_types.h:493</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_ac1080d9dc66c87b774079b529700e73b"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#ac1080d9dc66c87b774079b529700e73b">caf::SRHit::integral</a></div><div class="ttdeci">float integral</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d3e/SRHit_8h_source.html#l00037">SRHit.h:37</a></div></div>
+<div class="ttc" id="classrecob_1_1SpacePoint_html_a9aa5f938876ad987f773babe89bc4bc2"><div class="ttname"><a href="../../db/d88/classrecob_1_1SpacePoint.html#a9aa5f938876ad987f773babe89bc4bc2">recob::SpacePoint::ID</a></div><div class="ttdeci">ID_t ID() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/SpacePoint_8h_source.html#l00075">SpacePoint.h:75</a></div></div>
+<div class="ttc" id="classrecob_1_1Hit_html_a46ddaf21b6eec49d205220f7daf3a85c"><div class="ttname"><a href="../../db/d4e/classrecob_1_1Hit.html#a46ddaf21b6eec49d205220f7daf3a85c">recob::Hit::PeakTime</a></div><div class="ttdeci">float PeakTime() const </div><div class="ttdoc">Time of the signal peak, in tick units. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d26/Hit_8h_source.html#l00218">Hit.h:218</a></div></div>
+<div class="ttc" id="classcaf_1_1SRHit_html_abd62965de973e561d0471fcdb7767703"><div class="ttname"><a href="../../df/dca/classcaf_1_1SRHit.html#abd62965de973e561d0471fcdb7767703">caf::SRHit::setDefault</a></div><div class="ttdeci">void setDefault()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d7d/SRHit_8cxx_source.html#l00020">SRHit.cxx:20</a></div></div>
+<div class="ttc" id="structgeo_1_1TPCID_html_a4a7f86b46d9d48a040b7ef5d65973811"><div class="ttname"><a href="../../d2/d4d/structgeo_1_1TPCID.html#a4a7f86b46d9d48a040b7ef5d65973811">geo::TPCID::TPC</a></div><div class="ttdeci">TPCID_t TPC</div><div class="ttdoc">Index of the TPC within its cryostat. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/geo__types_8h_source.html#l00406">geo_types.h:406</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3459,7 +3570,7 @@ template&lt;class T , class U &gt; </div>
 <div class="ttc" id="classcaf_1_1SRNuID_html_a0c2626a774bb6d6c1c43cc2261c1fa7d"><div class="ttname"><a href="../../d9/d0f/classcaf_1_1SRNuID.html#a0c2626a774bb6d6c1c43cc2261c1fa7d">caf::SRNuID::crmaxhits</a></div><div class="ttdeci">int crmaxhits</div><div class="ttdoc">CRNHitsMax feature in NeutrinoID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/SRNuID_8h_source.html#l00028">SRNuID.h:28</a></div></div>
 <div class="ttc" id="classlarpandoraobj_1_1PFParticleMetadata_html_a607c753060b3caaeb1ce40f754f3cf51"><div class="ttname"><a href="../../d6/de5/classlarpandoraobj_1_1PFParticleMetadata.html#a607c753060b3caaeb1ce40f754f3cf51">larpandoraobj::PFParticleMetadata::GetPropertiesMap</a></div><div class="ttdeci">const PropertiesMap &amp; GetPropertiesMap() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/PFParticleMetadata_8cxx_source.html#l00023">PFParticleMetadata.cxx:23</a></div></div>
 <div class="ttc" id="classcaf_1_1SRNuID_html_ae385f593223d230db8f7572eeb0f621d"><div class="ttname"><a href="../../d9/d0f/classcaf_1_1SRNuID.html#ae385f593223d230db8f7572eeb0f621d">caf::SRNuID::nusps</a></div><div class="ttdeci">float nusps</div><div class="ttdoc">NuNSpacePointsInSphere feature in NeutrinoID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/SRNuID_8h_source.html#l00023">SRNuID.h:23</a></div></div>
-<div class="ttc" id="namespacecaf_html_a1cdedc110744c9384a52a281202f12da"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#a1cdedc110744c9384a52a281202f12da">caf::CopyPropertyIfSet</a></div><div class="ttdeci">void CopyPropertyIfSet(const std::map&lt; std::string, T &gt; &amp;props, const std::string &amp;search, U &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d75/FillReco_8cxx_source.html#l00855">FillReco.cxx:855</a></div></div>
+<div class="ttc" id="namespacecaf_html_a1cdedc110744c9384a52a281202f12da"><div class="ttname"><a href="../../d7/df6/namespacecaf.html#a1cdedc110744c9384a52a281202f12da">caf::CopyPropertyIfSet</a></div><div class="ttdeci">void CopyPropertyIfSet(const std::map&lt; std::string, T &gt; &amp;props, const std::string &amp;search, U &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d75/FillReco_8cxx_source.html#l00880">FillReco.cxx:880</a></div></div>
 <div class="ttc" id="classcaf_1_1SRNuID_html_a863beada48b1c6c178fd49b9f3fa16f7"><div class="ttname"><a href="../../d9/d0f/classcaf_1_1SRNuID.html#a863beada48b1c6c178fd49b9f3fa16f7">caf::SRNuID::crlongtrkdef</a></div><div class="ttdeci">float crlongtrkdef</div><div class="ttdoc">CRLongestTrackDeflection feature in NeutrinoID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/SRNuID_8h_source.html#l00026">SRNuID.h:26</a></div></div>
 <div class="ttc" id="classcaf_1_1SRNuID_html_a194d2abc429adfc3d8d0b045eab675c4"><div class="ttname"><a href="../../d9/d0f/classcaf_1_1SRNuID.html#a194d2abc429adfc3d8d0b045eab675c4">caf::SRNuID::nuvtxy</a></div><div class="ttdeci">float nuvtxy</div><div class="ttdoc">NuVertexY feature in NeutrinoID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/SRNuID_8h_source.html#l00021">SRNuID.h:21</a></div></div>
 <div class="ttc" id="classcaf_1_1SRNuID_html_a4f83e30de4c21773b8880e2c9bdfc424"><div class="ttname"><a href="../../d9/d0f/classcaf_1_1SRNuID.html#a4f83e30de4c21773b8880e2c9bdfc424">caf::SRNuID::crlongtrkdiry</a></div><div class="ttdeci">float crlongtrkdiry</div><div class="ttdoc">CRLongestTrackDirY feature in NeutrinoID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df4/SRNuID_8h_source.html#l00025">SRNuID.h:25</a></div></div>
@@ -4751,6 +4862,59 @@ template&lt;class T , class U &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="af7fbd60860b8fe8d0498d214fc692bb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void caf::FillTrigger </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html">sbn::ExtraTriggerInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>addltrig_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../dd/d0b/classraw_1_1Trigger.html">raw::Trigger</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>trig_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../dd/de6/classcaf_1_1SRTrigger.html">caf::SRTrigger</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>triggerInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dc/d6d/FillTrigger_8cxx_source.html#l00006">6</a> of file <a class="el" href="../../dc/d6d/FillTrigger_8cxx_source.html">FillTrigger.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    uint64_t beam_ts = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    uint64_t trigger_ts = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    triggerInfo.emplace_back();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    triggerInfo.back().global_trigger_time = addltrig_info.<a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#acbbec1e38c4afbcc587f2c2332668dd0">triggerTimestamp</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    triggerInfo.back().beam_gate_time_abs = addltrig_info.<a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ad119878ad54a48c78f46bec1f7d79e9a">beamGateTimestamp</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    beam_ts = addltrig_info.<a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ad119878ad54a48c78f46bec1f7d79e9a">beamGateTimestamp</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    trigger_ts = addltrig_info.<a class="code" href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#acbbec1e38c4afbcc587f2c2332668dd0">triggerTimestamp</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    int64_t diff_ts = trigger_ts - beam_ts;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    triggerInfo.back().trigger_within_gate = diff_ts;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="../../dd/d0b/classraw_1_1Trigger.html">raw::Trigger</a>&amp; trig: trig_info)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      triggerInfo.back().beam_gate_det_time = trig.BeamGateTime();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      triggerInfo.back().global_trigger_det_time = trig.TriggerTime();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_ad119878ad54a48c78f46bec1f7d79e9a"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#ad119878ad54a48c78f46bec1f7d79e9a">sbn::ExtraTriggerInfo::beamGateTimestamp</a></div><div class="ttdeci">std::uint64_t beamGateTimestamp</div><div class="ttdoc">Absolute timestamp of the opening of this beam gate [ns]. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dcc/icaruscode_2icaruscode_2Decode_2DataProducts_2ExtraTriggerInfo_8h_source.html#l00077">icaruscode/icaruscode/Decode/DataProducts/ExtraTriggerInfo.h:77</a></div></div>
+<div class="ttc" id="classraw_1_1Trigger_html"><div class="ttname"><a href="../../dd/d0b/classraw_1_1Trigger.html">raw::Trigger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d16/TriggerData_8h_source.html#l00011">TriggerData.h:11</a></div></div>
+<div class="ttc" id="structsbn_1_1ExtraTriggerInfo_html_acbbec1e38c4afbcc587f2c2332668dd0"><div class="ttname"><a href="../../dc/d51/structsbn_1_1ExtraTriggerInfo.html#acbbec1e38c4afbcc587f2c2332668dd0">sbn::ExtraTriggerInfo::triggerTimestamp</a></div><div class="ttdeci">std::uint64_t triggerTimestamp</div><div class="ttdoc">Absolute timestamp of this trigger [ns]. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/dcc/icaruscode_2icaruscode_2Decode_2DataProducts_2ExtraTriggerInfo_8h_source.html#l00074">icaruscode/icaruscode/Decode/DataProducts/ExtraTriggerInfo.h:74</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a33cf1bb164a3ab4586610d97930787ad"></a>
 <div class="memitem">
 <div class="memproto">
@@ -5777,17 +5941,17 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00718">718</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="comment">//   // set is_primary to true by default</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="comment">//   for (caf::StandardRecord &amp;rec: recs) {</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  <span class="comment">//     rec.slc.tmatch.is_numucc_primary = true;</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  <span class="comment">//   }</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; srneutrinos.size(); i++) {</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;  <span class="comment">//     ApplyNumuCCMatching(recs, srneutrinos, i);</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;  <span class="comment">//   }</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d8/d75/FillReco_8cxx_source.html#l00743">743</a> of file <a class="el" href="../../d8/d75/FillReco_8cxx_source.html">FillReco.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  <span class="comment">//   // set is_primary to true by default</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;  <span class="comment">//   for (caf::StandardRecord &amp;rec: recs) {</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="comment">//     rec.slc.tmatch.is_numucc_primary = true;</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  <span class="comment">//   for (unsigned i = 0; i &lt; srneutrinos.size(); i++) {</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  <span class="comment">//     ApplyNumuCCMatching(recs, srneutrinos, i);</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="comment">//   }</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>

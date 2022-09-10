@@ -102,7 +102,7 @@ Static Public Attributes</h2></td></tr>
 struct icarus::trigger::details::map_dereferenced_values_impl&lt; Map &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00043">43</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00048">48</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4636f1cf63350644b63536f5fdf7f29e"></a>
 <div class="memitem">
@@ -130,14 +130,14 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00048">48</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> extractor = [](<span class="keyword">auto</span>&amp;&amp; <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>) -&gt; decltype(<span class="keyword">auto</span>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          { <span class="keywordflow">return</span> *std::get&lt;NElement&gt;(<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>); };</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d72/namespaceutil.html#ad93ad1c533f5f788da7639764cb9518b">util::make_transformed_span</a>(coll, extractor);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
+<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00053">53</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">auto</span> extractor = [](<span class="keyword">auto</span>&amp;&amp; <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>) -&gt; decltype(<span class="keyword">auto</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          { <span class="keywordflow">return</span> *std::get&lt;NElement&gt;(<a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>); };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d6/d72/namespaceutil.html#ad93ad1c533f5f788da7639764cb9518b">util::make_transformed_span</a>(coll, extractor);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
 <div class="ttc" id="namespaceutil_html_ad93ad1c533f5f788da7639764cb9518b"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#ad93ad1c533f5f788da7639764cb9518b">util::make_transformed_span</a></div><div class="ttdeci">auto make_transformed_span(BIter begin, EIter end, Op &amp;&amp;op)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7a/span_8h_source.html#l00294">span.h:294</a></div></div>
-<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00158">pmtsimulation_icarus.fcl:158</a></div></div>
+<div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -162,7 +162,7 @@ template&lt;typename Map&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00045">45</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
+<p>Definition at line <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html#l00050">50</a> of file <a class="el" href="../../df/d7e/PlotSandbox_8h_source.html">PlotSandbox.h</a>.</p>
 
 </div>
 </div>

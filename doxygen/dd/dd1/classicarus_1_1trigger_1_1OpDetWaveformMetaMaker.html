@@ -127,7 +127,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extracts and saves the time coverage of optical detector waveforms. </p>
 <p>This module writes a list of <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> objects matching the information of each optical detector waveform.</p>
-<p>It may be used as input to modules which require to operate on beam gates, to select time(s) around the reconstructed (and selected) tracks.</p>
+<p>It may be used as input to modules which require all the information of a PMT waveform except the actual content of the waveform. For such uses, the large waveforms may be dropped and this summary information be kept instead.</p>
 <h1>Input data products </h1>
 <p>This module acts on a <em>selection</em> of tracks, which implies that the input is a set of <em>pointers</em> to tracks rather than to an actual track collection. For each track, an associated time is required.</p>
 <ul>
@@ -144,7 +144,7 @@ Private Attributes</h2></td></tr>
 <li><code>LogCategory</code> (string, default: <code><a class="el" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html" title="Extracts and saves the time coverage of optical detector waveforms. ">OpDetWaveformMetaMaker</a></code>): name of the output stream category for console messages (managed by MessageFacility library). </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a179660f1f412f2cb13c7ea115f2ae3c5"></a>
 <div class="memitem">
@@ -156,7 +156,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00116">116</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00118">118</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
 
 </div>
 </div>
@@ -193,33 +193,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00166">166</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  : art::SharedProducer(config)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// configuration</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  , <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>(config().Waveforms())</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  , <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a>(config().LogCategory())</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;{</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  async&lt;art::InEvent&gt;();</div>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00168">168</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  : art::SharedProducer(config)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// configuration</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  , <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>(config().Waveforms())</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  , <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a>(config().LogCategory())</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// output data declaration</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  async&lt;art::InEvent&gt;();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  produces&lt;std::vector&lt;sbn::OpDetWaveformMeta&gt;&gt;();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  produces&lt;art::Assns&lt;sbn::OpDetWaveformMeta, raw::OpDetWaveform&gt;&gt;();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="comment">// configuration report (short)</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="comment">// output data declaration</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  produces&lt;std::vector&lt;sbn::OpDetWaveformMeta&gt;&gt;();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  produces&lt;art::Assns&lt;sbn::OpDetWaveformMeta, raw::OpDetWaveform&gt;&gt;();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  mf::LogInfo{ <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a> }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Configuration:&quot;</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;\n - input waveforms: &#39;&quot;</span> &lt;&lt; <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>.encode() &lt;&lt; <span class="charliteral">&#39;\&#39;&#39;</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    ;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;} <span class="comment">// icarus::trigger::OpDetWaveformMetaMaker::OpDetWaveformMetaMaker()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_aaa4e50ff00219e6f62fed83cf13ce125"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">icarus::trigger::OpDetWaveformMetaMaker::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00144">OpDetWaveformMetaMaker_module.cc:144</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_abecbb621470d70e0af67b5d372e842ad"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">icarus::trigger::OpDetWaveformMetaMaker::fWaveformTag</a></div><div class="ttdeci">art::InputTag const fWaveformTag</div><div class="ttdoc">Input waveforms. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00141">OpDetWaveformMetaMaker_module.cc:141</a></div></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="comment">// configuration report (short)</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  mf::LogInfo{ <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a> }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Configuration:&quot;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;\n - input waveforms: &#39;&quot;</span> &lt;&lt; <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>.encode() &lt;&lt; <span class="charliteral">&#39;\&#39;&#39;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    ;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;} <span class="comment">// icarus::trigger::OpDetWaveformMetaMaker::OpDetWaveformMetaMaker()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_aaa4e50ff00219e6f62fed83cf13ce125"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">icarus::trigger::OpDetWaveformMetaMaker::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00146">OpDetWaveformMetaMaker_module.cc:146</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_abecbb621470d70e0af67b5d372e842ad"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">icarus::trigger::OpDetWaveformMetaMaker::fWaveformTag</a></div><div class="ttdeci">art::InputTag const fWaveformTag</div><div class="ttdoc">Input waveforms. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00143">OpDetWaveformMetaMaker_module.cc:143</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -258,81 +258,87 @@ Private Attributes</h2></td></tr>
 
 <p>Fills the plots. Also extracts the information to fill them with. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00195">195</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/d8b/namespacedetinfo_1_1timescales.html#abd0daf821f464d7aec05b35a43053145">detinfo::timescales::electronics_time</a>;</div>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00197">197</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">// get the timing information for this event</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/d8b/namespacedetinfo_1_1timescales.html#abd0daf821f464d7aec05b35a43053145">detinfo::timescales::electronics_time</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> <span class="keyword">const</span> <a class="code" href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a> = <a class="code" href="../../d7/d8a/namespacedetinfo.html#a2ef927ca9aaa32d366a9a0d26e7e14e7">detinfo::makeDetectorTimings</a></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    (art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(event))</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    ;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="comment">// fetch input</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">// get the timing information for this event</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a> <span class="keyword">const</span> <a class="code" href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a> = <a class="code" href="../../d7/d8a/namespacedetinfo.html#a2ef927ca9aaa32d366a9a0d26e7e14e7">detinfo::makeDetectorTimings</a></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    (art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataFor(event))</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    ;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>&amp; waveformHandle</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    = <span class="keyword">event</span>.getValidHandle&lt;std::vector&lt;raw::OpDetWaveform&gt;&gt;(<a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  mf::LogDebug(<a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a>) &lt;&lt; <span class="stringliteral">&quot;Event &quot;</span> &lt;&lt; <span class="keyword">event</span>.id()</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; has beam gate starting at &quot;</span> &lt;&lt; detTimings.<a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a71dfbfa8a3f162f4e38dc6e6303c8147">BeamGateTime</a>()</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; and trigger at &quot;</span> &lt;&lt; detTimings.<a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a9f53be8d5c5437cb6a268b3509682183">TriggerTime</a>() &lt;&lt; <span class="stringliteral">&quot;.&quot;</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;\nNow extracting information from &quot;</span> &lt;&lt; waveformHandle-&gt;size()</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; waveforms.&quot;</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    ;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="comment">// create the content</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a> <a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">makeOpDetWaveformMeta</a>{ detTimings };</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  std::vector&lt;sbn::OpDetWaveformMeta&gt; PMTinfo;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  art::Assns&lt;sbn::OpDetWaveformMeta, raw::OpDetWaveform&gt; infoToWaveform;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  art::PtrMaker&lt;sbn::OpDetWaveformMeta&gt; <span class="keyword">const</span> makeInfoPtr { <span class="keyword">event</span> };</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  art::PtrMaker&lt;raw::OpDetWaveform&gt; <span class="keyword">const</span> makeWaveformPtr</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    { event, waveformHandle.id() };</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iWaveform, waveform ]: <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(*waveformHandle)) {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    assert(iWaveform == PMTinfo.size());</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    PMTinfo.push_back(<a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">makeOpDetWaveformMeta</a>(waveform));</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    infoToWaveform.addSingle</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      (makeInfoPtr(iWaveform), makeWaveformPtr(iWaveform));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a> = PMTinfo.back();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      mf::LogTrace log{ <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a> };</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;Coverage for waveform #&quot;</span> &lt;&lt; iWaveform</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; on channel &quot;</span> &lt;&lt; waveform.ChannelNumber() &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        &lt;&lt; info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a12356dfae0615162dbf6c4e10edd9489">startTime</a> &lt;&lt; <span class="stringliteral">&quot; -- &quot;</span> &lt;&lt; info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a6c8f108ba8f5db929374bcc9eb987d1a">endTime</a>;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">if</span> (info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#afc6c2ad9cc7b35d93ab8694772e7b658">withTrigger</a>()) log &lt;&lt; <span class="stringliteral">&quot;; includes trigger&quot;</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keywordflow">if</span> (info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a7520b5a19cf04513c2b390fe2f9cab09">withBeamGate</a>()) log &lt;&lt; <span class="stringliteral">&quot;; includes beam gate start&quot;</span>;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// store output</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">event</span>.put(moveToUniquePtr(PMTinfo));</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">event</span>.put(moveToUniquePtr(infoToWaveform));</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;} <span class="comment">// icarus::trigger::OpDetWaveformMetaMaker::produce()</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="comment">// fetch input</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>&amp; waveformHandle</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    = <span class="keyword">event</span>.getValidHandle&lt;std::vector&lt;raw::OpDetWaveform&gt;&gt;(<a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">fWaveformTag</a>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="../../dc/d8b/namespacedetinfo_1_1timescales.html#abd0daf821f464d7aec05b35a43053145">electronics_time</a> <span class="keyword">const</span> triggerTime = detTimings.<a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a9f53be8d5c5437cb6a268b3509682183">TriggerTime</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="../../dc/d8b/namespacedetinfo_1_1timescales.html#abd0daf821f464d7aec05b35a43053145">electronics_time</a> <span class="keyword">const</span> beamGateTime = detTimings.<a class="code" href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a71dfbfa8a3f162f4e38dc6e6303c8147">BeamGateTime</a>();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    mf::LogDebug(<a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a>)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Event &quot;</span> &lt;&lt; <span class="keyword">event</span>.id() &lt;&lt; <span class="stringliteral">&quot; has beam gate starting at &quot;</span> &lt;&lt; beamGateTime</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; and trigger at &quot;</span> &lt;&lt; triggerTime &lt;&lt; <span class="stringliteral">&quot;.&quot;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;\nNow extracting information from &quot;</span> &lt;&lt; waveformHandle-&gt;size()</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; waveforms.&quot;</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      ;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// create the content</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <a class="code" href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a> <a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">makeOpDetWaveformMeta</a>{ detTimings };</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  std::vector&lt;sbn::OpDetWaveformMeta&gt; PMTinfo;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  art::Assns&lt;sbn::OpDetWaveformMeta, raw::OpDetWaveform&gt; infoToWaveform;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  art::PtrMaker&lt;sbn::OpDetWaveformMeta&gt; <span class="keyword">const</span> makeInfoPtr { <span class="keyword">event</span> };</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  art::PtrMaker&lt;raw::OpDetWaveform&gt; <span class="keyword">const</span> makeWaveformPtr</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    { event, waveformHandle.id() };</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iWaveform, waveform ]: <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(*waveformHandle)) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    assert(iWaveform == PMTinfo.size());</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    PMTinfo.push_back(<a class="code" href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">makeOpDetWaveformMeta</a>(waveform));</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d3/d46/namespacesortDataLoggerFiles.html#aabcd6b22cdd9f4c3c9c394a72f90183a">info</a> = PMTinfo.back();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      mf::LogTrace log{ <a class="code" href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">fLogCategory</a> };</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;Coverage for waveform #&quot;</span> &lt;&lt; iWaveform</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; on channel &quot;</span> &lt;&lt; info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#aa2f7bbbe07473698d003413bff94f7b0">channel</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        &lt;&lt; info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a12356dfae0615162dbf6c4e10edd9489">startTime</a> &lt;&lt; <span class="stringliteral">&quot; -- &quot;</span> &lt;&lt; info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a6c8f108ba8f5db929374bcc9eb987d1a">endTime</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">if</span> (info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#afc6c2ad9cc7b35d93ab8694772e7b658">withTrigger</a>()) log &lt;&lt; <span class="stringliteral">&quot;; includes trigger&quot;</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keywordflow">if</span> (info.<a class="code" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a7520b5a19cf04513c2b390fe2f9cab09">withBeamGate</a>()) log &lt;&lt; <span class="stringliteral">&quot;; includes beam gate start&quot;</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    infoToWaveform.addSingle</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      (makeInfoPtr(iWaveform), makeWaveformPtr(iWaveform));</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  } <span class="comment">// for</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="comment">// store output</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keyword">event</span>.put(moveToUniquePtr(PMTinfo));</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keyword">event</span>.put(moveToUniquePtr(infoToWaveform));</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// icarus::trigger::OpDetWaveformMetaMaker::produce()</span></div>
 <div class="ttc" id="classdetinfo_1_1DetectorTimings_html_a71dfbfa8a3f162f4e38dc6e6303c8147"><div class="ttname"><a href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a71dfbfa8a3f162f4e38dc6e6303c8147">detinfo::DetectorTimings::BeamGateTime</a></div><div class="ttdeci">electronics_time BeamGateTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00339">DetectorTimings.h:339</a></div></div>
 <div class="ttc" id="namespacesbn_html_a96a78b71c5fd60a64d1ca7470e135b25"><div class="ttname"><a href="../../d7/d67/namespacesbn.html#a96a78b71c5fd60a64d1ca7470e135b25">sbn::makeOpDetWaveformMeta</a></div><div class="ttdeci">OpDetWaveformMeta makeOpDetWaveformMeta(raw::OpDetWaveform const &amp;waveform, detinfo::DetectorTimings const &amp;detTimings)</div><div class="ttdoc">Creates a sbn::OpDetWaveformMeta out of a raw::OpDetWaveform. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd6/OpDetWaveformMetaUtils_8cxx_source.html#l00083">OpDetWaveformMetaUtils.cxx:83</a></div></div>
 <div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a></div><div class="ttdoc">Derivative information from raw::OpDetWaveform data. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00035">OpDetWaveformMeta.h:35</a></div></div>
 <div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html_a6c8f108ba8f5db929374bcc9eb987d1a"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a6c8f108ba8f5db929374bcc9eb987d1a">sbn::OpDetWaveformMeta::endTime</a></div><div class="ttdeci">double endTime</div><div class="ttdoc">Time at the end of the last sample in the waveform [us]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00073">OpDetWaveformMeta.h:73</a></div></div>
 <div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_aaa4e50ff00219e6f62fed83cf13ce125"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">icarus::trigger::OpDetWaveformMetaMaker::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00144">OpDetWaveformMetaMaker_module.cc:144</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_aaa4e50ff00219e6f62fed83cf13ce125"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#aaa4e50ff00219e6f62fed83cf13ce125">icarus::trigger::OpDetWaveformMetaMaker::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00146">OpDetWaveformMetaMaker_module.cc:146</a></div></div>
 <div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html_a7520b5a19cf04513c2b390fe2f9cab09"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a7520b5a19cf04513c2b390fe2f9cab09">sbn::OpDetWaveformMeta::withBeamGate</a></div><div class="ttdeci">bool withBeamGate() const </div><div class="ttdoc">Returns whether the time interval includes for sure the beam opening time. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00144">OpDetWaveformMeta.h:144</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_abecbb621470d70e0af67b5d372e842ad"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">icarus::trigger::OpDetWaveformMetaMaker::fWaveformTag</a></div><div class="ttdeci">art::InputTag const fWaveformTag</div><div class="ttdoc">Input waveforms. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00141">OpDetWaveformMetaMaker_module.cc:141</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMaker_html_abecbb621470d70e0af67b5d372e842ad"><div class="ttname"><a href="../../dd/dd1/classicarus_1_1trigger_1_1OpDetWaveformMetaMaker.html#abecbb621470d70e0af67b5d372e842ad">icarus::trigger::OpDetWaveformMetaMaker::fWaveformTag</a></div><div class="ttdeci">art::InputTag const fWaveformTag</div><div class="ttdoc">Input waveforms. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00143">OpDetWaveformMetaMaker_module.cc:143</a></div></div>
 <div class="ttc" id="namespacedetinfo_html_a2ef927ca9aaa32d366a9a0d26e7e14e7"><div class="ttname"><a href="../../d7/d8a/namespacedetinfo.html#a2ef927ca9aaa32d366a9a0d26e7e14e7">detinfo::makeDetectorTimings</a></div><div class="ttdeci">detinfo::DetectorTimings makeDetectorTimings(detinfo::DetectorClocksData const &amp;detClocks)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00698">DetectorTimings.h:698</a></div></div>
 <div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html_afc6c2ad9cc7b35d93ab8694772e7b658"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#afc6c2ad9cc7b35d93ab8694772e7b658">sbn::OpDetWaveformMeta::withTrigger</a></div><div class="ttdeci">bool withTrigger() const </div><div class="ttdoc">Returns whether the time interval includes for sure the trigger time. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00153">OpDetWaveformMeta.h:153</a></div></div>
 <div class="ttc" id="classdetinfo_1_1DetectorTimings_html_a9f53be8d5c5437cb6a268b3509682183"><div class="ttname"><a href="../../de/d0f/classdetinfo_1_1DetectorTimings.html#a9f53be8d5c5437cb6a268b3509682183">detinfo::DetectorTimings::TriggerTime</a></div><div class="ttdeci">electronics_time TriggerTime() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00331">DetectorTimings.h:331</a></div></div>
 <div class="ttc" id="classsbn_1_1OpDetWaveformMetaMaker_html"><div class="ttname"><a href="../../db/df2/classsbn_1_1OpDetWaveformMetaMaker.html">sbn::OpDetWaveformMetaMaker</a></div><div class="ttdoc">Converter from raw::OpDetWaveform into sbn::OpDetWaveformMeta. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dee/OpDetWaveformMetaUtils_8h_source.html#l00123">OpDetWaveformMetaUtils.h:123</a></div></div>
+<div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html_aa2f7bbbe07473698d003413bff94f7b0"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#aa2f7bbbe07473698d003413bff94f7b0">sbn::OpDetWaveformMeta::channel</a></div><div class="ttdeci">raw::Channel_t channel</div><div class="ttdoc">ID of the PMT channel. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00066">OpDetWaveformMeta.h:66</a></div></div>
 <div class="ttc" id="classdetinfo_1_1DetectorTimings_html"><div class="ttname"><a href="../../de/d0f/classdetinfo_1_1DetectorTimings.html">detinfo::DetectorTimings</a></div><div class="ttdoc">A class exposing an upgraded interface of detinfo::DetectorClocksData. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dd2/DetectorTimings_8h_source.html#l00249">DetectorTimings.h:249</a></div></div>
 <div class="ttc" id="ExtractEnergyDepositionSummary__module_8cc_html_ac977879c6351c98d7eb034f13e4758a6"><div class="ttname"><a href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html#ac977879c6351c98d7eb034f13e4758a6">detTimings</a></div><div class="ttdeci">fDetProps &amp;fDetProps fDetProps &amp;fDetProps detTimings</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d11/ExtractEnergyDepositionSummary__module_8cc_source.html#l00301">ExtractEnergyDepositionSummary_module.cc:301</a></div></div>
 <div class="ttc" id="structsbn_1_1OpDetWaveformMeta_html_a12356dfae0615162dbf6c4e10edd9489"><div class="ttname"><a href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html#a12356dfae0615162dbf6c4e10edd9489">sbn::OpDetWaveformMeta::startTime</a></div><div class="ttdeci">double startTime</div><div class="ttdoc">Time of the first sample in the waveform [us]. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/OpDetWaveformMeta_8h_source.html#l00071">OpDetWaveformMeta.h:71</a></div></div>
@@ -362,7 +368,7 @@ Private Attributes</h2></td></tr>
 
 <p>Message facility stream category for output. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00144">144</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00146">146</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
 
 </div>
 </div>
@@ -386,7 +392,7 @@ Private Attributes</h2></td></tr>
 
 <p>Input waveforms. </p>
 
-<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html#l00143">143</a> of file <a class="el" href="../../d3/d6d/OpDetWaveformMetaMaker__module_8cc_source.html">OpDetWaveformMetaMaker_module.cc</a>.</p>
 
 </div>
 </div>

@@ -106,7 +106,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html" title="VertexComparator class for comparison of two points wrt neutrino vertex position. ...">VertexComparator</a> class for comparison of two points wrt neutrino vertex position. </p>
 
-<p>Definition at line <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00329">329</a> of file <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html">TrackShowerIdFeatureTool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00349">349</a> of file <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html">TrackShowerIdFeatureTool.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2fc8c189cba1e171d7d73f2295850467"></a>
 <div class="memitem">
@@ -124,11 +124,11 @@ Public Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html#l00962">962</a> of file <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html">TrackShowerIdFeatureTool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                                                                                                : <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>(vertexPosition2D)</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;{</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;}</div>
-<div class="ttc" id="classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator_html_a110923f21cc10e19b71b6a91cc7a4202"><div class="ttname"><a href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">lar_content::ThreeDChargeFeatureTool::VertexComparator::m_neutrinoVertex</a></div><div class="ttdeci">pandora::CartesianVector m_neutrinoVertex</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00346">TrackShowerIdFeatureTool.h:346</a></div></div>
+<p>Definition at line <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html#l01202">1202</a> of file <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html">TrackShowerIdFeatureTool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                                                                                                : <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>(vertexPosition2D)</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;{</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;}</div>
+<div class="ttc" id="classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator_html_a110923f21cc10e19b71b6a91cc7a4202"><div class="ttname"><a href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">lar_content::ThreeDChargeFeatureTool::VertexComparator::m_neutrinoVertex</a></div><div class="ttdeci">pandora::CartesianVector m_neutrinoVertex</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00366">TrackShowerIdFeatureTool.h:366</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -166,13 +166,13 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html#l00968">968</a> of file <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html">TrackShowerIdFeatureTool.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;{</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> distanceL((<a class="code" href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a>-&gt;GetPositionVector() - <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>).GetMagnitudeSquared());</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> distanceR((<a class="code" href="../../db/de7/namespacelar__content.html#a802e2da8728547d00e4506074c8d496b">right</a>-&gt;GetPositionVector() - <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>).GetMagnitudeSquared());</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    <span class="keywordflow">return</span> distanceL &lt; distanceR;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;}</div>
-<div class="ttc" id="classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator_html_a110923f21cc10e19b71b6a91cc7a4202"><div class="ttname"><a href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">lar_content::ThreeDChargeFeatureTool::VertexComparator::m_neutrinoVertex</a></div><div class="ttdeci">pandora::CartesianVector m_neutrinoVertex</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00346">TrackShowerIdFeatureTool.h:346</a></div></div>
+<p>Definition at line <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html#l01208">1208</a> of file <a class="el" href="../../dc/dcf/TrackShowerIdFeatureTool_8cc_source.html">TrackShowerIdFeatureTool.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;{</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> distanceL((<a class="code" href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a>-&gt;GetPositionVector() - <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>).GetMagnitudeSquared());</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> distanceR((<a class="code" href="../../db/de7/namespacelar__content.html#a802e2da8728547d00e4506074c8d496b">right</a>-&gt;GetPositionVector() - <a class="code" href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">m_neutrinoVertex</a>).GetMagnitudeSquared());</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    <span class="keywordflow">return</span> distanceL &lt; distanceR;</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;}</div>
+<div class="ttc" id="classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator_html_a110923f21cc10e19b71b6a91cc7a4202"><div class="ttname"><a href="../../df/d2c/classlar__content_1_1ThreeDChargeFeatureTool_1_1VertexComparator.html#a110923f21cc10e19b71b6a91cc7a4202">lar_content::ThreeDChargeFeatureTool::VertexComparator::m_neutrinoVertex</a></div><div class="ttdeci">pandora::CartesianVector m_neutrinoVertex</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00366">TrackShowerIdFeatureTool.h:366</a></div></div>
 <div class="ttc" id="namespacelar__content_html_a802e2da8728547d00e4506074c8d496b"><div class="ttname"><a href="../../db/de7/namespacelar__content.html#a802e2da8728547d00e4506074c8d496b">lar_content::right</a></div><div class="ttdeci">right(nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd6/KDTreeLinkerToolsT_8h_source.html#l00265">KDTreeLinkerToolsT.h:265</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a1abc6b9e279feba048394f49a85218c9"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a1abc6b9e279feba048394f49a85218c9">left</a></div><div class="ttdeci">walls no left</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00105">selectors.fcl:105</a></div></div>
 </div><!-- fragment -->
@@ -189,7 +189,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00346">346</a> of file <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html">TrackShowerIdFeatureTool.h</a>.</p>
+<p>Definition at line <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html#l00366">366</a> of file <a class="el" href="../../dd/dc3/TrackShowerIdFeatureTool_8h_source.html">TrackShowerIdFeatureTool.h</a>.</p>
 
 </div>
 </div>

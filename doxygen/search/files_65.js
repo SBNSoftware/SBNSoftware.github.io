@@ -146,8 +146,6 @@ var searchData=
   ['extractcafmetadata_2ecc',['extractCAFMetadata.cc',['../db/df9/extractCAFMetadata_8cc.html',1,'']]],
   ['extractenergydepositionsummary_5fmodule_2ecc',['ExtractEnergyDepositionSummary_module.cc',['../d9/d11/ExtractEnergyDepositionSummary__module_8cc.html',1,'']]],
   ['extractmaxgeometryelements_2eh',['extractMaxGeometryElements.h',['../d6/dd4/extractMaxGeometryElements_8h.html',1,'']]],
-  ['extratriggerinfo_2ecxx',['ExtraTriggerInfo.cxx',['../da/dbb/ExtraTriggerInfo_8cxx.html',1,'']]],
-  ['extratriggerinfo_2eh',['ExtraTriggerInfo.h',['../d4/d44/ExtraTriggerInfo_8h.html',1,'']]],
   ['extretriever_5fmodule_2ecc',['EXTRetriever_module.cc',['../dd/da1/EXTRetriever__module_8cc.html',1,'']]],
   ['iscalculationseparate_2eh',['ISCalculationSeparate.h',['../d5/d80/ElectronDrift_2ISCalculationSeparate_8h.html',1,'']]],
   ['prodsingle_5fbuildopticallibrary_2efcl',['prodsingle_buildopticallibrary.fcl',['../d5/d1b/EventGenerator_2prodsingle__buildopticallibrary_8fcl.html',1,'']]]

@@ -1,9 +1,10 @@
 var searchData=
 [
   ['facelist',['FaceList',['../db/d08/namespacedcel2d.html#abca134151d97d0d6feb0ecfbec64e165',1,'dcel2d']]],
-  ['factory_5ft',['Factory_t',['../d4/d45/classlarg4_1_1AllPhysicsLists.html#ad480cdedc4dc962822cf86ae5930f8f4',1,'larg4::AllPhysicsLists']]],
+  ['factory_5ft',['Factory_t',['../df/de3/classopdet_1_1factory_1_1AlgorithmFactory.html#a4535654f0ab5e092a4a9af6d3fc91ba3',1,'opdet::factory::AlgorithmFactory::Factory_t()'],['../d4/d45/classlarg4_1_1AllPhysicsLists.html#ad480cdedc4dc962822cf86ae5930f8f4',1,'larg4::AllPhysicsLists::Factory_t()']]],
   ['featureinfovector',['FeatureInfoVector',['../d3/d4e/classlar__content_1_1SupportVectorMachine.html#afbabeac5bb3c00511ef35a02565ca436',1,'lar_content::SupportVectorMachine']]],
   ['featurelistvector',['FeatureListVector',['../d9/dfe/classlar__content_1_1TrainedVertexSelectionAlgorithm.html#a8eb4be3b747607284e6b0704c916f768',1,'lar_content::TrainedVertexSelectionAlgorithm']]],
+  ['featuretoolmap',['FeatureToolMap',['../d7/d3b/classlar__content_1_1MvaFeatureTool.html#adead82a59e6d458f9ff77f2b2f158f46',1,'lar_content::MvaFeatureTool']]],
   ['featuretoolvector',['FeatureToolVector',['../d7/d3b/classlar__content_1_1MvaFeatureTool.html#a1f0b998f4b8b422ec16749e9c4e9b485',1,'lar_content::MvaFeatureTool']]],
   ['femtocoulomb',['femtocoulomb',['../d3/d63/namespaceutil_1_1quantities.html#ac8278d13894ef7235af54fa659a907c9',1,'util::quantities']]],
   ['femtocoulomb_5fas',['femtocoulomb_as',['../d3/d63/namespaceutil_1_1quantities.html#a44773cdfba5fb8b5959abef2683627b3',1,'util::quantities']]],
@@ -52,5 +53,6 @@ var searchData=
   ['function_5ft',['Function_t',['../db/d73/classutil_1_1SampledFunction.html#aaa982de9c5e939534ba1ba7b47a8dbc0',1,'util::SampledFunction::Function_t()'],['../dd/d7c/classlar_1_1util_1_1ChiSquareAccumulator.html#ae018ae5575746650a7f122eed2def438',1,'lar::util::ChiSquareAccumulator::Function_t()']]],
   ['functions_5ft',['Functions_t',['../df/db1/classphot_1_1IPhotonLibrary.html#a7321c2a354fd47e926c9e06957e2542f',1,'phot::IPhotonLibrary']]],
   ['fvecdescription',['FVecDescription',['../d2/d6d/namespaceanab.html#a1c2b6cb47d93e0f17e1652cba51145de',1,'anab']]],
-  ['fvector_5fid',['FVector_ID',['../d2/d6d/namespaceanab.html#a0f4c64e9b128a950310274426e75ed08',1,'anab']]]
+  ['fvector_5fid',['FVector_ID',['../d2/d6d/namespaceanab.html#a0f4c64e9b128a950310274426e75ed08',1,'anab']]],
+  ['fwinterfacedpedalgo',['FWInterfacedPedAlgo',['../dc/df0/classopdet_1_1ICARUSOpHitFinder.html#a579a35fe7d26c9c24160407df23423ee',1,'opdet::ICARUSOpHitFinder']]]
 ];

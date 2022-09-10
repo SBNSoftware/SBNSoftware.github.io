@@ -141,52 +141,53 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a>:               0</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Correction3D:        1.</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    TimeScaleFactor:     1.</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    FieldResponse:       @<a class="code" href="../../da/d2d/signalservices__icarus_8fcl.html#a47927c025fa6440d45945c37667e71d2">local::FieldResponseTool</a></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ElectronicsResponse: @local::ElectronicsResponseBesselApproxTool</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Filter:              @local::FilterTool</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;icarus_signalshapingservice:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    PlaneForNormalization: 2</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    PrintResponses:        <span class="stringliteral">&quot;false&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    DeconNorm:             1.</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    InitialFFTSize:        4096</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">                           # Setting the default scaling as per Justin Mueller study (3/17/22)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span>    <a class="code" href="../../de/dec/sbnworkshop__detsim__icarus_8fcl.html#ac74be7d1954bb1dc612422a4b35ed31e">NoiseFactVec</a>:          [ [ 1.151, 1.151, 1.151, 1.151 ], [ 1.152, 1.152, 1.152, 1.152], [ 1.096, 1.096, 1.096, 1.096 ] ]</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../da/d2d/signalservices__icarus_8fcl.html#af00ec9c32bbd32efce2528194a6578af">StoreHistograms</a>:       <span class="keyword">true</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ResponseTools:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        ResponsePlane0: @local::ResponseTool</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        ResponsePlane1: @local::ResponseTool</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ResponsePlane2: @local::ResponseTool</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.Plane:                       0</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.FieldResponse.Plane:         0</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.FieldResponse.SignalType:    0</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.ElectronicsResponse.Plane:   0</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.Filter.Plane:                0</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.Plane:                       1</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.Plane:         1</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.ResponseType:  1</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.SignalType:    0</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.ElectronicsResponse.Plane:   1</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.Filter.Plane:                1</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Plane:                       2</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.Plane:         2</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.ResponseType:  2</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.SignalType:    1</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.ElectronicsResponse.Plane:   2</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.Plane:                2</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.FilterFunction:       <span class="stringliteral">&quot;(x&gt;0.0) ? gaus(0) : 0.0&quot;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.FilterParametersVec:  [ 1., 0.0, 100. ]</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    UseEmpiricalOffsets: <span class="keyword">true</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    FieldResponse:       @<a class="code" href="../../da/d2d/signalservices__icarus_8fcl.html#a47927c025fa6440d45945c37667e71d2">local::FieldResponseTool</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ElectronicsResponse: @local::ElectronicsResponseBesselApproxTool</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Filter:              @local::FilterTool</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;icarus_signalshapingservice:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    PlaneForNormalization: 2</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    PrintResponses:        <span class="stringliteral">&quot;false&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    DeconNorm:             1.</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    InitialFFTSize:        4096</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">                           # Setting the default scaling as per Justin Mueller study (3/17/22)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>    <a class="code" href="../../de/dec/sbnworkshop__detsim__icarus_8fcl.html#ac74be7d1954bb1dc612422a4b35ed31e">NoiseFactVec</a>:          [ [ 1.151, 1.151, 1.151, 1.151 ], [ 1.152, 1.152, 1.152, 1.152], [ 1.096, 1.096, 1.096, 1.096 ] ]</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../da/d2d/signalservices__icarus_8fcl.html#af00ec9c32bbd32efce2528194a6578af">StoreHistograms</a>:       <span class="keyword">true</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ResponseTools:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        ResponsePlane0: @local::ResponseTool</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ResponsePlane1: @local::ResponseTool</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ResponsePlane2: @local::ResponseTool</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.Plane:                       0</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.FieldResponse.Plane:         0</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.FieldResponse.SignalType:    0</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.ElectronicsResponse.Plane:   0</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane0.Filter.Plane:                0</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.Plane:                       1</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.Plane:         1</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.ResponseType:  1</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.FieldResponse.SignalType:    0</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.ElectronicsResponse.Plane:   1</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane1.Filter.Plane:                1</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Plane:                       2</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.Plane:         2</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.ResponseType:  2</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.FieldResponse.SignalType:    1</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.ElectronicsResponse.Plane:   2</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.Plane:                2</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.FilterFunction:       <span class="stringliteral">&quot;(x&gt;0.0) ? gaus(0) : 0.0&quot;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;icarus_signalshapingservice.ResponseTools.ResponsePlane2.Filter.FilterParametersVec:  [ 1., 0.0, 100. ]</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;END_PROLOG</div>
 <div class="ttc" id="rawdigitfilter__icarus_8fcl_html_aa2b9cfdf9a8f294302be0cdf6affea22"><div class="ttname"><a href="../../d6/d5e/rawdigitfilter__icarus_8fcl.html#aa2b9cfdf9a8f294302be0cdf6affea22">Plane</a></div><div class="ttdeci">BEGIN_PROLOG true icarus_rawdigitfilter FilterTools FilterPlane1 Plane</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d5e/rawdigitfilter__icarus_8fcl_source.html#l00008">rawdigitfilter_icarus.fcl:8</a></div></div>
 <div class="ttc" id="signalservices__icarus_8fcl_html_af00ec9c32bbd32efce2528194a6578af"><div class="ttname"><a href="../../da/d2d/signalservices__icarus_8fcl.html#af00ec9c32bbd32efce2528194a6578af">StoreHistograms</a></div><div class="ttdeci">BEGIN_PROLOG from electronics tests it was from electronics tests it was StoreHistograms</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2d/signalservices__icarus_8fcl_source.html#l00021">signalservices_icarus.fcl:21</a></div></div>
 <div class="ttc" id="signalservices__icarus_8fcl_html_a47927c025fa6440d45945c37667e71d2"><div class="ttname"><a href="../../da/d2d/signalservices__icarus_8fcl.html#a47927c025fa6440d45945c37667e71d2">FieldResponseTool</a></div><div class="ttdeci">BEGIN_PROLOG FieldResponseTool</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2d/signalservices__icarus_8fcl_source.html#l00021">signalservices_icarus.fcl:21</a></div></div>

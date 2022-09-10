@@ -49,6 +49,7 @@ var searchData=
   ['distance_5ft',['Distance_t',['../de/d37/structgeo_1_1DecomposedVector.html#a2eb2a591464f10b45952ddf6db57a3ef',1,'geo::DecomposedVector::Distance_t()'],['../d9/d2f/classgeo_1_1PlaneDecomposer.html#a1601f4649c5a103906313767361a6fc2',1,'geo::PlaneDecomposer::Distance_t()'],['../dc/d13/classgeo_1_1Decomposer.html#a6bfb2308965189baacdd0a4b286e74b6',1,'geo::Decomposer::Distance_t()']]],
   ['distancesmap_5ft',['DistancesMap_t',['../da/d0d/classcluster_1_1HoughTransform.html#a89ea6610429318f1bf8e42f04277d193',1,'cluster::HoughTransform']]],
   ['double_5ffwd_5fconst_5fiterator',['double_fwd_const_iterator',['../d7/d0b/namespacelar.html#a9f9aff77c24b49f57d31bcd94131a3da',1,'lar']]],
+  ['doublemap',['DoubleMap',['../d1/d13/classlar__content_1_1LArMvaHelper.html#af1577b734cfe9c9f3afff8ca787ba76f',1,'lar_content::LArMvaHelper']]],
   ['doublevec',['DoubleVec',['../d8/d00/SignalShapingICARUSService__service_8h.html#af05052033891e9ae9e05566258d1347e',1,'DoubleVec():&#160;SignalShapingICARUSService_service.h'],['../d8/d50/SignalShapingServiceSBND_8h.html#af05052033891e9ae9e05566258d1347e',1,'DoubleVec():&#160;SignalShapingServiceSBND.h']]],
   ['doublevec2',['DoubleVec2',['../d8/d00/SignalShapingICARUSService__service_8h.html#a18931727a50cc59316bf2b197ee6f139',1,'SignalShapingICARUSService_service.h']]],
   ['doublevector',['DoubleVector',['../d7/d15/classutil_1_1LArFFTW.html#a5d8b50ab4a9cf5112202b1566a84a9a8',1,'util::LArFFTW']]],

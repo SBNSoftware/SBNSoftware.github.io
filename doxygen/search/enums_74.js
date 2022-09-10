@@ -14,8 +14,8 @@ var searchData=
   ['tracktype_5ft',['TrackType_t',['../d3/df2/structproxy_1_1Tracks.html#a508bf6f34ff7eca2362e2f0777e8b2e0',1,'proxy::Tracks']]],
   ['transversedirection',['TransverseDirection',['../db/de7/namespacelar__content.html#a3585faad7098258631416880b5fb9efe',1,'lar_content']]],
   ['triggergateeventtype',['TriggerGateEventType',['../dc/d4a/namespaceicarus_1_1trigger_1_1details.html#a2d50d2927e5d82d3eb11f7a3b613e8f1',1,'icarus::trigger::details']]],
-  ['triggerlocation',['triggerLocation',['../de/d90/namespacesbn_1_1bits.html#aac4b8236c5c8ff26ead5ec05aa083aff',1,'sbn::bits']]],
-  ['triggersource',['triggerSource',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7',1,'sbn::bits']]],
-  ['triggertype',['triggerType',['../de/d90/namespacesbn_1_1bits.html#a3aa56afbd0c41e891f23184430b636ca',1,'sbn::bits']]],
-  ['triggerwindowmode',['triggerWindowMode',['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bd',1,'sbn::bits']]]
+  ['triggerlocation',['triggerLocation',['../de/d90/namespacesbn_1_1bits.html#aac4b8236c5c8ff26ead5ec05aa083aff',1,'sbn::bits::triggerLocation()'],['../de/d90/namespacesbn_1_1bits.html#aac4b8236c5c8ff26ead5ec05aa083aff',1,'sbn::bits::triggerLocation()']]],
+  ['triggersource',['triggerSource',['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7',1,'sbn::bits::triggerSource()'],['../de/d90/namespacesbn_1_1bits.html#a75de4e8e9acdc3cc9566cf28c92420e7',1,'sbn::bits::triggerSource()']]],
+  ['triggertype',['triggerType',['../de/d90/namespacesbn_1_1bits.html#a3aa56afbd0c41e891f23184430b636ca',1,'sbn::bits::triggerType()'],['../de/d90/namespacesbn_1_1bits.html#a3aa56afbd0c41e891f23184430b636ca',1,'sbn::bits::triggerType()']]],
+  ['triggerwindowmode',['triggerWindowMode',['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bd',1,'sbn::bits::triggerWindowMode()'],['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bd',1,'sbn::bits::triggerWindowMode()']]]
 ];

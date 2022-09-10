@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d0/ddd/clustermodules_8fcl.html#a2fbcaf8cf855f1db2e64e303a60eb948">standard_trajcluster</a>:</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  module_type:          <span class="stringliteral">&quot;TrajCluster&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:          <span class="stringliteral">&quot;TrajCluster&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  TrajClusterAlg:       @<a class="code" href="../../d6/d69/clusteralgorithms_8fcl.html#a4cd5a6f6757aafb6befdb1429a8163f8">local::standard_trajclusteralg</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">  # don&#39;t recosntruct a slice if it has more than MaxSliceHits</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span>  MaxSliceHits:     50000</div>
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;standard_blurredcluster:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; module_type:              <span class="stringliteral">&quot;BlurredClustering&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;BlurredClustering&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; CreateDebugPDF:           <span class="keyword">false</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; MergeClusters:            <span class="keyword">false</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; GlobalTPCRecon:           <span class="keyword">true</span></div>
@@ -116,21 +116,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;standard_clusterpca:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; module_type:        <span class="stringliteral">&quot;ClusterPCA&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:        <span class="stringliteral">&quot;ClusterPCA&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; ClusterModuleLabel: <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; NormPC:             <span class="keyword">true</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;standard_dbcluster:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; module_type:     <span class="stringliteral">&quot;DBcluster&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:     <span class="stringliteral">&quot;DBcluster&quot;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; HitsModuleLabel: <span class="stringliteral">&quot;ffthit&quot;</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; DBScanAlg:       @local::standard_dbscanalg</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;standard_dbcluster3d:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; module_type:                 <span class="stringliteral">&quot;DBCluster3D&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:                 <span class="stringliteral">&quot;DBCluster3D&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; HitModuleLabel:              <span class="stringliteral">&quot;hitpdune&quot;</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; SpacePointModuleLabel:       <span class="stringliteral">&quot;reco3d&quot;</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; SPHitAssnLabel:              <span class="stringliteral">&quot;hitpdune&quot;</span></div>
@@ -140,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;standard_clustercrawler:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; module_type:         <span class="stringliteral">&quot;ClusterCrawler&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:         <span class="stringliteral">&quot;ClusterCrawler&quot;</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; ClusterCrawlerAlg:   @local::standard_clustercrawleralg</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; CCHitFinderAlg:      @<a class="code" href="../../d2/dde/hitalgorithms_8fcl.html#a175d2c51278104c1ae4e274569018e2c">local::standard_cchitfinderalg</a></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;standard_linecluster:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"># this is the cluster finding component of former ClusterCrawler</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  module_type:          <span class="stringliteral">&quot;LineCluster&quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:          <span class="stringliteral">&quot;LineCluster&quot;</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  HitFinderModuleLabel: <span class="stringliteral">&quot;gaushit&quot;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  DoWireAssns: <span class="keyword">true</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  DoRawDigitAssns: <span class="keyword">false</span></div>
@@ -159,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;standard_simplelinecluster:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"># this is the cluster finding component of former ClusterCrawler</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span>  module_type:          <span class="stringliteral">&quot;SimpleLineCluster&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span>  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:          <span class="stringliteral">&quot;SimpleLineCluster&quot;</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  HitFinderModuleLabel: <span class="stringliteral">&quot;hitpdune&quot;</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  PFParticleModuleLabel: <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  ClusterCrawlerAlg:    @local::standard_clustercrawleralg</div>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;standard_fuzzycluster:</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; module_type:     <span class="stringliteral">&quot;fuzzyCluster&quot;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:     <span class="stringliteral">&quot;fuzzyCluster&quot;</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; HitsModuleLabel: <span class="stringliteral">&quot;gaushit&quot;</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; HoughSeed:       10      # The <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a537aff40b0357c762e7a73089a239679">user</a> supplied <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl.html#a94c01634bb7c0870a044209a4ca30a50">generator</a> uses <span class="keywordflow">for</span> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">                         # Hough transform, if it is zero a seed is randomly created</span></div>
@@ -176,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;standard_cluster3d:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  module_type:            <span class="stringliteral">&quot;Cluster3D&quot;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:            <span class="stringliteral">&quot;Cluster3D&quot;</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  HitFinderModuleLabel:   <span class="stringliteral">&quot;gaushit&quot;</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  EnableMonitoring:       <span class="keyword">false</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  EnableProduction:       <span class="keyword">false</span></div>
@@ -194,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;standard_clustertrackana:</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  module_type:              <span class="stringliteral">&quot;ClusterTrackAna&quot;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;ClusterTrackAna&quot;</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  HitModuleLabel:           <span class="stringliteral">&quot;gaushit&quot;</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  ClusterModuleLabel:       <span class="stringliteral">&quot;trajcluster&quot;</span>   # specify <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#afac1ac7b61385644c993fbb774a1922f">cluster</a> collection</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>:         <span class="stringliteral">&quot;NA&quot;</span> # OR specify <a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a> <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a> collection</div>
@@ -207,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;standard_clusterana:</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; module_type:              <span class="stringliteral">&quot;ClusterAna&quot;</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;ClusterAna&quot;</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; HitsModuleLabel:          <span class="stringliteral">&quot;cccluster&quot;</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; ClusterModuleLabel:       <span class="stringliteral">&quot;cccluster&quot;</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; <a class="code" href="../../d5/da4/standard__anatree__sbnd_8fcl.html#aa602cf5688072693845e24f7711675b8">VertexModuleLabel</a>:        <span class="stringliteral">&quot;cccluster&quot;</span></div>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;standard_clusteringvalidation:</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; module_type:        <span class="stringliteral">&quot;ClusteringValidation&quot;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:        <span class="stringliteral">&quot;ClusteringValidation&quot;</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; MinHitsInPlane:     0</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; HitsModuleLabel:    <span class="stringliteral">&quot;dcheat&quot;</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; ClusterModuleLabel: [ <span class="stringliteral">&quot;dbcluster&quot;</span>, <span class="stringliteral">&quot;blurredclustering&quot;</span> ]</div>
@@ -232,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;standard_dbclusterana:</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; module_type:              <span class="stringliteral">&quot;DBclusterAna&quot;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;DBclusterAna&quot;</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; <a class="code" href="../../d2/d80/june18__reco__icarus_8fcl.html#a26b28a8e6bda9e1b50e27cf53610f69a">DigitModuleLabel</a>:         <span class="stringliteral">&quot;daq&quot;</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; HitsModuleLabel:          <span class="stringliteral">&quot;ffthit&quot;</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; LArGeantModuleLabel:      <span class="stringliteral">&quot;largeant&quot;</span></div>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;standard_houghlinefinder:</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; module_type:          <span class="stringliteral">&quot;HoughLineFinder&quot;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:          <span class="stringliteral">&quot;HoughLineFinder&quot;</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; DBScanModuleLabel:    <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; HoughSeed:       0      # The <a class="code" href="../../d4/d43/namespacechannelDBConverter.html#a537aff40b0357c762e7a73089a239679">user</a> supplied <a class="code" href="../../d5/d56/NeutronOsc__module_8cc.html#ae21f357c223957d36046a0d71cc6aed7">seed</a> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a> <a class="code" href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl.html#a94c01634bb7c0870a044209a4ca30a50">generator</a> uses <span class="keywordflow">for</span> <a class="code" href="../../de/ddc/generate__icarus__geometry__splitwire_8pl.html#a09c6b60bb7451f9136e25140ffdff6bd">the</a></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">                         # Hough transform, if it is zero a seed is randomly created</span></div>
@@ -262,7 +262,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;standard_houghlinefinderana:</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; module_type:         <span class="stringliteral">&quot;HoughLineFinderAna&quot;</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:         <span class="stringliteral">&quot;HoughLineFinderAna&quot;</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; <a class="code" href="../../d2/d80/june18__reco__icarus_8fcl.html#a26b28a8e6bda9e1b50e27cf53610f69a">DigitModuleLabel</a>:    <span class="stringliteral">&quot;wiresim&quot;</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; HitsModuleLabel:     <span class="stringliteral">&quot;ffthit&quot;</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; DBScanModuleLabel:   <span class="stringliteral">&quot;fuzzycluster&quot;</span></div>
@@ -271,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;standard_linemerger:</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; module_type:        <span class="stringliteral">&quot;LineMerger&quot;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:        <span class="stringliteral">&quot;LineMerger&quot;</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; ClusterModuleLabel: <span class="stringliteral">&quot;hough&quot;</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; Slope:              0.35</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; EndpointWindow:     50.</div>
@@ -279,21 +279,21 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;standard_endpointmod:</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; module_type:       <span class="stringliteral">&quot;EndPointModule&quot;</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:       <span class="stringliteral">&quot;EndPointModule&quot;</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; DBScanModuleLabel: <span class="stringliteral">&quot;fuzzycluster&quot;</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; EndPointAlg:       @local::standard_endpointalg</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;standard_kingacluster:</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; module_type:          <span class="stringliteral">&quot;KingaCluster&quot;</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:          <span class="stringliteral">&quot;KingaCluster&quot;</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; DBScanModuleLabel:    <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; EndPoint2DModuleLabel: <span class="stringliteral">&quot;vertex2d&quot;</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;standard_kingaclusterana:</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;{</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; module_type:               <span class="stringliteral">&quot;KingaClusterAna&quot;</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:               <span class="stringliteral">&quot;KingaClusterAna&quot;</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; LineMergerModuleLabel:     <span class="stringliteral">&quot;linemerger&quot;</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; EndPoint2DModuleLabel:     <span class="stringliteral">&quot;vertex2d&quot;</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; ClusterCheaterModuleLabel: <span class="stringliteral">&quot;cluster&quot;</span></div>
@@ -304,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;standard_showeranglecluster:</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; module_type:              <span class="stringliteral">&quot;ShowerAngleCluster&quot;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;ShowerAngleCluster&quot;</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; ClusterModuleLabel:       <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; ClusterParamsAlg:         @local::standard_clusterparamsalg</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; ClusterMatchAlg:          @<a class="code" href="../../d5/d75/clustermatchalg_8fcl.html#a4a86f358456ec22943f77cc3705b4e1a">local::standard_clustermatchalg</a></div>
@@ -316,7 +316,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;standard_showerangleclusterana:</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; module_type:              <span class="stringliteral">&quot;ShowerAngleClusterAna&quot;</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:              <span class="stringliteral">&quot;ShowerAngleClusterAna&quot;</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; ClusterModuleLabel:       <span class="stringliteral">&quot;dbcluster&quot;</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; ClusterParamsAlg:         @local::standard_clusterparamsalg</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; ExternalStartPoints:      <span class="keyword">false</span></div>
@@ -325,14 +325,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;standard_simpleclustermerger:</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; module_type:       <span class="stringliteral">&quot;SimpleClusterMerger&quot;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:       <span class="stringliteral">&quot;SimpleClusterMerger&quot;</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; InputClusterLabel: <span class="stringliteral">&quot;fuzzycluster&quot;</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;standard_fuzzyclustermerger:</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; module_type:       <span class="stringliteral">&quot;FuzzyClusterMerger&quot;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:       <span class="stringliteral">&quot;FuzzyClusterMerger&quot;</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; InputClusterLabel: <span class="stringliteral">&quot;fuzzycluster&quot;</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; TSep1UseEP:  <span class="keyword">true</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; OOCS1MaxAngle:   20.     # OutOfConeSeparate 1st <a class="code" href="../../d0/d8f/runFilesFromSAM_8sh.html#ad7668fe49909e0598d75380816eba577">stage</a></div>
@@ -377,7 +377,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;standard_smallclusterfinder:</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;{</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; module_type:                   <span class="stringliteral">&quot;SmallClusterFinder&quot;</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:                   <span class="stringliteral">&quot;SmallClusterFinder&quot;</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; HitFinderModuleLabel:  <span class="stringliteral">&quot;hitfinder&quot;</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; smallClustAlg:                 @local::standard_smallclustalg</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; <a class="code" href="../../d1/d44/simtestpulse__ICARUS_8fcl.html#a150692f4ab9b45eecdfd314958e8dbb4">Verbose</a>:                               <span class="keyword">false</span></div>
@@ -386,7 +386,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;standard_clustercheater:</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; module_type:           <span class="stringliteral">&quot;ClusterCheater&quot;</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:           <span class="stringliteral">&quot;ClusterCheater&quot;</span></div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; MCGeneratorLabel:      <span class="stringliteral">&quot;generator&quot;</span>    #needed <span class="keywordflow">for</span> MC <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#a2e91c077dea2ff30aae790c67de81ea2">vertex</a> extraction</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; HitModuleLabel:        <span class="stringliteral">&quot;hit&quot;</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; G4ModuleLabel:         <span class="stringliteral">&quot;largeant&quot;</span></div>
@@ -473,6 +473,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="ttc" id="clustermodules_8fcl_html_aca7ba24f041770fd089fe632493453bc"><div class="ttname"><a href="../../d0/ddd/clustermodules_8fcl.html#aca7ba24f041770fd089fe632493453bc">PionKERange</a></div><div class="ttdeci">BEGIN_PROLOG SN SingleParticle PionKERange</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/clustermodules_8fcl_source.html#l00121">clustermodules.fcl:121</a></div></div>
 <div class="ttc" id="sbnworkshop__reco__icarus_8fcl_html_a4f258bc9e5f2df88c239ca928b4842d4"><div class="ttname"><a href="../../d1/d94/sbnworkshop__reco__icarus_8fcl.html#a4f258bc9e5f2df88c239ca928b4842d4">CalDataModuleLabel</a></div><div class="ttdeci">BEGIN_PROLOG gaushit pmAlgKalmanTrack sequence::icarus_reco_mcreco icarus_reco_producers rawdigitfilter icarus_reco_producers recowire icarus_reco_producers recowire icarus_reco_producers gaushit CalDataModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d94/sbnworkshop__reco__icarus_8fcl_source.html#l00062">sbnworkshop_reco_icarus.fcl:62</a></div></div>
 <div class="ttc" id="clusteralgorithms_8fcl_html_a51165ebba57f0e490a58c18ac111a4c9"><div class="ttname"><a href="../../d6/d69/clusteralgorithms_8fcl.html#a51165ebba57f0e490a58c18ac111a4c9">MinHits</a></div><div class="ttdeci">BEGIN_PROLOG Ave chg rms MinHits</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/clusteralgorithms_8fcl_source.html#l00009">clusteralgorithms.fcl:9</a></div></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_af6fd81da63f288d64ee6a74fec800bc6"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 module_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="run__job_8sh_html_aa029bfbc855c3791b60370435d2fb274"><div class="ttname"><a href="../../d0/d18/run__job_8sh.html#aa029bfbc855c3791b60370435d2fb274">job</a></div><div class="ttdeci">esac voms proxy info all source grid fermiapp products common etc setups sh source cvmfs oasis opensciencegrid org fermilab products larsoft setup setup ifdhc echo Here is the your environment in this job</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d18/run__job_8sh_source.html#l00029">run_job.sh:29</a></div></div>
 <div class="ttc" id="quiet__Math__Functor__test_8sh_html_adfac98fbd1e85554d2cf0454cdcbc717"><div class="ttname"><a href="../../d2/df7/quiet__Math__Functor__test_8sh.html#adfac98fbd1e85554d2cf0454cdcbc717">in</a></div><div class="ttdeci">if &amp;&amp;[-z&quot;$BASH_VERSION&quot;] then echo Attempting to switch to bash bash shellSwitch exit fi &amp;&amp;[&quot;$1&quot;= 'shellSwitch'] shift declare a IncludeDirectives for Dir in</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df7/quiet__Math__Functor__test_8sh_source.html#l00023">quiet_Math_Functor_test.sh:23</a></div></div>
 <div class="ttc" id="clusteralgorithms_8fcl_html_aa2257871f9d6125799fe58a94b757681"><div class="ttname"><a href="../../d6/d69/clusteralgorithms_8fcl.html#aa2257871f9d6125799fe58a94b757681">HoughBaseAlg</a></div><div class="ttdeci">standard_dbscan3dalg useful for diagnostics hits not in a line will not be clustered HoughBaseAlg</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d69/clusteralgorithms_8fcl_source.html#l00253">clusteralgorithms.fcl:253</a></div></div>

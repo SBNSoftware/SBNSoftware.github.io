@@ -735,18 +735,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="../../d5/d13/CandHitICARUS__tool_8cc_source.html#l00337">337</a> of file <a class="el" href="../../d5/d13/CandHitICARUS__tool_8cc_source.html">CandHitICARUS_tool.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">// Need a minimum number of ticks to do any work here</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">if</span> (std::distance(startItr,stopItr) &gt; 4)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,stopItr) &gt; 4)</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    {</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">// Find the highest peak in the range given</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keyword">auto</span> maxItr = std::max_element(startItr, stopItr);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordtype">float</span> maxValue = *maxItr;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordtype">int</span>   maxTime  = std::distance(startItr,maxItr);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordtype">int</span>   maxTime  = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,maxItr);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">if</span> (maxValue &gt; roiThreshold)</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        {</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="comment">// backwards to find first bin for this candidate hit</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keyword">auto</span> firstItr = std::distance(startItr,maxItr) &gt; 2 ? maxItr - 1 : startItr;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="keyword">auto</span> firstItr = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,maxItr) &gt; 2 ? maxItr - 1 : startItr;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">while</span>(firstItr != startItr)</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            {</div>
@@ -759,13 +759,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                firstItr--;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            }</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordtype">int</span> firstTime = std::distance(startItr,firstItr);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordtype">int</span> firstTime = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,firstItr);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="comment">// Recursive call to find all candidate hits earlier than this peak</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <a class="code" href="../../d3/dc3/classreco__tool_1_1CandHitICARUS.html#ad954e3b7dcf1e7162476fb875f9a3855">findHitCandidates</a>(startItr, firstItr + 1, roiStartTick, roiThreshold, hitCandidateVec);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            <span class="comment">// forwards to find last bin for this candidate hit</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keyword">auto</span> lastItr = std::distance(maxItr,stopItr) &gt; 2 ? maxItr + 1 : stopItr - 1;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keyword">auto</span> lastItr = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(maxItr,stopItr) &gt; 2 ? maxItr + 1 : stopItr - 1;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordflow">while</span>(lastItr != stopItr - 1)</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            {</div>
@@ -778,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                lastItr++;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordtype">int</span> lastTime = std::distance(startItr,lastItr);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordtype">int</span> lastTime = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,lastItr);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <span class="comment">// Now save this candidate&#39;s start and max time info</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            HitCandidate hitCandidate;</div>
@@ -795,12 +795,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            hitCandidateVec.push_back(hitCandidate);</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="comment">// Recursive call to find all candidate hits later than this peak</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <a class="code" href="../../d3/dc3/classreco__tool_1_1CandHitICARUS.html#ad954e3b7dcf1e7162476fb875f9a3855">findHitCandidates</a>(lastItr + 1, stopItr, roiStartTick + std::distance(startItr,lastItr + 1), roiThreshold, hitCandidateVec);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <a class="code" href="../../d3/dc3/classreco__tool_1_1CandHitICARUS.html#ad954e3b7dcf1e7162476fb875f9a3855">findHitCandidates</a>(lastItr + 1, stopItr, roiStartTick + <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(startItr,lastItr + 1), roiThreshold, hitCandidateVec);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        }</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="classreco__tool_1_1CandHitICARUS_html_ad954e3b7dcf1e7162476fb875f9a3855"><div class="ttname"><a href="../../d3/dc3/classreco__tool_1_1CandHitICARUS.html#ad954e3b7dcf1e7162476fb875f9a3855">reco_tool::CandHitICARUS::findHitCandidates</a></div><div class="ttdeci">void findHitCandidates(const recob::Wire::RegionsOfInterest_t::datarange_t &amp;, size_t, size_t, size_t, HitCandidateVec &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d13/CandHitICARUS__tool_8cc_source.html#l00095">CandHitICARUS_tool.cc:95</a></div></div>
 </div><!-- fragment -->
 </div>

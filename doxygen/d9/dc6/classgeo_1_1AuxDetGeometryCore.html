@@ -386,7 +386,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a constant reference to the specified auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000012">Todo:</a></b></dt><dd><p class="startdd">what happens if it does not exist? </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000015">Todo:</a></b></dt><dd><p class="startdd">what happens if it does not exist? </p>
 <p class="enddd">remove the default parameter? </p>
 </dd></dl>
 
@@ -716,7 +716,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the detector, or UINT_MAX if no detector is there</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000013">Todo:</a></b></dt><dd>replace with numeric_limits&lt;&gt;? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000016">Todo:</a></b></dt><dd>replace with numeric_limits&lt;&gt;? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html#l00139">139</a> of file <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html">AuxDetGeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  {</div>
@@ -917,9 +917,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        (<a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#aaa5ebb6b69ade5052c8f9c6e5dde7150">fBuilderParameters</a>, { <span class="stringliteral">&quot;tool_type&quot;</span> })</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        ()</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      );</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> path{ gGeoManager-&gt;GetTopNode() };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d0/d14/classgeo_1_1GeoNodePath.html">geo::GeoNodePath</a> <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>{ gGeoManager-&gt;GetTopNode() };</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a0c7ab0869125c8cb2356221e10805c5c">AuxDets</a>() = builder.extractAuxiliaryDetectors(path);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a0c7ab0869125c8cb2356221e10805c5c">AuxDets</a>() = builder.extractAuxiliaryDetectors(<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#af11058915bbaf413d6c3485db87cf781">fGDMLfile</a> = gdmlfile;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a71ffdf6968ce324e84f5d798c4eab1bb">fROOTfile</a> = rootfile;</div>
@@ -929,6 +929,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                      &lt;&lt; <span class="stringliteral">&quot;\n\t&quot;</span> &lt;&lt; <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#af11058915bbaf413d6c3485db87cf781">fGDMLfile</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  } <span class="comment">// AuxDetGeometryCore::LoadGeometryFile()</span></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="classgeo_1_1AuxDetGeometryCore_html_a0c7ab0869125c8cb2356221e10805c5c"><div class="ttname"><a href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a0c7ab0869125c8cb2356221e10805c5c">geo::AuxDetGeometryCore::AuxDets</a></div><div class="ttdeci">AuxDetList_t &amp; AuxDets()</div><div class="ttdoc">Return the internal auxiliary detectors list. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d99/AuxDetGeometryCore_8h_source.html#l00305">AuxDetGeometryCore.h:305</a></div></div>
 <div class="ttc" id="classgeo_1_1AuxDetGeometryCore_html_aaa5ebb6b69ade5052c8f9c6e5dde7150"><div class="ttname"><a href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#aaa5ebb6b69ade5052c8f9c6e5dde7150">geo::AuxDetGeometryCore::fBuilderParameters</a></div><div class="ttdeci">fhicl::ParameterSet fBuilderParameters</div><div class="ttdoc">Configuration of geometry builder. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d99/AuxDetGeometryCore_8h_source.html#l00319">AuxDetGeometryCore.h:319</a></div></div>
 <div class="ttc" id="classgeo_1_1AuxDetGeometryCore_html_a71ffdf6968ce324e84f5d798c4eab1bb"><div class="ttname"><a href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a71ffdf6968ce324e84f5d798c4eab1bb">geo::AuxDetGeometryCore::fROOTfile</a></div><div class="ttdeci">std::string fROOTfile</div><div class="ttdoc">path to geometry file for geometry in GeometryCore </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d99/AuxDetGeometryCore_8h_source.html#l00318">AuxDetGeometryCore.h:318</a></div></div>
@@ -961,9 +962,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the number of auxiliary detectors. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000010">Todo:</a></b></dt><dd>use a AutDetID_t instead of unsigned int? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000013">Todo:</a></b></dt><dd>use a AutDetID_t instead of unsigned int? </dd></dl>
 <p>This method returns the total number of scintillator paddles (Auxiliary Detectors aka AuxDet) outside of the cryostat</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000011">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Todo:</a></b></dt><dd>Change return type to size_t </dd></dl>
 
 <p>Definition at line <a class="el" href="../../df/d99/AuxDetGeometryCore_8h_source.html#l00153">153</a> of file <a class="el" href="../../df/d99/AuxDetGeometryCore_8h_source.html">AuxDetGeometryCore.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d9/dc6/classgeo_1_1AuxDetGeometryCore.html#a0c7ab0869125c8cb2356221e10805c5c">AuxDets</a>().size(); }</div>
@@ -1101,7 +1102,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>constant reference to <a class="el" href="../../db/d4f/classgeo_1_1AuxDetGeo.html">AuxDetGeo</a> object of the auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000014">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000017">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html#l00145">145</a> of file <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html">AuxDetGeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  {</div>
@@ -1202,7 +1203,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to <a class="el" href="../../d5/df8/classgeo_1_1AuxDetSensitiveGeo.html">AuxDetSensitiveGeo</a> object of the auxiliary detector</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000015">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000018">Todo:</a></b></dt><dd>what happens if it does not exist? </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html#l00166">166</a> of file <a class="el" href="../../d0/dcd/AuxDetGeometryCore_8cxx_source.html">AuxDetGeometryCore.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  {</div>

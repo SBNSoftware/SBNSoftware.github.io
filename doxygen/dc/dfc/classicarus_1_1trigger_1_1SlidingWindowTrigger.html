@@ -239,7 +239,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 </ul>
 <p><em>Note</em>: when using <code>EnableOnlyWindows</code> or <code>DisableWindows</code> it may be useful to check the output of the module (at construction) to verify that the selected indices match the intended windows. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00212">212</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00213">213</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4e23e2e121879739293c66707bb03b83"></a>
 <div class="memitem">
@@ -251,7 +251,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00279">279</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00280">280</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Reconstituted trigger gate type internally used. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00312">312</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00313">313</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00308">308</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00309">309</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Definition of all windows. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00306">306</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00307">307</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -348,104 +348,105 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00402">402</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  : art::EDProducer(config)</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="comment">// configuration</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>(config().WindowSize())</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">fWindowStride</a></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    (<a class="code" href="../../da/d95/namespaceutil_1_1fhicl.html#a7a710f4f9eb8ce2c8206162757289de0">util::fhicl::getOptionalValue</a>(config().<a class="code" href="../../d7/d63/namespaceana.html#aaec9dac9c08319e29e474140cf8f0de2">Stride</a>).value_or(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>))</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a1b8e697f5ed690258732f743359d6139">defineWindows</a>())</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a975f6927da1c2322a56646ac1cb8a8be">makeEnabledWindowIndices</a>(</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;     <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size(),</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;     config().EnableOnlyWindows, config().DisableWindows</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;     ))</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>(config().ProduceWaveformAssns())</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>(config().LogCategory())</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="comment">// demand full PMT coverage only if no window was disabled:</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">fCombiner</a>(</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>, <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>),</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      config().MissingChannels(),</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#adad5e2b1d3049cbdacf7926c35c1b519">nDisabledWindows</a>() == 0U</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    )</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;{</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="comment">// more complex parameter parsing</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  std::string <span class="keyword">const</span> discrModuleLabel = config().TriggerGatesTag();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; threshold: config().<a class="code" href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl.html#a761fa70180817806779086b27954f099">Thresholds</a>())</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>[threshold] = art::InputTag{ discrModuleLabel, threshold };</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="comment">// configuration report (short)</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  {</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    mf::LogInfo log(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    log &lt;&lt;   <span class="stringliteral">&quot;Trigger configuration: &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size() &lt;&lt; <span class="stringliteral">&quot; windows&quot;</span>;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size() &lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size())</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot; (only &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size() &lt;&lt; <span class="stringliteral">&quot; enabled)&quot;</span>;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    log &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iWindow, window ]: <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>)) {</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;\n #&quot;</span> &lt;&lt; iWindow &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        &lt;&lt; <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#ae68b8345627418888c5e7ba544f5df8b">icarus::trigger::dumpTriggerWindowChannels</a>(window);</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">if</span> (std::find(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.begin(), <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.end(), iWindow)</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        == <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.end())</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      {</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot; (disabled)&quot;</span>;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;      }</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    } <span class="comment">// for</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    </div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    log &lt;&lt; <span class="stringliteral">&quot;\nConfigured &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>.size() &lt;&lt; <span class="stringliteral">&quot; thresholds (ADC):&quot;</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ threshold, dataTag ]: <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>)</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;\n * &quot;</span> &lt;&lt; threshold &lt;&lt; <span class="stringliteral">&quot; (from &#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;)&quot;</span>;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  } <span class="comment">// local block</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00403">403</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  : art::EDProducer(config)</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="comment">// configuration</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>(config().<a class="code" href="../../dc/da9/triggeremu__data__config__icarus_8fcl.html#a4ecb0f82a8e05fb2a1f6233fb9d61075">WindowSize</a>())</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">fWindowStride</a></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    (<a class="code" href="../../da/d95/namespaceutil_1_1fhicl.html#a7a710f4f9eb8ce2c8206162757289de0">util::fhicl::getOptionalValue</a>(config().<a class="code" href="../../d7/d63/namespaceana.html#aaec9dac9c08319e29e474140cf8f0de2">Stride</a>).value_or(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>))</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a1b8e697f5ed690258732f743359d6139">defineWindows</a>())</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a975f6927da1c2322a56646ac1cb8a8be">makeEnabledWindowIndices</a>(</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;     <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size(),</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;     config().EnableOnlyWindows, config().DisableWindows</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;     ))</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>(config().ProduceWaveformAssns())</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>(config().LogCategory())</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="comment">// demand full PMT coverage only if no window was disabled:</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  , <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">fCombiner</a>(</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <a class="code" href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>, <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>),</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      config().MissingChannels(),</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#adad5e2b1d3049cbdacf7926c35c1b519">nDisabledWindows</a>() == 0U</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    )</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;{</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="comment">// more complex parameter parsing</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  std::string <span class="keyword">const</span> discrModuleLabel = config().TriggerGatesTag();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; threshold: config().<a class="code" href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl.html#a761fa70180817806779086b27954f099">Thresholds</a>())</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>[threshold] = art::InputTag{ discrModuleLabel, threshold };</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="comment">// configuration report (short)</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    mf::LogInfo log(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    log &lt;&lt;   <span class="stringliteral">&quot;Trigger configuration: &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size() &lt;&lt; <span class="stringliteral">&quot; windows&quot;</span>;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size() &lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size())</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot; (only &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size() &lt;&lt; <span class="stringliteral">&quot; enabled)&quot;</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    log &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iWindow, window ]: <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>)) {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;\n #&quot;</span> &lt;&lt; iWindow &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        &lt;&lt; <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#ae68b8345627418888c5e7ba544f5df8b">icarus::trigger::dumpTriggerWindowChannels</a>(window);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <span class="keywordflow">if</span> (std::find(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.begin(), <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.end(), iWindow)</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        == <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.end())</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        log &lt;&lt; <span class="stringliteral">&quot; (disabled)&quot;</span>;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      }</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    } <span class="comment">// for</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    log &lt;&lt; <span class="stringliteral">&quot;\nConfigured &quot;</span> &lt;&lt; <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>.size() &lt;&lt; <span class="stringliteral">&quot; thresholds (ADC):&quot;</span>;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ threshold, dataTag ]: <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;\n * &quot;</span> &lt;&lt; threshold &lt;&lt; <span class="stringliteral">&quot; (from &#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;)&quot;</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  } <span class="comment">// local block</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>; <span class="comment">// for convenience</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <span class="comment">// input data declaration</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  <span class="keywordflow">for</span> (art::InputTag <span class="keyword">const</span>&amp; inputDataTag: <a class="code" href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a>(fADCthresholds)) {</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    consumes&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(inputDataTag);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    consumes&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      (inputDataTag);</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>; <span class="comment">// for convenience</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="comment">// input data declaration</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordflow">for</span> (art::InputTag <span class="keyword">const</span>&amp; inputDataTag: <a class="code" href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a>(fADCthresholds)) {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    consumes&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(inputDataTag);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    consumes&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      (inputDataTag);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  } <span class="comment">// for</span></div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="comment">// output data declaration</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">for</span> (art::InputTag <span class="keyword">const</span>&amp; inputDataTag: <a class="code" href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a>(fADCthresholds)) {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    produces&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(inputDataTag.instance());</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    produces&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;      (inputDataTag.instance());</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>) {</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;      produces&lt;art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt;&gt;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        (inputDataTag.instance());</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    }</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::SlidingWindowTrigger()</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="comment">// output data declaration</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keywordflow">for</span> (art::InputTag <span class="keyword">const</span>&amp; inputDataTag: <a class="code" href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a>(fADCthresholds)) {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    produces&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(inputDataTag.instance());</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    produces&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;      (inputDataTag.instance());</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>) {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;      produces&lt;art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt;&gt;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        (inputDataTag.instance());</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  } <span class="comment">// for</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  </div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::SlidingWindowTrigger()</span></div>
 <div class="ttc" id="triggersim__eastmodule__icarus__data_8fcl_html_a761fa70180817806779086b27954f099"><div class="ttname"><a href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl.html#a761fa70180817806779086b27954f099">Thresholds</a></div><div class="ttdeci">BEGIN_PROLOG BeamGateDuration pmtthr physics producers trigtilewindowORS Thresholds</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl_source.html#l00124">triggersim_eastmodule_icarus_data.fcl:124</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afec33ae0e28cce09fcaafdbbad5c0d73"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">icarus::trigger::SlidingWindowTrigger::fEnabledWindows</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; const fEnabledWindows</div><div class="ttdoc">List of windows to be included. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00326">SlidingWindowTrigger_module.cc:326</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a731b9f8deb4255ba7c51ffb9ebe36019"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">icarus::trigger::SlidingWindowTrigger::fWindowChannels</a></div><div class="ttdeci">WindowDefs_t const fWindowChannels</div><div class="ttdoc">Channel content of each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00323">SlidingWindowTrigger_module.cc:323</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afec33ae0e28cce09fcaafdbbad5c0d73"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">icarus::trigger::SlidingWindowTrigger::fEnabledWindows</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; const fEnabledWindows</div><div class="ttdoc">List of windows to be included. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00327">SlidingWindowTrigger_module.cc:327</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a731b9f8deb4255ba7c51ffb9ebe36019"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">icarus::trigger::SlidingWindowTrigger::fWindowChannels</a></div><div class="ttdeci">WindowDefs_t const fWindowChannels</div><div class="ttdoc">Channel content of each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00324">SlidingWindowTrigger_module.cc:324</a></div></div>
 <div class="ttc" id="namespaceutil_1_1fhicl_html_a7a710f4f9eb8ce2c8206162757289de0"><div class="ttname"><a href="../../da/d95/namespaceutil_1_1fhicl.html#a7a710f4f9eb8ce2c8206162757289de0">util::fhicl::getOptionalValue</a></div><div class="ttdeci">std::optional&lt; typename Optional::value_type &gt; getOptionalValue(Optional const &amp;parameter)</div><div class="ttdoc">Returns the value of an optional parameter as std::optional. </div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de6/FHiCLutils_8h_source.html#l00188">FHiCLutils.h:188</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab78f9d4e1b5f7477466938f32f67733e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">icarus::trigger::SlidingWindowTrigger::fProduceWaveformAssns</a></div><div class="ttdeci">bool fProduceWaveformAssns</div><div class="ttdoc">Whether to produce gate/waveform associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00329">SlidingWindowTrigger_module.cc:329</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab78f9d4e1b5f7477466938f32f67733e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">icarus::trigger::SlidingWindowTrigger::fProduceWaveformAssns</a></div><div class="ttdeci">bool fProduceWaveformAssns</div><div class="ttdoc">Whether to produce gate/waveform associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00330">SlidingWindowTrigger_module.cc:330</a></div></div>
 <div class="ttc" id="namespaceutil_html_aac4707f84c6dc5c269f147302722611f"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a></div><div class="ttdeci">decltype(auto) const_values(Coll &amp;&amp;coll)</div><div class="ttdoc">Range-for loop helper iterating across the constant values of the specified collection. </div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a166fe1d747af8efff5c9c5004a6173af"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">icarus::trigger::SlidingWindowTrigger::fADCthresholds</a></div><div class="ttdeci">std::map&lt; std::string, art::InputTag &gt; fADCthresholds</div><div class="ttdoc">ADC thresholds to read, and the input tag connected to their data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00317">SlidingWindowTrigger_module.cc:317</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a166fe1d747af8efff5c9c5004a6173af"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">icarus::trigger::SlidingWindowTrigger::fADCthresholds</a></div><div class="ttdeci">std::map&lt; std::string, art::InputTag &gt; fADCthresholds</div><div class="ttdoc">ADC thresholds to read, and the input tag connected to their data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00318">SlidingWindowTrigger_module.cc:318</a></div></div>
 <div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_adad5e2b1d3049cbdacf7926c35c1b519"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#adad5e2b1d3049cbdacf7926c35c1b519">icarus::trigger::SlidingWindowTrigger::nDisabledWindows</a></div><div class="ttdeci">unsigned int nDisabledWindows() const noexcept</div><div class="ttdoc">Returns the number of disabled windows. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00341">SlidingWindowTrigger_module.cc:341</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab496ace5ad3d19e6fca738d5d5b2602d"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">icarus::trigger::SlidingWindowTrigger::fWindowStride</a></div><div class="ttdeci">unsigned int const fWindowStride</div><div class="ttdoc">Sliding window base offset. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">SlidingWindowTrigger_module.cc:320</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_adad5e2b1d3049cbdacf7926c35c1b519"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#adad5e2b1d3049cbdacf7926c35c1b519">icarus::trigger::SlidingWindowTrigger::nDisabledWindows</a></div><div class="ttdeci">unsigned int nDisabledWindows() const noexcept</div><div class="ttdoc">Returns the number of disabled windows. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00342">SlidingWindowTrigger_module.cc:342</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab496ace5ad3d19e6fca738d5d5b2602d"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">icarus::trigger::SlidingWindowTrigger::fWindowStride</a></div><div class="ttdeci">unsigned int const fWindowStride</div><div class="ttdoc">Sliding window base offset. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00321">SlidingWindowTrigger_module.cc:321</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_ae68b8345627418888c5e7ba544f5df8b"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#ae68b8345627418888c5e7ba544f5df8b">icarus::trigger::dumpTriggerWindowChannels</a></div><div class="ttdeci">auto dumpTriggerWindowChannels(TriggerWindowChannels_t const &amp;window) -&gt; details::DumpTriggerWindowChannelWrapper</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/daf/SlidingWindowDefs_8h_source.html#l00117">SlidingWindowDefs.h:117</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_abf28f1719fade00a82f95f0701a64005"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">icarus::trigger::SlidingWindowTrigger::fWindowSize</a></div><div class="ttdeci">unsigned int const fWindowSize</div><div class="ttdoc">Sliding window size in number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00319">SlidingWindowTrigger_module.cc:319</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_abf28f1719fade00a82f95f0701a64005"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">icarus::trigger::SlidingWindowTrigger::fWindowSize</a></div><div class="ttdeci">unsigned int const fWindowSize</div><div class="ttdoc">Sliding window size in number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">SlidingWindowTrigger_module.cc:320</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a910f46c9a8fc50918c7ec07af219aa92"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a></div><div class="ttdeci">icarus::trigger::ReadoutTriggerGate&lt; TriggerGateTick_t, TriggerGateTicks_t, raw::Channel_t &gt; OpticalTriggerGateData_t</div><div class="ttdoc">Type of trigger gate data serialized into art data products. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7a/OpticalTriggerGate_8h_source.html#l00044">OpticalTriggerGate.h:44</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab75b945b5557089fc18c7d2851a5ba37"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">icarus::trigger::SlidingWindowTrigger::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00332">SlidingWindowTrigger_module.cc:332</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab75b945b5557089fc18c7d2851a5ba37"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">icarus::trigger::SlidingWindowTrigger::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00333">SlidingWindowTrigger_module.cc:333</a></div></div>
+<div class="ttc" id="triggeremu__data__config__icarus_8fcl_html_a4ecb0f82a8e05fb2a1f6233fb9d61075"><div class="ttname"><a href="../../dc/da9/triggeremu__data__config__icarus_8fcl.html#a4ecb0f82a8e05fb2a1f6233fb9d61075">WindowSize</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings sequence::triggeremu_data_config_icarus settings PMTADCthresholds sequence::triggeremu_data_config_icarus settings PMTADCthresholds WindowSize</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/da9/triggeremu__data__config__icarus_8fcl_source.html#l00231">triggeremu_data_config_icarus.fcl:231</a></div></div>
 <div class="ttc" id="g4__3drift__faketrigger__filter_8fcl_html_ad9fbd36ae83bd91dd0be317f6be97a63"><div class="ttname"><a href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl.html#ad9fbd36ae83bd91dd0be317f6be97a63">filter</a></div><div class="ttdeci">physics filters filter</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d74/g4__3drift__faketrigger__filter_8fcl_source.html#l00008">g4_3drift_faketrigger_filter.fcl:8</a></div></div>
 <div class="ttc" id="namespaceana_html_aaec9dac9c08319e29e474140cf8f0de2"><div class="ttname"><a href="../../d7/d63/namespaceana.html#aaec9dac9c08319e29e474140cf8f0de2">ana::Stride</a></div><div class="ttdeci">size_t Stride(bool allow_default)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dcc/sbnana_2sbnana_2CAFAna_2Core_2Utilities_8cxx_source.html#l00710">sbnana/sbnana/CAFAna/Core/Utilities.cxx:710</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a6866b3c9feb0e838a195300352e8146e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">icarus::trigger::SlidingWindowTrigger::fCombiner</a></div><div class="ttdeci">icarus::trigger::SlidingWindowCombinerAlg const fCombiner</div><div class="ttdoc">Combining algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00337">SlidingWindowTrigger_module.cc:337</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a975f6927da1c2322a56646ac1cb8a8be"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a975f6927da1c2322a56646ac1cb8a8be">icarus::trigger::SlidingWindowTrigger::makeEnabledWindowIndices</a></div><div class="ttdeci">static std::vector&lt; std::size_t &gt; makeEnabledWindowIndices(std::size_t nWindows, fhicl::OptionalSequence&lt; std::size_t &gt; const &amp;enabled, fhicl::OptionalSequence&lt; std::size_t &gt; const &amp;disabled)</div><div class="ttdoc">Returns a list of enabled window indices. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00581">SlidingWindowTrigger_module.cc:581</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a1b8e697f5ed690258732f743359d6139"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a1b8e697f5ed690258732f743359d6139">icarus::trigger::SlidingWindowTrigger::defineWindows</a></div><div class="ttdeci">WindowDefs_t defineWindows() const </div><div class="ttdoc">Defines the channels falling in each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00498">SlidingWindowTrigger_module.cc:498</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a6866b3c9feb0e838a195300352e8146e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">icarus::trigger::SlidingWindowTrigger::fCombiner</a></div><div class="ttdeci">icarus::trigger::SlidingWindowCombinerAlg const fCombiner</div><div class="ttdoc">Combining algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00338">SlidingWindowTrigger_module.cc:338</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a975f6927da1c2322a56646ac1cb8a8be"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a975f6927da1c2322a56646ac1cb8a8be">icarus::trigger::SlidingWindowTrigger::makeEnabledWindowIndices</a></div><div class="ttdeci">static std::vector&lt; std::size_t &gt; makeEnabledWindowIndices(std::size_t nWindows, fhicl::OptionalSequence&lt; std::size_t &gt; const &amp;enabled, fhicl::OptionalSequence&lt; std::size_t &gt; const &amp;disabled)</div><div class="ttdoc">Returns a list of enabled window indices. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00588">SlidingWindowTrigger_module.cc:588</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a1b8e697f5ed690258732f743359d6139"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a1b8e697f5ed690258732f743359d6139">icarus::trigger::SlidingWindowTrigger::defineWindows</a></div><div class="ttdeci">WindowDefs_t defineWindows() const </div><div class="ttdoc">Defines the channels falling in each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00499">SlidingWindowTrigger_module.cc:499</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -521,20 +522,20 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Defines the channels falling in each window. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00498">498</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;{</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">// delegated to `SlidingWindowDefinitionAlg`</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  </div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html">icarus::trigger::SlidingWindowDefinitionAlg</a> <span class="keyword">const</span> algo {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    *(lar::providerFrom&lt;geo::Geometry&gt;()),</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="stringliteral">&quot;SlidingWindowTrigger/SlidingWindowDefinitionAlg&quot;</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    };</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  </div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <span class="keywordflow">return</span> algo.<a class="code" href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html#aebf7fae652250b38af2d6a8796b2c323">makeWindows</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>, <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">fWindowStride</a>);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  </div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::defineWindows()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab496ace5ad3d19e6fca738d5d5b2602d"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">icarus::trigger::SlidingWindowTrigger::fWindowStride</a></div><div class="ttdeci">unsigned int const fWindowStride</div><div class="ttdoc">Sliding window base offset. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">SlidingWindowTrigger_module.cc:320</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_abf28f1719fade00a82f95f0701a64005"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">icarus::trigger::SlidingWindowTrigger::fWindowSize</a></div><div class="ttdeci">unsigned int const fWindowSize</div><div class="ttdoc">Sliding window size in number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00319">SlidingWindowTrigger_module.cc:319</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00499">499</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">// delegated to `SlidingWindowDefinitionAlg`</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <a class="code" href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html">icarus::trigger::SlidingWindowDefinitionAlg</a> <span class="keyword">const</span> algo {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    *(lar::providerFrom&lt;geo::Geometry&gt;()),</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="stringliteral">&quot;SlidingWindowTrigger/SlidingWindowDefinitionAlg&quot;</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    };</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  </div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="keywordflow">return</span> algo.<a class="code" href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html#aebf7fae652250b38af2d6a8796b2c323">makeWindows</a>(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">fWindowSize</a>, <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">fWindowStride</a>);</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  </div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::defineWindows()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab496ace5ad3d19e6fca738d5d5b2602d"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab496ace5ad3d19e6fca738d5d5b2602d">icarus::trigger::SlidingWindowTrigger::fWindowStride</a></div><div class="ttdeci">unsigned int const fWindowStride</div><div class="ttdoc">Sliding window base offset. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00321">SlidingWindowTrigger_module.cc:321</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_abf28f1719fade00a82f95f0701a64005"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#abf28f1719fade00a82f95f0701a64005">icarus::trigger::SlidingWindowTrigger::fWindowSize</a></div><div class="ttdeci">unsigned int const fWindowSize</div><div class="ttdoc">Sliding window size in number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">SlidingWindowTrigger_module.cc:320</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg_html"><div class="ttname"><a href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html">icarus::trigger::SlidingWindowDefinitionAlg</a></div><div class="ttdoc">Groups optical detector channels into windows based on position. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/daa/SlidingWindowDefinitionAlg_8h_source.html#l00083">SlidingWindowDefinitionAlg.h:83</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg_html_aebf7fae652250b38af2d6a8796b2c323"><div class="ttname"><a href="../../df/d4c/classicarus_1_1trigger_1_1SlidingWindowDefinitionAlg.html#aebf7fae652250b38af2d6a8796b2c323">icarus::trigger::SlidingWindowDefinitionAlg::makeWindows</a></div><div class="ttdeci">WindowDefs_t makeWindows(unsigned int windowSize, unsigned int windowStride) const </div><div class="ttdoc">Performs the calculation and returns the sliding window composition. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d6f/SlidingWindowDefinitionAlg_8cxx_source.html#l00037">SlidingWindowDefinitionAlg.cxx:37</a></div></div>
 </div><!-- fragment -->
@@ -580,28 +581,28 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Returns a list of enabled window indices. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00581">581</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                          {</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  </div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  std::vector&lt;std::size_t&gt; selection; <span class="comment">// indices of the enabled windows</span></div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;  </div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="comment">// add all enabled windows (or all if no enabled list is specified)</span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="keywordflow">if</span> (!enabled(selection)) {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    selection.resize(nWindows);</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    std::iota(selection.begin(), selection.end(), 0U);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  }</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  </div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  <span class="comment">// remove all disabled windows (if any)</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  std::vector&lt;std::size_t&gt; removeWindows;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  disabled(removeWindows);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> find = [&amp;selection](std::size_t index)</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    { <span class="keywordflow">return</span> std::find(selection.begin(), selection.end(), index); };</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  <span class="keywordflow">for</span> (std::size_t <span class="keyword">const</span> index: removeWindows) {</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> <span class="keyword">const</span> it = find(index); it != selection.end()) selection.erase(it);</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  } <span class="comment">// for</span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  </div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keywordflow">return</span> selection;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::makeEnabledWindowIndices()</span></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00588">588</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                          {</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  </div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  std::vector&lt;std::size_t&gt; selection; <span class="comment">// indices of the enabled windows</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  </div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <span class="comment">// add all enabled windows (or all if no enabled list is specified)</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keywordflow">if</span> (!enabled(selection)) {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    selection.resize(nWindows);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    std::iota(selection.begin(), selection.end(), 0U);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  }</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  </div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  <span class="comment">// remove all disabled windows (if any)</span></div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  std::vector&lt;std::size_t&gt; removeWindows;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  disabled(removeWindows);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> find = [&amp;selection](std::size_t index)</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    { <span class="keywordflow">return</span> std::find(selection.begin(), selection.end(), index); };</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="keywordflow">for</span> (std::size_t <span class="keyword">const</span> index: removeWindows) {</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">auto</span> <span class="keyword">const</span> it = find(index); it != selection.end()) selection.erase(it);</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  } <span class="comment">// for</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  </div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <span class="keywordflow">return</span> selection;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::makeEnabledWindowIndices()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -628,10 +629,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Returns the number of disabled windows. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00341">341</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size() - <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size(); }</div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afec33ae0e28cce09fcaafdbbad5c0d73"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">icarus::trigger::SlidingWindowTrigger::fEnabledWindows</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; const fEnabledWindows</div><div class="ttdoc">List of windows to be included. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00326">SlidingWindowTrigger_module.cc:326</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a731b9f8deb4255ba7c51ffb9ebe36019"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">icarus::trigger::SlidingWindowTrigger::fWindowChannels</a></div><div class="ttdeci">WindowDefs_t const fWindowChannels</div><div class="ttdoc">Channel content of each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00323">SlidingWindowTrigger_module.cc:323</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00342">342</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    { <span class="keywordflow">return</span> <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">fWindowChannels</a>.size() - <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">fEnabledWindows</a>.size(); }</div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afec33ae0e28cce09fcaafdbbad5c0d73"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afec33ae0e28cce09fcaafdbbad5c0d73">icarus::trigger::SlidingWindowTrigger::fEnabledWindows</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; const fEnabledWindows</div><div class="ttdoc">List of windows to be included. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00327">SlidingWindowTrigger_module.cc:327</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a731b9f8deb4255ba7c51ffb9ebe36019"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a731b9f8deb4255ba7c51ffb9ebe36019">icarus::trigger::SlidingWindowTrigger::fWindowChannels</a></div><div class="ttdeci">WindowDefs_t const fWindowChannels</div><div class="ttdoc">Channel content of each window. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00324">SlidingWindowTrigger_module.cc:324</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -707,20 +708,20 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Fills the plots. Also extracts the information to fill them with. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00484">484</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                                                               {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  </div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ce2de9cbdd80f7e8a615f96f3af605a">icarus::trigger::OpDetWaveformMetaDataProductMap_t</a> waveformMap;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ thresholdStr, dataTag ]: <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>) {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afcfc612ca29566546d004bdb0aaa92ef">produceThreshold</a>(event, waveformMap, thresholdStr, dataTag);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    </div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  } <span class="comment">// for all thresholds</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  </div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::produce()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a166fe1d747af8efff5c9c5004a6173af"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">icarus::trigger::SlidingWindowTrigger::fADCthresholds</a></div><div class="ttdeci">std::map&lt; std::string, art::InputTag &gt; fADCthresholds</div><div class="ttdoc">ADC thresholds to read, and the input tag connected to their data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00317">SlidingWindowTrigger_module.cc:317</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afcfc612ca29566546d004bdb0aaa92ef"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afcfc612ca29566546d004bdb0aaa92ef">icarus::trigger::SlidingWindowTrigger::produceThreshold</a></div><div class="ttdeci">void produceThreshold(art::Event &amp;event, icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;waveformMap, std::string const &amp;threshold, art::InputTag const &amp;dataTag) const </div><div class="ttdoc">Performs the combination for data with a specified threshold. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00514">SlidingWindowTrigger_module.cc:514</a></div></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00485">485</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                                                               {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  </div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ce2de9cbdd80f7e8a615f96f3af605a">icarus::trigger::OpDetWaveformMetaDataProductMap_t</a> waveformMap;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ thresholdStr, dataTag ]: <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">fADCthresholds</a>) {</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afcfc612ca29566546d004bdb0aaa92ef">produceThreshold</a>(event, waveformMap, thresholdStr, dataTag);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    </div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  } <span class="comment">// for all thresholds</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  </div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::produce()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a166fe1d747af8efff5c9c5004a6173af"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a166fe1d747af8efff5c9c5004a6173af">icarus::trigger::SlidingWindowTrigger::fADCthresholds</a></div><div class="ttdeci">std::map&lt; std::string, art::InputTag &gt; fADCthresholds</div><div class="ttdoc">ADC thresholds to read, and the input tag connected to their data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00318">SlidingWindowTrigger_module.cc:318</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_afcfc612ca29566546d004bdb0aaa92ef"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#afcfc612ca29566546d004bdb0aaa92ef">icarus::trigger::SlidingWindowTrigger::produceThreshold</a></div><div class="ttdeci">void produceThreshold(art::Event &amp;event, icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;waveformMap, std::string const &amp;threshold, art::InputTag const &amp;dataTag) const </div><div class="ttdoc">Performs the combination for data with a specified threshold. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00515">SlidingWindowTrigger_module.cc:515</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a5ce2de9cbdd80f7e8a615f96f3af605a"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ce2de9cbdd80f7e8a615f96f3af605a">icarus::trigger::OpDetWaveformMetaDataProductMap_t</a></div><div class="ttdeci">util::DataProductPointerMap_t&lt; sbn::OpDetWaveformMeta &gt; OpDetWaveformMetaDataProductMap_t</div><div class="ttdoc">Map util::DataProductPointerMap_t for sbn::OpDetWaveformMeta objects. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00049">TriggerDataUtils.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -771,76 +772,84 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Performs the combination for data with a specified threshold. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00514">514</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        {</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  </div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  mf::LogDebug(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Processing threshold &quot;</span> &lt;&lt; threshold</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; from &#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    ;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>; <span class="comment">// for convenience</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ad1b6da0db6d67a7437f4123179641775">TrackedTriggerGate_t</a></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    = <a class="code" href="../../d6/d23/classicarus_1_1trigger_1_1TrackedTriggerGate.html">icarus::trigger::TrackedOpticalTriggerGate&lt;sbn::OpDetWaveformMeta&gt;</a>;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  </div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  std::vector&lt;TrackedTriggerGate_t&gt; <span class="keyword">const</span>&amp; gates</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    = <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a73c9e320b5186c5953aba5ee89d75618">ReadTriggerGates</a>(event, dataTag, waveformMap);</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  </div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  std::vector&lt;TrackedTriggerGate_t&gt; combinedGates = <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">fCombiner</a>.<a class="code" href="../../dd/d40/classicarus_1_1trigger_1_1SlidingWindowCombinerAlg.html#a9defa61365040f1e4582a87394509a7e">combine</a>(gates);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  <span class="comment">// transform the data; after this line, `gates` is not usable any more</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  art::PtrMaker&lt;OpticalTriggerGateData_t&gt; <span class="keyword">const</span> makeGatePtr</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    (event, dataTag.instance());</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keyword">auto</span> [ outputGates, outputAssns ]</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    = <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5e3e2f0504cab0c10790916793f11381">icarus::trigger::transformIntoOpticalTriggerGate</a></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    (std::move(combinedGates), makeGatePtr, waveformMap);</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  mf::LogTrace(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>)</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Threshold &quot;</span> &lt;&lt; threshold &lt;&lt; <span class="stringliteral">&quot; (&#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;): &quot;</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    &lt;&lt; gates.size() &lt;&lt; <span class="stringliteral">&quot; input channels, &quot;</span></div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    &lt;&lt; outputGates.size() &lt;&lt; <span class="stringliteral">&quot; output channels (+&quot;</span></div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    &lt;&lt; outputAssns.size() &lt;&lt; <span class="stringliteral">&quot; associations to waveforms) into &#39;&quot;</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    &lt;&lt; moduleDescription().moduleLabel() &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; dataTag.instance() &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    ;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>) {</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="comment">// produce one gate-waveform association for each gate-metadata one;</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="comment">// do it now while the gate/metadata association is still locally available</span></div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <a class="code" href="../../d0/d54/classicarus_1_1trigger_1_1OpDetWaveformMetaMatcher.html">icarus::trigger::OpDetWaveformMetaMatcher</a> waveformMetaMatcher{ <span class="keyword">event</span> };</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt; outputWaveAssns;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> [ gatePtr, metaPtr ]: outputAssns)</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      outputWaveAssns.addSingle(gatePtr, waveformMetaMatcher(metaPtr));</div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00515">515</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  mf::LogDebug(<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a>)</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;Processing threshold &quot;</span> &lt;&lt; threshold</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; from &#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    ;</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>; <span class="comment">// for convenience</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ad1b6da0db6d67a7437f4123179641775">TrackedTriggerGate_t</a></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    = <a class="code" href="../../d6/d23/classicarus_1_1trigger_1_1TrackedTriggerGate.html">icarus::trigger::TrackedOpticalTriggerGate&lt;sbn::OpDetWaveformMeta&gt;</a>;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  </div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  std::vector&lt;TrackedTriggerGate_t&gt; <span class="keyword">const</span>&amp; gates</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    = <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a73c9e320b5186c5953aba5ee89d75618">ReadTriggerGates</a>(event, dataTag, waveformMap);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  </div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  std::vector&lt;TrackedTriggerGate_t&gt; combinedGates = <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">fCombiner</a>.<a class="code" href="../../dd/d40/classicarus_1_1trigger_1_1SlidingWindowCombinerAlg.html#a9defa61365040f1e4582a87394509a7e">combine</a>(gates);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="comment">// transform the data; after this line, `gates` is not usable any more</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  art::PtrMaker&lt;OpticalTriggerGateData_t&gt; <span class="keyword">const</span> makeGatePtr</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    (event, dataTag.instance());</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keyword">auto</span> [ outputGates, outputAssns ]</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    = <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5e3e2f0504cab0c10790916793f11381">icarus::trigger::transformIntoOpticalTriggerGate</a></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    (std::move(combinedGates), makeGatePtr, waveformMap);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  {</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    mf::LogTrace log { <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">fLogCategory</a> };</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    log</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;Threshold &quot;</span> &lt;&lt; threshold &lt;&lt; <span class="stringliteral">&quot; (&#39;&quot;</span> &lt;&lt; dataTag.encode() &lt;&lt; <span class="stringliteral">&quot;&#39;): &quot;</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;      &lt;&lt; gates.size() &lt;&lt; <span class="stringliteral">&quot; input channels, &quot;</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;      &lt;&lt; outputGates.size() &lt;&lt; <span class="stringliteral">&quot; output channels (+&quot;</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;      &lt;&lt; outputAssns.size() &lt;&lt; <span class="stringliteral">&quot; associations to waveforms) into &#39;&quot;</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;      &lt;&lt; moduleDescription().moduleLabel() &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; dataTag.instance() &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;      ;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; [ iGate, gate ]: <a class="code" href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a>(outputGates)) {</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;      log &lt;&lt; <span class="stringliteral">&quot;\n [#&quot;</span> &lt;&lt; iGate &lt;&lt; <span class="stringliteral">&quot;] &quot;</span> &lt;&lt; <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a62cb6e3947806a30f0ef61dc3f728acd">compactdump</a>(gate);</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    } <span class="comment">// for</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  } <span class="comment">// local scope</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">fProduceWaveformAssns</a>) {</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    </div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keyword">event</span>.put(</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      std::make_unique&lt;art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt;&gt;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        (std::move(outputWaveAssns)),</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      dataTag.instance()</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;      );</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  } <span class="comment">// if fProduceWaveformAssns</span></div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  </div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  <span class="keyword">event</span>.put(</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    std::make_unique&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;      (std::move(outputGates)),</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    dataTag.instance()</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    );</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <span class="keyword">event</span>.put(</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    std::make_unique&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;      (std::move(outputAssns)),</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    dataTag.instance()</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    );</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::produceThreshold()</span></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ad1b6da0db6d67a7437f4123179641775"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ad1b6da0db6d67a7437f4123179641775">icarus::trigger::SlidingWindowTrigger::TrackedTriggerGate_t</a></div><div class="ttdeci">icarus::trigger::TrackedOpticalTriggerGate&lt; sbn::OpDetWaveformMeta &gt; TrackedTriggerGate_t</div><div class="ttdoc">Reconstituted trigger gate type internally used. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00312">SlidingWindowTrigger_module.cc:312</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab78f9d4e1b5f7477466938f32f67733e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">icarus::trigger::SlidingWindowTrigger::fProduceWaveformAssns</a></div><div class="ttdeci">bool fProduceWaveformAssns</div><div class="ttdoc">Whether to produce gate/waveform associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00329">SlidingWindowTrigger_module.cc:329</a></div></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="comment">// produce one gate-waveform association for each gate-metadata one;</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    <span class="comment">// do it now while the gate/metadata association is still locally available</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <a class="code" href="../../d0/d54/classicarus_1_1trigger_1_1OpDetWaveformMetaMatcher.html">icarus::trigger::OpDetWaveformMetaMatcher</a> waveformMetaMatcher{ <span class="keyword">event</span> };</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt; outputWaveAssns;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> [ gatePtr, metaPtr ]: outputAssns)</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;      outputWaveAssns.addSingle(gatePtr, waveformMetaMatcher(metaPtr));</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    </div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keyword">event</span>.put(</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      std::make_unique&lt;art::Assns&lt;OpticalTriggerGateData_t, raw::OpDetWaveform&gt;&gt;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        (std::move(outputWaveAssns)),</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;      dataTag.instance()</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;      );</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  } <span class="comment">// if fProduceWaveformAssns</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  </div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keyword">event</span>.put(</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    std::make_unique&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;      (std::move(outputGates)),</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    dataTag.instance()</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    );</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keyword">event</span>.put(</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    std::make_unique&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      (std::move(outputAssns)),</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    dataTag.instance()</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    );</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::produceThreshold()</span></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ad1b6da0db6d67a7437f4123179641775"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ad1b6da0db6d67a7437f4123179641775">icarus::trigger::SlidingWindowTrigger::TrackedTriggerGate_t</a></div><div class="ttdeci">icarus::trigger::TrackedOpticalTriggerGate&lt; sbn::OpDetWaveformMeta &gt; TrackedTriggerGate_t</div><div class="ttdoc">Reconstituted trigger gate type internally used. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00313">SlidingWindowTrigger_module.cc:313</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab78f9d4e1b5f7477466938f32f67733e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab78f9d4e1b5f7477466938f32f67733e">icarus::trigger::SlidingWindowTrigger::fProduceWaveformAssns</a></div><div class="ttdeci">bool fProduceWaveformAssns</div><div class="ttdoc">Whether to produce gate/waveform associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00330">SlidingWindowTrigger_module.cc:330</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1TrackedTriggerGate_html"><div class="ttname"><a href="../../d6/d23/classicarus_1_1trigger_1_1TrackedTriggerGate.html">icarus::trigger::TrackedTriggerGate</a></div><div class="ttdoc">A wrapper to trigger gate objects tracking the input of operations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d76/TrackedTriggerGate_8h_source.html#l00040">TrackedTriggerGate.h:40</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a5e3e2f0504cab0c10790916793f11381"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a5e3e2f0504cab0c10790916793f11381">icarus::trigger::transformIntoOpticalTriggerGate</a></div><div class="ttdeci">std::vector&lt; icarus::trigger::OpticalTriggerGateData_t &gt; transformIntoOpticalTriggerGate(Gates &amp;&amp;gates)</div><div class="ttdoc">Returns the trigger gates in serializable format. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00495">TriggerDataUtils.h:495</a></div></div>
+<div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1OpDetWaveformMetaMatcher_html"><div class="ttname"><a href="../../d0/d54/classicarus_1_1trigger_1_1OpDetWaveformMetaMatcher.html">icarus::trigger::OpDetWaveformMetaMatcher</a></div><div class="ttdoc">Object to facilitate the discovery of the raw::OpDetWaveform a sbn::OpDetWaveformMeta objects comes f...</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df8/OpDetWaveformMetaMatcher_8h_source.html#l00034">OpDetWaveformMetaMatcher.h:34</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a910f46c9a8fc50918c7ec07af219aa92"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a></div><div class="ttdeci">icarus::trigger::ReadoutTriggerGate&lt; TriggerGateTick_t, TriggerGateTicks_t, raw::Channel_t &gt; OpticalTriggerGateData_t</div><div class="ttdoc">Type of trigger gate data serialized into art data products. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7a/OpticalTriggerGate_8h_source.html#l00044">OpticalTriggerGate.h:44</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab75b945b5557089fc18c7d2851a5ba37"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">icarus::trigger::SlidingWindowTrigger::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00332">SlidingWindowTrigger_module.cc:332</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a73c9e320b5186c5953aba5ee89d75618"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a73c9e320b5186c5953aba5ee89d75618">icarus::trigger::SlidingWindowTrigger::ReadTriggerGates</a></div><div class="ttdeci">std::vector&lt; icarus::trigger::TrackedOpticalTriggerGate&lt; sbn::OpDetWaveformMeta &gt; &gt; ReadTriggerGates(art::Event const &amp;event, art::InputTag const &amp;dataTag, icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;waveformMap) const </div><div class="ttdoc">Reads a set of input gates from the event and updates waveformMap. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00621">SlidingWindowTrigger_module.cc:621</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_ab75b945b5557089fc18c7d2851a5ba37"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#ab75b945b5557089fc18c7d2851a5ba37">icarus::trigger::SlidingWindowTrigger::fLogCategory</a></div><div class="ttdeci">std::string const fLogCategory</div><div class="ttdoc">Message facility stream category for output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00333">SlidingWindowTrigger_module.cc:333</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a73c9e320b5186c5953aba5ee89d75618"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a73c9e320b5186c5953aba5ee89d75618">icarus::trigger::SlidingWindowTrigger::ReadTriggerGates</a></div><div class="ttdeci">std::vector&lt; icarus::trigger::TrackedOpticalTriggerGate&lt; sbn::OpDetWaveformMeta &gt; &gt; ReadTriggerGates(art::Event const &amp;event, art::InputTag const &amp;dataTag, icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;waveformMap) const </div><div class="ttdoc">Reads a set of input gates from the event and updates waveformMap. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00628">SlidingWindowTrigger_module.cc:628</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowCombinerAlg_html_a9defa61365040f1e4582a87394509a7e"><div class="ttname"><a href="../../dd/d40/classicarus_1_1trigger_1_1SlidingWindowCombinerAlg.html#a9defa61365040f1e4582a87394509a7e">icarus::trigger::SlidingWindowCombinerAlg::combine</a></div><div class="ttdeci">std::vector&lt; TrackedTriggerGate_t &gt; combine(std::vector&lt; TrackedTriggerGate_t &gt; const &amp;gates) const </div><div class="ttdoc">Combines the gates according to the configured grouping. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d22/SlidingWindowCombinerAlg_8cxx_source.html#l00034">SlidingWindowCombinerAlg.cxx:34</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a6866b3c9feb0e838a195300352e8146e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">icarus::trigger::SlidingWindowTrigger::fCombiner</a></div><div class="ttdeci">icarus::trigger::SlidingWindowCombinerAlg const fCombiner</div><div class="ttdoc">Combining algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00337">SlidingWindowTrigger_module.cc:337</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a6866b3c9feb0e838a195300352e8146e"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a6866b3c9feb0e838a195300352e8146e">icarus::trigger::SlidingWindowTrigger::fCombiner</a></div><div class="ttdeci">icarus::trigger::SlidingWindowCombinerAlg const fCombiner</div><div class="ttdoc">Combining algorithm. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00338">SlidingWindowTrigger_module.cc:338</a></div></div>
+<div class="ttc" id="namespaceicarus_1_1trigger_html_a62cb6e3947806a30f0ef61dc3f728acd"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a62cb6e3947806a30f0ef61dc3f728acd">icarus::trigger::compactdump</a></div><div class="ttdeci">auto compactdump(ReadoutTriggerGate&lt; Tick, TickInterval, ChannelIDType &gt; const &amp;gate) -&gt; details::CompactFormatter&lt; ReadoutTriggerGate&lt; Tick, TickInterval, ChannelIDType &gt;&gt;</div><div class="ttdoc">Manipulator-like function for compact format of trigger gates. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d4d/TriggerGateDataFormatting_8h_source.html#l00079">TriggerGateDataFormatting.h:79</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -884,22 +893,22 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Reads a set of input gates from the <code>event</code> and updates <code>waveformMap</code>. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00621">621</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                                           {</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  </div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>&amp; assns =</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keyword">event</span>.getProduct&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    (dataTag);</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;  <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a30574daf2d5c652e478eab7d67e35e27">UpdateWaveformMap</a>(waveformMap, assns);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  </div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad698f9a75039e30134185f65943904dd">icarus::trigger::FillTriggerGates</a></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    (event.getProduct&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(dataTag), assns);</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  </div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::ReadTriggerGates()</span></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00628">628</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                                           {</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  </div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span>&amp; assns =</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keyword">event</span>.getProduct&lt;art::Assns&lt;OpticalTriggerGateData_t, sbn::OpDetWaveformMeta&gt;&gt;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    (dataTag);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  </div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;  <a class="code" href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a30574daf2d5c652e478eab7d67e35e27">UpdateWaveformMap</a>(waveformMap, assns);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad698f9a75039e30134185f65943904dd">icarus::trigger::FillTriggerGates</a></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    (event.getProduct&lt;std::vector&lt;OpticalTriggerGateData_t&gt;&gt;(dataTag), assns);</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;  </div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::ReadTriggerGates()</span></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a910f46c9a8fc50918c7ec07af219aa92"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a></div><div class="ttdeci">icarus::trigger::ReadoutTriggerGate&lt; TriggerGateTick_t, TriggerGateTicks_t, raw::Channel_t &gt; OpticalTriggerGateData_t</div><div class="ttdoc">Type of trigger gate data serialized into art data products. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7a/OpticalTriggerGate_8h_source.html#l00044">OpticalTriggerGate.h:44</a></div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a30574daf2d5c652e478eab7d67e35e27"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a30574daf2d5c652e478eab7d67e35e27">icarus::trigger::SlidingWindowTrigger::UpdateWaveformMap</a></div><div class="ttdeci">static void UpdateWaveformMap(icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;map, art::Assns&lt; TriggerGateData_t, sbn::OpDetWaveformMeta &gt; const &amp;assns)</div><div class="ttdoc">Adds the waveforms in the specified association to the waveform map. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00609">SlidingWindowTrigger_module.cc:609</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1SlidingWindowTrigger_html_a30574daf2d5c652e478eab7d67e35e27"><div class="ttname"><a href="../../dc/dfc/classicarus_1_1trigger_1_1SlidingWindowTrigger.html#a30574daf2d5c652e478eab7d67e35e27">icarus::trigger::SlidingWindowTrigger::UpdateWaveformMap</a></div><div class="ttdeci">static void UpdateWaveformMap(icarus::trigger::OpDetWaveformMetaDataProductMap_t &amp;map, art::Assns&lt; TriggerGateData_t, sbn::OpDetWaveformMeta &gt; const &amp;assns)</div><div class="ttdoc">Adds the waveforms in the specified association to the waveform map. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00616">SlidingWindowTrigger_module.cc:616</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_ad698f9a75039e30134185f65943904dd"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#ad698f9a75039e30134185f65943904dd">icarus::trigger::FillTriggerGates</a></div><div class="ttdeci">std::vector&lt; icarus::trigger::TrackedOpticalTriggerGate&lt; OpDetInfo &gt; &gt; FillTriggerGates(std::vector&lt; icarus::trigger::OpticalTriggerGateData_t &gt; const &amp;gates, art::Assns&lt; icarus::trigger::OpticalTriggerGateData_t, OpDetInfo &gt; const &amp;gateToWaveformInfo)</div><div class="ttdoc">Creates a gate object out of trigger gate data products. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd0/TriggerDataUtils_8h_source.html#l00560">TriggerDataUtils.h:560</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -938,13 +947,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Adds the waveforms in the specified association to the waveform <code>map</code>. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00609">609</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  {</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordflow">for</span> (art::Ptr&lt;sbn::OpDetWaveformMeta&gt; <span class="keyword">const</span>&amp; wave: util::get_elements&lt;1U&gt;(assns))</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    map.emplace(wave.get(), wave);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  </div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::UpdateWaveformMap()</span></div>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00616">616</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  {</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <span class="keywordflow">for</span> (art::Ptr&lt;sbn::OpDetWaveformMeta&gt; <span class="keyword">const</span>&amp; wave: util::get_elements&lt;1U&gt;(assns))</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    map.emplace(wave.get(), wave);</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  </div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;} <span class="comment">// icarus::trigger::SlidingWindowTrigger::UpdateWaveformMap()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -969,7 +978,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>ADC thresholds to read, and the input tag connected to their data. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00317">317</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00318">318</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1002,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Combining algorithm. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00337">337</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1026,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>List of windows to be included. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00326">326</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00327">327</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1050,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Message facility stream category for output. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00332">332</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00333">333</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1074,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Whether to produce gate/waveform associations. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00329">329</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00330">330</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1098,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Channel content of each window. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00323">323</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00324">324</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1122,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Sliding window size in number of channels. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00319">319</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">320</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1146,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 
 <p>Sliding window base offset. </p>
 
-<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00320">320</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html#l00321">321</a> of file <a class="el" href="../../d3/dcf/SlidingWindowTrigger__module_8cc_source.html">SlidingWindowTrigger_module.cc</a>.</p>
 
 </div>
 </div>

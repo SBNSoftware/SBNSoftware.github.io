@@ -832,7 +832,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span> len(borders) == 0:</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      logging.error(</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;       <span class="stringliteral">&quot;Wire %s \&quot;start\&quot; at %s cm does not touch any plane border (%s)&quot;</span>,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;       wireID, start, <span class="stringliteral">&quot;, &quot;</span>.join(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;       wireID, start, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;       )</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      shorterWires.setdefault(wireID, []).append(<span class="stringliteral">&#39;start&#39;</span>)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment"># if error</span></div>
@@ -847,7 +847,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">if</span> len(borders) == 0:</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      logging.error(</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;       <span class="stringliteral">&quot;Wire %s \&quot;end\&quot; at %s cm does not touch any plane border (%s)&quot;</span>,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;       wireID, end, <span class="stringliteral">&quot;, &quot;</span>.join(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;       wireID, end, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(<span class="stringliteral">&quot;%s: %g&quot;</span> % item <span class="keywordflow">for</span> item <span class="keywordflow">in</span> borderCoords.items()),</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;       )</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      shorterWires.setdefault(wireID, []).append(<span class="stringliteral">&#39;end&#39;</span>)</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment"># if error</span></div>
@@ -862,6 +862,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_a9fb44db05b1e188f8f17c2187574f94c"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#a9fb44db05b1e188f8f17c2187574f94c">ICARUSgeometryChecker.checkWireEndingsInPlane</a></div><div class="ttdeci">def checkWireEndingsInPlane</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00245">ICARUSgeometryChecker.py:245</a></div></div>
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_a8041de3f5297c0316a81b43c5d6b1a2e"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#a8041de3f5297c0316a81b43c5d6b1a2e">ICARUSgeometryChecker.wireEndBorders</a></div><div class="ttdeci">def wireEndBorders</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00225">ICARUSgeometryChecker.py:225</a></div></div>
 <div class="ttc" id="namespaceutil_html_af0615b7538ff948ea65d5206a23c84f2"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#af0615b7538ff948ea65d5206a23c84f2">util::enumerate</a></div><div class="ttdeci">auto enumerate(Iterables &amp;&amp;...iterables)</div><div class="ttdoc">Range-for loop helper tracking the number of iteration. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d85/enumerate_8h_source.html#l00069">enumerate.h:69</a></div></div>
+<div class="ttc" id="namespaceopdet_1_1factory_html_a22a875ecbd4a799c06ecb0057ef7fb73"><div class="ttname"><a href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">opdet::factory::join</a></div><div class="ttdeci">S join(S const &amp;sep, Coll const &amp;s)</div><div class="ttdoc">Returns a concatenation of strings in s separated by sep. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfe/OpRecoFactoryStuff_8h_source.html#l00573">OpRecoFactoryStuff.h:573</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -882,8 +883,9 @@ and a list of end labels ('start', 'end') listing which end did not.
 <p>Definition at line <a class="el" href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00045">45</a> of file <a class="el" href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html">ICARUSgeometryChecker.py</a>.</p>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d3/d82/namespaceICARUSgeometryChecker.html#af5d632e37d4038e71ce334cdeaea7af4">   45</a></span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">def </span><a class="code" href="../../d3/d82/namespaceICARUSgeometryChecker.html#af5d632e37d4038e71ce334cdeaea7af4">GeoPairToString</a>(pair):</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot; - &quot;</span>.join(map(<span class="keyword">lambda</span> obj: str(obj.ID()), pair))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot; - &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(<span class="keyword">lambda</span> obj: str(obj.ID()), pair))</div>
 </div>
+<div class="ttc" id="namespaceopdet_1_1factory_html_a22a875ecbd4a799c06ecb0057ef7fb73"><div class="ttname"><a href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">opdet::factory::join</a></div><div class="ttdeci">S join(S const &amp;sep, Coll const &amp;s)</div><div class="ttdoc">Returns a concatenation of strings in s separated by sep. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfe/OpRecoFactoryStuff_8h_source.html#l00573">OpRecoFactoryStuff.h:573</a></div></div>
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_af5d632e37d4038e71ce334cdeaea7af4"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#af5d632e37d4038e71ce334cdeaea7af4">ICARUSgeometryChecker.GeoPairToString</a></div><div class="ttdeci">def GeoPairToString</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00045">ICARUSgeometryChecker.py:45</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1021,7 +1023,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;  <span class="keywordflow">if</span> overlappingCryostats:</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    msg = <span class="stringliteral">&quot;%s cryostat overlaps detected: %s.&quot;</span> % (</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;     len(overlappingCryostats),</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingCryostats)),</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingCryostats)),</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;     )</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    FailureSummary.append(msg)</div>
@@ -1033,7 +1035,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  overlappingTPCs = <a class="code" href="../../d3/d82/namespaceICARUSgeometryChecker.html#a5b09a6e0972211f2c2b909c3ef393115">CheckGeoObjOverlaps</a>(TPCs, <span class="stringliteral">&quot;TPC&quot;</span>)</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  <span class="keywordflow">if</span> overlappingTPCs:</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    msg = <span class="stringliteral">&quot;%s TPC overlaps detected: %s.&quot;</span> % (</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;     len(overlappingTPCs), <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingTPCs)),</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;     len(overlappingTPCs), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingTPCs)),</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;     )</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    FailureSummary.append(msg)</div>
@@ -1047,7 +1049,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;  <span class="keywordflow">if</span> overlappingActiveVolTPCs:</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    msg = <span class="stringliteral">&quot;%s TPC active volume overlaps detected: %s.&quot;</span> % (</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;     len(overlappingActiveVolTPCs),</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingActiveVolTPCs)),</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingActiveVolTPCs)),</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;     )</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    logging.error(msg)</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    FailureSummary.append(msg)</div>
@@ -1061,7 +1063,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <span class="keywordflow">if</span> overlappingPlanes:</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire plane overlaps detected: %s.&quot;</span>,</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;     len(overlappingPlanes),</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.join(map(GeoPairToString, overlappingPlanes))</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;     <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(map(GeoPairToString, overlappingPlanes))</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;     )</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    FailureSummary.append \</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;      (<span class="stringliteral">&quot;%s wire plane overlaps detected.&quot;</span> % len(overlappingPlanes))</div>
@@ -1077,7 +1079,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes are correctly aligned along z.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment on z: %s&quot;</span>,</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;      ),</div>
@@ -1091,7 +1093,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    logging.info(<span class="stringliteral">&quot;Top of all %d planes is correctly aligned.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment of top side: %s&quot;</span>,</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;      ),</div>
@@ -1105,7 +1107,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    logging.info(<span class="stringliteral">&quot;Bottom of all %d planes is correctly aligned.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present misalignment of bottom side: %s&quot;</span>,</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;      ),</div>
@@ -1122,7 +1124,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;     )</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering the touching side: %s&quot;</span>,</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;      ),</div>
@@ -1141,7 +1143,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;     )</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering bottom side: %s&quot;</span>,</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;      ),</div>
@@ -1160,7 +1162,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;     )</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    logging.error(<span class="stringliteral">&quot;%s planes have wires inconsistently covering top side: %s&quot;</span>,</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="stringliteral">&quot;%s vs. %s (%g mm)&quot;</span> % (planeA.ID(), planeB.ID(), distance)</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <span class="keywordflow">for</span> distance, planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;      ),</div>
@@ -1178,7 +1180,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes have matching views.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present direction inconsistencies:&quot;</span>,</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="stringliteral">&quot;%s vs. %s&quot;</span> % (planeA.ID(), planeB.ID())</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">for</span> planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;      ),</div>
@@ -1193,7 +1195,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    logging.info(<span class="stringliteral">&quot;All %d planes have consistent directions.&quot;</span>, len(Planes))</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    logging.error(<span class="stringliteral">&quot;%s wire planes present view inconsistencies:&quot;</span>,</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.join(</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      len(planesWithIssues), <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="stringliteral">&quot;%s vs. %s&quot;</span> % (planeA.ID(), planeB.ID())</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">for</span> planeA, planeB <span class="keywordflow">in</span> planesWithIssues</div>
 <div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;      ),</div>
@@ -1214,7 +1216,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      len(shorterWires),</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;      )</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    <span class="keywordflow">for</span> wireID, ends <span class="keywordflow">in</span> shorterWires.items():</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      logging.error(<span class="stringliteral">&quot;  %s: %s&quot;</span>, wireID, <span class="stringliteral">&quot;, &quot;</span>.join(ends))</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      logging.error(<span class="stringliteral">&quot;  %s: %s&quot;</span>, wireID, <span class="stringliteral">&quot;, &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(ends))</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    FailureSummary.append \</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;      (<span class="stringliteral">&quot;%d wires do not end on plane frame&quot;</span> % len(shorterWires))</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  <span class="comment"># if error</span></div>
@@ -1246,7 +1248,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;  </div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;  <span class="keywordflow">if</span> FailureSummary:</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    logging.info(<span class="stringliteral">&quot;%d failure categories detected:\n - %s&quot;</span>,</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;     len(FailureSummary), <span class="stringliteral">&quot;\n - &quot;</span>.join(FailureSummary),</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;     len(FailureSummary), <span class="stringliteral">&quot;\n - &quot;</span>.<a class="code" href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">join</a>(FailureSummary),</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;     )</div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <span class="comment"># if failures</span></div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;  <span class="keywordflow">return</span> 1 <span class="keywordflow">if</span> FailureSummary <span class="keywordflow">else</span> 0</div>
@@ -1258,6 +1260,7 @@ and a list of end labels ('start', 'end') listing which end did not.
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_a79a8689b93a383c2580e34300b47073e"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#a79a8689b93a383c2580e34300b47073e">ICARUSgeometryChecker.performGeometryChecks</a></div><div class="ttdeci">def performGeometryChecks</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00647">ICARUSgeometryChecker.py:647</a></div></div>
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_a9fb44db05b1e188f8f17c2187574f94c"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#a9fb44db05b1e188f8f17c2187574f94c">ICARUSgeometryChecker.checkWireEndingsInPlane</a></div><div class="ttdeci">def checkWireEndingsInPlane</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00245">ICARUSgeometryChecker.py:245</a></div></div>
 <div class="ttc" id="find__global__symbol_8sh_html_ae2fcd9af85e9525dadab1ac2cb45a22d"><div class="ttname"><a href="../../d5/df9/find__global__symbol_8sh.html#ae2fcd9af85e9525dadab1ac2cb45a22d">X</a></div><div class="ttdeci">then echo echo For and will not be changed by echo further linking echo echo B echo The symbol is in the uninitialized data multiple common symbols may appear with the echo same name If the symbol is defined the common echo symbols are treated as undefined references For more echo details on common see the discussion of warn common echo in *Note Linker see the discussion of warn common echo in *Note Linker such as a global int variable echo as opposed to a large global array echo echo I echo The symbol is an indirect reference to another symbol This echo is a GNU extension to the a out object file format which is echo rarely used echo echo N echo The symbol is a debugging symbol echo echo R echo The symbol is in a read only data section echo echo S echo The symbol is in an uninitialized data section for small echo objects echo echo T echo The symbol is in the the normal defined echo symbol is used with no error When a weak undefined symbol echo is linked and the symbol is not the value of the echo weak symbol becomes zero with no error echo echo W echo The symbol is a weak symbol that has not been specifically echo tagged as a weak object symbol When a weak defined symbol echo is linked with a normal defined the normal defined echo symbol is used with no error When a weak undefined symbol echo is linked and the symbol is not the value of the echo weak symbol becomes zero with no error echo echo echo The symbol is a stabs symbol in an a out object file In echo this the next values printed are the stabs other echo the stabs desc and the stab type Stabs symbols are echo used to hold debugging information For more echo see *Note or object file format specific echo echo For Mac OS X</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/df9/find__global__symbol_8sh_source.html#l00107">find_global_symbol.sh:107</a></div></div>
+<div class="ttc" id="namespaceopdet_1_1factory_html_a22a875ecbd4a799c06ecb0057ef7fb73"><div class="ttname"><a href="../../dc/d2d/namespaceopdet_1_1factory.html#a22a875ecbd4a799c06ecb0057ef7fb73">opdet::factory::join</a></div><div class="ttdeci">S join(S const &amp;sep, Coll const &amp;s)</div><div class="ttdoc">Returns a concatenation of strings in s separated by sep. </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dfe/OpRecoFactoryStuff_8h_source.html#l00573">OpRecoFactoryStuff.h:573</a></div></div>
 <div class="ttc" id="namespaceICARUSservices_html_a1c0afd83f5f9a93b9b089fbfdb1cdb70"><div class="ttname"><a href="../../dc/d08/namespaceICARUSservices.html#a1c0afd83f5f9a93b9b089fbfdb1cdb70">ICARUSservices.ServiceManager</a></div><div class="ttdeci">tuple ServiceManager</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d23/ICARUSservices_8py_source.html#l00101">ICARUSservices.py:101</a></div></div>
 <div class="ttc" id="namespaceICARUSgeometryChecker_html_a45177e4511f6f1e07c63c8ae879c5a09"><div class="ttname"><a href="../../d3/d82/namespaceICARUSgeometryChecker.html#a45177e4511f6f1e07c63c8ae879c5a09">ICARUSgeometryChecker.checkWireAlignment</a></div><div class="ttdeci">def checkWireAlignment</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1f/ICARUSgeometryChecker_8py_source.html#l00528">ICARUSgeometryChecker.py:528</a></div></div>
 <div class="ttc" id="file__to__url_8sh_html_a66bd5563ea501595a0740b7c7635ba48"><div class="ttname"><a href="../../d0/dea/file__to__url_8sh.html#a66bd5563ea501595a0740b7c7635ba48">list</a></div><div class="ttdeci">list</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dea/file__to__url_8sh_source.html#l00028">file_to_url.sh:28</a></div></div>

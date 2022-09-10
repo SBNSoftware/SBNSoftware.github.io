@@ -532,13 +532,14 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="comment">// index of the averaged</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">unsigned</span> avgd_index = std::distance(avgd.begin(), std::max_element(avgd.begin(), avgd.end()));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">unsigned</span> avgd_index = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(avgd.begin(), std::max_element(avgd.begin(), avgd.end()));</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// convert this to index in angles list</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">unsigned</span> angles_index = avgd_index + IAVG + lo;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">return</span> angles_index;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;} </div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -653,7 +654,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// start at the end of the branch and count backwards</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i_branch_hierarchy = 0; i_branch_hierarchy &lt; plane.branchHierarchy[i_branch].size(); i_branch_hierarchy++) {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// look up the index of the current branch</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">unsigned</span> this_branch = std::distance(plane.branchIDs.begin(), std::find(plane.branchIDs.begin(), plane.branchIDs.end(), plane.branchHierarchy[i_branch][i_branch_hierarchy])); </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">unsigned</span> this_branch = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(plane.branchIDs.begin(), std::find(plane.branchIDs.begin(), plane.branchIDs.end(), plane.branchHierarchy[i_branch][i_branch_hierarchy])); </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (this_branch == plane.branchIDs.size()) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;BAD: UNFOUND BRANCH ID\n&quot;</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">continue</span>;</div>
@@ -674,7 +675,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordtype">unsigned</span> chk_branch = plane.branchIDs.size();</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">int</span> check_hitID = plane.angles[this_branch][i].hitID;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">while</span> (i_check_branch_hierarchy &gt;= 0 &amp;&amp; chk_branch == plane.branchIDs.size()) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          chk_branch = std::distance(plane.branchIDs.begin(), std::find(plane.branchIDs.begin(), plane.branchIDs.end(), plane.branchHierarchy[i_branch][i_check_branch_hierarchy]));</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          chk_branch = <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">std::distance</a>(plane.branchIDs.begin(), std::find(plane.branchIDs.begin(), plane.branchIDs.end(), plane.branchHierarchy[i_branch][i_check_branch_hierarchy]));</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          i_check_branch_hierarchy --;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> (chk_branch &lt; plane.branchIDs.size()) {</div>
@@ -710,6 +711,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">return</span> {ret, branch_start};</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="ttc" id="neoSmazza_8sh_html_ae55989c903f0c76190facfb5e5211732"><div class="ttname"><a href="../../de/d71/neoSmazza_8sh.html#ae55989c903f0c76190facfb5e5211732">if</a></div><div class="ttdeci">then if[[&quot;$THISISATEST&quot;==1]]</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d71/neoSmazza_8sh_source.html#l00095">neoSmazza.sh:95</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -254,7 +254,7 @@ Private Attributes</h2></td></tr>
 <li><code>LogCategory</code> (string): name of the output stream category for console messages (managed by MessageFacility library). </li>
 </ul>
 
-<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00165">165</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00166">166</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a488ba53d0d4d1db022934b9fd9b0e4b5"></a>
 <div class="memitem">
@@ -328,7 +328,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00169">169</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00170">170</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
 
 </div>
 </div>
@@ -365,8 +365,8 @@ Private Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00172">172</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{ disable, Input1, Input2, AND, OR };</div>
+<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00173">173</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{ disable, Input1, Input2, AND, OR };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,7 +405,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="comment">//</span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="comment">// more complex parameter parsing</span></div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  std::string <span class="keyword">const</span> discrModuleLabel = config().TriggerGatesTag();</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  std::string <span class="keyword">const</span> discrModuleLabel = config().TriggerGatesTag().value_or(<span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; thresholdStr: config().<a class="code" href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl.html#a761fa70180817806779086b27954f099">Thresholds</a>()) {</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    art::InputTag <span class="keyword">const</span> inputTag = <a class="code" href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#afbc4d2a02892c03f030329d684ece3ba">makeTag</a>(thresholdStr, discrModuleLabel);</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#a543b5fbd980a08e0ccae27f5618cf712">fADCthresholds</a>[thresholdStr]</div>
@@ -463,7 +463,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="triggersim__eastmodule__icarus__data_8fcl_html_a761fa70180817806779086b27954f099"><div class="ttname"><a href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl.html#a761fa70180817806779086b27954f099">Thresholds</a></div><div class="ttdeci">BEGIN_PROLOG BeamGateDuration pmtthr physics producers trigtilewindowORS Thresholds</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d16/triggersim__eastmodule__icarus__data_8fcl_source.html#l00124">triggersim_eastmodule_icarus_data.fcl:124</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1LVDSgates_html_afbc4d2a02892c03f030329d684ece3ba"><div class="ttname"><a href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#afbc4d2a02892c03f030329d684ece3ba">icarus::trigger::LVDSgates::makeTag</a></div><div class="ttdeci">static art::InputTag makeTag(std::string const &amp;thresholdStr, std::string const &amp;defModule)</div><div class="ttdoc">Converts a threshold string into an input tag. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/LVDSgates__module_8cc_source.html#l00862">LVDSgates_module.cc:862</a></div></div>
 <div class="ttc" id="namespaceutil_html_aac4707f84c6dc5c269f147302722611f"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#aac4707f84c6dc5c269f147302722611f">util::const_values</a></div><div class="ttdeci">decltype(auto) const_values(Coll &amp;&amp;coll)</div><div class="ttdoc">Range-for loop helper iterating across the constant values of the specified collection. </div></div>
-<div class="ttc" id="classicarus_1_1trigger_1_1LVDSgates_html_af08ad68b083996399fea3dfa46ad2a4e"><div class="ttname"><a href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#af08ad68b083996399fea3dfa46ad2a4e">icarus::trigger::LVDSgates::makeOutputInstanceName</a></div><div class="ttdeci">static std::string makeOutputInstanceName(art::InputTag const &amp;inputTag, std::string const &amp;defModule)</div><div class="ttdoc">Converts an input tag into an instance name for the corresponding output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/LVDSgates__module_8cc_source.html#l00873">LVDSgates_module.cc:873</a></div></div>
+<div class="ttc" id="classicarus_1_1trigger_1_1LVDSgates_html_af08ad68b083996399fea3dfa46ad2a4e"><div class="ttname"><a href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#af08ad68b083996399fea3dfa46ad2a4e">icarus::trigger::LVDSgates::makeOutputInstanceName</a></div><div class="ttdeci">static std::string makeOutputInstanceName(art::InputTag const &amp;inputTag, std::string const &amp;defModule)</div><div class="ttdoc">Converts an input tag into an instance name for the corresponding output. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/LVDSgates__module_8cc_source.html#l00878">LVDSgates_module.cc:878</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1LVDSgates_html_a03fc8673cba32dcd020eacf1551a0097"><div class="ttname"><a href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#a03fc8673cba32dcd020eacf1551a0097">icarus::trigger::LVDSgates::fProduceWaveformAssns</a></div><div class="ttdeci">bool fProduceWaveformAssns</div><div class="ttdoc">Whether to produce gate/waveform associations. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/LVDSgates__module_8cc_source.html#l00302">LVDSgates_module.cc:302</a></div></div>
 <div class="ttc" id="namespaceicarus_1_1trigger_html_a910f46c9a8fc50918c7ec07af219aa92"><div class="ttname"><a href="../../dd/df6/namespaceicarus_1_1trigger.html#a910f46c9a8fc50918c7ec07af219aa92">icarus::trigger::OpticalTriggerGateData_t</a></div><div class="ttdeci">icarus::trigger::ReadoutTriggerGate&lt; TriggerGateTick_t, TriggerGateTicks_t, raw::Channel_t &gt; OpticalTriggerGateData_t</div><div class="ttdoc">Type of trigger gate data serialized into art data products. </div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7a/OpticalTriggerGate_8h_source.html#l00044">OpticalTriggerGate.h:44</a></div></div>
 <div class="ttc" id="classicarus_1_1trigger_1_1LVDSgates_html_a543b5fbd980a08e0ccae27f5618cf712"><div class="ttname"><a href="../../dd/d73/classicarus_1_1trigger_1_1LVDSgates.html#a543b5fbd980a08e0ccae27f5618cf712">icarus::trigger::LVDSgates::fADCthresholds</a></div><div class="ttdeci">std::map&lt; std::string, SourceInfo_t &gt; fADCthresholds</div><div class="ttdoc">ADC thresholds to read, and the input tag connected to their data. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/LVDSgates__module_8cc_source.html#l00293">LVDSgates_module.cc:293</a></div></div>
@@ -1000,14 +1000,14 @@ template&lt;typename Op &gt; </div>
 
 <p>Converts an input tag into an instance name for the corresponding output. </p>
 
-<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00873">873</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;{</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  <span class="keywordflow">return</span> (inputTag.label() == defModule)</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    ? inputTag.instance()</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;    : inputTag.instance().empty()</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;      ? inputTag.label(): inputTag.label() + inputTag.instance()</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    ;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;} <span class="comment">// icarus::trigger::LVDSgates::makeTag()</span></div>
+<p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00878">878</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;{</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keywordflow">return</span> (inputTag.label() == defModule)</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    ? inputTag.instance()</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    : inputTag.instance().empty()</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;      ? inputTag.label(): inputTag.label() + inputTag.instance()</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    ;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;} <span class="comment">// icarus::trigger::LVDSgates::makeTag()</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1047,11 +1047,16 @@ template&lt;typename Op &gt; </div>
 
 <p>Definition at line <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html#l00862">862</a> of file <a class="el" href="../../d9/d33/LVDSgates__module_8cc_source.html">LVDSgates_module.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;{</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="keywordflow">return</span> (thresholdStr.find(<span class="charliteral">&#39;:&#39;</span>) == std::string::npos)</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    ? art::InputTag{ defModule, thresholdStr }</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    : art::InputTag{ thresholdStr }</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    ;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;} <span class="comment">// icarus::trigger::LVDSgates::makeTag()</span></div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="keywordflow">return</span> (thresholdStr.find(<span class="charliteral">&#39;:&#39;</span>) != std::string::npos)</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    ? art::InputTag{ thresholdStr }</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    : defModule.empty()</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      ? <span class="keywordflow">throw</span> (art::Exception(art::errors::Configuration)</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;No default module label (`TriggerGatesTag`) specified&quot;</span></div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;           <span class="stringliteral">&quot;, and it&#39;s needed for threshold &#39;&quot;</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        &lt;&lt; thresholdStr &lt;&lt; <span class="stringliteral">&quot;&#39;.\n&quot;</span>)</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;      : art::InputTag{ defModule, thresholdStr }</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    ;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;} <span class="comment">// icarus::trigger::LVDSgates::makeTag()</span></div>
 </div><!-- fragment -->
 </div>
 </div>

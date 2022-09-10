@@ -546,11 +546,12 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;{<span class="comment"></span></div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">  ///Calculate the distance between the centre of the flash and the centre of a line connecting two adjacent space points.</span></div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment"></span>  <span class="keywordtype">double</span> <a class="code" href="../../de/d0f/namespacetca.html#a4f3087743ae6823cd5b6e9ff1a344843">Length</a> = hypot(fabs(EndY - StartY), fabs(EndZ - StartZ));</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordtype">double</span> distance =</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordtype">double</span> <a class="code" href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">distance</a> =</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    ((PointZ - StartZ) * (EndY - StartY) - (PointY - StartY) * (EndZ - StartZ)) / Length;</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">return</span> fabs(distance);</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
 <div class="ttc" id="namespacetca_html_a4f3087743ae6823cd5b6e9ff1a344843"><div class="ttname"><a href="../../de/d0f/namespacetca.html#a4f3087743ae6823cd5b6e9ff1a344843">tca::Length</a></div><div class="ttdeci">float Length(const PFPStruct &amp;pfp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d86/PFPUtils_8cxx_source.html#l03304">PFPUtils.cxx:3304</a></div></div>
+<div class="ttc" id="namespaceicarus_html_a6ad3253842c1a0803df7cd600b60c35f"><div class="ttname"><a href="../../da/d4d/namespaceicarus.html#a6ad3253842c1a0803df7cd600b60c35f">icarus::distance</a></div><div class="ttdeci">double distance(geo::Point_t const &amp;point, CathodeDesc_t const &amp;cathode)</div><div class="ttdoc">Returns the distance of a point from the cathode. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dd1/CathodeCrossingUtils_8cxx_source.html#l00035">CathodeCrossingUtils.cxx:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

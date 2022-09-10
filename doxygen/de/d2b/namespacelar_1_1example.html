@@ -184,7 +184,7 @@ Functions</h2></td></tr>
 <tr class="separator:a0008ba24a7e30cdf1b0e1fd7fc66b768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aa82dcbc80b1c72e88d27e6df97ff80c4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::string, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2b/namespacelar_1_1example.html#aa82dcbc80b1c72e88d27e6df97ff80c4">splitROOTpath</a> (std::string path)</td></tr>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2b/namespacelar_1_1example.html#aa82dcbc80b1c72e88d27e6df97ff80c4">splitROOTpath</a> (std::string <a class="el" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>)</td></tr>
 <tr class="memdesc:aa82dcbc80b1c72e88d27e6df97ff80c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits path into <a class="el" href="../../d0/d10/namespaceROOT.html">ROOT</a> file name and directory path.  <a href="#aa82dcbc80b1c72e88d27e6df97ff80c4">More...</a><br/></td></tr>
 <tr class="separator:aa82dcbc80b1c72e88d27e6df97ff80c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -317,14 +317,14 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;   <span class="comment">// find the ROOT file name</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;   std::string::size_type iSuffix = std::string::npos;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;   <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      iSuffix = path.rfind(suffix, iSuffix);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      iSuffix = <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.rfind(suffix, iSuffix);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="keywordflow">if</span> (iSuffix == std::string::npos) <span class="keywordflow">return</span> {}; <span class="comment">// failure: no suffix</span></div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="comment">// if it&#39;s not &quot;suffix:&quot; or &quot;suffix/&quot; or at end of string, it&#39;s not it</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="keyword">auto</span> iAfter = iSuffix + suffix.length();</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">if</span> ((iAfter &lt; path.length())</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;         &amp;&amp; (path[iAfter] != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;         &amp;&amp; (path[iAfter] != <span class="charliteral">&#39;:&#39;</span>)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">if</span> ((iAfter &lt; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.length())</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;         &amp;&amp; (<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>[iAfter] != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;         &amp;&amp; (<a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>[iAfter] != <span class="charliteral">&#39;:&#39;</span>)</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;         )</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      {</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;         <span class="comment">// oops... this suffix is invalid; keep searching</span></div>
@@ -336,13 +336,14 @@ template&lt;typename Stream &gt; </div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="comment">// we found a proper suffix</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      std::pair&lt;std::string, std::string&gt; result;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      result.first = path.substr(0U, iAfter); <span class="comment">// file path</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">if</span> (iAfter &lt; path.length())</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;         result.second = path.substr(iAfter + 1, path.length()); <span class="comment">// ROOT dir</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      result.first = <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.substr(0U, iAfter); <span class="comment">// file path</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">if</span> (iAfter &lt; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.length())</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;         result.second = <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.substr(iAfter + 1, <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a>.length()); <span class="comment">// ROOT dir</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;   } <span class="keywordflow">while</span> (<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;} <span class="comment">// lar::example::splitROOTpath()</span></div>
+<div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_a5f35fdd8d6b31fcea15200951c830767"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#a5f35fdd8d6b31fcea15200951c830767">path</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 caloskimCalorimetryCryoE physics caloskimCalorimetryCryoW physics path</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

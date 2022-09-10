@@ -91,6 +91,7 @@ var searchData=
   ['opparamaction_2eh',['OpParamAction.h',['../da/dda/OpParamAction_8h.html',1,'']]],
   ['opparamsd_2ecxx',['OpParamSD.cxx',['../de/d2d/OpParamSD_8cxx.html',1,'']]],
   ['opparamsd_2eh',['OpParamSD.h',['../dd/df6/OpParamSD_8h.html',1,'']]],
+  ['oprecofactorystuff_2eh',['OpRecoFactoryStuff.h',['../d1/dfe/OpRecoFactoryStuff_8h.html',1,'']]],
   ['opsimhitprinter_2ecc',['OpSimHitPrinter.cc',['../d3/dcd/OpSimHitPrinter_8cc.html',1,'']]],
   ['opt0finder_5fsbnd_2efcl',['opt0finder_sbnd.fcl',['../db/d23/opt0finder__sbnd_8fcl.html',1,'']]],
   ['opt0finderana_5fsbnd_2efcl',['opt0finderana_sbnd.fcl',['../de/dee/opt0finderana__sbnd_8fcl.html',1,'']]],
