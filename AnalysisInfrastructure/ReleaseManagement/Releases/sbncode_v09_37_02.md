@@ -1,10 +1,10 @@
 ---
 layout: page
-title: sbncode_v09_37_02_00
+title: sbncode_v09_37_02
 toc: true
 ---
 
-sbncode_v09_37_02_00 Release Notes
+sbncode_v09_37_02 Release Notes
 =======================================================================================
 
 [List of sbncode releases](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases)
@@ -21,9 +21,9 @@ Purpose
 
 New features
 ---------------------------------------------------
-SBN2020A production release of sbncode (tags v09_37_02_00 in cvmfs, SBN2022A in GitHub)  has been cut and distributed.
+SBN2020A production release of sbncode (tags v09_37_02 in cvmfs, SBN2022A in GitHub)  has been cut and distributed.
 
-* sbncode (v09_37_02_00):
+* sbncode (v09_37_02):
  
  Using:
   * larsoft             v09_37_01_02
