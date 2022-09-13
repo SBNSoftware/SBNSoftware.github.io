@@ -17,7 +17,7 @@ Date
 
 Purpose
 ---------------------------------------------------
-* Weekly release
+* SBN2022A production patch release
 
 New features
 ---------------------------------------------------
