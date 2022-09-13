@@ -21,7 +21,7 @@ Purpose
 
 New features
 ---------------------------------------------------
-A procduction patch release of sbncode and sbnana (v09_37_02_01)  has been cut and distributed.
+A SBN2022A production patch release of sbncode and sbnana (v09_37_02_01)  has been cut and distributed.
 update for fix in sbnanaobj; new release v09_37_02_01 for SBN 2022A
 * sbncode (v09_37_02_01):
   Using:
