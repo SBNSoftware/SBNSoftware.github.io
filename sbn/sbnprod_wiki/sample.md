@@ -247,22 +247,32 @@ Processed Data SBN Production Samples
 
 ICARUS DATA
 --------------------------
+
+### Notes on samples ###
+* Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
+* Run 1 batch 2 is the processing of run_number > 7621 and run_number < 8460 (before the update to the new DAQ configuration)
+* Run 1 batch 3 is the processing of run_number >= 8460 and run_number < 8598 (after the update to the new DAQ configuration resulting in 8 new data stream: (offbeam) BNB/NuMI Majority/MinBias)
+
+ 
+
+| Sample Description | production push | release version | # Events | Sample type | Samweb definition |    
+| --- | --- | --- | --- | --- | --- | 
 | Offbeam NuMI MinBias stream | Run 1 batch3 | v09_37_02_09 | 374836 | stage0 | IcarusProd_Run1_batch3_OffBeamNuMIMinBiasstream_stage0      |  
 | --- | --- | --- | 374836 | stage1 | IcarusProd_Run1_batch3_OffBeamNuMIMinBiasstream_stage1 |
-| Offbeam BNB MinBias stream | Run 1 batch3 | v09_37_02_09 | 736968 | stage0 | IcarusProd_Run1_batch3_OffBeamBNBMinBiasstream_stage0        | 
-| --- | --- | --- | 736968 | stage1 | IcarusProd_Run1_batch3_OffBeamBNBMinBiasstream_stage1 |
+| Offbeam BNB MinBias stream | Run 1 batch3 | v09_37_02_09 | 741147 | stage0 | IcarusProd_Run1_batch3_OffBeamBNBMinBiasstream_stage0        | 
+| --- | --- | --- | 741147 | stage1 | IcarusProd_Run1_batch3_OffBeamBNBMinBiasstream_stage1 |
 | NuMI MinBias stream | Run 1 batch3 | v09_37_02_09 | 19566 | stage0 | IcarusProd_Run1_batch3_NuMIMinBiasstream_stage0     |  
 | --- | --- | --- | 19566 | stage1 | IcarusProd_Run1_batch3_NuMIMinBiasstream_stage1 |
-| BNB MinBias stream | Run 1 batch3 | v09_37_02_09 | 42134 | stage0 | IcarusProd_Run1_batch3_BNBMinBiasstream_stage0       | 
-| --- | --- | --- | 42134 | stage1 | IcarusProd_Run1_batch3_BNBMinBiasstream_stage1 |            
+| BNB MinBias stream | Run 1 batch3 | v09_37_02_09 | 42680 | stage0 | IcarusProd_Run1_batch3_BNBMinBiasstream_stage0       | 
+| --- | --- | --- | 42680 | stage1 | IcarusProd_Run1_batch3_BNBMinBiasstream_stage1 |            
 | Offbeam NuMI Majority stream | Run 1 batch3 | v09_37_02_09 | 109510 | stage0 | IcarusProd_Run1_batch3_OffBeamNuMIMajoritystream_stage0      |       
 | --- | --- | --- | 109510 | stage1 | IcarusProd_Run1_batch3_OffBeamNuMIMajoritystream_stage1 |
-| Offbeam BNB Majority stream | Run 1 batch3 | v09_37_02_09 | 227027 | stage0 | IcarusProd_Run1_batch3_OffBeamBNBMajoritystream_stage0        | 
-| --- | --- | --- | 227027 | stage1 | IcarusProd_Run1_batch3_OffBeamBNBMajoritystream_stage1 |
+| Offbeam BNB Majority stream | Run 1 batch3 | v09_37_02_09 | 231169 | stage0 | IcarusProd_Run1_batch3_OffBeamBNBMajoritystream_stage0        | 
+| --- | --- | --- | 231169 | stage1 | IcarusProd_Run1_batch3_OffBeamBNBMajoritystream_stage1 |
 | NuMI Majority stream | Run 1 batch3 | v09_37_02_09 | 284336 | stage0 | IcarusProd_Run1_batch3_NuMIMajoritystream_stage0     |       
 | --- | --- | --- | 284336 | stage1 | IcarusProd_Run1_batch3_NuMIMajoritystream_stage1 |
-| BNB Majority stream | Run 1 batch3 | v09_37_02_09 | 362487 | stage0 | IcarusProd_Run1_batch3_BNBMajoritystream_stage0       | 
-| --- | --- | --- | 362487 | stage1 | IcarusProd_Run1_batch3_BNBMajoritystream_stage1 |
+| BNB Majority stream | Run 1 batch3 | v09_37_02_09 | 368711 | stage0 | IcarusProd_Run1_batch3_BNBMajoritystream_stage0       | 
+| --- | --- | --- | 368711 | stage1 | IcarusProd_Run1_batch3_BNBMajoritystream_stage1 |
 | Offbeam NuMI stream | Run 1 batch2 | v09_37_02_03 | 102488 | stage0 | IcarusProd_Run1_batch2_OffBeamNuMIstream_stage0      |       
 | --- | --- | --- | 102488 | stage1 | IcarusProd_Run1_batch2_OffBeamNuMIstream_stage1 |
 | Offbeam BNB stream | Run 1 batch2 | v09_37_02_03 | 327855 | stage0 | IcarusProd_Run1_batch2_OffBeamBNBstream_stage0        | 
