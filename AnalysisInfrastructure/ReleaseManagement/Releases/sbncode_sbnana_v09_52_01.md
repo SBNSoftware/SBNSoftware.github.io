@@ -28,6 +28,7 @@ A weekly release of sbncode and sbnana (v09_52_01)  has been cut and distributed
   * larsoft             v09_52_01
   * sbnobj              v09_14_01
     * lardataobj v09_07_01
+  * sbnanaobj           v09_18_04
   * cetbuildtools v8_20_00
 
   Includes:
@@ -35,6 +36,7 @@ A weekly release of sbncode and sbnana (v09_52_01)  has been cut and distributed
 
 * sbnana (v09_52_01):
   Using:
+  * sbnanaobj           v09_18_04
   * cetbuildtools v8_20_00
 
   Includes:
