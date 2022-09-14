@@ -11,6 +11,21 @@ These are the releases tagged until now:
   
 | Version        |      Notes                       |      Detailed Notes                          
 |----------------|----------------------------------|--------------------------------------------
+|`v09_58_02`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_58_02)
+|`v09_58_01`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_58_01)
+|`v09_58_00`    | 'sbncode' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_58_00)
+|`v09_56_00_01`  | 'sbncode' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_56_00_01)
+|`v09_56_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_56_00)
+|`v09_55_01`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_55_01)
+|`v09_55_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_55_00)
+|`v09_54_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_54_00)
+|`v09_53_02`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_53_02)
+|`v09_37_02_07`  | 'sbncode' SBN2022A production patch release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_37_02_07)
+|`v09_53_01`     | 'sbncode' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_53_01)
+|`v09_53_00`     | 'sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbnana_v09_53_00)
+|`v09_53_00_01`  | 'sbncode' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_53_00_01)
+|`v09_37_02_06`  | 'sbncode' SBN2022A production patch release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_37_02_06)
+|`v09_52_01`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_52_01)
 |`v09_37_02_05`  | 'sbncode' SBN2022A production patch release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_37_02_05)
 |`v09_52_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_52_00)
 |`v09_51_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_51_00)
