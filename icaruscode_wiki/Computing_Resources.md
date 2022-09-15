@@ -308,8 +308,8 @@ And, about FIFE recomendations, [Project**-**py](https://cdcvs.fnal.gov/redmine/
 is the recommended job submission tool (SBN-specific wiki documentation pending).
 
 
-Software distribution
-----------------------
+Software development and distribution
+--------------------------------------
 
 ICARUS code and the "software stack" it relies on are distributed in
 binary form for a few supported platforms.
@@ -342,6 +342,12 @@ The full path to access the area is:
 
 _[[Instructions](Write_files_to_CVMFS.md) on how to deploy software in there are
 [elsewhere](Write_files_to_CVMFS.md).]_
+
+    
+### Source code
+
+ICARUS software codebase is stored as part of SBN, using GitHub organization [`SBNSoftware`](https://github.com/SBNSoftware) (which should not come to a surprise since it's where this wiki is also being hosted).
+The development follows a pull request model. While pull requests can be made from personal forks, it is also possible to push pull request branches into `SBNSoftware` itself. To join the organization, follow the [instructions in SBN wiki](https://sbnsoftware.github.io/AnalysisInfrastructure/github-migration-to-do-list.html) and in particular [the request form](https://docs.google.com/forms/d/e/1FAIpQLSf_jrYDbaC3_WoLDzBappZkEpPpyD7tSt7UWF59TUyUEAjaSA/viewform?usp=sf_link) therein.
 
 
 
