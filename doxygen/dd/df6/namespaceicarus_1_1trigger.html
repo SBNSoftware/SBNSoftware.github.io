@@ -269,10 +269,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0034514645159473e385177b357e3582"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a> = sbn::triggerLocation</td></tr>
-<tr class="separator:a0034514645159473e385177b357e3582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3e51accc063c76383f4bcef91cde56"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a> = sbn::triggerSource</td></tr>
-<tr class="separator:a9e3e51accc063c76383f4bcef91cde56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a4799819d963216971a31116ca8bc4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a49a4799819d963216971a31116ca8bc4">ADCCounts_t</a> = <a class="el" href="../../d3/d63/namespaceutil_1_1quantities.html#a81dec5423f237933dfc779a378e33549">util::quantities::counts_as</a>&lt; <a class="el" href="../../d9/d63/namespaceraw.html#a8b8fff2e2c09178dd4d634156f54863e">raw::ADC_Count_t</a> &gt;</td></tr>
 <tr class="memdesc:a49a4799819d963216971a31116ca8bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC counts for optical detector readout.  <a href="#a49a4799819d963216971a31116ca8bc4">More...</a><br/></td></tr>
 <tr class="separator:a49a4799819d963216971a31116ca8bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +285,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ce2de9cbdd80f7e8a615f96f3af605a">OpDetWaveformMetaDataProductMap_t</a> = <a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c">util::DataProductPointerMap_t</a>&lt; <a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html">sbn::OpDetWaveformMeta</a> &gt;</td></tr>
 <tr class="memdesc:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map <code><a class="el" href="../../d6/d72/namespaceutil.html#af1de93ae9853deac245708c89676409c" title="Type of map for data product pointers to art pointers. ">util::DataProductPointerMap_t</a></code> for <code><a class="el" href="../../da/d09/structsbn_1_1OpDetWaveformMeta.html" title="Derivative information from raw::OpDetWaveform data. ">sbn::OpDetWaveformMeta</a></code> objects.  <a href="#a5ce2de9cbdd80f7e8a615f96f3af605a">More...</a><br/></td></tr>
 <tr class="separator:a5ce2de9cbdd80f7e8a615f96f3af605a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08aef7b0035ee8cbdac5a791bb9bc70"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a> = sbn::triggerLocation</td></tr>
+<tr class="separator:af08aef7b0035ee8cbdac5a791bb9bc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c06aa8ce686324589816a87563fa77"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a> = sbn::triggerSource</td></tr>
+<tr class="separator:a79c06aa8ce686324589816a87563fa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63acccf84f20ffe83ce07b16ca085a28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a63acccf84f20ffe83ce07b16ca085a28">TriggerGateTick_t</a> = <a class="el" href="../../de/d7e/structutil_1_1quantities_1_1concepts_1_1Quantity.html#a9af2f90e67ec6e3b65593a418d5d5c99">util::quantities::tick::value_t</a></td></tr>
 <tr class="memdesc:a63acccf84f20ffe83ce07b16ca085a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick point.  <a href="#a63acccf84f20ffe83ce07b16ca085a28">More...</a><br/></td></tr>
 <tr class="separator:a63acccf84f20ffe83ce07b16ca085a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,45 +460,27 @@ OpDetInfo &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aaec6e3cf61aa4e34474ce22f4c08edd8"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aaec6e3cf61aa4e34474ce22f4c08edd8">kEast</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td></tr>
-<tr class="separator:aaec6e3cf61aa4e34474ce22f4c08edd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a432ebb2a6a5618508c596bf1437e4"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a96a432ebb2a6a5618508c596bf1437e4">kWest</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td></tr>
-<tr class="separator:a96a432ebb2a6a5618508c596bf1437e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fab7e1ddb6eabdf5273eafb0504feb"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad4fab7e1ddb6eabdf5273eafb0504feb">kNTriggerLocation</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::NBits)</td></tr>
-<tr class="separator:ad4fab7e1ddb6eabdf5273eafb0504feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecfcd6c188b0c49a122c0b741588f89"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ecfcd6c188b0c49a122c0b741588f89">kBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::BNB)</td></tr>
-<tr class="separator:a5ecfcd6c188b0c49a122c0b741588f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fb790587a9d7758f9a3f028c32e780"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a05fb790587a9d7758f9a3f028c32e780">kNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NuMI)</td></tr>
-<tr class="separator:a05fb790587a9d7758f9a3f028c32e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6ebaddfb3c4655268540fc54629301"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#abd6ebaddfb3c4655268540fc54629301">kOffBeamBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td></tr>
-<tr class="separator:abd6ebaddfb3c4655268540fc54629301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9606862f6644207f75d8e89af9359999"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9606862f6644207f75d8e89af9359999">kOffBeamNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td></tr>
-<tr class="separator:a9606862f6644207f75d8e89af9359999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0ea5027944cdb2d3845058fbdd3283"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e0ea5027944cdb2d3845058fbdd3283">kCalibration</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::Calib)</td></tr>
-<tr class="separator:a9e0ea5027944cdb2d3845058fbdd3283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad27bc2f6e9db39c8743b6ba52b09cf1"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aad27bc2f6e9db39c8743b6ba52b09cf1">kNTriggerSource</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NBits)</td></tr>
-<tr class="separator:aad27bc2f6e9db39c8743b6ba52b09cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05d3765e27f54a26189881731dd61d0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae05d3765e27f54a26189881731dd61d0"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#ae05d3765e27f54a26189881731dd61d0">isTrackedTriggerGate_v</a> = <a class="el" href="../../d1/d96/structicarus_1_1trigger_1_1isTrackedTriggerGate.html">isTrackedTriggerGate</a>&lt;T&gt;::<a class="el" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></td></tr>
 <tr class="memdesc:ae05d3765e27f54a26189881731dd61d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <code>T</code> is some form of TrackedTriggerGate`.  <a href="#ae05d3765e27f54a26189881731dd61d0">More...</a><br/></td></tr>
 <tr class="separator:ae05d3765e27f54a26189881731dd61d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec6e3cf61aa4e34474ce22f4c08edd8"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aaec6e3cf61aa4e34474ce22f4c08edd8">kEast</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td></tr>
+<tr class="memitem:aaec6e3cf61aa4e34474ce22f4c08edd8"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aaec6e3cf61aa4e34474ce22f4c08edd8">kEast</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td></tr>
 <tr class="separator:aaec6e3cf61aa4e34474ce22f4c08edd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a432ebb2a6a5618508c596bf1437e4"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a96a432ebb2a6a5618508c596bf1437e4">kWest</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td></tr>
+<tr class="memitem:a96a432ebb2a6a5618508c596bf1437e4"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a96a432ebb2a6a5618508c596bf1437e4">kWest</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td></tr>
 <tr class="separator:a96a432ebb2a6a5618508c596bf1437e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fab7e1ddb6eabdf5273eafb0504feb"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad4fab7e1ddb6eabdf5273eafb0504feb">kNTriggerLocation</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::NBits)</td></tr>
+<tr class="memitem:ad4fab7e1ddb6eabdf5273eafb0504feb"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#ad4fab7e1ddb6eabdf5273eafb0504feb">kNTriggerLocation</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::NBits)</td></tr>
 <tr class="separator:ad4fab7e1ddb6eabdf5273eafb0504feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecfcd6c188b0c49a122c0b741588f89"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ecfcd6c188b0c49a122c0b741588f89">kBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::BNB)</td></tr>
+<tr class="memitem:a5ecfcd6c188b0c49a122c0b741588f89"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a5ecfcd6c188b0c49a122c0b741588f89">kBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::BNB)</td></tr>
 <tr class="separator:a5ecfcd6c188b0c49a122c0b741588f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fb790587a9d7758f9a3f028c32e780"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a05fb790587a9d7758f9a3f028c32e780">kNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NuMI)</td></tr>
+<tr class="memitem:a05fb790587a9d7758f9a3f028c32e780"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a05fb790587a9d7758f9a3f028c32e780">kNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::NuMI)</td></tr>
 <tr class="separator:a05fb790587a9d7758f9a3f028c32e780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd6ebaddfb3c4655268540fc54629301"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#abd6ebaddfb3c4655268540fc54629301">kOffBeamBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td></tr>
+<tr class="memitem:abd6ebaddfb3c4655268540fc54629301"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#abd6ebaddfb3c4655268540fc54629301">kOffBeamBNB</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td></tr>
 <tr class="separator:abd6ebaddfb3c4655268540fc54629301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9606862f6644207f75d8e89af9359999"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9606862f6644207f75d8e89af9359999">kOffBeamNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td></tr>
+<tr class="memitem:a9606862f6644207f75d8e89af9359999"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9606862f6644207f75d8e89af9359999">kOffBeamNuMI</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td></tr>
 <tr class="separator:a9606862f6644207f75d8e89af9359999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e0ea5027944cdb2d3845058fbdd3283"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e0ea5027944cdb2d3845058fbdd3283">kCalibration</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::Calib)</td></tr>
+<tr class="memitem:a9e0ea5027944cdb2d3845058fbdd3283"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e0ea5027944cdb2d3845058fbdd3283">kCalibration</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::Calib)</td></tr>
 <tr class="separator:a9e0ea5027944cdb2d3845058fbdd3283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad27bc2f6e9db39c8743b6ba52b09cf1"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aad27bc2f6e9db39c8743b6ba52b09cf1">kNTriggerSource</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NBits)</td></tr>
+<tr class="memitem:aad27bc2f6e9db39c8743b6ba52b09cf1"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#aad27bc2f6e9db39c8743b6ba52b09cf1">kNTriggerSource</a> = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::NBits)</td></tr>
 <tr class="separator:aad27bc2f6e9db39c8743b6ba52b09cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Exceptions associated to `icarus::trigger::ReadoutTriggerGate` class</div></td></tr>
 <tr class="memitem:abe8554234a63dbce09ec2b5a80162051"><td class="memTemplParams" colspan="2">template&lt;typename Gate &gt; </td></tr>
@@ -652,31 +634,31 @@ template&lt;typename TrackedType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0034514645159473e385177b357e3582"></a>
+<a class="anchor" id="af08aef7b0035ee8cbdac5a791bb9bc70"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef sbn::triggerLocation <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">icarus::trigger::triggerLocation</a></td>
+          <td class="memname">using <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">icarus::trigger::triggerLocation</a> = typedef sbn::triggerLocation</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00360">360</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00360">360</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9e3e51accc063c76383f4bcef91cde56"></a>
+<a class="anchor" id="a79c06aa8ce686324589816a87563fa77"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef sbn::triggerSource <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">icarus::trigger::triggerSource</a></td>
+          <td class="memname">using <a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">icarus::trigger::triggerSource</a> = typedef sbn::triggerSource</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00361">361</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00361">361</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -2997,7 +2979,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::BNB)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::BNB)</td>
         </tr>
       </table>
   </td>
@@ -3007,29 +2989,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00367">367</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5ecfcd6c188b0c49a122c0b741588f89"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::BNB)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00367">367</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00367">367</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3041,7 +3001,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kCalibration = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::Calib)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kCalibration = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::Calib)</td>
         </tr>
       </table>
   </td>
@@ -3051,29 +3011,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00371">371</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9e0ea5027944cdb2d3845058fbdd3283"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kCalibration = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::Calib)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00371">371</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00371">371</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3085,7 +3023,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kEast = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kEast = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td>
         </tr>
       </table>
   </td>
@@ -3095,29 +3033,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00363">363</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaec6e3cf61aa4e34474ce22f4c08edd8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kEast = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoEast)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00363">363</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00363">363</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3129,7 +3045,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerLocation = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::NBits)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerLocation = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::NBits)</td>
         </tr>
       </table>
   </td>
@@ -3139,29 +3055,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00365">365</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad4fab7e1ddb6eabdf5273eafb0504feb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerLocation = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::NBits)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00365">365</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00365">365</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3173,7 +3067,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerSource = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NBits)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerSource = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::NBits)</td>
         </tr>
       </table>
   </td>
@@ -3183,29 +3077,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00372">372</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aad27bc2f6e9db39c8743b6ba52b09cf1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNTriggerSource = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NBits)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00372">372</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00372">372</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3217,7 +3089,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NuMI)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::NuMI)</td>
         </tr>
       </table>
   </td>
@@ -3227,29 +3099,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00368">368</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a05fb790587a9d7758f9a3f028c32e780"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::NuMI)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00368">368</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00368">368</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3261,7 +3111,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td>
         </tr>
       </table>
   </td>
@@ -3271,29 +3121,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00369">369</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abd6ebaddfb3c4655268540fc54629301"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamBNB = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamBNB)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00369">369</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00369">369</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3305,7 +3133,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a79c06aa8ce686324589816a87563fa77">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td>
         </tr>
       </table>
   </td>
@@ -3315,29 +3143,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00370">370</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9606862f6644207f75d8e89af9359999"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kOffBeamNuMI = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a9e3e51accc063c76383f4bcef91cde56">triggerSource</a>&gt;(triggerSource::OffbeamNuMI)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00370">370</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00370">370</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>
@@ -3349,7 +3155,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kWest = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td>
+          <td class="memname">constexpr std::size_t icarus::trigger::kWest = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#af08aef7b0035ee8cbdac5a791bb9bc70">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td>
         </tr>
       </table>
   </td>
@@ -3359,29 +3165,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html#l00364">364</a> of file <a class="el" href="../../db/d38/sbnobj_2sbnobj_2Common_2Trigger_2BeamBits_8h_source.html">sbnobj/sbnobj/Common/Trigger/BeamBits.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a96a432ebb2a6a5618508c596bf1437e4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t icarus::trigger::kWest = <a class="el" href="../../de/d90/namespacesbn_1_1bits.html#aa8ee790d8c1e86ffb921fd9d357ace41">sbn::bits::value</a>&lt;<a class="el" href="../../dd/df6/namespaceicarus_1_1trigger.html#a0034514645159473e385177b357e3582">triggerLocation</a>&gt;(triggerLocation::CryoWest)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html#l00364">364</a> of file <a class="el" href="../../de/d8e/icaruscode_2icaruscode_2Decode_2BeamBits_8h_source.html">icaruscode/icaruscode/Decode/BeamBits.h</a>.</p>
+<p>Definition at line <a class="el" href="../../de/da7/BeamBits_8h_source.html#l00364">364</a> of file <a class="el" href="../../de/da7/BeamBits_8h_source.html">BeamBits.h</a>.</p>
 
 </div>
 </div>

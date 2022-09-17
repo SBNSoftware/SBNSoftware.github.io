@@ -79,79 +79,46 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="../../d7/dd8/calorimetryICARUS_8fcl.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d93/calorimetry_8fcl.html">calorimetry.fcl</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;BEGIN_PROLOG</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<a class="code" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a>:      @<a class="code" href="../../d0/d93/calorimetry_8fcl.html#a04edb50956d6f64bef70faadbc0ad778">local::standard_calorimetryalgdata</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;icarus_calorimetryalgmc:          @local::standard_calorimetryalgmc</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"># Calorimetry constants from G. Putnam (Dec 2021)</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Informed by truth based study on ICARUS MC -- docdb 23856</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The method to obtain these was a bit of a hack and will</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># need to be revisted if/when the data processing is updated</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">   12</a></span>&#160;<span class="preprocessor"></span>icarus_calorimetryalgmc.CalAreaConstants: [0.01343, 0.01338, 0.01475]</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;standard_caloicarusdata:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:            <span class="stringliteral">&quot;CalorimetryICARUS&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>:       <span class="stringliteral">&quot;track3d&quot;</span> #<span class="keyword">this</span> must have <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-spacepoint <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; SpacePointModuleLabel:  <span class="stringliteral">&quot;spacepointfinder&quot;</span> #<span class="keyword">this</span> must have spacepoint-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; T0ModuleLabel:          <span class="stringliteral">&quot;mctrutht0&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; UseArea:                            <span class="keyword">true</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; UseIntegral:            <span class="keyword">true</span>    # change <span class="keyword">this</span> to <span class="keyword">false</span> to use <span class="stringliteral">&quot;SummedADC&quot;</span> instead of <span class="stringliteral">&quot;Integral&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; CorrectSCE:                     <span class="keyword">false</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; FlipTrack_dQdx:         <span class="keyword">false</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; CaloAlg:                      @<a class="code" href="../../d0/d93/calorimetry_8fcl.html#a04edb50956d6f64bef70faadbc0ad778">local::standard_calorimetryalgdata</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;standard_caloicarusmc:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:            <span class="stringliteral">&quot;CalorimetryICARUS&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>:       <span class="stringliteral">&quot;pandoraTrackGausCryo0&quot;</span> #<span class="keyword">this</span> must have <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-spacepoint <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; SpacePointModuleLabel:  <span class="stringliteral">&quot;pandoraGausCryo0&quot;</span> #<span class="keyword">this</span> must have spacepoint-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; T0ModuleLabel:          <span class="stringliteral">&quot;mctrutht0&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; UseArea:                            <span class="keyword">true</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; UseIntegral:            <span class="keyword">false</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; CorrectSCE:                     <span class="keyword">false</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; FlipTrack_dQdx:         <span class="keyword">false</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; CaloAlg:                      @local::standard_calorimetryalgmc</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;standard_caloicarusmcfit:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>:            <span class="stringliteral">&quot;CalorimetryICARUS&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>:       <span class="stringliteral">&quot;pandoraTrackGausCryo0&quot;</span> #<span class="keyword">this</span> must have <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-spacepoint <a class="code" href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a> <a class="code" href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a>-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; SpacePointModuleLabel:  <span class="stringliteral">&quot;pandoraGausCryo0&quot;</span> #<span class="keyword">this</span> must have spacepoint-<a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a> associations</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; T0ModuleLabel:          <span class="stringliteral">&quot;mctrutht0&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; UseArea:                            <span class="keyword">true</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; UseIntegral:            <span class="keyword">true</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; CorrectSCE:                     <span class="keyword">false</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; FlipTrack_dQdx:         <span class="keyword">false</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; CaloAlg:                      @local::standard_calorimetryalgmc</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;standard_gnocchicaloicarus:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>: <span class="stringliteral">&quot;GnocchiCalorimetry&quot;</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>: <span class="stringliteral">&quot;track3d&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  T0ModuleLabel: <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  AssocHitModuleLabel: <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ChargeMethod: 1</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  FieldDistortion: <span class="keyword">false</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  TrackIsFieldDistortionCorrected: <span class="keyword">false</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  Cryostat: 0</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  CaloAlg: @<a class="code" href="../../d0/d93/calorimetry_8fcl.html#a04edb50956d6f64bef70faadbc0ad778">local::standard_calorimetryalgdata</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d90/normtools__icarus_8fcl.html">normtools_icarus.fcl</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;BEGIN_PROLOG</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a>:      @<a class="code" href="../../d0/d93/calorimetry_8fcl.html#a04edb50956d6f64bef70faadbc0ad778">local::standard_calorimetryalgdata</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;icarus_calorimetryalgmc:          @local::standard_calorimetryalgmc</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"># Calorimetry constants from G. Putnam (Dec 2021)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># Informed by truth based study on ICARUS MC -- docdb 23856</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># The method to obtain these was a bit of a hack and will</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor"># need to be revisted if/when the data processing is updated</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">   13</a></span>&#160;<span class="preprocessor"></span>icarus_calorimetryalgmc.CalAreaConstants: [0.01343, 0.01338, 0.01475]</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a>.CalAreaConstants: @<a class="code" href="../../db/d90/normtools__icarus_8fcl.html#abe116cde84474370744eddcd0f4333cd">local::icarus_data_calconst</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a>.CaloDoLifeTimeCorrection: <span class="keyword">false</span> # handled by NormTools</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;standard_gnocchicaloicarus:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a>: <span class="stringliteral">&quot;GnocchiCalorimetry&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../d4/d9d/reprocess__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a>: <span class="stringliteral">&quot;track3d&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  T0ModuleLabel: <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  AssocHitModuleLabel: <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  ChargeMethod: 1</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  FieldDistortion: <span class="keyword">false</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  FieldDistortionEfield: <span class="keyword">false</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  TrackIsFieldDistortionCorrected: <span class="keyword">false</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  Cryostat: 0</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  CaloAlg: @<a class="code" href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">local::icarus_calorimetryalgdata</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  NormTools: @local::icarus_calonormtools</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;END_PROLOG</div>
+<div class="ttc" id="reprocess__icarus_8fcl_html_a14fb4bef4b43c21c993b2607cde26feb"><div class="ttname"><a href="../../d4/d9d/reprocess__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a></div><div class="ttdeci">BEGIN_PROLOG pandoraGausReCaloCryo0 TrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d9d/reprocess__icarus_8fcl_source.html#l00044">reprocess_icarus.fcl:44</a></div></div>
 <div class="ttc" id="calorimetry_8fcl_html"><div class="ttname"><a href="../../d0/d93/calorimetry_8fcl.html">calorimetry.fcl</a></div></div>
-<div class="ttc" id="standard__reco_8fcl_html_a8e7c4631bab825a68b0a82d8223c2ec2"><div class="ttname"><a href="../../df/df2/standard__reco_8fcl.html#a8e7c4631bab825a68b0a82d8223c2ec2">track</a></div><div class="ttdeci">process_name use argoneut_mc_hitfinder track</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df2/standard__reco_8fcl_source.html#l00036">standard_reco.fcl:36</a></div></div>
-<div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="selectors_8fcl_html_aadc113fa4af9aeff01481eed2a98e7cc"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#aadc113fa4af9aeff01481eed2a98e7cc">and</a></div><div class="ttdeci">return match has_match and(match.match_pdg==11 or match.match_pdg==-11)</div></div>
-<div class="ttc" id="calorimetryICARUS_8fcl_html_aff06bfa543858aac7301767a002b39cc"><div class="ttname"><a href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a></div><div class="ttdeci">BEGIN_PROLOG icarus_calorimetryalgdata</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd8/calorimetryICARUS_8fcl_source.html#l00012">calorimetryICARUS.fcl:12</a></div></div>
+<div class="ttc" id="calorimetryICARUS_8fcl_html_aff06bfa543858aac7301767a002b39cc"><div class="ttname"><a href="../../d7/dd8/calorimetryICARUS_8fcl.html#aff06bfa543858aac7301767a002b39cc">icarus_calorimetryalgdata</a></div><div class="ttdeci">BEGIN_PROLOG icarus_calorimetryalgdata</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd8/calorimetryICARUS_8fcl_source.html#l00013">calorimetryICARUS.fcl:13</a></div></div>
+<div class="ttc" id="normtools__icarus_8fcl_html_abe116cde84474370744eddcd0f4333cd"><div class="ttname"><a href="../../db/d90/normtools__icarus_8fcl.html#abe116cde84474370744eddcd0f4333cd">icarus_data_calconst</a></div><div class="ttdeci">BEGIN_PROLOG local::tpcgain icarus_data_calconst</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d90/normtools__icarus_8fcl_source.html#l00031">normtools_icarus.fcl:31</a></div></div>
+<div class="ttc" id="normtools__icarus_8fcl_html"><div class="ttname"><a href="../../db/d90/normtools__icarus_8fcl.html">normtools_icarus.fcl</a></div></div>
 <div class="ttc" id="magic__raw__to__triggeremu__icarus__Run1__data_8fcl_html_af6fd81da63f288d64ee6a74fec800bc6"><div class="ttname"><a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl.html#af6fd81da63f288d64ee6a74fec800bc6">module_type</a></div><div class="ttdeci">BEGIN_PROLOG triggeremu_data_config_icarus settings PMTADCthresholds sequence::icarus_stage0_multiTPC_TPC physics sequence::icarus_stage0_EastHits_TPC physics sequence::icarus_stage0_WestHits_TPC physics producers purityana0 module_type</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d77/magic__raw__to__triggeremu__icarus__Run1__data_8fcl_source.html#l00108">magic_raw_to_triggeremu_icarus_Run1_data.fcl:108</a></div></div>
 <div class="ttc" id="calorimetry_8fcl_html_a04edb50956d6f64bef70faadbc0ad778"><div class="ttname"><a href="../../d0/d93/calorimetry_8fcl.html#a04edb50956d6f64bef70faadbc0ad778">standard_calorimetryalgdata</a></div><div class="ttdeci">BEGIN_PROLOG standard_calorimetryalgdata</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d93/calorimetry_8fcl_source.html#l00005">calorimetry.fcl:5</a></div></div>
-<div class="ttc" id="calotest__icarus_8fcl_html_a14fb4bef4b43c21c993b2607cde26feb"><div class="ttname"><a href="../../d8/d49/calotest__icarus_8fcl.html#a14fb4bef4b43c21c993b2607cde26feb">TrackModuleLabel</a></div><div class="ttdeci">stream1 physics producers calorimetryfit CaloAlg physics producers gnocchiCal TrackModuleLabel</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d49/calotest__icarus_8fcl_source.html#l00041">calotest_icarus.fcl:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

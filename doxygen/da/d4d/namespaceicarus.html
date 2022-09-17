@@ -85,6 +85,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:df/da1/namespaceicarus_1_1calo"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da1/namespaceicarus_1_1calo.html">calo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dc/d33/namespaceicarus_1_1crt"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html">crt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:db/db1/namespaceicarus_1_1details"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db1/namespaceicarus_1_1details.html">details</a></td></tr>
@@ -347,46 +349,46 @@ Variables</h2></td></tr>
 
 <p>Special function <code>fhicl::TableAs</code> uses to convert BoardSetupConfig. </p>
 
-<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01181">1181</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  {</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    </div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html">daq::details::BoardSetup_t</a> bs {</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        config.Name()                                          <span class="comment">// name</span></div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;      , config.FragmentID()</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;          .value_or(<a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">daq::details::BoardSetup_t::NoFragmentID</a>)  <span class="comment">// fragmentID</span></div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;      , config.TriggerDelay()                                  <span class="comment">// triggerDelay</span></div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;      , config.<a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#af0bc877a00c19594bcab46523f3900be">TTTresetDelay</a>()                                 <span class="comment">// TTTresetDelay</span></div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;      };</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    </div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    <span class="comment">// set the special configuration for the board channels that have one;</span></div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    <span class="comment">// the others will stay with the default one (which implies that a channel</span></div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    <span class="comment">// is saved in the standard data product, and only if it has a channel ID</span></div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    <span class="comment">// entry from the database)</span></div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;    <span class="keywordflow">for</span> (</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;      DaqDecoderICARUSPMT::BoardSetupConfig::ChannelSetupConfig <span class="keyword">const</span>&amp; chConfig</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;      : config.SpecialChannels().value_or(</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;        std::vector&lt;DaqDecoderICARUSPMT::BoardSetupConfig::ChannelSetupConfig&gt;{}</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        )</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    ) {</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;      <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;        bs.channelSettings.at(chConfig.ChannelIndex()) = {</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;            chConfig.Channel()              <span class="comment">// channelID</span></div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;          , chConfig.Skip()                 <span class="comment">// forcedSkip</span></div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;          , chConfig.OnlyOnGlobalTrigger()  <span class="comment">// onGlobalOnly</span></div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;          , chConfig.MinSpan()              <span class="comment">// minSpan</span></div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;          , chConfig.InstanceName()         <span class="comment">// category</span></div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;          };</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;      }</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;      <span class="keywordflow">catch</span> (std::out_of_range <span class="keyword">const</span>&amp;) {</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;        <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration)</div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Configuration requested for invalid channel index &quot;</span></div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;          &lt;&lt; chConfig.ChannelIndex() &lt;&lt; <span class="stringliteral">&quot; of the board &#39;&quot;</span></div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;          &lt;&lt; config.Name() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;      }</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    } <span class="comment">// for</span></div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    </div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    <span class="keywordflow">return</span> bs;</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;  } <span class="comment">// convert(BoardSetupConfig)</span></div>
+<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01179">1179</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  {</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    </div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    <a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html">daq::details::BoardSetup_t</a> bs {</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        config.Name()                                          <span class="comment">// name</span></div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;      , config.FragmentID()</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;          .value_or(<a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">daq::details::BoardSetup_t::NoFragmentID</a>)  <span class="comment">// fragmentID</span></div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;      , config.TriggerDelay()                                  <span class="comment">// triggerDelay</span></div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;      , config.<a class="code" href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#af0bc877a00c19594bcab46523f3900be">TTTresetDelay</a>()                                 <span class="comment">// TTTresetDelay</span></div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;      };</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;    </div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="comment">// set the special configuration for the board channels that have one;</span></div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    <span class="comment">// the others will stay with the default one (which implies that a channel</span></div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    <span class="comment">// is saved in the standard data product, and only if it has a channel ID</span></div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    <span class="comment">// entry from the database)</span></div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    <span class="keywordflow">for</span> (</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;      DaqDecoderICARUSPMT::BoardSetupConfig::ChannelSetupConfig <span class="keyword">const</span>&amp; chConfig</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;      : config.SpecialChannels().value_or(</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        std::vector&lt;DaqDecoderICARUSPMT::BoardSetupConfig::ChannelSetupConfig&gt;{}</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;        )</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    ) {</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;      <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        bs.channelSettings.at(chConfig.ChannelIndex()) = {</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;            chConfig.Channel()              <span class="comment">// channelID</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;          , chConfig.Skip()                 <span class="comment">// forcedSkip</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;          , chConfig.OnlyOnGlobalTrigger()  <span class="comment">// onGlobalOnly</span></div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;          , chConfig.MinSpan()              <span class="comment">// minSpan</span></div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;          , chConfig.InstanceName()         <span class="comment">// category</span></div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;          };</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;      }</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;      <span class="keywordflow">catch</span> (std::out_of_range <span class="keyword">const</span>&amp;) {</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration)</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Configuration requested for invalid channel index &quot;</span></div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;          &lt;&lt; chConfig.ChannelIndex() &lt;&lt; <span class="stringliteral">&quot; of the board &#39;&quot;</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;          &lt;&lt; config.Name() &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;      }</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    } <span class="comment">// for</span></div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    </div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordflow">return</span> bs;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;  } <span class="comment">// convert(BoardSetupConfig)</span></div>
 <div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_a85d5c5b8ec289b33b00092a22c3946a0"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#a85d5c5b8ec289b33b00092a22c3946a0">daq::details::BoardSetup_t::NoFragmentID</a></div><div class="ttdeci">static constexpr unsigned int NoFragmentID</div><div class="ttdoc">Special value to mark the absence of fragment ID information. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00048">PMTDecoderUtils.h:48</a></div></div>
 <div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html">daq::details::BoardSetup_t</a></div><div class="ttdoc">Information of the setup of a V1730 readout board. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00041">PMTDecoderUtils.h:41</a></div></div>
 <div class="ttc" id="structdaq_1_1details_1_1BoardSetup__t_html_af0bc877a00c19594bcab46523f3900be"><div class="ttname"><a href="../../d2/d8f/structdaq_1_1details_1_1BoardSetup__t.html#af0bc877a00c19594bcab46523f3900be">daq::details::BoardSetup_t::TTTresetDelay</a></div><div class="ttdeci">nanoseconds TTTresetDelay</div><div class="ttdoc">Delay from TTT reset issue to enact. </div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d40/PMTDecoderUtils_8h_source.html#l00100">PMTDecoderUtils.h:100</a></div></div>
@@ -1099,11 +1101,11 @@ template&lt;typename T , bool CheckGrowing&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01228">1228</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;                                                                 {</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    <span class="keywordflow">return</span> out &lt;&lt; (d.wf.channelSetup-&gt;category.empty()? std::dec: std::hex)</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      &lt;&lt; d.wf.waveform.ChannelNumber() &lt;&lt; std::dec;</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01226">1226</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                                                                 {</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="keywordflow">return</span> out &lt;&lt; (d.wf.channelSetup-&gt;category.empty()? std::dec: std::hex)</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;      &lt;&lt; d.wf.waveform.ChannelNumber() &lt;&lt; std::dec;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1131,12 +1133,12 @@ template&lt;typename T , bool CheckGrowing&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01261">1261</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  {</div>
-<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    out &lt;&lt; time.split.seconds &lt;&lt; <span class="charliteral">&#39;.&#39;</span></div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;      &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::setw(9) &lt;&lt; time.split.nanoseconds;</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;  } <span class="comment">// operator&lt;&lt; (std::ostream&amp;, PMTDecoder::SplitTimestamp_t)</span></div>
+<p>Definition at line <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html#l01259">1259</a> of file <a class="el" href="../../da/d29/DaqDecoderICARUSPMT__module_8cc_source.html">DaqDecoderICARUSPMT_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  {</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    out &lt;&lt; time.split.seconds &lt;&lt; <span class="charliteral">&#39;.&#39;</span></div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;      &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::setw(9) &lt;&lt; time.split.nanoseconds;</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;  } <span class="comment">// operator&lt;&lt; (std::ostream&amp;, PMTDecoder::SplitTimestamp_t)</span></div>
 </div><!-- fragment -->
 </div>
 </div>

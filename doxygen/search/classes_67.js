@@ -147,7 +147,6 @@ var searchData=
   ['globaltrackinfo',['GlobalTrackInfo',['../d9/da2/structsbn_1_1TrackCaloSkimmer_1_1GlobalTrackInfo.html',1,'sbn::TrackCaloSkimmer']]],
   ['globaltriggerinfo_5ft',['GlobalTriggerInfo_t',['../d2/d13/structsbn_1_1TriggerEmulationTree_1_1GlobalTriggerInfo__t.html',1,'sbn::TriggerEmulationTree']]],
   ['gnocchicalorimetry',['GnocchiCalorimetry',['../d8/d2f/classcalo_1_1GnocchiCalorimetry.html',1,'calo']]],
-  ['gnocchicalorimetryicarus',['GnocchiCalorimetryICARUS',['../d3/d70/classcalo_1_1GnocchiCalorimetryICARUS.html',1,'calo']]],
   ['gradientdescent',['GradientDescent',['../d5/d62/classana_1_1GradientDescent.html',1,'ana']]],
   ['graphcluster',['GraphCluster',['../dc/d24/classevd_1_1GraphCluster.html',1,'evd']]],
   ['graphclusteralg',['GraphClusterAlg',['../db/d4b/classevd_1_1GraphClusterAlg.html',1,'evd']]],

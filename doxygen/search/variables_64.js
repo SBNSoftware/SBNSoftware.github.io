@@ -309,6 +309,7 @@ var searchData=
   ['driftemodulelabel',['DriftEModuleLabel',['../d4/de8/simtestpulse__driver_8fcl.html#a30a6cd6190f6954d088ec6b577d338d8',1,'simtestpulse_driver.fcl']]],
   ['driftfield',['DriftField',['../dc/d7a/classspacecharge_1_1SpaceChargeSBND.html#a5d03d0511dcb05b5feff22b7614e2e78',1,'spacecharge::SpaceChargeSBND']]],
   ['driftgatewidth',['driftGateWidth',['../d1/dd5/structicarus_1_1TriggerConfiguration_1_1GateConfig.html#a5bc730b61c0a3386ffbe1866c459ec64',1,'icarus::TriggerConfiguration::GateConfig']]],
+  ['driftnorm',['driftnorm',['../db/d90/normtools__icarus_8fcl.html#acc9f7babb86488b3eda01ab9455fb2a5',1,'normtools_icarus.fcl']]],
   ['driftperiod',['DriftPeriod',['../d1/d8d/structopdet_1_1opDetSBNDTriggerAlg_1_1Config.html#acb4cbca8fd1a7c45919a9dacbd22ed77',1,'opdet::opDetSBNDTriggerAlg::Config']]],
   ['drifttime',['driftTime',['../d1/d10/classfilt_1_1GenFilter.html#ab45e9f10b651d454479761be32637849',1,'filt::GenFilter::driftTime()'],['../d1/d94/classfilt_1_1LArG4CRTFilter.html#ac090b717ff5f02f8d32378397db57c75',1,'filt::LArG4CRTFilter::driftTime()']]],
   ['driftvelfudgefactor',['DriftVelFudgeFactor',['../d2/dfe/structdetinfo_1_1DetectorPropertiesStandard_1_1Configuration__t.html#a74a54baae764d9ecaf7394c20ef2e084',1,'detinfo::DetectorPropertiesStandard::Configuration_t']]],

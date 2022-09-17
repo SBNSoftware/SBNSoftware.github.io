@@ -2,7 +2,7 @@ var searchData=
 [
   ['seedhit',['SEEDHIT',['../df/d06/classreco_1_1ClusterHit3D.html#a5a393b9e2f9116aa5c0dad758f168b97ab031739132fc83b0a1c4f2456f0b7970',1,'reco::ClusterHit3D']]],
   ['selectedbymst',['SELECTEDBYMST',['../df/d06/classreco_1_1ClusterHit3D.html#a5a393b9e2f9116aa5c0dad758f168b97a4775fab8530f4489be2cc14851e2ba30',1,'reco::ClusterHit3D']]],
-  ['separated',['Separated',['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bda606970f24025625f40867ff6d152fa1e',1,'sbn::bits::Separated()'],['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bda606970f24025625f40867ff6d152fa1e',1,'sbn::bits::Separated()'],['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bda606970f24025625f40867ff6d152fa1e',1,'sbn::bits::Separated()'],['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bda606970f24025625f40867ff6d152fa1e',1,'sbn::bits::Separated()']]],
+  ['separated',['Separated',['../de/d90/namespacesbn_1_1bits.html#a7cfb4417e358f69008b442146ba594bda606970f24025625f40867ff6d152fa1e',1,'sbn::bits']]],
   ['set',['Set',['../dc/d4a/namespaceicarus_1_1trigger_1_1details.html#a2d50d2927e5d82d3eb11f7a3b613e8f1a5d5b78699e57104f2fa03bbdf7b9197b',1,'icarus::trigger::details']]],
   ['sharedincluster',['SHAREDINCLUSTER',['../df/dcf/classreco_1_1ClusterHit2D.html#af948a749271038c5fbf921fd0f529fb7a837e492d04729561275f305aa2862302',1,'reco::ClusterHit2D']]],
   ['sharedinpair',['SHAREDINPAIR',['../df/dcf/classreco_1_1ClusterHit2D.html#af948a749271038c5fbf921fd0f529fb7ada28dc5d3315420d146c30680b437253',1,'reco::ClusterHit2D']]],

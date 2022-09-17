@@ -882,7 +882,7 @@ base", is defined by the normal (the same as for the previous one), and two orth
       </table>
 </div><div class="memdoc">
 <p>Type for projections in the plane frame base representation. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000060">Todo:</a></b></dt><dd>the following should be a PositionVector2D </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000057">Todo:</a></b></dt><dd>the following should be a PositionVector2D </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html#l00151">151</a> of file <a class="el" href="../../d8/d80/PlaneGeo_8h_source.html">PlaneGeo.h</a>.</p>
 
@@ -4039,7 +4039,7 @@ template&lt;typename Vector &gt; </div>
 <p>The position is projected on the wire plane, and the ID of the nearest wire to the projected point is returned.</p>
 <p>If the wire does not exist, an exception is thrown that contains both the wire that would be the closest one (<code>badWireID()</code>), and also the wire that is actually the closest one (<code>betterWireID()</code>). When this happens, the specified position was outside the wire plane.</p>
 <p>Note that the caller should check for containment: this function may or may not report the position being outside the plane, depending on where it is. In the current implementation, the wires are considered infinitely long, and if the position projection is closer than half the wire pitch from any of these extrapolated wires, the method will not report error.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo:</a></b></dt><dd>When the ID is out of range, instead of throwing an exception, return an invalid wire ID with the wire number set to the non-existing wire which <em>would</em> be the nearest to <code>pos</code>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000058">Todo:</a></b></dt><dd>When the ID is out of range, instead of throwing an exception, return an invalid wire ID with the wire number set to the non-existing wire which <em>would</em> be the nearest to <code>pos</code>. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d8/dd0/PlaneGeo_8cxx_source.html#l00649">649</a> of file <a class="el" href="../../d8/dd0/PlaneGeo_8cxx_source.html">PlaneGeo.cxx</a>.</p>
 <div class="fragment"><div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                                                               {</div>
