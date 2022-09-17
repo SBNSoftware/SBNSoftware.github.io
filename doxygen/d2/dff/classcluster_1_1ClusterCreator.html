@@ -119,7 +119,7 @@ Protected Attributes</h2></td></tr>
 <hr/>
 <p> A Creator is a class that creates a temporary data product, and at the end it yields it to the caller for storage. This last step should be by move construction, although a copy method is also provided.</p>
 <p>An example of creating a Cluster object: </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000095">Todo:</a></b></dt><dd>Add the example!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000092">Todo:</a></b></dt><dd>Add the example!</dd></dl>
 <pre class="fragment">cluster::ClusterCreator cluster(...);
 cluster.push_back(cluster.move()); // cluster content becomes invalid
 </pre><p>This is a one-step creation object: the cluster is constructed at the same time the <a class="el" href="../../d2/dff/classcluster_1_1ClusterCreator.html" title="Class managing the creation of a new recob::Cluster object. ">ClusterCreator</a> is, and no facility is offered to modify the constructed cluster, or to create another one. </p>

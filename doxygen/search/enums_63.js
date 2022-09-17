@@ -1,7 +1,7 @@
 var searchData=
 [
   ['channelstatus',['ChannelStatus',['../dd/dc5/classfilter_1_1ChannelFilter.html#af4e3a7afce1db6a8496be40a2fc494c0',1,'filter::ChannelFilter']]],
-  ['chargemethod',['ChargeMethod',['../df/d72/structcalo_1_1GnocchiCalorimetryICARUS_1_1Config.html#a8c4e7856c208d2d92c56c27a25bfda78',1,'calo::GnocchiCalorimetryICARUS::Config::ChargeMethod()'],['../da/d66/structcalo_1_1GnocchiCalorimetry_1_1Config.html#a05f8fd054d2f39be01993be4f45e812d',1,'calo::GnocchiCalorimetry::Config::ChargeMethod()']]],
+  ['chargemethod',['ChargeMethod',['../da/d66/structcalo_1_1GnocchiCalorimetry_1_1Config.html#a05f8fd054d2f39be01993be4f45e812d',1,'calo::GnocchiCalorimetry::Config']]],
   ['chargemode_5ft',['ChargeMode_t',['../d9/dda/classrecob_1_1Cluster.html#aa17dc18f271144cf4eb7818eff94b5ef',1,'recob::Cluster']]],
   ['chstatus',['chStatus',['../d2/d42/namespacelariov.html#a13ef9adceb5db70b5bf36ececfef41ec',1,'lariov']]],
   ['classification',['Classification',['../df/d1f/classlar__content_1_1CosmicRayTaggingMonitoringTool.html#a75c494dff6d4fca99ba21dcc2e8afe0e',1,'lar_content::CosmicRayTaggingMonitoringTool']]],

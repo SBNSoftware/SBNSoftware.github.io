@@ -45,7 +45,6 @@ var searchData=
   ['_7ecafmaker',['~CAFMaker',['../dd/de9/classcaf_1_1CAFMaker.html#a4d9b9167560616c3815b31824c6b304d',1,'caf::CAFMaker']]],
   ['_7ecalibrationextrainfo',['~CalibrationExtraInfo',['../df/de8/classlariov_1_1CalibrationExtraInfo.html#a4e9da02ca04e38d5cd22b51e402216db',1,'lariov::CalibrationExtraInfo']]],
   ['_7ecalorimetryanalysis',['~CalorimetryAnalysis',['../d7/d7f/classanalysis_1_1CalorimetryAnalysis.html#aeb5c760562590aca19660b29a10dab4b',1,'analysis::CalorimetryAnalysis']]],
-  ['_7ecalorimetryicarusalg',['~CalorimetryIcarusAlg',['../db/d0e/classcalo_1_1CalorimetryIcarusAlg.html#acfdedec898d6c4a07380e0ac00b13d5c',1,'calo::CalorimetryIcarusAlg']]],
   ['_7ecalorpad',['~CalorPad',['../d2/d3b/classevd_1_1CalorPad.html#a9947c65b992da82be73c03c2a932fa57',1,'evd::CalorPad']]],
   ['_7ecalorview',['~CalorView',['../d2/d3d/classevd_1_1CalorView.html#a2eba735a0eca0ad24ef19a890a09a456',1,'evd::CalorView']]],
   ['_7ecalwiresbnd',['~CalWireSBND',['../d8/def/classcaldata_1_1CalWireSBND.html#a9ea5035b5bd0887312dc73e2c15e66ae',1,'caldata::CalWireSBND']]],
