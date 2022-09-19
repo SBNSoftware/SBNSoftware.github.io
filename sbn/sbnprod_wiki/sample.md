@@ -104,6 +104,8 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| ICARUS_numi_higgs_M200_th2e-4_KDIF | MC2022A | v09_37_02_05 | 77950 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_reco2 |
+| --- | --- | --- | 77950 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_caf |
 | ICARUS_numi_higgs_M150_th2e-4_KDIF | MC2022A | v09_37_02_05 | 56300 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M150_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 56300 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M150_th2e-4_KDIF_caf |
 | ICARUS_numi_higgs_M100_th2e-4_KDIF | MC2022A | v09_37_02_05 | 111100 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M100_th2e-4_KDIF_reco2 |
