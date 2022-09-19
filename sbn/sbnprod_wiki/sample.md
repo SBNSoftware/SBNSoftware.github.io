@@ -106,12 +106,16 @@ ICARUS MC
 | --- | --- | --- | --- | --- | --- |
 | ICARUS_numi_higgs_M200_th2e-4_KDIF | MC2022A | v09_37_02_05 | 77950 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 77950 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_caf |
+| --- | --- | --- | 77950 | flatcaf | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_flatcaf |
 | ICARUS_numi_higgs_M150_th2e-4_KDIF | MC2022A | v09_37_02_05 | 56300 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M150_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 56300 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M150_th2e-4_KDIF_caf |
+| --- | --- | --- | 56300 | flatcaf | IcarusProd_2022A_ICARUS_numi_higgs_M150_th2e-4_KDIF_flatcaf |
 | ICARUS_numi_higgs_M100_th2e-4_KDIF | MC2022A | v09_37_02_05 | 111100 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M100_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 110900 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M100_th2e-4_KDIF_caf |
+| --- | --- | --- | 110900 | flatcaf | IcarusProd_2022A_ICARUS_numi_higgs_M100_th2e-4_KDIF_flatcaf |
 | ICARUS_numi_higgs_M050_th2e-4_KDIF | MC2022A | v09_37_02_05 | 59850 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M050_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 59750 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M050_th2e-4_KDIF_caf |
+| --- | --- | --- | 59750 | flatcaf | IcarusProd_2022A_ICARUS_numi_higgs_M050_th2e-4_KDIF_flatcaf |
 | ICARUS intime cosmics 1D drift simulation waveform files | MC2022A | v09_51_00 | 217,332 | reco2 | IcarusProd_2022A_Intime_Cosmic_WF_v09_51_00_reco2 | 
 | --- | --- | --- | 204,630 | calib tuple | IcarusProd_2022A_Intime_Cosmic_WF_v09_51_00_calibtuples |
 | NUMI in-time cosmics with Overburden | MC2022A | v09_37_02_04 | 809,054 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_reco2 | 
