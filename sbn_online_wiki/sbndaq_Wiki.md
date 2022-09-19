@@ -66,6 +66,7 @@ sbndaq detector components
 ----------------------------------------------
 * [List of boardreaders](Boardreaders.md)
 * Configuring the [Multi Function Timing Unit (MFTU)](ACnet/MFTU.md) Beam Timing Interface
+* [ICARUS File Transfer Service (FTS)](ICARUS_FTS.md)
 
 Troubleshooting
 ----------------------------------------------
