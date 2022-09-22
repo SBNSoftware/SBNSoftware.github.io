@@ -26,3 +26,4 @@ title: Acronyms
 - **SAM** Sequential Access via Metadata (the database system utilised by Fermilab to access and query files via their metadata)
 - **DAQ** Data Acquisition
 - **LAr** Liquid Argon
+- **PMT** Process Management Tool (tricky, isn't it? this term is used in artdaq, and it's not a joke)
