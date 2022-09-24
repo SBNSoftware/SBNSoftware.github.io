@@ -239,8 +239,6 @@ var searchData=
   ['pmtstartcalibtime_5fmodule_2ecc',['PMTStartCalibTime_module.cc',['../d8/d8f/PMTStartCalibTime__module_8cc.html',1,'']]],
   ['pmttrigger_2ecc',['pmtTrigger.cc',['../db/df0/pmtTrigger_8cc.html',1,'(Global Namespace)'],['../d7/d74/PMTTrigger_8cc.html',1,'(Global Namespace)']]],
   ['pmttrigger_2ehh',['pmtTrigger.hh',['../d8/d71/pmtTrigger_8hh.html',1,'']]],
-  ['pmttriggerana_2efcl',['pmttriggerana.fcl',['../da/dbf/pmttriggerana_8fcl.html',1,'']]],
-  ['pmttriggerana_5fmodule_2ecc',['pmtTriggerAna_module.cc',['../df/df1/pmtTriggerAna__module_8cc.html',1,'']]],
   ['pmttriggerproducer_2efcl',['pmttriggerproducer.fcl',['../d7/d5a/pmttriggerproducer_8fcl.html',1,'']]],
   ['pmttriggerproducer_5fmodule_2ecc',['pmtTriggerProducer_module.cc',['../d9/dcc/pmtTriggerProducer__module_8cc.html',1,'']]],
   ['pmtverticalslicingalg_2ecxx',['PMTverticalSlicingAlg.cxx',['../dc/d81/PMTverticalSlicingAlg_8cxx.html',1,'']]],
