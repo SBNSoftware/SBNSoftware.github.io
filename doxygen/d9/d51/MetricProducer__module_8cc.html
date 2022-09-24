@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>pmttriggerana.fcl File Reference</title>
+<title>MetricProducer_module.cc File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -75,83 +75,44 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">pmttriggerana.fcl File Reference</div>  </div>
+<div class="title">MetricProducer_module.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../db/dc9/detsimmodules_8fcl_source.html">detsimmodules.fcl</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;art/Framework/Core/EDProducer.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Principal/Handle.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Principal/Run.h&quot;</code><br/>
+<code>#include &quot;art/Framework/Principal/SubRun.h&quot;</code><br/>
+<code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
+<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
+<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
+<code>#include &quot;sbndaq-artdaq-core/Overlays/Common/BernCRTFragmentV2.hh&quot;</code><br/>
+<code>#include &quot;sbndaq-artdaq-core/Overlays/Common/CAENV1730Fragment.hh&quot;</code><br/>
+<code>#include &quot;sbndaq-artdaq-core/Overlays/FragmentType.hh&quot;</code><br/>
+<code>#include &quot;artdaq-core/Data/Fragment.hh&quot;</code><br/>
+<code>#include &quot;artdaq-core/Data/ContainerFragment.hh&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/d35/sbndPDMapAlg_8hh_source.html">sbndcode/OpDetSim/sbndPDMapAlg.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d5c/pmtSoftwareTrigger_8hh_source.html">sbnobj/SBND/Trigger/pmtSoftwareTrigger.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/dd3/CRTmetric_8hh_source.html">sbnobj/SBND/Trigger/CRTmetric.hh</a>&quot;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
 </div>
-<p><a href="../../da/dbf/pmttriggerana_8fcl_source.html">Go to the source code of this file.</a></p>
+<p><a href="../../d9/d51/MetricProducer__module_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ab795a779dd566234826908a6d8463250"><td class="memItemLeft" align="right" valign="top">BEGIN_PROLOG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/pmttriggerana_8fcl.html#ab795a779dd566234826908a6d8463250">pmtTrigger_ana</a></td></tr>
-<tr class="separator:ab795a779dd566234826908a6d8463250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98713113f2e7b8c1d9e701547004e13"><td class="memItemLeft" align="right" valign="top">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/pmttriggerana_8fcl.html#af98713113f2e7b8c1d9e701547004e13">Threshold</a></td></tr>
-<tr class="separator:af98713113f2e7b8c1d9e701547004e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a704ee2a3d1280c0b282d062d0566c1d5"><td class="memItemLeft" align="right" valign="top">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/pmttriggerana_8fcl.html#a704ee2a3d1280c0b282d062d0566c1d5">Pair2</a></td></tr>
-<tr class="separator:a704ee2a3d1280c0b282d062d0566c1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4259203d07c2f38943d0fe19c4b80737"><td class="memItemLeft" align="right" valign="top">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/pmttriggerana_8fcl.html#a4259203d07c2f38943d0fe19c4b80737">Unpaired</a></td></tr>
-<tr class="separator:a4259203d07c2f38943d0fe19c4b80737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de0/classsbndaq_1_1MetricProducer.html">sbndaq::MetricProducer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d3/d0b/namespacesbndaq"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d0b/namespacesbndaq.html">sbndaq</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a704ee2a3d1280c0b282d062d0566c1d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a> Pair2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html#l00011">11</a> of file <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html">pmttriggerana.fcl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab795a779dd566234826908a6d8463250"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BEGIN_PROLOG pmtTrigger_ana</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html#l00011">11</a> of file <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html">pmttriggerana.fcl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af98713113f2e7b8c1d9e701547004e13"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a> Threshold</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html#l00011">11</a> of file <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html">pmttriggerana.fcl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4259203d07c2f38943d0fe19c4b80737"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BEGIN_PROLOG <a class="el" href="../../d6/d58/sbndcode_2sbndcode_2OpDetSim_2wvfana_8fcl.html#aef4f793a513183f2a0224202349b2049">pmt_uncoated</a> Unpaired</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html#l00011">11</a> of file <a class="el" href="../../da/dbf/pmttriggerana_8fcl_source.html">pmttriggerana.fcl</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

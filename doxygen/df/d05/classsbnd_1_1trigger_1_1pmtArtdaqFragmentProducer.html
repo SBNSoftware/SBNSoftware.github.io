@@ -119,6 +119,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2d5f2cc9814f28e4040a775f7afedb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf076d37668f2bd539454f75ac80a8e9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">fBeamWindowLength</a></td></tr>
 <tr class="separator:adf076d37668f2bd539454f75ac80a8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f303b4f77b76c2a63901351054c26c7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a></td></tr>
+<tr class="separator:a7f303b4f77b76c2a63901351054c26c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8052193e6427a5dafc92371838e5b18d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a></td></tr>
+<tr class="separator:a8052193e6427a5dafc92371838e5b18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfe917615c1c70c235f6cfe03c95cc32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a></td></tr>
 <tr class="separator:adfe917615c1c70c235f6cfe03c95cc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d01b25507960f406223e0c5f14907b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">fRun</a></td></tr>
@@ -167,44 +171,48 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00113">113</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">fInputModuleNameWvfm</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;InputModuleNameWvfm&quot;</span>)),</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">fInputModuleNameTrigger</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;InputModuleNameTrigger&quot;</span>)),</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Baseline&quot;</span>,8000)),</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">fMultiplicityThreshold</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MultiplicityThreshold&quot;</span>)),</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">fBeamWindowLength</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;BeamWindowLength&quot;</span>, 1.6)),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Verbose&quot;</span>, <span class="keyword">false</span>)),</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">fTriggerTimeEngine</a>(art::ServiceHandle&lt;rndm::NuRandomService&gt;{}-&gt;createEngine(*<span class="keyword">this</span>, <span class="stringliteral">&quot;HepJamesRandom&quot;</span>, <span class="stringliteral">&quot;trigger&quot;</span>, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, <span class="stringliteral">&quot;SeedTriggerTime&quot;</span>))</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// More initializers here.</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  produces&lt; std::vector&lt;artdaq::Fragment&gt; &gt;();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">// get clock</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clockData = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataForJob();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> = clockData.OpticalClock().Frequency(); <span class="comment">// MHz</span></div>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00115">115</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">fInputModuleNameWvfm</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;InputModuleNameWvfm&quot;</span>)),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">fInputModuleNameTrigger</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;InputModuleNameTrigger&quot;</span>)),</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Baseline&quot;</span>,8000)),</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">fMultiplicityThreshold</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MultiplicityThreshold&quot;</span>)),</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">fBeamWindowLength</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;BeamWindowLength&quot;</span>, 1.6)),</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;nChannelsFrag&quot;</span>, 15)),</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;WfmLength&quot;</span>, 5120)),</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Verbose&quot;</span>, <span class="keyword">false</span>)),</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">fTriggerTimeEngine</a>(art::ServiceHandle&lt;rndm::NuRandomService&gt;{}-&gt;createEngine(*<span class="keyword">this</span>, <span class="stringliteral">&quot;HepJamesRandom&quot;</span>, <span class="stringliteral">&quot;trigger&quot;</span>, <a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>, <span class="stringliteral">&quot;SeedTriggerTime&quot;</span>))</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">// More initializers here.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  produces&lt; std::vector&lt;artdaq::Fragment&gt; &gt;();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">// build PD map and channel list</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">auto</span> subsetCondition = [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i)-&gt;<span class="keywordtype">bool</span> { <span class="keywordflow">return</span> i[<span class="stringliteral">&quot;pd_type&quot;</span>] == <span class="stringliteral">&quot;pmt_coated&quot;</span> || i[<span class="stringliteral">&quot;pd_type&quot;</span>] == <span class="stringliteral">&quot;pmt_uncoated&quot;</span>; };</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">auto</span> pmtMap = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a67b8ef29414ac43c1838d439397ff453">getCollectionFromCondition</a>(subsetCondition);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of PDs selected: \t&quot;</span> &lt;&lt; pmtMap.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i:pmtMap){</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.push_back(i[<span class="stringliteral">&quot;channel&quot;</span>]);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;   </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a3b8832b67ae367ca524247d56c47ad31"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">sbnd::trigger::pmtArtdaqFragmentProducer::fSampling</a></div><div class="ttdeci">double fSampling</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00102">pmtArtdaqFragmentProducer_module.cc:102</a></div></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">// get clock</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">auto</span> <span class="keyword">const</span> clockData = art::ServiceHandle&lt;detinfo::DetectorClocksService const&gt;()-&gt;DataForJob();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> = clockData.OpticalClock().Frequency(); <span class="comment">// MHz</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// build PD map and channel list</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keyword">auto</span> subsetCondition = [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i)-&gt;<span class="keywordtype">bool</span> { <span class="keywordflow">return</span> i[<span class="stringliteral">&quot;pd_type&quot;</span>] == <span class="stringliteral">&quot;pmt_coated&quot;</span> || i[<span class="stringliteral">&quot;pd_type&quot;</span>] == <span class="stringliteral">&quot;pmt_uncoated&quot;</span>; };</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keyword">auto</span> pmtMap = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a67b8ef29414ac43c1838d439397ff453">getCollectionFromCondition</a>(subsetCondition);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of PDs selected: \t&quot;</span> &lt;&lt; pmtMap.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; i:pmtMap){</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.push_back(i[<span class="stringliteral">&quot;channel&quot;</span>]);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;   </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a3b8832b67ae367ca524247d56c47ad31"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">sbnd::trigger::pmtArtdaqFragmentProducer::fSampling</a></div><div class="ttdeci">double fSampling</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00104">pmtArtdaqFragmentProducer_module.cc:104</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8052193e6427a5dafc92371838e5b18d"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">sbnd::trigger::pmtArtdaqFragmentProducer::wfm_length</a></div><div class="ttdeci">uint32_t wfm_length</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00089">pmtArtdaqFragmentProducer_module.cc:89</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ae9f387f0c9ec4cab4fd09331df81fecf"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">sbnd::trigger::pmtArtdaqFragmentProducer::fInputModuleNameWvfm</a></div><div class="ttdeci">std::string fInputModuleNameWvfm</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00083">pmtArtdaqFragmentProducer_module.cc:83</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a299bdcaeaac51c6c060f895b110f0895"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">sbnd::trigger::pmtArtdaqFragmentProducer::pdMap</a></div><div class="ttdeci">opdet::sbndPDMapAlg pdMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00095">pmtArtdaqFragmentProducer_module.cc:95</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adfe917615c1c70c235f6cfe03c95cc32"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">sbnd::trigger::pmtArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00088">pmtArtdaqFragmentProducer_module.cc:88</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a299bdcaeaac51c6c060f895b110f0895"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">sbnd::trigger::pmtArtdaqFragmentProducer::pdMap</a></div><div class="ttdeci">opdet::sbndPDMapAlg pdMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00097">pmtArtdaqFragmentProducer_module.cc:97</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adfe917615c1c70c235f6cfe03c95cc32"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">sbnd::trigger::pmtArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00090">pmtArtdaqFragmentProducer_module.cc:90</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adf076d37668f2bd539454f75ac80a8e9"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">sbnd::trigger::pmtArtdaqFragmentProducer::fBeamWindowLength</a></div><div class="ttdeci">double fBeamWindowLength</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00087">pmtArtdaqFragmentProducer_module.cc:87</a></div></div>
 <div class="ttc" id="classopdet_1_1sbndPDMapAlg_html_a67b8ef29414ac43c1838d439397ff453"><div class="ttname"><a href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a67b8ef29414ac43c1838d439397ff453">opdet::sbndPDMapAlg::getCollectionFromCondition</a></div><div class="ttdeci">nlohmann::json getCollectionFromCondition(Func condition)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d35/sbndPDMapAlg_8hh_source.html#l00085">sbndPDMapAlg.hh:85</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ac7f772b19b81ccc146e80e941c4c8bac"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">sbnd::trigger::pmtArtdaqFragmentProducer::fBaseline</a></div><div class="ttdeci">int fBaseline</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00085">pmtArtdaqFragmentProducer_module.cc:85</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a7f303b4f77b76c2a63901351054c26c7"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">sbnd::trigger::pmtArtdaqFragmentProducer::nChannelsFrag</a></div><div class="ttdeci">uint32_t nChannelsFrag</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00088">pmtArtdaqFragmentProducer_module.cc:88</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad2c98373ae76fa0fb2dd3288b4a6dddc"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">sbnd::trigger::pmtArtdaqFragmentProducer::fInputModuleNameTrigger</a></div><div class="ttdeci">std::string fInputModuleNameTrigger</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00084">pmtArtdaqFragmentProducer_module.cc:84</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad00a99eced1107656f4ea7450c18c3ad"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">sbnd::trigger::pmtArtdaqFragmentProducer::channelList</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; channelList</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00096">pmtArtdaqFragmentProducer_module.cc:96</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a5a3515f2b62505bde2f98faf5006eea0"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">sbnd::trigger::pmtArtdaqFragmentProducer::fTriggerTimeEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fTriggerTimeEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00108">pmtArtdaqFragmentProducer_module.cc:108</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad00a99eced1107656f4ea7450c18c3ad"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">sbnd::trigger::pmtArtdaqFragmentProducer::channelList</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; channelList</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00098">pmtArtdaqFragmentProducer_module.cc:98</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a5a3515f2b62505bde2f98faf5006eea0"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">sbnd::trigger::pmtArtdaqFragmentProducer::fTriggerTimeEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fTriggerTimeEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00110">pmtArtdaqFragmentProducer_module.cc:110</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a2d5f2cc9814f28e4040a775f7afedb33"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">sbnd::trigger::pmtArtdaqFragmentProducer::fMultiplicityThreshold</a></div><div class="ttdeci">int fMultiplicityThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00086">pmtArtdaqFragmentProducer_module.cc:86</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
@@ -329,246 +337,250 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00141">141</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="comment">// Implementation of required member function here.</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="comment">// event information</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">fRun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">fSubrun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Processing Run: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">fRun</a> &lt;&lt; <span class="stringliteral">&quot;, Subrun: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">fSubrun</a> &lt;&lt; <span class="stringliteral">&quot;, Event: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// access PMT waveforms and hardware trigger information</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wvfmHandle;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  art::Handle&lt; std::vector&lt; sbnd::comm::pmtTrigger &gt; &gt; triggerHandle;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">fInputModuleNameWvfm</a>, wvfmHandle);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">fInputModuleNameTrigger</a>, triggerHandle);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">if</span>(!wvfmHandle.isValid()) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Could not find any waveforms, input must contain OpDetWaveforms.&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">if</span>(!triggerHandle.isValid()) {</div>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00145">145</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">// Implementation of required member function here.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">// event information</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">fRun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">fSubrun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Processing Run: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">fRun</a> &lt;&lt; <span class="stringliteral">&quot;, Subrun: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">fSubrun</a> &lt;&lt; <span class="stringliteral">&quot;, Event: &quot;</span> &lt;&lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="comment">// access PMT waveforms and hardware trigger information</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  art::Handle&lt; std::vector&lt; raw::OpDetWaveform &gt; &gt; wvfmHandle;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  art::Handle&lt; std::vector&lt; sbnd::comm::pmtTrigger &gt; &gt; triggerHandle;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">fInputModuleNameWvfm</a>, wvfmHandle);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">fInputModuleNameTrigger</a>, triggerHandle);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">if</span>(!wvfmHandle.isValid()) {</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Could not find any PMT hardware trigger object, must run PMT trigger producer before running this module.&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Could not find any waveforms, input must contain OpDetWaveforms.&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// create empty vectors to hold waveforms for each channel</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">double</span> fMinStartTime = -1510.0;<span class="comment">//in us</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">double</span> fMaxEndTime = 1510.0;<span class="comment">//in us</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">if</span>(!triggerHandle.isValid()) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;Could not find any PMT hardware trigger object, must run PMT trigger producer before running this module.&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wvf : (*wvfmHandle)) {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">double</span> fChNumber = wvf.ChannelNumber();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    std::string opdetType = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a27eaf41b286740621a15019864d338ee">pdType</a>(fChNumber);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// only look at pmts</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span> (opdetType != <span class="stringliteral">&quot;pmt_coated&quot;</span> &amp;&amp; opdetType != <span class="stringliteral">&quot;pmt_uncoated&quot;</span>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keywordflow">if</span> (wvf.TimeStamp() &lt; fMinStartTime){ fMinStartTime = wvf.TimeStamp(); }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> ((<span class="keywordtype">double</span>(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + wvf.TimeStamp()) &gt; fMaxEndTime){ fMaxEndTime = double(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + wvf.TimeStamp();}</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;MinStartTime: &quot;</span>&lt;&lt;fMinStartTime&lt;&lt;<span class="stringliteral">&quot; MaxEndTime: &quot;</span>&lt;&lt;fMaxEndTime&lt;&lt;std::endl;}</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  std::vector&lt;short&gt; wvf_0; wvf_0.reserve((<span class="keywordtype">int</span>)(3020*1e6/2)); </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fMinStartTime; i&lt;fMaxEndTime+(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>); i+=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    wvf_0.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.size(); i++){</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.push_back(wvf_0);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="comment">// counters</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">int</span> num_pmt_wvf = 0;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">// loop through waveform handles</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">size_t</span> wvf_id = -1;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">size_t</span> hist_id = -1;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wvf : (*wvfmHandle)) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    wvf_id++;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">double</span> fChNumber = wvf.ChannelNumber();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    std::string opdetType = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a27eaf41b286740621a15019864d338ee">pdType</a>(fChNumber);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// only look at pmts</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (opdetType != <span class="stringliteral">&quot;pmt_coated&quot;</span> &amp;&amp; opdetType != <span class="stringliteral">&quot;pmt_uncoated&quot;</span>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    num_pmt_wvf++;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">double</span> fStartTime = wvf.TimeStamp(); <span class="comment">// in us</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">double</span> fEndTime = double(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + fStartTime; <span class="comment">// in us</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">// create full waveform</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    std::vector&lt;short&gt; wvf_full; wvf_full.reserve((<span class="keywordtype">short</span>)(3020*1e6/2));</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span> (fStartTime &gt; fMinStartTime){</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fStartTime-fMinStartTime; i&gt;0.; i-=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        wvf_full.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; wvf.size(); i++) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      wvf_full.push_back(wvf[i]);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// create empty vectors to hold waveforms for each channel</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">double</span> fMinStartTime = -1510.0;<span class="comment">//in us</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">double</span> fMaxEndTime = 1510.0;<span class="comment">//in us</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wvf : (*wvfmHandle)) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">double</span> fChNumber = wvf.ChannelNumber();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    std::string opdetType = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a27eaf41b286740621a15019864d338ee">pdType</a>(fChNumber);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// only look at pmts</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (opdetType != <span class="stringliteral">&quot;pmt_coated&quot;</span> &amp;&amp; opdetType != <span class="stringliteral">&quot;pmt_uncoated&quot;</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">if</span> (wvf.TimeStamp() &lt; fMinStartTime){ fMinStartTime = wvf.TimeStamp(); }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordflow">if</span> ((<span class="keywordtype">double</span>(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + wvf.TimeStamp()) &gt; fMaxEndTime){ fMaxEndTime = double(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + wvf.TimeStamp();}</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;MinStartTime: &quot;</span>&lt;&lt;fMinStartTime&lt;&lt;<span class="stringliteral">&quot; MaxEndTime: &quot;</span>&lt;&lt;fMaxEndTime&lt;&lt;std::endl;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  std::vector&lt;short&gt; wvf_0; wvf_0.reserve((<span class="keywordtype">int</span>)(3020*1e6/2)); </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fMinStartTime; i&lt;fMaxEndTime+(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>); i+=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    wvf_0.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.size(); i++){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.push_back(wvf_0);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="comment">// counters</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">int</span> num_pmt_wvf = 0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="comment">// loop through waveform handles</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">size_t</span> wvf_id = -1;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">size_t</span> hist_id = -1;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; wvf : (*wvfmHandle)) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    wvf_id++;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">double</span> fChNumber = wvf.ChannelNumber();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    std::string opdetType = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">pdMap</a>.<a class="code" href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a27eaf41b286740621a15019864d338ee">pdType</a>(fChNumber);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// only look at pmts</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (opdetType != <span class="stringliteral">&quot;pmt_coated&quot;</span> &amp;&amp; opdetType != <span class="stringliteral">&quot;pmt_uncoated&quot;</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    num_pmt_wvf++;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">double</span> fStartTime = wvf.TimeStamp(); <span class="comment">// in us</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">double</span> fEndTime = double(wvf.size()) / <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a> + fStartTime; <span class="comment">// in us</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">// create full waveform</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    std::vector&lt;short&gt; wvf_full; wvf_full.reserve((<span class="keywordtype">short</span>)(3020*1e6/2));</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">if</span> (fStartTime &gt; fMinStartTime){</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fStartTime-fMinStartTime; i&gt;0.; i-=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        wvf_full.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      }</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (fEndTime &lt; fMaxEndTime){</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fMaxEndTime-fEndTime; i&gt;0.; i-=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        wvf_full.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// combine waveform with any other waveforms from same channel</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">int</span> i_ch = -1.;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">auto</span> ich = std::find(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.begin(), <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.end(), fChNumber);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (ich != <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.end()){</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      i_ch = ich - <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.begin();</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size() &lt; wvf_full.size()){</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Full waveform -- Previous Channel&quot;</span> &lt;&lt; fChNumber &lt;&lt;<span class="stringliteral">&quot; Size: &quot;</span>&lt;&lt;<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size()&lt;&lt;<span class="stringliteral">&quot;New Channel&quot;</span> &lt;&lt; fChNumber &lt;&lt;<span class="stringliteral">&quot; Size: &quot;</span>&lt;&lt;wvf_full.size()&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size(); i &lt; wvf_full.size(); i++) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; wvf_full.size(); i++) {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;       <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch)[i] += (wvf_full[i] - <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    } </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    hist_id++;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    wvfmHandle.clear();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  } <span class="comment">// waveform handle loop</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">// access hardware trigger information</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  std::vector&lt;size_t&gt; triggerIndex; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; trigger : (*triggerHandle)) {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> idx = 0; idx &lt; trigger.numPassed.size(); idx++) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span> (trigger.numPassed[idx] &gt;= <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">fMultiplicityThreshold</a>) {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">// save index</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        triggerIndex.push_back(idx);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="comment">// skip ahead by 5120 samples (downsampled by 4) before checking again</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        idx += 1280;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  } <span class="comment">// trigger handle loop</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of PMT hardware triggers found: &quot;</span> &lt;&lt; triggerIndex.size() &lt;&lt; std::endl; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="comment">// fragments vector</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  std::unique_ptr&lt;std::vector&lt;artdaq::Fragment&gt;&gt; vecFrag = std::make_unique&lt;std::vector&lt;artdaq::Fragment&gt;&gt;();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// set properties of fragment that are common to event</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  uint32_t nChannelsTotal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.size();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  uint32_t nChannelsFrag = 15;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  uint32_t nFrag = (uint32_t)nChannelsTotal/nChannelsFrag;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  uint32_t wfm_length = 5120; <span class="comment">// ~10us, 2ns tick</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">// fragment properties</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  uint32_t sequenceIDVal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">// create and populate common metadata</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  sbndaq::CAENV1730FragmentMetadata metadata;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  metadata.nChannels = nChannelsFrag + 1; <span class="comment">// 15 PMT channels + final channel to store beam window / trigger information</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  metadata.nSamples = wfm_length;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="comment">// fragment handle properties</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  uint32_t eventCounterVal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a>;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  uint32_t boardIDVal = 0;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  uint32_t triggerTimeTagVal = (uint32_t)CLHEP::RandFlat::shoot(&amp;<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">fTriggerTimeEngine</a>, 0, 1e9);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">// loop over PMT hardware triggers</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> wvfIdx : triggerIndex) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">// index in full waveform, 2ns tick</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">size_t</span> trigIdx = wvfIdx*4;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">size_t</span> startIdx = trigIdx-500; <span class="comment">// -1us</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// determine and set timestamp for particular trigger</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">double</span> triggerTime = fMinStartTime + wvfIdx*0.008; <span class="comment">// in us</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">double</span> timestampVal = 0.5 + (triggerTime*1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-6); <span class="comment">// in seconds // std::time(nullptr); // current time</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    metadata.timeStampSec = (uint32_t)timestampVal;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    metadata.timeStampNSec = (uint32_t)(timestampVal*1e9);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">// create fragments to hold waveforms, set properties and populate</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// 15 PMTs stored per fragment, 120/15 = 8 fragments per trigger</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a> = 0; <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a> &lt; nFrag; <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>++) {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="comment">// create fragment</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> fragment_datasize_bytes = metadata.ExpectedDataSize();</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      uint32_t fragmentIDVal = <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keyword">auto</span> fragment_uptr = artdaq::Fragment::FragmentBytes(fragment_datasize_bytes, sequenceIDVal, fragmentIDVal, sbndaq::detail::FragmentType::CAENV1730, metadata); <span class="comment">// unique pointer</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      fragment_uptr-&gt;setTimestamp(timestampVal);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="comment">// populate fragment header</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keyword">auto</span> header_ptr = <span class="keyword">reinterpret_cast&lt;</span>sbndaq::CAENV1730EventHeader*<span class="keyword">&gt;</span>(fragment_uptr-&gt;dataBeginBytes());</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      header_ptr-&gt;eventCounter = eventCounterVal;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      header_ptr-&gt;boardID = boardIDVal;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      header_ptr-&gt;triggerTimeTag = triggerTimeTagVal;  <span class="comment">// ns // set timetag as random value for event</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="comment">// populate waveforms  </span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="comment">// populate fragment with waveform</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      uint16_t* data_begin = <span class="keyword">reinterpret_cast&lt;</span>uint16_t*<span class="keyword">&gt;</span>(fragment_uptr-&gt;dataBeginBytes() + <span class="keyword">sizeof</span>(sbndaq::CAENV1730EventHeader));</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      uint16_t* value_ptr = data_begin;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      uint16_t <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a> = 0;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keywordtype">size_t</span> ch_offset = 0;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <span class="comment">// loop over channels</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_ch = 0; i_ch &lt; nChannelsFrag; i_ch++) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        ch_offset = (size_t)(i_ch*wfm_length);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="comment">// loop over waveform</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_t = 0; i_t &lt; wfm_length; i_t++) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          <span class="comment">// set value</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          value = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>[<a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>*nChannelsFrag + i_ch][startIdx+i_t];</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          value_ptr = data_begin + ch_offset + i_t;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;          *value_ptr = <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="comment">// create add beam window trigger waveform</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      ch_offset = (size_t)(nChannelsFrag*wfm_length);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordtype">size_t</span> beamStartIdx = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a>(fMinStartTime)*1000/2;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keywordtype">size_t</span> beamEndIdx = beamStartIdx + <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">fBeamWindowLength</a>*1000/2;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="comment">// loop over waveform</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_t = 0; i_t &lt; wfm_length; i_t++) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// set value</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (startIdx + i_t &gt;= beamStartIdx &amp;&amp; startIdx + i_t &lt;= beamEndIdx) value = 1;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">else</span> value = 0;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        value_ptr = data_begin + ch_offset + i_t;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        *value_ptr = <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <span class="comment">// add fragment to vector</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      vecFrag-&gt;push_back(*fragment_uptr);  </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fragments written: &quot;</span> &lt;&lt; vecFrag-&gt;size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="comment">// add fragments to event</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(vecFrag));</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="comment">// clear variables</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.clear();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.shrink_to_fit();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a3b8832b67ae367ca524247d56c47ad31"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">sbnd::trigger::pmtArtdaqFragmentProducer::fSampling</a></div><div class="ttdeci">double fSampling</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00102">pmtArtdaqFragmentProducer_module.cc:102</a></div></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; wvf.size(); i++) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      wvf_full.push_back(wvf[i]);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (fEndTime &lt; fMaxEndTime){</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i = fMaxEndTime-fEndTime; i&gt;0.; i-=(1./<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">fSampling</a>)){</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        wvf_full.push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">// combine waveform with any other waveforms from same channel</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordtype">int</span> i_ch = -1.;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">auto</span> ich = std::find(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.begin(), <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.end(), fChNumber);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (ich != <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.end()){</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      i_ch = ich - <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.begin();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size() &lt; wvf_full.size()){</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;Full waveform -- Previous Channel&quot;</span> &lt;&lt; fChNumber &lt;&lt;<span class="stringliteral">&quot; Size: &quot;</span>&lt;&lt;<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size()&lt;&lt;<span class="stringliteral">&quot;New Channel&quot;</span> &lt;&lt; fChNumber &lt;&lt;<span class="stringliteral">&quot; Size: &quot;</span>&lt;&lt;wvf_full.size()&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).size(); i &lt; wvf_full.size(); i++) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch).push_back(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; wvf_full.size(); i++) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;       <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.at(i_ch)[i] += (wvf_full[i] - <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">fBaseline</a>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    } </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    hist_id++;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    wvfmHandle.clear();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  } <span class="comment">// waveform handle loop</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="comment">// access hardware trigger information</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  std::vector&lt;size_t&gt; triggerIndex; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span>&amp; trigger : (*triggerHandle)) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> idx = 0; idx &lt; trigger.numPassed.size(); idx++) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">if</span> (trigger.numPassed[idx] &gt;= <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">fMultiplicityThreshold</a>) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="comment">// save index</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        triggerIndex.push_back(idx);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="comment">// skip ahead by 5120 samples (downsampled by 4) before checking again</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        idx += 1280;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  } <span class="comment">// trigger handle loop</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Number of PMT hardware triggers found: &quot;</span> &lt;&lt; triggerIndex.size() &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="comment">// fragments vector</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  std::unique_ptr&lt;std::vector&lt;artdaq::Fragment&gt;&gt; vecFrag = std::make_unique&lt;std::vector&lt;artdaq::Fragment&gt;&gt;();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="comment">// set properties of fragment that are common to event</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  uint32_t nChannelsTotal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">channelList</a>.size();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">//uint32_t nChannelsFrag = 15;</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  uint32_t nFrag = (uint32_t)nChannelsTotal/<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="comment">//uint32_t wfm_length = 5120; // ~10us, 2ns tick</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="comment">// fragment properties</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  uint32_t sequenceIDVal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="comment">// create and populate common metadata</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  sbndaq::CAENV1730FragmentMetadata metadata;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  metadata.nChannels = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a> + 1; <span class="comment">// 15 PMT channels + final channel to store beam window / trigger information</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  metadata.nSamples = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="comment">// fragment handle properties</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  uint32_t eventCounterVal = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">fEvent</a>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  uint32_t boardIDVal = 0;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  uint32_t triggerTimeTagVal = (uint32_t)CLHEP::RandFlat::shoot(&amp;<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">fTriggerTimeEngine</a>, 0, 1e9);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  uint32_t eventSizeVal = ((<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a> * (<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a>+1)) * <span class="keyword">sizeof</span>(uint16_t) + <span class="keyword">sizeof</span>(sbndaq::CAENV1730EventHeader)) / <span class="keyword">sizeof</span>(uint32_t);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="comment">// loop over PMT hardware triggers</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> wvfIdx : triggerIndex) {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// index in full waveform, 2ns tick</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">size_t</span> trigIdx = wvfIdx*4;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">size_t</span> startIdx = trigIdx-500; <span class="comment">// -1us</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// determine and set timestamp for particular trigger</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">double</span> triggerTime = fMinStartTime + wvfIdx*0.008; <span class="comment">// in us</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">double</span> timestampVal = 0.5 + (triggerTime*1<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>-6); <span class="comment">// in seconds // std::time(nullptr); // current time</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    metadata.timeStampSec = (uint32_t)timestampVal;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    metadata.timeStampNSec = (uint32_t)(timestampVal*1e9);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// create fragments to hold waveforms, set properties and populate</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">// 15 PMTs stored per fragment, 120/15 = 8 fragments per trigger</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a> = 0; <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a> &lt; nFrag; <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>++) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="comment">// create fragment</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> fragment_datasize_bytes = metadata.ExpectedDataSize();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      uint32_t fragmentIDVal = <a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keyword">auto</span> fragment_uptr = artdaq::Fragment::FragmentBytes(fragment_datasize_bytes, sequenceIDVal, fragmentIDVal, sbndaq::detail::FragmentType::CAENV1730, metadata); <span class="comment">// unique pointer</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      fragment_uptr-&gt;setTimestamp(timestampVal);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="comment">// populate fragment header</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keyword">auto</span> header_ptr = <span class="keyword">reinterpret_cast&lt;</span>sbndaq::CAENV1730EventHeader*<span class="keyword">&gt;</span>(fragment_uptr-&gt;dataBeginBytes());</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      header_ptr-&gt;eventCounter = eventCounterVal;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      header_ptr-&gt;boardID = boardIDVal;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      header_ptr-&gt;triggerTimeTag = triggerTimeTagVal;  <span class="comment">// ns // set timetag as random value for event</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      header_ptr-&gt;eventSize = eventSizeVal;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="comment">// populate waveforms  </span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <span class="comment">// populate fragment with waveform</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      uint16_t* data_begin = <span class="keyword">reinterpret_cast&lt;</span>uint16_t*<span class="keyword">&gt;</span>(fragment_uptr-&gt;dataBeginBytes() + <span class="keyword">sizeof</span>(sbndaq::CAENV1730EventHeader));</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      uint16_t* value_ptr = data_begin;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      uint16_t <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a> = 0;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordtype">size_t</span> ch_offset = 0;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="comment">// loop over channels</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_ch = 0; i_ch &lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">nChannelsFrag</a>; i_ch++) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        ch_offset = (size_t)(i_ch*<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">// loop over waveform</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_t = 0; i_t &lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a>; i_t++) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          <span class="comment">// set value</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          value = <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>[<a class="code" href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">counter</a>*nChannelsFrag + i_ch][startIdx+i_t];</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          value_ptr = data_begin + ch_offset + i_t;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          *value_ptr = <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="comment">// create add beam window trigger waveform</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      ch_offset = (size_t)(nChannelsFrag*wfm_length);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="keywordtype">size_t</span> beamStartIdx = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a>(fMinStartTime)*1000/2;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="keywordtype">size_t</span> beamEndIdx = beamStartIdx + <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">fBeamWindowLength</a>*1000/2;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="comment">// loop over waveform</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_t = 0; i_t &lt; <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">wfm_length</a>; i_t++) {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">// set value</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> (startIdx + i_t &gt;= beamStartIdx &amp;&amp; startIdx + i_t &lt;= beamEndIdx) value = 1;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">else</span> value = 0;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        value_ptr = data_begin + ch_offset + i_t;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        *value_ptr = <a class="code" href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      <span class="comment">// add fragment to vector</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      vecFrag-&gt;push_back(*fragment_uptr);  </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fragments written: &quot;</span> &lt;&lt; vecFrag-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="comment">// add fragments to event</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(vecFrag));</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="comment">// clear variables</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.clear();</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <a class="code" href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">wvf_channel</a>.shrink_to_fit();</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;}</div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a3b8832b67ae367ca524247d56c47ad31"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a3b8832b67ae367ca524247d56c47ad31">sbnd::trigger::pmtArtdaqFragmentProducer::fSampling</a></div><div class="ttdeci">double fSampling</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00104">pmtArtdaqFragmentProducer_module.cc:104</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8052193e6427a5dafc92371838e5b18d"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8052193e6427a5dafc92371838e5b18d">sbnd::trigger::pmtArtdaqFragmentProducer::wfm_length</a></div><div class="ttdeci">uint32_t wfm_length</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00089">pmtArtdaqFragmentProducer_module.cc:89</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ae9f387f0c9ec4cab4fd09331df81fecf"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ae9f387f0c9ec4cab4fd09331df81fecf">sbnd::trigger::pmtArtdaqFragmentProducer::fInputModuleNameWvfm</a></div><div class="ttdeci">std::string fInputModuleNameWvfm</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00083">pmtArtdaqFragmentProducer_module.cc:83</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a299bdcaeaac51c6c060f895b110f0895"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">sbnd::trigger::pmtArtdaqFragmentProducer::pdMap</a></div><div class="ttdeci">opdet::sbndPDMapAlg pdMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00095">pmtArtdaqFragmentProducer_module.cc:95</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adfe917615c1c70c235f6cfe03c95cc32"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">sbnd::trigger::pmtArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00088">pmtArtdaqFragmentProducer_module.cc:88</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a299bdcaeaac51c6c060f895b110f0895"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a299bdcaeaac51c6c060f895b110f0895">sbnd::trigger::pmtArtdaqFragmentProducer::pdMap</a></div><div class="ttdeci">opdet::sbndPDMapAlg pdMap</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00097">pmtArtdaqFragmentProducer_module.cc:97</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adfe917615c1c70c235f6cfe03c95cc32"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adfe917615c1c70c235f6cfe03c95cc32">sbnd::trigger::pmtArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00090">pmtArtdaqFragmentProducer_module.cc:90</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_adf076d37668f2bd539454f75ac80a8e9"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#adf076d37668f2bd539454f75ac80a8e9">sbnd::trigger::pmtArtdaqFragmentProducer::fBeamWindowLength</a></div><div class="ttdeci">double fBeamWindowLength</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00087">pmtArtdaqFragmentProducer_module.cc:87</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ac7f772b19b81ccc146e80e941c4c8bac"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac7f772b19b81ccc146e80e941c4c8bac">sbnd::trigger::pmtArtdaqFragmentProducer::fBaseline</a></div><div class="ttdeci">int fBaseline</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00085">pmtArtdaqFragmentProducer_module.cc:85</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a7f303b4f77b76c2a63901351054c26c7"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a7f303b4f77b76c2a63901351054c26c7">sbnd::trigger::pmtArtdaqFragmentProducer::nChannelsFrag</a></div><div class="ttdeci">uint32_t nChannelsFrag</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00088">pmtArtdaqFragmentProducer_module.cc:88</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 <div class="ttc" id="namespaceutil_html_a9462a726cd010ab8ada5eead879a4b9f"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a9462a726cd010ab8ada5eead879a4b9f">util::counter</a></div><div class="ttdeci">auto counter(T begin, T end)</div><div class="ttdoc">Returns an object to iterate values from begin to end in a range-for loop. </div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da2/counter_8h_source.html#l00285">counter.h:285</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad2c98373ae76fa0fb2dd3288b4a6dddc"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad2c98373ae76fa0fb2dd3288b4a6dddc">sbnd::trigger::pmtArtdaqFragmentProducer::fInputModuleNameTrigger</a></div><div class="ttdeci">std::string fInputModuleNameTrigger</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00084">pmtArtdaqFragmentProducer_module.cc:84</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ac4d01b25507960f406223e0c5f14907b"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">sbnd::trigger::pmtArtdaqFragmentProducer::fRun</a></div><div class="ttdeci">int fRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00091">pmtArtdaqFragmentProducer_module.cc:91</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad00a99eced1107656f4ea7450c18c3ad"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">sbnd::trigger::pmtArtdaqFragmentProducer::channelList</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; channelList</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00096">pmtArtdaqFragmentProducer_module.cc:96</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_aa12e1df497fe5865e33d45daf4e4869e"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">sbnd::trigger::pmtArtdaqFragmentProducer::wvf_channel</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; short &gt; &gt; wvf_channel</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00099">pmtArtdaqFragmentProducer_module.cc:99</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a5a3515f2b62505bde2f98faf5006eea0"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">sbnd::trigger::pmtArtdaqFragmentProducer::fTriggerTimeEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fTriggerTimeEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00108">pmtArtdaqFragmentProducer_module.cc:108</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8cdb7fb5fde4bdde607462e12d127efb"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">sbnd::trigger::pmtArtdaqFragmentProducer::fSubrun</a></div><div class="ttdeci">int fSubrun</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00091">pmtArtdaqFragmentProducer_module.cc:91</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ac4d01b25507960f406223e0c5f14907b"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ac4d01b25507960f406223e0c5f14907b">sbnd::trigger::pmtArtdaqFragmentProducer::fRun</a></div><div class="ttdeci">int fRun</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00093">pmtArtdaqFragmentProducer_module.cc:93</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_ad00a99eced1107656f4ea7450c18c3ad"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#ad00a99eced1107656f4ea7450c18c3ad">sbnd::trigger::pmtArtdaqFragmentProducer::channelList</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; channelList</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00098">pmtArtdaqFragmentProducer_module.cc:98</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_aa12e1df497fe5865e33d45daf4e4869e"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#aa12e1df497fe5865e33d45daf4e4869e">sbnd::trigger::pmtArtdaqFragmentProducer::wvf_channel</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; short &gt; &gt; wvf_channel</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00101">pmtArtdaqFragmentProducer_module.cc:101</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a5a3515f2b62505bde2f98faf5006eea0"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a5a3515f2b62505bde2f98faf5006eea0">sbnd::trigger::pmtArtdaqFragmentProducer::fTriggerTimeEngine</a></div><div class="ttdeci">CLHEP::HepRandomEngine &amp; fTriggerTimeEngine</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00110">pmtArtdaqFragmentProducer_module.cc:110</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8cdb7fb5fde4bdde607462e12d127efb"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8cdb7fb5fde4bdde607462e12d127efb">sbnd::trigger::pmtArtdaqFragmentProducer::fSubrun</a></div><div class="ttdeci">int fSubrun</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00093">pmtArtdaqFragmentProducer_module.cc:93</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a2d5f2cc9814f28e4040a775f7afedb33"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a2d5f2cc9814f28e4040a775f7afedb33">sbnd::trigger::pmtArtdaqFragmentProducer::fMultiplicityThreshold</a></div><div class="ttdeci">int fMultiplicityThreshold</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00086">pmtArtdaqFragmentProducer_module.cc:86</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
 <div class="ttc" id="pmtsimulation__icarus_8fcl_html_a9fc569190f32b40862f18ac3c03a8e49"><div class="ttname"><a href="../../da/d36/pmtsimulation__icarus_8fcl.html#a9fc569190f32b40862f18ac3c03a8e49">value</a></div><div class="ttdeci">temporary value</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d36/pmtsimulation__icarus_8fcl_source.html#l00216">pmtsimulation_icarus.fcl:216</a></div></div>
 <div class="ttc" id="classopdet_1_1sbndPDMapAlg_html_a27eaf41b286740621a15019864d338ee"><div class="ttname"><a href="../../d9/df2/classopdet_1_1sbndPDMapAlg.html#a27eaf41b286740621a15019864d338ee">opdet::sbndPDMapAlg::pdType</a></div><div class="ttdeci">std::string pdType(size_t ch) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d0d/sbndPDMapAlg__tool_8cc_source.html#l00037">sbndPDMapAlg_tool.cc:37</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8101a65d6a4ed564ae67eb5efaca3f1f"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">sbnd::trigger::pmtArtdaqFragmentProducer::fEvent</a></div><div class="ttdeci">art::EventNumber_t fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00092">pmtArtdaqFragmentProducer_module.cc:92</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer_html_a8101a65d6a4ed564ae67eb5efaca3f1f"><div class="ttname"><a href="../../df/d05/classsbnd_1_1trigger_1_1pmtArtdaqFragmentProducer.html#a8101a65d6a4ed564ae67eb5efaca3f1f">sbnd::trigger::pmtArtdaqFragmentProducer::fEvent</a></div><div class="ttdeci">art::EventNumber_t fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00094">pmtArtdaqFragmentProducer_module.cc:94</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -592,7 +604,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00096">96</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00098">98</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -658,7 +670,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00092">92</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00094">94</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -746,7 +758,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -768,7 +780,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00102">102</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00104">104</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -790,7 +802,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00091">91</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00093">93</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -812,7 +824,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00108">108</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00110">110</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -825,6 +837,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool sbnd::trigger::pmtArtdaqFragmentProducer::fVerbose</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00090">90</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f303b4f77b76c2a63901351054c26c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sbnd::trigger::pmtArtdaqFragmentProducer::nChannelsFrag</td>
         </tr>
       </table>
   </td>
@@ -856,7 +890,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00095">95</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00097">97</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -878,7 +912,29 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00107">107</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8052193e6427a5dafc92371838e5b18d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t sbnd::trigger::pmtArtdaqFragmentProducer::wfm_length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00089">89</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -900,7 +956,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00099">99</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html#l00101">101</a> of file <a class="el" href="../../d8/d9d/pmtArtdaqFragmentProducer__module_8cc_source.html">pmtArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>

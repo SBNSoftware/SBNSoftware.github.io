@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>pmtTriggerAna_module.cc File Reference</title>
+<title>artdaqfragmentproducer.fcl File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -74,57 +74,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">pmtTriggerAna_module.cc File Reference</div>  </div>
+<div class="title">artdaqfragmentproducer.fcl File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;cmath&gt;</code><br/>
-<code>#include &lt;memory&gt;</code><br/>
-<code>#include &lt;string&gt;</code><br/>
-<code>#include &quot;art/Framework/Core/EDAnalyzer.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Core/ModuleMacros.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Event.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Handle.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/Run.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Principal/SubRun.h&quot;</code><br/>
-<code>#include &quot;art_root_io/TFileService.h&quot;</code><br/>
-<code>#include &quot;canvas/Utilities/InputTag.h&quot;</code><br/>
-<code>#include &quot;fhiclcpp/ParameterSet.h&quot;</code><br/>
-<code>#include &quot;messagefacility/MessageLogger/MessageLogger.h&quot;</code><br/>
-<code>#include &quot;canvas/Utilities/Exception.h&quot;</code><br/>
-<code>#include &quot;art/Framework/Services/Registry/ServiceHandle.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/d8b/Geometry_8h_source.html">larcore/Geometry/Geometry.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d3/dba/DetectorClocksService_8h_source.html">lardata/DetectorInfoServices/DetectorClocksService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../db/dce/DetectorClocksServiceStandard_8h_source.html">lardata/DetectorInfoServices/DetectorClocksServiceStandard.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/df8/DetectorPropertiesService_8h_source.html">lardata/DetectorInfoServices/DetectorPropertiesService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../da/d9f/LArPropertiesService_8h_source.html">lardata/DetectorInfoServices/LArPropertiesService.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d5/dbc/lardataobj_2lardataobj_2RawData_2OpDetWaveform_8h_source.html">lardataobj/RawData/OpDetWaveform.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d8/d50/SignalShapingServiceSBND_8h_source.html">sbndcode/Utilities/SignalShapingServiceSBND.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d2/d94/sim_8h_source.html">lardataobj/Simulation/sim.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../d6/dde/SimChannel_8h_source.html">lardataobj/Simulation/SimChannel.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../da/dd4/SimPhotons_8h_source.html">lardataobj/Simulation/SimPhotons.h</a>&quot;</code><br/>
-<code>#include &quot;TH1D.h&quot;</code><br/>
-<code>#include &quot;TFile.h&quot;</code><br/>
-<code>#include &quot;TTree.h&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../df/d35/sbndPDMapAlg_8hh_source.html">sbndcode/OpDetSim/sbndPDMapAlg.hh</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d33/pmtArtdaqFragmentProducer_8fcl_source.html">pmtArtdaqFragmentProducer.fcl</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/d87/CRTArtdaqFragmentProducer_8fcl_source.html">CRTArtdaqFragmentProducer.fcl</a>&quot;</code><br/>
 </div>
-<p><a href="../../df/df1/pmtTriggerAna__module_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/def/classopdet_1_1pmtTriggerAna.html">opdet::pmtTriggerAna</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:dc/d8a/namespaceopdet"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8a/namespaceopdet.html">opdet</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+<p><a href="../../dc/d5c/artdaqfragmentproducer_8fcl_source.html">Go to the source code of this file.</a></p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a064904d3e2908038cd8f0b56bba96fe7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7">LIMITS</a> { <a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a> = 50, 
-<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a> = 255, 
+<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a> = 255, 
 <a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a> = 32
  }</td></tr>
 <tr class="separator:a064904d3e2908038cd8f0b56bba96fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,20 +138,25 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab397f7581ca9a063f89856cce9906b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5529d538c6658e4dda1cd62faf7cfcdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a></td></tr>
 <tr class="separator:a5529d538c6658e4dda1cd62faf7cfcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33c10cfbd7abfbc2dfabda1cb012d23"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab33c10cfbd7abfbc2dfabda1cb012d23">taggers</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>]</td></tr>
-<tr class="separator:ab33c10cfbd7abfbc2dfabda1cb012d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361bdc1ffff0bf7e27ecfdce97c97a75"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">feb_hits_in_fragments</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>]</td></tr>
-<tr class="separator:a361bdc1ffff0bf7e27ecfdce97c97a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7415abee306b330f2bfa619e1f66313"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab7415abee306b330f2bfa619e1f66313">ADCs</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a>]</td></tr>
-<tr class="separator:ab7415abee306b330f2bfa619e1f66313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec2756484b37790ad3e2f9283e0b93ed"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#aec2756484b37790ad3e2f9283e0b93ed">T0s</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td></tr>
-<tr class="separator:aec2756484b37790ad3e2f9283e0b93ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d381970ed0c9e2a43d91610aa97b17"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8d381970ed0c9e2a43d91610aa97b17">T1s</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td></tr>
-<tr class="separator:af8d381970ed0c9e2a43d91610aa97b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952f14325435607784cbb2153e9d19f7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">fFirstFEBMac5</a></td></tr>
+<tr class="memdesc:a952f14325435607784cbb2153e9d19f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">lowest mac5 address for CRT FEBs  <a href="#a952f14325435607784cbb2153e9d19f7">More...</a><br/></td></tr>
+<tr class="separator:a952f14325435607784cbb2153e9d19f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a660bae029506b13cd5463933d5614514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d63/classgeo_1_1GeometryCore.html">geo::GeometryCore</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a660bae029506b13cd5463933d5614514">fGeometryService</a></td></tr>
 <tr class="separator:a660bae029506b13cd5463933d5614514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987b7ba7c626f46a8422aff6e68792cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html">CRTGeoAlg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a></td></tr>
 <tr class="separator:a987b7ba7c626f46a8422aff6e68792cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13fcf919efae1afcd51e44459a6fe2d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ae13fcf919efae1afcd51e44459a6fe2d">taggers</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td></tr>
+<tr class="separator:ae13fcf919efae1afcd51e44459a6fe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7758d7b58f16a0affe204c78bf8aa36"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">feb_hits_in_fragments</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td></tr>
+<tr class="separator:ac7758d7b58f16a0affe204c78bf8aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc80ab421691509d63834414b2b37fa3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#adc80ab421691509d63834414b2b37fa3">ADCs</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a>]</td></tr>
+<tr class="separator:adc80ab421691509d63834414b2b37fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfd52d5a5f2b2bbf71b6dc5a3be81ac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">T0s</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td></tr>
+<tr class="separator:a8dfd52d5a5f2b2bbf71b6dc5a3be81ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1ca70036939e9f18670916b77fc73a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9c1ca70036939e9f18670916b77fc73a">T1s</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td></tr>
+<tr class="separator:a9c1ca70036939e9f18670916b77fc73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ea9d8449ed21d84f3efb707cd149ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a50ea9d8449ed21d84f3efb707cd149ec">empty_fragment</a> [<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td></tr>
+<tr class="separator:a50ea9d8449ed21d84f3efb707cd149ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -177,21 +182,21 @@ Private Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d"></a>max_hits_in_fragment</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a"></a>num_module</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984"></a>num_febs</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0"></a>num_channels</em>&nbsp;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00105">105</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;             {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a> = 50,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a> = 255,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a> = 32</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  };</div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">sbnd::trigger::CRTArtdaqFragmentProducer::num_channels</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00108">CRTArtdaqFragmentProducer_module.cc:108</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">sbnd::trigger::CRTArtdaqFragmentProducer::max_hits_in_fragment</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00106">CRTArtdaqFragmentProducer_module.cc:106</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">sbnd::trigger::CRTArtdaqFragmentProducer::num_module</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00107">CRTArtdaqFragmentProducer_module.cc:107</a></div></div>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00110">110</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;             {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a> = 50,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a> = 255,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a> = 32</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  };</div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">sbnd::trigger::CRTArtdaqFragmentProducer::num_channels</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00113">CRTArtdaqFragmentProducer_module.cc:113</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">sbnd::trigger::CRTArtdaqFragmentProducer::max_hits_in_fragment</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00111">CRTArtdaqFragmentProducer_module.cc:111</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">sbnd::trigger::CRTArtdaqFragmentProducer::num_febs</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00112">CRTArtdaqFragmentProducer_module.cc:112</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,25 +223,27 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00126">126</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9cb3d49ce837179a0780e2fb67f0cc10">fSimModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;SimModuleLabel&quot;</span>, <span class="stringliteral">&quot;largeant&quot;</span>)),</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a6a6c94c1e24c236230cc776edc767595">fCRTSimLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;CRTSimLabel&quot;</span>, <span class="stringliteral">&quot;crt&quot;</span>)),</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;FEBDataLabel&quot;</span>, <span class="stringliteral">&quot;crtsim&quot;</span>)),</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Verbose&quot;</span>, <span class="keyword">false</span>)),</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;ClockSpeedCRT&quot;</span>))</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">// More initializers here.</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  produces&lt; std::vector&lt;artdaq::Fragment&gt; &gt;();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// Get a pointer to the fGeometryServiceetry service provider</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a660bae029506b13cd5463933d5614514">fGeometryService</a> = lar::providerFrom&lt;geo::Geometry&gt;();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00130">130</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  : EDProducer{<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>},</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9cb3d49ce837179a0780e2fb67f0cc10">fSimModuleLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;SimModuleLabel&quot;</span>, <span class="stringliteral">&quot;largeant&quot;</span>)),</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a6a6c94c1e24c236230cc776edc767595">fCRTSimLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;CRTSimLabel&quot;</span>, <span class="stringliteral">&quot;crt&quot;</span>)),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;std::string&gt;(<span class="stringliteral">&quot;FEBDataLabel&quot;</span>, <span class="stringliteral">&quot;crtsim&quot;</span>)),</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;Verbose&quot;</span>, <span class="keyword">false</span>)),</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;ClockSpeedCRT&quot;</span>)),</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">fFirstFEBMac5</a>(<a class="code" href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a>.get&lt;<span class="keywordtype">size_t</span>&gt;(<span class="stringliteral">&quot;FirstFEBMac5&quot;</span>, 0))</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// More initializers here.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="comment">// Call appropriate produces&lt;&gt;() functions here.</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  produces&lt; std::vector&lt;artdaq::Fragment&gt; &gt;();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="comment">// Get a pointer to the fGeometryServiceetry service provider</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a660bae029506b13cd5463933d5614514">fGeometryService</a> = lar::providerFrom&lt;geo::Geometry&gt;();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ab397f7581ca9a063f89856cce9906b78"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">sbnd::trigger::CRTArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdoc">print information about what&amp;#39;s going on </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00101">CRTArtdaqFragmentProducer_module.cc:101</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a952f14325435607784cbb2153e9d19f7"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">sbnd::trigger::CRTArtdaqFragmentProducer::fFirstFEBMac5</a></div><div class="ttdeci">size_t fFirstFEBMac5</div><div class="ttdoc">lowest mac5 address for CRT FEBs </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00103">CRTArtdaqFragmentProducer_module.cc:103</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a9cb3d49ce837179a0780e2fb67f0cc10"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9cb3d49ce837179a0780e2fb67f0cc10">sbnd::trigger::CRTArtdaqFragmentProducer::fSimModuleLabel</a></div><div class="ttdeci">art::InputTag fSimModuleLabel</div><div class="ttdoc">name of detsim producer </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00098">CRTArtdaqFragmentProducer_module.cc:98</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a660bae029506b13cd5463933d5614514"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a660bae029506b13cd5463933d5614514">sbnd::trigger::CRTArtdaqFragmentProducer::fGeometryService</a></div><div class="ttdeci">geo::GeometryCore const * fGeometryService</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00120">CRTArtdaqFragmentProducer_module.cc:120</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a660bae029506b13cd5463933d5614514"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a660bae029506b13cd5463933d5614514">sbnd::trigger::CRTArtdaqFragmentProducer::fGeometryService</a></div><div class="ttdeci">geo::GeometryCore const * fGeometryService</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00106">CRTArtdaqFragmentProducer_module.cc:106</a></div></div>
 <div class="ttc" id="selectors_8fcl_html_a24c8335057af14a9b508d5ac18999ce5"><div class="ttname"><a href="../../d9/dd2/selectors_8fcl.html#a24c8335057af14a9b508d5ac18999ce5">p</a></div><div class="ttdeci">pdgs p</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dd2/selectors_8fcl_source.html#l00022">selectors.fcl:22</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a5529d538c6658e4dda1cd62faf7cfcdd"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">sbnd::trigger::CRTArtdaqFragmentProducer::fClockSpeedCRT</a></div><div class="ttdeci">double fClockSpeedCRT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00102">CRTArtdaqFragmentProducer_module.cc:102</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a6a6c94c1e24c236230cc776edc767595"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a6a6c94c1e24c236230cc776edc767595">sbnd::trigger::CRTArtdaqFragmentProducer::fCRTSimLabel</a></div><div class="ttdeci">art::InputTag fCRTSimLabel</div><div class="ttdoc">name of CRT producer </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00099">CRTArtdaqFragmentProducer_module.cc:99</a></div></div>
@@ -363,207 +370,239 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00144">144</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// Fetch basic event info</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// event information</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8586133b6d6940a4284b683fca58ae7">fRun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a18e1cd25235f93f0e015d1d4335873d1">fSubrun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;============================================&quot;</span>&lt;&lt;std::endl</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;               &lt;&lt;<span class="stringliteral">&quot;Run = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8586133b6d6940a4284b683fca58ae7">fRun</a>&lt;&lt;<span class="stringliteral">&quot;, SubRun = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a18e1cd25235f93f0e015d1d4335873d1">fSubrun</a>&lt;&lt;<span class="stringliteral">&quot;, Event = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a>&lt;&lt;std::endl</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;               &lt;&lt;<span class="stringliteral">&quot;============================================&quot;</span>&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//                                          GETTING PRODUCTS</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------------------------</span></div>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00149">149</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// Fetch basic event info</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// event information</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8586133b6d6940a4284b683fca58ae7">fRun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.run();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a18e1cd25235f93f0e015d1d4335873d1">fSubrun</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.subRun();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a> = <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.id().event();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;============================================&quot;</span>&lt;&lt;std::endl</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;               &lt;&lt;<span class="stringliteral">&quot;Run = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8586133b6d6940a4284b683fca58ae7">fRun</a>&lt;&lt;<span class="stringliteral">&quot;, SubRun = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a18e1cd25235f93f0e015d1d4335873d1">fSubrun</a>&lt;&lt;<span class="stringliteral">&quot;, Event = &quot;</span>&lt;&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a>&lt;&lt;std::endl</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;               &lt;&lt;<span class="stringliteral">&quot;============================================&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// Get FEB data from the event</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    art::Handle&lt;std::vector&lt;sbnd::crt::FEBData&gt;&gt; feb_data_h;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>, feb_data_h);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// make sure hits look good</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (!feb_data_h.isValid()) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration) &lt;&lt; <span class="stringliteral">&quot;could not locate FEBData.&quot;</span> &lt;&lt; std::endl;;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>; i++){<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a50ea9d8449ed21d84f3efb707cd149ec">empty_fragment</a>[i]=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">int</span> num_module = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#aa1ace214957795fefbfb1d5cb6ab5e9d">NumModules</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">//                                          GETTING PRODUCTS</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    std::vector&lt;art::Ptr&lt;sbnd::crt::FEBData&gt;&gt; feb_data_v;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    art::fill_ptr_vector(feb_data_v, feb_data_h);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    art::FindManyP&lt;sim::AuxDetIDE, sbnd::crt::FEBTruthInfo&gt; febdata_to_ides (feb_data_h, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">//Fill arrays with default values</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="../../d0/da2/namespacetrkf.html#a70c1b5920b45babb363628ea6e073ea8">std::fill</a>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">feb_hits_in_fragments</a>, <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">feb_hits_in_fragments</a> + <span class="keyword">sizeof</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">feb_hits_in_fragments</a>), 0);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// fragments vector</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::unique_ptr&lt;std::vector&lt;artdaq::Fragment&gt;&gt; vecFrag = std::make_unique&lt;std::vector&lt;artdaq::Fragment&gt;&gt;();</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// set properties of fragment that are common to event</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">//quantities in fragment</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    uint16_t lostcpu = 0;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    uint16_t lostfpga = 0;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    uint32_t coinc = 0;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    uint16_t lost_hits = 0; <span class="comment">//number of lost hits from the previous one</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="comment">//metadata</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    uint64_t  run_start_time = 0;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    uint64_t  this_poll_start = 0;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    uint64_t  this_poll_end = 0;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    int32_t   system_clock_deviation = 0;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    uint32_t  feb_hits_in_poll = 0;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">//information from fragment header</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    uint64_t  sequence_id = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    uint64_t temp_last_time = 0;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">//random number generator to bu used to simulate pedestal</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    std::default_random_engine <a class="code" href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl.html#a94c01634bb7c0870a044209a4ca30a50">generator</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    std::normal_distribution&lt;double&gt; distribution(175.0,23.0);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// Get FEB data from the event</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    art::Handle&lt;std::vector&lt;sbnd::crt::FEBData&gt;&gt; feb_data_h;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.getByLabel(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>, feb_data_h);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// make sure hits look good</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (!feb_data_h.isValid()) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keywordflow">throw</span> art::Exception(art::errors::Configuration) &lt;&lt; <span class="stringliteral">&quot;could not locate FEBData.&quot;</span> &lt;&lt; std::endl;;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::vector&lt;art::Ptr&lt;sbnd::crt::FEBData&gt;&gt; feb_data_v;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    art::fill_ptr_vector(feb_data_v, feb_data_h);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    art::FindManyP&lt;sim::AuxDetIDE, sbnd::crt::FEBTruthInfo&gt; febdata_to_ides (feb_data_h, <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>, <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">fFEBDataLabel</a>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">//Fill arrays with default values</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="../../d0/da2/namespacetrkf.html#a70c1b5920b45babb363628ea6e073ea8">std::fill</a>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">feb_hits_in_fragments</a>, <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">feb_hits_in_fragments</a> + <span class="keyword">sizeof</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">feb_hits_in_fragments</a>), 0);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// fragments vector</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    std::unique_ptr&lt;std::vector&lt;artdaq::Fragment&gt;&gt; vecFrag = std::make_unique&lt;std::vector&lt;artdaq::Fragment&gt;&gt;();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">// set properties of fragment that are common to event</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">//quantities in fragment</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    uint16_t lostcpu = 0;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    uint16_t lostfpga = 0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    uint32_t coinc = 0;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    uint16_t lost_hits = 0; <span class="comment">//number of lost hits from the previous one</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">//metadata</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    uint64_t  run_start_time = 0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    uint64_t  this_poll_start = 0;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    uint64_t  this_poll_end = 0;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    int32_t   system_clock_deviation = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    uint32_t  feb_hits_in_poll = 0;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">//loop through FEBData product and sort by module/mac5</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> feb_i = 0; feb_i &lt; feb_data_v.size(); feb_i++) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="comment">//information from fragment header</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    uint64_t  sequence_id = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">fEvent</a>;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span> feb_data = feb_data_v[feb_i];</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    uint64_t temp_last_time = 0;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;FEB &quot;</span> &lt;&lt; feb_i &lt;&lt; <span class="stringliteral">&quot; with mac &quot;</span> &lt;&lt; feb_data-&gt;Mac5() &lt;&lt; std::endl;}</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordtype">int</span> channel = feb_data-&gt;Mac5() * 32;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        std::string stripName = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a8a2cb4f142924e93afc10f4cdf430012">ChannelToStripName</a>(channel);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        std::string <a class="code" href="../../df/d62/structtagger.html">tagger</a> = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a960393299f988f9a67976967edb816cd">GetTaggerName</a>(stripName);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab33c10cfbd7abfbc2dfabda1cb012d23">taggers</a>[feb_data-&gt;Mac5()] = tagger;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#aec2756484b37790ad3e2f9283e0b93ed">T0s</a>[feb_data-&gt;Mac5()][<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">feb_hits_in_fragments</a>[feb_data-&gt;Mac5()]] = feb_data-&gt;Ts0();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8d381970ed0c9e2a43d91610aa97b17">T1s</a>[feb_data-&gt;Mac5()][feb_hits_in_fragments[feb_data-&gt;Mac5()]] = feb_data-&gt;Ts1();</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_adc = 0; i_adc&lt;32; i_adc++){</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          uint16_t adc = 0;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <span class="keywordflow">if</span> (feb_data-&gt;ADC()[i_adc] &gt; 4089){</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            adc = 4089;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;          }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (feb_data-&gt;ADC()[i_adc] == 0){</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="comment">//pull from a normal distribution to simulate pedestal</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            adc = distribution(generator);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            adc = feb_data-&gt;ADC()[i_adc];</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;          <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab7415abee306b330f2bfa619e1f66313">ADCs</a>[feb_data-&gt;Mac5()][feb_hits_in_fragments[feb_data-&gt;Mac5()]][i_adc] = adc;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        feb_hits_in_fragments[feb_data-&gt;Mac5()]++;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }<span class="comment">//FEBData loop</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">//make one fragment for every module</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> feb_i = 0; feb_i &lt; <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>; feb_i++){</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">//quantities in fragment</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">if</span> (feb_hits_in_fragments[feb_i]==0) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="comment">//metadata</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        uint8_t  mac5 = (uint8_t)feb_i; <span class="comment">//last 8 bits of FEB mac5 address</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        uint16_t feb_hits_in_fragment = feb_hits_in_fragments[feb_i];</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        sbndaq::BernCRTFragmentMetadataV2 metadata;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        metadata.set_mac5(mac5);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        metadata.set_clock_deviation(system_clock_deviation);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        metadata.set_hits_in_poll(feb_hits_in_poll);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        metadata.set_hits_in_fragment(feb_hits_in_fragment);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        metadata.set_run_start_time(run_start_time);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        metadata.update_poll_time(this_poll_start, this_poll_end);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">//random number generator to be used to simulate pedestal</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    std::default_random_engine <a class="code" href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl.html#a94c01634bb7c0870a044209a4ca30a50">generator</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    std::normal_distribution&lt;double&gt; distribution(175.0,23.0);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">//list all fragment ids - uncomment if needed for daq running</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="comment">/*if (fVerbose){std::cout&lt;&lt;&quot;Num Modules: &quot;&lt;&lt;fCrtGeo.NumModules()&lt;&lt;std::endl;}</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">    for (size_t mod_i = 0; mod_i&lt;fCrtGeo.NumModules(); mod_i++){</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">      int plane = sbnd::CRTCommonUtils::GetPlaneIndex(fCrtGeo.GetTaggerName(fCrtGeo.ChannelToStripName(mod_i * 32)));</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">      if (fVerbose){std::cout &lt;&lt; std::hex &lt;&lt; (32768 + 12288 + (plane * 256) + (int)mod_i) &lt;&lt; std::endl;}</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">    } */</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">//loop through FEBData product and sort by module/mac5</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> feb_i = 0; feb_i &lt; feb_data_v.size(); feb_i++) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">auto</span> <span class="keyword">const</span> feb_data = feb_data_v[feb_i];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;FEB &quot;</span> &lt;&lt; feb_i &lt;&lt; <span class="stringliteral">&quot; with mac &quot;</span> &lt;&lt; feb_data-&gt;Mac5() &lt;&lt; std::endl;}</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a50ea9d8449ed21d84f3efb707cd149ec">empty_fragment</a>[feb_data-&gt;Mac5()] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordtype">int</span> channel = feb_data-&gt;Mac5() * 32;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        std::string stripName = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a8a2cb4f142924e93afc10f4cdf430012">ChannelToStripName</a>(channel);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        std::string <a class="code" href="../../df/d62/structtagger.html">tagger</a> = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a960393299f988f9a67976967edb816cd">GetTaggerName</a>(stripName);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ae13fcf919efae1afcd51e44459a6fe2d">taggers</a>[feb_data-&gt;Mac5()] = tagger;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">T0s</a>[feb_data-&gt;Mac5()][<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">feb_hits_in_fragments</a>[feb_data-&gt;Mac5()]] = feb_data-&gt;Ts0();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9c1ca70036939e9f18670916b77fc73a">T1s</a>[feb_data-&gt;Mac5()][feb_hits_in_fragments[feb_data-&gt;Mac5()]] = feb_data-&gt;Ts1();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_adc = 0; i_adc&lt;32; i_adc++){</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;          uint16_t adc = 0;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          <span class="keywordflow">if</span> (feb_data-&gt;ADC()[i_adc] &gt; 4089){</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            adc = 4089;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;          }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (feb_data-&gt;ADC()[i_adc] == 0){</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="comment">//pull from a normal distribution to simulate pedestal</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            adc = distribution(generator);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;          }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            adc = feb_data-&gt;ADC()[i_adc];</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#adc80ab421691509d63834414b2b37fa3">ADCs</a>[feb_data-&gt;Mac5()][feb_hits_in_fragments[feb_data-&gt;Mac5()]][i_adc] = adc;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        feb_hits_in_fragments[feb_data-&gt;Mac5()]++;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }<span class="comment">//FEBData loop</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        uint64_t  timestamp = (uint64_t)(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#aec2756484b37790ad3e2f9283e0b93ed">T0s</a>[feb_i][feb_hits_in_fragments[feb_i]]/<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>); <span class="comment">//absolute timestamp</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="comment">// create fragment</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="../../df/d92/namespacesbnd.html#aeffc9f1dd9a8b45222e1fd913847aa7c">sbnd::CRTPlane</a> plane_num = <a class="code" href="../../dd/d12/namespacesbnd_1_1CRTCommonUtils.html#a68bb731250bb092a6365603960f142c8">sbnd::CRTCommonUtils::GetPlaneIndex</a>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab33c10cfbd7abfbc2dfabda1cb012d23">taggers</a>[feb_i]);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        uint16_t fragmentIDVal = 32768 + 12288 + (plane_num * 256) + (uint16_t)mac5;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;fragmentID: &quot;</span>&lt;&lt;std::bitset&lt;16&gt;{fragmentIDVal}&lt;&lt;std::endl;}</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keyword">auto</span> fragment_uptr = artdaq::Fragment::FragmentBytes(<span class="keyword">sizeof</span>(sbndaq::BernCRTHitV2)*metadata.hits_in_fragment(), <span class="comment">//payload_size</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            sequence_id,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            fragmentIDVal,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            sbndaq::detail::FragmentType::BERNCRTV2,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            metadata,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            timestamp</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          ); <span class="comment">// unique pointer</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="comment">// populate fragment</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        std::vector&lt;sbndaq::BernCRTHitV2&gt; data_vec;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_frag = 0; i_frag&lt;feb_hits_in_fragments[feb_i]; i_frag++){</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          sbndaq::BernCRTHitV2 <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">//make one fragment for every module</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> feb_i = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">fFirstFEBMac5</a>; feb_i &lt; num_module+<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">fFirstFEBMac5</a>; feb_i++){</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="comment">//quantities in fragment</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a50ea9d8449ed21d84f3efb707cd149ec">empty_fragment</a>[feb_i]){</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          <span class="comment">//if no hits for a module, make a simulated &quot;T1 reset&quot; event to avoid missing fragments</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;          feb_hits_in_fragments[feb_i] = 1;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;          <span class="keywordtype">int</span> channel = feb_i * 32;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          std::string stripName = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a8a2cb4f142924e93afc10f4cdf430012">ChannelToStripName</a>(channel);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;          std::string tagger = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">fCrtGeo</a>.<a class="code" href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a960393299f988f9a67976967edb816cd">GetTaggerName</a>(stripName);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;          <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ae13fcf919efae1afcd51e44459a6fe2d">taggers</a>[feb_i] = tagger;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">T0s</a>[feb_i][0] = 0;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9c1ca70036939e9f18670916b77fc73a">T1s</a>[feb_i][0] = 0;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_adc = 0; i_adc&lt;32; i_adc++){</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            uint16_t adc = distribution(generator);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#adc80ab421691509d63834414b2b37fa3">ADCs</a>[feb_i][0][i_adc] = adc;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;          }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          uint8_t flags = 3;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          uint32_t ts0 = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#aec2756484b37790ad3e2f9283e0b93ed">T0s</a>[feb_i][i_frag];</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          uint32_t ts1 = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8d381970ed0c9e2a43d91610aa97b17">T1s</a>[feb_i][i_frag];</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          <span class="keywordflow">if</span> (ts0==0){flags=7;}<span class="keywordflow">else</span> <span class="keywordflow">if</span> (ts1==0){flags=11;}</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">if</span> (feb_hits_in_fragments[feb_i]==0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="comment">//metadata</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        uint8_t  mac5 = (uint8_t)feb_i; <span class="comment">//last 8 bits of FEB mac5 address</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        uint16_t feb_hits_in_fragment = feb_hits_in_fragments[feb_i];</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          uint64_t  feb_hit_number = feb_hits_in_fragments[feb_i]; <span class="comment">//hit counter for individual FEB, including hits lost in FEB or fragment generator</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          timestamp = (uint64_t)ts0/<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>; <span class="comment">//absolute timestamp</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          uint64_t  last_accepted_timestamp = temp_last_time; <span class="comment">//timestamp of previous accepted hit</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;          temp_last_time = timestamp;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          hit.flags = (uint16_t)flags;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;          hit.lostcpu = (uint16_t)lostcpu;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;          hit.lostfpga = (uint16_t)lostfpga;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          hit.ts0 = (uint32_t)ts0;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          hit.ts1 = (uint32_t)ts1;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_adc = 0; i_adc&lt;32; i_adc++){</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            hit.adc[i_adc] = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab7415abee306b330f2bfa619e1f66313">ADCs</a>[feb_i][i_frag][i_adc];</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          hit.coinc = (uint32_t)coinc;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          hit.feb_hit_number = (uint64_t)feb_hit_number;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;          hit.timestamp = (uint64_t)timestamp;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          hit.last_accepted_timestamp = (uint64_t)last_accepted_timestamp;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;          hit.lost_hits = (uint16_t)lost_hits;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;          data_vec.emplace_back(hit);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }<span class="comment">//bern crt hit vector</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">//copy data vector of hits into the fragment we made</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        std::memcpy(fragment_uptr-&gt;dataBeginBytes(), data_vec.data(), <span class="keyword">sizeof</span>(sbndaq::BernCRTHitV2)*metadata.hits_in_fragment());</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="comment">// add fragment to vector</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        vecFrag-&gt;push_back(*fragment_uptr);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        sbndaq::BernCRTFragmentMetadataV2 metadata;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        metadata.set_mac5(mac5);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        metadata.set_clock_deviation(system_clock_deviation);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        metadata.set_hits_in_poll(feb_hits_in_poll);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        metadata.set_hits_in_fragment(feb_hits_in_fragment);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        metadata.set_run_start_time(run_start_time);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        metadata.update_poll_time(this_poll_start, this_poll_end);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        uint64_t  timestamp = (uint64_t)(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">T0s</a>[feb_i][feb_hits_in_fragments[feb_i]]/<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>); <span class="comment">//absolute timestamp</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="comment">// create fragment</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="../../df/d92/namespacesbnd.html#aeffc9f1dd9a8b45222e1fd913847aa7c">sbnd::CRTPlane</a> plane_num = <a class="code" href="../../dd/d12/namespacesbnd_1_1CRTCommonUtils.html#a68bb731250bb092a6365603960f142c8">sbnd::CRTCommonUtils::GetPlaneIndex</a>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ae13fcf919efae1afcd51e44459a6fe2d">taggers</a>[feb_i]);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        uint16_t fragmentIDVal = 32768 + 12288 + (plane_num * 256) + (uint16_t)mac5;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>){<a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a>&lt;&lt;<span class="stringliteral">&quot;fragmentID: &quot;</span>&lt;&lt;std::bitset&lt;16&gt;{fragmentIDVal}&lt;&lt;std::endl;}</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keyword">auto</span> fragment_uptr = artdaq::Fragment::FragmentBytes(<span class="keyword">sizeof</span>(sbndaq::BernCRTHitV2)*metadata.hits_in_fragment(), <span class="comment">//payload_size</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            sequence_id,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            fragmentIDVal,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            sbndaq::detail::FragmentType::BERNCRTV2,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            metadata,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            timestamp</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;          ); <span class="comment">// unique pointer</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="comment">// populate fragment</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        std::vector&lt;sbndaq::BernCRTHitV2&gt; data_vec;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_frag = 0; i_frag&lt;feb_hits_in_fragments[feb_i]; i_frag++){</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          sbndaq::BernCRTHitV2 <a class="code" href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a>;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }<span class="comment">//module (mac5) loop</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fragments written: &quot;</span> &lt;&lt; vecFrag-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          uint8_t flags = 3;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          uint32_t ts0 = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">T0s</a>[feb_i][i_frag];</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          uint32_t ts1 = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9c1ca70036939e9f18670916b77fc73a">T1s</a>[feb_i][i_frag];</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(vecFrag));</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;          <span class="keywordflow">if</span> (ts1==0){flags=11;}<span class="keywordflow">else</span> <span class="keywordflow">if</span> (ts0==0){flags=7;}</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;} <span class="comment">// CRTArtdaqFragmentProducer::produce()</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          uint64_t  feb_hit_number = feb_hits_in_fragments[feb_i]; <span class="comment">//hit counter for individual FEB, including hits lost in FEB or fragment generator</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          timestamp = (uint64_t)ts0/<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">fClockSpeedCRT</a>; <span class="comment">//absolute timestamp</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          uint64_t  last_accepted_timestamp = temp_last_time; <span class="comment">//timestamp of previous accepted hit</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          temp_last_time = timestamp;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          hit.flags = (uint16_t)flags;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          hit.lostcpu = (uint16_t)lostcpu;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          hit.lostfpga = (uint16_t)lostfpga;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          hit.ts0 = (uint32_t)ts0;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          hit.ts1 = (uint32_t)ts1;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_adc = 0; i_adc&lt;32; i_adc++){</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            hit.adc[i_adc] = <a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#adc80ab421691509d63834414b2b37fa3">ADCs</a>[feb_i][i_frag][i_adc];</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;          }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          hit.coinc = (uint32_t)coinc;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          hit.feb_hit_number = (uint64_t)feb_hit_number;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          hit.timestamp = (uint64_t)timestamp;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;          hit.last_accepted_timestamp = (uint64_t)last_accepted_timestamp;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          hit.lost_hits = (uint16_t)lost_hits;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          data_vec.emplace_back(hit);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }<span class="comment">//bern crt hit vector</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">//copy data vector of hits into the fragment we made</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        std::memcpy(fragment_uptr-&gt;dataBeginBytes(), data_vec.data(), <span class="keyword">sizeof</span>(sbndaq::BernCRTHitV2)*metadata.hits_in_fragment());</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">// add fragment to vector</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        vecFrag-&gt;push_back(*fragment_uptr);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }<span class="comment">//module (mac5) loop</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">fVerbose</a>) <a class="code" href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Fragments written: &quot;</span> &lt;&lt; vecFrag-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>.put(std::move(vecFrag));</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;} <span class="comment">// CRTArtdaqFragmentProducer::produce()</span></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a50ea9d8449ed21d84f3efb707cd149ec"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a50ea9d8449ed21d84f3efb707cd149ec">sbnd::trigger::CRTArtdaqFragmentProducer::empty_fragment</a></div><div class="ttdeci">bool empty_fragment[num_febs]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00122">CRTArtdaqFragmentProducer_module.cc:122</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ab397f7581ca9a063f89856cce9906b78"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab397f7581ca9a063f89856cce9906b78">sbnd::trigger::CRTArtdaqFragmentProducer::fVerbose</a></div><div class="ttdeci">bool fVerbose</div><div class="ttdoc">print information about what&amp;#39;s going on </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00101">CRTArtdaqFragmentProducer_module.cc:101</a></div></div>
 <div class="ttc" id="structtagger_html"><div class="ttname"><a href="../../df/d62/structtagger.html">tagger</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d37/CRTTrueHitRecoAlg_8h_source.html#l00040">CRTTrueHitRecoAlg.h:40</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_af8d381970ed0c9e2a43d91610aa97b17"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8d381970ed0c9e2a43d91610aa97b17">sbnd::trigger::CRTArtdaqFragmentProducer::T1s</a></div><div class="ttdeci">uint32_t T1s[num_module][max_hits_in_fragment]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00116">CRTArtdaqFragmentProducer_module.cc:116</a></div></div>
+<div class="ttc" id="classsbnd_1_1CRTGeoAlg_html_aa1ace214957795fefbfb1d5cb6ab5e9d"><div class="ttname"><a href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#aa1ace214957795fefbfb1d5cb6ab5e9d">sbnd::CRTGeoAlg::NumModules</a></div><div class="ttdeci">size_t NumModules() const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/sbndcode_2sbndcode_2Geometry_2GeometryWrappers_2CRTGeoAlg_8cc_source.html#l00279">sbndcode/sbndcode/Geometry/GeometryWrappers/CRTGeoAlg.cc:279</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a952f14325435607784cbb2153e9d19f7"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a952f14325435607784cbb2153e9d19f7">sbnd::trigger::CRTArtdaqFragmentProducer::fFirstFEBMac5</a></div><div class="ttdeci">size_t fFirstFEBMac5</div><div class="ttdoc">lowest mac5 address for CRT FEBs </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00103">CRTArtdaqFragmentProducer_module.cc:103</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a18e1cd25235f93f0e015d1d4335873d1"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a18e1cd25235f93f0e015d1d4335873d1">sbnd::trigger::CRTArtdaqFragmentProducer::fSubrun</a></div><div class="ttdeci">int fSubrun</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00094">CRTArtdaqFragmentProducer_module.cc:94</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a361bdc1ffff0bf7e27ecfdce97c97a75"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a361bdc1ffff0bf7e27ecfdce97c97a75">sbnd::trigger::CRTArtdaqFragmentProducer::feb_hits_in_fragments</a></div><div class="ttdeci">uint16_t feb_hits_in_fragments[num_module]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00113">CRTArtdaqFragmentProducer_module.cc:113</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a97cb6db77a0e468f2e4f4b4f51374fbc"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a97cb6db77a0e468f2e4f4b4f51374fbc">sbnd::trigger::CRTArtdaqFragmentProducer::fEvent</a></div><div class="ttdeci">int fEvent</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00095">CRTArtdaqFragmentProducer_module.cc:95</a></div></div>
 <div class="ttc" id="prodcorsika__proton__intime__icarus__bnb_8fcl_html_a94c01634bb7c0870a044209a4ca30a50"><div class="ttname"><a href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl.html#a94c01634bb7c0870a044209a4ca30a50">generator</a></div><div class="ttdeci">process_name generator</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d49/prodcorsika__proton__intime__icarus__bnb_8fcl_source.html#l00092">prodcorsika_proton_intime_icarus_bnb.fcl:92</a></div></div>
 <div class="ttc" id="cheaterreco_8fcl_html_abf2e819dbf4c327e098bebd4b2dc0597"><div class="ttname"><a href="../../d2/d36/cheaterreco_8fcl.html#abf2e819dbf4c327e098bebd4b2dc0597">hit</a></div><div class="ttdeci">process_name hit</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d36/cheaterreco_8fcl_source.html#l00051">cheaterreco.fcl:51</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a987b7ba7c626f46a8422aff6e68792cd"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">sbnd::trigger::CRTArtdaqFragmentProducer::fCrtGeo</a></div><div class="ttdeci">CRTGeoAlg fCrtGeo</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00121">CRTArtdaqFragmentProducer_module.cc:121</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a987b7ba7c626f46a8422aff6e68792cd"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a987b7ba7c626f46a8422aff6e68792cd">sbnd::trigger::CRTArtdaqFragmentProducer::fCrtGeo</a></div><div class="ttdeci">CRTGeoAlg fCrtGeo</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00107">CRTArtdaqFragmentProducer_module.cc:107</a></div></div>
 <div class="ttc" id="classsbnd_1_1CRTGeoAlg_html_a8a2cb4f142924e93afc10f4cdf430012"><div class="ttname"><a href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a8a2cb4f142924e93afc10f4cdf430012">sbnd::CRTGeoAlg::ChannelToStripName</a></div><div class="ttdeci">std::string ChannelToStripName(size_t channel) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/sbndcode_2sbndcode_2Geometry_2GeometryWrappers_2CRTGeoAlg_8cc_source.html#l00376">sbndcode/sbndcode/Geometry/GeometryWrappers/CRTGeoAlg.cc:376</a></div></div>
 <div class="ttc" id="namespacesbnd_1_1CRTCommonUtils_html_a68bb731250bb092a6365603960f142c8"><div class="ttname"><a href="../../dd/d12/namespacesbnd_1_1CRTCommonUtils.html#a68bb731250bb092a6365603960f142c8">sbnd::CRTCommonUtils::GetPlaneIndex</a></div><div class="ttdeci">enum::sbnd::CRTPlane GetPlaneIndex(std::string tagger)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d56/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTCommonUtils_8cc_source.html#l00183">sbndcode/sbndcode/CRT/CRTUtils/CRTCommonUtils.cc:183</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ab7415abee306b330f2bfa619e1f66313"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab7415abee306b330f2bfa619e1f66313">sbnd::trigger::CRTArtdaqFragmentProducer::ADCs</a></div><div class="ttdeci">uint16_t ADCs[num_module][max_hits_in_fragment][num_channels]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00114">CRTArtdaqFragmentProducer_module.cc:114</a></div></div>
 <div class="ttc" id="namespacetrkf_html_a70c1b5920b45babb363628ea6e073ea8"><div class="ttname"><a href="../../d0/da2/namespacetrkf.html#a70c1b5920b45babb363628ea6e073ea8">trkf::fill</a></div><div class="ttdeci">void fill(const art::PtrVector&lt; recob::Hit &gt; &amp;hits, int only_plane)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d74/KHitContainer_8cxx_source.html#l00018">KHitContainer.cxx:18</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a5529d538c6658e4dda1cd62faf7cfcdd"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a5529d538c6658e4dda1cd62faf7cfcdd">sbnd::trigger::CRTArtdaqFragmentProducer::fClockSpeedCRT</a></div><div class="ttdeci">double fClockSpeedCRT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00102">CRTArtdaqFragmentProducer_module.cc:102</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_af8586133b6d6940a4284b683fca58ae7"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#af8586133b6d6940a4284b683fca58ae7">sbnd::trigger::CRTArtdaqFragmentProducer::fRun</a></div><div class="ttdeci">int fRun</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00093">CRTArtdaqFragmentProducer_module.cc:93</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a9c1ca70036939e9f18670916b77fc73a"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a9c1ca70036939e9f18670916b77fc73a">sbnd::trigger::CRTArtdaqFragmentProducer::T1s</a></div><div class="ttdeci">uint32_t T1s[num_febs][max_hits_in_fragment]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00121">CRTArtdaqFragmentProducer_module.cc:121</a></div></div>
 <div class="ttc" id="classsbnd_1_1CRTGeoAlg_html_a960393299f988f9a67976967edb816cd"><div class="ttname"><a href="../../dc/dda/classsbnd_1_1CRTGeoAlg.html#a960393299f988f9a67976967edb816cd">sbnd::CRTGeoAlg::GetTaggerName</a></div><div class="ttdeci">std::string GetTaggerName(std::string name) const </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3c/sbndcode_2sbndcode_2Geometry_2GeometryWrappers_2CRTGeoAlg_8cc_source.html#l00365">sbndcode/sbndcode/Geometry/GeometryWrappers/CRTGeoAlg.cc:365</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_adc80ab421691509d63834414b2b37fa3"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#adc80ab421691509d63834414b2b37fa3">sbnd::trigger::CRTArtdaqFragmentProducer::ADCs</a></div><div class="ttdeci">uint16_t ADCs[num_febs][max_hits_in_fragment][num_channels]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00119">CRTArtdaqFragmentProducer_module.cc:119</a></div></div>
 <div class="ttc" id="namespacesbnd_html_aeffc9f1dd9a8b45222e1fd913847aa7c"><div class="ttname"><a href="../../df/d92/namespacesbnd.html#aeffc9f1dd9a8b45222e1fd913847aa7c">sbnd::CRTPlane</a></div><div class="ttdeci">CRTPlane</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/df4/sbndcode_2sbndcode_2CRT_2CRTUtils_2CRTCommonUtils_8h_source.html#l00025">sbndcode/sbndcode/CRT/CRTUtils/CRTCommonUtils.h:25</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_aec2756484b37790ad3e2f9283e0b93ed"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#aec2756484b37790ad3e2f9283e0b93ed">sbnd::trigger::CRTArtdaqFragmentProducer::T0s</a></div><div class="ttdeci">uint32_t T0s[num_module][max_hits_in_fragment]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00115">CRTArtdaqFragmentProducer_module.cc:115</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">sbnd::trigger::CRTArtdaqFragmentProducer::num_module</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00107">CRTArtdaqFragmentProducer_module.cc:107</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a8dfd52d5a5f2b2bbf71b6dc5a3be81ac"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a8dfd52d5a5f2b2bbf71b6dc5a3be81ac">sbnd::trigger::CRTArtdaqFragmentProducer::T0s</a></div><div class="ttdeci">uint32_t T0s[num_febs][max_hits_in_fragment]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00120">CRTArtdaqFragmentProducer_module.cc:120</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">sbnd::trigger::CRTArtdaqFragmentProducer::num_febs</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00112">CRTArtdaqFragmentProducer_module.cc:112</a></div></div>
 <div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_a813598998fbb4b022ebb3ea6d82b9fa4"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a813598998fbb4b022ebb3ea6d82b9fa4">sbnd::trigger::CRTArtdaqFragmentProducer::fFEBDataLabel</a></div><div class="ttdeci">std::string fFEBDataLabel</div><div class="ttdoc">name of FEBData producer </div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00100">CRTArtdaqFragmentProducer_module.cc:100</a></div></div>
-<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ab33c10cfbd7abfbc2dfabda1cb012d23"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ab33c10cfbd7abfbc2dfabda1cb012d23">sbnd::trigger::CRTArtdaqFragmentProducer::taggers</a></div><div class="ttdeci">std::string taggers[num_module]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00112">CRTArtdaqFragmentProducer_module.cc:112</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ac7758d7b58f16a0affe204c78bf8aa36"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ac7758d7b58f16a0affe204c78bf8aa36">sbnd::trigger::CRTArtdaqFragmentProducer::feb_hits_in_fragments</a></div><div class="ttdeci">uint16_t feb_hits_in_fragments[num_febs]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00118">CRTArtdaqFragmentProducer_module.cc:118</a></div></div>
+<div class="ttc" id="classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer_html_ae13fcf919efae1afcd51e44459a6fe2d"><div class="ttname"><a href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#ae13fcf919efae1afcd51e44459a6fe2d">sbnd::trigger::CRTArtdaqFragmentProducer::taggers</a></div><div class="ttdeci">std::string taggers[num_febs]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00117">CRTArtdaqFragmentProducer_module.cc:117</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a6699b4dbd72f548e48d81c88697d35a6"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a6699b4dbd72f548e48d81c88697d35a6">cout</a></div><div class="ttdeci">BEGIN_PROLOG could also be cout</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab7415abee306b330f2bfa619e1f66313"></a>
+<a class="anchor" id="adc80ab421691509d63834414b2b37fa3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -571,7 +610,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t sbnd::trigger::CRTArtdaqFragmentProducer::ADCs[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a>]</td>
+          <td class="memname">uint16_t sbnd::trigger::CRTArtdaqFragmentProducer::ADCs[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a55ddf5d2c4e22190efa470a38d181eb0">num_channels</a>]</td>
         </tr>
       </table>
   </td>
@@ -581,7 +620,29 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00114">114</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00119">119</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50ea9d8449ed21d84f3efb707cd149ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sbnd::trigger::CRTArtdaqFragmentProducer::empty_fragment[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00122">122</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -625,7 +686,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00121">121</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00107">107</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -653,7 +714,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a361bdc1ffff0bf7e27ecfdce97c97a75"></a>
+<a class="anchor" id="ac7758d7b58f16a0affe204c78bf8aa36"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -661,7 +722,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t sbnd::trigger::CRTArtdaqFragmentProducer::feb_hits_in_fragments[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>]</td>
+          <td class="memname">uint16_t sbnd::trigger::CRTArtdaqFragmentProducer::feb_hits_in_fragments[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td>
         </tr>
       </table>
   </td>
@@ -671,7 +732,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00113">113</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00118">118</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -721,6 +782,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a952f14325435607784cbb2153e9d19f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t sbnd::trigger::CRTArtdaqFragmentProducer::fFirstFEBMac5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>lowest mac5 address for CRT FEBs </p>
+
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00103">103</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a660bae029506b13cd5463933d5614514"></a>
 <div class="memitem">
 <div class="memproto">
@@ -739,7 +824,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00120">120</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00106">106</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
@@ -835,7 +920,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec2756484b37790ad3e2f9283e0b93ed"></a>
+<a class="anchor" id="a8dfd52d5a5f2b2bbf71b6dc5a3be81ac"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -843,7 +928,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sbnd::trigger::CRTArtdaqFragmentProducer::T0s[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td>
+          <td class="memname">uint32_t sbnd::trigger::CRTArtdaqFragmentProducer::T0s[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td>
         </tr>
       </table>
   </td>
@@ -853,11 +938,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00115">115</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00120">120</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af8d381970ed0c9e2a43d91610aa97b17"></a>
+<a class="anchor" id="a9c1ca70036939e9f18670916b77fc73a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -865,7 +950,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t sbnd::trigger::CRTArtdaqFragmentProducer::T1s[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td>
+          <td class="memname">uint32_t sbnd::trigger::CRTArtdaqFragmentProducer::T1s[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>][<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7abaaa375fd1ead88864108ef46b90213d">max_hits_in_fragment</a>]</td>
         </tr>
       </table>
   </td>
@@ -875,11 +960,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00116">116</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00121">121</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab33c10cfbd7abfbc2dfabda1cb012d23"></a>
+<a class="anchor" id="ae13fcf919efae1afcd51e44459a6fe2d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -887,7 +972,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string sbnd::trigger::CRTArtdaqFragmentProducer::taggers[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7a28902c33063fe1db390194ca46178d2a">num_module</a>]</td>
+          <td class="memname">std::string sbnd::trigger::CRTArtdaqFragmentProducer::taggers[<a class="el" href="../../d3/d34/classsbnd_1_1trigger_1_1CRTArtdaqFragmentProducer.html#a064904d3e2908038cd8f0b56bba96fe7ac5e08e8280b5d6e9806611348e170984">num_febs</a>]</td>
         </tr>
       </table>
   </td>
@@ -897,7 +982,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00112">112</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html#l00117">117</a> of file <a class="el" href="../../df/df9/CRTArtdaqFragmentProducer__module_8cc_source.html">CRTArtdaqFragmentProducer_module.cc</a>.</p>
 
 </div>
 </div>

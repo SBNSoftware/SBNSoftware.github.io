@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -145,6 +146,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/classicarus_1_1crt_1_1CRTHitRecoAlg.html">CRTHitRecoAlg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de7/structicarus_1_1crt_1_1FEB__delay.html">FEB_delay</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5a/classicarus_1_1crt_1_1CRTTrackRecoAlg.html">CRTTrackRecoAlg</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d27/classicarus_1_1crt_1_1CRTTrueHitRecoAlg.html">CRTTrueHitRecoAlg</a></td></tr>
@@ -159,6 +162,14 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single hit (self trigger) of a CRT board.  <a href="../../dc/dc1/structicarus_1_1crt_1_1CRTData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aac1151917fa6a32cc0d1d197e4f6adab"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aac1151917fa6a32cc0d1d197e4f6adab">feb_index</a></td></tr>
+<tr class="separator:aac1151917fa6a32cc0d1d197e4f6adab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b31170afb227ada6fc18e4569195539"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aac1151917fa6a32cc0d1d197e4f6adab">feb_index</a>, <br class="typebreak"/>
+<a class="el" href="../../de/de7/structicarus_1_1crt_1_1FEB__delay.html">FEB_delay</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">CRT_delay_map</a></td></tr>
+<tr class="separator:a2b31170afb227ada6fc18e4569195539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a72336f2b4a76ba50f60bd33a21253806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a72336f2b4a76ba50f60bd33a21253806">vmanip</a> (vector&lt; float &gt; v, float *ave, float *rms)</td></tr>
@@ -171,12 +182,47 @@ Functions</h2></td></tr>
 <tr class="separator:a952c5cc33168fdd095d23d47e3d9b315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5ff64cb6f37179d896e863233e8f6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aca5ff64cb6f37179d896e863233e8f6f">TimeOrderCRTData</a> (std::pair&lt; <a class="el" href="../../d2/dc5/structChanData.html">ChanData</a>, <a class="el" href="../../d0/d26/classsim_1_1AuxDetIDE.html">AuxDetIDE</a> &gt; crtdat1, std::pair&lt; <a class="el" href="../../d2/dc5/structChanData.html">ChanData</a>, <a class="el" href="../../d0/d26/classsim_1_1AuxDetIDE.html">AuxDetIDE</a> &gt; crtdat2)</td></tr>
 <tr class="separator:aca5ff64cb6f37179d896e863233e8f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6798cf486ad433071d92c5187dd41a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#ae6798cf486ad433071d92c5187dd41a9">sortbytime</a> (const pair&lt; int, ULong64_t &gt; &amp;<a class="el" href="../../d1/d82/OnlineDecoder_8fcl.html#a99b093ee2be2d37375506bb99fb5ea75">a</a>, const pair&lt; int, ULong64_t &gt; &amp;b)</td></tr>
+<tr class="separator:ae6798cf486ad433071d92c5187dd41a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84982fa5c44bc0a75bcaa545d2bf5254"><td class="memItemLeft" align="right" valign="top">ULong64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a84982fa5c44bc0a75bcaa545d2bf5254">GetMode</a> (std::vector&lt; std::pair&lt; int, ULong64_t &gt;&gt; vector)</td></tr>
+<tr class="separator:a84982fa5c44bc0a75bcaa545d2bf5254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38541f001c35c1a982505b3c4df9bcd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">CRT_delay_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a38541f001c35c1a982505b3c4df9bcd7">LoadFEBMap</a> ()</td></tr>
+<tr class="separator:a38541f001c35c1a982505b3c4df9bcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aa992689b9ef2ad06cbb7aa097bcc28ee"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../db/dd5/structicarus_1_1crt_1_1CRTavehit.html">icarus::crt::CRTavehit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aa992689b9ef2ad06cbb7aa097bcc28ee">tempah</a></td></tr>
 <tr class="separator:aa992689b9ef2ad06cbb7aa097bcc28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a2b31170afb227ada6fc18e4569195539"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;<a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aac1151917fa6a32cc0d1d197e4f6adab">feb_index</a>, <a class="el" href="../../de/de7/structicarus_1_1crt_1_1FEB__delay.html">FEB_delay</a>&gt; <a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">icarus::crt::CRT_delay_map</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00215">215</a> of file <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac1151917fa6a32cc0d1d197e4f6adab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#aac1151917fa6a32cc0d1d197e4f6adab">icarus::crt::feb_index</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00214">214</a> of file <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad201c0e3b55321050562ef2e1fad5e11"></a>
 <div class="memitem">
@@ -339,6 +385,212 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="a84982fa5c44bc0a75bcaa545d2bf5254"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULong64_t icarus::crt::GetMode </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, ULong64_t &gt;&gt;&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d8/d76/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html#l01085">1085</a> of file <a class="el" href="../../d8/d76/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8cc_source.html">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                                                                      {</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;        sort(vector.begin(), vector.end(), <a class="code" href="../../dc/d33/namespaceicarus_1_1crt.html#ae6798cf486ad433071d92c5187dd41a9">icarus::crt::sortbytime</a>);</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keywordtype">int</span> modecounter = 0;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        <span class="keywordtype">int</span> isnewmodecounter = 0;</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        ULong64_t Mode = 0;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        ULong64_t isnewMode = 0;</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        <span class="keywordtype">bool</span> isFirst = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : vector) {</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                <span class="keywordflow">if</span> (!isFirst) {</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;                        <span class="keywordflow">if</span> (i.second == Mode) modecounter++;</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i.second !=isnewMode) {</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;                                isnewMode = i.second;</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                                isnewmodecounter = 1;</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;                        }</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (i.second == isnewMode) {</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;                                isnewmodecounter++;</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;                                <span class="keywordflow">if</span> (isnewmodecounter &gt; modecounter) {</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;                                        Mode = isnewMode;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;                                        modecounter = isnewmodecounter;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;                                }</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;                        }</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;                }</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;                        isFirst = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;                        Mode = i.second;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;                        modecounter++;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;                }</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        }</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        <span class="keywordflow">return</span> Mode;</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_1_1crt_html_ae6798cf486ad433071d92c5187dd41a9"><div class="ttname"><a href="../../dc/d33/namespaceicarus_1_1crt.html#ae6798cf486ad433071d92c5187dd41a9">icarus::crt::sortbytime</a></div><div class="ttdeci">bool sortbytime(const pair&lt; int, ULong64_t &gt; &amp;a, const pair&lt; int, ULong64_t &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00068">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h:68</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a38541f001c35c1a982505b3c4df9bcd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">icarus::crt::CRT_delay_map</a> icarus::crt::LoadFEBMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00221">221</a> of file <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                                    {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">CRT_delay_map</a> FEBs;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        FEBs={{271, {81, 198, 271, 283ull, 2000309ull}},</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                {270, {119, 197, 270, 298ull, 2000324ull}},</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                {269, {87, 196, 269, 313ull, 2000339ull}},</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                {268, {92, 195, 268, 329ull, 2000355ull}},</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                {267, {180, 194, 267, 344ull, 2000370ull}},</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                {266, {97, 193, 266, 359ull, 2000385ull}},</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                {265, {174, 192, 265, 374ull, 2000400ull}},</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                {251, {238, 178, 251, 390ull, 2000416ull}},</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                {237, {234, 164, 237, 405ull, 2000431ull}},</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                {297, {189, 224, 297, 420ull, 2000446ull}},</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                {296, {190, 223, 296, 436ull, 2000462ull}},</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                {295, {80, 222, 295, 451ull, 2000477ull}},</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                {294, {162, 221, 294, 466ull, 2000492ull}},</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                {293, {64, 220, 293, 482ull, 2000508ull}},</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                {255, {172, 182, 255, 298ull, 2000324ull}},</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                {254, {114, 181, 254, 313ull, 2000339ull}},</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                {253, {100, 180, 253, 328ull, 2000355ull}},</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                {252, {150, 179, 252, 344ull, 2000370ull}},</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                {238, {176, 165, 238, 359ull, 2000385ull}},</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                {224, {67, 151, 224, 374ull, 2000400ull}},</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                {223, {138, 150, 223, 390ull, 2000416ull}},</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                {209, {170, 136, 209, 405ull, 2000431ull}},</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                {195, {101, 122, 195, 420ull, 2000446ull}},</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                {181, {142, 108, 181, 435ull, 2000462ull}},</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                {279, {139, 206, 279, 451ull, 2000477ull}},</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                {280, {185, 207, 280, 466ull, 2000492ull}},</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                {182, {6, 109, 182, 481ull, 2000508ull}},</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                {196, {177, 123, 196, 497ull, 2000523ull}},</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                {210, {61, 137, 210, 512ull, 2000538ull}},</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                {256, {123, 183, 256, 298ull, 2000325ull}},</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                {242, {116, 169, 242, 314ull, 2000340ull}},</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                {241, {104, 168, 241, 329ull, 2000355ull}},</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                {240, {91, 167, 240, 344ull, 2000371ull}},</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                {239, {88, 166, 239, 360ull, 2000386ull}},</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                {225, {120, 152, 225, 375ull, 2000401ull}},</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                {211, {132, 138, 211, 390ull, 2000417ull}},</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                {197, {95, 124, 197, 405ull, 2000432ull}},</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                {183, {232, 110, 183, 421ull, 2000447ull}},</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                {281, {165, 208, 281, 436ull, 2000463ull}},</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                {282, {148, 209, 282, 451ull, 2000478ull}},</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                {184, {237, 111, 184, 467ull, 2000493ull}},</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                {198, {102, 125, 198, 482ull, 2000508ull}},</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                {212, {94, 139, 212, 497ull, 2000524ull}},</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                {226, {130, 153, 226, 513ull, 2000539ull}},</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                {257, {181, 184, 257, 284ull, 2000310ull}},</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                {243, {124, 170, 243, 299ull, 2000325ull}},</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                {229, {152, 156, 229, 314ull, 2000341ull}},</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                {228, {98, 155, 228, 329ull, 2000356ull}},</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                {227, {173, 154, 227, 345ull, 2000371ull}},</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                {213, {169, 140, 213, 360ull, 2000387ull}},</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                {199, {144, 126, 199, 375ull, 2000402ull}},</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                {185, {239, 112, 185, 391ull, 2000417ull}},</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                {283, {147, 210, 283, 306ull, 2000433ull}},</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                {284, {105, 211, 284, 421ull, 2000448ull}},</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                {186, {231, 114, 186, 437ull, 2000463ull}},</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                {200, {117, 127, 200, 452ull, 2000478ull}},</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                {214, {126, 141, 214, 467ull, 2000494ull}},</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                {215, {90, 142, 215, 482ull, 2000509ull}},</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                {201, {183, 128, 201, 498ull, 2000524ull}},</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                {187, {241, 114, 187, 513ull, 2000540ull}},</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                {285, {113, 212, 285, 528ull, 2000555ull}},</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                {258, {233, 185, 258, 283ull, 2000310ull}},</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                {244, {164, 171, 244, 299ull, 2000325ull}},</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                {230, {161, 157, 230, 314ull, 2000341ull}},</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                {231, {203, 158, 231, 329ull, 2000356ull}},</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                {232, {122, 159, 232, 345ull, 2000371ull}},</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                {218, {2, 145, 218, 360ull, 2000387ull}},</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                {204, {112, 131, 204, 375ull, 2000402ull}},</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                {190, {62, 117, 190, 391ull, 2000417ull}},</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                {288, {133, 215, 288, 406ull, 2000432ull}},</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                {287, {168, 214, 287, 421ull, 2000448ull}},</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                {189, {182, 116, 189, 436ull, 2000463ull}},</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                {203, {107, 130, 203, 452ull, 2000478ull}},</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                {217, {252, 144, 217, 467ull, 2000494ull}},</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                {216, {141, 143, 216, 482ull, 2000509ull}},</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                {202, {160, 129, 202, 498ull, 2000524ull}},</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                {188, {137, 115, 188, 513ull, 2000540ull}},</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                {286, {179, 213, 286, 528ull, 2000555ull}},</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                {259, {66, 186, 259, 298ull, 2000325ull}},</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                {245, {247, 172, 245, 314ull, 2000340ull}},</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                {246, {198, 173, 246, 329ull, 2000356ull}},</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                {247, {243, 174, 247, 344ull, 2000371ull}},</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                {248, {72, 175, 248, 360ull, 2000386ull}},</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                {234, {250, 161, 234, 375ull, 2000401ull}},</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                {220, {249, 147, 220, 390ull, 2000417ull}},</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                {206, {248, 133, 206, 405ull, 2000432ull}},</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                {192, {60, 119, 192, 421ull, 2000447ull}},</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                {290, {145, 217, 290, 436ull, 2000463ull}},</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                {289, {110, 216, 289, 451ull, 2000478ull}},</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                {191, {59, 118, 191, 467ull, 2000493ull}},</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                {205, {202, 132, 205, 482ull, 2000509ull}},</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                {219, {135, 146, 219, 497ull, 2000524ull}},</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                {233, {246, 160, 233, 513ull, 2000539ull}},</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                {260, {253, 187, 260, 342ull, 2000369ull}},</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                {261, {245, 188, 261, 358ull, 2000384ull}},</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                {262, {65, 189, 262, 373ull, 2000400ull}},</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                {263, {57, 190, 263, 388ull, 2000415ull}},</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                {249, {63, 176, 249, 404ull, 2000430ull}}, </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                {250, {251, 177, 250, 419ull, 2000445ull}},</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                {236, {70, 163, 236, 434ull, 2000461ull}},</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                {222, {155, 149, 222, 449ull, 2000476ull}},</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                {208, {154, 135, 208, 465ull, 2000491ull}},</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                {194, {85, 121, 194, 480ull, 2000507ull}},</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                {292, {134, 219, 292, 495ull, 2000522ull}},</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                {291, {129, 218, 291, 511ull, 2000537ull}},</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                {193, {115, 120, 193, 526ull, 2000553ull}},</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                {207, {204, 134, 207, 541ull, 2000568ull}},</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                {221, {244, 148, 221, 557ull, 2000583ull}},</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                {235, {82, 162, 235, 572ull, 2000598ull}},</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                {272, {186, 199, 272, 284ull, 2000310ull}},</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                {273, {83, 200, 273, 299ull, 2000326ull}},</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                {274, {254, 201, 274, 314ull, 2000341ull}},</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                {275, {166, 202, 275, 330ull, 2000356ull}},</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                {276, {178, 203, 276, 345ull, 2000371ull}},</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                {277, {136, 204, 277, 360ull, 2000387ull}},</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                {278, {184, 205, 278, 375ull, 2000402ull}},</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                {264, {187, 191, 264, 391ull, 2000417ull}},</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                {304, {240, 231, 304, 406ull, 2000433ull}},</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                {303, {242, 230, 303, 421ull, 2000448ull}},</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                {302, {188, 229, 302, 437ull, 2000463ull}},</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                {301, {58, 228, 301, 452ull, 2000479ull}},</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                {300, {143, 227, 300, 467ull, 2000494ull}},</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                {299, {235, 226, 299, 483ull, 2000509ull}}};</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">return</span> FEBs;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<div class="ttc" id="namespaceicarus_1_1crt_html_a2b31170afb227ada6fc18e4569195539"><div class="ttname"><a href="../../dc/d33/namespaceicarus_1_1crt.html#a2b31170afb227ada6fc18e4569195539">icarus::crt::CRT_delay_map</a></div><div class="ttdeci">std::map&lt; feb_index, FEB_delay &gt; CRT_delay_map</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00215">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h:215</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a952c5cc33168fdd095d23d47e3d9b315"></a>
 <div class="memitem">
 <div class="memproto">
@@ -442,6 +694,46 @@ Variables</h2></td></tr>
 <div class="ttc" id="structsbn_1_1crt_1_1CRTTrack_html_aa45a6c55fa16159e3a257c43f915c3da"><div class="ttname"><a href="../../d4/d02/structsbn_1_1crt_1_1CRTTrack.html#aa45a6c55fa16159e3a257c43f915c3da">sbn::crt::CRTTrack::z2_err</a></div><div class="ttdeci">float z2_err</div><div class="ttdoc">Z position error of second CRTHit. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d06/CRTTrack_8hh_source.html#l00044">CRTTrack.hh:44</a></div></div>
 <div class="ttc" id="structsbn_1_1crt_1_1CRTTrack_html_a68fa847c638cd6df8f3e5dd669830641"><div class="ttname"><a href="../../d4/d02/structsbn_1_1crt_1_1CRTTrack.html#a68fa847c638cd6df8f3e5dd669830641">sbn::crt::CRTTrack::x2_err</a></div><div class="ttdeci">float x2_err</div><div class="ttdoc">X position error of second CRTHit. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d06/CRTTrack_8hh_source.html#l00040">CRTTrack.hh:40</a></div></div>
 <div class="ttc" id="structsbn_1_1crt_1_1CRTTrack_html_a4b3154d95d21564c578ba78bd6f64413"><div class="ttname"><a href="../../d4/d02/structsbn_1_1crt_1_1CRTTrack.html#a4b3154d95d21564c578ba78bd6f64413">sbn::crt::CRTTrack::thetaxy</a></div><div class="ttdeci">float thetaxy</div><div class="ttdoc">Track angle on the X-Y plane. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d06/CRTTrack_8hh_source.html#l00046">CRTTrack.hh:46</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae6798cf486ad433071d92c5187dd41a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool icarus::crt::sortbytime </td>
+          <td>(</td>
+          <td class="paramtype">const pair&lt; int, ULong64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const pair&lt; int, ULong64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html#l00068">68</a> of file <a class="el" href="../../dc/d00/icaruscode_2icaruscode_2CRT_2CRTUtils_2CRTHitRecoAlg_8h_source.html">icaruscode/icaruscode/CRT/CRTUtils/CRTHitRecoAlg.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a>.second &lt; b.second);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } </div>
+<div class="ttc" id="decode__signalprocess__icarus_8fcl_html_a2a105cb669129f9c63eb7a4c15bf2d9b"><div class="ttname"><a href="../../d0/d8f/decode__signalprocess__icarus_8fcl.html#a2a105cb669129f9c63eb7a4c15bf2d9b">a</a></div><div class="ttdeci">process_name gaushit a</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d8f/decode__signalprocess__icarus_8fcl_source.html#l00037">decode_signalprocess_icarus.fcl:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
