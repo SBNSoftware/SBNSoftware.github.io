@@ -118,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;seedservice.fcl&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d1/d72/seedservice__icarus_8fcl.html">seedservice_icarus.fcl</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d0/d23/magfield__larsoft_8fcl.html">magfield_larsoft.fcl</a>&quot;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d1b/services__basic__icarus_8fcl.html">services_basic_icarus.fcl</a>&quot;</span></div>
@@ -175,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span>icarus_random_services:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d0/df1/cafmakerjob__icarus__evtw_8fcl.html#a17a78144a9c8ff55828fc4853698cd19">RandomNumberGenerator</a>:               {}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    NuRandomService:                     @local::random_NuRandomService</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    NuRandomService:                     @local::icarus_default_NuRandomService  # seedservice_icarus.fcl</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} # icarus_random_services</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -248,27 +248,27 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                     @table::icarus_wirecalibration_minimum_services</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                     @table::icarus_random_services</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    NuRandomService: @local::per_event_NuRandomService</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} # icarus_wirecalibration_services</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;} # icarus_wirecalibration_services</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">################################################################################</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;icarus_prod_services: {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                       @table::icarus_common_services</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  FileCatalogMetadata: @local::art_file_catalog_mc</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;} # icarus_prod_services</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">################################################################################</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;icarus_prod_services: {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                       @table::icarus_common_services</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  FileCatalogMetadata: @local::art_file_catalog_mc</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;} # icarus_prod_services</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;END_PROLOG</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="ttc" id="cafmakerjob__icarus__evtw_8fcl_html_a17a78144a9c8ff55828fc4853698cd19"><div class="ttname"><a href="../../d0/df1/cafmakerjob__icarus__evtw_8fcl.html#a17a78144a9c8ff55828fc4853698cd19">RandomNumberGenerator</a></div><div class="ttdeci">services RandomNumberGenerator</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df1/cafmakerjob__icarus__evtw_8fcl_source.html#l00005">cafmakerjob_icarus_evtw.fcl:5</a></div></div>
 <div class="ttc" id="calibrationservices__icarus_8fcl_html"><div class="ttname"><a href="../../de/dd6/calibrationservices__icarus_8fcl.html">calibrationservices_icarus.fcl</a></div></div>
 <div class="ttc" id="RemoveIgnoreTotal_8sh_html_aee9ec19abb1d7cb69fafb8e03703c2af"><div class="ttname"><a href="../../d1/d3e/RemoveIgnoreTotal_8sh.html#aee9ec19abb1d7cb69fafb8e03703c2af">MemoryTracker</a></div><div class="ttdeci">echo $PWD find $PWD name *fcl xargs perl wapi e s &amp; MemoryTracker</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d3e/RemoveIgnoreTotal_8sh_source.html#l00005">RemoveIgnoreTotal.sh:5</a></div></div>
 <div class="ttc" id="messageservice_8fcl_html_a99f42d943fd73f8b8429c65ea3afcfb4"><div class="ttname"><a href="../../d8/df5/messageservice_8fcl.html#a99f42d943fd73f8b8429c65ea3afcfb4">filename</a></div><div class="ttdeci">BEGIN_PROLOG could also be dds filename</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/df5/messageservice_8fcl_source.html#l00010">messageservice.fcl:10</a></div></div>
 <div class="ttc" id="icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl_html_a0e9d37a779f44bf5c7815e454d524235"><div class="ttname"><a href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl.html#a0e9d37a779f44bf5c7815e454d524235">message</a></div><div class="ttdeci">services message</div><div class="ttdef"><b>Definition:</b> <a href="../../de/dfd/icarus__ci__nucosmics__gen__quick__test__icaruscode_8fcl_source.html#l00020">icarus_ci_nucosmics_gen_quick_test_icaruscode.fcl:20</a></div></div>
 <div class="ttc" id="sam__icarus_8fcl_html"><div class="ttname"><a href="../../dd/dd7/sam__icarus_8fcl.html">sam_icarus.fcl</a></div></div>
+<div class="ttc" id="seedservice__icarus_8fcl_html"><div class="ttname"><a href="../../d1/d72/seedservice__icarus_8fcl.html">seedservice_icarus.fcl</a></div></div>
 <div class="ttc" id="signalservices__icarus_8fcl_html"><div class="ttname"><a href="../../da/d2d/signalservices__icarus_8fcl.html">signalservices_icarus.fcl</a></div></div>
 <div class="ttc" id="prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_html_a2146d742a76b29baa7a12ef30d6af3a4"><div class="ttname"><a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl.html#a2146d742a76b29baa7a12ef30d6af3a4">fileName</a></div><div class="ttdeci">services TFileService fileName</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d37/prodcorsika__genie__protononly__icarus__numi__nue__volDetEnclosure__tpc_8fcl_source.html#l00018">prodcorsika_genie_protononly_icarus_numi_nue_volDetEnclosure_tpc.fcl:18</a></div></div>
 <div class="ttc" id="correctionservices__icarus_8fcl_html"><div class="ttname"><a href="../../dd/d54/correctionservices__icarus_8fcl.html">correctionservices_icarus.fcl</a></div></div>

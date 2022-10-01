@@ -569,22 +569,22 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l02195">2195</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;  {</div>
-<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;    <span class="keywordtype">double</span> negate = double(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> &lt; 0);</div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;    <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>);</div>
-<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;    <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> -= double(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> &gt; 1.0) * (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> - 1.0); <span class="comment">// &lt;- equivalent to min(1.0,x), but faster</span></div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;    <span class="keywordtype">double</span> ret = -0.0187293;</div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;    ret = ret + 0.0742610;</div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;    ret = ret - 0.2121144;</div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;    ret = ret + 1.5707288;</div>
-<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;    ret = ret * std::sqrt(1.0 - x);</div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;    ret = ret - 2. * negate * ret;</div>
-<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;    <span class="keywordflow">return</span> negate * 3.14159265358979 + ret;</div>
-<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l02196">2196</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;  {</div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;    <span class="keywordtype">double</span> negate = double(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> &lt; 0);</div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;    <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> = <a class="code" href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">std::abs</a>(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>);</div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;    <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> -= double(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> &gt; 1.0) * (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a> - 1.0); <span class="comment">// &lt;- equivalent to min(1.0,x), but faster</span></div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;    <span class="keywordtype">double</span> ret = -0.0187293;</div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;    ret = ret + 0.0742610;</div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;    ret = ret - 0.2121144;</div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;    ret = ret * <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>;</div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;    ret = ret + 1.5707288;</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;    ret = ret * std::sqrt(1.0 - x);</div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;    ret = ret - 2. * negate * ret;</div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;    <span class="keywordflow">return</span> negate * 3.14159265358979 + ret;</div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 <div class="ttc" id="sparse__vector__test_8cc_html_a39f16bf854ba527dee7eba5bbbd93f3f"><div class="ttname"><a href="../../dd/d59/sparse__vector__test_8cc.html#a39f16bf854ba527dee7eba5bbbd93f3f">abs</a></div><div class="ttdeci">T abs(T value)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d59/sparse__vector__test_8cc_source.html#l00030">sparse_vector_test.cc:30</a></div></div>
 </div><!-- fragment -->
@@ -646,12 +646,12 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01867">1867</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;  {</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;    <span class="keywordtype">double</span> y1 = par[2] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[0], par[1]);</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[3] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[4]);</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    <span class="keywordflow">return</span> TMath::Abs(y1 - y2);</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01868">1868</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;  {</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;    <span class="keywordtype">double</span> y1 = par[2] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[0], par[1]);</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[3] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[4]);</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;    <span class="keywordflow">return</span> TMath::Abs(y1 - y2);</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -680,12 +680,12 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01891">1891</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;  {</div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;    <span class="keywordtype">double</span> y1 = par[2] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[0], par[1]);</div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;    <span class="keywordtype">double</span> y2 = par[5] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[3], par[4]);</div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;    <span class="keywordflow">return</span> TMath::Abs(y1 - y2);</div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01892">1892</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;  {</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;    <span class="keywordtype">double</span> y1 = par[2] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[0], par[1]);</div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;    <span class="keywordtype">double</span> y2 = par[5] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[3], par[4]);</div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;    <span class="keywordflow">return</span> TMath::Abs(y1 - y2);</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -987,20 +987,20 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01875">1875</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;  {</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;    <span class="comment">// par0 = joining point</span></div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;    <span class="comment">// par2 = Landau widt</span></div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    <span class="comment">// par3 = normalization</span></div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;    <span class="comment">// par4 = Expo cte</span></div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;    <span class="comment">// par5 = Expo tau</span></div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;    <span class="keywordtype">double</span> y1 = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
-<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[4] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[5]);</div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &gt; par[0]) y1 = 0.;</div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt; par[0]) y2 = 0.;</div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;    <span class="keywordflow">return</span> (y1 + y2);</div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01876">1876</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;  {</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;    <span class="comment">// par0 = joining point</span></div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;    <span class="comment">// par2 = Landau widt</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;    <span class="comment">// par3 = normalization</span></div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;    <span class="comment">// par4 = Expo cte</span></div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;    <span class="comment">// par5 = Expo tau</span></div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;    <span class="keywordtype">double</span> y1 = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[4] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[5]);</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &gt; par[0]) y1 = 0.;</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt; par[0]) y2 = 0.;</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;    <span class="keywordflow">return</span> (y1 + y2);</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1029,21 +1029,21 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01899">1899</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;  {</div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;    <span class="comment">// par0 = joining point</span></div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    <span class="comment">// par2 = Landau width</span></div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;    <span class="comment">// par3 = normalization</span></div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;    <span class="comment">// par4 = Expo cte</span></div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    <span class="comment">// par5 = Expo tau</span></div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;    <span class="comment">// par6 = t_min</span></div>
-<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;    <span class="keywordtype">double</span> y1 = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[4] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[5]);</div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt;= par[6] || <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &gt; par[0]) y1 = 0.;</div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt; par[0]) y2 = 0.;</div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;    <span class="keywordflow">return</span> (y1 + y2);</div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01900">1900</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;  {</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    <span class="comment">// par0 = joining point</span></div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;    <span class="comment">// par2 = Landau width</span></div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;    <span class="comment">// par3 = normalization</span></div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;    <span class="comment">// par4 = Expo cte</span></div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;    <span class="comment">// par5 = Expo tau</span></div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;    <span class="comment">// par6 = t_min</span></div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;    <span class="keywordtype">double</span> y1 = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;    <span class="keywordtype">double</span> y2 = TMath::Exp(par[4] + <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] * par[5]);</div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt;= par[6] || <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &gt; par[0]) y1 = 0.;</div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt; par[0]) y2 = 0.;</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;    <span class="keywordflow">return</span> (y1 + y2);</div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1072,16 +1072,16 @@ template&lt;typename TVector3 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01916">1916</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;  {</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;    <span class="comment">// par2 = Landau width</span></div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;    <span class="comment">// par3 = normalization</span></div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;    <span class="comment">// par0 = t_min</span></div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a> = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt;= par[0]) y = 0.;</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>;</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html#l01917">1917</a> of file <a class="el" href="../../d7/d47/OpFastScintillation_8cxx_source.html">OpFastScintillation.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;  {</div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;    <span class="comment">// par1 = Landau MPV</span></div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;    <span class="comment">// par2 = Landau width</span></div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;    <span class="comment">// par3 = normalization</span></div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;    <span class="comment">// par0 = t_min</span></div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a> = par[3] * TMath::Landau(<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0], par[1], par[2]);</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a>[0] &lt;= par[0]) y = 0.;</div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a>;</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;  }</div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a6673f03521899f7844189bcfd8ee5941"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a6673f03521899f7844189bcfd8ee5941">x</a></div><div class="ttdeci">process_name opflash particleana ie x</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00090">run_opflash_electron.fcl:90</a></div></div>
 <div class="ttc" id="run__opflash__electron_8fcl_html_a1e5aaaf25e8609a835e8c7c6fda71456"><div class="ttname"><a href="../../d0/d84/run__opflash__electron_8fcl.html#a1e5aaaf25e8609a835e8c7c6fda71456">y</a></div><div class="ttdeci">process_name opflash particleana ie ie y</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/run__opflash__electron_8fcl_source.html#l00091">run_opflash_electron.fcl:91</a></div></div>
 </div><!-- fragment -->
@@ -1161,7 +1161,7 @@ template&lt;typename TReal &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00417">417</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00420">420</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>

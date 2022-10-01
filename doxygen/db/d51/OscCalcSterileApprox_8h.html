@@ -77,6 +77,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">OscCalcSterileApprox.h File Reference</div>  </div>
@@ -99,10 +100,23 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:d7/d63/namespaceana"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oscillation analysis framework, runs over CAF files outside of ART. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a19d08f13be701827a5ec1f158711fcdf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a19d08f13be701827a5ec1f158711fcdf">ana::SterileOscAngles</a> { <a class="el" href="../../d7/d63/namespaceana.html#a19d08f13be701827a5ec1f158711fcdfa35c3ace1970663a16e5c65baa5941b13">ana::SterileOscAngles::kNone</a> = 0, 
+<a class="el" href="../../d7/d63/namespaceana.html#a19d08f13be701827a5ec1f158711fcdfa722d837b29c9c539ccd72bf837a56ba6">ana::SterileOscAngles::kSinSq2ThetaMuMu</a> = 1, 
+<a class="el" href="../../d7/d63/namespaceana.html#a19d08f13be701827a5ec1f158711fcdfaa96bfb253ed9f78f3ab85ca8e82ec2aa">ana::SterileOscAngles::kSinSq2ThetaMuE</a> = (1 &lt;&lt; 1), 
+<a class="el" href="../../d7/d63/namespaceana.html#a19d08f13be701827a5ec1f158711fcdfa51c2f6d275fd1c82aac16b349a82f6be">ana::SterileOscAngles::kSinSq2ThetaEE</a> = (1 &lt;&lt; 2)
+ }</td></tr>
+<tr class="separator:a19d08f13be701827a5ec1f158711fcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:affcdf17ace617ada1054ff74279eefe9"><td class="memItemLeft" align="right" valign="top">OscCalcSterileApproxAdjustable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#affcdf17ace617ada1054ff74279eefe9">ana::DefaultSterileApproxCalc</a> ()</td></tr>
-<tr class="separator:affcdf17ace617ada1054ff74279eefe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a438522c3fa9d6cf26c8dc1be3f6ad7"><td class="memItemLeft" align="right" valign="top">SterileOscAngles&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a3a438522c3fa9d6cf26c8dc1be3f6ad7">ana::operator|</a> (const SterileOscAngles <a class="el" href="../../d1/d82/OnlineDecoder_8fcl.html#a99b093ee2be2d37375506bb99fb5ea75">a</a>, const SterileOscAngles b)</td></tr>
+<tr class="separator:a3a438522c3fa9d6cf26c8dc1be3f6ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5eca5a922dbe3dba7355dca9f95d4d"><td class="memItemLeft" align="right" valign="top">SterileOscAngles&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a9a5eca5a922dbe3dba7355dca9f95d4d">ana::operator&amp;</a> (const SterileOscAngles <a class="el" href="../../d1/d82/OnlineDecoder_8fcl.html#a99b093ee2be2d37375506bb99fb5ea75">a</a>, const SterileOscAngles b)</td></tr>
+<tr class="separator:a9a5eca5a922dbe3dba7355dca9f95d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630050ada74560e026c879468422459b"><td class="memItemLeft" align="right" valign="top">OscCalcSterileApproxAdjustable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a630050ada74560e026c879468422459b">ana::DefaultSterileApproxCalc</a> (SterileOscAngles angles)</td></tr>
+<tr class="separator:a630050ada74560e026c879468422459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be00c0e172a292534ac1ba3ce1e3303"><td class="memItemLeft" align="right" valign="top">const OscCalcSterileApprox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a0be00c0e172a292534ac1ba3ce1e3303">ana::DowncastToSterileApprox</a> (const <a class="el" href="../../d9/d45/namespaceosc.html#aca29a08a201d7ddf5539c7c777ed893d">osc::IOscCalc</a> *calc, bool allowFail)</td></tr>
 <tr class="separator:a0be00c0e172a292534ac1ba3ce1e3303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79441c06e201541ae53b5c62fa0a87b9"><td class="memItemLeft" align="right" valign="top">OscCalcSterileApprox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d63/namespaceana.html#a79441c06e201541ae53b5c62fa0a87b9">ana::DowncastToSterileApprox</a> (<a class="el" href="../../d9/d45/namespaceosc.html#aca29a08a201d7ddf5539c7c777ed893d">osc::IOscCalc</a> *calc, bool allowFail)</td></tr>

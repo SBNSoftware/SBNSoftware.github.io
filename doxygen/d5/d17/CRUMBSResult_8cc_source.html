@@ -80,36 +80,42 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <a href="../../d5/d17/CRUMBSResult_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d27/CRUMBSResult_8h.html">sbnobj/Common/Reco/CRUMBSResult.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../d9/d87/classsbn_1_1CRUMBSResult.html#ad22e32b29a6bd245366af4e3029d0cab">    3</a></span>&#160;<a class="code" href="../../d9/d87/classsbn_1_1CRUMBSResult.html#ad22e32b29a6bd245366af4e3029d0cab">sbn::CRUMBSResult::CRUMBSResult</a>(<span class="keywordtype">float</span> <a class="code" href="../../d2/d30/crttrackmatchingalg__sbnd_8fcl.html#a81164acfbd78b53a952f30653b4106f2">score</a>, <span class="keywordtype">float</span> tpc_CRFracHitsInLongestTrack, <span class="keywordtype">float</span> tpc_CRLongestTrackDeflection, <span class="keywordtype">float</span> tpc_CRLongestTrackDirY,</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                <span class="keywordtype">int</span> tpc_CRNHitsMax, <span class="keywordtype">float</span> tpc_NuEigenRatioInSphere, <span class="keywordtype">int</span> tpc_NuNFinalStatePfos, <span class="keywordtype">int</span> tpc_NuNHitsTotal,</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                <span class="keywordtype">int</span> tpc_NuNSpacePointsInSphere, <span class="keywordtype">float</span> tpc_NuVertexY, <span class="keywordtype">float</span> tpc_NuWeightedDirZ, <span class="keywordtype">float</span> tpc_StoppingChi2CosmicRatio,</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                <span class="keywordtype">float</span> pds_FMTotalScore, <span class="keywordtype">float</span> pds_FMPE, <span class="keywordtype">float</span> pds_FMTime, <span class="keywordtype">float</span> crt_TrackScore, <span class="keywordtype">float</span> crt_HitScore,</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                                <span class="keywordtype">float</span> crt_TrackTime, <span class="keywordtype">float</span> crt_HitTime)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  : score(score)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  , tpc_CRFracHitsInLongestTrack(tpc_CRFracHitsInLongestTrack)</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  , tpc_CRLongestTrackDeflection(tpc_CRLongestTrackDeflection)</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  , tpc_CRLongestTrackDirY(tpc_CRLongestTrackDirY)</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  , tpc_CRNHitsMax(tpc_CRNHitsMax)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  , tpc_NuEigenRatioInSphere(tpc_NuEigenRatioInSphere)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  , tpc_NuNFinalStatePfos(tpc_NuNFinalStatePfos)</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  , tpc_NuNHitsTotal(tpc_NuNHitsTotal)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  , tpc_NuNSpacePointsInSphere(tpc_NuNSpacePointsInSphere)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  , tpc_NuVertexY(tpc_NuVertexY)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  , tpc_NuWeightedDirZ(tpc_NuWeightedDirZ)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  , tpc_StoppingChi2CosmicRatio(tpc_StoppingChi2CosmicRatio)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  , pds_FMTotalScore(pds_FMTotalScore)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  , pds_FMPE(pds_FMPE)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  , pds_FMTime(pds_FMTime)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  , crt_TrackScore(crt_TrackScore)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  , crt_HitScore(crt_HitScore)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  , crt_TrackTime(crt_TrackTime)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  , crt_HitTime(crt_HitTime)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../d9/d87/classsbn_1_1CRUMBSResult.html#af674b635e2e4fa994c05fe0dd6913b9c">    3</a></span>&#160;<a class="code" href="../../d9/d87/classsbn_1_1CRUMBSResult.html#af674b635e2e4fa994c05fe0dd6913b9c">sbn::CRUMBSResult::CRUMBSResult</a>(<span class="keywordtype">float</span> <a class="code" href="../../d2/d30/crttrackmatchingalg__sbnd_8fcl.html#a81164acfbd78b53a952f30653b4106f2">score</a>, <span class="keywordtype">float</span> ccnumuscore, <span class="keywordtype">float</span> ccnuescore, <span class="keywordtype">float</span> ncscore, <span class="keywordtype">float</span> bestscore, <span class="keywordtype">int</span> bestid, </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                                <span class="keywordtype">float</span> tpc_CRFracHitsInLongestTrack, <span class="keywordtype">float</span> tpc_CRLongestTrackDeflection, <span class="keywordtype">float</span> tpc_CRLongestTrackDirY,</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                <span class="keywordtype">int</span> tpc_CRNHitsMax, <span class="keywordtype">float</span> tpc_NuEigenRatioInSphere, <span class="keywordtype">int</span> tpc_NuNFinalStatePfos, <span class="keywordtype">int</span> tpc_NuNHitsTotal,</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                <span class="keywordtype">int</span> tpc_NuNSpacePointsInSphere, <span class="keywordtype">float</span> tpc_NuVertexY, <span class="keywordtype">float</span> tpc_NuWeightedDirZ, <span class="keywordtype">float</span> tpc_StoppingChi2CosmicRatio,</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                                <span class="keywordtype">float</span> pds_FMTotalScore, <span class="keywordtype">float</span> pds_FMPE, <span class="keywordtype">float</span> pds_FMTime, <span class="keywordtype">float</span> crt_TrackScore, <span class="keywordtype">float</span> crt_HitScore,</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                <span class="keywordtype">float</span> crt_TrackTime, <span class="keywordtype">float</span> crt_HitTime)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  : score(score)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  , ccnumuscore(ccnumuscore)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  , ccnuescore(ccnuescore)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  , ncscore(ncscore)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  , bestscore(bestscore)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  , bestid(bestid)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  , tpc_CRFracHitsInLongestTrack(tpc_CRFracHitsInLongestTrack)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  , tpc_CRLongestTrackDeflection(tpc_CRLongestTrackDeflection)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  , tpc_CRLongestTrackDirY(tpc_CRLongestTrackDirY)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  , tpc_CRNHitsMax(tpc_CRNHitsMax)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  , tpc_NuEigenRatioInSphere(tpc_NuEigenRatioInSphere)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  , tpc_NuNFinalStatePfos(tpc_NuNFinalStatePfos)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  , tpc_NuNHitsTotal(tpc_NuNHitsTotal)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  , tpc_NuNSpacePointsInSphere(tpc_NuNSpacePointsInSphere)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  , tpc_NuVertexY(tpc_NuVertexY)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  , tpc_NuWeightedDirZ(tpc_NuWeightedDirZ)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  , tpc_StoppingChi2CosmicRatio(tpc_StoppingChi2CosmicRatio)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  , pds_FMTotalScore(pds_FMTotalScore)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  , pds_FMPE(pds_FMPE)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  , pds_FMTime(pds_FMTime)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  , crt_TrackScore(crt_TrackScore)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  , crt_HitScore(crt_HitScore)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  , crt_TrackTime(crt_TrackTime)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  , crt_HitTime(crt_HitTime)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="ttc" id="crttrackmatchingalg__sbnd_8fcl_html_a81164acfbd78b53a952f30653b4106f2"><div class="ttname"><a href="../../d2/d30/crttrackmatchingalg__sbnd_8fcl.html#a81164acfbd78b53a952f30653b4106f2">score</a></div><div class="ttdeci">BEGIN_PROLOG or score(default)}sbnd_crttrackmatchingalg_crID</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d30/crttrackmatchingalg__sbnd_8fcl_source.html#l00009">crttrackmatchingalg_sbnd.fcl:9</a></div></div>
 <div class="ttc" id="CRUMBSResult_8h_html"><div class="ttname"><a href="../../df/d27/CRUMBSResult_8h.html">CRUMBSResult.h</a></div></div>
-<div class="ttc" id="classsbn_1_1CRUMBSResult_html_ad22e32b29a6bd245366af4e3029d0cab"><div class="ttname"><a href="../../d9/d87/classsbn_1_1CRUMBSResult.html#ad22e32b29a6bd245366af4e3029d0cab">sbn::CRUMBSResult::CRUMBSResult</a></div><div class="ttdeci">CRUMBSResult(float score=default_float, float tpc_CRFracHitsInLongestTrack=default_float, float tpc_CRLongestTrackDeflection=default_float, float tpc_CRLongestTrackDirY=default_float, int tpc_CRNHitsMax=default_int, float tpc_NuEigenRatioInSphere=default_float, int tpc_NuNFinalStatePfos=default_int, int tpc_NuNHitsTotal=default_int, int tpc_NuNSpacePointsInSphere=default_int, float tpc_NuVertexY=default_float, float tpc_NuWeightedDirZ=default_float, float tpc_StoppingChi2CosmicRatio=default_float, float pds_FMTotalScore=default_float, float pds_FMPE=default_float, float pds_FMTime=default_float, float crt_TrackScore=default_float, float crt_HitScore=default_float, float crt_TrackTime=default_float, float crt_HitTime=default_float)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d17/CRUMBSResult_8cc_source.html#l00003">CRUMBSResult.cc:3</a></div></div>
+<div class="ttc" id="classsbn_1_1CRUMBSResult_html_af674b635e2e4fa994c05fe0dd6913b9c"><div class="ttname"><a href="../../d9/d87/classsbn_1_1CRUMBSResult.html#af674b635e2e4fa994c05fe0dd6913b9c">sbn::CRUMBSResult::CRUMBSResult</a></div><div class="ttdeci">CRUMBSResult(float score=default_float, float ccnumuscore=default_float, float ccnuescore=default_float, float ncscore=default_float, float bestscore=default_float, int bestid=default_int, float tpc_CRFracHitsInLongestTrack=default_float, float tpc_CRLongestTrackDeflection=default_float, float tpc_CRLongestTrackDirY=default_float, int tpc_CRNHitsMax=default_int, float tpc_NuEigenRatioInSphere=default_float, int tpc_NuNFinalStatePfos=default_int, int tpc_NuNHitsTotal=default_int, int tpc_NuNSpacePointsInSphere=default_int, float tpc_NuVertexY=default_float, float tpc_NuWeightedDirZ=default_float, float tpc_StoppingChi2CosmicRatio=default_float, float pds_FMTotalScore=default_float, float pds_FMPE=default_float, float pds_FMTime=default_float, float crt_TrackScore=default_float, float crt_HitScore=default_float, float crt_TrackTime=default_float, float crt_HitTime=default_float)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d17/CRUMBSResult_8cc_source.html#l00003">CRUMBSResult.cc:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

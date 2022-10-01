@@ -419,7 +419,7 @@ var searchData=
   ['knuealltrackdazzlemuoncut',['kNueAllTrackDazzleMuonCut',['../d7/d63/namespaceana.html#a519d163fa1a92ee514c7715156f9eb8f',1,'ana']]],
   ['knuealltrackdazzlemuonscorecut',['kNueAllTrackDazzleMuonScoreCut',['../d7/d63/namespaceana.html#aec3f0f99f1e951682cd3bf5614c0fd69',1,'ana']]],
   ['knuebasiccut',['kNueBasicCut',['../d7/d63/namespaceana.html#ad3f15555323f1dba1f0b78f9168801a4',1,'ana']]],
-  ['knuecc',['kNuECC',['../d0/d98/PAC2020_2SBND_2helper_8h.html#a4f4c3620d55d3ee8bd3ac4d7bb314450',1,'kNuECC():&#160;helper.h'],['../df/dc8/helper__nuesel__icarus_8h.html#a5edad1ef8852b27f4b84b841ffe721c5',1,'kNueCC():&#160;helper_nuesel_icarus.h']]],
+  ['knuecc',['kNueCC',['../df/dc8/helper__nuesel__icarus_8h.html#a5edad1ef8852b27f4b84b841ffe721c5',1,'kNueCC():&#160;helper_nuesel_icarus.h'],['../d0/d98/PAC2020_2SBND_2helper_8h.html#a4f4c3620d55d3ee8bd3ac4d7bb314450',1,'kNuECC():&#160;helper.h']]],
   ['knueccspill',['kNueCCSpill',['../df/dc8/helper__nuesel__icarus_8h.html#a96398f55e4daf1b8777b4b267cb8d446',1,'helper_nuesel_icarus.h']]],
   ['knuecontainedfd',['kNueContainedFD',['../d7/d63/namespaceana.html#aa4bd2e582f6ebae249302c252861869b',1,'ana']]],
   ['knuecontainednd',['kNueContainedND',['../d7/d63/namespaceana.html#a786c1e56f686188663f44977bace8f79',1,'ana']]],
