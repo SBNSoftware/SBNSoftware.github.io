@@ -87,6 +87,7 @@ var searchData=
   ['mcmatchalg_2ecxx',['MCMatchAlg.cxx',['../de/df1/MCMatchAlg_8cxx.html',1,'']]],
   ['mcmatchalg_2eh',['MCMatchAlg.h',['../d5/d0e/MCMatchAlg_8h.html',1,'']]],
   ['mcparticlehitmatching_5fmodule_2ecc',['MCParticleHitMatching_module.cc',['../d7/dad/MCParticleHitMatching__module_8cc.html',1,'']]],
+  ['mcparticlelite_2eh',['MCParticleLite.h',['../dc/d92/MCParticleLite_8h.html',1,'']]],
   ['mcparticlemonitoringalgorithm_2ecc',['MCParticleMonitoringAlgorithm.cc',['../d3/dbd/MCParticleMonitoringAlgorithm_8cc.html',1,'']]],
   ['mcparticlemonitoringalgorithm_2eh',['MCParticleMonitoringAlgorithm.h',['../df/dda/MCParticleMonitoringAlgorithm_8h.html',1,'']]],
   ['mcparticleshowermatching_5fmodule_2ecc',['MCParticleShowerMatching_module.cc',['../de/d03/MCParticleShowerMatching__module_8cc.html',1,'']]],

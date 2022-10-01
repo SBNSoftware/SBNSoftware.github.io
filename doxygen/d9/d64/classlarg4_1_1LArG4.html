@@ -133,6 +133,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af619c38dd997badad308100e4e13fe6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/classlarg4_1_1LArG4.html#af619c38dd997badad308100e4e13fe6e">fMakeMCParticles</a></td></tr>
 <tr class="memdesc:af619c38dd997badad308100e4e13fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to keep a <code>sim::MCParticle</code> list.  <a href="#af619c38dd997badad308100e4e13fe6e">More...</a><br/></td></tr>
 <tr class="separator:af619c38dd997badad308100e4e13fe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62344b8b5625f6fb26e700eaec36a30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/classlarg4_1_1LArG4.html#a62344b8b5625f6fb26e700eaec36a30b">fStoreDroppedMCParticles</a></td></tr>
+<tr class="memdesc:a62344b8b5625f6fb26e700eaec36a30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to keep a <code><a class="el" href="../../de/d78/classsim_1_1MCParticleLite.html">sim::MCParticleLite</a></code> list of dropped particles.  <a href="#a62344b8b5625f6fb26e700eaec36a30b">More...</a><br/></td></tr>
+<tr class="separator:a62344b8b5625f6fb26e700eaec36a30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a5fb4c16d08452ea7f101ccb01cac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/classlarg4_1_1LArG4.html#ae5a5fb4c16d08452ea7f101ccb01cac0">fdumpParticleList</a></td></tr>
 <tr class="memdesc:ae5a5fb4c16d08452ea7f101ccb01cac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether each event's sim::ParticleList will be displayed.  <a href="#ae5a5fb4c16d08452ea7f101ccb01cac0">More...</a><br/></td></tr>
 <tr class="separator:ae5a5fb4c16d08452ea7f101ccb01cac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +234,7 @@ Private Attributes</h2></td></tr>
 <h2>Scintillation </h2>
 <p>When using the fast optical simulation, which is the "standard" running mode, energy depositions from GEANT4 are "converted" into a number of scintillation photons by the global <code><a class="el" href="../../d5/de6/classlarg4_1_1IonizationAndScintillation.html">larg4::IonizationAndScintillation</a></code> object instance, which internally utilizes the algorithm set up via configuration parameter <code>IonAndScintCalculator</code> in <code>LArG4Parameters</code> service (at the time of writing, <code>"Separate"</code> is supported and <code>"NEST"</code> is accepted too). The number of scintillation photons per energy unit is read from GEANT4 <a class="el" href="../../d9/d64/classlarg4_1_1LArG4.html#LArG4_MaterialProperties">material properties table</a>. It includes already quantum efficiency ("prescale") and it may depend on the type of ionizing particle, depending on the configuration (<code>LArPropertiesStandard</code> parameter <code>ScintByParticleType</code>). This value ("yield") is used as the average of a Poisson distribution from which the actual number of scintillation photons is extracted case by case. The implementation <code><a class="el" href="../../db/db4/classlarg4_1_1ISCalculationSeparate.html">larg4::ISCalculationSeparate</a></code> may also include medium saturation effects as well, if configured, but only if the scintillation yield is set not to depend on the type of ionizing particle. The number of scintillation photons is then distributed between the fast and slow component by a yield ratio also set in the material parameters, and the single photons are distributed in time accordingly to their component. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00314">314</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00315">315</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aeeeda4fd2859a0820df166309952443c"></a>
 <div class="memitem">
@@ -255,24 +258,26 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00404">404</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    : art::EDProducer{pset}</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#ad873278e3e05274e4cc279b68950a7a3">fG4PhysListName</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;G4PhysListName&quot;</span>, <span class="stringliteral">&quot;larg4::PhysicsList&quot;</span>))</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a1b2c4d9ca46b9269df74a33439764b39">fCheckOverlaps</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;CheckOverlaps&quot;</span>, <span class="keyword">false</span>))</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#af619c38dd997badad308100e4e13fe6e">fMakeMCParticles</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;MakeMCParticles&quot;</span>, <span class="keyword">true</span>))</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#ae5a5fb4c16d08452ea7f101ccb01cac0">fdumpParticleList</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;DumpParticleList&quot;</span>, <span class="keyword">false</span>))</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a097631e100ecd65f1095383aeb66870b">fdumpSimChannels</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;DumpSimChannels&quot;</span>, <span class="keyword">false</span>))</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#aa73751198cdd4210411d6e05aba2aa4f">fSmartStacking</a>(pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SmartStacking&quot;</span>, 0))</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a144a565ae2d6c77a38ad83fd6f3635d4">fOffPlaneMargin</a>(pset.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;ChargeRecoveryMargin&quot;</span>, 0.0))</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a0022a081d3e77083fe96b477a811442f">fKeepParticlesInVolumes</a>(pset.get&lt;std::vector&lt;std::string&gt;&gt;(<span class="stringliteral">&quot;KeepParticlesInVolumes&quot;</span>, {}))</div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_af619c38dd997badad308100e4e13fe6e"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#af619c38dd997badad308100e4e13fe6e">larg4::LArG4::fMakeMCParticles</a></div><div class="ttdeci">bool fMakeMCParticles</div><div class="ttdoc">Whether to keep a sim::MCParticle list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00334">LArG4_module.cc:334</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_a0022a081d3e77083fe96b477a811442f"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a0022a081d3e77083fe96b477a811442f">larg4::LArG4::fKeepParticlesInVolumes</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fKeepParticlesInVolumes</div><div class="ttdoc">Only write particles that have trajectories through these volumes. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00344">LArG4_module.cc:344</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_aa73751198cdd4210411d6e05aba2aa4f"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#aa73751198cdd4210411d6e05aba2aa4f">larg4::LArG4::fSmartStacking</a></div><div class="ttdeci">int fSmartStacking</div><div class="ttdoc">Whether to instantiate and use class to. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00339">LArG4_module.cc:339</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_a097631e100ecd65f1095383aeb66870b"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a097631e100ecd65f1095383aeb66870b">larg4::LArG4::fdumpSimChannels</a></div><div class="ttdeci">bool fdumpSimChannels</div><div class="ttdoc">Whether each event&amp;#39;s sim::Channel will be displayed. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00336">LArG4_module.cc:336</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_ae5a5fb4c16d08452ea7f101ccb01cac0"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#ae5a5fb4c16d08452ea7f101ccb01cac0">larg4::LArG4::fdumpParticleList</a></div><div class="ttdeci">bool fdumpParticleList</div><div class="ttdoc">Whether each event&amp;#39;s sim::ParticleList will be displayed. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00335">LArG4_module.cc:335</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_ad873278e3e05274e4cc279b68950a7a3"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#ad873278e3e05274e4cc279b68950a7a3">larg4::LArG4::fG4PhysListName</a></div><div class="ttdeci">std::string fG4PhysListName</div><div class="ttdoc">predefined physics list to use if not making a custom one </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00330">LArG4_module.cc:330</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_a1b2c4d9ca46b9269df74a33439764b39"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a1b2c4d9ca46b9269df74a33439764b39">larg4::LArG4::fCheckOverlaps</a></div><div class="ttdeci">bool fCheckOverlaps</div><div class="ttdoc">Whether to use the G4 overlap checker. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00333">LArG4_module.cc:333</a></div></div>
-<div class="ttc" id="classlarg4_1_1LArG4_html_a144a565ae2d6c77a38ad83fd6f3635d4"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a144a565ae2d6c77a38ad83fd6f3635d4">larg4::LArG4::fOffPlaneMargin</a></div><div class="ttdeci">double fOffPlaneMargin</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00340">LArG4_module.cc:340</a></div></div>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00406">406</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    : art::EDProducer{pset}</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#ad873278e3e05274e4cc279b68950a7a3">fG4PhysListName</a>(pset.get&lt;std::string&gt;(<span class="stringliteral">&quot;G4PhysListName&quot;</span>, <span class="stringliteral">&quot;larg4::PhysicsList&quot;</span>))</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a1b2c4d9ca46b9269df74a33439764b39">fCheckOverlaps</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;CheckOverlaps&quot;</span>, <span class="keyword">false</span>))</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#af619c38dd997badad308100e4e13fe6e">fMakeMCParticles</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;MakeMCParticles&quot;</span>, <span class="keyword">true</span>))</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a62344b8b5625f6fb26e700eaec36a30b">fStoreDroppedMCParticles</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;StoreDroppedMCParticles&quot;</span>, <span class="keyword">false</span>))</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#ae5a5fb4c16d08452ea7f101ccb01cac0">fdumpParticleList</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;DumpParticleList&quot;</span>, <span class="keyword">false</span>))</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a097631e100ecd65f1095383aeb66870b">fdumpSimChannels</a>(pset.get&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;DumpSimChannels&quot;</span>, <span class="keyword">false</span>))</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#aa73751198cdd4210411d6e05aba2aa4f">fSmartStacking</a>(pset.get&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SmartStacking&quot;</span>, 0))</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a144a565ae2d6c77a38ad83fd6f3635d4">fOffPlaneMargin</a>(pset.get&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;ChargeRecoveryMargin&quot;</span>, 0.0))</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    , <a class="code" href="../../d9/d64/classlarg4_1_1LArG4.html#a0022a081d3e77083fe96b477a811442f">fKeepParticlesInVolumes</a>(pset.get&lt;std::vector&lt;std::string&gt;&gt;(<span class="stringliteral">&quot;KeepParticlesInVolumes&quot;</span>, {}))</div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_a62344b8b5625f6fb26e700eaec36a30b"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a62344b8b5625f6fb26e700eaec36a30b">larg4::LArG4::fStoreDroppedMCParticles</a></div><div class="ttdeci">bool fStoreDroppedMCParticles</div><div class="ttdoc">Whether to keep a sim::MCParticleLite list of dropped particles. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00336">LArG4_module.cc:336</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_af619c38dd997badad308100e4e13fe6e"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#af619c38dd997badad308100e4e13fe6e">larg4::LArG4::fMakeMCParticles</a></div><div class="ttdeci">bool fMakeMCParticles</div><div class="ttdoc">Whether to keep a sim::MCParticle list. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00335">LArG4_module.cc:335</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_a0022a081d3e77083fe96b477a811442f"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a0022a081d3e77083fe96b477a811442f">larg4::LArG4::fKeepParticlesInVolumes</a></div><div class="ttdeci">std::vector&lt; std::string &gt; fKeepParticlesInVolumes</div><div class="ttdoc">Only write particles that have trajectories through these volumes. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00346">LArG4_module.cc:346</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_aa73751198cdd4210411d6e05aba2aa4f"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#aa73751198cdd4210411d6e05aba2aa4f">larg4::LArG4::fSmartStacking</a></div><div class="ttdeci">int fSmartStacking</div><div class="ttdoc">Whether to instantiate and use class to. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00341">LArG4_module.cc:341</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_a097631e100ecd65f1095383aeb66870b"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a097631e100ecd65f1095383aeb66870b">larg4::LArG4::fdumpSimChannels</a></div><div class="ttdeci">bool fdumpSimChannels</div><div class="ttdoc">Whether each event&amp;#39;s sim::Channel will be displayed. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00338">LArG4_module.cc:338</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_ae5a5fb4c16d08452ea7f101ccb01cac0"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#ae5a5fb4c16d08452ea7f101ccb01cac0">larg4::LArG4::fdumpParticleList</a></div><div class="ttdeci">bool fdumpParticleList</div><div class="ttdoc">Whether each event&amp;#39;s sim::ParticleList will be displayed. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00337">LArG4_module.cc:337</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_ad873278e3e05274e4cc279b68950a7a3"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#ad873278e3e05274e4cc279b68950a7a3">larg4::LArG4::fG4PhysListName</a></div><div class="ttdeci">std::string fG4PhysListName</div><div class="ttdoc">predefined physics list to use if not making a custom one </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00331">LArG4_module.cc:331</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_a1b2c4d9ca46b9269df74a33439764b39"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a1b2c4d9ca46b9269df74a33439764b39">larg4::LArG4::fCheckOverlaps</a></div><div class="ttdeci">bool fCheckOverlaps</div><div class="ttdoc">Whether to use the G4 overlap checker. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00334">LArG4_module.cc:334</a></div></div>
+<div class="ttc" id="classlarg4_1_1LArG4_html_a144a565ae2d6c77a38ad83fd6f3635d4"><div class="ttname"><a href="../../d9/d64/classlarg4_1_1LArG4.html#a144a565ae2d6c77a38ad83fd6f3635d4">larg4::LArG4::fOffPlaneMargin</a></div><div class="ttdeci">double fOffPlaneMargin</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de6/LArG4__module_8cc_source.html#l00342">LArG4_module.cc:342</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -395,7 +400,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00352">352</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00354">354</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -419,7 +424,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether to use the G4 overlap checker. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00333">333</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00334">334</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -443,7 +448,7 @@ Private Attributes</h2></td></tr>
 
 <p>Must outlive fAllPhysicsLists! </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00351">351</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00353">353</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -467,7 +472,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether each event's sim::ParticleList will be displayed. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00335">335</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00337">337</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -491,7 +496,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether each event's sim::Channel will be displayed. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00336">336</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -514,7 +519,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Random-number engine for <a class="el" href="../../d5/de6/classlarg4_1_1IonizationAndScintillation.html">IonizationAndScintillation</a> initialization </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00348">348</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00350">350</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -538,7 +543,7 @@ Private Attributes</h2></td></tr>
 
 <p>G4 interface object. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00326">326</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00327">327</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -561,7 +566,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>directory path for Geant4 macro file to be executed before main MC processing. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00331">331</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00332">332</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -585,7 +590,7 @@ Private Attributes</h2></td></tr>
 
 <p>predefined physics list to use if not making a custom one </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00330">330</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00331">331</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -607,7 +612,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00342">342</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00344">344</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -631,7 +636,7 @@ Private Attributes</h2></td></tr>
 
 <p>Only write particles that have trajectories through these volumes. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00344">344</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00346">346</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -655,7 +660,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether to keep a <code>sim::MCParticle</code> list. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00334">334</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00335">335</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -678,7 +683,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Off-plane charge recovery margin dictate how tracks are put on stack. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00340">340</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00342">342</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -704,7 +709,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>Geant4 user action to particle information. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00327">327</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00328">328</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -728,7 +733,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether to instantiate and use class to. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00339">339</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00341">341</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -752,7 +757,31 @@ Private Attributes</h2></td></tr>
 
 <p>Sparsify MCParticle Trajectories. </p>
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00346">346</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00348">348</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62344b8b5625f6fb26e700eaec36a30b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d6f/namespacelarg4.html#a42b3ada02e272fe2fa2b641ba06ab7d4">bool</a> larg4::LArG4::fStoreDroppedMCParticles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether to keep a <code><a class="el" href="../../de/d78/classsim_1_1MCParticleLite.html">sim::MCParticleLite</a></code> list of dropped particles. </p>
+
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00336">336</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -774,7 +803,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00338">338</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00340">340</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -796,7 +825,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00337">337</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00339">339</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>
@@ -820,7 +849,7 @@ Private Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">      <span class="keyword">nullptr</span>}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00353">353</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html#l00355">355</a> of file <a class="el" href="../../d5/de6/LArG4__module_8cc_source.html">LArG4_module.cc</a>.</p>
 
 </div>
 </div>

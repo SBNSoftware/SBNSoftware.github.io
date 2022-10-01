@@ -63,6 +63,7 @@ var searchData=
   ['simchannelsinputtag',['SimChannelsInputTag',['../d9/dd5/classicarus_1_1trigger_1_1details_1_1EventInfoExtractor.html#aa35bbb8052f2bf89aa54ef35ed0e1965',1,'icarus::trigger::details::EventInfoExtractor']]],
   ['simchannelvector',['SimChannelVector',['../d1/d8f/namespacelar__pandora.html#a363d052b8b30fd3fef661bf27e4ea22e',1,'lar_pandora']]],
   ['simenergydepositcollection',['SimEnergyDepositCollection',['../d8/d7d/namespacesim.html#a33d9c3296d23a6a970fbbe7d5aeabbbe',1,'sim::SimEnergyDepositCollection()'],['../d5/db6/IonAndScint__module_8cc.html#a0b4b41b3ca3bdf6b37485ba7c12b254f',1,'SimEnergyDepositCollection():&#160;IonAndScint_module.cc']]],
+  ['simenergydepositlitecollection',['SimEnergyDepositLiteCollection',['../d8/d7d/namespacesim.html#afefb5c7ba9770817b0245b3091f7c007',1,'sim']]],
   ['simenergydepositsummaryinputtag',['SimEnergyDepositSummaryInputTag',['../d9/dd5/classicarus_1_1trigger_1_1details_1_1EventInfoExtractor.html#a7f90b4709981ee4d824cf93c6bfb21d9',1,'icarus::trigger::details::EventInfoExtractor']]],
   ['simideset',['SimIDESet',['../d4/dba/classSpacePointAnalysisMC_1_1SpacePointAnalysisMC.html#a60e83d5bc151b5aa9d8f5853d3f47dfb',1,'SpacePointAnalysisMC::SpacePointAnalysisMC']]],
   ['simpleconelist',['SimpleConeList',['../db/de7/namespacelar__content.html#aaf6a79c215e79fd4228bd73392e0a7a6',1,'lar_content']]],

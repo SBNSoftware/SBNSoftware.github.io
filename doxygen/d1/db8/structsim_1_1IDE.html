@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa93738bfa583be18199d6519b791890a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#aa93738bfa583be18199d6519b791890a">IDE</a> (<a class="el" href="../../d1/db8/structsim_1_1IDE.html">IDE</a> const &amp;ide, int <a class="el" href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a>)</td></tr>
 <tr class="memdesc:aa93738bfa583be18199d6519b791890a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: copies an <a class="el" href="../../d1/db8/structsim_1_1IDE.html" title="Ionization at a point of the TPC sensitive volume. ">IDE</a>, and applies the specified offset to track ID.  <a href="#aa93738bfa583be18199d6519b791890a">More...</a><br/></td></tr>
 <tr class="separator:aa93738bfa583be18199d6519b791890a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad0315d6333371c9fa8bec337bbf2a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a5ad0315d6333371c9fa8bec337bbf2a7">IDE</a> (<a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a> tid, float nel, float <a class="el" href="../../d9/dd2/selectors_8fcl.html#ad3fec9b8b789cdb7b6899bd350d3a726">e</a>, float xpos, float ypos, float zpos)</td></tr>
-<tr class="memdesc:a5ad0315d6333371c9fa8bec337bbf2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: sets all data members.  <a href="#a5ad0315d6333371c9fa8bec337bbf2a7">More...</a><br/></td></tr>
-<tr class="separator:a5ad0315d6333371c9fa8bec337bbf2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb08804b8dc0b34102c1bfc17928299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a0eb08804b8dc0b34102c1bfc17928299">IDE</a> (<a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a> tid, float nel, float <a class="el" href="../../d9/dd2/selectors_8fcl.html#ad3fec9b8b789cdb7b6899bd350d3a726">e</a>, float xpos, float ypos, float zpos, <a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a> gid=<a class="el" href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a>)</td></tr>
+<tr class="memdesc:a0eb08804b8dc0b34102c1bfc17928299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: sets all data members.  <a href="#a0eb08804b8dc0b34102c1bfc17928299">More...</a><br/></td></tr>
+<tr class="separator:a0eb08804b8dc0b34102c1bfc17928299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -128,6 +128,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a76257795169f388f06397620c12c72bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">z</a></td></tr>
 <tr class="memdesc:a76257795169f388f06397620c12c72bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">z position of ionization [cm]  <a href="#a76257795169f388f06397620c12c72bc">More...</a><br/></td></tr>
 <tr class="separator:a76257795169f388f06397620c12c72bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc1cc31ca196a668f4fd439b8b9d7d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a></td></tr>
+<tr class="memdesc:a0bc1cc31ca196a668f4fd439b8b9d7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geant4 supplied track ID (remains true trackID even for shower secondaries/tertiaries etc)  <a href="#a0bc1cc31ca196a668f4fd439b8b9d7d4">More...</a><br/></td></tr>
+<tr class="separator:a0bc1cc31ca196a668f4fd439b8b9d7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Ionization at a point of the TPC sensitive volume. </p>
@@ -146,11 +149,11 @@ Public Attributes</h2></td></tr>
 <ol type="1">
 <li>converted from that same energy (using a fundamental conversion factor stored in <code>larcoreobj/SimpleTypesAndConstants/PhysicalConstants.h</code>)</li>
 <li>applied recombination effect by <a class="el" href="../../d5/de6/classlarg4_1_1IonizationAndScintillation.html#a36d3b1ef43576b020ca130e80f069e84">larg4::IonizationAndScintillation::Reset()</a></li>
-<li>applied attenuation and diffusion in <a class="el" href="../../db/d19/classlarg4_1_1LArVoxelReadout.html#ae5dc5422485c716eb36288d88a61d448">larg4::LArVoxelReadout::DriftIonizationElectrons()</a></li>
+<li>applied attenuation and diffusion in <a class="el" href="../../db/d19/classlarg4_1_1LArVoxelReadout.html#a18751342a6908cff9f4cae2f8a09d0cb">larg4::LArVoxelReadout::DriftIonizationElectrons()</a></li>
 </ol>
 <p>The latter also assembles the <a class="el" href="../../d1/db8/structsim_1_1IDE.html" title="Ionization at a point of the TPC sensitive volume. ">sim::IDE</a> objects to be stored into <a class="el" href="../../d0/daf/classsim_1_1SimChannel.html" title="Energy deposited on a readout channel by simulated tracks. ">sim::SimChannel</a>. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00084">84</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00086">86</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a3b476a9cffd57b25c5b1541f36f88303"></a>
 <div class="memitem">
@@ -164,7 +167,7 @@ Public Attributes</h2></td></tr>
 
 <p>Type of track ID (the value comes from Geant4) </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00087">87</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00089">89</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -184,22 +187,24 @@ Public Attributes</h2></td></tr>
 
 <p>Default constructor (sets "bogus" values) </p>
 
-<p>Definition at line <a class="el" href="../../de/d1c/SimChannel_8cxx_source.html#l00024">24</a> of file <a class="el" href="../../de/d1c/SimChannel_8cxx_source.html">SimChannel.cxx</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>     (<a class="code" href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a>)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">numElectrons</a>(<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">energy</a>      (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">x</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">y</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">z</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<p>Definition at line <a class="el" href="../../de/d1c/SimChannel_8cxx_source.html#l00023">23</a> of file <a class="el" href="../../de/d1c/SimChannel_8cxx_source.html">SimChannel.cxx</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>     (<a class="code" href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">numElectrons</a>(<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">energy</a>      (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">x</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">y</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">z</a>           (<a class="code" href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a>)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a>     (<a class="code" href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a>)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  {}</div>
-<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00112">SimChannel.h:112</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a76257795169f388f06397620c12c72bc"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">sim::IDE::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00117">SimChannel.h:117</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00116">SimChannel.h:116</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a76257795169f388f06397620c12c72bc"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">sim::IDE::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00121">SimChannel.h:121</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a0bc1cc31ca196a668f4fd439b8b9d7d4"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">sim::IDE::origTrackID</a></div><div class="ttdeci">TrackID_t origTrackID</div><div class="ttdoc">Geant4 supplied track ID (remains true trackID even for shower secondaries/tertiaries etc) ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00122">SimChannel.h:122</a></div></div>
 <div class="ttc" id="namespaceutil_html_a182c76e948783adbe3ad07166d4d5996"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a></div><div class="ttdeci">constexpr int kBogusI</div><div class="ttdoc">obviously bogus integer value </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d09/PhysicalConstants_8h_source.html#l00072">PhysicalConstants.h:72</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a7c3352f7f0aa5d4a1c9aa676f7673755"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">sim::IDE::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00115">SimChannel.h:115</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a34267798028729d3b798c17617faeb28"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">sim::IDE::energy</a></div><div class="ttdeci">float energy</div><div class="ttdoc">energy deposited by ionization by this track ID and time [MeV] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00114">SimChannel.h:114</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a23eeccc332714a63f3a3a57f0f2ec14d"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">sim::IDE::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00116">SimChannel.h:116</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a7c3352f7f0aa5d4a1c9aa676f7673755"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">sim::IDE::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00119">SimChannel.h:119</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a34267798028729d3b798c17617faeb28"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">sim::IDE::energy</a></div><div class="ttdeci">float energy</div><div class="ttdoc">energy deposited by ionization by this track ID and time [MeV] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00118">SimChannel.h:118</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a23eeccc332714a63f3a3a57f0f2ec14d"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">sim::IDE::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00120">SimChannel.h:120</a></div></div>
 <div class="ttc" id="namespaceutil_html_a85007be2ce41bf247364673c302f8a5b"><div class="ttname"><a href="../../d6/d72/namespaceutil.html#a85007be2ce41bf247364673c302f8a5b">util::kBogusD</a></div><div class="ttdeci">constexpr double kBogusD</div><div class="ttdoc">obviously bogus double value </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d09/PhysicalConstants_8h_source.html#l00071">PhysicalConstants.h:71</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a46b3076d6302271be79feebd7cfc3de9"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">sim::IDE::numElectrons</a></div><div class="ttdeci">float numElectrons</div><div class="ttdoc">number of electrons at the readout for this track ID and time </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00113">SimChannel.h:113</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a46b3076d6302271be79feebd7cfc3de9"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">sim::IDE::numElectrons</a></div><div class="ttdeci">float numElectrons</div><div class="ttdoc">number of electrons at the readout for this track ID and time </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00117">SimChannel.h:117</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,15 +239,17 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a> = <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>&gt;=0? <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>+<a class="code" href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a> : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>-<a class="code" href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00112">SimChannel.h:112</a></div></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a> = <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a>&gt;=0? <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a>+offset : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a>-<a class="code" href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
+<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00116">SimChannel.h:116</a></div></div>
 <div class="ttc" id="CORSIKAGen_8fcl_html_a424b27db311314d6e22e0e78fd28a35a"><div class="ttname"><a href="../../d2/d0d/CORSIKAGen_8fcl.html#a424b27db311314d6e22e0e78fd28a35a">offset</a></div><div class="ttdeci">BEGIN_PROLOG TPC Trig offset(g4 rise time) ProjectToHeight</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d0d/CORSIKAGen_8fcl_source.html#l00007">CORSIKAGen.fcl:7</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a3e565f4273b463ad9f6b197e4b54e1be"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a3e565f4273b463ad9f6b197e4b54e1be">sim::IDE::IDE</a></div><div class="ttdeci">IDE()</div><div class="ttdoc">Default constructor (sets &amp;quot;bogus&amp;quot; values) </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1c/SimChannel_8cxx_source.html#l00024">SimChannel.cxx:24</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a0bc1cc31ca196a668f4fd439b8b9d7d4"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">sim::IDE::origTrackID</a></div><div class="ttdeci">TrackID_t origTrackID</div><div class="ttdoc">Geant4 supplied track ID (remains true trackID even for shower secondaries/tertiaries etc) ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00122">SimChannel.h:122</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a3e565f4273b463ad9f6b197e4b54e1be"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a3e565f4273b463ad9f6b197e4b54e1be">sim::IDE::IDE</a></div><div class="ttdeci">IDE()</div><div class="ttdoc">Default constructor (sets &amp;quot;bogus&amp;quot; values) </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1c/SimChannel_8cxx_source.html#l00023">SimChannel.cxx:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a5ad0315d6333371c9fa8bec337bbf2a7"></a>
+<a class="anchor" id="a0eb08804b8dc0b34102c1bfc17928299"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -283,7 +290,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>zpos</em>&#160;</td>
+          <td class="paramname"><em>zpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a>&#160;</td>
+          <td class="paramname"><em>gid</em> = <code><a class="el" href="../../d6/d72/namespaceutil.html#a182c76e948783adbe3ad07166d4d5996">util::kBogusI</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -300,21 +313,23 @@ Public Attributes</h2></td></tr>
 
 <p>Constructor: sets all data members. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00097">97</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>     (tid)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">numElectrons</a>(nel)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">energy</a>      (<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">x</a>           (xpos)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">y</a>           (ypos)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">z</a>           (zpos)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {}</div>
-<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00112">SimChannel.h:112</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a76257795169f388f06397620c12c72bc"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">sim::IDE::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00117">SimChannel.h:117</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a7c3352f7f0aa5d4a1c9aa676f7673755"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">sim::IDE::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00115">SimChannel.h:115</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a34267798028729d3b798c17617faeb28"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">sim::IDE::energy</a></div><div class="ttdeci">float energy</div><div class="ttdoc">energy deposited by ionization by this track ID and time [MeV] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00114">SimChannel.h:114</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a23eeccc332714a63f3a3a57f0f2ec14d"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">sim::IDE::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00116">SimChannel.h:116</a></div></div>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00099">99</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    : <a class="code" href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">trackID</a>     (tid)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">numElectrons</a>(nel)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">energy</a>      (<a class="code" href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a>)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">x</a>           (xpos)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">y</a>           (ypos)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">z</a>           (zpos)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    , <a class="code" href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">origTrackID</a>     (gid)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {}</div>
+<div class="ttc" id="structsim_1_1IDE_html_aaaed39f459c6863001e7ec689f1d59dd"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#aaaed39f459c6863001e7ec689f1d59dd">sim::IDE::trackID</a></div><div class="ttdeci">TrackID_t trackID</div><div class="ttdoc">Geant4 supplied track ID. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00116">SimChannel.h:116</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a76257795169f388f06397620c12c72bc"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a76257795169f388f06397620c12c72bc">sim::IDE::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00121">SimChannel.h:121</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a0bc1cc31ca196a668f4fd439b8b9d7d4"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a0bc1cc31ca196a668f4fd439b8b9d7d4">sim::IDE::origTrackID</a></div><div class="ttdeci">TrackID_t origTrackID</div><div class="ttdoc">Geant4 supplied track ID (remains true trackID even for shower secondaries/tertiaries etc) ...</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00122">SimChannel.h:122</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a7c3352f7f0aa5d4a1c9aa676f7673755"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a7c3352f7f0aa5d4a1c9aa676f7673755">sim::IDE::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00119">SimChannel.h:119</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a34267798028729d3b798c17617faeb28"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a34267798028729d3b798c17617faeb28">sim::IDE::energy</a></div><div class="ttdeci">float energy</div><div class="ttdoc">energy deposited by ionization by this track ID and time [MeV] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00118">SimChannel.h:118</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a23eeccc332714a63f3a3a57f0f2ec14d"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a23eeccc332714a63f3a3a57f0f2ec14d">sim::IDE::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y position of ionization [cm] </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00120">SimChannel.h:120</a></div></div>
 <div class="ttc" id="updateVersionList_8sh_html_a067a8c1534d6da9b2c501a6cf4ef89bd"><div class="ttname"><a href="../../d4/dca/updateVersionList_8sh.html#a067a8c1534d6da9b2c501a6cf4ef89bd">e</a></div><div class="ttdeci">do i e</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dca/updateVersionList_8sh_source.html#l00068">updateVersionList.sh:68</a></div></div>
-<div class="ttc" id="structsim_1_1IDE_html_a46b3076d6302271be79feebd7cfc3de9"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">sim::IDE::numElectrons</a></div><div class="ttdeci">float numElectrons</div><div class="ttdoc">number of electrons at the readout for this track ID and time </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00113">SimChannel.h:113</a></div></div>
+<div class="ttc" id="structsim_1_1IDE_html_a46b3076d6302271be79feebd7cfc3de9"><div class="ttname"><a href="../../d1/db8/structsim_1_1IDE.html#a46b3076d6302271be79feebd7cfc3de9">sim::IDE::numElectrons</a></div><div class="ttdeci">float numElectrons</div><div class="ttdoc">number of electrons at the readout for this track ID and time </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dde/SimChannel_8h_source.html#l00117">SimChannel.h:117</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -331,7 +346,7 @@ Public Attributes</h2></td></tr>
 
 <p>energy deposited by ionization by this track ID and time [MeV] </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00114">114</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00118">118</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +362,23 @@ Public Attributes</h2></td></tr>
 
 <p>number of electrons at the readout for this track ID and time </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00113">113</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00117">117</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bc1cc31ca196a668f4fd439b8b9d7d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/db8/structsim_1_1IDE.html#a3b476a9cffd57b25c5b1541f36f88303">TrackID_t</a> sim::IDE::origTrackID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Geant4 supplied track ID (remains true trackID even for shower secondaries/tertiaries etc) </p>
+
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00122">122</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +394,7 @@ Public Attributes</h2></td></tr>
 
 <p>Geant4 supplied track ID. </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00112">112</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00116">116</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +410,7 @@ Public Attributes</h2></td></tr>
 
 <p>x position of ionization [cm] </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00115">115</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00119">119</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +426,7 @@ Public Attributes</h2></td></tr>
 
 <p>y position of ionization [cm] </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00116">116</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00120">120</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +442,7 @@ Public Attributes</h2></td></tr>
 
 <p>z position of ionization [cm] </p>
 
-<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00117">117</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
+<p>Definition at line <a class="el" href="../../d6/dde/SimChannel_8h_source.html#l00121">121</a> of file <a class="el" href="../../d6/dde/SimChannel_8h_source.html">SimChannel.h</a>.</p>
 
 </div>
 </div>

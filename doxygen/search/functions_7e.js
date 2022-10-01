@@ -427,6 +427,7 @@ var searchData=
   ['_7emchitanaexample',['~MCHitAnaExample',['../d0/d5b/classhit_1_1MCHitAnaExample.html#a95847cd3e6487ea5c80e9409cee6620e',1,'hit::MCHitAnaExample']]],
   ['_7emcmatchalg',['~MCMatchAlg',['../dd/d24/classbtutil_1_1MCMatchAlg.html#abce8d31798638f22603efa58063b7339',1,'btutil::MCMatchAlg']]],
   ['_7emcminipart',['~MCMiniPart',['../d2/d8a/classsim_1_1MCMiniPart.html#a3e93dcd8228c9b478f223b2368bebde6',1,'sim::MCMiniPart']]],
+  ['_7emcparticlelite',['~MCParticleLite',['../db/d6d/group__MCBase.html#ga52b3ffc7fc4340ce3f89de789be207fd',1,'sim::MCParticleLite']]],
   ['_7emcrecopart',['~MCRecoPart',['../d9/d6a/classsim_1_1MCRecoPart.html#ab873446da6468f1ae7505a3aa7ef3022',1,'sim::MCRecoPart']]],
   ['_7emcsfitproducer',['~MCSFitProducer',['../d9/d56/classtrkf_1_1MCSFitProducer.html#abb535d1bef864138ce9aa6f1b99a7330',1,'trkf::MCSFitProducer']]],
   ['_7emcsfitproducericarus',['~MCSFitProducerICARUS',['../df/ddf/classtrkf_1_1MCSFitProducerICARUS.html#a489f0a2f1d6039ab79e382000fc71a78',1,'trkf::MCSFitProducerICARUS']]],

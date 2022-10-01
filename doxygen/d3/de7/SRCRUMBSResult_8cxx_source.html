@@ -119,14 +119,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d0/dcd/classcaf_1_1SRCRUMBSResult.html#a454367faaf207563ce63e181a54a7430">   40</a></span>&#160;  <a class="code" href="../../d0/dcd/classcaf_1_1SRCRUMBSResult.html#a454367faaf207563ce63e181a54a7430">SRCRUMBSResult::SRCRUMBSResult</a>()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <a class="code" href="../../d2/d30/crttrackmatchingalg__sbnd_8fcl.html#a81164acfbd78b53a952f30653b4106f2">score</a>(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN())</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    , tpc()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    , pds()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// end namespace</span><span class="comment"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    , ccnumuscore(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN())</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    , ccnuescore(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , ncscore(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN())</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    , bestscore(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;float&gt;::signaling_NaN())</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    , bestid(<a class="code" href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">std</a>::numeric_limits&lt;int&gt;::max())</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    , tpc()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    , pds()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    , <a class="code" href="../../dc/d07/run__genericCRT_8fcl.html#a90f57f2367b563070286d12581daaf00">crt</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// end namespace</span><span class="comment"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//////////////////////////////////////////////////////////////////////////////</span></div>
 <div class="ttc" id="namespacepmtana_html_a9860e62c78db1dd9c7d635a2832b883a"><div class="ttname"><a href="../../da/dc9/namespacepmtana.html#a9860e62c78db1dd9c7d635a2832b883a">pmtana::std</a></div><div class="ttdeci">double std(const std::vector&lt; short &gt; &amp;wf, const double ped_mean, size_t start, size_t nsample)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/de4/UtilFunc_8cxx_source.html#l00042">UtilFunc.cxx:42</a></div></div>
 <div class="ttc" id="classcaf_1_1SRCRUMBSCRTVars_html_ad24bb8e1c80dc3254e2f3cb0b58c260c"><div class="ttname"><a href="../../da/d45/classcaf_1_1SRCRUMBSCRTVars.html#ad24bb8e1c80dc3254e2f3cb0b58c260c">caf::SRCRUMBSCRTVars::SRCRUMBSCRTVars</a></div><div class="ttdeci">SRCRUMBSCRTVars()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de7/SRCRUMBSResult_8cxx_source.html#l00032">SRCRUMBSResult.cxx:32</a></div></div>
 <div class="ttc" id="classcaf_1_1SRCRUMBSPDSVars_html_a3a452f3ac51018fe3f7d541eca7d7264"><div class="ttname"><a href="../../d7/d93/classcaf_1_1SRCRUMBSPDSVars.html#a3a452f3ac51018fe3f7d541eca7d7264">caf::SRCRUMBSPDSVars::SRCRUMBSPDSVars</a></div><div class="ttdeci">SRCRUMBSPDSVars()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de7/SRCRUMBSResult_8cxx_source.html#l00025">SRCRUMBSResult.cxx:25</a></div></div>
