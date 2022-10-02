@@ -23,7 +23,7 @@ New features
 ---------------------------------------------------
 A weekly release of sbncode and sbnana (v09_59_00)  has been cut and distributed.
 
-* sbncode (v09_58_02):
+* sbncode (v09_59_00):
   Using:
   * larsoft             v09_59_00
   * sbnobj              v09_14_09
@@ -35,7 +35,7 @@ A weekly release of sbncode and sbnana (v09_59_00)  has been cut and distributed
   * SBNSoftware/sbnobj Additions to trigger dump information minor #65
 
 
-* sbnana (v09_58_02):
+* sbnana (v09_59_00):
   Using:
   * sbnanaobj           v09_19_04
 
