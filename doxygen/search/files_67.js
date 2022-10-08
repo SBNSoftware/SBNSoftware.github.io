@@ -131,6 +131,8 @@ var searchData=
   ['g4_5fwith_5fopticallibrary_5flite_2efcl',['g4_with_opticalLibrary_lite.fcl',['../de/dcf/g4__with__opticalLibrary__lite_8fcl.html',1,'']]],
   ['g4badideaaction_2ecxx',['G4BadIdeaAction.cxx',['../d4/d78/G4BadIdeaAction_8cxx.html',1,'']]],
   ['g4badideaaction_2eh',['G4BadIdeaAction.h',['../de/dd5/G4BadIdeaAction_8h.html',1,'']]],
+  ['g4inforeducer_2efcl',['g4inforeducer.fcl',['../db/de3/g4inforeducer_8fcl.html',1,'']]],
+  ['g4inforeducer_5fmodule_2ecc',['G4InfoReducer_module.cc',['../dd/d79/G4InfoReducer__module_8cc.html',1,'']]],
   ['g4thermalelectron_2ecxx',['G4ThermalElectron.cxx',['../d8/d1d/G4ThermalElectron_8cxx.html',1,'']]],
   ['g4thermalelectron_2ehh',['G4ThermalElectron.hh',['../de/d74/G4ThermalElectron_8hh.html',1,'']]],
   ['gaisserparam_2efcl',['GaisserParam.fcl',['../dc/da0/GaisserParam_8fcl.html',1,'']]],
