@@ -1,12 +1,13 @@
 var searchData=
 [
   ['g4badideaaction',['G4BadIdeaAction',['../da/d71/classlarg4_1_1G4BadIdeaAction.html',1,'larg4']]],
+  ['g4inforeducer',['G4InfoReducer',['../df/dbf/classG4InfoReducer.html',1,'']]],
   ['g4pvplacementwithid',['G4PVPlacementWithID',['../db/d73/classlarg4_1_1G4PVPlacementWithID.html',1,'larg4']]],
   ['g4thermalelectron',['G4ThermalElectron',['../d3/d11/classG4ThermalElectron.html',1,'']]],
   ['gainfluctuator',['GainFluctuator',['../d6/dae/classicarus_1_1opdet_1_1PMTsimulationAlg_1_1GainFluctuator.html',1,'icarus::opdet::PMTsimulationAlg']]],
   ['gaisserparam',['GaisserParam',['../d5/db2/classevgen_1_1GaisserParam.html',1,'evgen']]],
-  ['gateconfig',['GateConfig',['../df/d95/structicarus_1_1trigger_1_1WriteBeamGateInfo_1_1Config_1_1GateConfig.html',1,'icarus::trigger::WriteBeamGateInfo::Config']]],
   ['gateconfig',['GateConfig',['../d1/dd5/structicarus_1_1TriggerConfiguration_1_1GateConfig.html',1,'icarus::TriggerConfiguration']]],
+  ['gateconfig',['GateConfig',['../df/d95/structicarus_1_1trigger_1_1WriteBeamGateInfo_1_1Config_1_1GateConfig.html',1,'icarus::trigger::WriteBeamGateInfo::Config']]],
   ['gateextractorimpl',['GateExtractorImpl',['../de/d50/structicarus_1_1trigger_1_1details_1_1GateExtractorImpl.html',1,'icarus::trigger::details']]],
   ['gateextractorimpl_3c_20gate_2c_20std_3a_3aenable_5fif_5ft_3c_20icarus_3a_3atrigger_3a_3aisreadouttriggergate_3c_20gate_20_3e_3a_3avalue_20_3e_20_3e',['GateExtractorImpl&lt; Gate, std::enable_if_t&lt; icarus::trigger::isReadoutTriggerGate&lt; Gate &gt;::value &gt; &gt;',['../dc/d3e/structicarus_1_1trigger_1_1details_1_1GateExtractorImpl_3_01Gate_00_01std_1_1enable__if__t_3_01if8c1542b71d8469fb2e98b3c92c0dade.html',1,'icarus::trigger::details']]],
   ['gateextractorimpl_3c_20gate_2c_20std_3a_3aenable_5fif_5ft_3c_20istrackedtriggergate_3c_20gate_20_3e_3a_3avalue_20_3e_20_3e',['GateExtractorImpl&lt; Gate, std::enable_if_t&lt; isTrackedTriggerGate&lt; Gate &gt;::value &gt; &gt;',['../dd/dc6/structicarus_1_1trigger_1_1details_1_1GateExtractorImpl_3_01Gate_00_01std_1_1enable__if__t_3_01if8242aeff14b4d9e85e13acba08c3880.html',1,'icarus::trigger::details']]],
