@@ -21,6 +21,41 @@ ICARUS side and top CRT is read using CAEN DT5702 front end boards
 FEBs are connected to computer with Ethernet cable. They can be chained
 using another Ethernet port (doesn\'t matter which one).
 
+## Firmware
+Two main components of FEB are FPGA, which reads out ADCs and sends data to CPU, which then communicates with the server via Ethernet. Both FPGA and CPU can be programmed.
+
+Firmware can be loaded either using a JTAG programmer, or in case of newer boards, also via Ethernet.
+
+Programming via Ethernet bases on standalone DAQ. Here are example instructions to do it from ICARUS DAQ machine:
+
+```
+#1. Get permissions to use Ethernet port
+/usr/libexec/ambient_cap_net_raw /bin/bash
+
+#2. Setup root
+source /software/products/setup
+setup root v6_18_04d -qe19:prof:py2
+
+#3. Run root
+root -l
+
+//4. From the root prompt, open standalone DAQ on a specified Ethernet port
+.x FEBDAQMULT.C+("ethernet_port_name")
+
+//5. Select FEB you want to program using the graphical interface of standalone DAQ
+
+//6. Load either FPGA or CPU firmware with the following commands
+UpdateFPGA("fpga_firmware_file") // this updates FPGA file
+UpdateFW("cpu_firmware_file")    // this updates CPU firmware
+```
+
+> **Warning**
+> There is no safety mechanism preventing you from loading any file into the FEB!
+> Loading wrong file into either CPU or FPGA will render FEB unusable.
+> Always make sure that you load a correct file to correct component.
+>   - Typical names for the CPU firmware is FEB_rev3_IAPX.xxx.bin
+>   - Typical names for the FPGA firmware are Top.bit or Top.mcs
+
 
 
 ## febdrv
