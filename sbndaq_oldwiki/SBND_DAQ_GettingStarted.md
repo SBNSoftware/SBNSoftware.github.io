@@ -76,7 +76,7 @@ If you encounter some problem and don't know what caused it please post to the s
 
 even channels have no inputs
 
-ch1: - TRIGGER from PTB to 1730
+ch1: - FLASH TRIGGER from PTB to 1730
 
 ch3: - RWM
 
@@ -90,19 +90,20 @@ ch11: - RWM
 
 ch13: - RWM
 
-ch15: - TRIGGER from PTB to 1730
+ch15: - EVENT TRIGGER from PTB to 1730
 
 WR TDC inputs:
 
-ch1: t0 reset from CRT fanout (32 ns cable)
+SPEC TDC inputs
+ch 1 - CRT t0 reset
 
-ch2: t1 reset from CRT fanout (32 ns cable)
+ch 2 - CRT t1 reset
 
-ch3: empty
+ch 3 - Flash Trigger
 
-ch4: empty
+ch 4 - RWM
 
-ch5: empty
+ch 5 - currently empty (event trigger coming)
 
 CRT T0 reset: PPS
 
