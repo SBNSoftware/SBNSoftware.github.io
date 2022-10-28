@@ -37,7 +37,7 @@ source /daq/software/products_dev/setup   #dev area
 ```bash
 ups list -aK+ sbndaq -qe20:s112:prof
 ```
-It's recommended you use the latest available version (this is currently v1_03_01 as of 10/2022) with e20:prof:s112 as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_04_00 as of 10/2022) with e20:prof:s112 as the option. Then, to set up, use:
 ```bash
 setup sbndaq v#_##_## -qe20:prof:s112
 ```
