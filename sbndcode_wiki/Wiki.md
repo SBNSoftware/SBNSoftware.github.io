@@ -118,7 +118,7 @@ Useful Tidbits of Information.
 
 [Newbie Material](Newbie_Material.html)
 --------------------------------------------------------------------------------------
-
+-   [Getting ND/FD Building Access](building_access.html)
 
 
 [Vertical Slice Test](Vertical_Slice_Test.html)
@@ -126,7 +126,7 @@ Useful Tidbits of Information.
 
 [DAQ](DAQ.html)
 --------------------------------------------------------------------------------------------------
-
+-   [Getting a DAQ Account](https://sbnsoftware.github.io/sbn_online_wiki/Getting_a_DAQ_account.html)
 
 [SBND Assembly Master Document](SBND_Assembly_Master_Document.html)
 -------------------------------------------------------------------------------------------------------------------------------------
