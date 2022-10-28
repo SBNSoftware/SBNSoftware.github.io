@@ -109,6 +109,7 @@ Useful Tidbits of Information.
 -   [Generation FHICL Files](simulation/sbnd_generation_fhicls)
 -   [LArSoft Filters](simulation/sbnd_filters)
 -   [SBND Trigger](SBND_Trigger.html)
+-   [Getting ND/FD Building Access](building_access.html)
 
 
 [Code management and deployment stuff](Code_management_and_deployment_stuff.html)
@@ -118,7 +119,6 @@ Useful Tidbits of Information.
 
 [Newbie Material](Newbie_Material.html)
 --------------------------------------------------------------------------------------
--   [Getting ND/FD Building Access](building_access.html)
 
 
 [Vertical Slice Test](Vertical_Slice_Test.html)
@@ -126,7 +126,6 @@ Useful Tidbits of Information.
 
 [DAQ](DAQ.html)
 --------------------------------------------------------------------------------------------------
--   [Getting a DAQ Account](https://sbnsoftware.github.io/sbn_online_wiki/Getting_a_DAQ_account.html)
 
 [SBND Assembly Master Document](SBND_Assembly_Master_Document.html)
 -------------------------------------------------------------------------------------------------------------------------------------
