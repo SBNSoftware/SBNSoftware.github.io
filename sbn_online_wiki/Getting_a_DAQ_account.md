@@ -1,3 +1,8 @@
+---
+layout: page
+title: Getting a SBND DAQ account
+---
+
 ------------------------------
 Getting an account for the SBND DAQ servers (at ND or DAB teststand)
 -----------------------------
