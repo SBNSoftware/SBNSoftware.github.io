@@ -1,3 +1,8 @@
+---
+layout: page
+title: ND and FD Building Access Instructions
+---
+
 ------------------------------
 ND and FD Building Access Instructions
 -----------------------------
