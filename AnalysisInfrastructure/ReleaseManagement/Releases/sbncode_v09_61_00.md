@@ -26,8 +26,7 @@ A weekly release of sbncode (v09_61_00)  has been cut and distributed.
 * sbncode (v09_61_00):
   Using:
   * larsoft             v09_61_00
-  * sbnobj              v09_14_11
-    * lardataobj        v09_12_00  
+  
   * sbndata             v01_04
   * larcv2              v2_1_0 
 
