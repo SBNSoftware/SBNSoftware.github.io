@@ -11,6 +11,7 @@ These are the releases tagged until now:
   
 | Version        |      Notes                       |      Detailed Notes                          
 |----------------|----------------------------------|--------------------------------------------
+|`v09_62_00`     | 'sbncode/sbnana' weekly release  |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_62_00)
 |`v09_61_00_01`     | 'sbncode' patch release         |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_61_00_01)
 |`v09_61_00`     | 'sbncode' weekly release         |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_61_00)
 |`v09_60_01`     | 'sbncode' weekly release         |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_60_01)
