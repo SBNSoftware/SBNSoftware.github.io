@@ -3,7 +3,7 @@
 | Name | Lead developers | Documentation | Documentation Complete |
 | ---- | -------------- | ------------- | ---------------------- |
 | CRT  | A.Aduszkiewicz, E.Yandel | [CAEN DT5702](CRT/CAEN_DT5702_readout.md) | ? |
-| PMT  | A.Scarpelli, D. Rivera, W. Badgett    |               |                        |
+| PMT  | D. Rivera, W. Badgett    |               |                        |
 | TPC  |                |               |                        |
 | ICARUS trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
 | SBND trigger |  J. Sensenig|               |                        |
