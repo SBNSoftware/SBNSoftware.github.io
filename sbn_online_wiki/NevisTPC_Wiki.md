@@ -74,7 +74,7 @@ to test tpc running.)
 * Always useful to check the DAQ status - status.sh . Status should be in stopped stage. Sometimes, previous run don't end up in clean way that leaves DAQInterface in configure state.
 * Start run in another terminal -  ./run
 
-**Running TPCs in push mode configuration**
+**Running TPCs in push and pull mode configuration**
 ========================================================================================================================
 Before we look into how to run TPCs in push and pull mode, its important that we know what are these configurations-
 * Push mode: When boardreader sends data fragments to EVB as soon as they arrive.
