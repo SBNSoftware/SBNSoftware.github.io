@@ -156,7 +156,7 @@ mrb i -j8
 #mrb uc && mrbsetenv && mrb i -j8
 mrbslp
 ```
-*Note:* If using a shared user account, create a symbolic link to ${MRB_TOP}/srcs/sbndaq/<cluster name>/DAQInterface in the ${MRB_TOP} directory.
+*Note:* If using a shared user account, create a symbolic link to ```${MRB_TOP}/srcs/sbndaq/<cluster_name>/DAQInterface``` in the ```${MRB_TOP}``` directory.
 ```bash
 export cluster_name=sbn-fd #use sbn-fd for Icarus, sbn-nd for SBND, or dab for DO/DAB
 ln -s ${MRB_TOP}/srcs/sbndaq/${cluster_name}/DAQInterface ${MRB_TOP}/
