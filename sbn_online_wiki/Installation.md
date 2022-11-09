@@ -70,6 +70,14 @@ cd <your_working_area>
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 ```
+*Important:* If using a shared user account create a working area in the ```${HOME}/DAQ_DevAreas``` directory.
+```bash
+export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%d%b%Y")_${USER}
+mkdir -p ${your_working_area}
+cd ${your_working_area}
+mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
+source localProducts_*/setup
+````
 
 3. Pull down the necessary repositories using mrb like so:
 ```bash
