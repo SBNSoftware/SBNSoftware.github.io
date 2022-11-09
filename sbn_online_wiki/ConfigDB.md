@@ -69,3 +69,11 @@ to make a configuration active again.
 To mark all 'older' versions of configurations inactive (generally a good idea), you can issue the command:
 
 `markOlderConfigsInactive.py`.
+
+Note that you can also use `conftool.py updateConfigurationFlags <config_name>` for marking configurations as _active_ or _inactive_.
+```bash
+source ~/DAQ_ProdAreas/DAQ_SHIFTER_CURRENT/DAQInterface/setup_daqinterface.sh
+configdb_make_work_dir
+echo "flag_inactive:true" > flags.fcl #or echo "flag_inactive:false" > flags.fcl
+conftool.py updateConfigurationFlags <config_name>
+```
