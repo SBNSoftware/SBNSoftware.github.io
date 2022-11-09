@@ -24,7 +24,11 @@ As a basic description, here's a step-by-step guide for making a new configurati
 
 To see the full list of configurations, you can do
 
-`conftool.py getListOfAvailableRunConfigurations | head -50`
+`conftool.py getListOfAvailableRunConfigurations`,
+
+or to see the list of active configurations, you can do
+
+`conftool.py getListOfAvailableRunConfigurationsSubtractMasked $ARTDAQ_DATABASE_CONFDIR/inactive.fcl`.
 
 Then, find one that you want to use as a base (generally recent working ones). Note you don't need to list the version number at the end if you want the default, which is the most recent/latest version. Then, issue the command:
 
