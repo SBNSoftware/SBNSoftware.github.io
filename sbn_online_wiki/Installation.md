@@ -70,7 +70,7 @@ cd <your_working_area>
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 ```
-*Important:* If using a shared user account create a working area in the ```${HOME}/DAQ_DevAreas``` directory.
+*Important:* If using a shared user account, create a working area in the ```${HOME}/DAQ_DevAreas``` directory.
 ```bash
 export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%d%b%Y")_${USER}
 mkdir -p ${your_working_area}
@@ -155,6 +155,11 @@ mrb i -j8
 #run only if prompted by mrb
 #mrb uc && mrbsetenv && mrb i -j8
 mrbslp
+```
+*Note:* If using a shared user account, create a symbolic link to ${MRB_TOP}/srcs/sbndaq/<cluster name>/DAQInterface in the ${MRB_TOP} directory.
+```bash
+export cluster_name=sbn-fd #use sbn-fd for Icarus, sbn-nd for SBND, or dab for DO/DAB
+ln -s ${MRB_TOP}/srcs/sbndaq/${cluster_name}/DAQInterface ${MRB_TOP}/
 ```
 
 ### How to update your development area when a new release is available
