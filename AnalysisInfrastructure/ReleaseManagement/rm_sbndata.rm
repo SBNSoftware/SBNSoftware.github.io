@@ -1,0 +1,13 @@
+---
+layout: page
+title:  Release Management sbndata Instructions
+toc: true
+---
+
+## sbndata general info
+
+This package is designed to contain external data needed for SBN. 
+It is versioned with tags and released as ups product available from /cvmfs/sbn.opensciencegrid.org/products/sbn
+It is not   
+
+## Release management
