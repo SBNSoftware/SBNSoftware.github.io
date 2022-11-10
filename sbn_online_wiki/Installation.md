@@ -72,7 +72,8 @@ source localProducts_*/setup
 ```
 *Important:* If using a shared user account, create a working area in the ```${HOME}/DAQ_DevAreas``` directory.
 ```bash
-export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%d%b%Y")_${USER}
+export your_initials=FNL
+export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%d%b%Y")_${your_initials}
 mkdir -p ${your_working_area}
 cd ${your_working_area}
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
