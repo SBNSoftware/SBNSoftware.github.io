@@ -29,6 +29,7 @@ A new production release SBN2022B of sbncode (v09_63_00)  has been cut and distr
   * sbnobj  v09_15_00
     * lardataobj v09_13_01
   * sbnanaobj v09_20_00 
+  * cetmodules		v3_20_00
   
   Includes:
   * SBNSoftware/sbncode Update to cetmodules #304
@@ -46,7 +47,7 @@ Extra info
 ---------------------------------------------------
  This is a production release using v09_63_00 tag in ups and SBN2022B in GitHub.
  
- In this a migration to use cetmodules has been introduced.
+ In this release a migration to use cetmodules has been introduced.
   More info: https://indico.fnal.gov/event/53302
   
  Note also the braking change introduce in LArSoft:
