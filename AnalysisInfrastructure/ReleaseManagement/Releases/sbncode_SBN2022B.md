@@ -24,6 +24,7 @@ New features
 A new production release SBN2022B of sbncode (v09_63_00)  has been cut and distributed
 
 * sbncode (v09_63_00 in ups / SBN2022B in GitHub):
+  
   Using:
   * larsoft v09_63_00 
   * sbnobj  v09_15_00
