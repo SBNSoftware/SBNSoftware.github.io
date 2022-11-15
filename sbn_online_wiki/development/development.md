@@ -13,7 +13,7 @@ toc_title:
   - possibly the race condition does not occur in the debug mode
 
 
-### Debugging session on Nov 15
+### Debugging session on Nov 15, 2022
 Actions:
   - re-enabled debug trace messages
   - added trace messages to monitor the occupancy of the Circular Buffer
