@@ -42,7 +42,7 @@ Observations:
 
 ## Trigger:
   - issue with starting trigger improved by changing version of trigger vi
-  - Unclear reason why run 9093 has some files with no stream in their name. More information needed. Is there anything different about Event Builders 21 and 26? The boot file name is saved in run_records.
+  - Unclear reason why run 9093 has some files with no stream in their name. More information needed. Is there anything different about Event Builders 21 and 26? The boot file name is saved in run_records. --> The reason could be that in configuration "Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_00002" the line "physics.my_output_modules: [ testOutput, rootNetOutput ]" in EventBuilder21.fcl and EventBuilder26.fcl is not commented
 
 ## Very long time to start and to stop the DAQ
   - A potential reason might be that the boardreaders start to produce fragments before the run starts, and don't necessarily stop to produce fragments when the run stops.
