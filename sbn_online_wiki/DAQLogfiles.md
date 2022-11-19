@@ -30,6 +30,8 @@ Dispatcher logs are saved in a similar way.
 
 Additional artdaq logfiles from each machine are stored in a directory with a bit confusing name `/daq/log/pmt` including both files marked with timestamps, and symlinks which include the run numbers.
 
+PMT logs include FragmentWatcher messages.
+
 ### DAQInterface
 A single file with logs from DAQInterface is in: `/daq/log/DAQInterface_partition1.log`. This is a file to check if a run crashes before starts. It also includes timestamps of run start and stop.
 
