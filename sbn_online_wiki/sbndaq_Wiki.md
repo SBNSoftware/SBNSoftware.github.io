@@ -1,15 +1,3 @@
----
-layout: page
-title: SBN DAQ Software Wiki
-###subtitle: Specific Wiki for SBNDAQ
-description: Wiki documentation for SBNDAQ
-hero_height: is-small
-toc: true
-toc_title: SBNDAQ Contents
----
-
-
-
 Developing in sbndaq
 ----------------------------------------------
 
