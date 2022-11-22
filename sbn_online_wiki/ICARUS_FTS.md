@@ -62,6 +62,10 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
     - runManualFTSFileCleanup.sh runs in icarus crontab twice a day to try to do this faster --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh
  - Monitoring page:
    https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
+   - Files declared → declared to SAM (not yet transferred)
+   - Data transferred → data FTS knows it moved
+   - In progress will show new, pending (for transfer), waiting for tape (what it sounds like)
+   - “Failures” usually due to waiting for tape for more than 4 days
    
 # Troubleshooting
 
