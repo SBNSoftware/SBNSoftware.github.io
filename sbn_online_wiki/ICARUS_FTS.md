@@ -60,6 +60,18 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
   - However, for extra safety we wait until we have a confirmed location on tape
     - FTS will do this check, but sometimes lookup to SAM DB can be particularly slow
     - runManualFTSFileCleanup.sh runs in icarus crontab twice a day to try to do this faster --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh
+ - Monitoring page:
+   https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
+   
+# Troubleshooting
+
+- Usually we notice problems if /data starts getting full
+  - Check if Xporter or FTS logs have errors. 
+  - For example:
+    -  Xporter → usually can’t make metadata, e.g. can’t connect to RunHistory DB or weird file name
+    -  FTS → usually has problem with metadata or CRL certificates need refresh: metadata keys and some values, like data_tier and data_stream, must be registered in SAM → talk to offline production! For certificates: systemctl status fetch-crl-cron ... if dead,needs restart (as root). Can also run by hand: fetch-crl
+   -  Talk to offline!
+      -  Maybe some massive problem with tape ... if files don’t get locations on tape, then they won’t be removed from online cluster
 
 # References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
