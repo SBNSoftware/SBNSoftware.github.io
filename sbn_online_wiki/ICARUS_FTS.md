@@ -15,7 +15,7 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
   a. Looks for files (by name) and matching JSON file
   b. Declares file to SAM
   c. Copies file to tape-backed dCache area
-- Files removed when verified tape location
+- Files are removed from Online cluster when verified tape location
 
 # Xporter
 
@@ -24,6 +24,9 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
   - Perhaps it's not wise to have two processes writing to the same log file?
 - The ongoing xporter process will drift in and out of D state as it runs. I think this is normal. I think that one should not assume if you see the process in D state that it is dead.
 - Xporter needs to communicate with both UconDB DB (postgres) and MongoDB to run
+- What Xporter does:
+  a. First moves the files
+  b. Then tries to make metadata and write to JSON file --> needs RunHistory DB to grab configuration name/information, looks into root file for number of events, parses   the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
 
 # References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
