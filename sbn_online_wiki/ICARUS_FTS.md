@@ -27,6 +27,28 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
 - What Xporter does:
   a. First moves the files
   b. Then tries to make metadata and write to JSON file --> needs RunHistory DB to grab configuration name/information, looks into root file for number of events, parses   the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
+  
+- Example of metadata file:
+  {
+  "file_size": 5850482,
+  "file_name": "data_dl7_fstrmOffBeamBNBMAJORITY_run9093_1_20221109T204532.root",
+  "file_type": "data", "file_format": "artroot",
+  "data_tier": "raw",
+  "sbn_dm.detector": "sbn_fd",
+  "data_stream": "offbeambnbmajority",
+  "runs": [[9093, "physics"]],
+  "sbn_dm.file_year": 2022, "sbn_dm.file_month": 11, "sbn_dm.file_day": 10, "checksum":
+  ["enstore:3856015800"],
+  "icarus_project.version": "v1_04_00",
+  "icarus_project.name": "icarus_daq_v1_04_00",
+  "configuration.name":
+  "Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_00002",
+  "icarus_project.stage": "daq", "sbn_dm.beam_type": "BNB", "sbn_dm.event_count":0
+  }
+  
+# File Transfer System
+
+- Link:https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
 
 # References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
