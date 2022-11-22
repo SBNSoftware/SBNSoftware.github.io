@@ -66,8 +66,7 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
 # Troubleshooting
 
 - Usually we notice problems if /data starts getting full
-  - Check if Xporter or FTS logs have errors. 
-  - For example:
+  - Check if Xporter or FTS logs have errors. For example:
     -  Xporter → usually can’t make metadata, e.g. can’t connect to RunHistory DB or weird file name
     -  FTS → usually has problem with metadata or CRL certificates need refresh: metadata keys and some values, like data_tier and data_stream, must be registered in SAM → talk to offline production! For certificates: systemctl status fetch-crl-cron ... if dead,needs restart (as root). Can also run by hand: fetch-crl
    -  Talk to offline!
