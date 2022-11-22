@@ -54,6 +54,13 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
 - FTS_config has setup/start/stop/restart scripts --> https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/FTS_config
 - Run as icarusraw user
 - Linked to offline production certificates
+- Logs for all online DM are located in /daq/logs/fts_logs
+- File deletion:
+  ● Files are safe once they are transferred to dCache
+    ○ Marked as ‘precious’ so they will not be rejected from Pool if Pool is full
+  ● However, for extra safety we wait until we have a confirmed location on tape
+    ○ FTS will do this check, but sometimes lookup to SAM DB can be particularly slow
+    ○ runManualFTSFileCleanup.sh runs in icarus crontab twice a day to try to do this faster --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh
 
 # References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
