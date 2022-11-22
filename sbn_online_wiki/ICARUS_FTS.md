@@ -48,7 +48,7 @@ FTS is a process managed by the Online Data Managment processes. The Online Data
   
 # File Transfer System
 
-- Link:https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
+- Link: https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
 - FTS is setup to look for files + metadata file in a “dropbox”, and then transfer them according to rules in configuration files. Configs for ICARUS --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/FTS_config/icarus-evb_fts_config.ini
 - It runs as a daemon → don’t need to put in crontab
 - FTS_config has setup/start/stop/restart scripts --> https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/FTS_config
