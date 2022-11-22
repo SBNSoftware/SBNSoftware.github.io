@@ -1,6 +1,22 @@
 Sep 2022
 The document summarizes various discussions during the last weeks. It needs to be turned into a proper documentation.
 
+# Online Data Management
+FTS is a process managed by the Online Data Managment processes. The Online Data Management manages the files created by the DAQ, creates metadata for files that will later be processed by the offline and transfers those files off of the DAQ cluster.
+
+# What happens to files
+- EventBuilder writes file to /data/daq area
+- When closed, file is renamed
+- Xporter.py process kicks in (icarus user): 
+  a. Looks for completed files (by name) in /data/daq
+  b. Moves file from /data/daq to /data/fts_dropbox
+  c. Generates JSON metadata file in /data/fts_dropbox
+- FTS process process kicks in (icarusraw user):
+  a. Looks for files (by name) and matching JSON file
+  b. Declares file to SAM
+  c. Copies file to tape-backed dCache area
+- Files removed when verified tape location
+
 # Xporter
 
 - There is a cron job that runs the xporter process. That cron job starts a new one job every minute.
