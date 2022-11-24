@@ -89,6 +89,9 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
    - Data transferred → data FTS knows it moved
    - In progress will show new, pending (for transfer), waiting for tape (what it sounds like)
    - “Failures” usually due to waiting for tape for more than 4 days
+
+![FTS-monitor](https://user-images.githubusercontent.com/97683442/203768219-08770cdd-10c4-4ef2-aa1b-4b509261e9ca.JPG)
+
    
 # Troubleshooting
 
