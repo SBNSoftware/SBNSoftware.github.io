@@ -27,14 +27,14 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 # What happens to files
 - EventBuilder writes file to /data/daq area
 - When closed, file is renamed
-- Xporter.py process kicks in (icarus user): 
-  a. Looks for completed files (by name) in /data/daq
-  b. Moves file from /data/daq to /data/fts_dropbox
-  c. Generates JSON metadata file in /data/fts_dropbox
+- Xporter.py process kicks in (icarus user):
+  - Looks for completed files (by name) in /data/daq
+  - Moves file from /data/daq to /data/fts_dropbox
+  - Generates JSON metadata file in /data/fts_dropbox
 - FTS process process kicks in (icarusraw user):
-  a. Looks for files (by name) and matching JSON file
-  b. Declares file to SAM
-  c. Copies file to tape-backed dCache area
+  - Looks for files (by name) and matching JSON file
+  - Declares file to SAM
+  - Copies file to tape-backed dCache area
 - Files are removed from Online cluster when verified tape location
 
 
