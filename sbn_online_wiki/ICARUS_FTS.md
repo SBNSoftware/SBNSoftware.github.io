@@ -33,7 +33,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
   - Generates JSON metadata file in /data/fts_dropbox
 - FTS process process kicks in (icarusraw user):
   - Looks for files (by name) and matching JSON file
-  - Declares file to SAM
+  - Declares file to SAM (Serial Access to Metadata)
   - Copies file to tape-backed dCache area
 - Files are removed from Online cluster when verified tape location
 
@@ -49,7 +49,9 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 - Xporter needs to communicate with both UconDB DB (postgres) and MongoDB to run
 - What Xporter does:
   - First moves the files
-  - Then tries to make metadata and write to JSON file --> needs RunHistory DB to grab configuration name/information, looks into root file for number of events, parses   the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
+  - Then tries to make metadata and write to JSON file: 
+    - [offline_run_history.py](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/offline_run_history.py) queries RunHistory DB to grab configuration name/information
+    - [X_SAM_metadata.py](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/X_SAM_metadata.py) looks into root file for number of events, parses the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
   
 - Example of metadata file:
   {
