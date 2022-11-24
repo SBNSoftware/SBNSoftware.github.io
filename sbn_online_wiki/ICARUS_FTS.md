@@ -48,8 +48,8 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 - The ongoing xporter process will drift in and out of D state as it runs. I think this is normal. I think that one should not assume if you see the process in D state that it is dead.
 - Xporter needs to communicate with both UconDB DB (postgres) and MongoDB to run
 - What Xporter does:
-  a. First moves the files
-  b. Then tries to make metadata and write to JSON file --> needs RunHistory DB to grab configuration name/information, looks into root file for number of events, parses   the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
+  - First moves the files
+  - Then tries to make metadata and write to JSON file --> needs RunHistory DB to grab configuration name/information, looks into root file for number of events, parses   the file name for run number, what data stream (used for file families) and calculates a checksum used for transfers
   
 - Example of metadata file:
   {
