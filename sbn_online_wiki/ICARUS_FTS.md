@@ -14,6 +14,16 @@ https://github.com/SBNSoftware/sbndaq-xporter
 
 ![flow-event-builds-icarus](https://user-images.githubusercontent.com/97683442/203762937-d0f7a3c9-6cb8-4817-9ecc-85bb83b5ea7c.JPG)
 
+About event builders:
+- Output modules is a specialized RootOutput module that clears disk cache --> improve write performance
+- CompressionLevel: 501 → LZ4, compression level 1
+  - Reduces file size factor of ~3-4; final size ~150 MB per event
+- 50 events per file → 7.6 GB files
+  - In the 1-10 GB range preferred for tape storage 
+- Number and location of EventBuilders specified in `boot.txt` configuration file
+- EventBuilders get events ‘round-robin → if n EventBuilders, event j goes to (j%n )th EventBuilder
+- Each icarus-evb server has 23 TB of RAID-backed disk
+  - Across 6 servers, that’s enough for over 900K events, or ~250 hours of data at 1 Hz trigger rate 
 
 # File names
 For example:
