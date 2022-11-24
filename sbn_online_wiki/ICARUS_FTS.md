@@ -35,6 +35,8 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
   c. Copies file to tape-backed dCache area
 - Files are removed from Online cluster when verified tape location
 
+![what-happens-to-files](https://user-images.githubusercontent.com/97683442/203764941-0efa7138-0457-45fc-8b0e-751b9276210e.JPG)
+
 # Xporter
 
 - There is a cron job that runs the xporter process. That cron job starts a new one job every minute.
