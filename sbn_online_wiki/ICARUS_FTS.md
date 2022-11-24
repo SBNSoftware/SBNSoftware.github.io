@@ -2,7 +2,25 @@ Sep 2022
 The document summarizes various discussions during the last weeks. It needs to be turned into a proper documentation.
 
 # Online Data Management
-FTS is a process managed by the Online Data Managment processes. The Online Data Management manages the files created by the DAQ, creates metadata for files that will later be processed by the offline and transfers those files off of the DAQ cluster.
+The File Transfer System (FTS) is managed by the Online Data Managment processes. 
+The Online Data Management:
+- manages the files created by the DAQ
+- creates metadata for files that will later be processed by the offline 
+- transfers those files off of the DAQ cluster.
+
+# Flow of fully-built events in DAQ
+
+![flow-event-builds-icarus](https://user-images.githubusercontent.com/97683442/203762937-d0f7a3c9-6cb8-4817-9ecc-85bb83b5ea7c.JPG)
+
+
+# File names
+For example:
+data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
+- dl --> Data Logger
+- fstrmOffBeamBNBMINBIAS --> file stream name
+- run9093 --> run number
+- 160 --> nth file from this EVB for this run
+- 20221110T113956 --> file open timestamp
 
 # What happens to files
 - EventBuilder writes file to /data/daq area
