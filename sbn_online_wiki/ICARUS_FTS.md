@@ -82,7 +82,7 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
   - Files are safe once they are transferred to dCache (Marked as ‘precious’ so they will not be rejected from Pool if Pool is full)
   - However, for extra safety we wait until we have a confirmed location on tape
     - FTS will do this check, but sometimes lookup to SAM DB can be particularly slow
-    - runManualFTSFileCleanup.sh runs in icarus crontab twice a day to try to do this faster --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh
+    - [runManualFTSFileCleanup.sh](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh) runs in icarus crontab twice a day to try to do this faster
  - Monitoring page:
    https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
    - Files declared → declared to SAM (not yet transferred)
