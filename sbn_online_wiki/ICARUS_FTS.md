@@ -14,7 +14,7 @@ https://github.com/SBNSoftware/sbndaq-xporter
 
 ![flow-event-builds-icarus](https://user-images.githubusercontent.com/97683442/203762937-d0f7a3c9-6cb8-4817-9ecc-85bb83b5ea7c.JPG)
 
-About event builders:
+About Event Builders:
 - Output modules is a specialized RootOutput module that clears disk cache --> improve write performance
 - CompressionLevel: 501 → LZ4, compression level 1
   - Reduces file size factor of ~3-4; final size ~150 MB per event
