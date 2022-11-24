@@ -101,6 +101,7 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
   - Check if Xporter or FTS logs have errors. For example:
     -  Xporter → usually can’t make metadata, e.g. can’t connect to RunHistory DB or weird file name
     -  FTS → usually has problem with metadata or CRL certificates need refresh: metadata keys and some values, like data_tier and data_stream, must be registered in SAM → talk to offline production! For certificates: systemctl status fetch-crl-cron ... if dead,needs restart (as root). Can also run by hand: fetch-crl
+    -  if you need to restart the FTS service, run the following script: ~icarus/FileTransfer/sbndaq-xporter/FTS_config/restart_fts.sh on one of the eventbuilder machines. This should restart the FTS system. 
    -  Talk to offline!
       -  Maybe some massive problem with tape ... if files don’t get locations on tape, then they won’t be removed from online cluster
 
