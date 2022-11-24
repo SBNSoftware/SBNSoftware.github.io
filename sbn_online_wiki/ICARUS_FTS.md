@@ -42,7 +42,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 Repository:
 https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 
-- There is a cron job ([xporter_crontab.ctab](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/xporter_crontab.ctab)) that runs the xporter process. That cron job starts a new one job every minute.
+- There is a cron job [xporter_crontab.ctab](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/xporter_crontab.ctab) that runs the xporter process [runXporter.sh](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runXporter.sh). That cron job starts a new one job every minute.
 - The job should check to see if there is a lock file to see if another one is running. If so, it should say so in the log file, and exit. There are actually two checks for this: one in the runXporter.sh script directly run by cron, and another in the python code itself. Which means ... you can get 'in progress/do not run' messages in the log file while there still is an xporter process running. That's by design.
   - Perhaps it's not wise to have two processes writing to the same log file?
 - The ongoing xporter process will drift in and out of D state as it runs. I think this is normal. I think that one should not assume if you see the process in D state that it is dead.
@@ -72,9 +72,9 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 # File Transfer System
 
 - Link: https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
-- FTS is setup to look for files + metadata file in a “dropbox”, and then transfer them according to rules in configuration files. Configs for ICARUS --> https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/FTS_config/icarus-evb_fts_config.ini
+- FTS is setup to look for files + metadata file in a “dropbox”, and then transfer them according to rules in configuration files. [Configs for ICARUS](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/FTS_config/icarus-evb_fts_config.ini)
 - It runs as a daemon → don’t need to put in crontab
-- FTS_config has setup/start/stop/restart scripts --> https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/FTS_config
+- FTS_config has setup/start/stop/restart [scripts](https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/FTS_config)
 - Run as icarusraw user
 - Linked to offline production certificates
 - Logs for all online DM are located in /daq/logs/fts_logs
