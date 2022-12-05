@@ -20,7 +20,7 @@ detector relevant to the simulation and reconstruction.
 
 -   changes are ultimately tracked by GIT (check the ["log"](https://github.com/SBNSoftware/SBNSoftware.github.io/commits/master))
 -   when updating or adding a setting, always mark the version of [ICARUS LArSoft]([/redmine/projects/](https://github.com/SBNSoftware/icaruscode) it is extracted from
-    -   use a version link: add at the bottom of the page a link definition, and then use the link as `[version]`
+    -   use a version link: add at the bottom of the page a link definition, and then use the link as `_[[version]]_` (renders like: _[[v09_63_00]]_)
     -   if the version you look for is not registered yet, use it anyway and inform the [release manager](Roles_and_people.md#release-management)
 
 
@@ -39,19 +39,14 @@ Timings
 
 ### Code and configuration information
 
--   \[[v08\_19\_01](/redmine/versions/1911){.version}\] ICARUS uses the
-    implementation `detinfo::DetectorClocksStandard` of the detector
-    clocks service provider
--   \[[v08\_19\_01](/redmine/versions/1911){.version}\] its
-    configuration happens in `icarus_detectorclocks` configuration table
-    defined in
-    [source:icaruscode/Utility/detectorclocks\_icarus.fcl](/redmine/projects/icaruscode/repository/entry/icaruscode/Utility/detectorclocks_icarus.fcl){.source}
--   \[[v08\_19\_01](/redmine/versions/1911){.version}\] optical
-    simulation configuration is in `icarus_pmtsimulationalg_standard`
-    ([source:icaruscode/Light/Algorithms/pmtsimulation\_icarus.fcl](/redmine/projects/icaruscode/repository/entry/icaruscode/Light/Algorithms/pmtsimulation_icarus.fcl){.source})
+-   _[[v09_63_00]]_ ICARUS uses the implementation `detinfo::DetectorClocksStandard` of the detector clocks service provider
+-   _[[v09_63_00]]_ its configuration happens in `icarus_detectorclocks` configuration table defined in
+    [`icarusalg/fcl/Services/detectorclocks_icarus.fcl`](https://github.com/SBNSoftware/icarusalg/tree/develop/fcl/Services/detectorclocks_icarus.fcl)
+-   _[[v09_63_00]]_ optical simulation configuration is in `icarus_pmtsimulationalg_standard`
+    ([`icaruscode/PMT/Algorithms/pmtsimulation_icarus.fcl`](https://github.com/SBNSoftware/icaruscode/tree/develop/icaruscode/PMT/Algorithms/pmtsimulation_icarus.fcl))
 
 This is an excerpt of from `icarus_detectorclocks`
-[v08\_19\_01](/redmine/versions/1911){.version}:\
+_[[v08_19_01]]_:
 
     G4RefTime:        -1.15e3  # G4 time [us] where electronics clock counting start
     TriggerOffsetTPC: -0.340e3 # Time offset for TPC readout start time w.r.t. trigger [us]
@@ -469,3 +464,4 @@ This is an excerpt of from `icarus_pmtsimulationalg_standard`
 
 <!-- references -->
 [v08_19_01]: https://github.com/SBNSoftware/icaruscode/tree/v08_19_01
+[v09_63_00]: https://github.com/SBNSoftware/icaruscode/tree/v09_63_00
