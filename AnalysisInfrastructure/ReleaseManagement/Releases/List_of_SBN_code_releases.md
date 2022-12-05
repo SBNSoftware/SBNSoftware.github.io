@@ -10,7 +10,8 @@ List of `sbncode` releases
 These are the releases tagged until now:
   
 | Version        |      Notes                       |      Detailed Notes                          
-|----------------|----------------------------------|--------------------------------------------
+|----------------|----------------------------------|-------------------------------------------- 
+`v09_63_00_02`   | 'sbncode' production patch release           |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_63_00_02)
 `v09_63_00_01`   | 'sbncode' production patch release           |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_63_00_01)
 `SBN2022B`       | 'sbnana' autumn production release           |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbnana_SBN2022B)
 `SBN2022B`       | 'sbncode' autumn production release           |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_SBN2022B)
