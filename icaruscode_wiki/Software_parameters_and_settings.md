@@ -1,33 +1,15 @@
 ---
 layout: page
 title: Software parameters and settings
+description: Settings of icaruscode simulation and reconstruction.
+# menubar: icaruscode_menu
+toc_title: Contents
 ---
 
 
 
 Software parameters and settings
 ====================================================================================
-
--   **Table of contents**
--   [Software parameters and
-    settings]
-    -   -   [How to update this page]
-
-    -   [Detector geometry]
-    -   [Timings]
-        -   [Code and configuration
-            information]
-        -   [Timing overview]
-        -   [Detailed timing explanation]
-    -   [Simulation]
-        -   [Event generation]
-        -   [TPC simulation]
-        -   [Optical simulation]
-            -   [Scintillation]
-            -   [Transportation of scintillation photons to the optical
-                detectors]
-            -   [Optical readout
-                simulation]
 
 This page is an attempt to keep track of the parameters of the ICARUS
 detector relevant to the simulation and reconstruction.
@@ -36,24 +18,17 @@ detector relevant to the simulation and reconstruction.
 
 ### How to update this page
 
--   changes are ultimately tracked by Redmine (check the \"history\"
-    link usually on top right of the page)
--   when updating or adding a setting, always mark the version of
-    [ICARUS LArSoft](/redmine/projects/icaruscode){.project} it is
-    extracted from
-    -   use the `version:` Redmine tag (e.g. `version:v08_19_01` will
-        show as s link: [v08\_19\_01](/redmine/versions/1911){.version})
-    -   if the version you look for is not registered yet, use it anyway
-        and inform the [release
-        manager](Roles_and_people.html#release-management)
+-   changes are ultimately tracked by GIT (check the ["log"](https://github.com/SBNSoftware/SBNSoftware.github.io/commits/master))
+-   when updating or adding a setting, always mark the version of [ICARUS LArSoft]([/redmine/projects/](https://github.com/SBNSoftware/icaruscode) it is extracted from
+    -   use a version link: add at the bottom of the page a link definition, and then use the link as `[version]`
+    -   if the version you look for is not registered yet, use it anyway and inform the [release manager](Roles_and_people.md#release-management)
 
 
 
 Detector geometry
-------------------------------------------------------
+------------------
 
-Detector geometry is described in [its own
-page](Detector_geometry.html).
+Detector geometry is described in [its own page](Detector_geometry.md).
 
 
 
@@ -490,3 +465,7 @@ This is an excerpt of from `icarus_pmtsimulationalg_standard`
     BeamGateTriggerNReps:      10             #Number of beamgate trigger reps to produce
     Saturation:                300            #in number of p.e. to see saturation effects in the signal
     QE:                        0.07           #TPB coated PMT quantum efficiency
+
+
+<!-- references -->
+[v08_19_01]: https://github.com/SBNSoftware/icaruscode/tree/v08_19_01
