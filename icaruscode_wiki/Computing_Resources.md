@@ -418,8 +418,7 @@ We also have some [StashCache storage](computing/stashCache.md).
 ### Tape storage
 
 Tape storage is available to ICARUS.
-
-Uh... er... "good to know?".
+Instructions to store the data are provided in the specific [wiki page](computing/TapeStorage.md).
 
 
 ### File database (SAM)
