@@ -27,6 +27,8 @@ Observations:
 
  - possibly other boardreaders too, but less often – not sure if it's the same issue!
 
+## Loss of PMT boardreaders
+ - Seems to occur at higher trigger rates (e.g. out of spill), e.g. 5_5 configuration crashes each several hours
 
 ## Shared memory problems resulting in OM interruptions with run crashes
   - less issues recently
@@ -43,7 +45,7 @@ Observations:
 ## Trigger
   - issue with starting trigger improved by changing version of trigger vi
   - Unclear reason why run 9093 has some files with no stream in their name. More information needed. Is there anything different about Event Builders 21 and 26? The boot file name is saved in run_records. --> The reason could be that in configuration "Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_00002" the line "physics.my_output_modules: [ testOutput, rootNetOutput ]" in EventBuilder21.fcl and EventBuilder26.fcl is not commented
-  - Automatic starting DAQ when the run starts?
+  - Automatic starting trigger when the run starts? → development started
 
 ## Very long time to start and to stop the DAQ
   - A potential reason might be that the boardreaders start to produce fragments before the run starts, and don't necessarily stop to produce fragments when the run stops.
@@ -53,8 +55,10 @@ Observations:
   - we decided the only file we really need to preserve is /daq/log/DAQInterface_partition1.log . The SLAM group is helping us to arrange it
 
 ## Automatic e-mail/slack notifications in case of DAQ issues requireing prompt attention
+- https://github.com/art-daq/artdaq_mfextensions/blob/develop/mfextensions/Destinations/SMTP_mfPlugin.cc
 
-## Automatic sending of an e-log when the run starts and stops
+## Automatic sending of an e-log message when the run starts and stops
+- C++ ELOG code for reference: https://github.com/art-daq/otsdaq_utilities/tree/develop/otsdaq-utilities/ECLWriter 
 
 ## FTS
 - setup necessary FTS and CRL services start automatically at boot
