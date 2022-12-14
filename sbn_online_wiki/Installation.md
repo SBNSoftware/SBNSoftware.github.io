@@ -37,7 +37,7 @@ source /daq/software/products_dev/setup   #dev area
 ```bash
 ups list -aK+ sbndaq -qe20:s112:prof
 ```
-It's recommended you use the latest available version (this is currently v1_04_00 as of 10/2022) with e20:prof:s112 as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_04_01 as of 12/2022) with e20:prof:s112 as the option. Then, to set up, use:
 ```bash
 setup sbndaq v#_##_## -qe20:prof:s112
 ```
@@ -206,7 +206,7 @@ export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v1_04_00 -q e20:prof:s112
+setup sbndaq v1_04_01 -q e20:prof:s112
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
