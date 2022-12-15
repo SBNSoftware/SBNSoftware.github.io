@@ -81,14 +81,14 @@ if [[ -f "listtotalrawfiles.temp" ]]; then
 fi
 
 # find files with the appropriate run number and stream
-find /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/v1_01_00/icarus_daq_v1_01_00/daq/00/00/${r1}/${r2} -type f -name "data*.root" | awk -Fdata_dl '{print "data_dl"$2}' >& listtotalrawfiles.temp
+find /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/*/icarus_daq_*/daq/00/00/${r1}/${r2} -type f -name "data*.root" | awk -Fdata_dl '{print "data_dl"$2}' >& listtotalrawfiles.temp
 
 # count total available files on tape area
 n_total=`wc -l listtotalrawfiles.temp | awk '{print $1}'`
 
 # check if files online
 for f in `cat listtotalrawfiles.temp`; do 
-	cat /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/v1_01_00/icarus_daq_v1_01_00/daq/00/00/${r1}/${r2}/".(get)(${f})(locality)" | grep ONLINE >> listofonlinefiles.temp; 
+	cat /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/*/icarus_daq_*/daq/00/00/${r1}/${r2}/".(get)(${f})(locality)" | grep ONLINE >> listofonlinefiles.temp; 
 done
 
 # count how many are online
