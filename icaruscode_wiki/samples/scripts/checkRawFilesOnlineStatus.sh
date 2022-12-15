@@ -87,8 +87,11 @@ find /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/*/icarus_daq_*/daq/00/00
 n_total=`wc -l listtotalrawfiles.temp | awk '{print $1}'`
 
 # check if files online
-for f in `cat listtotalrawfiles.temp`; do 
-	cat /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/*/icarus_daq_*/daq/00/00/${r1}/${r2}/".(get)(${f})(locality)" | grep ONLINE >> listofonlinefiles.temp; 
+for f in `cat listtotalrawfiles.temp`; do
+        status=`cat /pnfs/icarus/archive/sbn/sbn_fd/data/raw/${stream}/*/icarus_daq_*/daq/00/00/${r1}/${r2}/".(get)(${f})(locality)" | grep ONLINE`;
+        if [[ $status == *"ONLINE"* ]]; then
+                echo "$f" >> listofonlinefiles.temp;
+        fi
 done
 
 # count how many are online
@@ -99,8 +102,12 @@ if [[ "${stream}" == "*" ]]; then
   stream="all"
 fi
 
+# copy the list of online files
+cp listofonlinefiles.temp run${run}_${stream}_online_files.list
+
 # print result
-echo "Online files for run number: ${run} and stream name: ${stream}: ${n_online} files out of available ${n_total} files"
+echo "Online files for run number: ${run} and stream name: ${stream}: ${n_online} files out of available ${n_total} files. The list of online files can be found in run${run}_${stream}_online_files.list"
+
 
 # clear the temporary output files
 rm listtotalrawfiles.temp
