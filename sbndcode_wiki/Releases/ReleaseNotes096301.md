@@ -40,6 +40,12 @@ Updated dependencies
 - larsoft v09_63_01
 - sbnd_data v1_16_00
 
+Extra info
+---------------------------------------------------
+This tag introduces to breaking changes:
+- Updated CAF structure, produces both a track and a shower for every PFParticle (details in SBNSoftware/sbndcode#293)
+- Refactored PDS reco1 workflow including signal deconvolution is now used by default in the stadard fhicls (details in SBNSoftware/sbndcode#309)
+
 Change List
 ==========================================
 
