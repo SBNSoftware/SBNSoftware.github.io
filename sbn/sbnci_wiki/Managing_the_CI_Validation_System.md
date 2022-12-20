@@ -10,33 +10,19 @@ This page is intended to only be used by people responsible for keeping the CI s
 More information on all these tests are available on other pages. This page is intended to give you the information needed to maintain the CI system. As a system manager, your job is to make sure the CI system remains in working condition and up-to-date. Maintainance can be separated into two catagories:
 integration tests and validation tests. Maintainance topics specific to each of these are covered below.
 
-### Reference version control
-
-A crucial component of the CI system is the version/tag of the code being tested and that of the reference code we are comparing against. While developers are free to choose the branch point of their feature branches, we want to make sure that we only compare against well understood, quality releases. To that end, we only allow users to compare against pre-approved versions of the experiment code. 
-
-Approved reference versions/tags are listed, one per line, in a text file stored in the experiment persistent dCache area. This file is only writeable by users in the `sbnci` Unix group.
-```
-/pnfs/<exp>/persistent/ContinuousIntegration/approved_reference_versions.txt
-```
-
-As CI system manager, your job is not to approve reference versions. That is done by SBN Analysis/AI conveners. Your job is to add support for these versions to the CI system. When a new version is approved, you must
-1. Create integration test reference files with the new version (see "Integration tests" below);
-2. Generate the full set of validation input samples (see "Validation tests" below);
-3. Generate validation reference files for all validation workflows (see "Validation tests" below);
-4. Add the newly approved reference version to `approved_reference_versions.txt` and to the main CI wiki page.
-
-The reference version is specified to the CI system via the trigger command with the `-e` flag and the environmental variable `SBNCI_REF_VERSION`.
-```
--e SBNCI_REF_VERSION=vXX_YY_ZZ
-```
-If this option is not specified, the CI system defaults to the "current" reference tag, usually the most recent integration release.
+**_As ever with the CI system is important to make a large distinction between the integration tests and the full validation suite. The validation runs the integration tests as the first stage but they have their own references, inputs, approaches etc etc_**
 
 
 ### Integration tests
 
-Integration tests consist of build, unit, install, and regression tests. They are run everytime something is pushed to develop or someone wants to test a branch/PR. We currently run a suite of 8 unit tests and 13 regression tests. 
+Integration tests consist of build, unit, install, and regression tests. We currently run a suite of 8 unit tests and 13 regression tests. There are 3 main scenarios they are run in:
+- They are run everytime something is pushed to develop
+- They are run via use of a github comment on every PR before merging.
+- The CI manager / release manager will run them as a manual command to test something particular.
 
-If you're managing the CI system then it is your job to monitor the output of these tests. Depending on where you see warnings/failures then there are different things you need to do
+
+
+If you're managing the CI system then it is your job to monitor the output of these tests. Depending on where you see warnings/failures then there are different things you need to do.
 
 ##### build / install
 If you see failures in either of these stages then someone is testing code that doesn't compile. The logs are usually fairly self explanatory in this scenario. If this is a test of the develop branch then you should speak to the release manager right away. If this is against a PR then you and the release manager need to ensure that the PR is updated to fix these issues before it is merged.
@@ -61,12 +47,33 @@ trigger --build-delay 0 --force-platform slf7 --workflow Update_ref_files_<exp c
 ```
 where `<exp code>` = `SBNDCODE` or `ICARUSCODE`
 
-Remember you need a valid proxy to launch a trigger and its important not to update the references until the release manager and PR-maker are happy the changes are sensible.
+Remember you need a valid proxy to launch a trigger and its important not to update the references until the release manager and PR-maker / relevant experts are happy the changes are sensible.
 
 ### Validation tests
 For each reference tag, before any validation tests can be triggered, a corresponding set of art-ROOT input files as well as a set of histograms for each validation metric must be produced. As part of `sbnci` RM, these files will be produced each time the reference version is updated. If the reference version specified by a user has not yet been used, the user will need to generate the files prior to running any validation tests. 
 
 The default reference tag will be updated whenever something has changed upstream from the stage being validated that the inputs should reflect, there is a breaking change, a significant improvment has been made or a new feature is introduced.
+
+#### Reference version control
+
+A crucial component of the CI system is the version/tag of the code being tested and that of the reference code we are comparing against. While developers are free to choose the branch point of their feature branches, we want to make sure that we only compare against well understood, quality releases. To that end, we only allow users to compare against pre-approved versions of the experiment code. 
+
+Approved reference versions/tags are listed, one per line, in a text file stored in the experiment persistent dCache area. This file is only writeable by users in the `sbnci` Unix group.
+```
+/pnfs/<exp>/persistent/ContinuousIntegration/approved_reference_versions.txt
+```
+
+As CI system manager, your job is not to approve reference versions. That is done by SBN Analysis/AI conveners. Your job is to add support for these versions to the CI system. When a new version is approved, you must
+1. Create integration test reference files with the new version (see "Integration tests" below);
+2. Generate the full set of validation input samples (see "Validation tests" below);
+3. Generate validation reference files for all validation workflows (see "Validation tests" below);
+4. Add the newly approved reference version to `approved_reference_versions.txt` and to the main CI wiki page.
+
+The reference version is specified to the CI system via the trigger command with the `-e` flag and the environmental variable `SBNCI_REF_VERSION`.
+```
+-e SBNCI_REF_VERSION=vXX_YY_ZZ
+```
+If this option is not specified, the CI system defaults to the "current" reference tag, usually the most recent integration release.
 
 ##### Input Samples
 Validation input samples are stored in the experiment specific persistent dCache areas. Samples from simulation or reconstruction stages of interest for various reference versions of the experiment code. 
