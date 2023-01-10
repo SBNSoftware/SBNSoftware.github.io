@@ -3,8 +3,8 @@
 | Name | Lead developers | Documentation | Documentation Complete |
 | ---- | -------------- | ------------- | ---------------------- |
 | CRT  | A.Aduszkiewicz, E.Yandel | [CAEN DT5702](CRT/CAEN_DT5702_readout.md) | ? |
-| PMT  | D. Rivera, W. Badgett    |               |                        |
-| TPC  |                |               |                        |
+| PMT  | M. Vicenzi, D. Rivera, W. Badgett    |               |                        |
+| TPC  | H. Hausner               |               |                        |
 | ICARUS trigger | J.Zettlemoyer, D.Torretta, W.Ketchum |               |                        |
 | SBND trigger |  J. Sensenig|               |                        |
 | WR   | D.Torretta, W.Badgett | [White Rabbit Timing System](WR/WhiteRabbit.md) |                        |
