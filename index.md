@@ -48,6 +48,7 @@ See below for helpful links:
 
 ## Operations ##
 * [ICARUS Operations](Operations/SBN_FD/index)
+* [SBND Operations](Operations/SBN_ND/index)
 
 ## SBN Young Guide ##
 * [SBN Young Guide](SBNYoung/SBNYoungIndex.md)
