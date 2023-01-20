@@ -1,10 +1,10 @@
 # Welcome to SBN Analysis Infrastructure Group Wiki Page
 
-Coordinators: [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov)
+Coordinators: [Giuseppe Cerati and Steven Gardiner](mailto:cerati@fnal.gov,gardiner@fnal.gov)
 
 This group is intended to help enable the SBN Program physics goals by provide robust software and resource support. 
 
-We'll use this wiki page for tracking group goals, progress, and release information. If you have any questions please reachout to the coordinators [Wes Ketchum and Joseph Zennamo](mailto:wketchum@fnal.gov,jaz8600@fnal.gov). 
+We'll use this wiki page for tracking group goals, progress, and release information. If you have any questions please reachout to the coordinators [Giuseppe Cerati and Steven Gardiner](mailto:cerati@fnal.gov,gardiner@fnal.gov). 
 
 **If you are looking to get started quickly check out our [Getting Started Page](gettingstarted.md)!**
 
@@ -29,7 +29,7 @@ Meetings: Wednesdays, 9:00 CT
 
 ### [Production and Data Management](https://sbnsoftware.github.io/sbn/sbnprod_wiki/Wiki)
 
-Conveners: [Mateus F. Carneiro and Maya Wospakrik](mailto:sbn-mc-prod@fnal.gov)
+Conveners: [Mateus F. Carneiro and Ivan Caro Terrazas](mailto:sbn-mc-prod@fnal.gov)
 
 <!-- Work with SCD & SBN to maintain production & data-management schemes -->
 
