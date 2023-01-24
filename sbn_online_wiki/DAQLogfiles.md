@@ -35,6 +35,8 @@ PMT logs include FragmentWatcher messages.
 ### DAQInterface
 A single file with logs from DAQInterface is in: `/daq/log/DAQInterface_partition1.log`. This is a file to check if a run crashes before starts. It also includes timestamps of run start and stop.
 
+The file is backed up. In order to access the backup, one should file a ticket. In case of emergency one could request SLAM be paged.
+
 ### File Transfer Service
 
 Logs for Xporter, FTS and File Cleanup are stored in `/daq/log/fts_logs`.
