@@ -1,4 +1,3 @@
-<b><u>A-frame Setup</u></b>
 # A-frame Setup
 A-frame mounted with 7 CRT modules (0.96m x 2.73m) placed horizontally and vertically in coincidence for the purposes of module/FEB characterisation using cosmic ray muons. Characterisation tests involve measuring the ADC distribution from SiPMs for MIP muons passing through several modules in coincidence.
 
@@ -11,10 +10,10 @@ DAQ ----> 92 --2ns--> 73 --10ns--> 75 --6ns--> 76 --8ns--> 72 --6ns--> 71 --8ns-
 
 The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whereas the T<sub>0</sub> and T<sub>1</sub> chain terminates at 82.
 
-<b><u>Working Directory</u></b>
+#Working Directory
 
-ssh into evb04, then run the crtnoise_launchdaq.sh script to set up A-frame working directory (DAQ_DevAreas/DAQ_23Sep2022CRTNoise/srcs/sbndaq/sbn-nd/DAQInterface) where the DAQInterface is run. The crt config file is crt01.fcl.
+ssh into evb04, then run the `crtnoise_launchdaq.sh` script to set up A-frame working directory (`DAQ_DevAreas/DAQ_23Sep2022CRTNoise/srcs/sbndaq/sbn-nd/DAQInterface`) where the `DAQInterface` is run. The crt config file is `crt01.fcl`.
 
 Remember to turn on the voltage for the modules before taking the run of data. [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=24720&filename=SBND_CRT_Power_Supplies_Operation.pdf&version=1) explain how to turn on the voltage. The current setup for A-frame is channel 9.  
 
-Raw data is stored in /daq/scratch/crtbeamoffdata/. Analysis scripts are in /home/nfs/sbnd/Aframe, with each run's analysed root file in the runs folder, all of which analysed using the analyze_event.fcl file.
+Raw data is stored in `/daq/scratch/crtbeamoffdata/`. Analysis scripts are in `/home/nfs/sbnd/Aframe`, with each run's analysed root file in the runs folder, all of which analysed using the `analyze_event.fcl` file.
