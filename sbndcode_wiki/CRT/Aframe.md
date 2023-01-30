@@ -21,4 +21,7 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
 
 - Please fill in the [run logs](https://docs.google.com/document/d/1q-qUrJCBgM7efkzxSDImp_Q4yCbnfjuymjgMClU22Zc/edit) whe taking data. 
 
+- Grafana for CRT monitor: 
+  - [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=28335&filename=Grafana%20Tutorial.pdf&version=1) include all details about the CRT monitor grafana page. 
+
 
