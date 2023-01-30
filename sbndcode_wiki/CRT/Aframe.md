@@ -16,4 +16,6 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
 
 - Remember to turn on the voltage for the modules before taking the run of data. [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=24720&filename=SBND_CRT_Power_Supplies_Operation.pdf&version=1) explain how to turn on the voltage. The current setup for A-frame is channel 9.  
 
+- Please fill in the [run logs](https://docs.google.com/document/d/1q-qUrJCBgM7efkzxSDImp_Q4yCbnfjuymjgMClU22Zc/edit) whe taking data. 
+
 - Raw data is stored in `/daq/scratch/crtbeamoffdata/`. Analysis scripts are in `/home/nfs/sbnd/Aframe`, with each run's analysed root file in the runs folder, all of which analysed using the `analyze_event.fcl` file.
