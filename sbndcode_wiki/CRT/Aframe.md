@@ -15,4 +15,6 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
 
 ssh into evb04, then run the crtnoise_launchdaq.sh script to set up A-frame working directory (DAQ_DevAreas/DAQ_23Sep2022CRTNoise/srcs/sbndaq/sbn-nd/DAQInterface) where the DAQInterface is run. The crt config file is crt01.fcl.
 
+Remember to turn on the voltage for the modules before taking the run of data. [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=24720&filename=SBND_CRT_Power_Supplies_Operation.pdf&version=1) explain how to turn on the voltage. 
+
 Raw data is stored in /daq/scratch/crtbeamoffdata/. Analysis scripts are in /home/nfs/sbnd/Aframe, with each run's analysed root file in the runs folder, all of which analysed using the analyze_event.fcl file.
