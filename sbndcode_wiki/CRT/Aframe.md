@@ -1,5 +1,5 @@
 <b><u>A-frame Setup</u></b>
-
+# A-frame Setup
 A-frame mounted with 7 CRT modules (0.96m x 2.73m) placed horizontally and vertically in coincidence for the purposes of module/FEB characterisation using cosmic ray muons. Characterisation tests involve measuring the ADC distribution from SiPMs for MIP muons passing through several modules in coincidence.
 
 ![image](https://user-images.githubusercontent.com/74778773/213795237-d53fb05a-e550-49a3-9da4-1f4d4470836f.png)
