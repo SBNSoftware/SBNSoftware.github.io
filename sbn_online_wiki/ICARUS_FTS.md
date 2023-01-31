@@ -36,7 +36,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 
 # What happens to files
 - EventBuilder writes file to /data/daq area
-- When closed, file is renamed
+- When closed, file is renamed according to the naming convention described above
 - Xporter.py process kicks in (icarus user):
   - Looks for completed files (by name) in /data/daq
   - Moves file from /data/daq to /data/fts_dropbox
@@ -114,6 +114,28 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
     -  if you need to restart the FTS service, run the following script: ~icarus/FileTransfer/sbndaq-xporter/FTS_config/restart_fts.sh on one of the eventbuilder machines. This should restart the FTS system. 
    -  Talk to offline!
       -  Maybe some massive problem with tape ... if files don’t get locations on tape, then they won’t be removed from online cluster
+
+# Monitoring
+## grafana
+The following page provides overview of FTS from all Event Builder Machines:
+https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-30d&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
+
+## FTS status
+Tunnel required:
+
+```ssh -KL 8787:localhost:8787 icarus@icarus-evb01.fnal.gov -J icarus@icarus-gateway01.fnal.gov```
+
+http://localhost:8787/fts/status
+
+More details for a single EVB, in particular status of individual files.
+
+## Pool Manager
+
+Requires VPN, or web browser certificate
+
+https://fndca.fnal.gov:22880/pools/list/PoolManager
+
+Provides information on status of the usage of the IcarusReadWritePools space.
 
 # References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
