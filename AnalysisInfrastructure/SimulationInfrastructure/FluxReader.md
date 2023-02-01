@@ -30,6 +30,7 @@ will run FluxReader with 10 input gSimple files listed in `gsimple_flux_configH-
 `run_fluxreader_sbnd` runs the following:
 - `FluxReader` (art::Source): reads each neutrino in the gSimple file, creates MCTruth, MCFlux (and Dk2Nu and NuChoice) dataproducts and places them in an art::Event
 - `FluxGeoFilter` (art::Filter): filters events based on the neutrino position. It moves along the neutrino direction, and only keeps events if the neutrino intersects at least one of the specified volumes. The default volume is `volTPCActive`.
+- `FluxReaderAne` (art::Analyzer): analyzer that creates an output TTree with all neutrinos hitting a customizable area. Currenlty set to the SBND front face.
 
 If you'd like to run with the BooNE files as input, use
 ```bash
