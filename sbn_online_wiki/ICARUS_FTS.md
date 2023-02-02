@@ -1,5 +1,9 @@
-Sep 2022
-The document summarizes various discussions during the last weeks. It needs to be turned into a proper documentation.
+---
+layout: page
+title: Online Data Managment in ICARUS
+hero_height: is-medium
+toc: true
+---
 
 # Online Data Management
 The File Transfer System (FTS) is managed by the Online Data Managment processes. 
@@ -10,7 +14,7 @@ The Online Data Management:
 The Online Data Management script are in the following repository:
 https://github.com/SBNSoftware/sbndaq-xporter
 
-# Flow of fully-built events in DAQ
+## Flow of fully-built events in DAQ
 
 ![flow-event-builds-icarus](https://user-images.githubusercontent.com/97683442/203762937-d0f7a3c9-6cb8-4817-9ecc-85bb83b5ea7c.JPG)
 
@@ -25,7 +29,7 @@ About Event Builders:
 - Each icarus-evb server has 23 TB of RAID-backed disk
   - Across 6 servers, that’s enough for over 900K events, or ~250 hours of data at 1 Hz trigger rate 
 
-# File names
+## File names
 For example:
 data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 - dl --> Data Logger
@@ -34,7 +38,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 - 160 --> nth file from this EVB for this run
 - 20221110T113956 --> file open timestamp
 
-# What happens to files
+## What happens to files
 - EventBuilder writes file to /data/daq area
 - When closed, file is renamed according to the naming convention described above
 - Xporter.py process kicks in (icarus user):
@@ -127,7 +131,7 @@ Tunnel required:
 
 http://localhost:8787/fts/status
 
-More details for a single EVB, in particular status of individual files.
+Provides more details for a single EVB, in particular status of individual files. It also allows to attempt to clear errors with "retry" buttons.
 
 ## Pool Manager
 
