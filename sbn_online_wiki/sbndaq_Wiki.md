@@ -4,7 +4,7 @@ Developing in sbndaq
 * [Setup Instructions](Installation)
 * [Release instructions for online-related software](ReleaseInstructions)
 * [Development Model](DevModel)
-* [2023 Git branch cleanup](2023BranchCleanup)
+* [2023 Git branch cleanup](2023BranchCleanup.md)
 
 
 sbndaq components and services
