@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Online Data Managment in ICARUS
+title: Online Data Management in ICARUS
 hero_height: is-medium
 toc: true
 ---
