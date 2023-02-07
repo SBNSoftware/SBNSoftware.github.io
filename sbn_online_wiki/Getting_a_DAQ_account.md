@@ -25,7 +25,7 @@ Getting an account for the SBND DAQ servers (at ND or DAB teststand)
 
 ![image](https://user-images.githubusercontent.com/29582622/198658470-bf358319-f429-485b-9732-b2ead9e6bbed.png)
 
-7. Fill out and submit form
+7. Fill out and submit form.  Choose any SBND server in the server selection option.
 
 ![image](https://user-images.githubusercontent.com/29582622/198659288-29c7f765-fc67-4e28-a3e4-21ca76d76fd3.png)
 
