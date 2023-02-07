@@ -13,3 +13,10 @@ We have presently over 150 branches in sbndaq-artdaq and not much less in sbndaq
 
 ## sbndaq-artdaq-core
  - feature/aaduszki_TRACE_bugfix – merged, can be deleted
+
+# hhausner
+## sbndaq-artdaq
+ - hhausner_tpcSkew — merged, can be deleted
+
+## sbndaq-artdaq-core
+ - hhausner_compressedTPCFragment — developement of compressed TPC fragments. Do not delete
