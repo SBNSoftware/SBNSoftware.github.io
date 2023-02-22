@@ -23,6 +23,5 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
 
 - Grafana for CRT monitor: 
   - [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=28335&filename=Grafana%20Tutorial.pdf&version=1) include all details about the CRT monitor grafana page. 
-
-  -Leave a terminal open where you do ```ssh -KL localhost:10089:localhost:10080 sbnd@sbnd-gateway01.fnal.gov 'ssh -KL localhost:10080:localhost:10080 sbnd@sbnd-evb04.fnal.gov'```
+  - Leave a terminal open where you do ```ssh -KL localhost:10089:localhost:10080 sbnd@sbnd-gateway01.fnal.gov 'ssh -KL localhost:10080:localhost:10080 sbnd@sbnd-evb04.fnal.gov'```
   - Then go to localhost:10089/ in your web browser
