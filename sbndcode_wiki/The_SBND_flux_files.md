@@ -199,6 +199,6 @@ as in the current design. Otherwise, it uses an identical window setup to Config
 ### ConfigJ-v1
 
 Files were produced using BooNEtoGSimple. 
-The flux file now includes a variables called vtx that stores hadron time of flight and neutrino time of flight from production to flux window.
+The flux file now includes a variables called vtx that stores kaon time of flight and neutrino time of flight from production to flux window.
 Check [sbndcode PR #??]() and sbn-docdb#?? for more details. 
 Otherwise, it uses an identical window setup to ConfigH-v1.
