@@ -199,7 +199,7 @@ as in the current design. Otherwise, it uses an identical window setup to Config
 ### ConfigJ-v1
 
 Files were produced using BooNEtoGSimple. 
-The flux file now includes a variable called vtx that stores kaon time of flight and neutrino time of flight from production to flux window.
+The flux file now includes a variable called vtxt that stores kaon and neutrino time of flight from production to flux window.
 Need to enable AddGenieVtxTime parameter to calculate neutrino time during generation stage.
 Check [sbndcode PR #320]() and sbn-docdb#30136 for more details. 
 Otherwise, it uses an identical window setup to ConfigH-v1.
