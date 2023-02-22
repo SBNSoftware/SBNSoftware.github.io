@@ -195,3 +195,10 @@ Files were produced using BooNEtoGSimple. The centre of the window has
 been changed from `(X, Y) = (45.7, 0) cm` to `(X, Y) = (-73.78, 0) cm`,
 as in the current design. Otherwise, it uses an identical window setup to ConfigG-v1.
 
+
+### ConfigJ-v1
+
+Files were produced using BooNEtoGSimple. 
+The flux file now includes a variables called vtx that stores hadron time of flight and neutrino time of flight from production to flux window.
+Check [sbndcode PR #??]() and sbn-docdb#?? for more details. 
+Otherwise, it uses an identical window setup to ConfigH-v1.
