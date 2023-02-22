@@ -80,7 +80,7 @@ mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 ````
 
-3. Pull down the necessary repositories using mrb like so:
+3. Pull down the necessary repositories using mrb. Note, the dashes in the repository name need to be replaced with underscores, e.g. `sbndaq-artdaq-core` should be typed as `sbndaq_artdaq_core`:
 ```bash
 cd $MRB_SOURCE
 mrb g <repo_name_with_underscore>
