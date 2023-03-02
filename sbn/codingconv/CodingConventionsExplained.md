@@ -544,7 +544,6 @@ wrong results.
   is **encouraged**.
 
 
-
 ##  [CF] Language features  ################################################
 
 C++ is now a relatively fast-paced standard, adding both language features
@@ -1354,7 +1353,36 @@ consideration.
   interface to manage it with it staying sorted).
 
 
+##  [CT] Libraries and tools  ##############################################
 
+_Rationale_: libraries evolve fast and what was best practice may become obsolete or detrimental.
+But it often also becomes an acquired pattern that is hard to break.
+Here are some of the current patterns that should be replaced by newer ones.
+  
+[`[CT.001]`](#CT001) <span id="CT001"> **[++]**
+  ROOT itself is providing the classes underlying `geo::Point_t` and `geo::Vector_t` as a replacement of ROOT's `TVector3`.
+  Adopting the new classes is **encouraged**, although it requires some more careful thinking of what the vectors are (displacements or coordinates).
+  Some explanation of the reasons behind this recommendation and a migration guide are provided in [LArSoft wiki](https://larsoft.github.io/LArSoftWiki/Root_vectors).
+
+[`[CT.002]`](#CT002) <span id="CT002"> **[--]**
+  The function `std::pow()` can compute arbitrary powers, but it's sub-optimal when used with integral exponents:
+  its implementation typically uses logarithms, which makes it both slower and less precise.
+  The most common place where it is used is as square function, often to compute 2D or 3D distances:
+  ```cpp
+  double const d = std::sqrt(std::pow(x - R.X(), 2) + std::pow(y - R.Y(), 2) + std::pow(z - R.Z(), 2));
+  ``` 
+  The **encouraged** practice is:
+   * for simple variables, just write the product (e.g. `x*x` or even `x*x*x`)
+   * for more complicate expressions, _cetlib_ provides `cet::square()`, `cet::cube()` and `std::pow<N>()` (`#include "cetlib/pow.h"`); e.g.
+     `cet::square(x - R.X())`.
+   * for distances, if the algorithm really requires them, use `std::hypot(x - R.X(), y - R.Y(), z - R.Z())` (available also in the 2D version)
+   * if looking for the shortest distance, you can stick to the square of the distance, with again `cetlib/pow.h` to the rescue:
+     ```cpp
+     double const d2 = std::sum_of_squares(x - R.X(), y - R.Y(), z - R.Z());
+     ```
+     Avaialble also a 2D version, and a `cet::diff_of_squares()`.
+  
+  
 ##  [CQ] Quantity types and their units  ###################################
 
 _Rationale_: clarity and predictability are essential when interpreting data
