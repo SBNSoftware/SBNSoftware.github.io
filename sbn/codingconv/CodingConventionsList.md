@@ -575,6 +575,19 @@ consideration.
   (i.e. constraints on the data members) to be preserved, `struct` otherwise.
 
 
+##  [CT] Libraries and tools  ##############################################
+
+_Rationale_: libraries evolve fast and what was best practice may become obsolete or detrimental.
+But it often also becomes an acquired pattern that is hard to break.
+  
+[`[CT.001]`](#CT001) <span id="CT001"> **[++]**
+  Use `geo::Point_t` and `geo::Vector_t` in place of ROOT's `TVector3` for locations and displacements.
+
+[`[CT.002]`](#CT002) <span id="CT002"> **[--]**
+  Avoid using `std::pow()` with integral exponents; use `std::hypot()` or _cetlib_ `cet::pow()` or similar as appropriate.
+  Also avoid taking the square root for distance when not essential.
+
+
 ##  [CQ] Quantity types and their units  ###################################
 
 _Rationale_: clarity and predictability are essential when interpreting data
