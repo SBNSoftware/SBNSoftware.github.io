@@ -21,7 +21,8 @@ List of `sbndcode` releases
 These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
-  |-----------------------------|---------------------------------------------|--------------------------------------------
+  |-----------------------------|---------------------------------------------|-------------------------------------------- 
+  |`v09_69_00`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes096900.html)
   |`v09_67_00`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes096700.html)
   |`v09_66_02`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes096602.html)
   |`v09_66_00`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes096600.html)
