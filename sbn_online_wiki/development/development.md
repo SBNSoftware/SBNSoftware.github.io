@@ -29,6 +29,8 @@ Observations:
 
 ## Loss of PMT boardreaders
  - Seems to occur at higher trigger rates (e.g. out of spill), e.g. 5_5 configuration crashes each several hours
+ - New code waiting for validation (Spring 2023)
+ - New CAEN libraries waiting for validation (Spring 2023)
 
 ## Shared memory problems resulting in OM interruptions with run crashes
   - less issues recently
@@ -52,7 +54,8 @@ Observations:
 
 ## Managing the logfiles
   - during the summer/fall of 2022 the size of the logfiles was greatly reduced
-  - we decided the only file we really need to preserve is /daq/log/DAQInterface_partition1.log . The SLAM group is helping us to arrange it
+  - we decided the only file we really need to preserve is /daq/log/DAQInterface_partition1.log . The SLAM group is helping us to arrange it [done early 2023]
+  - still needed: increasing debug level of some of the trigger messages
 
 ## Automatic e-mail/slack notifications in case of DAQ issues requireing prompt attention
 - https://github.com/art-daq/artdaq_mfextensions/blob/develop/mfextensions/Destinations/SMTP_mfPlugin.cc
