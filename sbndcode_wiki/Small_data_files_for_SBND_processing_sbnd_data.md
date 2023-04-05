@@ -226,7 +226,7 @@ For CVMFS, the [generic SBND CVMFS update
 instructions](Write_files_to_CVMFS.html) work well. An
 update of `sbnd_data` (that typically comes with a `sbndcode` update)
 deserves a new major version number for tag (CVMFS tags grow faster than
-the code in this scheme).
+the code in this scheme). For the deployment on CVMFS, contact the SBND release manager.
 
 The deployment on `/grid` is still TODO.
 
