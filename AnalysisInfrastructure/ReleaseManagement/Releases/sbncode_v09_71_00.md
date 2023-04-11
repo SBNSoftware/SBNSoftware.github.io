@@ -21,9 +21,9 @@ Purpose
 
 New features
 ---------------------------------------------------
-A new test release sbncode (v09_71_00)  has been cut and distributed
+A new weekly release sbncode (v09_71_00)  has been cut and distributed
 
-* sbncode (v09_69_01_01):
+* sbncode (v09_71_00):
   
   Using:
   * larsoft                 v09_71_00
