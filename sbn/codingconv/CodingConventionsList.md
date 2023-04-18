@@ -510,6 +510,8 @@ There are well known patterns that prevent unnecessary copies.
 
 [`[CF.112]`](#CF112) <span id="CF112"> **[+++]**
   Declare function arguments of large non-trivial types as constant references.
+  Conversely, arguments of fundamental data types and small trivial data types should always be passed by value.
+
 
 [`[CF.113]`](#CF113) <span id="CF113"> **[+]**
   Consider, as pattern for initialization of large data members from
