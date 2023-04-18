@@ -1042,6 +1042,10 @@ There are well known patterns that prevent unnecessary copies.
   will be always copied when calling that method, while in the good one
   it will not be copied by the method call (the method implementation
   may still copy it though).
+  
+  Conversely, fundamental data types (e.g. `int`, `double`) and small data structures
+  (e.g. `std::complex<double>`) should always be passed by value, as the reference
+  overhead is larger than the copy one.
 
 [`[CF.113]`](#CF113) <span id="CF113"> **[+]**
   The **suggested** pattern for initialization of large data member from
