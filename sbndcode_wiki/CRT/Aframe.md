@@ -12,7 +12,7 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
   
 
 # Working directory
-- ssh into evb04 with `ssh sbnd-evb04`, then run the `ana_launchdaq.sh` script to set up A-frame working directory (`DAQ_DevAreas/DAQ_23Sep2022CRTNoise/srcs/sbndaq/sbn-nd/DAQInterface`) where the `DAQInterface` is run. The crt config file is `crt01.fcl`.
+- ssh into evb04 with `ssh sbnd-evb04`, then run the `crt_Aframe_launchdaq.sh` script to set up A-frame working directory (`DAQ_DevAreas/DAQ_23Sep2022CRTNoise/srcs/sbndaq/sbn-nd/DAQInterface`) where the `DAQInterface` is run. The crt config file is `crt01.fcl`.
 
 - Raw data is stored in `/daq/scratch/crt_Aframe_data/`. Analysis scripts are in `/home/nfs/sbnd/Aframe`, with each run's analysed root file in the runs folder, all of which analysed using the `analyze_event.fcl` file.
 
@@ -25,3 +25,6 @@ The T<sub>in</sub> and T<sub>out</sub> daisy-chain loops back from 82 to 92, whe
   - [These slides](https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=28335&filename=Grafana%20Tutorial.pdf&version=1) include all details about the CRT monitor grafana page. 
   - Leave a terminal open where you do ```ssh -KL localhost:10089:localhost:10080 sbnd@sbnd-gateway01.fnal.gov 'ssh -KL localhost:10080:localhost:10080 sbnd@sbnd-evb04.fnal.gov'```
   - Then go to localhost:10089/ in your web browser
+
+# Analyse directory 
+- ssh into evb04 with `ssh sbnd-evb04`, then run the `ana_launchdaq.sh` script to set up A-frame analysing directory (`DAQ_DevAreas/DAQ_24Sep2022ANA/srcs/`). 
