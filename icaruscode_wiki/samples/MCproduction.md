@@ -14,6 +14,7 @@ The instructions to request a new sample can be found in the [SBN production wik
 
 Samples are currently tracked on a database in the form of a [spreadsheet][MCDB].
 Samples produced October 2020 and earlier were tracked in [ICARUS wiki](https://cdcvs.fnal.gov/redmine/projects/icarus-production/wiki/Status_of_MC_Production).
+Current official available samples can be found at the [SBN Production Available Samples Page](/sbn/sbnprod_wiki/sample)
 
 The SBN Analysis Infrastructure group is attempting to keep a list of
 ["standard" configurations used in the SBN production campaigns](https://sbnsoftware.github.io/AnalysisInfrastructure/WorkflowManagement/workflow_icarus.html)
