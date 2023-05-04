@@ -37,3 +37,6 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
   *Why does everyone speak in code?!*
 - [Using the Grid](Grid_Intro.md)  
   *How to submit jobs to the FNAL grid computing system*
+ - [Particle gun and analyzer modules](particle_gun_tut.md)  
+  *Writing a simple fcl to produce particles and how to analyze the output using larsoft files*
+ 
