@@ -367,15 +367,4 @@ You should now have `MyAnalyzer.root` in your `data` directory. Nice work! Now, 
 ![VSCode2](Images/vscode2.png)
 ![VSCode3](Images/vscode3.png)
 
-5 - Running MyAnalyzer
------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-![Alt text](Images/coords.png)
 
