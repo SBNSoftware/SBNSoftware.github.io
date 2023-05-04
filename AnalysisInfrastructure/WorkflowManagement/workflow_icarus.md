@@ -31,3 +31,10 @@ cafmakerjob_icarus_sce.fcl
 [MC 2021C](https://docs.google.com/document/d/1UMmff2LUnRtIpgy0_eE9D3eDw96UkuXCTBCGbWVzWak/edit?usp=sharing)
 
 [MC 2022A](https://docs.google.com/document/d/1EFz33A7__IzkY4XKpeUjXJ8WGGc5CGkVRHFha2wqDlc/edit?usp=sharing)
+
+<details><summary>MC 2023A</summary>
+standard_g4_icarus_sce.fcl<br>
+detsim_2d_icarus.fcl<br>
+stage0_run2_icarus_mc.fcl<br>
+stage1_run2_icarus_MC.fcl<br>
+</details>
