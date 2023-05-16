@@ -104,6 +104,34 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| NuMI Dirt + Cosmic | MC2023A | v09_72_00_03 | 211500 | reco2 |  icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_stage1 |
+| --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_calibtuple |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_flatcaf |
+| NuMI Intime Cosmic | MC2023A | v09_72_00_03 | 200375 | reco2 | icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_stage1 |
+| --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_calibtuple |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_flatcaf |
+| NuMI Neutrino MC Phase 1 | MC2023A | v09_72_00_03 | 586890 | reco2 | icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_stage1 |
+| --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_calibtuple |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_flatcaf |
+| ICARUS BNB Mini Production intime cosmics | MC2023A | v09_72_00_01 | 90093 | reco2 |  icaruspro_2023A_ICARUS_BNB_cosmics_reco2 |
+| --- | --- | --- | --- | calibtuple | icaruspro_hists_2023A_ICARUS_BNB_cosmics_reco2 |
+| --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_BNB_cosmics_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_2023A_ICARUS_BNB_cosmics_flatcaf | 
+| ICARUS BNB Mini Production | MC2023A | v09_69_01 | 94980 | reco2 |  icaruspro_2023A_ICARUS_BNB_cosmics_reco2 |
+| --- | --- | --- | --- | calibtuple | icaruspro_hists_2023A_ICARUS_BNB_cosmics_reco2 |
+| --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
+| --- | --- | --- | --- | flatcaf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
+| NuMI Neutrino Mini Production | MC2023A | v09_68_00_01 | 74600 | reco2 | icaruspro_2023A_ICARUS_NuMI_MC_stage1_2023Mar10 |
+| --- | --- | --- | --- | calibtuples | icaruspro_2023A_ICARUS_NuMI_MC_caf_2023Mar10 |
+| --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_NuMI_MC_caf_2023Mar10 |
+| --- | --- | --- | --- | flatcaf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
+| NuMI in-time cosmics w/Overburden | MC2022A | v09_37_02_04 | 809054 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_reco2 |
+| --- | --- | --- | --- | calibtuples |  IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_calibtuples |
+| --- | --- | --- | --- | caf | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_07_caf |
+| --- | --- | --- | --- | flatcaf | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_07_flatcaf |
 | ICARUS_numi_higgs_M200_th2e-4_KDIF | MC2022A | v09_37_02_05 | 77950 | reco2 | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_reco2 |
 | --- | --- | --- | 77950 | caf | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_caf |
 | --- | --- | --- | 77950 | flatcaf | IcarusProd_2022A_ICARUS_numi_higgs_M200_th2e-4_KDIF_flatcaf |
