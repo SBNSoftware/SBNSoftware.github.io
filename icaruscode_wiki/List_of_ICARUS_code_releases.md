@@ -18,10 +18,9 @@ The army has also filled a [list of dependencies], after the list of releases be
 List of `icaruscode` releases
 ----------------------------------------------------------------------------
 
-[**Transient and temporary release manager**: Tracy
-Usher](mailto:usher@slac.stanford.edu)
+**Release managers**: [Matthew Rosenberg](mailto:matthew.rosenberg@tufts.edu), [Sergey Martynenko](mailto:smartynen@bnl.gov)
 
-These are the `icaruscode` releases tagged until now:
+This is an **outdated** list of the `icaruscode` releases:
 
   Version       | Notes            | Detailed Notes
   ------------- | ---------------- | -----------------------------------------------------------
