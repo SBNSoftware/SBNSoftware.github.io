@@ -29,8 +29,8 @@ Observations:
 
 ## Loss of PMT boardreaders
  - Seems to occur at higher trigger rates (e.g. out of spill), e.g. 5_5 configuration crashes each several hours
- - New code waiting for validation (Spring 2023)
- - New CAEN libraries waiting for validation (Spring 2023)
+ - Failures connected with kernel a3818 messages in `/var/log/messages` and general protection failures
+ - New CAEN libraries and updated code in use since May 11, 2023
 
 ## Shared memory problems resulting in OM interruptions with run crashes
   - less issues recently
@@ -66,3 +66,6 @@ Observations:
 ## FTS
 - setup necessary FTS and CRL services start automatically at boot
 - setup an alarm if the service stops
+
+## Server monitoring
+- setup system resources monitoring with Prometheus, at least on icarus-evb06, and perhaps on other machines too
