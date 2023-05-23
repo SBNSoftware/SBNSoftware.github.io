@@ -71,3 +71,5 @@ Observations:
 - setup system resources monitoring with Prometheus, at least on icarus-evb06, and perhaps on other machines too
 
 ## Cleanup old git branches
+
+## Remove old, unused metrics from grafana
