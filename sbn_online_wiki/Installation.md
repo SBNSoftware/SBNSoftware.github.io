@@ -104,6 +104,7 @@ ups active | grep <repo_name_with_underscore>
 ```
 Repository names are likely one of (or multiples of) these:
 ```
+wibtools
 sbndaq-artdaq-core
 sbndaq-artdaq
 sbndaq
