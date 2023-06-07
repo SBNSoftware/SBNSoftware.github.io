@@ -20,6 +20,19 @@ The spreadsheet contain the configuration files used, the code version, the stat
 
 More information about the workflow can be found at the [SBN Analysis Infrastructure Workflow Management page](../../AnalysisInfrastructure/WorkflowManagement/workflow.md).
 
+How to access the samples
+--------------------------
+
+Our datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should be with `samweb -e sbn` following are some useful examples:
+
+### Definition commands
+checking definition files: `samweb -e sbn list-definition-files {definition}`
+checking number of files and events (for samples with full metadata): `samweb -e sbn list-definition-files {definition} --summary`
+
+### Files commands
+checking metadata: `samweb -e sbn get-metadata {filename}`
+file location: `samweb -e sbn locate-file {filename}`
+
 
 Monte Carlo official SBN Production Samples
 --------------------------
