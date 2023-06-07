@@ -27,10 +27,12 @@ Our datasets are declared to the SBN SAM instance which is acessible to both SBN
 
 ### Definition commands
 checking definition files: `samweb -e sbn list-definition-files {definition}`
+
 checking number of files and events (for samples with full metadata): `samweb -e sbn list-definition-files {definition} --summary`
 
 ### Files commands
 checking metadata: `samweb -e sbn get-metadata {filename}`
+
 file location: `samweb -e sbn locate-file {filename}`
 
 
