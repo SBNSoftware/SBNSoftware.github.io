@@ -23,7 +23,7 @@ More information about the workflow can be found at the [SBN Analysis Infrastruc
 How to access the samples
 --------------------------
 
-Our datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should be with `samweb -e sbn` following are some useful examples:
+Our datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should specify the SBN instance with `samweb -e sbn`, following are some useful commands:
 
 ### Definition commands
 - checking definition files: `samweb -e sbn list-definition-files {definition}`
