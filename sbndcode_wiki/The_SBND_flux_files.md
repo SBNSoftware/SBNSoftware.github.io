@@ -203,3 +203,8 @@ The flux file now includes a variable called vtxt that stores kaon and neutrino 
 Need to enable AddGenieVtxTime parameter to calculate neutrino time during generation stage.
 Check [sbndcode PR #320]() and sbn-docdb#30136 for more details. 
 Otherwise, it uses an identical window setup to ConfigH-v1.
+
+### ConfigK-v1
+
+Files were produced using BooNEtoGSimple on GPVM instead of the legacy MiniBooNE machines. Kaon weight is applied with a stand alone code and does not have MiniBooNE dependency. Check [sbndcode PR #???]() and sbn-docdb#??? for more details. 
+Otherwise, it uses an identical window setup to ConfigJ-v1.
