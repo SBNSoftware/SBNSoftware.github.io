@@ -1,10 +1,12 @@
-SBNSoftware/sbndcode#358
+- SBNSoftware/sbndcode#358
   - Add fcls for wire-cell 2D signal processing
-SBNSoftware/sbndcode#364
+- SBNSoftware/sbndcode#364
   - Updated electronics for "Daphne" flavored XARAPUCAs
   - Updates to detsim and reco1 stages to take into account the new sampling frequency of the latest choice for this subsystem readout, the CAEN v1740 model: https://www.caen.it/products/v1740/.
   - The SER has also been resampled to the latest 16ns binning, from the previous expected from Daphne electronics 80MHz/12.5ns.
+- SBNSoftware/sbndcode#365
+  -  Updates to save waveforms from software metrics
 
-sbncode v09_75_03
-larsoft v09_75_03
-sbnd_data v1_21_00
+- sbncode v09_75_03
+- larsoft v09_75_03
+- sbnd_data v1_21_00
