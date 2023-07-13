@@ -18,7 +18,19 @@
   - Validation can be found on docdc: 32091
 - SBNSoftware/sbndcode#367
   -  Update nu+overlay fhicl for new flux K
-
+- SBNSoftware/sbndcode#369
+  - Don't drop SimEnergyDeposit in standard G4 fhicl
+- SBNSoftware/sbndcode#373
+  - Add TimeTracker in WireCell
+- SBNSoftware/sbndcode#366: **production fhicl+workflow** for the Summer 2023 SBN Analysis Workshop 
+  - Added recombination and diffusion variation fcls
+  - Added reco1 fhicls for WireCell (1D and 2D):
+    - 1D: takes wirecell 2DSIM as input, performs 1D deconvolution
+    - 2D: takes wirecell 2DSIM as input, performs 2D deconvolution  
+  - Added "scrubs" fhils for the new production workflow:
+    - This allows for keeping the identical simulated event on the file and running a variation of the downstream detector simulation / reconstruction. 
+ 
+    
 - sbncode v09_75_03
 - larsoft v09_75_03
 - sbnd_data v1_21_00
