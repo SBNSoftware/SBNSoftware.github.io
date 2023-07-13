@@ -62,21 +62,20 @@ Lnk Model
 
 ## Running the DAQ
 
-The following constains instruction on how to run the DAQ for the 8 V1730SB boards installed in the PMT crate (or PDS R0). A working `sbndaq` installation with the relevant fhicls can be found in the feature branch [feature/fnicolas_pmtv1730](https://github.com/SBNSoftware/sbndaq/tree/feature/fnicolas_pmtv1730).
-
+The following constains instruction on how to run the DAQ for the 8 V1730SB boards installed in the PMT crate (or PDS R0). A working `sbndaq` installation with the relevant fhicls can be found in the feature branch [feature/fnicolas_pmtv1730](https://github.com/SBNSoftware/sbndaq/tree/feature/fnicolas_pmtv1730) (local area in `/home/nfs/sbnd/DAQ_DevAreas/DAQ_23May2023PMTV1730/`).
 Steps for running the DAQ:
 * Login to the gateway: `ssh sbnd@sbnd-gateway01.fnal.gov`
 
-* Login to the event builder machine: ssh sbnd@sbnd-evb02.fnal.gov 
+* Login to one of the event builder machines. E.g `ssh sbnd@sbnd-evb02.fnal.gov `
   * Change `evb02` for the chosen event builder server. Bear in mind you should warn/coordinate with the rest of the people running the DAQ in the same day
 * Setup your local area:
   ```
-  cd DAQ_DevAreas/DAQ_23May2023PMTV1730/srcs/sbndaq/sbn-nd/DAQInterface
+  cd DAQ_DevAreas/DAQ_YOURLOCALAREA/srcs/sbndaq/sbn-nd/DAQInterface
   source setup_daqinterface.sh
   ```
 * Warn rest of the DAQ users about your running plans (spreadsheet or #sbnd_daq@Slack)
 
-* For running the DAQ you will need <ins>two sessions</ins> (recommended using `tmux/screen`). Go to the `sbn-nd/DAQInterface` directory (`cd $DAQINTERFACE_USER_DIR``)
+* For running the DAQ you will need <ins>two sessions</ins> (recommended using `tmux/screen`). Go to the `sbn-nd/DAQInterface` directory (`cd $DAQINTERFACE_USER_DIR`)
     - In the first session, open the DAQ interface: `DAQInterface` 
     - In the second session, source the DAQ run script: `./run`
   
@@ -199,8 +198,163 @@ This section summarises the different files (all in the `sbndaq` repository) you
   ```
 
 
+#### Adding PTB to the setup
+In this subsection we include the relevant fhicl required to use the PTB to provide external random triggers to the CAEN boards.
+* Base PTB fhicl: [configs/standard/ptb01.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/ptb01.fcl)
+* We will be running the PTB in PULL mode. The relevant fhicl for that is: [configs/standard/RunPDSR0/ptb01PMTTriggerPULL.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/RunPDSR0/ptb01PMTTriggerPULL.fcl)
+* The configuration parameters to run the PTB in "external trigger mode" can be found in [ptbmk2_nd_pmt_trigger_1hz.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/RunPDSR0/ptbmk2_nd_pmt_trigger_1hz.fcl)
+  * To change the trigger frequency, modify the `"period":50000000,` in 
+    ```
+    "randomtrigger_1":{
+      "description":"Random trigger that can optionally be set to fire only during beam spill",
+      "enable":true,
+      "fixed_freq":true,
+      "beam_mode":false,
+      "period":50000000,
+      "period_old":3333333,
+      "seed":"0xACE2ACE1",
+      "thresh_lo":"0x00000001",
+      "thresh_hi":"0x000F00FF"
+    },
+    ```
+    It's in 20 ns units, e.g. `"period":50000000` corresponds to 1 Hz.
 
-### Specific setup: running pedestal equalization
+* Add PTB to the [known_boardreaders_list](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/known_boardreaders_list)
+
+  ```
+  ## PTB in trigger mode
+  ptb01PMTTriggerPULL sbnd-ptb01-daq -1 1
+  ```
+
+  and [critical_process_list](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/critical_process_list):
+  ```
+  ptb01PMTTriggerPULL
+  ```
+
+* Edit the `.run` script accordintly to also run PTB, e.g:
+  ```
+  # runs for PDSR0 + PTB providing triggers
+  #setdaqcomps.sh ptb01PMTTriggerPULL pmtx_pdsR0_01 pmtx_pdsR0_02PULL pmtx_pdsR0_03PULL pmtx_pdsR0_04PULL pmtx_pdsR0_05PULL pmtx_pdsR0_06PULL pmtx_pdsR0_07PULL pmtx_pdsR0_08PULL
+  ``````
+
+#### Running pedestal equalization
+
+In this section we describe the setup used to run the baseline equalization for the V1730s. The relevant files can be found in [sbn-nd/DAQInterface/configs/standard/V1730PedestalEqualization](https://github.com/SBNSoftware/sbndaq/tree/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/V1730PedestalEqualization).
+
+- The 8 fhicl files `pmtx_pdsR0_0*_PedestalEqualization.fcl` setup the board reader for each board. They depend on the configuration fhicls defined previosuly ([sbn-nd/DAQInterface/configs/standard/RunPDSR0](https://github.com/SBNSoftware/sbndaq/tree/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/RunPDSR0).).
+
+- 2 additional fhicls are used to set up the pedestal:
+  * [V1730PedestalEqualization/PMTV1730_DCOffset.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/V1730PedestalEqualization/PMTV1730_DCOffset.fcl) defines the DC offset we are going to apply
+    ```
+    ped_equal: {DCoffset: 2621 }
+    ```
+
+  * [V1730PedestalEqualization/PMTV1730_setpedestal.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/V1730PedestalEqualization/PMTV1730_setpedestal.fcl) sets the DC offset defined in the previous fhicl to the 16 channels of the board
+
+    ```
+    #include "PMTV1730_DCOffset.fcl"
+
+    daq.fragment_receiver.channelPedestal0:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal1:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal2:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal3:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal4:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal5:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal6:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal7:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal8:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal9:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal10:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal11:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal12:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal13:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal14:  @local::ped_equal.DCoffset
+    daq.fragment_receiver.channelPedestal15:  @local::ped_equal.DCoffset
+    ```
+* Edit the `.run` script to run the `pmtx_pdsR0_0*_PedestalEqualization.fcl` fhicls:
+    ```
+    # run setup for pedestal equalization + PTB triggers
+    setdaqcomps.sh ptb01PMTTriggerPULL pmtx_pdsR0_01_PedestalEqualization pmtx_pdsR0_02_PedestalEqualization pmtx_pdsR0_03_PedestalEqualization pmtx_pdsR0_04_PedestalEqualization pmtx_pdsR0_05_PedestalEqualization pmtx_pdsR0_06_PedestalEqualization pmtx_pdsR0_07_PedestalEqualization pmtx_pdsR0_08_PedestalEqualization
+    ```
+
+* The pedestal equalization process involves performing short runs of the Data Acquisition (DAQ) system, with each run modifying the DC offset applied to the board channels. This is done using a dedicated "run-sleep-stop" script ([sbn-nd/DAQInterface/run_V1730PedEqualization_DCOffset_scan.sh](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/run_V1730PedEqualization_DCOffset_scan.sh)):
+
+  ```
+  #!/bin/bash
+  # Script to run V1730 pedestal equalization (written by Fran Nicolas @fjnicolas@ugr.es)
+
+  # Define start, end, and step values for the pedestal equalization range
+  fStart=90
+  fEnd=96
+  fStep=2
+
+  # Define data taking period for each DCOffset (in s)
+  fRunTime=60
+
+  # Define max DAC value for the SCOffset
+  fMaxDAC=65535
+
+  # File path to the fhicl with the DCOffset parameter
+  DCOffset_filepath="configs/standard/V1730PedestalEqualization/PMTV1730_DCOffset.fcl"
+
+  # Log file path
+  logfile="./runlog_V1730_pedestalequal.log"
+
+  #for eps in $DACList
+  for ((i=fStart;i<=fEnd;i+=fStep));
+  do
+      c="0.${i}"
+
+      # Clean the file with the DCOffset parameter
+      > "${DCOffset_filepath}"
+          
+      # Calculate the DCOffset
+      DC=$(bc <<< "$fMaxDAC - $c * $fMaxDAC" )
+
+      echo "DCoffset: ${DC}"
+      
+      # Convert to integer
+      DC=${DC/\.*/}
+
+      # Write to file the selected DCOffset
+      echo "ped_equal: {DCoffset: ${DC} }" >> "${DCOffset_filepath}"
+      echo "ped_equal: {DCoffset: ${DC} }"
+
+      # print to log file
+      echo "DCoffset set to ${DC}" >> "${logfile}"
+
+      # start the DAQ
+      date >> "${logfile}"
+      (./run | tee /dev/tty | grep "run") >> ./runlog_V1730_pedestalequal.log
+
+      # take data for certain time
+      sleep "$fRunTime"
+
+      # stop the DAQ
+      ./stop
+    
+      # info about the run to the log file
+      echo "Ending the run...." >>"${logfile}"
+      date >> "${logfile}"
+      echo " " >> "${logfile}"
+  done
+  ```
+
+* The script carries out the following steps:
+
+  * Modifying the DC offset parameter in [V1730PedestalEqualization/PMTV1730_DCOffset.fcl](https://github.com/SBNSoftware/sbndaq/blob/feature/fnicolas_pmtv1730/sbn-nd/DAQInterface/configs/standard/V1730PedestalEqualization/PMTV1730_DCOffset.fcl), which ensures that the modification is inherited by all the configuration fhicls.
+
+  * Initiating the DAQ by executing the standard `.run` script.
+
+  * Collecting data for a specified duration by utilizing the `sleep` command.
+
+  * Stopping the ongoing DAQ run and reconfiguring the board.
+
+* The configuration parameters are:
+  * `fRunTime=60`: define the running time (time) for each of the subruns
+  * The board's DC offset is regulated by a 16-bit Digital-to-Analog Converter (DAC). The extent of the DC offset parameter's scan range is determined by the fStart and fEnd parameters, specified as a percentage relative to the maximum dynamic range. The scan operation progresses in increments defined by the fStep parameter.
+  * The relative path to the fhicl file setting the DC offset value is specified by `DCOffset_filepath`
+  * Output log file is specified in the `logfile` variable
 
 ### Running CAEN wavedump
 
@@ -227,21 +381,50 @@ Cannot disconnect DAQInterface. Recommend running in tmux or screen so it's runn
 
 
 ## Running the online monitoring
-- Critical: we need `artdaq v3_11_02_01` (and artdaq_utilities v1_07_02_01`):
-``setup artdaq v3_11_02_01 -q e20:s112:prof```
-- Need to install sbndqm and sbndaq-online (develop branches work)
-- In sbndaq-online add password (`sbndaq-online/redis-connect/RedisConnection.cc`):
-`fRedisPassword = pset.get<std::string>("password", "B4730D6D9606E3EB37048EB017D4C69EFB56243CCC408E3BEC3BFDEEDF792876");`
-- DQM tutorial: https://cdcvs.fnal.gov/redmine/projects/sbndqm/wiki/Sbndqm_Workshop_April_2023
-- Monitoring webpage: https://sbn-online.fnal.gov/cgi-bin/minargon/minargon.wsgi/PMT
-- Check database directory in sbndqm repository
+This section describe how to setup and launch the online monitoring for the SBND PDS.
 
+- Login to the gateways as `sbnddqm`:
+  ```
+  ssh sbnddqm@sbnd-gateway01.fnal.gov
+  ```
+- Connect to the event builder server in which you will be running the DAQ, e.g.,
+  ```
+  ssh sbnd-evb02
+  ```
+- You will need a local installation of the `sbndqm` and `sbndaq-online` repositories. A working development area can be found in `/home/nfs/sbnddqm/DQM_DevAreas/DQM_04Apr2023/` with the following set of feature branches:
+    - sbndqm: [feature/fnicolas_sbndpmtonline](https://github.com/SBNSoftware/sbndqm/tree/feature/fnicolas_sbndpmtonline)
+    - sbndaq_online: [feature/fnicolas_sbndpmtonline](https://github.com/SBNSoftware/sbndaq-online/tree/feature/fnicolas_sbndpmtonline)
+- Setup script
+  ```
+  export dqmarea=DQM_04Apr2023
+  cd ~/DQM_DevAreas/${dqmarea}
+  source /daq/software/products/setup
+  setup mrb
+  setup artdaq v3_11_02_01 -q e20:s112:prof
+  source ./localProducts*/setup
+  mrbsetenv
+  ```
+- Start the online monitoring by
+  ```
+  source $SBNDQM_DIR/installations/sbn-nd/startDQM_PMTOnly.sh
+  ```
+- Start the DAQ run
+- Have a look to the monitoring webpage: https://sbn-online.fnal.gov/cgi-bin/minargon/minargon.wsgi/PMT
+
+- Relevant files:
+  * Decoder: [sbndqm/Decode/PMT/SBND/DaqDecoderSBNDPMT_module.cc](https://github.com/SBNSoftware/sbndqm/blob/feature/fnicolas_sbndpmtonline/sbndqm/Decode/PMT/SBND/DaqDecoderSBNDPMT_module.cc)
+  * Analyzer: [sbndqm/dqmAnalysis/PMT/SBND/CAENV1730StreamsSBND_module.cc](https://github.com/SBNSoftware/sbndqm/blob/feature/fnicolas_sbndpmtonline/sbndqm/dqmAnalysis/PMT/SBND/CAENV1730StreamsSBND_module.cc)
+  * Start PMT DQM script: [installations/sbn-nd/startDQM_PMTOnly.sh](https://github.com/SBNSoftware/sbndqm/blob/feature/fnicolas_sbndpmtonline/installations/sbn-nd/startDQM_PMTOnly.sh)
+  * Fhicl with the decoder+analyzer workflow for the PMT DQM: [installations/sbn-nd/SBND_OnlineMonitor_PMTOnly.fcl](https://github.com/SBNSoftware/sbndqm/blob/feature/fnicolas_sbndpmtonline/installations/sbn-nd/SBND_OnlineMonitor_PMTOnly.fcl)
+- References/tutorials:
+  - DQM tutorial: https://cdcvs.fnal.gov/redmine/projects/sbndqm/wiki/Sbndqm_Workshop_April_2023
+  - Monitoring webpage: https://sbn-online.fnal.gov/cgi-bin/minargon/minargon.wsgi/PMT
+- Note: workflow only works with `artdaq v3_11_02_01` (and artdaq_utilities v1_07_02_01`):
 
 ## Additional content
-### Instructions to reset the crate
-- Make sure no one is running
+### Instructions to manually reset the crate
 - Log in sbnd-gateway02.fnal.gov
-- telnet sbnd-vme01 8100 (change the name of the crate accordingly)
+- `telnet sbnd-vme01 8100`` (change the name of the crate accordingly)
 -  You should see a message like:
    *  `Connected to sbnd-vme01.fnal.gov (10.226.35.41).`
    *  `Escape character is '^]'.`
@@ -249,11 +432,11 @@ Cannot disconnect DAQInterface. Recommend running in tmux or screen so it's runn
   * More info about this command in: http://pen.phys.virginia.edu/daq/vme/vme8100_usersmanual.pdf
   * Section 8.4 (page 41)
 
-### Change to external clock in the V1730
+### Switch to the internal clock in the V1730
 
 - Ground yourself, unscrew board, take out the board, switch button (red) in the side of the board
 - Program: CAENUpgradeGUI (run in the sbnd-pds* server)
-- Select clock we want to configure. The live in Clock in etc/CAEN…: v1730S_vcxo500_ref50_pll_out62_5.rbf
+- Select clock we want to configure. They live in Clock in etc/CAEN…: v1730S_vcxo500_ref50_pll_out62_5.rbf
 - Select board model: V1730S
 - Change type of link. We are using optical links (OPLINK)
 - Pay attention to the link number we want to upgrade
@@ -266,12 +449,8 @@ Cannot disconnect DAQInterface. Recommend running in tmux or screen so it's runn
 <img width="847" alt="Captura de pantalla 2023-03-23 a las 15 56 53" src="https://user-images.githubusercontent.com/66068208/227358526-c5c34dd2-b642-4fe4-8e37-c0b16f382e04.png">
 
 - We can trigger the V1730s with both NIM and TTL signals. This is control by this [fhicl parameter](https://github.com/SBNSoftware/sbndaq/blob/develop/sbn-nd/DAQInterface/configs/standard/pmt_standard.fcl#L97).
- - All TRG IN, TRG OUT and S IN channels need to receive the same leevel signal. PTB uses TTL; so we need TTL signal fro triggering.
-- V1730 Trigger signal: TTL signal (set to 3.3V)
-- Inout V1730 channels: better use NIM signals
-- Quad fanin-fanout: linear analagos, can use both
-- 429A Logic fan-in/out: only NIM signal
-- Pulse width reducer: only NIM
+  - All TRG IN, TRG OUT and S IN channels need to receive the same leevel signal. PTB uses TTL; so we need TTL signal fro triggering.
+
 
 ### Specifications for the LeCroy logic boards currently installed in the NIM crate:
 - Fast logic module: https://prep.fnal.gov/catalog/hardware_info/lecroy/nim/429a.html
