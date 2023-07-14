@@ -5,7 +5,6 @@ Soft tools for PMT V1730 analysis
 https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbn_online_wiki/Installation.md
 
 ## Running DAQ instructions
-* Log run: https://docs.google.com/spreadsheets/d/12Xh-T75SqMxmXBtwphE0coaSrnYqi3PyNd8eAU_GR_k/edit#gid=0
 * ssh sbnd@sbnd-gateway01.fnal.gov
 * ssh sbnd@sbnd-evb02.fnal.gov (open two terminals)
 * Setup script (`pmtv1730_launchdaq.sh` in home area)
