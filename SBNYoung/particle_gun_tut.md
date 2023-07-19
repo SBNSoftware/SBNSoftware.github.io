@@ -37,7 +37,8 @@ We will edit this `.fcl` file in the next section.
 Using a particle gun is a simple way to simulate a single particle, or multiple particles at a time in the SBND detector (This can be done in ICARUS as well but I've done it here in SBND). Let's look at a particle gun `.fcl` file and see what's going on! Add the following lines to the file `muon_gun.fcl`
 
 ```bash
-#include "prodsingle_sbnd_proj.fcl" #Include .fcl for producing particles
+#Include .fcl for producing particles
+#include "prodsingle_sbnd_proj.fcl" 
 
 physics.producers.generator.PadOutVectors: true  #Duplicates single element vectors to match length of longest vector
 physics.producers.generator.PDG: [13]            #Generate 1 muon
