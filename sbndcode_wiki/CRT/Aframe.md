@@ -1,6 +1,11 @@
 # A-frame setup
 A-frame mounted with 7 CRT modules (0.96m x 2.73m) placed horizontally and vertically in coincidence for the purposes of module/FEB characterisation using cosmic ray muons. Characterisation tests involve measuring the ADC distribution from SiPMs for MIP muons passing through several modules in coincidence.
 
+[Aframe Run Logs](https://docs.google.com/document/d/1q-qUrJCBgM7efkzxSDImp_Q4yCbnfjuymjgMClU22Zc/edit)
+
+[Testing at DAB](https://docs.google.com/document/d/1Htx9mYiMXHm6Pj6ZkBWzZnbM_YtGrnx30TityH13OGM/edit)
+
+
 ![image](https://user-images.githubusercontent.com/74778773/213795237-d53fb05a-e550-49a3-9da4-1f4d4470836f.png)
 Figure 1 - Left: Picture of the A-frame setup in the SBN-ND building. Right: Diagram showing the orientation of CRTs with their FEB number (red arrows) and the daisy-chain connection between each FEB (pink arrows) with their respective cable length converted to ns signal delay.
 
