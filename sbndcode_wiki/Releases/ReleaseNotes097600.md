@@ -1,0 +1,11 @@
+
+- SBNSoftware/sbndcode#377
+  - Edited hitdumper fcl files so muon tracks can be read into them. 
+- SBNSoftware/sbndcode#380
+  - Keep develop up to date with production branch (sbndcode v09_75_03_03)
+  - Includes:
+    - SBNSoftware/sbndcode#375
+    - SBNSoftware/sbndcode#376
+    - SBNSoftware/sbndcode#378
+- larsoft v09_76_00
+- sbncode v09_76_00
