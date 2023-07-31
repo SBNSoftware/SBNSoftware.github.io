@@ -22,6 +22,10 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|-------------------------------------------- 
+  |`v09_76_00`.                 |    Production release SBN-2023-AnaWorkshop  |    [Release Notes](ReleaseNotes097600.html)
+  |`v09_75_03_03`.                 |    Production release SBN-2023-AnaWorkshop  |    [Release Notes](ReleaseNotes09750303.html)
+  |`v09_75_03_02`.                 |    Production release SBN-2023-AnaWorkshop  |    [Release Notes](ReleaseNotes09750302.html)
+  |`v09_75_03_01`.                 |    Production release SBN-2023-AnaWorkshop  |    [Release Notes](ReleaseNotes09750301.html)
   |`v09_75_03`.                 |    Production release SBN-2023-AnaWorkshop  |    [Release Notes](ReleaseNotes097503.html)
   |`v09_75_02`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes097502.html)
   |`v09_75_01`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes097501.html)
