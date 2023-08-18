@@ -49,6 +49,18 @@ mrbsetenv
 mrb i -j8
 ```
 
+Note: sometimes you may need to checkout a particular branch of the various code-base in order to get updates and proper dependencies. When that is the case, replace the `mrb g` commands with something like:
+```
+mrb g sbndqm@feature/update_Aug2023
+mrb g sbndaq_online@feature/update_Aug2023
+mrb g sbndaq_artdaq_core@feature/update_Aug2023
+mrb g sbncode@v09_75_03_02
+mrb g icarusalg@v09_75_03_02
+mrb g icaruscode@v09_75_03_02
+```
+Here, `feature/update_Aug2023` is the name of a branch in the `sbndqm`-related repositories that has needed updates. `v09_75_03_02` is the tag in the other offline repositories that points to the stable release (at those version numbers), in this case for ICARUS. Oftentimes it may be necessary to pull down and rebuild offline code (even if it hasn't changed) in order to get properly updated dependencies: in this case, a dependency on `sbndaq_artdaq_core`. In many cases however, you may only need one branch (like `sbndqm`).
+
+
 To setup a development environment in an online machine (like `icarus-evb01`, `sbn-daq01`):
 ```
 source /daq/software/products/setup
