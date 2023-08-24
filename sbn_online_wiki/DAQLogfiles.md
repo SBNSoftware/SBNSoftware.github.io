@@ -58,6 +58,9 @@ And details of the `/daq/log/pmt`:
 `for x in $(ls /daq/log/pmt | sed 's/[0-9].*//' | uniq); do echo $(du -csh /daq/log/pmt/${x}* |grep total) ${x}; done |sort -h`
 
 #### Removing old logfiles
+Old files are removed automatically with a script:
+`~icarus/FileTransfer/sbndaq-xporter/Xporter/removeOldLogFiles.sh` run with a crontab set up on `icarus-evb06`. In case of emergency, old log files can be removed manually. Example commands are listed below.
+
 The following example command removes all TPC boardreader logs older than 30 days:
 
 `find /daq/log/icarustpc* -ctime +30 -type f -exec rm {} \;`
