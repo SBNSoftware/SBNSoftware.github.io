@@ -17,6 +17,11 @@ When the configuration is no longer used, please move the information to another
 | add  | information |  in  |   this   |  table      |
 
 ### Calibration
+
+| date | responsible | name | bootfile | description |
+| ---- | ----------- | ---- | -------- | ----------- |
+| 14Aug2023  | M. Vicenzi, D. Torretta |  PMTlaser00037  |  boot_MinBias_VeryHighRate_multiple_art_processes.txt   |  Configuration for PMT test runs with laser at 10Hz. Updated from PMTlaser00036 with newer `icaruspmt**.fcl` with latest settings of PMT thresholds and baselines |
+
 ### Testing
 
 ## No longer used configurations
