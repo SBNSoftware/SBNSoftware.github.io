@@ -70,10 +70,11 @@ cd <your_working_area>
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
 source localProducts_*/setup
 ```
-*Important:* If using a shared user account, create a working area in the ```${HOME}/DAQ_DevAreas``` directory.
+*Important:* If using a shared user account, create a working area in the ```${HOME}/DAQ_DevAreas``` directory. When naming the area, please use the pattern `$(date +"DAQ_%Y-%m-%d")_${your_initials}_${purpose}`, e.g. `DAQ_2023-08-29_AA_testing_CRT`.
 ```bash
 export your_initials=FNL
-export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%d%b%Y")_${your_initials}
+purpose=testing_name
+export your_working_area=${HOME}/DAQ_DevAreas/$(date +"DAQ_%Y-%m-%d")_${your_initials}_${purpose}
 mkdir -p ${your_working_area}
 cd ${your_working_area}
 mrb newDev  -q $my_sbndaq_quals -v $my_sbndaq_version
