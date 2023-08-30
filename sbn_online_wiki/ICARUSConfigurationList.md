@@ -21,6 +21,7 @@ When the configuration is no longer used, please move the information to another
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
 | 14Aug2023  | M. Vicenzi, D. Torretta |  PMTlaser00037  |  boot_MinBias_VeryHighRate_multiple_art_processes.txt   |  Configuration for PMT test runs with laser at 10Hz. Updated from PMTlaser00036 with newer `icaruspmt**.fcl` with latest settings of PMT thresholds and baselines |
+| 30Aug2023  | M. Murphy | Calibration_withBottomCRT00003 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Standard bottom CRT calibration. Updated from 00002 to move one of the files referenced by icaruscrtbottom_standard.fcl to a more accessible location. |
 
 ### Testing
 
