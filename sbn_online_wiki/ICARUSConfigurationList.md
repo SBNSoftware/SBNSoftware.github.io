@@ -27,7 +27,7 @@ When the configuration is no longer used, please move the information to another
 ### Testing
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001 PMT_test_clk_TRIGOUT_only_ww00001 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
+| 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001-3 PMT_test_clk_TRIGOUT_only_ww00001-4 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001-3 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
 
 ## No longer used configurations
 ### Physics
