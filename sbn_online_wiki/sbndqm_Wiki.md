@@ -93,7 +93,10 @@ mrb i -j8
 How to start the redis on sbnd-db01:
 
 ssh sbnd-db01
+
 source /software/products/setup
+
+
 source /home/nfs/sbnddqm/start_redis
 
 Release Instructions
