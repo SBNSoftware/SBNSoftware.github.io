@@ -77,6 +77,43 @@ from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and 
 ### Notify and distribute Release notes:
 Send/post release notes (currently email/slack with changes) and let SBND and ICARUS release distributors know.
 
+## sbnana
+(to be documented)
+
+## sbndata
+
+sbndata is a package designed to contain external data needed for SBN. It is also versioned with tags and released as ups product available from /cvmfs/sbn.opensciencegrid.org/products/sbn (so distribution is similar to others). Nevertheless, it is not built (has no architecture) nor mrb handled. 
+As a data product checks are on the developer (analyser) and update (merging) is handled via GitHub pull request. Once ready, merge the update and create a new tag in GitHub.
+### ups product declare and distribution
+In a data directory, clone (or checkout) the updated sbndata, declare the product and distribute it
+
+`cd /sbnd/data/users/mnebot/sbndata/sbndata`
+
+`git clone git@github.com:SBNSoftware/sbndata.git `
+
+`mkdir v01_04`
+
+`mv * ../v01_04/`
+
+`ups declare -0 -z /sbnd/data/users/mnebot/sbndata -r sbndata/v01_04 -m sbndata.table sbndata v01_04`
+
+`tar -cjf sbndata-01.04-noarch.tar.bz2 -C /sbnd/data/users/mnebot/sbndata sbndata/v01_04 sbndata/v01_04.version`
+
+`tar -tf sbndata-01.04-noarch.tar.bz2`
+
+Distribute to scisoft
+
+`perl ../sbnbuild/Jenkins/copyToSciSoft sbndata-01.04-noarch.tar.bz2`
+
+Distribute  to cvmfs
+
+`cvmfs_server transaction sbn.opensciencegrid.org`
+
+`source sbnbuild/CVMFS/install_on_cvmfs_sbndata.sh sbndata-01.04`
+
+`cvmfs_server publish -m "Published sbndata 01.04" -a sbndata.01.04 sbn.opensciencegrid.org`
+
+
 ## Production release
 
  Production release branches are meant to be mantained so, don't close the relase branch when it's created. Use:
