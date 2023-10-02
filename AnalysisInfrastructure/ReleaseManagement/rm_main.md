@@ -47,5 +47,5 @@ And full stack tested before released (Jenkins).
 # Release management for managers
 [Release management instructions](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_instructions)
 
-**Release managment team**: [Miquel Nebot-Guinot, Wes Ketchum, Joseph Zennamo, Patrick Green, Tracy Usher, Sergey Martynenko and Matt Rosenberg](mailto:miquel.nebot@ed.ac.uk,wketchum@fnal.gov,jaz8600@fnal.gov,patrick.green-3@postgrad.manchester.ac.uk,usher@slac.stanford.edu,smartynen@bnl.gov,Matthew.Rosenberg@tufts.edu)
+**Release managment team**: [Miquel Nebot-Guinot, Francisco Javier Nicolás, Tracy Usher, Matt Rosenberg](mailto:miquel.nebot@ed.ac.uk,fjnicolas@ugr.es,usher@slac.stanford.edu,Matthew.Rosenberg@tufts.edu)
 
