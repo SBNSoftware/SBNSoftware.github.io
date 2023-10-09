@@ -10,11 +10,12 @@ The purpose of this page is to collect and archive information of ICARUS DAQ con
 When the configuration is no longer used, please move the information to another table, below
 
 ## Presently used configurations
-### Physics
+### Physics [ as on 10/06/2023 after retiring campaign] 
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| add  | information |  in  |   this   |  table      |
+| 06Oct2023 | DT | Physics_Standard00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_DAQTest00002 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
+| 06Oct2023 | DT | Physics_Adders00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_Adders_Corner_DAQTest00001 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
 
 ### Calibration
 
