@@ -16,6 +16,7 @@ When the configuration is no longer used, please move the information to another
 | ---- | ----------- | ---- | -------- | ----------- |
 | 06Oct2023 | DT | Physics_Standard00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_DAQTest00002 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
 | 06Oct2023 | DT | Physics_Adders00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_Adders_Corner_DAQTest00001 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
+| 09Oct2023 | DT | TriggerTest_MinBias_1Hz_RL75000_noEnable_oct2023_00001 |  boot_Majority_moreEvb.txt | cloned from TriggerTest_MinBias_1Hz_RL75000_noEnable_feb2023_00003 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi; config for MinBias triggers and extended PMT readout window  |
 
 ### Calibration
 
