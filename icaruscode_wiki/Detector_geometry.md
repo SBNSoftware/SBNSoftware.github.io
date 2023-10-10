@@ -321,7 +321,7 @@ a channel number:
 
 (which in `icaruscode` `v09_15_00` it is called `icarus_channelmap.txt`).
 
-ICARUS geometry update was described in SBN-doc-21693-v3 (Apr 2021).
+ICARUS geometry update was described in [SBN DocDB 21693](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=21693) (April 2021).
 
 
 ### Access to the `Geometry` service via Python
