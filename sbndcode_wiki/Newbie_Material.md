@@ -32,8 +32,9 @@ See the [Computing resources](Computing_resources.html) page
 to see a discussion about the computing privileges that SBND has.
 
 To get a Fermilab computing account follow the instructions at [this
-site.](https://fermi.service-now.com/kb_view_customer.do?sysparm_article=KB0010797)
-Our experiment number is T1053
+site.](https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0010797)
+More info are available at [this page](https://get-connected.fnal.gov/accessandbadging/access/).\
+When required, as experiment choose "*SBND: SHORT-BASELINE NEAR DETECTOR*".
 
 **Write down the initial Kerberos and Services Account password before
 submitting**. This will be necessary once your accounts have been
@@ -41,17 +42,24 @@ created.
 
 You will receive an email once this is complete which gives you your
 Fermilab email account and username (you will need this for service
-now).\
-Once your computer is ssh ready and kerberized, you should be able to
-log on by typing:
+now).
 
-```shell
-kinit -f [yourusername]@FNAL.GOV
-ssh -Y [yourusername]@sbndgpvm01.fnal.gov
-```
+In case you already have Fermilab Computing privileges with other experiments
+and need to get SBND Computing privileges request SBND affiliation.\
+On [ServiceNow](https://fermi.servicenowservices.com/wp/) search for
+"**Update my Affiliation/Experiment/Collaboration membership Request**",\
+file in the form, verify that your name and kerberos principal are correct,
+In the *Additional Affiliations* section click on the `Add` button
+and fill the text box with: "*SBND: SHORT-BASELINE NEAR DETECTOR*",
+then click Submit.\
+An SBND representative will review the request and eventually approve it.
 
-Note that you need to have the right configurations, add the following
-to your machine\'s `~/.ssh/config`
+Once you get SBND Computing privileges make your computer is ready to ssh to SBND nodes.\
+Check that have the right ssh configuration, add the following
+to your machine\'s `~/.ssh/config`.\
+Create the file if it\'s not there. In some systems you might need to
+reload the ssh agent. You also want to have this file in the gpvm
+machine.
 
 ```shell
 Host *.fnal.gov
@@ -71,20 +79,19 @@ when logging in to SBND GPVM nodes, they need to add to the above also the line
   XAuthLocation /opt/X11/bin/xauth
 ```
 
-Create the file if it\'s not there. In some systems you might need to
-reload the ssh agent. You also want to have this file in the gpvm
-machine.
+Now you should be able to log on by typing:
 
-If this does not work, please submit a service desk ticket to request a
-SBND project account (I believe someone has to authorise this so it will
-probably fail)\
-[ServiceNow](https://fermi.service-now.com/wp/)-\> **Request
-Something** -\> **Experiment/Project/Collaboration Computing Account**
+```shell
+kinit -f [yourusername]@FNAL.GOV
+ssh -Y [yourusername]@sbndgpvm01.fnal.gov
+```
 
-Enter your name, then select T-1053 (SBND)\
-Verify that the correct Fermilab principal is displayed when you enter
-your name\
-Enter your home institution, then click Submit.
+MacOS users can\'t use kerberos tools from conda environment,
+they need either disable conda environment,
+or use system *kinit* running:
+```shell
+/usr/bin/kinit -f [yourusername]@FNAL.GOV` 
+```
 
 You can reset your Fermilab passwords for service-now
 [here.](https://password-reset.fnal.gov/showLogin.cc)\
