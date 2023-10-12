@@ -111,8 +111,8 @@ type of communication.
 -   Slack is used for day to day communication, particularly useful if
     more than one could answer \--remember SBND collaborators span
     several time zones\-- or if the answer could benefit more people
-    than just you. Once you have a FNAL account sign-in to [SBND
-    Slack](https://sbnd.slack.com/signup) with you FNAL
+    than just you. Once you have a FNAL account sign-in to [SBN
+    Slack](https://shortbaseline.slack.com/signup) with you FNAL
     account.
 
 
