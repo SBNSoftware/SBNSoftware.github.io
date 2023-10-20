@@ -112,7 +112,7 @@ Beam configurations
 
 
 
-### ConfigA-100m-v1
+### ConfigA-100m-v1 (standard)
 
 The baseline length (target to SBND TPC distance) for this configuration
 is 100 m. Additionally, the beam's axis is offset to the SBND origin
@@ -126,14 +126,14 @@ front face.
 
 
 
-### ConfigB-v1
+### ConfigB-v1 (standard)
 
 This configuration copies the settings from ConfigA-100m-v1 but uses a
 110 m baseline.
 
 
 
-### ConfigC-v1
+### ConfigC-v1 (dirt)
 
 This configuration copies the settings from ConfigB-v1 but uses a very
 very large flux window (80 m x 80 m) flux window pressed up against the
@@ -148,7 +148,7 @@ flux rays actually start.
 
 
 
-### ConfigD-v1
+### ConfigD-v1 (standard)
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigB-v1. A new config has been used due to a newer
@@ -156,7 +156,7 @@ flux generation method.
 
 
 
-### ConfigE-v1
+### ConfigE-v1 (dirt)
 
 Files were produced using BooNEtoGSimple. The file uses an identical
 window setup to ConfigC-v1. A new config has been used due to a newer
@@ -164,7 +164,7 @@ flux generation method.
 
 
 
-### ConfigF-v1
+### ConfigF-v1 (standard)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings
@@ -173,7 +173,7 @@ otherwise uses an identical window setup to ConfigD-v1.
 
 
 
-### ConfigG-v1
+### ConfigG-v1 (dirt)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been shifted along X so that it is inline with the engineer drawings
@@ -181,7 +181,7 @@ been shifted along X so that it is inline with the engineer drawings
 otherwise uses an identical window setup to ConfigE-v1.
 
 
-### ConfigH-v1
+### ConfigH-v1 (standard)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been changed from `(X, Y) = (45.7, 0) cm` to `(X, Y) = (-73.78, 0) cm`,
@@ -189,14 +189,14 @@ as in the current design. Check [sbndcode PR #95](https://github.com/SBNSoftware
 for more details. Otherwise, it uses an identical window setup to ConfigF-v1.
 
 
-### ConfigI-v1
+### ConfigI-v1 (dirt)
 
 Files were produced using BooNEtoGSimple. The centre of the window has
 been changed from `(X, Y) = (45.7, 0) cm` to `(X, Y) = (-73.78, 0) cm`,
 as in the current design. Otherwise, it uses an identical window setup to ConfigG-v1.
 
 
-### ConfigJ-v1
+### ConfigJ-v1 (standard)
 
 Files were produced using BooNEtoGSimple. 
 The flux file now includes a variable called vtxt that stores kaon and neutrino time of flight from production to flux window.
@@ -204,7 +204,12 @@ Need to enable AddGenieVtxTime parameter to calculate neutrino time during gener
 Check [sbndcode PR #320]() and sbn-docdb#30136 for more details. 
 Otherwise, it uses an identical window setup to ConfigH-v1.
 
-### ConfigK-v1
+### ConfigK-v1 (standard)
 
 Files were produced using BooNEtoGSimple on GPVM instead of the legacy MiniBooNE machines. Kaon weight is applied with a stand alone code and does not have MiniBooNE dependency. Check [sbndcode PR #363]() and sbn-docdb#32091 for more details. 
 Otherwise, it uses an identical window setup to ConfigJ-v1.
+
+### ConfigL-v1 (dirt) - UNDER VALIDATION, DO NOT USE
+
+Files were produced using BooNEtoGSimple on GPVM instead of the legacy MiniBooNE machines. Kaon weight is applied with a stand alone code and does not have MiniBooNE dependency. Check ? and ? for more details. 
+Otherwise, it uses an identical window setup to ConfigI-v1.
