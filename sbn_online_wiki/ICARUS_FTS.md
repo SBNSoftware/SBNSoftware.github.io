@@ -5,7 +5,7 @@ hero_height: is-medium
 toc: true
 ---
 
-# Online Data Management
+## Online Data Management
 The File Transfer System (FTS) is managed by the Online Data Managment processes. 
 The Online Data Management:
 - manages the files created by the DAQ
@@ -14,7 +14,7 @@ The Online Data Management:
 The Online Data Management script are in the following repository:
 https://github.com/SBNSoftware/sbndaq-xporter
 
-## Flow of fully-built events in DAQ
+### Flow of fully-built events in DAQ
 
 ![flow-event-builds-icarus](https://user-images.githubusercontent.com/97683442/203762937-d0f7a3c9-6cb8-4817-9ecc-85bb83b5ea7c.JPG)
 
@@ -29,7 +29,7 @@ About Event Builders:
 - Each icarus-evb server has 23 TB of RAID-backed disk
   - Across 6 servers, that’s enough for over 900K events, or ~250 hours of data at 1 Hz trigger rate 
 
-## File names
+### File names
 For example:
 data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 - dl --> Data Logger
@@ -38,7 +38,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 - 160 --> nth file from this EVB for this run
 - 20221110T113956 --> file open timestamp
 
-## What happens to files
+### What happens to files
 - EventBuilder writes file to /data/daq area
 - When closed, file is renamed according to the naming convention described above
 - Xporter.py process kicks in (icarus user):
@@ -52,7 +52,7 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 - Files are removed from Online cluster when verified tape location
 
 
-# Xporter
+## Xporter
 Repository:
 https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 
@@ -85,7 +85,7 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
   "icarus_project.stage": "daq", "sbn_dm.beam_type": "BNB", "sbn_dm.event_count":0
   }
   
-# File Transfer System
+## File Transfer System
 
 - Link: https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
 - FTS is setup to look for files + metadata file in a “dropbox”, and then transfer them according to rules in configuration files. [Configs for ICARUS](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/FTS_config/icarus-evb_fts_config.ini)
@@ -109,8 +109,8 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 ![FTS-monitor](https://user-images.githubusercontent.com/97683442/203768219-08770cdd-10c4-4ef2-aa1b-4b509261e9ca.JPG)
 
    
-# Troubleshooting
-
+## Troubleshooting
+### Evb machines disks overfilling
 - Usually we notice problems if /data starts getting full
   - Check if Xporter or FTS logs have errors. For example:
     -  Xporter → usually can’t make metadata, e.g. can’t connect to RunHistory DB or weird file name
@@ -119,12 +119,33 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
    -  Talk to offline!
       -  Maybe some massive problem with tape ... if files don’t get locations on tape, then they won’t be removed from online cluster
 
-# Monitoring
-## grafana
+### Failed transfers
+Occasionally (several times per year), the file transfer fails. This is normally detected by the storage team, who verifies the control sums.
+
+If the corruption is detected soon enough, the file might be still in dropbox on the Evb machine. In such case, it needs to be copied again, manually.
+
+If the original file cannot be found, which is likely to happen during the long calibration periods (e.g. during the beam off season), when the rules to delete local copies are relaxed, the corrupted file can be deleted. When removing with `rm` one must use the following path
+```
+/pnfs/icarus/archive/...
+```
+with `ifdh rm` either of the following paths should work:
+```
+/pnfs/fnal.gov/usr/icarus/archive/...
+/pnfs/icarus/archive/...
+```
+Then, the file needs to be retired from samweb too:
+```
+samweb -e icarus remove-file-location <filename> /pnfs/icarus/archive/<...path...>
+samweb -e icarus retire-file <filename>
+```
+
+
+## Monitoring
+### grafana
 The following page provides overview of FTS from all Event Builder Machines:
 https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-30d&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
 
-## FTS status
+### FTS status
 Tunnel required:
 
 ```ssh -KL 8787:localhost:8787 icarus@icarus-evb01.fnal.gov -J icarus@icarus-gateway01.fnal.gov```
@@ -133,7 +154,7 @@ http://localhost:8787/fts/status
 
 Provides more details for a single EVB, in particular status of individual files. It also allows to attempt to clear errors with "retry" buttons.
 
-## Pool Manager
+### Pool Manager
 
 Requires VPN, or web browser certificate
 
@@ -141,5 +162,5 @@ https://fndca.fnal.gov:22880/pools/list/PoolManager
 
 Provides information on status of the usage of the IcarusReadWritePools space.
 
-# References
+## References
 SBN docdb 27829 (ICARUS data handling observations, Sep 12, 2022)
