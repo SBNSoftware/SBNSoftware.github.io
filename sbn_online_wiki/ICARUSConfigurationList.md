@@ -31,7 +31,8 @@ When the configuration is no longer used, please move the information to another
 ### Testing
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001-3 PMT_test_clk_TRIGOUT_only_ww00001-4 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001-3 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
+| 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001-3 PMT_test_clk_TRIGOUT_only_ww00001-4 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001-3 | boot_PMTlaser.txt | Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
+| 23Oct2023 | M. Vicenzi | Test_PMTbaselines_nom00001 Test_PMTbaselines_m5_00001  Test_PMTbaselines_p5_00001  Test_PMTbaselines_m10_00001  Test_PMTbaselines_p10_00001 Test_PMTbaselines_m20_00001  Test_PMTbaselines_p20_00001 | boot_PMTlaser.txt | Configurations for PMT baseline scans with different DC offsets (+-5%, +-10%, +-20%). |
 
 ## No longer used configurations
 ### Physics
