@@ -35,11 +35,11 @@ source /daq/software/products_dev/setup   #dev area
 ```
 3. Setup the version of sbndaq we are based. To see a list of the different available versions, use
 ```bash
-ups list -aK+ sbndaq -qe20:s112:prof
+ups list -aK+ sbndaq -qe20:s120a:prof
 ```
-It's recommended you use the latest available version (this is currently v1_08_04 as of 10/2023) with e20:prof:s112 as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_08_04 as of 11/2023) with e20:prof:s120a as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe20:prof:s112
+setup sbndaq v#_##_## -qe20:prof:s120a
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
@@ -208,7 +208,7 @@ export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v1_08_04 -q e20:prof:s112
+setup sbndaq v1_08_04 -q e20:prof:s120a
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
