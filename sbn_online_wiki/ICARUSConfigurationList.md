@@ -14,6 +14,7 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
+| 06Nov2023 | AA,DT,AC,MV | Physics_Standard00002 |  boot_Majority_moreEvb.txt | Physics_Standard00001 with added bottom CRT, updated PMT pedestals, updated TPC metric filename, grafana reporting level: 15s  |
 | 06Oct2023 | DT | Physics_Standard00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_DAQTest00002 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
 | 06Oct2023 | DT | Physics_Adders00001 |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_Adders_Corner_DAQTest00001 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
 | 09Oct2023 | DT | TriggerTest_MinBias_1Hz_RL75000_noEnable_oct2023_00001 |  boot_Majority_moreEvb.txt | cloned from TriggerTest_MinBias_1Hz_RL75000_noEnable_feb2023_00003 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi; config for MinBias triggers and extended PMT readout window  |
@@ -22,6 +23,7 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
+| 06Nov2023  | AA,DT,AC,MV |  PMT_Laser_Standard00001  |  boot_MinBias_VeryHighRate_multiple_art_processes.txt   |  PMTlaser00037 with updated PMT pedestals, updated grafana settings, removed dataloggers, cleaned up filename comments |
 | 06Oct2023 | GAL/Antoni ? | Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_DAQTest00002 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | OLD configuration to USE until new artdaq becomes the default |
 | 27Oct2023 | AA | Calibration_MINBIAS_Standard00005 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Updated Calibration_MINBIAS_Standard00004 with missing files for CRT telescope |
 | 8Sep2023 | GAL | Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_GALTest00003 Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_DAQTest00005 Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_DAQTest00004 Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_DAQTest00003 Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_GALTest00002 Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_GALTest00001 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | Configurations for testing new organization of Grafana metric levels |
