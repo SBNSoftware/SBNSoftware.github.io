@@ -18,7 +18,7 @@ SBN, SBND and ICARUS
 
 There are three main volumes that need to be migrated:
 - **app**: Storage will take care of copying the app areas.
-- **dat*a*: Users are required copy over the data areas by themselves.
+- **data**: Users are required copy over the data areas by themselves.
 - **daq**: (SBND only for test stand nodes) Users are required to copy over their data from the daq areas by themselves.
 
 This migration requires downtime. The timeline would be the following:
@@ -42,8 +42,7 @@ NAS volume   | CephFS volume
 /icarus/data |  /exp/icarus/data
 
 The old NAS volumes will be available until they are discontinued (approx May 2024)
-- Other than that the CephFS file system will work the same as the NAS from the users’ perspective. You can find user documentation here:
-https://fifewiki.fnal.gov/wiki/Ceph.
+- Other than that, the CephFS file system will work the same as the NAS from the users’ perspective. You can find user documentation in the [Ceph FIFE wiki page](https://fifewiki.fnal.gov/wiki/Ceph).
 
 More details can be found in slides presented at Oct 31 SBN AI Meeting:
 [Storage migration from NAS to CephFS](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=33502)
