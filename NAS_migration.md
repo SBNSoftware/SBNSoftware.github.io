@@ -1,8 +1,7 @@
 ---
 layout: page
 title: NAS migration to CephFS
-description: Detail on app/data volimes migration
-hero_height: is-medium
+description: Detail on app/data volumes migration
 toc: true
 ---
 
@@ -28,7 +27,8 @@ During this time, the data in the app areas won’t be accessible.
 > NOTE:
 >  - this implies shared accounts, including production accounts icaruspro and sbndpro, that have the home directory in app volume to not be able to login.
 >  - the 8h downtime is probably overestimate, Storage Team want to make sure they have all the time they need for the app volume migration, possibly the downtime will be shorter.
->  - The following day (11/16/23), Storage Team will be available to make sure the migration was completed.
+>  - the following day (11/16/23), Storage Team will be available to make sure the migration was completed.
+>  - migration of data volume users' content can start once the migration is complete.
 
 The new mount points for CephFS will get a "/exp" prefix:
 
@@ -57,7 +57,10 @@ The procedure would look like the following:
 - remove the `build` folder,
 - remove the `localProducts` folder,
 - run `mrb newDev -f ...` with usual options to prepare the MRB development area.\
-Here the option `-f` is to allow to use a non-empty directory, as there will be your existing `srcs` folder.
+Here the option `-f` is needed to allow to use a non-empty directory, as there will be your existing `srcs` folder.
+
+> It is recommended to use the MRB development area from the old NAS app volume only to use what has been built there as it is,\
+while continue with code development on the new CephFS app volume.
 
 
 # Contact
