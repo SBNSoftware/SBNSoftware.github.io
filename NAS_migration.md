@@ -2,6 +2,7 @@
 layout: page
 title: NAS migration to CephFS
 description: Detail on app/data volimes migration
+hero_height: is-medium
 toc: true
 ---
 
@@ -9,7 +10,6 @@ toc: true
 
 
 # NAS migration to CephFS
-==================================================
 
 Storage Team scheduled for Nov 15th 2023 the migration from NAS to CephFS for Scintific NAS volumes used by:
 SBN, SBND and ICARUS
@@ -49,7 +49,6 @@ More details can be found in slides presented at Oct 31 SBN AI Meeting:
 
 
 # MRB build area in the CephFS app volume
-==================================================
 
 After the NAS migration the MRB build area in the new CephFS app volume is a copy of what was available in the NAS app volume.
 This means that, in the CephFS app volume, the `setup` script in the `localProducts` folder will point to folders in the old app volume.
@@ -61,6 +60,7 @@ The procedure would look like the following:
 Here the option `-f` is to allow to use a non-empty directory, as there will be your existing `srcs` folder.
 
 
+# Contact
 
 For any comment/concern feel free to reach out by email or on slack SBND/ICARUS CS-Liaison: [Vito Di Benedetto](mailto:vito@fnal.gov)
 
