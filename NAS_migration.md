@@ -5,9 +5,6 @@ description: Detail on app/data volumes migration
 toc: true
 ---
 
-
-
-
 NAS migration to CephFS
 ------------------------------------------------------------------------------------------------
 
@@ -68,7 +65,8 @@ Here the option `-f` is needed to use a non-empty directory, as there will be a 
 while continue with code development on the new CephFS app volume.
 
 
-# Contact
+Contact
+------------------------------------------------------------------------------------------------
 
 For any comment/concern feel free to reach out by email or on slack the SBND/ICARUS CS-Liaison: [Vito Di Benedetto](mailto:vito@fnal.gov)
 
