@@ -58,9 +58,11 @@ The easier way to reuse an existing MRB development area once it has been migrat
 The procedure to reuse an existing MRB development area would look like the following:
 - remove the `build` folder,
 - remove the `localProducts` folder,
-- run `mrb newDev -f <options>` with usual options to prepare the MRB development area.
-a possible example, picking up a random code release and associated qualifier, would look like this: `mrb newDev -f -v v09_78_06 -q e20:prof`  
-Here the option `-f` is needed to allow to use a non-empty directory, as there will be a pre-existing `srcs` folder.
+- source the experiment setup script from CVMFS
+- run `mrb newDev -f <options>` with usual options to prepare the MRB development area.  
+A possible example, picking up a random code release and associated qualifier, would look like this:  
+`mrb newDev -f -v v09_78_06 -q e20:prof`  
+Here the option `-f` is needed to use a non-empty directory, as there will be a pre-existing `srcs` folder.
 
 > It is recommended to use the MRB development area from the old NAS app volume only to use what has been built there as it is,  
 while continue with code development on the new CephFS app volume.
