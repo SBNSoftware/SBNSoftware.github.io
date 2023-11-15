@@ -26,6 +26,7 @@ During this time, the data in the app areas won’t be accessible.
 >  - this implies shared accounts, including production accounts icaruspro and sbndpro, that have their home directory in app volume, to not be able to login.
 >  - the 8h downtime is probably overestimate, Storage Team want to make sure they have all the time they need for the app volume migration, possibly the downtime will be shorter.
 >  - the following day (11/16/23), Storage Team will be available to make sure the migration was completed.
+>  - the NAS app volume could stay mounted in ReadOnly mode untill Storage Team performs all check on the migration, the volume could be remounted in RW mode on the Nov 16th. 
 >  - migration of content of users' data volume can start once the migration is complete.
 
 The new mount points for CephFS will get a "/exp" prefix:
