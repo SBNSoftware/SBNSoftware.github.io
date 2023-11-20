@@ -56,7 +56,9 @@ The easier way to reuse an existing MRB development area once it has been migrat
 The procedure to reuse an existing MRB development area would look like the following:
 - remove the `build` folder,
 - remove the `localProducts` folder,
-- source the experiment setup script from CVMFS
+- source the experiment setup script from CVMFS:  
+  ICARUS: `source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh`  
+  SBND: `source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh`
 - run `mrb newDev -f <options>` with usual options to prepare the MRB development area.  
 A possible example, picking up a random code release and associated qualifier, would look like this:  
 `mrb newDev -f -v v09_78_06 -q e20:prof`  
