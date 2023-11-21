@@ -38,7 +38,7 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| 16Nov2023 | AA | testFileNames_MINBIAS_Standard00001 testFileNames_MINBIAS_Standard00002 testFileNames_MINBIAS_Standard00003 | boot_MinBias_VeryHighRate_multiple_art_processes.txt |  Based on Calibration_MINBIAS_Standard00006, tests of new artROOT file names, and disabling file cloning  |
+| 21Nov2023 | AA | Calibration_MINBIAS_Standard_testFileNames00002 | boot_MinBias_VeryHighRate_multiple_art_processes.txt |  Based on testFileNames_MINBIAS_Standard00003, test of new artROOT file names  |
 | 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001-3 PMT_test_clk_TRIGOUT_only_ww00001-4 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001-3 | boot_PMTlaser.txt |  Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
 | 23Oct2023 | M. Vicenzi | Test_PMTbaselines_nom00001 Test_PMTbaselines_nom00002 Test_PMTbaselines_m5_00001  Test_PMTbaselines_p5_00001  Test_PMTbaselines_m10_00001  Test_PMTbaselines_p10_00001 Test_PMTbaselines_m20_00001 Test_PMTbaselines_p20_00001 | boot_PMTlaser.txt | Configurations for PMT baseline scans with different DC offsets (+-5%, +-10%, +-20%). |
 | 24Oct2023 | M. Vicenzi | Test_Physics_5_9_thr360_ExtendedGate00001 Test_Physics_5_9_thr390_ExtendedGate00001 Test_Physics_5_9_thr420_ExtendedGate00001 Test_Physics_5_8_thr360_ExtendedGate00001 Test_Physics_5_8_thr390_ExtendedGate00001 Test_Physics_5_8_thr420_ExtendedGate00001 Test_Physics_4_9_thr360_ExtendedGate00001 Test_Physics_4_9_thr390_ExtendedGate00001 Test_Physics_4_9_thr420_ExtendedGate00001 | boot_Majority_moreEvb.txt | Configurations for trigger majorities and thresholds scan using newly-calibrated baselines and BNB offbeam gate extended to 10.1us |
@@ -48,6 +48,7 @@ When the configuration is no longer used, please move the information to another
 ### Calibration
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
+| 16Nov2023 | AA | testFileNames_MINBIAS_Standard00001 testFileNames_MINBIAS_Standard00002 testFileNames_MINBIAS_Standard00003 | boot_MinBias_VeryHighRate_multiple_art_processes.txt |  Based on Calibration_MINBIAS_Standard00006, tests of new artROOT file names, and disabling file cloning  |
 | 14Nov2023 | AA/DT/AM | Test_Calibration_MAJORITY_BNB_4Hz_00002 | Test_Calibration_MAJORITY_BNB_4Hz_00002 | Based on Calibration_MINBIAS_Standard00006, with MAJORITY instead of MINBIAS |
 | 26Oct2023 | AA/DT/MV | Calibration_MINBIAS_Standard00004 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Updated: grafana levels, grapha reporting_interval, added new changes to PMT levels, added CRT telescope and bottom CRT |
 | 06Oct2023 | GAL/Antoni ? | Calibration_MINBIAS_Standard00002 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | cloned from Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_GALTest00003 with updated Grafana metric levels and pmt_standatd.fcl changes by M.Vicenzi |
