@@ -38,6 +38,7 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
+| 28Nov2023 | AA | Calibration_MINBIAS_Standard_testFileNames00003 Physics_Standard_testFileNames00001 PMT_Laser_Standard_testFileNames00001 | - | configurations based on Calibration_MINBIAS_Standard00006, Physics_Standard00003, and PMT_Laser_Standard00002, with new ${app_name} field in the name, ready for testing |
 | 21Nov2023 | AA | Calibration_MINBIAS_Standard_testFileNames00002 | boot_MinBias_VeryHighRate_multiple_art_processes.txt |  Based on testFileNames_MINBIAS_Standard00003, test of new artROOT file names  |
 | 18Sep2023 | M. Vicenzi | PMT_test_clk_TRIGOUT_only_ww03_phase00001-3 PMT_test_clk_TRIGOUT_only_ww00001-4 PMT_test_clk_TRIGOUT_all_true00001 PMT_test_clk_TRIGOUT_all_false00001-3 | boot_PMTlaser.txt |  Configurations for testing PR #114 of sbndaq-artdaq. Motherboard clock or clock phase put in TRG-OUT. Never use for physics quality runs. |
 | 23Oct2023 | M. Vicenzi | Test_PMTbaselines_nom00001 Test_PMTbaselines_nom00002 Test_PMTbaselines_m5_00001  Test_PMTbaselines_p5_00001  Test_PMTbaselines_m10_00001  Test_PMTbaselines_p10_00001 Test_PMTbaselines_m20_00001 Test_PMTbaselines_p20_00001 | boot_PMTlaser.txt | Configurations for PMT baseline scans with different DC offsets (+-5%, +-10%, +-20%). |
