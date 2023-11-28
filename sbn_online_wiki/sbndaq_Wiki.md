@@ -19,7 +19,7 @@ sbndaq components and services
 Database instructions
 ---
 * [Configuration DB Instructions](configurationDB.md)
-* [ICARUS configuration list](ICARUSConfigurationList.md) (under construction)
+* [ICARUS configuration list](ICARUSConfigurationList.md)
 * [run history database instructions (ArtdaqDB, UconDB)](run_history.md)
 
 
