@@ -49,7 +49,7 @@ When the configuration is no longer used, please move the information to another
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
 | 16Nov2023 | AA | testFileNames_MINBIAS_Standard00001 testFileNames_MINBIAS_Standard00002 testFileNames_MINBIAS_Standard00003 | boot_MinBias_VeryHighRate_multiple_art_processes.txt |  Based on Calibration_MINBIAS_Standard00006, tests of new artROOT file names, and disabling file cloning  |
-| 14Nov2023 | AA/DT/AM | Test_Calibration_MAJORITY_BNB_4Hz_00002 | Test_Calibration_MAJORITY_BNB_4Hz_00002 | Based on Calibration_MINBIAS_Standard00006, with MAJORITY instead of MINBIAS |
+| 14Nov2023 | AA/DT/AM | Test_Calibration_MAJORITY_BNB_4Hz_00002 | ? | Based on Calibration_MINBIAS_Standard00006, with MAJORITY instead of MINBIAS |
 | 26Oct2023 | AA/DT/MV | Calibration_MINBIAS_Standard00004 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | Updated: grafana levels, grapha reporting_interval, added new changes to PMT levels, added CRT telescope and bottom CRT |
 | 06Oct2023 | GAL/Antoni ? | Calibration_MINBIAS_Standard00002 | boot_MinBias_VeryHighRate_multiple_art_processes.txt | cloned from Calibration_MINBIAS_BNB_Thr400_Majority10_FixedWindow_4Hz_GALTest00003 with updated Grafana metric levels and pmt_standatd.fcl changes by M.Vicenzi |
 
