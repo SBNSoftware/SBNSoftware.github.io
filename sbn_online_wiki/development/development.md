@@ -73,3 +73,4 @@ Observations:
 ## Cleanup old git branches
 
 ## Remove old, unused metrics from grafana
+- Completed Autumn 2023
