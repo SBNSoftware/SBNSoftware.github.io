@@ -31,7 +31,7 @@ select one other expert contact from the list to call.
   
   |**Expert team**     | **Names**                                                    | **Available**       | **Slack tag**           |
   |Shift help          | **Bruce Howard/Francesco Poppi/Wenqiang Gu/Wooyoung Jang**   | 00:00 - 23:59 CST   | `@icarus-shift-help`    |
-  |DAQ expert          | **Antoni Aduszkiewicz**                                      | 00:00 - 23:59 CST   | `@sbn_daq_experts`      |
+  |DAQ expert          | **Donatella Torretta**                                       | 00:00 - 23:59 CST   | `@sbn_daq_experts`      |
   |PMT expert          | **Andrea Scarpelli**                                         | 00:00 - 23:59 CST   | `@icarus_pmt_experts`   |
   |BEAM expert         | **Angela Fava/Andrea Scarpelli/Donatella Torretta**          | 00:00 - 23:59 CST   | `@icarus_beam_experts`  |
   |TPC PS expert       | **Justin Muller**                                            | 00:00 - 23:59 CST   | `@icarus_tpcps`         |
