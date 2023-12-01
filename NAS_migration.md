@@ -45,6 +45,7 @@ This can be done at any level of the directory tree. The .snap directories are s
 - Directory usage  
 💡 CephFS makes some additional information available via extended attributes. Users can view the total size used by a directory and all its subdirectories with: `getfattr -n ceph.dir.rbytes <directory>`.
 
+
 MRB build area in the CephFS app volume
 ------------------------------------------------------------------------------------------------
 
@@ -64,6 +65,17 @@ Here the option `-f` is needed to use a non-empty directory, as there will be a 
 
 > ⚠️ Users can use the MRB development area from the old app volume only as is, app volumes are mounted RO. ⚠️  
 > ⚠️ Code development can continue only on new CephFS app volumes. ⚠️
+
+
+Python virtual env
+------------------------------------------------------------------------------------------------
+
+Also python virtual env (venv) area are affected by the NAS migration.
+Users that were using python venv are required to reconfigure their venv area from scratch on the new CephFS app volume.
+This because the venv are possibly is still pointing to the old NAS app area.
+In case during the setup of the new venv area there could be issues with some python module, users can check the version of packages they have on the old venv area.
+For this purpose, once the old venv area has been activated, `pip list -v` would provide all modules with their version and path.
+Another useful command could be `pip freeze` to get a list of modules in a format that could be used in a requirements file.
 
 
 Contact
