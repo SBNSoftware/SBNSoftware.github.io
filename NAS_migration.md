@@ -70,12 +70,12 @@ Here the option `-f` is needed to use a non-empty directory, as there will be a 
 Python virtual env
 ------------------------------------------------------------------------------------------------
 
-Also python virtual env (venv) area are affected by the NAS migration.
+Also python virtual env (venv) area are affected by the NAS migration.  
 Users that were using python venv are required to reconfigure their venv area from scratch on the new CephFS app volume.
-This because the venv are possibly is still pointing to the old NAS app area.
-In case during the setup of the new venv area there could be issues with some python module, users can check the version of packages they have on the old venv area.
-For this purpose, once the old venv area has been activated, `pip list -v` would provide all modules with their version and path.
-Another useful command could be `pip freeze` to get a list of modules in a format that could be used in a requirements file.
+This because the venv are possibly is still pointing to the old NAS app area.  
+In case during the setup of the new venv area there could be issues with some python module, users can check the version of packages they have on the old venv area.  
+For this purpose, once the old venv area has been activated, `pip list -v` would provide all modules with their version and path from the old venv area, so this can be replicated in the new venv area.  
+Another useful command could be `pip freeze` to get a list of modules in a format that could be used in a requirements file, so the exact setup of the old venv are can be cloned in the new venv area.
 
 
 Contact
