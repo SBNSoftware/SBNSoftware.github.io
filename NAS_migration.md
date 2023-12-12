@@ -14,7 +14,7 @@ There are three main volumes that have been migrated:
 - **data**: Users are required to copy over their data areas by themselves.
 - **daq**: (SBND only for test stand nodes) Users are required to copy over their data from the daq areas by themselves (SLAM Team could help).
 
-📣 **⚠️ The app volumes will be unmounted on Dec 13th ⚠️**
+📣 **⚠️ Old NAS app volumes will be unmounted on Dec 13th ⚠️**
 
 > NOTE:
 > - *Users are encouraged to migrate useful files from data volumes ASAP.*  
@@ -43,7 +43,10 @@ You can see all the snapshots with: `ls app/<directory>/.snap`
 This can be done at any level of the directory tree. The .snap directories are special and will not appear in the containing directory listing.
 
 - Directory usage  
-💡 CephFS makes some additional information available via extended attributes. Users can view the total size used by a directory and all its subdirectories with: `getfattr -n ceph.dir.rbytes <directory>`.
+💡 CephFS makes some additional information available via extended attributes. Users can view the total size used by a directory and all its subdirectories with: `getfattr -n ceph.dir.rbytes <directory>`.  
+💡 Users can check their usage of CephFS volumes through Landscape (a.k.a. FIFEmon):
+  - [ICARUS CephFS usage](https://landscape.fnal.gov/monitor/d/d4qZ8JSSz/cephfs-experiment-usage?orgId=1&var-group=icarus)
+  - [SBND CephFS usage](https://landscape.fnal.gov/monitor/d/d4qZ8JSSz/cephfs-experiment-usage?orgId=1&var-group=sbnd)
 
 
 MRB build area in the CephFS app volume
