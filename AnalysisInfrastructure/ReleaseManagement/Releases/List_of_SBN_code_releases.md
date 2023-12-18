@@ -11,6 +11,8 @@ These are the releases tagged until now:
   
 | Version        |      Notes                        |      Detailed Notes                          
 |----------------|-----------------------------------|-------------------------------------------- 
+`v09_81_02`      | 'sbncode' weekly release          |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_82_01)
+`v09_72_00_06`   | 'sbncode' icarus production patch release   |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_72_00_06)
 `v09_79_00`      | 'sbncode' weekly release          |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_79_00)
 `v09_78_06`      | 'sbncode/sbnana' weekly release   |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_sbnana_v09_78_06)
 `v09_78_04`      | 'sbncode' weekly release          |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_78_04)
