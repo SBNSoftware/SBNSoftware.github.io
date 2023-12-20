@@ -19,15 +19,24 @@ Download instructions for [sbndcode v09_81_02](http://scisoft.fnal.gov/scisoft/b
 
 Purpose
 ---------------------------------------------------
+Weekly release
 
 New features
 ---------------------------------------------------
+*  SBNSoftware/sbndcode#383: Add SPEC TDC decoder
+*  SBNSoftware/sbndcode#388: Add software pmt metrics per PMT channel
+*  SBNSoftware/sbndcode#390: Define common G4 physics list for SBN in `sbncode`
+    - As icarus also moves to the new refactored G4 it makes sense to define a common physics list in sbncode, so the relevant files are moved there.
+*  SBNSoftware/sbndcode#391: Reorganise + Add Overlay MeVPrtl Fcl
 
 Bug fixes
 ---------------------------------------------------
+* SBNSoftware/sbndcode#387: call removeProduct for raw fragments to conserve memory
 
 Updated dependencies
 ---------------------------------------------------
+* sbncode v09_81_02
+* larsoft v09_81_02
 
 Change List
 ==========================================
@@ -74,3 +83,7 @@ sbndutil
 * 2023-12-20  Fran Nicolas : Merge branch 'release/v09_81_02'
 * 2023-12-20  Fran Nicolas : Update to larsoft v09_81_02
 * 2023-11-16  Fran Nicolas : Merge tag 'v09_79_00' into develop
+
+Additional info
+---------------------------------------------------
+This release has been only distributed for e26 qualifiers ( c14 is known to have an upstream issue and won't be distributed for now)
