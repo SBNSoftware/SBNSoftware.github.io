@@ -70,6 +70,14 @@ Host *.fnal.gov
   GSSAPIDelegateCredentials yes
 ```
 
+Now you should be able to log on by typing:
+
+```shell
+kinit -f [yourusername]@FNAL.GOV
+ssh [yourusername]@sbndgpvm01.fnal.gov
+```
+
+**MacOS users troubleshooting:**  
 For MacOS users, in case they get the following message
 ```
 Warning: No xauth data; using fake authentication data for X11 forwarding.
@@ -79,13 +87,6 @@ when logging in to SBND GPVM nodes, they need to add to the above also the line
   XAuthLocation /opt/X11/bin/xauth
 ```
 
-Now you should be able to log on by typing:
-
-```shell
-kinit -f [yourusername]@FNAL.GOV
-ssh -Y [yourusername]@sbndgpvm01.fnal.gov
-```
-
 MacOS users can\'t use kerberos tools from conda environment,
 they need either disable conda environment,
 or use system *kinit* running:
@@ -93,8 +94,9 @@ or use system *kinit* running:
 /usr/bin/kinit -f [yourusername]@FNAL.GOV` 
 ```
 
+**Reset Fermilab passwords**  
 You can reset your Fermilab passwords for service-now
-[here.](https://password-reset.fnal.gov/showLogin.cc)\
+[here.](https://passwordreset.fnal.gov/showLogin.cc)\
 If you can\'t remember your password because you didn\'t write it down
 then you will have contact the service desk.
 
