@@ -14,14 +14,14 @@ There are three main volumes that have been migrated:
 - **data**: Users are required to copy over their data areas by themselves.
 - **daq**: (SBND only for test stand nodes) Users are required to copy over their data from the daq areas by themselves (SLAM Team could help).
 
-📣 **⚠️ Old NAS app volumes will be unmounted on Dec 13th ⚠️**
+📣 **⚠️ Old NAS app volumes have been unmounted on Dec 13th ⚠️**
 
 > NOTE:
 > - *Users are encouraged to migrate useful files from data volumes ASAP.*  
 > - The old NAS data volumes will be available until the NAS is discontinued (before May 2024)  
-> - The old NAS app volumes have been mounted in ReadOnly mode to prevent users to accidentally create/edit files there and possibly lose them once the NAS app volumes are discontinued.
+> - The old NAS data volumes will be mounted in ReadOnly mode sometime on March 2024 in preparation for the volumes unmount.
 
-- The new mount points for CephFS will get a "/exp" prefix:
+- The new mount points for CephFS have got the "/exp" prefix:
 
 NAS volume   | CephFS volume
 :------------| :-----------------
