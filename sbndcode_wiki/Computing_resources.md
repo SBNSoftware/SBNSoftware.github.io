@@ -238,7 +238,7 @@ and often no action is needed, beside maybe adding a `<os>` element for good mea
 Also note that FIFE recommends that Operating System selection be not enforced
 via `--os` option when using containers (after all, we are explicitly shipping the whole OS).
 
-And, about FIFE recomendations, [Project**-**py](https://cdcvs.fnal.gov/redmine/projects/project-py/wiki/Project-py_guide)
+And, about FIFE recomendations, [Project-py](https://cdcvs.fnal.gov/redmine/projects/project-py/wiki/Project-py_guide)
 is the recommended job submission tool (SBN-specific wiki documentation pending).
 
 
@@ -255,15 +255,6 @@ platforms can also be downloaded from the
 [SciSoft repository](Using_LArSoft_on_a_local_machine.md).
 The [content of the areas](Software_distribution_content.md) is described
 in its own web page.
-
-
-### Local Fermilab area (FermiApp)
-
-This area is visible from Fermi Grid nodes and GPVMs. It is accessible
-as `/grid/fermiapp/products/sbnd`.
-It contains SBND software distribution.
-[Instructions](Write_files_to_grid.html) on how to deploy
-software in there are [elsewhere](Write_files_to_grid.html).
 
 
 
@@ -330,7 +321,7 @@ path            | space
 Be fair about disk usage and make sure to clean up unneeded stuff, this
 resource is shared by everyone in the collaboration.
 
-The available disk space can be read using `df -h`.
+The available disk space can be read using `df -h`.  
 Quota and usage per user are available in the [SBND CephFS usage](https://landscape.fnal.gov/monitor/d/d4qZ8JSSz/cephfs-experiment-usage?orgId=1&var-group=sbnd)
 
 
@@ -366,7 +357,7 @@ the [SBND dCache wiki page](SBND_dCache_storage.md).
 ### File database (SAM)
 
 Fermilab provides a service, SAM, to track where files are currently
-stored. An introduction to the system can be found on [User Guide for SAM](User_Guide_for_SAM.md),
+stored. An introduction to the system can be found on [User Guide for SAM](_How_to_create_and_use_a_SAM_definition.html),
 and users interact with it via
 [sam-web-client](https://cdcvs.fnal.gov/redmine/projects/sam-web-client/wiki).
 In short, SAM not only stores
