@@ -60,8 +60,8 @@ now).
 
 The next step is to "kerberize" your machine. You can follow instructions here:
 - Mac: <https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011294>
-- Linux:
-- Windows:
+- Linux: <https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011296>
+- Windows: <https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0011316>
 
 Once your computer is SSH-ready and kerberized, you should be able to
 log on by typing:
@@ -73,6 +73,8 @@ ssh -Y ${USER}@sbndgpvm01.fnal.gov
 ```
 
 (where `$USER` is your Fermilab user name).
+
+More details can be found ta the [Newbie Material](Newbie_Material.html) wiki page
 
 If this does not work, please submit a to
 request a SBND project account:
