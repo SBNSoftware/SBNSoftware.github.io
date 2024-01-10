@@ -3,6 +3,9 @@ layout: page
 title: Write files to grid
 ---
 
+DEPRECATED NOTICE
+========================================================================================================
+This page is deprecated, SBND uses CVMFS to deploy their code.
 
 
 Write files to `/grid/fermiapp/products/sbnd`
