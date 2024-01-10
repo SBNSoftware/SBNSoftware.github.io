@@ -104,19 +104,21 @@ from SBND disks and tapes, and you can submit SBND jobs to the grid.
 The access is via SSH with FNAL.GOV Kerberos credentials.
 
 The nodes and their OS version are:
+
  Node                 |  OS   
 ----------------------|-------
  `sbndgpvm01.fnal.gov` | SLF 7 
  `sbndgpvm02.fnal.gov` | SLF 7 
  `sbndgpvm03.fnal.gov` | SLF 7 
  `sbndgpvm04.fnal.gov` | SLF 7 
+ `sbndgpvm-test-al9.fnal.gov` | Alma 9 
  `sbndbuild01.fnal.gov` | SLF 7 
  `sbndbuild02.fnal.gov` | SLF 7 
 
 
 
 The `GPVM` interactive machines have no relevant
-local storage, and areas in `/sbnd` and `/pnfs` should be used (the home
+local storage, and areas in `/exp/sbnd` and `/pnfs` should be used (the home
 directory works too, but it has small allowance).
 
 The interactive "build nodes" have
@@ -295,40 +297,39 @@ Production level data are stored to tape ("Enstore") and tracked with a database
 
 
 
-### Local storage: BlueArc disks
+### Local storage: CephFS disks
 
-BlueArc is a brand of the disk servers Fermilab uses. These are
+CephFS is the filesystem used by Fermilab disk servers. These are
 multi-terabyte disks that are split between experiments.
 SBND has its own slice of it, in two partitions:
 
--   `/sbnd/data` where you can write a few large files (e.g. ROOT data);
+-   `/exp/sbnd/data` where you can write a few large files (e.g. ROOT data);
     if your data is larger than a hundred GB, people start muttering, as
     the space is limited and shared among all of us. Time to go dCache
     then.
--   `/sbnd/app` where you can keep a few software builds; this is also a
+-   `/exp/sbnd/app` where you can keep a few software builds; this is also a
     shared disk, and you should keep no large data here. But you need to
-    have the code here, as content in the `/sbnd/data` partition
+    have the code here, as content in the `/exp/sbnd/data` partition
     **can't be executed**.
 
-**These data areas can be only directly accessed from the GPVM and BUILD
-nodes.** If your grid job needs data from them, you have to copy the
-information locally first.
+**These data areas can be only directly accessed from the GPVM and BUILD nodes.**
+If your grid job needs data from them, you have to copy themto the grid worker node first.
 
-You should create your own directory under `/sbnd/data/users/${USER}`
-and `/sbnd/app/users/${USER}`, and stick to them.
+You should create your own directory under `/exp/sbnd/data/users/${USER}`
+and `/exp/sbnd/app/users/${USER}`, and stick to them.
 Space available to SBND collaboration:
 
-path            | space   
+path            | space
 ----------------| --------
-`/sbnd/app`     | 3.0 TB        
-`/sbnd/data`    | 16 TB     
+`/exp/sbnd/app`     | 6.0 TB
+`/exp/sbnd/data`    | 25 TB
   
 
 Be fair about disk usage and make sure to clean up unneeded stuff, this
 resource is shared by everyone in the collaboration.
 
-This information can be read using `quota -s` or `df -h`.
-
+The available disk space can be read using `df -h`.
+Quota and usage per user are available in the [SBND CephFS usage](https://landscape.fnal.gov/monitor/d/d4qZ8JSSz/cephfs-experiment-usage?orgId=1&var-group=sbnd)
 
 
 ### World-visible storage: dCache
@@ -439,5 +440,4 @@ Other obscure services and resources
 --------------------------------------------------------------------------------------------
 
 SBND uses more services, which are usually hidden to most users. They
-are documented in [their own
-page](Computing_services_and_resources_for_SBND_experts.html).
+are documented in [their own page](Computing_services_and_resources_for_SBND_experts.html).
