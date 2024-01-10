@@ -260,7 +260,7 @@ in its own web page.
 
 ### CVMFS
 
-SBND has a CVMFS area with the `sbnd.opensciencegrid.org`.
+SBND CVMFS area is `/cvmfs/sbnd.opensciencegrid.org`.
 
 CVMFS is a file system that mirrors locally a remote storage area (not
 dissimilarly from NFS), and it is available on the Open Science Grid
@@ -272,8 +272,8 @@ You can also install it on your laptop;
 (currently from MicroBooNE). Good news is, it's not hard.
 
 The full path to access the area is:
-`/cvmfs/icarus.opensciencegrid.org/products/icarus`. The
-`products/icarus` directory contains our software distribution.
+`/cvmfs/sbnd.opensciencegrid.org/products/sbnd`. The
+`products/sbnd` directory contains our software distribution.
 
 _[[Instructions](Write_files_to_CVMFS.md) on how to deploy software in there are
 [elsewhere](Write_files_to_CVMFS.md).]_
