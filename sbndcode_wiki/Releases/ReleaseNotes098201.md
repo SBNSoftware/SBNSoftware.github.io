@@ -40,7 +40,7 @@ New features
 Bug fixes
 ---------------------------------------------------
 * SBNSoftware/sbndcode#394
-  * Fixed CA OpHits not being produced in HitDumper
+  * Fixed XARAPUCA OpHits not being produced in HitDumper
 * SBNSoftware/sbndcode#400
   * TPC Decoder: change to use fragment ID to get the FEM crate number 
 
