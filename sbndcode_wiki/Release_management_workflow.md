@@ -64,6 +64,7 @@ Mailing lists you should be on
 --------------------------------------------------------------------------------
 
 -   SBND-SOFTWARE
+-   SBN-SOFTWARE
 -   SBND-COMMIT
 -   SBND-SOFTWARE-BUILD
 -   BUILD-SERVICE-USERS
