@@ -56,7 +56,7 @@ Code monitoring
 --------------------------------------------------
 
 -   [Commit emails](Commit_emails.html)
--   [Continuous integration](Continuous_integration.html)
+-   [Continuous integration](/sbn/sbnci_wiki/CI_Validation.md)
 
 
 
