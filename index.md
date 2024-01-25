@@ -28,6 +28,8 @@ See below for helpful links:
   * [Wiki](sbndcode_wiki/Wiki) ([old Redmine wiki here](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki))
 * [sbana](https://github.com/SBNSoftware/sbnana): Joint SBN non-art (i.e. CAF-based) analysis
 * [sbnanaobj](https://github.com/SBNSoftware/sbnana): Joint SBN non-art data formats (i.e. StandardRecord)
+* [sbndaq-artdaq-core/offline](https://github.com/SBNSoftware/sbndaq-artdaq-core/tree/offline): offline version of the SBN DAQ code data definitions.
+* [sbndata](https://github.com/SBNSoftware/sbndata):external data needed for SBN.
 
 * [sbnbuild](https://github.com/SBNSoftware/sbnbuild): Common SBN build scripts and utilities.
 
