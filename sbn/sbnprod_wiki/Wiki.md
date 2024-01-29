@@ -16,6 +16,10 @@ SBN Production Page
 
 Here you will found how to make production sample requests as well as (comming soon) instructions and documentation
 
+Production Guidelines for SBN-wide Data and MonteCarlo Production
+--------------------------
+The [SBN Production Guidelines document](https://docs.google.com/document/d/1ykYBhHZCHaak-JDuod9I3-GwetaiptGRgLGJG6zOKf4/edit?usp=sharing) outlines the SBN-wide production process, which governs production and data processing for SBN joint analyses, and individual SBND and ICARUS analyses. Comments can be added to the document or brought to your group convener. 
+
 
 Available Samples 
 --------------------------
