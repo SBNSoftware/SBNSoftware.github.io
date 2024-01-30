@@ -14,7 +14,7 @@ a VPN system that requires a token, either soft or hard.**
 Currently one way to get get started is:
 
 1.  First you need to get a token by opening a ticket [RSA Token Request
-    form]([https://fermi.service-now.com/nav_to.do?uri=com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=99aecde66f172500c7743acf1e3ee401](https://fermi.servicenowservices.com/wp?id=evg_sc_cat_item&sys_id=99aecde66f172500c7743acf1e3ee401))
+    form](https://fermi.servicenowservices.com/wp?id=evg_sc_cat_item&sys_id=99aecde66f172500c7743acf1e3ee401)
     (takes a while and both hard and soft tokens are limited)
 2.  [Set it
     up](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0011426)
