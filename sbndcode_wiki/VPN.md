@@ -8,22 +8,15 @@ title: VPN
 Virtual Private Network (VPN) to Fermilab
 ====================================================================================================
 
-**The information below needs to be updated as now Fermilab has moved to
-a VPN system that requires a token, either soft or hard.**
+Fermilab requires a token, either soft or hard. A hard token is a physical device. A soft token is very similar to two-factor authentication. Depending on your use case, you may opt for either but keep in mind a soft token will be easier to obtain. Instructions on how to initiate the process are below.
 
-Currently one way to get get started is:
-
-1.  First you need to get a token by opening a ticket [RSA Token Request
+You need to get a token by opening a ticket [RSA Token Request
     form](https://fermi.servicenowservices.com/wp?id=evg_sc_cat_item&sys_id=99aecde66f172500c7743acf1e3ee401)
-    (takes a while and both hard and soft tokens are limited)
-2.  [Set it
-    up](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0011426)
-3.  [Use
-    it](https://fermi.service-now.com/wp?id=kb_article&sys_id=KB0013046)
+    (takes a while and both hard and soft tokens are limited).
 
-Don\'t know how to get a vpn with the cisco alternatives. If you manage
-to work out how to set a vpn with one of the alternatives below please
-update this wiki page.
+If you are requesting a soft token, you need to set up a PIN and download an app. For information on how to do that, see this page and the links contained there: [Instructions](https://fermi.servicenowservices.com/kb_view.do?sysparm_article=KB0013361)
+
+IMPORTANT NOTE: At the same time you are requesting the token, you should request to be added to the "VPN group" -- this is necessary to be able to log into the VPN once you have the token and software ("client"). To do this you may need to submit a generic request ticket to Service Desk. This is accomplished via [this ticket](https://fermi.servicenowservices.com/wp?id=evg_sc_cat_item&sys_id=69cd40d76fddd2005232ce026e3ee41e) (or from Service Now home page, going to "Request Something" then "Request Service").
 
 ------------------------------------------------------------------------
 
@@ -115,6 +108,7 @@ Under OSX, OpenConnect is also via homebrew:
 
     brew install openconnect
 
+It is also possible to install the AnyConnect app from the AppStore, originally developed for iPad but has been tested and works on Mac OS Sonoma 14.1.
 
 
 ### OpenConnect for Linux
@@ -125,9 +119,9 @@ Chances are that your distribution has it prepackaged for you.
 
 
 
-### OpenConnect for iOS (Apple mobile)
+### OpenConnect for iOS (Apple mobile -- mobile app also works on Mac OSX)
 
-The idea is that iTune offers an [official
+The idea is that the AppStore offers an [official
 client](https://itunes.apple.com/us/app/cisco-anyconnect/id1135064690?mt=8)
 based on AnyConnect 4.6^[1]^.\
 A [video from Northern Arizona
@@ -138,11 +132,6 @@ it is possible that the user name is required in the full format,
 `user@services.fnal.gov`.
 
 [Report your luck with it if you try it!](mailto:petrillo@fnal.gov)
-
-^1^ Currently, that is August 2018, there is also another version dubbed
-\"Legacy\" which is based on 4.0, and I am not talking about that one.
-
-
 
 ### OpenConnect for Android
 
@@ -173,7 +162,6 @@ Under OSX, a graphic user interface called \"Cisco AnyConnect Secure
 Mobility Client\" will allow you to enter the information above.\
 The user name might be required in its full glory:
 `user@services.fnal.gov`.
-
 
 
 ### OpenConnect (command line interface)
