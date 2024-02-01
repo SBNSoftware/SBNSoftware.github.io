@@ -48,6 +48,14 @@ The form is also a checklist of the needed information. If you need help answeri
 
 The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
 
+Production Sample requests 
+--------------------------
+
+The main [Grafana entry page](https://fifemon.fnal.gov/monitor/d/000000185/fifemon-home?orgId=1) which gives access to all monitoring.
+The [FCRSG Preparation page](https://fifemon.fnal.gov/monitor/d/r6UDhH-iz/fcrsg-prep?orgId=1) gives an overall view of resource usage.
+Here is the [dcache use by pool group page](https://fifemon.fnal.gov/monitor/d/rflbgV-iz/dcache-by-poolgroup?orgId=1)
+Here you can find the [dcache persistant usage by VO](https://lsvip.fnal.gov/monitor/d/000000175/dcache-persistent-usage-by-vo?orgId=1)
+
 ICARUS data Keepup processing
 --------------------------
 ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
