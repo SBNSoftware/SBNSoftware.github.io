@@ -34,6 +34,13 @@ Updated dependencies
 * larsoft v09_79_00
 * Using e26 and c14 compilers
 
+Supported qualifiers
+---------------------------------------------------
+* e26:prof
+* e26:debug
+* c14:prof
+* c14:debug
+
 Change List
 ==========================================
 
