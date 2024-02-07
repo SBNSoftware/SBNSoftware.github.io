@@ -50,6 +50,11 @@ Updated dependencies
 * larsoft v09_82_91
 * sbnd_data v01_22_00
 
+Supported qualifiers
+---------------------------------------------------
+* e26:prof
+* e26:debug
+
 Change List
 ==========================================
 
