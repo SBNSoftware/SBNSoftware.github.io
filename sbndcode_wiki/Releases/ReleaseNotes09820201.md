@@ -45,6 +45,12 @@ Updated dependencies
   * Includes updated weights for CRUMBS (with OpT0Finder variables+updated CRT reconstruction)
   * Includes weights for Razzled PID tool
   * Includes updated weights for Razzle and Dazzle PID tools (trained for WireCell workflow)
+ 
+Supported qualifiers
+---------------------------------------------------
+* e26:prof
+* e26:debug
+  
 
 Change List
 ==========================================
