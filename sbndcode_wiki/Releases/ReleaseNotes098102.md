@@ -38,6 +38,12 @@ Updated dependencies
 * sbncode v09_81_02
 * larsoft v09_81_02
 
+Supported qualifiers
+---------------------------------------------------
+* e26:prof
+* e26:debug
+  
+
 Change List
 ==========================================
 
