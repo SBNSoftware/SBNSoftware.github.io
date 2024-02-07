@@ -24,12 +24,12 @@ Log in to an SBND virtual machine, for example:
 You will land in an area called `nashome`, from there you have two main
 other areas available:
 
--   `/sbnd/app/users/$USER/`: Here you should store your software (if
+-   `/exp/sbnd/app/users/$USER/`: Here you should store your software (if
     this directory doesn't exist, you can create it with
-    `mkdir /sbnd/app/users/$USER`).
--   `/sbnd/data/users/$USER/`: Here you should store your files (if this
+    `mkdir /exp/sbnd/app/users/$USER`).
+-   `/exp/sbnd/data/users/$USER/`: Here you should store your files (if this
     directory doesn't exist, you can create it with
-    `mkdir /sbnd/data/users/$USER`).
+    `mkdir /exp/sbnd/data/users/$USER`).
     Remember that the `app` area has limited disk space, so please do
     not store any data file there, but only the code you need.
 
@@ -41,7 +41,7 @@ other areas available:
 Go to the `app` area, where we can install and develop software:
 
 ```bash
-    cd /sbnd/app/users/$USER/
+    cd /exp/sbnd/app/users/$USER/
 ```
 
 Setup the SBND environment first:
