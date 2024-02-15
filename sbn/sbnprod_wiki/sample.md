@@ -33,6 +33,18 @@ Our datasets are declared to the SBN SAM instance which is acessible to both SBN
 - checking metadata: `samweb -e sbn get-metadata {filename}`
 - file location: `samweb -e sbn locate-file {filename}`
 
+###Accessing files at CNAF
+some of ICARUS samples are available at CNAF, those files are declared to samweb and can be accessed from grid jobs from FNAL.
+
+Recommended workflow:
+- Identify files  
+`samweb -e icarus get-file-access-url --schema https “file-name.root”`
+- Copy a few files locally for development/testing  
+`ifdh cp -D <url from above command> /path/to/user/data/area/`
+- Submit grid jobs over full sample  
+
+More info about CNAF: https://wiki.infn.it/progetti/icarus/home
+
 
 Monte Carlo official SBN Production Samples
 --------------------------
