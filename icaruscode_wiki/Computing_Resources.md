@@ -360,17 +360,18 @@ in detail.
 Production level data are stored to tape ("Enstore") and tracked with a database ("SAM").
 
 
-### Local storage: BlueArc disks
+### Local storage: CEPH disks
 
-BlueArc is a brand of the disk servers Fermilab uses. These are
-multi-terabyte disks that are split between experiments.
+CEPHFS is the new Network-Attached Storage area for Fermilab experiments.
+It replaced BlueArc disk servers between September 2023 and May 2024.
+The new one is a multi-terabyte disk-stored area split between experiments.
 ICARUS has its own slice of it, in two partitions:
 
--   `/icarus/data` where you can write a few large files (e.g. ROOT
+-   `/exp/icarus/data` where you can write a few large files (e.g. ROOT
     data); if your data is larger than a hundred GB, people start
     muttering, as the space is limited and shared among all of us. Time
     to go dCache then.
--   `/icarus/app` where you can keep a few software builds; this is also
+-   `/exp/icarus/app` where you can keep a few software builds; this is also
     a shared disk, and you should keep no large data here. But you need
     to have the code here, as content in the `/icarus/data` partition
     **can't be executed**.
@@ -379,19 +380,25 @@ ICARUS has its own slice of it, in two partitions:
 If your grid job needs data from them, you have to copy the information
 locally first.
 
-You should create your own directory under `/icarus/data/users/${USER}`
-and `/icarus/app/users/${USER}`, and stick to them.
-Space available to ICARUS collaboration (updated December 3, 2020):
+You should create your own directory under `/exp/icarus/data/users/${USER}`
+and `/exp/icarus/app/users/${USER}`, and stick to them.
+[Space available to ICARUS collaboration](https://fifemon.fnal.gov/monitor/d/d4qZ8JSSz/cephfs-experiment-usage?from=now-12h&to=[…]-experiment=icarus&var-instance=All&orgId=1&var-group=icarus) (updated February 15, 2024):
 
-path              | space      | user quota 
------------------ | ---------- | ---------- 
-`/icarus/app`     | 4.0 TB     | 100 GB     
-`/icarus/data`    | 25 TB      | 300 GB     
+path               | space      | user quota 
+------------------ | ---------- | ---------- 
+`/exp/icarus/app`  |  6 TiB     | 100 GiB     
+`/exp/icarus/data` | 25 TiB     | 300 GiB     
 
 To check these limits: from any accessing node (e.g. GPVM),
-`df -h /icarus/{app,data}` returns the space allocated for the whole experiment,
-while `quota -s -f /icarus/app` (and `/icarus/data`) shows the per-user limit (column `limit`).
-Both areas have a per-user storage limit which can be found with `quota -s`.
+`df -h /exp/icarus/{app,data}` returns the space allocated for the whole experiment and the global usage,
+while the easy-to-remember:
+    
+    getfattr -n ceph.quota.max_bytes -n ceph.dir.rbytes "/exp/icarus/app/users/${USER}"
+    getfattr -n ceph.quota.max_bytes -n ceph.quota.max_bytes "/exp/icarus/app/users/${USER}"
+    getfattr -n ceph.quota.max_bytes -n ceph.dir.rbytes "/exp/icarus/data/users/${USER}"
+    getfattr -n ceph.quota.max_bytes -n ceph.quota.max_bytes "/exp/icarus/data/users/${USER}"
+    
+show in the last line the usage (`ceph.dir.rbytes`) and limit (`ceph.quota.max_bytes`) on the specified directory, in bytes.
 
 
 ### World-visible storage: dCache
@@ -406,11 +413,9 @@ We have three types of dCache areas:
     long
 -   `persistent`: files in this area will not be deleted
 -   `resilient`: area used for files with intense access (like a
-    working area snaphot which is accessed by thousands of jobs)
+    working area snapshot which is accessed by thousands of jobs)
 
 We have a limited quota of space as well, so fill it responsibly.
-More information (including how to remotely access it) can be found in
-the [ICARUS dCache wiki page](ICARUS_dCache_storage.md).
 
 We also have some [StashCache storage](computing/stashCache.md).
 
@@ -481,6 +486,11 @@ writing, the site owners are [Wes Ketchum](mailto:wketchum@fnal.gov) and
 
 ### Communication tools
 
+#### Slack channels
+
+ICARUS shares the Slack workspace `shortbaseline.slack.com` with the whole SBN.
+
+A contact person for that workspace is [Wesley Ketchum](mailto:wketchum@fnal.gov).
 
 #### Mailing lists
 
