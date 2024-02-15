@@ -63,21 +63,8 @@ ICARUS data Keepup processing
 --------------------------
 ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
 
-Accessing files at CNAF
---------------------------
-CNAF files are declared to samweb and can be accessed from grid jobs submitted by analyzers from FNAL.
-Recommended workflow:
-- Identify files  
-`samweb -e icarus get-file-access-url --schema https “file-name.root”`
-- Copy a few files locally for development/testing  
-`ifdh cp -D <url from above command> /path/to/user/data/area/`
-- Submit grid jobs over full sample  
-
-More info about CNAF: https://wiki.infn.it/progetti/icarus/home
-
 Contributing to this wiki
 --------------------------
-
 The content of this wiki is tracked in a GitHub repository [SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io)
 
 
