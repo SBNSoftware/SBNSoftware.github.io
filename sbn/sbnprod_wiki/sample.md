@@ -33,7 +33,7 @@ Our datasets are declared to the SBN SAM instance which is acessible to both SBN
 - checking metadata: `samweb -e sbn get-metadata {filename}`
 - file location: `samweb -e sbn locate-file {filename}`
 
-###Accessing files at CNAF
+### Accessing files at CNAF
 some of ICARUS samples are available at CNAF, those files are declared to samweb and can be accessed from grid jobs from FNAL.
 
 Recommended workflow:
