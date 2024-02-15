@@ -34,19 +34,7 @@ The SBN Production Group is reponsible for MC sample productions for SBND and IC
 
 To submit a request to production, please fill the [SBN Production Request Form](https://forms.gle/V9XkhdwXj7FsxBj28). The responsible parties should be automatically notified but you can also notify the official group email address: [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
-The form is also a checklist of the needed information. If you need help answering any number of the questions on the survey, please contact your group Production liaison (if no liaison is available contact your group convener):
-
-| Working Group | Production liaison |
-| --- | --- |
-| SBN Oscilation | Marco Roda (Marco.Roda@liverpool.ac.uk) |
-| SBN TPC Reco | Dominic Brailsford (d.brailsford@lancaster.ac.uk) |
-| SBN Generators | Marco Roda (Marco.Roda@liverpool.ac.uk) |
-| SBN TPC Sim/Calib | Andrews Scarff (a.scarff@sheffield.ac.uk) |
-| SBN PDS | |
-| SBN CRT | Ivan Leptic (Ivan.Lepetic@rutgers.edu) |
-| SBN Event Selection | |
-
-The status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
+The form is also a checklist of the needed information. If you need help answering any number of the questions on the survey, please contact your group convener and/or production group conveners. Status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
 
 Production Monitoring
 --------------------------
