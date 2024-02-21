@@ -29,6 +29,7 @@ New features
     * The WordIndex struct is there to keep track of the ordering of words in the input fragments after they have been divided up by type.
     * People on ProtoDUNE-SP requested a function that provides the CHStatus word that comes immediately before any given HLT. This function
     is provided in PDSPCTBRawUtils.cxx.
+* SBNSoftware/sbndcode#406: Add a module to convert tpc/plane/wire numbers to offline channel number and electronic numbers. Useful for commissioning.
 
 * SBNSoftware/sbndcode#409: SimChannel Module Label
   * This changes the module label used by the back tracker for SimChannels from simdrift (1D simulation) to simtpc2d:simpleSC (WireCell 2D simulation).
