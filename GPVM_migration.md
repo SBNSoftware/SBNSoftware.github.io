@@ -44,10 +44,11 @@ It mounts:
 - the user home directory,
 - /cvmfs to allow access to CVMFS repositories,
 - /exp to allow access to app and data Ceph volumes,
-- /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point)
+- /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point),
+- the working directory is the user app area.
 
 
 Contact
 ------------------------------------------------------------------------------------------------
 
-For any comment/concern feel free to reach out by email or on slack the SBND/ICARUS CS-Liaison: Vito Di Benedetto
+For any question/comment feel free to reach out by email or on slack the SBND/ICARUS CS-Liaison: Vito Di Benedetto
