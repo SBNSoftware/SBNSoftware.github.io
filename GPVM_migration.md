@@ -42,11 +42,11 @@ this will give the prompt:
 
 The contanier has development packages that allow to build SBN/SBND/ICARUS code stack.
 
-It mounts:
-- the user home directory,
-- /cvmfs to allow access to CVMFS repositories,
-- /exp to allow access to app and data Ceph volumes,
-- /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point),
+Container features:
+- it mounts the user home directory,
+- it mounts /cvmfs to allow access to CVMFS repositories,
+- it mounts /exp to allow access to app and data Ceph volumes,
+- it mounts /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point),
 - the working directory is the user app area.
 
 
