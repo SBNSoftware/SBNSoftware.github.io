@@ -17,7 +17,7 @@ Computing set up test VMs for users to get acquainted with EL9, those nodes are:
 - icarusgpvm-test-al9.fnal.gov
 - sbndgpvm-test-al9.fnal.gov
   
-rispectively for ICARUS and SBND.
+respectively for ICARUS and SBND.
 
 As part of the migration to EL9 build nodes will be upgraded.
 SBND is getting the new build node sbndbuild03 installed with EL9.  
