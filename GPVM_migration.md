@@ -12,7 +12,7 @@ SL7 is reaching EOF on June 30th.
 Computing had many of its services already migrated to EL9 (AlmaLinux9),
 migration for remaining services is underway.
 
-The migration to EL9 will include migration of GPVMs and builds node.
+The migration to EL9 will include migration of GPVMs and build nodes.
 Computing set up test VMs and installed build nodes for users to get acquainted with EL9, those nodes are:
 
 ICARUS:
