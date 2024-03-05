@@ -56,6 +56,7 @@ From the top level of your working area (that you made in step 2), you should "i
 
 There is a concept of marking configurations as _active_ and _inactive_ -- _inactive_ configurations will not be displayed in the RC GUI and cannot be run. Typically we want to label any configuration that should not longer be used as _inactive_: configurations that are outdated, or no longer valid, or just no longer needed.
 
+These functions may not work, if not use the `conftool.py` commands at the bottom of the page.
 `sbndaq` has some additional DB utility functions defined that make declaring configurations active or inactive easier. With sbndaq setup (_and_ `artdaq_database` setup ... so likely do `source ~/DAQ_ProdAreas/DAQ_SHIFTER_CURRENT/DAQInterface/setup_daqinterface.sh` in the current DAQInterface area to be sure to pick it up), you can issue from the commandline:
 
 `markConfigInactive.py <config_name>`
