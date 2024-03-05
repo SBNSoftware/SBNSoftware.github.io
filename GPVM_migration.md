@@ -13,10 +13,12 @@ Computing had many of its services already migrated to EL9 (AlmaLinux9),
 migration for remaining services is underway.
 
 The migration to EL9 will include migration of GPVMs and builds node.
-Computing set up test VMs and installed build nodes for users to get acquainted with EL9, those nodes are:  
+Computing set up test VMs and installed build nodes for users to get acquainted with EL9, those nodes are:
+
 ICARUS:
 - icarusbuild02.fnal.gov
 - icarusgpvm-test-al9.fnal.gov
+
 SBND:
 - sbndbuild03.fnal.gov
 - sbndgpvm-test-al9.fnal.gov
