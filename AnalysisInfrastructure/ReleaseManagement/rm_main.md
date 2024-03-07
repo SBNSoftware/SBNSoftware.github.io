@@ -37,9 +37,9 @@ A Release model based on reviewed Pull Request code development. See [how to dev
 
 # Continuous Integration and validation of the software stack 
 
-All PRs for all flavours are CI tested (LArSoft, SBND, ICARUS):
-* e20: prof c7:prof by GitHub trigger comment. 
-* e20:debug c7:debug nightly.
+Our software stack in sbncode/sbnobj/sbnanaobj/sbndcode/icaruscode/icarusalg, is CI tested (build, unit_test and ci_tests for LArSoft, SBND, ICARUS) for all flavours :
+* e26:prof c14:prof by GitHub trigger commenting in PR. 
+* e26:debug c14:debug nightly by checking out develop.
 
 And full stack tested before released (Jenkins).
 
