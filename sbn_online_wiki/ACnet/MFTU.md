@@ -137,8 +137,8 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 |   A6    |      $1F      |      $1D     |   0   |     ---      |
 |   A7    |      $1F      |      $1D     |   0   |     ---      |
 |   A8    |      $1F      |      $1D     |   0   |     ---      |
-|   A9    |      $1D      |      $1D     |33700us|     PTB      |
-|   A10   |      $1D      |      $1D     |   0   |     ---      |
+|   A9    |      $1D      |      $1D     |32520us|     PTB      |
+|   A10   |      $1D      |      $1D     |32520us|     ---      |
 |   A11   |      $1D      |      $1D     |   0   |     ---      |
 |   A12   |      $1D      |      $1D     |   0   |     ---      |
 |   A13   |      $1D      |      $1D     |   0   |     ---      |
