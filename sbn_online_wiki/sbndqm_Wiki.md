@@ -117,6 +117,25 @@ see the old wiki for a lot of historical detail.
 
 Troubleshooting
 ----------------------------------------------
+The stars have to be aligned for the DQM to work properly; a lot can go wrong. 
+
+## Common "Easy" Checks:
+- The DQM and DAQ have to be running on the same machine, e.g. sbnd-evb04
+- Make sure redis database is on
+
+## If it's still not working...
+- Check your log files, if they exist. Or your terminal output if you try running your online monitoring script from the terminal. It often gives an output that can aid in debugging
+
+## Solutions to Larger Issues:
+
+### SharedMemoryManager Issue:
+Oftentimes, there will be an issue that looks like the following:
+```
+%MSG-e SharedMemoryManager:  Early 12-Mar-2024 10:33:04 CDT JobSetup SharedMemoryManager.cc:280
+Failed to connect to shared memory segment with key 0xee011f62, errno=2 (No such file or directory).  Please check if a stale shared memory segment needs to be cleaned up. (ipcs, ipcrm -m <segId>)
+```
+This occurs when 
+
 
 
 Contributing to this wiki
