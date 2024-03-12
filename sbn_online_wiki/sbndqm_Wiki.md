@@ -115,7 +115,7 @@ see the old wiki for a lot of historical detail.
 * [Older instructions on Github Migration](GithubMigration.md)
 
 
-Troubleshooting
+# Troubleshooting
 ----------------------------------------------
 The stars have to be aligned for the DQM to work properly; a lot can go wrong. 
 
@@ -138,7 +138,7 @@ This occurs when
 
 
 
-Contributing to this wiki
+# Contributing to this wiki
 ----------------------------------------------
 
 
