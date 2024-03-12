@@ -14,15 +14,17 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| 12Mar2024 | DT,MV | Calibration_MINBIAS_Standard_4Hz_WithTPCCompression_Run3_00001 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt| with new FileNAmes, added artdaqFragWatcher, grafana reporting interval: 15s, fastCloning = false, Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
-| 12Mar2024 | DT,MV | Calibration_MINBIAS_1Hz_RL75000_noTrgOverlap_WithTPCCompression_Run3_00002 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | 1Hz with new FileNames, added artdaqFragWatcher, grafana reporting interval: 15s, fastCloning= false,  stale_buffer_timeout_usec: 14000000 , Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
-| 12Mar2024 | DT,MV | Calibration_MINBIAS_2Hz_RL75000_noTrgOverlap_WithTPCCompression_Run3_00002 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | 2Hz with new FileNames, added artdaqFragWatcher, grafana reporting interval: 15s, fastCloning= false,  stale_buffer_timeout_usec: 14000000 , Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
+| 12Mar2024 | DT,MV | Calibration_MINBIAS_Standard_4Hz_WithTPCCompression_Run3_00001 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt| with new FileNAmes, added artdaqFragWatcher, grafana reporting interval: 15s, debug level 1,2,3,11-20, fastCloning = false, Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
+| 12Mar2024 | DT,MV | Calibration_MINBIAS_1Hz_RL75000_noTrgOverlap_WithTPCCompression_Run3_00002 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | 1Hz with new FileNames, added artdaqFragWatcher, grafana reporting interval: 15s, debug level 1,2,3,11-20, fastCloning= false,  stale_buffer_timeout_usec: 14000000 , RL75000 in pmt_standard. Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
+| 12Mar2024 | DT,MV | Calibration_MINBIAS_2Hz_RL75000_noTrgOverlap_WithTPCCompression_Run3_00002 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | 2Hz with new FileNames, added artdaqFragWatcher, grafana reporting interval: 15s, debug level 1,2,3,11-20, fastCloning= false,  stale_buffer_timeout_usec: 14000000 , RL75000 in pmt_standard. Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
 
 ### Physics
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
-| 12Mar2024 | DT | Physics_ |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_DAQTest00002 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
+| 12Mar2024 | DT | Physics_Standard_Both_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Both (Adders +Mj), with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
+| 12Mar2024 | DT | Physics_Standard_Mj_Only_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Mj Only, with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
+| 12Mar2024 | DT | Physics_Standard_Adders_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Adders only, with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
 
 ## Presently used configurations
 ### Physics [ as on 10/06/2023 after retiring campaign] 
