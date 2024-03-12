@@ -130,15 +130,15 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 | Channel | Trigger Event | Arming Event | Delay | Connected to |
 | ------- | ------------- | ------------ | ----- | ------------ |
 |   A1    |      $1F      |      $1D     |   0   |     PTB      |
-|   A2    |      $1F      |      $1D     |   0   |     ---      |
-|   A3    |      $1F      |      $1D     |   0   |     ---      |
-|   A4    |      $1F      |      $1D     |   0   |     ---      |
+|   A2    |      $1F      |      $1D     |   0   |     TDC      |
+|   A3    |      $1F      |      $1D     |   0   | CAEN9 Ch0    |
+|   A4    |      $1F      |      $1D     |   0   | CAEN9 TrigIn |
 |   A5    |      $1F      |      $1D     |   0   |     ---      |
 |   A6    |      $1F      |      $1D     |   0   |     ---      |
 |   A7    |      $1F      |      $1D     |   0   |     ---      |
 |   A8    |      $1F      |      $1D     |   0   |     ---      |
 |   A9    |      $1D      |      $1D     |32520us|     PTB      |
-|   A10   |      $1D      |      $1D     |32520us|     ---      |
+|   A10   |      $1D      |      $1D     |32520us|    not used  |
 |   A11   |      $1D      |      $1D     |   0   |     ---      |
 |   A12   |      $1D      |      $1D     |   0   |     ---      |
 |   A13   |      $1D      |      $1D     |   0   |     ---      |
