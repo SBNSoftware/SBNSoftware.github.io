@@ -11,6 +11,7 @@ When the configuration is no longer used, please move the information to another
 
 ## Run3 Configurations
 ### Calibrations
+
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
 | 12Mar2024 | DT,MV | Calibration_MINBIAS_Standard_4Hz_WithTPCCompression_Run3_00001 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt| with new FileNAmes, added artdaqFragWatcher, grafana reporting interval: 15s, fastCloning = false, Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
@@ -18,7 +19,9 @@ When the configuration is no longer used, please move the information to another
 | 12Mar2024 | DT,MV | Calibration_MINBIAS_2Hz_RL75000_noTrgOverlap_WithTPCCompression_Run3_00002 |  boot_MinBias_VeryHighRate_multiple_art_processes.txt | 2Hz with new FileNames, added artdaqFragWatcher, grafana reporting interval: 15s, fastCloning= false,  stale_buffer_timeout_usec: 14000000 , Requires DAQ area DAQ_2024-02-29_REL_v1_09_02 or newer.  |
 
 ### Physics
+
 | date | responsible | name | bootfile | description |
+| ---- | ----------- | ---- | -------- | ----------- |
 | 12Mar2024 | DT | Physics_ |  boot_Majority_moreEvb.txt | cloned from Physics_General_thr390_Majority_5_9_OverlappingWindow_wr_0_LockTemp_newpeds_win_10s_DAQTest00002 with updated Grafana metrics and pmt_standard.fcl changes by M. Vicenzi  |
 
 ## Presently used configurations
