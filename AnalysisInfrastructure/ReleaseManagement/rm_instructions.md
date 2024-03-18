@@ -21,9 +21,11 @@ in release management, these include:
 ## SBN Release instructions for an SBN software stack build, release and distribution.
 
 Different release instructions for:
-   * sbncode and partners
-   * sbnana
-   * sbndata
+   * sbncode and partners (standard packages)
+   * Especially managed packagens:
+    	*  sbndaq_artdaq_core
+   	* sbnana
+   	* sbndata
    * Production release peculiarities 
 
 
@@ -77,15 +79,26 @@ from `ScisoftScripts` folder. This will fetch the build artifacts (tarballs and 
 ### Notify and distribute Release notes:
 Send/post release notes (currently email/slack with changes) and let SBND and ICARUS release distributors know.
 
-## sbnana
-(to be documented)
+## Especially managed packages:
 
-## sbndata
+### sbndaq_artdaq_core
+Diferent branches exist and are mantained for the DAQ. Currently the SBN RM team only manages the `offline` branch of sbndaq_artdaq_core updating it as needed for the offline software (when sbncode/larsoft or especific PRs for offline requires it to be updated) It requies local tests (not GitHub triggered CI) tagging (following v1_08_00of4 numbering scheme) and merging into the `offline` branch. Note the `develop` branch is kept for online DAQ as well as sbndaq_artdaq package, manged by the DAQ in a differnt way, FYI:   
+
+>integrating them into the next sbndaq release. Meanwhile, if you need them for running the daq, you can set up a new daq dev area and merge your PRs. Please note that we do not merge PRs directly into the develop branch; instead, PRs are merged into release/v1_xx_xx branches. They are then run through integration tests on both Icarus and SBND clusters, followed by standalone builds in the Jenkins environment, and deployed into the /software/products directory. Only after that is the release branch merged into develop. (by Gennadiy)
+
+
+### sbnana
+sbnana repository does not have CI enabled. For release proposes, developers are kindly requested/reminded to test-build themselves their PRs and note the details (flavour used) in the PR. The Release Manager then builds a local release with a complementary flavour. 
+Procedure is similar to sbncode above just noting some differences i.e. `source SBN/setup_build_sbnana.sh <version> <quals>` 
+
+
+
+### sbndata
 
 sbndata is a package designed to contain external data needed for SBN. It is also versioned with tags and released as ups product available from `/cvmfs/sbn.opensciencegrid.org/products/sbn` (so distribution is similar to others). Nevertheless, it is not built (has no architecture) nor mrb handled.
 
-As a data product checks are on the developer (analyser) and update (merging) is handled via GitHub pull request. Once ready, merge the update and create a new tag in GitHub.
-### ups product declare and distribution
+As a data product, checks are on the developer (analyser) and update (merging) is handled via GitHub pull request. Once ready, merge the update and create a new tag in GitHub.
+#### ups product declare and distribution
 In a data directory, clone (or checkout) the updated sbndata, declare the product and distribute it
 
 `cd /exp/sbnd/data/users/mnebot/sbndata/sbndata`
@@ -174,3 +187,13 @@ mrb g sbnanaobj@v09_17_06_01 
 git checkout -b feature/miquelnebot_prodCAFfix
 git cherry-pick dedb4687017d111bb938f09ec5fbec7bdd7a3516
 git push origin feature/miquelnebot_prodCAFfix 
+
+
+### Working with forks
+
+when merging locally 
+
+ git remote add gitusername https://github.com/gitusername/repo_url.git
+ git pull gitusername
+ git merge gitusername/PR_branch_name
+ 
