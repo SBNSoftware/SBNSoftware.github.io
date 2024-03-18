@@ -33,14 +33,20 @@ Computing understands that there could be the need to be able to use
 SL7 nodes during the migration and possibly also shortly after the migration.  
 For this purpose we are preparing SL7 containers that can be used on
 EL9 GPVMs and build nodes to run some SL7 task, as code development.
-The contanier has development packages that allow to build SBN/SBND/ICARUS code stack.
+The contanier has development packages that allow to build SBN/SBND/ICARUS code stack.  
+We would evaluate requests to install new packages during the test phase,
+though we are also trying to minimize the number of packages installed in the SL7 container.
+The rationale is that less packages we have, lower is the chance that some package would have
+critical vulnerabilities that could require to remove packages from the container.
+This would be a problem when SL7 repositories will be archived,
+because at that point we wouldn't be able to rebuild the container to exclude packages.
 
 To start the SL7 container users can run the following script:  
 `sh /exp/$(id -ng)/data/users/vito/podman/start_Sl7dev.sh`  
 this will give the prompt:  
 `Apptainer>`
 
-It could be needed to source the bashrc script from withing the SL7 container to get it more similar to usual SL7 VMs.  
+It could be needed to source the bashrc script from inside the SL7 container to get a look&feel more similar to usual SL7 VMs.  
 `source ~/.bashrc`
 
 Container features:
