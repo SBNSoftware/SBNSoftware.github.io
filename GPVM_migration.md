@@ -56,6 +56,14 @@ Container features:
 - it mounts /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point),
 - the working directory is the user app area.
 
+Grid job submission
+------------------------------------------------------------------------------------------------
+
+The SL7 development container doesn't allow the install of jobsub_lite. This means that users will need to submit jobs from the EL9 node.  
+If users needs to submit jobs using custom SL7 code build in the SL7 container, the code is accessible from the EL9 node,
+where jobsub_lite can access the SL7 custom code to be used in grid jobs. Make sure to use the jobsub_submit option:  
+`--singularity-image /cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-sl7:latest`  
+to make sure jobs on the grid run in a SL7 container.
 
 Contact
 ------------------------------------------------------------------------------------------------
