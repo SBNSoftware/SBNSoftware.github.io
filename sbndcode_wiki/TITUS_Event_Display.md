@@ -14,7 +14,7 @@ It is currently used by MicroBooNE, SBND and ICARUS.
 
 From an sbndgpvm, run
 
-    source /exp/sbnd/app/users/twester/static_evd/setup.sh
+    source /sbnd/app/users/twester/static_evd/setup.sh
 
 For SBND, start the event display with
 
@@ -26,7 +26,7 @@ For ICARUS, use
 
 For the pre-2024 versions of TITUS (<1.3.1), source the following script instead
 
-    source /exp/sbnd/app/users/mdeltutt/static_evd/setup.sh
+    source /sbnd/app/users/mdeltutt/static_evd/setup.sh
 
 ## Basic usage
 
@@ -79,7 +79,7 @@ ups products.
 It also needs PyQt and pyqtgraph. You should be using python3. In
 python3, you can `pip install pyqt pyqtgraph`.
 
-Then\
+Then
 
     git clone https://github.com/coreyjadams/gallery-framework.git
     cd gallery-framework
@@ -95,31 +95,30 @@ That\'s it!
 
 ### Preview build, 2024+
 
-Setup `sbndcode` or `icaruscode` via UPS.
+Setup one or both of `sbndcode` and `icaruscode` via UPS, then also set up `cetmodules` via UPS.
 
-TITUS's build system will be switched to `cmake`. Currently, you must check out a feature branch `feature/twester_gui`\
+TITUS's build system will be switched to `cmake`. Currently, you must check out a feature branch `feature/twester_gui`
 
     git clone https://github.com/coreyjadams/gallery-framework.git
     cd gallery-framework
     git checkout feature/twester_gui
-\
 
-Next, create a folder for build files and run `cmake`:\
+
+Next, create a folder for build files and run `cmake`:
 
     cd /path/to/titus/build
     cmake /path/to/gallery-framework -DCMAKE_INSTALL_PREFIX=/path/to/install
-    cmake . --build
-    cmake . --install
+    cmake --build .
+    cmake --install .
 
-\
 
-As before, TITUS requires Python with ROOT support and several additional packages. If you have set up `sbndcode` from UPS, you should already have Python with ROOT support. From there, additional packages may be installed via `pip`. To stay organized, it is recommended to first create a virtual environment via\
+As before, TITUS requires Python with ROOT support and several additional packages. If you have set up `sbndcode` from UPS, you should already have Python with ROOT support. From there, additional packages may be installed via `pip`. To stay organized, it is recommended to first create a virtual environment via
 
     python -m venv ~/.venv/titus
     source ~/.venv/titus/bin/activate
 
-\
-Then install the additional packages with `pip install <package name>`:\
+
+Then install the additional packages with `pip install <package name>`:
 
     PyQt5
     pyqtgraph
