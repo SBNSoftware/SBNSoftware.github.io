@@ -42,7 +42,7 @@ This would be a problem when SL7 repositories will be archived,
 because at that point we wouldn't be able to rebuild the container to exclude packages.
 
 To start the SL7 container users can run the following script:  
-`sh /exp/$(id -ng)/data/users/vito/podman/start_Sl7dev.sh`  
+`sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh`  
 this will give the prompt:  
 `Apptainer>`
 
