@@ -22,6 +22,8 @@ When the configuration is no longer used, please move the information to another
 
 | date | responsible | name | bootfile | description |
 | ---- | ----------- | ---- | -------- | ----------- |
+| 25Mar2024 | DT | Physics_Standard_Both_WithTPCCompression_newPrescales_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Both (Adders +Mj), with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false, extended NuMI gate width to 15 microsecs, reduced prescales: on-beam BNB=40, on-beam NuMI=30 (off-beams 20,20, unchanged)|
+| 25Mar2024 | DT | Physics_Standard_Both_WithTPCCompression_Run3_00002 |  boot_Majority_moreEvb.txt |  trigger on Both (Adders +Mj), with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false, extended NuMI gate width to 15 microsecs |
 | 12Mar2024 | DT | Physics_Standard_Both_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Both (Adders +Mj), with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
 | 12Mar2024 | DT | Physics_Standard_Mj_Only_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Mj Only, with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
 | 12Mar2024 | DT | Physics_Standard_Adders_WithTPCCompression_Run3_00001 |  boot_Majority_moreEvb.txt |  trigger on Adders only, with new FileNAmes, artdaqFragWatcher, grafana reporting interval : 15s, debug level 1,2,3,11-20, fastCloning=false,  |
