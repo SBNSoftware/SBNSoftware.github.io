@@ -26,6 +26,26 @@ SBND:
 As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired by June 30th.
 This will affect sbndbuild01/02 and icarusbuild01.
 
+Migration to EL9 schedule
+------------------------------------------------------------------------------------------------
+
+The schedule of the GPVMs migration to EL9 is as follow:  
+ICARUS:  
+Nodes            | Date
+:----------------| :-----------------
+icarusgpvm0[4-6] | April 4th 2024
+icarusgpvm0[23]  | April 30th 2024
+icarusgpvm01     | sometime in June 2024
+
+
+SBND:  
+Nodes         | Date
+:-------------| :-----------------
+sbndgpvm0[34] | April 2nd 2024
+sbndgpvm02    | April 30th 2024
+sbndgvpm01    | sometime in June 2024
+
+
 SL7 development container
 ------------------------------------------------------------------------------------------------
 
