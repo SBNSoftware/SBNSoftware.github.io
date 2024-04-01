@@ -30,17 +30,18 @@ Migration to EL9 schedule
 ------------------------------------------------------------------------------------------------
 
 The schedule of the GPVMs migration to EL9 is as follow:  
-ICARUS:  
+ICARUS:
+
 Nodes            | Date
-:----------------| :-----------------
+:----------------| :---------------------
 icarusgpvm0[4-6] | April 4th 2024
 icarusgpvm0[23]  | April 30th 2024
 icarusgpvm01     | sometime in June 2024
 
+SBND:
 
-SBND:  
 Nodes         | Date
-:-------------| :-----------------
+:-------------| :---------------------
 sbndgpvm0[34] | April 2nd 2024
 sbndgpvm02    | April 30th 2024
 sbndgvpm01    | sometime in June 2024
