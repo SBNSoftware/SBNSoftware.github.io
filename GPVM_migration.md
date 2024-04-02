@@ -9,7 +9,7 @@ GPVM migration
 ------------------------------------------------------------------------------------------------
 
 SL7 is reaching EOF on June 30th.
-Computing had many of its services already migrated to EL9 (AlmaLinux9),
+Computing had many of its services already migrated to EL9 (aka AL9, AlmaLinux9),
 migration for remaining services is underway.
 
 The migration to EL9 will include migration of GPVMs and build nodes.
