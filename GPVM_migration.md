@@ -26,6 +26,8 @@ SBND:
 As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired by June 30th.
 This will affect sbndbuild01/02 and icarusbuild01.
 
+📣 **⚠️ crontabs need to be "migrated" manually by users ⚠️**
+
 Migration to EL9 schedule
 ------------------------------------------------------------------------------------------------
 
