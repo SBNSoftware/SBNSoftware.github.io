@@ -54,7 +54,7 @@ Computing understands that there could be the need to be able to use
 SL7 nodes during the migration and possibly also shortly after the migration.  
 For this purpose we are preparing SL7 containers that can be used on
 EL9 GPVMs and build nodes to run some SL7 task, as code development.
-The contanier has development packages that allow to build SBN/SBND/ICARUS code stack.  
+The container has development packages that allow to build SBN/SBND/ICARUS code stack.  
 We would evaluate requests to install new packages during the test phase,
 though we are also trying to minimize the number of packages installed in the SL7 container.
 The rationale is that less packages we have, lower is the chance that some package would have
