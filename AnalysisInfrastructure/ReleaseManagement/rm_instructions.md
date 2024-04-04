@@ -91,6 +91,16 @@ Send/post release notes (currently email/slack with changes) and let SBND and IC
 
 ## Especially managed packages:<a name="especialpackages"></a>
 
+### submodules (e.g. SUPERA)
+After merging the sbncode PR, submodule tracking neeeds to be updated:
+
+
+    git submodule update --remote
+    git add -u
+    git commit -m "Updated commit hashtag for Supera"
+
+
+
 ### sbndaq_artdaq_core
 Different branches exist and are maintained for the DAQ. Currently, the SBN RM team only manages the `offline` branch of sbndaq_artdaq_core updating it as needed for the offline software (when sbncode/larsoft or specific PRs for offline require it to be updated) It requires local tests (is not GitHub-triggered CI, although other packages CIs checks it out, so feature branches could be tested from other packages GH comments) tagging (following v1_08_00of4 numbering scheme) and merging into the `offline` branch. Note the `develop` branch is kept for online DAQ as well as the sbndaq_artdaq package, managed by the DAQ in a different way, FYI:   
 
