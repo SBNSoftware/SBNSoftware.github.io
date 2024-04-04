@@ -91,8 +91,8 @@ files.
 What configuration to use?
 -----------------------------------------------------------------------------------------
 These are the latest and (at the time of writing) more accurate flux configurations to use.
-- **Small window** (used for most productions): **configH**
-- **Large window** (used for the dirt events production): **configI**
+- **Small window** (used for most productions): **configK**
+- **Large window** (used for the dirt events production): **configL**
 
 
 A note about pre H configurations
