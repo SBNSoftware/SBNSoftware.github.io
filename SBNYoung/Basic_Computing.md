@@ -24,7 +24,10 @@ All key information and connection details for relevant meetings will be sent ou
 SSH stands for Secure Shell Protocol. We use it for remote login onto Fermilab servers.
 
 The basic command structure is
-`ssh -KXY mking@dunegpvm13@fnal.gov`
+`ssh -KXY <FNAL_username>@<experiment_server>.fnal.gov`
+
+For example:
+`ssh -KXY mking@dunegpvm13.fnal.gov`
 ##### Configuration Files
 On your local computer, there are configuration files that specify some configurations for connecting to remote servers. There are system-wide and user-specific configuration files, with the user-specific ones taking precedence. 
 
