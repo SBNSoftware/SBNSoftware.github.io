@@ -29,6 +29,8 @@ Developing in sbndqm
 ----------------------------------------------
 sbndqm depends on _offline_ software, namely `sbncode`, and should be able to be developed in both online and offline computing environments.
 
+### Development in Offline Machine
+
 To setup a development environment in an an offline machine (like `icarusgpvm, sbndgpvm`):
 ```
 source /cvmfs/fermilab.opensciencegrid.org/products/artdaq/setup
@@ -60,7 +62,9 @@ mrb g icaruscode@v09_75_03_02
 ```
 Here, `feature/update_Aug2023` is the name of a branch in the `sbndqm`-related repositories that has needed updates. `v09_75_03_02` is the tag in the other offline repositories that points to the stable release (at those version numbers), in this case for ICARUS. Oftentimes it may be necessary to pull down and rebuild offline code (even if it hasn't changed) in order to get properly updated dependencies: in this case, a dependency on `sbndaq_artdaq_core`. In many cases however, you may only need one branch (like `sbndqm`).
 
+### Development in Online Machine
 
+#### Generic Development Area Setup
 To setup a development environment in an online machine (like `icarus-evb01`, `sbn-daq01`):
 ```
 source /daq/software/products/setup
@@ -80,6 +84,33 @@ mrbsetenv
 mrb i -j8
 ```
 
+#### Newest Development Area Setup
+The latest SBNDQM version, the one currently in use, is v1_03_00. It does not have an official tagged release yet, so its setup is nontrivial. There are some other products it is necessary to acquire first.
+``` shell
+cd DQM_DevAreas/
+source /daq/software/products/setup
+setup mrb
+export MRB_PROJECT=sbndqm
+mkdir your_dev_area
+cd your_dev_area/
+mrb newDev -v v1_03_00 -q e26:prof
+source localProducts_sbndqm_v1_03_00_e26_prof/setup
+cd srcs/
+mrb g sbndaq_online@release/v1_01_00
+mrb g sbndqm@release/v1_03_00
+cd /home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/srcs/sbndqm/ups
+rm product_deps
+cp /home/nfs/sbnddqm/DQM_DevAreas/MJ_27Mar2024/srcs/sbndqm/ups/product_deps ./
+cd /home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/srcs/sbndaq_online/ups
+rm product_deps
+cp /home/nfs/sbnddqm/DQM_DevAreas/MJ_27Mar2024/srcs/sbndaq_online/ups/product_deps ./
+cd $MRB_BUILDDIR
+mrbsetenv
+mrb i -j8
+mrbslp
+```
+
+### Using your local build
 
 When you then build in the future, you just need to source the products area (`source` commands above) and then do:
 ```
@@ -89,6 +120,22 @@ source localProducts_sbndqm_*/setup
 mrbsetenv
 mrb i -j8
 ```
+
+#### Source Online sbndqm v1_03_00 Dev Area
+``` shell
+MRBDIR=/home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/
+cd $MRBDIR
+source /daq/software/products/setup
+setup mrb
+source localProducts_sbndqm_v1_03_00_e26_prof/setup
+mrbsetenv
+unsetup artdaq_core
+setup artdaq_core v3_09_15 -q e26:prof:s120a
+setup artdaq v3_12_07 -f Linux64bit+3.10-2.17 -q e26:prof:s120a -z /daq/software/products
+cd $MRB_SOURCE/sbndqm/installations/sbn-nd
+```
+
+### Start Redis Database
 
 How to start the redis on sbnd-db01:
 

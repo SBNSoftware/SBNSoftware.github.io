@@ -51,7 +51,17 @@ This declares the configuration for sshing into the dunegpvm13 machine
 - ForwardX11 allows for the -X option when sshing e.g. `ssh -XY mking@dunegpvm13@fnal.gov`. This allows for popup windows when sshing
 - User mking specifies that I can ssh onto this host as that user
 - GSSAPIDelegateCredentials passes on your kerberos identity/authentication onto your user on the server.
-###### Local Forwarding
+
+##### Options
+See: [https://explainshell.com/explain?cmd=ssh+-X](https://explainshell.com/explain?cmd=ssh+-X), [https://goteleport.com/blog/x11-forwarding/](https://goteleport.com/blog/x11-forwarding/).
+
+-X Enables X11 forwarding. "X11 Forwarding is an SSH protocol that enables users to run graphical applications on a remote server and interact with them using their local display and I/O devices." - [source](https://goteleport.com/blog/x11-forwarding/)
+
+-Y enables **trusted** X11 forwarding.
+
+-K Enables GSSAPI-based authentication (Kerberos) and forwarding (delegation) of GSSAPI credentials to the server.
+
+##### Local Forwarding
 
 
 
