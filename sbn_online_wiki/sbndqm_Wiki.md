@@ -85,7 +85,7 @@ mrb i -j8
 ```
 
 #### Newest Development Area Setup
-The latest SBNDQM version, the one currently in use, is v1_03_00. It does not have an official tagged release yet, so its setup is nontrivial. There are some other products it is necessary to acquire first.
+The latest SBNDQM version, the one currently in use in SBND, is v1_03_00. It does not have an official tagged release yet, so its setup is nontrivial. There are some other products it is necessary to acquire first.
 ``` shell
 cd DQM_DevAreas/
 source /daq/software/products/setup
