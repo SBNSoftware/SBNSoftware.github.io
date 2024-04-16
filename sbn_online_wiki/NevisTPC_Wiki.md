@@ -22,6 +22,9 @@ We use DAQInterface (located in srcs/sbndaq/sbn-nd/DAQInterface/) to start and s
 
 **Overview of Nevis TPC board reader and links to fcl file**
 ========================================================================================================================
+The more detailed overview of Nevis system is found at:
+https://sbnsoftware.github.io/sbndaq_oldwiki/SBND_TPC_DAQ.html
+Here, a few things related to running Nevis TPc boardreader and running DAQ are outlined
 Nevis TPC boardreader is:
 https://cdcvs.fnal.gov/redmine/projects/sbndaq/repository/artdaq/revisions/master/entry/sbndaq-artdaq/Generators/SBND/NevisTPC/NevisTPC2StreamNUandSNXMIT_generator.cc
 which reads out two parallel data streams-
@@ -105,8 +108,11 @@ in tpc01.fcl https://cdcvs.fnal.gov/redmine/projects/sbndaq/repository/revisions
 daq.fragment_receiver.receive_requests: false
 daq.fragment_receiver.request_mode: ignored
 
-
-
+**Running TPCs using external trigger source**
+========================================================================================================================
+As mentioned above, these two config files should be used when triggering DAQ with external trigger source-fake_NevisTPC2StreamEXT_driver.fcl and NevisTPC2StreamEXT_driver.fcl to run with fake-data configuration and real-data respectively
+using external triggers for instance trigger from Penn Trigger Board (PTB) or from function generator.
+It's always recommended to use PTB as an external trigger source since we can control when to start and stop PTB within software using user_settings file in DAQInterface directory. In case, someone wants to trigger DAQ using a function generator, then trigger should be turned ON only after configuring hardware including Nevis trigger board and when DAQ is in running/starting state otherwise this configuration can result in backpressure on the event builders and can leave DAQ in a state where event builders are not able to collect data. 
 
 
 
