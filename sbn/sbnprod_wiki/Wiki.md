@@ -47,6 +47,8 @@ Here is the [dcache use by pool group page](https://fifemon.fnal.gov/monitor/d/r
 
 Here you can find the [dcache persistant usage by VO](https://lsvip.fnal.gov/monitor/d/000000175/dcache-persistent-usage-by-vo?orgId=1)
 
+Tape usage for ICARUS can be found at [this page](https://fifemon.fnal.gov/monitor/d/BSnVdWDnk/tape-data?orgId=1&var-Experiment=icarus&var-FileFamily=All&from=now-1y&to=now).
+
 ICARUS data Keepup processing
 --------------------------
 ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
