@@ -36,17 +36,17 @@ Migration to EL9 schedule
 The schedule of the GPVMs migration to EL9 is as follow:  
 ICARUS:
 
-Nodes            | Date
-:----------------| :---------------------
-icarusgpvm0[23]  | April 30th 2024
-icarusgpvm01     | sometime in June 2024
+| Nodes            | Date |
+| :----------------| :---------------------|
+| icarusgpvm0[23]  | April 30th 2024 |
+| icarusgpvm01     | sometime in June 2024 |
 
 SBND:
 
-Nodes         | Date
-:-------------| :---------------------
-sbndgpvm02    | April 30th 2024
-sbndgvpm01    | sometime in June 2024
+| Nodes         | Date |
+| :-------------| :--------------------- |
+| sbndgpvm02    | April 30th 2024 |
+| sbndgvpm01    | sometime in June 2024 |
 
 
 SL7 development container
@@ -66,19 +66,29 @@ because at that point we wouldn't be able to rebuild the container to exclude pa
 
 To start the SL7 container users can run the following script:  
 `sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh`  
-this will give the prompt:  
-`Apptainer>`
-
-It could be needed to source the bashrc script from inside the SL7 container to get a look&feel more similar to usual SL7 VMs.  
-`source ~/.bashrc`
+The script takes care to source `~/.profile` and/or `~/.bash_profile`. 
 
 Container features:
 - it mounts the user home directory,
 - it mounts /cvmfs to allow access to CVMFS repositories,
 - it mounts /exp to allow access to app and data Ceph volumes,
 - it mounts /pnfs to allow access to dCache (make sure to not overload the /pnfs mount point),
-- the working directory is the user app area.
+- on build nodes it mounts /scratch area,
+- the working directory is the current directory.
 
+SL7 development container with jobsub_lite support
+------------------------------------------------------------------------------------------------
+
+There is also an SL7 container with support for `jobsub_lite`.
+
+To start this SL7 container users can run the following script:  
+`sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev_jsl.sh`  
+
+This container is equivalent to the SL7 development container, with only additions to allow `jobsub_lite` to work.
+Because of the nature of the additional packages included in this container, this could suffer the lack of updates once SL7 reaches EOL.
+This could result in jobsub_lite to become broken in this container.
+
+<!--
 Grid job submission
 ------------------------------------------------------------------------------------------------
 
@@ -87,6 +97,7 @@ If users need to submit jobs using custom SL7 code build in the SL7 container, t
 where jobsub_lite can access the SL7 custom code to be used in grid jobs. Make sure to use the jobsub_submit option:  
 `--singularity-image /cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-sl7:latest`  
 to make sure jobs on the grid run in a SL7 container.
+-->
 
 Contact
 ------------------------------------------------------------------------------------------------
