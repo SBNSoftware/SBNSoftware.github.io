@@ -18,12 +18,12 @@ Computing set up test VMs and installed build nodes for users to get acquainted 
 ICARUS:
 - icarusbuild02.fnal.gov
 - icarusgpvm-test-al9.fnal.gov
-- icarusgpvm0[4-6].fnal.gov
+- icarusgpvm0[2-6].fnal.gov
 
 SBND:
 - sbndbuild03.fnal.gov
 - sbndgpvm-test-al9.fnal.gov
-- sbndgpvm0[34].fnal.gov
+- sbndgpvm0[2-4].fnal.gov
 
 As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired by June 30th.
 This will affect sbndbuild01/02 and icarusbuild01.
@@ -38,14 +38,12 @@ ICARUS:
 
 | Nodes            | Date |
 | :----------------| :---------------------|
-| icarusgpvm0[23]  | April 30th 2024 |
 | icarusgpvm01     | sometime in June 2024 |
 
 SBND:
 
 | Nodes         | Date |
 | :-------------| :--------------------- |
-| sbndgpvm02    | April 30th 2024 |
 | sbndgvpm01    | sometime in June 2024 |
 
 
@@ -66,7 +64,7 @@ because at that point we wouldn't be able to rebuild the container to exclude pa
 
 To start the SL7 container users can run the following script:  
 `sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh`  
-The script takes care to source `~/.profile` and/or `~/.bash_profile`. 
+The script takes care to source `/etc/profile`, `~/.profile` and/or `~/.bash_profile`. 
 
 Container features:
 - it mounts the user home directory,
