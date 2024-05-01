@@ -177,7 +177,7 @@ The nodes are called: `icarusgpvm0X.fnal.gov` and `icarusbuild0X.fnal.gov`
 (see [ICARUS GPVM page](ICARUS_servers.md) for more details).
 
 With SL7 reaching EOL on June 30, 2024 GPVMs are being migrated to EL9.
-In case users have the need to use SL7, the is the possibility to use SL7 dev container.
+In case users have the need to use SL7, there is the possibility to use SL7 dev container.
 More details are in the [GPVM migration](https://sbnsoftware.github.io/GPVM_migration) wiki page.
 
 The GPVM interactive machines have no relevant local storage,
