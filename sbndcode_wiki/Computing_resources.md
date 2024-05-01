@@ -110,12 +110,13 @@ The nodes and their OS version are:
  Node                 |  OS   
 ----------------------|-------
  `sbndgpvm01.fnal.gov` | SLF 7 
- `sbndgpvm02.fnal.gov` | SLF 7 
- `sbndgpvm03.fnal.gov` | SLF 7 
- `sbndgpvm04.fnal.gov` | SLF 7 
- `sbndgpvm-test-al9.fnal.gov` | Alma 9 
+ `sbndgpvm02.fnal.gov` | EL9 
+ `sbndgpvm03.fnal.gov` | EL9 
+ `sbndgpvm04.fnal.gov` | EL9 
+ `sbndgpvm-test-al9.fnal.gov` | EL9 
  `sbndbuild01.fnal.gov` | SLF 7 
  `sbndbuild02.fnal.gov` | SLF 7 
+ `sbndbuild03.fnal.gov` | EL9 
 
 
 
@@ -132,6 +133,9 @@ jobs beyond the size of a test job (say, 100 events).
 [Information about all SBND GPVM's](SBND_servers.html) is
 on a [separate page](SBND_servers.md).
 
+With SL7 reaching EOL on June 30, 2024 GPVMs are being migrated to EL9.
+In case users have the need to use SL7, there is the possibility to use SL7 dev container.
+More details are in the [GPVM migration](https://sbnsoftware.github.io/GPVM_migration) wiki page.
 
 
 Opening a ticket in Fermilab Service Desk
