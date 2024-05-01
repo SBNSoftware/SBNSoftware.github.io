@@ -57,6 +57,7 @@ Monte Carlo productions
 * notes from specific projects:
     * [samples used for NuMI interactions](samples/NuMI.md)
     * [samples used for trigger simulation](samples/trigger_simulation.md)
+    * [samples used for optical reconstruction](samples/opreco.md)
 * [finding _data_ files](samples/datafiles.md)
 
 
