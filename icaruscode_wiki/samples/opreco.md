@@ -17,15 +17,19 @@ Link to datasheet      |  [`11813`](https://docs.google.com/spreadsheets/d/1dQk0
 Run period             | Run3
 Date                   | `2024-03-18 17:00`     | `2024-03-20 14:17`
 Duration               | `17:42:18`             | `20:24:33`
-NuMI repetition rate   | 14/15 (0.933 Hz)
-BNB repetition rate    | 4× NuMI (3.733 Hz)
-NuMI PoT/spill         | 3.3·10¹³ (mode)        | 3.7·10¹³ (mode)
-BNB  PoT/spill         | 4.16·10¹² (mode)       | 3.20·10¹² (mode) 
+NuMI repetition rate   | 14/15 (0.933 Hz) (base)
+BNB repetition rate    | 4× NuMI (3.733 Hz) (base)
+NuMI PoT/spill         | 3.3 · 10¹³ (mode)      | 3.7 · 10¹³ (mode)
+BNB  PoT/spill         | 4.16 · 10¹² (mode)     | 3.20 · 10¹² (mode) 
 Events                 | ≥`45840`               | ≥`55534`
 Trigger configuration  | physics, majority only | physics standard
 Notes                  | extended NuMI beam gate: 15 µs
 
-(when values in the table are the same as the previous column they are not repeated)
+> [!NOTE]
+>  * When values in the table are the same as the previous column they are not repeated.
+>  * "Base" repetition rates: "nominal" and determined by the accelerator parameters, it does not include temporary configuration changes or dead times.
+>  * "Mode" beam intensity: where the main peak of intensity spill by spill is located; it does not include dead times.
+
 
 
 #### Processing information
