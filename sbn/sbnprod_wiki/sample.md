@@ -23,7 +23,7 @@ More information about the workflow can be found at the [SBN Analysis Infrastruc
 How to access the samples
 --------------------------
 
-Our datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should specify the SBN instance with `samweb -e sbn`, following are some useful commands:
+MC sample datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should specify the SBN instance with `samweb -e sbn`, following are some useful commands:
 
 ### Definition commands
 - checking definition files: `samweb -e sbn list-definition-files {definition}`
@@ -376,12 +376,14 @@ Processed Data SBN Production Samples
 ICARUS DATA
 --------------------------
 
+
+ICARUS Reconstructed DATA
+--------------------------
+
 ### Notes on samples ###
 * Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
 * Run 1 batch 2 is the processing of run_number > 7621 and run_number < 8460 (before the update to the new DAQ configuration)
 * Run 1 batch 3 is the processing of run_number >= 8460 and run_number < 8598 (after the update to the new DAQ configuration resulting in 8 new data stream: (offbeam) BNB/NuMI Majority/MinBias)
-
- 
 
 | Sample Description | production push | release version | # Events | Sample type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- | 
@@ -417,3 +419,17 @@ ICARUS DATA
 | --- | --- | --- | 333097 | stage1 | IcarusProd_Run1_reprocess_NuMIstream_stage1 |
 | BNB stream | Run 1 reprocessing | v09_37_02_01 | 627484 | stage0 | IcarusProd_Run1_reprocess_BNBstream_stage0	| 
 | --- | --- | --- | 627484 | stage1 | IcarusProd_Run1_reprocess_BNBstream_stage1 |
+
+ICARUS Compressed RAW DATA
+--------------------------
+
+| Run | datastream | SAM dataset | Files failed Compression |     
+| --- | --- | --- | --- | --- | --- | 
+| Run 2 | numiminbias | run2_compression_production_v09_82_02_01_numiminbias_compressed_data | numiminbias_run2_physics_9301_to_10097_recover |  
+| Run 2 | bnbminbias | run2_compression_production_v09_82_02_01_bnbminbias_compressed_data | nbnbminbias_run2_physics_9301_to_10097_recover |  
+| Run 2 | offbeamnumiminbias | run2_compression_production_v09_82_02_01_offbeamnumiminbias_compressed_data | offbeamnumiminbias_run2_physics_9301_to_10097_recover |  
+| Run 2 | offbeamnumimajority | run2_compression_production_v09_82_02_01_offbeamnumimajority_compressed_data | offbeamnumimajority_run2_physics_9301_to_10097_recover |  
+| Run 2 | numimajority | run2_compression_production_v09_82_02_01_numimajority_compressed_data | numimajority_run2_physics_9301_to_10097_recover |  
+| Run 2 | offbeambnbmajority | run2_compression_production_v09_82_02_01_offbeambnbmajority_compressed_data | offbeambnbmajority_run2_physics_9301_to_10097_recover |  
+| Run 2 | bnbmajority | run2_compression_production_v09_82_02_01_bnbmajority_compressed_data | bnbmajority_run2_physics_9301_to_10097_recover |  
+| Run 2 | offbeambnbminbias | run2_compression_production_v09_82_02_01_offbeambnbminbias_compressed_data | offbeambnbminbias_run2_physics_9301_to_10097_recover |  
