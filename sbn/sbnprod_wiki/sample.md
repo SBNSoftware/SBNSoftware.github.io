@@ -370,12 +370,11 @@ ICARUS MC
     * bug in LArSoft can lead to issues where the best matching particle is non existent
     * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894) 
 
-Processed Data SBN Production Samples
+Data SBN Production Samples
 --------------------------
 
 ICARUS DATA
 --------------------------
-
 
 ICARUS Reconstructed DATA
 --------------------------
