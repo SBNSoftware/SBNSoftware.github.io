@@ -418,17 +418,3 @@ ICARUS Reconstructed DATA
 | --- | --- | --- | 333097 | stage1 | IcarusProd_Run1_reprocess_NuMIstream_stage1 |
 | BNB stream | Run 1 reprocessing | v09_37_02_01 | 627484 | stage0 | IcarusProd_Run1_reprocess_BNBstream_stage0	| 
 | --- | --- | --- | 627484 | stage1 | IcarusProd_Run1_reprocess_BNBstream_stage1 |
-
-ICARUS Compressed RAW DATA
---------------------------
-
-| Run | datastream | SAM dataset | Files failed Compression |     
-| --- | --- | --- | --- |
-| Run 2 | numiminbias | run2_compression_production_v09_82_02_01_numiminbias_compressed_data | numiminbias_run2_physics_9301_to_10097_recover |  
-| Run 2 | bnbminbias | run2_compression_production_v09_82_02_01_bnbminbias_compressed_data | nbnbminbias_run2_physics_9301_to_10097_recover |  
-| Run 2 | offbeamnumiminbias | run2_compression_production_v09_82_02_01_offbeamnumiminbias_compressed_data | offbeamnumiminbias_run2_physics_9301_to_10097_recover |  
-| Run 2 | offbeamnumimajority | run2_compression_production_v09_82_02_01_offbeamnumimajority_compressed_data | offbeamnumimajority_run2_physics_9301_to_10097_recover |  
-| Run 2 | numimajority | run2_compression_production_v09_82_02_01_numimajority_compressed_data | numimajority_run2_physics_9301_to_10097_recover |  
-| Run 2 | offbeambnbmajority | run2_compression_production_v09_82_02_01_offbeambnbmajority_compressed_data | offbeambnbmajority_run2_physics_9301_to_10097_recover |  
-| Run 2 | bnbmajority | run2_compression_production_v09_82_02_01_bnbmajority_compressed_data | bnbmajority_run2_physics_9301_to_10097_recover |  
-| Run 2 | offbeambnbminbias | run2_compression_production_v09_82_02_01_offbeambnbminbias_compressed_data | offbeambnbminbias_run2_physics_9301_to_10097_recover |  
