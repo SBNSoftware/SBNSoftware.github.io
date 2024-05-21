@@ -142,3 +142,6 @@ Important: This command should only be used once when you are creating the datab
 python bin/create_table.py -c -t t -h cdpgsdev -p 5488 -U <username> -w <password> -W sbnd_calib_writer -R sbnd_calib_reader -n sbnd_calib_dev sbnteststand <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
 ```
 Please note that the variable name is in lower case, whilst the variable type is in capital case.
+
+
+<code style="color : red">text</code>
