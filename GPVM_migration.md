@@ -17,13 +17,13 @@ Computing set up test VMs and installed build nodes for users to get acquainted 
 
 ICARUS:
 - icarusbuild02.fnal.gov
-- icarusgpvm-test-al9.fnal.gov
 - icarusgpvm0[2-6].fnal.gov
+- icarusgpvm-test-al9.fnal.gov (to be retired soon)
 
 SBND:
 - sbndbuild03.fnal.gov
-- sbndgpvm-test-al9.fnal.gov
 - sbndgpvm0[2-4].fnal.gov
+- sbndgpvm-test-al9.fnal.gov (to be retired soon)
 
 As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired by June 30th.
 This will affect sbndbuild01/02 and icarusbuild01.
