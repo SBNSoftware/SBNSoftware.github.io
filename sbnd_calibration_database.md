@@ -119,6 +119,13 @@ This section displays a list of the variables in the database, as well as their 
 | xhigh | real | High-edge bin position in X direction | cm |
 | scale | real | Non-uniformity scale along X direction | N/A |
 
+## What happens when a variable does not exist in an older version of the database?
+
+In a scenario where a variable has to be added to the database later on, it has been decided that this variable will assume the value of `-999` for older version, and therefore should be defined manually by the user when doing analysis. For example, imagine that the first version of the database contains the variables `version1=['field_response','sce']`, but then a few months we learn that we should also include `diffusion`, so the second version of the database will contain the variables `version2=['field_response','sce','diffusion']`. So what happens when someone wants to perform an analysis with an older version of the database? It will lack the information about `diffusion` in this simple example. There are two possible solutions for this situation:
+1. Either the latest value is assumed automatically, or
+2. An "error/non-physical" value (such as `-999`) is set to the variable for older versions to indicate that the variable was not measured back then.
+Option (1) is not ideal because the latest value might not be valid/true for an older version of the database, so we'd be risking making automated wrong assumptions. Option (2) is the one used for the SBND calibration database, which means that the analyser should make a decision of which value to use, and make sure that the assumptions taken are valid.
+
 ## Managing the database
 
 In order to manage the database, we use codes inherited from Minerva: `/sbnd/data/users/mguzzo/calib_dbs/mnvcon_ups_6.6_modified`. So please go ahead and create a copy of this repository on your working area. This section will cover how to create and upload values to the database, how to check the values on the database, as well as the details you should pay attention to when updating the database.
