@@ -14,11 +14,6 @@ Hi there, this document contains all the information you need to know about the 
 
 There are two databases for SBND: **development database** and **production database**. The "development database" is an intermediate stage used to validate the values that will later on be uploaded to the "production database", which is the one accessed by analyser modules and simulations. That means that, every time the database needs to be updated (whether it is a value changing, or including/removing variables) it will be implemented in the "development database" first. The change should be validated by the person requesting the change, and once confirmed that everything looks ok, the changes will be pushed to the "production database".
 
-| Description | Name |
-| ----------- | ---- |
-| Development database | sbnd_calib_dev |
-| Production database | |
-
 Each database is a set of multiple folders. Each folder contain the following 4 tables:
 - **table_data**: contains information about channel number and all the desired columns
   - **__iov_id**: automatically created. integer representing the number of uploads was done, starting from 1, it matches with iov_id in table_tag_iovs
@@ -128,7 +123,17 @@ Option (1) is not ideal because the latest value might not be valid/true for an 
 
 ## Managing the database
 
-In order to manage the database, we use codes inherited from Minerva: `/sbnd/data/users/mguzzo/calib_dbs/mnvcon_ups_6.6_modified`. So please go ahead and create a copy of this repository on your working area. This section will cover how to create and upload values to the database, how to check the values on the database, as well as the details you should pay attention to when updating the database.
+Managing the database consists of 3 steps: 
+1. create tables
+2. write table values to database
+3. tag the latest update
+
+Let's cover each step in details below.
+
+This section uses the scripts from Minerva, so please clone the following repository:
+```
+/sbnd/data/users/mguzzo/calib_dbs/mnvcon_ups_6.6_modified
+```
 
 The first thing to do is to set up the environment to be able to run the necessary scripts from the folder above:
 ```
@@ -138,11 +143,10 @@ source setup.sh
 source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
 setup sbndcode v09_82_02_01 -q e26:prof
 ```
-Note that the scripts in the next steps do not seem to work for Python versions before `v3`. Just for the record, I am currently using `v3.9.13`.
+Note that the scripts in the next steps do not seem to work for Python versions before `v3`.
 
-Managing the database consists of 3 steps: (1) create a table, (2) write table to database and (3) tag the latest update. Let's cover each step in details below.
-
-### Create schema in database
+<details>
+<summary>How do I create a schema in the database?</summary>
 
 If you want to create a new schema in the database you can do it as follows:
 ```
@@ -184,17 +188,41 @@ sbnteststand=> SELECT table_name FROM information_schema.tables WHERE table_sche
 ------------
 (0 rows)
 ```
-The next sections will explain how to populate your schema.
+</details>
+
+For the following steps you will need the following information
+Please note that the variable name is in lower case, whilst the variable type is in capital case. The table below contains the information for the development/production databases:
+| Description | Name (-n) | Port (-p) | Host (-h) | Database name (-db) | Reader (-R) | Writer (-W) |
+| ----------- | --------- | --------- | --------- | ------------------- | ----------- | ----------- |
+| Development Database | sbnd_calib_dev | 5488 | cdpgsdev | sbndteststand | sbnd_calib_writer | sbnd_calib_reader |
+| Production Database |  | 5456 | ifdb09 | sbnd_online_prd | | |
+
+Request password to the authors.
 
 ### Create a table
 
 In order to populate your schema, you should first create a table with the variables you want. The command to create a table is (Important: This command should only be used once when you are creating the database for the first time. Otherwise it will create a new table and replace the existing one by the new empty one, and we do not usually want that. So be careful!):
 ```
-python bin/create_table.py -c -t t -h cdpgsdev -p 5488 -U <username> -w <password> -W sbnd_calib_writer -R sbnd_calib_reader -n sbnd_calib_dev sbnteststand <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
+python bin/create_table.py -c -t t -h <host> -p <port> -U <username> -w <password> -W <writer> -R <reader> -n <name> <database_name> <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
 ```
-Please note that the variable name is in lower case, whilst the variable type is in capital case. See below an example of the process of creating a table:
+
+<details>
+  
+<summary>Example of the process of creating a table</summary>
+  
+From an empty schema:
+
 ```
-sbndgpvm01$ python bin/create_table.py -c -t t -h cdpgsdev -p 5488 -U <username> -w <password> -W sbnd_calib_writer -R sbnd_calib_reader -n sbnd_calib_dev sbnteststand tpc_channelstatus_data \ wire_number:INTEGER \ flange:TEXT \ board:INTEGER \ localchannel:INTEGER \ status:INTEGER \ low:REAL \ high:REAL
+sbnteststand=> SELECT table_name FROM information_schema.tables WHERE table_schema='sbnd_calib_dev';
+ table_name 
+------------
+(0 rows)
+```
+  
+You can create the tables described in [Folders](#folders) as follows:
+
+```
+sbndgpvm01$ python bin/create_table.py -c -t t -h cdpgsdev -p 5488 -U mguzzo -w <password> -W sbnd_calib_writer -R sbnd_calib_reader -n sbnd_calib_dev sbnteststand tpc_channelstatus_data \ wire_number:INTEGER \ flange:TEXT \ board:INTEGER \ localchannel:INTEGER \ status:INTEGER \ low:REAL \ high:REAL
 time_type = t
 Creating folder tpc_channelstatus_data in namespace sbnd_calib_dev with columns:
      wire_number : INTEGER
@@ -244,8 +272,10 @@ sbnteststand=> SELECT table_name FROM information_schema.tables WHERE table_sche
  tpc_channelstatus_data_tag_iovs
 (4 rows)
 ```
+
 As you can see, the script automatically creates the four tables described in [Folders](#folders). The recently created tables are empty:
 ```
+
 sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_data;
  __iov_id | channel | wire_number | flange | board | localchannel | status | low | high 
 ----------+---------+-------------+--------+-------+--------------+--------+-----+------
@@ -266,11 +296,22 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_tag_iovs;
 -----+--------
 (0 rows)
 ```
-See next section to understand how to fill the tables.
+
+</details>
 
 ### Write table to database
 
-In order to write valued on your tables, you should provide them as a `.csv` file. Take the following example (where the values have no physical meaning, it's just for example purposes):
+In order to write valued on your tables, you should provide them as a `.csv` file, and use the following command:
+```
+python bin/write_data.py -n <name> -h <host> -p <port> -U <username> -w <password> \<path_to_csv_file.csv> \<timestamp> \<database_name> <table_name> <var1>,<var2>,<var3>
+```
+Note that the entry `<timestamp>` is a Unix Timestamp.
+
+<details>
+  
+<summary>Example of the process of writing valued to a table</summary>
+
+Take the following example (where the values have no physical meaning, it's just for example purposes):
 ```
 sbndgpvm01$ cat /sbnd/data/users/mguzzo/calib_dbs/update_tpc_channelstatus_data_1706793247.csv
 0,0,EE01M,0,63,4,0.0,0.0
@@ -281,7 +322,7 @@ sbndgpvm01$ cat /sbnd/data/users/mguzzo/calib_dbs/update_tpc_channelstatus_data_
 Where the columns represent `channel number`, `wire number`, `flange`, `board`, `localchannel`, `status`, `low`, `high` (which is `channel number` followed by the variables listed in the `python bin/create_table.py` command).
 The following command writes the values from this file to the tables in the database:
 ```
-sbndgpvm01$ python bin/write_data.py -n sbnd_calib_dev -h cdpgsdev -p 5488 -U <username> -w <password> \/sbnd/data/users/mguzzo/calib_dbs/update_tpc_channelstatus_data_1706793247.csv \1706793247 \sbnteststand tpc_channelstatus_data wire_number,flange,board,localchannel,status,low,high
+sbndgpvm01$ python bin/write_data.py -n sbnd_calib_dev -h cdpgsdev -p 5488 -U mguzzo -w <password> \/sbnd/data/users/mguzzo/calib_dbs/update_tpc_channelstatus_data_1706793247.csv \1706793247 \sbnteststand tpc_channelstatus_data wire_number,flange,board,localchannel,status,low,high
 opts =  [('-n', 'sbnd_calib_dev'), ('-h', 'cdpgsdev'), ('-p', '5488'), ('-U', '<username>'), ('-w', '<password>')]
 args =  ['/sbnd/data/users/mguzzo/calib_dbs/update_tpc_channelstatus_data_1706793247.csv', '1706793247', 'sbnteststand', 'tpc_channelstatus_data', 'wire_number,flange,board,localchannel,status,low,high']
 [write_data.py] t =  1706793247
@@ -318,9 +359,19 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_tag_iovs;
 ```
 As you can see, the numerical values filled the table `tpc_channel_status_data_data`; the table `tpc_channelstatus_data_iovs` got filled with the timestamp relative to `iov_id=1` as well as the tag `active=t` indicating that the `iov_id=1` is currently active in the database, which means that the values with `__iov_id=1` are the ones that will be available when accessing the database.
 
+</details>
+
 ### Tag the table
 
 Similarly to the "commit" command in GitHub, it is possible to tag the uploads to the database, making it easier to identify what got changed/updated. To tag a table, use the following command:
+```
+sbndgpvm01$ python bin/tag.py -h <host> -p <port> -U <username> -w <password> -n <name> -c "<commit_description>" <database_name> <table_name> "<tag_name>"
+```
+
+<details>
+  
+<summary>Example of the process of tagging a table</summary>
+
 ```
 sbndgpvm01$ python bin/tag.py -h cdpgsdev -p 5488 -U <username> -w <password> -n sbnd_calib_dev -c "First commit" sbnteststand tpc_channelstatus_data "v1r1"
 [tag.py] tag =  v1r1
@@ -357,6 +408,7 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_tag_iovs;
 (1 row)
 ```
 As you can see, only tables `tpc_channelstatus_data_tags` and `tpc_channelstatus_data_tag_iovs` got affected. 
+</details>
 
 **Important**: Please keep in mind that the tag is linked to all **active** tables! Let me give you an example of what happens when we start updating the table. Ok, so if we run `bin/write_data.py` again, we are going to have the following output:
 ```
