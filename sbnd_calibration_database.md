@@ -20,7 +20,7 @@ Each database is a set of multiple folders. Each folder contain the following 4 
 - **table_data**: contains information about channel number and all the desired columns
   - **__iov_id**: automatically created. integer representing the number of uploads was done, starting from 1, it matches with iov_id in table_tag_iovs
   - **channel**: automatically created. 
-  - **variables**: list of variables included manually by us (find the list of these variables in [Folders](#folders))
+  - **variables**: list of variables included manually by us (find the list of these variables below)
 - **table_iovs**: contains information about the moment when the table was filled via the bin/write_data.py script
   - **iov_id**: integer representing the number of uploads was done, starting from 1
   - **begin_time**: automatically filled when a table it uploaded to the database (format: YYYY-MM-DD HH:MM:SS)
