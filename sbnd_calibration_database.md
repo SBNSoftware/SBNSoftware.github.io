@@ -2,7 +2,7 @@
 
 Author: Marina Reggiani-Guzzo, PDRA at University of Edinburgh, mguzzo@ed.ac.uk
 
-Last update: 21 May 2024
+Last update: 23 May 2024
 
 Hi there, this document contains all the information you need to know about the SBND calibration database. Please contact the author if you find any wrong/outdated information on this page.
 
@@ -10,9 +10,11 @@ Hi there, this document contains all the information you need to know about the 
 - This page is under construction, this message will be removed when the displayed information is definite!
 - If you are working on the SBND calibration, please check if the information for your calibration is listed below, otherwise please update [SBND Calibration Database Spreadsheet](https://docs.google.com/spreadsheets/d/1xbAhb6WnmxbwKxFc-4nnInjHdH8A50S6Zgh0mfZrSF4/edit#gid=217643219)
 
-## Databases
+# Databases
 
 There are two databases for SBND: **development database** and **production database**. The "development database" is an intermediate stage used to validate the values that will later on be uploaded to the "production database", which is the one accessed by analyser modules and simulations. That means that, every time the database needs to be updated (whether it is a value changing, or including/removing variables) it will be implemented in the "development database" first. The change should be validated by the person requesting the change, and once confirmed that everything looks ok, the changes will be pushed to the "production database".
+
+# Folders
 
 Each database is a set of multiple folders. Each folder contain the following 4 tables:
 - **table_data**: contains information about channel number and all the desired columns
@@ -28,8 +30,6 @@ Each database is a set of multiple folders. Each folder contain the following 4 
   - **created**: format YYYY-MM-DD HH:MM:SS
   - **comments**: analougos to “commit” on GitHub, contains a brief description of the content in current version
 - **table_tag_iovs**: contains information linking the tag variable in table_tags to the iov_id one in table_iovs
-
-## Folders
 
 This section displays a list of the variables in the database, as well as their description and unit.
 
@@ -114,14 +114,14 @@ This section displays a list of the variables in the database, as well as their 
 | xhigh | real | High-edge bin position in X direction | cm |
 | scale | real | Non-uniformity scale along X direction | N/A |
 
-## What happens when a variable does not exist in an older version of the database?
+### What happens when a variable does not exist in an older version of the database?
 
 In a scenario where a variable has to be added to the database later on, it has been decided that this variable will assume the value of `-999` for older version, and therefore should be defined manually by the user when doing analysis. For example, imagine that the first version of the database contains the variables `version1=['field_response','sce']`, but then a few months we learn that we should also include `diffusion`, so the second version of the database will contain the variables `version2=['field_response','sce','diffusion']`. So what happens when someone wants to perform an analysis with an older version of the database? It will lack the information about `diffusion` in this simple example. There are two possible solutions for this situation:
 1. Either the latest value is assumed automatically, or
 2. An "error/non-physical" value (such as `-999`) is set to the variable for older versions to indicate that the variable was not measured back then.
 Option (1) is not ideal because the latest value might not be valid/true for an older version of the database, so we'd be risking making automated wrong assumptions. Option (2) is the one used for the SBND calibration database, which means that the analyser should make a decision of which value to use, and make sure that the assumptions taken are valid.
 
-## Managing the database
+# Managing the database
 
 Please find a detailed tutorial on how to manage the database here: [How to manage your database?](sbnd_calibration_database_instructions_how_to_manage.md)
 
