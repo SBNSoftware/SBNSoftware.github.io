@@ -123,6 +123,8 @@ Option (1) is not ideal because the latest value might not be valid/true for an 
 
 ## Managing the database
 
+Please find a detailed tutorial on how to manage the database here: [How to manage your database?](sbnd_calibration_database_instructions_how_to_manage.md)
+
 Managing the database consists of 3 steps: 
 1. create tables
 2. write table values to database
