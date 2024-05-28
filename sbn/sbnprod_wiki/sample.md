@@ -194,66 +194,6 @@ ICARUS MC
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_larcv |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_flatcaf |
-| BNB nu only sample - TPC Signal shape variation (VAR1) | MC2024A | v09_89_01_01 | 203316 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_flatcaf |
-| BNB nu only sample - Middle Induction Minimal Transparency (VAR2) | MC2024A | v09_89_01_01 | 207729 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR2_tpcind2opaque_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR2_tpcind2opaque_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR2_tpcind2opaque_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR2_tpcind2opaque_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR2_tpcind2opaque_flatcaf |
-| BNB nu only sample - Middle Induction Minimal Transparency (VAR3) | MC2024A | v09_89_01_01 | 203316 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR3_tpcind2transparent_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR3_tpcind2transparent_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR3_tpcind2transparent_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR3_tpcind2transparent_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR3_tpcind2transparent_flatcaf |
-| BNB nu only sample - Front Induction Increased Gain Variation (VAR4) | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR4_tpcind1increasegain_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR4_tpcind1increasegain_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR4_tpcind1increasegain_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR4_tpcind1increasegain_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR4_tpcind1increasegain_flatcaf |
-| BNB nu only sample - Front Induction Decreased Gain Variation (VAR5) | MC2024A | v09_89_01_01 | 203148 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR5_tpcind1decreasegain_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR5_tpcind1decreasegain_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR5_tpcind1decreasegain_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR5_tpcind1decreasegain_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR5_tpcind1decreasegain_flatcaf |
-| BNB nu only sample - PMT Quantum Efficiency Variation (VAR6) | MC2024A | v09_89_01_01 | 203284 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR6_pmtdecreasedqe_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR6_pmtdecreasedqe_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR6_pmtdecreasedqe_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR6_pmtdecreasedqe_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR6_pmtdecreasedqe_flatcaf |
-| BNB nu only sample - Recombination Model Variation (VAR7) | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR7_ellipsoidalrecomb_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR7_ellipsoidalrecomb_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR7_ellipsoidalrecomb_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR7_ellipsoidalrecomb_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR7_ellipsoidalrecomb_flatcaf |
-| BNB nu only sample - TPC Coherent Noise Increase Variation (VAR8) | MC2024A | v09_89_01_01 | 202614 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR8_tpccohnoisep1sigma_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR8_tpccohnoisep1sigma_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR8_tpccohnoisep1sigma_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR8_tpccohnoisep1sigma_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR8_tpccohnoisep1sigma_flatcaf |
-| BNB nu only sample - TPC Coherent Noise Decrease Variation (VAR9) | MC2024A | v09_89_01_01 | 202733 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR9_tpccohnoisem1sigma_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR9_tpccohnoisem1sigma_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR9_tpccohnoisem1sigma_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR9_tpccohnoisem1sigma_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR9_tpccohnoisem1sigma_flatcaf |
-| BNB nu only sample - TPC Intrinsic Noise Increase Variation (VAR10) | MC2024A | v09_89_01_01 | 202887 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR10_tpcintnoisep1sigma_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR10_tpcintnoisep1sigma_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR10_tpcintnoisep1sigma_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR10_tpcintnoisep1sigma_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR10_tpcintnoisep1sigma_flatcaf |
-| BNB nu only sample - TPC Intrinsic Noise Decrease Variation (VAR11) | MC2024A | v09_89_01_01 | 202568 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR11_tpcintnoisem1sigma_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR11_tpcintnoisem1sigma_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR11_tpcintnoisem1sigma_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR11_tpcintnoisem1sigma_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR11_tpcintnoisem1sigma_flatcaf |
-| BNB nu only sample - New Light Variation (VAR12) | MC2024A | v09_89_01_01 | 203282 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR12_pmtdecreasedqe2_stage1 |
-| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR12_pmtdecreasedqe2_calibtuple |
-| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR12_pmtdecreasedqe2_larcv |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR12_pmtdecreasedqe2_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR12_pmtdecreasedqe2_flatcaf |
 | BNB + Intime Cosmics (2d deconvolution validation) | MC2024A | v09_83_01 | 24851 | calibtuple |  icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_flatcaf |
