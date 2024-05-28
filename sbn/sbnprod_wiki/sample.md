@@ -189,7 +189,7 @@ ICARUS MC
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
-| BNB nu only sample (CV) | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_stage1 |
+| TEST TEST TEST | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_calibtuple |
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_larcv |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_caf |
