@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # favicon: /images/sbn_logo.jpg
 
 plugins:
+  - jekyll
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-github-metadata
