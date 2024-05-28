@@ -432,7 +432,7 @@ ICARUS MC
 ### Notes on samples ###
 * MC2020A
   * SBND Intime Cosmic sample in MCP2020A (and possibly older productions)
-    * bug in LArSoft can lead to issues where the best matching particle is non existent
+    * bug in LArSoft can lead to issues where the best matching particle is non existent.
     * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894) 
 
 Data SBN Production Samples
