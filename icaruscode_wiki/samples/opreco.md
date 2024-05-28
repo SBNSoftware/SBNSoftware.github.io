@@ -25,12 +25,10 @@ Events                 | ≥`45840`               | ≥`55534`
 Trigger configuration  | physics, majority only | physics standard
 Notes                  | extended NuMI beam gate: 15 µs
 
-<!-- Temporary comment this text block that could be causing wiki build issues 
 > [!NOTE]
 >  * When values in the table are the same as the previous column they are not repeated.
 >  * "Base" repetition rates: "nominal" and determined by the accelerator parameters, it does not include temporary configuration changes or dead times.
 >  * "Mode" beam intensity: where the main peak of intensity spill by spill is located; it does not include dead times.
--->
 
 
 
