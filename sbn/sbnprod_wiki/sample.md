@@ -486,6 +486,7 @@ ICARUS Reconstructed DATA
 
 ICARUS Compressed RAW DATA
 --------------------------
+
 | Run | datastream | SAM dataset | Files failed Compression |
 | --- | --- | --- | --- |
 | Run 2 | numiminbias | run2_compression_production_v09_82_02_01_numiminbias_compressed_data | numiminbias_run2_physics_9301_to_10097_recover |
