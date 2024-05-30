@@ -277,8 +277,7 @@ ICARUS MC
 | --- | --- | --- | --- | calibtuple | icaruspro_hists_2023A_ICARUS_BNB_cosmics_reco2 |
 | --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
 | --- | --- | --- | --- | flatcaf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
-| NuMI Neutrino Mini Production | MC2023A | v09_68_00_01 | 74600 | reco2 | icaruspro_2023A_ICARUS_NuMI_MC_stage1_2023Mar10 |
-| --- | --- | --- | --- | calibtuples | icaruspro_2023A_ICARUS_NuMI_MC_caf_2023Mar10 |
+| NuMI Neutrino Mini Production | MC2023A | v09_68_00_01 | 74600 | calibtuples | icaruspro_2023A_ICARUS_NuMI_MC_caf_2023Mar10 |
 | --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_NuMI_MC_caf_2023Mar10 |
 | --- | --- | --- | --- | flatcaf | icaruspro_2023A_ICARUS_NuMI_MC_flatcaf_2023Mar10 |
 | NuMI in-time cosmics w/Overburden | MC2022A | v09_37_02_04 | 809054 | reco2 | IcarusProd_2022A_NUMI_in-time_Cosmics_withOverburden_v09_37_02_04_reco2 |
