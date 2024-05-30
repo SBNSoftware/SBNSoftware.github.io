@@ -266,9 +266,6 @@ ICARUS MC
 | --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_intime_cosmics_pretuned_signal_shape_flatcaf |
 | NuMI Neutrino MC Phase 1 | MC2023A | v09_72_00_03 | 586890 | reco2 | icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_stage1 |
-| --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_calibtuple |
-| --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_caf |
-| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_Nu_Phase1_sample_pretuned_signal_shape_flatcaf |
 | ICARUS BNB Mini Production intime cosmics | MC2023A | v09_72_00_01 | 90093 | reco2 |  icaruspro_2023A_ICARUS_BNB_cosmics_reco2 |
 | --- | --- | --- | --- | calibtuple | icaruspro_hists_2023A_ICARUS_BNB_cosmics_reco2 |
 | --- | --- | --- | --- | caf | icaruspro_2023A_ICARUS_BNB_cosmics_caf |
