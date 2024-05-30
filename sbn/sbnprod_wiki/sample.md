@@ -187,6 +187,8 @@ SBND MC
 ICARUS MC
 --------------------------
 
+icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
+
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
 | BNB nu only sample (CV) | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_stage1 |
@@ -194,6 +196,11 @@ ICARUS MC
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_larcv |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_flatcaf |
+| BNB nu only sample - null variation (VAR0) | MC2024A | v09_89_01_01 | 203320 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_stage1 |
+| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_calibtuple |
+| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_larcv |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_flatcaf |
 | BNB nu only sample - TPC Signal shape variation (VAR1) | MC2024A | v09_89_01_01 | 203316 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_calibtuple |
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR1_untunedtpcsigshape_larcv |
