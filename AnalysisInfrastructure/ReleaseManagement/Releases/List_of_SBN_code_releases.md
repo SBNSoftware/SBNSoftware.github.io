@@ -11,6 +11,7 @@ These are the releases tagged until now:
   
 | Version        |      Notes                        |      Detailed Notes                          
 |----------------|-----------------------------------|-------------------------------------------- 
+`v09_72_00_07`   | 'sbncode' SBN2023A 'NuMI' production patch|[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_72_00_07)
 `v09_90_00`   | 'sbncode' weekly release |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_90_00)
 `v09_89_01_01`   | 'sbncode' patch release |[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_89_01_01)
 `v09_89_01`      | 'sbncode' weekly release|[Release Notes](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/sbncode_v09_89_01)
