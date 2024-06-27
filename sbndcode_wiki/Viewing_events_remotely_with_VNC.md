@@ -67,7 +67,7 @@ consider to amend your `~/.profile` (or temporarily rename it) otherwise your VN
 <!--
 Add the following snippet to the bottom of your \$HOME/.profile or
 \$HOME/.bash\_profile (open either in a text editor). Again, change the
-22 to your VNC server number.\
+22 to your VNC server number.
 
     #VNC stuff
     VNCNUM=22 #CHANGE THIS NUMBER TO WHATEVER VNC SERVER NUMBER YOU PICKED
@@ -92,7 +92,7 @@ Add the following snippet to the bottom of your \$HOME/.ssh/config.
 Change dbrailsf to your own kerberos principal, change the two
 occurrences of sbndgpvm01 to whatever sbndgpvm you chose at the start
 and change the 22 to your VNC server number (if your VNC number is
-between 0 and 9 then include a preceding 0 e.g. 00, 01, 02 etc.)\
+between 0 and 9 then include a preceding 0 e.g. 00, 01, 02 etc.)
 
     Host sbndgpvm01
       HostName sbndgpvm01.fnal.gov
@@ -107,7 +107,7 @@ between 0 and 9 then include a preceding 0 e.g. 00, 01, 02 etc.)\
 This snippet does a couple of things. Firstly, it allows you to connect
 to your chosen sbndgpvm without specifying your kerberos principal or
 the full address of the gpvm. In the case of the above snippet, the
-following ssh command connects me to sbndgpvm01\
+following ssh command connects me to sbndgpvm01
 
      ssh -Y sbndgpvm01 
 
@@ -137,7 +137,7 @@ you in the background. Now fire up root and open a TBrowser as a test.
     root
 
 
-and once the root prompt appears\
+and once the root prompt appears
 
      new TBrowser 
 
