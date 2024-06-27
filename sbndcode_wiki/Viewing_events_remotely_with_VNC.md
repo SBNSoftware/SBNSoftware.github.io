@@ -59,7 +59,7 @@ To kill a tunning VNC server on the machine you can run:
 
     vncserver -kill :N
 
-where `N` is the number associated to your VNC server.
+where `N` is the number associated to your VNC server in the example it would be `22`.
 
 ⚠️ NOTE: on EL9 VNC server is sourcing your `~/.profile`, so if there is anything that could cause a loop,
 consider to amend your `~/.profile` (or temporarily rename it) otherwise your VNC could hung indefinitely.
