@@ -17,15 +17,13 @@ Computing set up test VMs and installed build nodes for users to get acquainted 
 
 ICARUS:
 - icarusbuild02.fnal.gov
-- icarusgpvm0[2-6].fnal.gov
-- icarusgpvm-test-al9.fnal.gov (to be retired soon)
+- icarusgpvm0[1-6].fnal.gov
 
 SBND:
 - sbndbuild03.fnal.gov
-- sbndgpvm0[2-4].fnal.gov
-- sbndgpvm-test-al9.fnal.gov (to be retired soon)
+- sbndgpvm0[1-4].fnal.gov
 
-As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired by June 30th.
+As part of the migration to EL9 build nodes that can't be upgraded to EL9 will be retired on June 28th.
 This will affect sbndbuild01/02 and icarusbuild01.
 
 📣 **⚠️ crontabs need to be "migrated" manually by users ⚠️**
@@ -35,16 +33,10 @@ Migration to EL9 schedule
 
 The schedule of the GPVMs migration to EL9 is as follow:  
 ICARUS:
-
-| Nodes            | Date |
-| :----------------| :---------------------|
-| icarusgpvm01     | sometime in June 2024 |
+- All interactve/build nodes have been migrate to EL9
 
 SBND:
-
-| Nodes         | Date |
-| :-------------| :--------------------- |
-| sbndgvpm01    | sometime in June 2024 |
+- All interactve/build nodes have been migrate to EL9
 
 
 SL7 development container
