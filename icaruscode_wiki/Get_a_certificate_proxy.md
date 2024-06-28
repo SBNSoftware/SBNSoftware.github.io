@@ -24,15 +24,15 @@ amendments:
     The commands `kx509` and `voms-*` should be installed in the system already (and also in the apptainers).
 -   the setup script is run with:
     `source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh`
--   the information on production accounts does not apply to ICARUS at
-    all and should not be relied upon: ask [ICARUS production manager](Roles_and_people.md) if you need information
-    about that.
+-   these instructions are not appropriate for production accounts: see below.
 
 
 Production certificate proxy for `icaruspro` shared user
 ---------------------------------------------------------
 
 For people who needs a certificate proxy when wearing the `icaruspro` user, the procedure is different.
+The safest path is to ask [ICARUS production manager](Roles_and_people.md) to get the specific instructions. The following is a snapshot of the status that might change in the future.
+
 A certificate for `Production` role is always automatically kept up to date, and the startup script (`.bash_profile`) is automatically setting up the environment variable `KX509_USER_PROXY` to point at it.
 If this does not executed for any reason, an equivalent line can be executed. First cross-check the correct command, e.g.
 
