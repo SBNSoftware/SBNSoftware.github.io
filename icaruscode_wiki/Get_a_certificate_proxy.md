@@ -18,10 +18,10 @@ amendments:
     proxy ends with a different enchantment:
 
         kinit "${USER}@FNAL.GOV"                                                       # get your Kerberos authentication
-        setup cigetcert                                                                # (if not already there)
-        cigetcert -s 'fifebatch.fnal.gov'                                              # ask for a certificate
+        kx509                                                                          # ask for a certificate
         voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/icarus/Role=Analysis'  # create a "proxy" from the certificate
 
+    The commands `kx509` and `voms-*` should be installed in the system already (and also in the apptainers).
 -   the setup script is run with:
     `source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh`
 -   the information on production accounts does not apply to ICARUS at
