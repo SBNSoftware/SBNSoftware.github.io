@@ -12,9 +12,20 @@ It is currently used by MicroBooNE, SBND and ICARUS.
 
 ## Quickstart
 
-From an sbndgpvm, run
+The recommended way to run TITUS is within a VNC window. If you don't have a
+VNC session already running, follow the instructions at
+![Viewing events remotely with VNC](Viewing_events_remotely_with_VNC) to set up
+a VNC session on the GPMVs.
 
-    source /sbnd/app/users/twester/static_evd/setup.sh
+TITUS is built using sbndcode, which, at the time of writing, does not have a
+native build on Alma Linux 9 (the operating system used on the GPVMs). The
+commands below should be run within a Scientific Linux 7 container.
+Instructions on setting up the container can be found on the
+[GPVM migration](https://sbnsoftware.github.io/GPVM_migration) page.
+
+From a Scientific Linux 7 container, run
+
+    source /exp/sbnd/app/users/twester/static_evd/setup.sh
 
 For SBND, start the event display with
 
@@ -26,7 +37,7 @@ For ICARUS, use
 
 For the pre-2024 versions of TITUS (<1.3.1), source the following script instead
 
-    source /sbnd/app/users/mdeltutt/static_evd/setup.sh
+    source /exp/sbnd/app/users/mdeltutt/static_evd/setup.sh
 
 ## Basic usage
 
