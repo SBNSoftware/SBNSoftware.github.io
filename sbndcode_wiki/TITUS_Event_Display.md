@@ -14,7 +14,7 @@ It is currently used by MicroBooNE, SBND and ICARUS.
 
 The recommended way to run TITUS is within a VNC window. If you don't have a
 VNC session already running, follow the instructions at
-![Viewing events remotely with VNC](Viewing_events_remotely_with_VNC) to set up
+![Viewing events remotely with VNC](https://sbnsoftware.github.io/sbndcode_wiki/Viewing_events_remotely_with_VNC.html) to set up
 a VNC session on the GPMVs.
 
 TITUS is built using sbndcode, which, at the time of writing, does not have a
