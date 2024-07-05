@@ -25,7 +25,7 @@ Instructions on setting up the container can be found on the
 
 From a Scientific Linux 7 container, run
 
-    source /exp/sbnd/app/users/twester/static_evd/setup.sh
+    source /exp/sbnd/app/users/sbnd/static_evd/setup.sh
 
 For SBND, start the event display with
 
