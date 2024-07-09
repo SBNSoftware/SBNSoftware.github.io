@@ -40,7 +40,8 @@ Instructions
 -   Go into your `releases/` directory and run the script
     `start_release.sh` with
 
-        . start_release.sh < version tag > 
+        . start_release.sh < version tag >
+-   Use `master` branch for bringing forth production releases when prompted by `git flow init -f`. Everything else is set to it's default so you can just hit enter through the rest of the prompts.
 
 -   This will create new releases of `sbndcode` and `sbndutil`, with branches `release/vXX_YY_ZZ`.
 
