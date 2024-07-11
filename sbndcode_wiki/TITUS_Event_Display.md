@@ -80,6 +80,9 @@ The main view window can be scaled beyond its displayed resolution when capturin
 
 Each experiment's logo can be added to the wire plane views using the "Logo" button on the TPC view. You can also add a scale bar which either displays the number of wires or the equivalent measurement in centimeters by clicking the "Scale bar" and "Use cm" buttons, respectively. Both the logo and the scale bar can be moved around the view by hovering over them until a highlight appears, then dragging with the mouse.
 
+### Changing Scale Bar Size
+The length and font size of the scale bar are both customizable under Edit->Preferences, then select the TPC tab.
+
 ## For developers: How to Build and Install your Copy of TITUS
 
 ### Current official, pre-2024 version
