@@ -28,6 +28,7 @@ in release management, these include:
     certificate](Setting_up_access_with_CILogon_certificate.html)
     loaded in your browser (Will need [Fermilab
     VPN](VPN.html) running if off site)
+      * Relevant ticket to get Jenkins permissions: [Modify user on Jenkins Cluster](https://fermi.servicenowservices.com/com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=6309a202db751740da5174131f961941)
 -   Access to `scisoftgpvm01.fnal.gov`
 
 
