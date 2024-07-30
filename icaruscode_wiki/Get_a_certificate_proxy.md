@@ -37,7 +37,7 @@ A certificate for `Production` role is always automatically kept up to date, and
 If this does not executed for any reason, an equivalent line can be executed. First cross-check the correct command, e.g.
 
 * run `grep '^export X509_USER_PROXY' ~icaruspro/.bash_profile` and figure out the correct path to set `KX509_USER_PROXY` to;
-* run `kx509`, which is set to write instructions on how to actual set up the proxy (but _won't do it);
+* run `kx509`, which is set to write instructions on how to actual set up the proxy (but _won't actually do it_);
 * run `setup_icaruspro <version> <qualifiers>` specifying an `icaruscode` version (this currently needs to happen in a SLF7 apptainer); this _will do_ the setup.
 
 As an example, the actual command that worked on June 2024:
