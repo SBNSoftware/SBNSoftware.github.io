@@ -44,8 +44,7 @@ Get the proxy
 The ritual for getting the certificate and proxy goes like this:
 
     kinit "${USER}@FNAL.GOV"                                                     # get your Kerberos authentication
-    setup cigetcert                                                              # (if not already there)
-    cigetcert -s 'fifebatch.fnal.gov'                                            # ask for a certificate
+    kx509                                                                        # ask for a certificate
     voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Analysis'  # create a "proxy" from the certificate
 
 > Make sure UPS is set up first (e.g.
