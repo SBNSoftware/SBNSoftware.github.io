@@ -59,7 +59,6 @@ Instructions
     -   Sometimes builds will fail due to temporary I/O issues on
         Jenkins so if you can\'t find an obvious reason for the failure,
         wait an hour and try building again.
-    -   (Remove after full AL9 migrration) AL9 migration is timing out due to not finding a node. This will show up in the console as `There are no nodes with the label ‘swarm&&SLF7'`
     -   If every build failed it\'s probably an issue with the
         configuration parameters.
     -   You can rebuild just the failed builds by going to
