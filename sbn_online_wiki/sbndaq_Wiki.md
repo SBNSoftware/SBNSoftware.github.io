@@ -2,7 +2,7 @@ Developing in sbndaq
 ----------------------------------------------
 
 * [Setup Instructions](Installation)
-* [Spack Development Tutorial](Spack-Development-Tutorial)
+* [Spack Development Tutorial](Spack-Development-Tutorial.md)
 * [Release instructions for online-related software](ReleaseInstructions)
 * [Development Model](DevModel)
 * [2023 Git branch cleanup](2023BranchCleanup.md)
