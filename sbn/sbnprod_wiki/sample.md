@@ -18,6 +18,8 @@ A list of samples that were requested and produced since Oct 2020 and the status
 
 The spreadsheet contain the configuration files used, the code version, the statistics produced and the SAM dataset for access. Currently the production passes are organized in spreadsheet tabs. If necessary information can't be found, please email the production group at [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
+In 2024, ongoing ICARUS production requests started being tracked with the issue system of GitHub via the dummy repository [SBNSoftware/icarus-production](https://github.com/SBNSoftware/icarus-production/issues).
+
 More information about the workflow can be found at the [SBN Analysis Infrastructure Workflow Management page](../../AnalysisInfrastructure/WorkflowManagement/workflow.md).
 
 How to access the samples
