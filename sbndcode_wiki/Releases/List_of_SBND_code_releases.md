@@ -16,7 +16,7 @@ See the (soon to be done) section on getting `sbndcode` offsite for more detaile
 List of `sbndcode` releases
 ------------------------------------------------------------------------
 
-**Release manager**: [Fran Nicolás](mailto:fjnicolas@ugr.es)
+**Release manager**: [Bear Carlson](mailto:bcarlson1@ufl.edu)
 
 These are the `sbndcode` releases tagged until now:
   
