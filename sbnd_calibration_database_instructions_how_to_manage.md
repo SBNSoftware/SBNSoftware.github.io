@@ -13,7 +13,7 @@ This tutorial covers each of the steps described above.
 
 A few of the steps above use scripts inherited from Minerva, so please clone the following repository to your working area:
 ```
-exp/sbnd/data/users/mguzzo/calib_dbs/mnvcon_ups_6.6_modified
+exp/sbnd/data/users/mguzzo/calib_db/mnvcon_ups_6.6_modified
 ```
 
 ## Step 1 Set up environment
