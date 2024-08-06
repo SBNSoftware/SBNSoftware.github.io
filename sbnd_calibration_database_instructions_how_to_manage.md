@@ -21,7 +21,7 @@ exp/sbnd/data/users/mguzzo/calib_dbs/mnvcon_ups_6.6_modified
 The first thing to do is to set up the environment to be able to run the necessary scripts inherited from Minerva:
 ```
 ssh <username>@sbndgpvm01.fnal.gov
-cd /exp/sbnd/data/users/<username>/calib_dbs/mnvcon_ups_6.6_modified/
+cd /exp/sbnd/data/users/<username>/calib_db/mnvcon_ups_6.6_modified/
 source setup.sh
 source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
 setup sbndcode v09_82_02_01 -q e26:prof
