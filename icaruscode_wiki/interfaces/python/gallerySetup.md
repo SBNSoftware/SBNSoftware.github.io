@@ -23,7 +23,7 @@ Setup
 
 > At the time of writing, LArSoft is only compatible with Scientific Linux 7.
 > If you are using a different operating system, like Alma Linux 9 on the ICARUS GPVM,
-> you'll need to [use a SL7 container](../../GPVM_migration.md).
+> you'll need to [use a SL7 container](../../../GPVM_migration.md).
 
 The required setup is:
  1. `gallery`, for accessing the _art_/ROOT files
