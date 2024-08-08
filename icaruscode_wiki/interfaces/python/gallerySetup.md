@@ -156,6 +156,17 @@ _gallery_ suffers some limitations compared to _art_:
      * If the call itself throws an exception, it may be impossible to access it in Python.
 
 
+Other resources
+----------------
+
+A guide [SBN DocDB 4339](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=4339), by now ancient,
+describes how to use _gallery_ in C++.
+Compared to using Python, C++ requires a careful and sometimes painstaking compilation of building instructions (e.g. Cmake);
+a middle ground is the use of ROOT interpreter (Cling), which does for C++ a good deal of the magic that `cppyy` does for Python.
+
+
+
+
 
 ---
 
