@@ -29,7 +29,7 @@ Developing ICARUS code
     `mrb gitCheckout icaruscode` from your MRB working area)
 -   [ICARUS code reference](https://icarus-exp.fnal.gov/at_work/software/doc/icaruscode/versionlist.html) (Doxygen-generated; protected access)
 -   [Integration tests](Integration_tests.html)
--   [Introduction to Gallery analysis](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=4339 "by Gianluca") (by now, ancient)
+-   [_gallery_ setup and example](interfaces/python/gallerySetup.html)
 
 
 
