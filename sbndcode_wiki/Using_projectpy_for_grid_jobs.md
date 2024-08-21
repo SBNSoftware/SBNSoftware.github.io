@@ -94,6 +94,9 @@ Next is the project element.
   <!-- Group -->
   <group>sbnd</group>
 
+  <!-- Operating System -->
+  <os>SL7</os>
+  
   <!-- Project size -->
   <numevents>1000</numevents>
 
@@ -112,7 +115,8 @@ Next is the project element.
 - `numevents` is the total number of events you want to produce in the
     sample and **NOT** the number of events per job.
 - `resource` specify the job resources and how the jobs are queued. Default is "DEDICATED,OPPORTUNISTIC".
--   Line 22 defines how the jobs are queued.
+- `os` specifies the operating system to be picked (in container form) for the job; at time of writing, LArSoft (`v09_90_00`) supports only SL7.
+-   Line 25 defines how the jobs are queued.
 
 The Larsoft sub element:
 
