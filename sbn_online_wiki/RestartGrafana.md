@@ -16,6 +16,14 @@ _Note: Sometimes it may be necessary to delete old pid or authdigest_shm files._
 rm /data/grafana/data/container/pids/*.pid
 rm /data/grafana/data/container/httpd/data/authdigest_shm.*
 ```
+or if you are using sbnd-evb04 the grafana directories are in 
+```bash 
+/scratch_local/grafana
+```
+Often the log that is the most trouble and needs to be removed (as root) is 
+```bash 
+rm -f /scratch_local/grafana/logs/graphite/exception.log
+```
 
 * start grafana container with  session with  "systemctl start  grafana.service; systemctl status grafana.service".
 
