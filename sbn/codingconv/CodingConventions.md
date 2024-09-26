@@ -67,9 +67,9 @@ in GIT markdown, the link may look like:
 
 #   Editing   ##################################################################
 
-The editors of this document are at this time
-[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu) and
-[Fernanda Psihas](mailto:psihas@fnal.gov).
+The editor of this document is at this time
+[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu).
+It was originally designed also by [Fernanda Psihas](mailto:psihas@fnal.gov).
 
 This document is expected to evolve as new insights, opinions or practices
 prevail. To propose an addition or a semantic change, please write to the main
