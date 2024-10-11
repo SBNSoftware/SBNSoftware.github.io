@@ -49,6 +49,8 @@ Here you can find the [dcache persistant usage by VO](https://lsvip.fnal.gov/mon
 
 Tape usage for ICARUS can be found at [this page](https://fifemon.fnal.gov/monitor/d/BSnVdWDnk/tape-data?orgId=1&var-Experiment=icarus&var-FileFamily=All&from=now-1y&to=now).
 
+Fermigrid allocation, e.g. for ICARUS at [this page](https://fifemon.fnal.gov/monitor/d/000000192/condor-group-quotas?orgId=1&var-pool=fifebatch&var-group=icarus).
+
 ICARUS data Keepup processing
 --------------------------
 ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
