@@ -56,7 +56,7 @@ SBND MC
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |  
-| BNB + Cosmics CV | MC2024B | v09_91_02_01 | 213338 | reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_sbnd | 
+| BNB + Cosmics CV | MC2024B | v09_91_02_01 | 316623 | reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
