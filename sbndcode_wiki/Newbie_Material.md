@@ -87,11 +87,21 @@ when logging in to SBND GPVM nodes, they need to add to the above also the line
   XAuthLocation /opt/X11/bin/xauth
 ```
 
-MacOS users can\'t use kerberos tools from conda environment,
-they need either disable conda environment,
-or use system *kinit* running:
+MacOS users can\'t use kerberos tools from conda environment.
+To check what kerberos tools are set as default, run the following command
 ```shell
-/usr/bin/kinit -f [yourusername]@FNAL.GOV` 
+which kinit
+```
+if the output is different from
+```shell
+/usr/bin/kinit
+```
+and it has `conda` in the path, possibly the system is using kerberos tool from conda environment,
+which is not compatible with FNAL kerberos setup.
+Users need either to disable conda environment,
+or use the system *kinit* running:
+```shell
+/usr/bin/kinit -f [yourusername]@FNAL.GOV
 ```
 
 **Reset Fermilab passwords**  
