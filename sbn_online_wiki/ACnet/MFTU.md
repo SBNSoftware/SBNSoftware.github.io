@@ -139,8 +139,8 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 |   A8    |      $1F      |      $1D     |   0   |     ---      |
 |   A9    |      $1D      |      $1D     |32520us|     PTB      |
 |   A10   |      $1D      |      $1D     |32520us|     ---      |
-|   A11   |      $1D      |      $1D     |   0   |     ---      |
-|   A12   |      $1D      |      $1D     |   0   |     ---      |
+|   A11   |      $1D      |      $1D     |32520us|     ---      |
+|   A12   |      $1D      |      $1D     |32520us|     ---      |
 |   A13   |      $1D      |      $1D     |   0   |     ---      |
 |   A14   |      $1D      |      $1D     |   0   |     ---      |
 |   A15   |      BES      |      $1D     |   0   |     ---      |
@@ -153,10 +153,10 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 |   B6    |      $74      |      $74     |   0   |     ---      |
 |   B7    |      $74      |      $74     |   0   |     ---      |
 |   B8    |      $74      |      $74     |   0   |     ---      |
-|   B9    |      $1D      |      $1D     |   0   |     ---      |
-|   B10   |      $1D      |      $1D     |   0   |     ---      |
-|   B11   |      $1D      |      $1D     |   0   |     ---      |
-|   B12   |      $1D      |      $1D     |   0   |     ---      |
+|   B9    |      $1D      |      $1D     |32520us|     ---      |
+|   B10   |      $1D      |      $1D     |32520us|     ---      |
+|   B11   |      $1D      |      $1D     |32520us|     ---      |
+|   B12   |      $1D      |      $1D     |32520us|     ---      |
 |   B13   |      $1D      |      $1D     |   0   |     ---      |
 |   B14   |      $1D      |      $1D     |   0   |     ---      |
 |   B15   |      $1D      |      $1D     |   0   |     ---      |
