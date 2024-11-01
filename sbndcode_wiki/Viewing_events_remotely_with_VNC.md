@@ -9,7 +9,8 @@ toc: true
 Viewing events remotely with VNC
 ====================================================================================
 
-Source the VNC setup script, and follow its instructions: 
+Source the VNC setup script, and follow its instructions:**
+
     source /nashome/d/dbrailsf/setupVNC.sh
 
 
