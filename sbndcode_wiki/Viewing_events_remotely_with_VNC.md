@@ -9,6 +9,14 @@ toc: true
 Viewing events remotely with VNC
 ====================================================================================
 
+Source the VNC setup script, and follow its instructions: 
+    source /nashome/d/dbrailsf/setupVNC.sh
+
+
+
+OLD INSTRUCTIONS
+====================================================================================
+
 (Taken and adapted from Dom Brailsford DUNE wiki Instructions)
 
 VNC provides you with a remote window to easily view GUIs from a remote
@@ -167,7 +175,7 @@ fully display the TITUS window within the VNC one.
 
 
 
-Old (ancient) instructions
+ANCIENT INSTRUCTIONS
 ----------------------------------------------------------------------
 
 (Adapted from the 35 ton tutorials by Karl Warburton)
