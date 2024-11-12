@@ -28,7 +28,7 @@ These are the `sbndcode` releases tagged until now:
   |`v09_91_02_01`.              |    Patch for SBN2024A.                      |    [Release Notes](ReleaseNotes09910201.html)
   |`v09_91_02`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes099102.html)
   |`v09_90_00`.                 |    Weekly release.                          |    [Release Notes](ReleaseNotes099000.html)
-  |`v09_88_01`.                 |    Patch for SBN2024A.                      |    [Release Notes](ReleaseNotes098901.html)
+  |`v09_89_01`.                 |    Patch for SBN2024A.                      |    [Release Notes](ReleaseNotes098901.html)
   |`v09_88_00_04`.              |    Patch for SBN2024A.                      |    [Release Notes](ReleaseNotes09880004.html)
   |`v09_88_00_03`.              |    Patch for SBN2024A.                      |    [Release Notes](ReleaseNotes09880003.html)
   |`v09_88_00_02`.              |    SBN2024A.                                |    [Release Notes](ReleaseNotes09880002.html)
