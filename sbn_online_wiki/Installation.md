@@ -35,18 +35,17 @@ source /daq/software/products_dev/setup   #dev area
 ```
 3. Setup the version of sbndaq we are based. To see a list of the different available versions, use
 ```bash
-ups list -aK+ sbndaq -qe26:s120a:prof
+ups list -aK+ sbndaq -qe26:s131:prof
 ```
-It's recommended you use the latest available version (this is currently v1_10_01 as of 4/2024) with e26:prof:s120a as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_10_02 as of 11/2024) with e26:prof:s131 as the option. Then, to set up, use:
 ```bash
-setup sbndaq v#_##_## -qe26:prof:s120a
+setup sbndaq v#_##_## -qe26:prof:s131
 ```
 Quick detour:
 	- `e` qualifiers specify the gcc compiler version
-	- `py2` qualifier specifies to use python2 (default is python3)
 	- `s` qualifiers specify the `art` suite version
 	- `prof` specifies optimization flags in the compiler, while `debug` specifies debug flags.
-	
+
 	If you want to just run from there, that's all you need to do! 
 
 ## Build/install local build
@@ -89,7 +88,7 @@ mrb g <repo_name_with_underscore>
 *Note:* you may need to do some setup of your github account with proper SSH keys. See [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).)
 *Note:* This will pull from the HEAD of the develop branch and include any changes that may have been pushed since the last tag (`v#_##_##`) was created. Alternatively, if you want to build the tagged, working version that was set up in the previous steps, directly:
 ```bash
-mrb g <repo_name_with_underscore>@<desired tag version *e.g.* v1_10_01, or branch *e.g.$ feature/me_myAwesomeFeature>
+mrb g <repo_name_with_underscore>@<desired tag version *e.g.* v1_10_02, or branch *e.g.$ feature/me_myAwesomeFeature>
 ```
 <!---
 *Note:* An error can occur when attempting to pull down the repositories with a message of "Unable to verify write access...". If this happens, go the the appropriate srcs directory and do these:
@@ -119,14 +118,14 @@ Important: If prompted to run the `mrb uc` command (see the output example below
 INFO: stage cmake for MRB project sbndaq v1_00_00
 ------------------------------------
 CMake Error at /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:37 (message):
-  Current CMake subdirectory inclusion order is not consistent with current
-  packages and their interdependencies.
+		Current CMake subdirectory inclusion order is not consistent with current
+		packages and their interdependencies.
 
-  Please run "mrb uc" to regenerate ${MRB_SOURCE}/CMakeLists.txt with
-  subdirectories listed for inclusion in the correct order.
+		Please run "mrb uc" to regenerate ${MRB_SOURCE}/CMakeLists.txt with
+		subdirectories listed for inclusion in the correct order.
 Call Stack (most recent call first):
-  /daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:79 (mrb_check_subdir_order)
-  CMakeLists.txt:5 (include)
+		/daq/software/products/mrb/v5_18_01/Modules/Mrb.cmake:79 (mrb_check_subdir_order)
+		CMakeLists.txt:5 (include)
 -- Configuring incomplete, errors occurred!
 FATAL ERROR: stage cmake FAILED for MRB project sbndaq v1_00_00 with code 1
 ```
@@ -208,7 +207,7 @@ export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v1_10_01 -q e26:prof:s120a
+setup sbndaq v1_10_02 -q e26:prof:s131
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
