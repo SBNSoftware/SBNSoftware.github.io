@@ -24,6 +24,7 @@ Update to depend on `sbncode v09_93_01_01`, which includes an updated `sbndaq-ar
 New features
 ---------------------------------------------------
 #553 from SBNSoftware/dbrailsf_fclreorgbugfix
+
 #536 from SBNSoftware/dbrailsf_datafilter
 
 Bug fixes
