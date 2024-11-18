@@ -122,10 +122,10 @@ This section displays a list of the variables in the database, as well as their 
 
 | Variable Name | Type | Description | Unit |
 | ------------- | ---- | ----------- | ---- |
-| gauss_wc      | real | | |
-| gauss_w_wc_power | real | | 
-| ophit_adc_threshold | int | | | 
-| 1spe_amp | real | | |
+| gauss_wc      | real | WC parameter for Gauss noise filter | GHz |
+| gauss_w_wc_power | real | Power parameter for Gauss noise filter | N/A | 
+| ophit_adc_deco_threshold | int | ADC threshold for selecting ophits on deconvolved signal | N/A | 
+| 1spe_amp | real | Mean amplitude of SPE | ADC |
 
 ### What happens when a variable does not exist in an older version of the database?
 
