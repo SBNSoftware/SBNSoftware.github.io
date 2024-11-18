@@ -114,6 +114,19 @@ This section displays a list of the variables in the database, as well as their 
 | xhigh | real | High-edge bin position in X direction | cm |
 | scale | real | Non-uniformity scale along X direction | N/A |
 
+### pds_globalconstants
+- Folder description: This folder contains non-channel specific information
+- Channel number: No meaning
+- Number of rows: 1
+- URL with current values in Production Database:
+
+| Variable Name | Type | Description | Unit |
+| ------------- | ---- | ----------- | ---- |
+| gauss_wc      | real | | |
+| gauss_w_wc_power | real | | 
+| ophit_adc_threshold | int | | | 
+| 1spe_amp | real | | |
+
 ### What happens when a variable does not exist in an older version of the database?
 
 In a scenario where a variable has to be added to the database later on, it has been decided that this variable will assume the value of `-999` for older version, and therefore should be defined manually by the user when doing analysis. For example, imagine that the first version of the database contains the variables `version1=['field_response','sce']`, but then a few months we learn that we should also include `diffusion`, so the second version of the database will contain the variables `version2=['field_response','sce','diffusion']`. So what happens when someone wants to perform an analysis with an older version of the database? It will lack the information about `diffusion` in this simple example. There are two possible solutions for this situation:
