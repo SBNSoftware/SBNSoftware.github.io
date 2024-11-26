@@ -463,3 +463,24 @@ ICARUS Compressed RAW DATA
 | Run 2 | offbeambnbmajority | run2_compression_production_v09_82_02_01_offbeambnbmajority_compressed_data | offbeambnbmajority_run2_physics_9301_to_10097_recover |
 | Run 2 | bnbmajority | run2_compression_production_v09_82_02_01_bnbmajority_compressed_data | bnbmajority_run2_physics_9301_to_10097_recover |
 | Run 2 | offbeambnbminbias | run2_compression_production_v09_82_02_01_offbeambnbminbias_compressed_data | offbeambnbminbias_run2_physics_9301_to_10097_recover |
+
+
+Polaris Production Samples
+--------------------------
+
+MC files generated on the Polaris computer at Argonne National Lab.
+
+SBND MC
+--------------------------
+
+_2024 November_: A sample of central value SBND MC events were generated on Polaris as part of production tests. The Flat CAF files are copied from Polaris and are available on `/pnfs`. The `.fcl` files used for each stage are as follows:
+- _gen_: `prodoverlay_corsika_cosmics_proton_genie_rockbox_sbnd.fcl`
+- _g4_: `g4_dirt_filter_lite.fcl`
+- _detsim_: `standard_detsim_sbnd.fcl`
+- _reco1_: `standard_reco1_sbnd.fcl`
+- _reco2_: `standard_reco2_sbnd.fcl`
+- _caf_: `cafmakerjob_sbnd_systtools_and_fluxwgt.fcl`
+
+| Sample Description | release version | # Events | File type | Samweb definition |
+| --- | --- | --- | --- | --- |
+| BNB + Cosmics CV | v09_93_01 | 274387 | flatcaf | polaris_v09_93_01_prodoverlay_corsika_cosmics_proton_genie_rockbox_sbnd_caf_flat_caf_sbnd |
