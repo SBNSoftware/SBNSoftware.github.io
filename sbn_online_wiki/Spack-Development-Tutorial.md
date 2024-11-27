@@ -8,6 +8,7 @@ Before creating the Spack environment, you need to set up the Spack product repo
 
 ```sh
 source /daq/software/spack_packages/setup-env.sh
+export SPACK_DISABLE_LOCAL_CONFIG=true
 ```
 
 This command sources the `setup-env.sh` script located at `/daq/software/spack_packages/`. It sets up the paths and environment variables required for Spack to function correctly.
