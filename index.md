@@ -3,20 +3,34 @@ layout: page
 title: SBN Software Wiki
 subtitle: A wiki for documentation of the SBN Software packages
 hero_height: is-medium
-toc: true
+toc: false
 ---
 
 
 # Welcome to the SBN Software Wiki Page
+This page is designed to serve as a hub for SBN collaborators to find what they need.
 
-**New to the SBN Github? Go to the [Github migration to do list](AnalysisInfrastructure/github-migration-to-do-list.md)**
+## For New Collaborators ##
+If you're looking for a tutorial on one of the many aspects of SBN physics, collaboration, or computing, chances are, you'll find it here:
+* [SBN Young Guide](SBNYoung/SBNYoungIndex.md)
+* To be broken down into further categories, such as physics and computing
 
-See below for helpful links:
+## Collaboration Organization Documents ##
+* [SBND](ExperimentDocuments/sbnd.md)
+* [ICARUS](ExperimentDocuments/icarus.md)
+* [SBN](ExperimentDocuments/sbn.md)
+
+## Software Documentation ###
+* [doxygen](doxygen): Auto-generated from the source code, updated nightly
+* [LArSoft Wiki](https://larsoft.github.io/LArSoftWiki/)
+
+## Operations ##
+* [ICARUS Operations](Operations/SBN_FD/index)
+* [SBND Operations](Operations/SBN_ND/index)
 
 ## [Analysis Infrastructure](AnalysisInfrastructure/index) ##
+New to the SBN Github? Go to the [Github migration to do list](AnalysisInfrastructure/github-migration-to-do-list.md)**
 ### [How to Add New Features, Fix Bugs, Or Otherwise Develop](AnalysisInfrastructure/how-to-develop) ###
-
-### [LArSoft Wiki](https://larsoft.github.io/LArSoftWiki/) ###
 
 ## List of Repositories ##
 
@@ -43,17 +57,6 @@ See below for helpful links:
 * [sbndaq-minargon](https://github.com/SBNSoftware/sbndaq-minargon): Web-based detector monitoring for SBN
 
 * [sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter): Code for online SBN data management
-
-
-## Documentation ###
-* [doxygen](doxygen): Auto-generated from the source code, updated nightly
-
-## Operations ##
-* [ICARUS Operations](Operations/SBN_FD/index)
-* [SBND Operations](Operations/SBN_ND/index)
-
-## SBN Young Guide ##
-* [SBN Young Guide](SBNYoung/SBNYoungIndex.md)
 
 ## Contribute to this wiki ##
 
