@@ -47,11 +47,7 @@ Recommended workflow:
 
 More info about CNAF: https://wiki.infn.it/progetti/icarus/home
 
-
-Monte Carlo official SBN Production Samples
---------------------------
-
-SBND MC
+SBND Monte Carlo Samples
 --------------------------
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
@@ -147,10 +143,8 @@ SBND MC
 | --- | --- | --- | --- | caf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_flat_caf_sbnd |
 
-ICARUS MC
+ICARUS Monte Carlo Samples
 --------------------------
-
-icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
@@ -401,14 +395,22 @@ icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
     * bug in LArSoft can lead to issues where the best matching particle is non existent.
     * more information: [DocDB:20894](https://sbn-docdb.fnal.gov/cgi-bin/private/ShowDocument?docid=20894) 
 
-Data SBN Production Samples
+SBND DATA Samples
 --------------------------
 
-ICARUS DATA
+| Sample Description | production push | release version | # Events | Sample type | Samweb definition |    
+| --- | --- | --- | --- | --- | --- | 
+| Summer Data (runs 4435-14785 / config bnbZeroBiasAndSunset0-000091) | - | v09_93_01_01 | ~209900 | raw data | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009 |  
+| --- | --- | --- | --- | decoded | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_decode |
+| --- | --- | --- | --- | reco1 | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco1 |
+| --- | --- | --- | --- | reco2 | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco2 |
+| --- | --- | --- | --- | caf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_caf |
+| --- | --- | --- | --- | flat caf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_flatcaf |
+
+ICARUS DATA Samples
 --------------------------
 
-ICARUS Reconstructed DATA
---------------------------
+### ICARUS Reconstructed DATA
 
 ### Notes on samples ###
 * Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
@@ -450,8 +452,7 @@ ICARUS Reconstructed DATA
 | BNB stream | Run 1 reprocessing | v09_37_02_01 | 627484 | stage0 | IcarusProd_Run1_reprocess_BNBstream_stage0	| 
 | --- | --- | --- | 627484 | stage1 | IcarusProd_Run1_reprocess_BNBstream_stage1 |
 
-ICARUS Compressed RAW DATA
---------------------------
+### ICARUS Compressed RAW DATA
 
 | Run | datastream | SAM dataset | Files failed Compression |
 | --- | --- | --- | --- |
