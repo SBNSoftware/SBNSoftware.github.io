@@ -5,7 +5,7 @@ toc: true
 ---
 
 -----------------------------------------------------------------------------
-| v09.93.01.02rc0 | 19 Dec 2024 | [ReleaseNotes](ReleaseNotes09930102rc0.html) |
+| v09.93.01.02rc0 | 19 Dec 2024 | [ReleaseNotes](ReleaseNotes09930102rc.html) |
 | --- | --- | --- |
 
 
