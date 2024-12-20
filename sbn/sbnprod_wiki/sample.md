@@ -51,7 +51,7 @@ More info about CNAF: https://wiki.infn.it/progetti/icarus/home
 Monte Carlo official SBN Production Samples
 --------------------------
 
-SBND MC
+### SBND MC
 --------------------------
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
@@ -147,7 +147,7 @@ SBND MC
 | --- | --- | --- | --- | caf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_flat_caf_sbnd |
 
-ICARUS MC
+### ICARUS MC
 --------------------------
 
 icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
@@ -404,10 +404,20 @@ icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
 Data SBN Production Samples
 --------------------------
 
-ICARUS DATA
+### SBND DATA
 --------------------------
 
-ICARUS Reconstructed DATA
+| Sample Description | release version | # Events | File type | Samweb definition |
+| --- | --- | --- | --- | --- |
+| BNB Summer 2024 Data | v09_93_01_01 | - | raw | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009 |
+| --- | --- | --- | decode | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_decode |
+| --- | --- | --- | reco1 | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco1 |
+| --- | --- | --- | reco2 | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco2 |
+| --- | --- | --- | calib tuple | hist_sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco2 |
+| --- | --- | --- | caf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_caf |
+| --- | --- | --- | flatcaf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_flatcaf |
+
+### ICARUS Reconstructed DATA
 --------------------------
 
 ### Notes on samples ###
@@ -450,7 +460,7 @@ ICARUS Reconstructed DATA
 | BNB stream | Run 1 reprocessing | v09_37_02_01 | 627484 | stage0 | IcarusProd_Run1_reprocess_BNBstream_stage0	| 
 | --- | --- | --- | 627484 | stage1 | IcarusProd_Run1_reprocess_BNBstream_stage1 |
 
-ICARUS Compressed RAW DATA
+### ICARUS Compressed RAW DATA
 --------------------------
 
 | Run | datastream | SAM dataset | Files failed Compression |
@@ -470,7 +480,7 @@ Polaris Production Samples
 
 MC files generated on the Polaris computer at Argonne National Lab.
 
-SBND MC
+### SBND MC
 --------------------------
 
 _2024 November_: A sample of central value SBND MC events were generated on Polaris as part of production tests. The Flat CAF files are copied from Polaris and are available on `/pnfs`. The `.fcl` files used for each stage are as follows:
