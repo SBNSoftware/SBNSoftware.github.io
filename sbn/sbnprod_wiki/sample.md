@@ -480,6 +480,16 @@ Polaris Production Samples
 
 MC files generated on the Polaris computer at Argonne National Lab.
 
+### SBND Data
+--------------------------
+_2024 Winter_: Calibration request for data processing to produce calibration ntuples was performed on Polaris.
+
+Run list: 17625, 17635, 17648, 17658, 17660, 17662, 17664
+
+| Sample Description | release version | # Events | File type | Samweb definition |
+| --- | --- | --- | --- | --- |
+| Calibration request | v09_93_01_01 | --- | calib tuple | polaris_v09_93_01_01_data_calibration_ntuple_sbnd |
+
 ### SBND MC
 --------------------------
 
