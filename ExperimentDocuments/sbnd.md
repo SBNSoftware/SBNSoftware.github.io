@@ -19,4 +19,5 @@ toc: false
 * For a list of publicly approved plots, see SBN DocDB entries with topic "Approved for External Use": [https://sbn-docdb.fnal.gov/cgi-bin/sso/ListBy?topicid=437](https://sbn-docdb.fnal.gov/cgi-bin/sso/ListBy?topicid=437)
 
 ## SBND Logos ##
-* Link to SBND Logos
+![Unable to display image](SBND-color.jpg "SBND Logo")
+![Unable to display image](SBND-pride.png "SBND Pride Logo")
