@@ -83,7 +83,7 @@ You should then be able to ssh to an sbnd machine as the sbndpro user:
      ssh -Y sbndpro@sbndgpvm01.fnal.gov 
 
 
-
+<!--
 ### Getting the production proxy (old-school method)
 
 The following should be run on the command line when logged into the
@@ -92,16 +92,15 @@ sbndpro account.
     kx509; voms-proxy-init -noregen -rfc -voms 'fermilab:/fermilab/sbnd/Role=Production' 
 
 You should now be able to submit production jobs.
+-->
 
 
-
-### Getting the production proxy (the new method)
+### Getting the production proxy
 
 A much easier alternative to getting production-role access is to use
-the production proxy certificate that is pushed to the gpvm several
-times a day, courtesy of the SCD.
-As with the old-school method, the certificate is only accessible from
-the sbndpro account.
+the production proxy certificate that is pushed every 4 hours to the gpvm
+by the Managed Proxy Service, courtesy of the CSAID.
+The certificate is only accessible from the sbndpro account.
 
 Here is some fine print, sent from Kevin Retzke when this method was
 setup on the sbndgpvms:
@@ -119,7 +118,7 @@ setup on the sbndgpvms:
 >    4. Someone with the production role must be designated to have the service certificate registered under in VOMS. 
 
 The certificate has to be registered to someone. At time of writing, the
-certificate is registered to Dominic Brailsford.
+certificate is registered to Mateus Carneiro Da Silva.
 
 To use the certificate, make sure the following environment variable is
 set:
@@ -129,4 +128,4 @@ set:
 At time of writing, the .profile file for sbndpro should setup the
 `X509_USER_PROXY` environment variable so hopefully you don't need to
 do anything! Once `X509_USER_PROXY` is set, you are able to submit
-production jobs (no need to use the old-school method as well!)
+production jobs.
