@@ -21,28 +21,8 @@ Change List
 ==========================================
 
 ### Release Notes for [sbndcode] from v09_93_01_01 to v09_93_01_02p01
-- PR #568: Feature/lynnt wirecell data
-  - **Description**: PR 539, Update coherent noise-filtering and other bits for MC and data.  - adjust coherent noise parameters (for signal protection) - update RC tail deconvolution time constant (from 1.1ms to 0.5ms), based on data - change number of expected ticks in data from 3415 -> 3427 - add a main jsonnet for running noise-filtering only
-  - **Labels**: 
-  - **Reviewers**: 
-  - **Assignees**: 
-- PR #569: Feature/hlay gdml v02 03
-  - **Description**: PR 540, This PR introduces a new GDML file v02_03 which improves the description of the SBND CRT system. Full details are in [docDB 38333](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38333).  The resulting changes are made to the channel map, pedestal and timing delays files (the latter two primarily consisting of the addition of the top CRT).  The CRT channel map folder is reorganised to only contain genuine iterations of channel map change (hardware change) not just bug fix changes. Ideally this would be made run number dependent (as is described in the included README) but that is a next step.
-  - **Labels**: 
-  - **Reviewers**: 
-  - **Assignees**: 
-- PR #570: Feature/lynnt pmt decoder
-  - **Description**: PR 541  1. Creates a two new data products to persist CAEN/event timing information for the downstream in case we drop the `CAEN1730` Fragments. - `raw::pmt::eventTimingInfo`: saves which timing system and what channel/word was used for the event reference time. - `raw::pmt::boardTimingInfo`: saves the postpercent and a vector of TTT (size will be >1 if there are extended triggers) - Association are also made between `raw::OpDetWaveforms` and `raw::pmt::boardTimingInfo`. Because there are three different instances of `OpDetWaveform`s created in each event, there are also three different instances of the associations. 2. Adds logic for choosing the PTB HLT timestamp when the SPEC TDC ETRIG is missing -  the HLT with the smallest trigger word >0 and <10000 (these limits are fcl configurable) is chosen, a check is also done to ensure the timestamps are within 3 ms (fcl configurable) of the raw header timestamp 3. adds the timing CAEN to the default decoding configuration (AKA the timing CAEN will be decoded by default) - timing CAEN waveforms do not need special treatment for decoding - timing CAEN waveforms from ch0, ch1, ch2 will be saved under instance `TimingChannels` as `raw::OpDetWaveforms`, with channel numbers `900`,`901`,`902` respectively. - timing CAEN waveforms from ch15 will be saved into the pre-existing instance `FTrigChannels` as `raw::OpDetWaveforms` - added fcl configurables to turn on/off saving the above waveforms, and which channels to save 4. adds some flexibility depending on number of TDC ETT found in the decoded TDC objects - if more than 1 TDC ETT is found, then the one closest to the raw header timestamp will be used as the reference time - correction for raw header timestamp is done by default, value set by `raw_ts_correction`, default value is 367 us.
-  - **Labels**: 
-  - **Reviewers**: 
-  - **Assignees**: 
-- PR #571: Linyan calib
-  - **Description**: Please provide a detailed description of the changes this pull request introduces.
-  - **Labels**: 
-  - **Reviewers**: 
-  - **Assignees**: 
 - PR #581: Feature/maxd ptb decoder update
-  - **Description**: 
+  - **Description**: [PTB Decoder Update (1).pdf](https://github.com/user-attachments/files/18159471/PTB.Decoder.Update.1.pdf)
   - **Labels**: 
   - **Reviewers**: jzennamo, lyates17
   - **Assignees**: 
