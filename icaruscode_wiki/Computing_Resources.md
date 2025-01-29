@@ -250,6 +250,8 @@ Accessing resources (DocDB, VOMS, ...) via certificates
 > Note: this section is about "personal" certificates, not the kind of
 > [certificate proxies you need to work on the grid](Get_a_certificate_proxy.md).
 
+📣 **⚠️ "personal" certificates will be [discontinued on May 2025](https://ca.cilogon.org/retirement) ⚠️**
+
 A CILogon certificate gives access to a number of Fermilab resources.
 After you [get a CILogon certificate](Setting_up_access_with_CILogon_certificate.md),
 you will gain access to:
