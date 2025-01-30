@@ -119,7 +119,7 @@ psql -W -U triggerdb_reader -h ifdbdaqrep01 -p 5455 -d icarus_trigger_prd
 ```
 You will be prompted for a password.
 
-Connection details to be used for Python/C++ connection libraries are:
+Connection details to be used for Python/C++ libraries are:
 ```
 db_params = {
   'dbname': 'icarus_trigger_prd',
