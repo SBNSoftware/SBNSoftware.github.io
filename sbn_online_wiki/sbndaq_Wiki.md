@@ -21,7 +21,8 @@ Database instructions
 ---
 * [Configuration DB Instructions](configurationDB.md)
 * [ICARUS configuration list](ICARUSConfigurationList.md)
-* [run history database instructions (ArtdaqDB, UconDB)](run_history.md)
+* [Run history database instructions (ArtdaqDB, UconDB)](run_history.md)
+* [Event-by-event trigger database](ICARUSTriggerDatabase.md)
 
 
 Workshops
