@@ -85,7 +85,36 @@ The length and font size of the scale bar are both customizable under Edit->Pref
 
 ## For developers: How to Build and Install your Copy of TITUS
 
-### Current official, pre-2024 version
+### Current version, 2024+ (cmake)
+
+Setup one or both of `sbndcode` and `icaruscode` via UPS, then also set up `cetmodules` via UPS.
+
+Create a folder for build files and run `cmake`:
+
+    cd /path/to/titus/build
+    cmake /path/to/gallery-framework -DCMAKE_INSTALL_PREFIX=/path/to/install
+    cmake --build .
+    cmake --install .
+
+
+As in previous versions, TITUS requires Python with ROOT support and several additional packages. If you have set up `sbndcode` from UPS, you should already have Python with ROOT support. From there, additional packages may be installed via `pip`. To stay organized, it is recommended to first create a virtual environment via
+
+    python -m venv ~/.venv/titus
+    source ~/.venv/titus/bin/activate
+
+
+Then install the additional packages with `pip install <package name>`:
+
+    PyQt5
+    pyqtgraph
+    scipy
+    pillow
+
+Finally, launch TITUS with 
+    
+    evd.py
+
+### Legacy, pre-2024 version (make)
 
 TITUS requires `gallery` and `sbndcode`. You can obtain both pulling the
 ups products.
@@ -107,34 +136,3 @@ Then
 That\'s it!
 
 
-### Preview build, 2024+
-
-Setup one or both of `sbndcode` and `icaruscode` via UPS, then also set up `cetmodules` via UPS.
-
-TITUS's build system will be switched to `cmake`. Currently, you must check out a feature branch `feature/twester_gui`
-
-    git clone https://github.com/coreyjadams/gallery-framework.git
-    cd gallery-framework
-    git checkout feature/twester_gui
-
-
-Next, create a folder for build files and run `cmake`:
-
-    cd /path/to/titus/build
-    cmake /path/to/gallery-framework -DCMAKE_INSTALL_PREFIX=/path/to/install
-    cmake --build .
-    cmake --install .
-
-
-As before, TITUS requires Python with ROOT support and several additional packages. If you have set up `sbndcode` from UPS, you should already have Python with ROOT support. From there, additional packages may be installed via `pip`. To stay organized, it is recommended to first create a virtual environment via
-
-    python -m venv ~/.venv/titus
-    source ~/.venv/titus/bin/activate
-
-
-Then install the additional packages with `pip install <package name>`:
-
-    PyQt5
-    pyqtgraph
-    scipy
-    pillow
