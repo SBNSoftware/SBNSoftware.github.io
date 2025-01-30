@@ -15,10 +15,10 @@ POT accounting requires matching ICARUS events with IFBEAM events.
 While LArSoft events store the same trigger information, events are not saved sequentially in the DAQ output files.
 This is both due to the different data streams and the number of EventBuilder processes (given `n` EventBuilders, event `j` is packaged by the `(j%n)th` one).
 As a result, POT accounting would require accessing all the files in a run just to sort the triggers by time.
-The trigger database was developed to simplify these operations in the offline, providing a easy way to query and sort the collected triggers.
+The trigger database was developed to simplify these operations in the offline, providing an easy way to query and sort the collected triggers.
 
 The scripts supporting and automatically filling the trigger database are in the following repository:
-https://github.com/SBNSoftware/icarus-trigger-database.
+[https://github.com/SBNSoftware/icarus-trigger-database](https://github.com/SBNSoftware/icarus-trigger-database).
 The initial implementation was developed by [Justin Mueller](https://github.com/justinjmueller) at [https://github.com/justinjmueller/icarus_runinfo_database](https://github.com/justinjmueller/icarus_runinfo_database).
 
 ### Data flow
@@ -98,7 +98,7 @@ The primary key is `log_name`.
 #### Online version
 
 Direct access to the database in the online cluster is reserved for filling operations through the shared `triggerdb_writer` user.
-This is handled through the script configuration in https://github.com/SBNSoftware/icarus-trigger-database/blob/main/config.json.
+This is handled through the script configuration in [https://github.com/SBNSoftware/icarus-trigger-database/blob/main/config.json](https://github.com/SBNSoftware/icarus-trigger-database/blob/main/config.json).
 
 For interactive access from `icarus-gateway03`, type:
 
