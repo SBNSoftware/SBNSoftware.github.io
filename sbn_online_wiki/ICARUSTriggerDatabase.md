@@ -38,7 +38,7 @@ A more robust implementation is being planned by having the database filled dire
 
 ### Tables
 
-## Trigger Data
+#### Trigger Data
 
 The `triggerdata` table encapsulates all information that exists at the per-trigger level. It corresponds to the contents of the trigger TCP/IP packet.
 The primary key is the pair (`run_number`,`event_no`).
@@ -79,7 +79,7 @@ The primary key is the pair (`run_number`,`event_no`).
 | `flag_west`            | integer | Flags true if a trigger was detected in the West cryostat                                                                    | `-1`    |
 | `delay_west`           | integer | Delay of the West trigger from the start of the beam gate in FPGA ticks (default: 90)                                        | `-1`    |
 
-## Trigger log
+#### Trigger log
 
 The `triggerlog` table contains metadata associated with each trigger log file.
 It is used internally to keep track of log files that have been processed already.
@@ -101,9 +101,11 @@ Direct access to the database in the online cluster is reserved for filling oper
 This is handled through the script configuration in https://github.com/SBNSoftware/icarus-trigger-database/blob/main/config.json.
 
 For interactive access from `icarus-gateway03`, type:
+
 ```
 psql -W -U triggerdb_writer -h icarus-db02 -p 5434 -d icarus_trigger_prd
 ```
+
 You will be prompted for a password.
 
 Please contact [Donatella Torretta](mailto:torretta@fnal.gov) or [Matteo Vicenzi](mailto:mvicenzi@bnl.gov) for the password.
@@ -114,12 +116,15 @@ Access for querying and analyzing trigger data should be performed via the offli
 This is handled through the shared `triggerdb_reader` user.
 
 For interactive access from any `icarusgpvm` host, type:
+
 ```
 psql -W -U triggerdb_reader -h ifdbdaqrep01 -p 5455 -d icarus_trigger_prd
 ```
+
 You will be prompted for a password.
 
 Connection details to be used for Python/C++ libraries are:
+
 ```
 db_params = {
   'dbname': 'icarus_trigger_prd',
