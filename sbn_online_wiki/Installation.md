@@ -37,7 +37,7 @@ source /daq/software/products_dev/setup   #dev area
 ```bash
 ups list -aK+ sbndaq -qe26:s131:prof
 ```
-It's recommended you use the latest available version (this is currently v1_10_03 as of 11/2024) with e26:prof:s131 as the option. Then, to set up, use:
+It's recommended you use the latest available version (this is currently v1_10_05 as of 02/2025) with e26:prof:s131 as the option. Then, to set up, use:
 ```bash
 setup sbndaq v#_##_## -qe26:prof:s131
 ```
@@ -88,7 +88,7 @@ mrb g <repo_name_with_underscore>
 *Note:* you may need to do some setup of your github account with proper SSH keys. See [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).)
 *Note:* This will pull from the HEAD of the develop branch and include any changes that may have been pushed since the last tag (`v#_##_##`) was created. Alternatively, if you want to build the tagged, working version that was set up in the previous steps, directly:
 ```bash
-mrb g <repo_name_with_underscore>@<desired tag version *e.g.* v1_10_03, or branch *e.g.$ feature/me_myAwesomeFeature>
+mrb g <repo_name_with_underscore>@<desired tag version *e.g.* v1_10_05, or branch *e.g.$ feature/me_myAwesomeFeature>
 ```
 <!---
 *Note:* An error can occur when attempting to pull down the repositories with a message of "Unable to verify write access...". If this happens, go the the appropriate srcs directory and do these:
@@ -207,7 +207,7 @@ export MRB_PROJECT=sbndaq
 ```
 And then to checkout and build `sbndaq` and `sbndaq-artdaq` (most common situation) source the script below _from your work directory_:
 ```bash
-setup sbndaq v1_10_03 -q e26:prof:s131
+setup sbndaq v1_10_05 -q e26:prof:s131
 export my_sbndaq_version=$(echo  $SETUP_SBNDAQ |cut -d " " -f 2)
 export my_sbndaq_quals=$(echo  $SETUP_SBNDAQ |cut -d " " -f 8)
 echo sbndaq version: $my_sbndaq_version
