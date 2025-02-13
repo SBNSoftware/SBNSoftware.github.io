@@ -136,3 +136,118 @@ db_params = {
 ```
 
 Please contact [Donatella Torretta](mailto:torretta@fnal.gov) or [Matteo Vicenzi](mailto:mvicenzi@bnl.gov) for the password.
+
+
+##### Access via Python script
+
+The following example shows a way to access the off-line database replica.
+Here, selected entries are turned into a [Pandas](https://pandas.pydata.org) dataframe.
+The PostgreSQL database is accessed via [SQLAlchemy](https://docs.sqlalchemy.org/en/20) API (2.0),
+which use [psychopg](https://www.psycopg.org/psycopg3/docs) (3) backend:
+all these packages need to be installed and operational.
+
+In addition, the database server is not directly accessible, and a workaround is needed.
+One is to open an SSH tunnel to the server, hopping through a Fermilab server we can access.
+For example, using `icarusgpvm03.fnal.gov` (after obtaining a Kerberos ticket):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.bash
+ssh -x -L '5455:ifdbdaqrep01.fnal.gov:5455' -N "${USER}@icarusgpvm03.fnal.gov"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+should open the tunner needed.
+
+Here is the example, with some comments within:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.py
+import sqlalchemy as sql
+import pandas
+import time
+
+ConnectionSettings = {
+  'database': 'icarus_trigger_prd',
+  'username': 'triggerdb_reader',
+  'password': '******',
+  'host':     'ifdbdaqrep01.fnal.gov',
+  'port':      5455,
+}
+TableName = 'triggerdata'
+
+#
+# Custom settings
+# 
+# The password is obviously not published. About the host: it is not accessible from outside Fermilab.
+# One way around it is to use SSH tunnelling: that we have access to icarusgpvm03.fnal.gov via Kerberos ticket
+#     
+#     ssh -x -L '5455:ifdbdaqrep01.fnal.gov:5455' -N "${USER}@icarusgpvm03.fnal.gov"
+#     
+# will open a tunnel from the port 5455 (see ConnectionSettings['port'] above)
+# of host ifdbdaqrep01.fnal.gov (see ConnectionSettings['host']),
+# accessible via localhost.
+# 
+ConnectionSettings['password'] = r'******'
+ConnectionSettings['host'] = 'localhost'
+
+#
+# create an "engine" to create connections to the database with
+#
+DBconnectionURL = sql.URL.create('postgresql+psycopg', **ConnectionSettings)
+DBengine = sql.create_engine(DBconnectionURL, echo=True)
+print(f"{DBconnectionURL=}")
+
+#
+# make the table and its schema known to SQLAlchemy library
+#
+DBmetadata = sql.MetaData()  # glorified dictionary of stuff that SQLAlchemy can track
+
+# triggerDataTable = sql.Table(TableName, DBmetadata, autoload_with=DBengine)  # this would load the whole table schema
+
+# instead of declaring the whole table schema, we skip the part that we don't need
+# by selecting columns ahead;
+# all these columns are integers and there are two primary keys in the database
+
+SelectedColumns = (
+  'run_number', 'event_no',
+  'wr_seconds', 'wr_nanoseconds',
+  'beam_seconds', 'beam_nanoseconds',
+  'gate_type', 'trigger_type', 'trigger_source',
+  'gate_id', 'gate_id_bnb', 'gate_id_numi', 'gate_id_bnboff', 'gate_id_numioff',
+)
+PrimaryKeys = { 'run_number', 'event_no' }
+
+triggerDataTable = sql.Table(
+  TableName, DBmetadata,
+  *[ sql.Column(colName, sql.Integer, primary_key=(colName in PrimaryKeys), nullable=False)
+    for colName in SelectedColumns
+    ],
+  )
+
+#
+# read the whole table (all available runs) into a Pandas dataframe, except:
+#  * calibration gate events
+#  * minimum bias events
+# This query loads >11M events.
+#
+# The database, at the time of writing, has hundreds of millions of entries,
+# and tens of gigabytes of data.
+# Even with a fast connection and a lot of available memory, reading the whole
+# thing is daunting.
+# Limiting the range of runs via `run_number` column is often useful.
+#
+selector = sql.select(triggerDataTable).where(sql.and_(
+  sql.between(triggerDataTable.c.gate_type, 1, 4), # not calibration gate
+  triggerDataTable.c.trigger_type == 0,            # light-based trigger
+  ))
+# print(f"Query:\n{selector}")
+startTime = time.time()
+with DBengine.connect() as DBconn:
+  df = pandas.read_sql_query(selector, DBconn)
+
+print(f"Whoa! it took {time.time() - startTime:.1f}\" to load {len(df)} entries and {len(df.columns)} columns from the database!!!")
+
+#
+# combine the two timestamp pieces
+#
+df['triggerTimestamp']    = df.wr_seconds   * 1_000_000_000 + df.wr_nanoseconds
+df['beamGateTimestamp']   = df.beam_seconds * 1_000_000_000 + df.beam_nanoseconds  # note: still includes the 4 us veto time
+df['triggerFromBeamGate'] = df.triggerTimestamp - df.beamGateTimestamp
+del df['wr_seconds'], df['wr_nanoseconds'], df['beam_seconds'], df['beam_nanoseconds'], 
+
+df
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
