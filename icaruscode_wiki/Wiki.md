@@ -47,7 +47,7 @@ Content of the packages
 -   [Detector geometry description files](Detector_geometry.md)
 -   [Physics simulation](physics/simulation.md)
 -   [Software parameters and settings](Software_parameters_and_settings.md)
--   [Access to the trigger database](../sbn_online_wik/ICARUSTriggerDatabase.md)
+-   [Access to the trigger database](../sbn_online_wiki/ICARUSTriggerDatabase.md)
 
 
 
