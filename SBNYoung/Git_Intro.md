@@ -36,7 +36,7 @@ In the terminal, if you are in your local git repository,
 
 ### Clone an Online Repository
 To work locally on a Github repository, get the URL from the Github site for the remote repository. In your desired directory, type
-`git clone <URL>`.
+`git clone <URL>`. This copies the remote repository onto your computer.
 
 ### Creating a git branch
 You'll want to work on your own local feature branch: `git branch feature/your_feature_branch_name`. You can see that you are working on a new branch by typing `git status`.
@@ -48,10 +48,12 @@ Once you have created and tested your local changes, you'll want to commit them 
 * `git commit -m "Your documentation message"` Commits changes to your repository.
 
 ### Pushing and Pulling
-Before you push your changes to the remote repository, it is good practice to pull from the branch you would like to push to in order to resolve potential conflicts with changes that other people have made to that remote branch. Then push your local branch onto the remote repository and then merge it with the desired branch in what is known as a "pull request."
+Before you **push** your changes to the remote repository, it is good practice to **pull** from the remote branch you would like to push to in order to resolve potential conflicts with changes that other people have made to that remote branch. Then push your local branch onto the remote repository and then merge it with the desired branch in what is known as a "pull request." 
+
+**Note** the overload of the term "pull": To `git pull` from a remote repository means to retrieve the latest version of the code from the remote repository. A pull request is a request to merge two branches together.
 
 #### Pulling from the Remote Repository
-`git pull <repo> <branch>`. For example, if you plan on later merging your changes to the master branch, you would type `git pull origin master`.
+`git pull <repo> <branch>`. For example, if you plan on later merging your changes to the master branch, you would type `git pull origin master` to retrieve the latest version of the code in the remote repository.
 
 #### Push Changes to Remote Repository
 Push your new local branch to the upstream repository: `git push -u origin <your_branch>`. The -u is short for --set-upstream
