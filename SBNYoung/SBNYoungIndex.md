@@ -46,6 +46,10 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
 - [Key Physics Concepts](Physics_Concepts.md)  
   *LArTPC operation, descriptions of PDS and CRT, motivation for short baseline, etc*
 
+## Production Samples ##
+- [Available Samples](Samples_List.md)
+  *A list of available sample samweb definitions and instructions on how to access those samples*
+
 ## Miscellaneous Experiment Stuff ##
 - [The Working Groups](Working_Groups.md)  
   *A quick introduction into the work done by the various working groups that make up SBN/SBND/ICARUS*
