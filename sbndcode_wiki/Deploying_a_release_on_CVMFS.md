@@ -53,9 +53,13 @@ Instructions
 
 -   Make sure the installation didn\'t fail.
 
+```bash
+ls products/sbndcode #find the version uploaded
+```
+
 -   End transaction and publish updated content
 
-        cvmfs_server publish -m "Published sbndcode < version > and sbndutil < version >" -a < new tag > sbnd.opensciencegrid.org
+        cvmfs_server publish -m "Published sbndcode and sbndutil < version >" -a < new tag > sbnd.opensciencegrid.org
 
 -   If something goes wrong and you want to get rid of the changed you
     just made and end the transaction you can
