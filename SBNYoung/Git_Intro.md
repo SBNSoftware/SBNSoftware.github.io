@@ -23,8 +23,8 @@ In the terminal, if you are in your local git repository,
 * `git status`: Tells you which local branch you are working on and which files you have modified or staged for commit.
 * `git add <file>`: Stages a file for commit.
 * `git commit`: Creates a new Git commit.
-* 'git pull <repository> <branch_name>` e.g. `git pull origin master`: Merge the committed changes in the given branch on the remote repository with your local working branch.
-* 'git push <repository> <branch_name>` e.g. `git push origin master`: Merge the committed changes in the current branch on your local repository with the specified branch on the remote repository.
+* `git pull <repository> <branch_name>` e.g. `git pull origin master`: Merge the committed changes in the given branch on the remote repository with your local working branch.
+* `git push <repository> <branch_name>` e.g. `git push origin master`: Merge the committed changes in the current branch on your local repository with the specified branch on the remote repository.
 * `git checkout <branch_name>`: Switch your working local branch to branch_name.
 * `git branch <branch_name>` or `git checkout -b <branch_name>`: Create a new branch and switch your local working branch to that new branch.
 * `git diff`: Allows you to compare two files - specifically your local changes to the last commit.
@@ -38,12 +38,13 @@ To work locally on a Github repository, get the URL from the Github site for the
 `git clone <URL>`.
 
 ### Creating a git branch
-You'll want to work on your own local feature branch: `git branch feature/your_feature_branch_name`.
+You'll want to work on your own local feature branch: `git branch feature/your_feature_branch_name`. You can see that you are working on a new branch by typing `git status`.
 Once you have created and tested your local changes, you'll want to commit them and push them to the remote repository.
 
 ### Adding, Committing changes
-`git add -A` Adds all existing changes. Or you can type `git add <your_file>`.
-`git commit -m "Your documentation message"` Commits changes to your repository.
+* Check `git status` to see the files you have changed (and to verify that you are working on the correct local branch).
+* `git add -A` Adds all existing changes. Or you can type `git add <your_file>`.
+* `git commit -m "Your documentation message"` Commits changes to your repository.
 
 ### Pushing and Pulling
 Before you push your changes to the remote repository, it is good practice to pull from the branch you would like to push to in order to resolve potential conflicts with changes that other people have made to that remote branch. Then push your local branch onto the remote repository and then merge it with the desired branch in what is known as a "pull request."
