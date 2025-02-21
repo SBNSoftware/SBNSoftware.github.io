@@ -61,7 +61,7 @@ New to the SBN Github? Go to the [Github migration to do list](AnalysisInfrastru
 ## Contribute to this wiki ##
 
 The content of this wiki is tracked by the [GIT repository SBNSoftware/SBNSoftware.github.io](https://github.com/SBNSoftware/SBNSoftware.github.io).
-It can be edited directly online or by pushing changes to the repository with GIT. Take a look at an [example](example).
+It can be edited directly online or by pushing changes to the repository with GIT. Take a look at an [example](example). Find a step-by-step guide [here](HowToEdit.md).
 
 If you have an old redmine wiki page that you want to port, there are instructions on [importing from redmine](importing_from_redmine).
 
