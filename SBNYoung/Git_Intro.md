@@ -14,7 +14,7 @@ Fun Github tutorial: [https://www.youtube.com/watch?v=mJ-qvsxPHpY](https://www.y
 Git is a version control tool useful for many different applications, primarily used for software projects. SBND and ICARUS store their code in the SBN Software github repository.
 
 ### Repository and Branches
-A **repository** is a space where a code base is stored. The repository can hold multiple **branches**, which are different working areas which are modifications to a code base. For example, a feature branch is used to create, develop, and test new features for code. Therehttps://www.youtube.com/watch?v=mJ-qvsxPHpY  is typically one branch, called "master" or "develop", which represents the current version of the code used in production. People will base their feature branches off the master branch.
+A **repository** is a space where a code base is stored. The repository can hold multiple **branches**, which are different working areas which are modifications to a code base. For example, a feature branch is used to create, develop, and test new features for code. There is typically one branch, called "master" or "develop", which represents the current version of the code used in production. People will base their feature branches off the master branch.
 
 Git **commits** are saved versions of your code along the way. Each branch has its own commit history. If something goes wrong, you can revert back to a previous commit and work from there.
 
@@ -57,4 +57,9 @@ If your local branch already exists on the remote repository, you can just type 
 On the Github website for the repository, you should be able to see your branch.
 
 ### Pull request
-On the Github website, you can create a Pull Request to merge your branch with `master` or whatever other branch you would like to merge with. You can add other people to review this Pull Request before you do it, which is recommended for larger repositories which lots of people use. 
+On the Github website, you can create a Pull Request to merge your branch with `master` or whatever other branch you would like to merge with. You can add other people to review this Pull Request before you do it, which is recommended for larger repositories which lots of people use.
+
+## Personal Access Token (PAT)
+Sometimes, when pushing code to a shared remote repository, you will be prompted for your Github username and password. For your username, use your Github username. For the password, don't use the password which you use to log into the Github website. Instead, you should use your Personal Access Token (PAT). To get your Github PAT, visit this link: [https://docs.github.com/en/authentication/keeping-your-account-and-data-
+secure/managing-your-personal-access-tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-
+secure/managing-your-personal-access-tokens).
