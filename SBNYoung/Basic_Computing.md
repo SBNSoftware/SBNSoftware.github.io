@@ -70,3 +70,4 @@ See: [https://explainshell.com/explain?cmd=ssh+-X](https://explainshell.com/expl
 Once you're able to ssh into the fermilab clusters and are working on these machines it is often useful to be able to view windows such as event displays or plots. This can be done by using a VNC, there are some useful instructions for this on an [SBND page](https://sbnsoftware.github.io/sbndcode_wiki/Viewing_events_remotely_with_VNC.html).
 
 #### MRB and setting up a basic build of sbndcode/icaruscode
+Further details on setting up existing sbndcode/icaruscode and builiding a local version for development can be found here [../sbndcode_wiki/commissioning/SBND_Commissioning_Get_Started.md]
