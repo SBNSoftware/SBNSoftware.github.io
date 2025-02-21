@@ -62,7 +62,7 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_reco2_sbnd |
 | --- | --- | --- | --- | caf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_caf_flat_caf_sbnd |
-| Feb25 Workshop - In-Time Cosmics | MC2025A | v10_04_01 | 60k | reco1 | official_MCP2025A_prodcorsika_proton_intime_filter_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
+| Feb25 Workshop - In-Time Cosmics | MC2025A | v10_04_01 | 20k | reco1 | official_MCP2025A_prodcorsika_proton_intime_filter_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodcorsika_proton_intime_filter_sce_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | official_MCP2025A_prodcorsika_proton_intime_filter_sce_MCP2025A_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodcorsika_proton_intime_filter_sce_MCP2025A_reco2_sbnd |
