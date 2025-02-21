@@ -13,7 +13,7 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
 ### Basic Computing ###
 - [Basic Computing](Basic_Computing.md)   
   *ssh-ing, vnc, access to FNAL services, setting up an mrb environment, etc*
-- [Introduction to Code Development](Code_Intro.md)
+- [Introduction to Code Development](Code_Intro.md)   
   *Just getting started with setting up your code workspace? Here are a few common editors and IDEs.*
 - [Producing your own events](LArSoft_Workflow.md)  
   *Using larsoft to simulate a simple set of events from generation to reconstructed outputs*
@@ -35,7 +35,7 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
   *Writing a simple fcl to produce particles and how to analyze the output using larsoft files*
 
 ### Analysis ###
-- [Intro to Python on the GPVMs](Python.md)
+- [Intro to Python on the GPVMs](Python.md)   
   *How to use Python on the FNAL GPVMs*
 - [Using Pandora for Analysis](Pandora_Outputs.md)  
   *How to utilise the Pandora reconstrcution outputs for analysis work*
