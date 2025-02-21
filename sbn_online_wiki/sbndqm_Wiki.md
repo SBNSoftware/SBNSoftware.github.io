@@ -8,9 +8,12 @@ toc: true
 toc_title: SBNDQM Contents
 ---
 
+The central hub for SBN Online Monitoring can be found here: [https://sbn-online.fnal.gov/](https://sbn-online.fnal.gov/)
 
 sbndqm -- A Repository for SBN Online Monitoring
 ----------------------------------------------
+
+The sbndqm code lives in this SBNSoftware repository: [https://github.com/SBNSoftware/sbndqm](https://github.com/SBNSoftware/sbndqm).
 
 This repository is intended to house code for online monitoring in SBN and contains tooling for sending metrics to a database (through the artdaq MetricManager) and for receiving data from the artdaq Dispatcher (through the TransferInput module).
 
@@ -19,8 +22,14 @@ This repository is intended to house code for online monitoring in SBN and conta
 
 All analysis code is located in sbndqm/sbndqm/dqmAnalysis. An example analysis using the Metric Manager resides in sbndqm/sbndqm/dqmAnalysis/example.
 
+Minargon
+----------------------------------------------
+The online monitoring website that we use to view online DQM metrics for detector subsystems is called Minargon.
+* For SBND, go here: [https://sbn-online.fnal.gov/cgi-bin/minargon/minargon.wsgi/introduction](https://sbn-online.fnal.gov/cgi-bin/minargon/minargon.wsgi/introduction)
+* For ICARUS, go here: [https://sbn-online.fnal.gov/cgi-bin/icarus-minargon/icarus-minargon.wsgi/introduction](https://sbn-online.fnal.gov/cgi-bin/icarus-minargon/icarus-minargon.wsgi/introduction)
 
-Worskhop links
+
+Workshop links
 ----------------------------------------------
 * (First workshop instructions on redmine wiki)[https://cdcvs.fnal.gov/redmine/projects/sbndqm/wiki/Sbndqm_Workshop]
 
@@ -29,8 +38,12 @@ Developing in sbndqm
 ----------------------------------------------
 sbndqm depends on _offline_ software, namely `sbncode`, and should be able to be developed in both online and offline computing environments.
 
-### Development in Offline Machine
+Some guides for SBND Online monitoring development:
+* [DQM Expert Guide](DQMExpertGuide.md)
+* [Edit Minargon Website](EditMinargonWebsite.md)
+* [Push Minargon Website](PushMinargonWebsite.md)
 
+### Development in Offline Machine
 To setup a development environment in an an offline machine (like `icarusgpvm, sbndgpvm`):
 ```
 source /cvmfs/fermilab.opensciencegrid.org/products/artdaq/setup
@@ -85,8 +98,8 @@ mrb i -j8
 ```
 
 #### Newest Development Area Setup
-The latest SBNDQM version, the one currently in use in SBND, is v1_03_00. It does not have an official tagged release yet, so its setup is nontrivial. There are some other products it is necessary to acquire first.
-``` shell
+The latest SBNDQM version, the one currently in use in SBND, is v1_03_00.
+```bash
 cd DQM_DevAreas/
 source /daq/software/products/setup
 setup mrb
@@ -96,18 +109,17 @@ cd your_dev_area/
 mrb newDev -v v1_03_00 -q e26:prof
 source localProducts_sbndqm_v1_03_00_e26_prof/setup
 cd srcs/
-mrb g sbndaq_online@release/v1_01_00
-mrb g sbndqm@release/v1_03_00
-cd /home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/srcs/sbndqm/ups
-rm product_deps
-cp /home/nfs/sbnddqm/DQM_DevAreas/MJ_27Mar2024/srcs/sbndqm/ups/product_deps ./
-cd /home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/srcs/sbndaq_online/ups
-rm product_deps
-cp /home/nfs/sbnddqm/DQM_DevAreas/MJ_27Mar2024/srcs/sbndaq_online/ups/product_deps ./
+mrb g sbndaq_online@develop # or mrb g -t v1_01_00 sbndaq_online
+mrb g sbndqm@release/v1_04_00 #feature/SBND-v1_04_01
 cd $MRB_BUILDDIR
 mrbsetenv
 mrb i -j8
 mrbslp
+```
+
+To run the SBND DQM, there is a dependency on sbndcode:
+```bash
+setup sbndcode -v v09_93_01_02 -q e26:prof #for evd
 ```
 
 ### Using your local build
@@ -123,16 +135,12 @@ mrb i -j8
 
 #### Source Online sbndqm v1_03_00 Dev Area
 ``` shell
-MRBDIR=/home/nfs/sbnddqm/DQM_DevAreas/your_dev_area/
-cd $MRBDIR
 source /daq/software/products/setup
 setup mrb
-source localProducts_sbndqm_v1_03_00_e26_prof/setup
+source localProducts*/setup
 mrbsetenv
-unsetup artdaq_core
-setup artdaq_core v3_09_15 -q e26:prof:s120a
-setup artdaq v3_12_07 -f Linux64bit+3.10-2.17 -q e26:prof:s120a -z /daq/software/products
-cd $MRB_SOURCE/sbndqm/installations/sbn-nd
+mrbsetenv
+setup sbndcode -v v09_93_01_02 -q e26:prof
 ```
 
 ### Start Redis Database
