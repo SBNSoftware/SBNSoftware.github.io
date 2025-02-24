@@ -26,7 +26,7 @@ Copy sbndcode and sbndutil to SciSoft
     version. (Like the `releases/` directory I usually keep the last 6
     builds).
 
--   Fetch results of Jenkins from both e26 build using
+-   Fetch results of Jenkins from e26 build using
 
         copyFromJenkins -q e26 -m swarm sbndcode-release-build
         
