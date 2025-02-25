@@ -8,35 +8,10 @@ title: MC sample descriptions
 MC sample descriptions
 ================================================================
 
--   **Table of contents**
--   [MC sample descriptions]
-    -   [Particle gun (single) samples]
-        -   [prodsingle\_mu\_3GeV\_fixposupstream\_gaus20degree]
-        -   [prodsingle\_mu\_3GeV\_fixposapacross\_gaus20degree]
-        -   [prodsingle\_mu\_10GeV\_frontcorners\_cornertocorner]
-        -   [prodsingle\_mu\_3GeV\_uniformupstream\_fixangleforwardgoing]
-        -   [prodsingle\_dualmu\_5GeV\_fixposcontained\_openingangle1.0degree]
-        -   [prodsingle\_electron\_50-300MeV\_fixposcentertpc1\_isotropicangle]
-        -   [prodsingle\_electron\_200-1500MeV\_fixposcentertpc1\_isotropicangle]
-        -   [prodsingle\_gamma\_50-300MeV\_fixposcentertpc1\_isotropicangle]
-        -   [prodsingle\_gamma\_200-1500MeV\_fixposcentertpc1\_isotropicangle]
-        -   [prodsingle\_mu\_100-1257MeV\_fixposcontained\_fixangle]
-        -   [prodsingle\_proton\_200-2250MeV\_fixposcontained\_fixangle]
-        -   [prodsingle\_pi+\_200-2250MeV\_fixposcontained\_fixangle]
-        -   [prodsingle\_electron\_100-2250MeV\_fixposcontained\_fixangle.fcl]
-        -   [prodsingle\_gamma\_100-2250MeV\_fixposcontained\_fixangle.fcl]
-    -   [Beam (GENIE) samples]
-        -   [prodgenie\_nu\_singleinteraction\_cryostat\_gsimple-configb-v1.fcl]
-        -   [prodgenie\_nu\_spill\_cryostat\_gsimple-configb-v1.fcl]
-        -   [prodgenie\_nu\_spill\_world\_gsimple-configc-v1.fcl]
-        -   [prodgenie\_nue\_spill\_cryostat\_gsimple-configb-v1.fcl]
-    -   [Cosmic ray (CORSIKA) samples]
-        -   [prodcorsika\_cosmics\_cmc.fcl]
-        -   [prodcorsika\_cosmics\_cmc\_frontbackcrt\_mu\_filter.fcl]
-    -   [Overlayed (overlay) samples]
-        -   [prodoverlay\_corsika\_cosmics\_cmc\_genie\_nu\_spill\_gsimple-configb-v1\_cryostat]
-    -   [Supernova (marley) samples]
-        -   [prodmarley\_nue\_fermidirac]
+
+For the main workflow FHiCLs, please refer to https://github.com/SBNSoftware/sbndcode/blob/develop/sbndcode/JobConfigurations/README.md
+
+The FHiCLs listed below have not been reviewd recently.
 
 
 
