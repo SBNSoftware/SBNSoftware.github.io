@@ -56,7 +56,7 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |  
-| Feb25 Workshop - BNB + Cosmics | MC2025A | v10_04_01_01 | 10k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
+| Feb25 Workshop - FullOsc + Cosmics | MC2025A | v10_04_01_01 | 10k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_reco2_sbnd |
