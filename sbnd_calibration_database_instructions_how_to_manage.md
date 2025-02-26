@@ -21,6 +21,7 @@ exp/sbnd/data/users/mguzzo/calib_db/mnvcon_ups_6.6_modified
 The first thing to do is to set up the environment to be able to run the necessary scripts inherited from Minerva:
 ```
 ssh <username>@sbndgpvm01.fnal.gov
+sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh
 cd /exp/sbnd/data/users/<username>/calib_db/mnvcon_ups_6.6_modified/
 source setup.sh
 source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
@@ -47,10 +48,13 @@ psql -U <username> -h <host> -p <port> -d <database_name>
 
 Find below the host/port/database values for accesing the development/production databases:
 
-| Description | Host (-h) | Port (-p) | Database name (-d) |
-| ----------- | --------- | --------- | ------------------ |
-| Development Database | cdpgsdev | 5488 | sbndteststand |
-| Production Database | ifdb09 | 5456 | sbnd_online_prd |
+| Database                                            | Host (-h) | Port (-p) | Database name (-d) | Schema (-n)    | Writer (-W)       | Reader (-R)       |
+| --------------------------------------------------- | --------- | --------- | ------------------ | -------------- | ----------------- | ----------------- |
+| Development                                         | ifdb10    | 5488      | sbnteststand       | sbnd_calib_dev | sbnd_calib_writer | sbnd_calib_reader |
+| Production (primary database)                       | sbnd-db01 | 5434      | sbnd_online_prd    |                |                   |                   |
+| Production (streaming standby, read-only replica)   | sbnd-db02 | 5434      | sbnd_online_prd    |                |                   |                   |
+| Production (streaming standby, read-only replica)   | ifdb09    | 5456      | sbnd_online_prd    |                |                   |                   |
+| Production (log-shipping standby read-only replica) | ifdb09    | 5490      | sbnd_online_prd    |                |                   |                   |
 
 Once logged into the database, you can create a new schema by first setting its "role" and then creating it. Find below the commands used to create the schema for the "development database":
 
@@ -96,15 +100,10 @@ In order to populate your schema, you should first create a table with the varia
 Ok, now that you've been warned, let's take a look at how to create a new/empty table, the command is:
 
 ```
-python bin/create_table.py -c -t t -h <host> -p <port> -U <username> -w <password> -W <writer> -R <reader> -n <name> <database_name> <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
+python bin/create_table.py -c -t t -h <host> -p <port> -U <username> -w <password> -W <writer> -R <reader> -n <schema_name> <database_name> <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
 ```
 
 Note: remember to [set up the environment](#step-1-set-up-environment) first and to run the command above from the sbndgpvm01 machine (not the gateway).
-
-| Description | Password (-w) | Writer (-W) | Reader (-R) | Name (-n) |
-| ----------- | ------------- | -- | -- | -- |
-| Dev. Db. | Request pwd | sbnd_calib_writer | sbnd_calib_reader | sbnd_calib_dev |
-| Prod. Db. | Request pwd | | | |
 
 ### Example of the process of creating a table
 
