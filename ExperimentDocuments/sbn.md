@@ -7,7 +7,7 @@ toc: false
 ---
 
 # Organizational Documents for SBN
-* SBN Bylaws: (SBN-Doc-39829) [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=39829]
+* SBN Bylaws: [SBN-Doc-39829](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=39829)
 
 ## SBND Organizational Chart ##
 * Link to SBN Org Chart
