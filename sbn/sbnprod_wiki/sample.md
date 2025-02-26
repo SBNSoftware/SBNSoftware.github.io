@@ -437,7 +437,7 @@ Data SBN Production Samples
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
 | Feb25 Workshop - Calibration / CrossingMuons | v10_04_01_01 | - | raw | CalibData_18115_17934_CrossingMuon_raw |
-| --- | --- | --- | reco1 | MCP2025A_CalibData_18115_17934_CrossingMuon_v10_04_01_01_reco1_DATA_SBND |
+| --- | --- | --- | reco1 | MCP2025A_CalibDatawraw_18115_17934_CrossingMuon_v10_04_01_01_reco1_DATA_SBND |
 | BNB Summer 2024 Data | v09_93_01_01 | - | raw | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009 |
 | --- | --- | --- | decode | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_decode |
 | --- | --- | --- | reco1 | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_reco1 |
