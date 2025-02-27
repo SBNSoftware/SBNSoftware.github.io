@@ -114,18 +114,24 @@ This section displays a list of the variables in the database, as well as their 
 | xhigh | real | High-edge bin position in X direction | cm |
 | scale | real | Non-uniformity scale along X direction | N/A |
 
-### pds_globalconstants
-- Folder description: This folder contains non-channel specific information
-- Channel number: No meaning
-- Number of rows: 1
+### pds_calibration
+- Folder description: This folder contains general information about the PDS system (reco, timing, decoding...)
+- Channel number: PMT channels
+- Number of rows: 120
 - URL with current values in Production Database:
 
 | Variable Name | Type | Description | Unit |
 | ------------- | ---- | ----------- | ---- |
-| gauss_wc      | real | WC parameter for Gauss noise filter | GHz |
+| breakout_box | integer | Breakout box to which the PMT is connected | N/A |
+| caen_digitizer | integer | CAEN digitizer to which the PMT is connected | N/A | 
+| caen_digitizer_channel | integer | CAEN digitizer channel to which the PMT is connected | N/A |
+| total_transit_time | real | Total transit time | ns |
+| spe_amp | real | Mean amplitude of SPE | ADC |
+| gauss_wc | real | WC parameter for Gauss noise filter | GHz |
 | gauss_w_wc_power | real | Power parameter for Gauss noise filter | N/A | 
 | ophit_adc_deco_threshold | int | ADC threshold for selecting ophits on deconvolved signal | N/A | 
-| 1spe_amp | real | Mean amplitude of SPE | ADC |
+| ser_vec_0 --> ser_vec_499 | real | | |
+
 
 ### What happens when a variable does not exist in an older version of the database?
 
