@@ -1,6 +1,6 @@
-**Author:** Marina Reggiani-Guzzo, PDRA at the University of Edinburgh (Last update: 24/May/2024)
+**Author:** Marina Reggiani-Guzzo, PDRA at the University of Edinburgh (Last update: 27/February/2025)
 
-Managing the database consists of 3 steps:
+Managing the database consists of the following steps:
 
 1. Set up environment to be able to run the necessary scripts
 2. Create a schema in the database
@@ -8,26 +8,50 @@ Managing the database consists of 3 steps:
 4. Write values to the table in the database
 5. Evaluate which tables you want to include in the next tag
 6. Tag the latest update
+7. Convert database into .db file
 
 This tutorial covers each of the steps described above.
 
-A few of the steps above use scripts inherited from Minerva, so please clone the following repository to your working area:
+## General information
+
+This tutorial uses scripts inherited from Minerva and a few other scripts, so please, clone the following repository to your working area, it contains all the files you will need:
 ```
-exp/sbnd/data/users/mguzzo/calib_db/mnvcon_ups_6.6_modified
+/exp/sbnd/data/users/mguzzo/database_tools
 ```
+
+The table below contains the main information you will need to access and modify the database:
+
+| Database                                            | Host (-h) | Port (-p) | Database name (-d) | Schema (-n)    | Writer (-W)       | Reader (-R)       |
+| --------------------------------------------------- | --------- | --------- | ------------------ | -------------- | ----------------- | ----------------- |
+| Development                                         | ifdb10    | 5488      | sbnteststand       | sbnd_calib_dev | sbnd_calib_writer | sbnd_calib_reader |
+| Production (primary database)                       | sbnd-db01 | 5434      | sbnd_online_prd    |                |                   |                   |
+| Production (streaming standby, read-only replica)   | sbnd-db02 | 5434      | sbnd_online_prd    |                |                   |                   |
+| Production (streaming standby, read-only replica)   | ifdb09    | 5456      | sbnd_online_prd    |                |                   |                   |
+| Production (log-shipping standby read-only replica) | ifdb09    | 5490      | sbnd_online_prd    |                |                   |                   |
 
 ## Step 1 Set up environment
 
-The first thing to do is to set up the environment to be able to run the necessary scripts inherited from Minerva:
+There are two set ups you you need to do during this tutorial.
+
+- The first one is to set up the environment to be able to run the necessary scripts inherited from Minerva (all the python scripts): 
 ```
 ssh <username>@sbndgpvm01.fnal.gov
-sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh
-cd /exp/sbnd/data/users/<username>/calib_db/mnvcon_ups_6.6_modified/
-source setup.sh
-source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh
-setup sbndcode v09_82_02_01 -q e26:prof
+sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh                           # container to use SL7
+source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh                 # initial sbnd setup script
+source /exp/sbnd/data/users/<username>/calib_db/mnvcon_ups_6.6_modified/setup.sh   # setup to use python scripts
+setup sbndcode v09_82_02_01 -q e26:prof                                            # sbndcode with Python version>v3
 ```
 Note that the scripts in the next steps do not seem to work for Python versions before `v3`.
+
+- The second one is how to access the database:
+```
+ssh <username>@sbndgpvmXX.fnal.gov
+ssh sbnd@sbnd-gatewayXX.fnal.gov                       # XX = 03 or 04
+ssh sbnd-daq02.fnal.gov                                # allow using psql after moving to AL9
+psql -U <username> -h <host> -p <port> -d <database>   # information above in "General Information"
+```
+
+
 
 ## Step 2 Create a schema in the database
 
@@ -39,22 +63,12 @@ In order to create a schema in the database, you should first access the databas
 # access sbndgpvm01
 ssh <username>@sbndgpvm01.fnal.gov
 
-# access gateway (if 'Permission Denied' ask William Badgett to add you to the sbnd .k5login file)
+# access gateway (if 'Permission Denied' ask Geoff Savage to add you to the sbnd .k5login file)
 ssh -K sbnd@sbnd-gateway01.fnal.gov
 
 # log into the database (if 'Permission Denied' talk to Olga Vlasova)
 psql -U <username> -h <host> -p <port> -d <database_name> 
 ```
-
-Find below the host/port/database values for accesing the development/production databases:
-
-| Database                                            | Host (-h) | Port (-p) | Database name (-d) | Schema (-n)    | Writer (-W)       | Reader (-R)       |
-| --------------------------------------------------- | --------- | --------- | ------------------ | -------------- | ----------------- | ----------------- |
-| Development                                         | ifdb10    | 5488      | sbnteststand       | sbnd_calib_dev | sbnd_calib_writer | sbnd_calib_reader |
-| Production (primary database)                       | sbnd-db01 | 5434      | sbnd_online_prd    |                |                   |                   |
-| Production (streaming standby, read-only replica)   | sbnd-db02 | 5434      | sbnd_online_prd    |                |                   |                   |
-| Production (streaming standby, read-only replica)   | ifdb09    | 5456      | sbnd_online_prd    |                |                   |                   |
-| Production (log-shipping standby read-only replica) | ifdb09    | 5490      | sbnd_online_prd    |                |                   |                   |
 
 Once logged into the database, you can create a new schema by first setting its "role" and then creating it. Find below the commands used to create the schema for the "development database":
 
@@ -103,9 +117,14 @@ Ok, now that you've been warned, let's take a look at how to create a new/empty 
 python bin/create_table.py -c -t t -h <host> -p <port> -U <username> -w <password> -W <writer> -R <reader> -n <schema_name> <database_name> <table_name> \ <var1>:<VAR1_TYPE> \ <var2>:<VAR2_TYPE>
 ```
 
-Note: remember to [set up the environment](#step-1-set-up-environment) first and to run the command above from the sbndgpvm01 machine (not the gateway).
+Note: 
+1. remember to setup the environment first and to run the command above from the sbndgpvm01 machine (not the gateway)
+2. only lowercases for the name of the table
 
-### Example of the process of creating a table
+
+<details>
+
+<summary>Example of the process of creating a table</summary>
 
 From an empty schema:
 
@@ -194,6 +213,8 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_tag_iovs;
 ```
 As mentioned above, the command `bin/create_table.py` simply creates the tables with the desired variables (in this example it is `wire_number`, `flange`, `board`, `localchannel`, `status`, `low` and `high`), however the tables are still empty (all of them have `0 rows` of entries). The next step will describe how to populate these tables.
 
+</details>
+
 ## Step 4 Populate tables
 
 This section describes how to populate the tables in your schema. Keep in mind that this process is also used if you want to **update** an already existing table, it will be more clear later in this section why this is the case, please bear with me!
@@ -204,9 +225,14 @@ Likewise the previous section, we also use a script from `mnvcon_ups_6.6_modifie
 python bin/write_data.py -n <name> -h <host> -p <port> -U <username> -w <password> \<path_to_csv_file.csv> \<timestamp> \<database_name> <table_name> <var1>,<var2>,<var3>
 ```
 
-Note that `<timestamp>` is a Unix Timestamp, and that `<path_to_csv_file.csv` points to the csv file containing the values you want to add to the table.
+Note:
+1. `<timestamp>` is a Unix Timestamp
+2. `<path_to_csv_file.csv` points to the csv file containing the values you want to add to the table
+3. remember to setup the environment first and to run the command above from the sbndgpvm01 machine (not the gateway)
 
-### Example of the process of populating tables
+<details>
+
+<summary>Example of the process of populating a table</summary>
 
 Let's see what happens to the schema when we run the command above. Take the following example (where the values have no physical meaning, it's just for example purposes):
 ```
@@ -286,6 +312,8 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_iovs;
 
 See that the same values got added to the table (because we're still using the same csv file as input) right below the previous values, they are now associated to `iov_id=2` and both `iov_id=1 and 2` are `active=t`. So now you understand that the table will actually always contain all the information ever populated to it, however the accessible information is defined by which `iov_id` is set to active.
 
+</details>
+
 ## Step 5 Evaluate active tables
 
 The database has a structure where you can "tag" its versions so you can retrieve any specific configuration at any time (similar to the "commit" function in GitHub). Keep in mind that when you tag a version, it will include all the "active" `iov_id`. Therefore, before tagging any version, you should make sure that only the desired `iov_id` is set as `active=t`, the other ones should be set to `active=f` so they are not included in the tag you are about to create. You can switch the active status as:
@@ -293,7 +321,9 @@ The database has a structure where you can "tag" its versions so you can retriev
 UPDATE <schema>.<table> SET active=false WHERE iov_id=<id_desired>;
 ```
 
-### Example of how to activate/de-activate tables
+<details>
+
+<summary>Example of how to activate/de-activate tables</summary>
 
 See below how this command looks like, starting from a situation where all `iov_id` are set to `active=t`
 ```
@@ -316,6 +346,8 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_iovs;
 ```
 Where now only `iov_id=2` is set as active.
 
+</details>
+
 ## Step 6 Tag a version
 
 Once you are happy with the list of active `iov_id`, you can tag the version by using the command:
@@ -323,7 +355,9 @@ Once you are happy with the list of active `iov_id`, you can tag the version by 
 python bin/tag.py -h <host> -p <port> -U <username> -w <password> -n <name> -c "<commit_description>" <database_name> <table_name> "<tag_name>"
 ```
 
-### Example of tagging versions
+<details>
+
+<summary>Example of tagging versions</summary>
 
 Let's see what happens when we tag a version with a single `iov_id` active, and then when there are multiple ones active.
 
@@ -418,3 +452,17 @@ sbnteststand=> SELECT * FROM sbnd_calib_dev.tpc_channelstatus_data_tag_iovs;
 ```
 
 The last table `_tag_iovs` gives the list of active iov_id per tag. Ideally you want to have only one per tag! The reason is very simple: the LArSoft modules read the database from the top to the bottom. So imagine you have 4 channels, like in the example above. If your tag has more than one active `iov_id`, then your module will always read the values related to the oldest `iov_id`, instead of the newest one.
+
+</details>
+
+## Step 7 Convert database into a .db file
+
+## Other things
+
+- How to delete folders: If you want to drop a set of tables, you should do it in the following order due to the reference dependencies.
+```
+DROP TABLE <schema>.<table>_data;
+DROP TABLE <schema>.<table>_tag_iovs;
+DROP TABLE <schema>.<table>_tags;
+DROP TABLE <schema>.<table>_iovs;
+```
