@@ -459,10 +459,32 @@ The last table `_tag_iovs` gives the list of active iov_id per tag. Ideally you 
 
 ## Other things
 
-- How to delete folders: If you want to drop a set of tables, you should do it in the following order due to the reference dependencies.
+### PSQL commands
+
+- Print table names in a schema:
+```
+SELECT table_name FROM information_schema.tables WHERE table_schema='<schema_name>';
+```
+- Print information from table:
+```
+SELECT * FROM <schema_name>.<table_name>;
+```
+- Print information from table with query:
+```
+SELECT * FROM <schema_name>.<table_name> WHERE <variable>=<value>;
+```
+- Drop/delete a table:
+```
+DROP TABLE <schema_name>.<table_name>;
+```
+If you want to drop a set of tables, you should do it in the following order due to the reference dependencies.
 ```
 DROP TABLE <schema>.<table>_data;
 DROP TABLE <schema>.<table>_tag_iovs;
 DROP TABLE <schema>.<table>_tags;
 DROP TABLE <schema>.<table>_iovs;
+```
+- Update a value from a table:
+```
+UPDATE <schema>.<table> SET <variable1>=<value1> WHERE <variable2>=<value2>;
 ```
