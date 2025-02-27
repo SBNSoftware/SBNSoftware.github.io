@@ -38,7 +38,7 @@ There are two set ups you you need to do during this tutorial.
 ssh <username>@sbndgpvm01.fnal.gov
 sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh                           # container to use SL7
 source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh                 # initial sbnd setup script
-source /exp/sbnd/data/users/<username>/calib_db/mnvcon_ups_6.6_modified/setup.sh   # setup to use python scripts
+source /exp/sbnd/data/users/mguzzo/database_tools/mnvcon_ups_6.6_modified/setup.sh # setup to use python scripts
 setup sbndcode v09_82_02_01 -q e26:prof                                            # sbndcode with Python version>v3
 ```
 Note that the scripts in the next steps do not seem to work for Python versions before `v3`.
