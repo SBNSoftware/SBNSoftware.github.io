@@ -14,9 +14,9 @@ This tutorial covers each of the steps described above.
 
 ## General information
 
-This tutorial uses scripts inherited from Minerva and a few other scripts, so please, clone the following repository to your working area, it contains all the files you will need:
+This tutorial uses scripts inherited from Minerva, so please, clone the following repository to your working area, it contains all the files you will need:
 ```
-/exp/sbnd/data/users/mguzzo/database_tools
+/exp/sbnd/data/users/mguzzo/database_tools/mnvcon_ups_6.6_modified
 ```
 
 The table below contains the main information you will need to access and modify the database:
@@ -39,7 +39,8 @@ ssh <username>@sbndgpvm01.fnal.gov
 sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh                           # container to use SL7
 source /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh                 # initial sbnd setup script
 setup sbndcode v09_82_02_01 -q e26:prof                                            # sbndcode with Python version>v3
-source /exp/sbnd/data/users/mguzzo/database_tools/mnvcon_ups_6.6_modified/setup.sh # setup new path to python library
+cd /exp/sbnd/data/users/mguzzo/database_tools/mnvcon_ups_6.6_modified/
+source setup.sh                                                                    # setup new path to python library
 ```
 Note that the scripts in the next steps do not seem to work for Python versions before `v3`.
 
