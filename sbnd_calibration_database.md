@@ -130,7 +130,7 @@ This section displays a list of the variables in the database, as well as their 
 | gauss_wc | real | WC parameter for Gauss noise filter | GHz |
 | gauss_w_wc_power | real | Power parameter for Gauss noise filter | N/A | 
 | ophit_adc_deco_threshold | int | ADC threshold for selecting ophits on deconvolved signal | N/A | 
-| ser_vec_0 --> ser_vec_499 | real | | |
+| ser_vec_0 → ser_vec_499 | real | ADC count per bin (550 in total) for the Single Electron Response (SER) pulse (More info: [DocDB 38059](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38059)) | ADC |
 
 
 ### What happens when a variable does not exist in an older version of the database?
