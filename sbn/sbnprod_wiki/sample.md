@@ -55,7 +55,12 @@ Monte Carlo official SBN Production Samples
 --------------------------
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
-| --- | --- | --- | --- | --- | --- |  
+| --- | --- | --- | --- | --- | --- |
+| Feb25 Workshop - BNB + Cosmics | MC2025A | v10_04_03 | 60k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | reco2 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_reco2_sbnd |
+| --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | --- | --- | caf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_caf_flat_caf_sbnd |
 | Feb25 Workshop - Intrinsic Nue + Cosmics | MC2025A | v10_04_01_01 | 7.5k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_reco2_sbnd |
@@ -432,6 +437,12 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
+| Feb25 Workshop - Run 18115 Zero Bias Data | v10_04_03 | 850k | decode | MCP2025A_GoldenRun_LArv10_v10_04_03_decode |
+| --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco1 |
+| --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco2 |
+| --- | --- | --- | calib tuple | MCP2025A_GoldenRun_LArv10_v10_04_03_histreco2 |
+| --- | --- | --- | caf | MCP2025A_GoldenRun_LArv10_v10_04_03_caf |
+| --- | --- | --- | flatcaf | MCP2025A_GoldenRun_LArv10_v10_04_03_flatcaf |
 | Feb25 Workshop - Calibration / CrossingMuons | v10_04_01_01 | - | raw | CalibData_18115_17934_CrossingMuon_raw |
 | --- | --- | --- | reco1 | MCP2025A_CalibDatawraw_18115_17934_CrossingMuon_v10_04_01_01_reco1_DATA_SBND |
 | BNB Summer 2024 Data | v09_93_01_01 | - | raw | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009 |
@@ -513,7 +524,7 @@ Run list: 17625, 17635, 17648, 17658, 17660, 17662, 17664
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Calibration request | v09_93_01_01 | --- | calib tuple | polaris_v09_93_01_01_data_calibration_ntuple_sbnd |
+| Winter 2024 calibration request | v09_93_01_01 | --- | calib tuple | polaris_v09_93_01_01_data_calibration_ntuple_sbnd |
 
 ### SBND MC
 --------------------------
