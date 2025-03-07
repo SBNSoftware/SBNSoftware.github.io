@@ -437,13 +437,18 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Feb25 Workshop - Run 18115 Zero Bias Data | v10_04_03 | 850k | decode | MCP2025A_GoldenRun_LArv10_v10_04_03_decode |
+| Feb25 Workshop - Run 18115 Zero Bias Data | v10_04_03 | 860k | raw | GoldenRun_18115_ZeroBias_raw |
+| --- | --- | --- | decode | MCP2025A_GoldenRun_LArv10_v10_04_03_decode |
 | --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco1 |
 | --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco2 |
 | --- | --- | --- | calib tuple | MCP2025A_GoldenRun_LArv10_v10_04_03_histreco2 |
 | --- | --- | --- | caf | MCP2025A_GoldenRun_LArv10_v10_04_03_caf |
 | --- | --- | --- | flatcaf | MCP2025A_GoldenRun_LArv10_v10_04_03_flatcaf |
+| Feb25 Workshop - Calibration / CrossingMuons | v10_04_03 | - | raw | CalibData_18115_17934_CrossingMuon_raw |
+| --- | --- | --- | decode | MCP2025A_CalibData_LArv10_v10_04_03_decode |
+| --- | --- | --- | reco1 | MCP2025A_CalibData_LArv10_v10_04_03_reco1 |
 | Feb25 Workshop - Calibration / CrossingMuons | v10_04_01_01 | - | raw | CalibData_18115_17934_CrossingMuon_raw |
+| --- | --- | --- | decode | MCP2025A_CalibDatawraw_18115_17934_CrossingMuon_v10_04_01_01_decode_DATA_SBND |
 | --- | --- | --- | reco1 | MCP2025A_CalibDatawraw_18115_17934_CrossingMuon_v10_04_01_01_reco1_DATA_SBND |
 | BNB Summer 2024 Data | v09_93_01_01 | - | raw | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009 |
 | --- | --- | --- | decode | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_decode |
