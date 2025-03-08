@@ -30,5 +30,4 @@ toc: false
 
 ## ICARUS Logos ##
 ![Unable to display image](ICARUS_new_logo.png "ICARUS new logo")
-![Unable to display image](icarus_pride_logo.png "ICARUS pride logo")
 ![Unable to display image](icarus_pride_logo_transparent.png "ICARUS pride logo transparent")
