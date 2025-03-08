@@ -11,7 +11,7 @@ toc: false
 * ICARUS Institutions, members, and Institutional Board (IB) representatives: [https://icarus.fnal.gov/collaboration/](https://icarus.fnal.gov/collaboration/)
 * ICARUS Editorial and Speakers Board (ESB): [SBN-Doc-17328](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=17328)
 * ICARUS Analysis Blinding Policy: [SBN-Doc-34523](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=34523)
-* ICARUS Shift Policy: [SBN-Doc-23913](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=23913)
+* ICARUS Expert Shift Policy: [SBN-Doc-23913](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=23913)
 
 ## ICARUS Organizational Charts ##
 * Analysis and Software: [SBN-Doc-38529](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38529)
