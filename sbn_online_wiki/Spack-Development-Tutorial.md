@@ -54,15 +54,15 @@ This step ensures your current working directory is the environment directory yo
 Add the `sbndaq-suite` package and its specific configuration, and set up the `sbndaq-artdaq` package for development:
 
 ```sh
-spack add sbndaq-suite@v1_10_05 s=131 %gcc@12.1.0 arch=x86_64_v2
-spack develop sbndaq-artdaq@v1_10_05
+spack add sbndaq-suite@v1_10_06 s=131 %gcc@12.1.0 arch=x86_64_v2
+spack develop sbndaq-artdaq@v1_10_06
 ```
 
-- `spack add sbndaq-suite@v1_10_05`: Adds the `sbndaq-suite` package version `v1_10_05` to the environment.
+- `spack add sbndaq-suite@v1_10_06`: Adds the `sbndaq-suite` package version `v1_10_06` to the environment.
 - `s=131`: Specifies the package variants or options.
 - `%gcc@12.1.0`: Specifies the compiler to use (GCC version 12.1.0).
 - `arch=x86_64_v2`: Specifies the target architecture.
-- `spack develop sbndaq-artdaq@v1_10_05`: Marks the `sbndaq-artdaq` package version `v1_10_05` for development, meaning its source code will be added to the environment for easy editing.
+- `spack develop sbndaq-artdaq@v1_10_06`: Marks the `sbndaq-artdaq` package version `v1_10_06` for development, meaning its source code will be added to the environment for easy editing.
 
 ## Step 5: Concretize the Environment
 
@@ -139,7 +139,7 @@ Here are some useful examples of interacting with Spack after setting up and wor
 To list all installed versions of the `sbndaq-suite` package with detailed information:
 
 ```sh
-spack find -lpvf sbndaq-suite@v1_10_05
+spack find -lpvf sbndaq-suite@v1_10_06
 ```
 
 - `-l`: Displays package hashes.
@@ -152,7 +152,7 @@ spack find -lpvf sbndaq-suite@v1_10_05
 To load the specified version of the `sbndaq-suite` package into your current shell environment:
 
 ```sh
-spack load sbndaq-suite@v1_10_05 %gcc@12.1.0 s=131
+spack load sbndaq-suite@v1_10_06 %gcc@12.1.0 s=131
 ```
 
 - `%gcc@12.1.0`: Specifies the compiler version.
