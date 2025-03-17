@@ -4,7 +4,7 @@ title: sbncode_v10_04_06
 toc: true
 ---
 
-sbncode_v10_04_06 Release Notes
+sbncode_v10_04_06 Release Notes 
 =======================================================================================
 
 [List of sbncode releases](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases)
