@@ -133,6 +133,41 @@ This section displays a list of the variables in the database, as well as their 
 | ser_vec_0 → ser_vec_499 | real | ADC count per bin (550 in total) for the Single Electron Response (SER) pulse (More info: [DocDB 38059](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38059)) | ADC |
 
 
+### crt_feb_calibration
+- Folder description: This folder contains CRT calibration information at a readout board level (group of 32 channels)
+- Channel number: FEB MAC5 address
+- Number of rows: 142 (140 Bern, 2 MINOS)
+- URL with current values in Production Database:
+
+| Variable Name | Type | Description | Unit |
+| ------------- | ---- | ----------- | ---- |
+| feb_mac5_address | integer | Hardware address of physical readout board | N/A |
+| type | integer | 0 Bern / 1 MINOS | N/A |
+| t0_timing_offset_cable_length | real | Cable delay for T0 clock reset delivery | ns |
+| t0_timing_offset_calibrated | real | Calibrated 'other' delays for T0 clock reset delivery | ns |
+| t1_timing_offset_cable_length | real | Cable delay for T1 clock reset delivery | ns |
+| t1_timing_offset_calibrated | real | Calibrated 'other' delays for T1 clock reset delivery | ns |
+
+Note the types of different numbering schemes are enumerated in this spreadsheet: https://docs.google.com/spreadsheets/d/1ReXP3Q2DuU-mO_vaQXZWj1h8NVdt6r13sBigYDvihXo/edit?usp=sharing
+
+### crt_channel_calibration
+- Folder description: This folder contains CRT calibration information at a single channel level
+- Channel number: Online channel ID (100 * MAC5 + Channel #) N.B. this is different to the offline channel ID (32 * GDML ID + Channel #)
+- Number of rows: 4540 (4480 Bern, 60 MINOS)
+- URL with current values in Production Database:
+
+| Variable Name | Type | Description | Unit |
+| ------------- | ---- | ----------- | ---- |
+| feb_mac5_address | integer | Hardware address of physical readout board | N/A |
+| type | integer | 0 Bern / 1 MINOS | N/A |
+| raw_channel_number | integer | Board readout channel 0 - 31 | N/A |
+| status | integer | Channel status (good, bad, quiet etc) | N/A |
+| pedestal | integer | Value of baseline in absence of signal | ADC |
+| gain | real | Electronics amplification amount | PE/ADC |
+
+Note the types of different numbering schemes are enumerated in this spreadsheet: https://docs.google.com/spreadsheets/d/1ReXP3Q2DuU-mO_vaQXZWj1h8NVdt6r13sBigYDvihXo/edit?usp=sharing
+The enumeration for the channel status is defined in this header file: https://github.com/SBNSoftware/sbnobj/blob/develop/sbnobj/SBND/CRT/CRTEnums.hh#L48-L54
+
 ### What happens when a variable does not exist in an older version of the database?
 
 In a scenario where a variable has to be added to the database later on, it has been decided that this variable will assume the value of `-999` for older version, and therefore should be defined manually by the user when doing analysis. For example, imagine that the first version of the database contains the variables `version1=['field_response','sce']`, but then a few months we learn that we should also include `diffusion`, so the second version of the database will contain the variables `version2=['field_response','sce','diffusion']`. So what happens when someone wants to perform an analysis with an older version of the database? It will lack the information about `diffusion` in this simple example. There are two possible solutions for this situation:
