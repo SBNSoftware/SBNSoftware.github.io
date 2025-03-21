@@ -437,13 +437,18 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Feb25 Workshop - Run 18115 Zero Bias Data | v10_04_03 | 860k | raw | GoldenRun_18115_ZeroBias_raw |
-| --- | --- | --- | decode | MCP2025A_GoldenRun_LArv10_v10_04_03_decode |
-| --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco1 |
-| --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_reco2 |
-| --- | --- | --- | calib tuple | MCP2025A_GoldenRun_LArv10_v10_04_03_histreco2 |
-| --- | --- | --- | caf | MCP2025A_GoldenRun_LArv10_v10_04_03_caf |
-| --- | --- | --- | flatcaf | MCP2025A_GoldenRun_LArv10_v10_04_03_flatcaf |
+| Feb25 Workshop - Run 18115 OffBeam Zero Bias Data | v10_04_03 | 240k | raw | GoldenRun_18115_ZeroBias_raw |
+| --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_reco1 |
+| --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_reco2 |
+| --- | --- | --- | calib tuple | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_histreco2 |
+| --- | --- | --- | caf | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_caf |
+| --- | --- | --- | flatcaf | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_flatcaf |
+| Feb25 Workshop - Run 18115 BNB Zero Bias Data | v10_04_03 | 610k | raw | GoldenRun_18115_ZeroBias_raw |
+| --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_bnbzerobias_reco1 |
+| --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_bnbzerobias_reco2 |
+| --- | --- | --- | calib tuple | MCP2025A_GoldenRun_LArv10_v10_04_03_bnbzerobias_histreco2 |
+| --- | --- | --- | caf | MCP2025A_GoldenRun_LArv10_v10_04_03_bnbzerobias_caf |
+| --- | --- | --- | flatcaf | MCP2025A_GoldenRun_LArv10_v10_04_03_bnbzerobias_flatcaf |
 | Feb25 Workshop - Calibration / CrossingMuons | v10_04_03 | - | raw | CalibData_18115_17934_CrossingMuon_raw |
 | --- | --- | --- | decode | MCP2025A_CalibData_LArv10_v10_04_03_decode |
 | --- | --- | --- | reco1 | MCP2025A_CalibData_LArv10_v10_04_03_reco1 |
