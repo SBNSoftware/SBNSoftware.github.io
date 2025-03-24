@@ -509,7 +509,7 @@ Data SBN Production Samples
 ### ICARUS Compressed RAW DATA
 --------------------------
 
-| Run | datastream | SAM dataset | Files failed Compression |
+| Run | datastream | SAM dataset | Raw Files not in the compressed datasets |
 | --- | --- | --- | --- |
 | Run 2 | numiminbias | run2_compression_production_v09_82_02_01_numiminbias_compressed_data | numiminbias_run2_physics_9301_to_10097_recover |
 | Run 2 | bnbminbias | run2_compression_production_v09_82_02_01_bnbminbias_compressed_data | nbnbminbias_run2_physics_9301_to_10097_recover |
