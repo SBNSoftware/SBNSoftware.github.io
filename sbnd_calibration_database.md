@@ -141,7 +141,7 @@ This section displays a list of the variables in the database, as well as their 
 
 | Variable Name | Type | Description | Unit |
 | ------------- | ---- | ----------- | ---- |
-| feb_mac5_address | integer | Hardware address of physical readout board | N/A |
+| channel (feb_mac5_address) | integer | Hardware address of physical readout board | N/A |
 | type | integer | 0 Bern / 1 MINOS | N/A |
 | t0_timing_offset_cable_length | real | Cable delay for T0 clock reset delivery | ns |
 | t0_timing_offset_calibrated | real | Calibrated 'other' delays for T0 clock reset delivery | ns |
@@ -153,11 +153,12 @@ Note the types of different numbering schemes are enumerated in this spreadsheet
 ### crt_channel_calibration
 - Folder description: This folder contains CRT calibration information at a single channel level
 - Channel number: Online channel ID (100 * MAC5 + Channel #) N.B. this is different to the offline channel ID (32 * GDML ID + Channel #)
-- Number of rows: 4540 (4480 Bern, 60 MINOS)
+- Number of rows: 4544 (4480 Bern, 64 MINOS)
 - URL with current values in Production Database:
 
 | Variable Name | Type | Description | Unit |
 | ------------- | ---- | ----------- | ---- |
+| channel | integer | Online channel ID | N/A |
 | feb_mac5_address | integer | Hardware address of physical readout board | N/A |
 | type | integer | 0 Bern / 1 MINOS | N/A |
 | raw_channel_number | integer | Board readout channel 0 - 31 | N/A |
