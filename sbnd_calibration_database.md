@@ -164,7 +164,7 @@ Note the types of different numbering schemes are enumerated in this spreadsheet
 | raw_channel_number | integer | Board readout channel 0 - 31 | N/A |
 | status | integer | Channel status (good, bad, quiet etc) | N/A |
 | pedestal | integer | Value of baseline in absence of signal | ADC |
-| gain | real | Electronics amplification amount | PE/ADC |
+| gainfactor | real | Electronics amplification amount | PE/ADC |
 
 Note the types of different numbering schemes are enumerated in this spreadsheet: https://docs.google.com/spreadsheets/d/1ReXP3Q2DuU-mO_vaQXZWj1h8NVdt6r13sBigYDvihXo/edit?usp=sharing
 The enumeration for the channel status is defined in this header file: https://github.com/SBNSoftware/sbnobj/blob/develop/sbnobj/SBND/CRT/CRTEnums.hh#L48-L54
