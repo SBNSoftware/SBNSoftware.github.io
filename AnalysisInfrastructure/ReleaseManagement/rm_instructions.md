@@ -12,7 +12,8 @@ toc: true
     4. [Distribution](#distribute)
 3. [Especial packages](#especialpackages)
 4. [Production release](#production)
-3. [Troubleshooting](#troubleshooting)
+5. [Adding new packages to a bundle](#contribute)
+6. [Troubleshooting](#troubleshooting)
 
 ## Release management (pre)requisites. <a name="requisites"></a>
 
@@ -172,6 +173,21 @@ For keeping up a production branch, when a patch is needed:
     
  5). Distribute it as usual.
 
+## Adding new packages to a bundle<a name="contribute"></a>
+It can happen that dependencies of sbncode need to be refactored, and new packages added. It is important to make a distinction between:
+   * _packages_, which describe self-contained pieces of code under their own version control, and
+   * _bundles_, which put packages together to publish under one repository on the SBN CVMFS.
+
+An example: In sbncode v10_04_07, refactoring of code led to the introduction of package `sbnalg` (see [DocDB #40408](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40408)). 
+
+You will find that there are various problems when you try to test said code:
+1) `mrb g` will not work: this is because `mrb` looks up lists of known repositories and returns an error if you're trying to check out a repo it doesn't know about;
+2) The Jenkins build (which depends on `mrb`) will fail;
+3) Even if you do get Jenkins to build, you won't be able to use `perl copyToSciSoft *` as you'll run into permissions issues making directories on `/SciSoft/packages/` on scisoftgpvm01.fnal.gov .
+
+You should follow the instructions on the [SciSoft redmine page](https://cdcvs.fnal.gov/redmine/projects/scisoft/wiki/SciSoft) and open a ticket ASAP for SciSoft; at the same time, you need to reach out to the mrb maintainers about adding the new package to mrb. You should also add a Github issue to the [mrb issues page](https://github.com/art-framework-suite/mrb/issues/).
+
+You should also add a new String parameter to Jenkins so that it can pick up the new package you are using a dependency with, and update the `buildSBN.sh` on the SBNSoftware fork of `larutils` (which is what our Jenkins build looks at to trigger builds). When you're sure the updated script works, open a PR to the upstream repo of `larutils` and make sure to let the maintainers know.
 
 ## Troubleshooting, useful git procedures (TO BE UPDATED)<a name="troubleshooting"></a>
 
