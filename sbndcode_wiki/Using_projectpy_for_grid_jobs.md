@@ -58,7 +58,7 @@ Here is a useful process to follow when you submit jobs to the gird.
 
 
 
-## How the write a `project.py` XML file
+## How to write a `project.py` XML file
 
 `project.py` handles job submissions to the grid so that you don't have
 to worry about managing all the jobs you send to the grid yourself.
