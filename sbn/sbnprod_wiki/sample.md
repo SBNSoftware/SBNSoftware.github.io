@@ -56,6 +56,18 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| Spring25 validation - BNB + Cosmics | MC2025A | v10_04_06_01 | 260k | reco1 | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | larcv | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | --- | --- | reco2 | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| Spring25 validation - Intime Cosmics | MC2025A | v10_04_06_01 | 260k | reco1 | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | larcv | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | --- | --- | reco2 | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Feb25 Workshop - BNB + Cosmics | MC2025A | v10_04_03 | 60k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | reco2 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_reco2_sbnd |
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_gen_g4_detsim_reco1_larcv_sbnd |
@@ -437,6 +449,14 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
+| Spring25 validation - DevSample | v10_04_06_01 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| --- | --- | --- | decode | MCP2025Av3_DevSample_bnblight_v10_04_06_01_decode |
+| --- | --- | --- | reco1 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco1 |
+| --- | --- | --- | larcv | MCP2025Av3_DevSample_bnblight_v10_04_06_01_larcvreco1 |
+| --- | --- | --- | reco2 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco2 |
+| --- | --- | --- | calib tuple | MCP2025Av3_DevSample_bnblight_v10_04_06_01_histreco2 |
+| --- | --- | --- | caf | MCP2025Av3_DevSample_bnblight_v10_04_06_01_caf |
+| --- | --- | --- | flatcaf | MCP2025Av3_DevSample_bnblight_v10_04_06_01_flatcaf |
 | Feb25 Workshop - Run 18115 OffBeam Zero Bias Data | v10_04_03 | 240k | raw | GoldenRun_18115_ZeroBias_raw |
 | --- | --- | --- | reco1 | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_reco1 |
 | --- | --- | --- | reco2 | MCP2025A_GoldenRun_LArv10_v10_04_03_offbeamzerobias_reco2 |
