@@ -62,7 +62,7 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
-| Spring25 validation - Intime Cosmics | MC2025A | v10_04_06_01 | 260k | reco1 | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| Spring25 validation - Intime Cosmics | MC2025A | v10_04_06_01 | 240k | reco1 | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025Av3_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
