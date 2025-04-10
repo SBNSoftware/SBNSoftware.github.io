@@ -44,14 +44,18 @@ Different release instructions for:
 
 0. log in to one of the build nodes, move to a working area and clone the sbnbuild repo (where [release management tools](rm_tools.md) live.
 1. Move into `sbnbuild` and do `source SBN/setup_build.sh <version> <quals>` where the version in the larsoft version, and the quals are a choice of quals for testing (e.g. `c7:debug`).
-2. Do `mrb g <repo>` for the repositories that need to be updated. (Check release notes or use `ups active | grep lardataobj` to see if `lardataobj` has changed, and if you will need to change `sbnobj` or not).
-3. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch, but use defaults for all the rest of the prompts.
-4. In each repo, do `git flow release start vXX_YY_ZZ` where `vXX_YY_ZZ` is the new version number for this package. This will create a `release/vXX_YY_ZZ` in this repo based on `develop`.
-5. Merge in any pull requests that were not already on develop. (E.g. `git merge origin/feature/username_MyImportantPR`.) Resolve any conflicts as needed.
-6. Edit `CMakeLists.txt` to have the new version number (at `project(sbncode VERSION `) and update versions of any dependencies in `ups/product_deps` (middle of file) as needed. Check LArSoft release notes and search for dependencies changes.
-7. Commit all changes, and push up to the origin: `git commit -a -m 'my message'; git push origin release/vXX_YY_ZZ`
-8. Do this for all needed repos.
-9. Test locally: `cd $MRB_BUILDDIR; mrbsetenv; mrb i -j64; mrbslp`. Resolve any conflicts, and be sure to commit and push updates.
+2. Do `mrb g <repo>` for the repositories that need to be updated.
+3. For each of the special dependency key-value pairs, check release notes or use `ups active | grep <key>` to see if `<key>` has changed. If it has, you will need to change the product table in `<pair>`.
+   - lardataobj : sbnobj (update lardataobj)
+   - lardataalg : sbnalg (update lardataalg)
+   - nugen      : sbncode (update nusystematics to the version that matches nugen. If unsure, run `ups depend nusystematics <version> <qual> | grep nugen`)
+4. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch, but use defaults for all the rest of the prompts.
+5. In each repo, do `git flow release start vXX_YY_ZZ` where `vXX_YY_ZZ` is the new version number for this package. This will create a `release/vXX_YY_ZZ` in this repo based on `develop`.
+6. Merge in any pull requests that were not already on develop. (E.g. `git merge origin/feature/username_MyImportantPR`.) Resolve any conflicts as needed.
+7. Edit `CMakeLists.txt` to have the new version number (at `project(sbncode VERSION `) and update versions of any dependencies in `ups/product_deps` (middle of file) as needed. Check LArSoft release notes and search for dependencies changes.
+8. Commit all changes, and push up to the origin: `git commit -a -m 'my message'; git push origin release/vXX_YY_ZZ`
+9. Do this for all needed repos.
+10. Test locally: `cd $MRB_BUILDDIR; mrbsetenv; mrb i -j64; mrbslp`. Resolve any conflicts, and be sure to commit and push updates.
 
 ### Run build on Jenkins. <a name="jenkins"></a>
 1. log in to buildmaster.fnal.gov (need to be on VNC and need to have a certificate added), and go to the "sbn" tab.
