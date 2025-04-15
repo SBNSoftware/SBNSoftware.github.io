@@ -34,7 +34,10 @@ The SBN Production Group is reponsible for MC sample productions for SBND and IC
 
 To submit a request to production, please fill the [SBN Production Request Form](https://forms.gle/V9XkhdwXj7FsxBj28). The responsible parties should be automatically notified but you can also notify the official group email address: [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
-The form is also a checklist of the needed information. If you need help answering any number of the questions on the survey, please contact your group convener and/or production group conveners. Status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form. 
+The form is also a checklist of the needed information. If you need help answering any number of the questions on the survey, please contact your group convener and/or production group conveners. Status of open requests can be checked at the [SBN Production Requests Database](https://docs.google.com/spreadsheets/d/17mFPGsP7gw4GRLSCwIL15QrtUnLVri_2k2Wjzhd6Ork/edit?usp=sharing). If you need to edit the request, please edit your answers to the form.
+
+ICARUS past an current workflows are documented in [a dedicated ICARUS workflow spreadsheet](https://docs.google.com/spreadsheets/d/1t1qmwQMaGWOJYcbG7TEu7vcdMHUN93k4gsvBhX5X5Vw), which can be also used as reference for new requests.
+
 
 Production Monitoring
 --------------------------
@@ -53,7 +56,7 @@ Fermigrid allocation, e.g. for ICARUS at [this page](https://fifemon.fnal.gov/mo
 
 ICARUS data Keepup processing
 --------------------------
-ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](/sbn/sbnprod_wiki/ICARUS Keepup Processing)
+ICARUS keepup documentation can be found in the [ICARUS data keepup processing page](ICARUS Keepup Processing.md)
 
 Contributing to this wiki
 --------------------------
