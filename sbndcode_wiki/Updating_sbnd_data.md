@@ -64,8 +64,52 @@ New version required
     then rsync\'d to cvmfs (I think).
 
 
+Step-by-step example
+------------------------------------------------------------------------
+1. Have author copy latest `sbnd_data` into their area to modify code.
+2. Once their modifications are complete, copy into your area and make the following changes to `sbnd_data/vXX_YY_ZZ.version/NULL_`
+   ```bash
+    FILE = version
+    PRODUCT = sbnd_data
+    VERSION = vXX_YY_ZZ #Bump the version
+    
+    #*************************************************
+    #
+    FLAVOR = NULL
+    QUALIFIERS = ""
+      DECLARER = <your-username>
+      DECLARED = 2025-03-25 19.52.40 GMT #Modify date
+      MODIFIER = <your-username>
+      MODIFIED = 2025-03-25 19.52.40 GMT #Modify the date
+      PROD_DIR = sbnd_data/vXX_YY_ZZ #Bump the version
+      UPS_DIR = ups
+      TABLE_FILE = sbnd_data.table
+   ```
+3. Copy to fermigrid area
+   ```bash
+   ssh sbnd@sbndgpvm01.fnal.gov
+   cp sbnd_data/vXX_YY_ZZ* /grid/fermiapp/products/sbnd/
+   ```
+4. Copy to cvmfs
+   ```bash
+   ssh cvmfssbnd@oasiscfs.fnal.gov
+   cvmfs_server transaction sbnd.opensciencegrid.org
+   rsync -r <your-username>@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/vXX_YY_ZZ* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
+   cvmfs_server tag -l sbnd.opensciencegrid.org #check which tag to use
+   cvmfs_server publish -m "Published sbnd_data XX.YY.ZZ" -a <tag> sbnd.opensciencegrid.org
+   logout
+   ```
+5. Copy to scisoft, use [copyToScisoft](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbndcode_wiki/attachments/copyToSciSoft)
+   ```
+   ssh <your-username>@sbndgpvm01.fnal.gov
+   #Navigate to scratch area
+   tar -cjf sbnd_data-< dot version >-noarch.tar.bz2 -C /grid/fermiapp/products/sbnd sbnd_data/vXX_YY_ZZ sbnd_data/vXX_YY_ZZ.version
+   tar -tf *.bz2 #check the contents
+   ./copyToSciSoft.sh *.bz2
+   ```
 
-New version worked example
+
+Worked example
 ------------------------------------------------------------------------
 
     ssh tbrooks@sbndgpvm01.fnal.gov
