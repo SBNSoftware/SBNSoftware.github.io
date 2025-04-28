@@ -49,7 +49,7 @@ Different release instructions for:
    - lardataobj : sbnobj (update lardataobj)
    - lardataalg : sbnalg (update lardataalg)
    - nugen      : sbncode (update nusystematics to the version that matches nugen. If unsure, run `ups depend nusystematics <version> <qual> | grep nugen`)
-4. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch, but use defaults for all the rest of the prompts.
+4. For each repo, do `cd srcs/<repo>` and then `git flow init`. Use `main` as the 'production' branch (for sbnalg it's `master`), but use defaults for all the rest of the prompts.
 5. In each repo, do `git flow release start vXX_YY_ZZ` where `vXX_YY_ZZ` is the new version number for this package. This will create a `release/vXX_YY_ZZ` in this repo based on `develop`.
 6. Merge in any pull requests that were not already on develop. (E.g. `git merge origin/feature/username_MyImportantPR`.) Resolve any conflicts as needed.
 7. Edit `CMakeLists.txt` to have the new version number (at `project(sbncode VERSION `) and update versions of any dependencies in `ups/product_deps` (middle of file) as needed. Check LArSoft release notes and search for dependencies changes.
@@ -62,7 +62,7 @@ Different release instructions for:
 2. Click on "sbn-release-build" (or just go here: https://buildmaster.fnal.gov/buildmaster/view/sbn/job/sbn-release-build/)
 3. Click on "Build with Parameters" on the left, and modify the parameters as needed:
    - "SBN_VERSION" should be the version number of `sbncode` you are building.
-   - "SBN", "SBNOBJ", "SBNANAOBJ", and "SBNDAQ_ARTDAQ_CORE" are the tags/branches/commits within those repositories that you want to build. If using the above this would be the appropriate `release/vXX_YY_ZZ` branch for that repository.
+   - "SBN", "SBNALG", "SBNOBJ", "SBNANAOBJ", and "SBNDAQ_ARTDAQ_CORE" are the tags/branches/commits within those repositories that you want to build. If using the above this would be the appropriate `release/vXX_YY_ZZ` branch for that repository.
    - "SQUAL" is the matching s-qualifier for larsoft: see the Larsoft release notes (it doesn't change so often).
 4. Click the "Build" button, and make sure all build configs are successful. If one or more is unsuccessful, investigate by looking at the console output via Jenkins webpage. Make updates in the code as necessary (in your local area), and commit/push them back up to the repo.
 
