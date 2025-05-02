@@ -98,7 +98,7 @@ Example
 --------
 
 Assuming that the current area is already set up as described above,
-access to _art_/ROOT files can be achieved via `galleryUtils` module (provided in `icarusalg`).
+access to _art_/ROOT files can be achieved via `galleryUtils` module (provided by `sbnalg` from `v10` on, and before by `icarusalg`).
 
 In an interactive `python` session (or equivalent),
 ```py
@@ -116,7 +116,7 @@ LArG4tag = ROOT.art.InputTag("largeant")
 
 for event in galleryUtils.forEach(sampleEvents):
   
-  particles = event.getValidHandle[ROOT.std.vector[ROOT.simb.MCParticle]](LArG4tag).product()
+  particles = event.getProduct[ROOT.std.vector[ROOT.simb.MCParticle]](LArG4tag)
   
   nMuons = sum(abs(part.PdgCode()) == 13 for part in particles)
   print(f"{event.eventAuxiliary().id()}: {nMuons} muons")
@@ -147,13 +147,14 @@ Known limitations
 
 _gallery_ suffers some limitations compared to _art_:
  * it is not able to access `art::Run` and `art::SubRun` data products, but only `art::Event` ones.
- * its interface is behind compared to `art::Event`; for example, it does not yet support `art::Event::getProduct()`.
+ * its interface is behind compared to `art::Event`.
 
 `cppyy` also suffers severe limitations.
  * overload resolution is tricky; apparently `cppyy` attempts to call all the possible functions/methods with the same name
    in the attempt to figure out which one is the correct one, and captures the exceptions from errors.
      * The error message when failing to find the appropriate function is usually of not much use.
-     * If the call itself throws an exception, it may be impossible to access it in Python.
+     * If the call itself throws an exception, it may be impossible to access that exception in Python.
+ * some template calls do not work (e.g. `for TPC in geom.Iterate[ROOT.geo.TPCGeo]():` does not iterate anything).
 
 
 Other resources
@@ -161,6 +162,7 @@ Other resources
 
 A guide [SBN DocDB 4339](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=4339), by now ancient,
 describes how to use _gallery_ in C++.
+An working example is [`galleryAnalysis.cpp`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/gallery/examples/galleryAnalysis/C%2B%2B/galleryAnalysis.cpp) in `icarusalg` `v10_04_07`.
 Compared to using Python, C++ requires a careful and sometimes painstaking compilation of building instructions (e.g. Cmake);
 a middle ground is the use of ROOT interpreter (Cling), which does for C++ a good deal of the magic that `cppyy` does for Python.
 
