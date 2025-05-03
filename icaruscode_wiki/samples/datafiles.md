@@ -25,7 +25,15 @@ You can use `samweb` (`setup sam_web_client` on a GPVM) to locate decode files a
       reports the "decoded" raw files (ready for LArSoft reconstruction or event display)
     * all available metadata to select on can be seen by picking a file and asking `get-metadata`;
       for example: `samweb get-metadata data_dl14_run4811_174_20210209T091842_20210209T135806-stage0-b12a3477-ad55-49e6-8673-152a25892ced.root`
-* `samweb locate-file filename`   where filename is a decoded file
+* `samweb locate-file filename`   where filename is a decoded file; it prints a list of locations where SAM believes the file can be accessed. As an URL, it is usually useless.
+    * SAM trusts what it was told; if a file has been (re)moved or if the information in SAM was wrong from the beginning, you'll just get a wrong location
+    * different "protocols" in the locations have different meanings:
+        * `dcache:`: the file is supposed to be on the dCache disk, ready to access.
+        * `enstore:`: the file is supposed to be on tape; it _might_ be also on the path specified on dCache, but on the other end what is there might be a placeholder that when accessed may trigger the file retrieval (which may take hours) and likely a timeout which sometimes ends with a scary "I/O error". Files can't be used directly from tape: they need to be cached on a disk (→ dCache).
+        * `cnafdisk:`: the file is stored at INFN Centro Nazionale Analisi Fotogrammi (CNAF) facility (get the literal translation for a laugh)
+* `samweb get-file-access-url --schema schema filename` gives a URL that instead can often be actually used. The `schema` options include among others:
+    * `root`: returns a URL good for XRootD access (get access to the ROOT file directly from dCache or whichever _disk_ that is in)
+    * `https`: useful to copy the file with `ifdh cp` (especially if the file is stored at CNAF).
 
 
 ### Examples of metadata
