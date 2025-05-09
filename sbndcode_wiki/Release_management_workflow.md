@@ -35,7 +35,7 @@ in release management, these include:
 
 Creating a new release
 ----------------------------------------------------------------
-
+0.  [Get scripts](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/sbndcode_wiki/attachments)
 1.  [Tag the release](Tagging_a_release.html)
 2.  [Build on Jenkins](Building_a_release_on_Jenkins.html)
 3.  [Upload release to SciSoft](Write_files_to_SciSoft.html)
