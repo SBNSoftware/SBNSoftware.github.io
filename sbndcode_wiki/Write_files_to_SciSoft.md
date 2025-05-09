@@ -28,7 +28,7 @@ Copy sbndcode and sbndutil to SciSoft
 
 -   Fetch results of Jenkins from e26 build using
 
-        copyFromJenkins -q e26 -m swarm sbndcode-release-build
+        ./copyFromJenkins -q e26 -m swarm sbndcode-release-build
         
 -   This will fetch the build artifacts (tarballs and manifests)
 
