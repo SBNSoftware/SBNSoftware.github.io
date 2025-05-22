@@ -449,6 +449,14 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
+| Final Spring25 validation - DevSample | v10_06_00 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| --- | --- | --- | decode | official_MCP2025B_DevSample_bnblight_v10_06_00_decode_sbnd |
+| --- | --- | --- | reco1 | official_MCP2025B_DevSample_bnblight_v10_06_00_reco1_sbnd |
+| --- | --- | --- | larcv | official_MCP2025B_DevSample_bnblight_v10_06_00_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | official_MCP2025B_DevSample_bnblight_v10_06_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | official_MCP2025B_DevSample_bnblight_v10_06_00_histreco2_sbnd |
+| --- | --- | --- | caf | official_MCP2025B_DevSample_bnblight_v10_06_00_caf_sbnd |
+| --- | --- | --- | flatcaf | official_MCP2025B_DevSample_bnblight_v10_06_00_flatcaf_sbnd |
 | Spring25 validation - DevSample | v10_04_06_01 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | MCP2025Av3_DevSample_bnblight_v10_04_06_01_decode |
 | --- | --- | --- | reco1 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco1 |
