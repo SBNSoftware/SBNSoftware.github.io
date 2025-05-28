@@ -22,6 +22,7 @@ editors
 Emacs is a lot of different things: a Lisp interpreter with text editing, some OS features, a shell (like bash) which modifies or adds on to existing bash shell features. Realistically, though, for a particle physics application, one would simply be using emacs as a text editor. A guide on how to use Emacs as a text editor can be found [here](https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/textedit.html).
 
 ### vim
+[Vim](https://www.vim.org/) is a customizable text editor, commonly used by programmers. It runs in the terminal. Its commands can seem a bit unintuitive at first, but after a brief learning curve, people often find Vim flexible. Here is a [cheat sheet for Vim commands](https://vim.rtorr.com/).
 
 ### Visual Studio Code
 
@@ -49,5 +50,13 @@ Particularly useful features for SBN-ers:
 
 tmux is an open-source terminal multiplexer, which allows you to run multiple terminal sessions within a single window. It's super useful for running multiple processes at once, and you can easily detach and reattach to sessions. You can also split windows and panes, and customize your tmux environment.
 
-If you ever have to run a command that takes longer than a couple minutes, you can run it in a tmux session, detach, and reattach later to check on the process. 
+If you ever have to run a command that takes longer than a couple minutes, you can run it in a tmux session, detach, and reattach later to check on the process. You can even exit completely out of the Fermilab computer while your command is running in a tmux session then reconnect later.
+
 tmux is natively installed on the gpvms, and you can also install it on your local machine.
+
+The basic structure of how to use it is as follows:
+- Either create a new session or attach an existing session: `tmux new -s my_session` or `tmux a -t my_session`
+- Ctrl+B prepares tmux to take in another keyword command. For example, you can create another tmux pane with Ctrl+B -> C.
+- Detach a session with Ctrl+B -> D
+
+Here is a [very helpful tmux cheat sheet](https://tmuxcheatsheet.com/)
