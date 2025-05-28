@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Git & GitHub
+title: Python on the GPVMs
 ---
 
 # Intro to Python on the GPVMs
