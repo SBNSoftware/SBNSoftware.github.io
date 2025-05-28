@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Git & GitHub
+title: Code Development
 ---
 
 # Introduction to Code Development
@@ -19,6 +19,7 @@ editors
 ## Code Editors
 
 ### emacs
+Emacs is a lot of different things: a Lisp interpreter with text editing, some OS features, a shell (like bash) which modifies or adds on to existing bash shell features. Realistically, though, for a particle physics application, one would simply be using emacs as a text editor. A guide on how to use Emacs as a text editor can be found [here](https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/textedit.html).
 
 ### vim
 
