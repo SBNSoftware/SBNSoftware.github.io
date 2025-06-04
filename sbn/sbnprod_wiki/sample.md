@@ -470,7 +470,7 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Final Spring25 validation - DevSample | v10_06_00 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| Spring25 - DevSample | v10_06_00 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | data_MCP2025B_DevSample_bnblight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_DevSample_bnblight_v10_06_00_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_DevSample_bnblight_v10_06_00_larcvreco1_sbnd |
