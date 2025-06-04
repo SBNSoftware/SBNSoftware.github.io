@@ -16,21 +16,18 @@ SBN Production Page
 
 Here you will found how to make production sample requests as well as (comming soon) instructions and documentation
 
+Available Samples 
+--------------------------
+A table with information about the official available samples can be found at the [SBN Production Available Samples Page](/sbn/sbnprod_wiki/sample)
 
 Production Guidelines for SBN-wide Data and MonteCarlo Production
 --------------------------
 The [SBN Production Guidelines document](https://docs.google.com/document/d/1ykYBhHZCHaak-JDuod9I3-GwetaiptGRgLGJG6zOKf4/edit?usp=sharing) outlines the SBN-wide production process, which governs production and data processing for SBN joint analyses, and individual SBND and ICARUS analyses. Comments can be added to the document or brought to your group convener. 
 
-
-Available Samples 
---------------------------
-A table with information about the official available samples can be found at the [SBN Production Available Samples Page](/sbn/sbnprod_wiki/sample)
-
-
 Production Sample requests 
 --------------------------
 
-The SBN Production Group is reponsible for MC sample productions for SBND and ICARUS, as well as eventual Data processing. 
+The SBN Production Group is reponsible for MC sample productions and DATA processing for SBND and ICARUS.
 
 To submit a request to production, please fill the [SBN Production Request Form](https://forms.gle/V9XkhdwXj7FsxBj28). The responsible parties should be automatically notified but you can also notify the official group email address: [sbn-mc-prod@fnal.gov](sbn-mc-prod@fnal.gov)
 
