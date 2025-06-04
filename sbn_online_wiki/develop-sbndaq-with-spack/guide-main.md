@@ -20,6 +20,7 @@
   * [Modules README.md](https://github.com/SBNSoftware/spack-top/blob/main/sbndaq-spack-tools/modules/README.md)
 
 ## Useful Links
+  * [Spack Development Tutorial](docs/Spack-Development-Tutorial.md)
   * [Spack documentation](https://spack.readthedocs.io/en/latest/)
   * [MPD documentation](https://github.com/FNALssi/spack-mpd)
   * [`env` file format](https://github.com/env-lang/env/blob/main/env.md)
