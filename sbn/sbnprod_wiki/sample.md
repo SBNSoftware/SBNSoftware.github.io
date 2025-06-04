@@ -39,6 +39,7 @@ MC sample datasets are declared to the SBN SAM instance which is acessible to bo
 #### **MC samples**
 Each SBND MC file has a unique subrun, so one just nedd the run/subrun to identify the file:
 - search: `samweb -e sbnd list-files "defname: {dataset name} and run_number run#.subrun#"`
+
 #### **DATA samples**
 starting at MCP2025B all DATA samples contain event #'s in metadata:
 - search `samweb -e sbnd list-files "defname: {dataset name} and run_number run#.subrun# and sbnd.event_number_list like %_{event#}_%"`
