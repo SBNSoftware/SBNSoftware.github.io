@@ -598,3 +598,13 @@ _2024 November_: A sample of central value SBND MC events were generated on Pola
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
 | BNB + Cosmics CV | v09_93_01 | 274387 | flatcaf | polaris_v09_93_01_prodoverlay_corsika_cosmics_proton_genie_rockbox_sbnd_caf_flat_caf_sbnd |
+
+SBND Production Progress Report
+--------------------------
+<div style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRUyAJlNocwTTuKiY5xsQJhPDMqxdl5R0tgNk76kub_gLnfjgV2cE0J6hhSRqQCnFw30XLDVViMr_d-/pubhtml?gid=1115838130&amp;single=true&amp;widget=true&amp;headers=false" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+    loading="lazy">
+  </iframe>
+</div>
