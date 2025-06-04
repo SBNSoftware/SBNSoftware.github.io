@@ -32,7 +32,7 @@ MC sample datasets are declared to the SBN SAM instance which is acessible to bo
 - checking number of files and events (for samples with full metadata): `samweb -e sbn list-definition-files {definition} --summary`
 
 ### File commands
-- checking metadata: `samweb -e sbn get-metadata {filename}`
+- checking metadata: `samweb -e sbn get-metadata {filename}` (fcl files used are listed in metadata) 
 - file location: `samweb -e sbn locate-file {filename}`
 
 ### Finding the file that contains a specific run/subrun/event (SBND only)
