@@ -35,6 +35,14 @@ MC sample datasets are declared to the SBN SAM instance which is acessible to bo
 - checking metadata: `samweb -e sbn get-metadata {filename}`
 - file location: `samweb -e sbn locate-file {filename}`
 
+### Finding the file that contains a specific run/subrun/event (SBND only)
+#### **MC samples**
+Each SBND MC file has a unique subrun, so one just nedd the run/subrun to identify the file:
+- search: `samweb -e sbnd list-files "defname: {dataset name} and run_number run#.subrun#"`
+#### **DATA samples**
+starting at MCP2025B all DATA samples contain event #'s in metadata:
+- search `samweb -e sbnd list-files "defname: {dataset name} and run_number run#.subrun# and sbnd.event_number_list like %_{event#}_%"`
+
 ### Accessing files at CNAF
 some of ICARUS samples are available at CNAF, those files are declared to samweb and can be accessed from grid jobs from FNAL.
 
