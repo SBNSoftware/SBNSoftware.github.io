@@ -59,6 +59,41 @@ export MY_SPACK_PROJECT=DAQ_2025-06-03_ALICE_migration_artdaqv3_13_02
 newSPACKDevArea.sh
 ```
 
+## Interactive Mode
+
+If the build process fails, the script enters interactive mode, allowing you to quickly iterate over compilation errors.
+
+```bash
+[WARN] Build failed - entering interactive build mode
+Available packages:
+1. sbndaq@upgrade_gcc13.1.0
+2. sbndaq-artdaq@upgrade_gcc13.1.0
+3. sbndaq-artdaq-core@upgrade_gcc13.1.0
+4. wibtools@upgrade_gcc13.1.0
+0. Exit interactive build mode
+Select package to build (0-4):
+```
+
+The process is straightforward: select the project that failed, e.g., `2`, and the script will start an interactive build environment for the selected project.
+
+```bash
+Select package to build (0-4): 2
+[INFO] Entering build environment for sbndaq-artdaq
+[INFO] Available commands in build environment:
+[INFO]   make    # Build the package
+[INFO]   exit 0  # Exit build environment
+[CMD] spack cd --build-dir sbndaq-artdaq
+[CMD] spack build-env sbndaq-artdaq -- bash
+```
+
+Once in the interactive shell, run the `make` command and examine the output for errors. Modify the problematic file and rerun `make` until all issues are resolved and the build completes successfully. Then, type `exit` to leave the shell.
+
+Respond with `n` to the `Did the build succeed? (y/N):` question to continue rebuilding the remaining projects that were not built. Afterwards, respond with `y` to exit the interactive session and proceed with the rest of the script.
+
+If everything appears fully built, answer `y` to the `Continue with buildcache creation? (Y/n):` question; otherwise, answer `n`.
+
+The script will exit, allowing you to restart it at a later time.
+
 ## Heads Up
 
 The integration of [MPD functionality](https://github.com/FNALssi/spack-mpd) into the build process is currently underway. This enhancement is expected to expedite rebuilding during active development.
