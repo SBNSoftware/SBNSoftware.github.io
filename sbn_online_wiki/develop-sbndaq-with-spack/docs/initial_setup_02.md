@@ -11,11 +11,39 @@ The script uses a configuration file named `newSPACKDevArea.env`, which is in th
 The `newSPACKDevArea.sh` script accepts the following options:
 
 ```bash
+Usage: newSPACKDevArea.sh [OPTIONS]
+
+Sets up a Spack development area for DAQ software development.
+Creates a new directory with custom Spack environment, checks out specified
+packages for development, and builds them.
+
 Options:
     --dev-name NAME       Set developer name for directory naming (default: XYZ)
     --default-version VER Set specific version instead of latest available
     --non-interactive     Run without user prompts (default: false)
+    --config FILE         Specify configuration file path (can be absolute or relative)
     -h, --help            Display this help message and exit
+
+Environment Variables:
+    MY_CONFIG_FILE       Alternative way to specify config file path (--config takes precedence)
+    DEVNAME              Alternative to --dev-name option
+    DEFAULT_VERSION      Alternative to --default-version option
+
+Configuration File:
+    The script searches for a configuration file in the following order:
+    1. File specified by --config option
+    2. File specified by MY_CONFIG_FILE environment variable
+    3. Current directory (./*.env)
+    4. /home/artdaq/DAQ_SPACK_DevAreas/*.env
+    5. Home directory (~/*.env)
+    6. Parent directory of script
+    7. If not found, creates a default file at ~/newSPACKDevArea.env
+
+Examples:
+    newSPACKDevArea.sh --dev-name ALICE --default-version v1_10_07
+    newSPACKDevArea.sh --config=~/myconfig.env
+    newSPACKDevArea.sh --config ./myconfig.env
+    MY_CONFIG_FILE=~/myconfig.env newSPACKDevArea.sh
 ```
 
 Users can also override the name of the development area by setting the `MY_SPACK_PROJECT` environment variable, so the script will use it instead of creating a new one. If the area pointed to by `MY_SPACK_PROJECT` exists, the `newSPACKDevArea.sh` script will not override the configuration files and sources and will proceed to building, installation, and creating Spack build caches.
