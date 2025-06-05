@@ -74,7 +74,7 @@ Available packages:
 Select package to build (0-4):
 ```
 
-The process is straightforward: select the project that failed, e.g., `2`, and the script will start an interactive build environment for the selected project.
+The process is straightforward: select the package that failed, e.g., `2`, and the script will start an interactive build environment for the selected package.
 
 ```bash
 Select package to build (0-4): 2
@@ -88,7 +88,7 @@ Select package to build (0-4): 2
 
 Once in the interactive shell, run the `make` command and examine the output for errors. Modify the problematic file and rerun `make` until all issues are resolved and the build completes successfully. Then, type `exit` to leave the shell.
 
-Respond with `n` to the `Did the build succeed? (y/N):` question to continue rebuilding the remaining projects that were not built. Afterwards, respond with `y` to exit the interactive session and proceed with the rest of the script.
+Respond with `n` to the `Did the build succeed? (y/N):` question to continue rebuilding the remaining package that were not built. Afterwards, respond with `y` to exit the interactive session and proceed with the rest of the script.
 
 If everything appears fully built, answer `y` to the `Continue with buildcache creation? (Y/n):` question; otherwise, answer `n`.
 
