@@ -4,6 +4,7 @@
 * [Configuration guide for **newSPACKDevArea.sh**](docs/configuration_file_03.md)
 * [Spack project directory structure](docs/directory_structure_04.md)
 * [Activate, aka `setup`, project area](docs/setup_project_05.md)
+* [Walkthrough Guide for Running **newSPACKDevArea.sh**](docs/setup_walkthru_06.md)
 * [Spack mirrors and build caches](docs/spack_mirrors_08.md)
 
 ## Examples
