@@ -7,6 +7,9 @@
 * [Walkthrough Guide for Running **newSPACKDevArea.sh**](docs/setup_walkthru_06.md)
 * [Spack mirrors and build caches](docs/spack_mirrors_08.md)
 
+## Talks
+* [Automated Spack DevArea Setup with **newSPACKDevArea.sh**](docs/Automated-Spack-DevArea-Setup-with-newSPACKDevArea.md)
+
 ## Examples
 * [config.yaml](examples/example_config_yaml.md)
 * [repos.yaml](examples/example_repos_yaml.md)
