@@ -201,11 +201,87 @@ You can read `monitor_stream.py` to figure out exactly the structure of your que
 ## Main tasks as DQM Expert
 
 ### As shifter
-As a DQM expert shifter, you respond to pings from shifters and other collaborators. By far the most common reason for a ping is that the Minargon website is no longer updating properly.
+As the DQM expert on call, you're responsible of keeping the monitoring system operational.  You'll be responding to pings from shifters and other collaborators about issues observed on the online monitoring website (Minargon). 
 
-The first thing to do is ask the shifter to press the runOM button to restart the DQM. Then wait 5 minutes and see if the problem resolved itself. It usually hasn't.
+- If the ping is about a bad status (alarms on the Drift HV Status table / DAQ run status / Detector status): direct the alert to the relevant subsystem expert. If you're unsure who that is, loop in the run coordinator. 
 
-At this point, check the most common reasons the DQM may not be updating. A good place to start are the most recent DAQConsumer log files. They will indicate if or why the DQM is not running. 
+- If the ping is about an alarm on the DQM Status table: alarms here are related to DQM database connectivity and management, and will not affect immediate monitoring functionality. Please notify munjung@uchicago.edu for any alarms in this section.
+
+- If the ping is about "disconnected" on the Detector Status table, or event display not uploading, it is your job to restore it! Use the DQM logs to diagnose the problem. Check the most recent logs in `sbnd-gateway` or `sbnd-evb` machines:
+
+```bash
+ls -lsrt /daq/log/DAQConsumer
+```
+
+- `daq_consumer_master.log` logs the DAQ-DQM connection history
+- `online_analysis_{port}_*.log` analyzer logs the DQM larsoft analyzer outputs
+
+Start by checking the latest analyzer log to see how the last DQM process ended, or if it's still running.
+
+**typical recovery by restart**
+
+In most cases, the DQM process will have stopped due to a transient issue and can be restored by a simple restart. Instruct the shifter to click the runOM button (magnifying glass icon) on the shifter Desktop. Monitor the latest DQM analyzer log to check if the restart was successful -- if more than 10 events are analyzed without errors / stopping, you can assume success. Note that Minargon may take up to 10 minutes to reflect the new DQM run -- inform the shifter and ask to be pinged again if the status doesn't recover.
+
+**notable failure modes**
+
+- Init error, after 5 events
+
+```bash
+%MSG-s ArtException: TriggerResultInserter:TriggerResults@Construction 20-May-2025 02:18:16 CDT ModuleConstruction
+cet::exception caught in art
+---- Configuration BEGIN
+FailedInputSource Configuration of main input source has failed
+---- TransferWrapper BEGIN
+First 5 events received did not include the "Init" event containing necessary info for art; exiting...
+---- TransferWrapper END
+---- Configuration END
+%MSG
+Art has completed and will exit with status 9.
+```
+Resolution: Restart DQM again
+
+- EndofSubRun, after processing 8 events
+This mode does *not* raise an error, but the analyzer exits after exactly 8 events, claiming that it's the `EndOfSubrun`
+
+```bash
+%MSG-i TransferWrapper: PostProcessEvent 04-Apr-2025 03:50:46 CDT run: 18389 subRun: 1 event: 2310 TransferWrapper.cc:145
+Received 10-th event, seqID == 2311, type == 229 (EndOfSubrun)
+%MSG
+
+TrigReport ---------- Event summary -------------
+TrigReport Events total = 8 passed = 8 failed = 0
+
+TrigReport ---------- Modules in End-path ----------
+TrigReport Run Success Error Name
+TrigReport 8 8 0 Meta
+TrigReport 8 8 0 OnlineAnalysis
+...
+
+TimeReport ---------- Time summary [sec] -------
+TimeReport CPU = 243.097118 Real = 224.134430
+
+MemReport ---------- Memory summary [base-10 MB] ------
+MemReport VmPeak = 9981.33 VmHWM = 1481.17
+
+%MSG-i TransferWrapper: PostEndJob 04-Apr-2025 03:50:50 CDT ModuleEndJob TransferWrapper.cc:385
+Requesting that this monitor (SHIFTOM) be unregistered from the dispatcher aggregator
+%MSG
+%MSG-i TransferWrapper: PostEndJob 04-Apr-2025 03:50:50 CDT ModuleEndJob TransferWrapper.cc:390
+Response from dispatcher is "Success"
+
+%MSG
+%MSG-i TransferWrapper: PostEndJob 04-Apr-2025 03:50:50 CDT ModuleEndJob TransferWrapper.cc:409
+Successfully unregistered the monitor from the Dispatcher
+%MSG
+Art has completed and will exit with status 0.
+```
+
+Resolutino: This requires a full DAQ restart -- notify the run coordinator.
+
+- Others
+If you encounter a new/unfamiliar error, first attempt DQM restarts. If the same error persists and you cannnot reach other DQM experts for consult, notify the run coordinator that a DAQ restart may be required to get the DQM back.
+
+
 ### As developer
 Additionally, as a DQM expert, part of the job involves developing new back-end modules and front-end modules based on what collaborators want to see in the DQM.
 
