@@ -22,6 +22,8 @@ In 2024, ongoing ICARUS production requests started being tracked with the issue
 
 More information about the workflow can be found at the [SBN Analysis Infrastructure Workflow Management page](../../AnalysisInfrastructure/WorkflowManagement/workflow.md).
 
+[Samweb client commands reference](https://cdcvs.fnal.gov/redmine/projects/sam-main/wiki/Sam_web_client_Command_Reference#samweb-base-options-describe-definition-command-options-ltdataset-definitiongt)
+
 How to access the samples
 --------------------------
 
