@@ -59,7 +59,7 @@ Try looking at `/home/nfs/sbnd/DQM_DevAreas/18Nov2024_SBNDv1_04_00/srcs/sbndqm/s
 ### Create a new DQM development area
 First, `ksu sbnddqm` or `ksu sbnd` (I recommend the former when first starting out). Then `cd`.
 
-Note that we are still working on tagged release `v1_03_00` though our working base branch is `release/v1_04_00`
+Note that we are still working on tagged release `v1_03_00` though our working base branch is `feature/munjung-v1_04_00_deps`
 
 ```bash
 cd DQM_DevAreas/
@@ -72,7 +72,10 @@ mrb newDev -v v1_03_00 -q e26:prof
 source localProducts_sbndqm_v1_03_00_e26_prof/setup
 cd srcs/
 mrb g sbndaq_online@develop # or mrb g -t v1_01_00 sbndaq_online
-mrb g sbndqm@release/v1_04_00 #feature/SBND-v1_04_01
+mrb g sbndqm@feature/munjung-v1_04_00_deps #feature/SBND-v1_04_01
+cd ../
+cp /home/nfs/sbnd/DQM_DevAreas/SHIFTER/generate_redis_password_fcl.sh
+source generate_redis_password_fcl.sh #Creates redis_connection.fcl with the password (password not on github)
 cd $MRB_BUILDDIR
 mrbsetenv
 mrb i -j8
@@ -81,7 +84,7 @@ mrbslp
 
 sbndcode is not necessary at compile time but it is necessary at runtime.
 ```
-setup sbndcode -v v09_91_02_01 -q e26:prof #for evd
+setup sbndcode -v v09_93_02_01 -q e26:prof #for evd
 ```
 
 ### Setup script for DQM development area
@@ -93,7 +96,7 @@ setup mrb
 source localProducts_sbndqm_1_03_00_e26_prof/setup
 mrbsetenv
 mrbsetenv
-setup sbndcode -v v09_91_02_01 -q e26:prof
+setup sbndcode -v v09_93_02_01 -q e26:prof
 ```
 ### How to run the DQM
 **IMPORTANT!**
