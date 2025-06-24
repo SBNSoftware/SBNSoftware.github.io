@@ -74,7 +74,7 @@ cd srcs/
 mrb g sbndaq_online@develop # or mrb g -t v1_01_00 sbndaq_online
 mrb g sbndqm@feature/munjung-v1_04_00_deps #feature/SBND-v1_04_01
 cd ../
-cp /home/nfs/sbnd/DQM_DevAreas/SHIFTER/generate_redis_password_fcl.sh
+cp /home/nfs/sbnd/DQM_DevAreas/SHIFTER/generate_redis_password_fcl.sh ./
 source generate_redis_password_fcl.sh #Creates redis_connection.fcl with the password (password not on github)
 cd $MRB_BUILDDIR
 mrbsetenv
