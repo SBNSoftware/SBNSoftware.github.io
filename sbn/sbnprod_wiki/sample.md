@@ -67,18 +67,30 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| Spring25 - BNB + Cosmics 5e18 POT (100 events p/ file pre-filter) | MC2025B | v10_06_00 | ~680k | reco1 | mc_MCP2025B_5e18_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | larcv | mc_MCP2025B_5e18_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| Spring25 - Intime Cosmics 5e18 POT (500 events p/ file pre-filter) | MC2025B | v10_06_00 | ~510k | reco1 | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | larcv | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - BNB + Cosmics (100 events p/ file pre-filter) | MC2025B | v10_06_00 | ~680k | reco1 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
-| --- | --- | --- | --- | reco2 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
-| --- | --- | --- | --- | caf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - Intime Cosmics (500 events p/ file pre-filter) | MC2025B | v10_06_00 | ~510k | reco1 | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
-| --- | --- | --- | --- | reco2 | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
-| --- | --- | --- | --- | caf | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 validation - BNB + Cosmics (100 events p/ file pre-filter) | MC2025A | v10_04_06_01 | 260k | reco1 | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | mc_MCP2025Av3_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
@@ -472,14 +484,30 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Spring25 - DevSample | v10_06_00 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| Spring25 - Intime Cosmics | v10_06_00 | 240k | raw | SBND_DATA_InTime-Cosmic_Raw_Snapshot-20250527 |
+| --- | --- | --- | decode | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_larcvreco1_sbnd |
+| --- | v10_06_00_02 | --- | reco2 | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_flatcaf_sbnd |
+| Spring25 - rolling DevSample 5e18 POT| v10_06_00 | 240k | raw | SBND_DATA_DevSample_Run1Rolling_5e18_Raw_May2025 |
 | --- | --- | --- | decode | data_MCP2025B_DevSample_bnblight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_DevSample_bnblight_v10_06_00_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_DevSample_bnblight_v10_06_00_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_DevSample_bnblight_v10_06_00_reco2_sbnd |
-| --- | --- | --- | calib tuple | data_MCP2025B_DevSample_bnblight_v10_06_00_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025B_DevSample_bnblight_v10_06_00_caf_sbnd |
-| --- | --- | --- | flatcaf | data_MCP2025B_DevSample_bnblight_v10_06_00_flatcaf_sbnd |
+| --- | v10_06_00_02 | --- | reco2 | data_MCP2025B_02_DevSample_bnblight_v10_06_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_bnblight_v10_06_00_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_DevSample_bnblight_v10_06_00_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_bnblight_v10_06_00_flatcaf_sbnd |
+| Spring25 - fixed DevSample | v10_06_00 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| --- | --- | --- | decode | data_MCP2025B_DevSample_bnblight_v10_06_00_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_DevSample_bnblight_v10_06_00_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_DevSample_bnblight_v10_06_00_larcvreco1_sbnd |
+| --- | v10_06_00_02 | --- | reco2 | data_MCP2025B_02_DevSample_bnblight_v10_06_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_bnblight_v10_06_00_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_DevSample_bnblight_v10_06_00_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_bnblight_v10_06_00_flatcaf_sbnd |
 | Spring25 validation - DevSample | v10_04_06_01 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | MCP2025Av3_DevSample_bnblight_v10_04_06_01_decode |
 | --- | --- | --- | reco1 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco1 |
