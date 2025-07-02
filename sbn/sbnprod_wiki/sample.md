@@ -484,7 +484,7 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
-| Spring25 - Intime Cosmics | v10_06_00 | 240k | raw | SBND_DATA_InTime-Cosmic_Raw_Snapshot-20250527 |
+| Spring25 - Intime Cosmics | v10_06_00 | ~k | raw | SBND_DATA_InTime-Cosmic_Raw_Snapshot-20250527 |
 | --- | --- | --- | decode | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_larcvreco1_sbnd |
