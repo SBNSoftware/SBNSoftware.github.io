@@ -516,7 +516,7 @@ Data SBN Production Samples
 | --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_flatcaf_sbnd |
-| Spring25 validation - DevSample | v10_04_06_01 | 240k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
+| Spring25 validation - DevSample | v10_04_06_01 | 90k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | MCP2025Av3_DevSample_bnblight_v10_04_06_01_decode |
 | --- | --- | --- | reco1 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco1 |
 | --- | --- | --- | larcv | MCP2025Av3_DevSample_bnblight_v10_04_06_01_larcvreco1 |
