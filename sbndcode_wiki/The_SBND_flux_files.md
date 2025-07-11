@@ -56,10 +56,11 @@ the following location:
 ```
 
 The files are separated into several categories: 
+- _G4BNB_ The new BNB simulation based on the MiniBooNE one but running with a more recent Geant4.
 - _BooNEToGSimple_ (which are the newest and recommended kind of BNB flux file), the older gsimple type (which were are the older flux files and were generated using NuMI style decay algorithms) and the raw files used in the generation of the former two categories.
 - _BooNE_ The original flux files in BooNE ntuple format.
 
-The flux files are further separated into "configurations" which
+The _BooNEToGSimple_ flux files are further separated into "configurations" which
 describe a particular setup. The configuration encapsulates all of the
 necessary parameters used in propagating the neutrinos from their
 parent's decay point to the flux window they pass through. The amount
@@ -95,7 +96,7 @@ These are the latest and (at the time of writing) more accurate flux configurati
 - **Large window** (used for the dirt events production): **configL**
 
 
-A note about pre H configurations
+A note about pre H configurations (_BooNEToGSimple_)
 -----------------------------------------------------------------------------------------
 
 The beam centre is in the incorrect place along the X-axis for all
@@ -107,7 +108,7 @@ should instead be -73.78 cm according to the latest design.
 
 
 
-Beam configurations
+Beam Configurations (_BooNEToGSimple_)
 ----------------------------------------------------------
 
 
@@ -213,3 +214,36 @@ Otherwise, it uses an identical window setup to ConfigJ-v1.
 
 Files were produced using BooNEtoGSimple on GPVM instead of the legacy MiniBooNE machines. Kaon weight is applied with a stand alone code and does not have MiniBooNE dependency. Check [sbndcode PR #446](), sbn-docdb#33374 and sbn-docdb#??? for more details. 
 Otherwise, it uses an identical window setup to ConfigI-v1.
+
+
+G4BNB Configurations
+----------------------------------------------------------
+
+### G4BNB v1.0.0 dev
+This is the first tagged version, and is in development. It is not final.
+
+Flux files in `dk2nu` format are located at:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/
+```
+
+#### FHC
+BNB simulation in forward horn current:
+```
+Not available yet
+```
+
+#### RHC
+BNB simulation in reverse horn current:
+```
+Not available yet
+```
+
+#### Beam-Dump
+BNB simulation in beam dump mode:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/beamdump/
+```
+
+First production (july 2025) is configuration `a`.
+
