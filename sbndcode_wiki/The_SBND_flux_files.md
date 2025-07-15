@@ -229,15 +229,17 @@ Flux files in `dk2nu` format are located at:
 
 #### FHC
 BNB simulation in forward horn current:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/fhc/
 ```
-Not available yet
-```
+First production (v1 plots) is configuration `a`.
 
 #### RHC
 BNB simulation in reverse horn current:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/rhc/
 ```
-Not available yet
-```
+First production (20250707-14:46) is configuration `a`.
 
 #### Beam-Dump
 BNB simulation in beam dump mode:
