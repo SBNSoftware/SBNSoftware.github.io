@@ -21,7 +21,7 @@ Purpose
 ---------------------------------------------------
 
 New features
----------------------------------------------------
+----------------------------------------------------
 
 Bug fixes
 ---------------------------------------------------
@@ -34,8 +34,18 @@ Supported qualifiers
 
 Change List
 ==========================================
+PR #750: CCNueFilter (v10_06_00 production PR)
+  - **Description**: - Adds a new fcl block inside `Filters/filters.fcl` for a charged-current electron-neutrino interaction inside the TPC active volume. - Adds a new gen fcl that runs rockbox + the ccnue filter. Events with an AV CC nue interaction will be passed, as well dirt activity in the same event.  Partially resolves issue 655. Some validation and discussion in the develop PR 748.
+  - **Labels**: enhancement, simulation
+  - **Reviewers**: jzennamo, lyates17
+  - **Assignees**: lynnt20
+- PR #758: Bump versioning for production patch release
+  - **Description**:
+  - **Labels**:
+  - **Reviewers**:
+  - **Assignees**:
 
-sbndcode sbndcode
+sbndcode
 ---------------------------------------------------
 
 * 2025-07-17  nathanielerowe : Merge pull request #758 from SBNSoftware/release/v10_06_00_03
@@ -49,13 +59,4 @@ sbndcode sbndcode
 
 sbndutil
 ---------------------------------------------------
-- PR #750: CCNueFilter (v10_06_00 production PR)
-  - **Description**: - Adds a new fcl block inside `Filters/filters.fcl` for a charged-current electron-neutrino interaction inside the TPC active volume. - Adds a new gen fcl that runs rockbox + the ccnue filter. Events with an AV CC nue interaction will be passed, as well dirt activity in the same event.  Partially resolves issue 655. Some validation and discussion in the develop PR 748.
-  - **Labels**: enhancement, simulation
-  - **Reviewers**: jzennamo, lyates17
-  - **Assignees**: lynnt20
-- PR #758: Bump versioning for production patch release
-  - **Description**:
-  - **Labels**:
-  - **Reviewers**:
-  - **Assignees**:
+
