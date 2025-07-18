@@ -96,6 +96,25 @@ Send/post release notes (currently email/slack with changes) and let SBND and IC
 
 ## Especially managed packages:<a name="especialpackages"></a>
 
+### osclib
+[osclib](https://github.com/cafana/OscLib) is an external package that we host on the SBN OSG. The standard `pullProducts` based approach isn't immediately applicable here - instead, here is a simple way to grab tagged versions and upload them.
+1. Login to the NOvA buildmaster, and go to [Nova/job/external/job/osclib_collect](https://buildmaster.fnal.gov/buildmaster/view/Nova/job/external/job/osclib_collect/). Each build is a tag (match dates with tags on Github). Take note of the build number (e.g. osclib v00.27 was build 85)
+2. Log on to `cvmfssbn@oasiscfs.fnal.gov`
+3. Fetch the build artifacts (e.g. `wget https://buildmaster.fnal.gov/buildmaster/view/Nova/job/external/job/osclib_collect/85/artifact/*zip*/archive.zip`)
+4. Unzip the archive and tar it into a suitable `.tar` file: `unzip archive.zip && tar -cf osclib_00.27.tar -C archive .`
+5. Let CVMFS ingest the tarball: _This will automatically start a transaction, copy the tarball contents to the specified location, and publish changes with an automatic tag. Take care!_ Also see Section 4 of [this CVMFS tutorial](https://cvmfs-contrib.github.io/cvmfs-tutorial-2021/04_publishing/).
+   
+   For example, if `archive` contains `v00.27/` and `v00.27.version`, and you want the contents to go to `/cvmfs/sbn.opensciencegrid.org/products/sbn/osclib/`, the correct command is:
+```
+cvmfs_server ingest -t osclib_00.27.tar -b products/sbn/osclib sbn.opensciencegrid.org
+```
+
+6. Shuffle tags: It's generally better to have a meaningful tag name. First make a new tag (don't worry about specifying revision numbers, the current TRUNK revision will be used so you're good) and then remove the auto-generated one:
+```
+cvmfs_server tag -a osclib-v00.27 -m "Added osclib v00.27" sbn.opensciencegrid.org
+cvmfs_server tag -r generic-2025-07-18T01:05:18Z sbn.opensciencegrid.org
+```
+
 ### submodules (e.g. SUPERA)
 After merging the sbncode PR, submodule tracking neeeds to be updated:
 
