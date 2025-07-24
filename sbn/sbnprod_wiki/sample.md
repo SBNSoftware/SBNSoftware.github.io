@@ -144,83 +144,16 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
 | --- | --- | --- | --- | caf | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_flat_caf_sbnd |
-| --- | --- | --- | --- | --- | --- |
-| BNB + Cosmics GiBUU | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_gibuu_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_flat_caf_sbnd |
-| BNB + Cosmics GENIE Recomb (-3,-3) | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb-3-3_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb-3-3_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb-3-3_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb-3-3_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb-3-3_flat_caf_sbnd |
-| BNB + Cosmics GENIE Recomb (3,3) | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb33_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb33_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb33_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb33_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb33_flat_caf_sbnd |
-| BNB + Cosmics GENIE Diff (1,0) | MC2023B | v09_75_03_03 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff-10_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff-10_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff-10_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff-10_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff-10_caf_flat_caf_sbnd |
-| BNB + Cosmics GENIE Diff (1,0) | MC2023B | v09_75_03_03 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff10_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff10_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff10_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff10_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_diff10_caf_flat_caf_sbnd |
-| BNB + Cosmics GENIE Recomb (0,1) | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb01_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb01_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb01_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb01_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb01_caf_flat_caf_sbnd |
-| BNB + Cosmics GENIE Recomb (1,0) | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb10_scrub_g4_wcsim_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb10_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb10_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb10_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_recomb10_caf_flat_caf_sbnd |
 | BNB + Cosmics GENIE CV | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_wcsim_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
 | --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_flat_caf_sbnd |
-| FullOsc + Cosmics | MC2023A | v09_75_01 | 99250 | reco1 | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | 63750 | reco2 | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_fullosc_spill_gsimple-configh-v1_tpc_reco2_flat_caf_sbnd |
-| Intrinsic NuE + Cosmics | MC2023A | v09_75_01 | 100050 | reco1 | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_gen_g4_detsim_reco1_sbn | 
-| --- | --- | --- | 99600 | reco2 | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_reco2_flat_caf_sbnd |
-| Intime Cosmics | MC2023A | v09_75_01 | 112493 | reco1 | official_MCP2023A_prodcorsika_proton_intime_filter_sce_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | 112554 | reco2 | official_MCP2023A_prodcorsika_proton_intime_filter_sce_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023A_prodcorsika_proton_intime_filter_sce_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023A_prodcorsika_proton_intime_filter_sce_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023A_prodcorsika_proton_intime_filter_sce_reco2_flat_caf_sbnd |
-| BNB + Cosmics | MC2023Av | v09_75_02 | 199184 | reco1 | official_MCP2023Av2_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | 189149 | reco2 | official_MCP2023Av2_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2023Av2_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2023Av2_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2023Av2_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_flat_caf_sbnd |
-| --- | --- | --- | --- | --- | --- |
-| BNB nu+cosmics | MC2022A | v09_37_02_04 | 3500000 | reco1 | official_MCP2022A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2022A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2022A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2022A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_concat_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2022A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_concat_flat_caf_sbnd |
-| NS-CRT crossing muon triggers, raw | MC2022A | v09_37_02_04 | 10000 | reco1 | official_MCP2022A_prodcorsika_cosmics_proton_frontbackcrt_mu_filter_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2022A_prodcorsika_cosmics_proton_frontbackcrt_mu_filter_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2022A_prodcorsika_cosmics_proton_frontbackcrt_mu_filter_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2022A_prodcorsika_cosmics_proton_frontbackcrt_mu_filter_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2022A_prodcorsika_cosmics_proton_frontbackcrt_mu_filter_reco2_flat_caf_sbnd |
-| EW-CRT crossing muon triggers, raw | MC2022A | v09_37_02_04 | 10000 | reco1 | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | reco2 | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2022A_prodcorsika_cosmics_proton_eastwestcrt_mu_filter_reco2_flat_caf_sbnd |
+| BNB + Cosmics GiBUU | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_gibuu_g4_wcsim_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | reco2 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_reco2_sbnd |
+| --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_flat_caf_sbnd |
 
 ### ICARUS MC
 --------------------------
