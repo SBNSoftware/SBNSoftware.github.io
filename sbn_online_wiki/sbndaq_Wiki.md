@@ -29,6 +29,7 @@ Database instructions
 Workshops
 ---------
 * [DAQ workshops](DAQworkshops.md)
+* [SBND DAQ Expert Page](SBND_DAQ_Expert.md)
 
 Troubleshooting
 ----------------------------------------------
@@ -41,7 +42,8 @@ Useful Links
 * git info: [Github guides](https://guides.github.com/)
 * [Older instructions on Github Migration](GithubMigration.md)
 * [Run CAENdump](CAENdump_setup.md)
-
+* [SBND DAQ Expert Wiki](https://cdcvs.fnal.gov/redmine/projects/sbnd/wiki/Daqexpert)
+* [Abbey's SBND DAQ Expert Notes](https://abbey.gitbook.io/abbeys-sbnd-daq-expert-notes)
 
 
 Contributing to this wiki
