@@ -129,6 +129,7 @@ This section displays a list of the variables in the database, as well as their 
 | reconstruc_channel | bool | Whether the channel is used for reconstruction | N/A |
 | cosmic_timing_correction | real | Timing correction derived from cosmic muon calibration | ns |
 | spe_amp | real | Mean amplitude of SPE | ADC |
+| spe_amp_std | real | Std of the SPE amplitude | ADC |
 | gauss_wc | real | WC parameter for Gauss noise filter | GHz |
 | gauss_w_wc_power | real | Power parameter for Gauss noise filter | N/A | 
 | ophit_adc_deco_threshold | int | ADC threshold for selecting ophits on deconvolved signal | N/A | 
