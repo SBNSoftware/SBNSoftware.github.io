@@ -12,7 +12,7 @@ The Online Data Management:
 - creates metadata for files that will later be processed by the offline 
 - transfers those files off of the DAQ cluster.
 The Online Data Management script are in the following repository:
-https://github.com/SBNSoftware/sbndaq-xporter
+[https://github.com/SBNSoftware/sbndaq-xporter](https://github.com/SBNSoftware/sbndaq-xporter)
 
 ### Flow of fully-built events in DAQ
 
@@ -21,22 +21,21 @@ https://github.com/SBNSoftware/sbndaq-xporter
 About Event Builders:
 - Output modules is a specialized RootOutput module that clears disk cache --> improve write performance
 - CompressionLevel: 501 → LZ4, compression level 1
-  - Reduces file size factor of ~3-4; final size ~150 MB per event
-- 50 events per file → 7.6 GB files
+  - Reduces file size factor of ~3-4; final size ~82 MB per event (with TPC compression)
+- 50 events per file → 4.1 GB files
   - In the 1-10 GB range preferred for tape storage 
 - Number and location of EventBuilders specified in `boot.txt` configuration file
 - EventBuilders get events ‘round-robin → if n EventBuilders, event j goes to (j%n )th EventBuilder
 - Each icarus-evb server has 23 TB of RAID-backed disk
-  - Across 6 servers, that’s enough for over 900K events, or ~250 hours of data at 1 Hz trigger rate 
 
 ### File names
 For example:
-data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
-- dl --> Data Logger
-- fstrmOffBeamBNBMINBIAS --> file stream name
-- run9093 --> run number
-- 160 --> nth file from this EVB for this run
-- 20221110T113956 --> file open timestamp
+data_run13474_EventBuilder9_art9_4_fstrmOffBeamMINBIASCALIB_20250816T012911.root, where:
+- run13474 --> run number
+- EventBuilder9_art9 --> application name
+- 4 --> nth file from this EVB for this run
+- fstrmOffBeamMINBIASCALIB --> file stream name
+- 20250816T012911 --> file open timestamp
 
 ### What happens to files
 - EventBuilder writes file to /data/daq area
@@ -53,13 +52,10 @@ data_dl24_fstrmOffBeamBNBMINBIAS_run9093_160_20221110T113956.root, where:
 
 
 ## Xporter
-Repository:
-https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
+Repository: [https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter](https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter)
 
 - There is a cron job [xporter_crontab.ctab](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/xporter_crontab.ctab) that runs the xporter process [runXporter.sh](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runXporter.sh). That cron job starts a new one job every minute.
 - The job should check to see if there is a lock file to see if another one is running. If so, it should say so in the log file, and exit. There are actually two checks for this: one in the runXporter.sh script directly run by cron, and another in the python code itself. Which means ... you can get 'in progress/do not run' messages in the log file while there still is an xporter process running. That's by design.
-  - Perhaps it's not wise to have two processes writing to the same log file?
-- The ongoing xporter process will drift in and out of D state as it runs. I think this is normal. I think that one should not assume if you see the process in D state that it is dead.
 - Xporter needs to communicate with both UconDB DB (postgres) and MongoDB to run
 - What Xporter does:
   - First moves the files
@@ -87,9 +83,9 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
   
 ## File Transfer System
 
-- Link: https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information
+- Link: [https://cdcvs.fnal.gov/redmine/projects/sam/wiki/File_Transfer_Service_Information](https://cdcvs.fnal.gov/redmine/projects/filetransferservice/wiki)
 - FTS is setup to look for files + metadata file in a “dropbox”, and then transfer them according to rules in configuration files. [Configs for ICARUS](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/FTS_config/icarus-evb_fts_config.ini)
-- It runs as a daemon → don’t need to put in crontab
+- FTS is old, and can not be run on AL9 without significant complications, if at all. To preserve the application for continued use, Fermilab provides prebuilt FTS container image to work with Podman.
 - FTS_config has setup/start/stop/restart [scripts](https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/FTS_config)
 - Run as icarusraw user
 - Linked to offline production certificates
@@ -100,7 +96,7 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
     - FTS will do this check, but sometimes lookup to SAM DB can be particularly slow
     - An additional script [runManualFTSFileCleanup.sh](https://github.com/SBNSoftware/sbndaq-xporter/blob/develop/Xporter/runManualFTSFileCleanup.sh) runs in icarus crontab twice a day to try to do this faster. This script can also be called with an option `ManualFTSFileCleanup.py ONLINE`, which will make it delete files which are copied to dCache, without requirement of them to be copied to the tape. This is to be used only when the local disks are overfilling during high data rate tests.
  - Monitoring page:
-   https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
+   [https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb06&var-instance=icarus-fts-icarus-evb12](https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb06&var-instance=icarus-fts-icarus-evb12)
    - Files declared → declared to SAM (not yet transferred)
    - Data transferred → data FTS knows it moved
    - In progress will show new, pending (for transfer), waiting for tape (what it sounds like)
@@ -114,8 +110,8 @@ https://github.com/SBNSoftware/sbndaq-xporter/tree/develop/Xporter
 - Usually we notice problems if /data starts getting full
   - Check if Xporter or FTS logs have errors. For example:
     -  Xporter → usually can’t make metadata, e.g. can’t connect to RunHistory DB or weird file name
-    -  FTS → usually has problem with metadata or CRL certificates need refresh: metadata keys and some values, like data_tier and data_stream, must be registered in SAM → talk to offline production! For certificates: systemctl status fetch-crl-cron ... if dead,needs restart (as root). Can also run by hand: fetch-crl
-    -  if you need to restart the FTS service, run the following script: ~icarus/FileTransfer/sbndaq-xporter/FTS_config/restart_fts.sh on one of the eventbuilder machines. This should restart the FTS system. 
+    -  FTS → usually has problem with metadata or CRL certificates need refresh: metadata keys and some values, like data_tier and data_stream, must be registered in SAM → talk to offline production! For certificates: systemctl status fetch-crl-cron ... if dead, needs restart (as root). Can also run by hand: fetch-crl
+    -  if you need to restart the FTS service, run the following script: `~icarus/FileTransfer/sbndaq-xporter/FTS_config/restart_fts.sh` on one of the eventbuilder machines. This should restart the FTS system. 
    -  Talk to offline!
       -  Maybe some massive problem with tape ... if files don’t get locations on tape, then they won’t be removed from online cluster
 
@@ -143,14 +139,14 @@ samweb -e icarus retire-file <filename>
 ## Monitoring
 ### grafana
 The following page provides overview of FTS from all Event Builder Machines:
-https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-30d&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb05&var-instance=icarus-fts-icarus-evb06
+[https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb06&var-instance=icarus-fts-icarus-evb12](https://fifemon.fnal.gov/monitor/d/000000032/fts?orgId=1&from=now-12h&to=now&refresh=5m&var-experiment=icarus&var-instance=icarus-fts-icarus-evb01&var-instance=icarus-fts-icarus-evb02&var-instance=icarus-fts-icarus-evb03&var-instance=icarus-fts-icarus-evb04&var-instance=icarus-fts-icarus-evb06&var-instance=icarus-fts-icarus-evb12)
 
 ### FTS status
 Tunnel required:
 
-```ssh -KL 8787:localhost:8787 icarus@icarus-evb01.fnal.gov -J icarus@icarus-gateway01.fnal.gov```
+```ssh -KL 8787:localhost:8787 icarus@icarus-evb12.fnal.gov -J icarus@icarus-gateway04.fnal.gov```
 
-http://localhost:8787/fts/status
+[http://localhost:8787/fts/status](http://localhost:8787/fts/status)
 
 Provides more details for a single EVB, in particular status of individual files. It also allows to attempt to clear errors with "retry" buttons.
 
@@ -158,7 +154,7 @@ Provides more details for a single EVB, in particular status of individual files
 
 Requires VPN, or web browser certificate
 
-https://fndca.fnal.gov:22880/pools/list/PoolManager
+[https://fndca.fnal.gov:22880/pools/list/PoolManager](https://fndca.fnal.gov:22880/pools/list/PoolManager)
 
 Provides information on status of the usage of the IcarusReadWritePools space.
 
