@@ -174,7 +174,23 @@ icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_Sys_VAR0_null_
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| NuMI neutrino + cosmics | MC2025A | v09_89_01_02p02 | 200k | stage1 | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_stage1 |
+| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_calibtuple |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_flatcaf |
+| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_larcv |
+| --- | --- | --- | --- | --- | --- |
+| BNB neutrino + cosmics (Respun) | MC2024A | v09_89_01_02p01 | 200k | stage1 | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_stage1 |
+| --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_calibtuple |
+| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_flatcaf |
+| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_larcv |
+| --- | --- | --- | --- | --- | --- |
 | BNB neutrino + cosmics | MC2024A | v09_89_01_01 | 200k | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CV_2ndV_calibtuple|
+| --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CV_2ndV_caf|
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CV_2ndV_flatcaf|
+| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CV_2ndV_larcv|
+| --- | --- | --- | --- | --- | --- |
 | BNB nu only sample (CV) | MC2024A | v09_89_01_01 | 203323 | stage1/reco2 | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_calibtuple |
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01_2024A_ICARUS_MC_CV_Sys_2024A_MC_CV_Sys_larcv |
