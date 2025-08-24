@@ -520,6 +520,8 @@ Data SBN Production Samples
 | --- | --- | --- | caf | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_blind, Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_unblid, Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_prescaled |
 | --- | --- | --- | flatcaf |  Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_blind, Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_unblid, Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_larcv |
+|Run2 reprocessed BNB majority recaf |  v09_89_02_01| --- | caf | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_blind, Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_unblind, Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_prescaled |
+| --- | --- | --- | flatcaf | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_blind, Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_unblind, Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_prescaled |
 ### Notes on samples ###
 * Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
 * Run 1 batch 2 is the processing of run_number > 7621 and run_number < 8460 (before the update to the new DAQ configuration)
