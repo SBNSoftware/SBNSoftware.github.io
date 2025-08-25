@@ -531,6 +531,13 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf blind| Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_blind|
 | --- | --- | --- | flatcaf unblind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_unblind|
 | --- | --- | --- | flatcaf prescaled | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_prescaled |
+| --- | --- | --- | --- | --- | 
+| Run2 reprocessed NuMI majority | v09_89_01_02p02 | --- | stage1 | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_stage1 |
+| --- | --- | --- | caf blind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_blind |
+| --- | --- | --- | caf unblind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_unblind |
+| --- | --- | --- | caf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_prescaled |
+
+
 
 
 ### Notes on samples ###
