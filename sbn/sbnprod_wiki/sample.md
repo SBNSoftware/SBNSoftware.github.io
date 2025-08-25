@@ -536,6 +536,22 @@ Data SBN Production Samples
 | --- | --- | --- | caf blind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_blind |
 | --- | --- | --- | caf unblind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_unblind |
 | --- | --- | --- | caf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_prescaled |
+| --- | --- | --- | flatcaf blind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_flatcaf_blind |
+| --- | --- | --- | flatcaf unblind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_flatcaf_unblind |
+| --- | --- | --- | flatcaf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_flatcaf_prescaled |
+| --- | --- | --- | larcv | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_larcv |
+| --- | --- | --- | --- | --- | 
+| Run2 reprocessed OFFBeam NuMI majority | v09_89_01_02p02 | --- | stage1 | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_stage1 |
+| --- | --- | --- | caf blind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_caf_blind |
+| --- | --- | --- | caf unblind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_caf_unblind |
+| --- | --- | --- | caf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_caf_prescaled |
+| --- | --- | --- | flatcaf blind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_blind |
+| --- | --- | --- | flatcaf unblind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_unblind |
+| --- | --- | --- | flatcaf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_prescaled |
+| --- | --- | --- | larcv | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_larcv |
+
+
+
 
 
 
