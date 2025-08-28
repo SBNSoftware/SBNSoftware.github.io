@@ -239,7 +239,8 @@ BNB simulation in reverse horn current:
 ```bash
 /pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/rhc/
 ```
-First production (20250707-14:46) is configuration `a`.
+First production (20250707-14:46) is configuration `a`. This has a bug, do NOT use.
+Second production (20250808-16:47) is configuration `b`.
 
 #### Beam-Dump
 BNB simulation in beam dump mode:
@@ -247,5 +248,6 @@ BNB simulation in beam dump mode:
 /pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/beamdump/
 ```
 
-First production (july 2025) is configuration `a`.
+First production (july 2025) is configuration `a`. This has a bug, do NOT use.
+Second production (20250808-16:48) is configuration `b`.
 
