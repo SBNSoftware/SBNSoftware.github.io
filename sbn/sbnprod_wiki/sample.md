@@ -461,7 +461,7 @@ Data SBN Production Samples
 | --- | --- | --- | calib tuple | data_MCP2025B_DNNROI_bnblight_v10_09_00_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_DNNROI_bnblight_v10_09_00_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_DNNROI_bnblight_v10_09_00_flatcaf_sbnd |
-| Spring25 - Crossing Muon afterlight trigger | v10_06_03 | ~30k | raw | sbnd_CrossingMuon_FullRun1_AfterLight_raw |
+| Crossing Muon afterlight trigger | v10_06_03 | ~30k | raw | sbnd_CrossingMuon_FullRun1_AfterLight_raw |
 | --- | --- | --- | decode | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_larcvreco1_sbnd |
