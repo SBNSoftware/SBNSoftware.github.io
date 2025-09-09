@@ -67,6 +67,10 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| DNN ROI + low-trad threshold (100 events p/ file pre-filter) | MC2025B | v10_09_00 | 30k | reco1 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
+| --- | --- | --- | --- | larcv | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd  |
+| --- | --- | --- | --- | reco2 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd  |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | Spring25 - BNB + Cosmics 1e20 POT (100 events p/ file pre-filter) | MC2025B | v10_06_00_02 | ~6.8M | reco1 | mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd  |
 | --- | --- | --- | --- | reco2 | mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
@@ -85,6 +89,10 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_04 | --- | reco2 | mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - Intime Cosmics 5e18 POT (500 events p/ file pre-filter) | MC2025B | v10_06_00 | ~290k | reco1 | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
@@ -446,14 +454,33 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
+| DNN ROI + low-trad threshold | v10_06_00 | ~30k | decode | data_MCP2025B_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_decode_sbnd |
+| --- | v10_09_00 | --- | reco1 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_DNNROI_bnblight_v10_09_00_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_DNNROI_bnblight_v10_09_00_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_DNNROI_bnblight_v10_09_00_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_DNNROI_bnblight_v10_09_00_flatcaf_sbnd |
+| Spring25 - Crossing Muon afterlight trigger | v10_06_03 | ~30k | raw | sbnd_CrossingMuon_FullRun1_AfterLight_raw |
+| --- | --- | --- | decode | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_flatcaf_sbnd |
 | Spring25 - BNB 1e20 POT | v10_06_00_02 | ~1.7M | raw | SBND_DATA_1e20_Raw_May2025 |
 | --- | --- | --- | decode | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_larcvreco1_sbnd |
 | --- | --- | --- | reco2 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_reco2_sbnd |
 | --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_caf_sbnd|
+| --- | --- | --- | caf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_flatcaf_sbnd |
+| --- | v10_06_00_05 | --- | reco2 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_flatcaf_sbnd |
 | Spring25 - Intime Cosmics | v10_06_00 | ~k | raw | SBND_DATA_InTime-Cosmic_Raw_Snapshot-20250527 |
 | --- | --- | --- | decode | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_reco1_sbnd |
@@ -462,6 +489,10 @@ Data SBN Production Samples
 | --- | --- | --- | calib tuple | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_02_flatcaf_sbnd |
+| --- | v10_06_00_05 | --- | reco2 | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_05_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_05_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_05_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_InTimeCosmics_offbeamlight_v10_06_00_05_flatcaf_sbnd |
 | Spring25 - fixed DevSample (5e18 POT)| v10_06_00 | ~90k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | data_MCP2025B_DevSample_bnblight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_DevSample_bnblight_v10_06_00_reco1_sbnd |
@@ -478,6 +509,10 @@ Data SBN Production Samples
 | --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_02_flatcaf_sbnd |
+| --- | v10_06_00_04 | --- | reco2 | data_MCP2025B_04_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_04_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_04_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_04_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_04_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_04_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_04_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_04_flatcaf_sbnd |
 | Spring25 validation - DevSample | v10_04_06_01 | 90k | raw | SBND_DATA_DevSample_Raw_Mar2025 |
 | --- | --- | --- | decode | MCP2025Av3_DevSample_bnblight_v10_04_06_01_decode |
 | --- | --- | --- | reco1 | MCP2025Av3_DevSample_bnblight_v10_04_06_01_reco1 |
@@ -549,12 +584,6 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf unblind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_unblind |
 | --- | --- | --- | flatcaf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_larcv |
-
-
-
-
-
-
 
 ### Notes on samples ###
 * Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
