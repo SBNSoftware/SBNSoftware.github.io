@@ -126,14 +126,13 @@ This section displays a list of the variables in the database, as well as their 
 | caen_digitizer | integer | CAEN digitizer to which the PMT is connected | N/A | 
 | caen_digitizer_channel | integer | CAEN digitizer channel to which the PMT is connected | N/A |
 | total_transit_time | real | Total transit time | ns |
-| reconstruc_channel | bool | Whether the channel is used for reconstruction | N/A |
+| reconstruct_channel | bool | Whether the channel is used for reconstruction | N/A |
 | cosmic_timing_correction | real | Timing correction derived from cosmic muon calibration | ns |
 | spe_amp | real | Mean amplitude of SPE | ADC |
 | spe_amp_std | real | Std of the SPE amplitude | ADC |
-| gauss_wc | real | WC parameter for Gauss noise filter | GHz |
 | gauss_w_wc_power | real | Power parameter for Gauss noise filter | N/A | 
-| ophit_adc_deco_threshold | int | ADC threshold for selecting ophits on deconvolved signal | N/A | 
-| ser_vec_0 → ser_vec_499 | real | ADC count per bin (550 in total) for the Single Electron Response (SER) pulse (More info: [DocDB 38059](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38059)) | ADC |
+| gauss_wc | real | WC parameter for Gauss noise filter | GHz |
+| ser_vec_0 → ser_vec_550 | real | ADC count per bin (550 in total) for the Single Electron Response (SER) pulse (More info: [DocDB 38059](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=38059)) | ADC |
 
 
 ### What happens when a variable does not exist in an older version of the database?
