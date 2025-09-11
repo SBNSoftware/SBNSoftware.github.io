@@ -63,6 +63,10 @@ See: [https://explainshell.com/explain?cmd=ssh+-X](https://explainshell.com/expl
 
 ##### Local Forwarding
 
+#### Storage/Working Areas and Best Practices
+
+<img width="578" height="266" alt="image" src="https://github.com/user-attachments/assets/35e356c6-7a22-45fc-9757-363348ed5b3d" />
+
 
 
 #### VNC
