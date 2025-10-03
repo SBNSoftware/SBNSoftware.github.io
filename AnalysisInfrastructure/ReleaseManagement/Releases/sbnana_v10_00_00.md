@@ -7,7 +7,7 @@ toc: true
 sbnana v10_00_00 Release Notes
 =======================================================================================
 
-[List of sbncode releases](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/AnalysisInfrastructure/Releases)
+[List of sbncode releases](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/AnalysisInfrastructure/ReleaseManagement/Releases)
 
 Date
 ---------------------------------------------------

@@ -22,6 +22,11 @@ These are the `sbndcode` releases tagged until now:
   
   | Version                     |      Notes                                  |      Detailed Notes                          
   |-----------------------------|---------------------------------------------|-------------------------------------------- 
+  |`v10_10_03_02`.              |    Major release                            |    [Release Notes](ReleaseNotes10100302.md)
+  |`v10_10_03_01`.              |    Major release                            |    [Release Notes](ReleaseNotes10100301.md)
+  |`v10_10_03`.                 |    Major release                            |    [Release Notes](ReleaseNotes101003.md)
+  |`v10_10_02`.                 |    Major release                            |    [Release Notes](ReleaseNotes101002.md)
+  |`v10_06_00_05`.              |    Patch release                            |    [Release Notes](ReleaseNotes10060005.html)
   |`v10_09_00`.                 |    Major release                            |    [Release Notes](ReleaseNotes100900.html)
   |`v10_06_00_04`.              |    Patch release                            |    [Release Notes](ReleaseNotes10060004.html)
   |`v10_06_03`.                 |    Major release                            |    [Release Notes](ReleaseNotes100603.html)
