@@ -63,6 +63,24 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| Fall25 Validation - Intime - DNN (200 events p/ file pre-filter) | MC2025B | v10_10_03_02 | ~80k | reco1 | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd |
+| --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
+| --- | --- | --- | --- | reco2 | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
+| Fall25 Validation - BNB+Cosmics - DNN (200 events p/ file pre-filter) | MC2025B | v10_10_03_02 | ~150k | reco1 | mc_MCP2025_FallValidation_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd_150k|
+| --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd_150k |
+| --- | --- | --- | --- | reco2 | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
+| --- | --- | --- | --- | caf | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd_150k |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd_150k |
+| Fall25 Validation - BNB+Cosmics (200 events p/ file pre-filter) | MC2025B | v10_10_03_02 | ~150k | reco1 | mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_reco1_sbnd_150k |
+| --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_reco1_larcv_sbnd_150k |
+| --- | --- | --- | --- | reco2 | mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
+| --- | --- | --- | --- | caf | mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd_150k |
+| --- | --- | --- | --- | flat caf | mc_MCP2025_FallValidation_trad_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd_150k |
 | Spring25 - Low Energy 1-100MeV (200 events p/ file pre-filter) | MC2025B | v10_06_00_05 | ~1.8M | reco1 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_gen_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_reco2_sbnd |
@@ -446,6 +464,32 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |
 | --- | --- | --- | --- | --- |
+| Fall25 Validation - FullRun1 - RollingDev - bnblight  | v10_10_03_01 | ~75k | decode | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco1_sbnd | 
+| --- | --- | --- | larcv | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_caf_sbnd |
+| --- | --- | --- | flat caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_flatcaf_sbnd |
+| Fall25 Validation - FullRun1 - RollingDev - bnblight - DNN  | v10_10_03_02 | ~75k | decode | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_reco1_sbnd | 
+| --- | --- | --- | larcv | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_caf_sbnd |
+| --- | --- | --- | flat caf | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_flatcaf_sbnd |
+| Fall25 Validation - FullRun1 - RollingDev - offbeamlight - DNN  | v10_10_03_02 | ~40k | decode | data_MCP2025B_FullRun1_RollingDev_offbeamlight_offbeamlight_v10_10_03_02_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_reco1_sbnd | 
+| --- | --- | --- | larcv | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_caf_sbnd |
+| --- | --- | --- | flat caf | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_flatcaf_sbnd |
+| DNN ROI + low-trad threshold | v10_06_00 | ~30k | decode | data_MCP2025B_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_decode_sbnd |
+| --- | v10_09_00 | --- | reco1 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_DNNROI_bnblight_v10_09_00_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_DNNROI_bnblight_v10_09_00_histreco2_sbnd |
 | DNN ROI + low-trad threshold | v10_06_00 | ~30k | decode | data_MCP2025B_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_decode_sbnd |
 | --- | v10_09_00 | --- | reco1 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025B_DNNROI_bnblight_v10_09_00_larcvreco1_sbnd |
