@@ -467,10 +467,10 @@ Data SBN Production Samples
 | Fall25 Validation - FullRun1 - RollingDev - bnblight  | v10_10_03_01 | ~75k | decode | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco1_sbnd | 
 | --- | --- | --- | larcv | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco2_sbnd |
-| --- | --- | --- | calib tuple | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_caf_sbnd |
-| --- | --- | --- | flat caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_flatcaf_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_caf_sbnd |
+| --- | --- | --- | flat caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_flatcaf_sbnd |
 | Fall25 Validation - FullRun1 - RollingDev - bnblight - DNN  | v10_10_03_02 | ~75k | decode | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_reco1_sbnd | 
 | --- | --- | --- | larcv | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_larcvreco1_sbnd |
