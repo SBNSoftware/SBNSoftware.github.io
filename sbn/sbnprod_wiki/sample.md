@@ -70,7 +70,7 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | caf | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Fall25 Validation - BNB+Cosmics - DNN (200 events p/ file pre-filter) | MC2025B | v10_10_03_02 | ~150k | reco1 | mc_MCP2025_FallValidation_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd_150k|
-| --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd_150k |
+| --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd_150k |
 | --- | --- | --- | --- | reco2 | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd_150k |
 | --- | --- | --- | --- | caf | mc_MCP2025_FallValidation_DNN_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd_150k |
