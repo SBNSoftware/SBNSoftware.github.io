@@ -149,10 +149,10 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 |   A6    |      $1F      |      $1D     |   0   |     ---      |
 |   A7    |      $1F      |      $1D     |   0   |     ---      |
 |   A8    |      $1F      |      $1D     |   0   |     ---      |
-|   A9    |      $1D      |      $1D     |32520us|     PTB      |
-|   A10   |      $1D      |      $1D     |32520us|     ---      |
-|   A11   |      $1D      |      $1D     |32520us|     ---      |
-|   A12   |      $1D      |      $1D     |32520us|     ---      |
+|   A9    |      $1D      |      $1D     |30700us|     PTB      |
+|   A10   |      $1D      |      $1D     |30700us|     ---      |
+|   A11   |      $1D      |      $1D     |30700us|     ---      |
+|   A12   |      $1D      |      $1D     |30700us|     ---      |
 |   A13   |      $1D      |      $1D     |   0   |     ---      |
 |   A14   |      $1D      |      $1D     |   0   |     ---      |
 |   A15   |      BES      |      $1D     |   0   |     ---      |
@@ -165,10 +165,10 @@ All of Channels B9 through B16 function in this manner with the possibility for 
 |   B6    |      $74      |      $74     |   0   |     ---      |
 |   B7    |      $74      |      $74     |   0   |     ---      |
 |   B8    |      $74      |      $74     |   0   |     ---      |
-|   B9    |      $1D      |      $1D     |32520us|     ---      |
-|   B10   |      $1D      |      $1D     |32520us|     ---      |
-|   B11   |      $1D      |      $1D     |32520us|     ---      |
-|   B12   |      $1D      |      $1D     |32520us|     ---      |
+|   B9    |      $1D      |      $1D     |30700us|     ---      |
+|   B10   |      $1D      |      $1D     |30700us|     ---      |
+|   B11   |      $1D      |      $1D     |30700us|     ---      |
+|   B12   |      $1D      |      $1D     |30700us|     ---      |
 |   B13   |      $1D      |      $1D     |   0   |     ---      |
 |   B14   |      $1D      |      $1D     |   0   |     ---      |
 |   B15   |      $1D      |      $1D     |   0   |     ---      |
