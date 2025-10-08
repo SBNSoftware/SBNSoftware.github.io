@@ -7,6 +7,13 @@ title: Multi-Function Timing Unit (MFTU)
 
 The MFTU is the latest interface between the ACnet timing systems (TCLK or MIBS) and users of their timing and control signals.   The MFTU replaces the previous Internet Rack Monitor (IRM).   The unit decodes the incoming TCLK (or MIBS) event stream and converts them into simple TTL digital outputs with a programmable delays and widths.  The unit can also accept fast asynchronous signals and use the TCLK events to gate the fast signals in order to select a subset of those signals.  For example, if one wants only BES booster extraction signals that are going to BNB, you can gate the BES with $1D TCLK events.  Before configuring the MFTU, be sure to read the docementation at <https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=3578> (MFTU Documentation). Related documenation can be found at <https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=3701> (Presenation by the Designer) and <https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=19258> (Fiber to TTL Converter).
 
+
+## Access to ACNET at SBND:
+
+`ssh sbnd-gateway03 -l sbnd`
+`cd ~/acnet`
+`source launche_acnet_console.sh`
+
 ## Configuring the MFTU
 
 The MFTU configuration is performed on page E35 of an ACnet console, SBN-ND tab, pages 3 and 4.   To open a console, ssh to either outland.fnal.gov or outback.fnal.gov ACnet gateway nodes and type "cnsrun".    If you are off-site without a good internet connection, we recommend launching the console on a VNC session.  Note that VNC sessions are not allowed on outland nor outback, you will need another VNC server host.  After typing "cnsrun" in a moment several new windows will appear, like this one below.
