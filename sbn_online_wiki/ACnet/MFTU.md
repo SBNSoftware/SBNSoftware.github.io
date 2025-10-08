@@ -11,8 +11,13 @@ The MFTU is the latest interface between the ACnet timing systems (TCLK or MIBS)
 ## Access to ACNET at SBND:
 
 `ssh sbnd-gateway03 -l sbnd`
+
 `cd ~/acnet`
+
 `source launche_acnet_console.sh`
+
+The launch script automatically ssh to outland.fnal.gov and open up the ACNET console.
+sbnd-gateway03 has the neccessary keytab to enable access. If anything changes, for example, sbnd-gateway03 is replaced with a new machine, need to contact Accelerator Divisition for an updated keytab and launch script. 
 
 ## Configuring the MFTU
 
