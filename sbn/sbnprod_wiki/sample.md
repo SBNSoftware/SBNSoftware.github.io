@@ -592,6 +592,11 @@ Data SBN Production Samples
 
 
 ### ICARUS Reconstructed DATA
+
+### Notes on samples ###
+* These are Run2 reprocessed data with v09_89_xx_xx icaruscode used
+	* for BNB ν<sub>μ</sub> disappearance analysis
+	* some of the mature NuMI cross-section analyses
 --------------------------
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
