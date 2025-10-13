@@ -591,7 +591,7 @@ Data SBN Production Samples
 
 ICARUS SBN Production Samples
 ---------------------------
-**Notes:** These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
+**Notes on samples:** These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
 
 ### ICARUS SBN data production
 -----------------------------
@@ -608,7 +608,7 @@ ICARUS SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_blind |
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_larcv |
-<hr>
+
 | ICARUS Spring, Run 2 Off-Beam BNB Majority Data | v10_06_00_01p05  | --- | stage0 w PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0 |
 | --- | --- | --- | stage0 w/o PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0_daqPMT_drop |
 | --- | --- | --- | calibration tuples | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_calibtuples |
@@ -632,6 +632,9 @@ ICARUS SBN Production Samples
 
 ### ICARUS SBN MC Overlay production
 -----------------------------------
+**Notes on samples:** 
+* These are produced with v10_xx_xx_xx using ***wcdnn*** fcls. 
+* As of Oct 13th 2025, these productions are ongoing. You might notice increasing number of files in the output datasets.
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
@@ -685,7 +688,10 @@ ICARUS DATA
 | --- | --- | --- | flatcaf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_larcv |
 
-** Notes on samples: ** 
+
+### ICARUS Reconstructed DATA (Run1)
+-----------------------------------
+**Notes on samples:** 
 * Run 1 reprocessing is the reprocessing of selected runs based on the good run list created by Gray and Minerba. Please refer to this docdb for the list of runs: https://sbn-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=25407&filename=ICARUS%20Data%20Re-Processing.pdf&version=1
 * Run 1 batch 2 is the processing of run_number > 7621 and run_number < 8460 (before the update to the new DAQ configuration)
 * Run 1 batch 3 is the processing of run_number >= 8460 and run_number < 8598 (after the update to the new DAQ configuration resulting in 8 new data stream: (offbeam) BNB/NuMI Majority/MinBias)
