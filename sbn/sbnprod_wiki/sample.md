@@ -608,7 +608,7 @@ ICARUS SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_blind |
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_larcv |
-| --- | --- | --- | --- | --- | 
+<hr>
 | ICARUS Spring, Run 2 Off-Beam BNB Majority Data | v10_06_00_01p05  | --- | stage0 w PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0 |
 | --- | --- | --- | stage0 w/o PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0_daqPMT_drop |
 | --- | --- | --- | calibration tuples | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_calibtuples |
