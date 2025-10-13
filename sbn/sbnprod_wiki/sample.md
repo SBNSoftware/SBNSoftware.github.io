@@ -593,7 +593,8 @@ Data SBN Production Samples
 
 ### ICARUS Reconstructed DATA
 --------------------------
-| **Sample Description** | release version | # Events | File type | Samweb definition |
+
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
 | Run2 reprocessed BNB majority | v09_89_01_01p03 | --- | stage1 | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_stage1 |
 | --- | --- | --- | caf blind | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_blind |
