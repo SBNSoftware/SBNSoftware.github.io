@@ -604,14 +604,12 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf unblind | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | flatcaf prescaled | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_larcv |
-<hr>
 |Run2 reprocessed BNB majority recaf |  v09_89_02_01| --- | caf blind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_blind |
 | --- | --- | --- | caf unblind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_unblind|
 | --- | --- | --- | caf prescaled | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_prescaled |
 | --- | --- | --- | flatcaf blind| Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_blind|
 | --- | --- | --- | flatcaf unblind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_unblind|
 | --- | --- | --- | flatcaf prescaled | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_flatcaf_prescaled |
-<hr>
 | Run2 reprocessed NuMI majority | v09_89_01_02p02 | --- | stage1 | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_stage1 |
 | --- | --- | --- | caf blind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_blind |
 | --- | --- | --- | caf unblind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_caf_unblind |
@@ -620,7 +618,6 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf unblind | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_flatcaf_unblind |
 | --- | --- | --- | flatcaf prescaled |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_numimajority_larcv |
-<hr>
 | Run2 reprocessed OFFBeam NuMI majority | v09_89_01_02p02 | --- | stage1 | Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_stage1 |
 | --- | --- | --- | caf blind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_caf_blind |
 | --- | --- | --- | caf unblind |  Icaruspro_2025_Run2_production_Run2reprocess_v09_89_01_02p02_offbeamnumimajority_caf_unblind |
