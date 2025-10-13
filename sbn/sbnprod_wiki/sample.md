@@ -652,8 +652,8 @@ ICARUS SBN Production Samples
 
 
 
-  ICARUS DATA
-  ---------------------
+ICARUS DATA
+---------------------
 ### ICARUS Reconstructed DATA (Run2)
 -----------------------------------
 
@@ -733,7 +733,7 @@ ICARUS SBN Production Samples
 | BNB stream | Run 1 reprocessing | v09_37_02_01 | 627484 | stage0 | IcarusProd_Run1_reprocess_BNBstream_stage0	| 
 | --- | --- | --- | 627484 | stage1 | IcarusProd_Run1_reprocess_BNBstream_stage1 |
 
-### ICARUS Compressed RAW DATA
+### ICARUS Compressed RAW DATA (Run2)
 --------------------------
 
 | Run | datastream | SAM dataset | Raw Files not in the compressed datasets |
