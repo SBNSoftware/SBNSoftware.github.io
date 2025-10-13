@@ -590,7 +590,15 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_flatcaf |
 
 **ICARUS SBN Production Samples**
-* These are produced with v10_xx_xx_xx using **wcdnn** fcls
+* These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
+
+### ICARUS SBN data production ###
+
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
+| --- | --- | --- | --- | --- | 
+|ICARUS Spring, Run 2 BNB Majority Data| v10_06_00_01p05 | --- | stage0 w PMT WF |Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_stage0 |
+| --- | --- | --- | stage0 w/o PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_stage0_daqPMT_drop |
+
 
   
 ### ICARUS Reconstructed DATA
