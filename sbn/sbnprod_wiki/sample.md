@@ -774,6 +774,20 @@ _2024 November_: A sample of central value SBND MC events were generated on Pola
 | --- | --- | --- | --- | --- |
 | BNB + Cosmics CV | v09_93_01 | 274387 | flatcaf | polaris_v09_93_01_prodoverlay_corsika_cosmics_proton_genie_rockbox_sbnd_caf_flat_caf_sbnd |
 
+
+### ICARUS RUN4 DATA
+-----------------------------
+
+| Sample Description | release version | # Events | File type | Samweb definition |
+| ICARUS Spring Run 4 BNB Majority Data | v10_06_00_01p05 | --- | stage0 | Icaruspro_2025_wcdnn_production_Run4_SBN_v10_06_00_01p05_fstrmBNBMAJORITY_stage0 |
+| --- | --- | --- | calib_ntuples | Icaruspro_2025_wcdnn_production_Run4_SBN_v10_06_00_01p05_fstrmBNBMAJORITY_calib_ntuples |
+| ICARUS Spring Run 4 BNB OffbeamMajority Data | v10_06_00_01p05 | --- | stage0 | Icaruspro_2025_wcdnn_production_Run4_SBN_v10_06_00_01p05_fstrmOffBeamBNBMAJORITY_stage0 |
+| --- | --- | --- | calib_ntuples | Icaruspro_2025_wcdnn_production_Run4_SBN_v10_06_00_01p05_fstrmOffBeamBNBMAJORITY_calib_ntuples |
+
+
+
+
+
 SBND Production Progress Report
 --------------------------
 <div style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden;">
