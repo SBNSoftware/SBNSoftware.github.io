@@ -593,7 +593,8 @@ ICARUS SBN Production Samples
 ---------------------------
 * These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
 
-### ICARUS SBN data production ###
+### ICARUS SBN data production
+-----------------------------
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
@@ -629,12 +630,10 @@ ICARUS SBN Production Samples
   ICARUS DATA
   ---------------------
 ### ICARUS Reconstructed DATA (Run2)
+-----------------------------------
 
 ### Notes on samples ###
-* These are Run2 reprocessed data with v09_89_xx_xx icaruscode used
-	* for BNB ν<sub>μ</sub> disappearance analysis
-	* some of the mature NuMI cross-section analyses
---------------------------
+* These are Run2 reprocessed data with v09_89_xx_xx icaruscode used for BNB ν<sub>μ</sub> disappearance analysis and some of the mature NuMI cross-section analyses
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
