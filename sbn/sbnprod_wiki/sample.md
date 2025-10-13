@@ -604,7 +604,6 @@ Data SBN Production Samples
 | --- | --- | --- | flatcaf unblind | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | flatcaf prescaled | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_flatcaf_prescaled |
 | --- | --- | --- | larcv | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_larcv |
-
 |Run2 reprocessed BNB majority recaf |  v09_89_02_01| --- | caf blind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_blind |
 | --- | --- | --- | caf unblind | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_unblind|
 | --- | --- | --- | caf prescaled | Icaruspro_2025_Run2_production_Reproc_Run2_v09_89_02_01_bnbmajority_caf_prescaled |
