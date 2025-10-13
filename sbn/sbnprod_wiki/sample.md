@@ -591,7 +591,7 @@ Data SBN Production Samples
 
 ICARUS SBN Production Samples
 ---------------------------
-* These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
+**Notes:** These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
 
 ### ICARUS SBN data production
 -----------------------------
@@ -608,7 +608,7 @@ ICARUS SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_blind |
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_larcv |
-
+| --- | --- | --- | --- | --- | 
 | ICARUS Spring, Run 2 Off-Beam BNB Majority Data | v10_06_00_01p05  | --- | stage0 w PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0 |
 | --- | --- | --- | stage0 w/o PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0_daqPMT_drop |
 | --- | --- | --- | calibration tuples | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_calibtuples |
@@ -644,20 +644,12 @@ ICARUS SBN Production Samples
 
 
 
-
-
-
-
-
-
-
-
 ICARUS DATA
 ---------------------
 ### ICARUS Reconstructed DATA (Run2)
 -----------------------------------
 
-** Notes on samples: **
+**Notes on samples:**
 * These are Run2 reprocessed data with v09_89_xx_xx icaruscode used for BNB ν<sub>μ</sub> disappearance analysis and some of the mature NuMI cross-section analyses
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
