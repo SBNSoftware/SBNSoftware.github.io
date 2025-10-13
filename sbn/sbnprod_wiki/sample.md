@@ -608,7 +608,6 @@ ICARUS SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_blind |
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_bnbmajority_larcv |
-
 | ICARUS Spring, Run 2 Off-Beam BNB Majority Data | v10_06_00_01p05  | --- | stage0 w PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0 |
 | --- | --- | --- | stage0 w/o PMT WF | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_stage0_daqPMT_drop |
 | --- | --- | --- | calibration tuples | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_calibtuples |
@@ -619,7 +618,6 @@ ICARUS SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_flatcaf_blind |
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_v10_06_00_01p05_offbeambnbmajority_larcv |
-
 |ICARUS Spring, Run 2 BNB Majority w Calibrated CAFs | v10_06_00_04p03 | --- | calibration tuples | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_wCalib_v10_06_00_04p03_bnbmajority_calibtuples |
 | --- | --- | --- | caf_prescaled | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_wCalib_v10_06_00_04p03_bnbmajority_caf_prescaled |
 | --- | --- | --- | caf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_wCalib_v10_06_00_04p03_bnbmajority_caf_blind |
