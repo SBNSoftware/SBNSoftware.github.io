@@ -68,7 +68,6 @@ This section displays a list of the variables in the database, as well as their 
 
 | Variable Name | Type | Description | Unit |
 | ------------- | ---- | ----------- | ---- |
-| run | integer | run number | N/A |
 | merged_run_idx | integer | index for merge runs | N/A |
 | first_run_of_merged | integer | first run of the merged runs | N/A |
 | last_run_of_merged | integer | last run of the merged runs | N/A |
