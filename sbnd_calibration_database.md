@@ -63,7 +63,8 @@ This section displays a list of the variables in the database, as well as their 
 ### tpc_elifetime_data
 - Folder description: This folder contains electron lifetime data
 - Channel number: No meaning
-- Number of rows: 1 for each run
+- Number of rows: 1 for each merged run
+    - When filling the folder, `__iov_id` should be 1000000000 + first_run_of_merged
 - Suggested table structure
 
 | Variable Name | Type | Description | Unit |
