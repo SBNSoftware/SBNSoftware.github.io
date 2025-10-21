@@ -63,7 +63,7 @@ This section displays a list of the variables in the database, as well as their 
 ### tpc_elifetime_data
 - Folder description: This folder contains electron lifetime data
 - Channel number: No meaning
-- Number of rows: 1 for each merged run index
+- Number of rows: 1 for each run
 - Suggested table structure
 
 | Variable Name | Type | Description | Unit |
