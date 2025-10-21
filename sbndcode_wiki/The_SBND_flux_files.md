@@ -91,9 +91,50 @@ files.
 
 What configuration to use?
 -----------------------------------------------------------------------------------------
-These are the latest and (at the time of writing) more accurate flux configurations to use.
-- **Small window** (used for most productions): **configK**
-- **Large window** (used for the dirt events production): **configL**
+These are the latest and  more accurate flux configurations to use.
+- **G4BNB** (used for upcoming productions): **FHC, v1.1.0**
+- **Small window** (used for previous productions): **configK**
+- **Large window** (used for the dirt/rockbox events in previous productions): **configL**
+
+
+G4BNB Configurations
+----------------------------------------------------------
+
+Flux files in `dk2nu` format are located at:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/
+```
+
+The xml configuration file is located at
+```bash
+/cvmfs/sbnd.osgstorage.org/pnfs/fnal.gov/usr/sbnd/persistent/stash/fluxFiles/bnb/G4BNB/v1.1.0/GNuMIFlux.xml
+```
+
+### FHC, v1.1.0
+BNB simulation in forward horn current:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.1.0/fhc/
+```
+First production is configuration `a`.
+
+### RHC, v1.0.0
+BNB simulation in reverse horn current:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/rhc/
+```
+First production (20250707-14:46) is configuration `a`. This has a bug, do NOT use.
+
+Second production (20250808-16:47) is configuration `b`.
+
+### Beam-Dump, v1.0.0
+BNB simulation in beam dump mode:
+```bash
+/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/beamdump/
+```
+
+First production (july 2025) is configuration `a`. This has a bug, do NOT use.
+
+Second production (20250808-16:48) is configuration `b`.
 
 
 A note about pre H configurations (_BooNEToGSimple_)
@@ -215,41 +256,4 @@ Otherwise, it uses an identical window setup to ConfigJ-v1.
 Files were produced using BooNEtoGSimple on GPVM instead of the legacy MiniBooNE machines. Kaon weight is applied with a stand alone code and does not have MiniBooNE dependency. Check [sbndcode PR #446](), sbn-docdb#33374 and sbn-docdb#??? for more details. 
 Otherwise, it uses an identical window setup to ConfigI-v1.
 
-
-G4BNB Configurations
-----------------------------------------------------------
-
-### G4BNB v1.0.0 dev
-This is the first tagged version, and is in development. It is not final.
-
-Flux files in `dk2nu` format are located at:
-```bash
-/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/
-```
-
-#### FHC
-BNB simulation in forward horn current:
-```bash
-/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/fhc/
-```
-First production (v1 plots) is configuration `a`.
-
-#### RHC
-BNB simulation in reverse horn current:
-```bash
-/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/rhc/
-```
-First production (20250707-14:46) is configuration `a`. This has a bug, do NOT use.
-
-Second production (20250808-16:47) is configuration `b`.
-
-#### Beam-Dump
-BNB simulation in beam dump mode:
-```bash
-/pnfs/sbnd/persistent/fluxFiles/bnb/G4BNB/v1.0.0/beamdump/
-```
-
-First production (july 2025) is configuration `a`. This has a bug, do NOT use.
-
-Second production (20250808-16:48) is configuration `b`.
 
