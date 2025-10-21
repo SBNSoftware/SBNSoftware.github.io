@@ -72,12 +72,12 @@ This section displays a list of the variables in the database, as well as their 
 | merged_run_idx | integer | index for merge runs | N/A |
 | first_run_of_merged | integer | first run of the merged runs | N/A |
 | last_run_of_merged | integer | last run of the merged runs | N/A |
-| etau_sce_spatial_east | real | East TPC electron lifetime after sptial SCE correction | ms |
-| etau_sce_spatial_east_p_1sig | real | plus one sigma error of East TPC electron lifetime after sptial SCE correction | ms |
-| etau_sce_spatial_east_m_1sig | real | mimus one sigma error of East TPC electron lifetime after sptial SCE correction | ms |
-| etau_sce_spatial_west | real | West TPC electron lifetime after sptial SCE correction | ms |
-| etau_sce_spatial_west_p_1sig | real | plus one sigma error of	West TPC electron lifetime after sptial SCE correction | ms |
-| etau_sce_spatial_west_m_1sig | real | minus one sigma error of West TPC electron lifetime after sptial SCE correction | ms |
+| etau_sce_spatial_east | real | East TPC electron lifetime after spatial SCE correction | ms |
+| etau_sce_spatial_east_p_1sig | real | plus one sigma error of East TPC electron lifetime after spatial SCE correction | ms |
+| etau_sce_spatial_east_m_1sig | real | mimus one sigma error of East TPC electron lifetime after spatial SCE correction | ms |
+| etau_sce_spatial_west | real | West TPC electron lifetime after spatial SCE correction | ms |
+| etau_sce_spatial_west_p_1sig | real | plus one sigma error of	West TPC electron lifetime after spatial SCE correction | ms |
+| etau_sce_spatial_west_m_1sig | real | minus one sigma error of West TPC electron lifetime after spatial SCE correction | ms |
 
 ### tpc_globalconstants
 - Folder description: This folder contains non-channel specific information
