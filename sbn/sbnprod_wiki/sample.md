@@ -87,6 +87,10 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_09 | --- | reco2 | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_flat_caf_sbnd |
 | DNN ROI + low-trad threshold (100 events p/ file pre-filter) | MC2025B | v10_09_00 | 30k | reco1 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd  |
 | --- | --- | --- | --- | reco2 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd  |
@@ -117,22 +121,38 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_04_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_09 | --- | reco2 | mc_MCP2025B_5e18_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_5e18_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - Intime Cosmics 5e18 POT (500 events p/ file pre-filter) | MC2025B | v10_06_00 | ~290k | reco1 | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_5e18_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | v10_06_00_02 | --- | reco2 | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_02_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_09 | --- | reco2 | mc_MCP2025B_5e18_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_5e18_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_5e18_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_5e18_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - BNB + Cosmics (100 events p/ file pre-filter) | MC2025B | v10_06_00 | ~680k | reco1 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | v10_06_00_02 | --- | calib tuple | hist_mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_02_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_09 | --- | reco2 | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - Intime Cosmics (500 events p/ file pre-filter) | MC2025B | v10_06_00 | ~510k | reco1 | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | mc_MCP2025B_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | v10_06_00_02 | --- | calib tuple | hist_mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_02_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
+| --- | --- | v10_06_00_09 | --- | reco2 | mc_MCP2025B_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025B_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025B_v10_06_00_09_prodcorsika_proton_intime_sbnd_CV_caf_flat_caf_sbnd |
 | Spring25 - Nue CC | MC2025B | v10_06_02 | 556k | reco1 | mc_MCP2025B_prodgenie_corsika_proton_rockbox_ccnue_sbnd_reco1_sbnd | 
 | --- | --- | --- | --- | caf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_ccnue_sbnd_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_prodgenie_corsika_proton_rockbox_ccnue_sbnd_caf_flat_caf_sbnd |
