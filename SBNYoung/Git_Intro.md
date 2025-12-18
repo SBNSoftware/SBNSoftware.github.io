@@ -12,6 +12,7 @@ Tutorial on github website: [https://docs.github.com/en/get-started/start-your-j
 Fun Github tutorial: [https://www.youtube.com/watch?v=mJ-qvsxPHpY](https://www.youtube.com/watch?v=mJ-qvsxPHpY)
 
 Git is a software tool to track and manage changes to your code. Github is a website to host your code, including the different versions and changes. SBND and ICARUS store their code in the SBN Software Github repository.
+Having your GitHub user added to the SBNSoftware organization enables people to tag you in issues and reviews; the [instructions to be added are here](../AnalysisInfrastructure/github-migration-to-do-list.md).
 
 ### Repository and Branches
 A **repository** is a space where code is stored, like a folder. **Remote repositories** are stored online, and multiple people can access them. **Local repositories** are stored on your local computer. Most of the time, you will make changes to a remote repository by first developing and testing those changes in a local copy of the repository. The repository can hold multiple **branches**, which are different working areas that modify a base version of the code. For example, a feature branch is used to create, develop, and test new features for code. There is typically one branch, called "master" or "develop", which represents the current version of the code used in production. People will base their feature branches off the master branch.
