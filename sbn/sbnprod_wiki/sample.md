@@ -63,6 +63,11 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| Fall Production 2025 - BNB Light - 2e19 POT | SBND2025C | v10_14_02 | ~1M | reco1 | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_reco1_sbnd |
+| --- | --- | --- | --- | larcv | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_larcvreco1_sbnd |
+| --- | --- | --- | --- | calib ntuple | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd |
+| --- | --- | --- | --- | caf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd |
 | Fall25 Validation - Intime - DNN | MC2025B | v10_10_03_02 | ~80k | reco1 | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | reco2 | mc_MCP2025_FallValidation_prodcorsika_proton_intime_sbnd_CV_reco2_sbnd |
@@ -205,9 +210,9 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_flat_caf_sbnd |
 
+
 ### ICARUS MC
 --------------------------
-
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
@@ -483,6 +488,18 @@ Data SBN Production Samples
 --------------------------
 
 | Sample Description | release version | # Events | File type | Samweb definition |
+| Fall Production 2025 - Run 1 - BNB Dev | SBND2025C | v10_14_02 | ~3.5k files | raw | SBND_DATA_Run1_DevSample_bnblight_Raw |
+| --- | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_reco1_sbnd |
+| --- | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_larcvreco1_sbnd |
+| --- | --- | --- | --- | calib ntuple | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd |
+| --- | --- | --- | --- | caf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_flatcaf_sbnd |
+| Fall Production 2025 - Run 1 - Intime Dev | SBND2025C | v10_14_02 | ~1.5k files | raw | SBND_DATA_Run1_DevSample_offbeamlight_Raw |
+| --- | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_reco1_sbnd |
+| --- | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_larcvreco1_sbnd |
+| --- | --- | --- | --- | calib ntuple | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd |
+| --- | --- | --- | --- | caf | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd |
+| --- | --- | --- | --- | flatcaf | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd |
 | Fall25 Validation - FullRun1 - RollingDev - bnblight  | v10_10_03_01 | ~75k | raw | SBND_DATA_FullRun1_RollingSample_bnblight_Raw |
 | --- | ___ | --- | decode | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco1_sbnd | 
