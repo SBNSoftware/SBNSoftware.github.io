@@ -492,7 +492,8 @@ Data SBN Production Samples
 ### SBND DATA
 --------------------------
 
-| Sample Description | release version | # Events | File type | Samweb definition |
+| Sample Description | production push | release version | # Events | File type | Samweb definition |    
+| --- | --- | --- | --- | --- | --- |
 | Fall Production 2025 - Run 1 - BNB Dev | SBND2025C | v10_14_02 | ~3.5k files | raw | SBND_DATA_Run1_DevSample_bnblight_Raw |
 | --- | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_reco1_sbnd |
 | --- | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_larcvreco1_sbnd |
