@@ -519,34 +519,23 @@ Data SBN Production Samples
 | --- | --- | --- | caf | data_MCP2025C_FallValidationII_RollingDev_offbeamlight_v10_14_00_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025C_FallValidationII_RollingDev_offbeamlight_v10_14_00_flatcaf_sbnd |
 | Fall25 Validation - FullRun1 - RollingDev - bnblight  | v10_10_03_01 | ~75k | raw | SBND_DATA_FullRun1_RollingSample_bnblight_Raw |
-| --- | ___ | --- | decode | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_reco1_sbnd | 
 | --- | --- | --- | larcv | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_v10_10_03_01_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_reco2_sbnd |
 | --- | --- | --- | calib tuple | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_caf_sbnd |
 | --- | --- | --- | flat caf | data_MCP2025B_noPOT_FullRun1_RollingDev_bnblight_bnblight_v10_10_03_01_flatcaf_sbnd |
 | Fall25 Validation - FullRun1 - RollingDev - bnblight - DNN  | v10_10_03_02 | ~75k | raw | SBND_DATA_FullRun1_RollingSample_bnblight_Raw |
-| --- | --- | --- | decode | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_reco1_sbnd | 
 | --- | --- | --- | larcv | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_reco2_sbnd |
 | --- | --- | --- | calib tuple | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_caf_sbnd |
 | --- | --- | --- | flat caf | data_MCP2025B_FullRun1_RollingDev_DNN_bnblight_v10_10_03_02_flatcaf_sbnd |
 | Fall25 Validation - FullRun1 - RollingDev - offbeamlight - DNN  | v10_10_03_02 | ~40k | raw | SBND_DATA_FullRun1_RollingSample_offbeamlight_Raw | 
-| --- | --- | --- | decode | data_MCP2025B_FullRun1_RollingDev_offbeamlight_offbeamlight_v10_10_03_02_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_reco1_sbnd | 
 | --- | --- | --- | larcv | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_reco2_sbnd |
 | --- | --- | --- | calib tuple | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_caf_sbnd |
 | --- | --- | --- | flat caf | data_MCP2025B_FullRun1_RollingDev_offbeamlight_v10_10_03_02_flatcaf_sbnd |
-| DNN ROI + low-trad threshold | v10_06_00 | ~30k | decode | data_MCP2025B_DevSample_Run1Rolling_5e18_bnblight_v10_06_00_decode_sbnd |
-| --- | v10_09_00 | --- | reco1 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco1_sbnd |
-| --- | --- | --- | larcv | data_MCP2025B_DNNROI_bnblight_v10_09_00_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_DNNROI_bnblight_v10_09_00_reco2_sbnd |
-| --- | --- | --- | calib tuple | data_MCP2025B_DNNROI_bnblight_v10_09_00_histreco2_sbnd |
 | Crossing Muon afterlight trigger | v10_06_03 | ~30k | raw | sbnd_CrossingMuon_FullRun1_AfterLight_raw |
 | --- | --- | --- | decode | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_reco1_sbnd |
