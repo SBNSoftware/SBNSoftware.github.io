@@ -97,10 +97,6 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025B_v10_06_00_09_prodgenie_corsika_proton_rockbox_lowenergydirt_sbnd_CV_caf_flat_caf_sbnd |
-| DNN ROI + low-trad threshold (100 events p/ file pre-filter) | MC2025B | v10_09_00 | 30k | reco1 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | larcv | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd  |
-| --- | --- | --- | --- | reco2 | mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd  |
-| --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_DNNROI_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
 | Spring25 - BNB + Cosmics 1e20 POT (100 events p/ file pre-filter) | MC2025B | v10_06_00_02 | ~6.8M | reco1 | mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd  |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025B_1e20_02_prodgenie_corsika_proton_rockbox_sbnd_CV_reco2_sbnd |
