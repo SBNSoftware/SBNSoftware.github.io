@@ -489,13 +489,19 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- |
-| Fall Production 2025 - Run 1 - BNB Dev | v10_14_02 | ~3.5k files | raw | SBND_DATA_Run1_DevSample_bnblight_Raw |
+| Run2 - gen1 (spring 2025) - BNB+light Fixed Dev | v10_06_00_09 | ~2k files | raw | SBND_DATA_Run2_FixedDev_Raw |
+| --- | --- | --- | reco1 | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_larcvreco1_sbnd |
+| --- | --- | --- | calib ntuple | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_flatcaf_sbnd |
+| Fall Production 2025 (gen2) - Run 1 - BNB Dev | v10_14_02 | ~3.5k files | raw | SBND_DATA_Run1_DevSample_bnblight_Raw |
 | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_larcvreco1_sbnd |
 | --- | --- | --- | calib ntuple | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_flatcaf_sbnd |
-| Fall Production 2025 - Run 1 - Intime Dev | v10_14_02 | ~1.5k files | raw | SBND_DATA_Run1_DevSample_offbeamlight_Raw |
+| Fall Production 2025 (gen2) - Run 1 - Intime Dev | v10_14_02 | ~1.5k files | raw | SBND_DATA_Run1_DevSample_offbeamlight_Raw |
 | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_larcvreco1_sbnd |
 | --- | --- | --- | calib ntuple | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd |
