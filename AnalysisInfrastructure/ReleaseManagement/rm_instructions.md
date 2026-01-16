@@ -68,7 +68,8 @@ Different release instructions for:
 
 ### Finalize the tag. <a name="tag"></a>
 1. In your testing area, in each repo do `git flow release finish`. Make sure to include a message for the tag.
-2. Do `git push origin main develop --tags` to push up the changes to main, develop, and the new tag.
+2. Make tags for each of `sbncode`, `sbnalg`, `sbnanaobj`, and `sbnobj` called `SBN_SUITE_v<VERSION>`. For example, if you're cutting a release for sbncode v10_14_02, all four repositories should have the `SBN_SUITE_v10_14_02` tag. This is important for CI.
+3. Do `git push origin main develop --tags` to push up the changes to main (master on `sbnalg`), develop, and the new tags.
 
 ### Distribute software. <a name="distribute"></a>
 #### SciSoft:
