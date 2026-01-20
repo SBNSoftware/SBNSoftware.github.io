@@ -41,6 +41,28 @@ run and develop applications in LArSoft. The following assumes:
     date¹).
 
 
+Development model
+------------------
+
+ICARUS code is stored and released via GitHub under the wider [`SBNSoftware`](https://github.com/SBNSoftware) "organization" (this is a GitHub term).
+A pull request pattern is used to merge code into any of the repositories in SBNSoftware:
+1. The requesters create a GIT branch with the modifications they wish to merge; the recommended pattern for the branch name is `feature/<requester>_<description>`, where `<requester>` is a unique identifier of the requesters (initials, surname...) and `<description>` identifies the content; for example: `feature/gp_trigEff` may be a "feature" branch by Gianluca Petrillo about trigger efficiency (note that when Gray Putnam entered the collaboration, he had to resort to `gputnam` not to collide with the existing name, and if Gregory Putnam decided to contribute to SBN he would need to figure out something else).
+2. The requester opens a pull request for that branch into the proper repository (e.g. `icaruscode`), describing
+    * the purpose of the changes
+    * which testing was performed
+    * a couple (or more) collaborators that can review the request in detail
+    * whether the change will be "breaking", i.e. if it will change the physics output (even not significantly)
+    * any other information that can facilitate the review or the merge 
+   
+   Note that this information will stay with the pull request and will not be visible in the repository, so it's not a very good place to store long term information (although the commit with the merge will point to the pull request, so it's still possible to recover it).
+3. At least one of the reviewers will need to "approve" the request; this person may evaluate, comment or request changes on both the coding form and substance.
+4. If changes are required, the requester will perform the changes or coordinate with the reviewer to find an acceptable solution. This process is iterative.
+5. Once the request is finally approved, the [release manager](../AnalysisInfrastructure/ReleaseManagement/rm_main,md) will start the integration process, which will end with the request being merged into the `develop` branch of the repository (or a production branch, if that's the purpose of the change).
+
+If requesters are in the `SBNSoftware` organization, they can push a "feature" branch in there.
+If they are not, they can either request to join that GitHub group, or to fork the repositories into their GitHub account (`mrb g --fork` works for that), push the feature branch in there and request its pull into `SBNSoftware`.
+
+
 
 Brief LArSoft overview.
 -----------------------------------------------------------------
