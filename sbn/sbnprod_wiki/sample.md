@@ -68,14 +68,14 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib ntuple | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - CV | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_CV_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - No SCE | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_0xSCE_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - 2x SCE | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_2xSCE_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - PMT Gain | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTGainFluct_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - PMT QE | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTLowEff_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - PMT High SPE Noise | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTHighNoise_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - WireMod X-θXW | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_XThetaXW_caf_flat_caf_sbnd |
-| Spring25 (gen1) BNB+Cosmics Syst Variations - WireMod Y-Z | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_YZ_caf_flat_caf_sbnd |
+| Spring25 (gen1) BNB+Cosmics - Syst Variations - CV | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_CV_caf_flat_caf_sbnd |
+| Syst Variations - No SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_0xSCE_caf_flat_caf_sbnd |
+| Syst Variations - 2x SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_2xSCE_caf_flat_caf_sbnd |
+| Syst Variations - PMT Gain | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTGainFluct_caf_flat_caf_sbnd |
+| Syst Variations - PMT QE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTLowEff_caf_flat_caf_sbnd |
+| Syst Variations - PMT High SPE Noise | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTHighNoise_caf_flat_caf_sbnd |
+| Syst Variations - WireMod X-θXW | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_XThetaXW_caf_flat_caf_sbnd |
+| Syst Variations - WireMod Y-Z | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_YZ_caf_flat_caf_sbnd |
 | Fall25 Validation II - BNB Light - 1e19 POT | MC2025B |  | ~600k | reco1 | mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_gen_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_reco2_sbnd |
