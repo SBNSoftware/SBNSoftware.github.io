@@ -191,10 +191,41 @@ Monte Carlo official SBN Production Samples
 
 * NuMI neutrino + cosmics det var samples (Scrub stage:
   
-| NuMI DetSyst - High Gain Var | MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_calibtuples |
+| NuMI DetSyst-High Gain | MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_calibtuples |
 | --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_caf |
 | --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_flatcaf |
-| --- | --- | --- | --- | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_larcv |
+| transferred to SLAC | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_larcv |
+
+| NuMI DetSyst-Low Gain | MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Gain_Low_calibtuples |
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Gain_Low_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Gain_Low_flatcaf|
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Gain_Low_larcv|
+
+| NuMI DetSyst-Low lifetime| MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Low_LT_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Low_LT_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Low_LT_flatcaf |
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Low_LT_larcv|
+
+| NuMI DetSyst-High lifetime| MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_High_LT_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_High_LT_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_High_LT_flatcaf |
+| transferred to SLAC  | larcv | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_High_LT_larcv |
+
+| NuMI DetSyst- Recomb model|MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_RecombModel_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_RecombModel_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_RecombModel_flatcaf|
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_RecombModel_larcv|
+
+| NuMI DetSyst-High TPC Coh Noise|MC2025A|v09_89_01_02p02|200k|calibtuple| icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_high_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_high_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_high_flatcaf|
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_high_larcv|
+
+|NuMI DetSyst-Low TPC Coh Noise|MC2025A|v09_89_01_02p02|200k|calibtuple| icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_flatcaf|
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_larcv|
+
 
 
 | BNB neutrino + cosmics (Respun CV) | MC2024A | v09_89_01_02p01 | 200k | stage1 | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_stage1 |
