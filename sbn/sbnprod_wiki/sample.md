@@ -191,7 +191,7 @@ Monte Carlo official SBN Production Samples
 
 * NuMI neutrino + cosmics det var samples (Scrub stage:
   
-| NuMI DetSyst-High Gain | MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_calibtuples |
+| NuMI DetSyst-High Gain | MC2025A | v09_89_01_02p02 | 200k | calibtuple | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_calibtuples |
 | --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_caf |
 | --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_flatcaf |
 | transferred to SLAC | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_larcv |
