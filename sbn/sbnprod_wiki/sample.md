@@ -226,7 +226,10 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_flatcaf|
 | transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_low_larcv|
 
-
+|NuMI DetSyst-Hgh TPC int noise|MC2025A|v09_89_01_02p02|200k|calibtuple|icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_Int_high_calibtuples|
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_Int_high_caf|
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_Int_high_flatcaf|
+| transferred to SLAC  | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCnoice_Int_high_larcv|
 
 | BNB neutrino + cosmics (Respun CV) | MC2024A | v09_89_01_02p01 | 200k | stage1 | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_calibtuple |
