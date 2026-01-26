@@ -179,7 +179,7 @@ Monte Carlo official SBN Production Samples
 
 ### ICARUS MC
 --------------------------
-
+* NuMI neutrino + cosmics Central Value sample
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
 | NuMI neutrino + cosmics | MC2025A | v09_89_01_02p02 | 200k | stage1 | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_stage1 |
@@ -187,6 +187,14 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_flatcaf |
 | --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_larcv |
+
+* NuMI neutrino + cosmics det var samples (Scrub stage: 
+| NuMI DetSyst - High Gain Var | MC2025A | v09_89_01_02p02 | 200k | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_calibtuples |
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_caf |
+| --- | --- | --- | --- | flatcaf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_flatcaf |
+| --- | --- | --- | --- | larcv |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_GainHigh_V2_larcv |
+
+
 | BNB neutrino + cosmics (Respun CV) | MC2024A | v09_89_01_02p01 | 200k | stage1 | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_02p01_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_respunCV_2ndV_caf |
