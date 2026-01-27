@@ -556,20 +556,20 @@ Data SBN Production Samples
 | --- | --- | --- | caf | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025B_CrossingMuon_FullRun1_AfterLight_8_crossingmuon_v10_06_03_flatcaf_sbnd |
 | Spring25 - BNB 1e20 POT | v10_06_00_02 | ~1.7M | raw | SBND_DATA_1e20_Raw_May2025 |
-| --- | --- | --- | decode | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_decode_sbnd |
-| --- | --- | --- | reco1 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_reco1_sbnd |
-| --- | --- | --- | larcv | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_larcvreco1_sbnd |
-| --- | --- | --- | reco2 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_reco2_sbnd |
-| --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_caf_sbnd |
-| --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_02_flatcaf_sbnd |
-| --- | v10_06_00_05 | --- | reco2 | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_reco2_sbnd |
-| --- | --- | --- | calib tuple | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_caf_sbnd |
-| --- | --- | --- | flatcaf | data_MCP2025B_02_DevSample_1e20_bnblight_v10_06_00_05_flatcaf_sbnd |
-| --- | v10_06_00_09 | --- | calib tuple | data_MCP2025C_Spring25_reprocess_Dev1e20_bnblight_v10_06_00_09_histreco2_sbnd |
-| --- | --- | --- | caf | data_MCP2025C_Spring25_reprocess_Dev1e20_bnblight_v10_06_00_09_caf_sbnd |
-| --- | --- | --- | flatcaf | data_MCP2025C_Spring25_reprocess_Dev1e20_bnblight_v10_06_00_09_flatcaf_sbnd |
+| --- | --- | --- | decode | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_decode_sbnd |
+| --- | --- | --- | reco1 | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_reco1_sbnd |
+| --- | --- | --- | larcv | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_larcvreco1_sbnd |
+| --- | --- | --- | reco2 | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_02_flatcaf_sbnd |
+| --- | v10_06_00_05 | --- | reco2 | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_05_reco2_sbnd |
+| --- | --- | --- | calib tuple | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_05_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_05_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025B_02_FullData_1e20_bnblight_v10_06_00_05_flatcaf_sbnd |
+| --- | v10_06_00_09 | --- | calib tuple | data_MCP2025C_Spring25_reprocess_FullData1e20_bnblight_v10_06_00_09_histreco2_sbnd |
+| --- | --- | --- | caf | data_MCP2025C_Spring25_reprocess_FullData1e20_bnblight_v10_06_00_09_caf_sbnd |
+| --- | --- | --- | flatcaf | data_MCP2025C_Spring25_reprocess_FullData1e20_bnblight_v10_06_00_09_flatcaf_sbnd |
 | Spring25 - Intime Cosmics | v10_06_00 | ~k | raw | SBND_DATA_InTime-Cosmic_Raw_Snapshot-20250527 |
 | --- | --- | --- | decode | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_decode_sbnd |
 | --- | --- | --- | reco1 | data_MCP2025B_InTimeCosmics_offbeamlight_v10_06_00_reco1_sbnd |
