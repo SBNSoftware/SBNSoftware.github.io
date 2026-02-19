@@ -141,9 +141,6 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | caf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_LArv10_caf_flat_caf_sbnd |
-| Feb25 Workshop - Intrinsic Nue + Cosmics | MC2025A | v10_04_01_01 | 7.5k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_intrnue_spill_tpc_sbnd_MCP2025A_reco2_sbnd |
 | Feb25 Workshop - FullOsc + Cosmics | MC2025A | v10_04_01_01 | 10k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_fullosc_sce_MCP2025A_reco2_sbnd |
