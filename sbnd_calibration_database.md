@@ -19,6 +19,7 @@ Hi there, this document contains all the information you need to know about the 
 - This page is under construction, this message will be removed when the displayed information is definite!
 - If you are working on the SBND calibration, please check if the information for your calibration is listed below, otherwise please update [SBND Calibration Database Spreadsheet](https://docs.google.com/spreadsheets/d/1xbAhb6WnmxbwKxFc-4nnInjHdH8A50S6Zgh0mfZrSF4/edit#gid=217643219)
 
+
 **Further information about the database can be found in these presentations on the SBND docdb:**
 - Calibration update: status and quick guidelines, Lucy Kotsiopoulou, 7.8.2025 (SBN-doc-42768)
 - SBND Calibration Database (update), Alejandro Sánchez Castillo & Marina Reggiani-Guzzo & Moon Jung, 6.3.2025 (SBN-doc-40231)
@@ -48,11 +49,17 @@ Each database is a set of multiple folders. Each folder contain the following 4 
   - **comments**: analougos to “commit” on GitHub, contains a brief description of the content in current version
 - **table_tag_iovs**: contains information linking the tag variable in table_tags to the iov_id one in table_iovs
 
+
+## Current folders on the database
+
 This section displays a list of the variables in the database, as well as their description and unit.
 
-### tpc_channelstatus
-- Folder description: This folder contains wire-channel specific variable information
-- Channel number: Represents "wire channel"
+The current schema being used for the database is `sbnd_calib_dev_new`.
+
+
+[### tpc_channelstatus]: #
+[- Folder description: This folder contains wire-channel specific variable information]: #
+[- Channel number: Represents "wire channel"]: #
 - Number of rows: 11,264 (one for each wire channel)
 - URL with current values in Production Database:
 
