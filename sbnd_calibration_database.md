@@ -1,21 +1,30 @@
 ---
 layout: page
 title: SBND Calibration Database
-description: SBND Calibration Database Instruction
+description: SBND Calibration Database Instructions
 toc: true
 ---
 
 # SBND Calibration Database
 
 Author: Marina Reggiani-Guzzo, PDRA at University of Edinburgh, mguzzo@ed.ac.uk
+Current Database manager: Lucy Kotsiopoulou, PhD student at University of Edinburgh, l.kotsiopoulou@sms.ed.ac.uk
 
-Last update: 23 May 2024
+Last update: 20th February 2024  
 
 Hi there, this document contains all the information you need to know about the SBND calibration database. Please contact the author if you find any wrong/outdated information on this page.
 
 **General comments**
 - This page is under construction, this message will be removed when the displayed information is definite!
 - If you are working on the SBND calibration, please check if the information for your calibration is listed below, otherwise please update [SBND Calibration Database Spreadsheet](https://docs.google.com/spreadsheets/d/1xbAhb6WnmxbwKxFc-4nnInjHdH8A50S6Zgh0mfZrSF4/edit#gid=217643219)
+
+**Further information about the database can be found in these presentations on the SBND docdb:**
+- Calibration update: status and quick guidelines, Lucy Kotsiopoulou, 7.8.2025 (SBN-doc-42768)
+- SBND Calibration Database (update), Alejandro Sánchez Castillo & Marina Reggiani-Guzzo & Moon Jung, 6.3.2025 (SBN-doc-40231)
+- Creating and populating a database, Marina Reggiani-Guzzo, 19.8.2024 (SBN-doc-37559)
+- SBND Calibration Database, Marina Reggiani-Guzzo, 2.2.2024 (SBN-doc-34811)
+
+
 
 # Databases
 
