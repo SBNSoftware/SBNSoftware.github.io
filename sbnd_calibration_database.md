@@ -56,25 +56,25 @@ This section displays a list of the variables in the database, as well as their 
 
 The current schema being used for the database is `sbnd_calib_dev_new`.
 
-
+[The following table has been commented out from the markdown rendering. Remove "[" before text and "]: #" after text to restore it.]: #
 [### tpc_channelstatus]: #
 [- Folder description: This folder contains wire-channel specific variable information]: #
 [- Channel number: Represents "wire channel"]: #
-- Number of rows: 11,264 (one for each wire channel)
-- URL with current values in Production Database:
+[- Number of rows: 11,264 (one for each wire channel)]: #
+[- URL with current values in Production Database:]: #
 
-| Variable Name | Type | Description | Unit |
-| ------------- | ---- | ----------- | ---- |
-| status | integer | 0=Dead, 1=Alive, 2=Abnormal | N/A |
-| eresponse_gain | real | Pre-amplifier response parameter (voltage ←→ charge) * | mV/fC |
-| eresponse_timing | real | Pre-amplifier shaping time * | us |
-| eresponse_k3 | real | 1st pole term in numerator * | N/A |
-| eresponse_k4 | real | 2nd pole term in numerator * | N/A |
-| eresponse_k5 | real | 1st pole term in denominator * | N/A |
-| eresponse_k6 | real | 2nd pole term in denominator * | N/A |
+[| Variable Name | Type | Description | Unit |]: #
+[| ------------- | ---- | ----------- | ---- |]: #
+[| status | integer | 0=Dead, 1=Alive, 2=Abnormal | N/A |]: #
+[| eresponse_gain | real | Pre-amplifier response parameter (voltage ←→ charge) * | mV/fC |]: #
+[| eresponse_timing | real | Pre-amplifier shaping time * | us |]: #
+[| eresponse_k3 | real | 1st pole term in numerator * | N/A |]: #
+[| eresponse_k4 | real | 2nd pole term in numerator * | N/A |]: #
+[| eresponse_k5 | real | 1st pole term in denominator * | N/A |]: #
+[| eresponse_k6 | real | 2nd pole term in denominator * | N/A |]: #
 
 
-\* More information on DocDB 35489 (slide 13).
+[\* More information on DocDB 35489 (slide 13).]: #
 
 
 ### tpc_elifetime_data
