@@ -56,7 +56,7 @@ This section displays a list of the variables in the database, as well as their 
 
 The current schema being used for the database is `sbnd_calib_dev_new`.
 
-[The following table has been commented out from the markdown rendering. Remove "[" before text and "]: #" after text to restore it.]: #
+[The following table has been commented out from the markdown rendering. Remove text inside square brackets followed by a colon, a space, and a pound sign  to restore it.]: #
 [### tpc_channelstatus]: #
 [- Folder description: This folder contains wire-channel specific variable information]: #
 [- Channel number: Represents "wire channel"]: #
@@ -77,7 +77,7 @@ The current schema being used for the database is `sbnd_calib_dev_new`.
 [\* More information on DocDB 35489 (slide 13).]: #
 
 
-### tpc_elifetime_data
+### tpc_elifetime
 - Folder description: This folder contains electron lifetime data
 - Channel number: No meaning
 - Number of rows: 1 for each merged run
@@ -97,67 +97,70 @@ The current schema being used for the database is `sbnd_calib_dev_new`.
 | etau_sce_spatial_west_p_1sig | real | plus one sigma error of	West TPC electron lifetime after spatial SCE correction | ms |
 | etau_sce_spatial_west_m_1sig | real | minus one sigma error of West TPC electron lifetime after spatial SCE correction | ms |
 
-### tpc_globalconstants
-- Folder description: This folder contains non-channel specific information
-- Channel number: No meaning
-- Number of rows: 1
-- URL with current values in Production Database:
+[The following table has been commented out from the markdown rendering. Remove text inside square brackets followed by a colon, a space, and a pound sign  to restore it.]: #
+[### tpc_globalconstants]: #
+[- Folder description: This folder contains non-channel specific information]: #
+[- Channel number: No meaning]: #
+[- Number of rows: 1]: #
+[- URL with current values in Production Database:]: #
 
-| Variable Name | Type | Description | Unit |
-| ------------- | ---- | ----------- | ---- |
-| field_response | text | | |
-| sce | text | | |
-| e_lifetime_cosmic_etpc | real | Electron lifetime measured with muons, East TPC | ms |
-| e_lifetime_cosmic_etpc_err | real | Electron lifetime error measured with muons, East TPC | ms |
-| e_lifetime_cosmic_wtpc | real | Electron lifetime measured with muons, West TPC | ms |
-| e_lifetime_cosmic_wtpc_err | real | Electron lifetime error measured with muons, West TPC | ms |
-| e_lifetime_prm_inline | real | Electron lifetime measured with long inline purity monitor * | ms |
-| e_lifetime_prm_inline_err | real | Electron lifetime error measured with long inline purity monitor * | ms |
-| e_lifetime_prm_short | real | Electron lifetime measured with cryostat short internal purity monitor * | ms |
-| e_lifetime_prm_short_err | real | Electron lifetime error measured with cryostat short internal purity monitors * | ms |
-| e_lifetime_prm_long | real | Electron lifetime measured with cryostat long internal purity monitors * | ms |
-| e_lifetime_prm_long_err | real | Electron lifetime error measured with cryostat long internal purity monitors * | ms |
-| egain_i1_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 1 plane, West TPC | ADC/e- |
-| egain_i2_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 2 plane, West TPC | ADC/e- |
-| egain_c_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Collection plane, West TPC | ADC/e- |
-| egain_i1_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 1 plane, East TPC | ADC/e- |
-| egain_i2_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 2 plane, East TPC | ACD/e- |
-| egain_c_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Collection plane, East TPC | ADC/e- |
-| diffusion_l | real | Longitudinal diffusion constant | cm2/s |
-| diffusion_t | real | Transverse diffusion constant | cm2/s |
+[| Variable Name | Type | Description | Unit |]: #
+[| ------------- | ---- | ----------- | ---- |]: #
+[| field_response | text | | |]: #
+[| sce | text | | |]: #
+[| e_lifetime_cosmic_etpc | real | Electron lifetime measured with muons, East TPC | ms |]: #
+[| e_lifetime_cosmic_etpc_err | real | Electron lifetime error measured with muons, East TPC | ms |]: #
+[| e_lifetime_cosmic_wtpc | real | Electron lifetime measured with muons, West TPC | ms |]: #
+[| e_lifetime_cosmic_wtpc_err | real | Electron lifetime error measured with muons, West TPC | ms |]: #
+[| e_lifetime_prm_inline | real | Electron lifetime measured with long inline purity monitor * | ms |]: #
+[| e_lifetime_prm_inline_err | real | Electron lifetime error measured with long inline purity monitor * | ms |]: #
+[| e_lifetime_prm_short | real | Electron lifetime measured with cryostat short internal purity monitor * | ms |]: #
+[| e_lifetime_prm_short_err | real | Electron lifetime error measured with cryostat short internal purity monitors * | ms |]: #
+[| e_lifetime_prm_long | real | Electron lifetime measured with cryostat long internal purity monitors * | ms |]: #
+[| e_lifetime_prm_long_err | real | Electron lifetime error measured with cryostat long internal purity monitors * | ms |]: #
+[| egain_i1_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 1 plane, West TPC | ADC/e- |]: #
+[| egain_i2_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 2 plane, West TPC | ADC/e- |]: #
+[| egain_c_wtpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Collection plane, West TPC | ADC/e- |]: #
+[| egain_i1_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 1 plane, East TPC | ADC/e- |]: #
+[| egain_i2_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Induction 2 plane, East TPC | ACD/e- |]: #
+[| egain_c_etpc | real | Electronics gain measured with cosmic muons (assumes recombination value) for Collection plane, East TPC | ADC/e- |]: #
+[| diffusion_l | real | Longitudinal diffusion constant | cm2/s |]: #
+[| diffusion_t | real | Transverse diffusion constant | cm2/s |]: #
 
-\* More information on DocDB 33432.
+[\* More information on DocDB 33432.]: #
 
-### tpc_yz_correction
-- Folder description: This folder contains the non-uniformity map for the YZ plane. The map is a 2D histogram of Y=4m and Z=5m with a bin width of 5 cm on both directions. Therefore 400/5=80 bins along Y direction, and 500/5=100 bins along Z direction
-- Channel number: The channel number has no physical meaning. This table is better described by the bin number/edges for each entry
-- Number of rows: 2 (2 TPCs) x 80 (bins along Y) x 100 (bins along Z) = 16,000
-- URL with current values in Production Database:
+[The following table has been commented out from the markdown rendering. Remove text inside square brackets followed by a colon, a space, and a pound sign  to restore it.]: #
+[### tpc_yz_correction]: #
+[- Folder description: This folder contains the non-uniformity map for the YZ plane. The map is a 2D histogram of Y=4m and Z=5m with a bin width of 5 cm on both directions. Therefore 400/5=80 bins along Y direction, and 500/5=100 bins along Z direction]: #
+[- Channel number: The channel number has no physical meaning. This table is better described by the bin number/edges for each entry]: #
+[- Number of rows: 2 (2 TPCs) x 80 (bins along Y) x 100 (bins along Z) = 16,000]: #
+[- URL with current values in Production Database:]: #
 
-| Variable Name | Type | Description | Unit |
-| ------------- | ---- | ----------- | ---- |
-| tpc | text | W = west TPC, E = east TPC | N/A |
-| ybin | integer | Bin number in Y direction, from 0 to 79 | N/A |
-| zbin | integer | Bin number in Z direction, from 0 to 99 | N/A |
-| ylow | real | Low-edge bin position in Y direction | cm |
-| yhigh | real | High-edge bin position in Y direction | cm |
-| zlow | real | Low-edge bin position in Z direction | cm |
-| zhigh | real | High-edge bin position in Z direction | cm |
-| scale | real | Non-uniformity scale for a point on the YZ plane | N/A |
+[| Variable Name | Type | Description | Unit |]: #
+[| ------------- | ---- | ----------- | ---- |]: #
+[| tpc | text | W = west TPC, E = east TPC | N/A |]: #
+[| ybin | integer | Bin number in Y direction, from 0 to 79 | N/A |]: #
+[| zbin | integer | Bin number in Z direction, from 0 to 99 | N/A |]: #
+[| ylow | real | Low-edge bin position in Y direction | cm |]: #
+[| yhigh | real | High-edge bin position in Y direction | cm |]: #
+[| zlow | real | Low-edge bin position in Z direction | cm |]: #
+[| zhigh | real | High-edge bin position in Z direction | cm |]: #
+[| scale | real | Non-uniformity scale for a point on the YZ plane | N/A |]: #
 
-### tpc_x_correction
-- Folder description: This folder contains the non-uniformity map for the X direction. The map is a 1D histogram of X=4m with a bin width of 10 cm. Therefore 400/10=40 bins along X direction
-- Channel number: The channel number has no physical meaning. This table is better described by the bin number/edges for each entry
-- Number of rows: 2 (2 TPCs) x 40 (bins along X) = 80
-- URL with current values in Production Database:
+[The following table has been commented out from the markdown rendering. Remove text inside square brackets followed by a colon, a space, and a pound sign  to restore it.]: #
+[### tpc_x_correction]: #
+[- Folder description: This folder contains the non-uniformity map for the X direction. The map is a 1D histogram of X=4m with a bin width of 10 cm. Therefore 400/10=40 bins along X direction]: #
+[- Channel number: The channel number has no physical meaning. This table is better described by the bin number/edges for each entry]: #
+[- Number of rows: 2 (2 TPCs) x 40 (bins along X) = 80]: #
+[- URL with current values in Production Database:]: #
 
-| Variable Name | Type | Description | Unit |
-| ------------- | ---- | ----------- | ---- |
-| tpc | text | W = west TPC, E = east TPC | N/A |
-| xbin | integer | Bin number in X direction, from 0 to 79 | N/A |
-| xlow | real | Low-edge bin position in X direction | cm |
-| xhigh | real | High-edge bin position in X direction | cm |
-| scale | real | Non-uniformity scale along X direction | N/A |
+[| Variable Name | Type | Description | Unit |]: #
+[| ------------- | ---- | ----------- | ---- |]: #
+[| tpc | text | W = west TPC, E = east TPC | N/A |]: #
+[| xbin | integer | Bin number in X direction, from 0 to 79 | N/A |]: #
+[| xlow | real | Low-edge bin position in X direction | cm |]: #
+[| xhigh | real | High-edge bin position in X direction | cm |]: #
+[| scale | real | Non-uniformity scale along X direction | N/A |]: #
 
 ### pds_calibration
 - Folder description: This folder contains general information about the PDS system (reco, timing, decoding...)
