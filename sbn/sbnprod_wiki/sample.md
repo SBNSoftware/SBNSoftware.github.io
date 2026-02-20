@@ -149,11 +149,6 @@ Monte Carlo official SBN Production Samples
 | BNB + Cosmics - w/o diffusion  | MC2024B | v09_91_02_02 | 50504 | CV reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_50k_sbnd | 
 | --- | --- | --- | --- | reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_VAR1_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_VAR1_reco2_sbnd |
-| BNB + Cosmics CV | MC2024B | v09_91_02_02 | 316623 | reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | larcv | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_larcv_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_flat_caf_sbnd |
 | BNB + Cosmics GENIE CV | MC2023B | v09_75_03_02 | 102189 | reco1 | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_wcsim_detsim_reco1_sbnd | 
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_reco2_sbnd |
 | --- | --- | --- | --- | caf | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_sbnd |
