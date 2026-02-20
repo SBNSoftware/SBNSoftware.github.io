@@ -137,11 +137,6 @@ Monte Carlo official SBN Production Samples
 | --- | --- | v10_06_00_09 | --- | calib tuple | hist_mc_MCP2025C_v10_06_00_09_prodgenie_corsika_proton_rockbox_ccnue_sbnd_CV_reco2_sbnd |
 | --- | --- | --- | --- | caf | mc_MCP2025C_v10_06_00_09_prodgenie_corsika_proton_rockbox_ccnue_sbnd_CV_caf_sbnd |
 | --- | --- | --- | --- | flatcaf | mc_MCP2025C_v10_06_00_09_prodgenie_corsika_proton_rockbox_ccnue_sbnd_CV_caf_flat_caf_sbnd | 
-| Feb25 Workshop - BNB + Cosmics | MC2025A | v10_04_01 | 60k | reco1 | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_gen_g4_detsim_reco1_sbnd | 
-| --- | --- | --- | --- | larcv | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_gen_g4_detsim_reco1_larcv_sbnd |
-| --- | --- | --- | --- | calib tuple | hist_official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_reco2_sbnd |
-| --- | --- | --- | --- | caf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | official_MCP2025A_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_MCP2025A_caf_flat_caf_sbnd |
 | BNB + Cosmics - w/o diffusion  | MC2024B | v09_91_02_02 | 50504 | CV reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_gen_g4_detsim_reco1_50k_sbnd | 
 | --- | --- | --- | --- | reco1 | official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_VAR1_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_official_MCP2024B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_VAR1_reco2_sbnd |
