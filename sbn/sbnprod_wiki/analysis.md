@@ -14,7 +14,7 @@ toc_title: SBN Production Sample Description
 SBN Production Available Samples Descriptions-
 ==========================================
 
-> Below we will include useful information for analyzers to understand what goes into each sample, as listed from the [Samples Page](sample). 
+> Below we will include useful information for analyzers to understand what goes into each sample, as listed from the [Samples Page](https://sbnsoftware.github.io/sbn/sbnprod_wiki/sample). 
 
 Here is what is listed for each sample: 
 1. short description of sample, what it's used for, how to use it, general notes on usage
