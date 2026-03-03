@@ -654,6 +654,14 @@ ICARUS 2025 Spring SBN Production Samples
 | --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_bnbmajority_flatcaf_blind|
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_bnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_bnbmajority_larcv |
+|ICARUS Spring, Run 2 OFFBeam BNB Majority (recalibrated) | v10_06_00_06p03 | --- | calibration tuples |Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_calibtuples |
+| --- | --- | --- | caf_prescaled | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_caf_prescaled |
+| --- | --- | --- | caf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_caf_blind |
+| --- | --- | --- | caf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_caf_unblind |
+| --- | --- | --- | flatcaf_prescaled | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_flatcaf_prescaled |
+| --- | --- | --- | flatcaf_blind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_flatcaf_blind |
+| --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_flatcaf_unblind |
+| --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_larcv |
 
 ### ICARUS SBN MC Overlay production
 -----------------------------------
