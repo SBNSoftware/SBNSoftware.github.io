@@ -609,7 +609,7 @@ Data SBN Production Samples
 | --- | --- | --- | caf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_caf |
 | --- | --- | --- | flatcaf | sbnd_keepup_summer2024_neutrino_data_bnbZeroBiasAndSunset0-00009_flatcaf |
 
-ICARUS SBN Production Samples
+ICARUS 2025 Spring SBN Production Samples
 ---------------------------
 **Notes on samples:** These are produced with v10_xx_xx_xx using ***wcdnn*** fcls.
 
