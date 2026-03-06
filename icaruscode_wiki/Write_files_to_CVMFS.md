@@ -96,8 +96,8 @@ Users with ICARUS CVMFS upload privileges                      | since(—to)
 [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
 Miquel Nebot-Guinot                                            | 2020
 Patrick Green                                                  | 2020
-Chris Hilgenberg                                               | 2021
-Matthew Rosenberg                                              | 2022
+Chris Hilgenberg                                               | 2021-unknown
+Matthew Rosenberg                                              | 2022-unknown
 [Jacob Smith](mailto:jacob.a.smith@stonybrook.edu)             | 2026
 Leo Aliaga-Soplin                                              | unknown
 Vito Di Benedetto                                              | unknown
