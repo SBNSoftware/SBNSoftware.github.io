@@ -12,7 +12,7 @@ Write files to CVMFS
 ============================================================
 
 _(original text from Andrzej Szelc)_
-_(updated December 14, 2021, to better reflect current procedure)_
+_(updated March 5th, 2026, to better reflect currently authorized users with CVMFS privileges)_
 
 Modifications to ICARUS area in CVMFS are performed interacting as user
 `cvmfsicarus` on the server `oasiscfs.fnal.gov`.
@@ -96,8 +96,14 @@ Users with ICARUS CVMFS upload privileges                      | since(—to)
 [Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
 Miquel Nebot-Guinot                                            | 2020
 Patrick Green                                                  | 2020
-Chris Hilgenberg                                               | 2021—2022
+Chris Hilgenberg                                               | 2021
 Matthew Rosenberg                                              | 2022
+[Jacob Smith](mailto:jacob.a.smith@stonybrook.edu)             | 2026
+Leo Aliaga-Soplin                                              | unknown
+Vito Di Benedetto                                              | unknown
+Sergey Martynenko                                              | unknown
+
+
 
 To add a user to the list, his/her Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
