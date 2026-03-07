@@ -39,7 +39,7 @@ section](GoogleVoice/edit?section=3){.icon-only
 
 Shifters are required to test their Google Voice connection prior the
 their shift. Since the current shifter is already logged on, please
-inform him/her of the incoming test.\
+inform them of the incoming test.\
 Login to Google Voice can be done via this link
 [<https://voice.google.com/u/0/about>]{.ul} by clicking on the Sign in
 button on the top right.
@@ -64,7 +64,7 @@ section of google voice (top left) and it was sent by the number 22000.
 In order not to create confusion and misunderstanding, only one person
 at the time should ask for the code since they are device-dependent.
 Consider waiting for the shifter agreement before logging in since if
-he/she is not available to forward the code, it might expire. It was
+they are not available to forward the code, it might expire. It was
 noticed that if too many codes expire, the device could be accidentally
 placed in a \"black list\", if this is the case contact the Icarus Shift
 Expert on duty.
@@ -106,8 +106,8 @@ section](GoogleVoice/edit?section=4){.icon-only
 The Google Voice should be used for the following tasks:\
 \*Call the MCR at the beginning of the shift.\
 \*Call the experts in case of need or receive calls from the experts. If
-the expert does not pick up the call in time, he will be notified that
-the shifter is in need he/she will call back as soon as possible.\
+the expert does not pick up the call in time, they will be notified that
+the shifter is in need and should call the shifter back as soon as possible.\
 \*Receive calls from the Control Room or Beam experts.\
 In order not to miss calls from the experts, it is highly suggested to
 leave the Google Voice page open in the browser throughout the Shift.\

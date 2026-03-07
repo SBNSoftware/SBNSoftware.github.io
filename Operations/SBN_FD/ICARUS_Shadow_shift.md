@@ -49,7 +49,7 @@ shifters in ICARUS.
     defined )
 
 Shadow shifts may be self-booked from the ECL calendar sloth. The
-sitting shifter should check if he/she is supposed to be replaced by a
+sitting shifter should check if they are supposed to be replaced by a
 shadow shifter and inform the Run coordinator in case the shadow shifter
 person is not responding. At the end of the shift, the sitting shifter
 must put update the ?date of last shift? column in the [Shadow shift
@@ -59,7 +59,7 @@ example in case the shadow shifter is a new collaborator ) it may be
 added.
 
 The Run coordinator should make sure all the shifters are certified for
-their shift duties. He/she also collects requests for shadow shift swaps
+their shift duties. They also collect requests for shadow shift swaps
 and other \"exemptions\".
 :::
 

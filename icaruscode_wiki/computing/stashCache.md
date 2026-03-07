@@ -10,14 +10,14 @@ Suffice to say, ICARUS does have such a facility available, and the data can be 
 ## Writing data into StashCache
 
 Directory `/pnfs/icarus/persistent/stash` is owned by the collective user `icaruspro`.
-For a user to be able to write in there, she can either:
+For a user to be able to write in there, they can either:
 
 * log in a dCache-aware node (e.g. an [ICARUS GPVM](../Computing_Resources.md#where-to-work-interactive-nodes-gpvm)) as `icaruspro` via
     
     ssh icaruspro@icarusgpvm.fnal.gov
     
   using Kerberos authentication; this works only if that user is authorized
-  to present herself as `icaruspro` (which translates into her Kerberos principal
+  to present themselves as `icaruspro` (which translates into their Kerberos principal
   `user@FNAL.GOV` being listed in `~icaruspro/.k5login` file)
 * use IFDH (`ifdh cp`) to copy directly the data; this requires a
   [grid certificate proxy](../Get_a_certificate_proxy.md)

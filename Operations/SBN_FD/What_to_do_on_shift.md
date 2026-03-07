@@ -200,7 +200,7 @@ Shifters in the US can use both mobile or browser app to make calls,
 while Europe based shifters can only do that via browser application. If
 authenticating via browser **make sure to enable voice and audio
 permession** in order to make/receive calls.\
-The shifters are required to be logged in throughout his/her shift in
+The shifters are required to be logged in throughout their shift in
 order to be able to pick up calls. Multiple Google accounts can be used
 at the same time in different tabs, hence shifters can use their
 personal accounts for other Google products (Gmail, YouTube, etc\...).\
@@ -319,7 +319,7 @@ this form during DAQ work/testing, but if not asked otherwise you should
 go with this. Thanks!
 
 **PURITY RUNS**\
-The shifter has among his duties to take purity runs. This is in general
+The shifter has among their duties to take purity runs. This is in general
 done by the swing shifter around 6 pm CST. In general, the shifter is
 informed of when to take purity runs. The instruction can be found on
 the dedicated

@@ -262,7 +262,7 @@ Please show up for your shift 15 minutes in advance. The very first step
 you have to do are:
 
 1.  **Communicate with the previous shifter** on the Slack channel
-    `#icarus-shift-operation` and inform him of your arrival. Ask him to
+    `#icarus-shift-operation` and inform them of your arrival. Ask them to
     brief you about the detector and run condition and if issues have
     been encountered during the shift or experts have been called. If
     you have the chance to speak with the shifter in person or over the
@@ -272,7 +272,7 @@ you have to do are:
     make sure also to read the bulletin board and refresh your memory
     about the shift procedure.
 3.  **Communicate with your shadow shifter** If you have a shadow
-    shifter, make sure he\'s ready to shadow you.
+    shifter, make sure they are ready to shadow you.
 4.  **Fill the [Shift
     Check-in](https://dbweb8.fnal.gov:8443/ECL/sbnfd/E/create_entry?f=Shift+Check-in)
     checklist**
@@ -425,7 +425,7 @@ It is your duty to remain on shift until the new shifter is well set.
 after 15 minutes at the end of your shift to coordinate the transition
 and make sure the shift after yours is well covered**
 
--   **When the new shift arrives** you should interact with him/her and
+-   **When the new shift arrives** you should interact with them and
     communicate anything relevant that happened during your shift. At
     this point the incoming shifter will prepare the remote connections
     and log-in to the Google Voice account.
@@ -441,7 +441,7 @@ and make sure the shift after yours is well covered**
     messages ( Click the message icon from the menu bar on the left side
     of the screen ). The code has the format G-\*\*\*\*. **Remember to
     log-out from the ICARUS Google account once the shifter confirms
-    that he/she is well set!**
+    that they are well set!**
 
 !(/redmine/attachments/download/63879/gvoice_messages.png)
 

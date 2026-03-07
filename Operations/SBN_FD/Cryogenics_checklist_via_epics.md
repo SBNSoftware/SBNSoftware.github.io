@@ -13,7 +13,7 @@ A\) During cooldown:
 
 > I. Cooling is a low process, so do not expect any rapid variation of
 > the temperature. If this event occurs, please notify the Technical
-> Coordinator or his deputy
+> Coordinator or their deputy
 
 > II\. **Check** the internal temperature of the East and West modules
 > **at least once per hour** (all temperatures are displayed in K)( see
@@ -28,7 +28,7 @@ A\) During cooldown:
 
 > b\) When the temperature difference of ALL the probes inside *both
 > modules* goes below 35K (this will take several hours), the shifter
-> will call the Cryogenic expert on call to tell him the cooling process
+> will call the Cryogenic expert on call to tell them the cooling process
 > can be restarted.
 
 B\) During filling:
@@ -44,7 +44,7 @@ B\) During filling:
 > turns on in any of the modules, the shifter is ONLY required to check
 > the internal level probes and the internal temperature probes every
 > hour. Anomalies in the readings need to be reported timely to the
-> Technical Coordinator or his Deputy and registered in the e-log.
+> Technical Coordinator or their Deputy and registered in the e-log.
 
 > IV\. As soon as the first internal level probe (at -6cm position )
 > alarm starts, the shifter MUST notify both Technical Coordinator and

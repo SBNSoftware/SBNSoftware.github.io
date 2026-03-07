@@ -363,7 +363,7 @@ will not be updated but if there are no other problems the pmt will
 continue to be powered.\
 11. **Server** : should be \"running\". If the SY1527 server crashes,
 the text changes to **down** and the channels monitor will not update
-anymore. How to react: 1) ask an expert if available during his daytime,
+anymore. How to react: 1) ask an expert if available during their daytime,
 or 2) try press the \"IOC restart\" button: the GUI will show
 \'disconnected\' for about one minute and then should be back. If there
 is any problem send an email to <niccolo.moggi@bo.infn.it>\

@@ -95,7 +95,7 @@ As of October 2021, these people are blessed:
 - [Chris Hilgenberg](mailto:chilgenb@umn.edu)
 - [Vito Di Benedetto](mailto:vito@fnal.gov)
 
-To add a user to the list, his/her Kerberos principal must be added to
+To add a user to the list, their Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfssbnd`.\
 Since January 2018, we can freely edit the list of authorised people and
 we are responsible of the maintenance of that list.
