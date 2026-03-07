@@ -99,9 +99,8 @@ Tracy Usher (usher at slac dot stanford dot edu)               | The Stone Age
 Wes Ketchum (wketchum at fnal dot gov)                         | 2016
 Gianluca Petrillo (petrillo at slac dot stanford dot edu)      | 2017
 Jacob Smith (jacob dot a dot smith at stonybrook dot edu)      | 2026
-Leo Aliaga-Soplin                                              | unknown
-Vito Di Benedetto                                              | unknown
-Sergey Martynenko                                              | unknown
+Leo Aliaga-Soplin                                              | 2025 (?)
+Vito Di Benedetto                                              | 2025 (?)
 
 
 
