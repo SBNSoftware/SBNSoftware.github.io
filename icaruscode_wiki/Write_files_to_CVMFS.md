@@ -84,28 +84,28 @@ Access privileges
 ------------------------------------------------------
 
 A few ICARUS people are allowed to log as `cvmfsicarus` on
-`oasiscfs.fnal.gov`, and they can add a few others.
-As of August 2020, these people are:
+`oasiscfs.fnal.gov`, and they can add others.
+As of March 2026, these people are:
 
 Users with ICARUS CVMFS upload privileges                      | since(—to)
 -------------------------------------------------------------- | -----------
-[Wes Ketchum](mailto:wketchum@fnal.gov)                        | 2016
-[Yun-Tse Tsai](mailto:yuntse@slac.stanford.edu)                | 2016—2021
-[Tracy Usher](mailto:usher@slac.stanford.edu)                  | The Stone Age
-[Francesco Tortorici](mailto:francesco.tortorici@ct.infn.it)   | 2016—2021
-[Gianluca Petrillo](mailto:petrillo@slac.stanford.edu)         | 2017
-Miquel Nebot-Guinot                                            | 2020
-Patrick Green                                                  | 2020
+Yun-Tse Tsai                                                   | 2016—2021
+Francesco Tortorici                                            | 2016—2021
+Miquel Nebot-Guinot                                            | 2020-2026
+Patrick Green                                                  | 2020-2026
 Chris Hilgenberg                                               | 2021-unknown
 Matthew Rosenberg                                              | 2022-unknown
-[Jacob Smith](mailto:jacob.a.smith@stonybrook.edu)             | 2026
+Tracy Usher (usher at slac dot stanford dot edu)               | The Stone Age
+Wes Ketchum (wketchum at fnal dot gov)                         | 2016
+Gianluca Petrillo (petrillo at slac dot stanford dot edu)      | 2017
+Jacob Smith (jacob dot a dot smith at stonybrook dot edu)      | 2026
 Leo Aliaga-Soplin                                              | unknown
 Vito Di Benedetto                                              | unknown
 Sergey Martynenko                                              | unknown
 
 
 
-To add a user to the list, his/her Kerberos principal must be added to
+To add a user to the list, their Kerberos principal must be added to
 `.k5login` file in the home directory of `cvmfsicarus`.
 
 
