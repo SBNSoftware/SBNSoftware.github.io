@@ -63,6 +63,8 @@ Monte Carlo official SBN Production Samples
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
+| GIBUU BNB + Cosmics - gen1 | SBND2026A | v10_06_00_09 | ~200k | reco1 | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_reco1_sbnd |
+| --- | --- | --- | --- | flatcaf | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_flatcaf_sbnd |
 | Fall Production 2025 (gen2) - BNB Light - 2e19 POT | SBND2025C | v10_14_02 | ~1M | reco1 | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_larcvreco1_sbnd |
 | --- | --- | --- | --- | calib ntuple | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd |
