@@ -60,21 +60,21 @@ flatcaf:
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Rolling Sample.  
 > **Usage:** *[Insert guidance on when this should be used over other samples.]*
 
-| Stage | Sample Definition |
-| :--- | :--- |
-| **reco1** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd` |
-| **caf** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd` |
-| **flatcaf** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd` |
+| Stage | Code Version | Sample Definition |
+| :--- | :--- | :--- |
+| **reco1** | v10_14_02 |`data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd` |
+| **caf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd` |
+| **flatcaf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd` |
 
 #### **Fixed Dev Sample**
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Fixed Development Sample.  
 > **Usage:** *[Insert guidance on when this should be used over the Rolling sample.]*
 
-| Stage | Sample Definition |
-| :--- | :--- |
-| **reco1** | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd` |
-| **caf** | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd` |
-| **flatcaf** | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd` |
+| Stage | Code Version | Sample Definition |
+| :--- | :--- | :--- |
+| **reco1** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd` |
+| **caf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd` |
+| **flatcaf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd` |
 
 ---
 
@@ -83,11 +83,11 @@ flatcaf:
 
 #### **Development Sample Reference:**
 
-| Stage | Sample Definition |
-| :--- | :--- |
-| **calibntuples** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd` |
-| **caf** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd` |
-| **flatcaf** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd` |
+| Stage | Code Version | Sample Definition |
+| :--- | :--- | :--- |
+| **calibntuples** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd` |
+| **caf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd` |
+| **flatcaf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd` |
 
 
 
