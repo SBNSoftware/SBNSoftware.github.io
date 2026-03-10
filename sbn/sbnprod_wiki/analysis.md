@@ -35,25 +35,26 @@ Here is what is listed for each sample:
 ### BNB + Light Data
 > Anything unique or should be known about BNB+Light? Main neutrino stream...
 
-**Run 1 Analysis Development Sample (Fix + Rolling):**
-**calibntuples:** data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd
+**Run 1 Analysis Development Sample (Fix + Rolling):**   
+**calibntuples:** data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd  
 
-**Rolling Sample:** 
+**Rolling Sample:**   
 **reco1:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd
 **caf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd
 **flatcaf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd
 
-**Fixed Dev:**
-**reco1:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd
-**caf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd
-**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd
+**Fixed Dev:**  
+**reco1:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd  
+**caf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd  
+**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd  
 
-### OffBeam + Light Data 
+### OffBeam + Light Data   
 > This sample should be combined with BNB+Light for cosmic estimation
-**Development Sample**
-**calibntuples:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd
-**caf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd
-**flatcaf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd
+
+**Development Sample**  
+**calibntuples:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd  
+**caf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd  
+**flatcaf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd  
 
 
 
