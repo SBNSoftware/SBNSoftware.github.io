@@ -37,7 +37,7 @@ flatcaf:
 
 <div align="center">
   
-# Generation 2 Analyses
+## Generation 2 Analyses
 
 </div>
 
@@ -45,18 +45,18 @@ flatcaf:
 
 ---
 
-##  Data (Unblinded)
+###  Data (Unblinded)
 
 >  Unblinded data is available for use and doesn't require access requests?
 
 
-### 1. BNB + Light Data
+#### 1. BNB + Light Data (Unblinded)
 *The primary neutrino stream for SBND physics analysis.*
 
-#### **Run 1 Analysis Development Sample (Fix + Rolling)**
+##### **Run 1 Analysis Development Sample (Fix + Rolling)**
 * **calibntuples:** `data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd`
 
-#### **Rolling Sample**
+##### **Rolling Sample**
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Rolling Sample.  
 > **Usage:** *[Insert guidance on when this should be used over other samples.]*
 
@@ -66,7 +66,7 @@ flatcaf:
 | **caf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd` |
 | **flatcaf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd` |
 
-#### **Fixed Dev Sample**
+##### **Fixed Dev Sample**
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Fixed Development Sample.  
 > **Usage:** *[Insert guidance on when this should be used over the Rolling sample.]*
 
@@ -78,16 +78,21 @@ flatcaf:
 
 ---
 
-### 2. OffBeam + Light Data
+#### 2. OffBeam + Light Data (Unblinded)
 > **Integration Note:** This sample is intended to be combined with **BNB+Light** data for accurate cosmic background estimation.
 
-#### **Development Sample Reference:**
+##### **Development Sample Reference:**
 
 | Stage | Code Version | Sample Definition |
 | :--- | :--- | :--- |
 | **calibntuples** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd` |
 | **caf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd` |
 | **flatcaf** | v10_14_02 | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd` |
+
+
+
+
+
 
 
 
