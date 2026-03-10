@@ -87,16 +87,20 @@ Here is what is listed for each sample:
 
 ---
 
-# 🧬 Generation 2 Analyses
+<div align="center">
+  
+# <u> Generation 2 Analyses</u>
+
+</div>
 
 > **Note on Gen 2:** *[Insert description here regarding what distinguishes Gen 2 from previous iterations, such as updated reconstruction algorithms or new calibration constants.]*
 
 ---
 
-## 📂 Data (Unblinded)
+##  Data (Unblinded)
 
-> [!IMPORTANT]
-> **Access Status:** Unblinded data is available for general use. Please verify if your specific analysis requires formal access requests before processing.
+>  Unblinded data is available for use and doesn't require access requests?
+
 
 ### 1. BNB + Light Data
 *The primary neutrino stream for SBND physics analysis.*
@@ -108,7 +112,7 @@ Here is what is listed for each sample:
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Rolling Sample.
 > **Usage:** *[Insert guidance on when this should be used over other samples.]*
 
-| Data Product | Sample Path/Name |
+| Stage | Sample Definition |
 | :--- | :--- |
 | **reco1** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd` |
 | **caf** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd` |
@@ -118,7 +122,7 @@ Here is what is listed for each sample:
 > **Documentation:** Check the relevant DocDB for the specific run list used in the Fixed Development Sample.
 > **Usage:** *[Insert guidance on when this should be used over the Rolling sample.]*
 
-| Data Product | Sample Path/Name |
+| Stage | Sample Definition |
 | :--- | :--- |
 | **reco1** | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd` |
 | **caf** | `data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd` |
@@ -129,11 +133,13 @@ Here is what is listed for each sample:
 ### 2. OffBeam + Light Data
 > **Integration Note:** This sample is intended to be combined with **BNB+Light** data for accurate cosmic background estimation.
 
-**Development Sample Reference:**
-* **calibntuples:** `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd`
-* **caf:** `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd`
-* **flatcaf:** `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd`
+#### **Development Sample Reference:**
 
+| Stage | Sample Definition |
+| :--- | :--- |
+| **calibntuples** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd` |
+| **caf** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd` |
+| **flatcaf** | `data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd` |
 
 
 
