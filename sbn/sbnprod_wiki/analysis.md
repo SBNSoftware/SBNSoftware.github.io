@@ -33,7 +33,9 @@ Here is what is listed for each sample:
 
 
 ## Data (Unblinded)
-> Unblinded data is available for use and doesn't need access requests?
+> Unblinded data is available for use and doesn't require access requests?
+
+
 ### BNB + Light Data
 > Anything unique or should be known about BNB+Light? Main neutrino stream...
 
@@ -41,11 +43,17 @@ Here is what is listed for each sample:
 **calibntuples:** data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd  
 
 **Rolling Sample:**   
+> Check this DocDB for samples used for Rolling Sample
+> When should this be used over other samples?
+
 **reco1:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd
 **caf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd
 **flatcaf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd
 
 **Fixed Dev:**  
+> Check this DocDB for samples used in Fixed Development Sample
+> When should this be used over other samples
+
 **reco1:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd  
 **caf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd  
 **flatcaf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd  
