@@ -23,16 +23,21 @@ Here is what is listed for each sample:
 4. fcls?
 5. 
 
+<div align="center">
 
-# Generation 2 Analyses
-Description of what is different with the Gen 2 analyses
+<u>Generation 2 Analyses</u>
+
+</div>
+
+> Description of what is different with the Gen 2 analyses
 
 
-## Data
+## Data (Unblinded)
+
+**Run 1 Analysis Development Sample (Fix + Rolling):**
 
 ### BNB + Light Data
 
-Here is all the information for BNB + Light
 
 ### Zero Bias Data
 
