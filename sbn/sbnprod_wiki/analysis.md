@@ -24,24 +24,41 @@ Here is what is listed for each sample:
 5. 
 
 <div align="center">
-
 # <u> Generation 2 Analyses</u>
-
 </div>
 
 > Description of what is different with the Gen 2 analyses
 
 
 ## Data (Unblinded)
+> Unblinded data is available for use and doesn't need access requests?
+### BNB + Light Data
+> Anything unique or should be known about BNB+Light? Main neutrino stream...
 
 **Run 1 Analysis Development Sample (Fix + Rolling):**
+**calibntuples:** data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd
 
-### BNB + Light Data
+**Rolling Sample:** 
+**reco1:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd
+**caf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd
+**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd
+
+**Fixed Dev:**
+**reco1:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd
+**caf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd
+**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd
+
+### OffBeam + Light Data 
+> This sample should be combined with BNB+Light for cosmic estimation
+**Development Sample**
+**calibntuples:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd
+**caf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd
+**flatcaf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd
+
 
 
 ### Zero Bias Data
 
-### OffBeam + Light Data
 
 ### OffBeam Zero Bias Data
 
