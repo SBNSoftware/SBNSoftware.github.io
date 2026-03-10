@@ -23,7 +23,8 @@ Here is what is listed for each sample:
 4. fcls?
 
 
-What is found in each file: 
+
+
 calibntuples:
 reco1: 
 caf: 
@@ -35,7 +36,7 @@ flatcaf:
 
 <div align="center">
   
-<u> Generation 2 Analyses</u>
+# Generation 2 Analyses
 
 </div>
 
@@ -51,7 +52,7 @@ flatcaf:
 ### 1. BNB + Light Data
 *The primary neutrino stream for SBND physics analysis.*
 
-**Run 1 Analysis Development Sample (Fix + Rolling)**
+#### **Run 1 Analysis Development Sample (Fix + Rolling)**
 * **calibntuples:** `data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd`
 
 #### **Rolling Sample**
