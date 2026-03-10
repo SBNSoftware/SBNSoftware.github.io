@@ -24,7 +24,9 @@ Here is what is listed for each sample:
 5. 
 
 <div align="center">
+  
 # <u> Generation 2 Analyses</u>
+
 </div>
 
 > Description of what is different with the Gen 2 analyses
