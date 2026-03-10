@@ -35,7 +35,7 @@ flatcaf:
 
 <div align="center">
   
-# <u> Generation 2 Analyses</u>
+<u> Generation 2 Analyses</u>
 
 </div>
 
