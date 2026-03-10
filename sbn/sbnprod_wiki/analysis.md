@@ -18,17 +18,18 @@ SBN Production Available Samples Descriptions-
 
 Here is what is listed for each sample: 
 1. short description of sample, what it's used for, how to use it, general notes on usage
-2. which runs are used: time frame or d
+2. which runs are used: time frame or cuts to make definition
 3. code versions
 4. fcls?
 
 
 
+#### What is in each sample:
 
-calibntuples:
-reco1: 
-caf: 
-flatcaf:
+calibntuples:  
+reco1:   
+caf:   
+flatcaf:  
 
 
 
