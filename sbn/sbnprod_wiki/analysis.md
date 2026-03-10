@@ -22,66 +22,12 @@ Here is what is listed for each sample:
 3. code versions
 4. fcls?
 
----
 
-<div align="center">
-  
-# <u> Generation 2 Analyses</u>
-
-</div>
-
-> Description of what is different with the Gen 2 analyses
-
----
-
-## Data (Unblinded)
-> Unblinded data is available for use and doesn't require access requests?
-
-
-### BNB + Light Data
-> Anything unique or should be known about BNB+Light? Main neutrino stream...
-
-**Run 1 Analysis Development Sample (Fix + Rolling):**   
-**calibntuples:** data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd  
-
-**Rolling Sample:**   
-> Check this DocDB for samples used for Rolling Sample  
-> When should this be used over other samples?
-
-**reco1:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd
-**caf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd
-**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd
-
-**Fixed Dev:**  
-> Check this DocDB for samples used in Fixed Development Sample  
-> When should this be used over other samples
-
-**reco1:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd  
-**caf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd  
-**flatcaf:** data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd  
-
-### OffBeam + Light Data   
-> This sample should be combined with BNB+Light for cosmic estimation
-
-**Development Sample**  
-**calibntuples:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_histreco2_sbnd  
-**caf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_caf_sbnd  
-**flatcaf:** data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_flatcaf_sbnd  
-
-
-
-### Zero Bias Data
-
-
-### OffBeam Zero Bias Data
-
-## MC
-
-
-
-
-
-
+What is found in each file: 
+calibntuples:
+reco1: 
+caf: 
+flatcaf:
 
 
 
@@ -109,7 +55,7 @@ Here is what is listed for each sample:
 * **calibntuples:** `data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd`
 
 #### **Rolling Sample**
-> **Documentation:** Check the relevant DocDB for the specific run list used in the Rolling Sample.
+> **Documentation:** Check the relevant DocDB for the specific run list used in the Rolling Sample.  
 > **Usage:** *[Insert guidance on when this should be used over other samples.]*
 
 | Stage | Sample Definition |
@@ -119,7 +65,7 @@ Here is what is listed for each sample:
 | **flatcaf** | `data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd` |
 
 #### **Fixed Dev Sample**
-> **Documentation:** Check the relevant DocDB for the specific run list used in the Fixed Development Sample.
+> **Documentation:** Check the relevant DocDB for the specific run list used in the Fixed Development Sample.  
 > **Usage:** *[Insert guidance on when this should be used over the Rolling sample.]*
 
 | Stage | Sample Definition |
