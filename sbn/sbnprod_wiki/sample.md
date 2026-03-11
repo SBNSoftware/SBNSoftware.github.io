@@ -61,7 +61,7 @@ Monte Carlo official SBN Production Samples
 ### SBND MC
 --------------------------
 
-For ongoing and analysis specific MC samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)
+For ongoing and analysis specific MC samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)<code>samweb -e sbnd</code></span>
 
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
@@ -463,7 +463,7 @@ Data SBN Production Samples
 ### SBND DATA
 --------------------------
 
-For ongoing and analysis specific DATA samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)
+For ongoing and analysis specific DATA samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)<code>samweb -e sbnd</code></span>
 
 | Sample Description | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- |
