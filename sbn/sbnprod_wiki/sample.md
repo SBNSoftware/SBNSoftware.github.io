@@ -61,6 +61,8 @@ Monte Carlo official SBN Production Samples
 ### SBND MC
 --------------------------
 
+For ongoing and analysis specific MC samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)
+
 | Sample Description | production push | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- | --- |
 | GIBUU BNB + Cosmics - gen1 | SBND2026A | v10_06_00_09 | ~200k | reco1 | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_reco1_sbnd |
@@ -460,6 +462,8 @@ Data SBN Production Samples
 
 ### SBND DATA
 --------------------------
+
+For ongoing and analysis specific DATA samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)
 
 | Sample Description | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- |
