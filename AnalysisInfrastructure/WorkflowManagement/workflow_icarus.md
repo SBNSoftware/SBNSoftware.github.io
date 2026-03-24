@@ -43,3 +43,10 @@ detsim_2d_icarus.fcl<br>
 stage0_run2_icarus_mc.fcl<br>
 stage1_run2_icarus_MC.fcl<br>
 </details>
+
+<details><summary>MC 2025A - work in progress (contact A. Campani)</summary>
+standard_g4_icarus_sce.fcl<br>
+detsim_2d_icarus.fcl<br>
+stage0_run2_icarus_mc.fcl<br>
+stage1_run2_icarus_MC.fcl<br>
+</details>
