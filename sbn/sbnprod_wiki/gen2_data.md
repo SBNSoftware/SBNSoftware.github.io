@@ -8,7 +8,8 @@ toc: true
 toc_title: Gen 2 Data
 ---
 
-## Data (Unblinded)
+<h1 align="center">Data (Unblinded)</h1>
+
 
 > Unblinded data is available for use and doesn't require access requests.
 
