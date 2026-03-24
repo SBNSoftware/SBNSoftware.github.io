@@ -10,7 +10,7 @@ toc_title: Gen 2 Analyses
 
 <div align="center">
 
-# Generation 2 Analyses
+  Generation 2 Analyses
 
 </div>
 
