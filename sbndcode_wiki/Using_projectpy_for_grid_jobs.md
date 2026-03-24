@@ -141,7 +141,7 @@ that you want to run.
     <workdir>/pnfs/sbnd/resilient/users/mdeltutt/grid_workdir_sbnd/prism_ana_enuelastic</workdir>
     <numjobs>100</numjobs>
     <datatier>generated</datatier>
-    <defname>&name;_&tag;_gen</defname>
+    <defname>&name;_&releasetag;_gen</defname>
     <!-- <maxfilesperjob>1</maxfilesperjob> -->
     <memory>2000</memory>
     <jobsub> --expected-lifetime=2h --generate-email-summary -l +SingularityImage=\"/cvmfs/singularity.opensciencegrid.org/fermilab/fnal-wn-sl7:latest\" --append_condor_requirements='(TARGET.HAS_SINGULARITY=?=true)' </jobsub>
