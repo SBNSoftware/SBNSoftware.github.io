@@ -8,11 +8,7 @@ toc: true
 toc_title: Gen 2 Analyses
 ---
 
-<div align="center">
-
-  Generation 2 Analyses
-
-</div>
+<h1 align="center">Generation 2 Analyses</h1>
 
 > **Note on Gen 2:** *[Insert description here regarding what distinguishes Gen 2 from previous iterations, such as updated reconstruction algorithms or new calibration constants.]*
 
