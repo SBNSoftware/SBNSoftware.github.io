@@ -44,9 +44,17 @@ stage0_run2_icarus_mc.fcl<br>
 stage1_run2_icarus_MC.fcl<br>
 </details>
 
-<details><summary>MC 2025A - work in progress (contact A. Campani)</summary>
-standard_g4_icarus_sce.fcl<br>
-detsim_2d_icarus.fcl<br>
-stage0_run2_icarus_mc.fcl<br>
-stage1_run2_icarus_MC.fcl<br>
+<details><summary>MC 2025A - work in progress (contact A. Campani), updated on 24 March 2026</summary>
+Correct sequence for run4 data/MC:<br>
+ to be added (WIP)<br> 
+  
+Correct sequence for run2 data processing:
+ to be added (WIP)<br>
+
+Correct sequence for MC based on run2: nu-only case (no overlays) from BNB beam<br>
+simulation_genie_icarus_bnb_volDetEnclosure.fcl<br>  
+larg4_icarus_cosmics_sce_2d_drift.fcl<br>
+detsim_2d_icarus_refactored_yzsim.fcl<br>
+stage0_run2_wcdnn_icarus_mc.fcl<br>
+stage1_run2_larcv_icarus_MC.fcl<br>
 </details>
