@@ -467,6 +467,12 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition |    
 | --- | --- | --- | --- | --- |
+| Gen2 Run1 - BNB+light Unblinded (Fix + Rolling) | v10_14_02_02 | ~102k files | raw | SBND_DATA_FullRun1Light_bnblight_Raw |
+| --- | --- | ~4.79 million events | reco1 | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_reco1_sbnd|
+| --- | --- | --- | larcv | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_larcvreco1_sbnd			 |
+| --- | --- | --- | calib ntuple | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_histreco2_sbnd		 |
+| --- | --- | --- | caf | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_caf_sbnd			 		 |
+| --- | --- | --- | flatcaf | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_flatcaf_sbnd			 |
 | Run2 - gen1 (spring 2025) - BNB+light Fixed Dev | v10_06_00_09 | ~2k files | raw | SBND_DATA_Run2_FixedDev_Raw |
 | --- | --- | --- | reco1 | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_larcvreco1_sbnd |
