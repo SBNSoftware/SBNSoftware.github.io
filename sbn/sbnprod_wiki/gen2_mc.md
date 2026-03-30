@@ -13,7 +13,7 @@ toc_title: Gen 2 MC
 ---
 
 <details>
-<summary><h2 style="display:inline">➕ Central Value MC Samples</h2></summary>
+<summary><h2 style="display:inline"> Central Value MC Samples</h2></summary>
 <br>
 
 <h3>BNB + Light MC</h3>
@@ -48,7 +48,7 @@ toc_title: Gen 2 MC
 ---
 
 <details>
-<summary><h2 style="display:inline">➕ Special MC Samples</h2></summary>
+<summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
 
 <h3>Ar23</h3>
@@ -93,7 +93,7 @@ Available soon!
 ---
 
 <details>
-<summary><h2 style="display:inline">➕ Systematic Variations</h2></summary>
+<summary><h2 style="display:inline"> Systematic Variations</h2></summary>
 <br>
 
 <blockquote>
