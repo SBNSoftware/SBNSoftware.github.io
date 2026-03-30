@@ -95,9 +95,3 @@ toc_title: Gen 2 Data
 - [← Back to Gen 2 Analyses](gen2_analyses)
 - [← Back to Sample Descriptions](sample_descriptions)
 - [Samples Page](sample)
----
-
-## Related Pages
-- [← Back to Gen 2 Analyses](gen2_analyses)
-- [← Back to Sample Descriptions](sample_descriptions)
-- [Samples Page](sample)
