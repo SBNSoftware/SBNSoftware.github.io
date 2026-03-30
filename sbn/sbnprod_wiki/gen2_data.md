@@ -14,23 +14,19 @@ toc_title: Gen 2 Data
 
 ---
 
-## BNB + Light Data
-
-*The primary neutrino stream for SBND physics analysis.*
-
 <details>
-<summary><strong>➕ Run 1 Analysis Development Sample (Fix + Rolling)</strong></summary>
+<summary><h2 style="display:inline">➕ BNB + Light Data</h2></summary>
 <br>
+
+<p><em>The primary neutrino stream for SBND physics analysis.</em></p>
+
+<h3>Run 1 Analysis Development Sample (Fix + Rolling)</h3>
 
 <ul>
   <li><strong>calibntuples:</strong> <code>data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd</code></li>
 </ul>
 
-</details>
-
-<details>
-<summary><strong>➕ Rolling Sample</strong></summary>
-<br>
+<h3>Rolling Sample</h3>
 
 <blockquote>
 <strong>Documentation:</strong> Check the relevant DocDB for the specific run list used in the Rolling Sample.<br>
@@ -48,11 +44,7 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
-</details>
-
-<details>
-<summary><strong>➕ Fixed Dev Sample</strong></summary>
-<br>
+<h3>Fixed Dev Sample</h3>
 
 <blockquote>
 <strong>Documentation:</strong> Check the relevant DocDB for the specific run list used in the Fixed Development Sample.<br>
@@ -74,13 +66,15 @@ toc_title: Gen 2 Data
 
 ---
 
-## OffBeam + Light Data
-
-> **Integration Note:** This sample is intended to be combined with **BNB+Light** data for accurate cosmic background estimation.
-
 <details>
-<summary><strong>➕ Development Sample Reference</strong></summary>
+<summary><h2 style="display:inline">➕ OffBeam + Light Data</h2></summary>
 <br>
+
+<blockquote>
+<strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation.
+</blockquote>
+
+<h3>Development Sample Reference</h3>
 
 <table>
   <thead>
@@ -95,6 +89,12 @@ toc_title: Gen 2 Data
 
 </details>
 
+---
+
+## Related Pages
+- [← Back to Gen 2 Analyses](gen2_analyses)
+- [← Back to Sample Descriptions](sample_descriptions)
+- [Samples Page](sample)
 ---
 
 ## Related Pages
