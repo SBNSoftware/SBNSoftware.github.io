@@ -12,11 +12,11 @@ toc_title: Gen 2 MC
 
 ---
 
-<h2>Central Value MC Samples</h2>
-
 <details>
-<summary><h3 style="display:inline">➕ BNB + Light MC</h3></summary>
+<summary><h2 style="display:inline">➕ Central Value MC Samples</h2></summary>
 <br>
+
+<h3>BNB + Light MC</h3>
 
 <h4>Development Sample</h4>
 
@@ -47,11 +47,11 @@ toc_title: Gen 2 MC
 
 ---
 
-<h2>Special MC Samples</h2>
-
 <details>
-<summary><h3 style="display:inline">➕ Ar23</h3></summary>
+<summary><h2 style="display:inline">➕ Special MC Samples</h2></summary>
 <br>
+
+<h3>Ar23</h3>
 
 <table>
   <thead>
@@ -64,11 +64,7 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-</details>
-
-<details>
-<summary><h3 style="display:inline">➕ BSM</h3></summary>
-<br>
+<h3>BSM</h3>
 
 <blockquote>
 <strong>Note:</strong> reco1 &amp; cafs are also available for all samples listed below.<br>
@@ -86,11 +82,7 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-</details>
-
-<details>
-<summary><h3 style="display:inline">➕ xsec</h3></summary>
-<br>
+<h3>xsec</h3>
 
 <blockquote>
 Available soon!
@@ -100,10 +92,8 @@ Available soon!
 
 ---
 
-<h2>Systematic Variations</h2>
-
 <details>
-<summary><h3 style="display:inline">➕ Systematic Variations</h3></summary>
+<summary><h2 style="display:inline">➕ Systematic Variations</h2></summary>
 <br>
 
 <blockquote>
