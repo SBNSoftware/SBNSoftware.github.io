@@ -15,7 +15,7 @@ toc_title: Gen 2 Data
 ---
 
 <details>
-<summary><h2 style="display:inline">➕ BNB + Light Data</h2></summary>
+<summary><h2 style="display:inline"> BNB + Light Data</h2></summary>
 <br>
 
 <p><em>The primary neutrino stream for SBND physics analysis.</em></p>
@@ -67,7 +67,7 @@ toc_title: Gen 2 Data
 ---
 
 <details>
-<summary><h2 style="display:inline">➕ OffBeam + Light Data</h2></summary>
+<summary><h2 style="display:inline"> OffBeam + Light Data</h2></summary>
 <br>
 
 <blockquote>
