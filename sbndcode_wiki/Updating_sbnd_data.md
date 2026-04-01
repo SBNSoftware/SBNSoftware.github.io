@@ -8,64 +8,89 @@ title: Updating sbnd data
 Updating sbnd data
 ========================================================
 
--   sbnd\_data is not version controlled by git so everything is much
-    more difficult.
--   There are two ways to treat sbnd\_data to make life a little easier
+-   As of Fall 2025, sbnd\_data is now version controlled by git.
+-   In order to ensure compatibility with large files, GIT LFS is used
+    for deployment.
+-   This package leverages Git Large File Storage in order to resolve 
+    issues with files > 50 MB. If you receive errors when attempting to 
+    create a PR with a large file, or are manually cloning this repo 
+    for non-standard use, please reference the following documentation: 
+    https://git-lfs.com/
+-   CI does not run on sbnd_data PRs, this is due to some limitations on 
+    the CI side.
+    
+Steps: GitHub Release
+========================================================
+1. Merge the any PR's located at https://github.com/SBNSoftware/sbnd_data that are being added to the release.
+2. To cut a release, go to releases->Draft a new release. Create a new tag for the new version and target main.
+3. Title the release according to the version and generate release notes.
+4. After hitting 'Publish release', the release is available on github, but isn't yet available on cvmfs/scisoft 
+   for users. Please follow the next set of steps to do this.
 
+Steps: SciSoft/CVMFS Release
+========================================================
+1. In a dedicated sbnd_data work area, clone the sbnd_data repository.
+```git clone git@github.com:SBNSoftware/sbnd_data.git```
 
+2. Move into the repository, and checkout the new tag.
+```git checkout tags/<new_version>```
 
-Current version can be updated
---------------------------------------------------------------------------------
+3. Fetch and checkout the large files for the new version.
+```git lfs fetch --all && git lfs checkout```
 
--   If new files or directories need to be added the current version can
-    be updated as it will still contain all previous files and be
-    backwards compatible.
+4. Move out of the repository, and modify the directory's name to match 
+   the new versioning. Create a version info directory alongside it.
+```cd .. && mv sbnd_data <new_version> && mkdir <new_version>.version && cd <new_version>.version```
 
--   Log in to <sbnd@sbndgpvm01.fnal.gov>
+5. Copy the old version information's NULL_ file into the new version information directory.
+```cat ../../$1/$2.version/NULL_ > NULL_```
 
--   You can write directly to /grid/fermiapp/products/sbnd/sbnd\_data/\<
-    version \>
+6. Modify the contents of the new NULL_ file.
+   ```bash
+    FILE = version
+    PRODUCT = sbnd_data
+    VERSION = vXX_YY_ZZ #Bump the version
+    
+    #*************************************************
+    #
+    FLAVOR = NULL
+    QUALIFIERS = ""
+      DECLARER = <your-username>
+      DECLARED = 2025-03-25 19.52.40 GMT #Modify date
+      MODIFIER = <your-username>
+      MODIFIED = 2025-03-25 19.52.40 GMT #Modify the date
+      PROD_DIR = sbnd_data/vXX_YY_ZZ #Bump the version
+      UPS_DIR = ups
+      TABLE_FILE = sbnd_data.table
+   ```
+7. Copy to fermigrid area
+   ```bash
+   ssh sbnd@sbndgpvm01.fnal.gov
+   cp sbnd_data/vXX_YY_ZZ* /grid/fermiapp/products/sbnd/
+   ```
+8. Copy to cvmfs
+   ```bash
+   ssh cvmfssbnd@oasiscfs.fnal.gov
+   cvmfs_server transaction sbnd.opensciencegrid.org
+   rsync -r <your-username>@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/vXX_YY_ZZ* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
+   cvmfs_server tag -l sbnd.opensciencegrid.org #check which tag to use
+   cvmfs_server publish -m "Published sbnd_data XX.YY.ZZ" -a <tag> sbnd.opensciencegrid.org
+   logout
+   ```
+9. Copy to scisoft, use [copyToScisoft](https://github.com/SBNSoftware/SBNSoftware.github.io/blob/master/sbndcode_wiki/attachments/copyToSciSoft)
+   ```
+   ssh <your-username>@sbndgpvm01.fnal.gov
+   #Navigate to scratch area
+   tar -cjf sbnd_data-< dot version >-noarch.tar.bz2 -C /grid/fermiapp/products/sbnd sbnd_data/vXX_YY_ZZ sbnd_data/vXX_YY_ZZ.version
+   tar -tf *.bz2 #check the contents
+   ./copyToSciSoft.sh *.bz2
+   ```
+   
+Deprecated Documentation
+========================================================
+This documentation predates the existence of the sbnd_data repository. If for some reason it becomes necessary to cut a release on SciSoft/CVMFS only,
+these steps can be taken.
 
--   This directory isn\'t version controlled so be careful!
-
--   Make note of any added file or directories in the relevant `CHANGES`
-    files.
-
--   Log out of <sbnd@sbndgpvm01.fnal.gov> and into
-    <cvmfssbnd@oasiscfs.fnal.gov>
-
--   Start a transaction
-
--   rsync the directories\
-
-        rsync -r < user >@sbndgpvm01.fnal.gov:/grid/fermiapp/products/sbnd/sbnd_data/< version >* /cvmfs/sbnd.opensciencegrid.org/products/sbnd/sbnd_data/
-
--   Publish the transaction.
-
-
-
-New version required
-------------------------------------------------------------
-
--   If a file that already exists needs to be updated then the version
-    of sbnd\_data must be updated to ensure backwards compatability.
--   This used to be a big issue because the photon library (O(500MB)) is
-    in sbnd\_data.
--   We don\'t need this anymore so it can be dropped when sbnd\_data
-    v01.03 is needed.
--   There are some instructions of how to do a manual deployment
-    [here](Write_files_to_SciSoft.html) but it has been a
-    while since they were used and may not be valid any more.
--   A worked example of what I did last time sbnd\_data was uploaded to
-    SciSoft follows.
--   Once the tarball is on SciSoft it can be distributed on
-    /grid/fermiapp [like sbndcode and
-    sbndutil](Deploying_a_release_on_fermigrid.html) and
-    then rsync\'d to cvmfs (I think).
-
-
-Step-by-step example
-------------------------------------------------------------------------
 1. Have author copy latest `sbnd_data` into their area to modify code.
 2. Once their modifications are complete, copy into your area and make the following changes to `sbnd_data/vXX_YY_ZZ.version/NULL_`
    ```bash
