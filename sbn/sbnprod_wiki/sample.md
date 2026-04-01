@@ -467,18 +467,18 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition | SAM Database |    
 | --- | --- | --- | --- | --- |
-| Gen2 Run1 - BNB+light Unblinded (Full sample) | v10_14_02_02 | ~49k files | raw | SBND_DATA_FullRun1Light_oﬀbeamlight_Raw | |
-| --- | --- | ~2.23 million events | reco1 | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_reco1_sbnd | SBND only |
-| --- | --- | --- | larcv | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
-| --- | --- | --- | calib ntuple | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_histreco2_sbnd		 | SBND only |
-| --- | --- | --- | caf | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_caf_sbnd						 | SBND only |
-| --- | --- | --- | flatcaf | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_flatcaf_sbnd				 | SBND only |
 | Gen2 Run1 - BNB+light Unblinded (Full sample) | v10_14_02_02 | ~102k files | raw | SBND_DATA_FullRun1Light_bnblight_Raw | |
 | --- | --- | ~4.79 million events | reco1 | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_reco1_sbnd| SBND only |
 | --- | --- | --- | larcv | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
 | --- | --- | --- | calib ntuple | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_histreco2_sbnd		 | SBND only |
 | --- | --- | --- | caf | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_caf_sbnd			 		 | SBND only |
 | --- | --- | --- | flatcaf | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_flatcaf_sbnd			 | SBND only |
+| Gen2 Run1 - off-Beam+light Unblinded (Full sample) | v10_14_02_02 | ~49k files | raw | SBND_DATA_FullRun1Light_oﬀbeamlight_Raw | |
+| --- | --- | ~2.23 million events | reco1 | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_reco1_sbnd | SBND only |
+| --- | --- | --- | larcv | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
+| --- | --- | --- | calib ntuple | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_histreco2_sbnd		 | SBND only |
+| --- | --- | --- | caf | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_caf_sbnd						 | SBND only |
+| --- | --- | --- | flatcaf | data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_flatcaf_sbnd				 | SBND only |
 | Run2 - gen1 (spring 2025) - BNB+light Fixed Dev | v10_06_00_09 | ~2k files | raw | SBND_DATA_Run2_FixedDev_Raw |
 | --- | --- | --- | reco1 | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025C_Spring25-Run2_FixedDev_bnblight_v10_06_00_09_larcvreco1_sbnd |
