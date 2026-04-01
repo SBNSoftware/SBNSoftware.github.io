@@ -134,7 +134,7 @@ these steps can be taken.
    ```
 
 
-Worked example
+Worked example (Deprecated)
 ------------------------------------------------------------------------
 
     ssh tbrooks@sbndgpvm01.fnal.gov
