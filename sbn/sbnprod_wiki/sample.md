@@ -63,15 +63,22 @@ Monte Carlo official SBN Production Samples
 
 <span style="color: red; font-weight: bold;">For ongoing and analysis specific MC samples information please access [this document for gen1 (spring 2025)](https://docs.google.com/document/d/1oODQpwODFhpfk7zSfVG0x_YllFt5TLsWsUGJIKAqoGI/edit?tab=t.0#heading=h.xrtnnseitd1t) and [this document for gen2 (fall 2025)](https://docs.google.com/document/d/1lOnvP7gMBJFHt85zKisvpGartl4eIAAlwhTWlxGs9QI/edit?tab=t.0#heading=h.vw29zbd9h990)
 
-| Sample Description | production push | release version | # Events | File type | Samweb definition |    
-| --- | --- | --- | --- | --- | --- |
-| GIBUU BNB + Cosmics - gen1 | SBND2026A | v10_06_00_09 | ~200k | reco1 | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_reco1_sbnd |
-| --- | --- | --- | --- | flatcaf | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_flatcaf_sbnd |
-| Fall Production 2025 (gen2) - BNB Light - 2e19 POT | SBND2025C | v10_14_02 | ~1M | reco1 | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_reco1_sbnd |
-| --- | --- | --- | --- | larcv | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_larcvreco1_sbnd |
-| --- | --- | --- | --- | calib ntuple | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd |
-| --- | --- | --- | --- | caf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd |
-| --- | --- | --- | --- | flatcaf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd |
+| Sample Description | production push | release version | # Events | File type | Samweb definition | SAM Database |
+| --- | --- | --- | --- | --- | --- |--- |
+| GIBUU BNB + Cosmics - gen1 | SBND2026A | v10_06_00_09 | ~200k | reco1 | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_reco1_sbnd | |
+| --- | --- | --- | --- | flatcaf | mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_flatcaf_sbnd | |
+| Fall Production 2025 (gen2) - BNB Light - 2e19 POT | SBND2025C | v10_14_02 | ~1M | reco1 | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_reco1_sbnd | |
+| --- | --- | --- | --- | larcv | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_larcvreco1_sbnd | |
+| --- | --- | --- | --- | calib ntuple | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd | |
+| --- | --- | --- | --- | caf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd | |
+| --- | --- | --- | --- | flatcaf | mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd | |
+| Fall Production 2025 (gen2) - Syst Variations - PDS detvar 0.94xLY | SBND2026A | v10_14_02_04 | ~3.3M | reco1 | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_reco1_sbnd | SBND only |
+| --- | --- | --- | --- | larcv | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_larcvreco1_sbnd | SBND only |
+| --- | --- | --- | --- | calib ntuple | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_histreco2_sbnd | SBND only |
+| --- | --- | --- | --- | caf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_caf_sbnd | SBND only |
+| --- | --- | --- | --- | flatcaf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_flatcaf_sbnd | SBND only |
+| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | Spring25 (gen1) BNB+Cosmics - Syst Variations - CV | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_CV_caf_flat_caf_sbnd |
 | Syst Variations - No SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_0xSCE_caf_flat_caf_sbnd |
 | Syst Variations - 2x SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_2xSCE_caf_flat_caf_sbnd |
