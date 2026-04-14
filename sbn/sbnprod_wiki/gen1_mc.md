@@ -4,7 +4,7 @@ title: Generation 1 — MC
 subtitle: SBN Production — Gen 1 Monte Carlo Samples
 description: Gen 1 Monte Carlo simulation samples for SBN analyzers
 hero_height: is-medium
-toc: true
+toc: false
 toc_title: Gen 1 MC
 ---
 
