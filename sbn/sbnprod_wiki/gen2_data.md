@@ -4,7 +4,7 @@ title: Generation 2 — Data (Unblinded)
 subtitle: SBN Production — Gen 2 Data Samples
 description: Gen 2 unblinded data samples for SBN analyzers
 hero_height: is-medium
-toc: true
+toc: false
 toc_title: Gen 2 Data
 ---
 
