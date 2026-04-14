@@ -4,7 +4,7 @@ title: Generation 2 Analyses
 subtitle: SBN Production — Gen 2 Sample Descriptions
 description: Generation 2 analysis samples for SBN analyzers
 hero_height: is-medium
-toc: true
+toc: false
 toc_title: Gen 2 Analyses
 ---
 
