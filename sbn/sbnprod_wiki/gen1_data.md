@@ -4,7 +4,7 @@ title: Generation 1 — Data
 subtitle: SBN Production — Gen 1 Data Samples
 description: Gen 1 data samples for SBN analyzers
 hero_height: is-medium
-toc: true
+toc: false
 toc_title: Gen 1 Data
 ---
 
