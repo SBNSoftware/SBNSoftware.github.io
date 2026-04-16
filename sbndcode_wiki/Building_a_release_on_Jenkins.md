@@ -70,12 +70,13 @@ Build configuration
 ----------------------------------------------------------
 
 -   Parameter descriptions:
-    -   `SBND_VERSION`: release version number you used to tag the release
-    -   `SBND`: release branch for sbndcode
+    -   `SBND_VERSION`: release version number you used to tag the release (eg `v10_20_05`)
+    -   `SBND`: release branch for sbndcode (eg `release/v10_20_05`)
     -   `SBNDUTIL`: release branch for sbndutil, if non-specified gets tag from sbndcode ups products
     -   `SQUAL`: larsoft s-qualifier for scientific linux \< art
-        version \>:\< compiler \>, the larsoft release notes will inform
-        you if either of these change. 
+        version \>:\< compiler \>, the larsoft release notes will inform. As of Apr16, 
+        you if either of these change. As of Apr 16 2025, you should use s131 for this.
+    - Note: if you are not using a new sbndutil release, you can reuse an old one via `tags/v10_06_01`
 -   We only make compiled binaries for SLF7, we used to do OSX
     builds too but nobody used them and the build time was very long.
 -   If at some point in the future we need to add/drop builds the
