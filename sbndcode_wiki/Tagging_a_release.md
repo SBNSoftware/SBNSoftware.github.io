@@ -37,10 +37,15 @@ Instructions
         to go back and make changes and you can free up space if app
         gets full.
 
--   Go into your `releases/` directory and run the script
-    `start_release.sh` with
+-   Setup the container `sh /exp/$(id -ng)/data/users/vito/podman/start_SL7dev.sh` and setup sbnd `. /cvmfs/sbnd.opensciencegrid.org/products/sbnd/setup_sbnd.sh`
 
-        . start_release.sh < version tag >
+-   Go into your `releases/` directory and run the script
+    `git_start_release.sh` with
+
+        . git_start_release.sh < version tag >
+		
+-   Additional modes are available for production releases (which utilize different branches) and for sbndutil (production script repo).
+
 -   Use `master` branch for bringing forth production releases when prompted by `git flow init -f`. Everything else is set to it's default so you can just hit enter through the rest of the prompts.
 
 -   This will create new releases of `sbndcode` and `sbndutil`, with branches `release/vXX_YY_ZZ`.
@@ -58,13 +63,14 @@ Instructions
 
 -   Files to edit:
     -   `$MRB_SOURCE/sbndcode/CMakeLists.txt`
-    -   `$MRB_SOURCE/sbndutil/CMakeLists.txt`
+    -   `$MRB_SOURCE/sbndutil/CMakeLists.txt` (if using sbndutil mode)
     -   `$MRB_SOURCE/sbndcode/ups/product_deps`
-    -   `$MRB_SOURCE/sbndutil/ups/product_deps`
+    -   `$MRB_SOURCE/sbndutil/ups/product_deps` (if using sbndutil mode)
 
 -   Do a full install and run the unit tests.
 
-        cd $MRB_BUILDDIR
+        cd lardev-<your version>
+		source localProducts_larsoft_<your version>_e26_prof/setup
         mrbsetenv
         mrb t -j16
 
