@@ -31,14 +31,6 @@ Instructions
 -   Source content for the sbnd cvmfs repository will be visible in
     /cvmfs/sbnd.opensciencegrid.org
 
--   Check the last tags of the cvmfs repository
-
-        cvmfs_server tag -l sbnd.opensciencegrid.org
-
--   I usually do this from the `temp/` directory as the scripts copy
-    over some manifest files into your current directory for some
-    reason, these can just be deleted.
-
 -   Start a transaction
 
         cvmfs_server transaction sbnd.opensciencegrid.org
@@ -59,7 +51,7 @@ ls products/sbndcode #find the version uploaded
 
 -   End transaction and publish updated content
 
-        cvmfs_server publish -m "Published sbndcode and sbndutil < version >" -a < new tag > sbnd.opensciencegrid.org
+        cvmfs_server publish -m "Published sbndcode and sbndutil < version >" sbnd.opensciencegrid.org
 
 -   If something goes wrong and you want to get rid of the changed you
     just made and end the transaction you can
