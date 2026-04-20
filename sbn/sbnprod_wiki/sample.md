@@ -472,6 +472,11 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition | SAM Database |    
 | --- | --- | --- | --- | --- |
+* Gen2 Run2 - BNB+light (Narrow Bunch) Runs 20011 and runs 20015 to 20019
+| --- | v10_14_02_02 | --- | raw | SBND_DATA_Run2_NarrowBunch_Raw | |
+| --- | --- | ~88k events | reco1 | data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_reco1_sbnd | SBND only |
+| --- | --- | --- | larcv | data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
+| --- | --- | --- | calib ntuple | data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_histreco2_sbnd		 | SBND only |
 | Gen2 Run1 - BNB+light Unblinded (Full sample) | v10_14_02_02 | ~102k files | raw | SBND_DATA_FullRun1Light_bnblight_Raw | |
 | --- | --- | ~4.79 million events | reco1 | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_reco1_sbnd| SBND only |
 | --- | --- | --- | larcv | data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
