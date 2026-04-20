@@ -77,6 +77,11 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | calib ntuple | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_histreco2_sbnd | SBND only |
 | --- | --- | --- | --- | caf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_caf_sbnd | SBND only |
 | --- | --- | --- | --- | flatcaf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_flatcaf_sbnd | SBND only |
+| Fall Production 2025 (gen2) - Syst Variations - PDS detvar 1.19xLY | SBND2026A | v10_14_02_04 | ~3.3M | reco1 | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_reco1_sbnd | SBND only |
+| --- | --- | --- | --- | larcv | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_larcvreco1_sbnd | SBND only |
+| --- | --- | --- | --- | calib ntuple | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_histreco2_sbnd | SBND only |
+| --- | --- | --- | --- | caf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_caf_sbnd | SBND only |
+| --- | --- | --- | --- | flatcaf | mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_flatcaf_sbnd | SBND only |
 | Spring25 (gen1) BNB+Cosmics - Syst Variations - CV | MC2025B | v10_06_00_10 | ~170k | flatcaf | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_CV_caf_flat_caf_sbnd |
 | Syst Variations - No SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_0xSCE_caf_flat_caf_sbnd |
 | Syst Variations - 2x SCE | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_2xSCE_caf_flat_caf_sbnd |
