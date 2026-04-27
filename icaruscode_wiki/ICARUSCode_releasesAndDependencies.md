@@ -13,7 +13,7 @@ List of ICARUSCode Releases
 
 This list of ICARUSCode releases is no longer actively maintained. Please refer to the [GitHub page for ICARUSCode releases](https://github.com/SBNSoftware/icaruscode/releases). You can also find a historical record of all tagged versions of ICARUSCode by clicking on the menu to select different branches/tags on the [main GitHub page for ICARUSCode](https://github.com/SBNSoftware/icaruscode/) (see screenshot below).
 
-![Image showing how to navigate from the main page of a GitHub repository to the taggged versions of said repository.](/icaruscode_wiki/images/hot_to_see_github_tags.png)
+![Image showing how to navigate from the main page of a GitHub repository to the taggged versions of said repository.](/icaruscode_wiki/images/how_to_see_github_tags.png)
 
 For any questions about releases of ICARUSCode or to ask for a new release, please contact the current (as of January 2026) Release Manager and author of this page, Jacob Smith (jacob dot a dot smith at stonybrook dot edu).
 
