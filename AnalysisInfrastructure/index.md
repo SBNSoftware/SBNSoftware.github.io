@@ -78,8 +78,6 @@ Our currently tagged release is VNN_YY_XX.
 
 ### [Production Fhicl Chains](prodfcl.md)
 
-### [Bug Reporting](bug.md)
-
 ### [Tutorials](gettingstarted.md) 
 
 ### Support or Contact
