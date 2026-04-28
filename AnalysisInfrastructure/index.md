@@ -6,8 +6,6 @@ This group is intended to help enable the SBN Program physics goals by provide r
 
 We'll use this wiki page for tracking group goals, progress, and release information. If you have any questions please reachout to the coordinators [Giuseppe Cerati and Steven Gardiner](mailto:cerati@fnal.gov,gardiner@fnal.gov). 
 
-**If you are looking to get started quickly check out our [Getting Started Page](gettingstarted.md)!**
-
 [List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
 ### [Production Release Glossary](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/prod_gloss)
@@ -77,8 +75,6 @@ Meetings: every other Friday at 9:00 CT
 Our currently tagged release is VNN_YY_XX.
 
 ### [Production Fhicl Chains](prodfcl.md)
-
-### [Tutorials](gettingstarted.md) 
 
 ### Support or Contact
 
