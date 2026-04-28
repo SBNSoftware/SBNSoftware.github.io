@@ -66,7 +66,7 @@ Monte Carlo productions
 [Code management and deployment stuff](Code_management_and_deployment_stuff.md)
 --------------------------------------------------------------------------------
 
--   [Roles and people](Roles_and_people.md)
+-   [Roles and People](roles_and_people.md)
 
 
 
