@@ -39,7 +39,7 @@ Production certificate proxy for `icaruspro` shared user
 For people who needs a certificate proxy when wearing the `icaruspro` user, the procedure is different.
 Again, [SBND instructions](../sbndcode_wiki/Get_a_certificate_proxy.md) are formally correct, with some changes.
 
-The safest path is to ask [ICARUS production manager](Roles_and_people.md) to get the specific instructions. The following is a snapshot of the status that might change in the future.
+The safest path is to ask the [ICARUS Production Manager](roles_and_people.md#production-management) to get the specific instructions. The following is a snapshot of the current status, which may change in the future.
 
 A certificate for `Production` role is always automatically kept up to date, and the startup script (`.bash_profile`) is automatically setting up the environment variable `KX509_USER_PROXY` to point at it.
 If this does not executed for any reason, an equivalent line can be executed. First cross-check the correct command, e.g.
