@@ -4,6 +4,17 @@ title: SAM
 ---
 
 
+============================================
+### Some notes by Lucy to be fixed later:
+
+Useful SAM commands, for raw sbnd data files (this was in context of trigger analysis):
+
+       samweb -e sbnd list-files "run_number 19872 and sbnd_project.stage daq"
+       samweb -e sbnd list-files "run_number 19872 and sbnd_project.stage decoded-raw"
+\
+
+
+============================================
 
 SAM for SBND
 ============================================
