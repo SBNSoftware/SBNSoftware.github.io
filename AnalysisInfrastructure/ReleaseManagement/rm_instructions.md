@@ -156,7 +156,7 @@ In a data directory, clone (or checkout) the updated sbndata, declare the produc
 
 `mv * ../v01_04/`
 
-`ups declare -0 -z /exp/sbnd/data/users/mnebot/sbndata -r sbndata/v01_04 -m sbndata.table sbndata v01_04`
+`ups declare -0 -z /exp/sbnd/data/users/mnebot/sbndata -r sbndata/v01_04 -m sbndata.table -U ups sbndata v01_04`
 
 `tar -cjf sbndata-01.04-noarch.tar.bz2 -C /exp/sbnd/data/users/mnebot/sbndata sbndata/v01_04 sbndata/v01_04.version`
 
