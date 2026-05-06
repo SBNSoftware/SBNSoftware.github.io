@@ -852,7 +852,11 @@ _2024 November_: A sample of central value SBND MC events were generated on Pola
 | --- | --- | --- | calib_ntuples | Icaruspro_2025_wcdnn_production_Run4_SBN_v10_06_00_01p05_fstrmOffBeamBNBMAJORITY_calib_ntuples |
 
 
+### ICARUS RUN4 MC Overlays
 
+| Sample Description | release version | # Events | File type | Samweb definition |
+|Run 4 Neutrino Overlay MC |v10_06_00_06p03| 3.5M | stage0 |icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_stage0 |
+| --- | --- | --- | flatcaf | icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_flat_caf|
 
 
 SBND Production Progress Report
