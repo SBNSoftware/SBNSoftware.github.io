@@ -90,6 +90,10 @@ Monte Carlo official SBN Production Samples
 | Syst Variations - PMT High SPE Noise | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_PMTHighNoise_caf_flat_caf_sbnd |
 | Syst Variations - WireMod X-θXW | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_XThetaXW_caf_flat_caf_sbnd |
 | Syst Variations - WireMod Y-Z | --- | --- | --- | --- | mc_MCP2025B_1e20_10_prodgenie_corsika_proton_rockbox_sbnd_SystVar_WireMod_YZ_caf_flat_caf_sbnd |
+| Fall Production 2025 (gen1) - Syst Variations - Wiremod YZ variation | SBND2026A | v10_06_00_10 | ~6.8M | wiremod | mc_SBND2026A_prodgenie_corsika_proton_rockbox_sbnd_SV_v10_06_00_10_wiremod_sbnd | SBND only |
+| --- | --- | --- | --- | calib ntuple | mc_SBND2026A_prodgenie_corsika_proton_rockbox_sbnd_SV_v10_06_00_10_histreco2_sbnd | SBND only |
+| --- | --- | --- | --- | caf | mc_SBND2026A_prodgenie_corsika_proton_rockbox_sbnd_SV_v10_06_00_10_caf_sbnd | SBND only |
+| --- | --- | --- | --- | flatcaf | mc_SBND2026A_prodgenie_corsika_proton_rockbox_sbnd_SV_v10_06_00_10_flatcaf_sbnd | SBND only |
 | Fall25 Validation II - BNB Light - 1e19 POT | MC2025B |  | ~600k | reco1 | mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_gen_g4_detsim_reco1_sbnd |
 | --- | --- | --- | --- | larcv | mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_gen_g4_detsim_reco1_larcv_sbnd |
 | --- | --- | --- | --- | calib tuple | hist_mc_MCP2025C_FallValidationII_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_reco2_sbnd |
