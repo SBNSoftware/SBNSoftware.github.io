@@ -46,12 +46,10 @@ Instructions
 		
 -   Additional modes are available for production releases (which utilize different branches) and for sbndutil (production script repo).
 
--   Use `master` branch for bringing forth production releases when prompted by `git flow init -f`. Everything else is set to it's default so you can just hit enter through the rest of the prompts.
+-   When prompted by `git flow init -f`, enter the branches as instructed by the script. These will vary depending on if you are cutting a production release or a develop/mainline release.
+    The proper branches are indicated by a `--> Use SOMEBRANCH` output to the terminal.
 
--   This will create new releases of `sbndcode` and `sbndutil`, with branches `release/vXX_YY_ZZ`.
-
--   Merge any feature branches that are going into the release, fixing
-    any merge conflicts.
+-   This will create new releases of `sbndcode` and `sbndutil`, with branches `release/vXX_YY_ZZ`. You will need to cd into the directory the script just created and load up the mrb environment.
 
 -   Change any files that include the version number of the package
     being tagged and the version numbers of dependent products. 
@@ -68,10 +66,13 @@ Instructions
     -   `$MRB_SOURCE/sbndutil/ups/product_deps` (if using sbndutil mode)
 
 -   Do a full install and run the unit tests.
-
+  
+		If you haven't already...
         cd lardev-<your version>
 		source localProducts_larsoft_<your version>_e26_prof/setup
         mrbsetenv
+		
+		Then do...
         mrb t -j16
 
 -   If any unit tests fail, identify the offending code and email the
