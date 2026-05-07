@@ -107,7 +107,8 @@ Instructions
 
 -   Push everything to origin (once for sbndcode and once for sbndutil)
 
-        git push origin develop master
+        git push origin develop master # if mainline release
+		git push origin production/sbnd-gen2 production/sbnd-gen2-master # if mainline release
         git push --tags
 
 
