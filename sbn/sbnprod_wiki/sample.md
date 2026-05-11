@@ -484,6 +484,9 @@ Data SBN Production Samples
 | --- | --- | --- | calib ntuple | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd |
 | --- | --- | --- | caf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_caf_sbnd |
 | --- | --- | --- | flatcaf | data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_flatcaf_sbnd |
+| Fall Production 2025 (gen2) - Run 1 - BNB Light Rolling Dev Respin | v10_14_02_04 | ~1.5k files | calib ntuple | data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_RollingDev_Respin_v10_14_02_04_histreco2_sbnd | SBND only |
+| --- | --- | --- | caf | data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_RollingDev_Respin_v10_14_02_04_caf_sbnd | SBND only |
+| --- | --- | --- | flatcaf | data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_RollingDev_Respin_v10_14_02_04_flatcaf_sbnd | SBND only |
 | Fall Production 2025 (gen2) - Run 1 - Intime Dev | v10_14_02 | ~1.5k files | raw | SBND_DATA_Run1_DevSample_offbeamlight_Raw |
 | --- | --- | --- | reco1 | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_reco1_sbnd |
 | --- | --- | --- | larcv | data_MCP2025C_Fall25-Run1_InTime_offbeamlight_v10_14_02_larcvreco1_sbnd |
