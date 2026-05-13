@@ -52,15 +52,6 @@ sbnd\_data
 -   [Updating sbnd\_data](Updating_sbnd_data.html)
 
 
-
-Code monitoring
---------------------------------------------------
-
--   [Commit emails](Commit_emails.html)
--   [Continuous integration](/sbn/sbnci_wiki/CI_Validation.md)
-
-
-
 Mailing lists you should be on
 --------------------------------------------------------------------------------
 
@@ -71,11 +62,3 @@ Mailing lists you should be on
 -   BUILD-SERVICE-USERS
 -   LARSOFT
 -   ART-USERS
-
-
-
-Legacy pages
---------------------------------------------
-
--   [Deploy on
-    /grid/fermiapp](Deploying_a_release_on_fermigrid.html)
