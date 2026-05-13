@@ -163,7 +163,7 @@ working group colleague, someone familiar with your code, reviewers [list](sugge
 
 3. Address request, changes or comments to get the reviewers approval.
 
-4. Trigger the integrated (for e20/c7:prof) CI test with the comment `trigger build` in your GitHub PR. If the PR is dependent on other PRs, the CI test should be performed once for all with `trigger build org/repo#num,org2/repo2#num2` (as for an example `trigger build LArSoft/larevt#11,SBNSoftware/sbndcode#108`) in a GitHub comment. Look at the checks comments (CI Dashboard) to find information about the possible cause of failures and try to solve it.    
+4. Trigger the integrated (for e20/c7:prof) CI test with the comment `trigger build` in your GitHub PR. If the PR is dependent on other PRs, the CI test should be performed once for all with `trigger build org/repo#num org2/repo2#num2` (as for an example `trigger build LArSoft/larevt#11 SBNSoftware/sbndcode#108`) in a GitHub comment. Look at the checks comments (CI Dashboard) to find information about the possible cause of failures and try to solve it.    
 Wait until the nightly build for e20/c7:debug CI test and check the outputs in CI Dashboard or Slack (#sbn_ci_alerts).
 If successful your code will be ready to be merged into the stack.
    The succes should be posted in the dependent PRs as well to inform about the readiness.
