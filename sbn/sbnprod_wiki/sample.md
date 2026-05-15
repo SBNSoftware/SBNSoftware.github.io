@@ -688,10 +688,11 @@ ICARUS Run2 2025 Spring SBN Production Samples
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
-| ICARUS Spring 2025A BNB Run 2 Overlay w offbeamminbias data (A) | v10_06_00_04p04 | --- | stage0 (A) | production_mc_2025A_ICARUS_Overlays_BNB_MC_RUN2_September_v10_06_00_04p04_stage0 |
-| ICARUS Spring 2025A BNB Run 2 Overlay w offbeamminbias data (B) | v10_06_00_04p04 | --- production_mc_2025A_ICARUS_Overlays_BNB_RUN2_September_v10_06_00_04p04_stage0 (B)|
+| ICARUS Spring 2025A BNB Run 2 Overlay w offbeamminbias data (A) | v10_06_00_04p04 | 0.9M | stage0 (A) | production_mc_2025A_ICARUS_Overlays_BNB_MC_RUN2_September_v10_06_00_04p04_stage0 |
+| ICARUS Spring 2025A BNB Run 2 Overlay w offbeamminbias data (B) | v10_06_00_04p04 | 0.9M| stage0 (B) |production_mc_2025A_ICARUS_Overlays_BNB_RUN2_September_v10_06_00_04p04_stage0 |
 
 * Flatcafs/larcv with old icaruscode v10_06_00_04p04
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | calibtuples | production_mc_2025A_ICARUS_Overlays_BNB_MC_RUN2_summer_2025_v10_06_00_04p04_calibtuples |
 | --- | --- | --- | caf | production_mc_2025A_ICARUS_Overlays_BNB_MC_RUN2_summer_2025_v10_06_00_04p04_caf |
 | --- | --- | --- | flatcaf | production_mc_2025A_ICARUS_Overlays_BNB_MC_RUN2_summer_2025_v10_06_00_04p04_flatcaf |
