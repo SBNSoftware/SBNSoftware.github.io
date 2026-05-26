@@ -460,6 +460,12 @@ Data SBN Production Samples
 
 | Sample Description | release version | # Events | File type | Samweb definition | SAM Database |    
 | --- | --- | --- | --- | --- | --- |
+| Gen2 Run2 Cosmic Muon Data | v10_14_02_04 | ~42.9k files | raw | SBND_DATA_Run2_crossingmu_Raw_Snapshot_2026May19 (from SBND_DATA_Run2_crossingmu_Raw) | |
+| --- | --- | ~1.93 million events | reco1 | data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_reco1_sbnd | SBND only |
+| --- | --- | --- | larcv | data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_larcvreco1_sbnd			 | SBND only |
+| --- | --- | --- | calib ntuple | data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_histreco2_sbnd		 | SBND only |
+| --- | --- | --- | caf | data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_caf_sbnd			 | SBND only |
+| --- | --- | --- | flatcaf | data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_flatcaf_sbnd		 | SBND only |
 | Gen2 Run2 - BNB+light (Narrow Bunch) Runs 20011 and runs 20015 to 20019 | v10_14_02_02 | 1876 files | raw | SBND_DATA_Run2_NarrowBunch_Raw | |
 | --- | --- | ~88k events | reco1 | data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_reco1_sbnd | SBND only |
 | --- | --- | --- | larcv | data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_larcvreco1_sbnd			 | SBND only |
