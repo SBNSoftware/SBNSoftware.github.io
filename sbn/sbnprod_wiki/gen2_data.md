@@ -26,11 +26,11 @@ toc_title: Gen 2 Data
   <li><strong>calibntuples:</strong> <code>data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd</code></li>
 </ul>
 
-<h3>Fun 1 Rolling Analysis Development Sample</h3>
+<h3>Run 1 Rolling Analysis Development Sample</h3>
 
 <blockquote>
 <strong>Documentation:</strong> Check DocDB 44638 for the specific run list used in the Rolling Sample.<br>
-<strong>Usage:</strong> <em>[Rolling Dev sample is a good place to check the time-dependent signatures present in analyses.]</em>
+<strong>Usage:</strong> <em>Rolling Dev sample is a good place to check the time-dependent signatures present in analyses.</em>
 </blockquote>
 
 <table>
@@ -48,7 +48,7 @@ toc_title: Gen 2 Data
 
 <blockquote>
 <strong>Documentation:</strong> Check DocDB 44638 for the specific run list used in the Fixed Development Sample.<br>
-<strong>Usage:</strong> <em>[The fixed sample is a good place to start an analysis because its data is taken over a short time period and shouldn't contain time-dependent signatures.]</em>
+<strong>Usage:</strong> <em>The fixed sample is a good place to start an analysis because its data is taken over a short time period and shouldn't contain time-dependent signatures.</em>
 </blockquote>
 
 <table>
@@ -132,7 +132,7 @@ toc_title: Gen 2 Data
 </table>
 
 
-<details>
+</details>
 
 
 
