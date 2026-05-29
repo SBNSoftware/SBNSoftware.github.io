@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Generation 2 — Data (Unblinded)
+title: Generation 2 — Data 
 subtitle: SBN Production — Gen 2 Data Samples
-description: Gen 2 unblinded data samples for SBN analyzers
+description: Gen 2 data samples for SBN analyzers
 hero_height: is-medium
 toc: false
 toc_title: Gen 2 Data
@@ -26,11 +26,11 @@ toc_title: Gen 2 Data
   <li><strong>calibntuples:</strong> <code>data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd</code></li>
 </ul>
 
-<h3>Rolling Sample</h3>
+<h3>Fun 1 Rolling Analysis Development Sample</h3>
 
 <blockquote>
-<strong>Documentation:</strong> Check the relevant DocDB for the specific run list used in the Rolling Sample.<br>
-<strong>Usage:</strong> <em>[Insert guidance on when this should be used over other samples.]</em>
+<strong>Documentation:</strong> Check DocDB 44638 for the specific run list used in the Rolling Sample.<br>
+<strong>Usage:</strong> <em>[Rolling Dev sample is a good place to check the time-dependent signatures present in analyses.]</em>
 </blockquote>
 
 <table>
@@ -39,16 +39,16 @@ toc_title: Gen 2 Data
   </thead>
   <tbody>
     <tr><td><strong>reco1</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_reco1_sbnd</code></td></tr>
-    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_caf_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_RollingDev_bnblight_v10_14_02_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_RollingDev_Respin_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_RollingDev_Respin_v10_14_02_04_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 
-<h3>Fixed Dev Sample</h3>
+<h3>Run 1 Fixed Analysis Development Sample</h3>
 
 <blockquote>
-<strong>Documentation:</strong> Check the relevant DocDB for the specific run list used in the Fixed Development Sample.<br>
-<strong>Usage:</strong> <em>[Insert guidance on when this should be used over the Rolling sample.]</em>
+<strong>Documentation:</strong> Check DocDB 44638 for the specific run list used in the Fixed Development Sample.<br>
+<strong>Usage:</strong> <em>[The fixed sample is a good place to start an analysis because its data is taken over a short time period and shouldn't contain time-dependent signatures.]</em>
 </blockquote>
 
 <table>
@@ -57,8 +57,8 @@ toc_title: Gen 2 Data
   </thead>
   <tbody>
     <tr><td><strong>reco1</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_reco1_sbnd</code></td></tr>
-    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_caf_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_MCP2025C_Fall25-Run1_BNB_FixedDev_bnblight_v10_14_02_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_FixedDev_Respin_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run1_BNBLight_Data_FixedDev_Respin_v10_14_02_04_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 
@@ -71,10 +71,10 @@ toc_title: Gen 2 Data
 <br>
 
 <blockquote>
-<strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation.
+<strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation, or can be used for other background studies. 
 </blockquote>
 
-<h3>Development Sample Reference</h3>
+<h3>Development Sample</h3>
 
 <table>
   <thead>
@@ -87,7 +87,54 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+
+<h3>Full Run 1 Sample</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_InTime-Run1_v10_14_02_02_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
 </details>
+
+
+
+
+
+<h1 align="center">Data (Blinded)</h1>
+
+> Blinded data requires access requests. For more information, consult your working group conveners.
+
+---
+
+<details>
+<summary><h2 style="display:inline"> BNB + Light Data</h2></summary>
+<br>
+
+<h3>Full Run 1 Sample</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_reco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+<details>
+
+
 
 ---
 
