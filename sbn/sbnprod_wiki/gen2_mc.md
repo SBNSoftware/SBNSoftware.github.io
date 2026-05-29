@@ -64,7 +64,8 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
----
+<hr>
+
 
 <h3>BSM</h3>
 
@@ -86,7 +87,8 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
----
+<hr>
+
 
 <h3>xsec</h3>
 
