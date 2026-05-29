@@ -22,12 +22,11 @@ toc_title: Gen 2 MC
 
 <table>
   <thead>
-    <tr><th>Stage</th><th>Sample Definition</th></tr>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>calibntuples</strong></td><td><em>[Insert sample definition]</em></td></tr>
-    <tr><td><strong>caf</strong></td><td><em>[Insert sample definition]</em></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td><code>aurora_SBND2026A_gen2_BNBLight_DevSample_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_DevSample_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_caf_sbnd</em></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_DevSample_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</em></td></tr>
   </tbody>
 </table>
 
@@ -35,11 +34,12 @@ toc_title: Gen 2 MC
 
 <table>
   <thead>
-    <tr><th>Stage</th><th>Sample Definition</th></tr>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>reco1</strong></td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_reco1_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_reco1_sbnd</em></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_caf_sbnd</em></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</em></td></tr>
   </tbody>
 </table>
 
@@ -55,19 +55,21 @@ toc_title: Gen 2 MC
 
 <table>
   <thead>
-    <tr><th>Stage</th><th>Sample Definition</th></tr>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>calibntuples</strong></td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd</code></td></tr>
-    <tr><td><strong>caf</strong></td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
+
+---
 
 <h3>BSM</h3>
 
 <blockquote>
-<strong>Note:</strong> reco1 &amp; cafs are also available for all samples listed below.<br>
+<strong>Note:</strong>For looking at other mass points, replace the name at the end of the SAM definition with the respective mass point.<br>
 <strong>Available mass points:</strong> HNL_nupi0_m260MeV, HNL_nupi0_m215MeV, HNL_nupi0_m190MeV, HNL_nupi0_m165MeV, HNL_nupi0_m140MeV, HNL_nuee_m140MeV, HNL_nuee_m125MeV, HNL_nuee_m100MeV, HNL_nuee_m75MeV, HNL_nuee_m50MeV, HNL_nuee_m35MeV
 </blockquote>
 
@@ -75,18 +77,91 @@ toc_title: Gen 2 MC
 
 <table>
   <thead>
-    <tr><th>Stage</th><th>Sample Definition</th></tr>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>flatcaf</strong></td><td><code>aurora_SBND2026A_HNL2026_14_02_03_flat_caf_sbnd_HNL_nupi0_m240MeV</code></td></tr>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_03</td><td><code>aurora_SBND2026A_HNL2026_14_02_03_reco1_sbnd_HNL_nupi0_m240MeV</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_03</td><td><code>aurora_SBND2026A_HNL2026_14_02_03_caf_sbnd_HNL_nupi0_m240MeV</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><code>aurora_SBND2026A_HNL2026_14_02_03_flat_caf_sbnd_HNL_nupi0_m240MeV</code></td></tr>
   </tbody>
 </table>
+
+---
 
 <h3>xsec</h3>
 
 <blockquote>
-Available soon!
+  <strong>Note:</strong> Specific MC samples for dedicated cross section studies.<br>
 </blockquote>
+<h4>eta</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_eta_v10_14_02_05_reco1_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_eta_v10_14_02_05_flat_caf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+<h4>NC Delta-radiative</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_ncdeltarad_v10_14_02_05_reco1_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_ncdeltarad_v10_14_02_05_flat_caf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+<h4>CC Delta-radiative</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_ccdeltarad_v10_14_02_05_reco1_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_ccdeltarad_v10_14_02_05_flat_caf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
+<h4>CC nu-e</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_nuecc_v10_14_02_05_reco1_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_nuecc_v10_14_02_05_flat_caf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
+<h4>Kaon</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_kaon_v10_14_02_05_reco1_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_05</td><td><code>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_EX_kaon_v10_14_02_05_flat_caf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
+
 
 </details>
 
@@ -100,7 +175,43 @@ Available soon!
 <strong>Usage Note:</strong> When using these samples you will need to make sure that the run, subrun, event, and a neutrino truth property are matched across the nominal sample and each systematic sample separately. This will remove any statistical fluctuations.
 </blockquote>
 
-<p>Available soon!</p>
+
+<h3>PDS 0.94xLY</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_reco1_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_0.94xLY_v10_14_02_04_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+<h3>PDS 1.19xLY</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_reco1_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_04</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_1_1.19xLY_v10_14_02_04_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+<h3>PDS low SPE</h3>
+<h3>WireMod Gen2</h3>
+<h3>Field distortion</h3>
+<p> Available Soon! </p>
+
+
+
+
+
 
 </details>
 
