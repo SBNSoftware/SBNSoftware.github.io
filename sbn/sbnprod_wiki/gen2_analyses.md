@@ -10,7 +10,7 @@ toc_title: Gen 2 Analyses
 
 <h1 align="center">Generation 2 Analyses</h1>
 
-> **Note on Gen 2:** *[Insert description here regarding what distinguishes Gen 2 from previous iterations, such as updated reconstruction algorithms or new calibration constants.]*
+> **Note on Gen 2:** *Typically dated with the release of Larsoft v10_14_02*
 
 ---
 
