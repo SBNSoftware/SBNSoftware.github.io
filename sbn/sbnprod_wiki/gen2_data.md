@@ -99,13 +99,56 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline"> Specialty Data Samples</h2></summary>
+<br>
+<h3>Run 2 Crossing Muon Study</h3>
+<blockquote>
+For calibration purposes
+</blockquote>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_reco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuple</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_crossingmu-Run2_v10_14_02_04_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<h3>Narrow Bunch Study</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>raw</strong></td><td>v10_14_02_02</td><td><code>SBND_DATA_Run2_NarrowBunch_Raw</code></td></tr>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuple</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_SBND2026A_gen2_run2_BNBLight_Data_v10_14_02_02_histreco2_sbnd</code></td></tr>
+  </tbody>
+</table>
 
 
 </details>
 
 
-
-
+---
 
 <h1 align="center">Data (Blinded)</h1>
 
