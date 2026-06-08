@@ -8,13 +8,9 @@ toc: false
 toc_title: Gen 1 Analyses
 ---
 
-<div align="center">
+<h1 align="center">Generation 1 Analyses</h1>
 
-# Generation 1 Analyses
-
-</div>
-
-> *[Insert description here regarding what is included in Gen 1 analyses and how they differ from Gen 2.]*
+> **Note on Gen 1:** *Ran with Larsoft version earlier the release of Larsoft v10_14_02*
 
 ---
 
@@ -22,8 +18,8 @@ toc_title: Gen 1 Analyses
 
 | Category | Description | Link |
 | :--- | :--- | :--- |
-| **Data** | All Gen 1 data samples including BNB+Light, Zero Bias, OffBeam+Light, and OffBeam Zero Bias. | [View Data →](gen1_data) |
-| **MC** | Monte Carlo simulation samples. | [View MC →](gen1_mc) |
+| **Data** | All Gen 1 Data samples  | [View Data →](gen1_data) |
+| **MC** | All Gen 1 Monte Carlo simulation samples | [View MC →](gen1_mc) |
 
 ---
 
