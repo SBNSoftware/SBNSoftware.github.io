@@ -10,7 +10,7 @@ toc_title: Gen 2 Analyses
 
 <h1 align="center">Generation 2 Analyses</h1>
 
-> **Note on Gen 2:** *Typically dated with the release of Larsoft v10_14_02*
+> **Note on Gen 2:** *Processed with Larsoft version past the release of Larsoft v10_14_02*
 
 ---
 
@@ -18,8 +18,8 @@ toc_title: Gen 2 Analyses
 
 | Category | Description | Link |
 | :--- | :--- | :--- |
-| **Data** | Unblinded data samples including BNB+Light, OffBeam+Light, and related streams. | [View Data →](gen2_data) |
-| **MC** | Monte Carlo simulation samples. | [View MC →](gen2_mc) |
+| **Data** | All Gen 2 Data samples  | [View Data →](gen2_data) |
+| **MC** | All Gen 2 Monte Carlo simulation samples | [View MC →](gen2_mc) |
 
 ---
 
