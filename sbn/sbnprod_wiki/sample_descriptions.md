@@ -11,24 +11,29 @@ toc_title: SBN Production Sample Description
 SBN Production Available Samples Descriptions
 ==========================================
 
-> Below we will include useful information for analyzers to understand what goes into each sample, as listed from the [Samples Page](https://sbnsoftware.github.io/sbn/sbnprod_wiki/sample).
+How to access the samples
+--------------------------
 
-Here is what is listed for each sample:
-1. Short description of sample, what it's used for, how to use it, general notes on usage
-2. Which runs are used: time frame or cuts to make definition
-3. Code versions
-4. FCLs?
+MC sample datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should specify the SBN instance with `samweb -e sbnd` 
 
-#### What is in each sample:
+### Definition commands
+- checking definition files: `samweb -e sbnd list-definition-files {definition}`
+- checking number of files and events (for samples with full metadata): `samweb -e sbnd list-definition-files {definition} --summary`
 
-calibntuples:  
-reco1:  
-caf:  
-flatcaf:  
+### File commands
+- checking metadata: `samweb -e sbnd get-metadata {filename}` (fcl files used are listed in metadata) 
+- file location: `samweb -e sbnd locate-file {filename}`
+
+### Finding the file that contains a specific run/subrun/event (SBND only)
+#### **MC samples**
+Each SBND MC file has a unique subrun, so one just nedd the run/subrun to identify the file:
+- search: `samweb -e sbnd list-files "defname: {dataset name} and run_number run#.subrun#"`
+
+
 
 ---
 
-## Analysis Generations
+## SBND Analysis Generations
 
 | Generation | Link |
 | :--- | :--- |
