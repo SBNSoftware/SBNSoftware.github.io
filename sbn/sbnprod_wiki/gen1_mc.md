@@ -93,6 +93,13 @@ toc_title: Gen 1 MC
   </tbody>
 </table>
 <hr>
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline"> Special MC Samples</h2></summary>
+<br>
 <h3>Low Threshold &ldquo;Dirt&rdquo; MC</h3>
  
 <h4>Full Sample</h4>
