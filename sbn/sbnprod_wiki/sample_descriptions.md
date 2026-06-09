@@ -45,6 +45,9 @@ Each SBND MC file has a unique subrun, so one just nedd the run/subrun to identi
 
 ## ICARUS Analysis
 
+Currently links to an edit of the samples webpage containing only ICARUS files, but ICARUS Collaborators can update to have similar layout to SBND: [ICARUS Samples](icarus_sample)
+
+
 
 
 
