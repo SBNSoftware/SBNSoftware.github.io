@@ -1,11 +1,9 @@
-
 ---
 layout: page
 title: SBN Production Available Samples wiki
 subtitle: Wiki for SBN Production available samples
 description: Wiki for the SBN Production Team samples bookkeeping 
 hero_height: is-medium
-# menubar: sbnprod_menu
 toc: true
 toc_title: SBN Production Available Samples
 ---
