@@ -8,6 +8,8 @@ We'll use this wiki page for tracking group goals, progress, and release informa
 
 [List of open issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
 
+[List of sbncode releases](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases)
+
 ### [Production Release Glossary](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/prod_gloss)
 
 ## Topic Groups
@@ -17,6 +19,8 @@ Each of these sgroups are charged with defining and implement common SBN-wide so
 ### [Software Release Management](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_main)
 
 [List of open PRs](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse) ([and no assigned project](https://github.com/pulls?q=is%3Aopen+is%3Apr+org%3ASBNSoftware+archived%3Afalse+no%3Aproject))
+
+[List of sbncode releases](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases)
 
 Convener(s): [Miquel Nebot-Guinot](mailto:)
 
