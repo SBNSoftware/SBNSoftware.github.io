@@ -56,17 +56,49 @@ $ source /cvmfs/icarus.opensciencegrid.org/products/icarus/setup_icarus.sh
 </pre>
 Make a new mrb test release against an existing larsoft base release.
 <pre>
-$ mkdir <some empty directory>
-$ cd \<some empty directory\>
-$ mrb n-v \<larsoft-version\> -q \<larsoft-qualifiers\> \[-f\]    # Use -f to use existing srcs.
+$ mkdir &lt;some empty directory&gt;
+$ cd &lt;some empty directory&gt;
+$ mrb n -v &lt;larsoft-version&gt; -q &lt;larsoft-qualifiers&gt; [-f]    # Use -f to use existing srcs.
 $ source localProducts*/setup
 </pre>
-Check out all sbncode packages.  Optionally check out either sbnd or icarus packages.
-For integration releases, check out branch "main" for sbncode packages (sbnd and icarus can have branch "develop" checked out for testing).
-For production releases, check out the production branch.
+
+### Check out all sbncode and related packages
+
+Check out all sbncode packages.  Optionally check out either sbnd or icarus packages for testing.
 <pre>
 $ cd $MRB_SOURCE
-$ mrb g  \[-b main|<production branch>\] sbn_suite
-$ rm -rf \<unneeded packages\>
+$ mrb g sbn_suite
+$ rm -rf &lt;unneeded packages&gt;
 $ mrb uc
 </pre>
+
+### Prepare a working branch for each package
+
+Visit each checked out package and make sure that the correct working branch is checked out.
+For integration releases, check out branch "main" for sbncode packages.  Sbnd and icarus packages that
+are checked out for testing should generally have branch "develop" checked out.
+For production releases, check out the appropriate production branch.
+If you are working with an existing mrb test release, make sure to "git pull" the working branch.
+<pre>
+$ git checkout &lt;working branch&gt;
+% git pull
+</pre>
+For integration releases, for each sbncode package, merge already commited updates from develop branch to main.
+<pre>
+$ git merge origin/develop
+$ git merge develop
+</pre>
+
+### Update dependent package versions
+
+Update the larsoft base version, if necessary.  Use command "mrb uv."
+<pre>
+$ mrb uv larsoft &lt;larsoft version&gt;
+</pre>
+Update any other changed dependent package versions and fix any remaining version conflicts involving sbnd and icarus packages.
+In general, as long as the larsoft version has been properly updated, any remaining version conflicts can be discovered by 
+initializing the build environment using mrbsetenv.
+<pre>
+$ mrb uv &lt;package&gt; &lt;version&gt;
+</pre>
+
