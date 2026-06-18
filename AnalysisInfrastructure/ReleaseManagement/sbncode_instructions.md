@@ -24,6 +24,10 @@
     16. [Generate release notes](#release_notes)
     17. [Update the sbncode release list](#release_list)
     18. [Send announcement](#announce)
+4. [Shortcuts and helper scripts](#scripts)
+    1.  [update_larsoft_version.sh](#update_larsoft_version.sh)
+    2.  [update_sbncode_version.sh](#update_sbncode_version.sh)
+    3.  [makeSBNRelNotes](#makesbnrelnotes)
 
 ## Overview <a name="overview"/>
 
@@ -297,3 +301,48 @@ $ git push origin develop
 ### Send announcement <a name="announce"/>
 
 Announce the new release on slack channel #sbn_release_management or in other appropriate ways.
+
+## Shortcuts and helper scripts <a name="scripts"/>
+
+The procedures described in the previous sections are intended to be self-contained.  This section describes some helper 
+scripts that can partially automate some of the steps described above.  The scripts described in this section are
+stored in [sbn github package sbnbuild](https://github.com/SBNSoftware/sbnbuild).  These scripts are not currently
+available as ups products, but direct download links are included below.
+
+Here are the helper scripts described in this section, with direct download links.
+* [update_larsoft_version.sh](https://raw.githubusercontent.com/SBNSoftware/sbnbuild/refs/heads/main/SBN/update_larsoft_version.sh)
+* [update_sbncode_version.sh](https://raw.githubusercontent.com/SBNSoftware/sbnbuild/refs/heads/main/SBN/update_sbncode_version.sh)
+* [makeSBNRelNotes](https://raw.githubusercontent.com/SBNSoftware/sbnbuild/refs/heads/main/ReleaseNotes/makeSBNRelNotes)
+
+### update_larsoft_version.sh <a name="update_larsoft_version.sh"/>
+
+Script update_larsoft_version.sh updates the version of larsoft and all of its dependent packages.
+It eliminates the need to manually resolve most version conflicts.  This script should be invoked before the
+initial test build.  It is invoked as follows.
+<pre>
+$ update_larsoft_version.sh -q &lt;qualifiers&gt; &lt;larsoft-version&gt;
+</pre>
+Here the qualifier option should include base qualifer (e.g. "e26"), built type (debug or prof), and the s-qualifier (e.g. "s131").
+
+### update_sbncode_version.sh <a name="update_sbncode_version.sh"/>
+
+Script update_sbncode_version.sh updates the version of an sbncode package only if necessary.  That is, it updates the
+version of an sbncode package only if the checked out working version of a package differs from the matching tag.
+This script should e invoked after a successful initial test build.  
+One invocation of this script updates all sbncode package versions that require updates.
+Script update_sbncode_version.sh is invoked with a single argument, which is the new version tag.
+<pre>
+$ update_sbncode_version.sh &lt;new version&gt;
+</pre>
+
+### makeSBNRelNotes <a name="makesbnrelnotes"/>
+
+Script makeSBNRelNotes makes a skeleton version of sbncode release notes.  It is adapted from the standard larsoft
+release notes script makePatchRelNotes from package larutils.  Script makeSBNRelNotes is invoked with three arguments,
+as follows.
+<pre>
+$ makeSBNRelNotes &lt;working-dir&gt; &lt;new-tag&gt; &lt;old-tag&gt;
+</pre>
+Here the first argument \<working-dir\> is the name of a directoty that doesn't yet exist (the script will make it).
+The second argument \<new-tag\> is the name of the tag for which release notes should be generated.  The third
+argument \<old-tag\> is the name of the previous tag, which is used for a comparison base line.
