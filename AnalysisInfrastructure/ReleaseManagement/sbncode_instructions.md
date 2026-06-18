@@ -208,3 +208,60 @@ Upload tarballs and manifests to the scisoft products server using copyToSciSoft
 $ copyToSciSoft *
 </pre>
 
+Note that scripts copyFromJenkins and copyToSciSoft can be downloaded from https://scisoft.fnal.gov/scisoft/bundles/tools/ .
+
+### Upload built packages to cvmfs
+
+Log in to cvmfssbn@oasiscfs.fnal.gov.
+<pre>
+$ ssh cvmfssbn@oasiscfs.fnal.gov
+</pre>
+Start a cvmfs transaction and run the install script.
+<pre>
+$ cvmfs_server transaction sbn.opensciencegrid.org
+$ ~/sbnbuild/CVMFS/install_on_cvmfs.sh sbn-xx.yy.zz 
+$ cvmfs_server publish sbn.opensciencegrid.org
+</pre>
+
+### Create a suite tag
+
+Create a suite tag SBN_SUITE_<version> for each sbncode package, whether updated or not.
+<pre>
+$ cd $MRB_SOURCE/&lt;package&gt;
+$ git tag -a -m"Sbn suite vxx_yy_zz" SBN_SUITE_vxx_yy_zz
+$ git push origin SBN_SUITE_vxx_yy_zz
+</pre>
+
+### Update develop branch
+
+For integration releases, merge updates from branch main to develop.
+<pre>
+$ cd $MRB_SOURCE/&lt;package&gt;
+$ git checkout develop
+$ git merge main
+$ git push origin develop
+</pre>
+
+### Final checks
+
+* Make sure that newly released sbncode version is able to be set up.
+* Verify that pull requests you intended to merge are closed.
+
+### Generate release notes
+
+Generate github release notes.  Steps for doing this are as follows.
+* Navigate to the main [sbncode github web page](https://github.com/SbnSoftware/sbncode).
+* Click on [Releases](https://github.com/SBNSoftware/sbncode/releases)
+* Click on button [Draft a new release](https://github.com/SBNSoftware/sbncode/releases/new).
+* Choose the correct tag from the pull down menu.
+* Fill in the release title box with the tag.
+* Fill in the release description box.
+* Use the preview tab to make sure everything looks OK.
+* Click on the "Publish release" button.
+
+### Update the sbncode release list
+
+* Navigate to the [sbncode release list](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases) wiki page.
+* Click on button [Improve this page](https://github.com/SBNSoftware/SBNSoftware.github.io/edit/master/AnalysisInfrastructure/ReleaseManagement/Releases/List_of_SBN_code_releases.md)
+* Add a line to the table of releases with link to newly generated release notes.
+* Commit update.
