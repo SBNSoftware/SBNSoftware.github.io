@@ -102,3 +102,30 @@ initializing the build environment using mrbsetenv.
 $ mrb uv &lt;package&gt; &lt;version&gt;
 </pre>
 
+### Merge approved pull requests
+
+You can see a list of open pull requests for any package using the following command, or using the github web interface.
+<pre>
+$ gh pr list
+</pre>
+
+To include a github pull request in your test release, first check out the pull request into a local branch, then merge the pull request branch into your working branch.
+
+<pre>
+$ gh pr checkout &lt;number&gt;
+$ git checkout &lt;working-branch&gt;
+$ git merge &lt;pr-branch&gt;
+</pre>
+
+### Do initial test build
+
+If there are any additional required updates that are not covered in the previous sections, do them now.
+After all such updates, do a full build-and-test.
+<pre>
+$ cd $MRB_BUILDDIR
+$ mrbsetenv
+$ mrb i -jN
+$ mrb t -jN
+</pre>
+If there are errors at this point, fix them before proceeding.
+
