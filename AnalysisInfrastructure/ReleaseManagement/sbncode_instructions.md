@@ -324,6 +324,8 @@ $ update_larsoft_version.sh -q &lt;qualifiers&gt; &lt;larsoft-version&gt;
 </pre>
 Here the qualifier option should include base qualifer (e.g. "e26"), built type (debug or prof), and the s-qualifier (e.g. "s131").
 
+Update_larsoft_version.sh should work with any set of checked out packages, not just sbncode.
+
 ### update_sbncode_version.sh <a name="update_sbncode_version.sh"/>
 
 Script update_sbncode_version.sh updates the version of an sbncode package only if necessary.  That is, it updates the
