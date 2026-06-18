@@ -18,7 +18,8 @@ For a list of related packages that may need to be built separately, refer to
 
 ### Sbnd and Icarus packages
 
-It is often desirable to check out and test sbnd or icarus packages together with sbncode packages.  Here are the related packages for sbnd.
+It is often desirable to check out and test sbnd or icarus packages together with sbncode packages.
+Here are the related packages for sbnd.
 * sbndutil
 * sbndcode
 
@@ -95,7 +96,8 @@ Update the larsoft base version, if necessary.  Use command "mrb uv."
 <pre>
 $ mrb uv larsoft &lt;larsoft version&gt;
 </pre>
-Update any other changed dependent package versions and fix any remaining version conflicts involving sbnd and icarus packages.
+Update any other changed dependent package versions and fix any remaining version conflicts involving
+sbnd and icarus packages.
 In general, as long as the larsoft version has been properly updated, any remaining version conflicts can be discovered by 
 initializing the build environment using mrbsetenv.
 <pre>
@@ -109,7 +111,8 @@ You can see a list of open pull requests for any package using the following com
 $ gh pr list
 </pre>
 
-To include a github pull request in your test release, first check out the pull request into a local branch, then merge the pull request branch into your working branch.
+To include a github pull request in your test release, first check out the pull request into a local branch,
+then merge the pull request branch into your working branch.
 
 <pre>
 $ gh pr checkout &lt;number&gt;
@@ -129,3 +132,54 @@ $ mrb t -jN
 </pre>
 If there are errors at this point, fix them before proceeding.
 
+### Update sbncode package versions
+
+Make a "notag" directory adjacent to $MRB_SOURCE.
+<pre>
+$ cd $MRB_SOURCE
+$ mkdir ../notag
+</pre>
+
+Visit each sbncode package in dependency order (low to high), ending with package sbncode.
+Compare each package to the previous suite tag.
+<pre>
+$ cd $MRB_SOURCE/&lt;package&gt;
+$ git diff SBN_SUITE_vxx_yy_zz
+</pre>
+If the package does not have any updates. move it out of $MRB_SOURCE.
+<pre>
+$ cd $MRB_SOURCE
+$ mv &lt;package&gt; ../notag
+</pre>
+If the package does have updates, update its package version using command "mrb uv."
+<pre>
+$ mrb uv &lt;package&gt; &lt;new version&gt;
+</pre>
+
+### Do final test build
+
+After making all version updates, and after removing unneeded packages from $MRB_SOURCE,
+update the master CMakeLists.txt and do another clean build and test.
+<pre>
+$ cd $MRB_BUILDDIR
+$ mrb uc
+$ mrb z
+$ mrb zi
+$ mrbsetenv
+$ mrb i -jN
+$ mrb t -jN
+</pre>
+Again, if there are errors, they need to be fixed before proceeding.
+
+### Commit changes and make tags
+
+For each package that is still checked out in $MRB_SOURCE, commit changes and make a tag on the working branch.
+Push the working branch and tag to the main repository.
+<pre>
+$ git status
+$ git add ^lt;modified files&gt;
+$ git commit -m&lt;version&gt;
+$ git tag -a -m&lt;version&gt; &lt;version&gt;
+$ git push origin &lt;working branch&gt;
+$ git push origin &lt;version&gt;
+</pre>
