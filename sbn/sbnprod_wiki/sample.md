@@ -250,8 +250,6 @@ Monte Carlo official SBN Production Samples
 | BNB neutrino + cosmics detvar - Recombination  | MC2024A | v09_89_01_01p03 | 200k | flatcaf |icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_RecoMod_2ndV_flatcaf|
 | transferred to SLAC  | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_RecoMod_2ndV_larcv |
 
-| BNB neutrino + cosmics detvar - Recombination  | MC2024A | v09_89_01_01p03 | 200k | flatcaf |icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_RecoMod_2ndV_flatcaf|
-| transferred to SLAC  | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_RecoMod_2ndV_larcv |
 
 | BNB neutrino + cosmics detvar - Scintillation  | MC2024A | v09_89_01_01p03 | 200k | flatcaf |icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_ScintQE_2ndV_flatcaf|
 | transferred to SLAC  | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_ScintQE_2ndV_larcv | 
@@ -276,6 +274,8 @@ Monte Carlo official SBN Production Samples
 | BNB + Intime Cosmics (2d deconvolution validation) | MC2024A | v09_83_01 | 24851 | calibtuple |  icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_caf |
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_flatcaf |
+
+### ICARUS MC 2023 and before
 | NuMI Dirt + Cosmic | MC2023A | v09_72_00_03 | 211500 | reco2 |  icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_stage1 |
 | --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_caf |
