@@ -45,8 +45,8 @@ And full stack tested before released (Jenkins).
 
 
 # Release management for managers
-* [Release management instructions](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_instructions)
+* [Miquel's release management instructions](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_instructions)
 * [Herb's instructions for building sbncode](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/sbncode_instructions)
 
-**Release managment team**: [Miquel Nebot-Guinot, Francisco Javier Nicolás, Tracy Usher, Matt Rosenberg](mailto:miquel.nebot@ed.ac.uk,fjnicolas@ugr.es,usher@slac.stanford.edu,Matthew.Rosenberg@tufts.edu)
+**Release managment team**: [Herbert Greenlee, Alexander Antonakis, Jacob Smith](mailto:greenlee@fnal.gov,aantonakis@ucsb.edu,smithja@services.fnal.gov)
 
