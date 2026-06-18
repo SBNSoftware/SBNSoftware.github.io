@@ -177,9 +177,34 @@ For each package that is still checked out in $MRB_SOURCE, commit changes and ma
 Push the working branch and tag to the main repository.
 <pre>
 $ git status
-$ git add ^lt;modified files&gt;
+$ git add &lt;modified files&gt;
 $ git commit -m&lt;version&gt;
 $ git tag -a -m&lt;version&gt; &lt;version&gt;
 $ git push origin &lt;working branch&gt;
 $ git push origin &lt;version&gt;
 </pre>
+
+### Do Jenkins build
+
+Use Jenkins build project sbn-release-build for both integration releases and production releases.
+The configuration of this build project includes the following parameters which may need updating.
+* Ups version.
+* sbncode package tags (four parameters).
+* sbndaq_artdaq_core version.
+* s-qualifier
+
+The base qualifier and build type (debug, prof) are included in the Jenkins configuration matrix.
+
+### Upload built packages to SciSoft
+
+Fetch build artifacts (tarballs and manifests) Add "-q" options (repeatable) for any qualifiers that are part of the
+configuration matrix.
+<pre>
+$ copyFromJenkins -q e26 sbn-release-build
+</pre>
+
+Upload tarballs and manifests to the scisoft products server using copyToSciSoft.
+<pre>
+$ copyToSciSoft *
+</pre>
+
