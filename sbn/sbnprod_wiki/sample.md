@@ -276,6 +276,7 @@ Monte Carlo official SBN Production Samples
 | --- | --- | --- | --- | flatcaf | icaruspro_production_v09_83_01_2024A_ICARUS_BNB_Intime_Cosmics_MC_2024_BNB_MC_flatcaf |
 
 ### ICARUS MC 2023 and before
+
 | NuMI Dirt + Cosmic | MC2023A | v09_72_00_03 | 211500 | reco2 |  icaruspro_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_stage1 |
 | --- | --- | --- | --- | calibtuple |  icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_72_00_03_2023A_ICARUS_NuMI_MC_dirt_plus_cosmics_pretuned_signal_shape_caf |
