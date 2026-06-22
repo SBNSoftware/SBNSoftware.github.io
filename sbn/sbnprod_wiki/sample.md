@@ -757,6 +757,11 @@ ICARUS DATA
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
+|RUN-2 NuMI minbias for RWM/Bunch structure| v10_06_00_06p03 | --- | stage0 | Icaruspro_2025_wcdnn_production_NuMI_Run2_MinBias_v10_06_00_06p03_numiminbias_stage0 |
+| --- | --- | --- | calibtuples | Icaruspro_2025_wcdnn_production_NuMI_Run2_MinBias_v10_06_00_06p03_numiminbias_calibtuples | 
+
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
+| --- | --- | --- | --- | --- | 
 | Run2 reprocessed BNB majority | v09_89_01_01p03 | --- | stage1 | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_stage1 |
 | --- | --- | --- | caf blind | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_blind |
 | --- | --- | --- | caf unblind | Icaruspro_2024_Run2_production_Reproc_Run2_v09_89_01_01p03_bnbmajority_caf_unblind |
