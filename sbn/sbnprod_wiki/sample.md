@@ -217,8 +217,14 @@ Monte Carlo official SBN Production Samples
 |NuMI DetSyst- YZ sim |MC2025A|v09_89_02_00p03| 200k |flatcaf| icaruspro_production_v09_89_02_00p03_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCYZsim_flatcaf |
 | transferred to SLAC | --- | --- | ---  | larcv | icaruspro_production_v09_89_02_00p03_2025A_NuMI_nuCos_CV_detsys_nu_cos_TPCYZsim_larcv |
 
-|NuMI DetSyst- Scintilation  |MC2025A|v09_89_01_02p02 | 200k |flatcaf| icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Scintvar_correct_flatcaf |
+|NuMI DetSyst- Scintilation  |MC2025A| v09_89_01_02p02 | 200k |flatcaf| icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Scintvar_correct_flatcaf |
 | transferred to SLAC | --- | --- | ---  | larcv | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_Scintvar_correct_larcv |
+
+|NuMI DetSyst- Cathode Bending  |MC2025A| v09_89_02_02 | 200k |flatcaf|
+icaruspro_production_v09_89_02_02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CathodeBen_Corr_flatcaf|
+| transferred to SLAC | --- | --- | ---  | larcv | 
+icaruspro_production_v09_89_02_02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CathodeBen_Corr_larcv |
+
 
 
 **BNB neutrino + cosmics Central Value sample**
@@ -267,7 +273,8 @@ Monte Carlo official SBN Production Samples
 | transferred to SLAC  | --- | --- | --- | larcv | icaruspro_production_v09_89_01_01p03_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_LowTPCCohNoise_2ndV_larcv |
 
 
-
+| BNB neutrino + cosmics detvar - Cathode Bending | MC2026A | v09_89_02_02 | 200k | flatcaf| icaruspro_production_v09_89_02_02_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CathBen_2ndV_correct_flatcaf |
+| transferred to SLAC  | --- | --- | --- | larcv | icaruspro_production_v09_89_02_02_2024A_ICARUS_MC_Sys_NuCos_2024A_MC_Sys_NuCos_CathBen_2ndV_correct_larcv |
 
 
 
