@@ -731,7 +731,23 @@ ICARUS Run2 2025 Spring SBN Production Samples
 
 ICARUS DATA
 ---------------------
-### ICARUS Reconstructed DATA (Run2)
+
+### ICARUS Run3 DATA
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
+| --- | --- | --- | --- | --- | 
+| Run3 NuMI majority (RHC)| v09_89_01_02p02 | --- | stage0 | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_stage0 |
+| --- | --- | --- | caf_blind | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_caf_blind |
+| --- | --- | --- | caf_unblind | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_caf_unblind |
+| --- | --- | --- | caf_prescaled | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_caf_prescaled |
+| --- | --- | --- | flatcaf_blind | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_flatcaf_blind |
+| --- | --- | --- | flatcaf_unblind | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_flatcaf_unblind |
+| --- | --- | --- | flatcaf_prescaled | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_flatcaf_prescaled |
+| trasferred to SLAC | -- | -- | larcv | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_larcv |
+
+
+
+
+### ICARUS Run2 DATA 
 -----------------------------------
 
 **Notes on samples:**
