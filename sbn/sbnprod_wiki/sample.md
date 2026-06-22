@@ -733,6 +733,8 @@ ICARUS DATA
 ---------------------
 
 ### ICARUS Run3 DATA
+-----------------------------------
+
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
 | Run3 NuMI majority (RHC)| v09_89_01_02p02 | --- | stage0 | production_data_2026_ICARUS_Run3_NuMI_RHC_Run3_Data_numimajority_v09_89_01_02p02_stage0 |
