@@ -173,6 +173,12 @@ Monte Carlo official SBN Production Samples
   
 | Sample Description | production push | release version | # Events | File type | Samweb definition |   
 | --- | --- | --- | --- | --- | --- |
+| NuMI neutrino + cosmics | MC2026A | v09_89_01_02p02 | 300k | stage1 | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_2_stage1 |
+| --- | --- | --- | --- | calibtuple |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_2_calibtuples |
+| --- | --- | --- | --- | caf |icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_2_caf |
+| --- | --- | --- | --- | flatcaf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_2_flatcaf |
+| --- | --- | --- | --- | larcv | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_2_larcv |
+
 | NuMI neutrino + cosmics | MC2025A | v09_89_01_02p02 | 200k | stage1 | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_stage1 |
 | --- | --- | --- | --- | calibtuple | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_calibtuple |
 | --- | --- | --- | --- | caf | icaruspro_production_v09_89_01_02p02_2025A_NuMI_nuCos_CV_detsys_nu_cos_CV_caf |
@@ -701,8 +707,11 @@ ICARUS Run2 2025 Spring SBN Production Samples
 ### ICARUS Run2 SBN MC Overlay production
 -----------------------------------
 **Notes on samples:** 
-* These are produced with v10_xx_xx_xx using ***wcdnn*** fcls. 
-* As of Oct 13th 2025, these productions are ongoing. You might notice increasing number of files in the output datasets.
+
+| **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
+| --- | --- | --- | --- | --- |
+|WireMod Overlay ICARUS Generation, Run 2 Part 2| v10_06_00_06p03 | 300k | stage0 | icaruspro_production_2026_run2_wiremod_mc_v10_06_00_06p03_stage0 |
+| --- | --- | --- | calibtuples | icaruspro_production_2026_run2_wiremod_mc_v10_06_00_06p03_calib_ntuples |
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
@@ -759,6 +768,7 @@ ICARUS DATA
 | --- | --- | --- | --- | --- | 
 |RUN-2 NuMI minbias for RWM/Bunch structure| v10_06_00_06p03 | --- | stage0 | Icaruspro_2025_wcdnn_production_NuMI_Run2_MinBias_v10_06_00_06p03_numiminbias_stage0 |
 | --- | --- | --- | calibtuples | Icaruspro_2025_wcdnn_production_NuMI_Run2_MinBias_v10_06_00_06p03_numiminbias_calibtuples | 
+
 
 | **Sample Description**| **release version** | **# Events** | **File type** | **Samweb definition** |
 | --- | --- | --- | --- | --- | 
