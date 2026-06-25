@@ -503,14 +503,3 @@ MC files generated on the Polaris computer at Argonne National Lab.
 | Sample Description | release version | # Events | File type | Samweb definition |
 |Run 4 Neutrino Overlay MC |v10_06_00_06p03| 3.5M | stage0 |icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_stage0 |
 | --- | --- | --- | flatcaf | icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_flat_caf|
-
-
-SBND Production Progress Report
---------------------------
-<div style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden;">
-  <iframe 
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTf2_LhvACU-MiRJ4Jv0c02PH7pLmjVwo8wzzEeVq7JTxgRFU4jQfcBD25MA7tz9yoYnQ6iRFL_P5qI/pubhtml?gid=615578792&amp;single=true&amp;widget=true&amp;headers=false"
-	style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-    loading="lazy">  
-   </iframe>
-</div>
