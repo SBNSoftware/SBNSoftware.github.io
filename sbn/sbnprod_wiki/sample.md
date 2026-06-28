@@ -704,7 +704,7 @@ ICARUS Run2 2025 Spring SBN Production Samples
 | --- | --- | --- | flatcaf_unblind | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_flatcaf_unblind |
 | --- | --- | --- | larcv | Icaruspro_2025_wcdnn_production_Reproc_Run2_SBN_2_v10_06_00_06p03_offbeambnbmajority_larcv |
 
-### ICARUS Run2 SBN MC Overlay production
+### ICARUS Run2 SBN MC
 -----------------------------------
 **Notes on samples:** 
 
@@ -907,6 +907,12 @@ _2024 November_: A sample of central value SBND MC events were generated on Pola
 | Sample Description | release version | # Events | File type | Samweb definition |
 |Run 4 Neutrino Overlay MC |v10_06_00_06p03| 3.5M | stage0 |icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_stage0 |
 | --- | --- | --- | flatcaf | icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_flat_caf|
+
+### ICARUS RUN4 Wiremod Overlays
+| Sample Description | release version | # Events | File type | Samweb definition |
+|ICARUS Run 4 WireMod Overlay| v10_06_00_06p03 | 600k | stage0 |icaruspro_production_2026_run4_wiremod_mc_v10_06_00_06p03_stage0 |
+| --- | --- | --- | calibtuples | icaruspro_production_2026_run4_wiremod_mc_v10_06_00_06p03_calib_ntuples |
+
 
 
 SBND Production Progress Report
