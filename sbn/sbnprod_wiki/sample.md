@@ -29,13 +29,15 @@ How to access the samples
 
 MC sample datasets are declared to the SBN SAM instance which is acessible to both SBND and ICARUS collaborators. All samweb commands should specify the SBN instance with `samweb -e sbn` <span style="color: red; font-weight: bold;">Nov 2024: MCP2024B SBND currently only on SBND SAM acessible using <code>samweb -e sbnd</code></span>, following are some useful commands:
 
-### Definition commands
+### Definition commands (ICARUS MC)
 - checking definition files: `samweb -e sbn list-definition-files {definition}`
 - checking number of files and events (for samples with full metadata): `samweb -e sbn list-definition-files {definition} --summary`
-
-### File commands
+- For ICARUS data, use the above commands with `-e icarus` instead of `-e sbn`
+  
+### File commands (ICARUS MC)
 - checking metadata: `samweb -e sbn get-metadata {filename}` (fcl files used are listed in metadata) 
 - file location: `samweb -e sbn locate-file {filename}`
+- For ICARUS data, use the above commands with `-e icarus` instead of `-e sbn`
 
 ### Finding the file that contains a specific run/subrun/event (SBND only)
 #### **MC samples**
