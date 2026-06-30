@@ -48,4 +48,4 @@ Each SBND MC file has a unique subrun, so one just nedd the run/subrun to identi
 
 
 ## Related Pages
-- [Samples Page](sample)
+- [Samples Page](sample_old)
