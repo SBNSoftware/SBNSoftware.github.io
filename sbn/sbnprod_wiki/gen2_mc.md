@@ -221,5 +221,5 @@ toc_title: Gen 2 MC
 
 ## Related Pages
 - [← Back to Gen 2 Analyses](gen2_analyses)
-- [← Back to Sample Descriptions](sample_descriptions)
-- [Samples Page](sample)
+- [← Back to Sample Descriptions](sample)
+- [Samples Page](sample_old)
