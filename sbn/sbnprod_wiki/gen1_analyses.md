@@ -24,5 +24,5 @@ toc_title: Gen 1 Analyses
 ---
 
 ## Related Pages
-- [← Back to Sample Descriptions](sample_descriptions)
-- [Samples Page](sample)
+- [← Back to Sample Descriptions](sample)
+- [Samples Page](sample_old)
