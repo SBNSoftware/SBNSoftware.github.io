@@ -47,6 +47,7 @@ And full stack tested before released (Jenkins).
 # Release management for managers
 * [Miquel's release management instructions](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_instructions)
 * [Herb's instructions for building sbncode](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/sbncode_instructions)
+* [Lynn's instructions for making a larsoft patch release](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/How_to_tag_and_build_a_LArSoft_patch_release)
 
 **Release managment team**: [Herbert Greenlee, Alexander Antonakis, Jacob Smith](mailto:greenlee@fnal.gov,aantonakis@ucsb.edu,smithja@services.fnal.gov)
 
