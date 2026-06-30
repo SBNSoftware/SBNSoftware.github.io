@@ -269,5 +269,5 @@ toc_title: Gen 1 MC
  
 ## Related Pages
 - [← Back to Gen 1 Analyses](gen1_analyses)
-- [← Back to Sample Descriptions](sample_descriptions)
-- [Samples Page](sample) 
+- [← Back to Sample Descriptions](sample)
+- [Samples Page](sample_old) 
