@@ -168,7 +168,7 @@ toc_title: Gen 2 Data
 <details>
 <summary><h2 style="display:inline"> Zero Bias Data</h2></summary>
 <br>
-<p><em>Zero-bias (minimum-bias) trigger samples from Run 18115 (Feb 2025 workshop).</em></p>
+<p><em>Zero-bias (minimum-bias) trigger samples from Run 18115.</em></p>
 <h3>Run 1 Zero Bias Trigger study</h3>
  
 <blockquote>
