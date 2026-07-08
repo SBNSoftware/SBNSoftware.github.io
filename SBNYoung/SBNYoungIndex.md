@@ -59,4 +59,10 @@ Thanks to the authors of the SBND & ICARUS Newbie Guides from which we ported so
   *A quick introduction into the work done by the various working groups that make up SBN/SBND/ICARUS*
 - [Common Acronyms](Acronym_List.md)  
   *Why does everyone speak in code?!*
+
+## Streaming Files over XRootD ##
+- [Streaming HDF5 over XRootD (EAF)](HDF5_stream_eaf.md)  
+  *Read and write analysis HDF5 files (e.g. SPINE output) straight from dCache with fsspec-xrootd and h5py — no local copy, works on the EAF*
+- [Streaming ROOT files over XRootD with uproot (EAF)](xrootd_stream_eaf.md)  
+  *Stream CAFs, ntuples, and other ROOT files from dCache with uproot — read only the branches you need, works on the EAF*
  
