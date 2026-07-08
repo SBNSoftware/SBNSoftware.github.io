@@ -20,7 +20,9 @@ This is the ROOT counterpart of [Streaming HDF5 over XRootD](HDF5_stream_eaf.md)
 pixi add uproot fsspec-xrootd
 ```
 
-`fsspec-xrootd` provides the `root://` transport; uproot uses it automatically.
+[fsspec-xrootd](https://scikit-hep.org/fsspec-xrootd/index.html) provides the
+`root://` transport (via [fsspec](https://filesystem-spec.readthedocs.io/en/latest/));
+uproot uses it automatically.
 Run Python with `pixi run python ...` (or `pixi shell`).
 
 ## 2. Get a bearer token
@@ -34,11 +36,19 @@ The XRootD client picks it up automatically. Re-run it if you hit
 
 ## 3. Get a file's XRootD URL
 
+For a SAM-catalogued file:
+
 ```bash
 samweb get-file-access-url <filename> --schema=root
 ```
 
-prints e.g. `root://fndca1.fnal.gov:1094//pnfs/fnal.gov/usr/sbn/.../file.root`.
+or with `ifdh` (also works on a `/pnfs` path):
+
+```bash
+ifdh getUrl <filename> root
+```
+
+Either prints e.g. `root://fndca1.fnal.gov:1094//pnfs/fnal.gov/usr/sbn/.../file.root`.
 
 ## 4. Open and read (stream)
 

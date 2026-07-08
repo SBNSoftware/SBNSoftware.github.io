@@ -20,6 +20,10 @@ Two packages do the work: **`fsspec-xrootd`** streams the remote file and
 pixi add h5py fsspec fsspec-xrootd
 ```
 
+Package docs: [h5py](https://www.h5py.org/),
+[fsspec](https://filesystem-spec.readthedocs.io/en/latest/),
+[fsspec-xrootd](https://scikit-hep.org/fsspec-xrootd/index.html).
+
 Then run Python in the environment with `pixi run python ...` (or `pixi shell`).
 
 ## 2. Get a bearer token
@@ -41,7 +45,13 @@ For a SAM-catalogued file, ask samweb for its `root://` URL:
 samweb get-file-access-url <filename> --schema=root
 ```
 
-It prints something like:
+Alternatively, `ifdh` can translate a filename (or a `/pnfs` path) too:
+
+```bash
+ifdh getUrl <filename> root
+```
+
+Either prints something like:
 
 ```
 root://fndca1.fnal.gov:1094//pnfs/fnal.gov/usr/sbnd/.../file.h5
