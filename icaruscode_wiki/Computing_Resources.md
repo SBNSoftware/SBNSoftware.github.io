@@ -17,13 +17,6 @@ Scientific Computing Division).
 
 Here we list some of them.
 
-> Fermilab Computing Division has produced a
-> [very short flyer](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=5892)
-> explaining in a nutshell the different credentials used in Fermilab.
-> It can be found as [document 5892 in the SCD DocDB](http://cd-docdb.fnal.gov/cgi-bin/ShowDocument?docid=5892).
-> **It is a strongly recommended reading, to everybody!**
-
-
 
 #### SCD liaison
 
@@ -75,7 +68,8 @@ this so it will probably fail):
 4.  Enter your home institution, then click <Submit>.
 
 You can reset your Fermilab passwords for service-now here:
-<https://password-reset.fnal.gov/showLogin.cc>
+<https://password-reset.fnal.gov>
+but it requires multi-factor authentication (Kerberos authentication typicaly does not work).
 If you can't remember your password because you didn't write it down
 then you will have contact the [service desk](mailto:servicedesk@fnal.gov) (+1 (630) 840-2345).
 
@@ -88,16 +82,17 @@ Access to servers via terminal is obtained via secure shell (SSH).
 For most cases you access to a remote server authenticating as yourself
 by providing a Kerberos 5 ticket: see above for how to get registered
 for this type of authentication.
-The ticket can be obtained on the local machine (e.g. your laptop) using
-a Kerberos 5 client (usually that is MIT's):
+The ticket can be obtained on a Linux or OSX local machine (e.g. your laptop)
+using a Kerberos 5 client (usually that is MIT's):
 
     kinit -F -l 26h -r 7d username@FNAL.GOV
 
-asks the Kerberos realm `FNAL.GOV` (which must be described somewhere in
-your system, typically in `/etc/krb5.conf` that you copied from
-Fermilab) to authenticate you as `username`, which must be the Fermilab
+asks the Kerberos realm `FNAL.GOV` (configuration is automatically passed
+via [DNS SRV record](https://en.wikipedia.org/wiki/SRV_record))
+to authenticate you as `username`, which must be the Fermilab
 user name (it can be omitted if it is the same as the local user name on
-the laptop). The other options:
+the laptop). The elemnt `username@FNAL.GOV` is called _principal_.
+The other options:
 
 -   `-F`: the ticket is *forwardable*: you can send it with your request
     for connection; this is the first of the steps to avoid errors like
@@ -114,17 +109,21 @@ others mean you need to read the manual, `man klist`).
 
 If you do not have a valid ticket, you can maybe renew one with:
 
-    kinit -R user
+    kinit -R <principal>
 
 and if it works you save yourself typing a password. A practical
-command: `kinit -R username || kinit -F -l 26h -r 7d username` will
+command: `kinit -R <principal> || kinit -F -l 26h -r 7d <principal>` will
 attempt renewing and get a new ticket on failure.
+Microsoft Windows clients provide a Kerberos implementation (SSPI) and also OpenSSH;
+if you manage to make it work, please add here how!
+There is no known success on Windows 11 and earlier at the time of writing,
+so the "solution" is to bypass it and to install and use MIT Kerberos5 for Windows.
 
 Next and last, SSH needs not only to use that ticket, but also to
 forward it to the remote server. This is called "delegating
 credentials" in SSH lingo. One time command:
 
-    ssh -K username@icarusgpvm01.fnal.gov
+    ssh -K username@icarusgpvm02.fnal.gov
 
 -   `-K` tells SSH to forward the Kerberos credentials; this is the
     other step to avoid errors like
@@ -140,25 +139,29 @@ adding something like:
         ForwardX11Trusted no
 
     Host *.fnal.gov 131.225.*
-        User                      username  # Fermilab user name (allows something like `ssh icarusgpvm01.fnal.gov`)
-        ForwardX11                yes       # establish an X11 connection to get graphics on your laptop (via X servers like X11 or XQuartz)
+        User                      username  # Fermilab user name (allows something like `ssh icarusgpvm02.fnal.gov`)
+        ForwardX11                yes       # establish an X11 connection to get graphics on your laptop (via X servers like X11, VcXsrv or XQuartz)
         ForwardX11Trusted         yes
         GSSAPIAuthentication      yes       # enable authentication via Kerberos 5
         GSSAPIDelegateCredentials yes       # forward Kerberos 5 credentials
         ConnectTimeout            60        # bail out if no answer for one minute
 
-Hint: you can edit Kerberos 5 configuration file so that `FNAL.GOV` is
-the default realm, and then you don't need to type `@FNAL.GOV` in
-Kerberos 5 commands. That might not be welcome if your institution uses
+Hint: you can edit Kerberos 5 configuration file (typically `/etc/krb5.conf`)
+so that `FNAL.GOV` is the default realm, and then you can use just `username`
+as your principal (no more `@FNAL.GOV`). That might not be welcome if your institution uses
 Kerberos 5 too with a different realm, which opens a new realm of
 complication.
+And if Fermilab user name is the same as your local user name too,
+the principal can be often omitted.
+
 
 ### Using a VNC connection to view windows
 
 A good wiki page on how to setup for a VNC connection can be found at:
--   [Viewing events remotely with VNC](https://cdcvs.fnal.gov/redmine/projects/sbndcode/wiki/Viewing_events_remotely_with_VNC "by Dom Brailsford")
+-   [Viewing events remotely with VNC](../sbndcode_wiki/Viewing_events_remotely_with_VNC.md)
 
-Note those instructions are valid if you are opening an ssh connection from an OSX laptop/computer. If you are connecting via a laptop/computer running a different operating system (e.g. linux) then you will need to use a remote desktop program supported by that operating system. For example, on ubuntu one can use Remmina.
+Note those instructions are valid if you are opening an ssh connection from an OSX laptop/computer. If you are connecting via a laptop/computer running a different operating system (e.g. Linux) then you will need to use a remote desktop program supported by that operating system.
+For example, on Ubuntu one can use [Remmina](https://remmina.org) and, if using KDE, [KDRC](https://apps.kde.org/en-gb/krdc).
 
 
 Where to work: interactive nodes ("GPVM")
@@ -167,11 +170,10 @@ Where to work: interactive nodes ("GPVM")
 We have some dedicated "nodes" where we can log in and work interactively.
 
 These are General Purpose Virtual Machines (GPVM); they are shared by
-all ICARUS collaborators, and they can not be the fastest way to develop
-and run analyses.
-But they see all the resources that we have available: you can read data
-from ICARUS disks and tapes, and you can submit ICARUS jobs to the
-grid.
+all ICARUS collaborators.
+They may be not the fastest way to develop and run analyses,
+but they see all the resources that we have available: you can read data
+from ICARUS disks and tapes, and you can submit ICARUS jobs to the grid.
 The access is via SSH with FNAL.GOV [Kerberos credentials].
 The nodes are called: `icarusgpvm0X.fnal.gov` and `icarusbuild0X.fnal.gov`
 (see [ICARUS GPVM page](ICARUS_servers.md) for more details).
@@ -181,50 +183,47 @@ In case users have the need to use SL7, there is the possibility to use SL7 dev 
 More details are in the [GPVM migration](https://sbnsoftware.github.io/GPVM_migration) wiki page.
 
 The GPVM interactive machines have no relevant local storage,
-and areas in `/icarus` ("BlueArc") and `/pnfs` ("dCache") should be used
+and areas in `/exp/icarus` ("Ceph") and `/pnfs` ("dCache") should be used
 (the home directory works too, but it has small allowance).
 
-The interactive "build nodes" `icarusbuild01.fnal.gov` and
-`icarusbuild02.fnal.gov` have roughly the same environment as the other GPVM's.
+The interactive "build node"`icarusbuild02.fnal.gov` has roughly the same environment as the other GPVM's.
 The policy is to **use this machine only to build code and running tests**;
 this excludes job submission and local running of job campaigns
 and of single jobs beyond the size of a test job (say, 100 events).
 To maximise the benefit, build from the
 local disk; you can make your own scratch area by
 
-    cd /scratch
+    cd /scratch/icarus
     ./createMyScratchArea.sh
-
-[Information about all ICARUS GPVM's](ICARUS_servers.md)
-is on a [separate page](ICARUS_servers.md).
-
 
 
 Opening a ticket in Fermilab Service Desk
 ------------------------------------------
 
-When something goes wrong, open a ticket! Its fun, its easy but most
+When something goes wrong, open a ticket! It's fun, it's easy but most
 important it is how you engage experts to solve your problems (well,
 software problems).
 
 You want to open a Service Desk ticket if your job submission that used
 to work yesterday fails today, if the GPVM are very slow (if they are
 just slow, it\'s normal), if you are denied access to some resource you
-expect to deserve.
+believe to deserve.
 You don't open a service desk ticket if your jobs crash (most of the
 time, you just have to fix them), if there is a bug in ICARUS code
 ([e-mail to ICARUS mailing list](mailto:icarus_reconstruction@fnal.gov),
-write about it on SBN Slack channel (`#icarus_general`)
+write about it on a SBN Slack channel ([`#icarus_general`](https://shortbaseline.slack.com/archives/C014TBQ9P6J))
 and/or [open a GitHub issue](https://github.com/SBNSoftware/icaruscode/issues/new))
 or if you need help with using LArSoft
 ([LArSoft wiki](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki),
 [LArSoft mailing list](mailto:larsoft@fnal.gov),
 and [ICARUS mailing list](mailto:icarus_reconstruction@fnal.gov)).
 
-You need to log in via Fermilab "Services" password (the same you use
-to access Fermilab e-mail and Redmine), and then you go at:
+You go to
 
 <https://fermi.servicenowservices.com/wp>
+
+and log in via Fermilab "Services" password (the same you use
+to access Fermilab e-mail, VPN and Redmine... if you do).
 
 That will bring you to the "web portal" interface where you can generically
 "request something" and a human being will sort it out in due time.
@@ -237,30 +236,12 @@ Most of the requests are under the "Scientific Computing Services",
 with a relevant exception in the creation of computing accounts, which
 is in "Core Computing Services".
 
-> This ticket is completely unrelated to
-> [issue tracking tickets](https://cdcvs.fnal.gov/redmine/projects/icaruscode/issues),
-> opened via Redmine, against LArSoft or `icaruscode` pertaining LArSoft
-> or ICARUS software bug reports or feature requests.
-
-
 
 Accessing resources (DocDB, VOMS, ...) via certificates
 --------------------------------------------------------
 
-> Note: this section is about "personal" certificates, not the kind of
-> [certificate proxies you need to work on the grid](Get_a_certificate_proxy.md).
-
-📣 **⚠️ "personal" certificates will be [discontinued on May 2025](https://ca.cilogon.org/retirement) ⚠️**
-
-A CILogon certificate gives access to a number of Fermilab resources.
-After you [get a CILogon certificate](Setting_up_access_with_CILogon_certificate.md),
-you will gain access to:
-
--   [SBN DocDB](http://sbn-docdb.fnal.gov)
-    (see also [some specific ICARUS instructions](Access_to_SBN_DocDB_for_ICARUS_collaborators.md))
--   [Fermilab Virtual Organization (VOMS) server](https://voms.fnal.gov:8443/voms/fermilab/user/home.action)
--   Jenkins build server
-
+Personal certificates were discontinued on May 2025.
+If you read about them, you are likely seein outdated information.
 
 
 Accessing resources via Virtual Private Network
@@ -295,7 +276,12 @@ We can use different resources:
     contributions from physics but not limited to it
 -   *Wilson Cluster* is a Fermilab cluster *offering Graphics Processing Units* (GPU)
 
-To submit jobs, you'll also need a [certificate proxy](Get_a_certificate_proxy.md).
+To submit jobs, you'll also need a bearer token (see also [FIFE documentation](https://fifewiki.fnal.gov/wiki/Token_operations)).
+Short version:
+    
+    htgettoken --vaultserver=htvaultprod.fnal.gov --vaulttokenttl=7d --issuer=icarus
+
+for a token renewable for 7 days.
 
 _Note_: to ensure that your LArSoft jobs are executed in a complete environment,
 it is strongly recommended that the jobs are executed in the proper [Singularity container](https://singularity.lbl.gov)
