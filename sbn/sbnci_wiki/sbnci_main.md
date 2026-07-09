@@ -21,6 +21,8 @@ Welcome to the SBN CI & validation main page! If you just want to run a validati
 - sbndcode:    `v09_37_01_03p01` (sbn2021c), `v09_37_02_01` (sbn2022a), `v09_51_00` (current)
 - icaruscode:  `v09_37_01_03` (sbn2021c), `v09_37_02_01` (sbn2022a), `v09_51_00` (current)
 
+## [ICARUS CI Validation Results](/sbn/sbnci_wiki/icarus_ci_validation_results)
+
 ## Quick Start Guide
 1. Get a valid kerberos ticket with forwarding enabled (`kinit -f <username>`)
 2. ssh into one of your experiment's gpvm nodes
