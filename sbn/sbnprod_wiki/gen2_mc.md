@@ -52,6 +52,9 @@ toc_title: Gen 2 MC
 <br>
 
 <h3>Ar23</h3>
+<blockquote>
+<strong>Note:</strong> For more information regarding AR23 samples refer to SBN DocDB 46219
+</blockquote>
 
 <table>
   <thead>
@@ -61,6 +64,21 @@ toc_title: Gen 2 MC
     <tr><td><strong>calibntuples</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_histreco2_sbnd</code></td></tr>
     <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_caf_sbnd</code></td></tr>
     <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>mc_MCP2025C_FallProduction_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h4>AR23+ Knobs</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>flatcaf</strong></td><td>v1_00_01</td><td><code>mc_SBND2026A_AR23plus_knobs_BNBLight_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 
