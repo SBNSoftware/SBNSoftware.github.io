@@ -23,12 +23,12 @@ in release management, these include:
 Creating a new release
 ----------------------------------------------------------------
 0.  [Get scripts](https://github.com/SBNSoftware/SBNSoftware.github.io/tree/master/sbndcode_wiki/attachments)
-1.  [Tag the release](Tagging_a_release.html)
-2.  [Build on Jenkins](Building_a_release_on_Jenkins.html)
-3.  [Upload release to SciSoft](Write_files_to_SciSoft.html)
-4.  [Deploy on CVMFS](Deploying_a_release_on_CVMFS.html)
+1.  [Tag the release](Tagging_a_release.md)
+2.  [Build on Jenkins](Building_a_release_on_Jenkins.md)
+3.  [Upload release to SciSoft](Write_files_to_SciSoft.md)
+4.  [Deploy on CVMFS](Deploying_a_release_on_CVMFS.md)
 5.  [Update the
-    wiki](Updating_the_wiki_for_a_new_release.html)
+    wiki](Updating_the_wiki_for_a_new_release.md)
 6.  Email users on sbnd-software
 
 
