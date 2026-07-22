@@ -98,6 +98,5 @@ Instructions
         git push origin develop master # if mainline release
 		git push origin production/<production_branch> production/<production_branch>-master # if production release
         git push --tags
-        git flow release start < version >
 
 -   Checked out branch is now release/\< version \>.
