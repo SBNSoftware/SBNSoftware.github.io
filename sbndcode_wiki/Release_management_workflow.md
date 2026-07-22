@@ -3,19 +3,6 @@ layout: page
 title: Release management workflow
 ---
 
-
-
-Release management workflow
-==========================================================================
-
-(Note almost all of this information is from the MicroBooNE instructions
-[here (tagging)](Tagging.html), [here (Jenkins
-build)](Jenkins_Build.html), [here
-(CVMFS)](Oasis.html), and
-[here](Uboone_data.html).)
-
-
-
 Required permissions
 ------------------------------------------------------------
 
@@ -57,8 +44,4 @@ Mailing lists you should be on
 
 -   SBND-SOFTWARE
 -   SBN-SOFTWARE
--   SBND-COMMIT
--   SBND-SOFTWARE-BUILD
--   BUILD-SERVICE-USERS
 -   LARSOFT
--   ART-USERS
