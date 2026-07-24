@@ -173,6 +173,27 @@ toc_title: Gen 1 MC
 <details>
 <summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
+
+
+
+<h3>AR23+ Knobs</h3>
+<h4>Full Sample</h4>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>flatcaf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_AR23plus_knobs_BNBLight_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+<hr>
+
+
+
+
+
+ 
 <h3>Low Threshold &ldquo;Dirt&rdquo; MC</h3>
  
 <h4>Full Sample</h4>
@@ -189,6 +210,9 @@ toc_title: Gen 1 MC
   </tbody>
 </table>
 <hr>
+
+
+
 <h3>Intrinsic &nu;<sub>e</sub> MC</h3>
  
 <h4>Full Sample</h4>
