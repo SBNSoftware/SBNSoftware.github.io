@@ -71,17 +71,6 @@ toc_title: Gen 2 MC
 
 
 
-<h4>AR23+ Knobs</h4>
-
-<table>
-  <thead>
-    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>flatcaf</strong></td><td>v1_00_01</td><td><code>mc_SBND2026A_AR23plus_knobs_BNBLight_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
-  </tbody>
-</table>
-
 <hr>
 
 
