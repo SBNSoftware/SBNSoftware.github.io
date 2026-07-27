@@ -911,6 +911,7 @@ _2024 November_: A sample of central value SBND MC events were generated on Pola
 | --- | --- | --- | flatcaf | icaruspro_production_2025_run4_nu_overlay_mc_v10_06_00_06p03_flat_caf|
 
 ### ICARUS RUN4 Wiremod Overlays
+
 | Sample Description | release version | # Events | File type | Samweb definition |
 |ICARUS Run 4 WireMod Overlay| v10_06_00_06p03 | 600k | stage0 |icaruspro_production_2026_run4_wiremod_mc_v10_06_00_06p03_stage0 |
 | --- | --- | --- | calibtuples | icaruspro_production_2026_run4_wiremod_mc_v10_06_00_06p03_calib_ntuples |
