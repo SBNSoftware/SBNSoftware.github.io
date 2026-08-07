@@ -189,7 +189,17 @@ toc_title: Gen 1 MC
 </table>
 <hr>
 
+<h4>Full Sample: Intrinsic &nu;<sub>e</sub> </h4>
 
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>flatcaf</strong></td><td>v10_06_00_09 (sbnnusyst v1_00_01) </td><td><code>mc_SBND2026A_AR23plus_knobs_IntrinsicNuE_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+<hr>
 
 
 
