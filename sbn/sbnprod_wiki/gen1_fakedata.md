@@ -16,7 +16,7 @@ toc_title: Gen 1 Fake Data
  
 <details>
 <summary><h2 style="display:inline"> BNB + Light FakeData </h2></summary>
-<h3>AR25 Tune: 1.62+ million events</h3>
+<h3>AR25 Tune (AR25_20i_00_000): 1.62+ million events</h3>
 <table>
   <thead>
     <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
