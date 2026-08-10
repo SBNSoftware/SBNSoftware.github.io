@@ -31,6 +31,7 @@ toc_title: Gen 1 Fake Data
 </table>
 
 ---
+</details>
  
 ## Related Pages
 - [← Back to Gen 1 Analyses](gen1_analyses)
