@@ -20,6 +20,7 @@ toc_title: Gen 1 Analyses
 | :--- | :--- | :--- |
 | **Data** | All Gen 1 Data samples  | [View Data →](gen1_data) |
 | **MC** | All Gen 1 Monte Carlo simulation samples | [View MC →](gen1_mc) |
+| **Fake Data** | All Gen 1 Fake Data samples | [View Fake Data →](gen1_fakedata) |
 
 ---
 
