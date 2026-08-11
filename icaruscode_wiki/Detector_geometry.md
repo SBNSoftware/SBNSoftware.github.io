@@ -25,7 +25,7 @@ Variants that never went default are listed in the next subsection.
 
 | version      | introduced                  | default     | file path                                                                   | based on    | description
 | ------------ | --------------------------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
-| `icarus_v4`  | `v09_81_02`                 | `v09_81_02` | `icarusalg/Geometry/gdml/icarus_refactored_nounderscore_20230918.gdml`      | `icarus_v3` | technical changes only
+| `icarus_v4`  | `v09_81_02`                 | `v09_81_02` | `icarusalg/Geometry/gdml/icarus_refactored_nounderscore_20230918.gdml`      |             | technical changes only
 | `icarus_v4`  | `v09_53_02`, `v09_37_02_09` | `v09_53_02` | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `icarus_v3` | updated CRT module positions, includes the concrete overburden
 | `icarus_v3`  | `v09_25_00`                 | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `icarus_v2` | closer cryostats, added building details; with no concrete overburden
 | `icarus_v2`* | `v09_18_00`                 | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107`  | fixed orientation of wires, with no concrete overburden
