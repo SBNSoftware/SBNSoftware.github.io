@@ -21,17 +21,15 @@ The "version" string also comprises a compatibility check:
 different from the one configured in the current job
 (override with `services.Geometry.SkipConfigurationCheck: true`).
 
+Variants that never went default are listed in the next subsection.
 
 | version      | introduced                  | default     | file path                                                                   | based on    | description
 | ------------ | --------------------------- | ----------- | --------------------------------------------------------------------------- | ----------- | ------------
-| `icarus_v4`  | `v09_53_02`, `v09_37_02_09` | `v09_53_02` | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `icarus_v3` | updated CRT module positions
-| `icarus_v3`  | `v09_25_00`                 |             | `icarusalg/Geometry/gdml/icarus_complete_20210527_overburden.gdml`          | `icarus_v2` | closer cryostats, added building details; with concrete overburden
+| `icarus_v4`  | `v09_81_02`                 | `v09_81_02` | `icarusalg/Geometry/gdml/icarus_refactored_nounderscore_20230918.gdml`      | `icarus_v3` | technical changes only
+| `icarus_v4`  | `v09_53_02`, `v09_37_02_09` | `v09_53_02` | `icarusalg/Geometry/gdml/icarus_complete_20220518_overburden.gdml`          | `icarus_v3` | updated CRT module positions, includes the concrete overburden
 | `icarus_v3`  | `v09_25_00`                 | `v09_25_00` | `icarusalg/Geometry/gdml/icarus_complete_20210527_no_overburden.gdml`       | `icarus_v2` | closer cryostats, added building details; with no concrete overburden
-| `icarus_v2`* | `v09_18_00`                 |             | `icarusalg/Geometry/gdml/icarus_complete_20210311_rotUV.gdml`               | `20201107`  | fixed orientation of wires, with concrete overburden
 | `icarus_v2`* | `v09_18_00`                 | `v09_18_00` | `icarusalg/Geometry/gdml/icarus_complete_20210311_no_overburden_rotUV.gdml` | `20201107`  | fixed orientation of wires, with no concrete overburden
-| `20201107`** | `v09_09_01`                 |             | `icarusalg/Geometry/gdml/icarus_complete_20201107.gdml`                     | `20200709`  | more realistic description of walls, updates to PMT materials, with concrete overburden
 | `20201107`** | `v09_09_01`                 | `v09_10_01` | `icarusalg/Geometry/gdml/icarus_complete_20201107_no_overburden.gdml`       | `20200709`  | more realistic description of walls, updates to PMT materials, with no concrete overburden
-| `20200709`** | `v08_57_00`                 |             | `icarusalg/Geometry/gdml/icarus_complete_20200709.gdml`                     | `20200307`  | fixed overlaps, with concrete overburden
 | `20200709`** | `v08_57_00`                 | `v08_57_00` | `icarusalg/Geometry/gdml/icarus_complete_20200709_no_overburden.gdml`       | `20200307`  | fixed overlaps, with no concrete overburden
 
 > _*_ _Versions `v09_18_00` to `v09_19_00_01` erroneously still report this geometry as `icarus_splitwires`. To process files generated with those versions, `services.Geometry.Name: icarus_splitwires` must be specified in the job configuration_
@@ -40,6 +38,25 @@ different from the one configured in the current job
 
 > _Note_: since `icarus_v4` geometry, no-overburden geometry is not provided any more.
 
+#### Variants
+
+In addition to the following variants, each typically has a `_nowires` twin without TPC wires for faster GEANT4 simulation.
+
+| version     | introduced                  | file path                                           | description
+| ----------- | --------------------------- | --------------------------------------------------- | -----------------------------------------
+| `icarus_v4` | `v09_81_02`                 | `icarus_refactored_nounderscore_20230918.gdml`      | refactoring for use with `LArG4` modules
+|             | `v09_53_02`, `v09_37_02_09` | `icarus_complete_20220518_overburden.gdml`          | base
+| `icarus_v3` | `v09_25_00`                 | `icarus_complete_20210527_overburden.gdml`          | with no concrete overburden
+|             | `v09_25_00`                 | `icarus_complete_20210527_no_overburden.gdml`       | base
+| `icarus_v2` | `v09_18_00`                 | `icarus_complete_20210311_rotUV.gdml`               | with no concrete overburden
+|             | `v09_18_00`                 | `icarus_complete_20210311_no_overburden_rotUV.gdml` | base
+| `20201107`  | `v09_09_01`                 | `icarus_complete_20201107.gdml`                     | with no concrete overburden
+|             | `v09_09_01`                 | `icarus_complete_20201107_no_overburden.gdml`       | base
+| `20200709`  | `v08_57_00`                 | `icarus_complete_20200709.gdml`                     | with no concrete overburden
+|             | `v08_57_00`                 | `icarus_complete_20200709_no_overburden.gdml`       | base
+
+
+
 ### Unsupported versions
 
 The following older geometry versions have been dropped from our codebase, and the only way to use them is to retrieve a version of `icaruscode` where they were still supported (either as main or as legacy options).
@@ -47,9 +64,7 @@ The following older geometry versions have been dropped from our codebase, and t
 | name       | version     | introduced  | default     | removed     | file path                                                             | description
 | ---------- | ----------- | ----------- | ----------- | ----------- | --------------------------------------------------------------------- | ------------------------------
 | `20200307` | `20200307`  | `v08_45_00` | `v08_50_02` | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 9 m, with no concrete overburden
-| `20200307` | `20200307`  | `v08_44_00` |             | `v08_57_00` | `icaruscode/Geometry/gdml/icarus_complete.gdml`                       | complete geometry, first induction plane wires 9 m, with concrete overburden
 |            |             | `v08_44_00` | `v08_44_00` |             | `icaruscode/Geometry/gdml/icarus_single_complete_no_overburden.gdml`  | complete geometry, first induction plane wires 18 m, with no concrete overburden
-|            |             | `v08_44_00` |             |             | `icaruscode/Geometry/gdml/icarus_single_complete.gdml`                | complete geometry, first induction plane wires 18 m, with concrete overburden
 |            |             | `v08_44_00` |             | `v08_45_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 9 m, with half concrete overburden (bug)
 |            |             | `v08_41_00` |             | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_no_overburden.gdml`         | complete geometry, first induction plane wires 18 m, with no concrete overburden
 |            |             | `v08_30_00` | `v08_30_00` | `v08_44_00` | `icaruscode/Geometry/gdml/icarus_complete_light.gdml`                 | `icarus_complete.gdml`, "temporary" version with niobium and molybdenum components of steel removed
@@ -61,6 +76,15 @@ In this table, "name" refers to the specific geometry, while "version" is the "d
 > [`icaruscode`](https://github.com/SBNSoftware/icaruscode/blob/develop/icaruscode/Geometry/gdml)
 > into [`icarusalg`](https://github.com/SBNSoftware/icarusalg/blob/develop/icarusalg/Geometry/gdml)
 > starting with ICARUS software release `v09_06_00` (October 2020).
+
+#### Variants of unsupported versions
+
+| version     | introduced  | removed     | file path                                    | description
+| ----------- | ----------- | ----------- | -------------------------------------------- | ------------------------------
+| `20200307`  | `v08_45_00` | `v08_57_00` | `icarus_complete_no_overburden.gdml`         | base
+| `20200307`  | `v08_44_00` | `v08_57_00` | `icarus_complete.gdml`                       | with concrete overburden
+|             | `v08_44_00` |             | `icarus_single_complete_no_overburden.gdml`  | base
+|             | `v08_44_00` |             | `icarus_single_complete.gdml`                | with concrete overburden
 
 
 ### Running standard tets on a a new version of the geometry description
