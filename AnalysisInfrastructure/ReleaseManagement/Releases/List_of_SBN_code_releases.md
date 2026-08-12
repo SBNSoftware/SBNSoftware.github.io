@@ -5,16 +5,17 @@ List of SBNCode (`sbncode`) Releases
   
 | Version        |      Notes                                  |      Detailed Notes                          
 |----------------|---------------------------------------------|------------------------------------------------------------------------------------
+| v10_06_00_14lf01 | Icarus 2025A production release (light fix branch) | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_14lf01)
 | v10_23_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_23_00)
 | v10_14_02_06   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_06)
 | v10_22_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_22_00)
-| v10_06_00_14   | Icarus production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_14)
+| v10_06_00_14   | Icarus 2025A production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_14)
 | v10_21_02      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_21_02)
-| v10_06_00_13   | Icarus production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_13)
+| v10_06_00_13   | Icarus 2025A production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_13)
 | v10_21_01      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_21_01)
 | v10_21_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_21_00)
-| v10_06_00_12   | Icarus production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_12)
-| v10_06_00_11   | Icarus production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_11)
+| v10_06_00_12   | Icarus 2025A production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_12)
+| v10_06_00_11   | Icarus 2025A production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_11)
 | v10_20_09      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_20_09)
 | v10_20_08      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_20_08)
 | v10_20_07      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_20_07)
