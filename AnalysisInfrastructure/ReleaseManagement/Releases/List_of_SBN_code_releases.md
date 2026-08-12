@@ -5,6 +5,7 @@ List of SBNCode (`sbncode`) Releases
   
 | Version        |      Notes                                  |      Detailed Notes                          
 |----------------|---------------------------------------------|------------------------------------------------------------------------------------
+| v10_23_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_23_00)
 | v10_14_02_06   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_06)
 | v10_22_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_22_00)
 | v10_06_00_14   | Icarus production release                   | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_06_00_14)
