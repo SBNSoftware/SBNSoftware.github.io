@@ -267,7 +267,7 @@ For calibration purposes
 </table>
 
 
-<h3>Full Run 2b Sample</h3>
+<h3>Full Run 2b Sample: Files 2614: Events 129k </h3>
 
 <table>
   <thead>
