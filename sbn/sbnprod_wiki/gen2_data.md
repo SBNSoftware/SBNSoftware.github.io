@@ -267,6 +267,21 @@ For calibration purposes
 </table>
 
 
+<h3>Full Run 2b Sample</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_06</td><td><code>data_SBND2026A_gen2_InTime-Run2b_beamlight_v10_14_02_06_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_06</td><td><code>data_SBND2026A_gen2_InTime-Run2b_beamlight_v10_14_02_06_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_06</td><td><code>data_SBND2026A_gen2_InTime-Run2b_beamlight_v10_14_02_06_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_06</td><td><code>data_SBND2026A_gen2_InTime-Run2b_beamlight_v10_14_02_06_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_06</td><td><code>data_SBND2026A_gen2_InTime-Run2b_beamlight_v10_14_02_06_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
 </details>
 
 
