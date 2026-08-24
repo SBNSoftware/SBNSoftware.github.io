@@ -213,6 +213,19 @@ toc_title: Gen 2 MC
 </table>
 
 <h3>PDS low SPE</h3>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_0602</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_Sample3_v10_14_02_0602_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_0602</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_Sample3_v10_14_02_0602_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_0602</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_Sample3_v10_14_02_0602_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_0602</td><td><code>mc_SBND2026A_prodgenie_corsika_proton_rockbox0p1_sbnd_PDS_detvar_Sample3_v10_14_02_0602_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
 <h3>WireMod Gen2</h3>
 <h3>Field distortion</h3>
 <p> Available Soon! </p>
