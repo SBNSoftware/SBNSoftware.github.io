@@ -185,7 +185,7 @@ toc_title: Gen 2 MC
 </blockquote>
 
 
-<h3>PDS 0.94xLY</h3>
+<h3>PDS 0.94xLY (LY: Light Yield)</h3>
 
 <table>
   <thead>
@@ -199,7 +199,7 @@ toc_title: Gen 2 MC
 </table>
 
 
-<h3>PDS 1.19xLY</h3>
+<h3>PDS 1.19xLY (LY: Light Yield)</h3>
 
 <table>
   <thead>
