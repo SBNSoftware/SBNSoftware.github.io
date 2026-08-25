@@ -185,7 +185,7 @@ toc_title: Gen 2 MC
 </blockquote>
 
 
-<h3>PDS 0.94xLY (LY: Light Yield)</h3>
+<h3>PDS 0.94xLY (LY: Light Yield, Events: ~3.30 million)</h3>
 
 <table>
   <thead>
@@ -199,7 +199,7 @@ toc_title: Gen 2 MC
 </table>
 
 
-<h3>PDS 1.19xLY (LY: Light Yield)</h3>
+<h3>PDS 1.19xLY (LY: Light Yield, Events: ~3.30 million)</h3>
 
 <table>
   <thead>
@@ -212,7 +212,8 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-<h3>PDS low SPE</h3>
+<h3>PDS low SPE (Events: ~3.28 million)</h3>
+<h4>Short description: Single photo electron response is lowered (1 photoelectron produces a smaller PMT pulse -- observed over run 1)</h4>
 
 <table>
   <thead>
