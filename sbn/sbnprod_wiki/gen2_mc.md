@@ -213,7 +213,7 @@ toc_title: Gen 2 MC
 </table>
 
 <h3>PDS low SPE (Events: ~3.28 million)</h3>
-<h4>Short description: Single photo electron response is lowered (1 photoelectron produces a smaller PMT pulse -- observed over run 1)</h4>
+<p>Short description: Single photo electron response is lowered (1 photoelectron produces a smaller PMT pulse -- observed over run 1)</p>
 
 <table>
   <thead>
