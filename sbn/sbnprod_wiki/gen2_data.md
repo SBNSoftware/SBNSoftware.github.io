@@ -252,7 +252,7 @@ For calibration purposes
 <summary><h2 style="display:inline"> BNB + Light Data</h2></summary>
 <br>
 
-<h3>Full Run 1 Sample</h3>
+<h3>Full Run 1 Sample: Files 100934: Events 4.80 million</h3>
 
 <table>
   <thead>
@@ -260,9 +260,10 @@ For calibration purposes
   </thead>
   <tbody>
     <tr><td><strong>reco1</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_reco1_sbnd</code></td></tr>
-    <tr><td><strong>calibntuples</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_histreco2_sbnd</code></td></tr>
-    <tr><td><strong>caf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_caf_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td>v10_14_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_02</td><td><code>data_SBND2026A_gen2_BNB-Run1_v10_14_02_02_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 
