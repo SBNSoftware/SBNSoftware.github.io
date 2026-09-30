@@ -384,11 +384,11 @@ toc_title: Gen 1 Data
     <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>reco1</strong></td><td>v10_06_00_02</td><td><code>data_SBND2026A_gen1_InTime-Run1-Post1e20_beamlight_v10_06_00_02_reco1_sbnd</code></td></tr>
-    <tr><td><strong>larcv</strong></td><td>v10_06_00_02</td><td><code>data_SBND2026A_gen1_InTime-Run1-Post1e20_beamlight_v10_06_00_02_larcvreco1_sbnd</code></td></tr>
-    <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1_InTime-Run1-Post1e20_beamlight_Part2_v10_06_00_09_histreco2_sbnd</code></td></tr>
-   <tr><td><strong>caf</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1_InTime-Run1-Post1e20_beamlight_Part2_v10_06_00_09_caf_sbnd</code></td></tr>
-   <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1_InTime-Run1-Post1e20_beamlight_Part2_v10_06_00_09_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>reco1</strong></td><td>v10_06_00_02</td><td><code>data_SBND2026A_gen1_Run1-Post1e20_beamlight_v10_06_00_02_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_06_00_02</td><td><code>data_SBND2026A_gen1_Run1-Post1e20_beamlight_v10_06_00_02_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1Run1-Post1e20_beamlight_v10_06_00_09_histreco2_sbnd</code></td></tr>
+   <tr><td><strong>caf</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1_Run1-Post1e20_beamlight_v10_06_00_09_caf_sbnd</code></td></tr>
+   <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>data_SBND2026A_gen1_Run1-Post1e20_beamlight_v10_06_00_09_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 
