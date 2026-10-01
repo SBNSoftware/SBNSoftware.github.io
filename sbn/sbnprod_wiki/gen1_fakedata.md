@@ -30,6 +30,20 @@ toc_title: Gen 1 Fake Data
   </tbody>
 </table>
 
+<h3>GiBUU FakeData: ~240k events</h3>
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_reco1_sbnd</code></td></tr>
+   <tr><td><strong>larcv</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_gen1_prodgenie_corsika_proton_rockbox_sbnd_GIBUU_CV_v10_06_00_09_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
 ---
 </details>
  
