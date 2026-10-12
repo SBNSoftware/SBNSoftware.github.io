@@ -552,27 +552,27 @@ wrong results.
   if (handle.isValid()) art::fill_ptr_vector(dk2nus, handle);
   ```
   Alternative patterns include:
-    * if the presence of the data product is actually mandatory and required:
-      ```cpp
-      auto const& dk2nus = event.getProduct<std::vector<bsim::Dk2Nu>>(generatorTag);
-      ```
-    * if the presence of the data product is not required (I):
-      ```cpp
-      auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
-      std::vector<bsim::Dk2Nu> const* dk2nus = handle? handle.product(): nullptr;
-      ```
-      and then on each use a test is needed on whether `dk2nus` is null; access is via `dk2nus.at(i)` or `dk2nus[i]`.
-    * if the presence of the data product is not required (II):
-      ```cpp
-      auto const& dk2nus = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
-      ```
-      and then on each use a test is needed on whether `dk2nus` handle is valid or not; access is via `dk2nus->at(i)`.
-    * if the absence of the data product is equivalent to it being empty:
-      ```cpp
-      auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
-      std::vector<bsim::Dk2Nu> const& dk2nus = handle? *handle: std::vector<bsim::Dk2Nu>{};
-      ```
-      and then on each use a test is needed on whether `dk2nus` contains the desired element or access via `dk2nus->at(i)`.
+  * if the presence of the data product is actually mandatory and required:
+    ```cpp
+    auto const& dk2nus = event.getProduct<std::vector<bsim::Dk2Nu>>(generatorTag);
+    ```
+  * if the presence of the data product is not required (I):
+    ```cpp
+    auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+    std::vector<bsim::Dk2Nu> const* dk2nus = handle? handle.product(): nullptr;
+    ```
+    and then on each use a test is needed on whether `dk2nus` is null; access is via `dk2nus.at(i)` or `dk2nus[i]`.
+  * if the presence of the data product is not required (II):
+    ```cpp
+    auto const& dk2nus = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+    ```
+    and then on each use a test is needed on whether `dk2nus` handle is valid or not; access is via `dk2nus->at(i)`.
+  * if the absence of the data product is equivalent to it being empty:
+    ```cpp
+    auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+    std::vector<bsim::Dk2Nu> const& dk2nus = handle? *handle: std::vector<bsim::Dk2Nu>{};
+    ```
+    and then on each use a test is needed on whether `dk2nus` contains the desired element or access via `dk2nus->at(i)`.
 
 
 ##  [CF] Language features  ################################################
