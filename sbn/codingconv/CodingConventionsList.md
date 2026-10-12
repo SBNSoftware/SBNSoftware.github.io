@@ -347,8 +347,8 @@ wrong results.
 [`[CL.04]`](#CL04) <span id="CL04"> **[−]**
   Consider alternatives to `art::FindManyP` if available.
 
-[`[CL.05]`](#CL05) <span id="CL05"> **[+]**
-  Use of `art::ProductToken` for simple data product reading.
+[`[CL.05]`](#CL05) <span id="CL05">
+  _[withdrawn]_ Use of `art::ProductToken` is not recommended any more due to lack of upstream support.
 
 [`[CL.06]`](#CL06) <span id="CL06"> **[++]**
   Declare input data products to _art_ by calling `consumes()`
@@ -365,7 +365,8 @@ wrong results.
 [`[CL.09]`](#CL09) <span id="CL09"> **[++]**
   Use `Geometry` service methods to iterate through detector TPC, planes etc.
 
-
+[`[CL.10]`](#CL10) <span id="CL10"> **[+++]**
+  The use of `std::vector<art::Ptr<T>>` and `art::PtrVector<T>` is allowed only when _art_ pointers are actually needed.
 
 ##  [CF] Language features  ################################################
 
