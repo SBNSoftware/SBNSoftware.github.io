@@ -344,7 +344,7 @@ toc_title: Gen 1 Data
 <details>
 <summary><h2 style="display:inline"> BNB + Light Data</h2></summary>
 <br>
-<h3>Run 1 1e20 Sample</h3>
+<h3>Run 1 Development 1e20 Sample</h3>
  
 <table>
   <thead>
