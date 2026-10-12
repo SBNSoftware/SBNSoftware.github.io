@@ -522,8 +522,8 @@ wrong results.
       }  
   ```
 
-[`[CL.05]`](#CL05) <span id="CL05"> **[+]**
-  The use of `art::ProductToken` is **suggested** for simple data product reading.
+[`[CL.05]`](#CL05) <span id="CL05">
+  _[withdrawn]_ The use of `art::ProductToken` is not suggested any more, given the drop of support in _art_
 
 [`[CL.06]`](#CL06) <span id="CL06"> **[++]**
   The use of `consumes()` calls in module constructors is **encouraged**.
@@ -542,6 +542,37 @@ wrong results.
   `geo::GeometryCore::IterateXxxx()` methods
   (e.g. [`IteratePlanes()`](https://nusoft.fnal.gov/larsoft/doxsvn/html/classgeo_1_1GeometryCore.html#ae8ca7d464c8c3e1095ca64a640094367))
   is **encouraged**.
+
+[`[CL.10]`](#CL10) <span id="CL10"> **[+++]**
+  The use of `std::vector<art::Ptr<T>>` and `art::PtrVector<T>` is allowed only when _art_ pointers are actually needed.
+  A anti-pattern has been spread since early times of LArSoft where a data product would be immediately converted in _art_ pointers, and then those pointers would be dereferenced each time they are used. For example:
+  ```cpp
+  auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+  std::vector<art::Ptr<bsim::Dk2Nu>> dk2nus;
+  if (handle.isValid()) art::fill_ptr_vector(dk2nus, handle);
+  ```
+  Alternative patterns include:
+    * if the presence of the data product is actually mandatory and required:
+      ```cpp
+      auto const& dk2nus = event.getProduct<std::vector<bsim::Dk2Nu>>(generatorTag);
+      ```
+    * if the presence of the data product is not required (I):
+      ```cpp
+      auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+      std::vector<bsim::Dk2Nu> const* dk2nus = handle? handle.product(): nullptr;
+      ```
+      and then on each use a test is needed on whether `dk2nus` is null; access is via `dk2nus.at(i)` or `dk2nus[i]`.
+    * if the presence of the data product is not required (II):
+      ```cpp
+      auto const& dk2nus = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+      ```
+      and then on each use a test is needed on whether `dk2nus` handle is valid or not; access is via `dk2nus->at(i)`.
+    * if the absence of the data product is equivalent to it being empty:
+      ```cpp
+      auto const& handle = event.getHandle<std::vector<bsim::Dk2Nu>>(generatorTag);
+      std::vector<bsim::Dk2Nu> const& dk2nus = handle? *handle: std::vector<bsim::Dk2Nu>{};
+      ```
+      and then on each use a test is needed on whether `dk2nus` contains the desired element or access via `dk2nus->at(i)`.
 
 
 ##  [CF] Language features  ################################################
