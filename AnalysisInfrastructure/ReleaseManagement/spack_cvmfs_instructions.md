@@ -87,6 +87,6 @@ $ spack checksum &lt;package&gt; &lt;version&gt;
 
 Install packages.
 <pre>
-$ spack install
+$ spack install -j&lt;Njobs&gt;
 </pre>
 
