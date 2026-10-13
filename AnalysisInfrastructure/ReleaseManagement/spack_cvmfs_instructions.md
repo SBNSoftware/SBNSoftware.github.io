@@ -51,3 +51,12 @@ This repository contains release configurations for sbn, sbnd, and icarus.  You 
     uboone: https://spack-cache-1.fnal.gov/binaries/sbn
 </pre>
 Commit updates and tag the newly created head version.  The tag should match the tag mentioned in the release config.
+
+### Create a new environment
+
+Use the newly updated release config to make a new environment.
+<pre>
+$ spack env create &lt;new environment&gt; /path/to/release/config
+$ spack env activate &lt;new environment&gt;
+</pre>
+
