@@ -66,6 +66,22 @@ $SPACK_ROOT/var/spack/environments/&lt;environment&gt;/spack.yaml
 </pre>
 If you need to edit a configuration file in the `included_yaml` subdirectory, those files need to be commited back to github and the tag moved.  If you do edit the environment configuration directly in the spack instance, remember to copy and commit it back to github later.
 
+### Update Recipes
+
+Before concretizing the newly created environment for the first time, we will want to make sure that sbn package recipes are up to date.
+Visit the checked out recipe repo, which for all sbn-related packages is `sbn-spack`.
+<pre>
+$ cd $SPACK_ROOT/var/spack/repos/sbn-spack
+$ git status
+</pre>
+Note the checked out branch, which in the latest larsoft spack instance is `spack-v1.0`.
+
+Change the upstream branch to point to remote `origin` instead of `upstream`.  Do a `git pull` to bring the checked out branch up to date with `origin`.
+<pre>
+$ git branch -u origin/spack-v1.0
+$ git pull
+</pre>
+
 ### Concretize the new environment.
 
 Concretize the new environment.
@@ -89,4 +105,6 @@ Install packages.
 <pre>
 $ spack install -j&lt;Njobs&gt;
 </pre>
+
+When you are finished, push updated recipes to github.
 
