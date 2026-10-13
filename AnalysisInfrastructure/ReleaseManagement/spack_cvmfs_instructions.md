@@ -1,14 +1,28 @@
 # How to Build a Spack Environment for Distribution in CVMFS (Manual Method)
 
-## Overview
+## Table of Contents
+1. [Overview](#overview)
+2. [Step-by-step instructions](#steps)
+    1. [Create a spack instance](#instance)
+    2. [Update environment configuration](#config)
+    3. [Create environment](#environ)
+    4. [Update recipes](#recipes)
+    5. [Concretize environment](#concretize)
+    6. [Build and install environment](#install)
+    7. [Install a signing key](#key)
+    8. [Create local binary cache](#cache)
+    9. [Upload local binary cache to cache server](#server)
+    10. [Install environment in cvmfs](#cvmfs)
+
+## Overview <a name="overview"/>
 
 This page contains instructions for building a binary spack environment for distribution in CVMFS.  This article assumes that all of the relevant packages have already been tagged.  This article covers the manual method, meaning that the build does not use Jenkins.  
 
-## Step-by-step Instructions
+## Step-by-step Instructions <a name="steps"/>
 
 Step by step instructions follow.
 
-### Create a Spack Instance
+### Create a Spack Instance <a name="instance"/>
 
 In your own account on the sbn gpvm's, create a spack instance that is a subspack of a suitable parent spack instance. Use padding.
 <pre>
@@ -37,7 +51,7 @@ If you are reusing an existing local spack instance, update the spack recipes.
 $ spack repo update
 </pre>
 
-### Update Environment Configuration
+### Update Environment Configuration <a name="config"/>
 
 Check out `sbn-release-configs` from github.
 <pre>
@@ -52,7 +66,7 @@ This repository contains release configurations for sbn, sbnd, and icarus.  You 
 </pre>
 Commit updates and tag the newly created head version.  The tag should match the tag mentioned in the release config.
 
-### Create a new environment
+### Create a new environment <a name="environ"/>
 
 Use the newly updated release config to make a new environment.
 <pre>
@@ -66,7 +80,7 @@ $SPACK_ROOT/var/spack/environments/&lt;environment&gt;/spack.yaml
 </pre>
 If you need to edit a configuration file in the `included_yaml` subdirectory, those files need to be commited back to github and the tag moved.  If you do edit the environment configuration directly in the spack instance, remember to copy and commit it back to github later.
 
-### Update Recipes
+### Update Recipes <a name="recipes"/>
 
 Before concretizing the newly created environment for the first time, we will want to make sure that sbn package recipes are up to date.
 Visit the checked out recipe repo, which for all sbn-related packages is `sbn-spack`.
@@ -82,7 +96,7 @@ $ git branch -u origin/spack-v1.0
 $ git pull
 </pre>
 
-### Concretize the new environment.
+### Concretize the new environment <a name="concretize"/>
 
 Concretize the new environment.
 <pre>
@@ -94,7 +108,7 @@ Verify the correctness and reasonableness of the concretized environment using t
 $ spack find -lc  
 </pre>
 
-### Build and install the new environment.
+### Build and install the new environment <a name="install"/>
 
 Update package recipes with any new checksums.  This step can be interleaved with `spack install` to identify packages requiring updated checksums.
 <pre>
@@ -110,7 +124,7 @@ Verify that all packages have been installed using `spack find -lc`.
 
 When you are finished, push updated recipes to github.  If necessary, update the git configuration to use a pushable url (i.e. `git@github.com:SBNSoftware/sbn-spack.git`).
 
-### Install a Siging Key
+### Install a Siging Key <a name="key"/>
 
 Make sure that your working spack instance has a signing key.
 <pre>
@@ -120,7 +134,7 @@ $ spack gpg list
 </pre>
 For instructions on how to generate key files, refer to [Fermilab instructions](https://fnalssi.github.io/spack-at-fnal/pages/build_manager_process.html).
 
-### Create Local Binary Cache
+### Create Local Binary Cache <a name="cache"/>
 
 Make sure that this spack instance has a local binary build cache, and populate it with newly installed packages.
 <pre>
@@ -129,7 +143,7 @@ $ spack localbuildcache --key &lt;key&gt; --local --not-bc --with-build-dependen
 </pre>
 The key name `<key>` is the name assigned when the key was created.  The name of an installed key can be discovered using command `spack gpg list`.
 
-### Upload Local Binary Cache to Cache Server
+### Upload Local Binary Cache to Cache Server <a name="server"/>
 
 Upload local binary build cache content to the cache server.
 <pre>
@@ -140,7 +154,7 @@ $ spack buildcache update-index -k /spack_cache/sbn
 $ logout
 </pre>
 
-### Install the Environment in CVMFS
+### Install the Environment in CVMFS <a name="cvmfs"/>
 
 Copy `spack.yaml` and `spack.lock` from the newly built environment to the cvmfs server.
 <pre>
