@@ -48,6 +48,7 @@ And full stack tested before released (Jenkins).
 * [Release Management Instructions](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/rm_instructions)
 * [Herb's instructions for building sbncode](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/sbncode_instructions)
 * [Lynn's instructions for making a larsoft patch release](https://cdcvs.fnal.gov/redmine/projects/larsoft/wiki/How_to_tag_and_build_a_LArSoft_patch_release)
+* [How to build a spack environment for distribution in cvmfs](https://sbnsoftware.github.io/AnalysisInfrastructure/ReleaseManagement/spack_cvmfs_instructions)
 
 **Release managment team**: [Herbert Greenlee, Alexander Antonakis, Jacob Smith](mailto:greenlee@fnal.gov,aantonakis@ucsb.edu,jacob.a.smith@stonybrook.edu)
 
