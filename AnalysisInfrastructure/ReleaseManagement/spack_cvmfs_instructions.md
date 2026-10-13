@@ -82,7 +82,7 @@ $ spack find -lc
 
 Update package recipes with any new checksums.  This step can be interleaved with `spack install` to identify packages requiring updated checksums.
 <pre>
-$ spack checksum <package> <version>
+$ spack checksum &lt;package&gt; &lt;version&gt;
 </pre>
 
 Install packages.
