@@ -110,3 +110,33 @@ Verify that all packages have been installed using `spack find -lc`.
 
 When you are finished, push updated recipes to github.  If necessary, update the git configuration to use a pushable url (i.e. `git@github.com:SBNSoftware/sbn-spack.git`).
 
+### Install a Siging Key
+
+Make sure that your working spack instance has a signing key.
+<pre>
+$ spack gpg trust &lt;public-key-file&gt;
+$ spack gpg trust &lt;secret-key-file&gt;
+$ spack gpg list
+</pre>
+For instructions on how to generate key files, refer to [Fermilab instructions](https://fnalssi.github.io/spack-at-fnal/pages/build_manager_process.html).
+
+### Create Local Binary Cache
+
+Make sure that this spack instance has a local binary build cache, and populate it with newly installed packages.
+<pre>
+$ spack cd -e
+$ spack localbuildcache --key &lt;key&gt; --local --not-bc --with-build-dependencies
+</pre>
+The key name `<key>` is the name assigned when the key was created.  The name of an installed key can be discovered using command `spack gpg list`.
+
+### Upload Local Binary Cache to Cache Server
+
+Upload local binary build cache content to the cache server.
+<pre>
+$ scp -r bc/* products@fifeutilgpvm03.fnal.gov:/spack_cache/sbn
+$ ssh products@fifeutilgpvm03.fnal.gov
+$ source /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/setup-env.sh
+$ spack buildcache update-index -k /spack_cache/sbn
+$ logout
+</pre>
+
