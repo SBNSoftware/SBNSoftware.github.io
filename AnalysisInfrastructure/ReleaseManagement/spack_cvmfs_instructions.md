@@ -106,7 +106,7 @@ Install packages.
 $ spack install -j&lt;Njobs&gt;
 </pre>
 
-Verify that all packages have been installed using `git find -lc`.  
+Verify that all packages have been installed using `spack find -lc`.  
 
 When you are finished, push updated recipes to github.  If necessary, update the git configuration to use a pushable url (i.e. `git@github.com:SBNSoftware/sbn-spack.git`).
 
