@@ -56,14 +56,37 @@ Commit updates and tag the newly created head version.  The tag should match the
 
 Use the newly updated release config to make a new environment.
 <pre>
-$ spack env create &lt;new environment&gt; /path/to/release/config
-$ spack env activate &lt;new environment&gt;
+$ spack env create &lt;environment&gt; /path/to/release/config
+$ spack env activate &lt;environment&gt;
 </pre>
+
+If you need to edit the environment configuration during the build process, the top level configuration file can be edited directly at the following location.
+<pre>
+$SPACK_ROOT/var/spack/environments/&lt;environment&gt;/spack.yaml
+</pre>
+If you need to edit a configuration file in the `included_yaml` subdirectory, those files need to be commited back to github and the tag moved.  If you do edit the environment configuration directly in the spack instance, remember to copy and commit it back to github later.
 
 ### Concretize the new environment.
 
 Concretize the new environment.
 <pre>
 $ spack concretize
+</pre>
+
+Verify the correctness and reasonableness of the concretized environment using the following command.
+<pre>
+$ spack find -lc  
+</pre>
+
+### Build and install the new environment.
+
+Update package recipes with any new checksums.  This step can be interleaved with `spack install` to identify packages requiring updated checksums.
+<pre>
+$ spack checksum <package> <version>
+</pre>
+
+Install packages.
+<pre>
+$ spack install
 </pre>
 
