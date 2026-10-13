@@ -60,3 +60,10 @@ $ spack env create &lt;new environment&gt; /path/to/release/config
 $ spack env activate &lt;new environment&gt;
 </pre>
 
+### Concretize the new environment.
+
+Concretize the new environment.
+<pre>
+$ spack concretize
+</pre>
+
