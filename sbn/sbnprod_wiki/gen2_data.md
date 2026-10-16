@@ -88,6 +88,25 @@ toc_title: Gen 2 Data
 
 ---
 
+<details>
+<summary><h3 style="display:inline">Run 3 Fixed Development: Files 2208: Events 109k: POT: 5e18 </h3></summary>
+<br>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_BeamLight_Fixed_Dev_Data_v10_14_02_08_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv reco1</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_BeamLight_Fixed_Dev_Data_v10_14_02_08_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_BeamLight_Fixed_Dev_Data_v10_14_02_08_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_BeamLight_Fixed_Dev_Data_v10_14_02_08_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_BeamLight_Fixed_Dev_Data_v10_14_02_08_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+</details>
+
 </details>
 
 ---
@@ -99,27 +118,6 @@ toc_title: Gen 2 Data
 <blockquote>
 <strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation, or can be used for other background studies. 
 </blockquote>
-
-<details>
-<summary><h3 style="display:inline"> Run2c Offbeam Data</h3></summary>
-<br>
-
-<table>
-  <thead>
-    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>reco1</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_reco1_sbnd</code></td></tr>
-    <tr><td><strong>larcv</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_larcvreco1_sbnd</code></td></tr>
-    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_histreco2_sbnd</code></td></tr>
-    <tr><td><strong>caf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_caf_sbnd</code></td></tr>
-    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_flatcaf_sbnd</code></td></tr>
-  </tbody>
-</table>
-
-</details>
-
----
 
 <details>
 <summary><h3 style="display:inline"> Run1 Development Sample</h3></summary>
@@ -176,6 +174,46 @@ toc_title: Gen 2 Data
 </details>
 
 ---
+
+<details>
+<summary><h3 style="display:inline"> Run2c Offbeam Data</h3></summary>
+<br>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_04</td><td><code>data_SBND2026A_gen2_InTime-Run2c_v10_14_02_04_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline">Run 3 Fixed Development: Files 1871: Events 92k </h3></summary>
+<br>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_OffBeamLight_Fixed_Dev_Data_v10_14_02_08_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv reco1</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_OffBeamLight_Fixed_Dev_Data_v10_14_02_08_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calibntuples</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_OffBeamLight_Fixed_Dev_Data_v10_14_02_08_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_OffBeamLight_Fixed_Dev_Data_v10_14_02_08_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_08</td><td><code>data_SBND2026A_Gen2_Run3_OffBeamLight_Fixed_Dev_Data_v10_14_02_08_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+</details>
 
 </details>
 
