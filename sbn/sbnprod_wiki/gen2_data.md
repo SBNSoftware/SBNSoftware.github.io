@@ -20,7 +20,9 @@ toc_title: Gen 2 Data
 
 <p><em>The primary neutrino stream for SBND physics analysis.</em></p>
 
-<h3>Run 1 Analysis Development Sample (Fix + Rolling)</h3>
+<details>
+<summary><h3 style="display:inline">Run 1 Analysis Development Sample (Fix + Rolling)</h3></summary>
+<br>
 
 <ul>
   <li><strong>calibntuples:</strong> <code>data_MCP2025C_Fall25-Run1_BNB_Dev_bnblight_v10_14_02_histreco2_sbnd</code></li>
@@ -62,11 +64,13 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
 
+---
 
-
-
-<h3>Fall Validation II - Run 1</h3>
+<details>
+<summary><h3 style="display:inline">Run 1 Fall Validation II</h3></summary>
+<br>
 
 <table>
   <thead>
@@ -80,6 +84,9 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
+
+---
 
 </details>
 
@@ -93,7 +100,9 @@ toc_title: Gen 2 Data
 <strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation, or can be used for other background studies. 
 </blockquote>
 
-<h3>Run2c Offbeam Data</h3>
+<details>
+<summary><h3 style="display:inline"> Run2c Offbeam Data</h3></summary>
+<br>
 
 <table>
   <thead>
@@ -108,11 +117,13 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
 
+---
 
-
-
-<h3>Development Sample</h3>
+<details>
+<summary><h3 style="display:inline"> Run1 Development Sample</h3></summary>
+<br>
 
 <table>
   <thead>
@@ -125,8 +136,13 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
 
-<h3>Full Run 1 Sample</h3>
+---
+
+<details>
+<summary><h3 style="display:inline"> Run1 Full Sample</h3></summary>
+<br>
 
 <table>
   <thead>
@@ -137,8 +153,13 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
+</details>
 
-<h3>Fall Validation II - Run 1</h3>
+---
+
+<details>
+<summary><h3 style="display:inline"> Run1 Fall Validation II</h3></summary>
+<br>
 
 <table>
   <thead>
@@ -152,17 +173,13 @@ toc_title: Gen 2 Data
   </tbody>
 </table>
 
-
-
-
-
-
-
-
 </details>
 
 ---
 
+</details>
+
+---
 
 
 <details>
