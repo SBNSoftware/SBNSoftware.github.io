@@ -66,8 +66,6 @@ toc_title: Gen 2 Data
 
 </details>
 
----
-
 <details>
 <summary><h3 style="display:inline">Run 1 Fall Validation II</h3></summary>
 <br>
@@ -85,8 +83,6 @@ toc_title: Gen 2 Data
 </table>
 
 </details>
-
----
 
 <details>
 <summary><h3 style="display:inline">Run 3 Fixed Development: Files 2208: Events 109k: POT: 5e18 </h3></summary>
