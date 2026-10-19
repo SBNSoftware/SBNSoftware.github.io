@@ -117,7 +117,7 @@ toc_title: Gen 2 Data
 <strong>Integration Note:</strong> This sample is intended to be combined with <strong>BNB+Light</strong> data for accurate cosmic background estimation, or can be used for other background studies. 
 </blockquote>
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Run1 Development Sample</h3></summary>
 <br>
 
@@ -134,9 +134,8 @@ toc_title: Gen 2 Data
 
 </details>
 
----
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Run1 Full Sample</h3></summary>
 <br>
 
@@ -151,9 +150,8 @@ toc_title: Gen 2 Data
 
 </details>
 
----
 
-<details>
+<details  style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Run1 Fall Validation II</h3></summary>
 <br>
 
@@ -171,9 +169,8 @@ toc_title: Gen 2 Data
 
 </details>
 
----
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Run2c Offbeam Data</h3></summary>
 <br>
 
@@ -192,9 +189,8 @@ toc_title: Gen 2 Data
 
 </details>
 
----
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline">Run 3 Fixed Development: Files 1871: Events 92k </h3></summary>
 <br>
 
