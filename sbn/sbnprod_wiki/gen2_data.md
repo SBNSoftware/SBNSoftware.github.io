@@ -20,7 +20,7 @@ toc_title: Gen 2 Data
 
 <p><em>The primary neutrino stream for SBND physics analysis.</em></p>
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline">Run 1 Analysis Development Sample (Fix + Rolling)</h3></summary>
 <br>
 
