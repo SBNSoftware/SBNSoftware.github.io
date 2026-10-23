@@ -18,7 +18,9 @@ toc_title: Gen 2 MC
 
 <h3>BNB + Light MC</h3>
 
-<h4>Development Sample</h4>
+<details>
+<summary><h4 style="display:inline"> Development Sample </h4></summary>
+<br>
 
 <table>
   <thead>
@@ -29,8 +31,11 @@ toc_title: Gen 2 MC
     <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_DevSample_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</em></td></tr>
   </tbody>
 </table>
+</details>
 
-<h4>Full Run 1 x5 MC Sample <em>(50% available — 10M events!)</em></h4>
+<details>
+<summary><h4 style="display:inline"> Full Run 1 x5 MC Sample <em>(50% available — 10M events!) </h4></summary>
+<br>
 
 <table>
   <thead>
@@ -42,6 +47,7 @@ toc_title: Gen 2 MC
     <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</em></td></tr>
   </tbody>
 </table>
+</details>
 
 </details>
 
