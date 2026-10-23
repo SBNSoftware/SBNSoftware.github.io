@@ -35,7 +35,7 @@ toc_title: Gen 2 MC
 </details>
 
 <details style="margin-bottom: 1.5rem;">
-<summary><h4 style="display:inline"> Full Run 1 x5 MC Sample (50% available — 10M events!) </h4></summary>
+<summary><h4 style="display:inline"> MC Sample: 50% available — 10M events! (Equivalent to 5 x Run 1 Data)  </h4></summary>
 <br>
 
 <table>
@@ -46,6 +46,21 @@ toc_title: Gen 2 MC
     <tr><td><strong>reco1</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_reco1_sbnd</em></td></tr>
     <tr><td><strong>caf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_caf_sbnd</em></td></tr>
     <tr><td><strong>flatcaf</strong></td><td>v10_14_02_03</td><td><em>aurora_SBND2026A_gen2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_03_flatcaf_sbnd</em></td></tr>
+  </tbody>
+</table>
+
+</details>
+
+<details style="margin-bottom: 1.5rem;">
+<summary><h4 style="display:inline"> MC Sample: Additional — 15M events! (8.3e20 POT)  </h4></summary>
+<br>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_08</td><td><em>aurora_SBND2026A_gen2_Part2_BNBLight_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_08_flatcaf_sbnd</em></td></tr>
   </tbody>
 </table>
 
