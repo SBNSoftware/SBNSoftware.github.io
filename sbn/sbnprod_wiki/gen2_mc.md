@@ -34,10 +34,8 @@ toc_title: Gen 2 MC
 
 </details>
 
----
-
 <details style="margin-bottom: 1.5rem;">
-<summary><h4 style="display:inline"> Full Run 1 x5 MC Sample <em>(50% available — 10M events!) </h4></summary>
+<summary><h4 style="display:inline"> Full Run 1 x5 MC Sample (50% available — 10M events!) </h4></summary>
 <br>
 
 <table>
@@ -52,8 +50,6 @@ toc_title: Gen 2 MC
 </table>
 
 </details>
-
----
 
 </details>
 
