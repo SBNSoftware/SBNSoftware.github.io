@@ -62,9 +62,13 @@ in release management, such as the following:
 >
 > Note that LArSoft does not have version numbers with `pUU` (e.g. `v10_06_00_06p02`) syntax like what is used in ICARUSCode as of August 2026. For example, when upgrading `vXX_YY_ZZ_WWp01` --> `vXX_YY_ZZ_WWp02`, you would want to run the above MRB command with `vXX_YY_ZZ`. This includes the major (`XX`), minor (`YY`), and patch (`ZZ`) version numbers as used by the LArSoft collaboration. SBNCode-level packages have historically used the `WW` version number for patches of their own, and ICARUSCode-level packages have followed suit with the `pUU` designation. **However**, versioning schemes sometimes need hot fixes, e.g. LArSoft may have to cut a patch release for `v10_06_00` when collaborators specifically cannot use code contained in the `v10_06_01` release (which will have already been released). So you may run into the occaisional LArSoft tag like `v10_06_00_02` where the fourth version number **does not** correspond to something like an SBNCode-level patch.
 >
-> ### Prerequisite Steps: Standalone Pull Request (PR) Building
+> ### Prerequisite Steps: Standalone Pull Request (PR) Building & Proper Documentation
 > You will sometimes be asked to cut a release that only requires updating the dependencies of your chosen package. For example, an ICARUSCode production release may only require that you pull in SBNCode updates but not have to merge any PRs at the ICARUSCode level. If this is the case, **skip this section**.
 >
+> Before even attempting to ensure a PR will build on its own, make sure the PR has the following:
+> * A descriptive title that says what the PR aims to do; a nonsensical title makes the git log ineffective
+> * A complete PR description **including a list of FHiCL (.fcl) files/parameters that enable the PR's code in whatever default state it should run.**
+> * At least one (ideally all) assigned reviewers, other than Copilot, have given their formal approval; **DO NOT merge any PRs without a human review** since a machine cannot be held liable for a human's decisions.
 > 
 > In an open PR, comment “trigger build” (without quotes). This starts the automatic building process. You may have to specify software versions (i.e. branches, tags, or even PRs) if working with, e.g., a production release. **Do not use new lines when specifying dependencies in a trigger build comment.**
 >
