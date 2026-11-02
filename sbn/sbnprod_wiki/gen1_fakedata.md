@@ -44,6 +44,35 @@ toc_title: Gen 1 Fake Data
   </tbody>
 </table>
 
+<h3>GiBUU FakeData (Additional Statistics, Rockbox Volume): ~1.3M events</h3>
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_06_00_02</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_RockboxTagged_v10_06_00_02_reco1_sbnd</code></td></tr>
+   <tr><td><strong>larcv</strong></td><td>v10_06_00_02</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_RockboxTagged_v10_06_00_02_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_RockboxTagged_v10_06_00_09_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_RockboxTagged_v10_06_00_09_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_RockboxTagged_v10_06_00_09_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+<h3>GiBUU FakeData (Additional Statistics, Cryostat Volume): ~820k events</h3>
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_06_00_02</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_CryostatTagged_v10_06_00_02_reco1_sbnd</code></td></tr>
+   <tr><td><strong>larcv</strong></td><td>v10_06_00_02</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_CryostatTagged_v10_06_00_02_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calib</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_CryostatTagged_v10_06_00_09_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_CryostatTagged_v10_06_00_09_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_06_00_09</td><td><code>mc_SBND2026A_GiBUU_FakeData_MoreStats_CryostatTagged_v10_06_00_09_flatcaf_sbnd</code></td></tr>
+  </tbody>
+</table>
+
+
 ---
 </details>
  
