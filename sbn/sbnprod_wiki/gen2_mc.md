@@ -74,7 +74,10 @@ toc_title: Gen 2 MC
 <summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
 
-<h3>Ar23</h3>
+<details>
+<summary><h3 style="display:inline"> Ar23</h3></summary>
+<br>
+  
 <blockquote>
 <strong>Note:</strong> For more information regarding AR23 samples refer to SBN DocDB 46219
 </blockquote>
@@ -90,7 +93,7 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-
+</details>
 
 
 
