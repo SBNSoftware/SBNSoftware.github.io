@@ -74,7 +74,7 @@ toc_title: Gen 2 MC
 <summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Ar23</h3></summary>
 <br>
   
@@ -99,8 +99,9 @@ toc_title: Gen 2 MC
 
 <hr>
 
-
-<h3>BSM</h3>
+<details style="margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> BSM</h3></summary>
+<br>
 
 <blockquote>
 <strong>Note:</strong>For looking at other mass points, replace the name at the end of the SAM definition with the respective mass point.<br>
@@ -120,10 +121,13 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
+</details>
+
 <hr>
 
-
-<h3>xsec</h3>
+<details style="margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> Xsec</h3></summary>
+<br>
 
 <blockquote>
   <strong>Note:</strong> Specific MC samples for dedicated cross section studies.<br>
@@ -194,13 +198,9 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-
-
-
-
 </details>
 
----
+</details>
 
 <details>
 <summary><h2 style="display:inline"> Systematic Variations</h2></summary>
