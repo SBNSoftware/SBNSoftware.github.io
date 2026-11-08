@@ -12,13 +12,13 @@ toc_title: Gen 2 MC
 
 ---
 
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h2 style="display:inline"> Central Value MC Samples</h2></summary>
 <br>
 
 <h3>BNB + Light MC</h3>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h4 style="display:inline"> Development Sample </h4></summary>
 <br>
 
@@ -34,7 +34,7 @@ toc_title: Gen 2 MC
 
 </details>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h4 style="display:inline"> MC Sample: 50% available — 10M events! (Equivalent to 5 x Run 1 Data)  </h4></summary>
 <br>
 
@@ -51,7 +51,7 @@ toc_title: Gen 2 MC
 
 </details>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h4 style="display:inline"> MC Sample: Additional — 15M events! (8.3e20 POT)  </h4></summary>
 <br>
 
@@ -227,7 +227,9 @@ toc_title: Gen 2 MC
 </blockquote>
 
 
-<h3>PDS 0.94xLY (LY: Light Yield, Events: ~3.30 million)</h3>
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> PDS 0.94xLY </h3></summary>
+<br>
 
 <table>
   <thead>
@@ -240,8 +242,11 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
+</details>
 
-<h3>PDS 1.19xLY (LY: Light Yield, Events: ~3.30 million)</h3>
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> PDS 1.19xLY </h3></summary>
+<br>
 
 <table>
   <thead>
@@ -254,7 +259,11 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-<h3>PDS low SPE (Events: ~3.28 million)</h3>
+</details>
+
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> PDS low SPE </h3></summary>
+<br>
 <p>Short description: Single photo electron response is lowered (1 photoelectron produces a smaller PMT pulse -- observed over run 1)</p>
 
 <table>
@@ -269,14 +278,20 @@ toc_title: Gen 2 MC
   </tbody>
 </table>
 
-<h3>WireMod Gen2</h3>
-<h3>Field distortion</h3>
+</details>
+
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> WireMod Gen2 </h3></summary>
+<br>
+
+</details>
+
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> Field distortion </h3></summary>
+<br>
 <p> Available Soon! </p>
 
-
-
-
-
+</details>
 
 </details>
 
