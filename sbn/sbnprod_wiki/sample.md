@@ -56,6 +56,7 @@ SBN Production Available Samples Descriptions
           const metadata = row ? Array.from(row.children).slice(0, -1).map((cell) => cell.textContent.trim()).filter(Boolean) : [];
           return {
             name: definition.textContent.trim(),
+            source: source.label,
             context: [source.label, ...groups, ...metadata].join(" · "),
             path: source.path
           };
@@ -79,8 +80,8 @@ SBN Production Available Samples Descriptions
       const samples = await loadSamples();
       if (input.value.trim().toLocaleLowerCase() !== query) return;
       const matches = samples.filter((sample) => {
-        const name = sample.name.toLocaleLowerCase();
-        return terms.every((term) => name.includes(term));
+        const searchableText = `${sample.name} ${sample.source}`.toLocaleLowerCase();
+        return terms.every((term) => searchableText.includes(term));
       });
       status.textContent = matches.length ? `${matches.length} matching dataset${matches.length === 1 ? "" : "s"}.` : "No matching datasets found.";
 
