@@ -15,8 +15,7 @@ SBN Production Available Samples Descriptions
 
 ## SBND Analysis Generations
 
-<label for="sbnd-sample-search"><strong>Search Gen 1 and Gen 2 datasets</strong></label>
-<input id="sbnd-sample-search" class="input" type="search" placeholder="Type any words from a dataset name, e.g. BNB light run 1" autocomplete="off" style="max-width: 40rem;">
+<input id="sbnd-sample-search" class="input" type="search" aria-label="Search Gen 1 and Gen 2 datasets" placeholder="Type any words from a dataset name, e.g. BNB light run 1" autocomplete="off" style="max-width: 40rem;">
 <p id="sbnd-sample-search-status" role="status" aria-live="polite"></p>
 <ul id="sbnd-sample-search-results"></ul>
 
