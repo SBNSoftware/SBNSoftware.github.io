@@ -72,7 +72,7 @@ toc_title: Gen 2 MC
 <summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Ar23</h3></summary>
 <br>
   
@@ -95,7 +95,7 @@ toc_title: Gen 2 MC
 
 <hr>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> BSM</h3></summary>
 <br>
 
@@ -121,7 +121,7 @@ toc_title: Gen 2 MC
 
 <hr>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Xsec</h3></summary>
 <br>
 
@@ -196,7 +196,7 @@ toc_title: Gen 2 MC
 
 </details>
 
-<details style="margin-bottom: 1.5rem;">
+<details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> GENIE-INCL (Files: ~19k. Events ~1.03 million) </h3></summary>
 <br>
 
