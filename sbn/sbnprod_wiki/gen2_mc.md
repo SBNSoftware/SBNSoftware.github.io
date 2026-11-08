@@ -68,9 +68,7 @@ toc_title: Gen 2 MC
 
 </details>
 
----
-
-<details>
+<details style="margin-bottom: 1.5rem;">
 <summary><h2 style="display:inline"> Special MC Samples</h2></summary>
 <br>
 
@@ -94,8 +92,6 @@ toc_title: Gen 2 MC
 </table>
 
 </details>
-
-
 
 <hr>
 
@@ -200,9 +196,29 @@ toc_title: Gen 2 MC
 
 </details>
 
+<details style="margin-bottom: 1.5rem;">
+<summary><h3 style="display:inline"> GENIE-INCL (Files: ~19k. Events ~1.03 million) </h3></summary>
+<br>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>reco1</strong></td><td>v10_14_02_09</td><td><code>mc_SBND2026A_Gen2_GENIE_INCL_MC_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_09_reco1_sbnd</code></td></tr>
+    <tr><td><strong>larcv</strong></td><td>v10_14_02_09</td><td><code>mc_SBND2026A_Gen2_GENIE_INCL_MC_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_09_larcvreco1_sbnd</code></td></tr>
+    <tr><td><strong>calib</strong></td><td>v10_14_02_09</td><td><code>mc_SBND2026A_Gen2_GENIE_INCL_MC_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_09_histreco2_sbnd</code></td></tr>
+    <tr><td><strong>caf</strong></td><td>v10_14_02_09</td><td><code>mc_SBND2026A_Gen2_GENIE_INCL_MC_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_09_caf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf</strong></td><td>v10_14_02_09</td><td><code>mc_SBND2026A_Gen2_GENIE_INCL_MC_prodgenie_corsika_proton_rockbox0p1_sbnd_CV_v10_14_02_09_flatcaf_sbnd</code></td></tr>
+
+  </tbody>
+</table>
+
 </details>
 
-<details>
+</details>
+
+<details style="margin-bottom: 1.5rem;">
 <summary><h2 style="display:inline"> Systematic Variations</h2></summary>
 <br>
 
