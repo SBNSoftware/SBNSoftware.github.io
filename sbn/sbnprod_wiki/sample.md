@@ -16,8 +16,8 @@ SBN Production Available Samples Descriptions
 ## SBND Analysis Generations
 
 <label for="sbnd-sample-search"><strong>Search Gen 1 and Gen 2 datasets</strong></label>
-<input id="sbnd-sample-search" class="input" type="search" placeholder="Type a dataset name, e.g. BNB, HNL, or flatcaf" autocomplete="off" style="max-width: 40rem;">
-<p id="sbnd-sample-search-status" role="status" aria-live="polite">Search sample definitions across Gen 1 and Gen 2 Data and MC pages.</p>
+<input id="sbnd-sample-search" class="input" type="search" placeholder="Type any words from a dataset name, e.g. BNB light run 1" autocomplete="off" style="max-width: 40rem;">
+<p id="sbnd-sample-search-status" role="status" aria-live="polite">Enter one or more words from a dataset name. All words must match; word order does not matter.</p>
 <ul id="sbnd-sample-search-results"></ul>
 
 <script>
@@ -66,16 +66,21 @@ SBN Production Available Samples Descriptions
 
   input.addEventListener("input", async () => {
     const query = input.value.trim().toLocaleLowerCase();
+    const terms = query.split(/\s+/).filter(Boolean);
     results.replaceChildren();
-    if (!query) {
-      status.textContent = "Search sample definitions across Gen 1 and Gen 2 Data and MC pages.";
+    if (!terms.length) {
+      status.textContent = "Enter one or more words from a dataset name. All words must match; word order does not matter.";
       return;
     }
 
-    status.textContent = "Searching sample definitions…";
+    status.textContent = "Searching dataset names…";
     try {
       const samples = await loadSamples();
-      const matches = samples.filter((sample) => `${sample.name} ${sample.context}`.toLocaleLowerCase().includes(query));
+      if (input.value.trim().toLocaleLowerCase() !== query) return;
+      const matches = samples.filter((sample) => {
+        const name = sample.name.toLocaleLowerCase();
+        return terms.every((term) => name.includes(term));
+      });
       status.textContent = matches.length ? `${matches.length} matching dataset${matches.length === 1 ? "" : "s"}.` : "No matching datasets found.";
 
       for (const sample of matches) {
