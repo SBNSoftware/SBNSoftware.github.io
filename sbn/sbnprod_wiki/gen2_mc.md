@@ -93,8 +93,6 @@ toc_title: Gen 2 MC
 
 </details>
 
-<hr>
-
 <details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> BSM</h3></summary>
 <br>
@@ -118,8 +116,6 @@ toc_title: Gen 2 MC
 </table>
 
 </details>
-
-<hr>
 
 <details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> Xsec</h3></summary>
@@ -283,6 +279,7 @@ toc_title: Gen 2 MC
 <details style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
 <summary><h3 style="display:inline"> WireMod Gen2 </h3></summary>
 <br>
+<p> Available Soon! </p>
 
 </details>
 
