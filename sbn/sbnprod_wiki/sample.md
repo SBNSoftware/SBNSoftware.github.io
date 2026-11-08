@@ -15,6 +15,86 @@ SBN Production Available Samples Descriptions
 
 ## SBND Analysis Generations
 
+<label for="sbnd-sample-search"><strong>Search Gen 1 and Gen 2 datasets</strong></label>
+<input id="sbnd-sample-search" class="input" type="search" placeholder="Type a dataset name, e.g. BNB, HNL, or flatcaf" autocomplete="off" style="max-width: 40rem;">
+<p id="sbnd-sample-search-status" role="status" aria-live="polite">Search sample definitions across Gen 1 and Gen 2 Data and MC pages.</p>
+<ul id="sbnd-sample-search-results"></ul>
+
+<script>
+(() => {
+  const input = document.getElementById("sbnd-sample-search");
+  const status = document.getElementById("sbnd-sample-search-status");
+  const results = document.getElementById("sbnd-sample-search-results");
+  const sources = [
+    { label: "Gen 1 Data", path: "gen1_data.html" },
+    { label: "Gen 1 MC", path: "gen1_mc.html" },
+    { label: "Gen 2 Data", path: "gen2_data.html" },
+    { label: "Gen 2 MC", path: "gen2_mc.html" }
+  ];
+  let samplesPromise;
+
+  function loadSamples() {
+    if (!samplesPromise) {
+      samplesPromise = Promise.all(sources.map(async (source) => {
+        const response = await fetch(new URL(source.path, window.location.href));
+        if (!response.ok) {
+          throw new Error(`Could not load ${source.label} (HTTP ${response.status}).`);
+        }
+        const page = new DOMParser().parseFromString(await response.text(), "text/html");
+        const definitions = page.querySelectorAll("td:last-child code, td:last-child em, li code, li em");
+
+        return Array.from(definitions, (definition) => {
+          const row = definition.closest("tr") || definition.closest("li");
+          const groups = [];
+          let details = definition.closest("details");
+          while (details) {
+            const summary = details.querySelector(":scope > summary");
+            if (summary) groups.unshift(summary.textContent.trim());
+            details = details.parentElement.closest("details");
+          }
+          const metadata = row ? Array.from(row.children).slice(0, -1).map((cell) => cell.textContent.trim()).filter(Boolean) : [];
+          return {
+            name: definition.textContent.trim(),
+            context: [source.label, ...groups, ...metadata].join(" · "),
+            path: source.path
+          };
+        }).filter((sample) => sample.name);
+      })).then((pages) => pages.flat());
+    }
+    return samplesPromise;
+  }
+
+  input.addEventListener("input", async () => {
+    const query = input.value.trim().toLocaleLowerCase();
+    results.replaceChildren();
+    if (!query) {
+      status.textContent = "Search sample definitions across Gen 1 and Gen 2 Data and MC pages.";
+      return;
+    }
+
+    status.textContent = "Searching sample definitions…";
+    try {
+      const samples = await loadSamples();
+      const matches = samples.filter((sample) => `${sample.name} ${sample.context}`.toLocaleLowerCase().includes(query));
+      status.textContent = matches.length ? `${matches.length} matching dataset${matches.length === 1 ? "" : "s"}.` : "No matching datasets found.";
+
+      for (const sample of matches) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = sample.path;
+        link.textContent = sample.name;
+        const description = document.createElement("small");
+        description.textContent = ` — ${sample.context}`;
+        item.append(link, description);
+        results.append(item);
+      }
+    } catch (error) {
+      status.textContent = `Search unavailable: ${error.message}`;
+    }
+  });
+})();
+</script>
+
 | Generation | Link |
 | :--- | :--- |
 | **Generation 2** | [View Gen 2 →](gen2_analyses) |
