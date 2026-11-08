@@ -28,6 +28,7 @@ SBN Production Available Samples Descriptions
   const sources = [
     { label: "Gen 1 Data", path: "gen1_data.html" },
     { label: "Gen 1 MC", path: "gen1_mc.html" },
+    { label: "Gen 1 Fake Data", path: "gen1_fakedata.html" },
     { label: "Gen 2 Data", path: "gen2_data.html" },
     { label: "Gen 2 MC", path: "gen2_mc.html" }
   ];
