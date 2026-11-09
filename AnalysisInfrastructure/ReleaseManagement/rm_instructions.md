@@ -404,9 +404,11 @@ $ ssh cvmfssbn@oasiscfs.fnal.gov
 
 Open a transaction and install from scisoft.
 <pre>
+$ wget https://scisoft.fnal.gov/scisoft/packages/sbnutil/&lt;version&gt;/sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 $ cvmfs_server transaction sbn.opensciencegrid.org
-
+$ tar xf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C /cvmfs/sbn.opensciencegrid.org/products/sbn
 $ cvmfs_server publish sbn.opensciencegrid.org
+$ rm sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 </pre>
 
 
