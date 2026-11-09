@@ -378,10 +378,10 @@ $ mrb install [-jN]
 The result of building should be that a ups version of sbnutil will be available in directory `$MRB_INSTALL`.   If build was successful, commit changes, make a new git tag, and push everything to github.
 <pre>
 $ git add &lt;modified files&gt;
-$ git commit -m&lt;version&gt;
-$ git tag -a -m&lt;version&gt; &lt;version&gt;
+$ git commit -m&lt;ups-version&gt;
+$ git tag -a -m&lt;ups-version&gt; &lt;ups-version&gt;
 $ git push origin master
-$ git push origin &lt;version&gt;
+$ git push origin &lt;ups-version&gt;
 </pre>
 
 #### Make distribution tarball
@@ -404,15 +404,15 @@ $ ssh cvmfssbn@oasiscfs.fnal.gov
 
 Open a transaction and install from scisoft.
 <pre>
-$ wget https://scisoft.fnal.gov/scisoft/packages/sbnutil/&lt;version&gt;/sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
+$ wget https://scisoft.fnal.gov/scisoft/packages/sbnutil/&lt;ups-version&gt;/sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 $ cvmfs_server transaction sbn.opensciencegrid.org
 $ tar xf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C /cvmfs/sbn.opensciencegrid.org/products/sbn
 </pre>
 Optionally declare the new version as ups `current` or `test`.
 <pre>
 $ source /cvmfs/sbn.opensciencegrid.org/products/sbn/setup
-$ ups declare -c sbndata &lt;version&gt;   # Current
-$ ups declare -t sbndata &lt;version&gt;   # Test
+$ ups declare -c sbnutil &lt;ups-version&gt;   # Current
+$ ups declare -t sbnutil &lt;ups-version&gt;   # Test
 </pre>
 Publish transaction and delete tarball.
 <pre>
