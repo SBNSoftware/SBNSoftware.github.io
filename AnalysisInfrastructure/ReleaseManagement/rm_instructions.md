@@ -357,6 +357,27 @@ Distribute to CVMFS:
 ----------------
 ----------------
 
+### sbnutil
+
+Sbnutil is a null-flavored ups product containing scripts and configuration files used in production.  Sbnutil is partially hand-maintained, in the sense that it is not included in any Jenkins build project.  Instructions for making a new version of sbnutil are as follows.
+
+Check out sbnutil sources from github in an mrb test release.
+<pre>
+$ mrb g [--repo-type github] sbnutil
+</pre>
+You should be on branch "@master@".  Make any required updates or merge requested pull requests.  Update the version number in the top level CMakeLists.txt.  Then build using mrb.
+<pre>
+$ mrb install [-jN]
+</pre>
+The result of building should be that a ups version of sbnutil will be available in directory @$MRB_INSTALL@.   If build was successful, commit changes, make a new git tag, and push everything to github.
+<pre>
+$ git add <modified files>
+$ git commit -m<version>
+$ git tag -a -m<version> <version>
+$ git push origin master
+$ git push origin <version>
+</pre>
+
 
 ## Adding New Packages to a Bundle<a name="add-new-package"></a>
 It can happen that dependencies of a main line package need to be refactored, and new packages added. It is important to make a distinction between:
