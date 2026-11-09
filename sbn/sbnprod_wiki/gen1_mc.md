@@ -196,8 +196,8 @@ toc_title: Gen 1 MC
     <tr><th>Stage</th><th>Code Version</th><th>Sample Definition</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>flatcaf (events: ~511+k)</strong></td><td>v10_06_00_09 (sbnnusyst v1_00_01) </td><td><code>mc_SBND2026A_AR23plus_knobs_IntrinsicNuE_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
-   <tr><td><strong>flatcaf (events: ~530+k)</strong></td><td>v10_06_00_09 (sbnnusyst v1_01_00) </td><td><code>Reprocess_mc_SBND2026A_AR23plus_knobs_IntrinsicNuE_CV_v1_01_00_flatcaf_sbnd</code></td></tr>
+    <tr><td><strong>flatcaf (events: ~511k+)</strong></td><td>v10_06_00_09 (sbnnusyst v1_00_01) </td><td><code>mc_SBND2026A_AR23plus_knobs_IntrinsicNuE_CV_v1_00_01_flatcaf_sbnd</code></td></tr>
+   <tr><td><strong>flatcaf (events: ~530k+)</strong></td><td>v10_06_00_09 (sbnnusyst v1_01_00) </td><td><code>Reprocess_mc_SBND2026A_AR23plus_knobs_IntrinsicNuE_CV_v1_01_00_flatcaf_sbnd</code></td></tr>
   </tbody>
 </table>
 <hr>
