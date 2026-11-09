@@ -361,11 +361,17 @@ Distribute to CVMFS:
 
 Sbnutil is a null-flavored ups product containing scripts and configuration files used in production.  Sbnutil is partially hand-maintained, meaning that it is not included in any Jenkins build project.  Instructions for making a new version of sbnutil are as follows.
 
+#### Check out sources from github
+
 Check out sbnutil sources from github in an mrb test release.
 <pre>
 $ mrb g [--repo-type github] sbnutil
 </pre>
-You should be on branch "`master`".  Make any required updates or merge requested pull requests.  Update the version number in the top level CMakeLists.txt.  Then build using mrb.
+You should be on branch "`master`".
+
+#### Make updates and build
+
+Make any required updates or merge required pull requests.  Update the version number in the top level CMakeLists.txt.  Then build using mrb.
 <pre>
 $ mrb install [-jN]
 </pre>
@@ -377,6 +383,9 @@ $ git tag -a -m&lt;version&gt; &lt;version&gt;
 $ git push origin master
 $ git push origin &lt;version&gt;
 </pre>
+
+#### Make distribution tarball
+
 Make a tarball of the built version of sbnutil.  The tarball should follow the standard scisoft naming convention.
 <pre>
 $ tar cjf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C $MRB_INSTALL sbnutil
@@ -384,6 +393,20 @@ $ tar cjf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C $MRB_INSTALL sbnutil
 Upload the tarball to scisoft.
 <pre>
 $ copyToSciSoft sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
+</pre>
+
+#### Upload to cvmfs
+
+Log in to `oasiscfs.fnal.gov` as `cvmfssbn`.
+<pre>
+$ ssh cvmfssbn@oasiscfs.fnal.gov
+</pre>
+
+Open a transaction and install from scisoft.
+<pre>
+$ cvmfs_server transaction sbn.opensciencegrid.org
+
+$ cvmfs_server publish sbn.opensciencegrid.org
 </pre>
 
 
