@@ -377,6 +377,14 @@ $ git tag -a -m&lt;version&gt; &lt;version&gt;
 $ git push origin master
 $ git push origin &lt;version&gt;
 </pre>
+Make a tarball of the built version of sbnutil.  The tarball should follow the standard scisoft naming convention.
+<pre>
+$ tar cjf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C $MRB_INSTALL sbnutil
+</pre>
+Upload the tarball to scisoft.
+<pre>
+$ copyToSciSoft sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
+</pre>
 
 
 ## Adding New Packages to a Bundle<a name="add-new-package"></a>
