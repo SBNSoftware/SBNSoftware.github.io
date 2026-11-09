@@ -407,6 +407,15 @@ Open a transaction and install from scisoft.
 $ wget https://scisoft.fnal.gov/scisoft/packages/sbnutil/&lt;version&gt;/sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 $ cvmfs_server transaction sbn.opensciencegrid.org
 $ tar xf sbnutil-&lt;dot-version&gt;-noarch.tar.bz2 -C /cvmfs/sbn.opensciencegrid.org/products/sbn
+</pre>
+Optionally declare the new version as ups `current` or `test`.
+<pre>
+$ source /cvmfs/sbn.opensciencegrid.org/products/sbn/setup
+$ ups declare -c sbndata &lt;version&gt;   # Current
+$ ups declare -t sbndata &lt;version&gt;   # Test
+</pre>
+Publish transaction and delete tarball.
+<pre>
 $ cvmfs_server publish sbn.opensciencegrid.org
 $ rm sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 </pre>
