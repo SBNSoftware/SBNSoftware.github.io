@@ -5,6 +5,7 @@ List of SBNCode (`sbncode`) Releases
   
 | Version        |      Notes                                  |      Detailed Notes                          
 |----------------|---------------------------------------------|------------------------------------------------------------------------------------
+| v10_14_02_10   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_10)
 | v10_31_00_02   | Integration patch release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_31_00_02)
 | v10_31_00_01   | Integration patch release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_31_00_01)
 | v10_31_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_31_00)
@@ -14,6 +15,7 @@ List of SBNCode (`sbncode`) Releases
 | v10_28_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_28_00)
 | v10_27_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_27_00)
 | v10_26_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_26_00)
+| v10_14_02_09   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_09)
 | v10_14_02_08   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_08)
 | v10_14_02_07   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_07)
 | v10_24_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_24_00)
