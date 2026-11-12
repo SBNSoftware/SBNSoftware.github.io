@@ -156,10 +156,10 @@ $ logout
 
 ### Install the Environment in CVMFS <a name="cvmfs"/>
 
-Copy `spack.yaml` and `spack.lock` from the newly built environment to the cvmfs server.
+Copy the concretized environment configuration `spack.lock` from the newly built environment to the cvmfs server.
 <pre>
 $ spack cd -e
-$ scp spack.yaml spack.lock cvmfssbn@oasiscfs.fnal.gov:
+$ scp spack.lock cvmfssbn@oasiscfs.fnal.gov:
 </pre>
 
 Log in to the cvmfs server and open a transaction.
@@ -174,19 +174,14 @@ $ source /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/setup-env.sh
 $ spack subspack /cvmfs/sbn.opensciencegrid.org/spack-sbn-v1.1.1
 </pre>
 
-Create a new environment using the uploaded `spack.yaml`.  Use the same name as your working spack instance.  Use the uploaded version of `spack.yaml` as the environment configuration.
+Create a new environment using the uploaded `spack.lock`.  Use the same name as your working spack instance.
 <pre>
 $ source /cvmfs/sbn.opensciencegrid.org/spack-sbn-v1.1.1/setup-env.sh
-$ spack env create uboonecode-v10_27_00-rc1 spack.yaml
+$ spack env create uboonecode-v10_27_00-rc1 spack.lock
 $ spack env activate uboonecode-v10_27_00-rc1
 </pre>
 
-Copy `spack.lock` to the newly created environment.  There should be no need to concretize this environment manually.
-<pre>
-$ cp spack.lock $SPACK_ENV
-</pre>
-
-Verify that the concretized environment is as expected.
+The environment should already be concretized.  Verify that the concretized environment is as expected.
 <pre>
 $ spack find -lc
 </pre>
@@ -200,7 +195,7 @@ Install packages from cache.
 <pre>
 $ spack install --include-build-deps --no-add --only-concrete --cache-only [--no-check-signature]
 </pre>
-This step should be able to install all packages from cache (option @--cache-only@).
+This step should be able to install all packages from cache (option `--cache-only`).
 Verify that all packages have been installed.
 <pre>
 $ spack find -lc
