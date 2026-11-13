@@ -82,19 +82,21 @@ If you need to edit a configuration file in the `included_yaml` subdirectory, th
 
 ### Update Recipes <a name="recipes"/>
 
-Before concretizing the newly created environment for the first time, we will want to make sure that sbn package recipes are up to date.
-Visit the checked out recipe repo, which for all sbn-related packages is `sbn-spack`.
+In most cases, you will want to visit various recipe repositories in order to check out the latest recipes. Some collections of recipes for which you may want to do this are as follows.
 <pre>
-$ cd $SPACK_ROOT/var/spack/repos/sbn-spack
-$ git status
+fnal_art
+larsoft-spack-recipes
+sbn-spack
 </pre>
-Note the checked out branch, which in the latest larsoft spack instance is `spack-v1.0`.
-
-Change the upstream branch to point to remote `origin` instead of `upstream`.  Do a `git pull` to bring the checked out branch up to date with `origin`.
+For each collection, do the following.
 <pre>
-$ git branch -u origin/spack-v1.0
+$ cd ${SPACK_ROOT}/var/spack/repos/<collection>
+$ git fetch origin
+$ git branch --show-current       # Note which branch is checked out
+$ git branch -u origin/<branch>   # Reset upstream branch
 $ git pull
 </pre>
+
 
 ### Concretize the new environment <a name="concretize"/>
 
