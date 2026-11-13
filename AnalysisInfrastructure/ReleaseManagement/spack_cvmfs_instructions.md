@@ -182,8 +182,8 @@ $ spack subspack /cvmfs/sbn.opensciencegrid.org/spack-sbn-v1.1.1
 Create a new environment using the uploaded `spack.lock`.  Use the same name as your working spack instance.
 <pre>
 $ source /cvmfs/sbn.opensciencegrid.org/spack-sbn-v1.1.1/setup-env.sh
-$ spack env create &lt;environment-name&gt; spack.lock
-$ spack env activate &lt;environment-name&gt;
+$ spack env create &lt;environment&gt; spack.lock
+$ spack env activate &lt;environment&gt;
 </pre>
 
 The environment should already be concretized.  Verify that the concretized environment is as expected.
