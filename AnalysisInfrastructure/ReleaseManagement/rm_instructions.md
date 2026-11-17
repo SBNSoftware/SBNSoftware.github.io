@@ -461,6 +461,7 @@ $ proddir=/path/to/products/area
 $ v=&lt;ups-version&gt;   # Ups style version number
 $ mkdir $proddir/larcv2/$v/ups
 $ cp ups/larcv2.table $proddir/$v/ups
+$ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
 </pre>
 
 #### Build
@@ -486,6 +487,15 @@ $ mkdir $proddir/$v/$fqdir
 $ cp -r build/bin $proddir/larcv2/$v/$fqdir
 $ cp -r build/include $proddir/larcv2/$v/$fqdir
 $ cp -r build/lib $proddir/larcv2/$v/$fqdir
+</pre>
+
+#### Declare installed binaries to ups
+
+Declare newly installed files for this flavor, build type, and qualifiers.  Extract ups flavor and qualifiers.  Then declare to ups.
+<pre>
+$ f=`ups flavor`
+$ q=q=`echo $fqdir | sed "s;${f}-;;" | tr - :`
+$ ups declare -f $f -q $q -z $proddir -r larcv2/$v -m larcv2.table -U ups larcv2 $v
 </pre>
 
 
