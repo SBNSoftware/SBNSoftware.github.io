@@ -499,6 +499,10 @@ $ f=`ups flavor`
 $ q=`echo $fqdir | sed "s;${f}-;;" | tr - :`
 $ ups declare -f $f -q $q -z $proddir -r larcv2/$v -m larcv2.table -U ups larcv2 $v
 </pre>
+Verify that ups product was properly declared.
+<pre>
+$ ups list -aK+ -z $proddir
+</pre>
 
 #### Make distribution tarball
 
