@@ -463,7 +463,7 @@ $ mkdir $proddir
 $ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
 $ v=&lt;ups-version&gt;   # Ups style version number
 $ mkdir -p $proddir/larcv2/$v/ups
-$ cp ups/larcv2.table $proddir/$v/ups
+$ cp ups/larcv2.table $proddir/larcv2/$v/ups
 </pre>
 
 #### Build
