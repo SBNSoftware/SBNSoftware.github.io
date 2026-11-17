@@ -458,23 +458,25 @@ Make any required updates.  If you want to update ups qualifiers or dependencies
 Set up a temporary ups products area.  This will simply be a new empty directory.  Make a directory `larcv2` in the temporary products area.  Make additional subdirectories for the version and ups table file.
 <pre>
 $ proddir=/path/to/products/area
+$ rm -rf $proddir     # Make sure directory is empty.
+$ mkdir $proddir
+$ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
 $ v=&lt;ups-version&gt;   # Ups style version number
 $ mkdir $proddir/larcv2/$v/ups
 $ cp ups/larcv2.table $proddir/$v/ups
-$ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
 </pre>
 
 #### Build
 
 Larcv2 is built by hand one flavor at a time.  That is, each combination of ups qualifiers and build types requires its own manual build.  The larcv2 build procedure inherits its configuration from the environment.  In particular, it inherits the following features from the environment.
-* Which compiler (`g++` or `clang++`) is on the execute path.
-* Which `rootcling` executable is available on the execute path (determines dependent root version).
-The larcv2 build is not influenced by the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
+* Which compiler (`g++` or `clang++`) is available on the execute path.
+* Which version of root has been set up.
+The larcv2 build is not influenced by the contents of the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
 <pre>
-$ setup larsoft -q &lt;base-qualifier&gt;&lt;build-type&gt;
-$ rm -rf build
+$ setup larsoft -q &lt;base-qualifier&gt;&lt;build-type&gt; &lt;version&gt;
+$ rm -rf build    # Make sure build directory is empty
 $ source configure.sh
-$ make
+$ make [-jN]
 </pre>
 Built files will be appear in subdirectory `build`.
 
@@ -491,14 +493,26 @@ $ cp -r build/lib $proddir/larcv2/$v/$fqdir
 
 #### Declare installed binaries to ups
 
-Declare newly installed files for this flavor, build type, and qualifiers.  Extract ups flavor and qualifiers.  Then declare to ups.
+Declare newly installed files for this flavor, build type, and qualifiers.
 <pre>
 $ f=`ups flavor`
-$ q=q=`echo $fqdir | sed "s;${f}-;;" | tr - :`
+$ q=`echo $fqdir | sed "s;${f}-;;" | tr - :`
 $ ups declare -f $f -q $q -z $proddir -r larcv2/$v -m larcv2.table -U ups larcv2 $v
 </pre>
 
+#### Make distribution tarball
 
+Make ups distribution tarball using standard following standard scisoft naming convention.
+<pre>
+$ dotv=`echo $v | tr -d v | tr _ .`   # Dot style version number.
+$ subdir=`get-directory-name subdir $q $f`
+$ tarname=larcv2-${dotv}-${subdir}.tar.bz2
+$ tar cjf $tarname -C $proddir larcv2
+</pre>
+Copy distribution tarball to scisoft product server.
+<pre>
+$ copyToSciSoft $tarname
+</pre>
 
 
 
