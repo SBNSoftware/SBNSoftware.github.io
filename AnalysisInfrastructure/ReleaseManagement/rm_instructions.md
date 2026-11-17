@@ -513,6 +513,10 @@ $ subdir=`get-directory-name subdir $q $f`
 $ tarname=larcv2-${dotv}-${subdir}.tar.bz2
 $ tar cjf $tarname -C $proddir larcv2
 </pre>
+Make sure that contents of tarball look reasonable.
+<pre>
+$ tar tf $tarname
+</pre>
 Copy distribution tarball to scisoft product server.
 <pre>
 $ copyToSciSoft $tarname
