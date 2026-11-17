@@ -459,8 +459,7 @@ Set up a temporary ups products area.  This will simply be a new empty directory
 <pre>
 $ proddir=/path/to/products/area
 $ v=&lt;ups-version&gt;   # Ups style version number
-$ mkdir $proddir/$v
-$ mkdir $proddir/$v/ups
+$ mkdir $proddir/larcv2/$v/ups
 $ cp ups/larcv2.table $proddir/$v/ups
 </pre>
 
@@ -484,9 +483,9 @@ Install newly built files in the temporary products area.
 <pre>
 $ fqdir=`basename $ROOTSYS`
 $ mkdir $proddir/$v/$fqdir
-$ cp -r build/bin $proddir/$v/$fqdir
-$ cp -r build/include $proddir/$v/$fqdir
-$ cp -r build/lib $proddir/$v/$fqdir
+$ cp -r build/bin $proddir/larcv2/$v/$fqdir
+$ cp -r build/include $proddir/larcv2/$v/$fqdir
+$ cp -r build/lib $proddir/larcv2/$v/$fqdir
 </pre>
 
 
