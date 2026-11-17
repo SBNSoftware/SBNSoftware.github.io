@@ -462,7 +462,7 @@ $ rm -rf $proddir     # Make sure directory is empty.
 $ mkdir $proddir
 $ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
 $ v=&lt;ups-version&gt;   # Ups style version number
-$ mkdir $proddir/larcv2/$v/ups
+$ mkdir -p $proddir/larcv2/$v/ups
 $ cp ups/larcv2.table $proddir/$v/ups
 </pre>
 
