@@ -529,6 +529,26 @@ Copy distribution tarball to scisoft product server.
 $ copyToSciSoft $tarname
 </pre>
 
+#### Upload to cvmfs
+
+Log in to `oasiscfs.fnal.gov` as `cvmfssbn`.
+<pre>
+$ ssh cvmfssbn@oasiscfs.fnal.gov
+</pre>
+
+Open a transaction and install from scisoft.
+<pre>
+$ wget https://scisoft.fnal.gov/scisoft/packages/larcv2/&lt;ups-version&gt;/&lt;tarball-name&gt;
+$ cvmfs_server transaction sbn.opensciencegrid.org
+$ tar xf &lt;tarball-name&gt; -C /cvmfs/sbn.opensciencegrid.org/products/sbn
+</pre>
+Publish transaction and delete tarball.
+<pre>
+$ cvmfs_server publish sbn.opensciencegrid.org
+$ rm &lt;tarball-name&gt;
+</pre>
+
+
 
 
 ## Adding New Packages to a Bundle<a name="add-new-package"></a>
