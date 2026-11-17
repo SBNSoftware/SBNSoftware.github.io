@@ -420,6 +420,53 @@ $ cvmfs_server publish sbn.opensciencegrid.org
 $ rm sbnutil-&lt;dot-version&gt;-noarch.tar.bz2
 </pre>
 
+### larcv2
+
+Larcv2 is a hand-maintained ups product.  The original source code repository can be found at the following github url.
+
+https://github.com/DeepLearnPhysics/larcv2
+
+However, sbn maintains its own fork at its own url below.
+
+https://github.com/sbnSoftware/larcv2
+
+The main reason for sbn maintaining its own fork is that the ups table file is packaged together with the rest of the source code.  Step by step instructions for building larcv2 follow.
+
+#### Check out sources from github
+
+Check out the sbn fork of larcv2.
+<pre>
+$ git clone git@github.com:sbnsoftware/larcv2
+$ cd larcv2
+</pre>
+If you need to interact with the original DeepLearnPhysics github repository, add it as a secondary remote.
+<pre>
+$ git remote add dl https://github.com/DeepLearnPhysics/larcv2
+$ git fetch dl
+</pre>
+
+#### Make updates
+
+Check out the branch you want to update.
+<pre>
+$ git checkout &lt;working-branch&gt;
+</pre>
+Make any required updates.  If you want to update ups qualifiers or dependencies, edit the table file, which can be found in subdirectory `ups` in the checked out sources.  
+
+#### Build
+
+Larcv2 is built by hand one flavor at a time.  That is, each combination of ups qualifiers and build types requires its own manual build.  The larcv2 build procedure inherits its configuration from the environment.  In particular, it inherits the following features from the environment.
+* Which compiler (`g++` or `clang++`) is on the execute path.
+* Which `rootcling` executable is available on the execute path (determines dependent root version).
+The larcv2 build is not influenced by the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
+<pre>
+$ setup larsoft -q &lt;base-qualifier&gt;&lt;build-type&gt;
+$ source configure.sh
+$ make
+</pre>
+Built files will be added in subdirectory `build`.  
+
+
 
 ## Adding New Packages to a Bundle<a name="add-new-package"></a>
 It can happen that dependencies of a main line package need to be refactored, and new packages added. It is important to make a distinction between:
