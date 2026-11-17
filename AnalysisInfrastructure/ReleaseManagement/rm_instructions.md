@@ -451,7 +451,14 @@ Check out the branch you want to update.
 <pre>
 $ git checkout &lt;working-branch&gt;
 </pre>
-Make any required updates.  If you want to update ups qualifiers or dependencies, edit the table file, which can be found in subdirectory `ups` in the checked out sources.
+Make any required updates.  If you want to update ups qualifiers or dependencies, edit the table file, which can be found in subdirectory `ups` in the checked out sources.  Commit and tag updated files and push everything to github.
+<pre>
+$ git add &lt;modified files&gt;
+$ git commit
+$ git tag -a -m&lt;tag&gt; &lt;tag&gt;
+$ git push origin &lt;working-branch&gt;
+$ git push origin &lt;tag&gt;
+</pre>
 
 #### Make temporary ups products area
 
