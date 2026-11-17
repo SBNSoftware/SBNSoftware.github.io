@@ -485,7 +485,7 @@ Built files will be appear in subdirectory `build`.
 Install newly built files in the temporary products area.  
 <pre>
 $ fqdir=`basename $ROOTSYS`
-$ mkdir $proddir/$v/$fqdir
+$ mkdir $proddir/larcv2/$v/$fqdir
 $ cp -r build/bin $proddir/larcv2/$v/$fqdir
 $ cp -r build/include $proddir/larcv2/$v/$fqdir
 $ cp -r build/lib $proddir/larcv2/$v/$fqdir
