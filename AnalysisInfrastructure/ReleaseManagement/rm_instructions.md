@@ -483,9 +483,9 @@ Install newly built files in the temporary products area.
 <pre>
 $ fqdir=`basename $ROOTSYS`
 $ mkdir $proddir/$fqdir
-$ cp -r build/bin $proddir/$fqdir/bin
-$ cp -r build/include $proddir/$fqdir/include
-$ cp -r build/lib $proddir/$fqdir/lib
+$ cp -r build/bin $proddir/$fqdir
+$ cp -r build/include $proddir/$fqdir
+$ cp -r build/lib $proddir/$fqdir
 </pre>
 
 
