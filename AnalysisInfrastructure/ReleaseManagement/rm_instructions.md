@@ -491,7 +491,8 @@ Built files will be appear in subdirectory `build`.
 
 Install newly built files in the temporary products area.  
 <pre>
-$ fqdir=`basename $ROOTSYS`
+$ f=`ups flavor`
+$ fqdir=${f}`basename $ROOTSYS | sed "s;${f};;" | tr - _`
 $ mkdir $proddir/larcv2/$v/$fqdir
 $ cp -r build/bin $proddir/larcv2/$v/$fqdir
 $ cp -r build/include $proddir/larcv2/$v/$fqdir
@@ -502,8 +503,7 @@ $ cp -r build/lib $proddir/larcv2/$v/$fqdir
 
 Declare newly installed files for this flavor, build type, and qualifiers.
 <pre>
-$ f=`ups flavor`
-$ q=`echo $fqdir | sed "s;${f}-;;" | tr - :`
+$ q=`echo $fqdir | sed "s;${f}_;;" | tr _ :`
 $ ups declare -f $f -q $q -z $proddir -r larcv2/$v -m larcv2.table -U ups larcv2 $v
 </pre>
 Verify that ups product was properly declared.
