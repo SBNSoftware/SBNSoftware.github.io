@@ -455,12 +455,13 @@ Make any required updates.  If you want to update ups qualifiers or dependencies
 
 #### Make temporary ups products area
 
-Set up a temporary ups products area.  This will simply be a new empty directory.  Make a directory `larcv2` in the temporary products area.  Make another subdirectory `ups` and copy the table file.
+Set up a temporary ups products area.  This will simply be a new empty directory.  Make a directory `larcv2` in the temporary products area.  Make additional subdirectories for the version and ups table file.
 <pre>
 $ proddir=/path/to/products/area
-$ mkdir $proddir
-$ mkdir $proddir/ups
-$ cp ups/larcv2.table $proddir/ups
+$ v=&lt;ups-version&gt;   # Ups style version number
+$ mkdir $proddir/$v
+$ mkdir $proddir/$v/ups
+$ cp ups/larcv2.table $proddir/$v/ups
 </pre>
 
 #### Build
@@ -482,10 +483,10 @@ Built files will be appear in subdirectory `build`.
 Install newly built files in the temporary products area.  
 <pre>
 $ fqdir=`basename $ROOTSYS`
-$ mkdir $proddir/$fqdir
-$ cp -r build/bin $proddir/$fqdir
-$ cp -r build/include $proddir/$fqdir
-$ cp -r build/lib $proddir/$fqdir
+$ mkdir $proddir/$v/$fqdir
+$ cp -r build/bin $proddir/$v/$fqdir
+$ cp -r build/include $proddir/$v/$fqdir
+$ cp -r build/lib $proddir/$v/$fqdir
 </pre>
 
 
