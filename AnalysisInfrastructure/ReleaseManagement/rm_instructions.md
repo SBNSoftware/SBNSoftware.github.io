@@ -426,7 +426,7 @@ Larcv2 is a hand-maintained ups product.  The original source code repository ca
 
 https://github.com/DeepLearnPhysics/larcv2
 
-However, sbn maintains its own fork at its own url below.
+However, sbn maintains its own fork.
 
 https://github.com/sbnSoftware/larcv2
 
@@ -439,7 +439,7 @@ Check out the sbn fork of larcv2.
 $ git clone git@github.com:sbnsoftware/larcv2
 $ cd larcv2
 </pre>
-If you need to interact with the original DeepLearnPhysics github repository, add it as a secondary remote.
+If you need to interact with the original DeepLearnPhysics github repository, add it as a secondary remote.  This is not always necessary.
 <pre>
 $ git remote add dl https://github.com/DeepLearnPhysics/larcv2
 $ git fetch dl
@@ -451,7 +451,17 @@ Check out the branch you want to update.
 <pre>
 $ git checkout &lt;working-branch&gt;
 </pre>
-Make any required updates.  If you want to update ups qualifiers or dependencies, edit the table file, which can be found in subdirectory `ups` in the checked out sources.  
+Make any required updates.  If you want to update ups qualifiers or dependencies, edit the table file, which can be found in subdirectory `ups` in the checked out sources.
+
+#### Make temporary ups products area
+
+Set up a temporary ups products area.  This will simply be a new empty directory.  Make a directory `larcv2` in the temporary products area.  Make another subdirectory `ups` and copy the table file.
+<pre>
+$ proddir=/path/to/products/area
+$ mkdir $proddir
+$ mkdir $proddir/ups
+$ cp ups/larcv2.table $proddir/ups
+</pre>
 
 #### Build
 
@@ -461,10 +471,24 @@ Larcv2 is built by hand one flavor at a time.  That is, each combination of ups 
 The larcv2 build is not influenced by the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
 <pre>
 $ setup larsoft -q &lt;base-qualifier&gt;&lt;build-type&gt;
+$ rm -rf build
 $ source configure.sh
 $ make
 </pre>
-Built files will be added in subdirectory `build`.  
+Built files will be appear in subdirectory `build`.
+
+#### Install binaries
+
+Install newly built files in the temporary products area.  
+<pre>
+$ fqdir=`basename $ROOTSYS`
+$ mkdir $proddir/$fqdir
+$ cp -r build/bin $proddir/$fqdir/bin
+$ cp -r build/include $proddir/$fqdir/include
+$ cp -r build/lib $proddir/$fqdir/lib
+</pre>
+
+
 
 
 
