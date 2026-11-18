@@ -521,7 +521,7 @@ Make ups distribution tarball following standard scisoft naming convention.
 <pre>
 $ dotv=`echo $v | tr -d v | tr _ .`   # Dot-style version number.
 $ subdir=`get-directory-name subdir $q $f`
-$ tarname=larcv2-${dotv}-${subdir}.tar.bz2
+$ tarname=larcv2-${dotv}-${subdir}.sbn.tar.bz2
 $ tar cjf $tarname -C $proddir larcv2
 </pre>
 Make sure that contents of tarball look reasonable.
