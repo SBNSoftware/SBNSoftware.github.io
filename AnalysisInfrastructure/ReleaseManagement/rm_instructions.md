@@ -486,7 +486,7 @@ $ rm -rf build    # Make sure build directory is empty
 $ source configure.sh
 $ make [-jN]
 </pre>
-Built files will be appear in subdirectory `build`.
+Built files will be appear in subdirectory `build`.  Note that `build` is included in the `.gitignore` file packaged with the checked out sources, so there is no possibility of subdirectory `build` being checked back into github.
 
 Regarding the build type qualifier (`debug` or `prof`), larcv2 inherits this property from the environment to the extent that it links against the appropriate `debug` or `prof` root libraries.  However, the larcv2 makefile itself is hard-wired to compile larcv2 optimized, unless you actually edit the makefile to compile using debug options.
 
