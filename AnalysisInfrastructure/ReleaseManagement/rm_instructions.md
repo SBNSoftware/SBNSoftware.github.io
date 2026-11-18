@@ -479,7 +479,7 @@ Larcv2 is built by hand one flavor at a time.  That is, each combination of ups 
 * Which compiler (`g++` or `clang++`) is available on the execute path.
 * Which version of root has been set up.
   
-Root is the only dependency or larcv2.  The ups version of larcv2 will normally be declared with the same ups qualifiers as the inherited version of root.  The larcv2 build is not influenced by the contents of the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
+Root is the only dependency of larcv2.  The ups version of larcv2 will normally be declared with the same ups qualifiers as the inherited version of root.  The larcv2 build is not influenced by the contents of the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
 <pre>
 $ setup larsoft -q &lt;base-qualifier&gt;:&lt;build-type&gt; &lt;version&gt;
 $ rm -rf build    # Make sure build directory is empty
