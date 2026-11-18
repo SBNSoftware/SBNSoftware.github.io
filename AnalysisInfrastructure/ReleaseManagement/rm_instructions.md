@@ -462,13 +462,13 @@ $ git push origin &lt;tag&gt;
 
 #### Make temporary ups products area
 
-Set up a temporary ups products area.  This will simply be a new empty directory.  Make a directory `larcv2` in the temporary products area.  Make additional subdirectories for the version and ups table file.
+Set up a temporary ups products area with an empty larcv2 product.  The products area can simply be a new empty directory.  An existing mrb install area (`$MRB_INSTALL`) may be used.  Make a directory `larcv2` in the temporary products area, plus additional subdirectories for the version and ups table file.
 <pre>
-$ proddir=/path/to/products/area
-$ rm -rf $proddir     # Make sure directory is empty.
-$ mkdir $proddir
-$ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir
-$ v=&lt;ups-version&gt;   # Ups style version number
+$ proddir=/path/to/products/area    # Or proddir=$MRB_INSTALL
+$ mkdir -p $proddir
+$ rm -rf $proddir/larcv2     # Make sure larcv2 product directory is empty.
+$ cp -r /cvmfs/sbn.opensciencegrid.org/products/sbn/.upsfiles $proddir    # If not already present
+$ v=&lt;ups-version&gt;      # Ups style version number
 $ mkdir -p $proddir/larcv2/$v/ups
 $ cp ups/larcv2.table $proddir/larcv2/$v/ups
 </pre>
@@ -478,9 +478,9 @@ $ cp ups/larcv2.table $proddir/larcv2/$v/ups
 Larcv2 is built by hand one flavor at a time.  That is, each combination of ups qualifiers and build types requires its own manual build.  The larcv2 build procedure inherits its configuration from the environment.  In particular, it inherits the following features from the environment.
 * Which compiler (`g++` or `clang++`) is available on the execute path.
 * Which version of root has been set up.
-The larcv2 build is not influenced by the contents of the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
+Root is the only dependency or larcv2.  The ups version of larcv2 will normally be declared with the same ups qualifiers as the inherited version of root.  The larcv2 build is not influenced by the contents of the ups table file.  The build environment can be arranged by setting up the ups version of larsoft that this version of larcv2 is supposed to work with.
 <pre>
-$ setup larsoft -q &lt;base-qualifier&gt;&lt;build-type&gt; &lt;version&gt;
+$ setup larsoft -q &lt;base-qualifier&gt;:&lt;build-type&gt; &lt;version&gt;
 $ rm -rf build    # Make sure build directory is empty
 $ source configure.sh
 $ make [-jN]
@@ -489,10 +489,12 @@ Built files will be appear in subdirectory `build`.
 
 #### Install binaries
 
-Install newly built files in the temporary products area.  
+Install newly built files in the temporary ups products area.  
 <pre>
-$ f=`ups flavor`
-$ fqdir=${f}`basename $ROOTSYS | sed "s;${f};;" | tr - _`
+$ f=`ups flavor`           # Ups flavor
+$ q=`basename $ROOTSYS | sed "s;${f}.;;" | tr - :`    # Colon-separated list of qualifiers in standard order
+$ qu=`echo $q | tr : _`    # Underscore-separated list of qualifiers
+$ fqdir=${f}_$qu           # Binary directory (compatible with table file)
 $ mkdir $proddir/larcv2/$v/$fqdir
 $ cp -r build/bin $proddir/larcv2/$v/$fqdir
 $ cp -r build/include $proddir/larcv2/$v/$fqdir
@@ -503,7 +505,6 @@ $ cp -r build/lib $proddir/larcv2/$v/$fqdir
 
 Declare newly installed files for this flavor, build type, and qualifiers.
 <pre>
-$ q=`echo $fqdir | sed "s;${f}_;;" | tr _ :`
 $ ups declare -f $f -q $q -z $proddir -r larcv2/$v -m larcv2.table -U ups larcv2 $v
 </pre>
 Verify that ups product was properly declared.
@@ -513,9 +514,9 @@ $ ups list -aK+ -z $proddir
 
 #### Make distribution tarball
 
-Make ups distribution tarball using standard following standard scisoft naming convention.
+Make ups distribution tarball following standard scisoft naming convention.
 <pre>
-$ dotv=`echo $v | tr -d v | tr _ .`   # Dot style version number.
+$ dotv=`echo $v | tr -d v | tr _ .`   # Dot-style version number.
 $ subdir=`get-directory-name subdir $q $f`
 $ tarname=larcv2-${dotv}-${subdir}.tar.bz2
 $ tar cjf $tarname -C $proddir larcv2
