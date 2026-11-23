@@ -365,7 +365,7 @@ Sbnutil is a null-flavored ups product containing scripts and configuration file
 
 Check out sbnutil sources from github in an mrb test release.
 <pre>
-$ mrb g [--repo-type github] sbnutil
+$ mrb g sbnutil
 </pre>
 You should be on branch "`master`".
 
