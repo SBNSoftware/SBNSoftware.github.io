@@ -5,6 +5,7 @@ List of SBNCode (`sbncode`) Releases
   
 | Version        |      Notes                                  |      Detailed Notes                          
 |----------------|---------------------------------------------|------------------------------------------------------------------------------------
+| v10_14_02_11   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_11)
 | v11_00_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v11_00_00)
 | v10_32_00      | Integration release                         | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_32_00)
 | v10_14_02_10   | SBND gen2 production release                | [Release Notes](https://github.com/SBNSoftware/sbncode/releases/tag/v10_14_02_10)
